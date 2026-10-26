@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  h1, h2, h3, .font-display {
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    letter-spacing: -0.012em;
+  }
+  ::selection { background: #F3D9BC; }
+  input, select, textarea, button { font: inherit; }
+  :focus-visible { outline: 2px solid #C5762F; outline-offset: 2px; }
+}
+
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+  .card { @apply rounded-2xl border border-line bg-paper shadow-card; }
+  .card-pad { @apply p-4 sm:p-5; }
+  .eyebrow { @apply text-[11px] font-semibold uppercase tracking-[0.16em] text-terra-600; }
+  .label { @apply mb-1 block text-sm font-medium text-ink-soft; }
+  .input {
+    @apply w-full rounded-xl border border-line bg-white px-3 py-2.5 text-[15px] text-ink placeholder:text-ink-faint
+      focus:border-forest-500 focus:outline-none focus:ring-2 focus:ring-forest-100;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition
+      disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary { @apply btn bg-forest-600 text-cream hover:bg-forest-700; }
+  .btn-accent { @apply btn bg-terra-500 text-white hover:bg-terra-600; }
+  .btn-sun { @apply btn bg-sun-500 text-ink hover:bg-sun-600; }
+  .btn-dark { @apply btn bg-night-800 text-cream hover:bg-night-900; }
+  .btn-ghost { @apply btn text-ink-soft hover:bg-sand; }
+  .btn-outline { @apply btn border border-line bg-paper text-ink hover:border-ink-faint; }
+  .btn-danger { @apply btn bg-clay-500 text-white hover:bg-clay-600; }
+  .btn-sm { @apply px-3 py-1.5 text-[13px] rounded-lg; }
+  .btn-lg { @apply px-6 py-3.5 text-base rounded-2xl; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full border border-line bg-paper px-2.5 py-1 text-xs font-medium text-ink-soft; }
+  .chip-on { @apply border-forest-600 bg-forest-600 text-cream; }
+  .link { @apply font-medium text-forest-600 underline decoration-forest-100 underline-offset-4 hover:decoration-forest-500; }
+  .prose-n { @apply text-[16px] leading-7 text-ink-soft; }
+  .prose-n h2 { @apply mt-8 mb-2 text-2xl text-ink; }
+  .prose-n h3 { @apply mt-6 mb-2 text-lg font-semibold text-ink; }
+  .prose-n p { @apply my-3; }
+  .prose-n ul { @apply my-3 list-disc pl-6; }
+  .prose-n ol { @apply my-3 list-decimal pl-6; }
+  .prose-n li { @apply my-1; }
+  .prose-n strong { @apply text-ink; }
+  .table-n { @apply w-full text-left text-sm; }
+  .table-n th { @apply border-b border-line px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink-muted; }
+  .table-n td { @apply border-b border-line/70 px-3 py-2.5 align-top; }
+  .pitch-svg svg { width: 100%; height: auto; display: block; }
+  .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; }
+  .card { box-shadow: none; }
+}

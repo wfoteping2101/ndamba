@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/livres/tome1", "destination": "/book/tome1/", "permanent": false },
+    { "source": "/livres/methode", "destination": "/book/methode/", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/((?!book/|assets/|api/|favicon|manifest|icon-|robots|og|art/|downloads/).*)", "destination": "/index.html" }
+  ]
+}
