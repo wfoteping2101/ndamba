@@ -412,6 +412,54 @@ export const METHODE_TOC: TocEntry[] = [
   "summary": "Corners, coups francs, touches et sorties de but pensés comme des moments du modèle de jeu : préparer la possession suivante, protéger l'équipe avec la défense de repos, et donner à toute sélection une arme qui s'entraîne vite."
  },
  {
+  "no": 11,
+  "slug": "la-passe-qui-sert",
+  "title": "La passe qui sert",
+  "part": 3,
+  "partTitle": "La technique au service de l'intention",
+  "summary": "Les surfaces de contact, le dosage, le bon pied, la feinte, le tempo, la remise en une ou deux touches, le renversement long et la passe de la pausa : la technique de passe au service des cinq intentions."
+ },
+ {
+  "no": 12,
+  "slug": "recevoir-et-s-orienter",
+  "title": "Recevoir et s'orienter",
+  "part": 3,
+  "partTitle": "La technique au service de l'intention",
+  "summary": "Le corps ouvert, le pied de réception, le contrôle orienté loin de la pression, la réception sur le demi-tour, la réception dos au but et l'art d'inviter la pression : le premier contact décide de la suite."
+ },
+ {
+  "no": 13,
+  "slug": "voir-avant-de-recevoir",
+  "title": "Voir avant de recevoir",
+  "part": 3,
+  "partTitle": "La technique au service de l'intention",
+  "summary": "Le scan, ce qu'il faut regarder et à quel moment, ce que chaque rôle doit voir avant de recevoir, et comment entraîner puis mesurer cette habitude qui décide de toutes les autres."
+ },
+ {
+  "no": 14,
+  "slug": "conduire-dribbler-proteger",
+  "title": "Conduire, dribbler, protéger",
+  "part": 3,
+  "partTitle": "La technique au service de l'intention",
+  "summary": "Conduire pour progresser et pour fixer, le dribble njangi qui attire pour libérer, les différents un contre un, la protection du ballon sous pression, et les situations où il ne faut pas dribbler."
+ },
+ {
+  "no": 15,
+  "slug": "finir",
+  "title": "Finir",
+  "part": 3,
+  "partTitle": "La technique au service de l'intention",
+  "summary": "Le placement avant la puissance, la finition du premier coup, le centre en retrait, la frappe après un appel de troisième homme, le premier et le second poteau, le calme devant le but, et la place prudente du jeu de tête chez les jeunes."
+ },
+ {
+  "no": 17,
+  "slug": "les-systemes-avec-et-sans-ballon",
+  "title": "Les systèmes avec et sans ballon",
+  "part": 4,
+  "partTitle": "La tactique Njangi",
+  "summary": "Les principes avant les chiffres. Comment un système de départ devient un 3-2-5, un 2-3-5 ou un 3-1-6 avec le ballon, un 4-4-2, un 4-5-1 ou un 5-4-1 sans lui, comment les couloirs et les hauteurs sont occupés, ce que coûte la bascule, et quel système choisir selon l'âge et l'effectif."
+ },
+ {
   "no": 24,
   "slug": "les-etapes-de-la-formation",
   "title": "Les étapes de la formation Njangi",

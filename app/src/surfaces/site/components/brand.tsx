@@ -1,6 +1,6 @@
 import { useCallback, useState, type ReactNode } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { LoaderCircle, Play } from 'lucide-react'
+import { GraduationCap, LoaderCircle, Play, Trophy } from 'lucide-react'
 import { useT, type Lang } from '../../../i18n'
 import { BOOKS, BRAND, SERIES } from '../../../lib/config'
 import { useSession } from '../../../lib/session'
@@ -34,22 +34,28 @@ export function PageFrame({ children }: { children: ReactNode }) {
   return <div className="container-page pb-6 pt-8 sm:pt-12">{children}</div>
 }
 
+export type DemoLevel = 'youth' | 'pro'
+/** Team ids of the two demos (mirrors DEMO_TEAMS in lib/seed.ts, kept here so the site does not load the seed module up front). */
+export const DEMO_TEAM_IDS: Record<DemoLevel, string> = { youth: 'team_lionceaux', pro: 'team_etoile' }
+
 /**
- * Launch the demo (Lionceaux de Bonamoussadi U13) and go somewhere in the app.
- * If the browser already holds other data, ask first: seedDemo replaces everything.
+ * Launch one of the two demos and go somewhere in the app:
+ *   'pro'   Étoile de la Côte, a professional senior club in Douala (Ligue 1, 22 players)
+ *   'youth' Lionceaux de Bonamoussadi U13, an academy team (the team of the novel)
+ * If the browser holds the person's own data, ask first: seedDemo replaces everything. Demo data is replaced without asking.
  */
 export function useDemo() {
   const { t, lang } = useSiteT()
   const { profile, teams } = useSession()
   const navigate = useNavigate()
-  const [pending, setPending] = useState<{ role: Role; to: string } | null>(null)
+  const [pending, setPending] = useState<{ role: Role; to: string; level: DemoLevel } | null>(null)
   const [busy, setBusy] = useState(false)
 
-  const run = useCallback(async (role: Role, to: string) => {
+  const run = useCallback(async (role: Role, to: string, level: DemoLevel) => {
     setBusy(true)
     try {
       const m = await import('../../../lib/seed')
-      await m.seedDemo(role, lang)
+      await m.seedDemo(role, lang, level)
       navigate(to)
     } finally {
       setBusy(false)
@@ -57,28 +63,59 @@ export function useDemo() {
     }
   }, [lang, navigate])
 
-  const launch = useCallback((role: Role = 'coach', to = '/app') => {
+  /** Which demo the browser holds now, if any. */
+  const current: DemoLevel | null = teams.some((tm) => tm.id === DEMO_TEAM_IDS.pro) ? 'pro' : teams.some((tm) => tm.id === DEMO_TEAM_IDS.youth) ? 'youth' : null
+  const onlyDemo = teams.length > 0 && teams.every((tm) => tm.id === DEMO_TEAM_IDS.pro || tm.id === DEMO_TEAM_IDS.youth)
+
+  const launch = useCallback((role: Role = 'coach', to = '/app', level: DemoLevel = 'pro') => {
     if (busy) return
-    const isDemo = teams.some((tm) => tm.id === 'team_lionceaux')
-    if (profile && isDemo && profile.role === role) { navigate(to); return }
-    if (profile) { setPending({ role, to }); return }
-    void run(role, to)
-  }, [busy, profile, teams, navigate, run])
+    if (profile && current === level && profile.role === role) { navigate(to); return }
+    if (profile && !onlyDemo) { setPending({ role, to, level }); return }
+    void run(role, to, level)
+  }, [busy, profile, current, onlyDemo, navigate, run])
+
+  /** Open a page of the app: directly when a profile exists, otherwise through a demo. */
+  const open = useCallback((to: string, level: DemoLevel = 'pro', role: Role = 'coach') => {
+    if (profile) navigate(to)
+    else launch(role, to, level)
+  }, [profile, navigate, launch])
 
   const dialog = (
     <Modal open={!!pending} onClose={() => !busy && setPending(null)} title={t('landing.demoModal.title')}
       footer={<>
         <button type="button" className="btn-ghost" onClick={() => setPending(null)} disabled={busy}>{t('common:actions.cancel')}</button>
-        <button type="button" className="btn-primary" disabled={busy} onClick={() => pending && run(pending.role, pending.to)}>
+        <button type="button" className="btn-primary" disabled={busy} onClick={() => pending && run(pending.role, pending.to, pending.level)}>
           {busy ? <LoaderCircle size={16} className="motion-safe:animate-spin" /> : <Play size={16} />}
           {busy ? t('landing.demoModal.busy') : t('landing.demoModal.confirm')}
         </button>
       </>}>
-      <p className="text-[15px] text-ink-soft">{t('landing.demoModal.body')}</p>
+      <p className="text-[15px] text-ink-soft">{t('landing.demoModal.body', { demo: t(`demo.${pending?.level ?? 'pro'}.team`) })}</p>
     </Modal>
   )
 
-  return { launch, busy, dialog }
+  return { launch, open, busy, current, dialog }
+}
+
+/**
+ * The two demo buttons, side by side: « Démo club pro » and « Démo académie U13 ».
+ * dark: on a dark background. size: 'lg' in heroes, 'md' elsewhere.
+ */
+export function DemoChoice({ demo, role = 'coach', to = '/app', dark = false, size = 'md', className }: {
+  demo: ReturnType<typeof useDemo>; role?: Role; to?: string; dark?: boolean; size?: 'md' | 'lg'; className?: string
+}) {
+  const { t } = useSiteT()
+  const lg = size === 'lg'
+  const second = dark ? 'border border-cream/30 text-cream hover:bg-white/10' : 'btn-outline'
+  return (
+    <div className={`flex flex-col gap-3 sm:flex-row sm:flex-wrap ${className ?? ''}`} role="group" aria-label={t('demo.choose')}>
+      <button type="button" onClick={() => demo.launch(role, to, 'pro')} disabled={demo.busy} className={`${dark ? 'btn-sun' : 'btn-primary'} ${lg ? 'btn-lg' : 'min-h-[44px]'}`}>
+        <Trophy size={lg ? 18 : 16} aria-hidden="true" />{t('demo.pro.cta')}
+      </button>
+      <button type="button" onClick={() => demo.launch(role, to, 'youth')} disabled={demo.busy} className={`btn ${second} ${lg ? 'btn-lg' : 'min-h-[44px]'}`}>
+        <GraduationCap size={lg ? 18 : 16} aria-hidden="true" />{t('demo.youth.cta')}
+      </button>
+    </div>
+  )
 }
 
 /** Small gold uppercase label used above book titles (dark = on a dark background). */

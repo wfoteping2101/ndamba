@@ -1,0 +1,130 @@
+{
+  "id": "C04",
+  "family": "technique",
+  "order": 4,
+  "ages": "U10+",
+  "players": { "min": 3, "max": 4, "fr": "3 ou 4 joueurs par couloir (serveur, receveur, défenseur), plusieurs couloirs en parallèle", "en": "3 or 4 players per channel (server, receiver, defender), several channels side by side" },
+  "space": { "w": 25, "h": 14 },
+  "duration": { "fr": "3 x 4 min (passif, semi-actif, actif), 1 min 30 de récupération", "en": "3 x 4 min (passive, half-active, active), 1 min 30 rest" },
+  "minutes": 16,
+  "md": ["MD-4", "MD-2", "youth"],
+  "intensity": "medium",
+  "intentions": ["progresser", "regarder-devant"],
+  "skills": ["controle", "scan", "protection", "decision"],
+  "pieces": ["les yeux"],
+  "fr": {
+    "title": "Recevoir sur le demi-tour",
+    "subtitle": "Recevoir de profil, se retourner du côté libre, sous pression passive puis active",
+    "objective": "Recevoir le corps ouvert, sur le pied éloigné du défenseur, et se retourner face au jeu dès le premier contact. Le défenseur passe de passif à actif pour que le geste tienne sous la pression.",
+    "organisation": [
+      "Couloir de 25 x 14 m : le serveur A à gauche, deux portes de 3 m à droite, l'une en haut, l'autre en bas.",
+      "Le receveur B au milieu, le défenseur juste dans son dos.",
+      "Rotation après 4 ballons : A devient receveur, B défenseur, le défenseur serveur.",
+      "Avec un grand groupe, alignez des couloirs ; un ballon par couloir, deux si possible pour ne pas attendre.",
+      "Chez les jeunes : eau entre les séries, défenseur de même gabarit, jamais de charge dans le dos."
+    ],
+    "rules": [
+      "B reçoit et franchit une porte en conduite : 1 point.",
+      "Série 1, défenseur passif : il pose une main dans le dos et ne joue pas le ballon.",
+      "Série 2, semi-actif : il ferme un côté. Série 3, actif : il joue le ballon.",
+      "Si les deux côtés sont fermés, B remet à A en une touche et se démarque à nouveau.",
+      "Défenseur qui récupère : 1 point s'il conduit jusqu'à la ligne de A."
+    ],
+    "coaching": [
+      "Regarde par-dessus l'épaule avant la passe : où est le défenseur ?",
+      "De profil, les épaules vers le jeu : jamais face à A comme une porte fermée.",
+      "Reçois sur le pied le plus loin du défenseur.",
+      "Premier contact vers l'avant, du côté où il n'est pas.",
+      "S'il colle, protège avec le corps ; s'il est loin, tourne sans attendre."
+    ],
+    "progressions": [
+      "Défenseur actif dès la passe de A.",
+      "B n'a que deux touches pour franchir la porte.",
+      "A annonce « Tourne » ou « Homme » ; plus tard, B décide seul.",
+      "Passer au rondo R05 et au jeu de position P05."
+    ],
+    "regressions": [
+      "Défenseur passif sur toutes les séries.",
+      "Portes de 5 m.",
+      "A passe à la main pour les plus jeunes, au sol ensuite."
+    ],
+    "measure": "Sur 10 ballons par joueur et par série : demi-tours réussis (porte franchie face au jeu). Viser 8 sur 10 contre le passif, 5 sur 10 contre l'actif.",
+    "story": "« Avant de recevoir, tu regardes. Toujours. » Monsieur Lacombe ajoute la suite, que Kaydoudou recopie dans son carnet : de profil, sur le pied loin du défenseur."
+  },
+  "en": {
+    "title": "Receiving on the Half-Turn",
+    "subtitle": "Receive side-on, turn to the open side, under passive then active pressure",
+    "objective": "Receive with an open body, on the foot furthest from the defender, and turn to face play from the first touch. The defender goes from passive to active so the skill holds under pressure.",
+    "organisation": [
+      "25 x 14 m channel: server A on the left, two 3 m gates on the right, one high, one low.",
+      "Receiver B in the middle, the defender right behind him.",
+      "Rotate after 4 balls: A becomes receiver, B defender, the defender server.",
+      "With a big group, line up several channels; one ball per channel, two if possible so nobody waits.",
+      "With young players: water between sets, a defender of similar size, never any charge from behind."
+    ],
+    "rules": [
+      "B receives and dribbles through a gate: 1 point.",
+      "Set 1, passive defender: one hand on the back, he does not play the ball.",
+      "Set 2, half-active: he closes one side. Set 3, active: he plays the ball.",
+      "If both sides are closed, B sets it back to A first time and gets free again.",
+      "A defender who wins the ball: 1 point if he dribbles it to A's line."
+    ],
+    "coaching": [
+      "Look over your shoulder before the pass: where is the defender?",
+      "Side-on, shoulders to the game: never square to A like a closed door.",
+      "Receive on the foot furthest from the defender.",
+      "First touch forward, on the side where he is not.",
+      "If he is tight, shield with your body; if he is off, turn without waiting."
+    ],
+    "progressions": [
+      "Active defender from A's pass.",
+      "B has only two touches to get through a gate.",
+      "A calls \"Turn\" or \"Man on\"; later, B decides alone.",
+      "Move on to rondo R05 and positional game P05."
+    ],
+    "regressions": [
+      "Passive defender in every set.",
+      "5 m gates.",
+      "A throws the ball for the youngest, then passes along the ground."
+    ],
+    "measure": "Out of 10 balls per player and per set: successful half-turns (gate crossed facing play). Aim for 8 out of 10 against the passive defender, 5 out of 10 against the active one.",
+    "story": "\"Before you receive, you look. Always.\" Monsieur Lacombe adds the rest, which Kaydoudou copies out: side-on, on the foot away from the defender."
+  },
+  "diagram": {
+    "view": "grid", "w": 25, "h": 14,
+    "players": [
+      { "id": "a", "team": "a", "x": 2, "y": 7, "label": "A" },
+      { "id": "b", "team": "a", "x": 12.5, "y": 7.8, "label": "B" },
+      { "id": "d", "team": "b", "x": 14.3, "y": 5.6 }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "a", "to": "b", "kind": "pass", "n": 1 },
+      { "from": "b", "to": [23.6, 10], "kind": "dribble", "n": 2 }
+    ],
+    "cones": [[0, 0], [25, 0], [0, 14], [25, 14], [24, 2.5], [24, 5.5], [24, 8.5], [24, 11.5]],
+    "labels": [
+      { "x": 11.5, "y": 10.6, "text": "demi-tour" },
+      { "x": 16.4, "y": 3.8, "text": "défenseur passif" }
+    ]
+  },
+  "diagram2": {
+    "view": "grid", "w": 25, "h": 14,
+    "players": [
+      { "id": "a", "team": "a", "x": 2, "y": 7, "label": "A" },
+      { "id": "b", "team": "a", "x": 12.5, "y": 7.2, "label": "B" },
+      { "id": "d", "team": "b", "x": 15.3, "y": 11.2 }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "a", "to": "b", "kind": "pass", "n": 1 },
+      { "from": "d", "to": [13.6, 8.8], "kind": "press", "n": 2 },
+      { "from": "b", "to": [23.6, 4], "kind": "dribble", "n": 3 }
+    ],
+    "cones": [[0, 0], [25, 0], [0, 14], [25, 14], [24, 2.5], [24, 5.5], [24, 8.5], [24, 11.5]],
+    "labels": [
+      { "x": 19.5, "y": 12.9, "text": "défenseur actif" },
+      { "x": 18.5, "y": 2.6, "text": "côté libre" }
+    ]
+  }
+}

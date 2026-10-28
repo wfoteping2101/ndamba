@@ -1,26 +1,50 @@
-import { BookOpen } from 'lucide-react'
-import { LESSONS } from '../../../content'
-import { Pitch } from '../../../ui'
+import type { SkillKey } from '../../../lib/types'
 import { cx, fmtDate } from '../../../lib/util'
 import { fmtNjangi } from '../../../lib/njangi'
 import { useSiteT } from './brand'
 
 /* Small, static pictures of the app for the features section. Not interactive. */
 
-/** Players: a Ball Lesson card with the real diagram from the novel (lesson 3). */
-export function LessonVisual() {
+/** Players, from kids to pros: one player's journey (fictional, the pro demo's number 8), skills now and a season ago. */
+const JOURNEY: { k: SkillKey; then: number; now: number }[] = [
+  { k: 'scan', then: 2.5, now: 3.5 }, { k: 'controle', then: 3, now: 3.5 }, { k: 'passe', then: 3, now: 4 }, { k: 'contre-pression', then: 2, now: 3 }, { k: 'decision', then: 2.5, now: 3.5 },
+]
+const PATH_STEPS = ['u13', 'u15', 'u17', 'u19', 'pro'] as const
+
+export function JourneyVisual() {
   const { t } = useSiteT()
-  const lesson = LESSONS.find((l) => l.no === 3)
   return (
-    <figure className="overflow-hidden rounded-3xl border border-line bg-paper shadow-card">
-      <div className="flex items-center gap-2 border-b border-line bg-sand/50 px-5 py-3">
-        <BookOpen size={16} className="text-terra-600" />
-        <span className="eyebrow">{t('landing.features.visual.lessonNo')}</span>
+    <figure className="overflow-hidden rounded-3xl border border-line bg-paper shadow-card" aria-label={t('landing.features.visual.journeyTitle')}>
+      <div className="flex items-center gap-3 border-b border-line bg-sand/50 px-5 py-3.5">
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-forest-600 font-display text-[18px] font-semibold text-cream">8</span>
+        <div className="min-w-0">
+          <figcaption className="truncate font-display text-[18px] font-semibold leading-tight text-ink">{t('landing.features.visual.journeyTitle')}</figcaption>
+          <div className="truncate text-[13px] text-ink-muted">{t('landing.features.visual.journeyRole')}</div>
+        </div>
       </div>
       <div className="p-5">
-        <p className="font-display text-[22px] font-semibold leading-snug text-ink">{t('landing.features.visual.lessonTitle')}</p>
-        {lesson?.diagram && <Pitch spec={lesson.diagram} width={560} title={t('landing.features.visual.lessonTitle')} className="mt-4 border border-line" />}
-        <figcaption className="mt-4 border-l-2 border-sun-500 pl-3 font-display text-[16px] italic text-ink-soft">{t('landing.features.visual.lessonLine')}</figcaption>
+        <div className="flex items-center gap-4 text-[12px] font-semibold text-ink-muted">
+          <span className="inline-flex items-center gap-1.5"><span className="h-2 w-4 rounded-full bg-forest-300" />{t('landing.features.visual.journeyThen')}</span>
+          <span className="inline-flex items-center gap-1.5"><span className="h-2 w-4 rounded-full bg-forest-600" />{t('landing.features.visual.journeyNow')}</span>
+        </div>
+        <ul className="mt-3 space-y-2.5">
+          {JOURNEY.map((s) => (
+            <li key={s.k} className="grid grid-cols-[minmax(0,8.5rem)_minmax(0,1fr)] items-center gap-3 sm:grid-cols-[minmax(0,10rem)_minmax(0,1fr)]">
+              <span className="truncate text-[13.5px] text-ink-soft">{t(`common:skills.${s.k}`)}</span>
+              <span role="img" className="relative block h-3 rounded-full bg-sand" aria-label={t('landing.features.visual.journeyBar', { then: s.then, now: s.now })}>
+                <span className="absolute inset-y-0 left-0 rounded-full bg-forest-600" style={{ width: `${(s.now / 4) * 100}%` }} />
+                <span className="absolute inset-y-0 left-0 rounded-full bg-forest-300" style={{ width: `${(s.then / 4) * 100}%` }} />
+              </span>
+            </li>
+          ))}
+        </ul>
+        <ol className="mt-5 flex items-center gap-1 overflow-hidden" aria-label={t('landing.features.visual.journeyPath')}>
+          {PATH_STEPS.map((p, i) => (
+            <li key={p} className="flex min-w-0 flex-1 items-center gap-1">
+              <span className={cx('min-w-0 flex-1 truncate rounded-lg px-1.5 py-1.5 text-center text-[11.5px] font-bold', i === PATH_STEPS.length - 1 ? 'bg-sun-500 text-ink' : 'bg-forest-50 text-forest-700')}>{t(`landing.features.visual.journeyStep.${p}`)}</span>
+            </li>
+          ))}
+        </ol>
       </div>
     </figure>
   )

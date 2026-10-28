@@ -1,0 +1,109 @@
+{
+  "id": "C05",
+  "family": "technique",
+  "order": 5,
+  "ages": "U10+",
+  "players": { "min": 4, "max": 6, "fr": "4 à 6 joueurs par carré (serveur, receveur, 2 défenseurs), plusieurs carrés en parallèle", "en": "4 to 6 players per square (server, receiver, 2 defenders), several squares side by side" },
+  "space": { "w": 16, "h": 16 },
+  "duration": { "fr": "4 x 3 min, 1 min de récupération", "en": "4 x 3 min, 1 min rest" },
+  "minutes": 15,
+  "md": ["MD-4", "MD-2", "youth"],
+  "intensity": "medium",
+  "intentions": ["progresser", "sortir"],
+  "skills": ["controle", "scan", "decision", "conduite"],
+  "pieces": ["les yeux", "la raison"],
+  "fr": {
+    "title": "Le contrôle qui fuit la pression",
+    "subtitle": "Contrôle orienté loin du défenseur qui arrive",
+    "objective": "Faire du premier contrôle un déplacement : pousser le ballon vers l'espace libre, loin du défenseur, au lieu de l'arrêter sous le pied. Le receveur gagne une seconde, et une seconde, c'est une passe.",
+    "organisation": [
+      "Carré de 16 x 16 m : le serveur S à gauche, le receveur R au centre, un défenseur en haut et un en bas.",
+      "Deux portes de 3 m sur le côté droit, une en haut, une en bas.",
+      "Au moment de la passe, l'entraîneur désigne un défenseur, qui sort sur R.",
+      "Rotation toutes les 5 réceptions ; un ballon par carré, avec une réserve près du serveur.",
+      "Par forte chaleur, séries de 2 min et eau à chaque rotation ; avec un grand groupe, plusieurs carrés côte à côte."
+    ],
+    "rules": [
+      "R franchit en conduite la porte opposée au défenseur actif, en trois touches maximum : 1 point.",
+      "Porte franchie dès le premier contrôle (ballon poussé au-delà de la ligne en deux touches) : 2 points.",
+      "Le défenseur qui touche le ballon marque 1 point et devient receveur.",
+      "Le défenseur ne part qu'au moment de la passe."
+    ],
+    "coaching": [
+      "Regarde les deux défenseurs avant la passe : lequel part ?",
+      "Ouvre le corps vers la porte libre avant que le ballon arrive.",
+      "Premier contrôle de l'intérieur du pied éloigné, ou de l'extérieur du pied proche.",
+      "Le ballon part à un ou deux mètres devant toi, jamais sous ta semelle.",
+      "Accélère après le contrôle : le défenseur doit courir derrière toi."
+    ],
+    "progressions": [
+      "Les deux défenseurs peuvent partir ; R lit lequel est le plus proche.",
+      "Passe de S plus forte, ou passe aérienne à la main pour les plus jeunes.",
+      "Après la porte, R doit passer à un partenaire au lieu de conduire."
+    ],
+    "regressions": [
+      "Défenseur qui part une seconde après la passe.",
+      "Portes de 5 m.",
+      "L'entraîneur annonce le défenseur avant la passe."
+    ],
+    "measure": "Sur 10 réceptions par joueur : premiers contrôles orientés vers la bonne porte. Objectif 7 sur 10, et de moins en moins de touches avant la porte d'une série à l'autre.",
+    "story": "Au dôme de Waldorf, Coach Whitfield le dit à Kaydoudou : le contrôle, c'est déjà un voyage, vers l'espace libre et loin du défenseur."
+  },
+  "en": {
+    "title": "The Touch That Escapes Pressure",
+    "subtitle": "Directional first touch away from the incoming defender",
+    "objective": "Turn the first touch into movement: push the ball into open space, away from the defender, instead of stopping it under the foot. The receiver gains a second, and a second is a pass.",
+    "organisation": [
+      "16 x 16 m square: server S on the left, receiver R in the middle, one defender at the top, one at the bottom.",
+      "Two 3 m gates on the right side, one high, one low.",
+      "As the pass is played, the coach points at one defender, who goes out to R.",
+      "Rotate every 5 receptions; one ball per square, with a spare by the server.",
+      "In strong heat, 2 min sets and water at every rotation; with a big group, several squares side by side."
+    ],
+    "rules": [
+      "R dribbles through the gate away from the active defender in three touches maximum: 1 point.",
+      "Gate crossed straight off the first touch (ball pushed over the line in two touches): 2 points.",
+      "A defender who touches the ball scores 1 point and becomes the receiver.",
+      "The defender only leaves when the pass is played."
+    ],
+    "coaching": [
+      "Check both defenders before the pass: which one is coming?",
+      "Open your body to the free gate before the ball arrives.",
+      "First touch with the inside of the far foot, or the outside of the near foot.",
+      "The ball goes one or two metres in front of you, never under your sole.",
+      "Accelerate after the touch: the defender must chase you."
+    ],
+    "progressions": [
+      "Both defenders may go; R reads which one is closer.",
+      "Harder pass from S, or a thrown ball in the air for the youngest.",
+      "After the gate, R must pass to a teammate instead of dribbling."
+    ],
+    "regressions": [
+      "The defender leaves one second after the pass.",
+      "5 m gates.",
+      "The coach names the defender before the pass."
+    ],
+    "measure": "Out of 10 receptions per player: first touches towards the right gate. Target 7 out of 10, and fewer touches before the gate from one set to the next.",
+    "story": "In the Waldorf dome, Coach Whitfield tells Kaydoudou that the first touch is already a journey, into open space and away from the defender."
+  },
+  "diagram": {
+    "view": "grid", "w": 16, "h": 16,
+    "players": [
+      { "id": "s", "team": "a", "x": 1, "y": 8, "label": "S" },
+      { "id": "r", "team": "a", "x": 7.5, "y": 8, "label": "R" },
+      { "id": "d1", "team": "b", "x": 8, "y": 1 },
+      { "id": "d2", "team": "b", "x": 8, "y": 15 }
+    ],
+    "ball": "s",
+    "arrows": [
+      { "from": "s", "to": "r", "kind": "pass", "n": 1 },
+      { "from": "d1", "to": [8.4, 5.6], "kind": "press", "n": 2 },
+      { "from": "r", "to": [15.6, 12], "kind": "dribble", "n": 3 }
+    ],
+    "cones": [[0, 0], [16, 0], [0, 16], [16, 16], [16, 2.5], [16, 5.5], [16, 10.5], [16, 13.5]],
+    "labels": [
+      { "x": 12.6, "y": 8.9, "text": "loin de la pression" }
+    ]
+  },
+  "diagram2": null
+}

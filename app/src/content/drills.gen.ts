@@ -3,6 +3,3784 @@ import type { Drill } from '../lib/types'
 
 export const DRILLS: Drill[] = [
  {
+  "id": "C01",
+  "family": "technique",
+  "order": 1,
+  "ages": "U10+",
+  "players": {
+   "min": 6,
+   "max": 8,
+   "fr": "6 à 8 joueurs par Y, plusieurs Y en parallèle",
+   "en": "6 to 8 players per Y, several Ys side by side"
+  },
+  "space": {
+   "w": 30,
+   "h": 20
+  },
+  "duration": {
+   "fr": "4 x 4 min, 1 min de récupération",
+   "en": "4 x 4 min, 1 min rest"
+  },
+  "minutes": 20,
+  "md": [
+   "MD-2",
+   "MD-1",
+   "youth"
+  ],
+  "intensity": "medium",
+  "intentions": [
+   "progresser",
+   "fixer"
+  ],
+  "skills": [
+   "passe",
+   "controle",
+   "appels",
+   "scan",
+   "communication"
+  ],
+  "pieces": [
+   "le cœur",
+   "la carte"
+  ],
+  "fr": {
+   "title": "Le Y du Njangi",
+   "subtitle": "Circuit de passes en Y : le troisième homme arrive lancé",
+   "objective": "Automatiser la combinaison du troisième homme dans un circuit sans opposition : passe dans les pieds du pivot, remise en une touche, passe vers l'avant de celui qui arrive lancé. Chaque passe prépare la suivante.",
+   "organisation": [
+    "Un Y de plots sur 30 x 20 m : la base à gauche, le pivot au croisement à 10 m, deux branches 12 m plus loin.",
+    "À la base, deux files : A avec les ballons, C décalé de 5 m. Un joueur au pivot (B), un au bout de chaque branche (D).",
+    "Avec un grand groupe, installez trois ou quatre Y côte à côte plutôt qu'une longue file : jamais plus de deux joueurs qui attendent.",
+    "Un ballon pour deux joueurs suffit : le joueur de branche revient en conduite à la base avec le ballon.",
+    "Par forte chaleur : files à l'ombre, eau entre les séries, séries de 3 min au lieu de 4."
+   ],
+   "rules": [
+    "A joue dans les pieds de B ; B remet en une touche vers C, qui joue vers une branche en une ou deux touches.",
+    "La passe directe de la base vers une branche est interdite.",
+    "Chacun suit sa passe : A va au pivot, B dans la file C, C à la branche, D revient à la base.",
+    "Le joueur de branche qui lève la main est la cible ; C doit l'avoir vu avant la remise.",
+    "On change de branche à chaque série : haute, puis basse."
+   ],
+   "coaching": [
+    "B, fais un appel puis un contre-appel avant de te montrer : décolle-toi de ton plot.",
+    "A, passe ferme, au sol, sur le pied de B le plus loin de la branche visée.",
+    "B, remise en une touche, dans la course de C, pas dans ses pieds.",
+    "C, pars au moment où A passe : tu dois arriver, pas attendre.",
+    "C, regarde la branche pendant que la remise roule."
+   ],
+   "progressions": [
+    "Une touche pour tous.",
+    "Un défenseur passif dans le dos de B, puis actif : s'il ne suit pas, B se retourne et joue la branche lui-même.",
+    "Les deux joueurs de branche bougent ; seul celui qui se démarque peut recevoir.",
+    "Passer au jeu de combinaisons à trois (C13), puis à la fiche P03."
+   ],
+   "regressions": [
+    "Deux touches pour B et pour C.",
+    "Distances réduites : pivot à 8 m de la base, branches à 8 m du pivot.",
+    "L'entraîneur annonce la branche à voix haute avant la première passe."
+   ],
+   "measure": "Circuits complets sans faute en 2 minutes, et part des remises de B jouées en une touche dans la course de C (objectif : 8 sur 10).",
+   "story": "« Le ballon doit voyager », répète Tonton Fokou sur la terre rouge de Bonamoussadi ; dans le Y, il passe par trois joueurs avant d'arriver là où il doit aller."
+  },
+  "en": {
+   "title": "The Njangi Y",
+   "subtitle": "Y-shaped passing pattern: the third man arrives on the run",
+   "objective": "Make the third-man combination automatic in an unopposed pattern: a pass into the pivot's feet, a one-touch set, a forward pass from the player arriving on the run. Every pass prepares the next one.",
+   "organisation": [
+    "A Y of cones on 30 x 20 m: the base on the left, the pivot where the arms meet 10 m away, two arms 12 m further on.",
+    "Two lines at the base: A with the balls, C 5 m to the side. One player at the pivot (B), one at the end of each arm (D).",
+    "With a big group, set up three or four Ys side by side rather than one long queue: never more than two players waiting.",
+    "One ball for two players is enough: the arm player dribbles the ball back to the base.",
+    "In strong heat: queues in the shade, water between sets, 3 min sets instead of 4."
+   ],
+   "rules": [
+    "A plays into B's feet; B sets it first time for C, who plays to an arm in one or two touches.",
+    "No direct pass from the base to an arm.",
+    "Everyone follows their pass: A to the pivot, B to the C line, C to the arm, D back to the base.",
+    "The arm player who raises a hand is the target; C must have seen him before the set.",
+    "Switch arms every set: top, then bottom."
+   ],
+   "coaching": [
+    "B, go away then come back before you show: lose your cone.",
+    "A, firm pass along the ground, onto B's foot furthest from the target arm.",
+    "B, set it first time into C's stride, not onto his feet.",
+    "C, set off as A passes: you must arrive, not wait.",
+    "C, look at the arm while the set is still rolling."
+   ],
+   "progressions": [
+    "One touch for everyone.",
+    "A passive defender behind B, then an active one: if he does not follow, B turns and plays the arm himself.",
+    "Both arm players move; only the one who gets free may receive.",
+    "Move on to the three-player pattern game (C13), then drill P03."
+   ],
+   "regressions": [
+    "Two touches for B and C.",
+    "Shorter distances: pivot 8 m from the base, arms 8 m from the pivot.",
+    "The coach calls the arm out loud before the first pass."
+   ],
+   "measure": "Clean full patterns in 2 minutes, and the share of B's sets played first time into C's stride (target: 8 out of 10).",
+   "story": "\"The ball must travel,\" Tonton Fokou repeats on the red earth of Bonamoussadi; in the Y it goes through three players before it gets where it needs to go."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 30,
+   "h": 20,
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 3,
+     "y": 10,
+     "label": "A"
+    },
+    {
+     "id": "c",
+     "team": "a",
+     "x": 3.5,
+     "y": 4.5,
+     "label": "C"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 13.5,
+     "y": 10,
+     "label": "B"
+    },
+    {
+     "id": "d1",
+     "team": "a",
+     "x": 25.5,
+     "y": 3.5,
+     "label": "D"
+    },
+    {
+     "id": "d2",
+     "team": "a",
+     "x": 25.5,
+     "y": 16.5,
+     "label": "D"
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": "b",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "c",
+     "to": [
+      11,
+      6.8
+     ],
+     "kind": "run",
+     "n": 2
+    },
+    {
+     "from": "b",
+     "to": [
+      11,
+      6.8
+     ],
+     "kind": "pass",
+     "n": 3
+    },
+    {
+     "from": [
+      11,
+      6.8
+     ],
+     "to": "d1",
+     "kind": "pass",
+     "n": 4
+    }
+   ],
+   "labels": [
+    {
+     "x": 19.2,
+     "y": 7.6,
+     "text": "troisième homme"
+    }
+   ]
+  },
+  "diagram2": {
+   "view": "grid",
+   "w": 30,
+   "h": 20,
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 3,
+     "y": 10,
+     "label": "A"
+    },
+    {
+     "id": "c",
+     "team": "a",
+     "x": 3.5,
+     "y": 4.5,
+     "label": "C"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 13.5,
+     "y": 10,
+     "label": "B"
+    },
+    {
+     "id": "r",
+     "team": "b",
+     "x": 17.5,
+     "y": 7.2
+    },
+    {
+     "id": "d1",
+     "team": "a",
+     "x": 25.5,
+     "y": 3.5,
+     "label": "D"
+    },
+    {
+     "id": "d2",
+     "team": "a",
+     "x": 25.5,
+     "y": 16.5,
+     "label": "D"
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": "b",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "b",
+     "to": [
+      17,
+      12.8
+     ],
+     "kind": "dribble",
+     "n": 2
+    },
+    {
+     "from": [
+      17,
+      12.8
+     ],
+     "to": "d2",
+     "kind": "pass",
+     "n": 3
+    }
+   ],
+   "labels": [
+    {
+     "x": 8,
+     "y": 13.2,
+     "text": "« Tourne »"
+    },
+    {
+     "x": 20.5,
+     "y": 5.2,
+     "text": "il ne suit pas"
+    }
+   ]
+  }
+ },
+ {
+  "id": "C02",
+  "family": "technique",
+  "order": 2,
+  "ages": "U11+",
+  "players": {
+   "min": 5,
+   "max": 8,
+   "fr": "5 à 8 joueurs par losange, plusieurs losanges en parallèle",
+   "en": "5 to 8 players per diamond, several diamonds side by side"
+  },
+  "space": {
+   "w": 30,
+   "h": 20
+  },
+  "duration": {
+   "fr": "4 x 4 min, 1 min de récupération",
+   "en": "4 x 4 min, 1 min rest"
+  },
+  "minutes": 20,
+  "md": [
+   "MD-4",
+   "MD-2",
+   "youth"
+  ],
+  "intensity": "medium",
+  "intentions": [
+   "respirer",
+   "progresser"
+  ],
+  "skills": [
+   "passe",
+   "controle",
+   "appels",
+   "communication"
+  ],
+  "pieces": [
+   "la carte",
+   "le cœur"
+  ],
+  "fr": {
+   "title": "Le losange qui voyage",
+   "subtitle": "Circuit de passes en losange, avec rotations",
+   "objective": "Faire circuler le ballon dans un losange en recevant le corps ouvert, puis apprendre les rotations : la pointe décroche, le côté monte. Le joueur comprend que bouger crée la passe suivante.",
+   "organisation": [
+    "Quatre plots en losange sur 30 x 20 m : la base à gauche, deux côtés à 14 m, la pointe à droite.",
+    "Deux joueurs à la base, un sur chaque autre plot ; au-delà de 5 joueurs, on ajoute un joueur à la pointe.",
+    "Avec un grand groupe, plusieurs losanges côte à côte ; avec peu de ballons, un seul ballon par losange suffit.",
+    "Un deuxième ballon part de la pointe quand le groupe est à l'aise : les deux ne doivent jamais se croiser sur le même plot.",
+    "Chez les jeunes : eau à chaque changement de sens, à l'ombre si possible."
+   ],
+   "rules": [
+    "Le tour : base, côté, pointe, autre côté, puis retour en conduite à la base.",
+    "Chacun suit sa passe et prend la place du receveur.",
+    "Deux touches maximum : contrôle orienté vers le joueur suivant, puis passe.",
+    "On change de sens à chaque série.",
+    "La rotation (deuxième partie) : la pointe décroche pour recevoir, le côté monte prendre sa place et reçoit en profondeur."
+   ],
+   "coaching": [
+    "Reçois de profil, sur le pied le plus loin de celui qui t'a passé le ballon.",
+    "Ton premier contrôle va déjà vers le joueur suivant.",
+    "Passe ferme, au sol, sur le bon pied du receveur.",
+    "Pointe, décroche quand le passeur lève la tête, pas avant.",
+    "Côté, monte au moment où la pointe décroche : un espace libéré se remplit tout de suite."
+   ],
+   "progressions": [
+    "Une touche sur les côtés.",
+    "Deux ballons en même temps, départ de la base et de la pointe.",
+    "Un défenseur passif au centre du losange : les passes ne le traversent pas.",
+    "Passer au jeu de position P01, où le losange devient vivant."
+   ],
+   "regressions": [
+    "Losange plus petit, côtés à 10 m.",
+    "Touches libres, le temps que la rotation soit comprise.",
+    "Une seule partie : le tour, sans rotation."
+   ],
+   "measure": "Tours complets sans faute par série, et part des contrôles orientés vers le joueur suivant (objectif : 8 sur 10). En rotation, compter les fois où la pointe et le côté bougent ensemble.",
+   "story": "Jordi Puig dessine des triangles sur tout ; deux triangles collés font un losange, et le losange qui tourne ne laisse jamais le ballon seul."
+  },
+  "en": {
+   "title": "The Travelling Diamond",
+   "subtitle": "Diamond passing pattern with rotations",
+   "objective": "Move the ball around a diamond, receiving with an open body, then learn the rotations: the tip drops, the side goes up. Players learn that moving creates the next pass.",
+   "organisation": [
+    "Four cones in a diamond on 30 x 20 m: the base on the left, two sides 14 m away, the tip on the right.",
+    "Two players at the base, one on each other cone; with more than 5 players, add one at the tip.",
+    "With a big group, several diamonds side by side; with few balls, one ball per diamond is enough.",
+    "A second ball starts from the tip once the group is comfortable: the two must never arrive at the same cone.",
+    "With young players: water at every change of direction, in the shade if possible."
+   ],
+   "rules": [
+    "The lap: base, side, tip, other side, then dribble back to the base.",
+    "Everyone follows their pass and takes the receiver's place.",
+    "Two touches maximum: a first touch towards the next player, then the pass.",
+    "Change direction every set.",
+    "The rotation (second part): the tip drops to receive, the side goes up into his space and receives in depth."
+   ],
+   "coaching": [
+    "Receive side-on, on the foot furthest from the passer.",
+    "Your first touch already goes towards the next player.",
+    "Firm pass along the ground, onto the receiver's good foot.",
+    "Tip, drop when the passer lifts his head, not before.",
+    "Side, go up as the tip drops: a space that opens is filled straight away."
+   ],
+   "progressions": [
+    "One touch on the sides.",
+    "Two balls at once, starting from the base and the tip.",
+    "A passive defender in the middle of the diamond: passes may not go through him.",
+    "Move on to positional game P01, where the diamond comes alive."
+   ],
+   "regressions": [
+    "Smaller diamond, sides of 10 m.",
+    "Unlimited touches while the rotation is learned.",
+    "One part only: the lap, no rotation."
+   ],
+   "measure": "Clean laps per set, and the share of first touches towards the next player (target: 8 out of 10). In the rotation, count how often the tip and the side move together.",
+   "story": "Jordi Puig draws triangles on everything; put two triangles together and you get a diamond, and a turning diamond never leaves the ball alone."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 30,
+   "h": 20,
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 3,
+     "y": 10,
+     "label": "A"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 15,
+     "y": 3,
+     "label": "B"
+    },
+    {
+     "id": "c",
+     "team": "a",
+     "x": 27,
+     "y": 10,
+     "label": "C"
+    },
+    {
+     "id": "d",
+     "team": "a",
+     "x": 15,
+     "y": 17,
+     "label": "D"
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": "b",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "b",
+     "to": "c",
+     "kind": "pass",
+     "n": 2
+    },
+    {
+     "from": "c",
+     "to": "d",
+     "kind": "pass",
+     "n": 3
+    },
+    {
+     "from": "d",
+     "to": [
+      5,
+      12.6
+     ],
+     "kind": "dribble",
+     "n": 4
+    }
+   ],
+   "labels": [
+    {
+     "x": 15,
+     "y": 10.4,
+     "text": "chacun suit sa passe"
+    }
+   ]
+  },
+  "diagram2": {
+   "view": "grid",
+   "w": 30,
+   "h": 20,
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 3,
+     "y": 10,
+     "label": "A"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 15,
+     "y": 3,
+     "label": "B"
+    },
+    {
+     "id": "c",
+     "team": "a",
+     "x": 27,
+     "y": 10,
+     "label": "C"
+    },
+    {
+     "id": "d",
+     "team": "a",
+     "x": 15,
+     "y": 17,
+     "label": "D"
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "c",
+     "to": [
+      20,
+      12.5
+     ],
+     "kind": "run",
+     "n": 1
+    },
+    {
+     "from": "a",
+     "to": [
+      20,
+      12.5
+     ],
+     "kind": "pass",
+     "n": 2
+    },
+    {
+     "from": "b",
+     "to": [
+      26.5,
+      4.5
+     ],
+     "kind": "run",
+     "n": 3
+    },
+    {
+     "from": [
+      20,
+      12.5
+     ],
+     "to": [
+      26.5,
+      4.5
+     ],
+     "kind": "pass",
+     "n": 4
+    }
+   ],
+   "labels": [
+    {
+     "x": 23.6,
+     "y": 15.4,
+     "text": "la pointe décroche"
+    },
+    {
+     "x": 20.2,
+     "y": 6.6,
+     "text": "le côté monte"
+    }
+   ]
+  }
+ },
+ {
+  "id": "C03",
+  "family": "technique",
+  "order": 3,
+  "ages": "U9+",
+  "players": {
+   "min": 4,
+   "max": 6,
+   "fr": "4 à 6 joueurs par carré, plusieurs carrés en parallèle",
+   "en": "4 to 6 players per square, several squares side by side"
+  },
+  "space": {
+   "w": 14,
+   "h": 14
+  },
+  "duration": {
+   "fr": "5 x 3 min, 1 min de récupération",
+   "en": "5 x 3 min, 1 min rest"
+  },
+  "minutes": 19,
+  "md": [
+   "MD-2",
+   "MD-1",
+   "youth"
+  ],
+  "intensity": "low",
+  "intentions": [
+   "sortir",
+   "progresser"
+  ],
+  "skills": [
+   "passe",
+   "controle"
+  ],
+  "pieces": [
+   "la raison",
+   "le cœur"
+  ],
+  "fr": {
+   "title": "Le carré des surfaces",
+   "subtitle": "Intérieur, extérieur, cou-de-pied : la bonne surface et le bon poids",
+   "objective": "Choisir la surface de contact et doser la passe pour qu'elle arrive où il faut, à la bonne vitesse. Une passe trop douce n'arrive jamais ; une passe trop forte n'est pas un cadeau.",
+   "organisation": [
+    "Carré de 12 x 12 m dans un espace de 14 x 14 m, un joueur à chaque coin.",
+    "Au milieu de chaque côté, une porte de 1,5 m faite de deux coupelles.",
+    "À plus de 4, le joueur en trop attend derrière un coin et entre à la passe suivante.",
+    "Un ballon par carré suffit ; avec un grand groupe, alignez plusieurs carrés plutôt que d'allonger les files.",
+    "Sur terre battue ou terrain bosselé, cherchez la partie la plus plate : la passe doit être plus appuyée, le receveur va au-devant du ballon."
+   ],
+   "rules": [
+    "Les passes le long des côtés passent par la porte ; la diagonale est la passe longue.",
+    "L'entraîneur annonce la surface chaque minute : intérieur, extérieur, pied faible, cou-de-pied pour la diagonale.",
+    "Le receveur contrôle sans faire plus d'un pas : s'il doit courir ou attendre, c'est une faute de poids.",
+    "Deux touches maximum ; une touche quand le groupe est à l'aise."
+   ],
+   "coaching": [
+    "Le pied d'appui à côté du ballon, pointé vers la cible.",
+    "Intérieur : cheville bloquée, on pousse à travers le ballon.",
+    "Extérieur : orteils vers le bas et vers l'intérieur, le ballon part en douceur.",
+    "Passe dans les pieds quand le partenaire est arrêté, devant lui quand il bouge.",
+    "Contrôle avec la surface qui prépare ta passe suivante."
+   ],
+   "progressions": [
+    "Une touche, en gardant la surface annoncée.",
+    "Deux ballons dans le carré.",
+    "Le receveur se déplace d'un pas avant de recevoir : passe dans la course.",
+    "Diagonales au cou-de-pied décollées puis rabattues, à partir de U12."
+   ],
+   "regressions": [
+    "Carré de 8 x 8 m, touches libres.",
+    "Une seule surface par série, l'intérieur d'abord.",
+    "Portes de 2,5 m."
+   ],
+   "measure": "Sur 10 passes par joueur et par surface : passes qui traversent la porte et passes contrôlées sans pas de rattrapage. Objectif : 7 sur 10 au pied faible.",
+   "story": "Papa dit qu'un réseau est comme une équipe ; Kaydoudou ajoute dans son carnet qu'une passe, comme un message, doit arriver à la bonne vitesse pour être ouverte."
+  },
+  "en": {
+   "title": "The Surfaces Square",
+   "subtitle": "Inside, outside, laces: the right surface and the right weight",
+   "objective": "Choose the contact surface and weight the pass so that it arrives in the right place at the right speed. A pass that is too soft never arrives; a pass that is too hard is no gift.",
+   "organisation": [
+    "A 12 x 12 m square inside a 14 x 14 m area, one player on each corner.",
+    "In the middle of each side, a 1.5 m gate made of two disc cones.",
+    "With more than 4, the extra player waits behind a corner and comes in on the next pass.",
+    "One ball per square is enough; with a big group, set up more squares rather than longer queues.",
+    "On hard earth or a bumpy pitch, use the flattest part: the pass must be firmer and the receiver goes to meet the ball."
+   ],
+   "rules": [
+    "Passes along the sides go through the gate; the diagonal is the long pass.",
+    "The coach calls the surface every minute: inside, outside, weaker foot, laces for the diagonal.",
+    "The receiver controls without taking more than one step: if he has to chase or wait, the weight was wrong.",
+    "Two touches maximum; one touch once the group is comfortable."
+   ],
+   "coaching": [
+    "Standing foot beside the ball, pointing at the target.",
+    "Inside: ankle locked, push through the ball.",
+    "Outside: toes down and in, the ball leaves softly.",
+    "Pass to feet when your teammate is still, in front of him when he moves.",
+    "Control with the surface that sets up your next pass."
+   ],
+   "progressions": [
+    "One touch, keeping the surface that was called.",
+    "Two balls in the square.",
+    "The receiver moves one step before receiving: pass into his stride.",
+    "Lofted diagonals with the laces, then driven ones, from U12."
+   ],
+   "regressions": [
+    "8 x 8 m square, unlimited touches.",
+    "One surface per set, the inside first.",
+    "2.5 m gates."
+   ],
+   "measure": "Out of 10 passes per player and per surface: passes through the gate and passes controlled without a recovery step. Target: 7 out of 10 with the weaker foot.",
+   "story": "Papa says a network is like a team; Kaydoudou adds in his notebook that a pass, like a message, must arrive at the right speed to be opened."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 14,
+   "h": 14,
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 1,
+     "y": 1,
+     "label": "A"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 13,
+     "y": 1,
+     "label": "B"
+    },
+    {
+     "id": "c",
+     "team": "a",
+     "x": 13,
+     "y": 13,
+     "label": "C"
+    },
+    {
+     "id": "d",
+     "team": "a",
+     "x": 1,
+     "y": 13,
+     "label": "D"
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": "b",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "b",
+     "to": "c",
+     "kind": "pass",
+     "n": 2
+    },
+    {
+     "from": "c",
+     "to": "a",
+     "kind": "pass",
+     "n": 3
+    }
+   ],
+   "cones": [
+    [
+     6.25,
+     1
+    ],
+    [
+     7.75,
+     1
+    ],
+    [
+     13,
+     6.25
+    ],
+    [
+     13,
+     7.75
+    ],
+    [
+     6.25,
+     13
+    ],
+    [
+     7.75,
+     13
+    ],
+    [
+     1,
+     6.25
+    ],
+    [
+     1,
+     7.75
+    ]
+   ],
+   "labels": [
+    {
+     "x": 7,
+     "y": 2.7,
+     "text": "intérieur"
+    },
+    {
+     "x": 10.9,
+     "y": 7.2,
+     "text": "extérieur"
+    },
+    {
+     "x": 9.6,
+     "y": 10.1,
+     "text": "cou-de-pied"
+    }
+   ]
+  },
+  "diagram2": null
+ },
+ {
+  "id": "C04",
+  "family": "technique",
+  "order": 4,
+  "ages": "U10+",
+  "players": {
+   "min": 3,
+   "max": 4,
+   "fr": "3 ou 4 joueurs par couloir (serveur, receveur, défenseur), plusieurs couloirs en parallèle",
+   "en": "3 or 4 players per channel (server, receiver, defender), several channels side by side"
+  },
+  "space": {
+   "w": 25,
+   "h": 14
+  },
+  "duration": {
+   "fr": "3 x 4 min (passif, semi-actif, actif), 1 min 30 de récupération",
+   "en": "3 x 4 min (passive, half-active, active), 1 min 30 rest"
+  },
+  "minutes": 16,
+  "md": [
+   "MD-4",
+   "MD-2",
+   "youth"
+  ],
+  "intensity": "medium",
+  "intentions": [
+   "progresser",
+   "regarder-devant"
+  ],
+  "skills": [
+   "controle",
+   "scan",
+   "protection",
+   "decision"
+  ],
+  "pieces": [
+   "les yeux"
+  ],
+  "fr": {
+   "title": "Recevoir sur le demi-tour",
+   "subtitle": "Recevoir de profil, se retourner du côté libre, sous pression passive puis active",
+   "objective": "Recevoir le corps ouvert, sur le pied éloigné du défenseur, et se retourner face au jeu dès le premier contact. Le défenseur passe de passif à actif pour que le geste tienne sous la pression.",
+   "organisation": [
+    "Couloir de 25 x 14 m : le serveur A à gauche, deux portes de 3 m à droite, l'une en haut, l'autre en bas.",
+    "Le receveur B au milieu, le défenseur juste dans son dos.",
+    "Rotation après 4 ballons : A devient receveur, B défenseur, le défenseur serveur.",
+    "Avec un grand groupe, alignez des couloirs ; un ballon par couloir, deux si possible pour ne pas attendre.",
+    "Chez les jeunes : eau entre les séries, défenseur de même gabarit, jamais de charge dans le dos."
+   ],
+   "rules": [
+    "B reçoit et franchit une porte en conduite : 1 point.",
+    "Série 1, défenseur passif : il pose une main dans le dos et ne joue pas le ballon.",
+    "Série 2, semi-actif : il ferme un côté. Série 3, actif : il joue le ballon.",
+    "Si les deux côtés sont fermés, B remet à A en une touche et se démarque à nouveau.",
+    "Défenseur qui récupère : 1 point s'il conduit jusqu'à la ligne de A."
+   ],
+   "coaching": [
+    "Regarde par-dessus l'épaule avant la passe : où est le défenseur ?",
+    "De profil, les épaules vers le jeu : jamais face à A comme une porte fermée.",
+    "Reçois sur le pied le plus loin du défenseur.",
+    "Premier contact vers l'avant, du côté où il n'est pas.",
+    "S'il colle, protège avec le corps ; s'il est loin, tourne sans attendre."
+   ],
+   "progressions": [
+    "Défenseur actif dès la passe de A.",
+    "B n'a que deux touches pour franchir la porte.",
+    "A annonce « Tourne » ou « Homme » ; plus tard, B décide seul.",
+    "Passer au rondo R05 et au jeu de position P05."
+   ],
+   "regressions": [
+    "Défenseur passif sur toutes les séries.",
+    "Portes de 5 m.",
+    "A passe à la main pour les plus jeunes, au sol ensuite."
+   ],
+   "measure": "Sur 10 ballons par joueur et par série : demi-tours réussis (porte franchie face au jeu). Viser 8 sur 10 contre le passif, 5 sur 10 contre l'actif.",
+   "story": "« Avant de recevoir, tu regardes. Toujours. » Monsieur Lacombe ajoute la suite, que Kaydoudou recopie le jour du corps ouvert : de profil, sur le pied loin du défenseur."
+  },
+  "en": {
+   "title": "Receiving on the Half-Turn",
+   "subtitle": "Receive side-on, turn to the open side, under passive then active pressure",
+   "objective": "Receive with an open body, on the foot furthest from the defender, and turn to face play from the first touch. The defender goes from passive to active so the skill holds under pressure.",
+   "organisation": [
+    "25 x 14 m channel: server A on the left, two 3 m gates on the right, one high, one low.",
+    "Receiver B in the middle, the defender right behind him.",
+    "Rotate after 4 balls: A becomes receiver, B defender, the defender server.",
+    "With a big group, line up several channels; one ball per channel, two if possible so nobody waits.",
+    "With young players: water between sets, a defender of similar size, never any charge from behind."
+   ],
+   "rules": [
+    "B receives and dribbles through a gate: 1 point.",
+    "Set 1, passive defender: one hand on the back, he does not play the ball.",
+    "Set 2, half-active: he closes one side. Set 3, active: he plays the ball.",
+    "If both sides are closed, B sets it back to A first time and gets free again.",
+    "A defender who wins the ball: 1 point if he dribbles it to A's line."
+   ],
+   "coaching": [
+    "Look over your shoulder before the pass: where is the defender?",
+    "Side-on, shoulders to the game: never square to A like a closed door.",
+    "Receive on the foot furthest from the defender.",
+    "First touch forward, on the side where he is not.",
+    "If he is tight, shield with your body; if he is off, turn without waiting."
+   ],
+   "progressions": [
+    "Active defender from A's pass.",
+    "B has only two touches to get through a gate.",
+    "A calls \"Turn\" or \"Man on\"; later, B decides alone.",
+    "Move on to rondo R05 and positional game P05."
+   ],
+   "regressions": [
+    "Passive defender in every set.",
+    "5 m gates.",
+    "A throws the ball for the youngest, then passes along the ground."
+   ],
+   "measure": "Out of 10 balls per player and per set: successful half-turns (gate crossed facing play). Aim for 8 out of 10 against the passive defender, 5 out of 10 against the active one.",
+   "story": "\"Before you receive, you look. Always.\" Monsieur Lacombe adds the rest, which Kaydoudou copies out on the day of the open body: side-on, on the foot away from the defender."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 25,
+   "h": 14,
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 2,
+     "y": 7,
+     "label": "A"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 12.5,
+     "y": 7.8,
+     "label": "B"
+    },
+    {
+     "id": "d",
+     "team": "b",
+     "x": 14.3,
+     "y": 5.6
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": "b",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "b",
+     "to": [
+      23.6,
+      10
+     ],
+     "kind": "dribble",
+     "n": 2
+    }
+   ],
+   "cones": [
+    [
+     0,
+     0
+    ],
+    [
+     25,
+     0
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     25,
+     14
+    ],
+    [
+     24,
+     2.5
+    ],
+    [
+     24,
+     5.5
+    ],
+    [
+     24,
+     8.5
+    ],
+    [
+     24,
+     11.5
+    ]
+   ],
+   "labels": [
+    {
+     "x": 11.5,
+     "y": 10.6,
+     "text": "demi-tour"
+    },
+    {
+     "x": 16.4,
+     "y": 3.8,
+     "text": "défenseur passif"
+    }
+   ]
+  },
+  "diagram2": {
+   "view": "grid",
+   "w": 25,
+   "h": 14,
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 2,
+     "y": 7,
+     "label": "A"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 12.5,
+     "y": 7.2,
+     "label": "B"
+    },
+    {
+     "id": "d",
+     "team": "b",
+     "x": 15.3,
+     "y": 11.2
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": "b",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "d",
+     "to": [
+      13.6,
+      8.8
+     ],
+     "kind": "press",
+     "n": 2
+    },
+    {
+     "from": "b",
+     "to": [
+      23.6,
+      4
+     ],
+     "kind": "dribble",
+     "n": 3
+    }
+   ],
+   "cones": [
+    [
+     0,
+     0
+    ],
+    [
+     25,
+     0
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     25,
+     14
+    ],
+    [
+     24,
+     2.5
+    ],
+    [
+     24,
+     5.5
+    ],
+    [
+     24,
+     8.5
+    ],
+    [
+     24,
+     11.5
+    ]
+   ],
+   "labels": [
+    {
+     "x": 19.5,
+     "y": 12.9,
+     "text": "défenseur actif"
+    },
+    {
+     "x": 18.5,
+     "y": 2.6,
+     "text": "côté libre"
+    }
+   ]
+  }
+ },
+ {
+  "id": "C05",
+  "family": "technique",
+  "order": 5,
+  "ages": "U10+",
+  "players": {
+   "min": 4,
+   "max": 6,
+   "fr": "4 à 6 joueurs par carré (serveur, receveur, 2 défenseurs), plusieurs carrés en parallèle",
+   "en": "4 to 6 players per square (server, receiver, 2 defenders), several squares side by side"
+  },
+  "space": {
+   "w": 16,
+   "h": 16
+  },
+  "duration": {
+   "fr": "4 x 3 min, 1 min de récupération",
+   "en": "4 x 3 min, 1 min rest"
+  },
+  "minutes": 15,
+  "md": [
+   "MD-4",
+   "MD-2",
+   "youth"
+  ],
+  "intensity": "medium",
+  "intentions": [
+   "progresser",
+   "sortir"
+  ],
+  "skills": [
+   "controle",
+   "scan",
+   "decision",
+   "conduite"
+  ],
+  "pieces": [
+   "les yeux",
+   "la raison"
+  ],
+  "fr": {
+   "title": "Le contrôle qui fuit la pression",
+   "subtitle": "Contrôle orienté loin du défenseur qui arrive",
+   "objective": "Faire du premier contrôle un déplacement : pousser le ballon vers l'espace libre, loin du défenseur, au lieu de l'arrêter sous le pied. Le receveur gagne une seconde, et une seconde, c'est une passe.",
+   "organisation": [
+    "Carré de 16 x 16 m : le serveur S à gauche, le receveur R au centre, un défenseur en haut et un en bas.",
+    "Deux portes de 3 m sur le côté droit, une en haut, une en bas.",
+    "Au moment de la passe, l'entraîneur désigne un défenseur, qui sort sur R.",
+    "Rotation toutes les 5 réceptions ; un ballon par carré, avec une réserve près du serveur.",
+    "Par forte chaleur, séries de 2 min et eau à chaque rotation ; avec un grand groupe, plusieurs carrés côte à côte."
+   ],
+   "rules": [
+    "R franchit en conduite la porte opposée au défenseur actif, en trois touches maximum : 1 point.",
+    "Porte franchie dès le premier contrôle (ballon poussé au-delà de la ligne en deux touches) : 2 points.",
+    "Le défenseur qui touche le ballon marque 1 point et devient receveur.",
+    "Le défenseur ne part qu'au moment de la passe."
+   ],
+   "coaching": [
+    "Regarde les deux défenseurs avant la passe : lequel part ?",
+    "Ouvre le corps vers la porte libre avant que le ballon arrive.",
+    "Premier contrôle de l'intérieur du pied éloigné, ou de l'extérieur du pied proche.",
+    "Le ballon part à un ou deux mètres devant toi, jamais sous ta semelle.",
+    "Accélère après le contrôle : le défenseur doit courir derrière toi."
+   ],
+   "progressions": [
+    "Les deux défenseurs peuvent partir ; R lit lequel est le plus proche.",
+    "Passe de S plus forte, ou passe aérienne à la main pour les plus jeunes.",
+    "Après la porte, R doit passer à un partenaire au lieu de conduire."
+   ],
+   "regressions": [
+    "Défenseur qui part une seconde après la passe.",
+    "Portes de 5 m.",
+    "L'entraîneur annonce le défenseur avant la passe."
+   ],
+   "measure": "Sur 10 réceptions par joueur : premiers contrôles orientés vers la bonne porte. Objectif 7 sur 10, et de moins en moins de touches avant la porte d'une série à l'autre.",
+   "story": "Au dôme de Waldorf, Coach Whitfield le dit à Kaydoudou : le contrôle, c'est déjà un voyage, vers l'espace libre et loin du défenseur."
+  },
+  "en": {
+   "title": "The Touch That Escapes Pressure",
+   "subtitle": "Directional first touch away from the incoming defender",
+   "objective": "Turn the first touch into movement: push the ball into open space, away from the defender, instead of stopping it under the foot. The receiver gains a second, and a second is a pass.",
+   "organisation": [
+    "16 x 16 m square: server S on the left, receiver R in the middle, one defender at the top and one at the bottom.",
+    "Two 3 m gates on the right side, one high, one low.",
+    "As the pass is played, the coach points at one defender, who goes out to R.",
+    "Rotate every 5 receptions; one ball per square, with a spare by the server.",
+    "In strong heat, 2 min sets and water at every rotation; with a big group, several squares side by side."
+   ],
+   "rules": [
+    "R dribbles through the gate away from the active defender in three touches maximum: 1 point.",
+    "Gate crossed straight off the first touch (ball pushed over the line in two touches): 2 points.",
+    "A defender who touches the ball scores 1 point and becomes the receiver.",
+    "The defender only leaves when the pass is played."
+   ],
+   "coaching": [
+    "Check both defenders before the pass: which one is coming?",
+    "Open your body to the free gate before the ball arrives.",
+    "First touch with the inside of the far foot, or the outside of the near foot.",
+    "The ball goes one or two metres in front of you, never under your sole.",
+    "Accelerate after the touch: the defender must chase you."
+   ],
+   "progressions": [
+    "Both defenders may go; R reads which one is closer.",
+    "Harder pass from S, or a thrown ball in the air for the youngest.",
+    "After the gate, R must pass to a teammate instead of dribbling."
+   ],
+   "regressions": [
+    "The defender leaves one second after the pass.",
+    "5 m gates.",
+    "The coach names the defender before the pass."
+   ],
+   "measure": "Out of 10 receptions per player: first touches towards the right gate. Target 7 out of 10, and fewer touches before the gate from one set to the next.",
+   "story": "In the Waldorf dome, Coach Whitfield tells Kaydoudou that the first touch is already a journey, into open space and away from the defender."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 16,
+   "h": 16,
+   "players": [
+    {
+     "id": "s",
+     "team": "a",
+     "x": 1,
+     "y": 8,
+     "label": "S"
+    },
+    {
+     "id": "r",
+     "team": "a",
+     "x": 7.5,
+     "y": 8,
+     "label": "R"
+    },
+    {
+     "id": "d1",
+     "team": "b",
+     "x": 8,
+     "y": 1
+    },
+    {
+     "id": "d2",
+     "team": "b",
+     "x": 8,
+     "y": 15
+    }
+   ],
+   "ball": "s",
+   "arrows": [
+    {
+     "from": "s",
+     "to": "r",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "d1",
+     "to": [
+      8.4,
+      5.6
+     ],
+     "kind": "press",
+     "n": 2
+    },
+    {
+     "from": "r",
+     "to": [
+      15.6,
+      12
+     ],
+     "kind": "dribble",
+     "n": 3
+    }
+   ],
+   "cones": [
+    [
+     0,
+     0
+    ],
+    [
+     16,
+     0
+    ],
+    [
+     0,
+     16
+    ],
+    [
+     16,
+     16
+    ],
+    [
+     16,
+     2.5
+    ],
+    [
+     16,
+     5.5
+    ],
+    [
+     16,
+     10.5
+    ],
+    [
+     16,
+     13.5
+    ]
+   ],
+   "labels": [
+    {
+     "x": 12.6,
+     "y": 8.9,
+     "text": "loin de la pression"
+    }
+   ]
+  },
+  "diagram2": null
+ },
+ {
+  "id": "C06",
+  "family": "technique",
+  "order": 6,
+  "ages": "U11+",
+  "players": {
+   "min": 5,
+   "max": 7,
+   "fr": "5 à 7 joueurs par circuit et l'entraîneur, deux circuits possibles dos à dos",
+   "en": "5 to 7 players per circuit plus the coach, two circuits can run back to back"
+  },
+  "space": {
+   "w": 20,
+   "h": 20
+  },
+  "duration": {
+   "fr": "4 x 3 min, 1 min de récupération",
+   "en": "4 x 3 min, 1 min rest"
+  },
+  "minutes": 15,
+  "md": [
+   "MD-2",
+   "MD-1",
+   "youth"
+  ],
+  "intensity": "low",
+  "intentions": [
+   "progresser",
+   "respirer"
+  ],
+  "skills": [
+   "scan",
+   "controle",
+   "communication",
+   "decision"
+  ],
+  "pieces": [
+   "les yeux"
+  ],
+  "fr": {
+   "title": "Le circuit des yeux",
+   "subtitle": "Regarder derrière soi avant de recevoir : la couleur ou le nombre décide de la porte",
+   "objective": "Faire du regard par-dessus l'épaule un réflexe, sans adversaire pour commencer. L'information est derrière le receveur : s'il n'a pas regardé avant la passe, il ne peut pas choisir la bonne porte.",
+   "organisation": [
+    "Carré de 20 x 20 m : le serveur S à gauche, le receveur R dans une zone de 3 x 3 m au centre.",
+    "Trois portes de 3 m sur le côté droit, chacune avec sa couleur (plots ou chasubles : rouge, jaune, bleu).",
+    "L'entraîneur E se tient derrière R avec trois chasubles de couleur ; il peut aussi montrer 1, 2 ou 3 doigts.",
+    "Derrière chaque porte, un joueur récupère le ballon et revient en conduite prendre la place du serveur.",
+    "Avec un grand groupe, deux circuits dos à dos partagent les mêmes portes ; par forte chaleur, files à l'ombre et eau entre les séries."
+   ],
+   "rules": [
+    "Au moment où S passe, E lève une couleur ; R l'annonce à voix haute avant son premier contact.",
+    "R joue à travers la porte de cette couleur en deux touches maximum : 1 point.",
+    "Couleur fausse, oubliée ou mauvaise porte : 0 point, le circuit continue sans arrêt.",
+    "S ne passe que lorsque R a regardé au moins une fois par-dessus son épaule.",
+    "Rotation : S devient receveur, R va derrière la porte jouée, le joueur de porte devient serveur."
+   ],
+   "coaching": [
+    "Regarde au moment où le ballon quitte le pied de S, pas après.",
+    "Un coup d'œil court, puis les yeux reviennent sur le ballon.",
+    "Deux regards valent mieux qu'un : avant la passe, puis pendant qu'elle roule.",
+    "Ouvre le corps vers la porte que tu as vue avant que le ballon arrive.",
+    "Annonce fort : ta voix informe aussi tes partenaires."
+   ],
+   "progressions": [
+    "Couleur et nombre ensemble : la couleur donne la porte, les doigts donnent le nombre de touches.",
+    "E montre la couleur plus tard, quand le ballon roule déjà.",
+    "Un défenseur passif se place devant une porte : R doit en choisir une autre.",
+    "Passer au rondo des yeux, fiche R05."
+   ],
+   "regressions": [
+    "E lève la couleur avant la passe.",
+    "Deux portes seulement.",
+    "Touches libres pour les U11."
+   ],
+   "measure": "Sur 10 réceptions par joueur : annonces justes et portes justes. Un adjoint compte aussi les regards avant la passe (au moins un, idéalement deux).",
+   "story": "Monsieur Lacombe veut des regards de mésange, deux ou trois par-dessus l'épaule ; ici, la couleur dans le dos dit tout de suite si Kaydoudou a vraiment regardé."
+  },
+  "en": {
+   "title": "The Eyes Circuit",
+   "subtitle": "Look behind you before receiving: the colour or the number picks the gate",
+   "objective": "Make the look over the shoulder a reflex, with no opponent to start with. The information is behind the receiver: if he has not looked before the pass, he cannot pick the right gate.",
+   "organisation": [
+    "20 x 20 m square: server S on the left, receiver R in a 3 x 3 m zone in the middle.",
+    "Three 3 m gates on the right side, each with its colour (cones or bibs: red, yellow, blue).",
+    "Coach E stands behind R holding three coloured bibs; he can also show 1, 2 or 3 fingers.",
+    "Behind each gate, a player collects the ball and dribbles back to take the server's place.",
+    "With a big group, two circuits back to back share the same gates; in strong heat, queues in the shade and water between sets."
+   ],
+   "rules": [
+    "As S passes, E raises a colour; R calls it out loud before his first touch.",
+    "R plays through the gate of that colour in two touches maximum: 1 point.",
+    "Wrong or forgotten colour, or wrong gate: no point, the circuit keeps going.",
+    "S only passes once R has looked over his shoulder at least once.",
+    "Rotation: S becomes receiver, R goes behind the gate he played through, the gate player becomes server."
+   ],
+   "coaching": [
+    "Look as the ball leaves S's foot, not after.",
+    "A short glance, then your eyes come back to the ball.",
+    "Two looks are better than one: before the pass, then while it rolls.",
+    "Open your body to the gate you saw before the ball arrives.",
+    "Call it loud: your voice also informs your teammates."
+   ],
+   "progressions": [
+    "Colour and number together: the colour gives the gate, the fingers give the number of touches.",
+    "E shows the colour later, once the ball is already rolling.",
+    "A passive defender stands in front of one gate: R must choose another.",
+    "Move on to the eyes rondo, drill R05."
+   ],
+   "regressions": [
+    "E raises the colour before the pass.",
+    "Two gates only.",
+    "Unlimited touches for U11s."
+   ],
+   "measure": "Out of 10 receptions per player: correct calls and correct gates. An assistant also counts the looks before the pass (at least one, ideally two).",
+   "story": "Monsieur Lacombe wants looks like a bird's, two or three over the shoulder; here, the colour behind him shows at once whether Kaydoudou really looked."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 20,
+   "h": 20,
+   "players": [
+    {
+     "id": "s",
+     "team": "a",
+     "x": 2,
+     "y": 10,
+     "label": "S"
+    },
+    {
+     "id": "r",
+     "team": "a",
+     "x": 9,
+     "y": 10,
+     "label": "R"
+    },
+    {
+     "id": "e",
+     "team": "n",
+     "x": 13.5,
+     "y": 14,
+     "label": "E"
+    }
+   ],
+   "ball": "s",
+   "arrows": [
+    {
+     "from": "s",
+     "to": "r",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "r",
+     "to": [
+      12.6,
+      7.4
+     ],
+     "kind": "dribble",
+     "n": 2
+    },
+    {
+     "from": [
+      12.6,
+      7.4
+     ],
+     "to": [
+      19.4,
+      4
+     ],
+     "kind": "pass",
+     "n": 3
+    }
+   ],
+   "cones": [
+    [
+     0,
+     0
+    ],
+    [
+     20,
+     0
+    ],
+    [
+     0,
+     20
+    ],
+    [
+     20,
+     20
+    ],
+    [
+     19,
+     2.5
+    ],
+    [
+     19,
+     5.5
+    ],
+    [
+     19,
+     8.5
+    ],
+    [
+     19,
+     11.5
+    ],
+    [
+     19,
+     14.5
+    ],
+    [
+     19,
+     17.5
+    ]
+   ],
+   "labels": [
+    {
+     "x": 16.6,
+     "y": 2.1,
+     "text": "rouge"
+    },
+    {
+     "x": 16.6,
+     "y": 10.4,
+     "text": "jaune"
+    },
+    {
+     "x": 16.6,
+     "y": 16.4,
+     "text": "bleu"
+    },
+    {
+     "x": 13.5,
+     "y": 16.6,
+     "text": "« Rouge »"
+    }
+   ]
+  },
+  "diagram2": null
+ },
+ {
+  "id": "C07",
+  "family": "technique",
+  "order": 7,
+  "ages": "U9+",
+  "players": {
+   "min": 4,
+   "max": 6,
+   "fr": "4 à 6 joueurs par rectangle (1 contre 1, puis 2 contre 1), plusieurs rectangles en parallèle",
+   "en": "4 to 6 players per area (1 v 1, then 2 v 1), several areas side by side"
+  },
+  "space": {
+   "w": 22,
+   "h": 16
+  },
+  "duration": {
+   "fr": "2 x 5 min de 1 contre 1, puis 2 x 5 min de 2 contre 1, 1 min 30 de récupération",
+   "en": "2 x 5 min of 1 v 1, then 2 x 5 min of 2 v 1, 1 min 30 rest"
+  },
+  "minutes": 25,
+  "md": [
+   "MD-4",
+   "youth"
+  ],
+  "intensity": "high",
+  "intentions": [
+   "fixer"
+  ],
+  "skills": [
+   "dribble-njangi",
+   "conduite",
+   "decision",
+   "passe"
+  ],
+  "pieces": [
+   "le cœur",
+   "la raison"
+  ],
+  "fr": {
+   "title": "Les portes du dribble njangi",
+   "subtitle": "1 contre 1 vers trois portes : fixer, attirer, libérer",
+   "objective": "Dribbler avec une intention : fixer le défenseur en conduisant droit sur lui, l'attirer d'un côté, puis se libérer vers la porte ouverte ou libérer un partenaire. Le dribble njangi est un cadeau : il sert l'équipe.",
+   "organisation": [
+    "Rectangle de 22 x 16 m ; trois portes de 2,5 m sur la ligne de droite.",
+    "L'attaquant part de la ligne de gauche avec le ballon, le défenseur du milieu du rectangle.",
+    "Deuxième partie : un partenaire part 7 m sous l'attaquant, 2 contre 1.",
+    "Avec un grand groupe, plusieurs rectangles côte à côte, trois ou quatre joueurs par file ; un ballon par rectangle, le défenseur le ramène.",
+    "Duels courts, 8 secondes au plus, et récupération longue : par forte chaleur, eau et ombre entre les passages."
+   ],
+   "rules": [
+    "1 contre 1 : porte franchie en conduite, 1 point ; 2 points si le défenseur a d'abord été fixé.",
+    "Fixé veut dire : il s'est arrêté, ou il a fait un pas vers le porteur.",
+    "2 contre 1 : le partenaire ne reçoit qu'après ce pas du défenseur vers le porteur.",
+    "Le défenseur qui récupère marque en conduisant jusqu'à la ligne de départ.",
+    "Rotation à chaque passage : attaquant, défenseur, file."
+   ],
+   "coaching": [
+    "Conduis droit sur le défenseur, à vitesse moyenne : il doit s'arrêter.",
+    "Ballon près du pied, tête levée entre deux touches.",
+    "Une feinte du corps pour l'attirer d'un côté, puis change de rythme de l'autre.",
+    "À deux : s'il vient sur toi, donne tout de suite ; s'il reste sur ton partenaire, garde et va à la porte.",
+    "Après la passe, continue ta course : tu restes une solution."
+   ],
+   "progressions": [
+    "Le défenseur part plus près de l'attaquant.",
+    "2 contre 2 : un second défenseur revient de derrière après 3 secondes.",
+    "Passer au petit jeu S04, où le dribble qui attire deux défenseurs vaut double."
+   ],
+   "regressions": [
+    "Défenseur qui marche, puis qui trottine.",
+    "Portes de 4 m, rectangle de 25 x 18 m.",
+    "Pour les U9, une seule règle au début : franchir une porte."
+   ],
+   "measure": "Sur 8 duels par joueur : portes franchies, et part des actions où le défenseur a été fixé avant (l'adjoint coche fixé ou pas fixé). En 2 contre 1 : passes données au bon moment.",
+   "story": "« Mon dribble, c'est un cadeau », écrit BriBri en gros dans le carnet : il dribble pour attirer deux adversaires, puis il donne au partenaire qui a l'espace."
+  },
+  "en": {
+   "title": "The Njangi Dribble Gates",
+   "subtitle": "1 v 1 towards three gates: pin, draw, release",
+   "objective": "Dribble with a purpose: pin the defender by running straight at him, draw him to one side, then break free through the open gate or release a teammate. The njangi dribble is a gift: it serves the team.",
+   "organisation": [
+    "22 x 16 m area; three 2.5 m gates on the right-hand line.",
+    "The attacker starts on the left line with the ball, the defender in the middle of the area.",
+    "Second part: a teammate starts 7 m below the attacker, 2 v 1.",
+    "With a big group, several areas side by side, three or four players per queue; one ball per area, the defender brings it back.",
+    "Short duels, 8 seconds at most, and long rests: in strong heat, water and shade between turns."
+   ],
+   "rules": [
+    "1 v 1: gate crossed with the ball, 1 point; 2 points if the defender was pinned first.",
+    "Pinned means: he stopped, or he took a step towards the ball carrier.",
+    "2 v 1: the teammate only receives after that step by the defender towards the carrier.",
+    "A defender who wins the ball scores by dribbling it to the starting line.",
+    "Rotate every turn: attacker, defender, queue."
+   ],
+   "coaching": [
+    "Dribble straight at the defender, at medium speed: he must stop.",
+    "Ball close to your foot, head up between touches.",
+    "A body feint to draw him one way, then change pace the other way.",
+    "In pairs: if he comes to you, give it at once; if he stays with your teammate, keep it and go for the gate.",
+    "After the pass, keep running: you are still an option."
+   ],
+   "progressions": [
+    "The defender starts closer to the attacker.",
+    "2 v 2: a second defender recovers from behind after 3 seconds.",
+    "Move on to small-sided game S04, where a dribble that draws two defenders counts double."
+   ],
+   "regressions": [
+    "The defender walks, then jogs.",
+    "4 m gates, 25 x 18 m area.",
+    "For U9s, one rule at first: get through a gate."
+   ],
+   "measure": "Out of 8 duels per player: gates crossed, and the share of actions where the defender was pinned first (the assistant ticks pinned or not pinned). In 2 v 1: passes released at the right moment.",
+   "story": "\"My dribble is a gift,\" BriBri writes in big letters in the notebook: he dribbles to draw two opponents, then gives the ball to the teammate with space."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 22,
+   "h": 16,
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 2.5,
+     "y": 8,
+     "label": "A"
+    },
+    {
+     "id": "d",
+     "team": "b",
+     "x": 12.5,
+     "y": 7.6
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": [
+      9,
+      8
+     ],
+     "kind": "dribble",
+     "n": 1
+    },
+    {
+     "from": "d",
+     "to": [
+      11.2,
+      6.2
+     ],
+     "kind": "press",
+     "n": 2
+    },
+    {
+     "from": [
+      9.3,
+      9
+     ],
+     "to": [
+      20.6,
+      12.75
+     ],
+     "kind": "dribble",
+     "n": 3
+    }
+   ],
+   "cones": [
+    [
+     0,
+     0
+    ],
+    [
+     22,
+     0
+    ],
+    [
+     0,
+     16
+    ],
+    [
+     22,
+     16
+    ],
+    [
+     21,
+     2
+    ],
+    [
+     21,
+     4.5
+    ],
+    [
+     21,
+     6.75
+    ],
+    [
+     21,
+     9.25
+    ],
+    [
+     21,
+     11.5
+    ],
+    [
+     21,
+     14
+    ]
+   ],
+   "labels": [
+    {
+     "x": 5.8,
+     "y": 6.4,
+     "text": "fixer"
+    },
+    {
+     "x": 11.2,
+     "y": 4.4,
+     "text": "attirer"
+    },
+    {
+     "x": 15.4,
+     "y": 14.4,
+     "text": "se libérer"
+    }
+   ]
+  },
+  "diagram2": {
+   "view": "grid",
+   "w": 22,
+   "h": 16,
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 2.5,
+     "y": 6,
+     "label": "A"
+    },
+    {
+     "id": "p",
+     "team": "a",
+     "x": 2.5,
+     "y": 13,
+     "label": "P"
+    },
+    {
+     "id": "d",
+     "team": "b",
+     "x": 12.5,
+     "y": 7.2
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": [
+      9,
+      6.4
+     ],
+     "kind": "dribble",
+     "n": 1
+    },
+    {
+     "from": "d",
+     "to": [
+      10.9,
+      6.9
+     ],
+     "kind": "press",
+     "n": 2
+    },
+    {
+     "from": "p",
+     "to": [
+      15,
+      12.8
+     ],
+     "kind": "run",
+     "n": 3
+    },
+    {
+     "from": [
+      9.3,
+      7.4
+     ],
+     "to": [
+      15,
+      12.8
+     ],
+     "kind": "pass",
+     "n": 4
+    },
+    {
+     "from": [
+      15,
+      12.8
+     ],
+     "to": [
+      20.6,
+      12.75
+     ],
+     "kind": "dribble",
+     "n": 5
+    }
+   ],
+   "cones": [
+    [
+     0,
+     0
+    ],
+    [
+     22,
+     0
+    ],
+    [
+     0,
+     16
+    ],
+    [
+     22,
+     16
+    ],
+    [
+     21,
+     2
+    ],
+    [
+     21,
+     4.5
+    ],
+    [
+     21,
+     6.75
+    ],
+    [
+     21,
+     9.25
+    ],
+    [
+     21,
+     11.5
+    ],
+    [
+     21,
+     14
+    ]
+   ],
+   "labels": [
+    {
+     "x": 5.8,
+     "y": 4.4,
+     "text": "fixer, attirer"
+    },
+    {
+     "x": 13.8,
+     "y": 9.6,
+     "text": "libérer"
+    }
+   ]
+  }
+ },
+ {
+  "id": "C08",
+  "family": "technique",
+  "order": 8,
+  "ages": "U10+",
+  "players": {
+   "min": 6,
+   "max": 9,
+   "fr": "6 à 9 joueurs par rectangle (2 contre 1 en vagues)",
+   "en": "6 to 9 players per area (2 v 1 in waves)"
+  },
+  "space": {
+   "w": 30,
+   "h": 20
+  },
+  "duration": {
+   "fr": "4 x 4 min, 1 min 30 de récupération",
+   "en": "4 x 4 min, 1 min 30 rest"
+  },
+  "minutes": 22,
+  "md": [
+   "MD-4",
+   "MD-2",
+   "youth"
+  ],
+  "intensity": "high",
+  "intentions": [
+   "fixer",
+   "progresser"
+  ],
+  "skills": [
+   "conduite",
+   "dribble-njangi",
+   "passe",
+   "decision"
+  ],
+  "pieces": [
+   "la raison",
+   "la carte"
+  ],
+  "fr": {
+   "title": "Conduire pour fixer",
+   "subtitle": "Conduire droit vers la pression pour créer le 2 contre 1",
+   "objective": "Conduire le ballon vers la pression, pas pour l'éviter : un porteur qui avance oblige un défenseur à sortir, et ce défenseur libère un partenaire. Celui qui ne conduit pas laisse le défenseur choisir.",
+   "organisation": [
+    "Rectangle de 30 x 20 m en trois parties : zone de départ (10 m), zone du défenseur (10 m), zone de but avec deux mini-buts.",
+    "2 attaquants contre 1 défenseur qui ne quitte pas sa zone ; le porteur part dans l'axe, son partenaire sur un côté.",
+    "Le porteur change de côté à chaque passage ; le défenseur change toutes les 6 actions.",
+    "Avec un grand groupe, deux rectangles côte à côte et des vagues de trois ; un ballon par vague, rendu par les côtés.",
+    "Par forte chaleur : actions courtes, retour en marchant, eau toutes les deux séries."
+   ],
+   "rules": [
+    "Le porteur doit entrer en conduite dans la zone du défenseur avant toute passe.",
+    "But après une fixation (le défenseur a fait un pas vers le porteur) : 2 points ; autre but : 1 point.",
+    "Si le défenseur reste sur le partenaire, le porteur continue et marque lui-même.",
+    "Défenseur qui récupère : 1 point s'il conduit jusqu'à la ligne de départ."
+   ],
+   "coaching": [
+    "Conduis à vitesse contrôlée, ballon devant toi, pour pouvoir passer à tout moment.",
+    "Vise l'épaule intérieure du défenseur : il doit choisir entre toi et ton partenaire.",
+    "Passe quand il fait le pas vers toi, pas avant, pas après.",
+    "Partenaire, reste large jusqu'à la passe, puis attaque l'espace.",
+    "Lève la tête entre deux touches : c'est le défenseur qui te dit quoi faire."
+   ],
+   "progressions": [
+    "Un second défenseur revient de derrière 2 secondes après le départ : il faut décider vite.",
+    "3 contre 2 avec deux zones de défenseurs l'une après l'autre : fixer deux fois.",
+    "Départ du porteur depuis une position de défenseur central, puis dans la sortie de balle F01."
+   ],
+   "regressions": [
+    "Défenseur qui ne peut que marcher.",
+    "Zone du défenseur de 8 m, mini-buts plus larges.",
+    "Le partenaire part déjà dans la zone de but."
+   ],
+   "measure": "Part des actions où le défenseur sort sur le porteur avant la passe, et part des buts à 2 points. Sur 10 actions, viser 6 fixations réussies.",
+   "story": "Avi Ramon apprend la pausa à BriBri : garder le ballon une demi-seconde de plus pour que l'adversaire s'engage, puis jouer dans son dos."
+  },
+  "en": {
+   "title": "Carry to Pin",
+   "subtitle": "Carry straight at the pressure to create the 2 v 1",
+   "objective": "Carry the ball towards the pressure, not away from it: a carrier who advances forces a defender to step out, and that defender frees a teammate. A player who does not carry lets the defender choose.",
+   "organisation": [
+    "30 x 20 m area in three parts: start zone (10 m), defender zone (10 m), scoring zone with two mini goals.",
+    "2 attackers against 1 defender who stays in his zone; the carrier starts in the middle, his teammate on one side.",
+    "The carrier changes side every turn; the defender changes every 6 actions.",
+    "With a big group, two areas side by side and waves of three; one ball per wave, returned along the sides.",
+    "In strong heat: short actions, walk back, water every two sets."
+   ],
+   "rules": [
+    "The carrier must dribble into the defender zone before any pass.",
+    "Goal after pinning the defender (he took a step towards the carrier): 2 points; any other goal: 1 point.",
+    "If the defender stays with the teammate, the carrier keeps going and scores himself.",
+    "A defender who wins the ball: 1 point if he dribbles it to the starting line."
+   ],
+   "coaching": [
+    "Carry at controlled speed, ball in front of you, so you can pass at any moment.",
+    "Aim at the defender's inside shoulder: he must choose between you and your teammate.",
+    "Pass when he steps towards you, not before, not after.",
+    "Teammate, stay wide until the pass, then attack the space.",
+    "Head up between touches: the defender tells you what to do."
+   ],
+   "progressions": [
+    "A second defender recovers from behind 2 seconds after the start: decide quickly.",
+    "3 v 2 with two defender zones one after the other: pin twice.",
+    "The carrier starts from a centre-back position, then in build-up drill F01."
+   ],
+   "regressions": [
+    "The defender may only walk.",
+    "8 m defender zone, wider mini goals.",
+    "The teammate starts already in the scoring zone."
+   ],
+   "measure": "Share of actions where the defender steps out to the carrier before the pass, and share of 2-point goals. Out of 10 actions, aim for 6 successful pins.",
+   "story": "Avi Ramon teaches BriBri the pausa: keep the ball half a second longer so the opponent commits, then play in behind him."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 30,
+   "h": 20,
+   "zones": [
+    {
+     "x": 10,
+     "y": 0,
+     "w": 10,
+     "h": 20,
+     "tone": "soft",
+     "label": "zone du défenseur"
+    }
+   ],
+   "cones": [
+    [
+     0,
+     0
+    ],
+    [
+     30,
+     0
+    ],
+    [
+     0,
+     20
+    ],
+    [
+     30,
+     20
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     20,
+     0
+    ],
+    [
+     10,
+     20
+    ],
+    [
+     20,
+     20
+    ]
+   ],
+   "goals": [
+    {
+     "x": 30,
+     "y": 5,
+     "side": "left",
+     "size": "mini"
+    },
+    {
+     "x": 30,
+     "y": 15,
+     "side": "left",
+     "size": "mini"
+    }
+   ],
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 2.5,
+     "y": 11.5,
+     "label": "A"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 2.5,
+     "y": 4,
+     "label": "B"
+    },
+    {
+     "id": "d",
+     "team": "b",
+     "x": 15.5,
+     "y": 9
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": [
+      11.5,
+      11.5
+     ],
+     "kind": "dribble",
+     "n": 1
+    },
+    {
+     "from": "d",
+     "to": [
+      13.6,
+      10.6
+     ],
+     "kind": "press",
+     "n": 2
+    },
+    {
+     "from": "b",
+     "to": [
+      23,
+      5
+     ],
+     "kind": "run",
+     "n": 3
+    },
+    {
+     "from": [
+      12,
+      10.8
+     ],
+     "to": [
+      23,
+      5
+     ],
+     "kind": "pass",
+     "n": 4
+    },
+    {
+     "from": [
+      23,
+      5
+     ],
+     "to": [
+      28.6,
+      5
+     ],
+     "kind": "shot",
+     "n": 5
+    }
+   ],
+   "labels": [
+    {
+     "x": 6.5,
+     "y": 14.2,
+     "text": "conduire vers lui"
+    }
+   ]
+  },
+  "diagram2": null
+ },
+ {
+  "id": "C09",
+  "family": "technique",
+  "order": 9,
+  "ages": "U9+",
+  "players": {
+   "min": 4,
+   "max": 4,
+   "fr": "4 joueurs par boîte (1 contre 1 et 2 appuis), plusieurs boîtes en parallèle",
+   "en": "4 players per box (1 v 1 and 2 supports), several boxes side by side"
+  },
+  "space": {
+   "w": 8,
+   "h": 8
+  },
+  "duration": {
+   "fr": "3 x 4 min (rotation toutes les 30 s), 1 min 30 de récupération",
+   "en": "3 x 4 min (rotate every 30 s), 1 min 30 rest"
+  },
+  "minutes": 15,
+  "md": [
+   "MD-4",
+   "youth"
+  ],
+  "intensity": "high",
+  "intentions": [
+   "fixer",
+   "respirer"
+  ],
+  "skills": [
+   "protection",
+   "controle",
+   "conduite",
+   "decision"
+  ],
+  "pieces": [
+   "le souffle"
+  ],
+  "fr": {
+   "title": "La boîte de protection",
+   "subtitle": "1 contre 1 dans une petite boîte : protéger, puis jouer",
+   "objective": "Protéger le ballon avec le corps face à un adversaire qui presse, garder l'équilibre et trouver la sortie : se retourner ou jouer vers un appui. Protéger n'est pas garder pour soi : c'est gagner le temps d'une passe.",
+   "organisation": [
+    "Boîte de 8 x 8 m (6 x 6 m pour les U9), un attaquant et un défenseur dedans.",
+    "Un appui de chaque côté, à l'extérieur de la boîte, qui se déplace le long de sa ligne.",
+    "Groupes de 4 qui tournent toutes les 30 secondes : attaquant, défenseur, appui, appui ; le repos vient de la rotation.",
+    "Avec beaucoup de joueurs et peu de ballons : une boîte et un ballon pour 4, les boîtes alignées à 3 m l'une de l'autre.",
+    "Paires de même gabarit ; par forte chaleur, séries plus courtes et eau à chaque tour complet."
+   ],
+   "rules": [
+    "L'appui de gauche sert l'attaquant ; l'attaquant protège puis joue vers l'appui de droite : 1 point.",
+    "S'il se retourne et sort de la boîte en conduite par la ligne de droite : 2 points.",
+    "Le défenseur qui récupère joue vers un appui : les rôles s'inversent.",
+    "Interdit : pousser avec les mains, tirer le maillot, charger dans le dos.",
+    "Le bras sert à sentir l'adversaire et à garder l'équilibre, jamais à frapper."
+   ],
+   "coaching": [
+    "Genoux pliés, appuis larges, le corps entre l'adversaire et le ballon.",
+    "Ballon sur le pied le plus loin de l'adversaire, la semelle prête à le tirer.",
+    "Bras ouvert pour sentir où il est, sans pousser.",
+    "Sens son poids : quand il s'appuie d'un côté, tourne de l'autre.",
+    "Coincé ? Une touche vers l'appui, il te la rend, et tu es parti."
+   ],
+   "progressions": [
+    "L'appui de droite bouge : l'attaquant doit le trouver d'un regard par-dessus l'épaule.",
+    "Boîte de 6 x 6 m.",
+    "Les appuis jouent en une touche : remise immédiate et nouvelle protection."
+   ],
+   "regressions": [
+    "Défenseur passif qui pose seulement une main dans le dos.",
+    "Boîte de 10 x 10 m.",
+    "L'attaquant marque en gardant le ballon 5 secondes, sans obligation de sortir."
+   ],
+   "measure": "Ballons gardés puis joués vers un appui par séquence de 30 secondes, et pertes de balle. Compter aussi les fautes de mains : objectif zéro.",
+   "story": "À Londres, le ballon est brûlant ; Kaydoudou écrit que son corps est un mur, genoux pliés, bras ouvert, et BriBri ajoute qu'il est un excellent mur."
+  },
+  "en": {
+   "title": "The Shielding Box",
+   "subtitle": "1 v 1 in a small box: shield, then play",
+   "objective": "Shield the ball with the body against an opponent who presses, keep your balance and find the way out: turn, or play to a support. Shielding is not keeping it for yourself: it buys the time for a pass.",
+   "organisation": [
+    "8 x 8 m box (6 x 6 m for U9s), one attacker and one defender inside.",
+    "One support on each side, outside the box, moving along his line.",
+    "Groups of 4 rotating every 30 seconds: attacker, defender, support, support; the rest comes from the rotation.",
+    "With many players and few balls: one box and one ball for every 4, boxes lined up 3 m apart.",
+    "Pair players of similar size; in strong heat, shorter sets and water after every full rotation."
+   ],
+   "rules": [
+    "The left support feeds the attacker; the attacker shields then plays to the right support: 1 point.",
+    "If he turns and dribbles out of the box across the right line: 2 points.",
+    "A defender who wins the ball plays to a support: roles swap.",
+    "Not allowed: pushing with the hands, pulling the shirt, charging from behind.",
+    "The arm is for feeling the opponent and keeping balance, never for striking."
+   ],
+   "coaching": [
+    "Knees bent, wide stance, body between the opponent and the ball.",
+    "Ball on the foot furthest from the opponent, sole ready to roll it.",
+    "Arm out to feel where he is, without pushing.",
+    "Feel his weight: when he leans one way, turn the other.",
+    "Stuck? One touch to the support, he gives it back, and you are away."
+   ],
+   "progressions": [
+    "The right support moves: the attacker must find him with a look over the shoulder.",
+    "6 x 6 m box.",
+    "Supports play one touch: an instant return and shield again."
+   ],
+   "regressions": [
+    "Passive defender who only puts a hand on the back.",
+    "10 x 10 m box.",
+    "The attacker scores by keeping the ball for 5 seconds, with no need to get out."
+   ],
+   "measure": "Balls kept then played to a support per 30-second turn, and balls lost. Also count hand fouls: target zero.",
+   "story": "In London the ball is red hot; Kaydoudou writes that his body is a wall, knees bent, arm out, and BriBri adds that he is an excellent wall."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 8,
+   "h": 8,
+   "players": [
+    {
+     "id": "n1",
+     "team": "n",
+     "x": 0,
+     "y": 4.8
+    },
+    {
+     "id": "n2",
+     "team": "n",
+     "x": 8,
+     "y": 3.2
+    },
+    {
+     "id": "a",
+     "team": "a",
+     "x": 3.4,
+     "y": 4.6,
+     "label": "A"
+    },
+    {
+     "id": "d",
+     "team": "b",
+     "x": 4.5,
+     "y": 3.6
+    }
+   ],
+   "ball": "n1",
+   "arrows": [
+    {
+     "from": "n1",
+     "to": "a",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "d",
+     "to": [
+      3.95,
+      4.15
+     ],
+     "kind": "press",
+     "n": 2
+    },
+    {
+     "from": "a",
+     "to": [
+      5.4,
+      6.1
+     ],
+     "kind": "dribble",
+     "n": 3
+    },
+    {
+     "from": [
+      5.6,
+      6
+     ],
+     "to": "n2",
+     "kind": "pass",
+     "n": 4
+    }
+   ],
+   "labels": [
+    {
+     "x": 4,
+     "y": 1.5,
+     "text": "le corps est un mur"
+    },
+    {
+     "x": 1.1,
+     "y": 6.5,
+     "text": "appui"
+    },
+    {
+     "x": 7,
+     "y": 1.8,
+     "text": "appui"
+    }
+   ]
+  },
+  "diagram2": null
+ },
+ {
+  "id": "C10",
+  "family": "technique",
+  "order": 10,
+  "ages": "U10+",
+  "players": {
+   "min": 6,
+   "max": 12,
+   "fr": "6 à 12 joueurs et un gardien (circuit)",
+   "en": "6 to 12 players and a goalkeeper (pattern)"
+  },
+  "space": {
+   "w": 32,
+   "h": 24
+  },
+  "duration": {
+   "fr": "3 x 5 min (une forme de une-deux par série), 1 min 30 de récupération",
+   "en": "3 x 5 min (one type of one-two per set), 1 min 30 rest"
+  },
+  "minutes": 18,
+  "md": [
+   "MD-2",
+   "MD-1",
+   "youth"
+  ],
+  "intensity": "medium",
+  "intentions": [
+   "finir",
+   "progresser"
+  ],
+  "skills": [
+   "passe",
+   "appels",
+   "controle",
+   "communication"
+  ],
+  "pieces": [
+   "le cœur"
+  ],
+  "fr": {
+   "title": "Le une-deux du Njangi",
+   "subtitle": "Trois une-deux en circuit, puis la frappe",
+   "objective": "Maîtriser les trois formes du une-deux, court, en profondeur et double, jusqu'à la frappe. Cette fiche apprend les gestes sans opposition ; la fiche G02 les met en jeu à 2 contre 1.",
+   "organisation": [
+    "Devant un but avec gardien, un circuit de 30 m : un mannequin, un plot haut ou un défenseur passif à 20 m du but, un mur sur le côté.",
+    "Une forme par série : le une-deux court autour du mannequin, le une-deux en profondeur entre deux mannequins, le double une-deux avec deux murs.",
+    "Files de 3 joueurs au plus ; les murs changent toutes les 5 répétitions, et on alterne côté gauche et côté droit.",
+    "Peu de ballons : 6 à 8 suffisent, avec deux ramasseurs derrière le but qui les rendent en conduite.",
+    "Par forte chaleur, séries courtes et récupération à l'ombre ; le gardien boit à chaque changement de forme."
+   ],
+   "rules": [
+    "La passe au mur part après une conduite vers le mannequin : il faut l'avoir attiré.",
+    "Le mur joue en une touche, dans la course.",
+    "La frappe se joue en une ou deux touches après le retour.",
+    "But après un retour joué en une touche : 2 points ; autre but : 1 point."
+   ],
+   "coaching": [
+    "Conduis vers le mannequin comme vers un vrai défenseur : il doit s'arrêter sur toi.",
+    "Passe au mur à deux mètres du mannequin, ni trop tôt ni trop tard.",
+    "Repars tout de suite dans son dos : la course commence avec la passe.",
+    "Mur, regarde la course avant de recevoir et joue dans l'espace, pas dans les pieds.",
+    "En profondeur, le mur lève deux doigts : c'est le signal du départ."
+   ],
+   "progressions": [
+    "Mannequins remplacés par des défenseurs passifs, puis semi-actifs.",
+    "Une touche obligatoire pour la frappe.",
+    "Passer au jeu à 2 contre 1 de la fiche G02."
+   ],
+   "regressions": [
+    "Départ à 20 m du but, mur à 6 m du mannequin.",
+    "Deux touches pour le mur.",
+    "Une seule forme, le une-deux court, sur toute la séance."
+   ],
+   "measure": "Sur 10 répétitions par forme : retours du mur qui arrivent dans la course sans la ralentir, et frappes cadrées. Viser 7 frappes cadrées sur 10 au une-deux court.",
+   "story": "BriBri a trouvé le nom, Kaydoudou a trouvé le signal : deux doigts levés, et le une-deux du Njangi part en profondeur."
+  },
+  "en": {
+   "title": "The Njangi One-Two",
+   "subtitle": "Three one-twos in a pattern, then the shot",
+   "objective": "Master the three forms of the one-two, short, in behind and double, all the way to the shot. This drill teaches the moves without opposition; drill G02 puts them into a 2 v 1 game.",
+   "organisation": [
+    "In front of a goal with a goalkeeper, a 30 m pattern: a mannequin, a tall marker or a passive defender 20 m from goal, a wall player to the side.",
+    "One form per set: the short one-two around the mannequin, the one-two in behind between two mannequins, the double one-two with two wall players.",
+    "Queues of 3 players at most; wall players change every 5 reps, alternating left and right sides.",
+    "Few balls: 6 to 8 are enough, with two collectors behind the goal who dribble them back.",
+    "In strong heat, short sets and rest in the shade; the goalkeeper drinks at every change of form."
+   ],
+   "rules": [
+    "The pass to the wall comes after a dribble at the mannequin: you must have drawn it.",
+    "The wall plays first time, into the run.",
+    "The shot is taken in one or two touches after the return.",
+    "Goal after a first-time return: 2 points; any other goal: 1 point."
+   ],
+   "coaching": [
+    "Dribble at the mannequin as if it were a real defender: it must stop on you.",
+    "Pass to the wall two metres from the mannequin, not too early, not too late.",
+    "Go straight away, in behind it: the run starts with the pass.",
+    "Wall, check the run before you receive and play into space, not to feet.",
+    "In behind, the wall raises two fingers: that is the signal to go."
+   ],
+   "progressions": [
+    "Replace the mannequins with passive, then half-active defenders.",
+    "First-time shot only.",
+    "Move on to the 2 v 1 game of drill G02."
+   ],
+   "regressions": [
+    "Start 20 m from goal, wall 6 m from the mannequin.",
+    "Two touches for the wall.",
+    "One form only, the short one-two, for the whole session."
+   ],
+   "measure": "Out of 10 reps per form: returns from the wall that arrive in stride without slowing the run, and shots on target. Aim for 7 shots on target out of 10 on the short one-two.",
+   "story": "BriBri found the name, Kaydoudou found the signal: two fingers raised, and the Njangi one-two goes in behind."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 32,
+   "h": 24,
+   "zones": [
+    {
+     "x": 15.5,
+     "y": 0,
+     "w": 16.5,
+     "h": 24,
+     "tone": "soft",
+     "label": "surface"
+    }
+   ],
+   "goals": [
+    {
+     "x": 32,
+     "y": 12,
+     "side": "right",
+     "size": "full"
+    }
+   ],
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 4,
+     "y": 14,
+     "label": "A"
+    },
+    {
+     "id": "m",
+     "team": "b",
+     "x": 14.5,
+     "y": 14
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 13.5,
+     "y": 20.5,
+     "label": "B"
+    },
+    {
+     "id": "gk",
+     "team": "gkb",
+     "x": 30.8,
+     "y": 12.6
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": [
+      9.5,
+      14
+     ],
+     "kind": "dribble",
+     "n": 1
+    },
+    {
+     "from": [
+      9.5,
+      14
+     ],
+     "to": "b",
+     "kind": "pass",
+     "n": 2
+    },
+    {
+     "from": [
+      10,
+      13.1
+     ],
+     "to": [
+      19.5,
+      11.2
+     ],
+     "kind": "run",
+     "n": 3
+    },
+    {
+     "from": "b",
+     "to": [
+      19.5,
+      11.2
+     ],
+     "kind": "pass",
+     "n": 4
+    },
+    {
+     "from": [
+      19.5,
+      11.2
+     ],
+     "to": [
+      31.8,
+      9.6
+     ],
+     "kind": "shot",
+     "n": 5
+    }
+   ],
+   "labels": [
+    {
+     "x": 14.5,
+     "y": 16.8,
+     "text": "mannequin"
+    }
+   ]
+  },
+  "diagram2": {
+   "view": "grid",
+   "w": 32,
+   "h": 24,
+   "zones": [
+    {
+     "x": 15.5,
+     "y": 0,
+     "w": 16.5,
+     "h": 24,
+     "tone": "soft",
+     "label": "surface"
+    }
+   ],
+   "goals": [
+    {
+     "x": 32,
+     "y": 12,
+     "side": "right",
+     "size": "full"
+    }
+   ],
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 5,
+     "y": 16,
+     "label": "A"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 15.5,
+     "y": 11,
+     "label": "B"
+    },
+    {
+     "id": "m1",
+     "team": "b",
+     "x": 20.5,
+     "y": 7.5
+    },
+    {
+     "id": "m2",
+     "team": "b",
+     "x": 20.5,
+     "y": 15.5
+    },
+    {
+     "id": "gk",
+     "team": "gkb",
+     "x": 30.8,
+     "y": 12.6
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": "b",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "a",
+     "to": [
+      25,
+      13.2
+     ],
+     "kind": "run",
+     "n": 2
+    },
+    {
+     "from": "b",
+     "to": [
+      25,
+      13.2
+     ],
+     "kind": "pass",
+     "n": 3
+    },
+    {
+     "from": [
+      25,
+      13.2
+     ],
+     "to": [
+      31.8,
+      10.2
+     ],
+     "kind": "shot",
+     "n": 4
+    }
+   ],
+   "labels": [
+    {
+     "x": 14.5,
+     "y": 8.4,
+     "text": "deux doigts levés"
+    }
+   ]
+  }
+ },
+ {
+  "id": "C11",
+  "family": "technique",
+  "order": 11,
+  "ages": "U11+",
+  "players": {
+   "min": 8,
+   "max": 14,
+   "fr": "8 à 14 joueurs et un gardien (circuit à trois stations)",
+   "en": "8 to 14 players and a goalkeeper (three-station pattern)"
+  },
+  "space": {
+   "w": 30,
+   "h": 26
+  },
+  "duration": {
+   "fr": "3 x 6 min (une station par série), 1 min 30 de récupération",
+   "en": "3 x 6 min (one station per set), 1 min 30 rest"
+  },
+  "minutes": 21,
+  "md": [
+   "MD-2",
+   "MD-1"
+  ],
+  "intensity": "medium",
+  "intentions": [
+   "finir"
+  ],
+  "skills": [
+   "appels",
+   "decision",
+   "controle",
+   "passe"
+  ],
+  "pieces": [
+   "le souffle",
+   "la raison"
+  ],
+  "fr": {
+   "title": "Finir du premier coup",
+   "subtitle": "Circuit de frappes en une touche : centre en retrait, remise, passe latérale",
+   "objective": "Frapper en une touche les ballons qui arrivent dans la surface : centre en retrait, remise du pivot, passe latérale. Dans la surface, le temps d'un contrôle est souvent le temps qui manque.",
+   "organisation": [
+    "Un but avec gardien et trois stations : le retrait depuis la ligne de but, la remise du pivot à l'entrée de la surface, la passe latérale entre deux attaquants.",
+    "Les stations jouent l'une après l'autre ; le gardien annonce « Prêt » avant chaque action.",
+    "Files de 3 au plus par station ; avec un grand groupe, un deuxième but et un deuxième gardien sur l'autre moitié.",
+    "8 à 10 ballons suffisent : deux ramasseurs derrière le but, qui changent à chaque série.",
+    "Par forte chaleur, séries de 5 min et pause boisson entre les stations ; deux gardiens se relaient s'ils sont là."
+   ],
+   "rules": [
+    "Toutes les frappes se jouent en une touche ; une frappe après contrôle ne compte pas.",
+    "But en une touche : 2 points ; frappe cadrée arrêtée : 1 point.",
+    "Au retrait, le centre part au sol, en arrière, vers le point de penalty.",
+    "Le tireur arrive en course : il n'attend jamais le ballon à l'arrêt."
+   ],
+   "coaching": [
+    "Arrive au moment du centre, pas avant : un attaquant arrêté est un attaquant marqué.",
+    "Ouvre le corps vers le but avant le contact.",
+    "Intérieur du pied pour placer, cou-de-pied pour la puissance ; la tête au-dessus du ballon.",
+    "Vise le côté opposé au gardien, à ras de terre.",
+    "Après la frappe, suis : le rebond est un deuxième ballon."
+   ],
+   "progressions": [
+    "Un défenseur passif, puis actif, sur le tireur.",
+    "Deux tireurs au retrait, premier poteau et point de penalty : le passeur choisit.",
+    "Passer à la finition à 4 contre 3 de la fiche G05."
+   ],
+   "regressions": [
+    "Une ou deux touches au début, une touche ensuite.",
+    "Ballon servi à la main, au sol, pour les plus jeunes.",
+    "Frappes depuis 11 m, sans course."
+   ],
+   "measure": "Sur 10 frappes par station et par joueur : frappes en une touche cadrées, et buts. Viser 6 frappes cadrées sur 10 au retrait.",
+   "story": "« Intensity is a choice », répète Coach Okafor sous la pluie de Kingsbridge : devant le but, on choisit de frapper du premier coup."
+  },
+  "en": {
+   "title": "First-Time Finishing",
+   "subtitle": "One-touch finishing pattern: cut-back, set, square pass",
+   "objective": "Finish first time on the balls that arrive in the box: the cut-back, the pivot's set, the square pass. In the box, the time for a control touch is often the time you do not have.",
+   "organisation": [
+    "One goal with a goalkeeper and three stations: the cut-back from the goal line, the pivot's set at the edge of the box, the square pass between two forwards.",
+    "Stations play one after the other; the goalkeeper calls \"Ready\" before each action.",
+    "Queues of 3 at most per station; with a big group, a second goal and goalkeeper on the other half.",
+    "8 to 10 balls are enough: two collectors behind the goal, changing every set.",
+    "In strong heat, 5 min sets and a drinks break between stations; two goalkeepers take turns if you have them."
+   ],
+   "rules": [
+    "Every shot is first time; a shot after a control touch does not count.",
+    "First-time goal: 2 points; shot on target saved: 1 point.",
+    "For the cut-back, the cross goes along the ground, backwards, towards the penalty spot.",
+    "The shooter arrives on the run: he never waits for the ball standing still."
+   ],
+   "coaching": [
+    "Arrive as the cross comes in, not before: a forward who stands still is a forward who is marked.",
+    "Open your body to the goal before contact.",
+    "Inside of the foot to place it, laces for power; head over the ball.",
+    "Aim for the side away from the goalkeeper, low.",
+    "After the shot, follow in: the rebound is a second ball."
+   ],
+   "progressions": [
+    "A passive, then active, defender on the shooter.",
+    "Two shooters on the cut-back, near post and penalty spot: the crosser chooses.",
+    "Move on to the 4 v 3 finishing game of drill G05."
+   ],
+   "regressions": [
+    "One or two touches at first, then one touch.",
+    "Ball rolled by hand along the ground for the youngest.",
+    "Shots from 11 m, without a run-up."
+   ],
+   "measure": "Out of 10 shots per station and per player: first-time shots on target, and goals. Aim for 6 shots on target out of 10 on the cut-back.",
+   "story": "\"Intensity is a choice,\" Coach Okafor keeps saying in the Kingsbridge rain: in front of goal, you choose to shoot first time."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 30,
+   "h": 26,
+   "zones": [
+    {
+     "x": 13.5,
+     "y": 0,
+     "w": 16.5,
+     "h": 26,
+     "tone": "soft",
+     "label": "surface"
+    }
+   ],
+   "goals": [
+    {
+     "x": 30,
+     "y": 13,
+     "side": "right",
+     "size": "full"
+    }
+   ],
+   "players": [
+    {
+     "id": "w",
+     "team": "a",
+     "x": 17,
+     "y": 2.5,
+     "label": "7"
+    },
+    {
+     "id": "f",
+     "team": "a",
+     "x": 11.5,
+     "y": 16,
+     "label": "9"
+    },
+    {
+     "id": "gk",
+     "team": "gkb",
+     "x": 29,
+     "y": 12.4
+    }
+   ],
+   "ball": "w",
+   "arrows": [
+    {
+     "from": "w",
+     "to": [
+      26.5,
+      3.4
+     ],
+     "kind": "dribble",
+     "n": 1
+    },
+    {
+     "from": "f",
+     "to": [
+      20.5,
+      12.6
+     ],
+     "kind": "run",
+     "n": 2
+    },
+    {
+     "from": [
+      26.5,
+      3.4
+     ],
+     "to": [
+      20.5,
+      12.6
+     ],
+     "kind": "pass",
+     "n": 3
+    },
+    {
+     "from": [
+      20.5,
+      12.6
+     ],
+     "to": [
+      29.8,
+      15.6
+     ],
+     "kind": "shot",
+     "n": 4
+    }
+   ],
+   "labels": [
+    {
+     "x": 25.4,
+     "y": 8.9,
+     "text": "retrait"
+    }
+   ]
+  },
+  "diagram2": {
+   "view": "grid",
+   "w": 30,
+   "h": 26,
+   "zones": [
+    {
+     "x": 13.5,
+     "y": 0,
+     "w": 16.5,
+     "h": 26,
+     "tone": "soft",
+     "label": "surface"
+    }
+   ],
+   "goals": [
+    {
+     "x": 30,
+     "y": 13,
+     "side": "right",
+     "size": "full"
+    }
+   ],
+   "players": [
+    {
+     "id": "s",
+     "team": "a",
+     "x": 3.5,
+     "y": 12.5,
+     "label": "6"
+    },
+    {
+     "id": "p",
+     "team": "a",
+     "x": 14.5,
+     "y": 12.5,
+     "label": "9"
+    },
+    {
+     "id": "m",
+     "team": "a",
+     "x": 6,
+     "y": 20.5,
+     "label": "8"
+    },
+    {
+     "id": "gk",
+     "team": "gkb",
+     "x": 29,
+     "y": 13.4
+    }
+   ],
+   "ball": "s",
+   "arrows": [
+    {
+     "from": "s",
+     "to": "p",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "m",
+     "to": [
+      12.6,
+      17.4
+     ],
+     "kind": "run",
+     "n": 2
+    },
+    {
+     "from": "p",
+     "to": [
+      12.6,
+      17.4
+     ],
+     "kind": "pass",
+     "n": 3
+    },
+    {
+     "from": [
+      12.6,
+      17.4
+     ],
+     "to": [
+      29.8,
+      10.6
+     ],
+     "kind": "shot",
+     "n": 4
+    }
+   ],
+   "labels": [
+    {
+     "x": 8.5,
+     "y": 10.4,
+     "text": "remise du pivot"
+    }
+   ]
+  }
+ },
+ {
+  "id": "C12",
+  "family": "technique",
+  "order": 12,
+  "ages": "U11+",
+  "players": {
+   "min": 5,
+   "max": 8,
+   "fr": "1 ou 2 gardiens et 4 à 6 joueurs de champ",
+   "en": "1 or 2 goalkeepers and 4 to 6 outfield players"
+  },
+  "space": {
+   "w": 36,
+   "h": 30
+  },
+  "duration": {
+   "fr": "4 x 4 min, 1 min 30 de récupération",
+   "en": "4 x 4 min, 1 min 30 rest"
+  },
+  "minutes": 22,
+  "md": [
+   "MD-3",
+   "MD-2",
+   "youth"
+  ],
+  "intensity": "medium",
+  "intentions": [
+   "sortir"
+  ],
+  "skills": [
+   "passe",
+   "controle",
+   "scan",
+   "decision",
+   "communication"
+  ],
+  "pieces": [
+   "la carte",
+   "la raison"
+  ],
+  "fr": {
+   "title": "Le gardien qui relance",
+   "subtitle": "Recevoir une passe en retrait sous pression et relancer du côté libre",
+   "objective": "Apprendre au gardien à recevoir une passe en retrait le corps ouvert, à lire d'où vient la pression et à relancer vers le côté libre, au pied puis à la main. Le ballon doit voyager dès le gardien.",
+   "organisation": [
+    "Un but avec gardien, deux relanceurs (4 et 5) écartés aux angles de la surface, deux portes de 4 m à 24 m du but.",
+    "L'entraîneur (E) joue la passe en retrait depuis 20 m ; un attaquant part près du point de penalty pour presser.",
+    "L'attaquant change toutes les 4 actions ; les relanceurs changent de côté à chaque série.",
+    "Un seul gardien ? Séries courtes, et un joueur de champ volontaire prend le but une série sur trois : tout le monde gagne à savoir relancer.",
+    "Par forte chaleur, le gardien boit à chaque série et attend à l'ombre ; 8 ballons au pied de l'entraîneur suffisent."
+   ],
+   "rules": [
+    "Deux touches maximum pour le gardien ; comme en match, pas de prise à la main sur une passe en retrait.",
+    "Relance vers le relanceur libre, qui franchit sa porte en conduite : 1 point.",
+    "Relance jouée en une touche vers le côté libre : 2 points.",
+    "L'attaquant qui touche le ballon marque 2 points, 3 s'il marque dans le but.",
+    "Si les deux côtés sont fermés, la passe longue au-delà des portes est permise, sans point."
+   ],
+   "coaching": [
+    "Regarde l'attaquant avant que le ballon arrive : de quel côté vient-il ?",
+    "Ouvre le corps vers le côté libre, appuis décalés, comme un joueur de champ.",
+    "Premier contact loin de l'attaquant, vers le côté où tu vas jouer.",
+    "Passe tendue, au sol, sur le pied extérieur du relanceur.",
+    "Relanceurs, écartez-vous large et parlez : « Seul » ou « Homme »."
+   ],
+   "progressions": [
+    "Un deuxième attaquant marque un relanceur : le gardien trouve l'autre, ou un pivot qui entre.",
+    "Passe en retrait plus difficile : plus forte, en rebond, sur le pied faible.",
+    "Relance à la main : après un arrêt, rouler ou lancer vite vers le relanceur libre.",
+    "Passer à la sortie à trois contre deux de la fiche F01."
+   ],
+   "regressions": [
+    "L'attaquant part du milieu de la surface en marchant.",
+    "Trois touches pour le gardien.",
+    "Portes de 6 m, relanceurs plus proches du but."
+   ],
+   "measure": "Sur 10 passes en retrait par gardien : relances réussies vers le côté libre, touches utilisées, et ballons perdus dans la surface (objectif : aucun).",
+   "story": "Ousmane « Petit Pied » Bello a de grandes mains ; cette fiche est pour ses petits pieds, parce que chez Tonton Fokou le ballon voyage dès le gardien."
+  },
+  "en": {
+   "title": "The Goalkeeper Who Builds",
+   "subtitle": "Receive a back-pass under pressure and play out to the free side",
+   "objective": "Teach the goalkeeper to receive a back-pass with an open body, read where the pressure comes from and play to the free side, with the feet then the hands. The ball must travel from the goalkeeper on.",
+   "organisation": [
+    "One goal with a goalkeeper, two receivers (4 and 5) split wide at the corners of the box, two 4 m gates 24 m from goal.",
+    "The coach (E) plays the back-pass from 20 m; a forward starts near the penalty spot to press.",
+    "The forward changes every 4 actions; the receivers switch sides every set.",
+    "Only one goalkeeper? Short sets, and a volunteer outfield player goes in goal one set in three: everyone gains from knowing how to play out.",
+    "In strong heat, the goalkeeper drinks every set and waits in the shade; 8 balls at the coach's feet are enough."
+   ],
+   "rules": [
+    "Two touches maximum for the goalkeeper; as in a match, no handling a back-pass.",
+    "A pass to the free receiver, who dribbles through his gate: 1 point.",
+    "A first-time pass to the free side: 2 points.",
+    "A forward who touches the ball scores 2 points, 3 if he scores in the goal.",
+    "If both sides are closed, the long pass beyond the gates is allowed, with no point."
+   ],
+   "coaching": [
+    "Look at the forward before the ball arrives: which side is he coming from?",
+    "Open your body to the free side, feet staggered, like an outfield player.",
+    "First touch away from the forward, towards the side you will play to.",
+    "Firm pass along the ground, onto the receiver's outside foot.",
+    "Receivers, split wide and talk: \"Time\" or \"Man on\"."
+   ],
+   "progressions": [
+    "A second forward marks one receiver: the goalkeeper finds the other, or a pivot who comes in.",
+    "Harder back-pass: firmer, bouncing, onto the weaker foot.",
+    "Distribution by hand: after a save, roll or throw quickly to the free receiver.",
+    "Move on to the 3 v 2 build-up of drill F01."
+   ],
+   "regressions": [
+    "The forward starts from the middle of the box, walking.",
+    "Three touches for the goalkeeper.",
+    "6 m gates, receivers closer to goal."
+   ],
+   "measure": "Out of 10 back-passes per goalkeeper: successful passes to the free side, touches used, and balls lost in the box (target: none).",
+   "story": "Ousmane \"Little Feet\" Bello has big hands; this drill is for his small feet, because with Tonton Fokou the ball travels from the goalkeeper on."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 36,
+   "h": 30,
+   "zones": [
+    {
+     "x": 0,
+     "y": 0,
+     "w": 16.5,
+     "h": 30,
+     "tone": "soft",
+     "label": "surface"
+    }
+   ],
+   "goals": [
+    {
+     "x": 0,
+     "y": 15,
+     "side": "left",
+     "size": "full"
+    }
+   ],
+   "cones": [
+    [
+     0,
+     0
+    ],
+    [
+     36,
+     0
+    ],
+    [
+     0,
+     30
+    ],
+    [
+     36,
+     30
+    ],
+    [
+     24,
+     2
+    ],
+    [
+     24,
+     6
+    ],
+    [
+     24,
+     24
+    ],
+    [
+     24,
+     28
+    ]
+   ],
+   "players": [
+    {
+     "id": "gk",
+     "team": "gk",
+     "x": 1.8,
+     "y": 15,
+     "label": "1"
+    },
+    {
+     "id": "c4",
+     "team": "a",
+     "x": 9,
+     "y": 4,
+     "label": "4"
+    },
+    {
+     "id": "c5",
+     "team": "a",
+     "x": 9,
+     "y": 26,
+     "label": "5"
+    },
+    {
+     "id": "r",
+     "team": "b",
+     "x": 13.5,
+     "y": 17.5
+    },
+    {
+     "id": "e",
+     "team": "n",
+     "x": 21,
+     "y": 15,
+     "label": "E"
+    }
+   ],
+   "ball": "e",
+   "arrows": [
+    {
+     "from": "e",
+     "to": "gk",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "r",
+     "to": [
+      6,
+      19
+     ],
+     "kind": "press",
+     "n": 2
+    },
+    {
+     "from": "gk",
+     "to": "c4",
+     "kind": "pass",
+     "n": 3
+    },
+    {
+     "from": "c4",
+     "to": [
+      24.6,
+      4
+     ],
+     "kind": "dribble",
+     "n": 4
+    }
+   ],
+   "labels": [
+    {
+     "x": 12.5,
+     "y": 13.2,
+     "text": "passe en retrait"
+    },
+    {
+     "x": 15.5,
+     "y": 8.4,
+     "text": "côté libre"
+    }
+   ]
+  },
+  "diagram2": null
+ },
+ {
+  "id": "C13",
+  "family": "technique",
+  "order": 13,
+  "ages": "U12+",
+  "players": {
+   "min": 5,
+   "max": 12,
+   "fr": "5 à 12 joueurs (trios en vagues, puis 3 contre 2)",
+   "en": "5 to 12 players (trios in waves, then 3 v 2)"
+  },
+  "space": {
+   "w": 30,
+   "h": 20
+  },
+  "duration": {
+   "fr": "3 x 4 min (sans opposition, défenseur passif, 3 contre 2), 1 min 30 de récupération",
+   "en": "3 x 4 min (unopposed, passive defender, 3 v 2), 1 min 30 rest"
+  },
+  "minutes": 15,
+  "md": [
+   "MD-4",
+   "MD-2"
+  ],
+  "intensity": "medium",
+  "intentions": [
+   "progresser",
+   "finir"
+  ],
+  "skills": [
+   "passe",
+   "appels",
+   "scan",
+   "communication",
+   "decision"
+  ],
+  "pieces": [
+   "la carte"
+  ],
+  "fr": {
+   "title": "Le jeu de combinaisons à trois",
+   "subtitle": "Du circuit sans opposition au 3 contre 2 : la course du troisième homme",
+   "objective": "Apprendre la course du troisième homme à trois joueurs, d'abord sans adversaire, puis contre un, puis contre deux. Le défenseur regarde celui qui reçoit ; le troisième arrive là où il ne regarde pas.",
+   "organisation": [
+    "Rectangle de 30 x 20 m : une zone cible de 5 m à droite, puis deux mini-buts sur la ligne de fond.",
+    "Groupes de trois : A part avec le ballon, B se montre dos au jeu, C part décalé.",
+    "Trois étapes de 4 min : sans opposition, défenseur passif sur B, puis 3 contre 2 vers les mini-buts.",
+    "Avec un grand groupe, les trios partent en vagues toutes les 15 secondes ; un ballon par trio, rendu en conduite par les côtés.",
+    "Par forte chaleur, retour en marchant et eau entre les étapes."
+   ],
+   "rules": [
+    "Sans opposition : A joue dans les pieds de B, C arrive lancé, B joue dans sa course en une touche, C entre dans la zone cible.",
+    "Avec défenseur : la passe directe de A vers C est interdite.",
+    "3 contre 2 : but après une course du troisième homme, 3 points ; autre but, 1 point.",
+    "Défenseurs qui récupèrent : 1 point s'ils conduisent jusqu'à la ligne de départ."
+   ],
+   "coaching": [
+    "C, pars quand A lève la tête pour passer : pas avant, sinon tu arrives seul.",
+    "C, cours dans le dos du défenseur de B, du côté où il ne regarde pas.",
+    "B, regarde avant de recevoir : où est C ?",
+    "B, joue en une touche dans l'espace devant C.",
+    "A, après ta passe, bouge : tu redeviens une solution."
+   ],
+   "progressions": [
+    "Deux touches pour tous, puis une seule pour B.",
+    "3 contre 3 : un troisième défenseur suit C.",
+    "Passer au troisième homme et frappe de la fiche G03."
+   ],
+   "regressions": [
+    "Défenseur passif à toutes les étapes.",
+    "Rectangle de 35 x 25 m.",
+    "L'entraîneur donne le signal de départ de C."
+   ],
+   "measure": "Combinaisons réussies (C reçoit lancé, dans sa course) à chaque étape, et part des buts à 3 points en 3 contre 2. Viser au moins un but sur trois après une course du troisième homme.",
+   "story": "« J'ai été le défenseur cent fois. Je n'ai jamais vu Laia », avoue BriBri : le troisième homme arrive toujours là où le défenseur ne regarde pas."
+  },
+  "en": {
+   "title": "Three-Player Pattern Play",
+   "subtitle": "From an unopposed pattern to 3 v 2: the third-man run",
+   "objective": "Learn the third-man run with three players, first without an opponent, then against one, then against two. The defender watches the player receiving; the third man arrives where he is not looking.",
+   "organisation": [
+    "30 x 20 m area: a 5 m target zone on the right, then two mini goals on the end line.",
+    "Groups of three: A starts with the ball, B shows with his back to play, C starts to the side.",
+    "Three 4 min stages: unopposed, a passive defender on B, then 3 v 2 towards the mini goals.",
+    "With a big group, trios go in waves every 15 seconds; one ball per trio, dribbled back along the sides.",
+    "In strong heat, walk back and drink between stages."
+   ],
+   "rules": [
+    "Unopposed: A plays into B's feet, C arrives on the run, B plays first time into his stride, C enters the target zone.",
+    "With a defender: no direct pass from A to C.",
+    "3 v 2: goal after a third-man run, 3 points; any other goal, 1 point.",
+    "Defenders who win the ball: 1 point if they dribble to the starting line."
+   ],
+   "coaching": [
+    "C, go when A lifts his head to pass: not before, or you arrive alone.",
+    "C, run behind B's defender, on the side he is not looking at.",
+    "B, look before you receive: where is C?",
+    "B, play first time into the space in front of C.",
+    "A, move after your pass: you become an option again."
+   ],
+   "progressions": [
+    "Two touches for everyone, then one only for B.",
+    "3 v 3: a third defender follows C.",
+    "Move on to third man and shot, drill G03."
+   ],
+   "regressions": [
+    "Passive defender at every stage.",
+    "35 x 25 m area.",
+    "The coach gives C the signal to go."
+   ],
+   "measure": "Successful combinations (C receives on the run, in stride) at each stage, and the share of 3-point goals in the 3 v 2. Aim for at least one goal in three after a third-man run.",
+   "story": "\"I was the defender a hundred times. I never saw Laia,\" BriBri admits: the third man always arrives where the defender is not looking."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 30,
+   "h": 20,
+   "zones": [
+    {
+     "x": 25,
+     "y": 0,
+     "w": 5,
+     "h": 20,
+     "tone": "a",
+     "label": "cible"
+    }
+   ],
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 3,
+     "y": 8,
+     "label": "A"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 14,
+     "y": 8.5,
+     "label": "B"
+    },
+    {
+     "id": "c",
+     "team": "a",
+     "x": 6,
+     "y": 16,
+     "label": "C"
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": "b",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "c",
+     "to": [
+      17.5,
+      13.5
+     ],
+     "kind": "run",
+     "n": 2
+    },
+    {
+     "from": "b",
+     "to": [
+      17.5,
+      13.5
+     ],
+     "kind": "pass",
+     "n": 3
+    },
+    {
+     "from": [
+      17.5,
+      13.5
+     ],
+     "to": [
+      27,
+      12.5
+     ],
+     "kind": "dribble",
+     "n": 4
+    }
+   ],
+   "labels": [
+    {
+     "x": 12,
+     "y": 18.6,
+     "text": "troisième homme"
+    }
+   ]
+  },
+  "diagram2": {
+   "view": "grid",
+   "w": 30,
+   "h": 20,
+   "goals": [
+    {
+     "x": 30,
+     "y": 5,
+     "side": "left",
+     "size": "mini"
+    },
+    {
+     "x": 30,
+     "y": 15,
+     "side": "left",
+     "size": "mini"
+    }
+   ],
+   "players": [
+    {
+     "id": "a",
+     "team": "a",
+     "x": 3,
+     "y": 8,
+     "label": "A"
+    },
+    {
+     "id": "b",
+     "team": "a",
+     "x": 14,
+     "y": 8.5,
+     "label": "B"
+    },
+    {
+     "id": "c",
+     "team": "a",
+     "x": 6,
+     "y": 16,
+     "label": "C"
+    },
+    {
+     "id": "d1",
+     "team": "b",
+     "x": 18,
+     "y": 7
+    },
+    {
+     "id": "d2",
+     "team": "b",
+     "x": 22.5,
+     "y": 5.5
+    }
+   ],
+   "ball": "a",
+   "arrows": [
+    {
+     "from": "a",
+     "to": "b",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "d1",
+     "to": [
+      15.6,
+      8.2
+     ],
+     "kind": "press",
+     "n": 2
+    },
+    {
+     "from": "c",
+     "to": [
+      19.5,
+      14.5
+     ],
+     "kind": "run",
+     "n": 3
+    },
+    {
+     "from": "b",
+     "to": [
+      19.5,
+      14.5
+     ],
+     "kind": "pass",
+     "n": 4
+    },
+    {
+     "from": [
+      19.5,
+      14.5
+     ],
+     "to": [
+      28.6,
+      15
+     ],
+     "kind": "shot",
+     "n": 5
+    }
+   ],
+   "labels": [
+    {
+     "x": 19.5,
+     "y": 3.3,
+     "text": "il regarde B"
+    }
+   ]
+  }
+ },
+ {
+  "id": "C14",
+  "family": "technique",
+  "order": 14,
+  "ages": "U9+",
+  "players": {
+   "min": 3,
+   "max": 3,
+   "fr": "3 joueurs par groupe, plusieurs groupes en parallèle",
+   "en": "3 players per group, several groups side by side"
+  },
+  "space": {
+   "w": 20,
+   "h": 12
+  },
+  "duration": {
+   "fr": "4 x 3 min, 1 min de récupération",
+   "en": "4 x 3 min, 1 min rest"
+  },
+  "minutes": 15,
+  "md": [
+   "MD-2",
+   "MD-1",
+   "youth"
+  ],
+  "intensity": "low",
+  "intentions": [
+   "respirer",
+   "regarder-devant"
+  ],
+  "skills": [
+   "controle",
+   "protection",
+   "passe",
+   "decision"
+  ],
+  "pieces": [
+   "le cœur",
+   "le souffle"
+  ],
+  "fr": {
+   "title": "Le jeu aérien",
+   "subtitle": "Amortir de la cuisse, de la poitrine et du pied ; la tête seulement à partir de 13 ans",
+   "objective": "Maîtriser un ballon qui arrive en l'air pour le garder et le rejouer au sol : cuisse, poitrine, coup de pied. Le jeu de tête n'est abordé qu'à partir de 13 ans, avec précaution.",
+   "organisation": [
+    "Groupes de trois sur 20 x 12 m : un lanceur, un receveur à 6 m, une cible à 8 m sur le côté.",
+    "Le lanceur lance à la main, à hauteur de cuisse puis de poitrine ; le receveur amortit et passe au sol à la cible.",
+    "Rotation tous les 6 lancers ; un ballon pour trois suffit, ce qui convient aux groupes nombreux.",
+    "Ballons de taille adaptée à l'âge ; pour la tête, à partir de 13 ans, ballon plus léger ou moins gonflé.",
+    "Par forte chaleur, séries courtes à l'ombre ; ce travail se place en début de séance, joueurs frais."
+   ],
+   "rules": [
+    "Amorti puis passe à la cible en deux touches au plus : 1 point.",
+    "L'entraîneur annonce la surface : cuisse, poitrine, coup de pied, ou au choix.",
+    "Avant 13 ans : aucun jeu de tête dans cette fiche.",
+    "À partir de 13 ans : tête seulement sur ballon léger lancé à la main de près, et très peu de répétitions par séance.",
+    "Jamais de tête sur un long ballon frappé ; si votre fédération fixe des règles plus strictes, elles s'appliquent.",
+    "Choc à la tête, mal de tête ou vertige : le joueur arrête, ne reprend pas le jour même, et l'on prévient la famille et un soignant."
+   ],
+   "coaching": [
+    "Lis la trajectoire tôt et place-toi sous le ballon.",
+    "Cuisse : elle descend au contact pour amortir, le ballon tombe devant toi.",
+    "Poitrine : bombe-la, puis recule un peu les épaules au contact.",
+    "Ton premier contact va déjà vers la cible.",
+    "Tête, à partir de 13 ans : yeux ouverts, cou gainé, le front, les bras pour l'équilibre, jamais les coudes."
+   ],
+   "progressions": [
+    "Le lanceur varie la hauteur sans prévenir.",
+    "Un défenseur passif dans le dos du receveur : amortir en protégeant le ballon.",
+    "À partir de 13 ans, ballon frappé au pied depuis 15 m, pour l'amorti seulement.",
+    "À partir de 13 ans, remise de la tête vers la cible, ballon léger lancé à la main."
+   ],
+   "regressions": [
+    "Lancer plus doux, à 4 m.",
+    "Le ballon rebondit une fois avant le contrôle.",
+    "Ballon en mousse ou plus léger pour les U9."
+   ],
+   "measure": "Sur 10 lancers par joueur et par surface : amortis qui restent à moins d'un mètre, et passes réussies vers la cible. Pour la tête, l'entraîneur note les répétitions pour qu'elles restent rares.",
+   "story": "Avant les grands matchs, les frères se passent le ballon de Mami en l'air, dix jongles sans qu'il touche le sol, puis BriBri le bloque sur sa cuisse."
+  },
+  "en": {
+   "title": "Aerial Play",
+   "subtitle": "Cushion with the thigh, chest and foot; heading only from age 13",
+   "objective": "Master a ball that arrives in the air so you can keep it and play it on the ground: thigh, chest, instep. Heading is only introduced from age 13, with care.",
+   "organisation": [
+    "Groups of three on 20 x 12 m: a thrower, a receiver 6 m away, a target 8 m to the side.",
+    "The thrower throws by hand, at thigh height then chest height; the receiver cushions it and passes along the ground to the target.",
+    "Rotate every 6 throws; one ball for three is enough, which suits large groups.",
+    "Balls of the right size for the age; for heading, from age 13, a lighter or softer ball.",
+    "In strong heat, short sets in the shade; do this early in the session, with fresh players."
+   ],
+   "rules": [
+    "Cushion then pass to the target in two touches at most: 1 point.",
+    "The coach calls the surface: thigh, chest, instep, or player's choice.",
+    "Under 13: no heading at all in this drill.",
+    "From 13: heading only on a light ball thrown by hand from close range, with very few reps per session.",
+    "Never head a long kicked ball; if your federation has stricter rules, they apply.",
+    "A knock to the head, a headache or dizziness: the player stops, does not return that day, and the family and a medic are told."
+   ],
+   "coaching": [
+    "Read the flight early and get under the ball.",
+    "Thigh: let it drop on contact to cushion, the ball falls in front of you.",
+    "Chest: push it out, then draw the shoulders back slightly on contact.",
+    "Your first touch already goes towards the target.",
+    "Heading, from 13: eyes open, neck firm, use the forehead, arms for balance, never the elbows."
+   ],
+   "progressions": [
+    "The thrower varies the height without warning.",
+    "A passive defender behind the receiver: cushion while shielding the ball.",
+    "From 13, a ball kicked from 15 m, for cushioning only.",
+    "From 13, a headed lay-off to the target, light ball thrown by hand."
+   ],
+   "regressions": [
+    "Softer throw, from 4 m.",
+    "The ball bounces once before the control.",
+    "Foam or lighter ball for U9s."
+   ],
+   "measure": "Out of 10 throws per player and per surface: cushioned touches that stay within a metre, and passes that reach the target. For heading, the coach logs the reps so they stay rare.",
+   "story": "Before big matches the brothers pass Mami's ball in the air, ten touches without it hitting the ground, then BriBri traps it on his thigh."
+  },
+  "diagram": {
+   "view": "grid",
+   "w": 20,
+   "h": 12,
+   "players": [
+    {
+     "id": "s",
+     "team": "a",
+     "x": 3,
+     "y": 6,
+     "label": "S"
+    },
+    {
+     "id": "r",
+     "team": "a",
+     "x": 9.5,
+     "y": 6,
+     "label": "R"
+    },
+    {
+     "id": "t",
+     "team": "a",
+     "x": 17,
+     "y": 9.5,
+     "label": "T"
+    }
+   ],
+   "ball": "s",
+   "arrows": [
+    {
+     "from": "s",
+     "to": "r",
+     "kind": "pass",
+     "n": 1
+    },
+    {
+     "from": "r",
+     "to": [
+      12,
+      7.8
+     ],
+     "kind": "dribble",
+     "n": 2
+    },
+    {
+     "from": [
+      12.3,
+      8
+     ],
+     "to": "t",
+     "kind": "pass",
+     "n": 3
+    }
+   ],
+   "labels": [
+    {
+     "x": 6.2,
+     "y": 4.2,
+     "text": "lancer à la main"
+    },
+    {
+     "x": 9.2,
+     "y": 9.4,
+     "text": "cuisse, poitrine"
+    }
+   ]
+  },
+  "diagram2": null
+ },
+ {
   "id": "R01",
   "family": "rondo",
   "order": 1,

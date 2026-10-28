@@ -1,14 +1,43 @@
 {
   "quote": "« {{text}} »",
+  "demo": {
+    "choose": "Choisir une démo",
+    "pro": {
+      "cta": "Démo club pro",
+      "team": "l'Étoile de la Côte, club professionnel de Douala"
+    },
+    "youth": {
+      "cta": "Démo académie U13",
+      "team": "les Lionceaux de Bonamoussadi U13"
+    }
+  },
   "landing": {
     "hero": {
-      "lead": "Une saga pour les enfants, un livre pour les entraîneurs, une application pour toute l'équipe, et Mola, l'agent qui travaille avec vous. Une seule idée du jeu, du terrain de quartier à la sélection nationale.",
+      "lead": "{{app}} est l'application de football avec intention pour tous les joueurs, de l'école de foot aux professionnels, et pour ceux qui les font progresser : entraîneurs, analystes, clubs et fédérations. Séances et semaine périodisée, matchs, analyse en direct avec l'Indice Njangi, vidéo, et le parcours de chaque joueur, saison après saison.",
       "ctaStart": "Commencer avec Mola",
-      "ctaDemo": "Essayer la démo",
-      "ctaPlayer": "Démo joueur",
-      "demoNote": "La démo installe les Lionceaux de Bonamoussadi U13 dans votre navigateur, sans compte.",
-      "pitchTitle": "Le but du Njangi : le ballon passe par toute l'équipe, du gardien jusqu'au but de BriBri.",
-      "pitchCaption": "Du gardien au but : dix passes, onze joueurs, une seule direction."
+      "ctaPlayer": "Espace joueur",
+      "demoNote": "La démo s'installe dans votre navigateur : l'Étoile de la Côte, club professionnel de Douala, ou les Lionceaux de Bonamoussadi U13, une équipe d'académie.",
+      "pitchTitle": "Le but du Njangi : le ballon passe par toute l'équipe, du gardien jusqu'au but.",
+      "pitchCaption": "Du gardien au but : dix passes, onze joueurs, une seule direction.",
+      "title": "Entraîner, observer, suivre chaque joueur. Des jeunes aux pros.",
+      "forWho": "Pour qui",
+      "demoTitle": "Ou essayez une démo, sans compte",
+      "mantraLabel": "Notre mantra :"
+    },
+    "pillars": {
+      "title": "Entraîner, observer, suivre",
+      "train": {
+        "title": "Entraîner",
+        "body": "Les 50 exercices de la méthode avec leurs schémas, des séances construites en quelques touches, la semaine de MD-4 à MD-1 : adaptées à l'âge, au niveau et au calendrier, des U8 à l'équipe première."
+      },
+      "observe": {
+        "title": "Observer",
+        "body": "Codez le match au bord du terrain ou sur la vidéo, une touche par action. L'Indice Njangi dit, de 0 à 100, si l'équipe a possédé avec intention, et le rapport propose les exercices de la semaine suivante."
+      },
+      "follow": {
+        "title": "Suivre",
+        "body": "Les dix compétences, les matchs, les minutes et les progrès de chaque joueur, saison après saison : le parcours complet, du premier ballon au plus haut niveau."
+      }
     },
     "njangi": {
       "eyebrow": "Le njangi",
@@ -35,63 +64,28 @@
       "pot": "la caisse",
       "goal": "but"
     },
-    "doors": {
-      "eyebrow": "Quatre portes",
-      "title": "Quatre portes, une même idée du jeu",
-      "lead": "Chacun entre par la porte qui lui ressemble. Tout le monde apprend le même langage.",
-      "series": {
-        "label": "La saga jeunesse",
-        "heroes": "Avec {{heroes}}",
-        "meta": "Roman, 8 à 12 ans · six tomes prévus",
-        "body": "Deux frères camerounais suivent leurs parents de Douala au Maryland, puis en France, en Catalogne et à Londres. Dans chaque pays, ils apprennent une pièce du football, et le vieux ballon recousu par Mami voyage avec eux.",
-        "all": "Tous les livres"
-      },
-      "methode": {
-        "label": "Le livre du coach",
-        "audience": "Entraîneurs, analystes, directeurs techniques",
-        "body": "Le modèle de jeu africain, de l'école de foot à l'équipe nationale : les cinq intentions de la possession, la semaine d'entraînement, l'Indice Njangi, le plan 2030 pour une fédération. Et 50 exercices avec leurs schémas.",
-        "cta": "Lire le livre"
-      },
-      "app": {
-        "name": "L'application",
-        "audience": "Joueurs, entraîneurs, analystes",
-        "body": "Les exercices de la méthode, le constructeur de séances, la semaine planifiée, les matchs, l'analyse en direct et la vidéo. Vos données restent sur votre appareil.",
-        "cta": "Voir ce qu'elle fait"
-      },
-      "mola": {
-        "name": "Mola",
-        "audience": "L'agent qui agit pour vous",
-        "body": "Dites-lui ce dont vous avez besoin, il le fait dans l'application : préparer la semaine, créer une séance, installer un match, écrire la convocation. Vous validez avant tout envoi.",
-        "cta": "Rencontrer Mola"
-      },
-      "free": "Gratuit à lire"
-    },
     "features": {
       "eyebrow": "L'application",
-      "title": "Une application pour toute l'équipe",
+      "title": "Pour tout le football, de l'école de foot aux pros",
       "lead": "Choisissez votre rôle : voici ce que {{app}} fait pour vous.",
       "tabs": {
-        "players": "Joueurs",
+        "players": "Joueurs (des jeunes aux pros)",
         "coaches": "Entraîneurs",
         "analysts": "Analystes",
         "clubs": "Clubs et fédérations"
       },
       "items": {
         "lessons": {
-          "title": "Les 40 Leçons du Ballon",
-          "body": "Une leçon par chapitre du roman, avec son schéma, pour comprendre le jeu en jouant."
+          "title": "Les Leçons du Ballon, pour les plus jeunes",
+          "body": "Pour les 8 à 12 ans : 40 leçons tirées du roman {{series}}, chacune avec son schéma, pour comprendre le jeu en jouant."
         },
         "challenges": {
-          "title": "Les défis du joueur",
-          "body": "Jonglages, contrôles orientés, scan : des défis à faire seul, et la trace de tes progrès."
-        },
-        "notebook": {
-          "title": "Ton carnet du Njangi",
-          "body": "Écris ce que tu as appris, comme Kaydoudou dans son carnet couvert de pagne."
+          "title": "Défis et carnet",
+          "body": "Des défis à faire seul, un carnet pour noter ce que tu apprends, et la trace de tes progrès entre deux séances."
         },
         "skills": {
           "title": "Tes dix compétences",
-          "body": "Scan, contrôle orienté, passe avec intention, dribble njangi : vois où tu en es, de 1 à 4."
+          "body": "Scan, contrôle orienté, passe avec intention, contre-pression : où tu en es, de 1 à 4, et ce que tu dois travailler maintenant."
         },
         "drills": {
           "title": "Les exercices avec schémas",
@@ -127,11 +121,11 @@
         },
         "model": {
           "title": "Un modèle de jeu commun",
-          "body": "Les mêmes mots et les mêmes exercices des U9 à l'équipe A, même quand l'entraîneur change."
+          "body": "Les mêmes mots et les mêmes exercices des U8 à l'équipe première, même quand l'entraîneur change."
         },
         "teams": {
           "title": "Toutes vos équipes",
-          "body": "Une équipe par catégorie, avec ses séances, ses matchs et ses rapports."
+          "body": "Une équipe par catégorie, des écoles de foot aux seniors professionnels, chacune avec ses séances, ses matchs et ses rapports."
         },
         "education": {
           "title": "Former les entraîneurs",
@@ -140,13 +134,14 @@
         "plan2030": {
           "title": "Le plan 2030",
           "body": "Dix mesures concrètes pour une fédération, du modèle national à la protection de l'enfance."
+        },
+        "journey": {
+          "title": "Ton parcours",
+          "body": "Chaque match, chaque minute, chaque évaluation de l'entraîneur : ton parcours se construit saison après saison, des U13 à l'équipe première."
         }
       },
       "visual": {
-        "lessonNo": "Leçon du Ballon n°3",
-        "lessonTitle": "Quand on te serre, le ballon doit partir.",
-        "lessonLine": "Si deux adversaires viennent sur toi, un partenaire est libre quelque part.",
-        "weekTitle": "La semaine avant le match de samedi",
+        "weekTitle": "La semaine avant le match de samedi, à Kribi",
         "matchDay": "Match",
         "load": "Charge",
         "sessions": {
@@ -155,11 +150,11 @@
           "MD-2": "Transitions et finition",
           "MD-1": "Activation, coups de pied arrêtés"
         },
-        "opponent": "contre les Panthères",
+        "opponent": "à Kribi",
         "tagTitle": "Le pupitre de codage",
         "tagHalf": "2e mi-temps",
-        "us": "Lionceaux",
-        "them": "Requins",
+        "us": "Étoile",
+        "them": "Météore",
         "tagIndex": "Indice Njangi en direct",
         "pathTitle": "Une seule idée, de l'école de foot à l'équipe A",
         "path": {
@@ -171,17 +166,36 @@
           "cT": "Jeu de position, rôles, transitions",
           "d": "U17 à U19",
           "dT": "Performance et périodisation",
-          "e": "Équipe A",
-          "eT": "Le modèle national"
+          "e": "Équipe première",
+          "eT": "Le haut niveau et le modèle national"
+        },
+        "journeyTitle": "Le parcours de Steve Ndjock",
+        "journeyRole": "Milieu intérieur, n°8 · Étoile de la Côte",
+        "journeyThen": "Saison passée",
+        "journeyNow": "Progrès cette saison",
+        "journeyBar": "Saison passée {{then}} sur 4, cette saison {{now}} sur 4",
+        "journeyPath": "Son parcours, catégorie après catégorie",
+        "journeyStep": {
+          "u13": "U13",
+          "u15": "U15",
+          "u17": "U17",
+          "u19": "U19",
+          "pro": "Pro"
         }
       },
-      "open": "Ouvrir dans la démo"
+      "open": "Ouvrir dans une démo :",
+      "who": {
+        "players": "Pour le joueur et la joueuse, de l'école de foot au professionnel.",
+        "coaches": "Pour l'entraîneur, de l'éducateur U8 au coach d'une équipe de Ligue 1.",
+        "analysts": "Pour l'analyste, au bord du terrain ou devant la vidéo.",
+        "clubs": "Pour les clubs, les académies, les ligues et les fédérations."
+      }
     },
     "live": {
       "eyebrow": "Analyse en direct",
       "title": "L'Indice Njangi : la possession qui sert à quelque chose",
       "lead": "Le pourcentage de possession ment. L'Indice Njangi mesure, de 0 à 100, si votre équipe a possédé avec intention. Touchez une action pour voir l'indice bouger.",
-      "example": "Exemple : Lionceaux U13, deuxième mi-temps",
+      "example": "Exemple : Étoile de la Côte, deuxième mi-temps",
       "try": "Codez une action",
       "last": "Dernière action : {{label}}",
       "reset": "Remettre à zéro",
@@ -209,7 +223,7 @@
         }
       },
       "gaugeLabel": "Indice Njangi : {{v}} sur 100",
-      "cta": "Voir un vrai rapport dans la démo"
+      "cta": "Voir un vrai rapport dans une démo"
     },
     "mola": {
       "eyebrow": "Mola, l'agent de {{app}}",
@@ -219,8 +233,8 @@
       "can": "Ce que vous pouvez lui demander",
       "asks": {
         "a": "Prépare ma semaine avant le match de samedi.",
-        "b": "Crée une séance de 75 minutes pour mes U11.",
-        "c": "Installe le match contre Deïdo et propose la composition.",
+        "b": "Crée une séance MD-3 de 80 minutes pour l'équipe première.",
+        "c": "Installe le match à Kribi et propose la composition.",
         "d": "Écris la convocation pour WhatsApp.",
         "e": "Ouvre le rapport du dernier match."
       },
@@ -231,9 +245,9 @@
         "user": "Prépare ma semaine avant le match de samedi.",
         "ack": "D'accord, je m'en occupe.",
         "steps": {
-          "a": "Match trouvé : samedi contre les Panthères de Deïdo",
+          "a": "Match trouvé : samedi à Kribi, contre les Rapides",
           "b": "Quatre séances créées, de MD-4 à MD-1",
-          "c": "Exercices choisis pour des U13 : rondos, transitions, finition",
+          "c": "Exercices choisis pour des seniors : rondos, transitions, finition",
           "d": "Convocation prête, elle attend votre accord"
         },
         "done": "Votre semaine est prête. Voulez-vous la voir ?",
@@ -242,6 +256,24 @@
         "input": "Écrire à Mola"
       },
       "cta": "Commencer avec Mola"
+    },
+    "companions": {
+      "eyebrow": "Les compagnons",
+      "title": "Deux livres pour accompagner l'application",
+      "lead": "Le Code Njangi donne la méthode aux entraîneurs et aux analystes. Lionceaux la raconte aux enfants. Les deux se lisent librement en ligne et se téléchargent en PDF.",
+      "read": "Lire le livre",
+      "all": "Tous les livres",
+      "methode": {
+        "label": "Le livre de la méthode",
+        "audience": "Pour les entraîneurs et les analystes, de l'école de foot au haut niveau professionnel et aux sélections nationales",
+        "body": "Le modèle de jeu africain : les quatre moments, les cinq intentions de la possession, les rôles, la semaine d'entraînement et la périodisation, l'Indice Njangi et le rapport de match, le plan 2030 pour une fédération. Ses 50 exercices et leurs schémas sont dans l'application."
+      },
+      "series": {
+        "label": "Le roman jeunesse",
+        "heroes": "Avec {{heroes}}",
+        "meta": "Roman, 8 à 12 ans · six tomes prévus",
+        "body": "Deux frères camerounais suivent leurs parents de Douala au Maryland, puis en France, en Catalogne et à Londres. Dans chaque pays, ils apprennent une pièce du football. Ses 40 Leçons du Ballon sont dans l'espace joueur de l'application, pour les plus jeunes."
+      }
     },
     "roadmap": {
       "eyebrow": "Le compte à rebours",
@@ -277,12 +309,12 @@
       "cta": "Voir les formules"
     },
     "final": {
-      "body": "Commencez par une conversation avec Mola : quelques questions, et votre espace est prêt.",
+      "body": "Commencez par une conversation avec Mola : quelques questions, et votre espace est prêt, que vous entraîniez des U9 ou une équipe professionnelle.",
       "secondary": "Lire les livres"
     },
     "demoModal": {
       "title": "Lancer la démo ?",
-      "body": "La démo remplace les données de ce navigateur par l'équipe des Lionceaux de Bonamoussadi. Exportez d'abord une sauvegarde depuis les réglages si vous voulez garder votre travail.",
+      "body": "La démo remplace les données de ce navigateur par {{demo}}. Exportez d'abord une sauvegarde depuis les réglages si vous voulez garder votre travail.",
       "confirm": "Lancer la démo",
       "busy": "Préparation de la démo"
     }
@@ -301,7 +333,7 @@
     "docTitle": "Les livres",
     "eyebrow": "Bibliothèque",
     "title": "Les livres",
-    "subtitle": "Une saga pour les enfants, un livre pour les entraîneurs, une même idée du jeu. Ils se lisent librement en ligne et se téléchargent en PDF.",
+    "subtitle": "Les deux compagnons de {{app}}. Le Code Njangi, la méthode pour les entraîneurs et les analystes, de l'école de foot au niveau professionnel et aux sélections nationales. Lionceaux, la saga romanesque pour les lecteurs de 8 à 12 ans. Ils se lisent librement en ligne et se téléchargent en PDF.",
     "frenchOnly": "",
     "read": "Lire en ligne",
     "pdf": "Télécharger le PDF",
@@ -314,7 +346,7 @@
     "chapterCount": "{{n}} chapitres",
     "povLabel": "Raconté par {{pov}}",
     "series": {
-      "label": "La saga jeunesse",
+      "label": "Le roman jeunesse",
       "heroes": "Avec {{heroes}}",
       "meta": "Roman, 8 à 12 ans · six tomes prévus",
       "shelfTitle": "La saga en six tomes",
@@ -365,26 +397,15 @@
       "lessonsLink": "Les Leçons du Ballon dans l'application"
     },
     "methode": {
-      "label": "Le livre du coach",
-      "audience": "Entraîneurs, analystes, managers, fédérations",
+      "label": "Le livre de la méthode",
+      "audience": "Entraîneurs et analystes, de l'école de foot au haut niveau professionnel et aux sélections nationales",
       "body": "Le livre qui écrit le modèle de jeu Njangi : les quatre moments, les cinq intentions de la possession, la carte du terrain, les rôles, la formation des jeunes en Afrique, la semaine périodisée, l'Indice Njangi et le rapport de match, et dix mesures pour une fédération d'ici 2030.",
       "facts": {
-        "chapters": "23 chapitres",
-        "parts": "7 parties",
-        "drills": "50 exercices avec schémas"
+        "chapters": "{{n}} chapitres",
+        "parts": "{{n}} parties",
+        "drills": "{{n}} exercices avec schémas"
       },
       "drillsLink": "Les exercices dans l'application",
-      "parts": {
-        "0": "Avant-propos",
-        "1": "Le manifeste",
-        "2": "Le modèle de jeu Njangi",
-        "3": "Des jeunes aux pros",
-        "4": "La semaine d'entraînement et la périodisation",
-        "5": "Les 50 exercices",
-        "6": "L'analyse",
-        "7": "Le manager et la fédération",
-        "8": "Annexes"
-      },
       "partLabel": "Partie {{n}}"
     },
     "cover": {
@@ -397,7 +418,7 @@
     "docTitle": "Premium",
     "eyebrow": "Formules",
     "title": "Une formule pour chaque rôle",
-    "subtitle": "Les livres et les exercices de la méthode restent gratuits. Les formules Premium ouvrent les outils de préparation, d'analyse, et Mola qui agit pour vous.",
+    "subtitle": "Les livres et les exercices de la méthode restent gratuits. Les formules Premium ouvrent les outils de préparation, d'analyse et de suivi des joueurs, et Mola qui agit pour vous, de l'école de foot au club professionnel.",
     "billing": "Facturation",
     "monthly": "Mensuel",
     "annual": "Annuel",
@@ -412,11 +433,11 @@
     "onQuoteHint": "Selon le nombre de sélections et d'entraîneurs",
     "recommended": "Conseillé aux entraîneurs",
     "desc": {
-      "free": "Pour découvrir {{app}} et apprendre.",
-      "player": "Pour le joueur ou la joueuse qui veut progresser.",
-      "coach": "Pour l'entraîneur qui prépare, dirige et analyse.",
-      "club": "Pour les clubs et les académies, toutes catégories.",
-      "federation": "Pour les fédérations et les ligues qui construisent un modèle national."
+      "free": "Pour découvrir {{app}} et apprendre, quel que soit votre niveau.",
+      "player": "Pour le joueur ou la joueuse, des jeunes aux pros, qui veut suivre son parcours et progresser.",
+      "coach": "Pour l'entraîneur qui prépare, dirige et analyse, de l'école de foot à l'équipe première.",
+      "club": "Pour les clubs professionnels et amateurs et les académies : toutes les catégories, des U8 à l'équipe première.",
+      "federation": "Pour les fédérations et les ligues qui construisent un modèle national, des sélections de jeunes à l'équipe A."
     },
     "activate": "Activer (démo)",
     "current": "Votre formule",
@@ -449,6 +470,10 @@
         "q": "Comment payer ?",
         "a": "Les paiements ne sont pas encore branchés. Mobile Money et cartes bancaires arrivent. Les prix en FCFA sont indicatifs, sur la base de 1 dollar pour environ 600 FCFA."
       }
+    },
+    "feature": {
+      "playerPlan": "Programme personnel, défis et parcours",
+      "lessons": "Les 40 Leçons du Ballon (pour les 8 à 12 ans)"
     }
   },
   "settings": {
@@ -484,6 +509,7 @@
       "namePh": "Ex. : Lionceaux U13",
       "ageGroup": "Catégorie",
       "seniors": "Seniors",
+      "pro": "Seniors professionnels",
       "format": "Format",
       "formatOpt": "{{n}} contre {{n}}",
       "formation": "Système de départ",

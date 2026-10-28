@@ -1,0 +1,131 @@
+{
+  "id": "C07",
+  "family": "technique",
+  "order": 7,
+  "ages": "U9+",
+  "players": { "min": 4, "max": 6, "fr": "4 à 6 joueurs par rectangle (1 contre 1, puis 2 contre 1), plusieurs rectangles en parallèle", "en": "4 to 6 players per area (1 v 1, then 2 v 1), several areas side by side" },
+  "space": { "w": 22, "h": 16 },
+  "duration": { "fr": "2 x 5 min de 1 contre 1, puis 2 x 5 min de 2 contre 1, 1 min 30 de récupération", "en": "2 x 5 min of 1 v 1, then 2 x 5 min of 2 v 1, 1 min 30 rest" },
+  "minutes": 25,
+  "md": ["MD-4", "youth"],
+  "intensity": "high",
+  "intentions": ["fixer"],
+  "skills": ["dribble-njangi", "conduite", "decision", "passe"],
+  "pieces": ["le cœur", "la raison"],
+  "fr": {
+    "title": "Les portes du dribble njangi",
+    "subtitle": "1 contre 1 vers trois portes : fixer, attirer, libérer",
+    "objective": "Dribbler avec une intention : fixer le défenseur en conduisant droit sur lui, l'attirer d'un côté, puis se libérer vers la porte ouverte ou libérer un partenaire. Le dribble njangi est un cadeau : il sert l'équipe.",
+    "organisation": [
+      "Rectangle de 22 x 16 m ; trois portes de 2,5 m sur la ligne de droite.",
+      "L'attaquant part de la ligne de gauche avec le ballon, le défenseur du milieu du rectangle.",
+      "Deuxième partie : un partenaire part 7 m sous l'attaquant, 2 contre 1.",
+      "Avec un grand groupe, plusieurs rectangles côte à côte, trois ou quatre joueurs par file ; un ballon par rectangle, le défenseur le ramène.",
+      "Duels courts, 8 secondes au plus, et récupération longue : par forte chaleur, eau et ombre entre les passages."
+    ],
+    "rules": [
+      "1 contre 1 : porte franchie en conduite, 1 point ; 2 points si le défenseur a d'abord été fixé.",
+      "Fixé veut dire : il s'est arrêté, ou il a fait un pas vers le porteur.",
+      "2 contre 1 : le partenaire ne reçoit qu'après ce pas du défenseur vers le porteur.",
+      "Le défenseur qui récupère marque en conduisant jusqu'à la ligne de départ.",
+      "Rotation à chaque passage : attaquant, défenseur, file."
+    ],
+    "coaching": [
+      "Conduis droit sur le défenseur, à vitesse moyenne : il doit s'arrêter.",
+      "Ballon près du pied, tête levée entre deux touches.",
+      "Une feinte du corps pour l'attirer d'un côté, puis change de rythme de l'autre.",
+      "À deux : s'il vient sur toi, donne tout de suite ; s'il reste sur ton partenaire, garde et va à la porte.",
+      "Après la passe, continue ta course : tu restes une solution."
+    ],
+    "progressions": [
+      "Le défenseur part plus près de l'attaquant.",
+      "2 contre 2 : un second défenseur revient de derrière après 3 secondes.",
+      "Passer au petit jeu S04, où le dribble qui attire deux défenseurs vaut double."
+    ],
+    "regressions": [
+      "Défenseur qui marche, puis qui trottine.",
+      "Portes de 4 m, rectangle de 25 x 18 m.",
+      "Pour les U9, une seule règle au début : franchir une porte."
+    ],
+    "measure": "Sur 8 duels par joueur : portes franchies, et part des actions où le défenseur a été fixé avant (l'adjoint coche fixé ou pas fixé). En 2 contre 1 : passes données au bon moment.",
+    "story": "« Mon dribble, c'est un cadeau », écrit BriBri en gros dans le carnet : il dribble pour attirer deux adversaires, puis il donne au partenaire qui a l'espace."
+  },
+  "en": {
+    "title": "The Njangi Dribble Gates",
+    "subtitle": "1 v 1 towards three gates: pin, draw, release",
+    "objective": "Dribble with a purpose: pin the defender by running straight at him, draw him to one side, then break free through the open gate or release a teammate. The njangi dribble is a gift: it serves the team.",
+    "organisation": [
+      "22 x 16 m area; three 2.5 m gates on the right-hand line.",
+      "The attacker starts on the left line with the ball, the defender in the middle of the area.",
+      "Second part: a teammate starts 7 m below the attacker, 2 v 1.",
+      "With a big group, several areas side by side, three or four players per queue; one ball per area, the defender brings it back.",
+      "Short duels, 8 seconds at most, and long rests: in strong heat, water and shade between turns."
+    ],
+    "rules": [
+      "1 v 1: gate crossed with the ball, 1 point; 2 points if the defender was pinned first.",
+      "Pinned means: he stopped, or he took a step towards the ball carrier.",
+      "2 v 1: the teammate only receives after that step by the defender towards the carrier.",
+      "A defender who wins the ball scores by dribbling it to the starting line.",
+      "Rotate every turn: attacker, defender, queue."
+    ],
+    "coaching": [
+      "Dribble straight at the defender, at medium speed: he must stop.",
+      "Ball close to your foot, head up between touches.",
+      "A body feint to draw him one way, then change pace the other way.",
+      "In pairs: if he comes to you, give it at once; if he stays with your teammate, keep it and go for the gate.",
+      "After the pass, keep running: you are still an option."
+    ],
+    "progressions": [
+      "The defender starts closer to the attacker.",
+      "2 v 2: a second defender recovers from behind after 3 seconds.",
+      "Move on to small-sided game S04, where a dribble that draws two defenders counts double."
+    ],
+    "regressions": [
+      "The defender walks, then jogs.",
+      "4 m gates, 25 x 18 m area.",
+      "For U9s, one rule at first: get through a gate."
+    ],
+    "measure": "Out of 8 duels per player: gates crossed, and the share of actions where the defender was pinned first (the assistant ticks pinned or not pinned). In 2 v 1: passes released at the right moment.",
+    "story": "\"My dribble is a gift,\" BriBri writes in big letters in the notebook: he dribbles to draw two opponents, then gives the ball to the teammate with space."
+  },
+  "diagram": {
+    "view": "grid", "w": 22, "h": 16,
+    "players": [
+      { "id": "a", "team": "a", "x": 2.5, "y": 8, "label": "A" },
+      { "id": "d", "team": "b", "x": 12.5, "y": 7.6 }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "a", "to": [9, 8], "kind": "dribble", "n": 1 },
+      { "from": "d", "to": [11.2, 6.2], "kind": "press", "n": 2 },
+      { "from": [9.3, 9], "to": [20.6, 12.75], "kind": "dribble", "n": 3 }
+    ],
+    "cones": [[0, 0], [22, 0], [0, 16], [22, 16], [21, 2], [21, 4.5], [21, 6.75], [21, 9.25], [21, 11.5], [21, 14]],
+    "labels": [
+      { "x": 5.8, "y": 6.4, "text": "fixer" },
+      { "x": 11.2, "y": 4.4, "text": "attirer" },
+      { "x": 15.4, "y": 14.4, "text": "se libérer" }
+    ]
+  },
+  "diagram2": {
+    "view": "grid", "w": 22, "h": 16,
+    "players": [
+      { "id": "a", "team": "a", "x": 2.5, "y": 6, "label": "A" },
+      { "id": "p", "team": "a", "x": 2.5, "y": 13, "label": "P" },
+      { "id": "d", "team": "b", "x": 12.5, "y": 7.2 }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "a", "to": [9, 6.4], "kind": "dribble", "n": 1 },
+      { "from": "d", "to": [10.9, 6.9], "kind": "press", "n": 2 },
+      { "from": "p", "to": [15, 12.8], "kind": "run", "n": 3 },
+      { "from": [9.3, 7.4], "to": [15, 12.8], "kind": "pass", "n": 4 },
+      { "from": [15, 12.8], "to": [20.6, 12.75], "kind": "dribble", "n": 5 }
+    ],
+    "cones": [[0, 0], [22, 0], [0, 16], [22, 16], [21, 2], [21, 4.5], [21, 6.75], [21, 9.25], [21, 11.5], [21, 14]],
+    "labels": [
+      { "x": 5.8, "y": 4.4, "text": "fixer, attirer" },
+      { "x": 13.8, "y": 9.6, "text": "libérer" }
+    ]
+  }
+}

@@ -33,7 +33,14 @@ export const emptyDraft = (): Draft => ({ goals: [], players: [], skipped: {} })
 export type Field = 'lang' | 'name' | 'role' | 'teamName' | 'club' | 'ageGroup' | 'format' | 'position' | 'city' | 'country' | 'players' | 'goals'
 
 export const ROLES: Role[] = ['coach', 'player', 'analyst', 'parent', 'manager', 'federation']
-export const AGE_GROUPS = ['U7', 'U9', 'U11', 'U13', 'U15', 'U17', 'U19', 'U21', 'Seniors']
+/** Every level, from the first footballs (U7, U8) to the seniors and the professionals ('Pro' is a senior professional team). */
+export const AGE_GROUPS = ['U7', 'U8', 'U9', 'U10', 'U11', 'U12', 'U13', 'U14', 'U15', 'U16', 'U17', 'U18', 'U19', 'U21', 'Seniors', 'Pro']
+/** The levels offered as quick answers: U8 to the professionals (a parent's child stops at U19). */
+export const LEVEL_CHOICES = AGE_GROUPS.filter((a) => a !== 'U7')
+export const CHILD_LEVELS = AGE_GROUPS.filter((a) => a !== 'Seniors' && a !== 'Pro' && a !== 'U21')
+/** Adult levels: the team keeps the club's name, without a category suffix. */
+export const isAdultLevel = (a?: string) => a === 'Seniors' || a === 'Pro'
+const COACHING_ROLES: Role[] = ['coach', 'analyst', 'manager', 'federation']
 export const FORMATS: Format[] = [5, 7, 8, 9, 11]
 export const POSITIONS = ['GK', 'CB', 'FB', 'DM', 'CM', 'AM', 'W', 'ST']
 export const GOALS = ['identite', 'semaine', 'analyse', 'progresser', 'jeunes', 'lire']
@@ -139,7 +146,9 @@ export function absorb(prev: Draft, step: Step, text: string): Absorbed {
     }
     case 'age': case 'childAge': {
       const num = text.match(/\b(\d{1,2})\b/)
-      const a = parseAgeGroup(text) ?? (num && Number(num[1]) >= 4 ? parseAgeGroup(`${num[1]} ans`) : undefined)
+      // a coach who answers "13" means the U13; a player or a parent who answers "13" gives an age
+      const bare = num && /^\s*(?:les\s+|the\s+)?\d{1,2}\s*s?\s*$/i.test(text) && COACHING_ROLES.includes(d.role ?? 'coach') && step === 'age'
+      const a = parseAgeGroup(text) ?? (bare && Number(num![1]) >= 5 && Number(num![1]) <= 23 ? `U${Number(num![1])}` : num && Number(num[1]) >= 4 ? parseAgeGroup(`${num[1]} ans`) : undefined)
       if (a) { set('ageGroup', a, true); understood = true }
       break
     }
@@ -198,16 +207,22 @@ export function absorb(prev: Draft, step: Step, text: string): Absorbed {
     if (step !== 'name' && p.name) set('name', p.name, review)
     if (step !== 'age' && step !== 'childAge') set('ageGroup', p.ageGroup, review)
     if (step !== 'club' && step !== 'org' && step !== 'team' && p.club) set('club', p.club, review)
-    if (step !== 'format') set('format', p.format, review)
+    // the format a pro level implies is only for those who run a team; a player's own words still count ("on joue à 7")
+    if (step !== 'format' && (parseFormat(text) || COACHING_ROLES.includes(d.role ?? p.role ?? 'coach'))) set('format', p.format, review)
     if (step !== 'position' && (d.role ?? p.role) === 'player') set('position', p.position, review)
     if (step !== 'city') set('city', p.city, review)
     if (step !== 'country' && step !== 'city') set('country', p.country, review)
     if (review) { const g = parseGoals(text); if (g.length) set('goals', Array.from(new Set([...d.goals, ...g])), true) }
   }
-  // a coach who named the club and the category has told us the team
-  if (d.role === 'coach' && !d.teamName && d.club && learned.has('club')) set('teamName', `${d.club}${d.ageGroup ? ` ${d.ageGroup}` : ''}`)
+  // professional football is played eleven against eleven: no need to ask
+  if (d.ageGroup === 'Pro' && !d.format && step !== 'format' && COACHING_ROLES.includes(d.role ?? 'coach')) set('format', 11)
+  // a coach who named the club and the category has told us the team (a senior or pro team keeps the club's name)
+  if (d.role === 'coach' && !d.teamName && d.club && learned.has('club')) set('teamName', teamNameFor(d.club, d.ageGroup))
   return { draft: d, learned: [...learned], understood: understood || learned.size > 0 }
 }
+
+/** "Coton Sport U15", but "Étoile de la Côte" for its seniors or its professionals. */
+export const teamNameFor = (club: string, age?: string) => `${club}${age && !isAdultLevel(age) ? ` ${age}` : ''}`
 
 /** Whether a short reply in the composer looks like a list of players (to show the multi-line box). */
 export const looksLikeList = (text: string) => text.split(/\n|,/).filter((s) => tokens(norm(s)).length).length >= 3

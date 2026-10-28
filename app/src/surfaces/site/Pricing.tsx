@@ -92,6 +92,8 @@ export default function Pricing() {
 
 function PlanCard({ plan, cycle, profile, onActivate }: { plan: PlanDef; cycle: Cycle; profile: Profile | null; onActivate: (p: Plan) => void }) {
   const { t, lang } = useSiteT()
+  // a few plan features read better on this page with their audience (site:pricing.feature.*); the rest come from common
+  const featureLabel = (f: string) => { const k = `pricing.feature.${f}`; const v = t(k); return v === k ? t(`common:plans.features.${f}`) : v }
   const hl = !!plan.highlight
   const current = profile?.plan === plan.id
   const usd = plan.usdMonth
@@ -129,7 +131,7 @@ function PlanCard({ plan, cycle, profile, onActivate }: { plan: PlanDef; cycle: 
         {plan.features.map((f) => (
           <li key={f} className={cx('flex items-start gap-2 text-[14px] leading-snug', hl ? 'text-cream/90' : 'text-ink-soft')}>
             <Check size={16} strokeWidth={2.6} className={cx('mt-0.5 shrink-0', hl ? 'text-sun-300' : 'text-forest-500')} />
-            {t(`common:plans.features.${f}`)}
+            {featureLabel(f)}
           </li>
         ))}
       </ul>

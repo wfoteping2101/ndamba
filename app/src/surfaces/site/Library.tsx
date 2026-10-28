@@ -1,19 +1,17 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, BookOpen, ChevronDown, Download, Feather, Languages } from 'lucide-react'
-import { METHODE_TOC, TOME1_TOC } from '../../content'
+import { DRILLS, METHODE_TOC, TOME1_TOC } from '../../content'
 import type { TocEntry } from '../../content/books.gen'
 import { BOOKS, SERIES } from '../../lib/config'
 import { useDocumentTitle } from '../../lib/hooks'
 import { cx } from '../../lib/util'
 import BookCover from './components/BookCover'
 import SeriesShelf from './components/SeriesShelf'
+import { ROMAN, isMethodeChapter, methodeShape, pad2 } from './components/books'
 import { GoldLabel, PageFrame, useSiteT } from './components/brand'
 
-/** Planned size of each book (the online reader fills in as chapters are written). */
-const PLANNED = { tome1: 40, methode: 23 }
-const isMethodeChapter = (e: TocEntry) => e.part >= 1 && e.part <= 7
-const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
-const pad2 = (n: number) => String(n).padStart(2, '0')
+/** Planned size of the novel (the online reader fills in as chapters are written). */
+const PLANNED_TOME1 = 40
 
 export default function Library() {
   const { t, lang } = useSiteT()
@@ -31,8 +29,8 @@ export default function Library() {
           </p>
         )}
       </header>
-      <SeriesBlock />
       <MethodeBlock />
+      <SeriesBlock />
     </PageFrame>
   )
 }
@@ -44,7 +42,7 @@ function SeriesBlock() {
   const tome = SERIES.tomes[0]
   const facts = ['chapters', 'parts', 'lessons'] as const
   return (
-    <section id="lionceaux" className="mt-10 scroll-mt-20 sm:mt-12" aria-labelledby="lionceaux-title">
+    <section id="lionceaux" className="mt-20 scroll-mt-20" aria-labelledby="lionceaux-title">
       {/* tome 1, the available book */}
       <div className="relative isolate overflow-hidden rounded-[32px] bg-forest-800 text-cream">
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(700px_420px_at_0%_0%,rgba(197,118,47,0.30),transparent_60%),radial-gradient(600px_380px_at_100%_100%,rgba(227,169,43,0.16),transparent_65%)]" />
@@ -102,7 +100,7 @@ function SeriesBlock() {
 
       <Toc
         entries={TOME1_TOC}
-        planned={PLANNED.tome1}
+        planned={PLANNED_TOME1}
         base={BOOKS.tome1.href}
         partLabel={(p) => t('library.tome1.partLabel', { n: ROMAN[p] || p })}
         partName={(p) => `${t(`library.tome1.parts.${p}.country`)}, ${t(`library.tome1.parts.${p}.piece`)}`}
@@ -117,10 +115,11 @@ function SeriesBlock() {
 
 function MethodeBlock() {
   const { t, lang } = useSiteT()
-  const facts = ['chapters', 'parts', 'drills'] as const
+  const shape = methodeShape()
+  const facts: [string, number][] = [['chapters', shape.planned], ['parts', shape.parts], ['drills', DRILLS.length]]
   const b = BOOKS.methode
   return (
-    <section id="code-njangi" className="mt-20 scroll-mt-20" aria-labelledby="methode-title">
+    <section id="code-njangi" className="mt-10 scroll-mt-20 sm:mt-12" aria-labelledby="methode-title">
       <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-[minmax(0,240px)_minmax(0,1fr)] lg:grid-cols-[minmax(0,300px)_minmax(0,1fr)] lg:gap-14">
         <a href={b.href} className="mx-auto block w-[62%] max-w-[260px] rounded-[4px_10px_10px_4px] md:mx-0 md:w-full md:max-w-none" aria-label={t('shelf.readLabel', { title: b.title[lang] })}>
           <BookCover book="methode" sizes="(min-width: 1024px) 300px, (min-width: 768px) 240px, 62vw" />
@@ -132,7 +131,7 @@ function MethodeBlock() {
           <p className="mt-4 text-[13px] font-semibold text-terra-600">{t('library.methode.audience')}</p>
           <p className="mt-2 max-w-2xl text-[16px] leading-relaxed text-ink-muted">{t('library.methode.body')}</p>
           <ul className="mt-5 flex flex-wrap gap-2">
-            {facts.map((f) => <li key={f} className="chip px-3 py-1 text-[13px] font-semibold">{t(`library.methode.facts.${f}`)}</li>)}
+            {facts.filter(([, n]) => n > 0).map(([f, n]) => <li key={f} className="chip px-3 py-1 text-[13px] font-semibold">{t(`library.methode.facts.${f}`, { n })}</li>)}
           </ul>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a href={b.href} className="btn-primary btn-lg"><BookOpen size={18} />{t('library.read')}</a>
@@ -146,14 +145,10 @@ function MethodeBlock() {
 
       <Toc
         entries={METHODE_TOC}
-        planned={PLANNED.methode}
+        planned={shape.planned}
         base={b.href}
-        partLabel={(p) => (p >= 1 && p <= 7 ? t('library.methode.partLabel', { n: p }) : '')}
-        partName={(p, first) => {
-          const k = `library.methode.parts.${p}`
-          const v = t(k)
-          return v === k ? first.partTitle || '' : v
-        }}
+        partLabel={(p) => (METHODE_TOC.some((e) => e.part === p && isMethodeChapter(e)) ? t('library.methode.partLabel', { n: p }) : '')}
+        partName={(_p, first) => first.partTitle || first.title}
         numberOf={(e) => (isMethodeChapter(e) ? String(e.no) : '')}
         countable={isMethodeChapter}
       />

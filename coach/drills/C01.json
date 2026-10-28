@@ -1,0 +1,130 @@
+{
+  "id": "C01",
+  "family": "technique",
+  "order": 1,
+  "ages": "U10+",
+  "players": { "min": 6, "max": 8, "fr": "6 à 8 joueurs par Y, plusieurs Y en parallèle", "en": "6 to 8 players per Y, several Ys side by side" },
+  "space": { "w": 30, "h": 20 },
+  "duration": { "fr": "4 x 4 min, 1 min de récupération", "en": "4 x 4 min, 1 min rest" },
+  "minutes": 20,
+  "md": ["MD-2", "MD-1", "youth"],
+  "intensity": "medium",
+  "intentions": ["progresser", "fixer"],
+  "skills": ["passe", "controle", "appels", "scan", "communication"],
+  "pieces": ["le cœur", "la carte"],
+  "fr": {
+    "title": "Le Y du Njangi",
+    "subtitle": "Circuit de passes en Y : le troisième homme arrive lancé",
+    "objective": "Automatiser le troisième homme sans opposition : passe dans les pieds du pivot, remise en une touche, passe vers l'avant de celui qui arrive lancé. Chaque passe prépare la suivante.",
+    "organisation": [
+      "Un Y de plots sur 30 x 20 m : la base à gauche, le pivot à 10 m, deux branches 12 m plus loin.",
+      "À la base, A avec les ballons et C décalé de 5 m ; B au pivot, un joueur D au bout de chaque branche.",
+      "Grand groupe : trois ou quatre Y côte à côte, jamais plus de deux joueurs qui attendent.",
+      "Peu de ballons : un pour deux joueurs suffit, le joueur de branche le ramène en conduite.",
+      "Forte chaleur : files à l'ombre, eau entre les séries, séries de 3 min."
+    ],
+    "rules": [
+      "A joue dans les pieds de B ; B remet en une touche à C, qui joue vers une branche.",
+      "Passe directe de la base vers une branche : interdite.",
+      "Chacun suit sa passe ; D revient à la base en conduite.",
+      "La cible est le joueur de branche qui lève la main ; C doit l'avoir vu avant la remise."
+    ],
+    "coaching": [
+      "B, appel puis contre-appel : décolle-toi de ton plot avant de te montrer.",
+      "A, passe ferme et au sol : B doit pouvoir remettre sans contrôle.",
+      "B, remise en une touche, dans la course de C, pas dans ses pieds.",
+      "C, pars au moment où A passe : tu dois arriver, pas attendre.",
+      "C, regarde la branche pendant que la remise roule."
+    ],
+    "progressions": [
+      "Une touche pour tous.",
+      "Défenseur passif puis actif dans le dos de B : s'il ne suit pas, B se retourne et joue la branche.",
+      "Les joueurs de branche bougent ; ensuite, passer aux fiches C13 et P03."
+    ],
+    "regressions": [
+      "Deux touches pour B et pour C.",
+      "Distances réduites : pivot à 8 m de la base, branches à 8 m du pivot.",
+      "L'entraîneur annonce la branche à voix haute avant la première passe."
+    ],
+    "measure": "Circuits complets sans faute en 2 minutes. Part des remises de B jouées en une touche dans la course de C : objectif 8 sur 10.",
+    "story": "« Le ballon doit voyager », répète Tonton Fokou sur la terre rouge de Bonamoussadi ; dans le Y, il passe par trois joueurs avant d'arriver là où il doit aller."
+  },
+  "en": {
+    "title": "The Njangi Y",
+    "subtitle": "Y-shaped passing pattern: the third man arrives on the run",
+    "objective": "Make the third man automatic without opposition: a pass into the pivot's feet, a one-touch set, a forward pass by the player arriving on the run. Every pass prepares the next one.",
+    "organisation": [
+      "A Y of cones on 30 x 20 m: the base on the left, the pivot 10 m away, two arms 12 m further on.",
+      "At the base, A with the balls and C 5 m to the side; B at the pivot, a player D at the end of each arm.",
+      "Big group: three or four Ys side by side, never more than two players waiting.",
+      "Few balls: one for two players is enough, the arm player dribbles it back.",
+      "Strong heat: queues in the shade, water between sets, 3 min sets."
+    ],
+    "rules": [
+      "A plays into B's feet; B sets it first time for C, who plays to an arm.",
+      "No direct pass from the base to an arm.",
+      "Everyone follows their pass; D dribbles back to the base.",
+      "The target is the arm player who raises a hand; C must have seen him before the set."
+    ],
+    "coaching": [
+      "B, go away then come back: lose your cone before you show.",
+      "A, firm pass along the ground: B must be able to set it without a touch.",
+      "B, set it first time into C's stride, not onto his feet.",
+      "C, set off as A passes: you must arrive, not wait.",
+      "C, look at the arm while the set is still rolling."
+    ],
+    "progressions": [
+      "One touch for everyone.",
+      "Passive then active defender behind B: if he does not follow, B turns and plays the arm.",
+      "The arm players move; then move on to drills C13 and P03."
+    ],
+    "regressions": [
+      "Two touches for B and C.",
+      "Shorter distances: pivot 8 m from the base, arms 8 m from the pivot.",
+      "The coach calls the arm out loud before the first pass."
+    ],
+    "measure": "Clean full patterns in 2 minutes. Share of B's sets played first time into C's stride: target 8 out of 10.",
+    "story": "\"The ball must travel,\" Tonton Fokou repeats on the red earth of Bonamoussadi; in the Y it goes through three players before it gets where it needs to go."
+  },
+  "diagram": {
+    "view": "grid", "w": 30, "h": 20,
+    "players": [
+      { "id": "a", "team": "a", "x": 3, "y": 10, "label": "A" },
+      { "id": "c", "team": "a", "x": 3.5, "y": 4.5, "label": "C" },
+      { "id": "b", "team": "a", "x": 13.5, "y": 10, "label": "B" },
+      { "id": "d1", "team": "a", "x": 25.5, "y": 3.5, "label": "D" },
+      { "id": "d2", "team": "a", "x": 25.5, "y": 16.5, "label": "D" }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "a", "to": "b", "kind": "pass", "n": 1 },
+      { "from": "c", "to": [11, 6.8], "kind": "run", "n": 2 },
+      { "from": "b", "to": [11, 6.8], "kind": "pass", "n": 3 },
+      { "from": [11, 6.8], "to": "d1", "kind": "pass", "n": 4 }
+    ],
+    "labels": [
+      { "x": 6.4, "y": 2.4, "text": "troisième homme" }
+    ]
+  },
+  "diagram2": {
+    "view": "grid", "w": 30, "h": 20,
+    "players": [
+      { "id": "a", "team": "a", "x": 3, "y": 10, "label": "A" },
+      { "id": "c", "team": "a", "x": 3.5, "y": 4.5, "label": "C" },
+      { "id": "b", "team": "a", "x": 13.5, "y": 10, "label": "B" },
+      { "id": "r", "team": "b", "x": 17.5, "y": 7.2 },
+      { "id": "d1", "team": "a", "x": 25.5, "y": 3.5, "label": "D" },
+      { "id": "d2", "team": "a", "x": 25.5, "y": 16.5, "label": "D" }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "a", "to": "b", "kind": "pass", "n": 1 },
+      { "from": "b", "to": [17, 12.8], "kind": "dribble", "n": 2 },
+      { "from": [17, 12.8], "to": "d2", "kind": "pass", "n": 3 }
+    ],
+    "labels": [
+      { "x": 8, "y": 13.2, "text": "« Tourne »" },
+      { "x": 20.5, "y": 5.2, "text": "il ne suit pas" }
+    ]
+  }
+}

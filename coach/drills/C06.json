@@ -1,0 +1,115 @@
+{
+  "id": "C06",
+  "family": "technique",
+  "order": 6,
+  "ages": "U11+",
+  "players": { "min": 5, "max": 7, "fr": "5 à 7 joueurs par circuit et l'entraîneur, deux circuits possibles dos à dos", "en": "5 to 7 players per circuit plus the coach, two circuits can run back to back" },
+  "space": { "w": 20, "h": 20 },
+  "duration": { "fr": "4 x 3 min, 1 min de récupération", "en": "4 x 3 min, 1 min rest" },
+  "minutes": 15,
+  "md": ["MD-2", "MD-1", "youth"],
+  "intensity": "low",
+  "intentions": ["progresser", "respirer"],
+  "skills": ["scan", "controle", "communication", "decision"],
+  "pieces": ["les yeux"],
+  "fr": {
+    "title": "Le circuit des yeux",
+    "subtitle": "Regarder derrière soi avant de recevoir : la couleur ou le nombre décide de la porte",
+    "objective": "Faire du regard par-dessus l'épaule un réflexe, sans adversaire pour commencer. L'information est derrière le receveur : s'il n'a pas regardé avant la passe, il ne peut pas choisir la bonne porte.",
+    "organisation": [
+      "Carré de 20 x 20 m : le serveur S à gauche, le receveur R dans une zone de 3 x 3 m au centre.",
+      "Trois portes de 3 m sur le côté droit, chacune avec sa couleur (plots ou chasubles : rouge, jaune, bleu).",
+      "L'entraîneur E se tient derrière R avec trois chasubles de couleur ; il peut aussi montrer 1, 2 ou 3 doigts.",
+      "Derrière chaque porte, un joueur récupère le ballon et revient en conduite prendre la place du serveur.",
+      "Avec un grand groupe, deux circuits dos à dos partagent les mêmes portes ; par forte chaleur, files à l'ombre et eau entre les séries."
+    ],
+    "rules": [
+      "Au moment où S passe, E lève une couleur ; R l'annonce à voix haute avant son premier contact.",
+      "R joue à travers la porte de cette couleur en deux touches maximum : 1 point.",
+      "Couleur fausse, oubliée ou mauvaise porte : 0 point, le circuit continue sans arrêt.",
+      "S ne passe que lorsque R a regardé au moins une fois par-dessus son épaule.",
+      "Rotation : S devient receveur, R va derrière la porte jouée, le joueur de porte devient serveur."
+    ],
+    "coaching": [
+      "Regarde au moment où le ballon quitte le pied de S, pas après.",
+      "Un coup d'œil court, puis les yeux reviennent sur le ballon.",
+      "Deux regards valent mieux qu'un : avant la passe, puis pendant qu'elle roule.",
+      "Ouvre le corps vers la porte que tu as vue avant que le ballon arrive.",
+      "Annonce fort : ta voix informe aussi tes partenaires."
+    ],
+    "progressions": [
+      "Couleur et nombre ensemble : la couleur donne la porte, les doigts donnent le nombre de touches.",
+      "E montre la couleur plus tard, quand le ballon roule déjà.",
+      "Un défenseur passif se place devant une porte : R doit en choisir une autre.",
+      "Passer au rondo des yeux, fiche R05."
+    ],
+    "regressions": [
+      "E lève la couleur avant la passe.",
+      "Deux portes seulement.",
+      "Touches libres pour les U11."
+    ],
+    "measure": "Sur 10 réceptions par joueur : annonces justes et portes justes. Un adjoint compte aussi les regards avant la passe (au moins un, idéalement deux).",
+    "story": "Monsieur Lacombe veut des regards de mésange, deux ou trois par-dessus l'épaule ; ici, la couleur dans le dos dit tout de suite si Kaydoudou a vraiment regardé."
+  },
+  "en": {
+    "title": "The Eyes Circuit",
+    "subtitle": "Look behind you before receiving: the colour or the number picks the gate",
+    "objective": "Make the look over the shoulder a reflex, with no opponent to start with. The information is behind the receiver: if he has not looked before the pass, he cannot pick the right gate.",
+    "organisation": [
+      "20 x 20 m square: server S on the left, receiver R in a 3 x 3 m zone in the middle.",
+      "Three 3 m gates on the right side, each with its colour (cones or bibs: red, yellow, blue).",
+      "Coach E stands behind R holding three coloured bibs; he can also show 1, 2 or 3 fingers.",
+      "Behind each gate, a player collects the ball and dribbles back to take the server's place.",
+      "With a big group, two circuits back to back share the same gates; in strong heat, queues in the shade and water between sets."
+    ],
+    "rules": [
+      "As S passes, E raises a colour; R calls it out loud before his first touch.",
+      "R plays through the gate of that colour in two touches maximum: 1 point.",
+      "Wrong or forgotten colour, or wrong gate: no point, the circuit keeps going.",
+      "S only passes once R has looked over his shoulder at least once.",
+      "Rotation: S becomes receiver, R goes behind the gate he played through, the gate player becomes server."
+    ],
+    "coaching": [
+      "Look as the ball leaves S's foot, not after.",
+      "A short glance, then your eyes come back to the ball.",
+      "Two looks are better than one: before the pass, then while it rolls.",
+      "Open your body to the gate you saw before the ball arrives.",
+      "Call it loud: your voice also informs your teammates."
+    ],
+    "progressions": [
+      "Colour and number together: the colour gives the gate, the fingers give the number of touches.",
+      "E shows the colour later, once the ball is already rolling.",
+      "A passive defender stands in front of one gate: R must choose another.",
+      "Move on to the eyes rondo, drill R05."
+    ],
+    "regressions": [
+      "E raises the colour before the pass.",
+      "Two gates only.",
+      "Unlimited touches for U11s."
+    ],
+    "measure": "Out of 10 receptions per player: correct calls and correct gates. An assistant also counts the looks before the pass (at least one, ideally two).",
+    "story": "Monsieur Lacombe wants looks like a bird's, two or three over the shoulder; here, the colour behind him shows at once whether Kaydoudou really looked."
+  },
+  "diagram": {
+    "view": "grid", "w": 20, "h": 20,
+    "players": [
+      { "id": "s", "team": "a", "x": 2, "y": 10, "label": "S" },
+      { "id": "r", "team": "a", "x": 9, "y": 10, "label": "R" },
+      { "id": "e", "team": "n", "x": 13.5, "y": 14, "label": "E" }
+    ],
+    "ball": "s",
+    "arrows": [
+      { "from": "s", "to": "r", "kind": "pass", "n": 1 },
+      { "from": "r", "to": [12.6, 7.4], "kind": "dribble", "n": 2 },
+      { "from": [12.6, 7.4], "to": [19.4, 4], "kind": "pass", "n": 3 }
+    ],
+    "cones": [[0, 0], [20, 0], [0, 20], [20, 20], [19, 2.5], [19, 5.5], [19, 8.5], [19, 11.5], [19, 14.5], [19, 17.5]],
+    "labels": [
+      { "x": 16.6, "y": 2.1, "text": "rouge" },
+      { "x": 16.6, "y": 10.4, "text": "jaune" },
+      { "x": 16.6, "y": 16.4, "text": "bleu" },
+      { "x": 13.5, "y": 16.6, "text": "« Rouge »" }
+    ]
+  },
+  "diagram2": null
+}

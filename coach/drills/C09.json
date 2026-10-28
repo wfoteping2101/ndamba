@@ -1,0 +1,113 @@
+{
+  "id": "C09",
+  "family": "technique",
+  "order": 9,
+  "ages": "U9+",
+  "players": { "min": 4, "max": 4, "fr": "4 joueurs par boîte (1 contre 1 et 2 appuis), plusieurs boîtes en parallèle", "en": "4 players per box (1 v 1 and 2 supports), several boxes side by side" },
+  "space": { "w": 8, "h": 8 },
+  "duration": { "fr": "3 x 4 min (rotation toutes les 30 s), 1 min 30 de récupération", "en": "3 x 4 min (rotate every 30 s), 1 min 30 rest" },
+  "minutes": 15,
+  "md": ["MD-4", "youth"],
+  "intensity": "high",
+  "intentions": ["fixer", "respirer"],
+  "skills": ["protection", "controle", "conduite", "decision"],
+  "pieces": ["le souffle"],
+  "fr": {
+    "title": "La boîte de protection",
+    "subtitle": "1 contre 1 dans une petite boîte : protéger, puis jouer",
+    "objective": "Protéger le ballon avec le corps face à un adversaire qui presse, garder l'équilibre et trouver la sortie : se retourner ou jouer vers un appui. Protéger n'est pas garder pour soi : c'est gagner le temps d'une passe.",
+    "organisation": [
+      "Boîte de 8 x 8 m (6 x 6 m pour les U9), un attaquant et un défenseur dedans.",
+      "Un appui de chaque côté, à l'extérieur de la boîte, qui se déplace le long de sa ligne.",
+      "Groupes de 4 qui tournent toutes les 30 secondes : attaquant, défenseur, appui, appui ; le repos vient de la rotation.",
+      "Avec beaucoup de joueurs et peu de ballons : une boîte et un ballon pour 4, les boîtes alignées à 3 m l'une de l'autre.",
+      "Paires de même gabarit ; par forte chaleur, séries plus courtes et eau à chaque tour complet."
+    ],
+    "rules": [
+      "L'appui de gauche sert l'attaquant ; l'attaquant protège puis joue vers l'appui de droite : 1 point.",
+      "S'il se retourne et sort de la boîte en conduite par la ligne de droite : 2 points.",
+      "Le défenseur qui récupère joue vers un appui : les rôles s'inversent.",
+      "Interdit : pousser avec les mains, tirer le maillot, charger dans le dos.",
+      "Le bras sert à sentir l'adversaire et à garder l'équilibre, jamais à frapper."
+    ],
+    "coaching": [
+      "Genoux pliés, appuis larges, le corps entre l'adversaire et le ballon.",
+      "Ballon sur le pied le plus loin de l'adversaire, la semelle prête à le tirer.",
+      "Bras ouvert pour sentir où il est, sans pousser.",
+      "Sens son poids : quand il s'appuie d'un côté, tourne de l'autre.",
+      "Coincé ? Une touche vers l'appui, il te la rend, et tu es parti."
+    ],
+    "progressions": [
+      "L'appui de droite bouge : l'attaquant doit le trouver d'un regard par-dessus l'épaule.",
+      "Boîte de 6 x 6 m.",
+      "Les appuis jouent en une touche : remise immédiate et nouvelle protection."
+    ],
+    "regressions": [
+      "Défenseur passif qui pose seulement une main dans le dos.",
+      "Boîte de 10 x 10 m.",
+      "L'attaquant marque en gardant le ballon 5 secondes, sans obligation de sortir."
+    ],
+    "measure": "Ballons gardés puis joués vers un appui par séquence de 30 secondes, et pertes de balle. Compter aussi les fautes de mains : objectif zéro.",
+    "story": "À Londres, le ballon est brûlant ; Kaydoudou écrit que son corps est un mur, genoux pliés, bras ouvert, et BriBri ajoute qu'il est un excellent mur."
+  },
+  "en": {
+    "title": "The Shielding Box",
+    "subtitle": "1 v 1 in a small box: shield, then play",
+    "objective": "Shield the ball with the body against an opponent who presses, keep your balance and find the way out: turn, or play to a support. Shielding is not keeping it for yourself: it buys the time for a pass.",
+    "organisation": [
+      "8 x 8 m box (6 x 6 m for U9s), one attacker and one defender inside.",
+      "One support on each side, outside the box, moving along his line.",
+      "Groups of 4 rotating every 30 seconds: attacker, defender, support, support; the rest comes from the rotation.",
+      "With many players and few balls: one box and one ball for every 4, boxes lined up 3 m apart.",
+      "Pair players of similar size; in strong heat, shorter sets and water after every full rotation."
+    ],
+    "rules": [
+      "The left support feeds the attacker; the attacker shields then plays to the right support: 1 point.",
+      "If he turns and dribbles out of the box across the right line: 2 points.",
+      "A defender who wins the ball plays to a support: roles swap.",
+      "Not allowed: pushing with the hands, pulling the shirt, charging from behind.",
+      "The arm is for feeling the opponent and keeping balance, never for striking."
+    ],
+    "coaching": [
+      "Knees bent, wide stance, body between the opponent and the ball.",
+      "Ball on the foot furthest from the opponent, sole ready to roll it.",
+      "Arm out to feel where he is, without pushing.",
+      "Feel his weight: when he leans one way, turn the other.",
+      "Stuck? One touch to the support, he gives it back, and you are away."
+    ],
+    "progressions": [
+      "The right support moves: the attacker must find him with a look over the shoulder.",
+      "6 x 6 m box.",
+      "Supports play one touch: an instant return and shield again."
+    ],
+    "regressions": [
+      "Passive defender who only puts a hand on the back.",
+      "10 x 10 m box.",
+      "The attacker scores by keeping the ball for 5 seconds, with no need to get out."
+    ],
+    "measure": "Balls kept then played to a support per 30-second turn, and balls lost. Also count hand fouls: target zero.",
+    "story": "In London the ball is red hot; Kaydoudou writes that his body is a wall, knees bent, arm out, and BriBri adds that he is an excellent wall."
+  },
+  "diagram": {
+    "view": "grid", "w": 8, "h": 8,
+    "players": [
+      { "id": "n1", "team": "n", "x": 0, "y": 4.8 },
+      { "id": "n2", "team": "n", "x": 8, "y": 3.2 },
+      { "id": "a", "team": "a", "x": 3.4, "y": 4.6, "label": "A" },
+      { "id": "d", "team": "b", "x": 4.5, "y": 3.6 }
+    ],
+    "ball": "n1",
+    "arrows": [
+      { "from": "n1", "to": "a", "kind": "pass", "n": 1 },
+      { "from": "d", "to": [3.95, 4.15], "kind": "press", "n": 2 },
+      { "from": "a", "to": [5.4, 6.1], "kind": "dribble", "n": 3 },
+      { "from": [5.6, 6], "to": "n2", "kind": "pass", "n": 4 }
+    ],
+    "labels": [
+      { "x": 4, "y": 1.5, "text": "le corps est un mur" },
+      { "x": 1.1, "y": 6.5, "text": "appui" },
+      { "x": 7, "y": 1.8, "text": "appui" }
+    ]
+  },
+  "diagram2": null
+}

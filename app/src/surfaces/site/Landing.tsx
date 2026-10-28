@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState, type ComponentType, type ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import {
-  Activity, ArrowRight, BookOpen, CalendarDays, ClipboardList, Download, Dumbbell, FileChartColumn, Flag, GraduationCap, Network,
-  NotebookPen, Play, Radio, ShieldCheck, Shirt, Smartphone, Sparkles, Tags, Target, Users, Video, type LucideIcon,
+  ArrowRight, BookOpen, CalendarDays, ClipboardList, Download, Dumbbell, Eye, FileChartColumn, Flag, GraduationCap, LineChart, Network,
+  NotebookPen, Radio, Route, ShieldCheck, Shirt, Sparkles, Tags, Target, Users, Video, type LucideIcon,
 } from 'lucide-react'
 import { BOOKS, BRAND, PLANS, SERIES } from '../../lib/config'
 import { useDocumentTitle } from '../../lib/hooks'
@@ -16,8 +16,8 @@ import MolaChat from './components/MolaChat'
 import NjangiCircle from './components/NjangiCircle'
 import PagneBand from './components/PagneBand'
 import SeriesShelf from './components/SeriesShelf'
-import { LessonVisual, PathVisual, TagVisual, WeekVisual } from './components/FeatureVisuals'
-import { GoldLabel, useDemo, useSiteT } from './components/brand'
+import { JourneyVisual, PathVisual, TagVisual, WeekVisual } from './components/FeatureVisuals'
+import { DemoChoice, GoldLabel, useDemo, useSiteT } from './components/brand'
 
 type Demo = ReturnType<typeof useDemo>
 
@@ -30,11 +30,12 @@ export default function Landing() {
     <div>
       <Hero demo={demo} />
       <PagneBand height={10} />
-      <NjangiSection />
-      <Doors />
+      <Pillars />
       <Features demo={demo} />
       <LiveSection demo={demo} />
+      <NjangiSection />
       <MolaSection demo={demo} />
+      <Companions />
       <Roadmap />
       <PricingTeaser />
       <FinalCta />
@@ -72,38 +73,131 @@ function SectionHead({ eyebrow, title, lead, dark = false, className }: { eyebro
 
 /* ---------------- hero ---------------- */
 
+const AUDIENCES = ['players', 'coaches', 'analysts', 'clubs'] as const
+
 function Hero({ demo }: { demo: Demo }) {
   const { t, lang } = useSiteT()
   return (
     <section className="relative isolate overflow-hidden bg-forest-800 text-cream">
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(900px_520px_at_88%_-8%,rgba(227,169,43,0.20),transparent_62%),radial-gradient(760px_480px_at_-8%_108%,rgba(197,118,47,0.26),transparent_60%)]" />
-      <div className="container-page grid grid-cols-1 items-center gap-10 py-12 sm:py-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:gap-14 lg:py-24">
-        <div>
+      <div className="container-page grid grid-cols-1 items-center gap-10 py-12 sm:py-16 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,1fr)] lg:gap-14 lg:py-20">
+        <div className="min-w-0">
           <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-bold uppercase tracking-[0.2em]">
             <span className="text-sun-300">{BRAND.name}</span>
             <span aria-hidden="true" className="text-cream/30">·</span>
             <span className="text-cream/75">{BRAND.tagline[lang]}</span>
           </p>
-          <h1 className="mt-4 text-balance text-[35px] font-semibold leading-[1.05] tracking-tight sm:text-[48px] lg:text-[56px]">{BRAND.mantra[lang]}</h1>
-          <p className="mt-5 font-display text-[19px] italic leading-snug text-sun-100 sm:text-[22px]">{t('quote', { text: BRAND.motto[lang] })}</p>
+          <h1 className="mt-4 text-balance text-[34px] font-semibold leading-[1.06] tracking-tight sm:text-[48px] lg:text-[54px]">{t('landing.hero.title')}</h1>
+          <p className="mt-5 font-display text-[19px] italic leading-snug text-sun-100 sm:text-[21px]">{t('quote', { text: BRAND.motto[lang] })}</p>
           <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-cream/75 sm:text-[17px]">{t('landing.hero.lead')}</p>
+          <ul className="mt-5 flex flex-wrap gap-2" aria-label={t('landing.hero.forWho')}>
+            {AUDIENCES.map((a) => (
+              <li key={a}><a href="#app" className="inline-flex min-h-[36px] items-center rounded-full border border-cream/20 bg-white/[0.06] px-3.5 text-[13.5px] font-semibold text-cream/90 hover:bg-white/10">{t(`landing.features.tabs.${a}`)}</a></li>
+            ))}
+          </ul>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <Link to="/bienvenue" className="btn-sun btn-lg"><Sparkles size={18} />{t('landing.hero.ctaStart')}</Link>
-            <button type="button" onClick={() => demo.launch('coach')} disabled={demo.busy} className="btn btn-lg border border-cream/30 text-cream hover:bg-white/10">
-              <Play size={18} />{t('landing.hero.ctaDemo')}
-            </button>
           </div>
-          <p className="mt-4 text-[13px] leading-relaxed text-cream/55">
+          <p className="mt-6 text-[12px] font-bold uppercase tracking-[0.16em] text-cream/55">{t('landing.hero.demoTitle')}</p>
+          <DemoChoice demo={demo} dark className="mt-3" />
+          <p className="mt-4 max-w-xl text-[13px] leading-relaxed text-cream/55">
             {t('landing.hero.demoNote')}{' '}
-            <button type="button" onClick={() => demo.launch('player', '/app/joueur')} disabled={demo.busy}
+            <button type="button" onClick={() => demo.launch('player', '/app/joueur', 'pro')} disabled={demo.busy}
               className="inline-flex min-h-[32px] items-center gap-1 font-semibold text-cream/85 underline decoration-cream/30 underline-offset-4 hover:text-cream">
               {t('landing.hero.ctaPlayer')}<ArrowRight size={14} />
             </button>
           </p>
         </div>
-        <div className="rounded-[28px] bg-forest-900/60 p-3 ring-1 ring-white/10 sm:p-5">
-          <HeroPitch />
+        <div className="min-w-0">
+          <div className="rounded-[28px] bg-forest-900/60 p-3 ring-1 ring-white/10 sm:p-5">
+            <HeroPitch />
+          </div>
+          <div className="mt-5 flex items-start gap-3 rounded-2xl border border-sun-300/25 bg-white/[0.04] px-4 py-3.5">
+            <Flag size={18} className="mt-0.5 shrink-0 text-sun-300" aria-hidden="true" />
+            <p className="text-[14.5px] leading-snug text-cream/85"><span className="font-semibold text-sun-300">{t('landing.hero.mantraLabel')}</span> {BRAND.mantra[lang]}</p>
+          </div>
         </div>
+      </div>
+    </section>
+  )
+}
+
+/* ---------------- train, observe, follow ---------------- */
+
+function Pillars() {
+  const { t } = useSiteT()
+  const items: [string, LucideIcon][] = [['train', Dumbbell], ['observe', Eye], ['follow', Route]]
+  return (
+    <section className="container-page py-14 sm:py-20" aria-labelledby="pillars-title">
+      <h2 id="pillars-title" className="sr-only">{t('landing.pillars.title')}</h2>
+      <ol className="grid gap-4 sm:grid-cols-3 sm:gap-5">
+        {items.map(([k, Icon], i) => (
+          <li key={k} className="relative overflow-hidden rounded-[24px] border border-line bg-paper p-5 shadow-card sm:p-6">
+            <span aria-hidden="true" className="absolute -right-2 -top-4 font-display text-[88px] font-semibold leading-none text-sand">{i + 1}</span>
+            <span className="relative grid h-11 w-11 place-items-center rounded-2xl bg-forest-600 text-cream"><Icon size={21} /></span>
+            <h3 className="relative mt-4 font-display text-[24px] font-semibold leading-tight text-ink">{t(`landing.pillars.${k}.title`)}</h3>
+            <p className="relative mt-2 text-[15px] leading-relaxed text-ink-muted">{t(`landing.pillars.${k}.body`)}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
+
+/* ---------------- features by audience ---------------- */
+
+type Aud = typeof AUDIENCES[number]
+const AUD: Record<Aud, { items: [string, LucideIcon][]; Visual: ComponentType; role: Role; to: string }> = {
+  players: { items: [['journey', Route], ['skills', LineChart], ['challenges', Target], ['lessons', NotebookPen]], Visual: JourneyVisual, role: 'player', to: '/app/joueur' },
+  coaches: { items: [['drills', Dumbbell], ['builder', ClipboardList], ['week', CalendarDays], ['match', Shirt]], Visual: WeekVisual, role: 'coach', to: '/app/semaine' },
+  analysts: { items: [['live', Radio], ['report', FileChartColumn], ['video', Video], ['codes', Tags]], Visual: TagVisual, role: 'coach', to: '/app/analyse' },
+  clubs: { items: [['model', Network], ['teams', Users], ['education', GraduationCap], ['plan2030', Flag]], Visual: PathVisual, role: 'coach', to: '/app' },
+}
+
+function Features({ demo }: { demo: Demo }) {
+  const { t } = useSiteT()
+  const [aud, setAud] = useState<Aud>('coaches')
+  const cur = AUD[aud]
+  const Visual = cur.Visual
+  return (
+    <section id="app" className="scroll-mt-20 border-y border-line bg-sand/40 py-16 sm:py-24">
+      <div className="container-page">
+        <SectionHead eyebrow={t('landing.features.eyebrow')} title={t('landing.features.title')} lead={t('landing.features.lead')} />
+        <Tabs className="mt-8 w-full sm:w-fit" value={aud} onChange={setAud}
+          tabs={AUDIENCES.map((id) => ({ id, label: t(`landing.features.tabs.${id}`) }))} />
+        <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12" role="tabpanel" aria-label={t(`landing.features.tabs.${aud}`)}>
+          <div className="min-w-0">
+            <p className="text-[15px] font-semibold text-terra-600">{t(`landing.features.who.${aud}`)}</p>
+            <ul className="mt-4 grid gap-4 sm:grid-cols-2">
+              {cur.items.map(([k, Icon]) => (
+                <li key={k} className="rounded-2xl border border-line bg-paper p-5">
+                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-forest-50 text-forest-600"><Icon size={20} /></span>
+                  <h3 className="mt-3 font-display text-[18px] font-semibold leading-snug text-ink">{t(`landing.features.items.${k}.title`)}</h3>
+                  <p className="mt-1 text-[14.5px] leading-relaxed text-ink-muted">{t(`landing.features.items.${k}.body`)}</p>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 text-[13px] font-semibold text-ink-muted">{t('landing.features.open')}</p>
+            <DemoChoice demo={demo} role={cur.role} to={cur.to} className="mt-2.5" />
+          </div>
+          <div className="min-w-0"><Visual /></div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ---------------- the Indice Njangi ---------------- */
+
+function LiveSection({ demo }: { demo: Demo }) {
+  const { t } = useSiteT()
+  return (
+    <section className="bg-night-800 py-16 text-cream sm:py-24">
+      <div className="container-page">
+        <SectionHead dark eyebrow={t('landing.live.eyebrow')} title={t('landing.live.title')} lead={t('landing.live.lead')} />
+        <div className="mt-10"><IndiceTeaser /></div>
+        <p className="mt-10 flex items-center gap-2 text-[15px] font-semibold text-cream"><FileChartColumn size={18} className="text-sun-300" aria-hidden="true" />{t('landing.live.cta')}</p>
+        <DemoChoice demo={demo} to="/app/analyse/rapport/ma_past" dark className="mt-3" />
       </div>
     </section>
   )
@@ -140,147 +234,13 @@ function NjangiSection() {
   )
 }
 
-/* ---------------- the four doors (books, app, Mola) ---------------- */
-
-function Doors() {
-  const { t, lang } = useSiteT()
-  return (
-    <section id="livres" className="scroll-mt-20 border-y border-line bg-sand/50 py-16 sm:py-24">
-      <div className="container-page">
-        <SectionHead eyebrow={t('landing.doors.eyebrow')} title={t('landing.doors.title')} lead={t('landing.doors.lead')} />
-
-        {/* the children's saga */}
-        <div className="mt-10 rounded-[28px] border border-line bg-paper p-5 shadow-card sm:p-8">
-          <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-            <div className="max-w-2xl">
-              <GoldLabel>{t('landing.doors.series.label')}</GoldLabel>
-              <h3 className="mt-1.5 font-display text-[36px] font-semibold uppercase leading-none tracking-[0.1em] text-ink sm:text-[44px]">{SERIES.name}</h3>
-              <p className="mt-3 text-[15px] font-semibold text-ink-soft">
-                {t('landing.doors.series.heroes')}<span className="font-normal text-ink-muted"> · {t('landing.doors.series.meta')}</span>
-              </p>
-              <p className="mt-3 text-[15px] leading-relaxed text-ink-muted">{t('landing.doors.series.body')}</p>
-            </div>
-            <Link to="/livres" className="btn-outline min-h-[44px] shrink-0 self-start sm:self-auto">{t('landing.doors.series.all')}<ArrowRight size={16} /></Link>
-          </div>
-          <SeriesShelf className="mt-8" />
-        </div>
-
-        <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {/* the coach's book */}
-          <article className="flex flex-col gap-6 rounded-[28px] border border-line bg-paper p-5 shadow-card sm:flex-row sm:p-8 lg:items-center">
-            <a href={BOOKS.methode.href} className="block w-[136px] shrink-0 rounded-[4px_10px_10px_4px] sm:w-[156px]" aria-label={t('shelf.readLabel', { title: BOOKS.methode.title[lang] })}>
-              <BookCover book="methode" sizes="156px" />
-            </a>
-            <div className="min-w-0">
-              <GoldLabel>{t('landing.doors.methode.label')}</GoldLabel>
-              <h3 className="mt-1.5 font-display text-[28px] font-semibold leading-tight text-ink">{BOOKS.methode.title[lang]}</h3>
-              <p className="mt-1 font-display text-[16px] italic leading-snug text-ink-soft">{BOOKS.methode.subtitle[lang]}</p>
-              <p className="mt-3 text-[13px] font-semibold text-terra-600">{t('landing.doors.methode.audience')}</p>
-              <p className="mt-2 text-[15px] leading-relaxed text-ink-muted">{t('landing.doors.methode.body')}</p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                <a href={BOOKS.methode.href} className="btn-primary min-h-[44px]"><BookOpen size={16} />{t('landing.doors.methode.cta')}</a>
-                <a href={BOOKS.methode.pdf} download className="btn-outline min-h-[44px]" aria-label={t('shelf.pdfLabel', { title: BOOKS.methode.title[lang] })}>
-                  <Download size={16} />{t('shelf.pdf')}
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <div className="grid gap-6">
-            <DoorCard icon={Smartphone} name={t('landing.doors.app.name')} audience={t('landing.doors.app.audience')} body={t('landing.doors.app.body')} cta={t('landing.doors.app.cta')} href="#app" />
-            <DoorCard icon={Sparkles} name={t('landing.doors.mola.name')} audience={t('landing.doors.mola.audience')} body={t('landing.doors.mola.body')} cta={t('landing.doors.mola.cta')} href="#mola" dark />
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function DoorCard({ icon: Icon, name, audience, body, cta, href, dark = false }: { icon: LucideIcon; name: string; audience: string; body: string; cta: string; href: string; dark?: boolean }) {
-  return (
-    <article className={cx('flex flex-col rounded-[28px] p-5 sm:p-7', dark ? 'bg-forest-700 text-cream' : 'border border-line bg-paper shadow-card')}>
-      <div className="flex items-center gap-3">
-        <span className={cx('grid h-11 w-11 shrink-0 place-items-center rounded-2xl', dark ? 'bg-white/10 text-sun-300' : 'bg-forest-50 text-forest-600')}><Icon size={21} /></span>
-        <div className="min-w-0">
-          <h3 className={cx('font-display text-[22px] font-semibold leading-tight', dark ? 'text-cream' : 'text-ink')}>{name}</h3>
-          <p className={cx('text-[13px] font-semibold', dark ? 'text-sun-300' : 'text-terra-600')}>{audience}</p>
-        </div>
-      </div>
-      <p className={cx('mt-4 text-[15px] leading-relaxed', dark ? 'text-cream/75' : 'text-ink-muted')}>{body}</p>
-      <a href={href} className={cx('mt-4 inline-flex min-h-[44px] items-center gap-1.5 self-start text-[15px] font-semibold underline-offset-4 hover:underline', dark ? 'text-sun-300' : 'text-forest-600')}>
-        {cta}<ArrowRight size={16} />
-      </a>
-    </article>
-  )
-}
-
-/* ---------------- features by audience ---------------- */
-
-type Aud = 'players' | 'coaches' | 'analysts' | 'clubs'
-const AUD: Record<Aud, { items: [string, LucideIcon][]; Visual: ComponentType; role: Role; to: string }> = {
-  players: { items: [['lessons', BookOpen], ['challenges', Target], ['notebook', NotebookPen], ['skills', Activity]], Visual: LessonVisual, role: 'player', to: '/app/joueur' },
-  coaches: { items: [['drills', Dumbbell], ['builder', ClipboardList], ['week', CalendarDays], ['match', Shirt]], Visual: WeekVisual, role: 'coach', to: '/app/semaine' },
-  analysts: { items: [['live', Radio], ['report', FileChartColumn], ['video', Video], ['codes', Tags]], Visual: TagVisual, role: 'coach', to: '/app/analyse' },
-  clubs: { items: [['model', Network], ['teams', Users], ['education', GraduationCap], ['plan2030', Flag]], Visual: PathVisual, role: 'coach', to: '/app' },
-}
-
-function Features({ demo }: { demo: Demo }) {
-  const { t } = useSiteT()
-  const [aud, setAud] = useState<Aud>('coaches')
-  const cur = AUD[aud]
-  const Visual = cur.Visual
-  return (
-    <section id="app" className="scroll-mt-20 py-16 sm:py-24">
-      <div className="container-page">
-        <SectionHead eyebrow={t('landing.features.eyebrow')} title={t('landing.features.title')} lead={t('landing.features.lead')} />
-        <Tabs className="mt-8 w-full sm:w-fit" value={aud} onChange={setAud}
-          tabs={(Object.keys(AUD) as Aud[]).map((id) => ({ id, label: t(`landing.features.tabs.${id}`) }))} />
-        <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12" role="tabpanel" aria-label={t(`landing.features.tabs.${aud}`)}>
-          <div>
-            <ul className="grid gap-4 sm:grid-cols-2">
-              {cur.items.map(([k, Icon]) => (
-                <li key={k} className="rounded-2xl border border-line bg-paper p-5">
-                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-forest-50 text-forest-600"><Icon size={20} /></span>
-                  <h3 className="mt-3 font-display text-[18px] font-semibold leading-snug text-ink">{t(`landing.features.items.${k}.title`)}</h3>
-                  <p className="mt-1 text-[14.5px] leading-relaxed text-ink-muted">{t(`landing.features.items.${k}.body`)}</p>
-                </li>
-              ))}
-            </ul>
-            <button type="button" onClick={() => demo.launch(cur.role, cur.to)} disabled={demo.busy} className="btn-primary mt-6 min-h-[44px]">
-              {t('landing.features.open')}<ArrowRight size={16} />
-            </button>
-          </div>
-          <Visual />
-        </div>
-      </div>
-    </section>
-  )
-}
-
-/* ---------------- the Indice Njangi ---------------- */
-
-function LiveSection({ demo }: { demo: Demo }) {
-  const { t } = useSiteT()
-  return (
-    <section className="bg-night-800 py-16 text-cream sm:py-24">
-      <div className="container-page">
-        <SectionHead dark eyebrow={t('landing.live.eyebrow')} title={t('landing.live.title')} lead={t('landing.live.lead')} />
-        <div className="mt-10"><IndiceTeaser /></div>
-        <button type="button" onClick={() => demo.launch('coach', '/app/analyse/rapport/ma_past')} disabled={demo.busy} className="btn-sun btn-lg mt-10">
-          <FileChartColumn size={18} />{t('landing.live.cta')}
-        </button>
-      </div>
-    </section>
-  )
-}
-
 /* ---------------- Mola ---------------- */
 
 function MolaSection({ demo }: { demo: Demo }) {
   const { t } = useSiteT()
   const asks = ['a', 'b', 'c', 'd', 'e'] as const
   return (
-    <section id="mola" className="scroll-mt-20 py-16 sm:py-24">
+    <section id="mola" className="scroll-mt-20 border-t border-line py-16 sm:py-24">
       <div className="container-page grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div>
           <SectionHead eyebrow={t('landing.mola.eyebrow')} title={t('landing.mola.title')} />
@@ -296,7 +256,56 @@ function MolaSection({ demo }: { demo: Demo }) {
           </ul>
           <Link to="/bienvenue" className="btn-primary btn-lg mt-8"><Sparkles size={18} />{t('landing.mola.cta')}</Link>
         </div>
-        <MolaChat onOpen={() => demo.launch('coach', '/app/semaine')} />
+        <MolaChat onOpen={() => demo.launch('coach', '/app/semaine', 'pro')} />
+      </div>
+    </section>
+  )
+}
+
+/* ---------------- the two companion books ---------------- */
+
+function Companions() {
+  const { t, lang } = useSiteT()
+  return (
+    <section id="livres" className="scroll-mt-20 border-y border-line bg-sand/50 py-16 sm:py-24">
+      <div className="container-page">
+        <SectionHead eyebrow={t('landing.companions.eyebrow')} title={t('landing.companions.title')} lead={t('landing.companions.lead')} />
+
+        {/* the coaching book */}
+        <article className="mt-10 flex flex-col gap-6 rounded-[28px] border border-line bg-paper p-5 shadow-card sm:flex-row sm:items-center sm:p-8 lg:gap-10">
+          <a href={BOOKS.methode.href} className="block w-[136px] shrink-0 rounded-[4px_10px_10px_4px] sm:w-[176px]" aria-label={t('shelf.readLabel', { title: BOOKS.methode.title[lang] })}>
+            <BookCover book="methode" sizes="176px" />
+          </a>
+          <div className="min-w-0">
+            <GoldLabel>{t('landing.companions.methode.label')}</GoldLabel>
+            <h3 className="mt-1.5 font-display text-[28px] font-semibold leading-tight text-ink sm:text-[32px]">{BOOKS.methode.title[lang]}</h3>
+            <p className="mt-1 font-display text-[16px] italic leading-snug text-ink-soft">{BOOKS.methode.subtitle[lang]}</p>
+            <p className="mt-3 text-[13.5px] font-semibold text-terra-600">{t('landing.companions.methode.audience')}</p>
+            <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-ink-muted">{t('landing.companions.methode.body')}</p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              <a href={BOOKS.methode.href} className="btn-primary min-h-[44px]"><BookOpen size={16} />{t('landing.companions.read')}</a>
+              <a href={BOOKS.methode.pdf} download className="btn-outline min-h-[44px]" aria-label={t('shelf.pdfLabel', { title: BOOKS.methode.title[lang] })}>
+                <Download size={16} />{t('shelf.pdf')}
+              </a>
+            </div>
+          </div>
+        </article>
+
+        {/* the children's saga */}
+        <div className="mt-6 rounded-[28px] border border-line bg-paper p-5 shadow-card sm:p-8">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <div className="max-w-2xl">
+              <GoldLabel>{t('landing.companions.series.label')}</GoldLabel>
+              <h3 className="mt-1.5 font-display text-[36px] font-semibold uppercase leading-none tracking-[0.1em] text-ink sm:text-[44px]">{SERIES.name}</h3>
+              <p className="mt-3 text-[15px] font-semibold text-ink-soft">
+                {t('landing.companions.series.heroes')}<span className="font-normal text-ink-muted"> · {t('landing.companions.series.meta')}</span>
+              </p>
+              <p className="mt-3 text-[15px] leading-relaxed text-ink-muted">{t('landing.companions.series.body')}</p>
+            </div>
+            <Link to="/livres" className="btn-outline min-h-[44px] shrink-0 self-start sm:self-auto">{t('landing.companions.all')}<ArrowRight size={16} /></Link>
+          </div>
+          <SeriesShelf className="mt-8" />
+        </div>
       </div>
     </section>
   )

@@ -1,0 +1,117 @@
+{
+  "id": "C08",
+  "family": "technique",
+  "order": 8,
+  "ages": "U10+",
+  "players": { "min": 6, "max": 9, "fr": "6 à 9 joueurs par rectangle (2 contre 1 en vagues)", "en": "6 to 9 players per area (2 v 1 in waves)" },
+  "space": { "w": 30, "h": 20 },
+  "duration": { "fr": "4 x 4 min, 1 min 30 de récupération", "en": "4 x 4 min, 1 min 30 rest" },
+  "minutes": 22,
+  "md": ["MD-4", "MD-2", "youth"],
+  "intensity": "high",
+  "intentions": ["fixer", "progresser"],
+  "skills": ["conduite", "dribble-njangi", "passe", "decision"],
+  "pieces": ["la raison", "la carte"],
+  "fr": {
+    "title": "Conduire pour fixer",
+    "subtitle": "Conduire droit vers la pression pour créer le 2 contre 1",
+    "objective": "Conduire le ballon vers la pression, pas pour l'éviter : un porteur qui avance oblige un défenseur à sortir, et ce défenseur libère un partenaire. Celui qui ne conduit pas laisse le défenseur choisir.",
+    "organisation": [
+      "Rectangle de 30 x 20 m en trois parties : zone de départ (10 m), zone du défenseur (10 m), zone de but avec deux mini-buts.",
+      "2 attaquants contre 1 défenseur qui ne quitte pas sa zone ; le porteur part dans l'axe, son partenaire sur un côté.",
+      "Le porteur change de côté à chaque passage ; le défenseur change toutes les 6 actions.",
+      "Avec un grand groupe, deux rectangles côte à côte et des vagues de trois ; un ballon par vague, rendu par les côtés.",
+      "Par forte chaleur : actions courtes, retour en marchant, eau toutes les deux séries."
+    ],
+    "rules": [
+      "Le porteur doit entrer en conduite dans la zone du défenseur avant toute passe.",
+      "But après une fixation (le défenseur a fait un pas vers le porteur) : 2 points ; autre but : 1 point.",
+      "Si le défenseur reste sur le partenaire, le porteur continue et marque lui-même.",
+      "Défenseur qui récupère : 1 point s'il conduit jusqu'à la ligne de départ."
+    ],
+    "coaching": [
+      "Conduis à vitesse contrôlée, ballon devant toi, pour pouvoir passer à tout moment.",
+      "Vise l'épaule intérieure du défenseur : il doit choisir entre toi et ton partenaire.",
+      "Passe quand il fait le pas vers toi, pas avant, pas après.",
+      "Partenaire, reste large jusqu'à la passe, puis attaque l'espace.",
+      "Lève la tête entre deux touches : c'est le défenseur qui te dit quoi faire."
+    ],
+    "progressions": [
+      "Un second défenseur revient de derrière 2 secondes après le départ : il faut décider vite.",
+      "3 contre 2 avec deux zones de défenseurs l'une après l'autre : fixer deux fois.",
+      "Départ du porteur depuis une position de défenseur central, puis dans la sortie de balle F01."
+    ],
+    "regressions": [
+      "Défenseur qui ne peut que marcher.",
+      "Zone du défenseur de 8 m, mini-buts plus larges.",
+      "Le partenaire part déjà dans la zone de but."
+    ],
+    "measure": "Part des actions où le défenseur sort sur le porteur avant la passe, et part des buts à 2 points. Sur 10 actions, viser 6 fixations réussies.",
+    "story": "Avi Ramon apprend la pausa à BriBri : garder le ballon une demi-seconde de plus pour que l'adversaire s'engage, puis jouer dans son dos."
+  },
+  "en": {
+    "title": "Carry to Pin",
+    "subtitle": "Carry straight at the pressure to create the 2 v 1",
+    "objective": "Carry the ball towards the pressure, not away from it: a carrier who advances forces a defender to step out, and that defender frees a teammate. A player who does not carry lets the defender choose.",
+    "organisation": [
+      "30 x 20 m area in three parts: start zone (10 m), defender zone (10 m), scoring zone with two mini goals.",
+      "2 attackers against 1 defender who stays in his zone; the carrier starts in the middle, his teammate on one side.",
+      "The carrier changes side every turn; the defender changes every 6 actions.",
+      "With a big group, two areas side by side and waves of three; one ball per wave, returned along the sides.",
+      "In strong heat: short actions, walk back, water every two sets."
+    ],
+    "rules": [
+      "The carrier must dribble into the defender zone before any pass.",
+      "Goal after pinning the defender (he took a step towards the carrier): 2 points; any other goal: 1 point.",
+      "If the defender stays with the teammate, the carrier keeps going and scores himself.",
+      "A defender who wins the ball: 1 point if he dribbles it to the starting line."
+    ],
+    "coaching": [
+      "Carry at controlled speed, ball in front of you, so you can pass at any moment.",
+      "Aim at the defender's inside shoulder: he must choose between you and your teammate.",
+      "Pass when he steps towards you, not before, not after.",
+      "Teammate, stay wide until the pass, then attack the space.",
+      "Head up between touches: the defender tells you what to do."
+    ],
+    "progressions": [
+      "A second defender recovers from behind 2 seconds after the start: decide quickly.",
+      "3 v 2 with two defender zones one after the other: pin twice.",
+      "The carrier starts from a centre-back position, then in build-up drill F01."
+    ],
+    "regressions": [
+      "The defender may only walk.",
+      "8 m defender zone, wider mini goals.",
+      "The teammate starts already in the scoring zone."
+    ],
+    "measure": "Share of actions where the defender steps out to the carrier before the pass, and share of 2-point goals. Out of 10 actions, aim for 6 successful pins.",
+    "story": "Avi Ramon teaches BriBri the pausa: keep the ball half a second longer so the opponent commits, then play in behind him."
+  },
+  "diagram": {
+    "view": "grid", "w": 30, "h": 20,
+    "zones": [
+      { "x": 10, "y": 0, "w": 10, "h": 20, "tone": "soft", "label": "zone du défenseur" }
+    ],
+    "cones": [[0, 0], [30, 0], [0, 20], [30, 20], [10, 0], [20, 0], [10, 20], [20, 20]],
+    "goals": [
+      { "x": 30, "y": 5, "side": "left", "size": "mini" },
+      { "x": 30, "y": 15, "side": "left", "size": "mini" }
+    ],
+    "players": [
+      { "id": "a", "team": "a", "x": 2.5, "y": 11.5, "label": "A" },
+      { "id": "b", "team": "a", "x": 2.5, "y": 4, "label": "B" },
+      { "id": "d", "team": "b", "x": 15.5, "y": 9 }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "a", "to": [11.5, 11.5], "kind": "dribble", "n": 1 },
+      { "from": "d", "to": [13.6, 10.6], "kind": "press", "n": 2 },
+      { "from": "b", "to": [23, 5], "kind": "run", "n": 3 },
+      { "from": [12, 10.8], "to": [23, 5], "kind": "pass", "n": 4 },
+      { "from": [23, 5], "to": [28.6, 5], "kind": "shot", "n": 5 }
+    ],
+    "labels": [
+      { "x": 6.5, "y": 14.2, "text": "conduire vers lui" }
+    ]
+  },
+  "diagram2": null
+}

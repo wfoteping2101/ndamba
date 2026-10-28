@@ -16,7 +16,7 @@ import { useSiteT } from './components/brand'
 const APP_VERSION = '1.0.0'
 const ROLES: Role[] = ['player', 'coach', 'analyst', 'parent', 'manager', 'federation']
 const FORMATS: Team['format'][] = [5, 7, 8, 9, 11]
-const AGE_GROUPS = ['U6', 'U7', 'U8', 'U9', 'U10', 'U11', 'U12', 'U13', 'U14', 'U15', 'U16', 'U17', 'U18', 'U19', 'U20', 'U21', 'Seniors']
+const AGE_GROUPS = ['U6', 'U7', 'U8', 'U9', 'U10', 'U11', 'U12', 'U13', 'U14', 'U15', 'U16', 'U17', 'U18', 'U19', 'U20', 'U21', 'Seniors', 'Pro']
 const BACKUP_APP = 'njangi' // the database name; kept stable so older backups still restore
 
 export default function Settings() {
@@ -173,7 +173,7 @@ function TeamsCard({ profile }: { profile: Profile }) {
                       {isActive && <span className="rounded-full bg-forest-600 px-2 py-0.5 text-[11px] font-bold text-cream">{t('settings.teams.active')}</span>}
                     </div>
                     <div className="text-[13px] text-ink-muted">
-                      {tm.ageGroup === 'Seniors' ? t('settings.teams.seniors') : tm.ageGroup} · {t('settings.teams.formatOpt', { n: tm.format })} · {tm.formation} · {t('settings.teams.players', { count: counts[tm.id] || 0 })}
+                      {tm.ageGroup === 'Seniors' ? t('settings.teams.seniors') : tm.ageGroup === 'Pro' ? t('settings.teams.pro') : tm.ageGroup} · {t('settings.teams.formatOpt', { n: tm.format })} · {tm.formation} · {t('settings.teams.players', { count: counts[tm.id] || 0 })}
                     </div>
                   </div>
                 </div>
@@ -237,7 +237,7 @@ function TeamModal({ team, onClose, onSaved }: { team: Team | null; onClose: () 
         <div className="grid gap-x-4 sm:grid-cols-3">
           <Field label={t('settings.teams.ageGroup')} htmlFor="tm-age">
             <select id="tm-age" className="input" value={ageGroup} onChange={(e) => setAgeGroup(e.target.value)}>
-              {ages.map((a) => <option key={a} value={a}>{a === 'Seniors' ? t('settings.teams.seniors') : a}</option>)}
+              {ages.map((a) => <option key={a} value={a}>{a === 'Seniors' ? t('settings.teams.seniors') : a === 'Pro' ? t('settings.teams.pro') : a}</option>)}
             </select>
           </Field>
           <Field label={t('settings.teams.format')} htmlFor="tm-format">

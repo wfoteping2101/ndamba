@@ -1,0 +1,113 @@
+{
+  "id": "C03",
+  "family": "technique",
+  "order": 3,
+  "ages": "U9+",
+  "players": { "min": 4, "max": 6, "fr": "4 à 6 joueurs par carré, plusieurs carrés en parallèle", "en": "4 to 6 players per square, several squares side by side" },
+  "space": { "w": 14, "h": 14 },
+  "duration": { "fr": "5 x 3 min, 1 min de récupération", "en": "5 x 3 min, 1 min rest" },
+  "minutes": 19,
+  "md": ["MD-2", "MD-1", "youth"],
+  "intensity": "low",
+  "intentions": ["sortir", "progresser"],
+  "skills": ["passe", "controle"],
+  "pieces": ["la raison", "le cœur"],
+  "fr": {
+    "title": "Le carré des surfaces",
+    "subtitle": "Intérieur, extérieur, cou-de-pied : la bonne surface et le bon poids",
+    "objective": "Choisir la surface de contact et doser la passe pour qu'elle arrive où il faut, à la bonne vitesse. Une passe trop douce n'arrive jamais ; une passe trop forte n'est pas un cadeau.",
+    "organisation": [
+      "Carré de 12 x 12 m dans un espace de 14 x 14 m, un joueur à chaque coin.",
+      "Au milieu de chaque côté, une porte de 1,5 m faite de deux coupelles.",
+      "À plus de 4, le joueur en trop attend derrière un coin et entre à la passe suivante.",
+      "Un ballon par carré suffit ; avec un grand groupe, alignez plusieurs carrés plutôt que d'allonger les files.",
+      "Sur terre battue ou terrain bosselé, cherchez la partie la plus plate : la passe doit être plus appuyée, le receveur va au-devant du ballon."
+    ],
+    "rules": [
+      "Les passes le long des côtés passent par la porte ; la diagonale est la passe longue.",
+      "L'entraîneur annonce la surface chaque minute : intérieur, extérieur, pied faible, cou-de-pied pour la diagonale.",
+      "Le receveur contrôle sans faire plus d'un pas : s'il doit courir ou attendre, c'est une faute de poids.",
+      "Deux touches maximum ; une touche quand le groupe est à l'aise."
+    ],
+    "coaching": [
+      "Le pied d'appui à côté du ballon, pointé vers la cible.",
+      "Intérieur : cheville bloquée, on pousse à travers le ballon.",
+      "Extérieur : orteils vers le bas et vers l'intérieur, le ballon part en douceur.",
+      "Passe dans les pieds quand le partenaire est arrêté, devant lui quand il bouge.",
+      "Contrôle avec la surface qui prépare ta passe suivante."
+    ],
+    "progressions": [
+      "Une touche, en gardant la surface annoncée.",
+      "Deux ballons dans le carré.",
+      "Le receveur se déplace d'un pas avant de recevoir : passe dans la course.",
+      "Diagonales au cou-de-pied décollées puis rabattues, à partir de U12."
+    ],
+    "regressions": [
+      "Carré de 8 x 8 m, touches libres.",
+      "Une seule surface par série, l'intérieur d'abord.",
+      "Portes de 2,5 m."
+    ],
+    "measure": "Sur 10 passes par joueur et par surface : passes qui traversent la porte et passes contrôlées sans pas de rattrapage. Objectif : 7 sur 10 au pied faible.",
+    "story": "Papa dit qu'un réseau est comme une équipe ; Kaydoudou ajoute dans son carnet qu'une passe, comme un message, doit arriver à la bonne vitesse pour être ouverte."
+  },
+  "en": {
+    "title": "The Surfaces Square",
+    "subtitle": "Inside, outside, laces: the right surface and the right weight",
+    "objective": "Choose the contact surface and weight the pass so that it arrives in the right place at the right speed. A pass that is too soft never arrives; a pass that is too hard is no gift.",
+    "organisation": [
+      "A 12 x 12 m square inside a 14 x 14 m area, one player on each corner.",
+      "In the middle of each side, a 1.5 m gate made of two disc cones.",
+      "With more than 4, the extra player waits behind a corner and comes in on the next pass.",
+      "One ball per square is enough; with a big group, set up more squares rather than longer queues.",
+      "On hard earth or a bumpy pitch, use the flattest part: the pass must be firmer and the receiver goes to meet the ball."
+    ],
+    "rules": [
+      "Passes along the sides go through the gate; the diagonal is the long pass.",
+      "The coach calls the surface every minute: inside, outside, weaker foot, laces for the diagonal.",
+      "The receiver controls without taking more than one step: if he has to chase or wait, the weight was wrong.",
+      "Two touches maximum; one touch once the group is comfortable."
+    ],
+    "coaching": [
+      "Standing foot beside the ball, pointing at the target.",
+      "Inside: ankle locked, push through the ball.",
+      "Outside: toes down and in, the ball leaves softly.",
+      "Pass to feet when your teammate is still, in front of him when he moves.",
+      "Control with the surface that sets up your next pass."
+    ],
+    "progressions": [
+      "One touch, keeping the surface that was called.",
+      "Two balls in the square.",
+      "The receiver moves one step before receiving: pass into his stride.",
+      "Lofted diagonals with the laces, then driven ones, from U12."
+    ],
+    "regressions": [
+      "8 x 8 m square, unlimited touches.",
+      "One surface per set, the inside first.",
+      "2.5 m gates."
+    ],
+    "measure": "Out of 10 passes per player and per surface: passes through the gate and passes controlled without a recovery step. Target: 7 out of 10 with the weaker foot.",
+    "story": "Papa says a network is like a team; Kaydoudou adds in his notebook that a pass, like a message, must arrive at the right speed to be opened."
+  },
+  "diagram": {
+    "view": "grid", "w": 14, "h": 14,
+    "players": [
+      { "id": "a", "team": "a", "x": 1, "y": 1, "label": "A" },
+      { "id": "b", "team": "a", "x": 13, "y": 1, "label": "B" },
+      { "id": "c", "team": "a", "x": 13, "y": 13, "label": "C" },
+      { "id": "d", "team": "a", "x": 1, "y": 13, "label": "D" }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "a", "to": "b", "kind": "pass", "n": 1 },
+      { "from": "b", "to": "c", "kind": "pass", "n": 2 },
+      { "from": "c", "to": "a", "kind": "pass", "n": 3 }
+    ],
+    "cones": [[6.25, 1], [7.75, 1], [13, 6.25], [13, 7.75], [6.25, 13], [7.75, 13], [1, 6.25], [1, 7.75]],
+    "labels": [
+      { "x": 7, "y": 2.7, "text": "intérieur" },
+      { "x": 10.9, "y": 7.2, "text": "extérieur" },
+      { "x": 11.3, "y": 9.7, "text": "cou-de-pied" }
+    ]
+  },
+  "diagram2": null
+}

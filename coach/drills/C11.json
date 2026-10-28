@@ -1,0 +1,138 @@
+{
+  "id": "C11",
+  "family": "technique",
+  "order": 11,
+  "ages": "U11+",
+  "players": { "min": 8, "max": 14, "fr": "8 à 14 joueurs et un gardien (circuit à trois stations)", "en": "8 to 14 players and a goalkeeper (three-station pattern)" },
+  "space": { "w": 30, "h": 26 },
+  "duration": { "fr": "3 x 6 min (une station par série), 1 min 30 de récupération", "en": "3 x 6 min (one station per set), 1 min 30 rest" },
+  "minutes": 21,
+  "md": ["MD-2", "MD-1"],
+  "intensity": "medium",
+  "intentions": ["finir"],
+  "skills": ["appels", "decision", "controle", "passe"],
+  "pieces": ["le souffle", "la raison"],
+  "fr": {
+    "title": "Finir du premier coup",
+    "subtitle": "Circuit de frappes en une touche : centre en retrait, remise, passe latérale",
+    "objective": "Frapper en une touche les ballons qui arrivent dans la surface : centre en retrait, remise du pivot, passe latérale. Dans la surface, le temps d'un contrôle est souvent le temps qui manque.",
+    "organisation": [
+      "Un but avec gardien et trois stations : le retrait depuis la ligne de but, la remise du pivot à l'entrée de la surface, la passe latérale entre deux attaquants.",
+      "Les stations jouent l'une après l'autre ; le gardien annonce « Prêt » avant chaque action.",
+      "Files de 3 au plus par station ; avec un grand groupe, un deuxième but et un deuxième gardien sur l'autre moitié.",
+      "8 à 10 ballons suffisent : deux ramasseurs derrière le but, qui changent à chaque série.",
+      "Par forte chaleur, séries de 5 min et pause boisson entre les stations ; deux gardiens se relaient s'ils sont là."
+    ],
+    "rules": [
+      "Toutes les frappes se jouent en une touche ; une frappe après contrôle ne compte pas.",
+      "But en une touche : 2 points ; frappe cadrée arrêtée : 1 point.",
+      "Au retrait, le centre part au sol, en arrière, vers le point de penalty.",
+      "Le tireur arrive en course : il n'attend jamais le ballon à l'arrêt."
+    ],
+    "coaching": [
+      "Arrive au moment du centre, pas avant : un attaquant arrêté est un attaquant marqué.",
+      "Ouvre le corps vers le but avant le contact.",
+      "Intérieur du pied pour placer, cou-de-pied pour la puissance ; la tête au-dessus du ballon.",
+      "Vise le côté opposé au gardien, à ras de terre.",
+      "Après la frappe, suis : le rebond est un deuxième ballon."
+    ],
+    "progressions": [
+      "Un défenseur passif, puis actif, sur le tireur.",
+      "Deux tireurs au retrait, premier poteau et point de penalty : le passeur choisit.",
+      "Passer à la finition à 4 contre 3 de la fiche G05."
+    ],
+    "regressions": [
+      "Une ou deux touches au début, une touche ensuite.",
+      "Ballon servi à la main, au sol, pour les plus jeunes.",
+      "Frappes depuis 11 m, sans course."
+    ],
+    "measure": "Sur 10 frappes par station et par joueur : frappes en une touche cadrées, et buts. Viser 6 frappes cadrées sur 10 au retrait.",
+    "story": "« Intensity is a choice », répète Coach Okafor sous la pluie de Kingsbridge : devant le but, on choisit de frapper du premier coup."
+  },
+  "en": {
+    "title": "First-Time Finishing",
+    "subtitle": "One-touch finishing pattern: cut-back, set, square pass",
+    "objective": "Finish first time on the balls that arrive in the box: the cut-back, the pivot's set, the square pass. In the box, the time for a control touch is often the time you do not have.",
+    "organisation": [
+      "One goal with a goalkeeper and three stations: the cut-back from the goal line, the pivot's set at the edge of the box, the square pass between two forwards.",
+      "Stations play one after the other; the goalkeeper calls \"Ready\" before each action.",
+      "Queues of 3 at most per station; with a big group, a second goal and goalkeeper on the other half.",
+      "8 to 10 balls are enough: two collectors behind the goal, changing every set.",
+      "In strong heat, 5 min sets and a drinks break between stations; two goalkeepers take turns if you have them."
+    ],
+    "rules": [
+      "Every shot is first time; a shot after a control touch does not count.",
+      "First-time goal: 2 points; shot on target saved: 1 point.",
+      "For the cut-back, the cross goes along the ground, backwards, towards the penalty spot.",
+      "The shooter arrives on the run: he never waits for the ball standing still."
+    ],
+    "coaching": [
+      "Arrive as the cross comes in, not before: a forward who stands still is a forward who is marked.",
+      "Open your body to the goal before contact.",
+      "Inside of the foot to place it, laces for power; head over the ball.",
+      "Aim for the side away from the goalkeeper, low.",
+      "After the shot, follow in: the rebound is a second ball."
+    ],
+    "progressions": [
+      "A passive, then active, defender on the shooter.",
+      "Two shooters on the cut-back, near post and penalty spot: the crosser chooses.",
+      "Move on to the 4 v 3 finishing game of drill G05."
+    ],
+    "regressions": [
+      "One or two touches at first, then one touch.",
+      "Ball rolled by hand along the ground for the youngest.",
+      "Shots from 11 m, without a run-up."
+    ],
+    "measure": "Out of 10 shots per station and per player: first-time shots on target, and goals. Aim for 6 shots on target out of 10 on the cut-back.",
+    "story": "\"Intensity is a choice,\" Coach Okafor keeps saying in the Kingsbridge rain: in front of goal, you choose to shoot first time."
+  },
+  "diagram": {
+    "view": "grid", "w": 30, "h": 26,
+    "zones": [
+      { "x": 13.5, "y": 0, "w": 16.5, "h": 26, "tone": "soft", "label": "surface" }
+    ],
+    "goals": [
+      { "x": 30, "y": 13, "side": "right", "size": "full" }
+    ],
+    "players": [
+      { "id": "w", "team": "a", "x": 17, "y": 2.5, "label": "7" },
+      { "id": "f", "team": "a", "x": 11.5, "y": 16, "label": "9" },
+      { "id": "gk", "team": "gkb", "x": 29, "y": 12.4 }
+    ],
+    "ball": "w",
+    "arrows": [
+      { "from": "w", "to": [26.5, 3.4], "kind": "dribble", "n": 1 },
+      { "from": "f", "to": [20.5, 12.6], "kind": "run", "n": 2 },
+      { "from": [26.5, 3.4], "to": [20.5, 12.6], "kind": "pass", "n": 3 },
+      { "from": [20.5, 12.6], "to": [29.8, 15.6], "kind": "shot", "n": 4 }
+    ],
+    "labels": [
+      { "x": 25.4, "y": 8.9, "text": "retrait" }
+    ]
+  },
+  "diagram2": {
+    "view": "grid", "w": 30, "h": 26,
+    "zones": [
+      { "x": 13.5, "y": 0, "w": 16.5, "h": 26, "tone": "soft", "label": "surface" }
+    ],
+    "goals": [
+      { "x": 30, "y": 13, "side": "right", "size": "full" }
+    ],
+    "players": [
+      { "id": "s", "team": "a", "x": 3.5, "y": 12.5, "label": "6" },
+      { "id": "p", "team": "a", "x": 14.5, "y": 12.5, "label": "9" },
+      { "id": "m", "team": "a", "x": 6, "y": 20.5, "label": "8" },
+      { "id": "gk", "team": "gkb", "x": 29, "y": 13.4 }
+    ],
+    "ball": "s",
+    "arrows": [
+      { "from": "s", "to": "p", "kind": "pass", "n": 1 },
+      { "from": "m", "to": [12.6, 17.4], "kind": "run", "n": 2 },
+      { "from": "p", "to": [12.6, 17.4], "kind": "pass", "n": 3 },
+      { "from": [12.6, 17.4], "to": [29.8, 10.6], "kind": "shot", "n": 4 }
+    ],
+    "labels": [
+      { "x": 8.5, "y": 10.4, "text": "remise du pivot" }
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 // Mola engine tests. Run: node src/surfaces/mola/engine.test.mjs   (Node 22+, strips the TypeScript types)
-import { parse, parseProfile, parseDate, parseTime, parsePlayerList, missingSlot, fillSlot, parseFormat, parseName, parseAgeGroup } from './engine.ts'
+import { parse, parseProfile, parseDate, parseTime, parsePlayerList, missingSlot, fillSlot, parseFormat, parseName, parseAgeGroup, parseRole } from './engine.ts'
+import { absorb, emptyDraft, nextStep, LEVEL_CHOICES } from './onboarding.ts'
 
 const TODAY = '2026-10-26' // a Monday
 let pass = 0, fail = 0
@@ -119,5 +120,46 @@ check('format bare', { f: parseFormat('11', true) }, { f: 11 })
 check('player list', { l: parsePlayerList('1. Ousmane Bello (GK)\n8 Kaydoudou\nBriBri 7, Samuel Owona - attaquant') }, { l: [{ name: 'Ousmane Bello', number: 1, position: 'GK' }, { name: 'Kaydoudou', number: 8 }, { name: 'BriBri', number: 7 }, { name: 'Samuel Owona', position: 'ST' }] })
 
 check('player list with position after comma', { l: parsePlayerList('1. Ousmane Bello (GK)\n8 Kaydoudou\n9 Samuel Owona, attaquant') }, { l: [{ name: 'Ousmane Bello', number: 1, position: 'GK' }, { name: 'Kaydoudou', number: 8 }, { name: 'Samuel Owona', number: 9, position: 'ST' }] })
+
+// ---- every level, from U8 to the professionals ----
+const noClub = (p) => ({ ...p, club: p.club ?? null, name: p.name ?? null })
+check('pro coach Ligue 1 (fr)', noClub(parseProfile("Je suis entraîneur principal d'une équipe de Ligue 1 au Cameroun")), { role: 'coach', ageGroup: 'Pro', format: 11, country: 'CM', club: null, name: null })
+check('pro coach Premier League (en)', noClub(parseProfile("I'm the head coach of a Premier League club in Ghana")), { role: 'coach', ageGroup: 'Pro', format: 11, country: 'GH', club: null })
+check('pro coach with club, league and city', parseProfile("Je suis l'entraîneur principal de l'Étoile de la Côte, en Ligue 1, à Douala"), { role: 'coach', ageGroup: 'Pro', club: 'Étoile de la Côte', city: 'Douala', country: 'CM', format: 11 })
+check('national team coach', noClub(parseProfile('Je suis sélectionneur des Lions Indomptables')), { role: 'coach', ageGroup: 'Pro', name: null })
+check('assistant in Elite One', parseProfile('entraîneur adjoint en Elite One'), { role: 'coach', ageGroup: 'Pro' })
+check('pro analyst, the league is not a club', noClub(parseProfile("analyste vidéo dans un club d'Elite One")), { role: 'analyst', ageGroup: 'Pro', club: null })
+check('pro player', parseProfile('je suis joueur pro au Rapides de Kribi'), { role: 'player', ageGroup: 'Pro', club: 'Rapides de Kribi', format: undefined })
+check('seniors pro of a club', parseProfile('coach des seniors pro de Coton Sport'), { role: 'coach', ageGroup: 'Pro', club: 'Coton Sport' })
+check('goalkeeper coach', parseProfile('entraîneur des gardiens de Coton Sport'), { role: 'coach', club: 'Coton Sport' })
+check('a country is not a club', noClub(parseProfile('Je suis entraîneur au Cameroun')), { role: 'coach', country: 'CM', club: null })
+check('a regional league is still an organisation', { r: parseRole('je travaille à la ligue régionale du Littoral') }, { r: 'federation' })
+check('age U8', { a: parseAgeGroup("J'entraîne les U8") }, { a: 'U8' })
+check('age seniors amateurs', { a: parseAgeGroup('les seniors amateurs') }, { a: 'Seniors' })
+check('age professional first team', { a: parseAgeGroup('équipe première professionnelle') }, { a: 'Pro' })
+check('age D1', { a: parseAgeGroup('on joue en D1') }, { a: 'Pro' })
+check('an ambition is not a level', { a: parseAgeGroup("j'ai 14 ans et je veux devenir pro") }, { a: 'U15' })
+check('« mon équipe a gagné » says no level', { a: parseAgeGroup('Mon équipe a gagné') }, { a: undefined })
+check('national team (en)', { a: parseAgeGroup('I coach the national team') }, { a: 'Pro' })
+check('U17 national team keeps its age', { a: parseAgeGroup("l'équipe nationale U17") }, { a: 'U17' })
+
+// ---- onboarding: a professional coach introduces themselves ----
+const base = { ...emptyDraft(), lang: 'fr', name: 'Daniel Ngassa' }
+const pro = absorb(base, 'role', "Je suis entraîneur principal d'une équipe de Ligue 1 au Cameroun")
+check('onboarding pro coach', pro.draft, { role: 'coach', ageGroup: 'Pro', format: 11, country: 'CM' })
+check('onboarding pro coach: next question is the team', { s: nextStep(pro.draft) }, { s: 'team' })
+const named = absorb(pro.draft, 'team', 'Étoile de la Côte')
+check('onboarding pro team name, no category suffix', named.draft, { teamName: 'Étoile de la Côte', ageGroup: 'Pro' })
+check('onboarding pro coach then players', { s: nextStep(named.draft) }, { s: 'players' })
+const clubFirst = absorb({ ...base }, 'role', "Je suis l'entraîneur principal de l'Étoile de la Côte, en Ligue 1")
+check('onboarding pro coach who names the club', clubFirst.draft, { role: 'coach', club: 'Étoile de la Côte', teamName: 'Étoile de la Côte', ageGroup: 'Pro', format: 11 })
+const coachAge = { ...base, role: 'coach', teamName: 'Avenir FC' }
+check('coach answers « 13 »: the U13', absorb(coachAge, 'age', '13').draft, { ageGroup: 'U13' })
+check('coach answers « U8 »', absorb(coachAge, 'age', 'U8').draft, { ageGroup: 'U8' })
+check('coach answers « seniors pro »', absorb(coachAge, 'age', 'seniors pro').draft, { ageGroup: 'Pro', format: 11 })
+check('coach answers « seniors »', absorb(coachAge, 'age', 'les seniors').draft, { ageGroup: 'Seniors', format: undefined })
+check('player answers « 13 »: an age (13 years old plays in the U15)', absorb({ ...base, role: 'player' }, 'age', '13').draft, { ageGroup: 'U15' })
+check('pro player: no format asked or implied', absorb({ ...base, role: 'player' }, 'age', 'je suis pro').draft, { ageGroup: 'Pro', format: undefined })
+check('levels offered: U8 to Pro', { first: LEVEL_CHOICES[0], last: LEVEL_CHOICES[LEVEL_CHOICES.length - 1], seniors: LEVEL_CHOICES.includes('Seniors') }, { first: 'U8', last: 'Pro', seniors: true })
 console.log(`\n${pass} passed, ${fail} failed (${pass + fail} checks)`)
 process.exit(fail ? 1 : 0)

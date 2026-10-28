@@ -1,0 +1,122 @@
+{
+  "id": "C12",
+  "family": "technique",
+  "order": 12,
+  "ages": "U11+",
+  "players": { "min": 5, "max": 8, "fr": "1 ou 2 gardiens et 4 à 6 joueurs de champ", "en": "1 or 2 goalkeepers and 4 to 6 outfield players" },
+  "space": { "w": 36, "h": 30 },
+  "duration": { "fr": "4 x 4 min, 1 min 30 de récupération", "en": "4 x 4 min, 1 min 30 rest" },
+  "minutes": 22,
+  "md": ["MD-3", "MD-2", "youth"],
+  "intensity": "medium",
+  "intentions": ["sortir"],
+  "skills": ["passe", "controle", "scan", "decision", "communication"],
+  "pieces": ["la carte", "la raison"],
+  "fr": {
+    "title": "Le gardien qui relance",
+    "subtitle": "Recevoir une passe en retrait sous pression et relancer du côté libre",
+    "objective": "Apprendre au gardien à recevoir une passe en retrait le corps ouvert, à lire d'où vient la pression et à relancer vers le côté libre, au pied puis à la main. Le ballon doit voyager dès le gardien.",
+    "organisation": [
+      "Un but avec gardien, deux relanceurs (4 et 5) écartés aux angles de la surface, deux portes de 4 m à 24 m du but.",
+      "L'entraîneur (E) joue la passe en retrait depuis 20 m ; un attaquant part près du point de penalty pour presser.",
+      "L'attaquant change toutes les 4 actions ; les relanceurs changent de côté à chaque série.",
+      "Un seul gardien ? Séries courtes, et un joueur de champ volontaire prend le but une série sur trois : tout le monde gagne à savoir relancer.",
+      "Par forte chaleur, le gardien boit à chaque série et attend à l'ombre ; 8 ballons au pied de l'entraîneur suffisent."
+    ],
+    "rules": [
+      "Deux touches maximum pour le gardien ; comme en match, pas de prise à la main sur une passe en retrait.",
+      "Relance vers le relanceur libre, qui franchit sa porte en conduite : 1 point.",
+      "Relance jouée en une touche vers le côté libre : 2 points.",
+      "L'attaquant qui touche le ballon marque 2 points, 3 s'il marque dans le but.",
+      "Si les deux côtés sont fermés, la passe longue au-delà des portes est permise, sans point."
+    ],
+    "coaching": [
+      "Regarde l'attaquant avant que le ballon arrive : de quel côté vient-il ?",
+      "Ouvre le corps vers le côté libre, appuis décalés, comme un joueur de champ.",
+      "Premier contact loin de l'attaquant, vers le côté où tu vas jouer.",
+      "Passe tendue, au sol, sur le pied extérieur du relanceur.",
+      "Relanceurs, écartez-vous large et parlez : « Seul » ou « Homme »."
+    ],
+    "progressions": [
+      "Un deuxième attaquant marque un relanceur : le gardien trouve l'autre, ou un pivot qui entre.",
+      "Passe en retrait plus difficile : plus forte, en rebond, sur le pied faible.",
+      "Relance à la main : après un arrêt, rouler ou lancer vite vers le relanceur libre.",
+      "Passer à la sortie à trois contre deux de la fiche F01."
+    ],
+    "regressions": [
+      "L'attaquant part du milieu de la surface en marchant.",
+      "Trois touches pour le gardien.",
+      "Portes de 6 m, relanceurs plus proches du but."
+    ],
+    "measure": "Sur 10 passes en retrait par gardien : relances réussies vers le côté libre, touches utilisées, et ballons perdus dans la surface (objectif : aucun).",
+    "story": "Ousmane « Petit Pied » Bello a de grandes mains ; cette fiche est pour ses petits pieds, parce que chez Tonton Fokou le ballon voyage dès le gardien."
+  },
+  "en": {
+    "title": "The Goalkeeper Who Builds",
+    "subtitle": "Receive a back-pass under pressure and play out to the free side",
+    "objective": "Teach the goalkeeper to receive a back-pass with an open body, read where the pressure comes from and play to the free side, with the feet then the hands. The ball must travel from the goalkeeper on.",
+    "organisation": [
+      "One goal with a goalkeeper, two receivers (4 and 5) split wide at the corners of the box, two 4 m gates 24 m from goal.",
+      "The coach (E) plays the back-pass from 20 m; a forward starts near the penalty spot to press.",
+      "The forward changes every 4 actions; the receivers switch sides every set.",
+      "Only one goalkeeper? Short sets, and a volunteer outfield player goes in goal one set in three: everyone gains from knowing how to play out.",
+      "In strong heat, the goalkeeper drinks every set and waits in the shade; 8 balls at the coach's feet are enough."
+    ],
+    "rules": [
+      "Two touches maximum for the goalkeeper; as in a match, no handling a back-pass.",
+      "A pass to the free receiver, who dribbles through his gate: 1 point.",
+      "A first-time pass to the free side: 2 points.",
+      "A forward who touches the ball scores 2 points, 3 if he scores in the goal.",
+      "If both sides are closed, the long pass beyond the gates is allowed, with no point."
+    ],
+    "coaching": [
+      "Look at the forward before the ball arrives: which side is he coming from?",
+      "Open your body to the free side, feet staggered, like an outfield player.",
+      "First touch away from the forward, towards the side you will play to.",
+      "Firm pass along the ground, onto the receiver's outside foot.",
+      "Receivers, split wide and talk: \"Time\" or \"Man on\"."
+    ],
+    "progressions": [
+      "A second forward marks one receiver: the goalkeeper finds the other, or a pivot who comes in.",
+      "Harder back-pass: firmer, bouncing, onto the weaker foot.",
+      "Distribution by hand: after a save, roll or throw quickly to the free receiver.",
+      "Move on to the 3 v 2 build-up of drill F01."
+    ],
+    "regressions": [
+      "The forward starts from the middle of the box, walking.",
+      "Three touches for the goalkeeper.",
+      "6 m gates, receivers closer to goal."
+    ],
+    "measure": "Out of 10 back-passes per goalkeeper: successful passes to the free side, touches used, and balls lost in the box (target: none).",
+    "story": "Ousmane \"Little Feet\" Bello has big hands; this drill is for his small feet, because with Tonton Fokou the ball travels from the goalkeeper on."
+  },
+  "diagram": {
+    "view": "grid", "w": 36, "h": 30,
+    "zones": [
+      { "x": 0, "y": 0, "w": 16.5, "h": 30, "tone": "soft", "label": "surface" }
+    ],
+    "goals": [
+      { "x": 0, "y": 15, "side": "left", "size": "full" }
+    ],
+    "cones": [[0, 0], [36, 0], [0, 30], [36, 30], [24, 2], [24, 6], [24, 24], [24, 28]],
+    "players": [
+      { "id": "gk", "team": "gk", "x": 1.8, "y": 15, "label": "1" },
+      { "id": "c4", "team": "a", "x": 9, "y": 4, "label": "4" },
+      { "id": "c5", "team": "a", "x": 9, "y": 26, "label": "5" },
+      { "id": "r", "team": "b", "x": 13.5, "y": 17.5 },
+      { "id": "e", "team": "n", "x": 21, "y": 15, "label": "E" }
+    ],
+    "ball": "e",
+    "arrows": [
+      { "from": "e", "to": "gk", "kind": "pass", "n": 1 },
+      { "from": "r", "to": [6, 19], "kind": "press", "n": 2 },
+      { "from": "gk", "to": "c4", "kind": "pass", "n": 3 },
+      { "from": "c4", "to": [24.6, 4], "kind": "dribble", "n": 4 }
+    ],
+    "labels": [
+      { "x": 12.5, "y": 13.2, "text": "passe en retrait" },
+      { "x": 15.5, "y": 8.4, "text": "côté libre" }
+    ]
+  },
+  "diagram2": null
+}

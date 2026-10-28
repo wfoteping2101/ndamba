@@ -720,13 +720,33 @@ const ROLE_KW: [Role, string[]][] = [
   ['manager', ['directeur technique', 'directeur sportif', 'technical director', 'sporting director', 'director of football', 'president du club', 'president', 'dirigeant', 'dirigeante', 'manager du club', 'general manager', 'club manager', 'gerant']],
   ['parent', ['parent', 'papa', 'maman', 'pere', 'mere', 'mon fils', 'ma fille', 'mes enfants', 'mon enfant', 'my son', 'my daughter', 'my child', 'my kid', 'my kids', '=dad', '=mum', '=mom', 'mother', 'father']],
   ['analyst', ['analyste', 'analyst', 'analyse video', 'video analyst', 'performance analyst', '=scout', 'recruteur', 'data analyst']],
-  ['coach', ['entraineur', 'entraineuse', 'coach', 'coache', 'educateur', 'educatrice', 'formateur', 'formatrice', 'trainer', "j'entraine", 'je coache', 'i coach', 'coaching', 'head coach', 'assistant coach', 'adjoint', '=manager']],
+  ['coach', ['entraineur', 'entraineuse', 'coach', 'coache', 'educateur', 'educatrice', 'formateur', 'formatrice', 'trainer', "j'entraine", 'je coache', 'i coach', 'coaching', 'head coach', 'assistant coach', 'adjoint', '=manager',
+    'selectionneur', 'selectionneuse', 'preparateur physique', 'entraineur des gardiens', 'goalkeeper coach', 'fitness coach', 'national coach']],
   ['player', ['joueur', 'joueuse', 'player', 'footballeur', 'footballeuse', 'je joue', 'i play', 'footballer']],
 ]
+
+/**
+ * Competitions and the senior professional level ("une équipe de Ligue 1", "a Premier League club", "les Lions Indomptables").
+ * They say the LEVEL of the team, never the role: "Ligue 1" must not make a coach a federation.
+ */
+const COMPETITION_RE = /\b(?:(?:la\s+)?ligue\s?(?:1|2|un|deux|one|two|des champions|pro|professionnelle)|champions league|premier league|league (?:one|two)|(?:mtn\s+)?elite\s?(?:one|two|1|2)|la liga|serie a|bundesliga|eredivisie|botola(?: pro)?)\b/g
+const PRO_RE = /\b(?:ligue\s?(?:1|2|un|deux|one|two|des champions|pro|professionnelle)|champions league|premier league|league (?:one|two)|(?:mtn\s+)?elite\s?(?:one|two|1|2)|la liga|serie a|bundesliga|eredivisie|botola|d[12]|premiere division|deuxieme division|first division|second division|top flight|championnat (?:professionnel|pro|d'elite|elite)|professionnels?|professionnelles?|professional|pro|pros|club pro|equipe pro|equipe professionnelle|pro team|pro club|seniors? pro|niveau pro|les pros|equipe nationale|selection nationale|national team|lions indomptables|lionnes indomptables)\b/
+/** "je veux devenir pro" is an ambition, not the level of the team. */
+const PRO_AMBITION_RE = /\b(?:devenir|passer|become|becoming|turn|turning|go)\s+(?:a\s+)?(?:pro|pros|professionnel|professionnelle|professional)\b/g
+
 export function parseRole(text: string): Role | undefined {
-  const toks = tokens(norm(text))
+  const toks = tokens(norm(text).replace(COMPETITION_RE, ' ').replace(/\s+/g, ' ').trim())
   for (const [r, kws] of ROLE_KW) if (any(toks, kws)) return r
   return undefined
+}
+
+const PRO_RE_G = new RegExp(PRO_RE.source, 'g')
+/** True when a phrase says nothing but a level ("Elite One", "la Ligue 1", "les pros"). */
+const onlyLevel = (v: string) => isProLevel(v) && !norm(v).replace(PRO_RE_G, ' ').replace(/(?:^|\s)(?:d'|l'|de|du|des|la|le|les|en|in|the|of)(?=\s|$)/g, ' ').trim()
+
+/** The senior professional level, from a competition, a club status or the national team. */
+export function isProLevel(text: string) {
+  return PRO_RE.test(norm(text).replace(PRO_AMBITION_RE, ' '))
 }
 
 const AGE_CATS = [7, 9, 11, 13, 15, 17, 19, 21]
@@ -737,6 +757,10 @@ export function parseAgeGroup(text: string): string | undefined {
     const v = +m[1]
     if (v >= 5 && v <= 23) return `U${v}`
   }
+  // a young player who wants to become pro tells us an age, not a level: the age wins over the ambition
+  const ambition = PRO_AMBITION_RE.test(n)
+  PRO_AMBITION_RE.lastIndex = 0
+  if (!(ambition && /\b\d{1,2}\s*(?:ans|years?|yo)\b/.test(n)) && isProLevel(text)) return 'Pro'
   if (/\b(?:seniors?|adultes?|adults?|first team|equipe premiere|equipe fanion|grands?|elite)\b/.test(n)) return 'Seniors'
   if (/\b(?:veterans?|anciens|old boys)\b/.test(n)) return 'Vétérans'
   if ((m = n.match(/\b(?:j'ai|i am|i'm|il a|elle a|he is|she is|he's|she's|a|age de|agee de|aged)\s+(\d{1,2})\s*(?:ans|years?|yo)\b/)) || (m = n.match(/\b(\d{1,2})\s*(?:ans|years old|yo)\b/))) {
@@ -807,7 +831,9 @@ export function parseName(text: string, bare = false): string | undefined {
 export function parseClub(text: string): string | undefined {
   const pats = [
     /\bu\s?-?\d{1,2}s?\s+(?:de|du|des|d'|of|at|for|a|au|chez|with)\s*(.+)$/,
-    /\b(?:seniors?|equipe premiere|first team|reserve)\s+(?:de|du|des|d'|of|at|for|a|au|chez)\s*(.+)$/,
+    /\b(?:seniors?(?:\s+(?:pro|professionnels?|amateurs?))?|equipe premiere|first team|reserve)\s+(?:de|du|des|d'|of|at|for|a|au|chez)\s*(.+)$/,
+    // "l'entraîneur principal de l'Étoile de la Côte", "head coach of Avenir FC", "sélectionneur du Gabon"
+    /\b(?:entraineur|entraineuse|coach|selectionneur|selectionneuse|analyste|analyst|educateur|educatrice|adjoint|adjointe|manager|joueur|joueuse|player|footballeur|footballeuse)(?:\s+(?:principal|principale|adjoint|adjointe|en chef|des gardiens|physique|video|de la performance|pro|professionnel|professionnelle|professional))?\s+(?:de l'|a l'|(?:de la|du|de|of|at|for|with|au)\s+)(?!(?:un|une|a|an|the|football|foot|soccer|futsal|jeunes|enfants|kids|filles|garcons|girls|boys|seniors?|gardiens?|goalkeepers?|equipe|team|club|l'equipe|ligue|league)\b)(.+)$/,
     /\b(?:je joue|i play|elle joue|il joue|j'entraine|i coach|je coache|i work|je travaille|je suis|i'm|i am)\s+(?:au|aux|pour|chez|for|at|with|avec|dans|in|a l'|a la)\s+(?!(?:un|une|a|an|the)\s)(.+)$/,
     /\b(?:club|academie|academy|ecole de football|ecole de foot|centre de formation|association)\s+(?:de |du |des |d'|the |called |named |nomme |appele )?(.+)$/,
     /\b(?:chez|au sein de|au sein du|du club)\s+(.+)$/,
@@ -820,6 +846,8 @@ export function parseClub(text: string): string | undefined {
     if (!v || /^\d/.test(v) || parseRole(v) || v.length > 50) continue
     const known = parseKnownCity(v)
     if (known && norm(v) === norm(known.city)) continue // "je joue à Douala": a city, not a club
+    if (COUNTRIES.some(([, kws]) => kws.some((w) => norm(v) === w.replace(/^=/, '')))) continue // "entraîneur au Cameroun": a country
+    if (onlyLevel(v)) continue // "un club d'Elite One", "en Ligue 1": a level, not a club
     if (/^(?:u\d|seniors?)$/i.test(v)) continue
     return capFirst(v)
   }
@@ -866,6 +894,7 @@ export function parseProfile(text: string): ProfileSlots {
   if (club) out.club = club
   const fmt = parseFormat(text)
   if (fmt) out.format = fmt
+  else if (out.ageGroup === 'Pro' && out.role !== 'player' && out.role !== 'parent') out.format = 11 // professional football is played eleven against eleven
   if (role === 'player' || !role) {
     const pos = parsePosition(text)
     if (pos) { out.position = pos; if (!role) out.role = 'player' }

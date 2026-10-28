@@ -1,0 +1,132 @@
+{
+  "id": "C02",
+  "family": "technique",
+  "order": 2,
+  "ages": "U11+",
+  "players": { "min": 5, "max": 8, "fr": "5 à 8 joueurs par losange, plusieurs losanges en parallèle", "en": "5 to 8 players per diamond, several diamonds side by side" },
+  "space": { "w": 30, "h": 20 },
+  "duration": { "fr": "4 x 4 min, 1 min de récupération", "en": "4 x 4 min, 1 min rest" },
+  "minutes": 20,
+  "md": ["MD-4", "MD-2", "youth"],
+  "intensity": "medium",
+  "intentions": ["respirer", "progresser"],
+  "skills": ["passe", "controle", "appels", "communication"],
+  "pieces": ["la carte", "le cœur"],
+  "fr": {
+    "title": "Le losange qui voyage",
+    "subtitle": "Circuit de passes en losange, avec rotations",
+    "objective": "Faire circuler le ballon dans un losange en recevant le corps ouvert, puis apprendre les rotations : la pointe décroche, le côté monte. Le joueur comprend que bouger crée la passe suivante.",
+    "organisation": [
+      "Quatre plots en losange sur 30 x 20 m : la base à gauche, deux côtés à 14 m, la pointe à droite.",
+      "Deux joueurs à la base, un sur chaque autre plot ; au-delà de 5 joueurs, on ajoute un joueur à la pointe.",
+      "Avec un grand groupe, plusieurs losanges côte à côte ; avec peu de ballons, un seul ballon par losange suffit.",
+      "Un deuxième ballon part de la pointe quand le groupe est à l'aise : les deux ne doivent jamais se croiser sur le même plot.",
+      "Chez les jeunes : eau à chaque changement de sens, à l'ombre si possible."
+    ],
+    "rules": [
+      "Le tour : base, côté, pointe, autre côté, puis retour en conduite à la base.",
+      "Chacun suit sa passe et prend la place du receveur.",
+      "Deux touches maximum : contrôle orienté vers le joueur suivant, puis passe.",
+      "On change de sens à chaque série.",
+      "La rotation (deuxième partie) : la pointe décroche pour recevoir, le côté monte prendre sa place et reçoit en profondeur."
+    ],
+    "coaching": [
+      "Reçois de profil, sur le pied le plus loin de celui qui t'a passé le ballon.",
+      "Ton premier contrôle va déjà vers le joueur suivant.",
+      "Passe ferme, au sol, sur le bon pied du receveur.",
+      "Pointe, décroche quand le passeur lève la tête, pas avant.",
+      "Côté, monte au moment où la pointe décroche : un espace libéré se remplit tout de suite."
+    ],
+    "progressions": [
+      "Une touche sur les côtés.",
+      "Deux ballons en même temps, départ de la base et de la pointe.",
+      "Un défenseur passif au centre du losange : les passes ne le traversent pas.",
+      "Passer au jeu de position P01, où le losange devient vivant."
+    ],
+    "regressions": [
+      "Losange plus petit, côtés à 10 m.",
+      "Touches libres, le temps que la rotation soit comprise.",
+      "Une seule partie : le tour, sans rotation."
+    ],
+    "measure": "Tours complets sans faute par série, et part des contrôles orientés vers le joueur suivant (objectif : 8 sur 10). En rotation, compter les fois où la pointe et le côté bougent ensemble.",
+    "story": "Jordi Puig dessine des triangles sur tout ; deux triangles collés font un losange, et le losange qui tourne ne laisse jamais le ballon seul."
+  },
+  "en": {
+    "title": "The Travelling Diamond",
+    "subtitle": "Diamond passing pattern with rotations",
+    "objective": "Move the ball around a diamond, receiving with an open body, then learn the rotations: the tip drops, the side goes up. Players learn that moving creates the next pass.",
+    "organisation": [
+      "Four cones in a diamond on 30 x 20 m: base on the left, two sides 14 m away, tip on the right.",
+      "Two players at the base, one on each other cone; with more than 5 players, add one at the tip.",
+      "With a big group, several diamonds side by side; with few balls, one ball per diamond is enough.",
+      "A second ball starts from the tip once the group is comfortable: the two must never arrive at the same cone.",
+      "With young players: water at every change of direction, in the shade if possible."
+    ],
+    "rules": [
+      "The lap: base, side, tip, other side, then dribble back to the base.",
+      "Everyone follows their pass and takes the receiver's place.",
+      "Two touches maximum: a first touch towards the next player, then the pass.",
+      "Change direction every set.",
+      "The rotation (second part): the tip drops to receive, the side goes up into his space and receives in depth."
+    ],
+    "coaching": [
+      "Receive side-on, on the foot furthest from the passer.",
+      "Your first touch already goes towards the next player.",
+      "Firm pass along the ground, onto the receiver's good foot.",
+      "Tip, drop when the passer lifts his head, not before.",
+      "Side, go up as the tip drops: a space that opens is filled straight away."
+    ],
+    "progressions": [
+      "One touch on the sides.",
+      "Two balls at once, starting from the base and the tip.",
+      "A passive defender in the middle of the diamond: passes may not go through him.",
+      "Move on to positional game P01, where the diamond comes alive."
+    ],
+    "regressions": [
+      "Smaller diamond, sides of 10 m.",
+      "Unlimited touches while the rotation is learned.",
+      "One part only: the lap, no rotation."
+    ],
+    "measure": "Clean laps per set, and the share of first touches towards the next player (target: 8 out of 10). In the rotation, count how often the tip and the side move together.",
+    "story": "Jordi Puig draws triangles on everything; put two triangles together and you get a diamond, and a turning diamond never leaves the ball alone."
+  },
+  "diagram": {
+    "view": "grid", "w": 30, "h": 20,
+    "players": [
+      { "id": "a", "team": "a", "x": 3, "y": 10, "label": "A" },
+      { "id": "b", "team": "a", "x": 15, "y": 3, "label": "B" },
+      { "id": "c", "team": "a", "x": 27, "y": 10, "label": "C" },
+      { "id": "d", "team": "a", "x": 15, "y": 17, "label": "D" }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "a", "to": "b", "kind": "pass", "n": 1 },
+      { "from": "b", "to": "c", "kind": "pass", "n": 2 },
+      { "from": "c", "to": "d", "kind": "pass", "n": 3 },
+      { "from": "d", "to": [5, 12.6], "kind": "dribble", "n": 4 }
+    ],
+    "labels": [
+      { "x": 15, "y": 10.4, "text": "chacun suit sa passe" }
+    ]
+  },
+  "diagram2": {
+    "view": "grid", "w": 30, "h": 20,
+    "players": [
+      { "id": "a", "team": "a", "x": 3, "y": 10, "label": "A" },
+      { "id": "b", "team": "a", "x": 15, "y": 3, "label": "B" },
+      { "id": "c", "team": "a", "x": 27, "y": 10, "label": "C" },
+      { "id": "d", "team": "a", "x": 15, "y": 17, "label": "D" }
+    ],
+    "ball": "a",
+    "arrows": [
+      { "from": "c", "to": [20, 12.5], "kind": "run", "n": 1 },
+      { "from": "a", "to": [20, 12.5], "kind": "pass", "n": 2 },
+      { "from": "b", "to": [26.5, 4.5], "kind": "run", "n": 3 },
+      { "from": [20, 12.5], "to": [26.5, 4.5], "kind": "pass", "n": 4 }
+    ],
+    "labels": [
+      { "x": 23.6, "y": 15.4, "text": "la pointe décroche" },
+      { "x": 20.2, "y": 6.6, "text": "le côté monte" }
+    ]
+  }
+}
