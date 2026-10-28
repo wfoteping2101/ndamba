@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Check, CheckCircle2, ChevronDown, CreditCard, Sparkles, X } from 'lucide-react'
+import { ArrowRight, Check, CheckCircle2, ChevronDown, CreditCard, X } from 'lucide-react'
 import { PLANS, type PlanDef } from '../../lib/config'
 import { db } from '../../lib/db'
 import { useDocumentTitle } from '../../lib/hooks'
@@ -113,7 +113,7 @@ function PlanCard({ plan, cycle, profile, onActivate }: { plan: PlanDef; cycle: 
       hl ? 'bg-forest-700 text-cream shadow-lift ring-2 ring-sun-300/70' : 'border border-line bg-paper shadow-card')}>
       {hl && (
         <span className="absolute -top-3 left-5 inline-flex items-center gap-1 rounded-full bg-sun-300 px-2.5 py-1 text-[11px] font-bold text-ink">
-          <Sparkles size={12} />{t('pricing.recommended')}
+          {t('pricing.recommended')}
         </span>
       )}
       <h2 className={cx('font-display text-[21px] font-semibold leading-tight', hl ? 'text-cream' : 'text-ink')}>{t(`common:plans.${plan.id}`)}</h2>

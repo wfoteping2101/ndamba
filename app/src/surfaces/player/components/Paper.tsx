@@ -22,9 +22,9 @@ export const handCls = 'font-display italic'
 /** Lined paper with a red margin line. `lines` false gives a plain grain only. */
 export function paperStyle(lines = true): CSSProperties {
   const grain = 'radial-gradient(rgba(120,90,40,0.05) 1px, transparent 1.2px)'
-  if (!lines) return { backgroundColor: '#FFFBF1', backgroundImage: grain, backgroundSize: '5px 5px' }
+  if (!lines) return { backgroundColor: '#FBFCF9', backgroundImage: grain, backgroundSize: '5px 5px' }
   return {
-    backgroundColor: '#FFFBF1',
+    backgroundColor: '#FBFCF9',
     backgroundImage: [
       'linear-gradient(90deg, transparent 37px, rgba(184,67,47,0.35) 37px, rgba(184,67,47,0.35) 38.5px, transparent 38.5px)',
       'repeating-linear-gradient(180deg, transparent 0, transparent 27px, rgba(61,79,107,0.13) 27px, rgba(61,79,107,0.13) 28px)',
@@ -36,14 +36,14 @@ export function paperStyle(lines = true): CSSProperties {
 
 export function PaperCard({ children, className, lines = true, as: As = 'div', style }: { children: ReactNode; className?: string; lines?: boolean; as?: 'div' | 'article' | 'section'; style?: CSSProperties }) {
   return (
-    <As className={cx('relative overflow-hidden rounded-2xl border border-[#E8DCC2] shadow-card', className)} style={{ ...paperStyle(lines), ...style }}>
+    <As className={cx('relative overflow-hidden rounded-2xl border border-[#DCE2D8] shadow-card', className)} style={{ ...paperStyle(lines), ...style }}>
       {children}
     </As>
   )
 }
 
 /** A strip of pagne: concentric circles, diamonds and dots, like the cover of the notebook. */
-export function WaxBand({ height = 56, base = '#B8432F', accent = '#E3A92B', third = '#1F4D3A', light = '#FBF7EE', className }: { height?: number; base?: string; accent?: string; third?: string; light?: string; className?: string }) {
+export function WaxBand({ height = 56, base = '#D7263D', accent = '#F5B700', third = '#0B5D3B', light = '#F6F7F2', className }: { height?: number; base?: string; accent?: string; third?: string; light?: string; className?: string }) {
   const id = useId().replace(/:/g, '')
   return (
     <svg className={cx('block w-full', className)} height={height} aria-hidden="true" preserveAspectRatio="none">
@@ -78,7 +78,7 @@ export function WaxBand({ height = 56, base = '#B8432F', accent = '#E3A92B', thi
 export function NotebookHeader({ eyebrow, title, subtitle, actions, photo, children }: { eyebrow?: string; title: string; subtitle?: ReactNode; actions?: ReactNode; photo?: ReactNode; children?: ReactNode }) {
   useHandFont()
   return (
-    <header className="mb-6 overflow-hidden rounded-3xl border border-[#E8DCC2] shadow-card">
+    <header className="mb-6 overflow-hidden rounded-3xl border border-[#DCE2D8] shadow-card">
       <WaxBand height={44} />
       <div className="flex gap-6 px-5 py-5 sm:px-7 sm:py-6" style={paperStyle(false)}>
         <div className="min-w-0 flex-1">

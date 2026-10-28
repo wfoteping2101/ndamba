@@ -79,7 +79,7 @@ export async function seedDemo(role: Role = 'coach', lang: 'fr' | 'en' = 'fr', l
   await db.transaction('rw', [db.profile, db.teams, db.players, db.sessions, db.matches, db.events, db.messages, db.tasks, db.notebook, db.challenges, db.videos], async () => {
     await Promise.all([db.profile.clear(), db.teams.clear(), db.players.clear(), db.sessions.clear(), db.matches.clear(), db.events.clear(), db.messages.clear(), db.tasks.clear(), db.notebook.clear(), db.challenges.clear(), db.videos.clear()])
     const now = nowISO()
-    const team: Team = { id: 'team_lionceaux', name: 'Lionceaux de Bonamoussadi U13', ageGroup: 'U13', format: 11, formation: '4-3-3', colors: { primary: '#1F4D3A', secondary: '#E3A92B' }, createdAt: now }
+    const team: Team = { id: 'team_lionceaux', name: 'Lionceaux de Bonamoussadi U13', ageGroup: 'U13', format: 11, formation: '4-3-3', colors: { primary: '#0B5D3B', secondary: '#F5B700' }, createdAt: now }
     await db.teams.put(team)
     const players: Player[] = ROSTER.map(([name, number, position, birthYear, foot, base], i) => ({ id: `pl_${number}`, teamId: team.id, name, number, position, birthYear, foot, skills: skills(i + 1, base), createdAt: now }))
     await db.players.bulkPut(players)
@@ -293,7 +293,7 @@ async function seedProDemo(role: Role, lang: 'fr' | 'en') {
   await db.transaction('rw', [db.profile, db.teams, db.players, db.sessions, db.matches, db.events, db.messages, db.tasks, db.notebook, db.challenges, db.videos], async () => {
     await Promise.all([db.profile.clear(), db.teams.clear(), db.players.clear(), db.sessions.clear(), db.matches.clear(), db.events.clear(), db.messages.clear(), db.tasks.clear(), db.notebook.clear(), db.challenges.clear(), db.videos.clear()])
     const now = nowISO()
-    const team: Team = { id: DEMO_TEAMS.pro, name: 'Étoile de la Côte', ageGroup: 'Seniors', format: 11, formation: '4-3-3', colors: { primary: '#14506B', secondary: '#E3A92B' }, createdAt: now }
+    const team: Team = { id: DEMO_TEAMS.pro, name: 'Étoile de la Côte', ageGroup: 'Seniors', format: 11, formation: '4-3-3', colors: { primary: '#14506B', secondary: '#F5B700' }, createdAt: now }
     await db.teams.put(team)
     const players: Player[] = PRO_ROSTER.map(([name, number, position, birthYear, foot, base, noteFr, noteEn], i) => ({
       id: `pl_${number}`, teamId: team.id, name, number, position, birthYear, foot, skills: skills(i + 3, base), notes: (fr ? noteFr : noteEn) || undefined, createdAt: now,

@@ -93,7 +93,7 @@ export const sessionMinutes = (s: Session) => s.blocks.reduce((a, b) => a + (b.m
 /* ---------------- teams, players, lineups ---------------- */
 
 export async function createTeam(p: { name: string; ageGroup: string; format: Team['format']; formation?: string }) {
-  const team: Team = { id: uid('tm_'), name: p.name, ageGroup: p.ageGroup, format: p.format, formation: p.formation || DEFAULT_FORMATION[p.format], colors: { primary: '#1F4D3A', secondary: '#E3A92B' }, createdAt: nowISO() }
+  const team: Team = { id: uid('tm_'), name: p.name, ageGroup: p.ageGroup, format: p.format, formation: p.formation || DEFAULT_FORMATION[p.format], colors: { primary: '#0B5D3B', secondary: '#F5B700' }, createdAt: nowISO() }
   await db.teams.put(team)
   const prof = await db.profile.get('me')
   if (prof && !prof.activeTeamId) await db.profile.update('me', { activeTeamId: team.id })

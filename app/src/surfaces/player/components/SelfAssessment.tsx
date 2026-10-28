@@ -27,9 +27,9 @@ export function SelfAssessment({ teamId, name, senior = false, coachSkills }: { 
   const P = senior ? 'perf.self' : 'self'
   const levelName = (v: number) => (senior ? t(`team:levels.${v}`) : t(`self.levels.${v}`))
   const axes = SKILLS.map((k) => ({ key: k, label: t(`common:skills.${k}`) }))
-  const series = [{ name: t(`${P}.me`), color: '#1F4D3A', values: self.levels as Record<string, number | undefined> }]
+  const series = [{ name: t(`${P}.me`), color: '#0B5D3B', values: self.levels as Record<string, number | undefined> }]
   const coachHas = !!coach && Object.keys(coach).length > 0
-  if (coachHas) series.push({ name: t(`${P}.coach`), color: '#C5762F', values: coach as Record<string, number | undefined> })
+  if (coachHas) series.push({ name: t(`${P}.coach`), color: '#BF5A2E', values: coach as Record<string, number | undefined> })
   const filled = SKILLS.filter((k) => self.levels[k]).length
 
   return (

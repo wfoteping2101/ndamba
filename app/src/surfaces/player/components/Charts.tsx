@@ -3,7 +3,7 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
 import { cx } from '../../../lib/util'
 
-const C = { line: '#E6DDCB', axis: '#9AA39D', ink: '#1D2621', soft: '#66706A', forest: '#1F4D3A', terra: '#C5762F', sun: '#E3A92B', surface: '#FFFDF8' }
+const C = { line: '#DCE2D8', axis: '#94A198', ink: '#12211A', soft: '#5D6C63', forest: '#0B5D3B', terra: '#BF5A2E', sun: '#F5B700', surface: '#FFFFFF' }
 
 /** Tooltip placed in % of the chart box (x in viewBox units of width w, yPct in % of the height). */
 function Tip({ x, yPct, children, w }: { x: number; yPct: number; children: ReactNode; w: number }) {
@@ -232,7 +232,7 @@ export function RingProgress({ value, max, size = 64, stroke = 6, color = C.fore
   return (
     <div className={cx('relative inline-grid place-items-center', className)} style={{ width: size, height: size }}>
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} aria-hidden="true" className="-rotate-90">
-        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="#F1EADB" strokeWidth={stroke} />
+        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="#ECEFE8" strokeWidth={stroke} />
         <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={color} strokeWidth={stroke} strokeLinecap="round" strokeDasharray={`${c * f} ${c}`} />
       </svg>
       <div className="absolute inset-0 grid place-items-center">{children}</div>

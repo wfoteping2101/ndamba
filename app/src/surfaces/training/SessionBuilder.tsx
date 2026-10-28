@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { ArrowLeft, CalendarPlus, Copy, Dumbbell, MessageCircle, MoreHorizontal, PenLine, Plus, Printer, Sparkles, Trash2, Wand2 } from 'lucide-react'
+import { ArrowLeft, CalendarPlus, Copy, Dumbbell, MessageCircle, MoreHorizontal, PenLine, Plus, Printer, Trash2 } from 'lucide-react'
+import { MolaMark } from '../../ui/brand'
 import { Badge, EmptyState, Field, Modal } from '../../ui'
 import { useT } from '../../i18n'
 import { db } from '../../lib/db'
@@ -114,7 +115,7 @@ export default function SessionBuilder() {
     <div>
       <div className="no-print mb-4 flex items-center justify-between gap-2">
         <Link to="/app/seances" className="btn-ghost btn-sm -ml-2"><ArrowLeft size={16} aria-hidden="true" />{t('builder.back')}</Link>
-        {s.createdBy === 'mola' && <span className="inline-flex items-center gap-1 text-xs font-semibold text-terra-600"><Sparkles size={13} aria-hidden="true" />{t('sessions.byMola')}</span>}
+        {s.createdBy === 'mola' && <span className="inline-flex items-center gap-1 text-xs font-semibold text-terra-600"><MolaMark size={13} aria-hidden="true" />{t('sessions.byMola')}</span>}
       </div>
 
       {/* editable header */}
@@ -156,7 +157,7 @@ export default function SessionBuilder() {
         <div className="min-w-0">
           <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
             <h2 className="font-display text-xl font-semibold text-ink">{t('builder.blocks')} <span className="text-base font-normal text-ink-faint">· {s.blocks.length}</span></h2>
-            <button type="button" className="btn-outline btn-sm" onClick={() => (s.blocks.length ? setAutoOpen(true) : autoCompose())}><Wand2 size={15} aria-hidden="true" />{t('builder.auto')}</button>
+            <button type="button" className="btn-outline btn-sm" onClick={() => (s.blocks.length ? setAutoOpen(true) : autoCompose())}><MolaMark size={15} aria-hidden="true" />{t('builder.auto')}</button>
           </div>
 
           {s.blocks.length === 0 ? (
@@ -164,7 +165,7 @@ export default function SessionBuilder() {
               <h3 className="font-display text-lg font-semibold text-ink">{t('builder.emptyTitle')}</h3>
               <p className="mx-auto mt-1 max-w-md text-sm text-ink-muted">{t('builder.emptyBody')}</p>
               <div className="mt-4 flex flex-wrap justify-center gap-2">
-                <button type="button" className="btn-primary" onClick={autoCompose}><Sparkles size={16} aria-hidden="true" />{t('builder.autoFirst')}</button>
+                <button type="button" className="btn-primary" onClick={autoCompose}><MolaMark size={16} aria-hidden="true" />{t('builder.autoFirst')}</button>
                 <button type="button" className="btn-outline" onClick={() => setDrawer(true)}><Plus size={16} aria-hidden="true" />{t('builder.addDrill')}</button>
               </div>
             </div>

@@ -56,7 +56,7 @@ export default function Lessons() {
         actions={<a href={BOOKS.tome1.href} className="btn-outline min-h-[44px]"><BookOpen size={16} aria-hidden="true" />{t('novel.read')}</a>}
         photo={<BookImage src={CHARACTERS_IMG} alt={t('lessons.charactersAlt', { heroes: SERIES.heroes })} width={ART_W} height={ART_H}
           className="block aspect-[2/3] w-full rounded-[3px] object-cover"
-          wrap={(img) => <figure className="w-[132px] -rotate-2 rounded-md bg-white p-1.5 pb-2 shadow-card ring-1 ring-[#E8DCC2]">{img}</figure>} />}>
+          wrap={(img) => <figure className="w-[132px] -rotate-2 rounded-md bg-white p-1.5 pb-2 shadow-card ring-1 ring-[#DCE2D8]">{img}</figure>} />}>
         <div className="mt-5 grid gap-4 sm:grid-cols-[1fr_auto] sm:items-end">
           <div>
             <div className="mb-1.5 flex items-baseline justify-between gap-2 text-sm">

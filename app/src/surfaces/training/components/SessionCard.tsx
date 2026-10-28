@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Copy, MoreVertical, Sparkles, Trash2 } from 'lucide-react'
+import { Copy, MoreVertical, Trash2 } from 'lucide-react'
+import { MolaMark } from '../../../ui/brand'
 import { useT } from '../../../i18n'
 import { sessionMinutes } from '../../../lib/actions'
 import { fmtDate, todayISO, cx } from '../../../lib/util'
@@ -25,7 +26,7 @@ export function SessionCard({ s, onDuplicate, onDelete, canDuplicate = true }: {
           {today && <span className="rounded-md bg-terra-500 px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">{t('common:misc.today')}</span>}
           <MdBadge md={s.md} />
           {s.intention && <IntentionBadge i={s.intention} />}
-          {s.createdBy === 'mola' && <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-terra-600" title={t('sessions.byMola')}><Sparkles size={12} aria-hidden="true" />Mola</span>}
+          {s.createdBy === 'mola' && <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-terra-600" title={t('sessions.byMola')}><MolaMark size={12} aria-hidden="true" />Mola</span>}
         </div>
         <h3 className="mt-1 truncate font-display text-[17px] font-semibold text-ink">{s.title}</h3>
         <div className="mt-0.5 text-xs text-ink-muted">{mins} {t('common:misc.minutes')} · {t('blocksCount', { count: s.blocks.length })}</div>

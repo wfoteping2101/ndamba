@@ -1,9 +1,7 @@
 import { useEffect, useRef, useState, type ComponentType, type ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import {
-  ArrowRight, BookOpen, CalendarDays, ClipboardList, Dumbbell, Eye, FileChartColumn, Flag, GraduationCap, LineChart, Network,
-  NotebookPen, Radio, Route, ShieldCheck, Shirt, Sparkles, Tags, Target, Users, Video, type LucideIcon,
-} from 'lucide-react'
+import { ArrowRight, BookOpen, CalendarDays, ClipboardList, Dumbbell, Eye, FileChartColumn, Flag, GraduationCap, LineChart, Network, NotebookPen, Radio, Route, ShieldCheck, Shirt, Tags, Target, Users, Video, type LucideIcon } from 'lucide-react'
+import { MolaMark } from '../../ui/brand'
 import { BOOKS, BRAND, PLANS, SERIES } from '../../lib/config'
 import { useDocumentTitle } from '../../lib/hooks'
 import { cx, fcfa, money } from '../../lib/util'
@@ -96,7 +94,7 @@ function Hero({ demo }: { demo: Demo }) {
             ))}
           </ul>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            <Link to="/bienvenue" className="btn-sun btn-lg"><Sparkles size={18} />{t('landing.hero.ctaStart')}</Link>
+            <Link to="/bienvenue" className="btn-sun btn-lg"><MolaMark size={18} />{t('landing.hero.ctaStart')}</Link>
           </div>
           <p className="mt-6 text-[12px] font-bold uppercase tracking-[0.16em] text-cream/55">{t('landing.hero.demoTitle')}</p>
           <DemoChoice demo={demo} dark quiet className="mt-3" />
@@ -254,7 +252,7 @@ function MolaSection({ demo }: { demo: Demo }) {
               <li key={k} className="rounded-2xl border border-line bg-paper px-3.5 py-2 text-[14px] leading-snug text-ink-soft">{t('quote', { text: t(`landing.mola.asks.${k}`) })}</li>
             ))}
           </ul>
-          <Link to="/bienvenue" className="btn-primary btn-lg mt-8"><Sparkles size={18} />{t('landing.mola.cta')}</Link>
+          <Link to="/bienvenue" className="btn-primary btn-lg mt-8"><MolaMark size={18} />{t('landing.mola.cta')}</Link>
         </div>
         <MolaChat onOpen={() => demo.launch('coach', '/app/semaine', 'pro')} />
       </div>
@@ -371,7 +369,7 @@ function FinalCta() {
           <h2 className="mx-auto mt-6 max-w-3xl text-balance text-[30px] font-semibold leading-[1.12] sm:text-[44px]">{t('quote', { text: BRAND.motto[lang] })}</h2>
           <p className="mx-auto mt-4 max-w-xl text-[16px] text-cream/75">{t('landing.final.body')}</p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link to="/bienvenue" className="btn-sun btn-lg"><Sparkles size={18} />{t('landing.hero.ctaStart')}</Link>
+            <Link to="/bienvenue" className="btn-sun btn-lg"><MolaMark size={18} />{t('landing.hero.ctaStart')}</Link>
             <Link to="/livres" className="btn btn-lg border border-cream/30 text-cream hover:bg-white/10"><BookOpen size={18} />{t('landing.final.secondary')}</Link>
           </div>
         </div>

@@ -8,27 +8,14 @@ import { updateProfile } from '../lib/session'
 
 /* ---------- Brand ---------- */
 
-export function LogoMark({ size = 32, className }: { size?: number; className?: string }) {
-  return (
-    <svg viewBox="0 0 64 64" width={size} height={size} className={className} aria-hidden="true">
-      <rect width="64" height="64" rx="14" fill="#1F4D3A" />
-      <circle cx="32" cy="32" r="17" fill="none" stroke="#FBF7EE" strokeWidth="3.5" />
-      <path d="M32 15 a17 17 0 0 1 0 34" fill="none" stroke="#E3A92B" strokeWidth="3.5" />
-      <circle cx="32" cy="32" r="5" fill="#C5762F" />
-      <circle cx="32" cy="15" r="3" fill="#E3A92B" />
-      <circle cx="17.3" cy="40.5" r="3" fill="#B8432F" />
-      <circle cx="46.7" cy="40.5" r="3" fill="#FBF7EE" />
-    </svg>
-  )
+/** Brand marks live in ./brand.tsx. LogoMark and Logo keep their old names for the pages that import them. */
+export { NdambaMark, NdambaWordmark, NdambaLogo, MolaMark, BRAND_COLORS } from './brand'
+import { NdambaMark, NdambaLogo } from './brand'
+export function LogoMark({ size = 32, className, light = false }: { size?: number; className?: string; light?: boolean }) {
+  return <NdambaMark size={size} className={className} tone={light ? 'light' : 'color'} />
 }
-
-export function Logo({ light = false, className }: { light?: boolean; className?: string }) {
-  return (
-    <span className={cx('inline-flex items-center gap-2', className)}>
-      <LogoMark size={30} />
-      <span className={cx('font-display text-[22px] font-semibold tracking-tight', light ? 'text-cream' : 'text-ink')}>Ndamba</span>
-    </span>
-  )
+export function Logo({ light = false, className, size = 'md' }: { light?: boolean; className?: string; size?: 'sm' | 'md' | 'lg' }) {
+  return <NdambaLogo light={light} className={className} size={size} />
 }
 
 /** Small FR / EN switch. Saves to the profile when there is one. */

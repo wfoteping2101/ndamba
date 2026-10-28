@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, type PointerEvent as RPointerEvent, type R
 export type Tool = 'arrow' | 'circle' | 'free'
 export interface Shape { kind: Tool; color: string; pts: [number, number][] }
 
-export const DRAW_COLORS = { sun: '#F0C760', cream: '#FBF7EE', clay: '#E0573F' } as const
+export const DRAW_COLORS = { sun: '#FFD452', cream: '#F6F7F2', clay: '#E0573F' } as const
 export type DrawColor = keyof typeof DRAW_COLORS
 
 /** Where the picture sits inside a <video> element with object-fit: contain (CSS pixels). */

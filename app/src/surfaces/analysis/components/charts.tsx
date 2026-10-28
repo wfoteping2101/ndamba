@@ -46,24 +46,24 @@ export function NjangiGauge({ total, size = 240, dark = false, showLabel = true 
   const end = start + (GAUGE_SWEEP * v) / 100
   const c = 100, r = 82
   const band = njangiBand(v)
-  const fill = band >= 3 ? '#1F4D3A' : band === 2 ? '#2F6B52' : band === 1 ? '#C5762F' : '#B8432F'
+  const fill = band >= 3 ? '#0B5D3B' : band === 2 ? '#13804F' : band === 1 ? '#BF5A2E' : '#D7263D'
   return (
     <figure className="flex flex-col items-center" aria-label={`Indice Njangi ${fmtNjangi(v, lang)} / 100, ${njangiLabel(v, lang)}`}>
       <svg viewBox="0 0 200 178" width={size} height={size * 0.89} role="img" aria-hidden="true">
-        <path d={arc(c, c, r, start, start + GAUGE_SWEEP)} fill="none" stroke={dark ? 'rgba(255,255,255,.12)' : '#F1EADB'} strokeWidth="16" strokeLinecap="round" />
-        {v > 0 && <path d={arc(c, c, r, start, Math.max(start + 0.5, end))} fill="none" stroke={dark ? '#E3A92B' : fill} strokeWidth="16" strokeLinecap="round" style={{ transition: 'all .5s ease' }} />}
+        <path d={arc(c, c, r, start, start + GAUGE_SWEEP)} fill="none" stroke={dark ? 'rgba(255,255,255,.12)' : '#ECEFE8'} strokeWidth="16" strokeLinecap="round" />
+        {v > 0 && <path d={arc(c, c, r, start, Math.max(start + 0.5, end))} fill="none" stroke={dark ? '#F5B700' : fill} strokeWidth="16" strokeLinecap="round" style={{ transition: 'all .5s ease' }} />}
         {NJANGI_BANDS.slice(1, -1).map((b) => {
           const a = start + (GAUGE_SWEEP * b) / 100
           const [x0, y0] = polar(c, c, r - 12, a)
           const [x1, y1] = polar(c, c, r - 19, a)
-          return <line key={b} x1={x0} y1={y0} x2={x1} y2={y1} stroke={dark ? 'rgba(255,255,255,.35)' : '#9AA39D'} strokeWidth="1.5" strokeLinecap="round" />
+          return <line key={b} x1={x0} y1={y0} x2={x1} y2={y1} stroke={dark ? 'rgba(255,255,255,.35)' : '#94A198'} strokeWidth="1.5" strokeLinecap="round" />
         })}
         {[0, 100].map((b) => {
           const [lx, ly] = polar(c, c, r - 30, start + (GAUGE_SWEEP * b) / 100)
-          return <text key={b} x={lx} y={ly + 4} textAnchor="middle" fontSize="10" fill={dark ? 'rgba(251,247,238,.55)' : '#9AA39D'} fontFamily="Inter, sans-serif">{b}</text>
+          return <text key={b} x={lx} y={ly + 4} textAnchor="middle" fontSize="10" fill={dark ? 'rgba(251,247,238,.55)' : '#94A198'} fontFamily="Inter, sans-serif">{b}</text>
         })}
-        <text x={c} y={c + 8} textAnchor="middle" fontSize="48" fontWeight="650" fill={dark ? '#FBF7EE' : '#1D2621'} fontFamily="Inter, sans-serif" style={{ letterSpacing: '-0.03em' }}>{fmtNjangi(v, lang)}</text>
-        <text x={c} y={c + 30} textAnchor="middle" fontSize="11" fill={dark ? 'rgba(251,247,238,.6)' : '#66706A'} fontFamily="Inter, sans-serif">{t('report.outOf100')}</text>
+        <text x={c} y={c + 8} textAnchor="middle" fontSize="48" fontWeight="650" fill={dark ? '#F6F7F2' : '#12211A'} fontFamily="Inter, sans-serif" style={{ letterSpacing: '-0.03em' }}>{fmtNjangi(v, lang)}</text>
+        <text x={c} y={c + 30} textAnchor="middle" fontSize="11" fill={dark ? 'rgba(251,247,238,.6)' : '#5D6C63'} fontFamily="Inter, sans-serif">{t('report.outOf100')}</text>
       </svg>
       {showLabel && <figcaption className={cx('-mt-3 text-center font-display text-lg font-semibold', dark ? 'text-cream' : 'text-ink')}>{njangiLabel(v, lang)}</figcaption>}
     </figure>
@@ -135,18 +135,18 @@ export function TrendChart({ points, onOpen }: { points: TrendPoint[]; onOpen?: 
       <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} className="block h-auto w-full" role="img" aria-label={t('hub.trend')}>
         {[0, 35, 50, 65, 80, 100].map((g) => (
           <g key={g}>
-            <line x1={L} x2={W - R} y1={y(g)} y2={y(g)} stroke={g === 0 ? '#E6DDCB' : '#F1EADB'} strokeWidth="1" />
-            <text x={L - 8} y={y(g) + 3.5} textAnchor="end" fontSize="11" fill="#9AA39D" style={{ fontVariantNumeric: 'tabular-nums' }}>{g}</text>
+            <line x1={L} x2={W - R} y1={y(g)} y2={y(g)} stroke={g === 0 ? '#DCE2D8' : '#ECEFE8'} strokeWidth="1" />
+            <text x={L - 8} y={y(g) + 3.5} textAnchor="end" fontSize="11" fill="#94A198" style={{ fontVariantNumeric: 'tabular-nums' }}>{g}</text>
           </g>
         ))}
-        {area && <path d={area} fill="#1F4D3A" opacity="0.08" />}
-        {n > 1 && <path d={path} fill="none" stroke="#1F4D3A" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />}
-        {hover != null && <line x1={x(hover)} x2={x(hover)} y1={Tp} y2={y(0)} stroke="#9AA39D" strokeWidth="1" />}
+        {area && <path d={area} fill="#0B5D3B" opacity="0.08" />}
+        {n > 1 && <path d={path} fill="none" stroke="#0B5D3B" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />}
+        {hover != null && <line x1={x(hover)} x2={x(hover)} y1={Tp} y2={y(0)} stroke="#94A198" strokeWidth="1" />}
         {points.map((p, i) => (
           <g key={p.id}>
-            <circle cx={x(i)} cy={y(p.total)} r={hover === i ? 6 : 4.5} fill="#1F4D3A" stroke="#FFFDF8" strokeWidth="2" />
-            {(i === n - 1 || i === hover) && <text x={x(i)} y={y(p.total) - 11} textAnchor="middle" fontSize="12" fontWeight="600" fill="#1D2621">{fmtNjangi(p.total, lang)}</text>}
-            {(i % showEvery === 0 || i === n - 1) && <text x={x(i)} y={H - 12} textAnchor="middle" fontSize="11" fill="#66706A">{p.label}</text>}
+            <circle cx={x(i)} cy={y(p.total)} r={hover === i ? 6 : 4.5} fill="#0B5D3B" stroke="#FFFFFF" strokeWidth="2" />
+            {(i === n - 1 || i === hover) && <text x={x(i)} y={y(p.total) - 11} textAnchor="middle" fontSize="12" fontWeight="600" fill="#12211A">{fmtNjangi(p.total, lang)}</text>}
+            {(i % showEvery === 0 || i === n - 1) && <text x={x(i)} y={H - 12} textAnchor="middle" fontSize="11" fill="#5D6C63">{p.label}</text>}
             <rect x={x(i) - Math.max(14, (W - L - R) / Math.max(1, n) / 2)} y={Tp} width={Math.max(28, (W - L - R) / Math.max(1, n))} height={H - Tp - B + 10} fill="transparent"
               onMouseEnter={() => setHover(i)} onFocus={() => setHover(i)} onBlur={() => setHover(null)} onClick={() => onOpen?.(p.id)} style={{ cursor: onOpen ? 'pointer' : 'default' }}
               tabIndex={onOpen ? 0 : -1} role={onOpen ? 'button' : undefined} aria-label={`${p.sub}: ${fmtNjangi(p.total, lang)}`} onKeyDown={(e) => { if (e.key === 'Enter') onOpen?.(p.id) }} />
@@ -168,9 +168,9 @@ export function TrendChart({ points, onOpen }: { points: TrendPoint[]; onOpen?: 
 /* ------------------------------------------------------------------ match timeline */
 
 const ON_BALL = new Set(['PASS_OK', 'PROG', 'LINE', 'FINAL3', 'BOX', 'FIX2', 'SWITCH', 'SHOT', 'SHOT_IN'])
-const COL_ACTIONS = '#2F6B52'
-const COL_REGAIN = '#7FAE93'
-const COL_LOSS = '#B8432F'
+const COL_ACTIONS = '#13804F'
+const COL_REGAIN = '#73B391'
+const COL_LOSS = '#D7263D'
 
 interface Bucket { half: 1 | 2 | 3 | 4; i: number; a: number; b: number; actions: number; losses: number; regains: number }
 
@@ -245,8 +245,8 @@ export function TimelineChart({ events, halfMinutes }: { events: MatchEvent[]; h
         <Legend color={COL_ACTIONS}>{t('report.series.actions')}</Legend>
         <Legend color={COL_REGAIN}>{t('report.series.regains')}</Legend>
         <Legend color={COL_LOSS}>{t('report.series.losses')}</Legend>
-        <span className="inline-flex items-center gap-1.5"><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="#E3A92B" stroke="#1D2621" strokeWidth="1" /></svg>{t('report.series.goalUs')}</span>
-        <span className="inline-flex items-center gap-1.5"><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="#FFFDF8" stroke="#B8432F" strokeWidth="2" /></svg>{t('report.series.goalThem')}</span>
+        <span className="inline-flex items-center gap-1.5"><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="#F5B700" stroke="#12211A" strokeWidth="1" /></svg>{t('report.series.goalUs')}</span>
+        <span className="inline-flex items-center gap-1.5"><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="#FFFFFF" stroke="#D7263D" strokeWidth="2" /></svg>{t('report.series.goalThem')}</span>
         <button type="button" className="link ml-auto no-print" onClick={() => setTable((v) => !v)}>{t('chart.table')}</button>
       </div>
       <div ref={box} className="relative" onMouseLeave={() => setHover(null)}>
@@ -254,15 +254,15 @@ export function TimelineChart({ events, halfMinutes }: { events: MatchEvent[]; h
           {/* panel 1 grid */}
           {[0, niceA / 2, niceA].map((g) => (
             <g key={g}>
-              <line x1={L} x2={W - R} y1={yA(g)} y2={yA(g)} stroke={g === 0 ? '#E6DDCB' : '#F1EADB'} strokeWidth="1" />
-              <text x={L - 6} y={yA(g) + 3.5} textAnchor="end" fontSize="11" fill="#9AA39D">{g}</text>
+              <line x1={L} x2={W - R} y1={yA(g)} y2={yA(g)} stroke={g === 0 ? '#DCE2D8' : '#ECEFE8'} strokeWidth="1" />
+              <text x={L - 6} y={yA(g) + 3.5} textAnchor="end" fontSize="11" fill="#94A198">{g}</text>
             </g>
           ))}
           {/* panel 2 baseline */}
-          <line x1={L} x2={W - R} y1={base2} y2={base2} stroke="#E6DDCB" strokeWidth="1" />
-          <text x={L - 6} y={base2 - h2 + 8} textAnchor="end" fontSize="11" fill="#9AA39D">{maxLR}</text>
-          <text x={L - 6} y={base2 + h2} textAnchor="end" fontSize="11" fill="#9AA39D">{maxLR}</text>
-          {hover != null && <rect x={xOf(hover)} y={top - 6} width={bw} height={H - top - bottom + 10} fill="#F1EADB" opacity="0.6" rx="6" />}
+          <line x1={L} x2={W - R} y1={base2} y2={base2} stroke="#DCE2D8" strokeWidth="1" />
+          <text x={L - 6} y={base2 - h2 + 8} textAnchor="end" fontSize="11" fill="#94A198">{maxLR}</text>
+          <text x={L - 6} y={base2 + h2} textAnchor="end" fontSize="11" fill="#94A198">{maxLR}</text>
+          {hover != null && <rect x={xOf(hover)} y={top - 6} width={bw} height={H - top - bottom + 10} fill="#ECEFE8" opacity="0.6" rx="6" />}
           {buckets.map((b, i) => {
             const x0 = xOf(i)
             const cxm = x0 + bw / 2
@@ -271,7 +271,7 @@ export function TimelineChart({ events, halfMinutes }: { events: MatchEvent[]; h
                 <path d={roundedTop(cxm - barW / 2, yA(b.actions), barW, yA(0) - yA(b.actions))} fill={COL_ACTIONS} />
                 <path d={roundedTop(cxm - barW2 / 2, base2 - yLR(b.regains), barW2, yLR(b.regains))} fill={COL_REGAIN} />
                 <path d={roundedBottom(cxm - barW2 / 2, base2 + 2, barW2, Math.max(0, yLR(b.losses) - 2))} fill={COL_LOSS} />
-                {b.i % labelEvery === 0 && <text x={x0 + 2} y={H - 8} fontSize="11" fill="#66706A">{b.a}'</text>}
+                {b.i % labelEvery === 0 && <text x={x0 + 2} y={H - 8} fontSize="11" fill="#5D6C63">{b.a}'</text>}
               </g>
             )
           })}
@@ -279,7 +279,7 @@ export function TimelineChart({ events, halfMinutes }: { events: MatchEvent[]; h
           {halvesUsed.slice(1).map((h) => {
             const idx = buckets.findIndex((b) => b.half === h)
             const xs = xOf(idx) - GAP / 2
-            return <g key={h}><line x1={xs} x2={xs} y1={top - 8} y2={H - bottom + 4} stroke="#E6DDCB" strokeWidth="1" /></g>
+            return <g key={h}><line x1={xs} x2={xs} y1={top - 8} y2={H - bottom + 4} stroke="#DCE2D8" strokeWidth="1" /></g>
           })}
           {/* goals */}
           {goals.map((g) => {
@@ -287,10 +287,10 @@ export function TimelineChart({ events, halfMinutes }: { events: MatchEvent[]; h
             if (gx == null) return null
             return (
               <g key={g.id}>
-                <line x1={gx} x2={gx} y1={top} y2={base2 + h2} stroke={g.side === 'us' ? '#C08A15' : '#B8432F'} strokeWidth="1" />
+                <line x1={gx} x2={gx} y1={top} y2={base2 + h2} stroke={g.side === 'us' ? '#D29C00' : '#D7263D'} strokeWidth="1" />
                 {g.side === 'us'
-                  ? <circle cx={gx} cy={top - 4} r="6" fill="#E3A92B" stroke="#1D2621" strokeWidth="1" />
-                  : <circle cx={gx} cy={top - 4} r="5.5" fill="#FFFDF8" stroke="#B8432F" strokeWidth="2.5" />}
+                  ? <circle cx={gx} cy={top - 4} r="6" fill="#F5B700" stroke="#12211A" strokeWidth="1" />
+                  : <circle cx={gx} cy={top - 4} r="5.5" fill="#FFFFFF" stroke="#D7263D" strokeWidth="2.5" />}
               </g>
             )
           })}
@@ -356,7 +356,7 @@ export function CompareBars({ cur, prev }: { cur: NjangiResult; prev: NjangiResu
 
 /* ------------------------------------------------------------------ mini dial */
 
-const dialColor = (v: number) => ['#B8432F', '#C5762F', '#E3A92B', '#2F6B52', '#1F4D3A'][njangiBand(v)]
+const dialColor = (v: number) => ['#D7263D', '#BF5A2E', '#F5B700', '#13804F', '#0B5D3B'][njangiBand(v)]
 
 /** The Indice as a small ring, for lists. */
 export function MiniDial({ value, size = 48 }: { value: number; size?: number }) {
@@ -366,7 +366,7 @@ export function MiniDial({ value, size = 48 }: { value: number; size?: number })
   return (
     <span className="relative inline-flex shrink-0 items-center justify-center" style={{ width: size, height: size }} role="img" aria-label={`Indice Njangi ${fmtNjangi(value, lang)} / 100, ${njangiLabel(value, lang)}`}>
       <svg viewBox="0 0 48 48" width={size} height={size} className="-rotate-90" aria-hidden="true">
-        <circle cx="24" cy="24" r={r} fill="none" stroke="#F1EADB" strokeWidth="5" />
+        <circle cx="24" cy="24" r={r} fill="none" stroke="#ECEFE8" strokeWidth="5" />
         <circle cx="24" cy="24" r={r} fill="none" stroke={dialColor(value)} strokeWidth="5" strokeLinecap="round" strokeDasharray={`${c * pct} ${c}`} />
       </svg>
       <span className="absolute font-sans font-semibold tabular-nums text-ink" style={{ fontSize: Math.round(size * 0.3) }}>{Math.round(value)}</span>

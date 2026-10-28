@@ -58,40 +58,40 @@ export default function NjangiCircle({ className }: { className?: string }) {
       <style>{css(id)}</style>
       <svg viewBox="0 0 360 300" className={`nj-${id} block h-auto w-full`} role="img" aria-label={t('landing.njangi.figTitle')}>
         {/* ground */}
-        <circle cx={CX} cy={CY} r={R + 34} fill="#F1EADB" />
-        <circle cx={CX} cy={CY} r={R} fill="none" stroke="#E0D3BA" strokeWidth="1.5" strokeDasharray="3 6" />
+        <circle cx={CX} cy={CY} r={R + 34} fill="#ECEFE8" />
+        <circle cx={CX} cy={CY} r={R} fill="none" stroke="#D3DAD0" strokeWidth="1.5" strokeDasharray="3 6" />
         {/* the pass lines (the route of the pot) */}
-        <g stroke="#1F4D3A" strokeOpacity=".28" strokeWidth="1.6" strokeDasharray="5 5" fill="none">
+        <g stroke="#0B5D3B" strokeOpacity=".28" strokeWidth="1.6" strokeDasharray="5 5" fill="none">
           {P.slice(0, 5).map((p, i) => <line key={i} x1={p[0]} y1={p[1]} x2={P[i + 1][0]} y2={P[i + 1][1]} />)}
         </g>
-        <line className="shotline" x1={P[5][0] + 12} y1={P[5][1]} x2={GOAL[0] - 10} y2={GOAL[1]} stroke="#C5762F" strokeOpacity=".45" strokeWidth="2" strokeDasharray="6 5" />
+        <line className="shotline" x1={P[5][0] + 12} y1={P[5][1]} x2={GOAL[0] - 10} y2={GOAL[1]} stroke="#BF5A2E" strokeOpacity=".45" strokeWidth="2" strokeDasharray="6 5" />
         {/* the goal */}
         <g>
-          <rect className="goalflash" x={GOAL[0] - 4} y={GOAL[1] - 30} width="22" height="60" rx="4" fill="#E3A92B" opacity="0" />
-          <path d={`M ${GOAL[0] + 14} ${GOAL[1] - 26} H ${GOAL[0]} V ${GOAL[1] + 26} H ${GOAL[0] + 14}`} fill="none" stroke="#1D2621" strokeWidth="3" strokeLinejoin="round" />
-          <g stroke="#1D2621" strokeOpacity=".25" strokeWidth="1"><path d={`M ${GOAL[0] + 5} ${GOAL[1] - 26} V ${GOAL[1] + 26} M ${GOAL[0] + 10} ${GOAL[1] - 26} V ${GOAL[1] + 26} M ${GOAL[0]} ${GOAL[1] - 13} H ${GOAL[0] + 14} M ${GOAL[0]} ${GOAL[1]} H ${GOAL[0] + 14} M ${GOAL[0]} ${GOAL[1] + 13} H ${GOAL[0] + 14}`} /></g>
-          <text x={GOAL[0] + 7} y={GOAL[1] + 46} textAnchor="middle" fontSize="11" fontWeight="600" fill="#66706A" fontFamily="Inter, sans-serif">{t('landing.njangi.goal')}</text>
+          <rect className="goalflash" x={GOAL[0] - 4} y={GOAL[1] - 30} width="22" height="60" rx="4" fill="#F5B700" opacity="0" />
+          <path d={`M ${GOAL[0] + 14} ${GOAL[1] - 26} H ${GOAL[0]} V ${GOAL[1] + 26} H ${GOAL[0] + 14}`} fill="none" stroke="#12211A" strokeWidth="3" strokeLinejoin="round" />
+          <g stroke="#12211A" strokeOpacity=".25" strokeWidth="1"><path d={`M ${GOAL[0] + 5} ${GOAL[1] - 26} V ${GOAL[1] + 26} M ${GOAL[0] + 10} ${GOAL[1] - 26} V ${GOAL[1] + 26} M ${GOAL[0]} ${GOAL[1] - 13} H ${GOAL[0] + 14} M ${GOAL[0]} ${GOAL[1]} H ${GOAL[0] + 14} M ${GOAL[0]} ${GOAL[1] + 13} H ${GOAL[0] + 14}`} /></g>
+          <text x={GOAL[0] + 7} y={GOAL[1] + 46} textAnchor="middle" fontSize="11" fontWeight="600" fill="#5D6C63" fontFamily="Inter, sans-serif">{t('landing.njangi.goal')}</text>
         </g>
         {/* the pot in the middle: six parts, one per touch */}
-        <circle className="potglow" cx={CX} cy={CY} r="46" fill="#E3A92B" opacity="0" />
-        <circle cx={CX} cy={CY} r="34" fill="#FFFDF8" stroke="#E6DDCB" />
+        <circle className="potglow" cx={CX} cy={CY} r="46" fill="#F5B700" opacity="0" />
+        <circle cx={CX} cy={CY} r="34" fill="#FFFFFF" stroke="#DCE2D8" />
         {ANGLES.map((a, i) => (
-          <path key={i} className={`seg${i}`} d={arc(40, a - 27, a + 27)} stroke={['#1F4D3A', '#C5762F', '#E3A92B', '#B8432F', '#2F6B52', '#C08A15'][i]} strokeWidth="9" strokeLinecap="round" fill="none" opacity=".14" />
+          <path key={i} className={`seg${i}`} d={arc(40, a - 27, a + 27)} stroke={['#0B5D3B', '#BF5A2E', '#F5B700', '#D7263D', '#13804F', '#D29C00'][i]} strokeWidth="9" strokeLinecap="round" fill="none" opacity=".14" />
         ))}
-        <text x={CX} y={CY + 4} textAnchor="middle" fontSize="13" fontStyle="italic" fontWeight="600" fill="#1D2621" fontFamily="Fraunces, Georgia, serif">{t('landing.njangi.pot')}</text>
+        <text x={CX} y={CY + 4} textAnchor="middle" fontSize="13" fontStyle="italic" fontWeight="600" fill="#12211A" fontFamily="Fraunces, Georgia, serif">{t('landing.njangi.pot')}</text>
         {/* the six players */}
         {P.map((p, i) => (
           <g key={i}>
-            <circle className={`touch${i} touchring`} cx={p[0]} cy={p[1]} r="15" fill="none" stroke="#E3A92B" strokeWidth="3" opacity="0" />
-            <circle cx={p[0]} cy={p[1]} r="15" fill="#1F4D3A" stroke="#FBF7EE" strokeWidth="2.5" />
-            <text x={p[0]} y={p[1] + 4.5} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#FBF7EE" fontFamily="Inter, sans-serif">{i + 1}</text>
+            <circle className={`touch${i} touchring`} cx={p[0]} cy={p[1]} r="15" fill="none" stroke="#F5B700" strokeWidth="3" opacity="0" />
+            <circle cx={p[0]} cy={p[1]} r="15" fill="#0B5D3B" stroke="#F6F7F2" strokeWidth="2.5" />
+            <text x={p[0]} y={p[1] + 4.5} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#F6F7F2" fontFamily="Inter, sans-serif">{i + 1}</text>
           </g>
         ))}
         {/* the ball */}
         <g className="ball" style={{ transform: `translate(${r1(P[5][0])}px, ${r1(P[5][1])}px)` }}>
           <g transform="translate(9 -12)">
-            <circle r="7.5" fill="#FFFDF8" stroke="#1D2621" strokeWidth="1.6" />
-            <path d="M -2.6 -2.2 L 2.6 -2.2 L 3.8 2 L 0 4.4 L -3.8 2 Z" fill="#1D2621" />
+            <circle r="7.5" fill="#FFFFFF" stroke="#12211A" strokeWidth="1.6" />
+            <path d="M -2.6 -2.2 L 2.6 -2.2 L 3.8 2 L 0 4.4 L -3.8 2 Z" fill="#12211A" />
           </g>
         </g>
       </svg>

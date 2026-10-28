@@ -77,8 +77,8 @@ export default function MatchSheet() {
     <div className="match-sheet">
       <style>{`@media print {
         .match-sheet { font-size: 12px; }
-        .match-sheet .print-plate { background: #fff !important; color: #1D2621 !important; border: 1.5px solid #1F4D3A; }
-        .match-sheet .print-plate * { color: #1D2621 !important; border-color: #E6DDCB !important; }
+        .match-sheet .print-plate { background: #fff !important; color: #12211A !important; border: 1.5px solid #0B5D3B; }
+        .match-sheet .print-plate * { color: #12211A !important; border-color: #DCE2D8 !important; }
         .match-sheet .print-grid { display: grid !important; grid-template-columns: 320px 1fr !important; gap: 16px !important; }
         .match-sheet section, .match-sheet aside { break-inside: avoid; }
         header, nav, aside.sticky, .no-print { display: none !important; }

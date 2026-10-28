@@ -54,7 +54,7 @@ function YouthSpace() {
       <section className="relative mb-5 overflow-hidden rounded-[28px] bg-forest-600 text-cream shadow-card sm:mb-6">
         <div aria-hidden="true" className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-sun-500/20 blur-3xl" />
         <div className="relative grid grid-cols-1 gap-5 p-5 sm:p-7 md:grid-cols-[auto_1fr] md:items-center">
-          <RingProgress value={p.xp - p.levelMin} max={(p.nextMin ?? p.xp) - p.levelMin || 1} size={124} stroke={10} color="#E3A92B" className="mx-auto md:mx-0">
+          <RingProgress value={p.xp - p.levelMin} max={(p.nextMin ?? p.xp) - p.levelMin || 1} size={124} stroke={10} color="#F5B700" className="mx-auto md:mx-0">
             <span className="text-center leading-none"><span className="block font-display text-[40px] font-semibold text-cream">{p.level + 1}</span><span className="text-[10.5px] font-semibold uppercase tracking-[0.12em] text-cream/70">{t('xp.level')}</span></span>
           </RingProgress>
           <div className="min-w-0 text-center md:text-left">
@@ -125,11 +125,11 @@ function YouthSpace() {
       <HistorySection logs={logs} onDeleted={(log) => toast({ text: t('history.deleted'), action: t('history.undo'), onAction: () => { db.challenges.put(log) } })} />
 
       <section className="grid grid-cols-1 gap-3 sm:grid-cols-2" aria-label={t('space.moreLabel')}>
-        <Link to="/app/joueur/lecons" className="flex min-h-[88px] items-center gap-4 rounded-2xl border border-[#E8DCC2] bg-[#FFFBF1] p-4 shadow-card transition hover:border-terra-300">
+        <Link to="/app/joueur/lecons" className="flex min-h-[88px] items-center gap-4 rounded-2xl border border-[#DCE2D8] bg-[#FBFCF9] p-4 shadow-card transition hover:border-terra-300">
           <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-clay-500 text-cream"><BookOpen size={22} aria-hidden="true" /></span>
           <span><span className="block font-display text-lg font-semibold italic text-ink">{t('lessons.title')}</span><span className="block text-sm text-ink-muted">{t('space.lessonsHint')}</span></span>
         </Link>
-        <Link to="/app/joueur/carnet" className="flex min-h-[88px] items-center gap-4 rounded-2xl border border-[#E8DCC2] bg-[#FFFBF1] p-4 shadow-card transition hover:border-terra-300">
+        <Link to="/app/joueur/carnet" className="flex min-h-[88px] items-center gap-4 rounded-2xl border border-[#DCE2D8] bg-[#FBFCF9] p-4 shadow-card transition hover:border-terra-300">
           <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-forest-600 text-cream"><NotebookPen size={22} aria-hidden="true" /></span>
           <span><span className="block font-display text-lg font-semibold italic text-ink">{t('notebook.title')}</span><span className="block text-sm text-ink-muted">{t('space.notebookHint')}</span></span>
         </Link>
@@ -191,7 +191,7 @@ function ProgressSection({ logs, today, p }: { logs: ChallengeLog[]; today: stri
               <span className="text-sm tabular-nums text-ink-muted">{t('progress.xp14', { n: xp14 })}</span>
             </div>
             <DayBars data={bars} unit="XP" ariaLabel={t('progress.xpAria', { n: xp14 })} />
-            <Legend items={[{ name: t('progress.legendDay'), color: '#1F4D3A' }, { name: t('progress.legendToday'), color: '#C5762F' }]} />
+            <Legend items={[{ name: t('progress.legendDay'), color: '#0B5D3B' }, { name: t('progress.legendToday'), color: '#BF5A2E' }]} />
           </div>
           <div className="card card-pad">
             <div className="mb-2 flex flex-wrap items-center justify-between gap-2">

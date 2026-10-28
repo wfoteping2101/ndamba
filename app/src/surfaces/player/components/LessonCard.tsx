@@ -42,7 +42,7 @@ export function LessonCard({ lesson: l, variant = 'full', className }: { lesson:
           <BookImage src={chapterImg(l.no)} alt={t('lesson.imgAlt', { n: l.no, title: l.chapterTitle })} width={ART_W} height={ART_H}
             className="block aspect-[2/3] w-full rounded-[3px] object-cover"
             wrap={(img) => (
-              <figure className={cx('float-right mb-2 ml-3 mt-1 rotate-[1.5deg] rounded-md bg-white p-1.5 pb-2 shadow-card ring-1 ring-[#E8DCC2]', home ? 'w-[40%] max-w-[190px]' : 'w-[38%] max-w-[170px]')}>{img}</figure>
+              <figure className={cx('float-right mb-2 ml-3 mt-1 rotate-[1.5deg] rounded-md bg-white p-1.5 pb-2 shadow-card ring-1 ring-[#DCE2D8]', home ? 'w-[40%] max-w-[190px]' : 'w-[38%] max-w-[170px]')}>{img}</figure>
             )} />
           <Lines lines={l.lines} />
         </div>
@@ -55,7 +55,7 @@ export function LessonCard({ lesson: l, variant = 'full', className }: { lesson:
         )}
 
         {l.diagram && (
-          <figure className="mx-auto mt-3 rounded-xl border border-[#E8DCC2] bg-paper/80 p-1.5" style={{ maxWidth: diagramMaxWidth(l.diagram) }}>
+          <figure className="mx-auto mt-3 rounded-xl border border-[#DCE2D8] bg-paper/80 p-1.5" style={{ maxWidth: diagramMaxWidth(l.diagram) }}>
             <Pitch spec={l.diagram} width={560} title={l.title} />
             <figcaption className="px-1.5 pb-0.5 pt-1 text-xs text-ink-muted">{t('lesson.diagram')}</figcaption>
           </figure>
@@ -72,7 +72,7 @@ export function LessonCard({ lesson: l, variant = 'full', className }: { lesson:
         {!home && (challenge || drill) && (
           <div className="mt-3 grid grid-cols-1 gap-2">
             {challenge && (
-              <Link to={`/app/joueur#defi-${challenge.id}`} className="flex min-h-[52px] items-center gap-3 rounded-xl border border-[#E8DCC2] bg-paper/80 px-3 py-2 transition hover:border-terra-300">
+              <Link to={`/app/joueur#defi-${challenge.id}`} className="flex min-h-[52px] items-center gap-3 rounded-xl border border-[#DCE2D8] bg-paper/80 px-3 py-2 transition hover:border-terra-300">
                 <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-terra-50 text-terra-600"><Target size={17} aria-hidden="true" /></span>
                 <span className="min-w-0">
                   <span className="block text-[11px] font-semibold uppercase tracking-[0.12em] text-terra-600">{t('lesson.challenge')}</span>
@@ -81,7 +81,7 @@ export function LessonCard({ lesson: l, variant = 'full', className }: { lesson:
               </Link>
             )}
             {drill && (
-              <Link to={`/app/exercices/${drill.id}`} className="flex min-h-[52px] items-center gap-3 rounded-xl border border-[#E8DCC2] bg-paper/80 px-3 py-2 transition hover:border-forest-300">
+              <Link to={`/app/exercices/${drill.id}`} className="flex min-h-[52px] items-center gap-3 rounded-xl border border-[#DCE2D8] bg-paper/80 px-3 py-2 transition hover:border-forest-300">
                 <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-forest-50 text-forest-600"><Dumbbell size={17} aria-hidden="true" /></span>
                 <span className="min-w-0">
                   <span className="block text-[11px] font-semibold uppercase tracking-[0.12em] text-forest-600">{t('lesson.drill', { id: drill.id })}</span>

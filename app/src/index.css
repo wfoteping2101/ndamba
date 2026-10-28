@@ -6,23 +6,29 @@
   html { -webkit-text-size-adjust: 100%; }
   body {
     @apply bg-cream text-ink font-sans antialiased;
-    font-feature-settings: 'cv11', 'ss01';
+    font-stretch: 100%;
   }
+  /* Display type: Archivo Expanded ExtraBold, the lettering of a football kit. */
   h1, h2, h3, .font-display {
-    font-family: 'Fraunces', Georgia, serif;
-    font-optical-sizing: auto;
-    letter-spacing: -0.012em;
+    font-family: 'Archivo Variable', Archivo, system-ui, sans-serif;
+    font-stretch: 116%;
+    font-weight: 780;
+    letter-spacing: -0.018em;
+    line-height: 1.08;
   }
-  ::selection { background: #F3D9BC; }
+  h1 { letter-spacing: -0.024em; line-height: 1.02; }
+  .font-display.font-semibold, h2.font-semibold, h3.font-semibold { font-weight: 740; }
+  .num, .tabular-nums { font-variant-numeric: tabular-nums lining-nums; }
+  ::selection { background: #FFEAA6; }
   input, select, textarea, button { font: inherit; }
-  :focus-visible { outline: 2px solid #C5762F; outline-offset: 2px; }
+  :focus-visible { outline: 2.5px solid #13804F; outline-offset: 2px; border-radius: 6px; }
 }
 
 @layer components {
   .container-page { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
   .card { @apply rounded-2xl border border-line bg-paper shadow-card; }
   .card-pad { @apply p-4 sm:p-5; }
-  .eyebrow { @apply text-[11px] font-semibold uppercase tracking-[0.16em] text-terra-600; }
+  .eyebrow { @apply text-[13px] font-semibold text-forest-600; font-stretch: 108%; }
   .label { @apply mb-1 block text-sm font-medium text-ink-soft; }
   .input {
     @apply w-full rounded-xl border border-line bg-white px-3 py-2.5 text-[15px] text-ink placeholder:text-ink-faint
@@ -53,7 +59,7 @@
   .prose-n li { @apply my-1; }
   .prose-n strong { @apply text-ink; }
   .table-n { @apply w-full text-left text-sm; }
-  .table-n th { @apply border-b border-line px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink-muted; }
+  .table-n th { @apply border-b border-line px-3 py-2 text-[13px] font-semibold text-ink-muted; }
   .table-n td { @apply border-b border-line/70 px-3 py-2.5 align-top; }
   .pitch-svg svg { width: 100%; height: auto; display: block; }
   .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }

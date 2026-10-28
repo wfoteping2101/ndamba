@@ -108,8 +108,8 @@ function Spark({ pts, domain }: { pts: Pt[]; domain: { start: string; end: strin
   const y = (l: number) => H - 4 - ((l - 1) / 3) * (H - 8)
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className="my-1.5 h-[34px] w-full" preserveAspectRatio="none" aria-hidden="true">
-      {[1, 2, 3, 4].map((l) => <line key={l} x1={0} x2={W} y1={y(l)} y2={y(l)} stroke="#EFE7D6" strokeWidth={1} vectorEffect="non-scaling-stroke" />)}
-      {pts.length > 0 && <path d={stepPath(pts, x, y, domain.end)} fill="none" stroke="#1F4D3A" strokeWidth={2} strokeLinejoin="round" vectorEffect="non-scaling-stroke" />}
+      {[1, 2, 3, 4].map((l) => <line key={l} x1={0} x2={W} y1={y(l)} y2={y(l)} stroke="#E6EAE2" strokeWidth={1} vectorEffect="non-scaling-stroke" />)}
+      {pts.length > 0 && <path d={stepPath(pts, x, y, domain.end)} fill="none" stroke="#0B5D3B" strokeWidth={2} strokeLinejoin="round" vectorEffect="non-scaling-stroke" />}
     </svg>
   )
 }
@@ -143,23 +143,23 @@ function Detail({ skill, pts, evidence, domain }: { skill: SkillKey; pts: Pt[]; 
       {bw > 0 && <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} className="block" role="img" aria-label={t('skills.chartAria', { skill: t(`common:skills.${skill}`), points: label, plus: plus.length, work: work.length })}>
         {[1, 2, 3, 4].map((l) => (
           <g key={l}>
-            <line x1={L} x2={W - R} y1={y(l)} y2={y(l)} stroke="#E6DDCB" strokeDasharray={l === 4 ? undefined : '3 4'} />
-            <text x={L - 8} y={y(l) + 4} textAnchor="end" fontSize="12" fontWeight={700} fill="#66706A" fontFamily="Inter, sans-serif">{l}</text>
+            <line x1={L} x2={W - R} y1={y(l)} y2={y(l)} stroke="#DCE2D8" strokeDasharray={l === 4 ? undefined : '3 4'} />
+            <text x={L - 8} y={y(l) + 4} textAnchor="end" fontSize="12" fontWeight={700} fill="#5D6C63" fontFamily="Inter, sans-serif">{l}</text>
           </g>
         ))}
         {months.map((m) => (
           <g key={m}>
-            <line x1={x(m)} x2={x(m)} y1={T} y2={H - B + 6} stroke="#EFE7D6" />
-            <text x={x(m) + 3} y={H - B + 18} fontSize="11" fill="#9AA39D" fontFamily="Inter, sans-serif">{fmtDate(m, lang, { month: 'short' }).replace('.', '')}</text>
+            <line x1={x(m)} x2={x(m)} y1={T} y2={H - B + 6} stroke="#E6EAE2" />
+            <text x={x(m) + 3} y={H - B + 18} fontSize="11" fill="#94A198" fontFamily="Inter, sans-serif">{fmtDate(m, lang, { month: 'short' }).replace('.', '')}</text>
           </g>
         ))}
-        {pts.length > 0 && <path d={stepPath(pts, x, y, domain.end)} fill="none" stroke="#1F4D3A" strokeWidth={3} strokeLinejoin="round" strokeLinecap="round" />}
-        {pts.map((p, i) => <circle key={i} cx={x(p.date)} cy={y(p.level)} r={4.5} fill="#FFFDF8" stroke="#1F4D3A" strokeWidth={2.4} />)}
+        {pts.length > 0 && <path d={stepPath(pts, x, y, domain.end)} fill="none" stroke="#0B5D3B" strokeWidth={3} strokeLinejoin="round" strokeLinecap="round" />}
+        {pts.map((p, i) => <circle key={i} cx={x(p.date)} cy={y(p.level)} r={4.5} fill="#FFFFFF" stroke="#0B5D3B" strokeWidth={2.4} />)}
         {/* evidence lanes: strengths seen, then things to work on */}
-        <text x={L - 8} y={H - 18} textAnchor="end" fontSize="13" fontWeight={700} fill="#2F6B52" fontFamily="Inter, sans-serif">+</text>
-        <text x={L - 8} y={H - 4} textAnchor="end" fontSize="13" fontWeight={700} fill="#A86020" fontFamily="Inter, sans-serif">·</text>
-        {stack(plus).map((e, i) => <circle key={`p${i}`} cx={x(e.date) + e.n * 7} cy={H - 22} r={3.6} fill="#2F6B52" />)}
-        {stack(work).map((e, i) => <circle key={`w${i}`} cx={x(e.date) + e.n * 7} cy={H - 8} r={3.6} fill="#C5762F" />)}
+        <text x={L - 8} y={H - 18} textAnchor="end" fontSize="13" fontWeight={700} fill="#13804F" fontFamily="Inter, sans-serif">+</text>
+        <text x={L - 8} y={H - 4} textAnchor="end" fontSize="13" fontWeight={700} fill="#A04A24" fontFamily="Inter, sans-serif">·</text>
+        {stack(plus).map((e, i) => <circle key={`p${i}`} cx={x(e.date) + e.n * 7} cy={H - 22} r={3.6} fill="#13804F" />)}
+        {stack(work).map((e, i) => <circle key={`w${i}`} cx={x(e.date) + e.n * 7} cy={H - 8} r={3.6} fill="#BF5A2E" />)}
       </svg>}
       </div>
       <dl className="mt-2 grid gap-2 text-[13px] leading-snug sm:grid-cols-2">

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { CalendarDays, ClipboardList, Dumbbell, Plus, Sparkles } from 'lucide-react'
+import { CalendarDays, ClipboardList, Dumbbell, Plus } from 'lucide-react'
+import { MolaMark } from '../../ui/brand'
 import { EmptyState, PageHeader, Tabs } from '../../ui'
 import { useT } from '../../i18n'
 import { db } from '../../lib/db'
@@ -64,7 +65,7 @@ export default function Sessions() {
       {all === null ? null : all.length === 0 ? (
         <EmptyState icon={<ClipboardList size={36} />} title={t('sessions.emptyTitle')} body={t('sessions.emptyBody')}
           action={<div className="flex flex-wrap justify-center gap-2">
-            <button type="button" className="btn-primary" onClick={() => setCreating(true)}><Sparkles size={16} aria-hidden="true" />{t('sessions.emptyCta')}</button>
+            <button type="button" className="btn-primary" onClick={() => setCreating(true)}><MolaMark size={16} aria-hidden="true" />{t('sessions.emptyCta')}</button>
             <Link to="/app/exercices" className="btn-outline"><Dumbbell size={16} aria-hidden="true" />{t('sessions.browse')}</Link>
           </div>} />
       ) : (

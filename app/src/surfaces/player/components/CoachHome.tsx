@@ -2,10 +2,8 @@
 // the last Indice Njangi, quick actions and a suggestion from Mola.
 import { useMemo, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import {
-  ArrowRight, BookOpen, CalendarDays, CalendarPlus, ChartLine, ClipboardList, Clock, Dumbbell, MapPin, Plus,
-  Radio, Shirt, Sparkles, Trophy, Wand2,
-} from 'lucide-react'
+import { ArrowRight, BookOpen, CalendarDays, CalendarPlus, ChartLine, ClipboardList, Clock, Dumbbell, MapPin, Plus, Radio, Shirt, Trophy } from 'lucide-react'
+import { MolaMark } from '../../../ui/brand'
 import { Badge } from '../../../ui'
 import { useT } from '../../../i18n'
 import { db } from '../../../lib/db'
@@ -182,7 +180,7 @@ function TodayCard({ today, sessions, matches, md, inMatchWeek, busy, onCreate }
           </p>
           <p className="mt-1 text-sm text-ink-muted">{t(`mdWhy.${md}`)}</p>
           <div className="mt-4 flex flex-wrap gap-2">
-            <button type="button" className="btn-primary min-h-[44px]" onClick={onCreate} disabled={busy}><Wand2 size={17} aria-hidden="true" />{t('today.create', { md: md === 'youth' ? t('common:md.youth') : md })}</button>
+            <button type="button" className="btn-primary min-h-[44px]" onClick={onCreate} disabled={busy}><MolaMark size={17} aria-hidden="true" />{t('today.create', { md: md === 'youth' ? t('common:md.youth') : md })}</button>
             <Link to="/app/exercices" className="btn-outline min-h-[44px]"><Dumbbell size={17} aria-hidden="true" />{t('today.browse')}</Link>
           </div>
           {tomorrow && (
@@ -213,7 +211,7 @@ function SessionPreview({ s, more }: { s: Session; more: number }) {
         {s.intention && <Badge tone="terra">{t(`common:intentions.${s.intention}`)}</Badge>}
         <Badge><Clock size={11} aria-hidden="true" />{t('today.minutes', { n: sessionMinutes(s) })}</Badge>
         <Badge>{t('today.blocks', { count: s.blocks.length })}</Badge>
-        {s.createdBy === 'mola' && <Badge tone="sun"><Sparkles size={11} aria-hidden="true" />Mola</Badge>}
+        {s.createdBy === 'mola' && <Badge tone="sun"><MolaMark size={11} aria-hidden="true" />Mola</Badge>}
       </div>
       {s.blocks.length === 0 ? (
         <p className="text-sm text-ink-muted">{t('today.emptyBlocks')}</p>
@@ -416,7 +414,7 @@ function IndiceCard({ analysed, next, busy, onPrepare }: { analysed: Analysed[];
         <div className="mt-3 flex flex-wrap gap-2">
           {next && daysBetween(m.date, next.date) > 0 && (
             <button type="button" className="btn-primary btn-sm min-h-[44px]" onClick={() => onPrepare(intention)} disabled={busy}>
-              <Wand2 size={16} aria-hidden="true" />{t('indice.prepare', { intention: t(`common:intentions.${intention}`) })}
+              <MolaMark size={16} aria-hidden="true" />{t('indice.prepare', { intention: t(`common:intentions.${intention}`) })}
             </button>
           )}
           <Link to={`/app/analyse/rapport/${m.id}`} className="btn-outline btn-sm min-h-[44px]"><ChartLine size={16} aria-hidden="true" />{t('indice.report')}</Link>
@@ -459,7 +457,7 @@ function MolaCard({ team, next, sessions, today, analysed }: { team: Team | null
   return (
     <section className="flex h-full flex-col rounded-2xl border border-sun-300 bg-sun-50 p-4 shadow-card sm:p-5" aria-labelledby="mola-h">
       <div className="flex items-center gap-3">
-        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-night-800 text-sun-300"><Sparkles size={20} aria-hidden="true" /></span>
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-night-800 text-sun-300"><MolaMark size={20} aria-hidden="true" /></span>
         <div>
           <h2 id="mola-h" className="font-display text-lg font-semibold text-ink">{t('mola.title')}</h2>
           <div className="text-xs text-ink-muted">{t('mola.subtitle')}</div>

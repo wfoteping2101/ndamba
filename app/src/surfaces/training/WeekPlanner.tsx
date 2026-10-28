@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { BookOpen, CalendarCheck, ChevronLeft, ChevronRight, MapPin, Plus, Sparkles, Trophy } from 'lucide-react'
+import { BookOpen, CalendarCheck, ChevronLeft, ChevronRight, MapPin, Plus, Trophy } from 'lucide-react'
+import { MolaMark } from '../../ui/brand'
 import { Callout, Modal, PageHeader } from '../../ui'
 import { useT } from '../../i18n'
 import { db } from '../../lib/db'
@@ -88,7 +89,7 @@ export default function WeekPlanner() {
           </span>
         ) : planTarget ? (
           <button type="button" className="btn-accent min-h-[44px]" onClick={runPlan} disabled={busy || quota.limited}>
-            <Sparkles size={16} aria-hidden="true" />{t('week.plan')}
+            <MolaMark size={16} aria-hidden="true" />{t('week.plan')}
           </button>
         ) : (
           <Link to="/app/matchs/nouveau" className="btn-outline min-h-[44px]"><Trophy size={16} aria-hidden="true" />{t('week.addMatch')}</Link>

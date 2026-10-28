@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { Check, CalendarDays, LoaderCircle, RotateCcw, SendHorizontal, Sparkles } from 'lucide-react'
+import { Check, CalendarDays, LoaderCircle, RotateCcw, SendHorizontal } from 'lucide-react'
+import { MolaMark } from '../../../ui/brand'
 import { useT } from '../../../i18n'
 import { cx } from '../../../lib/util'
 
@@ -46,7 +47,7 @@ export default function MolaChat({ onOpen }: { onOpen?: () => void }) {
     <div ref={ref} className="overflow-hidden rounded-[28px] border border-line bg-paper shadow-lift">
       {/* header */}
       <div className="flex items-center gap-3 border-b border-line px-4 py-3">
-        <span className="grid h-10 w-10 place-items-center rounded-full bg-forest-600 text-sun-300"><Sparkles size={18} /></span>
+        <span className="grid h-10 w-10 place-items-center rounded-full bg-forest-600 text-sun-300"><MolaMark size={18} /></span>
         <div className="min-w-0 flex-1">
           <div className="font-display text-[17px] font-semibold leading-tight text-ink">{t('landing.mola.chat.name')}</div>
           <div className="flex items-center gap-1.5 text-xs text-ink-muted">

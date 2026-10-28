@@ -11,8 +11,8 @@ export type Tone = 'neutral' | 'forest' | 'terra' | 'sun' | 'clay' | 'dark' | 'o
 export const INTENSITIES: Intensity[] = ['low', 'medium', 'high', 'very-high']
 export const INTENSITY_FACTOR: Record<Intensity, number> = { low: 1, medium: 2, high: 3, 'very-high': 4 }
 /** Sequential terracotta ramp, light to dark (validated against the paper surface). */
-export const INTENSITY_COLOR: Record<Intensity, string> = { low: '#E0A56B', medium: '#C5762F', high: '#A86020', 'very-high': '#844A17' }
-export const LOAD_COLOR = '#C5762F'
+export const INTENSITY_COLOR: Record<Intensity, string> = { low: '#DB8D66', medium: '#BF5A2E', high: '#A04A24', 'very-high': '#7D391B' }
+export const LOAD_COLOR = '#BF5A2E'
 
 export const MD_LIST: MD[] = ['MD-4', 'MD-3', 'MD-2', 'MD-1', 'MD+1', 'youth']
 export const MD_TONE: Record<MD, Tone> = { 'MD-4': 'clay', 'MD-3': 'terra', 'MD-2': 'sun', 'MD-1': 'forest', 'MD+1': 'neutral', youth: 'ok' }

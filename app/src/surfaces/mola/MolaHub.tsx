@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { ArrowRight, Hand, ListChecks, ShieldCheck, Sparkles } from 'lucide-react'
+import { ArrowRight, Hand, ListChecks, ShieldCheck } from 'lucide-react'
+import { MolaMark } from '../../ui/brand'
 import { useT } from '../../i18n'
 import { db } from '../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
@@ -107,7 +108,7 @@ function Capabilities({ role }: { role?: string }) {
   const chips = defaultChips(lang, role)
   return (
     <div className="card card-pad">
-      <div className="mb-2 flex items-center gap-2 font-display text-[17px] font-semibold text-ink"><Sparkles size={17} className="text-terra-600" aria-hidden="true" />{t('hub.canDo')}</div>
+      <div className="mb-2 flex items-center gap-2 font-display text-[17px] font-semibold text-ink"><MolaMark size={17} className="text-terra-600" aria-hidden="true" />{t('hub.canDo')}</div>
       <ul className="space-y-0.5">
         {chips.map((c) => (
           <li key={c}>
@@ -123,7 +124,7 @@ function Capabilities({ role }: { role?: string }) {
 
 function TaskHead({ task, lang }: { task: MolaTask; lang: 'fr' | 'en' }) {
   const { t } = useT('mola')
-  const Icon = INTENT_ICON[task.intent] ?? Sparkles
+  const Icon = INTENT_ICON[task.intent] ?? MolaMark
   return (
     <div className="flex items-start gap-3">
       <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sand text-forest-600"><Icon size={18} aria-hidden="true" /></span>

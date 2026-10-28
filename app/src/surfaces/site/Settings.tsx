@@ -166,7 +166,7 @@ function TeamsCard({ profile }: { profile: Profile }) {
             return (
               <li key={tm.id} className={cx('flex flex-col gap-3 px-4 py-3.5 sm:flex-row sm:items-center sm:justify-between', isActive && 'bg-forest-50/60')}>
                 <div className="flex min-w-0 items-center gap-3">
-                  <span aria-hidden="true" className="h-9 w-9 shrink-0 rounded-full ring-2 ring-paper" style={{ background: `linear-gradient(135deg, ${tm.colors?.primary || '#1F4D3A'} 50%, ${tm.colors?.secondary || '#E3A92B'} 50%)` }} />
+                  <span aria-hidden="true" className="h-9 w-9 shrink-0 rounded-full ring-2 ring-paper" style={{ background: `linear-gradient(135deg, ${tm.colors?.primary || '#0B5D3B'} 50%, ${tm.colors?.secondary || '#F5B700'} 50%)` }} />
                   <div className="min-w-0">
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="truncate font-semibold text-ink">{tm.name}</span>

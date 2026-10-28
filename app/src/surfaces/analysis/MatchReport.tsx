@@ -1,8 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import {
-  ArrowLeft, CalendarCheck, ChartLine, Check, ChevronDown, ClipboardCopy, Dumbbell, FileQuestion, Goal, ListChecks, Pencil, Play, Printer, Sparkles, Target, ThumbsUp, Video, Wrench,
-} from 'lucide-react'
+import { ArrowLeft, CalendarCheck, ChartLine, Check, ChevronDown, ClipboardCopy, Dumbbell, FileQuestion, Goal, ListChecks, Pencil, Play, Printer, Target, ThumbsUp, Video, Wrench } from 'lucide-react'
+import { MolaMark } from '../../ui/brand'
 import { db } from '../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
 import { useT } from '../../i18n'
@@ -384,7 +383,7 @@ function WeekPlan({ summary, team }: { summary: NjangiSummary; team?: Team }) {
                   <Link to={`/app/semaine?w=${done.week}`} className="btn-outline btn-sm min-h-[40px]"><CalendarCheck size={15} />{t('report.openWeek')}</Link>
                 </div>
               ) : (
-                <button type="button" onClick={plan} disabled={busy} className="btn-accent w-full justify-center py-3"><Sparkles size={17} />{t('report.plan')}</button>
+                <button type="button" onClick={plan} disabled={busy} className="btn-accent w-full justify-center py-3"><MolaMark size={17} />{t('report.plan')}</button>
               )}
             </>
           ) : (

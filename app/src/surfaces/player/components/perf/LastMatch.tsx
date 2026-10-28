@@ -129,7 +129,7 @@ export function LastMatchCard({ d, full = false }: { d: PerfData; full?: boolean
 
 type Kind = 'ball' | 'regain' | 'shot' | 'loss'
 const KIND_OF = (c: EventCode): Kind => (c === 'REGAIN5' || c === 'REGAIN' ? 'regain' : c === 'SHOT' || c === 'SHOT_IN' || c === 'GOAL' ? 'shot' : c === 'LOSS' ? 'loss' : 'ball')
-const KIND_COLOR: Record<Kind, string> = { ball: '#1F4D3A', regain: '#3D4F6B', shot: '#E3A92B', loss: '#C5762F' }
+const KIND_COLOR: Record<Kind, string> = { ball: '#0B5D3B', regain: '#3D4F6B', shot: '#F5B700', loss: '#BF5A2E' }
 
 function ActionTrack({ actions, length, half, minutes, starter }: { actions: { e: { id: string; code: EventCode }; min: number }[]; length: number; half: number; minutes: number; starter: boolean }) {
   const { t } = useT('player')

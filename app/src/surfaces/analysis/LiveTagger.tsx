@@ -496,7 +496,7 @@ function LossRing({ left }: { left: number }) {
     <span className="absolute right-1.5 top-1.5 grid h-10 w-10 place-items-center" aria-hidden="true">
       <svg viewBox="0 0 44 44" className="absolute inset-0 -rotate-90">
         <circle cx="22" cy="22" r="18" fill="rgba(0,0,0,.25)" stroke="rgba(255,255,255,.25)" strokeWidth="4" />
-        <circle cx="22" cy="22" r="18" fill="none" stroke="#F0C760" strokeWidth="4" strokeLinecap="round" strokeDasharray={C} style={{ animation: `njRing ${LOSS_WINDOW}ms linear forwards` }} />
+        <circle cx="22" cy="22" r="18" fill="none" stroke="#FFD452" strokeWidth="4" strokeLinecap="round" strokeDasharray={C} style={{ animation: `njRing ${LOSS_WINDOW}ms linear forwards` }} />
       </svg>
       <span className="relative text-[14px] font-bold tabular-nums">{Math.ceil(left)}</span>
     </span>
@@ -545,7 +545,7 @@ function EventRow({ e, match, player, compact = false, children, onClick }: { e:
   const content = (
     <>
       <span className="w-12 shrink-0 text-[13px] font-semibold tabular-nums text-cream/70">{minuteLabel(e.half, e.t, match.halfMinutes)}</span>
-      <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg" style={{ background: def?.color ?? '#66706A' }}>{Icon && <Icon size={15} className={def && /text-ink/.test(def.btn) ? 'text-ink' : 'text-white'} />}</span>
+      <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg" style={{ background: def?.color ?? '#5D6C63' }}>{Icon && <Icon size={15} className={def && /text-ink/.test(def.btn) ? 'text-ink' : 'text-white'} />}</span>
       <span className="min-w-0 flex-1 truncate text-[14px] font-semibold">{t(`short.${shortKey(e.code, e.side)}`)}{e.side === 'them' && def?.side !== 'them' ? ` (${t('live.them')})` : ''}</span>
       {player && <span className="max-w-[40%] truncate text-[12px] text-cream/65">{player.number != null ? `${player.number} · ` : ''}{player.name}</span>}
     </>

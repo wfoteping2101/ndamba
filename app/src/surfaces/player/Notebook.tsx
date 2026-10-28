@@ -185,7 +185,7 @@ function EntryCard({ e, lesson, plain = false, onEdit, onDelete }: { e: Notebook
         <h2 className={cx(handCls, 'mt-1 text-[24px] font-semibold leading-tight text-ink')}>{e.title}</h2>
         {e.text && <p className="mt-1 whitespace-pre-line break-words text-[15.5px] leading-[28px] text-ink-soft">{e.text}</p>}
         {lesson && part && (
-          <Link to={`/app/joueur/lecons#lecon-${lesson.no}`} className="mt-3 inline-flex min-h-[36px] max-w-full items-center gap-2 rounded-full border border-[#E8DCC2] bg-paper/80 py-1 pl-1 pr-3 text-[13px] font-medium text-ink-soft hover:border-terra-300">
+          <Link to={`/app/joueur/lecons#lecon-${lesson.no}`} className="mt-3 inline-flex min-h-[36px] max-w-full items-center gap-2 rounded-full border border-[#DCE2D8] bg-paper/80 py-1 pl-1 pr-3 text-[13px] font-medium text-ink-soft hover:border-terra-300">
             <span className="inline-flex h-7 shrink-0 items-center rounded-full px-2 text-[11px] font-bold tabular-nums" style={{ background: part.tone, color: part.ink }}>{t('lesson.number', { n: lesson.no })}</span>
             <span className="truncate">{lesson.title}</span>
           </Link>

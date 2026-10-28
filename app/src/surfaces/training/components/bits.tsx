@@ -48,7 +48,7 @@ export function IntensityMeter({ level, showLabel = true }: { level: Intensity; 
     <span className="inline-flex items-center gap-1.5" title={`${t('intensity')}${t('colon')}${t(`common:intensity.${level}`)}`}>
       <span className="flex items-end gap-[2px]" aria-hidden="true">
         {[1, 2, 3, 4].map((k) => (
-          <span key={k} className="w-[4px] rounded-[1px]" style={{ height: 4 + k * 2.5, background: k <= n ? INTENSITY_COLOR[level] : '#E6DDCB' }} />
+          <span key={k} className="w-[4px] rounded-[1px]" style={{ height: 4 + k * 2.5, background: k <= n ? INTENSITY_COLOR[level] : '#DCE2D8' }} />
         ))}
       </span>
       <span className={showLabel ? 'text-xs text-ink-muted' : 'sr-only'}>{t(`common:intensity.${level}`)}</span>

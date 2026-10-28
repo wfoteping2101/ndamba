@@ -1,5 +1,6 @@
 import { Link, NavLink, Navigate, Outlet, useLocation } from 'react-router-dom'
-import { BookOpen, CalendarDays, ClipboardList, Crown, Dumbbell, Home, LineChart, MoreHorizontal, Settings, Shirt, Sparkles, Trophy, User, Video, X } from 'lucide-react'
+import { BookOpen, CalendarDays, ClipboardList, Crown, Dumbbell, Home, LineChart, MoreHorizontal, Settings, Shirt, Trophy, User, Video, X } from 'lucide-react'
+import { MolaMark } from '../ui/brand'
 import { useState, type ReactNode } from 'react'
 import { LangSwitch, Logo } from '../ui'
 import { useT } from '../i18n'
@@ -19,7 +20,7 @@ export default function AppLayout() {
   const focus = loc.pathname.startsWith('/app/analyse/live/')
 
   const groups: { title: string; items: Item[] }[] = [
-    { title: '', items: [{ to: '/app', label: t('app.home'), icon: <Home size={18} />, end: true }, { to: '/app/mola', label: t('app.mola'), icon: <Sparkles size={18} /> }] },
+    { title: '', items: [{ to: '/app', label: t('app.home'), icon: <Home size={18} />, end: true }, { to: '/app/mola', label: t('app.mola'), icon: <MolaMark size={18} /> }] },
     { title: t('app.groups.training'), items: [
       { to: '/app/exercices', label: t('app.drills'), icon: <Dumbbell size={18} /> },
       { to: '/app/seances', label: t('app.sessions'), icon: <ClipboardList size={18} /> },

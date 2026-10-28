@@ -7,7 +7,7 @@ import { cx } from '../../../lib/util'
 
 // Colours of the five sub-indices on a dark background.
 export const SUB_COLOR: Record<SubKey, string> = {
-  progression: '#7FAE93', penetration: '#E0A56B', fixation: '#F0C760', reprise: '#D9806F', controle: '#FBF7EE',
+  progression: '#73B391', penetration: '#DB8D66', fixation: '#FFD452', reprise: '#E8798A', controle: '#F6F7F2',
 }
 
 // A realistic half of football for the Lionceaux (counts of tags), so the index starts near 65.
@@ -40,7 +40,7 @@ export function IndiceGauge({ sub, total, label, className }: { sub: Record<SubK
   return (
     <svg viewBox="0 0 240 212" className={cx('block h-auto w-full', className)} role="img" aria-label={t('landing.live.gaugeLabel', { v: shown })}>
       {/* ticks every 10 points */}
-      <g stroke="#FBF7EE" strokeOpacity=".22" strokeWidth="1.2">
+      <g stroke="#F6F7F2" strokeOpacity=".22" strokeWidth="1.2">
         {Array.from({ length: 11 }, (_, i) => {
           const a = START + (SWEEP * i) / 10
           const [x0, y0] = pt(a, RAD + 13), [x1, y1] = pt(a, RAD + (i % 5 === 0 ? 20 : 17))
@@ -53,15 +53,15 @@ export function IndiceGauge({ sub, total, label, className }: { sub: Record<SubK
         const pct = Math.max(0.0001, Math.min(1, (sub[k] || 0) / 20)) * 100
         return (
           <g key={k}>
-            <path d={d} stroke="#FBF7EE" strokeOpacity=".1" strokeWidth="14" fill="none" strokeLinecap="butt" />
+            <path d={d} stroke="#F6F7F2" strokeOpacity=".1" strokeWidth="14" fill="none" strokeLinecap="butt" />
             <path d={d} stroke={SUB_COLOR[k]} strokeWidth="14" fill="none" strokeLinecap="butt" pathLength={100}
               strokeDasharray={`${pct} 100`} className="motion-safe:transition-[stroke-dasharray] motion-safe:duration-500" />
           </g>
         )
       })}
-      <text x={C} y={C + 10} textAnchor="middle" fontSize="62" fontWeight="600" fill="#FBF7EE" fontFamily="Fraunces, Georgia, serif" letterSpacing="-2">{shown}</text>
-      <text x={C} y={C + 32} textAnchor="middle" fontSize="11.5" fill="#FBF7EE" fillOpacity=".6" fontFamily="Inter, sans-serif">{t('landing.live.outOf')}</text>
-      <text x={C} y={C + 74} textAnchor="middle" fontSize="13.5" fontStyle="italic" fontWeight="600" fill="#F0C760" fontFamily="Fraunces, Georgia, serif">{label}</text>
+      <text x={C} y={C + 10} textAnchor="middle" fontSize="62" fontWeight="600" fill="#F6F7F2" fontFamily="Fraunces, Georgia, serif" letterSpacing="-2">{shown}</text>
+      <text x={C} y={C + 32} textAnchor="middle" fontSize="11.5" fill="#F6F7F2" fillOpacity=".6" fontFamily="Inter, sans-serif">{t('landing.live.outOf')}</text>
+      <text x={C} y={C + 74} textAnchor="middle" fontSize="13.5" fontStyle="italic" fontWeight="600" fill="#FFD452" fontFamily="Fraunces, Georgia, serif">{label}</text>
     </svg>
   )
 }

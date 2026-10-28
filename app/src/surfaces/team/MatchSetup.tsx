@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Crown, House, Plane, Plus, RefreshCw, Save, Shirt, UserPlus, WandSparkles, X } from 'lucide-react'
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Crown, House, Plane, Plus, RefreshCw, Save, Shirt, UserPlus, X } from 'lucide-react'
+import { MolaMark } from '../../ui/brand'
 import { db } from '../../lib/db'
 import { useLiveQuery, useDocumentTitle } from '../../lib/hooks'
 import { useSession } from '../../lib/session'
@@ -304,7 +305,7 @@ function LineupStep({ d, set, players, onFormation, onAuto, onSlot, activeSlot }
               <h2 className="font-display text-xl font-semibold">{t('setup.lineup.title')}</h2>
               <p className="text-[13px] text-ink-muted">{t('setup.lineup.squad', { starters: starters.length, subs: bench.length })}</p>
             </div>
-            <button type="button" className="btn-sun" onClick={onAuto}><WandSparkles size={17} />{t('setup.lineup.auto')}</button>
+            <button type="button" className="btn-sun" onClick={onAuto}><MolaMark size={17} />{t('setup.lineup.auto')}</button>
           </div>
           <p className="mt-2 text-xs text-ink-faint">{t('setup.lineup.autoHint', { app: BRAND.name })}</p>
         </section>

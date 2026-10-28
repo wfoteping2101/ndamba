@@ -7,9 +7,9 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  ArrowRight, BookOpen, CalendarDays, Check, ChevronDown, FileChartColumn, GraduationCap, Languages, MessagesSquare, Palette,
-  Route, Sparkles, Trophy, User, Users, Video, type LucideIcon,
+  ArrowRight, BookOpen, CalendarDays, Check, ChevronDown, FileChartColumn, GraduationCap, Languages, MessagesSquare, Palette, Route, Trophy, User, Users, Video, type LucideIcon,
 } from 'lucide-react'
+import { MolaMark } from '../../ui/brand'
 import { DRILLS, LESSONS, METHODE_TOC, TOME1_TOC } from '../../content'
 import { ART_DIRECTION, TOME1_ART, TOME1_ART_PLANNED } from '../../content/art.gen'
 import { BOOKS } from '../../lib/config'
@@ -192,7 +192,7 @@ function ArtDirection() {
   const points = ['style', 'light', 'composition', 'cover', 'quality'] as const
   return (
     <div className="mt-14">
-      <SubHead icon={Sparkles} title={t('review.tome1.artTitle')} lead={t('review.tome1.artLead')} />
+      <SubHead icon={Palette} title={t('review.tome1.artTitle')} lead={t('review.tome1.artLead')} />
       <ol className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
         {points.map((k, i) => (
           <li key={k} className="rounded-2xl border border-line bg-paper p-4 shadow-card">
@@ -394,11 +394,11 @@ function MolaSection({ demo }: { demo: Demo }) {
         <div className="grid gap-4">
           <div className="rounded-[24px] bg-forest-700 p-5 text-cream sm:p-6">
             <span className="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 text-sun-300"><MessagesSquare size={21} aria-hidden="true" /></span>
-            <Link to="/bienvenue" className="btn-sun mt-4 min-h-[48px]"><Sparkles size={17} aria-hidden="true" />{t('review.mola.onboarding')}</Link>
+            <Link to="/bienvenue" className="btn-sun mt-4 min-h-[48px]"><MolaMark size={17} aria-hidden="true" />{t('review.mola.onboarding')}</Link>
             <p className="mt-3 text-[14px] leading-relaxed text-cream/75">{t('review.mola.onboardingHint', { example: t('review.mola.onboardingExample') })}</p>
           </div>
           <div className="rounded-[24px] border border-line bg-paper p-5 shadow-card sm:p-6">
-            <span className="grid h-11 w-11 place-items-center rounded-2xl bg-forest-50 text-forest-600"><Sparkles size={21} aria-hidden="true" /></span>
+            <span className="grid h-11 w-11 place-items-center rounded-2xl bg-forest-50 text-forest-600"><MolaMark size={21} aria-hidden="true" /></span>
             <AppLink demo={demo} to="/app/mola" className="btn-primary mt-4 min-h-[48px]">{t('review.mola.hub')}<ArrowRight size={17} aria-hidden="true" /></AppLink>
             <p className="mt-3 text-[14px] leading-relaxed text-ink-muted">{t('review.mola.hubHint')}</p>
             <p className="mt-5 text-[12px] font-bold uppercase tracking-[0.14em] text-ink-muted">{t('review.mola.tryTitle')}</p>

@@ -1,7 +1,8 @@
 // Set, edit or review a personal objective: linked to a competence or to a sub-index of the Indice Njangi,
 // for a cycle of six to eight weeks, three at a time at most.
 import { useEffect, useState } from 'react'
-import { Sparkles, Trash2 } from 'lucide-react'
+import { Trash2 } from 'lucide-react'
+import { MolaMark } from '../../../../ui/brand'
 import { Callout, Field, Modal, Segmented } from '../../../../ui'
 import { useT } from '../../../../i18n'
 import { db } from '../../../../lib/db'
@@ -96,7 +97,7 @@ export function ObjectiveModal({ open, onClose, data, existing, by, stage }: {
         </Field>
         {!title.trim() && (
           <button type="button" className="mb-4 -mt-2 inline-flex min-h-[40px] items-center gap-1.5 rounded-lg px-1 text-left text-[13px] font-semibold text-forest-700 hover:underline" onClick={() => setTitle(suggestion)}>
-            <Sparkles size={14} aria-hidden="true" />{t('objectives.useSuggestion')}
+            <MolaMark size={14} aria-hidden="true" />{t('objectives.useSuggestion')}
           </button>
         )}
         <div className="grid grid-cols-2 gap-3">

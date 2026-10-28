@@ -38,28 +38,28 @@ const d = (key: LiveKey, code: EventCode, side: 'us' | 'them', group: GroupId, k
 const digit = (n: number) => [`Digit${n}`, `Numpad${n}`]
 
 export const TAGS: TagDef[] = [
-  d('PASS_OK', 'PASS_OK', 'us', 'possession', '1', digit(1), [], ArrowRight, 'bg-forest-500 text-cream', '#2F6B52'),
-  d('PASS_LOST', 'PASS_LOST', 'us', 'possession', '2', digit(2), [], X, 'bg-clay-500 text-white', '#B8432F', true),
+  d('PASS_OK', 'PASS_OK', 'us', 'possession', '1', digit(1), [], ArrowRight, 'bg-forest-500 text-cream', '#13804F'),
+  d('PASS_LOST', 'PASS_LOST', 'us', 'possession', '2', digit(2), [], X, 'bg-clay-500 text-white', '#D7263D', true),
   d('PROG', 'PROG', 'us', 'possession', '3', digit(3), [], ArrowUpRight, 'bg-[#3B8C66] text-white', '#3B8C66'),
   d('LINE', 'LINE', 'us', 'possession', '4', digit(4), [], ChevronsRight, 'bg-[#3B8C66] text-white', '#3B8C66'),
-  d('FINAL3', 'FINAL3', 'us', 'danger', '5', digit(5), [], Flag, 'bg-sun-500 text-ink', '#E3A92B'),
-  d('BOX', 'BOX', 'us', 'danger', '6', digit(6), [], SquareDashed, 'bg-sun-500 text-ink', '#E3A92B'),
-  d('SHOT', 'SHOT', 'us', 'danger', '7', digit(7), [], Crosshair, 'bg-sun-300 text-ink', '#C08A15'),
-  d('SHOT_IN', 'SHOT_IN', 'us', 'danger', '8', digit(8), [], Target, 'bg-sun-300 text-ink', '#C08A15', false, { implies: ['SHOT'] }),
-  d('GOAL', 'GOAL', 'us', 'danger', '9', digit(9), [], Goal, 'bg-cream text-ink ring-4 ring-inset ring-sun-500', '#E3A92B', false, { implies: ['SHOT', 'SHOT_IN'] }),
-  d('FIX2', 'FIX2', 'us', 'fixation', 'F', [], ['f'], Magnet, 'bg-terra-500 text-white', '#C5762F'),
-  d('SWITCH', 'SWITCH', 'us', 'fixation', 'S', [], ['s'], ArrowLeftRight, 'bg-terra-500 text-white', '#C5762F'),
-  d('LOSS', 'LOSS', 'us', 'transition', 'L', [], ['l'], Unlink, 'bg-clay-600 text-white', '#9A3524', true),
-  d('REGAIN5', 'REGAIN5', 'us', 'transition', 'K', [], ['k'], Timer, 'bg-forest-100 text-forest-800', '#7FAE93'),
-  d('REGAIN', 'REGAIN', 'us', 'transition', 'R', [], ['r'], Hand, 'bg-forest-100 text-forest-800', '#7FAE93'),
-  d('OPP_SHOT', 'SHOT', 'them', 'opponent', 'A', [], ['a'], Crosshair, 'bg-night-700 text-cream ring-1 ring-inset ring-white/20', '#9AA39D'),
-  d('OPP_GOAL', 'GOAL', 'them', 'opponent', 'B', [], ['b'], ShieldAlert, 'bg-night-700 text-cream ring-2 ring-inset ring-clay-300', '#D9806F', false, { implies: ['SHOT'] }),
-  d('OPP_PASS', 'PASS_OK', 'them', 'opponent', 'Q', [], ['q'], ArrowRight, 'bg-night-700 text-cream/90 ring-1 ring-inset ring-white/15', '#9AA39D', false, { optional: true }),
-  d('OPP_PASS_LOST', 'PASS_LOST', 'them', 'opponent', 'W', [], ['w'], X, 'bg-night-700 text-cream/90 ring-1 ring-inset ring-white/15', '#9AA39D', false, { optional: true }),
-  d('OPP_FINAL3', 'FINAL3', 'them', 'opponent', 'E', [], ['e'], Flag, 'bg-night-700 text-cream/90 ring-1 ring-inset ring-white/15', '#9AA39D', false, { optional: true }),
+  d('FINAL3', 'FINAL3', 'us', 'danger', '5', digit(5), [], Flag, 'bg-sun-500 text-ink', '#F5B700'),
+  d('BOX', 'BOX', 'us', 'danger', '6', digit(6), [], SquareDashed, 'bg-sun-500 text-ink', '#F5B700'),
+  d('SHOT', 'SHOT', 'us', 'danger', '7', digit(7), [], Crosshair, 'bg-sun-300 text-ink', '#D29C00'),
+  d('SHOT_IN', 'SHOT_IN', 'us', 'danger', '8', digit(8), [], Target, 'bg-sun-300 text-ink', '#D29C00', false, { implies: ['SHOT'] }),
+  d('GOAL', 'GOAL', 'us', 'danger', '9', digit(9), [], Goal, 'bg-cream text-ink ring-4 ring-inset ring-sun-500', '#F5B700', false, { implies: ['SHOT', 'SHOT_IN'] }),
+  d('FIX2', 'FIX2', 'us', 'fixation', 'F', [], ['f'], Magnet, 'bg-terra-500 text-white', '#BF5A2E'),
+  d('SWITCH', 'SWITCH', 'us', 'fixation', 'S', [], ['s'], ArrowLeftRight, 'bg-terra-500 text-white', '#BF5A2E'),
+  d('LOSS', 'LOSS', 'us', 'transition', 'L', [], ['l'], Unlink, 'bg-clay-600 text-white', '#B51D31', true),
+  d('REGAIN5', 'REGAIN5', 'us', 'transition', 'K', [], ['k'], Timer, 'bg-forest-100 text-forest-800', '#73B391'),
+  d('REGAIN', 'REGAIN', 'us', 'transition', 'R', [], ['r'], Hand, 'bg-forest-100 text-forest-800', '#73B391'),
+  d('OPP_SHOT', 'SHOT', 'them', 'opponent', 'A', [], ['a'], Crosshair, 'bg-night-700 text-cream ring-1 ring-inset ring-white/20', '#94A198'),
+  d('OPP_GOAL', 'GOAL', 'them', 'opponent', 'B', [], ['b'], ShieldAlert, 'bg-night-700 text-cream ring-2 ring-inset ring-clay-300', '#E8798A', false, { implies: ['SHOT'] }),
+  d('OPP_PASS', 'PASS_OK', 'them', 'opponent', 'Q', [], ['q'], ArrowRight, 'bg-night-700 text-cream/90 ring-1 ring-inset ring-white/15', '#94A198', false, { optional: true }),
+  d('OPP_PASS_LOST', 'PASS_LOST', 'them', 'opponent', 'W', [], ['w'], X, 'bg-night-700 text-cream/90 ring-1 ring-inset ring-white/15', '#94A198', false, { optional: true }),
+  d('OPP_FINAL3', 'FINAL3', 'them', 'opponent', 'E', [], ['e'], Flag, 'bg-night-700 text-cream/90 ring-1 ring-inset ring-white/15', '#94A198', false, { optional: true }),
 ]
 
-export const NOTE_DEF = { icon: StickyNote, color: '#F1EADB', kbd: 'N' }
+export const NOTE_DEF = { icon: StickyNote, color: '#ECEFE8', kbd: 'N' }
 
 export const GROUP_ORDER: GroupId[] = ['possession', 'danger', 'fixation', 'transition', 'opponent']
 

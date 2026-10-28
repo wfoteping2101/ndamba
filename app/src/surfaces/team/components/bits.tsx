@@ -61,7 +61,7 @@ export function StatusBadge({ status, toScore = false, className }: { status: Ma
   return <span className={cx('inline-flex items-center rounded-full bg-forest-50 px-2 py-0.5 text-[11px] font-semibold text-forest-700', className)}>{t('matches.status.planned')}</span>
 }
 
-const njangiColor = (v: number) => (v < 35 ? '#B8432F' : v < 50 ? '#C5762F' : v < 65 ? '#E3A92B' : v < 80 ? '#2F6B52' : '#1F4D3A')
+const njangiColor = (v: number) => (v < 35 ? '#D7263D' : v < 50 ? '#BF5A2E' : v < 65 ? '#F5B700' : v < 80 ? '#13804F' : '#0B5D3B')
 
 /** Indice Njangi as a small ring (0 to 100). */
 export function NjangiDial({ value, size = 48, label }: { value: number; size?: number; label?: string }) {
@@ -70,7 +70,7 @@ export function NjangiDial({ value, size = 48, label }: { value: number; size?: 
   return (
     <span className="relative inline-flex shrink-0 items-center justify-center" style={{ width: size, height: size }} role="img" aria-label={`${label ?? ''} ${Math.round(value * 10) / 10}/100`.trim()}>
       <svg viewBox="0 0 48 48" width={size} height={size} className="-rotate-90">
-        <circle cx="24" cy="24" r={r} fill="none" stroke="#F1EADB" strokeWidth="5" />
+        <circle cx="24" cy="24" r={r} fill="none" stroke="#ECEFE8" strokeWidth="5" />
         <circle cx="24" cy="24" r={r} fill="none" stroke={njangiColor(value)} strokeWidth="5" strokeLinecap="round" strokeDasharray={`${c * pct} ${c}`} />
       </svg>
       <span className="absolute font-display font-semibold tabular-nums text-ink" style={{ fontSize: size >= 60 ? 19 : 15 }}>{Math.round(value)}</span>

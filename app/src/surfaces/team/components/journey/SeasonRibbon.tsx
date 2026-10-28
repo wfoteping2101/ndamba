@@ -6,7 +6,7 @@ import { addDays, daysBetween, parseISODate, todayISO } from '../../../../lib/ut
 import { attended, buildTimeline, obsTone, type JourneyData, type Season } from '../../../../lib/journey'
 import { useWidth } from './bits'
 
-const C = { cream: '#FBF7EE', faint: 'rgba(251,247,238,.16)', grid: 'rgba(251,247,238,.09)', sun: '#E3A92B', sun3: '#F0C760', clay: '#D9806F', plus: '#CDE2D5', work: '#E0A56B' }
+const C = { cream: '#F6F7F2', faint: 'rgba(251,247,238,.16)', grid: 'rgba(251,247,238,.09)', sun: '#F5B700', sun3: '#FFD452', clay: '#E8798A', plus: '#CBE5D6', work: '#DB8D66' }
 
 export function SeasonRibbon({ data, season }: { data: JourneyData; season: Season | null }) {
   const { t, lang } = useT('journey')

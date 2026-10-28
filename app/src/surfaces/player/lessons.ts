@@ -9,11 +9,11 @@ export interface PartInfo { no: number; from: number; to: number; tone: string; 
 
 /** Part names are in i18n (player:parts.N.*); colours follow the five pieces. */
 export const PARTS: PartInfo[] = [
-  { no: 1, from: 1, to: 8, tone: '#B8432F', ink: '#FFFDF8' }, // Cameroun, le cœur
-  { no: 2, from: 9, to: 16, tone: '#3D4F6B', ink: '#FFFDF8' }, // États-Unis, la raison
-  { no: 3, from: 17, to: 24, tone: '#1F4D3A', ink: '#FFFDF8' }, // France, les yeux
-  { no: 4, from: 25, to: 32, tone: '#C5762F', ink: '#FFFDF8' }, // Espagne, la carte
-  { no: 5, from: 33, to: 40, tone: '#101814', ink: '#E3A92B' }, // Angleterre, le souffle
+  { no: 1, from: 1, to: 8, tone: '#D7263D', ink: '#FFFFFF' }, // Cameroun, le cœur
+  { no: 2, from: 9, to: 16, tone: '#3D4F6B', ink: '#FFFFFF' }, // États-Unis, la raison
+  { no: 3, from: 17, to: 24, tone: '#0B5D3B', ink: '#FFFFFF' }, // France, les yeux
+  { no: 4, from: 25, to: 32, tone: '#BF5A2E', ink: '#FFFFFF' }, // Espagne, la carte
+  { no: 5, from: 33, to: 40, tone: '#0A2117', ink: '#F5B700' }, // Angleterre, le souffle
 ]
 export const partOf = (no: number) => PARTS.find((p) => no >= p.from && no <= p.to) ?? PARTS[0]
 

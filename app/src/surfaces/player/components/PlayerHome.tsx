@@ -128,7 +128,7 @@ export default function PlayerHome() {
             </Link>
           )}
           {!team && cal !== null && <CreateTeamCard compact />}
-          <Link to="/app/joueur/carnet" className="block rounded-2xl border border-[#E8DCC2] bg-[#FFFBF1] p-4 shadow-card transition hover:border-terra-300 sm:p-5">
+          <Link to="/app/joueur/carnet" className="block rounded-2xl border border-[#DCE2D8] bg-[#FBFCF9] p-4 shadow-card transition hover:border-terra-300 sm:p-5">
             <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-terra-600"><NotebookPen size={14} aria-hidden="true" />{t('notebook.short')}</div>
             {lastEntry ? (
               <>

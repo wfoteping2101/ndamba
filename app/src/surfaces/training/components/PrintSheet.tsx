@@ -16,7 +16,7 @@ const PRINT_CSS = `
   @page { size: A4; margin: 11mm 12mm; }
   html, body { background: #fff !important; }
   #root { display: none !important; }
-  .nj-print { display: block !important; color: #1D2621; font-size: 10.5pt; }
+  .nj-print { display: block !important; color: #12211A; font-size: 10.5pt; }
   .nj-print * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .nj-print .nj-block { break-inside: avoid; page-break-inside: avoid; }
 }

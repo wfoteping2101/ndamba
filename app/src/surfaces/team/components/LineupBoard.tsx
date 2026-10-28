@@ -54,7 +54,7 @@ function PitchLines({ orientation }: { orientation: 'vertical' | 'horizontal' })
   }
   const inner = (
     <>
-      {stripes.map((i) => <rect key={i} x={0} y={i * sl} width={W} height={sl} fill={i % 2 ? '#1F4D3A' : '#245841'} stroke="none" />)}
+      {stripes.map((i) => <rect key={i} x={0} y={i * sl} width={W} height={sl} fill={i % 2 ? '#0B5D3B' : '#245841'} stroke="none" />)}
       <g fill="none" stroke={line} strokeWidth={0.32}>
         <rect x={0} y={0} width={W} height={L} />
         <line x1={0} y1={L / 2} x2={W} y2={L / 2} />

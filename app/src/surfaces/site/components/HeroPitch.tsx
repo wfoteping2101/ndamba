@@ -46,17 +46,17 @@ export default function HeroPitch({ className }: { className?: string }) {
   .hp-${id} .seg { animation: none; stroke-dashoffset: 0 }
   .hp-${id} .num, .hp-${id} .touch, .hp-${id} .net { animation: none; opacity: 1 }
 }`
-  const L = { stroke: '#FBF7EE', strokeOpacity: 0.28, strokeWidth: 1.6, fill: 'none' }
+  const L = { stroke: '#F6F7F2', strokeOpacity: 0.28, strokeWidth: 1.6, fill: 'none' }
   return (
     <figure className={className}>
       <style>{css}</style>
       <svg viewBox={`-10 -10 ${W * S + 20} ${H * S + 20}`} className={`hp-${id} block h-auto w-full`} role="img" aria-label={t('landing.hero.pitchTitle')}>
         <defs>
           <pattern id={`mow-${id}`} width={W * S / 9} height={H * S} patternUnits="userSpaceOnUse">
-            <rect width={W * S / 18} height={H * S} fill="#FBF7EE" fillOpacity="0.025" />
+            <rect width={W * S / 18} height={H * S} fill="#F6F7F2" fillOpacity="0.025" />
           </pattern>
-          <marker id={`ah-${id}`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#F0C760" /></marker>
-          <marker id={`ahs-${id}`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E0A56B" /></marker>
+          <marker id={`ah-${id}`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#FFD452" /></marker>
+          <marker id={`ahs-${id}`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#DB8D66" /></marker>
         </defs>
         <rect x="0" y="0" width={W * S} height={H * S} fill={`url(#mow-${id})`} />
         {/* markings */}
@@ -71,27 +71,27 @@ export default function HeroPitch({ className }: { className?: string }) {
           <path d={`M ${16.5 * S} ${26.7 * S} A ${9.15 * S} ${9.15 * S} 0 0 1 ${16.5 * S} ${41.3 * S}`} />
           <path d={`M ${(W - 16.5) * S} ${26.7 * S} A ${9.15 * S} ${9.15 * S} 0 0 0 ${(W - 16.5) * S} ${41.3 * S}`} />
         </g>
-        <g fill="#FBF7EE" fillOpacity=".35"><circle cx={(W / 2) * S} cy={(H / 2) * S} r="3" /><circle cx={11 * S} cy={(H / 2) * S} r="2.5" /><circle cx={(W - 11) * S} cy={(H / 2) * S} r="2.5" /></g>
+        <g fill="#F6F7F2" fillOpacity=".35"><circle cx={(W / 2) * S} cy={(H / 2) * S} r="3" /><circle cx={11 * S} cy={(H / 2) * S} r="2.5" /><circle cx={(W - 11) * S} cy={(H / 2) * S} r="2.5" /></g>
         {/* goals */}
-        <rect x={-2.2 * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="none" stroke="#FBF7EE" strokeOpacity=".5" strokeWidth="2" />
-        <rect className="net" x={W * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="#E3A92B" fillOpacity=".55" stroke="#F0C760" strokeWidth="2" />
-        <rect x={W * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="none" stroke="#FBF7EE" strokeOpacity=".5" strokeWidth="2" />
+        <rect x={-2.2 * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="none" stroke="#F6F7F2" strokeOpacity=".5" strokeWidth="2" />
+        <rect className="net" x={W * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="#F5B700" fillOpacity=".55" stroke="#FFD452" strokeWidth="2" />
+        <rect x={W * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="none" stroke="#F6F7F2" strokeOpacity=".5" strokeWidth="2" />
         {/* opponents */}
-        {THEM.map(([x, y], i) => <circle key={i} cx={x * S} cy={y * S} r="9" fill="#B8432F" fillOpacity=".55" stroke="#0B2116" strokeOpacity=".4" strokeWidth="1.5" />)}
+        {THEM.map(([x, y], i) => <circle key={i} cx={x * S} cy={y * S} r="9" fill="#D7263D" fillOpacity=".55" stroke="#042A1B" strokeOpacity=".4" strokeWidth="1.5" />)}
         {/* the passes */}
-        <g stroke="#F0C760" strokeWidth="3" strokeLinecap="round" fill="none">
+        <g stroke="#FFD452" strokeWidth="3" strokeLinecap="round" fill="none">
           {segs.map((s, i) => (
             <line key={i} className="seg" x1={s.x1} y1={s.y1} x2={s.x2} y2={s.y2} markerEnd={`url(#ah-${id})`}
               style={{ ['--l' as string]: `${s.len.toFixed(1)}px`, ['--d' as string]: `${(0.5 + i * STEP).toFixed(2)}s` }} />
           ))}
-          <line className="seg" x1={shot.x1} y1={shot.y1} x2={shot.x2} y2={shot.y2} stroke="#E0A56B" strokeWidth="3.4" strokeDasharray="none" markerEnd={`url(#ahs-${id})`}
+          <line className="seg" x1={shot.x1} y1={shot.y1} x2={shot.x2} y2={shot.y2} stroke="#DB8D66" strokeWidth="3.4" strokeDasharray="none" markerEnd={`url(#ahs-${id})`}
             style={{ ['--l' as string]: `${shotLen.toFixed(1)}px`, ['--d' as string]: `${(0.5 + segs.length * STEP).toFixed(2)}s` }} />
         </g>
         {/* pass numbers */}
         {segs.map((s, i) => (
           <g key={i} className="num" style={{ ['--d' as string]: `${(0.5 + i * STEP + STEP * 0.6).toFixed(2)}s` }}>
-            <circle cx={s.mx} cy={s.my} r="9.5" fill="#0B2116" stroke="#F0C760" strokeWidth="1.4" />
-            <text x={s.mx} y={s.my + 3.6} textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#F0C760" fontFamily="Inter, sans-serif">{i + 1}</text>
+            <circle cx={s.mx} cy={s.my} r="9.5" fill="#042A1B" stroke="#FFD452" strokeWidth="1.4" />
+            <text x={s.mx} y={s.my + 3.6} textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#FFD452" fontFamily="Inter, sans-serif">{i + 1}</text>
           </g>
         ))}
         {/* our eleven */}
@@ -99,10 +99,10 @@ export default function HeroPitch({ className }: { className?: string }) {
           const p = TEAM[k]
           return (
             <g key={k}>
-              <circle className="touch" cx={p.x * S} cy={p.y * S} r="19" fill="none" stroke="#F0C760" strokeOpacity=".55" strokeWidth="2"
+              <circle className="touch" cx={p.x * S} cy={p.y * S} r="19" fill="none" stroke="#FFD452" strokeOpacity=".55" strokeWidth="2"
                 style={{ ['--d' as string]: `${(0.5 + Math.max(0, i - 1) * STEP + (i ? STEP : 0)).toFixed(2)}s` }} />
-              <circle cx={p.x * S} cy={p.y * S} r="13" fill={p.star ? '#F0C760' : '#FBF7EE'} stroke="#0B2116" strokeWidth="2" />
-              <text x={p.x * S} y={p.y * S + 4.6} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#11301F" fontFamily="Inter, sans-serif">{p.n}</text>
+              <circle cx={p.x * S} cy={p.y * S} r="13" fill={p.star ? '#FFD452' : '#F6F7F2'} stroke="#042A1B" strokeWidth="2" />
+              <text x={p.x * S} y={p.y * S + 4.6} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#063A25" fontFamily="Inter, sans-serif">{p.n}</text>
             </g>
           )
         })}

@@ -55,7 +55,7 @@ export default function Roster() {
       {/* Team plate */}
       <section className="relative mb-6 overflow-hidden rounded-[26px] bg-forest-600 text-cream shadow-card">
         <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 opacity-[0.07] sm:block" aria-hidden="true"
-          style={{ background: 'repeating-linear-gradient(90deg, #FBF7EE 0 2px, transparent 2px 46px)' }} />
+          style={{ background: 'repeating-linear-gradient(90deg, #F6F7F2 0 2px, transparent 2px 46px)' }} />
         <div className="relative grid gap-6 p-5 sm:p-7 lg:grid-cols-[1fr_260px] lg:items-center">
           <div className="min-w-0">
             <div className="mb-2 flex flex-wrap items-center gap-2">

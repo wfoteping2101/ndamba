@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { PenLine, Sparkles } from 'lucide-react'
+import { PenLine } from 'lucide-react'
+import { MolaMark } from '../../../ui/brand'
 import { Field, Modal } from '../../../ui'
 import { useT } from '../../../i18n'
 import { db } from '../../../lib/db'
@@ -79,7 +80,7 @@ export function NewSessionModal({ open, onClose, preset, onCreated }: { open: bo
 
   return (
     <Modal open={open} onClose={onClose} title={preset?.drill ? t('newSession.titleWith', { drill: preset.drill.id }) : t('newSession.title')}
-      footer={<><button type="button" className="btn-ghost" onClick={onClose}>{t('common:actions.cancel')}</button><button type="submit" form="new-session" className="btn-primary" disabled={busy || !date}>{mode === 'mola' && !preset?.drill ? <><Sparkles size={16} aria-hidden="true" />{t('newSession.submitMola')}</> : t('newSession.submit')}</button></>}>
+      footer={<><button type="button" className="btn-ghost" onClick={onClose}>{t('common:actions.cancel')}</button><button type="submit" form="new-session" className="btn-primary" disabled={busy || !date}>{mode === 'mola' && !preset?.drill ? <><MolaMark size={16} aria-hidden="true" />{t('newSession.submitMola')}</> : t('newSession.submit')}</button></>}>
       <form id="new-session" onSubmit={submit}>
         <Field label={t('fields.title')} htmlFor="ns-title" hint={t('newSession.titleHint', { title: t(`mdTitle.${md}`) })}>
           <input id="ns-title" className="input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder={t(`mdTitle.${md}`)} maxLength={80} />
@@ -114,7 +115,7 @@ export function NewSessionModal({ open, onClose, preset, onCreated }: { open: bo
           <fieldset>
             <legend className="label">{t('newSession.how')}</legend>
             <div className="grid gap-2 sm:grid-cols-2">
-              {([['mola', Sparkles], ['me', PenLine]] as const).map(([k, Icon]) => (
+              {([['mola', MolaMark], ['me', PenLine]] as const).map(([k, Icon]) => (
                 <label key={k} className={cx('flex cursor-pointer gap-3 rounded-2xl border p-3 transition', mode === k ? 'border-forest-600 bg-forest-50' : 'border-line hover:border-ink-faint')}>
                   <input type="radio" name="ns-mode" className="sr-only" checked={mode === k} onChange={() => setMode(k)} />
                   <span className={cx('grid h-9 w-9 shrink-0 place-items-center rounded-xl', mode === k ? 'bg-forest-600 text-cream' : 'bg-sand text-ink-soft')}><Icon size={18} aria-hidden="true" /></span>

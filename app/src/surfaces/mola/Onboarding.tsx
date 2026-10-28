@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ArrowRight, Check, ChevronDown, GraduationCap, LoaderCircle, PlayCircle, RotateCcw, Sparkles, Trophy } from 'lucide-react'
+import { ArrowRight, Check, ChevronDown, GraduationCap, LoaderCircle, PlayCircle, RotateCcw, Trophy } from 'lucide-react'
+import { MolaMark } from '../../ui/brand'
 import i18n, { setLang, useT } from '../../i18n'
 import { db } from '../../lib/db'
 import { addPlayer, createTeam } from '../../lib/actions'
@@ -369,7 +370,7 @@ export default function Onboarding() {
               {!typing && step === 'review' && (
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
                   <button type="button" className="btn-primary btn-lg" onClick={finish} disabled={creating || !draft.name || !draft.role}>
-                    {creating ? <LoaderCircle size={18} className="motion-safe:animate-spin" aria-hidden="true" /> : <Sparkles size={18} aria-hidden="true" />}{t('ob.create')}
+                    {creating ? <LoaderCircle size={18} className="motion-safe:animate-spin" aria-hidden="true" /> : <MolaMark size={18} aria-hidden="true" />}{t('ob.create')}
                   </button>
                   <span className="text-[13px] text-ink-muted">{t('ob.createHint')}</span>
                 </div>
