@@ -326,16 +326,16 @@ Il prend le crayon des mains de son frère. Et en dessous, de sa petite écritur
   "view": "half",
   "players": [
     {"id": "N", "team": "a", "x": 6, "y": 34, "label": "6"},
-    {"id": "K", "team": "a", "x": 16, "y": 24, "label": "K"},
+    {"id": "B", "team": "a", "x": 16, "y": 24, "label": "B"},
     {"id": "D", "team": "a", "x": 16, "y": 44, "label": "D"},
-    {"id": "B", "team": "a", "x": 28, "y": 14, "label": "B"},
+    {"id": "K", "team": "a", "x": 28, "y": 14, "label": "K"},
     {"id": "M", "team": "a", "x": 28, "y": 34, "label": "10"},
     {"id": "T", "team": "a", "x": 28, "y": 54, "label": "T"}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "K", "to": "M", "kind": "pass", "n": 1},
-    {"from": "B", "to": [42, 18], "kind": "run"},
+    {"from": "B", "to": "M", "kind": "pass", "n": 1},
+    {"from": "K", "to": [42, 18], "kind": "run"},
     {"from": "M", "to": [40, 34], "kind": "run"},
     {"from": "T", "to": [42, 48], "kind": "run"},
     {"from": "D", "to": [26, 44], "kind": "run"}

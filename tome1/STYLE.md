@@ -91,7 +91,7 @@ Un petit dessin de terrain, vu de dessus, que le livre et l'application dessinen
 ```
 
 - `view` : `"grid"` (un carré d'entraînement, donne `w` et `h` en mètres), `"half"` (moitié de terrain offensive, 52,5 x 68 m, le but adverse à droite), `"third"` (dernier tiers, 35 x 68 m, but à droite) ou `"full"` (terrain entier, 105 x 68 m). Pour `half`, `third` et `full`, ne donne pas `w` et `h`, et les coordonnées vont de `x` = 0 (côté gauche de la vue) à la largeur de la vue, `y` = 0 (ligne de touche du haut) à 68.
-- `players` : `id` unique, `team` (`a`, `b`, `n`, `gk`), `x`, `y`, `label` facultatif (une ou deux lettres ou un numéro ; K pour BriBri, B pour Kaydoudou, M pour Mireille, etc.).
+- `players` : `id` unique, `team` (`a`, `b`, `n`, `gk`), `x`, `y`, `label` facultatif (une ou deux lettres ou un numéro ; B pour BriBri, K pour Kaydoudou, M pour Mireille, etc.).
 - `ball` : l'`id` du joueur qui a le ballon, ou une position `[x, y]`.
 - `arrows` : `from` et `to` sont des `id` de joueurs ou des positions `[x, y]` ; `kind` : `"pass"` (passe, trait plein), `"run"` (course sans ballon, pointillés), `"dribble"` (conduite de balle, trait ondulé), `"shot"` (tir, trait épais), `"press"` (pressing, flèche rouge courte) ; `n` : ordre de l'action (1, 2, 3...).
 - `zones` (facultatif) : rectangles colorés avec `tone` `"a"` (vert), `"b"` (rouge), `"n"` (jaune) ou `"soft"` (gris).

@@ -365,17 +365,17 @@ Et elle va traverser le ciel pour eux.
   "w": 30, "h": 22,
   "players": [
     {"id": "S", "team": "a", "x": 5, "y": 11, "label": "S"},
-    {"id": "K", "team": "a", "x": 15, "y": 4, "label": "K"},
+    {"id": "B", "team": "a", "x": 15, "y": 4, "label": "B"},
     {"id": "A", "team": "a", "x": 25, "y": 11, "label": "A"},
-    {"id": "B", "team": "a", "x": 15, "y": 18, "label": "B"},
+    {"id": "K", "team": "a", "x": 15, "y": 18, "label": "K"},
     {"id": "r1", "team": "b", "x": 11.5, "y": 9.5},
     {"id": "r2", "team": "b", "x": 18.5, "y": 13}
   ],
   "ball": "S",
   "arrows": [
-    {"from": "S", "to": "K", "kind": "pass", "n": 1},
-    {"from": "K", "to": "A", "kind": "pass", "n": 2},
-    {"from": "A", "to": "B", "kind": "pass", "n": 3},
+    {"from": "S", "to": "B", "kind": "pass", "n": 1},
+    {"from": "B", "to": "A", "kind": "pass", "n": 2},
+    {"from": "A", "to": "K", "kind": "pass", "n": 3},
     {"from": "r1", "to": [14, 6.5], "kind": "press"},
     {"from": "r2", "to": [21.5, 11], "kind": "press"}
   ],

@@ -318,17 +318,17 @@ Au-dessus du fleuve, un gros nuage noir s'est installé. Il ne bouge pas. Il att
   "view": "grid",
   "w": 30, "h": 20,
   "players": [
-    {"id": "B", "team": "a", "x": 9, "y": 5, "label": "B"},
+    {"id": "K", "team": "a", "x": 9, "y": 5, "label": "K"},
     {"id": "r1", "team": "b", "x": 12, "y": 4},
     {"id": "r2", "team": "b", "x": 9.5, "y": 8.2},
-    {"id": "K", "team": "a", "x": 15, "y": 11, "label": "K"},
+    {"id": "B", "team": "a", "x": 15, "y": 11, "label": "B"},
     {"id": "r3", "team": "b", "x": 22, "y": 15},
     {"id": "M", "team": "a", "x": 18, "y": 16.5, "label": "M"}
   ],
-  "ball": "B",
+  "ball": "K",
   "arrows": [
-    {"from": "B", "to": "K", "kind": "pass", "n": 1},
-    {"from": "K", "to": [26, 9], "kind": "dribble", "n": 2}
+    {"from": "K", "to": "B", "kind": "pass", "n": 1},
+    {"from": "B", "to": [26, 9], "kind": "dribble", "n": 2}
   ],
   "goals": [{"x": 30, "y": 10, "side": "right", "size": "mini"}],
   "zones": [{"x": 13, "y": 7.5, "w": 10, "h": 6, "label": "libre", "tone": "a"}],

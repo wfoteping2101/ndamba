@@ -323,16 +323,16 @@ Et ici, quelqu'un d'autre le porte.
   "w": 30, "h": 20,
   "players": [
     {"id": "M", "team": "a", "x": 3.5, "y": 10, "label": "M"},
-    {"id": "K", "team": "a", "x": 12, "y": 10, "label": "K"},
+    {"id": "B", "team": "a", "x": 12, "y": 10, "label": "B"},
     {"id": "d1", "team": "b", "x": 22, "y": 4.5},
-    {"id": "B", "team": "a", "x": 26, "y": 15, "label": "B"}
+    {"id": "K", "team": "a", "x": 26, "y": 15, "label": "K"}
   ],
   "ball": "M",
   "arrows": [
-    {"from": "K", "to": [15, 6.5], "kind": "run", "n": 1},
-    {"from": "K", "to": [15, 13.5], "kind": "run", "n": 2},
-    {"from": "M", "to": "K", "kind": "pass", "n": 3},
-    {"from": "K", "to": [21, 11.5], "kind": "dribble", "n": 4}
+    {"from": "B", "to": [15, 6.5], "kind": "run", "n": 1},
+    {"from": "B", "to": [15, 13.5], "kind": "run", "n": 2},
+    {"from": "M", "to": "B", "kind": "pass", "n": 3},
+    {"from": "B", "to": [21, 11.5], "kind": "dribble", "n": 4}
   ],
   "zones": [
     {"x": 17, "y": 1, "w": 12, "h": 7, "tone": "b"},

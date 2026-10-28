@@ -265,10 +265,10 @@ Mais il pense aussi au téléphone. Au visage qui s'est fermé d'un coup.
   "w": 30, "h": 22,
   "players": [
     {"id": "P1", "team": "a", "x": 3, "y": 5.5, "label": "D"},
-    {"id": "K1", "team": "a", "x": 12, "y": 5.5, "label": "K"},
+    {"id": "K1", "team": "a", "x": 12, "y": 5.5, "label": "B"},
     {"id": "d1", "team": "b", "x": 18, "y": 5.5},
     {"id": "P2", "team": "a", "x": 3, "y": 16.5, "label": "D"},
-    {"id": "K2", "team": "a", "x": 12, "y": 16.5, "label": "K"},
+    {"id": "K2", "team": "a", "x": 12, "y": 16.5, "label": "B"},
     {"id": "d2", "team": "b", "x": 15.5, "y": 13.5}
   ],
   "ball": "P2",

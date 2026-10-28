@@ -308,11 +308,11 @@ Surtout si Bulldozer est devant lui.
   "view": "half",
   "players": [
     {
-      "id": "K",
+      "id": "B",
       "team": "a",
       "x": 14,
       "y": 40,
-      "label": "K"
+      "label": "B"
     },
     {
       "id": "M",
@@ -353,16 +353,16 @@ Surtout si Bulldozer est devant lui.
       "y": 34
     }
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
     {
-      "from": "K",
+      "from": "B",
       "to": "M",
       "kind": "pass",
       "n": 1
     },
     {
-      "from": "K",
+      "from": "B",
       "to": "R",
       "kind": "pass",
       "n": 2

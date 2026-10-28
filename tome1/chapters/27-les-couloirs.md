@@ -301,10 +301,10 @@ Seul Jordi ne rit pas. Il regarde BriBri, longtemps. Puis il sort le crayon de d
 {
   "view": "half",
   "players": [
-    {"id": "B", "team": "a", "x": 33, "y": 2.2, "label": "B"},
+    {"id": "K", "team": "a", "x": 33, "y": 2.2, "label": "K"},
     {"id": "d2", "team": "b", "x": 35, "y": 6.6},
     {"id": "L", "team": "a", "x": 24, "y": 21, "label": "L"},
-    {"id": "K", "team": "a", "x": 16, "y": 36, "label": "K"},
+    {"id": "B", "team": "a", "x": 16, "y": 36, "label": "B"},
     {"id": "A9", "team": "a", "x": 41, "y": 34, "label": "9"},
     {"id": "N", "team": "a", "x": 6, "y": 30, "label": "N"},
     {"id": "R", "team": "a", "x": 33, "y": 65.8, "label": "7"},
@@ -312,9 +312,9 @@ Seul Jordi ne rit pas. Il regarde BriBri, longtemps. Puis il sort le crayon de d
     {"id": "d5", "team": "b", "x": 39, "y": 40},
     {"id": "d3", "team": "b", "x": 35, "y": 61.4}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "K", "to": [33, 17.5], "kind": "pass", "n": 1},
+    {"from": "B", "to": [33, 17.5], "kind": "pass", "n": 1},
     {"from": "L", "to": [34.5, 15], "kind": "run", "n": 2}
   ],
   "zones": [

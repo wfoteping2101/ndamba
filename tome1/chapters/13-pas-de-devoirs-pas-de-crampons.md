@@ -319,8 +319,8 @@ BriBri fait non de la tête.
 {
   "view": "full",
   "players": [
-    {"id": "K", "team": "a", "x": 38, "y": 34, "label": "K"},
-    {"id": "B", "team": "a", "x": 72, "y": 30, "label": "B"},
+    {"id": "B", "team": "a", "x": 38, "y": 34, "label": "B"},
+    {"id": "K", "team": "a", "x": 72, "y": 30, "label": "K"},
     {"id": "D", "team": "a", "x": 44, "y": 12, "label": "D"},
     {"id": "f1", "team": "b", "x": 48, "y": 24},
     {"id": "f2", "team": "b", "x": 48, "y": 44},
@@ -332,9 +332,9 @@ BriBri fait non de la tête.
     {"id": "d2", "team": "b", "x": 82, "y": 34},
     {"id": "d3", "team": "b", "x": 82, "y": 48}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "K", "to": "B", "kind": "pass", "n": 1}
+    {"from": "B", "to": "K", "kind": "pass", "n": 1}
   ],
   "zones": [
     {"x": 45.5, "y": 2, "w": 5, "h": 64, "tone": "b"},

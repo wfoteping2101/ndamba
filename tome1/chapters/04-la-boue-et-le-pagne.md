@@ -338,17 +338,17 @@ Mais Kaydoudou n'entend plus rien. Il court dans la boue, les bras en l'air. Il 
   "view": "grid",
   "w": 30, "h": 20,
   "players": [
-    {"id": "K", "team": "a", "x": 6, "y": 12, "label": "K"},
+    {"id": "B", "team": "a", "x": 6, "y": 12, "label": "B"},
     {"id": "r1", "team": "b", "x": 13, "y": 9.5},
-    {"id": "B0", "team": "n", "x": 20, "y": 7, "label": "B?"},
-    {"id": "B", "team": "a", "x": 20, "y": 13, "label": "B"},
+    {"id": "B0", "team": "n", "x": 20, "y": 7, "label": "K?"},
+    {"id": "K", "team": "a", "x": 20, "y": 13, "label": "K"},
     {"id": "S", "team": "a", "x": 25, "y": 16, "label": "S"}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "B0", "to": "B", "kind": "run", "n": 1},
-    {"from": "K", "to": "B", "kind": "pass", "n": 2},
-    {"from": "B", "to": "S", "kind": "pass", "n": 3}
+    {"from": "B0", "to": "K", "kind": "run", "n": 1},
+    {"from": "B", "to": "K", "kind": "pass", "n": 2},
+    {"from": "K", "to": "S", "kind": "pass", "n": 3}
   ],
   "labels": [
     {"x": 20, "y": 3.6, "text": "caché"},

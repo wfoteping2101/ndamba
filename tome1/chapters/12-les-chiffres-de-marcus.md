@@ -339,19 +339,19 @@ Diego en lâche son ballon.
 {
   "view": "third",
   "players": [
-    {"id": "B", "team": "a", "x": 17, "y": 52, "label": "B"},
+    {"id": "K", "team": "a", "x": 17, "y": 52, "label": "K"},
     {"id": "T", "team": "a", "x": 22, "y": 30, "label": "T"},
-    {"id": "K", "team": "a", "x": 6, "y": 38, "label": "K"},
+    {"id": "B", "team": "a", "x": 6, "y": 38, "label": "B"},
     {"id": "r1", "team": "b", "x": 22, "y": 58},
     {"id": "r2", "team": "b", "x": 24, "y": 47},
     {"id": "r3", "team": "b", "x": 28, "y": 20},
     {"id": "gk", "team": "gkb", "x": 33.5, "y": 34}
   ],
-  "ball": "B",
+  "ball": "K",
   "arrows": [
-    {"from": "r1", "to": "B", "kind": "press"},
-    {"from": "r2", "to": "B", "kind": "press"},
-    {"from": "B", "to": "T", "kind": "pass", "n": 1},
+    {"from": "r1", "to": "K", "kind": "press"},
+    {"from": "r2", "to": "K", "kind": "press"},
+    {"from": "K", "to": "T", "kind": "pass", "n": 1},
     {"from": "T", "to": [35, 37], "kind": "shot", "n": 2}
   ],
   "labels": [

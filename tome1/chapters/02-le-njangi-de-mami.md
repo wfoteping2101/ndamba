@@ -383,18 +383,18 @@ Ce vieux ballon va aller beaucoup, beaucoup plus loin que Yaoundé.
       "label": "O"
     },
     {
-      "id": "K",
+      "id": "B",
       "team": "a",
       "x": 12,
       "y": 17,
-      "label": "K"
+      "label": "B"
     },
     {
-      "id": "B",
+      "id": "K",
       "team": "a",
       "x": 19,
       "y": 6,
-      "label": "B"
+      "label": "K"
     },
     {
       "id": "R",
@@ -433,18 +433,18 @@ Ce vieux ballon va aller beaucoup, beaucoup plus loin que Yaoundé.
   "arrows": [
     {
       "from": "O",
-      "to": "K",
+      "to": "B",
       "kind": "pass",
       "n": 1
     },
     {
-      "from": "K",
-      "to": "B",
+      "from": "B",
+      "to": "K",
       "kind": "pass",
       "n": 2
     },
     {
-      "from": "B",
+      "from": "K",
       "to": "R",
       "kind": "pass",
       "n": 3

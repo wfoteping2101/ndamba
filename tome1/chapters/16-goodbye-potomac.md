@@ -352,15 +352,15 @@ Il se trompe.
   "view": "half",
   "players": [
     {"id": "a1", "team": "a", "x": 8, "y": 30},
-    {"id": "K", "team": "a", "x": 22, "y": 38, "label": "K"},
-    {"id": "B", "team": "a", "x": 36, "y": 22, "label": "B"},
+    {"id": "B", "team": "a", "x": 22, "y": 38, "label": "B"},
+    {"id": "K", "team": "a", "x": 36, "y": 22, "label": "K"},
     {"id": "T", "team": "a", "x": 45, "y": 31, "label": "T"}
   ],
   "ball": "a1",
   "arrows": [
-    {"from": "a1", "to": "K", "kind": "pass", "n": 1},
-    {"from": "K", "to": "B", "kind": "pass", "n": 2},
-    {"from": "B", "to": "T", "kind": "pass", "n": 3}
+    {"from": "a1", "to": "B", "kind": "pass", "n": 1},
+    {"from": "B", "to": "K", "kind": "pass", "n": 2},
+    {"from": "K", "to": "T", "kind": "pass", "n": 3}
   ],
   "zones": [
     {"x": 0, "y": 0, "w": 17, "h": 68, "label": "sans danger", "tone": "soft"},

@@ -298,9 +298,9 @@ Pour la première fois, ils vont retrouver l'Afrique sur un terrain de football.
 {
   "view": "half",
   "players": [
-    {"id": "B", "team": "a", "x": 40, "y": 3, "label": "B"},
+    {"id": "K", "team": "a", "x": 40, "y": 3, "label": "K"},
     {"id": "T", "team": "b", "x": 44, "y": 9},
-    {"id": "K", "team": "a", "x": 18, "y": 36, "label": "K"},
+    {"id": "B", "team": "a", "x": 18, "y": 36, "label": "B"},
     {"id": "L", "team": "a", "x": 26, "y": 49, "label": "L"},
     {"id": "J", "team": "a", "x": 36, "y": 64, "label": "J"},
     {"id": "E", "team": "a", "x": 20, "y": 60, "label": "E"},
@@ -309,8 +309,8 @@ Pour la première fois, ils vont retrouver l'Afrique sur un terrain de football.
   ],
   "ball": "L",
   "arrows": [
-    {"from": "L", "to": "K", "kind": "pass", "n": 1},
-    {"from": "K", "to": [39, 6.5], "kind": "pass", "n": 2}
+    {"from": "L", "to": "B", "kind": "pass", "n": 1},
+    {"from": "B", "to": [39, 6.5], "kind": "pass", "n": 2}
   ],
   "zones": [
     {"x": 16, "y": 42, "w": 36.5, "h": 26, "label": "3 contre 2", "tone": "a"},

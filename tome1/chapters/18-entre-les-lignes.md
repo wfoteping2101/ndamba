@@ -297,8 +297,8 @@ Lucas secoue la tête, les joues encore plus rouges que d'habitude.
 {
   "view": "half",
   "players": [
-    {"id": "K", "team": "a", "x": 6, "y": 38, "label": "K"},
-    {"id": "B", "team": "a", "x": 31, "y": 36, "label": "B"},
+    {"id": "B", "team": "a", "x": 6, "y": 38, "label": "B"},
+    {"id": "K", "team": "a", "x": 31, "y": 36, "label": "K"},
     {"id": "Kz", "team": "a", "x": 27, "y": 58, "label": "Kz"},
     {"id": "m1", "team": "b", "x": 21, "y": 14},
     {"id": "m2", "team": "b", "x": 21, "y": 29},
@@ -307,10 +307,10 @@ Lucas secoue la tête, les joues encore plus rouges que d'habitude.
     {"id": "d2", "team": "b", "x": 42, "y": 31},
     {"id": "d3", "team": "b", "x": 42, "y": 54}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "K", "to": "B", "kind": "pass", "n": 1},
-    {"from": "B", "to": [47, 43], "kind": "pass", "n": 2},
+    {"from": "B", "to": "K", "kind": "pass", "n": 1},
+    {"from": "K", "to": [47, 43], "kind": "pass", "n": 2},
     {"from": "Kz", "to": [46.5, 46], "kind": "run"}
   ],
   "zones": [{"x": 25, "y": 6, "w": 12, "h": 58, "label": "la poche", "tone": "n"}],

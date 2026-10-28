@@ -343,7 +343,7 @@ Marcus fait glisser l'écran. Un autre dossier s'ouvre. En haut, un numéro : 33
     {"id": "a1", "team": "a", "x": 14, "y": 34},
     {"id": "a2", "team": "a", "x": 22, "y": 10},
     {"id": "a3", "team": "a", "x": 22, "y": 58},
-    {"id": "K", "team": "a", "x": 24, "y": 36, "label": "K"},
+    {"id": "B", "team": "a", "x": 24, "y": 36, "label": "B"},
     {"id": "T", "team": "a", "x": 47, "y": 40, "label": "T"},
     {"id": "r1", "team": "b", "x": 33, "y": 18},
     {"id": "r2", "team": "b", "x": 33, "y": 30},
@@ -351,12 +351,12 @@ Marcus fait glisser l'écran. Un autre dossier s'ouvre. En haut, un numéro : 33
     {"id": "r4", "team": "b", "x": 41, "y": 24},
     {"id": "r5", "team": "b", "x": 41, "y": 52}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
     {"from": "a2", "to": "a1", "kind": "pass"},
     {"from": "a1", "to": "a3", "kind": "pass"},
-    {"from": "a3", "to": "K", "kind": "pass"},
-    {"from": "K", "to": "T", "kind": "pass", "n": 1}
+    {"from": "a3", "to": "B", "kind": "pass"},
+    {"from": "B", "to": "T", "kind": "pass", "n": 1}
   ],
   "zones": [{"x": 31, "y": 14, "w": 12, "h": 40, "label": "le mur", "tone": "b"}],
   "labels": [{"x": 11, "y": 64, "text": "passes qui tournent"}]

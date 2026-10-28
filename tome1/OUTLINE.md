@@ -32,7 +32,7 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - Tonton Fokou, assis sur un bidon : « Vous avez gardé la caisse. Toi, Kaydoudou, avec tes pieds. Et toi, BriBri, avec ta bouche fermée : tu voyais tout, et tu n'as rien dit. »
 - Réconciliation des frères : le rituel poing contre poing, main sur le cœur (présenter ce rituel ici pour la première fois).
 - **Fin** : il reste deux matchs de poule ; il faut tout gagner.
-- **Carnet n°3 : Quand on te serre, le ballon doit partir.** Si deux adversaires viennent sur toi, un partenaire est libre quelque part. Schéma : B serré par deux rouges, K libre, la passe.
+- **Carnet n°3 : Quand on te serre, le ballon doit partir.** Si deux adversaires viennent sur toi, un partenaire est libre quelque part. Schéma : K serré par deux rouges, B libre, la passe.
 
 ### 4. La boue et le pagne (POV Kaydoudou)
 - La saison des pluies arrive d'un coup : orage, tôles qui chantent, le terrain devient boue. Le ballon ne roule plus, les dribbles s'enlisent.
@@ -114,7 +114,7 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - Conflit avec Tyler qui ne passe jamais non plus. Match suivant : Kaydoudou attire deux défenseurs et sert Tyler, qui marque. Tyler, gêné, lui tape dans la main. Début d'une amitié.
 - Message vocal de Mireille depuis Douala (bruits de benskins, elle raconte que les Lionceaux ont un nouveau gardien remplaçant), ça rend Kaydoudou heureux et triste à la fois.
 - **Fin** : Tyler l'invite chez lui jouer aux jeux vidéo ; Kaydoudou accepte à condition que Tyler porte une chaussette rouge et une jaune au prochain match. Tyler accepte (et le fait).
-- **Carnet n°12 : Dribbler pour attirer.** Un dribble qui attire deux adversaires libère un partenaire. (Ajout de Kaydoudou : « Mais le petit pont sur Tyler, c'était utile aussi. Pour le moral. ») Schéma : B conduit, deux rouges viennent sur lui, passe vers Tyler (T) libre.
+- **Carnet n°12 : Dribbler pour attirer.** Un dribble qui attire deux adversaires libère un partenaire. (Ajout de Kaydoudou : « Mais le petit pont sur Tyler, c'était utile aussi. Pour le moral. ») Schéma : K conduit, deux rouges viennent sur lui, passe vers Tyler (T) libre.
 
 ### 13. Pas de devoirs, pas de crampons (POV BriBri)
 - Maman passe des examens pour son diplôme d'infirmière américain, elle travaille la nuit dans une maison de retraite en attendant. La maison est fatiguée. Les frères aident (cuisine, ménage, Kaydoudou invente une danse de l'aspirateur).
@@ -138,7 +138,7 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - Kaydoudou découvre qu'une course sans ballon, qui ne reçoit jamais la passe, peut être l'action la plus importante : sa course emmène un défenseur et ouvre la voie à Tyler.
 - Victoire en demi-finale.
 - **Fin** : le soir, dans la voiture, Papa reçoit un appel. Il raccroche, sourit d'un sourire bizarre : son entreprise lui propose un poste à Paris, à la rentrée. Silence dans la voiture. Puis Kaydoudou : « Paris ? Ils parlent français, à Paris ! »
-- **Carnet n°15 : Courir pour les autres.** Une course sans ballon peut faire marquer un autre. (Kaydoudou : « Personne ne m'a passé le ballon et c'était ma meilleure action. C'est bizarre, le foot. ») Schéma : appel de B qui entraîne un défenseur, passe de K dans l'espace créé pour T.
+- **Carnet n°15 : Courir pour les autres.** Une course sans ballon peut faire marquer un autre. (Kaydoudou : « Personne ne m'a passé le ballon et c'était ma meilleure action. C'est bizarre, le foot. ») Schéma : appel de K qui entraîne un défenseur, passe de B dans l'espace créé pour T.
 
 ### 16. Goodbye, Potomac (POV BriBri)
 - Finale de la Mid-Atlantic Summer Cup contre une grosse équipe de Virginie, plus physique. 1-1, prolongation, défaite 2-1 sur un but de la tête en fin de match.
@@ -168,7 +168,7 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - Lacombe lui montre « entre les lignes » : l'espace entre les milieux et les défenseurs adverses. Kaydoudou découvre qu'il est parfait pour cet espace : petit, rapide, il s'y glisse comme « une souris dans un mur ».
 - Lucas devient son ami (il lui apprend des mots de la campagne, Kaydoudou lui apprend le camfranglais).
 - **Fin** : premier match officiel. Kaydoudou reçoit entre les lignes, se retourne, et fait marquer Kenzo. Lacombe ne dit rien, mais lève un sourcil : « C'est son applaudissement », explique Lucas.
-- **Carnet n°18 : Entre les lignes.** Il existe une poche entre les milieux et les défenseurs adverses. Celui qui y reçoit le ballon et se tourne met toute la défense en danger. Schéma : vue `half`, ligne de milieux rouges, ligne de défenseurs rouges, B dans la poche, passe de K vers B.
+- **Carnet n°18 : Entre les lignes.** Il existe une poche entre les milieux et les défenseurs adverses. Celui qui y reçoit le ballon et se tourne met toute la défense en danger. Schéma : vue `half`, ligne de milieux rouges, ligne de défenseurs rouges, K dans la poche, passe de B vers K.
 
 ### 19. Kenzo (POV BriBri)
 - Concurrence pour le poste de 8 : Kenzo est plus technique, plus rapide de pied. BriBri commence sur le banc deux matchs de suite. Jalousie, humiliation.
@@ -239,14 +239,14 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - BriBri est fasciné : lui qui veut toujours aller vite apprend que l'attente peut être une arme. Kaydoudou, lui, découvre qu'une pause avant un dribble le rend imprenable.
 - Avi Ramon raconte la Méditerranée, ses voyages de marin, et dit qu'il a connu des joueurs africains formidables qui n'avaient pas eu « une école » pour les porter.
 - **Fin** : Avi Ramon invite les frères à revenir chaque dimanche. « Je n'ai plus beaucoup de temps pour donner. Alors je donne vite. »
-- **Carnet n°26 : La pausa.** Garder le ballon une demi-seconde de plus, pour que l'adversaire s'engage, et jouer dans son dos. Schéma : K avec le ballon, un défenseur qui s'approche (flèche `press`), puis la passe dans le dos du défenseur vers B.
+- **Carnet n°26 : La pausa.** Garder le ballon une demi-seconde de plus, pour que l'adversaire s'engage, et jouer dans son dos. Schéma : B avec le ballon, un défenseur qui s'approche (flèche `press`), puis la passe dans le dos du défenseur vers K.
 
 ### 27. Les couloirs (POV Kaydoudou)
 - Jordi divise le terrain en **cinq couloirs** (deux côtés, deux demi-espaces, l'axe) et explique les règles : jamais deux joueurs dans le même couloir sur la même ligne ; l'ailier donne la **largeur**.
 - Kaydoudou, ailier, doit rester collé à la ligne de touche. Il s'ennuie, proteste, veut venir au milieu.
 - Pendant un match, il obéit, et découvre que son défenseur reste avec lui : au milieu, un immense espace s'ouvre pour BriBri et Laia. « Je ne touche pas le ballon, mais je joue », comprend-il.
 - **Fin** : Jordi lui montre la vidéo : trois buts sont venus de l'espace ouvert par sa largeur. Kaydoudou : « Alors je suis invisible et utile. Comme un super-héros. »
-- **Carnet n°27 : Les cinq couloirs.** Le terrain a cinq couloirs. Bien répartis, on étire l'adversaire et on ouvre des espaces au milieu. Schéma : vue `half` avec cinq zones horizontales (bandes) de couleur douce, des joueurs verts bien répartis, B collé à la touche.
+- **Carnet n°27 : Les cinq couloirs.** Le terrain a cinq couloirs. Bien répartis, on étire l'adversaire et on ouvre des espaces au milieu. Schéma : vue `half` avec cinq zones horizontales (bandes) de couleur douce, des joueurs verts bien répartis, K collé à la touche.
 
 ### 28. Le troisième homme (POV BriBri)
 - Jordi installe BriBri en **pivot** (le 6 espagnol). Il apprend le **troisième homme** : A passe à B, B remet en une touche à C qui arrive lancé. Le défenseur regarde B, il ne voit jamais C.
@@ -254,7 +254,7 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - Jordi : « Le meilleur passeur n'est pas celui qui fait la passe décisive. C'est celui qui fait jouer la passe d'après. »
 - Le Club gagne trois matchs de suite avec cette combinaison.
 - **Fin** : un journal local publie une photo de l'équipe ; Mami la fait imprimer et l'accroche dans son salon à Bafoussam (on le sait par un appel vidéo).
-- **Carnet n°28 : Le troisième homme.** A vers B, B remet vers C qui arrive : l'adversaire regarde le ballon et oublie le troisième. Schéma : trois joueurs verts (N, K, L), passes 1 et 2, course de L, et un défenseur rouge qui regarde K.
+- **Carnet n°28 : Le troisième homme.** A vers B, B remet vers C qui arrive : l'adversaire regarde le ballon et oublie le troisième. Schéma : trois joueurs verts (N, B, L), passes 1 et 2, course de L, et un défenseur rouge qui regarde B.
 
 ### 29. La mer et Mami (POV Kaydoudou)
 - Mal du pays. Puis une nouvelle : Mami a glissé dans sa cour, elle s'est fait mal à la hanche. Elle va bien, mais elle doit se reposer. Appel vidéo : elle rit, elle gronde, elle raconte le njangi.
@@ -262,14 +262,14 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - Football sur la plage avec Laia et les enfants du village : un chapitre lumineux, drôle, créatif (dribbles dans le sable, gestes impossibles, buts entre deux tongs).
 - Kaydoudou invente le nom de son dribble : **le dribble njangi** (celui qui attire et qui donne).
 - **Fin** : Kaydoudou envoie à Mami une vidéo de son dribble njangi sur la plage ; Mami répond par un message vocal où elle danse avec les femmes du njangi.
-- **Carnet n°29 : Le dribble njangi.** Je dribble pour attirer, je fixe deux adversaires, et je donne au partenaire qui a de l'espace. Mon dribble, c'est un cadeau. Schéma : B qui conduit, deux défenseurs qui se rapprochent, passe à Laia (L) libre qui tire.
+- **Carnet n°29 : Le dribble njangi.** Je dribble pour attirer, je fixe deux adversaires, et je donne au partenaire qui a de l'espace. Mon dribble, c'est un cadeau. Schéma : K qui conduit, deux défenseurs qui se rapprochent, passe à Laia (L) libre qui tire.
 
 ### 30. Les trois supériorités (POV BriBri)
 - Jordi explique les trois **supériorités** : *numérique* (être plus nombreux là où est le ballon), *de position* (être placé là où l'adversaire ne peut pas te gêner, entre les lignes, dans son dos), *de qualité* (mettre ton meilleur dribbleur seul contre un défenseur plus faible).
 - Match contre l'Unió Esportiva Riu Ebre, une équipe rugueuse. Le plan : faire circuler à droite, attirer, puis renverser vite pour laisser Kaydoudou seul contre son défenseur à gauche. Ça marche.
 - BriBri comprend que le jeu de position, c'est jouer aux échecs avec des amis.
 - **Fin** : le club est qualifié pour le grand **Torneig de la Costa**, un tournoi international de jeunes, avec des académies de toute l'Europe... et une académie marocaine.
-- **Carnet n°30 : Les trois supériorités.** Plus nombreux, mieux placés, meilleur dans le duel. Schéma : vue `half` avec un 3 contre 2 côté droit (zone verte), puis une longue passe de renversement vers B seul contre un défenseur à gauche.
+- **Carnet n°30 : Les trois supériorités.** Plus nombreux, mieux placés, meilleur dans le duel. Schéma : vue `half` avec un 3 contre 2 côté droit (zone verte), puis une longue passe de renversement vers K seul contre un défenseur à gauche.
 
 ### 31. L'Atlas (POV Kaydoudou)
 - Le Torneig de la Costa : drapeaux, équipes d'Italie, des Pays-Bas, du Portugal, et l'**Académie de l'Atlas**, un centre de formation marocain fictif.
@@ -300,14 +300,14 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - Ils sont pris quand même (Okafor voit leur intelligence), mais Okafor les prévient : « Here, nobody waits for you. »
 - BriBri apprend à **recevoir sous pression** : protéger avec le corps, jouer loin de la pression, utiliser le mur (une-deux en une touche).
 - **Fin** : premier match, ils gagnent difficilement, et BriBri a des bleus partout. Kaydoudou lui dit : « Tu ressembles à une carte du métro. »
-- **Carnet n°33 : Recevoir sous pression.** Je protège le ballon avec mon corps, je joue loin de la pression, et si je suis coincé, je joue en une touche sur un partenaire (le mur). Schéma : K pressé par un rouge, une passe une-deux avec un partenaire (mur), K libéré.
+- **Carnet n°33 : Recevoir sous pression.** Je protège le ballon avec mon corps, je joue loin de la pression, et si je suis coincé, je joue en une touche sur un partenaire (le mur). Schéma : B pressé par un rouge, une passe une-deux avec un partenaire (mur), B libéré.
 
 ### 34. Jouer avant le contact (POV Kaydoudou)
 - Le football anglais est rugueux : Kaydoudou est taclé, bousculé, tombe souvent. Il se plaint ; l'arbitre ne siffle pas.
 - **Jaden Clarke**, milieu box-to-box, est en rivalité avec BriBri. **Freddie Shaw**, le gardien blagueur, devient le complice de Kaydoudou (concours de blagues dans le vestiaire).
 - Okafor apprend à Kaydoudou à **jouer avant le contact** : contrôle orienté loin du défenseur, ballon relâché avant le tacle. Un petit garçon intelligent n'a pas besoin de gagner les duels : il doit les éviter.
 - **Fin** : Kaydoudou réussit son premier match « sans tomber une seule fois ». Freddie lui fabrique une médaille en carton : « Most Upright Player ».
-- **Carnet n°34 : Jouer avant le contact.** Mon premier contrôle m'éloigne du défenseur, et je lâche le ballon avant qu'il me touche. (Kaydoudou : « Le meilleur tacle, c'est celui qu'on ne reçoit pas. ») Schéma : B reçoit, contrôle orienté loin du défenseur rouge (flèche `dribble` courte), passe immédiate.
+- **Carnet n°34 : Jouer avant le contact.** Mon premier contrôle m'éloigne du défenseur, et je lâche le ballon avant qu'il me touche. (Kaydoudou : « Le meilleur tacle, c'est celui qu'on ne reçoit pas. ») Schéma : K reçoit, contrôle orienté loin du défenseur rouge (flèche `dribble` courte), passe immédiate.
 
 ### 35. Le pressing (POV BriBri)
 - Okafor enseigne le **pressing** en équipe : on ne court pas n'importe comment, on attend un **déclencheur** (une passe en arrière, un mauvais contrôle, un ballon près de la ligne de touche) et tout le monde y va en même temps.
@@ -330,7 +330,7 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - BriBri est tétanisé par la pression. Il joue mal un match. Kaydoudou lui rappelle Tonton Fokou et la terre rouge : « On joue pour faire voyager le ballon, pas pour Monsieur Atéba. »
 - Okafor enseigne la **transition offensive** : quand on récupère le ballon, le premier regard va devant (le but est peut-être déjà ouvert), puis on choisit : attaquer vite ou garder pour s'organiser.
 - **Fin** : Kingsbridge est qualifié pour la phase finale de la **Coupe des Académies**, un tournoi international de jeunes joué en Angleterre au printemps.
-- **Carnet n°37 : Après la récupération, regarder devant.** Quand on reprend le ballon, l'adversaire est désorganisé : je regarde d'abord la profondeur. Si c'est ouvert, on attaque vite ; sinon, on garde et on s'organise. Schéma : récupération par K (étoile ou label « récupéré »), passe immédiate dans la profondeur vers B qui court.
+- **Carnet n°37 : Après la récupération, regarder devant.** Quand on reprend le ballon, l'adversaire est désorganisé : je regarde d'abord la profondeur. Si c'est ouvert, on attaque vite ; sinon, on garde et on s'organise. Schéma : récupération par B (étoile ou label « récupéré »), passe immédiate dans la profondeur vers K qui court.
 
 ### 38. Le souffle (POV Kaydoudou)
 - Demi-finale de la Coupe des Académies, par un soir glacial de mars, contre une académie allemande très physique (fictive, le TSV Rheinhafen). Il neige un peu.
@@ -353,4 +353,4 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - Kaydoudou court vers la tribune et fait la danse de Roger Milla au poteau de corner. Mami descend jusqu'à la main courante et danse avec lui.
 - * * * (POV BriBri) Après la fête, dans le couloir du stade, Monsieur Atéba leur tend une lettre officielle : ils sont convoqués au **stage des Lionceaux U17** cet été, au Cameroun. Ils vont rentrer à la maison, sur la terre rouge, avec le Njangi dans la tête.
 - Dernière scène : le soir, BriBri ouvre le carnet à une page blanche et écrit : « Tome 2 : La Tanière des Lionceaux. Rendez-vous en 2030. Ou en 2034. Le ballon voyage encore. »
-- **Carnet n°40 : Le but du Njangi.** Tout le monde touche, chacun verse sa part, le ballon sait où il va. Schéma : vue `full` avec 8 à 10 flèches de passes numérotées qui remontent tout le terrain de la gauche vers la droite jusqu'au tir de B.
+- **Carnet n°40 : Le but du Njangi.** Tout le monde touche, chacun verse sa part, le ballon sait où il va. Schéma : vue `full` avec 8 à 10 flèches de passes numérotées qui remontent tout le terrain de la gauche vers la droite jusqu'au tir de K.

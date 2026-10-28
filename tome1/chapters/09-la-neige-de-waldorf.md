@@ -352,21 +352,21 @@ Trois semaines. Vingt et un jours pour devenir assez bon. Dans un pays où même
   "view": "grid",
   "w": 32, "h": 18,
   "players": [
-    {"id": "K", "team": "a", "x": 9, "y": 10, "label": "K"},
+    {"id": "B", "team": "a", "x": 9, "y": 10, "label": "B"},
     {"id": "D", "team": "a", "x": 16, "y": 3.5, "label": "D"},
-    {"id": "B", "team": "a", "x": 24, "y": 12.5, "label": "B"},
+    {"id": "K", "team": "a", "x": 24, "y": 12.5, "label": "K"},
     {"id": "a4", "team": "a", "x": 4, "y": 4},
     {"id": "r1", "team": "b", "x": 12.5, "y": 12},
     {"id": "r2", "team": "b", "x": 17.5, "y": 9.5},
     {"id": "r3", "team": "b", "x": 22.5, "y": 5.5},
     {"id": "r4", "team": "b", "x": 27.5, "y": 15}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "r1", "to": "K", "kind": "press"},
-    {"from": "K", "to": "D", "kind": "pass", "n": 1},
-    {"from": "D", "to": "B", "kind": "pass", "n": 2},
-    {"from": "B", "to": [32, 9], "kind": "shot", "n": 3}
+    {"from": "r1", "to": "B", "kind": "press"},
+    {"from": "B", "to": "D", "kind": "pass", "n": 1},
+    {"from": "D", "to": "K", "kind": "pass", "n": 2},
+    {"from": "K", "to": [32, 9], "kind": "shot", "n": 3}
   ],
   "goals": [
     {"x": 32, "y": 9, "side": "right", "size": "mini"},

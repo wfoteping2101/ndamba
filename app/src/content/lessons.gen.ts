@@ -20,11 +20,11 @@ export const LESSONS: Lesson[] = [
    "h": 20,
    "players": [
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 12,
      "y": 11,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "r1",
@@ -51,11 +51,11 @@ export const LESSONS: Lesson[] = [
      "y": 11.6
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 5,
      "y": 7,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "P",
@@ -72,16 +72,16 @@ export const LESSONS: Lesson[] = [
      "label": "M"
     }
    ],
-   "ball": "B",
+   "ball": "K",
    "arrows": [
     {
-     "from": "B",
-     "to": "K",
+     "from": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
+     "from": "B",
      "to": "P",
      "kind": "pass",
      "n": 2
@@ -149,18 +149,18 @@ export const LESSONS: Lesson[] = [
      "label": "O"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 12,
      "y": 17,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 19,
      "y": 6,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "R",
@@ -199,18 +199,18 @@ export const LESSONS: Lesson[] = [
    "arrows": [
     {
      "from": "O",
-     "to": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 2
     },
     {
-     "from": "B",
+     "from": "K",
      "to": "R",
      "kind": "pass",
      "n": 3
@@ -266,11 +266,11 @@ export const LESSONS: Lesson[] = [
    "h": 20,
    "players": [
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 9,
      "y": 5,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "r1",
@@ -285,11 +285,11 @@ export const LESSONS: Lesson[] = [
      "y": 8.2
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 15,
      "y": 11,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "r3",
@@ -305,16 +305,16 @@ export const LESSONS: Lesson[] = [
      "label": "M"
     }
    ],
-   "ball": "B",
+   "ball": "K",
    "arrows": [
     {
-     "from": "B",
-     "to": "K",
+     "from": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       26,
       9
@@ -368,11 +368,11 @@ export const LESSONS: Lesson[] = [
    "h": 20,
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 6,
      "y": 12,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "r1",
@@ -385,14 +385,14 @@ export const LESSONS: Lesson[] = [
      "team": "n",
      "x": 20,
      "y": 7,
-     "label": "B?"
+     "label": "K?"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 20,
      "y": 13,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "S",
@@ -402,22 +402,22 @@ export const LESSONS: Lesson[] = [
      "label": "S"
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
      "from": "B0",
-     "to": "B",
+     "to": "K",
      "kind": "run",
      "n": 1
     },
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 2
     },
     {
-     "from": "B",
+     "from": "K",
      "to": "S",
      "kind": "pass",
      "n": 3
@@ -453,11 +453,11 @@ export const LESSONS: Lesson[] = [
    "view": "half",
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 14,
      "y": 40,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "M",
@@ -498,16 +498,16 @@ export const LESSONS: Lesson[] = [
      "y": 34
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
+     "from": "B",
      "to": "M",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
+     "from": "B",
      "to": "R",
      "kind": "pass",
      "n": 2
@@ -549,18 +549,18 @@ export const LESSONS: Lesson[] = [
    "h": 20,
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 5,
      "y": 15,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 17,
      "y": 10,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "d1",
@@ -582,10 +582,10 @@ export const LESSONS: Lesson[] = [
      "y": 18.5
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "B",
+     "from": "K",
      "to": [
       24,
       3
@@ -602,7 +602,7 @@ export const LESSONS: Lesson[] = [
      "kind": "run"
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       23,
       12
@@ -663,18 +663,18 @@ export const LESSONS: Lesson[] = [
    "view": "half",
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 14,
      "y": 34,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 35,
      "y": 22,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "M",
@@ -720,16 +720,16 @@ export const LESSONS: Lesson[] = [
      "y": 34
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "B",
+     "from": "K",
      "to": "M",
      "kind": "pass",
      "n": 2
@@ -790,18 +790,18 @@ export const LESSONS: Lesson[] = [
      "label": "O"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 8.5,
      "y": 5,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 15.5,
      "y": 5,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "M",
@@ -829,18 +829,18 @@ export const LESSONS: Lesson[] = [
    "arrows": [
     {
      "from": "O",
-     "to": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 2
     },
     {
-     "from": "B",
+     "from": "K",
      "to": "M",
      "kind": "pass",
      "n": 3
@@ -892,11 +892,11 @@ export const LESSONS: Lesson[] = [
    "h": 18,
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 9,
      "y": 10,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "D",
@@ -906,11 +906,11 @@ export const LESSONS: Lesson[] = [
      "label": "D"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 24,
      "y": 12.5,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "a4",
@@ -943,27 +943,27 @@ export const LESSONS: Lesson[] = [
      "y": 15
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
      "from": "r1",
-     "to": "K",
+     "to": "B",
      "kind": "press"
     },
     {
-     "from": "K",
+     "from": "B",
      "to": "D",
      "kind": "pass",
      "n": 1
     },
     {
      "from": "D",
-     "to": "B",
+     "to": "K",
      "kind": "pass",
      "n": 2
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       32,
       9
@@ -1020,11 +1020,11 @@ export const LESSONS: Lesson[] = [
      "label": "D"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 10,
      "y": 8,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "r1",
@@ -1033,21 +1033,21 @@ export const LESSONS: Lesson[] = [
      "y": 2.5
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
      "from": "D",
-     "to": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
      "from": "r1",
-     "to": "K",
+     "to": "B",
      "kind": "press"
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       18,
       11.5
@@ -1110,11 +1110,11 @@ export const LESSONS: Lesson[] = [
      "y": 58
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 24,
      "y": 36,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "T",
@@ -1154,7 +1154,7 @@ export const LESSONS: Lesson[] = [
      "y": 52
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
      "from": "a2",
@@ -1168,11 +1168,11 @@ export const LESSONS: Lesson[] = [
     },
     {
      "from": "a3",
-     "to": "K",
+     "to": "B",
      "kind": "pass"
     },
     {
-     "from": "K",
+     "from": "B",
      "to": "T",
      "kind": "pass",
      "n": 1
@@ -1213,11 +1213,11 @@ export const LESSONS: Lesson[] = [
    "view": "third",
    "players": [
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 17,
      "y": 52,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "T",
@@ -1227,11 +1227,11 @@ export const LESSONS: Lesson[] = [
      "label": "T"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 6,
      "y": 38,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "r1",
@@ -1258,20 +1258,20 @@ export const LESSONS: Lesson[] = [
      "y": 34
     }
    ],
-   "ball": "B",
+   "ball": "K",
    "arrows": [
     {
      "from": "r1",
-     "to": "B",
+     "to": "K",
      "kind": "press"
     },
     {
      "from": "r2",
-     "to": "B",
+     "to": "K",
      "kind": "press"
     },
     {
-     "from": "B",
+     "from": "K",
      "to": "T",
      "kind": "pass",
      "n": 1
@@ -1316,18 +1316,18 @@ export const LESSONS: Lesson[] = [
    "view": "full",
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 38,
      "y": 34,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 72,
      "y": 30,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "D",
@@ -1391,11 +1391,11 @@ export const LESSONS: Lesson[] = [
      "y": 48
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 1
     }
@@ -1465,11 +1465,11 @@ export const LESSONS: Lesson[] = [
      "label": "6"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 16,
      "y": 24,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "D",
@@ -1479,11 +1479,11 @@ export const LESSONS: Lesson[] = [
      "label": "D"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 28,
      "y": 14,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "M",
@@ -1500,16 +1500,16 @@ export const LESSONS: Lesson[] = [
      "label": "T"
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
+     "from": "B",
      "to": "M",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       42,
       18
@@ -1575,18 +1575,18 @@ export const LESSONS: Lesson[] = [
    "view": "third",
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 4,
      "y": 34,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 14,
      "y": 52,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "T",
@@ -1621,10 +1621,10 @@ export const LESSONS: Lesson[] = [
      "y": 34
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "B",
+     "from": "K",
      "to": [
       27,
       48
@@ -1641,7 +1641,7 @@ export const LESSONS: Lesson[] = [
      "kind": "run"
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       21.5,
       31.5
@@ -1693,18 +1693,18 @@ export const LESSONS: Lesson[] = [
      "y": 30
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 22,
      "y": 38,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 36,
      "y": 22,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "T",
@@ -1718,18 +1718,18 @@ export const LESSONS: Lesson[] = [
    "arrows": [
     {
      "from": "a1",
-     "to": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 2
     },
     {
-     "from": "B",
+     "from": "K",
      "to": "T",
      "kind": "pass",
      "n": 3
@@ -1788,11 +1788,11 @@ export const LESSONS: Lesson[] = [
      "label": "M"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 12,
      "y": 10,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "d1",
@@ -1801,17 +1801,17 @@ export const LESSONS: Lesson[] = [
      "y": 4.5
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 26,
      "y": 15,
-     "label": "B"
+     "label": "K"
     }
    ],
    "ball": "M",
    "arrows": [
     {
-     "from": "K",
+     "from": "B",
      "to": [
       15,
       6.5
@@ -1820,7 +1820,7 @@ export const LESSONS: Lesson[] = [
      "n": 1
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       15,
       13.5
@@ -1830,12 +1830,12 @@ export const LESSONS: Lesson[] = [
     },
     {
      "from": "M",
-     "to": "K",
+     "to": "B",
      "kind": "pass",
      "n": 3
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       21,
       11.5
@@ -1896,18 +1896,18 @@ export const LESSONS: Lesson[] = [
    "view": "half",
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 6,
      "y": 38,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 31,
      "y": 36,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "Kz",
@@ -1953,16 +1953,16 @@ export const LESSONS: Lesson[] = [
      "y": 54
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       47,
       43
@@ -2032,7 +2032,7 @@ export const LESSONS: Lesson[] = [
      "team": "a",
      "x": 12,
      "y": 5.5,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "d1",
@@ -2052,7 +2052,7 @@ export const LESSONS: Lesson[] = [
      "team": "a",
      "x": 12,
      "y": 16.5,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "d2",
@@ -2149,18 +2149,18 @@ export const LESSONS: Lesson[] = [
    "h": 20,
    "players": [
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 6,
      "y": 10,
-     "label": "B"
+     "label": "K"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 12.5,
      "y": 4,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "L",
@@ -2189,21 +2189,21 @@ export const LESSONS: Lesson[] = [
      "y": 10
     }
    ],
-   "ball": "B",
+   "ball": "K",
    "arrows": [
     {
      "from": "r1",
-     "to": "B",
+     "to": "K",
      "kind": "press"
     },
     {
-     "from": "B",
-     "to": "K",
+     "from": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
+     "from": "B",
      "to": "Kz",
      "kind": "pass",
      "n": 2
@@ -2276,11 +2276,11 @@ export const LESSONS: Lesson[] = [
      "label": "Kz"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 8.5,
      "y": 8,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "L",
@@ -2299,7 +2299,7 @@ export const LESSONS: Lesson[] = [
      "n": 1
     },
     {
-     "from": "K",
+     "from": "B",
      "to": "R",
      "kind": "run",
      "n": 1
@@ -2357,18 +2357,18 @@ export const LESSONS: Lesson[] = [
    "h": 20,
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 4,
      "y": 12,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 15,
      "y": 12,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "Kz",
@@ -2390,10 +2390,10 @@ export const LESSONS: Lesson[] = [
      "y": 11
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "B",
+     "from": "K",
      "to": [
       17,
       8.5
@@ -2402,13 +2402,13 @@ export const LESSONS: Lesson[] = [
      "n": 1
     },
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 2
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       26.5,
       5
@@ -2457,18 +2457,18 @@ export const LESSONS: Lesson[] = [
    "view": "half",
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 12,
      "y": 34,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 28,
      "y": 34,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "Kz",
@@ -2508,16 +2508,16 @@ export const LESSONS: Lesson[] = [
      "y": 44
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       35,
       40
@@ -2695,11 +2695,11 @@ export const LESSONS: Lesson[] = [
    "h": 14,
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 5,
      "y": 8,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "d1",
@@ -2708,11 +2708,11 @@ export const LESSONS: Lesson[] = [
      "y": 8.5
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 15.5,
      "y": 3.5,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "L",
@@ -2722,7 +2722,7 @@ export const LESSONS: Lesson[] = [
      "label": "L"
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
      "from": "d1",
@@ -2734,8 +2734,8 @@ export const LESSONS: Lesson[] = [
      "n": 1
     },
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 2
     }
@@ -2770,11 +2770,11 @@ export const LESSONS: Lesson[] = [
    "view": "half",
    "players": [
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 33,
      "y": 2.2,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "d2",
@@ -2790,11 +2790,11 @@ export const LESSONS: Lesson[] = [
      "label": "L"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 16,
      "y": 36,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "A9",
@@ -2836,10 +2836,10 @@ export const LESSONS: Lesson[] = [
      "y": 61.4
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
+     "from": "B",
      "to": [
       33,
       17.5
@@ -2933,11 +2933,11 @@ export const LESSONS: Lesson[] = [
      "label": "N"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 14,
      "y": 8,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "d1",
@@ -2957,12 +2957,12 @@ export const LESSONS: Lesson[] = [
    "arrows": [
     {
      "from": "N",
-     "to": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       19.5,
       14.5
@@ -3018,11 +3018,11 @@ export const LESSONS: Lesson[] = [
    "h": 18,
    "players": [
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 6,
      "y": 6,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "d1",
@@ -3044,10 +3044,10 @@ export const LESSONS: Lesson[] = [
      "label": "L"
     }
    ],
-   "ball": "B",
+   "ball": "K",
    "arrows": [
     {
-     "from": "B",
+     "from": "K",
      "to": [
       11,
       7
@@ -3129,11 +3129,11 @@ export const LESSONS: Lesson[] = [
    "view": "half",
    "players": [
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 40,
      "y": 3,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "T",
@@ -3142,11 +3142,11 @@ export const LESSONS: Lesson[] = [
      "y": 9
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 18,
      "y": 36,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "L",
@@ -3186,12 +3186,12 @@ export const LESSONS: Lesson[] = [
    "arrows": [
     {
      "from": "L",
-     "to": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       39,
       6.5
@@ -3236,11 +3236,11 @@ export const LESSONS: Lesson[] = [
    "view": "full",
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 33,
      "y": 34,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "N",
@@ -3257,11 +3257,11 @@ export const LESSONS: Lesson[] = [
      "label": "4"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 58,
      "y": 5,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "r1",
@@ -3294,10 +3294,10 @@ export const LESSONS: Lesson[] = [
      "y": 34
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
+     "from": "B",
      "to": "N",
      "kind": "pass",
      "n": 1
@@ -3310,12 +3310,12 @@ export const LESSONS: Lesson[] = [
     },
     {
      "from": "D",
-     "to": "K",
+     "to": "B",
      "kind": "pass",
      "n": 3
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       80,
       11
@@ -3324,7 +3324,7 @@ export const LESSONS: Lesson[] = [
      "n": 4
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       79,
       9
@@ -3367,18 +3367,18 @@ export const LESSONS: Lesson[] = [
    "view": "half",
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 24,
      "y": 30,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 34,
      "y": 4,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "d1",
@@ -3412,16 +3412,16 @@ export const LESSONS: Lesson[] = [
      "y": 38
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       36,
       14
@@ -3446,7 +3446,7 @@ export const LESSONS: Lesson[] = [
      "kind": "press"
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       43,
       30
@@ -3505,11 +3505,11 @@ export const LESSONS: Lesson[] = [
    "h": 14,
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 8,
      "y": 8.5,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "d1",
@@ -3518,28 +3518,28 @@ export const LESSONS: Lesson[] = [
      "y": 9.2
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 12,
      "y": 3.5,
-     "label": "B"
+     "label": "K"
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
      "from": "d1",
-     "to": "K",
+     "to": "B",
      "kind": "press"
     },
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       16.8,
       8.6
@@ -3548,7 +3548,7 @@ export const LESSONS: Lesson[] = [
      "n": 2
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       15.8,
       10.6
@@ -3588,18 +3588,18 @@ export const LESSONS: Lesson[] = [
    "h": 14,
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 3,
      "y": 9.5,
-     "label": "K"
+     "label": "B"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 9,
      "y": 6,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "d",
@@ -3615,11 +3615,11 @@ export const LESSONS: Lesson[] = [
      "label": "A"
     }
    ],
-   "ball": "B",
+   "ball": "K",
    "arrows": [
     {
-     "from": "K",
-     "to": "B",
+     "from": "B",
+     "to": "K",
      "kind": "pass",
      "n": 1
     },
@@ -3632,7 +3632,7 @@ export const LESSONS: Lesson[] = [
      "kind": "press"
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       10.6,
       9.6
@@ -3717,11 +3717,11 @@ export const LESSONS: Lesson[] = [
      "label": "J"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 33,
      "y": 9,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "Th",
@@ -3731,11 +3731,11 @@ export const LESSONS: Lesson[] = [
      "label": "Th"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 24,
      "y": 38,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "T",
@@ -3767,7 +3767,7 @@ export const LESSONS: Lesson[] = [
      "n": 2
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       41.5,
       13
@@ -3859,14 +3859,14 @@ export const LESSONS: Lesson[] = [
      "team": "a",
      "x": 17.5,
      "y": 25.8,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "p7",
      "team": "a",
      "x": 12.5,
      "y": 25.8,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "p8",
@@ -3980,11 +3980,11 @@ export const LESSONS: Lesson[] = [
    "view": "half",
    "players": [
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 14,
      "y": 34,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "J",
@@ -3994,11 +3994,11 @@ export const LESSONS: Lesson[] = [
      "label": "J"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 24,
      "y": 16,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "r1",
@@ -4025,10 +4025,10 @@ export const LESSONS: Lesson[] = [
      "y": 34
     }
    ],
-   "ball": "K",
+   "ball": "B",
    "arrows": [
     {
-     "from": "K",
+     "from": "B",
      "to": [
       42,
       20
@@ -4037,7 +4037,7 @@ export const LESSONS: Lesson[] = [
      "n": 1
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       42.5,
       18
@@ -4098,11 +4098,11 @@ export const LESSONS: Lesson[] = [
      "label": "S"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 15,
      "y": 4,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "A",
@@ -4112,11 +4112,11 @@ export const LESSONS: Lesson[] = [
      "label": "A"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 15,
      "y": 18,
-     "label": "B"
+     "label": "K"
     },
     {
      "id": "r1",
@@ -4135,19 +4135,19 @@ export const LESSONS: Lesson[] = [
    "arrows": [
     {
      "from": "S",
-     "to": "K",
+     "to": "B",
      "kind": "pass",
      "n": 1
     },
     {
-     "from": "K",
+     "from": "B",
      "to": "A",
      "kind": "pass",
      "n": 2
     },
     {
      "from": "A",
-     "to": "B",
+     "to": "K",
      "kind": "pass",
      "n": 3
     },
@@ -4391,18 +4391,18 @@ export const LESSONS: Lesson[] = [
      "label": "R"
     },
     {
-     "id": "B",
+     "id": "K",
      "team": "a",
      "x": 83,
      "y": 7,
-     "label": "B"
+     "label": "K"
     },
     {
-     "id": "K",
+     "id": "B",
      "team": "a",
      "x": 86,
      "y": 27,
-     "label": "K"
+     "label": "B"
     },
     {
      "id": "d1",
@@ -4481,18 +4481,18 @@ export const LESSONS: Lesson[] = [
     },
     {
      "from": "R",
-     "to": "B",
+     "to": "K",
      "kind": "pass",
      "n": 9
     },
     {
-     "from": "B",
-     "to": "K",
+     "from": "K",
+     "to": "B",
      "kind": "pass",
      "n": 10
     },
     {
-     "from": "K",
+     "from": "B",
      "to": [
       96,
       22
@@ -4501,7 +4501,7 @@ export const LESSONS: Lesson[] = [
      "n": 11
     },
     {
-     "from": "B",
+     "from": "K",
      "to": [
       95,
       20

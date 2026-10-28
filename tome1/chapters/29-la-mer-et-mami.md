@@ -319,14 +319,14 @@ Dans son rêve, la tramuntana souffle vers le sud. Et elle emporte jusqu'à Bafo
   "view": "grid",
   "w": 28, "h": 18,
   "players": [
-    {"id": "B", "team": "a", "x": 6, "y": 6, "label": "B"},
+    {"id": "K", "team": "a", "x": 6, "y": 6, "label": "K"},
     {"id": "d1", "team": "b", "x": 14.5, "y": 3},
     {"id": "d2", "team": "b", "x": 9, "y": 13},
     {"id": "L", "team": "a", "x": 21, "y": 14.5, "label": "L"}
   ],
-  "ball": "B",
+  "ball": "K",
   "arrows": [
-    {"from": "B", "to": [11, 7], "kind": "dribble", "n": 1},
+    {"from": "K", "to": [11, 7], "kind": "dribble", "n": 1},
     {"from": "d1", "to": [12.6, 5.2], "kind": "press"},
     {"from": "d2", "to": [10.2, 10], "kind": "press"},
     {"from": [11, 7], "to": "L", "kind": "pass", "n": 2},

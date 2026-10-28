@@ -313,9 +313,9 @@ Puis Jaden attrape son sac et part en courant, le téléphone déjà collé à l
     {"id": "r2", "team": "b", "x": 41, "y": 6},
     {"id": "g", "team": "gkb", "x": 51, "y": 34},
     {"id": "J", "team": "a", "x": 35, "y": 20, "label": "J"},
-    {"id": "B", "team": "a", "x": 33, "y": 9, "label": "B"},
+    {"id": "K", "team": "a", "x": 33, "y": 9, "label": "K"},
     {"id": "Th", "team": "a", "x": 37, "y": 41, "label": "Th"},
-    {"id": "K", "team": "a", "x": 24, "y": 38, "label": "K"},
+    {"id": "B", "team": "a", "x": 24, "y": 38, "label": "B"},
     {"id": "T", "team": "a", "x": 8, "y": 28, "label": "T"},
     {"id": "S", "team": "a", "x": 8, "y": 42, "label": "S"}
   ],
@@ -323,7 +323,7 @@ Puis Jaden attrape son sac et part en courant, le téléphone déjà collé à l
   "arrows": [
     {"from": "r6", "to": "c1", "kind": "pass", "n": 1},
     {"from": "J", "to": "c1", "kind": "press", "n": 2},
-    {"from": "B", "to": [41.5, 13], "kind": "press", "n": 2},
+    {"from": "K", "to": [41.5, 13], "kind": "press", "n": 2},
     {"from": "Th", "to": [43, 34], "kind": "press", "n": 2}
   ],
   "zones": [{"x": 0, "y": 20, "w": 15, "h": 30, "label": "défense de repos", "tone": "soft"}],

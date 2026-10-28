@@ -287,14 +287,14 @@ Et dans le noir, BriBri voit encore le tabouret.
   "w": 30, "h": 20,
   "players": [
     {"id": "N", "team": "a", "x": 4, "y": 8, "label": "N"},
-    {"id": "K", "team": "a", "x": 14, "y": 8, "label": "K"},
+    {"id": "B", "team": "a", "x": 14, "y": 8, "label": "B"},
     {"id": "d1", "team": "b", "x": 17.5, "y": 8},
     {"id": "L", "team": "a", "x": 8, "y": 17, "label": "L"}
   ],
   "ball": "N",
   "arrows": [
-    {"from": "N", "to": "K", "kind": "pass", "n": 1},
-    {"from": "K", "to": [19.5, 14.5], "kind": "pass", "n": 2},
+    {"from": "N", "to": "B", "kind": "pass", "n": 1},
+    {"from": "B", "to": [19.5, 14.5], "kind": "pass", "n": 2},
     {"from": "L", "to": [19, 15.6], "kind": "run"}
   ],
   "goals": [{"x": 30, "y": 10, "side": "right", "size": "mini"}],

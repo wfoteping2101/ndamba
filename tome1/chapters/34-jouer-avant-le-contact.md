@@ -315,16 +315,16 @@ Kaydoudou serre sa médaille dans le noir. *Ce match-là n'a pas encore commenc�
   "view": "grid",
   "w": 20, "h": 14,
   "players": [
-    {"id": "K", "team": "a", "x": 3, "y": 9.5, "label": "K"},
-    {"id": "B", "team": "a", "x": 9, "y": 6, "label": "B"},
+    {"id": "B", "team": "a", "x": 3, "y": 9.5, "label": "B"},
+    {"id": "K", "team": "a", "x": 9, "y": 6, "label": "K"},
     {"id": "d", "team": "b", "x": 14.5, "y": 3},
     {"id": "A", "team": "a", "x": 16.5, "y": 11.5, "label": "A"}
   ],
-  "ball": "B",
+  "ball": "K",
   "arrows": [
-    {"from": "K", "to": "B", "kind": "pass", "n": 1},
+    {"from": "B", "to": "K", "kind": "pass", "n": 1},
     {"from": "d", "to": [10.4, 4.6], "kind": "press"},
-    {"from": "B", "to": [10.6, 9.6], "kind": "dribble", "n": 2},
+    {"from": "K", "to": [10.6, 9.6], "kind": "dribble", "n": 2},
     {"from": [10.6, 9.6], "to": "A", "kind": "pass", "n": 3}
   ],
   "labels": [

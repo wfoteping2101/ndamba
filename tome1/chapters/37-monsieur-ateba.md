@@ -284,18 +284,18 @@ Mais il fait un tout petit signe de tête.
 {
   "view": "half",
   "players": [
-    {"id": "K", "team": "a", "x": 14, "y": 34, "label": "K"},
+    {"id": "B", "team": "a", "x": 14, "y": 34, "label": "B"},
     {"id": "J", "team": "a", "x": 10, "y": 27, "label": "J"},
-    {"id": "B", "team": "a", "x": 24, "y": 16, "label": "B"},
+    {"id": "K", "team": "a", "x": 24, "y": 16, "label": "K"},
     {"id": "r1", "team": "b", "x": 17.5, "y": 37},
     {"id": "d1", "team": "b", "x": 29, "y": 26},
     {"id": "d2", "team": "b", "x": 30, "y": 43},
     {"id": "g", "team": "gkb", "x": 51, "y": 34}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "K", "to": [42, 20], "kind": "pass", "n": 1},
-    {"from": "B", "to": [42.5, 18], "kind": "run", "n": 1},
+    {"from": "B", "to": [42, 20], "kind": "pass", "n": 1},
+    {"from": "K", "to": [42.5, 18], "kind": "run", "n": 1},
     {"from": "d1", "to": [33, 23], "kind": "run"}
   ],
   "zones": [{"x": 33, "y": 8, "w": 14, "h": 26, "label": "ouvert !", "tone": "a"}],

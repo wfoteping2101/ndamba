@@ -338,17 +338,17 @@ Kaydoudou sourit contre la vitre, de son grand sourire troué. Il serre un peu p
   "w": 24, "h": 24,
   "players": [
     {"id": "O", "team": "gk", "x": 5, "y": 12, "label": "O"},
-    {"id": "K", "team": "a", "x": 8.5, "y": 5, "label": "K"},
-    {"id": "B", "team": "a", "x": 15.5, "y": 5, "label": "B"},
+    {"id": "B", "team": "a", "x": 8.5, "y": 5, "label": "B"},
+    {"id": "K", "team": "a", "x": 15.5, "y": 5, "label": "K"},
     {"id": "M", "team": "a", "x": 19, "y": 12, "label": "M"},
     {"id": "S", "team": "a", "x": 15.5, "y": 19, "label": "S"},
     {"id": "R", "team": "a", "x": 8.5, "y": 19, "label": "R"}
   ],
   "ball": "O",
   "arrows": [
-    {"from": "O", "to": "K", "kind": "pass", "n": 1},
-    {"from": "K", "to": "B", "kind": "pass", "n": 2},
-    {"from": "B", "to": "M", "kind": "pass", "n": 3},
+    {"from": "O", "to": "B", "kind": "pass", "n": 1},
+    {"from": "B", "to": "K", "kind": "pass", "n": 2},
+    {"from": "K", "to": "M", "kind": "pass", "n": 3},
     {"from": "M", "to": "S", "kind": "pass", "n": 4},
     {"from": "S", "to": "R", "kind": "pass", "n": 5},
     {"from": "R", "to": "O", "kind": "pass", "n": 6}

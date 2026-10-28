@@ -336,8 +336,8 @@ Papa ne sourit pas tout à fait. Il ouvre l'enveloppe. Dedans, il y a quatre bil
 {
   "view": "half",
   "players": [
-    {"id": "K", "team": "a", "x": 14, "y": 34, "label": "K"},
-    {"id": "B", "team": "a", "x": 35, "y": 22, "label": "B"},
+    {"id": "B", "team": "a", "x": 14, "y": 34, "label": "B"},
+    {"id": "K", "team": "a", "x": 35, "y": 22, "label": "K"},
     {"id": "M", "team": "a", "x": 38, "y": 54, "label": "M"},
     {"id": "m1", "team": "b", "x": 22, "y": 7},
     {"id": "m2", "team": "b", "x": 25, "y": 15},
@@ -346,10 +346,10 @@ Papa ne sourit pas tout à fait. Il ouvre l'enveloppe. Dedans, il y a quatre bil
     {"id": "d2", "team": "b", "x": 41, "y": 28},
     {"id": "gk", "team": "gkb", "x": 51, "y": 34}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "K", "to": "B", "kind": "pass", "n": 1},
-    {"from": "B", "to": "M", "kind": "pass", "n": 2},
+    {"from": "B", "to": "K", "kind": "pass", "n": 1},
+    {"from": "K", "to": "M", "kind": "pass", "n": 2},
     {"from": "M", "to": [52, 38], "kind": "shot", "n": 3}
   ],
   "zones": [

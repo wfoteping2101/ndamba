@@ -298,15 +298,15 @@ C'est beaucoup trop long.
   "view": "grid",
   "w": 20, "h": 14,
   "players": [
-    {"id": "K", "team": "a", "x": 5, "y": 8, "label": "K"},
+    {"id": "B", "team": "a", "x": 5, "y": 8, "label": "B"},
     {"id": "d1", "team": "b", "x": 10.5, "y": 8.5},
-    {"id": "B", "team": "a", "x": 15.5, "y": 3.5, "label": "B"},
+    {"id": "K", "team": "a", "x": 15.5, "y": 3.5, "label": "K"},
     {"id": "L", "team": "a", "x": 15, "y": 12, "label": "L"}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
     {"from": "d1", "to": [7.6, 8.4], "kind": "press", "n": 1},
-    {"from": "K", "to": "B", "kind": "pass", "n": 2}
+    {"from": "B", "to": "K", "kind": "pass", "n": 2}
   ],
   "labels": [
     {"x": 4.5, "y": 11, "text": "j'attends..."},

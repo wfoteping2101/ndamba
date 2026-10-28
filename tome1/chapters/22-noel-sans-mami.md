@@ -309,17 +309,17 @@ Il serre le poing.
   "view": "grid",
   "w": 30, "h": 20,
   "players": [
-    {"id": "K", "team": "a", "x": 4, "y": 12, "label": "K"},
-    {"id": "B", "team": "a", "x": 15, "y": 12, "label": "B"},
+    {"id": "B", "team": "a", "x": 4, "y": 12, "label": "B"},
+    {"id": "K", "team": "a", "x": 15, "y": 12, "label": "K"},
     {"id": "Kz", "team": "a", "x": 17, "y": 3.5, "label": "Kz"},
     {"id": "d1", "team": "b", "x": 19.5, "y": 13.5},
     {"id": "d2", "team": "b", "x": 24.5, "y": 11}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "B", "to": [17, 8.5], "kind": "run", "n": 1},
-    {"from": "K", "to": "B", "kind": "pass", "n": 2},
-    {"from": "B", "to": [26.5, 5], "kind": "pass", "n": 3},
+    {"from": "K", "to": [17, 8.5], "kind": "run", "n": 1},
+    {"from": "B", "to": "K", "kind": "pass", "n": 2},
+    {"from": "K", "to": [26.5, 5], "kind": "pass", "n": 3},
     {"from": "Kz", "to": [24, 3.5], "kind": "run"}
   ],
   "labels": [

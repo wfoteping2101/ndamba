@@ -90,7 +90,7 @@ Kaydoudou sursaute.
 
 « Moi, chuchote Kaydoudou. Enfin, je crois. »
 
-« I'm Nathan Okafor. Coach of the U15. » Il lit la liste en marchant. À « BriBri », il s'arrête net. Juste en dessous : « Kaydoudou ». Même adresse.
+« I'm Nathan Okafor. Coach of the U16. » Il lit la liste en marchant. À « BriBri », il s'arrête net. Juste en dessous : « Kaydoudou ». Même adresse.
 
 « BriBri and Kaydoudou ? Brothers ? Where from ? »
 
@@ -308,16 +308,16 @@ Plus tard, sous le toit penché, BriBri écoute la pluie gratter la lucarne. Il 
   "view": "grid",
   "w": 20, "h": 14,
   "players": [
-    {"id": "K", "team": "a", "x": 8, "y": 8.5, "label": "K"},
+    {"id": "B", "team": "a", "x": 8, "y": 8.5, "label": "B"},
     {"id": "d1", "team": "b", "x": 4.2, "y": 9.2},
-    {"id": "B", "team": "a", "x": 12, "y": 3.5, "label": "B"}
+    {"id": "K", "team": "a", "x": 12, "y": 3.5, "label": "K"}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "d1", "to": "K", "kind": "press"},
-    {"from": "K", "to": "B", "kind": "pass", "n": 1},
-    {"from": "B", "to": [16.8, 8.6], "kind": "pass", "n": 2},
-    {"from": "K", "to": [15.8, 10.6], "kind": "run", "n": 3}
+    {"from": "d1", "to": "B", "kind": "press"},
+    {"from": "B", "to": "K", "kind": "pass", "n": 1},
+    {"from": "K", "to": [16.8, 8.6], "kind": "pass", "n": 2},
+    {"from": "B", "to": [15.8, 10.6], "kind": "run", "n": 3}
   ],
   "labels": [
     {"x": 12, "y": 1.4, "text": "le mur"},

@@ -326,13 +326,13 @@ Le premier Noël de leur vie sans Mami.
     {"id": "r2", "team": "b", "x": 25, "y": 4},
     {"id": "r3", "team": "b", "x": 25, "y": 16.5},
     {"id": "Kz", "team": "a", "x": 21, "y": 11.5, "label": "Kz"},
-    {"id": "K", "team": "a", "x": 8.5, "y": 8, "label": "K"},
+    {"id": "B", "team": "a", "x": 8.5, "y": 8, "label": "B"},
     {"id": "L", "team": "a", "x": 11, "y": 17, "label": "L"}
   ],
   "ball": "R",
   "arrows": [
     {"from": "Kz", "to": "R", "kind": "run", "n": 1},
-    {"from": "K", "to": "R", "kind": "run", "n": 1},
+    {"from": "B", "to": "R", "kind": "run", "n": 1},
     {"from": "L", "to": "R", "kind": "run", "n": 1}
   ],
   "zones": [{"x": 11.5, "y": 5.5, "w": 9, "h": 9, "label": "cinq secondes", "tone": "n"}],

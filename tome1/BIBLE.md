@@ -104,10 +104,10 @@ Vieux ballon de cuir, déformé, avec une pièce de pagne wax rouge et jaune cou
 
 ### Partie V, Angleterre (Londres)
 - **Kingsbridge Albion FC** : club fictif du sud de Londres et son académie.
-- **Coach Nathan Okafor**, 38 ans, britannique d'origine nigériane, entraîneur des U15, ancien milieu défensif, énergie folle, phrase favorite : « Intensity is a choice. »
+- **Coach Nathan Okafor**, 38 ans, britannique d'origine nigériane, entraîneur des U16, ancien milieu défensif, énergie folle, phrase favorite : « Intensity is a choice. »
 - **Mrs. Helen Price**, directrice de l'académie, sévère et juste.
 - **Jaden Clarke**, 15 ans, milieu box-to-box, rival de BriBri au début puis allié.
-- **Freddie Shaw**, 14 ans, gardien, blagueur.
+- **Freddie Shaw**, 15 ans, gardien, blagueur.
 - **Monsieur Joseph Atéba**, 50 ans, recruteur de la Fédération camerounaise de football pour l'Europe (il observe les binationaux et les jeunes Camerounais de la diaspora). C'est lui qui appelle les frères en sélection U17 au chapitre 40.
 
 ## Le calendrier (ancrage dans le réel)

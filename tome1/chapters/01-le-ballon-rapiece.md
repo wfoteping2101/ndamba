@@ -298,19 +298,19 @@ BriBri regarde la grande déchirure.
   "view": "grid",
   "w": 30, "h": 20,
   "players": [
-    {"id": "B", "team": "a", "x": 12, "y": 11, "label": "B"},
+    {"id": "K", "team": "a", "x": 12, "y": 11, "label": "K"},
     {"id": "r1", "team": "b", "x": 14.8, "y": 11},
     {"id": "r2", "team": "b", "x": 12.4, "y": 8.2},
     {"id": "r3", "team": "b", "x": 12.4, "y": 13.8},
     {"id": "r4", "team": "b", "x": 9.6, "y": 11.6},
-    {"id": "K", "team": "a", "x": 5, "y": 7, "label": "K"},
+    {"id": "B", "team": "a", "x": 5, "y": 7, "label": "B"},
     {"id": "P", "team": "a", "x": 13, "y": 2.8, "label": "P"},
     {"id": "M", "team": "a", "x": 22, "y": 6.5, "label": "M"}
   ],
-  "ball": "B",
+  "ball": "K",
   "arrows": [
-    {"from": "B", "to": "K", "kind": "pass", "n": 1},
-    {"from": "K", "to": "P", "kind": "pass", "n": 2},
+    {"from": "K", "to": "B", "kind": "pass", "n": 1},
+    {"from": "B", "to": "P", "kind": "pass", "n": 2},
     {"from": "P", "to": "M", "kind": "pass", "n": 3},
     {"from": "M", "to": [29, 10], "kind": "shot", "n": 4}
   ],

@@ -399,14 +399,14 @@ Marcus sourit. Le sourire doux des gens qui disent des choses terribles très ge
   "w": 26, "h": 16,
   "players": [
     {"id": "D", "team": "a", "x": 3, "y": 13, "label": "D"},
-    {"id": "K", "team": "a", "x": 10, "y": 8, "label": "K"},
+    {"id": "B", "team": "a", "x": 10, "y": 8, "label": "B"},
     {"id": "r1", "team": "b", "x": 8, "y": 2.5}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "D", "to": "K", "kind": "pass", "n": 1},
-    {"from": "r1", "to": "K", "kind": "press"},
-    {"from": "K", "to": [18, 11.5], "kind": "dribble", "n": 2}
+    {"from": "D", "to": "B", "kind": "pass", "n": 1},
+    {"from": "r1", "to": "B", "kind": "press"},
+    {"from": "B", "to": [18, 11.5], "kind": "dribble", "n": 2}
   ],
   "zones": [{"x": 14, "y": 6, "w": 11, "h": 9, "label": "espace libre", "tone": "a"}],
   "labels": [{"x": 19, "y": 2.5, "text": "loin du défenseur"}]

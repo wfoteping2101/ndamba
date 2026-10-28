@@ -343,19 +343,19 @@ Puis il la rouvre. Et ce qui sort le surprend lui-même.
 {
   "view": "third",
   "players": [
-    {"id": "K", "team": "a", "x": 4, "y": 34, "label": "K"},
-    {"id": "B", "team": "a", "x": 14, "y": 52, "label": "B"},
+    {"id": "B", "team": "a", "x": 4, "y": 34, "label": "B"},
+    {"id": "K", "team": "a", "x": 14, "y": 52, "label": "K"},
     {"id": "T", "team": "a", "x": 13, "y": 22, "label": "T"},
     {"id": "d5", "team": "b", "x": 21, "y": 38, "label": "5"},
     {"id": "d2", "team": "b", "x": 22, "y": 16},
     {"id": "d3", "team": "b", "x": 19, "y": 58},
     {"id": "gk", "team": "gkb", "x": 33.5, "y": 34}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "B", "to": [27, 48], "kind": "run", "n": 1},
+    {"from": "K", "to": [27, 48], "kind": "run", "n": 1},
     {"from": "d5", "to": [25, 45], "kind": "run"},
-    {"from": "K", "to": [21.5, 31.5], "kind": "pass", "n": 2},
+    {"from": "B", "to": [21.5, 31.5], "kind": "pass", "n": 2},
     {"from": "T", "to": [20.5, 29.5], "kind": "run", "n": 3}
   ],
   "zones": [{"x": 17, "y": 26, "w": 8, "h": 9, "label": "le trou", "tone": "a"}]

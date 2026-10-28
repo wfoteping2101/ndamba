@@ -349,8 +349,8 @@ Mais pour dire à Kenzo qu'ils vont partir, il n'en connaît aucun.
 {
   "view": "half",
   "players": [
-    {"id": "K", "team": "a", "x": 12, "y": 34, "label": "K"},
-    {"id": "B", "team": "a", "x": 28, "y": 34, "label": "B"},
+    {"id": "B", "team": "a", "x": 12, "y": 34, "label": "B"},
+    {"id": "K", "team": "a", "x": 28, "y": 34, "label": "K"},
     {"id": "Kz", "team": "a", "x": 26, "y": 54, "label": "Kz"},
     {"id": "m1", "team": "b", "x": 20, "y": 22},
     {"id": "m2", "team": "b", "x": 20, "y": 46},
@@ -358,10 +358,10 @@ Mais pour dire à Kenzo qu'ils vont partir, il n'en connaît aucun.
     {"id": "d2", "team": "b", "x": 44, "y": 28},
     {"id": "d3", "team": "b", "x": 44, "y": 44}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "K", "to": "B", "kind": "pass", "n": 1},
-    {"from": "B", "to": [35, 40], "kind": "dribble", "n": 2},
+    {"from": "B", "to": "K", "kind": "pass", "n": 1},
+    {"from": "K", "to": [35, 40], "kind": "dribble", "n": 2},
     {"from": "Kz", "to": [42, 55.5], "kind": "run"},
     {"from": [35, 40], "to": [42, 53], "kind": "pass", "n": 3}
   ],

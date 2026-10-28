@@ -319,18 +319,18 @@ Puis Ousmane referme sa grande main, large comme une feuille de bananier, sur le
   "h": 20,
   "players": [
     {
-      "id": "K",
+      "id": "B",
       "team": "a",
       "x": 5,
       "y": 15,
-      "label": "K"
+      "label": "B"
     },
     {
-      "id": "B",
+      "id": "K",
       "team": "a",
       "x": 17,
       "y": 10,
-      "label": "B"
+      "label": "K"
     },
     {
       "id": "d1",
@@ -352,10 +352,10 @@ Puis Ousmane referme sa grande main, large comme une feuille de bananier, sur le
       "y": 18.5
     }
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
     {
-      "from": "B",
+      "from": "K",
       "to": [
         24,
         3
@@ -372,7 +372,7 @@ Puis Ousmane referme sa grande main, large comme une feuille de bananier, sur le
       "kind": "run"
     },
     {
-      "from": "K",
+      "from": "B",
       "to": [
         23,
         12

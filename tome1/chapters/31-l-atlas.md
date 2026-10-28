@@ -291,23 +291,23 @@ Kaydoudou, toujours dans le maillot de Youssef, les observe longtemps.
 {
   "view": "full",
   "players": [
-    {"id": "K", "team": "a", "x": 33, "y": 34, "label": "K"},
+    {"id": "B", "team": "a", "x": 33, "y": 34, "label": "B"},
     {"id": "N", "team": "a", "x": 22, "y": 46, "label": "N"},
     {"id": "D", "team": "a", "x": 22, "y": 22, "label": "4"},
-    {"id": "B", "team": "a", "x": 58, "y": 5, "label": "B"},
+    {"id": "K", "team": "a", "x": 58, "y": 5, "label": "K"},
     {"id": "r1", "team": "b", "x": 44, "y": 26},
     {"id": "r2", "team": "b", "x": 43, "y": 42},
     {"id": "r3", "team": "b", "x": 48, "y": 14},
     {"id": "r4", "team": "b", "x": 68, "y": 32},
     {"id": "gk", "team": "gkb", "x": 101, "y": 34}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "K", "to": "N", "kind": "pass", "n": 1},
+    {"from": "B", "to": "N", "kind": "pass", "n": 1},
     {"from": "N", "to": "D", "kind": "pass", "n": 2},
-    {"from": "D", "to": "K", "kind": "pass", "n": 3},
-    {"from": "K", "to": [80, 11], "kind": "pass", "n": 4},
-    {"from": "B", "to": [79, 9], "kind": "run"}
+    {"from": "D", "to": "B", "kind": "pass", "n": 3},
+    {"from": "B", "to": [80, 11], "kind": "pass", "n": 4},
+    {"from": "K", "to": [79, 9], "kind": "run"}
   ],
   "zones": [{"x": 70, "y": 2, "w": 20, "h": 20, "label": "vite", "tone": "n"}],
   "labels": [{"x": 22, "y": 55, "text": "lent, lent"}]

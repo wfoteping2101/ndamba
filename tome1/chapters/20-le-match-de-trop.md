@@ -298,18 +298,18 @@ Cette nuit-là, il ne pense même pas à avoir peur du noir.
   "view": "grid",
   "w": 26, "h": 20,
   "players": [
-    {"id": "B", "team": "a", "x": 6, "y": 10, "label": "B"},
-    {"id": "K", "team": "a", "x": 12.5, "y": 4, "label": "K"},
+    {"id": "K", "team": "a", "x": 6, "y": 10, "label": "K"},
+    {"id": "B", "team": "a", "x": 12.5, "y": 4, "label": "B"},
     {"id": "L", "team": "a", "x": 12.5, "y": 16, "label": "L"},
     {"id": "Kz", "team": "a", "x": 20, "y": 10, "label": "Kz"},
     {"id": "r1", "team": "b", "x": 2.5, "y": 5.5},
     {"id": "r2", "team": "b", "x": 13.5, "y": 10}
   ],
-  "ball": "B",
+  "ball": "K",
   "arrows": [
-    {"from": "r1", "to": "B", "kind": "press"},
-    {"from": "B", "to": "K", "kind": "pass", "n": 1},
-    {"from": "K", "to": "Kz", "kind": "pass", "n": 2}
+    {"from": "r1", "to": "K", "kind": "press"},
+    {"from": "K", "to": "B", "kind": "pass", "n": 1},
+    {"from": "B", "to": "Kz", "kind": "pass", "n": 2}
   ],
   "labels": [
     {"x": 12.5, "y": 1.4, "text": "à gauche"},

@@ -351,21 +351,21 @@ Quelque part sous la pluie de Londres, la dernière pièce du Njangi l'attend.
 {
   "view": "half",
   "players": [
-    {"id": "K", "team": "a", "x": 24, "y": 30, "label": "K"},
-    {"id": "B", "team": "a", "x": 34, "y": 4, "label": "B"},
+    {"id": "B", "team": "a", "x": 24, "y": 30, "label": "B"},
+    {"id": "K", "team": "a", "x": 34, "y": 4, "label": "K"},
     {"id": "d1", "team": "b", "x": 41, "y": 10},
     {"id": "d2", "team": "b", "x": 42, "y": 18.5},
     {"id": "d3", "team": "b", "x": 45, "y": 44},
     {"id": "L", "team": "a", "x": 26, "y": 52, "label": "L"},
     {"id": "gk", "team": "gkb", "x": 50.5, "y": 38}
   ],
-  "ball": "K",
+  "ball": "B",
   "arrows": [
-    {"from": "K", "to": "B", "kind": "pass", "n": 1},
-    {"from": "B", "to": [36, 14], "kind": "dribble", "n": 2},
+    {"from": "B", "to": "K", "kind": "pass", "n": 1},
+    {"from": "K", "to": [36, 14], "kind": "dribble", "n": 2},
     {"from": "d1", "to": [38.2, 12.6], "kind": "press"},
     {"from": "d2", "to": [38.6, 16], "kind": "press"},
-    {"from": "K", "to": [43, 30], "kind": "run"},
+    {"from": "B", "to": [43, 30], "kind": "run"},
     {"from": [36, 14], "to": [42.5, 29], "kind": "pass", "n": 3},
     {"from": [44, 30], "to": [52, 31.5], "kind": "shot", "n": 4}
   ],
