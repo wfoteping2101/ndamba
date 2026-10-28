@@ -181,7 +181,7 @@
   "model": null,
   "master": null,
   "status": "pending",
-  "review": null,
+  "review": "Waldorf street in snow at dusk; the taller brother in the red anorak, the small one kicking snow.",
   "integrated_in": []
  },
  {
@@ -196,7 +196,7 @@
   "model": null,
   "master": null,
   "status": "pending",
-  "review": null,
+  "review": "Training ground by the Marne in autumn, barge and viaduct, star building; the brothers watch from the fence.",
   "integrated_in": []
  },
  {
@@ -211,7 +211,7 @@
   "model": null,
   "master": null,
   "status": "pending",
-  "review": null,
+  "review": "Sunday rondo on the Catalan village square, church tower and sea.",
   "integrated_in": []
  },
  {
@@ -226,7 +226,7 @@
   "model": null,
   "master": null,
   "status": "pending",
-  "review": null,
+  "review": "South London street in the rain, double-decker, floodlit academy pitch; the brothers in dark green tracksuits.",
   "integrated_in": []
  },
  {
@@ -281,7 +281,7 @@
   "model": null,
   "master": null,
   "status": "pending",
-  "review": null,
+  "review": "Tonton Fokou on the yellow jerrycan between the two brothers back to back; Mireille behind.",
   "integrated_in": []
  },
  {
@@ -858,6 +858,475 @@
   "integrated_in": []
  },
  {
+  "id": "ch01b",
+  "kind": "beat",
+  "chapter": 1,
+  "refs": [
+   "sheet-brothers.png",
+   "ch01.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch01b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "Kaydoudou mid-dribble, red sock right, yellow left, gap tooth; ball without patch before ch02.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch01c",
+  "kind": "beat",
+  "chapter": 1,
+  "refs": [
+   "sheet-brothers.png",
+   "ch01.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch01c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "BriBri number 8 strikes; part line on his left.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch01d",
+  "kind": "beat",
+  "chapter": 1,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch01.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch01d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "Papa in the blue shirt; Kaydoudou on the plastic chair with the burst ball, red sock right; BriBri in the doorway.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch02b",
+  "kind": "beat",
+  "chapter": 2,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch02.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch02b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "Vulcanisateur and the bladder; Kaydoudou leaning in, red sock right; Papa behind.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch02c",
+  "kind": "beat",
+  "chapter": 2,
+  "refs": [
+   "sheet-brothers.png",
+   "ch02.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch02c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "Fog match on the hillside; Kaydoudou with red sock right.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch02d",
+  "kind": "beat",
+  "chapter": 2,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch02.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch02d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "The njangi women, Mami hands the box; the brothers on the bench.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch03b",
+  "kind": "beat",
+  "chapter": 3,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch03b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "Bulldozer's entrance; Kaydoudou holds the patched ball, BriBri number 8.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch03c",
+  "kind": "beat",
+  "chapter": 3,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch03c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "Kaydoudou squeezed by two blue Requins; BriBri open in the distance.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch03d",
+  "kind": "beat",
+  "chapter": 3,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch03d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "Close-up of BriBri seen from his right side with the shaved part on the RIGHT: the part must be on his left. Regenerate.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch04b",
+  "kind": "beat",
+  "chapter": 4,
+  "refs": [
+   "sheet-brothers.png",
+   "ch04.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch04b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "Kaydoudou slides in the red mud, red sock right.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch04c",
+  "kind": "beat",
+  "chapter": 4,
+  "refs": [
+   "sheet-brothers.png",
+   "ch04.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch04c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "The two steps of the ghost in the mud. Seen from behind, BriBri shows the part on his right side: minor, accepted.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch04d",
+  "kind": "beat",
+  "chapter": 4,
+  "refs": [
+   "sheet-brothers.png",
+   "ch04.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch04d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": "Mud celebration; BriBri bicycle kick, Kaydoudou jumping, red sock right.",
+  "integrated_in": []
+ },
+ {
+  "id": "ch05b",
+  "kind": "beat",
+  "chapter": 5,
+  "refs": [
+   "sheet-brothers.png",
+   "ch05.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch05b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch05c",
+  "kind": "beat",
+  "chapter": 5,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch05.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch05c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch05d",
+  "kind": "beat",
+  "chapter": 5,
+  "refs": [
+   "sheet-brothers.png",
+   "ch05.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch05d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch06b",
+  "kind": "beat",
+  "chapter": 6,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch06b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch06c",
+  "kind": "beat",
+  "chapter": 6,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch06c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch06d",
+  "kind": "beat",
+  "chapter": 6,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch06d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch07b",
+  "kind": "beat",
+  "chapter": 7,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch07b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch07c",
+  "kind": "beat",
+  "chapter": 7,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch07c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch07d",
+  "kind": "beat",
+  "chapter": 7,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch07d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch08b",
+  "kind": "beat",
+  "chapter": 8,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch08b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch08c",
+  "kind": "beat",
+  "chapter": 8,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch08c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch08d",
+  "kind": "beat",
+  "chapter": 8,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch08d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch09b",
+  "kind": "beat",
+  "chapter": 9,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch09b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch09c",
+  "kind": "beat",
+  "chapter": 9,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch09c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch09d",
+  "kind": "beat",
+  "chapter": 9,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch09d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch10b",
+  "kind": "beat",
+  "chapter": 10,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch10b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch10c",
+  "kind": "beat",
+  "chapter": 10,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch10c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch10d",
+  "kind": "beat",
+  "chapter": 10,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch10d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
   "id": "ch11b",
   "kind": "beat",
   "chapter": 11,
@@ -1005,6 +1474,98 @@
   "integrated_in": []
  },
  {
+  "id": "ch14b",
+  "kind": "beat",
+  "chapter": 14,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch14b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch14c",
+  "kind": "beat",
+  "chapter": 14,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch14c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch14d",
+  "kind": "beat",
+  "chapter": 14,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch14d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch15b",
+  "kind": "beat",
+  "chapter": 15,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch15b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch15c",
+  "kind": "beat",
+  "chapter": 15,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch15c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch15d",
+  "kind": "beat",
+  "chapter": 15,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch15d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
   "id": "ch16b",
   "kind": "beat",
   "chapter": 16,
@@ -1136,6 +1697,97 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch18d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch19b",
+  "kind": "beat",
+  "chapter": 19,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch19b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch19c",
+  "kind": "beat",
+  "chapter": 19,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch19c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch19d",
+  "kind": "beat",
+  "chapter": 19,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch19d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch20b",
+  "kind": "beat",
+  "chapter": 20,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch20b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch20c",
+  "kind": "beat",
+  "chapter": 20,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch20c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch20d",
+  "kind": "beat",
+  "chapter": 20,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch20d.txt",
   "model": null,
   "master": null,
   "status": "pending",
@@ -1280,6 +1932,97 @@
   "integrated_in": []
  },
  {
+  "id": "ch24b",
+  "kind": "beat",
+  "chapter": 24,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch24b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch24c",
+  "kind": "beat",
+  "chapter": 24,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch24c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch24d",
+  "kind": "beat",
+  "chapter": 24,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch24d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch25b",
+  "kind": "beat",
+  "chapter": 25,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch25b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch25c",
+  "kind": "beat",
+  "chapter": 25,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch25c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch25d",
+  "kind": "beat",
+  "chapter": 25,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch25d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
   "id": "ch26b",
   "kind": "beat",
   "chapter": 26,
@@ -1371,6 +2114,144 @@
   "integrated_in": []
  },
  {
+  "id": "ch28b",
+  "kind": "beat",
+  "chapter": 28,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch28b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch28c",
+  "kind": "beat",
+  "chapter": 28,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch28c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch28d",
+  "kind": "beat",
+  "chapter": 28,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch28d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch29b",
+  "kind": "beat",
+  "chapter": 29,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch29b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch29c",
+  "kind": "beat",
+  "chapter": 29,
+  "refs": [
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch29c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch29d",
+  "kind": "beat",
+  "chapter": 29,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch29d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch30b",
+  "kind": "beat",
+  "chapter": 30,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch30b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch30c",
+  "kind": "beat",
+  "chapter": 30,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch30c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch30d",
+  "kind": "beat",
+  "chapter": 30,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch30d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
   "id": "ch31b",
   "kind": "beat",
   "chapter": 31,
@@ -1455,6 +2336,373 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch32d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch33b",
+  "kind": "beat",
+  "chapter": 33,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch33b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch33c",
+  "kind": "beat",
+  "chapter": 33,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch33c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch33d",
+  "kind": "beat",
+  "chapter": 33,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch33d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch34b",
+  "kind": "beat",
+  "chapter": 34,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch34b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch34c",
+  "kind": "beat",
+  "chapter": 34,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch34c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch34d",
+  "kind": "beat",
+  "chapter": 34,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch34d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch35b",
+  "kind": "beat",
+  "chapter": 35,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch35b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch35c",
+  "kind": "beat",
+  "chapter": 35,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch35c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch35d",
+  "kind": "beat",
+  "chapter": 35,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch35d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch36b",
+  "kind": "beat",
+  "chapter": 36,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch36b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch36c",
+  "kind": "beat",
+  "chapter": 36,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch36c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch36d",
+  "kind": "beat",
+  "chapter": 36,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch36d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch37b",
+  "kind": "beat",
+  "chapter": 37,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch37b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch37c",
+  "kind": "beat",
+  "chapter": 37,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch37c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch37d",
+  "kind": "beat",
+  "chapter": 37,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch37d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch38b",
+  "kind": "beat",
+  "chapter": 38,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch38b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch38c",
+  "kind": "beat",
+  "chapter": 38,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch38c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch38d",
+  "kind": "beat",
+  "chapter": 38,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch38d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch39b",
+  "kind": "beat",
+  "chapter": 39,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch39b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch39c",
+  "kind": "beat",
+  "chapter": 39,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch39c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch39d",
+  "kind": "beat",
+  "chapter": 39,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch39d.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch40b",
+  "kind": "beat",
+  "chapter": 40,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch40b.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch40c",
+  "kind": "beat",
+  "chapter": 40,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch40c.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch40d",
+  "kind": "beat",
+  "chapter": 40,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch40d.txt",
   "model": null,
   "master": null,
   "status": "pending",

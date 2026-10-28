@@ -73,5 +73,73 @@
   "status": "approved",
   "note": "Marcus with round glasses and grey hoodie hands the tablet; part on the left, pencil behind the ear, wax notebook.",
   "model": "Cloudinary image generation, gpt-image-2-edit (premium), with the canonical sheets and ch07 as reference images, 1536 x 1024"
+ },
+ "part2": {
+  "status": "approved",
+  "note": "Waldorf street in snow at dusk; the taller brother in the red anorak, the small one kicking snow."
+ },
+ "part3": {
+  "status": "approved",
+  "note": "Training ground by the Marne in autumn, barge and viaduct, star building; the brothers watch from the fence."
+ },
+ "part4": {
+  "status": "approved",
+  "note": "Sunday rondo on the Catalan village square, church tower and sea."
+ },
+ "part5": {
+  "status": "approved",
+  "note": "South London street in the rain, double-decker, floodlit academy pitch; the brothers in dark green tracksuits."
+ },
+ "ch01b": {
+  "status": "approved",
+  "note": "Kaydoudou mid-dribble, red sock right, yellow left, gap tooth; ball without patch before ch02."
+ },
+ "ch01c": {
+  "status": "approved",
+  "note": "BriBri number 8 strikes; part line on his left."
+ },
+ "ch01d": {
+  "status": "approved",
+  "note": "Papa in the blue shirt; Kaydoudou on the plastic chair with the burst ball, red sock right; BriBri in the doorway."
+ },
+ "ch02b": {
+  "status": "approved",
+  "note": "Vulcanisateur and the bladder; Kaydoudou leaning in, red sock right; Papa behind."
+ },
+ "ch02c": {
+  "status": "approved",
+  "note": "Fog match on the hillside; Kaydoudou with red sock right."
+ },
+ "ch02d": {
+  "status": "approved",
+  "note": "The njangi women, Mami hands the box; the brothers on the bench."
+ },
+ "ch03": {
+  "status": "approved",
+  "note": "Tonton Fokou on the yellow jerrycan between the two brothers back to back; Mireille behind."
+ },
+ "ch03b": {
+  "status": "approved",
+  "note": "Bulldozer's entrance; Kaydoudou holds the patched ball, BriBri number 8."
+ },
+ "ch03c": {
+  "status": "approved",
+  "note": "Kaydoudou squeezed by two blue Requins; BriBri open in the distance."
+ },
+ "ch04b": {
+  "status": "approved",
+  "note": "Kaydoudou slides in the red mud, red sock right."
+ },
+ "ch04c": {
+  "status": "approved",
+  "note": "The two steps of the ghost in the mud. Seen from behind, BriBri shows the part on his right side: minor, accepted."
+ },
+ "ch04d": {
+  "status": "approved",
+  "note": "Mud celebration; BriBri bicycle kick, Kaydoudou jumping, red sock right."
+ },
+ "ch03d": {
+  "status": "redo",
+  "note": "Close-up of BriBri seen from his right side with the shaved part on the RIGHT: the part must be on his left. Regenerate."
  }
 }
