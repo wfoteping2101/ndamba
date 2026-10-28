@@ -15,6 +15,8 @@ import { ConfirmModal, NumberBadge } from './components/bits'
 import { PlayerFormModal } from './components/forms'
 import { SkillRadar } from './components/SkillRadar'
 import { removePlayer } from './components/data'
+import { JourneyTeaser } from './components/journey/Entries'
+import { recordLevels } from '../../lib/journey'
 
 type Level = 1 | 2 | 3 | 4
 const LEVELS: Level[] = [1, 2, 3, 4]
@@ -64,6 +66,7 @@ export default function PlayerDetail() {
     const skills = { ...player.skills }
     if (skills[k] === v) delete skills[k]; else skills[k] = v
     db.players.update(player.id, { skills })
+    recordLevels(player, skills) // Parcours: keep the history (today's evaluation)
   }
   const avg = skillAvg(player)
   const ratedCount = SKILL_KEYS.filter((k) => player.skills[k]).length
@@ -106,6 +109,7 @@ export default function PlayerDetail() {
 
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
         <div className="space-y-5">
+          <JourneyTeaser playerId={player.id} />
           <div className="lg:hidden">{radarCard}</div>
 
           <section className="card overflow-hidden" aria-labelledby="skills-h">

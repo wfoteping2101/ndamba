@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Builds both books from their Markdown sources.
 //   node tools/build_books.mjs            -> web readers in app/public/book/{tome1,methode}/ + print HTML in build/
-//   node tools/build_books.mjs --pdf      -> also prints the PDFs with Chromium into app/public/downloads/
+//   node tools/build_books.mjs --pdf      -> also prints proof PDFs into build/pdf/ (never published: no PDF downloads on the site)
 //   node tools/build_books.mjs --only tome1|methode
 import fs from 'node:fs'
 import path from 'node:path'
@@ -140,6 +140,64 @@ function artAlts() {
   try { return Object.fromEntries(JSON.parse(read(f)).map((a) => [a.id, a.alt]).filter(([, v]) => v)) } catch { return {} }
 }
 
+/* ------------------------------------------------------------------ paged web readers (one page per chapter) */
+
+const pad2 = (n) => String(n).padStart(2, '0')
+
+function readerHead({ title, desc, og, css }) {
+  return `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>${esc(title)}</title><meta name="description" content="${esc(desc)}">${og ? `<meta property="og:image" content="${og}">` : ''}<meta name="theme-color" content="#FBF7EE"><link rel="icon" href="/favicon.svg"><style>${fontFaces('../fonts/')}${READER_CSS}${css}${PAGED_CSS}</style></head>`
+}
+
+function readerBar({ back, backLabel, title }) {
+  return `<div class="bar"><a class="back" href="${back}">&#8592; ${esc(backLabel)}</a><span class="bar-title">${esc(title)}</span><button id="toc-btn" type="button" aria-label="Chapitres">Chapitres</button><button id="aa" type="button" aria-label="Taille du texte">Aa</button></div><div class="progress"><span id="prog"></span></div>`
+}
+
+function readerDrawer(toc) {
+  return `<div class="drawer" id="drawer" hidden><div class="drawer-inner"><button id="close" type="button">Fermer</button><a class="drawer-home" href="./">Couverture et sommaire</a><ol>${toc}</ol></div></div>`
+}
+
+function pagerNav(prev, next) {
+  return `<nav class="pager" aria-label="Chapitres précédent et suivant">${prev ? `<a class="prev" href="${prev.href}" rel="prev"><small>&#8592; Précédent</small><b>${prev.label}</b></a>` : '<span></span>'}${next ? `<a class="next" href="${next.href}" rel="next"><small>Suivant &#8594;</small><b>${next.label}</b></a>` : '<span></span>'}</nav>`
+}
+
+const PAGED_JS = (key) => `
+(function(){var K='${key}';var b=document.body;var page=b.getAttribute('data-page');
+var h=location.hash;
+if(page==='index'){var m=h.match(/^#ch-(\\d{2})$/);if(m){location.replace('ch-'+m[1]+'.html');return}
+var dm=h.match(/^#drill-([A-Z]\\d\\d)$/);if(dm&&window.DRILL_PAGE&&window.DRILL_PAGE[dm[1]]){location.replace(window.DRILL_PAGE[dm[1]]+'#drill-'+dm[1]);return}
+if(h==='#fiches'){location.replace('fiches.html');return}}
+try{var fs=localStorage.getItem(K+'.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem(K+'.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('a[data-page="'+page+'"]');if(cur){cur.classList.add('current');cur.scrollIntoView({block:'center'})}};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||document.querySelector('h1')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(h==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y);setTimeout(function(){window.scrollTo(0,l.y)},350)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+})();`
+
+const PAGED_CSS = `
+.ch-title{font-family:Fraunces,Georgia,serif;font-size:32px;line-height:1.12;margin:6px 0 0}
+.start{display:flex;flex-direction:column;align-items:center;gap:10px;margin:18px 0 6px}
+.start a{display:flex;flex-direction:column;align-items:center;min-width:min(340px,90%);padding:13px 20px;border-radius:14px;text-decoration:none;font:700 15px Inter,sans-serif}
+.start .resume{background:var(--forest);color:var(--cream)}.start .resume small{font:600 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;opacity:.85}.start .resume b{font-family:Fraunces,Georgia,serif;font-size:17px;margin-top:2px}
+.start .begin{background:var(--paper);color:var(--forest);border:1.5px solid var(--forest)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:46px 0 10px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:16px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:84px}
+.pager a:hover{border-color:var(--forest)}.pager .next{text-align:right;background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.pager small{font:700 11px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;opacity:.8}.pager b{font-family:Fraunces,Georgia,serif;font-size:16px;line-height:1.25;font-weight:600}
+.drawer-home{display:block;margin:4px 0 10px;font:700 14px Inter,sans-serif;text-decoration:none}
+.drawer a.current{background:var(--sand);border-radius:8px;padding-left:8px}
+.part-opener{margin-top:18px}
+.lead{font-size:1.05em;color:var(--soft)}
+.fam-grid{display:grid;gap:14px;margin-top:18px}@media(min-width:760px){.fam-grid{grid-template-columns:1fr 1fr}}
+.fam-card{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--fam);border-radius:16px;padding:16px 18px}
+.fam-card h2{font-family:Fraunces,Georgia,serif;font-size:21px;margin:0 0 8px}.fam-card h2 a{color:var(--fam);text-decoration:none}
+.fam-card ol{list-style:none;margin:0;padding:0}.fam-card li a{display:block;padding:5px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px}.fam-card li a b{font:700 12px Inter,sans-serif;color:var(--fam);margin-right:6px}
+h1.fam-title{font-family:Fraunces,Georgia,serif;font-size:30px;margin:28px 0 10px;color:var(--fam)}
+`
+
 /* ------------------------------------------------------------------ Tome 1 */
 
 const T1_PARTS = {
@@ -196,38 +254,45 @@ async function buildTome1() {
     return { story, carnet }
   }
 
-  /* ---------- web reader ---------- */
+  /* ---------- web reader: one page per chapter ---------- */
+  const chHref = (c) => `ch-${pad2(c.no)}.html`
   const toc = [1, 2, 3, 4, 5].map((p) => {
     const list = chapters.filter((c) => c.part === p)
     if (!list.length) return ''
-    return `<li class="toc-part"><span>Partie ${ROMAN[p]} · ${esc(T1_PARTS[p].title)}, ${esc(T1_PARTS[p].piece.toLowerCase())}</span><ol>${list.map((c) => `<li><a href="#ch-${String(c.no).padStart(2, '0')}"><b>${c.no}.</b> ${esc(c.title)}</a></li>`).join('')}</ol></li>`
+    return `<li class="toc-part"><span>Partie ${ROMAN[p]} · ${esc(T1_PARTS[p].title)}, ${esc(T1_PARTS[p].piece.toLowerCase())}</span><ol>${list.map((c) => `<li><a href="${chHref(c)}" data-page="ch-${pad2(c.no)}"><b>${c.no}.</b> ${esc(c.title)}</a></li>`).join('')}</ol></li>`
   }).join('')
-  let webChapters = ''
-  let lastPart = 0
-  for (const c of chapters) {
-    const id = String(c.no).padStart(2, '0')
-    if (c.part !== lastPart) {
-      lastPart = c.part
-      const pi = partImgs[c.part]
-      webChapters += `<section class="part-opener" id="partie-${c.part}">${pi ? picture(pi, ALT[`part${c.part}`] || '', { sizes: '100vw' }) : ''}<div class="part-text"><div class="kicker">Partie ${ROMAN[c.part]}</div><h2>${esc(T1_PARTS[c.part].title)}</h2><p>${esc(T1_PARTS[c.part].piece)} · ${esc(T1_PARTS[c.part].sub)}</p></div></section>`
-    }
+  for (const old of fs.readdirSync(webDir).filter((f) => /^ch-\d\d\.html$/.test(f))) fs.rmSync(path.join(webDir, old))
+  const T1_TITLE = 'Lionceaux · Le Ballon qui voyage'
+  chapters.forEach((c, i) => {
+    const id = pad2(c.no)
+    const first = i === 0 || chapters[i - 1].part !== c.part
+    const pi = partImgs[c.part]
+    const opener = first ? `<section class="part-opener" id="partie-${c.part}">${pi ? picture(pi, ALT[`part${c.part}`] || '', { sizes: '100vw', lazy: false }) : ''}<div class="part-text"><div class="kicker">Partie ${ROMAN[c.part]}</div><h2>${esc(T1_PARTS[c.part].title)}</h2><p>${esc(T1_PARTS[c.part].piece)} · ${esc(T1_PARTS[c.part].sub)}</p></div></section>` : ''
     const { story, carnet } = chapterBody(c, 'web')
     const im = chImgs[c.no]
-    webChapters += `<article class="chapter" id="ch-${id}" data-no="${c.no}"><header><div class="kicker">Chapitre ${c.no}</div><h2>${frenchTypo(esc(c.title))}</h2></header>${im ? `<figure class="illus">${picture(im, ALT[`ch${id}`] || c.title)}</figure>` : ''}<div class="story">${story}</div>${carnet}</article>`
-  }
-  const webHtml = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Lionceaux, tome 1 : Le Ballon qui voyage</title><meta name="description" content="Lionceaux, tome 1 : l'aventure de Kaydoudou et BriBri, deux frères camerounais qui font voyager le ballon du Cameroun à l'Angleterre."><meta property="og:image" content="/book/tome1/img/cover.jpg"><meta name="theme-color" content="#FBF7EE"><link rel="icon" href="/favicon.svg"><style>${fontFaces('../fonts/')}${READER_CSS}${TOME1_WEB_CSS}</style></head><body class="tome1">
-<div class="bar"><a class="back" href="/app/livres" aria-label="Retour à Ndamba">&#8592; Ndamba</a><span class="bar-title">Lionceaux · Le Ballon qui voyage</span><button id="toc-btn" type="button" aria-label="Sommaire">Sommaire</button><button id="aa" type="button" aria-label="Taille du texte">Aa</button></div>
-<div class="progress"><span id="prog"></span></div>
+    const prev = i > 0 ? { href: chHref(chapters[i - 1]), label: `${chapters[i - 1].no}. ${esc(chapters[i - 1].title)}` } : { href: './', label: 'Couverture et sommaire' }
+    const next = i < chapters.length - 1 ? { href: chHref(chapters[i + 1]), label: `${chapters[i + 1].no}. ${esc(chapters[i + 1].title)}` } : { href: './#fin', label: 'Fin du tome 1' }
+    const html = `${readerHead({ title: `${c.no}. ${c.title} | Lionceaux, tome 1`, desc: c.summary || '', og: im ? `/book/tome1/img/${im.web}` : '/book/tome1/img/cover.jpg', css: TOME1_WEB_CSS })}<body class="tome1 paged" data-page="ch-${id}">
+${readerBar({ back: './', backLabel: 'Sommaire', title: T1_TITLE })}
+<main>${opener}<article class="chapter" id="ch-${id}" data-no="${c.no}"><header><div class="kicker">Chapitre ${c.no} sur ${chapters.length}</div><h1 class="ch-title">${frenchTypo(esc(c.title))}</h1></header>${im ? `<figure class="illus">${picture(im, ALT[`ch${id}`] || c.title, { lazy: !first && i > 0 ? true : false })}</figure>` : ''}<div class="story">${story}</div>${carnet}</article>
+${pagerNav(prev, next)}</main>
+${readerDrawer(toc)}
+<script>${PAGED_JS('njangi.tome1')}</script></body></html>`
+    write(path.join(webDir, chHref(c)), html)
+  })
+  const webHtml = `${readerHead({ title: 'Lionceaux, tome 1 : Le Ballon qui voyage', desc: "Lionceaux, tome 1 : l'aventure de Kaydoudou et BriBri, deux frères camerounais qui font voyager le ballon du Cameroun à l'Angleterre.", og: '/book/tome1/img/cover.jpg', css: TOME1_WEB_CSS })}<body class="tome1 paged" data-page="index">
+${readerBar({ back: '/app/livres', backLabel: 'Ndamba', title: T1_TITLE })}
 <main>
-<section class="cover-block">${cover ? picture(cover, 'Couverture de Lionceaux, tome 1 : Le Ballon qui voyage. Kaydoudou et BriBri au départ de leur voyage.', { cls: 'cover', lazy: false, sizes: '(max-width: 760px) 78vw, 420px' }) : `<div class="cover cover-drawn"><div><small>Lionceaux</small><b>Le Ballon qui voyage</b><span>Tome 1</span></div></div>`}<h1>Lionceaux</h1><p class="subtitle">Tome 1 : Le Ballon qui voyage</p><p class="heroes">Une aventure de Kaydoudou &amp; BriBri</p><p class="author">William Foteping</p><p class="dedication">Pour Kaydoudou et BriBri.<br>Que le ballon voyage toujours,<br>et qu’il sache toujours où il va.<br><em>Papa</em></p><a class="resume" id="resume" href="#" hidden>Reprendre la lecture</a></section>
+<section class="cover-block">${cover ? picture(cover, 'Couverture de Lionceaux, tome 1 : Le Ballon qui voyage. Kaydoudou et BriBri au départ de leur voyage.', { cls: 'cover', lazy: false, sizes: '(max-width: 760px) 78vw, 420px' }) : `<div class="cover cover-drawn"><div><small>Lionceaux</small><b>Le Ballon qui voyage</b><span>Tome 1</span></div></div>`}<h1>Lionceaux</h1><p class="subtitle">Tome 1 : Le Ballon qui voyage</p><p class="heroes">Une aventure de Kaydoudou &amp; BriBri</p><p class="author">William Foteping</p>
+<div class="start"><a class="resume" id="resume" href="ch-01.html" hidden><small>Reprendre la lecture</small><b></b></a><a class="begin" href="ch-01.html">Commencer au chapitre 1</a></div>
+<p class="dedication">Pour Kaydoudou et BriBri.<br>Que le ballon voyage toujours,<br>et qu’il sache toujours où il va.<br><em>Papa</em></p></section>
 ${characters ? `<figure class="illus wide">${picture(characters, ALT['sheet-brothers'] || 'Kaydoudou et BriBri')}<figcaption>Kaydoudou, 11 ans, et BriBri, 10 ans.</figcaption></figure>` : ''}
 ${family ? `<figure class="illus wide">${picture(family, ALT['sheet-adults'] || 'La famille')}<figcaption>Mami Nyanga, Tonton Fokou, Papa et Maman.</figcaption></figure>` : ''}
-<nav class="toc" id="toc"><h2>Sommaire</h2><ol>${toc}</ol></nav>
-${webChapters}
-<footer class="end"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><p>À suivre : <b>Lionceaux, tome 2 : La Tanière des Lionceaux</b>.</p><a href="/app/joueur/lecons">Les 40 Leçons du Ballon dans l’application</a></footer>
+<nav class="toc" id="toc"><h2>Les ${chapters.length} chapitres</h2><ol>${toc}</ol></nav>
+<footer class="end" id="fin"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><p>À suivre : <b>Lionceaux, tome 2 : La Tanière des Lionceaux</b>.</p><a href="/app/joueur/lecons">Les ${chapters.length} Leçons du Ballon dans l’application</a></footer>
 </main>
-<div class="drawer" id="drawer" hidden><div class="drawer-inner"><button id="close" type="button">Fermer</button><ol>${toc}</ol></div></div>
-<script>${READER_JS('njangi.tome1')}</script></body></html>`
+${readerDrawer(toc)}
+<script>${PAGED_JS('njangi.tome1')}</script></body></html>`
   write(path.join(webDir, 'index.html'), webHtml)
 
   /* ---------- print (6 x 9 in) ---------- */
@@ -242,7 +307,7 @@ ${webChapters}
   if (family) pages += `<section class="pg illus-page"><img src="${imgSrc(family)}" alt=""></section>`
   pages += `<section class="pg front map"><h2>Le voyage</h2>${JOURNEY_SVG}<p class="map-cap">Douala et Bafoussam · Waldorf (Maryland) · Bussy-Saint-Georges · la côte catalane · Londres</p></section>`
   pages += `<section class="pg front toc-page"><h2>Sommaire</h2><ol>${[1, 2, 3, 4, 5].map((p) => `<li class="toc-part">Partie ${ROMAN[p]} · ${esc(T1_PARTS[p].title)}<ol>${chapters.filter((c) => c.part === p).map((c) => `<li><span>${c.no}.</span> ${frenchTypo(esc(c.title))}</li>`).join('')}</ol></li>`).join('')}</ol></section>`
-  lastPart = 0
+  let lastPart = 0
   for (const c of chapters) {
     if (c.part !== lastPart) {
       lastPart = c.part
@@ -316,28 +381,68 @@ async function buildMethode() {
   const drillsAfter = 31 // the drill sheets follow chapter 31 "Comment utiliser les fiches"
   const ANNEX_PART = 10, DRILL_PART = 7
 
-  /* web */
-  const tocItems = parts.map((p) => `<li class="toc-part"><span>${p.part === 0 ? 'Avant-propos' : p.part === ANNEX_PART ? 'Annexes' : 'Partie ' + p.part + ' · ' + esc(p.title || '')}</span><ol>${chapters.filter((c) => c.part === p.part).map((c) => `<li><a href="#ch-${String(c.no).padStart(2, '0')}">${c.no ? `<b>${c.no}.</b> ` : ''}${esc(c.title)}</a></li>`).join('')}${p.part === DRILL_PART ? `<li><a href="#fiches"><b>${drills.length}</b> fiches d’exercices</a></li>` : ''}</ol></li>`).join('')
-  let body = ''
-  let lastPart = -1
-  for (const c of chapters) {
-    if (c.part !== lastPart) { lastPart = c.part; if (c.part >= 1 && c.part < ANNEX_PART) body += `<section class="part-opener methode"><div class="part-text"><div class="kicker">Partie ${c.part}</div><h2>${esc(c.partTitle || '')}</h2></div></section>` }
-    body += `<article class="chapter" id="ch-${String(c.no).padStart(2, '0')}"><header><div class="kicker">${c.no ? 'Chapitre ' + c.no : esc(c.partTitle || '')}</div><h2>${frenchTypo(esc(c.title))}</h2></header><div class="story">${chapterHTML(c, 620)}</div></article>`
-    if (c.no === drillsAfter) {
-      body += `<section id="fiches" class="drills-grid">${FAM_ORDER.map((fam) => { const list = drills.filter((d) => d.family === fam); return list.length ? `<h3 class="fam-title" style="--fam:${FAMILY_COLOR[fam]}">${esc(FAMILY_FR[fam])}</h3>${list.map((d) => drillHTML(d, 600)).join('')}` : '' }).join('')}</section>`
+  /* web: one page per chapter, the drill sheets on one page per family */
+  const famPage = (fam) => `fiches-${fam}.html`
+  const drillFam = Object.fromEntries(drills.map((d) => [d.id, d.family]))
+  const drillHref = (id) => (drillFam[id] ? `${famPage(drillFam[id])}#drill-${id}` : 'fiches.html')
+  const fixDrillLinks = (html) => html.replace(/href="#drill-([A-Z]\d\d)"/g, (_, id) => `href="${drillHref(id)}"`)
+  const chHref = (c) => `ch-${pad2(c.no)}.html`
+  const partLabel = (p) => (p.part === 0 ? 'Avant-propos' : p.part === ANNEX_PART ? 'Annexes' : 'Partie ' + p.part + ' · ' + esc(p.title || ''))
+  const tocItems = parts.map((p) => `<li class="toc-part"><span>${partLabel(p)}</span><ol>${chapters.filter((c) => c.part === p.part).map((c) => `<li><a href="${chHref(c)}" data-page="ch-${pad2(c.no)}">${c.no ? `<b>${c.no}.</b> ` : ''}${esc(c.title)}</a></li>`).join('')}${p.part === DRILL_PART ? `<li><a href="fiches.html" data-page="fiches"><b>${drills.length}</b> fiches d’exercices</a></li>` : ''}</ol></li>`).join('')
+  for (const old of fs.readdirSync(webDir).filter((f) => /^(ch-\d\d|fiches(-[a-z]+)?)\.html$/.test(f))) fs.rmSync(path.join(webDir, old))
+  // reading order: chapters, with the drill catalogue right after chapter 31
+  const seq = []
+  for (const c of chapters) { seq.push({ type: 'ch', c, href: chHref(c), label: `${c.no ? c.no + '. ' : ''}${esc(c.title)}` }); if (c.no === drillsAfter) seq.push({ type: 'fiches', href: 'fiches.html', label: `Les ${drills.length} fiches d’exercices` }) }
+  const M_TITLE = 'Le Code Njangi'
+  const drillMap = `<script>window.DRILL_PAGE=${JSON.stringify(Object.fromEntries(drills.map((d) => [d.id, famPage(d.family)])))}</script>`
+  seq.forEach((it, i) => {
+    const prev = i > 0 ? seq[i - 1] : { href: './', label: 'Couverture et sommaire' }
+    const next = i < seq.length - 1 ? seq[i + 1] : { href: './#fin', label: 'Fin du livre' }
+    if (it.type === 'ch') {
+      const c = it.c
+      const first = i === 0 || seq[i - 1].type !== 'ch' || seq[i - 1].c.part !== c.part
+      const opener = first && c.part >= 1 && c.part < ANNEX_PART ? `<section class="part-opener methode"><div class="part-text"><div class="kicker">Partie ${c.part}</div><h2>${esc(c.partTitle || '')}</h2></div></section>` : ''
+      const html = `${readerHead({ title: `${c.no ? c.no + '. ' : ''}${c.title} | Le Code Njangi`, desc: c.summary || '', og: '/book/methode/img/cover.jpg', css: METHODE_WEB_CSS })}<body class="methode paged" data-page="ch-${pad2(c.no)}">
+${readerBar({ back: './', backLabel: 'Sommaire', title: M_TITLE })}
+<main>${opener}<article class="chapter" id="ch-${pad2(c.no)}"><header><div class="kicker">${c.no ? 'Chapitre ' + c.no : esc(c.partTitle || '')}</div><h1 class="ch-title">${frenchTypo(esc(c.title))}</h1></header><div class="story">${fixDrillLinks(chapterHTML(c, 620))}</div></article>
+${pagerNav(prev, next)}</main>
+${readerDrawer(tocItems)}
+<script>${PAGED_JS('njangi.methode')}</script></body></html>`
+      write(path.join(webDir, it.href), html)
+    } else {
+      const fams = FAM_ORDER.filter((fam) => drills.some((d) => d.family === fam))
+      const cards = fams.map((fam) => { const list = drills.filter((d) => d.family === fam); return `<section class="fam-card" style="--fam:${FAMILY_COLOR[fam]}"><h2><a href="${famPage(fam)}">${esc(FAMILY_FR[fam])}</a></h2><ol>${list.map((d) => `<li><a href="${famPage(fam)}#drill-${d.id}"><b>${d.id}</b> ${esc(d.fr.title)}</a></li>`).join('')}</ol></section>` }).join('')
+      const html = `${readerHead({ title: `Les ${drills.length} fiches d’exercices | Le Code Njangi`, desc: 'Les fiches d’exercices du Code Njangi, par famille.', og: '/book/methode/img/cover.jpg', css: METHODE_WEB_CSS })}<body class="methode paged" data-page="fiches">
+${readerBar({ back: './', backLabel: 'Sommaire', title: M_TITLE })}
+<main><article class="chapter"><header><div class="kicker">Partie ${DRILL_PART} · Les exercices</div><h1 class="ch-title">Les ${drills.length} fiches d’exercices</h1></header><p class="lead">Huit familles, du geste technique au grand jeu. Choisissez une famille ou une fiche.</p><div class="fam-grid">${cards}</div></article>
+${pagerNav(prev, next)}</main>
+${readerDrawer(tocItems)}
+<script>${PAGED_JS('njangi.methode')}</script></body></html>`
+      write(path.join(webDir, 'fiches.html'), html)
+      fams.forEach((fam, k) => {
+        const list = drills.filter((d) => d.family === fam)
+        const pv = k > 0 ? { href: famPage(fams[k - 1]), label: esc(FAMILY_FR[fams[k - 1]]) } : { href: 'fiches.html', label: 'Toutes les familles' }
+        const nx = k < fams.length - 1 ? { href: famPage(fams[k + 1]), label: esc(FAMILY_FR[fams[k + 1]]) } : { href: seq[i + 1] ? seq[i + 1].href : './', label: seq[i + 1] ? seq[i + 1].label : 'Sommaire' }
+        const page = `${readerHead({ title: `${FAMILY_FR[fam]} | Le Code Njangi`, desc: `Les fiches ${FAMILY_FR[fam]} du Code Njangi.`, og: '/book/methode/img/cover.jpg', css: METHODE_WEB_CSS })}<body class="methode paged" data-page="${famPage(fam).replace('.html', '')}">
+${readerBar({ back: 'fiches.html', backLabel: 'Fiches', title: M_TITLE })}
+<main><section id="fiches" class="drills-grid"><h1 class="fam-title" style="--fam:${FAMILY_COLOR[fam]}">${esc(FAMILY_FR[fam])}</h1>${fixDrillLinks(list.map((d) => drillHTML(d, 600)).join(''))}</section>
+${pagerNav(pv, nx)}</main>
+${readerDrawer(tocItems)}
+<script>${PAGED_JS('njangi.methode')}</script></body></html>`
+        write(path.join(webDir, famPage(fam)), page)
+      })
     }
-  }
-  const webHtml = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Le Code Njangi : posséder avec intention</title><meta property="og:image" content="/book/methode/img/cover.jpg"><meta name="description" content="Le modèle de jeu africain pour gagner la Coupe du monde : philosophie, principes, 50 exercices, semaine type, analyse."><meta name="theme-color" content="#FBF7EE"><link rel="icon" href="/favicon.svg"><style>${fontFaces('../fonts/')}${READER_CSS}${METHODE_WEB_CSS}</style></head><body class="methode">
-<div class="bar"><a class="back" href="/app/livres" aria-label="Retour à Ndamba">&#8592; Ndamba</a><span class="bar-title">Le Code Njangi</span><button id="toc-btn" type="button">Sommaire</button><button id="aa" type="button" aria-label="Taille du texte">Aa</button></div>
-<div class="progress"><span id="prog"></span></div>
+  })
+  const webHtml = `${readerHead({ title: 'Le Code Njangi : posséder avec intention', desc: 'La méthode africaine pour gagner la Coupe du monde : philosophie, technique, tactique, exercices, semaine type, analyse.', og: '/book/methode/img/cover.jpg', css: METHODE_WEB_CSS })}<body class="methode paged" data-page="index">
+${readerBar({ back: '/app/livres', backLabel: 'Ndamba', title: M_TITLE })}
 <main>
-${mCover ? `<section class="cover-block">${picture(mCover, 'Couverture du Code Njangi : un stade africain au crépuscule, les passes de l’équipe dessinent des triangles lumineux vers le but.', { cls: 'cover', lazy: false, sizes: '(max-width: 760px) 78vw, 420px' })}<h1>Le Code Njangi</h1><p class="subtitle">Posséder avec intention</p><p class="heroes">La méthode africaine pour gagner la Coupe du monde</p><p class="author">William Foteping</p><a class="resume" id="resume" href="#" hidden>Reprendre la lecture</a></section>` : `<section class="cover-block methode-cover"><div class="m-cover"><div class="m-kicker">William Foteping</div><div class="m-title">Le Code<br>Njangi</div><div class="m-sub">Posséder avec intention</div><div class="m-line">La méthode africaine pour gagner la Coupe du monde</div><ul><li>${drills.length} exercices</li><li>Des jeunes aux pros</li><li>La semaine d’entraînement</li><li>Périodisation</li><li>L’analyse</li></ul></div><a class="resume" id="resume" href="#" hidden>Reprendre la lecture</a></section>`}
+${mCover ? `<section class="cover-block">${picture(mCover, 'Couverture du Code Njangi : un stade africain au crépuscule, les passes de l’équipe dessinent des triangles lumineux vers le but.', { cls: 'cover', lazy: false, sizes: '(max-width: 760px) 78vw, 420px' })}<h1>Le Code Njangi</h1><p class="subtitle">Posséder avec intention</p><p class="heroes">La méthode africaine pour gagner la Coupe du monde</p><p class="author">William Foteping</p>` : `<section class="cover-block"><h1>Le Code Njangi</h1><p class="subtitle">Posséder avec intention</p>`}
+<div class="start"><a class="resume" id="resume" href="ch-00.html" hidden><small>Reprendre la lecture</small><b></b></a><a class="begin" href="ch-00.html">Commencer la lecture</a></div></section>
 <nav class="toc" id="toc"><h2>Sommaire</h2><ol>${tocItems}</ol></nav>
-${body}
-<footer class="end"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><a href="/app/exercices">Les ${drills.length} exercices dans l’application</a></footer>
+<footer class="end" id="fin"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><a href="/app/exercices">Les ${drills.length} exercices dans l’application</a></footer>
 </main>
-<div class="drawer" id="drawer" hidden><div class="drawer-inner"><button id="close" type="button">Fermer</button><ol>${tocItems}</ol></div></div>
-<script>${READER_JS('njangi.methode')}</script></body></html>`
+${readerDrawer(tocItems)}
+${drillMap}<script>${PAGED_JS('njangi.methode')}</script></body></html>`
   write(path.join(webDir, 'index.html'), webHtml)
 
   /* print (7 x 10 in) */
@@ -345,7 +450,7 @@ ${body}
   pages += `<section class="pg front title-page"><p class="author">William Foteping</p><h1>Le Code Njangi</h1><p class="sub">Posséder avec intention : la méthode africaine pour gagner la Coupe du monde</p><p class="publisher">Ndamba · Lemon Network Solutions</p></section>`
   pages += `<section class="pg front copyright"><p>© ${new Date().getFullYear()} William Foteping. Tous droits réservés.</p><p>Les faits historiques cités concernent les Coupes du monde de 1990 à 2026. Les repères de charge, de chaleur et de récupération sont des conseils généraux : ils ne remplacent jamais l’avis d’un médecin ou d’un préparateur qualifié.</p><p>Compagnon de la saga <i>Lionceaux</i> (Kaydoudou &amp; BriBri) et de l’application Ndamba.</p></section>`
   pages += `<section class="pg front toc-page"><h2>Sommaire</h2><ol>${parts.map((p) => `<li class="toc-part">${p.part === 0 ? 'Avant-propos' : p.part === ANNEX_PART ? 'Annexes' : 'Partie ' + p.part + ' · ' + esc(p.title || '')}<ol>${chapters.filter((c) => c.part === p.part).map((c) => `<li>${c.no ? `<span>${c.no}.</span> ` : ''}${frenchTypo(esc(c.title))}</li>`).join('')}${p.part === DRILL_PART ? `<li><span>·</span> Les ${drills.length} fiches d’exercices</li>` : ''}</ol></li>`).join('')}</ol></section>`
-  lastPart = -1
+  let lastPart = -1
   for (const c of chapters) {
     if (c.part !== lastPart) { lastPart = c.part; if (c.part >= 1 && c.part < ANNEX_PART) pages += `<section class="pg part-page"><div class="kicker">Partie ${c.part}</div><h2>${esc(c.partTitle || '')}</h2></section>` }
     pages += `<section class="pg chapter"><header><div class="kicker">${c.no ? 'Chapitre ' + c.no : esc(c.partTitle || '')}</div><h2>${frenchTypo(esc(c.title))}</h2></header><div class="story">${chapterHTML(c, 560).replace(/href="#drill-/g, 'data-drill="')}</div></section>`
@@ -558,8 +663,7 @@ const results = {}
 if (!ONLY || ONLY === 'tome1') results.tome1 = await buildTome1()
 if (!ONLY || ONLY === 'methode') results.methode = await buildMethode()
 if (WANT_PDF) {
-  const dl = path.join(PUBLIC, 'downloads')
-  for (const old of ['kaydoudou-bribri-tome1.pdf', 'la-methode-njangi.pdf']) fs.rmSync(path.join(dl, old), { force: true })
+  const dl = path.join(BUILD, 'pdf') // print proofs only, never published (no PDF downloads on the site)
   if (results.tome1) { const n = await printPdf(path.join(BUILD, 'tome1-print.html'), path.join(dl, 'lionceaux-tome1-le-ballon-qui-voyage.pdf'), { w: '6in', h: '9in' }, 'Literata, Georgia, serif'); console.log(`tome1 PDF: ${n} pages`) }
   if (results.methode) { const n = await printPdf(path.join(BUILD, 'methode-print.html'), path.join(dl, 'le-code-njangi.pdf'), { w: '7in', h: '10in' }, 'Inter, Arial, sans-serif'); console.log(`methode PDF: ${n} pages`) }
 }

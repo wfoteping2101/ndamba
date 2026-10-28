@@ -4,10 +4,10 @@ slug: comment-utiliser-les-fiches
 titre: Comment utiliser les fiches
 partie: 7
 titrePartie: Les exercices
-resume: Lire une fiche d'exercice Njangi et choisir le bon exercice selon l'intention, l'âge et le jour de la semaine, avec le tableau des sept familles.
+resume: Lire une fiche d'exercice Njangi et choisir le bon exercice selon l'intention, l'âge et le jour de la semaine, avec le tableau des huit familles.
 ---
 
-Les pages qui suivent contiennent 50 fiches d'exercices. Ce ne sont pas des recettes à recopier telles quelles. Ce sont des outils : chacune entraîne une partie du modèle de jeu, pour un âge, un effectif et un jour de la semaine donnés. Ce court chapitre explique comment les lire et comment les choisir.
+Les pages qui suivent contiennent 64 fiches d'exercices, réparties en huit familles. Ce ne sont pas des recettes à recopier telles quelles. Ce sont des outils : chacune entraîne une partie du modèle de jeu, pour un âge, un effectif et un jour de la semaine donnés. Ce court chapitre explique comment les lire et comment les choisir.
 
 Chaque fiche tient sur une page et suit toujours le même ordre. Les mêmes fiches alimentent la bibliothèque et le planificateur de l'application Ndamba : vous les retrouvez au bord du terrain, sur votre téléphone.
 
@@ -15,7 +15,7 @@ Chaque fiche tient sur une page et suit toujours le même ordre. Les mêmes fich
 
 ### L'en-tête
 
-- **Le code** : une lettre pour la famille et un numéro, par exemple R02 ou T01. C'est ce code que le livre utilise dans ses renvois, comme [[R02]] ou [[T01]], et que l'application utilise dans ses séances.
+- **Le code** : une lettre pour la famille et un numéro, par exemple C04, R02 ou T01. C'est ce code que le livre utilise dans ses renvois, comme [[R02]] ou [[T01]], et que l'application utilise dans ses séances.
 - **Le titre et le sous-titre** : le nom de l'exercice et son idée en une ligne.
 - **Les intentions** : les intentions de la possession (Sortir, Progresser, Fixer, Finir, Respirer) et les réflexes sans ballon (Reprendre, Regarder devant) que l'exercice entraîne.
 - **Les compétences** : celles des dix compétences du joueur Njangi (chapitre 25) qui sont le plus sollicitées.
@@ -41,10 +41,13 @@ Chaque fiche tient sur une page et suit toujours le même ordre. Les mêmes fich
 - **L'histoire** : sur certaines fiches, une phrase qui relie l'exercice à Kaydoudou et BriBri, pour les éducateurs de jeunes.
 - **Le schéma** : l'équipe qui applique le Njangi est en vert et attaque vers la droite, l'adversaire en rouge, les neutres en jaune. Les flèches sont numérotées dans l'ordre de l'action : trait plein pour la passe, pointillés pour la course, trait ondulé pour la conduite, trait épais pour le tir.
 
-## Les sept familles
+## Les huit familles
+
+La première famille, **technique et combinaisons**, rassemble les gestes sur lesquels reposent toutes les autres : passer, contrôler, regarder avant de recevoir, protéger, dribbler pour fixer, combiner à trois, finir, maîtriser un ballon aérien. Ces fiches commencent souvent sans opposition, puis ajoutent un défenseur passif, puis actif. Elles demandent peu de matériel, souvent un ballon pour deux ou trois joueurs, et conviennent aux groupes nombreux. Viennent ensuite les sept familles du jeu, du rondo à la finition.
 
 | Famille | Codes | Ce qu'elle entraîne | Âges | Jours les plus fréquents |
 |---|---|---|---|---|
+| Technique et combinaisons | C01 à C14 | Passe, contrôle, scan, protection, dribble njangi, troisième homme, finition, jeu aérien | Dès U9 (jeu de tête dès 13 ans) | MD-2, MD-1, séances de jeunes, activation |
 | Rondos | R01 à R08 | Scan, angles, toucher de balle, contre-pression | Dès U9 | Tous les jours, en activation ou en première intensité |
 | Jeux de position | P01 à P10 | Structure, couloirs, troisième homme, supériorités | Dès U12 | MD-4, MD-3, MD-2 |
 | Petits jeux | S01 à S08 | Décision, duels, dribble njangi, progression en petit espace | Dès U9 | MD-4, compensation à MD+1, séances de jeunes |
@@ -57,17 +60,18 @@ Chaque fiche tient sur une page et suit toujours le même ordre. Les mêmes fich
 
 On choisit un exercice en se posant trois questions, toujours dans le même ordre.
 
-**Quelle intention ?** Elle vient du dernier match, du rapport de l'analyste ou du plan de la saison. Si l'équipe a perdu trop de ballons à la sortie, la semaine travaillera Sortir ; si elle a eu le ballon sans jamais entrer dans la surface, elle travaillera Progresser et Finir. L'intention réduit déjà les 50 fiches à une dizaine.
+**Quelle intention ?** Elle vient du dernier match, du rapport de l'analyste ou du plan de la saison. Si l'équipe a perdu trop de ballons à la sortie, la semaine travaillera Sortir ; si elle a eu le ballon sans jamais entrer dans la surface, elle travaillera Progresser et Finir. L'intention réduit déjà les 64 fiches à une quinzaine.
 
 **Quel âge et quel effectif ?** L'âge indiqué est un minimum. Un exercice prévu « U15+ » ne convient pas à des U11, même talentueux : les espaces, les règles et la charge ne sont pas faits pour eux. L'effectif dit combien d'ateliers installer.
 
 **Quel jour ?** Le jour de la semaine décide de l'espace et de l'intensité (chapitre 27). Une même intention se travaille dans un petit jeu à MD-4 et dans un grand jeu à MD-3. Un exercice très intense n'a pas sa place la veille du match.
 
-Ensuite, on construit la séance bloc par bloc, comme au chapitre 30 : un rondo, un jeu de position, un petit jeu ou un grand jeu, une phase ou une finition, toutes au service de la même intention.
+Ensuite, on construit la séance bloc par bloc, comme au chapitre 30 : une fiche de technique ou un rondo en activation, un jeu de position, un petit jeu ou un grand jeu, une phase ou une finition, toutes au service de la même intention.
 
 > [!JEUNES] Une fiche n'est pas une loi
 > Avec les enfants, réglez chaque fiche pour qu'ils réussissent souvent : plus d'espace, un neutre de plus, des touches libres.
 > L'eau, l'ombre, les pauses et une charge adaptée à l'âge passent avant le contenu de la fiche, toujours.
+> Pas de jeu de tête avant 13 ans ; ensuite, ballon léger et très peu de répétitions, comme le précise [[C14]].
 
 > [!NJANGI] Peu de fiches, bien connues
 > Mieux vaut une dizaine d'exercices que les joueurs connaissent par cœur qu'une nouveauté chaque jour. Quand l'organisation est connue, toute l'attention va au comportement.

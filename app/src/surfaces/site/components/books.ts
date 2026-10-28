@@ -23,3 +23,6 @@ export function groupByPart(entries: TocEntry[]) {
 
 export const pad2 = (n: number) => String(n).padStart(2, '0')
 export const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+
+/** The readers have one page per chapter: /book/tome1/ch-07.html (the book's index page is the cover and the contents). */
+export const chapterUrl = (base: string, no: number) => `${base.endsWith('/') ? base : base + '/'}ch-${pad2(no)}.html`

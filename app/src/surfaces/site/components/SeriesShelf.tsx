@@ -1,4 +1,4 @@
-import { BookOpen, Download } from 'lucide-react'
+import { BookOpen } from 'lucide-react'
 import { BOOKS, SERIES } from '../../../lib/config'
 import { cx } from '../../../lib/util'
 import BookCover from './BookCover'
@@ -45,9 +45,6 @@ function AvailableTile({ n, title, dark }: { n: number; title: string; dark: boo
       <div className="mt-2.5 flex gap-2">
         <a href={BOOKS.tome1.href} className={cx('btn-sm min-h-[40px] flex-1', dark ? 'btn-sun' : 'btn-primary')} aria-label={t('shelf.readLabel', { title: full })}>
           <BookOpen size={15} />{t('shelf.read')}
-        </a>
-        <a href={BOOKS.tome1.pdf} download className={cx('btn btn-sm min-h-[40px] border', dark ? 'border-white/25 text-cream hover:bg-white/10' : 'border-line bg-paper text-ink hover:border-ink-faint')} aria-label={t('shelf.pdfLabel', { title: full })}>
-          <Download size={15} />{t('shelf.pdf')}
         </a>
       </div>
     </div>

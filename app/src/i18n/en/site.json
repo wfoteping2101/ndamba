@@ -260,7 +260,7 @@
     "companions": {
       "eyebrow": "The companions",
       "title": "Two books that go with the app",
-      "lead": "The Njangi Code gives coaches and analysts the method. Lionceaux tells it to children. Both are free to read online and to download as PDFs.",
+      "lead": "The Njangi Code gives coaches and analysts the method. Lionceaux tells it to children. Both are free to read online, chapter by chapter.",
       "read": "Read the book",
       "all": "All the books",
       "methode": {
@@ -325,18 +325,15 @@
     "available": "Available",
     "soon": "Coming soon",
     "read": "Read",
-    "pdf": "PDF",
-    "readLabel": "Read {{title}} online",
-    "pdfLabel": "Download the PDF of {{title}}"
+    "readLabel": "Read {{title}} online"
   },
   "library": {
     "docTitle": "The books",
     "eyebrow": "Library",
     "title": "The books",
-    "subtitle": "The two companions of {{app}}. The Njangi Code, the method for coaches and analysts, from grassroots to the professional game and national teams. Lionceaux, the novel saga for readers aged 8 to 12. Both are free to read online and to download as PDFs.",
+    "subtitle": "The two companions of {{app}}. The Njangi Code, the method for coaches and analysts, from grassroots to the professional game and national teams. Lionceaux, the novel saga for readers aged 8 to 12. Both are free to read online, chapter by chapter.",
     "frenchOnly": "The books are written in French, so chapter titles are shown in French.",
     "read": "Read online",
-    "pdf": "Download the PDF",
     "contents": "Contents",
     "online": "{{n}} of {{total}} chapters online",
     "onlineAll": "{{n}} chapters online",
@@ -452,7 +449,7 @@
     "faq": {
       "books": {
         "q": "Are the books really free?",
-        "a": "Yes. The {{series}} saga and {{methode}} are free to read online and to download as PDFs, whatever your plan. So are the method's drills."
+        "a": "Yes. The {{series}} saga and {{methode}} are free to read online, whatever your plan. So are the method's drills."
       },
       "data": {
         "q": "Where is my data?",
@@ -605,7 +602,6 @@
         "lessons": "{{n}} Ball Lessons"
       },
       "read": "Read online",
-      "pdf": "Download the PDF",
       "galleryTitle": "The illustrations",
       "galleryLead": "{{n}} of {{total}} planned illustrations published: the cover, the characters, the part openers and the chapters. Tap an image to see it full size and ask for a retouch.",
       "label": {

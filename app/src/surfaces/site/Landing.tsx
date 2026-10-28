@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ComponentType, type ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import {
-  ArrowRight, BookOpen, CalendarDays, ClipboardList, Download, Dumbbell, Eye, FileChartColumn, Flag, GraduationCap, LineChart, Network,
+  ArrowRight, BookOpen, CalendarDays, ClipboardList, Dumbbell, Eye, FileChartColumn, Flag, GraduationCap, LineChart, Network,
   NotebookPen, Radio, Route, ShieldCheck, Shirt, Sparkles, Tags, Target, Users, Video, type LucideIcon,
 } from 'lucide-react'
 import { BOOKS, BRAND, PLANS, SERIES } from '../../lib/config'
@@ -284,9 +284,6 @@ function Companions() {
             <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-ink-muted">{t('landing.companions.methode.body')}</p>
             <div className="mt-5 flex flex-wrap gap-2">
               <a href={BOOKS.methode.href} className="btn-primary min-h-[44px]"><BookOpen size={16} />{t('landing.companions.read')}</a>
-              <a href={BOOKS.methode.pdf} download className="btn-outline min-h-[44px]" aria-label={t('shelf.pdfLabel', { title: BOOKS.methode.title[lang] })}>
-                <Download size={16} />{t('shelf.pdf')}
-              </a>
             </div>
           </div>
         </article>

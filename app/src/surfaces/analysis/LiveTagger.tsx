@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import {
-  Check, ChevronRight, CircleHelp, Flag, Keyboard, ListOrdered, Maximize, Minus, Pause, Play, Plus, Settings2, Trash2, Undo2, WifiOff, X,
+  Check, ChevronRight, CircleHelp, Eye, Flag, Keyboard, ListOrdered, Maximize, Minus, Pause, Play, Plus, Settings2, Trash2, Undo2, WifiOff, X,
 } from 'lucide-react'
 import { db } from '../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
@@ -15,6 +15,7 @@ import { secondsOf, useClock, type Half } from './components/clock'
 import { Sheet } from './components/Sheet'
 import { useMedia } from './components/data'
 import { SubBars } from './components/charts'
+import { ObserveSheet } from '../team/components/journey/Entries' // Parcours: observe players during the match
 
 /* ------------------------------------------------------------------ layout of the tag grid */
 
@@ -82,7 +83,7 @@ function Tagger({ match }: { match: Match }) {
   const [prefs, setPrefs] = useState<Prefs>(loadPrefs)
   const savePrefs = (p: Prefs) => { setPrefs(p); try { localStorage.setItem(PREFS_KEY, JSON.stringify(p)) } catch { /* private */ } }
 
-  const [sheet, setSheet] = useState<null | 'log' | 'help' | 'end' | 'settings' | 'panel'>(null)
+  const [sheet, setSheet] = useState<null | 'log' | 'help' | 'end' | 'settings' | 'panel' | 'observe'>(null)
   const [flash, setFlash] = useState<{ key: LiveKey; n: number } | null>(null)
   const [toast, setToast] = useState<{ text: string; n: number; tone?: 'ok' | 'sun' } | null>(null)
   const [lossUntil, setLossUntil] = useState(0)
@@ -353,6 +354,7 @@ function Tagger({ match }: { match: Match }) {
               <div className="ml-2 flex items-center gap-1">
                 {iconBtn(<Undo2 size={20} />, t('live.undo'), undo, undefined, true)}
                 {iconBtn(<ListOrdered size={20} />, t('live.log'), () => setSheet('log'), undefined, true)}
+                {iconBtn(<Eye size={20} />, t('journey:actions.observe'), () => setSheet('observe'), undefined, true)}
                 {iconBtn(<Keyboard size={20} />, t('live.help'), () => setSheet('help'))}
                 {iconBtn(<Settings2 size={20} />, t('live.settings'), () => setSheet('settings'))}
               </div>
@@ -404,9 +406,10 @@ function Tagger({ match }: { match: Match }) {
 
       {/* ---------- bottom bar (phone) ---------- */}
       {!desktop && (
-        <nav className="safe-bottom grid shrink-0 grid-cols-4 border-t border-white/10 bg-night-800/80">
+        <nav className="safe-bottom grid shrink-0 grid-cols-5 border-t border-white/10 bg-night-800/80">
           <BottomBtn icon={<Undo2 size={20} />} label={t('live.undo')} onClick={undo} />
           <BottomBtn icon={<ListOrdered size={20} />} label={`${t('live.log')} · ${events.length}`} onClick={() => setSheet('log')} />
+          <BottomBtn icon={<Eye size={20} />} label={t('journey:actions.observe')} onClick={() => setSheet('observe')} />
           <BottomBtn icon={<CircleHelp size={20} />} label={t('live.help')} onClick={() => setSheet('help')} />
           <BottomBtn icon={<Settings2 size={20} />} label={t('live.settingsShort')} onClick={() => setSheet('settings')} />
         </nav>
@@ -480,6 +483,7 @@ function Tagger({ match }: { match: Match }) {
       </Sheet>
 
       <EndSheet open={sheet === 'end'} onClose={() => setSheet(null)} match={match} teamName={teamName} onConfirm={endMatch} />
+      <ObserveSheet open={sheet === 'observe'} onClose={() => setSheet(null)} match={match} squad={squad} minute={Math.floor(shown / 60) + 1} />
     </div>
   )
 }

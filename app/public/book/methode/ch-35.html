@@ -1,0 +1,236 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>35. Le manager, gardien de l'idée | Le Code Njangi</title><meta name="description" content="Écrire et protéger le modèle de jeu, recruter des joueurs et des entraîneurs compatibles, organiser le staff, communiquer avec les joueurs, les médias et les dirigeants, gérer les vedettes et la diaspora, et faire durer le modèle quand l'entraîneur part."><meta property="og:image" content="/book/methode/img/cover.jpg"><meta name="theme-color" content="#FBF7EE"><link rel="icon" href="/favicon.svg"><style>@font-face{font-family:'Literata';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/literata-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/literata-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/literata-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:italic;font-weight:600;font-display:swap;src:url(../fonts/literata-latin-600-italic.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/fraunces-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/fraunces-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/fraunces-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/fraunces-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:600;font-display:swap;src:url(../fonts/fraunces-latin-600-italic.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/inter-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/inter-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/inter-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(../fonts/inter-latin-800-normal.woff2) format('woff2')}
+:root{--ink:#1D2621;--soft:#38423C;--muted:#66706A;--cream:#FBF7EE;--paper:#FFFDF8;--sand:#F1EADB;--line:#E6DDCB;--forest:#1F4D3A;--terra:#C5762F;--sun:#E3A92B;--clay:#B8432F;--fs:17px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--cream);color:var(--ink);font-family:Literata,Georgia,serif;font-size:var(--fs);line-height:1.72}
+a{color:var(--forest)}img{max-width:100%;display:block}
+.bar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(251,247,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);font-family:Inter,system-ui,sans-serif;font-size:14px}
+.bar .back{font-weight:700;text-decoration:none;color:var(--forest)}.bar-title{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:16px;text-align:center}
+.bar button{font:600 13px Inter,system-ui,sans-serif;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;color:var(--ink);cursor:pointer}
+.progress{position:sticky;top:49px;z-index:19;height:3px;background:transparent}.progress span{display:block;height:3px;width:0;background:linear-gradient(90deg,var(--forest),var(--sun),var(--clay))}
+main{max-width:720px;margin:0 auto;padding:0 18px 80px}
+.cover-block{text-align:center;padding:28px 0 8px}.cover-block .cover{display:block;width:min(400px,82%);height:auto;margin:0 auto 22px;border-radius:12px;box-shadow:0 22px 60px rgba(29,38,33,.32)}.cover-block .heroes{font-family:Inter,sans-serif;font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:11.5px;color:#B8862B;margin:10px 0 0}picture{display:contents}figure.illus img,.part-opener img{height:auto}
+.cover-block h1{font-family:Fraunces,Georgia,serif;font-size:40px;line-height:1.05;margin:6px 0 4px}.subtitle{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:21px;margin:0;color:var(--soft)}.author{font-family:Inter,sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--terra);margin:14px 0}
+.dedication{font-style:italic;color:var(--soft);margin:22px auto;max-width:420px}
+.resume{display:inline-block;margin-top:6px;background:var(--forest);color:var(--cream);font:700 15px Inter,sans-serif;padding:12px 20px;border-radius:14px;text-decoration:none}
+.toc{margin:30px 0;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:18px}.toc h2{font-family:Fraunces,Georgia,serif;margin:0 0 8px}
+.toc ol,.drawer ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:14px 0 6px;font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
+.toc-part li a{display:block;padding:6px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:16px}.toc-part li a b{color:var(--forest);font-family:Inter,sans-serif;font-size:13px;margin-right:6px}
+.part-opener{margin:56px -18px 10px;position:relative;overflow:hidden;border-radius:0;background:var(--forest);color:var(--cream);min-height:220px;display:flex;align-items:flex-end}
+.part-opener img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}.part-text{position:relative;padding:26px 22px}.part-opener .kicker{color:var(--sun)}
+.part-opener h2{font-family:Fraunces,Georgia,serif;font-size:42px;margin:2px 0;line-height:1}.part-opener p{margin:0;font-style:italic;opacity:.92}
+.kicker{font:700 11px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+.chapter,.part-opener,.toc,#fiches,.drill{scroll-margin-top:64px}.chapter{padding-top:42px}.chapter header{text-align:center;margin-bottom:18px}.chapter h2{font-family:Fraunces,Georgia,serif;font-size:31px;line-height:1.15;margin:6px 0 0}
+.illus{margin:18px -18px 26px}.illus img{width:100%;height:auto}.illus.wide{margin:24px -18px}.illus figcaption{font:13px Inter,sans-serif;color:var(--muted);text-align:center;margin-top:8px}
+@media(min-width:760px){.illus,.illus.wide{margin-left:-40px;margin-right:-40px}.illus img{border-radius:16px}.part-opener{margin-left:-40px;margin-right:-40px;border-radius:18px}}
+.story p{margin:0 0 .95em;text-align:left;hyphens:auto}.story hr{border:0;text-align:center;margin:1.6em 0}.story hr:after{content:'· · ·';letter-spacing:.6em;color:var(--terra)}
+.story h2{font-family:Fraunces,Georgia,serif;font-size:25px;margin:1.6em 0 .4em}.story h3{font-family:Fraunces,Georgia,serif;font-size:20px;margin:1.4em 0 .3em}
+.story ul,.story ol{padding-left:1.3em}.story table{width:100%;border-collapse:collapse;font:14px/1.45 Inter,sans-serif;margin:1em 0;display:block;overflow-x:auto}.story th,.story td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}.story th{font-weight:700;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+figure.diagram{margin:18px 0}figure.diagram svg{width:100%;height:auto;display:block;border-radius:12px}
+.end{margin:60px 0 0;text-align:center;font-style:italic;color:var(--soft)}.end a{font:700 14px Inter,sans-serif;font-style:normal}
+.drawer{position:fixed;inset:0;z-index:50;background:rgba(10,16,13,.5)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(420px,92vw);background:var(--paper);overflow-y:auto;padding:18px}.drawer button{font:600 13px Inter,sans-serif;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;margin-bottom:8px}
+.drawer .toc-part li a{font-size:15px}
+
+body.methode{font-family:Literata,Georgia,serif}
+.methode-cover .m-cover{margin:10px auto 20px;max-width:420px;aspect-ratio:7/10;border-radius:16px;padding:28px 24px;text-align:left;color:#FBF7EE;background:linear-gradient(160deg,#1F4D3A 0%,#173B2C 60%,#0B2116 100%);box-shadow:0 18px 50px rgba(29,38,33,.28);position:relative;overflow:hidden}
+.m-kicker{font:700 12px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#E3A92B}.m-title{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:44px;line-height:1;margin:14px 0 8px}.m-sub{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:20px;color:#F3D9BC}.m-line{font:500 13px Inter,sans-serif;opacity:.85;margin-top:10px}
+.m-cover ul{position:absolute;left:24px;bottom:22px;margin:0;padding:0;list-style:none;font:700 13px Inter,sans-serif}.m-cover li:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:#E3A92B;margin-right:8px;vertical-align:middle}
+.part-opener.methode{min-height:150px;background:linear-gradient(120deg,#1F4D3A,#2F6B52)}
+.callout{margin:22px 0;padding:14px 16px;border-radius:14px;border-left:5px solid var(--forest);background:#EEF4EF;font-size:.95em}.callout p{margin:.3em 0}
+.callout-kicker{font:800 10.5px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--forest)}.callout-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.08em;margin:2px 0 4px}
+.callout-afrique{border-color:var(--terra);background:#FBF0E3}.callout-afrique .callout-kicker{color:#A86020}.callout-analyste{border-color:#3D4F6B;background:#EEF1F6}.callout-analyste .callout-kicker{color:#3D4F6B}
+.callout-jeunes{border-color:var(--sun);background:#FDF6E3}.callout-jeunes .callout-kicker{color:#8F660C}.callout-attention{border-color:var(--clay);background:#FBEAE6}.callout-attention .callout-kicker{color:#9A3524}
+.drill-ref{font:700 .82em Inter,sans-serif;background:var(--sand);padding:1px 6px;border-radius:6px;text-decoration:none}
+.drills-grid{padding-top:30px}.fam-title{font-family:Fraunces,Georgia,serif;font-size:28px;border-bottom:3px solid var(--fam);padding-bottom:6px;margin:44px 0 8px}
+.drill{margin:22px 0;padding:18px;border:1px solid var(--line);border-radius:18px;background:var(--paper)}.drill-head{display:flex;gap:14px;align-items:flex-start}
+.drill-code{font:800 18px Inter,sans-serif;color:#fff;background:var(--fam);border-radius:12px;padding:10px 10px;min-width:58px;text-align:center}.drill-family{font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--fam)}
+.drill h3{font-family:Fraunces,Georgia,serif;font-size:24px;margin:2px 0}.drill-sub{margin:0;color:var(--muted);font-style:italic}
+.drill-meta{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;font:12.5px Inter,sans-serif}.drill-meta span{background:var(--sand);border-radius:999px;padding:4px 10px}.drill-meta b{color:var(--muted);font-weight:600;margin-right:4px}
+.drill-objective{font-weight:600}.drill-cols h4{font:800 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--fam);margin:14px 0 4px}.drill-cols ul{margin:0;padding-left:1.2em;font-size:.95em}
+@media(min-width:700px){.drill-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}}
+.drill-measure{background:#EEF4EF;border-radius:10px;padding:10px 12px;font-size:.95em}.drill-story{font-style:italic;color:var(--terra);font-size:.95em}.diagram2 figcaption{font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+
+.ch-title{font-family:Fraunces,Georgia,serif;font-size:32px;line-height:1.12;margin:6px 0 0}
+.start{display:flex;flex-direction:column;align-items:center;gap:10px;margin:18px 0 6px}
+.start a{display:flex;flex-direction:column;align-items:center;min-width:min(340px,90%);padding:13px 20px;border-radius:14px;text-decoration:none;font:700 15px Inter,sans-serif}
+.start .resume{background:var(--forest);color:var(--cream)}.start .resume small{font:600 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;opacity:.85}.start .resume b{font-family:Fraunces,Georgia,serif;font-size:17px;margin-top:2px}
+.start .begin{background:var(--paper);color:var(--forest);border:1.5px solid var(--forest)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:46px 0 10px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:16px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:84px}
+.pager a:hover{border-color:var(--forest)}.pager .next{text-align:right;background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.pager small{font:700 11px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;opacity:.8}.pager b{font-family:Fraunces,Georgia,serif;font-size:16px;line-height:1.25;font-weight:600}
+.drawer-home{display:block;margin:4px 0 10px;font:700 14px Inter,sans-serif;text-decoration:none}
+.drawer a.current{background:var(--sand);border-radius:8px;padding-left:8px}
+.part-opener{margin-top:18px}
+.lead{font-size:1.05em;color:var(--soft)}
+.fam-grid{display:grid;gap:14px;margin-top:18px}@media(min-width:760px){.fam-grid{grid-template-columns:1fr 1fr}}
+.fam-card{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--fam);border-radius:16px;padding:16px 18px}
+.fam-card h2{font-family:Fraunces,Georgia,serif;font-size:21px;margin:0 0 8px}.fam-card h2 a{color:var(--fam);text-decoration:none}
+.fam-card ol{list-style:none;margin:0;padding:0}.fam-card li a{display:block;padding:5px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px}.fam-card li a b{font:700 12px Inter,sans-serif;color:var(--fam);margin-right:6px}
+h1.fam-title{font-family:Fraunces,Georgia,serif;font-size:30px;margin:28px 0 10px;color:var(--fam)}
+</style></head><body class="methode paged" data-page="ch-35">
+<div class="bar"><a class="back" href="./">&#8592; Sommaire</a><span class="bar-title">Le Code Njangi</span><button id="toc-btn" type="button" aria-label="Chapitres">Chapitres</button><button id="aa" type="button" aria-label="Taille du texte">Aa</button></div><div class="progress"><span id="prog"></span></div>
+<main><section class="part-opener methode"><div class="part-text"><div class="kicker">Partie 9</div><h2>Le manager et la fédération</h2></div></section><article class="chapter" id="ch-35"><header><div class="kicker">Chapitre 35</div><h1 class="ch-title">Le manager, gardien de l’idée</h1></header><div class="story"><p>Une fédération vient de se séparer de son sélectionneur après une élimination. C&#39;est le quatrième en six ans. Le nouveau arrive avec ses adjoints, ses habitudes et sa manière de jouer. Les U20, qui avaient appris pendant deux ans à sortir le ballon depuis leur gardien, voient l&#39;équipe A jouer long dès la première relance. Les U17, eux, ont un troisième entraîneur qui ne sait même pas comment jouaient les deux autres. Personne n&#39;est de mauvaise foi. Chacun fait ce qu&#39;il croit juste. Et pourtant, à la fin, il ne reste rien.</p>
+<p>Ce scénario n&#39;appartient à aucun pays en particulier ; il appartient à beaucoup. Le chapitre 1 l&#39;a dit : le chaînon manquant n&#39;est pas le talent, c&#39;est l&#39;idée commune. Mais une idée commune ne survit pas toute seule. Il faut quelqu&#39;un dont le métier est de la garder.</p>
+<p>Ce chapitre parle de ce gardien. Dans un club, c&#39;est souvent le manager ou le directeur sportif ; dans une fédération, c&#39;est le directeur technique national, avec le sélectionneur de l&#39;équipe A. Le chapitre dit ce qu&#39;ils doivent écrire, protéger, recruter, organiser et transmettre, pour que le modèle survive aux défaites, aux vedettes et aux départs.</p>
+<h2>Deux métiers, une seule idée</h2>
+<p>L&#39;<strong>entraîneur principal</strong> (le sélectionneur en équipe nationale) gagne des matchs. Il choisit ses joueurs, prépare les séances, décide du plan de match, assume les résultats. Le <strong>directeur technique</strong> protège le modèle. Il veille à ce que toutes les équipes qui portent le même maillot, des U15 à l&#39;équipe A, jouent la même idée, et il forme ceux qui l&#39;enseignent.</p>
+<p>Ces deux métiers ne s&#39;opposent pas, mais ils n&#39;ont pas le même horizon. L&#39;entraîneur vit au rythme des matchs et des contrats. Le directeur technique vit au rythme des générations. Quand une fédération confond les deux, le modèle change à chaque changement d&#39;entraîneur. Quand elle les sépare, l&#39;entraîneur peut changer sans que le modèle change.</p>
+<aside class="callout callout-njangi"><div class="callout-kicker">Principe Njangi</div><div class="callout-title">Le modèle appartient à la fédération</div><p>Un entraîneur apporte ses qualités, ses idées, son caractère. Le modèle de jeu, lui, appartient à la fédération et à tous ceux qui ont cotisé pour le construire. L&#39;entraîneur le sert, l&#39;enrichit, l&#39;adapte. Il ne le remplace pas.</p>
+</aside>
+
+<h2>Écrire le modèle</h2>
+<p>Un modèle qui n&#39;existe que dans la tête d&#39;un homme part avec lui. La première tâche du gardien de l&#39;idée est donc d&#39;<strong>écrire</strong> le modèle de jeu, dans un document court (une vingtaine de pages) que tout entraîneur peut lire en une soirée. Ce livre peut servir de base, mais chaque nation doit écrire le sien, avec ses mots, ses exemples, ses joueurs.</p>
+<p>Le document contient au moins : la devise ; les quatre moments du jeu ; les cinq intentions et les deux réflexes, avec leurs comportements observables ; la structure de référence en possession et ses variantes ; les rôles et leurs missions ; le vocabulaire commun ; les indicateurs, dont l&#39;Indice Njangi ; et la progression par âge.</p>
+<p>Il doit surtout dire clairement ce qui est <strong>non négociable</strong> et ce qui est <strong>adaptable</strong>. Sans cette frontière, chaque entraîneur décidera seul de ce qui compte.</p>
+<table>
+<thead>
+<tr>
+<th>Non négociable</th>
+<th>Adaptable</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>La devise et les cinq intentions</td>
+<td>Le système de départ (4‑3-3, 3‑4-3, autre)</td>
+</tr>
+<tr>
+<td>Les deux réflexes : Reprendre et Regarder devant</td>
+<td>La hauteur du bloc selon l&#39;adversaire, la chaleur, le score</td>
+</tr>
+<tr>
+<td>La défense de repos en attaque placée</td>
+<td>Le nombre de joueurs dans la défense de repos</td>
+</tr>
+<tr>
+<td>Le vocabulaire commun</td>
+<td>Les profils choisis pour chaque rôle</td>
+</tr>
+<tr>
+<td>La sortie de balle construite comme règle par défaut</td>
+<td>Le jeu direct comme option, quand il prépare une intention</td>
+</tr>
+<tr>
+<td>La protection des jeunes et l&#39;école d&#39;abord</td>
+<td>Rien</td>
+</tr>
+</tbody></table>
+<p>Ce document n&#39;est pas écrit par un seul homme dans un bureau. Il naît d&#39;une commission d&#39;entraîneurs de tous niveaux (jeunes, clubs, sélections, football féminin), relue par les anciens joueurs, puis validée et publiée par la fédération. Il est révisé tous les deux ans, jamais au lendemain d&#39;une défaite.</p>
+<h2>Protéger le modèle</h2>
+<p>Le modèle a trois ennemis : la pression des résultats, l&#39;arrivée d&#39;un nouvel entraîneur et l&#39;impatience des dirigeants.</p>
+<p>Contre la pression des résultats, le gardien de l&#39;idée apporte des preuves que l&#39;équipe progresse, même quand elle ne gagne pas encore. C&#39;est là que l&#39;analyse devient un outil politique au sens noble : la courbe de l&#39;Indice Njangi, saison après saison, montre si le modèle s&#39;installe. Une sélection de jeunes qui perd un tournoi mais dont l&#39;Indice monte de 50 à 65 en un an n&#39;est pas en échec. Elle est en construction.</p>
+<p>Contre la tentation de tout changer, il installe des règles écrites. Le cahier des charges de chaque entraîneur de sélection mentionne le modèle national. Chaque sélection de jeunes envoie ses rapports de match à la direction technique. Chaque entraîneur participe aux réunions communes, deux ou trois fois par an.</p>
+<aside class="callout callout-attention"><div class="callout-kicker">Attention</div><div class="callout-title">L’entraîneur qui arrive avec tout son système</div><p>Un entraîneur compétent qui ignore le modèle peut gagner quelques matchs et détruire deux ans de formation. Le recruter malgré tout, c&#39;est choisir le court terme. Si une fédération a un modèle, elle recrute un entraîneur qui le sert, et elle le lui dit avant de signer.</p>
+</aside>
+
+<h2>Recruter des entraîneurs compatibles</h2>
+<p>Recruter un entraîneur, c&#39;est recruter une manière de penser le jeu. L&#39;entretien d&#39;embauche doit donc parler du modèle, pas seulement du palmarès. Quelques questions suffisent à faire le tri.</p>
+<ul>
+<li>« Montrez-moi trois séquences de vos équipes où l&#39;on voit une intention de possession. »</li>
+<li>« Que fait votre équipe dans les cinq secondes qui suivent la perte ? »</li>
+<li>« Comment construisez-vous une semaine avec un match le samedi ? »</li>
+<li>« Que gardez-vous de notre modèle, et que voudriez-vous y ajouter ? »</li>
+</ul>
+<p>Un bon candidat répond avec des images, des comportements, des exercices. Un candidat qui répond seulement par des résultats ou des systèmes ne parle pas la même langue.</p>
+<p>Les entraîneurs adjoints et les entraîneurs de jeunes se recrutent de préférence parmi ceux qui ont suivi les formations fédérales sur le modèle. C&#39;est ainsi que la langue se diffuse : par les gens qui la parlent déjà.</p>
+<h2>Recruter des joueurs compatibles</h2>
+<p>Le talent ne suffit pas, mais il reste indispensable. La question n&#39;est pas de choisir entre talent et modèle : c&#39;est de chercher le talent qui sert le modèle. Le gardien de l&#39;idée donne aux recruteurs une grille commune : les dix compétences du chapitre 25, notées de 1 à 4, et les profils de rôle du chapitre 9.</p>
+<p>Un dribbleur exceptionnel qui garde le ballon trop longtemps peut devenir un ailier de largeur njangi s&#39;il apprend à fixer puis donner. Un milieu athlétique qui ne scanne jamais aura du mal à devenir pivot, quel que soit son physique. Recruter, c&#39;est parier sur ce qu&#39;un joueur peut apprendre autant que sur ce qu&#39;il sait déjà faire.</p>
+<p>Le caractère compte autant que le reste : l&#39;envie d&#39;apprendre, le respect des partenaires, la capacité à accepter un rôle. Dans un njangi, celui qui refuse de cotiser ne touche jamais la caisse, et il fragilise celle des autres.</p>
+<h2>Organiser le staff</h2>
+<p>Une sélection moderne n&#39;est pas un entraîneur seul avec un adjoint. C&#39;est une petite équipe où chacun connaît sa mission et parle le même vocabulaire.</p>
+<table>
+<thead>
+<tr>
+<th>Rôle</th>
+<th>Mission principale dans le Njangi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Entraîneur principal</td>
+<td>Décider : sélection, plan de match, séances, coaching</td>
+</tr>
+<tr>
+<td>Adjoint possession</td>
+<td>Sortie de balle, structure, jeu de position, phases de jeu</td>
+</tr>
+<tr>
+<td>Adjoint défense et transitions</td>
+<td>Défense de repos, pressing, les 5 secondes, coups de pied arrêtés</td>
+</tr>
+<tr>
+<td>Entraîneur des gardiens</td>
+<td>Le gardien-relanceur : jeu au pied, sorties, lecture</td>
+</tr>
+<tr>
+<td>Analyste</td>
+<td>Fiche adversaire, codage en direct, vidéo, rapport de match</td>
+</tr>
+<tr>
+<td>Préparateur physique</td>
+<td>Charge, récupération, chaleur, retour de blessure</td>
+</tr>
+<tr>
+<td>Médecin et kinésithérapeute</td>
+<td>Santé, prévention, protocoles de chaleur et de commotion</td>
+</tr>
+<tr>
+<td>Intendant et chargé de liaison</td>
+<td>Logistique, voyages, lien avec les clubs et les familles</td>
+</tr>
+</tbody></table>
+<p>Dans une petite fédération, une même personne tient parfois deux ou trois rôles. Ce n&#39;est pas un problème, à condition que chaque mission ait un responsable nommé. Ce qui n&#39;appartient à personne n&#39;est fait par personne.</p>
+<p>Le staff se réunit chaque jour pendant un camp, au moins chaque semaine en dehors. La réunion suit toujours le même ordre : l&#39;état des joueurs (médecin, préparateur), le rapport du dernier match (analyste), le plan de la séance ou du match (entraîneur). Elle dure trente minutes, pas deux heures.</p>
+<aside class="callout callout-afrique"><div class="callout-kicker">En Afrique</div><div class="callout-title">La stabilité est un investissement</div><p>Beaucoup de staffs africains changent entièrement à chaque changement de sélectionneur. Pourtant, l&#39;analyste, l&#39;entraîneur des gardiens, le préparateur physique et le médecin peuvent rester : ils portent la mémoire du groupe.
+Garder ces postes stables coûte peu et protège beaucoup. Payer ces professionnels à l&#39;heure et régulièrement fait partie de la protection du modèle.</p>
+</aside>
+
+<h2>Communiquer</h2>
+<h3>Avec les joueurs</h3>
+<p>Chaque joueur doit savoir trois choses : son rôle, ce qu&#39;on attend de lui dans chaque intention, et ce qu&#39;il doit améliorer. Le manager les lui dit en tête à tête, au début de chaque camp, en quelques minutes. Il lui dit aussi pourquoi il joue ou ne joue pas, même quand la réponse est difficile. Un joueur peut accepter d&#39;être remplaçant ; il accepte rarement de ne pas savoir pourquoi.</p>
+<h3>Avec les médias</h3>
+<p>Les journalistes et les supporters parlent souvent de résultats et de noms. Le manager peut leur apprendre à parler de jeu. Expliquer le modèle en conférence de presse, avec les mêmes mots que ceux du vestiaire (« nous voulons sortir proprement, fixer, renverser »), fait comprendre le projet au public et le protège dans les moments difficiles. On ne promet jamais un résultat ; on promet une manière de jouer.</p>
+<h3>Avec les dirigeants</h3>
+<p>Les présidents et les comités exécutifs décident des budgets et des contrats. Ils doivent comprendre ce qu&#39;ils financent. Le directeur technique leur présente, chaque trimestre, un bilan court : les résultats, mais aussi l&#39;Indice Njangi des sélections, le nombre d&#39;entraîneurs formés, les joueurs de la diaspora contactés, l&#39;état des terrains et des centres. Un dirigeant qui voit le projet avancer protège plus volontiers son entraîneur après une défaite.</p>
+<h2>Gérer les vedettes</h2>
+<p>Toute grande équipe a ses vedettes, et l&#39;Afrique en a produit beaucoup. La vedette n&#39;est pas l&#39;ennemie du modèle : bien utilisée, elle en est la meilleure ambassadrice. Mais elle doit cotiser comme les autres.</p>
+<p>Le manager lui donne une liberté claire, dans un cadre clair. Liberté dans le dernier tiers, où la créativité décide des matchs. Cadre dans les réflexes collectifs : Reprendre à la perte vaut pour tout le monde, la défense de repos aussi. Il l&#39;associe aux décisions : une vedette qui explique le modèle aux jeunes joueurs du groupe devient un relais, pas un problème.</p>
+<p>Les règles de vie (horaires, respect, engagement) s&#39;appliquent à tous. Une exception accordée à un seul joueur ruine en un soir l&#39;autorité construite en une saison.</p>
+<h2>La diaspora et les binationaux</h2>
+<p>Une partie des joueurs qui disputeront les Coupes du monde 2030 et 2034 grandissent en Europe, en Amérique du Nord ou ailleurs. Le gardien de l&#39;idée les considère comme des membres à part entière du njangi, pas comme des renforts de dernière minute.</p>
+<p>La méthode tient en quelques principes. Les détecter tôt, dès 14 ou 15 ans, grâce à un réseau de correspondants et aux liens avec les clubs. Leur parler avec respect, à eux et à leurs familles, en expliquant le projet de jeu, le rôle envisagé, le parcours dans les sélections de jeunes. Ne jamais promettre une place de titulaire. Les inviter tôt aux camps de jeunes, pour qu&#39;ils apprennent le modèle avec la génération qui sera la leur. Désigner une personne de liaison qu&#39;ils peuvent joindre directement.</p>
+<p>Pour les mineurs, les règles de protection de l&#39;enfance s&#39;appliquent sans exception : contact avec les parents d&#39;abord, accord écrit pour chaque convocation, encadrement adulte pendant les voyages, continuité de la scolarité. Un projet sportif ne justifie jamais de mettre un enfant en difficulté.</p>
+<h2>Faire durer le modèle quand l&#39;entraîneur part</h2>
+<p>Les entraîneurs partent : c&#39;est la règle du métier. La question n&#39;est pas d&#39;empêcher les départs, mais de faire en sorte qu&#39;ils ne coûtent pas le modèle.</p>
+<p>Le directeur technique tient pour cela un <strong>dossier de transmission</strong>, mis à jour en continu : le modèle écrit, les rapports de match de la saison, les courbes de l&#39;Indice Njangi par sélection, la fiche de chaque joueur suivi (compétences, rôle, état physique, contacts), le programme diaspora, les séances types. Quand un entraîneur arrive, il reçoit ce dossier avant son premier jour.</p>
+<p>Le nouvel entraîneur est recruté sur le modèle, comme on l&#39;a vu. Une partie du staff reste en place pour assurer la continuité. Les sélections de jeunes, elles, ne changent pas de manière de jouer parce que l&#39;équipe A a changé d&#39;entraîneur : leur cap est fixé par la direction technique.</p>
+<p>Dans un njangi, le président change parfois ; la caisse, les règles et les membres restent. C&#39;est ce qui permet au groupe de traverser les années. Le chapitre 36 montre comment une fédération peut inscrire cette continuité dans un plan, mesure par mesure et année par année, jusqu&#39;en 2034.</p>
+</div></article>
+<nav class="pager" aria-label="Chapitres précédent et suivant"><a class="prev" href="ch-34.html" rel="prev"><small>&#8592; Précédent</small><b>34. Le rapport de match Njangi</b></a><a class="next" href="ch-36.html" rel="next"><small>Suivant &#8594;</small><b>36. Le plan 2030 : dix mesures pour une fédération</b></a></nav></main>
+<div class="drawer" id="drawer" hidden><div class="drawer-inner"><button id="close" type="button">Fermer</button><a class="drawer-home" href="./">Couverture et sommaire</a><ol><li class="toc-part"><span>Avant-propos</span><ol><li><a href="ch-00.html" data-page="ch-00">Avant-propos</a></li></ol></li><li class="toc-part"><span>Partie 1 · Le manifeste</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1.</b> Le talent ne suffit pas</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2.</b> Le Njangi : une philosophie africaine du jeu</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3.</b> Le mantra : 2030 ou 2034</a></li></ol></li><li class="toc-part"><span>Partie 2 · Le modèle de jeu Njangi</span><ol><li><a href="ch-04.html" data-page="ch-04"><b>4.</b> Les quatre moments et la règle d'or</a></li><li><a href="ch-05.html" data-page="ch-05"><b>5.</b> Les cinq intentions de la possession</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6.</b> La carte : couloirs, hauteurs, triangles</a></li><li><a href="ch-07.html" data-page="ch-07"><b>7.</b> Les transitions : reprendre et regarder devant</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8.</b> Défendre pour récupérer</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9.</b> Les rôles du Njangi</a></li><li><a href="ch-10.html" data-page="ch-10"><b>10.</b> Les coups de pied arrêtés avec intention</a></li></ol></li><li class="toc-part"><span>Partie 3 · La technique au service de l'intention</span><ol><li><a href="ch-11.html" data-page="ch-11"><b>11.</b> La passe qui sert</a></li><li><a href="ch-12.html" data-page="ch-12"><b>12.</b> Recevoir et s'orienter</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13.</b> Voir avant de recevoir</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14.</b> Conduire, dribbler, protéger</a></li><li><a href="ch-15.html" data-page="ch-15"><b>15.</b> Finir</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16.</b> Le gardien qui joue</a></li></ol></li><li class="toc-part"><span>Partie 4 · La tactique Njangi</span><ol><li><a href="ch-17.html" data-page="ch-17"><b>17.</b> Les systèmes avec et sans ballon</a></li><li><a href="ch-18.html" data-page="ch-18"><b>18.</b> Sortir le ballon contre chaque pressing</a></li><li><a href="ch-19.html" data-page="ch-19"><b>19.</b> Progresser : troisième homme, surcharges, changements de côté</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20.</b> Le dernier tiers : attaquer la surface</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21.</b> Presser : déclencheurs et pièges</a></li></ol></li><li class="toc-part"><span>Partie 5 · Des jeunes aux pros</span><ol><li><a href="ch-24.html" data-page="ch-24"><b>24.</b> Les étapes de la formation Njangi</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25.</b> Les dix compétences du joueur Njangi</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26.</b> Former en Afrique : notre réalité est notre force</a></li></ol></li><li class="toc-part"><span>Partie 6 · La semaine d'entraînement et la périodisation</span><ol><li><a href="ch-27.html" data-page="ch-27"><b>27.</b> La périodisation Njangi</a></li><li><a href="ch-28.html" data-page="ch-28"><b>28.</b> Toutes les semaines : jeunes, deux matchs, sélections</a></li><li><a href="ch-29.html" data-page="ch-29"><b>29.</b> La charge, la chaleur et la récupération</a></li><li><a href="ch-30.html" data-page="ch-30"><b>30.</b> Construire une séance Njangi</a></li></ol></li><li class="toc-part"><span>Partie 7 · Les exercices</span><ol><li><a href="ch-31.html" data-page="ch-31"><b>31.</b> Comment utiliser les fiches</a></li><li><a href="fiches.html" data-page="fiches"><b>64</b> fiches d’exercices</a></li></ol></li><li class="toc-part"><span>Partie 8 · L'analyse</span><ol><li><a href="ch-32.html" data-page="ch-32"><b>32.</b> Mesurer la possession avec intention</a></li><li><a href="ch-33.html" data-page="ch-33"><b>33.</b> L'analyste Njangi : avant, pendant, après le match</a></li><li><a href="ch-34.html" data-page="ch-34"><b>34.</b> Le rapport de match Njangi</a></li></ol></li><li class="toc-part"><span>Partie 9 · Le manager et la fédération</span><ol><li><a href="ch-35.html" data-page="ch-35"><b>35.</b> Le manager, gardien de l'idée</a></li><li><a href="ch-36.html" data-page="ch-36"><b>36.</b> Le plan 2030 : dix mesures pour une fédération</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="ch-37.html" data-page="ch-37"><b>37.</b> Annexes</a></li></ol></li></ol></div></div>
+<script>
+(function(){var K='njangi.methode';var b=document.body;var page=b.getAttribute('data-page');
+var h=location.hash;
+if(page==='index'){var m=h.match(/^#ch-(\d{2})$/);if(m){location.replace('ch-'+m[1]+'.html');return}
+var dm=h.match(/^#drill-([A-Z]\d\d)$/);if(dm&&window.DRILL_PAGE&&window.DRILL_PAGE[dm[1]]){location.replace(window.DRILL_PAGE[dm[1]]+'#drill-'+dm[1]);return}
+if(h==='#fiches'){location.replace('fiches.html');return}}
+try{var fs=localStorage.getItem(K+'.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem(K+'.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('a[data-page="'+page+'"]');if(cur){cur.classList.add('current');cur.scrollIntoView({block:'center'})}};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||document.querySelector('h1')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(h==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y);setTimeout(function(){window.scrollTo(0,l.y)},350)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+})();</script></body></html>

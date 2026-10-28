@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, BookOpen, ChevronDown, Download, Feather, Languages } from 'lucide-react'
+import { ArrowRight, BookOpen, ChevronDown, Feather, Languages } from 'lucide-react'
 import { DRILLS, METHODE_TOC, TOME1_TOC } from '../../content'
 import type { TocEntry } from '../../content/books.gen'
 import { BOOKS, SERIES } from '../../lib/config'
@@ -7,7 +7,7 @@ import { useDocumentTitle } from '../../lib/hooks'
 import { cx } from '../../lib/util'
 import BookCover from './components/BookCover'
 import SeriesShelf from './components/SeriesShelf'
-import { ROMAN, isMethodeChapter, methodeShape, pad2 } from './components/books'
+import { ROMAN, chapterUrl, isMethodeChapter, methodeShape } from './components/books'
 import { GoldLabel, PageFrame, useSiteT } from './components/brand'
 
 /** Planned size of the novel (the online reader fills in as chapters are written). */
@@ -63,7 +63,6 @@ function SeriesBlock() {
               </ul>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a href={BOOKS.tome1.href} className="btn-sun btn-lg"><BookOpen size={18} />{t('library.read')}</a>
-                <a href={BOOKS.tome1.pdf} download className="btn btn-lg border border-cream/30 text-cream hover:bg-white/10"><Download size={18} />{t('library.pdf')}</a>
               </div>
               <Link to="/app/joueur/lecons" className="mt-5 inline-flex min-h-[44px] items-center gap-1.5 text-[15px] font-semibold text-sun-300 underline-offset-4 hover:underline">
                 {t('library.tome1.lessonsLink')}<ArrowRight size={16} />
@@ -135,7 +134,6 @@ function MethodeBlock() {
           </ul>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a href={b.href} className="btn-primary btn-lg"><BookOpen size={18} />{t('library.read')}</a>
-            <a href={b.pdf} download className="btn-outline btn-lg"><Download size={18} />{t('library.pdf')}</a>
           </div>
           <Link to="/app/exercices" className="link mt-5 inline-flex min-h-[44px] items-center gap-1.5 text-[15px]">
             {t('library.methode.drillsLink')}<ArrowRight size={16} />
@@ -199,7 +197,7 @@ function Toc({ entries, planned, base, partLabel, partName, numberOf, countable,
           if (plain(part, list)) {
             const e = list[0]
             return (
-              <a key={part} href={`${base}#ch-${pad2(e.no)}`} className="block border-b border-line px-5 py-4 transition last:border-b-0 hover:bg-sand/40 sm:px-6">
+              <a key={part} href={chapterUrl(base, e.no)} className="block border-b border-line px-5 py-4 transition last:border-b-0 hover:bg-sand/40 sm:px-6">
                 <span className="block font-display text-[17px] font-semibold leading-snug text-ink">{partName(part, e)}</span>
                 {e.summary && <span className="mt-0.5 line-clamp-2 block text-[14px] leading-snug text-ink-muted">{e.summary}</span>}
               </a>
@@ -222,7 +220,7 @@ function Toc({ entries, planned, base, partLabel, partName, numberOf, countable,
                   const num = numberOf(e)
                   return (
                     <li key={e.no}>
-                      <a href={`${base}#ch-${pad2(e.no)}`} className="flex gap-3 rounded-xl px-3 py-3 transition hover:bg-sand/60 sm:gap-4">
+                      <a href={chapterUrl(base, e.no)} className="flex gap-3 rounded-xl px-3 py-3 transition hover:bg-sand/60 sm:gap-4">
                         <span aria-hidden={!num} className={cx('w-7 shrink-0 pt-px text-right font-display text-[17px] tabular-nums text-ink-faint', !num && 'invisible')}>{num || '0'}</span>
                         <span className="min-w-0">
                           <span className="block font-semibold leading-snug text-ink">

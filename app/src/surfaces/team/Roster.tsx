@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ChevronRight, ListPlus, Pencil, Shirt, Trash2, Trophy, UserPlus } from 'lucide-react'
+import { ChevronRight, Eye, ListPlus, Pencil, Shirt, Trash2, Trophy, UserPlus } from 'lucide-react'
 import { db } from '../../lib/db'
 import { useLiveQuery, useDocumentTitle } from '../../lib/hooks'
 import { useSession, updateProfile } from '../../lib/session'
@@ -85,6 +85,7 @@ export default function Roster() {
               <button type="button" className="btn bg-cream text-forest-700 hover:bg-white" onClick={() => setAddOpen(true)}><UserPlus size={17} />{t('roster.addPlayer')}</button>
               <button type="button" className="btn border border-white/25 text-cream hover:bg-white/10" onClick={() => setImportOpen(true)}><ListPlus size={17} />{t('roster.import')}</button>
               <button type="button" className="btn text-cream/90 hover:bg-white/10" onClick={() => setTeamModal('edit')}><Pencil size={16} />{t('roster.editTeam')}</button>
+              {players.length > 0 && <Link to="/app/observer" className="btn-sun"><Eye size={17} />{t('journey:actions.observe')}</Link>}
             </div>
           </div>
           {players.length > 0 && (

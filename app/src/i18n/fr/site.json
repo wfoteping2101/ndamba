@@ -260,7 +260,7 @@
     "companions": {
       "eyebrow": "Les compagnons",
       "title": "Deux livres pour accompagner l'application",
-      "lead": "Le Code Njangi donne la méthode aux entraîneurs et aux analystes. Lionceaux la raconte aux enfants. Les deux se lisent librement en ligne et se téléchargent en PDF.",
+      "lead": "Le Code Njangi donne la méthode aux entraîneurs et aux analystes. Lionceaux la raconte aux enfants. Les deux se lisent librement en ligne, chapitre par chapitre.",
       "read": "Lire le livre",
       "all": "Tous les livres",
       "methode": {
@@ -325,18 +325,15 @@
     "available": "Disponible",
     "soon": "À paraître",
     "read": "Lire",
-    "pdf": "PDF",
-    "readLabel": "Lire {{title}} en ligne",
-    "pdfLabel": "Télécharger le PDF de {{title}}"
+    "readLabel": "Lire {{title}} en ligne"
   },
   "library": {
     "docTitle": "Les livres",
     "eyebrow": "Bibliothèque",
     "title": "Les livres",
-    "subtitle": "Les deux compagnons de {{app}}. Le Code Njangi, la méthode pour les entraîneurs et les analystes, de l'école de foot au niveau professionnel et aux sélections nationales. Lionceaux, la saga romanesque pour les lecteurs de 8 à 12 ans. Ils se lisent librement en ligne et se téléchargent en PDF.",
+    "subtitle": "Les deux compagnons de {{app}}. Le Code Njangi, la méthode pour les entraîneurs et les analystes, de l'école de foot au niveau professionnel et aux sélections nationales. Lionceaux, la saga romanesque pour les lecteurs de 8 à 12 ans. Ils se lisent librement en ligne, chapitre par chapitre.",
     "frenchOnly": "",
     "read": "Lire en ligne",
-    "pdf": "Télécharger le PDF",
     "contents": "Sommaire",
     "online": "{{n}} chapitres en ligne sur {{total}}",
     "onlineAll": "{{n}} chapitres en ligne",
@@ -452,7 +449,7 @@
     "faq": {
       "books": {
         "q": "Les livres sont-ils vraiment gratuits ?",
-        "a": "Oui. La saga {{series}} et {{methode}} se lisent librement en ligne et se téléchargent en PDF, quelle que soit votre formule. Les exercices de la méthode aussi."
+        "a": "Oui. La saga {{series}} et {{methode}} se lisent librement en ligne, quelle que soit votre formule. Les exercices de la méthode aussi."
       },
       "data": {
         "q": "Où sont mes données ?",
@@ -605,7 +602,6 @@
         "lessons": "{{n}} Leçons du Ballon"
       },
       "read": "Lire en ligne",
-      "pdf": "Télécharger le PDF",
       "galleryTitle": "Les illustrations",
       "galleryLead": "{{n}} illustrations publiées sur {{total}} prévues : la couverture, les personnages, les ouvertures de parties et les chapitres. Touchez une image pour la voir en grand et demander une retouche.",
       "label": {

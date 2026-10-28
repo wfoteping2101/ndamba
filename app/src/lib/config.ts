@@ -27,8 +27,8 @@ export const SERIES = {
 }
 
 export const BOOKS = {
-  tome1: { href: '/book/tome1/', pdf: '/downloads/lionceaux-tome1-le-ballon-qui-voyage.pdf', cover: '/book/tome1/img/cover.jpg', title: { fr: 'Lionceaux, tome 1 : Le Ballon qui voyage', en: 'Lionceaux, book 1: Le Ballon qui voyage' } },
-  methode: { href: '/book/methode/', pdf: '/downloads/le-code-njangi.pdf', cover: '/book/methode/img/cover.jpg', title: { fr: 'Le Code Njangi', en: 'The Njangi Code' }, subtitle: { fr: 'Posséder avec intention : la méthode africaine pour gagner la Coupe du monde', en: 'Possession with purpose: the African method to win the World Cup' } },
+  tome1: { href: '/book/tome1/', cover: '/book/tome1/img/cover.jpg', title: { fr: 'Lionceaux, tome 1 : Le Ballon qui voyage', en: 'Lionceaux, book 1: Le Ballon qui voyage' } },
+  methode: { href: '/book/methode/', cover: '/book/methode/img/cover.jpg', title: { fr: 'Le Code Njangi', en: 'The Njangi Code' }, subtitle: { fr: 'Posséder avec intention : la méthode africaine pour gagner la Coupe du monde', en: 'Possession with purpose: the African method to win the World Cup' } },
 }
 
 export interface PlanDef {

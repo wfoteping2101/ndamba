@@ -17,6 +17,7 @@ import { PrintSheet } from './components/PrintSheet'
 import { ConfirmModal, IntensityLegend, IntensityProfile, MdBadge, useToast } from './components/bits'
 import { useSessionQuota } from './components/NewSessionModal'
 import { MD_LIST, blockTitle, coverage, drillBlock, sessionLoad } from './components/helpers'
+import { SessionJourneyCard } from '../team/components/journey/Entries'
 
 export default function SessionBuilder() {
   const { id } = useParams()
@@ -239,6 +240,7 @@ export default function SessionBuilder() {
               )}
             </div>
           </div>
+          <SessionJourneyCard session={s} />
           <p className="mt-4 text-center font-display text-[15px] italic text-ink-muted">{t('common:brand.motto')}</p>
         </aside>
       </div>

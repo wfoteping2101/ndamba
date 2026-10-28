@@ -15,6 +15,7 @@ import { byNumber, resultOf, type MatchWithConvo } from './components/lineup'
 import { LineupBoard } from './components/LineupBoard'
 import { ShareBar } from './components/ShareBar'
 import { ConfirmModal, NjangiDial, NumberBadge, StatusBadge, Stepper } from './components/bits'
+import { MatchJourneyButtons } from './components/journey/Entries'
 
 const MOMENTS: (keyof GamePlan)[] = ['possession', 'transitionDef', 'defense', 'transitionOff', 'setPieces']
 
@@ -137,6 +138,7 @@ export default function MatchSheet() {
           {eventCount === 0 && (
             <button type="button" className="btn-outline btn-lg justify-center" onClick={() => setScoreOpen(true)}><Goal size={18} />{done ? t('sheet.editScore') : t('sheet.score')}</button>
           )}
+          <MatchJourneyButtons match={match} players={players} />
         </div>
         {gated && <Callout tone="sun" title={t('sheet.gateTitle')}>{t('sheet.gateBody')} <Link to="/app/premium" className="link">{t('sheet.gateCta')}</Link></Callout>}
       </div>

@@ -5,6 +5,7 @@ import { db } from './db'
 import type { EventCode, Match, MatchEvent, Player, Profile, Role, Session, SkillKey, Team } from './types'
 import { addDays, nowISO, todayISO, uid, weekStart } from './util'
 import { formationSlots } from './formations'
+import { seedJourney } from './seedJourney' // PARCOURS
 
 const SKILLS: SkillKey[] = ['scan', 'controle', 'passe', 'conduite', 'dribble-njangi', 'appels', 'communication', 'protection', 'contre-pression', 'decision']
 
@@ -121,6 +122,7 @@ export async function seedDemo(role: Role = 'coach', lang: 'fr' | 'en' = 'fr', l
     await db.matches.bulkPut([past, next])
     await db.events.bulkPut(demoEvents(past.id, players))
   })
+  await seedJourney(lang) // PARCOURS: the season's history (see lib/seedJourney.ts)
 }
 
 /* ==================================================================================================
@@ -353,6 +355,7 @@ async function seedProDemo(role: Role, lang: 'fr' | 'en') {
       { half: 2, side: 'us', near: 1985, playerId: 'pl_17' }, // Sali, on at the 66th minute
     ]))
   })
+  await seedJourney(lang) // PARCOURS: the season's history (see lib/seedJourney.ts)
 }
 
 /* ======================================== PRO DEMO (end) ======================================== */

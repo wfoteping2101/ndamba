@@ -1,24 +1,24 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ArrowRight, Check, ChevronDown, LoaderCircle, PlayCircle, RotateCcw, Sparkles } from 'lucide-react'
+import { ArrowRight, Check, ChevronDown, GraduationCap, LoaderCircle, PlayCircle, RotateCcw, Sparkles, Trophy } from 'lucide-react'
 import i18n, { setLang, useT } from '../../i18n'
 import { db } from '../../lib/db'
 import { addPlayer, createTeam } from '../../lib/actions'
 import { BRAND } from '../../lib/config'
 import { useDocumentTitle } from '../../lib/hooks'
-import { createProfile, seedDemo } from '../../lib/seed'
+import { createProfile, seedDemo, type DemoLevel } from '../../lib/seed'
 import { useSession } from '../../lib/session'
 import { cx, uid } from '../../lib/util'
 import { LangSwitch, Logo } from '../../ui'
 import Chips from './components/Chips'
 import Composer from './components/Composer'
 import MolaAvatar, { TypingDots } from './components/MolaAvatar'
-import ProfileCard, { fieldValue } from './components/ProfileCard'
+import ProfileCard, { fieldValue, levelLabel } from './components/ProfileCard'
 import { parsePlayerList, type Lang } from './engine'
 import { postWelcome, tm } from './executors'
 import {
-  AGE_GROUPS, FORMATS, POSITIONS, QUICK_CITIES, QUICK_COUNTRIES, ROLES, absorb, countryName, defaultFormat, emptyDraft, fieldsFor, goalsFor, isFieldFilled, nextStep,
-  type Draft, type Field, type Step,
+  CHILD_LEVELS, FORMATS, LEVEL_CHOICES, POSITIONS, QUICK_CITIES, QUICK_COUNTRIES, ROLES, absorb, countryName, defaultFormat, emptyDraft, fieldsFor, goalsFor, isFieldFilled, nextStep,
+  teamNameFor, type Draft, type Field, type Step,
 } from './onboarding'
 import { sleep } from './store'
 import './components/mola.css'
@@ -153,7 +153,11 @@ export default function Onboarding() {
       case 'lang': put('lang', c.value); break
       case 'role': put('role', c.value); break
       case 'team': put('teamName', c.value); break
-      case 'age': case 'childAge': put('ageGroup', c.value); break
+      case 'age': case 'childAge':
+        put('ageGroup', c.value)
+        // professional football is eleven against eleven: a coach of a pro team is not asked the format
+        if (c.value === 'Pro' && !d.format && d.role !== 'player' && d.role !== 'parent') put('format', 11)
+        break
       case 'format': put('format', Number(c.value)); break
       case 'position': put('position', c.value); break
       case 'city': { const r = absorb(d, 'city', c.value); apply(step, r.draft, r.learned, true); return }
@@ -229,11 +233,11 @@ export default function Onboarding() {
     }
   }
 
-  const tryDemo = async () => {
+  const tryDemo = async (level: DemoLevel) => {
     if (demoBusy) return
     setDemoBusy(true)
     try {
-      await seedDemo('coach', lang)
+      await seedDemo('coach', lang, level)
       const p = await db.profile.get('me')
       const team = p?.activeTeamId ? await db.teams.get(p.activeTeamId) : undefined
       const players = team ? await db.players.where('teamId').equals(team.id).count() : 0
@@ -254,9 +258,9 @@ export default function Onboarding() {
     switch (step) {
       case 'lang': return [{ label: tm('fr')('ob.langName.fr'), value: 'fr' }, { label: tm('en')('ob.langName.en'), value: 'en' }]
       case 'role': return ROLES.map((r) => ({ label: t(`common:roles.${r}`), value: r }))
-      case 'team': return draft.club ? [{ label: `${draft.club}${draft.ageGroup ? ' ' + draft.ageGroup : ''}`, value: `${draft.club}${draft.ageGroup ? ' ' + draft.ageGroup : ''}` }] : []
-      case 'age': return AGE_GROUPS.filter((a) => a !== 'U7' && a !== 'U21').map((a) => ({ label: a, value: a }))
-      case 'childAge': return AGE_GROUPS.filter((a) => a !== 'Seniors' && a !== 'U21').map((a) => ({ label: a, value: a }))
+      case 'team': return draft.club ? [{ label: teamNameFor(draft.club, draft.ageGroup), value: teamNameFor(draft.club, draft.ageGroup) }] : []
+      case 'age': return LEVEL_CHOICES.map((a) => ({ label: levelLabel(tt, a), value: a }))
+      case 'childAge': return CHILD_LEVELS.map((a) => ({ label: a, value: a }))
       case 'format': return FORMATS.map((n) => ({ label: tt('ob.formatLabel', { n }), value: String(n) }))
       case 'players': return [{ label: tt('ob.later'), value: '__skip' }]
       case 'position': return [...POSITIONS.map((p) => ({ label: t(`common:positions.${p}`), value: p })), { label: tt('ob.skip'), value: '__skip' }]
@@ -389,7 +393,7 @@ export default function Onboarding() {
   )
 }
 
-function Shell({ children, onDemo, demoBusy }: { children: ReactNode; onDemo: () => void; demoBusy: boolean }) {
+function Shell({ children, onDemo, demoBusy }: { children: ReactNode; onDemo: (level: DemoLevel) => void; demoBusy: boolean }) {
   const { t } = useT('mola')
   return (
     <div className="min-h-[100dvh] bg-cream">
@@ -397,14 +401,51 @@ function Shell({ children, onDemo, demoBusy }: { children: ReactNode; onDemo: ()
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-2 px-4 sm:h-16 sm:px-6">
           <Link to="/" aria-label={BRAND.name}><Logo /></Link>
           <div className="flex items-center gap-2">
-            <button type="button" onClick={onDemo} disabled={demoBusy} className="btn-outline btn-sm min-h-[40px] whitespace-nowrap">
-              {demoBusy ? <LoaderCircle size={15} className="motion-safe:animate-spin" aria-hidden="true" /> : <PlayCircle size={15} className="hidden min-[400px]:block" aria-hidden="true" />}{t('ob.demo')}
-            </button>
+            <DemoMenu onDemo={onDemo} busy={demoBusy} label={t('ob.demo')} />
             <LangSwitch />
           </div>
         </div>
       </header>
       {children}
+    </div>
+  )
+}
+
+/** « Démo » opens a small menu: the professional club or the U13 academy. */
+function DemoMenu({ onDemo, busy, label }: { onDemo: (level: DemoLevel) => void; busy: boolean; label: string }) {
+  const { t } = useT('mola')
+  const [open, setOpen] = useState(false)
+  const box = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    if (!open) return
+    const off = (e: MouseEvent) => { if (box.current && !box.current.contains(e.target as Node)) setOpen(false) }
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    document.addEventListener('mousedown', off)
+    document.addEventListener('keydown', esc)
+    return () => { document.removeEventListener('mousedown', off); document.removeEventListener('keydown', esc) }
+  }, [open])
+  const choose = (level: DemoLevel) => { setOpen(false); onDemo(level) }
+  return (
+    <div ref={box} className="relative">
+      <button type="button" onClick={() => setOpen(!open)} disabled={busy} aria-expanded={open} aria-haspopup="menu" className="btn-outline btn-sm min-h-[40px] whitespace-nowrap">
+        {busy ? <LoaderCircle size={15} className="motion-safe:animate-spin" aria-hidden="true" /> : <PlayCircle size={15} className="hidden min-[400px]:block" aria-hidden="true" />}{label}
+        <ChevronDown size={14} className={cx('transition', open && 'rotate-180')} aria-hidden="true" />
+      </button>
+      {open && (
+        <div role="menu" aria-label={t('ob.demoMenu')} className="absolute right-0 top-[calc(100%+6px)] z-40 w-[min(19rem,calc(100vw-2rem))] overflow-hidden rounded-2xl border border-line bg-paper p-1.5 shadow-lift">
+          {(['pro', 'youth'] as const).map((lv) => (
+            <button key={lv} type="button" role="menuitem" onClick={() => choose(lv)} className="flex w-full items-start gap-3 rounded-xl px-3 py-2.5 text-left hover:bg-sand">
+              <span className={cx('mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl', lv === 'pro' ? 'bg-night-800 text-sun-300' : 'bg-forest-50 text-forest-600')}>
+                {lv === 'pro' ? <Trophy size={17} aria-hidden="true" /> : <GraduationCap size={17} aria-hidden="true" />}
+              </span>
+              <span className="min-w-0">
+                <span className="block text-[14.5px] font-semibold text-ink">{t(`ob.demos.${lv}.title`)}</span>
+                <span className="block text-[12.5px] leading-snug text-ink-muted">{t(`ob.demos.${lv}.body`)}</span>
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

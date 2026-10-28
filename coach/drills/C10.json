@@ -1,138 +1,322 @@
 {
-  "id": "C10",
-  "family": "technique",
-  "order": 10,
-  "ages": "U10+",
-  "players": { "min": 6, "max": 12, "fr": "6 à 12 joueurs et un gardien (circuit)", "en": "6 to 12 players and a goalkeeper (pattern)" },
-  "space": { "w": 32, "h": 24 },
-  "duration": { "fr": "3 x 5 min (une forme de une-deux par série), 1 min 30 de récupération", "en": "3 x 5 min (one type of one-two per set), 1 min 30 rest" },
-  "minutes": 18,
-  "md": ["MD-2", "MD-1", "youth"],
-  "intensity": "medium",
-  "intentions": ["finir", "progresser"],
-  "skills": ["passe", "appels", "controle", "communication"],
-  "pieces": ["le cœur"],
-  "fr": {
-    "title": "Le une-deux du Njangi",
-    "subtitle": "Trois une-deux en circuit, puis la frappe",
-    "objective": "Maîtriser les trois formes du une-deux, court, en profondeur et double, jusqu'à la frappe. Cette fiche apprend les gestes sans opposition ; la fiche G02 les met en jeu à 2 contre 1.",
-    "organisation": [
-      "Un but avec gardien ; un mannequin ou un plot haut à 20 m, un mur sur le côté, départ à 30 m.",
-      "Une forme par série : le une-deux court autour du mannequin, le une-deux en profondeur entre deux mannequins, le double une-deux avec deux murs.",
-      "Files de 3 joueurs au plus ; les murs changent toutes les 5 répétitions, et on alterne côté gauche et côté droit.",
-      "Peu de ballons : 6 à 8 suffisent, avec deux ramasseurs derrière le but qui les rendent en conduite.",
-      "Par forte chaleur, séries courtes et récupération à l'ombre ; le gardien boit à chaque changement de forme."
+ "id": "C10",
+ "family": "technique",
+ "order": 10,
+ "ages": "U10+",
+ "players": {
+  "min": 6,
+  "max": 12,
+  "fr": "6 à 12 joueurs et un gardien (circuit)",
+  "en": "6 to 12 players and a goalkeeper (pattern)"
+ },
+ "space": {
+  "w": 32,
+  "h": 24
+ },
+ "duration": {
+  "fr": "3 x 5 min (une forme de une-deux par série), 1 min 30 de récupération",
+  "en": "3 x 5 min (one type of one-two per set), 1 min 30 rest"
+ },
+ "minutes": 18,
+ "md": [
+  "MD-2",
+  "MD-1",
+  "youth"
+ ],
+ "intensity": "medium",
+ "intentions": [
+  "finir",
+  "progresser"
+ ],
+ "skills": [
+  "passe",
+  "appels",
+  "controle",
+  "communication"
+ ],
+ "pieces": [
+  "le cœur"
+ ],
+ "fr": {
+  "title": "Le circuit du une-deux",
+  "subtitle": "Trois une-deux en circuit, puis la frappe",
+  "objective": "Maîtriser les trois formes du une-deux, court, en profondeur et double, jusqu'à la frappe. Cette fiche apprend les gestes sans opposition ; la fiche G02 les met en jeu à 2 contre 1.",
+  "organisation": [
+   "Un but avec gardien ; un mannequin ou un plot haut à 20 m, un mur sur le côté, départ à 30 m.",
+   "Une forme par série : le une-deux court autour du mannequin, le une-deux en profondeur entre deux mannequins, le double une-deux avec deux murs.",
+   "Files de 3 joueurs au plus ; les murs changent toutes les 5 répétitions, et on alterne côté gauche et côté droit.",
+   "Peu de ballons : 6 à 8 suffisent, avec deux ramasseurs derrière le but qui les rendent en conduite.",
+   "Par forte chaleur, séries courtes et récupération à l'ombre ; le gardien boit à chaque changement de forme."
+  ],
+  "rules": [
+   "La passe au mur part après une conduite vers le mannequin : il faut l'avoir attiré.",
+   "Le mur joue en une touche, dans la course.",
+   "La frappe se joue en une ou deux touches après le retour.",
+   "But après un retour joué en une touche : 2 points ; autre but : 1 point."
+  ],
+  "coaching": [
+   "Conduis vers le mannequin comme vers un vrai défenseur : il doit s'arrêter sur toi.",
+   "Passe au mur à deux mètres du mannequin, ni trop tôt ni trop tard.",
+   "Repars tout de suite dans son dos : la course commence avec la passe.",
+   "Mur, regarde la course avant de recevoir et joue dans l'espace, pas dans les pieds.",
+   "En profondeur, le mur lève deux doigts : c'est le signal du départ."
+  ],
+  "progressions": [
+   "Mannequins remplacés par des défenseurs passifs, puis semi-actifs.",
+   "Une touche obligatoire pour la frappe.",
+   "Passer au jeu à 2 contre 1 de la fiche G02."
+  ],
+  "regressions": [
+   "Départ à 20 m du but, mur à 6 m du mannequin.",
+   "Deux touches pour le mur.",
+   "Une seule forme, le une-deux court, sur toute la séance."
+  ],
+  "measure": "Sur 10 répétitions par forme : retours du mur qui arrivent dans la course sans la ralentir, et frappes cadrées. Viser 7 frappes cadrées sur 10 au une-deux court.",
+  "story": "BriBri a trouvé le nom, Kaydoudou a trouvé le signal : deux doigts levés, et le une-deux du Njangi part en profondeur."
+ },
+ "en": {
+  "title": "The one-two circuit",
+  "subtitle": "Three one-twos in a pattern, then the shot",
+  "objective": "Master the three forms of the one-two, short, in behind and double, all the way to the shot. This drill teaches the moves without opposition; drill G02 puts them into a 2 v 1 game.",
+  "organisation": [
+   "A goal with a goalkeeper; a mannequin or tall marker 20 m out, a wall player to the side, start at 30 m.",
+   "One form per set: the short one-two around the mannequin, the one-two in behind between two mannequins, the double one-two with two wall players.",
+   "Queues of 3 players at most; wall players change every 5 reps, alternating left and right sides.",
+   "Few balls: 6 to 8 are enough, with two collectors behind the goal who dribble them back.",
+   "In strong heat, short sets and rest in the shade; the goalkeeper drinks at every change of form."
+  ],
+  "rules": [
+   "The pass to the wall comes after a dribble at the mannequin: you must have drawn it.",
+   "The wall plays first time, into the run.",
+   "The shot is taken in one or two touches after the return.",
+   "Goal after a first-time return: 2 points; any other goal: 1 point."
+  ],
+  "coaching": [
+   "Dribble at the mannequin as if it were a real defender: it must stop on you.",
+   "Pass to the wall two metres from the mannequin, not too early, not too late.",
+   "Go straight away, in behind it: the run starts with the pass.",
+   "Wall, check the run before you receive and play into space, not to feet.",
+   "In behind, the wall raises two fingers: that is the signal to go."
+  ],
+  "progressions": [
+   "Replace the mannequins with passive, then half-active defenders.",
+   "First-time shot only.",
+   "Move on to the 2 v 1 game of drill G02."
+  ],
+  "regressions": [
+   "Start 20 m from goal, wall 6 m from the mannequin.",
+   "Two touches for the wall.",
+   "One form only, the short one-two, for the whole session."
+  ],
+  "measure": "Out of 10 reps per form: returns from the wall that arrive in stride without slowing the run, and shots on target. Aim for 7 shots on target out of 10 on the short one-two.",
+  "story": "BriBri found the name, Kaydoudou found the signal: two fingers raised, and the Njangi one-two goes in behind."
+ },
+ "diagram": {
+  "view": "grid",
+  "w": 32,
+  "h": 24,
+  "zones": [
+   {
+    "x": 15.5,
+    "y": 0,
+    "w": 16.5,
+    "h": 24,
+    "tone": "soft",
+    "label": "surface"
+   }
+  ],
+  "goals": [
+   {
+    "x": 32,
+    "y": 12,
+    "side": "right",
+    "size": "full"
+   }
+  ],
+  "players": [
+   {
+    "id": "a",
+    "team": "a",
+    "x": 4,
+    "y": 14,
+    "label": "A"
+   },
+   {
+    "id": "m",
+    "team": "b",
+    "x": 14.5,
+    "y": 14
+   },
+   {
+    "id": "b",
+    "team": "a",
+    "x": 13.5,
+    "y": 20.5,
+    "label": "B"
+   },
+   {
+    "id": "gk",
+    "team": "gkb",
+    "x": 30.8,
+    "y": 12.6
+   }
+  ],
+  "ball": "a",
+  "arrows": [
+   {
+    "from": "a",
+    "to": [
+     9.5,
+     14
     ],
-    "rules": [
-      "La passe au mur part après une conduite vers le mannequin : il faut l'avoir attiré.",
-      "Le mur joue en une touche, dans la course.",
-      "La frappe se joue en une ou deux touches après le retour.",
-      "But après un retour joué en une touche : 2 points ; autre but : 1 point."
+    "kind": "dribble",
+    "n": 1
+   },
+   {
+    "from": [
+     9.5,
+     14
     ],
-    "coaching": [
-      "Conduis vers le mannequin comme vers un vrai défenseur : il doit s'arrêter sur toi.",
-      "Passe au mur à deux mètres du mannequin, ni trop tôt ni trop tard.",
-      "Repars tout de suite dans son dos : la course commence avec la passe.",
-      "Mur, regarde la course avant de recevoir et joue dans l'espace, pas dans les pieds.",
-      "En profondeur, le mur lève deux doigts : c'est le signal du départ."
+    "to": "b",
+    "kind": "pass",
+    "n": 2
+   },
+   {
+    "from": [
+     10,
+     12.8
     ],
-    "progressions": [
-      "Mannequins remplacés par des défenseurs passifs, puis semi-actifs.",
-      "Une touche obligatoire pour la frappe.",
-      "Passer au jeu à 2 contre 1 de la fiche G02."
+    "to": [
+     19.5,
+     10.8
     ],
-    "regressions": [
-      "Départ à 20 m du but, mur à 6 m du mannequin.",
-      "Deux touches pour le mur.",
-      "Une seule forme, le une-deux court, sur toute la séance."
+    "kind": "run",
+    "n": 3
+   },
+   {
+    "from": "b",
+    "to": [
+     19.5,
+     10.8
     ],
-    "measure": "Sur 10 répétitions par forme : retours du mur qui arrivent dans la course sans la ralentir, et frappes cadrées. Viser 7 frappes cadrées sur 10 au une-deux court.",
-    "story": "BriBri a trouvé le nom, Kaydoudou a trouvé le signal : deux doigts levés, et le une-deux du Njangi part en profondeur."
-  },
-  "en": {
-    "title": "The Njangi One-Two",
-    "subtitle": "Three one-twos in a pattern, then the shot",
-    "objective": "Master the three forms of the one-two, short, in behind and double, all the way to the shot. This drill teaches the moves without opposition; drill G02 puts them into a 2 v 1 game.",
-    "organisation": [
-      "A goal with a goalkeeper; a mannequin or tall marker 20 m out, a wall player to the side, start at 30 m.",
-      "One form per set: the short one-two around the mannequin, the one-two in behind between two mannequins, the double one-two with two wall players.",
-      "Queues of 3 players at most; wall players change every 5 reps, alternating left and right sides.",
-      "Few balls: 6 to 8 are enough, with two collectors behind the goal who dribble them back.",
-      "In strong heat, short sets and rest in the shade; the goalkeeper drinks at every change of form."
+    "kind": "pass",
+    "n": 4
+   },
+   {
+    "from": [
+     19.5,
+     10.8
     ],
-    "rules": [
-      "The pass to the wall comes after a dribble at the mannequin: you must have drawn it.",
-      "The wall plays first time, into the run.",
-      "The shot is taken in one or two touches after the return.",
-      "Goal after a first-time return: 2 points; any other goal: 1 point."
+    "to": [
+     31.8,
+     9.6
     ],
-    "coaching": [
-      "Dribble at the mannequin as if it were a real defender: it must stop on you.",
-      "Pass to the wall two metres from the mannequin, not too early, not too late.",
-      "Go straight away, in behind it: the run starts with the pass.",
-      "Wall, check the run before you receive and play into space, not to feet.",
-      "In behind, the wall raises two fingers: that is the signal to go."
+    "kind": "shot",
+    "n": 5
+   }
+  ]
+ },
+ "diagram2": {
+  "view": "grid",
+  "w": 32,
+  "h": 24,
+  "zones": [
+   {
+    "x": 15.5,
+    "y": 0,
+    "w": 16.5,
+    "h": 24,
+    "tone": "soft",
+    "label": "surface"
+   }
+  ],
+  "goals": [
+   {
+    "x": 32,
+    "y": 12,
+    "side": "right",
+    "size": "full"
+   }
+  ],
+  "players": [
+   {
+    "id": "a",
+    "team": "a",
+    "x": 5,
+    "y": 16,
+    "label": "A"
+   },
+   {
+    "id": "b",
+    "team": "a",
+    "x": 15.5,
+    "y": 11,
+    "label": "B"
+   },
+   {
+    "id": "m1",
+    "team": "b",
+    "x": 20.5,
+    "y": 7.5
+   },
+   {
+    "id": "m2",
+    "team": "b",
+    "x": 20.5,
+    "y": 15.5
+   },
+   {
+    "id": "gk",
+    "team": "gkb",
+    "x": 30.8,
+    "y": 12.6
+   }
+  ],
+  "ball": "a",
+  "arrows": [
+   {
+    "from": "a",
+    "to": "b",
+    "kind": "pass",
+    "n": 1
+   },
+   {
+    "from": "a",
+    "to": [
+     25,
+     13.2
     ],
-    "progressions": [
-      "Replace the mannequins with passive, then half-active defenders.",
-      "First-time shot only.",
-      "Move on to the 2 v 1 game of drill G02."
+    "kind": "run",
+    "n": 2
+   },
+   {
+    "from": "b",
+    "to": [
+     25,
+     13.2
     ],
-    "regressions": [
-      "Start 20 m from goal, wall 6 m from the mannequin.",
-      "Two touches for the wall.",
-      "One form only, the short one-two, for the whole session."
+    "kind": "pass",
+    "n": 3
+   },
+   {
+    "from": [
+     25,
+     13.2
     ],
-    "measure": "Out of 10 reps per form: returns from the wall that arrive in stride without slowing the run, and shots on target. Aim for 7 shots on target out of 10 on the short one-two.",
-    "story": "BriBri found the name, Kaydoudou found the signal: two fingers raised, and the Njangi one-two goes in behind."
-  },
-  "diagram": {
-    "view": "grid", "w": 32, "h": 24,
-    "zones": [
-      { "x": 15.5, "y": 0, "w": 16.5, "h": 24, "tone": "soft", "label": "surface" }
+    "to": [
+     31.8,
+     10.2
     ],
-    "goals": [
-      { "x": 32, "y": 12, "side": "right", "size": "full" }
-    ],
-    "players": [
-      { "id": "a", "team": "a", "x": 4, "y": 14, "label": "A" },
-      { "id": "m", "team": "b", "x": 14.5, "y": 14 },
-      { "id": "b", "team": "a", "x": 13.5, "y": 20.5, "label": "B" },
-      { "id": "gk", "team": "gkb", "x": 30.8, "y": 12.6 }
-    ],
-    "ball": "a",
-    "arrows": [
-      { "from": "a", "to": [9.5, 14], "kind": "dribble", "n": 1 },
-      { "from": [9.5, 14], "to": "b", "kind": "pass", "n": 2 },
-      { "from": [10, 13.1], "to": [19.5, 11.2], "kind": "run", "n": 3 },
-      { "from": "b", "to": [19.5, 11.2], "kind": "pass", "n": 4 },
-      { "from": [19.5, 11.2], "to": [31.8, 9.6], "kind": "shot", "n": 5 }
-    ]
-  },
-  "diagram2": {
-    "view": "grid", "w": 32, "h": 24,
-    "zones": [
-      { "x": 15.5, "y": 0, "w": 16.5, "h": 24, "tone": "soft", "label": "surface" }
-    ],
-    "goals": [
-      { "x": 32, "y": 12, "side": "right", "size": "full" }
-    ],
-    "players": [
-      { "id": "a", "team": "a", "x": 5, "y": 16, "label": "A" },
-      { "id": "b", "team": "a", "x": 15.5, "y": 11, "label": "B" },
-      { "id": "m1", "team": "b", "x": 20.5, "y": 7.5 },
-      { "id": "m2", "team": "b", "x": 20.5, "y": 15.5 },
-      { "id": "gk", "team": "gkb", "x": 30.8, "y": 12.6 }
-    ],
-    "ball": "a",
-    "arrows": [
-      { "from": "a", "to": "b", "kind": "pass", "n": 1 },
-      { "from": "a", "to": [25, 13.2], "kind": "run", "n": 2 },
-      { "from": "b", "to": [25, 13.2], "kind": "pass", "n": 3 },
-      { "from": [25, 13.2], "to": [31.8, 10.2], "kind": "shot", "n": 4 }
-    ],
-    "labels": [
-      { "x": 14.5, "y": 8.4, "text": "deux doigts levés" }
-    ]
-  }
+    "kind": "shot",
+    "n": 4
+   }
+  ],
+  "labels": [
+   {
+    "x": 14.5,
+    "y": 8.4,
+    "text": "deux doigts levés"
+   }
+  ]
+ }
 }

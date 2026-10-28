@@ -1,0 +1,375 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>17. Les systèmes avec et sans ballon | Le Code Njangi</title><meta name="description" content="Les principes avant les chiffres. Comment un système de départ devient un 3-2-5, un 2-3-5 ou un 3-1-6 avec le ballon, un 4-4-2, un 4-5-1 ou un 5-4-1 sans lui, comment les couloirs et les hauteurs sont occupés, ce que coûte la bascule, et quel système choisir selon l'âge et l'effectif."><meta property="og:image" content="/book/methode/img/cover.jpg"><meta name="theme-color" content="#FBF7EE"><link rel="icon" href="/favicon.svg"><style>@font-face{font-family:'Literata';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/literata-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/literata-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/literata-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:italic;font-weight:600;font-display:swap;src:url(../fonts/literata-latin-600-italic.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/fraunces-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/fraunces-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/fraunces-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/fraunces-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:600;font-display:swap;src:url(../fonts/fraunces-latin-600-italic.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/inter-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/inter-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/inter-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(../fonts/inter-latin-800-normal.woff2) format('woff2')}
+:root{--ink:#1D2621;--soft:#38423C;--muted:#66706A;--cream:#FBF7EE;--paper:#FFFDF8;--sand:#F1EADB;--line:#E6DDCB;--forest:#1F4D3A;--terra:#C5762F;--sun:#E3A92B;--clay:#B8432F;--fs:17px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--cream);color:var(--ink);font-family:Literata,Georgia,serif;font-size:var(--fs);line-height:1.72}
+a{color:var(--forest)}img{max-width:100%;display:block}
+.bar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(251,247,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);font-family:Inter,system-ui,sans-serif;font-size:14px}
+.bar .back{font-weight:700;text-decoration:none;color:var(--forest)}.bar-title{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:16px;text-align:center}
+.bar button{font:600 13px Inter,system-ui,sans-serif;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;color:var(--ink);cursor:pointer}
+.progress{position:sticky;top:49px;z-index:19;height:3px;background:transparent}.progress span{display:block;height:3px;width:0;background:linear-gradient(90deg,var(--forest),var(--sun),var(--clay))}
+main{max-width:720px;margin:0 auto;padding:0 18px 80px}
+.cover-block{text-align:center;padding:28px 0 8px}.cover-block .cover{display:block;width:min(400px,82%);height:auto;margin:0 auto 22px;border-radius:12px;box-shadow:0 22px 60px rgba(29,38,33,.32)}.cover-block .heroes{font-family:Inter,sans-serif;font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:11.5px;color:#B8862B;margin:10px 0 0}picture{display:contents}figure.illus img,.part-opener img{height:auto}
+.cover-block h1{font-family:Fraunces,Georgia,serif;font-size:40px;line-height:1.05;margin:6px 0 4px}.subtitle{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:21px;margin:0;color:var(--soft)}.author{font-family:Inter,sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--terra);margin:14px 0}
+.dedication{font-style:italic;color:var(--soft);margin:22px auto;max-width:420px}
+.resume{display:inline-block;margin-top:6px;background:var(--forest);color:var(--cream);font:700 15px Inter,sans-serif;padding:12px 20px;border-radius:14px;text-decoration:none}
+.toc{margin:30px 0;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:18px}.toc h2{font-family:Fraunces,Georgia,serif;margin:0 0 8px}
+.toc ol,.drawer ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:14px 0 6px;font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
+.toc-part li a{display:block;padding:6px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:16px}.toc-part li a b{color:var(--forest);font-family:Inter,sans-serif;font-size:13px;margin-right:6px}
+.part-opener{margin:56px -18px 10px;position:relative;overflow:hidden;border-radius:0;background:var(--forest);color:var(--cream);min-height:220px;display:flex;align-items:flex-end}
+.part-opener img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}.part-text{position:relative;padding:26px 22px}.part-opener .kicker{color:var(--sun)}
+.part-opener h2{font-family:Fraunces,Georgia,serif;font-size:42px;margin:2px 0;line-height:1}.part-opener p{margin:0;font-style:italic;opacity:.92}
+.kicker{font:700 11px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+.chapter,.part-opener,.toc,#fiches,.drill{scroll-margin-top:64px}.chapter{padding-top:42px}.chapter header{text-align:center;margin-bottom:18px}.chapter h2{font-family:Fraunces,Georgia,serif;font-size:31px;line-height:1.15;margin:6px 0 0}
+.illus{margin:18px -18px 26px}.illus img{width:100%;height:auto}.illus.wide{margin:24px -18px}.illus figcaption{font:13px Inter,sans-serif;color:var(--muted);text-align:center;margin-top:8px}
+@media(min-width:760px){.illus,.illus.wide{margin-left:-40px;margin-right:-40px}.illus img{border-radius:16px}.part-opener{margin-left:-40px;margin-right:-40px;border-radius:18px}}
+.story p{margin:0 0 .95em;text-align:left;hyphens:auto}.story hr{border:0;text-align:center;margin:1.6em 0}.story hr:after{content:'· · ·';letter-spacing:.6em;color:var(--terra)}
+.story h2{font-family:Fraunces,Georgia,serif;font-size:25px;margin:1.6em 0 .4em}.story h3{font-family:Fraunces,Georgia,serif;font-size:20px;margin:1.4em 0 .3em}
+.story ul,.story ol{padding-left:1.3em}.story table{width:100%;border-collapse:collapse;font:14px/1.45 Inter,sans-serif;margin:1em 0;display:block;overflow-x:auto}.story th,.story td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}.story th{font-weight:700;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+figure.diagram{margin:18px 0}figure.diagram svg{width:100%;height:auto;display:block;border-radius:12px}
+.end{margin:60px 0 0;text-align:center;font-style:italic;color:var(--soft)}.end a{font:700 14px Inter,sans-serif;font-style:normal}
+.drawer{position:fixed;inset:0;z-index:50;background:rgba(10,16,13,.5)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(420px,92vw);background:var(--paper);overflow-y:auto;padding:18px}.drawer button{font:600 13px Inter,sans-serif;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;margin-bottom:8px}
+.drawer .toc-part li a{font-size:15px}
+
+body.methode{font-family:Literata,Georgia,serif}
+.methode-cover .m-cover{margin:10px auto 20px;max-width:420px;aspect-ratio:7/10;border-radius:16px;padding:28px 24px;text-align:left;color:#FBF7EE;background:linear-gradient(160deg,#1F4D3A 0%,#173B2C 60%,#0B2116 100%);box-shadow:0 18px 50px rgba(29,38,33,.28);position:relative;overflow:hidden}
+.m-kicker{font:700 12px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#E3A92B}.m-title{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:44px;line-height:1;margin:14px 0 8px}.m-sub{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:20px;color:#F3D9BC}.m-line{font:500 13px Inter,sans-serif;opacity:.85;margin-top:10px}
+.m-cover ul{position:absolute;left:24px;bottom:22px;margin:0;padding:0;list-style:none;font:700 13px Inter,sans-serif}.m-cover li:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:#E3A92B;margin-right:8px;vertical-align:middle}
+.part-opener.methode{min-height:150px;background:linear-gradient(120deg,#1F4D3A,#2F6B52)}
+.callout{margin:22px 0;padding:14px 16px;border-radius:14px;border-left:5px solid var(--forest);background:#EEF4EF;font-size:.95em}.callout p{margin:.3em 0}
+.callout-kicker{font:800 10.5px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--forest)}.callout-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.08em;margin:2px 0 4px}
+.callout-afrique{border-color:var(--terra);background:#FBF0E3}.callout-afrique .callout-kicker{color:#A86020}.callout-analyste{border-color:#3D4F6B;background:#EEF1F6}.callout-analyste .callout-kicker{color:#3D4F6B}
+.callout-jeunes{border-color:var(--sun);background:#FDF6E3}.callout-jeunes .callout-kicker{color:#8F660C}.callout-attention{border-color:var(--clay);background:#FBEAE6}.callout-attention .callout-kicker{color:#9A3524}
+.drill-ref{font:700 .82em Inter,sans-serif;background:var(--sand);padding:1px 6px;border-radius:6px;text-decoration:none}
+.drills-grid{padding-top:30px}.fam-title{font-family:Fraunces,Georgia,serif;font-size:28px;border-bottom:3px solid var(--fam);padding-bottom:6px;margin:44px 0 8px}
+.drill{margin:22px 0;padding:18px;border:1px solid var(--line);border-radius:18px;background:var(--paper)}.drill-head{display:flex;gap:14px;align-items:flex-start}
+.drill-code{font:800 18px Inter,sans-serif;color:#fff;background:var(--fam);border-radius:12px;padding:10px 10px;min-width:58px;text-align:center}.drill-family{font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--fam)}
+.drill h3{font-family:Fraunces,Georgia,serif;font-size:24px;margin:2px 0}.drill-sub{margin:0;color:var(--muted);font-style:italic}
+.drill-meta{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;font:12.5px Inter,sans-serif}.drill-meta span{background:var(--sand);border-radius:999px;padding:4px 10px}.drill-meta b{color:var(--muted);font-weight:600;margin-right:4px}
+.drill-objective{font-weight:600}.drill-cols h4{font:800 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--fam);margin:14px 0 4px}.drill-cols ul{margin:0;padding-left:1.2em;font-size:.95em}
+@media(min-width:700px){.drill-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}}
+.drill-measure{background:#EEF4EF;border-radius:10px;padding:10px 12px;font-size:.95em}.drill-story{font-style:italic;color:var(--terra);font-size:.95em}.diagram2 figcaption{font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+
+.ch-title{font-family:Fraunces,Georgia,serif;font-size:32px;line-height:1.12;margin:6px 0 0}
+.start{display:flex;flex-direction:column;align-items:center;gap:10px;margin:18px 0 6px}
+.start a{display:flex;flex-direction:column;align-items:center;min-width:min(340px,90%);padding:13px 20px;border-radius:14px;text-decoration:none;font:700 15px Inter,sans-serif}
+.start .resume{background:var(--forest);color:var(--cream)}.start .resume small{font:600 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;opacity:.85}.start .resume b{font-family:Fraunces,Georgia,serif;font-size:17px;margin-top:2px}
+.start .begin{background:var(--paper);color:var(--forest);border:1.5px solid var(--forest)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:46px 0 10px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:16px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:84px}
+.pager a:hover{border-color:var(--forest)}.pager .next{text-align:right;background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.pager small{font:700 11px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;opacity:.8}.pager b{font-family:Fraunces,Georgia,serif;font-size:16px;line-height:1.25;font-weight:600}
+.drawer-home{display:block;margin:4px 0 10px;font:700 14px Inter,sans-serif;text-decoration:none}
+.drawer a.current{background:var(--sand);border-radius:8px;padding-left:8px}
+.part-opener{margin-top:18px}
+.lead{font-size:1.05em;color:var(--soft)}
+.fam-grid{display:grid;gap:14px;margin-top:18px}@media(min-width:760px){.fam-grid{grid-template-columns:1fr 1fr}}
+.fam-card{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--fam);border-radius:16px;padding:16px 18px}
+.fam-card h2{font-family:Fraunces,Georgia,serif;font-size:21px;margin:0 0 8px}.fam-card h2 a{color:var(--fam);text-decoration:none}
+.fam-card ol{list-style:none;margin:0;padding:0}.fam-card li a{display:block;padding:5px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px}.fam-card li a b{font:700 12px Inter,sans-serif;color:var(--fam);margin-right:6px}
+h1.fam-title{font-family:Fraunces,Georgia,serif;font-size:30px;margin:28px 0 10px;color:var(--fam)}
+</style></head><body class="methode paged" data-page="ch-17">
+<div class="bar"><a class="back" href="./">&#8592; Sommaire</a><span class="bar-title">Le Code Njangi</span><button id="toc-btn" type="button" aria-label="Chapitres">Chapitres</button><button id="aa" type="button" aria-label="Taille du texte">Aa</button></div><div class="progress"><span id="prog"></span></div>
+<main><section class="part-opener methode"><div class="part-text"><div class="kicker">Partie 4</div><h2>La tactique Njangi</h2></div></section><article class="chapter" id="ch-17"><header><div class="kicker">Chapitre 17</div><h1 class="ch-title">Les systèmes avec et sans ballon</h1></header><div class="story"><p>Mi-temps d&#39;un match de championnat U19, dans un vestiaire de Yaoundé. Sur le tableau blanc, l&#39;adjoint a écrit « 4‑3-3 », le système de la feuille de match. L&#39;analyste s&#39;approche, efface le chiffre et colle trois photos tirées de la vidéo de la première période. Sur la première, nous avons le ballon dans le camp adverse : trois joueurs derrière, deux au milieu, cinq devant. Sur la deuxième, l&#39;adversaire relance et nous défendons à quatre, quatre et deux. Sur la troisième, prise deux secondes après une perte, l&#39;équipe n&#39;a plus de forme du tout : sept joueurs devant le ballon, trois derrière, et quarante mètres vides entre les deux.</p>
+<p>« Alors, quel est notre système ? » demande l&#39;entraîneur. Personne ne répond, parce que la vraie réponse dérange : nous en avons deux, et nous ne savons pas encore passer de l&#39;un à l&#39;autre.</p>
+<p>Ce chapitre ouvre la partie consacrée à la tactique du Njangi. Il ne propose pas de système miracle : il explique comment lire un système, comment le transformer avec et sans le ballon, et comment choisir celui qui convient à ses joueurs. Les chapitres 18 à 23 détaillent ensuite chaque phase, de la sortie de balle au plan de match.</p>
+<h2>Les principes avant les chiffres</h2>
+<p>Le <strong>système de départ</strong> est l&#39;adresse de chaque joueur au coup d&#39;envoi : 4‑3-3, 4‑2-3‑1, 3‑4-3. La <strong>structure</strong> est la forme réelle que prend l&#39;équipe dans un moment du jeu. Le Njangi en distingue deux, la <strong>structure avec ballon</strong> et la <strong>structure sans ballon</strong>, et il donne un nom au passage de l&#39;une à l&#39;autre : la <strong>bascule</strong>. Une équipe inscrite en 4‑3-3 sur la feuille peut attaquer en 3‑2-5 et défendre en 4‑4-2 dans le même match. C&#39;est même le cas le plus fréquent.</p>
+<p>Les chiffres ne disent donc presque rien. Le Njangi pose quatre questions à n&#39;importe quel système, le sien comme celui de l&#39;adversaire.</p>
+<ol>
+<li><strong>Avec le ballon</strong>, occupe-t-il les cinq couloirs sur la ligne la plus haute, et offre-t-il un joueur libre derrière la première ligne adverse ?</li>
+<li><strong>À la perte</strong>, laisse-t-il en place une défense de repos suffisante, le plus souvent 3 + 2 ?</li>
+<li><strong>Sans ballon</strong>, ferme-t-il l&#39;axe et tient-il dans une trentaine de mètres de profondeur ?</li>
+<li><strong>Entre les deux</strong>, combien coûte la bascule : combien de joueurs doivent courir, et sur quelle distance, pour passer d&#39;une forme à l&#39;autre ?</li>
+</ol>
+<aside class="callout callout-njangi"><div class="callout-kicker">Principe Njangi</div><div class="callout-title">Trois photos, une équipe</div><p>Un système se juge sur trois photos : avec le ballon, sans le ballon, et deux secondes après la perte.
+Si la troisième est mauvaise, les deux premières ne servent à rien.</p>
+</aside>
+
+<p>La devise s&#39;applique ici mot pour mot. Le ballon doit voyager, mais il doit savoir où il va : une structure, ce sont ses adresses. Cinq joueurs sur la ligne haute, un homme libre derrière la première ligne, une défense de repos derrière le ballon. Sans adresses, la caisse tourne en rond.</p>
+<h2>Avec le ballon : les structures Njangi</h2>
+<p>Quatre structures couvrent presque tous les besoins d&#39;une équipe Njangi. Elles naissent de trois systèmes de départ.</p>
+<h3>Du 4‑3-3 au 3‑2-5 : la référence</h3>
+<p>C&#39;est la structure décrite au chapitre 6. Un latéral reste bas et forme une ligne de trois avec les centraux relanceurs ; l&#39;autre entre à côté du pivot. Devant, les ailiers de largeur tiennent les couloirs extérieurs, les intérieurs les demi-espaces, l&#39;attaquant point d&#39;appui l&#39;axe. Elle est <strong>asymétrique</strong>, et c&#39;est sa force : le latéral resté bas est déjà à sa place au moment de la perte, et le latéral intérieur est déjà au centre pour Reprendre.</p>
+<p>On laisse bas le latéral du côté où l&#39;adversaire garde son contre-attaquant le plus dangereux, et on fait rentrer celui qui sait le mieux jouer dos au jeu et défendre l&#39;axe à la perte.</p>
+<h3>Du 4‑3-3 au 2‑3-5 : deux façons de remplir la même photo</h3>
+<p>Le 2‑3-5 se construit de deux manières. Dans le <strong>2‑3-5 intérieur</strong>, les deux latéraux entrent à côté du pivot et les ailiers gardent la largeur : l&#39;axe est très bien protégé à la perte, mais les deux centraux défendent seuls de grands espaces sur les côtés. Dans le <strong>2‑3-5 extérieur</strong>, ce sont les latéraux qui donnent la largeur, très haut, pendant que les ailiers rentrent dans les demi-espaces et que les intérieurs descendent à côté du pivot.</p>
+<figure class="diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 411.39" width="620" height="411.39" role="img" font-family="Inter, 'Helvetica Neue', Arial, sans-serif"><defs>
+<marker id="ds3fyhf-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1D2621"/></marker>
+<marker id="ds3fyhf-aha" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4D3A"/></marker>
+<marker id="ds3fyhf-ahb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#B8432F"/></marker>
+<marker id="ds3fyhf-ahs" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C5762F"/></marker>
+<pattern id="ds3fyhf-turf" width="78.93" height="10" patternUnits="userSpaceOnUse"><rect width="100%" height="10" fill="#EDF2E3"/><rect width="50%" height="10" fill="#E5ECD9"/></pattern>
+</defs><rect width="620" height="411.39" fill="#FBF7EE" rx="10"/><g transform="translate(14,14)"><rect x="0" y="0" width="592" height="383.39" fill="url(#ds3fyhf-turf)"/><g stroke="#2E6B4A" stroke-width="1.5" fill="none" stroke-linejoin="round"><rect x="0" y="0" width="592" height="383.39" fill="none"/><line x1="296" y1="0" x2="296" y2="383.39"/><circle cx="296" cy="191.7" r="51.59" fill="none"/><circle cx="296" cy="191.7" r="1.97" fill="#2E6B4A" stroke="none"/><rect x="0" y="78.03" width="93.03" height="227.33" fill="none"/><rect x="0" y="140.05" width="31.01" height="103.29" fill="none"/><circle cx="62.02" cy="191.7" r="1.97" fill="#2E6B4A" stroke="none"/><path d="M 93.03 150.47 A 51.59 51.59 0 0 1 93.03 232.92" fill="none"/><rect x="-9.02" y="171.06" width="9.02" height="41.27" fill="#FBF7EE" stroke-width="2"/><rect x="498.97" y="78.03" width="93.03" height="227.33" fill="none"/><rect x="560.99" y="140.05" width="31.01" height="103.29" fill="none"/><circle cx="529.98" cy="191.7" r="1.97" fill="#2E6B4A" stroke="none"/><path d="M 498.97 150.47 A 51.59 51.59 0 0 0 498.97 232.92" fill="none"/><rect x="592" y="171.06" width="9.02" height="41.27" fill="#FBF7EE" stroke-width="2"/></g><line x1="225.52" y1="45.1" x2="421.18" y2="29.24" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#ds3fyhf-aha)"/><line x1="225.52" y1="338.29" x2="421.18" y2="354.15" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#ds3fyhf-aha)"/><line x1="355.2" y1="50.74" x2="397.25" y2="97.46" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#ds3fyhf-aha)"/><line x1="355.2" y1="332.65" x2="397.25" y2="285.93" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#ds3fyhf-aha)"/><g><circle cx="45.1" cy="193.3" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="45.1" cy="191.7" r="9" fill="#3D4F6B" stroke="#FFFFFF" stroke-width="2"/><text x="45.1" y="194.77" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">1</text></g><g><circle cx="146.59" cy="125.64" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="146.59" cy="124.04" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="146.59" y="127.12" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">4</text></g><g><circle cx="146.59" cy="260.95" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="146.59" cy="259.35" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="146.59" y="262.43" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">5</text></g><g><circle cx="236.8" cy="131.28" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="236.8" cy="129.68" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="236.8" y="132.75" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">10</text></g><g><circle cx="219.89" cy="193.3" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="219.89" cy="191.7" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="219.89" y="194.77" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">6</text></g><g><circle cx="236.8" cy="255.31" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="236.8" cy="253.71" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="236.8" y="256.79" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">8</text></g><g><circle cx="434.13" cy="29.79" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="434.13" cy="28.19" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="434.13" y="31.27" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">3</text></g><g><circle cx="405.94" cy="108.72" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="405.94" cy="107.12" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="405.94" y="110.2" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">11</text></g><g><circle cx="451.05" cy="193.3" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="451.05" cy="191.7" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="451.05" y="194.77" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">9</text></g><g><circle cx="405.94" cy="277.87" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="405.94" cy="276.27" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="405.94" y="279.34" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">7</text></g><g><circle cx="434.13" cy="356.8" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="434.13" cy="355.2" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="434.13" y="358.28" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">2</text></g><g><circle cx="490.51" cy="80.53" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="490.51" cy="78.93" r="9" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="496.15" cy="159.47" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="496.15" cy="157.87" r="9" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="496.15" cy="227.12" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="496.15" cy="225.52" r="9" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="490.51" cy="306.06" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="490.51" cy="304.46" r="9" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="227.54" cy="184.05" r="4.5" fill="#FFFFFF" stroke="#1D2621" stroke-width="1.4"/><path d="M 225.51 183.6 l 2.03 -1.57 l 2.03 1.58 l -0.76 2.48 h -2.52 z" fill="#1D2621"/></g><g><circle cx="322.54" cy="27.21" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="322.54" y="30.81" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">1</text></g><g><circle cx="324.16" cy="336.25" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="324.16" y="339.85" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">1</text></g><g><circle cx="383.66" cy="67.41" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="383.66" y="71.01" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">2</text></g><g><circle cx="368.79" cy="302.6" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="368.79" y="306.2" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">2</text></g><text x="146.59" y="374.93" text-anchor="middle" font-size="12" font-weight="700" fill="#1D2621" stroke="#FBF7EE" stroke-width="4" paint-order="stroke" stroke-linejoin="round">ligne de 2</text><text x="231.16" y="374.93" text-anchor="middle" font-size="12" font-weight="700" fill="#1D2621" stroke="#FBF7EE" stroke-width="4" paint-order="stroke" stroke-linejoin="round">ligne de 3</text><text x="338.29" y="374.93" text-anchor="middle" font-size="12" font-weight="700" fill="#1D2621" stroke="#FBF7EE" stroke-width="4" paint-order="stroke" stroke-linejoin="round">ligne de 5</text></g></svg></figure>
+<p>Dans ce 2‑3-5 extérieur, les latéraux montent dans les couloirs extérieurs (1), les ailiers rentrent dans les demi-espaces (2), les intérieurs encadrent le pivot : cinq attaquants contre quatre défenseurs. Il convient aux latéraux endurants et aux ailiers qui aiment rentrer pour frapper, un gaucher à droite, un droitier à gauche. Son prix : à la perte, les deux latéraux sont à cinquante mètres de leur zone. C&#39;est la bascule la plus chère, réservée aux équipes qui ont les jambes pour la payer.</p>
+<h3>Du 4‑2-3‑1 au 3‑1-6 dans le dernier tiers</h3>
+<p>Le 4‑2-3‑1 part avec deux milieux devant la défense, le pivot (6) et un intérieur (8), un meneur (10) derrière l&#39;attaquant point d&#39;appui et deux ailiers. Dans le dernier tiers, contre un bloc bas, il peut devenir un <strong>3‑1-6</strong> : le latéral droit reste avec les centraux, le pivot reste seul devant eux, et six joueurs attaquent la dernière ligne adverse. Le latéral gauche monte dans le couloir extérieur, l&#39;ailier gauche rentre dans le demi-espace, le 10 occupe l&#39;autre demi-espace, l&#39;ailier droit garde la largeur, et le 8 arrive en retard à l&#39;entrée de la surface, derrière l&#39;attaquant point d&#39;appui.</p>
+<figure class="diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 794.78" width="620" height="794.78" role="img" font-family="Inter, 'Helvetica Neue', Arial, sans-serif"><defs>
+<marker id="dv7sbfd-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1D2621"/></marker>
+<marker id="dv7sbfd-aha" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4D3A"/></marker>
+<marker id="dv7sbfd-ahb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#B8432F"/></marker>
+<marker id="dv7sbfd-ahs" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C5762F"/></marker>
+<pattern id="dv7sbfd-turf" width="157.87" height="10" patternUnits="userSpaceOnUse"><rect width="100%" height="10" fill="#EDF2E3"/><rect width="50%" height="10" fill="#E5ECD9"/></pattern>
+</defs><rect width="620" height="794.78" fill="#FBF7EE" rx="10"/><g transform="translate(14,14)"><rect x="0" y="0" width="592" height="766.78" fill="url(#dv7sbfd-turf)"/><rect x="0" y="135.31" width="225.52" height="496.15" fill="rgba(31,77,58,0.13)" rx="3"/><g stroke="#2E6B4A" stroke-width="1.5" fill="none" stroke-linejoin="round"><rect x="0" y="0" width="592" height="766.78" fill="none"/><path d="M 0 280.21 A 103.18 103.18 0 0 1 0 486.57" fill="none"/><rect x="405.94" y="156.06" width="186.06" height="454.66" fill="none"/><rect x="529.98" y="280.1" width="62.02" height="206.58" fill="none"/><circle cx="467.96" cy="383.39" r="3.95" fill="#2E6B4A" stroke="none"/><path d="M 405.94 300.93 A 103.18 103.18 0 0 0 405.94 465.85" fill="none"/><rect x="592" y="342.12" width="18.04" height="82.54" fill="#FBF7EE" stroke-width="2"/></g><text x="6" y="149.31" font-size="11" font-weight="700" letter-spacing="0.6" fill="#2E6B4A" style="text-transform:uppercase">3 + 1</text><line x1="270.63" y1="90.21" x2="432.61" y2="49.71" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#dv7sbfd-aha)"/><line x1="248.08" y1="518.7" x2="389.96" y2="427.49" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#dv7sbfd-aha)"/><g><circle cx="45.1" cy="204.57" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="45.1" cy="202.97" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="45.1" y="208.1" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">4</text></g><g><circle cx="33.83" cy="384.99" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="33.83" cy="383.39" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="33.83" y="388.52" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">5</text></g><g><circle cx="45.1" cy="565.41" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="45.1" cy="563.81" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="45.1" y="568.94" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">2</text></g><g><circle cx="169.14" cy="418.82" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="169.14" cy="417.22" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="169.14" y="422.35" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">6</text></g><g><circle cx="451.05" cy="46.7" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="451.05" cy="45.1" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="451.05" y="50.23" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">3</text></g><g><circle cx="462.32" cy="182.02" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="462.32" cy="180.42" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="462.32" y="185.55" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">11</text></g><g><circle cx="507.43" cy="317.33" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="507.43" cy="315.73" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="507.43" y="320.86" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">9</text></g><g><circle cx="405.94" cy="418.82" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="405.94" cy="417.22" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="405.94" y="422.35" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">8</text></g><g><circle cx="462.32" cy="587.96" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="462.32" cy="586.36" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="462.32" y="591.49" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">10</text></g><g><circle cx="451.05" cy="723.28" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="451.05" cy="721.68" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="451.05" y="726.81" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">7</text></g><g><circle cx="124.04" cy="294.78" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="124.04" cy="293.18" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="349.56" cy="136.91" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="349.56" cy="135.31" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="349.56" cy="294.78" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="349.56" cy="293.18" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="349.56" cy="497.75" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="349.56" cy="496.15" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="349.56" cy="644.34" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="349.56" cy="642.74" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="501.79" cy="103.09" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="501.79" cy="101.49" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="501.79" cy="238.4" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="501.79" cy="236.8" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="501.79" cy="384.99" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="501.79" cy="383.39" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="501.79" cy="520.3" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="501.79" cy="518.7" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="501.79" cy="655.62" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="501.79" cy="654.02" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="575.09" cy="384.99" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="575.09" cy="383.39" r="15" fill="#6B4A7A" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="181.89" cy="404.47" r="6.3" fill="#FFFFFF" stroke="#1D2621" stroke-width="1.4"/><path d="M 179.06 403.84 l 2.84 -2.2 l 2.84 2.2 l -1.07 3.47 h -3.53 z" fill="#1D2621"/></g><g><circle cx="349.2" cy="60.26" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="349.2" y="63.86" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">1</text></g><g><circle cx="313.61" cy="464.69" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="313.61" y="468.29" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">2</text></g><text x="270.63" y="749.87" text-anchor="middle" font-size="12" font-weight="700" fill="#1D2621" stroke="#FBF7EE" stroke-width="4" paint-order="stroke" stroke-linejoin="round">six contre cinq</text></g></svg></figure>
+<p>Six attaquants contre cinq défenseurs : chacun est occupé, et il reste un homme libre. Mais la défense de repos n&#39;est plus qu&#39;un 3 + 1, qui exige un pivot qui lit le jeu avant tout le monde et des centraux rapides. Le Njangi réserve donc le 3‑1-6 aux blocs très bas et aux fins de match où il faut marquer (chapitres 20 et 23).</p>
+<h3>Le 3‑4-3 : une structure déjà prête</h3>
+<p>Le 3‑4-3 aligne trois centraux, deux milieux, deux <strong>pistons</strong> (des latéraux qui occupent seuls tout un couloir) et trois attaquants, dont deux dans les demi-espaces. Avec le ballon, il est déjà presque un 3‑2-5 : les pistons montent, et c&#39;est tout. Peu de rotations, donc peu de séances pour l&#39;installer. En contrepartie, les centraux latéraux doivent savoir conduire, et les pistons font le travail de deux joueurs : la largeur avec le ballon, la ligne de cinq sans lui. Sous la chaleur, c&#39;est le poste le plus exposé du terrain.</p>
+<table>
+<thead>
+<tr>
+<th>Structure avec ballon</th>
+<th>Système de départ</th>
+<th>Qui donne la largeur</th>
+<th>Défense de repos</th>
+<th>Coût de la bascule</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>3‑2-5 asymétrique</td>
+<td>4‑3-3</td>
+<td>les ailiers</td>
+<td>3 + 2</td>
+<td>faible</td>
+</tr>
+<tr>
+<td>2‑3-5 intérieur</td>
+<td>4‑3-3</td>
+<td>les ailiers</td>
+<td>2 + 3</td>
+<td>moyen</td>
+</tr>
+<tr>
+<td>2‑3-5 extérieur</td>
+<td>4‑3-3</td>
+<td>les latéraux</td>
+<td>2 + 3</td>
+<td>élevé</td>
+</tr>
+<tr>
+<td>3‑1-6</td>
+<td>4‑2-3‑1</td>
+<td>un latéral et un ailier</td>
+<td>3 + 1</td>
+<td>élevé</td>
+</tr>
+<tr>
+<td>3‑2-5 du 3‑4-3</td>
+<td>3‑4-3</td>
+<td>les pistons</td>
+<td>3 + 2</td>
+<td>faible, sauf pour les pistons</td>
+</tr>
+</tbody></table>
+<h2>Occuper les couloirs et les hauteurs</h2>
+<p>Quelle que soit la structure, les règles d&#39;occupation restent les mêmes. Sur la ligne la plus haute, un joueur par couloir. Derrière, les quatre hauteurs du chapitre 6 : devant la première ligne adverse (les relanceurs), entre la première et la deuxième (le pivot, le latéral intérieur), entre les lignes (les intérieurs) et dans la profondeur (l&#39;attaquant et les appels des ailiers).</p>
+<p>La règle la plus utile au quotidien est celle du <strong>trio de côté</strong>. De chaque côté, le latéral, l&#39;intérieur et l&#39;ailier forment un trio. Dans ce trio, un joueur donne la largeur, un joueur occupe le demi-espace, un joueur soutient derrière. Jamais deux dans le même couloir sur la même ligne, jamais les trois à la même hauteur. Le trio peut tourner, les rôles peuvent changer de propriétaire, mais les trois places restent occupées.</p>
+<table>
+<thead>
+<tr>
+<th>Si l&#39;ailier…</th>
+<th>alors le latéral…</th>
+<th>et l&#39;intérieur…</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>reste collé à la ligne</td>
+<td>rentre à côté du pivot ou reste bas</td>
+<td>occupe le demi-espace, entre les lignes</td>
+</tr>
+<tr>
+<td>rentre dans le demi-espace</td>
+<td>monte dans le couloir extérieur</td>
+<td>soutient derrière, ou attaque la profondeur</td>
+</tr>
+<tr>
+<td>décroche pour recevoir</td>
+<td>reste bas, en soutien</td>
+<td>attaque l&#39;espace laissé dans le dos</td>
+</tr>
+</tbody></table>
+<figure class="diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 794.78" width="620" height="794.78" role="img" font-family="Inter, 'Helvetica Neue', Arial, sans-serif"><defs>
+<marker id="dkl5vvw-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1D2621"/></marker>
+<marker id="dkl5vvw-aha" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4D3A"/></marker>
+<marker id="dkl5vvw-ahb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#B8432F"/></marker>
+<marker id="dkl5vvw-ahs" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C5762F"/></marker>
+<pattern id="dkl5vvw-turf" width="157.87" height="10" patternUnits="userSpaceOnUse"><rect width="100%" height="10" fill="#EDF2E3"/><rect width="50%" height="10" fill="#E5ECD9"/></pattern>
+</defs><rect width="620" height="794.78" fill="#FBF7EE" rx="10"/><g transform="translate(14,14)"><rect x="0" y="0" width="592" height="766.78" fill="url(#dkl5vvw-turf)"/><g stroke="#2E6B4A" stroke-width="1.5" fill="none" stroke-linejoin="round"><rect x="0" y="0" width="592" height="766.78" fill="none"/><path d="M 0 280.21 A 103.18 103.18 0 0 1 0 486.57" fill="none"/><rect x="405.94" y="156.06" width="186.06" height="454.66" fill="none"/><rect x="529.98" y="280.1" width="62.02" height="206.58" fill="none"/><circle cx="467.96" cy="383.39" r="3.95" fill="#2E6B4A" stroke="none"/><path d="M 405.94 300.93 A 103.18 103.18 0 0 0 405.94 465.85" fill="none"/><rect x="592" y="342.12" width="18.04" height="82.54" fill="#FBF7EE" stroke-width="2"/></g><line x1="417.22" y1="73.38" x2="417.22" y2="200.97" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#dkl5vvw-aha)"/><line x1="163.46" y1="76.82" x2="325.02" y2="56.63" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#dkl5vvw-aha)"/><line x1="287.56" y1="238.68" x2="204.96" y2="247.86" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#dkl5vvw-aha)"/><g><circle cx="90.21" cy="384.99" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="90.21" cy="383.39" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="90.21" y="388.52" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">6</text></g><g><circle cx="146.59" cy="80.53" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="146.59" cy="78.93" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="146.59" y="84.06" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">3</text></g><g><circle cx="304.46" cy="238.4" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="304.46" cy="236.8" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="304.46" y="241.93" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">10</text></g><g><circle cx="417.22" cy="57.98" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="417.22" cy="56.38" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="417.22" y="61.51" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">11</text></g><g><circle cx="496.15" cy="373.71" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="496.15" cy="372.11" r="15" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="496.15" y="377.24" text-anchor="middle" font-size="14.25" font-weight="800" fill="#FFFFFF">9</text></g><g><circle cx="236.8" cy="136.91" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="236.8" cy="135.31" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="236.8" cy="328.61" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="236.8" cy="327.01" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="473.6" cy="125.64" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="473.6" cy="124.04" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="496.15" cy="283.5" r="15" fill="rgba(0,0,0,0.14)"/><circle cx="496.15" cy="281.9" r="15" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="102.96" cy="370.64" r="6.3" fill="#FFFFFF" stroke="#1D2621" stroke-width="1.4"/><path d="M 100.12 370.01 l 2.84 -2.2 l 2.84 2.2 l -1.07 3.47 h -3.53 z" fill="#1D2621"/></g><g><circle cx="427.22" cy="137.18" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="427.22" y="140.78" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">1</text></g><g><circle cx="243" cy="56.8" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="243" y="60.4" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">2</text></g><g><circle cx="247.36" cy="253.21" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="247.36" y="256.81" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">3</text></g><text x="327.01" y="112.76" text-anchor="middle" font-size="12" font-weight="700" fill="#1D2621" stroke="#FBF7EE" stroke-width="4" paint-order="stroke" stroke-linejoin="round">largeur</text><text x="417.22" y="253.71" text-anchor="middle" font-size="12" font-weight="700" fill="#1D2621" stroke="#FBF7EE" stroke-width="4" paint-order="stroke" stroke-linejoin="round">demi-espace</text><text x="191.7" y="304.46" text-anchor="middle" font-size="12" font-weight="700" fill="#1D2621" stroke="#FBF7EE" stroke-width="4" paint-order="stroke" stroke-linejoin="round">soutien</text></g></svg></figure>
+<p>Ici, le trio gauche tourne sans laisser de trou : l&#39;ailier rentre dans le demi-espace (1), le latéral prend la largeur qu&#39;il a laissée (2), l&#39;intérieur recule pour soutenir (3). Les trois places restent occupées, par d&#39;autres joueurs, et le latéral adverse ne sait plus qui suivre.</p>
+<p>Deux règles complètent le trio. Le pivot ne laisse jamais l&#39;axe vide : s&#39;il descend, quelqu&#39;un prend sa place. Et quand l&#39;attaquant point d&#39;appui décroche, un intérieur ou un ailier attaque aussitôt la profondeur qu&#39;il a laissée : « Quand tu viens, quelqu&#39;un part. »</p>
+<h2>Sans ballon : 4‑4-2, 4‑5-1, 5‑4-1</h2>
+<p>Sans ballon, le Njangi utilise trois formes, choisies selon la sortie de balle adverse, la hauteur de bloc voulue (chapitre 8) et les jambes disponibles. Le pressing est détaillé au chapitre 21, le bloc au chapitre 22.</p>
+<p><strong>Le 4‑4-2 tiré du 4‑3-3.</strong> L&#39;intérieur gauche monte à côté de l&#39;attaquant point d&#39;appui, les ailiers redescendent sur la ligne des milieux, le pivot et l&#39;autre intérieur tiennent l&#39;axe. Les deux attaquants s&#39;occupent des centraux adverses, et l&#39;un d&#39;eux garde le pivot adverse dans son <strong>ombre de couverture</strong> : derrière lui, sur la ligne de passe qu&#39;il coupe par sa seule position. C&#39;est la forme de référence du bloc médian et du pressing.</p>
+<figure class="diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 411.39" width="620" height="411.39" role="img" font-family="Inter, 'Helvetica Neue', Arial, sans-serif"><defs>
+<marker id="dc0ylhp-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1D2621"/></marker>
+<marker id="dc0ylhp-aha" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4D3A"/></marker>
+<marker id="dc0ylhp-ahb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#B8432F"/></marker>
+<marker id="dc0ylhp-ahs" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C5762F"/></marker>
+<pattern id="dc0ylhp-turf" width="78.93" height="10" patternUnits="userSpaceOnUse"><rect width="100%" height="10" fill="#EDF2E3"/><rect width="50%" height="10" fill="#E5ECD9"/></pattern>
+</defs><rect width="620" height="411.39" fill="#FBF7EE" rx="10"/><g transform="translate(14,14)"><rect x="0" y="0" width="592" height="383.39" fill="url(#dc0ylhp-turf)"/><g stroke="#2E6B4A" stroke-width="1.5" fill="none" stroke-linejoin="round"><rect x="0" y="0" width="592" height="383.39" fill="none"/><line x1="296" y1="0" x2="296" y2="383.39"/><circle cx="296" cy="191.7" r="51.59" fill="none"/><circle cx="296" cy="191.7" r="1.97" fill="#2E6B4A" stroke="none"/><rect x="0" y="78.03" width="93.03" height="227.33" fill="none"/><rect x="0" y="140.05" width="31.01" height="103.29" fill="none"/><circle cx="62.02" cy="191.7" r="1.97" fill="#2E6B4A" stroke="none"/><path d="M 93.03 150.47 A 51.59 51.59 0 0 1 93.03 232.92" fill="none"/><rect x="-9.02" y="171.06" width="9.02" height="41.27" fill="#FBF7EE" stroke-width="2"/><rect x="498.97" y="78.03" width="93.03" height="227.33" fill="none"/><rect x="560.99" y="140.05" width="31.01" height="103.29" fill="none"/><circle cx="529.98" cy="191.7" r="1.97" fill="#2E6B4A" stroke="none"/><path d="M 498.97 150.47 A 51.59 51.59 0 0 0 498.97 232.92" fill="none"/><rect x="592" y="171.06" width="9.02" height="41.27" fill="#FBF7EE" stroke-width="2"/></g><line x1="338.29" y1="45.1" x2="271.85" y2="64.09" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#dc0ylhp-aha)"/><line x1="338.29" y1="338.29" x2="271.85" y2="319.3" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#dc0ylhp-aha)"/><line x1="293.18" y1="101.49" x2="367.27" y2="155.82" stroke="#1F4D3A" stroke-width="2.2" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#dc0ylhp-aha)"/><line x1="386.76" y1="157.2" x2="423.48" y2="131.49" stroke="#1F4D3A" stroke-width="2.6" stroke-dasharray="2 4" stroke-linecap="round" marker-end="url(#dc0ylhp-aha)"/><g><circle cx="67.66" cy="193.3" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="67.66" cy="191.7" r="9" fill="#3D4F6B" stroke="#FFFFFF" stroke-width="2"/><text x="67.66" y="194.77" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">1</text></g><g><circle cx="191.7" cy="63.62" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="191.7" cy="62.02" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="191.7" y="65.1" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">3</text></g><g><circle cx="186.06" cy="148.19" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="186.06" cy="146.59" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="186.06" y="149.67" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">4</text></g><g><circle cx="186.06" cy="238.4" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="186.06" cy="236.8" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="186.06" y="239.88" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">5</text></g><g><circle cx="191.7" cy="322.97" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="191.7" cy="321.37" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="191.7" y="324.45" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">2</text></g><g><circle cx="259.35" cy="69.26" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="259.35" cy="67.66" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="259.35" y="70.74" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">11</text></g><g><circle cx="253.71" cy="159.47" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="253.71" cy="157.87" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="253.71" y="160.94" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">6</text></g><g><circle cx="253.71" cy="232.76" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="253.71" cy="231.16" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="253.71" y="234.24" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">8</text></g><g><circle cx="259.35" cy="317.33" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="259.35" cy="315.73" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="259.35" y="318.81" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">7</text></g><g><circle cx="377.75" cy="165.1" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="377.75" cy="163.5" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="377.75" y="166.58" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">10</text></g><g><circle cx="355.2" cy="255.31" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="355.2" cy="253.71" r="9" fill="#1F4D3A" stroke="#FFFFFF" stroke-width="2"/><text x="355.2" y="256.79" text-anchor="middle" font-size="8.55" font-weight="800" fill="#FFFFFF">9</text></g><g><circle cx="434.13" cy="125.64" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="434.13" cy="124.04" r="9" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="434.13" cy="260.95" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="434.13" cy="259.35" r="9" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="332.65" cy="193.3" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="332.65" cy="191.7" r="9" fill="#B8432F" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="563.81" cy="193.3" r="9" fill="rgba(0,0,0,0.14)"/><circle cx="563.81" cy="191.7" r="9" fill="#6B4A7A" stroke="#FFFFFF" stroke-width="2"/></g><g><circle cx="441.78" cy="116.39" r="4.5" fill="#FFFFFF" stroke="#1D2621" stroke-width="1.4"/><path d="M 439.76 115.94 l 2.03 -1.57 l 2.03 1.58 l -0.76 2.48 h -2.52 z" fill="#1D2621"/></g><g><circle cx="307.82" cy="64.21" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="307.82" y="67.81" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">1</text></g><g><circle cx="302.32" cy="338.41" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="302.32" y="342.01" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">1</text></g><g><circle cx="336.14" cy="120.59" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="336.14" y="124.19" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">2</text></g><g><circle cx="399.39" cy="136.15" r="8" fill="#FBF7EE" stroke="#1D2621" stroke-width="1.3"/><text x="399.39" y="139.75" text-anchor="middle" font-size="10" font-weight="800" fill="#1D2621">3</text></g><text x="332.65" y="222.7" text-anchor="middle" font-size="12" font-weight="700" fill="#1D2621" stroke="#FBF7EE" stroke-width="4" paint-order="stroke" stroke-linejoin="round">dans l’ombre</text><text x="225.52" y="372.11" text-anchor="middle" font-size="12" font-weight="700" fill="#1D2621" stroke="#FBF7EE" stroke-width="4" paint-order="stroke" stroke-linejoin="round">4‑4-2</text></g></svg></figure>
+<p>Les ailiers redescendent (1), l&#39;intérieur gauche monte (2), puis presse le central adverse en arrivant de l&#39;intérieur (3) : son corps coupe la passe vers le pivot, resté dans son ombre.</p>
+<p><strong>Le 4‑5-1 (ou 4‑1-4‑1).</strong> Les ailiers et les intérieurs forment une ligne de quatre, le pivot reste derrière comme écran, l&#39;attaquant point d&#39;appui reste seul devant. C&#39;est la forme qui ferme le mieux l&#39;espace entre les lignes, contre trois milieux centraux mobiles ou quand la chaleur interdit de presser haut. Sa faiblesse : l&#39;attaquant est seul. Pour Regarder devant, les ailiers partent dès que le ballon est repris.</p>
+<p><strong>Le 5‑4-1.</strong> Il naît du 3‑4-3 quand les pistons redescendent, ou d&#39;un 4‑3-3 quand un ailier se replace en cinquième défenseur, du côté de l&#39;ailier adverse le plus dangereux. Il protège toute la largeur de la surface. C&#39;est la forme du bloc bas et des fins de match à protéger, à condition de garder un plan pour ressortir : un attaquant qui garde le ballon dos au but, et deux joueurs prêts à sprinter vers lui.</p>
+<table>
+<thead>
+<tr>
+<th>Leur sortie de balle</th>
+<th>Notre forme sans ballon</th>
+<th>L&#39;idée</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Deux centraux et un pivot</td>
+<td>4‑4-2</td>
+<td>deux contre deux sur les centraux, le pivot dans l&#39;ombre</td>
+</tr>
+<tr>
+<td>Trois relanceurs</td>
+<td>4‑4-2 avec un ailier qui saute, ou 4‑3-3</td>
+<td>égalité sur la première ligne</td>
+</tr>
+<tr>
+<td>Trois milieux centraux mobiles</td>
+<td>4‑5-1</td>
+<td>fermer l&#39;axe et l&#39;espace entre les lignes</td>
+</tr>
+<tr>
+<td>Ailiers très larges et beaucoup de centres</td>
+<td>5‑4-1 en bloc bas, en fin de match</td>
+<td>défendre la largeur de la surface</td>
+</tr>
+</tbody></table>
+<h2>Le coût de la bascule</h2>
+<p>Revenons à la troisième photo du vestiaire de Yaoundé. Le trou de quarante mètres ne venait pas d&#39;un mauvais système, mais d&#39;une bascule trop chère : l&#39;équipe avait monté ses deux latéraux et ses deux intérieurs en même temps, et à la perte, quatre joueurs avaient chacun quarante mètres à courir.</p>
+<p>Le Njangi mesure ce coût à la vidéo : pour chaque joueur, la distance entre sa place avec ballon et sa place sans ballon. Trois règles en découlent. De chaque côté, pas plus d&#39;un joueur qui doit traverser la moitié du terrain pour se replacer. Les plus longues bascules reviennent à ceux qui ont les jambes pour les faire, et le staff les surveille en seconde période. Et quand la bascule est trop chère pour l&#39;effectif du jour, on ne demande pas de courir plus : on change de structure. Le 3‑2-5 asymétrique est la plus économique, d&#39;où son statut de référence.</p>
+<aside class="callout callout-afrique"><div class="callout-kicker">En Afrique</div><div class="callout-title">Peu de jours, des clubs différents</div><p>Une sélection se réunit environ 9 à 10 jours par fenêtre, avec des joueurs venus de clubs et de systèmes différents. Une base et une variante suffisent, chacune nommée par un mot que tout le groupe comprend.
+Sous la chaleur de l&#39;après-midi, la bascule se paie double : une structure économique garde des jambes pour la fin du match.
+Pour un joueur de la diaspora ou appelé pour la première fois, une fiche de rôle d&#39;une page avec les trois photos de son poste vaut mieux qu&#39;un long discours.</p>
+</aside>
+
+<h2>Quel système pour quel effectif</h2>
+<h3>Selon l&#39;âge</h3>
+<p>Les formats des jeunes varient selon les fédérations : adaptez le tableau aux vôtres.</p>
+<table>
+<thead>
+<tr>
+<th>Âge</th>
+<th>Format courant</th>
+<th>Structure conseillée</th>
+<th>Ce que l&#39;enfant apprend</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>U6 à U9</td>
+<td>3 contre 3 à 5 contre 5</td>
+<td>aucune, seulement « écarte-toi »</td>
+<td>la largeur, le soutien, jouer ensemble</td>
+</tr>
+<tr>
+<td>U10 et U11</td>
+<td>7 contre 7</td>
+<td>gardien + 2‑3-1 ou 3‑2-1</td>
+<td>trois hauteurs, le triangle, le losange</td>
+</tr>
+<tr>
+<td>U12 et U13</td>
+<td>8 contre 8 ou 9 contre 9</td>
+<td>gardien + 3‑3-1 ou 3‑2-3</td>
+<td>la ligne de relance, le pivot, la largeur</td>
+</tr>
+<tr>
+<td>U14 à U16</td>
+<td>11 contre 11</td>
+<td>4‑3-3 qui devient 3‑2-5, 4‑4-2 sans ballon</td>
+<td>les rôles, le trio de côté, la défense de repos</td>
+</tr>
+<tr>
+<td>U17 à U19</td>
+<td>11 contre 11</td>
+<td>le 3‑2-5 et une variante, 4‑4-2 et 4‑5-1 sans ballon</td>
+<td>changer de structure pendant le match</td>
+</tr>
+<tr>
+<td>Seniors</td>
+<td>11 contre 11</td>
+<td>une base et une variante, selon l&#39;effectif</td>
+<td>le plan de match</td>
+</tr>
+</tbody></table>
+<p>Le 3‑2-3 du 9 contre 9 est déjà le 3‑2-5 sans ses couloirs extérieurs : l&#39;enfant qui y a joué à 12 ans retrouve à 15 ans une carte qu&#39;il connaît.</p>
+<aside class="callout callout-jeunes"><div class="callout-kicker">Avec les jeunes</div><div class="callout-title">Pas de système avant 12 ans</div><p>Avant 12 ans, on ne récite pas de système. On apprend à s&#39;écarter, à se montrer, à occuper la largeur, et chacun joue à tous les postes, gardien compris.
+Entre 12 et 16 ans, une seule structure avec ballon et une seule sans ballon. Séances courtes quand il fait chaud, eau à volonté, et jamais de reproche crié à un enfant qui s&#39;est trompé de place : on l&#39;aide à la retrouver.</p>
+</aside>
+
+<h3>Selon les joueurs</h3>
+<p>Le système suit les joueurs, jamais l&#39;inverse. Deux ailiers forts en un contre un et un pivot qui lit le jeu : 3‑2-5 asymétrique, pour isoler les ailiers. Des latéraux endurants et des ailiers qui aiment rentrer : 2‑3-5 extérieur. Un meneur créatif mais pas de vrai pivot : 4‑2-3‑1, le 3‑1-6 en réserve. Trois centraux à l&#39;aise avec le ballon et deux pistons infatigables : 3‑4-3. Beaucoup de nouveaux joueurs : la structure qui demande le moins de rotations. L&#39;erreur la plus répandue est de copier le système d&#39;un grand club vu à la télévision sans avoir ses profils : on obtient la forme sans le fond.</p>
+<h2>Problèmes fréquents et solutions</h2>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Ce qu&#39;on voit</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>La structure de la feuille reste figée</td>
+<td>quatre défenseurs alignés en possession, personne entre les lignes</td>
+<td>nommer la structure avec ballon, la répéter sans opposition, puis en <a class="drill-ref" href="fiches-phase.html#drill-F02">F02</a></td>
+</tr>
+<tr>
+<td>Le trio de côté s&#39;empile</td>
+<td>latéral et ailier dans le même couloir</td>
+<td>la règle du trio, couloirs tracés à la coupelle en <a class="drill-ref" href="fiches-position.html#drill-P02">P02</a></td>
+</tr>
+<tr>
+<td>Les deux latéraux montent ensemble</td>
+<td>défense de repos à deux contre trois</td>
+<td>annoncer avant le match qui reste bas ; <a class="drill-ref" href="fiches-phase.html#drill-F06">F06</a></td>
+</tr>
+<tr>
+<td>La bascule est trop lente</td>
+<td>un trou au milieu après la perte</td>
+<td>structure asymétrique, et <a class="drill-ref" href="fiches-transition.html#drill-T06">T06</a> pour relier attaque et repli</td>
+</tr>
+<tr>
+<td>Un nouveau système à chaque match</td>
+<td>joueurs perdus, mots différents</td>
+<td>une base et une variante pour toute la saison</td>
+</tr>
+</tbody></table>
+<h2>À l&#39;entraînement</h2>
+<p>Une structure s&#39;installe en trois temps. D&#39;abord <strong>sans opposition</strong> : <a class="drill-ref" href="fiches-finishing.html#drill-G06">G06</a> fait dérouler l&#39;équipe à 11, du gardien au tir, à allure de marche, chaque joueur nommant son intention. Ensuite <strong>en jeu de position</strong> : <a class="drill-ref" href="fiches-position.html#drill-P02">P02</a> pour la règle des couloirs, <a class="drill-ref" href="fiches-phase.html#drill-F02">F02</a> pour la sortie en 3‑2, <a class="drill-ref" href="fiches-lsg.html#drill-L01">L01</a> et <a class="drill-ref" href="fiches-lsg.html#drill-L05">L05</a> pour la largeur, <a class="drill-ref" href="fiches-technique.html#drill-C13">C13</a> pour faire tourner le trio de côté. Enfin <strong>en match à thème</strong> : <a class="drill-ref" href="fiches-lsg.html#drill-L04">L04</a> avec la règle de la photo. L&#39;entraîneur crie « Photo », tout le monde s&#39;arrête, chacun vérifie son couloir, sa hauteur et la défense de repos, puis le jeu reprend. Deux ou trois photos par série suffisent ; au-delà, le jeu meurt. Sans ballon, <a class="drill-ref" href="fiches-transition.html#drill-T04">T04</a> installe le 4‑4-2 du bloc médian ; la bascule se travaille en <a class="drill-ref" href="fiches-transition.html#drill-T06">T06</a> et <a class="drill-ref" href="fiches-phase.html#drill-F06">F06</a>. Les consignes tiennent en peu de mots : « Ta place avec, ta place sans », « Trio : largeur, demi-espace, soutien ».</p>
+<aside class="callout callout-analyste"><div class="callout-kicker">Pour l’analyste</div><div class="callout-title">Mesurer la structure</div><p>Toutes les cinq minutes, l&#39;analyste fige l&#39;image une fois avec le ballon et une fois sans, et note la structure réelle (par exemple 3‑2-5 ou 4‑4-2), le nombre de couloirs occupés sur la ligne haute et les infractions au trio de côté.
+Après chaque perte, il note si la défense de repos était en place et combien de secondes il a fallu pour que la ligne des milieux et la ligne des défenseurs soient de nouveau compactes. Ce repère interne se suit match après match et éclaire le sous-indice Reprise de l&#39;Indice Njangi (chapitre 32).</p>
+</aside>
+
+<p>Un système ne joue pas à la place des joueurs. Il leur donne des adresses, une pour chaque moment, et un chemin pour aller de l&#39;une à l&#39;autre. Une équipe Njangi peut changer de chiffres trois fois dans le même match sans jamais changer d&#39;idée : avec le ballon, cinq qui attaquent et cinq qui protègent ; sans le ballon, un bloc qui ferme l&#39;axe ; entre les deux, une bascule assez courte pour que la troisième photo ressemble enfin à une équipe.</p>
+</div></article>
+<nav class="pager" aria-label="Chapitres précédent et suivant"><a class="prev" href="ch-16.html" rel="prev"><small>&#8592; Précédent</small><b>16. Le gardien qui joue</b></a><a class="next" href="ch-18.html" rel="next"><small>Suivant &#8594;</small><b>18. Sortir le ballon contre chaque pressing</b></a></nav></main>
+<div class="drawer" id="drawer" hidden><div class="drawer-inner"><button id="close" type="button">Fermer</button><a class="drawer-home" href="./">Couverture et sommaire</a><ol><li class="toc-part"><span>Avant-propos</span><ol><li><a href="ch-00.html" data-page="ch-00">Avant-propos</a></li></ol></li><li class="toc-part"><span>Partie 1 · Le manifeste</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1.</b> Le talent ne suffit pas</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2.</b> Le Njangi : une philosophie africaine du jeu</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3.</b> Le mantra : 2030 ou 2034</a></li></ol></li><li class="toc-part"><span>Partie 2 · Le modèle de jeu Njangi</span><ol><li><a href="ch-04.html" data-page="ch-04"><b>4.</b> Les quatre moments et la règle d'or</a></li><li><a href="ch-05.html" data-page="ch-05"><b>5.</b> Les cinq intentions de la possession</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6.</b> La carte : couloirs, hauteurs, triangles</a></li><li><a href="ch-07.html" data-page="ch-07"><b>7.</b> Les transitions : reprendre et regarder devant</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8.</b> Défendre pour récupérer</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9.</b> Les rôles du Njangi</a></li><li><a href="ch-10.html" data-page="ch-10"><b>10.</b> Les coups de pied arrêtés avec intention</a></li></ol></li><li class="toc-part"><span>Partie 3 · La technique au service de l'intention</span><ol><li><a href="ch-11.html" data-page="ch-11"><b>11.</b> La passe qui sert</a></li><li><a href="ch-12.html" data-page="ch-12"><b>12.</b> Recevoir et s'orienter</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13.</b> Voir avant de recevoir</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14.</b> Conduire, dribbler, protéger</a></li><li><a href="ch-15.html" data-page="ch-15"><b>15.</b> Finir</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16.</b> Le gardien qui joue</a></li></ol></li><li class="toc-part"><span>Partie 4 · La tactique Njangi</span><ol><li><a href="ch-17.html" data-page="ch-17"><b>17.</b> Les systèmes avec et sans ballon</a></li><li><a href="ch-18.html" data-page="ch-18"><b>18.</b> Sortir le ballon contre chaque pressing</a></li><li><a href="ch-19.html" data-page="ch-19"><b>19.</b> Progresser : troisième homme, surcharges, changements de côté</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20.</b> Le dernier tiers : attaquer la surface</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21.</b> Presser : déclencheurs et pièges</a></li></ol></li><li class="toc-part"><span>Partie 5 · Des jeunes aux pros</span><ol><li><a href="ch-24.html" data-page="ch-24"><b>24.</b> Les étapes de la formation Njangi</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25.</b> Les dix compétences du joueur Njangi</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26.</b> Former en Afrique : notre réalité est notre force</a></li></ol></li><li class="toc-part"><span>Partie 6 · La semaine d'entraînement et la périodisation</span><ol><li><a href="ch-27.html" data-page="ch-27"><b>27.</b> La périodisation Njangi</a></li><li><a href="ch-28.html" data-page="ch-28"><b>28.</b> Toutes les semaines : jeunes, deux matchs, sélections</a></li><li><a href="ch-29.html" data-page="ch-29"><b>29.</b> La charge, la chaleur et la récupération</a></li><li><a href="ch-30.html" data-page="ch-30"><b>30.</b> Construire une séance Njangi</a></li></ol></li><li class="toc-part"><span>Partie 7 · Les exercices</span><ol><li><a href="ch-31.html" data-page="ch-31"><b>31.</b> Comment utiliser les fiches</a></li><li><a href="fiches.html" data-page="fiches"><b>64</b> fiches d’exercices</a></li></ol></li><li class="toc-part"><span>Partie 8 · L'analyse</span><ol><li><a href="ch-32.html" data-page="ch-32"><b>32.</b> Mesurer la possession avec intention</a></li><li><a href="ch-33.html" data-page="ch-33"><b>33.</b> L'analyste Njangi : avant, pendant, après le match</a></li><li><a href="ch-34.html" data-page="ch-34"><b>34.</b> Le rapport de match Njangi</a></li></ol></li><li class="toc-part"><span>Partie 9 · Le manager et la fédération</span><ol><li><a href="ch-35.html" data-page="ch-35"><b>35.</b> Le manager, gardien de l'idée</a></li><li><a href="ch-36.html" data-page="ch-36"><b>36.</b> Le plan 2030 : dix mesures pour une fédération</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="ch-37.html" data-page="ch-37"><b>37.</b> Annexes</a></li></ol></li></ol></div></div>
+<script>
+(function(){var K='njangi.methode';var b=document.body;var page=b.getAttribute('data-page');
+var h=location.hash;
+if(page==='index'){var m=h.match(/^#ch-(\d{2})$/);if(m){location.replace('ch-'+m[1]+'.html');return}
+var dm=h.match(/^#drill-([A-Z]\d\d)$/);if(dm&&window.DRILL_PAGE&&window.DRILL_PAGE[dm[1]]){location.replace(window.DRILL_PAGE[dm[1]]+'#drill-'+dm[1]);return}
+if(h==='#fiches'){location.replace('fiches.html');return}}
+try{var fs=localStorage.getItem(K+'.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem(K+'.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('a[data-page="'+page+'"]');if(cur){cur.classList.add('current');cur.scrollIntoView({block:'center'})}};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||document.querySelector('h1')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(h==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y);setTimeout(function(){window.scrollTo(0,l.y)},350)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+})();</script></body></html>

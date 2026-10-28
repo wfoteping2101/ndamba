@@ -9,6 +9,7 @@ const Landing = lazy(() => import('./surfaces/site/Landing'))
 const Library = lazy(() => import('./surfaces/site/Library'))
 const Pricing = lazy(() => import('./surfaces/site/Pricing'))
 const Settings = lazy(() => import('./surfaces/site/Settings'))
+const Review = lazy(() => import('./surfaces/site/Review'))
 // Mola (onboarding + action agent)
 const Onboarding = lazy(() => import('./surfaces/mola/Onboarding'))
 const MolaHub = lazy(() => import('./surfaces/mola/MolaHub'))
@@ -24,6 +25,8 @@ const PlayerDetail = lazy(() => import('./surfaces/team/PlayerDetail'))
 const Matches = lazy(() => import('./surfaces/team/Matches'))
 const MatchSetup = lazy(() => import('./surfaces/team/MatchSetup'))
 const MatchSheet = lazy(() => import('./surfaces/team/MatchSheet'))
+const TeamJourney = lazy(() => import('./surfaces/team/Journey'))
+const Observe = lazy(() => import('./surfaces/team/Observe'))
 // Analysis
 const AnalysisHub = lazy(() => import('./surfaces/analysis/AnalysisHub'))
 const LiveTagger = lazy(() => import('./surfaces/analysis/LiveTagger'))
@@ -35,6 +38,7 @@ const Home = lazy(() => import('./surfaces/player/Home'))
 const PlayerSpace = lazy(() => import('./surfaces/player/PlayerSpace'))
 const Lessons = lazy(() => import('./surfaces/player/Lessons'))
 const Notebook = lazy(() => import('./surfaces/player/Notebook'))
+const PlayerJourney = lazy(() => import('./surfaces/player/Journey'))
 
 const Loading = () => <div className="grid min-h-[50vh] place-items-center"><div className="h-9 w-9 animate-spin rounded-full border-4 border-forest-100 border-t-forest-600" /></div>
 
@@ -48,6 +52,7 @@ export default function App() {
               <Route index element={<Landing />} />
               <Route path="livres" element={<Library />} />
               <Route path="premium" element={<Pricing />} />
+              <Route path="revue" element={<Review />} />
             </Route>
             <Route path="bienvenue" element={<Onboarding />} />
             <Route path="app" element={<AppLayout />}>
@@ -60,6 +65,8 @@ export default function App() {
               <Route path="semaine" element={<WeekPlanner />} />
               <Route path="equipe" element={<Roster />} />
               <Route path="equipe/:id" element={<PlayerDetail />} />
+              <Route path="equipe/:id/parcours" element={<TeamJourney />} />
+              <Route path="observer" element={<Observe />} />
               <Route path="matchs" element={<Matches />} />
               <Route path="matchs/nouveau" element={<MatchSetup />} />
               <Route path="matchs/:id" element={<MatchSheet />} />
@@ -72,6 +79,7 @@ export default function App() {
               <Route path="joueur" element={<PlayerSpace />} />
               <Route path="joueur/lecons" element={<Lessons />} />
               <Route path="joueur/carnet" element={<Notebook />} />
+              <Route path="joueur/parcours" element={<PlayerJourney />} />
               <Route path="livres" element={<Library />} />
               <Route path="premium" element={<Pricing />} />
               <Route path="reglages" element={<Settings />} />

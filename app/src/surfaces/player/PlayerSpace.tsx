@@ -20,6 +20,7 @@ import { DayBars, HistoryLine, Legend, RingProgress, SkillRadar } from './compon
 import { LevelUpBanner, SectionHead, useToast } from './components/bits'
 import { useLevelUp, usePlayerData, useScrollToHash } from './components/data'
 import { useSelfAssessment } from './components/storage'
+import { JourneyCard } from './components/JourneyCard'
 
 const LEVEL_VALUES = [1, 2, 3, 4] as const
 
@@ -78,7 +79,10 @@ export default function PlayerSpace() {
         {(['defis', 'progression', 'regard', 'tous', 'historique'] as const).map((id) => (
           <a key={id} href={`#${id}`} className="chip min-h-[40px] shrink-0 px-3.5 text-[13px]">{t(`space.nav.${id}`)}</a>
         ))}
+        <Link to="/app/joueur/parcours" className="chip min-h-[40px] shrink-0 border-forest-300 px-3.5 text-[13px] text-forest-700">{t('journey:playerCard.chip')}</Link>
       </nav>
+
+      <JourneyCard />
 
       {/* the three challenges of the day */}
       <section className="mb-10" aria-labelledby="defis-h">

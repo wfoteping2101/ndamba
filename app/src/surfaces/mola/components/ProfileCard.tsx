@@ -4,7 +4,7 @@ import { useT } from '../../../i18n'
 import type { Role } from '../../../lib/types'
 import { cx } from '../../../lib/util'
 import {
-  AGE_GROUPS, COUNTRY_CODES, FORMATS, GOALS, POSITIONS, ROLES, countryName, fieldsFor, goalsFor, isFieldFilled, type Draft, type Field,
+  AGE_GROUPS, CHILD_LEVELS, COUNTRY_CODES, FORMATS, GOALS, POSITIONS, ROLES, countryName, fieldsFor, goalsFor, isFieldFilled, type Draft, type Field,
 } from '../onboarding'
 import './mola.css'
 
@@ -16,8 +16,15 @@ export function fieldLabel(t: TLike, f: Field, role?: Role) {
   return t(`ob.field.${f}`)
 }
 
+/** "Seniors" and "Pro" read as words; the U-categories stay as they are. */
+export function levelLabel(t: TLike, a?: string) {
+  if (!a) return ''
+  return a === 'Seniors' || a === 'Pro' ? t(`ob.level.${a}`) : a
+}
+
 export function fieldValue(t: TLike, lang: 'fr' | 'en', f: Field, d: Draft): string {
   switch (f) {
+    case 'ageGroup': return levelLabel(t, d.ageGroup)
     case 'role': return d.role ? t(`common:roles.${d.role}`) : ''
     case 'format': return d.format ? t('ob.formatLabel', { n: d.format }) : ''
     case 'position': return d.position ? t(`common:positions.${d.position}`) : ''
@@ -116,7 +123,7 @@ function FieldEditor({ field, draft, onDone }: { field: Field; draft: Draft; onD
   }
   const options: [string, string][] | null =
     field === 'role' ? ROLES.map((r) => [r, t(`common:roles.${r}`)])
-    : field === 'ageGroup' ? AGE_GROUPS.map((a) => [a, a])
+    : field === 'ageGroup' ? [...(draft.role === 'parent' ? CHILD_LEVELS : AGE_GROUPS).map((a) => [a, levelLabel(t, a)] as [string, string]), ...(draft.ageGroup && !AGE_GROUPS.includes(draft.ageGroup) ? [[draft.ageGroup, draft.ageGroup] as [string, string]] : [])]
     : field === 'format' ? FORMATS.map((n) => [String(n), t('ob.formatLabel', { n })])
     : field === 'position' ? POSITIONS.map((p) => [p, t(`common:positions.${p}`)])
     : field === 'lang' ? [['fr', t('ob.langName.fr')], ['en', t('ob.langName.en')]]

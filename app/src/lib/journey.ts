@@ -245,6 +245,7 @@ export async function deleteEvaluation(ev: Evaluation) {
  */
 export async function recordLevels(player: Pick<Player, 'id' | 'teamId'>, skills: Skills, date = todayISO()) {
   const same = await db.evaluations.where('[playerId+date]').equals([player.id, date]).filter((e) => e.by === 'coach').first()
+  if (!Object.values(skills).some(Boolean)) { if (same) await db.evaluations.delete(same.id); return }
   if (same) await db.evaluations.update(same.id, { skills: { ...skills } })
   else await db.evaluations.put({ id: uid('eva_'), playerId: player.id, teamId: player.teamId, date, skills: { ...skills }, by: 'coach', createdAt: nowISO() })
 }

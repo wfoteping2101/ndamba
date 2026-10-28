@@ -53,6 +53,7 @@ export default function SiteLayout() {
               <li><Link className="hover:text-cream" to="/livres">{t('footer.methode')}</Link></li>
               <li><Link className="hover:text-cream" to="/app">{t('footer.app')}</Link></li>
               <li><Link className="hover:text-cream" to="/app/mola">{t('footer.mola')}</Link></li>
+              <li><Link className="hover:text-cream" to="/revue">{t('site:review.nav')}</Link></li>
             </ul>
           </div>
           <div className="text-sm">

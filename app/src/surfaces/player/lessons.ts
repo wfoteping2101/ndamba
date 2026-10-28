@@ -96,7 +96,7 @@ export function allLessons(lang: Lang): LessonView[] {
   return out
 }
 
-export const chapterHref = (no: number) => `/book/tome1/#ch-${String(no).padStart(2, '0')}`
+export const chapterHref = (no: number) => `/book/tome1/ch-${String(no).padStart(2, '0')}.html`
 
 /** The lesson of the day: deterministic by date, preferring lessons already in the book (with a diagram). */
 export function lessonOfDay(list: LessonView[], date: string) {

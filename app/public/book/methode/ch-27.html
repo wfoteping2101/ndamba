@@ -1,0 +1,231 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>27. La périodisation Njangi | Le Code Njangi</title><meta name="description" content="Entraîner le modèle de jeu chaque jour en faisant varier l'espace, le nombre de joueurs, la durée et l'intensité selon la distance au match, avec la semaine type de MD+1 à MD."><meta property="og:image" content="/book/methode/img/cover.jpg"><meta name="theme-color" content="#FBF7EE"><link rel="icon" href="/favicon.svg"><style>@font-face{font-family:'Literata';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/literata-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/literata-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/literata-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:italic;font-weight:600;font-display:swap;src:url(../fonts/literata-latin-600-italic.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/fraunces-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/fraunces-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/fraunces-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/fraunces-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:600;font-display:swap;src:url(../fonts/fraunces-latin-600-italic.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/inter-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/inter-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/inter-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(../fonts/inter-latin-800-normal.woff2) format('woff2')}
+:root{--ink:#1D2621;--soft:#38423C;--muted:#66706A;--cream:#FBF7EE;--paper:#FFFDF8;--sand:#F1EADB;--line:#E6DDCB;--forest:#1F4D3A;--terra:#C5762F;--sun:#E3A92B;--clay:#B8432F;--fs:17px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--cream);color:var(--ink);font-family:Literata,Georgia,serif;font-size:var(--fs);line-height:1.72}
+a{color:var(--forest)}img{max-width:100%;display:block}
+.bar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(251,247,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);font-family:Inter,system-ui,sans-serif;font-size:14px}
+.bar .back{font-weight:700;text-decoration:none;color:var(--forest)}.bar-title{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:16px;text-align:center}
+.bar button{font:600 13px Inter,system-ui,sans-serif;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;color:var(--ink);cursor:pointer}
+.progress{position:sticky;top:49px;z-index:19;height:3px;background:transparent}.progress span{display:block;height:3px;width:0;background:linear-gradient(90deg,var(--forest),var(--sun),var(--clay))}
+main{max-width:720px;margin:0 auto;padding:0 18px 80px}
+.cover-block{text-align:center;padding:28px 0 8px}.cover-block .cover{display:block;width:min(400px,82%);height:auto;margin:0 auto 22px;border-radius:12px;box-shadow:0 22px 60px rgba(29,38,33,.32)}.cover-block .heroes{font-family:Inter,sans-serif;font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:11.5px;color:#B8862B;margin:10px 0 0}picture{display:contents}figure.illus img,.part-opener img{height:auto}
+.cover-block h1{font-family:Fraunces,Georgia,serif;font-size:40px;line-height:1.05;margin:6px 0 4px}.subtitle{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:21px;margin:0;color:var(--soft)}.author{font-family:Inter,sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--terra);margin:14px 0}
+.dedication{font-style:italic;color:var(--soft);margin:22px auto;max-width:420px}
+.resume{display:inline-block;margin-top:6px;background:var(--forest);color:var(--cream);font:700 15px Inter,sans-serif;padding:12px 20px;border-radius:14px;text-decoration:none}
+.toc{margin:30px 0;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:18px}.toc h2{font-family:Fraunces,Georgia,serif;margin:0 0 8px}
+.toc ol,.drawer ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:14px 0 6px;font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
+.toc-part li a{display:block;padding:6px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:16px}.toc-part li a b{color:var(--forest);font-family:Inter,sans-serif;font-size:13px;margin-right:6px}
+.part-opener{margin:56px -18px 10px;position:relative;overflow:hidden;border-radius:0;background:var(--forest);color:var(--cream);min-height:220px;display:flex;align-items:flex-end}
+.part-opener img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}.part-text{position:relative;padding:26px 22px}.part-opener .kicker{color:var(--sun)}
+.part-opener h2{font-family:Fraunces,Georgia,serif;font-size:42px;margin:2px 0;line-height:1}.part-opener p{margin:0;font-style:italic;opacity:.92}
+.kicker{font:700 11px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+.chapter,.part-opener,.toc,#fiches,.drill{scroll-margin-top:64px}.chapter{padding-top:42px}.chapter header{text-align:center;margin-bottom:18px}.chapter h2{font-family:Fraunces,Georgia,serif;font-size:31px;line-height:1.15;margin:6px 0 0}
+.illus{margin:18px -18px 26px}.illus img{width:100%;height:auto}.illus.wide{margin:24px -18px}.illus figcaption{font:13px Inter,sans-serif;color:var(--muted);text-align:center;margin-top:8px}
+@media(min-width:760px){.illus,.illus.wide{margin-left:-40px;margin-right:-40px}.illus img{border-radius:16px}.part-opener{margin-left:-40px;margin-right:-40px;border-radius:18px}}
+.story p{margin:0 0 .95em;text-align:left;hyphens:auto}.story hr{border:0;text-align:center;margin:1.6em 0}.story hr:after{content:'· · ·';letter-spacing:.6em;color:var(--terra)}
+.story h2{font-family:Fraunces,Georgia,serif;font-size:25px;margin:1.6em 0 .4em}.story h3{font-family:Fraunces,Georgia,serif;font-size:20px;margin:1.4em 0 .3em}
+.story ul,.story ol{padding-left:1.3em}.story table{width:100%;border-collapse:collapse;font:14px/1.45 Inter,sans-serif;margin:1em 0;display:block;overflow-x:auto}.story th,.story td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}.story th{font-weight:700;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+figure.diagram{margin:18px 0}figure.diagram svg{width:100%;height:auto;display:block;border-radius:12px}
+.end{margin:60px 0 0;text-align:center;font-style:italic;color:var(--soft)}.end a{font:700 14px Inter,sans-serif;font-style:normal}
+.drawer{position:fixed;inset:0;z-index:50;background:rgba(10,16,13,.5)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(420px,92vw);background:var(--paper);overflow-y:auto;padding:18px}.drawer button{font:600 13px Inter,sans-serif;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;margin-bottom:8px}
+.drawer .toc-part li a{font-size:15px}
+
+body.methode{font-family:Literata,Georgia,serif}
+.methode-cover .m-cover{margin:10px auto 20px;max-width:420px;aspect-ratio:7/10;border-radius:16px;padding:28px 24px;text-align:left;color:#FBF7EE;background:linear-gradient(160deg,#1F4D3A 0%,#173B2C 60%,#0B2116 100%);box-shadow:0 18px 50px rgba(29,38,33,.28);position:relative;overflow:hidden}
+.m-kicker{font:700 12px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#E3A92B}.m-title{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:44px;line-height:1;margin:14px 0 8px}.m-sub{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:20px;color:#F3D9BC}.m-line{font:500 13px Inter,sans-serif;opacity:.85;margin-top:10px}
+.m-cover ul{position:absolute;left:24px;bottom:22px;margin:0;padding:0;list-style:none;font:700 13px Inter,sans-serif}.m-cover li:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:#E3A92B;margin-right:8px;vertical-align:middle}
+.part-opener.methode{min-height:150px;background:linear-gradient(120deg,#1F4D3A,#2F6B52)}
+.callout{margin:22px 0;padding:14px 16px;border-radius:14px;border-left:5px solid var(--forest);background:#EEF4EF;font-size:.95em}.callout p{margin:.3em 0}
+.callout-kicker{font:800 10.5px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--forest)}.callout-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.08em;margin:2px 0 4px}
+.callout-afrique{border-color:var(--terra);background:#FBF0E3}.callout-afrique .callout-kicker{color:#A86020}.callout-analyste{border-color:#3D4F6B;background:#EEF1F6}.callout-analyste .callout-kicker{color:#3D4F6B}
+.callout-jeunes{border-color:var(--sun);background:#FDF6E3}.callout-jeunes .callout-kicker{color:#8F660C}.callout-attention{border-color:var(--clay);background:#FBEAE6}.callout-attention .callout-kicker{color:#9A3524}
+.drill-ref{font:700 .82em Inter,sans-serif;background:var(--sand);padding:1px 6px;border-radius:6px;text-decoration:none}
+.drills-grid{padding-top:30px}.fam-title{font-family:Fraunces,Georgia,serif;font-size:28px;border-bottom:3px solid var(--fam);padding-bottom:6px;margin:44px 0 8px}
+.drill{margin:22px 0;padding:18px;border:1px solid var(--line);border-radius:18px;background:var(--paper)}.drill-head{display:flex;gap:14px;align-items:flex-start}
+.drill-code{font:800 18px Inter,sans-serif;color:#fff;background:var(--fam);border-radius:12px;padding:10px 10px;min-width:58px;text-align:center}.drill-family{font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--fam)}
+.drill h3{font-family:Fraunces,Georgia,serif;font-size:24px;margin:2px 0}.drill-sub{margin:0;color:var(--muted);font-style:italic}
+.drill-meta{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;font:12.5px Inter,sans-serif}.drill-meta span{background:var(--sand);border-radius:999px;padding:4px 10px}.drill-meta b{color:var(--muted);font-weight:600;margin-right:4px}
+.drill-objective{font-weight:600}.drill-cols h4{font:800 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--fam);margin:14px 0 4px}.drill-cols ul{margin:0;padding-left:1.2em;font-size:.95em}
+@media(min-width:700px){.drill-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}}
+.drill-measure{background:#EEF4EF;border-radius:10px;padding:10px 12px;font-size:.95em}.drill-story{font-style:italic;color:var(--terra);font-size:.95em}.diagram2 figcaption{font:700 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+
+.ch-title{font-family:Fraunces,Georgia,serif;font-size:32px;line-height:1.12;margin:6px 0 0}
+.start{display:flex;flex-direction:column;align-items:center;gap:10px;margin:18px 0 6px}
+.start a{display:flex;flex-direction:column;align-items:center;min-width:min(340px,90%);padding:13px 20px;border-radius:14px;text-decoration:none;font:700 15px Inter,sans-serif}
+.start .resume{background:var(--forest);color:var(--cream)}.start .resume small{font:600 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;opacity:.85}.start .resume b{font-family:Fraunces,Georgia,serif;font-size:17px;margin-top:2px}
+.start .begin{background:var(--paper);color:var(--forest);border:1.5px solid var(--forest)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:46px 0 10px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:16px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:84px}
+.pager a:hover{border-color:var(--forest)}.pager .next{text-align:right;background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.pager small{font:700 11px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;opacity:.8}.pager b{font-family:Fraunces,Georgia,serif;font-size:16px;line-height:1.25;font-weight:600}
+.drawer-home{display:block;margin:4px 0 10px;font:700 14px Inter,sans-serif;text-decoration:none}
+.drawer a.current{background:var(--sand);border-radius:8px;padding-left:8px}
+.part-opener{margin-top:18px}
+.lead{font-size:1.05em;color:var(--soft)}
+.fam-grid{display:grid;gap:14px;margin-top:18px}@media(min-width:760px){.fam-grid{grid-template-columns:1fr 1fr}}
+.fam-card{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--fam);border-radius:16px;padding:16px 18px}
+.fam-card h2{font-family:Fraunces,Georgia,serif;font-size:21px;margin:0 0 8px}.fam-card h2 a{color:var(--fam);text-decoration:none}
+.fam-card ol{list-style:none;margin:0;padding:0}.fam-card li a{display:block;padding:5px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px}.fam-card li a b{font:700 12px Inter,sans-serif;color:var(--fam);margin-right:6px}
+h1.fam-title{font-family:Fraunces,Georgia,serif;font-size:30px;margin:28px 0 10px;color:var(--fam)}
+</style></head><body class="methode paged" data-page="ch-27">
+<div class="bar"><a class="back" href="./">&#8592; Sommaire</a><span class="bar-title">Le Code Njangi</span><button id="toc-btn" type="button" aria-label="Chapitres">Chapitres</button><button id="aa" type="button" aria-label="Taille du texte">Aa</button></div><div class="progress"><span id="prog"></span></div>
+<main><section class="part-opener methode"><div class="part-text"><div class="kicker">Partie 6</div><h2>La semaine d'entraînement et la périodisation</h2></div></section><article class="chapter" id="ch-27"><header><div class="kicker">Chapitre 27</div><h1 class="ch-title">La périodisation Njangi</h1></header><div class="story"><p>Mardi, 16 h 30, sur un synthétique de Yaoundé. L&#39;adjoint pose les plots et demande, comme chaque semaine : « Coach, aujourd&#39;hui, on fait du physique ou de la tactique ? » L&#39;entraîneur sourit, parce qu&#39;il a posé la même question pendant des années. Le mardi, on tournait autour du terrain sans ballon ; le jeudi, on faisait un match interne qui finissait en bagarre ; et le samedi, les joueurs arrivaient lourds sans que personne ne sache pourquoi.</p>
+<p>La réponse Njangi tient en une phrase : chaque séance est à la fois physique, tactique, technique et mentale, parce que le football l&#39;est. Un 4 contre 4 dans 30 mètres sur 25 fait accélérer, freiner, lutter et décider. Un 10 contre 10 sur trois quarts de terrain fait courir longtemps en gardant une structure. Ce qui change d&#39;un jour à l&#39;autre, c&#39;est la façon dont le corps paie ce contenu.</p>
+<p>Ce chapitre répond à une question simple : comment organiser une semaine pour que le modèle de jeu soit entraîné tous les jours et que les joueurs arrivent frais, lucides et prêts le jour du match ?</p>
+<p>On note <strong>MD</strong> (de l&#39;anglais <em>match day</em>) le jour du match. MD-4 est le quatrième jour avant le match, MD+1 le lendemain du match. Ce code, que l&#39;application utilise aussi, permet de parler de la même semaine que l&#39;on joue le samedi, le dimanche ou le mercredi.</p>
+<h2>Le principe : le modèle chaque jour, la charge qui varie</h2>
+<p>La <strong>périodisation</strong> consiste à organiser l&#39;entraînement dans le temps pour que la forme arrive au bon moment. Dans le Njangi, elle part du jeu : on n&#39;entraîne jamais le corps d&#39;un côté et l&#39;idée de l&#39;autre. On entraîne le modèle (les quatre moments, les cinq intentions, les deux réflexes) tous les jours, et on fait varier quatre leviers.</p>
+<ul>
+<li><strong>L&#39;espace</strong> : plus il est petit par joueur, plus il y a de duels, d&#39;accélérations et de freinages ; plus il est grand, plus on court longtemps et vite.</li>
+<li><strong>Le nombre de joueurs</strong> : du 3 contre 3 au 11 contre 11, avec ou sans neutres.</li>
+<li><strong>La durée</strong> des répétitions et des pauses : trois minutes intenses ne fatiguent pas comme douze minutes continues.</li>
+<li><strong>L&#39;intensité</strong>, c&#39;est-à-dire la densité d&#39;efforts que les règles imposent : touches limitées, points bonus, temps limité pour finir.</li>
+</ul>
+<p>À ces quatre leviers s&#39;ajoute la règle, qui oriente le comportement. Une même intention, Progresser par exemple, s&#39;entraîne le mardi dans un 4 contre 4 serré (<a class="drill-ref" href="fiches-ssg.html#drill-S02">S02</a>) et le mercredi dans un 9 contre 9 sur trois tiers (<a class="drill-ref" href="fiches-lsg.html#drill-L02">L02</a>). L&#39;idée est la même ; le prix physique est différent.</p>
+<aside class="callout callout-njangi"><div class="callout-kicker">Principe Njangi</div><div class="callout-title">Une idée, sept jours</div><p>Chaque jour entraîne le modèle de jeu. Ce qui change, c&#39;est l&#39;espace, le nombre, la durée et l&#39;intensité.
+Le joueur ne doit jamais avoir l&#39;impression qu&#39;il existe un jour « tactique » et un jour « physique ».</p>
+</aside>
+
+<p>Le second principe est l&#39;<strong>alternance</strong> : deux jours de suite ne sollicitent pas le corps de la même façon. Le jour qui fait travailler les muscles en force (freinages, duels, changements de direction) laisse le lendemain à l&#39;endurance de jeu, puis à la vitesse, puis à la fraîcheur. Cette alternance permet de travailler fort presque tous les jours sans empiler la même fatigue sur les mêmes muscles.</p>
+<h2>La semaine type avec un match</h2>
+<p>Dans l&#39;exemple qui suit, le match a lieu le samedi : MD+1 est le dimanche, MD+2 le lundi, MD-4 le mardi, et ainsi de suite. Les durées sont des repères pour une équipe senior ; les jeunes en font moins, et le chapitre 28 leur consacre une semaine propre.</p>
+<table>
+<thead>
+<tr>
+<th>Jour</th>
+<th>Objectif</th>
+<th>Espace</th>
+<th>Formats</th>
+<th>Durée indicative</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MD+1</td>
+<td>Récupérer (titulaires) ; compenser (remplaçants)</td>
+<td>Petit</td>
+<td>Rondos légers ; petits jeux courts pour les remplaçants</td>
+<td>30 à 45 min ; 60 min pour la compensation</td>
+</tr>
+<tr>
+<td>MD+2</td>
+<td>Repos complet</td>
+<td>Aucun</td>
+<td>Aucun</td>
+<td>Journée libre</td>
+</tr>
+<tr>
+<td>MD-4</td>
+<td>Tension : accélérations, freinages, duels</td>
+<td>Petit, peu de place par joueur</td>
+<td>Du 3 contre 3 au 6 contre 6, rondos intenses, transitions denses</td>
+<td>60 à 75 min</td>
+</tr>
+<tr>
+<td>MD-3</td>
+<td>Durée : jouer longtemps comme en match</td>
+<td>Grand, proche du match</td>
+<td>Du 8 contre 8 au 11 contre 11, grands jeux de position</td>
+<td>75 à 90 min</td>
+</tr>
+<tr>
+<td>MD-2</td>
+<td>Vitesse : court, rapide, beaucoup de récupération</td>
+<td>Moyen à grand, peu de joueurs à la fois</td>
+<td>Vagues du 2 contre 1 au 4 contre 3, contre-attaques, finition</td>
+<td>50 à 65 min</td>
+</tr>
+<tr>
+<td>MD-1</td>
+<td>Activation : fraîcheur, réactivité, coups de pied arrêtés</td>
+<td>Petit à moyen</td>
+<td>Rondos courts, mises en place, coups de pied arrêtés</td>
+<td>40 à 55 min</td>
+</tr>
+<tr>
+<td>MD</td>
+<td>Le match</td>
+<td>Terrain entier</td>
+<td>11 contre 11</td>
+<td>Échauffement d&#39;environ 25 à 30 min, puis le match</td>
+</tr>
+</tbody></table>
+<h2>Les jours, un par un</h2>
+<h3>MD+1 : récupérer et compenser</h3>
+<p>Le lendemain du match, le groupe se sépare en deux. Ceux qui ont joué longtemps récupèrent : marche, mobilité, quelques passes, un rondo à faible intensité (<a class="drill-ref" href="fiches-rondo.html#drill-R01">R01</a>, <a class="drill-ref" href="fiches-rondo.html#drill-R07">R07</a>), de l&#39;eau, des soins, parfois la mer ou une piscine. Trente à quarante-cinq minutes suffisent : on remet le ballon dans les pieds sans chercher la fatigue.</p>
+<p>Ceux qui ont peu ou pas joué font une séance de <strong>compensation</strong> : ils n&#39;ont pas reçu la charge du match. Un petit jeu intense et court (<a class="drill-ref" href="fiches-ssg.html#drill-S01">S01</a>, <a class="drill-ref" href="fiches-ssg.html#drill-S03">S03</a>) et un jeu de transition (<a class="drill-ref" href="fiches-transition.html#drill-T01">T01</a>) leur rendent une partie de ce que le match ne leur a pas donné, avec un mot individuel : un remplaçant doit sentir qu&#39;il compte pour le groupe.</p>
+<h3>MD+2 : le repos</h3>
+<p>Repos complet. Pas de séance cachée, pas de footing imposé « pour garder le rythme ». Le sommeil, la famille, l&#39;école pour les jeunes, la vie. Un staff qui n&#39;ose pas donner un vrai jour de repos paie souvent la facture le jeudi, quand les jambes ne répondent plus.</p>
+<h3>MD-4 : la tension</h3>
+<p>C&#39;est le jour des petits espaces et des efforts brefs et violents : accélérations, freinages, changements de direction, duels, sauts. Les formats vont du 3 contre 3 au 6 contre 6, dans des espaces où chaque joueur a peu de place. Les séquences sont courtes, souvent de 2 à 4 minutes, répétées, avec une vraie récupération entre elles pour garder la qualité.</p>
+<p>Le modèle y est travaillé en petits groupes : la contre-pression de Reprendre (<a class="drill-ref" href="fiches-rondo.html#drill-R08">R08</a>, <a class="drill-ref" href="fiches-transition.html#drill-T01">T01</a>, <a class="drill-ref" href="fiches-transition.html#drill-T03">T03</a>), le dribble qui fixe (<a class="drill-ref" href="fiches-ssg.html#drill-S04">S04</a>), le ballon lâché avant le contact (<a class="drill-ref" href="fiches-ssg.html#drill-S08">S08</a>), la passe qui traverse une ligne (<a class="drill-ref" href="fiches-ssg.html#drill-S07">S07</a>), attirer pour libérer (<a class="drill-ref" href="fiches-position.html#drill-P07">P07</a>), renverser après avoir fixé (<a class="drill-ref" href="fiches-rondo.html#drill-R04">R04</a>), finir dans la surface (<a class="drill-ref" href="fiches-finishing.html#drill-G05">G05</a>). C&#39;est l&#39;un des jours les plus durs de la semaine, et il doit l&#39;être.</p>
+<p>Comportements observables : réactions immédiates à la perte, duels engagés sans faute, appuis rapides, communication forte, joueurs qui demandent le ballon dans l&#39;espace serré au lieu de se cacher derrière un adversaire.</p>
+<h3>MD-3 : la durée</h3>
+<p>Le lendemain, l&#39;espace s&#39;ouvre. On joue à 8 contre 8, 9 contre 9, 10 contre 10 ou 11 contre 11, sur une moitié ou sur trois quarts de terrain, en blocs plus longs (souvent 8 à 15 minutes) qui ressemblent au match. Les joueurs courent beaucoup et vite, avec moins de freinages brutaux que la veille.</p>
+<p>C&#39;est le jour des grands principes et de la structure collective : sortir sous le pressing (<a class="drill-ref" href="fiches-lsg.html#drill-L03">L03</a>), traverser trois lignes (<a class="drill-ref" href="fiches-lsg.html#drill-L02">L02</a>), occuper les couloirs (<a class="drill-ref" href="fiches-position.html#drill-P02">P02</a>, <a class="drill-ref" href="fiches-lsg.html#drill-L01">L01</a>), faire pencher le terrain (<a class="drill-ref" href="fiches-lsg.html#drill-L06">L06</a>), passer par le pivot (<a class="drill-ref" href="fiches-position.html#drill-P06">P06</a>), sortir avec un latéral intérieur (<a class="drill-ref" href="fiches-phase.html#drill-F02">F02</a>), garder la défense de repos en place (<a class="drill-ref" href="fiches-phase.html#drill-F06">F06</a>). On finit souvent par un match à thème, « une équipe, une idée » (<a class="drill-ref" href="fiches-lsg.html#drill-L04">L04</a>), ou par un temps de possession où l&#39;on apprend à Respirer (<a class="drill-ref" href="fiches-position.html#drill-P10">P10</a>). C&#39;est la séance la plus longue et la plus proche du match.</p>
+<p>Comportements observables : structure en 3‑2-5 ou en 2‑3-5 tenue même dans la fatigue, renversements, distances entre les lignes conservées, défense de repos déjà placée au moment où le ballon se perd.</p>
+<h3>MD-2 : la vitesse</h3>
+<p>Deux jours avant le match, le volume baisse. On cherche la vitesse : des actions courtes, rapides, jouées à pleine intensité et séparées par des récupérations longues. Peu de joueurs à la fois, dans un espace assez grand pour sprinter : vagues du 2 contre 1 au 4 contre 3 (<a class="drill-ref" href="fiches-position.html#drill-P08">P08</a>), contre-attaques (<a class="drill-ref" href="fiches-transition.html#drill-T05">T05</a>), premier regard vers la profondeur après la récupération (<a class="drill-ref" href="fiches-transition.html#drill-T02">T02</a>), circulation lente puis attaque rapide (<a class="drill-ref" href="fiches-position.html#drill-P09">P09</a>). La finition y trouve sa place naturelle (<a class="drill-ref" href="fiches-finishing.html#drill-G02">G02</a>, <a class="drill-ref" href="fiches-finishing.html#drill-G03">G03</a>, <a class="drill-ref" href="fiches-finishing.html#drill-G04">G04</a>), de même que les phases de jeu par lignes, jouées à intensité modérée (<a class="drill-ref" href="fiches-phase.html#drill-F01">F01</a>, <a class="drill-ref" href="fiches-phase.html#drill-F04">F04</a>). Un rondo de mise en route (<a class="drill-ref" href="fiches-rondo.html#drill-R02">R02</a>) ouvre la séance.</p>
+<p>Le joueur doit quitter le terrain avec la sensation d&#39;avoir été rapide, pas d&#39;avoir été vidé. Si l&#39;équipe sort de MD-2 essoufflée et lourde, la séance était trop longue ou les pauses trop courtes.</p>
+<h3>MD-1 : l&#39;activation</h3>
+<p>La veille du match, on réveille sans fatiguer : rondos courts (<a class="drill-ref" href="fiches-rondo.html#drill-R05">R05</a>, <a class="drill-ref" href="fiches-rondo.html#drill-R07">R07</a>), réactions et départs brefs, quelques frappes (<a class="drill-ref" href="fiches-finishing.html#drill-G01">G01</a>), mises en place du plan de match à allure contrôlée, coups de pied arrêtés offensifs et défensifs (chapitre 10). Le déroulé collectif sans opposition de <a class="drill-ref" href="fiches-finishing.html#drill-G06">G06</a>, où le ballon part du gardien et passe par huit joueurs avant le tir, est la forme la plus simple de cette répétition. On termine sur une réussite, jamais sur un exercice raté qu&#39;on recommence jusqu&#39;à la tombée de la nuit.</p>
+<h3>MD : le match</h3>
+<p>Le match est la séance la plus intense de la semaine, celle pour laquelle les six autres jours existent. L&#39;échauffement reprend la logique de MD-1 : ballon, rondo, accélérations progressives, coups de pied arrêtés. Et dès le coup de sifflet final commence MD+1 : boire, manger, se rafraîchir, dormir.</p>
+<h2>Pourquoi cet ordre</h2>
+<p>L&#39;ordre suit une logique de récupération. Les efforts qui fatiguent les muscles le plus longtemps (freinages, duels, changements de direction répétés) sont placés le plus loin du match. L&#39;endurance de jeu vient ensuite. La vitesse exige de la fraîcheur mais se récupère vite quand le volume reste faible : elle se place à deux jours du match. L&#39;activation, presque sans fatigue, vient la veille.</p>
+<p>Supprimer MD-2 parce que « les joueurs sont fatigués », c&#39;est leur retirer la seule exposition de la semaine à la vitesse maximale, et prendre le risque qu&#39;ils la redécouvrent en match. Le jeu suit la même progression, du petit au grand puis du collectif au détail : les petits groupes à MD-4, toute l&#39;équipe à MD-3, les lignes et la finition à MD-2, le plan du match à MD-1.</p>
+<aside class="callout callout-analyste"><div class="callout-kicker">Pour l’analyste</div><div class="callout-title">La forme de la semaine</div><p>Notez chaque jour la charge perçue de chaque joueur (chapitre 29). Une semaine bien construite a une forme reconnaissable : basse à MD+1, nulle à MD+2, haute à MD-4 et MD-3, moyenne à MD-2, basse à MD-1, maximale le jour du match.
+Avec des capteurs GPS, on attend plus d&#39;accélérations et de freinages à MD-4, plus de distance totale à MD-3, plus de course à haute vitesse à MD-2.
+Si MD-1 ressemble à MD-3 sur votre graphique, le problème n&#39;est pas les joueurs, c&#39;est la séance.</p>
+</aside>
+
+<h2>Adapter sans trahir</h2>
+<p>La semaine type est un modèle, pas une prison. Trois situations reviennent souvent.</p>
+<p>Le match a lieu le dimanche, le vendredi ou en soirée : on décale toute la semaine. Les codes MD restent les mêmes, seuls les jours du calendrier changent.</p>
+<p>L&#39;équipe ne s&#39;entraîne que trois ou quatre fois : on garde l&#39;ordre, on remplace MD+1 par un repos actif à la maison, puis on fusionne MD-2 et MD-1 en une séance courte de vitesse et d&#39;activation. On ne supprime jamais MD-4 et MD-3 en même temps, sinon l&#39;équipe ne fait plus que se préparer.</p>
+<p>Le terrain est partagé ou trop petit : un club qui n&#39;obtient qu&#39;une moitié de terrain le mercredi joue la durée sur toute la largeur (<a class="drill-ref" href="fiches-lsg.html#drill-L05">L05</a>) plutôt que de renoncer au grand jeu.</p>
+<aside class="callout callout-afrique"><div class="callout-kicker">En Afrique</div><div class="callout-title">Le terrain, l’horaire, la chaleur</div><p>Sur beaucoup de terrains du continent, le créneau est imposé et la chaleur décide. Placez MD-4 et MD-3, les séances les plus lourdes, aux heures les plus fraîches (tôt le matin ou en fin d&#39;après-midi), et ne gardez pour les heures chaudes que des séances courtes et légères.
+Sur un terrain en terre ou un synthétique usé, limitez les freinages violents à MD-4 : agrandissez un peu l&#39;espace plutôt que de forcer les appuis.</p>
+</aside>
+
+<p>Les jeunes ne suivent pas cette semaine à la lettre. Avec deux ou trois séances, ils en gardent la logique (petits espaces en début de semaine, grand jeu ensuite, fraîcheur avant le match) sans en copier la charge, et toujours avec de l&#39;eau, des pauses à l&#39;ombre et l&#39;école d&#39;abord. Le chapitre 28 propose leurs semaines, ainsi que celles des sélections et des semaines à deux matchs.</p>
+<h2>Les erreurs qui cassent la semaine</h2>
+<p>La première erreur est d&#39;ajouter, le mardi, des tours de terrain « pour le physique ». Le 4 contre 4 de MD-4 est déjà la séance physique la plus exigeante de la semaine ; les tours ne font qu&#39;ajouter de la fatigue sans ballon et sans décision.</p>
+<p>La deuxième est le match interne à 11 contre 11 la veille du match : chacun veut prouver quelque chose, et l&#39;équipe arrive au samedi avec des contusions et des rancunes.</p>
+<p>La troisième est la plus humaine.</p>
+<aside class="callout callout-attention"><div class="callout-kicker">Attention</div><div class="callout-title">La séance punition</div><p>Après une défaite, la tentation est forte de « faire payer » les joueurs le lendemain par une séance très dure. C&#39;est le pire jour pour le faire : les corps sortent du match et ont besoin de récupérer.
+La colère se règle par une discussion et par la vidéo, puis par une semaine bien construite. Jamais par la course.</p>
+</aside>
+
+<h2>Ce que la semaine construit</h2>
+<p>Une équipe qui suit cette semaine pendant une saison répète son modèle dans toutes les conditions : serrée le mardi, étirée le mercredi, rapide le jeudi, lucide le vendredi. Le jour du match, le jeu ne lui demande rien qu&#39;elle n&#39;ait déjà fait.</p>
+<p>C&#39;est la vieille sagesse de la tontine appliquée au terrain : chaque jour verse sa part, aucune cotisation n&#39;est perdue, et le samedi, l&#39;équipe touche la caisse.</p>
+</div></article>
+<nav class="pager" aria-label="Chapitres précédent et suivant"><a class="prev" href="ch-26.html" rel="prev"><small>&#8592; Précédent</small><b>26. Former en Afrique : notre réalité est notre force</b></a><a class="next" href="ch-28.html" rel="next"><small>Suivant &#8594;</small><b>28. Toutes les semaines : jeunes, deux matchs, sélections</b></a></nav></main>
+<div class="drawer" id="drawer" hidden><div class="drawer-inner"><button id="close" type="button">Fermer</button><a class="drawer-home" href="./">Couverture et sommaire</a><ol><li class="toc-part"><span>Avant-propos</span><ol><li><a href="ch-00.html" data-page="ch-00">Avant-propos</a></li></ol></li><li class="toc-part"><span>Partie 1 · Le manifeste</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1.</b> Le talent ne suffit pas</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2.</b> Le Njangi : une philosophie africaine du jeu</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3.</b> Le mantra : 2030 ou 2034</a></li></ol></li><li class="toc-part"><span>Partie 2 · Le modèle de jeu Njangi</span><ol><li><a href="ch-04.html" data-page="ch-04"><b>4.</b> Les quatre moments et la règle d'or</a></li><li><a href="ch-05.html" data-page="ch-05"><b>5.</b> Les cinq intentions de la possession</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6.</b> La carte : couloirs, hauteurs, triangles</a></li><li><a href="ch-07.html" data-page="ch-07"><b>7.</b> Les transitions : reprendre et regarder devant</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8.</b> Défendre pour récupérer</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9.</b> Les rôles du Njangi</a></li><li><a href="ch-10.html" data-page="ch-10"><b>10.</b> Les coups de pied arrêtés avec intention</a></li></ol></li><li class="toc-part"><span>Partie 3 · La technique au service de l'intention</span><ol><li><a href="ch-11.html" data-page="ch-11"><b>11.</b> La passe qui sert</a></li><li><a href="ch-12.html" data-page="ch-12"><b>12.</b> Recevoir et s'orienter</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13.</b> Voir avant de recevoir</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14.</b> Conduire, dribbler, protéger</a></li><li><a href="ch-15.html" data-page="ch-15"><b>15.</b> Finir</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16.</b> Le gardien qui joue</a></li></ol></li><li class="toc-part"><span>Partie 4 · La tactique Njangi</span><ol><li><a href="ch-17.html" data-page="ch-17"><b>17.</b> Les systèmes avec et sans ballon</a></li><li><a href="ch-18.html" data-page="ch-18"><b>18.</b> Sortir le ballon contre chaque pressing</a></li><li><a href="ch-19.html" data-page="ch-19"><b>19.</b> Progresser : troisième homme, surcharges, changements de côté</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20.</b> Le dernier tiers : attaquer la surface</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21.</b> Presser : déclencheurs et pièges</a></li></ol></li><li class="toc-part"><span>Partie 5 · Des jeunes aux pros</span><ol><li><a href="ch-24.html" data-page="ch-24"><b>24.</b> Les étapes de la formation Njangi</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25.</b> Les dix compétences du joueur Njangi</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26.</b> Former en Afrique : notre réalité est notre force</a></li></ol></li><li class="toc-part"><span>Partie 6 · La semaine d'entraînement et la périodisation</span><ol><li><a href="ch-27.html" data-page="ch-27"><b>27.</b> La périodisation Njangi</a></li><li><a href="ch-28.html" data-page="ch-28"><b>28.</b> Toutes les semaines : jeunes, deux matchs, sélections</a></li><li><a href="ch-29.html" data-page="ch-29"><b>29.</b> La charge, la chaleur et la récupération</a></li><li><a href="ch-30.html" data-page="ch-30"><b>30.</b> Construire une séance Njangi</a></li></ol></li><li class="toc-part"><span>Partie 7 · Les exercices</span><ol><li><a href="ch-31.html" data-page="ch-31"><b>31.</b> Comment utiliser les fiches</a></li><li><a href="fiches.html" data-page="fiches"><b>64</b> fiches d’exercices</a></li></ol></li><li class="toc-part"><span>Partie 8 · L'analyse</span><ol><li><a href="ch-32.html" data-page="ch-32"><b>32.</b> Mesurer la possession avec intention</a></li><li><a href="ch-33.html" data-page="ch-33"><b>33.</b> L'analyste Njangi : avant, pendant, après le match</a></li><li><a href="ch-34.html" data-page="ch-34"><b>34.</b> Le rapport de match Njangi</a></li></ol></li><li class="toc-part"><span>Partie 9 · Le manager et la fédération</span><ol><li><a href="ch-35.html" data-page="ch-35"><b>35.</b> Le manager, gardien de l'idée</a></li><li><a href="ch-36.html" data-page="ch-36"><b>36.</b> Le plan 2030 : dix mesures pour une fédération</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="ch-37.html" data-page="ch-37"><b>37.</b> Annexes</a></li></ol></li></ol></div></div>
+<script>
+(function(){var K='njangi.methode';var b=document.body;var page=b.getAttribute('data-page');
+var h=location.hash;
+if(page==='index'){var m=h.match(/^#ch-(\d{2})$/);if(m){location.replace('ch-'+m[1]+'.html');return}
+var dm=h.match(/^#drill-([A-Z]\d\d)$/);if(dm&&window.DRILL_PAGE&&window.DRILL_PAGE[dm[1]]){location.replace(window.DRILL_PAGE[dm[1]]+'#drill-'+dm[1]);return}
+if(h==='#fiches'){location.replace('fiches.html');return}}
+try{var fs=localStorage.getItem(K+'.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem(K+'.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('a[data-page="'+page+'"]');if(cur){cur.classList.add('current');cur.scrollIntoView({block:'center'})}};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||document.querySelector('h1')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(h==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y);setTimeout(function(){window.scrollTo(0,l.y)},350)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+})();</script></body></html>
