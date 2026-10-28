@@ -4,7 +4,7 @@ slug: noel-sans-mami
 titre: Noël sans Mami
 partie: 3
 pov: Kaydoudou
-resume: Paris s'illumine pour Noël, mais il manque quelqu'un à la table des Ngassa, et même plusieurs. Avec son plâtre et l'aide de Lucas, Kaydoudou invente un jeu bizarre, tandis qu'un garçon tape tout seul dans un ballon contre un mur, dans le froid.
+resume: Paris s'illumine pour Noël, mais il manque quelqu'un à la table de la famille, et même plusieurs. Avec son plâtre et l'aide de Lucas, Kaydoudou invente un jeu bizarre, tandis qu'un garçon tape tout seul dans un ballon contre un mur, dans le froid.
 illustration: Plan moyen dans le salon de l'appartement de Bussy-Saint-Georges, le soir de Noël, lumière chaude d'une guirlande et de bougies, vitre embuée derrière. Papa, chemise en pagne, danse les bras en l'air au milieu du salon. Au premier plan, sur le canapé, Kenzo Delattre, boucles brunes, pull trop grand, est plié de rire, une main sur le ventre. À côté de lui, Kaydoudou, afro douce, chaussettes rouge et jaune, lève son bras gauche dans un plâtre colorié moitié rouge, moitié jaune, couvert de signatures et rit en regardant Kenzo, la dent du bonheur bien visible. Sur la table basse, un plat de poulet DG.
 ---
 
@@ -22,7 +22,7 @@ Au fond du wagon, le monsieur en imperméable fait un petit salut de la tête.
 
 « Avec tes couleurs, on dirait une de tes chaussettes. En géant. »
 
-« Normal, c'est moi qui l'ai colorié. Moitié rouge, moitié jaune. Le style Ngassa. »
+« Normal, c'est moi qui l'ai colorié. Moitié rouge, moitié jaune. Le style de la famille. »
 
 Près du coude, il reste une petite place vide. Kaydoudou pose le doigt dessus.
 

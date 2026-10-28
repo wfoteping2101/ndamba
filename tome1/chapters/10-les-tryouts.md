@@ -296,7 +296,7 @@ Le soir, dans son bain, Kaydoudou trouve des grains noirs partout.
 
 L'e-mail arrive le mardi soir, au milieu du dîner. Papa le lit à voix haute.
 
-« Dear Ngassa family... BriBri : U12. »
+« Dear parents... BriBri : U12. »
 
 « Mon grand ! » crie Maman.
 
@@ -314,11 +314,11 @@ Kaydoudou pose sa fourchette.
 
 *Ça y est*, pense-t-il. *On me laisse de côté.*
 
-« Attends, dit Papa en levant un doigt. Il y a une suite. Coach Whitfield would also like Kaydoudou to play up with the U12 team on Saturdays. »
+« Attends, dit Papa en levant un doigt. Il y a une suite. Coach Whitfield would like Kaydoudou to play up with the U12 team. »
 
 « Play up ? C'est quoi, play up ? »
 
-« Surclassé. Tu joues avec des plus grands que toi. Tu t'entraînes avec les U11. Mais le samedi, tu joues avec ton frère. »
+« Surclassé. Par l'âge, tu es un U11. Mais elle te fait monter d'une catégorie, chez les U12. Avec des plus grands que toi. Avec ton frère. »
 
 « AVEC MON FRÈRE ? »
 
@@ -334,7 +334,9 @@ Poing contre poing. Main sur le cœur.
 
 « Tu as vu ? chuchote Kaydoudou. Elle ne m'a pas oublié. »
 
-« Personne n'oublie un garçon avec ces chaussettes. Je te l'ai dit : c'est scientifique. »
+« Personne n'oublie un garçon avec ces chaussettes. Je te l'ai dit : c'est scientifique. Mais là-bas, tu seras le plus petit. »
+
+« Alors je serai le plus rapide. »
 
 Le téléphone de Papa vibre. Un message de Diego.
 

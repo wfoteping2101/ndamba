@@ -74,7 +74,7 @@ Ils s'abritent dans le petit café du club.
 
 « Je sais. C'est pour ça que je suis là. » Monsieur Atéba tourne lentement sa cuillère. « Mon métier, c'est de chercher. À Paris, à Bruxelles, à Londres, à Madrid, il y a des enfants nés au Cameroun, ou nés ailleurs de parents camerounais. Ils jouent dans des clubs. Depuis Yaoundé, personne ne les voit. Alors moi, je les vois. »
 
-« L'été prochain, il y a un stage de détection pour les Lionceaux U17. La sélection des moins de dix-sept ans. Au Cameroun. On invite une trentaine de garçons, venus de partout. » Il regarde BriBri, puis Kaydoudou. « Je vous observe depuis un mois. Je vais continuer jusqu'à la fin de la saison. »
+« L'été prochain, il y a un stage de détection pour les Lionceaux U17. La sélection des moins de dix-sept ans. Au Cameroun. On invite une trentaine de garçons, venus de partout. Parfois même un plus jeune, s'il a la tête. » Il regarde BriBri, puis Kaydoudou. « Je vous observe depuis un mois. Je vais continuer jusqu'à la fin de la saison. »
 
 Pour Kaydoudou, se taire, c'est un événement historique. Il tient presque une minute. Puis il lève la main, comme en classe.
 

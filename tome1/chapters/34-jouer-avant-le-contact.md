@@ -22,6 +22,8 @@ Et le jeu repart. Sans Kaydoudou.
 
 « Little man. » Petit homme. Kaydoudou déteste ça encore plus que la pluie.
 
+Ici, il joue surclassé, dans l'équipe de son frère. Tout le monde a un ou deux ans de plus que lui. Et ça se voit.
+
 Au bout de vingt minutes, ses chaussettes, une rouge et une jaune, sont marron. Et jusqu'au soir, sa petite afro garde des brins de synthétique noir, comme du poivre.
 
 Alors il se plaint. Il lève les bras vers l'arbitre. Il roule deux fois sur lui-même.
@@ -210,9 +212,9 @@ BriBri sourit enfin. Puis il regarde la pluie.
 
 « Jaden ne t'aime pas encore, corrige Kaydoudou. Moi non plus, je ne t'aimais pas, quand je suis né. Tu m'avais volé mon biberon. »
 
-« J'avais un an. »
+« J'avais deux ans. »
 
-« Un an, et déjà voleur. Et regarde-nous maintenant. »
+« Deux ans, et déjà voleur. Et regarde-nous maintenant. »
 
 * * *
 

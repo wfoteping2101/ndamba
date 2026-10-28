@@ -66,7 +66,7 @@ Lacombe l'a regardé longtemps, sous sa moustache.
 
 Ensuite, il les a interrogés tout l'hiver, comme à l'école.
 
-« Ngassa. Morel a le ballon, un adversaire lui fonce dessus. Tu dis quoi ? »
+« Le grand. Morel a le ballon, un adversaire lui fonce dessus. Tu dis quoi ? »
 
 « Homme ! »
 
@@ -90,7 +90,7 @@ Kaydoudou venait de retrouver le terrain, encore un peu raide après le plâtre.
 
 Depuis, c'est le 6, celui qui voit tout, qui parle le plus. Sa voix ne craque presque plus. Elle porte loin.
 
-« Plus fort, Ngassa ! crie Lacombe à chaque séance. Le vent ne t'entend pas ! »
+« Plus fort, le 6 ! crie Lacombe à chaque séance. Le vent ne t'entend pas ! »
 
 * * *
 

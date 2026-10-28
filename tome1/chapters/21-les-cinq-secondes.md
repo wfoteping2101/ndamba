@@ -86,7 +86,7 @@ Lucas, lui, ne dit plus rien du tout.
 
 Après le match, Lacombe prend BriBri à part.
 
-« Ngassa. Sur le terrain, tu parles avec les mains. »
+« Le grand. Sur le terrain, tu parles avec les mains. »
 
 C'est vrai. Deux doigts pour lancer Kaydoudou, la paume vers le sol pour dire « calme », le bras tendu vers l'espace.
 
@@ -150,7 +150,7 @@ Le jeudi, Lacombe arrive avec un chronomètre au cou, à côté de son sifflet e
 
 Kenzo lève les yeux au ciel.
 
-« Une équipe qui vient de prendre le ballon n'est pas prête, dit Lacombe. Ses joueurs défendaient. Ils sont serrés, ils regardent leur but. Celui qui a le ballon n'a pas levé la tête. » Il se tourne vers BriBri. « Ngassa. Le matin, quand ta mère te réveille, tu sais où tu es ? »
+« Une équipe qui vient de prendre le ballon n'est pas prête, dit Lacombe. Ses joueurs défendaient. Ils sont serrés, ils regardent leur but. Celui qui a le ballon n'a pas levé la tête. » Il se tourne vers BriBri. « Le grand. Le matin, quand ta mère te réveille, tu sais où tu es ? »
 
 « Pas tout de suite, Monsieur. »
 

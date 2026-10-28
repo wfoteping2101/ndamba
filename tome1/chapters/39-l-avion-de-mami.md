@@ -206,7 +206,7 @@ Et il s'arrête, le stylo en l'air.
 
 Il vient de comprendre quelque chose. Et pour une fois, il le dit.
 
-« Mami... Cette phrase, ce n'est pas moi qui l'ai inventée. La première moitié, c'est Tonton Fokou. Il la criait sur la terre rouge, près de son bidon jaune. La deuxième, c'est toi. Tu l'as dite dans ta cour, pour l'argent du njangi. J'avais onze ans. Je faisais semblant de lire. »
+« Mami... Cette phrase, ce n'est pas moi qui l'ai inventée. La première moitié, c'est Tonton Fokou. Il la criait sur la terre rouge, près de son bidon jaune. La deuxième, c'est toi. Tu l'as dite dans ta cour, pour l'argent du njangi. J'avais douze ans. Je faisais semblant de lire. »
 
 « Je sais, dit Mami. Je t'ai vu. »
 

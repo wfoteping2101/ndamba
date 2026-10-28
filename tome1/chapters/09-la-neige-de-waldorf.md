@@ -104,7 +104,7 @@ Lundi, un vrai bus scolaire jaune s'arrête devant la maison.
 
 Au Cameroun, BriBri avait de bonnes notes en anglais. Un anglais lent, écrit à la craie. Celui de Waldorf roule à toute vitesse et avale la moitié des mots.
 
-« Sokaydoudouwhereyoufromandwhatdoyouliketodoonweekends ? »
+« Sobribriwhereyoufromandwhatdoyouliketodoonweekends ? »
 
 Vingt-cinq visages se tournent vers lui. BriBri a compris un mot sur cinq. La chaleur lui monte au cou, aux joues, aux oreilles. Au moins, elles n'ont plus froid.
 
@@ -252,7 +252,7 @@ Le garçon rit si fort qu'il doit s'asseoir par terre. Puis il parle, avec l'ang
 
 « I'm Diego. Diego Ramírez. Eleven. My parents, El Salvador. Me, right here ! “Sick”, ici, ça veut dire génial ! Et “bro”, c'est mon frère. “My bad”, c'est ma faute. “No way”, c'est impossible ! »
 
-« Diego, déclare Kaydoudou, tu es nommé traducteur officiel de la famille Ngassa. »
+« Diego, déclare Kaydoudou, tu es nommé traducteur officiel de la famille. »
 
 « Deal, bro ! You guys, with me ! Team Diego ! »
 

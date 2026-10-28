@@ -106,7 +106,7 @@ Il fonce sur chaque ballon, chaque passe, tout seul. Il est si rapide qu'il en r
 
 À la troisième fois, Jaden s'arrête net devant lui.
 
-« You never run, Ngassa ! You just stand there like a lamppost ! »
+« You never run, Number Eight ! You just stand there like a lamppost ! »
 
 BriBri sent le sang lui monter aux joues. Il répond en anglais, lentement.
 
