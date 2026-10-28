@@ -1,0 +1,53 @@
+{
+  "chapter": 10,
+  "beats": [
+    {
+      "id": "ch10b",
+      "anchor": "Elle a un sourire immense. Mais à chaque phrase, son doigt touche l'écran.",
+      "shot": "wide",
+      "cast": [
+        "BRI",
+        "KAY"
+      ],
+      "extras": "Coach Dana Whitfield (about 40): a tall, fit woman with light skin and a brown ponytail, in a navy tracksuit, a whistle around her neck, a tablet pressed against her chest, a huge warm smile, three fingers raised. Diego Ramírez (11): a small wiry Salvadoran-American boy with light brown skin, short black hair spiked with gel, in an orange training bib with the number 12 over a T-shirt. Dozens of boys aged 10 to 12 of all skin tones in orange training bibs with big numbers, gathered in a wide half circle.",
+      "outfit": "BriBri in an orange training bib with the number 33 over his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, small soft round afro, on his tiptoes. Kaydoudou in an orange training bib with the number 34 over his faded forest-green shirt with white collar, black shorts, white socks, worn black boots, thin shaved part on the left side of his head, stiff and nervous.",
+      "action": "In the middle of the dome, Coach Whitfield raises three fingers and smiles at everyone while her other hand keeps the tablet against her chest, one fingertip touching the screen. In the front row, BriBri bounces on his tiptoes, eyes wide, delighted. Next to him Kaydoudou stands very straight, lips pressed together, the face he had in the plane.",
+      "location": "Inside a huge white air dome over an indoor football pitch: synthetic turf of a too-bright green full of little black rubber grains, white curved ceiling high above, rows of floodlights.",
+      "light": "Bright white floodlights, almost summer warmth, soft shadows on the turf.",
+      "camera": "Wide shot from behind the coach's shoulder, the half circle of orange bibs facing her, the brothers in the front row.",
+      "alt": "Sous le grand dôme blanc, Coach Whitfield lève trois doigts en souriant ; BriBri sautille au premier rang, Kaydoudou reste raide et crispé."
+    },
+    {
+      "id": "ch10c",
+      "anchor": "Deux garçons se retournent. Kaydoudou laisse échapper un petit rire par le nez.",
+      "shot": "close",
+      "cast": [
+        "BRI",
+        "KAY"
+      ],
+      "extras": "Two boys of 11 in orange training bibs, one with pale skin and straight black hair, one with brown skin and short curls, turning round, puzzled.",
+      "outfit": "BriBri in an orange training bib with the number 33 over his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, small soft round afro. Kaydoudou in an orange training bib with the number 34 over his faded forest-green shirt, thin shaved part on the left side of his head.",
+      "action": "BriBri has cupped both hands in front of his mouth like a wooden whistle and blows an owl call, cheeks puffed, eyes sparkling with mischief. Kaydoudou, who looked so tense, lets out a little laugh through his nose, his shoulders finally dropping. Behind them two boys turn round to see where the owl noise comes from.",
+      "location": "The side of a small-sided game area inside the white football dome, cones and small goals on the bright synthetic turf.",
+      "light": "White floodlight from above, warm skin tones, soft background.",
+      "camera": "Close two-shot at the brothers' eye level, BriBri's cupped hands in the foreground, Kaydoudou's first smile in sharp focus.",
+      "alt": "BriBri souffle dans ses mains comme le sifflet-hibou de Tonton Fokou, et Kaydoudou laisse enfin échapper un petit rire."
+    },
+    {
+      "id": "ch10d",
+      "anchor": "Une passe qui traverse tout le dôme.",
+      "shot": "dynamic",
+      "cast": [
+        "BRI",
+        "KAY"
+      ],
+      "extras": "Tyler Brooks (12): a tall, broad-shouldered white boy with very pale blond hair, almost white, in an orange training bib over a dark T-shirt, black socks pulled perfectly up to his knees, twisting round too late. Midfielders aged 11 to 12 in orange training bibs, heads tilted back to follow the ball. Far behind, Coach Dana Whitfield with her brown ponytail and tablet, no longer smiling, staring.",
+      "outfit": "BriBri in an orange training bib with the number 33 over his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, small soft round afro bouncing as he sprints. Kaydoudou in an orange training bib with the number 34 over his faded forest-green shirt, black shorts, white socks, worn black boots, thin shaved part on the left side of his head, two fingers of his right hand still raised.",
+      "action": "The long pass lands. The ball drops from high under the white roof right in front of BriBri, who sprints along the right touchline behind Tyler. Tyler spins round, too late, eyes on the ball. Far back in the middle of the dome, Kaydoudou stands after his strike, right hand still showing two fingers.",
+      "location": "The full length of the inside of the white football dome: bright synthetic turf with black rubber grains flying, white curved roof, floodlights.",
+      "light": "Bright white floodlights, the ball catching a highlight at the top of its arc, grains of rubber sparkling.",
+      "camera": "Dynamic wide angle from the right touchline at BriBri's height, the falling ball in the upper centre, Tyler turning in the middle, Kaydoudou tiny in the far background.",
+      "alt": "La passe de Kaydoudou traverse tout le dôme et retombe devant BriBri, qui file le long de la ligne dans le dos de Tyler."
+    }
+  ]
+}

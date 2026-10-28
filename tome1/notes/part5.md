@@ -51,3 +51,11 @@ Corner d'Amstelland à la 92e. Freddie capte, refuse de dégager (paume de Kaydo
 
 ## Illustrations (direction artistique : un moment précis, les deux frères acteurs)
 - 33 : la cage, Kaydoudou dos à Okafor joue en une touche, BriBri lui remet dans le vide. 34 : Jaden « tacle l'air » dans une flaque, BriBri a déjà lâché le ballon vers Kaydoudou. 35 : pressing à deux (Jaden de face, Kaydoudou en ombre), BriBri surgit pour conclure. 36 : BriBri sur le banc propose le njangi, Kaydoudou lui souffle le mot anglais. 37 : récupération de Kaydoudou, passe en profondeur, BriBri déjà parti, Atéba derrière la main courante. 38 : deux doigts levés sous la neige, BriBri démarre. 39 : Mami écrit la devise, Kaydoudou tient le carnet, BriBri fait tourner le ballon. 40 : la remise du une-deux de la finale, BriBri dans le dos des défenseurs orange.
+
+## Apparence des personnages anglais (fixée pour les illustrations, octobre 2026)
+- **Jaden** : grand garçon noir britannique, athlétique, peau brun foncé, cheveux noirs coupés très court.
+- **Freddie** (gardien) : très grand garçon blanc, cheveux roux cuivré, taches de rousseur jusqu'aux paupières.
+- **Arjun** : britannique d'origine sud-asiatique.
+- **Theo** : garçon blanc aux cheveux blonds.
+- Maillot de match du Real Club Atlético Castellana (partie IV) : blanc à liserés violets, gardien en violet.
+- Gestes nommés des chapitres 31 à 35 : « la machine à coudre de Mami » (31), « le une-deux du Njangi, version anglaise » (33), « le coup du pigeon » (34), « le monstre à deux têtes » (35).

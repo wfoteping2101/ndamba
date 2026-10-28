@@ -8,131 +8,315 @@ resume: La finale de la Coupe des Académies, dans un vrai stade, contre les Né
 illustration: Plan large en légère plongée sur la pelouse d'un vrai stade de Londres, un soir d'avril, sous les projecteurs ; l'herbe mouillée brille. À l'entrée de la surface, Kaydoudou, numéro 8 en maillot vert sombre aux manches blanches, raie dessinée à gauche, remet le ballon d'une seule touche, deux doigts de la main gauche à demi levés. BriBri, chaussettes dépareillées rouge et jaune, afro au vent, est déjà parti dans le dos des défenseurs, les yeux sur le ballon. Derrière lui, deux défenseurs en orange vif, attirés par son dribble, se retournent trop tard. Au fond, dans la tribune, un minuscule foulard rouge et jaune. Émotion : la dernière seconde, la confiance totale.
 ---
 
-Avant de lacer ses crampons, BriBri versa une pincée de terre rouge dans sa chaussette rouge.
+Une pincée de terre rouge tombe dans la chaussette rouge.
 
-Kaydoudou en mit une dans sa chaussure gauche, sans rien dire. Puis le petit pot de confiture de Tonton Fokou fit le tour du vestiaire, de main en main, et chacun en prit un peu. Freddie dans ses gants. Jaden dans la poche de son short. Callum, qui avait fait briller tous les crampons la veille, hésita longtemps avant de salir les siens, puis il en mit quand même. Quand le pot revint, il était vide. La terre de Bonamoussadi allait jouer la finale avec les onze garçons de Kingsbridge.
+« Voilà, chuchote BriBri en la tapotant. Bonamoussadi joue avec moi. »
 
-Le stade s'appelait Wharfside Park. C'était un vrai stade, au bord de la Tamise, avec huit mille sièges rouges, des projecteurs aussi hauts que des grues et une pelouse si verte qu'elle avait l'air peinte. BriBri, sur la pointe des pieds, cherchait la tribune.
+Kaydoudou en verse une pincée dans sa chaussure gauche. Sans un mot.
 
-Il les trouva tout de suite. Au premier rang, deux bonnets tricolores : celui que Maman avait tricoté pour Papa à Waldorf, et celui de Monsieur Atéba. Et entre les deux, tout petit, un foulard rouge et jaune. Plus haut, Maya et Grace agitaient une pancarte en carton : GO JADEN GO.
+Puis le pot de Tonton Fokou passe de main en main.
 
-Pendant l'échauffement, les frères sortirent le ballon de Mami devant la tribune. Dix passes. Pied, cuisse, tête. Mami se mit à compter à voix haute, en ghomala'. Le public anglais ne comprenait rien, mais il compta avec elle, en anglais, de plus en plus fort, et à « ten ! » toute la tribune applaudit un vieux ballon rapiécé.
+« In my gloves », dit Freddie. Dans mes gants.
 
-Poing contre poing. Main sur le cœur. Au premier rang, Mami posa la main sur le sien.
+« In my pocket. » Jaden glisse sa pincée dans la poche de son short. « For Maya and Grace. »
+
+« Pour ma grand-mère de Leicester », dit Arjun.
+
+« Pour mes gâteaux horribles », dit Tom.
+
+Callum, lui, regarde ses crampons.
+
+« Je les ai tous fait briller hier, gémit-il. Les salir ? Maintenant ? »
+
+« C'est de la terre de njangi, dit BriBri. Elle ne salit pas. Elle porte bonheur. »
+
+Callum ferme les yeux et en met quand même. « For the njangi. »
+
+Quand le pot revient, il est vide.
+
+« La terre de Bonamoussadi va jouer la finale, chuchote BriBri. Avec les onze. »
 
 * * *
 
-Le FC Amstelland entra en orange vif. Quatre matchs, quatre victoires, un seul but encaissé. Ils faisaient circuler le ballon comme des Catalans et couraient comme des Anglais. Leur numéro 6, un grand roux silencieux, avait reçu une seule mission : suivre Kaydoudou partout. Il le suivit partout. BriBri se demanda s'il allait le suivre aussi jusqu'aux toilettes à la mi-temps.
+« Wharfside Park ! » lit BriBri. Un vrai stade, au bord de la Tamise.
 
-La première demi-heure fut un incendie. Les Néerlandais pressaient haut, en meute, et chaque ballon brûlait. À la 27e minute, ils firent une passe, une remise, une passe dans la course du troisième homme, et leur numéro 10 marqua d'une frappe sèche. 0-1. La tribune orange chanta. BriBri sentit le froid entrer dans son ventre.
+« Huit mille sièges rouges ! s'écrie-t-il, sur la pointe des pieds. Des projecteurs hauts comme des grues ! Et la pelouse, on dirait qu'elle est peinte ! »
 
-À la mi-temps, Okafor ne cria pas. Il leva seulement la petite ardoise : NJANGI. Et en dessous, il écrivit : « Breathe. »
+Soir d'avril. L'herbe mouillée brille.
 
-En deuxième période, Kingsbridge fit respirer le ballon, et les orange se mirent à courir. À la 64e minute, un défenseur néerlandais fit une passe en arrière. Le déclencheur. Jaden partit comme un train de marchandises, Theo coupa la passe vers l'autre côté, et le ballon tomba dans les pieds de Jaden à vingt-cinq mètres du but. Premier regard devant : le gardien était avancé. Jaden frappa. 1-1. Il ne courut pas vers les supporters. Il courut vers la pancarte en carton, et Maya et Grace hurlèrent si fort qu'on les entendit sur le terrain.
+« Ils sont là ! Premier rang ! Les deux bonnets tricolores ! Celui que Maman a tricoté pour Papa à Waldorf, et celui de Monsieur Atéba ! Et entre les deux... »
 
-Puis les minutes fondirent. Les jambes aussi.
+Entre les deux, un petit foulard rouge et jaune.
+
+« Et là-haut ! » crie Freddie.
+
+Maya et Grace agitent une pancarte en carton : GO JADEN GO.
+
+À l'échauffement, les frères jonglent avec le ballon de Mami devant la tribune. Mami compte en ghomala'. Le public anglais ne comprend rien, mais il compte avec elle, en anglais, de plus en plus fort.
+
+« Seven ! Eight ! Nine ! TEN ! »
+
+Toute la tribune applaudit un vieux ballon rapiécé.
+
+Poing contre poing. Main sur le cœur. Au premier rang, Mami pose la main sur le sien.
 
 * * *
 
-À la 92e minute, Amstelland obtint un corner. Tous les orange montèrent, même leurs défenseurs centraux. Okafor avait laissé BriBri devant, tout seul, collé à la ligne de touche gauche, pour obliger un défenseur à rester avec lui. Capitaine Largeur. Invisible et utile.
+Le FC Amstelland entre en orange vif.
 
-Le ballon tomba dans la surface. Une forêt de bras. Et deux bras plus longs que les autres, deux bras de pieuvre, qui le cueillirent tout en haut.
+« Quatre matchs, quatre victoires, un seul but encaissé, récite Arjun. Ils font tourner le ballon comme des Catalans. Et ils courent comme des Anglais. Et leur numéro 6, le grand roux, il ne dit jamais un mot. »
 
-Freddie.
+« Lui, c'est l'Ombre, dit Kaydoudou. Sa mission, c'est de me suivre partout. »
 
-« KICK IT ! » hurlèrent les supporters de Kingsbridge. Dégage ! Il restait une minute.
+Il le suit partout.
 
-Freddie ne dégagea pas. Il regarda Kaydoudou. Kaydoudou, au milieu des orange qui redescendaient, tendit la paume vers le sol : doucement, garde-le. Alors Freddie posa le ballon et le fit rouler vers Samir, au bord de la surface.
+« Il va te suivre jusqu'aux toilettes à la mi-temps ? » chuchote BriBri.
 
-« Un », murmura BriBri.
+« If he does, I want photos », lance Freddie.
 
-Il ne comptait jamais les passes. Ça, c'était le travail de son frère. Mais ce soir-là, depuis sa ligne de touche, il voyait tout le terrain devant lui comme une carte, et il se mit à compter.
+La première demi-heure est un incendie. Les orange pressent haut, en meute.
 
-Le numéro 9 néerlandais fonça sur Samir. Samir ne bougea pas. Il attendit une demi-seconde de plus, la pausa d'Avi Ramon, apprise chaque jeudi dans le rondo du njangi. Le numéro 9 s'engagea, et le ballon partit dans son dos, vers Tom. Deux.
+« Vite ! Ça brûle ! » crie Tom.
 
-Tom ne se pressa pas. Il fit une passe sur le côté, vers Ollie. Une passe polie. Mais une passe polie qui préparait la suivante, comme disait Marcus. Trois.
+27e minute. Une passe, une remise, une passe dans la course du troisième homme. Leur numéro 10 frappe sec. Chhh.
 
-Kaydoudou, lui, n'avait pas encore touché le ballon. L'ombre rousse ne le lâchait pas. Mais il parlait, il montrait, il dirigeait avec les mains comme un chef d'orchestre, et chacun de ses mots était une passe.
+0-1.
 
-Trois orange arrivèrent sur Ollie, près de la ligne de touche. Ils connaissaient les déclencheurs, eux aussi.
+« J'ai froid dans le ventre », souffle BriBri.
 
-« Homme ! » cria Kaydoudou.
+À la mi-temps, Okafor ne crie pas. Il lève sa petite ardoise, NJANGI, et ajoute un mot en dessous.
 
-Ollie, qui ne parlait jamais, n'avait pas besoin de parler. Il écouta. Il joua avant le contact, d'une seule touche, vers Arjun, qui venait de faire deux pas de côté pour sortir de derrière son adversaire et redevenir une solution. Quatre. Les trois orange taclèrent l'air.
+« Breathe », lit BriBri à voix haute.
 
-Arjun reçut entre les lignes, dos au but. Il ne se retourna pas. Il remit en une touche vers Jaden, qui arrivait lancé. Tous les orange regardaient Arjun. Aucun ne vit Jaden. Le troisième homme. Cinq. Six.
+« Respirer, dit Kaydoudou. Comme contre les Allemands. »
 
-Jaden avait couru quatre-vingt-douze minutes. Ses jambes devaient brûler comme un feu de bois. Il emporta le ballon sur vingt mètres, sans se plaindre, comme il portait tout le reste. Premier regard devant : fermé. Alors il ne força pas. Il ouvrit sur la droite, vers Callum, resté collé à sa ligne depuis le début. Sept.
+« Like old men », sourit Jaden. Comme des vieux.
 
-Deux orange se jetèrent sur Callum. Il ne dribbla pas. Il les avait attirés, c'était suffisant. Il donna à Theo, qui décrochait vers lui. Huit.
+En deuxième période, le ballon respire. Les orange courent.
 
-Theo, dos au but, fit le mur. Une seule touche. Pas en arrière : en diagonale, vers la gauche, fort et vite, là où il n'y avait plus personne. Lent, lent, vite. Reece, le latéral gauche, celui dont la part du njangi était de chanter faux l'hymne de Freddie, arrivait dans le couloir vide. Neuf.
+64e minute. Un défenseur orange fait une passe en arrière. Le déclencheur.
 
-Neuf joueurs avaient touché le ballon. Il en restait deux. Les frères.
+« NOW ! » crie Kaydoudou.
 
-Reece leva la tête et vit, tout seul contre la ligne, le petit ailier aux chaussettes dépareillées.
+Jaden part comme un train de marchandises. Theo coupe la passe vers l'autre côté. Le ballon tombe pour Jaden, à vingt-cinq mètres.
 
-Dix. C'était lui.
+« Regarde devant ! hurle BriBri. Le gardien est avancé ! »
 
-BriBri avait regardé trois fois par-dessus son épaule avant que le ballon arrive. Il savait déjà tout. Son premier contrôle l'éloigna de son défenseur, vers l'intérieur. Puis il conduisit lentement vers l'axe, très lentement, pour qu'on le voie bien. Le dribble njangi. Celui qui attire et qui donne. Le défenseur central orange sortit sur lui. Et le grand roux, l'ombre de Kaydoudou, fit pour la première fois de la soirée une erreur : il regarda le ballon au lieu de regarder Kaydoudou, et il vint lui aussi.
+Jaden frappe. Bam !
+
+1-1 !
+
+Jaden ne court pas vers les supporters, mais vers la pancarte en carton.
+
+« GO JADEN GO ! » hurlent Maya et Grace, si fort qu'on les entend sur tout le terrain.
+
+Puis les minutes fondent. Les jambes aussi.
+
+* * *
+
+92e minute. Corner pour Amstelland.
+
+Tous les orange montent, même les défenseurs.
+
+« Socks, stay ! » crie Okafor.
+
+BriBri reste devant, seul contre la ligne de touche gauche, pour qu'un défenseur orange reste avec lui.
+
+« Capitaine Largeur, chuchote BriBri. Invisible et utile. »
+
+Le ballon tombe dans la surface. Une forêt de bras. Et deux bras de pieuvre le cueillent tout en haut.
+
+« FREDDIE ! »
+
+« KICK IT ! » hurlent les supporters de Kingsbridge. Dégage ! Il reste une minute !
+
+Freddie ne dégage pas. Il regarde Kaydoudou, qui tend la paume vers le sol, au milieu des orange.
+
+« Garde-le. Doucement. »
+
+Freddie pose le ballon et le fait rouler vers Samir.
+
+« Un », murmure BriBri.
+
+D'habitude, compter, c'est le travail de son frère. Ce soir, BriBri voit tout le terrain comme une carte. Il met la main devant la bouche, comme Radio sur la terre rouge.
+
+« Mesdames et messieurs ! Le numéro 9 orange fonce sur Samir. Samir ne bouge pas. Il attend... il attend... la pausa d'Avi Ramon, apprise chaque jeudi au rondo du njangi ! »
+
+« Le 9 se jette dans le vide ! »
+
+« Et c'est pour Tom ! Deux ! Tom ne se presse pas. Il glisse sur le côté, vers Ollie. Une passe polie ! Mais une passe polie qui prépare la suivante, comme disait Marcus ! Trois ! Et Kaydoudou n'a toujours pas touché le ballon, mesdames et messieurs ! L'Ombre est collée à son dos ! »
+
+Alors Kaydoudou joue avec sa voix, et ses mains dirigent comme un chef d'orchestre.
+
+« Arjun, sors de son dos ! Callum, reste large ! Reece, monte ! Monte ! »
+
+« Trois orange sur Ollie, près de la touche ! souffle BriBri. Eux aussi connaissent les déclencheurs ! »
+
+« HOMME ! » crie Kaydoudou.
+
+« Ollie ne parle jamais, mais Ollie écoute ! souffle BriBri. Une touche, avant le contact ! Pour Arjun, qui vient de faire deux pas de côté ! Quatre ! Et les trois orange taclent le vent ! »
+
+« Arjun reçoit entre les lignes, dos au but. Il ne se retourne pas ! Remise en une touche ! Tous les orange regardent Arjun, et personne ne voit Jaden ! Le troisième homme ! Cinq ! Six ! »
+
+« Jaden a couru quatre-vingt-douze minutes, mesdames et messieurs. Ses jambes brûlent comme un feu de bois. Et il porte le ballon sur vingt mètres sans se plaindre, comme il porte tout le reste. »
+
+« Regarde devant, Jaden ! » crie Kaydoudou.
+
+« Premier regard devant : fermé ! Il ne force pas ! Il ouvre à droite, pour Callum, collé à sa ligne depuis le début ! Sept ! »
+
+« Deux orange se jettent sur Callum ! »
+
+« Il ne dribble pas ! Il les attire, et ça suffit ! Pour Theo ! Huit ! »
+
+« Theo fait le mur. Une touche. Pas en arrière... en diagonale ! Fort et vite, là où il n'y a plus personne ! Lent, lent... VITE ! Et voilà Reece, le latéral gauche, dans le couloir vide ! Reece, qui chante faux l'hymne de Freddie ! Neuf ! Neuf joueurs ont touché le ballon. Il en reste deux. »
+
+Les frères.
+
+« Reece lève la tête... et il voit, tout seul contre la ligne, le petit ailier aux chaussettes dépareillées ! Dix ! » BriBri s'arrête de commenter. « Ça, c'est moi. »
+
+Il a regardé trois fois par-dessus son épaule. Il sait tout. Son premier contrôle l'éloigne de son défenseur, vers l'intérieur. Puis il conduit le ballon vers le milieu, très lentement, pour qu'on le voie bien.
+
+« Le dribble njangi, souffle-t-il. Venez. Regardez-moi. »
+
+Le central orange sort sur lui. Et l'Ombre fait sa première erreur de la soirée.
+
+*Il regarde le ballon ! Pas Kaydoudou ! Il vient, lui aussi !*
 
 Deux orange sur BriBri. Et Kaydoudou, libre, enfin, à l'entrée de la surface.
 
-BriBri donna.
+BriBri donne.
 
-Onze.
+« Onze. Tout le monde a touché. »
 
-Le ballon était passé par tout le monde. Tout le monde avait touché.
+Kaydoudou commence à lever deux doigts de la main gauche. Il n'a pas le temps de finir. BriBri est déjà parti.
 
-Kaydoudou commença à lever deux doigts. Il n'eut pas le temps de les lever complètement : BriBri était déjà parti. Le une-deux du Njangi, comme sur la terre rouge, comme partout depuis. Kaydoudou remit d'une seule touche, du plat du pied, dans le dos des deux orange qui se retournaient trop tard.
+Le une-deux du Njangi. Comme sur la terre rouge.
 
-BriBri se retrouva seul devant le gardien.
+Kaydoudou remet d'une touche, du plat du pied, dans le dos des deux orange. Ils se retournent. Trop tard.
 
-Le stade se tut, comme les tambours de Bonamoussadi le jour des tirs au but. BriBri entendit son cœur. Il pensa à ce tir-là, le jour de la finale des quartiers, quand il avait voulu faire quelque chose d'extraordinaire et que le ballon était parti au-dessus des bambous, dans le grillage de Monsieur Bilé.
+Et le temps s'arrête.
 
-Ce soir, il ne voulait rien faire d'extraordinaire.
+BriBri court, l'afro au vent, les yeux sur le ballon. L'herbe mouillée brille sous les projecteurs. Tout au fond, dans la tribune, un minuscule foulard rouge et jaune.
 
-Il ouvrit le pied et il fit ce qu'il avait appris à faire depuis le premier jour. Une passe. La dernière passe du Njangi, vers le seul partenaire qui ne rate jamais rien : le filet.
+Seul devant le gardien.
 
-2-1.
+Le stade se tait, comme les tambours de Bonamoussadi le jour des tirs au but. Boum. Boum. C'est son cœur.
 
-Il courut. Il ne savait plus où étaient ses jambes, il savait seulement où était le poteau de corner, juste devant la tribune. Il y arriva, mit une main sur son ventre, leva l'autre vers le ciel, et ses hanches se mirent à tourner comme une pirogue sur le fleuve. La danse de Roger Milla, devant tout le stade.
+Il pense à ce tir-là, en finale des quartiers. Il a voulu faire quelque chose d'extraordinaire, et le ballon est parti au-dessus des bambous, dans le grillage de Monsieur Bilé.
 
-Puis il la vit.
+*Ce soir, rien d'extraordinaire.*
 
-Mami avait descendu les quelques marches de la tribune une à une, avec sa canne, jusqu'à la main courante. Un steward en gilet jaune voulut l'arrêter, la regarda, et s'écarta très poliment. Alors Mami leva sa canne au-dessus de sa tête comme une épée, et elle dansa. Elle dansa avec lui, de l'autre côté de la barrière, le foulard qui glissait, la hanche qui avait oublié qu'elle était blessée, et elle chanta la chanson du njangi, celle qui monte et qui descend. Dans la tribune, Maman pleurait et riait. Papa chantait faux.
+Il ouvre le pied. Il fait ce qu'il apprend depuis le premier jour. Une passe. La dernière passe du Njangi, vers le seul partenaire qui ne rate jamais rien.
 
-Les maillots verts arrivèrent de partout et BriBri disparut dessous. Kaydoudou arriva le dernier. Sous la montagne, dans le noir, BriBri trouva son poing. Poing contre poing. Main sur le cœur.
+Le filet.
 
-Amstelland eut à peine le temps de remettre le ballon au centre. L'arbitre siffla trois fois. Kingsbridge Albion avait gagné la Coupe des Académies.
+Chhhhh.
+
+2-1 !
+
+Le stade explose.
+
+BriBri court jusqu'au poteau de corner, juste devant la tribune. Il ne sent plus ses jambes. Main sur le ventre, doigt vers le ciel, les hanches qui tournent comme une pirogue sur le fleuve : la danse de Roger Milla.
+
+Puis il la voit.
+
+Mami a descendu les marches de la tribune, une à une, avec sa canne, jusqu'à la barrière. Un agent de sécurité en gilet jaune veut l'arrêter. Il la regarde. Il s'écarte, très poliment.
+
+« After you, madam. »
+
+Alors Mami lève sa canne au-dessus de sa tête, comme une épée.
+
+Et elle danse.
+
+De l'autre côté de la barrière, avec lui. Le foulard qui glisse. Elle chante la chanson du njangi, celle qui monte et qui descend.
+
+« Mami ! Ta hanche ! »
+
+« Ma hanche a oublié qu'elle était blessée ! Danse, mon lion ! »
+
+Dans la tribune, Maman pleure et rit. Papa chante faux.
+
+« SOCKS ! SOCKS ! »
+
+Les maillots verts arrivent de partout, et BriBri disparaît dessous. Kaydoudou arrive le dernier. Sous la montagne, dans le noir, BriBri trouve son poing.
+
+Poing contre poing. Main sur le cœur.
+
+« Tout le monde a touché, souffle Kaydoudou. Promis. »
+
+« Tenu. »
+
+Amstelland a à peine le temps de remettre au centre. L'arbitre siffle trois fois.
+
+Kingsbridge Albion gagne la Coupe des Académies.
 
 * * *
 
-Le couloir sous la tribune sentait le gazon, la sueur et la pommade chauffante. Derrière la porte du vestiaire, Freddie chantait un hymne qu'il inventait au fur et à mesure, et toute l'équipe tapait sur les casiers.
+Le couloir sent le gazon, la sueur et la pommade chauffante. Dans le vestiaire, Freddie chante un hymne qu'il invente au fur et à mesure.
 
-Kaydoudou avait encore la médaille autour du cou, et elle lui semblait plus lourde qu'un ballon. Il était sorti chercher son frère, qui cherchait Mami. Ce fut Monsieur Atéba qui les trouva.
+« Octopus and Socks ! Njangi, njangi, oh ! »
 
-Il avait toujours son long manteau noir et son bonnet tricolore. Mais pour la première fois, il souriait. Il sortit de sa poche une enveloppe blanche, avec un petit lion imprimé dans un coin, vert, rouge et jaune.
+Toute l'équipe tape sur les casiers. Bam-bam-bam.
 
-« Ouvrez-la ensemble », dit-il.
+Kaydoudou a retrouvé son frère, qui cherche Mami partout. Il a encore la médaille autour du cou.
 
-Les mains de Kaydoudou tremblaient. BriBri lisait par-dessus son épaule en remuant les lèvres. Fédération camerounaise de football. Convocation. Stage des Lionceaux U17. Juillet. Au Cameroun.
+« Elle est lourde, hein ? » dit BriBri.
 
-« Vous m'avez montré votre tête, dit Monsieur Atéba. Et ce soir, vous m'avez montré autre chose. Onze joueurs qui pensaient avec la même tête. » Il serra la main de Kaydoudou, puis celle de BriBri, entre les deux siennes. « Le pays a besoin de ça. »
+« Plus lourde qu'un ballon. »
 
-Les Lionceaux. Kaydoudou pensa aux Lionceaux de Bonamoussadi, à Tonton Fokou sur son bidon jaune, à Ousmane, à Mireille. Le même nom. Les mêmes lions. Ils allaient rentrer à la maison. Sur la terre rouge. Avec le Njangi dans la tête.
+C'est Monsieur Atéba qui les trouve. Long manteau noir, bonnet tricolore. Et pour la première fois, il sourit.
 
-Papa arriva en courant au bout du couloir et lut la lettre. Il n'accusa ni la poussière, ni le vent, ni la pluie. Il pleura, simplement, comme le petit garçon de six ans qu'il avait été en 1990.
+« Alors, l'espion ? dit BriBri. Vous avez trouvé votre trésor ? »
+
+« Peut-être. » Il sort de sa poche une enveloppe blanche. Dans un coin, un petit lion imprimé, vert, rouge et jaune. « Ouvrez-la ensemble. »
+
+Les mains de Kaydoudou tremblent. BriBri lit par-dessus son épaule.
+
+« Fédération camerounaise de football. Convocation. Stage des Lionceaux U17. Juillet. Au Cameroun. » Sa voix monte d'un coup. « AU CAMEROUN ! »
+
+« Vous m'avez montré votre tête, dit Monsieur Atéba. Et ce soir, vous m'avez montré autre chose. Onze joueurs qui pensaient avec la même tête. »
+
+Il serre leurs mains, l'une après l'autre, entre les deux siennes.
+
+« Le pays a besoin de ça. »
+
+« Merci, monsieur », dit Kaydoudou. Sa voix ne tremble pas.
+
+« Les Lionceaux, souffle BriBri. Comme à Bonamoussadi. »
+
+« Le même nom, dit Kaydoudou. Les mêmes lions. Tonton Fokou sur son bidon jaune. Ousmane. Mireille. On rentre à la maison, BriBri. Sur la terre rouge. Avec le Njangi dans la tête. »
+
+Au bout du couloir, Papa arrive en courant.
+
+« Juillet... Au Cameroun... » lit-il. Il n'accuse ni la poussière, ni le vent, ni la pluie.
+
+Il pleure, simplement. Comme le petit garçon de six ans qu'il était en 1990.
 
 * * *
 
-Ce soir-là, dans la cuisine de Lewisham, Mami demanda le feutre noir.
+Le soir, dans la cuisine de Lewisham, Mami tend la main.
 
-Elle prit le ballon et chercha longtemps. Il n'y avait plus de place nulle part, sauf à un seul endroit, où personne n'avait jamais osé écrire : le carré de pagne rouge et jaune. Elle écrivit dessus, de sa grande écriture de couturière : « Nyanga. Les comptes sont bons. »
+« Le feutre noir. »
 
-Plus tard, sous le toit penché, quand toute la maison dormit, Kaydoudou ouvrit le carnet de Tonton Fokou. Il relut la page du Njangi, l'écriture de Mami sous la sienne. Le cœur, la raison, les yeux, la carte, le souffle : ce soir, les cinq pièces avaient joué ensemble. Il tourna la page et trouva la dernière page blanche. Sur l'étagère, à côté du ballon, le petit pot de confiture était vide. En juillet, ils le rempliraient.
+Elle prend le ballon. Elle cherche longtemps.
 
-Il prit son stylo et écrivit :
+« Il n'y a plus de place, Mami, dit BriBri. Tout le monde a signé. »
+
+« Pas tout le monde. » Mami pose le doigt sur le carré de pagne rouge et jaune, le seul endroit où personne n'a jamais osé écrire. « La présidente signe en dernier. »
+
+Elle écrit, de sa grande écriture de couturière :
+
+« Nyanga. Les comptes sont bons. »
+
+Plus tard, sous le toit penché, Kaydoudou ouvre le carnet. Il relit la page du Njangi, l'écriture de Mami sous la sienne.
+
+« Le cœur, la raison, les yeux, la carte, le souffle, murmure-t-il. Ce soir, les cinq pièces ont joué ensemble. »
+
+Il tourne la page. La dernière page blanche.
+
+Sur l'étagère, à côté du ballon, le petit pot de confiture est vide. En juillet, ils le rempliront. Sur la terre rouge.
+
+Il écrit :
 
 « Tome 2 : La Tanière des Lionceaux. Rendez-vous en 2030. Ou en 2034. Le ballon voyage encore. »
 

@@ -272,7 +272,7 @@ Dans le vestiaire, Freddie fait asseoir tout le monde. Il sort de son sac une m�
 
 « C'est de l'or ? » demande BriBri.
 
-« Cornflakes gold. »
+« Cereal gold. »
 
 Freddie fredonne un hymne très solennel, qu'il invente au fur et à mesure. « Oh Socks, oh Socks, he never fell down... » Les joueurs tapent en rythme sur les casiers. Boum, boum, boum. Puis Freddie passe la médaille au cou de BriBri.
 
