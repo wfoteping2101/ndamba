@@ -252,7 +252,7 @@ Kingsbridge Albion gagne la Coupe des Académies.
 
 * * *
 
-Le couloir sent le gazon, la sueur et la pommade chauffante. Dans le vestiaire, Freddie chante un hymne qu'il invente au fur et à mesure.
+Dans le vestiaire, Freddie chante un hymne qu'il invente au fur et à mesure.
 
 « Octopus and Socks ! Njangi, njangi, oh ! »
 
@@ -279,6 +279,10 @@ Les mains de BriBri tremblent. Kaydoudou lit par-dessus son épaule.
 Il serre leurs mains, l'une après l'autre, entre les deux siennes.
 
 « Le pays a besoin de ça. »
+
+Il sourit à Kaydoudou. « Toi, tu seras le plus jeune du stage. Surclassé, comme ici. »
+
+« J'ai l'habitude ! »
 
 « Merci, monsieur », dit BriBri. Sa voix ne tremble pas.
 

@@ -38,7 +38,7 @@ Il plonge les deux mains dans la glacière de Mrs. Brooks, la maman de Tyler.
 
 « Blue is good, dit Kaydoudou. Blue is cold. »
 
-Pour tout le tournoi, Kaydoudou joue avec les U12. Il garde son numéro 33, le « sept caché ».
+Pour tout le tournoi, Kaydoudou reste surclassé avec les U12, le plus petit de l'équipe. Il garde son numéro 33, le « sept caché ».
 
 « Thirty-three, I'm counting on you », lui a dit Coach Whitfield.
 

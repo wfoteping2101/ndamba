@@ -114,7 +114,7 @@ Elle ne crie pas. BriBri aurait préféré qu'elle crie.
 
 « Je passe mes nuits avec des vieilles dames qui ne savent plus leur nom. Et mes jours avec des livres qui me brûlent les yeux. Je fais ça parce que l'école, ça ouvre des portes. Pour moi. Pour vous. Tu connais la règle. »
 
-Il la connaît. Chez les Ngassa, elle n'est écrite nulle part. Elle est gravée partout.
+Il la connaît. À la maison, elle n'est écrite nulle part. Elle est gravée partout.
 
 « Pas de devoirs, pas de crampons », dit-il.
 

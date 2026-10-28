@@ -63,7 +63,7 @@ export const TOME1_TOC: TocEntry[] = [
   "title": "Finale à Bonamoussadi",
   "part": 1,
   "pov": "Kaydoudou",
-  "summary": "La finale du tournoi des quartiers contre les Panthères de Deïdo, devant Mami venue de Bafoussam et tout Bonamoussadi. Deux jours plus tard, un avion attend les frères Ngassa."
+  "summary": "La finale du tournoi des quartiers contre les Panthères de Deïdo, devant Mami venue de Bafoussam et tout Bonamoussadi. Deux jours plus tard, un avion attend les deux frères."
  },
  {
   "no": 9,
@@ -135,7 +135,7 @@ export const TOME1_TOC: TocEntry[] = [
   "title": "Avant de recevoir, tu regardes",
   "part": 3,
   "pov": "BriBri",
-  "summary": "Les Ngassa s'installent à Bussy-Saint-Georges, où tout le monde parle français, mais pas tout à fait comme eux. À l'essai du centre de formation de l'Étoile Sportive de Marne, un entraîneur à moustache grise pose à BriBri une question à laquelle il ne sait pas répondre."
+  "summary": "La famille s'installe à Bussy-Saint-Georges, où tout le monde parle français, mais pas tout à fait comme eux. À l'essai du centre de formation de l'Étoile Sportive de Marne, un entraîneur à moustache grise pose à BriBri une question à laquelle il ne sait pas répondre."
  },
  {
   "no": 18,
@@ -175,7 +175,7 @@ export const TOME1_TOC: TocEntry[] = [
   "title": "Noël sans Mami",
   "part": 3,
   "pov": "Kaydoudou",
-  "summary": "Paris s'illumine pour Noël, mais il manque quelqu'un à la table des Ngassa, et même plusieurs. Avec son plâtre et l'aide de Lucas, Kaydoudou invente un jeu bizarre, tandis qu'un garçon tape tout seul dans un ballon contre un mur, dans le froid."
+  "summary": "Paris s'illumine pour Noël, mais il manque quelqu'un à la table de la famille, et même plusieurs. Avec son plâtre et l'aide de Lucas, Kaydoudou invente un jeu bizarre, tandis qu'un garçon tape tout seul dans un ballon contre un mur, dans le froid."
  },
  {
   "no": 23,

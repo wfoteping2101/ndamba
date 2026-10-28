@@ -176,7 +176,7 @@ Il commence la danse de Roger Milla. Lacombe lève un doigt.
 
 Le sifflet en métal retentit.
 
-« Tout le monde va boire, dit Lacombe. Les Ngassa. Venez ici. »
+« Tout le monde va boire, dit Lacombe. Le grand. Le petit. Venez ici. »
 
 « Ça y est, souffle Kenzo. Vous êtes punis. »
 
