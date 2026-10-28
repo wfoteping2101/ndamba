@@ -9,7 +9,7 @@ export default function Chips({ chips, onSend, onNavigate, scroll = false, class
   const nav = useNavigate()
   if (!chips.length) return null
   return (
-    <div className={cx('flex gap-1.5', scroll ? 'mola-noscroll -mx-1 overflow-x-auto px-1 pb-0.5' : 'flex-wrap', className)}>
+    <div className={cx('flex gap-1.5', scroll ? 'mola-noscroll -m-1.5 overflow-x-auto p-1.5' : 'flex-wrap', className)}>
       {chips.map((c) => {
         const { label, route } = chipInfo(c)
         return (

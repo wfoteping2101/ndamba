@@ -28,8 +28,10 @@ export function useMolaThread(limit = 80) {
 
 /** A Mola turn: the badge and the name at the start of a group, then the text set calmly on the page (no bubble).
  *  The person's words sit on the right in pitch green. The hub and the launcher share this panel. */
-export default function ChatPanel({ compact = false, limit = 80, before, after, onNavigate, autoFocus, className, inputId, prefill }: {
+export default function ChatPanel({ compact = false, limit = 80, before, after, onNavigate, autoFocus, className, inputId, prefill, chipsClassName }: {
   compact?: boolean; limit?: number; before?: ReactNode; after?: ReactNode; onNavigate?: () => void; autoFocus?: boolean; className?: string; inputId?: string
+  /** Extra classes for the suggestion chips above the composer (the hub hides them on wide screens, where the side list shows the same ideas). */
+  chipsClassName?: string
   /** Pre-fills the composer without sending (see Composer). */
   prefill?: { text: string; n: number }
 }) {
@@ -83,7 +85,7 @@ export default function ChatPanel({ compact = false, limit = 80, before, after, 
         </div>
       </div>
       <div className={cx('border-t border-line bg-paper', compact ? 'space-y-2 px-3 pb-3 pt-2.5' : 'space-y-2.5 px-4 pb-4 pt-3 sm:px-6')}>
-        {chips.length > 0 && <Chips chips={chips} onSend={(c) => askMola(c)} onNavigate={onNavigate} scroll />}
+        {chips.length > 0 && <Chips chips={chips} onSend={(c) => askMola(c)} onNavigate={onNavigate} scroll className={chipsClassName} />}
         <Composer id={inputId} onSend={(v) => askMola(v)} placeholder={t('composer.placeholder')} label={t('composer.label')} sendLabel={t('composer.send')} autoFocus={autoFocus} prefill={prefill} />
       </div>
     </div>

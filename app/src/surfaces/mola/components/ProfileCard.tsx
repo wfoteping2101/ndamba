@@ -52,7 +52,7 @@ export default function ProfileCard({ draft, onEdit, flash, className, bare = fa
   // half-width fields first (in pairs), the wide ones (players, goals) below; an odd one out takes the full row
   const all = bare ? fields : fields.filter((f) => f !== 'name' && f !== 'role')
   const halves = all.filter((f) => !wide(f))
-  const grid = [...all.filter((f) => f === 'teamName' || f === 'club'), ...halves, ...all.filter((f) => f === 'players' || f === 'goals')]
+  const grid = [...halves.filter((f) => f === 'name' || f === 'role'), ...all.filter((f) => f === 'teamName' || f === 'club'), ...halves.filter((f) => f !== 'name' && f !== 'role'), ...all.filter((f) => f === 'players' || f === 'goals')]
   const full = (f: Field) => wide(f) || (halves.length % 2 === 1 && f === halves[halves.length - 1])
   const fl = (f: Field) => flash.includes(f)
   const editor = (f: Field) => <FieldEditor field={f} draft={draft} onDone={(v) => { if (v !== undefined) onEdit(f, v); setEditing(null) }} />

@@ -287,13 +287,13 @@ export default function Onboarding() {
   if (ready && profile && !restart && !creating) {
     return (
       <Shell onDemo={tryDemo} demoBusy={demoBusy}>
-        <div className="mx-auto flex max-w-lg flex-col items-center px-4 pb-16 pt-16 text-center sm:pt-28">
+        <div className="mx-auto flex max-w-xl flex-col items-center px-4 pb-16 pt-16 text-center sm:pt-28">
           <MolaAvatar size={76} />
           <h1 className="mt-6 text-[32px] text-ink sm:text-[40px]">{t('ob.back.title', { name: profile.name.split(' ')[0] })}</h1>
           <p className="mt-3 text-[16px] text-ink-muted">{t('ob.back.body', { app: BRAND.name })}</p>
           <div className="mt-8 flex w-full flex-col gap-2.5 sm:w-auto sm:flex-row">
             <Link to="/app" className="btn-primary btn-lg whitespace-nowrap">{t('ob.back.open')}</Link>
-            <button type="button" className="btn-outline btn-lg" onClick={startOver}><RotateCcw size={17} aria-hidden="true" />{t('ob.back.restart')}</button>
+            <button type="button" className="btn-outline btn-lg sm:whitespace-nowrap" onClick={startOver}><RotateCcw size={17} strokeWidth={1.75} aria-hidden="true" />{t('ob.back.restart')}</button>
           </div>
           <p className="mt-5 max-w-sm text-[13.5px] leading-relaxed text-ink-muted">{t('ob.back.note')}</p>
         </div>
@@ -311,7 +311,7 @@ export default function Onboarding() {
               <ProgressRing value={done} max={fields.length} />
               <span className="min-w-0 flex-1">
                 <span className="block truncate text-[15px] font-semibold text-ink">{draft.name || t('ob.card.eyebrow')}</span>
-                <span className="block truncate text-[13px] text-ink-muted">{summary || t('ob.card.title')}</span>
+                <span className="block truncate text-[13px] text-ink-muted first-letter:uppercase">{summary || t('ob.card.title')}</span>
               </span>
               <span className="text-[12.5px] font-semibold tabular-nums text-ink-muted">{t('ob.card.count', { done, total: fields.length })}</span>
               <ChevronDown size={18} className={cx('shrink-0 text-ink-muted transition', cardOpen && 'rotate-180')} aria-hidden="true" />

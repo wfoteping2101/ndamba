@@ -55,13 +55,13 @@ export default function MolaHub() {
   return (
     <div>
       <header className="mb-5 flex items-center gap-4 sm:mb-7">
-        <MolaAvatar size={52} busy={busy} className="sm:hidden" />
-        <MolaAvatar size={68} busy={busy} className="hidden sm:inline-grid" />
+        <MolaAvatar size={52} className="sm:hidden" />
+        <MolaAvatar size={68} className="hidden sm:inline-grid" />
         <div className="min-w-0">
           <h1 className="text-[30px] leading-none text-ink sm:text-[38px]">{t('name')}</h1>
           <p className="mt-1.5 text-[14.5px] text-ink-muted sm:text-[15.5px]">
-            <span className="font-semibold text-ink-soft">{t('agentOf', { app: BRAND.name })}</span>{' '}
-            <span className="hidden sm:inline">{busy ? t('hub.statusBusy') : t('hub.status')}</span>
+            <span className="font-semibold text-ink-soft">{t('agentOf', { app: BRAND.name })}</span>
+            <span className="hidden sm:inline">. {busy ? t('hub.statusBusy') : t('hub.status')}</span>
           </p>
         </div>
       </header>
@@ -71,7 +71,7 @@ export default function MolaHub() {
       {tab === 'chat' && (
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_288px]">
           <div className="-mx-4 flex h-[calc(100dvh-17rem)] min-h-[460px] flex-col overflow-hidden border-y border-line bg-paper sm:mx-0 sm:rounded-[22px] sm:border lg:h-[calc(100dvh-15.5rem)] lg:min-h-[560px]">
-            <ChatPanel className="h-full" after={<Suggestions />} autoFocus={typeof window !== 'undefined' && window.innerWidth >= 1024} prefill={prefill} />
+            <ChatPanel className="h-full" chipsClassName="lg:hidden" after={<Suggestions />} autoFocus={typeof window !== 'undefined' && window.innerWidth >= 1024} prefill={prefill} />
           </div>
           <aside className="hidden lg:block">
             <Capabilities role={profile?.role} />

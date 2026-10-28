@@ -27,8 +27,10 @@ export default function MolaLauncher() {
   const [seen, setSeen] = useState(() => read(SEEN))
   const [teased, setTeased] = useState(() => read(TEASED))
   const last = useLiveQuery(() => db.messages.where('thread').equals('mola').sortBy('createdAt').then((l) => l.filter((m) => m.role === 'mola').pop() ?? null), [], null)
+  const molaCount = useLiveQuery(() => db.messages.where('thread').equals('mola').filter((m) => m.role === 'mola').count(), [], 0)
   const pending = useLiveQuery(() => db.tasks.where('status').equals('needs_approval').count(), [], 0)
   const hidden = loc.pathname.startsWith('/app/mola')
+  const showTeaserFor = !open && !!last && last.createdAt > seen && molaCount > 1 && teased !== last.id ? last.id : ''
 
   const unread = !!last && last.createdAt > seen
   const markSeen = () => { if (last) { write(SEEN, last.createdAt); setSeen(last.createdAt) } }
@@ -40,9 +42,15 @@ export default function MolaLauncher() {
     window.addEventListener('keydown', k)
     return () => window.removeEventListener('keydown', k)
   }, [open])
+  useEffect(() => {
+    if (!showTeaserFor) return
+    const id = window.setTimeout(() => { write(TEASED, showTeaserFor); setTeased(showTeaserFor) }, 9000)
+    return () => window.clearTimeout(id)
+  }, [showTeaserFor])
   if (hidden) return null
 
-  const showTeaser = !open && unread && !!last && teased !== last.id
+  // The bubble is for news only (a task done, a result ready): never for the first hello, which the person reads when they open Mola.
+  const showTeaser = !!showTeaserFor
   const closeTeaser = () => { if (last) { write(TEASED, last.id); setTeased(last.id) } }
 
   return (
