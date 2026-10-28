@@ -1,0 +1,448 @@
+{
+  "id": "T06",
+  "family": "transition",
+  "order": 6,
+  "ages": "U14+",
+  "players": {
+    "min": 14,
+    "max": 14,
+    "fr": "14 joueurs (5 contre 4 puis 4 contre 3, avec 2 gardiens)",
+    "en": "14 players (5 v 4 then 4 v 3, with 2 goalkeepers)"
+  },
+  "space": {
+    "w": 70,
+    "h": 50
+  },
+  "duration": {
+    "fr": "4 x 5 min, 2 min de récupération",
+    "en": "4 x 5 min, 2 min rest"
+  },
+  "minutes": 26,
+  "md": [
+    "MD-4",
+    "MD-3"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "reprendre",
+    "finir",
+    "regarder-devant"
+  ],
+  "skills": [
+    "contre-pression",
+    "communication",
+    "decision",
+    "scan"
+  ],
+  "pieces": [
+    "le souffle",
+    "la carte"
+  ],
+  "fr": {
+    "title": "Attaquer puis défendre",
+    "subtitle": "5 contre 4 vers le but, puis 3 contre 4 dans l'autre sens avec la défense de repos",
+    "objective": "Relier l'attaque et la défense : l'équipe qui attaque à 5 contre 4 garde 3 joueurs en défense de repos. À la perte ou après le tir, elle reprend dans les 5 secondes, ou ses trois défenseurs tiennent la contre-attaque.",
+    "organisation": [
+      "Terrain de 70 x 50 m, deux grands buts avec gardiens, ligne médiane marquée.",
+      "Équipe A : 5 attaquants dans la moitié adverse, 3 défenseurs de repos dans sa moitié, près de la ligne médiane.",
+      "Équipe B : 4 défenseurs et un gardien ; à la récupération, les 4 attaquent le but de A.",
+      "L'entraîneur lance chaque action par une passe vers A, à la ligne médiane.",
+      "On inverse les rôles à chaque série ; pause boisson pendant les récupérations."
+    ],
+    "rules": [
+      "A attaque à 5 contre 4 : un but vaut 1 point.",
+      "À la perte, ou après un tir que le gardien relance, B attaque aussitôt l'autre but.",
+      "Les attaquants de A ont 5 secondes pour reprendre le ballon dans la moitié adverse : 1 point ; ensuite, ils ne défendent plus.",
+      "But de B : 2 points ; contre-attaque arrêtée par la défense de repos : 1 point pour A.",
+      "Les défenseurs de repos ne franchissent jamais la ligne médiane."
+    ],
+    "coaching": [
+      "Avant le tir, regarde derrière toi : sommes-nous bien trois ?",
+      "Défenseurs de repos, tenez l'axe et les intervalles, à distance de sprint du ballon.",
+      "À la perte, les attaquants les plus proches pressent tout de suite : cinq secondes, pas plus.",
+      "À 3 contre 4, le plus proche retarde, les deux autres ferment l'axe et protègent le but.",
+      "Gardien de A, parle : tu vois toute la contre-attaque arriver."
+    ],
+    "progressions": [
+      "Défense de repos à 2 : attaquer à 6 contre 4, défendre à 2 contre 4.",
+      "Les attaquants de A n'ont que 3 secondes pour reprendre le ballon.",
+      "Deux touches maximum pour A en attaque."
+    ],
+    "regressions": [
+      "Un attaquant de A peut revenir défendre : 4 contre 4.",
+      "Défense de repos à 4 : attaquer à 4 contre 4.",
+      "Terrain raccourci à 60 m."
+    ],
+    "measure": "Contre-attaques de B qui finissent par un tir, et reprises en moins de 5 secondes. Repère : une défense de repos solide laisse moins d'un tir pour trois contre-attaques.",
+    "story": "À la Granja del Mar, Laia Ferrer attaque sans peur, mais avant de centrer elle jette un regard derrière elle : trois, c'est bon."
+  },
+  "en": {
+    "title": "Attack, Then Defend",
+    "subtitle": "5 v 4 towards goal, then 3 v 4 the other way with the rest defence",
+    "objective": "Link attack and defence: the team attacking 5 v 4 keeps 3 players as a rest defence. When it loses the ball or after the shot, it wins it back within 5 seconds, or its three defenders hold the counter-attack.",
+    "organisation": [
+      "70 x 50 m pitch, two full-size goals with goalkeepers, halfway line marked.",
+      "Team A: 5 attackers in the opposition half, 3 rest defenders in their own half, near the halfway line.",
+      "Team B: 4 defenders and a goalkeeper; when they win the ball, all 4 attack A's goal.",
+      "The coach starts each move with a pass to A on the halfway line.",
+      "Swap roles after each set; drinks break during the rests."
+    ],
+    "rules": [
+      "A attacks 5 v 4: a goal is worth 1 point.",
+      "When A loses the ball, or after a shot the goalkeeper restarts, B attacks the other goal at once.",
+      "A's attackers have 5 seconds to win the ball back in the opposition half: 1 point; after that, they stop defending.",
+      "B goal: 2 points; counter-attack stopped by the rest defence: 1 point to A.",
+      "The rest defenders never cross the halfway line."
+    ],
+    "coaching": [
+      "Before you shoot, look behind you: are there three of us?",
+      "Rest defenders, hold the middle and the gaps, within sprinting distance of the ball.",
+      "When we lose it, the nearest attackers press at once: five seconds, no more.",
+      "At 3 v 4, the nearest player delays, the other two close the middle and protect the goal.",
+      "A's goalkeeper, talk: you can see the whole counter-attack coming."
+    ],
+    "progressions": [
+      "Rest defence of 2: attack 6 v 4, defend 2 v 4.",
+      "A's attackers only have 3 seconds to win the ball back.",
+      "Two touches maximum for A in attack."
+    ],
+    "regressions": [
+      "One A attacker may track back: 4 v 4.",
+      "Rest defence of 4: attack 4 v 4.",
+      "Pitch shortened to 60 m."
+    ],
+    "measure": "B counter-attacks that end in a shot, and regains within 5 seconds. Benchmark: a solid rest defence allows fewer than one shot for every three counter-attacks.",
+    "story": "At La Granja del Mar, Laia Ferrer attacks without fear, but before she crosses she glances behind her: three, all good."
+  },
+  "diagram": {
+    "view": "grid",
+    "w": 70,
+    "h": 50,
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 1.8,
+        "y": 25
+      },
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 30,
+        "y": 16,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 30,
+        "y": 34,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 33.5,
+        "y": 25,
+        "label": "6"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 47,
+        "y": 30,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 50,
+        "y": 14,
+        "label": "10"
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 58,
+        "y": 5,
+        "label": "11"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 59,
+        "y": 24,
+        "label": "9"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 56,
+        "y": 44,
+        "label": "7"
+      },
+      {
+        "id": "b1",
+        "team": "b",
+        "x": 63,
+        "y": 15
+      },
+      {
+        "id": "b2",
+        "team": "b",
+        "x": 64,
+        "y": 24.5
+      },
+      {
+        "id": "b3",
+        "team": "b",
+        "x": 62,
+        "y": 39
+      },
+      {
+        "id": "b4",
+        "team": "b",
+        "x": 54,
+        "y": 21
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 68.2,
+        "y": 25
+      }
+    ],
+    "ball": "p8",
+    "arrows": [
+      {
+        "from": "p8",
+        "to": "p7",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "p9",
+        "to": [
+          66,
+          31
+        ],
+        "kind": "run",
+        "n": 2
+      },
+      {
+        "from": "p7",
+        "to": [
+          66,
+          31
+        ],
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": [
+          66,
+          31
+        ],
+        "to": [
+          69.8,
+          26.5
+        ],
+        "kind": "shot",
+        "n": 4
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 35,
+        "h": 50,
+        "tone": "a",
+        "label": "défense de repos"
+      },
+      {
+        "x": 35,
+        "y": 0,
+        "w": 35,
+        "h": 50,
+        "tone": "soft",
+        "label": "5 contre 4"
+      }
+    ],
+    "goals": [
+      {
+        "x": 0,
+        "y": 25,
+        "side": "left",
+        "size": "full"
+      },
+      {
+        "x": 70,
+        "y": 25,
+        "side": "right",
+        "size": "full"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "grid",
+    "w": 70,
+    "h": 50,
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 1.8,
+        "y": 25
+      },
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 30,
+        "y": 17,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 29,
+        "y": 33,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 33,
+        "y": 25,
+        "label": "6"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 48,
+        "y": 31,
+        "label": "8"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 64,
+        "y": 46,
+        "label": "7"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 63,
+        "y": 30,
+        "label": "9"
+      },
+      {
+        "id": "bw",
+        "team": "b",
+        "x": 58,
+        "y": 38
+      },
+      {
+        "id": "b1",
+        "team": "b",
+        "x": 56,
+        "y": 11
+      },
+      {
+        "id": "b2",
+        "team": "b",
+        "x": 52,
+        "y": 24
+      },
+      {
+        "id": "b4",
+        "team": "b",
+        "x": 55,
+        "y": 46
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 68.2,
+        "y": 25
+      }
+    ],
+    "ball": "bw",
+    "arrows": [
+      {
+        "from": "p7",
+        "to": [
+          60.2,
+          40.6
+        ],
+        "kind": "press",
+        "n": 1
+      },
+      {
+        "from": "bw",
+        "to": "b2",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "b2",
+        "to": [
+          40.5,
+          21.5
+        ],
+        "kind": "dribble",
+        "n": 3
+      },
+      {
+        "from": "b1",
+        "to": [
+          40,
+          9
+        ],
+        "kind": "run",
+        "n": 4
+      },
+      {
+        "from": "p6",
+        "to": [
+          38.2,
+          23.2
+        ],
+        "kind": "press",
+        "n": 5
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 35,
+        "h": 50,
+        "tone": "a",
+        "label": "3 contre 4"
+      },
+      {
+        "x": 35,
+        "y": 0,
+        "w": 35,
+        "h": 50,
+        "tone": "soft"
+      }
+    ],
+    "goals": [
+      {
+        "x": 0,
+        "y": 25,
+        "side": "left",
+        "size": "full"
+      },
+      {
+        "x": 70,
+        "y": 25,
+        "side": "right",
+        "size": "full"
+      }
+    ]
+  }
+}

@@ -26,7 +26,7 @@ export function Logo({ light = false, className }: { light?: boolean; className?
   return (
     <span className={cx('inline-flex items-center gap-2', className)}>
       <LogoMark size={30} />
-      <span className={cx('font-display text-[22px] font-semibold tracking-tight', light ? 'text-cream' : 'text-ink')}>Njangi</span>
+      <span className={cx('font-display text-[22px] font-semibold tracking-tight', light ? 'text-cream' : 'text-ink')}>Ndamba</span>
     </span>
   )
 }
@@ -140,13 +140,14 @@ export function Modal({ open, onClose, title, children, wide = false, footer }: 
     window.addEventListener('keydown', k)
     return () => window.removeEventListener('keydown', k)
   }, [open, onClose])
+  const { t } = useT('common')
   if (!open) return null
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-night-900/50 p-0 sm:items-center sm:p-4" onClick={onClose} role="dialog" aria-modal="true" aria-label={title}>
       <div className={cx('max-h-[92vh] w-full overflow-y-auto rounded-t-3xl bg-paper shadow-lift sm:rounded-3xl', wide ? 'sm:max-w-3xl' : 'sm:max-w-lg')} onClick={(e) => e.stopPropagation()}>
         <div className="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-paper/95 px-5 py-4 backdrop-blur">
           <h2 className="font-display text-lg font-semibold">{title}</h2>
-          <button type="button" className="btn-ghost btn-sm" onClick={onClose} aria-label="Close"><X size={18} /></button>
+          <button type="button" className="btn-ghost btn-sm" onClick={onClose} aria-label={t('actions.close')}><X size={18} /></button>
         </div>
         <div className="px-5 py-4">{children}</div>
         {footer && <div className="sticky bottom-0 flex justify-end gap-2 border-t border-line bg-paper/95 px-5 py-3 backdrop-blur">{footer}</div>}

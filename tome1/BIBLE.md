@@ -1,4 +1,4 @@
-# Kaydoudou & BriBri : la bible de la saga
+# Lionceaux : la bible de la saga (héros : Kaydoudou & BriBri)
 
 Lis ce fichier, puis `STYLE.md`, puis `OUTLINE.md`, avant d'écrire un seul mot. Tout ce qui est écrit ici fait foi : noms, âges, lieux, couleurs, numéros, règles du monde.
 
@@ -8,7 +8,7 @@ Deux frères camerounais, Kaydoudou et BriBri, suivent les déménagements de le
 
 ## Le titre
 
-- Saga : **Kaydoudou & BriBri**
+- Saga : **Lionceaux** (héros : Kaydoudou & BriBri). Le mot-marque LIONCEAUX figure en haut de chaque couverture, avec le numéro du tome en chiffres romains dorés.
 - Tome 1 : **Le Ballon qui voyage** (ce livre, 40 chapitres, 5 parties)
 - Tomes suivants (déjà prévus, à ne pas raconter dans le tome 1, seulement à préparer) :
   - Tome 2 : *La Tanière des Lionceaux* (sélection U17 du Cameroun, CAN U17, Coupe du monde U17)
@@ -66,7 +66,7 @@ Kaydoudou et BriBri découvrent le Njangi pièce par pièce, et chaque pays leur
 ### La famille Ngassa
 - **Papa : Armand Ngassa**, 41 ans, ingénieur réseau (il installe les réseaux informatiques des grandes entreprises). Calme, drôle à sa manière, passionné de football (fan des Lions Indomptables depuis 1990). C'est son travail qui fait déménager la famille : Waldorf (Maryland, États-Unis), puis la région parisienne, puis Barcelone, puis Londres. Il dit souvent : « Un réseau, c'est comme une équipe : si un câble garde tout pour lui, plus rien ne passe. »
 - **Maman : Estelle Ngassa**, 39 ans, infirmière. Énergique, tendre, ferme sur l'école (« Pas de devoirs, pas de crampons »). Elle reprend ses diplômes dans chaque pays, et c'est elle qui rappelle aux garçons que le football n'est pas tout.
-- **Mami Nyanga**, la grand-mère paternelle, 68 ans, vit à **Bafoussam** (région de l'Ouest). Couturière, présidente du njangi des femmes du quartier depuis trente ans. Petite, très droite, foulard en pagne, rire immense. Elle a recousu le vieux ballon des garçons avec un carré de pagne rouge et jaune : **le ballon de Mami**, qui les suit dans tous les pays. Elle parle par proverbes. Elle n'a jamais pris l'avion avant le chapitre 39.
+- **Mami Nyanga**, la grand-mère paternelle, 68 ans, vit à **Bafoussam** (région de l'Ouest). Couturière, présidente du njangi des femmes du quartier depuis trente ans. Petite, très droite, foulard en pagne, rire immense. Elle a recousu le vieux ballon des garçons avec un carré de pagne rouge et jaune : **le ballon de Mami**, qui les suit dans tous les pays. Elle parle par proverbes. Elle n'a jamais pris l'avion avant le chapitre 39. Son anniversaire tombe entre mai et octobre (elle a 68 ans au début du tome, 70 ans quand elle tombe en février 2028, 71 ans à Londres au printemps 2029).
 
 ### Le ballon de Mami
 Vieux ballon de cuir, déformé, avec une pièce de pagne wax rouge et jaune cousue à la main. Il ne sert plus à jouer en match, mais les frères jonglent avec lui avant chaque grand match, dans chaque pays. C'est l'objet-totem du tome 1 (et il porte la signature des personnes rencontrées : au fil du livre, des amis écrivent leur nom au feutre dessus).

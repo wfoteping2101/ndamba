@@ -1,0 +1,292 @@
+{
+  "id": "F04",
+  "family": "phase",
+  "order": 4,
+  "ages": "U14+",
+  "players": {
+    "min": 13,
+    "max": 13,
+    "fr": "13 joueurs (7 contre 5 + gardien)",
+    "en": "13 players (7 v 5 + goalkeeper)"
+  },
+  "space": {
+    "w": 52,
+    "h": 68
+  },
+  "duration": {
+    "fr": "4 x 5 min, 2 min de récupération",
+    "en": "4 x 5 min, 2 min rest"
+  },
+  "minutes": 26,
+  "md": [
+    "MD-2",
+    "MD-3"
+  ],
+  "intensity": "medium",
+  "intentions": [
+    "fixer",
+    "finir",
+    "progresser"
+  ],
+  "skills": [
+    "passe",
+    "scan",
+    "decision",
+    "appels",
+    "dribble-njangi"
+  ],
+  "pieces": [
+    "la carte",
+    "la raison"
+  ],
+  "fr": {
+    "title": "Fixer et renverser",
+    "subtitle": "5 contre 4 d'un côté, puis renversement vers un 2 contre 1 de l'autre",
+    "objective": "Attirer le bloc adverse d'un côté par une surcharge, puis renverser vite vers le côté faible, où un 2 contre 1 attend. On entraîne la patience qui fixe et la passe qui libère, jusqu'à la finition.",
+    "organisation": [
+      "Une moitié de terrain (52 x 68 m), un but avec gardien ; deux mini-buts sur la ligne médiane.",
+      "Une ligne de coupelles à 24 m d'une ligne de touche sépare le côté fort du côté faible.",
+      "Côté fort : 5 attaquants (latéral, pivot, intérieur, ailier, 9) contre 4 défenseurs.",
+      "Côté faible : un ailier et un latéral contre un défenseur.",
+      "L'entraîneur lance chaque action vers le latéral du côté fort."
+    ],
+    "rules": [
+      "Au moins 5 passes du côté fort avant de renverser ; le renversement peut passer par le pivot.",
+      "Avant le renversement, chacun reste dans sa zone ; après, les zones disparaissent.",
+      "But dans les 8 secondes après le renversement : 2 points ; plus tard : 1 point.",
+      "Les défenseurs qui récupèrent marquent 1 point dans un mini-but de la ligne médiane."
+    ],
+    "coaching": [
+      "Fixe pour de vrai : joue court et vite pour que le bloc glisse vers toi.",
+      "Le signal : le défenseur du côté faible regarde le ballon et rentre vers l'axe.",
+      "Renverse au sol et fort, ou en deux temps par le pivot si la passe longue est fermée.",
+      "Côté faible : l'ailier reçoit large, le latéral part dans le dos au moment où le défenseur s'engage.",
+      "Porteur du 2 contre 1 : attaque le défenseur pour le fixer, puis donne au bon moment.",
+      "Côté fort : après le renversement, deux joueurs attaquent la surface."
+    ],
+    "progressions": [
+      "Un défenseur du côté fort peut glisser dès le renversement.",
+      "Trois passes suffisent du côté fort, mais en une touche.",
+      "Côté faible à 2 contre 2 : il faut gagner le duel ou attendre le soutien."
+    ],
+    "regressions": [
+      "Côté fort à 5 contre 3.",
+      "Les défenseurs restent dans leur zone après le renversement.",
+      "L'entraîneur annonce lui-même le moment du renversement."
+    ],
+    "measure": "Temps entre le renversement et le tir (repère : moins de 8 secondes) et part des renversements qui finissent par un tir. Le sous-indice Fixation de l'Indice Njangi compte justement ces renversements après fixation.",
+    "story": "« Le ballon doit voyager », répète Tonton Fokou. Ici, il voyage d'un côté à l'autre, au moment où tout le monde regarde ailleurs."
+  },
+  "en": {
+    "title": "Pin and Switch",
+    "subtitle": "5 v 4 on one side, then a switch to a 2 v 1 on the other",
+    "objective": "Draw the opposing block to one side with an overload, then switch quickly to the weak side, where a 2 v 1 is waiting. It trains the patience that pins and the pass that frees, all the way to the finish.",
+    "organisation": [
+      "Half a pitch (52 x 68 m), a goal with a goalkeeper; two mini goals on the halfway line.",
+      "A line of cones 24 m in from one touchline separates the strong side from the weak side.",
+      "Strong side: 5 attackers (full-back, pivot, inside midfielder, winger, 9) against 4 defenders.",
+      "Weak side: a winger and a full-back against one defender.",
+      "The coach starts each move with a pass to the full-back on the strong side."
+    ],
+    "rules": [
+      "At least 5 passes on the strong side before switching; the switch may go through the pivot.",
+      "Before the switch, everyone stays in their zone; after it, the zones disappear.",
+      "Goal within 8 seconds of the switch: 2 points; later: 1 point.",
+      "Defenders who win the ball score 1 point in a mini goal on the halfway line."
+    ],
+    "coaching": [
+      "Pin them for real: play short and quick so the block slides towards you.",
+      "The cue: the weak-side defender watches the ball and tucks in towards the middle.",
+      "Switch on the ground and firm, or in two passes through the pivot if the long pass is closed.",
+      "Weak side: the winger receives wide, the full-back runs in behind the moment the defender commits.",
+      "On the ball in the 2 v 1: attack the defender to pin him, then release at the right moment.",
+      "Strong side: after the switch, two players attack the box."
+    ],
+    "progressions": [
+      "One strong-side defender may slide across as soon as the switch is played.",
+      "Three passes are enough on the strong side, but one touch only.",
+      "Weak side becomes 2 v 2: win the duel or wait for support."
+    ],
+    "regressions": [
+      "Strong side at 5 v 3.",
+      "Defenders stay in their zone after the switch.",
+      "The coach calls the moment to switch."
+    ],
+    "measure": "Time from the switch to the shot (benchmark: under 8 seconds) and the share of switches that end in a shot. The Fixation sub-index of the Njangi Index counts exactly these switches after pinning.",
+    "story": "\"The ball must travel,\" Tonton Fokou keeps saying. Here it travels from one side to the other, just when everyone is looking the wrong way."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      {
+        "id": "l3",
+        "team": "a",
+        "x": 20,
+        "y": 8,
+        "label": "3"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 16,
+        "y": 30,
+        "label": "6"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 30,
+        "y": 22,
+        "label": "10"
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 38,
+        "y": 5,
+        "label": "11"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 40,
+        "y": 31,
+        "label": "9"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 36,
+        "y": 60,
+        "label": "7"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 32.5,
+        "y": 49,
+        "label": "2"
+      },
+      {
+        "id": "bd1",
+        "team": "b",
+        "x": 43,
+        "y": 12
+      },
+      {
+        "id": "bd2",
+        "team": "b",
+        "x": 46,
+        "y": 25
+      },
+      {
+        "id": "bd3",
+        "team": "b",
+        "x": 32,
+        "y": 13
+      },
+      {
+        "id": "bd4",
+        "team": "b",
+        "x": 33,
+        "y": 33
+      },
+      {
+        "id": "bw",
+        "team": "b",
+        "x": 43,
+        "y": 58
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "l3",
+    "arrows": [
+      {
+        "from": "l3",
+        "to": "p10",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "p10",
+        "to": "p6",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "p6",
+        "to": "p7",
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": "l2",
+        "to": [
+          45,
+          50
+        ],
+        "kind": "run",
+        "n": 4
+      },
+      {
+        "from": "p7",
+        "to": [
+          45,
+          50
+        ],
+        "kind": "pass",
+        "n": 5
+      },
+      {
+        "from": [
+          45,
+          50
+        ],
+        "to": [
+          52.3,
+          37
+        ],
+        "kind": "shot",
+        "n": 6
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 52.5,
+        "h": 44,
+        "tone": "soft",
+        "label": "5 contre 4"
+      },
+      {
+        "x": 0,
+        "y": 44,
+        "w": 52.5,
+        "h": 24,
+        "tone": "a",
+        "label": "2 contre 1"
+      }
+    ],
+    "goals": [
+      {
+        "x": 0,
+        "y": 20,
+        "side": "left",
+        "size": "mini"
+      },
+      {
+        "x": 0,
+        "y": 48,
+        "side": "left",
+        "size": "mini"
+      }
+    ]
+  },
+  "diagram2": null
+}

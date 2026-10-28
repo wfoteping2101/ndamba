@@ -2,9 +2,9 @@
   "nav": { "books": "The books", "app": "The app", "mola": "Mola", "premium": "Premium", "start": "Get started", "openApp": "Open the app" },
   "footer": {
     "motto": "The ball must travel. But it must know where it is going.",
-    "products": "Njangi",
-    "tome1": "Kaydoudou & BriBri, book 1",
-    "methode": "The Njangi Method",
+    "products": "Ndamba",
+    "tome1": "Lionceaux, book 1",
+    "methode": "The Njangi Code",
     "app": "The app",
     "mola": "Mola, the agent that acts",
     "mantraTitle": "Our mantra",
@@ -49,6 +49,6 @@
       "everythingClub": "Everything in Club", "nationalModel": "National game model", "coachEducation": "Coach education", "support": "Dedicated support"
     }
   },
-  "brand": { "tagline": "Possession with purpose", "motto": "The ball must travel. But it must know where it is going.", "mantra": "An African nation crowned world champion in 2030 or 2034." },
+  "brand": { "tagline": "Football with purpose", "philosophy": "Possession with purpose", "motto": "The ball must travel. But it must know where it is going.", "mantra": "An African nation crowned world champion in 2030 or 2034." },
   "misc": { "minutes": "min", "players": "players", "demo": "Demo", "free": "Free", "premium": "Premium", "comingSoon": "Coming soon", "loading": "Loading", "none": "None", "today": "Today", "tomorrow": "Tomorrow" }
 }

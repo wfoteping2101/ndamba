@@ -1,0 +1,467 @@
+{
+  "greeting": {
+    "day": "Bonjour, {{name}}",
+    "morning": "Bonjour, {{name}}",
+    "afternoon": "Bonjour, {{name}}",
+    "evening": "Bonsoir, {{name}}",
+    "next": "Phrase suivante",
+    "motto": "La devise",
+    "mantra": "Notre mantra",
+    "lesson": "Leçon du Ballon n° {{n}}"
+  },
+  "home": {
+    "docTitle": "Accueil",
+    "statSessions": "Séances",
+    "statMinutes": "Minutes",
+    "statNext": "Match",
+    "none": "Aucun",
+    "matchDay": "Jour J",
+    "jMinus": "J-{{n}}",
+    "today": "Aujourd'hui",
+    "challengeTitle": "Le défi du jour",
+    "allDaily": "Les trois défis du jour",
+    "progressTitle": "Ma progression",
+    "lessonsDone": "Leçons",
+    "mySpace": "Mon espace joueur",
+    "lessonTitle": "La leçon du jour",
+    "allLessons": "Toutes les leçons",
+    "ritual": "dix jongles avec le ballon de Mami avant ?",
+    "notebookEmpty": "Ta première page t'attend",
+    "notebookEmptyBody": "Écris ce que tu as appris aujourd'hui, comme Kaydoudou.",
+    "statDaily": "Défis",
+    "last7": "Mes 7 derniers jours"
+  },
+  "today": {
+    "eyebrow": "Aujourd'hui",
+    "matchDay": "Jour de match",
+    "noSession": "Pas encore de séance",
+    "matchBody": "Le match contre {{opponent}}, c'est aujourd'hui. Vérifie la composition, puis lance l'analyse en direct au coup d'envoi.",
+    "suggestYouth": "Rien de prévu aujourd'hui. Je te propose une séance jeunes : rondo, petit jeu, jeu de position, puis match libre.",
+    "suggestMd": "Rien de prévu aujourd'hui. Avec le calendrier du match, c'est un jour {{md}}.",
+    "create": "Préparer la séance {{md}}",
+    "browse": "Choisir des exercices",
+    "tomorrow": "Demain :",
+    "minutes": "{{n}} min",
+    "open": "Ouvrir la séance",
+    "blocks_one": "{{count}} bloc",
+    "blocks_other": "{{count}} blocs",
+    "emptyBlocks": "Séance vide pour l'instant : ouvre-la pour ajouter des exercices.",
+    "customBlock": "Bloc libre",
+    "more_one": "Et {{count}} autre séance aujourd'hui.",
+    "more_other": "Et {{count}} autres séances aujourd'hui.",
+    "methodDrill": "Exercice du Code Njangi",
+    "suggestFree": "Rien de prévu aujourd'hui, et pas de match à l'horizon. Je te propose une séance {{md}} : de grands espaces et du temps de jeu."
+  },
+  "mdWhy": {
+    "MD-4": "Quatre jours avant le match : petits espaces et beaucoup de duels, c'est le jour le plus intense.",
+    "MD-3": "Trois jours avant : de grands espaces et du temps de jeu, comme le match.",
+    "MD-2": "Deux jours avant : vitesse, transitions et finition, sur des temps courts.",
+    "MD-1": "La veille : activation légère et coups de pied arrêtés, on garde les jambes fraîches.",
+    "MD+1": "Le lendemain du match : récupération active pour ceux qui ont joué, rondo pour tout le monde.",
+    "youth": "Chez les jeunes, on apprend en jouant : beaucoup de ballons, des petits jeux et du plaisir."
+  },
+  "match": {
+    "eyebrow": "Prochain match",
+    "none": "Aucun match prévu",
+    "noneBody": "Ajoute le prochain match : la semaine se planifie autour de lui, de MD-4 à MD-1.",
+    "inDays_one": "dans {{count}} jour",
+    "inDays_other": "dans {{count}} jours",
+    "tomorrow": "Demain",
+    "at": "à {{time}}",
+    "inHours": "{{h}} h {{m}}",
+    "inMinutes": "{{m}} min",
+    "today": "Aujourd'hui",
+    "home": "Domicile",
+    "away": "Extérieur",
+    "against": "Contre",
+    "lineup": "Composition",
+    "live": "Lancer le direct",
+    "prepare": "Préparer la semaine",
+    "weekCreated_one": "{{count}} séance préparée pour la semaine du match.",
+    "weekCreated_other": "{{count}} séances préparées pour la semaine du match.",
+    "weekReady": "La semaine est déjà prête : chaque jour avant le match a sa séance.",
+    "seeWeek": "Voir la semaine"
+  },
+  "week": {
+    "title": "La semaine",
+    "to": "au",
+    "total": "{{n}} min au total",
+    "open": "Planifier",
+    "md": "Match",
+    "matchAgainst": "match contre {{opponent}}",
+    "sessions_one": "{{count}} séance",
+    "sessions_other": "{{count}} séances",
+    "rest": "repos",
+    "legendSession": "Séance",
+    "legendMatch": "Match"
+  },
+  "indice": {
+    "eyebrow": "Indice Njangi du dernier match",
+    "title": "Indice Njangi",
+    "emptyTitle": "Pas encore d'Indice Njangi",
+    "emptyBody": "Tague un match en direct (passes, lignes traversées, reprises en cinq secondes) et l'Indice te dit si ton équipe a possédé avec intention.",
+    "emptyCtaLive": "Analyser le match contre {{opponent}}",
+    "emptyCta": "Ouvrir l'analyse",
+    "against": "Contre {{opponent}}",
+    "trend_one": "Sur {{count}} match analysé",
+    "trend_other": "Tendance sur {{count}} matchs analysés",
+    "trendAria": "Indice des derniers matchs : {{values}}",
+    "weakest": "à travailler",
+    "work": "Le point faible : {{sub}}. Cette semaine, l'intention à travailler est « {{intention}} ».",
+    "prepare": "Préparer la semaine sur « {{intention}} »",
+    "report": "Voir le rapport"
+  },
+  "subs": {
+    "progression": "Progression",
+    "penetration": "Pénétration",
+    "fixation": "Fixation",
+    "reprise": "Reprise",
+    "controle": "Contrôle"
+  },
+  "mola": {
+    "title": "Mola propose",
+    "subtitle": "Ton agent : il agit pour toi",
+    "noTeam": "Donne-moi le nom de ton équipe et sa catégorie : je la crée et j'ajoute tes joueurs.",
+    "missing_one": "Le match contre {{opponent}} est {{day}}. Il manque {{count}} séance avant : je la prépare ?",
+    "missing_other": "Le match contre {{opponent}} est {{day}}. Il manque {{count}} séances avant : je les prépare ?",
+    "convocation": "La semaine est prête. Je rédige la convocation pour le match contre {{opponent}} ? Tu n'auras plus qu'à l'envoyer.",
+    "indice": "Ton point faible au dernier match : {{sub}}. Je te montre les exercices qui le travaillent ?",
+    "default": "Demande-moi une séance, un plan de semaine, un match ou un message aux parents : je m'en occupe.",
+    "cta": "Parler à Mola",
+    "ask": "Tu peux aussi lui demander :",
+    "examples": {
+      "session": "Prépare la séance de demain",
+      "callup": "Écris la convocation du match",
+      "player": "Ajoute un joueur à l'équipe"
+    }
+  },
+  "actions": {
+    "title": "Actions rapides",
+    "newSession": "Nouvelle séance",
+    "newSessionHint": "Préparée pour aujourd'hui, à ajuster",
+    "planWeek": "Planifier la semaine",
+    "planWeekHint": "De MD-4 à MD-1 autour du match",
+    "newMatch": "Nouveau match",
+    "newMatchHint": "Adversaire, lieu, composition",
+    "live": "Analyse en direct",
+    "liveHint": "Taguer le match, obtenir l'Indice",
+    "drills": "Exercices",
+    "drillsHint": "La bibliothèque du Code Njangi",
+    "novel": "Lire le roman",
+    "novelHint": "{{series}}, tome 1"
+  },
+  "team": {
+    "title": "Crée ton équipe",
+    "body": "Une équipe, et l'accueil se remplit : séances de la semaine, prochain match, Indice Njangi.",
+    "playerTitle": "Tu joues dans une équipe ?",
+    "playerBody": "Ajoute-la pour voir tes matchs ici. Les défis marchent aussi sans équipe.",
+    "name": "Nom de l'équipe",
+    "namePh": "Lionceaux de Bonamoussadi",
+    "age": "Catégorie",
+    "format": "Format",
+    "create": "Créer l'équipe",
+    "open": "Ajouter mon équipe"
+  },
+  "parent": {
+    "title": "Pour les parents",
+    "body": "Quinze minutes, un mur et un ballon suffisent. Restez à côté, aidez à compter et rappelez de boire de l'eau. Le jeu des yeux se joue à deux : c'est vous qui levez la carte de couleur."
+  },
+  "levelUp": {
+    "title": "Niveau {{n}} atteint !",
+    "body": "Te voilà « {{name}} ». Continue : le ballon voyage avec toi."
+  },
+  "levels": {
+    "0": {
+      "name": "Le ballon rapiécé",
+      "body": "Tout commence avec un vieux ballon et l'envie de jouer."
+    },
+    "1": {
+      "name": "Terre rouge",
+      "body": "Tu reviens chaque jour sur le terrain, comme les Lionceaux de Bonamoussadi."
+    },
+    "2": {
+      "name": "Le cœur",
+      "body": "Tu joues pour les autres : chacun verse sa part."
+    },
+    "3": {
+      "name": "La raison",
+      "body": "Chaque touche sert à quelque chose."
+    },
+    "4": {
+      "name": "Les yeux",
+      "body": "Tu regardes avant de recevoir."
+    },
+    "5": {
+      "name": "La carte",
+      "body": "Tu sais où te placer et quand passer."
+    },
+    "6": {
+      "name": "Le souffle",
+      "body": "Tu gardes le ballon même quand ça brûle."
+    },
+    "7": {
+      "name": "Le Njangi complet",
+      "body": "Les cinq pièces sont réunies. Maintenant, apprends-les aux autres."
+    }
+  },
+  "xp": {
+    "label": "XP",
+    "level": "niveau",
+    "toNext": "Encore {{n}} XP avant « {{name}} »",
+    "max": "Niveau maximum : tu as réuni les cinq pièces.",
+    "total": "{{n}} XP",
+    "targets": "Objectifs"
+  },
+  "streak": {
+    "label": "Série",
+    "current": "Série",
+    "days_one": "{{count}} jour",
+    "days_other": "{{count}} jours",
+    "hintStart": "Un défi par jour fait grandir ta série. Le repos compte aussi : ton corps progresse quand il récupère.",
+    "hintKeep": "Fais un défi aujourd'hui pour garder ta série."
+  },
+  "challenge": {
+    "number": "Défi {{n}}",
+    "minutes": "{{n}} min",
+    "target": "Objectif :",
+    "targetLower": "{{n}} {{unit}} ou moins",
+    "targetHigher": "{{n}} {{unit}} ou plus",
+    "hit": "Objectif atteint",
+    "done": "Fait aujourd'hui",
+    "tip": "Conseil :",
+    "howTo": "Comment faire et noter",
+    "log": "Noter",
+    "todayBest": "Aujourd'hui : {{n}} {{unit}}",
+    "xpHintDaily": "Défi du jour : 5 XP en bonus",
+    "xpHint": "10 XP pour le défi, 10 de plus si tu atteins l'objectif",
+    "xpWon": "+{{n}} XP",
+    "saved": "Résultat noté",
+    "lesson": "Leçon du Ballon n° {{n}}"
+  },
+  "units": {
+    "jongles": "jongles",
+    "passes": "passes",
+    "reps": "réussites",
+    "seconds": "s",
+    "touches": "touches",
+    "sprints": "sprints",
+    "points": "points",
+    "minutes": "min"
+  },
+  "gear": {
+    "ball": "Un ballon",
+    "wall": "Un mur",
+    "cones": "Des plots",
+    "partner": "Un partenaire",
+    "space": "De la place",
+    "none": "Rien du tout",
+    "water": "De l'eau"
+  },
+  "kinds": {
+    "all": "Tous",
+    "ballon": "Ballon",
+    "conduite": "Conduite",
+    "mur": "Mur",
+    "yeux": "Les yeux",
+    "finition": "Finition",
+    "physique": "Physique"
+  },
+  "space": {
+    "docTitle": "Espace joueur",
+    "eyebrow": "Mon espace joueur",
+    "todayDone": "Défis du jour",
+    "activeDays": "Jours actifs",
+    "navLabel": "Dans cette page",
+    "nav": {
+      "defis": "Défis du jour",
+      "progression": "Progrès",
+      "regard": "Mon regard",
+      "tous": "Tous les défis",
+      "historique": "Historique"
+    },
+    "dailyTitle": "Les défis du jour",
+    "dailyBody": "Trois défis pour aujourd'hui, les mêmes pour tous les lionceaux : un pour le ballon, un pour la tête, un pour les jambes. Note ton meilleur résultat.",
+    "xpRule": "{{done}} XP par défi fait, {{target}} XP de plus si tu atteins l'objectif, {{daily}} XP de bonus pour un défi du jour. Ton niveau monte tout seul.",
+    "libraryTitle": "Tous les défis",
+    "libraryBody": "{{n}} défis à faire seul, avec un mur ou quelques plots. Chacun fait écho à une Leçon du Ballon.",
+    "moreLabel": "Aller plus loin",
+    "lessonsHint": "Les 40 pages du carnet de Kaydoudou",
+    "notebookHint": "Écris ce que tu apprends, comme Kaydoudou"
+  },
+  "care": {
+    "waterTitle": "Bois de l'eau",
+    "waterBody": "Avant, pendant et après. Une gourde à côté du mur, toujours.",
+    "restTitle": "Repose-toi",
+    "restBody": "Un jour sans défi par semaine. Échauffe-toi cinq minutes avant les sprints. Si tu as mal, tu t'arrêtes et tu le dis à un adulte."
+  },
+  "progress": {
+    "title": "Ma progression",
+    "body": "Ton XP de chaque jour, ta courbe sur un défi et tes records.",
+    "emptyTitle": "Ta courbe commence avec ton premier défi",
+    "emptyBody": "Fais un défi du jour et note ton résultat : ici apparaîtront ton XP, tes records et ta progression.",
+    "emptyCta": "Voir les défis du jour",
+    "xpTitle": "XP des 14 derniers jours",
+    "xp14": "{{n}} XP",
+    "xpAria": "XP gagnés chaque jour sur 14 jours, {{n}} au total",
+    "legendDay": "XP du jour",
+    "legendToday": "Aujourd'hui",
+    "curveTitle": "Ma courbe",
+    "pick": "Choisir un défi",
+    "target": "Objectif",
+    "curveAria": "Meilleurs résultats pour {{title}} : {{values}}",
+    "lowerBetter": "Plus c'est bas, mieux c'est",
+    "higherBetter": "Plus c'est haut, mieux c'est",
+    "record": "Record : {{n}} {{unit}}",
+    "records": "Mes records",
+    "targetIs": "Objectif : {{n}} {{unit}}"
+  },
+  "self": {
+    "title": "Mon regard sur moi",
+    "body": "Où en es-tu dans les dix compétences du Njangi ? Sois honnête : c'est pour toi, rien n'est envoyé.",
+    "scale": "Échelle de 1 à 4",
+    "levels": {
+      "1": "Je découvre",
+      "2": "Je progresse",
+      "3": "Je maîtrise",
+      "4": "Je l'apprends aux autres"
+    },
+    "me": "Mon regard",
+    "coach": "Le regard de mon coach",
+    "radarTitle": "Mes dix compétences",
+    "radarEmpty": "Choisis un niveau pour chaque compétence : ton radar se dessine ici.",
+    "coachNote": "Le regard du coach vient de la fiche de l'équipe. Si vous ne voyez pas la même chose, parlez-en après l'entraînement.",
+    "updated": "Mis à jour le {{date}} · {{n}} sur 10",
+    "private": "Gardé seulement sur cet appareil."
+  },
+  "skillHint": {
+    "scan": "Je regarde par-dessus l'épaule avant de recevoir.",
+    "controle": "Mon premier contrôle m'emmène vers l'espace libre.",
+    "passe": "Ma passe sait où elle va.",
+    "conduite": "Le ballon reste près de moi quand j'avance.",
+    "dribble-njangi": "Je dribble pour attirer, puis je donne.",
+    "appels": "Je cours pour ouvrir de l'espace aux autres.",
+    "communication": "Je parle : « Seul ! », « Homme ! », « Tourne ! ».",
+    "protection": "Mon corps reste entre l'adversaire et le ballon.",
+    "contre-pression": "Quand on perd le ballon, je le reprends en cinq secondes.",
+    "decision": "Je choisis avant que le ballon arrive."
+  },
+  "history": {
+    "title": "Mon historique",
+    "body": "Tes derniers résultats. Une erreur de frappe ? Supprime la ligne.",
+    "deleted": "Résultat supprimé.",
+    "undo": "Annuler",
+    "delete": "Supprimer le résultat de « {{title}} »",
+    "note": "Tout reste sur cet appareil : rien n'est envoyé sur internet.",
+    "more_one": "Voir {{count}} résultat de plus",
+    "more_other": "Voir {{count}} résultats de plus",
+    "less": "Voir moins"
+  },
+  "lessons": {
+    "docTitle": "Leçons du Ballon",
+    "eyebrow": "Le carnet de Kaydoudou",
+    "title": "Les Leçons du Ballon",
+    "subtitle": "À la fin de chaque chapitre de {{book}}, Kaydoudou écrit une leçon dans son carnet couvert de pagne. Les voici toutes les quarante, avec leur schéma.",
+    "progress": "{{n}} sur 40 comprises",
+    "writing": "{{n}} chapitres écrits pour l'instant : les autres pages arrivent avec le livre.",
+    "ofDay": "La leçon du jour (n° {{n}})",
+    "partsLabel": "Les cinq parties du voyage",
+    "part": "Partie {{n}}",
+    "partDone": "{{n}} sur {{total}} comprises",
+    "partRange": "Partie {{n}} · leçons {{from}} à {{to}}",
+    "nextPart": "Partie suivante : {{country}}",
+    "charactersAlt": "{{heroes}}, les héros du roman"
+  },
+  "parts": {
+    "1": {
+      "country": "Cameroun",
+      "piece": "Le cœur",
+      "body": "À Douala, sur la terre rouge de Bonamoussadi, Tonton Fokou apprend aux deux frères la joie, le courage et le collectif : on joue ensemble, chacun verse sa part."
+    },
+    "2": {
+      "country": "États-Unis",
+      "piece": "La raison",
+      "body": "À Waldorf, dans la neige et les chiffres, ils découvrent que posséder sans intention ne gagne rien : chaque passe doit servir à quelque chose."
+    },
+    "3": {
+      "country": "France",
+      "piece": "Les yeux",
+      "body": "En région parisienne, ils apprennent à regarder avant de recevoir, à ouvrir le corps, à jouer entre les lignes et à reprendre vite le ballon."
+    },
+    "4": {
+      "country": "Espagne",
+      "piece": "La carte",
+      "body": "À Barcelone, le rondo, la pausa, le troisième homme et les supériorités : être au bon endroit, créer des triangles."
+    },
+    "5": {
+      "country": "Angleterre",
+      "piece": "Le souffle",
+      "body": "À Londres, sous la pluie, l'intensité, le pressing et les transitions : posséder aussi quand ça brûle."
+    }
+  },
+  "lesson": {
+    "number": "Leçon {{n}}",
+    "chapter": "Chapitre {{n}} · {{title}}",
+    "writing": "Chapitre en cours d'écriture",
+    "understood": "Comprise",
+    "imgAlt": "Illustration du chapitre {{n}} : {{title}}",
+    "original": "Lire la page originale en français",
+    "diagram": "Le schéma du carnet",
+    "understand": "J'ai compris",
+    "understoodDone": "Compris, c'est noté",
+    "read": "Lire le chapitre {{n}}",
+    "challenge": "Le défi qui va avec",
+    "drill": "Exercice {{id}}",
+    "write": "Écrire dans mon carnet"
+  },
+  "novel": {
+    "eyebrow": "Le roman",
+    "body": "La saga de {{heroes}} : deux frères, un ballon rapiécé, cinq pays et une idée du football.",
+    "read": "Lire le roman",
+    "open": "Ouvrir {{title}}",
+    "coverAlt": "Couverture de {{title}}",
+    "chapterOfDay": "Le chapitre de la leçon du jour (n° {{n}})"
+  },
+  "notebook": {
+    "docTitle": "Mon carnet",
+    "eyebrow": "Le carnet du Njangi",
+    "title": "Mon carnet du Njangi",
+    "short": "Mon carnet du Njangi",
+    "subtitle": "Comme Kaydoudou, écris après chaque entraînement ou chaque match ce que tu as appris. Une page, une idée.",
+    "new": "Nouvelle page",
+    "newTitle": "Nouvelle page du carnet",
+    "editTitle": "Modifier la page",
+    "search": "Chercher dans mon carnet",
+    "emptyTitle": "Ton carnet est encore vide",
+    "emptyBody": "Kaydoudou a commencé le sien avec une seule phrase : « Le ballon doit voyager. » Écris la tienne : ce que tu as appris aujourd'hui, une passe dont tu es fier ou fière, ce que tu veux travailler.",
+    "first": "Écrire ma première page",
+    "fromLesson": "Partir de la leçon du jour (n° {{n}})",
+    "printTitle": "Le carnet du Njangi de {{name}}",
+    "noMatch": "Aucune page ne correspond.",
+    "count_one": "{{count}} page dans ton carnet",
+    "count_other": "{{count}} pages dans ton carnet",
+    "untitled": "Sans titre",
+    "saved": "Page ajoutée au carnet.",
+    "updated": "Page modifiée.",
+    "deleted": "Page supprimée.",
+    "deleteTitle": "Supprimer cette page ?",
+    "deleteBody": "La page « {{title}} » du {{date}} sera effacée de cet appareil.",
+    "edit": "Modifier « {{title}} »",
+    "delete": "Supprimer « {{title}} »",
+    "fTitle": "Titre",
+    "fTitlePh": "Ma passe qui traverse",
+    "fDate": "Date",
+    "fText": "Ce que j'ai appris",
+    "fTextHint": "Quelques lignes suffisent. Tu peux aussi dessiner sur papier et recopier l'idée ici.",
+    "fTextPh": "Aujourd'hui, à l'entraînement...",
+    "prompts": "Pour t'aider à commencer",
+    "prompt": {
+      "learned": "Aujourd'hui, j'ai appris",
+      "proud": "Une passe dont je suis fier ou fière :",
+      "work": "Demain, je veux travailler",
+      "kaydoudou": "À ma place, Kaydoudou aurait"
+    },
+    "fLesson": "Leçon liée",
+    "fLessonHint": "Relie ta page à une Leçon du Ballon (facultatif).",
+    "noLesson": "Aucune"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "id": "S04",
+  "family": "ssg",
+  "order": 4,
+  "ages": "U11+",
+  "players": { "min": 10, "max": 14, "fr": "10 joueurs (4 contre 4 + 2 gardiens), 14 avec une équipe en attente", "en": "10 players (4 v 4 + 2 keepers), 14 with a team waiting" },
+  "space": { "w": 35, "h": 25 },
+  "duration": { "fr": "6 x 3 min, 1 min 30 de récupération", "en": "6 x 3 min, 1 min 30 rest" },
+  "minutes": 26,
+  "md": ["youth", "MD-4"],
+  "intensity": "high",
+  "intentions": ["fixer", "finir"],
+  "skills": ["dribble-njangi", "conduite", "passe", "decision", "appels"],
+  "pieces": ["le cœur", "la raison"],
+  "fr": {
+    "title": "Le dribble njangi",
+    "subtitle": "4 contre 4 avec gardiens : attirer deux défenseurs, puis donner",
+    "objective": "Conduire ou dribbler pour attirer deux défenseurs, puis donner au partenaire libéré. Le dribble njangi ne sert pas à briller seul : il fixe, et il libère quelqu'un.",
+    "organisation": [
+      "Terrain de 35 x 25 m, deux buts avec gardiens.",
+      "4 contre 4 ; une équipe en attente entre à chaque série si l'effectif le permet.",
+      "L'entraîneur se place au milieu, sur le côté, pour annoncer les fixations.",
+      "Ballons de réserve derrière chaque but ; pause boisson à chaque récupération."
+    ],
+    "rules": [
+      "Touches libres.",
+      "But : 1 point.",
+      "But précédé d'une conduite ou d'un dribble qui a attiré deux défenseurs, puis d'une passe : 2 points.",
+      "L'entraîneur annonce « Deux ! » dès que deux défenseurs s'engagent sur le porteur.",
+      "Le gardien relance à la main ou au pied, au sol."
+    ],
+    "coaching": [
+      "Conduis vers l'espace entre deux défenseurs : tu les obliges à choisir.",
+      "Ballon près du pied, tête haute : vois qui vient sur toi.",
+      "Le deuxième défenseur s'engage : ton partenaire est libre, donne tout de suite.",
+      "Sans ballon, éloigne-toi du porteur pour que ton défenseur hésite à te quitter.",
+      "Ne dribble pas pour toi : dribble pour libérer quelqu'un."
+    ],
+    "progressions": [
+      "Après un « Deux ! », le dribbleur ne peut plus marquer lui-même : il doit donner.",
+      "Le but à 2 points doit être marqué en une touche.",
+      "Terrain réduit à 30 x 20 m."
+    ],
+    "regressions": [
+      "Un joker joue avec l'équipe en possession : 5 contre 4.",
+      "Terrain élargi à 35 x 30 m : plus d'espace pour conduire.",
+      "Pendant la première série, les défenseurs ferment sans tacler."
+    ],
+    "measure": "Nombre de « Deux ! » par série et part de ces actions qui finissent par un tir ou un but. C'est ce que compte le sous-indice Fixation de l'Indice Njangi : les dribbles et conduites qui attirent deux adversaires.",
+    "story": "Marcus le montre à BriBri sur sa tablette : « Ton dribble le plus utile n'est pas le plus beau. C'est celui qui fait venir deux joueurs vers toi. »"
+  },
+  "en": {
+    "title": "The Njangi Dribble",
+    "subtitle": "4 v 4 with keepers: draw two defenders, then release",
+    "objective": "Carry or dribble to draw two defenders, then give it to the teammate you have freed. The njangi dribble is not about shining alone: it pins defenders and frees someone.",
+    "organisation": [
+      "35 x 25 m pitch, two goals with keepers.",
+      "4 v 4; a waiting team comes on every set if numbers allow.",
+      "The coach stands on the side, at halfway, to call when defenders are drawn.",
+      "Spare balls behind each goal; drinks break during every rest."
+    ],
+    "rules": [
+      "Unlimited touches.",
+      "Goal: 1 point.",
+      "Goal that follows a carry or dribble that drew two defenders, then a pass: 2 points.",
+      "The coach calls \"Two!\" as soon as two defenders commit to the ball carrier.",
+      "The keeper restarts by hand or with his feet, along the ground."
+    ],
+    "coaching": [
+      "Carry into the gap between two defenders: make them choose.",
+      "Ball close to your foot, head up: see who is coming at you.",
+      "The second defender commits: your teammate is free, release it now.",
+      "Without the ball, move away from the carrier so your defender hesitates to leave you.",
+      "Do not dribble for yourself: dribble to free someone."
+    ],
+    "progressions": [
+      "After a \"Two!\", the dribbler can no longer score himself: he must give it.",
+      "The 2-point goal must be a first-time finish.",
+      "Pitch reduced to 30 x 20 m."
+    ],
+    "regressions": [
+      "A joker plays for the team in possession: 5 v 4.",
+      "Pitch widened to 35 x 30 m: more room to carry the ball.",
+      "During the first set, defenders close down without tackling."
+    ],
+    "measure": "Number of \"Two!\" calls per set and share of those actions that end in a shot or a goal. This is what the Fixation sub-index of the Njangi Index counts: dribbles and carries that draw two opponents.",
+    "story": "Marcus shows BriBri on his tablet: \"Your most useful dribble is not the prettiest one. It is the one that brings two players towards you.\""
+  },
+  "diagram": {
+    "view": "grid", "w": 35, "h": 25,
+    "goals": [
+      { "x": 0, "y": 12.5, "side": "right", "size": "full" },
+      { "x": 35, "y": 12.5, "side": "left", "size": "full" }
+    ],
+    "players": [
+      { "id": "gk", "team": "gk", "x": 1.6, "y": 12.5 },
+      { "id": "gkb", "team": "gkb", "x": 33.4, "y": 12.5 },
+      { "id": "a1", "team": "a", "x": 11, "y": 12.5 },
+      { "id": "a2", "team": "a", "x": 24, "y": 4 },
+      { "id": "a3", "team": "a", "x": 24.5, "y": 21 },
+      { "id": "a4", "team": "a", "x": 6, "y": 20 },
+      { "id": "b1", "team": "b", "x": 19, "y": 9.5 },
+      { "id": "b2", "team": "b", "x": 19, "y": 15.8 },
+      { "id": "b3", "team": "b", "x": 28, "y": 18 },
+      { "id": "b4", "team": "b", "x": 11, "y": 20.5 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": [15.5, 12.5], "kind": "dribble", "n": 1 },
+      { "from": "b1", "to": [16.8, 11.6], "kind": "press" },
+      { "from": "b2", "to": [16.8, 13.6], "kind": "press" },
+      { "from": "a1", "to": "a2", "kind": "pass", "n": 2 },
+      { "from": "a2", "to": [33.4, 10], "kind": "shot", "n": 3 }
+    ],
+    "labels": [{ "x": 21.8, "y": 13.3, "text": "« Deux ! »" }]
+  },
+  "diagram2": null
+}

@@ -1,0 +1,233 @@
+{
+  "id": "G05",
+  "family": "finishing",
+  "order": 5,
+  "ages": "U13+",
+  "players": {
+    "min": 10,
+    "max": 14,
+    "fr": "10 à 14 joueurs (4 contre 3 + 2 remiseurs + gardien)",
+    "en": "10 to 14 players (4 v 3 + 2 wall players + goalkeeper)"
+  },
+  "space": {
+    "w": 30,
+    "h": 40
+  },
+  "duration": {
+    "fr": "6 x 1 min 30, 1 min 30 de récupération",
+    "en": "6 x 1 min 30, 1 min 30 rest"
+  },
+  "minutes": 17,
+  "md": [
+    "MD-4",
+    "MD-2"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "finir"
+  ],
+  "skills": [
+    "controle",
+    "decision",
+    "scan",
+    "appels",
+    "protection"
+  ],
+  "pieces": [
+    "la raison",
+    "les yeux"
+  ],
+  "fr": {
+    "title": "Finir dans la surface",
+    "subtitle": "4 contre 3 + gardien dans la surface et ses abords : frapper vite, frapper près",
+    "objective": "Finir là où les buts se marquent : dans la surface, en une ou deux touches, avant que le défenseur ne ferme. Les tirs de loin ne comptent qu'à moitié : on cherche la passe de plus pour frapper de près.",
+    "organisation": [
+      "La surface et ses abords (environ 30 x 40 m), un but avec gardien.",
+      "4 attaquants contre 3 défenseurs ; deux remiseurs neutres sur les côtés de la zone, hors de la surface.",
+      "L'entraîneur, avec une réserve de ballons à 30 m du but, en joue un nouveau dès qu'une action se termine.",
+      "Les équipes tournent toutes les 90 secondes ; les gardiens alternent."
+    ],
+    "rules": [
+      "Deux touches maximum dans la surface.",
+      "But marqué dans la surface : 2 points ; but marqué de l'extérieur : 1 point.",
+      "Les remiseurs jouent en une touche et ne marquent pas.",
+      "Les défenseurs qui récupèrent marquent 1 point en sortant le ballon de la zone en conduite.",
+      "Pas de hors-jeu."
+    ],
+    "coaching": [
+      "Avant de recevoir, regarde le but : tu sais déjà où tu frappes.",
+      "Contrôle pour frapper, pas pour garder : un contact, puis la frappe.",
+      "Frappe à ras de terre et cadrée : le gardien doit plonger, un rebond peut arriver.",
+      "9 au premier poteau, les autres au point de penalty et au second poteau : suivez chaque tir.",
+      "Pas d'angle ? Une passe de plus vers le partenaire mieux placé."
+    ],
+    "progressions": [
+      "Une seule touche dans la surface pour le but à 2 points.",
+      "4 contre 4 : l'espace se crée par le mouvement.",
+      "Chaque action dure 8 secondes au plus."
+    ],
+    "regressions": [
+      "4 contre 2.",
+      "Trois touches dans la surface.",
+      "L'entraîneur sert le ballon à la main au point de penalty."
+    ],
+    "measure": "Tirs pris dans la surface et tirs cadrés, par équipe et par série. Repère : au moins deux tirs sur trois pris dans la surface. C'est l'idée de la qualité des occasions, le xG, sans formule.",
+    "story": "À Kingsbridge, Freddie Shaw, le gardien blagueur, arrête tous les tirs de loin. BriBri apprend à faire une passe de plus et à frapper de près."
+  },
+  "en": {
+    "title": "Finish in the Box",
+    "subtitle": "4 v 3 + goalkeeper in and around the box: shoot quickly, shoot close",
+    "objective": "Finish where goals are scored: in the box, with one or two touches, before the defender closes. Long shots only count half: look for the extra pass to shoot from close range.",
+    "organisation": [
+      "The box and its surroundings (about 30 x 40 m), one goal with a goalkeeper.",
+      "4 attackers against 3 defenders; two neutral wall players on the sides of the area, outside the box.",
+      "The coach, with a supply of balls 30 m from goal, plays a new one in as soon as a move ends.",
+      "Teams rotate every 90 seconds; goalkeepers take turns."
+    ],
+    "rules": [
+      "Two touches maximum in the box.",
+      "Goal scored inside the box: 2 points; goal from outside: 1 point.",
+      "Wall players play one touch and cannot score.",
+      "Defenders who win the ball score 1 point by dribbling it out of the area.",
+      "No offside."
+    ],
+    "coaching": [
+      "Before you receive, look at the goal: you already know where you will shoot.",
+      "Control to shoot, not to keep it: one touch, then the shot.",
+      "Shoot low and on target: the goalkeeper has to dive, and a rebound may come.",
+      "9 to the near post, the others to the penalty spot and back post: follow every shot.",
+      "No angle? One more pass to the better-placed teammate."
+    ],
+    "progressions": [
+      "Only one touch in the box for the 2-point goal.",
+      "4 v 4: space has to be created by movement.",
+      "Each move lasts 8 seconds at most."
+    ],
+    "regressions": [
+      "4 v 2.",
+      "Three touches in the box.",
+      "The coach serves the ball by hand to the penalty spot."
+    ],
+    "measure": "Shots taken inside the box and shots on target, per team and per set. Benchmark: at least two shots in three taken inside the box. This is the idea behind chance quality, xG, without the formula.",
+    "story": "At Kingsbridge, Freddie Shaw, the joker in goal, saves every long shot. BriBri learns to make one more pass and shoot from close range."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      {
+        "id": "n1",
+        "team": "n",
+        "x": 34,
+        "y": 14
+      },
+      {
+        "id": "n2",
+        "team": "n",
+        "x": 33,
+        "y": 54
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 45,
+        "y": 34,
+        "label": "9"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 37,
+        "y": 24,
+        "label": "10"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 37,
+        "y": 44,
+        "label": "8"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 45,
+        "y": 50,
+        "label": "7"
+      },
+      {
+        "id": "bd1",
+        "team": "b",
+        "x": 48,
+        "y": 25.5
+      },
+      {
+        "id": "bd2",
+        "team": "b",
+        "x": 47,
+        "y": 42
+      },
+      {
+        "id": "bd3",
+        "team": "b",
+        "x": 42,
+        "y": 38.5
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "n2",
+    "arrows": [
+      {
+        "from": "n2",
+        "to": "p8",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "p10",
+        "to": [
+          43,
+          30
+        ],
+        "kind": "run",
+        "n": 2
+      },
+      {
+        "from": "p8",
+        "to": [
+          43,
+          30
+        ],
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": [
+          43,
+          30
+        ],
+        "to": [
+          52.3,
+          31.4
+        ],
+        "kind": "shot",
+        "n": 4
+      }
+    ],
+    "zones": [
+      {
+        "x": 22.5,
+        "y": 14,
+        "w": 30,
+        "h": 40,
+        "tone": "soft",
+        "label": "zone de jeu"
+      }
+    ]
+  },
+  "diagram2": null
+}

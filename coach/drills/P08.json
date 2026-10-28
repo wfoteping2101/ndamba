@@ -1,0 +1,128 @@
+{
+  "id": "P08",
+  "family": "position",
+  "order": 8,
+  "ages": "U12+",
+  "players": { "min": 13, "max": 13, "fr": "13 joueurs (gardien, 3 défenseurs, 9 attaquants en groupes de 2, 3 et 4)", "en": "13 players (keeper, 3 defenders, 9 attackers in groups of 2, 3 and 4)" },
+  "space": { "w": 35, "h": 44 },
+  "duration": { "fr": "6 cycles de 3 vagues, 1 min 30 de récupération entre les cycles", "en": "6 cycles of 3 waves, 1 min 30 rest between cycles" },
+  "minutes": 20,
+  "md": ["MD-4", "MD-2"],
+  "intensity": "high",
+  "intentions": ["fixer", "finir", "progresser"],
+  "skills": ["decision", "dribble-njangi", "appels", "passe", "conduite"],
+  "pieces": ["la carte", "la raison"],
+  "fr": {
+    "title": "Les trois supériorités",
+    "subtitle": "Vagues 2 contre 1, 3 contre 2, 4 contre 3 : créer la supériorité annoncée",
+    "objective": "Reconnaître et créer, sur demande, les trois supériorités : numérique (plus nombreux), de position (mieux placés), de qualité (le meilleur dans le duel). Les attaquants lisent la situation avant de partir et finissent vite.",
+    "organisation": [
+      "Zone de 35 x 44 m devant un but avec gardien, de la ligne de but jusqu'à 35 m.",
+      "Les attaquants attendent en trois groupes (2, 3 et 4) à 35 m ; les défenseurs entrent un par un, près des poteaux.",
+      "Vagues enchaînées : 2 contre 1, puis 3 contre 2, puis 4 contre 3, dès que la précédente finit.",
+      "Ballons chez l'entraîneur à 35 m ; on change de défenseurs tous les deux cycles."
+    ],
+    "rules": [
+      "Au départ de chaque vague, l'entraîneur annonce « Numérique ! », « Position ! » ou « Qualité ! ».",
+      "Position : un attaquant doit recevoir dans le dos ou entre deux défenseurs avant la finition.",
+      "Qualité : l'entraîneur désigne un dribbleur que l'équipe doit isoler en 1 contre 1.",
+      "But : 1 point ; but obtenu avec la supériorité annoncée : 3 points.",
+      "10 secondes pour finir ; défenseur ou gardien qui récupère : il marque en conduisant au-delà des 35 m."
+    ],
+    "coaching": [
+      "Lis avant de partir : combien sont-ils, où sont-ils, qui est le plus faible ?",
+      "Numérique : porteur, attaque le défenseur pour l'obliger à choisir, puis donne.",
+      "Position : place-toi là où aucun défenseur ne peut te gêner sans lâcher quelqu'un.",
+      "Qualité : écartez-vous pour laisser votre dribbleur seul contre son défenseur.",
+      "Finis vite : une supériorité ne dure que deux ou trois secondes."
+    ],
+    "progressions": [
+      "L'entraîneur annonce la supériorité après le départ de la vague.",
+      "Un défenseur poursuivant part 3 m derrière les attaquants.",
+      "7 secondes pour finir."
+    ],
+    "regressions": [
+      "Seulement les vagues 2 contre 1 et 3 contre 2.",
+      "L'entraîneur annonce la supériorité et montre où la créer avant le départ.",
+      "Défenseur passif sur la première vague."
+    ],
+    "measure": "Part des vagues où la supériorité annoncée est réellement créée, et buts par type de supériorité. Repère : la supériorité annoncée apparaît au moins deux fois sur trois.",
+    "story": "Jordi résume les trois supériorités à Kaydoudou en une phrase : plus nombreux, mieux placés, meilleur dans le duel."
+  },
+  "en": {
+    "title": "The Three Superiorities",
+    "subtitle": "Waves of 2 v 1, 3 v 2, 4 v 3: create the superiority the coach calls",
+    "objective": "Recognise and create, on demand, the three superiorities: numerical (more players), positional (better placed), qualitative (the best player in the duel). Attackers read the picture before they go and finish fast.",
+    "organisation": [
+      "35 x 44 m area in front of a goal with a keeper, from the goal line out to 35 m.",
+      "Attackers wait in three groups (2, 3 and 4) at 35 m; defenders come in one by one, from near the posts.",
+      "Waves follow on: 2 v 1, then 3 v 2, then 4 v 3, each one starting as the previous one ends.",
+      "Balls with the coach at 35 m; change the defenders every two cycles."
+    ],
+    "rules": [
+      "As each wave starts, the coach calls \"Numbers!\", \"Position!\" or \"Quality!\".",
+      "Position: an attacker must receive behind or between two defenders before the finish.",
+      "Quality: the coach names a dribbler whom the team must isolate in a 1 v 1.",
+      "Goal: 1 point; goal scored with the superiority that was called: 3 points.",
+      "10 seconds to finish; a defender or keeper who wins the ball scores by dribbling past the 35 m line."
+    ],
+    "coaching": [
+      "Read it before you go: how many are there, where are they, who is the weakest?",
+      "Numbers: on the ball, attack the defender to make him choose, then release it.",
+      "Position: find the spot where no defender can bother you without leaving someone.",
+      "Quality: spread out and leave your dribbler alone against his defender.",
+      "Finish fast: a superiority only lasts two or three seconds."
+    ],
+    "progressions": [
+      "The coach calls the superiority after the wave has started.",
+      "A recovering defender starts 3 m behind the attackers.",
+      "7 seconds to finish."
+    ],
+    "regressions": [
+      "Only the 2 v 1 and 3 v 2 waves.",
+      "The coach calls the superiority and shows where to create it before the start.",
+      "Passive defender on the first wave."
+    ],
+    "measure": "Share of waves in which the called superiority is really created, and goals per type of superiority. Benchmark: the called superiority appears at least two times out of three.",
+    "story": "Jordi sums up the three superiorities for Kaydoudou in one sentence: more players, better placed, better in the duel."
+  },
+  "diagram": {
+    "view": "third",
+    "players": [
+      { "id": "a1", "team": "a", "x": 9.5, "y": 34 },
+      { "id": "a2", "team": "a", "x": 13.5, "y": 21 },
+      { "id": "a3", "team": "a", "x": 12.5, "y": 47 },
+      { "id": "b1", "team": "b", "x": 22.5, "y": 25.5 },
+      { "id": "b2", "team": "b", "x": 21.5, "y": 39 },
+      { "id": "gkb", "team": "gkb", "x": 33, "y": 34 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a2", "to": [25, 33], "kind": "run", "n": 1 },
+      { "from": "a1", "to": [25, 33], "kind": "pass", "n": 2 },
+      { "from": [25, 33], "to": [34.8, 31.2], "kind": "shot", "n": 3 }
+    ],
+    "labels": [{ "x": 10, "y": 7, "text": "« Position ! » : 3 contre 2" }]
+  },
+  "diagram2": {
+    "view": "third",
+    "players": [
+      { "id": "a1", "team": "a", "x": 8.5, "y": 44 },
+      { "id": "a2", "team": "a", "x": 13.5, "y": 55 },
+      { "id": "a3", "team": "a", "x": 15.5, "y": 35 },
+      { "id": "a4", "team": "a", "x": 19.5, "y": 13, "label": "Q" },
+      { "id": "b1", "team": "b", "x": 22.5, "y": 48 },
+      { "id": "b2", "team": "b", "x": 23.5, "y": 38.5 },
+      { "id": "b3", "team": "b", "x": 23.5, "y": 10.5 },
+      { "id": "gkb", "team": "gkb", "x": 33, "y": 34 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "a3", "kind": "pass", "n": 1 },
+      { "from": "a3", "to": "a4", "kind": "pass", "n": 2 },
+      { "from": "a4", "to": [28.5, 20], "kind": "dribble", "n": 3 },
+      { "from": [28.5, 20], "to": [34.8, 31.5], "kind": "shot", "n": 4 }
+    ],
+    "labels": [{ "x": 10, "y": 7, "text": "« Qualité ! » : 4 contre 3" }]
+  }
+}

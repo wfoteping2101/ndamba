@@ -53,7 +53,7 @@ export default function AppLayout() {
   return (
     <div className="min-h-screen bg-cream lg:flex">
       <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col border-r border-line bg-paper lg:flex">
-        <div className="flex h-16 items-center px-5"><Link to="/" aria-label="Njangi"><Logo /></Link></div>
+        <div className="flex h-16 items-center px-5"><Link to="/" aria-label="Ndamba"><Logo /></Link></div>
         {team && <div className="mx-4 mb-3 rounded-xl bg-sand px-3 py-2 text-xs"><div className="font-semibold text-ink">{team.name}</div><div className="text-ink-muted">{team.ageGroup} · {team.format} {t('app.vs')} {team.format} · {team.formation}</div></div>}
         <nav className="flex-1 space-y-4 overflow-y-auto px-3 pb-6">
           {groups.map((g, i) => (
@@ -71,7 +71,7 @@ export default function AppLayout() {
 
       <div className="min-w-0 flex-1">
         <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-line/70 bg-cream/90 px-4 backdrop-blur lg:hidden">
-          <Link to="/app" aria-label="Njangi"><Logo /></Link>
+          <Link to="/app" aria-label="Ndamba"><Logo /></Link>
           <LangSwitch />
         </header>
         <main className="container-page pb-28 pt-5 sm:pt-8 lg:pb-12"><Outlet /></main>

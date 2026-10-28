@@ -162,7 +162,18 @@ export function renderDiagram(spec, opts = {}) {
   const P = { ...PALETTE, ...(opts.palette || {}) }
   const { w, h } = viewSize(spec)
   const targetW = opts.width || 640
-  const pad = opts.pad ?? 14
+  let pad = opts.pad ?? 14
+  // goals drawn outside an end line need room, or they are clipped at the image edge
+  {
+    const s0 = (targetW - pad * 2) / w
+    let need = 0
+    for (const g of spec.goals || []) {
+      const gd = Math.max(5, (g.size === 'full' ? 1.6 : 1) * s0)
+      const out = (g.side === 'left' && g.x <= 0.01) || (g.side === 'right' && g.x >= w - 0.01) || (g.side === 'top' && g.y <= 0.01) || (g.side === 'bottom' && g.y >= h - 0.01)
+      if (out) need = Math.max(need, gd + 4)
+    }
+    if (need > pad) pad = Math.ceil(need)
+  }
   const s = (targetW - pad * 2) / w
   const W = r2(w * s + pad * 2)
   const Hh = r2(h * s + pad * 2)

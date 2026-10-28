@@ -1,0 +1,118 @@
+{
+  "id": "P01",
+  "family": "position",
+  "order": 1,
+  "ages": "U12+",
+  "players": { "min": 11, "max": 11, "fr": "11 joueurs (4 contre 4 + 3 neutres)", "en": "11 players (4 v 4 + 3 neutrals)" },
+  "space": { "w": 30, "h": 25 },
+  "duration": { "fr": "4 x 4 min, 1 min 30 de récupération", "en": "4 x 4 min, 1 min 30 rest" },
+  "minutes": 22,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["fixer", "progresser", "respirer"],
+  "skills": ["scan", "passe", "appels", "communication"],
+  "pieces": ["la carte", "le cœur"],
+  "fr": {
+    "title": "Le losange",
+    "subtitle": "4 contre 4 + 3 neutres : garder le ballon en losange",
+    "objective": "Garder le ballon en organisant l'équipe en losange : une base, deux côtés, une pointe. Le losange offre toujours deux lignes de passe et une passe qui traverse ; c'est la cellule de base du jeu de position Njangi.",
+    "organisation": [
+      "Rectangle de 30 x 25 m, deux équipes de 4 et 3 neutres.",
+      "Deux neutres sur les petits côtés, le troisième joue à l'intérieur.",
+      "Les neutres jouent toujours avec l'équipe en possession : 7 contre 4.",
+      "Chasubles de trois couleurs, ballons de réserve autour du terrain."
+    ],
+    "rules": [
+      "Deux touches maximum ; une touche pour les neutres des petits côtés.",
+      "8 passes consécutives : 1 point.",
+      "Passe de la base vers la pointe, à travers le bloc adverse : 1 point bonus.",
+      "Deux joueurs de la même équipe alignés : l'entraîneur peut arrêter et rendre le ballon à l'adversaire.",
+      "À la perte, l'autre équipe garde le ballon à son tour et forme son losange."
+    ],
+    "coaching": [
+      "Quatre joueurs, quatre hauteurs : jamais deux sur la même ligne.",
+      "Les côtés s'écartent : le losange est large avant d'être court.",
+      "La pointe se montre entre deux adversaires, dans le dos du pressing.",
+      "Quand le ballon change de joueur, le losange tourne : nouveau porteur, nouvelle base.",
+      "Utilise le neutre intérieur pour fixer, puis joue à l'opposé."
+    ],
+    "progressions": [
+      "Point bonus seulement si la pointe reçoit et joue vers l'avant en une touche.",
+      "Un seul neutre sur les petits côtés : 6 contre 4.",
+      "Terrain réduit à 25 x 20 m.",
+      "Une touche pour tous après la quatrième passe."
+    ],
+    "regressions": [
+      "Trois touches, terrain de 35 x 30 m.",
+      "6 passes pour 1 point.",
+      "L'entraîneur fige le premier ballon de chaque série pour montrer le losange."
+    ],
+    "measure": "Points par série et nombre de passes base vers pointe tentées. Un losange vivant tente la passe qui traverse au moins une fois toutes les 8 passes.",
+    "story": "Comme les trois amis que Kaydoudou dessine autour du porteur dans son carnet, le losange ne laisse jamais le ballon seul."
+  },
+  "en": {
+    "title": "The Diamond",
+    "subtitle": "4 v 4 + 3 neutrals: keep the ball in a diamond",
+    "objective": "Keep the ball by shaping the team as a diamond: a base, two sides, a tip. The diamond always offers two passing lanes and one pass that splits the block; it is the basic cell of Njangi positional play.",
+    "organisation": [
+      "30 x 25 m area, two teams of 4 and 3 neutrals.",
+      "Two neutrals on the short sides, the third one plays inside.",
+      "Neutrals always play for the team in possession: 7 v 4.",
+      "Bibs in three colours, spare balls around the area."
+    ],
+    "rules": [
+      "Two touches maximum; one touch for the neutrals on the short sides.",
+      "8 passes in a row: 1 point.",
+      "A pass from the base to the tip, through the opposing block: 1 bonus point.",
+      "Two teammates on the same line: the coach may stop play and give the ball to the other team.",
+      "When the ball is lost, the other team keeps it in turn and forms its own diamond."
+    ],
+    "coaching": [
+      "Four players, four heights: never two on the same line.",
+      "The sides go wide: the diamond is wide before it is short.",
+      "The tip shows between two opponents, behind the press.",
+      "When the ball moves, the diamond turns: new player on the ball, new base.",
+      "Use the inside neutral to pin them, then play the other way."
+    ],
+    "progressions": [
+      "Bonus point only if the tip receives and plays forward first time.",
+      "Only one neutral on the short sides: 6 v 4.",
+      "Shrink the area to 25 x 20 m.",
+      "One touch for everyone after the fourth pass."
+    ],
+    "regressions": [
+      "Three touches, 35 x 30 m area.",
+      "6 passes for 1 point.",
+      "The coach freezes the first ball of each set to show the diamond."
+    ],
+    "measure": "Points per set and number of base-to-tip passes attempted. A living diamond tries the splitting pass at least once every 8 passes.",
+    "story": "Like the three friends Kaydoudou draws around the ball carrier in his notebook, the diamond never leaves the ball alone."
+  },
+  "diagram": {
+    "view": "grid", "w": 30, "h": 25,
+    "players": [
+      { "id": "a1", "team": "a", "x": 5, "y": 12.5 },
+      { "id": "a2", "team": "a", "x": 13, "y": 4.5 },
+      { "id": "a3", "team": "a", "x": 13, "y": 20.5 },
+      { "id": "a4", "team": "a", "x": 22, "y": 12.5 },
+      { "id": "n1", "team": "n", "x": 0.8, "y": 5 },
+      { "id": "n2", "team": "n", "x": 29.2, "y": 18 },
+      { "id": "n3", "team": "n", "x": 21, "y": 21.5 },
+      { "id": "r1", "team": "b", "x": 8.5, "y": 8.5 },
+      { "id": "r2", "team": "b", "x": 10.5, "y": 15 },
+      { "id": "r3", "team": "b", "x": 17, "y": 8.8 },
+      { "id": "r4", "team": "b", "x": 17, "y": 16.2 }
+    ],
+    "ball": "a3",
+    "arrows": [
+      { "from": "a3", "to": "a1", "kind": "pass", "n": 1 },
+      { "from": "a1", "to": "a4", "kind": "pass", "n": 2 },
+      { "from": "a4", "to": "n2", "kind": "pass", "n": 3 }
+    ],
+    "labels": [
+      { "x": 5, "y": 15.6, "text": "base" },
+      { "x": 23.5, "y": 9.6, "text": "pointe" }
+    ]
+  },
+  "diagram2": null
+}

@@ -1,0 +1,118 @@
+{
+  "id": "P03",
+  "family": "position",
+  "order": 3,
+  "ages": "U13+",
+  "players": { "min": 11, "max": 11, "fr": "11 joueurs (8 attaquants, 3 défenseurs)", "en": "11 players (8 attackers, 3 defenders)" },
+  "space": { "w": 24, "h": 20 },
+  "duration": { "fr": "4 x 4 min, 1 min 30 de récupération", "en": "4 x 4 min, 1 min 30 rest" },
+  "minutes": 22,
+  "md": ["MD-4", "MD-2"],
+  "intensity": "medium",
+  "intentions": ["progresser", "fixer"],
+  "skills": ["passe", "controle", "appels", "scan"],
+  "pieces": ["la carte"],
+  "fr": {
+    "title": "Le troisième homme",
+    "subtitle": "Trois zones : traverser grâce à la remise en une touche",
+    "objective": "Faire passer le ballon d'une zone extrême à l'autre par un joueur central qui remet en une touche. On entraîne le troisième homme : le défenseur regarde celui qui reçoit et oublie celui qui arrive.",
+    "organisation": [
+      "Trois zones de 8 x 20 m alignées : zone 1, zone centrale, zone 3.",
+      "Dans chaque zone extrême, 3 attaquants contre 1 défenseur.",
+      "Dans la zone centrale, 2 relais et 1 défenseur qui les suit.",
+      "Ballons de réserve derrière chaque zone extrême, avec l'entraîneur."
+    ],
+    "rules": [
+      "Deux touches dans les zones extrêmes, une touche obligatoire pour les relais.",
+      "Passe directe de la zone 1 vers la zone 3 : interdite.",
+      "Passe vers un relais, remise vers un partenaire de la zone de départ, passe de celui-ci vers l'autre zone : 1 point.",
+      "Après 3 passes dans la zone d'arrivée, le jeu repart dans l'autre sens.",
+      "Défenseur qui récupère : il échange avec le fautif ; rotation des relais toutes les 2 min."
+    ],
+    "coaching": [
+      "Passe fort dans les pieds du relais, puis libère l'espace ou propose-toi.",
+      "Relais : regarde avant de recevoir, remise au sol dans la course du troisième homme.",
+      "Troisième homme : arrive face au jeu au moment de la remise, pas avant.",
+      "Troisième homme : regarde la zone d'arrivée pendant que la remise roule.",
+      "Zone d'arrivée : écartez-vous pour offrir une cible loin du défenseur."
+    ],
+    "progressions": [
+      "Passe vers la zone d'arrivée jouée en une touche.",
+      "Le défenseur d'une zone extrême peut entrer presser dans la zone centrale.",
+      "Zones de 8 x 16 m."
+    ],
+    "regressions": [
+      "Défenseur central passif.",
+      "Deux touches pour les relais.",
+      "Zones de 10 x 24 m."
+    ],
+    "measure": "Troisièmes hommes réussis par série et pourcentage de remises en une touche qui arrivent dans la course du partenaire.",
+    "story": "Jordi l'apprend à Kaydoudou en Catalogne : le meilleur passeur n'est pas celui qui fait la passe décisive, c'est celui qui fait jouer la passe d'après."
+  },
+  "en": {
+    "title": "The Third Man",
+    "subtitle": "Three zones: go through with a one-touch lay-off",
+    "objective": "Move the ball from one end zone to the other through a central player who lays it off first time. It trains the third man: the defender watches the receiver and forgets the player arriving.",
+    "organisation": [
+      "Three 8 x 20 m zones in a line: zone 1, central zone, zone 3.",
+      "In each end zone, 3 attackers against 1 defender.",
+      "In the central zone, 2 link players and 1 defender who tracks them.",
+      "Spare balls behind each end zone, with the coach."
+    ],
+    "rules": [
+      "Two touches in the end zones, one touch only for the link players.",
+      "A direct pass from zone 1 to zone 3 is not allowed.",
+      "Pass into a link player, lay-off to a teammate in the starting zone, his pass into the far zone: 1 point.",
+      "After 3 passes in the far zone, play goes back the other way.",
+      "A defender who wins the ball swaps with the player at fault; rotate the link players every 2 min."
+    ],
+    "coaching": [
+      "Pass firmly into the link player's feet, then clear the space or show again.",
+      "Link player: check before you receive, lay it off on the ground into the third man's run.",
+      "Third man: arrive facing play as the lay-off is made, not before.",
+      "Third man: look at the far zone while the lay-off is rolling.",
+      "Far zone: spread out to offer a target away from the defender."
+    ],
+    "progressions": [
+      "The pass into the far zone must be one touch.",
+      "The defender of an end zone may step into the central zone to press.",
+      "8 x 16 m zones."
+    ],
+    "regressions": [
+      "Passive central defender.",
+      "Two touches for the link players.",
+      "10 x 24 m zones."
+    ],
+    "measure": "Successful third-man combinations per set and share of one-touch lay-offs that land in the teammate's stride.",
+    "story": "Jordi teaches Kaydoudou in Catalonia: the best passer is not the one who plays the assist, but the one who sets up the next pass."
+  },
+  "diagram": {
+    "view": "grid", "w": 24, "h": 20,
+    "zones": [
+      { "x": 0, "y": 0, "w": 8, "h": 20, "tone": "soft", "label": "zone 1" },
+      { "x": 8, "y": 0, "w": 8, "h": 20, "tone": "n", "label": "relais" },
+      { "x": 16, "y": 0, "w": 8, "h": 20, "tone": "soft", "label": "zone 3" }
+    ],
+    "cones": [[0, 0], [8, 0], [16, 0], [24, 0], [0, 20], [8, 20], [16, 20], [24, 20]],
+    "players": [
+      { "id": "a1", "team": "a", "x": 2.5, "y": 15.5, "label": "A" },
+      { "id": "c1", "team": "a", "x": 5.5, "y": 8, "label": "C" },
+      { "id": "a3", "team": "a", "x": 1.8, "y": 4 },
+      { "id": "r1", "team": "b", "x": 4.6, "y": 12 },
+      { "id": "b1", "team": "a", "x": 11, "y": 14.5, "label": "B" },
+      { "id": "b2", "team": "a", "x": 11.5, "y": 4 },
+      { "id": "r2", "team": "b", "x": 13.2, "y": 12.6 },
+      { "id": "d1", "team": "a", "x": 20.5, "y": 10, "label": "D" },
+      { "id": "d2", "team": "a", "x": 22.5, "y": 3 },
+      { "id": "d3", "team": "a", "x": 21.5, "y": 17.5 },
+      { "id": "r3", "team": "b", "x": 18.6, "y": 14 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "b1", "kind": "pass", "n": 1 },
+      { "from": "b1", "to": "c1", "kind": "pass", "n": 2 },
+      { "from": "c1", "to": "d1", "kind": "pass", "n": 3 }
+    ]
+  },
+  "diagram2": null
+}

@@ -3,3 +3,11 @@ app/dist
 app/node_modules
 .DS_Store
 *.log
+build/
+tools/node_modules/
+# full-resolution PNG masters stay on the generation PC (C:\Users\admin\Documents\Kaydoudou-BriBri\illustrations)
+# and in the working copy; web and print derivatives are committed under app/public/book/
+tome1/illustrations/*.png
+tome1/illustrations/_masters/
+coach/illustrations/*.png
+app/public/book/*/img/*-print*

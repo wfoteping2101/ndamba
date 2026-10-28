@@ -1,0 +1,860 @@
+[
+ {
+  "id": "sheet-brothers",
+  "kind": "sheet",
+  "chapter": null,
+  "refs": [
+   "identity-v1-brothers.png"
+  ],
+  "prompt": "tome1/prompts/sheet-brothers.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/sheet-brothers.png",
+  "status": "approved, integrated",
+  "review": "Identity locked: shaved part on Kaydoudou's left, gap tooth, red sock right and yellow sock left, BriBri's head at his brother's chin.",
+  "integrated_in": [
+   "characters page (reader and PDF)",
+   "reference for every scene"
+  ]
+ },
+ {
+  "id": "sheet-turnaround",
+  "kind": "sheet",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png",
+   "identity-v1-brothers.png"
+  ],
+  "prompt": "tome1/prompts/sheet-turnaround.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/sheet-turnaround.png",
+  "status": "approved, integrated",
+  "review": "Minor: in the back view the shaved part is drawn on the wrong side; front, three-quarter and profile are correct. Scenes use sheet-brothers as the main reference.",
+  "integrated_in": [
+   "reference sheet"
+  ]
+ },
+ {
+  "id": "sheet-expressions",
+  "kind": "sheet",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png"
+  ],
+  "prompt": "tome1/prompts/sheet-expressions.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/sheet-expressions.png",
+  "status": "approved, integrated",
+  "review": "Eight readable expressions.",
+  "integrated_in": [
+   "reference sheet"
+  ]
+ },
+ {
+  "id": "sheet-adults",
+  "kind": "sheet",
+  "chapter": null,
+  "refs": [
+   "identity-v1-adults.png",
+   "sheet-brothers.png"
+  ],
+  "prompt": "tome1/prompts/sheet-adults.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/sheet-adults.png",
+  "status": "approved, integrated",
+  "review": "Consistent with the v1 identity sheet; Fokou keeps the cane of v1 for his limp.",
+  "integrated_in": [
+   "reference sheet"
+  ]
+ },
+ {
+  "id": "cover-rough-a",
+  "kind": "cover",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png"
+  ],
+  "prompt": "tome1/prompts/cover-rough-a.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/cover-rough-a.png",
+  "status": "approved, integrated",
+  "review": "Rough, score 12/15 (title zone busy). Not published.",
+  "integrated_in": [
+   "rough, not published"
+  ]
+ },
+ {
+  "id": "cover-rough-b",
+  "kind": "cover",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png"
+  ],
+  "prompt": "tome1/prompts/cover-rough-b.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/cover-rough-b.png",
+  "status": "approved, integrated",
+  "review": "Rough, score 14/15 (ribbon of countries cluttered). Not published.",
+  "integrated_in": [
+   "rough, not published"
+  ]
+ },
+ {
+  "id": "cover-rough-c",
+  "kind": "cover",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png"
+  ],
+  "prompt": "tome1/prompts/cover-rough-c.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/cover-rough-c.png",
+  "status": "approved, integrated",
+  "review": "Rough, score 15/15, chosen direction.",
+  "integrated_in": [
+   "rough, not published"
+  ]
+ },
+ {
+  "id": "code-cover-art",
+  "kind": "cover",
+  "chapter": null,
+  "refs": [],
+  "prompt": "tome1/prompts/code-cover-art.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/code-cover-art.png",
+  "status": "approved, integrated",
+  "review": "Passing triangles toward the goal, star in the sky, calm title zone.",
+  "integrated_in": [
+   "Le Code Njangi cover (compose_cover.mjs --code)",
+   "web reader",
+   "PDF",
+   "app library"
+  ]
+ },
+ {
+  "id": "cover-art",
+  "kind": "cover",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png",
+   "cover-rough-c.png"
+  ],
+  "prompt": "tome1/prompts/cover-art.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/cover-art.png",
+  "status": "approved, integrated",
+  "review": "Both faces readable at thumbnail size, gateway framing, journey road, calm title sky.",
+  "integrated_in": [
+   "cover.png (composed with tools/compose_cover.mjs)",
+   "web reader",
+   "PDF",
+   "app library"
+  ]
+ },
+ {
+  "id": "part1",
+  "kind": "part",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/part1.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/part1.png",
+  "status": "approved, integrated",
+  "review": "Red-earth pitch of Bonamoussadi; both brothers small, juggling.",
+  "integrated_in": [
+   "web reader (part opener)",
+   "PDF (part page)"
+  ]
+ },
+ {
+  "id": "part2",
+  "kind": "part",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/part2.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "part3",
+  "kind": "part",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/part3.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "part4",
+  "kind": "part",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/part4.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "part5",
+  "kind": "part",
+  "chapter": null,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/part5.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch01",
+  "kind": "chapter",
+  "chapter": 1,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch01.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch01.png",
+  "status": "approved, integrated",
+  "review": "Tears in the dust, hand on the shoulder, fence, mango tree, cap; socks correct.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
+ },
+ {
+  "id": "ch02",
+  "kind": "chapter",
+  "chapter": 2,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch02.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch02.png",
+  "status": "approved, integrated",
+  "review": "Mami sews the wax patch, BriBri leans in, Kaydoudou in the doorway.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
+ },
+ {
+  "id": "ch03",
+  "kind": "chapter",
+  "chapter": 3,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch03.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch04",
+  "kind": "chapter",
+  "chapter": 4,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch04.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch04.png",
+  "status": "approved, integrated",
+  "review": "Mud fight, Ousmane's big hands, Fokou fake-angry under the mango tree.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
+ },
+ {
+  "id": "ch05",
+  "kind": "chapter",
+  "chapter": 5,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch05.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch05.png",
+  "status": "approved, integrated",
+  "review": "Papa draws the network, Kaydoudou follows the arrow, BriBri's socks in the air on the sofa.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
+ },
+ {
+  "id": "ch06",
+  "kind": "chapter",
+  "chapter": 6,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch06.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch07",
+  "kind": "chapter",
+  "chapter": 7,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png"
+  ],
+  "prompt": "tome1/prompts/ch07.txt",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch07.png",
+  "status": "approved, integrated",
+  "review": "Representative interior, style reference for all scenes: identities, socks, notebook and light all match.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
+ },
+ {
+  "id": "ch08",
+  "kind": "chapter",
+  "chapter": 8,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch08.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch09",
+  "kind": "chapter",
+  "chapter": 9,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch09.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch10",
+  "kind": "chapter",
+  "chapter": 10,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch10.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch11",
+  "kind": "chapter",
+  "chapter": 11,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch11.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch12",
+  "kind": "chapter",
+  "chapter": 12,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch12.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch13",
+  "kind": "chapter",
+  "chapter": 13,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch13.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch14",
+  "kind": "chapter",
+  "chapter": 14,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch14.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch15",
+  "kind": "chapter",
+  "chapter": 15,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch15.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch16",
+  "kind": "chapter",
+  "chapter": 16,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch16.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch17",
+  "kind": "chapter",
+  "chapter": 17,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch17.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch18",
+  "kind": "chapter",
+  "chapter": 18,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch18.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch19",
+  "kind": "chapter",
+  "chapter": 19,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch19.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch20",
+  "kind": "chapter",
+  "chapter": 20,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch20.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch21",
+  "kind": "chapter",
+  "chapter": 21,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch21.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch22",
+  "kind": "chapter",
+  "chapter": 22,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch22.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch23",
+  "kind": "chapter",
+  "chapter": 23,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch23.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch24",
+  "kind": "chapter",
+  "chapter": 24,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch24.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch25",
+  "kind": "chapter",
+  "chapter": 25,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch25.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch26",
+  "kind": "chapter",
+  "chapter": 26,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch26.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch27",
+  "kind": "chapter",
+  "chapter": 27,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch27.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch28",
+  "kind": "chapter",
+  "chapter": 28,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch28.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch29",
+  "kind": "chapter",
+  "chapter": 29,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch29.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch30",
+  "kind": "chapter",
+  "chapter": 30,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch30.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch31",
+  "kind": "chapter",
+  "chapter": 31,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch31.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch32",
+  "kind": "chapter",
+  "chapter": 32,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch32.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch33",
+  "kind": "chapter",
+  "chapter": 33,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch33.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch34",
+  "kind": "chapter",
+  "chapter": 34,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch34.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch35",
+  "kind": "chapter",
+  "chapter": 35,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch35.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch36",
+  "kind": "chapter",
+  "chapter": 36,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch36.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch37",
+  "kind": "chapter",
+  "chapter": 37,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch37.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch38",
+  "kind": "chapter",
+  "chapter": 38,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch38.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch39",
+  "kind": "chapter",
+  "chapter": 39,
+  "refs": [
+   "sheet-brothers.png",
+   "sheet-adults.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch39.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ },
+ {
+  "id": "ch40",
+  "kind": "chapter",
+  "chapter": 40,
+  "refs": [
+   "sheet-brothers.png",
+   "ch07.png"
+  ],
+  "prompt": "tome1/prompts/ch40.txt",
+  "model": null,
+  "master": null,
+  "status": "pending",
+  "review": null,
+  "integrated_in": []
+ }
+]

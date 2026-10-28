@@ -1,0 +1,306 @@
+{
+  "id": "G03",
+  "family": "finishing",
+  "order": 3,
+  "ages": "U13+",
+  "players": {
+    "min": 8,
+    "max": 12,
+    "fr": "8 à 12 joueurs (circuit avec gardien)",
+    "en": "8 to 12 players (pattern with a goalkeeper)"
+  },
+  "space": {
+    "w": 35,
+    "h": 40
+  },
+  "duration": {
+    "fr": "3 x 5 min (sans défenseur, défenseur passif, défenseur actif), 1 min 30 de récupération",
+    "en": "3 x 5 min (no defender, passive defender, active defender), 1 min 30 rest"
+  },
+  "minutes": 18,
+  "md": [
+    "MD-2",
+    "MD-1"
+  ],
+  "intensity": "medium",
+  "intentions": [
+    "finir",
+    "progresser"
+  ],
+  "skills": [
+    "protection",
+    "passe",
+    "appels",
+    "controle",
+    "scan"
+  ],
+  "pieces": [
+    "la carte",
+    "les yeux"
+  ],
+  "fr": {
+    "title": "Troisième homme et frappe",
+    "subtitle": "Pivot, attaquant qui remet, intérieur lancé qui frappe",
+    "objective": "Automatiser la combinaison du troisième homme jusqu'à la frappe : le pivot joue dans les pieds de l'attaquant, qui protège et remet en une touche vers un intérieur lancé. Celui qui frappe reçoit face au but, déjà en mouvement.",
+    "organisation": [
+      "Devant la surface, un but avec gardien.",
+      "Une file de pivots à 35 m dans l'axe, un attaquant dos au but à 18 m.",
+      "Deux files d'intérieurs à 28 m, une dans chaque demi-espace.",
+      "L'attaquant change toutes les 4 répétitions ; les intérieurs alternent à gauche et à droite.",
+      "Trois séries : sans défenseur, avec un défenseur passif dans le dos de l'attaquant, puis actif."
+    ],
+    "rules": [
+      "Le pivot joue au sol dans les pieds de l'attaquant ; l'attaquant remet en une touche.",
+      "L'intérieur frappe en une ou deux touches, à l'entrée de la surface.",
+      "Défenseur actif : s'il gagne le ballon, il marque 1 point en conduisant jusqu'à la file des pivots.",
+      "Un but vaut 1 point, 2 points s'il est marqué en une touche."
+    ],
+    "coaching": [
+      "Pivot, passe ferme, sur le pied éloigné du défenseur.",
+      "Attaquant, protège avec le corps, bras ouvert, et remets dans la course, pas dans les pieds.",
+      "Regarde avant de recevoir : si le défenseur te colle d'un côté, remets de l'autre.",
+      "Intérieur, pars au moment où le pivot joue : tu dois arriver, pas attendre.",
+      "Frappe à ras de terre, côté opposé au gardien."
+    ],
+    "progressions": [
+      "Défenseur actif dès la passe du pivot.",
+      "Les deux intérieurs partent : l'attaquant choisit le plus libre.",
+      "Un deuxième défenseur sort sur la frappe : l'intérieur doit enchaîner vite."
+    ],
+    "regressions": [
+      "L'entraîneur joue la passe de départ à la main.",
+      "Deux touches pour l'attaquant.",
+      "Deux mini-buts dans les coins du but pour apprendre à viser."
+    ],
+    "measure": "Remises en une touche qui arrivent dans la course de l'intérieur, et frappes cadrées, sur 10 répétitions par série. Avec le défenseur actif, viser 6 frappes cadrées sur 10.",
+    "story": "À la Granja del Mar, Jordi Puig fait répéter le troisième homme jusqu'à ce que Kaydoudou le joue les yeux fermés : le pivot, l'appui, la frappe."
+  },
+  "en": {
+    "title": "Third Man and Shot",
+    "subtitle": "Pivot, striker lays off, inside midfielder arrives and shoots",
+    "objective": "Groove the third-man combination all the way to the shot: the pivot plays into the striker's feet, who shields and lays it off first time to an inside midfielder arriving at speed. The shooter receives facing goal, already moving.",
+    "organisation": [
+      "In front of the box, one goal with a goalkeeper.",
+      "A line of pivots 35 m out in the middle, a striker with his back to goal at 18 m.",
+      "Two lines of inside midfielders at 28 m, one in each half-space.",
+      "Change the striker every 4 repetitions; the inside midfielders alternate left and right.",
+      "Three sets: no defender, a passive defender behind the striker, then an active one."
+    ],
+    "rules": [
+      "The pivot plays along the ground into the striker's feet; the striker lays off first time.",
+      "The inside midfielder shoots with one or two touches, at the edge of the box.",
+      "Active defender: if he wins the ball, he scores 1 point by dribbling to the line of pivots.",
+      "A goal is worth 1 point, 2 points if scored first time."
+    ],
+    "coaching": [
+      "Pivot, firm pass, onto the foot away from the defender.",
+      "Striker, shield with your body, arm out, and lay it into the run, not to feet.",
+      "Look before you receive: if the defender is tight on one side, lay it off to the other.",
+      "Inside midfielder, go as the pivot plays: you must arrive, not wait.",
+      "Shoot low, away from the goalkeeper."
+    ],
+    "progressions": [
+      "Active defender from the pivot's pass onwards.",
+      "Both inside midfielders go: the striker picks the freer one.",
+      "A second defender closes down the shot: the inside midfielder must be quick."
+    ],
+    "regressions": [
+      "The coach plays the first pass by hand.",
+      "Two touches for the striker.",
+      "Two mini goals in the corners of the goal to learn to pick a spot."
+    ],
+    "measure": "First-time lay-offs that arrive in the inside midfielder's run, and shots on target, over 10 repetitions per set. With the active defender, aim for 6 shots on target out of 10.",
+    "story": "At La Granja del Mar, Jordi Puig repeats the third man until Kaydoudou can play it with his eyes closed: the pivot, the lay-off, the shot."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 17,
+        "y": 34,
+        "label": "6"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 35,
+        "y": 34,
+        "label": "9"
+      },
+      {
+        "id": "d",
+        "team": "b",
+        "x": 38.4,
+        "y": 34.6
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 24,
+        "y": 46,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 24,
+        "y": 22,
+        "label": "10"
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "p6",
+    "arrows": [
+      {
+        "from": "p6",
+        "to": "p9",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "p8",
+        "to": [
+          31.5,
+          40.8
+        ],
+        "kind": "run",
+        "n": 2
+      },
+      {
+        "from": "p9",
+        "to": [
+          31.5,
+          40.8
+        ],
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": [
+          31.5,
+          40.8
+        ],
+        "to": [
+          52.3,
+          31.2
+        ],
+        "kind": "shot",
+        "n": 4
+      }
+    ],
+    "labels": [
+      {
+        "x": 17,
+        "y": 30.5,
+        "text": "pivot"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "half",
+    "players": [
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 17,
+        "y": 34,
+        "label": "6"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 35,
+        "y": 34,
+        "label": "9"
+      },
+      {
+        "id": "d",
+        "team": "b",
+        "x": 40.5,
+        "y": 40
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 26,
+        "y": 47,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 24,
+        "y": 22,
+        "label": "10"
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "p6",
+    "arrows": [
+      {
+        "from": "p6",
+        "to": "p9",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "d",
+        "to": [
+          36.9,
+          36.6
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "p10",
+        "to": [
+          31.5,
+          28
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": "p9",
+        "to": [
+          31.5,
+          28
+        ],
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": [
+          31.5,
+          28
+        ],
+        "to": [
+          52.3,
+          36.6
+        ],
+        "kind": "shot",
+        "n": 5
+      }
+    ],
+    "labels": [
+      {
+        "x": 42.5,
+        "y": 45,
+        "text": "défenseur actif"
+      }
+    ]
+  }
+}

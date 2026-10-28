@@ -1,0 +1,265 @@
+{
+  "id": "T02",
+  "family": "transition",
+  "order": 2,
+  "ages": "U13+",
+  "players": {
+    "min": 10,
+    "max": 10,
+    "fr": "10 joueurs (4 contre 4 + 2 gardiens)",
+    "en": "10 players (4 v 4 + 2 goalkeepers)"
+  },
+  "space": {
+    "w": 60,
+    "h": 40
+  },
+  "duration": {
+    "fr": "5 x 3 min, 1 min 30 de récupération",
+    "en": "5 x 3 min, 1 min 30 rest"
+  },
+  "minutes": 21,
+  "md": [
+    "MD-2",
+    "MD-4"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "regarder-devant",
+    "progresser",
+    "finir"
+  ],
+  "skills": [
+    "scan",
+    "decision",
+    "appels",
+    "passe"
+  ],
+  "pieces": [
+    "les yeux",
+    "le souffle"
+  ],
+  "fr": {
+    "title": "Regarder devant",
+    "subtitle": "4 contre 4 au centre, puis 3 contre 2 vers le but après la récupération",
+    "objective": "Après la récupération, le premier regard va vers la profondeur. On garde le ballon à 4 contre 4 dans une zone centrale ; l'équipe qui récupère attaque aussitôt à 3 contre 2, la première passe vers l'avant si c'est possible.",
+    "organisation": [
+      "Terrain de 60 x 40 m divisé en trois zones de 20 m, un but avec gardien à chaque bout.",
+      "4 contre 4 dans la zone centrale ; chaque équipe attaque un but.",
+      "L'entraîneur, au bord de la zone centrale, relance un ballon dès qu'une action se termine.",
+      "Pause boisson à chaque récupération, à l'ombre si possible."
+    ],
+    "rules": [
+      "Dans la zone centrale, l'équipe en possession garde le ballon : 6 passes valent 1 point.",
+      "À la récupération, 3 joueurs au plus attaquent le but adverse, 2 adversaires au plus reviennent défendre.",
+      "But après une première passe vers l'avant : 2 points ; autre but : 1 point.",
+      "Il faut tirer dans les 8 secondes après la récupération, sinon l'action s'arrête.",
+      "Après chaque attaque, l'entraîneur relance au centre vers l'équipe qui défendait."
+    ],
+    "coaching": [
+      "Pendant que tu défends, sache déjà où sont tes attaquants.",
+      "Récupère et regarde devant : la passe vers l'avant d'abord, la conduite ensuite, la passe en arrière en dernier.",
+      "Sans ballon, pars tout de suite en diagonale dans la profondeur pour offrir la passe.",
+      "Le deuxième attaquant reste large pour écarter les deux défenseurs.",
+      "Défenseurs qui reviennent : retardez, fermez l'axe, obligez à jouer large."
+    ],
+    "progressions": [
+      "Tir dans les 6 secondes.",
+      "Trois adversaires peuvent revenir : 3 contre 3.",
+      "Première passe après la récupération en une touche."
+    ],
+    "regressions": [
+      "Un seul adversaire revient : 3 contre 1.",
+      "Tir dans les 10 secondes.",
+      "Possession libre dans la zone centrale, sans compter les passes."
+    ],
+    "measure": "Part des récupérations suivies d'une première passe vers l'avant, et temps entre la récupération et le tir. Bon repère : au moins une récupération sur deux finit par un tir.",
+    "story": "Kaydoudou lève deux doigts, BriBri part en profondeur. Depuis Bonamoussadi, les frères regardent devant avant même d'avoir le ballon."
+  },
+  "en": {
+    "title": "Look Forward",
+    "subtitle": "4 v 4 in the middle, then 3 v 2 to goal after winning the ball",
+    "objective": "After winning the ball, the first look goes in behind. Teams keep the ball 4 v 4 in a central zone; the team that wins it attacks at once 3 v 2, with the first pass going forward whenever possible.",
+    "organisation": [
+      "60 x 40 m pitch split into three 20 m zones, a goal with a goalkeeper at each end.",
+      "4 v 4 in the central zone; each team attacks one goal.",
+      "The coach, beside the central zone, plays a new ball in as soon as a move ends.",
+      "Drinks break during every rest, in the shade if possible."
+    ],
+    "rules": [
+      "In the central zone, the team in possession keeps the ball: 6 passes earn 1 point.",
+      "After a regain, 3 players at most attack the opposition goal, 2 opponents at most track back.",
+      "Goal after a first pass forward: 2 points; any other goal: 1 point.",
+      "The shot must come within 8 seconds of the regain, otherwise the move stops.",
+      "After each attack, the coach restarts in the middle with the team that was defending."
+    ],
+    "coaching": [
+      "While you defend, already know where your forwards are.",
+      "Win it and look forward: forward pass first, then the dribble, the back pass last.",
+      "Without the ball, run diagonally in behind at once to offer the pass.",
+      "The second attacker stays wide to pull the two defenders apart.",
+      "Defenders tracking back: delay, close the middle, force them wide."
+    ],
+    "progressions": [
+      "Shot within 6 seconds.",
+      "Three opponents may track back: 3 v 3.",
+      "First pass after the regain is one touch."
+    ],
+    "regressions": [
+      "Only one opponent tracks back: 3 v 1.",
+      "Shot within 10 seconds.",
+      "Free possession in the central zone, without counting passes."
+    ],
+    "measure": "Share of regains followed by a first pass forward, and the time from regain to shot. Good benchmark: at least one regain in two ends in a shot.",
+    "story": "Kaydoudou raises two fingers and BriBri runs in behind. Since Bonamoussadi, the brothers look forward before they even have the ball."
+  },
+  "diagram": {
+    "view": "grid",
+    "w": 60,
+    "h": 40,
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 1.6,
+        "y": 20
+      },
+      {
+        "id": "a1",
+        "team": "a",
+        "x": 32,
+        "y": 22
+      },
+      {
+        "id": "a2",
+        "team": "a",
+        "x": 36,
+        "y": 9
+      },
+      {
+        "id": "a3",
+        "team": "a",
+        "x": 34,
+        "y": 32
+      },
+      {
+        "id": "a4",
+        "team": "a",
+        "x": 24,
+        "y": 27
+      },
+      {
+        "id": "b1",
+        "team": "b",
+        "x": 29,
+        "y": 19
+      },
+      {
+        "id": "b2",
+        "team": "b",
+        "x": 39,
+        "y": 25
+      },
+      {
+        "id": "b3",
+        "team": "b",
+        "x": 26,
+        "y": 11
+      },
+      {
+        "id": "b4",
+        "team": "b",
+        "x": 23,
+        "y": 34
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 58.4,
+        "y": 20
+      }
+    ],
+    "ball": "a1",
+    "arrows": [
+      {
+        "from": "a2",
+        "to": [
+          47,
+          13
+        ],
+        "kind": "run",
+        "n": 1
+      },
+      {
+        "from": "a1",
+        "to": [
+          47,
+          13
+        ],
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "a3",
+        "to": [
+          47,
+          27
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": "b2",
+        "to": [
+          45,
+          20
+        ],
+        "kind": "press",
+        "n": 4
+      },
+      {
+        "from": [
+          47,
+          13
+        ],
+        "to": [
+          59.6,
+          18
+        ],
+        "kind": "shot",
+        "n": 5
+      }
+    ],
+    "zones": [
+      {
+        "x": 20,
+        "y": 0,
+        "w": 20,
+        "h": 40,
+        "tone": "soft",
+        "label": "4 contre 4"
+      }
+    ],
+    "goals": [
+      {
+        "x": 0.3,
+        "y": 20,
+        "side": "left",
+        "size": "full"
+      },
+      {
+        "x": 59.7,
+        "y": 20,
+        "side": "right",
+        "size": "full"
+      }
+    ],
+    "labels": [
+      {
+        "x": 50,
+        "y": 38.6,
+        "text": "3 contre 2"
+      }
+    ]
+  },
+  "diagram2": null
+}

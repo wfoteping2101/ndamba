@@ -1,0 +1,122 @@
+{
+  "id": "L05",
+  "family": "lsg",
+  "order": 5,
+  "ages": "U13+",
+  "players": { "min": 16, "max": 16, "fr": "16 joueurs (7 contre 7 + 2 gardiens)", "en": "16 players (7 v 7 + 2 goalkeepers)" },
+  "space": { "w": 52, "h": 68 },
+  "duration": { "fr": "4 x 6 min, 2 min de récupération", "en": "4 x 6 min, 2 min rest" },
+  "minutes": 30,
+  "md": ["MD-3", "youth"],
+  "intensity": "high",
+  "intentions": ["fixer", "progresser", "finir"],
+  "skills": ["passe", "scan", "appels", "decision", "conduite"],
+  "pieces": ["la carte", "la raison"],
+  "fr": {
+    "title": "Largeur maximale",
+    "subtitle": "7 contre 7 sur une moitié de terrain : toucher les deux couloirs avant de marquer",
+    "objective": "Utiliser toute la largeur pour étirer le bloc adverse. Un but ne compte que si le ballon a touché les deux couloirs extérieurs : on apprend à fixer d'un côté pour finir de l'autre.",
+    "organisation": [
+      "Une moitié de terrain dans toute sa largeur (environ 52 x 68 m), un but mobile sur la ligne médiane.",
+      "Deux couloirs extérieurs de 12 m, tracés avec des coupelles sur toute la longueur.",
+      "7 contre 7 avec gardiens : deux centraux, un pivot, un intérieur, un 9 et deux ailiers.",
+      "Ballons de réserve dans les deux buts ; pause boisson à chaque récupération, à l'ombre si possible."
+    ],
+    "rules": [
+      "Un but n'est valable que si le ballon a été joué dans les deux couloirs pendant l'action.",
+      "Jouer dans un couloir : y recevoir une passe ou y conduire le ballon.",
+      "Un but après un renversement direct, d'un couloir à l'autre en une passe, vaut 2 points.",
+      "Tout le monde peut entrer dans les couloirs, défenseurs compris.",
+      "Le compte repart à zéro à chaque changement de possession ; pas de hors-jeu."
+    ],
+    "coaching": [
+      "Ailiers, les pieds sur la ligne : plus tu es large, plus l'intérieur s'ouvre.",
+      "Fixe d'abord : deux ou trois passes courtes d'un côté pour attirer le bloc.",
+      "Renverse vite, au sol si possible : chaque seconde perdue laisse la défense glisser.",
+      "Ailier opposé, contrôle vers l'avant et attaque ton défenseur tout de suite.",
+      "Quand le ballon arrive dans le deuxième couloir, deux joueurs attaquent la surface."
+    ],
+    "progressions": [
+      "Deux touches maximum dans les couloirs.",
+      "Couloirs réduits à 9 m : la passe de renversement doit être plus précise.",
+      "Au signal, un défenseur supplémentaire entre : 7 contre 8."
+    ],
+    "regressions": [
+      "Un joker joue avec l'équipe en possession : 8 contre 7.",
+      "Un seul couloir suffit pendant la première série.",
+      "Couloirs de 15 m pour faciliter la réception."
+    ],
+    "measure": "Nombre d'actions qui touchent les deux couloirs par série, et part de ces actions qui finissent par un tir. À comparer avec le nombre de pertes dans l'axe.",
+    "story": "À Bonamoussadi, Tonton Fokou trace les couloirs avec ses pieds dans la terre rouge : le ballon doit voyager, d'une ligne de touche à l'autre."
+  },
+  "en": {
+    "title": "Maximum Width",
+    "subtitle": "7 v 7 on half a pitch: use both wide channels before you score",
+    "objective": "Use the full width to stretch the opposing block. A goal only counts if the ball has been in both wide channels: players learn to pin one side and finish on the other.",
+    "organisation": [
+      "Half a pitch across its full width (about 52 x 68 m), a portable goal on the halfway line.",
+      "Two 12 m wide channels marked with disc cones along the full length.",
+      "7 v 7 with goalkeepers: two centre-backs, a pivot, an inside midfielder, a 9 and two wingers.",
+      "Spare balls in both goals; drinks break during every rest, in the shade if possible."
+    ],
+    "rules": [
+      "A goal only counts if the ball was played in both channels during the move.",
+      "Playing in a channel means receiving a pass there or dribbling the ball there.",
+      "A goal after a direct switch, from one channel to the other in one pass, is worth 2 points.",
+      "Everyone may enter the channels, defenders included.",
+      "The count resets whenever possession changes; no offside."
+    ],
+    "coaching": [
+      "Wingers, feet on the line: the wider you are, the more the inside opens up.",
+      "Pin them first: two or three short passes on one side to draw the block.",
+      "Switch quickly, on the ground if you can: every second lost lets the defence slide.",
+      "Far winger, take your first touch forward and attack your defender at once.",
+      "When the ball reaches the second channel, two players attack the box."
+    ],
+    "progressions": [
+      "Two touches maximum in the channels.",
+      "Channels narrowed to 9 m: the switch has to be more accurate.",
+      "On a signal, an extra defender comes on: 7 v 8."
+    ],
+    "regressions": [
+      "A joker plays with the team in possession: 8 v 7.",
+      "One channel is enough during the first set.",
+      "15 m channels to make receiving easier."
+    ],
+    "measure": "Number of moves that use both channels per set, and the share of those moves that end in a shot. Compare with the number of balls lost through the middle.",
+    "story": "In Bonamoussadi, Tonton Fokou marks the channels with his feet in the red earth: the ball must travel, from one touchline to the other."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      { "id": "gk", "team": "gk", "x": 3.4, "y": 34, "label": "1" },
+      { "id": "c4", "team": "a", "x": 12, "y": 24, "label": "4" },
+      { "id": "c5", "team": "a", "x": 12, "y": 44, "label": "5" },
+      { "id": "p6", "team": "a", "x": 20, "y": 34, "label": "6" },
+      { "id": "p8", "team": "a", "x": 27, "y": 21, "label": "8" },
+      { "id": "p9", "team": "a", "x": 38, "y": 36, "label": "9" },
+      { "id": "p11", "team": "a", "x": 32, "y": 6, "label": "11" },
+      { "id": "p7", "team": "a", "x": 36, "y": 62, "label": "7" },
+      { "id": "bw", "team": "b", "x": 38, "y": 12 },
+      { "id": "bd1", "team": "b", "x": 45, "y": 24 },
+      { "id": "bd2", "team": "b", "x": 46, "y": 35 },
+      { "id": "bd3", "team": "b", "x": 40, "y": 47 },
+      { "id": "bm", "team": "b", "x": 29, "y": 32 },
+      { "id": "gkb", "team": "gkb", "x": 51, "y": 34 }
+    ],
+    "ball": "p11",
+    "arrows": [
+      { "from": "p11", "to": "p8", "kind": "pass", "n": 1 },
+      { "from": "p8", "to": "p6", "kind": "pass", "n": 2 },
+      { "from": "p6", "to": "p7", "kind": "pass", "n": 3 },
+      { "from": "p9", "to": [47, 44], "kind": "run", "n": 4 },
+      { "from": "p7", "to": [47, 44], "kind": "pass", "n": 5 }
+    ],
+    "zones": [
+      { "x": 0, "y": 0, "w": 52.5, "h": 12, "tone": "a", "label": "couloir 1" },
+      { "x": 0, "y": 56, "w": 52.5, "h": 12, "tone": "a", "label": "couloir 2" }
+    ],
+    "goals": [{ "x": 1.2, "y": 34, "side": "left", "size": "full" }]
+  },
+  "diagram2": null
+}

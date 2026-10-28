@@ -1,0 +1,338 @@
+{
+  "id": "T05",
+  "family": "transition",
+  "order": 5,
+  "ages": "U12+",
+  "players": {
+    "min": 11,
+    "max": 15,
+    "fr": "11 à 15 joueurs (vagues de 3 contre 2 puis 4 contre 3, avec gardien)",
+    "en": "11 to 15 players (waves of 3 v 2 then 4 v 3, with a goalkeeper)"
+  },
+  "space": {
+    "w": 52,
+    "h": 68
+  },
+  "duration": {
+    "fr": "2 x 8 min (3 contre 2, puis 4 contre 3), 2 min de récupération",
+    "en": "2 x 8 min (3 v 2, then 4 v 3), 2 min rest"
+  },
+  "minutes": 18,
+  "md": [
+    "MD-2",
+    "youth"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "regarder-devant",
+    "finir",
+    "fixer"
+  ],
+  "skills": [
+    "conduite",
+    "appels",
+    "decision",
+    "passe"
+  ],
+  "pieces": [
+    "le souffle",
+    "la raison"
+  ],
+  "fr": {
+    "title": "La contre-attaque",
+    "subtitle": "Vagues de 3 contre 2, puis 4 contre 3 avec un défenseur qui revient : finir en 8 secondes",
+    "objective": "Finir une contre-attaque vite et juste : le porteur fixe, les autres étirent la défense, la dernière passe arrive au bon moment. Huit secondes, pas plus : au-delà, la défense est revenue.",
+    "organisation": [
+      "Une moitié de terrain (52 x 68 m), un but avec gardien.",
+      "Les attaquants partent de la ligne médiane par vagues de 3, puis de 4 ; deux défenseurs attendent à 30 m du but.",
+      "Pour le 4 contre 3, un troisième défenseur part de la ligne médiane, 5 m derrière les attaquants.",
+      "L'entraîneur lance chaque vague par une passe dans la course du porteur : c'est la récupération.",
+      "Une vague toutes les 45 secondes environ ; les joueurs tournent entre attaque et défense."
+    ],
+    "rules": [
+      "Un but compte s'il est marqué en moins de 8 secondes ; après, il ne compte pas.",
+      "But marqué en 3 passes ou moins : 1 point bonus.",
+      "Défenseurs qui récupèrent : 1 point s'ils conduisent le ballon jusqu'à la ligne médiane.",
+      "Hors-jeu normal ; l'entraîneur compte les secondes à voix haute."
+    ],
+    "coaching": [
+      "Porteur, conduis vite vers un défenseur pour le fixer, pas vers l'espace vide.",
+      "Partenaires, étirez la défense : un large de chaque côté, ou un large et un en profondeur.",
+      "Dernière passe quand le défenseur s'engage sur le porteur, pas avant.",
+      "Frappe tôt, dès que l'angle est ouvert : au premier poteau ou en croisant.",
+      "À 4 contre 3, attaquez du côté opposé au défenseur qui revient."
+    ],
+    "progressions": [
+      "Finir en moins de 6 secondes.",
+      "Le défenseur qui revient part au même niveau que les attaquants.",
+      "Deux touches maximum pour chaque attaquant."
+    ],
+    "regressions": [
+      "Finir en moins de 10 secondes.",
+      "Un seul défenseur au départ : 3 contre 1.",
+      "Le défenseur qui revient part 10 m derrière."
+    ],
+    "measure": "Part des vagues qui finissent par un tir en moins de 8 secondes, et nombre de passes avant le tir (repère : 2 ou 3). Chez les jeunes, compter aussi les buteurs différents.",
+    "story": "À Waldorf, Tyler Brooks veut tout faire seul en contre-attaque. BriBri lui montre qu'un appel large vaut un dribble : le ballon voyage plus vite que le joueur."
+  },
+  "en": {
+    "title": "The Counter-Attack",
+    "subtitle": "Waves of 3 v 2, then 4 v 3 with a recovering defender: finish within 8 seconds",
+    "objective": "Finish a counter-attack quickly and well: the ball carrier pins a defender, the others stretch the defence, the final pass comes at the right moment. Eight seconds, no more: after that, the defence is back.",
+    "organisation": [
+      "Half a pitch (52 x 68 m), a goal with a goalkeeper.",
+      "Attackers start from the halfway line in waves of 3, then 4; two defenders wait 30 m from goal.",
+      "For the 4 v 3, a third defender starts on the halfway line, 5 m behind the attackers.",
+      "The coach starts each wave with a pass into the ball carrier's run: that is the regain.",
+      "One wave roughly every 45 seconds; players rotate between attack and defence."
+    ],
+    "rules": [
+      "A goal counts if it is scored within 8 seconds; after that, it does not.",
+      "Goal scored in 3 passes or fewer: 1 bonus point.",
+      "Defenders who win the ball: 1 point if they dribble it to the halfway line.",
+      "Normal offside; the coach counts the seconds out loud."
+    ],
+    "coaching": [
+      "On the ball, drive quickly at a defender to pin him, not into empty space.",
+      "Teammates, stretch the defence: one wide on each side, or one wide and one in behind.",
+      "Play the final pass when the defender commits to the ball carrier, not before.",
+      "Shoot early, as soon as the angle opens: near post or across the keeper.",
+      "At 4 v 3, attack on the side away from the recovering defender."
+    ],
+    "progressions": [
+      "Finish within 6 seconds.",
+      "The recovering defender starts level with the attackers.",
+      "Two touches maximum for each attacker."
+    ],
+    "regressions": [
+      "Finish within 10 seconds.",
+      "Only one defender at the start: 3 v 1.",
+      "The recovering defender starts 10 m behind."
+    ],
+    "measure": "Share of waves that end in a shot within 8 seconds, and the number of passes before the shot (benchmark: 2 or 3). With young players, also count how many different players score.",
+    "story": "In Waldorf, Tyler Brooks wants to do everything alone on the counter. BriBri shows him that a wide run is worth as much as a dribble: the ball travels faster than the player."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      {
+        "id": "a10",
+        "team": "a",
+        "x": 6,
+        "y": 34,
+        "label": "10"
+      },
+      {
+        "id": "a7",
+        "team": "a",
+        "x": 6,
+        "y": 53,
+        "label": "7"
+      },
+      {
+        "id": "a11",
+        "team": "a",
+        "x": 6,
+        "y": 15,
+        "label": "11"
+      },
+      {
+        "id": "d1",
+        "team": "b",
+        "x": 31,
+        "y": 27
+      },
+      {
+        "id": "d2",
+        "team": "b",
+        "x": 32,
+        "y": 37.5
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "a10",
+    "arrows": [
+      {
+        "from": "a10",
+        "to": [
+          22,
+          34
+        ],
+        "kind": "dribble",
+        "n": 1
+      },
+      {
+        "from": "a7",
+        "to": [
+          36,
+          50
+        ],
+        "kind": "run",
+        "n": 2
+      },
+      {
+        "from": "a11",
+        "to": [
+          38,
+          21
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": [
+          22,
+          34
+        ],
+        "to": [
+          36,
+          50
+        ],
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": [
+          36,
+          50
+        ],
+        "to": [
+          52.3,
+          36.2
+        ],
+        "kind": "shot",
+        "n": 5
+      }
+    ],
+    "labels": [
+      {
+        "x": 14,
+        "y": 64,
+        "text": "moins de 8 secondes"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "half",
+    "players": [
+      {
+        "id": "a10",
+        "team": "a",
+        "x": 6,
+        "y": 30,
+        "label": "10"
+      },
+      {
+        "id": "a8",
+        "team": "a",
+        "x": 7,
+        "y": 42,
+        "label": "8"
+      },
+      {
+        "id": "a7",
+        "team": "a",
+        "x": 6,
+        "y": 57,
+        "label": "7"
+      },
+      {
+        "id": "a11",
+        "team": "a",
+        "x": 6,
+        "y": 12,
+        "label": "11"
+      },
+      {
+        "id": "d1",
+        "team": "b",
+        "x": 31,
+        "y": 28
+      },
+      {
+        "id": "d2",
+        "team": "b",
+        "x": 31,
+        "y": 41
+      },
+      {
+        "id": "r",
+        "team": "b",
+        "x": 1.5,
+        "y": 49
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "a10",
+    "arrows": [
+      {
+        "from": "a10",
+        "to": [
+          20,
+          30
+        ],
+        "kind": "dribble",
+        "n": 1
+      },
+      {
+        "from": "r",
+        "to": [
+          17,
+          43
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "a11",
+        "to": [
+          36,
+          17
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": [
+          20,
+          30
+        ],
+        "to": [
+          36,
+          17
+        ],
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": [
+          36,
+          17
+        ],
+        "to": [
+          52.3,
+          31.8
+        ],
+        "kind": "shot",
+        "n": 5
+      }
+    ],
+    "labels": [
+      {
+        "x": 9.5,
+        "y": 52.6,
+        "text": "il revient"
+      }
+    ]
+  }
+}

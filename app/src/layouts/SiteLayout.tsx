@@ -20,7 +20,7 @@ export default function SiteLayout() {
     <div className="min-h-screen bg-cream">
       <header className="sticky top-0 z-40 border-b border-line/70 bg-cream/90 backdrop-blur">
         <div className="container-page flex h-16 items-center justify-between gap-3">
-          <Link to="/" aria-label="Njangi"><Logo /></Link>
+          <Link to="/" aria-label="Ndamba"><Logo /></Link>
           <nav className="hidden items-center gap-1 md:flex">
             {links.map((l) => (
               <NavLink key={l.to} to={l.to} className={({ isActive }) => cx('rounded-xl px-3 py-2 text-sm font-semibold', isActive && !l.to.includes('#') ? 'text-forest-600' : 'text-ink-soft hover:bg-sand')}>{l.label}</NavLink>

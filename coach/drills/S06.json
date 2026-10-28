@@ -1,0 +1,119 @@
+{
+  "id": "S06",
+  "family": "ssg",
+  "order": 6,
+  "ages": "U9+",
+  "players": { "min": 8, "max": 10, "fr": "8 joueurs (4 contre 4), 10 avec deux gardiens", "en": "8 players (4 v 4), 10 with two keepers" },
+  "space": { "w": 25, "h": 16 },
+  "duration": { "fr": "6 x 3 min (2 min pour les U9), 1 min 30 de récupération", "en": "6 x 3 min (2 min for U9s), 1 min 30 rest" },
+  "minutes": 26,
+  "md": ["youth", "MD-4"],
+  "intensity": "high",
+  "intentions": ["progresser", "fixer"],
+  "skills": ["scan", "controle", "protection", "passe", "decision"],
+  "pieces": ["les yeux", "le cœur"],
+  "fr": {
+    "title": "Futsal : petit espace, grande tête",
+    "subtitle": "4 contre 4 : semelle, scan, deux touches dans sa moitié",
+    "objective": "Penser avant de recevoir. Dans un petit espace, avec un ballon lourd qui reste au sol, il n'y a pas de temps : le joueur qui a regardé sait déjà quoi faire, et la semelle lui donne le contrôle.",
+    "organisation": [
+      "Terrain de 25 x 16 m (ou terrain de futsal pour les plus grands), deux buts de 3 x 2 m.",
+      "4 contre 4, ligne médiane marquée par des coupelles.",
+      "Ballon de futsal adapté à l'âge, plus lourd : il rebondit peu et reste au sol.",
+      "Séries courtes, pause boisson à chaque récupération ; en salle, aérer et prévoir de l'eau pour tous."
+    ],
+    "rules": [
+      "Deux touches maximum dans sa propre moitié ; touches libres dans la moitié adverse.",
+      "Dans sa moitié, le premier contrôle se fait de la semelle.",
+      "Scan obligatoire : recevoir dans sa moitié sans avoir regardé avant, c'est rendre le ballon (l'entraîneur juge avec indulgence chez les plus jeunes).",
+      "Rentrée de touche au pied, ballon posé sur la ligne, à jouer en moins de 4 secondes.",
+      "But : 1 point ; l'équipe qui a encaissé relance depuis son but."
+    ],
+    "coaching": [
+      "Avant que le ballon arrive, sache déjà où il va.",
+      "Semelle sur le ballon : arrête-le, protège-le, puis tourne-toi.",
+      "Petit espace : deux pas suffisent pour ouvrir une ligne de passe.",
+      "Dans ta moitié, joue simple et vite ; dans la moitié adverse, ose le un contre un.",
+      "Après la passe, bouge : celui qui reste immobile disparaît."
+    ],
+    "progressions": [
+      "Deux touches partout sur le terrain.",
+      "Terrain réduit à 22 x 14 m.",
+      "Un gardien par équipe, qui relance à la main : 4 contre 4 + 2 gardiens."
+    ],
+    "regressions": [
+      "Trois touches dans sa moitié.",
+      "Semelle conseillée, plus obligatoire.",
+      "Un joker joue avec l'équipe en possession : 5 contre 4."
+    ],
+    "measure": "Pertes de balle dans sa propre moitié par série, et contrôles de la semelle suivis d'une passe vers l'avant. Chez les U9, l'entraîneur compte simplement les joueurs qui tournent la tête avant de recevoir.",
+    "story": "À Waldorf, sous la neige, les frères découvrent avec Diego le futsal du samedi : petit espace, grande tête."
+  },
+  "en": {
+    "title": "Futsal: Small Space, Big Head",
+    "subtitle": "4 v 4: sole of the foot, scanning, two touches in your own half",
+    "objective": "Think before you receive. In a small space, with a heavy ball that stays on the ground, there is no time: the player who looked already knows what to do, and the sole of the foot gives him control.",
+    "organisation": [
+      "25 x 16 m pitch (or a futsal court for older players), two 3 x 2 m goals.",
+      "4 v 4, halfway line marked with disc cones.",
+      "Age-appropriate futsal ball, heavier: it barely bounces and stays on the ground.",
+      "Short sets, drinks break during every rest; indoors, air the hall and have water for everyone."
+    ],
+    "rules": [
+      "Two touches maximum in your own half; unlimited touches in the opposition half.",
+      "In your own half, the first touch is made with the sole.",
+      "Scanning is compulsory: receiving in your own half without having looked means giving the ball back (the coach judges, kindly with the youngest).",
+      "Kick-ins from the touchline, ball placed on the line, played within 4 seconds.",
+      "Goal: 1 point; the team that conceded restarts from its own goal."
+    ],
+    "coaching": [
+      "Before the ball arrives, know where it is going.",
+      "Sole on the ball: stop it, shield it, then turn.",
+      "Small space: two steps are enough to open a passing lane.",
+      "In your own half, keep it simple and quick; in their half, dare to take players on.",
+      "After the pass, move: the player who stands still disappears."
+    ],
+    "progressions": [
+      "Two touches everywhere on the pitch.",
+      "Pitch reduced to 22 x 14 m.",
+      "A keeper for each team who restarts by hand: 4 v 4 + 2 keepers."
+    ],
+    "regressions": [
+      "Three touches in your own half.",
+      "Sole control encouraged, no longer compulsory.",
+      "A joker plays for the team in possession: 5 v 4."
+    ],
+    "measure": "Balls lost in your own half per set, and sole controls followed by a forward pass. With U9s, the coach simply counts the players who turn their head before receiving.",
+    "story": "In Waldorf, in the snow, the brothers discover Saturday futsal with Diego: small space, big head."
+  },
+  "diagram": {
+    "view": "grid", "w": 25, "h": 16,
+    "zones": [
+      { "x": 0, "y": 0, "w": 12.5, "h": 16, "tone": "soft", "label": "2 touches" },
+      { "x": 12.5, "y": 0, "w": 12.5, "h": 16, "tone": "a", "label": "libre" }
+    ],
+    "cones": [[0, 0], [12.5, 0], [25, 0], [0, 16], [12.5, 16], [25, 16]],
+    "goals": [
+      { "x": 0, "y": 8, "side": "right", "size": "mini" },
+      { "x": 25, "y": 8, "side": "left", "size": "mini" }
+    ],
+    "players": [
+      { "id": "a1", "team": "a", "x": 4.5, "y": 11 },
+      { "id": "a2", "team": "a", "x": 9, "y": 3.5 },
+      { "id": "a3", "team": "a", "x": 15, "y": 9 },
+      { "id": "a4", "team": "a", "x": 19, "y": 13.5 },
+      { "id": "b1", "team": "b", "x": 8, "y": 9 },
+      { "id": "b2", "team": "b", "x": 11.5, "y": 7.8 },
+      { "id": "b3", "team": "b", "x": 17, "y": 6.5 },
+      { "id": "b4", "team": "b", "x": 21, "y": 4 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "a2", "kind": "pass", "n": 1 },
+      { "from": "a2", "to": "a3", "kind": "pass", "n": 2 },
+      { "from": "a3", "to": [20.5, 10.5], "kind": "dribble", "n": 3 },
+      { "from": [20.5, 10.5], "to": [23.8, 8.6], "kind": "shot", "n": 4 }
+    ]
+  },
+  "diagram2": null
+}

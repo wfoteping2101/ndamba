@@ -1,8 +1,11 @@
-import { PageHeader } from '../../ui'
-import { useDocumentTitle } from '../../lib/hooks'
+// /app: a role-aware dashboard. Staff (coach, analyst, manager, federation) see the week and the match;
+// players and parents see the challenges, the lesson of the day and the novel.
+import { useSession } from '../../lib/session'
+import CoachHome from './components/CoachHome'
+import PlayerHome from './components/PlayerHome'
+import { isPlayerRole } from './components/data'
 
-// PLACEHOLDER: replaced by the owner of this surface (see docs/CONVENTIONS.md).
 export default function Home() {
-  useDocumentTitle('Home')
-  return <PageHeader eyebrow="Njangi" title="Home" subtitle="En construction." />
+  const { profile } = useSession()
+  return isPlayerRole(profile?.role) ? <PlayerHome /> : <CoachHome />
 }

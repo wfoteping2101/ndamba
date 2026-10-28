@@ -1,0 +1,408 @@
+{
+  "id": "G06",
+  "family": "finishing",
+  "order": 6,
+  "ages": "U12+",
+  "players": {
+    "min": 12,
+    "max": 18,
+    "fr": "12 à 18 joueurs (11 et un gardien adverse, puis 4 à 6 adversaires)",
+    "en": "12 to 18 players (11 and an opposing goalkeeper, then 4 to 6 opponents)"
+  },
+  "space": {
+    "w": 105,
+    "h": 68
+  },
+  "duration": {
+    "fr": "4 x 4 min (2 sans opposition, 2 avec opposition partielle), 2 min de récupération",
+    "en": "4 x 4 min (2 without opposition, 2 with partial opposition), 2 min rest"
+  },
+  "minutes": 22,
+  "md": [
+    "MD-1",
+    "MD-2",
+    "youth"
+  ],
+  "intensity": "medium",
+  "intentions": [
+    "sortir",
+    "progresser",
+    "fixer",
+    "finir",
+    "respirer"
+  ],
+  "skills": [
+    "communication",
+    "passe",
+    "scan",
+    "decision",
+    "appels"
+  ],
+  "pieces": [
+    "le cœur",
+    "la raison",
+    "la carte"
+  ],
+  "fr": {
+    "title": "Le but du Njangi",
+    "subtitle": "Déroulé à 11 : du gardien au tir, au moins huit joueurs, chacun nomme son intention",
+    "objective": "Faire vivre le modèle en entier, du gardien au tir : le ballon passe par au moins huit joueurs différents, et chacun dit à voix haute l'intention de sa passe. Tout le monde verse sa part, et la caisse finit au but.",
+    "organisation": [
+      "Terrain entier, une équipe de 11 en 4-3-3 ; un gardien adverse dans le but d'en face.",
+      "Partie 1 : sans opposition, à allure de match contrôlée.",
+      "Partie 2 : 4 à 6 adversaires, d'abord à moitié d'intensité, puis à pleine intensité.",
+      "Avec des jeunes : séquences courtes, de l'eau à chaque arrêt, et chacun essaie plusieurs postes."
+    ],
+    "rules": [
+      "Le ballon part du gardien et passe par au moins 8 joueurs différents avant le tir.",
+      "À chaque passe, le passeur nomme l'intention : sortir, progresser, fixer, finir ou respirer.",
+      "Séquence complète et tir cadré : 1 point ; but : 2 points.",
+      "Point bonus si toutes les intentions annoncées sont justes, selon l'entraîneur.",
+      "Partie 2 : à chaque perte, la séquence repart du gardien."
+    ],
+    "coaching": [
+      "Dis l'intention avant de passer, pas après : c'est elle qui choisit la passe.",
+      "Respirer, c'est permis : une passe en arrière qui prépare la suite est une bonne passe.",
+      "Chacun touche, personne ne garde : le ballon voyage, mais il sait où il va.",
+      "Reste à ta place dans la structure : la carte compte autant que le ballon.",
+      "Finis avec intention : centre en retrait, troisième homme ou frappe cadrée."
+    ],
+    "progressions": [
+      "Deux touches maximum pour tous.",
+      "Les adversaires passent à 8, avec un pressing haut sur la sortie.",
+      "Toute la séquence en moins de 25 secondes."
+    ],
+    "regressions": [
+      "6 joueurs différents au lieu de 8.",
+      "L'entraîneur nomme l'intention, les joueurs la répètent.",
+      "Une moitié de terrain et 8 joueurs pour les plus jeunes."
+    ],
+    "measure": "Séquences complètes (8 joueurs et un tir) par série, et intentions justes annoncées. L'analyste peut noter l'intention de chaque passe : c'est l'Indice Njangi en miniature.",
+    "story": "Mami Nyanga dirige le njangi des femmes de son quartier : chacune verse sa part, puis la caisse va à une seule. Ici, onze joueurs versent, et la caisse finit au fond du but."
+  },
+  "en": {
+    "title": "The Njangi Goal",
+    "subtitle": "11-a-side shape play: from goalkeeper to shot, at least eight players, each names his intention",
+    "objective": "Bring the whole model to life, from goalkeeper to shot: the ball goes through at least eight different players, and each one says out loud what his pass is for. Everyone pays in, and the pot ends up in the net.",
+    "organisation": [
+      "Full pitch, a team of 11 in a 4-3-3; an opposing goalkeeper in the far goal.",
+      "Part 1: no opposition, at a controlled match tempo.",
+      "Part 2: 4 to 6 opponents, first at half intensity, then at full intensity.",
+      "With young players: short sequences, water at every stop, and everyone tries several positions."
+    ],
+    "rules": [
+      "The ball starts with the goalkeeper and goes through at least 8 different players before the shot.",
+      "With every pass, the passer names the intention: build out, progress, pin, finish or breathe.",
+      "Complete sequence and shot on target: 1 point; goal: 2 points.",
+      "Bonus point if every intention called was right, in the coach's judgement.",
+      "Part 2: whenever the ball is lost, the sequence restarts from the goalkeeper."
+    ],
+    "coaching": [
+      "Say the intention before you pass, not after: it is the intention that picks the pass.",
+      "Breathing is allowed: a back pass that sets up what comes next is a good pass.",
+      "Everyone touches it, nobody keeps it: the ball travels, but it knows where it is going.",
+      "Hold your place in the shape: the map matters as much as the ball.",
+      "Finish with intent: cut-back, third man or a shot on target."
+    ],
+    "progressions": [
+      "Two touches maximum for everyone.",
+      "Opponents go up to 8, with a high press on the build-up.",
+      "The whole sequence in under 25 seconds."
+    ],
+    "regressions": [
+      "6 different players instead of 8.",
+      "The coach names the intention and the players repeat it.",
+      "Half a pitch and 8 players for the youngest."
+    ],
+    "measure": "Complete sequences (8 players and a shot) per set, and correct intentions called. The analyst can log the intention of every pass: it is the Njangi Index in miniature.",
+    "story": "Mami Nyanga runs the women's njangi in her neighbourhood: each one pays in, then the whole pot goes to one. Here, eleven players pay in, and the pot ends up in the back of the net."
+  },
+  "diagram": {
+    "view": "full",
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 2.5,
+        "y": 34,
+        "label": "1"
+      },
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 9,
+        "y": 22,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 9,
+        "y": 46,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 21,
+        "y": 35,
+        "label": "6"
+      },
+      {
+        "id": "l3",
+        "team": "a",
+        "x": 26,
+        "y": 8,
+        "label": "3"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 26,
+        "y": 60,
+        "label": "2"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 36,
+        "y": 24,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 39,
+        "y": 46,
+        "label": "10"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 57,
+        "y": 34,
+        "label": "9"
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 49,
+        "y": 6,
+        "label": "11"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 49,
+        "y": 62,
+        "label": "7"
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 102.5,
+        "y": 34
+      }
+    ],
+    "ball": "gk",
+    "arrows": [
+      {
+        "from": "gk",
+        "to": "c4",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "c4",
+        "to": "p6",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "p6",
+        "to": "p8",
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": "p8",
+        "to": "l3",
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": "l3",
+        "to": "p11",
+        "kind": "pass",
+        "n": 5
+      }
+    ],
+    "labels": [
+      {
+        "x": 15,
+        "y": 40,
+        "text": "sortir"
+      },
+      {
+        "x": 34,
+        "y": 33.5,
+        "text": "progresser"
+      },
+      {
+        "x": 39,
+        "y": 15,
+        "text": "respirer"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "full",
+    "players": [
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 64,
+        "y": 34,
+        "label": "6"
+      },
+      {
+        "id": "l3",
+        "team": "a",
+        "x": 72,
+        "y": 12,
+        "label": "3"
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 86,
+        "y": 7,
+        "label": "11"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 80,
+        "y": 24,
+        "label": "10"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 76,
+        "y": 44,
+        "label": "8"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 93,
+        "y": 40,
+        "label": "9"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 88,
+        "y": 61,
+        "label": "7"
+      },
+      {
+        "id": "o1",
+        "team": "b",
+        "x": 92,
+        "y": 15
+      },
+      {
+        "id": "o2",
+        "team": "b",
+        "x": 88,
+        "y": 20
+      },
+      {
+        "id": "o3",
+        "team": "b",
+        "x": 98,
+        "y": 27
+      },
+      {
+        "id": "o4",
+        "team": "b",
+        "x": 97.5,
+        "y": 43
+      },
+      {
+        "id": "o5",
+        "team": "b",
+        "x": 86,
+        "y": 34
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 102.5,
+        "y": 34
+      }
+    ],
+    "ball": "p11",
+    "arrows": [
+      {
+        "from": "p11",
+        "to": "p10",
+        "kind": "pass",
+        "n": 6
+      },
+      {
+        "from": "p10",
+        "to": "p8",
+        "kind": "pass",
+        "n": 7
+      },
+      {
+        "from": "p8",
+        "to": "p7",
+        "kind": "pass",
+        "n": 8
+      },
+      {
+        "from": "p7",
+        "to": [
+          98,
+          54
+        ],
+        "kind": "dribble",
+        "n": 9
+      },
+      {
+        "from": [
+          98,
+          54
+        ],
+        "to": "p9",
+        "kind": "pass",
+        "n": 10
+      },
+      {
+        "from": "p9",
+        "to": [
+          104.6,
+          37
+        ],
+        "kind": "shot",
+        "n": 11
+      }
+    ],
+    "labels": [
+      {
+        "x": 72,
+        "y": 30,
+        "text": "fixer"
+      },
+      {
+        "x": 100,
+        "y": 59,
+        "text": "finir"
+      }
+    ]
+  }
+}

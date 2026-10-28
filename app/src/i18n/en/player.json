@@ -1,0 +1,467 @@
+{
+  "greeting": {
+    "day": "Hello, {{name}}",
+    "morning": "Good morning, {{name}}",
+    "afternoon": "Good afternoon, {{name}}",
+    "evening": "Good evening, {{name}}",
+    "next": "Next line",
+    "motto": "The motto",
+    "mantra": "Our mantra",
+    "lesson": "Ball Lesson no. {{n}}"
+  },
+  "home": {
+    "docTitle": "Home",
+    "statSessions": "Sessions",
+    "statMinutes": "Minutes",
+    "statNext": "Match",
+    "none": "None",
+    "matchDay": "Today",
+    "jMinus": "D-{{n}}",
+    "today": "Today",
+    "challengeTitle": "Today's challenge",
+    "allDaily": "All three challenges",
+    "progressTitle": "My progress",
+    "lessonsDone": "Lessons",
+    "mySpace": "My player space",
+    "lessonTitle": "Lesson of the day",
+    "allLessons": "All lessons",
+    "ritual": "ten juggles with Mami's ball first?",
+    "notebookEmpty": "Your first page is waiting",
+    "notebookEmptyBody": "Write down what you learned today, like Kaydoudou.",
+    "statDaily": "Today",
+    "last7": "My last 7 days"
+  },
+  "today": {
+    "eyebrow": "Today",
+    "matchDay": "Match day",
+    "noSession": "No session yet",
+    "matchBody": "The match against {{opponent}} is today. Check the line-up, then start live analysis at kick-off.",
+    "suggestYouth": "Nothing planned today. How about a youth session: rondo, small-sided game, positional game, then a free match.",
+    "suggestMd": "Nothing planned today. Going by the match calendar, today is {{md}}.",
+    "create": "Prepare the {{md}} session",
+    "browse": "Pick drills",
+    "tomorrow": "Tomorrow:",
+    "minutes": "{{n}} min",
+    "open": "Open the session",
+    "blocks_one": "{{count}} block",
+    "blocks_other": "{{count}} blocks",
+    "emptyBlocks": "Empty for now: open it to add drills.",
+    "customBlock": "Custom block",
+    "more_one": "Plus {{count}} more session today.",
+    "more_other": "Plus {{count}} more sessions today.",
+    "methodDrill": "Njangi Code drill",
+    "suggestFree": "Nothing planned today and no match in sight. How about an {{md}} session: big spaces and long playing time."
+  },
+  "mdWhy": {
+    "MD-4": "Four days before the match: small spaces and lots of duels, the most intense day of the week.",
+    "MD-3": "Three days before: big spaces and long playing time, like the match.",
+    "MD-2": "Two days before: speed, transitions and finishing, in short bursts.",
+    "MD-1": "The day before: light activation and set pieces, to keep the legs fresh.",
+    "MD+1": "The day after the match: active recovery for those who played, a rondo for everyone.",
+    "youth": "Young players learn by playing: lots of touches, small games and fun."
+  },
+  "match": {
+    "eyebrow": "Next match",
+    "none": "No match planned",
+    "noneBody": "Add the next match and the week is planned around it, from MD-4 to MD-1.",
+    "inDays_one": "in {{count}} day",
+    "inDays_other": "in {{count}} days",
+    "tomorrow": "Tomorrow",
+    "at": "at {{time}}",
+    "inHours": "{{h}} h {{m}}",
+    "inMinutes": "{{m}} min",
+    "today": "Today",
+    "home": "Home",
+    "away": "Away",
+    "against": "Against",
+    "lineup": "Line-up",
+    "live": "Go live",
+    "prepare": "Prepare the week",
+    "weekCreated_one": "{{count}} session prepared for match week.",
+    "weekCreated_other": "{{count}} sessions prepared for match week.",
+    "weekReady": "The week is already set: every day before the match has its session.",
+    "seeWeek": "See the week"
+  },
+  "week": {
+    "title": "This week",
+    "to": "to",
+    "total": "{{n}} min in total",
+    "open": "Plan",
+    "md": "Match",
+    "matchAgainst": "match against {{opponent}}",
+    "sessions_one": "{{count}} session",
+    "sessions_other": "{{count}} sessions",
+    "rest": "rest",
+    "legendSession": "Session",
+    "legendMatch": "Match"
+  },
+  "indice": {
+    "eyebrow": "Indice Njangi, last match",
+    "title": "Indice Njangi",
+    "emptyTitle": "No Indice Njangi yet",
+    "emptyBody": "Tag a match live (passes, lines broken, five-second regains) and the Indice tells you whether your team had the ball with purpose.",
+    "emptyCtaLive": "Analyse the match against {{opponent}}",
+    "emptyCta": "Open analysis",
+    "against": "Against {{opponent}}",
+    "trend_one": "From {{count}} analysed match",
+    "trend_other": "Trend over {{count}} analysed matches",
+    "trendAria": "Indice of recent matches: {{values}}",
+    "weakest": "to work on",
+    "work": "Weak spot: {{sub}}. This week, the intention to train is \"{{intention}}\".",
+    "prepare": "Prepare the week around \"{{intention}}\"",
+    "report": "See the report"
+  },
+  "subs": {
+    "progression": "Progression",
+    "penetration": "Penetration",
+    "fixation": "Pinning",
+    "reprise": "Regain",
+    "controle": "Control"
+  },
+  "mola": {
+    "title": "Mola suggests",
+    "subtitle": "Your agent: it does things for you",
+    "noTeam": "Tell me your team's name and age group: I'll create it and add your players.",
+    "missing_one": "The match against {{opponent}} is on {{day}}. {{count}} session is still missing before it: shall I prepare it?",
+    "missing_other": "The match against {{opponent}} is on {{day}}. {{count}} sessions are still missing before it: shall I prepare them?",
+    "convocation": "The week is ready. Shall I draft the call-up for the match against {{opponent}}? You will only have to send it.",
+    "indice": "Your weak spot in the last match: {{sub}}. Shall I show you the drills that train it?",
+    "default": "Ask me for a session, a week plan, a match or a message to the parents: I'll take care of it.",
+    "cta": "Talk to Mola",
+    "ask": "You can also ask:",
+    "examples": {
+      "session": "Prepare tomorrow's session",
+      "callup": "Write the match call-up",
+      "player": "Add a player to the team"
+    }
+  },
+  "actions": {
+    "title": "Quick actions",
+    "newSession": "New session",
+    "newSessionHint": "Prepared for today, ready to adjust",
+    "planWeek": "Plan the week",
+    "planWeekHint": "MD-4 to MD-1 around the match",
+    "newMatch": "New match",
+    "newMatchHint": "Opponent, venue, line-up",
+    "live": "Live analysis",
+    "liveHint": "Tag the match, get the Indice",
+    "drills": "Drills",
+    "drillsHint": "The Njangi Code library",
+    "novel": "Read the novel",
+    "novelHint": "{{series}}, book 1"
+  },
+  "team": {
+    "title": "Create your team",
+    "body": "One team, and this page fills up: the week's sessions, the next match, the Indice Njangi.",
+    "playerTitle": "Do you play for a team?",
+    "playerBody": "Add it to see your matches here. The challenges work without a team too.",
+    "name": "Team name",
+    "namePh": "Bonamoussadi Lion Cubs",
+    "age": "Age group",
+    "format": "Format",
+    "create": "Create the team",
+    "open": "Add my team"
+  },
+  "parent": {
+    "title": "For parents",
+    "body": "Fifteen minutes, a wall and a ball are enough. Stay close, help count and remind them to drink water. The eyes game takes two: you are the one holding up the coloured card."
+  },
+  "levelUp": {
+    "title": "Level {{n}} reached!",
+    "body": "You are now \"{{name}}\". Keep going: the ball travels with you."
+  },
+  "levels": {
+    "0": {
+      "name": "The patched ball",
+      "body": "It all starts with an old ball and the urge to play."
+    },
+    "1": {
+      "name": "Red earth",
+      "body": "You come back to the pitch every day, like the Bonamoussadi Lion Cubs."
+    },
+    "2": {
+      "name": "The heart",
+      "body": "You play for the others: everyone puts in their share."
+    },
+    "3": {
+      "name": "The reason",
+      "body": "Every touch serves a purpose."
+    },
+    "4": {
+      "name": "The eyes",
+      "body": "You look before you receive."
+    },
+    "5": {
+      "name": "The map",
+      "body": "You know where to stand and when to pass."
+    },
+    "6": {
+      "name": "The breath",
+      "body": "You keep the ball even when it burns."
+    },
+    "7": {
+      "name": "The full Njangi",
+      "body": "All five pieces are together. Now teach them to others."
+    }
+  },
+  "xp": {
+    "label": "XP",
+    "level": "level",
+    "toNext": "{{n}} XP to go before \"{{name}}\"",
+    "max": "Top level: you have gathered all five pieces.",
+    "total": "{{n}} XP",
+    "targets": "Targets"
+  },
+  "streak": {
+    "label": "Streak",
+    "current": "Streak",
+    "days_one": "{{count}} day",
+    "days_other": "{{count}} days",
+    "hintStart": "One challenge a day grows your streak. Rest counts too: your body gets better while it recovers.",
+    "hintKeep": "Do a challenge today to keep your streak."
+  },
+  "challenge": {
+    "number": "Challenge {{n}}",
+    "minutes": "{{n}} min",
+    "target": "Target:",
+    "targetLower": "{{n}} {{unit}} or less",
+    "targetHigher": "{{n}} {{unit}} or more",
+    "hit": "Target reached",
+    "done": "Done today",
+    "tip": "Tip:",
+    "howTo": "How to do it and log",
+    "log": "Log",
+    "todayBest": "Today: {{n}} {{unit}}",
+    "xpHintDaily": "Challenge of the day: 5 bonus XP",
+    "xpHint": "10 XP for doing it, 10 more if you reach the target",
+    "xpWon": "+{{n}} XP",
+    "saved": "Result saved",
+    "lesson": "Ball Lesson no. {{n}}"
+  },
+  "units": {
+    "jongles": "juggles",
+    "passes": "passes",
+    "reps": "reps",
+    "seconds": "s",
+    "touches": "touches",
+    "sprints": "sprints",
+    "points": "points",
+    "minutes": "min"
+  },
+  "gear": {
+    "ball": "A ball",
+    "wall": "A wall",
+    "cones": "Some cones",
+    "partner": "A partner",
+    "space": "Some room",
+    "none": "Nothing at all",
+    "water": "Water"
+  },
+  "kinds": {
+    "all": "All",
+    "ballon": "Ball",
+    "conduite": "Dribbling",
+    "mur": "Wall",
+    "yeux": "Eyes",
+    "finition": "Finishing",
+    "physique": "Fitness"
+  },
+  "space": {
+    "docTitle": "Player space",
+    "eyebrow": "My player space",
+    "todayDone": "Today's challenges",
+    "activeDays": "Active days",
+    "navLabel": "On this page",
+    "nav": {
+      "defis": "Today",
+      "progression": "Progress",
+      "regard": "My view",
+      "tous": "All challenges",
+      "historique": "History"
+    },
+    "dailyTitle": "Today's challenges",
+    "dailyBody": "Three challenges for today, the same for every lion cub: one for the ball, one for the head, one for the legs. Log your best result.",
+    "xpRule": "{{done}} XP for each challenge done, {{target}} more if you reach the target, a {{daily}} XP bonus for a challenge of the day. Your level goes up on its own.",
+    "libraryTitle": "All challenges",
+    "libraryBody": "{{n}} challenges to do alone, with a wall or a few cones. Each one echoes a Ball Lesson.",
+    "moreLabel": "Go further",
+    "lessonsHint": "The 40 pages of Kaydoudou's notebook",
+    "notebookHint": "Write down what you learn, like Kaydoudou"
+  },
+  "care": {
+    "waterTitle": "Drink water",
+    "waterBody": "Before, during and after. A water bottle next to the wall, always.",
+    "restTitle": "Rest",
+    "restBody": "One day a week without challenges. Warm up for five minutes before sprints. If something hurts, stop and tell an adult."
+  },
+  "progress": {
+    "title": "My progress",
+    "body": "Your XP each day, your curve on one challenge, and your records.",
+    "emptyTitle": "Your curve starts with your first challenge",
+    "emptyBody": "Do a challenge of the day and log your result: your XP, records and progress will show up here.",
+    "emptyCta": "See today's challenges",
+    "xpTitle": "XP over the last 14 days",
+    "xp14": "{{n}} XP",
+    "xpAria": "XP earned each day over 14 days, {{n}} in total",
+    "legendDay": "XP that day",
+    "legendToday": "Today",
+    "curveTitle": "My curve",
+    "pick": "Pick a challenge",
+    "target": "Target",
+    "curveAria": "Best results for {{title}}: {{values}}",
+    "lowerBetter": "Lower is better",
+    "higherBetter": "Higher is better",
+    "record": "Record: {{n}} {{unit}}",
+    "records": "My records",
+    "targetIs": "Target: {{n}} {{unit}}"
+  },
+  "self": {
+    "title": "How I see myself",
+    "body": "Where are you on the ten Njangi skills? Be honest: it is for you, nothing is sent anywhere.",
+    "scale": "Scale from 1 to 4",
+    "levels": {
+      "1": "I'm discovering it",
+      "2": "I'm getting better",
+      "3": "I've got it",
+      "4": "I teach it to others"
+    },
+    "me": "My view",
+    "coach": "My coach's view",
+    "radarTitle": "My ten skills",
+    "radarEmpty": "Pick a level for each skill and your radar draws itself here.",
+    "coachNote": "Your coach's view comes from the team sheet. If you don't see it the same way, talk about it after training.",
+    "updated": "Updated on {{date}} · {{n}} of 10",
+    "private": "Kept on this device only."
+  },
+  "skillHint": {
+    "scan": "I look over my shoulder before I receive.",
+    "controle": "My first touch takes me into free space.",
+    "passe": "My pass knows where it is going.",
+    "conduite": "The ball stays close when I move forward.",
+    "dribble-njangi": "I dribble to draw them in, then I give it.",
+    "appels": "I run to open space for others.",
+    "communication": "I talk: \"Time!\", \"Man on!\", \"Turn!\".",
+    "protection": "My body stays between the opponent and the ball.",
+    "contre-pression": "When we lose the ball, I win it back within five seconds.",
+    "decision": "I choose before the ball arrives."
+  },
+  "history": {
+    "title": "My history",
+    "body": "Your latest results. Typed something wrong? Delete the line.",
+    "deleted": "Result deleted.",
+    "undo": "Undo",
+    "delete": "Delete the result for \"{{title}}\"",
+    "note": "Everything stays on this device: nothing is sent over the internet.",
+    "more_one": "Show {{count}} more result",
+    "more_other": "Show {{count}} more results",
+    "less": "Show less"
+  },
+  "lessons": {
+    "docTitle": "Ball Lessons",
+    "eyebrow": "Kaydoudou's notebook",
+    "title": "The Ball Lessons",
+    "subtitle": "At the end of every chapter of {{book}}, Kaydoudou writes a lesson in his wax-print notebook. Here are all forty, with their diagrams.",
+    "progress": "{{n}} of 40 understood",
+    "writing": "{{n}} chapters written so far: the other pages arrive with the book.",
+    "ofDay": "Lesson of the day (no. {{n}})",
+    "partsLabel": "The five parts of the journey",
+    "part": "Part {{n}}",
+    "partDone": "{{n}} of {{total}} understood",
+    "partRange": "Part {{n}} · lessons {{from}} to {{to}}",
+    "nextPart": "Next part: {{country}}",
+    "charactersAlt": "{{heroes}}, the heroes of the novel"
+  },
+  "parts": {
+    "1": {
+      "country": "Cameroon",
+      "piece": "The heart",
+      "body": "In Douala, on the red earth of Bonamoussadi, Tonton Fokou teaches the two brothers joy, courage and togetherness: we play together, everyone puts in their share."
+    },
+    "2": {
+      "country": "United States",
+      "piece": "The reason",
+      "body": "In Waldorf, among snow and numbers, they find out that possession without purpose wins nothing: every pass must serve something."
+    },
+    "3": {
+      "country": "France",
+      "piece": "The eyes",
+      "body": "Near Paris, they learn to look before receiving, to open their body, to play between the lines and to win the ball back fast."
+    },
+    "4": {
+      "country": "Spain",
+      "piece": "The map",
+      "body": "In Barcelona: the rondo, the pausa, the third man and the superiorities. Being in the right place, making triangles."
+    },
+    "5": {
+      "country": "England",
+      "piece": "The breath",
+      "body": "In London, in the rain: intensity, pressing and transitions. Keeping the ball even when it burns."
+    }
+  },
+  "lesson": {
+    "number": "Lesson {{n}}",
+    "chapter": "Chapter {{n}} · {{title}}",
+    "writing": "Chapter still being written",
+    "understood": "Understood",
+    "imgAlt": "Illustration for chapter {{n}}: {{title}}",
+    "original": "Read the original page in French",
+    "diagram": "The notebook diagram",
+    "understand": "I've got it",
+    "understoodDone": "Got it, saved",
+    "read": "Read chapter {{n}}",
+    "challenge": "The matching challenge",
+    "drill": "Drill {{id}}",
+    "write": "Write in my notebook"
+  },
+  "novel": {
+    "eyebrow": "The novel",
+    "body": "The saga of {{heroes}}: two brothers, a patched ball, five countries and one idea of football.",
+    "read": "Read the novel",
+    "open": "Open {{title}}",
+    "coverAlt": "Cover of {{title}}",
+    "chapterOfDay": "The chapter of today's lesson (no. {{n}})"
+  },
+  "notebook": {
+    "docTitle": "My notebook",
+    "eyebrow": "The Njangi notebook",
+    "title": "My Njangi notebook",
+    "short": "My Njangi notebook",
+    "subtitle": "Like Kaydoudou, write down what you learned after every training session or match. One page, one idea.",
+    "new": "New page",
+    "newTitle": "New notebook page",
+    "editTitle": "Edit the page",
+    "search": "Search my notebook",
+    "emptyTitle": "Your notebook is still empty",
+    "emptyBody": "Kaydoudou started his with a single sentence: \"The ball must travel.\" Write yours: what you learned today, a pass you are proud of, what you want to work on.",
+    "first": "Write my first page",
+    "fromLesson": "Start from today's lesson (no. {{n}})",
+    "printTitle": "{{name}}'s Njangi notebook",
+    "noMatch": "No page matches.",
+    "count_one": "{{count}} page in your notebook",
+    "count_other": "{{count}} pages in your notebook",
+    "untitled": "Untitled",
+    "saved": "Page added to your notebook.",
+    "updated": "Page updated.",
+    "deleted": "Page deleted.",
+    "deleteTitle": "Delete this page?",
+    "deleteBody": "The page \"{{title}}\" from {{date}} will be erased from this device.",
+    "edit": "Edit \"{{title}}\"",
+    "delete": "Delete \"{{title}}\"",
+    "fTitle": "Title",
+    "fTitlePh": "My pass that cut through",
+    "fDate": "Date",
+    "fText": "What I learned",
+    "fTextHint": "A few lines are enough. You can also draw on paper and copy the idea here.",
+    "fTextPh": "Today at training...",
+    "prompts": "To help you start",
+    "prompt": {
+      "learned": "Today I learned",
+      "proud": "A pass I am proud of:",
+      "work": "Tomorrow I want to work on",
+      "kaydoudou": "In my place, Kaydoudou would have"
+    },
+    "fLesson": "Linked lesson",
+    "fLessonHint": "Link your page to a Ball Lesson (optional).",
+    "noLesson": "None"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "R01",
+  "family": "rondo",
+  "order": 1,
+  "ages": "U9+",
+  "players": { "min": 5, "max": 5, "fr": "5 joueurs par carré (4 contre 1), plusieurs carrés en parallèle", "en": "5 players per square (4 v 1), several squares side by side" },
+  "space": { "w": 10, "h": 10 },
+  "duration": { "fr": "5 x 2 min, 1 min de récupération", "en": "5 x 2 min, 1 min rest" },
+  "minutes": 14,
+  "md": ["MD-2", "MD-1", "youth"],
+  "intensity": "medium",
+  "intentions": ["respirer"],
+  "skills": ["passe", "controle", "appels", "scan"],
+  "pieces": ["le cœur", "la carte"],
+  "fr": {
+    "title": "Le taureau",
+    "subtitle": "4 contre 1 : toujours offrir un angle",
+    "objective": "Garder le ballon à quatre contre un en offrant toujours au porteur deux lignes de passe libres. C'est la première école du rondo : se montrer, passer juste, contrôler loin du défenseur.",
+    "organisation": [
+      "Carré de 10 x 10 m (8 x 8 m pour les plus âgés), un plot à chaque coin.",
+      "Un attaquant par côté : il glisse le long de sa ligne mais ne rentre pas dans le carré.",
+      "Un défenseur au centre, le taureau, avec une chasuble.",
+      "Un ballon de réserve à chaque coin pour relancer sans attendre.",
+      "Chez les jeunes : pause boisson à chaque récupération, à l'ombre si possible."
+    ],
+    "rules": [
+      "Deux touches maximum, puis une touche quand le groupe est à l'aise.",
+      "Le joueur qui perd le ballon (interception ou ballon sorti) devient taureau.",
+      "10 passes consécutives : 1 point pour le groupe.",
+      "Un taureau ne reste jamais plus d'une minute au centre : la rotation est imposée."
+    ],
+    "coaching": [
+      "Le taureau vient sur le porteur : glisse sur ta ligne pour sortir de son ombre.",
+      "Montre-toi en diagonale du porteur, jamais caché derrière le taureau.",
+      "Contrôle du pied le plus éloigné du taureau, corps ouvert vers le partenaire suivant.",
+      "Passe au sol, appuyée, sur le pied qui va jouer.",
+      "Regarde avant de recevoir : où est le taureau, qui est libre ?"
+    ],
+    "progressions": [
+      "Une touche obligatoire.",
+      "Carré réduit à 8 x 8 m.",
+      "Le taureau qui récupère en moins de 5 passes marque 1 point.",
+      "Passer au 5 contre 2 de la fiche R02."
+    ],
+    "regressions": [
+      "Trois touches, carré de 12 x 12 m.",
+      "Taureau qui marche, puis qui trottine.",
+      "5 contre 1 : deux attaquants sur le même côté pour multiplier les angles."
+    ],
+    "measure": "Nombre moyen de passes consécutives par séquence, et nombre de fois où le porteur n'a aucune ligne de passe libre (objectif : presque jamais).",
+    "story": "Le premier jour en Catalogne, BriBri reste une éternité au milieu du rondo ; ici, le taureau change chaque minute et chacun apprend à offrir un angle."
+  },
+  "en": {
+    "title": "The Bull",
+    "subtitle": "4 v 1: always offer an angle",
+    "objective": "Keep the ball 4 v 1 by always giving the player on the ball two open passing lanes. It is the first school of the rondo: show for it, pass well, control away from the defender.",
+    "organisation": [
+      "10 x 10 m square (8 x 8 m for older players), a cone on each corner.",
+      "One attacker per side: he slides along his line but never steps inside.",
+      "One defender in the middle, the bull, wearing a bib.",
+      "A spare ball on every corner so play restarts at once.",
+      "With young players: drinks break at every rest, in the shade if possible."
+    ],
+    "rules": [
+      "Two touches maximum, then one touch once the group is comfortable.",
+      "The player who loses the ball (interception or ball out) becomes the bull.",
+      "10 passes in a row: 1 point for the group.",
+      "No bull stays in the middle for more than a minute: rotation is compulsory."
+    ],
+    "coaching": [
+      "The bull comes to the ball: slide along your line to get out of his shadow.",
+      "Show on a diagonal from the ball, never hidden behind the bull.",
+      "Control with the foot furthest from the bull, body open to the next teammate.",
+      "Pass along the ground, firm, onto the foot that will play.",
+      "Look before you receive: where is the bull, who is free?"
+    ],
+    "progressions": [
+      "One touch only.",
+      "Shrink the square to 8 x 8 m.",
+      "A bull who wins the ball within 5 passes scores 1 point.",
+      "Move on to the 5 v 2 of drill R02."
+    ],
+    "regressions": [
+      "Three touches, 12 x 12 m square.",
+      "The bull walks, then jogs.",
+      "5 v 1: two attackers on the same side to create more angles."
+    ],
+    "measure": "Average number of consecutive passes per sequence, and how often the player on the ball has no open passing lane (target: almost never).",
+    "story": "On his first day in Catalonia, BriBri spends forever in the middle of the rondo; here the bull changes every minute and everyone learns to offer an angle."
+  },
+  "diagram": {
+    "view": "grid", "w": 10, "h": 10,
+    "players": [
+      { "id": "g", "team": "a", "x": 0.8, "y": 6 },
+      { "id": "h", "team": "a", "x": 2.6, "y": 0.8 },
+      { "id": "d", "team": "a", "x": 9.2, "y": 4.5 },
+      { "id": "s", "team": "a", "x": 5.5, "y": 9.2 },
+      { "id": "t", "team": "b", "x": 3.6, "y": 5.2, "label": "T" }
+    ],
+    "ball": "g",
+    "arrows": [
+      { "from": "t", "to": [1.9, 5.8], "kind": "press", "n": 1 },
+      { "from": [5.4, 0.8], "to": "h", "kind": "run", "n": 2 },
+      { "from": "g", "to": "h", "kind": "pass", "n": 3 },
+      { "from": "h", "to": "d", "kind": "pass", "n": 4 }
+    ],
+    "labels": [{ "x": 6.6, "y": 6.3, "text": "ombre du taureau" }]
+  },
+  "diagram2": null
+}

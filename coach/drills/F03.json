@@ -1,0 +1,285 @@
+{
+  "id": "F03",
+  "family": "phase",
+  "order": 3,
+  "ages": "U15+",
+  "players": {
+    "min": 12,
+    "max": 12,
+    "fr": "12 joueurs (6 contre 5 + gardien)",
+    "en": "12 players (6 v 5 + goalkeeper)"
+  },
+  "space": {
+    "w": 52,
+    "h": 68
+  },
+  "duration": {
+    "fr": "5 x 4 min, 2 min de récupération",
+    "en": "5 x 4 min, 2 min rest"
+  },
+  "minutes": 28,
+  "md": [
+    "MD-3",
+    "MD-2"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "progresser",
+    "finir",
+    "fixer"
+  ],
+  "skills": [
+    "appels",
+    "passe",
+    "decision",
+    "scan",
+    "controle"
+  ],
+  "pieces": [
+    "la carte",
+    "les yeux"
+  ],
+  "fr": {
+    "title": "Le demi-espace",
+    "subtitle": "6 contre 5 + gardien : progresser par le demi-espace et entrer dans la surface",
+    "objective": "Attaquer par le demi-espace, ce couloir entre l'axe et l'aile où les défenseurs hésitent sur qui doit sortir. Latéral, ailier et intérieur combinent pour entrer dans la surface et servir un partenaire qui arrive.",
+    "organisation": [
+      "Une moitié de terrain (52 x 68 m), un but avec gardien ; deux mini-buts sur la ligne médiane.",
+      "Les demi-espaces sont marqués par des coupelles, dans le prolongement des côtés de la surface et de la petite surface.",
+      "6 attaquants (latéral, deux intérieurs, deux ailiers, un 9) contre 4 défenseurs et un milieu.",
+      "L'entraîneur lance chaque action par une passe au latéral ou à un intérieur, vers 40 m du but."
+    ],
+    "rules": [
+      "Un but vaut 1 point, 2 points si le ballon est entré dans la surface depuis un demi-espace.",
+      "Entrée par le demi-espace suivie d'un centre en retrait : 1 point, même sans but.",
+      "Les défenseurs qui récupèrent ont 8 secondes pour marquer dans un mini-but : 1 point.",
+      "Hors-jeu normal ; chaque action dure 20 secondes au plus."
+    ],
+    "coaching": [
+      "Intérieur, place-toi dans le demi-espace, dans le dos du milieu, entre le latéral et le central adverses.",
+      "Ailier, reste large et fixe le latéral : c'est toi qui ouvres le demi-espace.",
+      "Latéral, dédouble à l'intérieur quand l'ailier reste large, à l'extérieur quand il rentre.",
+      "Attaque l'espace derrière le latéral adverse au moment où il sort sur l'ailier.",
+      "Dans la surface, lève la tête : le centre en retrait vers celui qui arrive vaut mieux qu'un ballon aérien.",
+      "9 au premier poteau, intérieur opposé au point de penalty."
+    ],
+    "progressions": [
+      "Un sixième défenseur : 6 contre 6.",
+      "Deux touches maximum avant l'entrée dans la surface.",
+      "Finir en moins de 12 secondes après la passe de l'entraîneur."
+    ],
+    "regressions": [
+      "Un défenseur de moins : 6 contre 4.",
+      "L'ailier commence avec le ballon, face au jeu.",
+      "Pas de contre-attaque : les défenseurs rendent le ballon à l'entraîneur."
+    ],
+    "measure": "Entrées dans la surface par un demi-espace par série, et part de ces entrées qui finissent par un tir. Ce chiffre nourrit le sous-indice Pénétration de l'Indice Njangi.",
+    "story": "À la Granja del Mar, Jordi Puig dessine des triangles sur tout : latéral, ailier, intérieur. Le troisième sommet est toujours dans le demi-espace."
+  },
+  "en": {
+    "title": "The Half-Space",
+    "subtitle": "6 v 5 + goalkeeper: progress through the half-space and get into the box",
+    "objective": "Attack through the half-space, the channel between the middle and the flank where defenders hesitate over who should step out. Full-back, winger and inside midfielder combine to get into the box and find a teammate arriving.",
+    "organisation": [
+      "Half a pitch (52 x 68 m), a goal with a goalkeeper; two mini goals on the halfway line.",
+      "The half-spaces are marked with disc cones, in line with the sides of the box and the six-yard box.",
+      "6 attackers (full-back, two inside midfielders, two wingers, a 9) against 4 defenders and a midfielder.",
+      "The coach starts each move with a pass to the full-back or an inside midfielder, about 40 m from goal."
+    ],
+    "rules": [
+      "A goal is worth 1 point, 2 points if the ball entered the box from a half-space.",
+      "An entry through the half-space followed by a cut-back: 1 point, even without a goal.",
+      "Defenders who win the ball have 8 seconds to score in a mini goal: 1 point.",
+      "Normal offside; each move lasts 20 seconds at most."
+    ],
+    "coaching": [
+      "Inside midfielder, take up the half-space, behind the midfielder, between their full-back and centre-back.",
+      "Winger, stay wide and pin the full-back: you are the one who opens the half-space.",
+      "Full-back, run inside when the winger stays wide, outside when he comes in.",
+      "Attack the space behind their full-back the moment he steps out to the winger.",
+      "In the box, lift your head: a cut-back to the arriving player beats a ball in the air.",
+      "9 to the near post, far inside midfielder to the penalty spot."
+    ],
+    "progressions": [
+      "A sixth defender: 6 v 6.",
+      "Two touches maximum before entering the box.",
+      "Finish within 12 seconds of the coach's pass."
+    ],
+    "regressions": [
+      "One defender fewer: 6 v 4.",
+      "The winger starts with the ball, facing play.",
+      "No counter-attack: defenders give the ball back to the coach."
+    ],
+    "measure": "Entries into the box through a half-space per set, and the share of those entries that end in a shot. This number feeds the Penetration sub-index of the Njangi Index.",
+    "story": "At La Granja del Mar, Jordi Puig draws triangles on everything: full-back, winger, inside midfielder. The third corner is always in the half-space."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 25,
+        "y": 58,
+        "label": "2"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 37,
+        "y": 65,
+        "label": "7"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 30,
+        "y": 47,
+        "label": "8"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 48,
+        "y": 36.5,
+        "label": "9"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 40,
+        "y": 34.5,
+        "label": "10"
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 36,
+        "y": 6,
+        "label": "11"
+      },
+      {
+        "id": "blb",
+        "team": "b",
+        "x": 44,
+        "y": 58.5
+      },
+      {
+        "id": "blcb",
+        "team": "b",
+        "x": 46.5,
+        "y": 42
+      },
+      {
+        "id": "brcb",
+        "team": "b",
+        "x": 46.5,
+        "y": 26
+      },
+      {
+        "id": "brb",
+        "team": "b",
+        "x": 43,
+        "y": 12
+      },
+      {
+        "id": "b6",
+        "team": "b",
+        "x": 34,
+        "y": 38
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "l2",
+    "arrows": [
+      {
+        "from": "l2",
+        "to": "p7",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "blb",
+        "to": [
+          39.8,
+          63.2
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "p8",
+        "to": [
+          46.5,
+          50.5
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": "p7",
+        "to": [
+          46.5,
+          50.5
+        ],
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": [
+          46.5,
+          50.5
+        ],
+        "to": "p10",
+        "kind": "pass",
+        "n": 5
+      },
+      {
+        "from": "p10",
+        "to": [
+          52.3,
+          30.8
+        ],
+        "kind": "shot",
+        "n": 6
+      }
+    ],
+    "zones": [
+      {
+        "x": 14,
+        "y": 43.2,
+        "w": 38.5,
+        "h": 11,
+        "tone": "a",
+        "label": "demi-espace"
+      },
+      {
+        "x": 14,
+        "y": 13.8,
+        "w": 38.5,
+        "h": 11,
+        "tone": "soft"
+      }
+    ],
+    "goals": [
+      {
+        "x": 0,
+        "y": 20,
+        "side": "left",
+        "size": "mini"
+      },
+      {
+        "x": 0,
+        "y": 48,
+        "side": "left",
+        "size": "mini"
+      }
+    ]
+  },
+  "diagram2": null
+}

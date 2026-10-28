@@ -1,0 +1,122 @@
+{
+  "id": "P05",
+  "family": "position",
+  "order": 5,
+  "ages": "U13+",
+  "players": { "min": 12, "max": 13, "fr": "12 joueurs (6 contre 6), 13 avec un neutre", "en": "12 players (6 v 6), 13 with a neutral" },
+  "space": { "w": 40, "h": 30 },
+  "duration": { "fr": "4 x 4 min, 2 min de récupération", "en": "4 x 4 min, 2 min rest" },
+  "minutes": 24,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["progresser", "fixer"],
+  "skills": ["scan", "controle", "appels", "passe", "decision"],
+  "pieces": ["les yeux", "la carte"],
+  "fr": {
+    "title": "Entre les lignes",
+    "subtitle": "6 contre 6 en trois zones : recevoir dans la poche et se retourner",
+    "objective": "Recevoir dans la zone centrale, entre deux adversaires, puis se retourner pour jouer vers la zone suivante. Le joueur qui se tourne entre les lignes met toute la défense en danger : c'est la passe qui fait progresser.",
+    "organisation": [
+      "Terrain de 40 x 30 m en trois zones : deux zones extrêmes de 15 m, une zone centrale de 10 m.",
+      "6 contre 6, chasubles bien visibles, ballons de réserve chez l'entraîneur au bord de la zone centrale.",
+      "L'équipe en possession garde toujours au moins un joueur dans chaque zone extrême.",
+      "L'équipe qui défend n'a jamais plus de 3 joueurs dans la zone centrale."
+    ],
+    "rules": [
+      "Trois touches maximum.",
+      "Réception dans la zone centrale entre deux adversaires, retournement, passe vers la zone opposée au passeur : 1 point.",
+      "Même action avec un contrôle orienté qui retourne le joueur en une touche : 2 points.",
+      "Après un point, l'équipe garde le ballon et repart dans l'autre sens.",
+      "À la récupération, l'équipe qui reprend le ballon attaque tout de suite, dans les deux sens."
+    ],
+    "coaching": [
+      "Cherche la poche : derrière le premier rideau, entre deux adversaires, loin de leur regard.",
+      "Scanne avant de recevoir : sais-tu déjà si tu peux te retourner ?",
+      "Reçois de profil, sur le pied le plus éloigné du défenseur.",
+      "Passeur, joue fort et au sol, dans le pied qui permet de se tourner.",
+      "Pas de place pour te tourner : remets en une touche et propose-toi à nouveau."
+    ],
+    "progressions": [
+      "Deux touches maximum dans la zone centrale.",
+      "4 défenseurs autorisés dans la zone centrale.",
+      "Zone centrale réduite à 8 m.",
+      "Le receveur de la zone avant doit enchaîner en une touche."
+    ],
+    "regressions": [
+      "Un neutre joue avec l'équipe en possession : 7 contre 6.",
+      "2 défenseurs seulement dans la zone centrale.",
+      "Touches libres dans la zone centrale."
+    ],
+    "measure": "Réceptions entre les lignes suivies d'un retournement, par série et par équipe, et part de ces retournements qui donnent une passe réussie vers l'avant. Repère : au moins 3 retournements par série de 4 min.",
+    "story": "Comme BriBri chez Monsieur Lacombe, le joueur se glisse entre les lignes comme une souris dans un mur, puis se tourne vers le but."
+  },
+  "en": {
+    "title": "Between the Lines",
+    "subtitle": "6 v 6 in three zones: receive in the pocket and turn",
+    "objective": "Receive in the central zone between two opponents, then turn to play into the next zone. A player who turns between the lines puts the whole defence in danger: this is the pass that makes the team progress.",
+    "organisation": [
+      "40 x 30 m area in three zones: two 15 m end zones and a 10 m central zone.",
+      "6 v 6 in clearly visible bibs, spare balls with the coach on the edge of the central zone.",
+      "The team in possession always keeps at least one player in each end zone.",
+      "The defending team never has more than 3 players in the central zone."
+    ],
+    "rules": [
+      "Three touches maximum.",
+      "Receive in the central zone between two opponents, turn, pass into the zone away from the passer: 1 point.",
+      "Same action with a first touch that turns the player in one movement: 2 points.",
+      "After a point, the team keeps the ball and goes back the other way.",
+      "When the ball is won, the team that wins it attacks straight away, in either direction."
+    ],
+    "coaching": [
+      "Find the pocket: behind the first line, between two opponents, out of their sight.",
+      "Scan before you receive: do you already know if you can turn?",
+      "Receive side-on, on the foot furthest from the defender.",
+      "Passer, play it firm and on the ground, to the foot that lets him turn.",
+      "No room to turn: lay it off first time and show again."
+    ],
+    "progressions": [
+      "Two touches maximum in the central zone.",
+      "4 defenders allowed in the central zone.",
+      "Central zone reduced to 8 m.",
+      "The receiver in the far zone must play first time."
+    ],
+    "regressions": [
+      "A neutral plays for the team in possession: 7 v 6.",
+      "Only 2 defenders in the central zone.",
+      "Unlimited touches in the central zone."
+    ],
+    "measure": "Receptions between the lines followed by a turn, per set and per team, and the share of those turns that lead to a completed forward pass. Benchmark: at least 3 turns per 4 min set.",
+    "story": "Like BriBri with Monsieur Lacombe, the player slips between the lines like a mouse into a wall, then turns towards goal."
+  },
+  "diagram": {
+    "view": "grid", "w": 40, "h": 30,
+    "zones": [
+      { "x": 0, "y": 0, "w": 15, "h": 30, "tone": "soft", "label": "zone 1" },
+      { "x": 15, "y": 0, "w": 10, "h": 30, "tone": "n", "label": "la poche" },
+      { "x": 25, "y": 0, "w": 15, "h": 30, "tone": "soft", "label": "zone 3" }
+    ],
+    "cones": [[0, 0], [15, 0], [25, 0], [40, 0], [0, 30], [15, 30], [25, 30], [40, 30]],
+    "players": [
+      { "id": "a1", "team": "a", "x": 5, "y": 15 },
+      { "id": "a2", "team": "a", "x": 10, "y": 4.5 },
+      { "id": "a3", "team": "a", "x": 20, "y": 15 },
+      { "id": "a4", "team": "a", "x": 19, "y": 26.5 },
+      { "id": "a5", "team": "a", "x": 33, "y": 5 },
+      { "id": "a6", "team": "a", "x": 35.5, "y": 20 },
+      { "id": "b1", "team": "b", "x": 9, "y": 18.5 },
+      { "id": "b2", "team": "b", "x": 17, "y": 9 },
+      { "id": "b3", "team": "b", "x": 17.5, "y": 21 },
+      { "id": "b4", "team": "b", "x": 23, "y": 24 },
+      { "id": "b5", "team": "b", "x": 30.5, "y": 13 },
+      { "id": "b6", "team": "b", "x": 31, "y": 25 }
+    ],
+    "ball": "a2",
+    "arrows": [
+      { "from": "a2", "to": "a1", "kind": "pass", "n": 1 },
+      { "from": "a1", "to": "a3", "kind": "pass", "n": 2 },
+      { "from": "a3", "to": "a5", "kind": "pass", "n": 3 }
+    ],
+    "labels": [{ "x": 22.5, "y": 18.3, "text": "se retourne" }]
+  },
+  "diagram2": null
+}

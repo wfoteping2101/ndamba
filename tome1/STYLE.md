@@ -1,4 +1,4 @@
-# Kaydoudou & BriBri : guide d'écriture
+# Lionceaux (Kaydoudou & BriBri) : guide d'écriture
 
 Lis `BIBLE.md` d'abord, puis ce guide, puis `OUTLINE.md`. Le relecteur final vérifie chaque chapitre contre ces règles.
 

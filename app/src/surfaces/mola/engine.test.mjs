@@ -1,0 +1,123 @@
+// Mola engine tests. Run: node src/surfaces/mola/engine.test.mjs   (Node 22+, strips the TypeScript types)
+import { parse, parseProfile, parseDate, parseTime, parsePlayerList, missingSlot, fillSlot, parseFormat, parseName, parseAgeGroup } from './engine.ts'
+
+const TODAY = '2026-10-26' // a Monday
+let pass = 0, fail = 0
+const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b)
+function check(label, got, want) {
+  const ok = Object.entries(want).every(([k, v]) => eq(got[k], v))
+  if (ok) pass++
+  else { fail++; console.log('FAIL', label, '\n  want', JSON.stringify(want), '\n  got ', JSON.stringify(got)) }
+}
+function intent(text, want, lang = 'fr') {
+  const r = parse(text, { today: TODAY, lang })
+  check(`[${lang}] ${text}`, { intent: r.intent, ...r.slots }, want)
+}
+
+// ---- French ----
+intent('Prépare ma semaine avant le match', { intent: 'plan_week' })
+intent('prepare la semaine stp', { intent: 'plan_week' })
+intent('Planifie ma semaine avant le match contre les Panthères', { intent: 'plan_week', opponent: 'Panthères' })
+intent('Crée une séance MD-3 pour progresser', { intent: 'create_session', md: 'MD-3', intention: 'progresser' })
+intent('une seance de tension de 75 minutes', { intent: 'create_session', md: 'MD-4', minutes: 75 })
+intent('Séance de vitesse demain', { intent: 'create_session', md: 'MD-2', date: '2026-10-27' })
+intent('fais moi une seance d activation pour sortir le ballon', { intent: 'create_session', md: 'MD-1', intention: 'sortir' })
+intent('seance J-2 de 60 min sur la contre-pression', { intent: 'create_session', md: 'MD-2', minutes: 60, intention: 'reprendre' })
+intent('Organise un match contre les Aigles samedi à 16h', { intent: 'setup_match', opponent: 'Aigles', date: '2026-10-31', time: '16:00' })
+intent('match amical contre Coton Sport le 12 novembre à 15h30 au stade de la Réunification', { intent: 'setup_match', opponent: 'Coton Sport', date: '2026-11-12', time: '15:30', venue: 'Stade de la Réunification' })
+intent('on joue contre les Requins de Bépanda demain 16h30 à domicile', { intent: 'setup_match', opponent: 'Requins de Bépanda', date: '2026-10-27', time: '16:30', home: true })
+intent('Organise un match', { intent: 'setup_match' })
+intent('Ajoute un joueur', { intent: 'add_player' })
+intent('Ajoute Samuel Eto\'o, numéro 9, attaquant', { intent: 'add_player', name: 'Samuel Eto\'o', number: 9, position: 'ST' })
+intent('ajoute une joueuse Mireille Eyenga n°10 milieu offensif', { intent: 'add_player', name: 'Mireille Eyenga', number: 10, position: 'AM' })
+intent('Envoie la convocation', { intent: 'send_convocation' })
+intent('envoie la convoc sur whatsapp', { intent: 'send_convocation', channel: 'whatsapp' })
+intent('Analyse mon dernier match', { intent: 'analyze_last_match' })
+intent('comment on a joué samedi ?', { intent: 'analyze_last_match' })
+intent('Quels exercices pour mieux reprendre le ballon ?', { intent: 'recommend_drills', intention: 'reprendre' })
+intent('des exos pour progresser entre les lignes', { intent: 'recommend_drills', intention: 'progresser' })
+intent('mes joueurs n arrivent pas à finir les actions, quels exercices ?', { intent: 'recommend_drills', intention: 'finir' })
+intent('Ouvre la leçon 7', { intent: 'open_lesson', lessonNo: 7 })
+intent('montre-moi le chapitre 7 du roman', { intent: 'open_lesson', chapterNo: 7, book: 'tome1' })
+intent('ouvre la leçon numéro douze', { intent: 'open_lesson', lessonNo: 12 })
+intent('je veux lire la méthode', { intent: 'open_book', book: 'methode' })
+intent('ouvre le Code Njangi', { intent: 'open_book', book: 'methode' })
+intent('je veux lire Lionceaux, le tome 1', { intent: 'open_book', book: 'tome1' })
+intent('open The Njangi Code', { intent: 'open_book', book: 'methode' }, 'en')
+intent('Ajoute un joueur aux Lionceaux', { intent: 'add_player' })
+intent('Exporte la semaine dans mon calendrier', { intent: 'export_calendar' })
+intent('Que peux-tu faire ?', { intent: 'help' })
+intent('Bonjour Mola', { intent: 'small_talk', talk: 'greet' })
+intent('merci beaucoup', { intent: 'small_talk', talk: 'thanks' })
+intent('oui vas-y', { intent: 'confirm' })
+intent('non merci', { intent: 'deny' })
+// typos and no accents
+intent('prepar ma semainne', { intent: 'plan_week' })
+intent('cree une seanse md3', { intent: 'create_session', md: 'MD-3' })
+intent('organise un mach contre les lions vendredi a 17h', { intent: 'setup_match', opponent: 'Lions', date: '2026-10-30', time: '17:00' })
+intent('anlyse le dernier match', { intent: 'analyze_last_match' })
+
+// ---- English ----
+intent('Plan my week before the match', { intent: 'plan_week' }, 'en')
+intent('Create an MD-3 session to progress', { intent: 'create_session', md: 'MD-3', intention: 'progress' === 'x' ? 'x' : 'progresser' }, 'en')
+intent('build me a 90 minute recovery session', { intent: 'create_session', md: 'MD+1', minutes: 90 }, 'en')
+intent('Set up a match against the Eagles on Saturday at 4pm', { intent: 'setup_match', opponent: 'Eagles', date: '2026-10-31', time: '16:00' }, 'en')
+intent('friendly vs Union Douala next friday 3:30pm at Mbappe Leppe stadium', { intent: 'setup_match', opponent: 'Union Douala', date: '2026-10-30', time: '15:30', venue: 'Mbappe Leppe stadium' }, 'en')
+intent('game against Canon tomorrow at 10am', { intent: 'setup_match', opponent: 'Canon', date: '2026-10-27', time: '10:00' }, 'en')
+intent('schedule a match against PWD Bamenda on November 12', { intent: 'setup_match', opponent: 'PWD Bamenda', date: '2026-11-12' }, 'en')
+intent('Add a player', { intent: 'add_player' }, 'en')
+intent('add John Mbarga number 4 centre back', { intent: 'add_player', name: 'John Mbarga', number: 4, position: 'CB' }, 'en')
+intent('Send the call-up on WhatsApp', { intent: 'send_convocation', channel: 'whatsapp' }, 'en')
+intent('send the squad message by sms', { intent: 'send_convocation', channel: 'sms' }, 'en')
+intent('Analyse my last match', { intent: 'analyze_last_match' }, 'en')
+intent('how did we play last game?', { intent: 'analyze_last_match' }, 'en')
+intent('Which drills to win the ball back faster?', { intent: 'recommend_drills', intention: 'reprendre' }, 'en')
+intent('drills to improve our build up', { intent: 'recommend_drills', intention: 'sortir' }, 'en')
+intent('Open lesson 7', { intent: 'open_lesson', lessonNo: 7 }, 'en')
+intent('show me chapter three of the novel', { intent: 'open_lesson', chapterNo: 3, book: 'tome1' }, 'en')
+intent('what can you do?', { intent: 'help' }, 'en')
+intent('hello', { intent: 'small_talk', talk: 'greet' }, 'en')
+intent('yes please', { intent: 'confirm' }, 'en')
+intent('not now', { intent: 'deny' }, 'en')
+
+intent('Crée mon équipe', { intent: 'create_team' })
+intent('create a new team called Avenir FC U15', { intent: 'create_team', name: 'Avenir FC', ageGroup: 'U15' }, 'en')
+check('fill team name', fillSlot('name', 'create_team', 'Lionceaux U11, on joue à 7', TODAY), { name: 'Lionceaux U11', ageGroup: 'U11', format: 7 })
+
+// ---- dates and times ----
+check('no date in « mon calendrier »', { d: parseDate('exporte dans mon calendrier', TODAY) }, { d: undefined })
+check('no date in « jeu de position »', { d: parseDate('une séance de jeu de position', TODAY) }, { d: undefined })
+
+check('date samedi prochain', { d: parseDate('samedi prochain', TODAY) }, { d: '2026-10-31' })
+check('date lundi (today is Monday, so next week)', { d: parseDate('lundi', TODAY) }, { d: '2026-11-02' })
+check('date le 3', { d: parseDate('le 3', TODAY) }, { d: '2026-11-03' })
+check('date 1er décembre', { d: parseDate('le 1er décembre', TODAY) }, { d: '2026-12-01' })
+check('date 12/11 fr', { d: parseDate('le 12/11', TODAY, 'fr') }, { d: '2026-11-12' })
+check('date 11/12 en', { d: parseDate('on 11/12', TODAY, 'en') }, { d: '2026-11-12' })
+check('date in 3 days', { d: parseDate('in 3 days', TODAY) }, { d: '2026-10-29' })
+check('time 16h30', { t: parseTime('à 16h30') }, { t: '16:30' })
+check('time 4 pm', { t: parseTime('at 4 pm') }, { t: '16:00' })
+check('time 9h', { t: parseTime('9h') }, { t: '09:00' })
+
+// ---- follow-ups ----
+check('missing opponent', { m: missingSlot('setup_match', {}) }, { m: 'opponent' })
+check('fill opponent', fillSlot('opponent', 'setup_match', 'les Aigles de Makepe', TODAY), { opponent: 'Aigles de Makepe' })
+check('fill date', fillSlot('date', 'setup_match', 'dimanche à 10h', TODAY), { date: '2026-11-01', time: '10:00' })
+check('fill player name', fillSlot('name', 'add_player', 'Brice Manga 14', TODAY), { name: 'Brice Manga', number: 14 })
+
+// ---- onboarding ----
+check('profile coach Garoua', parseProfile('Je suis entraîneur des U15 de Coton Sport à Garoua'), { role: 'coach', ageGroup: 'U15', club: 'Coton Sport', city: 'Garoua', country: 'CM' })
+check('profile en coach', parseProfile("I'm Paul, I coach the U13 of Avenir FC in Yaoundé, we play 9 v 9"), { name: 'Paul', role: 'coach', ageGroup: 'U13', club: 'Avenir FC', city: 'Yaoundé', format: 9 })
+check('profile player', parseProfile('je suis joueuse, milieu défensif, je joue au Rail FC de Douala'), { role: 'player', position: 'DM', city: 'Douala' })
+check('profile player en', parseProfile('I am a 14 year old striker from Abidjan'), { ageGroup: 'U15', city: 'Abidjan', country: 'CI', position: 'ST' })
+check('profile parent', parseProfile('Je suis la maman de Junior, il a 9 ans'), { role: 'parent', ageGroup: 'U11' })
+check('name bare', { n: parseName('Tonton Fokou', true) }, { n: 'Tonton Fokou' })
+check('name sentence', { n: parseName("Bonjour, je m'appelle Aïcha Ngono") }, { n: 'Aïcha Ngono' })
+check('age U-17', { a: parseAgeGroup('les U-17') }, { a: 'U17' })
+check('format 7 contre 7', { f: parseFormat('on joue à 7 contre 7') }, { f: 7 })
+check('format bare', { f: parseFormat('11', true) }, { f: 11 })
+check('player list', { l: parsePlayerList('1. Ousmane Bello (GK)\n8 Kaydoudou\nBriBri 7, Samuel Owona - attaquant') }, { l: [{ name: 'Ousmane Bello', number: 1, position: 'GK' }, { name: 'Kaydoudou', number: 8 }, { name: 'BriBri', number: 7 }, { name: 'Samuel Owona', position: 'ST' }] })
+
+check('player list with position after comma', { l: parsePlayerList('1. Ousmane Bello (GK)\n8 Kaydoudou\n9 Samuel Owona, attaquant') }, { l: [{ name: 'Ousmane Bello', number: 1, position: 'GK' }, { name: 'Kaydoudou', number: 8 }, { name: 'Samuel Owona', number: 9, position: 'ST' }] })
+console.log(`\n${pass} passed, ${fail} failed (${pass + fail} checks)`)
+process.exit(fail ? 1 : 0)

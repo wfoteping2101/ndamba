@@ -1,6 +1,6 @@
-# La Méthode Njangi : plan détaillé
+# Le Code Njangi : plan détaillé
 
-Titre : **La Méthode Njangi**
+Titre : **Le Code Njangi** (sous-titre : Posséder avec intention : la méthode africaine pour gagner la Coupe du monde)
 Sous-titre : **Posséder avec intention. Le modèle de jeu africain pour gagner la Coupe du monde.**
 Bandeau de couverture : 50 exercices · Des jeunes aux pros · La semaine d'entraînement · Périodisation · L'analyse
 Auteur : William Foteping

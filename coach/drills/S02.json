@@ -1,0 +1,116 @@
+{
+  "id": "S02",
+  "family": "ssg",
+  "order": 2,
+  "ages": "U10+",
+  "players": { "min": 8, "max": 12, "fr": "8 joueurs (4 contre 4), 12 avec une équipe en attente", "en": "8 players (4 v 4), 12 with a team waiting" },
+  "space": { "w": 40, "h": 20 },
+  "duration": { "fr": "6 x 3 min, 1 min 30 de récupération", "en": "6 x 3 min, 1 min 30 rest" },
+  "minutes": 26,
+  "md": ["youth", "MD-4"],
+  "intensity": "high",
+  "intentions": ["progresser"],
+  "skills": ["conduite", "appels", "passe", "scan", "decision"],
+  "pieces": ["la raison", "les yeux"],
+  "fr": {
+    "title": "La zone d'entrée",
+    "subtitle": "4 contre 4 : marquer en entrant dans la zone, en conduite ou sur une passe",
+    "objective": "Progresser jusqu'à une zone derrière la ligne de fond, soit en conduisant le ballon, soit en recevant une passe dans la course. On n'y gagne rien à garder le ballon : seule l'entrée compte.",
+    "organisation": [
+      "Terrain de 30 x 20 m, avec une zone de 5 m derrière chaque ligne de fond : 40 x 20 m en tout.",
+      "4 contre 4 ; chaque équipe attaque la zone située derrière la ligne de fond adverse.",
+      "Une équipe de 4 attend et remplace l'équipe perdante à chaque série.",
+      "Ballons de réserve chez l'entraîneur ; pause boisson à chaque récupération, à l'ombre si possible."
+    ],
+    "rules": [
+      "Touches libres.",
+      "Entrer dans la zone en conduite, ballon contrôlé : 1 point.",
+      "Recevoir dans la zone une passe venue de l'extérieur, en y entrant en même temps que le ballon : 1 point.",
+      "Personne n'attend dans la zone ; les défenseurs défendent devant, pas dedans.",
+      "Après un point, l'adversaire repart avec le ballon depuis sa propre ligne de fond."
+    ],
+    "coaching": [
+      "Regarde la zone avant de recevoir : y a-t-il de l'espace devant toi ?",
+      "De l'espace devant toi : conduis vite, ballon près du pied, jusqu'à la zone.",
+      "Pas d'espace : passe, puis fais un appel dans le dos du défenseur.",
+      "Pars au moment de la passe, pas avant.",
+      "Passeur, joue dans la course, devant ton partenaire."
+    ],
+    "progressions": [
+      "2 points si l'entrée suit une passe qui a traversé une ligne de deux défenseurs.",
+      "Deux touches maximum en dehors des zones.",
+      "Zones réduites à 3 m.",
+      "5 contre 5 sur 35 x 25 m, plus les zones."
+    ],
+    "regressions": [
+      "Un joker joue avec l'équipe en possession : 5 contre 4.",
+      "Zones de 7 m.",
+      "Terrain élargi à 30 x 25 m."
+    ],
+    "measure": "Entrées dans la zone par série, en séparant conduites et passes reçues. On cherche l'équilibre : une équipe qui ne marque qu'en conduite ne sait pas encore utiliser l'appel.",
+    "story": "Marcus montre aux frères 70 % de possession et seulement 5 ballons touchés dans la surface ; ici, seule l'entrée compte."
+  },
+  "en": {
+    "title": "The End Zone",
+    "subtitle": "4 v 4: score by getting into the zone, on the ball or onto a pass",
+    "objective": "Progress into a zone behind the end line, either by carrying the ball in or by receiving a pass on the run. Keeping the ball earns nothing: only getting in counts.",
+    "organisation": [
+      "30 x 20 m pitch, with a 5 m zone behind each end line: 40 x 20 m in all.",
+      "4 v 4; each team attacks the zone behind the opposition end line.",
+      "A team of 4 waits and replaces the losing team after each set.",
+      "Spare balls with the coach; drinks break during every rest, in the shade if possible."
+    ],
+    "rules": [
+      "Unlimited touches.",
+      "Dribble into the zone with the ball under control: 1 point.",
+      "Receive a pass from outside the zone, arriving in the zone at the same time as the ball: 1 point.",
+      "Nobody waits in the zone; defenders defend in front of it, not inside.",
+      "After a point, the other team restarts with the ball from its own end line."
+    ],
+    "coaching": [
+      "Look at the zone before you receive: is there space in front of you?",
+      "Space in front: carry it fast, ball close to your foot, all the way in.",
+      "No space: pass, then run in behind the defender.",
+      "Go as the pass is played, not before.",
+      "Passer, play it into his run, in front of your teammate."
+    ],
+    "progressions": [
+      "2 points if the entry follows a pass that split a line of two defenders.",
+      "Two touches maximum outside the zones.",
+      "Zones reduced to 3 m.",
+      "5 v 5 on 35 x 25 m, plus the zones."
+    ],
+    "regressions": [
+      "A joker plays for the team in possession: 5 v 4.",
+      "7 m zones.",
+      "Pitch widened to 30 x 25 m."
+    ],
+    "measure": "Entries into the zone per set, split between dribbles and passes received. Look for a balance: a team that only scores by dribbling has not yet learned to use the run.",
+    "story": "Marcus shows the brothers 70 % possession and only 5 touches in the box; here, only getting in counts."
+  },
+  "diagram": {
+    "view": "grid", "w": 40, "h": 20,
+    "zones": [
+      { "x": 0, "y": 0, "w": 5, "h": 20, "tone": "b", "label": "zone" },
+      { "x": 35, "y": 0, "w": 5, "h": 20, "tone": "a", "label": "zone" }
+    ],
+    "cones": [[0, 0], [5, 0], [35, 0], [40, 0], [0, 20], [5, 20], [35, 20], [40, 20]],
+    "players": [
+      { "id": "a1", "team": "a", "x": 10, "y": 6 },
+      { "id": "a2", "team": "a", "x": 18, "y": 12 },
+      { "id": "a3", "team": "a", "x": 24, "y": 4 },
+      { "id": "a4", "team": "a", "x": 12, "y": 16 },
+      { "id": "b1", "team": "b", "x": 16, "y": 6 },
+      { "id": "b2", "team": "b", "x": 22, "y": 8.5 },
+      { "id": "b3", "team": "b", "x": 30, "y": 10.5 },
+      { "id": "b4", "team": "b", "x": 28, "y": 15 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "a2", "kind": "pass", "n": 1 },
+      { "from": "a3", "to": [37.5, 6], "kind": "run", "n": 2 },
+      { "from": "a2", "to": [37.5, 6], "kind": "pass", "n": 3 }
+    ]
+  },
+  "diagram2": null
+}

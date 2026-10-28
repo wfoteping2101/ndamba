@@ -1,0 +1,266 @@
+{
+  "id": "T01",
+  "family": "transition",
+  "order": 1,
+  "ages": "U13+",
+  "players": {
+    "min": 14,
+    "max": 14,
+    "fr": "14 joueurs (6 contre 6 + 2 gardiens)",
+    "en": "14 players (6 v 6 + 2 goalkeepers)"
+  },
+  "space": {
+    "w": 50,
+    "h": 40
+  },
+  "duration": {
+    "fr": "4 x 5 min, 2 min de récupération",
+    "en": "4 x 5 min, 2 min rest"
+  },
+  "minutes": 26,
+  "md": [
+    "MD-4",
+    "MD+1"
+  ],
+  "intensity": "very-high",
+  "intentions": [
+    "reprendre",
+    "regarder-devant"
+  ],
+  "skills": [
+    "contre-pression",
+    "communication",
+    "decision",
+    "scan"
+  ],
+  "pieces": [
+    "le souffle",
+    "les yeux"
+  ],
+  "fr": {
+    "title": "Les cinq secondes",
+    "subtitle": "6 contre 6 + gardiens : reprendre le ballon dans les 5 secondes rapporte un point",
+    "objective": "Installer le réflexe Reprendre : à la perte, les plus proches attaquent le ballon tout de suite, les autres ferment les passes vers l'avant. L'entraîneur compte à voix haute : tout le monde entend le temps passer.",
+    "organisation": [
+      "Terrain de 50 x 40 m, deux buts avec gardiens.",
+      "6 contre 6 ; les joueurs qui attendent travaillent sur un terrain voisin, on tourne à chaque série.",
+      "L'entraîneur, ballons à la main au bord du terrain, compte de 1 à 5 à chaque perte.",
+      "Pause boisson à chaque récupération, à l'ombre si possible."
+    ],
+    "rules": [
+      "Un but vaut 2 points.",
+      "Équipe qui reprend le ballon dans les 5 secondes après l'avoir perdu : 1 point.",
+      "Ballon dégagé en touche par l'adversaire sous la pression, dans les 5 secondes : compte comme une reprise.",
+      "Équipe qui récupère, échappe à la pression et joue vers l'avant après les 5 secondes : 1 point.",
+      "Touches libres ; l'entraîneur relance tout de suite après chaque sortie."
+    ],
+    "coaching": [
+      "Perdu ? Attaque le ballon tout de suite : le premier pas compte plus que la vitesse.",
+      "Deux joueurs sur le porteur, les autres ferment les passes vers l'avant.",
+      "Avant de perdre le ballon, sois déjà placé pour le reprendre.",
+      "Équipe qui récupère : premier regard vers l'avant, premier contrôle loin de la pression.",
+      "Cinq secondes sans reprise : replie-toi et défends en bloc."
+    ],
+    "progressions": [
+      "Reprise en 4 secondes seulement.",
+      "Terrain réduit à 45 x 35 m.",
+      "Une reprise suivie d'un tir en moins de 10 secondes vaut 3 points."
+    ],
+    "regressions": [
+      "Reprise en 7 secondes.",
+      "Un joker joue avec l'équipe en possession.",
+      "Deux joueurs seulement ont le droit de contre-presser."
+    ],
+    "measure": "Pertes et reprises en moins de 5 secondes, par équipe et par série. Un repère interne, à calibrer sur ses matchs : une reprise pour trois pertes. C'est le sous-indice Reprise de l'Indice Njangi.",
+    "story": "En France, Monsieur Lacombe compte à voix haute après chaque perte. BriBri, qui boudait après un ballon perdu, apprend à repartir avant le « deux »."
+  },
+  "en": {
+    "title": "The Five Seconds",
+    "subtitle": "6 v 6 + goalkeepers: winning the ball back within 5 seconds earns a point",
+    "objective": "Build the reflex called Win it back: when the ball is lost, the nearest players attack it at once and the others close the forward passes. The coach counts out loud so everyone hears the time running.",
+    "organisation": [
+      "50 x 40 m pitch, two goals with goalkeepers.",
+      "6 v 6; players waiting work on a pitch next door, and groups rotate after each set.",
+      "The coach, balls in hand at the side, counts from 1 to 5 after every loss.",
+      "Drinks break during every rest, in the shade if possible."
+    ],
+    "rules": [
+      "A goal is worth 2 points.",
+      "A team that wins the ball back within 5 seconds of losing it: 1 point.",
+      "A ball cleared into touch by the opponent under pressure, within 5 seconds, counts as a regain.",
+      "A team that wins the ball, escapes the pressure and plays forward after the 5 seconds: 1 point.",
+      "Unlimited touches; the coach restarts immediately after every ball out."
+    ],
+    "coaching": [
+      "Lost it? Attack the ball straight away: the first step matters more than speed.",
+      "Two players on the ball, the others close the forward passes.",
+      "Before you lose the ball, be in position to win it back.",
+      "Team that wins it: first look forward, first touch away from pressure.",
+      "Five seconds without a regain: drop back and defend as a block."
+    ],
+    "progressions": [
+      "Regain within 4 seconds only.",
+      "Pitch reduced to 45 x 35 m.",
+      "A regain followed by a shot within 10 seconds is worth 3 points."
+    ],
+    "regressions": [
+      "Regain within 7 seconds.",
+      "A joker plays with the team in possession.",
+      "Only two players may counter-press."
+    ],
+    "measure": "Balls lost and regains within 5 seconds, per team and per set. An internal benchmark, to calibrate on your own matches: one regain for every three losses. This is the Regain sub-index of the Njangi Index.",
+    "story": "In France, Monsieur Lacombe counts out loud after every loss. BriBri, who used to sulk after losing the ball, learns to react before \"two\"."
+  },
+  "diagram": {
+    "view": "grid",
+    "w": 50,
+    "h": 40,
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 1.8,
+        "y": 20
+      },
+      {
+        "id": "a1",
+        "team": "a",
+        "x": 38,
+        "y": 12
+      },
+      {
+        "id": "a2",
+        "team": "a",
+        "x": 30,
+        "y": 24
+      },
+      {
+        "id": "a3",
+        "team": "a",
+        "x": 22,
+        "y": 30
+      },
+      {
+        "id": "a4",
+        "team": "a",
+        "x": 21,
+        "y": 8
+      },
+      {
+        "id": "a5",
+        "team": "a",
+        "x": 43,
+        "y": 31
+      },
+      {
+        "id": "a6",
+        "team": "a",
+        "x": 10,
+        "y": 22
+      },
+      {
+        "id": "b1",
+        "team": "b",
+        "x": 33,
+        "y": 17
+      },
+      {
+        "id": "b2",
+        "team": "b",
+        "x": 41,
+        "y": 23
+      },
+      {
+        "id": "b3",
+        "team": "b",
+        "x": 20,
+        "y": 23
+      },
+      {
+        "id": "b4",
+        "team": "b",
+        "x": 15,
+        "y": 12
+      },
+      {
+        "id": "b5",
+        "team": "b",
+        "x": 30,
+        "y": 33
+      },
+      {
+        "id": "b6",
+        "team": "b",
+        "x": 8,
+        "y": 31
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 48.2,
+        "y": 20
+      }
+    ],
+    "ball": "b1",
+    "arrows": [
+      {
+        "from": "a1",
+        "to": [
+          34.9,
+          15.1
+        ],
+        "kind": "press",
+        "n": 1
+      },
+      {
+        "from": "a2",
+        "to": [
+          32,
+          19.6
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "a3",
+        "to": [
+          24.5,
+          21.5
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": "a4",
+        "to": [
+          24.5,
+          14.2
+        ],
+        "kind": "run",
+        "n": 4
+      }
+    ],
+    "goals": [
+      {
+        "x": 0.5,
+        "y": 20,
+        "side": "left",
+        "size": "full"
+      },
+      {
+        "x": 49.5,
+        "y": 20,
+        "side": "right",
+        "size": "full"
+      }
+    ],
+    "labels": [
+      {
+        "x": 25,
+        "y": 38.6,
+        "text": "1, 2, 3, 4, 5"
+      }
+    ]
+  },
+  "diagram2": null
+}

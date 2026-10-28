@@ -1,0 +1,120 @@
+{
+  "id": "P07",
+  "family": "position",
+  "order": 7,
+  "ages": "U13+",
+  "players": { "min": 12, "max": 12, "fr": "12 joueurs (4 contre 3 et 3 contre 2)", "en": "12 players (4 v 3 and 3 v 2)" },
+  "space": { "w": 40, "h": 25 },
+  "duration": { "fr": "5 x 3 min, 1 min 30 de récupération", "en": "5 x 3 min, 1 min 30 rest" },
+  "minutes": 22,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["fixer", "progresser", "finir"],
+  "skills": ["conduite", "passe", "dribble-njangi", "appels", "decision"],
+  "pieces": ["la carte", "la raison"],
+  "fr": {
+    "title": "Attirer pour libérer",
+    "subtitle": "4 contre 3, puis transfert vers un 3 contre 2 qui attaque un mini-but",
+    "objective": "Attirer le pressing d'un côté pour attaquer l'espace qu'il laisse de l'autre. Les joueurs apprennent que garder le ballon sous pression n'est pas une fin : c'est la préparation de la passe qui libère.",
+    "organisation": [
+      "Rectangle de 40 x 25 m en deux moitiés de 20 m ; un mini-but au milieu de la ligne de fond droite.",
+      "Moitié gauche : 4 attaquants contre 3 défenseurs qui pressent.",
+      "Moitié droite : 3 attaquants contre 2 défenseurs qui protègent le mini-but.",
+      "L'entraîneur lance chaque action dans la moitié gauche ; on tourne les rôles à chaque série."
+    ],
+    "rules": [
+      "Deux touches maximum dans la moitié gauche.",
+      "Passe vers la moitié droite autorisée après 6 passes, ou après une conduite qui a attiré deux défenseurs.",
+      "Un défenseur de droite peut venir presser à gauche ; il ne repart qu'après la passe de transfert.",
+      "But dans le mini-but : 1 point ; 2 points s'il arrive moins de 8 secondes après le transfert.",
+      "Les défenseurs qui récupèrent marquent en conduisant au-delà de la ligne de fond gauche."
+    ],
+    "coaching": [
+      "Garde le ballon court et près des défenseurs : invite-les à venir.",
+      "Conduis droit sur un défenseur, puis donne au moment où il s'engage.",
+      "Joueurs de droite, écartez-vous et montrez-vous avant la passe, pas après.",
+      "Transfert fort et au sol, vers le joueur qui peut attaquer face au but.",
+      "Après le transfert, attaquez vite : le 3 contre 2 ne dure que quelques secondes."
+    ],
+    "progressions": [
+      "Un défenseur de gauche peut suivre le transfert : 3 contre 3.",
+      "Deux mini-buts à droite ; marquer dans celui qui est loin du ballon.",
+      "Une touche dans la moitié gauche après la quatrième passe."
+    ],
+    "regressions": [
+      "4 passes suffisent pour transférer.",
+      "Les défenseurs de droite restent dans leur moitié.",
+      "Les 3 défenseurs de gauche ne pressent qu'à deux : 4 contre 2."
+    ],
+    "measure": "Transferts réussis et buts marqués dans les 8 secondes. L'analyste note combien de défenseurs se trouvent à gauche au moment du transfert : plus il y en a, mieux l'équipe a attiré.",
+    "story": "Tonton Fokou l'écrit dès Douala dans le carnet : quand deux adversaires viennent sur toi, un partenaire est libre quelque part. Ici, on les fait venir exprès."
+  },
+  "en": {
+    "title": "Draw Them In, Free a Teammate",
+    "subtitle": "4 v 3, then a switch into a 3 v 2 attacking a mini goal",
+    "objective": "Draw the press to one side to attack the space it leaves on the other. Players learn that keeping the ball under pressure is not the goal: it prepares the pass that frees a teammate.",
+    "organisation": [
+      "40 x 25 m area split into two 20 m halves; one mini goal in the middle of the right end line.",
+      "Left half: 4 attackers against 3 pressing defenders.",
+      "Right half: 3 attackers against 2 defenders who protect the mini goal.",
+      "The coach starts every action in the left half; roles rotate after each set."
+    ],
+    "rules": [
+      "Two touches maximum in the left half.",
+      "The pass into the right half is allowed after 6 passes, or after a carry that drew two defenders.",
+      "One right-half defender may come and press on the left; he can only go back after the switch.",
+      "Goal in the mini goal: 1 point; 2 points if it comes less than 8 seconds after the switch.",
+      "Defenders who win the ball score by dribbling over the left end line."
+    ],
+    "coaching": [
+      "Keep the ball short and close to the defenders: invite them in.",
+      "Carry straight at a defender, then release it as he commits.",
+      "Right-half players, spread out and show before the pass, not after.",
+      "Play the switch firm and on the ground, to the player who can attack facing goal.",
+      "After the switch, attack fast: the 3 v 2 only lasts a few seconds."
+    ],
+    "progressions": [
+      "One left-half defender may follow the switch: 3 v 3.",
+      "Two mini goals on the right; score in the one away from the ball.",
+      "One touch in the left half after the fourth pass."
+    ],
+    "regressions": [
+      "4 passes are enough to switch.",
+      "Right-half defenders stay in their half.",
+      "Only two of the three left-half defenders press: 4 v 2."
+    ],
+    "measure": "Successful switches and goals scored within 8 seconds. The analyst notes how many defenders are on the left when the switch is played: the more there are, the better the team drew them in.",
+    "story": "Tonton Fokou writes it in the notebook back in Douala: when two opponents come at you, a teammate is free somewhere. Here, we bring them in on purpose."
+  },
+  "diagram": {
+    "view": "grid", "w": 40, "h": 25,
+    "zones": [
+      { "x": 0, "y": 0, "w": 20, "h": 25, "tone": "soft", "label": "4 contre 3" },
+      { "x": 20, "y": 0, "w": 20, "h": 25, "tone": "a", "label": "3 contre 2" }
+    ],
+    "cones": [[0, 0], [20, 0], [40, 0], [0, 25], [20, 25], [40, 25]],
+    "goals": [{ "x": 40, "y": 12.5, "side": "left", "size": "mini" }],
+    "players": [
+      { "id": "a1", "team": "a", "x": 4.5, "y": 12.5 },
+      { "id": "a2", "team": "a", "x": 8, "y": 4 },
+      { "id": "a3", "team": "a", "x": 8.5, "y": 21.5 },
+      { "id": "a4", "team": "a", "x": 16.5, "y": 6 },
+      { "id": "b1", "team": "b", "x": 10.5, "y": 9.5 },
+      { "id": "b2", "team": "b", "x": 10.5, "y": 15 },
+      { "id": "b3", "team": "b", "x": 15, "y": 13.5 },
+      { "id": "a5", "team": "a", "x": 24.5, "y": 9 },
+      { "id": "a6", "team": "a", "x": 28, "y": 20 },
+      { "id": "a7", "team": "a", "x": 33, "y": 5 },
+      { "id": "b4", "team": "b", "x": 31, "y": 12 },
+      { "id": "b5", "team": "b", "x": 36.5, "y": 9 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": [9, 12.5], "kind": "dribble", "n": 1 },
+      { "from": "a1", "to": "a3", "kind": "pass", "n": 2 },
+      { "from": "a3", "to": "a6", "kind": "pass", "n": 3 },
+      { "from": "a6", "to": [39, 13.5], "kind": "shot", "n": 4 }
+    ]
+  },
+  "diagram2": null
+}

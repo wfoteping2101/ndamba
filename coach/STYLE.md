@@ -1,10 +1,10 @@
-# La Méthode Njangi : guide d'écriture (livre pour entraîneurs, analystes et managers)
+# Le Code Njangi : guide d'écriture (livre pour entraîneurs, analystes et managers)
 
 Lis ce guide, puis `OUTLINE.md`, puis `../tome1/BIBLE.md` (seulement la partie « Le Njangi », pour la métaphore commune aux deux livres).
 
 ## Le livre en un paragraphe
 
-*La Méthode Njangi. Posséder avec intention* est un manuel professionnel, en français, pour les entraîneurs (des éducateurs de jeunes aux entraîneurs de sélection), les analystes vidéo et data, les directeurs techniques et les dirigeants de fédérations africaines. Il propose ce qui manque à la plupart des nations africaines : **une philosophie de jeu commune**, du plus jeune âge à l'équipe A, construite sur la possession avec intention et sur les forces des footballeurs africains. Son mantra : **qu'une nation africaine gagne la Coupe du monde en 2030 ou en 2034.** Il est concret (principes, comportements, séances, semaines, indicateurs), honnête sur les difficultés (terrains, moyens, instabilité des staffs) et ambitieux. Il est le compagnon de l'application Njangi (bibliothèque d'exercices, planification, analyse en direct) et du roman jeunesse *Kaydoudou & BriBri*.
+*Le Code Njangi. Posséder avec intention* est un manuel professionnel, en français, pour les entraîneurs (des éducateurs de jeunes aux entraîneurs de sélection), les analystes vidéo et data, les directeurs techniques et les dirigeants de fédérations africaines. Il propose ce qui manque à la plupart des nations africaines : **une philosophie de jeu commune**, du plus jeune âge à l'équipe A, construite sur la possession avec intention et sur les forces des footballeurs africains. Son mantra : **qu'une nation africaine gagne la Coupe du monde en 2030 ou en 2034.** Il est concret (principes, comportements, séances, semaines, indicateurs), honnête sur les difficultés (terrains, moyens, instabilité des staffs) et ambitieux. Il est le compagnon de l'application Njangi (bibliothèque d'exercices, planification, analyse en direct) et du roman jeunesse *Kaydoudou & BriBri*.
 
 ## Règles absolues
 

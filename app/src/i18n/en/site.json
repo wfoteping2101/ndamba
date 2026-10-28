@@ -1,0 +1,416 @@
+{
+  "quote": "“{{text}}”",
+  "landing": {
+    "hero": {
+      "lead": "A saga for children, a book for coaches, an app for the whole team, and Mola, the agent that works alongside you. One idea of the game, from the neighbourhood pitch to the national team.",
+      "ctaStart": "Get started with Mola",
+      "ctaDemo": "Try the demo",
+      "ctaPlayer": "Player demo",
+      "demoNote": "The demo sets up the Lionceaux de Bonamoussadi U13 in your browser, no account needed.",
+      "pitchTitle": "The Njangi goal: the ball goes through the whole team, from the keeper to BriBri's goal.",
+      "pitchCaption": "From the keeper to the goal: ten passes, eleven players, one direction."
+    },
+    "njangi": {
+      "eyebrow": "The njangi",
+      "title": "Everyone pays in, the pot goes round, everyone benefits.",
+      "p1": "In Cameroon, a njangi (also called a tontine) brings neighbours, colleagues and friends together. Each month, everyone puts their share into the same pot, and the whole pot goes to one member, in turn. Nobody keeps the money for themselves.",
+      "p2": "On the pitch, the ball is the pot. The pass is the contribution. The goal is the pot paid out.",
+      "p3": "But a pot that goes round without ever serving anything dies. So does possession without purpose. Keep the ball moving, yes, as long as it knows where it is going.",
+      "points": {
+        "give": { "title": "Everyone pays in", "body": "Every player shows for the ball, touches it, offers a solution." },
+        "circulate": { "title": "The pot goes round", "body": "The ball goes through everyone and moves the opponent." },
+        "receive": { "title": "Everyone benefits", "body": "The circulation prepares something: a broken line, an entry, a goal." }
+      },
+      "figTitle": "Six players pass the ball around a circle, each pass fills the pot, then the ball heads for goal.",
+      "figCaption": "Six players, six touches: the pot fills up, then the ball heads for goal.",
+      "pot": "the pot",
+      "goal": "goal"
+    },
+    "doors": {
+      "eyebrow": "Four doors",
+      "title": "Four doors, one idea of the game",
+      "lead": "Everyone comes in through the door that fits them. Everyone learns the same language.",
+      "series": {
+        "label": "The children's saga",
+        "heroes": "Starring {{heroes}}",
+        "meta": "Novel, ages 8 to 12 · six books planned",
+        "body": "Two Cameroonian brothers follow their parents from Douala to Maryland, then to France, Catalonia and London. In each country they learn one piece of football, and the old ball their grandmother stitched back together travels with them.",
+        "all": "All the books"
+      },
+      "methode": {
+        "label": "The coach's book",
+        "audience": "Coaches, analysts, technical directors",
+        "body": "The African game model, from grassroots to the national team: the five intentions of possession, the training week, the Njangi Index, the 2030 plan for a federation. And 50 drills with diagrams.",
+        "cta": "Read the book"
+      },
+      "app": {
+        "name": "The app",
+        "audience": "Players, coaches, analysts",
+        "body": "The method's drills, the session builder, the planned week, matches, live analysis and video. Your data stays on your device.",
+        "cta": "See what it does"
+      },
+      "mola": {
+        "name": "Mola",
+        "audience": "The agent that acts for you",
+        "body": "Tell it what you need and it does it in the app: plan the week, build a session, set up a match, write the call-up. You approve before anything is sent.",
+        "cta": "Meet Mola"
+      },
+      "free": "Free to read"
+    },
+    "features": {
+      "eyebrow": "The app",
+      "title": "One app for the whole team",
+      "lead": "Pick your role: here is what {{app}} does for you.",
+      "tabs": {
+        "players": "Players",
+        "coaches": "Coaches",
+        "analysts": "Analysts",
+        "clubs": "Clubs and federations"
+      },
+      "items": {
+        "lessons": { "title": "The 40 Ball Lessons", "body": "One lesson per chapter of the novel, with its diagram, to understand the game by playing it." },
+        "challenges": { "title": "Player challenges", "body": "Juggling, directional first touch, scanning: challenges to do on your own, and a record of your progress." },
+        "notebook": { "title": "Your Njangi notebook", "body": "Write down what you learned, like Kaydoudou in his notebook with the wax-print cover." },
+        "skills": { "title": "Your ten skills", "body": "Scanning, first touch, passing with purpose, the njangi dribble: see where you stand, from 1 to 4." },
+        "drills": { "title": "Drills with diagrams", "body": "Rondos, positional games, small and large-sided games, transitions, finishing. Filter by intention, age and day of the week." },
+        "builder": { "title": "The session builder", "body": "Put a session together in a few taps, or let {{app}} suggest one for the day and the age group." },
+        "week": { "title": "The periodised week", "body": "From MD-4 to MD-1: tension, duration, speed, activation. The game model every day, the load at the right time." },
+        "match": { "title": "Matches and lineups", "body": "Opponent, system, lineup on the pitch, a game plan for the four moments, call-ups by WhatsApp or SMS." },
+        "live": { "title": "Live analysis", "body": "Tag the match from the touchline, one tap per action. The Njangi Index updates while you tag." },
+        "report": { "title": "The match report", "body": "Score, Njangi Index and its five sub-indices, what worked, what to fix, and the drills for next week." },
+        "video": { "title": "Video analysis", "body": "Load the video from your phone, mark the moments, draw on the frame to show little but show it right." },
+        "codes": { "title": "The method's codes", "body": "Progressive pass, line broken, box entry, regain within 5 seconds: the same codes as the book." },
+        "model": { "title": "A shared game model", "body": "The same words and the same drills from U9 to the first team, even when the coach changes." },
+        "teams": { "title": "All your teams", "body": "One team per age group, each with its sessions, matches and reports." },
+        "education": { "title": "Coach education", "body": "{{methode}} as the basis for coaching courses: chapters, drill sheets, report templates." },
+        "plan2030": { "title": "The 2030 plan", "body": "Ten concrete measures for a federation, from the national model to child safeguarding." }
+      },
+      "visual": {
+        "lessonNo": "Ball Lesson no. 3",
+        "lessonTitle": "When they close you down, the ball must go.",
+        "lessonLine": "If two opponents come at you, a teammate is free somewhere.",
+        "weekTitle": "The week before Saturday's match",
+        "matchDay": "Match",
+        "load": "Load",
+        "sessions": {
+          "MD-4": "Small spaces",
+          "MD-3": "Play like the match",
+          "MD-2": "Transitions and finishing",
+          "MD-1": "Activation, set pieces"
+        },
+        "opponent": "against the Panthères",
+        "tagTitle": "The tagging pad",
+        "tagHalf": "2nd half",
+        "us": "Lionceaux",
+        "them": "Requins",
+        "tagIndex": "Live Njangi Index",
+        "pathTitle": "One idea, from grassroots to the first team",
+        "path": {
+          "a": "U6 to U9", "aT": "Play, touch, love the ball",
+          "b": "U10 to U13", "bT": "The golden age of technique: scanning, rondos",
+          "c": "U14 to U16", "cT": "Positional play, roles, transitions",
+          "d": "U17 to U19", "dT": "Performance and periodisation",
+          "e": "First team", "eT": "The national model"
+        }
+      },
+      "open": "Open in the demo"
+    },
+    "live": {
+      "eyebrow": "Live analysis",
+      "title": "The Njangi Index: possession that serves a purpose",
+      "lead": "Possession percentage lies. The Njangi Index measures, from 0 to 100, whether your team kept the ball with purpose. Tap an action and watch the index move.",
+      "example": "Example: Lionceaux U13, second half",
+      "try": "Tag an action",
+      "last": "Last action: {{label}}",
+      "reset": "Reset",
+      "outOf": "out of 100",
+      "subs": {
+        "progression": { "label": "Progression", "hint": "Lines broken, forward passes" },
+        "penetration": { "label": "Penetration", "hint": "Entries into the final third and the box" },
+        "fixation": { "label": "Fixation", "hint": "Drawing two opponents, switching play" },
+        "reprise": { "label": "Regain", "hint": "Winning the ball back within 5 seconds" },
+        "controle": { "label": "Control", "hint": "Completed passes, losses avoided" }
+      },
+      "gaugeLabel": "Njangi Index: {{v}} out of 100",
+      "cta": "See a real report in the demo"
+    },
+    "mola": {
+      "eyebrow": "Mola, the agent of {{app}}",
+      "title": "Mola does the work. You stay in charge.",
+      "p1": "“Mola” means “mate” in Cameroonian camfranglais. It welcomes you by talking and fills in your profile as you chat. Then it acts in the app with the same tools you use.",
+      "p2": "Nothing goes out without your say-so: every message waits for your approval.",
+      "can": "Things you can ask it",
+      "asks": {
+        "a": "Plan my week before Saturday's match.",
+        "b": "Build a 75 minute session for my U11s.",
+        "c": "Set up the match against Deïdo and suggest a lineup.",
+        "d": "Write the call-up for WhatsApp.",
+        "e": "Open the report from the last match."
+      },
+      "chat": {
+        "name": "Mola",
+        "status": "acting for you",
+        "statusDone": "done",
+        "user": "Plan my week before Saturday's match.",
+        "ack": "Sure, I'm on it.",
+        "steps": {
+          "a": "Match found: Saturday against the Panthères de Deïdo",
+          "b": "Four sessions created, MD-4 to MD-1",
+          "c": "Drills picked for U13s: rondos, transitions, finishing",
+          "d": "Call-up ready, waiting for your approval"
+        },
+        "done": "Your week is ready. Want to see it?",
+        "open": "See the week",
+        "replay": "Replay",
+        "input": "Message Mola"
+      },
+      "cta": "Get started with Mola"
+    },
+    "roadmap": {
+      "eyebrow": "The countdown",
+      "title": "2030 or 2034: the countdown has started",
+      "lead": "Most of the players at those World Cups are between 14 and 26 today. They are already in our neighbourhoods, our academies and our diaspora.",
+      "steps": {
+        "a": { "year": "2026", "title": "Foundations", "body": "A written game model, books and an app to pass it on." },
+        "b": { "year": "2027 to 2028", "title": "Alignment", "body": "Coaches trained in the same language, youth national teams aligned." },
+        "c": { "year": "2030", "title": "Competition", "body": "The World Cup in Morocco, Spain and Portugal, partly on African soil." },
+        "d": { "year": "2034", "title": "Summit", "body": "A star on the shirt. The dream come true." }
+      }
+    },
+    "pricing": {
+      "eyebrow": "Premium",
+      "title": "Free to start",
+      "body": "The books and the method's drills are free. Premium plans start at {{price}} a month (about {{fcfa}}).",
+      "cta": "See the plans"
+    },
+    "final": {
+      "body": "Start with a conversation with Mola: a few questions and your space is ready.",
+      "secondary": "Read the books"
+    },
+    "demoModal": {
+      "title": "Start the demo?",
+      "body": "The demo replaces the data in this browser with the Lionceaux de Bonamoussadi team. Export a backup from the settings first if you want to keep your work.",
+      "confirm": "Start the demo",
+      "busy": "Preparing the demo"
+    }
+  },
+  "shelf": {
+    "aria": "The six books of the {{series}} saga",
+    "tome": "Book {{n}}",
+    "available": "Available",
+    "soon": "Coming soon",
+    "read": "Read",
+    "pdf": "PDF",
+    "readLabel": "Read {{title}} online",
+    "pdfLabel": "Download the PDF of {{title}}"
+  },
+  "library": {
+    "docTitle": "The books",
+    "eyebrow": "Library",
+    "title": "The books",
+    "subtitle": "A saga for children, a book for coaches, one idea of the game. Both are free to read online and to download as PDFs.",
+    "frenchOnly": "The books are written in French, so chapter titles are shown in French.",
+    "read": "Read online",
+    "pdf": "Download the PDF",
+    "contents": "Contents",
+    "online": "{{n}} of {{total}} chapters online",
+    "onlineAll": "{{n}} chapters online",
+    "arriving": "Chapters on their way",
+    "arrivingBody": "The book is being written right now. Each chapter appears here as soon as it is ready, and the online reader grows at the same pace.",
+    "chapter": "Chapter {{n}}",
+    "chapterCount": "{{n}} chapters",
+    "povLabel": "Told by {{pov}}",
+    "series": {
+      "label": "The children's saga",
+      "heroes": "Starring {{heroes}}",
+      "meta": "Novel, ages 8 to 12 · six books planned",
+      "shelfTitle": "The saga in six books",
+      "shelfLead": "Six books that follow the two brothers from the neighbourhood pitch to the World Cup. Book 1 is out, the next ones are being written."
+    },
+    "tome1": {
+      "audience": "Novel, ages 8 to 12",
+      "body": "Kaydoudou, 11, the number 8 who sees everything. BriBri, 10, the winger with odd socks. The two brothers leave the red earth of Bonamoussadi to follow their parents to the United States, France, Spain and England. In each country they learn one piece of football, and the old ball stitched back together by their grandmother Mami Nyanga travels with them.",
+      "facts": {
+        "chapters": "40 chapters",
+        "parts": "5 parts, 5 countries",
+        "lessons": "40 Ball Lessons"
+      },
+      "partsTitle": "Five countries, five pieces of the Njangi",
+      "partLabel": "Part {{n}}",
+      "parts": {
+        "1": { "country": "Cameroon", "piece": "the heart", "place": "Douala and Bafoussam", "idea": "We play together, everyone pays in." },
+        "2": { "country": "United States", "piece": "the reason", "place": "Waldorf, Maryland", "idea": "Every pass must serve a purpose." },
+        "3": { "country": "France", "piece": "the eyes", "place": "Seine-et-Marne", "idea": "See before you receive, win it back fast." },
+        "4": { "country": "Spain", "piece": "the map", "place": "Catalonia", "idea": "Be in the right place, build triangles." },
+        "5": { "country": "England", "piece": "the breath", "place": "London", "idea": "Keep the ball even when it burns." }
+      },
+      "lessonsLink": "The Ball Lessons in the app"
+    },
+    "methode": {
+      "label": "The coach's book",
+      "audience": "Coaches, analysts, managers, federations",
+      "body": "The book that writes down the Njangi game model: the four moments, the five intentions of possession, the map of the pitch, the roles, youth development in Africa, the periodised week, the Njangi Index and the match report, and ten measures for a federation by 2030.",
+      "facts": {
+        "chapters": "23 chapters",
+        "parts": "7 parts",
+        "drills": "50 drills with diagrams"
+      },
+      "drillsLink": "The drills in the app",
+      "parts": {
+        "0": "Foreword",
+        "1": "The manifesto",
+        "2": "The Njangi game model",
+        "3": "From youth to pros",
+        "4": "The training week and periodisation",
+        "5": "The 50 drills",
+        "6": "Analysis",
+        "7": "The manager and the federation",
+        "8": "Appendices"
+      },
+      "partLabel": "Part {{n}}"
+    },
+    "cover": {
+      "author": "William Foteping",
+      "alt": "Cover of {{title}}",
+      "altSeries": "Cover of {{title}}, starring Kaydoudou and BriBri"
+    }
+  },
+  "pricing": {
+    "docTitle": "Premium",
+    "eyebrow": "Plans",
+    "title": "A plan for every role",
+    "subtitle": "The books and the method's drills stay free. Premium plans unlock the preparation and analysis tools, and Mola acting for you.",
+    "billing": "Billing",
+    "monthly": "Monthly",
+    "annual": "Yearly",
+    "annualHint": "2 months free",
+    "perMonth": "a month",
+    "perYear": "a year",
+    "approxMonth": "about {{v}} a month",
+    "approxYear": "about {{v}} a year",
+    "annualEq": "that is {{v}} a month",
+    "freeForever": "Free, with no time limit",
+    "onQuote": "On quote",
+    "onQuoteHint": "Depends on the number of national teams and coaches",
+    "recommended": "Recommended for coaches",
+    "desc": {
+      "free": "To discover {{app}} and learn.",
+      "player": "For the player who wants to improve.",
+      "coach": "For the coach who plans, leads and analyses.",
+      "club": "For clubs and academies, every age group.",
+      "federation": "For federations and leagues building a national model."
+    },
+    "activate": "Activate (demo)",
+    "current": "Your plan",
+    "start": "Get started",
+    "activated": "{{plan}} plan activated in demo mode. No payment was taken.",
+    "goApp": "Open the app",
+    "payments": {
+      "title": "Payments are not connected yet",
+      "body": "Mobile Money and cards are coming soon. Meanwhile, you can activate any plan in demo mode and try everything, without paying."
+    },
+    "faqTitle": "Questions",
+    "faq": {
+      "books": {
+        "q": "Are the books really free?",
+        "a": "Yes. The {{series}} saga and {{methode}} are free to read online and to download as PDFs, whatever your plan. So are the method's drills."
+      },
+      "data": {
+        "q": "Where is my data?",
+        "a": "For now, your profile, teams, sessions and matches stay on your device, in your browser. Remember to export a backup from the settings."
+      },
+      "cancel": {
+        "q": "Can I stop whenever I want?",
+        "a": "Yes, no commitment. You can go back to the free plan at any time without losing your sessions or matches."
+      },
+      "federation": {
+        "q": "How does it work for a federation?",
+        "a": "The national game model, coach education and support are built together with you. The price is set on quote."
+      },
+      "pay": {
+        "q": "How do I pay?",
+        "a": "Payments are not connected yet. Mobile Money and cards are coming. FCFA prices are a guide, at about 600 FCFA to the dollar."
+      }
+    }
+  },
+  "settings": {
+    "docTitle": "Settings",
+    "title": "Settings",
+    "subtitle": "Your profile, your teams and your data. Everything is saved on this device.",
+    "profile": {
+      "title": "Profile",
+      "name": "Name",
+      "role": "Role",
+      "lang": "Language",
+      "langFr": "Français",
+      "langEn": "English",
+      "country": "Country",
+      "countryPh": "e.g. Cameroon",
+      "city": "City",
+      "cityPh": "e.g. Douala",
+      "club": "Club or academy",
+      "save": "Save profile",
+      "saved": "Profile saved.",
+      "nameRequired": "Please enter a name."
+    },
+    "teams": {
+      "title": "Teams",
+      "lead": "The active team is the one you see in sessions, matches and analysis.",
+      "active": "Active",
+      "makeActive": "Make active",
+      "edit": "Edit",
+      "create": "New team",
+      "createTitle": "New team",
+      "editTitle": "Edit team",
+      "name": "Team name",
+      "namePh": "e.g. Lionceaux U13",
+      "ageGroup": "Age group",
+      "seniors": "Seniors",
+      "format": "Format",
+      "formatOpt": "{{n}} a side",
+      "formation": "Starting system",
+      "empty": "No team yet",
+      "emptyBody": "Create your team to plan sessions, set up matches and analyse your game.",
+      "players": "{{count}} players",
+      "players_one": "{{count}} player",
+      "players_other": "{{count}} players",
+      "created": "Team created.",
+      "updated": "Team saved.",
+      "activated": "{{name}} is now the active team."
+    },
+    "plan": {
+      "title": "Plan",
+      "current": "Current plan",
+      "see": "See the plans"
+    },
+    "data": {
+      "title": "Your data",
+      "lead": "Everything is saved in this browser. Export a backup to keep it or move it to another device.",
+      "export": "Export a backup",
+      "exportHint": "A JSON file with your profile, teams, sessions, matches, analyses and notes.",
+      "exported": "Backup exported.",
+      "import": "Restore a backup",
+      "importHint": "Replaces the data in this browser with the file's data.",
+      "importTitle": "Restore this backup?",
+      "importBody": "Backup from {{date}}, {{n}} items. All the current data in this browser will be replaced.",
+      "importConfirm": "Restore",
+      "imported": "Backup restored.",
+      "invalid": "This file is not a {{app}} backup. Choose a file exported from these settings.",
+      "reset": "Erase everything",
+      "resetHint": "Deletes the profile, teams and everything else from this browser.",
+      "resetTitle": "Erase everything?",
+      "resetBody": "The profile, teams, sessions, matches, analyses and notes in this browser will be deleted. This cannot be undone.",
+      "resetConfirm": "Erase everything",
+      "busy": "One moment"
+    },
+    "about": {
+      "title": "About",
+      "version": "Version",
+      "author": "Author",
+      "company": "Publisher",
+      "storage": "Storage",
+      "storageValue": "On this device",
+      "books": "Read the books"
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "id": "F01",
+  "family": "phase",
+  "order": 1,
+  "ages": "U14+",
+  "players": {
+    "min": 8,
+    "max": 9,
+    "fr": "8 à 9 joueurs (gardien + 3 et 2 relais contre 2, puis 3)",
+    "en": "8 to 9 players (goalkeeper + 3 and 2 receivers v 2, then 3)"
+  },
+  "space": {
+    "w": 40,
+    "h": 50
+  },
+  "duration": {
+    "fr": "4 x 4 min, 2 min de récupération",
+    "en": "4 x 4 min, 2 min rest"
+  },
+  "minutes": 22,
+  "md": [
+    "MD-3",
+    "MD-2"
+  ],
+  "intensity": "medium",
+  "intentions": [
+    "sortir",
+    "fixer",
+    "progresser"
+  ],
+  "skills": [
+    "passe",
+    "scan",
+    "controle",
+    "decision",
+    "communication"
+  ],
+  "pieces": [
+    "la carte",
+    "la raison"
+  ],
+  "fr": {
+    "title": "Sortie à trois contre deux",
+    "subtitle": "Gardien, deux centraux et pivot contre deux attaquants : trouver le relais libre",
+    "objective": "Construire depuis le gardien en supériorité, à trois contre deux puis contre trois, et trouver un intérieur ou un latéral libre au-delà de la première ligne. Le gardien et les centraux apprennent à attirer pour libérer.",
+    "organisation": [
+      "Zone de 40 x 50 m depuis la ligne de but, surface comprise, un grand but avec gardien.",
+      "En possession : le gardien, deux centraux (4 et 5) et le pivot (6).",
+      "Au-delà de 25 m, un intérieur (8) et un latéral (2) servent de relais ; les attaquants n'y entrent pas.",
+      "En face, deux attaquants, puis un troisième qui entre au signal.",
+      "Chaque action part d'une sortie de but ; 6 à 8 actions par série, puis on change d'attaquants."
+    ],
+    "rules": [
+      "Relais qui reçoit au-delà de 25 m et se retourne face au jeu : 1 point.",
+      "Central qui franchit la ligne des 25 m en conduite : 1 point.",
+      "Attaquants qui récupèrent : 8 secondes pour marquer dans le grand but, 2 points.",
+      "Touches libres ; le gardien peut jouer au pied partout dans sa surface.",
+      "Pas de long ballon par-dessus les attaquants."
+    ],
+    "coaching": [
+      "Centraux, ouvrez-vous très large : chaque attaquant doit choisir entre vous et le pivot.",
+      "Pivot, place-toi dans le dos des attaquants, entre les deux, et bouge avec le ballon.",
+      "Gardien, joue vers le central que l'attaquant va presser : c'est lui qui libère le pivot.",
+      "Regarde l'attaquant avant de recevoir : s'il vient sur toi, le joueur libre est derrière lui.",
+      "Relais, reçois de profil, prêt à jouer vers l'avant dès le premier contrôle."
+    ],
+    "progressions": [
+      "Le troisième attaquant entre : 4 contre 3, le gardien devient le joueur en plus.",
+      "Deux touches maximum pour les centraux et le pivot.",
+      "Un milieu adverse défend sur les relais au-delà de 25 m."
+    ],
+    "regressions": [
+      "Un seul attaquant presse, l'autre marche.",
+      "Zone élargie à 55 m pour donner plus de temps.",
+      "L'entraîneur donne le ballon au gardien à la main, sans pression immédiate."
+    ],
+    "measure": "Part des actions qui trouvent un relais face au jeu, et pertes dans la surface (objectif : aucune). L'analyste note aussi combien de fois le gardien a été le joueur en plus.",
+    "story": "À la Granja del Mar, Nil Soler, le champion de la relance propre, montre aux frères qu'un central bien ouvert oblige l'attaquant à choisir."
+  },
+  "en": {
+    "title": "Building Out 3 v 2",
+    "subtitle": "Goalkeeper, two centre-backs and pivot against two forwards: find the free receiver",
+    "objective": "Build from the goalkeeper with a spare player, 3 v 2 and then against three, and find an inside midfielder or a full-back free beyond the first line. The goalkeeper and centre-backs learn to draw a player to free another.",
+    "organisation": [
+      "40 x 50 m area from the goal line, box included, one full-size goal with a goalkeeper.",
+      "In possession: the goalkeeper, two centre-backs (4 and 5) and the pivot (6).",
+      "Beyond 25 m, an inside midfielder (8) and a full-back (2) act as receivers; the forwards may not go there.",
+      "Against them, two forwards, then a third who comes on at a signal.",
+      "Every move starts with a goal kick; 6 to 8 moves per set, then change the forwards."
+    ],
+    "rules": [
+      "A receiver who takes the ball beyond 25 m and turns to face play: 1 point.",
+      "A centre-back who dribbles over the 25 m line: 1 point.",
+      "Forwards who win the ball: 8 seconds to score in the big goal, 2 points.",
+      "Unlimited touches; the goalkeeper may play with his feet anywhere in the box.",
+      "No long ball over the forwards."
+    ],
+    "coaching": [
+      "Centre-backs, split very wide: each forward must choose between you and the pivot.",
+      "Pivot, stand behind the forwards, between the two of them, and move with the ball.",
+      "Goalkeeper, play to the centre-back the forward will press: he is the one who frees the pivot.",
+      "Look at the forward before you receive: if he comes at you, the free player is behind him.",
+      "Receivers, take it side-on, ready to play forward from the first touch."
+    ],
+    "progressions": [
+      "The third forward comes on: 4 v 3, the goalkeeper becomes the extra player.",
+      "Two touches maximum for the centre-backs and the pivot.",
+      "An opposing midfielder defends against the receivers beyond 25 m."
+    ],
+    "regressions": [
+      "Only one forward presses, the other walks.",
+      "Area widened to 55 m to give more time.",
+      "The coach rolls the ball to the goalkeeper, with no immediate pressure."
+    ],
+    "measure": "Share of moves that find a receiver facing play, and balls lost in the box (target: none). The analyst also notes how often the goalkeeper was the extra player.",
+    "story": "At La Granja del Mar, Nil Soler, the master of the clean build-up, shows the brothers that a well-split centre-back forces the forward to choose."
+  },
+  "diagram": {
+    "view": "grid",
+    "w": 40,
+    "h": 50,
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 2.4,
+        "y": 25,
+        "label": "1"
+      },
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 6,
+        "y": 8,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 6,
+        "y": 42,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 20,
+        "y": 26,
+        "label": "6"
+      },
+      {
+        "id": "i8",
+        "team": "a",
+        "x": 31,
+        "y": 14,
+        "label": "8"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 31,
+        "y": 44,
+        "label": "2"
+      },
+      {
+        "id": "b9",
+        "team": "b",
+        "x": 13,
+        "y": 18
+      },
+      {
+        "id": "b10",
+        "team": "b",
+        "x": 9.5,
+        "y": 30.5
+      }
+    ],
+    "ball": "gk",
+    "arrows": [
+      {
+        "from": "gk",
+        "to": "c5",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "b10",
+        "to": [
+          7.2,
+          38.2
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "c5",
+        "to": "p6",
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": "p6",
+        "to": "i8",
+        "kind": "pass",
+        "n": 4
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 4.8,
+        "w": 16.5,
+        "h": 40.4,
+        "tone": "soft"
+      },
+      {
+        "x": 25,
+        "y": 0,
+        "w": 15,
+        "h": 50,
+        "tone": "a",
+        "label": "relais"
+      }
+    ],
+    "goals": [
+      {
+        "x": 0.7,
+        "y": 25,
+        "side": "left",
+        "size": "full"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "grid",
+    "w": 40,
+    "h": 50,
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 2.4,
+        "y": 25,
+        "label": "1"
+      },
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 6,
+        "y": 8,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 6,
+        "y": 42,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 18,
+        "y": 25,
+        "label": "6"
+      },
+      {
+        "id": "i8",
+        "team": "a",
+        "x": 31,
+        "y": 14,
+        "label": "8"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 31,
+        "y": 44,
+        "label": "2"
+      },
+      {
+        "id": "b9",
+        "team": "b",
+        "x": 14,
+        "y": 15
+      },
+      {
+        "id": "b10",
+        "team": "b",
+        "x": 14,
+        "y": 33
+      },
+      {
+        "id": "b8",
+        "team": "b",
+        "x": 22,
+        "y": 26
+      }
+    ],
+    "ball": "c4",
+    "arrows": [
+      {
+        "from": "b9",
+        "to": [
+          8.6,
+          10.2
+        ],
+        "kind": "press",
+        "n": 1
+      },
+      {
+        "from": "c4",
+        "to": "gk",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "b10",
+        "to": [
+          5.6,
+          27.6
+        ],
+        "kind": "press",
+        "n": 3
+      },
+      {
+        "from": "gk",
+        "to": "c5",
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": "c5",
+        "to": "l2",
+        "kind": "pass",
+        "n": 5
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 4.8,
+        "w": 16.5,
+        "h": 40.4,
+        "tone": "soft"
+      },
+      {
+        "x": 25,
+        "y": 0,
+        "w": 15,
+        "h": 50,
+        "tone": "a",
+        "label": "relais"
+      }
+    ],
+    "goals": [
+      {
+        "x": 0.7,
+        "y": 25,
+        "side": "left",
+        "size": "full"
+      }
+    ]
+  }
+}

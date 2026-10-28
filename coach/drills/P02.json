@@ -1,0 +1,120 @@
+{
+  "id": "P02",
+  "family": "position",
+  "order": 2,
+  "ages": "U13+",
+  "players": { "min": 12, "max": 12, "fr": "12 joueurs (5 contre 5 + 2 neutres)", "en": "12 players (5 v 5 + 2 neutrals)" },
+  "space": { "w": 40, "h": 30 },
+  "duration": { "fr": "4 x 5 min, 2 min de récupération", "en": "4 x 5 min, 2 min rest" },
+  "minutes": 28,
+  "md": ["MD-3"],
+  "intensity": "high",
+  "intentions": ["fixer", "progresser"],
+  "skills": ["scan", "passe", "decision", "appels"],
+  "pieces": ["la carte"],
+  "fr": {
+    "title": "Les cinq couloirs",
+    "subtitle": "5 contre 5 + 2 neutres : occuper la largeur pour renverser",
+    "objective": "Garder le ballon en occupant les cinq couloirs, sans jamais placer deux partenaires dans le même couloir à la même hauteur. Le point vient du renversement d'un couloir extérieur à l'autre : la largeur étire, le renversement punit.",
+    "organisation": [
+      "Terrain de 40 x 30 m divisé en cinq couloirs de 6 m, marqués par des coupelles.",
+      "Les couloirs : deux extérieurs, deux demi-espaces, l'axe.",
+      "Deux équipes de 5 et 2 neutres qui jouent avec l'équipe en possession.",
+      "L'entraîneur surveille l'occupation, un adjoint compte les points."
+    ],
+    "rules": [
+      "Trois touches maximum, deux pour les neutres.",
+      "Deux joueurs de la même équipe dans un couloir à la même hauteur : ballon à l'adversaire.",
+      "Ballon reçu dans un couloir extérieur, puis dans l'autre couloir extérieur, sans perte : 1 point.",
+      "Renversement réalisé en 3 passes ou moins : 2 points.",
+      "La règle d'occupation ne s'applique pas aux neutres."
+    ],
+    "coaching": [
+      "Avant de recevoir, vérifie ton couloir : si un partenaire y est, change de hauteur.",
+      "Les joueurs des couloirs extérieurs restent larges, pied sur la ligne : ils étirent le bloc.",
+      "Les demi-espaces se placent entre deux adversaires, prêts à faire le relais.",
+      "Fixe d'un côté avec des passes courtes, puis renverse vite et au sol.",
+      "Le receveur du renversement contrôle vers l'intérieur pour enchaîner."
+    ],
+    "progressions": [
+      "Le renversement ne compte qu'en 2 passes maximum.",
+      "Un seul neutre.",
+      "Terrain de 35 x 30 m : moins de temps pour renverser.",
+      "L'équipe qui défend marque 1 point si elle récupère et enchaîne 3 passes."
+    ],
+    "regressions": [
+      "Coupelles sur toute la longueur des couloirs pour les rendre visibles.",
+      "Trois neutres.",
+      "Pas de sanction d'occupation : l'entraîneur nomme seulement les fautes."
+    ],
+    "measure": "Renversements réussis par série et fautes d'occupation. Une équipe qui a compris la carte renverse souvent et n'aligne presque jamais deux joueurs.",
+    "story": "En Catalogne, BriBri colle à la ligne et s'ennuie, puis découvre que sa largeur ouvre un espace immense au milieu."
+  },
+  "en": {
+    "title": "The Five Lanes",
+    "subtitle": "5 v 5 + 2 neutrals: occupy the width to switch play",
+    "objective": "Keep the ball while occupying all five lanes, never with two teammates in the same lane at the same height. Points come from switching from one outside lane to the other: width stretches, the switch punishes.",
+    "organisation": [
+      "40 x 30 m area split into five 6 m lanes, marked with disc cones.",
+      "The lanes: two wide lanes, two half-spaces, the central lane.",
+      "Two teams of 5 and 2 neutrals who play for the team in possession.",
+      "The coach watches the spacing, an assistant keeps the score."
+    ],
+    "rules": [
+      "Three touches maximum, two for the neutrals.",
+      "Two teammates in the same lane at the same height: ball to the other team.",
+      "Ball received in one wide lane, then in the other wide lane, without losing it: 1 point.",
+      "Switch completed in 3 passes or fewer: 2 points.",
+      "The spacing rule does not apply to the neutrals."
+    ],
+    "coaching": [
+      "Before you receive, check your lane: if a teammate is there, change height.",
+      "Wide players stay wide, foot on the line: they stretch the block.",
+      "Half-space players sit between two opponents, ready to link play.",
+      "Pin them on one side with short passes, then switch fast and on the ground.",
+      "The player receiving the switch takes his first touch inside to keep play moving."
+    ],
+    "progressions": [
+      "The switch only counts in 2 passes or fewer.",
+      "Only one neutral.",
+      "35 x 30 m area: less time to switch.",
+      "The defending team scores 1 point if it wins the ball and strings 3 passes."
+    ],
+    "regressions": [
+      "Cones along the full length of each lane to make them visible.",
+      "Three neutrals.",
+      "No penalty for spacing: the coach just names the mistakes."
+    ],
+    "measure": "Successful switches per set and spacing mistakes. A team that understands the map switches often and almost never lines up two players.",
+    "story": "In Catalonia, BriBri hugs the touchline and gets bored, then finds out that his width opens a huge space in the middle."
+  },
+  "diagram": {
+    "view": "grid", "w": 40, "h": 30,
+    "zones": [
+      { "x": 0, "y": 0, "w": 40, "h": 6, "tone": "a", "label": "extérieur" },
+      { "x": 0, "y": 12, "w": 40, "h": 6, "tone": "soft", "label": "axe" },
+      { "x": 0, "y": 24, "w": 40, "h": 6, "tone": "a", "label": "extérieur" }
+    ],
+    "players": [
+      { "id": "a1", "team": "a", "x": 14, "y": 3 },
+      { "id": "a2", "team": "a", "x": 21, "y": 9 },
+      { "id": "a3", "team": "a", "x": 11, "y": 15 },
+      { "id": "a4", "team": "a", "x": 24, "y": 21 },
+      { "id": "a5", "team": "a", "x": 31, "y": 27 },
+      { "id": "n1", "team": "n", "x": 32, "y": 14 },
+      { "id": "n2", "team": "n", "x": 5, "y": 21 },
+      { "id": "r1", "team": "b", "x": 17.5, "y": 5.5 },
+      { "id": "r2", "team": "b", "x": 16, "y": 10 },
+      { "id": "r3", "team": "b", "x": 21, "y": 15 },
+      { "id": "r4", "team": "b", "x": 29, "y": 9 },
+      { "id": "r5", "team": "b", "x": 30, "y": 21.5 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "a3", "kind": "pass", "n": 1 },
+      { "from": "a3", "to": "a4", "kind": "pass", "n": 2 },
+      { "from": "a4", "to": "a5", "kind": "pass", "n": 3 }
+    ]
+  },
+  "diagram2": null
+}

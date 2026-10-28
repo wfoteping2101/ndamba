@@ -1,0 +1,116 @@
+{
+  "id": "P04",
+  "family": "position",
+  "order": 4,
+  "ages": "U14+",
+  "players": { "min": 10, "max": 12, "fr": "10 à 12 joueurs (gardien + 4 relanceurs et 2 relais contre 3 attaquants)", "en": "10 to 12 players (keeper + 4 builders and 2 link players against 3 attackers)" },
+  "space": { "w": 40, "h": 50 },
+  "duration": { "fr": "4 x 4 min, 2 min de récupération", "en": "4 x 4 min, 2 min rest" },
+  "minutes": 22,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["sortir", "progresser"],
+  "skills": ["passe", "conduite", "scan", "decision"],
+  "pieces": ["la carte", "la raison"],
+  "fr": {
+    "title": "Sortir à quatre",
+    "subtitle": "Gardien + 4 contre 3 : traverser la première ligne",
+    "objective": "Construire depuis le gardien face à trois attaquants et faire arriver le ballon au-delà de leur ligne, dans les pieds d'un relais. On entraîne la sortie qui attire pour libérer, sans peur de la perte.",
+    "organisation": [
+      "Rectangle de 40 x 50 m depuis la ligne de but : 30 m pour la sortie, puis une zone relais de 10 m.",
+      "Un grand but avec gardien, deux centraux (4 et 5) et deux latéraux (2 et 3).",
+      "Deux relais, le pivot (6) et un intérieur (8), dans la zone relais ; les attaquants n'y entrent pas.",
+      "3 attaquants pressent ; chaque action part d'une passe de l'entraîneur au gardien."
+    ],
+    "rules": [
+      "Libre en touches ; le gardien peut jouer au pied partout dans sa surface.",
+      "Relais qui reçoit au-delà de la ligne des attaquants et contrôle face au jeu : 1 point.",
+      "Conduite d'un central jusque dans la zone relais : 1 point.",
+      "Attaquants qui récupèrent : ils ont 8 secondes pour marquer dans le grand but, 2 points.",
+      "Long ballon du gardien par-dessus les attaquants : interdit dans les deux premières séries."
+    ],
+    "coaching": [
+      "Centraux, ouvrez-vous jusqu'aux limites de la surface : obligez les attaquants à choisir.",
+      "Gardien, sois une solution : place-toi pour offrir la passe en retrait sous un angle.",
+      "Joue vers l'attaquant pour l'attirer, puis à côté de lui quand il s'engage.",
+      "Central libre : conduis vers l'avant jusqu'à ce qu'un adversaire sorte sur toi.",
+      "Relais, bougez dans les intervalles entre deux attaquants et recevez de profil."
+    ],
+    "progressions": [
+      "Un quatrième attaquant entre au signal : 5 contre 4 avec le gardien.",
+      "Deux touches maximum pour les centraux.",
+      "Les relais doivent jouer vers l'avant dès leur premier contact.",
+      "Zone de sortie réduite à 25 m."
+    ],
+    "regressions": [
+      "Deux attaquants seulement.",
+      "Les attaquants pressent d'abord à 50 %, puis à pleine vitesse.",
+      "Le long ballon est autorisé une fois par action pour relâcher la pression."
+    ],
+    "measure": "Pourcentage d'actions qui atteignent un relais et nombre de pertes dans les 30 premiers mètres. L'analyste peut aussi compter les conduites de centraux qui fixent un attaquant.",
+    "story": "Le gardien et les centraux versent les premières parts du njangi : sans une sortie propre, le ballon ne voyage pas."
+  },
+  "en": {
+    "title": "Build Out with Four",
+    "subtitle": "Keeper + 4 v 3: get past the first line",
+    "objective": "Build from the keeper against three attackers and get the ball beyond their line into a link player's feet. It trains build-up play that draws pressure to free a teammate, without fear of losing the ball.",
+    "organisation": [
+      "40 x 50 m area from the goal line: 30 m to build out, then a 10 m link zone.",
+      "A full goal with a keeper, two centre backs (4 and 5) and two full backs (2 and 3).",
+      "Two link players, the pivot (6) and a central midfielder (8), in the link zone; attackers may not enter it.",
+      "3 attackers press; every action starts with the coach passing to the keeper."
+    ],
+    "rules": [
+      "Unlimited touches; the keeper may play with his feet anywhere in his box.",
+      "A link player who receives beyond the attackers' line and controls facing forward: 1 point.",
+      "A centre back dribbling into the link zone: 1 point.",
+      "Attackers who win the ball have 8 seconds to score in the full goal: 2 points.",
+      "No long ball from the keeper over the attackers in the first two sets."
+    ],
+    "coaching": [
+      "Centre backs, split as wide as the edges of the box: make the attackers choose.",
+      "Keeper, be an option: set yourself to offer the back pass at an angle.",
+      "Play towards the attacker to draw him, then past him once he commits.",
+      "Free centre back: carry the ball forward until an opponent steps out to you.",
+      "Link players, move in the gaps between two attackers and receive side-on."
+    ],
+    "progressions": [
+      "A fourth attacker comes in on the call: 5 v 4 with the keeper.",
+      "Two touches maximum for the centre backs.",
+      "Link players must play forward with their first touch.",
+      "Shrink the build-out zone to 25 m."
+    ],
+    "regressions": [
+      "Only two attackers.",
+      "Attackers press at half speed first, then full speed.",
+      "One long ball allowed per action to release the pressure."
+    ],
+    "measure": "Share of actions that reach a link player and balls lost in the first 30 metres. The analyst can also count centre back carries that pin an attacker.",
+    "story": "The keeper and centre backs pay the first shares into the njangi: without a clean build-out, the ball cannot travel."
+  },
+  "diagram": {
+    "view": "grid", "w": 40, "h": 50,
+    "goals": [{ "x": 0, "y": 25, "side": "right", "size": "full" }],
+    "zones": [{ "x": 30, "y": 0, "w": 10, "h": 50, "tone": "a", "label": "relais" }],
+    "players": [
+      { "id": "gk", "team": "gk", "x": 1.6, "y": 25, "label": "1" },
+      { "id": "c4", "team": "a", "x": 7, "y": 15, "label": "4" },
+      { "id": "c5", "team": "a", "x": 7, "y": 35, "label": "5" },
+      { "id": "l3", "team": "a", "x": 17, "y": 4, "label": "3" },
+      { "id": "l2", "team": "a", "x": 17, "y": 46, "label": "2" },
+      { "id": "s6", "team": "a", "x": 33, "y": 22, "label": "6" },
+      { "id": "s8", "team": "a", "x": 35, "y": 36, "label": "8" },
+      { "id": "b9", "team": "b", "x": 13, "y": 24 },
+      { "id": "b7", "team": "b", "x": 16, "y": 12 },
+      { "id": "b11", "team": "b", "x": 17, "y": 39 }
+    ],
+    "ball": "c5",
+    "arrows": [
+      { "from": "gk", "to": "c5", "kind": "pass", "n": 1 },
+      { "from": "b9", "to": [9.4, 30], "kind": "press", "n": 2 },
+      { "from": "c5", "to": "s6", "kind": "pass", "n": 3 }
+    ],
+    "labels": [{ "x": 14, "y": 19.8, "text": "ligne des attaquants" }]
+  },
+  "diagram2": null
+}

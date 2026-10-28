@@ -35,7 +35,7 @@ const ROSTER: [string, number, string, number, 'R' | 'L' | 'B', number][] = [
   ['Rodrigue Ambassa', 16, 'GK', 2014, 'R', 2],
 ]
 
-/** Builds a realistic tag stream for a played match (used by the report demo). */
+/** Builds a realistic tag stream for a played match (used by the report demo). Tuned for a mid-band Indice (around 60 to 65, « Njangi en construction ») with Fixation as the clear weak point, so the report has something to teach. */
 function demoEvents(matchId: string, players: Player[]): MatchEvent[] {
   const out: MatchEvent[] = []
   let r = 11
@@ -47,19 +47,19 @@ function demoEvents(matchId: string, players: Player[]): MatchEvent[] {
     let t = 5
     while (t < 35 * 60) {
       // one possession of ours
-      const passes = 2 + Math.floor(rnd() * 9)
+      const passes = 2 + Math.floor(rnd() * 5)
       for (let i = 0; i < passes; i++) {
         t += 3 + rnd() * 5
         push(half, t, 'PASS_OK')
-        if (rnd() < 0.22) push(half, t + 1, 'PROG')
-        if (rnd() < 0.14) push(half, t + 1, 'LINE')
+        if (rnd() < 0.18) push(half, t + 1, 'PROG')
+        if (rnd() < 0.09) push(half, t + 1, 'LINE')
       }
-      if (rnd() < 0.18) push(half, t + 2, 'FIX2')
-      if (rnd() < 0.12) push(half, t + 3, 'SWITCH')
-      if (rnd() < 0.45) { push(half, t + 4, 'FINAL3'); if (rnd() < 0.45) { push(half, t + 6, 'BOX'); if (rnd() < 0.5) { push(half, t + 7, 'SHOT'); if (rnd() < 0.5) push(half, t + 7, 'SHOT_IN') } } }
+      if (rnd() < 0.10) push(half, t + 2, 'FIX2')
+      if (rnd() < 0.06) push(half, t + 3, 'SWITCH')
+      if (rnd() < 0.38) { push(half, t + 4, 'FINAL3'); if (rnd() < 0.35) { push(half, t + 6, 'BOX'); if (rnd() < 0.6) { push(half, t + 7, 'SHOT'); if (rnd() < 0.5) push(half, t + 7, 'SHOT_IN') } } else if (rnd() < 0.22) { push(half, t + 6, 'SHOT'); if (rnd() < 0.35) push(half, t + 6, 'SHOT_IN') } }
       t += 8
       push(half, t, rnd() < 0.6 ? 'PASS_LOST' : 'LOSS')
-      if (rnd() < 0.5) { if (rnd() < 0.55) { push(half, t + 4, 'REGAIN5'); continue } }
+      if (rnd() < 0.5) { if (rnd() < 0.42) { push(half, t + 4, 'REGAIN5'); continue } }
       // their possession
       t += 20 + rnd() * 40
       if (rnd() < 0.2) push(half, t - 5, 'SHOT', 'them')

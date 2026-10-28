@@ -1,0 +1,418 @@
+{
+  "id": "L06",
+  "family": "lsg",
+  "order": 6,
+  "ages": "U15+",
+  "players": {
+    "min": 22,
+    "max": 22,
+    "fr": "22 joueurs (10 contre 10 + 2 gardiens)",
+    "en": "22 players (10 v 10 + 2 goalkeepers)"
+  },
+  "space": {
+    "w": 105,
+    "h": 68
+  },
+  "duration": {
+    "fr": "3 x 10 min, 3 min de récupération",
+    "en": "3 x 10 min, 3 min rest"
+  },
+  "minutes": 36,
+  "md": [
+    "MD-3"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "respirer",
+    "fixer",
+    "reprendre"
+  ],
+  "skills": [
+    "contre-pression",
+    "passe",
+    "scan",
+    "decision",
+    "communication"
+  ],
+  "pieces": [
+    "la carte",
+    "le souffle"
+  ],
+  "fr": {
+    "title": "Le terrain penche",
+    "subtitle": "10 contre 10 : chaque minute dans le dernier tiers adverse rapporte un point",
+    "objective": "Installer la possession dans le dernier tiers adverse et l'y garder, par la circulation et la contre-pression. On rend visible le field tilt : la part de la possession jouée dans le dernier tiers.",
+    "organisation": [
+      "Terrain entier, ou 90 x 64 m pour les U15 ; les deux derniers tiers sont marqués par des coupelles.",
+      "Deux équipes de 10 joueurs de champ et un gardien.",
+      "Un adjoint par équipe, chronomètre en main, au bord du dernier tiers adverse.",
+      "Le chrono tourne quand l'équipe a le ballon dans ce tiers ; il s'arrête quand le ballon en sort ou est perdu."
+    ],
+    "rules": [
+      "Chaque minute cumulée de possession dans le dernier tiers adverse rapporte 1 point.",
+      "Un but vaut 2 points.",
+      "Ballon repris dans les 5 secondes sans sortir du tiers : le chrono continue.",
+      "Un long ballon ne lance pas le chrono : il faut une passe contrôlée ou une conduite dans le tiers.",
+      "Règles normales, hors-jeu compris ; l'adjoint annonce chaque point à voix haute."
+    ],
+    "coaching": [
+      "Entrez dans le tiers à plusieurs : un joueur seul ne fait pas pencher le terrain.",
+      "Circule autour du bloc, de la largeur vers l'intérieur, sans forcer : le chrono tourne pour toi.",
+      "Défense de repos haute, au bord du tiers : c'est elle qui ramasse les ballons repoussés.",
+      "À la perte, reprends tout de suite : cinq secondes pour garder le terrain penché.",
+      "Posséder ne suffit pas : quand la passe vers la surface s'ouvre, joue-la."
+    ],
+    "progressions": [
+      "Le chrono ne tourne que si au moins 5 joueurs de l'équipe sont dans le tiers.",
+      "Deux touches maximum dans le dernier tiers.",
+      "Le chrono s'arrête aussi après 30 secondes sans tir."
+    ],
+    "regressions": [
+      "Le point tombe toutes les 30 secondes cumulées.",
+      "Un joker joue avec l'équipe en possession.",
+      "Le dernier tiers est agrandi à 40 m."
+    ],
+    "measure": "Temps de possession de chaque équipe dans le dernier tiers adverse, divisé par le temps total des deux équipes dans ces tiers : c'est le field tilt. À relier aux récupérations en moins de 5 secondes dans ce tiers.",
+    "story": "À Waldorf, Marcus Bell montre sur sa tablette que le terrain a penché du côté de l'équipe qui reprenait le ballon le plus vite."
+  },
+  "en": {
+    "title": "Tilting the Pitch",
+    "subtitle": "10 v 10: every minute in the opposition final third earns a point",
+    "objective": "Set up possession in the opposition final third and keep it there, through ball circulation and counter-pressing. It makes field tilt visible: the share of possession played in the final third.",
+    "organisation": [
+      "Full pitch, or 90 x 64 m for U15s; both final thirds are marked with disc cones.",
+      "Two teams of 10 outfield players and a goalkeeper.",
+      "One assistant per team, stopwatch in hand, beside the opposition final third.",
+      "The clock runs while the team has the ball in that third; it stops when the ball leaves it or is lost."
+    ],
+    "rules": [
+      "Every cumulative minute of possession in the opposition final third earns 1 point.",
+      "A goal is worth 2 points.",
+      "Ball won back within 5 seconds without leaving the third: the clock keeps running.",
+      "A long ball does not start the clock: it takes a controlled pass or a dribble into the third.",
+      "Normal rules, offside included; the assistant calls out every point."
+    ],
+    "coaching": [
+      "Go into the third in numbers: one player alone does not tilt the pitch.",
+      "Move the ball around the block, from wide to inside, without forcing it: the clock is running for you.",
+      "High rest defence, on the edge of the third: they pick up the cleared balls.",
+      "When you lose it, win it back at once: five seconds to keep the pitch tilted.",
+      "Having the ball is not enough: when the pass into the box opens, play it."
+    ],
+    "progressions": [
+      "The clock only runs if at least 5 players of the team are in the third.",
+      "Two touches maximum in the final third.",
+      "The clock also stops after 30 seconds without a shot."
+    ],
+    "regressions": [
+      "A point every 30 cumulative seconds.",
+      "A joker plays with the team in possession.",
+      "The final third is extended to 40 m."
+    ],
+    "measure": "Each team's possession time in the opposition final third, divided by both teams' total time in those thirds: that is field tilt. Link it to the number of regains within 5 seconds in that third.",
+    "story": "In Waldorf, Marcus Bell shows on his tablet that the pitch tilted towards the team that won the ball back fastest."
+  },
+  "diagram": {
+    "view": "full",
+    "players": [
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 57,
+        "y": 26,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 57,
+        "y": 44,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 66,
+        "y": 35,
+        "label": "6"
+      },
+      {
+        "id": "l3",
+        "team": "a",
+        "x": 75,
+        "y": 10,
+        "label": "3"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 80,
+        "y": 24,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 83,
+        "y": 43,
+        "label": "10"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 93,
+        "y": 29,
+        "label": "9"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 91,
+        "y": 61,
+        "label": "7"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 74,
+        "y": 57,
+        "label": "2"
+      },
+      {
+        "id": "bd1",
+        "team": "b",
+        "x": 97,
+        "y": 19
+      },
+      {
+        "id": "bd2",
+        "team": "b",
+        "x": 98,
+        "y": 36
+      },
+      {
+        "id": "bd3",
+        "team": "b",
+        "x": 96,
+        "y": 49
+      },
+      {
+        "id": "bm1",
+        "team": "b",
+        "x": 88,
+        "y": 31
+      },
+      {
+        "id": "bm2",
+        "team": "b",
+        "x": 89,
+        "y": 46
+      },
+      {
+        "id": "bf",
+        "team": "b",
+        "x": 64,
+        "y": 47
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 102.5,
+        "y": 34
+      }
+    ],
+    "ball": "l3",
+    "arrows": [
+      {
+        "from": "l3",
+        "to": "p8",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "p8",
+        "to": "p10",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "p10",
+        "to": "p7",
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": "l2",
+        "to": [
+          84,
+          65
+        ],
+        "kind": "run",
+        "n": 4
+      }
+    ],
+    "zones": [
+      {
+        "x": 70,
+        "y": 0,
+        "w": 35,
+        "h": 68,
+        "tone": "a",
+        "label": "dernier tiers"
+      }
+    ],
+    "labels": [
+      {
+        "x": 40,
+        "y": 8,
+        "text": "le chrono tourne"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "full",
+    "players": [
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 58,
+        "y": 28,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 60,
+        "y": 50,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 70,
+        "y": 36,
+        "label": "6"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 79,
+        "y": 24,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 79,
+        "y": 40,
+        "label": "10"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 94,
+        "y": 32,
+        "label": "9"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 95,
+        "y": 61,
+        "label": "7"
+      },
+      {
+        "id": "bd2",
+        "team": "b",
+        "x": 99,
+        "y": 40
+      },
+      {
+        "id": "bd3",
+        "team": "b",
+        "x": 98,
+        "y": 53
+      },
+      {
+        "id": "bm1",
+        "team": "b",
+        "x": 87,
+        "y": 28
+      },
+      {
+        "id": "bm2",
+        "team": "b",
+        "x": 88,
+        "y": 48
+      },
+      {
+        "id": "bf",
+        "team": "b",
+        "x": 67,
+        "y": 53
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 102.5,
+        "y": 34
+      }
+    ],
+    "ball": "bm2",
+    "arrows": [
+      {
+        "from": "p10",
+        "to": [
+          85.4,
+          46
+        ],
+        "kind": "press",
+        "n": 1
+      },
+      {
+        "from": "p9",
+        "to": [
+          89.6,
+          44.6
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "p7",
+        "to": [
+          90,
+          51.6
+        ],
+        "kind": "press",
+        "n": 3
+      },
+      {
+        "from": "p6",
+        "to": [
+          76.5,
+          49
+        ],
+        "kind": "run",
+        "n": 4
+      }
+    ],
+    "zones": [
+      {
+        "x": 70,
+        "y": 0,
+        "w": 35,
+        "h": 68,
+        "tone": "a",
+        "label": "dernier tiers"
+      }
+    ],
+    "labels": [
+      {
+        "x": 40,
+        "y": 8,
+        "text": "le chrono continue"
+      }
+    ]
+  }
+}

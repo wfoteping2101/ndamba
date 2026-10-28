@@ -1,0 +1,534 @@
+{
+  "quote": "« {{text}} »",
+  "landing": {
+    "hero": {
+      "lead": "Une saga pour les enfants, un livre pour les entraîneurs, une application pour toute l'équipe, et Mola, l'agent qui travaille avec vous. Une seule idée du jeu, du terrain de quartier à la sélection nationale.",
+      "ctaStart": "Commencer avec Mola",
+      "ctaDemo": "Essayer la démo",
+      "ctaPlayer": "Démo joueur",
+      "demoNote": "La démo installe les Lionceaux de Bonamoussadi U13 dans votre navigateur, sans compte.",
+      "pitchTitle": "Le but du Njangi : le ballon passe par toute l'équipe, du gardien jusqu'au but de BriBri.",
+      "pitchCaption": "Du gardien au but : dix passes, onze joueurs, une seule direction."
+    },
+    "njangi": {
+      "eyebrow": "Le njangi",
+      "title": "Chacun verse, la caisse circule, tout le monde touche.",
+      "p1": "Au Cameroun, le njangi (on dit aussi la tontine) réunit des voisins, des collègues, des amis. Chaque mois, chacun verse sa part dans la même caisse, et la caisse entière va à un membre, à tour de rôle. Personne ne garde l'argent pour lui.",
+      "p2": "Sur le terrain, le ballon est la caisse. La passe est la cotisation. Le but, c'est la caisse touchée.",
+      "p3": "Mais une caisse qui tourne sans jamais servir à rien finit par mourir. Une possession sans intention aussi. Faire circuler le ballon, oui, à condition qu'il sache où il va.",
+      "points": {
+        "give": {
+          "title": "Chacun verse",
+          "body": "Chaque joueur se montre, touche le ballon, offre une solution."
+        },
+        "circulate": {
+          "title": "La caisse circule",
+          "body": "Le ballon passe par tout le monde et déplace l'adversaire."
+        },
+        "receive": {
+          "title": "Tout le monde touche",
+          "body": "La circulation prépare quelque chose : une ligne cassée, une entrée, un but."
+        }
+      },
+      "figTitle": "Six joueurs se passent le ballon en cercle, chaque passe remplit la caisse, puis le ballon part vers le but.",
+      "figCaption": "Six joueurs, six touches : la caisse se remplit, puis le ballon part vers le but.",
+      "pot": "la caisse",
+      "goal": "but"
+    },
+    "doors": {
+      "eyebrow": "Quatre portes",
+      "title": "Quatre portes, une même idée du jeu",
+      "lead": "Chacun entre par la porte qui lui ressemble. Tout le monde apprend le même langage.",
+      "series": {
+        "label": "La saga jeunesse",
+        "heroes": "Avec {{heroes}}",
+        "meta": "Roman, 8 à 12 ans · six tomes prévus",
+        "body": "Deux frères camerounais suivent leurs parents de Douala au Maryland, puis en France, en Catalogne et à Londres. Dans chaque pays, ils apprennent une pièce du football, et le vieux ballon recousu par Mami voyage avec eux.",
+        "all": "Tous les livres"
+      },
+      "methode": {
+        "label": "Le livre du coach",
+        "audience": "Entraîneurs, analystes, directeurs techniques",
+        "body": "Le modèle de jeu africain, de l'école de foot à l'équipe nationale : les cinq intentions de la possession, la semaine d'entraînement, l'Indice Njangi, le plan 2030 pour une fédération. Et 50 exercices avec leurs schémas.",
+        "cta": "Lire le livre"
+      },
+      "app": {
+        "name": "L'application",
+        "audience": "Joueurs, entraîneurs, analystes",
+        "body": "Les exercices de la méthode, le constructeur de séances, la semaine planifiée, les matchs, l'analyse en direct et la vidéo. Vos données restent sur votre appareil.",
+        "cta": "Voir ce qu'elle fait"
+      },
+      "mola": {
+        "name": "Mola",
+        "audience": "L'agent qui agit pour vous",
+        "body": "Dites-lui ce dont vous avez besoin, il le fait dans l'application : préparer la semaine, créer une séance, installer un match, écrire la convocation. Vous validez avant tout envoi.",
+        "cta": "Rencontrer Mola"
+      },
+      "free": "Gratuit à lire"
+    },
+    "features": {
+      "eyebrow": "L'application",
+      "title": "Une application pour toute l'équipe",
+      "lead": "Choisissez votre rôle : voici ce que {{app}} fait pour vous.",
+      "tabs": {
+        "players": "Joueurs",
+        "coaches": "Entraîneurs",
+        "analysts": "Analystes",
+        "clubs": "Clubs et fédérations"
+      },
+      "items": {
+        "lessons": {
+          "title": "Les 40 Leçons du Ballon",
+          "body": "Une leçon par chapitre du roman, avec son schéma, pour comprendre le jeu en jouant."
+        },
+        "challenges": {
+          "title": "Les défis du joueur",
+          "body": "Jonglages, contrôles orientés, scan : des défis à faire seul, et la trace de tes progrès."
+        },
+        "notebook": {
+          "title": "Ton carnet du Njangi",
+          "body": "Écris ce que tu as appris, comme Kaydoudou dans son carnet couvert de pagne."
+        },
+        "skills": {
+          "title": "Tes dix compétences",
+          "body": "Scan, contrôle orienté, passe avec intention, dribble njangi : vois où tu en es, de 1 à 4."
+        },
+        "drills": {
+          "title": "Les exercices avec schémas",
+          "body": "Rondos, jeux de position, petits et grands jeux, transitions, finition. Filtrez par intention, âge et jour de la semaine."
+        },
+        "builder": {
+          "title": "Le constructeur de séances",
+          "body": "Assemblez une séance en quelques touches, ou laissez {{app}} la proposer selon le jour et l'âge."
+        },
+        "week": {
+          "title": "La semaine périodisée",
+          "body": "De MD-4 à MD-1 : tension, durée, vitesse, activation. Le modèle de jeu chaque jour, la charge au bon moment."
+        },
+        "match": {
+          "title": "Matchs et compositions",
+          "body": "Adversaire, système, composition sur le terrain, plan de jeu des quatre moments, convocation par WhatsApp ou SMS."
+        },
+        "live": {
+          "title": "L'analyse en direct",
+          "body": "Codez le match au bord du terrain, une touche par action. L'Indice Njangi se calcule pendant que vous codez."
+        },
+        "report": {
+          "title": "Le rapport de match",
+          "body": "Score, Indice Njangi et ses cinq sous-indices, ce qui a marché, ce qu'il faut corriger, les exercices de la semaine suivante."
+        },
+        "video": {
+          "title": "L'analyse vidéo",
+          "body": "Chargez la vidéo du téléphone, marquez les moments, dessinez sur l'image pour montrer peu mais juste."
+        },
+        "codes": {
+          "title": "Les codes de la méthode",
+          "body": "Passe progressive, ligne traversée, entrée dans la surface, reprise en 5 secondes : les mêmes codes que le livre."
+        },
+        "model": {
+          "title": "Un modèle de jeu commun",
+          "body": "Les mêmes mots et les mêmes exercices des U9 à l'équipe A, même quand l'entraîneur change."
+        },
+        "teams": {
+          "title": "Toutes vos équipes",
+          "body": "Une équipe par catégorie, avec ses séances, ses matchs et ses rapports."
+        },
+        "education": {
+          "title": "Former les entraîneurs",
+          "body": "{{methode}} comme base des formations : chapitres, fiches, rapports types."
+        },
+        "plan2030": {
+          "title": "Le plan 2030",
+          "body": "Dix mesures concrètes pour une fédération, du modèle national à la protection de l'enfance."
+        }
+      },
+      "visual": {
+        "lessonNo": "Leçon du Ballon n°3",
+        "lessonTitle": "Quand on te serre, le ballon doit partir.",
+        "lessonLine": "Si deux adversaires viennent sur toi, un partenaire est libre quelque part.",
+        "weekTitle": "La semaine avant le match de samedi",
+        "matchDay": "Match",
+        "load": "Charge",
+        "sessions": {
+          "MD-4": "Petits espaces",
+          "MD-3": "Jouer comme le match",
+          "MD-2": "Transitions et finition",
+          "MD-1": "Activation, coups de pied arrêtés"
+        },
+        "opponent": "contre les Panthères",
+        "tagTitle": "Le pupitre de codage",
+        "tagHalf": "2e mi-temps",
+        "us": "Lionceaux",
+        "them": "Requins",
+        "tagIndex": "Indice Njangi en direct",
+        "pathTitle": "Une seule idée, de l'école de foot à l'équipe A",
+        "path": {
+          "a": "U6 à U9",
+          "aT": "Jouer, toucher, aimer le ballon",
+          "b": "U10 à U13",
+          "bT": "L'âge d'or technique : scan, rondos",
+          "c": "U14 à U16",
+          "cT": "Jeu de position, rôles, transitions",
+          "d": "U17 à U19",
+          "dT": "Performance et périodisation",
+          "e": "Équipe A",
+          "eT": "Le modèle national"
+        }
+      },
+      "open": "Ouvrir dans la démo"
+    },
+    "live": {
+      "eyebrow": "Analyse en direct",
+      "title": "L'Indice Njangi : la possession qui sert à quelque chose",
+      "lead": "Le pourcentage de possession ment. L'Indice Njangi mesure, de 0 à 100, si votre équipe a possédé avec intention. Touchez une action pour voir l'indice bouger.",
+      "example": "Exemple : Lionceaux U13, deuxième mi-temps",
+      "try": "Codez une action",
+      "last": "Dernière action : {{label}}",
+      "reset": "Remettre à zéro",
+      "outOf": "sur 100",
+      "subs": {
+        "progression": {
+          "label": "Progression",
+          "hint": "Lignes traversées, passes vers l'avant"
+        },
+        "penetration": {
+          "label": "Pénétration",
+          "hint": "Entrées dans le dernier tiers et la surface"
+        },
+        "fixation": {
+          "label": "Fixation",
+          "hint": "Attirer deux adversaires, renverser"
+        },
+        "reprise": {
+          "label": "Reprise",
+          "hint": "Récupérer dans les 5 secondes"
+        },
+        "controle": {
+          "label": "Contrôle",
+          "hint": "Passes réussies, pertes évitées"
+        }
+      },
+      "gaugeLabel": "Indice Njangi : {{v}} sur 100",
+      "cta": "Voir un vrai rapport dans la démo"
+    },
+    "mola": {
+      "eyebrow": "Mola, l'agent de {{app}}",
+      "title": "Mola fait le travail. Vous gardez la main.",
+      "p1": "« Mola », c'est « l'ami » en camfranglais. Il vous accueille en parlant et remplit votre profil pendant la conversation. Ensuite, il agit dans l'application avec les mêmes outils que vous.",
+      "p2": "Rien ne part sans votre accord : chaque message à envoyer attend votre validation.",
+      "can": "Ce que vous pouvez lui demander",
+      "asks": {
+        "a": "Prépare ma semaine avant le match de samedi.",
+        "b": "Crée une séance de 75 minutes pour mes U11.",
+        "c": "Installe le match contre Deïdo et propose la composition.",
+        "d": "Écris la convocation pour WhatsApp.",
+        "e": "Ouvre le rapport du dernier match."
+      },
+      "chat": {
+        "name": "Mola",
+        "status": "agit pour vous",
+        "statusDone": "terminé",
+        "user": "Prépare ma semaine avant le match de samedi.",
+        "ack": "D'accord, je m'en occupe.",
+        "steps": {
+          "a": "Match trouvé : samedi contre les Panthères de Deïdo",
+          "b": "Quatre séances créées, de MD-4 à MD-1",
+          "c": "Exercices choisis pour des U13 : rondos, transitions, finition",
+          "d": "Convocation prête, elle attend votre accord"
+        },
+        "done": "Votre semaine est prête. Voulez-vous la voir ?",
+        "open": "Voir la semaine",
+        "replay": "Rejouer",
+        "input": "Écrire à Mola"
+      },
+      "cta": "Commencer avec Mola"
+    },
+    "roadmap": {
+      "eyebrow": "Le compte à rebours",
+      "title": "2030 ou 2034 : le compte à rebours a commencé",
+      "lead": "La plupart des joueurs de ces Coupes du monde ont aujourd'hui entre 14 et 26 ans. Ils sont déjà dans nos quartiers, nos académies et notre diaspora.",
+      "steps": {
+        "a": {
+          "year": "2026",
+          "title": "Fondations",
+          "body": "Un modèle de jeu écrit, des livres et une application pour le transmettre."
+        },
+        "b": {
+          "year": "2027 à 2028",
+          "title": "Alignement",
+          "body": "Des entraîneurs formés au même langage, des sélections de jeunes alignées."
+        },
+        "c": {
+          "year": "2030",
+          "title": "Compétition",
+          "body": "Le Mondial au Maroc, en Espagne et au Portugal, en partie sur le sol africain."
+        },
+        "d": {
+          "year": "2034",
+          "title": "Sommet",
+          "body": "Une étoile sur le maillot. Le rêve accompli."
+        }
+      }
+    },
+    "pricing": {
+      "eyebrow": "Premium",
+      "title": "Gratuit pour commencer",
+      "body": "Les livres et les exercices de la méthode sont gratuits. Les formules Premium commencent à {{price}} par mois (environ {{fcfa}}).",
+      "cta": "Voir les formules"
+    },
+    "final": {
+      "body": "Commencez par une conversation avec Mola : quelques questions, et votre espace est prêt.",
+      "secondary": "Lire les livres"
+    },
+    "demoModal": {
+      "title": "Lancer la démo ?",
+      "body": "La démo remplace les données de ce navigateur par l'équipe des Lionceaux de Bonamoussadi. Exportez d'abord une sauvegarde depuis les réglages si vous voulez garder votre travail.",
+      "confirm": "Lancer la démo",
+      "busy": "Préparation de la démo"
+    }
+  },
+  "shelf": {
+    "aria": "Les six tomes de la saga {{series}}",
+    "tome": "Tome {{n}}",
+    "available": "Disponible",
+    "soon": "À paraître",
+    "read": "Lire",
+    "pdf": "PDF",
+    "readLabel": "Lire {{title}} en ligne",
+    "pdfLabel": "Télécharger le PDF de {{title}}"
+  },
+  "library": {
+    "docTitle": "Les livres",
+    "eyebrow": "Bibliothèque",
+    "title": "Les livres",
+    "subtitle": "Une saga pour les enfants, un livre pour les entraîneurs, une même idée du jeu. Ils se lisent librement en ligne et se téléchargent en PDF.",
+    "frenchOnly": "",
+    "read": "Lire en ligne",
+    "pdf": "Télécharger le PDF",
+    "contents": "Sommaire",
+    "online": "{{n}} chapitres en ligne sur {{total}}",
+    "onlineAll": "{{n}} chapitres en ligne",
+    "arriving": "Les chapitres arrivent",
+    "arrivingBody": "Le livre s'écrit en ce moment. Chaque chapitre apparaît ici dès qu'il est prêt, et le lecteur en ligne s'enrichit au même rythme.",
+    "chapter": "Chapitre {{n}}",
+    "chapterCount": "{{n}} chapitres",
+    "povLabel": "Raconté par {{pov}}",
+    "series": {
+      "label": "La saga jeunesse",
+      "heroes": "Avec {{heroes}}",
+      "meta": "Roman, 8 à 12 ans · six tomes prévus",
+      "shelfTitle": "La saga en six tomes",
+      "shelfLead": "Six tomes pour suivre les deux frères du terrain de quartier jusqu'à la Coupe du monde. Le tome 1 est disponible, les suivants s'écrivent."
+    },
+    "tome1": {
+      "audience": "Roman, 8 à 12 ans",
+      "body": "Kaydoudou, 11 ans, le 8 qui voit tout. BriBri, 10 ans, l'ailier aux chaussettes dépareillées. Les deux frères quittent la terre rouge de Bonamoussadi pour suivre leurs parents aux États-Unis, en France, en Espagne et en Angleterre. Dans chaque pays, ils apprennent une pièce du football, et le vieux ballon recousu par Mami Nyanga voyage avec eux.",
+      "facts": {
+        "chapters": "40 chapitres",
+        "parts": "5 parties, 5 pays",
+        "lessons": "40 Leçons du Ballon"
+      },
+      "partsTitle": "Cinq pays, cinq pièces du Njangi",
+      "partLabel": "Partie {{n}}",
+      "parts": {
+        "1": {
+          "country": "Cameroun",
+          "piece": "le cœur",
+          "place": "Douala et Bafoussam",
+          "idea": "On joue ensemble, chacun verse sa part."
+        },
+        "2": {
+          "country": "États-Unis",
+          "piece": "la raison",
+          "place": "Waldorf, Maryland",
+          "idea": "Chaque passe doit servir à quelque chose."
+        },
+        "3": {
+          "country": "France",
+          "piece": "les yeux",
+          "place": "Seine-et-Marne",
+          "idea": "Voir avant de recevoir, reprendre vite."
+        },
+        "4": {
+          "country": "Espagne",
+          "piece": "la carte",
+          "place": "Catalogne",
+          "idea": "Être au bon endroit, créer des triangles."
+        },
+        "5": {
+          "country": "Angleterre",
+          "piece": "le souffle",
+          "place": "Londres",
+          "idea": "Posséder aussi quand ça brûle."
+        }
+      },
+      "lessonsLink": "Les Leçons du Ballon dans l'application"
+    },
+    "methode": {
+      "label": "Le livre du coach",
+      "audience": "Entraîneurs, analystes, managers, fédérations",
+      "body": "Le livre qui écrit le modèle de jeu Njangi : les quatre moments, les cinq intentions de la possession, la carte du terrain, les rôles, la formation des jeunes en Afrique, la semaine périodisée, l'Indice Njangi et le rapport de match, et dix mesures pour une fédération d'ici 2030.",
+      "facts": {
+        "chapters": "23 chapitres",
+        "parts": "7 parties",
+        "drills": "50 exercices avec schémas"
+      },
+      "drillsLink": "Les exercices dans l'application",
+      "parts": {
+        "0": "Avant-propos",
+        "1": "Le manifeste",
+        "2": "Le modèle de jeu Njangi",
+        "3": "Des jeunes aux pros",
+        "4": "La semaine d'entraînement et la périodisation",
+        "5": "Les 50 exercices",
+        "6": "L'analyse",
+        "7": "Le manager et la fédération",
+        "8": "Annexes"
+      },
+      "partLabel": "Partie {{n}}"
+    },
+    "cover": {
+      "author": "William Foteping",
+      "alt": "Couverture de {{title}}",
+      "altSeries": "Couverture de {{title}}, avec Kaydoudou et BriBri"
+    }
+  },
+  "pricing": {
+    "docTitle": "Premium",
+    "eyebrow": "Formules",
+    "title": "Une formule pour chaque rôle",
+    "subtitle": "Les livres et les exercices de la méthode restent gratuits. Les formules Premium ouvrent les outils de préparation, d'analyse, et Mola qui agit pour vous.",
+    "billing": "Facturation",
+    "monthly": "Mensuel",
+    "annual": "Annuel",
+    "annualHint": "2 mois offerts",
+    "perMonth": "par mois",
+    "perYear": "par an",
+    "approxMonth": "environ {{v}} par mois",
+    "approxYear": "environ {{v}} par an",
+    "annualEq": "soit {{v}} par mois",
+    "freeForever": "Gratuit, sans limite de durée",
+    "onQuote": "Sur devis",
+    "onQuoteHint": "Selon le nombre de sélections et d'entraîneurs",
+    "recommended": "Conseillé aux entraîneurs",
+    "desc": {
+      "free": "Pour découvrir {{app}} et apprendre.",
+      "player": "Pour le joueur ou la joueuse qui veut progresser.",
+      "coach": "Pour l'entraîneur qui prépare, dirige et analyse.",
+      "club": "Pour les clubs et les académies, toutes catégories.",
+      "federation": "Pour les fédérations et les ligues qui construisent un modèle national."
+    },
+    "activate": "Activer (démo)",
+    "current": "Votre formule",
+    "start": "Commencer",
+    "activated": "Formule {{plan}} activée en mode démo. Aucun paiement n'a été effectué.",
+    "goApp": "Ouvrir l'application",
+    "payments": {
+      "title": "Les paiements ne sont pas encore branchés",
+      "body": "Mobile Money et cartes bancaires arrivent bientôt. En attendant, vous pouvez activer n'importe quelle formule en mode démo pour tout essayer, sans payer."
+    },
+    "faqTitle": "Questions fréquentes",
+    "faq": {
+      "books": {
+        "q": "Les livres sont-ils vraiment gratuits ?",
+        "a": "Oui. La saga {{series}} et {{methode}} se lisent librement en ligne et se téléchargent en PDF, quelle que soit votre formule. Les exercices de la méthode aussi."
+      },
+      "data": {
+        "q": "Où sont mes données ?",
+        "a": "Pour l'instant, votre profil, vos équipes, vos séances et vos matchs restent sur votre appareil, dans votre navigateur. Pensez à exporter une sauvegarde depuis les réglages."
+      },
+      "cancel": {
+        "q": "Puis-je arrêter quand je veux ?",
+        "a": "Oui, sans engagement. Vous revenez à la formule gratuite quand vous voulez, sans perdre vos séances ni vos matchs."
+      },
+      "federation": {
+        "q": "Comment ça marche pour une fédération ?",
+        "a": "Le modèle de jeu national, la formation des entraîneurs et l'accompagnement se construisent ensemble. Le prix se fixe sur devis."
+      },
+      "pay": {
+        "q": "Comment payer ?",
+        "a": "Les paiements ne sont pas encore branchés. Mobile Money et cartes bancaires arrivent. Les prix en FCFA sont indicatifs, sur la base de 1 dollar pour environ 600 FCFA."
+      }
+    }
+  },
+  "settings": {
+    "docTitle": "Réglages",
+    "title": "Réglages",
+    "subtitle": "Votre profil, vos équipes et vos données. Tout est enregistré sur cet appareil.",
+    "profile": {
+      "title": "Profil",
+      "name": "Nom",
+      "role": "Rôle",
+      "lang": "Langue",
+      "langFr": "Français",
+      "langEn": "English",
+      "country": "Pays",
+      "countryPh": "Ex. : Cameroun",
+      "city": "Ville",
+      "cityPh": "Ex. : Douala",
+      "club": "Club ou académie",
+      "save": "Enregistrer le profil",
+      "saved": "Profil enregistré.",
+      "nameRequired": "Indiquez un nom."
+    },
+    "teams": {
+      "title": "Équipes",
+      "lead": "L'équipe active est celle que vous voyez dans les séances, les matchs et l'analyse.",
+      "active": "Active",
+      "makeActive": "Rendre active",
+      "edit": "Modifier",
+      "create": "Nouvelle équipe",
+      "createTitle": "Nouvelle équipe",
+      "editTitle": "Modifier l'équipe",
+      "name": "Nom de l'équipe",
+      "namePh": "Ex. : Lionceaux U13",
+      "ageGroup": "Catégorie",
+      "seniors": "Seniors",
+      "format": "Format",
+      "formatOpt": "{{n}} contre {{n}}",
+      "formation": "Système de départ",
+      "empty": "Aucune équipe pour l'instant",
+      "emptyBody": "Créez votre équipe pour préparer des séances, installer des matchs et analyser votre jeu.",
+      "players": "{{count}} joueurs",
+      "players_one": "{{count}} joueur",
+      "players_other": "{{count}} joueurs",
+      "created": "Équipe créée.",
+      "updated": "Équipe enregistrée.",
+      "activated": "{{name}} est maintenant l'équipe active."
+    },
+    "plan": {
+      "title": "Formule",
+      "current": "Formule actuelle",
+      "see": "Voir les formules"
+    },
+    "data": {
+      "title": "Vos données",
+      "lead": "Tout est enregistré dans ce navigateur. Exportez une sauvegarde pour la garder ou la passer sur un autre appareil.",
+      "export": "Exporter une sauvegarde",
+      "exportHint": "Un fichier JSON avec votre profil, vos équipes, séances, matchs, analyses et notes.",
+      "exported": "Sauvegarde exportée.",
+      "import": "Restaurer une sauvegarde",
+      "importHint": "Remplace les données de ce navigateur par celles du fichier.",
+      "importTitle": "Restaurer cette sauvegarde ?",
+      "importBody": "Sauvegarde du {{date}}, {{n}} éléments. Toutes les données actuelles de ce navigateur seront remplacées.",
+      "importConfirm": "Restaurer",
+      "imported": "Sauvegarde restaurée.",
+      "invalid": "Ce fichier n'est pas une sauvegarde {{app}}. Choisissez un fichier exporté depuis ces réglages.",
+      "reset": "Tout effacer",
+      "resetHint": "Supprime le profil, les équipes et tout le reste de ce navigateur.",
+      "resetTitle": "Tout effacer ?",
+      "resetBody": "Le profil, les équipes, les séances, les matchs, les analyses et les notes de ce navigateur seront supprimés. Cette action est définitive.",
+      "resetConfirm": "Tout effacer",
+      "busy": "Un instant"
+    },
+    "about": {
+      "title": "À propos",
+      "version": "Version",
+      "author": "Auteur",
+      "company": "Éditeur",
+      "storage": "Stockage",
+      "storageValue": "Sur cet appareil",
+      "books": "Lire les livres"
+    }
+  }
+}

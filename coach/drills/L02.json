@@ -1,0 +1,125 @@
+{
+  "id": "L02",
+  "family": "lsg",
+  "order": 2,
+  "ages": "U14+",
+  "players": { "min": 20, "max": 20, "fr": "20 joueurs (9 contre 9 + 2 gardiens)", "en": "20 players (9 v 9 + 2 goalkeepers)" },
+  "space": { "w": 72, "h": 50 },
+  "duration": { "fr": "3 x 10 min, 3 min de récupération", "en": "3 x 10 min, 3 min rest" },
+  "minutes": 36,
+  "md": ["MD-3"],
+  "intensity": "high",
+  "intentions": ["sortir", "progresser", "finir"],
+  "skills": ["passe", "scan", "controle", "appels"],
+  "pieces": ["la carte", "la raison"],
+  "fr": {
+    "title": "Traverser trois lignes",
+    "subtitle": "9 contre 9 : un but qui part de loin compte double",
+    "objective": "Relier les trois tiers avec intention : sortir proprement, progresser par des passes qui cassent les lignes, finir avant que le bloc adverse ne se replace. Le ballon voyage, il ne tourne pas en rond.",
+    "organisation": [
+      "Terrain de 72 x 50 m divisé en trois tiers de 24 m par des coupelles.",
+      "Deux équipes de 9 joueurs de champ et un gardien, structure de départ conseillée en 3-2-3-1.",
+      "Un adjoint compte les passes à voix haute dès que l'équipe a le ballon dans son premier tiers.",
+      "Ballons de réserve dans chaque but pour relancer vite."
+    ],
+    "rules": [
+      "Un but vaut 1 point.",
+      "Un but vaut 2 points si l'action est partie du premier tiers et a traversé les trois tiers en 7 passes ou moins.",
+      "Le compte repart à zéro si le ballon revient dans le premier tiers ou si l'adversaire le touche.",
+      "Règles normales, hors-jeu compris à partir de la ligne du dernier tiers."
+    ],
+    "coaching": [
+      "Cherche d'abord la passe qui casse une ligne ; si elle n'existe pas, fixe pour la créer.",
+      "Pivot : montre-toi entre les deux premiers attaquants adverses, ouvert vers l'avant.",
+      "Reçois de profil pour jouer vers l'avant dès la deuxième touche.",
+      "Quand un milieu se retourne, deux joueurs attaquent la profondeur tout de suite.",
+      "À la perte, reprends dans les 5 secondes : la défense de repos reste en place."
+    ],
+    "progressions": [
+      "But double en 6 passes ou moins.",
+      "Deux touches maximum dans le tiers du milieu.",
+      "L'équipe qui défend presse haut avec 4 joueurs dans le premier tiers adverse."
+    ],
+    "regressions": [
+      "But double en 10 passes ou moins.",
+      "Un joueur neutre dans le tiers du milieu joue avec l'équipe en possession.",
+      "Touches libres partout et pas de hors-jeu."
+    ],
+    "measure": "Nombre d'actions parties du premier tiers qui atteignent le dernier tiers, et nombre moyen de passes pour y arriver (repère : moins de 8).",
+    "story": "Kaydoudou fait souvent la passe facile. Ici, la passe qui casse les lignes fait gagner le double : il apprend à l'oser."
+  },
+  "en": {
+    "title": "Cross Three Lines",
+    "subtitle": "9 v 9: a goal that starts deep counts double",
+    "objective": "Link the three thirds with intent: build out cleanly, progress with passes that break lines, finish before the opposing block can recover. The ball travels; it does not go round in circles.",
+    "organisation": [
+      "72 x 50 m pitch split into three 24 m thirds with disc cones.",
+      "Two teams of 9 outfield players and a goalkeeper, suggested starting shape 3-2-3-1.",
+      "An assistant counts the passes out loud as soon as a team has the ball in its own first third.",
+      "Spare balls in each goal for quick restarts."
+    ],
+    "rules": [
+      "A goal is worth 1 point.",
+      "A goal is worth 2 points if the move started in the first third and crossed all three thirds in 7 passes or fewer.",
+      "The count resets if the ball goes back into the first third or an opponent touches it.",
+      "Normal rules, with offside from the final third line."
+    ],
+    "coaching": [
+      "Look first for the pass that breaks a line; if it is not there, draw an opponent to create it.",
+      "Pivot: show between the first two opposing forwards, open to play forward.",
+      "Receive side-on so you can play forward with your second touch.",
+      "When a midfielder turns, two players attack the space in behind immediately.",
+      "When the ball is lost, win it back within 5 seconds: the rest defence stays in place."
+    ],
+    "progressions": [
+      "Double goal in 6 passes or fewer.",
+      "Two touches maximum in the middle third.",
+      "The defending team presses high with 4 players in the opposition first third."
+    ],
+    "regressions": [
+      "Double goal in 10 passes or fewer.",
+      "A neutral player in the middle third plays with the team in possession.",
+      "Unlimited touches everywhere and no offside."
+    ],
+    "measure": "Number of moves starting in the first third that reach the final third, and the average number of passes needed to get there (benchmark: fewer than 8).",
+    "story": "Kaydoudou often plays the easy pass. Here, the pass that breaks lines is worth double: he learns to dare to play it."
+  },
+  "diagram": {
+    "view": "grid", "w": 72, "h": 50,
+    "players": [
+      { "id": "gk", "team": "gk", "x": 2, "y": 25 },
+      { "id": "p4", "team": "a", "x": 12, "y": 16, "label": "4" },
+      { "id": "p5", "team": "a", "x": 12, "y": 34, "label": "5" },
+      { "id": "p6", "team": "a", "x": 30, "y": 25, "label": "6" },
+      { "id": "p8", "team": "a", "x": 31, "y": 11, "label": "8" },
+      { "id": "p10", "team": "a", "x": 43, "y": 31, "label": "10" },
+      { "id": "p9", "team": "a", "x": 51, "y": 30, "label": "9" },
+      { "id": "p11", "team": "a", "x": 46, "y": 7, "label": "11" },
+      { "id": "b1", "team": "b", "x": 25, "y": 17 },
+      { "id": "b2", "team": "b", "x": 25, "y": 33 },
+      { "id": "b3", "team": "b", "x": 37, "y": 21 },
+      { "id": "b4", "team": "b", "x": 38, "y": 39 },
+      { "id": "b5", "team": "b", "x": 56, "y": 22 },
+      { "id": "b6", "team": "b", "x": 57, "y": 35 },
+      { "id": "gkb", "team": "gkb", "x": 70, "y": 25 }
+    ],
+    "ball": "p5",
+    "arrows": [
+      { "from": "p5", "to": "p6", "kind": "pass", "n": 1 },
+      { "from": "p6", "to": "p10", "kind": "pass", "n": 2 },
+      { "from": "p11", "to": [61, 13], "kind": "run", "n": 3 },
+      { "from": "p10", "to": [61, 13], "kind": "pass", "n": 4 },
+      { "from": [61, 13], "to": [71, 22], "kind": "shot", "n": 5 }
+    ],
+    "zones": [
+      { "x": 0, "y": 0, "w": 24, "h": 50, "tone": "soft", "label": "tiers 1" },
+      { "x": 48, "y": 0, "w": 24, "h": 50, "tone": "soft", "label": "tiers 3" }
+    ],
+    "labels": [{ "x": 36, "y": 48.5, "text": "tiers 2" }],
+    "goals": [
+      { "x": 0, "y": 25, "side": "left", "size": "full" },
+      { "x": 72, "y": 25, "side": "right", "size": "full" }
+    ]
+  },
+  "diagram2": null
+}

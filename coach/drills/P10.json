@@ -1,0 +1,123 @@
+{
+  "id": "P10",
+  "family": "position",
+  "order": 10,
+  "ages": "U15+",
+  "players": { "min": 20, "max": 20, "fr": "20 joueurs (8 contre 8 + 4 neutres)", "en": "20 players (8 v 8 + 4 neutrals)" },
+  "space": { "w": 55, "h": 45 },
+  "duration": { "fr": "3 x 5 min, 2 min de récupération", "en": "3 x 5 min, 2 min rest" },
+  "minutes": 19,
+  "md": ["MD-3", "MD-4"],
+  "intensity": "medium",
+  "intentions": ["respirer"],
+  "skills": ["passe", "communication", "scan", "protection", "decision"],
+  "pieces": ["le souffle", "le cœur"],
+  "fr": {
+    "title": "Respirer",
+    "subtitle": "8 contre 8 + 4 neutres : garder le ballon pour récupérer",
+    "objective": "Apprendre à utiliser la possession pour récupérer, en fin de séance ou quand l'équipe est fatiguée. Quand les jambes brûlent, le ballon court à la place des joueurs : on garde, on se réorganise, puis on repart.",
+    "organisation": [
+      "Rectangle de 55 x 45 m, placé en fin de séance, après un travail intense.",
+      "8 contre 8 et 4 neutres, un sur chaque côté du rectangle, qui se déplace le long de sa ligne.",
+      "Les neutres jouent avec l'équipe en possession : 12 contre 8.",
+      "Un adjoint chronomètre à voix haute ; pause boisson à chaque récupération, à l'ombre par forte chaleur."
+    ],
+    "rules": [
+      "Trois touches maximum ; deux pour les neutres.",
+      "45 secondes de possession sans perte : 1 point ; l'adjoint annonce « 30 », « 40 », puis « Point ! ».",
+      "Après un point, le chrono repart et l'équipe garde le ballon.",
+      "Ballon intercepté ou sorti : le chrono de l'autre équipe démarre.",
+      "Interdit de jouer deux fois de suite avec le même neutre."
+    ],
+    "coaching": [
+      "Le ballon court pour toi : passes simples, au sol, vers le partenaire le plus libre.",
+      "Écartez-vous : plus l'équipe est large, moins chacun doit courir.",
+      "La passe en retrait et le changement de côté servent une intention : respirer.",
+      "Loin du ballon, marche ou trottine, puis montre-toi quand il vient vers toi.",
+      "Parle : « Seul ! », « Derrière ! », « Temps ! » évitent les pertes inutiles."
+    ],
+    "progressions": [
+      "60 secondes pour un point.",
+      "Deux neutres seulement, sur les lignes de fond.",
+      "Après un point, une passe vers le neutre de fond adverse en moins de 10 secondes rapporte 1 point bonus : respirer, puis repartir."
+    ],
+    "regressions": [
+      "30 secondes pour un point.",
+      "Touches libres.",
+      "L'équipe qui défend presse à 6 ; ses deux autres joueurs récupèrent hors du terrain, puis on tourne."
+    ],
+    "measure": "Possessions de 45 secondes par série et pertes dans notre moitié. On peut demander la difficulté perçue (de 0 à 10) aux deux équipes : celle qui a su respirer finit en général moins éprouvée.",
+    "story": "En demi-finale, par un soir glacial, BriBri le découvre : « Le ballon court plus vite que nous et il n'est jamais fatigué. »"
+  },
+  "en": {
+    "title": "Breathe",
+    "subtitle": "8 v 8 + 4 neutrals: keep the ball to recover",
+    "objective": "Learn to use possession to recover, at the end of a session or when the team is tired. When the legs are burning, the ball does the running for the players: keep it, reorganise, then go again.",
+    "organisation": [
+      "55 x 45 m area, used at the end of the session, after intense work.",
+      "8 v 8 and 4 neutrals, one on each side of the area, moving along their line.",
+      "Neutrals play for the team in possession: 12 v 8.",
+      "An assistant keeps time out loud; drinks during every rest, in the shade when it is hot."
+    ],
+    "rules": [
+      "Three touches maximum; two for the neutrals.",
+      "45 seconds of possession without losing the ball: 1 point; the assistant calls \"30\", \"40\", then \"Point!\".",
+      "After a point, the clock restarts and the team keeps the ball.",
+      "Ball intercepted or out of play: the other team's clock starts.",
+      "No playing with the same neutral twice in a row."
+    ],
+    "coaching": [
+      "The ball runs for you: simple passes, on the ground, to the freest teammate.",
+      "Spread out: the wider the team, the less each player has to run.",
+      "The back pass and the switch of play serve a purpose: to breathe.",
+      "Away from the ball, walk or jog, then show when it comes your way.",
+      "Talk: \"Man on!\", \"Time!\", \"Behind!\" prevent needless turnovers."
+    ],
+    "progressions": [
+      "60 seconds for a point.",
+      "Only two neutrals, on the end lines.",
+      "After a point, a pass to the far end-line neutral within 10 seconds earns 1 bonus point: breathe, then go again."
+    ],
+    "regressions": [
+      "30 seconds for a point.",
+      "Unlimited touches.",
+      "The defending team presses with 6; its other two players recover off the pitch, then rotate."
+    ],
+    "measure": "45-second possessions per set and balls lost in our half. You can ask both teams for perceived effort (0 to 10): the team that managed to breathe usually finishes less drained.",
+    "story": "In the semi-final, on a freezing night, BriBri finds it out: \"The ball runs faster than us and it never gets tired.\""
+  },
+  "diagram": {
+    "view": "grid", "w": 55, "h": 45,
+    "players": [
+      { "id": "n1", "team": "n", "x": 0.8, "y": 22.5 },
+      { "id": "n2", "team": "n", "x": 54.2, "y": 22.5 },
+      { "id": "n3", "team": "n", "x": 30, "y": 0.8 },
+      { "id": "n4", "team": "n", "x": 27.5, "y": 44.2 },
+      { "id": "g1", "team": "a", "x": 8, "y": 14 },
+      { "id": "g2", "team": "a", "x": 8, "y": 31 },
+      { "id": "g3", "team": "a", "x": 19, "y": 6 },
+      { "id": "g4", "team": "a", "x": 21, "y": 22.5 },
+      { "id": "g5", "team": "a", "x": 19, "y": 39 },
+      { "id": "g6", "team": "a", "x": 35, "y": 9 },
+      { "id": "g7", "team": "a", "x": 37, "y": 35 },
+      { "id": "g8", "team": "a", "x": 46, "y": 22.5 },
+      { "id": "r1", "team": "b", "x": 11, "y": 7.5 },
+      { "id": "r2", "team": "b", "x": 15, "y": 17.5 },
+      { "id": "r3", "team": "b", "x": 23, "y": 10 },
+      { "id": "r4", "team": "b", "x": 26, "y": 28 },
+      { "id": "r5", "team": "b", "x": 28, "y": 17 },
+      { "id": "r6", "team": "b", "x": 33, "y": 25 },
+      { "id": "r7", "team": "b", "x": 41, "y": 14 },
+      { "id": "r8", "team": "b", "x": 43, "y": 31 }
+    ],
+    "ball": "g3",
+    "arrows": [
+      { "from": "g3", "to": "g1", "kind": "pass", "n": 1 },
+      { "from": "g1", "to": "n1", "kind": "pass", "n": 2 },
+      { "from": "n1", "to": "g2", "kind": "pass", "n": 3 },
+      { "from": "g2", "to": "g5", "kind": "pass", "n": 4 }
+    ],
+    "labels": [{ "x": 45, "y": 41.5, "text": "garder 45 s" }]
+  },
+  "diagram2": null
+}

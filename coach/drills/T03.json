@@ -1,0 +1,269 @@
+{
+  "id": "T03",
+  "family": "transition",
+  "order": 3,
+  "ages": "U13+",
+  "players": {
+    "min": 18,
+    "max": 18,
+    "fr": "18 joueurs (4 équipes de 4 + 2 gardiens)",
+    "en": "18 players (4 teams of 4 + 2 goalkeepers)"
+  },
+  "space": {
+    "w": 40,
+    "h": 30
+  },
+  "duration": {
+    "fr": "3 x 6 min, 2 min de récupération",
+    "en": "3 x 6 min, 2 min rest"
+  },
+  "minutes": 22,
+  "md": [
+    "MD-4"
+  ],
+  "intensity": "very-high",
+  "intentions": [
+    "regarder-devant",
+    "reprendre",
+    "finir"
+  ],
+  "skills": [
+    "decision",
+    "communication",
+    "scan",
+    "contre-pression",
+    "appels"
+  ],
+  "pieces": [
+    "le souffle",
+    "les yeux"
+  ],
+  "fr": {
+    "title": "Double transition",
+    "subtitle": "4 contre 4 en vagues : celui qui perd sort, celui qui attend entre",
+    "objective": "Enchaîner les transitions sans temps mort. L'équipe qui récupère doit attaquer avant que la défense ne s'installe ; l'équipe qui entre doit défendre tout de suite, en se parlant.",
+    "organisation": [
+      "Terrain de 40 x 30 m, deux buts avec gardiens qui ne changent pas d'équipe.",
+      "Quatre équipes de 4 (A, B, C, D) aux chasubles différentes : deux jouent, une attend derrière chaque but.",
+      "Ballons de réserve dans les deux buts ; le gardien relance vite après un arrêt ou une sortie.",
+      "Pause boisson pendant les récupérations ; les équipes qui attendent marchent, ne restent pas assises."
+    ],
+    "rules": [
+      "Dès qu'une attaque se termine (but, tir, sortie ou ballon perdu), l'équipe qui attaquait sort.",
+      "Elle va attendre derrière le but qu'elle attaquait.",
+      "L'équipe qui défendait attaque aussitôt l'autre but ; celle qui attend derrière ce but entre pour défendre.",
+      "Un but vaut 1 point ; un but marqué dans les 6 secondes après la récupération vaut 2 points.",
+      "L'équipe qui entre doit toucher sa ligne de but avant de défendre."
+    ],
+    "coaching": [
+      "Tu récupères : regarde devant, la défense n'est pas encore en place.",
+      "Attaque vite mais juste : une passe vers l'avant, un appel en profondeur, un tir.",
+      "Tu entres : parle tout de suite, un joueur sur le ballon, les autres ferment l'axe.",
+      "Tu sors : vite, sans traîner, l'équipe suivante attend son tour.",
+      "Gardiens, relancez vite et loin vers le joueur démarqué."
+    ],
+    "progressions": [
+      "L'équipe qui perd le ballon a 5 secondes pour le reprendre avant de sortir.",
+      "Deux touches maximum.",
+      "L'équipe qui entre n'a plus besoin de toucher sa ligne de but."
+    ],
+    "regressions": [
+      "Trois équipes seulement : une seule attend, derrière un but.",
+      "Terrain de 45 x 35 m pour plus de temps.",
+      "L'entraîneur relance chaque action à la main pour régler le rythme."
+    ],
+    "measure": "Buts marqués dans les 6 secondes après la récupération, par équipe. Une équipe qui en marque peu attaque trop lentement ; une équipe qui en encaisse beaucoup entre trop lentement.",
+    "story": "Sur la terre rouge de Bonamoussadi, quatre équipes, deux buts en bambou, personne ne s'assoit : Tonton Fokou appelle ça « le marché »."
+  },
+  "en": {
+    "title": "Double Transition",
+    "subtitle": "4 v 4 in waves: the team that loses goes off, the waiting team comes on",
+    "objective": "Link transitions with no dead time. The team that wins the ball must attack before the defence is set; the team coming on must defend at once, talking to each other.",
+    "organisation": [
+      "40 x 30 m pitch, two goals with goalkeepers who never change team.",
+      "Four teams of 4 (A, B, C, D) in different bibs: two play, one waits behind each goal.",
+      "Spare balls in both goals; the goalkeeper restarts quickly after a save or a ball out.",
+      "Drinks break during the rests; waiting teams keep walking rather than sitting."
+    ],
+    "rules": [
+      "As soon as an attack ends (goal, shot, ball out or ball lost), the attacking team goes off.",
+      "It goes to wait behind the goal it was attacking.",
+      "The defending team attacks the other goal at once; the team waiting behind that goal comes on to defend.",
+      "A goal is worth 1 point; a goal within 6 seconds of winning the ball is worth 2 points.",
+      "The team coming on must touch its goal line before defending."
+    ],
+    "coaching": [
+      "You win it: look forward, the defence is not set yet.",
+      "Attack quickly but well: a forward pass, a run in behind, a shot.",
+      "You come on: talk straight away, one player on the ball, the others close the middle.",
+      "You go off: quickly, no dawdling, the next team is waiting.",
+      "Goalkeepers, restart fast and long to the free player."
+    ],
+    "progressions": [
+      "The team that loses the ball has 5 seconds to win it back before going off.",
+      "Two touches maximum.",
+      "The team coming on no longer has to touch its goal line."
+    ],
+    "regressions": [
+      "Only three teams: one waits, behind one goal.",
+      "45 x 35 m pitch for more time.",
+      "The coach restarts every move by hand to control the tempo."
+    ],
+    "measure": "Goals scored within 6 seconds of winning the ball, per team. A team that scores few attacks too slowly; a team that concedes many comes on too slowly.",
+    "story": "On the red earth of Bonamoussadi, four teams, two bamboo goals, nobody sits down: Tonton Fokou calls it \"the market\"."
+  },
+  "diagram": {
+    "view": "grid",
+    "w": 40,
+    "h": 30,
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 1.8,
+        "y": 15
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 38.2,
+        "y": 15
+      },
+      {
+        "id": "b1",
+        "team": "b",
+        "x": 25,
+        "y": 12
+      },
+      {
+        "id": "b2",
+        "team": "b",
+        "x": 16,
+        "y": 19
+      },
+      {
+        "id": "b3",
+        "team": "b",
+        "x": 22,
+        "y": 24
+      },
+      {
+        "id": "b4",
+        "team": "b",
+        "x": 29,
+        "y": 21
+      },
+      {
+        "id": "a1",
+        "team": "a",
+        "x": 28,
+        "y": 8
+      },
+      {
+        "id": "a2",
+        "team": "a",
+        "x": 33,
+        "y": 15
+      },
+      {
+        "id": "a3",
+        "team": "a",
+        "x": 31,
+        "y": 25
+      },
+      {
+        "id": "a4",
+        "team": "a",
+        "x": 22,
+        "y": 6
+      },
+      {
+        "id": "c1",
+        "team": "n",
+        "x": 2.2,
+        "y": 4
+      },
+      {
+        "id": "c2",
+        "team": "n",
+        "x": 2.2,
+        "y": 9
+      },
+      {
+        "id": "c3",
+        "team": "n",
+        "x": 2.2,
+        "y": 21
+      },
+      {
+        "id": "c4",
+        "team": "n",
+        "x": 2.2,
+        "y": 26
+      }
+    ],
+    "ball": "b1",
+    "arrows": [
+      {
+        "from": "b1",
+        "to": "b2",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "c2",
+        "to": [
+          9.5,
+          12
+        ],
+        "kind": "run",
+        "n": 2
+      },
+      {
+        "from": "c3",
+        "to": [
+          9.5,
+          19.5
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": "a2",
+        "to": [
+          39.2,
+          22
+        ],
+        "kind": "run",
+        "n": 4
+      }
+    ],
+    "goals": [
+      {
+        "x": 0.7,
+        "y": 15,
+        "side": "left",
+        "size": "full"
+      },
+      {
+        "x": 39.3,
+        "y": 15,
+        "side": "right",
+        "size": "full"
+      }
+    ],
+    "labels": [
+      {
+        "x": 8.5,
+        "y": 29.2,
+        "text": "C entre"
+      },
+      {
+        "x": 33,
+        "y": 29.2,
+        "text": "A sort"
+      }
+    ]
+  },
+  "diagram2": null
+}

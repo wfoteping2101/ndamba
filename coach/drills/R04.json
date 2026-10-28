@@ -1,0 +1,117 @@
+{
+  "id": "R04",
+  "family": "rondo",
+  "order": 4,
+  "ages": "U12+",
+  "players": { "min": 11, "max": 11, "fr": "11 joueurs (8 attaquants, 3 défenseurs)", "en": "11 players (8 attackers, 3 defenders)" },
+  "space": { "w": 25, "h": 10 },
+  "duration": { "fr": "4 x 3 min, 1 min 30 de récupération", "en": "4 x 3 min, 1 min 30 rest" },
+  "minutes": 17,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["fixer", "respirer"],
+  "skills": ["scan", "passe", "decision", "communication"],
+  "pieces": ["la carte", "les yeux"],
+  "fr": {
+    "title": "Les deux carrés",
+    "subtitle": "4 contre 2, puis renverser vers le carré libre",
+    "objective": "Attirer deux défenseurs dans un carré, puis renverser le ballon dans l'autre carré où un seul défenseur attend. On entraîne le renversement après fixation, et pour les défenseurs le déplacement collectif quand le ballon change de côté.",
+    "organisation": [
+      "Deux carrés de 10 x 10 m séparés par un couloir de 5 m.",
+      "4 attaquants par carré, sur les lignes ; personne n'entre dans le couloir.",
+      "2 défenseurs pressent dans le carré du ballon, 1 défenseur attend au centre de l'autre carré.",
+      "Ballons de réserve à l'extérieur de chaque carré."
+    ],
+    "rules": [
+      "Deux touches maximum.",
+      "Après 6 passes, ou au signal de l'entraîneur, le renversement est autorisé : passe au sol à travers le couloir.",
+      "Au renversement, un seul des deux défenseurs suit ; il rejoint celui qui attendait pour presser à 2.",
+      "Chaque renversement réussi vaut 1 point.",
+      "Les défenseurs qui récupèrent échangent avec le joueur qui a perdu le ballon et celui qui lui a passé."
+    ],
+    "coaching": [
+      "Fixez d'abord : jouez court, faites venir les deux défenseurs d'un côté du carré.",
+      "Le joueur qui renverse a regardé l'autre carré avant de recevoir.",
+      "Carré libre : écartez-vous, montrez deux angles au passeur.",
+      "Défenseurs : parlez, décidez en une seconde qui suit et qui reste."
+    ],
+    "progressions": [
+      "Renversement en une touche obligatoire.",
+      "Les deux défenseurs suivent : le carré d'arrivée devient un 4 contre 3 pendant quelques secondes.",
+      "Couloir élargi à 10 m pour allonger la passe.",
+      "Le joueur qui reçoit le renversement doit jouer vers l'avant en deux touches."
+    ],
+    "regressions": [
+      "Carrés de 12 x 12 m et couloir de 3 m.",
+      "Renversement autorisé dès 4 passes.",
+      "Le défenseur qui suit trottine."
+    ],
+    "measure": "Nombre de renversements réussis par série et nombre de passes jouées avant le renversement. Un bon groupe renverse quand les deux défenseurs sont attirés, pas avant.",
+    "story": "C'est le plan de Kaydoudou contre les Requins : les faire venir d'un côté, puis traverser vers l'autre."
+  },
+  "en": {
+    "title": "The Two Squares",
+    "subtitle": "4 v 2, then switch to the free square",
+    "objective": "Draw two defenders into one square, then switch the ball to the other square where only one defender waits. It trains the switch after pinning, and for defenders, shifting together when the ball changes side.",
+    "organisation": [
+      "Two 10 x 10 m squares separated by a 5 m channel.",
+      "4 attackers per square, on the lines; nobody enters the channel.",
+      "2 defenders press in the ball square, 1 defender waits in the middle of the other square.",
+      "Spare balls outside each square."
+    ],
+    "rules": [
+      "Two touches maximum.",
+      "After 6 passes, or on the coach's call, the switch is allowed: a ground pass across the channel.",
+      "On the switch, only one of the two defenders follows; he joins the waiting defender to press 2 v 4.",
+      "Every successful switch is worth 1 point.",
+      "Defenders who win the ball swap with the player who lost it and the player who passed to him."
+    ],
+    "coaching": [
+      "Pin them first: play short, bring both defenders to one side of the square.",
+      "The player who switches has already looked at the other square before receiving.",
+      "Free square: spread out and give the passer two angles.",
+      "Defenders: talk, decide in one second who goes and who stays."
+    ],
+    "progressions": [
+      "The switch must be one touch.",
+      "Both defenders follow: the receiving square becomes 4 v 3 for a few seconds.",
+      "Widen the channel to 10 m to lengthen the pass.",
+      "The player receiving the switch must play forward within two touches."
+    ],
+    "regressions": [
+      "12 x 12 m squares and a 3 m channel.",
+      "Switch allowed after 4 passes.",
+      "The following defender jogs."
+    ],
+    "measure": "Successful switches per set and passes played before each switch. A good group switches once both defenders are drawn in, not before.",
+    "story": "It is Kaydoudou's plan against the Sharks: bring them to one side, then go through on the other."
+  },
+  "diagram": {
+    "view": "grid", "w": 25, "h": 10,
+    "zones": [
+      { "x": 0, "y": 0, "w": 10, "h": 10, "tone": "soft" },
+      { "x": 15, "y": 0, "w": 10, "h": 10, "tone": "a" }
+    ],
+    "cones": [[0, 0], [10, 0], [0, 10], [10, 10], [15, 0], [25, 0], [15, 10], [25, 10]],
+    "players": [
+      { "id": "a1", "team": "a", "x": 0.8, "y": 3.5 },
+      { "id": "a2", "team": "a", "x": 5, "y": 0.8 },
+      { "id": "a3", "team": "a", "x": 9.2, "y": 6.5 },
+      { "id": "a4", "team": "a", "x": 3.5, "y": 9.2 },
+      { "id": "d1", "team": "b", "x": 3.6, "y": 4.4 },
+      { "id": "d2", "team": "b", "x": 6, "y": 6.2 },
+      { "id": "b1", "team": "a", "x": 15.8, "y": 6.5 },
+      { "id": "b2", "team": "a", "x": 20.5, "y": 0.8 },
+      { "id": "b3", "team": "a", "x": 24.2, "y": 4.5 },
+      { "id": "b4", "team": "a", "x": 20, "y": 9.2 },
+      { "id": "d3", "team": "b", "x": 20.5, "y": 5 }
+    ],
+    "ball": "a3",
+    "arrows": [
+      { "from": "a4", "to": "a3", "kind": "pass", "n": 1 },
+      { "from": "a3", "to": "b2", "kind": "pass", "n": 2 },
+      { "from": "d2", "to": [17.6, 3.2], "kind": "run", "n": 3 }
+    ]
+  },
+  "diagram2": null
+}

@@ -1,0 +1,112 @@
+{
+  "id": "R07",
+  "family": "rondo",
+  "order": 7,
+  "ages": "U10+",
+  "players": { "min": 7, "max": 7, "fr": "7 joueurs (5 contre 2)", "en": "7 players (5 v 2)" },
+  "space": { "w": 14, "h": 14 },
+  "duration": { "fr": "5 x 2 min 30, 1 min de récupération", "en": "5 x 2 min 30, 1 min rest" },
+  "minutes": 17,
+  "md": ["MD-2", "youth"],
+  "intensity": "medium",
+  "intentions": ["respirer", "fixer"],
+  "skills": ["passe", "communication", "scan", "appels"],
+  "pieces": ["le cœur"],
+  "fr": {
+    "title": "Le rondo njangi",
+    "subtitle": "5 contre 2 : tout le monde verse sa part",
+    "objective": "Garder le ballon à 5 contre 2 jusqu'à ce que chacun l'ait touché dans la même séquence. On apprend à ne laisser personne de côté et à aller chercher le partenaire oublié, comme dans le njangi où chacun verse sa part.",
+    "organisation": [
+      "Carré de 14 x 14 m (16 x 16 m pour les U10), 5 attaquants sur le périmètre, 2 défenseurs.",
+      "Chaque attaquant porte un numéro de 1 à 5, annoncé avant la série.",
+      "Ballons de réserve aux coins, eau à portée de main à chaque récupération.",
+      "Pour les jeunes, l'entraîneur parle à voix calme et félicite les choix, pas seulement les points."
+    ],
+    "rules": [
+      "Deux touches maximum, trois pour les U10.",
+      "1 point quand les 5 attaquants ont touché le ballon dans la même séquence, sans perte.",
+      "Le compteur repart à zéro à chaque perte de balle.",
+      "Le joueur qui perd le ballon remplace le défenseur qui est au centre depuis le plus longtemps.",
+      "Jamais de punition pour celui qui perd : on change de rôle, c'est tout."
+    ],
+    "coaching": [
+      "Qui n'a pas encore touché ? Regarde-le avant de recevoir.",
+      "Le joueur oublié se déplace pour s'offrir, il n'attend pas qu'on le trouve.",
+      "Annonce ton numéro quand tu as touché : « Trois ! ».",
+      "Si la passe vers l'oublié est fermée, garde le ballon et fais-le circuler pour l'ouvrir.",
+      "Une passe facile vers celui qui a déjà touché, c'est bien aussi, si elle prépare la suivante."
+    ],
+    "progressions": [
+      "1 point seulement si les 5 ont touché en moins de 8 passes.",
+      "Deux touches pour tous, puis une touche pour le dernier à toucher.",
+      "Carré réduit à 12 x 12 m.",
+      "Un troisième défenseur entre après 3 passes."
+    ],
+    "regressions": [
+      "Point quand 4 joueurs sur 5 ont touché.",
+      "Un défenseur passif.",
+      "Carré de 18 x 18 m."
+    ],
+    "measure": "Nombre de points par série et joueur le moins servi de chaque série. Si c'est toujours le même, le groupe ne voit pas tout le carré.",
+    "story": "Mami Nyanga dirige le njangi des femmes depuis trente ans : chacun verse, la caisse circule, et tout le monde touche. Ce rondo, c'est son njangi."
+  },
+  "en": {
+    "title": "The Njangi Rondo",
+    "subtitle": "5 v 2: everyone pays in",
+    "objective": "Keep the ball 5 v 2 until every player has touched it in the same sequence. Players learn to leave nobody out and to find the forgotten teammate, like the njangi where everyone pays in.",
+    "organisation": [
+      "14 x 14 m square (16 x 16 m for U10), 5 attackers on the outside, 2 defenders.",
+      "Each attacker has a number from 1 to 5, called before the set.",
+      "Spare balls on the corners, water close by at every rest.",
+      "With young players, the coach speaks calmly and praises choices, not only points."
+    ],
+    "rules": [
+      "Two touches maximum, three for U10.",
+      "1 point when all 5 attackers have touched the ball in the same sequence without losing it.",
+      "The count goes back to zero every time the ball is lost.",
+      "The player who loses the ball replaces the defender who has been in the middle longest.",
+      "No punishment for losing the ball: you swap roles, that's all."
+    ],
+    "coaching": [
+      "Who hasn't touched it yet? Look at him before you receive.",
+      "The forgotten player moves to show for it; he doesn't wait to be found.",
+      "Call your number once you've touched it: \"Three!\".",
+      "If the pass to the forgotten player is closed, keep the ball moving to open it.",
+      "An easy pass to someone who has already touched it is fine too, if it sets up the next one."
+    ],
+    "progressions": [
+      "1 point only if all 5 touch it within 8 passes.",
+      "Two touches for everyone, then one touch for the last player to touch it.",
+      "Shrink the square to 12 x 12 m.",
+      "A third defender comes in after 3 passes."
+    ],
+    "regressions": [
+      "Point when 4 players out of 5 have touched it.",
+      "One passive defender.",
+      "18 x 18 m square."
+    ],
+    "measure": "Points per set and the least-used player in each set. If it is always the same player, the group is not seeing the whole square.",
+    "story": "Mami Nyanga has led the women's njangi for thirty years: everyone pays in, the pot goes round, and everyone receives. This rondo is her njangi."
+  },
+  "diagram": {
+    "view": "grid", "w": 14, "h": 14,
+    "players": [
+      { "id": "p1", "team": "a", "x": 0.8, "y": 6, "label": "1" },
+      { "id": "p2", "team": "a", "x": 5, "y": 13.2, "label": "2" },
+      { "id": "p3", "team": "a", "x": 13.2, "y": 10.5, "label": "3" },
+      { "id": "p4", "team": "a", "x": 13.2, "y": 3.5, "label": "4" },
+      { "id": "p5", "team": "a", "x": 6, "y": 0.8, "label": "5" },
+      { "id": "d1", "team": "b", "x": 4.6, "y": 6.6 },
+      { "id": "d2", "team": "b", "x": 9, "y": 8.4 }
+    ],
+    "ball": "p1",
+    "arrows": [
+      { "from": "p1", "to": "p2", "kind": "pass", "n": 1 },
+      { "from": "p2", "to": "p3", "kind": "pass", "n": 2 },
+      { "from": "p3", "to": "p4", "kind": "pass", "n": 3 },
+      { "from": "p4", "to": "p5", "kind": "pass", "n": 4 }
+    ],
+    "labels": [{ "x": 8.8, "y": 4.4, "text": "5 sur 5 = 1 point" }]
+  },
+  "diagram2": null
+}

@@ -73,11 +73,14 @@ export async function createAutoSession(input: AutoSessionInput): Promise<Sessio
 }
 
 /** Plan the four days before a match (MD-4 to MD-1). Skips days that already have a session. */
-export async function planWeek(opts: { matchDate: string; teamId?: string; ageGroup?: string; lang?: Lang; intention?: Intention; createdBy?: 'user' | 'mola' }) {
+/** Plans MD-4 to MD-1 before a match. Days before `from` (default: today) are skipped, and so are days that already have a session. */
+export async function planWeek(opts: { matchDate: string; teamId?: string; ageGroup?: string; lang?: Lang; intention?: Intention; createdBy?: 'user' | 'mola'; from?: string }) {
   const created: Session[] = []
   const mds: [MD, number][] = [['MD-4', -4], ['MD-3', -3], ['MD-2', -2], ['MD-1', -1]]
+  const from = opts.from ?? todayISO()
   for (const [md, off] of mds) {
     const date = addDays(opts.matchDate, off)
+    if (date < from) continue
     const exists = await db.sessions.where('date').equals(date).filter((s) => !opts.teamId || s.teamId === opts.teamId).count()
     if (exists) continue
     created.push(await createAutoSession({ md, date, teamId: opts.teamId, ageGroup: opts.ageGroup, lang: opts.lang, intention: opts.intention, createdBy: opts.createdBy }))
@@ -175,13 +178,13 @@ export const mailLink = (subject: string, text: string, to = '') => `mailto:${to
 
 const icsDate = (date: string, time = '10:00') => date.replace(/-/g, '') + 'T' + time.replace(':', '') + '00'
 export function toICS(events: { uid: string; title: string; date: string; time?: string; minutes?: number; location?: string; description?: string }[]) {
-  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Njangi//FR']
+  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Ndamba//FR']
   for (const e of events) {
     const start = icsDate(e.date, e.time)
     const [h, m] = (e.time || '10:00').split(':').map(Number)
     const endMin = h * 60 + m + (e.minutes ?? 90)
     const end = icsDate(e.date, `${String(Math.floor(endMin / 60) % 24).padStart(2, '0')}:${String(endMin % 60).padStart(2, '0')}`)
-    lines.push('BEGIN:VEVENT', `UID:${e.uid}@njangi`, `DTSTAMP:${icsDate(todayISO(), '00:00')}`, `DTSTART:${start}`, `DTEND:${end}`, `SUMMARY:${e.title}`)
+    lines.push('BEGIN:VEVENT', `UID:${e.uid}@ndamba`, `DTSTAMP:${icsDate(todayISO(), '00:00')}`, `DTSTART:${start}`, `DTEND:${end}`, `SUMMARY:${e.title}`)
     if (e.location) lines.push(`LOCATION:${e.location}`)
     if (e.description) lines.push(`DESCRIPTION:${e.description.replace(/\n/g, '\\n')}`)
     lines.push('END:VEVENT')

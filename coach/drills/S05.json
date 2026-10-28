@@ -1,0 +1,131 @@
+{
+  "id": "S05",
+  "family": "ssg",
+  "order": 5,
+  "ages": "U12+",
+  "players": { "min": 12, "max": 12, "fr": "12 joueurs (6 contre 6)", "en": "12 players (6 v 6)" },
+  "space": { "w": 45, "h": 35 },
+  "duration": { "fr": "4 x 5 min, 2 min de récupération", "en": "4 x 5 min, 2 min rest" },
+  "minutes": 28,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["fixer", "finir"],
+  "skills": ["passe", "scan", "decision", "communication", "appels"],
+  "pieces": ["la carte"],
+  "fr": {
+    "title": "Six buts",
+    "subtitle": "6 contre 6, trois mini-buts par équipe : fixer d'un côté, marquer de l'autre",
+    "objective": "Attirer l'adversaire d'un côté par la circulation, puis renverser vite pour marquer dans le but resté libre. Le jeu récompense la patience qui prépare et la vitesse qui punit.",
+    "organisation": [
+      "Terrain de 45 x 35 m ; trois mini-buts sur chaque ligne de fond : deux près des coins, un au centre.",
+      "Deux lignes de coupelles dans la longueur divisent le terrain en trois couloirs.",
+      "6 contre 6 sans gardien ; un demi-cercle de 2 m devant chaque mini-but est interdit à tous.",
+      "Ballons de réserve chez l'entraîneur, au milieu du côté."
+    ],
+    "rules": [
+      "Trois touches maximum.",
+      "But dans n'importe quel mini-but adverse : 1 point.",
+      "But dans un mini-but extérieur après un passage du ballon par le couloir opposé, dans la même action : 2 points.",
+      "Après un but, l'équipe qui a encaissé relance depuis sa ligne de fond.",
+      "Ballon sorti : rentrée au pied, au sol."
+    ],
+    "coaching": [
+      "Attire le bloc : quelques passes courtes du même côté, sans te presser.",
+      "Pendant que le ballon circule, regarde le côté opposé : combien d'adversaires y restent ?",
+      "Renverse quand le bloc a glissé, en une ou deux passes, par un relais dans l'axe si besoin.",
+      "Le joueur du côté faible reste large et loin : c'est lui qui finit.",
+      "En défense, glissez ensemble vers le ballon, mais gardez un joueur près du côté faible."
+    ],
+    "progressions": [
+      "2 points seulement si le renversement s'est fait en 2 passes ou moins.",
+      "Deux touches maximum.",
+      "Mini-but central supprimé : le match se gagne sur les côtés."
+    ],
+    "regressions": [
+      "Un joker joue avec l'équipe en possession : 7 contre 6.",
+      "Touches libres.",
+      "Terrain raccourci à 40 x 35 m pour arriver plus vite aux buts."
+    ],
+    "measure": "Buts à 2 points par série et renversements tentés. Repère : une équipe qui fixe bien marque au moins la moitié de ses buts du côté opposé à celui où l'action a commencé.",
+    "story": "Contre Riu Ebre, le plan de Jordi tient en une phrase : faire circuler à droite, attirer, puis renverser vite pour laisser BriBri seul à gauche."
+  },
+  "en": {
+    "title": "Six Goals",
+    "subtitle": "6 v 6, three mini goals per team: pin them on one side, score on the other",
+    "objective": "Draw the opponents to one side by moving the ball, then switch fast to score in the goal left open. The game rewards the patience that sets it up and the speed that punishes.",
+    "organisation": [
+      "45 x 35 m pitch; three mini goals on each end line: two near the corners, one in the middle.",
+      "Two lines of disc cones along the length split the pitch into three lanes.",
+      "6 v 6 with no keepers; a 2 m semicircle in front of each mini goal is out of bounds for everyone.",
+      "Spare balls with the coach, at halfway on the side."
+    ],
+    "rules": [
+      "Three touches maximum.",
+      "Goal in any opposition mini goal: 1 point.",
+      "Goal in a wide mini goal after the ball has been in the opposite lane during the same move: 2 points.",
+      "After a goal, the team that conceded restarts from its own end line.",
+      "Ball out of play: kick-in along the ground."
+    ],
+    "coaching": [
+      "Draw the block in: a few short passes on the same side, no rush.",
+      "While the ball moves, look at the far side: how many opponents are left there?",
+      "Switch once the block has shifted, in one or two passes, through a central link if needed.",
+      "The weak-side player stays wide and far: he is the one who finishes.",
+      "When defending, shift together towards the ball, but keep one player near the weak side."
+    ],
+    "progressions": [
+      "2 points only if the switch took 2 passes or fewer.",
+      "Two touches maximum.",
+      "Remove the central mini goal: the game is won on the flanks."
+    ],
+    "regressions": [
+      "A joker plays for the team in possession: 7 v 6.",
+      "Unlimited touches.",
+      "Shorten the pitch to 40 x 35 m to reach the goals faster."
+    ],
+    "measure": "2-point goals per set and switches attempted. Benchmark: a team that pins well scores at least half of its goals on the side opposite to where the move started.",
+    "story": "Against Riu Ebre, Jordi's plan fits in one sentence: move it on the right, draw them in, then switch fast to leave BriBri one against one on the left."
+  },
+  "diagram": {
+    "view": "grid", "w": 45, "h": 35,
+    "zones": [
+      { "x": 0, "y": 0, "w": 45, "h": 11.5, "tone": "soft" },
+      { "x": 0, "y": 23.5, "w": 45, "h": 11.5, "tone": "soft" }
+    ],
+    "cones": [[0, 0], [45, 0], [0, 11.5], [45, 11.5], [0, 23.5], [45, 23.5], [0, 35], [45, 35]],
+    "goals": [
+      { "x": 45, "y": 5, "side": "left", "size": "mini" },
+      { "x": 45, "y": 17.5, "side": "left", "size": "mini" },
+      { "x": 45, "y": 30, "side": "left", "size": "mini" },
+      { "x": 0, "y": 5, "side": "right", "size": "mini" },
+      { "x": 0, "y": 17.5, "side": "right", "size": "mini" },
+      { "x": 0, "y": 30, "side": "right", "size": "mini" }
+    ],
+    "players": [
+      { "id": "a1", "team": "a", "x": 13, "y": 5 },
+      { "id": "a2", "team": "a", "x": 20, "y": 9 },
+      { "id": "a3", "team": "a", "x": 25, "y": 3 },
+      { "id": "a4", "team": "a", "x": 8, "y": 16 },
+      { "id": "a5", "team": "a", "x": 21, "y": 19 },
+      { "id": "a6", "team": "a", "x": 32, "y": 30 },
+      { "id": "b1", "team": "b", "x": 17, "y": 4.5 },
+      { "id": "b2", "team": "b", "x": 24, "y": 7.5 },
+      { "id": "b3", "team": "b", "x": 30, "y": 6 },
+      { "id": "b4", "team": "b", "x": 15.5, "y": 13.5 },
+      { "id": "b5", "team": "b", "x": 29, "y": 14 },
+      { "id": "b6", "team": "b", "x": 36, "y": 19 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "a2", "kind": "pass", "n": 1 },
+      { "from": "a2", "to": "a5", "kind": "pass", "n": 2 },
+      { "from": "a5", "to": "a6", "kind": "pass", "n": 3 },
+      { "from": "a6", "to": [43.8, 29.5], "kind": "shot", "n": 4 }
+    ],
+    "labels": [
+      { "x": 6, "y": 9.5, "text": "fixer" },
+      { "x": 38, "y": 33.6, "text": "finir" }
+    ]
+  },
+  "diagram2": null
+}

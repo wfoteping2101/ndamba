@@ -1,0 +1,113 @@
+{
+  "id": "R05",
+  "family": "rondo",
+  "order": 5,
+  "ages": "U11+",
+  "players": { "min": 9, "max": 9, "fr": "9 joueurs (6 contre 3) et l'entraîneur", "en": "9 players (6 v 3) plus the coach" },
+  "space": { "w": 16, "h": 16 },
+  "duration": { "fr": "4 x 3 min, 1 min de récupération", "en": "4 x 3 min, 1 min rest" },
+  "minutes": 15,
+  "md": ["MD-4", "MD-2", "youth"],
+  "intensity": "medium",
+  "intentions": ["respirer", "progresser"],
+  "skills": ["scan", "communication", "controle", "decision"],
+  "pieces": ["les yeux"],
+  "fr": {
+    "title": "Le rondo des yeux",
+    "subtitle": "6 contre 3 : annoncer la couleur avant de jouer",
+    "objective": "Obliger chaque receveur à regarder par-dessus son épaule avant que le ballon arrive. On transforme le scan en habitude : celui qui a déjà regardé joue plus vite et plus juste.",
+    "organisation": [
+      "Carré de 16 x 16 m, 6 attaquants sur le périmètre, 3 défenseurs à l'intérieur.",
+      "L'entraîneur se déplace à l'extérieur du carré, avec quatre plots ou chasubles de couleurs différentes.",
+      "Il se place derrière le futur receveur et lève une couleur au moment de la passe.",
+      "Un adjoint, ou un joueur au repos, compte les annonces justes."
+    ],
+    "rules": [
+      "Deux touches maximum.",
+      "Le receveur annonce la couleur à voix haute avant son premier contact.",
+      "Couleur oubliée ou fausse : le ballon revient aux défenseurs, qui le rendent tout de suite à l'entraîneur.",
+      "8 passes consécutives avec annonces justes : 1 point.",
+      "Rotation des défenseurs toutes les 90 secondes."
+    ],
+    "coaching": [
+      "Regarde au moment où le ballon quitte le pied du passeur, pas après.",
+      "Un coup d'œil court, puis les yeux reviennent sur le ballon.",
+      "Deux regards valent mieux qu'un : avant la passe, puis pendant qu'elle roule.",
+      "Ouvre le corps vers l'endroit que tu as vu libre.",
+      "Annonce fort : ta voix informe aussi tes partenaires."
+    ],
+    "progressions": [
+      "Une couleur veut dire une direction : jaune, joue à droite ; rouge, joue à gauche.",
+      "Deux entraîneurs lèvent deux couleurs ; le receveur annonce les deux.",
+      "Une touche obligatoire après une annonce juste.",
+      "L'entraîneur montre un nombre de doigts au lieu d'une couleur."
+    ],
+    "regressions": [
+      "Carré de 18 x 18 m, trois touches.",
+      "Deux défenseurs au lieu de trois.",
+      "L'entraîneur lève la couleur plus tôt, avant la passe."
+    ],
+    "measure": "Pourcentage d'annonces justes par série et nombre de pertes de balle. Un joueur qui annonce juste et perd moins de ballons a gagné une habitude de scan.",
+    "story": "Le poignet dans le plâtre, BriBri invente avec Lucas le jeu des cartes de couleur montrées dans le dos ; ce rondo en est la version de terrain."
+  },
+  "en": {
+    "title": "The Eyes Rondo",
+    "subtitle": "6 v 3: call the colour before you play",
+    "objective": "Force every receiver to look over the shoulder before the ball arrives. Scanning becomes a habit: the player who has already looked plays quicker and better.",
+    "organisation": [
+      "16 x 16 m square, 6 attackers on the outside, 3 defenders inside.",
+      "The coach moves around outside the square with four cones or bibs of different colours.",
+      "He stands behind the next receiver and lifts a colour as the pass is played.",
+      "An assistant, or a resting player, counts the correct calls."
+    ],
+    "rules": [
+      "Two touches maximum.",
+      "The receiver calls the colour out loud before his first touch.",
+      "Wrong or missing call: the ball goes to the defenders, who give it straight back to the coach.",
+      "8 passes in a row with correct calls: 1 point.",
+      "Rotate the defenders every 90 seconds."
+    ],
+    "coaching": [
+      "Look as the ball leaves the passer's foot, not after.",
+      "A quick glance, then your eyes come back to the ball.",
+      "Two checks beat one: before the pass, then while it is travelling.",
+      "Open your body towards the space you saw.",
+      "Call it loud: your voice informs your teammates too."
+    ],
+    "progressions": [
+      "Each colour means a direction: yellow, play right; red, play left.",
+      "Two coaches lift two colours; the receiver calls both.",
+      "One touch only after a correct call.",
+      "The coach shows a number of fingers instead of a colour."
+    ],
+    "regressions": [
+      "18 x 18 m square, three touches.",
+      "Two defenders instead of three.",
+      "The coach lifts the colour earlier, before the pass."
+    ],
+    "measure": "Share of correct calls per set and number of balls lost. A player who calls correctly and loses fewer balls has built a scanning habit.",
+    "story": "With his wrist in plaster, BriBri and Lucas invent the game of colour cards shown behind your back; this rondo is the pitch version of it."
+  },
+  "diagram": {
+    "view": "grid", "w": 16, "h": 16,
+    "players": [
+      { "id": "p1", "team": "a", "x": 0.8, "y": 9 },
+      { "id": "p2", "team": "a", "x": 5, "y": 0.8 },
+      { "id": "p3", "team": "a", "x": 11, "y": 0.8 },
+      { "id": "r", "team": "a", "x": 15.2, "y": 7.5, "label": "R" },
+      { "id": "p5", "team": "a", "x": 11.5, "y": 15.2 },
+      { "id": "p6", "team": "a", "x": 4.5, "y": 15.2 },
+      { "id": "d1", "team": "b", "x": 5.5, "y": 6 },
+      { "id": "d2", "team": "b", "x": 10, "y": 5.5 },
+      { "id": "d3", "team": "b", "x": 8, "y": 11.5 }
+    ],
+    "ball": "p1",
+    "arrows": [
+      { "from": "p1", "to": "r", "kind": "pass", "n": 1 },
+      { "from": "d2", "to": [13.2, 6.6], "kind": "press", "n": 2 },
+      { "from": "r", "to": "p5", "kind": "pass", "n": 3 }
+    ],
+    "labels": [{ "x": 13.6, "y": 4.2, "text": "« Jaune ! »" }]
+  },
+  "diagram2": null
+}

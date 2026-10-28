@@ -1,0 +1,62 @@
+{
+ "sheet-brothers": {
+  "status": "approved",
+  "note": "Identity locked: shaved part on Kaydoudou's left, gap tooth, red sock right and yellow sock left, BriBri's head at his brother's chin."
+ },
+ "sheet-adults": {
+  "status": "approved",
+  "note": "Consistent with the v1 identity sheet; Fokou keeps the cane of v1 for his limp."
+ },
+ "sheet-expressions": {
+  "status": "approved",
+  "note": "Eight readable expressions."
+ },
+ "sheet-turnaround": {
+  "status": "approved",
+  "note": "Minor: in the back view the shaved part is drawn on the wrong side; front, three-quarter and profile are correct. Scenes use sheet-brothers as the main reference."
+ },
+ "cover-rough-a": {
+  "status": "approved",
+  "note": "Rough, score 12/15 (title zone busy). Not published."
+ },
+ "cover-rough-b": {
+  "status": "approved",
+  "note": "Rough, score 14/15 (ribbon of countries cluttered). Not published."
+ },
+ "cover-rough-c": {
+  "status": "approved",
+  "note": "Rough, score 15/15, chosen direction."
+ },
+ "cover-art": {
+  "status": "approved",
+  "note": "Both faces readable at thumbnail size, gateway framing, journey road, calm title sky."
+ },
+ "code-cover-art": {
+  "status": "approved",
+  "note": "Passing triangles toward the goal, star in the sky, calm title zone."
+ },
+ "ch07": {
+  "status": "approved",
+  "note": "Representative interior, style reference for all scenes: identities, socks, notebook and light all match."
+ },
+ "part1": {
+  "status": "approved",
+  "note": "Red-earth pitch of Bonamoussadi; both brothers small, juggling."
+ },
+ "ch01": {
+  "status": "approved",
+  "note": "Tears in the dust, hand on the shoulder, fence, mango tree, cap; socks correct."
+ },
+ "ch02": {
+  "status": "approved",
+  "note": "Mami sews the wax patch, BriBri leans in, Kaydoudou in the doorway."
+ },
+ "ch04": {
+  "status": "approved",
+  "note": "Mud fight, Ousmane's big hands, Fokou fake-angry under the mango tree."
+ },
+ "ch05": {
+  "status": "approved",
+  "note": "Papa draws the network, Kaydoudou follows the arrow, BriBri's socks in the air on the sofa."
+ }
+}

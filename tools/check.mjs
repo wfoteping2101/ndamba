@@ -20,7 +20,7 @@ for (const file of args) {
   const meta = {}
   if (!fm) problems.push('missing front matter')
   else for (const line of fm[1].split('\n')) { const m = line.match(/^(\w+):\s*(.*)$/); if (m) meta[m[1]] = m[2] }
-  const isCoach = file.includes('/coach/')
+  const isCoach = path.resolve(file).includes('/coach/')
   if (!isCoach) for (const k of REQUIRED) if (!meta[k]) problems.push(`front matter missing ${k}`)
   const body = fm ? raw.slice(fm[0].length) : raw
   const dashLines = raw.split('\n').map((l, i) => [i + 1, l]).filter(([, l]) => /[–—]/.test(l))

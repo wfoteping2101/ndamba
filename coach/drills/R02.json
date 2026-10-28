@@ -1,0 +1,111 @@
+{
+  "id": "R02",
+  "family": "rondo",
+  "order": 2,
+  "ages": "U11+",
+  "players": { "min": 7, "max": 7, "fr": "7 joueurs (5 contre 2)", "en": "7 players (5 v 2)" },
+  "space": { "w": 14, "h": 14 },
+  "duration": { "fr": "4 x 3 min, 1 min de récupération", "en": "4 x 3 min, 1 min rest" },
+  "minutes": 15,
+  "md": ["MD-4", "MD-2", "MD-1"],
+  "intensity": "medium",
+  "intentions": ["fixer", "respirer"],
+  "skills": ["scan", "passe", "decision", "protection"],
+  "pieces": ["la carte"],
+  "fr": {
+    "title": "Rondo Avi Ramon",
+    "subtitle": "5 contre 2 avec la règle de la pause",
+    "objective": "Garder le ballon à 5 contre 2 en apprenant la pause : attendre une demi-seconde de plus pour qu'un défenseur s'engage, puis jouer dans son dos. On entraîne la patience qui fixe et la passe qui libère.",
+    "organisation": [
+      "Carré de 14 x 14 m, 5 attaquants sur le périmètre, 2 défenseurs à l'intérieur.",
+      "Les attaquants restent sur les lignes ; deux d'entre eux partagent un côté.",
+      "Ballons de réserve aux quatre coins, une chasuble par défenseur.",
+      "Pour 14 joueurs, deux carrés côte à côte et un entraîneur entre les deux."
+    ],
+    "rules": [
+      "Deux touches maximum.",
+      "10 passes consécutives : 1 point.",
+      "Règle de la pause : attirer un défenseur sur soi puis jouer dans son dos vaut 1 point bonus.",
+      "Passe entre les deux défenseurs : 1 point.",
+      "Le joueur qui perd le ballon remplace le défenseur qui est au centre depuis le plus longtemps."
+    ],
+    "coaching": [
+      "Garde le ballon une demi-seconde de plus : laisse le défenseur venir.",
+      "Ballon sur le pied loin du défenseur, corps ouvert : tu peux attendre sans risque.",
+      "Joue dans la ligne qu'il vient de quitter, pas dans celle qu'il ferme.",
+      "Partenaires, ajustez-vous pendant la pause : un pas suffit pour ouvrir l'angle.",
+      "Pas de pause sans raison : si la ligne est déjà ouverte, joue tout de suite."
+    ],
+    "progressions": [
+      "Une touche obligatoire, sauf pour le joueur qui fait la pause.",
+      "Carré réduit à 12 x 12 m.",
+      "Les défenseurs qui récupèrent marquent s'ils enchaînent 3 passes entre eux.",
+      "5 contre 3 : un troisième défenseur ferme l'axe."
+    ],
+    "regressions": [
+      "Trois touches, carré de 16 x 16 m.",
+      "Un des deux défenseurs reste passif.",
+      "L'entraîneur annonce lui-même le point bonus et nomme le joueur qui a bien attendu."
+    ],
+    "measure": "Nombre de points bonus de pause par série et nombre de pertes de balle par série. Un groupe progresse quand les points de pause montent sans que les pertes augmentent.",
+    "story": "Sur la place du village, Avi Ramon ne perd jamais le ballon en bougeant à peine : il attend que le défenseur s'engage. C'est cette demi-seconde que l'on entraîne ici."
+  },
+  "en": {
+    "title": "Avi Ramon Rondo",
+    "subtitle": "5 v 2 with the pause rule",
+    "objective": "Keep the ball 5 v 2 while learning the pause: hold it half a second longer so a defender commits, then play behind him. It trains the patience that pins a defender and the pass that frees a teammate.",
+    "organisation": [
+      "14 x 14 m square, 5 attackers on the outside, 2 defenders inside.",
+      "Attackers stay on the lines; two of them share one side.",
+      "Spare balls on all four corners, one bib per defender.",
+      "With 14 players, run two squares side by side with one coach between them."
+    ],
+    "rules": [
+      "Two touches maximum.",
+      "10 passes in a row: 1 point.",
+      "Pause rule: drawing a defender onto you, then playing behind him, earns a bonus point.",
+      "A pass split between the two defenders: 1 point.",
+      "The player who loses the ball replaces the defender who has been in the middle longest."
+    ],
+    "coaching": [
+      "Hold the ball half a second longer: let the defender come to you.",
+      "Ball on the foot away from the defender, body open: you can wait safely.",
+      "Play into the lane he has just left, not the one he is closing.",
+      "Teammates, adjust during the pause: one step is enough to open the angle.",
+      "No pause without a reason: if the lane is already open, play now."
+    ],
+    "progressions": [
+      "One touch only, except for the player making the pause.",
+      "Shrink the square to 12 x 12 m.",
+      "Defenders who win the ball score if they string 3 passes together.",
+      "5 v 3: a third defender closes the middle."
+    ],
+    "regressions": [
+      "Three touches, 16 x 16 m square.",
+      "One of the two defenders stays passive.",
+      "The coach calls the bonus point and names the player who waited well."
+    ],
+    "measure": "Pause bonus points per set and balls lost per set. The group is improving when pause points go up without more balls being lost.",
+    "story": "In the village square, Avi Ramon never loses the ball and barely moves: he waits for the defender to commit. That half second is what this rondo trains."
+  },
+  "diagram": {
+    "view": "grid", "w": 14, "h": 14,
+    "players": [
+      { "id": "k", "team": "a", "x": 0.8, "y": 8.5, "label": "K" },
+      { "id": "a2", "team": "a", "x": 6, "y": 0.8 },
+      { "id": "a3", "team": "a", "x": 13.2, "y": 6 },
+      { "id": "a4", "team": "a", "x": 10, "y": 13.2 },
+      { "id": "a5", "team": "a", "x": 3.5, "y": 13.2 },
+      { "id": "d1", "team": "b", "x": 3.2, "y": 7 },
+      { "id": "d2", "team": "b", "x": 8.5, "y": 6.5 }
+    ],
+    "ball": "k",
+    "arrows": [
+      { "from": [6.4, 4.8], "to": "d1", "kind": "press", "n": 1 },
+      { "from": "k", "to": "a4", "kind": "pass", "n": 2 },
+      { "from": "a4", "to": "a3", "kind": "pass", "n": 3 }
+    ],
+    "labels": [{ "x": 2.4, "y": 10.6, "text": "pausa" }]
+  },
+  "diagram2": null
+}

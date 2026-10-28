@@ -1,0 +1,115 @@
+{
+  "id": "S01",
+  "family": "ssg",
+  "order": 1,
+  "ages": "U9+",
+  "players": { "min": 6, "max": 6, "fr": "6 joueurs par terrain (3 contre 3), plusieurs terrains en parallèle", "en": "6 players per pitch (3 v 3), several pitches side by side" },
+  "space": { "w": 25, "h": 20 },
+  "duration": { "fr": "6 x 2 min, 1 min de récupération", "en": "6 x 2 min, 1 min rest" },
+  "minutes": 17,
+  "md": ["youth", "MD-4"],
+  "intensity": "high",
+  "intentions": ["fixer", "finir"],
+  "skills": ["scan", "decision", "conduite", "passe"],
+  "pieces": ["les yeux", "la carte"],
+  "fr": {
+    "title": "Quatre petits buts",
+    "subtitle": "3 contre 3, deux mini-buts par équipe : marquer là où c'est ouvert",
+    "objective": "Lever la tête, lire quel but est le moins protégé et décider vite : marquer, ou changer de côté pour l'atteindre. Un premier pas vers « fixer d'un côté pour finir de l'autre », par le jeu.",
+    "organisation": [
+      "Terrain de 25 x 20 m ; deux mini-buts sur chaque ligne de fond, près des coins.",
+      "3 contre 3 ; avec beaucoup d'enfants, plusieurs terrains côte à côte plutôt qu'une file d'attente.",
+      "Une zone de 2 m devant chaque mini-but, marquée par des coupelles, interdite à tous.",
+      "Ballons de réserve autour du terrain ; pause boisson à chaque récupération, à l'ombre si possible."
+    ],
+    "rules": [
+      "Touches libres ; on marque dans l'un des deux mini-buts adverses.",
+      "But : 1 point.",
+      "But dans le mini-but opposé au côté où l'équipe a récupéré le ballon : 2 points.",
+      "Ballon sorti : rentrée en conduite ou en passe au sol, tout de suite.",
+      "Après un but, l'entraîneur donne un nouveau ballon à l'équipe qui a encaissé."
+    ],
+    "coaching": [
+      "Lève la tête : quel but est seul ?",
+      "Les défenseurs sont tous d'un côté ? L'autre but est ouvert.",
+      "Fais venir un défenseur vers toi, puis passe ou change de côté.",
+      "Sans ballon, écarte-toi pour offrir le changement de côté.",
+      "En défense, protège le but le plus proche du ballon et parle à ton partenaire."
+    ],
+    "progressions": [
+      "Deux touches maximum, à partir de U11.",
+      "Le but à 2 points doit arriver en 3 passes ou moins après la récupération.",
+      "4 contre 4 sur 30 x 22 m."
+    ],
+    "regressions": [
+      "Un joker joue avec l'équipe en possession : 4 contre 3.",
+      "Mini-buts plus larges, ou deux plots espacés de 2 m.",
+      "Une seule règle au début, marquer ; les 2 points arrivent à la deuxième série."
+    ],
+    "measure": "Part des buts marqués dans le but le moins protégé et buts à 2 points par série. Chez les U9, l'entraîneur compte simplement combien d'enfants lèvent la tête avant de choisir un but.",
+    "story": "Tonton Fokou reproche à Kaydoudou de tout voir sans rien dire ; ici, celui qui voit le but libre le dit, ou le joue."
+  },
+  "en": {
+    "title": "Four Small Goals",
+    "subtitle": "3 v 3, two mini goals per team: score where it is open",
+    "objective": "Get the head up, read which goal is less protected and decide fast: score, or switch sides to reach it. A first step, through play, towards \"pin them on one side, finish on the other\".",
+    "organisation": [
+      "25 x 20 m pitch; two mini goals on each end line, near the corners.",
+      "3 v 3; with lots of children, run several pitches side by side rather than a queue.",
+      "A 2 m zone in front of each mini goal, marked with disc cones, is out of bounds for everyone.",
+      "Spare balls around the pitch; drinks break during every rest, in the shade if possible."
+    ],
+    "rules": [
+      "Unlimited touches; score in either of the two opposition mini goals.",
+      "Goal: 1 point.",
+      "Goal in the mini goal on the side opposite to where the team won the ball: 2 points.",
+      "Ball out of play: restart straight away with a dribble-in or a pass along the ground.",
+      "After a goal, the coach gives a new ball to the team that conceded."
+    ],
+    "coaching": [
+      "Head up: which goal is unguarded?",
+      "Are all the defenders on one side? The other goal is open.",
+      "Draw a defender towards you, then pass or switch sides.",
+      "Without the ball, spread out to offer the switch.",
+      "When defending, protect the goal nearest the ball and talk to your teammate."
+    ],
+    "progressions": [
+      "Two touches maximum, from U11.",
+      "The 2-point goal must come within 3 passes of winning the ball.",
+      "4 v 4 on 30 x 22 m."
+    ],
+    "regressions": [
+      "A joker plays for the team in possession: 4 v 3.",
+      "Wider mini goals, or two markers 2 m apart.",
+      "Just one rule at first, score; the 2 points come in from the second set."
+    ],
+    "measure": "Share of goals scored in the less protected goal and 2-point goals per set. With U9s, the coach simply counts how many children look up before choosing a goal.",
+    "story": "Tonton Fokou tells Kaydoudou off for seeing everything and saying nothing; here, whoever sees the open goal calls it, or plays it."
+  },
+  "diagram": {
+    "view": "grid", "w": 25, "h": 20,
+    "goals": [
+      { "x": 25, "y": 4, "side": "left", "size": "mini" },
+      { "x": 25, "y": 16, "side": "left", "size": "mini" },
+      { "x": 0, "y": 4, "side": "right", "size": "mini" },
+      { "x": 0, "y": 16, "side": "right", "size": "mini" }
+    ],
+    "players": [
+      { "id": "a1", "team": "a", "x": 10, "y": 5 },
+      { "id": "a2", "team": "a", "x": 14.5, "y": 9 },
+      { "id": "a3", "team": "a", "x": 12, "y": 16 },
+      { "id": "b1", "team": "b", "x": 14, "y": 3.5 },
+      { "id": "b2", "team": "b", "x": 18.5, "y": 6.5 },
+      { "id": "b3", "team": "b", "x": 19.5, "y": 11 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "a2", "kind": "pass", "n": 1 },
+      { "from": "a2", "to": "a3", "kind": "pass", "n": 2 },
+      { "from": "a3", "to": [19.5, 16.5], "kind": "dribble", "n": 3 },
+      { "from": [19.5, 16.5], "to": [23.8, 16], "kind": "shot", "n": 4 }
+    ],
+    "labels": [{ "x": 21, "y": 19.3, "text": "but libre" }]
+  },
+  "diagram2": null
+}

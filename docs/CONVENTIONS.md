@@ -1,9 +1,9 @@
-# Njangi app: build conventions (read first)
+# Ndamba app: build conventions (read first)
 
-Njangi is one codebase with four products, owned by William Foteping (Lemon Network Solutions, Maryland, Cameroonian heritage):
-1. **Kaydoudou & BriBri, Tome 1 : Le Ballon qui voyage** (French children's novel, `tome1/`), read in the browser at `/book/tome1/`.
-2. **La Méthode Njangi. Posséder avec intention** (coaching book, `coach/`), read at `/book/methode/`; its 50 drills (`coach/drills/*.json`) power the app.
-3. **The Njangi app** (`app/`): a premium, bilingual (French first, English second) app for players, coaches and analysts, comparable to the best all-in-one football apps: drill library, session builder, week planner (periodization), player development, team and match setup, live match tagging that produces a "team philosophy" report (the Indice Njangi), video analysis, the books.
+This repository is one codebase with four products (naming, October 2026: app **Ndamba**, children's saga **Lionceaux**, coaching book **Le Code Njangi**, agent **Mola**; the philosophy and the Indice Njangi keep the Njangi name), owned by William Foteping (Lemon Network Solutions, Maryland, Cameroonian heritage):
+1. **Lionceaux, tome 1 : Le Ballon qui voyage** (French children's novel starring Kaydoudou & BriBri, `tome1/`), read in the browser at `/book/tome1/`.
+2. **Le Code Njangi. Posséder avec intention** (coaching book, `coach/`), read at `/book/methode/`; its 50 drills (`coach/drills/*.json`) power the app.
+3. **The Ndamba app** (`app/`): a premium, bilingual (French first, English second) app for players, coaches and analysts, comparable to the best all-in-one football apps: drill library, session builder, week planner (periodization), player development, team and match setup, live match tagging that produces a "team philosophy" report (the Indice Njangi), video analysis, the books.
 4. **Mola**: the app's agent. Like a "do-it-for-me" action agent: it onboards new users by conversation (filling their details as they talk) and then *does things* inside the app (builds sessions, plans the week, sets up matches, adds players, drafts convocation messages for approval, opens reports).
 
 Philosophy and mantra (use them, never decorate with them): **« Le ballon doit voyager. Mais il doit savoir où il va. »** and **« Une nation africaine championne du monde en 2030 ou en 2034. »** The Njangi is the Cameroonian tontine: everyone contributes, the pot circulates, everyone benefits; possession must circulate *with a purpose*.

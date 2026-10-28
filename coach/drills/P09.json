@@ -1,0 +1,120 @@
+{
+  "id": "P09",
+  "family": "position",
+  "order": 9,
+  "ages": "U13+",
+  "players": { "min": 14, "max": 14, "fr": "14 joueurs (6 contre 6 + 2 neutres cibles)", "en": "14 players (6 v 6 + 2 neutral targets)" },
+  "space": { "w": 45, "h": 30 },
+  "duration": { "fr": "4 x 4 min, 2 min de récupération", "en": "4 x 4 min, 2 min rest" },
+  "minutes": 24,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["respirer", "fixer", "progresser"],
+  "skills": ["passe", "scan", "decision", "appels", "communication"],
+  "pieces": ["la carte", "le souffle"],
+  "fr": {
+    "title": "Lent, lent, VITE",
+    "subtitle": "6 contre 6 + 2 neutres : circuler pour attirer, puis accélérer",
+    "objective": "Changer de rythme avec intention : circuler lentement pour attirer le bloc adverse, puis accélérer d'un coup quand l'espace s'ouvre. Le changement de rythme est une arme, à condition de savoir quand le déclencher.",
+    "organisation": [
+      "Rectangle de 45 x 30 m ; un neutre sur chaque ligne de fond, qui se déplace sur toute la ligne.",
+      "6 contre 6 à l'intérieur ; chaque équipe attaque le neutre de la ligne de fond adverse, sa cible.",
+      "Le neutre de sa propre ligne de fond sert d'appui pour circuler.",
+      "L'entraîneur se place sur le côté, au milieu, pour annoncer et compter."
+    ],
+    "rules": [
+      "Trois touches maximum ; une touche pour les neutres.",
+      "Au moins 4 passes de circulation avant de jouer vers la cible.",
+      "Ballon reçu par la cible : 1 point.",
+      "Cible atteinte moins de 3 secondes après la première passe vers l'avant : 2 points ; l'entraîneur crie « Vite ! » et compte.",
+      "Après un point, la cible remet à l'équipe qui a marqué et tout repart à zéro."
+    ],
+    "coaching": [
+      "Lent : passes courtes et sûres, pour faire venir le bloc adverse.",
+      "Pendant que le ballon circule, regarde où l'espace s'ouvre.",
+      "Le déclencheur : un adversaire sort, une ligne s'ouvre, un partenaire est libre entre les lignes.",
+      "VITE : la passe vers l'avant part forte, et deux partenaires attaquent l'espace en même temps.",
+      "Après la passe vers l'avant, une touche : le temps est l'arme."
+    ],
+    "progressions": [
+      "2 secondes seulement pour les 2 points.",
+      "La passe vers l'avant doit traverser une ligne de deux adversaires.",
+      "Terrain réduit à 40 x 25 m."
+    ],
+    "regressions": [
+      "4 secondes pour les 2 points.",
+      "Un neutre supplémentaire à l'intérieur : 7 contre 6.",
+      "Touches libres pendant la circulation."
+    ],
+    "measure": "Points à 1 et à 2 par série. L'analyste chronomètre la première passe vers l'avant jusqu'à la cible : la majorité des accélérations doit finir en moins de 3 secondes.",
+    "story": "Contre l'Académie de l'Atlas, les frères gagnent en circulant lentement pour attirer, puis en accélérant d'un coup. Kaydoudou l'écrit : lent, lent, VITE."
+  },
+  "en": {
+    "title": "Slow, Slow, QUICK",
+    "subtitle": "6 v 6 + 2 neutrals: circulate to draw them in, then speed up",
+    "objective": "Change tempo with a purpose: move the ball slowly to draw the opposing block, then speed up all at once when the space opens. A change of tempo is a weapon, as long as you know when to trigger it.",
+    "organisation": [
+      "45 x 30 m area; one neutral on each end line, free to move along the whole line.",
+      "6 v 6 inside; each team attacks the neutral on the opposite end line, its target.",
+      "The neutral on its own end line acts as a support to circulate the ball.",
+      "The coach stands on the side, at halfway, to call and count."
+    ],
+    "rules": [
+      "Three touches maximum; one touch for the neutrals.",
+      "At least 4 circulation passes before playing towards the target.",
+      "Ball received by the target: 1 point.",
+      "Target reached less than 3 seconds after the first forward pass: 2 points; the coach shouts \"Quick!\" and counts.",
+      "After a point, the target gives the ball back to the scoring team and everything starts again from zero."
+    ],
+    "coaching": [
+      "Slow: short, safe passes to draw the opposing block in.",
+      "While the ball moves, look for where the space is opening.",
+      "The trigger: an opponent steps out, a line opens, a teammate is free between the lines.",
+      "QUICK: the forward pass is played firm, and two teammates attack the space at the same time.",
+      "After the forward pass, one touch: time is the weapon."
+    ],
+    "progressions": [
+      "Only 2 seconds for the 2 points.",
+      "The forward pass must go through a line of two opponents.",
+      "Shrink the area to 40 x 25 m."
+    ],
+    "regressions": [
+      "4 seconds for the 2 points.",
+      "One extra neutral inside: 7 v 6.",
+      "Unlimited touches during circulation."
+    ],
+    "measure": "1-point and 2-point scores per set. The analyst times each attack from the first forward pass to the target: most accelerations should finish in under 3 seconds.",
+    "story": "Against the Atlas Academy, the brothers win by moving the ball slowly to draw them in, then speeding up all at once. Kaydoudou writes it down: slow, slow, QUICK."
+  },
+  "diagram": {
+    "view": "grid", "w": 45, "h": 30,
+    "players": [
+      { "id": "n1", "team": "n", "x": 0.8, "y": 15 },
+      { "id": "n2", "team": "n", "x": 44.2, "y": 15 },
+      { "id": "a1", "team": "a", "x": 7, "y": 7 },
+      { "id": "a2", "team": "a", "x": 7, "y": 23 },
+      { "id": "a3", "team": "a", "x": 15, "y": 15 },
+      { "id": "a4", "team": "a", "x": 25, "y": 4 },
+      { "id": "a5", "team": "a", "x": 26, "y": 26 },
+      { "id": "a6", "team": "a", "x": 33, "y": 15 },
+      { "id": "b1", "team": "b", "x": 12, "y": 10.5 },
+      { "id": "b2", "team": "b", "x": 13, "y": 21.5 },
+      { "id": "b3", "team": "b", "x": 19.5, "y": 8 },
+      { "id": "b4", "team": "b", "x": 19.5, "y": 21.5 },
+      { "id": "b5", "team": "b", "x": 29, "y": 9.5 },
+      { "id": "b6", "team": "b", "x": 30, "y": 21 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "a2", "kind": "pass", "n": 1 },
+      { "from": "a2", "to": "a3", "kind": "pass", "n": 2 },
+      { "from": "a3", "to": "a6", "kind": "pass", "n": 3 },
+      { "from": "a6", "to": "n2", "kind": "pass", "n": 4 }
+    ],
+    "labels": [
+      { "x": 3.8, "y": 18.2, "text": "lent, lent" },
+      { "x": 24, "y": 17.6, "text": "VITE" }
+    ]
+  },
+  "diagram2": null
+}

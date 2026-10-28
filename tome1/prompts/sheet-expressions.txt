@@ -1,0 +1,19 @@
+A character design sheet for an illustrated children's adventure novel about football.
+
+Reference images attached, in this order: (1) the canonical character sheet of the two brothers (Kaydoudou on the left, BriBri on the right): keep their faces, hair, skin tone, build and relative height exactly, adapting only age and clothes as stated.
+
+1. Subject: Kaydoudou Ngassa (age 11), the elder brother: slim and tall for his age with long limbs and narrow shoulders, dark brown skin with a warm undertone, a long oval face with high cheekbones, a slim jaw and slightly prominent ears, very short tightly curled black hair with ONE THIN SHAVED PART LINE ON THE LEFT SIDE of his head, calm attentive almond-shaped dark brown eyes, a small one-sided smile; upright, still posture. BriBri Ngassa (age 10), the younger brother: a head shorter than Kaydoudou (the top of his head reaches his brother's chin), compact and springy, dark brown skin with a warm undertone, a round face with full round cheeks and a small nose, a small soft round black afro, big round sparkling mischievous dark brown eyes, a wide grin with a visible GAP BETWEEN HIS TWO FRONT TEETH; always up on his toes. He always wears ONE RED SOCK ON HIS RIGHT FOOT AND ONE YELLOW SOCK ON HIS LEFT FOOT.
+
+2. Outfit and details: Head-and-shoulders, default shirts (Kaydoudou green with white collar, BriBri sun-yellow with the red stripe).
+
+3. Action and emotion: Two rows of four head-and-shoulder portraits. Top row Kaydoudou: calm focus scanning the field; small one-sided smile; worried with tight lips; shouting an instruction with one hand cupped at his mouth. Bottom row BriBri: huge gap-toothed laugh; mischievous squint with raised eyebrow; eyes shining with held-back tears, lower lip trembling; fierce determination, jaw set.
+
+4. Location: Plain warm cream background.
+
+5. Lighting: Warm key light from the upper left, cool rim light, two-step cel shadows.
+
+6. Composition and camera: Eight evenly spaced portraits, same head size.
+
+7. Style: Cinematic stylized 3D-animation look translated into a hand-painted illustration: deliberate cel-shaded shadow shapes with two or three clean value steps, sculpted dimensional forms, angular but appealing shape design, visible painterly brush texture on surfaces and backgrounds, expressive child faces with clear readable features, rich saturated colour held together by one dominant palette, controlled dramatic lighting with a clear key light and a coloured rim light, atmospheric depth with soft haze between planes, composed like animated-feature key art. Warm, joyful, adventurous, for readers aged 8 to 12. Recognisably childlike proportions. Avoid: clip-art look, flat shading without depth, plastic or glossy toy skin, airbrushed faces, photorealistic adult faces on children, neon glow, bloom, lens flare, muddy darkness, clutter, mixed media, chibi proportions.
+
+8. Output: Landscape 3:2. No text, no labels.

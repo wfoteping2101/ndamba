@@ -1,0 +1,118 @@
+{
+  "id": "S08",
+  "family": "ssg",
+  "order": 8,
+  "ages": "U11+",
+  "players": { "min": 6, "max": 9, "fr": "6 joueurs (3 contre 3), 9 avec une équipe en attente", "en": "6 players (3 v 3), 9 with a team waiting" },
+  "space": { "w": 20, "h": 15 },
+  "duration": { "fr": "6 x 2 min, 1 min 30 de récupération", "en": "6 x 2 min, 1 min 30 rest" },
+  "minutes": 21,
+  "md": ["MD-4", "youth"],
+  "intensity": "high",
+  "intentions": ["progresser", "fixer"],
+  "skills": ["scan", "controle", "passe", "protection", "decision"],
+  "pieces": ["les yeux", "la raison"],
+  "fr": {
+    "title": "Jouer avant le contact",
+    "subtitle": "3 contre 3 avec une zone centrale à deux touches",
+    "objective": "Apprendre à lâcher le ballon avant que le défenseur arrive au contact, et à contrôler loin de la pression. Dans un petit espace, celui qui a regardé avant de recevoir joue avant le duel.",
+    "organisation": [
+      "Terrain de 20 x 15 m, deux mini-buts par équipe aux deux coins de chaque ligne de fond.",
+      "Une zone centrale de 6 m de large, marquée par des coupelles, traverse le terrain.",
+      "3 contre 3 ; une équipe de 3 attend et remplace l'équipe perdante à chaque série.",
+      "Ballons de réserve autour du terrain ; pause boisson à chaque récupération, à l'ombre si possible."
+    ],
+    "rules": [
+      "Dans la zone centrale, deux touches maximum ; ailleurs, touches libres.",
+      "Dans la zone centrale, si le défenseur arrive au contact avant la passe, le ballon change d'équipe.",
+      "Un but compte 1 point, 2 points si la dernière passe a été jouée en une touche.",
+      "On marque dans l'un des deux mini-buts adverses, au choix.",
+      "Après un but ou une sortie, l'entraîneur relance tout de suite un nouveau ballon."
+    ],
+    "coaching": [
+      "Regarde avant de recevoir : où est le défenseur le plus proche ?",
+      "Le défenseur est à deux mètres : tu as déjà joué.",
+      "Contrôle du côté opposé à la pression, avec le pied le plus éloigné du défenseur.",
+      "Offre une solution tôt, pour que ton partenaire puisse lâcher le ballon à temps.",
+      "Sous pression, passe dans le pied ; si le partenaire est libre, passe dans sa course.",
+      "Marque dans le but le moins protégé : la passe rapide l'a ouvert."
+    ],
+    "progressions": [
+      "Une touche seulement dans la zone centrale.",
+      "Zone centrale élargie à 8 m.",
+      "Terrain réduit à 18 x 12 m pour augmenter la pression."
+    ],
+    "regressions": [
+      "Trois touches dans la zone centrale.",
+      "Un joker joue avec l'équipe en possession : 4 contre 3.",
+      "Le défenseur ne presse qu'après le premier contrôle du receveur."
+    ],
+    "measure": "Nombre de pertes de balle dans la zone centrale par série et par équipe. Une bonne série : 2 pertes ou moins, avec au moins un but marqué après une passe en une touche.",
+    "story": "Monsieur Lacombe le répète aux frères : « Avant de recevoir, tu regardes. Toujours. » Ici, celui qui a regardé joue avant le contact."
+  },
+  "en": {
+    "title": "Play Before Contact",
+    "subtitle": "3 v 3 with a two-touch central zone",
+    "objective": "Learn to release the ball before the defender makes contact, and to control it away from pressure. In a tight space, the player who looked before receiving plays before the duel.",
+    "organisation": [
+      "20 x 15 m pitch, two mini goals per team in the two corners of each end line.",
+      "A 6 m wide central zone, marked with disc cones, runs across the pitch.",
+      "3 v 3; a team of 3 waits and replaces the losing team after each set.",
+      "Spare balls around the pitch; drinks break during every rest, in the shade if possible."
+    ],
+    "rules": [
+      "In the central zone, two touches maximum; elsewhere, unlimited touches.",
+      "In the central zone, if the defender makes contact before the pass, possession changes.",
+      "A goal is worth 1 point, 2 points if the final pass was a first-time pass.",
+      "Score in either of the two opposition mini goals.",
+      "After a goal or when the ball goes out, the coach plays a new ball in straight away."
+    ],
+    "coaching": [
+      "Look before you receive: where is the nearest defender?",
+      "The defender is two metres away: you have already played.",
+      "Control away from pressure, with the foot furthest from the defender.",
+      "Offer an option early so your teammate can release the ball in time.",
+      "Under pressure, pass to feet; if your teammate is free, pass into his run.",
+      "Score in the less protected goal: the quick pass has opened it."
+    ],
+    "progressions": [
+      "One touch only in the central zone.",
+      "Central zone widened to 8 m.",
+      "Pitch reduced to 18 x 12 m to add pressure."
+    ],
+    "regressions": [
+      "Three touches in the central zone.",
+      "A joker plays with the team in possession: 4 v 3.",
+      "The defender may only press after the receiver's first touch."
+    ],
+    "measure": "Number of balls lost in the central zone per set and per team. A good set: 2 losses or fewer, with at least one goal scored after a first-time pass.",
+    "story": "Monsieur Lacombe keeps telling the brothers: \"Before you receive, you look. Always.\" Here, the player who looked plays before contact."
+  },
+  "diagram": {
+    "view": "grid", "w": 20, "h": 15,
+    "players": [
+      { "id": "a1", "team": "a", "x": 3, "y": 4 },
+      { "id": "a2", "team": "a", "x": 10, "y": 9 },
+      { "id": "a3", "team": "a", "x": 15.5, "y": 12.3 },
+      { "id": "b1", "team": "b", "x": 12.6, "y": 6.4 },
+      { "id": "b2", "team": "b", "x": 17, "y": 4.5 },
+      { "id": "b3", "team": "b", "x": 6, "y": 11 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "a2", "kind": "pass", "n": 1 },
+      { "from": "b1", "to": [11.2, 7.7], "kind": "press", "n": 2 },
+      { "from": "a2", "to": "a3", "kind": "pass", "n": 3 },
+      { "from": "a3", "to": [20, 12], "kind": "shot", "n": 4 }
+    ],
+    "zones": [{ "x": 7, "y": 0, "w": 6, "h": 15, "tone": "soft", "label": "2 touches" }],
+    "goals": [
+      { "x": 20, "y": 3, "side": "right", "size": "mini" },
+      { "x": 20, "y": 12, "side": "right", "size": "mini" },
+      { "x": 0, "y": 3, "side": "left", "size": "mini" },
+      { "x": 0, "y": 12, "side": "left", "size": "mini" }
+    ],
+    "labels": [{ "x": 10, "y": 14.2, "text": "avant le contact" }]
+  },
+  "diagram2": null
+}

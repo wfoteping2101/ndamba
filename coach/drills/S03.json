@@ -1,0 +1,123 @@
+{
+  "id": "S03",
+  "family": "ssg",
+  "order": 3,
+  "ages": "U12+",
+  "players": { "min": 14, "max": 14, "fr": "14 joueurs (5 contre 5 + 2 appuis + 2 gardiens)", "en": "14 players (5 v 5 + 2 support players + 2 keepers)" },
+  "space": { "w": 40, "h": 30 },
+  "duration": { "fr": "4 x 5 min, 2 min de récupération", "en": "4 x 5 min, 2 min rest" },
+  "minutes": 28,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["progresser", "finir"],
+  "skills": ["passe", "appels", "controle", "decision", "communication"],
+  "pieces": ["la carte", "le cœur"],
+  "fr": {
+    "title": "Les appuis",
+    "subtitle": "5 contre 5 + 2 appuis : pas de but sans remise",
+    "objective": "Utiliser un appui placé sur la ligne de fond adverse pour progresser et finir : passe vers l'appui, remise en une touche, attaque du but face au jeu. On entraîne le jeu en remise et les courses de ceux qui arrivent.",
+    "organisation": [
+      "Terrain de 40 x 30 m, deux buts avec gardiens.",
+      "Deux équipes de 5 ; chaque équipe a un appui sur la ligne de fond adverse, à côté du but.",
+      "L'appui se déplace sur sa ligne de fond, sauf entre les poteaux.",
+      "On change d'appui à chaque série ; ballons de réserve derrière chaque but."
+    ],
+    "rules": [
+      "Trois touches maximum ; une touche pour les appuis.",
+      "But valable seulement si l'équipe a joué avec son appui pendant l'action : passe, puis remise.",
+      "But marqué en une touche directement sur la remise : 2 points.",
+      "L'appui ne marque pas ; les défenseurs peuvent couper la passe, pas le presser.",
+      "Ballon perdu : l'autre équipe attaque tout de suite vers son propre appui."
+    ],
+    "coaching": [
+      "Cherche l'appui tôt, surtout quand un défenseur sort sur toi : la remise passe dans son dos.",
+      "Après la passe vers l'appui, ne regarde pas : attaque l'espace de la remise.",
+      "Deux joueurs arrivent sur la remise : un vers le but, un en soutien.",
+      "Appui, montre-toi dans l'axe du passeur ; remise au sol, dans la course.",
+      "Finis vite : la remise donne une demi-seconde d'avance, pas plus."
+    ],
+    "progressions": [
+      "La remise doit aller à un troisième joueur, pas au passeur.",
+      "L'appui entre dans le terrain et joue comme un 9 dos au but.",
+      "Deux touches maximum pour les joueurs de champ.",
+      "2 points si le tir part moins de 3 secondes après la remise."
+    ],
+    "regressions": [
+      "Deux touches pour les appuis.",
+      "Un joker joue avec l'équipe en possession : 6 contre 5.",
+      "Terrain agrandi à 45 x 35 m."
+    ],
+    "measure": "Passes vers l'appui par série et part des remises qui donnent un tir en moins de 3 secondes. Une équipe qui a compris joue son appui dès qu'un défenseur sort, pas seulement quand elle est bloquée.",
+    "story": "À Londres, Kaydoudou apprend à se servir du mur : une touche sur un partenaire, et le pressing passe à côté. Ici, l'appui est ce mur."
+  },
+  "en": {
+    "title": "Support Players",
+    "subtitle": "5 v 5 + 2 support players: no goal without a lay-off",
+    "objective": "Use a support player on the opposition end line to progress and finish: pass into him, one-touch lay-off, attack the goal facing play. It trains the lay-off game and the runs of the players arriving.",
+    "organisation": [
+      "40 x 30 m pitch, two goals with keepers.",
+      "Two teams of 5; each team has a support player on the opposition end line, beside the goal.",
+      "The support player moves along his end line, but not between the posts.",
+      "Change the support player every set; spare balls behind each goal."
+    ],
+    "rules": [
+      "Three touches maximum; one touch for the support players.",
+      "A goal only counts if the team used its support player during the move: pass, then lay-off.",
+      "Goal scored first time straight from the lay-off: 2 points.",
+      "The support player cannot score; defenders may cut out the pass but not press him.",
+      "Ball lost: the other team attacks straight away towards its own support player."
+    ],
+    "coaching": [
+      "Look for the support player early, especially when a defender steps out to you: the lay-off goes in behind him.",
+      "After the pass into the support player, do not watch: attack the space for the lay-off.",
+      "Two players arrive on the lay-off: one towards goal, one in support.",
+      "Support player, show in line with the passer; lay it off on the ground, into the run.",
+      "Finish fast: the lay-off gives you half a second, no more."
+    ],
+    "progressions": [
+      "The lay-off must go to a third player, not back to the passer.",
+      "The support player steps onto the pitch and plays like a 9 with his back to goal.",
+      "Two touches maximum for the outfield players.",
+      "2 points if the shot comes less than 3 seconds after the lay-off."
+    ],
+    "regressions": [
+      "Two touches for the support players.",
+      "A joker plays for the team in possession: 6 v 5.",
+      "Pitch enlarged to 45 x 35 m."
+    ],
+    "measure": "Passes into the support player per set and the share of lay-offs that lead to a shot within 3 seconds. A team that gets it uses its support player as soon as a defender steps out, not only when it is stuck.",
+    "story": "In London, Kaydoudou learns to use the wall: one touch off a teammate and the press goes past him. Here, the support player is that wall."
+  },
+  "diagram": {
+    "view": "grid", "w": 40, "h": 30,
+    "goals": [
+      { "x": 0, "y": 15, "side": "right", "size": "full" },
+      { "x": 40, "y": 15, "side": "left", "size": "full" }
+    ],
+    "players": [
+      { "id": "gk", "team": "gk", "x": 1.6, "y": 15 },
+      { "id": "gkb", "team": "gkb", "x": 38.4, "y": 15 },
+      { "id": "ap", "team": "a", "x": 39.2, "y": 6, "label": "A" },
+      { "id": "bp", "team": "b", "x": 0.8, "y": 24, "label": "A" },
+      { "id": "a1", "team": "a", "x": 22, "y": 8 },
+      { "id": "a2", "team": "a", "x": 26, "y": 18 },
+      { "id": "a3", "team": "a", "x": 8, "y": 9 },
+      { "id": "a4", "team": "a", "x": 11, "y": 22 },
+      { "id": "a5", "team": "a", "x": 17, "y": 3.5 },
+      { "id": "b1", "team": "b", "x": 16, "y": 12 },
+      { "id": "b2", "team": "b", "x": 25, "y": 13 },
+      { "id": "b3", "team": "b", "x": 31, "y": 3 },
+      { "id": "b4", "team": "b", "x": 32, "y": 20 },
+      { "id": "b5", "team": "b", "x": 20, "y": 23 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "ap", "kind": "pass", "n": 1 },
+      { "from": "a2", "to": [33, 11], "kind": "run", "n": 2 },
+      { "from": "ap", "to": [33, 11], "kind": "pass", "n": 3 },
+      { "from": [33, 11], "to": [38.5, 12.5], "kind": "shot", "n": 4 }
+    ],
+    "labels": [{ "x": 36, "y": 3.6, "text": "appui" }]
+  },
+  "diagram2": null
+}

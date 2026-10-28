@@ -1,0 +1,450 @@
+{
+  "id": "F06",
+  "family": "phase",
+  "order": 6,
+  "ages": "U15+",
+  "players": {
+    "min": 20,
+    "max": 20,
+    "fr": "20 joueurs (7 contre 6 + gardien en attaque, 3 contre 3 au centre)",
+    "en": "20 players (7 v 6 + goalkeeper in attack, 3 v 3 in the middle)"
+  },
+  "space": {
+    "w": 70,
+    "h": 68
+  },
+  "duration": {
+    "fr": "4 x 6 min, 2 min de récupération",
+    "en": "4 x 6 min, 2 min rest"
+  },
+  "minutes": 30,
+  "md": [
+    "MD-3"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "reprendre",
+    "finir",
+    "fixer"
+  ],
+  "skills": [
+    "contre-pression",
+    "communication",
+    "decision",
+    "scan"
+  ],
+  "pieces": [
+    "le souffle",
+    "la carte"
+  ],
+  "fr": {
+    "title": "La défense de repos",
+    "subtitle": "7 contre 6 en attaque placée, 3 + 2 derrière le ballon, puis 4 contre 3 à la perte",
+    "objective": "Attaquer en nombre sans s'exposer : pendant l'attaque placée, l'équipe garde 3 + 2 joueurs derrière le ballon. À la perte, elle reprend dans les 5 secondes, ou défend la contre-attaque en 3 contre 4.",
+    "organisation": [
+      "Environ 70 x 68 m : une zone d'attaque de 35 m devant le but, une zone centrale derrière.",
+      "Deux mini-buts au fond de la zone centrale.",
+      "Équipe A : 7 joueurs en attaque placée, dont 2 restent derrière le ballon, et 3 défenseurs de repos dans la zone centrale.",
+      "Équipe B : 6 défenseurs et un gardien dans la zone d'attaque, 3 attaquants qui attendent dans la zone centrale.",
+      "Les 3 défenseurs de repos de A et les 3 attaquants de B n'entrent pas dans la zone d'attaque."
+    ],
+    "rules": [
+      "Un but de A ne compte que si les 3 + 2 étaient en place au moment du tir.",
+      "À la perte, A a 5 secondes pour reprendre le ballon : 1 point.",
+      "Sinon, B contre-attaque vers les mini-buts : le porteur et ses 3 attaquants contre les 3 défenseurs de repos.",
+      "But de B en moins de 10 secondes : 2 points ; contre-attaque stoppée par A : 1 point.",
+      "L'entraîneur relance chaque action vers A, à l'entrée de la zone d'attaque."
+    ],
+    "coaching": [
+      "Avant chaque passe vers l'avant, compte derrière le ballon : trois et deux.",
+      "Les deux du milieu, devant les attaquants adverses, prêts à fermer l'axe.",
+      "Défenseurs de repos, marquez de près, côté but, et parlez : qui prend qui.",
+      "À la perte, le plus proche presse le porteur, les autres ferment les passes vers l'avant.",
+      "À 3 contre 4, retarde, oriente vers la touche et attends le retour."
+    ],
+    "progressions": [
+      "Défense de repos à 2 + 2 : plus de joueurs en attaque, plus de risque.",
+      "Les attaquants de B peuvent décrocher librement dans la zone centrale.",
+      "Deux touches maximum pour A dans la zone d'attaque."
+    ],
+    "regressions": [
+      "Défense de repos à 3 + 3.",
+      "B ne contre-attaque qu'à 3 contre 3.",
+      "L'entraîneur fige le jeu à la perte pour vérifier la place de chacun."
+    ],
+    "measure": "Pertes avec ou sans défense de repos en place, récupérations dans les 5 secondes, et contre-attaques de B qui finissent par un tir. L'analyste les relie au sous-indice Reprise de l'Indice Njangi.",
+    "story": "À Londres, Coach Okafor arrête le jeu : « Count behind you. » Kaydoudou, devenu pivot, compte derrière le ballon avant d'attaquer."
+  },
+  "en": {
+    "title": "Rest Defence",
+    "subtitle": "7 v 6 in settled attack, 3 + 2 behind the ball, then 4 v 3 when the ball is lost",
+    "objective": "Attack in numbers without leaving yourself open: during settled attack, the team keeps 3 + 2 players behind the ball. When it loses the ball, it wins it back within 5 seconds, or defends the counter-attack 3 v 4.",
+    "organisation": [
+      "About 70 x 68 m: a 35 m attacking zone in front of the goal, a central zone behind it.",
+      "Two mini goals at the back of the central zone.",
+      "Team A: 7 players in settled attack, 2 of whom stay behind the ball, and 3 rest defenders in the central zone.",
+      "Team B: 6 defenders and a goalkeeper in the attacking zone, 3 forwards waiting in the central zone.",
+      "A's 3 rest defenders and B's 3 forwards may not enter the attacking zone."
+    ],
+    "rules": [
+      "A goal by A only counts if the 3 + 2 were in place when the shot was taken.",
+      "When A loses the ball, it has 5 seconds to win it back: 1 point.",
+      "Otherwise B counter-attacks towards the mini goals: the ball carrier and his 3 forwards against the 3 rest defenders.",
+      "B goal within 10 seconds: 2 points; counter-attack stopped by A: 1 point.",
+      "The coach restarts every move with a pass to A at the edge of the attacking zone."
+    ],
+    "coaching": [
+      "Before every forward pass, count behind the ball: three and two.",
+      "The two in midfield, in front of their forwards, ready to close the middle.",
+      "Rest defenders, mark tight, goal side, and talk: who takes whom.",
+      "When we lose it, the nearest player presses the ball, the others close the forward passes.",
+      "At 3 v 4, delay, show them to the touchline and wait for help."
+    ],
+    "progressions": [
+      "Rest defence at 2 + 2: more players in attack, more risk.",
+      "B's forwards may drop off freely in the central zone.",
+      "Two touches maximum for A in the attacking zone."
+    ],
+    "regressions": [
+      "Rest defence at 3 + 3.",
+      "B only counter-attacks 3 v 3.",
+      "The coach freezes play when the ball is lost to check everyone's position."
+    ],
+    "measure": "Balls lost with or without the rest defence in place, regains within 5 seconds, and B counter-attacks that end in a shot. The analyst links them to the Regain sub-index of the Njangi Index.",
+    "story": "In London, Coach Okafor stops play: \"Count behind you.\" Kaydoudou, now the pivot, counts behind the ball before he attacks."
+  },
+  "diagram": {
+    "view": "full",
+    "players": [
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 58,
+        "y": 23,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 57,
+        "y": 40,
+        "label": "5"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 59,
+        "y": 56,
+        "label": "2"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 74,
+        "y": 32,
+        "label": "6"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 76,
+        "y": 48,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 85,
+        "y": 22,
+        "label": "10"
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 91,
+        "y": 7,
+        "label": "11"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 93,
+        "y": 33,
+        "label": "9"
+      },
+      {
+        "id": "bd1",
+        "team": "b",
+        "x": 97,
+        "y": 20
+      },
+      {
+        "id": "bd2",
+        "team": "b",
+        "x": 98,
+        "y": 39
+      },
+      {
+        "id": "bd3",
+        "team": "b",
+        "x": 94,
+        "y": 52
+      },
+      {
+        "id": "bf1",
+        "team": "b",
+        "x": 64,
+        "y": 26
+      },
+      {
+        "id": "bf2",
+        "team": "b",
+        "x": 63,
+        "y": 42
+      },
+      {
+        "id": "bf3",
+        "team": "b",
+        "x": 66,
+        "y": 57
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 102.5,
+        "y": 34
+      }
+    ],
+    "ball": "p6",
+    "arrows": [
+      {
+        "from": "p6",
+        "to": "p10",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "p10",
+        "to": "p11",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "p11",
+        "to": [
+          99,
+          12
+        ],
+        "kind": "dribble",
+        "n": 3
+      },
+      {
+        "from": "p9",
+        "to": [
+          100,
+          30
+        ],
+        "kind": "run",
+        "n": 4
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 35,
+        "h": 68,
+        "tone": "soft"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "w": 35,
+        "h": 68,
+        "tone": "a",
+        "label": "zone d'attaque"
+      }
+    ],
+    "goals": [
+      {
+        "x": 35,
+        "y": 20,
+        "side": "left",
+        "size": "mini"
+      },
+      {
+        "x": 35,
+        "y": 48,
+        "side": "left",
+        "size": "mini"
+      }
+    ],
+    "labels": [
+      {
+        "x": 66,
+        "y": 65.5,
+        "text": "3 + 2 derrière le ballon"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "full",
+    "players": [
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 57,
+        "y": 22,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 56,
+        "y": 38,
+        "label": "5"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 59,
+        "y": 51,
+        "label": "2"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 75,
+        "y": 31,
+        "label": "6"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 80,
+        "y": 41,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 88,
+        "y": 60,
+        "label": "10"
+      },
+      {
+        "id": "bw",
+        "team": "b",
+        "x": 92,
+        "y": 47
+      },
+      {
+        "id": "bf1",
+        "team": "b",
+        "x": 64,
+        "y": 24
+      },
+      {
+        "id": "bf2",
+        "team": "b",
+        "x": 63,
+        "y": 40
+      },
+      {
+        "id": "bf3",
+        "team": "b",
+        "x": 69,
+        "y": 58
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 102.5,
+        "y": 34
+      }
+    ],
+    "ball": "bw",
+    "arrows": [
+      {
+        "from": "p8",
+        "to": [
+          88.6,
+          45.5
+        ],
+        "kind": "press",
+        "n": 1
+      },
+      {
+        "from": "p10",
+        "to": [
+          90.6,
+          51.6
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "bw",
+        "to": "bf3",
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": "l2",
+        "to": [
+          65.4,
+          55.4
+        ],
+        "kind": "press",
+        "n": 4
+      },
+      {
+        "from": "c5",
+        "to": [
+          55.5,
+          46
+        ],
+        "kind": "run",
+        "n": 5
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 35,
+        "h": 68,
+        "tone": "soft"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "w": 35,
+        "h": 68,
+        "tone": "a",
+        "label": "zone d'attaque"
+      }
+    ],
+    "goals": [
+      {
+        "x": 35,
+        "y": 20,
+        "side": "left",
+        "size": "mini"
+      },
+      {
+        "x": 35,
+        "y": 48,
+        "side": "left",
+        "size": "mini"
+      }
+    ],
+    "labels": [
+      {
+        "x": 50,
+        "y": 10,
+        "text": "4 contre 3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "L01",
+  "family": "lsg",
+  "order": 1,
+  "ages": "U14+",
+  "players": { "min": 18, "max": 18, "fr": "18 joueurs (8 contre 8 + 2 gardiens)", "en": "18 players (8 v 8 + 2 goalkeepers)" },
+  "space": { "w": 70, "h": 50 },
+  "duration": { "fr": "3 x 8 min, 2 min de récupération", "en": "3 x 8 min, 2 min rest" },
+  "minutes": 28,
+  "md": ["MD-3"],
+  "intensity": "high",
+  "intentions": ["fixer", "progresser", "finir"],
+  "skills": ["passe", "scan", "appels", "decision"],
+  "pieces": ["la carte", "la raison"],
+  "fr": {
+    "title": "Les couloirs libres",
+    "subtitle": "8 contre 8 avec deux couloirs réservés aux ailiers",
+    "objective": "Installer la largeur et le renversement : attirer le bloc adverse d'un côté, puis trouver vite l'ailier resté libre dans le couloir opposé, avant que la défense ne glisse.",
+    "organisation": [
+      "Terrain de 70 x 50 m, deux buts de taille normale avec gardiens.",
+      "Deux couloirs extérieurs de 6 m sont tracés avec des coupelles sur toute la longueur.",
+      "Chaque équipe a 8 joueurs de champ, par exemple 3 défenseurs, un pivot, un intérieur, un attaquant et deux ailiers.",
+      "Chaque action repart du gardien de l'équipe qui a le ballon ; ballons de réserve dans les deux buts."
+    ],
+    "rules": [
+      "Seuls les ailiers de l'équipe en possession peuvent entrer dans un couloir ; aucun défenseur n'y entre.",
+      "Dans le couloir, l'ailier joue trois touches au maximum : il centre, rentre dans l'axe en conduite ou combine.",
+      "À la perte, les ailiers sortent du couloir et défendent dans l'axe.",
+      "Un but vaut 1 point, 2 points si le ballon est passé d'un couloir à l'autre pendant l'action."
+    ],
+    "coaching": [
+      "Fixe d'abord : trois ou quatre passes du côté fort pour attirer le bloc.",
+      "L'ailier opposé reste large et haut, les pieds sur la ligne, prêt à recevoir.",
+      "Si la passe longue est risquée, renverse en deux temps par le pivot ou un central.",
+      "Ailier : premier contrôle vers l'avant, puis attaque l'espace sans attendre.",
+      "Quand l'ailier lève la tête, deux joueurs attaquent la surface : premier et deuxième poteau."
+    ],
+    "progressions": [
+      "Après la réception de l'ailier, un défenseur peut entrer dans le couloir pour le presser.",
+      "Deux touches maximum dans le couloir.",
+      "But à 3 points si le renversement est suivi d'un tir en moins de 6 secondes."
+    ],
+    "regressions": [
+      "Couloirs de 8 m et touches libres pour l'ailier.",
+      "Un joueur neutre dans l'axe joue avec l'équipe en possession.",
+      "Terrain réduit à 70 x 44 m pour raccourcir les renversements."
+    ],
+    "measure": "Nombre de renversements d'un couloir à l'autre par série, et part de ces renversements suivis d'un centre ou d'une entrée dans la surface en moins de 8 secondes.",
+    "story": "À Waldorf, Coach Dana demande à BriBri de rester collé à sa ligne. Quand le ballon arrive enfin de l'autre côté, tout le couloir est à lui."
+  },
+  "en": {
+    "title": "Free Channels",
+    "subtitle": "8 v 8 with two channels kept for the wingers",
+    "objective": "Build width and the switch of play: draw the opposing block to one side, then find the winger left free in the far channel quickly, before the defence can slide across.",
+    "organisation": [
+      "70 x 50 m pitch, two full-size goals with goalkeepers.",
+      "Two 6 m wide outside channels marked with disc cones along the full length.",
+      "Each team has 8 outfield players, for example 3 defenders, a pivot, an inside midfielder, a striker and two wingers.",
+      "Every move restarts from the goalkeeper of the team in possession; spare balls in both goals."
+    ],
+    "rules": [
+      "Only the wingers of the team in possession may enter a channel; no defender may enter.",
+      "In the channel, the winger has three touches maximum: cross, drive inside or combine.",
+      "When the ball is lost, the wingers leave the channel and defend centrally.",
+      "A goal is worth 1 point, 2 points if the ball travelled from one channel to the other during the move."
+    ],
+    "coaching": [
+      "Draw them in first: three or four passes on the strong side to pull the block over.",
+      "The far winger stays wide and high, feet on the line, ready to receive.",
+      "If the long pass is risky, switch in two passes through the pivot or a centre-back.",
+      "Winger: first touch forward, then attack the space without waiting.",
+      "When the winger lifts his head, two players attack the box: near post and far post."
+    ],
+    "progressions": [
+      "Once the winger has received, one defender may enter the channel to press him.",
+      "Two touches maximum in the channel.",
+      "Goal worth 3 points if the switch leads to a shot within 6 seconds."
+    ],
+    "regressions": [
+      "8 m channels and unlimited touches for the winger.",
+      "A neutral player in the central area plays with the team in possession.",
+      "Pitch narrowed to 70 x 44 m to shorten the switches."
+    ],
+    "measure": "Number of switches from one channel to the other per set, and the share of those switches followed by a cross or an entry into the box within 8 seconds.",
+    "story": "In Waldorf, Coach Dana asks BriBri to stay glued to his line. When the ball finally arrives from the other side, the whole channel is his."
+  },
+  "diagram": {
+    "view": "grid", "w": 70, "h": 50,
+    "players": [
+      { "id": "gk", "team": "gk", "x": 2, "y": 25 },
+      { "id": "d1", "team": "a", "x": 14, "y": 14 },
+      { "id": "d2", "team": "a", "x": 12, "y": 26 },
+      { "id": "d3", "team": "a", "x": 15, "y": 37 },
+      { "id": "p6", "team": "a", "x": 26, "y": 22, "label": "6" },
+      { "id": "p8", "team": "a", "x": 35, "y": 12, "label": "8" },
+      { "id": "p9", "team": "a", "x": 46, "y": 20, "label": "9" },
+      { "id": "p11", "team": "a", "x": 42, "y": 3, "label": "11" },
+      { "id": "p7", "team": "a", "x": 50, "y": 47, "label": "7" },
+      { "id": "b1", "team": "b", "x": 39, "y": 8 },
+      { "id": "b2", "team": "b", "x": 41, "y": 17 },
+      { "id": "b3", "team": "b", "x": 53, "y": 18 },
+      { "id": "b4", "team": "b", "x": 54, "y": 30 },
+      { "id": "b5", "team": "b", "x": 51, "y": 9 },
+      { "id": "b6", "team": "b", "x": 52, "y": 40 },
+      { "id": "gkb", "team": "gkb", "x": 68, "y": 25 }
+    ],
+    "ball": "p8",
+    "arrows": [
+      { "from": "p8", "to": "p6", "kind": "pass", "n": 1 },
+      { "from": "p6", "to": "p7", "kind": "pass", "n": 2 },
+      { "from": "p7", "to": [61, 46.5], "kind": "dribble", "n": 3 },
+      { "from": "p9", "to": [62, 27], "kind": "run", "n": 4 }
+    ],
+    "zones": [
+      { "x": 0, "y": 0, "w": 70, "h": 6, "tone": "a", "label": "couloir libre" },
+      { "x": 0, "y": 44, "w": 70, "h": 6, "tone": "a", "label": "couloir libre" }
+    ],
+    "goals": [
+      { "x": 0, "y": 25, "side": "left", "size": "full" },
+      { "x": 70, "y": 25, "side": "right", "size": "full" }
+    ]
+  },
+  "diagram2": null
+}

@@ -1,0 +1,117 @@
+{
+  "id": "G01",
+  "family": "finishing",
+  "order": 1,
+  "ages": "U12+",
+  "players": { "min": 9, "max": 15, "fr": "9 à 15 joueurs (circuit avec gardien)", "en": "9 to 15 players (pattern with a goalkeeper)" },
+  "space": { "w": 35, "h": 68 },
+  "duration": { "fr": "2 x 8 min (un côté, puis l'autre), 2 min de récupération", "en": "2 x 8 min (one side, then the other), 2 min rest" },
+  "minutes": 18,
+  "md": ["MD-1", "MD-2", "youth"],
+  "intensity": "medium",
+  "intentions": ["finir", "progresser"],
+  "skills": ["passe", "appels", "controle", "decision", "scan"],
+  "pieces": ["la raison", "la carte"],
+  "fr": {
+    "title": "Le centre en retrait",
+    "subtitle": "Circuit de finition : combinaison sur le côté, entrée par le demi-espace, centre en retrait",
+    "objective": "Automatiser la finition que le modèle préfère : combiner sur le côté, entrer dans la surface par le demi-espace, puis donner en retrait, au sol, à un partenaire qui arrive face au but.",
+    "organisation": [
+      "Le dernier tiers, un but avec gardien ; le circuit se joue d'un côté, puis de l'autre.",
+      "Quatre files : latéral (2), ailier (7), intérieur (8), attaquants (9 et 10) ; les ballons sont chez le latéral.",
+      "Des coupelles marquent la zone de retrait, dans la surface, entre la petite surface et le côté de la surface.",
+      "Chacun suit son ballon : le latéral devient ailier, l'ailier devient intérieur, et ainsi de suite.",
+      "Pause boisson toutes les 4 minutes, à l'ombre si possible."
+    ],
+    "rules": [
+      "Le latéral joue l'ailier, qui joue dans la course de l'intérieur ; l'intérieur entre dans la surface par le demi-espace.",
+      "Le centre en retrait part de la zone de retrait, au sol.",
+      "Les deux attaquants arrivent : l'un au premier poteau, l'autre au point de penalty.",
+      "Frappe en une ou deux touches ; un nouveau départ toutes les 20 secondes environ."
+    ],
+    "coaching": [
+      "Latéral, passe ferme dans le pied extérieur de l'ailier.",
+      "Intérieur, démarre quand l'ailier reçoit, pas avant : tu arrives lancé.",
+      "Dans la zone de retrait, lève la tête avant de centrer : qui arrive, où est l'espace ?",
+      "Centre au sol, appuyé, devant le partenaire, pas dans son dos.",
+      "Attaquants, arrivez au dernier moment : celui qui attend sur place est marqué.",
+      "Frappe cadrée d'abord, puissance ensuite."
+    ],
+    "progressions": [
+      "Un défenseur passif dans la surface, puis actif sur l'intérieur.",
+      "Un défenseur ferme le premier poteau : le centre va au point de penalty.",
+      "Tout le circuit en moins de 8 secondes, du latéral au tir."
+    ],
+    "regressions": [
+      "Gardien qui ne plonge pas, pour réussir souvent au début.",
+      "L'intérieur part déjà dans la zone de retrait : seulement le centre et la frappe.",
+      "Ballon donné à la main par l'entraîneur dans la zone de retrait."
+    ],
+    "measure": "Centres en retrait qui arrivent dans la course d'un attaquant, et frappes cadrées, sur 10 répétitions de chaque côté. Repère : 7 centres réussis sur 10.",
+    "story": "À Waldorf, BriBri arrive à la ligne de but et lève la tête : Kaydoudou est déjà au point de penalty. Le une-deux des frères devient un centre en retrait."
+  },
+  "en": {
+    "title": "The Cut-Back",
+    "subtitle": "Finishing pattern: combination out wide, entry through the half-space, cut-back",
+    "objective": "Groove the finish the model prefers: combine out wide, get into the box through the half-space, then cut it back on the ground to a teammate arriving facing goal.",
+    "organisation": [
+      "The final third, one goal with a goalkeeper; run the pattern on one side, then the other.",
+      "Four lines: full-back (2), winger (7), inside midfielder (8), forwards (9 and 10); balls with the full-back.",
+      "Disc cones mark the cut-back zone, inside the box between the six-yard box and the side of the box.",
+      "Everyone follows their pass: full-back becomes winger, winger becomes inside midfielder, and so on.",
+      "Drinks break every 4 minutes, in the shade if possible."
+    ],
+    "rules": [
+      "The full-back plays to the winger, who plays into the inside midfielder's run; he enters the box through the half-space.",
+      "The cut-back is played from the cut-back zone, along the ground.",
+      "The two forwards arrive: one at the near post, the other at the penalty spot.",
+      "Shoot with one or two touches; a new start roughly every 20 seconds."
+    ],
+    "coaching": [
+      "Full-back, firm pass onto the winger's outside foot.",
+      "Inside midfielder, go when the winger receives, not before: you arrive at speed.",
+      "In the cut-back zone, lift your head before you cross: who is arriving, where is the space?",
+      "Cut it back on the ground, firm, just in front of your teammate, not behind him.",
+      "Forwards, arrive at the last moment: the player standing still gets marked.",
+      "Hit the target first, power second."
+    ],
+    "progressions": [
+      "A passive defender in the box, then an active one on the inside midfielder.",
+      "A defender closes the near post: the cut-back goes to the penalty spot.",
+      "The whole pattern in under 8 seconds, from full-back to shot."
+    ],
+    "regressions": [
+      "Goalkeeper does not dive at first, so players succeed often.",
+      "The inside midfielder starts in the cut-back zone: only the cross and the finish.",
+      "The coach hands the ball in to the cut-back zone."
+    ],
+    "measure": "Cut-backs that reach an arriving forward's run, and shots on target, over 10 repetitions on each side. Benchmark: 7 good cut-backs out of 10.",
+    "story": "In Waldorf, BriBri reaches the goal line and lifts his head: Kaydoudou is already at the penalty spot. The brothers' one-two becomes a cut-back."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      { "id": "l2", "team": "a", "x": 25, "y": 60, "label": "2" },
+      { "id": "p7", "team": "a", "x": 35, "y": 65, "label": "7" },
+      { "id": "p8", "team": "a", "x": 30, "y": 49, "label": "8" },
+      { "id": "p9", "team": "a", "x": 44, "y": 29, "label": "9" },
+      { "id": "p10", "team": "a", "x": 30, "y": 27, "label": "10" },
+      { "id": "gkb", "team": "gkb", "x": 51, "y": 34 }
+    ],
+    "ball": "l2",
+    "arrows": [
+      { "from": "l2", "to": "p7", "kind": "pass", "n": 1 },
+      { "from": "p8", "to": [47.5, 50], "kind": "run", "n": 2 },
+      { "from": "p7", "to": [47.5, 50], "kind": "pass", "n": 3 },
+      { "from": "p9", "to": [49.2, 37.6], "kind": "run", "n": 4 },
+      { "from": "p10", "to": [41.5, 34], "kind": "run", "n": 5 },
+      { "from": [47.5, 50], "to": [41.8, 35.2], "kind": "pass", "n": 6 }
+    ],
+    "zones": [
+      { "x": 47, "y": 43.2, "w": 5.5, "h": 11, "tone": "a" },
+      { "x": 14, "y": 43.2, "w": 22, "h": 11, "tone": "soft", "label": "demi-espace" }
+    ],
+    "labels": [{ "x": 49.5, "y": 58, "text": "retrait" }]
+  },
+  "diagram2": null
+}

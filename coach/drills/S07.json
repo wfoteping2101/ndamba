@@ -1,0 +1,123 @@
+{
+  "id": "S07",
+  "family": "ssg",
+  "order": 7,
+  "ages": "U12+",
+  "players": { "min": 12, "max": 12, "fr": "12 joueurs (5 contre 5 + 2 gardiens)", "en": "12 players (5 v 5 + 2 keepers)" },
+  "space": { "w": 40, "h": 30 },
+  "duration": { "fr": "4 x 5 min, 2 min de récupération", "en": "4 x 5 min, 2 min rest" },
+  "minutes": 28,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["progresser", "finir"],
+  "skills": ["passe", "scan", "appels", "decision", "controle"],
+  "pieces": ["la raison", "la carte"],
+  "fr": {
+    "title": "Les lignes traversées",
+    "subtitle": "5 contre 5 + gardiens : chaque ligne traversée rapporte",
+    "objective": "Oser la passe qui traverse une ligne d'adversaires plutôt que celle qui fait le tour. Chaque ligne franchie rapproche du but, et le jeu la récompense en plus des buts.",
+    "organisation": [
+      "Terrain de 40 x 30 m, deux buts avec gardiens.",
+      "5 contre 5 ; un adjoint sur le côté compte les lignes traversées de chaque équipe.",
+      "Une ligne, ce sont deux adversaires côte à côte, à peu près à la même hauteur.",
+      "Ballons de réserve derrière chaque but."
+    ],
+    "rules": [
+      "Trois touches maximum.",
+      "But : 2 points.",
+      "Passe qui traverse une ligne de deux adversaires et trouve un partenaire derrière eux : 1 point ; l'adjoint annonce « Ligne ! ».",
+      "Une même ligne ne rapporte qu'un point par action.",
+      "Le gardien relance au sol ; pas de dégagement long par-dessus tout le monde."
+    ],
+    "coaching": [
+      "Avant de passer, cherche l'intervalle entre deux adversaires.",
+      "Une passe sur le côté, c'est poli ; une passe qui traverse, c'est utile : ose la deuxième.",
+      "Receveur, place-toi derrière la ligne, dans l'intervalle, de profil.",
+      "Intervalle fermé : attire avec une passe latérale ou une conduite, puis traverse.",
+      "Après une ligne traversée, accélère : la suivante est plus près du but."
+    ],
+    "progressions": [
+      "Une ligne traversée en conduite vaut aussi 1 point.",
+      "2 points pour une passe qui traverse deux lignes d'un coup.",
+      "Deux touches maximum.",
+      "6 contre 6 sur 45 x 35 m."
+    ],
+    "regressions": [
+      "Touches libres.",
+      "Un joker joue avec l'équipe en possession : 6 contre 5.",
+      "L'entraîneur fige le jeu une fois par série pour montrer les intervalles."
+    ],
+    "measure": "Lignes traversées par série et par équipe, et part des actions avec au moins une ligne traversée qui finissent par un tir. Ce comptage nourrit le sous-indice Progression de l'Indice Njangi.",
+    "story": "Tonton Fokou le dit à Kaydoudou en lui tendant une mangue : « Une passe sur le côté, c'est poli. Une passe qui traverse, c'est utile. »"
+  },
+  "en": {
+    "title": "Lines Broken",
+    "subtitle": "5 v 5 + keepers: every line you break scores",
+    "objective": "Dare to play the pass that breaks a line of opponents rather than the one that goes around it. Every line broken brings the team closer to goal, and the game rewards it on top of goals.",
+    "organisation": [
+      "40 x 30 m pitch, two goals with keepers.",
+      "5 v 5; an assistant on the side counts the lines each team breaks.",
+      "A line is two opponents side by side, at roughly the same height.",
+      "Spare balls behind each goal."
+    ],
+    "rules": [
+      "Three touches maximum.",
+      "Goal: 2 points.",
+      "Pass that splits a line of two opponents and finds a teammate behind them: 1 point; the assistant calls \"Line!\".",
+      "The same line only earns one point per move.",
+      "The keeper restarts along the ground; no long clearance over everyone."
+    ],
+    "coaching": [
+      "Before you pass, look for the gap between two opponents.",
+      "A pass sideways is polite; a pass that breaks a line is useful: dare to play the second one.",
+      "Receiver, get behind the line, in the gap, side-on.",
+      "Gap closed: draw them with a sideways pass or a carry, then go through.",
+      "Once a line is broken, speed up: the next one is closer to goal."
+    ],
+    "progressions": [
+      "A line broken by a carry also earns 1 point.",
+      "2 points for a pass that breaks two lines at once.",
+      "Two touches maximum.",
+      "6 v 6 on 45 x 35 m."
+    ],
+    "regressions": [
+      "Unlimited touches.",
+      "A joker plays for the team in possession: 6 v 5.",
+      "The coach freezes play once per set to show the gaps."
+    ],
+    "measure": "Lines broken per set and per team, and the share of moves with at least one line broken that end in a shot. This count feeds the Progression sub-index of the Njangi Index.",
+    "story": "Tonton Fokou tells Kaydoudou as he hands him a mango: \"A pass sideways is polite. A pass that goes through is useful.\""
+  },
+  "diagram": {
+    "view": "grid", "w": 40, "h": 30,
+    "goals": [
+      { "x": 0, "y": 15, "side": "right", "size": "full" },
+      { "x": 40, "y": 15, "side": "left", "size": "full" }
+    ],
+    "players": [
+      { "id": "gk", "team": "gk", "x": 1.6, "y": 15 },
+      { "id": "gkb", "team": "gkb", "x": 38.4, "y": 15 },
+      { "id": "a1", "team": "a", "x": 7, "y": 15 },
+      { "id": "a2", "team": "a", "x": 19, "y": 15 },
+      { "id": "a3", "team": "a", "x": 29.5, "y": 12 },
+      { "id": "a4", "team": "a", "x": 8, "y": 25 },
+      { "id": "a5", "team": "a", "x": 31, "y": 25 },
+      { "id": "b1", "team": "b", "x": 14, "y": 9.5 },
+      { "id": "b2", "team": "b", "x": 14, "y": 20.5 },
+      { "id": "b3", "team": "b", "x": 24, "y": 10 },
+      { "id": "b4", "team": "b", "x": 24, "y": 20 },
+      { "id": "b5", "team": "b", "x": 32.5, "y": 16.5 }
+    ],
+    "ball": "a1",
+    "arrows": [
+      { "from": "a1", "to": "a2", "kind": "pass", "n": 1 },
+      { "from": "a2", "to": "a3", "kind": "pass", "n": 2 },
+      { "from": "a3", "to": [38.4, 12.6], "kind": "shot", "n": 3 }
+    ],
+    "labels": [
+      { "x": 14, "y": 4.5, "text": "ligne 1" },
+      { "x": 24, "y": 4.5, "text": "ligne 2" }
+    ]
+  },
+  "diagram2": null
+}

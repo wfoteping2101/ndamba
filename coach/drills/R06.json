@@ -1,0 +1,115 @@
+{
+  "id": "R06",
+  "family": "rondo",
+  "order": 6,
+  "ages": "U13+",
+  "players": { "min": 6, "max": 6, "fr": "6 joueurs par atelier (4 contre 2)", "en": "6 players per station (4 v 2)" },
+  "space": { "w": 30, "h": 10 },
+  "duration": { "fr": "4 x 3 min, 1 min 30 de récupération", "en": "4 x 3 min, 1 min 30 rest" },
+  "minutes": 17,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["progresser", "fixer"],
+  "skills": ["appels", "passe", "communication", "scan"],
+  "pieces": ["la carte", "le souffle"],
+  "fr": {
+    "title": "Le rondo qui avance",
+    "subtitle": "4 contre 2 sur trois zones : garder pour avancer",
+    "objective": "Garder le ballon à 4 contre 2, puis le faire passer dans la zone suivante quand les défenseurs sont attirés. La conservation devient un moyen de progresser, et tout le groupe se déplace avec le ballon.",
+    "organisation": [
+      "Trois carrés de 10 x 10 m alignés, soit un couloir de 30 x 10 m.",
+      "4 attaquants et 2 défenseurs démarrent dans la zone 1.",
+      "Les attaquants jouent librement dans leur carré, il n'y a pas de poste fixe.",
+      "Ballons de réserve au bout de chaque zone ; deux ateliers en parallèle pour 12 joueurs."
+    ],
+    "rules": [
+      "Deux touches maximum.",
+      "Après 5 passes, un attaquant peut partir dans la zone suivante et y recevoir ; il ne peut pas y attendre avant.",
+      "Les 3 autres attaquants et les 2 défenseurs rejoignent la nouvelle zone en moins de 5 secondes.",
+      "Chaque zone gagnée vaut 1 point ; arrivé en zone 3, le groupe repart vers la zone 1.",
+      "Les défenseurs qui récupèrent échangent avec les deux attaquants les plus fautifs."
+    ],
+    "coaching": [
+      "Les 5 passes servent à attirer les défenseurs, pas seulement à compter.",
+      "L'appel part quand le porteur lève la tête, pas avant : timing avant vitesse.",
+      "Passe dans la course, devant le receveur, pour qu'il entre lancé.",
+      "Ceux qui suivent recréent vite un carré autour du receveur : deux angles en 3 secondes.",
+      "Parle : « Je pars ! », « Seul ! »."
+    ],
+    "progressions": [
+      "Progression autorisée dès 3 passes, mais en une touche.",
+      "Le receveur doit entrer dans la zone en conduite après un contrôle orienté.",
+      "Un troisième défenseur attend dans la zone suivante.",
+      "Zones de 8 x 8 m."
+    ],
+    "regressions": [
+      "Zones de 12 x 12 m.",
+      "Le porteur peut entrer lui-même en conduite dans la zone suivante.",
+      "Un seul défenseur suit le groupe, l'autre attend dans la zone suivante."
+    ],
+    "measure": "Nombre de zones gagnées par série et temps mis par le groupe pour rebâtir le carré dans la nouvelle zone (objectif : moins de 5 secondes).",
+    "story": "Le ballon doit voyager, mais il doit savoir où il va : ici, il garde, puis il avance."
+  },
+  "en": {
+    "title": "The Rondo that Moves",
+    "subtitle": "4 v 2 across three zones: keep it to go forward",
+    "objective": "Keep the ball 4 v 2, then move it into the next zone once the defenders are drawn in. Keeping the ball becomes a way to progress, and the whole group travels with it.",
+    "organisation": [
+      "Three 10 x 10 m squares in a line, making a 30 x 10 m channel.",
+      "4 attackers and 2 defenders start in zone 1.",
+      "Attackers move freely inside their square; there are no fixed positions.",
+      "Spare balls at the end of each zone; two stations side by side for 12 players."
+    ],
+    "rules": [
+      "Two touches maximum.",
+      "After 5 passes, one attacker may run into the next zone and receive there; nobody may wait there before.",
+      "The other 3 attackers and the 2 defenders join the new zone within 5 seconds.",
+      "Every zone gained is worth 1 point; once in zone 3, the group heads back towards zone 1.",
+      "Defenders who win the ball swap with the two attackers most at fault."
+    ],
+    "coaching": [
+      "The 5 passes are there to draw the defenders in, not just to count.",
+      "Make the run when the passer lifts his head, not before: timing over speed.",
+      "Pass into the run, in front of the receiver, so he arrives at speed.",
+      "The others rebuild a square around the receiver fast: two angles in 3 seconds.",
+      "Talk: \"I'm going!\", \"Time!\"."
+    ],
+    "progressions": [
+      "Progression allowed after 3 passes, but with one touch.",
+      "The receiver must enter the zone dribbling after a directional first touch.",
+      "A third defender waits in the next zone.",
+      "8 x 8 m zones."
+    ],
+    "regressions": [
+      "12 x 12 m zones.",
+      "The player on the ball may dribble into the next zone himself.",
+      "Only one defender follows the group; the other waits in the next zone."
+    ],
+    "measure": "Zones gained per set and time taken by the group to rebuild the square in the new zone (target: under 5 seconds).",
+    "story": "The ball must travel, but it must know where it is going: here it keeps, then it moves forward."
+  },
+  "diagram": {
+    "view": "grid", "w": 30, "h": 10,
+    "zones": [
+      { "x": 0, "y": 0, "w": 10, "h": 10, "tone": "soft", "label": "zone 1" },
+      { "x": 10, "y": 0, "w": 10, "h": 10, "tone": "a", "label": "zone 2" },
+      { "x": 20, "y": 0, "w": 10, "h": 10, "tone": "soft", "label": "zone 3" }
+    ],
+    "cones": [[0, 0], [10, 0], [20, 0], [30, 0], [0, 10], [10, 10], [20, 10], [30, 10]],
+    "players": [
+      { "id": "a1", "team": "a", "x": 1.5, "y": 6 },
+      { "id": "a2", "team": "a", "x": 6, "y": 3.2 },
+      { "id": "a3", "team": "a", "x": 15.5, "y": 6.5 },
+      { "id": "a4", "team": "a", "x": 4.5, "y": 8.8 },
+      { "id": "d1", "team": "b", "x": 3.6, "y": 4.4 },
+      { "id": "d2", "team": "b", "x": 8, "y": 6.6 }
+    ],
+    "ball": "a2",
+    "arrows": [
+      { "from": [9.2, 4.4], "to": "a3", "kind": "run", "n": 1 },
+      { "from": "a2", "to": "a3", "kind": "pass", "n": 2 },
+      { "from": "a4", "to": [12.5, 9], "kind": "run", "n": 3 }
+    ]
+  },
+  "diagram2": null
+}

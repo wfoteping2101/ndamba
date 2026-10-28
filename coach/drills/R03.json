@@ -1,0 +1,108 @@
+{
+  "id": "R03",
+  "family": "rondo",
+  "order": 3,
+  "ages": "U12+",
+  "players": { "min": 7, "max": 7, "fr": "7 joueurs (4 contre 2 + 1 joker au centre)", "en": "7 players (4 v 2 + 1 central joker)" },
+  "space": { "w": 12, "h": 12 },
+  "duration": { "fr": "4 x 3 min, 1 min de récupération", "en": "4 x 3 min, 1 min rest" },
+  "minutes": 15,
+  "md": ["MD-4", "MD-2"],
+  "intensity": "medium",
+  "intentions": ["progresser", "fixer"],
+  "skills": ["scan", "controle", "passe", "decision"],
+  "pieces": ["la carte", "les yeux"],
+  "fr": {
+    "title": "Le pivot au centre",
+    "subtitle": "4 contre 2 avec un joker : jouer à travers le bloc",
+    "objective": "Garder le ballon à 4 contre 2 en cherchant le joueur placé au centre, entre les deux défenseurs. On apprend à jouer à travers le bloc plutôt qu'autour, comme le pivot qui reçoit entre les lignes et fait jouer la passe d'après.",
+    "organisation": [
+      "Carré de 12 x 12 m, un attaquant par côté, 2 défenseurs et 1 joker à l'intérieur.",
+      "Le joker joue toujours avec l'équipe en possession ; il porte une chasuble d'une autre couleur.",
+      "Le joker change à chaque série pour que chacun apprenne le rôle de pivot.",
+      "Ballons de réserve aux coins pour relancer sans attendre."
+    ],
+    "rules": [
+      "Deux touches pour tout le monde, joker compris.",
+      "Passe extérieur, joker, autre extérieur : 1 point. Le joker ne rend jamais au passeur.",
+      "10 passes consécutives : 1 point.",
+      "Le joueur qui perd le ballon remplace le défenseur qui est au centre depuis le plus longtemps.",
+      "Un défenseur qui intercepte une passe destinée au joker marque 1 point."
+    ],
+    "coaching": [
+      "Joker : regarde avant de recevoir, sache déjà où ira le ballon.",
+      "Joker : bouge dans l'intervalle entre les deux défenseurs, jamais caché derrière eux.",
+      "Joker : reçois de profil, corps ouvert vers le côté opposé.",
+      "Extérieurs : faites circuler pour écarter les défenseurs, puis cherchez l'intervalle.",
+      "Passe au joker forte et au sol : une passe molle se fait couper."
+    ],
+    "progressions": [
+      "Une touche pour le joker.",
+      "Le point ne compte que si le joker joue vers le côté opposé au passeur.",
+      "5 contre 3 avec joker : le troisième défenseur suit le joker."
+    ],
+    "regressions": [
+      "Carré de 14 x 14 m.",
+      "Le joker a trois touches et peut se retourner.",
+      "Un seul défenseur actif, l'autre reste immobile au centre."
+    ],
+    "measure": "Nombre de passes jouées vers le joker par minute et pourcentage de ces passes qui arrivent. On veut beaucoup de tentatives à travers le bloc, pas seulement autour.",
+    "story": "Comme Kaydoudou devenu pivot en Catalogne, le joker apprend à recevoir au milieu des adversaires et à faire jouer la passe d'après."
+  },
+  "en": {
+    "title": "The Pivot in the Middle",
+    "subtitle": "4 v 2 with a joker: play through the block",
+    "objective": "Keep the ball 4 v 2 by finding the player in the middle, between the two defenders. Players learn to play through the block rather than around it, like the pivot who receives between the lines and sets up the next pass.",
+    "organisation": [
+      "12 x 12 m square, one attacker per side, 2 defenders and 1 joker inside.",
+      "The joker always plays for the team in possession and wears a different bib.",
+      "Change the joker every set so everyone learns the pivot role.",
+      "Spare balls on the corners for quick restarts."
+    ],
+    "rules": [
+      "Two touches for everyone, the joker included.",
+      "Outside player, joker, another outside player: 1 point. The joker never returns it to the passer.",
+      "10 passes in a row: 1 point.",
+      "The player who loses the ball replaces the defender who has been in the middle longest.",
+      "A defender who intercepts a pass meant for the joker scores 1 point."
+    ],
+    "coaching": [
+      "Joker: check before you receive, know where the ball is going next.",
+      "Joker: move into the gap between the defenders, never hidden behind them.",
+      "Joker: receive side-on, body open to the far side.",
+      "Outside players: move the ball to stretch the defenders, then look for the gap.",
+      "Pass into the joker firm and on the ground: a soft pass gets cut out."
+    ],
+    "progressions": [
+      "One touch for the joker.",
+      "The point only counts if the joker plays to the side opposite the passer.",
+      "5 v 3 with the joker: the third defender tracks the joker."
+    ],
+    "regressions": [
+      "14 x 14 m square.",
+      "The joker gets three touches and may turn.",
+      "Only one active defender; the other stands still in the middle."
+    ],
+    "measure": "Passes played into the joker per minute and the share that arrive. We want plenty of attempts through the block, not only around it.",
+    "story": "Like Kaydoudou when he became a pivot in Catalonia, the joker learns to receive among opponents and set up the next pass."
+  },
+  "diagram": {
+    "view": "grid", "w": 12, "h": 12,
+    "players": [
+      { "id": "w", "team": "a", "x": 0.8, "y": 6.4 },
+      { "id": "nn", "team": "a", "x": 5, "y": 0.8 },
+      { "id": "e", "team": "a", "x": 11.2, "y": 5.4 },
+      { "id": "s", "team": "a", "x": 7, "y": 11.2 },
+      { "id": "j", "team": "n", "x": 6, "y": 6.2, "label": "J" },
+      { "id": "d1", "team": "b", "x": 3.4, "y": 4 },
+      { "id": "d2", "team": "b", "x": 3.8, "y": 8.8 }
+    ],
+    "ball": "w",
+    "arrows": [
+      { "from": "w", "to": "j", "kind": "pass", "n": 1 },
+      { "from": "j", "to": "e", "kind": "pass", "n": 2 }
+    ],
+    "labels": [{ "x": 8.6, "y": 8.6, "text": "à travers le bloc" }]
+  },
+  "diagram2": null
+}

@@ -1,0 +1,121 @@
+{
+  "id": "G04",
+  "family": "finishing",
+  "order": 4,
+  "ages": "U12+",
+  "players": { "min": 10, "max": 10, "fr": "10 joueurs (5 contre 4 + gardien)", "en": "10 players (5 v 4 + goalkeeper)" },
+  "space": { "w": 52, "h": 68 },
+  "duration": { "fr": "4 x 4 min, 2 min de récupération", "en": "4 x 4 min, 2 min rest" },
+  "minutes": 22,
+  "md": ["MD-2", "youth"],
+  "intensity": "high",
+  "intentions": ["fixer", "finir"],
+  "skills": ["dribble-njangi", "conduite", "controle", "decision", "passe"],
+  "pieces": ["la carte", "la raison"],
+  "fr": {
+    "title": "Isoler l'ailier",
+    "subtitle": "4 contre 3 d'un côté, puis renversement vers l'ailier isolé en 1 contre 1",
+    "objective": "Fixer un côté à 4 contre 3 pour isoler l'ailier opposé face à un seul défenseur. L'ailier reçoit avec de l'espace, élimine en 1 contre 1 puis finit ou donne : le talent du dribbleur sert l'équipe.",
+    "organisation": [
+      "Une moitié de terrain (52 x 68 m), un but avec gardien ; deux mini-buts sur la ligne médiane.",
+      "Côté fort, sur 50 m de large : 4 attaquants (latéral, pivot, intérieur, 9) contre 3 défenseurs.",
+      "Côté faible : un couloir de 18 m le long de la touche, où l'ailier attend face à un défenseur.",
+      "Chaque action part de l'entraîneur vers le latéral du côté fort ; on change de côté à chaque série."
+    ],
+    "rules": [
+      "Au moins 4 passes du côté fort avant de renverser vers l'ailier.",
+      "Après le renversement, le 9 et l'intérieur attaquent la surface ; les défenseurs du côté fort attendent 3 secondes avant de revenir.",
+      "But après un 1 contre 1 gagné par l'ailier : 2 points ; autre but : 1 point.",
+      "Les défenseurs qui récupèrent marquent 1 point dans un mini-but."
+    ],
+    "coaching": [
+      "Côté fort, attirez : passes courtes, appels près du ballon, le bloc doit glisser.",
+      "Ailier, reste large et loin : plus ton défenseur est seul, plus ton espace est grand.",
+      "Premier contrôle vers l'avant, puis attaque ton défenseur vite.",
+      "Fixe-le, puis choisis : dedans pour frapper, dehors pour centrer en retrait.",
+      "Si un deuxième défenseur vient sur toi, donne au partenaire libre : c'est le dribble njangi.",
+      "9 au premier poteau, intérieur au point de penalty."
+    ],
+    "progressions": [
+      "Un défenseur du côté fort peut revenir dès le renversement.",
+      "L'ailier doit finir son action en moins de 6 secondes.",
+      "Côté fort à 4 contre 4 : il faut fixer encore mieux."
+    ],
+    "regressions": [
+      "Le défenseur de l'ailier part 5 m plus loin.",
+      "Côté fort à 4 contre 2.",
+      "L'entraîneur joue directement le ballon à l'ailier pour travailler le 1 contre 1."
+    ],
+    "measure": "1 contre 1 tentés et gagnés par l'ailier, et part de ceux qui finissent par un tir ou un centre en retrait. L'analyste note aussi les dribbles qui attirent deux défenseurs.",
+    "story": "BriBri adore dribbler. Ici, il comprend que toute l'équipe travaille pour lui offrir un 1 contre 1, et qu'il doit le rendre à l'équipe en but."
+  },
+  "en": {
+    "title": "Isolate the Winger",
+    "subtitle": "4 v 3 on one side, then a switch to the isolated winger in a 1 v 1",
+    "objective": "Pin one side at 4 v 3 to isolate the far winger against a single defender. The winger receives with space, beats his man 1 v 1, then finishes or gives it: the dribbler's talent serves the team.",
+    "organisation": [
+      "Half a pitch (52 x 68 m), one goal with a goalkeeper; two mini goals on the halfway line.",
+      "Strong side, 50 m wide: 4 attackers (full-back, pivot, inside midfielder, 9) against 3 defenders.",
+      "Weak side: an 18 m channel along the touchline, where the winger waits against one defender.",
+      "Each move starts with a pass from the coach to the strong-side full-back; switch sides after each set."
+    ],
+    "rules": [
+      "At least 4 passes on the strong side before switching to the winger.",
+      "After the switch, the 9 and the inside midfielder attack the box; strong-side defenders wait 3 seconds before recovering.",
+      "Goal after a 1 v 1 won by the winger: 2 points; any other goal: 1 point.",
+      "Defenders who win the ball score 1 point in a mini goal."
+    ],
+    "coaching": [
+      "Strong side, draw them in: short passes, movement close to the ball, the block must slide.",
+      "Winger, stay wide and far: the more alone your defender is, the bigger your space.",
+      "First touch forward, then attack your defender quickly.",
+      "Pin him, then choose: inside to shoot, outside to cut it back.",
+      "If a second defender comes to you, give it to the free teammate: that is the Njangi dribble.",
+      "9 to the near post, inside midfielder to the penalty spot."
+    ],
+    "progressions": [
+      "One strong-side defender may recover as soon as the switch is played.",
+      "The winger must finish the move within 6 seconds.",
+      "Strong side at 4 v 4: you have to pin even better."
+    ],
+    "regressions": [
+      "The winger's defender starts 5 m further away.",
+      "Strong side at 4 v 2.",
+      "The coach plays the ball straight to the winger to work on the 1 v 1."
+    ],
+    "measure": "1 v 1s attempted and won by the winger, and the share that end in a shot or a cut-back. The analyst also notes dribbles that draw two defenders.",
+    "story": "BriBri loves to dribble. Here he understands that the whole team works to give him a 1 v 1, and that he must give it back to the team as a goal."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      { "id": "l2", "team": "a", "x": 24, "y": 60, "label": "2" },
+      { "id": "p6", "team": "a", "x": 16, "y": 40, "label": "6" },
+      { "id": "p8", "team": "a", "x": 30, "y": 49, "label": "8" },
+      { "id": "p9", "team": "a", "x": 41, "y": 37, "label": "9" },
+      { "id": "p11", "team": "a", "x": 35, "y": 7, "label": "11" },
+      { "id": "bd1", "team": "b", "x": 36, "y": 57 },
+      { "id": "bd2", "team": "b", "x": 45, "y": 45 },
+      { "id": "bd3", "team": "b", "x": 32, "y": 39 },
+      { "id": "bw", "team": "b", "x": 42.5, "y": 10 },
+      { "id": "gkb", "team": "gkb", "x": 51, "y": 34 }
+    ],
+    "ball": "l2",
+    "arrows": [
+      { "from": "l2", "to": "p8", "kind": "pass", "n": 1 },
+      { "from": "p8", "to": "p6", "kind": "pass", "n": 2 },
+      { "from": "p6", "to": "p11", "kind": "pass", "n": 3 },
+      { "from": "p11", "to": [46, 18.5], "kind": "dribble", "n": 4 },
+      { "from": [46, 18.5], "to": [52.3, 31.6], "kind": "shot", "n": 5 }
+    ],
+    "zones": [
+      { "x": 0, "y": 0, "w": 52.5, "h": 18, "tone": "a", "label": "1 contre 1" },
+      { "x": 0, "y": 18, "w": 52.5, "h": 50, "tone": "soft", "label": "4 contre 3" }
+    ],
+    "goals": [
+      { "x": 0, "y": 30, "side": "left", "size": "mini" },
+      { "x": 0, "y": 52, "side": "left", "size": "mini" }
+    ]
+  },
+  "diagram2": null
+}

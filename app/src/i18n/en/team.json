@@ -1,0 +1,482 @@
+{
+  "formatLabel": "{{n}} v {{n}}",
+  "lines": {
+    "gk": "Goalkeepers",
+    "def": "Defence",
+    "mid": "Midfield",
+    "att": "Attack"
+  },
+  "foot": {
+    "R": "Right-footed",
+    "L": "Left-footed",
+    "B": "Two-footed"
+  },
+  "footShort": {
+    "R": "Right",
+    "L": "Left",
+    "B": "Both"
+  },
+  "posShort": {
+    "GK": "GK",
+    "CB": "CB",
+    "FB": "FB",
+    "DM": "DM",
+    "CM": "CM",
+    "AM": "AM",
+    "W": "W",
+    "ST": "ST"
+  },
+  "skillsShort": {
+    "scan": "Scanning",
+    "controle": "First touch",
+    "passe": "Passing",
+    "conduite": "Carrying",
+    "dribble-njangi": "Dribble",
+    "appels": "Runs",
+    "communication": "Talk",
+    "protection": "Shielding",
+    "contre-pression": "Counter-press",
+    "decision": "Decisions"
+  },
+  "levels": {
+    "0": "Not rated",
+    "1": "Discovering",
+    "2": "Building",
+    "3": "Secure",
+    "4": "Benchmark"
+  },
+  "skillDesc": {
+    "scan": {
+      "1": "Rarely looks before receiving; discovers the pressure when the ball arrives.",
+      "2": "Looks before receiving when there is time, rarely under pressure.",
+      "3": "Looks before every touch and knows where the nearest opponent is.",
+      "4": "Scans several times before receiving and is already playing the next option."
+    },
+    "controle": {
+      "1": "Stops the ball under the feet or lets it get away.",
+      "2": "Takes a directional touch without pressure, often with the same foot.",
+      "3": "Takes the first touch into space, with both feet, under pressure.",
+      "4": "The first touch beats an opponent or opens the next pass straight away."
+    },
+    "passe": {
+      "1": "Passes to the nearest teammate, with no visible purpose.",
+      "2": "Passes accurately and serves a purpose when there is time.",
+      "3": "Picks the pass that serves the purpose of the moment, to the right foot, at the right pace.",
+      "4": "The pass creates the next action: breaks a line, draws pressure or frees a teammate."
+    },
+    "conduite": {
+      "1": "Carries with the head down; the ball drifts away from the foot.",
+      "2": "Carries with the head up into open space, with no opponent close.",
+      "3": "Carries to progress or to draw, changes pace and direction.",
+      "4": "The carry breaks a line or pulls an opponent out, then the ball is released at the right moment."
+    },
+    "dribble-njangi": {
+      "1": "Avoids one against one, or dribbles without looking at teammates.",
+      "2": "Tries one against one and sometimes wins, without seeing what comes next.",
+      "3": "Dribbles to draw two opponents, then plays the freed teammate.",
+      "4": "Picks the moment to beat, pin or release; the dribble pays the team."
+    },
+    "appels": {
+      "1": "Stands still or follows the ball when not in possession.",
+      "2": "Makes runs to receive, mostly towards the ball.",
+      "3": "Also makes runs that free a teammate or stretch the defence.",
+      "4": "Reads the game before others: the runs open the decisive passing lane."
+    },
+    "communication": {
+      "1": "Plays in silence.",
+      "2": "Calls for the ball and sometimes encourages.",
+      "3": "Gives short, useful information to the ball carrier and nearby teammates.",
+      "4": "Organises teammates, guides the rest defence and the press, calms the group."
+    },
+    "protection": {
+      "1": "Loses the ball at the first contact.",
+      "2": "Shields the ball with the body when standing still.",
+      "3": "Shields on the move, feels the opponent and turns away into space.",
+      "4": "Keeps the ball under pressure from two opponents and draws them to free a teammate."
+    },
+    "contre-pression": {
+      "1": "Stops or complains after losing the ball.",
+      "2": "Reacts to the loss, but alone or late.",
+      "3": "Presses straight after the loss, closing a passing lane.",
+      "4": "Triggers and organises the team's counter-press, and knows when to drop."
+    },
+    "decision": {
+      "1": "Always makes the same choice, whatever the situation.",
+      "2": "Makes the right choice with time and little pressure.",
+      "3": "Makes the right choice under pressure and can explain the intention.",
+      "4": "Chooses quickly and well, even tired or trailing, and makes others play better."
+    }
+  },
+  "noTeam": {
+    "title": "Create your team",
+    "body": "One team, one idea. Name your squad, choose the age group and the format. {{app}} then takes care of lineups, call-ups and reports.",
+    "cta": "Create the team"
+  },
+  "teamForm": {
+    "createTitle": "New team",
+    "editTitle": "Edit team",
+    "name": "Team name",
+    "namePh": "e.g. Bonamoussadi Lion Cubs U13",
+    "ageGroup": "Age group",
+    "format": "Format",
+    "formation": "Base formation",
+    "nameRequired": "Give the team a name."
+  },
+  "roster": {
+    "docTitle": "Team",
+    "eyebrow": "Squad",
+    "players_one": "{{count}} player",
+    "players_other": "{{count}} players",
+    "keepers_one": "{{count}} goalkeeper",
+    "keepers_other": "{{count}} goalkeepers",
+    "avgLevel": "Average level",
+    "addPlayer": "Add a player",
+    "import": "Import a list",
+    "editTeam": "Edit",
+    "switchTeam": "Team shown",
+    "emptyLine": "Nobody in this line yet.",
+    "notRated": "Not rated",
+    "avgAria": "Skills average: {{v}} out of 4",
+    "remove": "Remove {{name}}",
+    "deleteTitle": "Remove this player?",
+    "deleteBody": "{{name}} will be removed from the squad and from lineups. Actions already tagged stay in the reports.",
+    "deleteConfirm": "Remove",
+    "emptyTitle": "The squad is empty",
+    "emptyBody": "Add your players one by one, or paste the list you already send on WhatsApp: one name per line.",
+    "toMatches": "See matches",
+    "statPlayers": "Players",
+    "statKeepers": "Goalkeepers"
+  },
+  "playerForm": {
+    "addTitle": "Add a player",
+    "editTitle": "Edit player",
+    "name": "Name",
+    "namePh": "First and last name, or nickname",
+    "number": "Number",
+    "position": "Position",
+    "birthYear": "Year of birth",
+    "foot": "Stronger foot",
+    "nameRequired": "The name is required.",
+    "addAnother": "Add and continue",
+    "added": "{{name}} has joined the squad.",
+    "numberTaken": "Already taken"
+  },
+  "import": {
+    "title": "Import a list",
+    "body": "Paste one name per line. The shirt number is optional, at the start of the line.",
+    "placeholder": "1 Ousmane Bello\n4 Paul Ebanda\n8 Kaydoudou\nBriBri",
+    "list": "Player list",
+    "defaultPosition": "Position for everyone",
+    "preview_one": "{{count}} player ready to import",
+    "preview_other": "{{count}} players ready to import",
+    "hint": "You can set each player's position afterwards.",
+    "submit_one": "Import {{count}} player",
+    "submit_other": "Import {{count}} players",
+    "noNumber": "no number"
+  },
+  "player": {
+    "back": "Squad",
+    "notFoundTitle": "Player not found",
+    "notFoundBody": "This player may have been removed from the squad.",
+    "born": "Born {{year}}",
+    "edit": "Edit",
+    "remove": "Remove from squad",
+    "average": "Average",
+    "skillsTitle": "The ten skills",
+    "skillsHint": "Tap a level to rate, tap it again to clear. Rate what you saw in game situations over several sessions, not what you hope for.",
+    "grid": "Show the grid",
+    "rated": "{{n}} of 10 rated",
+    "radarTitle": "Profile",
+    "radarTeam": "Team average",
+    "radarEmpty": "Rate at least three skills to draw the profile.",
+    "notes": "Coach's notes",
+    "notesPh": "What you see in training, what to work on, what helps this player grow.",
+    "saved": "Saved",
+    "contribTitle": "Match contribution",
+    "contribHint": "Counted from the live-tagged actions credited to this player.",
+    "contribEmpty": "No tagged actions for this player yet. During live analysis, credit actions to players: their contribution will show here.",
+    "taggedMatches_one": "{{count}} tagged match",
+    "taggedMatches_other": "{{count}} tagged matches",
+    "starts_one": "{{count}} start",
+    "starts_other": "{{count}} starts",
+    "passAcc": "Pass completion",
+    "byMatch": "Match by match",
+    "drillsTitle": "Suggested drills",
+    "drillsFor": "For the two weakest skills: {{a}} and {{b}}.",
+    "drillsForOne": "For the weakest skill: {{a}}.",
+    "drillsNoRating": "Rate this player's skills: {{app}} will suggest drills for the weakest ones.",
+    "drillsEmpty": "The drill library is still being filled. Check back soon.",
+    "openLibrary": "Open the library",
+    "min": "{{n}} min",
+    "gridNote": "Grid from chapter 12 of The Njangi Code. A grid to help players grow, never to rank them.",
+    "profileNote": "A portrait, not a total: pick two skills to work on for six to eight weeks.",
+    "levelIs": "{{level}}: "
+  },
+  "matches": {
+    "docTitle": "Matches",
+    "eyebrow": "Season",
+    "title": "Matches",
+    "subtitle": "Prepare, call up, analyse. Every match feeds the next week.",
+    "new": "New match",
+    "next": "Next match",
+    "upcoming": "Upcoming",
+    "past": "Played",
+    "noneUpcoming": "No upcoming match. Schedule the next one to prepare the lineup and the call-up.",
+    "nonePast": "Played matches will show here, with the score and the Njangi Index.",
+    "emptyTitle": "No matches yet",
+    "emptyBody": "Schedule your next match: {{app}} suggests a lineup, a game plan and the call-up message to send on WhatsApp.",
+    "noTeamBody": "Create your team first: matches, lineups and call-ups depend on it.",
+    "home": "Home",
+    "away": "Away",
+    "vs": "v",
+    "inDays_one": "In {{count}} day",
+    "inDays_other": "In {{count}} days",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "status": {
+      "planned": "Upcoming",
+      "live": "Live",
+      "done": "Full time",
+      "toScore": "Score missing"
+    },
+    "result": {
+      "W": "Win",
+      "D": "Draw",
+      "L": "Loss"
+    },
+    "njangi": "Njangi Index",
+    "sheet": "Match sheet",
+    "convocation": "Call-up",
+    "lineupReady": "{{n}} of {{total}} starters",
+    "njangiShort": "Njangi",
+    "njangiTitle": "Njangi Index: {{label}}"
+  },
+  "board": {
+    "aria": "Lineup in {{formation}}",
+    "slotEmpty": "{{pos}} empty, choose a player",
+    "slotFilled": "{{pos}}: {{name}}, change",
+    "captain": "Captain",
+    "attack": "Direction of play",
+    "open": "Open",
+    "slotRead": "{{pos}}: {{name}}"
+  },
+  "picker": {
+    "title": "Position: {{pos}}",
+    "suggested": "Best fits for this position",
+    "others": "Other players",
+    "clear": "Leave the position empty",
+    "starter": "Starting, {{pos}}",
+    "sub": "Substitute",
+    "out": "Not selected",
+    "current": "In this position",
+    "noPlayers": "No players in the squad. Add players from the Team page."
+  },
+  "setup": {
+    "docNew": "New match",
+    "docEdit": "Edit match",
+    "back": "Matches",
+    "titleNew": "New match",
+    "titleEdit": "Edit match",
+    "against": "v {{opponent}}",
+    "steps": {
+      "info": "Details",
+      "lineup": "Lineup",
+      "plan": "Game plan",
+      "convo": "Call-up"
+    },
+    "stepOf": "Step {{n}} of 4",
+    "save": "Save the match",
+    "saving": "Saving",
+    "notFound": "This match no longer exists.",
+    "noTeamBody": "Create your team first to schedule a match.",
+    "info": {
+      "title": "The match",
+      "opponent": "Opponent",
+      "opponentPh": "e.g. Deïdo Panthers",
+      "opponentRequired": "Enter the opponent to continue.",
+      "competition": "Competition",
+      "competitionPh": "League, cup, friendly",
+      "competitionSuggest": [
+        "League",
+        "Cup",
+        "Friendly",
+        "Neighbourhood tournament",
+        "Trial match"
+      ],
+      "date": "Date",
+      "time": "Kick-off",
+      "venue": "Venue",
+      "venuePh": "e.g. Deïdo stadium",
+      "where": "Home or away",
+      "home": "Home",
+      "away": "Away",
+      "format": "Format",
+      "formatHint": "Changing the format adapts the formation and the lineup.",
+      "half": "Length of a half",
+      "minutes": "{{n}} min"
+    },
+    "lineup": {
+      "title": "The lineup",
+      "formation": "Formation",
+      "auto": "Pick automatically",
+      "autoHint": "{{app}} puts each player in their position, then uses skills to decide.",
+      "tapHint": "Tap a position to choose the player.",
+      "captain": "Captain",
+      "captainNone": "No captain",
+      "bench": "Substitutes",
+      "benchEmpty": "No substitutes. Add unselected players to the squad.",
+      "out": "Not selected",
+      "outEmpty": "The whole squad is called up.",
+      "toBench": "Add {{name}} to the substitutes",
+      "fromBench": "Remove {{name}} from the squad",
+      "squad": "{{starters}} starters, {{subs}} substitutes",
+      "noPlayers": "Your squad is empty: add players to pick the team.",
+      "addPlayers": "Add players"
+    },
+    "plan": {
+      "title": "The game plan",
+      "intro": "Four moments, plus set pieces. One or two clear ideas per moment beat a page of instructions.",
+      "suggest": "Njangi ideas",
+      "insert": "Add: {{text}}"
+    },
+    "convo": {
+      "title": "The call-up",
+      "intro": "The message is ready. Read it, edit it if needed, then send it to the group.",
+      "message": "Message",
+      "regenerate": "Rebuild the message",
+      "edited": "Message edited by hand",
+      "saveFirst": "The match will be saved with this message."
+    }
+  },
+  "moments": {
+    "possession": {
+      "title": "Possession",
+      "q": "How do we build out, where do we pin, where do we want to finish?"
+    },
+    "transitionDef": {
+      "title": "Defensive transition",
+      "q": "What do we do in the seconds after losing the ball?"
+    },
+    "defense": {
+      "title": "Defending",
+      "q": "How high do we defend, when do we press?"
+    },
+    "transitionOff": {
+      "title": "Attacking transition",
+      "q": "What do we do right after winning the ball?"
+    },
+    "setPieces": {
+      "title": "Set pieces",
+      "q": "Corners, free kicks, throw-ins: who does what?"
+    }
+  },
+  "suggest": {
+    "possession": [
+      "Build out with three, the pivot between the centre-backs",
+      "The goalkeeper is our first passer",
+      "Overload right, switch left",
+      "Wingers stay glued to the touchline",
+      "Receive between the lines, facing forward",
+      "Look for the third man",
+      "Breathe when leading: keep the ball, make them run"
+    ],
+    "transitionDef": [
+      "Five seconds of counter-press",
+      "Rest defence 3 + 2",
+      "Closest player presses, the others close the middle",
+      "Block the forward pass first",
+      "If we cannot win it back, drop quickly behind the ball"
+    ],
+    "defense": [
+      "Mid block, compact between the lines",
+      "Press on the back pass",
+      "Show them towards the touchline",
+      "Press high on the goalkeeper's restarts",
+      "No more than 30 m from defence to attack"
+    ],
+    "transitionOff": [
+      "Look forward: the first look goes in behind",
+      "Wingers attack the space in behind",
+      "First pass forward if it is on",
+      "If nothing is open, secure it and breathe",
+      "Finish the move within 10 seconds"
+    ],
+    "setPieces": [
+      "Inswinging corners, two players at the near post",
+      "Rest defence of 3 on our corners",
+      "Free kicks: one short routine, one direct delivery",
+      "Quick throw-ins to the free player",
+      "Their corners: two players zonal, the rest man to man"
+    ]
+  },
+  "share": {
+    "whatsapp": "WhatsApp",
+    "sms": "SMS",
+    "email": "Email",
+    "copy": "Copy",
+    "copied": "Copied",
+    "ics": "Calendar (.ics)",
+    "subject": "Call-up: {{team}} v {{opponent}}",
+    "icsTitle": "{{team}} v {{opponent}}"
+  },
+  "sheet": {
+    "docTitle": "Match sheet",
+    "back": "Matches",
+    "notFoundTitle": "Match not found",
+    "notFoundBody": "This match may have been deleted.",
+    "kickoff": "Kick-off",
+    "halves": "2 x {{n}} min",
+    "lineup": "Lineup",
+    "bench": "Substitutes",
+    "noBench": "No substitutes.",
+    "captain": "Captain",
+    "plan": "Game plan",
+    "planEmpty": "Not filled in.",
+    "planNone": "No game plan for this match yet. Add one or two ideas per moment.",
+    "addPlan": "Write the game plan",
+    "convocation": "Call-up",
+    "convoHint": "The group message, ready to send.",
+    "live": "Start live analysis",
+    "resumeLive": "Resume live analysis",
+    "report": "View the report",
+    "score": "Enter the score",
+    "editScore": "Correct the score",
+    "edit": "Edit",
+    "delete": "Delete",
+    "print": "Print",
+    "deleteTitle": "Delete this match?",
+    "deleteBody": "The match against {{opponent}}, its lineup and its tagged actions will be deleted from this device.",
+    "scoreTitle": "Final score",
+    "scoreHint": "For a match you did not tag live. The match will be marked as full time.",
+    "scoreSave": "Save the score",
+    "less": "One goal fewer for {{team}}",
+    "more": "One more goal for {{team}}",
+    "events_one": "{{count}} tagged action",
+    "events_other": "{{count}} tagged actions",
+    "gateTitle": "Unlimited live analysis with Coach Pro",
+    "gateBody": "The free plan includes one match analysed live. Upgrade to Coach Pro to tag all your matches and follow the Njangi Index across the season.",
+    "gateCta": "See plans",
+    "printTitle": "Match sheet",
+    "printSquad": "Squad",
+    "printMotto": "The ball must travel. But it must know where it is going.",
+    "docTitleVs": "Match sheet: {{opponent}}"
+  },
+  "levelHint": {
+    "1": "The behaviour is absent or rare.",
+    "2": "It shows when the player has time and little pressure.",
+    "3": "It is consistent in matches, under pressure.",
+    "4": "It makes the difference and makes others play better."
+  },
+  "skillDef": {
+    "scan": "Looking around before receiving to know where teammates, opponents and space are.",
+    "controle": "Receiving the ball into open space or into the next action, instead of stopping it.",
+    "passe": "A pass that serves one of the five intentions, to the right teammate, foot and pace.",
+    "conduite": "Moving forward with the ball to progress or draw an opponent, head up, ball close.",
+    "dribble-njangi": "Dribbling to draw, pin, then release or beat: an investment, not a show.",
+    "appels": "Moving without the ball to receive, free a teammate, stretch the defence or open a lane.",
+    "communication": "Short, useful information at the right moment, by voice or gesture.",
+    "protection": "Keeping the ball under pressure with body, footwork and orientation.",
+    "contre-pression": "Reacting straight after the loss to win the ball back within 5 seconds.",
+    "decision": "Choosing, at the right moment, the option that best serves the team."
+  }
+}

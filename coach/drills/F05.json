@@ -1,0 +1,321 @@
+{
+  "id": "F05",
+  "family": "phase",
+  "order": 5,
+  "ages": "U15+",
+  "players": {
+    "min": 16,
+    "max": 16,
+    "fr": "16 joueurs (8 contre 7 + gardien)",
+    "en": "16 players (8 v 7 + goalkeeper)"
+  },
+  "space": {
+    "w": 40,
+    "h": 68
+  },
+  "duration": {
+    "fr": "4 x 6 min, 2 min de récupération",
+    "en": "4 x 6 min, 2 min rest"
+  },
+  "minutes": 30,
+  "md": [
+    "MD-3",
+    "MD-2"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "finir",
+    "fixer",
+    "progresser"
+  ],
+  "skills": [
+    "passe",
+    "appels",
+    "decision",
+    "scan",
+    "controle"
+  ],
+  "pieces": [
+    "la raison",
+    "la carte"
+  ],
+  "fr": {
+    "title": "Contre un bloc bas",
+    "subtitle": "8 contre 7 + gardien dans le dernier tiers : patience, demi-espace, centre en retrait",
+    "objective": "Attaquer un adversaire regroupé devant sa surface sans perdre patience. On fait circuler pour déplacer le bloc, on entre par le demi-espace et on cherche le centre en retrait, la passe qui donne les meilleures occasions.",
+    "organisation": [
+      "Le dernier tiers et ses abords (environ 40 x 68 m), un but avec gardien ; deux mini-buts sur la ligne des 40 m.",
+      "8 attaquants (deux latéraux, pivot, deux intérieurs, deux ailiers, un 9) contre un bloc de 4 défenseurs et 3 milieux.",
+      "Deux zones de retrait dans la surface, près de la ligne de but, entre la petite surface et le côté de la surface.",
+      "L'entraîneur relance chaque action vers le pivot, à 35 m du but."
+    ],
+    "rules": [
+      "Un but vaut 2 points.",
+      "Entrée dans la surface par un demi-espace : 1 point.",
+      "Centre en retrait depuis une zone de retrait vers un partenaire : 1 point.",
+      "Le bloc défend dans ses 25 m ; s'il récupère, il a 10 secondes pour marquer dans un mini-but, 2 points."
+    ],
+    "coaching": [
+      "Patience : fais bouger le bloc d'un côté à l'autre avant de chercher l'intervalle.",
+      "Ailiers, restez larges et hauts : vous étirez la ligne de quatre.",
+      "Intérieurs, attaquez le demi-espace dans le dos du milieu, pas devant lui.",
+      "Près de la ligne de but, lève la tête : centre en retrait, au sol, vers celui qui arrive.",
+      "9 au premier poteau, intérieur opposé au point de penalty, ailier opposé au second poteau.",
+      "Défense de repos : latéraux et pivot restent prêts à reprendre devant les mini-buts."
+    ],
+    "progressions": [
+      "Le bloc passe à 8 : 8 contre 8.",
+      "Deux touches maximum dans la surface.",
+      "Les points bonus ne comptent que si l'action finit par un tir cadré."
+    ],
+    "regressions": [
+      "Le bloc défend à 6 : 8 contre 6.",
+      "Un joker joue avec l'équipe en possession, à l'entrée de la surface.",
+      "Pas de contre-attaque : les défenseurs rendent le ballon à l'entraîneur."
+    ],
+    "measure": "Entrées dans la surface et centres en retrait par série, et tirs pris entre le point de penalty et la petite surface. L'analyste compare avec le nombre de centres aériens perdus.",
+    "story": "À Kingsbridge, sous la pluie fine, les U15 butent sur un bloc bas. Kaydoudou garde le ballon, attend, et sert BriBri qui arrive dans le dos du milieu."
+  },
+  "en": {
+    "title": "Against a Low Block",
+    "subtitle": "8 v 7 + goalkeeper in the final third: patience, half-space, cut-back",
+    "objective": "Attack an opponent packed in front of its box without losing patience. Move the ball to shift the block, get in through the half-space and look for the cut-back, the pass that creates the best chances.",
+    "organisation": [
+      "The final third and its approaches (about 40 x 68 m), a goal with a goalkeeper; two mini goals on the 40 m line.",
+      "8 attackers (two full-backs, pivot, two inside midfielders, two wingers, a 9) against a block of 4 defenders and 3 midfielders.",
+      "Two cut-back zones in the box, near the goal line, between the six-yard box and the side of the box.",
+      "The coach restarts each move with a pass to the pivot, 35 m from goal."
+    ],
+    "rules": [
+      "A goal is worth 2 points.",
+      "An entry into the box through a half-space: 1 point.",
+      "A cut-back from a cut-back zone to a teammate: 1 point.",
+      "The block defends within its 25 m; if it wins the ball, it has 10 seconds to score in a mini goal, 2 points."
+    ],
+    "coaching": [
+      "Be patient: shift the block from side to side before looking for the gap.",
+      "Wingers, stay wide and high: you stretch the back four.",
+      "Inside midfielders, attack the half-space behind the midfielder, not in front of him.",
+      "Near the goal line, lift your head: cut it back, on the ground, to the arriving player.",
+      "9 to the near post, far inside midfielder to the penalty spot, far winger to the back post.",
+      "Rest defence: full-backs and pivot stay ready to win it back in front of the mini goals."
+    ],
+    "progressions": [
+      "The block goes up to 8: 8 v 8.",
+      "Two touches maximum in the box.",
+      "Bonus points only count if the move ends with a shot on target."
+    ],
+    "regressions": [
+      "The block defends with 6: 8 v 6.",
+      "A joker plays with the team in possession, at the edge of the box.",
+      "No counter-attack: defenders give the ball back to the coach."
+    ],
+    "measure": "Entries into the box and cut-backs per set, and shots taken between the penalty spot and the six-yard box. The analyst compares this with the number of crosses lost in the air.",
+    "story": "At Kingsbridge, in fine rain, the U15s run into a low block. Kaydoudou keeps the ball, waits, and finds BriBri arriving behind the midfield."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      {
+        "id": "l3",
+        "team": "a",
+        "x": 26,
+        "y": 9,
+        "label": "3"
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 40,
+        "y": 4,
+        "label": "11"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 32,
+        "y": 20,
+        "label": "10"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 20,
+        "y": 34,
+        "label": "6"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 40,
+        "y": 38.5,
+        "label": "8"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 40,
+        "y": 64,
+        "label": "7"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 26,
+        "y": 59,
+        "label": "2"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 48,
+        "y": 31.5,
+        "label": "9"
+      },
+      {
+        "id": "bd1",
+        "team": "b",
+        "x": 43.5,
+        "y": 6.5
+      },
+      {
+        "id": "bd2",
+        "team": "b",
+        "x": 48.8,
+        "y": 27
+      },
+      {
+        "id": "bd3",
+        "team": "b",
+        "x": 47.5,
+        "y": 42
+      },
+      {
+        "id": "bd4",
+        "team": "b",
+        "x": 46,
+        "y": 53
+      },
+      {
+        "id": "bm1",
+        "team": "b",
+        "x": 38,
+        "y": 25
+      },
+      {
+        "id": "bm2",
+        "team": "b",
+        "x": 36,
+        "y": 33
+      },
+      {
+        "id": "bm3",
+        "team": "b",
+        "x": 37,
+        "y": 46
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "p6",
+    "arrows": [
+      {
+        "from": "p6",
+        "to": "p10",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "p10",
+        "to": "p11",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "p10",
+        "to": [
+          48.5,
+          20.5
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": "p11",
+        "to": [
+          48.5,
+          20.5
+        ],
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": [
+          48.5,
+          20.5
+        ],
+        "to": "p8",
+        "kind": "pass",
+        "n": 5
+      },
+      {
+        "from": "p8",
+        "to": [
+          52.3,
+          36.8
+        ],
+        "kind": "shot",
+        "n": 6
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 12.5,
+        "h": 68,
+        "tone": "soft"
+      },
+      {
+        "x": 47,
+        "y": 13.8,
+        "w": 5.5,
+        "h": 11,
+        "tone": "a"
+      },
+      {
+        "x": 47,
+        "y": 43.2,
+        "w": 5.5,
+        "h": 11,
+        "tone": "a"
+      }
+    ],
+    "goals": [
+      {
+        "x": 12.5,
+        "y": 20,
+        "side": "left",
+        "size": "mini"
+      },
+      {
+        "x": 12.5,
+        "y": 48,
+        "side": "left",
+        "size": "mini"
+      }
+    ],
+    "labels": [
+      {
+        "x": 49.5,
+        "y": 58,
+        "text": "retrait"
+      }
+    ]
+  },
+  "diagram2": null
+}

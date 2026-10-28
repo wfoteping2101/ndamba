@@ -1,8 +1,179 @@
-import { PageHeader } from '../../ui'
+import { useMemo, useState, type ReactNode } from 'react'
+import { Link, useParams, useSearchParams } from 'react-router-dom'
+import { ArrowLeft, BookOpen, CalendarDays, ChevronLeft, ChevronRight, Clock, Gauge, Heart, Plus, Ruler, Target, Users } from 'lucide-react'
+import { Badge, EmptyState, Pitch } from '../../ui'
+import { useT } from '../../i18n'
 import { useDocumentTitle } from '../../lib/hooks'
+import { BOOKS } from '../../lib/config'
+import { DRILLS, drillText, getDrill } from '../../content'
+import type { DrillText } from '../../lib/types'
+import { IntensityMeter, IntentionBadge, MdBadge, useToast } from './components/bits'
+import { AddToSessionModal, PillToggle } from './components/AddToSessionModal'
+import { matches, paramsToFilter } from './components/helpers'
 
-// PLACEHOLDER: replaced by the owner of this surface (see docs/CONVENTIONS.md).
+function Meta({ icon, label, children }: { icon: ReactNode; label: string; children: ReactNode }) {
+  return (
+    <div className="min-w-0 rounded-2xl border border-line bg-paper px-3 py-2.5">
+      <div className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-ink-faint"><span className="text-terra-500" aria-hidden="true">{icon}</span>{label}</div>
+      <div className="mt-1 text-sm font-medium text-ink">{children}</div>
+    </div>
+  )
+}
+
+function ListBlock({ title, items, ordered = false, tone = 'forest' }: { title: string; items?: string[]; ordered?: boolean; tone?: 'forest' | 'terra' | 'sun' }) {
+  if (!items?.length) return null
+  const dot = tone === 'terra' ? 'bg-terra-500' : tone === 'sun' ? 'bg-sun-500' : 'bg-forest-600'
+  return (
+    <section className="mb-6">
+      <h2 className="mb-2 font-display text-lg font-semibold text-ink">{title}</h2>
+      <ol className="space-y-2">
+        {items.map((it, i) => (
+          <li key={i} className="flex gap-3 text-[15px] leading-relaxed text-ink-soft">
+            {ordered
+              ? <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-forest-50 text-xs font-bold text-forest-700">{i + 1}</span>
+              : <span className={`mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full ${dot}`} aria-hidden="true" />}
+            <span>{it}</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
+
 export default function DrillDetail() {
-  useDocumentTitle('DrillDetail')
-  return <PageHeader eyebrow="Njangi" title="DrillDetail" subtitle="En construction." />
+  const { id } = useParams()
+  const [sp] = useSearchParams()
+  const { t, lang } = useT('training')
+  const d = getDrill(id?.toUpperCase())
+  const tx: DrillText | undefined = d ? drillText(d, lang) : undefined
+  useDocumentTitle(d && tx ? `${d.id} ${tx.title}` : t('library.title'))
+  const [view, setView] = useState<'1' | '2'>('1')
+  const [adding, setAdding] = useState(false)
+  const { toast, toastNode } = useToast()
+  const search = sp.toString() ? `?${sp.toString()}` : ''
+
+  // previous / next inside the list the coach came from (filters kept)
+  const seq = useMemo(() => { const f = paramsToFilter(sp); const l = DRILLS.filter((x) => matches(x, f)); return l.some((x) => x.id === d?.id) ? l : DRILLS }, [sp, d?.id])
+  const idx = d ? seq.findIndex((x) => x.id === d.id) : -1
+  const prev = idx > 0 ? seq[idx - 1] : undefined
+  const next = idx >= 0 && idx < seq.length - 1 ? seq[idx + 1] : undefined
+
+  if (!d || !tx) {
+    return (
+      <div>
+        <Link to="/app/exercices" className="btn-ghost btn-sm mb-4 -ml-2"><ArrowLeft size={16} aria-hidden="true" />{t('detail.back')}</Link>
+        <EmptyState icon={<BookOpen size={32} />} title={t('detail.missingTitle', { id: id ?? '' })} body={t('detail.missingBody')} action={<Link to="/app/exercices" className="btn-primary">{t('detail.back')}</Link>} />
+      </div>
+    )
+  }
+  const spec = view === '2' && d.diagram2 ? d.diagram2 : d.diagram
+  const players = lang === 'en' ? d.players.en : d.players.fr
+
+  return (
+    <div>
+      <div className="mb-4 flex items-center justify-between gap-2">
+        <Link to={`/app/exercices${search}`} className="btn-ghost btn-sm -ml-2"><ArrowLeft size={16} aria-hidden="true" />{t('detail.back')}</Link>
+        <span className="text-xs text-ink-faint">{idx >= 0 ? `${idx + 1} / ${seq.length}` : ''}</span>
+      </div>
+
+      <header className="mb-6">
+        <div className="mb-2 flex flex-wrap items-center gap-2">
+          <span className="rounded-lg bg-forest-600 px-2 py-0.5 font-mono text-sm font-bold text-cream">{d.id}</span>
+          <span className="eyebrow">{t(`common:families.${d.family}`)}</span>
+        </div>
+        <h1 className="text-[30px] font-semibold leading-tight text-ink sm:text-[40px]">{tx.title}</h1>
+        <p className="mt-1 text-[17px] text-ink-muted">{tx.subtitle}</p>
+        <div className="mt-3 flex flex-wrap gap-1.5">{d.intentions.map((i) => <IntentionBadge key={i} i={i} />)}</div>
+      </header>
+
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-8">
+        <div className="lg:sticky lg:top-6 lg:self-start">
+          <div className="card overflow-hidden p-2 sm:p-3">
+            <Pitch spec={spec} width={720} title={tx.title} />
+            {d.diagram2 && (
+              <div className="flex items-center justify-between gap-2 px-1 pt-3">
+                <span className="text-xs text-ink-muted">{view === '1' ? t('detail.diagram1Hint') : t('detail.diagram2Hint')}</span>
+                <PillToggle label={t('detail.diagram')} value={view} onChange={setView} options={[{ id: '1', label: t('detail.diagram1') }, { id: '2', label: t('detail.diagram2') }]} />
+              </div>
+            )}
+          </div>
+          <div className="no-print mt-4 flex flex-col gap-2 sm:flex-row">
+            <button type="button" className="btn-primary btn-lg flex-1" onClick={() => setAdding(true)}><Plus size={18} aria-hidden="true" />{t('detail.add')}</button>
+            <a href={`${BOOKS.methode.href}#drill-${d.id}`} className="btn-outline btn-lg flex-1"><BookOpen size={18} aria-hidden="true" />{t('detail.read')}</a>
+          </div>
+        </div>
+
+        <div className="min-w-0">
+          <div className="mb-6 grid grid-cols-2 gap-2 sm:grid-cols-3">
+            <Meta icon={<Users size={14} />} label={t('detail.players')}>{players}</Meta>
+            <Meta icon={<Target size={14} />} label={t('detail.ages')}>{d.ages}</Meta>
+            <Meta icon={<Ruler size={14} />} label={t('detail.space')}>{d.space.w} x {d.space.h} m</Meta>
+            <Meta icon={<Clock size={14} />} label={t('detail.duration')}>{lang === 'en' ? d.duration.en : d.duration.fr} <span className="text-ink-faint">({d.minutes} {t('common:misc.minutes')})</span></Meta>
+            <Meta icon={<Gauge size={14} />} label={t('intensity')}><IntensityMeter level={d.intensity} /></Meta>
+            <Meta icon={<CalendarDays size={14} />} label={t('detail.days')}><span className="flex flex-wrap gap-1">{d.md.map((m) => <MdBadge key={m} md={m} />)}</span></Meta>
+          </div>
+
+          {d.pieces?.length > 0 && (
+            <div className="mb-6 flex flex-wrap items-center gap-2 text-sm">
+              <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-faint">{t('detail.pieces')}</span>
+              {d.pieces.map((p) => <Badge key={p} tone="sun">{t(`common:pieces.${p}`)}</Badge>)}
+            </div>
+          )}
+
+          <section className="mb-6 rounded-2xl bg-forest-600 p-4 text-cream sm:p-5">
+            <div className="mb-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-sun-300">{t('detail.objective')}</div>
+            <p className="font-display text-[19px] leading-snug">{tx.objective}</p>
+          </section>
+
+          <ListBlock title={t('detail.organisation')} items={tx.organisation} />
+          <ListBlock title={t('detail.rules')} items={tx.rules} ordered />
+          <section className="mb-6 rounded-2xl border border-terra-100 bg-terra-50/60 p-4 sm:p-5">
+            <h2 className="mb-2 font-display text-lg font-semibold text-ink">{t('detail.coaching')}</h2>
+            <ul className="space-y-2">
+              {tx.coaching?.map((c, i) => <li key={i} className="flex gap-3 text-[15px] leading-relaxed text-ink"><span className="mt-1 font-display text-lg font-semibold leading-none text-terra-500" aria-hidden="true">«</span><span>{c}</span></li>)}
+            </ul>
+          </section>
+          <div className="grid gap-x-6 sm:grid-cols-2">
+            <ListBlock title={t('detail.progressions')} items={tx.progressions} tone="terra" />
+            <ListBlock title={t('detail.regressions')} items={tx.regressions} tone="sun" />
+          </div>
+          {tx.measure && (
+            <section className="mb-6 rounded-2xl border border-line bg-paper p-4">
+              <h2 className="mb-1 font-display text-lg font-semibold text-ink">{t('detail.measure')}</h2>
+              <p className="text-[15px] leading-relaxed text-ink-soft">{tx.measure}</p>
+            </section>
+          )}
+          {tx.story && (
+            <section className="mb-6 flex gap-3 rounded-2xl border border-sun-300 bg-sun-50 p-4">
+              <Heart size={20} className="mt-0.5 shrink-0 text-terra-500" aria-hidden="true" />
+              <div>
+                <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-sun-700">{t('detail.story')}</div>
+                <p className="mt-1 font-display text-[16px] italic leading-snug text-ink">{tx.story}</p>
+                <a href={BOOKS.tome1.href} className="link mt-2 inline-block text-sm">{t('detail.storyLink')}</a>
+              </div>
+            </section>
+          )}
+        </div>
+      </div>
+
+      <nav className="no-print mt-8 grid grid-cols-2 gap-3 border-t border-line pt-6" aria-label={t('detail.nav')}>
+        {prev ? (
+          <Link to={`/app/exercices/${prev.id}${search}`} className="card flex min-h-[64px] items-center gap-2 p-3 hover:shadow-lift">
+            <ChevronLeft size={18} className="shrink-0 text-ink-faint" aria-hidden="true" />
+            <span className="min-w-0"><span className="block text-xs text-ink-faint">{t('common:actions.previous')} · {prev.id}</span><span className="block truncate font-semibold text-ink">{drillText(prev, lang).title}</span></span>
+          </Link>
+        ) : <span />}
+        {next ? (
+          <Link to={`/app/exercices/${next.id}${search}`} className="card flex min-h-[64px] items-center justify-end gap-2 p-3 text-right hover:shadow-lift">
+            <span className="min-w-0"><span className="block text-xs text-ink-faint">{t('common:actions.next')} · {next.id}</span><span className="block truncate font-semibold text-ink">{drillText(next, lang).title}</span></span>
+            <ChevronRight size={18} className="shrink-0 text-ink-faint" aria-hidden="true" />
+          </Link>
+        ) : <span />}
+      </nav>
+
+      <AddToSessionModal drill={d} open={adding} onClose={() => setAdding(false)}
+        onDone={(s, created) => toast({ text: created ? t('detail.createdToast', { title: s.title }) : t('detail.addedToast', { title: s.title }), to: `/app/seances/${s.id}`, action: t('detail.openSession') })} />
+      {toastNode}
+    </div>
+  )
 }

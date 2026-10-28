@@ -1,0 +1,338 @@
+{
+  "id": "G02",
+  "family": "finishing",
+  "order": 2,
+  "ages": "U10+",
+  "players": {
+    "min": 7,
+    "max": 13,
+    "fr": "7 à 13 joueurs (circuit, puis 2 contre 1, avec gardien)",
+    "en": "7 to 13 players (pattern, then 2 v 1, with a goalkeeper)"
+  },
+  "space": {
+    "w": 30,
+    "h": 40
+  },
+  "duration": {
+    "fr": "10 min de circuit, puis 3 x 3 min de 2 contre 1, 1 min de récupération",
+    "en": "10 min pattern, then 3 x 3 min of 2 v 1, 1 min rest"
+  },
+  "minutes": 21,
+  "md": [
+    "MD-2",
+    "MD-1",
+    "youth"
+  ],
+  "intensity": "medium",
+  "intentions": [
+    "finir",
+    "fixer"
+  ],
+  "skills": [
+    "passe",
+    "appels",
+    "conduite",
+    "dribble-njangi",
+    "controle"
+  ],
+  "pieces": [
+    "le cœur",
+    "la raison"
+  ],
+  "fr": {
+    "title": "Le une-deux du Njangi",
+    "subtitle": "Circuit et jeu à 2 contre 1 : une-deux puis frappe, des deux côtés",
+    "objective": "Finir après un une-deux : attirer le défenseur, donner, repartir dans son dos et frapper en une ou deux touches. C'est la combinaison la plus simple pour éliminer un adversaire à deux.",
+    "organisation": [
+      "Devant la surface, un but avec gardien ; deux couloirs de départ à 25 m du but, un de chaque côté.",
+      "Circuit : dans chaque couloir, un mannequin ou un défenseur passif à 20 m, et un remiseur sur le côté.",
+      "Jeu : 2 contre 1 depuis 25 m, le défenseur part du bord de la surface.",
+      "Les joueurs changent de côté et de rôle à chaque passage ; ballons de réserve au départ.",
+      "Avec les plus jeunes : répétitions courtes, de l'eau entre les deux parties, jamais de moquerie après un raté."
+    ],
+    "rules": [
+      "Circuit : conduite vers le mannequin, passe au remiseur, course dans le dos, remise, frappe.",
+      "La frappe se joue en une ou deux touches après la remise.",
+      "Jeu : un but après un une-deux vaut 2 points, un autre but 1 point.",
+      "Le défenseur qui récupère marque 1 point en conduisant le ballon jusqu'à la ligne de départ."
+    ],
+    "coaching": [
+      "Conduis vers le défenseur pour qu'il s'arrête sur toi : c'est lui qui ouvre l'espace.",
+      "Passe au remiseur et repars tout de suite, dans le dos du défenseur.",
+      "Remiseur, joue en une touche, dans la course, pas dans les pieds.",
+      "Premier contrôle vers le but, ou frappe directe si le ballon arrive bien.",
+      "Regarde le gardien avant de frapper : côté ouvert, au sol."
+    ],
+    "progressions": [
+      "Une touche obligatoire pour le remiseur et pour la frappe.",
+      "Le défenseur peut suivre le joueur qui repart.",
+      "Un deuxième défenseur revient de derrière après 3 secondes."
+    ],
+    "regressions": [
+      "Des plots à la place du défenseur, et un départ à 20 m.",
+      "Deux touches pour le remiseur.",
+      "Gardien qui joue à moitié, pour que chacun marque souvent."
+    ],
+    "measure": "Une-deux réussis (la remise arrive dans le dos du défenseur) et frappes cadrées, sur 10 répétitions de chaque côté. En jeu : part des buts marqués après un une-deux.",
+    "story": "Kaydoudou lève deux doigts, BriBri part en profondeur : c'est le une-deux du Njangi, né sur la terre rouge de Bonamoussadi."
+  },
+  "en": {
+    "title": "The Njangi One-Two",
+    "subtitle": "Pattern and 2 v 1 game: one-two then shot, on both sides",
+    "objective": "Finish after a one-two: draw the defender, give it, run in behind him and shoot with one or two touches. It is the simplest combination to beat an opponent with two players.",
+    "organisation": [
+      "In front of the box, one goal with a goalkeeper; two starting lanes 25 m from goal, one on each side.",
+      "Pattern: in each lane, a mannequin or passive defender at 20 m, and a wall player out to the side.",
+      "Game: 2 v 1 from 25 m, the defender starting at the edge of the box.",
+      "Players switch sides and roles every turn; spare balls at the start.",
+      "With young players: short repetitions, water between the two parts, never any mockery after a miss."
+    ],
+    "rules": [
+      "Pattern: dribble at the mannequin, pass to the wall player, run in behind, return pass, shot.",
+      "Shoot with one or two touches after the return pass.",
+      "Game: a goal after a one-two is worth 2 points, any other goal 1 point.",
+      "A defender who wins the ball scores 1 point by dribbling it to the starting line."
+    ],
+    "coaching": [
+      "Dribble at the defender so he stops on you: he is the one who opens the space.",
+      "Pass to the wall player and go straight away, in behind the defender.",
+      "Wall player, one touch, into the run, not to feet.",
+      "First touch towards goal, or shoot first time if the ball arrives well.",
+      "Look at the goalkeeper before you shoot: open side, low."
+    ],
+    "progressions": [
+      "One touch only for the wall player and for the shot.",
+      "The defender may follow the player making the run.",
+      "A second defender recovers from behind after 3 seconds."
+    ],
+    "regressions": [
+      "Cones instead of the defender, and a start at 20 m.",
+      "Two touches for the wall player.",
+      "Goalkeeper plays at half speed, so everyone scores often."
+    ],
+    "measure": "Successful one-twos (the return reaches the runner behind the defender) and shots on target, over 10 repetitions on each side. In the game: share of goals scored after a one-two.",
+    "story": "Kaydoudou raises two fingers and BriBri runs in behind: that is the Njangi one-two, born on the red earth of Bonamoussadi."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 17,
+        "y": 42,
+        "label": "8"
+      },
+      {
+        "id": "m1",
+        "team": "b",
+        "x": 30,
+        "y": 41.5
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 31,
+        "y": 53,
+        "label": "7"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 17,
+        "y": 25,
+        "label": "10"
+      },
+      {
+        "id": "m2",
+        "team": "b",
+        "x": 30,
+        "y": 25.5
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 31,
+        "y": 14,
+        "label": "11"
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "p8",
+    "arrows": [
+      {
+        "from": "p8",
+        "to": [
+          25,
+          42
+        ],
+        "kind": "dribble",
+        "n": 1
+      },
+      {
+        "from": [
+          25,
+          42
+        ],
+        "to": "p7",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": [
+          25.5,
+          40
+        ],
+        "to": [
+          37.5,
+          38.5
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": "p7",
+        "to": [
+          37.5,
+          38.5
+        ],
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": [
+          37.5,
+          38.5
+        ],
+        "to": [
+          52.3,
+          36.9
+        ],
+        "kind": "shot",
+        "n": 5
+      }
+    ],
+    "cones": [
+      [
+        24,
+        46
+      ],
+      [
+        24,
+        37
+      ],
+      [
+        24,
+        30
+      ],
+      [
+        24,
+        21
+      ]
+    ],
+    "labels": [
+      {
+        "x": 17,
+        "y": 33.8,
+        "text": "deux côtés"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "half",
+    "players": [
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 21,
+        "y": 39,
+        "label": "8"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 25,
+        "y": 53,
+        "label": "7"
+      },
+      {
+        "id": "d",
+        "team": "b",
+        "x": 35,
+        "y": 42
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 51,
+        "y": 34
+      }
+    ],
+    "ball": "p8",
+    "arrows": [
+      {
+        "from": "p8",
+        "to": [
+          29,
+          38.5
+        ],
+        "kind": "dribble",
+        "n": 1
+      },
+      {
+        "from": "p7",
+        "to": [
+          39,
+          50
+        ],
+        "kind": "run",
+        "n": 2
+      },
+      {
+        "from": "d",
+        "to": [
+          36,
+          46.5
+        ],
+        "kind": "press",
+        "n": 3
+      },
+      {
+        "from": [
+          29,
+          38.5
+        ],
+        "to": [
+          38,
+          35.5
+        ],
+        "kind": "dribble",
+        "n": 4
+      },
+      {
+        "from": [
+          38,
+          35.5
+        ],
+        "to": [
+          52.3,
+          30.6
+        ],
+        "kind": "shot",
+        "n": 5
+      }
+    ],
+    "labels": [
+      {
+        "x": 28,
+        "y": 62,
+        "text": "passe fermée : frappe"
+      }
+    ]
+  }
+}

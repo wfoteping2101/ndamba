@@ -1,0 +1,570 @@
+{
+  "name": "Mola",
+  "agentOf": "L'agent de {{app}}",
+  "typing": "Mola écrit",
+  "greeting": "Bonjour, je suis Mola, l'agent de {{app}}. Dites-moi ce que vous voulez préparer : je m'en occupe ici même. Avant que quoi que ce soit sorte de l'application, je vous demande toujours.",
+  "greetingName": "Bonjour {{name}}, je suis Mola, l'agent de {{app}}. Dites-moi ce que vous voulez préparer : je m'en occupe ici même. Avant que quoi que ce soit sorte de l'application, je vous demande toujours.",
+  "error": "Désolé, quelque chose s'est mal passé de mon côté. Réessayez dans un instant.",
+  "cancelled": "D'accord, j'annule. Dites-moi quand vous voulez reprendre.",
+  "giveUp": "Je n'y arrive pas avec cette réponse. Reprenons autrement : voici ce que je sais faire.",
+  "confirmNothing": "Avec plaisir. Dites-moi ce que vous voulez que je fasse.",
+  "denyNothing": "Pas de souci. Je reste là si besoin.",
+  "unknown": "Je n'ai pas bien compris. Voici ce que je sais faire, touchez une idée ou dites-le avec vos mots.",
+  "needTeam": "Il me faut d'abord votre équipe. Comment s'appelle-t-elle ? Vous pouvez ajouter la catégorie, par exemple « Lionceaux U13 ».",
+  "askAgain": "Pardon, je n'ai pas saisi.",
+  "ask": {
+    "opponent": "Contre quelle équipe ?",
+    "date": "Pour quel jour ?",
+    "name": "Quel nom ?",
+    "intention": "Que voulez-vous améliorer ?",
+    "md": "Quel type de séance ?",
+    "dateChips": [
+      "Samedi",
+      "Dimanche",
+      "Demain"
+    ],
+    "setup_match": {
+      "opponent": "Contre quelle équipe jouez-vous ?",
+      "date": "Quel jour, et à quelle heure si vous la connaissez ?"
+    },
+    "add_player": {
+      "name": "Comment s'appelle le joueur ? Ajoutez le numéro et le poste si vous voulez, par exemple « Samuel Owona, 9, attaquant »."
+    },
+    "create_team": {
+      "name": "Comment s'appelle votre équipe ?"
+    },
+    "plan_week": {
+      "date": "Je ne vois pas de match à venir. Quel jour est votre prochain match ?"
+    },
+    "create_session": {
+      "md": "Quel type de séance voulez-vous ? Je me cale sur la journée de la semaine."
+    },
+    "recommend_drills": {
+      "intention": "Que voulez-vous améliorer ? Choisissez une intention ou décrivez le problème."
+    }
+  },
+  "help": {
+    "intro": "Je suis Mola, l'agent de {{app}}. Je fais les choses pour vous, dans l'application :",
+    "list": [
+      "préparer votre semaine avant un match (MD-4 à MD-1)",
+      "créer une séance, par exemple « une séance MD-3 pour progresser »",
+      "organiser un match, par exemple « contre les Aigles samedi à 16h »",
+      "ajouter des joueurs à votre effectif, ou créer votre équipe",
+      "rédiger la convocation du prochain match",
+      "analyser votre dernier match avec l'Indice Njangi",
+      "proposer des exercices tirés de « {{methode}} »",
+      "ouvrir une Leçon du Ballon de {{series}} ou un chapitre de « {{tome1}} »",
+      "exporter la semaine dans votre calendrier"
+    ],
+    "trust": "Une seule règle : rien ne sort de l'application sans votre accord. Je prépare, vous validez."
+  },
+  "talk": {
+    "greet": "Bonjour {{name}}. Que préparons-nous aujourd'hui ?",
+    "greetAnon": "Bonjour. Que préparons-nous aujourd'hui ?",
+    "thanks": "Avec plaisir. Le ballon doit voyager, on continue quand vous voulez.",
+    "how": "Très bien, merci. Prêt à travailler : séance, semaine, match, vous me dites.",
+    "who": "Je suis Mola, l'agent de {{app}}. Je prépare vos séances et vos semaines, j'organise vos matchs, j'analyse vos rapports et je vous ouvre les livres : {{series}} avec {{heroes}}, et « {{methode}} ». Rien ne part sans votre accord.",
+    "bye": "À bientôt {{name}}. Bonne séance.",
+    "byeAnon": "À bientôt. Bonne séance.",
+    "praise": "Merci. C'est vous qui faites le travail sur le terrain."
+  },
+  "gate": {
+    "sessions": "Votre plan gratuit compte déjà {{n}} séances. Pour que je continue à en préparer, passez à Coach Pro. Les livres et les 50 exercices restent ouverts à tous.",
+    "cta": "Voir Premium"
+  },
+  "chips": {
+    "coach": [
+      "Prépare ma semaine avant le match",
+      "Crée une séance MD-3 pour progresser",
+      "Organise un match contre les Aigles samedi à 16h",
+      "Ajoute un joueur",
+      "Envoie la convocation",
+      "Analyse mon dernier match",
+      "Quels exercices pour mieux reprendre le ballon ?",
+      "Ouvre la leçon 7"
+    ],
+    "player": [
+      "Ouvre la leçon 1",
+      "Quels exercices pour mieux scanner ?",
+      "Quels exercices pour finir mes actions ?",
+      "Ouvre le roman",
+      "Ouvre « {{methode}} »",
+      "Que peux-tu faire ?"
+    ],
+    "sendConvocation": "Envoie la convocation",
+    "exportCalendar": "Exporte la semaine dans mon calendrier",
+    "setupMatchOn": "Organise le match du {{day}}",
+    "planWeek": "Prépare ma semaine avant le match",
+    "drillsIntention": "Quels exercices pour « {{intention}} » ?",
+    "recommendExample": "Quels exercices pour mieux reprendre le ballon ?",
+    "planWeekFor": "Prépare ma semaine avant le match contre {{opponent}}",
+    "yesPlan": "Oui, prépare la semaine",
+    "addPlayer": "Ajoute un joueur",
+    "setupMatch": "Organise un match",
+    "setupMatchExample": "Organise un match contre les Aigles samedi à 16h",
+    "planIntention": "Prépare la semaine sur l'intention « {{intention}} »",
+    "sessionIntention": "Crée une séance pour « {{intention}} »",
+    "createTeam": "Crée mon équipe",
+    "analyse": "Analyse mon dernier match"
+  },
+  "open": {
+    "week": "Voir la semaine",
+    "session": "Ouvrir la séance",
+    "match": "Ouvrir la fiche de match",
+    "player": "Ouvrir sa fiche",
+    "team": "Voir l'équipe",
+    "newMatch": "Créer un match",
+    "analysis": "Aller à l'analyse",
+    "report": "Lire le rapport complet",
+    "drills": "Voir tous ces exercices",
+    "lessons": "Toutes les leçons",
+    "lesson": "Ouvrir la leçon",
+    "chapter": "Lire le chapitre",
+    "read": "Ouvrir le livre",
+    "books": "Voir les livres",
+    "result": "Ouvrir"
+  },
+  "plan": {
+    "ack": "Je prépare votre semaine avant le match contre {{opponent}}, {{day}}.",
+    "ackDate": "Je prépare votre semaine avant le match du {{day}}.",
+    "s": {
+      "match": "Prochain match : contre {{opponent}}, {{day}}",
+      "date": "Jour de match : {{day}}",
+      "intentionReport": "Intention de la semaine : « {{intention}} », votre point à travailler contre {{opponent}}",
+      "intention": "Intention de la semaine : « {{intention}} »",
+      "noIntention": "Pas encore de rapport : je garde une semaine équilibrée",
+      "build": "Je construis MD-4 Tension, MD-3 Durée, MD-2 Vitesse, MD-1 Activation",
+      "saved_one": "J'enregistre la séance dans votre semaine",
+      "saved_other": "J'enregistre les {{count}} séances dans votre semaine",
+      "nothing": "Je n'écrase rien de ce qui existe"
+    },
+    "done_one": "C'est prêt : 1 séance créée, le {{first}}.",
+    "done_other": "C'est prêt : {{count}} séances, du {{first}} au {{last}}.",
+    "oriented": "Elles travaillent « {{intention}} ».",
+    "already_one": "Votre semaine a déjà sa séance avant ce match : je n'ai rien touché.",
+    "already_other": "Votre semaine est déjà prête : {{count}} séances avant ce match. Je n'ai rien écrasé.",
+    "tooLate": "Le match est trop proche pour préparer une semaine complète. Je peux créer une séance MD-1 si vous voulez.",
+    "kept_one": "J'ai gardé la séance qui existait déjà.",
+    "kept_other": "J'ai gardé les {{count}} séances qui existaient déjà.",
+    "past_one": "Un jour était déjà passé.",
+    "past_other": "{{count}} jours étaient déjà passés."
+  },
+  "session": {
+    "ack": "Je crée une séance {{md}} pour {{day}}.",
+    "s": {
+      "day": "Journée : {{md}}, {{day}}",
+      "drills": "Je choisis dans les {{count}} exercices de la méthode",
+      "drillsFor": "Je choisis des exercices qui travaillent « {{intention}} »",
+      "picked": "Exercices retenus : {{list}}",
+      "minutes": "Durée totale : {{minutes}} min",
+      "saved": "J'enregistre la séance"
+    },
+    "done_one": "Votre séance « {{title}} » est prête : 1 bloc, {{minutes}} minutes.",
+    "done_other": "Votre séance « {{title}} » est prête : {{count}} blocs, {{minutes}} minutes.",
+    "oriented": "Fil rouge : « {{intention}} »."
+  },
+  "match": {
+    "exists": "Ce match existe déjà : contre {{opponent}}, {{day}}. Je ne le crée pas une deuxième fois.",
+    "at": "à {{time}}",
+    "ack": "J'organise le match contre {{opponent}}, {{when}}.",
+    "s": {
+      "create": "Je crée le match contre {{opponent}}, {{when}}",
+      "lineup": "Composition automatique : {{starters}} titulaires sur {{slots}} postes en {{formation}}, {{subs}} remplaçants",
+      "noPlayers": "Pas encore de joueurs : la composition attendra votre effectif",
+      "captain": "Capitaine proposé : {{name}}",
+      "saved": "La fiche de match est prête"
+    },
+    "done": "Le match contre {{opponent}} est programmé, {{when}}.",
+    "venue": "Lieu : {{venue}}.",
+    "addPlayers": "Ajoutez vos joueurs pour que je propose la composition."
+  },
+  "player": {
+    "ack": "J'ajoute {{name}} à {{team}}.",
+    "ackMany": "J'ajoute {{count}} joueurs à {{team}}.",
+    "s": {
+      "add": "Je crée la fiche de {{name}}",
+      "addMany": "Je crée les fiches : {{list}}",
+      "details": "{{number}}, {{position}}",
+      "saved_one": "Effectif : 1 joueur",
+      "saved_other": "Effectif : {{count}} joueurs"
+    },
+    "noNumber": "Sans numéro",
+    "done_one": "{{name}} fait partie de {{team}}. Vous avez maintenant 1 joueur.",
+    "done_other": "{{name}} fait partie de {{team}}. Vous avez maintenant {{count}} joueurs.",
+    "doneMany_one": "1 joueur ajouté. Effectif : {{total}}.",
+    "doneMany_other": "{{count}} joueurs ajoutés. Effectif : {{total}}.",
+    "numberTaken": "Attention : le numéro {{number}} est déjà porté par {{name}}.",
+    "defaultPos": "Je l'ai placé {{position}} par défaut, vous pouvez changer sur sa fiche."
+  },
+  "team": {
+    "ack": "Je crée votre équipe {{name}}.",
+    "s": {
+      "create": "Équipe {{name}} : {{age}}, {{format}} contre {{format}}",
+      "formation": "Système de départ : {{formation}}",
+      "active": "Je l'active dans votre espace"
+    },
+    "done": "L'équipe {{name}} est créée ({{age}}, {{format}} contre {{format}}, en {{formation}}). Ajoutez vos joueurs quand vous voulez."
+  },
+  "convoc": {
+    "noMatch": "Je ne vois pas de match à venir. On en organise un d'abord ?",
+    "ack": "Je rédige la convocation pour le match contre {{opponent}}.",
+    "s": {
+      "match": "Match : contre {{opponent}}, {{when}}",
+      "lineup": "Je reprends la composition : {{starters}} titulaires, {{subs}} remplaçants",
+      "noLineup": "Composition à confirmer : je l'indique dans le message",
+      "draft": "Je prépare le message pour {{channel}}",
+      "wait": "J'attends votre accord avant d'ouvrir quoi que ce soit"
+    },
+    "ready": "Le message est prêt.",
+    "subject": "{{team}} : convocation pour le match contre {{opponent}}"
+  },
+  "channel": {
+    "whatsapp": "WhatsApp",
+    "sms": "SMS",
+    "email": "E-mail",
+    "copy": "Copier"
+  },
+  "calendar": {
+    "empty": "Rien à exporter cette semaine : pas de séance ni de match. Je prépare la semaine d'abord ?",
+    "ack": "Je prépare le fichier calendrier de la semaine du {{from}} au {{to}}.",
+    "s": {
+      "collect": "Je rassemble {{sessions}} et {{matches}}",
+      "file_one": "Fichier .ics prêt : 1 événement",
+      "file_other": "Fichier .ics prêt : {{count}} événements",
+      "wait": "J'attends votre accord pour le télécharger"
+    },
+    "ready_one": "1 événement à ajouter à votre calendrier.",
+    "ready_other": "{{count}} événements à ajouter à votre calendrier.",
+    "nSessions_one": "1 séance",
+    "nSessions_other": "{{count}} séances",
+    "nMatches_one": "1 match",
+    "nMatches_other": "{{count}} matchs"
+  },
+  "analysis": {
+    "none": "Je ne trouve pas encore de match joué. Analysez votre prochain match en direct, et je vous en ferai le résumé.",
+    "noTags": "Le match contre {{opponent}} n'a pas été tagué. Sans actions taguées, je ne peux pas calculer l'Indice Njangi.",
+    "ack": "J'analyse votre match contre {{opponent}}.",
+    "s": {
+      "match": "Match : contre {{opponent}}, {{score}}, {{day}}",
+      "count": "Je compte les {{count}} actions taguées",
+      "indice": "Indice Njangi : {{total}} ({{label}})",
+      "write": "J'écris le résumé et les corrections"
+    },
+    "strength": "Ce qui marche : {{text}}",
+    "correction": "À corriger : {{text}}"
+  },
+  "drills": {
+    "ack": "Je cherche les meilleurs exercices pour « {{what}} ».",
+    "s": {
+      "search": "Je parcours les {{count}} exercices de « {{book}} »",
+      "age": "Je garde ceux adaptés aux {{age}} : {{count}}",
+      "found": "{{count}} exercices correspondent",
+      "top": "Je retiens les {{count}} plus utiles",
+      "none": "Aucun exercice ne correspond encore"
+    },
+    "done_one": "Voici l'exercice que je vous conseille pour « {{what}} ».",
+    "done_other": "Voici les {{count}} exercices que je vous conseille pour « {{what}} ». Le premier est le plus direct.",
+    "empty": "Je n'ai pas trouvé d'exercice pour cela dans la bibliothèque pour l'instant."
+  },
+  "lesson": {
+    "notFound": "Il n'y a pas de leçon {{no}} : le carnet compte {{count}} leçons.",
+    "ack": "J'ouvre la leçon {{no}} du carnet.",
+    "ackAll": "J'ouvre les Leçons du Ballon.",
+    "s": {
+      "find": "Leçon {{no}}, chapitre « {{chapter}} »",
+      "all": "{{count}} leçons, de {{heroes}} à vous"
+    },
+    "done": "Leçon {{no}} : « {{title}} ». Elle vient du chapitre « {{chapter}} ».",
+    "doneAll": "Les {{count}} Leçons du Ballon de {{series}} sont là. Une par jour suffit.",
+    "item": "Leçon {{no}} : {{title}}",
+    "readChapter": "Lire le chapitre {{no}} dans le roman"
+  },
+  "book": {
+    "ack": "J'ouvre {{title}}.",
+    "ackAll": "J'ouvre la bibliothèque.",
+    "s": {
+      "find": "{{title}}",
+      "chapter": "Chapitre {{no}} de {{title}}",
+      "all": "{{series}} et « {{methode}} »"
+    },
+    "done": {
+      "tome1": "« {{tome1}} », le tome 1 de {{series}}, avec {{heroes}}. Bonne lecture.",
+      "methode": "« {{methode}} » : la méthode, les 50 exercices et l'Indice Njangi.",
+      "all": "Les deux livres sont en lecture libre : {{series}} et « {{methode}} »."
+    }
+  },
+  "approval": {
+    "title": "À valider avant envoi",
+    "explain": {
+      "whatsapp": "Rien ne part sans vous. En approuvant, j'ouvre WhatsApp avec le message prêt : c'est vous qui choisissez le groupe et appuyez sur Envoyer.",
+      "sms": "Rien ne part sans vous. En approuvant, j'ouvre vos SMS avec le message prêt : c'est vous qui appuyez sur Envoyer.",
+      "email": "Rien ne part sans vous. En approuvant, j'ouvre votre messagerie avec le message prêt : c'est vous qui l'envoyez.",
+      "copy": "En approuvant, je copie le message : vous le collez où vous voulez.",
+      "calendar": "En approuvant, je télécharge un fichier .ics : vous l'ouvrez pour l'ajouter à votre calendrier."
+    },
+    "channel": "Canal",
+    "to": {
+      "whatsapp": "Numéro (facultatif)",
+      "sms": "Numéro (facultatif)",
+      "email": "Adresse e-mail (facultatif)"
+    },
+    "toPh": {
+      "whatsapp": "+237 6 00 00 00 00",
+      "sms": "+237 6 00 00 00 00",
+      "email": "parents@exemple.com"
+    },
+    "subject": "Objet",
+    "events": "Événements",
+    "preview": "Message",
+    "editing": "Modification en cours",
+    "cta": {
+      "whatsapp": "Approuver et ouvrir WhatsApp",
+      "sms": "Approuver et ouvrir les SMS",
+      "email": "Approuver et ouvrir l'e-mail",
+      "copy": "Approuver et copier",
+      "calendar": "Approuver et télécharger"
+    },
+    "edit": "Modifier",
+    "doneEditing": "Terminer",
+    "cancel": "Annuler",
+    "step": {
+      "whatsapp": "Approuvé : WhatsApp ouvert avec le message",
+      "sms": "Approuvé : SMS ouvert avec le message",
+      "email": "Approuvé : e-mail ouvert avec le message",
+      "copy": "Approuvé : message copié",
+      "calendar": "Approuvé : fichier calendrier téléchargé",
+      "cancelled": "Annulé : rien n'a été envoyé"
+    },
+    "summary": {
+      "whatsapp": "Convocation ouverte dans WhatsApp, prête à envoyer.",
+      "sms": "Convocation ouverte dans vos SMS, prête à envoyer.",
+      "email": "Convocation ouverte dans votre messagerie, prête à envoyer.",
+      "copy": "Convocation copiée.",
+      "calendar": "Fichier calendrier téléchargé.",
+      "cancelled": "Annulé. Rien n'est sorti de l'application."
+    },
+    "after": {
+      "whatsapp": "C'est ouvert dans WhatsApp. Choisissez le groupe de l'équipe et appuyez sur Envoyer : je n'envoie jamais rien à votre place.",
+      "sms": "C'est ouvert dans vos SMS. Il ne reste qu'à choisir les destinataires et envoyer.",
+      "email": "C'est ouvert dans votre messagerie. Vérifiez les destinataires, puis envoyez.",
+      "copy": "Le message est copié. Collez-le dans le groupe de l'équipe.",
+      "calendar": "Le fichier est téléchargé. Ouvrez-le pour ajouter la semaine à votre calendrier.",
+      "cancelled": "C'est annulé, rien n'est parti."
+    }
+  },
+  "welcome": {
+    "coachTeam": "Bienvenue {{name}}. Votre équipe {{team}} est créée et votre espace {{app}} est prêt. Je peux préparer votre première semaine, organiser un match ou vous proposer des exercices. Par quoi commence-t-on ?",
+    "coach": "Bienvenue {{name}}. Votre espace {{app}} est prêt. Pour commencer, je peux créer votre équipe, vous proposer des exercices ou ouvrir « {{methode}} ».",
+    "player": "Bienvenue {{name}}. Votre espace {{app}} est prêt. Commencez par la leçon 1 de {{series}}, avec {{heroes}}, ou demandez-moi des exercices pour progresser.",
+    "parent": "Bienvenue {{name}}. Je peux vous aider à accompagner votre enfant : les Leçons du Ballon de {{series}}, des exercices simples, et le roman « {{tome1}} » avec {{heroes}}.",
+    "demo": "Bienvenue dans la démo, {{name}}. Vous entraînez {{team}} : {{count}} joueurs, une semaine de séances, un match déjà analysé et un match à venir samedi. Demandez-moi ce que vous voulez, par exemple d'analyser le dernier match ou de rédiger la convocation."
+  },
+  "pro": {
+    "eyebrow": "Mola propose",
+    "dismiss": "Masquer cette idée",
+    "team": "Vous n'avez pas encore d'équipe. Je la crée avec vous ?",
+    "teamCta": "Oui, créons-la",
+    "today": "aujourd'hui",
+    "tomorrow": "demain",
+    "plan": "Votre match contre {{opponent}} est {{day}} et la semaine est vide. Je prépare les quatre séances ?",
+    "planCta": "Oui, prépare la semaine",
+    "convoc": "Le match contre {{opponent}} approche ({{day}}). Je rédige la convocation ?",
+    "convocCta": "Oui, rédige-la",
+    "analyse": "Votre match contre {{opponent}} ({{score}}) est tagué. Je vous en fais le résumé ?",
+    "analyseCta": "Oui, analyse-le"
+  },
+  "composer": {
+    "placeholder": "Demandez à Mola…",
+    "label": "Votre message à Mola",
+    "send": "Envoyer"
+  },
+  "task": {
+    "steps": "Étapes",
+    "more_one": "et 1 autre",
+    "more_other": "et {{count}} autres"
+  },
+  "intent": {
+    "plan_week": "Semaine préparée",
+    "create_session": "Séance créée",
+    "setup_match": "Match organisé",
+    "add_player": "Joueur ajouté",
+    "create_team": "Équipe créée",
+    "send_convocation": "Convocation",
+    "export_calendar": "Export calendrier",
+    "analyze_last_match": "Analyse de match",
+    "recommend_drills": "Exercices conseillés",
+    "open_lesson": "Leçon du Ballon",
+    "open_book": "Livre"
+  },
+  "status": {
+    "running": "En cours",
+    "needs_approval": "À valider",
+    "done": "Terminé",
+    "cancelled": "Annulé",
+    "failed": "Échec"
+  },
+  "hub": {
+    "docTitle": "Mola",
+    "subtitle": "Demandez, Mola le fait dans l'application : séances, semaine, matchs, joueurs, analyses. Tout ce qui sort de l'application attend votre accord.",
+    "tabs": {
+      "chat": "Discussion",
+      "tasks": "Tâches",
+      "approvals": "À valider"
+    },
+    "pendingCount_one": "1 action à valider",
+    "pendingCount_other": "{{count}} actions à valider",
+    "trustTitle": "Rien ne part sans vous",
+    "trustBody": "Mola crée et prépare dans l'application. Un message WhatsApp, un SMS, un e-mail ou un fichier calendrier attend toujours votre validation, et c'est vous qui envoyez.",
+    "seePending_one": "Voir l'action à valider",
+    "seePending_other": "Voir les {{count}} actions à valider",
+    "canDo": "Demandez par exemple",
+    "approvals": {
+      "emptyTitle": "Rien à valider",
+      "emptyBody": "Quand Mola prépare un message ou un fichier qui sort de l'application, il attend ici votre accord. Vous pouvez le modifier, l'approuver ou l'annuler.",
+      "cta": "Rédiger une convocation"
+    },
+    "tasks": {
+      "emptyTitle": "Aucune tâche pour l'instant",
+      "emptyBody": "Chaque demande à Mola devient une tâche suivie ici : ses étapes, son résultat et son statut.",
+      "start": "Parler à Mola",
+      "filter": "Filtrer les tâches",
+      "f": {
+        "all": "Toutes",
+        "running": "En cours",
+        "needs_approval": "À valider",
+        "done": "Terminées",
+        "cancelled": "Annulées"
+      },
+      "none": "Aucune tâche dans ce filtre.",
+      "hide": "Masquer le détail",
+      "review": "Valider",
+      "details_one": "Voir l'étape",
+      "details_other": "Voir les {{count}} étapes",
+      "asked": "« {{request}} »"
+    }
+  },
+  "launcher": {
+    "open": "Parler à Mola",
+    "openPending_one": "Parler à Mola, 1 action à valider",
+    "openPending_other": "Parler à Mola, {{count}} actions à valider",
+    "title": "Mola",
+    "working": "Mola travaille…",
+    "full": "Tout Mola",
+    "close": "Fermer",
+    "dismiss": "Masquer"
+  },
+  "ob": {
+    "docTitle": "Bienvenue",
+    "chatLabel": "Conversation avec Mola",
+    "demo": "Essayer la démo",
+    "hello": "Bonjour, je suis Mola, l'agent de {{app}}. Je vais créer votre espace avec vous, en quelques questions.",
+    "langOk": "Parfait, on continue en français.",
+    "ack": "Noté : {{list}}.",
+    "playersAck_one": "J'ai bien lu 1 joueur.",
+    "playersAck_other": "J'ai bien lu {{count}} joueurs.",
+    "retry": "Je n'ai pas bien compris.",
+    "q": {
+      "lang": "En quelle langue préférez-vous continuer ?",
+      "name": "Comment vous appelez-vous ?",
+      "nameAgain": "Et comment vous appelez-vous ?",
+      "role": "Ravi de vous rencontrer, {{name}}. Dans le football, vous êtes :",
+      "team": "Comment s'appelle votre équipe ?",
+      "age": "Dans quelle catégorie ?",
+      "age_coach": "Quelle catégorie entraînez-vous ?",
+      "age_player": "Dans quelle catégorie jouez-vous ? Votre âge suffit.",
+      "childAge": "Quel âge a votre enfant, ou dans quelle catégorie joue-t-il ?",
+      "format": "Vous jouez à combien ?",
+      "players": "Vous pouvez coller la liste de vos joueurs ici, un par ligne, avec le numéro si vous l'avez. Sinon, on le fera plus tard.",
+      "position": "À quel poste jouez-vous ?",
+      "club": "Pour quel club ou quelle équipe ?",
+      "club_player": "Dans quel club jouez-vous ?",
+      "club_analyst": "Pour quel club ou quelle équipe analysez-vous ?",
+      "org": "Quelle est votre organisation ?",
+      "city": "Où êtes-vous basé ? La ville suffit.",
+      "country": "Et dans quel pays ?",
+      "goals": "Dernière question : qu'attendez-vous de {{app}} ? Choisissez autant d'objectifs que vous voulez.",
+      "review": "Merci {{name}}. Voici votre profil. Touchez un champ pour le corriger, puis créez votre espace."
+    },
+    "roleShort": {
+      "coach": "entraîneur",
+      "player": "joueur",
+      "analyst": "analyste",
+      "parent": "parent",
+      "manager": "dirigeant",
+      "federation": "fédération"
+    },
+    "langName": {
+      "fr": "Français",
+      "en": "English"
+    },
+    "formatLabel": "{{n}} contre {{n}}",
+    "playersCount_one": "1 joueur",
+    "playersCount_other": "{{count}} joueurs",
+    "goal": {
+      "identite": "Une identité de jeu",
+      "semaine": "Planifier mes semaines",
+      "analyse": "Analyser mes matchs",
+      "progresser": "Progresser personnellement",
+      "jeunes": "Former des jeunes",
+      "lire": "Lire les livres"
+    },
+    "goalsOk_one": "Valider ce choix",
+    "goalsOk_other": "Valider ces {{count}} choix",
+    "field": {
+      "name": "Nom",
+      "role": "Rôle",
+      "teamName": "Équipe",
+      "club": "Club",
+      "clubPlayer": "Club",
+      "clubAnalyst": "Club ou équipe",
+      "org": "Organisation",
+      "ageGroup": "Catégorie",
+      "childAge": "Catégorie de l'enfant",
+      "format": "Format",
+      "position": "Poste",
+      "city": "Ville",
+      "country": "Pays",
+      "players": "Joueurs",
+      "goals": "Objectifs",
+      "lang": "Langue"
+    },
+    "card": {
+      "eyebrow": "Votre profil",
+      "title": "Il se remplit pendant qu'on parle",
+      "progress": "{{done}} champs remplis sur {{total}}",
+      "edit": "modifier",
+      "empty": "À venir",
+      "choose": "Choisir",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "note": "Tout reste dans ce navigateur. Vous pourrez tout changer plus tard dans les réglages."
+    },
+    "playersPh": "Un joueur par ligne, par exemple : 9 Samuel Owona",
+    "playersHint": "Un joueur par ligne. Ctrl + Entrée pour envoyer.",
+    "later": "Plus tard",
+    "skip": "Passer",
+    "noClub": "Pas de club",
+    "create": "Créer mon espace",
+    "createHint": "Vous pourrez tout modifier ensuite.",
+    "ph": {
+      "default": "Écrivez librement, je comprends…",
+      "players": "1 Ousmane Bello\n8 Kaydoudou\n7 BriBri",
+      "review": "Une correction ? Dites-la simplement"
+    },
+    "make": {
+      "title": "Je prépare votre espace.",
+      "profile": "Profil créé",
+      "team": "Équipe {{team}} créée",
+      "players_one": "1 joueur ajouté",
+      "players_other": "{{count}} joueurs ajoutés",
+      "mola": "Mola est prêt à travailler"
+    },
+    "back": {
+      "title": "Bon retour, {{name}}.",
+      "body": "Votre espace {{app}} est prêt dans ce navigateur.",
+      "open": "Ouvrir l'application",
+      "restart": "Recommencer avec un nouveau profil",
+      "note": "Recommencer remplace votre profil à la fin de la conversation. Vos séances et vos matchs restent."
+    }
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "id": "L03",
+  "family": "lsg",
+  "order": 3,
+  "ages": "U15+",
+  "players": {
+    "min": 22,
+    "max": 22,
+    "fr": "22 joueurs (10 contre 10 + 2 gardiens)",
+    "en": "22 players (10 v 10 + 2 goalkeepers)"
+  },
+  "space": {
+    "w": 78,
+    "h": 68
+  },
+  "duration": {
+    "fr": "4 x 8 min, 2 min de récupération",
+    "en": "4 x 8 min, 2 min rest"
+  },
+  "minutes": 38,
+  "md": [
+    "MD-3"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "sortir",
+    "progresser",
+    "fixer"
+  ],
+  "skills": [
+    "scan",
+    "controle",
+    "passe",
+    "protection",
+    "decision",
+    "communication"
+  ],
+  "pieces": [
+    "le souffle",
+    "la carte",
+    "les yeux"
+  ],
+  "fr": {
+    "title": "Sortir sous le pressing",
+    "subtitle": "10 contre 10 : franchir la ligne médiane face à un pressing haut",
+    "objective": "Sortir le ballon depuis le gardien face à un pressing haut : attirer, trouver le joueur libre, franchir la ligne médiane. En face, l'équipe qui presse apprend à récupérer haut et à finir vite.",
+    "organisation": [
+      "Trois quarts de terrain (environ 78 x 68 m), jusqu'à un but mobile avec gardien.",
+      "Équipe A : gardien et 10 joueurs de champ en 4-3-3. Équipe B : 10 joueurs de champ qui pressent.",
+      "Le premier tiers de A (35 m) est marqué par des coupelles.",
+      "Chaque action part du gardien de A ; on change de rôle et de côté à chaque série."
+    ],
+    "rules": [
+      "A marque 1 point en franchissant la ligne médiane en conduite, ou en y recevant une passe contrôlée.",
+      "A continue vers le but mobile : un but vaut 3 points.",
+      "B marque 1 point s'il récupère dans le premier tiers de A et tire en moins de 8 secondes, 3 points s'il marque.",
+      "Récupération de B plus haut : B attaque le grand but, un but vaut 1 point.",
+      "Deux premières séries : pas de long ballon du gardien au-delà de la ligne médiane."
+    ],
+    "coaching": [
+      "Centraux, écartez-vous aux angles de la surface : le premier attaquant doit choisir.",
+      "Gardien, tu es le joueur en plus : offre toujours la passe en retrait, sous un angle.",
+      "Joue vers celui qui presse pour l'attirer, puis dans l'espace qu'il vient de quitter.",
+      "Pivot et intérieurs, montrez-vous dans le dos des premiers attaquants, corps ouvert.",
+      "Équipe B : pressez ensemble sur la passe en retrait ou le mauvais contrôle, jamais seul."
+    ],
+    "progressions": [
+      "Le point de la ligne médiane exige 8 passes ou moins.",
+      "B presse avec 8 joueurs dans le camp de A dès la sortie de but.",
+      "Deux touches maximum pour le gardien et les centraux."
+    ],
+    "regressions": [
+      "Un joueur neutre joue avec A dans son premier tiers.",
+      "B ne presse qu'avec 4 joueurs dans le premier tiers de A.",
+      "Le long ballon du gardien est autorisé une fois par action."
+    ],
+    "measure": "Part des sorties de but qui franchissent la ligne médiane en possession, et récupérations de B dans le premier tiers suivies d'un tir. Bon repère : plus d'une sortie sur deux réussie.",
+    "story": "À Londres, Coach Okafor fait presser ses U15 à huit dans le camp adverse : Kaydoudou y gagne la pièce du souffle, garder le ballon même quand ça brûle."
+  },
+  "en": {
+    "title": "Building Out Under Pressure",
+    "subtitle": "10 v 10: cross the halfway line against a high press",
+    "objective": "Play out from the goalkeeper against a high press: draw it, find the free player, cross the halfway line. The pressing team, in turn, learns to win the ball high and finish quickly.",
+    "organisation": [
+      "Three quarters of a pitch (about 78 x 68 m), up to a portable goal with a goalkeeper.",
+      "Team A: goalkeeper and 10 outfield players in a 4-3-3. Team B: 10 outfield players who press.",
+      "Team A's first third (35 m) is marked with disc cones.",
+      "Every move starts from A's goalkeeper; teams swap roles and ends after each set."
+    ],
+    "rules": [
+      "A scores 1 point by dribbling over the halfway line, or by receiving a controlled pass beyond it.",
+      "A then attacks the portable goal: a goal is worth 3 points.",
+      "B scores 1 point for winning the ball in A's first third and shooting within 8 seconds, 3 points for a goal.",
+      "If B wins the ball higher up, B attacks the big goal and a goal is worth 1 point.",
+      "First two sets: no long ball from the goalkeeper beyond the halfway line."
+    ],
+    "coaching": [
+      "Centre-backs, split to the corners of the box: make the first forward choose.",
+      "Goalkeeper, you are the extra player: always offer the back pass, on an angle.",
+      "Play towards the player pressing to draw him, then into the space he has just left.",
+      "Pivot and inside midfielders, show behind the first forwards, body open.",
+      "Team B: press together on the back pass or the heavy touch, never alone."
+    ],
+    "progressions": [
+      "The halfway-line point requires 8 passes or fewer.",
+      "B presses with 8 players in A's half from the goal kick.",
+      "Two touches maximum for the goalkeeper and the centre-backs."
+    ],
+    "regressions": [
+      "A neutral player joins A in its first third.",
+      "B may only press with 4 players in A's first third.",
+      "The goalkeeper may go long once per move."
+    ],
+    "measure": "Share of goal kicks that cross the halfway line in possession, and B regains in the first third followed by a shot. Good benchmark: more than one build-up in two succeeds.",
+    "story": "In London, Coach Okafor has his U15s press with eight in the opponents' half: Kaydoudou earns the piece called the breath, keeping the ball even when it burns."
+  },
+  "diagram": {
+    "view": "full",
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 2.5,
+        "y": 34,
+        "label": "1"
+      },
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 8,
+        "y": 20,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 8,
+        "y": 48,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 19,
+        "y": 34,
+        "label": "6"
+      },
+      {
+        "id": "l3",
+        "team": "a",
+        "x": 24,
+        "y": 6,
+        "label": "3"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 24,
+        "y": 62,
+        "label": "2"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 36,
+        "y": 24,
+        "label": "10"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 34,
+        "y": 46,
+        "label": "8"
+      },
+      {
+        "id": "b9",
+        "team": "b",
+        "x": 16,
+        "y": 40
+      },
+      {
+        "id": "b10",
+        "team": "b",
+        "x": 15,
+        "y": 27
+      },
+      {
+        "id": "b11",
+        "team": "b",
+        "x": 29,
+        "y": 58
+      },
+      {
+        "id": "b7",
+        "team": "b",
+        "x": 29,
+        "y": 11
+      },
+      {
+        "id": "bm1",
+        "team": "b",
+        "x": 27,
+        "y": 32
+      },
+      {
+        "id": "bm2",
+        "team": "b",
+        "x": 42,
+        "y": 38
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 76,
+        "y": 34
+      }
+    ],
+    "ball": "gk",
+    "arrows": [
+      {
+        "from": "gk",
+        "to": "c5",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "b9",
+        "to": [
+          10.8,
+          45.4
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "c5",
+        "to": "p8",
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": "p8",
+        "to": [
+          55,
+          50
+        ],
+        "kind": "dribble",
+        "n": 4
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 35,
+        "h": 68,
+        "tone": "b",
+        "label": "premier tiers"
+      },
+      {
+        "x": 78,
+        "y": 0,
+        "w": 27,
+        "h": 68,
+        "tone": "soft"
+      }
+    ],
+    "goals": [
+      {
+        "x": 78,
+        "y": 34,
+        "side": "right",
+        "size": "full"
+      }
+    ],
+    "labels": [
+      {
+        "x": 62,
+        "y": 57,
+        "text": "1 point"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "full",
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 2.5,
+        "y": 34,
+        "label": "1"
+      },
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 8,
+        "y": 20,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 8,
+        "y": 47,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 20,
+        "y": 34,
+        "label": "6"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 20,
+        "y": 63,
+        "label": "2"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 38,
+        "y": 49,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 36,
+        "y": 24,
+        "label": "10"
+      },
+      {
+        "id": "b9",
+        "team": "b",
+        "x": 16,
+        "y": 40
+      },
+      {
+        "id": "b10",
+        "team": "b",
+        "x": 14,
+        "y": 26
+      },
+      {
+        "id": "b11",
+        "team": "b",
+        "x": 32,
+        "y": 62
+      },
+      {
+        "id": "bm2",
+        "team": "b",
+        "x": 31,
+        "y": 42
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 76,
+        "y": 34
+      }
+    ],
+    "ball": "c5",
+    "arrows": [
+      {
+        "from": "c5",
+        "to": "l2",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "b11",
+        "to": [
+          23.5,
+          62.6
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "bm2",
+        "to": [
+          26.5,
+          53
+        ],
+        "kind": "press",
+        "n": 3
+      },
+      {
+        "from": [
+          22.5,
+          59
+        ],
+        "to": "b9",
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": "b9",
+        "to": [
+          0.6,
+          36
+        ],
+        "kind": "shot",
+        "n": 5
+      }
+    ],
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 35,
+        "h": 68,
+        "tone": "b",
+        "label": "premier tiers"
+      },
+      {
+        "x": 78,
+        "y": 0,
+        "w": 27,
+        "h": 68,
+        "tone": "soft"
+      }
+    ],
+    "goals": [
+      {
+        "x": 78,
+        "y": 34,
+        "side": "right",
+        "size": "full"
+      }
+    ],
+    "labels": [
+      {
+        "x": 7,
+        "y": 60,
+        "text": "8 secondes"
+      }
+    ]
+  }
+}

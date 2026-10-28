@@ -1,0 +1,108 @@
+{
+  "id": "R08",
+  "family": "rondo",
+  "order": 8,
+  "ages": "U13+",
+  "players": { "min": 7, "max": 7, "fr": "7 joueurs (5 contre 2, puis 4 contre 3 à la perte)", "en": "7 players (5 v 2, then 4 v 3 when the ball is lost)" },
+  "space": { "w": 15, "h": 15 },
+  "duration": { "fr": "5 x 2 min, 1 min 30 de récupération", "en": "5 x 2 min, 1 min 30 rest" },
+  "minutes": 17,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["reprendre", "respirer"],
+  "skills": ["contre-pression", "communication", "protection", "decision"],
+  "pieces": ["le souffle", "les yeux"],
+  "fr": {
+    "title": "Rondo des cinq secondes",
+    "subtitle": "5 contre 2 : à la perte, on reprend tout de suite",
+    "objective": "Réagir à la perte comme un groupe : les quatre joueurs restants ont 5 secondes pour reprendre le ballon. On entraîne la contre-pression immédiate et, pour ceux qui récupèrent, la protection du ballon sous pression.",
+    "organisation": [
+      "Carré de 15 x 15 m, 5 attaquants sur le périmètre, 2 défenseurs à l'intérieur.",
+      "À la perte, plus de lignes ni de postes : tout le monde peut entrer dans le carré.",
+      "L'entraîneur compte les 5 secondes à voix haute, un ballon de réserve en main."
+    ],
+    "rules": [
+      "Phase de rondo : deux touches maximum.",
+      "Quand un défenseur récupère, les 2 défenseurs et le joueur qui a perdu forment une équipe de 3.",
+      "Les 4 autres ont 5 secondes pour reprendre le ballon ou le faire sortir : 1 point.",
+      "Si les 3 gardent le ballon 5 secondes : 1 point pour eux ; le joueur qui a perdu et son passeur deviennent défenseurs.",
+      "Après chaque phase de 5 secondes, l'entraîneur relance un nouveau ballon au rondo."
+    ],
+    "coaching": [
+      "Le plus proche attaque le porteur tout de suite, les autres ferment les passes.",
+      "Pressez en courbe pour couper la ligne de passe vers le partenaire le plus proche.",
+      "Parlez : « Je prends ! », « Ferme à droite ! ».",
+      "Ceux qui récupèrent : corps entre l'adversaire et le ballon, première passe loin de la pression.",
+      "Après 5 secondes sans reprise, on souffle et on se replace calmement."
+    ],
+    "progressions": [
+      "4 secondes seulement.",
+      "Les 3 marquent s'ils enchaînent 3 passes avant la fin des 5 secondes.",
+      "Carré de 18 x 18 m pour les 3, ce qui rend la reprise plus difficile."
+    ],
+    "regressions": [
+      "7 secondes pour reprendre le ballon.",
+      "Seuls les 2 défenseurs gardent le ballon, le joueur qui a perdu reste neutre.",
+      "Carré de 12 x 12 m : la reprise est plus facile."
+    ],
+    "measure": "Pourcentage de ballons repris en moins de 5 secondes par série. C'est l'image en petit de l'indicateur de match : récupérations dans les 5 secondes après la perte.",
+    "story": "En France, l'équipe de Kaydoudou gagne un match grâce à un ballon repris en trois secondes. Ici, chacun apprend que la perte est le meilleur moment pour reprendre."
+  },
+  "en": {
+    "title": "Five-Second Rondo",
+    "subtitle": "5 v 2: when you lose it, win it straight back",
+    "objective": "React to losing the ball as a group: the four remaining players have 5 seconds to win it back. It trains immediate counter-pressing and, for those who win it, protecting the ball under pressure.",
+    "organisation": [
+      "15 x 15 m square, 5 attackers on the outside, 2 defenders inside.",
+      "Once the ball is lost, no more lines or positions: everyone may enter the square.",
+      "The coach counts the 5 seconds out loud with a spare ball in hand."
+    ],
+    "rules": [
+      "Rondo phase: two touches maximum.",
+      "When a defender wins the ball, the 2 defenders and the player who lost it form a team of 3.",
+      "The other 4 have 5 seconds to win it back or force it out: 1 point.",
+      "If the 3 keep the ball for 5 seconds: 1 point to them; the player who lost it and his passer become defenders.",
+      "After each 5-second phase, the coach plays a new ball into the rondo."
+    ],
+    "coaching": [
+      "Nearest player attacks the ball straight away, the others close the passing lanes.",
+      "Press on a curve to cut the pass to the nearest teammate.",
+      "Talk: \"Mine!\", \"Close right!\".",
+      "If you win it: body between opponent and ball, first pass away from pressure.",
+      "After 5 seconds without winning it, breathe and reset calmly."
+    ],
+    "progressions": [
+      "Only 4 seconds.",
+      "The 3 score if they string 3 passes together within the 5 seconds.",
+      "18 x 18 m square for the 3, which makes winning it back harder."
+    ],
+    "regressions": [
+      "7 seconds to win the ball back.",
+      "Only the 2 defenders keep the ball; the player who lost it stays neutral.",
+      "12 x 12 m square: winning it back is easier."
+    ],
+    "measure": "Share of balls won back within 5 seconds per set. It is a small version of the match indicator: regains within 5 seconds of losing the ball.",
+    "story": "In France, Kaydoudou's team wins a match with a ball won back in three seconds. Here, everyone learns that losing the ball is the best moment to win it back."
+  },
+  "diagram": {
+    "view": "grid", "w": 15, "h": 15,
+    "players": [
+      { "id": "a1", "team": "a", "x": 13.8, "y": 3 },
+      { "id": "a2", "team": "a", "x": 6, "y": 1.2 },
+      { "id": "a3", "team": "a", "x": 1.2, "y": 8 },
+      { "id": "a4", "team": "a", "x": 7, "y": 13.8 },
+      { "id": "d1", "team": "b", "x": 9, "y": 6.5 },
+      { "id": "d2", "team": "b", "x": 4.5, "y": 10 },
+      { "id": "pp", "team": "b", "x": 12.8, "y": 11.5, "label": "P" }
+    ],
+    "ball": "d1",
+    "arrows": [
+      { "from": "a1", "to": [10.4, 5.6], "kind": "press", "n": 1 },
+      { "from": "a2", "to": [8.4, 5], "kind": "press", "n": 2 },
+      { "from": "a4", "to": [10.4, 11], "kind": "run", "n": 3 },
+      { "from": "a3", "to": [5.2, 7.6], "kind": "run", "n": 4 }
+    ],
+    "labels": [{ "x": 3.4, "y": 3.8, "text": "5 secondes" }]
+  },
+  "diagram2": null
+}

@@ -1,0 +1,412 @@
+{
+  "id": "L04",
+  "family": "lsg",
+  "order": 4,
+  "ages": "U15+",
+  "players": {
+    "min": 22,
+    "max": 22,
+    "fr": "22 joueurs (11 contre 11)",
+    "en": "22 players (11 v 11)"
+  },
+  "space": {
+    "w": 105,
+    "h": 68
+  },
+  "duration": {
+    "fr": "2 x 15 min, 4 min de récupération",
+    "en": "2 x 15 min, 4 min rest"
+  },
+  "minutes": 34,
+  "md": [
+    "MD-3"
+  ],
+  "intensity": "high",
+  "intentions": [
+    "sortir",
+    "progresser",
+    "reprendre"
+  ],
+  "skills": [
+    "communication",
+    "decision",
+    "contre-pression",
+    "scan",
+    "passe"
+  ],
+  "pieces": [
+    "le cœur",
+    "la raison",
+    "la carte"
+  ],
+  "fr": {
+    "title": "Une équipe, une idée",
+    "subtitle": "11 contre 11 à thème : deux règles du modèle et des points pour les comportements",
+    "objective": "Appliquer le modèle de jeu dans un vrai match. L'entraîneur fixe deux règles du modèle et récompense les comportements des quatre moments, pas seulement les buts : chacun voit que l'idée commune rapporte.",
+    "organisation": [
+      "Terrain entier, ou 90 x 60 m pour les U15 ; deux équipes de 11 en 4-3-3.",
+      "Les deux équipes appliquent les mêmes règles : c'est notre modèle des deux côtés.",
+      "Un adjoint par équipe note les points bonus, sur une fiche ou dans l'application Njangi.",
+      "Avant chaque période, l'entraîneur annonce les deux règles et les montre en une image."
+    ],
+    "rules": [
+      "Règle 1 (exemple) : en attaque, 3 + 2 joueurs restent derrière le ballon ; c'est la défense de repos.",
+      "Perte du ballon sans défense de repos en place : 1 point pour l'adversaire.",
+      "Règle 2 (exemple) : dans chaque sortie depuis le gardien, le pivot touche le ballon avant la ligne médiane.",
+      "Un but vaut 1 point, 2 points si l'action est partie d'une sortie où le pivot a touché le ballon.",
+      "Récupération dans les 5 secondes après la perte : 1 point bonus.",
+      "Selon la semaine, d'autres règles remplacent celles-ci : hauteur du bloc, déclencheur du pressing."
+    ],
+    "coaching": [
+      "Avant d'aller attaquer, compte derrière toi : trois et deux.",
+      "Pivot, montre-toi à chaque sortie : le ballon doit passer par toi.",
+      "Dis ce que prépare ta passe : sortir, progresser, fixer, finir ou respirer.",
+      "À la perte, les plus proches reprennent, les autres ferment l'axe.",
+      "Entraîneur : un ou deux arrêts par période, toujours sur une des deux règles."
+    ],
+    "progressions": [
+      "Une troisième règle, par exemple un renversement après fixation avant d'entrer dans la surface.",
+      "Les points bonus ne comptent que si l'action se termine par un tir.",
+      "L'adversaire joue un autre plan, bloc bas ou pressing haut, imposé par l'entraîneur."
+    ],
+    "regressions": [
+      "Une seule règle par période.",
+      "9 contre 9 sur 70 x 50 m.",
+      "L'entraîneur annonce les points bonus à voix haute pendant le jeu."
+    ],
+    "measure": "Pertes avec ou sans défense de repos en place, part des sorties où le pivot a touché le ballon, et récupérations en moins de 5 secondes. L'analyste peut y ajouter l'Indice Njangi du match.",
+    "story": "Aux États-Unis, Marcus montre aux frères que 70 % de possession n'ont servi à rien. Dans ce match à thème, on compte enfin ce qui compte."
+  },
+  "en": {
+    "title": "One Team, One Idea",
+    "subtitle": "Themed 11 v 11: two rules from the model and points for behaviours",
+    "objective": "Apply the game model in a real match. The coach sets two rules from the model and rewards behaviours in all four moments, not just goals: everyone sees that the shared idea pays.",
+    "organisation": [
+      "Full pitch, or 90 x 60 m for U15s; two teams of 11 in a 4-3-3.",
+      "Both teams follow the same rules: it is our model on both sides.",
+      "One assistant per team records the bonus points, on a sheet or in the Njangi app.",
+      "Before each half, the coach announces the two rules and shows each one in a picture."
+    ],
+    "rules": [
+      "Rule 1 (example): in attack, 3 + 2 players stay behind the ball; this is the rest defence.",
+      "Losing the ball without the rest defence in place: 1 point to the opponent.",
+      "Rule 2 (example): in every build-up from the goalkeeper, the pivot touches the ball before the halfway line.",
+      "A goal is worth 1 point, 2 points if the move started from a build-up where the pivot touched the ball.",
+      "Winning the ball back within 5 seconds of losing it: 1 bonus point.",
+      "Depending on the week, other rules replace these: block height, pressing trigger."
+    ],
+    "coaching": [
+      "Before you go forward, count behind you: three and two.",
+      "Pivot, show for it in every build-up: the ball must go through you.",
+      "Say what your pass is preparing: build out, progress, pin, finish or breathe.",
+      "When we lose it, the nearest players win it back, the others close the middle.",
+      "Coach: one or two stoppages per half, always about one of the two rules."
+    ],
+    "progressions": [
+      "A third rule, for example a switch after pinning before entering the box.",
+      "Bonus points only count if the move ends with a shot.",
+      "The opponent plays a different plan, low block or high press, set by the coach."
+    ],
+    "regressions": [
+      "Only one rule per half.",
+      "9 v 9 on 70 x 50 m.",
+      "The coach calls out the bonus points during play."
+    ],
+    "measure": "Balls lost with or without the rest defence in place, share of build-ups where the pivot touched the ball, and regains within 5 seconds. The analyst can add the match's Njangi Index.",
+    "story": "In the United States, Marcus shows the brothers that 70% possession counted for nothing. In this themed match, we finally count what counts."
+  },
+  "diagram": {
+    "view": "full",
+    "players": [
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 60,
+        "y": 25,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 60,
+        "y": 43,
+        "label": "5"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 63,
+        "y": 57,
+        "label": "2"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 70,
+        "y": 37,
+        "label": "6"
+      },
+      {
+        "id": "l3",
+        "team": "a",
+        "x": 70,
+        "y": 23,
+        "label": "3"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 81,
+        "y": 21,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 84,
+        "y": 43,
+        "label": "10"
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 89,
+        "y": 7,
+        "label": "11"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 92,
+        "y": 30,
+        "label": "9"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 91,
+        "y": 62,
+        "label": "7"
+      },
+      {
+        "id": "bd1",
+        "team": "b",
+        "x": 96,
+        "y": 19
+      },
+      {
+        "id": "bd2",
+        "team": "b",
+        "x": 97,
+        "y": 34
+      },
+      {
+        "id": "bd3",
+        "team": "b",
+        "x": 96,
+        "y": 47
+      },
+      {
+        "id": "bf1",
+        "team": "b",
+        "x": 66,
+        "y": 30
+      },
+      {
+        "id": "bf2",
+        "team": "b",
+        "x": 67,
+        "y": 50
+      },
+      {
+        "id": "gkb",
+        "team": "gkb",
+        "x": 102.5,
+        "y": 34
+      }
+    ],
+    "ball": "p6",
+    "arrows": [
+      {
+        "from": "p6",
+        "to": "p8",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "p8",
+        "to": "p11",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "p9",
+        "to": [
+          100,
+          29
+        ],
+        "kind": "run",
+        "n": 3
+      },
+      {
+        "from": "p10",
+        "to": [
+          93,
+          40
+        ],
+        "kind": "run",
+        "n": 4
+      }
+    ],
+    "zones": [
+      {
+        "x": 55,
+        "y": 16,
+        "w": 19,
+        "h": 46,
+        "tone": "a",
+        "label": "3 + 2"
+      }
+    ]
+  },
+  "diagram2": {
+    "view": "full",
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 2.5,
+        "y": 34,
+        "label": "1"
+      },
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 9,
+        "y": 21,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 9,
+        "y": 46,
+        "label": "5"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 21,
+        "y": 35,
+        "label": "6"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 25,
+        "y": 62,
+        "label": "2"
+      },
+      {
+        "id": "l3",
+        "team": "a",
+        "x": 25,
+        "y": 6,
+        "label": "3"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 37,
+        "y": 22,
+        "label": "8"
+      },
+      {
+        "id": "p10",
+        "team": "a",
+        "x": 38,
+        "y": 47,
+        "label": "10"
+      },
+      {
+        "id": "p9",
+        "team": "a",
+        "x": 56,
+        "y": 34,
+        "label": "9"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 47,
+        "y": 62,
+        "label": "7"
+      },
+      {
+        "id": "p11",
+        "team": "a",
+        "x": 47,
+        "y": 6,
+        "label": "11"
+      },
+      {
+        "id": "bf1",
+        "team": "b",
+        "x": 14,
+        "y": 27
+      },
+      {
+        "id": "bf2",
+        "team": "b",
+        "x": 15,
+        "y": 50
+      },
+      {
+        "id": "bm1",
+        "team": "b",
+        "x": 30,
+        "y": 31
+      },
+      {
+        "id": "bm2",
+        "team": "b",
+        "x": 31,
+        "y": 44
+      }
+    ],
+    "ball": "gk",
+    "arrows": [
+      {
+        "from": "gk",
+        "to": "c5",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "c5",
+        "to": "p6",
+        "kind": "pass",
+        "n": 2
+      },
+      {
+        "from": "p6",
+        "to": "p8",
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": "p8",
+        "to": "p9",
+        "kind": "pass",
+        "n": 4
+      }
+    ],
+    "labels": [
+      {
+        "x": 33,
+        "y": 37.8,
+        "text": "le pivot touche"
+      }
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "T04",
+  "family": "transition",
+  "order": 4,
+  "ages": "U15+",
+  "players": { "min": 13, "max": 13, "fr": "13 joueurs (6 contre 6 + gardien)", "en": "13 players (6 v 6 + goalkeeper)" },
+  "space": { "w": 52, "h": 68 },
+  "duration": { "fr": "4 x 5 min, 2 min de récupération", "en": "4 x 5 min, 2 min rest" },
+  "minutes": 26,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["regarder-devant", "finir"],
+  "skills": ["communication", "decision", "scan", "contre-pression"],
+  "pieces": ["le souffle", "la carte"],
+  "fr": {
+    "title": "Le déclencheur",
+    "subtitle": "Bloc médian à 6 contre 6 + gardien : presser ensemble au signal, finir en 10 secondes",
+    "objective": "Défendre pour récupérer : attendre en bloc médian, compact, puis presser tous ensemble sur un déclencheur. Après la récupération, finir vite, avant que l'adversaire ne se réorganise.",
+    "organisation": [
+      "Une moitié de terrain (52 x 68 m), un grand but avec gardien, deux mini-buts sur la ligne médiane.",
+      "Équipe B, en possession : gardien et 6 joueurs (4 défenseurs, 2 milieux) qui sortent vers les mini-buts.",
+      "Équipe A, qui défend : 6 joueurs en bloc médian, 2 devant et 4 derrière.",
+      "Une ligne de coupelles à 30 m du but marque la limite du bloc.",
+      "Chaque action part du gardien de B ; 6 à 8 actions par série, puis on change les rôles."
+    ],
+    "rules": [
+      "Avant le déclencheur, aucun joueur de A ne franchit la ligne des 30 m.",
+      "Déclencheurs : passe en arrière, mauvais contrôle, ballon vers un latéral près de la touche, ou appel de l'entraîneur.",
+      "Au déclencheur, tout le bloc presse ensemble.",
+      "A récupère et marque en moins de 10 secondes : 3 points ; tir cadré : 1 point.",
+      "B marque 1 point en passant dans un mini-but ou en conduisant le ballon au-delà de la ligne médiane."
+    ],
+    "coaching": [
+      "Avant le signal : compacts, 10 à 12 m entre les lignes, l'axe fermé.",
+      "Le premier attaquant oriente : il coupe la passe vers le central opposé et pousse vers la touche.",
+      "Au signal, tout le monde avance en même temps : un joueur seul qui presse, c'est un trou.",
+      "Le plus proche presse le porteur, les autres prennent les passes courtes.",
+      "Ballon récupéré : regarde devant, le but est à 30 m.",
+      "Pas de déclencheur ? Restez en place, avec patience."
+    ],
+    "progressions": [
+      "L'entraîneur n'appelle plus : les joueurs reconnaissent seuls les déclencheurs.",
+      "B joue avec un pivot en plus : 7 contre 6.",
+      "Finir en moins de 8 secondes."
+    ],
+    "regressions": [
+      "Un seul déclencheur au début : la passe en arrière.",
+      "B joue à deux touches maximum.",
+      "Finir en moins de 15 secondes."
+    ],
+    "measure": "Récupérations dans les 30 m adverses et part de ces récupérations suivies d'un tir en moins de 10 secondes. L'analyste peut aussi suivre la hauteur moyenne des récupérations.",
+    "story": "À Londres, au début, BriBri presse seul et se fait éliminer d'une passe. Coach Okafor lui montre que le pressing est une décision d'équipe."
+  },
+  "en": {
+    "title": "The Trigger",
+    "subtitle": "Mid-block 6 v 6 + goalkeeper: press together on the cue, finish within 10 seconds",
+    "objective": "Defend to win the ball: wait in a compact mid-block, then press all together on a trigger. After the regain, finish quickly, before the opponent can reorganise.",
+    "organisation": [
+      "Half a pitch (52 x 68 m), a full-size goal with a goalkeeper, two mini goals on the halfway line.",
+      "Team B, in possession: goalkeeper and 6 players (4 defenders, 2 midfielders) building out towards the mini goals.",
+      "Team A, defending: 6 players in a mid-block, 2 in front and 4 behind.",
+      "A line of cones 30 m from goal marks the edge of the block.",
+      "Every move starts from B's goalkeeper; 6 to 8 moves per set, then swap roles."
+    ],
+    "rules": [
+      "Before the trigger, no A player may cross the 30 m line.",
+      "Triggers: a back pass, a heavy touch, a ball to a full-back near the touchline, or the coach's call.",
+      "On the trigger, the whole block presses together.",
+      "A wins the ball and scores within 10 seconds: 3 points; shot on target: 1 point.",
+      "B scores 1 point by passing into a mini goal or dribbling over the halfway line."
+    ],
+    "coaching": [
+      "Before the cue: compact, 10 to 12 m between the lines, middle closed.",
+      "The first forward shows them one way: he cuts the pass to the far centre-back and pushes play to the touchline.",
+      "On the cue, everyone steps up together: one player pressing alone leaves a hole.",
+      "The nearest player presses the ball, the others take the short passes.",
+      "Ball won: look forward, the goal is 30 m away.",
+      "No trigger? Stay in shape, be patient."
+    ],
+    "progressions": [
+      "The coach stops calling: players must recognise the triggers on their own.",
+      "B adds a pivot: 7 v 6.",
+      "Finish within 8 seconds."
+    ],
+    "regressions": [
+      "Only one trigger at first: the back pass.",
+      "B plays two touches maximum.",
+      "Finish within 15 seconds."
+    ],
+    "measure": "Regains within 30 m of the opposition goal and the share of those regains followed by a shot within 10 seconds. The analyst can also track the average height of regains.",
+    "story": "In London, BriBri presses alone at first and is beaten by one pass. Coach Okafor shows him that pressing is a team decision."
+  },
+  "diagram": {
+    "view": "half",
+    "players": [
+      { "id": "gkb", "team": "gkb", "x": 51, "y": 34 },
+      { "id": "b4", "team": "b", "x": 45, "y": 25 },
+      { "id": "b5", "team": "b", "x": 45, "y": 43 },
+      { "id": "b3", "team": "b", "x": 37, "y": 7 },
+      { "id": "b2", "team": "b", "x": 36, "y": 61 },
+      { "id": "b6", "team": "b", "x": 33, "y": 31 },
+      { "id": "b8", "team": "b", "x": 30, "y": 45 },
+      { "id": "a9", "team": "a", "x": 21.5, "y": 27, "label": "9" },
+      { "id": "a10", "team": "a", "x": 21.5, "y": 40, "label": "10" },
+      { "id": "a11", "team": "a", "x": 11, "y": 12, "label": "11" },
+      { "id": "a8", "team": "a", "x": 12, "y": 27, "label": "8" },
+      { "id": "a6", "team": "a", "x": 12, "y": 42, "label": "6" },
+      { "id": "a7", "team": "a", "x": 11, "y": 57, "label": "7" }
+    ],
+    "ball": "b2",
+    "arrows": [
+      { "from": "b2", "to": "b5", "kind": "pass", "n": 1 },
+      { "from": "a10", "to": [41.6, 42], "kind": "press", "n": 2 },
+      { "from": "a9", "to": [40.5, 29], "kind": "press", "n": 3 },
+      { "from": "a7", "to": [32.5, 59.5], "kind": "press", "n": 4 },
+      { "from": "a6", "to": [27, 44.5], "kind": "press", "n": 5 }
+    ],
+    "zones": [{ "x": 0, "y": 0, "w": 22.5, "h": 68, "tone": "a", "label": "bloc médian" }],
+    "goals": [
+      { "x": 0, "y": 20, "side": "left", "size": "mini" },
+      { "x": 0, "y": 48, "side": "left", "size": "mini" }
+    ],
+    "labels": [{ "x": 46, "y": 54, "text": "passe en arrière" }]
+  },
+  "diagram2": {
+    "view": "half",
+    "players": [
+      { "id": "gkb", "team": "gkb", "x": 51, "y": 34 },
+      { "id": "b4", "team": "b", "x": 46, "y": 26 },
+      { "id": "b5", "team": "b", "x": 45, "y": 48 },
+      { "id": "b2", "team": "b", "x": 34, "y": 61 },
+      { "id": "b6", "team": "b", "x": 34, "y": 33 },
+      { "id": "b8", "team": "b", "x": 29, "y": 46 },
+      { "id": "a10", "team": "a", "x": 41, "y": 44, "label": "10" },
+      { "id": "a9", "team": "a", "x": 40, "y": 29, "label": "9" },
+      { "id": "a7", "team": "a", "x": 33, "y": 56, "label": "7" },
+      { "id": "a6", "team": "a", "x": 26, "y": 42, "label": "6" }
+    ],
+    "ball": "a10",
+    "arrows": [
+      { "from": "a9", "to": [46.5, 34], "kind": "run", "n": 1 },
+      { "from": "a10", "to": [46.5, 34], "kind": "pass", "n": 2 },
+      { "from": [46.5, 34], "to": [52.3, 31.6], "kind": "shot", "n": 3 },
+      { "from": "a7", "to": [42, 54], "kind": "run", "n": 4 }
+    ],
+    "zones": [{ "x": 0, "y": 0, "w": 22.5, "h": 68, "tone": "soft" }],
+    "goals": [
+      { "x": 0, "y": 20, "side": "left", "size": "mini" },
+      { "x": 0, "y": 48, "side": "left", "size": "mini" }
+    ],
+    "labels": [{ "x": 22, "y": 64, "text": "moins de 10 secondes" }]
+  }
+}

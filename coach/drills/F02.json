@@ -1,0 +1,268 @@
+{
+  "id": "F02",
+  "family": "phase",
+  "order": 2,
+  "ages": "U15+",
+  "players": {
+    "min": 14,
+    "max": 14,
+    "fr": "14 joueurs (8 contre 6, gardien compris)",
+    "en": "14 players (8 v 6, goalkeeper included)"
+  },
+  "space": {
+    "w": 52,
+    "h": 68
+  },
+  "duration": {
+    "fr": "4 x 5 min, 2 min de récupération",
+    "en": "4 x 5 min, 2 min rest"
+  },
+  "minutes": 26,
+  "md": [
+    "MD-3"
+  ],
+  "intensity": "medium",
+  "intentions": [
+    "sortir",
+    "progresser",
+    "fixer"
+  ],
+  "skills": [
+    "passe",
+    "controle",
+    "scan",
+    "appels",
+    "decision"
+  ],
+  "pieces": [
+    "la carte",
+    "les yeux"
+  ],
+  "fr": {
+    "title": "Le latéral intérieur",
+    "subtitle": "Sortie en 3-2 : un latéral rentre à côté du pivot, 8 contre 6",
+    "objective": "Créer la supériorité au milieu en sortant en 3-2 : un latéral rentre à côté du pivot, l'autre forme une ligne de trois avec les centraux. Le but : arriver au milieu de terrain en possession, face au jeu.",
+    "organisation": [
+      "Notre moitié de terrain (52 x 68 m), un grand but avec gardien, la ligne médiane comme ligne d'arrivée.",
+      "En possession, 8 joueurs : gardien, deux centraux, deux latéraux, le pivot, un intérieur (8) et un ailier (7).",
+      "En face, 6 joueurs : trois attaquants qui pressent et trois milieux.",
+      "Le latéral droit (2) rentre à côté du pivot ; le gauche (3) reste avec les centraux ; l'ailier tient la largeur.",
+      "Chaque action part du gardien ; 6 à 8 actions par série."
+    ],
+    "rules": [
+      "1 point quand un joueur franchit la ligne médiane en conduite, ou y reçoit une passe en contrôle.",
+      "Personne en possession ne peut attendre au-delà de la ligne médiane : il faut y arriver.",
+      "1 point bonus quand le latéral intérieur reçoit face au jeu et joue vers l'avant.",
+      "Les défenseurs qui récupèrent ont 10 secondes pour marquer dans le grand but : 2 points."
+    ],
+    "coaching": [
+      "Latéral, rentre au bon moment : quand le ballon est chez le central opposé, pas avant.",
+      "Pivot et latéral intérieur, décalez-vous en hauteur : jamais à plat sur la même ligne.",
+      "Ailier, reste large : si son attaquant suit le latéral à l'intérieur, ta ligne de passe s'ouvre.",
+      "Centraux, conduisez pour attirer : un adversaire qui sort sur vous libère un milieu.",
+      "Regarde avant de recevoir, reçois de profil : le ballon doit arriver face au jeu."
+    ],
+    "progressions": [
+      "L'entraîneur annonce quel latéral rentre, à droite ou à gauche, au début de chaque action.",
+      "Un septième défenseur entre : 8 contre 7.",
+      "Le point n'est accordé que si le ballon atteint la ligne médiane en 12 secondes ou moins."
+    ],
+    "regressions": [
+      "Les trois milieux adverses restent passifs pendant la première série.",
+      "Un joker joue avec l'équipe en possession.",
+      "Le latéral intérieur est déjà à sa place au début de l'action."
+    ],
+    "measure": "Part des actions qui arrivent au milieu de terrain en possession, et ballons reçus face au jeu par le latéral intérieur. Les pertes dans notre premier tiers sont comptées à part.",
+    "story": "En France, Lucas Morel, latéral droit timide, découvre qu'il peut jouer à côté du pivot : on ne lui demande plus seulement de courir le long de la ligne."
+  },
+  "en": {
+    "title": "The Inverted Full-Back",
+    "subtitle": "3-2 build-up: a full-back steps in beside the pivot, 8 v 6",
+    "objective": "Create an overload in midfield by building out in a 3-2: one full-back steps in beside the pivot, the other forms a back three with the centre-backs. The aim: reach midfield in possession, facing play.",
+    "organisation": [
+      "Our half of the pitch (52 x 68 m), a full-size goal with a goalkeeper, the halfway line as the finish line.",
+      "In possession, 8 players: goalkeeper, two centre-backs, two full-backs, the pivot, an inside midfielder (8) and a winger (7).",
+      "Against them, 6 players: three forwards who press and three midfielders.",
+      "The right-back (2) steps in beside the pivot; the left-back (3) stays with the centre-backs; the winger holds the width.",
+      "Every move starts from the goalkeeper; 6 to 8 moves per set."
+    ],
+    "rules": [
+      "1 point when a player dribbles over the halfway line, or receives a pass there under control.",
+      "No one in possession may wait beyond the halfway line: you have to get there.",
+      "1 bonus point when the inverted full-back receives facing play and plays forward.",
+      "Defenders who win the ball have 10 seconds to score in the big goal: 2 points."
+    ],
+    "coaching": [
+      "Full-back, step in at the right moment: when the ball is with the far centre-back, not before.",
+      "Pivot and inverted full-back, stagger your heights: never flat on the same line.",
+      "Winger, stay wide: if your forward follows the full-back inside, your passing lane opens.",
+      "Centre-backs, carry the ball to draw a player: an opponent who steps out frees a midfielder.",
+      "Look before you receive, take it side-on: the ball must arrive facing play."
+    ],
+    "progressions": [
+      "The coach calls which full-back steps in, right or left, at the start of each move.",
+      "A seventh defender comes on: 8 v 7.",
+      "The point only counts if the ball reaches the halfway line within 12 seconds."
+    ],
+    "regressions": [
+      "The three opposing midfielders stay passive during the first set.",
+      "A joker plays with the team in possession.",
+      "The inverted full-back starts in position at the beginning of the move."
+    ],
+    "measure": "Share of moves that reach midfield in possession, and balls received facing play by the inverted full-back. Balls lost in our first third are counted separately.",
+    "story": "In France, Lucas Morel, a shy right-back, discovers he can play beside the pivot: he is no longer only asked to run up and down the line."
+  },
+  "diagram": {
+    "view": "full",
+    "players": [
+      {
+        "id": "gk",
+        "team": "gk",
+        "x": 2.5,
+        "y": 34,
+        "label": "1"
+      },
+      {
+        "id": "c4",
+        "team": "a",
+        "x": 9,
+        "y": 23,
+        "label": "4"
+      },
+      {
+        "id": "c5",
+        "team": "a",
+        "x": 9,
+        "y": 45,
+        "label": "5"
+      },
+      {
+        "id": "l3",
+        "team": "a",
+        "x": 15,
+        "y": 9,
+        "label": "3"
+      },
+      {
+        "id": "p6",
+        "team": "a",
+        "x": 22,
+        "y": 30,
+        "label": "6"
+      },
+      {
+        "id": "l2",
+        "team": "a",
+        "x": 25,
+        "y": 42,
+        "label": "2"
+      },
+      {
+        "id": "p8",
+        "team": "a",
+        "x": 37,
+        "y": 20,
+        "label": "8"
+      },
+      {
+        "id": "p7",
+        "team": "a",
+        "x": 41,
+        "y": 63,
+        "label": "7"
+      },
+      {
+        "id": "f1",
+        "team": "b",
+        "x": 15,
+        "y": 31
+      },
+      {
+        "id": "f2",
+        "team": "b",
+        "x": 19.5,
+        "y": 54.5
+      },
+      {
+        "id": "f3",
+        "team": "b",
+        "x": 22,
+        "y": 15
+      },
+      {
+        "id": "m1",
+        "team": "b",
+        "x": 32,
+        "y": 30
+      },
+      {
+        "id": "m2",
+        "team": "b",
+        "x": 34,
+        "y": 44
+      },
+      {
+        "id": "m3",
+        "team": "b",
+        "x": 31,
+        "y": 56
+      }
+    ],
+    "ball": "gk",
+    "arrows": [
+      {
+        "from": "gk",
+        "to": "c5",
+        "kind": "pass",
+        "n": 1
+      },
+      {
+        "from": "f2",
+        "to": [
+          12.6,
+          48.4
+        ],
+        "kind": "press",
+        "n": 2
+      },
+      {
+        "from": "c5",
+        "to": "l2",
+        "kind": "pass",
+        "n": 3
+      },
+      {
+        "from": "l2",
+        "to": "p7",
+        "kind": "pass",
+        "n": 4
+      },
+      {
+        "from": "p7",
+        "to": [
+          57,
+          61
+        ],
+        "kind": "dribble",
+        "n": 5
+      }
+    ],
+    "zones": [
+      {
+        "x": 52.5,
+        "y": 0,
+        "w": 52.5,
+        "h": 68,
+        "tone": "soft"
+      }
+    ],
+    "labels": [
+      {
+        "x": 30,
+        "y": 38.6,
+        "text": "latéral intérieur"
+      }
+    ]
+  },
+  "diagram2": null
+}

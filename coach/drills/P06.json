@@ -1,0 +1,120 @@
+{
+  "id": "P06",
+  "family": "position",
+  "order": 6,
+  "ages": "U14+",
+  "players": { "min": 17, "max": 17, "fr": "17 joueurs (7 contre 7 + 3 neutres)", "en": "17 players (7 v 7 + 3 neutrals)" },
+  "space": { "w": 45, "h": 35 },
+  "duration": { "fr": "4 x 5 min, 2 min de récupération", "en": "4 x 5 min, 2 min rest" },
+  "minutes": 28,
+  "md": ["MD-4", "MD-3"],
+  "intensity": "high",
+  "intentions": ["sortir", "progresser", "respirer"],
+  "skills": ["scan", "controle", "passe", "communication", "decision"],
+  "pieces": ["la carte", "les yeux"],
+  "fr": {
+    "title": "Le pivot doit toucher",
+    "subtitle": "7 contre 7 + 3 neutres : aucun point sans le 6",
+    "objective": "Faire passer chaque séquence par le pivot (6), le joueur qui relie la sortie et la progression. On entraîne le 6 à se rendre disponible sous pression, et l'équipe à le chercher.",
+    "organisation": [
+      "Rectangle de 45 x 35 m ; un neutre sur chaque ligne de fond, un troisième à l'intérieur.",
+      "Deux équipes de 7 ; chaque équipe désigne un pivot qui porte une chasuble d'une autre couleur.",
+      "Les neutres jouent avec l'équipe en possession : 10 contre 7.",
+      "On change de pivot à chaque série ; ballons de réserve chez l'entraîneur."
+    ],
+    "rules": [
+      "Trois touches maximum ; deux pour le pivot, une pour les neutres de fond.",
+      "Ballon joué d'un neutre de fond à l'autre, avec au moins une touche du pivot : 1 point.",
+      "Sans touche du pivot, la traversée ne compte pas.",
+      "Pivot qui reçoit et joue vers l'avant dans la même action : 1 point bonus.",
+      "Après un point, l'équipe garde le ballon et attaque vers l'autre neutre."
+    ],
+    "coaching": [
+      "Pivot, sors de l'ombre de l'attaquant : un pas de côté suffit pour redevenir une ligne de passe.",
+      "Pivot, scanne deux fois avant de recevoir : sache déjà où va le ballon.",
+      "Centraux, attirez un adversaire en conduisant avant de chercher le pivot.",
+      "Pivot marqué de dos : remise en une touche vers un partenaire face au jeu.",
+      "Après sa passe, le pivot se replace derrière le ballon."
+    ],
+    "progressions": [
+      "Une touche pour le pivot.",
+      "Un adversaire peut marquer le pivot de près.",
+      "Le pivot doit toucher deux fois dans la séquence.",
+      "Terrain réduit à 40 x 30 m."
+    ],
+    "regressions": [
+      "Touches libres pour le pivot.",
+      "Le neutre intérieur compte aussi comme pivot.",
+      "Terrain agrandi à 50 x 40 m."
+    ],
+    "measure": "Touches du pivot par série et part des points marqués après une passe vers l'avant du pivot. Repère : le pivot touche le ballon au moins une fois toutes les 5 à 6 passes de son équipe.",
+    "story": "Devenu le 6 en Catalogne, Kaydoudou apprend que le pivot n'a pas besoin de briller : il touche, il oriente, et le ballon voyage."
+  },
+  "en": {
+    "title": "The Pivot Must Touch",
+    "subtitle": "7 v 7 + 3 neutrals: no point without the 6",
+    "objective": "Get every sequence through the pivot (6), the player who links the build-up to the attack. It trains the 6 to make himself available under pressure, and the team to find him.",
+    "organisation": [
+      "45 x 35 m area; one neutral on each end line, a third one inside.",
+      "Two teams of 7; each team names a pivot who wears a bib of another colour.",
+      "Neutrals play for the team in possession: 10 v 7.",
+      "Change the pivot every set; spare balls with the coach."
+    ],
+    "rules": [
+      "Three touches maximum; two for the pivot, one for the end-line neutrals.",
+      "Ball played from one end-line neutral to the other, with at least one touch by the pivot: 1 point.",
+      "Without a touch by the pivot, the switch does not count.",
+      "A pivot who receives and plays forward in the same action: 1 bonus point.",
+      "After a point, the team keeps the ball and attacks towards the other neutral."
+    ],
+    "coaching": [
+      "Pivot, get out of the striker's cover shadow: one step sideways makes you a passing option again.",
+      "Pivot, scan twice before you receive: know where the ball is going next.",
+      "Centre backs, carry the ball to draw an opponent before you look for the pivot.",
+      "Pivot marked from behind: lay it off first time to a teammate facing play.",
+      "After his pass, the pivot gets back behind the ball."
+    ],
+    "progressions": [
+      "One touch for the pivot.",
+      "One opponent may mark the pivot tightly.",
+      "The pivot must touch the ball twice in the sequence.",
+      "Shrink the area to 40 x 30 m."
+    ],
+    "regressions": [
+      "Unlimited touches for the pivot.",
+      "The inside neutral also counts as a pivot.",
+      "Enlarge the area to 50 x 40 m."
+    ],
+    "measure": "Pivot touches per set and share of points scored after a forward pass by the pivot. Benchmark: the pivot touches the ball at least once every 5 to 6 passes by his team.",
+    "story": "Once he becomes the 6 in Catalonia, Kaydoudou learns that the pivot does not need to shine: he touches, he directs, and the ball travels."
+  },
+  "diagram": {
+    "view": "grid", "w": 45, "h": 35,
+    "players": [
+      { "id": "n1", "team": "n", "x": 0.8, "y": 17.5 },
+      { "id": "n2", "team": "n", "x": 44.2, "y": 17.5 },
+      { "id": "n3", "team": "n", "x": 24, "y": 30.5 },
+      { "id": "c4", "team": "a", "x": 7, "y": 9, "label": "4" },
+      { "id": "c5", "team": "a", "x": 7, "y": 26, "label": "5" },
+      { "id": "p6", "team": "a", "x": 16, "y": 17.5, "label": "6" },
+      { "id": "i8", "team": "a", "x": 26, "y": 8, "label": "8" },
+      { "id": "i10", "team": "a", "x": 30, "y": 22, "label": "10" },
+      { "id": "w7", "team": "a", "x": 37, "y": 3.5, "label": "7" },
+      { "id": "w9", "team": "a", "x": 38, "y": 29, "label": "9" },
+      { "id": "r1", "team": "b", "x": 11.5, "y": 12 },
+      { "id": "r2", "team": "b", "x": 12, "y": 24.5 },
+      { "id": "r3", "team": "b", "x": 20, "y": 9.5 },
+      { "id": "r4", "team": "b", "x": 21.5, "y": 23 },
+      { "id": "r5", "team": "b", "x": 31, "y": 12 },
+      { "id": "r6", "team": "b", "x": 34, "y": 20 },
+      { "id": "r7", "team": "b", "x": 33, "y": 30 }
+    ],
+    "ball": "c5",
+    "arrows": [
+      { "from": "c5", "to": "p6", "kind": "pass", "n": 1 },
+      { "from": "p6", "to": "i8", "kind": "pass", "n": 2 },
+      { "from": "i8", "to": "n2", "kind": "pass", "n": 3 }
+    ]
+  },
+  "diagram2": null
+}
