@@ -70,7 +70,7 @@ Le dimanche d'avant, pour la première fois depuis septembre, Avi Ramon n'est pa
 
 « Sense l'Avi, no és el mateix, a soupiré un vieux. Sans Avi, ce n'est pas pareil. »
 
-Le jeudi, les frères vont le voir avec Laia, qui porte un long gâteau plat couvert de sucre.
+Le jeudi, après l'entraînement, les frères vont le voir avec Laia, qui porte un long gâteau plat couvert de sucre.
 
 « Une coca, explique-t-elle. Avec des pignons. Il adore ça. »
 

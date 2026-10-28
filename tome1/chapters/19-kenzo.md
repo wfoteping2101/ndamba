@@ -8,27 +8,51 @@ resume: Kenzo Delattre est plus rapide, plus technique, plus brillant, et c'est 
 illustration: Plan moyen au bord d'un terrain synthétique, un soir d'octobre, sous la lumière blanche des projecteurs qui fait briller la pluie fine. Kaydoudou, assis sur le banc de touche, maillot vert numéro 8 sous un gros manteau de remplaçant trop grand, fine raie à gauche, regarde ses crampons, les épaules basses. À côté de lui, accroupie pour être à sa hauteur, Awa Keïta-Lambert, trente-cinq ans, longues tresses fines nouées en chignon, veste de survêtement grise, tend vers lui un gobelet fumant tiré d'une thermos, et sourit. Au fond, flous, des joueurs en mouvement sur le terrain.
 ---
 
-Le banc de touche de l'ESM était en métal, et le métal, en octobre, gardait le froid comme un frigo garde le beurre.
+« Oooh ! »
 
-Kaydoudou était assis tout au bout, emmitouflé dans un manteau de remplaçant si grand qu'il lui arrivait aux chevilles. Sur le terrain, sous la pluie fine, Kenzo Delattre jouait au football comme d'autres jouent du piano. Il recevait, il tournait, il effaçait un adversaire d'un crochet si court que l'adversaire ne savait même pas qu'il avait été effacé. Il faisait une talonnade sans regarder. Il levait le ballon d'une pichenette par-dessus un pied tendu. Et derrière la main courante, les parents faisaient « Oh ! » chaque fois, comme on fait devant un feu d'artifice.
+Derrière la main courante, les parents font « oooh » comme devant un feu d'artifice. Sous la pluie fine, Kenzo Delattre vient d'effacer un adversaire d'un crochet si court que l'adversaire ne s'en est même pas aperçu.
 
-C'était le deuxième match de suite que Kaydoudou commençait sur le banc.
+Kaydoudou, lui, est assis tout au bout du banc. Le banc est en métal, et en octobre, le métal garde le froid comme un frigo garde le beurre. Son manteau de remplaçant est si grand qu'il lui arrive aux chevilles.
 
-Le premier samedi, il s'était dit que c'était normal. Il était nouveau, Lacombe voulait voir. Le deuxième samedi, Papa était venu exprès, avec son écharpe des Lions Indomptables et un thermos de café. Kaydoudou l'avait vu arriver, chercher son fils sur le terrain, ne pas le trouver, puis le découvrir sur le banc. Papa avait souri quand même et levé le pouce. C'était pire que s'il avait fait la grimace.
+Deuxième match de suite sur le banc.
 
-« Il est fort, hein ? » dit un remplaçant à côté de lui, en montrant Kenzo du menton.
+Kenzo joue au football comme d'autres jouent du piano. Une talonnade sans regarder. Une pichenette par-dessus un pied tendu.
 
-« Ouais », dit Kaydoudou.
+« Oooh ! »
 
-Il découvrit ce jour-là un sentiment qu'il n'avait presque jamais eu. À Douala, il était le grand frère, celui qui organisait. À Waldorf, on l'avait choisi parce qu'il voyait le jeu. Ici, il y avait quelqu'un de mieux que lui, au même poste, dans le même maillot, et ça lui faisait une boule dans l'estomac, comme s'il avait avalé un caillou. Quand Kenzo marqua le deuxième but d'une frappe enroulée sous la barre, tout le banc se leva. Kaydoudou se leva aussi, parce qu'il fallait. Mais à l'intérieur, une petite voix méchante, qu'il ne se connaissait pas, murmura : « Rate, la prochaine fois. Rate. »
+« Il est fort, hein ? » dit le remplaçant d'à côté.
 
-Il eut honte de cette voix pendant tout le trajet du retour.
+« Ouais. »
 
-Le soir, dans leur chambre, BriBri essaya de le faire rire. Il se planta au milieu du tapis, se passa les mains dans les cheveux pour faire des boucles imaginaires, prit un air dédaigneux et marcha en roulant des épaules.
+« Moi, je regarde Kenzo. Toi, tu regardes quoi ? On dirait que tu comptes. »
+
+« Rien. »
+
+« Ton père, c'est le monsieur avec l'écharpe verte, rouge et jaune ? Il te fait un pouce. »
+
+« Je sais. »
+
+Papa est venu exprès, avec son écharpe des Lions Indomptables et un thermos de café. Il a cherché son fils sur le terrain. Puis il l'a trouvé sur le banc, et il a levé le pouce quand même.
+
+C'est pire qu'une grimace.
+
+Kenzo marque le deuxième but, une frappe enroulée sous la barre. Tout le banc se lève. Kaydoudou se lève aussi, parce qu'il le faut. Mais dans sa tête, une petite voix méchante murmure :
+
+*Rate, la prochaine fois. Rate.*
+
+Il a honte de cette voix pendant tout le trajet du retour.
+
+« Ça va, champion ? » demande Papa.
+
+« Ça va. »
+
+* * *
+
+Le soir, dans leur chambre, BriBri se plante au milieu du tapis. Il se passe les mains dans les cheveux pour faire des boucles imaginaires et marche en roulant des épaules.
 
 « Ici, le 8, c'est moi, dit-il d'une voix traînante. Ici, l'oxygène, c'est moi. Ici, le pain au chocolat, c'est moi. »
 
-Kaydoudou ne rit pas. BriBri s'assit sur le lit à côté de lui.
+Kaydoudou ne rit pas. BriBri s'assoit sur le lit à côté de lui.
 
 « Mola. Tu veux que je lui mette un petit pont à l'entraînement ? Pour le moral ? »
 
@@ -36,103 +60,197 @@ Kaydoudou ne rit pas. BriBri s'assit sur le lit à côté de lui.
 
 « Deux petits ponts ? »
 
-Cette fois, Kaydoudou sourit, un tout petit peu, malgré lui.
+Cette fois, Kaydoudou sourit. Un tout petit peu, malgré lui. Puis les mots sortent tout seuls.
+
+« À Douala, j'étais celui qui organise. À Waldorf, on m'a pris parce que je vois le jeu. Ici, il y a quelqu'un de mieux que moi. Au même poste. Dans le même maillot. » Il pose la main sur son ventre. « Ça me fait comme un caillou, là. »
+
+« C'est la jalousie, dit BriBri. Moi, je l'ai eue toute ma vie. Contre toi. »
+
+Kaydoudou le regarde, surpris.
+
+« Contre moi ? »
+
+« Tu es plus grand. Tu as le carnet. Papa te parle de tactique. » BriBri hausse les épaules. « Ça passe. Mais il ne faut pas lui donner à manger. »
+
+« À qui ? »
+
+« À la jalousie. Sinon, elle grossit. »
+
+Kaydoudou ne l'écoute qu'à moitié. Il a déjà une idée.
+
+C'est une mauvaise idée. Mais il ne le sait pas encore.
+
+Le lundi soir, BriBri le regarde depuis le balcon, le menton sur la rambarde. En bas, sur le parking, entre deux voitures, Kaydoudou tourne sur lui-même avec le ballon de Mami.
+
+« Tu fais quoi ? »
+
+« La roulette. On tourne en faisant glisser le ballon d'un pied à l'autre, sous la semelle. Kenzo la fait. »
+
+« Tu ressembles à une machine à laver. »
+
+« Et après, le crochet derrière la jambe d'appui. Et la talonnade. J'ai regardé des vidéos tout le dimanche. »
+
+« Si Lacombe aime les gestes, tu vas lui donner des gestes. C'est ça ? »
+
+« C'est ça. »
+
+« Et si Lacombe n'aime pas les machines à laver ? »
 
 * * *
 
-Le mardi suivant, il eut une idée. C'était une mauvaise idée, mais il ne le savait pas encore.
+Le mardi, au premier ballon, Kaydoudou tente la roulette. Il tourne sur lui-même, très bien. Quand il a fini de tourner, le ballon n'est plus là. Un U14 l'a poussé du bout du pied et s'en va avec, tranquille.
 
-Si Lacombe préférait Kenzo, c'était parce que Kenzo faisait des gestes. Alors Kaydoudou allait faire des gestes, lui aussi. Il avait passé le dimanche à regarder des vidéos sur la tablette de Papa, et le lundi soir à s'entraîner sur le parking de l'immeuble, entre deux voitures, avec le ballon de Mami. La roulette, ce tour sur soi-même en faisant glisser le ballon d'un pied à l'autre sous la semelle. Le crochet derrière la jambe d'appui. La talonnade.
+« Joli manège ! »
 
-À l'entraînement, au premier ballon, il tenta la roulette. Il tourna sur lui-même, très bien, et quand il eut fini de tourner, le ballon n'était plus là. Un U14 l'avait poussé tranquillement du bout du pied et s'en allait avec.
+Au deuxième ballon, le crochet derrière la jambe d'appui. Ses deux jambes se nouent comme des lacets, et il s'assoit dans l'herbe mouillée.
 
-Au deuxième ballon, il tenta le crochet derrière la jambe d'appui. Ses deux jambes se nouèrent comme des lacets, et il s'assit dans l'herbe mouillée.
+« Il fait la sieste ! »
 
-Au troisième, il fit une talonnade, sans regarder, comme Kenzo. Le ballon partit droit dans les pieds d'un adversaire, qui n'en revenait pas de sa chance.
+Au troisième, la talonnade, sans regarder, comme Kenzo. Le ballon part droit dans les pieds d'un adversaire.
 
-Quelques garçons rirent. Pas méchamment, mais assez fort pour qu'il les entende. Kenzo ne rit pas. Il le regarda simplement, longtemps, avec une expression bizarre que Kaydoudou ne sut pas lire, puis il se détourna. C'était presque pire.
+« Merci, Ngassa ! » rigole l'adversaire.
 
-Lacombe siffla. Il ne cria pas, ne demanda rien. Il dit seulement : « Ngassa. Le bord du terrain. Cinq minutes. »
+Quelques garçons rient, pas méchamment. Kenzo, lui, ne rit pas. Il le regarde longtemps, avec une drôle d'expression, puis il se détourne. C'est presque pire.
 
-* * *
+Le sifflet en métal.
 
-Kaydoudou alla s'asseoir sur le banc de touche et enfila le gros manteau de remplaçant par-dessus son vieux maillot vert. Sous les projecteurs, la pluie fine brillait comme de la poussière d'argent. Il regarda ses crampons, les épaules basses.
+« Ngassa. Le bord du terrain. Cinq minutes. »
 
-Quelqu'un vint s'accroupir à côté de lui, pour être à sa hauteur. Kaydoudou l'avait déjà aperçue dans les couloirs du centre : une grande femme mince aux longues tresses fines nouées en chignon, avec une veste de survêtement grise et une thermos argentée sous le bras.
+Kaydoudou va s'asseoir sur le banc de touche et enfile le gros manteau de remplaçant par-dessus son vieux maillot vert. Sous les projecteurs, la pluie fine brille comme de la poussière d'argent. Il regarde ses crampons, les épaules basses.
+
+Quelqu'un vient s'accroupir à côté de lui, pour être à sa hauteur. Une grande femme mince, avec de longues tresses fines nouées en chignon, une veste de survêtement grise et une thermos argentée.
 
 « Je suis Awa. Awa Keïta-Lambert. Je m'occupe de la tête des joueurs, ici. » Elle sourit. « Rassure-toi, je ne fais pas de piqûres. »
 
-Elle dévissa le bouchon de la thermos et versa dans le gobelet un liquide doré qui fumait dans l'air froid, puis le lui tendit en souriant. Ça sentait le gingembre et le citron, si fort que Kaydoudou en eut les yeux qui piquent.
+Elle verse dans le gobelet un liquide doré qui fume dans l'air froid, et elle le lui tend en souriant. Ça sent le gingembre et le citron, si fort que Kaydoudou en a les yeux qui piquent.
 
 « Du jus de gingembre chaud. La recette de ma grand-mère, à Bamako. Il réveille les morts et les remplaçants. »
 
-Kaydoudou but une gorgée. Ça lui brûla la gorge, puis l'estomac, puis tout le corps, et c'était bon.
+Ça brûle la gorge, puis l'estomac, puis tout le corps. C'est bon.
 
-Awa regarda le terrain sans rien dire pendant un moment. Elle avait été milieu de terrain, apprit-il plus tard, dans une équipe féminine du sud de la France, avant qu'un genou abîmé l'arrête. Elle regardait le jeu comme Tonton Fokou le regardait, avec les yeux à moitié fermés, comme si elle voyait aussi ce qui allait se passer.
+« Moi aussi, j'ai été milieu de terrain, dit Awa, les yeux à moitié fermés sur le jeu, comme Tonton Fokou. Avant que mon genou dise non. Tu sais ce que tu viens de faire, là-bas ? »
 
-« Tu sais ce que tu viens de faire, là-bas ? »
+« J'ai tout raté. »
 
-Kaydoudou haussa les épaules. « J'ai tout raté. »
-
-« Tu as essayé d'être Kenzo. » Elle dit ça doucement, sans reproche. « Et tu as été un très mauvais Kenzo. Normal : il n'y a de la place que pour un seul Kenzo dans ce corps-là. » Elle montra le terrain, où Kenzo venait de recevoir un ballon. « Ton travail, ce n'est pas d'être Kenzo. C'est d'être le meilleur Kaydoudou. »
+« Tu as essayé d'être Kenzo. » Elle dit ça doucement, sans reproche. « Et tu as été un très mauvais Kenzo. Normal : il n'y a de la place que pour un seul Kenzo dans ce corps-là. » Elle montre le terrain, où Kenzo vient de recevoir un ballon. « Ton travail, ce n'est pas d'être Kenzo. C'est d'être le meilleur Kaydoudou. »
 
 « Mais Kaydoudou, il est sur le banc. »
 
 Awa rit, d'un rire bref et chaud.
 
-« Je vais te dire une chose que j'ai remarquée. Pendant les deux matchs, sur le banc, tu as fait quelque chose que personne d'autre n'a fait. Tu as regardé tout le terrain. Pas le ballon : le terrain. Les autres remplaçants regardaient Kenzo. Toi, tu regardais l'arrière gauche adverse qui montait trop, et le trou qu'il laissait. Je t'ai vu bouger les lèvres. Tu comptais quelque chose. »
+« Je vais te dire une chose. Pendant les deux matchs, sur le banc, tu as fait quelque chose que personne d'autre n'a fait. Tu as regardé tout le terrain. Pas le ballon : le terrain. Les autres remplaçants regardaient Kenzo. Toi, tu regardais leur arrière gauche, qui montait trop, et le trou qu'il laissait. Je t'ai vu bouger les lèvres. Tu comptais quelque chose. »
 
-Kaydoudou rougit. Il comptait les lignes, comme Marcus le lui avait appris.
+Kaydoudou rougit.
 
-« Kenzo voit très bien ce qui est devant lui, continua Awa. C'est son génie. Mais toi, tu vois tout. Ça, c'est rare. Ça ne fait pas crier les parents. Mais un entraîneur, ça le fait réfléchir. » Elle reprit le gobelet vide. « Va. Lacombe veut te montrer quelque chose. »
+« Les lignes. Un ami m'a appris, en Amérique. »
 
-Kaydoudou se leva. Dans sa tête, il entendit la voix de Mami, à Bafoussam, un soir où BriBri pleurait de ne pas être aussi grand que son frère : « Le manguier ne demande pas au palmier comment on pousse. Il pousse en manguier, et il donne des mangues. »
+« Kenzo voit très bien ce qui est devant lui. C'est son génie. Mais toi, tu vois tout. Ça, c'est rare. Ça ne fait pas crier les parents. Mais un entraîneur, ça le fait réfléchir. » Elle reprend le gobelet vide. « Va. Lacombe veut te montrer quelque chose. »
+
+Kaydoudou se lève. Dans sa tête, il entend la voix de Mami, un soir où BriBri pleurait de ne pas être aussi grand que lui :
+
+« Le manguier ne demande pas au palmier comment on pousse. Il pousse en manguier, et il donne des mangues. »
 
 * * *
 
-Lacombe l'attendait avec deux plots, un ballon et un U14 qui s'appelait Mathis et qui jouait défenseur.
+Lacombe l'attend avec deux plots, un ballon et Mathis, un U14 qui joue défenseur.
 
-« Quand tu reçois, tu reçois comment ? »
+« Quand tu reçois, tu reçois comment ? Montre. »
 
-Kaydoudou montra : il se plaça face au passeur, reçut le ballon du pied droit, juste devant lui. Mathis, dans son dos, n'eut qu'à tendre la jambe.
+Kaydoudou se place face au passeur et reçoit le ballon du pied droit, juste devant lui. Dans son dos, Mathis n'a qu'à tendre la jambe.
 
 « Tu vois ? Tu reçois face au ballon, le dos tourné au jeu. Ton corps est fermé, comme une porte. Derrière la porte, il y a tout le terrain, et toi, tu ne le vois pas. Pour te retourner, il te faut deux touches, trois touches, et pendant ce temps, Mathis te mange. »
 
-Il prit Kaydoudou par les épaules, de ses deux mains sèches, et le fit pivoter d'un quart de tour, de côté, comme on ouvre une porte.
+« Miam », dit Mathis.
+
+Lacombe prend Kaydoudou par les épaules et le fait pivoter d'un quart de tour.
 
 « Maintenant, tu es ouvert. Tu vois le passeur, et tu vois le terrain. Tu reçois sur le pied le plus loin de Mathis. Le gauche, ici. Le ballon passe devant ton corps, et ton premier contact l'envoie déjà vers l'avant. Une touche, et tu joues. »
 
-Kaydoudou essaya. La première fois, le ballon lui passa entre les jambes. La deuxième, il le toucha trop fort. La troisième, il le reçut du pied gauche, le corps de côté, et il vit tout : Mathis qui arrivait trop tard, le plot devant, le terrain vide. Il joua en une touche, vers l'avant. Mathis s'arrêta, les mains sur les hanches.
+*La porte ouverte*, pense Kaydoudou.
+
+La première fois, le ballon lui passe entre les jambes. La deuxième, il le touche trop fort. La troisième, il le reçoit du pied gauche, le corps de côté, et il voit tout. Mathis arrive trop tard. Une touche, vers l'avant.
+
+Mathis s'arrête, les mains sur les hanches.
+
+« Hé. Il m'a eu. »
 
 « Encore », dit Lacombe.
 
-Ils le firent trente fois. À la fin, Kaydoudou avait la cheville gauche qui chauffait, et un sourire qu'il ne parvenait pas à cacher.
+Ils le font trente fois.
+
+« Trente, Ngassa, souffle Mathis. Mes jambes te détestent. » À la fin, Kaydoudou a la cheville gauche qui chauffe, et un sourire qu'il n'arrive pas à cacher.
 
 * * *
 
-Le samedi, contre le Racing Club des Coteaux, Lacombe afficha la composition sur la porte du vestiaire. Kaydoudou la lut trois fois. Son nom était dedans. Mais pas à la place de Kenzo.
+Le samedi, contre le Racing Club des Coteaux, la composition est affichée sur la porte du vestiaire. Kaydoudou la lit trois fois.
+
+« Tu l'as lue combien de fois ? » demande BriBri.
+
+« Trois. »
+
+Son nom est dedans. Pas à la place de Kenzo.
 
 À côté de lui.
 
-« Ngassa, tu joues 6. Devant la défense. Tu reçois des défenseurs et tu donnes. C'est tout. Delattre, tu restes 8. Tu crées. »
+« Ngassa, tu joues 6, dit Lacombe. Devant la défense. Tu reçois des défenseurs et tu donnes. C'est tout. Delattre, tu restes 8. Tu crées. »
 
-Un 6, c'est le joueur qui se place juste devant ses défenseurs, au centre, et qui reçoit presque tous les ballons pour les envoyer plus loin, comme le gardien d'un carrefour. Kaydoudou n'y avait jamais joué. Mais dès les premières minutes, il sentit que ce poste lui allait comme un vieux maillot.
+« C'est quoi, un 6 ? » chuchote BriBri.
 
-Les défenseurs centraux lui donnaient le ballon. Avant chaque passe, il regardait deux fois par-dessus l'épaule, comme la mésange. Il se plaçait de côté, le corps ouvert. Il recevait sur le pied loin de l'adversaire, et en une touche, il jouait vers l'avant. Vers Kenzo, souvent. Vers BriBri, entre les lignes. Vers Lucas, qui montait sur le côté droit avec ses grandes jambes de paysan.
+« Le carrefour, répond Lacombe sans se retourner. Tout passe par lui. »
 
-Et Kenzo, libéré, débarrassé de tout ce travail de l'ombre, devint terrible. Il n'avait plus besoin de redescendre chercher le ballon jusque devant sa défense : le ballon venait à lui, propre, au bon pied, au bon moment. Il fit marquer BriBri. Il marqua lui-même, d'une frappe sèche à ras de terre. À la 60e minute, Kaydoudou reçut le ballon de Mathis, ouvrit son corps, vit Kenzo partir dans le dos du milieu adverse, et lui envoya une passe qui traversa deux lignes d'un coup. Kenzo contrôla, fixa le gardien, et servit BriBri au deuxième poteau. 3-1.
+« À côté de Kenzo ? souffle BriBri. Tous les deux ? »
 
-Derrière la main courante, Papa faisait des bonds avec son écharpe des Lions.
+« Deux chefs, murmure Lucas. Ça va faire des étincelles. »
 
-À la fin du match, dans le vestiaire, ça sentait la sueur, l'herbe mouillée et la pommade. Kaydoudou dénouait ses lacets quand le téléphone de Kenzo vibra dans son sac. Kenzo le regarda, et pendant une seconde, son visage se ferma comme une porte qu'on claque. Il rangea le téléphone sans répondre. Personne d'autre n'avait rien vu.
+Très vite, Kaydoudou sent que ce poste lui va comme un vieux maillot. Avant chaque passe, il regarde deux fois par-dessus l'épaule, comme la mésange. Il se met de côté, le corps ouvert, et en une touche, il joue vers l'avant. Vers Kenzo. Vers BriBri, entre les lignes. Vers Lucas, qui monte sur le côté droit avec ses grandes jambes de paysan.
 
-Puis il se leva, son sac sur l'épaule, et passa devant Kaydoudou pour sortir. Il ne ralentit pas. Il ne le regarda pas. Il fixait la porte.
+« Ouvre, Ngassa ! crie Lacombe. Encore ! »
+
+Et Kenzo, débarrassé du travail de l'ombre, devient terrible. Le ballon lui arrive propre, au bon pied, au bon moment. Il fait marquer BriBri. Il marque lui-même, une frappe sèche à ras de terre.
+
+À la 60e minute, Mathis donne le ballon à Kaydoudou.
+
+Le temps ralentit.
+
+Un regard. Deux regards. Kaydoudou ouvre la porte : un quart de tour, le pied gauche, les épaules vers le jeu. Il voit Kenzo partir dans le dos du milieu adverse.
+
+Pfiou ! La passe traverse deux lignes d'un coup.
+
+Kenzo contrôle, fixe le gardien, et sert BriBri au deuxième poteau. 3-1.
+
+« LA PORTE OUVERTE ! » hurle BriBri en courant vers son frère.
+
+« Comment tu sais que ça s'appelle comme ça ? »
+
+« Je te connais ! »
+
+Derrière la main courante, Papa fait des bonds avec son écharpe des Lions.
+
+* * *
+
+Dans le vestiaire, ça sent la sueur, l'herbe mouillée et la pommade. Kaydoudou dénoue ses lacets quand le téléphone de Kenzo vibre dans son sac. Kenzo le regarde. Pendant une seconde, son visage se ferme, comme une porte qu'on claque. Il range le téléphone sans répondre.
+
+Personne d'autre n'a rien vu.
+
+Puis Kenzo se lève, son sac sur l'épaule, et passe devant Kaydoudou pour sortir. Il ne ralentit pas. Il ne le regarde pas. Il fixe la porte.
 
 « Pas mal, le 6. »
 
-Et il sortit.
+Et il sort.
 
-BriBri, sur le banc d'en face, resta la bouche ouverte, une chaussette rouge à la main. Lucas cligna des yeux trois fois. Kaydoudou, lui, ne bougea pas du tout. Il savait que venant de Kenzo Delattre, ces trois mots-là valaient plus qu'un discours entier.
+Sur le banc d'en face, BriBri reste la bouche ouverte, une chaussette rouge à la main.
+
+« Il a dit “pas mal” ? À toi ? »
+
+Lucas cligne des yeux trois fois.
+
+« Il ne l'a jamais dit à personne. Même pas à Lacombe. »
+
+Kaydoudou ne bouge pas. Venant de Kenzo Delattre, ces trois mots valent plus qu'un discours entier.
+
+Mais il pense aussi au téléphone. Au visage qui s'est fermé d'un coup.
+
+*Qu'est-ce qui t'arrive, Kenzo ?*
 
 > [!CARNET] Leçon du Ballon n°19 : Le corps ouvert
 > Je ne reçois pas face au ballon comme une porte fermée. Je me mets de côté.

@@ -603,13 +603,14 @@
       },
       "read": "Lire en ligne",
       "galleryTitle": "Les illustrations",
-      "galleryLead": "{{n}} illustrations publiées sur {{total}} prévues : la couverture, les personnages, les ouvertures de parties et les chapitres. Touchez une image pour la voir en grand et demander une retouche.",
+      "galleryLead": "{{n}} illustrations publiées sur {{total}} prévues : la couverture, les personnages, les ouvertures de parties, les ouvertures de chapitres et trois images dans le texte de chaque chapitre. Touchez une image pour la voir en grand et demander une retouche.",
       "label": {
         "cover": "Couverture",
         "characters": "Les deux frères",
         "family": "La famille",
         "part": "Partie {{n}}",
-        "chapter": "Chapitre {{n}}"
+        "chapter": "Chapitre {{n}}",
+        "beat": "Chapitre {{n}}, dans le texte"
       },
       "status": {
         "approved": "Validée",

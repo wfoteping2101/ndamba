@@ -69,7 +69,7 @@
     "praise": "Thank you. You are the one doing the work on the pitch."
   },
   "gate": {
-    "sessions": "Your free plan already has {{n}} sessions. For me to keep building them, move to Coach Pro. The books and the 50 drills stay open to everyone.",
+    "sessions": "Your free plan already has {{n}} sessions. For me to keep building them, move to Coach Pro. The books and the 64 drills stay open to everyone.",
     "cta": "See Premium"
   },
   "chips": {
@@ -289,7 +289,7 @@
     },
     "done": {
       "tome1": "“{{tome1}}”, book 1 of {{series}}, with {{heroes}}. Enjoy the read.",
-      "methode": "“{{methode}}”: the method, the 50 drills and the Indice Njangi.",
+      "methode": "“{{methode}}”: the method, the 64 drills and the Indice Njangi.",
       "all": "Both books are free to read: {{series}} and “{{methode}}”."
     }
   },

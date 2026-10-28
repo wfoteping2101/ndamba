@@ -603,13 +603,14 @@
       },
       "read": "Read online",
       "galleryTitle": "The illustrations",
-      "galleryLead": "{{n}} of {{total}} planned illustrations published: the cover, the characters, the part openers and the chapters. Tap an image to see it full size and ask for a retouch.",
+      "galleryLead": "{{n}} of {{total}} planned illustrations published: the cover, the characters, the part openers, the chapter openers and three in-text images per chapter. Tap an image to see it full size and ask for a retouch.",
       "label": {
         "cover": "Cover",
         "characters": "The two brothers",
         "family": "The family",
         "part": "Part {{n}}",
-        "chapter": "Chapter {{n}}"
+        "chapter": "Chapter {{n}}",
+        "beat": "Chapter {{n}}, inside the text"
       },
       "status": {
         "approved": "Approved",

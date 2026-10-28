@@ -62,7 +62,7 @@
 
   "library": {
     "docTitle": "Exercices",
-    "title": "Les 50 exercices",
+    "title": "Les 64 exercices",
     "subtitle": "Rondos, jeux de position, petits et grands jeux, phases, transitions, finition. Chaque fiche dit ce qu'elle entraîne, pour quel âge et quel jour de la semaine.",
     "readBook": "Lire {{book}}",
     "search": "Rechercher un exercice",
@@ -83,7 +83,7 @@
     "noneTitle": "Aucun exercice ne correspond",
     "noneBody": "Retire un filtre ou essaie un autre mot.",
     "emptyTitle": "Les fiches arrivent",
-    "emptyBody": "Les 50 exercices du Code Njangi sont en cours d'écriture. Ils apparaîtront ici, prêts à glisser dans vos séances.",
+    "emptyBody": "Les 64 exercices du Code Njangi sont en cours d'écriture. Ils apparaîtront ici, prêts à glisser dans vos séances.",
     "toSessions": "Composer une séance avec ces exercices"
   },
 
@@ -279,7 +279,7 @@
   "upgrade": {
     "title": "Vos {{n}} séances gratuites sont utilisées",
     "body": "Avec Coach Pro, les séances sont illimitées, la semaine se planifie en un geste et Mola compose pour vous.",
-    "free": "Les 50 exercices et les livres restent gratuits, pour toujours.",
+    "free": "Les 64 exercices et les livres restent gratuits, pour toujours.",
     "cta": "Découvrir Coach Pro",
     "left_one": "Offre gratuite : encore {{count}} séance possible.",
     "left_other": "Offre gratuite : encore {{count}} séances possibles."

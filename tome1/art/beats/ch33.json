@@ -1,0 +1,53 @@
+{
+  "chapter": 33,
+  "beats": [
+    {
+      "id": "ch33b",
+      "anchor": "BriBri salue comme un chef d'orchestre.",
+      "shot": "medium",
+      "cast": [
+        "BRI",
+        "KAY"
+      ],
+      "extras": "An elderly white English lady of about seventy, small and round, grey curls under a clear plastic rain hat, a beige raincoat and a shopping bag on her arm, clapping with delight as she heads for the stairs. Two or three other passengers in dark coats, smiling, blurred.",
+      "outfit": "BriBri (13) in a bright yellow rain jacket and jeans rolled up at the ankle, his red sock on his RIGHT foot and yellow sock on his LEFT foot in white sneakers, his soft little afro pearled with rain, the gap between his front teeth showing in a huge grin. Kaydoudou (14) in a navy rain jacket over a green sweatshirt, the fine shaved part on the left of his head, the braided blue and white bracelet on his left wrist.",
+      "action": "On the front seat of the top deck, BriBri has let go of his imaginary steering wheel and bows deeply like an orchestra conductor, one arm sweeping wide, to the old lady who is applauding him. Next to him, Kaydoudou slumps low in his seat and hides half his face behind his hand, staring out of the window, pretending not to know his brother.",
+      "location": "The upper deck of a red London double decker bus, front row, the big front window streaked with fine rain, a wet street of brick houses, shop fronts and black umbrellas below.",
+      "light": "Grey, soft rainy daylight through the big window, raindrops glittering on the glass.",
+      "camera": "Medium shot from the aisle, slightly behind the old lady, the brothers framed against the wide front window.",
+      "alt": "En haut du bus rouge, BriBri salue comme un chef d'orchestre une vieille dame qui l'applaudit, et Kaydoudou se cache derrière sa main."
+    },
+    {
+      "id": "ch33c",
+      "anchor": "Le voilà assis sur le synthétique mouillé.",
+      "shot": "dynamic",
+      "cast": [
+        "KAY",
+        "BRI"
+      ],
+      "extras": "A tall white English boy of 15 with very long legs, short brown hair and a cheeky grin, in a yellow training bib, running off with the ball and glancing back over his shoulder. Coach Nathan Okafor, 38, a British Nigerian man with a shaved head, very broad shoulders, a black tracksuit and a whistle round his neck, shouting from the edge of the small rectangle of cones. Other trial boys of 14 and 15 in orange and yellow bibs, blurred, rushing in.",
+      "outfit": "Kaydoudou (14) in an orange trial bib over his old faded forest green shirt with the white collar and number 8, black shorts, the fine shaved part on the left of his head, the braided blue and white bracelet on his left wrist. BriBri (13) in an orange trial bib, his red sock on his RIGHT foot and yellow sock on his LEFT foot.",
+      "action": "Kaydoudou sits on the wet artificial grass where the shoulder charge has dropped him, legs out, hands flat on the ground, mouth open in pure shock, a splash of water still in the air around him. The tall boy is already gone with the ball. A few metres away, BriBri winces with both hands on his head.",
+      "location": "A floodlit artificial pitch at a London football academy on a September evening, a small rectangle marked with cones, puddles shining, a low clubhouse roof behind.",
+      "light": "Hard white floodlights cutting through fine rain that hangs in the air like dust, wet reflections everywhere.",
+      "camera": "Low dynamic angle at grass level next to Kaydoudou, the escaping boy and the ball sharp in the background, droplets in the foreground.",
+      "alt": "Sous la pluie de l'essai, Kaydoudou se retrouve assis sur le synthétique mouillé, pendant que le grand garçon file avec le ballon."
+    },
+    {
+      "id": "ch33d",
+      "anchor": "Terminus : le tibia !",
+      "shot": "close",
+      "cast": [
+        "KAY",
+        "BRI"
+      ],
+      "extras": "",
+      "outfit": "Kaydoudou (14) in black shorts and a plain white T shirt, bare legs covered in bruises of many colours: blue, purple, yellow, a green one on the knee and a long red line down the shin. The fine shaved part on the left of his head, the braided blue and white bracelet on his left wrist. BriBri (13) in a dark green tracksuit top, his soft little afro, the gap between his front teeth.",
+      "action": "Kaydoudou sits on the edge of a small bathtub, looking down at his legs. BriBri's head and one arm poke round the half open door; with one finger he traces the bruises in the air like lines on an underground map, his face mock serious. Kaydoudou is trying to stay dignified, but his mouth is already cracking into a laugh.",
+      "location": "A tiny, narrow bathroom in an old London terraced house: white tiles, a small bathtub, a towel on a hook, a little frosted window with rain running down it.",
+      "light": "Warm yellow light from a single ceiling bulb, cosy against the blue rainy night in the window.",
+      "camera": "Close shot from the bathtub corner, Kaydoudou's colourful legs in the foreground, BriBri's face peeking through the door gap behind.",
+      "alt": "Dans la petite salle de bains, BriBri trace du doigt les bleus de son frère comme une carte du métro."
+    }
+  ]
+}

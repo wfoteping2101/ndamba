@@ -62,7 +62,7 @@
 
   "library": {
     "docTitle": "Drills",
-    "title": "The 50 drills",
+    "title": "The 64 drills",
     "subtitle": "Rondos, positional games, small and large-sided games, phases, transitions, finishing. Each card says what it trains, for which age and which day of the week.",
     "readBook": "Read {{book}}",
     "search": "Search the drills",
@@ -83,7 +83,7 @@
     "noneTitle": "No drill matches",
     "noneBody": "Remove a filter or try another word.",
     "emptyTitle": "The drills are on their way",
-    "emptyBody": "The 50 drills of The Njangi Code are being written. They will appear here, ready to drop into your sessions.",
+    "emptyBody": "The 64 drills of The Njangi Code are being written. They will appear here, ready to drop into your sessions.",
     "toSessions": "Build a session with these drills"
   },
 
@@ -279,7 +279,7 @@
   "upgrade": {
     "title": "Your {{n}} free sessions are used",
     "body": "With Coach Pro, sessions are unlimited, the week plans itself in one tap and Mola builds sessions for you.",
-    "free": "The 50 drills and the books stay free, forever.",
+    "free": "The 64 drills and the books stay free, forever.",
     "cta": "Discover Coach Pro",
     "left_one": "Free plan: {{count}} more session available.",
     "left_other": "Free plan: {{count}} more sessions available."

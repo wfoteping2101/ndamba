@@ -69,7 +69,7 @@
     "praise": "Merci. C'est vous qui faites le travail sur le terrain."
   },
   "gate": {
-    "sessions": "Votre plan gratuit compte déjà {{n}} séances. Pour que je continue à en préparer, passez à Coach Pro. Les livres et les 50 exercices restent ouverts à tous.",
+    "sessions": "Votre plan gratuit compte déjà {{n}} séances. Pour que je continue à en préparer, passez à Coach Pro. Les livres et les 64 exercices restent ouverts à tous.",
     "cta": "Voir Premium"
   },
   "chips": {
@@ -289,7 +289,7 @@
     },
     "done": {
       "tome1": "« {{tome1}} », le tome 1 de {{series}}, avec {{heroes}}. Bonne lecture.",
-      "methode": "« {{methode}} » : la méthode, les 50 exercices et l'Indice Njangi.",
+      "methode": "« {{methode}} » : la méthode, les 64 exercices et l'Indice Njangi.",
       "all": "Les deux livres sont en lecture libre : {{series}} et « {{methode}} »."
     }
   },

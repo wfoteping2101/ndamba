@@ -8,135 +8,283 @@ resume: Un samedi matin sur la terre rouge de Bonamoussadi, les Lionceaux de Ton
 illustration: Plan moyen, fin de matinée, lumière blanche et poussière rouge suspendue dans l'air. Au pied d'un grillage surmonté de fil de fer, sur le terrain de terre de Bonamoussadi, BriBri (10 ans, petite afro, tee-shirt jaune à bande rouge, short vert, une chaussette rouge et une chaussette jaune) est assis par terre et serre contre lui un vieux ballon de cuir brun, ouvert le long d'une couture et dégonflé. Deux traces de larmes claires coupent la poussière de ses joues. Debout près de lui, Kaydoudou (11 ans, mince, maillot vert forêt délavé numéro 8 à col blanc, raie fine à gauche) pose une main sur son épaule, grave. Au fond, flous : le manguier, un but en bambou, une casquette usée.
 ---
 
-Le sifflet de Tonton Fokou ne ressemblait à aucun autre sifflet du monde. Il l'avait taillé lui-même dans une branche de manguier, et quand il soufflait dedans, cela ne faisait pas « tuuut ». Cela faisait « houou », comme un hibou enrhumé.
+« Houou ! »
 
-« Houou ! Le ballon doit voyager ! »
+Le sifflet de Tonton Fokou ne fait pas « tuuut » comme les autres. Il fait « houou », comme un hibou enrhumé.
 
-Kaydoudou entendit la phrase pour la troisième fois en cinq minutes et sourit. Sur le terrain de Bonamoussadi, la règle de Tonton Fokou revenait aussi souvent que les klaxons des benskins, les motos-taxis de la route, derrière le manguier. Pin-pin !
+« Le ballon doit voyager ! »
 
-Il n'avait pas plu depuis dix jours, ce qui, à Douala, tenait du miracle. La terre du terrain était devenue une poudre rouge, fine comme du piment moulu, qui collait aux chevilles, aux genoux, jusqu'aux cils. Les deux buts étaient en bambou, attachés avec du fil de fer. Celui de gauche penchait un peu, comme s'il écoutait un secret.
+Troisième fois en cinq minutes. Kaydoudou sourit.
 
-Kaydoudou portait son maillot fétiche, vert forêt, si délavé qu'il tirait sur le gris, avec un col blanc et un grand 8 dans le dos. Il avait onze ans, des jambes de héron et une raie fine dessinée à gauche dans ses cheveux courts. Sur le terrain, il ne criait presque jamais. Il regardait. Il tendait le bras vers un espace, ouvrait la paume pour dire « doucement », pointait le menton vers un partenaire oublié. Tonton Fokou disait qu'il jouait « avec les yeux d'un vieux ».
+Samedi matin, terrain de Bonamoussadi. Dix jours sans pluie à Douala, du jamais vu. La terre rouge est devenue de la poudre. Elle colle aux chevilles, aux genoux, jusqu'aux cils. Derrière le manguier, les benskins, les motos-taxis, klaxonnent. Pin-pin !
 
-Et puis il y avait BriBri.
+« Un partout, mesdames et messieurs ! crie Prosper, une main devant la bouche comme un micro. Lionceaux de Bonamoussadi contre Gars de la Pharmacie ! Au milieu, le numéro 8, Kaydoudou Ngassa ! Il ne crie jamais, mais il voit tout ! »
 
-Ce matin-là, son petit frère ressemblait à un drapeau qui aurait appris à courir : tee-shirt jaune soleil traversé d'une bande rouge, short vert, et aux pieds une chaussette rouge et une chaussette jaune. BriBri jurait que les chaussettes dépareillées lui portaient bonheur. Maman jurait qu'il perdait exprès l'autre moitié de chaque paire. Il avait dix ans, des joues rondes, une petite afro qui rebondissait quand il courait, et un sourire avec un écart entre les dents de devant, assez large pour y glisser une pièce de cent francs. Même immobile, il se tenait sur la pointe des pieds.
+Prosper, tout le monde l'appelle Radio.
 
-« Les Lionceaux de Bonamoussadi contre les Gars de la Pharmacie ! annonça Prosper en courant, une main devant la bouche comme un micro. Un partout, mesdames et messieurs ! »
+« Radio, tu joues ou tu parles ? » crie Mireille.
 
-Tout le monde l'appelait Radio. Il commentait chaque match qu'il jouait, et personne n'avait jamais su s'il jouait pour commenter ou s'il commentait pour jouer.
+« Les deux, Gazelle ! Je suis un professionnel ! »
 
-Le ballon arriva sur le côté gauche, dans les pieds de BriBri. Kaydoudou vit les épaules de son frère se soulever d'un coup et sut ce qui allait se passer. Tout le quartier le savait.
+Kaydoudou a onze ans. Grand et mince, une raie fine à gauche, le 8 vert délavé sur le dos. Il parle avec les mains. Paume vers le sol : doucement. Bras tendu : là-bas, quelqu'un est seul.
 
-BriBri commença par le crochet du margouillat, son dribble préféré : il s'arrêtait net, hochait la tête comme les lézards sur les murs, puis repartait de l'autre côté. Le premier Gars de la Pharmacie tomba assis dans la poussière. BriBri glissa le ballon entre les jambes du deuxième. Il tourna sur lui-même devant le troisième, si vite que son afro resta une seconde en arrière. Le quatrième plongea dans le vide. Le cinquième se fit dribbler deux fois, pour être sûr.
+Ce matin, il surveille aussi autre chose. Le ballon.
 
-« Cinq ! hurla Radio. Il en a eu cinq ! Il va dribbler toute la ville de Douala, et peut-être Yaoundé ! »
+« Le ballon du club est mort mardi, a annoncé Tonton Fokou avant le match. Un tesson de bouteille. Paix à son âme. Les Ngassa, vous prêtez le vôtre ? »
 
-Pendant ce temps, Kaydoudou était seul sur la droite, la main levée. Mireille était seule au milieu, à dix mètres du but, les bras écartés comme pour dire : « Mais regarde-moi, enfin ! » Personne ne les surveillait. Tous les Gars de la Pharmacie couraient après BriBri.
+« Le ballon de Mami ? a dit BriBri. Du vrai cuir, Tonton ! Cousu à la main ! »
 
-Le sixième était le plus petit de tous. Il ne plongea pas. Il ne courut pas. Il tendit simplement le pied, et le ballon, épuisé, vint s'arrêter contre sa chaussure comme un chien fatigué contre une porte.
+« Alors on le traite comme une reine », a dit Tonton Fokou.
 
-Trois passes plus tard, les Gars de la Pharmacie marquaient. 1-2.
+Leur grand-mère le leur a offert il y a trois ans. Il est devenu doux et brun, comme une vieille chaussure.
 
-Kaydoudou poussa un soupir qui partit de ses chaussures et remonta jusqu'à ses oreilles.
+*Personne ne lui fait de mal*, pense Kaydoudou. *Personne.*
 
-Sous le manguier, Tonton Fokou s'était levé de son bidon jaune. Il avait soixante-deux ans, une casquette si usée qu'on ne savait plus de quelle couleur elle avait été, et une jambe qui boitait un peu, souvenir d'un vieux match dont il ne parlait jamais.
+« Et sur la gauche, continue Radio, son petit frère, BriBri ! Dix ans ! Une chaussette rouge, une chaussette jaune ! »
+
+« Ça porte bonheur ! » crie BriBri.
+
+« Il perd exprès l'autre moitié de chaque paire », dit toujours Maman.
+
+Des joues rondes. Une petite afro qui rebondit à chaque pas. Un sourire avec un trou entre les dents de devant. Même immobile, BriBri reste sur la pointe des pieds. Avant le match, il a annoncé :
+
+« Aujourd'hui, je dribble toute la ville ! »
+
+« Aujourd'hui, on gagne, a répondu Kaydoudou. C'est mieux. »
+
+Le ballon arrive sur la gauche. Dans les pieds de BriBri.
+
+Kaydoudou voit les épaules de son frère se soulever. Il sait ce qui va se passer. Tout le quartier le sait.
+
+Premier défenseur. Stop. Petit coup de tête, comme un lézard sur un mur. Et hop, de l'autre côté.
+
+« Le crochet du margouillat ! hurle Radio. Et le petit pont ! Le ballon entre les jambes, et bonjour ! Et la toupie ! Regardez l'afro, elle n'arrive pas à suivre ! Quatre ! CINQ ! Il en a dribblé CINQ ! Il va dribbler tout Douala ! Et peut-être Yaoundé ! »
+
+Mais Kaydoudou, lui, ne regarde pas son frère. Il regarde Mireille, seule au milieu, les bras écartés. Personne ne la surveille.
+
+*Passe, BriBri. Passe.*
+
+Le sixième Gars est le plus petit de tous. Il tend juste le pied. Et le ballon, fatigué d'avoir tant tourné, s'arrête contre sa chaussure.
+
+Trois passes plus tard, les Gars de la Pharmacie marquent.
+
+« 1-2 ! gémit Radio. Le ballon est rentré à la maison, mesdames et messieurs. Chez les Gars. »
+
+Kaydoudou pousse un soupir qui part de ses chaussures et remonte jusqu'à ses oreilles.
+
+Sous le manguier, Tonton Fokou se lève de son bidon jaune. Soixante-deux ans, une casquette si usée qu'on ne sait plus sa couleur, une jambe qui boite un peu.
 
 « BriBri ! Tu as dribblé cinq joueurs. Bravo. Et le ballon, il est où ? »
 
-BriBri regarda derrière les bambous de son propre but, où Ousmane allait chercher le ballon en traînant les pieds.
+Derrière leur but, Ousmane ramasse le ballon en traînant les pieds.
 
 « Chez eux, Tonton. »
 
-« Voilà. Tu l'as promené dans tout le quartier, et à la fin il est rentré chez eux. Le ballon n'est pas un cabri qu'on promène au bout d'une corde ! Il doit voyager ! »
+« Voilà ! Tu l'as promené dans tout le quartier, et à la fin il est rentré chez eux ! Le ballon n'est pas un cabri qu'on promène au bout d'une corde ! Il doit voyager ! »
 
-Kaydoudou ne dit rien. Il ne disait jamais rien. Mais il pensa très fort que, s'il avait reçu le ballon, là-bas sur la droite, il aurait été devant le but en deux passes. Peut-être une.
+« Mais c'était beau, non ? »
 
-Pour garder leur avance, les Gars de la Pharmacie reculèrent tous devant leur but, comme des poules quand l'orage arrive. Leur grand attaquant tenta sa chance de loin, et Ousmane bloqua le tir contre sa poitrine. On l'appelait Petit Pied parce qu'il chaussait du trente-deux à dix ans, mais ses mains, elles, étaient immenses, longues et plates comme des feuilles de bananier. Il était arrivé de Garoua, dans le Nord, deux ans plus tôt, et il parlait si peu que chacune de ses phrases avait la valeur d'un discours.
+« Très beau, dit Mireille en passant. Comme un gâteau qui tombe par terre. »
 
-Il relança à la main, loin, vers Mireille. Mireille Eyenga n'avait que onze ans, mais aucun garçon de Bonamoussadi n'avait jamais gagné une course contre elle. On l'appelait la Gazelle, et elle détestait qu'on l'appelle autrement. Elle partit, laissa deux Gars dans sa poussière et frappa du plat du pied, tranquillement, comme on pose une assiette sur une table. 2-2.
+Kaydoudou ne dit rien. Il ne dit jamais rien.
 
-Il restait une minute, peut-être deux. À Bonamoussadi, la fin du match dépendait surtout de l'heure à laquelle Tonton Fokou avait faim.
+*Avec ce ballon, j'aurais été devant le but en deux passes*, pense-t-il. *Peut-être une.*
 
-Le ballon revint à BriBri. Cette fois, trois Gars de la Pharmacie l'entourèrent aussitôt. Ils avaient compris. Ils formaient autour de lui un petit mur de bras, de coudes et de genoux. BriBri tenta encore son crochet, le ballon heurta un tibia, puis le sien, et roula hors du mur, droit vers Kaydoudou.
+« Les Gars reculent tous, comme des poules avant l'orage ! crie Radio. Leur grand attaquant tente sa chance de loin... »
 
-Kaydoudou ne l'arrêta pas. Il n'en avait pas besoin : il avait déjà vu Radio, libre au milieu. Une touche, et le ballon était chez Radio. Radio, pour une fois, ne commenta rien. D'une seule touche, il le glissa vers Mireille, qui arrivait lancée sur la droite. Mireille ne contrôla même pas. Le ballon passa entre les bambous et le gardien des Gars de la Pharmacie, qui regardait encore BriBri.
+Bam ! Ousmane bloque le tir contre sa poitrine.
 
-3-2.
+« Arrêt de Petit Pied ! crie Radio. Il chausse du 32, mesdames et messieurs, mais regardez-moi ces mains ! Des feuilles de bananier ! Il vient de Garoua, il ne parle jamais, et il arrête tout ! »
 
-Kaydoudou compta dans sa tête, comme il comptait tout. Trois passes. Quatre secondes, à peine. Le ballon avait traversé le terrain plus vite qu'aucun d'entre eux n'aurait pu le faire en courant.
+« Gazelle », dit Ousmane.
 
-« Houou ! Vous avez vu ? cria Tonton Fokou en frappant sa casquette contre sa cuisse. Le ballon a voyagé en première classe ! »
+Un seul mot. Et il relance à la main, loin, vers Mireille.
 
-BriBri arriva en bondissant, couvert de poussière jusqu'aux sourcils.
+« La Gazelle s'envole ! hurle Radio. Onze ans, et aucun garçon du quartier ne l'a jamais battue à la course ! Elle en laisse un ! Elle en laisse deux ! Elle frappe... »
+
+Du plat du pied, tranquille, comme on pose une assiette sur une table.
+
+« BUT ! 2-2 ! Et attention, ne l'appelez jamais autrement que la Gazelle, sinon elle vous mord ! »
+
+« Je t'entends, Radio. »
+
+« Pardon, Gazelle. »
+
+« Plus qu'une minute ! annonce Radio. Peut-être deux ! »
+
+À Bonamoussadi, la fin du match dépend surtout de l'heure où Tonton Fokou a faim.
+
+« Dernière action ! crie Tonton Fokou. Après, je mange ! »
+
+Le ballon revient à BriBri. Trois Gars l'entourent tout de suite.
+
+« Ils ont compris ! crie Radio. Trois sur BriBri ! Un mur ! Un mur de coudes et de genoux ! »
+
+BriBri tente encore son crochet. Le ballon tape un tibia. Puis le sien. Il sort du mur en roulant.
+
+Droit vers Kaydoudou.
+
+Et le temps s'arrête.
+
+Kaydoudou voit la poussière rouge suspendue dans la lumière blanche. Il voit le ballon de Mami tourner sur lui-même, lentement, couture après couture. Il voit le gardien des Gars, les yeux encore sur BriBri.
+
+Et il voit Radio. Seul au milieu. La bouche ouverte. Sans un mot, pour une fois.
+
+*Pas besoin de contrôler.*
+
+Une touche.
+
+Le ballon file chez Radio. Radio, une touche aussi, vers Mireille, lancée sur la droite. Mireille ne contrôle même pas.
+
+Le ballon passe entre les bambous.
+
+« BUUUT ! hurle Radio. Une touche, une touche, une touche ! 3-2 ! Vous avez vu ça, mesdames et messieurs ? Moi non plus, c'était trop rapide ! »
+
+« Trois passes, murmure Kaydoudou. Quatre secondes. »
+
+« Houou ! crie Tonton Fokou en tapant sa casquette contre sa cuisse. Le ballon a couru plus vite que vous tous ! Il a voyagé en première classe ! »
+
+BriBri arrive en bondissant, couvert de poussière jusqu'aux sourcils.
 
 « C'est moi qui ai fait la première passe ! »
 
 « C'était pas une passe, dit Kaydoudou. Le ballon a rebondi sur ton tibia. »
 
-« Mon tibia a fait une passe, répondit BriBri, très digne. Mon tibia est très intelligent. »
+« Mon tibia a fait une passe, répond BriBri, très sérieux. Mon tibia est très intelligent. »
 
-Tonton Fokou siffla la fin. Et c'est là que tout se gâta.
+Houou ! Tonton Fokou siffle la fin.
 
-BriBri voulut fêter la victoire comme il fêtait tout : en grand. Il posa le ballon dans la poussière, recula de trois pas, annonça « La frappe du tonnerre ! » et tira de toutes ses forces vers le ciel.
+Et c'est là que tout se gâte.
 
-C'était le ballon des frères. Le ballon du club, le seul, avait crevé mardi sur un tesson de bouteille, alors ce matin on avait joué avec celui que Mami leur avait offert trois ans plus tôt : un vrai ballon de cuir cousu à la main, devenu doux et brun comme une vieille chaussure. Il monta si haut qu'un instant Kaydoudou crut qu'il allait rester accroché au soleil. Puis il redescendit, passa au-dessus du manguier et tomba sur le grillage de Monsieur Bilé, le voisin, tout en haut, là où courait une ligne de fil de fer barbelé.
+« Victoire ! crie BriBri. Il faut fêter ça ! »
 
-On entendit un petit bruit sec. Puis un long « pfffffff », exactement comme le soupir de Kaydoudou tout à l'heure.
+Il pose le ballon de Mami dans la poussière. Il recule de trois pas.
 
-Kaydoudou grimpa sur le muret et décrocha le ballon avec précaution, comme on détache un oiseau pris dans un filet.
+« Mesdames et messieurs... la frappe du tonnerre ! »
 
-Le cuir était ouvert sur toute la longueur d'une couture. À l'intérieur, la vessie de caoutchouc pendait, percée elle aussi. Le ballon s'affaissa dans les mains de Kaydoudou comme un fruit trop mûr.
+« BriBri, non ! » crie Kaydoudou.
 
-BriBri le prit et se laissa tomber assis au pied du grillage, le ballon serré contre lui. Il ne dit rien pendant une longue seconde, ce qui ne lui arrivait jamais. Puis sa lèvre se mit à trembler.
+Bam !
+
+Le ballon monte. Si haut que Kaydoudou croit qu'il va rester accroché au soleil. Tout le terrain lève la tête. Même Tonton Fokou.
+
+Puis il redescend, passe au-dessus du manguier, et tombe tout en haut du grillage de Monsieur Bilé, le voisin.
+
+Là où court une ligne de fil de fer barbelé.
+
+Tac.
+
+Puis un long « pfffffff ». Exactement comme le soupir de Kaydoudou tout à l'heure.
+
+« Le ballon... commence Radio. Le ballon est... »
+
+Pour la première fois de sa vie, il ne finit pas sa phrase.
+
+Kaydoudou grimpe sur le muret. Il décroche le ballon tout doucement, comme on libère un oiseau pris dans un filet.
+
+« Il est vivant ? crie BriBri d'en bas. Kaydoudou, dis-moi qu'il est vivant ! »
+
+Dans les mains de Kaydoudou, le ballon s'écrase comme un fruit trop mûr.
+
+« Le cuir est ouvert, dit Kaydoudou. Tout le long d'une couture. Et la vessie est percée. »
+
+« Oh non, souffle Mireille. Pas le ballon de Mami. »
+
+Kaydoudou saute du muret. BriBri lui prend le ballon des mains. Il se laisse tomber assis au pied du grillage et le serre contre lui. Pendant une longue seconde, il ne dit rien. Ça ne lui arrive jamais.
+
+Puis sa lèvre se met à trembler.
 
 « C'est le ballon de Mami. »
 
-Les larmes tracèrent deux lignes claires dans la poussière rouge de ses joues. Kaydoudou resta debout près de lui et posa une main sur son épaule, sans trouver un seul mot.
+Les larmes tracent deux lignes claires dans la poussière de ses joues. Autour d'eux, la poussière rouge flotte encore dans la lumière blanche de la fin de matinée. Au fond, entre le manguier et le but en bambou, la vieille casquette de Tonton Fokou ne bouge plus.
 
-Une heure plus tôt, Kaydoudou avait soupiré à cause de son frère. Maintenant, il aurait donné tous ses soupirs pour savoir réparer un ballon.
+Kaydoudou reste debout près de son frère, grave. Il pose une main sur son épaule. Il cherche un mot. Il n'en trouve aucun.
+
+*Tout à l'heure, j'ai soupiré à cause de lui*, pense-t-il. *Maintenant, je donnerais tous mes soupirs pour savoir réparer un ballon.*
 
 * * *
 
-Le soir, Papa avait ouvert son ordinateur sur la table du salon. Il était ingénieur réseau : il apprenait aux ordinateurs des grandes entreprises à se parler. Mais le samedi soir, son ordinateur ne servait qu'à une chose : les vieilles vidéos de la Coupe du monde 1990.
+Le soir, Papa ouvre son ordinateur. Papa est ingénieur réseau : il apprend aux ordinateurs à se parler. Mais le samedi soir, son ordinateur sert à une seule chose.
 
-« Regardez, regardez ! »
+« Les garçons ! Coupe du monde 1990 ! Venez voir ! »
 
-L'image sautait, les couleurs bavaient, le son grésillait comme du poisson dans l'huile. Mais on voyait les Lions Indomptables, et on voyait surtout Roger Milla. À trente-huit ans, il marquait, courait vers le drapeau de coin et dansait, une main sur le ventre, l'autre en l'air, les hanches qui roulaient comme une pirogue sur le fleuve.
+L'image saute. Le son grésille comme du poisson dans l'huile. Mais on voit les Lions Indomptables. Et surtout, on voit Roger Milla.
 
-« Cette année-là, dit Papa, le Cameroun est allé jusqu'en quart de finale. Aucune équipe africaine n'était jamais allée aussi loin. J'avais six ans. J'ai pleuré tout un après-midi, et je ne savais même pas si c'était de joie ou de tristesse. »
+« Regardez-le ! Trente-huit ans ! Il marque, il court au drapeau de coin, et là... la danse ! Une main sur le ventre, l'autre en l'air, et les hanches qui roulent comme une pirogue sur le fleuve ! »
 
-Puis il se leva et dansa la danse de Milla au milieu du salon. BriBri, recroquevillé sur une chaise avec le ballon crevé sur les genoux, sourit malgré lui. Il raconta le match en commençant par ses cinq dribbles.
+« Cette année-là, le Cameroun est allé jusqu'en quart de finale, dit Papa. Aucune équipe africaine n'était jamais allée aussi loin. J'avais six ans. J'ai pleuré tout un après-midi. Et je ne savais même pas si c'était de joie ou de tristesse ! »
 
-« Et en oubliant la fin », précisa Kaydoudou.
+Il se lève d'un bond.
 
-Papa hocha la tête et dit en se rasseyant :
+« Papa, non ! crie BriBri. Pas la danse ! »
 
-« Un réseau, c'est comme une équipe. Si un câble garde tout pour lui, plus rien ne passe. »
+« Si ! La danse ! »
 
-BriBri fit semblant de ne pas entendre.
+Il danse au milieu du salon. Il se cogne dans la table. « Aïe ! » Il continue quand même.
 
-La porte s'ouvrit sur Maman, qui rentrait de la clinique, sa blouse d'infirmière pliée sur le bras, les yeux fatigués et le sourire quand même. Elle vit le ballon, écouta l'histoire, serra BriBri contre elle. Puis elle se redressa et frappa dans ses mains.
+BriBri, roulé en boule sur une chaise, le ballon crevé sur les genoux, sourit malgré lui.
+
+« Papa, tu danses comme une pirogue qui coule. »
+
+« Une pirogue qui coule avec style, mon fils. »
+
+« Moi aussi, je ferai la danse de Milla. À chaque but. »
+
+« Il faudra d'abord marquer », dit Kaydoudou.
+
+« Et ton match, alors ? » demande Papa.
+
+« J'ai dribblé cinq joueurs ! Le crochet, le petit pont, la toupie... »
+
+« Et tu oublies la fin », dit Kaydoudou.
+
+Papa se rassoit et regarde BriBri par-dessus ses lunettes.
+
+« Tu sais, un réseau, c'est comme une équipe. Si un câble garde tout pour lui, plus rien ne passe. »
+
+BriBri fait semblant de ne pas entendre. Puis il tend le ballon crevé à Papa.
+
+« Tu répares bien les ordinateurs. Tu peux réparer ça ? »
+
+« Les ordinateurs, oui, dit Papa. Les ballons de Mami, non. Ça, c'est un autre métier. »
+
+La porte s'ouvre. Maman rentre de la clinique, sa blouse d'infirmière pliée sur le bras. Les yeux fatigués, le sourire quand même.
+
+« Mon Dieu. Qu'est-ce qui lui est arrivé ? »
+
+« Le barbelé de Monsieur Bilé l'a mangé », dit BriBri d'une toute petite voix.
+
+Maman serre BriBri contre elle, très fort. Puis elle tape dans ses mains.
 
 « Bon. Les devoirs. »
 
-« Maman, c'est samedi... »
+« Maman, c'est samedi ! »
 
 « Pas de devoirs, pas de crampons. »
 
-C'était sa règle, et elle était aussi solide que les bambous du terrain. Plus solide, même, parce que les bambous, eux, penchaient.
+C'est sa règle. Elle est solide comme les bambous du terrain. Plus solide, même : les bambous, eux, penchent.
 
-Dans leur chambre, Kaydoudou fit ses fractions, proprement, comme toujours. Puis, quand BriBri fut parti se laver en chantant faux, il sortit une feuille cachée entre deux pages de son cahier de maths. Depuis quelques semaines, en secret, il y notait chaque match, comme un journal que personne ne lirait. Jusqu'ici, rien que des scores et des noms. Ce soir, pour la première fois, le terrain lui avait appris quelque chose.
+Dans la chambre, Kaydoudou fait ses fractions, comme toujours. BriBri part se laver en chantant faux. Alors Kaydoudou sort une feuille cachée dans son cahier de maths.
 
-Il mâchonna son crayon, regarda la lune posée sur les tôles des voisins, et écrivit en lettres appliquées : « Leçon du Ballon n°1 ».
+C'est son secret. Depuis quelques semaines, il y note chaque match, comme un journal que personne ne lira. Rien que des scores et des noms.
 
-Quand il revint au salon, Papa et Maman parlaient à voix basse. Papa se tourna vers les garçons et souleva le ballon crevé, qui pendait dans sa main comme un chapeau mouillé.
+Mais ce soir, le terrain lui a appris quelque chose.
 
-« Pour les vacances de la Toussaint, dit-il, on monte à Bafoussam. Chez Mami. »
+Il mordille son crayon. Il regarde la lune posée sur les tôles. Puis il écrit, en lettres bien droites :
 
-BriBri, qui sortait de la douche une serviette sur la tête, s'arrêta net. Il regarda le ballon. Ses yeux s'allumèrent d'un coup, comme une lampe qu'on rebranche.
+« Leçon du Ballon n°1 ».
 
-« Mami répare tout », dit-il.
+Quand il revient au salon, Papa et Maman parlent tout bas. Papa soulève le ballon crevé, qui pend dans sa main comme un chapeau mouillé.
+
+« Pour les vacances de la Toussaint, on monte à Bafoussam. Chez Mami. »
+
+BriBri sort de la douche, une serviette sur la tête. Il s'arrête net. Ses yeux s'allument d'un coup, comme une lampe qu'on rebranche.
+
+« Mami répare tout ! »
+
+Kaydoudou regarde la grande déchirure.
+
+*Tout ?* pense-t-il. *Même ça ?*
 
 > [!CARNET] Leçon du Ballon n°1 : Le ballon doit voyager
 > BriBri a dribblé cinq joueurs. À la fin, le ballon était chez eux.

@@ -10,11 +10,11 @@ illustration: Plan moyen, midi d'un dimanche de septembre, sur la place pavée d
 
 « Dong ! Dong ! Dong ! »
 
-Midi pile. Les cloches de Vinyamar sonnent la fin de la messe.
+Midi pile. Dans le clocher carré, les cloches de Vinyamar sonnent la fin de la messe.
 
 Et la place devient un terrain de foot.
 
-Les portes de l'église s'ouvrent. Personne ne rentre déjeuner. Un monsieur pose sa veste sur un banc. Un petit garçon sort un ballon d'un sac de courses. Deux minutes plus tard, sous les grands platanes, deux cercles tournent déjà sur les pavés.
+Les portes de l'église s'ouvrent. Personne ne rentre déjeuner. Un monsieur pose sa veste sur un banc. Un petit garçon sort un ballon d'un sac de courses. Deux minutes plus tard, sous les grands platanes à l'écorce tachetée, deux cercles tournent déjà sur les pavés.
 
 « C'est la messe du foot ! souffle BriBri. Regarde ! Il y a des bébés de six ans et des papis de soixante-dix ans ! Et le boulanger ! Il a encore de la farine sur les bras ! »
 

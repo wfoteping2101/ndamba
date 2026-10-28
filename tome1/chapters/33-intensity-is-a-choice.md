@@ -8,113 +8,287 @@ resume: Londres, sa pluie fine, ses bus rouges et une maison étroite à Lewisha
 illustration: Plan moyen sur la pelouse synthétique de Kingsbridge, un soir de septembre, sous une pluie fine que les projecteurs changent en poussière de lumière. Dans un petit carré de quatre plots, Kaydoudou, raie dessinée à gauche, son vieux maillot vert délavé numéro 8, genoux pliés et bras gauche ouvert, résiste à Coach Okafor, crâne rasé, survêtement noir, collé à son dos comme un réfrigérateur ; il vient de jouer le ballon en une touche vers son frère. Au bord du carré, BriBri, petite afro perlée de pluie, chaussettes dépareillées rouge et jaune, le lui remet déjà dans le vide, du plat du pied. Émotion : l'évasion, la complicité retrouvée.
 ---
 
-À Londres, la pluie ne tombait pas. Elle flottait.
+« Elle ne s'arrête jamais ? »
 
-Kaydoudou croyait pourtant tout connaître de la pluie. Il avait vu celle de Douala, qui jouait du tambour sur les tôles et changeait le terrain de Bonamoussadi en soupe rouge. Celle de Waldorf, qui devenait neige pendant la nuit. Celle de Bretagne, qui arrivait de côté, poussée par le vent. Mais la pluie de Londres ne ressemblait à aucune autre. Elle ne faisait pas de bruit. On ne la voyait presque pas tomber. Elle restait suspendue dans l'air, fine comme de la farine, et après dix minutes dehors on avait les cheveux couverts de petites perles.
-
-« Elle ne s'arrête jamais ? » demanda BriBri le troisième matin, le nez collé à la fenêtre.
+BriBri a le nez collé à la fenêtre. Troisième matin à Londres. Il pleut.
 
 « Si, dit Papa en nouant sa cravate. Elle fait des pauses. Pour respirer. »
 
-La maison de Lewisham était la plus étroite que la famille Ngassa eût jamais habitée. Trois étages posés les uns sur les autres comme des boîtes à chaussures, un escalier raide comme une échelle, et un couloir si mince que BriBri, les bras écartés, touchait les deux murs à la fois. Il le faisait chaque matin en descendant, en annonçant : « Attention, l'homme-pont arrive ! » La chambre des garçons était tout en haut, sous le toit. Le plafond penchait d'un côté, et la première nuit Kaydoudou s'y était cogné trois fois avant de comprendre qu'il fallait se lever par la gauche. Sur l'étagère, entre le carnet couvert de pagne et la photo des Lionceaux de Bonamoussadi, le ballon de Mami dormait, avec sa pièce rouge et jaune et toutes ses signatures. Par la lucarne, on entendait la pluie gratter le toit, doucement, comme un chat poli.
+À Londres, la pluie ne tombe pas. Elle flotte.
 
-Maman avait juré à l'aéroport qu'elle resterait fidèle au café. Trois semaines plus tard, elle buvait son quatrième thé au lait de la journée en remplissant ses papiers pour l'hôpital.
+« Je croyais tout connaître de la pluie », soupire Kaydoudou. Il compte sur ses doigts. « Celle de Douala, qui joue du tambour sur les tôles et change le terrain en soupe rouge. Celle de Waldorf, qui devient neige pendant la nuit. Celle de Bretagne, qui arrive de côté. »
 
-« C'est la pluie, se défendait-elle. Elle entre dans les os. Il faut bien la chasser avec quelque chose de chaud. »
+« Et celle-là ? »
 
-Papa installait les réseaux d'une banque dans les grandes tours de verre au bord de la Tamise. BriBri, lui, avait trouvé le paradis : le bus rouge à étage. Il fallait grimper l'escalier en colimaçon pendant que le bus démarrait, s'accrocher aux barres, et foncer vers le premier rang, tout en haut, tout devant, face à la grande vitre.
+« Celle-là ne fait pas de bruit. On ne la voit presque pas. Elle reste dans l'air, fine comme de la farine. »
 
-« Le siège du pilote », expliquait-il.
+« Et au bout de dix minutes, dit BriBri, on a des perles plein les cheveux. »
 
-Et pendant tout le trajet, il tournait un volant imaginaire, freinait avec la bouche et annonçait les arrêts avec un accent anglais très chic, en se pinçant le nez. Une vieille dame coiffée d'un chapeau en plastique l'applaudit un jour en descendant. BriBri salua comme un chef d'orchestre. Kaydoudou fit semblant de ne pas le connaître.
+La maison de Lewisham est la plus étroite où la famille ait jamais habité. BriBri en fait la visite comme un guide.
+
+« Mesdames et messieurs, trois étages empilés comme des boîtes à chaussures ! Un escalier raide comme une échelle ! Et le couloir le plus mince du monde ! »
+
+Il écarte les bras et touche les deux murs à la fois. Il le fait chaque matin en descendant.
+
+« Attention ! L'homme-pont arrive ! »
+
+Sous le toit, le plafond de la chambre penche. La première nuit, Kaydoudou s'y est cogné trois fois.
+
+« On se lève par la gauche, a décidé BriBri. C'est la loi de la maison. »
+
+Sur l'étagère, entre le carnet couvert de pagne et la photo des Lionceaux de Bonamoussadi, dort le ballon de Mami. Par la lucarne, la pluie gratte le toit, doucement, comme un chat poli.
+
+À l'aéroport, Maman avait juré : « Moi, je reste fidèle au café. » Trois semaines plus tard, elle remplit ses papiers pour l'hôpital avec son quatrième thé au lait de la journée.
+
+« Encore un thé, Maman ? »
+
+« C'est la pluie, se défend-elle. Elle entre dans les os. Il faut bien la chasser avec quelque chose de chaud. »
+
+« Maman devient anglaise », chuchote BriBri.
+
+« Pas encore, dit Kaydoudou. Elle n'a pas de parapluie. »
+
+« Moi, je vais installer les réseaux d'une banque, dit Papa. Dans les grandes tours de verre, au bord de la Tamise. »
+
+BriBri, lui, a trouvé le paradis : le bus rouge à étage.
+
+« Vite, Kaydoudou ! Le siège du pilote ! »
+
+Il grimpe l'escalier en colimaçon et fonce tout en haut, tout devant. Il tourne un volant imaginaire, freine avec la bouche, pfffchhh, et annonce les arrêts en se pinçant le nez.
+
+« Next stop... Lewisham. Thank you very much. »
+
+Un jour, une vieille dame au chapeau en plastique l'applaudit en descendant.
+
+« Bravo, young man ! »
+
+« Thank you, thank you ! » BriBri salue comme un chef d'orchestre. Kaydoudou fait semblant de ne pas le connaître.
 
 * * *
 
-L'essai à Kingsbridge Albion eut lieu un mardi soir. La pelouse synthétique brillait sous les projecteurs comme un tapis mouillé, et la pluie dansait dans la lumière. Une vingtaine de garçons s'échauffaient en silence. Kaydoudou avait gardé son vieux maillot vert numéro 8 sous la chasuble orange qu'on lui avait donnée. Il avait besoin de sentir Bonamoussadi contre sa peau.
+L'essai à Kingsbridge Albion a lieu un mardi soir.
 
-Un homme traversa le terrain. Il ne marchait pas vite : il courait. Crâne rasé, survêtement noir, épaules d'armoire, sifflet autour du cou. Il s'arrêta au milieu des garçons et frappa dans ses mains si fort que BriBri sursauta.
+La pelouse synthétique brille sous les projecteurs comme un tapis mouillé. Une vingtaine de garçons s'échauffent en silence. Kaydoudou a enfilé la chasuble orange par-dessus son vieux maillot vert numéro 8.
+
+« Tu as gardé Bonamoussadi en dessous ? » chuchote BriBri.
+
+« Toujours. »
+
+Un homme traverse le terrain en courant. Crâne rasé, survêtement noir, épaules d'armoire.
+
+« Il court même pour marcher », chuchote BriBri.
+
+L'homme s'arrête au milieu des garçons et frappe dans ses mains.
+
+CLAC !
+
+BriBri sursaute.
 
 « Good evening, gentlemen ! Intensity is a choice ! Who's choosing it tonight ? »
 
-« L'intensité, c'est un choix, traduisit Kaydoudou à voix basse. Qui la choisit ce soir ? »
+« L'intensité, c'est un choix, traduit Kaydoudou tout bas. Qui la choisit ce soir ? »
 
-« Moi, chuchota BriBri. Enfin, je crois. »
+« Moi, chuchote BriBri. Enfin, je crois. »
 
-C'était Coach Nathan Okafor, l'entraîneur des U15. Il lut la liste des noms en marchant de long en large. Arrivé à « Ngassa », il s'arrêta net.
+« I'm Nathan Okafor. Coach of the U15. » Il lit la liste en marchant. À « Ngassa », il s'arrête net.
 
 « Ngassa and Ngassa ? Brothers ? Where from ? »
 
-« Cameroon », répondit Kaydoudou.
+« Cameroon », répond Kaydoudou.
 
-Le visage d'Okafor s'illumina. « Cameroon ! Neighbours ! My father is from Enugu, in Nigeria. » Il se pencha vers eux avec un sourire immense. « How far ? »
+Le visage d'Okafor s'allume comme un projecteur.
 
-Kaydoudou ne comprit pas. BriBri, si. C'était du pidgin, la langue des marchés de Douala et des chauffeurs de benskins, presque la même des deux côtés de la frontière.
+« Cameroon ! Neighbours ! My father is from Enugu, in Nigeria ! » Il se penche vers eux, avec un sourire immense. « How far ? »
 
-« We dey ! » répondit BriBri du tac au tac.
+Kaydoudou ne comprend pas. BriBri, si.
 
-Okafor éclata d'un rire énorme qui fit trembler la pluie. Puis il donna un coup de sifflet, et le rire disparut.
+« C'est du pidgin ! souffle-t-il. Comme les chauffeurs de benskins à Douala ! »
 
-Le premier exercice était un jeu de conservation à six contre six, dans un rectangle à peine plus grand qu'une salle de classe. Le premier ballon arriva sur Kaydoudou. Il fit ce qu'Avi Ramon lui avait appris sur la place du village catalan : la pausa, une demi-seconde d'attente pour que l'adversaire s'engage. Mais l'adversaire ne s'engagea pas. Il arriva. Un grand garçon aux jambes interminables lui prit le ballon avant la fin de la demi-seconde.
+« We dey ! » répond BriBri du tac au tac.
 
-« Too slow, mate », lança-t-il en repartant.
+« Ha ! A Cameroonian who speaks pidgin ! » Okafor éclate d'un rire énorme qui fait trembler la pluie. Puis il siffle. Et le rire disparaît.
 
-Le deuxième ballon, Kaydoudou le reçut après avoir regardé par-dessus son épaule, comme Monsieur Lacombe l'exigeait. Il vit l'adversaire. Il le vit très bien, même, au moment exact où l'épaule de l'adversaire rencontrait la sienne. Il se retrouva assis sur le synthétique mouillé. Personne ne siffla.
+« Six against six ! Two touches ! Go ! »
 
-Le troisième ballon, il essaya de se retourner. Il ne se retourna pas.
+Le rectangle est à peine plus grand qu'une salle de classe.
 
-Trois ballons perdus en dix minutes. Cela ne lui était pas arrivé depuis le terrain de terre rouge, quand il avait onze ans. Okafor criait : « Faster ! The ball is hot here ! Don't hold it, it burns ! » Le ballon est brûlant ici, ne le garde pas, il brûle. Les garçons anglais ne couraient pas plus vite que les Espagnols ou les Français. Ils arrivaient plus tôt. Ce n'était pas pareil. Ils fondaient sur le ballon à trois, de partout, et le terrain rétrécissait comme un pull dans une machine à laver.
+Premier ballon pour Kaydoudou. Il fait la pausa d'Avi Ramon : une demi-seconde d'attente, pour que l'adversaire s'engage. Mais l'adversaire ne s'engage pas. Il arrive. Un grand garçon aux jambes interminables lui prend le ballon.
 
-BriBri tomba deux fois. La troisième, il glissa un petit pont entre les jambes d'un défenseur roux et se releva en riant. Mais même lui souffla, à la pause, les mains sur les genoux : « Kaydoudou, ils ont des moteurs. »
+« Too slow, mate ! »
 
-Kaydoudou ne répondit pas. La pluie lui coulait dans les yeux. Il pensait à Tonton Fokou et à sa règle unique : le ballon doit voyager. Ici, le ballon n'avait même pas le temps de faire sa valise. Pour la première fois depuis le Cameroun, il eut l'impression que toutes les pages de son carnet étaient écrites dans une langue que personne, sur ce terrain, ne parlait.
+« Trop lent, mon pote », traduit BriBri, qui aurait préféré ne pas comprendre.
 
-* * *
+Deuxième ballon. Kaydoudou regarde par-dessus son épaule, comme Monsieur Lacombe l'exigeait. Il voit l'adversaire. Il le voit même très bien, au moment exact où son épaule rencontre la sienne. Boum ! Le voilà assis sur le synthétique mouillé.
 
-Le lendemain, Papa et les garçons furent convoqués dans le bureau de l'académie. Il y avait Okafor, assis de travers sur une chaise trop petite pour lui, et une dame aux cheveux gris tirés en chignon, des lunettes pendues à une chaînette : Mrs. Helen Price, la directrice. Elle ne sourit pas une seule fois, mais elle disait « thank you » après chaque phrase, même quand personne ne lui avait rien donné.
+Personne ne siffle.
 
-« You were slow », commença Okafor. Vous étiez lents. « Both of you. Very slow. »
+Troisième ballon. Il essaie de se retourner. Il ne se retourne pas.
 
-Kaydoudou sentit son ventre tomber dans ses chaussures.
+« Faster ! hurle Okafor. The ball is hot here ! Don't hold it, it burns ! »
 
-« But your heads are fast. » Il se tapota la tempe. « Mais vos têtes sont rapides. Les jambes, je peux les entraîner. Les têtes, non. You're in. »
+« Il dit que le ballon est brûlant, souffle Kaydoudou. Il ne faut pas le garder. »
 
-BriBri bondit de sa chaise. Okafor leva un doigt, et BriBri se rassit.
+« J'avais remarqué. »
 
-« One thing. Here, nobody waits for you. » Ici, personne ne vous attend. « Not the ball. Not the opponent. Not me. »
+« That's three, mate ! » ricane le grand garçon.
 
-Mrs. Price posa ses lunettes sur son nez. « And school comes first. No homework, no boots. Thank you. »
+Trois ballons perdus en dix minutes. Ça ne lui est plus arrivé depuis la terre rouge, quand il avait onze ans.
 
-Papa éclata de rire. « Ma femme dit exactement la même chose. »
+Les Anglais fondent sur le ballon à trois, de partout. Le terrain rétrécit comme un pull dans la machine à laver.
 
-« Then your wife is a wise woman », répondit Mrs. Price sans sourire. Kaydoudou aurait juré que ses yeux, eux, souriaient un peu.
+BriBri tombe deux fois. La troisième, il glisse un petit pont entre les jambes d'un défenseur roux. « Petit pont ! » Il se relève en riant. Mais à la pause, même lui a les mains sur les genoux.
 
-* * *
+« Kaydoudou... Ils ont des moteurs. »
 
-Dès la première semaine, un soir de pluie fine que les projecteurs changeaient en poussière de lumière, Okafor prit Kaydoudou à part. Kaydoudou portait encore son vieux maillot vert numéro 8. Okafor posa quatre plots pour faire un carré de cinq mètres de côté, plaça deux partenaires sur les bords, dont BriBri, et se colla lui-même au dos de Kaydoudou.
+« Non. Ils ne courent pas plus vite que les Espagnols. Ils arrivent plus tôt. C'est pire. »
 
-« This is the cage. » La cage. « You receive. I attack. You survive. »
+Puis il se tait. La pluie lui coule dans les yeux.
 
-Il était lourd comme un réfrigérateur. Au premier ballon, Kaydoudou fut poussé hors du carré. Au deuxième aussi. Okafor ne se moqua pas. Il parlait vite, en anglais, et Kaydoudou traduisait dans sa tête.
+*Le ballon doit voyager*, pense-t-il. *Ici, il n'a même pas le temps de faire sa valise.*
 
-« Un : ton corps est un mur. Plie les genoux, ouvre le bras, garde le ballon sur le pied loin de moi. Deux : joue loin de la pression. Si j'arrive par la gauche, le ballon part à droite. Trois : si tu es coincé, tu ne te bats pas. Tu utilises le mur. » Il montra un des partenaires. « One touch to him, he gives it back, you're gone. »
-
-Le mur. Une passe en une touche sur un partenaire, qui la remet aussitôt, comme une balle qui rebondit contre la porte d'un garage. Kaydoudou cligna des yeux. Mais c'était le une-deux du Njangi ! Le même, exactement, sauf qu'ici on n'avait pas le temps de lever deux doigts.
-
-Au dixième ballon, il plia les genoux, sentit le poids d'Okafor contre son dos et ouvrit le bras gauche. Le ballon arriva. Il le joua en une touche vers BriBri, sur le côté du carré. BriBri le lui rendit aussitôt, dans le vide, et Kaydoudou partit. Okafor se retourna et ne trouva plus personne.
-
-« YES ! » rugit-il, si fort qu'un pigeon s'envola du toit des vestiaires. « That's it ! That's football ! »
+Pour la première fois depuis le Cameroun, il a l'impression que son carnet est écrit dans une langue que personne, sur ce terrain, ne parle.
 
 * * *
 
-Le premier match officiel se joua le samedi, sous la même pluie fine, contre Millbrook Rovers. On donna à Kaydoudou le maillot vert sombre aux manches blanches de Kingsbridge, avec le numéro 8 dans le dos. Il n'avait rien demandé. Le numéro l'attendait.
+Le lendemain, Papa et les garçons sont convoqués dans le bureau de l'académie.
 
-Ce fut un match de rugby avec un ballon rond. Kaydoudou reçut des épaules, des genoux, des coudes, un crampon sur la cheville et, il en était presque sûr, un coup de tête involontaire entre les omoplates. L'arbitre répétait « Play on ! » comme une chanson. Mais à la 61e minute, à 1-1, Kaydoudou reçut un ballon dos au jeu, avec un milieu de Millbrook collé à ses reins. Il ne chercha pas à se retourner. Il plia les genoux, ouvrit le bras et joua en une touche sur BriBri, qui arrivait sur sa droite. BriBri remit aussitôt, et Kaydoudou, libre, leva enfin la tête. Il vit l'espace dans le dos des défenseurs et y glissa une passe qui traversait toute la ligne. Theo, le grand attaquant de Kingsbridge, n'eut qu'à la pousser au fond. 2-1. Le score ne bougea plus.
+Okafor est assis de travers sur une chaise trop petite. À côté de lui, Mrs. Helen Price, la directrice : cheveux gris en chignon, lunettes pendues à une chaînette. Elle ne sourit jamais. Mais elle dit « thank you » après chaque phrase, même quand personne ne lui a rien donné.
 
-Le soir, dans la salle de bains si étroite qu'on ne pouvait pas y tenir à deux, Kaydoudou s'assit au bord de la baignoire et regarda ses jambes. Il y avait des bleus partout. Des bleus vraiment bleus, des violets, des jaunes, un vert sur le genou et une longue traînée rouge sur le tibia. BriBri passa la tête par la porte et le contempla longtemps, très sérieux.
+« You were slow, commence Okafor. Both of you. Very slow. »
 
-« Tu ressembles à une carte du métro », dit-il.
+Lents. Très lents. Le ventre de Kaydoudou tombe dans ses chaussures.
 
-Kaydoudou voulut rester digne. Il éclata de rire, le rire lui fit mal aux côtes, et il rit encore plus fort.
+« But your heads are fast. » Okafor se tapote la tempe. « Legs, I can train. Heads, I can't. You're in. »
+
+« Vos têtes sont rapides, chuchote Papa. Les jambes, ça s'entraîne. Les têtes, non. Vous êtes pris. »
+
+« On est pris ! » BriBri bondit de sa chaise. Okafor lève un doigt. BriBri se rassoit.
+
+« One thing. Here, nobody waits for you. Not the ball. Not the opponent. Not me. »
+
+« Ici, personne ne vous attend, traduit Papa. Ni le ballon, ni l'adversaire, ni lui. »
+
+Mrs. Price pose ses lunettes sur son nez.
+
+« And school comes first. No homework, no boots. Thank you. »
+
+« Pas de devoirs, pas de crampons », traduit BriBri, catastrophé.
+
+Papa éclate de rire. « Ma femme dit exactement la même chose ! »
+
+« Then your wife is a wise woman, répond Mrs. Price, sans sourire. Thank you. »
+
+« Elle dit que Maman est une femme sage », traduit BriBri.
+
+Mais Kaydoudou le jurerait : ses yeux, eux, sourient un peu.
+
+* * *
+
+Un soir de la première semaine, sous une pluie fine que les projecteurs changent en poussière de lumière, Okafor prend Kaydoudou à part. Il pose quatre plots : un carré de cinq mètres. Il place deux partenaires sur les bords, dont BriBri. Puis il se colle au dos de Kaydoudou, qui porte encore son vieux maillot vert numéro 8.
+
+« This is the cage. You receive. I attack. You survive. »
+
+« La cage, souffle BriBri. Tu reçois, il attaque, tu survis. Bonne chance. »
+
+Premier ballon : Kaydoudou est poussé hors du carré. Deuxième : pareil.
+
+« Il pèse comme un frigo ! » souffle-t-il.
+
+« Again ! » crie Okafor.
+
+« Il aime bien ce mot, chuchote BriBri. Ça va ? »
+
+« Non. »
+
+Okafor ne se moque pas. Il parle vite. Kaydoudou l'entend en français dans sa tête.
+
+« Un : ton corps est un mur. Plie les genoux, ouvre le bras, garde le ballon sur le pied loin de moi. Deux : joue loin de la pression. Si j'arrive par la gauche, le ballon part à droite. Trois : si tu es coincé, tu ne te bats pas. Tu utilises le mur. » Il montre BriBri. « Une touche sur lui, il te la rend, et tu es parti. Comme une balle contre la porte d'un garage. »
+
+Kaydoudou cligne des yeux.
+
+« BriBri. C'est le une-deux du Njangi ! »
+
+« Version anglaise ! dit BriBri. Sans le temps de lever les deux doigts ! »
+
+Troisième ballon : dehors. Sixième : dehors. Neuvième : presque.
+
+Dixième ballon.
+
+Kaydoudou plie les genoux. Il sent le poids d'Okafor contre son dos, chaud, énorme. Il ouvre le bras gauche.
+
+La pluie flotte dans la lumière. Tout ralentit. Le ballon arrive.
+
+Une touche. Vers BriBri.
+
+BriBri ne contrôle même pas. Du plat du pied, l'afro pleine de perles de pluie, il le lui remet déjà. Dans le vide.
+
+Et Kaydoudou s'envole.
+
+Okafor se retourne. Il ne trouve plus personne.
+
+« YES ! » rugit-il, si fort qu'un pigeon s'envole du toit des vestiaires. « That's it ! That's football ! »
+
+« Encore », dit Kaydoudou, tout essoufflé.
+
+« Tu as vu ? crie BriBri. Je suis un mur ! Un mur qui passe ! »
+
+* * *
+
+Le samedi, premier match officiel, contre Millbrook Rovers. Okafor lance à Kaydoudou le maillot de Kingsbridge : vert sombre, manches blanches.
+
+« Number 8. It's yours. »
+
+Il n'a rien demandé. Le numéro l'attendait.
+
+« Play on ! » chante l'arbitre à chaque choc. « Play on ! »
+
+À la mi-temps, Kaydoudou fait la liste à son frère.
+
+« J'ai reçu des épaules. Des genoux. Des coudes. Un crampon sur la cheville. Et un coup de tête entre les omoplates. Sans faire exprès, je crois. »
+
+« Ce n'est pas du foot, dit BriBri. C'est du rugby avec un ballon rond ! »
+
+61e minute. 1-1.
+
+Kaydoudou reçoit dos au jeu. Un milieu de Millbrook est collé à ses reins.
+
+« The wall ! hurle Okafor. Use the wall ! »
+
+*La cage*, pense Kaydoudou. Il plie les genoux, ouvre le bras, et joue en une touche sur BriBri, qui arrive sur sa droite.
+
+BriBri remet aussitôt.
+
+Kaydoudou est libre. Il lève la tête. Il voit l'espace dans le dos des défenseurs et y glisse une passe qui traverse toute la ligne. Theo, le grand attaquant de Kingsbridge, n'a plus qu'à pousser.
+
+« Cheers, mate ! » lance Theo.
+
+2-1. Le score ne bouge plus.
+
+« That's football ! » hurle Okafor sur le bord du terrain.
+
+* * *
+
+Le soir, la salle de bains est si étroite qu'on n'y tient pas à deux. Kaydoudou s'assoit au bord de la baignoire et regarde ses jambes.
+
+BriBri passe la tête par la porte. Il compte les couleurs, très sérieux.
+
+« Des bleus vraiment bleus. Des violets. Des jaunes. Un vert, sur le genou. Et une longue ligne rouge, sur le tibia. »
+
+Il le contemple.
+
+« Tu ressembles à une carte du métro. Ligne bleue, ligne violette, ligne jaune... Terminus : le tibia ! »
+
+Kaydoudou veut rester digne. Il éclate de rire. Ça lui fait mal aux côtes. Alors il rit encore plus fort.
+
+« Tu veux que je dessine les stations ? » propose BriBri.
+
+« Non ! »
+
+Plus tard, sous le toit penché, Kaydoudou écoute la pluie gratter la lucarne. Il a mal partout. Mais une phrase tourne dans sa tête.
+
+*Ici, personne ne t'attend.*
+
+*Alors j'arriverai avant.*
 
 > [!CARNET] Leçon du Ballon n°33 : Recevoir sous pression
 > Ici, le ballon est brûlant et personne ne m'attend.

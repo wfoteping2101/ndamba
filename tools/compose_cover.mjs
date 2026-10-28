@@ -65,7 +65,7 @@ html,body{margin:0;width:1400px;height:2000px;overflow:hidden;background:#0b1712
 .band{position:absolute;bottom:0;left:0;right:0;height:24px;background:repeating-linear-gradient(90deg,#D63C2F 0 54px,#F2C230 54px 92px,#2E6B45 92px 140px,#F2C230 140px 162px)}
 </style></head><body><div class="c"><div class="shade"></div>
 <div class="top"><div class="author">William Foteping</div><div class="le">LE CODE</div><div class="word">NJANGI</div><div class="sub">Posséder avec intention</div></div>
-<div class="bot"><div class="line">La méthode africaine pour gagner la Coupe du monde</div><div class="mantra">50 exercices · l'Indice Njangi · 2030 · 2034</div></div>
+<div class="bot"><div class="line">La méthode africaine pour gagner la Coupe du monde</div><div class="mantra">64 exercices · l'Indice Njangi · 2030 · 2034</div></div>
 <div class="band"></div></div></body></html>`
 if (CODE) {
   const tmpc = path.join(ROOT, 'build', 'code-cover.html')

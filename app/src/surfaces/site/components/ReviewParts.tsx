@@ -61,6 +61,7 @@ export function useArtLabel() {
     if (a.kind === 'cover') return t('review.tome1.label.cover')
     if (a.kind === 'part') return `${t('review.tome1.label.part', { n: a.part })} · ${COUNTRY_FR[a.part ?? 0] ?? ''}`
     if (a.kind === 'chapter') return t('review.tome1.label.chapter', { n: a.chapter })
+    if (a.kind === 'beat') return t('review.tome1.label.beat', { n: a.chapter })
     return a.file === 'family' ? t('review.tome1.label.family') : t('review.tome1.label.characters')
   }
 }

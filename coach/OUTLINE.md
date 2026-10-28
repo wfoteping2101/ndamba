@@ -4,10 +4,10 @@
 
 Titre : **Le Code Njangi** (sous-titre : Posséder avec intention : la méthode africaine pour gagner la Coupe du monde)
 Sous-titre : **Posséder avec intention. Le modèle de jeu africain pour gagner la Coupe du monde.**
-Bandeau de couverture : 50 exercices · Des jeunes aux pros · La semaine d'entraînement · Périodisation · L'analyse
+Bandeau de couverture : 64 exercices · Des jeunes aux pros · La semaine d'entraînement · Périodisation · L'analyse
 Auteur : William Foteping
 
-Le livre compte un avant-propos, 23 chapitres en 7 parties, plus 50 fiches d'exercices (écrites à part, voir `DRILLS.md`) et des annexes. Chaque chapitre : 1 800 à 2 400 mots.
+Le livre compte un avant-propos, 23 chapitres en 7 parties, plus 64 fiches d’exercices (écrites à part, voir `DRILLS.md`) et des annexes. Chaque chapitre : 1 800 à 2 400 mots.
 
 ## Le vocabulaire commun (à utiliser partout, à l'identique)
 
@@ -101,7 +101,7 @@ La structure d'une séance (activation avec ballon, rondo, jeu de position, jeu 
 ## PARTIE 5 : LES 50 EXERCICES
 
 ### 18. Comment utiliser les fiches (fichier `18-comment-utiliser-les-fiches.md`, 700 à 1 100 mots)
-Les 50 fiches sont générées depuis `drills/*.json` (voir `DRILLS.md`) et placées après ce chapitre. Ce court chapitre explique comment lire une fiche (code, intention, âge, effectif, espace, jour MD, intensité, organisation, règles, consignes, progressions, mesure) et comment choisir un exercice selon l'intention, l'âge et le jour de la semaine, avec un tableau des 7 familles (R, P, S, L, F, T, G).
+Les 64 fiches sont générées depuis `drills/*.json` (voir `DRILLS.md`) et placées après ce chapitre. Ce court chapitre explique comment lire une fiche (code, intention, âge, effectif, espace, jour MD, intensité, organisation, règles, consignes, progressions, mesure) et comment choisir un exercice selon l'intention, l'âge et le jour de la semaine, avec un tableau des 7 familles (R, P, S, L, F, T, G).
 
 ## PARTIE 6 : L'ANALYSE
 
