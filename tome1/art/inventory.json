@@ -2253,6 +2253,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch13.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2278,6 +2279,7 @@
   "shot": "dynamic",
   "refs": [
    "sheet-brothers.png",
+   "ch13.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2304,6 +2306,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch13.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2484,6 +2487,7 @@
   "shot": "dynamic",
   "refs": [
    "sheet-brothers.png",
+   "ch16.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2509,6 +2513,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch16.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2534,6 +2539,7 @@
   "shot": "quiet",
   "refs": [
    "sheet-brothers.png",
+   "ch16.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2637,6 +2643,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch18.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2662,6 +2669,7 @@
   "shot": "wide",
   "refs": [
    "sheet-brothers.png",
+   "ch18.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2687,6 +2695,7 @@
   "shot": "dynamic",
   "refs": [
    "sheet-brothers.png",
+   "ch18.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2712,6 +2721,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch19.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2737,6 +2747,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch19.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2762,6 +2773,7 @@
   "shot": "dynamic",
   "refs": [
    "sheet-brothers.png",
+   "ch19.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2787,6 +2799,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch20.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2812,6 +2825,7 @@
   "shot": "quiet",
   "refs": [
    "sheet-brothers.png",
+   "ch20.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2838,6 +2852,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch20.png",
    "ch07.png"
   ],
   "aspect": "3:2",

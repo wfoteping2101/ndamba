@@ -281,7 +281,7 @@ export const CHAPTERS = {
     camera: 'Slight high angle, wide, the circle of players forming a shield around Kaydoudou at the centre.',
     alt: 'Les joueurs des deux équipes forment un cercle autour de Kaydoudou, Lucas les mains sur ses épaules, BriBri qui arrive en courant.' },
   21: { shot: 'medium', purpose: 'BriBri finds his voice while Kaydoudou cheers from the bench.', goal: 'Win without Kaydoudou.', obstacle: 'Kaydoudou\'s broken wrist.', choice: 'BriBri leads by speaking.', emotion: 'Joy and pride.', hook: 'How will Christmas be without Mami?',
-    outfit: 'Kaydoudou in a wool hat, his left forearm in a plaster cast coloured half red, half yellow and covered in marker signatures; Awa with braids in a bun; BriBri in the white ESM shirt.',
+    outfit: 'Kaydoudou in a wool hat, his left forearm in a plaster cast coloured half red, half yellow and covered in marker signatures; Awa Keïta-Lambert, 35, the club\'s grown-up assistant coach (clearly an adult woman, much taller than Kaydoudou would be standing on the ground), of Malian origin, dark brown skin, long thin braids gathered in a bun, a warm coat over her grey tracksuit; BriBri in the white ESM shirt.',
     action: 'Kaydoudou, standing on the bench, raises his cast to the sky like a torch and shouts with joy, mouth wide open on his gap tooth. Next to him Awa laughs while holding him by the sleeve. On the pitch behind, BriBri raises his fist and turns toward his brother.',
     location: 'The edge of an artificial pitch on a freezing December evening, breath smoking.',
     light: 'Floodlights, cold blue night, warm highlights on the faces.',

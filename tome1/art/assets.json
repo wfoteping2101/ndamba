@@ -627,10 +627,10 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch21.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch21.png",
+  "status": "redo",
+  "review": "Awa drawn as a young girl: she is the 35-year-old assistant coach. Prompt fixed (clearly an adult woman).",
   "integrated_in": []
  },
  {
@@ -643,11 +643,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch22.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch22.png",
+  "status": "approved, integrated",
+  "review": "Christmas in Bussy: Papa dances, Kenzo bends double laughing, Kaydoudou raises his red and yellow cast, chicken DG on the table.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch23",
@@ -1617,6 +1621,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch13.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch13b.txt",
@@ -1635,6 +1640,7 @@
   "chapter": 13,
   "refs": [
    "sheet-brothers.png",
+   "ch13.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch13c.txt",
@@ -1654,6 +1660,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch13.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch13d.txt",
@@ -1785,6 +1792,7 @@
   "chapter": 16,
   "refs": [
    "sheet-brothers.png",
+   "ch16.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch16b.txt",
@@ -1803,6 +1811,7 @@
   "chapter": 16,
   "refs": [
    "sheet-brothers.png",
+   "ch16.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch16c.txt",
@@ -1821,6 +1830,7 @@
   "chapter": 16,
   "refs": [
    "sheet-brothers.png",
+   "ch16.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch16d.txt",
@@ -1896,6 +1906,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch18.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch18b.txt",
@@ -1914,6 +1925,7 @@
   "chapter": 18,
   "refs": [
    "sheet-brothers.png",
+   "ch18.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch18c.txt",
@@ -1932,6 +1944,7 @@
   "chapter": 18,
   "refs": [
    "sheet-brothers.png",
+   "ch18.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch18d.txt",
@@ -1950,6 +1963,7 @@
   "chapter": 19,
   "refs": [
    "sheet-brothers.png",
+   "ch19.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch19b.txt",
@@ -1968,6 +1982,7 @@
   "chapter": 19,
   "refs": [
    "sheet-brothers.png",
+   "ch19.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch19c.txt",
@@ -1986,6 +2001,7 @@
   "chapter": 19,
   "refs": [
    "sheet-brothers.png",
+   "ch19.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch19d.txt",
@@ -2004,14 +2020,18 @@
   "chapter": 20,
   "refs": [
    "sheet-brothers.png",
+   "ch20.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch20b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch20b.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou imitates Lacombe with a wool moustache in the minibus; the real Lacombe does not turn around.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch20c",
@@ -2019,14 +2039,18 @@
   "chapter": 20,
   "refs": [
    "sheet-brothers.png",
+   "ch20.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch20c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch20c.png",
+  "status": "approved, integrated",
+  "review": "Awa kneels and holds Kaydoudou's hands, BriBri holds him. Minor: BriBri wears red and yellow socks too (reads as solidarity).",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch20d",
@@ -2035,14 +2059,18 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch20.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch20d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch20d.png",
+  "status": "approved, integrated",
+  "review": "Papa holds Kaydoudou in a long hug in the car park, Maman beside them, Lacombe watching by the minibus.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch21b",
@@ -2054,11 +2082,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch21b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch21b.png",
+  "status": "approved, integrated",
+  "review": "The emergency room: Kaydoudou lifts his new white cast toward the laughing nurse, Maman and BriBri relieved.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch21c",
@@ -2069,11 +2100,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch21c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch21c.png",
+  "status": "approved, integrated",
+  "review": "BriBri's voice cracks, Mathis looks for the bird, three boys laugh in the grass, Lacombe hides his smile.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch21d",
