@@ -9,8 +9,8 @@ export default function MolaAvatar({ size = 36, busy = false, ring = true, class
       {ring && !busy && <span className="mola-ring" />}
       {busy && (
         <svg className="mola-arc" viewBox="0 0 40 40" aria-hidden="true">
-          <circle cx="20" cy="20" r="18.6" fill="none" stroke="rgba(245,183,0,.22)" strokeWidth="1.6" />
-          <circle cx="20" cy="20" r="18.6" fill="none" stroke="#F5B700" strokeWidth="2.2" strokeLinecap="round" strokeDasharray="24 93" />
+          <circle cx="20" cy="20" r="18.6" fill="none" stroke="rgba(245,183,0,.22)" strokeWidth="1.5" vectorEffect="non-scaling-stroke" />
+          <circle cx="20" cy="20" r="18.6" fill="none" stroke="#F5B700" strokeWidth="2.25" strokeLinecap="round" strokeDasharray="24 93" vectorEffect="non-scaling-stroke" />
         </svg>
       )}
       <MolaBadge size={size} className="relative" />
