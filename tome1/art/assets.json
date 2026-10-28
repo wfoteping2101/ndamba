@@ -178,11 +178,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/part2.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/part2.png",
+  "status": "approved, integrated",
   "review": "Waldorf street in snow at dusk; the taller brother in the red anorak, the small one kicking snow.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader (part opener)",
+   "PDF (part page)"
+  ]
  },
  {
   "id": "part3",
@@ -193,11 +196,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/part3.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/part3.png",
+  "status": "approved, integrated",
   "review": "Training ground by the Marne in autumn, barge and viaduct, star building; the brothers watch from the fence.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader (part opener)",
+   "PDF (part page)"
+  ]
  },
  {
   "id": "part4",
@@ -208,11 +214,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/part4.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/part4.png",
+  "status": "approved, integrated",
   "review": "Sunday rondo on the Catalan village square, church tower and sea.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader (part opener)",
+   "PDF (part page)"
+  ]
  },
  {
   "id": "part5",
@@ -223,11 +232,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/part5.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/part5.png",
+  "status": "approved, integrated",
   "review": "South London street in the rain, double-decker, floodlit academy pitch; the brothers in dark green tracksuits.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader (part opener)",
+   "PDF (part page)"
+  ]
  },
  {
   "id": "ch01",
@@ -278,11 +290,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch03.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch03.png",
+  "status": "approved, integrated",
   "review": "Tonton Fokou on the yellow jerrycan between the two brothers back to back; Mireille behind.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch04",
@@ -867,11 +883,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch01b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch01b.png",
+  "status": "approved, integrated",
   "review": "Kaydoudou mid-dribble, red sock right, yellow left, gap tooth; ball without patch before ch02.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch01c",
@@ -883,11 +902,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch01c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch01c.png",
+  "status": "approved, integrated",
   "review": "BriBri number 8 strikes; part line on his left.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch01d",
@@ -900,11 +922,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch01d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch01d.png",
+  "status": "approved, integrated",
   "review": "Papa in the blue shirt; Kaydoudou on the plastic chair with the burst ball, red sock right; BriBri in the doorway.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch02b",
@@ -917,11 +942,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch02b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch02b.png",
+  "status": "approved, integrated",
   "review": "Vulcanisateur and the bladder; Kaydoudou leaning in, red sock right; Papa behind.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch02c",
@@ -933,11 +961,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch02c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch02c.png",
+  "status": "approved, integrated",
   "review": "Fog match on the hillside; Kaydoudou with red sock right.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch02d",
@@ -950,11 +981,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch02d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch02d.png",
+  "status": "approved, integrated",
   "review": "The njangi women, Mami hands the box; the brothers on the bench.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch03b",
@@ -965,11 +999,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch03b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch03b.png",
+  "status": "approved, integrated",
   "review": "Bulldozer's entrance; Kaydoudou holds the patched ball, BriBri number 8.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch03c",
@@ -980,11 +1017,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch03c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch03c.png",
+  "status": "approved, integrated",
   "review": "Kaydoudou squeezed by two blue Requins; BriBri open in the distance.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch03d",
@@ -995,9 +1035,9 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch03d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch03d.png",
+  "status": "redo",
   "review": "Close-up of BriBri seen from his right side with the shaved part on the RIGHT: the part must be on his left. Regenerate.",
   "integrated_in": []
  },
@@ -1011,11 +1051,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch04b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch04b.png",
+  "status": "approved, integrated",
   "review": "Kaydoudou slides in the red mud, red sock right.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch04c",
@@ -1027,11 +1070,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch04c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch04c.png",
+  "status": "approved, integrated",
   "review": "The two steps of the ghost in the mud. Seen from behind, BriBri shows the part on his right side: minor, accepted.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch04d",
@@ -1043,11 +1089,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch04d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch04d.png",
+  "status": "approved, integrated",
   "review": "Mud celebration; BriBri bicycle kick, Kaydoudou jumping, red sock right.",
-  "integrated_in": []
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch05b",

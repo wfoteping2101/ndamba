@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 // Brings generated masters into the project and writes the production log tome1/art/assets.json.
 //   node tools/sync_art.mjs [stagedDir]
-// stagedDir defaults to /mnt/user-data/uploads/BriBri-Kaydoudou/illustrations (files staged from the generation PC).
+// stagedDir defaults to /mnt/user-data/uploads/Kaydoudou-BriBri/illustrations (files staged from the generation PC).
 // Review decisions live in tome1/art/review.json: { "ch12": { "status": "approved" | "redo", "note": "..." } }.
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 const here = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(here, '..')
-const STAGED = process.argv[2] || '/mnt/user-data/uploads/BriBri-Kaydoudou/illustrations'
+const STAGED = process.argv[2] || '/mnt/user-data/uploads/Kaydoudou-BriBri/illustrations'
 const ILL = path.join(ROOT, 'tome1', 'illustrations')
 const MASTERS = path.join(ILL, '_masters')
 fs.mkdirSync(MASTERS, { recursive: true })
