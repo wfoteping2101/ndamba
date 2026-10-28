@@ -180,7 +180,10 @@ export function renderDiagram(spec, opts = {}) {
   const players = spec.players || []
   const pr = Math.max(9, Math.min(15, s * (spec.view === 'grid' ? 0.9 : 1.55)))
   const font = opts.font || "Inter, 'Helvetica Neue', Arial, sans-serif"
-  const uid = 'd' + Math.random().toString(36).slice(2, 8)
+  // deterministic id (same diagram, same markup: no noisy diffs between builds)
+  let hh = 2166136261
+  for (const ch of JSON.stringify(spec) + '|' + targetW) { hh ^= ch.charCodeAt(0); hh = Math.imul(hh, 16777619) >>> 0 }
+  const uid = 'd' + hh.toString(36)
   const out = []
   const title = opts.title ? `<title>${esc(opts.title)}</title>` : ''
   out.push(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${Hh}" width="${W}" height="${Hh}" role="img" font-family="${esc(font)}">${title}`)
