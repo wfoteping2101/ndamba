@@ -74,7 +74,7 @@ La maison de Waldorf est petite et beige. Le premier soir, BriBri remonte du sou
 
 « Wouf ! »
 
-BriBri s'avance, très poli.
+BriBri, toujours en pyjama, s'avance, très poli.
 
 « Thank you, madame. I am BriBri. I like very much your snow. It is delicious. »
 
@@ -170,7 +170,7 @@ Dans le bus du retour, BriBri rebondit sur son siège.
 
 « Oui. Et maintenant, tout le monde me connaît ! »
 
-Il garde le carton dans sa poche toute la semaine.
+Il garde le carton toute la semaine.
 
 * * *
 
