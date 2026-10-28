@@ -8,173 +8,321 @@ resume: BriBri déteste les chiffres, mais Marcus Bell a compté tous ses dribbl
 illustration: Plan moyen sur un terrain d'herbe du Maryland, un samedi de printemps ensoleillé, arbres en fleurs blanches au fond. Au premier plan, BriBri, maillot bleu marine numéro 33, petite afro, une chaussette rouge et une chaussette jaune, conduit le ballon près de la surface, et deux défenseurs en maillots orange foncent sur lui en même temps. Il ne les regarde pas : ses yeux et son pied droit visent déjà, de l'autre côté, Tyler Brooks, grand garçon blond seul au point de penalty, les bras ouverts. Lumière dorée, mouvement, suspense.
 ---
 
-Pour BriBri, les chiffres, c'était comme les moustiques : petits, nombreux, et toujours là quand on voulait être tranquille.
-
-À l'école, ils se cachaient dans les problèmes de maths de Mrs. Kowalski, sa maîtresse : « If Jenny has seventeen apples and gives away nine... » BriBri se demandait toujours pourquoi Jenny ne mangeait pas ses pommes au lieu d'embêter tout le monde avec. Au football, il croyait les chiffres à l'abri. Le football, c'était le ballon, la terre rouge, le bruit des crampons, les cris. Pas des pommes.
-
-Et puis il y avait eu Marcus Bell.
-
-Le mercredi qui suivit le deuxième match de la saison (un 1-1 contre une équipe de Bowie où BriBri avait dribblé tout le monde et marqué zéro but), Marcus l'attendait au bord du terrain, assis sur la glacière des ballons, sa tablette sur les genoux.
-
 « Hey, thirty-three. Got a minute ? »
 
-BriBri regarda autour de lui. Kaydoudou était parti remplir sa gourde. Diego faisait des jongles en racontant une histoire à personne. Aucune issue.
+BriBri se fige. Trop tard pour fuir.
 
-« I don't like numbers, prévint BriBri. Numbers don't like me. »
+Marcus Bell est assis sur la glacière des ballons, la tablette sur les genoux. Il a le sourire gentil des gens qui vont vous dire une chose terrible.
 
-« Then let's make friends », dit Marcus en souriant.
+*Le dossier*, pense BriBri. *Kaydoudou m'a prévenu. Monsieur Tablette a un dossier sur moi.*
 
-Il tourna la tablette vers lui. Il y avait un terrain dessiné, et dessus, des petites croix rouges et des petits ronds verts. Beaucoup de croix rouges.
+« I don't like numbers, prévient-il. Numbers don't like me. »
 
-« Saturday, you tried twenty-three dribbles. »
+« Then let's make friends. »
 
-Il compta sur ses doigts, avec BriBri, pour être sûr qu'il comprenait. Vingt-trois. BriBri se sentit plutôt fier. Vingt-trois, c'était beaucoup. C'était presque un record.
+Pour BriBri, les chiffres, c'est comme les moustiques : petits, nombreux, et toujours là quand on veut être tranquille. Ils se cachent même dans les problèmes de Mrs. Kowalski, sa maîtresse. Jenny a dix-sept pommes, elle en donne neuf... *Mange-les, Jenny !*
+
+« Diego ! appelle BriBri. Viens traduire ! Vite ! »
+
+Diego arrive en jonglant.
+
+« He speaks French, bro. A little. »
+
+« Un petit peu », dit Marcus, avec son accent qui roule les r comme des billes. « Assis, BriBri. »
+
+« Bowie, samedi. 1-1. »
+
+« Tu as dribblé tout le monde, bro, ajoute Diego. Et tu as marqué zéro but. »
+
+« Merci, Diego. »
+
+Marcus tourne la tablette. Un terrain dessiné, couvert de croix rouges et de quelques ronds verts.
+
+« Tu as essayé... twenty-three dribbles », dit Marcus en cherchant ses mots.
+
+« Vingt-trois ! » BriBri bombe le torse. « C'est presque un record ! »
 
 « Seventeen lost. »
 
-Dix-sept croix rouges. Dix-sept fois, le ballon était parti chez l'adversaire. BriBri fit la grimace de quelqu'un qui croque dans un piment par erreur. C'était encore pire que Jenny et ses pommes.
+« Dix-sept perdus, traduit Diego. Ouch. »
 
-« Wait, wait, dit Marcus en levant la main. Now the good part. »
+BriBri fait la grimace de quelqu'un qui croque un piment par erreur.
 
-Il toucha l'écran. Toutes les croix disparurent. Il ne resta que quatre ronds verts, entourés d'un cercle jaune.
+« C'est pire que Jenny et ses pommes. »
 
-« Four times, you did something special. You dribbled, and two defenders came to you. Two at the same time. »
+« Who is Jenny ? » demande Marcus.
 
-BriBri fronça les sourcils. Deux défenseurs. Il se souvenait vaguement. Il se souvenait surtout des beaux dribbles : la roulette au milieu du terrain, le crochet qui avait fait tomber un défenseur sur les fesses, le coup du sombrero raté.
+« Laisse, dit Diego. C'est compliqué. »
 
-« And three of those four times, continua Marcus, one of your teammates got a shot. Because you made two players come to you. So somebody else was free. »
+« Okay. Now... the good part. »
 
-Il lança la vidéo. On voyait BriBri, sur le côté droit, qui conduisait le ballon de façon franchement pas belle : il trébuchait à moitié, le ballon trop loin devant lui, les bras dans tous les sens comme un épouvantail dans le vent. Mais deux joueurs de Bowie se jetaient sur lui en même temps. Et derrière eux, Diego arrivait tout seul. BriBri lui donnait le ballon presque par accident, et Diego frappait, juste à côté du poteau.
+Marcus touche l'écran. Les croix disparaissent. Il reste quatre ronds verts, entourés de jaune.
 
-« Celui-là ? s'indigna BriBri. Mais il est moche ! Je l'avais même oublié. »
+« Quatre fois, dit-il lentement, tu as fait une chose... spéciale. Tu dribbles. Et deux défenseurs viennent sur toi. Deux. En même temps. »
 
-Marcus éclata de rire, puis il dit la phrase, lentement, en français, avec son accent qui faisait rouler les r. Il avait dû la préparer, parce qu'il la récita comme une poésie.
+« Deux ? Je me souviens pas. »
+
+« Toi, tu te souviens que des beaux », dit Diego.
+
+« Normal ! Les beaux, c'est les meilleurs ! La roulette au milieu du terrain ! Le crochet du margouillat, quand le défenseur est tombé sur les fesses ! Et le sombrero... Bon. Le sombrero, je l'ai raté. »
+
+« And three times out of four, dit Marcus, a teammate got a shot. Because two players came to you. So somebody was free. »
+
+« Trois fois sur quatre, un copain a pu tirer, traduit Diego. Parce que deux joueurs sont venus sur toi. Donc quelqu'un était seul. »
+
+« Look », dit Marcus. Et il lance la vidéo.
+
+« C'est qui, ce garçon ? demande BriBri. Il court comme un épouvantail dans le vent ! Il trébuche. Le ballon part trop loin. Regarde ses bras ! Il est nul ! »
+
+« C'est toi, bro. »
+
+« ... Ah. »
+
+« Et maintenant, regarde, dit Diego. Deux joueurs sautent sur l'épouvantail. Et qui arrive tout seul derrière ? Moi ! Tu me donnes le ballon, presque par accident. Et je frappe... juste à côté. Sorry. »
+
+« Celui-là ? s'indigne BriBri. Mais il est moche ! Je l'avais même oublié ! »
+
+Marcus rit. Puis il récite une phrase en français. Il a dû la préparer, parce qu'il la dit comme une poésie.
 
 « Ton dribble le plus utile n'est pas le plus beau. C'est celui qui fait venir deux joueurs vers toi. »
 
-BriBri resta silencieux. Il pensait à la terre rouge, aux Requins de Bépanda qui l'enfermaient à deux, encore et encore. À l'époque, être serré par deux joueurs, c'était une prison. Marcus disait que c'était une clé.
+BriBri se tait.
+
+Il pense aux Requins de Bépanda, qui l'enfermaient à deux, encore et encore. À l'époque, deux joueurs sur lui, c'était une prison. Marcus dit que c'est une clé.
 
 « Deux joueurs sur moi, dit-il lentement, ça veut dire un copain tout seul. »
 
-« Exactly. » Marcus leva le pouce. « You are a magnet, BriBri. A magnet. »
+« Exactly ! You are a magnet, BriBri. »
 
 « A what ? »
 
-Marcus chercha le mot, puis montra le réfrigérateur de la petite cuisine du dôme, couvert de calendriers et de dessins tenus par de petits objets colorés.
+Marcus montre le frigo de la petite cuisine du dôme, couvert de dessins tenus par de petits objets colorés.
 
-« Un aimant ! s'écria BriBri. Je suis un aimant. »
+« Un aimant ! crie BriBri. Je suis un aimant ! »
 
-Ça, ça lui plaisait. Un aimant à défenseurs. Il faillit demander une cape.
+Il met la main devant la bouche, comme Radio à Bonamoussadi, avec son micro imaginaire.
+
+« Mesdames et messieurs, voici le nouveau coup spécial de BriBri Ngassa... L'AIMANT ! »
+
+« I don't understand, dit Marcus. But I like it. »
+
+« Bro, dit Diego. You need a cape. »
+
+« Oui ! Une cape rouge et jaune ! »
 
 * * *
 
-Le problème, c'est qu'un aimant ne sert à rien si personne ne vient chercher ce qu'il attire. Et le problème avait un nom : Tyler Brooks.
+Le problème, c'est qu'un aimant ne sert à rien si personne ne vient chercher ce qu'il attire.
 
-Tyler ne passait jamais. Jamais. Quand il avait le ballon, il frappait, de n'importe où, de trente mètres, en pivotant, du mauvais pied, les yeux fermés. Et quand il ne l'avait pas, il levait les bras en hurlant « Here ! Here ! » comme si tout le terrain lui devait de l'argent.
+Et le problème a un nom. Tyler Brooks.
 
-À l'entraînement du jeudi, pendant le petit match de fin de séance, BriBri dribbla deux joueurs, puis un troisième, et perdit le ballon. Tyler, tout seul au point de penalty, frappa du pied dans l'herbe.
+« Tyler ne passe jamais, se plaint BriBri à son frère, le soir. Jamais ! Il frappe de trente mètres. Du mauvais pied. En tournant sur lui-même. Et quand il n'a pas le ballon, il crie here, here, comme si on lui devait de l'argent ! »
+
+« Ça me rappelle quelqu'un », dit Kaydoudou.
+
+« Qui ? »
+
+Kaydoudou ne répond pas. Il sourit dans son livre.
+
+Jeudi, petit match de fin d'entraînement. BriBri essaie l'aimant. Un défenseur vient. Un deuxième.
+
+*Ça marche !*
+
+Il devrait passer. Mais il y a un troisième défenseur, juste devant. Tellement tentant.
+
+*Encore un. Juste un.*
+
+Crochet. Raté. Ballon perdu.
+
+Tyler, seul au point de penalty, tape du pied dans l'herbe en plastique.
 
 « Pass the ball, man ! You never pass ! »
 
-BriBri n'en revint pas. C'était l'hôpital qui se moquait de la charité, comme disait Maman. Deux minutes plus tard, Tyler récupéra le ballon, ignora Diego démarqué à gauche, ignora BriBri démarqué à droite, et tira dans les nuages, si haut que le ballon rebondit contre le toit du dôme.
+« C'est l'hôpital qui se moque de la charité ! » s'étrangle BriBri.
 
-« Et toi ? cria BriBri en français. Toi, tu passes ? Tu ne passes même pas le sel à table, je suis sûr ! »
+« The what ? » demande Diego.
 
-« What did he say ? » demanda Tyler à Diego.
+« C'est Maman qui dit ça. Il fait pareil, et c'est lui qui se plaint ! »
 
-Diego réfléchit un moment, très diplomate.
+Deux minutes plus tard, Tyler récupère le ballon. Il ignore Diego, seul à gauche. Il ignore BriBri, seul à droite. Il tire dans les nuages. Boum, le toit du dôme.
+
+« Et toi ? crie BriBri en français. Tu passes, toi ? Tu ne passes même pas le sel à table, je suis sûr ! »
+
+« What did he say ? » demande Tyler à Diego.
+
+Diego choisit ses mots avec soin.
 
 « He says you're a great shooter. »
 
-« Diego, protesta BriBri. Traduis bien ! »
+« Diego ! Traduis bien ! »
 
 « Bro, I'm saving your life. »
 
-Kaydoudou, qui passait par là, dit sans s'arrêter, avec sa tête de pince-sans-rire :
+Kaydoudou passe à côté avec sa gourde. Il ne s'arrête même pas.
 
-« Le dribbleur qui ne passe pas engueule l'attaquant qui ne passe pas. On devrait vendre des billets. »
+« Le dribbleur qui ne passe jamais crie sur l'attaquant qui ne passe jamais. On devrait vendre des billets. »
 
-Coach Whitfield siffla. Elle avait tout vu. Elle fit ranger les cônes à Tyler et à BriBri, ensemble, tous les cinquante, pendant que les autres buvaient. Ils les ramassèrent sans un mot, chacun d'un côté du terrain, en évitant soigneusement de se regarder. À la fin, il n'en restait qu'un, au milieu, et ils se baissèrent en même temps pour le prendre. Leurs têtes se cognèrent.
+Tuuut !
+
+« Brooks ! Thirty-three ! crie Coach Whitfield. Cones. Together. All of them ! »
+
+« All of them ? » gémit Tyler.
+
+« ALL of them. »
+
+Cinquante cônes, à ramasser à deux, pendant que les autres boivent. Pas un mot. Pas un regard. À la fin, il en reste un seul, au milieu. Ils se baissent en même temps.
+
+Bonk !
 
 « Ow ! »
 
 « Aïe ! »
 
-Ils se frottèrent le front, et pendant une seconde, BriBri crut que Tyler allait rire. Mais Tyler jeta le cône dans le sac et partit.
+Ils se frottent le front. Une seconde, BriBri croit que Tyler va rire. Mais Tyler jette le cône dans le sac et s'en va.
 
 * * *
 
-Le samedi suivant, Potomac Valley jouait contre les Frederick Foxes, une équipe en maillots orange foncé. Les arbres, autour du terrain, s'étaient couverts de fleurs blanches qui sentaient le miel et un peu les chaussettes. Il faisait doux. BriBri se sentait léger.
+Samedi suivant. Potomac Valley contre les Frederick Foxes, en maillots orange. Autour du terrain, les arbres sont couverts de fleurs blanches qui sentent le miel. Le soleil du matin rend tout doré.
 
-À la 35e minute, il était 0-0. Kaydoudou reçut le ballon au milieu, regarda, et le glissa dans la course de BriBri sur le côté droit. BriBri partit vers la surface. Un défenseur orange vint à sa rencontre. Puis BriBri vit, du coin de l'œil, un deuxième défenseur lâcher son attaquant pour venir aussi. Deux. Deux défenseurs sur lui en même temps.
+Avant le coup d'envoi, BriBri croise le regard de son frère. Poing contre poing. Main sur le cœur.
 
-À Douala, il aurait foncé dans le mur, pour voir s'il pouvait passer quand même.
+« Aujourd'hui, l'aimant », souffle BriBri.
 
-Mais BriBri entendit la voix de Marcus dans sa tête. Un aimant. Il ralentit, au lieu d'accélérer. Il fit semblant de partir vers la ligne de fond, un petit pas, une épaule. Les deux défenseurs mordirent ensemble, comme deux poissons sur le même hameçon. BriBri ne les regardait même plus : ses yeux étaient déjà de l'autre côté. Et l'attaquant que le deuxième défenseur avait lâché, c'était Tyler. Tyler, seul au point de penalty. Tyler, les bras ouverts, la bouche ouverte, et pour une fois, il ne criait rien du tout, parce qu'il n'en croyait pas ses yeux.
+« Et aujourd'hui, tu passes », répond Kaydoudou.
 
-BriBri lui donna le ballon. Une passe toute simple, à ras de terre, de l'intérieur du pied droit.
+« Si Tyler est seul. »
 
-Tyler n'eut qu'à frapper. 1-0.
+« Il sera seul. Fais-moi confiance. »
 
-Il y eut des cris sur la ligne de touche. Papa se leva si vite que son bonnet tricoté tomba dans l'herbe. Diego sauta sur le dos de Kaydoudou. Et Tyler se retourna. Il chercha BriBri des yeux. Il avait l'air gêné, comme quelqu'un qui a reçu un cadeau le jour où il n'avait rien acheté pour personne. Il s'approcha à petits pas, leva la main, la baissa, la leva de nouveau.
+35e minute. 0-0.
 
-BriBri lui tapa dans la main.
+Kaydoudou reçoit au milieu. Il glisse le ballon dans la course de BriBri, sur le côté droit.
 
-« Nice pass », marmonna Tyler, en regardant ses chaussures.
+« Go, thirty-three ! » crie Coach Whitfield.
+
+BriBri file vers la surface. Un défenseur orange vient. Puis, du coin de l'œil, il en voit un deuxième lâcher son attaquant. Il vient aussi.
+
+Deux. Deux défenseurs sur lui en même temps.
+
+Et le temps ralentit.
+
+BriBri entend son souffle. Les crampons orange qui arrachent l'herbe. Une abeille, dans les fleurs blanches. Papa qui crie « Allez ! », très loin, comme sous l'eau.
+
+À Douala, il aurait foncé dans le mur. Pour voir.
+
+*Deux joueurs sur toi*, dit la voix de Marcus dans sa tête. *Un copain tout seul.*
+
+Alors BriBri ne fonce pas. Il ralentit. Un petit pas vers la ligne de fond. Une épaule. Les deux défenseurs mordent ensemble, comme deux poissons sur le même hameçon.
+
+BriBri ne les regarde plus. Ses yeux sont déjà de l'autre côté. Son pied droit aussi.
+
+Là-bas, au point de penalty, il y a Tyler. Tout seul. Les bras ouverts. La bouche ouverte. Pour une fois, il ne crie rien. Il n'en croit pas ses yeux.
+
+*Tiens*, pense BriBri. *Je te passe le sel.*
+
+Intérieur du pied droit. À ras de terre.
+
+Le temps repart d'un coup.
+
+Tyler frappe. Chhh ! 1-0.
+
+Sur la ligne, Papa se lève si vite que son bonnet tombe dans l'herbe. Diego saute sur le dos de Kaydoudou.
+
+« Magnet ! » crie Marcus, la tablette en l'air.
+
+« L'AIMAAANT ! hurle BriBri, la main devant la bouche. L'aimant de Bonamoussadi frappe en Amérique ! »
+
+Tyler se retourne. Il a l'air gêné, comme quelqu'un qui reçoit un cadeau le jour où il n'a rien acheté pour personne. Il lève la main. La baisse. La relève.
+
+BriBri tape dedans.
+
+« Nice pass », marmonne Tyler, en regardant ses chaussures.
 
 « Nice goal », dit BriBri, en regardant les siennes.
 
-Ils restèrent comme ça une seconde, deux idiots qui fixaient leurs crampons. Puis Tyler repartit vers le rond central en courant. BriBri remarqua que, pendant tout le reste du match, chaque fois qu'il avait le ballon, Tyler criait « Here ! » un peu moins fort. Et une fois, une fois seulement, il fit une passe à Diego.
+Puis Tyler repart en courant. Tout le reste du match, il crie « Here ! » un peu moins fort. Et une fois, une seule, il fait une passe à Diego.
 
-Potomac Valley gagna 2-0.
+« Did you see that ? hurle Diego. He passed ! Tyler passed ! Call the TV ! »
 
-* * *
-
-Le soir, le téléphone de Maman vibra pendant le dîner. Un message vocal, envoyé depuis Douala.
-
-Maman monta le son, et d'un coup, la cuisine de Waldorf se remplit de klaxons. Des klaxons de benskins, aigus, pressés, qui se répondaient comme des oiseaux. Une marchande qui criait « Arachides, arachides ! ». De la musique au loin. Et, par-dessus tout ça, une voix qu'ils connaissaient par cœur.
-
-« On dit quoi, les Américains ? C'est Mireille ! Vous êtes déjà devenus blancs à cause de la neige ? »
-
-BriBri éclata de rire si fort qu'il avala de travers.
-
-Mireille parlait vite, comme elle courait. Le tournoi de saison sèche avait commencé. Tonton Fokou criait toujours « Le ballon doit voyager ! », et son sifflet en bois faisait toujours « houou », comme un hibou enrhumé. Ousmane portait toujours le bracelet, il ne l'enlevait même pas pour se laver. Et les Lionceaux avaient un nouveau gardien remplaçant, un tout petit de huit ans qui s'appelait Ange et qui plongeait même quand le ballon allait à côté. « Ousmane l'entraîne. Il dit qu'il a des mains de crevette, mais un cœur de lion. » Puis il y eut un énorme klaxon, juste à côté du téléphone, et Mireille cria : « Eh, benskineur, tu veux me tuer ? » Et le message s'arrêta.
-
-Dans la cuisine, personne ne parla pendant un moment.
-
-BriBri riait encore. Mais quelque chose, au fond de lui, s'était mis à pleurer en même temps, sans prévenir. Un nouveau gardien. Un petit Ange qu'il ne connaissait pas, sur la terre rouge, sous le manguier, avec son ami Ousmane. La vie de Bonamoussadi continuait sans lui. Elle n'attendait personne.
-
-Il descendit au sous-sol et prit le ballon de Mami. Il le serra contre lui longtemps, le nez dans le carré de pagne, sous l'ampoule qui ne bougeait pas. Il était content. Il était triste. Il ne savait pas qu'on pouvait être les deux à la fois, comme une chaussette rouge et une chaussette jaune.
+Potomac Valley gagne 2-0.
 
 * * *
 
-Le jeudi, à la fin de l'entraînement, Tyler l'attendait près de la porte tournante, les mains dans les poches.
+Le soir, le téléphone de Maman vibre. Un message vocal de Douala. Maman monte le son. D'un coup, la cuisine se remplit de klaxons. Pin-pin ! Pin-pin ! Une marchande chante « Arachides, arachides ! ». Et par-dessus, une voix qu'ils connaissent par cœur.
+
+« On dit quoi, les Américains ? C'est Mireille ! Vous êtes devenus des bonshommes de neige, ou quoi ? »
+
+BriBri éclate de rire si fort qu'il avale de travers.
+
+« Le tournoi de saison sèche a commencé ! Tonton Fokou crie toujours que le ballon doit voyager. Son sifflet fait toujours houou, comme un hibou enrhumé. Ousmane ne quitte pas ton bracelet, BriBri. Même pas pour se laver ! Et on a un nouveau gardien remplaçant. Ange. Il a huit ans. Il plonge même quand le ballon va à côté. Ousmane l'entraîne. Il dit qu'il a des mains de crevette, mais un cœur de lion. »
+
+Pin-piiiiin ! Un énorme klaxon, juste à côté du téléphone.
+
+« Eh, benskineur, tu veux me tuer ? »
+
+Le message s'arrête.
+
+Dans la cuisine, personne ne parle.
+
+BriBri rit encore. Mais au fond de lui, quelque chose s'est mis à pleurer en même temps.
+
+« Un nouveau gardien, dit-il tout bas. Ange. Je le connais même pas. »
+
+« Ils ne t'oublient pas, mon lion, dit Maman. Tu as entendu ? Ousmane porte ton bracelet. »
+
+« Mais ils jouent sans moi. Le manguier, la terre rouge... tout continue. Ça n'attend personne. »
+
+Il descend au sous-sol. Il prend le ballon de Mami. Il le serre contre lui, longtemps, le nez dans le carré de pagne, sous l'ampoule nue.
+
+Kaydoudou descend et s'assoit à côté de lui. Longtemps, il ne dit rien. Puis :
+
+« Ange, c'est un bon nom pour un gardien. »
+
+« Pourquoi ? »
+
+« Il a des ailes. »
+
+BriBri rit, le nez encore dans le pagne.
+
+Il est content. Il est triste. Il ne savait pas qu'on pouvait être les deux à la fois. Comme une chaussette rouge et une chaussette jaune.
+
+* * *
+
+Jeudi, fin de l'entraînement. Tyler l'attend près de la porte tournante, les mains dans les poches.
 
 « Hey. Uh. You wanna come to my house on Sunday ? I've got the new soccer video game. »
 
-BriBri le regarda. Il le regarda longtemps. Puis il sourit, de toutes ses dents, avec le petit écart du bonheur au milieu.
+BriBri le regarde longtemps. Puis il sourit de toutes ses dents, avec le petit écart du bonheur au milieu.
 
 « Okay. But one condition. »
 
 « What ? »
 
-BriBri souleva le bas de son survêtement. Une chaussette rouge. Une chaussette jaune.
+BriBri remonte le bas de son survêtement. Une chaussette rouge. Une chaussette jaune.
 
 « Next match, you wear the socks. »
 
-Tyler devint aussi rouge que la chaussette droite.
+Tyler devient aussi rouge que la chaussette droite.
 
 « No way. »
 
 « Then no video game. »
 
-Tyler regarda le plafond blanc du dôme. Il regarda la porte. Il regarda ses propres chaussettes noires, si bien tirées.
+« Come on, man ! »
+
+« Socks. Or no game. »
+
+Tyler regarde le plafond du dôme. Il regarde la porte. Il regarde ses chaussettes noires, si bien tirées.
 
 « ... Fine. »
 
-Le samedi suivant, sur le parking, toute l'équipe de Potomac Valley vit arriver Tyler Brooks, le meilleur attaquant de l'académie, la plus grande bouche du Maryland. Il marchait vite, la tête basse, son sac sur l'épaule. Une chaussette rouge à la jambe gauche. Une chaussette jaune à la jambe droite. À l'envers, d'ailleurs, mais personne n'osa le lui dire.
+Le samedi, sur le parking, toute l'équipe voit arriver Tyler Brooks. Le meilleur attaquant de l'académie. La plus grande bouche du Maryland. Il marche vite, la tête basse.
 
-Diego en lâcha son ballon.
+Une chaussette rouge à la jambe gauche. Une chaussette jaune à la jambe droite.
+
+À l'envers. Mais personne n'ose le lui dire.
+
+Diego en lâche son ballon.
 
 > [!CARNET] Leçon du Ballon n°12 : Dribbler pour attirer
 > BriBri déteste les chiffres, alors je les écris pour lui :

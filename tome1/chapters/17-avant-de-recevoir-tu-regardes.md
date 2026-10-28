@@ -8,11 +8,13 @@ resume: Les Ngassa s'installent à Bussy-Saint-Georges, où tout le monde parle 
 illustration: Plan moyen sur un terrain synthétique au bord de la Marne, fin d'après-midi de septembre, lumière dorée et rasante, une péniche floue au loin. Au premier plan, Kaydoudou, mince, fine raie dessinée à gauche, chasuble orange par-dessus son vieux maillot vert numéro 8, se retourne trop tard : un garçon aux boucles brunes et aux crampons très blancs lui chipe le ballon dans le dos. À deux pas, Monsieur Lacombe, survêtement bleu marine, moustache grise taillée en brosse, sifflet en métal aux lèvres, lève une main pour arrêter le jeu. Au fond, petit et flou, BriBri sur la pointe des pieds, chaussettes rouge et jaune, la bouche ouverte.
 ---
 
-Il y avait deux barres de chocolat dedans, et BriBri en fut si bouleversé qu'il dut s'asseoir sur une marche de l'escalier.
+« Kaydoudou. Il y en a DEUX. »
 
-« Deux, Kaydoudou. Pas une. Deux. »
+BriBri s'assoit d'un coup sur une marche de l'escalier. Il tient son pain au chocolat ouvert à deux mains, comme un oisillon tombé du nid.
 
-Il tenait le pain au chocolat à deux mains, comme on tient un oisillon tombé du nid, et il l'avait ouvert pour regarder à l'intérieur. Les feuilles de pâte dorée s'étaient défaites en mille miettes qui crissaient sur son pull. Kaydoudou, trois marches plus haut, la baguette sous le bras, attendait la suite. Avec BriBri, il y avait toujours une suite.
+« Deux barres de chocolat. Pas une. Deux. »
+
+Kaydoudou, trois marches plus haut, la baguette sous le bras, attend la suite. Avec BriBri, il y a toujours une suite.
 
 « Quelqu'un, dans ce pays, s'est dit : une seule barre, c'est triste. Mettons-en deux. Tu te rends compte ? Quelqu'un a pensé à nous. »
 
@@ -20,119 +22,289 @@ Il tenait le pain au chocolat à deux mains, comme on tient un oisillon tombé d
 
 « Il me connaissait dans son cœur. »
 
-C'était leur premier matin en France. Papa les avait envoyés à la boulangerie du coin avec un billet et une mission : une baguette et deux pains au chocolat. La boulangère avait des joues de brioche et de la farine jusque dans les sourcils. Elle avait dit : « Bonjour, les garçons, qu'est-ce que je vous sers ? » Puis : « Et avec ceci ? » Et Kaydoudou avait compris chaque mot, sans chercher, sans ce petit nœud dans la gorge qu'il avait eu pendant huit mois en Amérique. Après tout cet anglais qu'il fallait escalader comme un mur, le français était une porte grande ouverte. Il en avait eu les yeux qui piquent, devant la vitrine, et il avait fait semblant que c'était la chaleur du four.
+« Mange-le, au lieu de lui parler. »
 
-BriBri, lui, ne parla pas de la langue. Il parla du pain au chocolat. Il en parla dans l'escalier, sur le palier, puis pendant tout le petit déjeuner, la bouche pleine. Il expliqua à Papa le bruit que faisait la pâte sous les dents, « comme des feuilles mortes, mais qui se mangent ». Il expliqua à Maman qu'il fallait manger le bout sans chocolat en premier, « comme au foot, on garde le but pour la fin ». Il demanda à Papa pourquoi il avait gardé ce secret pendant onze ans. Il proposa d'écrire à Mami pour que le njangi des femmes de Bafoussam ouvre une boulangerie. Il calcula combien de pains au chocolat on pouvait acheter avec un mois d'argent de poche, et le résultat le rendit tout pâle.
+« Pas tout de suite. D'abord, je le regarde. »
+
+C'est leur premier matin en France. Papa les a envoyés chercher le pain.
+
+« Tu as vu la dame ? dit BriBri. Des joues de brioche ! De la farine jusque dans les sourcils ! »
+
+« J'ai vu. Et elle a parlé, et j'ai tout compris. Sans chercher. »
+
+En Amérique, chaque phrase était un mur à escalader. Ici, la langue est une porte ouverte. Devant la vitrine, ses yeux ont piqué. Il a fait semblant que c'était la chaleur du four.
+
+« Moi aussi, j'ai tout compris, dit BriBri. Mais ça, c'est normal. Le pain au chocolat, ça, ce n'est pas normal. »
+
+Il en parle pendant tout le petit déjeuner.
+
+« Ça fait un bruit de feuilles mortes, Papa. Mais des feuilles mortes qui se mangent. »
+
+« Ah bon ? » dit Papa.
+
+« Et il faut manger le bout sans chocolat en premier, Maman. Comme au foot : on garde le but pour la fin. »
+
+« Très logique », dit Maman.
+
+« Papa, pourquoi tu nous as caché ça pendant onze ans ? »
+
+« Je gardais la surprise. »
+
+« Il faut écrire à Mami. Le njangi des femmes doit ouvrir une boulangerie à Bafoussam. »
+
+« Avec un mois d'argent de poche, on peut en acheter... » Il compte sur ses doigts. Il devient tout pâle. « Pas assez. Jamais assez. »
 
 « Tu as du chocolat sur le sourcil », dit Kaydoudou.
 
 « Je sais. Je le garde pour plus tard. »
 
-Maman rit si fort qu'elle renversa son café.
+Maman rit si fort qu'elle renverse son café. BriBri lève son pain au chocolat comme une coupe.
 
-L'appartement était au troisième étage d'un immeuble blanc, avec un petit balcon qui donnait sur la gare. Toutes les dix minutes, un RER A entrait en soufflant, long comme une rue et haut de deux étages (BriBri l'avait aussitôt baptisé « le train-immeuble »), puis repartait vers Paris en grondant. Bussy-Saint-Georges était une ville toute neuve, aux rues bien droites, et au loin, au-dessus des arbres, brillaient les toits dorés d'une pagode.
+« Un pays qui invente ça, son foot doit être magique. Il faut qu'on trouve une équipe, Kaydoudou. Vite. »
 
-Papa installait maintenant les réseaux d'une banque, dans les tours de verre de La Défense. Maman avait acheté un classeur neuf. « Troisième pays, troisième diplôme », avait-elle dit en riant.
+*Et cette fois*, pense Kaydoudou, *je comprendrai chaque mot du coach.*
 
-Le premier soir, Kaydoudou ouvrit le carnet de Tonton Fokou à une page blanche. Il écrivit tout en haut : France. Puis il resta longtemps le crayon en l'air. Il ne savait pas encore ce que ce pays allait lui apprendre.
+* * *
 
-À la rentrée, au collège, les frères découvrirent qu'on pouvait parler la même langue et ne pas la parler pareil. Quand Kaydoudou répondit à une question de maths en roulant un peu les r, comme on le fait à Douala, deux filles du fond pouffèrent. Ce n'était pas méchant ; il rougit quand même jusqu'aux oreilles. En sixième, BriBri salua son professeur principal d'un joyeux « On dit quoi, monsieur ? », toute la classe éclata de rire, le professeur aussi, et BriBri salua comme un artiste à la fin d'un spectacle.
+Le balcon de leur troisième étage donne sur la gare. Toutes les dix minutes, un RER A entre en soufflant, long comme une rue et haut de deux étages.
 
-Mais les frères, eux aussi, trouvaient que les gens d'ici parlaient drôlement. On disait « ouais » au lieu de oui, « grave » pour dire très, et « chelou » pour dire bizarre, ce qui était, selon BriBri, le mot le plus chelou de tous. Le soir, à table, BriBri imitait un garçon de sa classe, la voix traînante, le menton dans la main : « Ouais, nan, mais genre, c'est grave chelou, quoi. »
+« Le train-immeuble ! » crie BriBri chaque fois.
 
-« Ne te moque pas », dit Maman, qui riait.
+Papa installe les réseaux d'une banque, à La Défense. Maman a acheté un classeur neuf.
+
+« Troisième pays, troisième diplôme ! »
+
+Le premier soir, Kaydoudou ouvre le carnet à une page blanche. Tout en haut, il écrit : France. Il reste longtemps le crayon en l'air. Qu'est-ce que ce pays va lui apprendre ?
+
+À la rentrée, au collège, les frères découvrent un truc bizarre : on peut parler la même langue sans la parler pareil.
+
+« En maths, j'ai roulé les r, comme à Douala, raconte Kaydoudou le soir. Deux filles ont pouffé de rire. »
+
+« Elles étaient méchantes ? » demande Maman.
+
+« Non. Mais je suis devenu tout rouge. »
+
+« Moi, j'ai dit “On dit quoi, monsieur ?” à mon professeur principal, annonce BriBri. Il a répondu “Euh... Bonjour, jeune homme ?” Toute la classe a rigolé. Lui aussi. Alors j'ai salué, comme un artiste. »
+
+Puis il passe à la langue d'ici.
+
+« Ici, oui, ça se dit “ouais”. Très, ça se dit “grave”. Et bizarre, ça se dit “chelou”. »
+
+« Chelou ? » répète Papa.
+
+« C'est le mot le plus chelou du monde. » Il prend une voix traînante, le menton dans la main. « Ouais, nan, mais genre, c'est grave chelou, quoi. »
+
+« Ne te moque pas », dit Maman, qui rit.
 
 « Je ne me moque pas. J'apprends la langue. »
 
-Le collège avait une section sport-études avec l'Étoile Sportive de Marne, l'ESM, le club dont tous les garçons parlaient dans la cour. Ceux que le club choisissait finissaient les cours plus tôt et prenaient le RER pour aller s'entraîner. Papa avait obtenu un essai pour le mercredi suivant.
+Papa pose sa fourchette.
+
+« Le collège a une section sport-études avec un club, l'Étoile Sportive de Marne. L'ESM. Ceux qu'ils choisissent finissent les cours plus tôt et vont s'entraîner en RER. » Il sourit. « J'ai appelé. Essai mercredi. »
+
+BriBri fait tomber sa chaise.
 
 * * *
 
-Le centre de formation de l'ESM était à quelques stations de RER, au bord de la Marne : trois terrains synthétiques d'un vert presque trop vert, un bâtiment blanc avec une grande étoile peinte sur la façade, et la rivière, large et lente, où glissaient des péniches. Une trentaine de garçons attendaient le long de la main courante, cette barrière de métal qui fait le tour du terrain.
+Dans le RER, le mercredi, il ne tient pas en place.
 
-Monsieur Bertrand Lacombe arriva à seize heures pile, sous un soleil déjà doré. Il avait cinquante-cinq ans, un survêtement bleu marine, un sifflet en métal au bout d'un lacet, et une moustache grise, épaisse, taillée net comme une brosse à chaussures. Il ne dit pas bonjour. Il dit : « Chasubles. » Puis : « Huit contre huit. On garde le ballon. Allez. »
+« Et s'il ne nous prend pas ? »
 
-Kaydoudou enfila une chasuble orange par-dessus son vieux maillot vert, le numéro 8 au col blanc, celui de Bonamoussadi et de Waldorf. BriBri vérifia ses chaussettes, une rouge, une jaune, et se mit à sautiller sur la pointe des pieds.
+« Il nous prendra. »
 
-Pendant la première demi-heure, Kaydoudou remarqua une chose étrange : Monsieur Lacombe ne félicitait jamais personne. Un grand garçon réussit un lob magnifique par-dessus deux défenseurs ; Lacombe dit : « Suivant. » Un autre fit trois jongles avant de passer ; Lacombe demanda : « Pourquoi ? », et le garçon ne sut pas quoi répondre.
+« Et s'il prend juste toi ? »
 
-Puis le premier ballon arriva pour Kaydoudou.
+« Alors je dirai non. »
 
-Il le vit partir du pied d'un défenseur : une passe propre, au sol, un peu tendue. Il fit ce qu'il avait toujours fait. Il regarda le ballon venir, il ouvrit la cheville, il l'amortit parfaitement sous sa semelle, face à son propre but. Un contrôle impeccable. Poli, comme on dit bonjour à une dame.
+BriBri le regarde, et il se calme d'un coup.
 
-Un pied surgit de nulle part, dans son dos. Le ballon disparut.
+Le centre de l'ESM est au bord de la Marne. Trois terrains synthétiques, un bâtiment blanc avec une grande étoile, des péniches qui glissent sur l'eau. Une trentaine de garçons attendent le long de la main courante, la barrière autour du terrain.
 
-Kaydoudou se retourna, trop tard. Un garçon aux boucles brunes et aux crampons très blancs filait déjà. Le sifflet en métal déchira l'air. Monsieur Lacombe leva une main pour arrêter le jeu, puis s'approcha, lentement. Plus loin, BriBri en resta bouche ouverte, sur la pointe des pieds.
+À seize heures pile, sous un soleil déjà doré, Monsieur Bertrand Lacombe arrive.
+
+Survêtement bleu marine. Sifflet en métal au bout d'un lacet. Et une moustache grise, épaisse, taillée net comme une brosse à chaussures.
+
+Il ne dit pas bonjour.
+
+« Chasubles. Huit contre huit. On garde le ballon. Allez. »
+
+« Il a oublié de dire bonjour », chuchote BriBri.
+
+« Chut. »
+
+Kaydoudou enfile une chasuble orange par-dessus son vieux maillot vert, le 8 au col blanc de Bonamoussadi et de Waldorf. BriBri vérifie ses chaussettes, une rouge, une jaune, et se met à sautiller.
+
+Très vite, Kaydoudou remarque une chose : Lacombe ne félicite jamais personne. Un grand garçon réussit un lob magnifique, par-dessus deux défenseurs.
+
+« Suivant », dit Lacombe.
+
+Un autre fait trois jongles avant de passer.
+
+« Pourquoi ? »
+
+Le garçon ne sait pas quoi répondre.
+
+« Il ne dit jamais bravo ? » souffle BriBri.
+
+« Jamais, on dirait. »
+
+Puis le premier ballon arrive pour Kaydoudou. Une passe propre, au sol. Il regarde le ballon venir et l'amortit sous sa semelle, face à son propre but. Un contrôle parfait. Poli, comme on dit bonjour à une dame.
+
+Un pied surgit dans son dos. Le ballon disparaît.
+
+Kaydoudou se retourne. Trop tard. Un garçon aux boucles brunes et aux crampons très blancs file déjà avec le ballon.
+
+« Merci ! » lance le garçon, sans se retourner.
+
+Le sifflet déchire l'air. Monsieur Lacombe, le sifflet aux lèvres, lève une main pour arrêter le jeu. Au fond, BriBri reste figé sur la pointe des pieds, la bouche ouverte.
+
+Lacombe s'approche. Lentement.
 
 « Avant de recevoir, tu as regardé où ? »
 
-Kaydoudou ouvrit la bouche. Il chercha, vraiment, dans sa mémoire, ce qu'il avait vu juste avant que le ballon arrive. Il n'y avait rien. Seulement le ballon, rond, qui grossissait.
+Kaydoudou cherche dans sa tête. Il n'y a rien. Seulement le ballon, rond, qui grossissait.
 
 « Je... »
 
-« Nulle part, dit Lacombe. Tu as regardé le ballon. Le ballon, il sait où il est, mon garçon. C'est toi qui ne savais pas où tu étais. »
+« Nulle part. Tu as regardé le ballon. Le ballon, il sait où il est, mon garçon. C'est toi qui ne savais pas où tu étais. »
 
-Il leva les yeux vers les trente garçons.
+Lacombe lève les yeux vers les trente garçons.
 
 « Avant de recevoir, tu regardes. Toujours. »
 
-Il siffla la reprise, et ce fut comme s'il ne s'était rien passé. Sauf pour Kaydoudou, qui avait les joues en feu.
+Il siffle la reprise, comme si rien ne s'était passé. Sauf pour Kaydoudou, qui a les joues en feu.
 
-Le pire, c'est qu'il croyait savoir regarder. En Amérique, assis à côté de Marcus et de sa tablette, il avait appris à compter les lignes adverses. Mais voir un match depuis un banc, c'était une chose. Voir quand un adversaire vous souffle dans le cou, c'en était une autre. Dès que le ballon venait vers lui, ses yeux se collaient dessus, comme les papillons de nuit sur l'ampoule de la véranda, à Bonamoussadi.
+*Je comprends chaque mot*, pense-t-il. *Et je n'ai pas su répondre.*
 
-Alors il observa le garçon aux boucles. Avant chaque ballon, le garçon tournait la tête, une fois, deux fois, très vite, comme une mésange sur une branche. Un coup d'œil à gauche, un coup d'œil par-dessus l'épaule. Et quand le ballon arrivait, il savait déjà. Il ne réfléchissait pas : il jouait.
+BriBri passe à côté de lui en trottinant.
 
-Kaydoudou essaya. Trop tard : le ballon lui rebondit sur le tibia. Il essaya encore : cette fois, il vit tout, un adversaire à droite, un partenaire libre devant, mais il fut si occupé à voir qu'il oublia de contrôler. Plus loin, BriBri dribbla trois garçons d'affilée, magnifique, et fonça droit dans un quatrième qu'il n'avait pas vu venir.
+« Ça va, mola ? »
 
-« Le petit ! cria Lacombe. Tu dribbles des gens que tu n'as pas vus. Ça s'appelle de la chance. Pas du football. »
+« Non. »
 
-BriBri haussa les épaules, mais Kaydoudou vit ses oreilles devenir rouges.
+« Il est méchant ? »
 
-À la toute fin, pourtant, il se passa quelque chose. Le ballon était chez un défenseur, loin, et Kaydoudou, sans y penser, jeta deux regards rapides par-dessus son épaule. Il vit un trou entre deux chasubles jaunes, et derrière le trou, BriBri, seul. Quand le ballon arriva, il n'eut pas besoin de réfléchir : il l'envoya d'une seule touche dans le trou. BriBri n'eut qu'à courir.
+« Non. Il a raison. À Waldorf, je comptais les lignes depuis le banc. Mais ici, avec quelqu'un dans le dos, je ne vois que le ballon. »
 
-Lacombe ne dit rien. Il sortit de sa poche un petit carnet à spirale et y nota quelque chose avec un crayon minuscule.
+« Comme les papillons de nuit sur l'ampoule de la véranda », dit BriBri.
+
+C'est exactement ça.
+
+Alors il observe le garçon aux boucles. Avant chaque ballon, le garçon tourne la tête, une fois, deux fois, très vite, comme une mésange sur une branche. Quand le ballon arrive, il sait déjà. Il ne réfléchit pas : il joue.
+
+*La mésange*, pense Kaydoudou.
+
+Il essaie. Trop tard : le ballon lui rebondit sur le tibia. Il essaie encore. Cette fois, il voit tout, et il est si occupé à voir qu'il oublie de contrôler.
+
+Plus loin, BriBri dribble trois garçons d'affilée, magnifique, et fonce droit dans un quatrième qu'il n'a pas vu. Boum.
+
+« Le petit ! crie Lacombe. Tu dribbles des gens que tu n'as pas vus. Ça s'appelle de la chance. Pas du football. »
+
+BriBri hausse les épaules, les oreilles toutes rouges.
+
+« Dernière minute ! » crie Lacombe.
+
+Le ballon est chez un défenseur, loin.
+
+Kaydoudou n'y pense même pas. Sa tête tourne toute seule.
+
+Une fois. Clic. Deux chasubles jaunes, et un trou entre elles.
+
+Deux fois. Clic. Derrière le trou, BriBri. Seul.
+
+Le ballon arrive. Les cris des autres s'effacent. Il n'y a plus que la photo dans sa tête.
+
+Une touche. Une seule.
+
+Le ballon file dans le trou, et BriBri n'a qu'à courir.
+
+Lacombe ne dit rien. Il sort de sa poche un petit carnet à spirale et note quelque chose avec un crayon minuscule.
 
 * * *
 
-À la fin de l'essai, les parents attendaient le long de la main courante. Lacombe s'arrêta devant Papa. Kaydoudou, qui défaisait ses lacets tout près, tendit l'oreille.
+Après l'essai, BriBri rejoint son frère près de la main courante.
+
+« C'était quoi, ce truc avec ta tête ? Tu avais un moustique ? »
+
+« La mésange. »
+
+« La quoi ? »
+
+« Un petit oiseau. Il regarde partout avant de bouger. »
+
+« Toi, un petit oiseau ? Tu es trop grand. Tu es une autruche. »
+
+« Une autruche qui voit tout. »
+
+Lacombe s'arrête devant Papa. Kaydoudou tend l'oreille.
 
 « Monsieur Ngassa ? Le grand a de la tête. Le petit a de la magie. »
 
 Papa sourit.
 
-« Aucun des deux n'a encore d'yeux », ajouta Lacombe.
+« Aucun des deux n'a encore d'yeux. »
 
-Le sourire de Papa resta en l'air, un peu perdu. « Des yeux ? »
+Le sourire de Papa reste en l'air, un peu perdu.
 
-« Les yeux, ça s'apprend. La tête et la magie, beaucoup moins. » Lacombe consulta son carnet. « Section sport-études. Le grand chez les U13. Le petit avec lui, surclassé. Ici, les U13 et les U14 de la section s'entraînent ensemble, avec moi. Mardi, seize heures. Pas une minute de retard. »
+« Des yeux ? »
 
-Il était déjà reparti quand BriBri comprit. Il poussa un cri, courut jusqu'au poteau de corner le plus proche et commença la danse de Roger Milla.
+« Les yeux, ça s'apprend. La tête et la magie, beaucoup moins. » Lacombe regarde son carnet. « Section sport-études. Le grand chez les U13. Le petit avec lui, surclassé. Ici, les U13 et les U14 de la section s'entraînent ensemble, avec moi. Mardi, seize heures. Pas une minute de retard. »
+
+« On sera là », dit Papa.
+
+Il est déjà reparti quand BriBri comprend. Il pousse un cri, court jusqu'au poteau de corner le plus proche et commence la danse de Roger Milla.
 
 « Et pas de danse sur mes poteaux de corner », dit la voix de Lacombe, de très loin.
 
-BriBri se figea, une jambe en l'air. Papa dut s'accroupir pour cacher son fou rire.
+BriBri se fige, une jambe en l'air.
+
+« Comment il a vu ? chuchote-t-il. Il a des yeux derrière la tête ! »
+
+Papa doit s'accroupir pour cacher son fou rire.
 
 * * *
 
-Le mardi suivant, dans le vestiaire, un garçon était assis tout seul dans un coin. Il avait des cheveux couleur de paille, des joues rouges comme s'il venait de courir dans le vent, et des mains énormes posées sur ses genoux. Il dit quelque chose si doucement que BriBri dut répéter « Pardon ? » trois fois.
+Le mardi suivant, dans le vestiaire, un garçon est assis tout seul dans un coin. Cheveux couleur de paille, joues rouges, mains énormes sur les genoux. Il parle si doucement que BriBri doit répéter « Pardon ? » trois fois.
 
-« Lucas, finit par articuler le garçon. Lucas Morel. Latéral droit. »
+« Lucas. Lucas Morel. Latéral droit. »
 
-Il venait d'une ferme de la Brie, où son père cultivait du blé et des betteraves. Il sortit une pomme de son sac, la regarda, la cassa en deux d'un seul geste de ses grandes mains, et en tendit une moitié à BriBri sans un mot. BriBri la prit comme on reçoit une médaille.
+« Tu viens d'où ? »
 
-La porte s'ouvrit. Les conversations baissèrent d'un ton. Le garçon aux boucles brunes entra, un sac sur l'épaule, ses crampons blancs à la main. Il marchait comme si le vestiaire lui appartenait, et c'était peut-être un peu vrai. « Salut, Kenzo », dirent plusieurs voix. Il répondit d'un signe du menton.
+« D'une ferme, dans la Brie. Mon père fait du blé et des betteraves. »
 
-« Kenzo Delattre, souffla Lucas. Treize ans. Le meilleur de l'équipe. Il le sait. »
+Lucas sort une pomme de son sac, la casse en deux à mains nues et en tend une moitié à BriBri. BriBri la prend comme on reçoit une médaille.
 
-Kenzo posa son sac à côté de celui de Kaydoudou. Ses yeux glissèrent sur le vieux maillot vert que Kaydoudou venait de sortir, sur le col blanc, sur le chiffre délavé dans le dos. Il eut un petit sourire en coin, pas vraiment gentil.
+« Tu peux casser des noix de coco, aussi ? »
+
+« Je ne sais pas. On n'en a pas. »
+
+« Moi, c'est BriBri. Ailier. Lui, c'est mon frère, Kaydoudou. Il ne parle pas beaucoup. »
+
+« Moi non plus », dit Lucas.
+
+« Alors je parlerai pour nous trois. »
+
+La porte s'ouvre. Les voix baissent d'un coup. Le garçon aux boucles brunes entre, ses crampons blancs à la main. Il marche comme si le vestiaire lui appartenait.
+
+« Salut, Kenzo », disent plusieurs voix.
+
+Il répond d'un signe du menton.
+
+« Kenzo Delattre, souffle Lucas. Treize ans. Le meilleur de l'équipe. Il le sait. »
+
+Kenzo pose son sac à côté de celui de Kaydoudou. Ses yeux glissent sur le vieux maillot vert, sur le col blanc, sur le chiffre délavé dans le dos. Un petit sourire en coin. Pas vraiment gentil.
 
 « Joli maillot. »
 
-Puis, en passant devant lui pour sortir vers le terrain, sans même ralentir :
+Puis, en passant devant lui, sans même ralentir :
 
 « Mais ici, le 8, c'est moi. »
 
-Kaydoudou ne répondit pas. Il plongea la main dans son sac, trouva sous ses protège-tibias la couverture de pagne du carnet de Tonton Fokou, et la serra si fort que le tissu se froissa entre ses doigts.
+Kaydoudou ne répond pas. Au fond de son sac, il trouve la couverture de pagne du carnet de Tonton Fokou. Il la serre si fort que le tissu se froisse entre ses doigts.
+
+Le 8. Son numéro. Depuis la terre rouge de Bonamoussadi.
+
+Et ici, quelqu'un d'autre le porte.
 
 > [!CARNET] Leçon du Ballon n°17 : Le scan
 > Avant que le ballon arrive, je regarde par-dessus mon épaule. Deux fois, trois fois, comme la mésange.

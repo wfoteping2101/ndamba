@@ -40,7 +40,7 @@ export function JourneyTeaser({ playerId }: { playerId: string }) {
         </div>
       </div>
       <div className="mx-4 mt-3 rounded-xl bg-forest-700/50 p-2.5 ring-1 ring-white/10 sm:mx-5"><SeasonRibbon data={data} season={season} /></div>
-      <dl className="grid grid-cols-4 gap-2 px-4 pb-4 pt-3 sm:px-5">
+      <dl className="grid grid-cols-2 gap-x-3 gap-y-2 px-4 pb-4 pt-3 sm:grid-cols-4 sm:px-5">
         {stats.map((x) => (
           <div key={x.label} className="min-w-0">
             <dt className="truncate text-[11.5px] text-cream/70">{x.label}</dt>

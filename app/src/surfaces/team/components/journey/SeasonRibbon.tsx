@@ -119,6 +119,7 @@ export function SeasonRibbon({ data, season }: { data: JourneyData; season: Seas
           </svg>
         )}
       </div>
+      {items.length === 0 && marks.length === 0 && <p className="-mt-[88px] mb-[52px] px-2 text-center text-[13px] text-cream/80 sm:px-24">{t('ribbon.empty')}</p>}
       <figcaption className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[11.5px] text-cream/75">
         <Key><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1L11 6L6 11L1 6Z" fill="none" stroke={C.sun3} strokeWidth="1.6" /></svg>{t('ribbon.key.eval')}</Key>
         <Key><svg width="12" height="12" viewBox="-6 -6 12 12" aria-hidden="true"><Star cx={0} cy={0} /></svg>{t('ribbon.key.milestone')}</Key>

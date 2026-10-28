@@ -22,7 +22,7 @@ Au fond du wagon, le monsieur en imperméable fait un petit salut de la tête.
 
 « Avec tes couleurs, on dirait une de tes chaussettes. En géant. »
 
-C'est vrai. Moitié rouge, moitié jaune. BriBri l'a colorié lui-même.
+« Normal, c'est moi qui l'ai colorié. Moitié rouge, moitié jaune. Le style Ngassa. »
 
 Près du coude, il reste une petite place vide. BriBri pose le doigt dessus.
 
@@ -38,7 +38,11 @@ Maman lui serre l'épaule. Devant eux, l'avenue des Champs-Élysées descend jus
 
 « On dirait que quelqu'un a renversé un panier de piments rouges dans le ciel », dit Kaydoudou.
 
-Un vendeur leur tend un cornet de marrons chauds qui brûle les doigts. BriBri en mange un, puis deux. Pendant une minute, il oublie tout.
+Un vendeur leur tend un cornet de marrons chauds.
+
+« Aïe, aïe ! Ça brûle ! Et c'est trop bon ! »
+
+BriBri en mange un, puis deux. Pendant une minute, il oublie tout.
 
 Puis une grande famille passe. Une grand-mère en bonnet, des oncles, des tantes, des cousins qui crient. Un petit garçon sur les épaules de son grand-père.
 
@@ -66,7 +70,7 @@ Le soir, Papa cale la tablette contre la théière et appelle Bafoussam. Un œil
 
 « Recule, Mami ! » crient les deux frères.
 
-Elle recule. La voilà dans sa cour, devant sa machine à coudre, le soleil de la saison sèche sur les joues. Des poules caquettent derrière elle. BriBri a envie de plonger dans l'écran.
+Elle recule. La voilà dans sa cour, devant sa machine à coudre, avec ses poules. BriBri a envie de plonger dans l'écran.
 
 « Mes enfants, j'ai une nouvelle ! Ce mois-ci, le njangi des femmes n'a pas donné la caisse à une seule femme. On a acheté ensemble une machine à coudre toute neuve. Pour Solange ! »
 
@@ -92,6 +96,8 @@ Mami regarde longtemps le petit carré vide. Puis elle approche son visage, si p
 
 Cette nuit-là, BriBri laisse la fenêtre entrouverte. Juste un peu. Au cas où.
 
+« Bonne nuit, Mami, chuchote-t-il dans le noir. C'est ouvert. »
+
 * * *
 
 Le jeu des yeux est né dans le RER, le dernier jour d'école.
@@ -102,17 +108,17 @@ Des cartes découpées dans un carton de céréales : rouges, bleues, jaunes, ve
 
 « Mets-toi derrière moi. Lève une carte quand tu veux, sans prévenir. Moi, je me retourne et je dis la couleur avant que tu la caches. »
 
-Depuis, il joue tout le temps.
+Depuis, BriBri joue tout le temps.
 
 Premier essai : « Bleu ! » C'était vert.
 
 Deuxième essai : « Rouge ! » La carte est déjà rangée.
 
-Dixième essai : BriBri comprend. Il ne faut pas attendre. Il faut regarder par-dessus l'épaule sans arrêt, gauche, droite, gauche, comme la mésange de Kaydoudou.
+Dixième essai : « J'ai compris ! On n'attend pas. On regarde tout le temps. Gauche, droite, gauche. Comme la mésange de Kayd ! »
 
 Cinquantième essai : « Jaune ! » Lucas n'a même pas fini de lever la carte.
 
-Dans le RER, les passagers finissent par parier sur lui.
+Dans le RER, une dame finit par parier sur lui. « Je mise tout sur le petit au plâtre ! »
 
 Pendant les vacances, Lucas vient deux fois à Bussy, avec un panier de pommes.
 
@@ -134,7 +140,7 @@ Kaydoudou fait semblant de lire sur le canapé. Au bout d'une heure, il pose son
 
 Il perd 12 à 3.
 
-« Douze à trois ! hurle BriBri. Le grand cerveau de l'ESM, battu par un garçon avec un bras en moins ! Je vais l'écrire dans ton carnet ! »
+« Douze à trois ! hurle BriBri. Le grand cerveau de l'ESM, battu par un garçon avec un bras dans le plâtre ! Je vais l'écrire dans ton carnet ! »
 
 * * *
 
@@ -168,6 +174,8 @@ Kenzo lève un sourcil, exactement comme Lacombe.
 
 « Alors tu vas gagner facilement », dit BriBri.
 
+« Moi, j'ai perdu 12 à 3 », dit Kaydoudou.
+
 Premier ballon. Carte rouge. Kenzo joue à droite.
 
 « Raté ! C'était rouge ! »
@@ -182,7 +190,11 @@ Tac. Pied gauche. Le ballon claque dans le grillage, pile à gauche.
 
 « Encore », dit Kenzo.
 
-Ils jouent une demi-heure dans le froid. Gauche. Droite. Droite. Gauche. BriBri voit qu'il sourit presque. Presque.
+Ils jouent une demi-heure dans le froid.
+
+« Gauche ! Droite ! Droite ! Gauche ! commente BriBri. Kenzo Delattre est réveillé, mesdames et messieurs ! »
+
+BriBri voit qu'il sourit presque. Presque.
 
 Quand ils s'arrêtent, essoufflés, Kenzo s'assoit sur le banc et parle en regardant ses crampons blancs.
 
@@ -206,17 +218,25 @@ Puis il la referme.
 
 Le soir, la guirlande clignote, les bougies brillent, et la vitre du salon est toute embuée.
 
-Kenzo arrive à sept heures pile. Une boîte de chocolats. Les cheveux mouillés, bien coiffés. Un pull trop grand.
+Kenzo arrive à sept heures pile. Une boîte de chocolats. Les boucles brunes encore mouillées, bien coiffées. Un pull trop grand.
 
 « Bonsoir, madame. Bonsoir, monsieur. »
 
 Il est si poli que BriBri ne le reconnaît pas.
 
+« C'est qui, ce garçon bien élevé ? chuchote-t-il à son frère. Il a mangé Kenzo ? »
+
 Sur la table basse fume le grand plat. Kenzo le regarde comme un trésor.
 
 « Poulet doré, plantains mûrs, carottes, haricots verts, poivrons, annonce Papa. Le tout mijoté avec de l'ail et du gingembre. Ça s'appelle le poulet DG, comme directeur général. Autrefois, au Cameroun, seuls les directeurs avaient les moyens d'en manger. Ce soir, le directeur général, c'est toi. »
 
-Kenzo mange deux assiettes sans parler. À la première bouchée de plantain, il ferme les yeux. Puis Maman apporte un gâteau au chocolat et à la noix de coco, et Papa met de la musique.
+Kenzo mange deux assiettes sans parler. À la première bouchée de plantain, il ferme les yeux.
+
+« Encore un peu, Kenzo ? » demande Maman.
+
+« Oui, madame. S'il vous plaît, madame. Merci, madame. »
+
+Puis Maman apporte un gâteau au chocolat et à la noix de coco, et Papa met de la musique.
 
 Du makossa. Fort.
 
@@ -236,7 +256,7 @@ Et Kenzo éclate de rire.
 
 Un vrai rire. Un rire de petit garçon. Il sort de lui d'un coup, comme une porte fermée à clé depuis longtemps qui s'ouvre enfin. Kenzo se plie en deux sur le canapé, une main sur le ventre, les yeux pleins de larmes.
 
-BriBri se laisse tomber à côté de lui, ses chaussettes rouge et jaune en l'air, le plâtre toujours levé. Il rit à son tour en le regardant. Il a vu Kenzo marquer. Crier. S'énerver. Se taire.
+BriBri se laisse tomber à côté de lui, ses chaussettes rouge et jaune en l'air, le plâtre toujours levé. Il rit à son tour en le regardant, sa dent du bonheur à l'air. Il a vu Kenzo marquer. Crier. S'énerver. Se taire.
 
 Il ne l'a jamais entendu rire.
 
@@ -259,6 +279,8 @@ Quatre-vingt-huit.
 Le 9 janvier, à l'hôpital, une infirmière découpe le plâtre avec une petite scie ronde. Bzzzzz. Un moustique géant. BriBri ferme les yeux du début à la fin.
 
 Quand il les rouvre, le plâtre est posé sur la table en deux morceaux, comme une coquille d'œuf. Avec ses quatre-vingt-huit signatures.
+
+« Quatre-vingt-huit ? dit l'infirmière. C'est le record de l'hôpital, je crois. »
 
 « Beurk, dit BriBri. Mon bras est tout blanc. Et il sent le fromage. »
 

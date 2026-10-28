@@ -22,7 +22,7 @@ export function ObjectivesCard({ data, stage, viewer, onAdd, onOpen }: { data: J
   return (
     <section className="card card-pad" aria-labelledby="obj-h">
       <CardHead id="obj-h" icon={<Target size={18} className="text-sun-600" />} title={t('objectives.title')} hint={t('objectives.hint', { n: MAX_ACTIVE_OBJECTIVES })}
-        action={active.length < MAX_ACTIVE_OBJECTIVES ? <button type="button" className="btn-outline btn-sm min-h-[40px]" onClick={onAdd}><Plus size={15} />{t('objectives.add')}</button> : undefined} />
+        action={active.length > 0 && active.length < MAX_ACTIVE_OBJECTIVES ? <button type="button" className="btn-outline btn-sm min-h-[40px]" onClick={onAdd}><Plus size={15} />{t('objectives.add')}</button> : undefined} />
       {active.length === 0 ? (
         <div className="rounded-xl bg-sand/60 px-3 py-3 text-sm text-ink-muted">
           {viewer === 'coach' ? t('objectives.emptyCoach') : t('objectives.emptyPlayer')}
@@ -136,7 +136,7 @@ export function MatchPanel({ s, stage, viewer, data }: { s: SeasonSummary; stage
     [t('perf.minutes'), fmtMinutes(s.matches.minutes, lang), s.matches.played ? t('perf.avgMin', { n: Math.round(s.matches.minutes / s.matches.played) }) : undefined],
     [t('perf.starts'), t('perf.startsVal', { starts: s.matches.starts, played: s.matches.played })],
     [t('perf.goals'), String(c.GOAL), s.taggedMinutes ? t('perf.per90', { v: fmtDec(per90(c.GOAL), lang, 2) }) : undefined],
-    [t('perf.shots'), t('perf.shotsVal', { shots: c.SHOT, on: c.SHOT_IN }), s.taggedMinutes ? t('perf.per90', { v: fmtDec(per90(c.SHOT), lang) }) : undefined],
+    [t('perf.shots'), String(c.SHOT), [t('perf.onTarget', { n: c.SHOT_IN }), s.taggedMinutes ? t('perf.per90', { v: fmtDec(per90(c.SHOT), lang) }) : ''].filter(Boolean).join(', ')],
     [t('perf.passAcc'), passes ? fmtPct(c.PASS_OK / passes, lang) : '·', passes ? t('perf.passesVal', { ok: c.PASS_OK, n: passes }) : undefined],
     [t('perf.progressions'), fmtDec(per90(c.PROG + c.LINE), lang), t('perf.per90Label')],
     [t('perf.entries'), fmtDec(per90(c.FINAL3 + c.BOX), lang), t('perf.per90Label')],
@@ -164,11 +164,13 @@ export function MatchPanel({ s, stage, viewer, data }: { s: SeasonSummary; stage
         </div>
       )}
       <h3 className="mb-1.5 mt-4 font-sans text-xs font-semibold tracking-normal text-ink-muted">{t('perf.minutesByMatch')}</h3>
-      <ul className="flex h-20 items-end gap-1" aria-label={t('perf.minutesByMatch')}>
+      <ul className="flex items-end gap-1" aria-label={t('perf.minutesByMatch')}>
         {lines.map((l) => (
-          <li key={l.match.id} className="flex h-full min-w-0 flex-1 flex-col justify-end" title={`${l.match.opponent}: ${l.minutes} min`}>
-            <span className={cx('block rounded-t-md', l.minutes ? (l.starter ? 'bg-forest-600' : 'bg-forest-300') : 'bg-line')} style={{ height: `${Math.max(4, (l.minutes / maxLen) * 100)}%` }} />
-            <span className="sr-only">{l.match.opponent}: {l.minutes} min</span>
+          <li key={l.match.id} className="flex min-w-0 flex-1 flex-col items-stretch" title={`${l.match.opponent}: ${l.minutes} min`}>
+            <span className="mb-0.5 text-center text-[10.5px] font-semibold tabular-nums text-ink-muted">{l.minutes}</span>
+            <span className="flex h-16 flex-col justify-end"><span className={cx('block rounded-t-md', l.minutes ? (l.starter ? 'bg-forest-600' : 'bg-forest-300') : 'bg-line')} style={{ height: `${Math.max(4, (l.minutes / maxLen) * 100)}%` }} /></span>
+            <span className="mt-1 truncate text-center text-[10.5px] text-ink-faint">{fmtDate(l.match.date, lang, { day: 'numeric', month: 'short' }).replace('.', '')}</span>
+            <span className="sr-only">{l.match.opponent}</span>
           </li>
         ))}
       </ul>

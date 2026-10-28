@@ -8,131 +8,337 @@ resume: Une finale contre la plus grosse équipe de Virginie, des larmes dans un
 illustration: Plan moyen dans un vestiaire aux murs de parpaings peints en bleu clair, après la finale. Assis sur un banc de bois, Kaydoudou, maillot bleu marine numéro 8, fine raie à gauche, les yeux encore rouges, tient le ballon de Mami rapiécé de pagne rouge et jaune sur ses genoux. Penchés sur le ballon, Diego, cheveux noirs dressés, écrit son nom au feutre noir en tirant la langue, et Tyler Brooks, grand et blond, une chaussette rouge et une chaussette jaune, attend son tour, le feutre déjà débouché. Lumière jaune des néons, tristesse douce et amitié.
 ---
 
-Le dernier but de la Mid-Atlantic Summer Cup fut marqué de la tête, à la 58e minute, par un garçon qui mesurait une tête de plus que tout le monde.
+« Ils arrivent ! »
 
-Kaydoudou le vit venir de très loin. C'est ce qui fut le plus dur, après : il l'avait vu venir. Un coup franc lointain, sur le côté gauche. Le ballon qui monte, qui monte, haut dans le ciel blanc d'août. Et le numéro 4 des Shenandoah Valley Stallions, leur défenseur central, qui s'élève au-dessus de la mêlée comme s'il montait un escalier invisible. Le front frappe le cuir. Le ballon rebondit une fois devant leur gardien et se loge au ras du poteau.
+BriBri crie ça comme on crie « au feu ». Toute l'équipe de Potomac Valley se retourne.
+
+« Shenandoah Valley Stallions, souffle Diego. Ils viennent de Virginie. Ils n'ont perdu aucun match de l'été, bro. Aucun. »
+
+Et ils sont grands. Pas grands comme des garçons de douze ans : grands comme des grands frères.
+
+« Ils ont mangé leurs parents au petit déjeuner », dit BriBri.
+
+« No way, dit Diego. C'est leurs parents qui les ont mangés. C'est pour ça qu'ils sont si gros. »
+
+Personne ne comprend la blague. Tout le monde rit quand même, parce que tout le monde a peur.
+
+Leur numéro 4 saute pour s'échauffer. Il monte si haut que Tyler siffle entre ses dents.
+
+« Lui, ce n'est pas un joueur, dit BriBri. C'est un escalier. »
+
+« The Stairs ! traduit Diego. Bro, j'adore. »
+
+« I have to mark that guy », gémit Owen, le grand défenseur roux.
+
+« Bonne chance, Owen, dit BriBri. Prends une échelle. »
+
+« Hé, Kaydoudou. Tu fais ta tête de Paris. »
+
+« Je n'ai pas de tête de Paris. »
+
+« Si. Tes sourcils font un toit. »
+
+« C'est notre dernier match ici, BriBri. Dans deux semaines, on est de l'autre côté de l'océan. »
+
+« Je sais. » BriBri arrête de sautiller, juste une seconde. « Alors on gagne. Comme ça, l'Amérique se souviendra de nous. »
+
+*On ne part pas comme ça*, pense Kaydoudou. *On part avec la coupe.*
+
+Dix jongles avec le ballon de Mami, comme toujours. Puis le ballon retourne au fond du sac.
+
+« Work hard ! crie Coach Whitfield. Be brave ! Have fun ! »
+
+* * *
+
+Coup de sifflet. Et Kaydoudou joue le plus beau match de sa vie.
+
+Il voit les trois lignes des Stallions, comme Marcus les lui a montrées. Une fois, il passe en arrière, vers Owen.
+
+« Kay ! crie Tyler. Why back ? »
+
+« Attends ! »
+
+Les Stallions montent tous du même côté, comme des chèvres vers le seau. Alors Kaydoudou change de côté d'un coup, et il traverse.
+
+« Yes, Kay ! crie Coach Whitfield. Break the line ! »
+
+« Kay is cooking ! hurle Diego. Il cuisine les Stallions ! Sauce piment ! »
+
+« Arrête de parler et cours ! » rigole Tyler.
+
+À la 31e minute, deux maillots foncent sur Kaydoudou. Et le temps ralentit.
+
+Le ballon roule vers lui, une tache blanche sur l'herbe jaune. Dans la tribune, une voix de grand-mère crie :
+
+« ¡Vamos, mijos ! »
+
+Derrière les milieux des Stallions, BriBri sautille sur la pointe des pieds. Seul.
+
+Kaydoudou lève deux doigts. BriBri part.
+
+Bam ! La passe file au ras du sol et traverse deux lignes d'un coup.
+
+BriBri pose la semelle sur le ballon, et il attend. Deux Stallions se jettent sur lui, comme des moustiques sur un bras nu.
+
+« MAGNET ! » crie Marcus sur le banc, sa tablette levée au-dessus de la tête.
+
+L'aimant, le coup spécial de BriBri ! Juste avant le choc, il glisse le ballon à Diego, tout seul, qui frappe du gauche au premier poteau. Chhh ! fait le filet.
+
+« What a pass, Kay ! » crie Tyler.
+
+« GOOOAL ! hurle Diego. ABUELA, C'EST POUR TOI ! »
+
+Il court jusqu'à la petite tribune. Abuela Rosa embrasse son chapelet en pleurant de joie.
+
+Mais les Stallions ne paniquent jamais. Juste après la mi-temps, un long ballon, un rebond bizarre, et le haut-parleur grésille :
+
+« Goal for Shenandoah Valley ! One, one ! »
+
+« Water break ! » crie l'arbitre, pour la deuxième fois. Il fait trop chaud. Puis vient la prolongation, et les jambes de Potomac Valley deviennent des sacs de sable mouillé.
+
+« Work rate ! hurle Coach Whitfield. Work rate ! »
+
+« Mes jambes ne parlent plus anglais », gémit BriBri.
+
+« Les miennes ne parlent plus du tout », souffle Diego.
+
+« Encore cinq minutes, dit Kaydoudou. Juste cinq. »
+
+58e minute. Coup franc pour les Stallions, très loin sur la gauche.
+
+« Quelqu'un sur l'Escalier ! » crie Kaydoudou.
+
+« I got him ! » répond Owen.
+
+Mais Owen est rouge comme une tomate.
+
+Le ballon monte, haut dans le ciel blanc d'août. Kaydoudou le voit venir de très loin. C'est ça, le plus dur : il le voit venir, et ses jambes ne bougent plus.
+
+L'Escalier s'élève. Une marche. Deux marches. Trois.
+
+Bam. Son front frappe le cuir. Le ballon rebondit devant le gardien de Potomac Valley et se glisse au ras du poteau.
 
 2-1.
 
-Le stade (une petite tribune en métal pleine de parents) poussa un cri dans une moitié et resta muet dans l'autre. Deux minutes plus tard, l'arbitre siffla la fin de la prolongation.
+« Non, souffle BriBri. Non, non, non. »
+
+Deux minutes plus tard, l'arbitre siffle la fin.
+
+« Heads up, guys, dit Coach Whitfield d'une voix cassée. Heads up. »
 
 * * *
 
-Ç'avait pourtant été un beau match.
+Dans le vestiaire aux murs bleu clair, sous les néons jaunes, tout le monde pleure. Tyler est assis par terre, ses chaussettes rouge et jaune encore aux pieds.
 
-Les Shenandoah Valley Stallions venaient de Virginie et ils étaient arrivés en finale sans perdre un seul match. Ils étaient grands, larges, rapides, et ils jouaient comme un troupeau de chevaux : tout droit, très fort, en piétinant tout ce qui se trouvait devant eux. À l'échauffement, BriBri avait dit qu'ils avaient sûrement mangé leurs parents au petit déjeuner. Diego avait répondu que non, que c'étaient leurs parents qui les avaient mangés, et que c'était pour ça qu'ils étaient si gros. Personne n'avait compris la blague, mais tout le monde avait ri, parce qu'on avait peur.
+« My fault, dit-il. I should have helped Owen. »
 
-Pendant une heure, Potomac Valley les avait fait courir.
+« No, my fault », dit Owen, la tête dans sa serviette.
 
-Kaydoudou n'avait jamais aussi bien joué de sa vie. Il le savait pendant qu'il jouait, et ça ne lui était presque jamais arrivé. Il voyait les trois lignes des Stallions comme Marcus les lui avait montrées depuis le banc : deux attaquants, quatre milieux, trois défenseurs, des fils invisibles entre eux. Et il cherchait la passe qui traversait. Une ligne. Deux lignes. Il faisait la passe en arrière, parfois, mais elle préparait toujours quelque chose : elle attirait les Stallions d'un côté, pour mieux les traverser de l'autre.
+« We were better, bro, dit Diego, qui pleure en parlant, parce qu'il fait tout en parlant. On était meilleurs. Même le soleil l'a vu. »
 
-À la 31e minute, il avait trouvé BriBri entre les deux lignes du milieu et de la défense. BriBri avait fait l'aimant, deux Stallions s'étaient jetés sur lui, et il avait servi Diego, qui avait marqué du gauche, au premier poteau. 1-0. Diego avait couru jusqu'à la tribune pour embrasser sa grand-mère, Abuela Rosa, qui avait sorti son chapelet.
+« C'était le dernier, Kaydoudou, sanglote BriBri sur son épaule. Le der-nier. »
 
-Mais les Stallions avaient égalisé juste après la mi-temps, sur un long ballon et un rebond. 1-1. Puis le match était devenu une bataille. Il faisait si chaud que l'arbitre avait arrêté le jeu deux fois pour que tout le monde boive. On était passé en prolongation, et les jambes de Potomac Valley avaient commencé à peser comme des sacs de sable mouillé. Les Stallions, eux, semblaient avoir quatre poumons chacun.
+Kaydoudou ne pleure pas encore. Il a une boule dans la gorge, grosse comme un ballon.
 
-Et puis il y avait eu ce coup franc. Et ce garçon qui montait l'escalier invisible.
-
-* * *
-
-Dans le vestiaire, tout le monde pleurait.
-
-C'était un vestiaire comme tous les vestiaires d'Amérique, avec des murs de parpaings peints en bleu clair, des néons qui grésillaient, des bancs de bois, une odeur de sueur et de produit pour les sols. Owen pleurait la tête dans sa serviette. Tyler pleurait en silence, assis par terre, le dos contre le mur, les chaussettes rouge et jaune encore aux pieds. Diego pleurait en parlant, parce que Diego faisait tout en parlant. BriBri ne pleurait pas : il sanglotait, avec des hoquets, le nez qui coulait, sur l'épaule de son frère.
-
-Kaydoudou, lui, ne pleurait pas encore. Il avait une boule dans la gorge, grosse comme le ballon, et il savait que s'il ouvrait la bouche, elle sortirait. Ce n'était pas seulement la finale. C'était tout le reste. C'était la dernière fois qu'il s'asseyait dans ce vestiaire. Dans deux semaines, il serait à Paris.
-
-La porte s'ouvrit. Marcus Bell entra, sa tablette sous le bras. Il ne dit pas « unlucky ». Il ne dit pas « you played so well ». Il s'assit sur le banc, au milieu d'eux, alluma l'écran, et le tourna vers l'équipe.
+La porte s'ouvre. Marcus Bell s'assoit au milieu d'eux et tourne sa tablette vers l'équipe.
 
 « Look. »
 
-Personne ne voulait regarder. Il attendit. Lentement, une tête se leva, puis une autre.
+Personne ne veut regarder. Marcus attend. Une tête se lève, puis une autre.
 
-« Possession : forty-eight percent. » Il montra le chiffre. « Less than them. »
+« Possession : forty-eight percent. Less than them. »
 
-Kaydoudou fronça les sourcils. Quarante-huit. Moins que les Stallions. Il pensa aux soixante-dix pour cent d'avril, contre les Hawks.
+« Quarante-huit ? répète Kaydoudou. Mais en avril, contre les Hawks, on avait soixante-dix. Et on a perdu. »
 
-« But look at this. » Marcus fit glisser son doigt. « Lines broken : thirty-four. Them : nineteen. Touches in the box : twenty-two. Them : nine. Big chances : six. Them : two. »
+« Exactly. Now look at this. Lines broken : thirty-four. Them : nineteen. Touches in the box : twenty-two. Them : nine. Big chances : six. Them : two. »
 
-Il posa la tablette sur ses genoux.
+« Trente-quatre lignes traversées, contre dix-neuf, traduit Diego en reniflant. Vingt-deux ballons dans leur surface, contre neuf. Six grosses occasions, contre deux. »
 
-« You created more. You went forward more. You played better football. » Il regarda chacun d'eux, un par un, derrière ses lunettes rondes. « You lost the match. You did not lose your game. »
+« You lost the match, dit Marcus. You did not lose your game. »
 
-Diego traduisit, la voix cassée, pour les deux frères. Vous avez perdu le match. Vous n'avez pas perdu votre jeu. Kaydoudou regarda les chiffres sur l'écran. Il pensa à la défaite d'avril, quand ils avaient eu le ballon tout le temps et n'en avaient rien fait. Cette fois, ils avaient eu le ballon moins souvent. Et chaque fois qu'ils l'avaient eu, il avait voyagé quelque part. Ils avaient perdu. Mais pas de la même façon. C'était étrange, mais ça faisait moins mal.
+« Vous avez perdu le match, murmure Diego. Vous n'avez pas perdu votre jeu. »
 
-Alors la boule dans sa gorge sortit, et Kaydoudou pleura enfin.
+*En avril, le ballon n'allait nulle part*, pense Kaydoudou. *Aujourd'hui, il a voyagé. C'est une défaite, mais pas la même. Elle fait moins mal.*
+
+Alors la boule sort d'un coup, et Kaydoudou pleure enfin.
 
 * * *
 
-Coach Whitfield entra la dernière. Elle avait les yeux rouges, elle aussi, mais elle ne le cacha pas. Elle s'arrêta devant les deux frères.
+Coach Whitfield entre la dernière, les yeux rouges, elle aussi.
 
 « Guys. I want to say something to Kay and BriBri. »
 
-Tout le monde se tut. Même les néons arrêtèrent de grésiller.
+Même les néons arrêtent de grésiller.
 
-« When you came to the tryouts in February, I saw a little guy with crazy socks who dribbled everybody and passed to nobody. » BriBri renifla. « And I saw a big guy who was so scared to lose the ball that he never did anything with it. » Kaydoudou baissa les yeux. « And now look at you. BriBri, you are the best decoy I ever coached. And Kay... » Elle s'accroupit, pour être à sa hauteur. « Kay, you taught this team to ask the right question. Every pass. Where are we going ? »
+« In February, I saw a little guy with crazy socks. He dribbled everybody. He passed to nobody. »
 
-Elle se releva.
+BriBri renifle très fort.
 
-« Paris is lucky. Don't forget us. And don't you dare forget work rate. »
+« And I saw a big guy, so scared to lose the ball that he never did anything with it. »
 
-Kaydoudou avait tout compris, sans Diego. Pour la première fois, l'anglais était entré en lui comme une passe bien dosée. Le leurre, celui qui court pour tromper la défense, c'était BriBri. Et la bonne question, c'était lui.
+Kaydoudou baisse les yeux.
 
-« Work rate ! » hurla toute l'équipe, à travers les larmes, si fort que BriBri éclata de rire en pleurant.
+« And now, look at you. BriBri, you are the best decoy I ever coached. » Elle s'accroupit devant Kaydoudou. « And Kay... you taught this team to ask the right question. Every pass. Where are we going ? »
 
-Puis Kaydoudou ouvrit son sac, en sortit le ballon de Mami et le posa sur ses genoux.
+Elle se relève.
 
-Il n'avait pas besoin d'expliquer. Tout le monde avait vu les frères jongler avec avant chaque match. Diego fut le premier à se pencher dessus. Il prit le feutre noir, choisit une place sur le cuir, près du carré de pagne, et il écrivit en tirant la langue : « DIEGO R. #12. Bro for life. » À côté de lui, Tyler attendait son tour, un deuxième feutre déjà débouché à la main. Diego ajouta, en tout petit, une phrase en espagnol qu'il refusa de traduire. (Mrs. Patterson, plus tard, la lut pour eux : « Le cœur n'a pas de frontières. »)
+« Paris is lucky. Don't forget us. And don't you dare forget work rate ! »
 
-Tyler fut le deuxième. Il réfléchit longtemps, le feutre levé, comme s'il écrivait une lettre à un roi. Puis il écrivit : « TYLER B. #9. Nice socks. »
+« WORK RATE ! » hurle toute l'équipe à travers les larmes, si fort que BriBri éclate de rire en pleurant.
 
-Il prit le ballon sur les genoux de Kaydoudou, le tendit à BriBri sans le regarder, et BriBri le serra si fort contre lui qu'il faillit le dégonfler.
+« Decoy, c'est quoi ? » chuchote-t-il en s'essuyant le nez.
 
-Il y eut d'autres signatures, ce jour-là. Owen. Coach Whitfield, qui écrivit seulement « Work rate ! » avec un cœur. Et Marcus, en dernier, qui ne signa pas son nom. Il dessina une petite flèche qui traversait trois traits, et en dessous, un seul mot : « Why ? »
+Cette fois, Kaydoudou n'a pas besoin de Diego.
+
+« Le leurre. Celui qui court pour tromper la défense. C'est toi. »
+
+« Et toi, tu es quoi ? »
+
+« Moi, je suis la question. »
+
+Assis sur le banc de bois, les yeux encore rouges, Kaydoudou pose le ballon de Mami sur ses genoux. Il n'a pas besoin d'expliquer.
+
+Diego se penche le premier, ses cheveux noirs dressés sur la tête. Il écrit au feutre noir, près du carré de pagne, en tirant la langue : « DIEGO R. #12. Bro for life. » À côté de lui, Tyler attend son tour, le feutre déjà débouché.
+
+Diego ajoute une petite phrase en espagnol, tout en bas.
+
+« Ça veut dire quoi ? » demande BriBri.
+
+« Secret, bro. »
+
+Plus tard, Mrs. Patterson la leur lira : « Le cœur n'a pas de frontières. »
+
+Tyler réfléchit longtemps, comme s'il écrivait une lettre à un roi. Puis il écrit : « TYLER B. #9. Nice socks. »
+
+« Nice socks ? s'indigne BriBri. C'est tout ? »
+
+« It's a compliment, man ! »
+
+Tyler tend le ballon à BriBri sans le regarder. BriBri le serre si fort qu'il manque de le dégonfler.
+
+« Me too ? » demande Owen.
+
+« Of course », dit Kaydoudou.
+
+Owen signe. Coach Whitfield écrit « Work rate ! » avec un cœur. Marcus, en dernier, ne met pas son nom. Il dessine une petite flèche qui traverse trois traits, et dessous, un seul mot : « Why ? »
+
+« Pourquoi quoi ? » demande BriBri.
+
+« Always why, dit Marcus en souriant. Toujours pourquoi. »
 
 * * *
 
-Les cadeaux arrivèrent le dernier jour.
-
-Diego vint à pied, avec son vélo à la main et un petit paquet. Il s'assit sur le perron de la maison, à côté de Kaydoudou. L'allée était pleine de cartons. Un camion de déménagement attendait devant la maison, à côté du panier de basket.
+Le dernier jour, Diego arrive à pied, son vélo à la main, et s'assoit sur les marches au milieu des cartons.
 
 « For you, bro. »
 
-C'était un bracelet tressé, en fils bleu et blanc, les couleurs du Salvador. Kaydoudou pensa au bracelet que BriBri avait donné à Ousmane, à l'aéroport de Douala, en janvier. Le njangi recommençait. On donne, et on ne perd rien.
+C'est un bracelet tressé, en fils bleus et blancs, les couleurs du Salvador.
 
-« Abuela made it, dit Diego. She says you're a good boy, for a guy who likes fractions. »
+« Abuela made it. She says you're a good boy... for a guy who likes fractions. »
 
-Kaydoudou mit le bracelet. Il ne trouvait pas les mots, ni en anglais ni en français. Alors il fit ce que faisait BriBri : il tendit le poing. Diego le cogna du sien. Kaydoudou posa sa main sur son cœur. Diego, après une seconde, l'imita.
+*Comme le bracelet de BriBri pour Ousmane*, pense Kaydoudou. *Le njangi recommence. On donne, et on ne perd rien.*
 
-Tyler arriva en voiture avec sa mère, un quart d'heure plus tard. Il ne descendit presque pas. Il tendit à BriBri un sachet en papier, par la vitre, en regardant ailleurs.
+Il glisse le bracelet à son poignet gauche. Il ne trouve pas les mots, alors il tend le poing. Diego le cogne. Main sur le cœur. Diego, après une seconde, fait pareil.
+
+« Brothers ? » demande Diego.
+
+« Brothers. »
+
+« Diego ! crie BriBri depuis la porte. Tu viens nous voir à Paris ? »
+
+« Sure, bro ! With Abuela ! »
+
+Un quart d'heure plus tard, Tyler arrive dans la voiture de sa mère. Il tend un sachet par la vitre, en regardant ailleurs.
 
 « It's stupid. Whatever. »
 
-BriBri ouvrit le sachet. Dedans, il y avait une paire de chaussettes de football toutes neuves, pliées avec soin. Une rouge. Une jaune.
+Dedans, il y a une paire de chaussettes de football toutes neuves. Une rouge. Une jaune.
 
-BriBri resta sans voix. C'était la première fois que Kaydoudou le voyait sans voix depuis sa naissance.
+BriBri reste sans voix. C'est la première fois que Kaydoudou voit ça depuis sa naissance.
 
-« So you don't run out, marmonna Tyler. In France. »
+« So you don't run out, marmonne Tyler. In France. »
 
-« Tyler », dit BriBri. Il s'approcha de la vitre. « You are my friend. You know that ? »
+« Tyler. » BriBri s'approche de la vitre. « You are my friend. You know that ? »
 
-Tyler rougit jusqu'au front, bredouilla quelque chose, et la voiture repartit. Mais au bout de la rue, au moment de tourner, une main sortit par la fenêtre et fit un grand signe. BriBri agita les bras jusqu'à ce qu'elle disparaisse.
+Tyler devient rouge jusqu'au front, et la voiture repart. Au bout de la rue, une main sort par la fenêtre. BriBri agite les bras jusqu'à ce qu'elle disparaisse.
 
-* * *
+« Il a dit que c'était stupide, dit-il tout bas. Mais il avait les yeux mouillés. Tu as vu ? »
 
-Le dernier soir à Waldorf, la maison était vide et résonnait. Les cartons étaient partis. Il ne restait que les matelas par terre et quatre valises dans l'entrée. Kaydoudou descendit une dernière fois au sous-sol. La chaudière ronronnait toujours. L'ampoule nue pendait toujours au bout de son fil. Il leva les yeux vers le plafond, où il y avait une petite trace ronde, la marque du ballon de Mami, un soir de janvier.
-
-Puis il sortit dans l'allée, où BriBri tirait au panier de basket avec le ballon de football. Il ratait tout, mais il riait. L'air sentait l'herbe coupée et la fin de l'été. Mr. Hayes était sur son perron avec Biscuit. Il leva la main sans rien dire.
-
-Ils prirent l'avion de nuit, depuis l'aéroport de Washington. Kaydoudou boucla sa ceinture, regarda par le hublot les lumières de la piste, et attendit la peur. La vieille peur de Douala, celle qui serrait le ventre et mouillait les mains. Elle vint un peu, au décollage, quand l'avion vibra et que le sol tomba d'un coup. Mais elle était petite, cette fois. Elle ressemblait à un caillou qu'on peut garder dans sa poche. Il ne murmura même pas « deux cents tonnes ». À côté de lui, BriBri, qui avait mis ses nouvelles chaussettes rouge et jaune, lui prit quand même la main. Kaydoudou le laissa faire.
+« J'ai vu. »
 
 * * *
 
-À Paris, le matin était gris et doux. Pendant que Papa cherchait les valises sur le tapis roulant, Kaydoudou s'assit sur un banc et ouvrit le carnet de Tonton Fokou. Il le relut depuis le début : les feuilles volantes de Bonamoussadi recopiées, la boue, la passe polie et la passe utile, la neige, le futsal, la grande question, les lignes, les bâtons comptés depuis le banc, 2030 ou 2034, et BriBri en dessous : « Et c'est nous. »
+Le dernier soir, la maison vide résonne. Kaydoudou remonte du sous-sol. Dans l'allée, BriBri tire au panier avec un ballon de foot. Il rate tout, et il rit.
 
-Il tourna la page jusqu'au début de la partie américaine. Elle n'avait pas encore de titre. Il prit son crayon le plus noir, et il écrivit, en haut, en lettres capitales :
+« Tu disais au revoir à la chaudière ? »
+
+« Au plafond. Il y a encore la trace du ballon de Mami. »
+
+« La huitième passe, en janvier. Bam. » BriBri rate encore le panier. « C'était ta passe. »
+
+« Non. La tienne. »
+
+« Tu crois qu'il y a des paniers de basket, à Paris ? »
+
+« Je crois qu'il y a de tout, à Paris. »
+
+« Même des Stallions ? »
+
+« Surtout des Stallions. »
+
+Sur son perron, Mr. Hayes lève la main sans rien dire. Biscuit remue la queue.
+
+L'avion part de nuit, de Washington. Au décollage, quand le sol tombe d'un coup, BriBri se penche vers son frère.
+
+« Tu as peur ? »
+
+« Un peu. »
+
+« Gros comment ? »
+
+Elle est petite, cette fois, la vieille peur de Douala.
+
+« Comme un caillou. Un caillou qu'on peut garder dans sa poche. »
+
+Il ne murmure même pas « deux cents tonnes ». BriBri, qui a mis ses chaussettes neuves, lui prend la main quand même.
+
+« Juste au cas où », chuchote-t-il.
+
+* * *
+
+À Paris, le matin est gris et doux. Sur un banc de l'aéroport, Kaydoudou ouvre le carnet de Tonton Fokou. BriBri lit par-dessus son épaule.
+
+« La boue ! La passe polie et la passe utile ! La neige ! Le futsal ! Les petits bâtons du banc ! » Il tourne une page. « 2030 ou 2034. Et c'est nous. » Il sourit. « Ça, c'est mon écriture. »
+
+« Je sais. »
+
+« Tu écris quoi, maintenant ? »
+
+« Le titre de l'Amérique. »
+
+Avec son crayon le plus noir, en lettres capitales, il écrit :
 
 « LA RAISON »
 
-Puis il referma le carnet, le serra contre lui, et leva les yeux vers ce nouveau pays qui parlait sa langue.
+« Pourquoi la raison ? »
+
+« Parce que là-bas, chaque passe devait avoir une raison. »
+
+BriBri réfléchit. « Et les chaussettes de Tyler, c'est quelle raison ? »
+
+« L'amitié. »
+
+« Ça, c'est une bonne raison. »
+
+« Les garçons ! appelle Papa. Les valises ! »
+
+Kaydoudou tourne la page. La suivante est toute blanche. Autour d'eux, tout le monde parle français.
+
+Kaydoudou serre le carnet contre lui. Il lève les yeux vers ce nouveau pays qui parle sa langue.
+
+*Ici*, pense-t-il, *ça va être facile.*
+
+Il se trompe.
 
 > [!CARNET] Leçon du Ballon n°16 : Compter ce qui compte
 > En avril : 70 % de possession, 5 ballons dans la surface, défaite.

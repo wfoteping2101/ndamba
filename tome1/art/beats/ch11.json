@@ -1,0 +1,52 @@
+{
+  "chapter": 11,
+  "beats": [
+    {
+      "id": "ch11b",
+      "anchor": "Il pique comme un faucon. Il vole le ballon.",
+      "shot": "dynamic",
+      "cast": [
+        "KAY"
+      ],
+      "extras": "The Severn River Hawks number 11: a small, skinny 12-year-old boy in a green kit with white number 11, sharp cat-like eyes, swooping in low like a hawk. Owen: a tall red-haired 12-year-old defender in the navy kit, arms flung up in dismay.",
+      "outfit": "Kaydoudou in the navy Potomac Valley kit with white number 8; the Hawks in green kits.",
+      "action": "The ball has just hit a clod of mud and bounced sideways off Owen's foot, a splash of mud in the air. The Hawks number 11 darts in at full speed and steals it, low and fast, his body leaning like a diving bird. Owen throws his hands to his head. Further back, Kaydoudou has stopped dead, mouth slightly open, seeing the danger one second too late.",
+      "location": "The muddy centre of the same spring pitch in Maryland, bare trees and parents blurred behind.",
+      "light": "Bright spring sun, flying droplets of mud catching the light, strong motion.",
+      "camera": "Low dynamic angle close to the grass, the number 11 rushing diagonally toward the right of the frame with the ball, Owen and Kaydoudou behind him, motion lines in the painting.",
+      "alt": "Le ballon rebondit sur une motte de boue ; le numéro 11 des Hawks fonce comme un faucon et le vole sous le nez d'Owen."
+    },
+    {
+      "id": "ch11c",
+      "anchor": "Papa le regarde dans le rétroviseur.",
+      "shot": "quiet",
+      "cast": [
+        "KAY",
+        "BRI",
+        "PAPA"
+      ],
+      "extras": "",
+      "outfit": "Papa Armand at the wheel in a dark winter jacket and his knitted green, red and yellow beanie. Kaydoudou and BriBri on the back seat, still in their muddy navy Potomac Valley kits under open jackets (Kaydoudou number 8), BriBri's red sock on his right foot and yellow sock on his left foot, Mami's patched ball with its red-and-yellow wax square on BriBri's lap.",
+      "action": "Inside the family car after the defeat. Papa's warm eyes look back at Kaydoudou in the rear-view mirror while he drives. On the back seat, Kaydoudou stares out of the window with a heavy, thoughtful face, a stone in his belly. Next to him BriBri hugs the patched ball and glances at his big brother, worried for him.",
+      "location": "The back seat of a modest family car on a Maryland road in early spring, bare trees and a grey sky sliding past the windows.",
+      "light": "Soft overcast daylight through the windows, a cool blue cast with warm skin tones, the mirror catching a bright strip of light on Papa's eyes.",
+      "camera": "Medium shot from the front passenger side looking back, the rear-view mirror with Papa's eyes in the upper left, the two brothers on the back seat filling the right two thirds.",
+      "alt": "Dans la voiture, Papa regarde Kaydoudou dans le rétroviseur ; BriBri serre le ballon de Mami et observe son grand frère."
+    },
+    {
+      "id": "ch11d",
+      "anchor": "Il prend la tablette. Elle est lourde et tiède, comme une chose vivante.",
+      "shot": "quiet",
+      "cast": [
+        "KAY"
+      ],
+      "extras": "Marcus Bell (28), the academy's video analyst: a slim African-American man with round glasses, a short neat fade haircut and a grey hoodie, kind shining eyes, smiling.",
+      "outfit": "Kaydoudou in the navy Potomac Valley academy sweatshirt, his thick notebook covered in green and orange wax cloth open on his knees, a pencil behind his ear.",
+      "action": "In the empty meeting room, Marcus Bell holds out his tablet to Kaydoudou with both hands, like a gift. Kaydoudou, still seated, takes it carefully, a first real smile on his face. On the tablet screen, a small pitch diagram with many small red crosses and the number 33 at the top.",
+      "location": "A small grey meeting room next to an indoor football dome: rows of plastic chairs pushed around, a whiteboard with marker traces, a big screen switched off.",
+      "light": "Late-afternoon light from a single window, warm on the faces, the tablet screen glowing softly.",
+      "camera": "Quiet medium close shot, the tablet passing between the two pairs of hands at the centre, faces lit on each side.",
+      "alt": "Dans la salle vide, Marcus Bell tend sa tablette à Kaydoudou, qui sourit pour la première fois depuis samedi."
+    }
+  ]
+}

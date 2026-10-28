@@ -354,7 +354,7 @@ function Tagger({ match }: { match: Match }) {
               <div className="ml-2 flex items-center gap-1">
                 {iconBtn(<Undo2 size={20} />, t('live.undo'), undo, undefined, true)}
                 {iconBtn(<ListOrdered size={20} />, t('live.log'), () => setSheet('log'), undefined, true)}
-                {iconBtn(<Eye size={20} />, t('journey:actions.observe'), () => setSheet('observe'), undefined, true)}
+                {iconBtn(<Eye size={20} />, t('journey:actions.observe'), () => setSheet('observe'))}
                 {iconBtn(<Keyboard size={20} />, t('live.help'), () => setSheet('help'))}
                 {iconBtn(<Settings2 size={20} />, t('live.settings'), () => setSheet('settings'))}
               </div>

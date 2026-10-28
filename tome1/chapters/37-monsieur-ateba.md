@@ -8,121 +8,269 @@ resume: Un homme au bonnet vert, rouge et jaune vient regarder les matchs de Kin
 illustration: Plan large au bord d'un terrain de Londres, un samedi d'hiver, ciel blanc, pluie fine. Derrière la main courante, un homme en long manteau noir, bonnet de laine vert, rouge et jaune, un carnet noir à la main, observe sans bouger. Au premier plan, Kaydoudou, numéro 8 en maillot vert sombre, raie dessinée à gauche, vient de récupérer le ballon et, les yeux déjà levés vers la profondeur vide, le frappe d'une seule touche. Sur la gauche, BriBri, chaussettes dépareillées rouge et jaune, a démarré avant même la passe et file dans le dos de la défense. Émotion : le regard qui part devant, la tension d'être observé.
 ---
 
-Le bonnet, Kaydoudou le remarqua avant l'homme.
-
-C'était un dimanche matin de janvier, au bord d'un terrain synthétique de Bromley. Le ciel était blanc comme une feuille de papier, la pluie fine tombait comme d'habitude, et une quarantaine de parents grelottaient derrière la main courante, une tasse fumante à la main. Au milieu de tous ces anoraks gris et noirs, il y avait une tache de couleur : un bonnet de laine à bandes verte, rouge et jaune, avec une petite étoile brodée sur le devant.
-
-Les couleurs du Cameroun.
-
-Kaydoudou le regarda si longtemps pendant l'échauffement qu'il reçut un ballon de Freddie en pleine oreille.
-
 « Wake up, Eight ! »
 
-Le bonnet appartenait à un homme d'une cinquantaine d'années, grand, en long manteau noir, des lunettes fines et une moustache poivre et sel. Il ne buvait rien. Il ne parlait à personne. Il tenait un petit carnet à couverture noire dans lequel il écrivait de temps en temps, sans regarder sa page, les yeux toujours fixés sur le terrain.
+Bam. Le ballon de Freddie arrive en pleine oreille de Kaydoudou.
 
-Le samedi suivant, il était encore là. Et le samedi d'après aussi, à Lewisham, sous une averse si forte que même les pigeons s'étaient abrités.
+« Réveille-toi, le Huit ! Tu regardes quoi ? »
 
-« C'est un espion », décida BriBri dans le bus du retour, très sérieux. « Il est envoyé par une académie ennemie pour voler nos secrets. Peut-être par Hampton Forest. Il écrit tout dans son petit carnet. »
+Kaydoudou regarde un bonnet.
 
-« Toi aussi, tu écris dans un petit carnet », fit remarquer Kaydoudou.
+Le bonnet, il l'a vu avant l'homme.
 
-BriBri le regarda avec de grands yeux. « Alors toi aussi, tu es peut-être un espion. Je ne te connais pas si bien que ça, finalement. »
+Dimanche matin de janvier, sur un terrain synthétique de Bromley. Ciel blanc comme une feuille de papier. Pluie fine. Derrière la barrière, une quarantaine de parents tremblent de froid, une tasse fumante à la main. Et au milieu de tous ces anoraks gris, une tache de couleur.
+
+BriBri arrive en trottinant.
+
+« Tu as vu ? Vert, rouge, jaune. Avec une petite étoile brodée devant. »
+
+« Les couleurs du Cameroun », souffle Kaydoudou.
+
+Sous le bonnet, un homme d'une cinquantaine d'années. Grand. Long manteau noir. Lunettes fines. Moustache poivre et sel.
+
+« Il ne boit rien, chuchote BriBri. Il ne parle à personne. Il ne quitte pas le terrain des yeux. Et il écrit dans un petit carnet noir sans regarder sa page. Ça, c'est louche. »
+
+Le samedi suivant, l'homme est encore là. Et le samedi d'après aussi, à Lewisham.
+
+« Même sous le déluge, il est venu ! dit BriBri dans le bus du retour. Les pigeons se cachaient. Lui, non. C'est un espion. Une académie ennemie l'envoie voler nos secrets. Hampton Forest, peut-être. Il écrit tout dans son petit carnet. »
+
+« Moi aussi, j'écris dans un petit carnet », dit Kaydoudou.
+
+BriBri ouvre de grands yeux.
+
+« Alors toi aussi, tu es peut-être un espion. Je ne te connais pas si bien que ça, finalement. » Il réfléchit. « Lui, c'est l'Agent Bonnet. Toi, tu es l'Agent Carnet. »
+
+« Et toi ? »
+
+« Moi, je suis l'Agent Chaussettes. Le plus dangereux. »
 
 * * *
 
-Le mystère dura jusqu'au quatrième match. Ce jour-là, à la fin, l'homme au bonnet ne repartit pas. Il attendit sur le parking, sous un grand parapluie noir, près de la voiture de Papa. Quand les garçons arrivèrent, les cheveux encore mouillés de la douche, il leur tendit la main.
+Le mystère dure jusqu'au quatrième match.
 
-« Bonjour, messieurs. » Il parlait français avec un accent qui fit sauter le cœur de Kaydoudou dans sa poitrine : l'accent de Douala, chantant, avec les « r » qui roulaient comme des billes. « Joseph Atéba. Je travaille pour la Fédération camerounaise de football. En Europe. »
+Ce jour-là, l'homme au bonnet attend sur le parking, sous un grand parapluie noir, près de la voiture de Papa. Les garçons arrivent, les cheveux encore mouillés de la douche. Il leur tend la main.
 
-Papa resta une seconde la bouche ouverte. Puis il serra la main de l'homme entre les deux siennes, comme on salue un cousin qu'on n'a pas vu depuis vingt ans.
+« Bonjour, messieurs. »
 
-Ils s'abritèrent dans le petit café du club, où le thé avait un goût de carton mouillé. Monsieur Atéba expliqua. Son métier, c'était de chercher. Partout en Europe, à Paris, à Bruxelles, à Londres, à Madrid, il y avait des enfants nés au Cameroun, ou nés ailleurs de parents camerounais, qui jouaient dans des clubs. Personne ne les voyait depuis Yaoundé. Alors lui, il les voyait.
+« L'espion parle français ! » souffle BriBri.
 
-« Il y a l'été prochain un stage de détection pour les Lionceaux U17, dit-il en tournant lentement sa cuillère. La sélection des moins de dix-sept ans. Au Cameroun. On invite une trentaine de garçons, venus de partout. » Il les regarda tour à tour, Kaydoudou, puis BriBri. « Je vous observe depuis un mois. Je vais continuer à vous observer jusqu'à la fin de la saison. »
+Il parle français, oui. Et son accent fait sauter le cœur de Kaydoudou. L'accent de Douala, chantant, avec des « r » qui roulent comme des billes.
 
-BriBri ne disait plus rien. Pour BriBri, ne rien dire, c'était un événement historique. Il tint presque une minute. Puis il leva la main, comme en classe.
+« Joseph Atéba. Je travaille pour la Fédération camerounaise de football. En Europe. »
+
+Papa reste une seconde la bouche ouverte. Puis il serre la main de l'homme entre les deux siennes, comme un cousin perdu depuis vingt ans.
+
+« Douala ? » demande Papa, la voix qui tremble.
+
+« Douala. Et vous, Bonamoussadi, je crois. Vos fils ont grandi sur la terre rouge. Ça se voit. »
+
+Ils s'abritent dans le petit café du club.
+
+« Ce thé a un goût de carton mouillé », chuchote BriBri.
+
+« C'est toi, le petit aux chaussettes ? » demande Monsieur Atéba.
+
+« BriBri. Ailier gauche. Et lui, c'est le 8. Kaydoudou. Il parle peu, mais il voit tout. »
+
+« Je sais. C'est pour ça que je suis là. » Monsieur Atéba tourne lentement sa cuillère. « Mon métier, c'est de chercher. À Paris, à Bruxelles, à Londres, à Madrid, il y a des enfants nés au Cameroun, ou nés ailleurs de parents camerounais. Ils jouent dans des clubs. Depuis Yaoundé, personne ne les voit. Alors moi, je les vois. »
+
+« L'été prochain, il y a un stage de détection pour les Lionceaux U17. La sélection des moins de dix-sept ans. Au Cameroun. On invite une trentaine de garçons, venus de partout. » Il regarde Kaydoudou, puis BriBri. « Je vous observe depuis un mois. Je vais continuer jusqu'à la fin de la saison. »
+
+Pour BriBri, se taire, c'est un événement historique. Il tient presque une minute. Puis il lève la main, comme en classe.
 
 « Monsieur, excusez-moi. Vous êtes un espion ? »
 
-Papa ferma les yeux. Kaydoudou aurait voulu disparaître sous la table. Mais Monsieur Atéba ne se fâcha pas. Il regarda BriBri par-dessus ses lunettes, très sérieux.
+Papa ferme les yeux. Kaydoudou voudrait disparaître sous la table.
 
-« En quelque sorte. Un espion du Cameroun. Je cherche des trésors cachés sous la pluie. » Il tapota la table de son index. « Mais un trésor, il faut d'abord vérifier que c'est de l'or, et pas seulement quelque chose qui brille. »
+Mais Monsieur Atéba ne se fâche pas. Il regarde BriBri par-dessus ses lunettes.
 
-BriBri hocha la tête lentement, comme s'il venait de recevoir une mission secrète. Sous la table, il donna un coup de pied à son frère. Kaydoudou comprit tout de suite ce que ça voulait dire : je te l'avais dit.
+« En quelque sorte. Un espion du Cameroun. Je cherche des trésors cachés sous la pluie. Mais un trésor, il faut d'abord vérifier que c'est de l'or. Et pas seulement quelque chose qui brille. »
 
-« Je ne vous promets rien », continua Monsieur Atéba. Il ferma son petit carnet noir. « Des garçons rapides, des garçons forts, des garçons qui dribblent, j'en vois tous les dimanches. Moi, je cherche autre chose. » Il se tapota la tempe, exactement comme Coach Okafor le premier jour. « Montrez-moi votre tête, pas seulement vos pieds. »
+BriBri hoche la tête, comme un agent secret qui reçoit sa mission. Sous la table, il donne un coup de pied à son frère. *Je te l'avais dit.*
 
-* * *
+« Je ne vous promets rien », dit Monsieur Atéba en fermant son carnet noir. « Des garçons rapides, des garçons forts, des garçons qui dribblent, j'en vois tous les dimanches. Moi, je cherche autre chose. »
 
-Kaydoudou ne dormit pas cette nuit-là.
+Il se tapote la tempe, exactement comme Coach Okafor le premier jour.
 
-Allongé dans le lit sous le toit penché, il écoutait la pluie gratter les tuiles et il pensait aux Lions Indomptables. À Papa devant les vieilles vidéos de 1990, qui se levait à chaque but comme s'il avait encore six ans. À la blessure de 2026, quand le Cameroun ne s'était pas qualifié et que la maison de Waldorf était restée silencieuse tout un soir. À la page du carnet, écrite en grand dans le Maryland : « 2030 ou 2034. » Et dessous, de l'écriture penchée de BriBri : « Et c'est nous. »
-
-C'était un rêve. Un rêve, c'est léger, ça se porte facilement. Mais maintenant, il y avait un homme avec un carnet noir, et le rêve était devenu lourd comme une valise pleine.
-
-Le samedi suivant, contre Eltham Vale, il joua le pire match de sa saison.
-
-Chaque fois qu'il recevait le ballon, il sentait le bonnet tricolore derrière la main courante. Il avait l'impression que chaque passe était un examen. Alors il fit les passes les plus sûres du monde : sur le côté, en arrière, à Tom, à Samir, encore à Tom. Des passes polies. Les plus polies de sa vie. Il entendait presque la voix de Tonton Fokou sous le manguier : le football n'est pas un salon, mon fils. À la 34e minute, il tenta enfin une passe vers l'avant, mais si tard, si crispé, qu'elle partit derrière BriBri, dans la touche. À la 50e, il perdit un ballon tout bête, dos au jeu, en oubliant tout ce qu'Okafor lui avait appris dans la cage. Eltham Vale marqua sur l'action. Kingsbridge arracha le match nul à la dernière minute, grâce à un coup franc de Theo.
-
-Okafor le remplaça à la 65e minute. Il ne cria pas. En passant devant le banc, il lui posa simplement la main sur la tête.
-
-À la fin, Monsieur Atéba était déjà parti.
+« Montrez-moi votre tête. Pas seulement vos pieds. »
 
 * * *
 
-Ce soir-là, BriBri le trouva assis sur la dernière marche de l'escalier, celle qui grinçait, le carnet couvert de pagne fermé sur les genoux.
+Cette nuit-là, Kaydoudou ne dort pas.
 
-BriBri s'assit à côté de lui. Dans cet escalier, on ne tenait à deux qu'en se collant épaule contre épaule. Pendant un moment, ils ne dirent rien. En bas, Maman écoutait la radio en préparant le thé, et une odeur de plantain frit montait de la cuisine.
+Sous le toit penché, la pluie gratte les tuiles. Il pense aux Lions Indomptables. À Papa devant les vidéos de 1990, qui se levait à chaque but comme s'il avait encore six ans. À 2026, quand le Cameroun ne s'était pas qualifié : la maison de Waldorf était restée muette tout un soir.
 
-« Tu te souviens de la terre rouge ? » demanda BriBri.
+Il pense à la page du carnet, écrite en grand dans le Maryland : « 2030 ou 2034. » Et dessous, de l'écriture penchée de BriBri : « Et c'est nous. »
 
-Kaydoudou hocha la tête.
+Un rêve, c'est léger. Mais maintenant, il y a un homme avec un carnet noir. Et le rêve est devenu lourd comme une valise pleine.
 
-« Tonton Fokou sur son bidon. Le sifflet en bois. Madame Ekotto qui criait plus fort que les benskins. Ousmane avec ses mains. » BriBri sourit. « Tu te souviens pourquoi on jouait, là-bas ? »
+* * *
+
+Le samedi suivant, contre Eltham Vale, il joue le pire match de sa saison.
+
+Chaque fois qu'il reçoit le ballon, il sent le bonnet derrière la barrière. Chaque passe devient un examen. Alors il fait les passes les plus sûres du monde.
+
+Sur le côté. En arrière. À Tom. À Samir. Encore à Tom.
+
+« Encore moi ? s'étonne Tom. Je suis défenseur, moi ! »
+
+Depuis son but, Freddie hurle : « WAKE UP, EIGHT ! » Cette fois, personne ne rit.
+
+« Kaydoudou ! Devant ! » crie BriBri, tout seul sur son aile.
+
+Des passes polies. Les plus polies de sa vie. Dans sa tête, la voix de Tonton Fokou gronde sous le manguier : *Le football n'est pas un salon, mon fils.*
+
+34e minute. Il tente enfin une passe vers l'avant. Trop tard. Trop crispée. Elle file derrière BriBri, dans la touche.
+
+« Kaydoudou ! » BriBri ouvre les bras. « La touche n'est pas dans notre équipe ! »
+
+50e minute. Il perd un ballon tout bête, dos au jeu. La cage d'Okafor ? Oubliée. Eltham Vale marque sur l'action.
+
+65e minute. Okafor le remplace. Il ne crie pas. En passant devant le banc, il lui pose juste la main sur la tête.
+
+À la dernière minute, Theo égalise sur un coup franc. 1-1.
+
+À la fin, Monsieur Atéba est déjà parti.
+
+« Il n'est pas resté jusqu'au bout », dit BriBri tout bas.
+
+* * *
+
+Le soir, BriBri le trouve assis sur la dernière marche de l'escalier, celle qui grince. Le carnet couvert de pagne est fermé sur ses genoux.
+
+BriBri s'assoit à côté de lui. Dans cet escalier, on ne tient à deux qu'épaule contre épaule. En bas, Maman écoute la radio en préparant le thé. Une odeur de plantain frit monte de la cuisine.
+
+« Les garçons ! Le plantain est prêt ! »
+
+« Une minute, Maman ! » répond BriBri. Puis, plus bas : « Tu te souviens de la terre rouge ? »
+
+Kaydoudou hoche la tête.
+
+« Tonton Fokou sur son bidon. Le sifflet en bois. Madame Ekotto qui criait plus fort que les benskins. Ousmane avec ses grandes mains. » BriBri sourit. « Tu te souviens pourquoi on jouait, là-bas ? »
 
 « Parce qu'on aimait ça. »
 
-« Parce que le ballon devait voyager. » BriBri lui donna un coup d'épaule. « On joue pour faire voyager le ballon, Kaydoudou. Pas pour Monsieur Atéba. Lui, il regarde. C'est son travail. Nous, on joue. C'est le nôtre. »
+« Non. Parce que le ballon devait voyager. Tonton Fokou ne regardait jamais qui nous regardait. Il criait : houou ! Le ballon doit voyager ! Et on le faisait voyager. Même devant les Requins de Bépanda. Même devant tout le quartier. »
 
-Kaydoudou le regarda. Il y avait des moments, rares mais réels, où son petit frère devenait son grand frère.
+Il lui donne un coup d'épaule. « On joue pour faire voyager le ballon, Kaydoudou. Pas pour Monsieur Atéba. Lui, il regarde. C'est son travail. Nous, on joue. C'est le nôtre. »
+
+Kaydoudou le regarde. Parfois, c'est rare, mais ça arrive : son petit frère devient son grand frère.
 
 « Depuis quand tu es aussi sage ? »
 
 « Depuis toujours. Je le cachais pour ne pas t'humilier. »
 
-Ils firent leur rituel, là, dans l'escalier étroit : poing contre poing, main sur le cœur. Puis BriBri ajouta une prière, les yeux fermés : « Et que Monsieur Atéba ne me voie jamais tomber. »
+Ils font leur rituel. Poing contre poing. Main sur le cœur.
+
+Puis BriBri ferme les yeux et joint les mains.
+
+« Et que Monsieur Atéba ne me voie jamais tomber. Amen. »
 
 * * *
 
-À l'entraînement du mardi, Okafor rassembla tout le monde au milieu du terrain, sous les projecteurs.
+Mardi, à l'entraînement, Okafor rassemble tout le monde au milieu du terrain, sous les projecteurs. Il parle anglais, mais Kaydoudou l'entend en français.
 
-« Transition, gentlemen. The most important second in football. » La seconde la plus importante du football. « The second after you win the ball back. »
+« Transition, gentlemen ! La seconde la plus importante du football. La seconde juste après la récupération. Quand on reprend le ballon, l'adversaire est en désordre. Ses joueurs sont partis attaquer. Ils sont mal placés. Ils regardent du mauvais côté. Pendant une ou deux secondes, le but est peut-être déjà ouvert. »
 
-Il expliqua. Au moment exact où on récupère le ballon, l'adversaire est désorganisé. Ses joueurs étaient partis attaquer, ils sont mal placés, ils regardent dans la mauvaise direction. Pendant une ou deux secondes, le but est peut-être déjà ouvert.
+« Comme quand Maman oublie de fermer le placard à biscuits », chuchote BriBri.
 
-« So, your first look goes forward. » Le premier regard va devant. « Always. Before anything. Look at the goal. Is it open ? Then go. Fast. Now. » Il leva un deuxième doigt. « Is it closed ? Then keep the ball. Breathe. Organise. But you look forward first. Always. »
+« Exactly, Socks. »
 
-Kaydoudou nota tout dans sa tête. Le premier regard. Avant de recevoir, regarder, disait Lacombe. Après avoir récupéré, regarder devant, disait Okafor. C'étaient les mêmes yeux, mais tournés vers une autre seconde.
+« Et si c'est à moitié ouvert, coach ? » demande Freddie.
 
-Ils travaillèrent l'exercice pendant une heure. Un groupe attaquait, l'autre défendait, et au moment de la récupération, Okafor hurlait « LOOK ! » Les premières fois, Kaydoudou cherchait le partenaire le plus proche, par habitude. Puis, petit à petit, ses yeux apprirent à partir loin d'abord, vers la profondeur, avant de revenir.
+« Alors c'est à moitié fermé, Shaw ! » Okafor lève un doigt. « Donc le premier regard va devant. Toujours. Avant tout. C'est ouvert ? On y va. Vite. Maintenant. »
+
+Il lève un deuxième doigt.
+
+« C'est fermé ? On garde le ballon. On respire. On s'organise. Mais d'abord, on regarde devant. Always. »
+
+« Monsieur Lacombe disait : avant de recevoir, tu regardes, murmure Kaydoudou. Okafor dit : après avoir récupéré, tu regardes devant. »
+
+« Les mêmes yeux », dit BriBri.
+
+« Oui. Mais pour une autre seconde. »
+
+Une heure d'exercice. Un groupe attaque, l'autre défend. À chaque récupération, Okafor hurle :
+
+« LOOK ! »
+
+Les premières fois, Kaydoudou cherche le partenaire le plus proche. L'habitude.
+
+« No ! Loin d'abord ! Far first ! LOOK ! »
+
+Petit à petit, ses yeux apprennent à partir loin d'abord. Vers la profondeur.
+
+« LOOK ! »
+
+À la fin, ses yeux partent tout seuls.
 
 * * *
 
-Le samedi suivant, Kingsbridge jouait le dernier match de poule de la saison, contre Northfleet Albion. Une victoire, et c'était la qualification pour la phase finale. Le bonnet tricolore était là, derrière la main courante, sous la pluie.
+Samedi. Dernier match de poule, contre Northfleet Albion.
 
-Kaydoudou le vit. Puis il le laissa partir de sa tête, comme on laisse partir un ballon.
+« Une victoire, gentlemen, dit Okafor dans le vestiaire. Une seule. Et on est en phase finale. »
 
-À 0-0, à la 56e minute, Jaden et lui pressèrent ensemble sur une passe en arrière du milieu adverse. Le déclencheur. Kaydoudou récupéra le ballon au milieu du terrain. Et avant même de le contrôler, ses yeux partirent devant.
+Ciel blanc. Pluie fine. Derrière la barrière, le long manteau noir, le carnet noir, le bonnet tricolore. Monsieur Atéba ne bouge pas.
 
-Il vit tout. Les défenseurs de Northfleet étaient montés pour attaquer et ils se retournaient, trop tard. Derrière eux, l'herbe était vide, verte et brillante comme une piste d'atterrissage. Et sur la gauche, une chaussette rouge et une chaussette jaune démarraient déjà.
+Kaydoudou le voit. Puis il le laisse partir de sa tête, comme on laisse partir un ballon.
 
-Une seule touche. Une passe qui traversa toute la ligne, dans la course de son frère.
+0-0. 56e minute.
 
-BriBri n'eut même pas besoin de dribbler. Il fila seul vers le gardien et glissa le ballon sous son bras. 1-0. Il courut jusqu'au poteau de corner et fit la danse de Roger Milla sous la pluie, les hanches qui tournaient, le doigt levé vers le ciel blanc. Le match se termina sur ce score.
+Le milieu de Northfleet fait une passe en arrière. Le déclencheur.
 
-Kingsbridge Albion était qualifié pour la phase finale de la Coupe des Académies, un grand tournoi international de jeunes joué en Angleterre au printemps. Des académies de toute l'Europe y viendraient.
+« Ready, lamppost ? » lance Jaden. Prêt, le lampadaire ?
 
-Dans le vestiaire, pendant que tout le monde hurlait, Kaydoudou regarda par la fenêtre embuée. Sur le parking, sous son parapluie noir, Monsieur Atéba refermait son petit carnet. Il leva les yeux vers la fenêtre. Il ne sourit pas. Mais il fit un tout petit signe de tête.
+« NOW ! » crie Kaydoudou.
+
+Jaden part de face. Kaydoudou devient son ombre. Clac ! La tenaille se referme. Le ballon est à lui, au milieu du terrain.
+
+Et le temps s'arrête.
+
+Les gouttes de pluie restent suspendues. Le bruit des parents s'éteint. Le maillot vert sombre colle à son dos, le 8 blanc mouillé de pluie. Dans sa tête, une seule voix.
+
+*LOOK.*
+
+Ses yeux partent devant. Avant même de contrôler.
+
+Il voit tout. Les défenseurs de Northfleet sont montés pour attaquer. Ils se retournent. Trop tard. Derrière eux, l'herbe est vide, verte et brillante, comme une piste d'atterrissage.
+
+Et sur la gauche, une chaussette rouge et une chaussette jaune démarrent déjà.
+
+BriBri n'a pas attendu la passe. Il sait qu'elle va venir.
+
+Une seule touche.
+
+Le ballon traverse toute la ligne et tombe pile dans la course de son frère.
+
+Tout repart d'un coup.
+
+BriBri n'a même pas besoin de dribbler. Il file seul vers le gardien et glisse le ballon sous son bras. Chhh, fait le filet.
+
+1-0 !
+
+Il court jusqu'au poteau de corner. Main sur la hanche. Doigt levé vers le ciel blanc. La danse de Roger Milla, sous la pluie.
+
+« C'était quoi, cette passe ? » hurle-t-il quand Kaydoudou arrive.
+
+« Le premier regard. »
+
+« Non ! C'était une passe-avion ! Elle a décollé de ton pied et elle a atterri dans le mien ! »
+
+« The plane pass ! » crie Freddie depuis son but.
+
+Le match se termine sur ce score. Dans le vestiaire, Okafor monte sur le banc.
+
+« Gentlemen ! On est qualifiés pour la phase finale de la Coupe des Académies ! Un grand tournoi international de jeunes. Ici, en Angleterre, au printemps. Des académies de toute l'Europe vont venir. Et nous, on sera là ! »
+
+« LA COUPE DES ACADÉMIES ! » hurle BriBri. Tout le monde hurle avec lui. Freddie chante. Theo tape sur les casiers. Bam-bam-bam.
+
+Kaydoudou, lui, regarde par la fenêtre pleine de buée.
+
+Sur le parking, sous son parapluie noir, Monsieur Atéba referme son petit carnet. Il lève les yeux vers la fenêtre.
+
+Il ne sourit pas.
+
+Mais il fait un tout petit signe de tête.
 
 > [!CARNET] Leçon du Ballon n°37 : Après la récupération, regarder devant
 > Quand on reprend le ballon, l'adversaire n'est pas en place : il était parti attaquer.

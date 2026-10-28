@@ -10,7 +10,7 @@ illustration: Plan large en plongée, matin d'octobre sur le terrain d'herbe de 
 
 « Au secours ! Quelqu'un a cassé le terrain ! »
 
-BriBri s'arrête net au bord de l'herbe, le sac sur l'épaule. Lundi matin, La Granja del Mar. Le terrain est rayé.
+BriBri s'arrête net au bord de l'herbe, le sac sur l'épaule. Un lundi matin d'octobre, à La Granja del Mar. Le terrain est rayé.
 
 Quatre longues lignes blanches le traversent d'un but à l'autre. Toutes fraîches.
 
@@ -26,13 +26,13 @@ Au milieu, Jordi Puig pousse une petite machine à roulettes qui crache de la pe
 
 « Comme à la piscine ? »
 
-BriBri n'attend pas la réponse. Il se met en position de départ, les bras tendus, et prend sa voix de commentateur :
+BriBri se met en position de départ, les bras tendus :
 
 « Dans le couloir numéro un, pour le Cameroun... BRIBRI NGASSA ! »
 
 Il plonge dans l'herbe et fait trois mètres de brasse. Nil applaudit. Nil n'applaudit jamais.
 
-Jordi réunit l'équipe au centre. Il parle si doucement que tout le monde doit se serrer.
+Jordi réunit l'équipe au centre. Il parle tout doucement, comme toujours.
 
 « Cinc carrils. Cinq couloirs. » Son crayon les montre un par un. « Deux sur les côtés, contre les lignes de touche. Deux entre les côtés et le milieu : els mitjos espais, les demi-espaces. Et un au centre : l'axe. »
 
@@ -54,7 +54,7 @@ Le crayon montre la bande d'herbe tout à gauche, contre les vignes rousses.
 
 « Celui-là ? Le tout petit, à côté des bouteilles d'eau et du seau de peinture ? Mais c'est le bout du monde ! »
 
-Jordi ne répond pas. Il repasse une couche de blanc sur la ligne qui ferme le couloir de BriBri, lentement, comme on ferme une barrière. Puis il continue vers le milieu du terrain.
+Jordi ne répond pas. Il reprend sa machine et repasse une couche de blanc sur la ligne qui ferme le couloir de BriBri, lentement, comme on ferme une barrière. Puis il continue vers le milieu du terrain.
 
 BriBri s'assoit en tailleur au bord de sa bande d'herbe, à côté du seau de peinture, le menton dans les mains. Il boude. Entre les vignes et les pins, sous le ciel bleu pâle, la ligne fraîche brille.
 
@@ -70,7 +70,7 @@ Dès qu'il glisse vers le milieu, attiré par le ballon comme un moustique par u
 
 Il ne crie pas. Il murmure. Et tout le monde se retourne.
 
-Alors BriBri retourne contre sa ligne. Le ballon tourne de l'autre côté, entre Nil, Kaydoudou et Laia. Lui, il fait la seule chose qui lui reste. Le commentateur.
+Alors BriBri retourne contre sa ligne. Le ballon tourne de l'autre côté. Lui, il fait la seule chose qui lui reste : le commentateur.
 
 « Mesdames et messieurs, bonjour du couloir numéro un ! Ici, il ne se passe rien. Absolument rien. Le joueur BriBri Ngassa compte les vignes. Quarante et une... quarante-deux... quarante-trois ! Record du monde ! »
 
@@ -106,7 +106,7 @@ La peur qu'on l'oublie.
 
 « Je sais que c'est loin du ballon. » BriBri baisse la voix. « Et si vous m'oubliez, là-bas ? »
 
-Kaydoudou boit une gorgée. Il ne rit pas.
+Kaydoudou ne rit pas.
 
 « Personne ne peut oublier quelqu'un qui porte une chaussette rouge et une chaussette jaune. »
 
@@ -134,7 +134,7 @@ Puis, tout bas, à Kaydoudou :
 
 * * *
 
-Samedi. Le Costa Daurada reçoit le CF Torre del Far, une équipe d'un village de pêcheurs, un peu plus au sud. Des garçons et des filles costauds, aux bras bronzés. Dès la première minute, ils se serrent tous devant leur but.
+Samedi. Le Costa Daurada reçoit le CF Torre del Far, un village de pêcheurs du sud. Des garçons et des filles costauds, aux bras bronzés. Dès la première minute, ils se serrent tous devant leur but.
 
 « Des sardines ! chuchote BriBri. Ils défendent comme des sardines dans une boîte ! »
 
@@ -163,6 +163,10 @@ Mi-temps : 0-0. Un 0-0 poisseux, qui colle aux crampons.
 Jordi ne crie pas. Il ne crie jamais. Il s'accroupit devant BriBri, sur le banc, et montre la ligne de touche.
 
 « Una mitja part. Tu m'avais promis. »
+
+« Je sais. Mais le ballon me manque. »
+
+« Il va revenir. Par un autre chemin. »
 
 BriBri soupire jusqu'au fond de ses chaussettes, la rouge et la jaune.
 
@@ -248,7 +252,7 @@ Kaydoudou sourit en coin et regarde par la fenêtre. Pour BriBri, ce sourire-là
 
 * * *
 
-Le lundi, Jordi les fait entrer dans la salle vidéo de la masia. Une vieille table de ferme. L'odeur des figues dans la cour. Un écran blanc tendu sur une poutre.
+Le lundi, salle vidéo de la masia. Une vieille table de ferme. Un écran blanc tendu sur une poutre.
 
 Premier but. Pause. Jordi prend un feutre et dessine sur l'écran. Un cercle autour de BriBri, collé à la touche. Un cercle autour du numéro 2, collé à BriBri. Une flèche vers le trou. Et dans le trou, Laia.
 
@@ -261,6 +265,8 @@ Deuxième but. Même cercle. Même flèche. Même trou. Kaydoudou dedans.
 « Dos. »
 
 « Encore le cercle de BriBri ! » s'écrie Laia.
+
+« C'est moi, ce cercle ? C'est vraiment moi ? »
 
 Troisième but. Même cercle, encore. Nil débarque dans le trou avec sa tête de surpris, et sert Pol.
 

@@ -84,7 +84,8 @@
       "session": "Session attended",
       "absent": "Absence",
       "obs": "Observation: strength, to work on"
-    }
+    },
+    "empty": "The season takes shape here: sessions, matches, observations, evaluations and milestones."
   },
   "skills": {
     "title": "Progress by competence",
@@ -303,7 +304,6 @@
     "startsVal": "{{starts}} of {{played}}",
     "goals": "Goals",
     "shots": "Shots",
-    "shotsVal": "{{shots}}, {{on}} on target",
     "passAcc": "Passes completed",
     "passesVal": "{{ok}} of {{n}}",
     "progressions": "Actions moving the ball forward",
@@ -317,7 +317,8 @@
     "shareRegain": "Share of the team's 5-second regains",
     "minutesByMatch": "Minutes per match",
     "legendStart": "Started",
-    "legendSub": "Came on"
+    "legendSub": "Came on",
+    "onTarget": "on target: {{n}}"
   },
   "evaluate": {
     "title": "Evaluate {{name}}",

@@ -84,7 +84,8 @@
       "session": "Séance suivie",
       "absent": "Absence",
       "obs": "Observation : positive, à travailler"
-    }
+    },
+    "empty": "La saison se dessinera ici : séances, matchs, observations, évaluations et jalons."
   },
   "skills": {
     "title": "Progression par compétence",
@@ -303,7 +304,6 @@
     "startsVal": "{{starts}} sur {{played}}",
     "goals": "Buts",
     "shots": "Tirs",
-    "shotsVal": "{{shots}}, dont {{on}} cadrés",
     "passAcc": "Passes réussies",
     "passesVal": "{{ok}} sur {{n}}",
     "progressions": "Actions qui font avancer",
@@ -317,7 +317,8 @@
     "shareRegain": "Part des reprises en 5 s de l'équipe",
     "minutesByMatch": "Minutes par match",
     "legendStart": "Titulaire",
-    "legendSub": "Entré en jeu"
+    "legendSub": "Entré en jeu",
+    "onTarget": "cadrés : {{n}}"
   },
   "evaluate": {
     "title": "Évaluer {{name}}",

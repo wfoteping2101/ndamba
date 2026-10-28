@@ -8,7 +8,7 @@ resume: Pour leur premier match de printemps, les joueurs de Potomac Valley ont 
 illustration: Plan moyen dans une petite salle aux murs gris, en fin d'après-midi. Kaydoudou, grand et mince, fine raie à gauche, en sweat bleu marine de l'académie, est assis au premier rang, le menton dans la main, les yeux grands ouverts sur un écran. Sur l'écran, un terrain vu de dessus couvert de dizaines de flèches blanches qui tournent en rond sur les côtés et en arrière, et une seule flèche jaune qui entre dans la surface. Debout près de l'écran, Marcus Bell, lunettes rondes et sweat à capuche gris, montre la flèche jaune avec un stylo. Lumière froide du projecteur sur le visage de Kaydoudou. Révélation silencieuse.
 ---
 
-Pendant soixante minutes, les parents de Potomac Valley applaudirent presque sans s'arrêter.
+Clap, clap, clap.
 
 « Nice pass ! »
 
@@ -16,139 +16,317 @@ Pendant soixante minutes, les parents de Potomac Valley applaudirent presque san
 
 « Keep it, boys, keep it ! »
 
-C'était le premier samedi d'avril, et le premier match de la ligue de printemps. La neige était enfin partie. Elle avait laissé derrière elle un terrain d'herbe encore jaune, avec des plaques de boue près des poteaux, et un vent qui venait de la rivière et vous glissait des doigts glacés dans le cou. Le long de la ligne de touche, les parents avaient installé leurs chaises pliantes, leurs couvertures à carreaux et leurs grosses bouteilles de café. Papa était là, avec un bonnet vert, jaune et rouge que Maman lui avait tricoté. Maman n'était pas là : elle avait travaillé toute la nuit et elle dormait.
+Chaque passe, les parents applaudissent.
 
-Kaydoudou portait le maillot bleu marine de l'académie, avec un grand 8 blanc dans le dos. Ce n'était pas son vieux maillot vert de Bonamoussadi, mais c'était un 8, et quand Coach Whitfield le lui avait tendu, il avait eu l'impression de retrouver un ami.
+*On dirait un concert*, pense Kaydoudou.
 
-À neuf contre neuf, sur ce terrain plus petit qu'un vrai, Potomac Valley avait le ballon tout le temps. Les défenseurs se le passaient. Les milieux se le passaient. Kaydoudou le recevait, se tournait, et le donnait à Diego sur le côté gauche, qui le rendait, puis au défenseur derrière lui, qui le rendait aussi. Le ballon allait de gauche à droite, de droite à gauche, comme le balancier d'une horloge. Les adversaires, des garçons en maillots verts d'un club d'Annapolis qui s'appelait les Severn River Hawks, couraient après lui sans jamais l'attraper.
+Premier samedi d'avril, premier match de printemps. La neige est partie, il reste de la boue près des poteaux. Sur la ligne, Papa a mis son bonnet vert, rouge et jaune. Maman dort : elle a travaillé toute la nuit.
 
-« Ils ne touchent même pas le ballon », rigola BriBri à la mi-temps, en avalant des quartiers d'orange. « On joue au chat et à la souris, et c'est nous la souris, et la souris gagne. »
+Kaydoudou porte le maillot bleu marine de l'académie, avec un grand 8 blanc dans le dos. Pas son maillot vert de Bonamoussadi. Mais un 8.
 
-Le score, pourtant, était de 0-0.
+« Tu as ta tête de l'avion », a dit BriBri avant le coup d'envoi.
 
-À la 48e minute, Kaydoudou fit une passe en arrière à leur défenseur central, un garçon roux nommé Owen. Une passe tranquille. Une passe propre. Owen voulut la rendre à son voisin, le ballon rebondit sur une motte de boue, et un attaquant des Hawks, qui attendait ce moment depuis le début du match, le vola. Trois touches, quarante mètres de course, une frappe croisée. 0-1.
+« Non. Aujourd'hui, j'ai ma tête de numéro 8. Je vais prouver que je le mérite. »
 
-Les Hawks n'avaient eu qu'une occasion de tout le match. Ils l'avaient mise au fond.
+En face, les Severn River Hawks, d'Annapolis, en maillots verts.
 
-Potomac Valley repartit à l'attaque, si on pouvait appeler ça une attaque. On se fit encore des passes, beaucoup de passes, de plus en plus vite et de moins en moins bien. Tyler, devant, levait les bras, puis les laissait retomber. BriBri dribbla trois joueurs et perdit le ballon contre le quatrième. Le coup de sifflet final arriva, et les Hawks sautèrent les uns sur les autres comme s'ils avaient gagné la Coupe du monde.
+« Hawks, ça veut dire faucons, a dit Diego dans la voiture. Les oiseaux qui tombent du ciel sur les souris. »
 
-Pendant que les équipes se serraient la main, une maman de Potomac Valley, avec un bonnet à pompon, tapota l'épaule de Kaydoudou.
+Leur numéro 11 est petit et maigre, avec des yeux de chat. Il ne court presque pas. Il attend, les mains sur les hanches.
+
+« Lui, il dort », rigole BriBri.
+
+« Non, dit Kaydoudou. Il guette. »
+
+Potomac Valley a le ballon tout le temps.
+
+« Kay ! » appelle Owen, le grand défenseur roux.
+
+Kaydoudou reçoit. Il se tourne.
+
+« Diego ! »
+
+« Kay ! »
+
+« Owen ! »
+
+« Kay ! »
+
+Gauche, droite, gauche, droite. Les Hawks, eux, se serrent devant leur surface, épaule contre épaule. Un mur de briques vertes.
+
+« Here ! Here ! I'm open ! » hurle Tyler, derrière le mur.
+
+« Go forward, Kay ! crie Coach Whitfield. Be brave ! »
+
+Kaydoudou regarde le mur. *Trop risqué.* Il donne à Owen.
+
+« Nice pass ! » applaudit une maman.
+
+À la mi-temps, c'est 0-0. BriBri avale des quartiers d'orange, le jus sur le menton.
+
+« Ils ne touchent même pas le ballon ! On joue au chat et à la souris. C'est nous la souris, et la souris gagne ! »
+
+« Bro, they're not even trying », rit Diego.
+
+« Good job, guys, dit Coach Whitfield. Now, please... somebody shoot ! »
+
+« I'm trying ! » proteste Tyler.
+
+Kaydoudou, lui, regarde le numéro 11, qui boit son eau, tranquille.
+
+« Il n'a pas couru, dit-il. Il n'a même pas transpiré. »
+
+« Parce qu'il est nul ! » dit BriBri.
+
+« Ou parce qu'il attend quelque chose. »
+
+48e minute. Kaydoudou reçoit au milieu, face au mur. Il fait demi-tour. Passe en arrière vers Owen. Une passe tranquille. Une passe propre.
+
+Owen veut la donner à son voisin. Le ballon tape une motte de boue. Ploc. Il saute de travers.
+
+Et le numéro 11 n'attend plus.
+
+Il pique comme un faucon. Il vole le ballon. Une touche, deux touches, trois. Quarante mètres de course. Frappe croisée.
+
+Chhh. Le filet.
+
+0-1.
+
+« Sorry, Kay ! Sorry ! » crie Owen, les mains sur la tête.
+
+Le numéro 11 lève juste un doigt vers le ciel. Une occasion de tout le match. Une seule. Au fond.
+
+« Le faucon a mangé la souris », souffle BriBri.
+
+Potomac Valley attaque. Enfin... on se fait des passes. Plus vite. Moins bien. Tyler crie « Here ! » jusqu'à perdre sa voix. BriBri dribble trois Hawks et perd le ballon contre le quatrième.
+
+Tuuut. Fin du match. Les Hawks sautent les uns sur les autres, comme s'ils avaient gagné la Coupe du monde.
+
+Au moment de se serrer la main, le numéro 11 s'arrête devant Kaydoudou. Petit sourire en coin.
+
+« So many passes, eight. So pretty. »
+
+« Tant de passes, traduit Diego entre ses dents. Si jolies. »
+
+Les oreilles de Kaydoudou brûlent.
+
+« Laisse tomber, bro, souffle Diego. Il est jaloux de tes passes. »
+
+Une maman en bonnet à pompon lui tapote l'épaule.
 
 « Unlucky, honey. You guys played so well. You had the ball all game ! »
 
-Kaydoudou dit « thank you ». Il savait dire « thank you », maintenant, sans rougir. Mais en marchant vers la voiture, il repensa aux adultes de Bonamoussadi qui le félicitaient pour sa « propreté », et à Tonton Fokou, assis sur son bidon, qui ne disait rien. Il avait le même petit caillou dans le ventre que là-bas.
+« Pas de chance, mon chéri, chuchote Diego. Vous avez si bien joué. Vous avez eu le ballon tout le match. »
+
+« Thank you », dit Kaydoudou.
+
+Dans la voiture, Papa essaie de sourire.
+
+« Vous avez eu le ballon tout le temps, les garçons. C'est déjà ça. »
+
+« Oui, dit BriBri. Et le faucon a eu le but. »
+
+« Papa, demande Kaydoudou. Un réseau où tout tourne, mais où rien n'arrive... ça sert à quoi ? »
+
+Papa le regarde dans le rétroviseur.
+
+« À rien, mon fils. Un réseau, c'est fait pour que les choses arrivent. »
+
+Kaydoudou se tait. Il a un caillou dans le ventre. Le même qu'à Douala, quand les grands disaient « Il joue propre, ce petit ! » et que Tonton Fokou, sur son bidon jaune, ne disait rien.
+
+*Bien joué ? On a perdu.*
 
 * * *
 
-Le lundi après l'école, au lieu d'aller sur le terrain, l'équipe fut convoquée dans une petite salle à côté du dôme. Il y avait des chaises en plastique, un tableau blanc, une odeur de feutre et de chaussettes, et un écran accroché au mur. Devant l'écran, Marcus Bell branchait sa tablette avec des gestes délicats, comme on installe un oiseau dans une cage.
+Lundi, pas de ballon. L'équipe s'entasse dans une petite salle grise à côté du dôme. Ça sent le feutre et les chaussettes. Marcus Bell branche sa tablette sur l'écran, tout doucement, comme on pose un oiseau dans un nid.
 
-Coach Whitfield entra la dernière. Elle ne souriait pas, et elle ne se fâcha pas non plus. Elle s'assit au fond de la salle, les bras croisés, et fit un signe à Marcus.
+Coach Whitfield s'assoit au fond, les bras croisés. Elle ne sourit pas.
 
-« Okay, guys, dit Marcus en remontant ses lunettes. Saturday. Let's look at the numbers. »
+« Okay, guys, dit Marcus en remontant ses lunettes rondes. Saturday. Let's look at the numbers. »
 
-Diego s'assit à côté de Kaydoudou, au premier rang, pour traduire. BriBri, au deuxième rang, avait déjà la tête dans les mains, comme quelqu'un qui attend une piqûre.
+Diego s'assoit au premier rang, à côté de Kaydoudou, pour traduire. Derrière eux, BriBri se cache la tête dans les mains.
 
-Un chiffre apparut sur l'écran, énorme, en jaune.
+« C'est comme chez le docteur, gémit-il. Quand il prépare la piqûre. »
 
-« Seventy percent. » Marcus le montra avec son stylo. « Possession. We had the ball seventy percent of the time. »
+Un chiffre apparaît. Énorme. Jaune.
 
-« Soixante-dix pour cent du temps, murmura Diego. On avait le ballon. »
+70 %.
 
-Un murmure fier passa dans la salle. Owen leva le poing. Tyler hocha la tête comme si c'était lui qui avait tout fait.
+« Seventy percent. Possession. »
 
-Un deuxième chiffre apparut.
+« La possession, c'est le temps où on a le ballon, explique Diego. Soixante-dix pour cent du match ! »
 
-« Three hundred and twelve passes. Their team : ninety-one. »
+« We destroyed them ! » crie Tyler.
 
-Cette fois, quelqu'un siffla d'admiration. Kaydoudou fit le calcul de tête, sans le vouloir, parce qu'il faisait toujours les calculs de tête : trois fois et demie plus de passes que les Hawks. Et pourtant, ils avaient perdu.
+« On les a écrasés », traduit Diego.
 
-Marcus attendit que le silence revienne. Puis il fit glisser son doigt, et un troisième chiffre arriva. Il était tout petit, au milieu de l'écran blanc.
+Un murmure fier traverse la salle. Owen lève le poing.
+
+Deuxième chiffre : 312.
+
+« Three hundred and twelve passes. Them ? Ninety-one. »
+
+« Fiouuu ! » siffle quelqu'un.
+
+« Trois fois et demie plus que les Hawks », calcule Kaydoudou tout bas.
+
+Et pourtant, 0-1.
+
+Marcus attend le silence. Le troisième chiffre arrive. Tout petit, seul au milieu de l'écran blanc.
+
+5.
 
 « Five. »
 
-« Cinq quoi ? » chuchota BriBri.
+« Cinq quoi ? » demande BriBri entre ses doigts.
 
-« Five touches in their box, dit Marcus doucement. In sixty minutes. Five times, one of you touched the ball inside their penalty area. »
+« Five touches in their box. In sixty minutes. »
 
-Diego traduisit lentement. Cinq ballons touchés dans la surface de réparation adverse, cette grande zone rectangulaire devant le but, là où l'on marque presque tous les buts. Cinq en une heure. Trois cent douze passes, et cinq fois seulement dans la surface. La salle se tut complètement. Même la chaudière, quelque part derrière le mur, eut l'air de retenir son souffle.
+« Cinq ballons touchés dans leur surface, traduit Diego lentement. Le grand rectangle devant le but, là où on marque presque tous les buts. Cinq fois en une heure. »
 
-« Now, watch this. »
+Silence.
 
-Marcus toucha l'écran, et le terrain apparut, vu de dessus, comme par un oiseau. Puis les flèches arrivèrent. Chaque passe du match devint une ligne blanche, et elles s'empilèrent les unes sur les autres jusqu'à couvrir l'image. Il y en avait partout sur les côtés, partout derrière, au milieu de leur propre camp. Elles faisaient des U, des boucles, des allers et retours. On aurait dit un plat de spaghettis renversé. Devant le but des Hawks, là où il aurait fallu aller, il n'y avait presque rien : une zone vide, propre, intacte. Les Hawks s'étaient serrés là, devant leur surface, comme un mur de briques, et Potomac Valley avait tourné autour du mur pendant une heure en lui faisant des politesses.
+Plus un bruit. Même la chaudière, derrière le mur, a l'air de retenir son souffle.
 
-Marcus posa la pointe de son stylo sur la seule flèche jaune de l'image, une petite flèche qui entrait dans la surface.
+« Say it again, Marcus », dit Coach Whitfield depuis le fond.
+
+« Five. »
+
+« Cinq, répète BriBri. Une seule main. Pour tout le match. »
+
+« Now, watch this », ajoute Marcus.
+
+Le terrain apparaît, vu d'en haut. Puis les flèches. Chaque passe du match devient un trait blanc. Dix. Cent. Trois cents. Ça tourne sur les côtés. Ça tourne derrière. Des boucles, des U, des allers et retours.
+
+« Des spaghettis ! s'écrie BriBri. Un plat de spaghettis renversé ! »
+
+« And here », dit Marcus en montrant le but des Hawks. « Nothing. »
+
+« Et là, rien », traduit Diego.
+
+« Même pas une miette ! » dit BriBri.
+
+« But I was open ! dit Tyler. All game ! »
+
+« You were, dit Marcus doucement. Nobody saw you. »
+
+« Tu étais seul, chuchote Diego. Personne ne t'a vu. »
+
+*Moi, je l'ai vu*, pense Kaydoudou. *Et je n'ai pas osé.*
+
+Marcus lève son stylo. Il pose la pointe sur une petite flèche. La seule flèche jaune de l'écran. La seule qui entre dans la surface.
 
 « One pass. Only one pass went into the box. »
 
-Kaydoudou, dans son sweat bleu marine, le menton dans la main, ne bougeait plus. La lumière froide de l'écran lui éclairait le visage.
+Kaydoudou ne bouge plus. Au premier rang, dans son sweat bleu marine, le menton dans la main, il fixe l'écran. La lumière froide lui tombe sur le visage.
+
+*Une seule.*
 
 « An ocean of passes, dit Marcus. And no boat. »
 
-« Un océan de passes, traduisit Diego. Et pas de bateau. »
+« Un océan de passes, souffle Diego. Et pas de bateau. »
 
-Kaydoudou regardait l'écran sans cligner des yeux. Puis Marcus toucha une autre touche, et seules les passes d'un joueur restèrent. Le numéro 8.
+Marcus touche encore l'écran. Toutes les flèches s'effacent, sauf celles du numéro 8.
 
-Elles étaient toutes là. Courtes, nettes, réussies. Presque toutes vers le côté, ou vers l'arrière. Marcus afficha le chiffre : cinquante-huit passes réussies sur soixante et une. Le meilleur pourcentage de l'équipe.
+Les voilà, ses passes. Courtes. Nettes. Presque toutes sur le côté ou en arrière.
 
-« Great accuracy, dit Marcus. Very clean. »
+« Ouh là, souffle BriBri derrière lui. Elles reculent toutes, tes passes. Comme des crabes. »
 
-Propre. C'était le même mot qu'à Douala. Kaydoudou sentit sa gorge se serrer. Il voyait ses passes, et il les reconnaissait. Ce n'étaient pas des passes. C'étaient des révérences. Ses passes polies, celles qui disaient « après vous, je vous en prie » au ballon et ne l'emmenaient jamais nulle part. Il avait traversé l'océan, il avait changé de maillot et de langue, et il avait apporté ses vieilles passes polies dans sa valise sans même s'en apercevoir.
+« Fifty-eight out of sixty-one, dit Marcus. Best accuracy on the team. Very clean. »
 
-Il pensa au mango de Tonton Fokou, à sa voix rauque. Une passe sur le côté, c'est poli. Une passe qui traverse, c'est utile. Le football n'est pas un salon, mon fils.
+« Cinquante-huit passes réussies sur soixante et une, chuchote Diego. Le meilleur de l'équipe. Très propre. Bravo, bro ! »
 
-Au fond de la salle, Coach Whitfield se leva.
+Propre. Le même mot qu'à Douala.
 
-« Listen to me. Possession is a tool, not a trophy. »
+« Des révérences », murmure Kaydoudou.
 
-Elle laissa la phrase tomber dans le silence, puis elle la répéta, plus lentement, pour ceux qui venaient d'ailleurs.
+« Des quoi ? »
 
-« A tool. Like a hammer. Nobody wins a prize for holding a hammer. You win when you build something. »
+« Des révérences. Comme quand on se penche devant une reine. Après vous, Majesté, je vous en prie. Mes passes saluent le ballon. Et elles ne l'emmènent nulle part. »
 
-« La possession, c'est un outil, pas un trophée, souffla Diego. Comme un marteau. Personne ne gagne un prix parce qu'il tient un marteau. »
+Diego ne comprend pas. Kaydoudou, si. *J'ai traversé l'océan. J'ai changé de maillot et de langue. Et j'ai apporté mes passes polies dans ma valise.*
+
+Dans sa tête, une voix rauque arrive de très loin. Houou !
+
+« Une passe sur le côté, c'est poli. Une passe qui traverse, c'est utile. Le football n'est pas un salon, mon fils. »
+
+Au fond de la salle, Coach Whitfield se lève.
+
+« Listen to me. Possession is a tool, not a trophy. » Elle laisse la phrase tomber, puis elle la répète, plus lentement. « A tool. Like a hammer. Nobody wins a prize for holding a hammer. You win when you build something. »
+
+« La possession, c'est un outil, pas un trophée, traduit Diego. Comme un marteau. Personne ne gagne un prix parce qu'il tient un marteau. On gagne quand on construit quelque chose. »
 
 « Moi, je gagnerais, dit BriBri. Je tiens super bien les marteaux. »
 
-Il y eut un éclat de rire, et même Coach Whitfield sourit. Mais Kaydoudou ne rit pas. Il avait ouvert son carnet sur ses genoux, sous la table. La couverture en pagne de Tonton Fokou était douce sous ses doigts.
+Toute la salle éclate de rire. Même Coach Whitfield.
+
+Kaydoudou, lui, ne rit pas. Sous la table, il a ouvert son carnet sur ses genoux.
 
 * * *
 
-Pendant que les autres sortaient en se bousculant vers l'entraînement, Kaydoudou resta assis. Il écrivit une phrase, la barra, en écrivit une autre. Le stylo hésitait. Puis la vraie phrase arriva, d'un coup, comme une passe qu'on voit avant de la recevoir, et il l'écrivit en grandes lettres, en appuyant si fort qu'elle traversa sur la page suivante :
+Les autres sortent en se bousculant. Kaydoudou reste assis.
+
+« Tu viens ? » demande BriBri depuis la porte.
+
+« Vas-y. J'arrive. »
+
+« Tu fais quoi ? Des maths ? »
+
+« Une question. Une question de foot. »
+
+« Une petite ? »
+
+« La plus grande. »
+
+BriBri le regarde une seconde. Puis il ferme la porte tout doucement.
+
+Kaydoudou écrit une phrase. Il la barre. Une autre. Barrée aussi. Puis la vraie arrive, d'un coup, comme une passe qu'on voit avant de la recevoir. Il appuie si fort qu'elle s'imprime sur la page d'après :
 
 « Est-ce que cette passe nous rapproche du but, ou est-ce qu'elle prépare celle qui nous rapprochera ? »
 
-Il la relut. C'était une question trop longue pour un carnet. Mais c'était la plus importante qu'il ait jamais écrite. Parce qu'elle ne disait pas : ne fais plus de passes sur le côté. Elle disait : fais-les, mais pour quelque chose. Une passe en arrière qui attire le mur de briques pour ouvrir une brèche, c'est une passe qui prépare. Une passe en arrière parce qu'on a peur, c'est une révérence.
+Elle ne dit pas : plus de passes en arrière. Elle dit : fais-les, mais pour quelque chose.
 
-Une ombre tomba sur la page. Marcus Bell était debout à côté de lui, sa tablette sous le bras. Il pencha la tête pour lire, puis il regarda Kaydoudou.
+Une ombre tombe sur la page. Marcus est là, la tablette sous le bras. Il penche la tête pour lire.
 
 « Do you speak French only, or... ? »
 
-« A little English, dit Kaydoudou. A little more each day. »
-
-Marcus hocha la tête, comme si c'était une bonne réponse à une question qu'il ne lui avait pas posée.
+« A little English. A little more each day. »
 
 « What did you write ? »
 
-Kaydoudou chercha les mots, un par un, comme on traverse une rivière sur des pierres.
+Kaydoudou cherche les mots, un par un, comme on traverse une rivière de pierre en pierre.
 
-« Is this pass... going to the goal ? Or is it preparing... the next pass, that goes to the goal ? »
+« Is this pass... going to the goal ? Or is it... preparing the next pass... that goes to the goal ? »
 
-Marcus resta silencieux un long moment. Derrière ses lunettes rondes, ses yeux avaient changé. Ils brillaient comme ceux de Papa quand il réparait un réseau et que toutes les petites lumières passaient au vert d'un coup.
+Marcus ne dit rien. Longtemps. Derrière ses lunettes, ses yeux brillent comme ceux de Papa quand toutes les petites lumières d'un réseau passent au vert.
 
-« That's the question, dit-il doucement. That's the only question, man. Most coaches never ask it. »
+« And if the answer is no, and no ? »
 
-Puis il fit une chose que personne n'avait jamais vu Marcus Bell faire : il décrocha la tablette de son bras et la tendit à Kaydoudou.
+« Then... it is a... » Il ne connaît pas le mot anglais. Alors il se penche en avant, très poliment, comme devant une reine.
 
-« Tu veux apprendre à voir le match comme moi ? » demanda-t-il, dans un français lent et cabossé, avec un accent qui faisait rouler les r comme des billes.
+Marcus éclate de rire.
 
-Kaydoudou regarda la tablette. Sur l'écran, les spaghettis blancs tournaient toujours autour du mur des Hawks, et une seule petite flèche jaune entrait dans la surface. Il pensa à Tonton Fokou, qui avait dessiné des plans dans la poussière avec un bâton. Ici, on les dessinait avec la lumière.
+« A bow ! Yes ! That's the question, man. That's the only question. Most coaches never ask it. »
 
-« Où vous avez appris le français ? » demanda-t-il.
+Puis il fait une chose que personne n'a jamais vu Marcus Bell faire. Il tend sa tablette à Kaydoudou.
 
-« At college. Two years. » Marcus haussa les épaules. « I was terrible. Like your brother in English. »
+« Tu veux apprendre à voir le match comme moi ? »
 
-Kaydoudou sourit, pour la première fois depuis le samedi. Il prit la tablette. Elle était plus lourde qu'il ne l'aurait cru, et tiède, comme quelque chose de vivant.
+En français ! Un français lent et cabossé, qui fait rouler les r comme des billes.
 
-« Oui », dit-il. Puis, parce que c'était l'Amérique : « Yes. »
+« Vous... vous parlez français ? »
+
+« At college. Two years. I was terrible. Like your brother in English. »
+
+Kaydoudou sourit. Pour la première fois depuis samedi.
+
+Il prend la tablette. Elle est lourde et tiède, comme une chose vivante. Tonton Fokou dessinait ses plans dans la poussière avec un bâton. Ici, on les dessine avec de la lumière.
+
+« Oui », dit Kaydoudou. Puis, parce qu'on est en Amérique : « Yes. »
+
+Marcus fait glisser l'écran. Un autre dossier s'ouvre. En haut, un numéro : 33. En dessous, des croix rouges. Des dizaines de croix rouges.
+
+*Aïe*, pense Kaydoudou. *BriBri ne va pas aimer ça.*
 
 > [!CARNET] Leçon du Ballon n°11 : Posséder n'est pas garder
 > 70 % de possession. 312 passes. 5 ballons dans leur surface. Et 0-1.

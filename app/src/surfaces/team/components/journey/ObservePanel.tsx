@@ -79,7 +79,7 @@ export function ObservePanel({ teamId, groups, context, minute, onMinute, showMi
               </button>
             )}
           </div>
-          <ul className={cx('grid gap-1.5', compact ? 'grid-cols-2 min-[400px]:grid-cols-3 sm:grid-cols-4' : 'grid-cols-2 min-[400px]:grid-cols-3 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-3')}>
+          <ul className={cx('grid gap-1.5', compact ? 'grid-cols-2 min-[400px]:grid-cols-3 sm:grid-cols-4' : 'grid-cols-2 min-[400px]:grid-cols-3 sm:grid-cols-4 lg:grid-cols-2 2xl:grid-cols-3')}>
             {g.players.map((p) => {
               const on = selected.has(p.id)
               return (
@@ -115,7 +115,7 @@ export function ObservePanel({ teamId, groups, context, minute, onMinute, showMi
 
       <div>
         <h3 className="mb-1.5 font-sans text-[13px] font-semibold tracking-normal text-ink-soft">{t('observe.skills')}</h3>
-        <ul className="grid grid-cols-2 gap-1.5 sm:grid-cols-5">
+        <ul className="grid grid-cols-2 gap-1.5 sm:grid-cols-5 lg:grid-cols-4 2xl:grid-cols-5">
           {SKILL_KEYS.map((k) => {
             const v = skills[k]
             return (

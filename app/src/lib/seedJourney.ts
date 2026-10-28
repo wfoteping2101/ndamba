@@ -231,9 +231,9 @@ async function seedTeam(team: Team, li: 0 | 1) {
   const added: Session[] = []
   for (let w = 1; w <= weeks; w++) {
     const wk = addDays(monday, -7 * w)
-    if (existing.some((s) => s.date >= wk && s.date <= addDays(wk, 6))) continue
     const days: [number, MD, Pair][] = adult ? adultDays : [[1, 'youth', youthTitles[w % youthTitles.length]], [3, 'youth', youthTitles[(w + 2) % youthTitles.length]]]
     for (const [d, md, title] of days) {
+      if (existing.some((s) => s.date === addDays(wk, d))) continue // keep the sessions already planned that day
       added.push({ id: `se_hist_${team.id}_${w}_${d}`, teamId: team.id, title: title[li], date: addDays(wk, d), md, blocks: buildBlocks({ md, ageGroup: team.ageGroup, lang: isFr ? 'fr' : 'en' }), createdBy: 'user', createdAt: now })
     }
   }

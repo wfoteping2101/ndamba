@@ -8,137 +8,333 @@ resume: À Pâques, l'ESM part en Bretagne pour un grand tournoi face aux meille
 illustration: Plan large sur un terrain en bord de mer, en Bretagne, sous une pluie oblique et un ciel gris argent, des maisons de granit et un phare au loin. Au centre, Kaydoudou, fine raie à gauche, maillot blanc de l'ESM trempé, une main en porte-voix, crie vers l'avant. Devant lui, dos au jeu, BriBri, afro aplatie par la pluie, chaussettes rouge et jaune, reçoit le ballon entre deux adversaires en maillots bordeaux et commence à pivoter. Sur la droite, Kenzo, boucles brunes collées au front, déjà lancé dans la course. Gouttes de pluie visibles dans la lumière.
 ---
 
-En Bretagne, le vent avait un avis sur tout.
+« MA CRÊPE ! »
 
-Il avait un avis sur les cheveux de Lucas, qu'il dressait sur sa tête comme une botte de paille. Il avait un avis sur les passes longues, qu'il faisait tourner en l'air comme des feuilles mortes. Il avait un avis sur le parapluie de Papa, qu'il retourna à l'envers dès la sortie du car, et sur la casquette d'un entraîneur adverse, qu'il emporta jusqu'à la plage. Et il avait surtout un avis sur la crêpe de BriBri.
+Trop tard. La mouette file déjà vers la mer, la crêpe dans le bec, comme un avion de chasse.
 
-C'était le premier jour du Tournoi des Embruns, le grand tournoi de Pâques qui réunissait chaque année seize centres de formation de toute la France, dans une petite ville de granit gris face à la mer. Entre deux matchs de poule, BriBri avait acheté à la buvette sa toute première crêpe bretonne : beurre et sucre, pliée en quatre, chaude, avec le beurre qui coulait sur ses doigts. Il l'avait regardée comme il avait regardé le pain au chocolat, sept mois plus tôt, avec des yeux d'amoureux.
+BriBri reste la main en l'air. Vide.
 
-« Kayd. Kayd. Ils ont pris le pain au chocolat, ils l'ont aplati, et ils ont mis du beurre dedans. C'est le pays des génies. »
+Dix secondes plus tôt, il levait encore vers le ciel sa toute première crêpe bretonne.
 
-Il leva la crêpe vers le ciel pour l'admirer dans la lumière.
+« Kayd, regarde-moi ça. Beurre et sucre, pliée en quatre, toute chaude. Ils ont pris le pain au chocolat, ils l'ont aplati, et ils ont mis du beurre dedans. C'est le pays des génies. »
 
-Une mouette descendit du ciel comme un avion de chasse, attrapa la crêpe au vol, et repartit vers la mer sans même ralentir.
+Et le ciel l'a prise.
 
-BriBri resta la main en l'air, vide, la bouche ouverte. Lucas tomba assis sur l'herbe. Kenzo dut se tenir au poteau du but pour ne pas tomber lui aussi. Et Kaydoudou, qui riait tellement qu'il en avait mal aux côtes, réussit à dire :
+Lucas tombe assis dans l'herbe. Kenzo se tient au poteau. Kaydoudou rit tellement qu'il a mal aux côtes.
 
-« Tu scannes tout. Le RER, le supermarché, la cantine. Mais le ciel, jamais. »
+« Tu scannes tout, BriBri. Le RER, le supermarché, la cantine. Mais le ciel, jamais. »
 
 « Elle était dans mon angle mort », dit BriBri avec une grande dignité.
 
-Il passa le reste de l'après-midi à jeter des regards furieux vers le haut. Les mouettes, perchées sur les toits, le regardaient en retour, avec cet air insolent qu'ont les mouettes.
+« Première défaite du tournoi, annonce Kenzo. BriBri contre une mouette : zéro à un. »
+
+« À la ferme, les corbeaux font pareil avec les graines, dit Lucas. Il faut toujours surveiller le haut. »
+
+BriBri se tourne vers Lacombe, qui passe par là.
+
+« Monsieur ! Il manque un mot à vos quatre mots ! MOUETTE ! »
+
+« Refusé. »
+
+« Alors je le crierai tout seul. »
+
+Papa arrive en courant, son parapluie retourné par le vent comme une fleur à l'envers.
+
+« Ce vent est pire que la neige de Waldorf ! » Il agite le programme. « Tournoi des Embruns, les garçons ! Seize centres de formation, venus de toute la France ! »
+
+Une petite ville de granit gris face à la mer. Et un vent qui a un avis sur tout. Il dresse les cheveux de Lucas comme une botte de paille.
 
 * * *
 
-BriBri était revenu au jeu en janvier, quelques jours après qu'on lui avait enlevé son plâtre. Il avait d'abord été prudent, un peu raide, comme quelqu'un qui marche sur un sol gelé. Puis, un samedi, il s'était glissé dans la poche entre les lignes, il avait jeté deux regards par-dessus ses épaules, il s'était tourné, et Kaydoudou avait compris que son frère était revenu différent.
-
-Il n'était pas plus rapide. Il n'était pas plus fort. Mais il voyait. Le jeu des yeux, les cartes de Lucas, les semaines au bord du terrain à côté d'Awa avaient fait quelque chose dans sa tête. Maintenant, quand le ballon arrivait, il savait déjà. Il ne découvrait plus le monde : il le connaissait.
-
-Et c'est à ce moment-là que Monsieur Lacombe avait sorti les quatre mots.
-
-C'était un mardi de janvier. Il avait pris un feutre et écrit sur le tableau blanc du vestiaire, en lettres capitales :
+Les quatre mots, Lacombe les a écrits un mardi de janvier, sur le tableau blanc du vestiaire.
 
 SEUL. HOMME. TOURNE. GARDE.
 
-« À partir d'aujourd'hui, sur le terrain, on ne fait plus de phrases. Une phrase, c'est trop long. Le temps que tu la finisses, le ballon est déjà parti. On dit un mot. Un seul. Et tout le monde comprend le même mot de la même manière. »
+« À partir d'aujourd'hui, on ne fait plus de phrases sur le terrain. Le temps que tu finisses ta phrase, le ballon est parti. On dit un mot. Un seul. Et tout le monde comprend la même chose. » Il a tapé sur chaque mot. « Seul : personne ne vient, tu as le temps. Homme : un adversaire arrive, joue vite. Tourne : personne dans ton dos, retourne-toi. Garde : protège le ballon, on arrive. »
 
-Il avait tapé sur chaque mot avec le feutre.
+BriBri a levé la main.
 
-« Seul : tu as le temps, personne ne vient, contrôle tranquille. Homme : un adversaire arrive sur toi, joue vite. Tourne : il n'y a personne dans ton dos, retourne-toi. Garde : protège le ballon, attends du soutien. »
+« Et si je veux dire : attention, il y a un monsieur derrière toi qui arrive assez vite et qui a l'air fâché ? »
 
-BriBri avait levé la main. « Et si je veux dire : attention, il y a un monsieur derrière toi qui arrive assez vite et qui a l'air fâché ? »
-
-« Homme », avait dit Lacombe.
+« Homme. »
 
 « Et si je veux dire : bravo, c'était une très jolie passe, je suis fier de toi ? »
 
-Lacombe l'avait regardé un long moment sous sa moustache. « Ce mot-là, on ne l'utilise pas encore. »
+Lacombe l'a regardé longtemps, sous sa moustache.
 
-Pendant trois mois, ils avaient appris à parler avec quatre mots. Et c'était Kaydoudou, le 6, celui qui voyait tout le terrain, qui en disait le plus. Sa voix ne cassait presque plus. Elle était devenue plus grave, plus sûre, et elle portait loin, même par-dessus le vent.
+« Ce mot-là, on ne l'utilise pas encore. »
+
+Ensuite, il les a interrogés tout l'hiver, comme à l'école.
+
+« Ngassa. Morel a le ballon, un adversaire lui fonce dessus. Tu dis quoi ? »
+
+« Homme ! »
+
+« Delattre. Ton coéquipier est tout seul. Tu dis quoi ? »
+
+« Seul ! »
+
+« BriBri. Personne dans ton dos. Ton frère te crie quoi ? »
+
+« Tourne ! »
+
+« Et tu fais quoi ? »
+
+« Je tourne, Monsieur. Sans regarder. Parce que c'est Kayd. »
+
+BriBri venait de retrouver le terrain, encore un peu raide après le plâtre.
+
+« Tu as changé, toi », lui a dit Kaydoudou après le premier entraînement.
+
+« Six semaines sur un banc, Kayd. J'ai regardé. Maintenant, je vois avant. »
+
+Depuis, c'est le 6, celui qui voit tout, qui parle le plus. Sa voix ne craque presque plus. Elle porte loin.
+
+« Plus fort, Ngassa ! crie Lacombe à chaque séance. Le vent ne t'entend pas ! »
 
 * * *
 
-En poule, l'ESM gagna ses trois matchs. Et dans le troisième, contre le Sporting Lorrain, Kaydoudou sentit quelque chose qu'il n'avait jamais senti sur un terrain : l'équipe jouait comme un seul corps.
+En poule, l'ESM gagne ses trois matchs. Contre le Sporting Lorrain, l'équipe joue comme un seul corps.
 
-Mathis recevait le ballon en défense. Avant même qu'il lève la tête, Kaydoudou criait : « Seul ! » Et Mathis contrôlait tranquillement, sans paniquer. Le ballon arrivait à Lucas, sur le côté droit, avec un attaquant lorrain qui fonçait sur lui. « Homme ! » Et Lucas jouait en une touche avant d'être touché. Kenzo recevait dos au but, un défenseur collé à lui. « Garde ! » Et Kenzo protégeait le ballon avec son corps, le temps que BriBri arrive en soutien.
+Mathis reçoit en défense.
 
-C'était comme si onze garçons avaient une seule paire d'yeux, et que ces yeux-là étaient partout à la fois.
+« Seul ! »
 
-En quart de finale, contre l'Olympique Côte d'Opale, ce fut le match de BriBri. Il se glissait entre les lignes comme la souris dans le mur de Mami. Il recevait, et avant même que Kaydoudou ait crié, il s'était déjà tourné, parce qu'il avait déjà regardé. Il fit marquer Kenzo d'une passe en une touche. Il marqua lui-même, d'un petit ballon piqué par-dessus le gardien. Et sur le troisième but, Kenzo et Kaydoudou se trouvèrent sans se regarder.
+Il contrôle, tranquille. Lucas reçoit à droite, un attaquant lui fonce dessus.
 
-Kaydoudou avait le ballon au milieu. Il ne leva pas la tête. Il n'en avait pas besoin : deux secondes plus tôt, il avait jeté un regard par-dessus son épaule, et il avait vu Kenzo démarrer dans le dos du milieu adverse. Il savait où Kenzo serait. Kenzo savait où arriverait le ballon. La passe partit à l'aveugle, au sol, et Kenzo la reçut dans sa course comme si quelqu'un la lui avait posée dans la main. 3-0.
+« Homme ! »
 
-Kenzo revint vers lui en courant. Il ne dit rien. Il lui tapa dans la main, si fort que ça claqua.
+Une touche, et le ballon est parti. Kenzo reçoit dos au but, un défenseur collé à lui.
 
-Derrière la main courante, il y avait une dame en ciré jaune, avec des boucles brunes qui s'échappaient de sa capuche. Elle applaudissait plus fort que tout le monde. Kenzo, en revenant se placer, la regarda une seconde, et Kaydoudou vit son visage s'éclairer, comme une fenêtre qu'on allume le soir. C'était sa mère. Elle habitait à une heure de là, chez ses parents, et elle était venue sous la pluie.
+« Garde ! »
+
+Kenzo protège le ballon avec son corps, le temps que BriBri arrive.
+
+Onze garçons. Une seule paire d'yeux. Et ces yeux-là sont partout.
+
+Sur le bord, Lacombe note quelque chose dans son petit carnet.
+
+« Il écrit quoi ? » chuchote BriBri.
+
+« Sûrement pas bravo », dit Lucas.
+
+En quart de finale, contre l'Olympique Côte d'Opale, c'est le match de BriBri. Il se glisse entre les lignes comme la souris dans le mur de Mami.
+
+« Tou... » commence Kaydoudou.
+
+« Je sais, Kayd ! J'ai déjà regardé ! »
+
+BriBri s'est déjà tourné. Il fait marquer Kenzo en une touche. Puis il marque lui-même, d'un petit ballon piqué par-dessus le gardien.
+
+« La souris a encore frappé ! » hurle-t-il, en faisant le tour du poteau de corner sans danser, parce que Lacombe l'interdit.
+
+Sur le troisième but, Kaydoudou ne lève même pas la tête. La passe part à l'aveugle, au sol. Kenzo la reçoit dans sa course comme si on la lui posait dans la main. 3-0.
+
+Kenzo revient lui taper dans la main, si fort que ça claque.
+
+« Comment tu savais que j'étais là ? »
+
+« J'ai regardé avant. »
+
+« Kenzo ! crie BriBri. La dame en ciré jaune, là-bas ! Elle crie ton nom ! »
+
+Derrière la main courante, des boucles brunes dépassent d'une capuche jaune. Le visage de Kenzo s'allume comme une fenêtre le soir.
+
+« C'est ma mère, souffle-t-il. Elle habite à une heure d'ici, chez mes grands-parents. Elle est venue sous la pluie. »
 
 * * *
 
-La demi-finale eut lieu le lundi de Pâques, sous une pluie qui tombait de travers, poussée par le vent. En face, il y avait l'Athletic Club Garonne, le centre de formation le plus réputé du tournoi, maillots bordeaux, invaincu depuis le début de la saison. Des garçons grands, calmes, qui se passaient le ballon comme on se passe le sel à table.
+Lundi de Pâques. Demi-finale.
 
-Ce fut le match le plus dur de l'année.
+La pluie tombe de travers. Au loin, derrière les maisons de granit, un phare blanc se tient tout droit dans le gris.
 
-L'Athletic Club Garonne marqua le premier, à la 20e minute, sur une tête que Yanis, le gardien de l'ESM, ne put que toucher du bout des doigts. Mais l'ESM ne s'effondra pas. Kaydoudou parlait sans arrêt. « Seul ! » « Homme ! » « On reste ensemble ! » Sa voix allait d'un bout à l'autre du terrain, malgré le vent, malgré la pluie qui lui entrait dans la bouche.
+En face, l'Athletic Club Garonne. Maillots bordeaux. Invaincus depuis le début de la saison.
 
-À la 50e minute, BriBri se glissa entre les lignes. Il reçut dos au but, coincé entre deux maillots bordeaux, un milieu qui revenait sur lui et un défenseur à deux mètres sur sa gauche. Sur sa droite, rien. Kaydoudou le vit, vit l'herbe vide derrière lui, et mit une main en porte-voix.
+« Regarde-les, Kayd, souffle BriBri. Ils sont grands. Ils sont calmes. Ils se passent le ballon comme on se passe le sel à table. »
+
+« Ils sont grands comme des tracteurs », dit Lucas.
+
+« Les tracteurs, ça tourne mal, dit BriBri. Moi, je tourne bien. »
+
+Lacombe réunit l'équipe sous la pluie.
+
+« Ils sont plus grands que vous. Vous êtes plus bavards. Alors parlez. »
+
+« Ça, Monsieur, c'est mon métier », dit BriBri.
+
+À la 20e minute, Garonne marque de la tête. Yanis, le gardien de l'ESM, touche le ballon du bout des doigts. Pas assez. 0-1.
+
+« Je l'avais touché ! crie Yanis. Je l'avais ! »
+
+« C'est fini, grogne Mathis. Personne ne leur marque de but. »
+
+« Alors on sera les premiers, dit Kaydoudou. Seul ! Homme ! On reste ensemble ! »
+
+À la mi-temps, Lacombe ne dit qu'une phrase : « Vous êtes menés. Pas battus. »
+
+À la 50e minute, BriBri se glisse entre les lignes.
+
+Et le temps ralentit.
+
+Kaydoudou voit tout. Les gouttes de pluie qui brillent dans la lumière. L'afro de son frère, aplatie par l'eau. Ses chaussettes rouge et jaune, pleines de boue. BriBri reçoit dos au jeu, coincé entre deux maillots bordeaux. Un milieu revient sur lui. Un défenseur l'attend à deux mètres, sur sa gauche.
+
+Sur sa droite, rien. De l'herbe vide.
+
+BriBri ne peut pas le voir. Il a le dos tourné.
+
+*Moi, je le vois.*
+
+Kaydoudou met une main en porte-voix.
 
 « TOURNE ! »
 
-BriBri se tourna du côté vide, en un seul geste, sans même vérifier. Il avait confiance dans la voix de son frère comme on a confiance dans le sol sous ses pieds. Devant lui, toute la défense bordeaux recula d'un coup. Il glissa le ballon à Kenzo, qui arrivait lancé, et Kenzo frappa du gauche, sous la barre. 1-1.
+BriBri se tourne du côté vide. Sans vérifier. Il a confiance dans la voix de son frère comme dans le sol sous ses pieds. Toute la défense bordeaux recule d'un coup.
 
-Le score ne bougea plus, malgré les deux occasions de Lucas, qui monta si souvent sur son côté droit que ses joues devinrent violettes. 1-1 au coup de sifflet final.
+Sur la droite, Kenzo est déjà lancé, les boucles collées au front. BriBri lui glisse le ballon. Kenzo frappe du gauche.
 
-Tirs au but.
+Sous la barre. Chhh.
 
-Kaydoudou tira le premier, et marqua, en fermant les yeux à la dernière seconde, ce qu'il n'avoua jamais. Le deuxième tir de l'ESM s'écrasa sur le poteau. BriBri tira le troisième, une petite frappe sèche à ras de terre, et marqua. Kenzo marqua. Puis Yanis plongea sur le quatrième tir bordeaux et le sortit du bout des gants. Lucas marqua le dernier, en tremblant de tout son corps. 4-4. Puis la mort subite. Mathis prit son élan, frappa fort, et le gardien bordeaux plongea du bon côté.
+1-1.
 
-Le joueur suivant de Garonne marqua. C'était fini.
+BriBri court vers son frère, les bras grands ouverts.
 
-Mathis resta à genoux dans la boue, la tête dans les mains. Personne ne lui laissa le temps d'être seul. En dix secondes, ils étaient tous autour de lui, une main sur l'épaule, une main sur la tête. BriBri s'assit carrément dans la boue à côté de lui. Kaydoudou pensa au cercle de Belcourt, et il serra la nuque de Mathis sans rien dire.
+« Tu l'as vu pour moi ! Tu l'as vu ! Mon frère, c'est un phare ! »
+
+« Et moi ? proteste Kenzo. J'ai marqué, je te signale ! »
+
+« Toi, tu es le bateau. »
+
+Le score ne bouge plus. 1-1 au coup de sifflet final.
+
+« Tirs au but, soupire Kenzo. Génial. »
+
+« Qui tire en premier ? » demande Lacombe.
+
+Personne ne répond. Kaydoudou lève la main.
+
+« Moi. »
+
+Il marque. Il a fermé les yeux à la dernière seconde, mais il ne l'avouera jamais.
+
+« Tu as fermé les yeux, Kayd ! »
+
+« Jamais de la vie. »
+
+Le deuxième tir de l'ESM s'écrase sur le poteau. Bong.
+
+« Si je rate, chuchote BriBri en passant, je rentre au Cameroun à la nage. »
+
+Une petite frappe sèche, à ras de terre. But. Kenzo marque aussi. Puis Yanis plonge sur le quatrième tir bordeaux et le sort du bout des gants.
+
+« YANIS ! hurle tout le banc. LES MAINS ! »
+
+Lucas s'avance pour le dernier tir, tout tremblant.
+
+« Kayd... je tremble. »
+
+« Tremble et tire. »
+
+Il tremble. Il tire. But. 4-4.
+
+« J'ai marqué ? J'ai VRAIMENT marqué ? »
+
+Mort subite. Mathis pose le ballon.
+
+« Je le mets où ? »
+
+« Où tu veux, dit Kaydoudou. On est avec toi. »
+
+Mathis frappe fort. Le gardien bordeaux plonge du bon côté. Le tireur suivant de Garonne marque.
+
+C'est fini.
+
+Mathis tombe à genoux dans la boue. En dix secondes, ils sont tous autour de lui. BriBri s'assoit carrément dans la boue à côté de lui.
+
+« C'est pas grave, Mathis. Regarde, maintenant on est sales tous les deux. »
+
+« Sans toi, on n'était même pas en demi », dit Kenzo.
+
+« On a perdu ensemble, dit Lucas. Pas toi tout seul. »
+
+Kaydoudou pense au cercle de Belcourt. Il serre la nuque de Mathis sans rien dire.
 
 * * *
 
-Dans le vestiaire, il régnait un silence de pierre, seulement troublé par la pluie qui tambourinait sur le toit et quelques reniflements. Puis la porte s'ouvrit, et Monsieur Lacombe entra.
+Dans le vestiaire, personne ne parle. La pluie tambourine sur le toit.
 
-Il était trempé. Sa moustache dégoulinait. Il resta debout au milieu du vestiaire et regarda chacun d'eux, un par un, longtemps.
+La porte s'ouvre. Monsieur Lacombe entre, trempé, la moustache qui dégouline. Il regarde chaque garçon, un par un, longtemps.
 
 Puis il dit :
 
 « Bravo. »
 
-Le silence qui suivit fut encore plus profond que le premier. Lucas laissa tomber sa gourde, qui roula sous le banc. Kenzo se redressa d'un coup, comme s'il avait mal entendu. Mathis leva la tête, les yeux encore rouges. Et BriBri, d'une toute petite voix, demanda :
+Le silence devient encore plus lourd. Lucas laisse tomber sa gourde. Kenzo se redresse d'un coup. Mathis lève ses yeux rouges.
+
+Et BriBri, d'une toute petite voix :
 
 « Monsieur, vous êtes malade ? »
 
-« Je ne le dirai pas deux fois », dit Lacombe. Et il sortit.
+« Je ne le dirai pas deux fois. »
 
-Il y eut encore une seconde de silence. Puis tout le vestiaire éclata, un mélange de rires, de cris et de larmes, et Kaydoudou comprit qu'on pouvait perdre un match et en sortir plus grand qu'en y entrant.
+Lacombe sort.
+
+Une seconde de silence.
+
+« Il a dit bravo à moi aussi ? demande Mathis. Moi qui ai raté ? »
+
+« Il l'a dit à tout le monde », répond Kaydoudou.
+
+Puis le vestiaire explose.
+
+« Il a dit bravo ! hurle Kenzo, debout sur le banc. Il a vraiment dit bravo ! »
+
+« Je l'écris sur ma main, dit Lucas. Sinon, à la ferme, personne ne va me croire. »
+
+« BRAVO ! crie BriBri, juste pour l'entendre encore. BRAVO, BRAVO, BRAVO ! »
+
+Et Kaydoudou comprend une chose : on peut perdre un match et en sortir plus grand qu'en y entrant.
 
 * * *
 
-Le car roulait dans la nuit, sur l'autoroute qui ramenait vers Paris. Dehors, tout était noir, sauf les lumières des camions et, de temps en temps, une station-service qui passait comme un vaisseau spatial. À l'intérieur, presque tout le monde dormait.
+Le car roule dans la nuit, vers Paris. Presque tout le monde dort.
 
-BriBri dormait sur l'épaule de Kenzo. Il s'était endormi d'un coup, au milieu d'une phrase sur les mouettes, et sa tête avait glissé jusque-là. Kenzo n'avait pas bougé. Il regardait par la fenêtre, le visage tranquille, et il faisait attention de ne pas remuer l'épaule.
+BriBri dort sur l'épaule de Kenzo. Il s'est endormi au milieu d'une phrase sur les mouettes.
 
-Papa, qui accompagnait l'équipe comme parent bénévole, était assis devant. Kaydoudou le vit regarder son téléphone. Lire. Relire. Puis Papa se leva, remonta l'allée en se tenant aux sièges, et s'accroupit à côté de lui.
+« Homme... mouette... », marmonne-t-il dans son sommeil.
 
-« Kaydoudou, murmura-t-il. Je ne voulais pas te le dire ce soir. Mais je n'ai jamais su garder un secret avec toi. »
+« Il est lourd, ton frère », chuchote Kenzo.
 
-Il lui montra l'écran. Un message de son entreprise. Kaydoudou lut un seul mot, et son cœur se mit à cogner.
+« Je sais. Pousse-le, si tu veux. »
+
+« Non. Il peut dormir. »
+
+Devant, Papa, qui accompagne l'équipe comme parent bénévole, regarde son téléphone. Puis il remonte l'allée et s'accroupit à côté de Kaydoudou.
+
+« Je ne voulais pas te le dire ce soir, murmure-t-il. Mais je n'ai jamais su garder un secret avec toi. »
+
+Il lui montre l'écran. Un message de son entreprise. Kaydoudou ne lit qu'un seul mot, et son cœur se met à cogner.
 
 Barcelone.
 
-« Un poste à Barcelone, dit Papa tout bas. En septembre. Je n'ai pas encore dit oui. Mais... »
+« Un poste à Barcelone, chuchote Papa. En septembre. Je n'ai pas encore dit oui. Mais... »
 
-Il n'avait pas besoin de finir. Kaydoudou connaissait ce « mais ». Il l'avait entendu à Douala, au-dessus d'un plat de ndolé, et dans la voiture, au Maryland, un soir de tournoi.
+Kaydoudou connaît ce « mais ». Il l'a entendu à Douala, au-dessus d'un plat de ndolé. Et au Maryland, dans la voiture, un soir de tournoi.
 
-Papa lui serra la main et retourna s'asseoir.
+« On partirait quand ? »
 
-Kaydoudou regarda de l'autre côté de l'allée. Kenzo, toujours tourné vers la fenêtre noire. BriBri, la bouche ouverte, qui ronflait doucement contre son épaule. Et Kenzo qui, à ce moment-là, remonta un peu son blouson sur les épaules de BriBri, pour qu'il n'ait pas froid.
+« À la fin de l'été. »
 
-Kaydoudou connaissait maintenant quatre mots pour tout dire sur un terrain. Seul. Homme. Tourne. Garde.
+« BriBri le sait ? »
 
-Mais pour dire à Kenzo qu'ils allaient partir, il n'en connaissait aucun.
+« Pas encore. Toi d'abord. » Papa jette un coup d'œil vers Kenzo. « Je sais, mon grand. Ce n'est jamais le bon moment pour partir. »
+
+Il lui serre la main et retourne s'asseoir.
+
+Kaydoudou regarde de l'autre côté de l'allée. BriBri ronfle doucement, la bouche ouverte. Et Kenzo, sans bruit, remonte son blouson sur les épaules de BriBri pour qu'il n'ait pas froid.
+
+Kaydoudou connaît maintenant quatre mots pour tout dire sur un terrain. Seul. Homme. Tourne. Garde.
+
+Mais pour dire à Kenzo qu'ils vont partir, il n'en connaît aucun.
 
 > [!CARNET] Leçon du Ballon n°23 : Parler, c'est passer
 > Un mot dit au bon moment, c'est une passe. Ça va plus vite que le ballon.
