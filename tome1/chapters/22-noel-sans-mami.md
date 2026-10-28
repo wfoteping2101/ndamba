@@ -8,147 +8,271 @@ resume: Paris s'illumine pour Noël, mais il manque quelqu'un à la table des Ng
 illustration: Plan moyen dans le salon de l'appartement de Bussy-Saint-Georges, le soir de Noël, lumière chaude d'une guirlande et de bougies, vitre embuée derrière. Papa, chemise en pagne, danse les bras en l'air au milieu du salon. Au premier plan, sur le canapé, Kenzo Delattre, boucles brunes, pull trop grand, est plié de rire, une main sur le ventre. À côté de lui, BriBri, afro douce, chaussettes rouge et jaune, lève son bras gauche dans un plâtre colorié moitié rouge, moitié jaune, couvert de signatures et rit en regardant Kenzo, la dent du bonheur bien visible. Sur la table basse, un plat de poulet DG.
 ---
 
-Il y avait quatre-vingt-sept signatures sur le plâtre de BriBri, et pas une seule de Mami.
+« Quatre-vingt-cinq... quatre-vingt-six... quatre-vingt-sept ! »
 
-Il les avait comptées dans le RER, en allant voir les illuminations de Paris : tous les garçons de l'ESM, les professeurs du collège, la boulangère aux joues de brioche, la petite voisine du deuxième qui avait dessiné un chat, et même le monsieur à l'imperméable du RER, qui avait signé d'un « Bon courage, jeune homme » très solennel. Avec ses feutres, BriBri avait colorié une moitié du plâtre en rouge et l'autre en jaune. On aurait dit une de ses chaussettes, en très gros.
+BriBri lève son plâtre sous la lumière du RER, comme une coupe.
 
-Mais Mami, elle, était à Bafoussam, à cinq mille kilomètres, et on ne signe pas un plâtre par téléphone.
+« Quatre-vingt-sept signatures, Kayd ! Tous les garçons de l'ESM. Les profs du collège. La boulangère aux joues de brioche. La petite voisine du deuxième, avec son chat dessiné. Et le monsieur en imperméable, là-bas. Il a écrit : Bon courage, jeune homme. »
+
+Au fond du wagon, le monsieur en imperméable fait un petit salut de la tête.
+
+« Tu les as comptées combien de fois ? » demande Kaydoudou.
+
+« Six. Mais celle-là, c'est la bonne. »
+
+« Avec tes couleurs, on dirait une de tes chaussettes. En géant. »
+
+C'est vrai. Moitié rouge, moitié jaune. BriBri l'a colorié lui-même.
+
+Près du coude, il reste une petite place vide. BriBri pose le doigt dessus.
+
+*Celle-là, c'est pour Mami.*
+
+Mais Mami est à Bafoussam, à cinq mille kilomètres. Et on ne signe pas un plâtre par téléphone.
+
+* * *
 
 « Regarde, BriBri. Regarde ça ! »
 
-Maman lui serrait l'épaule. Ils sortaient de la station, et devant eux, l'avenue des Champs-Élysées descendait en pente douce jusqu'à la place de la Concorde, et chaque arbre, des deux côtés, était habillé de lumières. Des milliers et des milliers de petites lumières rouges, qui scintillaient dans le froid comme des braises dans le vent. Au bout de l'avenue, la grande roue tournait doucement, et plus loin, dans le noir, la tour Eiffel clignotait comme si elle avait froid, elle aussi.
+Maman lui serre l'épaule. Devant eux, l'avenue des Champs-Élysées descend jusqu'à la place de la Concorde. Chaque arbre porte des milliers de petites lumières rouges.
 
 « On dirait que quelqu'un a renversé un panier de piments rouges dans le ciel », dit Kaydoudou.
 
-C'était beau. Vraiment très beau. Un vendeur de marrons chauds leur tendit un cornet de papier journal qui brûlait les doigts. Les marrons sentaient la fumée et le sucre. BriBri en mangea un, puis deux, et pendant une minute, il oublia tout.
+Un vendeur leur tend un cornet de marrons chauds qui brûle les doigts. BriBri en mange un, puis deux. Pendant une minute, il oublie tout.
 
-Puis il vit une grande famille passer devant eux. Une grand-mère avec un bonnet, des oncles, des tantes, des cousins qui se couraient après en criant, une vingtaine de personnes au moins, et un tout petit garçon perché sur les épaules de son grand-père.
+Puis une grande famille passe. Une grand-mère en bonnet, des oncles, des tantes, des cousins qui crient. Un petit garçon sur les épaules de son grand-père.
 
-À Douala, Noël, c'était ça. La maison pleine. Les cousins de Bafoussam qui arrivaient en car, Mami qui commandait tout le monde depuis la cuisine, la messe de minuit où BriBri s'endormait toujours sur les genoux de quelqu'un, le makossa qui faisait trembler les murs jusqu'au matin. Ici, ils étaient quatre. Quatre sur une grande avenue pleine de lumières.
+BriBri arrête de mâcher.
 
-Kaydoudou dut voir quelque chose sur son visage, parce qu'il ne dit rien et lui donna le dernier marron.
+« Kayd. Tu te souviens de Noël à Douala ? »
+
+« Les cousins qui arrivent de Bafoussam en car », dit Kaydoudou.
+
+« Mami qui commande tout le monde depuis la cuisine. »
+
+« Toi qui t'endors à la messe de minuit. »
+
+« Le makossa jusqu'au matin. »
+
+Ils se taisent. Ici, ils sont quatre. Quatre sur une avenue pleine de lumières.
+
+Kaydoudou lui donne le dernier marron.
 
 * * *
 
-Le soir même, Papa posa la tablette contre la théière et appela Bafoussam.
-
-Le visage de Mami apparut, tout près de l'écran, de travers, avec un bout de foulard en pagne qui cachait la moitié de la caméra. On entendait des poules derrière elle, et une radio, et quelqu'un qui pilait quelque chose dans un mortier.
+Le soir, Papa cale la tablette contre la théière et appelle Bafoussam. Un œil géant remplit l'écran.
 
 « Allô ? Allô ? Armand, ça marche, ce truc ? Je vois mon oreille ! »
 
-« Recule un peu, Mami ! »
+« Recule, Mami ! » crient les deux frères.
 
-Elle recula. Elle était dans sa cour, assise sur son tabouret, avec la machine à coudre derrière elle et le soleil de la saison sèche sur ses joues. BriBri eut envie de plonger dans l'écran.
+Elle recule. La voilà dans sa cour, devant sa machine à coudre, le soleil de la saison sèche sur les joues. Des poules caquettent derrière elle. BriBri a envie de plonger dans l'écran.
 
-Elle leur raconta tout. Le njangi des femmes avait voté, ce mois-ci, pour une chose nouvelle : au lieu de donner la caisse à une seule femme, elles avaient acheté ensemble une machine à coudre neuve pour Solange, une jeune apprentie de seize ans qui voulait ouvrir son atelier mais n'avait pas un franc.
+« Mes enfants, j'ai une nouvelle ! Ce mois-ci, le njangi des femmes n'a pas donné la caisse à une seule femme. On a acheté ensemble une machine à coudre toute neuve. Pour Solange ! »
 
-« Toutes ensemble, on lui a acheté son avenir, dit Mami. Et quand elle gagnera de l'argent, elle versera sa part, comme tout le monde, et une autre fille aura sa machine. Ça tourne, mes enfants. Ça tourne. »
+« C'est qui, Solange ? » demande BriBri.
 
-Elle toussa. Une petite toux sèche, qu'elle chassa d'un geste de la main, comme une mouche.
+« Une apprentie de seize ans. Elle veut ouvrir son atelier, mais elle n'a pas un franc. Alors, toutes ensemble, on lui a acheté son avenir. Quand elle gagnera de l'argent, elle versera sa part, comme tout le monde. Et une autre fille aura sa machine. Ça tourne, mes enfants. Ça tourne. »
 
-« Ce n'est rien, c'est l'harmattan. La poussière du désert, ça gratte la gorge des vieilles. » Puis elle plissa les yeux vers l'écran. « BriBri, qu'est-ce que c'est que ce bras ? Tu as voulu faire le malin ? »
+Elle tousse. Une petite toux sèche, qu'elle chasse d'un geste, comme une mouche.
 
-BriBri montra le plâtre, les signatures, la moitié rouge, la moitié jaune. Mami regarda longtemps, et puis elle éclata de son rire immense, ce rire qui faisait s'envoler les poules, et BriBri entendit les poules s'envoler pour de vrai.
+« Tu es malade, Mami ? » demande Kaydoudou.
+
+« Mais non. C'est l'harmattan. La poussière du désert, ça gratte la gorge des vieilles. » Elle plisse les yeux. « BriBri ! Qu'est-ce que c'est que ce bras ? Tu as voulu faire le malin ? »
+
+BriBri colle le plâtre contre la caméra. Mami éclate de son rire immense, et derrière elle, les poules s'envolent pour de vrai.
 
 « Il est déguisé en ballon de Mami, ton bras ! »
 
-Avant de raccrocher, elle approcha encore son visage, si près qu'on ne voyait plus que ses yeux.
+« J'ai gardé une place pour toi, Mami. Là, près du coude. Tu vois ? »
+
+Mami regarde longtemps le petit carré vide. Puis elle approche son visage, si près qu'on ne voit plus que ses yeux.
 
 « Vous êtes tristes, je le vois. Je ne suis pas là pour Noël, d'accord. Mais écoutez-moi bien. Le cœur n'a pas besoin de passeport. Il passe les frontières tout seul, la nuit, quand vous dormez. Cette nuit, je viendrai vous voir. »
 
-Cette nuit-là, BriBri laissa la fenêtre entrouverte, juste un peu. Au cas où.
+Cette nuit-là, BriBri laisse la fenêtre entrouverte. Juste un peu. Au cas où.
 
 * * *
 
-C'est Lucas qui eut l'idée de départ, mais c'est BriBri qui en fit un jeu.
+Le jeu des yeux est né dans le RER, le dernier jour d'école.
 
-Le dernier jour avant les vacances, dans le RER, Lucas avait sorti de son sac des cartes découpées dans un carton de céréales et coloriées au feutre : rouges, bleues, jaunes, vertes. Son petit frère, à la ferme, apprenait les couleurs avec. BriBri les regarda, puis regarda Lucas, puis les cartes, et ses yeux s'allumèrent comme les arbres des Champs-Élysées.
+« C'est pour mon petit frère, a dit Lucas en sortant des cartes de son sac. Il apprend les couleurs. »
 
-« Mets-toi derrière moi. Tu lèves une carte quand tu veux, sans prévenir. Moi, je dois me retourner et dire la couleur avant que tu la caches. »
+Des cartes découpées dans un carton de céréales : rouges, bleues, jaunes, vertes. Les yeux de BriBri se sont allumés.
 
-Ainsi naquit le jeu des yeux.
+« Mets-toi derrière moi. Lève une carte quand tu veux, sans prévenir. Moi, je me retourne et je dis la couleur avant que tu la caches. »
 
-Au début, BriBri se retournait trop tard. Lucas cachait la carte, BriBri criait « Bleu ! », et c'était vert. Puis il comprit qu'il ne fallait pas attendre de sentir quelque chose : il fallait jeter des regards par-dessus l'épaule tout le temps, sans arrêt, comme la mésange de Kaydoudou, pour attraper la carte au moment même où elle apparaissait. Gauche, droite, gauche. Il joua dans le RER, il joua dans la cour du collège, il joua dans la cuisine. Les passagers du train finirent par parier sur lui.
+Depuis, il joue tout le temps.
 
-Pendant les vacances, Lucas vint passer deux après-midis à Bussy, avec un panier de pommes de la ferme qui fit presque pleurer Maman. Dans le couloir de l'appartement, ils jouèrent pendant des heures. Lucas inventa de nouvelles règles : deux cartes en même temps, puis trois. BriBri devenait de plus en plus rapide. Il voyait la carte avant même qu'elle soit tout à fait levée.
+Premier essai : « Bleu ! » C'était vert.
 
-Kaydoudou, qui faisait semblant de lire sur le canapé, finit par poser son livre.
+Deuxième essai : « Rouge ! » La carte est déjà rangée.
+
+Dixième essai : BriBri comprend. Il ne faut pas attendre. Il faut regarder par-dessus l'épaule sans arrêt, gauche, droite, gauche, comme la mésange de Kaydoudou.
+
+Cinquantième essai : « Jaune ! » Lucas n'a même pas fini de lever la carte.
+
+Dans le RER, les passagers finissent par parier sur lui.
+
+Pendant les vacances, Lucas vient deux fois à Bussy, avec un panier de pommes.
+
+« Des pommes de la ferme, madame. »
+
+Maman manque de pleurer. Dans le couloir, les deux garçons inventent de nouvelles règles.
+
+« Deux cartes ! »
+
+« Rouge et vert ! »
+
+« Trois cartes ! »
+
+« Bleu, jaune, rouge ! »
+
+Kaydoudou fait semblant de lire sur le canapé. Au bout d'une heure, il pose son livre.
 
 « Je peux essayer ? »
 
-Il perdit 12 à 3. BriBri ne le laissa pas l'oublier pendant toute la semaine.
+Il perd 12 à 3.
+
+« Douze à trois ! hurle BriBri. Le grand cerveau de l'ESM, battu par un garçon avec un bras en moins ! Je vais l'écrire dans ton carnet ! »
 
 * * *
 
-Le matin du 24 décembre, les deux frères descendirent chercher le pain. Il faisait un froid sec, coupant. En revenant, ils passèrent devant le petit terrain de foot entouré de grillage, derrière l'immeuble, celui que BriBri appelait « la cage ».
+Le matin du 24 décembre, les deux frères descendent chercher le pain. Il fait un froid sec qui pique le nez. Derrière l'immeuble, il y a le petit terrain grillagé que BriBri appelle « la cage ».
 
-Il y avait quelqu'un dedans. Tout seul.
+Boum.
 
-Un garçon en sweat gris tapait dans un ballon contre le mur du fond. Boum. Le ballon revenait, il le reprenait en une touche. Boum. Encore. Il n'y avait personne d'autre dans la cage, personne dans la rue, juste le bruit du ballon contre le béton, régulier comme une horloge.
+Quelqu'un est dedans. Tout seul.
 
-« C'est Kenzo », souffla BriBri.
+Boum.
 
-Kaydoudou poussa la porte grillagée. Kenzo se retourna, et pendant une seconde, BriBri vit son visage avant qu'il ait eu le temps de le fermer. C'était le visage de quelqu'un qui a froid à l'intérieur.
+Un garçon en sweat gris tape dans un ballon contre le mur du fond. Il le reprend en une touche. Boum. Régulier comme une horloge.
+
+« C'est Kenzo », souffle BriBri.
+
+Kaydoudou pousse la porte grillagée. Kenzo se retourne. Pendant une seconde, BriBri voit son visage, avant qu'il ait le temps de le fermer. Le visage de quelqu'un qui a froid à l'intérieur.
 
 « Qu'est-ce que vous faites là ? »
 
-« On habite là », dit Kaydoudou, en montrant l'immeuble blanc.
+« On habite là », dit Kaydoudou en montrant l'immeuble blanc.
 
-Kenzo haussa les épaules. Kaydoudou posa la baguette sur le banc, retira son manteau et se mit face au mur, à côté de Kenzo.
+Kenzo hausse les épaules. Kaydoudou pose la baguette sur le banc, enlève son manteau et se met face au mur, à côté de lui. Sans poser de question. BriBri connaît son frère : c'est sa façon de dire « je reste ».
 
-« On fait le jeu des yeux, dit BriBri, qui avait toujours les cartes de Lucas dans sa poche. Version ballon. Kaydoudou te passe. Avant que le ballon arrive, je lève une carte derrière toi. Rouge, tu joues à gauche. Jaune, tu joues à droite. En une touche. »
+BriBri sort les cartes de Lucas de sa poche. *Grosse idée*, pense-t-il.
 
-Kenzo leva un sourcil, presque comme Lacombe. Mais il accepta.
+« On fait le jeu des yeux. Version ballon. Kayd te passe. Avant que le ballon arrive, je lève une carte dans ton dos. Rouge, tu joues à gauche. Jaune, tu joues à droite. En une touche. »
 
-Ils jouèrent une demi-heure, dans le froid. Au début, Kenzo regardait la carte trop tard et jouait du mauvais côté. Puis il se mit à scanner avant chaque passe, une fois, deux fois, et le ballon partait de son pied en une touche, à gauche, à droite, sans hésiter. BriBri vit qu'il souriait presque. Presque.
+Kenzo lève un sourcil, exactement comme Lacombe.
 
-Quand ils s'arrêtèrent, rouges et essoufflés, Kenzo s'assit sur le banc, à côté de la baguette, et parla en regardant ses crampons.
+« C'est un jeu de bébé. »
 
-Ses parents se séparaient. Son père était parti à Lyon, sa mère était chez ses grands-parents, en Bretagne. On l'avait envoyé chez sa tante, à Bussy, pour les vacances. Ce soir, sa tante travaillait jusqu'à minuit dans un restaurant. Il allait manger un plat réchauffé devant la télé.
+« Alors tu vas gagner facilement », dit BriBri.
 
-« C'est pas grave, dit-il. Noël, c'est un truc pour les petits. »
+Premier ballon. Carte rouge. Kenzo joue à droite.
 
-BriBri, qui avait onze ans et qui adorait Noël, ne dit rien, pour une fois.
+« Raté ! C'était rouge ! »
 
-Kaydoudou remit son manteau, ramassa la baguette, et dit simplement, de sa voix tranquille :
+« Je n'ai pas eu le temps de... »
+
+« Tu dois regarder AVANT. Comme la mésange ! »
+
+Kenzo serre les dents. Kaydoudou passe encore. Le ballon roule sur le béton gelé. Cette fois, Kenzo tourne la tête. Une fois. Deux fois. Dans son dos, la carte rouge monte.
+
+Tac. Pied gauche. Le ballon claque dans le grillage, pile à gauche.
+
+« Encore », dit Kenzo.
+
+Ils jouent une demi-heure dans le froid. Gauche. Droite. Droite. Gauche. BriBri voit qu'il sourit presque. Presque.
+
+Quand ils s'arrêtent, essoufflés, Kenzo s'assoit sur le banc et parle en regardant ses crampons blancs.
+
+« Mes parents se séparent. Mon père est parti à Lyon. Ma mère est chez mes grands-parents, en Bretagne. Moi, on m'a mis chez ma tante, ici, pour les vacances. »
+
+« Et ce soir ? » demande BriBri.
+
+« Ma tante travaille jusqu'à minuit, dans un restaurant. Je vais manger un plat réchauffé devant la télé. » Il hausse les épaules. « C'est pas grave. Noël, c'est un truc pour les petits. »
+
+BriBri a onze ans et il adore Noël. Pour une fois, il ne dit rien.
+
+Kaydoudou remet son manteau, ramasse la baguette et dit, de sa voix tranquille :
 
 « Ce soir, tu viens chez nous. Sept heures. Troisième étage. Il y a du poulet DG. »
 
-Kenzo ouvrit la bouche pour dire non. Puis il la referma.
+Kenzo ouvre la bouche pour dire non.
+
+Puis il la referme.
 
 * * *
 
-Le poulet DG, c'était le plat des grandes occasions, au Cameroun : du poulet doré, des plantains mûrs frits, des carottes, des haricots verts, des poivrons, tout ça mijoté ensemble dans une sauce qui sentait l'ail et le gingembre. « DG », comme « directeur général », parce qu'autrefois, disait Papa, seuls les directeurs avaient les moyens d'en manger. Ce soir-là, l'appartement de Bussy en était rempli jusqu'au plafond.
+Le soir, la guirlande clignote, les bougies brillent, et la vitre du salon est toute embuée.
 
-Kenzo arriva à sept heures pile, avec une boîte de chocolats et des cheveux mouillés, coiffés pour l'occasion. Il dit « Bonsoir, madame, bonsoir, monsieur » d'une voix si polie que BriBri ne le reconnut pas. Il mangea deux assiettes de poulet DG sans parler, en fermant les yeux à la première bouchée de plantain. Puis Maman apporta le gâteau, un gâteau au chocolat et à la noix de coco, et Papa mit de la musique.
+Kenzo arrive à sept heures pile. Une boîte de chocolats. Les cheveux mouillés, bien coiffés. Un pull trop grand.
+
+« Bonsoir, madame. Bonsoir, monsieur. »
+
+Il est si poli que BriBri ne le reconnaît pas.
+
+Sur la table basse fume le grand plat. Kenzo le regarde comme un trésor.
+
+« Poulet doré, plantains mûrs, carottes, haricots verts, poivrons, annonce Papa. Le tout mijoté avec de l'ail et du gingembre. Ça s'appelle le poulet DG, comme directeur général. Autrefois, au Cameroun, seuls les directeurs avaient les moyens d'en manger. Ce soir, le directeur général, c'est toi. »
+
+Kenzo mange deux assiettes sans parler. À la première bouchée de plantain, il ferme les yeux. Puis Maman apporte un gâteau au chocolat et à la noix de coco, et Papa met de la musique.
 
 Du makossa. Fort.
 
-Et Papa se leva, et il dansa.
+Et Papa se lève. Et Papa danse.
 
-Papa, l'ingénieur réseau, l'homme calme qui installait les câbles des banques de La Défense, dansa au milieu du salon, devant la table basse où fumait encore le poulet DG, avec sa chemise en pagne, les bras en l'air, les hanches qui tournaient, le visage tout sérieux comme s'il réparait un ordinateur. Maman frappait dans ses mains. Kaydoudou cachait son visage dans un coussin. BriBri se leva pour danser avec lui, le plâtre en l'air.
+Papa, l'ingénieur réseau. L'homme calme qui installe les câbles des banques de La Défense. Il danse au milieu du salon, en chemise en pagne, les bras en l'air, les hanches qui tournent. Et il garde un visage tout sérieux, comme s'il réparait un ordinateur.
 
-Et Kenzo éclata de rire.
+Maman tape dans ses mains. Kaydoudou cache sa tête dans un coussin.
 
-Un vrai rire, un rire de petit garçon, qui sortit de lui d'un coup, comme si quelqu'un avait ouvert une porte fermée à clé depuis longtemps. Il se plia en deux sur le canapé, une main sur le ventre, les yeux pleins de larmes. BriBri s'arrêta de danser et se laissa tomber sur le canapé à côté de lui, le plâtre toujours levé, riant à son tour en le regardant. Il l'avait vu marquer, crier, s'énerver, se taire.
+« Papa, arrête ! On a un invité ! »
 
-Il ne l'avait jamais entendu rire.
+« Justement ! Un invité, ça se fête ! »
 
-À minuit, quand la tante de Kenzo vint le chercher, Kenzo sortit son feutre de sa poche et signa le plâtre de BriBri une deuxième fois, en tout petit, sur le seul endroit encore blanc : « Joyeux Noël, le 7. »
+BriBri bondit pour danser avec lui, le plâtre en l'air.
+
+Et Kenzo éclate de rire.
+
+Un vrai rire. Un rire de petit garçon. Il sort de lui d'un coup, comme une porte fermée à clé depuis longtemps qui s'ouvre enfin. Kenzo se plie en deux sur le canapé, une main sur le ventre, les yeux pleins de larmes.
+
+BriBri se laisse tomber à côté de lui, ses chaussettes rouge et jaune en l'air, le plâtre toujours levé. Il rit à son tour en le regardant. Il a vu Kenzo marquer. Crier. S'énerver. Se taire.
+
+Il ne l'a jamais entendu rire.
+
+À minuit, la tante de Kenzo sonne à la porte. Kenzo sort un feutre de sa poche.
+
+« Je peux signer encore une fois ? »
+
+BriBri regarde son plâtre. Il ne reste qu'une seule place libre. Près du coude. La place de Mami.
+
+*Ça tourne, mes enfants*, dit la voix de Mami dans sa tête. *Ça tourne.*
+
+« Vas-y, dit BriBri. Mami dit que ça doit tourner. »
+
+Kenzo signe, en tout petit : « Joyeux Noël, le 7. »
+
+Quatre-vingt-huit.
 
 * * *
 
-Le plâtre fut enlevé le 9 janvier, à l'hôpital, par une infirmière qui maniait une petite scie ronde dans un bruit de moustique géant. BriBri ferma les yeux pendant toute l'opération. Quand il les rouvrit, le plâtre rouge et jaune était posé sur la table en deux morceaux, comme une coquille d'œuf, avec ses quatre-vingt-huit signatures. Son bras, dedans, était tout pâle, tout maigre, et il sentait bizarre.
+Le 9 janvier, à l'hôpital, une infirmière découpe le plâtre avec une petite scie ronde. Bzzzzz. Un moustique géant. BriBri ferme les yeux du début à la fin.
+
+Quand il les rouvre, le plâtre est posé sur la table en deux morceaux, comme une coquille d'œuf. Avec ses quatre-vingt-huit signatures.
+
+« Beurk, dit BriBri. Mon bras est tout blanc. Et il sent le fromage. »
 
 « Plie-le doucement », dit l'infirmière.
 
-BriBri plia son poignet. Une fois. Deux fois. Ça tirait un peu, mais ça marchait. Il tourna la main, ouvrit les doigts, les referma.
+BriBri plie son poignet. Une fois. Deux fois. Ça tire un peu. Mais ça marche. Il ouvre les doigts. Il les referme.
 
-Puis il leva les yeux vers Kaydoudou, assis sur la chaise à côté, et il avait dans le regard quelque chose de nouveau, quelque chose que Kaydoudou ne lui avait jamais vu.
+Six semaines sur un banc. Six semaines à regarder. Quelque chose a changé, derrière ses yeux. Il le sent.
+
+Il lève la tête vers son frère, assis sur la chaise d'à côté.
 
 « Je vois tout, maintenant, Kayd. »
 
-Il serra le poing.
+Il serre le poing.
 
 « Je vais voir tout. »
 

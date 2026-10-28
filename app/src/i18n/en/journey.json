@@ -463,7 +463,7 @@
     "unmarked": "The register has not been taken yet.",
     "future": "The register is taken on the day of the session.",
     "take": "Take the register",
-    "edit": "Edit the register",
+    "edit": "See the register",
     "observe": "Observe",
     "obs_one": "{{count}} observation during this session.",
     "obs_other": "{{count}} observations during this session."

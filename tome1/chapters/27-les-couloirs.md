@@ -12,11 +12,15 @@ illustration: Plan large en plongée, matin d'octobre sur le terrain d'herbe de 
 
 BriBri s'arrête net au bord de l'herbe, le sac sur l'épaule. Lundi matin, La Granja del Mar. Le terrain est rayé.
 
-Quatre longues lignes blanches le traversent d'un but à l'autre. Bien droites. Toutes fraîches. On dirait une feuille de cahier pour géants.
+Quatre longues lignes blanches le traversent d'un but à l'autre. Toutes fraîches.
+
+« On dirait un cahier pour géants », dit Pol.
+
+« Ou un passage piéton », dit Nil.
 
 Au milieu, Jordi Puig pousse une petite machine à roulettes qui crache de la peinture. Il marche lentement, la langue entre les dents, le crayon derrière l'oreille.
 
-« Il a peint des rails, dit BriBri. On va jouer au train. »
+« Il a peint des rails, dit BriBri. On va jouer au train ? »
 
 « Ce sont des couloirs », dit Laia, qui lace ses crampons sur le banc.
 
@@ -28,7 +32,7 @@ BriBri n'attend pas la réponse. Il se met en position de départ, les bras tend
 
 Il plonge dans l'herbe et fait trois mètres de brasse. Nil applaudit. Nil n'applaudit jamais.
 
-Jordi range sa machine et réunit l'équipe au centre. Comme toujours, il parle si doucement que tout le monde doit se serrer autour de lui.
+Jordi réunit l'équipe au centre. Il parle si doucement que tout le monde doit se serrer.
 
 « Cinc carrils. Cinq couloirs. » Son crayon les montre un par un. « Deux sur les côtés, contre les lignes de touche. Deux entre les côtés et le milieu : els mitjos espais, les demi-espaces. Et un au centre : l'axe. »
 
@@ -46,13 +50,13 @@ Jordi se tourne lentement vers BriBri.
 
 « Deux : l'ailier donne la largeur. Amplada. Toi, tu es mon ailier gauche. Ton couloir, c'est celui-là. »
 
-Le crayon montre la bande d'herbe tout à gauche. La plus étroite. La plus lointaine. Celle qui longe la touche, les bouteilles d'eau, le seau de peinture et les vignes rousses.
+Le crayon montre la bande d'herbe tout à gauche, contre les vignes rousses.
 
-« Celui-là ? Mais c'est le bout du monde ! »
+« Celui-là ? Le tout petit, à côté des bouteilles d'eau et du seau de peinture ? Mais c'est le bout du monde ! »
 
-Jordi ne répond pas. Il reprend sa machine et repasse une couche de blanc sur la ligne qui ferme le couloir de BriBri. Lentement. Comme on ferme une barrière. Puis il continue vers le milieu du terrain, ligne après ligne.
+Jordi ne répond pas. Il repasse une couche de blanc sur la ligne qui ferme le couloir de BriBri, lentement, comme on ferme une barrière. Puis il continue vers le milieu du terrain.
 
-BriBri s'assoit en tailleur au bord de sa bande d'herbe, à côté du seau de peinture. Le menton dans les mains. Il boude, en regardant la ligne fraîche briller sous le ciel bleu pâle.
+BriBri s'assoit en tailleur au bord de sa bande d'herbe, à côté du seau de peinture, le menton dans les mains. Il boude. Entre les vignes et les pins, sous le ciel bleu pâle, la ligne fraîche brille.
 
 *Le bout du monde*, pense-t-il. *Ils m'ont envoyé au bout du monde.*
 
@@ -60,27 +64,35 @@ BriBri s'assoit en tailleur au bord de sa bande d'herbe, à côté du seau de pe
 
 C'est pire que le bout du monde. C'est l'exil.
 
-Pendant tout l'entraînement, il doit rester dans son couloir. Dès qu'il glisse vers le milieu, attiré par le ballon comme un moustique par une lampe, Jordi murmure :
+Dès qu'il glisse vers le milieu, attiré par le ballon comme un moustique par une lampe, Jordi murmure :
 
 « BriBri. Carril. »
 
 Il ne crie pas. Il murmure. Et tout le monde se retourne.
 
-Alors BriBri retourne contre sa ligne. Et là, il ne se passe rien. Le ballon tourne de l'autre côté, entre Nil, Kaydoudou et Laia. Lui, il compte les rangs de vigne. Quarante-trois. Il compte les pins. Vingt-huit. Une dame passe sur le chemin avec son chien.
+Alors BriBri retourne contre sa ligne. Le ballon tourne de l'autre côté, entre Nil, Kaydoudou et Laia. Lui, il fait la seule chose qui lui reste. Le commentateur.
 
-« Bon dia, madame ! Bon dia, le chien ! »
+« Mesdames et messieurs, bonjour du couloir numéro un ! Ici, il ne se passe rien. Absolument rien. Le joueur BriBri Ngassa compte les vignes. Quarante et une... quarante-deux... quarante-trois ! Record du monde ! »
+
+Une dame passe sur le chemin avec son chien.
+
+« Et voici le public ! Bon dia, madame ! Bon dia, le chien ! »
 
 Le chien aboie. Au moins, quelqu'un lui répond.
 
-Puis le ballon reste si longtemps de l'autre côté qu'il arrête de compter. Là-bas, ses amis rient. Ils s'appellent en catalan. Ils se tapent dans la main après un beau une-deux.
+« Le joueur passe maintenant aux pins. Vingt-huit pins ! Incroyable ! Le ballon, lui, n'est toujours pas venu. Il paraît qu'il ne connaît pas le chemin. »
 
-Et quelque chose de froid descend dans son ventre.
+Puis le ballon reste longtemps de l'autre côté. Très longtemps.
 
-C'est une vieille peur. Une peur de Douala. Quand on formait les équipes sur la terre rouge, il restait parfois le dernier. Le plus petit. Cette peur, il l'a avouée à Kaydoudou sous la moustiquaire, la nuit de la lettre de Waldorf : la peur qu'on l'oublie.
+« Et là-bas, mesdames et messieurs... ses amis rigolent. Ils font des une-deux. Sans lui. »
 
-Contre sa ligne blanche, il se sent comme une valise oubliée dans un coin d'aéroport.
+La voix du commentateur devient toute petite. Puis elle se tait. Quelque chose de froid descend dans le ventre de BriBri.
 
-Il mâchonne un brin d'herbe, pour faire celui que ça ne dérange pas.
+Une vieille peur de Douala : rester le dernier quand on forme les équipes. La peur qu'il a avouée à Kaydoudou sous la moustiquaire, la nuit de la lettre de Waldorf.
+
+La peur qu'on l'oublie.
+
+*Je suis une valise*, pense-t-il. *Une valise oubliée dans un coin d'aéroport.*
 
 À la pause, il rejoint son frère près des bouteilles d'eau.
 
@@ -92,15 +104,23 @@ Il mâchonne un brin d'herbe, pour faire celui que ça ne dérange pas.
 
 « Tu ne sais même pas où c'est, la Sibérie. »
 
-« Je sais que c'est loin du ballon. »
+« Je sais que c'est loin du ballon. » BriBri baisse la voix. « Et si vous m'oubliez, là-bas ? »
 
-À la fin de la séance, BriBri va voir Jordi. Il a préparé son discours dans les trois langues, pour être sûr d'être compris.
+Kaydoudou boit une gorgée. Il ne rit pas.
 
-« Jordi, escolta. Écoute. En France, Monsieur Lacombe m'a appris à jouer entre les lignes. Là-bas, j'étais une souris dans un mur ! Je suis petit, je me glisse, je me tourne, hop ! » Il mime la souris avec ses mains. « Mais une souris collée à la ligne de touche, elle fait quoi ? Elle meurt de faim. Je veux venir au milieu. Si us plau. Por favor. S'il te plaît. »
+« Personne ne peut oublier quelqu'un qui porte une chaussette rouge et une chaussette jaune. »
+
+« Tu as déjà dit ça à Douala. »
+
+« C'est toujours scientifique. »
+
+À la fin de la séance, BriBri va voir Jordi, avec un discours en trois langues.
+
+« Jordi, escolta. Écoute. En France, Monsieur Lacombe m'a appris à jouer entre les lignes. Là-bas, j'étais une souris dans un mur ! Je suis petit, je me glisse, je me tourne, hop ! Mais une souris collée à la ligne de touche, elle fait quoi ? Elle meurt de faim. Je veux venir au milieu. Si us plau. Por favor. S'il te plaît. »
 
 Jordi l'écoute jusqu'au bout, très sérieux. Puis il hoche la tête.
 
-« Entre les lignes, sí. Tu viendras. Mais d'abord, il faut que les lignes soient larges. » Il lui tapote l'épaule. « Dissabte, le match. Reste dans ton couloir. Une mi-temps entière. Après, tu me diras. »
+« Entre les lignes, sí. Tu viendras. Mais d'abord, il faut que les lignes soient larges. Dissabte, le match. Reste dans ton couloir. Une mi-temps entière. Après, tu me diras. »
 
 « Une mi-temps ENTIÈRE ? »
 
@@ -108,31 +128,37 @@ Jordi l'écoute jusqu'au bout, très sérieux. Puis il hoche la tête.
 
 « Promis », grogne BriBri.
 
-Il repart vers la voiture de Maman en traînant les pieds. Une mi-temps entière dans le couloir de la piscine. Autant lui demander de ne pas manger de beignets pendant un mois.
+Puis, tout bas, à Kaydoudou :
+
+« Une mi-temps dans le couloir de la piscine. Autant me demander de ne pas manger de beignets pendant un mois. »
 
 * * *
 
-Samedi. Le Club Esportiu Costa Daurada reçoit le CF Torre del Far.
+Samedi. Le Costa Daurada reçoit le CF Torre del Far, une équipe d'un village de pêcheurs, un peu plus au sud. Des garçons et des filles costauds, aux bras bronzés. Dès la première minute, ils se serrent tous devant leur but.
 
-Ils viennent d'un village de pêcheurs, un peu plus au sud. Des garçons et des filles costauds, aux bras bronzés. Quand ils défendent, ils se serrent tous devant leur but.
-
-« On dirait des sardines dans une boîte, chuchote BriBri.
+« Des sardines ! chuchote BriBri. Ils défendent comme des sardines dans une boîte ! »
 
 « Alors il faut ouvrir la boîte », dit Kaydoudou.
 
-Première mi-temps. BriBri tient dix minutes dans son couloir. Dix longues minutes.
+BriBri tient dix minutes dans son couloir. Dix longues minutes.
 
 Puis le ballon lui manque trop.
 
 *Juste une fois*, se dit-il. *Juste pour aider.*
 
-Il glisse vers le milieu. Une fois. Deux fois. Dix fois. Et chaque fois, il se retrouve dans le demi-espace de Laia, sur la même ligne qu'elle. Un seul défenseur les surveille tous les deux.
+Il glisse vers le milieu. Une fois. Deux fois. Dix fois. Et chaque fois, il se retrouve dans le demi-espace de Laia, sur la même ligne qu'elle.
 
 « BriBri ! siffle Laia. Tu es sur mes pieds ! »
 
-Quand Kaydoudou lève la tête pour passer, BriBri sait ce qu'il voit : un mur de maillots bleus et blancs, avec un petit ailier coincé dedans comme un raisin dans une grappe.
+« Je viens t'aider ! »
 
-Les passes ne passent pas. Mi-temps : 0-0. Un 0-0 serré, poisseux, qui colle aux crampons.
+« Tu aides leur défenseur ! Il nous garde tous les deux ! »
+
+« Je ne vois rien ! crie Kaydoudou. Que des maillots ! »
+
+Un mur de bleu et de blanc. Avec un petit ailier coincé dedans, comme un raisin dans une grappe.
+
+Mi-temps : 0-0. Un 0-0 poisseux, qui colle aux crampons.
 
 Jordi ne crie pas. Il ne crie jamais. Il s'accroupit devant BriBri, sur le banc, et montre la ligne de touche.
 
@@ -144,17 +170,25 @@ Deuxième mi-temps. Il se plante si près de la ligne que ses crampons mordent l
 
 Alors il se passe une chose bizarre.
 
-Le numéro 2 du Torre del Far le suit. Un grand garçon aux cheveux décolorés par le sel. Il n'a pas le choix : si BriBri reste seul, le ballon peut arriver. Et tout Vinyamar sait ce que BriBri fait quand il reçoit seul.
+Le numéro 2 du Torre del Far le suit. Un grand garçon aux cheveux décolorés par le sel. Il reste collé à lui, à un mètre, comme un chewing-gum sous une chaussure.
 
-Alors le numéro 2 reste collé à lui. À un mètre. Comme un chewing-gum sous une chaussure.
+« Què fas, petit ? demande le chewing-gum. Qu'est-ce que tu fais ? »
 
-BriBri fait un pas en avant. Le chewing-gum fait un pas en avant. BriBri recule. Le chewing-gum recule.
+« Je garde la ligne. C'est mon métier. »
 
-Pour voir, BriBri salue la petite tribune.
+« I la pilota ? Et le ballon ? »
+
+« Il viendra peut-être. Un jour. »
+
+BriBri fait un pas en avant. Le chewing-gum fait un pas en avant. BriBri recule. Le chewing-gum recule. Pour voir, BriBri salue la petite tribune.
 
 « Coucou, Maman ! »
 
-Le numéro 2, perdu, regarde la tribune lui aussi.
+Le numéro 2 regarde la tribune, lui aussi.
+
+« C'est ta mare ? Ta mère ? »
+
+« Oui. Elle est infirmière. Si tu me fais tomber, c'est elle qui te soigne. »
 
 Et pendant ce temps, au milieu du terrain, quelque chose s'ouvre.
 
@@ -162,7 +196,9 @@ BriBri jette un regard par-dessus son épaule, comme Monsieur Lacombe le lui a a
 
 Et il le voit.
 
-Entre son chewing-gum et le défenseur central, il y a un trou. Un trou énorme. On pourrait y garer le tracteur des vendanges, avec sa remorque.
+Entre son chewing-gum et le défenseur central, il y a un trou. Un trou énorme.
+
+« Waouh, souffle BriBri. On pourrait garer le tracteur des vendanges, là-dedans. »
 
 La boîte de sardines s'est ouverte toute seule. Parce qu'un petit garçon aux chaussettes dépareillées est allé s'asseoir sur la ligne de touche.
 
@@ -174,21 +210,23 @@ Les deux doigts ! Le signal des frères ! Sauf que cette fois, ce n'est pas pour
 
 « Laia ! » crie Kaydoudou.
 
-La passe part à ras de l'herbe. Elle traverse le trou comme une flèche. Laia arrive lancée dans le demi-espace. Contrôle. Tête levée. Frappe.
+La passe part à ras de l'herbe et traverse le trou comme une flèche. Laia arrive lancée. Contrôle. Tête levée. Frappe.
 
 Chhh. Le filet tremble.
 
-1-0.
+1-0 !
 
-Laia court vers Kaydoudou en hurlant. Tout le banc saute. Et BriBri, à quarante mètres, saute aussi. Tout seul. Contre sa ligne.
+Tout le banc saute. Et BriBri, à quarante mètres, saute aussi. Tout seul. Contre sa ligne.
 
-Le numéro 2 le regarde avec une tête de reproche. Comme si c'était sa faute.
+« C'est ta faute, ça ! » grogne le numéro 2.
 
-Et c'est sa faute.
+« Je sais ! » répond BriBri, ravi.
 
-En deuxième mi-temps, BriBri ne touche le ballon que six fois. Il ne dribble personne. Il ne marque pas. Il ne fait pas marquer.
+Après ça, il ne dribble personne. Il ne marque pas. Mais à chaque attaque, le même trou s'ouvre. Et le commentateur se réveille.
 
-Mais à chaque attaque, le même trou s'ouvre au milieu. Et ses amis s'y engouffrent. Kaydoudou. Laia. Et même Nil, qui monte une fois avec le ballon jusqu'à la surface, la bouche ouverte de surprise.
+« Le trou est encore là, mesdames et messieurs ! Kaydoudou fonce dedans ! Laia aussi ! Et... ce n'est pas possible... Nil ! Nil Soler monte jusqu'à la surface ! »
+
+Nil lui-même a la bouche ouverte de surprise.
 
 « Nil ! Qu'est-ce que tu fais là ? » crie Pol.
 
@@ -198,29 +236,31 @@ Mais à chaque attaque, le même trou s'ouvre au milieu. Et ses amis s'y engouff
 
 Le match finit 3-1.
 
-Dans la voiture, BriBri se tait longtemps, la tête contre la vitre. Les vignes défilent.
+Dans la voiture, BriBri se tait longtemps, la tête contre la vitre.
 
-« Je n'ai presque pas touché le ballon, dit-il enfin.
+« Je n'ai presque pas touché le ballon », dit-il enfin.
 
-« Non », dit Kaydoudou.
+« Six fois, dit Kaydoudou. J'ai compté. »
 
 « Mais je jouais. » Il se redresse d'un coup. « Je ne touche pas le ballon, mais je joue. C'est possible, ça ? »
 
-Kaydoudou sourit en coin et regarde par la fenêtre. Il ne répond pas. Mais pour BriBri, ce sourire-là, c'est un oui.
+Kaydoudou sourit en coin et regarde par la fenêtre. Pour BriBri, ce sourire-là, c'est un oui.
 
 * * *
 
-Le lundi, Jordi les fait entrer dans la grande salle de la masia, celle où l'on regarde les vidéos. Une vieille table de ferme. Des fenêtres étroites. L'odeur des figues qui mûrissent dans la cour. Et un écran blanc tendu sur une poutre.
+Le lundi, Jordi les fait entrer dans la salle vidéo de la masia. Une vieille table de ferme. L'odeur des figues dans la cour. Un écran blanc tendu sur une poutre.
 
-Jordi lance les images.
+Premier but. Pause. Jordi prend un feutre et dessine sur l'écran. Un cercle autour de BriBri, collé à la touche. Un cercle autour du numéro 2, collé à BriBri. Une flèche vers le trou. Et dans le trou, Laia.
 
-Premier but. Pause. Il prend un feutre et dessine sur l'écran. Un cercle autour de BriBri, collé à la touche. Un cercle autour du numéro 2, collé à BriBri. Une flèche vers le trou. Et dans le trou, Laia.
+« Mais là, BriBri ne fait rien ! » dit Pol.
 
-« Un », dit Jordi.
+« Exacte. Il ne fait rien. Et regarde ce que ça fait. Un. »
 
 Deuxième but. Même cercle. Même flèche. Même trou. Kaydoudou dedans.
 
 « Dos. »
+
+« Encore le cercle de BriBri ! » s'écrie Laia.
 
 Troisième but. Même cercle, encore. Nil débarque dans le trou avec sa tête de surpris, et sert Pol.
 
@@ -228,7 +268,9 @@ Troisième but. Même cercle, encore. Nil débarque dans le trou avec sa tête d
 
 Toute l'équipe se retourne vers BriBri.
 
-Il est assis au bout de la table, les pieds sur la chaise, les yeux grands comme des soucoupes. Il regarde l'écran. Puis ses chaussettes. Puis encore l'écran.
+« Tres de tres, compte Nil. Trois sur trois. Cent pour cent. »
+
+Il est assis au bout de la table, les yeux grands comme des soucoupes. Il regarde l'écran. Puis ses chaussettes. Puis encore l'écran.
 
 « Alors je suis invisible, dit-il lentement. Et utile. »
 
@@ -238,7 +280,7 @@ Il se lève. Il pose les poings sur les hanches. Il bombe le torse.
 
 « Capitaine Largeur ! » hurle Pol, de son rire de tonnerre.
 
-Toute la salle applaudit. Laia siffle avec deux doigts. Même Nil tape sur la table.
+Laia siffle avec deux doigts. Même Nil tape sur la table.
 
 Seul Jordi ne rit pas. Il regarde Kaydoudou, longtemps. Puis il sort le crayon de derrière son oreille.
 

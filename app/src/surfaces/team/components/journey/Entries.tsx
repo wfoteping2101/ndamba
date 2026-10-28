@@ -93,11 +93,11 @@ export function MatchJourneyButtons({ match, players }: { match: Match; players:
   const [open, setOpen] = useState(false)
   const done = match.status === 'done'
   return (
-    <>
-      <Link to={`/app/observer?match=${match.id}`} className="btn-outline btn-lg justify-center"><Eye size={18} />{t('matchCard.observe')}</Link>
-      {done && <button type="button" className="btn-outline btn-lg justify-center" onClick={() => setOpen(true)}><Timer size={18} />{t('matchCard.minutes')}</button>}
+    <div className={cx('grid gap-2 sm:contents', done ? 'grid-cols-2' : 'grid-cols-1')}>
+      <Link to={`/app/observer?match=${match.id}`} className="btn-outline btn-lg justify-center px-3"><Eye size={18} />{t('matchCard.observe')}</Link>
+      {done && <button type="button" className="btn-outline btn-lg justify-center px-3" onClick={() => setOpen(true)}><Timer size={18} />{t('matchCard.minutes')}</button>}
       {done && <MinutesModal open={open} onClose={() => setOpen(false)} match={match} players={players} />}
-    </>
+    </div>
   )
 }
 
@@ -113,8 +113,11 @@ export function ObserveSheet({ open, onClose, match, squad, minute }: { open: bo
     return [{ id: 'xi', label: t('observe.groups.starters'), players: xi }, { id: 'subs', label: t('observe.groups.subs'), players: rest }]
   }, [match.lineup, squad, t])
   return (
-    <Modal open={open} onClose={onClose} wide title={t('observe.sheetTitle', { minute: min ?? minute })}>
-      {open && <ObservePanel teamId={match.teamId} groups={groups} context={{ matchId: match.id, date: match.date }} showMinute minute={min} onMinute={setMin} compact stickyClass={cx('bottom-0')} />}
-    </Modal>
+    // the live tagger is a dark, non-selectable screen: give the sheet its own ink and text selection
+    <div className="select-text text-ink">
+      <Modal open={open} onClose={onClose} wide title={t('observe.sheetTitle', { minute: min ?? minute })}>
+        {open && <ObservePanel teamId={match.teamId} groups={groups} context={{ matchId: match.id, date: match.date }} showMinute minute={min} onMinute={setMin} compact stickyClass={cx('bottom-0')} />}
+      </Modal>
+    </div>
   )
 }

@@ -137,7 +137,7 @@
     "obsMatch": "Match contre {{opponent}}",
     "obsSession": "Séance : {{title}}",
     "obsFree": "Observation hors séance",
-    "minute": "{{n}}e minute",
+    "minute": "minute {{n}}",
     "vs": "Contre {{opponent}}",
     "starter": "Titulaire",
     "subOn": "Entré en jeu",
@@ -392,7 +392,7 @@
     "saveMany_other": "Enregistrer pour {{count}} joueurs",
     "saved_one": "Observation enregistrée : {{names}}",
     "saved_other": "Observation enregistrée pour {{count}} joueurs : {{names}}",
-    "sheetTitle": "Observer, {{minute}}e minute",
+    "sheetTitle": "Observer, minute {{minute}}",
     "tipTitle": "Observer sans se tromper",
     "tipBody": "Observez un joueur à la fois pendant 8 à 10 minutes, dans un petit jeu ou un match, et notez seulement ce que la situation a montré. Plusieurs observations sur plusieurs séances font une évaluation juste."
   },
@@ -463,7 +463,7 @@
     "unmarked": "L'appel n'est pas encore fait.",
     "future": "L'appel se fait le jour de la séance.",
     "take": "Faire l'appel",
-    "edit": "Modifier l'appel",
+    "edit": "Voir l'appel",
     "observe": "Observer",
     "obs_one": "{{count}} observation pendant cette séance.",
     "obs_other": "{{count}} observations pendant cette séance."
