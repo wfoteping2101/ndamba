@@ -37,7 +37,8 @@ export function NextMatchCard({ d }: { d: PerfData }) {
   const starter = me ? isStarter(m, me.id) : false
   const bench = me ? m.subs.includes(me.id) : false
   const slot = starter && me ? m.lineup.find((l) => l.playerId === me.id)?.slot : undefined
-  const slotLabel = slot ? formationSlots(m.format, m.formation).find((s) => s.id === slot)?.label : undefined
+  const slotDef = slot ? formationSlots(m.format, m.formation).find((s) => s.id === slot) : undefined
+  const slotLabel = slotDef ? t('perf.next.role', { pos: t(`common:positions.${slotDef.role}`), n: slotDef.label }) : undefined
   const plan = [
     { k: 'possession', v: m.plan.possession },
     { k: 'transitionDef', v: m.plan.transitionDef },
