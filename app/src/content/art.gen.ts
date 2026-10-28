@@ -905,6 +905,21 @@ export const TOME1_ART: ArtImage[] = [
   "note": "Family hug in the kitchen, Papa cooking."
  },
  {
+  "file": "ch14",
+  "id": "ch14",
+  "kind": "chapter",
+  "chapter": 14,
+  "part": 2,
+  "title": "La Coupe du monde chez nous",
+  "alt": "Dans un immense stade de la Coupe du monde, Papa, BriBri et Kaydoudou lèvent les bras quand la vague arrive.",
+  "w": 1024,
+  "h": 1536,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "Third take: Papa is now a young father with a black beard and a light blue shirt, the wave reaches the three of them, soccer pitch only."
+ },
+ {
   "file": "ch14b",
   "id": "ch14b",
   "kind": "beat",
@@ -1068,6 +1083,21 @@ export const TOME1_ART: ArtImage[] = [
   "webp": true,
   "status": "approved",
   "note": "Kaydoudou thanks Tyler at the car window with the new socks; BriBri on the steps among moving boxes. Minor: bracelet on the wrong wrist."
+ },
+ {
+  "file": "ch17",
+  "id": "ch17",
+  "kind": "chapter",
+  "chapter": 17,
+  "part": 3,
+  "title": "Avant de recevoir, tu regardes",
+  "alt": "À l'essai de l'ESM, Kenzo chipe le ballon dans le dos de BriBri ; Monsieur Lacombe arrête le jeu.",
+  "w": 1024,
+  "h": 1536,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "Second take: Kenzo in his yellow bib steals the ball behind BriBri, Lacombe raises his hand, Kaydoudou appears once, far behind."
  },
  {
   "file": "ch17b",
@@ -1295,6 +1325,21 @@ export const TOME1_ART: ArtImage[] = [
   "note": "Papa holds Kaydoudou in a long hug in the car park, Maman beside them, Lacombe watching by the minibus."
  },
  {
+  "file": "ch21",
+  "id": "ch21",
+  "kind": "chapter",
+  "chapter": 21,
+  "part": 3,
+  "title": "Les cinq secondes",
+  "alt": "Debout sur le banc, Kaydoudou brandit son plâtre rouge et jaune comme une torche ; sur le terrain, BriBri lève le poing vers lui.",
+  "w": 1024,
+  "h": 1536,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "Second take: Awa is a grown woman holding Kaydoudou by the sleeve as he raises his red and yellow cast like a torch."
+ },
+ {
   "file": "ch21b",
   "id": "ch21b",
   "kind": "beat",
@@ -1325,6 +1370,21 @@ export const TOME1_ART: ArtImage[] = [
   "note": "BriBri's voice cracks, Mathis looks for the bird, three boys laugh in the grass, Lacombe hides his smile."
  },
  {
+  "file": "ch21d",
+  "id": "ch21d",
+  "kind": "beat",
+  "chapter": 21,
+  "part": 3,
+  "title": "Les cinq secondes",
+  "alt": "Sous les projecteurs glacés, trois maillots blancs fondent sur le défenseur, et Lucas tend sa grande jambe pour lui prendre le ballon.",
+  "w": 1200,
+  "h": 800,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "Lucas's one long step steals the ball, Kenzo and BriBri close in, Kaydoudou shouts from the bench."
+ },
+ {
   "file": "ch22",
   "id": "ch22",
   "kind": "chapter",
@@ -1338,6 +1398,81 @@ export const TOME1_ART: ArtImage[] = [
   "webp": true,
   "status": "approved",
   "note": "Christmas in Bussy: Papa dances, Kenzo bends double laughing, Kaydoudou raises his red and yellow cast, chicken DG on the table."
+ },
+ {
+  "file": "ch22b",
+  "id": "ch22b",
+  "kind": "beat",
+  "chapter": 22,
+  "part": 3,
+  "title": "Noël sans Mami",
+  "alt": "Kaydoudou colle son plâtre rouge et jaune contre la tablette, et Mami éclate de rire si fort que ses poules s'envolent derrière elle.",
+  "w": 1200,
+  "h": 800,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "Kaydoudou presses his cast to the tablet, Mami laughs in Bafoussam and the hens fly up."
+ },
+ {
+  "file": "ch22c",
+  "id": "ch22c",
+  "kind": "beat",
+  "chapter": 22,
+  "part": 3,
+  "title": "Noël sans Mami",
+  "alt": "Dans la cage gelée, Kaydoudou lève une carte rouge dans le dos de Kenzo, qui a regardé avant et frappe du gauche en une touche.",
+  "w": 1200,
+  "h": 800,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "The frozen cage on 24 December: Kenzo sees the red card and strikes first time."
+ },
+ {
+  "file": "ch22d",
+  "id": "ch22d",
+  "kind": "beat",
+  "chapter": 22,
+  "part": 3,
+  "title": "Noël sans Mami",
+  "alt": "Le plâtre gît en deux morceaux sur la table ; Kaydoudou plie son poignet, serre le poing et regarde son frère avec des yeux tout neufs.",
+  "w": 1200,
+  "h": 800,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "The cast split in two, Kaydoudou closes his freed fist, BriBri moved beside him."
+ },
+ {
+  "file": "ch23",
+  "id": "ch23",
+  "kind": "chapter",
+  "chapter": 23,
+  "part": 3,
+  "title": "Parler, c'est passer",
+  "alt": "Sous la pluie bretonne, BriBri crie l'appel, Kaydoudou pivote entre deux adversaires, Kenzo part dans la course.",
+  "w": 1024,
+  "h": 1536,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "Brittany in the rain: BriBri calls, Kaydoudou pivots between two burgundy shirts, Kenzo already running; lighthouse behind."
+ },
+ {
+  "file": "ch23b",
+  "id": "ch23b",
+  "kind": "beat",
+  "chapter": 23,
+  "part": 3,
+  "title": "Parler, c'est passer",
+  "alt": "Une mouette s'envole avec la première crêpe de Kaydoudou, qui reste la main en l'air, pendant que Lucas, Kenzo et BriBri meurent de rire.",
+  "w": 1200,
+  "h": 800,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "The seagull steals the first crêpe; Lucas falls laughing, Kenzo holds the post, BriBri clutches his ribs."
  }
 ]
 export const ART_DIRECTION: ArtSection[] = [
