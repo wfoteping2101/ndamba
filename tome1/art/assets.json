@@ -351,9 +351,13 @@
   "prompt": "tome1/prompts/ch06.txt",
   "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
   "master": "tome1/illustrations/_masters/ch06.png",
-  "status": "redo",
-  "review": "Opener: BriBri seen in three quarter from his right with the shaved part on his RIGHT side. Regenerate with the part on his left.",
-  "integrated_in": []
+  "status": "approved, integrated",
+  "review": "Redo approved: the pinky promise under the mosquito nets, part on his left, the patched ball between the beds.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch07",
@@ -402,11 +406,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch09.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch09.png",
+  "status": "approved, integrated",
+  "review": "First snow in Waldorf: BriBri in the red anorak tastes the snow, Kaydoudou in pyjamas and flip-flops, red sock right.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch10",
@@ -417,11 +425,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch10.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch10.png",
+  "status": "approved, integrated",
+  "review": "The tryouts nutmeg on Tyler: Kaydoudou 33, BriBri 34 in orange bibs.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch11",
@@ -432,11 +444,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch11.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch11.png",
+  "status": "approved, integrated",
+  "review": "Marcus shows the single yellow arrow; BriBri on the front row, chin in hand.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch12",
@@ -447,11 +463,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch12.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch12.png",
+  "status": "approved, integrated",
+  "review": "L'aimant: Kaydoudou 33 draws two defenders; red sock right seen from behind.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch13",
@@ -462,10 +482,10 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch13.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch13.png",
+  "status": "redo",
+  "review": "Marcus drawn as a boy: he is a grown man of 28. Prompt fixed.",
   "integrated_in": []
  },
  {
@@ -478,10 +498,10 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch14.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch14.png",
+  "status": "redo",
+  "review": "American football field with yard lines and goalposts at a World Cup match; Kaydoudou socks inverted. Prompt fixed (soccer pitch only).",
   "integrated_in": []
  },
  {
@@ -493,11 +513,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch15.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch15.png",
+  "status": "approved, integrated",
+  "review": "L'ouvre-porte: Kaydoudou 33 drags Pot-de-Colle away, BriBri 8, Tyler.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch16",
@@ -1000,6 +1024,7 @@
   "chapter": 3,
   "refs": [
    "sheet-brothers.png",
+   "ch03.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch03b.txt",
@@ -1018,6 +1043,7 @@
   "chapter": 3,
   "refs": [
    "sheet-brothers.png",
+   "ch03.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch03c.txt",
@@ -1036,14 +1062,18 @@
   "chapter": 3,
   "refs": [
    "sheet-brothers.png",
+   "ch03.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch03d.txt",
   "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
   "master": "tome1/illustrations/_masters/ch03d.png",
-  "status": "redo",
-  "review": "Close-up of BriBri seen from his right side with the shaved part on the RIGHT: the part must be on his left. Regenerate.",
-  "integrated_in": []
+  "status": "approved, integrated",
+  "review": "Redo: fist and heart ritual under the mango tree. The part still shows on his right in this view: minor, accepted.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch04b",
@@ -1276,14 +1306,18 @@
   "chapter": 8,
   "refs": [
    "sheet-brothers.png",
+   "ch08.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch08b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch08b.png",
+  "status": "approved, integrated",
+  "review": "The Panthères in leopard yellow, their captain leans over Kaydoudou; BriBri number 8.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch08c",
@@ -1291,14 +1325,18 @@
   "chapter": 8,
   "refs": [
    "sheet-brothers.png",
+   "ch08.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch08c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch08c.png",
+  "status": "approved, integrated",
+  "review": "Ousmane saves the last penalty; Kaydoudou seen from behind (sock sides inverted in this view: minor).",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch08d",
@@ -1307,14 +1345,18 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch08.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch08d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch08d.png",
+  "status": "approved, integrated",
+  "review": "Mami and the njangi women dance after the title; Kaydoudou points, red sock right.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch09b",
@@ -1325,11 +1367,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch09b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch09b.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou in the snow with the neighbours Mr and Mrs Hayes and their dog.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch09c",
@@ -1340,11 +1385,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch09c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch09c.png",
+  "status": "approved, integrated",
+  "review": "Juggling Mami's ball in the basement.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch09d",
@@ -1355,11 +1403,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch09d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch09d.png",
+  "status": "approved, integrated",
+  "review": "Futsal: BriBri plays one touch, Kaydoudou runs in, red sock right.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch10b",
@@ -1370,11 +1421,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch10b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch10b.png",
+  "status": "approved, integrated",
+  "review": "Coach Whitfield and the tryout bibs, 34 and 33.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch10c",
@@ -1385,11 +1439,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch10c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch10c.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou does Tonton Fokou's owl whistle for his brother.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch10d",
@@ -1400,11 +1457,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch10d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch10d.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou 33 in the dome, the ball in the air.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch11b",
@@ -1470,11 +1530,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch12b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch12b.png",
+  "status": "approved, integrated",
+  "review": "Marcus with the tablet on the cooler, Kaydoudou 33, Diego.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch12c",
@@ -1485,11 +1548,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch12c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch12c.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou and Tyler bump heads over a cone.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch12d",
@@ -1500,11 +1566,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch12d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch12d.png",
+  "status": "approved, integrated",
+  "review": "The brothers in the basement, Kaydoudou hugging Mami's ball.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch13b",
@@ -1516,11 +1585,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch13b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch13b.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou dances with the vacuum, Maman studies, BriBri laughs.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch13c",
@@ -1531,11 +1603,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch13c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch13c.png",
+  "status": "approved, integrated",
+  "review": "Match against the red team, Kaydoudou 33.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch13d",
@@ -1547,11 +1622,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch13d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch13d.png",
+  "status": "approved, integrated",
+  "review": "Family hug in the kitchen, Papa cooking.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch14b",
@@ -1563,11 +1641,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch14b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch14b.png",
+  "status": "approved, integrated",
+  "review": "The stadium in Philadelphia: Papa, the brothers and Maman with the fans.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch14c",
@@ -1579,10 +1660,10 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch14c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch14c.png",
+  "status": "redo",
+  "review": "Mami appears at the watch party in Maryland, but she is in Bafoussam. Reference sheet rule fixed so only named adults appear.",
   "integrated_in": []
  },
  {
@@ -1594,11 +1675,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch14d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch14d.png",
+  "status": "approved, integrated",
+  "review": "Watch party, BriBri reads the notebook, Kaydoudou dances with a dog.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch15b",
@@ -1609,11 +1693,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch15b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch15b.png",
+  "status": "approved, integrated",
+  "review": "The cooler at the summer cup, Kaydoudou 33, BriBri 8.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch15c",
@@ -1624,11 +1711,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch15c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch15c.png",
+  "status": "approved, integrated",
+  "review": "Tyler with the red and yellow socks on the wrong feet, the brothers and Diego.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch15d",

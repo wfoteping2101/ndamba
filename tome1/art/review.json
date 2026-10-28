@@ -139,8 +139,8 @@
   "note": "Mud celebration; BriBri bicycle kick, Kaydoudou jumping, red sock right."
  },
  "ch03d": {
-  "status": "redo",
-  "note": "Close-up of BriBri seen from his right side with the shaved part on the RIGHT: the part must be on his left. Regenerate."
+  "status": "approved",
+  "note": "Redo: fist and heart ritual under the mango tree. The part still shows on his right in this view: minor, accepted."
  },
  "ch05b": {
   "status": "approved",
@@ -183,7 +183,115 @@
   "note": "On the plane: Kaydoudou at the window (red sock right, yellow left), BriBri with the wax notebook, part on his left, holding hands."
  },
  "ch06": {
+  "status": "approved",
+  "note": "Redo approved: the pinky promise under the mosquito nets, part on his left, the patched ball between the beds."
+ },
+ "ch08b": {
+  "status": "approved",
+  "note": "The Panthères in leopard yellow, their captain leans over Kaydoudou; BriBri number 8."
+ },
+ "ch08c": {
+  "status": "approved",
+  "note": "Ousmane saves the last penalty; Kaydoudou seen from behind (sock sides inverted in this view: minor)."
+ },
+ "ch08d": {
+  "status": "approved",
+  "note": "Mami and the njangi women dance after the title; Kaydoudou points, red sock right."
+ },
+ "ch09": {
+  "status": "approved",
+  "note": "First snow in Waldorf: BriBri in the red anorak tastes the snow, Kaydoudou in pyjamas and flip-flops, red sock right."
+ },
+ "ch09b": {
+  "status": "approved",
+  "note": "Kaydoudou in the snow with the neighbours Mr and Mrs Hayes and their dog."
+ },
+ "ch09c": {
+  "status": "approved",
+  "note": "Juggling Mami's ball in the basement."
+ },
+ "ch09d": {
+  "status": "approved",
+  "note": "Futsal: BriBri plays one touch, Kaydoudou runs in, red sock right."
+ },
+ "ch10": {
+  "status": "approved",
+  "note": "The tryouts nutmeg on Tyler: Kaydoudou 33, BriBri 34 in orange bibs."
+ },
+ "ch10b": {
+  "status": "approved",
+  "note": "Coach Whitfield and the tryout bibs, 34 and 33."
+ },
+ "ch10c": {
+  "status": "approved",
+  "note": "Kaydoudou does Tonton Fokou's owl whistle for his brother."
+ },
+ "ch10d": {
+  "status": "approved",
+  "note": "Kaydoudou 33 in the dome, the ball in the air."
+ },
+ "ch11": {
+  "status": "approved",
+  "note": "Marcus shows the single yellow arrow; BriBri on the front row, chin in hand."
+ },
+ "ch12": {
+  "status": "approved",
+  "note": "L'aimant: Kaydoudou 33 draws two defenders; red sock right seen from behind."
+ },
+ "ch12b": {
+  "status": "approved",
+  "note": "Marcus with the tablet on the cooler, Kaydoudou 33, Diego."
+ },
+ "ch12c": {
+  "status": "approved",
+  "note": "Kaydoudou and Tyler bump heads over a cone."
+ },
+ "ch12d": {
+  "status": "approved",
+  "note": "The brothers in the basement, Kaydoudou hugging Mami's ball."
+ },
+ "ch13b": {
+  "status": "approved",
+  "note": "Kaydoudou dances with the vacuum, Maman studies, BriBri laughs."
+ },
+ "ch13c": {
+  "status": "approved",
+  "note": "Match against the red team, Kaydoudou 33."
+ },
+ "ch13d": {
+  "status": "approved",
+  "note": "Family hug in the kitchen, Papa cooking."
+ },
+ "ch14b": {
+  "status": "approved",
+  "note": "The stadium in Philadelphia: Papa, the brothers and Maman with the fans."
+ },
+ "ch14d": {
+  "status": "approved",
+  "note": "Watch party, BriBri reads the notebook, Kaydoudou dances with a dog."
+ },
+ "ch15": {
+  "status": "approved",
+  "note": "L'ouvre-porte: Kaydoudou 33 drags Pot-de-Colle away, BriBri 8, Tyler."
+ },
+ "ch15b": {
+  "status": "approved",
+  "note": "The cooler at the summer cup, Kaydoudou 33, BriBri 8."
+ },
+ "ch15c": {
+  "status": "approved",
+  "note": "Tyler with the red and yellow socks on the wrong feet, the brothers and Diego."
+ },
+ "ch13": {
   "status": "redo",
-  "note": "Opener: BriBri seen in three quarter from his right with the shaved part on his RIGHT side. Regenerate with the part on his left."
+  "note": "Marcus drawn as a boy: he is a grown man of 28. Prompt fixed."
+ },
+ "ch14": {
+  "status": "redo",
+  "note": "American football field with yard lines and goalposts at a World Cup match; Kaydoudou socks inverted. Prompt fixed (soccer pitch only)."
+ },
+ "ch14c": {
+  "status": "redo",
+  "note": "Mami appears at the watch party in Maryland, but she is in Bafoussam. Reference sheet rule fixed so only named adults appear."
  }
 }

@@ -1470,6 +1470,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch03.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1495,6 +1496,7 @@
   "shot": "wide",
   "refs": [
    "sheet-brothers.png",
+   "ch03.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1520,6 +1522,7 @@
   "shot": "close",
   "refs": [
    "sheet-brothers.png",
+   "ch03.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1854,6 +1857,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch08.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1879,6 +1883,7 @@
   "shot": "dynamic",
   "refs": [
    "sheet-brothers.png",
+   "ch08.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1905,6 +1910,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch08.png",
    "ch07.png"
   ],
   "aspect": "3:2",
