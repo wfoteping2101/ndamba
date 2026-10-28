@@ -15,7 +15,7 @@
   "fr": {
     "title": "Le circuit des yeux",
     "subtitle": "Regarder derrière soi avant de recevoir : la couleur ou le nombre décide de la porte",
-    "objective": "Faire du regard par-dessus l'épaule un réflexe, sans adversaire pour commencer. L'information est derrière le receveur : s'il n'a pas regardé avant la passe, il ne peut pas choisir la bonne porte.",
+    "objective": "Faire du regard par-dessus l'épaule un réflexe, d'abord sans adversaire. L'information est derrière le receveur : sans regard avant la passe, pas de bonne porte.",
     "organisation": [
       "Carré de 20 x 20 m : le serveur S à gauche, le receveur R dans une zone de 3 x 3 m au centre.",
       "Trois portes de 3 m sur le côté droit, chacune avec sa couleur (plots ou chasubles : rouge, jaune, bleu).",
@@ -26,7 +26,7 @@
     "rules": [
       "Au moment où S passe, E lève une couleur ; R l'annonce à voix haute avant son premier contact.",
       "R joue à travers la porte de cette couleur en deux touches maximum : 1 point.",
-      "Couleur fausse, oubliée ou mauvaise porte : 0 point, le circuit continue sans arrêt.",
+      "Erreur de couleur ou de porte : pas de point, le circuit continue.",
       "S ne passe que lorsque R a regardé au moins une fois par-dessus son épaule.",
       "Rotation : S devient receveur, R va derrière la porte jouée, le joueur de porte devient serveur."
     ],
@@ -54,7 +54,7 @@
   "en": {
     "title": "The Eyes Circuit",
     "subtitle": "Look behind you before receiving: the colour or the number picks the gate",
-    "objective": "Make the look over the shoulder a reflex, with no opponent to start with. The information is behind the receiver: if he has not looked before the pass, he cannot pick the right gate.",
+    "objective": "Make the look over the shoulder a reflex, with no opponent at first. The information is behind the receiver: no look before the pass, no right gate.",
     "organisation": [
       "20 x 20 m square: server S on the left, receiver R in a 3 x 3 m zone in the middle.",
       "Three 3 m gates on the right side, each with its colour (cones or bibs: red, yellow, blue).",
@@ -65,7 +65,7 @@
     "rules": [
       "As S passes, E raises a colour; R calls it out loud before his first touch.",
       "R plays through the gate of that colour in two touches maximum: 1 point.",
-      "Wrong or forgotten colour, or wrong gate: no point, the circuit keeps going.",
+      "Wrong colour or wrong gate: no point, the circuit keeps going.",
       "S only passes once R has looked over his shoulder at least once.",
       "Rotation: S becomes receiver, R goes behind the gate he played through, the gate player becomes server."
     ],
@@ -95,7 +95,7 @@
     "players": [
       { "id": "s", "team": "a", "x": 2, "y": 10, "label": "S" },
       { "id": "r", "team": "a", "x": 9, "y": 10, "label": "R" },
-      { "id": "e", "team": "n", "x": 13.5, "y": 14, "label": "E" }
+      { "id": "e", "team": "n", "x": 12.5, "y": 13.2, "label": "E" }
     ],
     "ball": "s",
     "arrows": [
@@ -105,10 +105,10 @@
     ],
     "cones": [[0, 0], [20, 0], [0, 20], [20, 20], [19, 2.5], [19, 5.5], [19, 8.5], [19, 11.5], [19, 14.5], [19, 17.5]],
     "labels": [
-      { "x": 16.6, "y": 2.1, "text": "rouge" },
+      { "x": 16.6, "y": 3.1, "text": "rouge" },
       { "x": 16.6, "y": 10.4, "text": "jaune" },
       { "x": 16.6, "y": 16.4, "text": "bleu" },
-      { "x": 13.5, "y": 16.6, "text": "« Rouge »" }
+      { "x": 12.5, "y": 15.8, "text": "« Rouge »" }
     ]
   },
   "diagram2": null

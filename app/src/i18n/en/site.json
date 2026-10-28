@@ -556,5 +556,200 @@
       "storageValue": "On this device",
       "books": "Read the books"
     }
+  },
+  "review": {
+    "docTitle": "Project review",
+    "nav": "Project review",
+    "eyebrow": "Project review",
+    "title": "Four projects, to review one by one",
+    "lead": "The novel, the method book, the app and the agent are presented separately. Open each one, try it, and ask for a change from its section: the request opens in Mola, pre-filled, and nothing is sent without you.",
+    "jump": "The four projects",
+    "projectN": "Project {{n}}",
+    "request": "Ask for a change",
+    "requestShort": "Change",
+    "requestText": "Change for {{section}}: ",
+    "requestBusy": "Opening Mola",
+    "open": "Open",
+    "frenchNote": "The books are written in French, so their titles, chapters and art direction are shown in French.",
+    "sections": {
+      "tome1": {
+        "name": "Lionceaux, book 1",
+        "kind": "Children's novel, ages 8 to 12",
+        "status": "{{n}} of {{total}} illustrations",
+        "request": "Lionceaux, book 1: Le Ballon qui voyage"
+      },
+      "methode": {
+        "name": "The Njangi Code",
+        "kind": "The method book",
+        "status": "{{online}} of {{planned}} chapters online",
+        "request": "The Njangi Code"
+      },
+      "app": {
+        "name": "The Ndamba app",
+        "kind": "Players, coaches, analysts, clubs",
+        "status": "Six areas, two demos",
+        "request": "the Ndamba app"
+      },
+      "mola": {
+        "name": "Mola, the agent",
+        "kind": "The agent that acts for you",
+        "status": "Onboarding and hub",
+        "request": "Mola, the agent"
+      }
+    },
+    "tome1": {
+      "intro": "The first book of the saga: Kaydoudou and BriBri take the ball on a journey from Cameroon to England. Forty chapters, five parts, five countries, one Ball Lesson per chapter.",
+      "facts": {
+        "chapters": "{{n}} chapters",
+        "parts": "5 parts, 5 countries",
+        "lessons": "{{n}} Ball Lessons"
+      },
+      "read": "Read online",
+      "pdf": "Download the PDF",
+      "galleryTitle": "The illustrations",
+      "galleryLead": "{{n}} of {{total}} planned illustrations published: the cover, the characters, the part openers and the chapters. Tap an image to see it full size and ask for a retouch.",
+      "label": {
+        "cover": "Cover",
+        "characters": "The two brothers",
+        "family": "The family",
+        "part": "Part {{n}}",
+        "chapter": "Chapter {{n}}"
+      },
+      "status": {
+        "approved": "Approved",
+        "redo": "To redo",
+        "generated": "Generated"
+      },
+      "pending": "{{n}} to come",
+      "pendingBody": "The other illustrations will appear here as soon as they are published in the reader.",
+      "imageRequest": "Ask for a retouch",
+      "imageRequestText": "{{book}}, illustration “{{label}}”",
+      "prev": "Previous image",
+      "next": "Next image",
+      "counter": "{{i}} of {{n}}",
+      "reviewNote": "Review note",
+      "artTitle": "The art direction",
+      "artLead": "The v2 style of October 2026, in five points.",
+      "art": {
+        "style": {
+          "title": "A painted, cinematic style",
+          "body": "Cel shading in two or three values, sculpted forms, visible brush texture, a clear key light with a coloured rim light. Warm, joyful and adventurous, for ages 8 to 12."
+        },
+        "light": {
+          "title": "One light per country",
+          "body": "Cameroon: gold and red earth. United States: cold blue and floodlights. France: autumn gold and silver grey. Spain: Mediterranean white and turquoise. England: rain, mist and floodlights."
+        },
+        "composition": {
+          "title": "Both brothers act",
+          "body": "One child focal point readable as a thumbnail, a strong silhouette in front of a vast world, and each brother does something that matters. Full-page 2:3, nothing essential near the gutter."
+        },
+        "cover": {
+          "title": "One cover system for six books",
+          "body": "LIONCEAUX in white capitals, the book number in gold Roman numerals, both brothers in three-quarter view and a destination in the distance. The lettering is set separately, never painted."
+        },
+        "quality": {
+          "title": "Quality control",
+          "body": "Any image is redone when identity, age or size drift, when the socks (red on the right, yellow on the left) are swapped, when a shirt is wrong or text appears."
+        }
+      },
+      "artFull": "Read the full art direction (in French)"
+    },
+    "methode": {
+      "intro": "The method for coaches and analysts, from grassroots to the professional game and national teams: the game model, the training week, analysis and the 2030 plan.",
+      "facts": {
+        "chapters": "{{online}} of {{planned}} chapters online",
+        "parts": "{{n}} parts",
+        "drills": "{{n}} drills with diagrams"
+      },
+      "tocTitle": "The contents, part by part",
+      "tocLead": "Tap a chapter to open it in the reader.",
+      "partLabel": "Part {{n}}",
+      "outside": "Foreword and appendices",
+      "missing": "Chapters {{list}} are being written.",
+      "drillsTitle": "The {{n}} drills",
+      "drillsLead": "Each drill sheet has its diagram, drawn as in the book. Tap a drill to open it in the app.",
+      "all": "All",
+      "openDrill": "Open drill {{code}}",
+      "drillMeta": "{{ages}} · {{minutes}} min",
+      "library": "Open the drill library"
+    },
+    "app": {
+      "intro": "The football app with purpose for players from kids to pros, and for their coaches, analysts, clubs and federations. Each area opens directly, or after loading the demo that suits it.",
+      "demosTitle": "The two demos",
+      "demos": {
+        "pro": {
+          "title": "Pro club: Étoile de la Côte",
+          "meta": "Seniors · Ligue 1 · Douala",
+          "body": "22 players in a 4-3-3, six fixtures, a 2-1 win against the Météore de Bafoussam tagged live (Njangi Index 67.9, fixation to work on), and the week MD+1, MD-4 to MD-1 before the trip to Kribi."
+        },
+        "youth": {
+          "title": "Academy: Lionceaux de Bonamoussadi U13",
+          "meta": "U13 · 11 v 11 · Douala",
+          "body": "Kaydoudou and BriBri's team: 15 players, four sessions this week, a 2-1 win against the Requins de Bépanda tagged live and a match coming up on Saturday."
+        }
+      },
+      "load": "Load this demo",
+      "loaded": "Demo loaded",
+      "areasTitle": "The areas of the app",
+      "withPro": "Pro demo",
+      "withYouth": "U13 demo",
+      "recommended": "Suggested demo: {{demo}}",
+      "demoName": {
+        "pro": "pro club",
+        "youth": "U13 academy"
+      },
+      "areas": {
+        "training": {
+          "title": "Training",
+          "body": "Drills with diagrams, the session builder and the periodised week from MD-4 to MD-1."
+        },
+        "team": {
+          "title": "Team and matches",
+          "body": "The squad, lineups on the pitch, the game plan for the four moments and the call-up."
+        },
+        "analysis": {
+          "title": "Live analysis and reports",
+          "body": "The touchline tagging pad, the Njangi Index and the match report with next week's drills."
+        },
+        "video": {
+          "title": "Video analysis",
+          "body": "Match videos, tagged moments and drawings on the frame."
+        },
+        "journey": {
+          "title": "Player journey",
+          "body": "A player's page: skills from 1 to 4, matches, tagged actions and progress."
+        },
+        "player": {
+          "title": "Player space",
+          "body": "Daily challenges, progress, the Ball Lessons and the player's notebook."
+        }
+      }
+    },
+    "mola": {
+      "intro": "Ndamba's agent. It welcomes every newcomer with a conversation, from the parent of a U8 to the head coach of a top-flight side, fills in the profile as they talk, then acts in the app with the same tools you use.",
+      "onboarding": "Open the onboarding",
+      "onboardingHint": "The welcome conversation. Try for example: “{{example}}”",
+      "onboardingExample": "I'm the head coach of a top-flight team in Cameroon",
+      "hub": "Open Mola's hub",
+      "hubHint": "The chat, the tasks and the approvals.",
+      "canTitle": "What Mola can do",
+      "can": {
+        "a": "Create your profile through conversation, from U8 to the professionals",
+        "b": "Plan the week before a match, MD-4 to MD-1",
+        "c": "Build a session for the day, the age group and the intention",
+        "d": "Set up a match and suggest a lineup",
+        "e": "Create a team and add players",
+        "f": "Draft the call-up, which waits for your approval before anything is sent",
+        "g": "Export the week to your calendar",
+        "h": "Analyse the last match and recommend drills",
+        "i": "Open a Ball Lesson or a book"
+      },
+      "tryTitle": "Try it in the hub",
+      "try": {
+        "a": "Plan my week before Saturday's match",
+        "b": "Analyse my last match",
+        "c": "Which drills to draw them in and switch play better?"
+      }
+    }
   }
 }

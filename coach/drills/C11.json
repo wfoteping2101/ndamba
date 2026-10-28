@@ -17,7 +17,7 @@
     "subtitle": "Circuit de frappes en une touche : centre en retrait, remise, passe latérale",
     "objective": "Frapper en une touche les ballons qui arrivent dans la surface : centre en retrait, remise du pivot, passe latérale. Dans la surface, le temps d'un contrôle est souvent le temps qui manque.",
     "organisation": [
-      "Un but avec gardien et trois stations : le retrait depuis la ligne de but, la remise du pivot à l'entrée de la surface, la passe latérale entre deux attaquants.",
+      "Un but avec gardien et trois stations : le retrait depuis la ligne de but, la remise du pivot, la passe latérale entre deux attaquants.",
       "Les stations jouent l'une après l'autre ; le gardien annonce « Prêt » avant chaque action.",
       "Files de 3 au plus par station ; avec un grand groupe, un deuxième but et un deuxième gardien sur l'autre moitié.",
       "8 à 10 ballons suffisent : deux ramasseurs derrière le but, qui changent à chaque série.",
@@ -54,7 +54,7 @@
     "subtitle": "One-touch finishing pattern: cut-back, set, square pass",
     "objective": "Finish first time on the balls that arrive in the box: the cut-back, the pivot's set, the square pass. In the box, the time for a control touch is often the time you do not have.",
     "organisation": [
-      "One goal with a goalkeeper and three stations: the cut-back from the goal line, the pivot's set at the edge of the box, the square pass between two forwards.",
+      "One goal with a goalkeeper and three stations: the cut-back from the goal line, the pivot's set, the square pass between two forwards.",
       "Stations play one after the other; the goalkeeper calls \"Ready\" before each action.",
       "Queues of 3 at most per station; with a big group, a second goal and goalkeeper on the other half.",
       "8 to 10 balls are enough: two collectors behind the goal, changing every set.",
@@ -101,13 +101,13 @@
     ],
     "ball": "w",
     "arrows": [
-      { "from": "w", "to": [26.5, 3.4], "kind": "dribble", "n": 1 },
+      { "from": "w", "to": [27.6, 3.8], "kind": "dribble", "n": 1 },
       { "from": "f", "to": [20.5, 12.6], "kind": "run", "n": 2 },
-      { "from": [26.5, 3.4], "to": [20.5, 12.6], "kind": "pass", "n": 3 },
+      { "from": [27.6, 3.8], "to": [20.5, 12.6], "kind": "pass", "n": 3 },
       { "from": [20.5, 12.6], "to": [29.8, 15.6], "kind": "shot", "n": 4 }
     ],
     "labels": [
-      { "x": 25.4, "y": 8.9, "text": "retrait" }
+      { "x": 26.4, "y": 9.4, "text": "retrait" }
     ]
   },
   "diagram2": {

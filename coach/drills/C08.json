@@ -17,7 +17,7 @@
     "subtitle": "Conduire droit vers la pression pour créer le 2 contre 1",
     "objective": "Conduire le ballon vers la pression, pas pour l'éviter : un porteur qui avance oblige un défenseur à sortir, et ce défenseur libère un partenaire. Celui qui ne conduit pas laisse le défenseur choisir.",
     "organisation": [
-      "Rectangle de 30 x 20 m en trois parties : zone de départ (10 m), zone du défenseur (10 m), zone de but avec deux mini-buts.",
+      "Rectangle de 30 x 20 m en trois bandes de 10 m : départ, zone du défenseur, zone de but avec deux mini-buts.",
       "2 attaquants contre 1 défenseur qui ne quitte pas sa zone ; le porteur part dans l'axe, son partenaire sur un côté.",
       "Le porteur change de côté à chaque passage ; le défenseur change toutes les 6 actions.",
       "Avec un grand groupe, deux rectangles côte à côte et des vagues de trois ; un ballon par vague, rendu par les côtés.",
@@ -52,9 +52,9 @@
   "en": {
     "title": "Carry to Pin",
     "subtitle": "Carry straight at the pressure to create the 2 v 1",
-    "objective": "Carry the ball towards the pressure, not away from it: a carrier who advances forces a defender to step out, and that defender frees a teammate. A player who does not carry lets the defender choose.",
+    "objective": "Carry the ball at the pressure, not away from it: a carrier who advances forces a defender out, and that defender frees a teammate. A player who does not carry lets the defender choose.",
     "organisation": [
-      "30 x 20 m area in three parts: start zone (10 m), defender zone (10 m), scoring zone with two mini goals.",
+      "30 x 20 m area in three 10 m strips: start, defender zone, scoring zone with two mini goals.",
       "2 attackers against 1 defender who stays in his zone; the carrier starts in the middle, his teammate on one side.",
       "The carrier changes side every turn; the defender changes every 6 actions.",
       "With a big group, two areas side by side and waves of three; one ball per wave, returned along the sides.",
@@ -97,20 +97,20 @@
       { "x": 30, "y": 15, "side": "left", "size": "mini" }
     ],
     "players": [
-      { "id": "a", "team": "a", "x": 2.5, "y": 11.5, "label": "A" },
+      { "id": "a", "team": "a", "x": 2.5, "y": 12, "label": "A" },
       { "id": "b", "team": "a", "x": 2.5, "y": 4, "label": "B" },
-      { "id": "d", "team": "b", "x": 15.5, "y": 9 }
+      { "id": "d", "team": "b", "x": 16.8, "y": 12.6 }
     ],
     "ball": "a",
     "arrows": [
-      { "from": "a", "to": [11.5, 11.5], "kind": "dribble", "n": 1 },
-      { "from": "d", "to": [13.6, 10.6], "kind": "press", "n": 2 },
+      { "from": "a", "to": [11.5, 12], "kind": "dribble", "n": 1 },
+      { "from": "d", "to": [14, 12.4], "kind": "press", "n": 2 },
       { "from": "b", "to": [23, 5], "kind": "run", "n": 3 },
-      { "from": [12, 10.8], "to": [23, 5], "kind": "pass", "n": 4 },
+      { "from": [11.5, 12], "to": [23, 5], "kind": "pass", "n": 4 },
       { "from": [23, 5], "to": [28.6, 5], "kind": "shot", "n": 5 }
     ],
     "labels": [
-      { "x": 6.5, "y": 14.2, "text": "conduire vers lui" }
+      { "x": 6.5, "y": 14.8, "text": "conduire vers lui" }
     ]
   },
   "diagram2": null

@@ -556,5 +556,200 @@
       "storageValue": "Sur cet appareil",
       "books": "Lire les livres"
     }
+  },
+  "review": {
+    "docTitle": "Revue du projet",
+    "nav": "Revue du projet",
+    "eyebrow": "Revue du projet",
+    "title": "Quatre projets, à relire un par un",
+    "lead": "Le roman, le livre de la méthode, l'application et l'agent sont présentés séparément. Ouvrez chacun, testez-le, et demandez une modification depuis sa section : la demande s'ouvre dans Mola, pré-remplie, et rien n'est envoyé sans vous.",
+    "jump": "Les quatre projets",
+    "projectN": "Projet {{n}}",
+    "request": "Demander une modification",
+    "requestShort": "Modifier",
+    "requestText": "Modification pour {{section}} : ",
+    "requestBusy": "Ouverture de Mola",
+    "open": "Ouvrir",
+    "frenchNote": "",
+    "sections": {
+      "tome1": {
+        "name": "Lionceaux, tome 1",
+        "kind": "Roman jeunesse, 8 à 12 ans",
+        "status": "{{n}} illustrations sur {{total}}",
+        "request": "Lionceaux, tome 1 : Le Ballon qui voyage"
+      },
+      "methode": {
+        "name": "Le Code Njangi",
+        "kind": "Le livre de la méthode",
+        "status": "{{online}} chapitres en ligne sur {{planned}}",
+        "request": "Le Code Njangi"
+      },
+      "app": {
+        "name": "L'application Ndamba",
+        "kind": "Joueurs, entraîneurs, analystes, clubs",
+        "status": "Six espaces, deux démos",
+        "request": "l'application Ndamba"
+      },
+      "mola": {
+        "name": "Mola, l'agent",
+        "kind": "L'agent qui agit pour vous",
+        "status": "Onboarding et hub",
+        "request": "Mola, l'agent"
+      }
+    },
+    "tome1": {
+      "intro": "Le premier tome de la saga : Kaydoudou et BriBri font voyager le ballon du Cameroun à l'Angleterre. Quarante chapitres, cinq parties, cinq pays, une Leçon du Ballon par chapitre.",
+      "facts": {
+        "chapters": "{{n}} chapitres",
+        "parts": "5 parties, 5 pays",
+        "lessons": "{{n}} Leçons du Ballon"
+      },
+      "read": "Lire en ligne",
+      "pdf": "Télécharger le PDF",
+      "galleryTitle": "Les illustrations",
+      "galleryLead": "{{n}} illustrations publiées sur {{total}} prévues : la couverture, les personnages, les ouvertures de parties et les chapitres. Touchez une image pour la voir en grand et demander une retouche.",
+      "label": {
+        "cover": "Couverture",
+        "characters": "Les deux frères",
+        "family": "La famille",
+        "part": "Partie {{n}}",
+        "chapter": "Chapitre {{n}}"
+      },
+      "status": {
+        "approved": "Validée",
+        "redo": "À refaire",
+        "generated": "Générée"
+      },
+      "pending": "{{n}} à venir",
+      "pendingBody": "Les autres illustrations apparaîtront ici dès qu'elles seront publiées dans le lecteur.",
+      "imageRequest": "Demander une retouche",
+      "imageRequestText": "{{book}}, illustration « {{label}} »",
+      "prev": "Image précédente",
+      "next": "Image suivante",
+      "counter": "{{i}} sur {{n}}",
+      "reviewNote": "Note de revue",
+      "artTitle": "La direction artistique",
+      "artLead": "Le style v2 d'octobre 2026, en cinq points.",
+      "art": {
+        "style": {
+          "title": "Un style cinématographique peint",
+          "body": "Cel-shading en deux ou trois valeurs, formes sculptées, texture de pinceau visible, lumière franche avec une lumière de contour colorée. Chaleureux, joyeux, aventureux, pour les 8 à 12 ans."
+        },
+        "light": {
+          "title": "Une lumière par pays",
+          "body": "Cameroun : or et terre rouge. États-Unis : bleu froid et projecteurs. France : or d'automne et gris argent. Espagne : blanc méditerranéen et turquoise. Angleterre : pluie, brume et projecteurs."
+        },
+        "composition": {
+          "title": "Les deux frères agissent",
+          "body": "Un point focal enfant lisible en vignette, une silhouette forte devant un monde vaste, et chaque frère fait quelque chose qui compte. Pleine page 2:3, rien d'essentiel près de la reliure."
+        },
+        "cover": {
+          "title": "Une couverture pour six tomes",
+          "body": "LIONCEAUX en capitales blanches, le numéro du tome en chiffres romains dorés, les deux frères de trois quarts et une destination au loin. Le lettrage est composé à part, jamais peint."
+        },
+        "quality": {
+          "title": "Le contrôle qualité",
+          "body": "On refait toute image où l'identité, l'âge ou la taille changent, où les chaussettes (rouge à droite, jaune à gauche) sont inversées, où un maillot est faux ou du texte apparaît."
+        }
+      },
+      "artFull": "Lire la direction artistique complète"
+    },
+    "methode": {
+      "intro": "La méthode pour les entraîneurs et les analystes, de l'école de foot au niveau professionnel et aux sélections nationales : le modèle de jeu, la semaine d'entraînement, l'analyse et le plan 2030.",
+      "facts": {
+        "chapters": "{{online}} chapitres en ligne sur {{planned}}",
+        "parts": "{{n}} parties",
+        "drills": "{{n}} exercices avec schémas"
+      },
+      "tocTitle": "Le sommaire, partie par partie",
+      "tocLead": "Touchez un chapitre pour l'ouvrir dans le lecteur.",
+      "partLabel": "Partie {{n}}",
+      "outside": "Avant-propos et annexes",
+      "missing": "Les chapitres {{list}} sont en cours d'écriture.",
+      "drillsTitle": "Les {{n}} exercices",
+      "drillsLead": "Chaque fiche a son schéma, tracé comme dans le livre. Touchez une fiche pour l'ouvrir dans l'application.",
+      "all": "Tous",
+      "openDrill": "Ouvrir la fiche {{code}}",
+      "drillMeta": "{{ages}} · {{minutes}} min",
+      "library": "Ouvrir la bibliothèque d'exercices"
+    },
+    "app": {
+      "intro": "L'application de football avec intention pour les joueurs des jeunes aux pros, et pour leurs entraîneurs, analystes, clubs et fédérations. Chaque espace s'ouvre directement, ou après avoir chargé la démo qui lui convient.",
+      "demosTitle": "Les deux démos",
+      "demos": {
+        "pro": {
+          "title": "Club pro : Étoile de la Côte",
+          "meta": "Seniors · Ligue 1 · Douala",
+          "body": "22 joueurs en 4-3-3, six matchs au calendrier, une victoire 2-1 contre le Météore de Bafoussam codée en direct (Indice Njangi 67,9, la fixation à travailler), et la semaine MD+1, MD-4 à MD-1 avant le déplacement à Kribi."
+        },
+        "youth": {
+          "title": "Académie : Lionceaux de Bonamoussadi U13",
+          "meta": "U13 · 11 contre 11 · Douala",
+          "body": "L'équipe de Kaydoudou et BriBri : 15 joueurs, quatre séances cette semaine, une victoire 2-1 contre les Requins de Bépanda codée en direct et un match à venir samedi."
+        }
+      },
+      "load": "Charger cette démo",
+      "loaded": "Démo chargée",
+      "areasTitle": "Les espaces de l'application",
+      "withPro": "Démo pro",
+      "withYouth": "Démo U13",
+      "recommended": "Démo conseillée : {{demo}}",
+      "demoName": {
+        "pro": "club pro",
+        "youth": "académie U13"
+      },
+      "areas": {
+        "training": {
+          "title": "Entraînement",
+          "body": "Les exercices avec schémas, le constructeur de séances et la semaine périodisée de MD-4 à MD-1."
+        },
+        "team": {
+          "title": "Équipe et matchs",
+          "body": "L'effectif, les compositions sur le terrain, le plan de jeu des quatre moments et la convocation."
+        },
+        "analysis": {
+          "title": "Analyse en direct et rapports",
+          "body": "Le pupitre de codage au bord du terrain, l'Indice Njangi et le rapport de match avec les exercices de la semaine suivante."
+        },
+        "video": {
+          "title": "Analyse vidéo",
+          "body": "Les vidéos de match, les moments marqués et les dessins sur l'image."
+        },
+        "journey": {
+          "title": "Parcours du joueur",
+          "body": "La fiche d'un joueur : ses compétences de 1 à 4, ses matchs, ses actions codées et sa progression."
+        },
+        "player": {
+          "title": "Espace joueur",
+          "body": "Les défis du jour, la progression, les Leçons du Ballon et le carnet du joueur."
+        }
+      }
+    },
+    "mola": {
+      "intro": "L'agent de Ndamba. Il accueille chaque nouveau venu par une conversation, du parent d'un U8 à l'entraîneur d'une équipe de Ligue 1, remplit le profil pendant qu'on parle, puis agit dans l'application avec les mêmes outils que vous.",
+      "onboarding": "Ouvrir l'onboarding",
+      "onboardingHint": "La conversation d'accueil. Essayez par exemple : « {{example}} »",
+      "onboardingExample": "Je suis entraîneur principal d'une équipe de Ligue 1 au Cameroun",
+      "hub": "Ouvrir le hub de Mola",
+      "hubHint": "La discussion, les tâches et les validations.",
+      "canTitle": "Ce que Mola sait faire",
+      "can": {
+        "a": "Créer votre profil en conversation, des U8 aux professionnels",
+        "b": "Préparer la semaine avant un match, de MD-4 à MD-1",
+        "c": "Construire une séance selon le jour, l'âge et l'intention",
+        "d": "Installer un match et proposer la composition",
+        "e": "Créer une équipe et ajouter des joueurs",
+        "f": "Rédiger la convocation, qui attend votre accord avant tout envoi",
+        "g": "Exporter la semaine dans votre calendrier",
+        "h": "Analyser le dernier match et recommander des exercices",
+        "i": "Ouvrir une Leçon du Ballon ou un livre"
+      },
+      "tryTitle": "Essayez dans le hub",
+      "try": {
+        "a": "Prépare ma semaine avant le match de samedi",
+        "b": "Analyse mon dernier match",
+        "c": "Quels exercices pour mieux fixer et renverser ?"
+      }
+    }
   }
 }

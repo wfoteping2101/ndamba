@@ -37,7 +37,7 @@ Dans la zone de finition, le temps manque. Un contrôle de trop laisse au défen
 
 La finition du premier coup se prépare avant l'arrivée du ballon. Le finisseur ouvre ses hanches vers le but, ajuste ses appuis par de petits pas, choisit sa surface tôt. Sur un ballon au sol, il balaie de l'intérieur du pied, buste au-dessus. Sur un ballon en l'air, la volée demande le genou au-dessus du ballon et une cheville verrouillée ; l'erreur la plus fréquente est de se pencher en arrière, et le ballon s'envole.
 
-Le choix entre une et deux touches suit la même règle que pour la passe (chapitre 11) : une touche si le corps est prêt et l'angle ouvert, deux touches si le contrôle améliore nettement la frappe, par exemple pour éliminer un défenseur qui se jette. [[C11]], « Finir du premier coup », répète ce geste sous toutes les trajectoires, et [[G05]], « Finir dans la surface », le met sous pression.
+Le choix entre une et deux touches suit la même règle que pour la passe (chapitre 11) : une touche si le corps est prêt et l'angle ouvert, deux touches si le contrôle améliore nettement la frappe, par exemple pour éliminer un défenseur qui se jette. [[C11]], « Finir du premier coup », entraîne ce geste, en variant les trajectoires, et [[G05]], « Finir dans la surface », le met sous pression.
 
 ## Le centre en retrait
 

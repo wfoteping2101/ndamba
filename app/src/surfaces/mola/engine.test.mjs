@@ -125,6 +125,7 @@ check('player list with position after comma', { l: parsePlayerList('1. Ousmane 
 const noClub = (p) => ({ ...p, club: p.club ?? null, name: p.name ?? null })
 check('pro coach Ligue 1 (fr)', noClub(parseProfile("Je suis entraîneur principal d'une équipe de Ligue 1 au Cameroun")), { role: 'coach', ageGroup: 'Pro', format: 11, country: 'CM', club: null, name: null })
 check('pro coach Premier League (en)', noClub(parseProfile("I'm the head coach of a Premier League club in Ghana")), { role: 'coach', ageGroup: 'Pro', format: 11, country: 'GH', club: null })
+check('pro coach top-flight (en)', noClub(parseProfile("I'm the head coach of a top-flight team in Cameroon")), { role: 'coach', ageGroup: 'Pro', country: 'CM', club: null })
 check('pro coach with club, league and city', parseProfile("Je suis l'entraîneur principal de l'Étoile de la Côte, en Ligue 1, à Douala"), { role: 'coach', ageGroup: 'Pro', club: 'Étoile de la Côte', city: 'Douala', country: 'CM', format: 11 })
 check('national team coach', noClub(parseProfile('Je suis sélectionneur des Lions Indomptables')), { role: 'coach', ageGroup: 'Pro', name: null })
 check('assistant in Elite One', parseProfile('entraîneur adjoint en Elite One'), { role: 'coach', ageGroup: 'Pro' })

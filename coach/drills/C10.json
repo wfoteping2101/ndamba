@@ -17,7 +17,7 @@
     "subtitle": "Trois une-deux en circuit, puis la frappe",
     "objective": "Maîtriser les trois formes du une-deux, court, en profondeur et double, jusqu'à la frappe. Cette fiche apprend les gestes sans opposition ; la fiche G02 les met en jeu à 2 contre 1.",
     "organisation": [
-      "Devant un but avec gardien, un circuit de 30 m : un mannequin, un plot haut ou un défenseur passif à 20 m du but, un mur sur le côté.",
+      "Un but avec gardien ; un mannequin ou un plot haut à 20 m, un mur sur le côté, départ à 30 m.",
       "Une forme par série : le une-deux court autour du mannequin, le une-deux en profondeur entre deux mannequins, le double une-deux avec deux murs.",
       "Files de 3 joueurs au plus ; les murs changent toutes les 5 répétitions, et on alterne côté gauche et côté droit.",
       "Peu de ballons : 6 à 8 suffisent, avec deux ramasseurs derrière le but qui les rendent en conduite.",
@@ -54,7 +54,7 @@
     "subtitle": "Three one-twos in a pattern, then the shot",
     "objective": "Master the three forms of the one-two, short, in behind and double, all the way to the shot. This drill teaches the moves without opposition; drill G02 puts them into a 2 v 1 game.",
     "organisation": [
-      "In front of a goal with a goalkeeper, a 30 m pattern: a mannequin, a tall marker or a passive defender 20 m from goal, a wall player to the side.",
+      "A goal with a goalkeeper; a mannequin or tall marker 20 m out, a wall player to the side, start at 30 m.",
       "One form per set: the short one-two around the mannequin, the one-two in behind between two mannequins, the double one-two with two wall players.",
       "Queues of 3 players at most; wall players change every 5 reps, alternating left and right sides.",
       "Few balls: 6 to 8 are enough, with two collectors behind the goal who dribble them back.",
@@ -107,9 +107,6 @@
       { "from": [10, 13.1], "to": [19.5, 11.2], "kind": "run", "n": 3 },
       { "from": "b", "to": [19.5, 11.2], "kind": "pass", "n": 4 },
       { "from": [19.5, 11.2], "to": [31.8, 9.6], "kind": "shot", "n": 5 }
-    ],
-    "labels": [
-      { "x": 14.5, "y": 16.8, "text": "mannequin" }
     ]
   },
   "diagram2": {

@@ -122,7 +122,7 @@ Trois interdits complètent ces règles. Jamais de passe en travers du but. Jama
 
 ## Former le gardien qui joue
 
-Un gardien qui joue bien au pied a d'abord beaucoup joué dans le champ. Avant 12 ou 13 ans, tous les enfants passent dans les buts et tous les gardiens jouent ailleurs (chapitre 9). Ensuite, le gardien garde sa place dans les exercices collectifs : il est le troisième relanceur de [[P04]], « Sortir à quatre », et de [[F01]], « Sortie à trois contre deux » ; il commence l'action de [[G06]], « Le but du Njangi » ; il affronte un vrai pressing dans [[L03]], « Sortir sous le pressing ». [[C12]], « Le gardien qui relance », lui est consacré : réception de la passe en retrait, premier contact sur le côté, choix de la relance.
+Un gardien qui joue bien au pied a d'abord beaucoup joué dans le champ. Avant 12 ou 13 ans, tous les enfants passent dans les buts et tous les gardiens jouent ailleurs (chapitre 9). Ensuite, le gardien garde sa place dans les exercices collectifs : il est le troisième relanceur de [[P04]], « Sortir à quatre », et de [[F01]], « Sortie à trois contre deux » ; il commence l'action de [[G06]], « Le but du Njangi » ; il affronte un vrai pressing dans [[L03]], « Sortir sous le pressing ». [[C12]], « Le gardien qui relance », lui est consacré ; l'entraîneur y travaille la réception de la passe en retrait, le premier contact sur le côté et le choix de la relance.
 
 L'entraîneur évalue le gardien comme les autres joueurs, avec les dix compétences du chapitre 25 : scan, contrôle orienté, passe avec intention, communication et prise de décision s'appliquent à lui comme au pivot.
 

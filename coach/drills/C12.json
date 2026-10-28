@@ -15,20 +15,20 @@
   "fr": {
     "title": "Le gardien qui relance",
     "subtitle": "Recevoir une passe en retrait sous pression et relancer du côté libre",
-    "objective": "Apprendre au gardien à recevoir une passe en retrait le corps ouvert, à lire d'où vient la pression et à relancer vers le côté libre, au pied puis à la main. Le ballon doit voyager dès le gardien.",
+    "objective": "Apprendre au gardien à recevoir une passe en retrait le corps ouvert et à lire d'où vient la pression. Il relance vers le côté libre, au pied puis à la main : le ballon voyage dès le gardien.",
     "organisation": [
-      "Un but avec gardien, deux relanceurs (4 et 5) écartés aux angles de la surface, deux portes de 4 m à 24 m du but.",
+      "Un but avec gardien ; deux relanceurs, 4 et 5, aux angles de la surface ; deux portes de 4 m à 24 m du but.",
       "L'entraîneur (E) joue la passe en retrait depuis 20 m ; un attaquant part près du point de penalty pour presser.",
       "L'attaquant change toutes les 4 actions ; les relanceurs changent de côté à chaque série.",
-      "Un seul gardien ? Séries courtes, et un joueur de champ volontaire prend le but une série sur trois : tout le monde gagne à savoir relancer.",
-      "Par forte chaleur, le gardien boit à chaque série et attend à l'ombre ; 8 ballons au pied de l'entraîneur suffisent."
+      "Un seul gardien ? Séries courtes, et un joueur de champ volontaire prend le but une série sur trois.",
+      "Forte chaleur : le gardien boit à chaque série et attend à l'ombre. 8 ballons suffisent."
     ],
     "rules": [
       "Deux touches maximum pour le gardien ; comme en match, pas de prise à la main sur une passe en retrait.",
       "Relance vers le relanceur libre, qui franchit sa porte en conduite : 1 point.",
       "Relance jouée en une touche vers le côté libre : 2 points.",
       "L'attaquant qui touche le ballon marque 2 points, 3 s'il marque dans le but.",
-      "Si les deux côtés sont fermés, la passe longue au-delà des portes est permise, sans point."
+      "Deux côtés fermés : passe longue au-delà des portes permise, sans point."
     ],
     "coaching": [
       "Regarde l'attaquant avant que le ballon arrive : de quel côté vient-il ?",
@@ -54,20 +54,20 @@
   "en": {
     "title": "The Goalkeeper Who Builds",
     "subtitle": "Receive a back-pass under pressure and play out to the free side",
-    "objective": "Teach the goalkeeper to receive a back-pass with an open body, read where the pressure comes from and play to the free side, with the feet then the hands. The ball must travel from the goalkeeper on.",
+    "objective": "Teach the goalkeeper to receive a back-pass with an open body and read where the pressure comes from. He plays to the free side, with the feet then the hands: the ball travels from the goalkeeper on.",
     "organisation": [
-      "One goal with a goalkeeper, two receivers (4 and 5) split wide at the corners of the box, two 4 m gates 24 m from goal.",
+      "One goal with a goalkeeper; two receivers, 4 and 5, at the corners of the box; two 4 m gates 24 m from goal.",
       "The coach (E) plays the back-pass from 20 m; a forward starts near the penalty spot to press.",
       "The forward changes every 4 actions; the receivers switch sides every set.",
-      "Only one goalkeeper? Short sets, and a volunteer outfield player goes in goal one set in three: everyone gains from knowing how to play out.",
-      "In strong heat, the goalkeeper drinks every set and waits in the shade; 8 balls at the coach's feet are enough."
+      "Only one goalkeeper? Short sets, and a volunteer outfield player goes in goal one set in three.",
+      "Strong heat: the goalkeeper drinks every set and waits in the shade. 8 balls are enough."
     ],
     "rules": [
       "Two touches maximum for the goalkeeper; as in a match, no handling a back-pass.",
       "A pass to the free receiver, who dribbles through his gate: 1 point.",
       "A first-time pass to the free side: 2 points.",
       "A forward who touches the ball scores 2 points, 3 if he scores in the goal.",
-      "If both sides are closed, the long pass beyond the gates is allowed, with no point."
+      "Both sides closed: a long pass beyond the gates is allowed, with no point."
     ],
     "coaching": [
       "Look at the forward before the ball arrives: which side is he coming from?",

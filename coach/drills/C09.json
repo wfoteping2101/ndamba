@@ -15,7 +15,7 @@
   "fr": {
     "title": "La boîte de protection",
     "subtitle": "1 contre 1 dans une petite boîte : protéger, puis jouer",
-    "objective": "Protéger le ballon avec le corps face à un adversaire qui presse, garder l'équilibre et trouver la sortie : se retourner ou jouer vers un appui. Protéger n'est pas garder pour soi : c'est gagner le temps d'une passe.",
+    "objective": "Protéger le ballon avec le corps contre un adversaire qui presse, garder l'équilibre, puis sortir : se retourner ou jouer vers un appui. Protéger n'est pas garder pour soi : c'est gagner le temps d'une passe.",
     "organisation": [
       "Boîte de 8 x 8 m (6 x 6 m pour les U9), un attaquant et un défenseur dedans.",
       "Un appui de chaque côté, à l'extérieur de la boîte, qui se déplace le long de sa ligne.",
@@ -53,7 +53,7 @@
   "en": {
     "title": "The Shielding Box",
     "subtitle": "1 v 1 in a small box: shield, then play",
-    "objective": "Shield the ball with the body against an opponent who presses, keep your balance and find the way out: turn, or play to a support. Shielding is not keeping it for yourself: it buys the time for a pass.",
+    "objective": "Shield the ball with your body against a pressing opponent, keep your balance, then get out: turn, or play to a support. Shielding is not keeping it for yourself: it buys the time for a pass.",
     "organisation": [
       "8 x 8 m box (6 x 6 m for U9s), one attacker and one defender inside.",
       "One support on each side, outside the box, moving along his line.",
@@ -93,15 +93,14 @@
     "players": [
       { "id": "n1", "team": "n", "x": 0, "y": 4.8 },
       { "id": "n2", "team": "n", "x": 8, "y": 3.2 },
-      { "id": "a", "team": "a", "x": 3.4, "y": 4.6, "label": "A" },
-      { "id": "d", "team": "b", "x": 4.5, "y": 3.6 }
+      { "id": "a", "team": "a", "x": 3.3, "y": 4.8, "label": "A" },
+      { "id": "d", "team": "b", "x": 4.05, "y": 4.1 }
     ],
     "ball": "n1",
     "arrows": [
       { "from": "n1", "to": "a", "kind": "pass", "n": 1 },
-      { "from": "d", "to": [3.95, 4.15], "kind": "press", "n": 2 },
-      { "from": "a", "to": [5.4, 6.1], "kind": "dribble", "n": 3 },
-      { "from": [5.6, 6], "to": "n2", "kind": "pass", "n": 4 }
+      { "from": "a", "to": [5.3, 6.3], "kind": "dribble", "n": 2 },
+      { "from": [5.3, 6.3], "to": "n2", "kind": "pass", "n": 3 }
     ],
     "labels": [
       { "x": 4, "y": 1.5, "text": "le corps est un mur" },
