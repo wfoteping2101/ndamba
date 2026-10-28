@@ -1,8 +1,8 @@
 ---
-numero: 20
+numero: 33
 slug: l-analyste-njangi
 titre: L'analyste Njangi : avant, pendant, après le match
-partie: 6
+partie: 8
 titrePartie: L'analyse
 resume: Préparer l'adversaire, coder le match en direct avec les quatorze codes de l'application, parler au banc à la mi-temps, monter une vidéo courte et juste, restituer aux jeunes et aux pros, et filmer avec un simple téléphone.
 ---
@@ -55,7 +55,7 @@ Le codeur en direct de l'application regroupe les quatorze codes en cinq famille
 | Perdre et reprendre | LOSS, REGAIN5, REGAIN | Comment la possession finit-elle, et comment revient-elle ? |
 | Finir | SHOT, SHOT_IN, GOAL | Avons-nous tiré, cadré, marqué ? |
 
-Les définitions sont celles du chapitre 19, sans aucune variation. Quelques situations demandent une règle claire, parce qu'elles reviennent souvent.
+Les définitions sont celles du chapitre 32, sans aucune variation. Quelques situations demandent une règle claire, parce qu'elles reviennent souvent.
 
 - **Une action, plusieurs boutons.** Une passe qui avance de 15 mètres se code PASS_OK puis PROG. Une passe qui casse une ligne de deux adversaires se code PASS_OK puis LINE, jamais PROG en plus. Une conduite qui avance se code PROG ou LINE seul, sans PASS_OK.
 - **Le renversement** se code PASS_OK puis SWITCH, et seulement si le bloc avait été attiré du côté de départ. Un long ballon d'un côté à l'autre sans fixation préalable n'est pas un SWITCH.
@@ -98,7 +98,7 @@ Une flèche, un cercle, une zone colorée suffisent. On arrête l'image au momen
 
 ### Montrer peu mais juste
 
-Le format qui fonctionne : une séance vidéo collective de 10 à 15 minutes au plus, avec 5 extraits pour toute l'équipe, puis 1 à 3 extraits individuels par joueur, envoyés sur son téléphone ou montrés en tête à tête. Les cinq extraits collectifs sont ceux du rapport de match (chapitre 21). Chacun porte un titre qui nomme une intention ou un réflexe : « Fixer puis renverser », « Reprendre en cinq secondes ».
+Le format qui fonctionne : une séance vidéo collective de 10 à 15 minutes au plus, avec 5 extraits pour toute l'équipe, puis 1 à 3 extraits individuels par joueur, envoyés sur son téléphone ou montrés en tête à tête. Les cinq extraits collectifs sont ceux du rapport de match (chapitre 34). Chacun porte un titre qui nomme une intention ou un réflexe : « Fixer puis renverser », « Reprendre en cinq secondes ».
 
 ## Restituer aux joueurs
 
@@ -132,4 +132,4 @@ Filmer des mineurs crée aussi des devoirs. Les familles donnent leur accord éc
 
 Dans un njangi, chaque membre verse sa part chaque mois, même petite, et c'est la régularité qui fait la caisse. L'analyse fonctionne de la même façon. Un match codé n'apprend presque rien ; trente matchs codés de la même façon montrent une équipe qui progresse, une génération qui apprend le modèle, des repères qui se calibrent.
 
-Une fédération qui réunit ses analystes deux fois par an, qui leur donne les mêmes définitions et les fait coder les mêmes extraits pour comparer leurs chiffres, construit quelque chose de rare : un langage commun de la mesure, des U15 à l'équipe A. Le chapitre 21 montre comment ce travail devient, chaque semaine, une page qui guide l'entraînement.
+Une fédération qui réunit ses analystes deux fois par an, qui leur donne les mêmes définitions et les fait coder les mêmes extraits pour comparer leurs chiffres, construit quelque chose de rare : un langage commun de la mesure, des U15 à l'équipe A. Le chapitre 34 montre comment ce travail devient, chaque semaine, une page qui guide l'entraînement.

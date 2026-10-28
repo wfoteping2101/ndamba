@@ -90,7 +90,7 @@ function Report({ match }: { match: Match }) {
       <h2 className="font-display text-lg font-semibold text-ink">{t('report.explainTitle')}</h2>
       <p className="mb-4 mt-0.5 text-sm text-ink-muted">{t('report.subHint')}</p>
       <div className="divide-y divide-line">{rankSubs(result).map((k) => <SubExplain key={k} k={k} r={result} />)}</div>
-      <p className="mt-4 text-xs text-ink-faint">{t('report.source', { book: BOOKS.methode.title[lang] })} <a href={`${BOOKS.methode.href}#ch-19`} className="link no-print">{t('report.readSource')}</a></p>
+      <p className="mt-4 text-xs text-ink-faint">{t('report.source', { book: BOOKS.methode.title[lang] })} <a href={`${BOOKS.methode.href}#ch-32`} className="link no-print">{t('report.readSource')}</a></p>
     </section>
   )
   const contributions = <Contributions events={events} players={players} team={team} />
@@ -234,7 +234,7 @@ function DeltaChip({ cur, prev, lang, label }: { cur: number; prev: number; lang
   )
 }
 
-/** The five reading bands of chapter 19 under the gauge, the current one lit. */
+/** The five reading bands of chapter 32 under the gauge, the current one lit. */
 function BandScale({ total }: { total: number }) {
   const { lang } = useT('analysis')
   const bands = NJANGI_BANDS

@@ -187,7 +187,7 @@ export default function WeekPlanner() {
             ))}
           </ul>
           <Callout tone="sun">{t('week.logicHeat')}</Callout>
-          <a href={`${BOOKS.methode.href}#ch-14`} className="link mt-4 inline-flex items-center gap-1.5 text-sm"><BookOpen size={15} aria-hidden="true" />{t('week.readCh14')}</a>
+          <a href={`${BOOKS.methode.href}#ch-27`} className="link mt-4 inline-flex items-center gap-1.5 text-sm"><BookOpen size={15} aria-hidden="true" />{t('week.readCh14')}</a>
         </section>
       </div>
 

@@ -1,8 +1,8 @@
 ---
-numero: 13
+numero: 26
 slug: former-en-afrique
 titre: Former en Afrique : notre réalité est notre force
-partie: 3
+partie: 5
 titrePartie: Des jeunes aux pros
 resume: Terrains, chaleur, matériel, football de rue, école, protection de l'enfance, faux agents, diaspora : des solutions pratiques et peu coûteuses pour former des joueurs Njangi dans les conditions réelles du continent.
 ---
@@ -66,7 +66,7 @@ Les règles du Njangi : les horaires d'entraînement respectent les horaires sco
 
 ## Nutrition et hydratation simples
 
-Il n'est pas nécessaire d'acheter des compléments pour bien nourrir un jeune joueur. Les repas ordinaires, riz, mil, manioc, igname, plantain, haricots, arachides, poisson, œufs, viande quand c'est possible, légumes et fruits de saison, couvrent l'essentiel quand ils sont réguliers et suffisants. Les messages à transmettre aux familles sont simples : un petit-déjeuner avant l'entraînement du matin, même léger ; un repas complet dans les heures qui suivent ; de l'eau propre, toute la journée ; moins de boissons très sucrées. Pendant le jeûne du Ramadan, on adapte les horaires et l'intensité avec les joueurs et leurs familles (voir le chapitre 16). Pour toute question médicale, on renvoie à un professionnel de santé.
+Il n'est pas nécessaire d'acheter des compléments pour bien nourrir un jeune joueur. Les repas ordinaires, riz, mil, manioc, igname, plantain, haricots, arachides, poisson, œufs, viande quand c'est possible, légumes et fruits de saison, couvrent l'essentiel quand ils sont réguliers et suffisants. Les messages à transmettre aux familles sont simples : un petit-déjeuner avant l'entraînement du matin, même léger ; un repas complet dans les heures qui suivent ; de l'eau propre, toute la journée ; moins de boissons très sucrées. Pendant le jeûne du Ramadan, on adapte les horaires et l'intensité avec les joueurs et leurs familles (voir le chapitre 29). Pour toute question médicale, on renvoie à un professionnel de santé.
 
 ## Protéger les enfants : des règles écrites et connues de tous
 

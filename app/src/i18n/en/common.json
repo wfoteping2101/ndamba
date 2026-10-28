@@ -28,7 +28,7 @@
     "regarder-devant": "After winning the ball, look forward first"
   },
   "skills": { "scan": "Scanning", "controle": "Directional first touch", "passe": "Passing with purpose", "conduite": "Carrying", "dribble-njangi": "Njangi dribble", "appels": "Runs for others", "communication": "Communication", "protection": "Ball protection", "contre-pression": "Counter-pressing", "decision": "Decision making" },
-  "families": { "rondo": "Rondos", "position": "Positional games", "ssg": "Small-sided games", "lsg": "Large-sided games", "phase": "Phases of play", "transition": "Transitions", "finishing": "Finishing" },
+  "families": { "technique": "Technique and patterns", "rondo": "Rondos", "position": "Positional games", "ssg": "Small-sided games", "lsg": "Large-sided games", "phase": "Phases of play", "transition": "Transitions", "finishing": "Finishing" },
   "md": { "MD-4": "MD-4 · Tension", "MD-3": "MD-3 · Duration", "MD-2": "MD-2 · Speed", "MD-1": "MD-1 · Activation", "MD+1": "MD+1 · Recovery", "youth": "Youth" },
   "intensity": { "low": "Low", "medium": "Medium", "high": "High", "very-high": "Very high" },
   "pieces": { "le cœur": "The heart", "la raison": "The reason", "les yeux": "The eyes", "la carte": "The map", "le souffle": "The breath" },

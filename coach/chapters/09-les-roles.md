@@ -85,7 +85,7 @@ Les intérieurs vivent dans les demi-espaces, entre les lignes adverses. Pour So
 
 ## Les ailiers de largeur (7 et 11)
 
-Les ailiers donnent la largeur. Leur première mission est parfois de ne pas toucher le ballon : rester sur la ligne pour écarter le bloc adverse et ouvrir les demi-espaces aux intérieurs. Puis vient le moment où ils reçoivent isolés, en un contre un ([[G04]]). C'est là que le **dribble njangi**, dribbler pour attirer, fixer, puis donner ou éliminer, devient une arme (voir le chapitre 12). Le continent produit des dribbleurs remarquables ; le Njangi leur donne un cadre : le dribble n'est pas un spectacle, c'est un investissement qui doit rapporter à la caisse commune. En transition offensive, les ailiers sont les premiers à attaquer la profondeur ; à la perte, ils pressent le latéral adverse pour l'empêcher de relancer.
+Les ailiers donnent la largeur. Leur première mission est parfois de ne pas toucher le ballon : rester sur la ligne pour écarter le bloc adverse et ouvrir les demi-espaces aux intérieurs. Puis vient le moment où ils reçoivent isolés, en un contre un ([[G04]]). C'est là que le **dribble njangi**, dribbler pour attirer, fixer, puis donner ou éliminer, devient une arme (voir le chapitre 25). Le continent produit des dribbleurs remarquables ; le Njangi leur donne un cadre : le dribble n'est pas un spectacle, c'est un investissement qui doit rapporter à la caisse commune. En transition offensive, les ailiers sont les premiers à attaquer la profondeur ; à la perte, ils pressent le latéral adverse pour l'empêcher de relancer.
 
 **Qualités clés** : vitesse, un contre un, centre, finition, courage de redemander le ballon après un échec. **Erreur typique** : rentrer trop tôt dans l'axe et refermer l'espace ; dribbler pour dribbler, sans voir le partenaire que le dribble a libéré. **Chez un jeune** : le dribbleur, bien sûr, mais aussi l'enfant rapide qui fait les bons appels. On ne punit jamais un jeune ailier qui perd le ballon en tentant un un contre un : on l'aide à choisir le bon moment.
 
@@ -115,6 +115,6 @@ La tentation est connue : le plus grand en défense, le plus rapide sur l'aile, 
 
 > [!ANALYSTE] Un ou deux indicateurs par rôle
 > Pivot : part des sorties où il touche le ballon. Centraux : passes qui traversent une ligne. Ailiers : un contre un tentés et centres en retrait. Attaquant point d'appui : remises réussies et tirs dans la zone de finition.
-> Ces repères internes nourrissent les sous-indices de l'Indice Njangi (chapitre 19). On les compare d'un match à l'autre pour un même joueur, jamais entre deux joueurs de rôles différents.
+> Ces repères internes nourrissent les sous-indices de l'Indice Njangi (chapitre 32). On les compare d'un match à l'autre pour un même joueur, jamais entre deux joueurs de rôles différents.
 
 Le garçon de la journée de détection a maintenant 15 ans. Dans un club qui parle le langage du Njangi, personne ne lui crie plus de dégager : on lui apprend quand conduire, quand jouer court, quand jouer long, et comment couvrir la profondeur quand son équipe attaque. Il n'était pas indiscipliné, il était en avance sur le modèle de jeu de son éducateur. C'est l'enjeu d'un vocabulaire commun : que chaque rôle soit compris de la même façon du quartier à la sélection, pour que le talent ne soit plus jamais pris pour un défaut.

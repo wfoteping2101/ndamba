@@ -1,13 +1,13 @@
 ---
-numero: 24
+numero: 37
 slug: annexes
 titre: Annexes
-partie: 8
+partie: 10
 titrePartie: Annexes
 resume: Le glossaire français et anglais du Njangi, les fiches vierges de séance, de semaine et de rapport de match, et le rappel complet de l'Indice Njangi.
 ---
 
-Ces annexes sont des outils. Le glossaire permet à un staff qui travaille en français et en anglais, ou avec des joueurs de la diaspora, de parler la même langue. Les trois fiches vierges se photocopient, se remplissent au bord du terrain et se retrouvent, sous la même forme, dans l'application Ndamba. Le rappel de l'Indice Njangi reprend les formules du chapitre 19, pour qu'un analyste puisse les recalculer sans rouvrir le livre.
+Ces annexes sont des outils. Le glossaire permet à un staff qui travaille en français et en anglais, ou avec des joueurs de la diaspora, de parler la même langue. Les trois fiches vierges se photocopient, se remplissent au bord du terrain et se retrouvent, sous la même forme, dans l'application Ndamba. Le rappel de l'Indice Njangi reprend les formules du chapitre 32, pour qu'un analyste puisse les recalculer sans rouvrir le livre.
 
 ## Glossaire français et anglais
 
@@ -76,7 +76,7 @@ Les termes sont rangés dans l'ordre du livre : le modèle de jeu, l'occupation 
 
 ## Fiche de séance
 
-Une séance, une page. Remplissez d'abord l'objectif : l'intention ou le réflexe que la séance entraîne. Choisissez ensuite les exercices, dans l'ordre de la structure du chapitre 17.
+Une séance, une page. Remplissez d'abord l'objectif : l'intention ou le réflexe que la séance entraîne. Choisissez ensuite les exercices, dans l'ordre de la structure du chapitre 30.
 
 | Rubrique | À remplir |
 |---|---|
@@ -109,7 +109,7 @@ Une séance, une page. Remplissez d'abord l'objectif : l'intention ou le réflex
 
 ## Fiche de semaine
 
-Une semaine avec un match. Pour une semaine à deux matchs ou une semaine de jeunes, suivez les modèles du chapitre 15.
+Une semaine avec un match. Pour une semaine à deux matchs ou une semaine de jeunes, suivez les modèles du chapitre 28.
 
 | Jour | Code | Objectif | Exercices | Durée | Charge prévue |
 |---|---|---|---|---|---|
@@ -131,7 +131,7 @@ Une semaine avec un match. Pour une semaine à deux matchs ou une semaine de jeu
 
 ## Fiche de rapport de match
 
-Le modèle du chapitre 21, à remplir dans les 24 heures qui suivent le match.
+Le modèle du chapitre 34, à remplir dans les 24 heures qui suivent le match.
 
 | En-tête | À remplir |
 |---|---|
@@ -218,6 +218,6 @@ Chaque sous-indice est arrondi au dixième, puis on additionne. Un sous-indice d
 Avec les mêmes codes relevés pour l'adversaire, on obtient deux repères complémentaires, hors de l'Indice : la **part de possession estimée**, nos PASSES divisées par la somme de nos PASSES et des siennes, et le **field tilt**, nos FINAL3 divisés par la somme de nos FINAL3 et des siens.
 
 > [!ANALYSTE] Des repères à calibrer
-> Les valeurs de référence sont des repères internes au Njangi, pas des moyennes mesurées dans le football mondial. Calibrez-les sur 5 à 10 de vos propres matchs, et ne les changez jamais en cours de saison. Un sous-indice faible se travaille avec les exercices du chapitre 19, par exemple [[S07]] pour la Progression, [[F03]] pour la Pénétration, [[R02]] pour la Fixation, [[T01]] pour la Reprise et [[P10]] pour le Contrôle.
+> Les valeurs de référence sont des repères internes au Njangi, pas des moyennes mesurées dans le football mondial. Calibrez-les sur 5 à 10 de vos propres matchs, et ne les changez jamais en cours de saison. Un sous-indice faible se travaille avec les exercices du chapitre 32, par exemple [[S07]] pour la Progression, [[F03]] pour la Pénétration, [[R02]] pour la Fixation, [[T01]] pour la Reprise et [[P10]] pour le Contrôle.
 
 « Le ballon doit voyager. Mais il doit savoir où il va. »

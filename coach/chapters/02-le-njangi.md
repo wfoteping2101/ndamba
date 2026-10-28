@@ -61,7 +61,7 @@ Le njangi enseigne aussi ce qu'il faut faire quand la caisse change de mains. Si
 
 > [!ANALYSTE] La possession ne prouve rien
 > Le pourcentage de possession dit qui a eu la caisse, pas ce qu'on en a fait. Une équipe peut avoir le ballon longtemps et ne jamais traverser une ligne.
-> Le Njangi compte ce que la caisse a produit : lignes traversées, entrées dans le dernier tiers et dans la surface, récupérations dans les 5 secondes après la perte. Ces mesures sont réunies dans l'Indice Njangi (chapitre 19).
+> Le Njangi compte ce que la caisse a produit : lignes traversées, entrées dans le dernier tiers et dans la surface, récupérations dans les 5 secondes après la perte. Ces mesures sont réunies dans l'Indice Njangi (chapitre 32).
 
 ```schema
 {

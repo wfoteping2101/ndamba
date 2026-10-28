@@ -1,8 +1,8 @@
 ---
-numero: 16
+numero: 29
 slug: charge-chaleur-recuperation
 titre: La charge, la chaleur et la récupération
-partie: 4
+partie: 6
 titrePartie: La semaine d'entraînement et la périodisation
 resume: Mesurer simplement la charge, éviter les pics, entraîner dans la chaleur et l'humidité, adapter pendant le Ramadan, et protéger le sommeil, les voyages et l'adaptation à l'altitude, toujours avec le staff médical.
 ---

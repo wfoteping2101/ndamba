@@ -1,8 +1,8 @@
 ---
-numero: 17
+numero: 30
 slug: construire-une-seance
 titre: Construire une séance Njangi
-partie: 4
+partie: 6
 titrePartie: La semaine d'entraînement et la périodisation
 resume: La structure d'une séance, les variables que l'entraîneur fait bouger, l'art du coaching court, et deux séances complètes construites avec les fiches, pour des U15 à MD-3 et pour des seniors à MD-4.
 ---
@@ -42,7 +42,7 @@ L'entraîneur dispose de six variables pour régler un exercice. Il en change un
 - **Le nombre** : une supériorité pour l'équipe en possession (5 contre 2, 4 contre 3, des neutres) facilite la réussite ; l'égalité numérique rend la tâche plus dure ; une infériorité force la qualité.
 - **Les règles** : ce sont elles qui orientent le comportement. « Le point ne compte que si le pivot a touché » ([[P06]]) fait plus pour le jeu du 6 que dix minutes de discours.
 - **Les touches** : limiter à deux touches accélère la circulation et oblige à préparer le contrôle ; libérer les touches permet la conduite et le dribble njangi. On limite rarement à une touche, et jamais longtemps.
-- **Le temps** : la durée des séries et des pauses règle la charge (chapitre 16) ; un temps limité pour finir (« moins de 8 secondes ») oblige à Regarder devant.
+- **Le temps** : la durée des séries et des pauses règle la charge (chapitre 29) ; un temps limité pour finir (« moins de 8 secondes ») oblige à Regarder devant.
 - **Les points bonus** : ils récompensent le comportement que l'on veut voir. Un point pour une ligne traversée ([[S07]]), deux points pour un but précédé d'un dribble qui a fixé deux adversaires ([[S04]]).
 
 Une règle de prudence : si un exercice ne fonctionne pas après trois ou quatre minutes, on change une variable, pas tout l'exercice. Le plus souvent, l'espace est trop petit, ou la supériorité trop faible pour l'âge et le niveau.
@@ -109,7 +109,7 @@ Le fil, ici, est la réaction à la perte : dans le rondo, dans le jeu de positi
 
 > [!ANALYSTE] Vérifier que la séance a fait son travail
 > Comptez un comportement par bloc : les passes qui traversent une ligne dans [[P05]] et [[L02]], les récupérations en moins de 5 secondes dans [[R08]] et [[T01]].
-> Notez la difficulté perçue de chaque joueur après la séance (chapitre 16). Une MD-4 jugée « facile » par la majorité du groupe ou une MD-3 jugée « maximale » par les U15 signale un réglage à revoir.
+> Notez la difficulté perçue de chaque joueur après la séance (chapitre 29). Une MD-4 jugée « facile » par la majorité du groupe ou une MD-3 jugée « maximale » par les U15 signale un réglage à revoir.
 
 ## Le lien avec le planificateur
 

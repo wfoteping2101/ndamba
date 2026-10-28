@@ -1,8 +1,8 @@
 ---
-numero: 22
+numero: 35
 slug: le-manager
 titre: Le manager, gardien de l'idée
-partie: 7
+partie: 9
 titrePartie: Le manager et la fédération
 resume: Écrire et protéger le modèle de jeu, recruter des joueurs et des entraîneurs compatibles, organiser le staff, communiquer avec les joueurs, les médias et les dirigeants, gérer les vedettes et la diaspora, et faire durer le modèle quand l'entraîneur part.
 ---
@@ -67,7 +67,7 @@ Les entraîneurs adjoints et les entraîneurs de jeunes se recrutent de préfér
 
 ## Recruter des joueurs compatibles
 
-Le talent ne suffit pas, mais il reste indispensable. La question n'est pas de choisir entre talent et modèle : c'est de chercher le talent qui sert le modèle. Le gardien de l'idée donne aux recruteurs une grille commune : les dix compétences du chapitre 12, notées de 1 à 4, et les profils de rôle du chapitre 9.
+Le talent ne suffit pas, mais il reste indispensable. La question n'est pas de choisir entre talent et modèle : c'est de chercher le talent qui sert le modèle. Le gardien de l'idée donne aux recruteurs une grille commune : les dix compétences du chapitre 25, notées de 1 à 4, et les profils de rôle du chapitre 9.
 
 Un dribbleur exceptionnel qui garde le ballon trop longtemps peut devenir un ailier de largeur njangi s'il apprend à fixer puis donner. Un milieu athlétique qui ne scanne jamais aura du mal à devenir pivot, quel que soit son physique. Recruter, c'est parier sur ce qu'un joueur peut apprendre autant que sur ce qu'il sait déjà faire.
 
@@ -134,4 +134,4 @@ Le directeur technique tient pour cela un **dossier de transmission**, mis à jo
 
 Le nouvel entraîneur est recruté sur le modèle, comme on l'a vu. Une partie du staff reste en place pour assurer la continuité. Les sélections de jeunes, elles, ne changent pas de manière de jouer parce que l'équipe A a changé d'entraîneur : leur cap est fixé par la direction technique.
 
-Dans un njangi, le président change parfois ; la caisse, les règles et les membres restent. C'est ce qui permet au groupe de traverser les années. Le chapitre 23 montre comment une fédération peut inscrire cette continuité dans un plan, mesure par mesure et année par année, jusqu'en 2034.
+Dans un njangi, le président change parfois ; la caisse, les règles et les membres restent. C'est ce qui permet au groupe de traverser les années. Le chapitre 36 montre comment une fédération peut inscrire cette continuité dans un plan, mesure par mesure et année par année, jusqu'en 2034.

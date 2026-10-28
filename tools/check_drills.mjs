@@ -8,7 +8,7 @@ const args = process.argv.slice(2)
 let renderDir = null
 if (args[0] === '--render') { renderDir = args[1]; args.splice(0, 2); fs.mkdirSync(renderDir, { recursive: true }) }
 
-const FAMILIES = ['rondo', 'position', 'ssg', 'lsg', 'phase', 'transition', 'finishing']
+const FAMILIES = ['technique', 'rondo', 'position', 'ssg', 'lsg', 'phase', 'transition', 'finishing']
 const MD = ['MD-4', 'MD-3', 'MD-2', 'MD-1', 'MD+1', 'youth']
 const INT = ['low', 'medium', 'high', 'very-high']
 const INTENTIONS = ['sortir', 'progresser', 'fixer', 'finir', 'respirer', 'reprendre', 'regarder-devant']

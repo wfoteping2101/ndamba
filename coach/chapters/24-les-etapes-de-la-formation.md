@@ -1,8 +1,8 @@
 ---
-numero: 11
+numero: 24
 slug: les-etapes-de-la-formation
 titre: Les étapes de la formation Njangi
-partie: 3
+partie: 5
 titrePartie: Des jeunes aux pros
 resume: Un même modèle de jeu, cinq étapes de formation de U6 à l'équipe A : pour chacune, les objectifs, les formats de jeu, les séances, la place des matchs et les erreurs à éviter.
 ---
@@ -63,7 +63,7 @@ Dans ce 3 contre 3 à quatre mini-buts, l'enfant A voit que les défenseurs prot
 
 ## U10 à U13 : l'âge d'or technique (les yeux et la raison)
 
-**Objectifs.** C'est la période où l'enfant apprend le plus vite les gestes. Il faut la remplir de ballon. Le scan, le contrôle orienté, la passe des deux pieds, la conduite tête levée, le un contre un et le dribble njangi (voir le chapitre 12). Les premiers rondos. Les premières intentions, avec des mots simples : avancer (Progresser), attirer pour donner (Fixer). La question unique s'installe : « Que prépare ta passe ? »
+**Objectifs.** C'est la période où l'enfant apprend le plus vite les gestes. Il faut la remplir de ballon. Le scan, le contrôle orienté, la passe des deux pieds, la conduite tête levée, le un contre un et le dribble njangi (voir le chapitre 25). Les premiers rondos. Les premières intentions, avec des mots simples : avancer (Progresser), attirer pour donner (Fixer). La question unique s'installe : « Que prépare ta passe ? »
 
 **Formats.** Du 5 contre 5 au 8 contre 8 selon les règlements de votre fédération, des rondos ([[R01]], [[R02]], [[R05]], [[R07]]), des petits jeux ([[S02]], [[S04]], [[S08]]) et de la finition simple ([[G02]]).
 
@@ -83,7 +83,7 @@ Dans ce 3 contre 3 à quatre mini-buts, l'enfant A voit que les défenseurs prot
 
 **Formats.** Le 9 contre 9 puis le 11 contre 11. Les jeux de position ([[P01]], [[P02]], [[P03]], [[P04]], [[P05]]), les transitions ([[T01]], [[T02]]), les premières phases de jeu ([[F01]]) et les grands jeux à thème ([[L01]]).
 
-**Séances.** 75 à 90 minutes, trois ou quatre fois par semaine. On découvre la logique de la semaine d'entraînement (chapitre 14), sans la rigidité des seniors.
+**Séances.** 75 à 90 minutes, trois ou quatre fois par semaine. On découvre la logique de la semaine d'entraînement (chapitre 27), sans la rigidité des seniors.
 
 **Matchs.** Un championnat régulier, des tournois. La compétition devient sérieuse, mais la formation passe avant le résultat : on accepte de perdre un match en continuant à Sortir proprement plutôt que de le gagner en dégageant.
 
@@ -95,7 +95,7 @@ Dans ce 3 contre 3 à quatre mini-buts, l'enfant A voit que les défenseurs prot
 
 ## U17 à U19 : le souffle (performance, périodisation, compétition)
 
-**Objectifs.** Préparer le haut niveau. L'intensité devient une exigence quotidienne : presser, Reprendre en 5 secondes, répéter les courses. Les rôles se précisent. Le joueur apprend à vivre une semaine périodisée (chapitre 14), à regarder ses propres matchs en vidéo, à gérer la pression d'une compétition internationale, à prendre soin de son corps (sommeil, alimentation, récupération).
+**Objectifs.** Préparer le haut niveau. L'intensité devient une exigence quotidienne : presser, Reprendre en 5 secondes, répéter les courses. Les rôles se précisent. Le joueur apprend à vivre une semaine périodisée (chapitre 27), à regarder ses propres matchs en vidéo, à gérer la pression d'une compétition internationale, à prendre soin de son corps (sommeil, alimentation, récupération).
 
 **Formats.** Le 11 contre 11 et les grands jeux ([[L02]], [[L03]], [[L04]]), les phases de jeu ([[F03]], [[F05]], [[F06]]), les transitions intenses ([[T04]], [[T06]]) et la finition ([[G03]], [[G05]]).
 
@@ -103,7 +103,7 @@ Dans ce 3 contre 3 à quatre mini-buts, l'enfant A voit que les défenseurs prot
 
 **Matchs.** Un match par semaine en club, plus les compétitions de sélections de jeunes. C'est l'âge où le joueur doit apprendre à gagner, dans le respect du modèle.
 
-**À ne pas faire.** Surcharger les meilleurs, qui jouent pour le club, l'académie et la sélection la même semaine : la charge s'additionne. Laisser un joueur abandonner l'école pour une promesse de contrat. Ignorer une douleur qui revient. Signer vite, sans conseil, sous la pression d'un intermédiaire (voir le chapitre 13).
+**À ne pas faire.** Surcharger les meilleurs, qui jouent pour le club, l'académie et la sélection la même semaine : la charge s'additionne. Laisser un joueur abandonner l'école pour une promesse de contrat. Ignorer une douleur qui revient. Signer vite, sans conseil, sous la pression d'un intermédiaire (voir le chapitre 26).
 
 ## U20 et plus : l'équipe A (les cinq pièces réunies)
 

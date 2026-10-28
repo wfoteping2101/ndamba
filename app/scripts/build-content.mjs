@@ -19,7 +19,7 @@ if (fs.existsSync(pitchSrc)) out(path.join(APP, 'src/lib/pitch.mjs'), '// GENERA
 
 // 2. drills
 const drillDir = path.join(ROOT, 'coach', 'drills')
-const order = ['rondo', 'position', 'ssg', 'lsg', 'phase', 'transition', 'finishing']
+const order = ['technique', 'rondo', 'position', 'ssg', 'lsg', 'phase', 'transition', 'finishing']
 let drills = []
 if (fs.existsSync(drillDir)) {
   for (const f of fs.readdirSync(drillDir).filter((f) => f.endsWith('.json')).sort()) {

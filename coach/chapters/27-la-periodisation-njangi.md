@@ -1,8 +1,8 @@
 ---
-numero: 14
+numero: 27
 slug: la-periodisation-njangi
 titre: La périodisation Njangi
-partie: 4
+partie: 6
 titrePartie: La semaine d'entraînement et la périodisation
 resume: Entraîner le modèle de jeu chaque jour en faisant varier l'espace, le nombre de joueurs, la durée et l'intensité selon la distance au match, avec la semaine type de MD+1 à MD.
 ---
@@ -34,7 +34,7 @@ Le second principe est l'**alternance** : deux jours de suite ne sollicitent pas
 
 ## La semaine type avec un match
 
-Dans l'exemple qui suit, le match a lieu le samedi : MD+1 est le dimanche, MD+2 le lundi, MD-4 le mardi, et ainsi de suite. Les durées sont des repères pour une équipe senior ; les jeunes en font moins, et le chapitre 15 leur consacre une semaine propre.
+Dans l'exemple qui suit, le match a lieu le samedi : MD+1 est le dimanche, MD+2 le lundi, MD-4 le mardi, et ainsi de suite. Les durées sont des repères pour une équipe senior ; les jeunes en font moins, et le chapitre 28 leur consacre une semaine propre.
 
 | Jour | Objectif | Espace | Formats | Durée indicative |
 |---|---|---|---|---|
@@ -95,7 +95,7 @@ L'ordre suit une logique de récupération. Les efforts qui fatiguent les muscle
 Supprimer MD-2 parce que « les joueurs sont fatigués », c'est leur retirer la seule exposition de la semaine à la vitesse maximale, et prendre le risque qu'ils la redécouvrent en match. Le jeu suit la même progression, du petit au grand puis du collectif au détail : les petits groupes à MD-4, toute l'équipe à MD-3, les lignes et la finition à MD-2, le plan du match à MD-1.
 
 > [!ANALYSTE] La forme de la semaine
-> Notez chaque jour la charge perçue de chaque joueur (chapitre 16). Une semaine bien construite a une forme reconnaissable : basse à MD+1, nulle à MD+2, haute à MD-4 et MD-3, moyenne à MD-2, basse à MD-1, maximale le jour du match.
+> Notez chaque jour la charge perçue de chaque joueur (chapitre 29). Une semaine bien construite a une forme reconnaissable : basse à MD+1, nulle à MD+2, haute à MD-4 et MD-3, moyenne à MD-2, basse à MD-1, maximale le jour du match.
 > Avec des capteurs GPS, on attend plus d'accélérations et de freinages à MD-4, plus de distance totale à MD-3, plus de course à haute vitesse à MD-2.
 > Si MD-1 ressemble à MD-3 sur votre graphique, le problème n'est pas les joueurs, c'est la séance.
 
@@ -113,7 +113,7 @@ Le terrain est partagé ou trop petit : un club qui n'obtient qu'une moitié de 
 > Sur beaucoup de terrains du continent, le créneau est imposé et la chaleur décide. Placez MD-4 et MD-3, les séances les plus lourdes, aux heures les plus fraîches (tôt le matin ou en fin d'après-midi), et ne gardez pour les heures chaudes que des séances courtes et légères.
 > Sur un terrain en terre ou un synthétique usé, limitez les freinages violents à MD-4 : agrandissez un peu l'espace plutôt que de forcer les appuis.
 
-Les jeunes ne suivent pas cette semaine à la lettre. Avec deux ou trois séances, ils en gardent la logique (petits espaces en début de semaine, grand jeu ensuite, fraîcheur avant le match) sans en copier la charge, et toujours avec de l'eau, des pauses à l'ombre et l'école d'abord. Le chapitre 15 propose leurs semaines, ainsi que celles des sélections et des semaines à deux matchs.
+Les jeunes ne suivent pas cette semaine à la lettre. Avec deux ou trois séances, ils en gardent la logique (petits espaces en début de semaine, grand jeu ensuite, fraîcheur avant le match) sans en copier la charge, et toujours avec de l'eau, des pauses à l'ombre et l'école d'abord. Le chapitre 28 propose leurs semaines, ainsi que celles des sélections et des semaines à deux matchs.
 
 ## Les erreurs qui cassent la semaine
 

@@ -81,7 +81,7 @@ Pour chaque intention, la même grille : la définition, les **déclencheurs** (
 
 **Erreurs fréquentes.** La passe forcée dans une ligne fermée, qui provoque une perte au centre du terrain, la plus dangereuse de toutes. Le receveur dos au jeu sans soutien. Tous les joueurs qui veulent recevoir entre les lignes, et plus personne pour donner la largeur.
 
-**Indicateur.** Les **lignes traversées par possession**, et la part des **passes progressives** (celles qui rapprochent nettement le ballon du but adverse) dans le total des passes. Ces deux mesures alimentent le sous-indice Progression de l'Indice Njangi (chapitre 19).
+**Indicateur.** Les **lignes traversées par possession**, et la part des **passes progressives** (celles qui rapprochent nettement le ballon du but adverse) dans le total des passes. Ces deux mesures alimentent le sous-indice Progression de l'Indice Njangi (chapitre 32).
 
 **Exercices.** [[R06]], [[P05]], [[S02]], [[S07]], [[L02]], [[P09]].
 
@@ -200,7 +200,7 @@ L'intention se choisit avant de recevoir : c'est le scan, la pièce des yeux, qu
 
 > [!ANALYSTE] Coder l'intention
 > Sur la vidéo, attribue à chaque séquence de possession une intention dominante, puis note si elle a été atteinte : homme libre trouvé, ligne traversée, renversement après fixation, tir dans la zone de finition, respiration sans perte.
-> Une séquence où aucune intention n'est lisible est codée « sans intention ». Sa part dans le total est le premier chiffre à faire baisser. L'Indice Njangi (chapitre 19) s'appuie sur ces mesures.
+> Une séquence où aucune intention n'est lisible est codée « sans intention ». Sa part dans le total est le premier chiffre à faire baisser. L'Indice Njangi (chapitre 32) s'appuie sur ces mesures.
 
 ## Entraîner les intentions
 

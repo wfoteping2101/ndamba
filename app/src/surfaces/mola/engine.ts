@@ -550,7 +550,7 @@ function scoreIntents(text: string) {
   if (createVerb && hasPhrase(toks, 'match')) s.setup_match += 1
   if (s.plan_week >= 3 && s.setup_match > 0 && !createVerb) s.setup_match -= 1
   if (s.plan_week >= 3 && s.create_session > 0 && !mdCode) s.create_session -= 1
-  // "chapitre 7 du roman" is the lesson of that chapter; "chapitre 12 de la méthode" is the book
+  // "chapitre 7 du roman" is the lesson of that chapter; "chapitre 25 du Code Njangi" is the book
   if (lesson.lessonNo) s.open_lesson += 3
   if (lesson.chapterNo && lesson.book !== 'methode') s.open_lesson += 6
   if (lesson.chapterNo && lesson.book === 'methode') s.open_book += 3

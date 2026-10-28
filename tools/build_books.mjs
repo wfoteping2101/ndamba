@@ -265,11 +265,11 @@ ${webChapters}
 /* ------------------------------------------------------------------ La Méthode Njangi */
 
 const COACH_CALLOUTS = { NJANGI: 'Principe Njangi', AFRIQUE: 'En Afrique', ANALYSTE: 'Pour l’analyste', JEUNES: 'Avec les jeunes', ATTENTION: 'Attention' }
-const FAMILY_FR = { rondo: 'Rondos', position: 'Jeux de position', ssg: 'Petits jeux', lsg: 'Grands jeux', phase: 'Phases de jeu', transition: 'Transitions', finishing: 'Finition' }
-const FAMILY_COLOR = { rondo: '#1F4D3A', position: '#2F6B52', ssg: '#C5762F', lsg: '#A86020', phase: '#3D4F6B', transition: '#B8432F', finishing: '#C08A15' }
+const FAMILY_FR = { technique: 'Technique et combinaisons', rondo: 'Rondos', position: 'Jeux de position', ssg: 'Petits jeux', lsg: 'Grands jeux', phase: 'Phases de jeu', transition: 'Transitions', finishing: 'Finition' }
+const FAMILY_COLOR = { technique: '#5B4A8A', rondo: '#1F4D3A', position: '#2F6B52', ssg: '#C5762F', lsg: '#A86020', phase: '#3D4F6B', transition: '#B8432F', finishing: '#C08A15' }
 const INTENT_FR = { sortir: 'Sortir', progresser: 'Progresser', fixer: 'Fixer', finir: 'Finir', respirer: 'Respirer', reprendre: 'Reprendre', 'regarder-devant': 'Regarder devant' }
 const INTENSITY_FR = { low: 'Basse', medium: 'Moyenne', high: 'Haute', 'very-high': 'Très haute' }
-const FAM_ORDER = ['rondo', 'position', 'ssg', 'lsg', 'phase', 'transition', 'finishing']
+const FAM_ORDER = ['technique', 'rondo', 'position', 'ssg', 'lsg', 'phase', 'transition', 'finishing']
 
 function coachChapters() {
   const dir = path.join(ROOT, 'coach', 'chapters')
@@ -313,14 +313,15 @@ async function buildMethode() {
   const parts = []
   for (const c of chapters) { if (!parts.find((p) => p.part === c.part)) parts.push({ part: c.part, title: c.partTitle }) }
   const chapterHTML = (c, width) => frenchTypo(renderMarkdown(c.body, { callouts: COACH_CALLOUTS, drillLinks: true, diagramWidth: width }))
-  const drillsAfter = 18 // the drill sheets follow chapter 18 "Comment utiliser les fiches"
+  const drillsAfter = 31 // the drill sheets follow chapter 31 "Comment utiliser les fiches"
+  const ANNEX_PART = 10, DRILL_PART = 7
 
   /* web */
-  const tocItems = parts.map((p) => `<li class="toc-part"><span>${p.part === 0 ? 'Avant-propos' : p.part === 8 ? 'Annexes' : 'Partie ' + p.part + ' · ' + esc(p.title || '')}</span><ol>${chapters.filter((c) => c.part === p.part).map((c) => `<li><a href="#ch-${String(c.no).padStart(2, '0')}">${c.no ? `<b>${c.no}.</b> ` : ''}${esc(c.title)}</a></li>`).join('')}${p.part === 5 ? `<li><a href="#fiches"><b>50</b> fiches d’exercices</a></li>` : ''}</ol></li>`).join('')
+  const tocItems = parts.map((p) => `<li class="toc-part"><span>${p.part === 0 ? 'Avant-propos' : p.part === ANNEX_PART ? 'Annexes' : 'Partie ' + p.part + ' · ' + esc(p.title || '')}</span><ol>${chapters.filter((c) => c.part === p.part).map((c) => `<li><a href="#ch-${String(c.no).padStart(2, '0')}">${c.no ? `<b>${c.no}.</b> ` : ''}${esc(c.title)}</a></li>`).join('')}${p.part === DRILL_PART ? `<li><a href="#fiches"><b>${drills.length}</b> fiches d’exercices</a></li>` : ''}</ol></li>`).join('')
   let body = ''
   let lastPart = -1
   for (const c of chapters) {
-    if (c.part !== lastPart) { lastPart = c.part; if (c.part >= 1 && c.part <= 7) body += `<section class="part-opener methode"><div class="part-text"><div class="kicker">Partie ${c.part}</div><h2>${esc(c.partTitle || '')}</h2></div></section>` }
+    if (c.part !== lastPart) { lastPart = c.part; if (c.part >= 1 && c.part < ANNEX_PART) body += `<section class="part-opener methode"><div class="part-text"><div class="kicker">Partie ${c.part}</div><h2>${esc(c.partTitle || '')}</h2></div></section>` }
     body += `<article class="chapter" id="ch-${String(c.no).padStart(2, '0')}"><header><div class="kicker">${c.no ? 'Chapitre ' + c.no : esc(c.partTitle || '')}</div><h2>${frenchTypo(esc(c.title))}</h2></header><div class="story">${chapterHTML(c, 620)}</div></article>`
     if (c.no === drillsAfter) {
       body += `<section id="fiches" class="drills-grid">${FAM_ORDER.map((fam) => { const list = drills.filter((d) => d.family === fam); return list.length ? `<h3 class="fam-title" style="--fam:${FAMILY_COLOR[fam]}">${esc(FAMILY_FR[fam])}</h3>${list.map((d) => drillHTML(d, 600)).join('')}` : '' }).join('')}</section>`
@@ -330,29 +331,29 @@ async function buildMethode() {
 <div class="bar"><a class="back" href="/app/livres" aria-label="Retour à Ndamba">&#8592; Ndamba</a><span class="bar-title">Le Code Njangi</span><button id="toc-btn" type="button">Sommaire</button><button id="aa" type="button" aria-label="Taille du texte">Aa</button></div>
 <div class="progress"><span id="prog"></span></div>
 <main>
-${mCover ? `<section class="cover-block">${picture(mCover, 'Couverture du Code Njangi : un stade africain au crépuscule, les passes de l’équipe dessinent des triangles lumineux vers le but.', { cls: 'cover', lazy: false, sizes: '(max-width: 760px) 78vw, 420px' })}<h1>Le Code Njangi</h1><p class="subtitle">Posséder avec intention</p><p class="heroes">La méthode africaine pour gagner la Coupe du monde</p><p class="author">William Foteping</p><a class="resume" id="resume" href="#" hidden>Reprendre la lecture</a></section>` : `<section class="cover-block methode-cover"><div class="m-cover"><div class="m-kicker">William Foteping</div><div class="m-title">Le Code<br>Njangi</div><div class="m-sub">Posséder avec intention</div><div class="m-line">La méthode africaine pour gagner la Coupe du monde</div><ul><li>50 exercices</li><li>Des jeunes aux pros</li><li>La semaine d’entraînement</li><li>Périodisation</li><li>L’analyse</li></ul></div><a class="resume" id="resume" href="#" hidden>Reprendre la lecture</a></section>`}
+${mCover ? `<section class="cover-block">${picture(mCover, 'Couverture du Code Njangi : un stade africain au crépuscule, les passes de l’équipe dessinent des triangles lumineux vers le but.', { cls: 'cover', lazy: false, sizes: '(max-width: 760px) 78vw, 420px' })}<h1>Le Code Njangi</h1><p class="subtitle">Posséder avec intention</p><p class="heroes">La méthode africaine pour gagner la Coupe du monde</p><p class="author">William Foteping</p><a class="resume" id="resume" href="#" hidden>Reprendre la lecture</a></section>` : `<section class="cover-block methode-cover"><div class="m-cover"><div class="m-kicker">William Foteping</div><div class="m-title">Le Code<br>Njangi</div><div class="m-sub">Posséder avec intention</div><div class="m-line">La méthode africaine pour gagner la Coupe du monde</div><ul><li>${drills.length} exercices</li><li>Des jeunes aux pros</li><li>La semaine d’entraînement</li><li>Périodisation</li><li>L’analyse</li></ul></div><a class="resume" id="resume" href="#" hidden>Reprendre la lecture</a></section>`}
 <nav class="toc" id="toc"><h2>Sommaire</h2><ol>${tocItems}</ol></nav>
 ${body}
-<footer class="end"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><a href="/app/exercices">Les 50 exercices dans l’application</a></footer>
+<footer class="end"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><a href="/app/exercices">Les ${drills.length} exercices dans l’application</a></footer>
 </main>
 <div class="drawer" id="drawer" hidden><div class="drawer-inner"><button id="close" type="button">Fermer</button><ol>${tocItems}</ol></div></div>
 <script>${READER_JS('njangi.methode')}</script></body></html>`
   write(path.join(webDir, 'index.html'), webHtml)
 
   /* print (7 x 10 in) */
-  let pages = mCover ? `<section class="pg cover-page cover-art"><img src="file://${mCover.print}" alt=""></section>` : `<section class="pg cover-page methode-cover-print"><div class="m-kicker">William Foteping</div><div class="m-title">Le Code<br>Njangi</div><div class="m-sub">Posséder avec intention</div><div class="m-line">La méthode africaine pour gagner la Coupe du monde</div><div class="m-pitch">${COVER_PITCH}</div><ul><li>50 exercices</li><li>Des jeunes aux pros</li><li>La semaine d’entraînement</li><li>Périodisation</li><li>L’analyse</li></ul></section>`
+  let pages = mCover ? `<section class="pg cover-page cover-art"><img src="file://${mCover.print}" alt=""></section>` : `<section class="pg cover-page methode-cover-print"><div class="m-kicker">William Foteping</div><div class="m-title">Le Code<br>Njangi</div><div class="m-sub">Posséder avec intention</div><div class="m-line">La méthode africaine pour gagner la Coupe du monde</div><div class="m-pitch">${COVER_PITCH}</div><ul><li>${drills.length} exercices</li><li>Des jeunes aux pros</li><li>La semaine d’entraînement</li><li>Périodisation</li><li>L’analyse</li></ul></section>`
   pages += `<section class="pg front title-page"><p class="author">William Foteping</p><h1>Le Code Njangi</h1><p class="sub">Posséder avec intention : la méthode africaine pour gagner la Coupe du monde</p><p class="publisher">Ndamba · Lemon Network Solutions</p></section>`
   pages += `<section class="pg front copyright"><p>© ${new Date().getFullYear()} William Foteping. Tous droits réservés.</p><p>Les faits historiques cités concernent les Coupes du monde de 1990 à 2026. Les repères de charge, de chaleur et de récupération sont des conseils généraux : ils ne remplacent jamais l’avis d’un médecin ou d’un préparateur qualifié.</p><p>Compagnon de la saga <i>Lionceaux</i> (Kaydoudou &amp; BriBri) et de l’application Ndamba.</p></section>`
-  pages += `<section class="pg front toc-page"><h2>Sommaire</h2><ol>${parts.map((p) => `<li class="toc-part">${p.part === 0 ? 'Avant-propos' : p.part === 8 ? 'Annexes' : 'Partie ' + p.part + ' · ' + esc(p.title || '')}<ol>${chapters.filter((c) => c.part === p.part).map((c) => `<li>${c.no ? `<span>${c.no}.</span> ` : ''}${frenchTypo(esc(c.title))}</li>`).join('')}${p.part === 5 ? '<li><span>·</span> Les 50 fiches d’exercices</li>' : ''}</ol></li>`).join('')}</ol></section>`
+  pages += `<section class="pg front toc-page"><h2>Sommaire</h2><ol>${parts.map((p) => `<li class="toc-part">${p.part === 0 ? 'Avant-propos' : p.part === ANNEX_PART ? 'Annexes' : 'Partie ' + p.part + ' · ' + esc(p.title || '')}<ol>${chapters.filter((c) => c.part === p.part).map((c) => `<li>${c.no ? `<span>${c.no}.</span> ` : ''}${frenchTypo(esc(c.title))}</li>`).join('')}${p.part === DRILL_PART ? `<li><span>·</span> Les ${drills.length} fiches d’exercices</li>` : ''}</ol></li>`).join('')}</ol></section>`
   lastPart = -1
   for (const c of chapters) {
-    if (c.part !== lastPart) { lastPart = c.part; if (c.part >= 1 && c.part <= 7) pages += `<section class="pg part-page"><div class="kicker">Partie ${c.part}</div><h2>${esc(c.partTitle || '')}</h2></section>` }
+    if (c.part !== lastPart) { lastPart = c.part; if (c.part >= 1 && c.part < ANNEX_PART) pages += `<section class="pg part-page"><div class="kicker">Partie ${c.part}</div><h2>${esc(c.partTitle || '')}</h2></section>` }
     pages += `<section class="pg chapter"><header><div class="kicker">${c.no ? 'Chapitre ' + c.no : esc(c.partTitle || '')}</div><h2>${frenchTypo(esc(c.title))}</h2></header><div class="story">${chapterHTML(c, 560).replace(/href="#drill-/g, 'data-drill="')}</div></section>`
     if (c.no === drillsAfter) {
       for (const fam of FAM_ORDER) {
         const list = drills.filter((d) => d.family === fam)
         if (!list.length) continue
-        pages += `<section class="pg fam-page" style="--fam:${FAMILY_COLOR[fam]}"><div class="kicker">Les 50 exercices</div><h2>${esc(FAMILY_FR[fam])}</h2><ol>${list.map((d) => `<li><b>${d.id}</b> ${esc(d.fr.title)}</li>`).join('')}</ol></section>`
+        pages += `<section class="pg fam-page" style="--fam:${FAMILY_COLOR[fam]}"><div class="kicker">Les ${drills.length} exercices</div><h2>${esc(FAMILY_FR[fam])}</h2><ol>${list.map((d) => `<li><b>${d.id}</b> ${esc(d.fr.title)}</li>`).join('')}</ol></section>`
         pages += list.map((d) => `<section class="pg drill-page">${drillHTML(d, 560)}</section>`).join('')
       }
     }

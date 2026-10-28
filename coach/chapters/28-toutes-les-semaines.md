@@ -1,15 +1,15 @@
 ---
-numero: 15
+numero: 28
 slug: toutes-les-semaines
 titre: Toutes les semaines : jeunes, deux matchs, sélections
-partie: 4
+partie: 6
 titrePartie: La semaine d'entraînement et la périodisation
 resume: Adapter la logique de la semaine type à la semaine à deux matchs, à la semaine des jeunes, au camp de sélection pendant une fenêtre FIFA et à la préparation d'une phase finale.
 ---
 
 Un lundi matin, dans l'hôtel d'une sélection nationale. Le premier joueur arrive à 7 h, après un vol de nuit : il a joué 90 minutes la veille dans un championnat européen. Le deuxième est arrivé dimanche, il n'a pas joué depuis trois semaines. Le troisième vient du championnat local, il a joué samedi sur un terrain en terre. Le quatrième sera là mardi soir seulement, son club l'a retenu. Le premier match est jeudi.
 
-La semaine type du chapitre 14 suppose un groupe stable, un match par semaine et six jours pour le préparer. La réalité du football africain est rarement aussi simple : semaines à deux matchs, enfants qui s'entraînent deux fois par semaine après l'école, sélections qui ont quelques jours pour réunir des joueurs venus de vingt clubs différents, phases finales où l'on joue tous les trois ou quatre jours dans la chaleur.
+La semaine type du chapitre 27 suppose un groupe stable, un match par semaine et six jours pour le préparer. La réalité du football africain est rarement aussi simple : semaines à deux matchs, enfants qui s'entraînent deux fois par semaine après l'école, sélections qui ont quelques jours pour réunir des joueurs venus de vingt clubs différents, phases finales où l'on joue tous les trois ou quatre jours dans la chaleur.
 
 Ce chapitre montre comment garder la logique Njangi dans chacune de ces situations. La logique ne change pas : entraîner le modèle chaque jour, placer les efforts lourds loin du match, arriver frais. Ce qui change, c'est la place disponible pour le faire.
 
@@ -37,7 +37,7 @@ La **rotation** se prépare avant la semaine, pas au moment de la composition. C
 
 > [!ATTENTION] Les mêmes jambes trois fois
 > Le risque principal de la semaine à deux matchs est le joueur qui joue tout, trois matchs de suite, parce qu'il est le meilleur.
-> Suivez sa charge chaque jour (chapitre 16), écoutez ce qu'il dit de son sommeil et de ses courbatures, et décidez avec le médecin et le préparateur, pas seul au bord du terrain.
+> Suivez sa charge chaque jour (chapitre 29), écoutez ce qu'il dit de son sommeil et de ses courbatures, et décidez avec le médecin et le préparateur, pas seul au bord du terrain.
 
 ## La semaine des jeunes
 
@@ -55,9 +55,9 @@ Pour des U13 à U15 avec trois séances et un match le samedi :
 | Samedi | Match | Échauffement avec ballon, [[R07]] | Selon l'âge |
 | Dimanche | Repos, famille | Aucun | Aucune |
 
-Avec deux séances seulement, on garde le mardi (petits espaces et rondos) et le jeudi (jeu de position, grand jeu, finition). Avec une seule, on la construit comme une séance complète du chapitre 17, avec un peu de chaque.
+Avec deux séances seulement, on garde le mardi (petits espaces et rondos) et le jeudi (jeu de position, grand jeu, finition). Avec une seule, on la construit comme une séance complète du chapitre 30, avec un peu de chaque.
 
-Plus l'enfant est jeune, plus la semaine est simple. Avant 12 ans environ, il n'y a pas de « jour de tension » ou de « jour de durée » : il y a des séances de jeu, de toucher de balle et de plaisir, dans de petits formats ([[S01]], [[S06]], [[R01]], [[R07]], [[G02]]). La périodisation, au sens strict, entre progressivement dans la vie du joueur à partir de 15 ou 16 ans, et pleinement à partir de 17 ans, comme le décrit le chapitre 11.
+Plus l'enfant est jeune, plus la semaine est simple. Avant 12 ans environ, il n'y a pas de « jour de tension » ou de « jour de durée » : il y a des séances de jeu, de toucher de balle et de plaisir, dans de petits formats ([[S01]], [[S06]], [[R01]], [[R07]], [[G02]]). La périodisation, au sens strict, entre progressivement dans la vie du joueur à partir de 15 ou 16 ans, et pleinement à partir de 17 ans, comme le décrit le chapitre 24.
 
 Les fiches d'exercices portent d'ailleurs un code propre aux jeunes, `youth`, pour les séances sans match proche : le planificateur de l'application les propose quand l'éducateur n'a pas de match à préparer.
 
@@ -65,7 +65,7 @@ Les fiches d'exercices portent d'ailleurs un code propre aux jeunes, `youth`, po
 > L'école passe avant l'entraînement : un enfant en période d'examens s'entraîne moins, sans être puni.
 > De l'eau à chaque pause, des séances aux heures fraîches, de l'ombre pour les temps d'explication.
 > Une charge adaptée à l'âge et à la croissance : deux enfants du même âge n'ont pas toujours le même corps.
-> Jamais d'humiliation, jamais de punition par la course, jamais un adulte seul à l'écart avec un enfant : les règles de protection de l'enfance du chapitre 13 s'appliquent à chaque séance.
+> Jamais d'humiliation, jamais de punition par la course, jamais un adulte seul à l'écart avec un enfant : les règles de protection de l'enfance du chapitre 26 s'appliquent à chaque séance.
 
 ## Le camp de sélection pendant une fenêtre FIFA
 
@@ -115,7 +115,7 @@ Une phase finale, CAN ou Coupe du monde, change l'échelle : plusieurs semaines 
 | Phase | Objectif | Contenu |
 |---|---|---|
 | Récupérer et évaluer | Faire le point sur chaque joueur après la saison | Bilans médicaux, charge réduite, rondos, entretiens individuels |
-| Construire | Remonter la charge par petites marches et installer le modèle | Semaines proches du chapitre 14, MD-4 et MD-3 complets, [[L03]], [[L04]], [[F05]] |
+| Construire | Remonter la charge par petites marches et installer le modèle | Semaines proches du chapitre 27, MD-4 et MD-3 complets, [[L03]], [[L04]], [[F05]] |
 | Affûter | Baisser le volume, garder l'intensité, arriver frais | Séances plus courtes, matchs amicaux, coups de pied arrêtés, [[P09]], [[T05]] |
 | Compétition | Récupérer et activer entre les matchs | Cycle MD+1, MD-2, MD-1, vidéo de l'adversaire, rotation préparée |
 
@@ -123,7 +123,7 @@ L'**affûtage** (en anglais *tapering*) consiste à réduire nettement le volume
 
 Pendant la compétition, chaque intervalle entre deux matchs devient une petite semaine à deux matchs : récupération le lendemain, une séance courte de vitesse et de vidéo si l'intervalle le permet, activation la veille. Les remplaçants reçoivent leur compensation, et le staff prépare la rotation des matchs de groupe en fonction des matchs suivants.
 
-L'acclimatation fait partie de la préparation. Une sélection qui jouera dans la chaleur et l'humidité doit s'y exposer progressivement, sous contrôle médical (chapitre 16). C'est aussi là que l'intention Respirer prend toute sa valeur : garder le ballon pour se reposer, gérer la chaleur et le score, n'est pas un aveu de faiblesse, c'est une compétence collective qui se prépare comme les autres.
+L'acclimatation fait partie de la préparation. Une sélection qui jouera dans la chaleur et l'humidité doit s'y exposer progressivement, sous contrôle médical (chapitre 29). C'est aussi là que l'intention Respirer prend toute sa valeur : garder le ballon pour se reposer, gérer la chaleur et le score, n'est pas un aveu de faiblesse, c'est une compétence collective qui se prépare comme les autres.
 
 > [!ANALYSTE] Comparer les semaines
 > Enregistrez la charge de chaque jour de la phase finale comme celle d'une semaine de club. Comparez la charge des titulaires et celle des remplaçants : un écart qui se creuse match après match signale un groupe qui perd son rythme, ou un groupe qui s'épuise.

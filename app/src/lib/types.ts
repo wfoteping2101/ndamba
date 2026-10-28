@@ -214,7 +214,7 @@ export interface DrillText {
 
 export interface Drill {
   id: string
-  family: 'rondo' | 'position' | 'ssg' | 'lsg' | 'phase' | 'transition' | 'finishing'
+  family: 'technique' | 'rondo' | 'position' | 'ssg' | 'lsg' | 'phase' | 'transition' | 'finishing'
   order: number
   ages: string
   players: { min: number; max: number; fr: string; en: string }

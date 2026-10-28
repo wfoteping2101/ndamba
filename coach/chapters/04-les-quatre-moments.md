@@ -176,7 +176,7 @@ Trois règles rendent la chaîne utile. D'abord, **peu de comportements** : 3 à
 
 > [!ANALYSTE] Coder les moments
 > Pour chaque match, codez au minimum deux événements : la perte et la récupération. Avec eux, vous retrouvez les quatre moments et vous pouvez compter, sans logiciel coûteux, la part des pertes reprises dans les 5 secondes et le nombre de tirs qui suivent une récupération.
-> Ces deux mesures alimentent le sous-indice Reprise de l'Indice Njangi (chapitre 19). Comparez-les d'un match à l'autre pour votre propre équipe plutôt qu'à une valeur extérieure.
+> Ces deux mesures alimentent le sous-indice Reprise de l'Indice Njangi (chapitre 32). Comparez-les d'un match à l'autre pour votre propre équipe plutôt qu'à une valeur extérieure.
 
 ## Ce qu'il faut retenir pour lundi
 

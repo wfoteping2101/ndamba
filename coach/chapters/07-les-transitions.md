@@ -99,7 +99,7 @@ La contre-pression a trois étages. Le **premier presseur**, le joueur le plus p
 
 > [!ANALYSTE] Mesurer Reprendre
 > L'analyste compte les **récupérations dans les 5 secondes après la perte**, rapportées au nombre total de pertes. Il note aussi la zone de la récupération et ce qu'elle a produit (tir, entrée dans le dernier tiers, simple conservation).
-> Il compte à part les **contre-attaques subies** : les possessions adverses qui commencent par une récupération et finissent par un tir. Ces mesures alimentent le sous-indice Reprise de l'Indice Njangi (chapitre 19).
+> Il compte à part les **contre-attaques subies** : les possessions adverses qui commencent par une récupération et finissent par un tir. Ces mesures alimentent le sous-indice Reprise de l'Indice Njangi (chapitre 32).
 
 ## Regarder devant : la transition offensive
 

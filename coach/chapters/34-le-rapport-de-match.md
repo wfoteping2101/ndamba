@@ -1,8 +1,8 @@
 ---
-numero: 21
+numero: 34
 slug: le-rapport-de-match
 titre: Le rapport de match Njangi
-partie: 6
+partie: 8
 titrePartie: L'analyse
 resume: Un modèle de rapport en une page (score, Indice Njangi, trois réussites, trois corrections, cinq extraits, objectifs de la semaine), un exemple complet et commenté, et la manière dont le rapport construit la semaine suivante.
 ---
@@ -29,7 +29,7 @@ Le relevé complet des codes est joint au dos de la page. Il n'est pas fait pour
 
 ## Un exemple complet : Lionceaux U17 contre une sélection fictive
 
-Le match qui suit est fictif. Les Lionceaux U17 reçoivent en match amical la sélection U17 de Bandara, un pays imaginaire. Les chiffres ont été construits pour l'exemple, mais les calculs sont exacts et suivent les formules du chapitre 19 : vous pouvez les refaire.
+Le match qui suit est fictif. Les Lionceaux U17 reçoivent en match amical la sélection U17 de Bandara, un pays imaginaire. Les chiffres ont été construits pour l'exemple, mais les calculs sont exacts et suivent les formules du chapitre 32 : vous pouvez les refaire.
 
 ### L'en-tête
 
@@ -137,7 +137,7 @@ Une cible donne à l'équipe une mesure de son progrès qui ne dépend pas seule
 
 ## Comment le rapport construit la semaine
 
-Le rapport n'est pas un bilan, c'est une commande. Chaque objectif de la semaine se traduit en exercices, placés selon la logique de la périodisation Njangi (chapitre 14) : la tension à MD-4, la durée à MD-3, la vitesse à MD-2, l'activation à MD-1. Voici la semaine des Lionceaux après le match de l'exemple, avec un match le samedi suivant.
+Le rapport n'est pas un bilan, c'est une commande. Chaque objectif de la semaine se traduit en exercices, placés selon la logique de la périodisation Njangi (chapitre 27) : la tension à MD-4, la durée à MD-3, la vitesse à MD-2, l'activation à MD-1. Voici la semaine des Lionceaux après le match de l'exemple, avec un match le samedi suivant.
 
 | Jour | Ce que le rapport y met | Exercices |
 |---|---|---|

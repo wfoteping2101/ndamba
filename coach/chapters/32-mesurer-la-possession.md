@@ -1,8 +1,8 @@
 ---
-numero: 19
+numero: 32
 slug: mesurer-la-possession
 titre: Mesurer la possession avec intention
-partie: 6
+partie: 8
 titrePartie: L'analyse
 resume: Pourquoi le pourcentage de possession ment, les indicateurs qui disent la vérité, et l'Indice Njangi : cinq sous-indices de 0 à 20 points, calculés en direct à partir de quatorze codes simples.
 ---

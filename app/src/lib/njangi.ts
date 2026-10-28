@@ -2,7 +2,7 @@
 // Owner of this file: the analysis surface. Other surfaces import computeNjangi, countEvents,
 // NjangiResult, SUB_KEYS, DRILLS_FOR, njangiLabel and EVENT_CODES: keep those names stable.
 //
-// SOURCE: Le Code Njangi (The Njangi Code), chapter 19 (coach/chapters/19-mesurer-la-possession.md), implemented exactly:
+// SOURCE: Le Code Njangi (The Njangi Code), chapter 32 (coach/chapters/32-mesurer-la-possession.md), implemented exactly:
 //   PASSES  = PASS_OK + PASS_LOST
 //   PERTES  = PASS_LOST + LOSS
 //   POSS    = PASS_LOST + LOSS + SHOT
@@ -14,7 +14,7 @@
 //   Controle    = max(0, min(20, 20 * (PASS_OK / ACTIONS - 0.55) / 0.30))
 //   Indice      = sum of the five, each rounded to 0.1 (so the total has one decimal)
 // A zero denominator gives 0. A match (or a season) is computed from summed counts, never from an
-// average of half indices. Worked examples: chapter 19 gives 65.1, chapter 21 gives 68.4.
+// average of half indices. Worked examples: chapter 32 gives 65.1, chapter 34 gives 68.4.
 import type { EventCode, Intention, Lang, MatchEvent } from './types'
 
 export const EVENT_CODES: EventCode[] = ['PASS_OK', 'PASS_LOST', 'PROG', 'LINE', 'FINAL3', 'BOX', 'FIX2', 'SWITCH', 'LOSS', 'REGAIN5', 'REGAIN', 'SHOT', 'SHOT_IN', 'GOAL']
@@ -25,7 +25,7 @@ export const SUB_KEYS: SubKey[] = ['progression', 'penetration', 'fixation', 're
 /** Where the formulas come from. */
 export const NJANGI_SOURCE: 'provisional' | 'chapter19' = 'chapter19'
 
-/** Reference values of chapter 19 (internal Njangi benchmarks, to calibrate on your own matches). */
+/** Reference values of chapter 32 (internal Njangi benchmarks, to calibrate on your own matches). */
 export const NJANGI_TARGETS = {
   progression: 0.35, // (PROG + LINE) per pass attempted for 20 points
   penetration: 1.0, // (FINAL3 + 2 BOX) per possession for 20 points
@@ -115,7 +115,7 @@ export function sumCounts(list: Record<EventCode, number>[]) {
 }
 
 /**
- * Complementary benchmarks of chapter 19 (outside the Indice). They need the opponent's
+ * Complementary benchmarks of chapter 32 (outside the Indice). They need the opponent's
  * PASS_OK, PASS_LOST and FINAL3 to be tagged too; null when they are not.
  *   possession share = our PASSES / (our PASSES + their PASSES)
  *   field tilt       = our FINAL3 / (our FINAL3 + their FINAL3)
@@ -129,7 +129,7 @@ export function njangiExtras(events: readonly Taggable[] | readonly MatchEvent[]
   }
 }
 
-/** Drills that train each sub-index (chapter 19 table). */
+/** Drills that train each sub-index (chapter 32 table). */
 export const DRILLS_FOR: Record<SubKey, string[]> = {
   progression: ['P05', 'S07', 'L02', 'R06'],
   penetration: ['F03', 'F05', 'G05', 'G01'],
@@ -152,10 +152,10 @@ export function rankSubs(r: NjangiResult): SubKey[] {
   return [...SUB_KEYS].sort((a, b) => r.sub[a] - r.sub[b] || SUB_KEYS.indexOf(a) - SUB_KEYS.indexOf(b))
 }
 
-/** Level of one sub-index: 0 = to build (under 8), 1 = improving (8 to 13), 2 = solid (13 and more, the model zone of chapter 19). */
+/** Level of one sub-index: 0 = to build (under 8), 1 = improving (8 to 13), 2 = solid (13 and more, the model zone of chapter 32). */
 export const subLevel = (v: number): 0 | 1 | 2 => (v < 8 ? 0 : v < 13 ? 1 : 2)
 
-/** Reading bands of chapter 19: under 35, 35, 50, 65, 80 and more. */
+/** Reading bands of chapter 32: under 35, 35, 50, 65, 80 and more. */
 export const NJANGI_BANDS = [0, 35, 50, 65, 80, 100]
 export const njangiBand = (total: number): 0 | 1 | 2 | 3 | 4 => (total < 35 ? 0 : total < 50 ? 1 : total < 65 ? 2 : total < 80 ? 3 : 4)
 

@@ -1,8 +1,8 @@
 ---
-numero: 12
+numero: 25
 slug: les-dix-competences
 titre: Les dix compétences du joueur Njangi
-partie: 3
+partie: 5
 titrePartie: Des jeunes aux pros
 resume: Les dix compétences qui font un joueur Njangi, de Scan à Prise de décision : pour chacune, une définition, une progression par âge, des exercices de référence et une grille d'évaluation de 1 à 4 reprise par l'application.
 ---

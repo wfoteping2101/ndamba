@@ -28,7 +28,7 @@
     "regarder-devant": "Après la récupération, le premier regard va devant"
   },
   "skills": { "scan": "Scan", "controle": "Contrôle orienté", "passe": "Passe avec intention", "conduite": "Conduite", "dribble-njangi": "Dribble njangi", "appels": "Appels et courses pour les autres", "communication": "Communication", "protection": "Protection du ballon", "contre-pression": "Contre-pression", "decision": "Prise de décision" },
-  "families": { "rondo": "Rondos", "position": "Jeux de position", "ssg": "Petits jeux", "lsg": "Grands jeux", "phase": "Phases de jeu", "transition": "Transitions", "finishing": "Finition" },
+  "families": { "technique": "Technique et combinaisons", "rondo": "Rondos", "position": "Jeux de position", "ssg": "Petits jeux", "lsg": "Grands jeux", "phase": "Phases de jeu", "transition": "Transitions", "finishing": "Finition" },
   "md": { "MD-4": "MD-4 · Tension", "MD-3": "MD-3 · Durée", "MD-2": "MD-2 · Vitesse", "MD-1": "MD-1 · Activation", "MD+1": "MD+1 · Récupération", "youth": "Jeunes" },
   "intensity": { "low": "Basse", "medium": "Moyenne", "high": "Haute", "very-high": "Très haute" },
   "pieces": { "le cœur": "Le cœur", "la raison": "La raison", "les yeux": "Les yeux", "la carte": "La carte", "le souffle": "Le souffle" },

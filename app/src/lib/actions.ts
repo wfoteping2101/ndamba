@@ -13,9 +13,9 @@ const TEMPLATES: Record<MD, Slot[]> = {
   'MD-4': [{ families: ['rondo'], minutes: 12 }, { families: ['ssg'], minutes: 20 }, { families: ['transition', 'ssg'], minutes: 15 }, { families: ['finishing'], minutes: 12 }],
   'MD-3': [{ families: ['rondo'], minutes: 12 }, { families: ['position'], minutes: 20 }, { families: ['lsg', 'phase'], minutes: 30 }],
   'MD-2': [{ families: ['rondo'], minutes: 10 }, { families: ['transition'], minutes: 15 }, { families: ['finishing'], minutes: 15 }, { families: ['ssg'], minutes: 12 }],
-  'MD-1': [{ families: ['rondo'], minutes: 10 }, { families: ['phase', 'finishing'], minutes: 15 }],
-  'MD+1': [{ families: ['rondo'], minutes: 12 }],
-  youth: [{ families: ['rondo'], minutes: 12 }, { families: ['ssg'], minutes: 20 }, { families: ['position'], minutes: 15 }, { families: ['finishing', 'ssg'], minutes: 15 }],
+  'MD-1': [{ families: ['technique', 'rondo'], minutes: 10 }, { families: ['phase', 'finishing'], minutes: 15 }],
+  'MD+1': [{ families: ['technique', 'rondo'], minutes: 12 }],
+  youth: [{ families: ['technique'], minutes: 10 }, { families: ['rondo'], minutes: 12 }, { families: ['ssg'], minutes: 20 }, { families: ['position'], minutes: 15 }, { families: ['finishing', 'ssg'], minutes: 15 }],
 }
 
 const ageNum = (ages: string) => { const m = ages.match(/U(\d+)/i); return m ? Number(m[1]) : 9 }

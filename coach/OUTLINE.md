@@ -24,7 +24,7 @@ Le livre compte un avant-propos, 23 chapitres en 7 parties, plus 50 fiches d'exe
 
 **Les cinq pièces du Njangi** (héritées du roman, pour l'éducation des jeunes) : le cœur (jouer ensemble), la raison (chaque passe a un but), les yeux (scanner, s'orienter, jouer entre les lignes), la carte (la position, les couloirs, le troisième homme, les supériorités), le souffle (intensité, pressing, transitions).
 
-**L'Indice Njangi** (chapitre 19) : un score de 0 à 100 qui mesure si une équipe a possédé avec intention, calculé à partir de cinq sous-indices (Progression, Pénétration, Fixation, Reprise, Contrôle). L'application Njangi le calcule en direct. Définition détaillée au chapitre 19 ; les autres chapitres peuvent le mentionner sans le détailler.
+**L'Indice Njangi** (chapitre 32) : un score de 0 à 100 qui mesure si une équipe a possédé avec intention, calculé à partir de cinq sous-indices (Progression, Pénétration, Fixation, Reprise, Contrôle). L'application Njangi le calcule en direct. Définition détaillée au chapitre 32 ; les autres chapitres peuvent le mentionner sans le détailler.
 
 **Les postes et leurs noms dans le Njangi** : le gardien-relanceur (1), les centraux relanceurs (4, 5), les latéraux (2, 3) qui peuvent être « intérieurs » ou « extérieurs », le **pivot** (6), les **intérieurs** (8, 10), les **ailiers de largeur** (7, 11), l'**attaquant point d'appui** (9).
 

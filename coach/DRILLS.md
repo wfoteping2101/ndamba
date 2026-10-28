@@ -42,11 +42,11 @@ Chaque exercice est un fichier JSON `drills/CODE.json` (par exemple `drills/R01.
 ```
 
 Valeurs autorisées :
-- `family` : `rondo`, `position`, `ssg` (petit jeu), `lsg` (grand jeu), `phase`, `transition`, `finishing`.
+- `family` : `technique` (technique et combinaisons, code C), `rondo`, `position`, `ssg` (petit jeu), `lsg` (grand jeu), `phase`, `transition`, `finishing`.
 - `md` : un ou plusieurs de `MD-4`, `MD-3`, `MD-2`, `MD-1`, `MD+1`, `youth` (séance de jeunes sans match proche).
 - `intensity` : `low`, `medium`, `high`, `very-high`.
 - `intentions` : un ou plusieurs de `sortir`, `progresser`, `fixer`, `finir`, `respirer`, `reprendre`, `regarder-devant`.
-- `skills` (les dix compétences du chapitre 12) : `scan`, `controle`, `passe`, `conduite`, `dribble-njangi`, `appels`, `communication`, `protection`, `contre-pression`, `decision`.
+- `skills` (les dix compétences du chapitre 25) : `scan`, `controle`, `passe`, `conduite`, `dribble-njangi`, `appels`, `communication`, `protection`, `contre-pression`, `decision`.
 - `pieces` : un ou plusieurs de `le cœur`, `la raison`, `les yeux`, `la carte`, `le souffle`.
 - `diagram` : obligatoire, format `schema` du roman (équipe `a` verte qui attaque vers la droite, `b` rouge, `n` neutres jaunes, `gk` gardien vert, `gkb` gardien adverse). Pour une `grid`, `w` et `h` du schéma = `space.w` et `space.h`. Lisible : 4 à 16 joueurs, 2 à 6 flèches numérotées, des labels courts. Les petits buts : `goals` avec `"size": "mini"`.
 - `diagram2` : facultatif (une progression ou une deuxième phase), même format, ou `null`.

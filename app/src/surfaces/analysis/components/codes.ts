@@ -28,7 +28,7 @@ export interface TagDef {
   negative?: boolean
   /** only shown when "tag the opponent too" is on */
   optional?: boolean
-  /** codes recorded with it (chapter 19: SHOT_IN adds SHOT, GOAL adds SHOT and SHOT_IN) */
+  /** codes recorded with it (chapter 32: SHOT_IN adds SHOT, GOAL adds SHOT and SHOT_IN) */
   implies?: EventCode[]
 }
 

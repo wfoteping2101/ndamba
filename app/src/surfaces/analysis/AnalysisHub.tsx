@@ -132,7 +132,7 @@ function Hub({ team, free, header }: { team: Team; free: boolean; header: JSX.El
         <p>{t('hub.what1')}</p>
         <p>{t('hub.what2')}</p>
         <blockquote className="border-l-4 border-sun-500 pl-3 font-display text-[16px] italic text-ink">{BRAND.motto[lang]}</blockquote>
-        <a href={`${BOOKS.methode.href}#ch-19`} className="link inline-flex min-h-[44px] items-center gap-1.5"><BookOpen size={16} />{t('hub.readChapter', { book: BOOKS.methode.title[lang] })}</a>
+        <a href={`${BOOKS.methode.href}#ch-32`} className="link inline-flex min-h-[44px] items-center gap-1.5"><BookOpen size={16} />{t('hub.readChapter', { book: BOOKS.methode.title[lang] })}</a>
       </div>
     </section>
   )

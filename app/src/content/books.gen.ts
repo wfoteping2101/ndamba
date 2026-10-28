@@ -412,114 +412,114 @@ export const METHODE_TOC: TocEntry[] = [
   "summary": "Corners, coups francs, touches et sorties de but pensés comme des moments du modèle de jeu : préparer la possession suivante, protéger l'équipe avec la défense de repos, et donner à toute sélection une arme qui s'entraîne vite."
  },
  {
-  "no": 11,
+  "no": 24,
   "slug": "les-etapes-de-la-formation",
   "title": "Les étapes de la formation Njangi",
-  "part": 3,
+  "part": 5,
   "partTitle": "Des jeunes aux pros",
   "summary": "Un même modèle de jeu, cinq étapes de formation de U6 à l'équipe A : pour chacune, les objectifs, les formats de jeu, les séances, la place des matchs et les erreurs à éviter."
  },
  {
-  "no": 12,
+  "no": 25,
   "slug": "les-dix-competences",
   "title": "Les dix compétences du joueur Njangi",
-  "part": 3,
+  "part": 5,
   "partTitle": "Des jeunes aux pros",
   "summary": "Les dix compétences qui font un joueur Njangi, de Scan à Prise de décision : pour chacune, une définition, une progression par âge, des exercices de référence et une grille d'évaluation de 1 à 4 reprise par l'application."
  },
  {
-  "no": 13,
+  "no": 26,
   "slug": "former-en-afrique",
   "title": "Former en Afrique : notre réalité est notre force",
-  "part": 3,
+  "part": 5,
   "partTitle": "Des jeunes aux pros",
   "summary": "Terrains, chaleur, matériel, football de rue, école, protection de l'enfance, faux agents, diaspora : des solutions pratiques et peu coûteuses pour former des joueurs Njangi dans les conditions réelles du continent."
  },
  {
-  "no": 14,
+  "no": 27,
   "slug": "la-periodisation-njangi",
   "title": "La périodisation Njangi",
-  "part": 4,
+  "part": 6,
   "partTitle": "La semaine d'entraînement et la périodisation",
   "summary": "Entraîner le modèle de jeu chaque jour en faisant varier l'espace, le nombre de joueurs, la durée et l'intensité selon la distance au match, avec la semaine type de MD+1 à MD."
  },
  {
-  "no": 15,
+  "no": 28,
   "slug": "toutes-les-semaines",
   "title": "Toutes les semaines : jeunes, deux matchs, sélections",
-  "part": 4,
+  "part": 6,
   "partTitle": "La semaine d'entraînement et la périodisation",
   "summary": "Adapter la logique de la semaine type à la semaine à deux matchs, à la semaine des jeunes, au camp de sélection pendant une fenêtre FIFA et à la préparation d'une phase finale."
  },
  {
-  "no": 16,
+  "no": 29,
   "slug": "charge-chaleur-recuperation",
   "title": "La charge, la chaleur et la récupération",
-  "part": 4,
+  "part": 6,
   "partTitle": "La semaine d'entraînement et la périodisation",
   "summary": "Mesurer simplement la charge, éviter les pics, entraîner dans la chaleur et l'humidité, adapter pendant le Ramadan, et protéger le sommeil, les voyages et l'adaptation à l'altitude, toujours avec le staff médical."
  },
  {
-  "no": 17,
+  "no": 30,
   "slug": "construire-une-seance",
   "title": "Construire une séance Njangi",
-  "part": 4,
+  "part": 6,
   "partTitle": "La semaine d'entraînement et la périodisation",
   "summary": "La structure d'une séance, les variables que l'entraîneur fait bouger, l'art du coaching court, et deux séances complètes construites avec les fiches, pour des U15 à MD-3 et pour des seniors à MD-4."
  },
  {
-  "no": 18,
+  "no": 31,
   "slug": "comment-utiliser-les-fiches",
   "title": "Comment utiliser les fiches",
-  "part": 5,
-  "partTitle": "Les 50 exercices",
+  "part": 7,
+  "partTitle": "Les exercices",
   "summary": "Lire une fiche d'exercice Njangi et choisir le bon exercice selon l'intention, l'âge et le jour de la semaine, avec le tableau des sept familles."
  },
  {
-  "no": 19,
+  "no": 32,
   "slug": "mesurer-la-possession",
   "title": "Mesurer la possession avec intention",
-  "part": 6,
+  "part": 8,
   "partTitle": "L'analyse",
   "summary": "Pourquoi le pourcentage de possession ment, les indicateurs qui disent la vérité, et l'Indice Njangi : cinq sous-indices de 0 à 20 points, calculés en direct à partir de quatorze codes simples."
  },
  {
-  "no": 20,
+  "no": 33,
   "slug": "l-analyste-njangi",
   "title": "L'analyste Njangi : avant, pendant, après le match",
-  "part": 6,
+  "part": 8,
   "partTitle": "L'analyse",
   "summary": "Préparer l'adversaire, coder le match en direct avec les quatorze codes de l'application, parler au banc à la mi-temps, monter une vidéo courte et juste, restituer aux jeunes et aux pros, et filmer avec un simple téléphone."
  },
  {
-  "no": 21,
+  "no": 34,
   "slug": "le-rapport-de-match",
   "title": "Le rapport de match Njangi",
-  "part": 6,
+  "part": 8,
   "partTitle": "L'analyse",
   "summary": "Un modèle de rapport en une page (score, Indice Njangi, trois réussites, trois corrections, cinq extraits, objectifs de la semaine), un exemple complet et commenté, et la manière dont le rapport construit la semaine suivante."
  },
  {
-  "no": 22,
+  "no": 35,
   "slug": "le-manager",
   "title": "Le manager, gardien de l'idée",
-  "part": 7,
+  "part": 9,
   "partTitle": "Le manager et la fédération",
   "summary": "Écrire et protéger le modèle de jeu, recruter des joueurs et des entraîneurs compatibles, organiser le staff, communiquer avec les joueurs, les médias et les dirigeants, gérer les vedettes et la diaspora, et faire durer le modèle quand l'entraîneur part."
  },
  {
-  "no": 23,
+  "no": 36,
   "slug": "le-plan-2030",
   "title": "Le plan 2030 : dix mesures pour une fédération",
-  "part": 7,
+  "part": 9,
   "partTitle": "Le manager et la fédération",
   "summary": "Dix mesures concrètes pour qu'une fédération africaine installe un modèle de jeu commun, du plus jeune âge à l'équipe A, et un calendrier année par année de 2026 à 2034."
  },
  {
-  "no": 24,
+  "no": 37,
   "slug": "annexes",
   "title": "Annexes",
-  "part": 8,
+  "part": 10,
   "partTitle": "Annexes",
   "summary": "Le glossaire français et anglais du Njangi, les fiches vierges de séance, de semaine et de rapport de match, et le rappel complet de l'Indice Njangi."
  }
