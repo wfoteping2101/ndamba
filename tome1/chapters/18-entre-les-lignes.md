@@ -202,7 +202,7 @@ Le ballon arrive au sol, fort. BriBri le reçoit du pied gauche et se tourne du 
 
 C'est là qu'il comprend. Cet endroit, c'est le sien.
 
-« Kaydoudou ! hurle-t-il. Tu te souviens de la souris de Mami ? Celle qui vit dans le mur de la cuisine ? »
+« Kayd ! hurle-t-il. Tu te souviens de la souris de Mami ? Celle qui vit dans le mur de la cuisine ? »
 
 « Celle que personne n'a jamais attrapée ? »
 

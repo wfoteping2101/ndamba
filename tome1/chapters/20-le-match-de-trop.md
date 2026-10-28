@@ -8,121 +8,283 @@ resume: Lors d'un match à l'extérieur, BriBri joue l'un de ses plus beaux matc
 illustration: Plan large, en légère plongée, sur un terrain de banlieue un après-midi de novembre, ciel blanc et bas. Au centre, BriBri, petit, afro douce, maillot blanc de l'ESM, chaussettes rouge et jaune, se tient immobile, les bras le long du corps, les yeux baissés. Lucas Morel, cheveux couleur de paille, a posé ses grandes mains sur ses épaules ; Kaydoudou, mince, fine raie à gauche, arrive en courant. Tout autour, un cercle de joueurs des deux équipes, maillots blancs et bleus mêlés, se resserre, dos tourné à la main courante. Au loin, l'arbitre a levé le bras. L'émotion : grave, protectrice, silencieuse.
 ---
 
-Dans le minibus du club, BriBri faisait Monsieur Lacombe.
+« Regarde ! Avant de manger ta pomme, tu as regardé où ? »
 
-Il avait collé un morceau de laine grise sous son nez avec du ruban adhésif, il avait croisé les mains dans le dos, et il remontait l'allée entre les sièges en fronçant les sourcils jusqu'au menton.
+Dans le minibus du club, BriBri fait Monsieur Lacombe. Mains dans le dos, sourcils froncés jusqu'au menton, il se penche sur Lucas.
 
-« Regarde ! dit-il d'une voix rocailleuse, en se penchant sur Lucas. Avant de manger ta pomme, tu as regardé où ? »
+« Il a une moustache en laine grise ! » hurle Mathis.
 
-Tout le minibus éclata de rire. Même Kenzo, au dernier rang, cacha son sourire dans son col. Lucas riait sans bruit, les épaules secouées.
+« Je... euh... » bafouille Lucas, sa pomme à la main.
 
-Au premier rang, Monsieur Lacombe ne se retourna pas. Il regardait la route. Il dit simplement, de sa vraie voix :
+« Nulle part ! La pomme, elle sait où elle est, mon garçon ! »
+
+Tout le minibus éclate de rire. Même Kenzo, au dernier rang, cache son sourire dans son col.
+
+« Fais Mathis ! » crie quelqu'un.
+
+BriBri ouvre une bouche énorme.
+
+« Miam. »
+
+« Fais Lucas, maintenant ! »
+
+BriBri ne dit rien. Dix secondes. Les mains sur les genoux, les joues toutes rouges.
+
+« C'est ressemblant », reconnaît Lucas.
+
+« Fais Kenzo ! »
+
+« Ici, le minibus, c'est moi », dit BriBri en roulant des épaules.
+
+« Je ne roule pas des épaules ! » proteste Kenzo. Il lui lance son bonnet à la figure. Mais il rit.
+
+Au premier rang, Monsieur Lacombe ne se retourne même pas.
 
 « Cent un. »
 
-BriBri s'arrêta net. Lacombe savait. Il savait pour les petits traits au feutre sur sa main. Depuis le début. BriBri rangea sa moustache de laine dans sa poche, très lentement, et retourna s'asseoir sous les applaudissements.
+BriBri se fige. Lacombe sait, pour les traits au feutre. Depuis le début ! Il range sa moustache, très lentement, et retourne s'asseoir sous les applaudissements.
 
-Ils allaient jouer chez l'Union Sportive de Belcourt, une ville à quarante minutes de Bussy, au milieu de grands champs de betteraves que Lucas nommait un par un, comme on présente des cousins. Il faisait froid, un froid blanc de novembre, et le ciel était si bas qu'on aurait dit qu'il touchait les poteaux de but.
+« Il a des yeux derrière la tête, chuchote-t-il. Je te l'avais dit. »
 
-BriBri se sentait bien. Il se sentait même mieux que bien. Depuis le match contre les Trois-Moulins, il avait compris quelque chose avec son corps, pas seulement avec sa tête. Il savait où était sa poche, entre les lignes. Il savait regarder par-dessus son épaule. Ses jambes étaient légères comme des plumes de pintade.
+« Et un rétroviseur », dit Lucas.
 
-Le terrain de Belcourt était entouré d'une main courante blanche un peu rouillée. Derrière, une cinquantaine de personnes s'étaient installées : des parents en doudoune, des petits frères avec des gâteaux, des grands-pères avec des chiens. Il y avait une buvette qui sentait le café et les crêpes.
+Belcourt est à quarante minutes de Bussy. Dehors défilent des champs de betteraves.
 
-* * *
+« Celui-là, c'est à monsieur Duval, dit Lucas. Celui-là, à son cousin. Et celui-là, au cousin du cousin. »
 
-Pendant trente-cinq minutes, BriBri joua le plus beau match de sa vie en France.
+« Tu les connais tous ? » demande Kenzo.
 
-Il se glissait dans la poche, il regardait, il recevait, il se tournait. Il mit un petit pont au milieu de terrain de Belcourt, un vrai, net, et le garçon lui-même secoua la tête en souriant, l'air de dire : « Bien joué, le petit. » Il servit Kenzo, qui frappa sur le poteau. Il servit Lucas, qui monta sur le côté droit avec ses grandes jambes et centra pour la tête d'un U14. 1-0 pour l'ESM. Kaydoudou, au milieu, lui fit le signe des deux doigts, et BriBri sentit son cœur gonfler sous son maillot.
+« Ici, tout le monde est cousin. »
 
-C'est au début de la deuxième mi-temps qu'il entendit la voix.
+Froid blanc de novembre. Le ciel est si bas qu'il touche presque les poteaux de but.
 
-Au début, il ne comprit pas. Il était sur le côté droit, tout près de la main courante, et il pensa que c'était un supporter qui criait, comme partout. Les supporters crient toujours. « Allez ! », « Arbitre ! », « Mais passe-la ! ».
+« Tu as l'air content, toi », dit Kaydoudou.
 
-Puis il entendit les mots.
-
-C'était un homme, juste derrière la barrière blanche, un homme en blouson gris avec une casquette. Il ne criait pas « Allez ». Il criait des mots sur la peau de BriBri. Sur sa couleur. Des mots sales, que BriBri n'avait jamais entendus en vrai, seulement dans les histoires que Papa racontait parfois à voix basse, quand il croyait que les enfants dormaient. Et puis des cris, aussi, des cris bêtes qui voulaient faire de lui autre chose qu'un garçon.
-
-Quelque chose de froid tomba dans le ventre de BriBri. Pas comme une pierre. Comme de l'eau glacée, qui se répand partout, dans les bras, dans les jambes, jusqu'au bout des doigts.
-
-Et le bruit disparut.
-
-Le terrain était toujours là, les joueurs couraient, quelqu'un tapait dans le ballon. Mais il n'entendait plus rien, comme quand on plonge la tête sous l'eau du bain. Il n'y avait plus que cette voix, très loin et très près à la fois. Il regarda ses mains. Elles étaient les mêmes que ce matin, les mêmes que toujours, les mains qui tressaient les bracelets pour Ousmane, les mains que Mami serrait dans les siennes en riant. Il ne comprenait pas ce que ces mains avaient fait de mal.
-
-Le ballon arriva vers lui. Il ne bougea pas. Le ballon passa à côté de son pied et sortit en touche.
-
-BriBri resta là, immobile, les bras le long du corps, au milieu du terrain qui continuait sans lui.
+« Je suis une souris en pleine forme. Depuis les Trois-Moulins, je sais où est ma poche. Mes jambes sont légères comme des plumes de pintade. » BriBri sourit de toutes ses dents. « Aujourd'hui, je fais mon plus beau match. Tu vas voir. »
 
 * * *
 
-Ce fut Lucas qui arriva le premier. Il jouait juste derrière lui, et il avait entendu, lui aussi. BriBri le vit traverser l'herbe, les joues encore plus rouges que d'habitude, mais pas de froid, cette fois. Lucas ne dit rien. Il posa ses deux grandes mains sur les épaules de BriBri, comme on pose une couverture, et il se plaça entre lui et la main courante.
+Autour du terrain de l'Union Sportive de Belcourt, une main courante blanche, un peu rouillée. Derrière, une cinquantaine de parents en doudoune, de petits frères et de grands-pères avec des chiens. La buvette sent le café et les crêpes.
 
-Puis Kenzo arriva. Kenzo, qui ne courait jamais pour rien, traversa tout le terrain en sprintant. Il passa devant BriBri sans s'arrêter, alla droit vers l'arbitre, et tendit le bras vers l'homme à la casquette. BriBri vit sa bouche bouger, vite, fort. Il n'entendit pas les mots, mais il vit le visage de Kenzo, et il comprit qu'il était plus en colère que lui.
+Le capitaine de Belcourt, un grand blond au brassard jaune, serre la main de tout le monde.
 
-L'arbitre était un jeune homme aux cheveux ras. Il écouta Kenzo deux secondes, regarda la main courante, et son visage changea. Il porta le sifflet à ses lèvres et siffla trois longs coups. Il leva le bras bien haut. Le match s'arrêta.
+« Bienvenue chez nous. Bon match. »
 
-Alors ils vinrent tous.
+Pendant trente-cinq minutes, BriBri joue le plus beau match de sa vie en France. La souris sort du mur, encore et encore.
 
-Kaydoudou d'abord, qui arriva du milieu en courant si vite qu'il faillit tomber, et qui se planta devant son frère avec un visage que BriBri ne lui avait jamais vu, tout dur, tout tremblant. Puis Mathis, le défenseur. Puis les autres, un par un, et ils firent un cercle autour de BriBri, épaule contre épaule, le dos tourné à la main courante. Et puis il se passa une chose que BriBri n'oublia jamais : le capitaine de Belcourt, un grand garçon blond avec un brassard jaune, vint aussi. Il se mit dans le cercle, entre Lucas et Mathis. Puis le milieu de terrain du petit pont. Puis deux autres joueurs de Belcourt. Les maillots bleus de Belcourt et les maillots blancs de l'ESM se mélangèrent, et le cercle se referma.
+Petit pont sur le milieu de terrain de Belcourt. Le garçon secoue la tête en souriant.
 
-BriBri, au milieu, ne voyait plus la main courante. Il ne voyait plus que des dos, des épaules, des visages qui le regardaient. Le froid dans son ventre était toujours là, mais il y avait maintenant autre chose autour, quelque chose de chaud.
+« Bien joué, le petit. »
 
-Par une fente entre deux épaules, il vit Monsieur Lacombe traverser le terrain. Il marchait vite, les mains plus du tout dans le dos. Il parla à l'arbitre, puis à une dame avec une écharpe du club de Belcourt, qui devait être la présidente : elle avait mis les mains sur sa bouche, et elle hochait la tête, encore et encore. Elle fit signe à deux messieurs avec des brassards. Ils allèrent voir l'homme à la casquette.
+Une passe pour Kenzo, qui frappe sur le poteau. Bong !
 
-L'homme protesta. Il agita les bras. Mais autour de lui, les gens s'étaient écartés, et une dame en doudoune rose dit très fort, d'une voix qui porta jusqu'au milieu du terrain : « Dehors. » Un grand-père avec un chien répéta : « Dehors. » Et l'homme fut raccompagné jusqu'au portail du stade, puis plus loin encore, jusqu'à ce qu'il disparaisse derrière la buvette. L'arbitre, lui, avait sorti un carnet et écrivait, longtemps.
+« Encore ! crie Kenzo. Donne-la encore ! »
+
+Une passe pour Lucas, qui centre pour la tête d'un U14. 1-0 pour l'ESM ! Au milieu, Kaydoudou lève deux doigts vers son frère.
+
+« La souris a faim ! » crie BriBri.
+
+À la mi-temps, Lacombe passe devant lui, les mains dans le dos.
+
+« Continue. »
+
+« Il m'a parlé ! souffle BriBri. Il m'a dit continue ! »
+
+« Chez lui, c'est presque un discours », dit Lucas.
+
+« Tu avais raison, dit Kaydoudou. C'est ton plus beau match. »
 
 * * *
 
-Le vestiaire des visiteurs sentait la pommade et le carrelage froid. Quelqu'un avait laissé une chaussette orpheline sur un banc.
+C'est au début de la deuxième mi-temps qu'il entend la voix.
 
-Dès que la porte se referma, BriBri se mit à pleurer. Il ne l'avait pas décidé. Ça sortit tout seul, comme une source. Kaydoudou s'assit à côté de lui et le serra contre lui, très fort, sans un mot, et BriBri pleura dans le maillot de son frère jusqu'à ce que le tissu soit mouillé.
+Il est sur le côté droit, tout près de la main courante. D'abord, il croit que c'est un supporter qui crie, comme partout. Puis il entend les mots.
 
-Puis la porte s'ouvrit doucement, et Awa entra. Elle s'agenouilla devant lui, sur le carrelage, pour que leurs yeux soient à la même hauteur.
+C'est un homme, juste derrière la barrière, en blouson gris et casquette. Il crie des mots sur la peau de BriBri. Sur sa couleur. Des mots sales, que BriBri n'a jamais entendus en vrai, seulement dans les histoires que Papa raconte à voix basse quand il croit que les enfants dorment. Et des cris bêtes, qui veulent faire de lui autre chose qu'un garçon.
+
+Quelque chose de froid tombe dans son ventre, comme de l'eau glacée. Le bruit disparaît, comme quand on plonge la tête sous l'eau du bain. Il n'y a plus que cette voix.
+
+Il regarde ses mains. Les mêmes que ce matin. Les mains qui tressaient des bracelets pour Ousmane, que Mami serre en riant. Qu'est-ce qu'elles ont fait de mal ?
+
+Le ballon passe à côté de son pied et sort en touche. BriBri reste immobile, les bras le long du corps, les yeux baissés.
+
+* * *
+
+Lucas arrive le premier. Il ne dit rien. Il pose ses grandes mains sur les épaules de BriBri, comme une couverture, et se place entre lui et la barrière.
+
+Kenzo sprinte vers l'arbitre, le bras tendu vers la casquette. BriBri n'entend pas ses mots, mais il voit son visage. Kenzo est encore plus en colère que lui.
+
+L'arbitre, un jeune homme aux cheveux ras, regarde la main courante. Trois longs coups de sifflet. Il lève le bras, bien haut. Le match s'arrête.
+
+Alors ils viennent tous. Kaydoudou d'abord, si vite qu'il manque de tomber, le visage tout dur et tout tremblant. Les bruits reviennent, petit à petit.
+
+« Je suis là, BriBri. »
+
+Puis Mathis.
+
+« On ne bouge pas. »
+
+Puis les autres, épaule contre épaule, le dos tourné à la main courante. Le capitaine de Belcourt entre aussi dans le cercle, entre Lucas et Mathis.
+
+« On est avec lui. »
+
+Puis le milieu du petit pont, et deux autres joueurs de Belcourt.
+
+« Pas sur notre terrain. Pas ça. »
+
+Les maillots bleus et les maillots blancs se mélangent. Le cercle se referme.
+
+Au milieu, BriBri ne voit plus que des dos, des épaules, des visages tournés vers lui. Le froid est toujours là, dans son ventre. Mais autour, maintenant, il y a quelque chose de chaud.
+
+Kenzo revient se glisser dans le cercle, le souffle court.
+
+« Il va sortir. Je te le promets. »
+
+Kaydoudou, plus grand, voit par-dessus les épaules. Il chuchote, juste pour son frère.
+
+« Lacombe traverse le terrain. Il n'a plus les mains dans le dos. Il parle à l'arbitre. Maintenant, à une dame avec une écharpe de Belcourt. La présidente, je crois. Elle a les mains sur la bouche. Elle va vers la barrière, avec deux messieurs à brassard. »
+
+« Monsieur, vous quittez le stade. Tout de suite. »
+
+L'homme proteste. Autour de lui, les gens s'écartent. Une dame en doudoune rose parle très fort.
+
+« Dehors. »
+
+Un grand-père, avec son chien, répète :
+
+« Dehors. »
+
+« Ils le raccompagnent au portail, souffle Kaydoudou. Il passe derrière la buvette. Il est parti. »
+
+« Je mets tout dans mon rapport », dit l'arbitre à Lacombe, son carnet à la main.
+
+* * *
+
+Dans le vestiaire des visiteurs, qui sent la pommade et le carrelage froid, BriBri se met à pleurer. Ça sort tout seul, comme une source. Kaydoudou le serre très fort, sans un mot.
+
+Awa entre doucement et s'agenouille sur le carrelage, pour que leurs yeux soient à la même hauteur.
 
 « Je ne le connais pas, ce monsieur, dit BriBri entre deux sanglots. Je ne lui ai rien fait. Pourquoi il dit ça ? »
 
-« Tu ne lui as rien fait. Rien du tout. » Awa prit ses deux mains dans les siennes. « Écoute-moi bien, BriBri. Ce qu'il a dit ne dit rien de toi. Ça dit tout de lui. »
+« Tu ne lui as rien fait. Rien du tout. » Awa prend ses deux mains dans les siennes. « Écoute-moi bien, BriBri. Ce qu'il a dit ne dit rien de toi. Ça dit tout de lui. »
 
-BriBri renifla. Awa ne le lâchait pas des yeux.
+BriBri renifle. Awa ne le lâche pas des yeux.
 
-« Tu es le même garçon que ce matin. Le même qui a fait rire tout le minibus. Le même qui a mis ce petit pont. Ce monsieur n'a rien pu te prendre de tout ça. Rien. » Elle serra ses mains un peu plus fort. « Tu n'es pas seul. Tu as vu le cercle ? Tu as vu les maillots bleus dedans ? Et on ne laissera jamais passer. Jamais. Ni ici, ni ailleurs. »
+« Tu es le même garçon que ce matin. Le même qui a fait rire tout le minibus. Le même qui a mis ce petit pont. Ce monsieur n'a rien pu te prendre de tout ça. Rien. » Elle serre ses mains un peu plus fort. « Tu n'es pas seul. Tu as vu le cercle ? Tu as vu les maillots bleus dedans ? Et on ne laissera jamais passer. Jamais. Ni ici, ni ailleurs. »
 
-Elle se tut un moment. Puis elle ajouta, plus bas :
+« J'ai froid, là. » BriBri montre son ventre.
 
-« Moi aussi, j'avais à peu près ton âge, la première fois. Sur un terrain, comme toi. Ça fait mal, et c'est normal que ça fasse mal. Et si ça arrive encore un jour, n'importe où, à l'école, dans la rue, dans le RER, tu le dis à un adulte. Tout de suite. Ce n'est pas rapporter. C'est se protéger. »
+« Le froid va partir. Le cercle, lui, il reste. »
 
-BriBri hocha la tête. Ses larmes coulaient encore, mais plus lentement.
+« Ça vous est déjà arrivé ? » demande BriBri tout bas.
 
-Monsieur Lacombe était entré sans bruit. Il se tenait près de la porte, sa moustache grise un peu de travers.
+« Oui. J'avais à peu près ton âge, la première fois. Sur un terrain, comme toi. Ça fait mal, et c'est normal que ça fasse mal. » Elle se penche un peu. « Et si ça arrive encore un jour, n'importe où, à l'école, dans la rue, dans le RER, tu le dis à un adulte. Tout de suite. Ce n'est pas rapporter. C'est se protéger. »
 
-« Le match peut reprendre, dit-il. Ou pas. C'est toi qui décides, BriBri. Si tu veux rentrer, on rentre tous. Personne ne t'en voudra. Personne. »
+« D'accord. »
 
-C'était la première fois qu'il l'appelait BriBri, et pas « le petit ».
+On frappe à la porte.
 
-BriBri regarda son frère. Kaydoudou ne dit rien ; il attendait, lui aussi. BriBri pensa au cercle, aux dos tournés, à la dame en doudoune rose. Il pensa aussi à Tonton Fokou, qui disait que le terrain de terre rouge appartenait à tous ceux qui voulaient jouer.
+« Il va bien ? » C'est la voix de Kenzo.
+
+« Il réfléchit », répond Monsieur Lacombe en entrant, sa moustache grise un peu de travers. Il se tourne vers BriBri. « Le match peut reprendre. Ou pas. C'est toi qui décides, BriBri. Si tu veux rentrer, on rentre tous. Personne ne t'en voudra. Personne. »
+
+C'est la première fois qu'il l'appelle BriBri, et pas « le petit ».
+
+BriBri regarde son frère. Kaydoudou ne dit rien ; il attend, lui aussi. BriBri pense au cercle. À la dame en doudoune rose. À Tonton Fokou, qui dit que le terrain de terre rouge appartient à tous ceux qui veulent jouer.
 
 « Je veux finir, dit-il. Avec vous. »
 
-Kaydoudou tendit son poing. Poing contre poing, main sur le cœur.
+Kaydoudou tend son poing. Poing contre poing. Main sur le cœur.
+
+« Alors on y va, dit Kaydoudou. Ensemble. »
+
+« Bien », dit Lacombe. Puis, vers la porte, plus fort : « On reprend. Tous. »
 
 * * *
 
-Quand ils revinrent sur le terrain, les gens derrière la main courante applaudirent. Pas fort. Doucement, comme on applaudit quelqu'un qui revient de loin.
+Quand ils reviennent sur le terrain, les gens derrière la main courante applaudissent. Doucement, comme on applaudit quelqu'un qui revient de loin.
 
-BriBri ne marqua pas. Il ne fit pas de petit pont, pas de dribble magique, rien d'extraordinaire. Il joua simplement. Il recevait, il donnait. Et chaque fois que le ballon arrivait dans ses pieds, il levait les yeux et voyait Lucas à sa droite, Kaydoudou derrière lui, Kenzo devant. Toujours. Ils ne le lâchèrent pas une seule fois, jusqu'au coup de sifflet final. Plus tard, personne ne se souvint vraiment du score.
+« Content que tu sois revenu », dit le capitaine de Belcourt.
 
-Le minibus arriva au centre de l'ESM à la nuit tombée. Sur le parking, sous un réverbère, Papa et Maman attendaient. Lacombe les avait appelés.
+« Le petit pont, tu me le refais quand tu veux », dit le milieu de terrain.
 
-Papa ne dit rien. Il ouvrit les bras, et il serra BriBri si fort, si longtemps, que BriBri sentit son cœur battre à travers son manteau. Papa ne dit rien du tout, ni sur le parking, ni dans la voiture, ni dans l'escalier. Mais il ne lâcha pas sa main une seule fois.
+« On joue pour toi, le 7 », dit Mathis.
 
-À la maison, Maman enleva son manteau, se lava les mains, et sortit la farine, le sucre et la levure. À dix heures du soir, l'appartement de Bussy-Saint-Georges se remplit de l'odeur des beignets de Douala, cette odeur ronde et dorée qui faisait penser à la cour de Madame Ekotto. BriBri en mangea sept. Personne ne lui dit que c'était trop.
+BriBri ne marque pas. Pas de petit pont, pas de dribble magique. Il joue, simplement. Il reçoit, il donne. Et chaque fois que le ballon arrive, il lève les yeux.
 
-Il était dans son lit, la lumière déjà éteinte, quand le petit téléphone que Maman lui avait donné pour les trajets en RER vibra sur sa table de nuit.
+« Je suis là », dit Lucas, à sa droite.
+
+« Je suis devant », dit Kenzo.
+
+« Et moi derrière », dit Kaydoudou.
+
+Ils ne le lâchent pas une seule fois, jusqu'au coup de sifflet final. Plus tard, personne ne se souvient vraiment du score.
+
+À la nuit tombée, sous un réverbère du parking de l'ESM, Papa et Maman attendent. Lacombe les a appelés.
+
+« Il a été très courageux », leur dit Lacombe.
+
+Papa ne dit rien. Il ouvre les bras et serre BriBri si fort, si longtemps, que BriBri sent son cœur battre à travers son manteau. Il ne dit rien sur le parking, ni dans la voiture, ni dans l'escalier. Mais il ne lâche pas sa main une seule fois.
+
+« Viens, mon cœur, dit Maman. On rentre. »
+
+À la maison, elle sort la farine, le sucre et la levure. À dix heures du soir, l'appartement sent les beignets de Douala, l'odeur ronde et dorée de la cour de Madame Ekotto.
+
+« Tu les fais comme Madame Ekotto », dit BriBri.
+
+« C'est Madame Ekotto qui les fait comme moi. » Maman pose l'assiette devant lui. « Encore un ? »
+
+« Oui. »
+
+« Encore un ? »
+
+« Oui. »
+
+Elle le demande sept fois. BriBri dit oui sept fois. Personne ne lui dit que c'est trop.
+
+« Moi aussi, j'en veux encore un », dit Kaydoudou.
+
+« Toi, tu en as mangé quatre. » Et Maman lui en donne un cinquième.
+
+* * *
+
+Dans le noir de la chambre, la voix de Kaydoudou arrive de l'autre lit.
+
+« BriBri ? Tu dors ? »
+
+« Non. »
+
+« Moi non plus. »
+
+Dehors, un RER passe en soufflant.
+
+« Kayd... Des gens comme ce monsieur, il y en a partout ? »
+
+Kaydoudou réfléchit longtemps, comme toujours.
+
+« Il y en a. Mais il y a plus de cercles. »
+
+« Même ceux de Belcourt sont venus. Et Kenzo a crié sur l'arbitre. »
+
+« Il criait pour toi. »
+
+« Et toi, tu avais envie de quoi, quand tu as couru ? »
+
+« De crier sur lui. » Un silence. « Mais j'avais encore plus envie d'être à côté de toi. »
+
+« Je n'étais pas tout seul. »
+
+« Tu n'es jamais tout seul. Jamais. »
+
+C'est à ce moment-là que le petit téléphone vibre sur la table de nuit, celui que Maman lui a donné pour le RER.
 
 Un message de Kenzo. Pas de texte. Juste une photo.
 
 Deux pieds, sur un parquet. Une chaussette rouge. Une chaussette jaune.
 
-BriBri regarda la photo longtemps, très longtemps, dans le noir. Puis il serra le téléphone contre lui, et cette nuit-là, il ne pensa même pas à avoir peur du noir.
+BriBri regarde la photo longtemps, très longtemps, dans le noir. Puis il serre le téléphone contre lui.
+
+Cette nuit-là, il ne pense même pas à avoir peur du noir.
 
 > [!CARNET] Leçon du Ballon n°20 : On ne laisse personne seul
 > Aujourd'hui je n'écris pas une leçon de football. Ou alors si.

@@ -2,7 +2,7 @@
 // (the team of Kaydoudou and BriBri in the novel), a week of sessions, a played match with live tags,
 // and an upcoming match. Everything stays in this browser.
 import { db } from './db'
-import type { EventCode, Match, MatchEvent, Player, Profile, Role, Session, SkillKey, Team } from './types'
+import type { EventCode, Match, MatchEvent, Player, Profile, Role, Score5, Session, SkillKey, Team, Wellness } from './types'
 import { addDays, nowISO, todayISO, uid, weekStart } from './util'
 import { formationSlots } from './formations'
 import { seedJourney } from './seedJourney' // PARCOURS
@@ -123,6 +123,7 @@ export async function seedDemo(role: Role = 'coach', lang: 'fr' | 'en' = 'fr', l
     await db.events.bulkPut(demoEvents(past.id, players))
   })
   await seedJourney(lang) // PARCOURS: the season's history (see lib/seedJourney.ts)
+  await seedPerformance(role, 'youth') // PERFORMANCE: only clears the form and load log (see the block at the end)
 }
 
 /* ==================================================================================================
@@ -302,7 +303,7 @@ async function seedProDemo(role: Role, lang: 'fr' | 'en') {
     const profile: Profile = {
       id: 'me', name: player ? 'Steve Ndjock' : 'Daniel Ngassa', role, lang, country: 'Cameroun', city: 'Douala', club: team.name,
       ageGroup: 'Seniors', position: player ? 'CM' : undefined, goals: player ? ['progresser', 'analyse'] : ['identite', 'semaine', 'analyse'],
-      plan: 'coach', onboarded: true, activeTeamId: team.id, createdAt: now,
+      plan: 'coach', onboarded: true, activeTeamId: team.id, playerId: player ? 'pl_8' : undefined, createdAt: now,
     }
     await db.profile.put(profile)
 
@@ -356,9 +357,76 @@ async function seedProDemo(role: Role, lang: 'fr' | 'en') {
     ]))
   })
   await seedJourney(lang) // PARCOURS: the season's history (see lib/seedJourney.ts)
+  await seedPerformance(role, 'pro') // PERFORMANCE: four weeks of form and load for Steve Ndjock (see below)
 }
 
 /* ======================================== PRO DEMO (end) ======================================== */
+
+/* ==================================================================================================
+ * PLAYER PERFORMANCE DEMO (begin): the form and load log of the performance space (db.wellness,
+ * Le Code Njangi, chapter 29). Only the pro demo opened as a player gets data: Steve Ndjock (pl_8,
+ * central midfielder of Étoile de la Côte) logged four weeks of morning questionnaires and of
+ * perceived exertion after the sessions he attended and the matches he played. Today is left empty,
+ * so the demo opens on the questionnaire. Every other demo only clears the table.
+ * ================================================================================================== */
+
+async function seedPerformance(role: Role, level: DemoLevel) {
+  await db.wellness.clear()
+  if (level !== 'pro' || role !== 'player') return
+  const pid = 'pl_8'
+  const today = todayISO()
+  const [sessions, matches, marks] = await Promise.all([
+    db.sessions.where('teamId').equals(DEMO_TEAMS.pro).toArray(),
+    db.matches.where('teamId').equals(DEMO_TEAMS.pro).toArray(),
+    db.attendance.where('playerId').equals(pid).toArray(),
+  ])
+  const status = new Map(marks.map((a) => [a.sessionId, a.status]))
+  let r = 41
+  const rnd = () => { r = (r * 9301 + 49297) % 233280; return r / 233280 }
+  const score = (v: number) => Math.max(1, Math.min(5, Math.round(v))) as Score5
+  const played = (m: Match) => m.minutes?.[pid] ?? (m.lineup.some((l) => l.playerId === pid) ? 2 * m.halfMinutes : 0)
+  const out: Wellness[] = []
+  for (let k = 28; k >= 1; k--) {
+    const date = addDays(today, -k)
+    const match = matches.find((m) => m.date === date && m.status === 'done')
+    const after = matches.find((m) => m.date === addDays(date, -1) && m.status === 'done')
+    const after2 = matches.find((m) => m.date === addDays(date, -2) && m.status === 'done')
+    const s = sessions.find((x) => x.date === date)
+    const att = s ? status.get(s.id) : undefined
+    const trained = !!s && (att === 'present' || att === 'late')
+    // the questionnaire: around 4 out of 5, lower the morning after a match, higher on the eve of one
+    const b = 4 + (rnd() - 0.5) * 0.9
+    let sleep = b + 0.1, fatigue = b, soreness = b, mood = b + 0.1, stress = b + 0.2
+    if (after && played(after) > 0) { fatigue -= 1.5; soreness -= 1.6; sleep -= 0.8; mood += after.scoreUs >= after.scoreThem ? 0.6 : -0.7 }
+    else if (after2 && played(after2) > 0) { fatigue -= 0.6; soreness -= 0.8 }
+    if (s?.md === 'MD-3') soreness -= 0.5
+    if (s?.md === 'MD-2') fatigue -= 0.3
+    if (s?.md === 'MD-1') { fatigue += 0.5; soreness += 0.5 }
+    if (match) { stress -= 0.5; mood += 0.3; fatigue += 0.4 }
+    // the exertion, about thirty minutes after: the shape of the example week of chapter 29
+    let rpe: number | undefined, minutes: number | undefined, sessionId: string | undefined, matchId: string | undefined
+    if (match && played(match) > 0) { rpe = 8 + (rnd() < 0.5 ? 1 : 0); minutes = played(match); matchId = match.id }
+    else if (trained && s) {
+      const total = s.blocks.reduce((a, x) => a + (x.minutes || 0), 0) || 60
+      const regen = !!after && played(after) > 60
+      const byMd: Partial<Record<Session['md'], [number, number]>> = {
+        'MD+1': regen ? [2, Math.min(40, total)] : [6, total], 'MD-4': [7 + (rnd() < 0.4 ? 1 : 0), total], 'MD-3': [7, total], 'MD-2': [5 + (rnd() < 0.5 ? 1 : 0), total], 'MD-1': [3, total], youth: [5, total],
+      }
+      const v = byMd[s.md]
+      if (v) { [rpe, minutes] = v; sessionId = s.id }
+    }
+    const skipForm = k > 5 && rnd() < 0.11 // one morning in nine without the questionnaire, never in the last five days
+    if (skipForm && rpe === undefined) continue
+    out.push({
+      id: `wl_${date}`, date, playerId: pid,
+      ...(skipForm ? {} : { sleep: score(sleep), fatigue: score(fatigue), soreness: score(soreness), mood: score(mood), stress: score(stress) }),
+      rpe, minutes, sessionId, matchId, createdAt: `${date}T07:40:00.000Z`,
+    })
+  }
+  await db.wellness.bulkPut(out)
+}
+
+/* ================================== PLAYER PERFORMANCE DEMO (end) ================================== */
 
 /** Create a fresh empty profile (from onboarding). */
 export async function createProfile(p: Omit<Profile, 'id' | 'createdAt' | 'onboarded' | 'plan'> & { plan?: Profile['plan'] }) {

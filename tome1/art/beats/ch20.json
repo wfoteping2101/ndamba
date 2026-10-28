@@ -1,0 +1,55 @@
+{
+  "chapter": 20,
+  "beats": [
+    {
+      "id": "ch20b",
+      "anchor": "Tout le minibus éclate de rire.",
+      "shot": "medium",
+      "cast": [
+        "BRI",
+        "KAY"
+      ],
+      "extras": "Lucas Morel, 13, straw-coloured hair, red cheeks, big hands holding an apple, laughing silently with shaking shoulders. Kenzo Delattre, 13, brown curls, on the back seat, hiding his grin in the collar of his jacket. Mathis, 13, tall, pale skin, short dark hair, laughing with his mouth wide open. Monsieur Lacombe, 55, short grey hair and real grey brush moustache, navy tracksuit, seen from behind in the front seat, looking at the road and not turning around.",
+      "outfit": "BriBri in an open grey tracksuit jacket over the white ESM shirt with the star on the heart, a fake moustache of grey wool taped under his nose, red sock on his RIGHT foot and yellow sock on his LEFT foot. Kaydoudou in a grey tracksuit jacket, shaved part on the left, the braided blue and white bracelet on his LEFT wrist, laughing in his seat.",
+      "action": "Standing in the aisle of the moving minibus, BriBri imitates Monsieur Lacombe: hands clasped behind his back, eyebrows frowned down to his chin, leaning over Lucas with a stern finger. The whole minibus bursts out laughing. In the front seat, the real Lacombe does not turn around.",
+      "location": "Inside a white club minibus on a country road in November, flat beet fields passing through the windows under a low white sky.",
+      "light": "Flat white winter daylight from the windows, warm faces, a cosy contrast with the cold outside.",
+      "camera": "Medium shot down the aisle from the front, BriBri in the centre, laughing boys on both sides, Lacombe's back and head in the blurred foreground.",
+      "alt": "Dans le minibus, BriBri imite Monsieur Lacombe avec une moustache en laine, et toute l'équipe éclate de rire."
+    },
+    {
+      "id": "ch20c",
+      "anchor": "Awa prend ses deux mains dans les siennes.",
+      "shot": "quiet",
+      "cast": [
+        "BRI",
+        "KAY"
+      ],
+      "extras": "Awa Keïta-Lambert, 35, of Malian origin, dark brown skin, long thin braids gathered in a bun, grey tracksuit jacket, kneeling on the tiled floor, holding both of BriBri's hands in hers and looking straight into his eyes with calm, warm strength.",
+      "outfit": "BriBri in the white ESM shirt with the star on the heart, red sock on his RIGHT foot and yellow sock on his LEFT foot, small soft afro, cheeks wet with tears. Kaydoudou in the white ESM shirt, shaved part on the left, the braided blue and white bracelet on his LEFT wrist, one arm around his brother's shoulders, his shirt damp where BriBri cried.",
+      "action": "BriBri sits on the wooden bench, still crying but more slowly, looking down at the hands Awa is holding. Awa kneels in front of him so their eyes are at the same height and speaks softly. Kaydoudou sits close against him, silent, holding him.",
+      "location": "A small visitors' locker room at a suburban pitch: white tiles, a wooden bench, hooks with jackets, kit bags on the floor, no writing anywhere.",
+      "light": "Soft cool light from a high frosted window, a gentle warm glow on the three faces.",
+      "camera": "Quiet medium close shot at bench height, Awa in profile on the left, the two brothers facing her on the right, their joined hands at the centre.",
+      "alt": "Dans le vestiaire, Awa, à genoux, tient les mains de BriBri pendant que Kaydoudou le serre contre lui."
+    },
+    {
+      "id": "ch20d",
+      "anchor": "Il ouvre les bras et serre BriBri si fort",
+      "shot": "quiet",
+      "cast": [
+        "PAPA",
+        "BRI",
+        "MAMAN",
+        "KAY"
+      ],
+      "extras": "Monsieur Lacombe, 55, pale skin, short grey hair, grey brush moustache, navy tracksuit and a dark coat, standing a few steps back near the white club minibus, hands no longer behind his back, watching quietly.",
+      "outfit": "Papa Armand with his short neat beard, a dark winter coat and the knitted green, red and yellow beanie made by Maman. Maman Estelle in a long warm coat, braids gathered in a bun, big golden earrings, one hand on BriBri's back. BriBri in his coat over the white ESM kit, red sock on his RIGHT foot and yellow sock on his LEFT foot. Kaydoudou in his coat with his kit bag on his shoulder, shaved part on the left, the braided blue and white bracelet on his LEFT wrist.",
+      "action": "Papa, without a word, wraps BriBri in a long, tight hug, eyes closed, his chin on top of his son's soft afro. BriBri's face is pressed against Papa's coat. Maman stands right next to them, her hand on BriBri's back. Kaydoudou waits a step away, his bag on his shoulder, looking at them.",
+      "location": "The car park of the ESM training centre at nightfall, a white minibus parked behind, the white club building with its painted star dark in the background.",
+      "light": "A single orange streetlamp above them in the cold blue night, breath steaming, warm light on the family.",
+      "camera": "Quiet medium shot from slightly low, the family in the pool of streetlight at the centre, Lacombe small and soft at the edge of the light.",
+      "alt": "Sous un réverbère du parking, Papa serre BriBri très fort sans rien dire, Maman à côté d'eux."
+    }
+  ]
+}

@@ -96,7 +96,11 @@ Puis il passe à la langue d'ici.
 
 « Ne te moque pas », dit Maman, qui rit.
 
-« Je ne me moque pas. J'apprends la langue. »
+« Je ne me moque pas. J'apprends la langue. » Il se tourne vers son frère. « Et à la récré, ils t'appellent “Kayd”. Ils disent que Kaydoudou, c'est trop long. »
+
+« Toi, ne commence pas. »
+
+« Kayd. »
 
 Papa pose sa fourchette.
 

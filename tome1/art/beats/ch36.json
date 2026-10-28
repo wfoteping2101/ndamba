@@ -1,0 +1,53 @@
+{
+  "chapter": 36,
+  "beats": [
+    {
+      "id": "ch36b",
+      "anchor": "Kaydoudou dessine un rond sur la vitre pleine de buée.",
+      "shot": "quiet",
+      "cast": [
+        "KAY",
+        "BRI"
+      ],
+      "extras": "A few blurred evening passengers in dark coats further up the lower deck, one of them dozing against the window.",
+      "outfit": "Kaydoudou (14): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist, in a dark green Kingsbridge Albion tracksuit and a navy rain jacket, a sports bag at his feet. BriBri (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, in the same dark green tracksuit under an open bright yellow rain jacket, his afro damp with rain, white sneakers.",
+      "action": "On the back seat of the lower deck, the brothers sit shoulder to shoulder. Kaydoudou, serious, slowly draws a circle with one finger on the fogged window. BriBri, slumped and glum a second ago, has just sat bolt upright, eyes wide open, one finger raised, as if an idea had just landed on his head.",
+      "location": "The lower deck of a red London double decker bus on a December night: worn patterned seats, yellow grab poles, rain streaked windows, blurred shop lights and red tail lights outside.",
+      "light": "Dim cool bus light mixed with warm orange and red smears of city lights through the wet glass, a soft glow on BriBri's face.",
+      "camera": "Quiet medium close shot from the seat across the aisle, the fogged window with its finger drawn circle between the two faces.",
+      "alt": "Au fond du bus rouge, Kaydoudou dessine un rond sur la vitre embuée, et BriBri se redresse d'un coup : il vient d'avoir une idée de Mami."
+    },
+    {
+      "id": "ch36c",
+      "anchor": "Alors Kaydoudou va s'asseoir à côté de lui.",
+      "shot": "quiet",
+      "cast": [
+        "KAY",
+        "BRI"
+      ],
+      "extras": "Jaden Clarke, 15, number 4: a tall, athletic Black British boy with dark brown skin and close cropped black hair with a sharp hairline, sitting hunched in the corner with the hood of his dark green tracksuit top pulled over his head, elbows on his knees, eyes on the floor. In the background, other teenage teammates of 14 and 15, some white, some South Asian, some Black, holding small folded papers and a marker.",
+      "outfit": "Everyone in dark green Kingsbridge Albion tracksuits. Kaydoudou (14): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist. BriBri (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, standing on a bench with an open shoebox full of folded papers.",
+      "action": "In the corner of the dressing room, Kaydoudou has just sat down beside the hooded Jaden without a word, his shoulder almost touching his, looking straight ahead, patient, waiting. Jaden has not moved yet. In the background, still standing on his bench with the open shoebox, BriBri watches the two of them and holds his breath.",
+      "location": "The Kingsbridge Albion dressing room on a December evening: wooden benches, metal lockers, fogged windows, kit bags on the floor.",
+      "light": "Yellow neon light, a little harsh, with soft shadow in Jaden's corner.",
+      "camera": "Quiet medium shot at bench height, Jaden and Kaydoudou side by side in the foreground, BriBri small and sharp in the background between their heads.",
+      "alt": "Kaydoudou s'assoit sans un mot à côté de Jaden, caché sous sa capuche, et il attend que Jaden parle."
+    },
+    {
+      "id": "ch36d",
+      "anchor": "Theo lance une chaussette. Tom se bouche les oreilles.",
+      "shot": "dynamic",
+      "cast": [
+        "BRI",
+        "KAY"
+      ],
+      "extras": "Freddie Shaw, 14, the goalkeeper: a very tall, gangly white English boy (1.80 m) with copper red hair, freckles all the way up to his eyelids, ears that turn red, extremely long arms, standing on the bench with one hand on his heart, ears bright red, grinning proudly. Theo, 15: a tall white English striker with short fair hair, throwing a rolled up sock. Tom Whitaker, 15: a tall, broad white English centre back with short brown hair, plugging his ears with his fingers. Arjun, 14: a slim South Asian British playmaker with neat black hair, laughing. Jaden Clarke, 15, number 4: a tall, athletic Black British boy with dark brown skin and close cropped black hair with a sharp hairline, his hood down for once, laughing in the corner.",
+      "outfit": "Everyone in dark green Kingsbridge Albion tracksuits or training tops. Kaydoudou (14): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist. BriBri (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot.",
+      "action": "Freddie has just told the worst joke in the world from the top of the bench. A rolled up sock thrown by Theo flies through the air toward his head. Tom pulls a face with his fingers in his ears. Everyone else is doubled up with the same laugh: BriBri laughing so hard his eyes are shut, Kaydoudou with his head thrown back, Jaden laughing with them.",
+      "location": "The Kingsbridge Albion dressing room on a winter Monday evening: benches, metal lockers, fogged windows, a whiteboard seen edge on.",
+      "light": "Warm yellow neon light, lively and bright.",
+      "camera": "Dynamic wide shot from a low corner of the room, the flying sock in the upper third, the laughing team filling the frame.",
+      "alt": "Freddie, debout sur le banc, vient de raconter la pire blague du monde : Theo lui lance une chaussette, Tom se bouche les oreilles, et tout le vestiaire rit ensemble."
+    }
+  ]
+}

@@ -222,7 +222,7 @@ Kenzo contrôle, fixe le gardien, et sert BriBri au deuxième poteau. 3-1.
 
 « Comment tu sais que ça s'appelle comme ça ? »
 
-« Je te connais ! »
+« Je te connais, Kayd ! »
 
 Derrière la main courante, Papa fait des bonds avec son écharpe des Lions.
 

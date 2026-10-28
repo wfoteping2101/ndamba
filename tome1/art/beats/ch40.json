@@ -1,0 +1,57 @@
+{
+  "chapter": 40,
+  "beats": [
+    {
+      "id": "ch40b",
+      "anchor": "Toute la tribune applaudit un vieux ballon rapiécé.",
+      "shot": "wide",
+      "cast": [
+        "KAY",
+        "BRI",
+        "MAMI",
+        "PAPA",
+        "MAMAN"
+      ],
+      "extras": "Monsieur Joseph Atéba, about 50: a tall Cameroonian man with dark brown skin, thin glasses, a salt and pepper mustache, a long black coat and a wool beanie striped green, red and yellow with a small embroidered star, a small black notebook in his hand, in the front row, clapping. Behind them, a packed stand of English supporters of all ages clapping and cheering. In the background on the pitch, teammates in green warming up.",
+      "outfit": "Kaydoudou (15): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist, in the dark green Kingsbridge Albion kit with white sleeves with the white number 8. BriBri (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, in the same kit. Mami's ball: an old, slightly misshapen light brown leather ball with a hand sewn square patch of red and yellow wax print and many black marker signatures drawn only as scribbles. Mami Nyanga (71): small and very straight, a huge smile, glasses on the tip of her nose, a red and yellow wax print headscarf and a red and yellow wax print dress, under a long grey coat. Papa Armand: tall, short neat beard, warm eyes, a light blue shirt, a grey coat and his green, red and yellow knitted beanie. Maman Estelle: braids gathered in a bun, big gold earrings, a teal and yellow wax print dress under a dark coat.",
+      "action": "In front of the stand, Kaydoudou has just caught Mami's old patched ball on his thigh for the tenth touch, and BriBri beside him throws both arms in the air. In the front row, between Papa's knitted beanie and Monsieur Atéba's, tiny Mami claps with her hands held high, and the whole stand behind her applauds.",
+      "location": "Wharfside Park, a real stadium on the bank of the Thames in London: eight thousand red seats, floodlights as tall as cranes, a pitch so green it looks painted.",
+      "light": "Early April evening, the floodlights already on, the wet grass shining.",
+      "camera": "Wide shot from pitch level, the brothers in the foreground, the front row and the rising stand behind them.",
+      "alt": "Devant la tribune, les frères jonglent avec le ballon de Mami, et toute la tribune applaudit un vieux ballon rapiécé."
+    },
+    {
+      "id": "ch40c",
+      "anchor": "Et deux bras de pieuvre le cueillent tout en haut.",
+      "shot": "dynamic",
+      "cast": [
+        "KAY"
+      ],
+      "extras": "Freddie Shaw, 14, the goalkeeper: a very tall, gangly white English boy (1.80 m) with copper red hair, freckles all the way up to his eyelids, ears that turn red, extremely long arms, in a bright yellow goalkeeper jersey and big gloves, leaping highest of all. FC Amstelland players: tall Dutch boys of 15 in bright orange kits, jumping too late with their arms up. The Amstelland number 6: a tall, silent red haired boy in orange, glued to Kaydoudou. Kingsbridge defenders in green.",
+      "outfit": "Kaydoudou (15): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist, in the dark green Kingsbridge Albion kit with white sleeves with the white number 8.",
+      "action": "In a forest of raised arms in the penalty area, Freddie soars above everyone and plucks the corner out of the air at full stretch with both enormous gloved hands, like an octopus. Below him, the orange players jump too late. At the edge of the box, Kaydoudou, shadowed by the red haired number 6, is already looking up at Freddie.",
+      "location": "The penalty area at Wharfside Park, London, in the 92nd minute of the final.",
+      "light": "Bright white floodlights at night, the wet grass shining, the ball lit like a moon.",
+      "camera": "Low dynamic angle from the grass looking up, Freddie and the ball at the top of the frame.",
+      "alt": "À la 92e minute, dans une forêt de bras, Freddie cueille le corner tout en haut avec ses bras de pieuvre."
+    },
+    {
+      "id": "ch40d",
+      "anchor": "Alors Mami lève sa canne au-dessus de sa tête, comme une épée.",
+      "shot": "dynamic",
+      "cast": [
+        "BRI",
+        "MAMI",
+        "PAPA",
+        "MAMAN"
+      ],
+      "extras": "A steward in a yellow vest, a middle aged white man, stepping politely aside with one open hand. In the stand behind, supporters on their feet cheering. From the left, teammates in dark green with white sleeves sprinting in to celebrate.",
+      "outfit": "BriBri (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, in the dark green Kingsbridge Albion kit with white sleeves. Mami Nyanga (71): small and very straight, a huge smile, glasses on the tip of her nose, a red and yellow wax print headscarf and a red and yellow wax print dress, under a long grey coat, her headscarf slipping. Papa Armand: tall, short neat beard, warm eyes, a light blue shirt, his green, red and yellow knitted beanie askew. Maman Estelle: braids gathered in a bun, big gold earrings, a teal and yellow wax print dress under a dark coat.",
+      "action": "At the corner flag in front of the stand, BriBri dances Roger Milla's corner flag dance, one hand on his belly, one finger pointing to the sky, hips swinging. On the other side of the low barrier, Mami raises her cane above her head like a sword and dances with him, singing. In the front row, Maman laughs and cries at the same time and Papa sings with all his heart.",
+      "location": "The corner of the pitch at Wharfside Park, London, right in front of the stand, a low barrier between the grass and the first row.",
+      "light": "Floodlights at night, warm and joyful, the wet grass glittering.",
+      "camera": "Dynamic medium wide shot from the pitch, BriBri and Mami facing each other across the barrier at the centre.",
+      "alt": "Au poteau de corner, BriBri danse la danse de Roger Milla, et de l'autre côté de la barrière, Mami lève sa canne comme une épée et danse avec lui."
+    }
+  ]
+}
