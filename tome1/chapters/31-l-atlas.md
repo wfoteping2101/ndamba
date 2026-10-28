@@ -12,7 +12,7 @@ illustration: Plan moyen, fin de journée de mai au bord d'un terrain, la mer bl
 
 BriBri tourne sur lui-même, le doigt en l'air.
 
-« Dix-sept drapeaux, Kaydoudou ! J'ai compté deux fois ! »
+« Dix-sept drapeaux, Kayd ! J'ai compté deux fois ! »
 
 Clac, clac, clac. Sur le front de mer, le vent les fait claquer comme un public qui applaudit.
 
@@ -190,7 +190,7 @@ Kaydoudou lève deux doigts. VRRROUM ! La passe part d'un coup, entre les lignes
 
 « La machine à coudre ! hurle BriBri. Elle marche ! »
 
-Mais l'Atlas ne lâche rien. Ilyas touche le poteau. Bong ! Youssef oblige le gardien à plonger. Le match devient superbe, serré comme une corde de guitare. Chaque minute dure une heure.
+Mais l'Atlas ne lâche rien. Ilyas touche le poteau. Bong ! Youssef oblige le gardien à plonger. Le match devient superbe. Serré. Chaque minute dure une heure.
 
 Pendant un arrêt de jeu, Youssef reprend son souffle à côté de BriBri.
 
@@ -276,7 +276,7 @@ Pol siffle entre ses dents. « Ils ont gagné tous leurs matchs. Et ils n'ont pa
 
 BriBri, toujours dans le maillot de Youssef, les observe longtemps.
 
-« Kaydoudou, chuchote-t-il. Ils n'ont pas l'air de s'amuser. »
+« Kayd, chuchote-t-il. Ils n'ont pas l'air de s'amuser. »
 
 « Non, dit Kaydoudou. Ils ont l'air de gagner. »
 

@@ -98,7 +98,7 @@ Il remonte les manches de son sweat vert et s'assoit en face.
 
 La main d'Avi Ramon tremble tant qu'en avançant son cavalier, il fait tomber un pion. Puis un autre. « Perdó, perdó. Mes mains font la grève. »
 
-BriBri ramasse les pions sans rien dire et les remet à leur place, tout doucement. Kaydoudou ne lui connaissait pas cette délicatesse-là.
+BriBri ramasse les pions sans rien dire et les remet à leur place, tout doucement. Kaydoudou ne savait pas que son frère pouvait être aussi doux.
 
 Au douzième coup, Kaydoudou réfléchit, penché en avant, le menton dans la main. Le soleil sort entre deux nuages. Des rayons dorés passent à travers les volets.
 
@@ -150,7 +150,7 @@ Leur numéro 2 descend le dernier. Il doit baisser la tête pour passer la porte
 
 « Il s'appelle Toni, dit Laia. Imbattable de la tête. Fort comme un tronc d'olivier. »
 
-« Mais lent à se retourner, ajoute Jordi. Comme un camion dans une ruelle. »
+« Mais lent à se retourner, ajoute Jordi. Comme un paquebot dans un petit port. »
 
 Dans le vestiaire, Jordi dessine son plan sur une serviette en papier.
 
@@ -162,7 +162,7 @@ Dans le vestiaire, Jordi dessine son plan sur une serviette en papier.
 
 La première mi-temps est une bagarre.
 
-Le Riu Ebre joue dur. Pas méchant, mais dur. Laia est renversée deux fois. Deux fois, elle se relève en époussetant son short avec mépris.
+Le Riu Ebre joue dur. Pas méchant, mais dur. Laia est renversée deux fois. Deux fois, elle se relève en époussetant son short, l'air vexé.
 
 « Ils ne s'excusent jamais, ceux-là ! » grogne-t-elle.
 
@@ -218,7 +218,7 @@ Toni arrive. BriBri l'attend. La pausa : la semelle sur le ballon, une demi-seco
 
 Fffft. BriBri passe à gauche comme un courant d'air.
 
-Le temps que le camion fasse demi-tour, BriBri est dans la surface. Il remet en retrait pour Pol, qui n'a qu'à pousser.
+Le temps que le paquebot fasse demi-tour, BriBri est dans la surface. Il remet en retrait pour Pol, qui n'a qu'à pousser.
 
 1-1 ! La tribune explose.
 

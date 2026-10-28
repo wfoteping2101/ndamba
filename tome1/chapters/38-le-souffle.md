@@ -60,11 +60,11 @@ Dans le couloir, les frères sortent le ballon de Mami. Tête, cuisse, pied. Le 
 
 « Eight, nine, TEN ! » compte Freddie.
 
-Le numéro 6 allemand s'arrête devant BriBri. Le plus grand de tous, des épaules comme une porte de garage.
+Le numéro 6 allemand s'arrête devant BriBri. Le plus grand de tous, avec des épaules immenses.
 
 « Nice ball, small boy, dit-il en anglais. Joli ballon. Très vieux. Comme ton équipe. »
 
-« Lui, c'est le Frigo, chuchote BriBri. Grand, froid, et il fait du bruit. »
+« Lui, c'est le Frigo, chuchote BriBri. Le deuxième de ma vie, après le gardien du Maryland. Grand, froid, et il fait du bruit. »
 
 Poing contre poing. Main sur le cœur.
 
@@ -122,7 +122,7 @@ BriBri est assis par terre, le dos contre un casier. Theo a la tête sous une se
 
 « Freddie ? Une blague ? »
 
-Freddie secoue la tête. Pour la première fois de sa vie, il n'en a pas.
+Freddie secoue la tête. Pour une fois, il n'en a pas.
 
 Okafor s'accroupit au milieu d'eux.
 
@@ -190,7 +190,7 @@ Et le ballon se met à tourner.
 
 « Jaden ! »
 
-« Kay ! »
+« Kayd ! »
 
 « BriBri ! »
 
@@ -204,7 +204,7 @@ Et les Allemands courent.
 
 Dix minutes plus tard, BriBri n'en revient pas.
 
-« Kaydoudou ! Le feu baisse ! Je marche presque ! Je respire ! Mon accordéon joue une musique normale ! »
+« Kayd ! Le feu baisse ! Je marche presque ! Je respire ! Mon accordéon joue une musique normale ! »
 
 En face, le Frigo met les mains sur les hanches. Pour la première fois.
 

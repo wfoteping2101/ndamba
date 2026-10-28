@@ -12,7 +12,7 @@ Clac ! Clac ! CLAC !
 
 Les volets verts claquent toute la nuit. BriBri tire la couverture sur sa tête.
 
-« Kaydoudou. Il y a un monstre dehors. »
+« Kayd. Il y a un monstre dehors. »
 
 « C'est la tramuntana. Le vent du nord. Elle descend des montagnes. »
 
@@ -62,13 +62,13 @@ Le ventre de BriBri tombe dans ses chaussettes.
 
 « Elle va... elle va guérir ? »
 
-« Elle va bien, dit Papa très vite. Rien n'est cassé. Le docteur l'a vue. Mais elle doit se reposer longtemps, et ne plus marcher seule pendant quelques semaines. » « Elle a soixante-dix ans. À cet âge-là, une hanche, c'est fragile. »
+« Elle va bien, dit Papa très vite. Rien n'est cassé. Le docteur l'a vue. Mais elle doit se reposer longtemps, et ne plus marcher seule pendant quelques semaines. Elle a soixante-dix ans. À cet âge-là, une hanche, c'est fragile. »
 
 Maman est infirmière. Elle sait ce que veut dire « fragile ». Elle prend la main de Papa sur la table.
 
 Cette nuit-là, BriBri ne dort presque pas.
 
-« Kaydoudou. Tu dors ? »
+« Kayd. Tu dors ? »
 
 « Non. »
 

@@ -308,13 +308,13 @@ Marcus éclate de rire.
 
 « A bow ! Yes ! That's the question, man. That's the only question. Most coaches never ask it. »
 
-Puis il fait une chose que personne n'a jamais vu Marcus Bell faire. Il tend sa tablette à Kaydoudou.
+Puis Marcus Bell, qui ne prête jamais sa tablette à personne, la tend à Kaydoudou.
 
 « Tu veux apprendre à voir le match comme moi ? »
 
-En français ! Un français lent et cabossé, qui fait rouler les r comme des billes.
+En français ! Pas juste un « bonjour », comme avec BriBri au premier entraînement. Une vraie phrase, lente et cabossée, qui fait rouler les r comme des billes.
 
-« Vous... vous parlez français ? »
+« Vous... vous parlez vraiment français ? »
 
 « At college. Two years. I was terrible. Like your brother in English. »
 

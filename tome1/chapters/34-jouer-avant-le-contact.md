@@ -128,7 +128,7 @@ BriBri ne sait pas.
 
 « Listen. Here, the defender is a bus. Big. Heavy. He can't turn. If you're on the road when the bus arrives... BOOM ! » Okafor frappe son poing dans sa main. « So you don't fight the bus. You leave before it arrives. When he gets there, the ball is already gone. He tackles the air. »
 
-« Il tacle l'air ! J'adore les bus ! Un défenseur gros comme un frigo qui plonge dans le vide ! »
+« Il tacle l'air ! J'adore les bus ! Un défenseur gros comme une montagne qui plonge dans le vide ! »
 
 « A clever little lad doesn't need to win duels, dit Okafor. He makes them disappear. »
 
@@ -192,7 +192,7 @@ Dans le bus du retour, BriBri fonce vers le siège du pilote. Kaydoudou s'assoit
 
 Au feu rouge, BriBri colle son front contre la vitre.
 
-« Regarde, Kaydoudou. Le pigeon, au milieu de la route. Il se promène comme un contrôleur. Le bus redémarre... Il ne bouge pas... Il attend... Il attend encore... Et HOP ! Deux petits pas, et il s'envole ! »
+« Regarde, Kayd. Le pigeon, au milieu de la route. Il se promène comme un contrôleur. Le bus redémarre... Il ne bouge pas... Il attend... Il attend encore... Et HOP ! Deux petits pas, et il s'envole ! »
 
 Le bus passe dans le vide.
 
@@ -202,7 +202,7 @@ Kaydoudou tourne lentement la tête vers lui.
 
 « Tu es en train de me dire que ton nouvel entraîneur, c'est un pigeon de Lewisham ? »
 
-« Je te dis que le pigeon a compris avant moi. C'est humiliant, mais c'est vrai. » BriBri lève un doigt. « À partir d'aujourd'hui, mon geste s'appelle le coup du pigeon. »
+« Je te dis que le pigeon a compris avant moi. C'est la honte, mais c'est vrai. » BriBri lève un doigt. « À partir d'aujourd'hui, mon geste s'appelle le coup du pigeon. »
 
 Kaydoudou sourit enfin. Puis il regarde la pluie.
 
@@ -274,7 +274,7 @@ Dans le vestiaire, Freddie fait asseoir tout le monde. Il sort de son sac une m�
 
 « Cereal gold. »
 
-Freddie fredonne un hymne très solennel, qu'il invente au fur et à mesure. « Oh Socks, oh Socks, he never fell down... » Les joueurs tapent en rythme sur les casiers. Boum, boum, boum. Puis Freddie passe la médaille au cou de BriBri.
+Freddie fredonne un hymne très sérieux, comme pour un roi, qu'il invente au fur et à mesure. « Oh Socks, oh Socks, he never fell down... » Les joueurs tapent en rythme sur les casiers. Boum, boum, boum. Puis Freddie passe la médaille au cou de BriBri.
 
 Dessus, en lettres capitales : MOST UPRIGHT PLAYER.
 
@@ -292,7 +292,7 @@ Freddie s'ajoute un point au tableau. BriBri ne proteste pas.
 
 Cette nuit-là, il dort avec la médaille. Dans le noir, il entend son frère se retourner dans son lit.
 
-« Kaydoudou ? Jaden, il s'est relevé tout seul de sa flaque. »
+« Kayd ? Jaden, il s'est relevé tout seul de sa flaque. »
 
 « Je sais. »
 

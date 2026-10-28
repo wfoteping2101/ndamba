@@ -54,7 +54,7 @@ Ce jour-là, l'homme au bonnet attend sur le parking, sous un grand parapluie no
 
 « L'espion parle français ! » souffle BriBri.
 
-Il parle français, oui. Et son accent fait sauter le cœur de Kaydoudou. L'accent de Douala, chantant, avec des « r » qui roulent comme des billes.
+Il parle français, oui. Et son accent fait sauter le cœur de Kaydoudou. L'accent de Douala, chantant, le même que celui de Tonton Fokou sous le manguier.
 
 « Joseph Atéba. Je travaille pour la Fédération camerounaise de football. En Europe. »
 
@@ -116,7 +116,7 @@ Sur le côté. En arrière. À Tom. À Samir. Encore à Tom.
 
 Depuis son but, Freddie hurle : « WAKE UP, EIGHT ! » Cette fois, personne ne rit.
 
-« Kaydoudou ! Devant ! » crie BriBri, tout seul sur son aile.
+« Kayd ! Devant ! » crie BriBri, tout seul sur son aile.
 
 Des passes polies. Les plus polies de sa vie. Dans sa tête, la voix de Tonton Fokou gronde sous le manguier : *Le football n'est pas un salon, mon fils.*
 
@@ -152,7 +152,7 @@ Kaydoudou hoche la tête.
 
 « Non. Parce que le ballon devait voyager. Tonton Fokou ne regardait jamais qui nous regardait. Il criait : houou ! Le ballon doit voyager ! Et on le faisait voyager. Même devant les Requins de Bépanda. Même devant tout le quartier. »
 
-Il lui donne un coup d'épaule. « On joue pour faire voyager le ballon, Kaydoudou. Pas pour Monsieur Atéba. Lui, il regarde. C'est son travail. Nous, on joue. C'est le nôtre. »
+Il lui donne un coup d'épaule. « On joue pour faire voyager le ballon, Kayd. Pas pour Monsieur Atéba. Lui, il regarde. C'est son travail. Nous, on joue. C'est le nôtre. »
 
 Kaydoudou le regarde. Parfois, c'est rare, mais ça arrive : son petit frère devient son grand frère.
 

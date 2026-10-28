@@ -274,7 +274,7 @@ Puis la trésorière, Mama Kemadjou, grande et maigre, ouvre le cahier noir.
 
 Une femme se lève et dépose une enveloppe dans la caisse verte.
 
-« Merci, ma sœur. Mama Ngo ! »
+« Merci, ma sœur. Mama Ngo'o ! »
 
 Une autre enveloppe.
 

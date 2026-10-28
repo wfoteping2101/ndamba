@@ -246,9 +246,9 @@ Diego, qui parle anglais comme une rivière, a peur d'un demi et d'un quart.
 
 Ils se regardent. Une idée passe entre eux, comme une passe qui traverse deux lignes.
 
-« Deal ? » Diego tend la main.
+« Deal ? » Diego tend la main. Kaydoudou la serre : « Deal. »
 
-« Deal. In three weeks, bro, you'll write like a poet. »
+« In three weeks, bro, you'll write like a poet », promet Diego.
 
 « Et toi, tu couperas les pizzas comme un ingénieur. »
 

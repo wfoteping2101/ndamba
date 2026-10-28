@@ -220,7 +220,7 @@ BriBri ne marque pas. Pas de petit pont, pas de dribble magique. Il joue, simple
 
 Ils ne le lâchent pas une seule fois, jusqu'au coup de sifflet final. Plus tard, personne ne se souvient vraiment du score.
 
-À la nuit tombée, sous un réverbère du parking de l'ESM, Papa et Maman attendent. Lacombe les a appelés.
+À la nuit tombée, sous un lampadaire du parking de l'ESM, Papa et Maman attendent. Lacombe les a appelés.
 
 « Il a été très courageux », leur dit Lacombe.
 

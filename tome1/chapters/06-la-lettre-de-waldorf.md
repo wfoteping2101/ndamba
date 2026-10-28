@@ -166,7 +166,7 @@ BriBri veut rire. Il ne rit pas.
 
 Il attrape la petite lampe de poche de son frère. Clic. Il la pose sur la table de nuit, entre les deux lits, juste à côté du ballon de Mami. Le carré de pagne s'allume, rouge et jaune. Un petit soleil dans la nuit.
 
-« Moi, j'ai peur qu'on m'oublie, dit BriBri. Je pars, et dans un an, Ousmane dit : "BriBri ? C'était qui, déjà ? Le petit avec les chaussettes ?" »
+« Moi, j'ai peur qu'on m'oublie, dit BriBri. Je pars, et dans un an, Ousmane dit : “BriBri ? C'était qui, déjà ? Le petit avec les chaussettes ?” »
 
 Kaydoudou se redresse sur un coude. La lampe éclaire la moitié de son visage.
 

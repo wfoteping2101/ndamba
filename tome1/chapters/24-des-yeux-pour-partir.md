@@ -98,7 +98,7 @@ Kaydoudou ne le prend pas tout de suite.
 
 « Promis, dit Kaydoudou d'une voix cassée. Sauf en Coupe du monde. »
 
-Kenzo sourit presque. Kaydoudou prend le maillot. Alors il fait une chose que BriBri ne l'a jamais vu faire avec quelqu'un d'autre que lui. Il tend le poing.
+Kenzo sourit presque. Kaydoudou prend le maillot. Alors il fait une chose que BriBri ne l'a vu faire qu'avec Diego et Tyler, en Amérique. Il tend le poing.
 
 Kenzo hésite, puis cogne son poing contre le sien. Kaydoudou pose la main sur son cœur. Kenzo ne comprend pas tout à fait, mais il fait pareil.
 
@@ -312,7 +312,7 @@ LES YEUX.
 
 « Alors merci, mon poignet. »
 
-Au même moment, la route sort d'un virage. Et devant eux, d'un coup, il y a la mer. Immense, bleue, scintillante, comme une nappe de fête qu'on vient de déplier.
+Au même moment, la route sort d'un virage. Et devant eux, d'un coup, il y a la mer. Immense, bleue, pleine d'étincelles, comme une nappe de fête qu'on vient de déplier.
 
 « La mer ! » crient Papa et Maman en même temps.
 

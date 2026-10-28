@@ -96,7 +96,7 @@ La peur qu'on l'oublie.
 
 À la pause, il rejoint son frère près des bouteilles d'eau.
 
-« Kaydoudou. Je suis un ailier ou un poteau ? »
+« Kayd. Je suis un ailier ou un poteau ? »
 
 « Un poteau, au moins, ça ne se plaint pas. »
 
@@ -214,7 +214,7 @@ Les deux doigts ! Le signal des frères ! Sauf que cette fois, ce n'est pas pour
 
 « Laia ! » crie Kaydoudou.
 
-La passe part à ras de l'herbe et traverse le trou comme une flèche. Laia arrive lancée. Contrôle. Tête levée. Frappe.
+La passe part à ras de l'herbe et traverse le trou comme un éclair. Laia arrive lancée. Contrôle. Tête levée. Frappe.
 
 Chhh. Le filet tremble.
 

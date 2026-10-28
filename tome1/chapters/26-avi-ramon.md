@@ -206,7 +206,7 @@ Le vieil homme le regarde avec malice.
 
 « Essaie. »
 
-BriBri file vers le cercle comme une flèche. Nil vient d'entrer au milieu. Le ballon arrive à BriBri. D'habitude, il fonce tout droit. Pas cette fois.
+BriBri file vers le cercle comme une moto-taxi. Nil vient d'entrer au milieu. Le ballon arrive à BriBri. D'habitude, il fonce tout droit. Pas cette fois.
 
 Il s'arrête net. La semelle sur le ballon.
 
@@ -248,7 +248,7 @@ Les deux frères ont crié en même temps. Un pigeon s'envole de la fontaine.
 
 « Des joueurs formidables. Plus forts que tous ceux que j'ai vus ici. Mais personne ne les portait. Ils n'avaient pas d'école. Pas de rondo du dimanche. Pas de vieux pour leur montrer la pausa. Pas d'idée commune. Juste leur talent, tout seuls. Et le talent tout seul, ça s'use, noi. Comme un bateau sans port. »
 
-Kaydoudou sent sa poitrine se serrer. Il entend la voix de Papa, l'été de la Coupe du monde, chez Diego : « À l'Afrique, il ne manque pas le talent. Il manque une idée commune. »
+Kaydoudou sent sa poitrine se serrer. Il entend la voix de Papa, l'été de la Coupe du monde, sous un lampadaire de Waldorf : « À l'Afrique, il ne manque pas le talent. Il manque une idée commune. »
 
 Il regarde son petit frère. BriBri, pour une fois, ne dit rien du tout.
 

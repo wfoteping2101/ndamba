@@ -204,7 +204,7 @@ Kaydoudou sourit.
 
 « Deal », dit Tyler, qui n'a compris que « watermelon ».
 
-« Et ce coup-là, il s'appelle l'ouvre-porte. »
+« Et ce coup-là, annonce BriBri, il s'appelle l'ouvre-porte. »
 
 « Okay, dit Coach Whitfield. Kay, when ? »
 
@@ -234,7 +234,7 @@ Le temps ralentit.
 
 BriBri sent la main sur son épaule. Il entend le souffle du grand numéro 5, juste derrière. L'herbe brûlée craque sous ses crampons. Au loin, la chaleur fait danser les tentes.
 
-Derrière eux, au milieu de la défense, il y a maintenant un trou. Grand comme une porte de garage.
+Derrière eux, au milieu de la défense, il y a maintenant un trou. Grand comme un terrain de futsal.
 
 BriBri ne le voit pas. Il ne se retourne pas. Il court.
 

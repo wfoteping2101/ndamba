@@ -86,7 +86,7 @@ Dans le bus rouge, il ne monte même pas tout devant, en haut. Il s'assoit en ba
 
 « Tu ne prends pas le siège du pilote ? » demande Kaydoudou.
 
-« Le pilote est en grève. Il fait nuit tout le temps, de toute façon. On sort du collège : nuit. On rentre : encore plus nuit. » BriBri soupire. « J'ai vu Okafor, tout à l'heure. Tout seul dans son bureau, la tête dans les mains, devant son tableau plein de flèches. On aurait dit un lion qui a perdu sa savane. Ça mout, Kaydoudou. C'est dur. »
+« Le pilote est en grève. Il fait nuit tout le temps, de toute façon. On sort du collège : nuit. On rentre : encore plus nuit. » BriBri soupire. « J'ai vu Okafor, tout à l'heure. Tout seul dans son bureau, la tête dans les mains, devant son tableau plein de flèches. On aurait dit un lion qui a perdu sa savane. Ça mout, Kayd. C'est dur. »
 
 « Je sais. » Kaydoudou dessine un rond sur la vitre pleine de buée. « Le ballon ne voyage plus. Il reste dans chaque petit groupe. »
 
@@ -228,7 +228,7 @@ Il y en a assez pour une armée de petites sœurs.
 
 Le vendredi, une semaine avant le match contre Woolwich Common, BriBri sort le ballon de Mami.
 
-« Ce carré de pagne rouge et jaune, c'est Mami qui l'a cousu. Et ça, partout, ce sont des signatures. Ousmane, Mireille, Tonton Fokou. Diego, Tyler. Kenzo, Lucas, Awa, Monsieur Lacombe. Avi Ramon, Laia, Nil, Youssef. » Il lève le ballon. « Ce ballon a voyagé avec nous dans quatre pays. Tous ceux qui nous ont aidés l'ont signé. Now it's your turn. »
+« Ce carré de pagne rouge et jaune, c'est Mami qui l'a cousu. Et ça, partout, ce sont des signatures. Ousmane, Mireille, Tonton Fokou. Diego, Tyler. Kenzo, Lucas, Awa, Monsieur Lacombe. Avi Ramon, Laia, Nil, Youssef. » Il lève le ballon. « Ce ballon a voyagé avec nous dans cinq pays. Tous ceux qui nous ont aidés l'ont signé. Now it's your turn. »
 
 À vous.
 

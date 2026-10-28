@@ -130,7 +130,7 @@ Mrs. Patterson penche la tête.
 
 « Yes, confirme BriBri, très fier. Every day. Big chicken. »
 
-« Me, first day, I say "I am a pineapple" », souffle le garçon du Guatemala en riant.
+« Me, first day, I say “I am a pineapple” », souffle le garçon du Guatemala en riant.
 
 La fille de Corée se cache derrière sa main. Le garçon du Guatemala manque de tomber de sa chaise. Et BriBri ? Il ne devient pas rouge. Il rit plus fort que tout le monde, puis il salue, comme un artiste à la fin du spectacle.
 
@@ -170,7 +170,7 @@ Dans le bus du retour, BriBri rebondit sur son siège.
 
 « Oui. Et maintenant, tout le monde me connaît ! »
 
-Il garde le carton toute la semaine.
+Kaydoudou garde le carton toute la semaine.
 
 * * *
 
@@ -250,7 +250,7 @@ BriBri recule d'un pas, inquiet.
 
 Le garçon rit si fort qu'il doit s'asseoir par terre. Puis il parle, avec l'anglais, l'espagnol et ses deux mains.
 
-« I'm Diego. Diego Ramírez. Eleven. My parents, El Salvador. Me, right here ! "Sick", ici, ça veut dire génial ! Et "bro", c'est mon frère. "My bad", c'est ma faute. "No way", c'est impossible ! »
+« I'm Diego. Diego Ramírez. Eleven. My parents, El Salvador. Me, right here ! “Sick”, ici, ça veut dire génial ! Et “bro”, c'est mon frère. “My bad”, c'est ma faute. “No way”, c'est impossible ! »
 
 « Diego, déclare BriBri, tu es nommé traducteur officiel de la famille Ngassa. »
 

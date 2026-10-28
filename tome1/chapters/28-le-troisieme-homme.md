@@ -204,7 +204,7 @@ BAM ! Chhh !
 
 3-2.
 
-Nil reste assis dans la boue. Il compte sur ses doigts, incrédule.
+Nil reste assis dans la boue. Il compte sur ses doigts. Il n'y croit pas.
 
 « Un gol. Un gol meu. Un but. À moi. »
 

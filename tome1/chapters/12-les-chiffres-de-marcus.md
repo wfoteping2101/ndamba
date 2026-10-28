@@ -12,7 +12,7 @@ illustration: Plan moyen sur un terrain d'herbe du Maryland, un samedi de printe
 
 BriBri se fige. Trop tard pour fuir.
 
-Marcus Bell est assis sur la glacière des ballons, la tablette sur les genoux. Il a le sourire gentil des gens qui vont vous dire une chose terrible.
+Marcus Bell est assis sur la glacière des ballons, la tablette sur les genoux. Il sourit. BriBri connaît ce sourire : c'est celui du « nine times in a row ».
 
 *Le dossier*, pense BriBri. *Kaydoudou m'a prévenu. Monsieur Tablette a un dossier sur moi.*
 
@@ -30,9 +30,9 @@ Diego arrive en jonglant.
 
 « He speaks French, bro. A little. »
 
-« Un petit peu », dit Marcus, avec son accent qui roule les r comme des billes. « Assis, BriBri. »
+« Un petit peu », dit Marcus, dans son français cabossé. « Assis, BriBri. »
 
-« Bowie, samedi. 1-1. »
+« Bowie, samedi, dit Marcus. 1-1. »
 
 « Tu as dribblé tout le monde, bro, ajoute Diego. Et tu as marqué zéro but. »
 

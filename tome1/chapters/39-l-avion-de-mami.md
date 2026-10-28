@@ -252,7 +252,7 @@ Il pense aux Néerlandais du FC Amstelland, invaincus depuis le début du tourno
 
 Dans le lit d'à côté, une voix chuchote.
 
-« Kaydoudou. Tu dors ? »
+« Kayd. Tu dors ? »
 
 « Non. »
 

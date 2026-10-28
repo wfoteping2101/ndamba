@@ -52,7 +52,7 @@ Sur l'étagère, entre le carnet couvert de pagne et la photo des Lionceaux de B
 
 BriBri, lui, a trouvé le paradis : le bus rouge à étage.
 
-« Vite, Kaydoudou ! Le siège du pilote ! »
+« Vite, Kayd ! Le siège du pilote ! »
 
 Il grimpe l'escalier en colimaçon et fonce tout en haut, tout devant. Il tourne un volant imaginaire, freine avec la bouche, pfffchhh, et annonce les arrêts en se pinçant le nez.
 
@@ -138,7 +138,7 @@ Les Anglais fondent sur le ballon à trois, de partout. Le terrain rétrécit co
 
 BriBri tombe deux fois. La troisième, il glisse un petit pont entre les jambes d'un défenseur roux. « Petit pont ! » Il se relève en riant. Mais à la pause, même lui a les mains sur les genoux.
 
-« Kaydoudou... Ils ont des moteurs. »
+« Kayd... Ils ont des moteurs. »
 
 « Non. Ils ne courent pas plus vite que les Espagnols. Ils arrivent plus tôt. C'est pire. »
 

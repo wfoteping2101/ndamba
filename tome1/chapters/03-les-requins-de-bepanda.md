@@ -204,7 +204,7 @@ La voix de BriBri monte d'un coup, aiguë, tremblante.
 
 « Je ne fais pas le chef ! »
 
-« Si ! Tu fais toujours le chef ! À la maison, à l'école, partout ! "BriBri, range tes chaussettes", "BriBri, fais tes devoirs", "BriBri, passe le ballon" ! Tu n'es pas Papa ! »
+« Si ! Tu fais toujours le chef ! À la maison, à l'école, partout ! “BriBri, range tes chaussettes”, “BriBri, fais tes devoirs”, “BriBri, passe le ballon” ! Tu n'es pas Papa ! »
 
 « Et toi, tu n'es pas tout seul sur le terrain ! »
 

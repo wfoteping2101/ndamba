@@ -36,7 +36,7 @@ Il est là, au milieu de tout ce monde, une couverture sur les genoux malgré la
 
 Dans le vestiaire, BriBri sort le ballon de Mami.
 
-« Rituel ! Dix jongles, et il ne touche pas le sol. »
+« Rituel ! Dix passes, et il ne touche pas le sol. »
 
 Ils se le passent de l'un à l'autre. « Un. Deux. Trois... » Le pagne rouge et jaune tourne dans l'air. Le nom de Youssef passe, en deux alphabets. « ... Neuf. Dix ! »
 
@@ -54,7 +54,7 @@ Le Real Club Atlético Castellana entre au pas. Survêtements blancs à bande vi
 
 « Les invincibles », souffle Pol.
 
-« On dirait des frigos, chuchote BriBri. Des frigos qui marchent au pas. »
+« On dirait des statues, chuchote BriBri. Des statues qui marchent au pas. »
 
 « Pas un seul but encaissé de tout le tournoi, dit Nil. Pas un. »
 
@@ -154,7 +154,7 @@ Deux joueurs arrivent sur lui. Kaydoudou pose la semelle sur le ballon, comme un
 
 Sur le banc madrilène, leur entraîneur se lève.
 
-« ¡Presión! ¡Arriba, arriba! »
+« ¡Presión ! ¡Arriba, arriba ! »
 
 « Il leur dit de monter, souffle Laia. Pour la première fois, ce sont eux qui courent après le ballon ! »
 
@@ -216,7 +216,7 @@ BriBri fait sa pausa, la semelle sur le ballon, juste assez pour que les deux se
 
 Kaydoudou entre dans le trou. Il ne réfléchit plus.
 
-« ¡El pivote! crie le numéro 6. ¡El pivote! »
+« ¡El pivote ! crie le numéro 6. ¡El pivote ! »
 
 Trop tard. *Le dribble njangi.* BriBri glisse le ballon entre les deux défenseurs, à ras de terre. Il le range chez son frère.
 
@@ -232,13 +232,13 @@ Le ballon roule. Le gardien sort. Les mâts des voiliers ne bougent plus. Kaydou
 
 « El bon moment, noi. »
 
-Il ouvre le pied et frappe sans élan, comme on pose une assiette sur une table.
+Il ouvre le pied et frappe sans élan, comme Mireille sur la terre rouge : comme on pose une assiette sur une table.
 
 Le ballon passe sous le bras du gardien. Chhh.
 
 2-1.
 
-« ¡Gol del Costa Daurada! crie le haut-parleur. ¡Kaydoudou Ngassa! »
+« ¡Gol del Costa Daurada ! crie le haut-parleur. ¡Kaydoudou Ngassa ! »
 
 « J'ai marqué ? » murmure Kaydoudou.
 

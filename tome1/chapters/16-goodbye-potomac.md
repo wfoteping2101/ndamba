@@ -44,7 +44,7 @@ Leur numéro 4 saute pour s'échauffer. Il monte si haut que Tyler siffle entre 
 
 *On ne part pas comme ça*, pense Kaydoudou. *On part avec la coupe.*
 
-Dix jongles avec le ballon de Mami, comme toujours. Puis le ballon retourne au fond du sac.
+Dix passes avec le ballon de Mami, sans toucher l'herbe, comme toujours. Puis le ballon retourne au fond du sac.
 
 « Work hard ! crie Coach Whitfield. Be brave ! Have fun ! »
 
@@ -78,7 +78,7 @@ Kaydoudou lève deux doigts. BriBri part.
 
 Bam ! La passe file au ras du sol et traverse deux lignes d'un coup.
 
-BriBri pose la semelle sur le ballon, et il attend. Deux Stallions se jettent sur lui, comme des moustiques sur un bras nu.
+BriBri pose la semelle sur le ballon, et il attend. Deux Stallions se jettent sur lui, comme des mouches sur un beignet.
 
 « MAGNET ! » crie Marcus sur le banc, sa tablette levée au-dessus de la tête.
 
