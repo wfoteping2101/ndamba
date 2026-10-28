@@ -24,7 +24,7 @@ const PEOPLE = {
   KAY: (p) => `Kaydoudou (age ${AGES[p][1]}), the younger brother: a head shorter than BriBri (the top of his head reaches his brother's chin), compact and springy, dark brown skin with a warm undertone, a round face with full round cheeks and a small nose, a small soft round black afro, big round sparkling mischievous dark brown eyes, a wide grin with a visible GAP BETWEEN HIS TWO FRONT TEETH; always up on his toes. He always wears ONE RED SOCK ON HIS RIGHT FOOT AND ONE YELLOW SOCK ON HIS LEFT FOOT (when he faces us, the red sock is on the LEFT side of the picture; when we see his back, the red sock is on the RIGHT side of the picture).${p >= 4 ? ' He is growing too, but stays shorter and rounder-faced than his brother.' : ''}`,
   MAMI: (p) => `Mami Nyanga (${p >= 5 ? 71 : p >= 4 ? 70 : p >= 2 ? 69 : 68}), their grandmother: small and very upright, a huge laugh, a red-and-yellow wax-print headscarf and dress.${p >= 5 ? ' In London she walks with a cane.' : ''}`,
   FOKOU: () => 'Tonton Fokou (62), their first coach: lean and wiry, a worn faded cap, a wooden whistle on a cord, a slight limp.',
-  PAPA: () => 'Papa Armand (42): tall, a short neatly trimmed beard, warm eyes.',
+  PAPA: () => 'Papa Armand (42): a young-looking father, tall and slim, short black hair with no grey at all, a short neatly trimmed black beard with no grey, warm eyes, no cap; never drawn as an old man or a grandfather.',
   MAMAN: () => 'Maman Estelle (39): energetic, braids gathered in a bun, large gold hoop earrings.',
 }
 

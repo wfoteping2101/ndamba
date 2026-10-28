@@ -1706,6 +1706,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch06.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1732,6 +1733,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch06.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1757,6 +1759,7 @@
   "shot": "wide",
   "refs": [
    "sheet-brothers.png",
+   "ch06.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1936,6 +1939,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch09.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1961,6 +1965,7 @@
   "shot": "quiet",
   "refs": [
    "sheet-brothers.png",
+   "ch09.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -1986,6 +1991,7 @@
   "shot": "dynamic",
   "refs": [
    "sheet-brothers.png",
+   "ch09.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2011,6 +2017,7 @@
   "shot": "wide",
   "refs": [
    "sheet-brothers.png",
+   "ch10.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2036,6 +2043,7 @@
   "shot": "close",
   "refs": [
    "sheet-brothers.png",
+   "ch10.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2061,6 +2069,7 @@
   "shot": "dynamic",
   "refs": [
    "sheet-brothers.png",
+   "ch10.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2086,6 +2095,7 @@
   "shot": "dynamic",
   "refs": [
    "sheet-brothers.png",
+   "ch11.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2112,6 +2122,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch11.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2137,6 +2148,7 @@
   "shot": "quiet",
   "refs": [
    "sheet-brothers.png",
+   "ch11.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2162,6 +2174,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch12.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2187,6 +2200,7 @@
   "shot": "close",
   "refs": [
    "sheet-brothers.png",
+   "ch12.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2212,6 +2226,7 @@
   "shot": "quiet",
   "refs": [
    "sheet-brothers.png",
+   "ch12.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2391,6 +2406,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch15.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2416,6 +2432,7 @@
   "shot": "medium",
   "refs": [
    "sheet-brothers.png",
+   "ch15.png",
    "ch07.png"
   ],
   "aspect": "3:2",
@@ -2441,6 +2458,7 @@
   "shot": "dynamic",
   "refs": [
    "sheet-brothers.png",
+   "ch15.png",
    "ch07.png"
   ],
   "aspect": "3:2",
