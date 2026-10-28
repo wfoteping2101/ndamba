@@ -10,121 +10,291 @@ illustration: Plan large sur la pelouse de Kingsbridge, un samedi après-midi gr
 
 « Lions don't chase everything that moves. »
 
-Coach Okafor avait dit ça en anglais, bien sûr, mais Kaydoudou l'entendit en français, avec la voix de Papa devant les vieilles vidéos de 1990 : les lions ne courent pas après tout ce qui bouge. Dehors, la pluie fine collait aux fenêtres de la salle vidéo. Dedans, vingt garçons en survêtement vert sombre fixaient le tableau blanc, où Okafor venait de dessiner un lion. Un très mauvais lion. Il ressemblait à un mouton qui sortait de chez le coiffeur.
+Coach Okafor l'a dit en anglais, bien sûr. Mais Kaydoudou l'entend en français, avec la voix de Papa devant les vieilles vidéos de 1990.
 
-« Is that a sheep ? » chuchota Freddie.
+*Les lions ne courent pas après tout ce qui bouge.*
 
-« It's a lion, Shaw. Respect the lion. »
+Dehors, la pluie fine colle aux fenêtres de la salle vidéo. Dedans, vingt garçons en survêtement vert sombre fixent le tableau blanc. Okafor vient d'y dessiner un lion.
 
-Okafor expliqua. Un lion qui chasse ne court pas derrière chaque antilope. Il regarde. Il attend. Il attend qu'une antilope trébuche, qu'elle s'éloigne du troupeau ou qu'elle se retrouve coincée contre la rivière. Et à ce moment-là, tous les lions partent ensemble.
+Un très mauvais lion.
 
-« Pressing is the same. » Le pressing, c'est pareil. « You don't run alone. You wait for the trigger. Then everybody goes. »
+« Is that a sheep ? » chuchote Freddie.
 
-Le déclencheur. Il en écrivit trois sous son lion-mouton.
+« It's a lion, Shaw. Respect the lion. Sheep don't press. Lions do. »
 
-« One : a back pass. » Une passe en arrière : l'adversaire recule, il a peur, il faut en profiter. « Two : a bad touch. » Un mauvais contrôle : le ballon s'échappe d'un mètre, et ce mètre est à nous. « Three : the ball near the touchline. » Le ballon près de la ligne de touche. Il tapa sur le tableau. « The touchline is our twelfth player. It never misses a tackle. » La ligne de touche est notre douzième joueur. Elle ne rate jamais un tacle.
+« On dirait un mouton qui sort de chez le coiffeur », souffle BriBri.
 
-Il se tourna vers les frères. « You're from Cameroon. You know about lions. »
+Kaydoudou se mord la joue pour ne pas rire.
 
-« Indomitable », dit BriBri, très sérieux. Indomptables.
+« A lion watches, explique Okafor. He waits. He waits for an antelope to trip. Or to leave the group. Or to get stuck against the river. » Il claque des doigts. « And then ? All the lions go. Together. »
+
+« Il attend qu'une antilope trébuche, traduit Kaydoudou tout bas. Et là, tous les lions partent ensemble. »
+
+« Pressing is the same. You don't run alone. You wait for the trigger. Then everybody goes. »
+
+« And me, coach ? » demande Freddie.
+
+« You, Shaw, you're the zoo keeper. »
+
+« Le trigger ? » demande BriBri.
+
+« Le déclencheur. Comme sur un pistolet à eau. »
+
+Sous son lion-mouton, Okafor écrit trois mots.
+
+« One : a back pass. The opponent goes backwards. He's scared. Two : a bad touch. The ball runs one metre away, and that metre is ours. Three : the ball near the touchline. » Il tape sur le tableau. « The touchline is our twelfth player. It never misses a tackle. »
+
+« La ligne de touche est notre douzième joueur, répète BriBri, ravi. Elle ne rate jamais un tacle. »
+
+Okafor se tourne vers les frères.
+
+« You're from Cameroon. You know about lions. »
+
+« Indomitable », dit BriBri, très sérieux.
 
 Okafor sourit de toutes ses dents. « Exactly. And what does an indomitable lion do when the antelope is too far ? »
 
-BriBri réfléchit. « Il fait une sieste ? »
+BriBri réfléchit.
 
-Toute la salle éclata de rire. Okafor aussi, puis il leva un doigt. « He rests. He watches. He saves his legs for the right moment. » Il se repose, il observe, il garde ses jambes pour le bon moment. « Running for nothing is not intensity, gentlemen. It's just being tired. » Courir pour rien, ce n'est pas de l'intensité. C'est juste être fatigué.
+« Il fait une sieste ? »
 
-Kaydoudou nota la phrase en français dans la marge de son carnet, sous la table.
+Toute la salle éclate de rire. Okafor aussi. Puis il lève un doigt.
 
-* * *
+« He rests. He watches. He saves his legs for the right moment. » Il regarde chaque garçon, un par un. « Running for nothing is not intensity, gentlemen. It's just being tired. »
 
-Sur le terrain, c'était plus difficile que sur le tableau. Okafor organisa un huit contre huit avec une seule règle : au signal, toute l'équipe devait presser en même temps, chacun sur un adversaire ou sur une ligne de passe. Il appelait ça « l'ombre ». Quand tu cours vers le porteur, tu te places de façon à cacher derrière ton dos le partenaire à qui il voudrait passer. Ton corps devient un mur, et la passe disparaît.
+« Courir pour rien, ce n'est pas de l'intensité, traduit BriBri. C'est juste être fatigué. Je le savais ! »
 
-Mais il y avait une deuxième règle, qu'Okafor répétait autant que la première : jamais tout le monde. Deux ou trois joueurs restaient toujours derrière, même quand les autres partaient à la chasse.
-
-« Rest defence », disait-il. La défense de repos. « If they escape, you're ready. Never surprised. Never. »
-
-Kaydoudou s'arrêta au milieu du terrain, les mains sur les hanches. Il venait de penser à Mami.
-
-Un dimanche, à Bafoussam, il avait remarqué que Mami ne mettait pas toutes les pièces dans la grande caisse du njangi. À chaque réunion, elle en glissait quelques-unes dans une petite boîte en fer, à part. « La caisse de secours, avait-elle expliqué. Pour le toit qui s'envole, pour l'enfant qui tombe malade. On ne met jamais tout sur la table, mon fils. Le malheur, lui, ne prévient pas. »
-
-La défense de repos, c'était la petite boîte en fer de Mami.
-
-Et le pressing, c'était le njangi sans le ballon. Chacun versait sa course, au même moment, et à la fin l'équipe entière touchait la caisse : le ballon repris. Pendant des années, Kaydoudou avait cru que le Njangi commençait quand on avait le ballon. Il se trompait. Le Njangi ne s'arrêtait jamais.
+Sous la table, Kaydoudou note la phrase dans la marge de son carnet.
 
 * * *
 
-Jaden, lui, ne pensait pas à Mami. Jaden courait.
+Sur le terrain, c'est plus dur que sur le tableau.
 
-Dès que le jeu reprit, il fonça sur chaque ballon, chaque défenseur, chaque passe, tout seul, sans attendre personne. Il était si rapide qu'il en récupérait parfois, et alors il lançait un regard à Kaydoudou, resté derrière, un regard qui disait : tu vois, toi, tu ne cours pas.
+« Eight against eight ! crie Okafor. On my signal, everybody presses ! And use your shadow ! »
 
-À la troisième fois, Jaden s'arrêta net devant lui.
+« C'est quoi, l'ombre ? » demande BriBri.
+
+« Quand tu cours vers le porteur, explique Kaydoudou, tu caches derrière ton dos le partenaire à qui il veut passer. Ton corps devient un mur. Et la passe disparaît. »
+
+« Comme un fantôme ! »
+
+« And never everybody ! Two or three stay back. Always. Rest defence ! If they escape, you're ready. Never surprised. Never ! »
+
+« Jamais tout le monde, souffle Kaydoudou. Deux ou trois restent derrière. La défense de repos. »
+
+Il s'arrête au milieu du terrain, les mains sur les hanches. Il vient de penser à Mami.
+
+Un dimanche, à Bafoussam, il l'avait vue glisser quelques pièces dans une petite boîte en fer, à part de la grande caisse du njangi.
+
+« C'est pour quoi, Mami ? »
+
+« La caisse de secours. Pour le toit qui s'envole. Pour l'enfant qui tombe malade. » Elle avait refermé la boîte. « On ne met jamais tout sur la table, mon fils. Le malheur, lui, ne prévient pas. »
+
+« Qu'est-ce que tu as ? » demande BriBri.
+
+« La défense de repos, c'est la boîte en fer de Mami. » Kaydoudou parle lentement, comme s'il découvrait un trésor. « Et le pressing, c'est le njangi sans le ballon. Chacun verse sa course en même temps, et toute l'équipe touche la caisse : le ballon repris. »
+
+« Donc le Njangi continue, même quand on n'a pas le ballon ? »
+
+« Il ne s'arrête jamais. »
+
+* * *
+
+Jaden, lui, ne pense pas à Mami. Jaden court.
+
+Il fonce sur chaque ballon, chaque passe, tout seul. Il est si rapide qu'il en récupère parfois. Alors il lance un regard à Kaydoudou, resté derrière : *tu vois ? Toi, tu ne cours pas.*
+
+À la troisième fois, Jaden s'arrête net devant lui.
 
 « You never run, Ngassa ! You just stand there like a lamppost ! »
 
-Kaydoudou sentit le sang lui monter aux joues. Il répondit en anglais, lentement, pour ne pas se tromper.
+Kaydoudou sent le sang lui monter aux joues. Il répond en anglais, lentement.
 
 « You run everywhere. Running is not pressing. »
 
-Jaden fit un pas. Kaydoudou ne recula pas. Ils étaient nez à nez, et Kaydoudou dut lever un peu le menton, parce que Jaden était plus grand. Un coup de sifflet strident les sépara.
+Courir, ce n'est pas presser.
 
-Okafor ne cria pas. C'était pire. Il posa quatre plots pour faire un carré de quinze mètres, y envoya quatre joueurs avec un ballon et désigna les deux garçons.
+Jaden fait un pas. Kaydoudou ne recule pas. Nez à nez. Il doit lever un peu le menton, parce que Jaden est plus grand.
 
-« You two. Together. Two against four. You have eight seconds to win the ball. » Vous deux, ensemble. Huit secondes pour reprendre le ballon. « Together or never. »
+« Ooooh », fait tout le terrain.
 
-Les trois premières fois, ce fut un désastre. Ils partaient tous les deux sur le porteur, se cognaient l'épaule, et le ballon filait entre eux. Les quatre autres riaient. Kaydoudou, essoufflé, eut une idée. Une idée de France. Monsieur Lacombe disait : parler, c'est passer.
+FUIIIT ! Le sifflet les sépare.
 
-« Jaden. » Il montra le porteur. « You go. You hit him. I'm your shadow. I close the pass. »
+Okafor ne crie pas. C'est pire.
 
-Jaden le regarda une seconde, méfiant. Puis il partit.
+« Lions don't fight each other, dit-il doucement. They hunt together. »
 
-Il fondit sur le porteur à toute vitesse, et Kaydoudou, deux mètres derrière et un mètre sur le côté, coupa avec son corps la seule passe possible. Le porteur leva la tête, ne vit personne, paniqua. Jaden lui prit le ballon. Quatre secondes.
+Il pose quatre plots, un carré de quinze mètres, y envoie quatre joueurs avec un ballon, puis pointe le doigt vers les deux garçons.
 
-La fois suivante, trois secondes. Puis deux et demie. Kaydoudou voyait tout : la passe que le porteur allait tenter, le pied sur lequel il allait recevoir, le moment exact où il allait douter. Il le disait en un mot, et Jaden y était déjà. Les jambes de l'un, les yeux de l'autre.
+« You two. Together. Two against four. Eight seconds to win the ball. » Il croise les bras. « Together or never. »
 
-« That's not fair ! » protesta Arjun, le meneur de jeu, qui venait de perdre le ballon pour la cinquième fois. « They're like a monster with two heads ! »
+« Ensemble ou jamais », souffle BriBri depuis la touche.
 
-Jaden ne dit rien. Mais en ramassant les plots à la fin, il passa près de Kaydoudou et murmura, sans le regarder : « You see things. »
+Premier essai : ils partent tous les deux sur le porteur. Leurs épaules se cognent. Bong ! Le ballon file entre eux.
 
-« You get there », répondit Kaydoudou.
+Deuxième essai : pareil.
 
-Ce n'était pas une amitié. Pas encore. C'était un début de contrat.
+Troisième essai : pire. Les quatre autres rient.
 
-Jaden quitta le vestiaire le premier, comme toujours. Il ne prenait jamais de douche au club. Il enfilait son manteau par-dessus son survêtement trempé, attrapait son sac et partait en courant, le téléphone collé à l'oreille. Ce soir-là, en sortant à son tour, Kaydoudou le vit à l'arrêt de bus, sous l'abri en verre. Jaden ne courait plus. Il parlait doucement, très doucement, avec une voix que Kaydoudou ne lui connaissait pas.
+« Bumper cars ! » se moque Arjun.
+
+Kaydoudou, essoufflé, a une idée. Une idée de France. *Parler, c'est passer.*
+
+« Jaden. » Il montre le porteur. « You go. You hit him. I'm your shadow. I close the pass. »
+
+Toi, tu y vas. Moi, je suis ton ombre. Je ferme la passe.
+
+« Why should I listen to a lamppost ? »
+
+« Because the lamppost sees everything. »
+
+Jaden le regarde une seconde, méfiant.
+
+Puis il part.
+
+Il fond sur le porteur. Kaydoudou suit, deux mètres derrière, un mètre sur le côté, et coupe avec son corps la seule passe possible. Le porteur lève la tête. Il ne voit personne. Il panique. Jaden lui prend le ballon.
+
+« Four seconds ! » crie Okafor.
+
+« Again », grogne Jaden.
+
+« Three seconds ! Two and a half ! »
+
+Kaydoudou voit tout : la passe que le porteur va tenter, le pied sur lequel il va recevoir, le moment exact où il va douter.
+
+« Left ! »
+
+Et Jaden y est déjà.
+
+Les jambes de l'un. Les yeux de l'autre.
+
+« That's not fair ! » proteste Arjun, le meneur de jeu, qui vient de perdre le ballon pour la cinquième fois. « They're like a monster with two heads ! »
+
+« Le monstre à deux têtes ! traduit BriBri depuis la touche, ravi. J'adore ! »
+
+Jaden ne dit rien. Mais en ramassant les plots, il passe près de Kaydoudou et murmure, sans le regarder :
+
+« You see things. »
+
+« You get there », répond Kaydoudou.
+
+Tu vois des choses. Toi, tu y arrives.
+
+Ce n'est pas une amitié. Pas encore. C'est un début de contrat.
+
+Comme toujours, Jaden quitte le vestiaire le premier, sans douche, le téléphone collé à l'oreille. Ce soir-là, Kaydoudou le voit à l'arrêt de bus, sous l'abri en verre. Jaden ne court plus. Il parle tout doucement, avec une voix que Kaydoudou ne lui connaît pas.
 
 « Yes, I know... I'm coming... Tell her I'm coming. Did she eat ? »
 
-Le bus arriva. Jaden monta sans voir personne. Kaydoudou resta un moment sous la pluie, son sac sur l'épaule, et se demanda à qui l'on pouvait bien parler avec cette voix-là, à quinze ans, un mardi soir.
+Dis-lui que j'arrive. Elle a mangé ?
+
+Le bus arrive. Jaden monte sans voir personne. Kaydoudou reste sous la pluie, son sac sur l'épaule.
+
+*À qui on parle avec cette voix-là, à quinze ans, un mardi soir ?*
 
 * * *
 
-À la maison, pendant le dîner, Kaydoudou essaya d'expliquer le pressing à Papa avec ce qu'il avait sous la main. La salière devint le défenseur adverse. Le pot de piment, son milieu. Les petits pois, Kingsbridge.
+Au dîner, Kaydoudou explique le pressing à Papa avec ce qu'il a sous la main.
 
-« Il fait une passe en arrière, comme ça. » Il poussa la salière de trois centimètres vers l'assiette de Maman. « C'est le signal. Et là, tout le monde y va. » Il fit rouler quatre petits pois en même temps. « Mais deux restent derrière. Toujours. »
+« La salière, c'est leur défenseur. Le pot de piment, leur milieu. Les petits pois, c'est nous. » Il pousse la salière de trois centimètres vers l'assiette de Maman. « Il fait une passe en arrière. C'est le signal. Et là, tout le monde y va. » Il fait rouler quatre petits pois en même temps. « Mais deux restent derrière. Toujours. »
 
-Papa hocha la tête, très intéressé. « Dans un réseau, on fait pareil. On garde toujours un câble de secours. Si la ligne principale tombe, personne ne s'en aperçoit. »
+Papa hoche la tête, très intéressé. « Dans un réseau, on fait pareil. On garde toujours un câble de secours. Si la ligne principale tombe, personne ne s'en aperçoit. »
 
-« Si vos petits pois tombent par terre, dit Maman en buvant son thé, c'est vous qui les ramassez. »
+« Comme la boîte en fer de Mami ! » dit BriBri.
 
-BriBri, lui, mangea le défenseur de repos. Il prétendit que c'était une erreur tactique. Il en mangea encore trois.
+« Exactement », dit Kaydoudou.
+
+« Et si vos petits pois tombent par terre, dit Maman en buvant son thé, c'est vous qui les ramassez. »
+
+BriBri, lui, mange le défenseur de repos.
+
+« Erreur tactique », dit-il, la bouche pleine.
+
+Puis il en mange encore trois.
+
+« Et moi, je suis quoi, dans ton équipe ? »
+
+« Le piment », dit Kaydoudou.
+
+« Sans piment, le plat n'a pas de goût », approuve Papa.
 
 * * *
 
-Le samedi suivant, Kingsbridge affrontait Hampton Forest Academy, la plus grosse académie du sud de Londres. Ils arrivèrent dans un car aux vitres teintées, avec des sacs tous pareils et des survêtements blancs qui brillaient. Leurs défenseurs étaient grands, techniques, très sûrs d'eux. Ils relançaient de derrière en faisant des passes courtes, comme des Catalans.
+Le samedi, Kingsbridge affronte Hampton Forest Academy, la plus grosse académie du sud de Londres.
 
-« Comme nous en Espagne », souffla BriBri.
+« Remember, dit Okafor. Wait for the trigger. »
 
-« Justement, répondit Kaydoudou. On sait où ça fait mal. »
+« Le pistolet à eau », chuchote BriBri.
 
-À la 12e minute, le milieu de Hampton Forest, serré de près, fit une passe en arrière vers son défenseur central. Le déclencheur. Kaydoudou cria « Now ! » et cinq maillots verts partirent au même instant. Theo coupa la passe vers l'autre central. BriBri ferma le côté. Jaden fonça sur le porteur. Le défenseur, pressé de partout, voulut jouer vers son milieu, mais Kaydoudou était déjà là, dans la ligne. Ballon repris à vingt-cinq mètres du but. Une passe pour Theo. 1-0.
+« Look at them, souffle Freddie. Tinted windows. Same bags. Shiny white tracksuits. »
 
-À la 31e, un mauvais contrôle du latéral gauche, près de la ligne de touche. Le douzième joueur. Callum, l'ailier droit, attaqua le ballon, Ollie, le latéral qui ne parlait jamais, coupa la passe en retrait, et Arjun récupéra pour aller marquer tout seul. 2-0.
+« Ils ont même les chaussettes pareilles », dit BriBri, scandalisé.
 
-Hampton Forest réagit. À la 50e minute, leur avant-centre s'échappa enfin, lancé en profondeur. Mais derrière, il y avait la petite boîte en fer de Mami : Tom Whitaker, le grand défenseur central, Samir Haddad, son voisin, et Kaydoudou, qui n'avait pas suivi le pressing cette fois-là. Tom ferma l'espace, Samir prit le ballon sans paniquer. Personne ne fut surpris. Hampton Forest marqua un peu plus tard, sur un coup franc magnifique, mais jamais sur une course.
+Leurs défenseurs relancent de derrière, en passes courtes.
 
-Et à la 78e minute, il y eut une dernière passe en arrière. Jaden et Kaydoudou se regardèrent. Ils n'eurent même pas besoin de parler. Jaden partit de face, Kaydoudou devint son ombre, deux mètres derrière, un bras tendu vers la seule passe possible. Le ballon, coincé entre eux deux, rebondit vers l'avant, et BriBri, qui avait vu le piège se refermer avant tout le monde, surgissait déjà. Il marqua le troisième en faisant semblant d'être étonné. 3-1.
+« Comme nous en Espagne », souffle BriBri.
 
-Au coup de sifflet final, Jaden traversa le terrain jusqu'à Kaydoudou. Ils se tapèrent dans la main, fort, une seule fois. Aucun des deux ne dit un mot. Il n'y en avait pas besoin.
+« Justement, répond Kaydoudou. On sait où ça fait mal. »
+
+« On va les manger comme les petits pois ! »
+
+12e minute. Le milieu de Hampton Forest, serré de près, fait une passe en arrière vers son défenseur central.
+
+Le déclencheur.
+
+« NOW ! crie Kaydoudou. Theo, coupe ! BriBri, le côté ! Jaden, vas-y ! »
+
+Cinq maillots verts partent au même instant. Le porteur veut jouer vers son milieu. Mais Kaydoudou est déjà dans la ligne. Ballon repris à vingt-cinq mètres du but. Une passe pour Theo. 1-0 !
+
+« Lions ! » hurle Theo.
+
+31e minute. Le latéral gauche de Hampton Forest rate son contrôle, près de la ligne de touche.
+
+« Twelfth player ! » hurle Okafor.
+
+Callum, l'ailier droit, attaque le ballon. Ollie, le latéral qui ne parle jamais, coupe la passe en retrait. Arjun récupère et file marquer tout seul. 2-0 !
+
+« Twelfth player, coach ! » crie Arjun en courant vers le banc.
+
+50e minute. Leur avant-centre s'échappe enfin, lancé en profondeur.
+
+« Rest defence ! » crie Kaydoudou.
+
+Derrière, il y a la boîte en fer de Mami : Tom Whitaker, le grand défenseur central, Samir Haddad et Kaydoudou, qui n'a pas suivi le pressing cette fois-là. Tom ferme l'espace. Samir prend le ballon sans paniquer. « Got it ! » Personne n'est surpris.
+
+Un peu plus tard, Hampton Forest marque sur un coup franc magnifique. 2-1. Mais jamais sur une course.
+
+78e minute. Une dernière passe en arrière.
+
+Kaydoudou lève les yeux. Jaden le regarde déjà. Ils n'ont même pas besoin de parler.
+
+Le monstre à deux têtes se réveille.
+
+Jaden part de face. Kaydoudou devient son ombre, deux mètres derrière, un peu sur le côté, un bras tendu vers la seule passe possible. Le défenseur en blanc lève la tête. Devant lui, Jaden. Derrière, rien. Plus de solution.
+
+Le ballon se coince entre eux deux. Bonk ! Il rebondit vers l'avant.
+
+Et BriBri surgit déjà. Il a vu le piège se refermer avant tout le monde. Une touche. Le filet.
+
+3-1.
+
+BriBri se retourne, la bouche en O, comme s'il était très étonné.
+
+« Oh ! Un ballon ! Quelqu'un l'a perdu ? »
+
+« THE MONSTER ! hurle Freddie depuis son but. THE TWO-HEADED MONSTER ! »
+
+Au coup de sifflet final, Jaden traverse le terrain jusqu'à Kaydoudou. Ils se tapent dans la main. Fort. Une seule fois.
+
+Aucun des deux ne dit un mot. Il n'y en a pas besoin.
+
+« That's a pack of lions ! » rugit Okafor sur la touche.
+
+Puis Jaden attrape son sac et part en courant, le téléphone déjà collé à l'oreille.
+
+« Il court toujours, celui-là », soupire BriBri.
+
+*Dis-lui que j'arrive*, se souvient Kaydoudou. *Mais qui, « elle » ?*
 
 > [!CARNET] Leçon du Ballon n°35 : Les déclencheurs
 > On ne court pas après tout ce qui bouge. On attend le signal, et on y va tous ensemble.

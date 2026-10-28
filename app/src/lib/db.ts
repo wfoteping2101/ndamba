@@ -2,7 +2,7 @@ import Dexie, { type Table } from 'dexie'
 import type {
   Profile, Team, Player, Session, Match, MatchEvent, VideoProject,
   AgentTask, ChatMessage, NotebookEntry, ChallengeLog,
-  Evaluation, Observation, Attendance, Objective, Milestone,
+  Evaluation, Observation, Attendance, Objective, Milestone, Wellness,
 } from './types'
 
 export class NjangiDB extends Dexie {
@@ -23,6 +23,8 @@ export class NjangiDB extends Dexie {
   attendance!: Table<Attendance, string>
   objectives!: Table<Objective, string>
   milestones!: Table<Milestone, string>
+  // Player space (version 3): daily form and session load
+  wellness!: Table<Wellness, string>
 
   constructor() {
     super('njangi')
@@ -55,6 +57,10 @@ export class NjangiDB extends Dexie {
         .filter((p) => p.skills && Object.values(p.skills).some(Boolean))
         .map((p) => ({ id: `eva_v2_${p.id}`, playerId: p.id, teamId: p.teamId, date: (p.createdAt || now).slice(0, 10), skills: { ...p.skills }, by: 'coach', createdAt: now }))
       if (first.length) await tx.table('evaluations').bulkPut(first)
+    })
+    // Version 3: the player's daily form and session load (Le Code Njangi, chapter 29). Additive only: one new table.
+    this.version(3).stores({
+      wellness: 'id, date, playerId',
     })
   }
 }

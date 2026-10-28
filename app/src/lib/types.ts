@@ -339,6 +339,32 @@ export interface Objective {
   createdAt: string
 }
 
+/* ---------------- Player space: form and load (Le Code Njangi, chapter 29) ---------------- */
+
+export type Score5 = 1 | 2 | 3 | 4 | 5
+
+/**
+ * The player's own daily report, one record per day (id `wl_${date}`): the morning form questionnaire
+ * (five items from 1 to 5, here 5 is always the best answer) and, about thirty minutes after the session
+ * or the match, the perceived exertion (0 to 10) and the minutes. Load = rpe x minutes, in arbitrary units.
+ */
+export interface Wellness {
+  id: string
+  date: string // YYYY-MM-DD
+  playerId?: string
+  sleep?: Score5
+  fatigue?: Score5 // 5 = very fresh
+  soreness?: Score5 // 5 = no soreness
+  mood?: Score5
+  stress?: Score5 // 5 = very relaxed
+  rpe?: number // 0 to 10
+  minutes?: number
+  sessionId?: string
+  matchId?: string
+  createdAt: string
+  updatedAt?: string
+}
+
 export type MilestoneKind = 'callup' | 'promotion' | 'captain' | 'injury' | 'return' | 'award' | 'other'
 
 /** A moment the coach records by hand (call-up, move up a category, injury...). First match, first goal and level changes are derived. */

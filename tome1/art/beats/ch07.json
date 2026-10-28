@@ -1,0 +1,52 @@
+{
+  "chapter": 7,
+  "beats": [
+    {
+      "id": "ch07b",
+      "anchor": "Bam ! De la tête. Le ballon glisse entre les mains d'Ousmane comme une pierre dans l'eau.",
+      "shot": "dynamic",
+      "cast": [
+        "KAY"
+      ],
+      "extras": "Junior Mvondo, called Bulldozer (12, looks 15): a huge, broad-shouldered boy with dark brown skin, a shaved head, thick neck, in a royal blue football shirt with a shark fin drawn in black marker on the chest, blue shorts, white socks, rising above everyone to head the ball. Ousmane, called Petit Pied (10), the goalkeeper: a calm, slim boy from the north of Cameroon with medium dark brown skin, close-cropped hair and a serious face, small feet but enormous long flat hands, in a faded grey T-shirt and dark shorts, diving with the ball slipping between his fingers. Around them, two or three other Requins in the same blue shirts with marker fins, and Lionceaux in faded T-shirts. On the low wall behind the goal, a crowd of neighbourhood children and adults, some kids holding cooking pots and buckets like drums.",
+      "outfit": "Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots, red dust on his legs. A plain worn leather match ball.",
+      "action": "The corner kick: Bulldozer hangs in the air, a head above everyone, his forehead just striking the ball. The ball shoots down past Ousmane, who has jumped too, his long hands open as the ball slips between them. In the middle of the crowded box, Kaydoudou stands still and watches, mouth slightly open.",
+      "location": "The goalmouth of the red-earth pitch of Bonamoussadi on semi-final day: a bamboo goal tied with wire and a makeshift net, the mango tree in a corner, people crowded on the wall of a neighbouring plot and on the tin roofs.",
+      "light": "Bright afternoon sun, red dust kicked up and glowing, strong contrast between the blue shirts and the red ground.",
+      "camera": "Dynamic low angle from just behind the goal line, Bulldozer high in the frame against the sky, Ousmane's hands in the foreground, Kaydoudou small in the middle distance.",
+      "alt": "Sur un corner, Bulldozer saute plus haut que tout le monde et marque de la tête ; le ballon glisse entre les grandes mains d'Ousmane."
+    },
+    {
+      "id": "ch07c",
+      "anchor": "Il traverse la ligne comme une aiguille traverse un tissu.",
+      "shot": "dynamic",
+      "cast": [
+        "KAY",
+        "BRI"
+      ],
+      "extras": "Three Requins de Bépanda players (12): sturdy boys with dark brown skin and short hair in royal blue shirts with a shark fin drawn in black marker, all pulled over to the left side. Bulldozer (12, looks 15): huge, broad-shouldered, shaved head, same blue shirt, running toward BriBri with his back to the play. A wide empty gap in the middle of their line. Far on the right, Mireille (11), a tall slim girl with short braids in a faded oversized orange sleeveless basketball jersey, alone and forgotten.",
+      "outfit": "Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots. BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, small soft round afro. A plain worn leather match ball.",
+      "action": "Slow motion at the moment of the pass that crosses the line. Kaydoudou's right leg has just swung through, his body leaning over the ball, eyes fixed forward, calm and brave. The ball skims low over the red earth, straight between two blue shirts, through the gap. Two steps inside, behind the Requins, BriBri has already opened his body to receive it, on his tiptoes, eyes shining. Red dust floats in the air like smoke.",
+      "location": "The red-earth pitch of Bonamoussadi, second half of the semi-final, crowd on the walls and roofs in the background.",
+      "light": "Golden mid-afternoon sun, suspended red dust catching the light, a sense of time stopped.",
+      "camera": "Low dynamic angle just behind Kaydoudou's right shoulder, following the line of the ball through the gap toward BriBri in the distance.",
+      "alt": "Au ralenti, Kaydoudou frappe enfin la passe qui traverse : le ballon file au ras de la terre rouge entre deux Requins, droit vers BriBri."
+    },
+    {
+      "id": "ch07d",
+      "anchor": "La danse de Roger Milla ! Et tout Bonamoussadi danse avec lui.",
+      "shot": "wide",
+      "cast": [
+        "BRI",
+        "KAY"
+      ],
+      "extras": "The whole neighbourhood dancing: children standing on the low wall, motorbike taxi drivers dancing on their bikes, mothers in bright wax-print dresses with hands on their bellies, copying the dance. Madame Ekotto: a plump, cheerful woman in her fifties in a bright wax-print dress and headwrap, dancing under her red parasol beside her table of bean fritters. Prosper, called Radio (11): a slim boy with dark brown skin and close-cropped hair, in a faded oversized white T-shirt with a blurred, unreadable print, one hand cupped in front of his mouth like a microphone.",
+      "outfit": "BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, red dust everywhere. Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots.",
+      "action": "At the corner of the pitch, beside a bamboo stick used as a corner flag, BriBri does the famous corner flag dance: one hand on his belly, the other raised to the sky, hips rolling, a huge smile showing the gap between his front teeth. Kaydoudou runs toward him laughing, arms open. All around, the crowd does the same dance at the same time.",
+      "location": "The corner of the red-earth pitch of Bonamoussadi after the winning goal: the bamboo corner stick, the mango tree, the low walls, the tin roofs and the road with parked motorbike taxis.",
+      "light": "Late afternoon, warm golden light, long shadows, red dust shining.",
+      "camera": "Wide shot from slightly above, BriBri dancing in the foreground corner, Kaydoudou running in from the left, the dancing crowd filling the background.",
+      "alt": "Au coin du terrain, BriBri fait la danse de Roger Milla près du drapeau en bambou, et tout Bonamoussadi danse avec lui."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "chapter": 6,
+  "beats": [
+    {
+      "id": "ch06b",
+      "anchor": "Sa chaise tombe en arrière. Bam !",
+      "shot": "dynamic",
+      "cast": [
+        "BRI",
+        "KAY",
+        "PAPA",
+        "MAMAN"
+      ],
+      "extras": "",
+      "outfit": "BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts with a thin white side stripe, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, small soft round afro. Kaydoudou in a plain forest-green T-shirt, thin shaved part on the left side of his head. Papa Armand (41), tall, short neat beard, warm eyes, light blue shirt. Maman Estelle (39), braids gathered in a bun, big golden earrings, teal and yellow wax-print dress.",
+      "action": "Family dinner frozen at the moment of the explosion. BriBri has leapt up from the table, mouth wide open on a shouted no, arms flung out, his wooden chair caught in mid-air as it tips over backwards. Papa half rises with one open hand stretched toward him, Maman has a hand over her mouth. Kaydoudou has not moved at all: he stares at the big pot of ndolé, his hands hidden under the table, jaw tight. On the table, the steaming pot of ndolé, a plate of golden fried plantains, cassava sticks in leaves and one folded sheet of white paper with no readable writing.",
+      "location": "The small dining room of the Ngassa house in Bonamoussadi, Douala: a simple wooden table with a wax-print tablecloth, plastic chairs, painted walls, a window open on the dark street.",
+      "light": "Evening, warm yellow light from a single ceiling bulb, deep blue night outside the window, steam rising from the pot.",
+      "camera": "Dynamic medium wide shot from table height, slightly tilted, the falling chair in the foreground left, BriBri in the centre, Kaydoudou still and quiet on the right.",
+      "alt": "Au dîner, BriBri bondit en criant non et sa chaise bascule en arrière, tandis que Kaydoudou fixe la marmite de ndolé sans bouger."
+    },
+    {
+      "id": "ch06c",
+      "anchor": "« On ne quitte pas sa maison, BriBri. On l'emporte. »",
+      "shot": "quiet",
+      "cast": [
+        "BRI",
+        "PAPA",
+        "MAMAN",
+        "KAY"
+      ],
+      "extras": "",
+      "outfit": "BriBri in his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and yellow sock on his LEFT foot, cheeks wet. Maman Estelle in her teal and yellow wax-print dress, braids in a bun, golden earrings, a switched-off flashlight in her hand. Papa Armand, tall, short neat beard, light blue shirt. Kaydoudou in a plain forest-green T-shirt, thin shaved part on the left side of his head, both hands deep in his pockets.",
+      "action": "BriBri sits curled up between the big roots of the mango tree, his back against the trunk, eyes shining with tears. Maman sits right beside him in the roots, careless of her pretty dress. Papa crouches in front of BriBri and rests his big hand gently on the middle of his afro, speaking softly. A step behind, Kaydoudou stands silent, fists closed inside his pockets, face shut.",
+      "location": "The empty red-earth pitch of Bonamoussadi at night: the huge mango tree with its twisted roots, the two bamboo goals in the background looking like thin skeletons, a dusty road beyond.",
+      "light": "Night, soft blue moonlight, a faint orange glow from a far street lamp on the road, the faces just readable.",
+      "camera": "Quiet medium shot at the height of a sitting child, the mango trunk framing the left side, the bamboo goals small and blurred in the dark background.",
+      "alt": "Sous le manguier, dans la nuit, Papa pose sa grande main sur l'afro de BriBri, entre Maman assise dans les racines et Kaydoudou, les poings dans les poches."
+    },
+    {
+      "id": "ch06d",
+      "anchor": "Et Mireille arrive, lancée comme une flèche.",
+      "shot": "wide",
+      "cast": [
+        "BRI",
+        "KAY"
+      ],
+      "extras": "Mireille Eyenga, called the Gazelle (11): a tall slim girl with dark brown skin and short braids, long runner's legs, in a faded oversized orange sleeveless basketball jersey with no number, black shorts, bare dusty shins, sprinting flat out. The tall defender from Makepe (12): a lanky boy with dark brown skin and a shaved head, in a washed-out grey T-shirt and black shorts, glued to BriBri's back and panting. Far away, two or three other neighbourhood kids in washed-out T-shirts, standing still.",
+      "outfit": "BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, small soft round afro. Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots. A plain worn leather training ball.",
+      "action": "A slow motion freeze. In the far corner of the pitch, BriBri has just turned round, surprised, the tall Makepe boy still stuck to him like a shadow. Behind them the middle of the pitch is completely empty. In midfield Kaydoudou's right foot is still raised after the pass, and the ball rolls fast along the dry red earth into the empty space, where Mireille arrives at full speed toward the bamboo goal. Red dust hangs in the air behind her.",
+      "location": "A dry corner of the red-earth pitch of Bonamoussadi on a Saturday morning: bamboo goals tied with wire, the big mango tree on one side, low walls and tin roofs behind.",
+      "light": "Hot late-morning sun, sharp short shadows, suspended red dust glowing.",
+      "camera": "Wide high angle, BriBri and his shadow defender small in the left corner, the empty middle in the centre, Mireille and the rolling ball sweeping toward the goal on the right.",
+      "alt": "Au ralenti, BriBri s'est sauvé dans le coin avec son défenseur collé à lui, et Mireille fonce dans le trou vers le but en bambou."
+    }
+  ]
+}
