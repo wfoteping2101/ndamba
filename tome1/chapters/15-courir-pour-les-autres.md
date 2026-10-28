@@ -48,7 +48,7 @@ Pour tout le tournoi, BriBri joue avec les U12. Il garde son numéro 33, le « s
 
 * * *
 
-Premiers matchs. Soleil blanc. À chaque mi-temps, les parents arrosent les joueurs avec des pulvérisateurs, comme des plantes. Pschhh ! Le maillot de BriBri pèse deux fois son poids.
+Premiers matchs. Soleil blanc. À chaque mi-temps, les parents arrosent les joueurs avec des pistolets à eau, comme des plantes. Pschhh ! Le maillot de BriBri pèse deux fois son poids.
 
 « J'ai l'impression de courir dans une soupe », gémit-il.
 
@@ -94,7 +94,9 @@ Cet été, les frères ont ajouté la raison : chacun son rôle. Avant chaque ma
 
 « I always run ! » dit Diego. Et c'est vrai. Il court en parlant, en riant, en chantant. Il s'arrête seulement pour boire.
 
-Huitième de finale : 3-1 contre Baltimore. Quart : 2-0 contre une équipe du Delaware. Le soir, à l'hôtel, BriBri s'endort tout habillé, une chaussette encore à la main. Kaydoudou la lui retire tout doucement.
+« 3-1 contre Baltimore en huitième ! crie Diego. 2-0 contre une équipe du Delaware en quart ! »
+
+Le soir, à l'hôtel, BriBri s'endort tout habillé, une chaussette encore à la main. Kaydoudou la lui retire tout doucement.
 
 « Bonne nuit, l'aimant. »
 
@@ -114,7 +116,7 @@ Un gardien grand comme un frigo.
 
 « The fridge, bro », traduit Diego.
 
-Mais le plus inquiétant, c'est leur numéro 5. Un défenseur central énorme, avec des bras de déménageur. Pendant l'échauffement, il ne regarde pas le ballon. Il regarde Tyler. Partout.
+Mais le pire, c'est leur numéro 5. Un défenseur central énorme, avec des bras de catcheur. Pendant l'échauffement, il ne regarde pas le ballon. Il regarde Tyler. Partout.
 
 « Et lui, c'est Monsieur Pot-de-Colle. »
 
@@ -146,7 +148,7 @@ Les Chesapeake United défendent à neuf, tous derrière le ballon, serrés comm
 
 « Ils sont combien ? crie BriBri. Vingt ? »
 
-« He's everywhere ! » rage Tyler, avec Pot-de-Colle dans le dos.
+« He's everywhere ! » grogne Tyler, avec Pot-de-Colle dans le dos.
 
 « Patience, guys ! crie Coach Whitfield. Patience ! »
 
@@ -180,7 +182,9 @@ BriBri comprend. Et il n'aime pas du tout ce qu'il comprend.
 
 « Non. Toi, tu ouvres la porte. »
 
-BriBri fait la moue. Courir pour rien, sous ce soleil, dans cette soupe. Pour que Tyler marque un but de plus.
+BriBri fait la moue.
+
+« Courir pour rien ? Sous ce soleil ? Dans cette soupe ? Pour que Tyler marque un but de plus ? »
 
 *C'est pas juste*, pense-t-il. *Moi aussi, je veux le ballon.*
 
@@ -221,6 +225,8 @@ Il court en diagonale, de l'aile droite vers le premier poteau. De toutes ses fo
 « Here ! HERE ! »
 
 Et Monsieur Pot-de-Colle y croit.
+
+*Viens, Pot-de-Colle*, pense BriBri. *Viens avec moi.*
 
 Il lâche Tyler. Il part avec BriBri, collé à lui, une main sur son épaule. Ils foncent ensemble vers le premier poteau, comme deux wagons du même train.
 
@@ -318,7 +324,7 @@ Une pause.
 
 Le silence tombe dans la voiture comme un rideau. Même les grillons ont l'air de se taire.
 
-Kaydoudou s'est raidi sur son siège. BriBri regarde la nuque de Papa. Il pense à Diego. À Tyler et à ses chaussettes à l'envers. À Marcus, à Coach Whitfield, à la guimauve. À Mrs. Patterson et à son flocon. À la finale qu'ils n'ont pas encore jouée.
+Kaydoudou ne bouge plus sur son siège. BriBri regarde la nuque de Papa. Il pense à Diego. À Tyler et à ses chaussettes à l'envers. À Marcus, à Coach Whitfield, à la guimauve. À Mrs. Patterson et à son flocon. À la finale qu'ils n'ont pas encore jouée.
 
 Il ouvre la bouche. Il la referme.
 

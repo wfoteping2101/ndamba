@@ -54,3 +54,11 @@ Détails inventés dans la partie II que les parties suivantes peuvent reprendre
 
 ## Départ
 - Vol de nuit Washington-Paris fin août. Kaydoudou n'a presque pas peur (il ne murmure même pas « deux cents tonnes ») ; BriBri lui tient la main quand même.
+
+## Réécriture d'octobre 2026 (chapitres 11 à 15) : nouveaux fils
+- Gestes nommés : « **l'aimant** » (BriBri attire deux défenseurs pour libérer un partenaire, ch. 12) et « **l'ouvre-porte** » (la course leurre, ch. 15).
+- Surnoms : « **le Frigo** », « **Pot-de-Colle** » (le défenseur collant du ch. 15), « **le faucon** » (le numéro 11 des Hawks, ch. 11).
+- Marcus parle un peu de français, lent et cabossé, à partir du ch. 12.
+- Le cri d'avant-match de Coach Whitfield : « Kay directs / Thirty-three attracts / Tyler finishes / Diego runs ». Après la demi-finale, elle dit à BriBri « Best run of the tournament ». Sa phrase « best decoy » reste libre pour le ch. 16.
+- Tyler porte une chaussette rouge et une jaune, mais aux mauvais pieds (ch. 12 et 15).
+- La blague de Mireille à l'arrivée en Amérique devient « bonshommes de neige ».

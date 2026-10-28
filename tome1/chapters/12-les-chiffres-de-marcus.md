@@ -20,7 +20,9 @@ Marcus Bell est assis sur la glacière des ballons, la tablette sur les genoux. 
 
 « Then let's make friends. »
 
-Pour BriBri, les chiffres, c'est comme les moustiques : petits, nombreux, et toujours là quand on veut être tranquille. Ils se cachent même dans les problèmes de Mrs. Kowalski, sa maîtresse. Jenny a dix-sept pommes, elle en donne neuf... *Mange-les, Jenny !*
+« Les chiffres, c'est comme les moustiques, ajoute BriBri. Petits, nombreux, et toujours là quand on veut être tranquille. »
+
+Ils se cachent même dans les problèmes de Mrs. Kowalski, sa maîtresse. Jenny a dix-sept pommes, elle en donne neuf... *Mange-les, Jenny !*
 
 « Diego ! appelle BriBri. Viens traduire ! Vite ! »
 
@@ -80,7 +82,7 @@ Marcus touche l'écran. Les croix disparaissent. Il reste quatre ronds verts, en
 
 « Et maintenant, regarde, dit Diego. Deux joueurs sautent sur l'épouvantail. Et qui arrive tout seul derrière ? Moi ! Tu me donnes le ballon, presque par accident. Et je frappe... juste à côté. Sorry. »
 
-« Celui-là ? s'indigne BriBri. Mais il est moche ! Je l'avais même oublié ! »
+« Celui-là ? proteste BriBri. Mais il est moche ! Je l'avais même oublié ! »
 
 Marcus rit. Puis il récite une phrase en français. Il a dû la préparer, parce qu'il la dit comme une poésie.
 
@@ -138,7 +140,7 @@ Tyler, seul au point de penalty, tape du pied dans l'herbe en plastique.
 
 « Pass the ball, man ! You never pass ! »
 
-« C'est l'hôpital qui se moque de la charité ! » s'étrangle BriBri.
+« C'est l'hôpital qui se moque de la charité ! » s'écrie BriBri.
 
 « The what ? » demande Diego.
 
@@ -239,6 +241,8 @@ BriBri tape dedans.
 « Nice pass », marmonne Tyler, en regardant ses chaussures.
 
 « Nice goal », dit BriBri, en regardant les siennes.
+
+« Tu vois ? dit Kaydoudou en passant. Il était seul. »
 
 Puis Tyler repart en courant. Tout le reste du match, il crie « Here ! » un peu moins fort. Et une fois, une seule, il fait une passe à Diego.
 

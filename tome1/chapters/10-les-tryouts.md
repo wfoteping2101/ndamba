@@ -8,163 +8,379 @@ resume: Sous un immense dôme blanc, des dizaines d'enfants se disputent une pla
 illustration: Plan moyen à l'intérieur d'un immense dôme blanc éclairé par des projecteurs, sur une pelouse synthétique d'un vert trop vif semée de petits grains noirs. Au centre, BriBri, chasuble orange numéro 33 par-dessus son tee-shirt jaune à bande rouge, petite afro, une chaussette rouge et une chaussette jaune, fait passer le ballon entre les jambes de Tyler Brooks, grand garçon blond de douze ans aux chaussettes noires bien tirées, qui baisse les yeux, stupéfait, les genoux écartés. Au second plan, un peu flou, Coach Dana Whitfield, queue de cheval brune, tablette contre la poitrine, lève un sourcil. Malice et tension.
 ---
 
-Le dôme ressemblait à une guimauve géante posée au milieu d'un parking.
+« Une guimauve ! »
 
-C'est BriBri qui le dit le premier, en descendant de la voiture, et après ça, plus personne dans la famille ne l'appela autrement. Une bulle blanche, immense, plus haute que l'église de Bonamoussadi, gonflée comme un ventre après un repas de fête. Autour, la neige de février faisait des tas gris le long des trottoirs. Pour entrer, il fallait passer une porte tournante qui vous soufflait un vent chaud au visage, et BriBri fit trois tours dedans avant que Kaydoudou le tire dehors par la capuche.
+BriBri le crie en descendant de la voiture. Et après ça, plus personne dans la famille n'appelle le dôme autrement.
 
-« C'est pour garder l'air à l'intérieur, expliqua Papa. Avec une porte normale, le dôme se dégonflerait. »
+« Regarde, Kaydoudou ! Une guimauve géante ! Plus haute que l'église de Bonamoussadi ! »
 
-BriBri leva les yeux vers le plafond blanc, très loin au-dessus de sa tête, et décida de ne pas éternuer de la journée.
+« On ne mange pas le dôme, BriBri », dit Maman.
 
-Dedans, c'était l'été. Une lumière blanche tombait des projecteurs sur une pelouse verte, trop verte, qui n'était pas de l'herbe mais du plastique. Entre les brins, des milliers de petits grains noirs de caoutchouc sautaient à chaque pas et se glissaient partout : dans les chaussures, dans les chaussettes, et (BriBri le découvrirait le soir dans son bain) dans des endroits où aucun grain de caoutchouc n'aurait jamais dû aller.
+« Je n'ai rien dit ! »
 
-Et des enfants. Des dizaines et des dizaines d'enfants qui s'échauffaient, criaient, jonglaient avec des ballons tout neufs, tous avec une chasuble orange et un grand numéro dans le dos. BriBri reçut le 33. Kaydoudou, le 34.
+« Tu l'as pensé très fort. »
 
-« Trente-trois, calcula BriBri. Trois plus trois, six. Plus un, sept. C'est un sept caché. »
+Papa pose une main sur chaque épaule.
+
+« Respirez, les garçons. Jouez comme à la maison. »
+
+Pour entrer, il faut passer une porte tournante qui vous souffle un vent chaud au visage. Fffff ! BriBri fait trois tours dedans. Kaydoudou le tire dehors par la capuche.
+
+« C'est pour garder l'air dedans, explique Papa. Avec une porte normale, le dôme se dégonflerait. »
+
+« Comme un ballon crevé ? »
+
+« Comme un ballon crevé. »
+
+BriBri décide de ne pas éternuer de la journée.
+
+Dedans, des projecteurs. Une pelouse trop verte. Et une chaleur d'été.
+
+« Kaydoudou ! Ils ont mis l'été dans une bulle ! Et c'est quoi, ces petits grains noirs ? Ça saute ! »
+
+« Rubber, bro ! »
+
+Diego arrive en courant, chasuble 12 sur le dos.
+
+« Du caoutchouc. Tonight, you find them in your bed. In your ears. Everywhere ! Look : like a hundred kids. They take maybe twenty. The others go home. »
+
+« Vingt ? Sur cent ? »
+
+« Yep. Everybody does the tryouts, every winter. Even me. Even the coach's dog, probably ! »
+
+*Être pris*, pense BriBri. *Avec mon frère. Ensemble. C'est tout ce que je veux.*
+
+Il enfile la chasuble orange numéro 33 par-dessus son tee-shirt jaune à bande rouge. Kaydoudou reçoit le 34.
+
+« Trente-trois, calcule BriBri. Trois plus trois, six. Plus un, sept. C'est un sept caché ! »
 
 « Tu viens d'inventer les maths », dit Kaydoudou.
 
 « Les maths inventées, ça porte bonheur. »
 
-Kaydoudou ne sourit pas. Depuis le petit déjeuner, il ne souriait plus. Il avait mangé la moitié d'un toast, refait son sac trois fois et vérifié ses lacets deux fois. BriBri connaissait cette tête-là : c'était la tête de l'avion.
+Kaydoudou ne sourit pas.
 
-« Hey, Cameroon ! »
+« Tu as mangé, ce matin ? »
 
-Diego arrivait en courant, la chasuble numéro 12 déjà sur le dos. Il jouait à Potomac Valley depuis deux ans, mais ici, expliqua-t-il, tout le monde repassait les tryouts chaque hiver.
+« La moitié d'un toast. »
 
-« Everybody. Even me. Even the coach's dog, probably. »
+« Tu as refait ton sac combien de fois ? »
 
-Un coup de sifflet fit trembler la guimauve. Au centre de la pelouse se tenait une grande femme aux cheveux bruns tirés en queue de cheval, en survêtement bleu marine, une tablette serrée contre la poitrine. Elle n'avait pas de micro. Elle n'en avait pas besoin.
+« Trois. »
 
-« Good morning, everybody ! I'm Coach Dana Whitfield. Today, I want three things from you. » Elle leva trois doigts. « Work hard. Be brave. Have fun ! »
+« Et tes lacets ? »
 
-Elle avait un sourire immense, de ceux qui donnent envie de courir plus vite. Mais BriBri remarqua qu'à chaque phrase, son doigt touchait l'écran de la tablette. Elle souriait, et elle notait.
+« Deux fois. »
+
+BriBri connaît cette tête-là. C'est la tête de l'avion.
+
+Prrrrt ! Un coup de sifflet fait trembler la guimauve.
+
+Au centre se tient une grande femme. Queue de cheval brune, survêtement bleu marine, une tablette serrée contre la poitrine. Pas de micro. Elle n'en a pas besoin.
+
+« Good morning, everybody ! I'm Coach Dana Whitfield. One against one, small games, and a real match. And I want three things from you. Work hard. Be brave. Have fun ! »
+
+« Un contre un, petits matchs, et un vrai match, traduit Diego. Et travaillez dur, soyez courageux, amusez-vous ! She writes everything. Every touch. Every pass. »
+
+« Elle est gentille ? » chuchote BriBri.
+
+« Nice. And tough. Both. »
+
+Elle a un sourire immense. Mais à chaque phrase, son doigt touche l'écran.
+
+*Elle sourit*, pense BriBri. *Et elle note.*
 
 * * *
 
-Le premier exercice était un duel : un contre un, dans un petit carré de cônes, avec un but de chaque côté pas plus large qu'une porte. Les enfants attendaient en file. Devant BriBri se tenait un grand garçon blond, aux cheveux presque blancs, avec des épaules de déménageur et des chaussettes noires parfaitement tirées jusqu'aux genoux. Il se retourna, regarda les pieds de BriBri, et son sourire s'élargit lentement.
+Premier exercice : un contre un, dans un petit carré de cônes.
+
+« One against one ! Let's go ! »
+
+Dans la file, devant BriBri, il y a un grand garçon blond. Cheveux presque blancs. Épaules de déménageur. Chaussettes noires parfaitement tirées jusqu'aux genoux.
+
+Le garçon se retourne. Il regarde les pieds de BriBri. Son sourire s'élargit, lentement.
 
 « Yo, nice socks. Did your laundry lose a fight ? »
 
-Les deux garçons derrière lui éclatèrent de rire. BriBri n'avait compris que « socks ». Il se tourna vers Diego, qui fit la grimace.
+« Ha ! Good one, Tyler ! » rient ses copains.
+
+« Il a dit quoi ? » demande BriBri.
 
 « Il demande si ta machine à laver a perdu une bagarre. »
 
-BriBri baissa les yeux sur ses chevilles : la chaussette rouge à droite, la jaune à gauche, comme toujours, comme sur la terre rouge, comme à la finale contre les Panthères. Il sentit monter en lui une chaleur qui n'avait rien à voir avec le dôme.
+BriBri baisse les yeux. Chaussette rouge à droite, jaune à gauche. Comme toujours.
 
 « C'est qui, lui ? »
 
-« Tyler Brooks, soupira Diego. Twelve years old. Best striker. Biggest mouth. »
+« Tyler Brooks, soupire Diego. Twelve years old. Best striker. Biggest mouth. Careful, bro. He's strong. »
 
-Le hasard (ou le destin, pensa BriBri) voulut que, quand son tour arriva, ce soit Tyler qui se trouve en face de lui dans le carré.
+« Les camions, ça ne tourne pas vite. Moi, je l'appelle Monsieur Lessive. »
 
-Tyler partit fort, comme un camion. BriBri ne bougea pas. Il attendit, sur la pointe des pieds, le ballon sous la semelle comme au futsal. Il le fit rouler vers la gauche ; Tyler se jeta vers la gauche. Alors BriBri le poussa doucement, du bout du pied, entre les deux grandes jambes écartées. Tyler baissa les yeux, stupéfait, les genoux encore ouverts, et regarda le ballon passer sous lui. BriBri fit le tour du garçon blond et récupéra le ballon de l'autre côté.
+« Mister Laundry ! I love it ! »
 
-Un petit pont. Parfait. Rond comme une lune.
+Et quand son tour arrive, Monsieur Lessive est en face de lui.
 
-Il marqua dans le petit but, puis se retourna vers Tyler, encore à moitié penché.
+« Ready, socks ? »
 
-« My socks say hello », dit BriBri.
+« Ready, Lessive. »
 
-Un « ooooh » courut tout le long de la file. Tyler devint rouge jusqu'aux oreilles. Sur le côté, Coach Whitfield leva un sourcil et toucha sa tablette.
+Prrrt !
 
-Pendant le reste de la matinée, Tyler ne lui adressa plus la parole. Mais chaque fois qu'ils se croisaient, il passait un tout petit peu trop près, l'épaule en avant, et BriBri le baptisa en silence : Monsieur Lessive.
+Tyler part fort. Comme un camion.
+
+BriBri ne bouge pas. Il attend, sur la pointe des pieds, le ballon sous la semelle. La semelle caramel.
+
+Tout ralentit.
+
+Le camion arrive. Les grains noirs sautent sous ses crampons. Ses deux grandes jambes s'ouvrent.
+
+BriBri fait rouler le ballon vers la gauche. Tyler se jette vers la gauche.
+
+Alors BriBri pousse le ballon. Doucement. Du bout du pied. Entre les deux grandes jambes écartées.
+
+Tyler baisse les yeux, bouche bée, les genoux encore écartés. Il regarde le ballon passer sous lui.
+
+BriBri fait le tour du garçon blond et récupère le ballon de l'autre côté. Un petit pont. Rond comme une lune.
+
+« NUTMEG ! » hurle Diego.
+
+BriBri marque dans le petit but. Puis il se retourne vers Tyler, encore à moitié penché.
+
+« My socks say hello. »
+
+« Ooooooh ! » fait toute la file.
+
+« Lucky ! » grogne Tyler.
+
+« No. Caramel. »
+
+Tyler devient rouge jusqu'aux oreilles. Sur le côté, Coach Whitfield lève un sourcil. Elle touche sa tablette.
+
+« Nutmeg ? C'est quoi ? » demande BriBri en revenant.
+
+« Le petit pont, en anglais. Ça veut dire noix de muscade. »
+
+« Une noix ? Pourquoi une noix ? »
+
+« Nobody knows, bro. »
+
+Le reste de la matinée, Tyler ne lui parle plus. Mais il passe toujours un peu trop près, l'épaule en avant.
 
 * * *
 
-Ensuite vinrent les petits matchs, à quatre contre quatre, sur des terrains grands comme une cour d'école. Et là, BriBri fut heureux.
+Ensuite viennent les petits matchs, à quatre contre quatre. Et là, BriBri est heureux. C'est presque Bonamoussadi : peu d'espace, beaucoup de jambes, des buts tout près.
 
-C'était presque Bonamoussadi. Peu d'espace, beaucoup de jambes, des buts tout proches. Il dribblait à la semelle, crochetait, accélérait, s'arrêtait net. Il marqua trois buts, en fit marquer un à Diego, et deux fois, il entendit la voix de Coach Whitfield passer au-dessus des cris : « Thirty-three ! Yes ! »
+Il fait même la voix de Radio, la main devant la bouche.
 
-Mais entre deux matchs, quand il regarda le terrain d'à côté, son cœur se serra.
+« Mesdames et messieurs, BriBri Ngassa ! Semelle caramel ! Crochet du margouillat ! Il passe à Diego ! Diego lui rend ! Et... BUT ! »
 
-Kaydoudou jouait comme un garçon qui marche sur des œufs. Il recevait le ballon, l'arrêtait net sous son pied, levait la tête... et le temps de lever la tête, un défenseur était déjà sur lui. Alors il faisait la passe à côté, ou en arrière, toujours la plus sûre. Il ne perdait jamais le ballon. Mais il ne faisait rien avancer non plus. C'était le Kaydoudou d'avant la demi-finale contre les Requins, celui de la passe polie.
+« You're crazy, bro ! » rit Diego.
 
-« Your first touch has to go somewhere ! » cria Coach Whitfield, pour tout le monde et pour personne.
+« Thirty-three ! Yes ! » crie Coach Whitfield.
 
-« Ton premier contrôle doit aller quelque part », traduisit Diego.
+« Who's that kid with the socks ? » demande un garçon de la file.
 
-BriBri vit son frère hocher la tête sans avoir l'air de comprendre. À côté du numéro 34, sur la tablette, il ne devait pas y avoir grand-chose d'écrit.
+BriBri sourit jusqu'aux oreilles. On le remarque !
 
-« Il est en train de rater, murmura BriBri. Mon frère est en train de rater. »
+Mais entre deux matchs, BriBri regarde le terrain d'à côté. Et son cœur se serre.
 
-« He's just nervous, dit Diego. Wait. »
+Kaydoudou joue comme un garçon qui marche sur des œufs. Il reçoit le ballon et l'arrête net sous son pied. Il lève la tête... et un défenseur est déjà sur lui.
 
-BriBri n'attendit pas. Quand Coach Whitfield appela les équipes pour le dernier match, il trotta jusqu'à son frère, mit ses mains en cornet devant sa bouche et souffla, exactement comme le sifflet de manguier :
+« Too easy ! »
+
+Alors il fait la passe à côté. Ou en arrière. Toujours la plus sûre.
+
+C'est le Kaydoudou d'avant les Requins. Celui de la passe polie.
+
+« Your first touch has to go somewhere ! » crie Coach Whitfield.
+
+« Ton premier contrôle doit aller quelque part », traduit Diego.
+
+Kaydoudou hoche la tête, mais il n'a pas l'air de comprendre. À côté du numéro 34, sur la tablette, il ne doit pas y avoir grand-chose d'écrit.
+
+« Il est en train de rater, murmure BriBri. Mon frère est en train de rater. »
+
+« He's just nervous. Wait. »
+
+« Je ne peux pas attendre ! S'il n'est pas pris, on ne joue pas ensemble. Et sans lui, l'Amérique, c'est juste du froid ! »
+
+Coach Whitfield appelle les équipes pour le dernier match. BriBri trotte jusqu'à son frère.
+
+« Je n'y arrive pas, BriBri, souffle Kaydoudou. Ici, tout va trop vite. »
+
+Alors BriBri met ses mains en cornet devant sa bouche. Et il souffle, exactement comme le sifflet en bois de manguier :
 
 « Houou ! Le ballon doit voyager ! »
 
-Deux garçons se retournèrent, intrigués. Kaydoudou, lui, laissa échapper un petit rire par le nez, le premier de la journée. Ses épaules descendirent d'un centimètre.
+Deux garçons se retournent. Kaydoudou laisse échapper un petit rire par le nez. Le premier de la journée. Ses épaules descendent d'un centimètre.
 
-« Tu es bête », dit-il.
+« Voilà, dit BriBri. Ça, c'est mon frère. »
 
-« Je suis un hibou enrhumé », corrigea BriBri, très digne.
+« Tu es bête. »
 
-* * *
+« Je suis un hibou enrhumé, corrige BriBri, très digne. Et le ballon, ce n'est pas un œuf. Ne le garde pas sous ton pied. Pousse-le. »
 
-Le dernier jeu de la journée était un vrai match, à neuf contre neuf, sur toute la longueur du dôme. Il restait cinq minutes. BriBri et Kaydoudou étaient dans la même équipe, et Tyler dans l'autre, au milieu de la défense, les bras croisés.
-
-Sur l'aile droite, collé à la ligne, BriBri regardait son frère. Allez, Kaydoudou. Allez. Comme contre les Requins.
-
-Le ballon arriva vers Kaydoudou, au milieu, un adversaire dans son dos. Et cette fois, il ne l'arrêta pas sous son pied. Du plat du pied gauche, il le poussa d'un mètre sur le côté, loin du défenseur, vers l'herbe libre, et le défenseur passa dans le vide. Sa tête était déjà levée. Sa main droite aussi. Deux doigts.
-
-BriBri n'eut pas besoin de réfléchir. Les deux doigts, c'était la langue secrète de la terre rouge. Il partit.
-
-Il courut dans le dos de Tyler, le long de la ligne, de toutes ses forces, sans se retourner. Il entendit le bruit sec du ballon frappé, puis un silence, puis quelqu'un qui disait « whoa ». Le ballon passa au-dessus de tout le monde, au-dessus des milieux, au-dessus de Tyler qui pivota trop tard, et il retomba juste devant BriBri, à quarante mètres de là où il était parti. Une passe qui traversait tout le dôme.
-
-BriBri n'eut qu'à pousser le ballon au fond, du bout du pied. Il fit trois pas de la danse de Roger Milla, se rappela qu'il n'y avait pas de poteau de corner dans une guimauve, et courut sauter sur le dos de son frère.
-
-Quand il releva la tête, Coach Whitfield ne souriait plus. Elle regardait Kaydoudou, et elle écrivait sur sa tablette, longtemps, très longtemps.
+« Pousse-le », répète Kaydoudou, tout bas.
 
 * * *
 
-L'e-mail arriva le mardi soir, au milieu du dîner. Papa le lut sur son téléphone, à voix haute, en traduisant au fur et à mesure.
+« Last game ! Nine against nine ! Five minutes ! »
 
-« Kaydoudou Ngassa : U12. »
+Un vrai match, sur tout le dôme. Tyler est dans l'autre équipe, au milieu de la défense, les bras croisés.
 
-Maman applaudit. Kaydoudou ferma les yeux une seconde, comme quelqu'un qui pose enfin un sac très lourd.
+« Hey, socks ! Not this time ! »
+
+« Reste sur ta ligne, dit Kaydoudou à son frère. Et regarde mes mains. »
+
+« Thirty-four ! crie Coach Whitfield. Show me something ! »
+
+BriBri reste collé à la ligne, sur l'aile droite.
+
+*Allez, Kaydoudou. Comme contre les Requins.*
+
+Le ballon arrive vers Kaydoudou, au milieu, un adversaire dans son dos.
+
+Et cette fois, il ne l'arrête pas sous son pied.
+
+Du plat du pied gauche, il le pousse d'un mètre sur le côté. Loin du défenseur. Vers l'herbe libre. Le défenseur passe dans le vide.
+
+La tête de Kaydoudou est déjà levée. Sa main droite aussi.
+
+Deux doigts.
+
+Les frères se regardent. Une demi-seconde. Les deux doigts, c'est la langue secrète de la terre rouge.
+
+BriBri part.
+
+« GO, BRIBRI ! » hurle Diego.
+
+Il court dans le dos de Tyler, le long de la ligne, de toutes ses forces. Il entend le bruit sec du ballon frappé. Pof. Puis un silence.
+
+« Whoa... »
+
+Le ballon passe au-dessus des milieux. Au-dessus de Tyler, qui pivote trop tard. Et il retombe juste devant BriBri, quarante mètres plus loin. Une passe qui traverse tout le dôme.
+
+« No way... » souffle Tyler.
+
+BriBri n'a qu'à pousser le ballon au fond.
+
+Il fait trois pas de la danse de Roger Milla. Puis il se rappelle qu'il n'y a pas de poteau de corner dans une guimauve. Alors il court sauter sur le dos de son frère.
+
+« Les deux doigts ! Les deux doigts sont arrivés en Amérique ! »
+
+« Tu m'étrangles, BriBri. »
+
+« Je sais ! »
+
+« BRO ! hurle Diego. Forty meters ! FORTY ! »
+
+« Who's number thirty-four ? » demande un garçon.
+
+Coach Whitfield ne sourit plus. Elle regarde Kaydoudou. Et elle écrit sur sa tablette. Longtemps. Très longtemps.
+
+« Thank you, everybody ! You'll get an email on Tuesday ! »
+
+Dans la voiture, Papa sourit.
+
+« Alors ? »
+
+« Alors, la guimauve est à nous ! »
+
+Le soir, dans son bain, BriBri trouve des grains noirs partout.
+
+« Maman ! J'en ai dans les oreilles ! Diego avait raison ! »
+
+« Et dans le nez aussi, mon chéri. »
+
+* * *
+
+L'e-mail arrive le mardi soir, au milieu du dîner. Papa le lit à voix haute.
+
+« Dear Ngassa family... Kaydoudou Ngassa : U12. »
+
+« Mon grand ! » crie Maman.
+
+« Moi ? Pris ? »
+
+Kaydoudou ferme les yeux une seconde, comme quelqu'un qui pose enfin un sac très lourd.
+
+« Et moi ? Et moi ? »
 
 « BriBri Ngassa : U11. »
 
-BriBri posa sa fourchette. Les onze ans. Les petits. Pas avec son frère.
+BriBri pose sa fourchette.
+
+« Avec les petits ? Pas avec mon frère ? »
+
+*Ça y est*, pense-t-il. *On me laisse de côté.*
 
 « Attends, dit Papa en levant un doigt. Il y a une suite. Coach Whitfield would also like BriBri to play up with the U12 team on Saturdays. »
 
 « Play up ? C'est quoi, play up ? »
 
-« Ça veut dire surclassé, expliqua Papa. Jouer avec des plus grands que toi. Tu t'entraîneras avec les U11, mais le samedi, tu joueras avec ton frère. »
+« Surclassé. Tu joues avec des plus grands que toi. Tu t'entraînes avec les U11. Mais le samedi, tu joues avec ton frère. »
 
-BriBri bondit de sa chaise si vite qu'il renversa la carafe d'eau. Il fit le tour de la table en dansant, embrassa Maman, embrassa Papa, et tendit le poing à Kaydoudou. Poing contre poing, main sur le cœur. Au même moment, le téléphone de Papa vibra : un message de Diego.
+« AVEC MON FRÈRE ? »
+
+BriBri bondit. Splash ! La carafe d'eau se renverse.
+
+« BriBri ! La carafe ! »
+
+« Pardon, carafe ! »
+
+Il fait le tour de la table en dansant et tend le poing à Kaydoudou.
+
+Poing contre poing. Main sur le cœur.
+
+« Tu as vu ? chuchote BriBri. Elle ne m'a pas oublié. »
+
+« Personne n'oublie un garçon avec ces chaussettes. Je te l'ai dit : c'est scientifique. »
+
+Le téléphone de Papa vibre. Un message de Diego.
 
 « Congrats bros ! Bad news : Tyler made it too. »
 
+« Monsieur Lessive ! Encore lui ! »
+
+« Il faudra jouer avec lui, maintenant », dit Kaydoudou.
+
+« Ou lui faire un deuxième petit pont. »
+
+« BriBri. »
+
+« Quoi ? Un tout petit ! »
+
 * * *
 
-Le premier entraînement des U12 eut lieu le jeudi suivant, sous la guimauve. Les joueurs étaient assis en demi-cercle sur la pelouse en plastique. Debout devant eux, à côté de Coach Whitfield, se tenait un jeune homme maigre aux lunettes rondes, en sweat à capuche gris, qui serrait une tablette contre lui comme un trésor. Derrière eux, en haut d'un grand trépied, une caméra regardait tout le terrain.
+Premier entraînement des U12, le jeudi suivant, sous la guimauve.
 
-« Guys, this is Marcus Bell, our video analyst. » Coach Whitfield posa une main sur l'épaule du jeune homme. « Marcus films everything. Marcus counts everything. And never, ever lie to Marcus. »
+À côté de Coach Whitfield, il y a un jeune homme maigre, lunettes rondes, sweat à capuche gris. Il serre sa tablette comme un trésor. Derrière lui, une caméra perchée sur un grand pied regarde tout le terrain.
 
-Diego se pencha vers les frères.
+« Guys, this is Marcus Bell, our video analyst. Marcus is shy. But Marcus films everything. Marcus counts everything. And never, ever lie to Marcus. »
 
-« Marcus filme tout. Marcus compte tout. Et ne mentez jamais à Marcus. »
+« Marcus filme tout, chuchote Diego. Marcus compte tout. Et ne mentez jamais à Marcus. »
 
-« Monsieur Tablette », chuchota BriBri, ravi.
+« Monsieur Tablette », souffle BriBri, ravi.
 
-À la fin de la séance, Marcus Bell vint vers lui en remontant ses lunettes sur son nez.
+À la fin de la séance, Marcus vient vers lui en remontant ses lunettes.
+
+« Bonjour. Je parle... un petit peu français. »
+
+« Moi aussi ! Beaucoup, même ! »
 
 « Number thirty-three, right ? Great nutmeg on Tyler at the tryouts. »
 
-BriBri gonfla la poitrine. Il avait compris « great » et « Tyler ». Ça lui suffisait.
+BriBri gonfle la poitrine. Il a compris « great » et « Tyler ». Ça lui suffit.
 
-« Thank you. »
+« Thank you ! Kaydoudou, tu as entendu ? Great ! »
 
-« After that, Marcus tapota son écran, you lost the ball nine times in a row. »
+« After that... » Marcus tapote son écran. « ... you lost the ball nine times in a row. »
 
-La poitrine de BriBri se dégonfla comme un dôme dont on aurait ouvert la porte.
+La poitrine de BriBri se dégonfle comme un dôme dont on aurait ouvert la porte.
 
 « Nine ? How you know ? »
 
-Marcus sourit, du sourire doux des gens qui disent des choses terribles très gentiment.
+Marcus sourit. Le sourire doux des gens qui disent des choses terribles très gentiment.
 
 « I count. »
 

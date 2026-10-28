@@ -10,19 +10,21 @@ illustration: Plan moyen, fin d'après-midi de septembre, sur un terrain d'herbe
 
 « Kayd. Les arbres sont en panne. »
 
-BriBri vient de poser un pied sur le trottoir brûlant, et il ne bouge plus.
+Papa vient de couper le moteur au bout d'une rue étroite qui sent le raisin écrasé. BriBri pose un pied sur le trottoir brûlant, et il ne bouge plus.
 
 Zzzzzzzz.
 
 Dans les pins, dans les buissons secs, dans les deux grands arbres du coin de la rue, quelque chose grésille sans arrêt. Comme si tout le pays était branché sur une prise mal fixée.
 
-Kaydoudou descend de la voiture, s'étire et écoute, avec son air de savant.
-
 « Ce sont des cigales, dit Maman en riant. Des insectes. Elles chantent quand il fait chaud. »
 
 « Elles chantent ? proteste BriBri. Elles font le bruit des beignets dans l'huile de Madame Ekotto ! »
 
-Il les cherche sur les troncs, sous les feuilles, dans les fentes des murs. Pas une seule. Le bruit, lui, ne s'arrête pas de la journée.
+Il les cherche sur les troncs, sous les feuilles, dans les fentes des murs.
+
+« Sortez de là, les cigales ! Je vous entends ! »
+
+Pas une seule.
 
 « Invisibles et bruyantes », annonce-t-il le soir.
 
@@ -30,35 +32,43 @@ Il les cherche sur les troncs, sous les feuilles, dans les fentes des murs. Pas 
 
 * * *
 
-Le village s'appelle Vinyamar. Il est posé sur une colline, entre les vignes et la mer, à une demi-heure de Tarragone. Ses rues montent et descendent comme des toboggans. Au bout de presque chaque ruelle, entre deux murs de pierre, il y a un morceau de mer si bleu qu'on dirait un drap qu'on vient d'étendre.
-
-C'est la saison des vendanges. De petits tracteurs passent avec des remorques pleines de raisins violets. Les guêpes les suivent en dansant. Tout Vinyamar sent la confiture.
+« Bienvenue à Vinyamar ! dit Papa en ouvrant la porte de la maison. Une colline, des vignes, la mer. Et Tarragone à une demi-heure. »
 
 La maison des Ngassa est étroite et haute, avec un escalier qui tourne sur lui-même comme une coquille d'escargot. Tout en haut, il y a un toit plat, le « terrat ». Le premier soir, BriBri y monte le ballon de Mami et le pose sur le muret, face à l'eau.
 
-« Regarde. La Méditerranée. Tu n'étais jamais venu ici. »
+« Regarde, ballon. Ça, c'est la Méditerranée. Tu n'étais jamais venu ici. Là, ce sont les vignes. C'est la saison des vendanges, alors il y a des petits tracteurs pleins de raisins violets, et des guêpes qui les suivent en dansant. Les rues montent et descendent comme des toboggans. Et au bout de chaque ruelle, il y a un morceau de mer. Et tout sent la confiture. »
+
+Kaydoudou passe la tête par la trappe.
+
+« Tu parles à un ballon ? »
+
+« Il vient de Bafoussam. Il est perdu. Je lui explique. »
 
 Le vieux ballon, avec sa pièce de pagne et ses signatures, a l'air d'apprécier la vue.
 
-Papa travaille à Barcelone. Il prend le train qui longe la côte.
+« Je travaille à Barcelone, raconte Papa le lendemain. Je prends le train qui longe la côte. À Waldorf, je regardais des embouteillages. Ici, je regarde des bateaux. »
 
-« À Waldorf, je regardais des embouteillages. Ici, je regarde des bateaux. »
+Maman colle des petits papiers jaunes partout dans la cuisine.
 
-Maman apprend le catalan pour l'hôpital de Tarragone. Elle colle des petits papiers jaunes partout dans la cuisine. *La nevera* sur le frigo. *La finestra* sur la fenêtre. *La porta* sur la porte.
+« Pour l'hôpital de Tarragone, il me faut le catalan. La nevera, le frigo. La finestra, la fenêtre. La porta, la porte. »
 
-Le deuxième matin, BriBri en colle un dans le dos de son frère : *el germà pesat*. Le frère pénible. Kaydoudou le porte jusqu'à la boulangerie sans rien remarquer, et la boulangère le lit à voix haute en éclatant de rire.
+Le deuxième matin, BriBri colle un papier jaune dans le dos de son frère : *el germà pesat*. Le frère pénible. Kaydoudou le porte jusqu'à la boulangerie sans rien remarquer.
 
-« Qu'est-ce qu'elle a dit ? » demande Kaydoudou.
+« Bon dia ! » dit la boulangère.
 
-« Elle a dit que tu es très gentil », répond BriBri, l'air innocent.
+« ¡Buenos días ! » dit la vieille dame derrière eux.
 
-Ici, on parle deux langues à la fois. La boulangère dit « Bon dia ! », c'est du catalan. La vieille dame derrière eux dit « ¡Buenos días ! », c'est de l'espagnol. Et souvent, la même personne passe de l'une à l'autre au milieu d'une phrase, comme un ailier qui change de pied.
+« Deux langues, chuchote Kaydoudou. Le catalan et l'espagnol. Et ils changent au milieu des phrases, comme un ailier qui change de pied. »
 
 *Génial*, pense BriBri. *Moi, j'en fais trois.*
 
 « Bon dia, mola ! ¿Qué tal ? Un pain, s'il vous plaît. Gràcies, gracias, merci ! »
 
-La boulangère rit si fort qu'elle lui offre une petite brioche couverte de sucre et de pignons.
+La boulangère rit si fort qu'elle lui offre une petite brioche couverte de sucre et de pignons. Puis elle lit à voix haute le papier jaune, dans le dos de Kaydoudou.
+
+« Qu'est-ce qu'elle a dit ? » demande Kaydoudou.
+
+« Elle a dit que tu es très gentil », répond BriBri, l'air innocent.
 
 « Tu as vu ? dit BriBri sur le chemin du retour, la bouche pleine. Trois langues, trois fois plus de gâteaux. »
 
@@ -66,7 +76,9 @@ La boulangère rit si fort qu'elle lui offre une petite brioche couverte de sucr
 
 BriBri adopte le mot sur-le-champ. Le soir même, il l'enseigne à Mireille par message vocal.
 
-Sur la place du village, il y a une fontaine, une église au clocher carré, la terrasse d'un café et huit platanes immenses. Leur écorce tombe par plaques. Les troncs ressemblent à des cartes du monde, avec des continents beiges, gris et verts.
+« Mireille ! Nouveau mot ! Camfrancatañol ! Répète après moi ! »
+
+Sur la place du village, il y a une fontaine, une église au clocher carré, la terrasse d'un café et huit platanes immenses. Leur écorce tombe par plaques, et les troncs ressemblent à des cartes du monde.
 
 « Regarde, Kayd ! Le Cameroun ! »
 
@@ -76,31 +88,41 @@ Sur la place du village, il y a une fontaine, une église au clocher carré, la 
 
 * * *
 
-La Granja del Mar, le centre de formation du Club Esportiu Costa Daurada, est une ancienne ferme. On arrive par un chemin de terre entre les vignes. On passe devant une grande maison de pierre, une « masia », avec un figuier dans la cour et un vieux puits fermé par une grille. Et derrière, d'un coup, les terrains : un en herbe, deux synthétiques, coincés entre les rangs de vigne et une rangée de pins. Derrière les pins, la plage. Depuis le rond central, on entend la mer.
+La Granja del Mar, le centre de formation du Club Esportiu Costa Daurada, est une ancienne ferme au bout d'un chemin de terre, entre les vignes. BriBri saute de la voiture et court partout.
 
-« Ils ont mis des terrains de foot dans un jardin », souffle BriBri.
+« Kayd ! Une grande maison en pierre ! Un figuier ! Un vieux puits avec une grille ! Et là, derrière... un terrain en herbe ! Deux synthétiques ! Et des pins ! Et derrière les pins... » Il s'arrête, la bouche ouverte. « On entend la mer. Depuis le rond central, on entend la mer. Ils ont mis des terrains de foot dans un jardin ! »
 
-L'entraîneur s'appelle Jordi Puig. Les garçons l'ont rencontré la veille, au restaurant de la place, avec Papa. Un homme mince, une barbe poivre et sel, un crayon de menuisier derrière l'oreille. Il parle si doucement qu'il faut se pencher pour l'entendre. BriBri le soupçonne de le faire exprès.
+L'entraîneur s'appelle Jordi Puig. Les garçons l'ont rencontré la veille, au restaurant de la place, avec Papa. Un homme mince, une barbe poivre et sel, un crayon de menuisier derrière l'oreille. Il parle si doucement qu'il faut se pencher pour l'entendre. Pendant tout le repas, il a dessiné des triangles sur la nappe en papier.
 
-Pendant tout le repas, il a dessiné des triangles sur la nappe en papier. Des grands, des petits, des triangles dans des triangles. Quand la nappe a été pleine, la serveuse en a apporté une neuve sans rien dire.
+« Pourquoi des triangles ? » a demandé BriBri.
+
+« Parce que le football, c'est des triangles. Tu verras. »
+
+Quand la nappe a été pleine, la serveuse en a apporté une neuve sans rien dire.
 
 « Vous êtes architecte ? » a demandé BriBri.
 
 « No. Soc entrenador. » Puis, dans un français de vacances qui chante un peu : « Entraîneur. C'est pire. »
 
-Aujourd'hui, Jordi pose quatre plots orange sur l'herbe en comptant ses pas. Douze d'un côté, douze de l'autre.
+C'est la fin de l'après-midi. Le soleil, bas et doré, fait briller les raisins violets au bord du terrain. Jordi pose quatre plots orange sur l'herbe en comptant ses pas. Douze d'un côté, douze de l'autre.
 
 « El rondo », dit-il.
 
-Une fille traduit pour les nouveaux. Chignon brun, taches de rousseur jusqu'aux oreilles, une cicatrice blanche sur le genou, les chaussettes roulées sur les chevilles. Elle s'appelle Laia Ferrer, elle a treize ans, et sa grand-mère est de Perpignan. Alors elle parle français, vite, en roulant les r comme des cailloux dans un torrent. C'est la capitaine de l'équipe féminine du club. Mais chez Jordi, l'équipe est mixte, et Jordi ne veut pas se passer d'elle.
+Une fille s'avance. Chignon brun, taches de rousseur jusqu'aux oreilles, une cicatrice blanche sur le genou, les chaussettes roulées sur les chevilles.
 
-« Le rondo, c'est simple, dit-elle. Quatre dehors, un dedans. Le cercle se passe le ballon en une touche, deux au maximum. Celui du milieu doit le prendre. On l'appelle *el toro*. Le taureau. »
+« Moi, c'est Laia Ferrer. Treize ans. Capitaine de l'équipe féminine, mais chez Jordi, l'équipe est mixte, et il ne veut pas se passer de moi. Ma grand-mère est de Perpignan, alors je parle français. Vite. Suivez si vous pouvez. »
+
+Elle roule les r comme des cailloux dans un torrent. Elle montre un grand garçon maigre aux oreilles décollées.
+
+« Lui, c'est Nil Soler. Défenseur central. Il ne rit jamais, et ses passes, ce sont des lasers. Bon. Le rondo, c'est simple. Quatre dehors, un dedans. Le cercle se passe le ballon en une touche, deux au maximum. Celui du milieu doit le prendre. On l'appelle *el toro*. Le taureau. »
 
 La main de BriBri jaillit avant qu'il ait réfléchi.
 
 « Moi ! Moi, le taureau ! »
 
-*Le taureau. Le plus fort. Le plus costaud. Celui que tout le monde regarde.*
+« Un volontaire ! s'étonne Laia. Ça n'arrive jamais. »
+
+*Le taureau. Le plus fort. Celui que tout le monde regarde.*
 
 Il pose ses deux index sur sa tête comme des cornes. Il gratte l'herbe avec son pied. Il souffle par le nez. Tout le monde rit.
 
@@ -124,13 +146,15 @@ Il fait demi-tour. Le ballon repart dans son dos.
 
 « Olé ! » crie Laia.
 
-Alors, à chaque passe, tout le cercle crie « Olé ! », et BriBri devient une toupie qu'on fouette à coups d'olés. Il court vers le ballon : il n'y est plus. Il devine : il devine faux. Il plonge, il glisse, il se relève couvert de brins d'herbe.
+Alors, à chaque passe, tout le cercle crie « Olé ! », et BriBri devient une toupie qu'on fouette à coups d'olés. Il court vers le ballon : il n'y est plus. Il devine : il devine faux. Il plonge, il glisse, il se relève couvert d'herbe.
 
-Un grand garçon maigre aux oreilles décollées compte les passes à voix basse, sans sourire.
+« Courage, BriBri ! » lance Kaydoudou depuis le cercle.
+
+« Tais-toi et rate une passe ! »
+
+Nil compte les passes à voix basse, sans sourire.
 
 « Deu... vint... trenta... »
-
-Il s'appelle Nil Soler. Défenseur central. Ses passes partent droites et sèches, comme des rayons laser.
 
 À la trente-deuxième passe, BriBri n'en peut plus. Il remet ses index sur sa tête, baisse les cornes, et il hurle :
 
@@ -140,9 +164,9 @@ Il fonce droit sur Laia en riant comme un fou.
 
 Laia ne bouge presque pas. Elle fait rouler le ballon entre les jambes du taureau. Tranquille. Derrière elle, dans son vieux maillot vert délavé numéro 8, Kaydoudou cache son sourire dans sa main.
 
-Un petit pont. Sur lui. Sur BriBri Ngassa, qui a fait un petit pont à Tyler Brooks devant tout le dôme de Potomac Valley.
+« Un petit pont ? À MOI ? Moi qui en ai fait un à Tyler Brooks devant tout le dôme de Potomac Valley ? »
 
-Il se laisse tomber sur le dos, bras et jambes écartés comme une étoile de mer. Le cœur qui cogne. Et il éclate de rire. Il rit tellement qu'il a mal au ventre. Les autres rient aussi, mais avec lui, pas contre lui.
+Il se laisse tomber sur le dos, bras et jambes écartés comme une étoile de mer. Et il éclate de rire. Il rit tellement qu'il a mal au ventre. Les autres rient aussi, mais avec lui, pas contre lui.
 
 Nil lui tend la main pour le relever.
 
@@ -156,11 +180,7 @@ Dans le cercle, Kaydoudou joue comme il joue toujours. Proprement. Il reçoit, i
 
 « Massa temps, Kaydoudou, murmure Jordi. Trop de temps. »
 
-Kaydoudou fronce les sourcils. Il veut aller plus vite. Il hésite une fraction de seconde entre deux passes.
-
-BriBri n'a plus rien à perdre. Il se jette dans ses pieds.
-
-Le ballon roule hors du carré.
+Kaydoudou fronce les sourcils, veut aller plus vite, hésite une fraction de seconde. BriBri n'a plus rien à perdre. Il se jette dans ses pieds. Le ballon roule hors du carré.
 
 Le seul ballon que BriBri récupère de toute la séance, il le prend à son propre frère. Il fait la danse de Roger Milla autour d'un plot.
 
@@ -168,9 +188,11 @@ Le seul ballon que BriBri récupère de toute la séance, il le prend à son pro
 
 Kaydoudou entre au milieu avec la tête d'un roi qu'on vient de chasser de son trône.
 
-Mais dans le cercle, BriBri découvre un autre problème. Personne ne lui passe le ballon. Il crie. Il tend les bras. Rien.
+« Ce n'est pas fini, BriBri. »
 
-« Ici ! Je suis là ! Hé ! »
+Mais dans le cercle, BriBri découvre un autre problème. Personne ne lui passe le ballon.
+
+« Ici ! Je suis là ! Hé ! Je suis là, je vous dis ! »
 
 Jordi vient se placer derrière lui, sans bruit.
 
@@ -182,19 +204,21 @@ BriBri ouvre grand la bouche. Tonton Fokou a dit presque la même chose, deux an
 
 *Les entraîneurs du monde entier s'écrivent des lettres en cachette, ou quoi ?*
 
-Il regarde. Son frère est au milieu, juste entre lui et le ballon. BriBri est caché dans son ombre.
-
-Il fait deux pas de côté. Deux. Il sort de l'ombre de Kaydoudou.
+Son frère est au milieu, juste entre lui et le ballon. BriBri est caché dans son ombre. Il fait deux pas de côté.
 
 Le ballon arrive aussitôt dans ses pieds.
 
-« Tu existes ! lui crie Laia. »
+« Tu existes ! » lui crie Laia.
 
 « J'existe ! » hurle BriBri, et il remet le ballon en une touche.
 
-Ensuite, Jordi passe au cinq contre deux et met les deux frères au milieu, ensemble. C'est une catastrophe magnifique. Quand ils attaquent, les frères se comprennent sans un mot. Mais quand ils défendent, ils courent vers le même ballon au même moment et se rentrent dedans comme deux chèvres têtues.
+Ensuite, Jordi passe au cinq contre deux et met les deux frères au milieu, ensemble. Une catastrophe magnifique. Quand ils attaquent, les frères se comprennent sans un mot. Mais quand ils défendent, ils courent vers le même ballon et se rentrent dedans comme deux chèvres têtues.
 
 Bonk.
+
+« Un a l'esquerra, un a la dreta ! » souffle Jordi.
+
+« Un à gauche, un à droite ! » traduit Laia.
 
 La troisième fois qu'ils se retrouvent par terre, l'un sur l'autre, même Nil sourit.
 
@@ -202,9 +226,11 @@ La troisième fois qu'ils se retrouvent par terre, l'un sur l'autre, même Nil s
 
 « Non, c'est le tien. »
 
+« Il a souri ! crie Laia. Nil a souri ! Jordi, notez la date ! »
+
 * * *
 
-À la fin de la séance, Jordi les réunit à l'ombre des pins. Il trace un triangle dans le sable avec la pointe de sa chaussure. Puis il parle, si doucement que tout le monde doit s'approcher.
+À la fin de la séance, Jordi les réunit à l'ombre des pins. Il trace un triangle dans le sable avec la pointe de sa chaussure.
 
 « El rondo no és un joc. És una escola. Tot el futbol és aquí dins. » Il cherche ses mots français. « Le rondo, ce n'est pas un jeu. C'est une école. Tout le football est dedans. »
 

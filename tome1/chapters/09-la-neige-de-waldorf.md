@@ -8,161 +8,337 @@ resume: En janvier, les frères découvrent le froid, la neige et une école où
 illustration: Plan large, tôt le matin, devant une petite maison beige de Waldorf couverte de neige, sous un ciel blanc et bas. Au premier plan, BriBri, petite afro piquée de flocons, en pyjama et en claquettes avec une chaussette rouge et une chaussette jaune, renverse la tête et tire la langue pour attraper la neige qui tombe. Juste derrière lui, Kaydoudou, grand et mince, fine raie dessinée à gauche, emmitouflé dans un anorak rouge trop neuf, goûte du bout des doigts une poignée de neige, l'air méfiant. Au fond, un panier de basket dans l'allée, le filet gelé. Lumière bleutée, silence, émerveillement.
 ---
 
-La première chose que BriBri fit en Amérique, ce fut d'en manger un morceau.
+« Kaydoudou, viens vite ! Le ciel tombe en morceaux ! »
 
-C'était le deuxième matin. Kaydoudou s'était réveillé dans un silence si épais qu'il avait cru, une seconde, être devenu sourd. À Douala, le jour commençait toujours par un bruit : un benskin qui klaxonnait, le coq des voisins, la radio de Madame Ekotto. Ici, rien. Il avait écarté le rideau de la chambre, et le monde avait disparu sous un drap blanc.
+Kaydoudou ouvre les yeux. Deuxième matin en Amérique.
 
-BriBri était déjà dehors, au milieu de l'allée, en pyjama et en claquettes, une chaussette rouge et une chaussette jaune, la tête renversée et la langue tirée vers le ciel.
+Et quel silence. À Douala, le jour commence toujours par un bruit : un benskin, le coq des voisins, la radio de Madame Ekotto. Ici, rien. Il écarte le rideau.
 
-« Kaydoudou, viens vite ! Le ciel tombe en morceaux. »
+Le monde a disparu sous un drap blanc.
 
-Depuis la cuisine, Maman cria quelque chose à propos de pneumonie et de claquettes. Trop tard. Kaydoudou avait déjà enfilé son anorak, un anorak rouge tout neuf acheté à l'aéroport, qui faisait un bruit de sac plastique à chaque mouvement, et il descendait les marches du perron.
+BriBri est déjà dehors, au milieu de l'allée. En pyjama. En claquettes. Avec sa chaussette rouge et sa chaussette jaune. La tête renversée, la langue tirée vers le ciel.
 
-Le froid le mordit aux oreilles. Pas une petite morsure polie : une vraie, avec des dents. L'air sentait le métal et rien d'autre. Les flocons descendaient lentement, sans se presser, comme s'ils avaient toute la journée devant eux. Ils se posaient sur le toit de la voiture, sur le panier de basket au bout de l'allée, dont le filet avait gelé, et sur la petite afro de BriBri, où ils restaient accrochés comme du coton.
+« BriBri ! crie Maman depuis la cuisine. En claquettes ? Tu vas geler jusqu'aux os ! Et mets un bonnet ! »
 
-BriBri ramassa une poignée de neige et la fourra dans sa bouche.
+Trop tard. Kaydoudou enfile son anorak rouge, tout neuf, qui fait un bruit de sac plastique. Frrt. Frrt.
 
-« Alors ? » demanda Kaydoudou.
+Dehors, le ciel est bas et la lumière toute bleue. Le froid lui mord les oreilles. Pas une petite morsure polie. Une vraie, avec des dents.
 
-Son frère mâcha longuement, l'air très sérieux, comme Papa quand il goûtait une sauce.
+Les flocons se posent sur le panier de basket, au bout de l'allée, dont le filet a gelé. Et sur la petite afro de BriBri, où ils restent accrochés comme du coton.
 
-« Ça n'a aucun goût, annonça-t-il. C'est de la glace sans sucre. » Il en reprit une poignée. « Mais c'est gratuit. »
+« Regarde ! Il y en a sur la voiture ! Sur le panier ! Sur moi ! »
 
-Kaydoudou en prit une pincée du bout des doigts, la flaira d'un air méfiant, et goûta à son tour. La neige lui piqua les dents, fondit sur sa langue, devint de l'eau, puis plus rien du tout. Il pensa que c'était exactement ce qu'il ressentait depuis l'atterrissage : tout était froid, tout était nouveau, et tout fondait avant qu'il ait compris ce que c'était.
+BriBri fourre une poignée de neige dans sa bouche. Il mâche, très sérieux.
+
+« Alors ? » demande Kaydoudou.
+
+« Ça n'a aucun goût. C'est de la glace sans sucre. »
+
+Il en reprend une poignée.
+
+« Mais c'est gratuit ! »
+
+« On ne mange pas ce qui tombe du ciel, BriBri. Il y a de la poussière dedans. »
+
+« La poussière d'Amérique, elle est propre. »
+
+Kaydoudou prend une pincée du bout des doigts. Il la renifle, méfiant. Puis il goûte. La neige lui pique les dents, fond, devient de l'eau. Puis plus rien du tout.
+
+*Comme tout, ici*, pense-t-il. *C'est froid, c'est nouveau, et ça fond avant que je comprenne.*
+
+« Tu en veux encore ? demande BriBri. Il y en a pour toute la famille ! Et pour tout Bonamoussadi ! »
+
+Papa sort sur le perron, en chaussettes.
+
+« Les garçons, rentrez avant de devenir des glaçons ! »
 
 * * *
 
-La maison de Waldorf était petite et beige, posée dans une rue de maisons beiges presque pareilles, chacune avec sa pelouse et sa boîte aux lettres sur un poteau. Elle avait un secret, que BriBri avait découvert dès le premier soir : un sous-sol. Une pièce entière cachée sous la terre, avec un sol en ciment, une machine à laver, une chaudière qui ronronnait comme un chat géant et une ampoule nue au bout d'un fil. BriBri disait que c'était une cave à trésors. Kaydoudou trouvait que c'était surtout une cave.
+La maison de Waldorf est petite et beige. Le premier soir, BriBri remonte du sous-sol en courant.
 
-À midi, on sonna à la porte. Sur le perron se tenaient un vieux monsieur très grand avec une pelle, une vieille dame avec un plat recouvert de papier d'aluminium, et un chien bas sur pattes, aux oreilles immenses, qui se roula aussitôt dans la neige aux pieds de BriBri.
+« Kaydoudou ! Viens voir ! Il y a une maison sous la maison ! Avec une machine à laver ! Et un gros chat en fer qui ronronne ! »
 
-« Welcome to the neighborhood ! » dit la dame, avec un sourire qui lui remontait jusqu'aux yeux.
+« C'est une chaudière. »
 
-Elle s'appelait Mrs. Hayes, son mari Mr. Hayes, et le chien Biscuit. Le plat contenait une tarte à la patate douce, encore tiède, qui sentait la cannelle et le beurre. Papa remercia dans son anglais de bureau, Maman dans son anglais d'école, et BriBri, qui avait décidé d'être très poli, s'avança d'un pas.
+« C'est un chat. Et il y a une lampe toute nue au bout d'un fil ! C'est une cave à trésors ! »
+
+« C'est une cave. »
+
+À midi, on sonne. Un vieux monsieur très grand avec une pelle, une vieille dame avec une tarte, et un chien aux oreilles immenses qui se roule dans la neige.
+
+« Welcome to the neighborhood ! dit la dame. I'm Mrs. Hayes. This is Mr. Hayes. And this little monster is Biscuit ! »
+
+« Bis-kwit ! répète BriBri. Comme un gâteau ! »
+
+« Exactly ! And Biscuit likes you. He never likes anybody ! »
+
+« Wouf ! »
+
+BriBri s'avance, très poli.
 
 « Thank you, madame. I am BriBri. I like very much your snow. It is delicious. »
 
-Mrs. Hayes éclata d'un rire énorme, qui fit trembler le papier d'aluminium.
+Mrs. Hayes éclate d'un rire énorme.
 
-« Delicious ? Oh, baby. Wait till you taste the pie. »
+« Delicious ? Oh, baby. Wait till you taste the pie ! It's sweet potato ! »
 
-Mr. Hayes, lui, montra seulement aux garçons comment pousser la neige avec la pelle, lentement, sans un geste de trop, comme Tonton Fokou.
+Mr. Hayes, lui, parle peu. Il montre aux garçons comment pousser la neige avec la pelle, sans un geste de trop.
+
+« Slow, dit-il. Like this. Snow is heavy. »
+
+*Comme Tonton Fokou*, pense Kaydoudou.
+
+« Moi aussi ! Moi aussi ! » crie BriBri. Il prend la pelle, glisse, et tombe en arrière dans la neige.
+
+« Regardez ! Je suis un bonhomme de neige ! »
+
+« Un bonhomme de neige qui parle trop », dit Kaydoudou.
 
 * * *
 
-Le lundi, un vrai bus scolaire jaune, exactement comme dans les films, les emmena à l'école.
+Lundi, un vrai bus scolaire jaune s'arrête devant la maison.
 
-Au Cameroun, Kaydoudou avait toujours eu de bonnes notes en anglais. Mais l'anglais de Douala était lent, poli, écrit au tableau à la craie. Celui de Waldorf roulait à toute vitesse et avalait la moitié des mots. Quand la maîtresse lui posa une question, Kaydoudou comprit un mot sur cinq. Vingt-cinq visages se tournèrent vers lui. Il sentit la chaleur lui monter au cou, aux joues, aux oreilles (au moins, elles n'avaient plus froid), et il ne sortit de sa bouche qu'un seul mot.
+« Kaydoudou ! C'est le bus des films ! Tu crois qu'il vole ? »
+
+« C'est un bus, BriBri. »
+
+Au Cameroun, Kaydoudou avait de bonnes notes en anglais. Un anglais lent, écrit à la craie. Celui de Waldorf roule à toute vitesse et avale la moitié des mots.
+
+« Sokaydoudouwhereyoufromandwhatdoyouliketodoonweekends ? »
+
+Vingt-cinq visages se tournent vers lui. Kaydoudou a compris un mot sur cinq. La chaleur lui monte au cou, aux joues, aux oreilles. Au moins, elles n'ont plus froid.
 
 « Sorry. »
 
-À Bonamoussadi, il levait toujours la main le premier. Ici, en une matinée, il était devenu quelqu'un qui ne savait rien dire.
+C'est tout ce qui sort.
 
-L'après-midi, les deux frères allèrent ensemble dans la petite salle de Mrs. Patterson, la professeure d'anglais des élèves venus d'ailleurs. Il y avait des affiches partout, avec des mots et des dessins, une plante verte qui avait l'air de bien s'amuser, une fille arrivée de Corée, un garçon du Guatemala, et Mrs. Patterson elle-même : des lunettes rouges au bout d'une chaînette, un gilet aux poches pleines de feutres, et une voix qui prenait son temps.
+« That's okay, sweetie. Take your time. »
 
-« Today, dit-elle en détachant chaque mot comme une perle, you will tell us about your family. »
+*À Bonamoussadi, je lève toujours la main le premier. Ici, je ne suis personne.*
 
-BriBri leva la main si vite qu'il faillit se décrocher l'épaule.
+L'après-midi, les frères vont dans la petite salle de Mrs. Patterson, la prof d'anglais des élèves venus d'ailleurs. Il y a une fille arrivée de Corée et un garçon du Guatemala. Et Mrs. Patterson : des lunettes rouges au bout d'une chaînette, un gilet aux poches pleines de feutres, et une voix qui prend son temps.
+
+« Today, you will tell us about your family. »
+
+BriBri lève la main si vite qu'il manque de se décrocher l'épaule.
 
 « My name is BriBri. I am ten. I am from Cameroon. I have one brother, he is very serious. And in my house, my mother cooks in the chicken. »
 
-Mrs. Patterson pencha la tête.
+Mrs. Patterson penche la tête.
 
 « In the... chicken ? »
 
-« Yes, confirma BriBri, très fier. Every day. Big chicken. »
+« Yes, confirme BriBri, très fier. Every day. Big chicken. »
 
-La fille de Corée se cacha derrière sa main. Le garçon du Guatemala faillit tomber de sa chaise. Et BriBri, au lieu de devenir tout rouge, se mit à rire plus fort que tout le monde, puis salua comme un artiste à la fin d'un spectacle. Mrs. Patterson riait aussi. Elle dessina au tableau une cuisine avec une casserole, puis une poule aux plumes en bataille.
+« Me, first day, I say "I am a pineapple" », souffle le garçon du Guatemala en riant.
+
+La fille de Corée se cache derrière sa main. Le garçon du Guatemala manque de tomber de sa chaise. Et BriBri ? Il ne devient pas rouge. Il rit plus fort que tout le monde, puis il salue, comme un artiste à la fin du spectacle.
+
+Au tableau, Mrs. Patterson dessine une casserole, puis une poule aux plumes en bataille.
 
 « Kitchen, dit-elle en montrant la casserole. Chicken, dit-elle en montrant la poule. »
 
-« Ahhh, fit BriBri. My mother cooks the chicken in the kitchen ! »
+« Ahhh ! My mother cooks the chicken in the kitchen ! »
 
-Toute la classe applaudit. Kaydoudou regardait son petit frère avec une sorte d'émerveillement jaloux. BriBri tombait, se relevait, et faisait rire le monde avec lui. Kaydoudou, lui, avait tellement peur de tomber qu'il ne bougeait plus du tout.
+Toute la classe applaudit. Mrs. Patterson se tourne vers Kaydoudou.
 
-À la fin du cours, Mrs. Patterson s'arrêta près de sa table. Elle ne lui demanda rien. Elle posa seulement devant lui un petit carton, où elle avait écrit « snow » et dessiné un flocon.
+« And you, Kaydoudou ? »
+
+Il secoue la tête.
+
+« Next time, then. »
+
+Kaydoudou regarde son petit frère. Un peu émerveillé. Un peu jaloux. BriBri tombe, se relève, et le monde rit avec lui. Kaydoudou, lui, a si peur de tomber qu'il ne bouge plus du tout.
+
+À la fin du cours, Mrs. Patterson pose devant lui un petit carton. Dessus, elle a écrit « snow », avec un flocon.
 
 « Words are like snow, dit-elle doucement. One, then another one. And one morning, everything is white. »
 
-Kaydoudou comprit presque tout. Les mots, c'est comme la neige : un flocon, puis un autre, et un matin, tout est blanc. Il garda le carton dans sa poche toute la semaine.
+Kaydoudou comprend presque tout. Les mots, c'est comme la neige : un flocon, puis un autre. Et un matin, tout est blanc.
+
+« Thank you », dit-il. Tout bas. Mais il le dit.
+
+« You're welcome... Kay-dou-dou. »
+
+Elle a dit son nom. Exactement comme il faut.
+
+Dans le bus du retour, BriBri rebondit sur son siège.
+
+« Tu as vu ? Ils ont rigolé AVEC moi ! »
+
+« Tu as dit que Maman cuisine dans une poule. »
+
+« Oui. Et maintenant, tout le monde me connaît ! »
+
+Il garde le carton dans sa poche toute la semaine.
 
 * * *
 
-Les terrains de football, derrière l'école, avaient disparu sous la neige. On voyait seulement dépasser le haut des buts, avec un petit toit blanc sur chaque barre transversale. Alors, chaque soir, les frères descendaient au sous-sol avec le ballon de Mami.
+Derrière l'école, les terrains de football ont disparu. On voit seulement le haut des buts.
 
-Ils jonglaient entre la machine à laver et la chaudière, sous l'ampoule qui se balançait chaque fois que le ballon la frôlait, et leurs ombres dansaient sur les murs. Dix passes sans toucher le sol : c'était la règle. À la sixième, le ballon rebondit sur un tuyau. À la huitième, il cogna le plafond.
+« Les buts ont mis un chapeau blanc », dit BriBri, tout triste.
 
-« Doucement, en bas ! » cria Maman depuis la cuisine.
+Alors, chaque soir, les frères jonglent au sous-sol avec le ballon de Mami. Quand le ballon frôle l'ampoule, elle se balance, et leurs ombres dansent sur les murs.
 
-Un soir, Kaydoudou garda le ballon contre lui plus longtemps que d'habitude. Le cuir était froid. Le carré de pagne rouge et jaune, cousu par Mami, avait un peu pâli. Sur le côté, il y avait les signatures au feutre : Ousmane, Mireille, Tonton Fokou. Et dans les coutures, tout au fond, il restait un peu de poussière rouge. Kaydoudou approcha son nez. Ça sentait encore Bonamoussadi : la terre chaude, la pluie de la veille, le manguier.
+« Six ! Sept ! » Bong, un tuyau. « Recommence ! »
 
-« Là-bas, c'est déjà la nuit, dit BriBri, assis sur la dernière marche de l'escalier. Ousmane dort. »
+« Huit ! » Bang, le plafond.
 
-« Ou il joue sous les lampadaires », dit Kaydoudou.
+« Doucement, en bas ! » crie Maman.
+
+« Pardon, Maman ! C'est le ballon ! »
+
+Un soir, Kaydoudou garde le ballon contre lui. Le carré de pagne a un peu pâli. Il y a les signatures : Ousmane, Mireille, Tonton Fokou. Et tout au fond des coutures, un peu de poussière rouge.
+
+« Tu fais quoi ? demande BriBri. Tu lui parles ? »
+
+« Je le sens. Ça sent encore Bonamoussadi. »
+
+BriBri vient renifler.
+
+« Ça sent le manguier ! Et un peu les pieds de Radio. »
+
+« Là-bas, c'est déjà la nuit. Ousmane dort. »
+
+« Ou il joue sous les lampadaires. »
 
 « Sans nous. »
 
-Kaydoudou ne répondit pas. Il relança le ballon en l'air, et cette fois, ils firent les dix passes sans qu'il touche le sol.
+Kaydoudou ne répond pas. Il relance le ballon. Et cette fois, ils font les dix passes sans qu'il touche le sol.
+
+« DIX ! hurle BriBri. Ousmane, tu as entendu ? DIX ! »
 
 * * *
 
-Un soir de la deuxième semaine, Papa rentra du travail avec de la neige sur les épaules et un papier à la main.
+Un soir, Papa rentre avec de la neige sur les épaules.
 
-« J'ai trouvé du football », annonça-t-il.
+« Les garçons ! J'ai trouvé du football ! »
 
-Le papier venait du tableau d'affichage de l'épicerie : un centre communautaire organisait du futsal tous les samedis matin. Le futsal, expliqua Papa, c'était du football en salle, sur un terrain de handball, à cinq contre cinq avec les gardiens.
+« Où ? Tout est blanc ! »
 
-Le gymnase sentait la cire, la sueur et le chocolat chaud du distributeur, avec des lignes de toutes les couleurs par terre et deux petits buts. Le ballon était plus petit qu'un ballon normal, et lourd. Quand BriBri le lâcha, il ne rebondit presque pas. Il tomba sur le parquet avec un bruit sourd, comme un sac de riz.
+« Dans un gymnase. Le centre communautaire fait du futsal, tous les samedis matin. »
 
-« Il est mort, ce ballon », dit BriBri, horrifié.
+« Du fut-quoi ? » demande BriBri.
+
+« Du futsal. Du football en salle. Cinq contre cinq, avec les gardiens. »
+
+« Et il fait chaud, dans ce gymnase ? » demande Maman.
+
+« Plus chaud que dehors. Ce n'est pas difficile. »
+
+Samedi. Le gymnase sent la cire et le chocolat chaud. Sur le banc, Papa ôte son bonnet.
+
+« Je reste là. Montrez-leur Bonamoussadi ! »
+
+Le ballon est petit et lourd. BriBri le lâche. Ploc. Il ne rebondit presque pas.
+
+« Il est mort, ce ballon ! » dit BriBri, horrifié.
 
 « Nah, man, he's just sleepy ! »
 
-Le garçon qui venait de parler était petit et vif, avec des cheveux noirs dressés sur la tête et des yeux qui bougeaient autant que sa bouche.
+C'est un garçon petit et vif, cheveux noirs dressés sur la tête, avec des yeux qui bougent autant que sa bouche.
 
 « You guys new ? Where you from ? »
 
-« Cameroon », répondit Kaydoudou.
+« Cameroon », répond Kaydoudou.
 
 « Cameroon ? Like, Africa Cameroon ? That's sick ! »
 
-BriBri recula d'un pas, inquiet.
+BriBri recule d'un pas, inquiet.
 
 « No, no. We are not sick. We are very good. »
 
-Le garçon éclata de rire si fort qu'il dut s'asseoir par terre. Il s'appelait Diego Ramírez, il avait onze ans, ses parents venaient du Salvador, et il expliqua, en mélangeant l'anglais, l'espagnol et ses deux mains, que « sick », ici, voulait dire « génial ». Avant la fin de la matinée, il leur avait aussi appris « bro » (mon frère), « my bad » (c'est ma faute) et « no way » (impossible). BriBri le nomma traducteur officiel de la famille Ngassa. Diego accepta le poste sans discuter.
+Le garçon rit si fort qu'il doit s'asseoir par terre. Puis il parle, avec l'anglais, l'espagnol et ses deux mains.
 
-Puis on joua.
+« I'm Diego. Diego Ramírez. Eleven. My parents, El Salvador. Me, right here ! "Sick", ici, ça veut dire génial ! Et "bro", c'est mon frère. "My bad", c'est ma faute. "No way", c'est impossible ! »
 
-Au premier ballon, Kaydoudou fit ce qu'il faisait sur la terre rouge : il contrôla, leva la tête, chercha. Il n'eut pas le temps de finir. Un garçon en tee-shirt gris lui avait déjà pris le ballon dans les pieds. Au deuxième ballon, pareil. Sur le terrain de Bonamoussadi, il y avait de la place et de la poussière, on pouvait réfléchir. Ici, il n'y avait pas de place, et le temps n'existait pas.
+« Diego, déclare BriBri, tu es nommé traducteur officiel de la famille Ngassa. »
 
-Alors, au troisième ballon, Kaydoudou changea quelque chose. Pendant que le ballon roulait vers lui, au lieu de le regarder arriver, il pensa. Diego, à gauche. Il ne savait même pas s'il avait vu Diego ou s'il l'avait deviné. Le ballon toucha son pied et repartit aussitôt, en une seule touche. Diego le remit à BriBri, qui frappa entre les jambes du gardien.
+« Deal, bro ! You guys, with me ! Team Diego ! »
+
+« Okay, guys ! crie le monsieur du centre. Five against five ! Let's go ! »
+
+Premier ballon. Kaydoudou fait comme sur la terre rouge : il contrôle, il lève la tête, il cherche. Trop tard. Un garçon en tee-shirt gris lui a déjà pris le ballon.
+
+« Too slow, man ! »
+
+« It's okay, bro, dit Diego. First time, everybody gets eaten. »
+
+Deuxième ballon. Pareil.
+
+« Bro ! crie Diego. Pense vite ! Ici, il n'y a pas de temps ! »
+
+*Pas vite*, se dit Kaydoudou. *Avant. Je pense avant.*
+
+Troisième ballon.
+
+Tout ralentit. Le ballon roule vers lui sur le parquet. Le tee-shirt gris fonce. Kaydoudou ne regarde pas le ballon. Il pense.
+
+*Diego. À gauche.*
+
+Le ballon touche son pied et repart aussitôt. Une seule touche.
+
+Diego le remet à BriBri. BriBri frappe entre les jambes du gardien. Le filet fait « chhh ».
 
 Un but en deux passes. Deux secondes, peut-être trois.
 
-Kaydoudou resta immobile au milieu du parquet. Pour la première fois depuis l'avion, il sentit quelque chose se remettre à sa place dans sa poitrine. Au futsal, la décision devait arriver avant le ballon. Et ça, penser avant, il savait le faire.
+« BRO ! hurle Diego. One touch ! ONE TOUCH ! »
 
-BriBri, lui, avait découvert la semelle. Le ballon lourd lui collait au pied comme un caramel. Il le faisait rouler dessous, à gauche, à droite, en arrière, et les défenseurs ne savaient plus de quel côté il allait partir. Il riait tout seul.
+« Deux passes, Kaydoudou ! crie BriBri. Comme le une-deux du Njangi, en tout petit ! »
 
-« Il est vivant, finalement, ce ballon ! »
+« En tout petit, et en très vite », dit Kaydoudou. Puis il se tourne vers Diego. « Pas vite, Diego. Avant. »
 
-Après la séance, ils burent à la fontaine du couloir, les joues brûlantes. Dehors, derrière les vitres, la neige recommençait à tomber. Diego s'essuya la bouche avec sa manche.
+« Before ? Okay, before ! Same thing ! »
 
-« You guys gotta try out for Potomac Valley. »
+Kaydoudou reste immobile au milieu du parquet. Pour la première fois depuis l'avion, quelque chose se remet à sa place dans sa poitrine. Au futsal, la décision doit arriver avant le ballon.
 
-« Potomac quoi ? » demanda BriBri.
+Et ça, penser avant, il sait le faire.
+
+BriBri, lui, découvre la semelle. Le ballon lourd colle sous son pied. À gauche, à droite, en arrière : les défenseurs ne savent plus où il va.
+
+« Moi, je ne pense pas avant, crie-t-il. Je pense avec mes pieds. Ils sont plus rapides que ma tête ! »
+
+« Il est vivant, finalement, ce ballon ! Regardez : la semelle caramel ! »
+
+« The what ? » demande Diego.
+
+« La semelle CARAMEL ! Ça colle ! »
+
+« Okay, okay ! Caramel ! »
+
+Le garçon au tee-shirt gris se gratte la tête.
+
+« How does he do that ? »
+
+« Caramel, man », dit Diego, comme si c'était évident.
+
+Après la séance, ils boivent à la fontaine du couloir, les joues brûlantes. Derrière les vitres, la neige recommence à tomber.
+
+« You guys gotta try out for Potomac Valley », dit Diego.
+
+« Potomac quoi ? »
 
 « Potomac Valley Soccer Academy. Best club around here. The tryouts are in three weeks. »
 
 « Tryouts ? »
 
-Diego chercha ses mots, puis claqua des doigts.
+Diego claque des doigts.
 
 « Like... selección ? They pick who's good. »
 
-« Une sélection, s'écria BriBri, comme les Lions ! »
+« Une sélection ! s'écrie BriBri. Comme les Lions ! Papa, on peut y aller ? Dis oui ! Dis oui ! »
 
-Kaydoudou ne dit rien. Il regardait les flocons tomber sans bruit sur le parking. Trois semaines. Vingt et un jours pour devenir assez bon, dans un pays où même la neige ne faisait pas de bruit.
+« On verra », dit Papa.
+
+« Ça veut dire oui ! »
+
+« Et ils prennent des nouveaux ? demande Kaydoudou. Comme nous ? »
+
+« With that one touch, bro ? For sure. Maybe. I don't know ! »
+
+Kaydoudou ne dit plus rien. Il regarde les flocons tomber sans bruit sur le parking.
+
+Trois semaines. Vingt et un jours pour devenir assez bon. Dans un pays où même la neige ne fait pas de bruit.
 
 > [!CARNET] Leçon du Ballon n°9 : Petit espace, grande tête
 > Au futsal, il n'y a pas de temps. Le défenseur arrive en même temps que le ballon.

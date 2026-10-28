@@ -62,7 +62,7 @@ Au milieu du match, quelque chose arrive de l'autre côté du stade. Un frisson.
 
 « La vague ! hurle BriBri. Elle arrive ! ELLE ARRIVE ! »
 
-Kaydoudou la regarde venir. Elle traverse les tribunes d'en face. Elle tourne dans le virage. Elle grimpe vers eux, rangée après rangée.
+Kaydoudou la regarde venir. Elle traverse les tribunes d'en face. Elle fait le tour du stade. Elle grimpe vers eux, rangée après rangée.
 
 « Prêts ? » demande Papa.
 
@@ -172,7 +172,9 @@ Et l'Égypte perd 3-2.
 
 Et puis il y a le Maroc.
 
-Le Maroc joue avec un courage de lion et une joie de fête de quartier. Il gagne, et il gagne encore.
+« Le Maroc joue avec un courage de lion ! s'écrie Papa. Et une joie de fête de quartier ! »
+
+Il gagne, et il gagne encore.
 
 « Quart de finale ! annonce Papa. Le Maroc contre la France, à Boston ! »
 
@@ -210,7 +212,7 @@ L'Espagne contre l'Argentine.
 
 « Grandma says : may the best team win », traduit Diego. Puis il se tourne vers Kaydoudou. « Who do you want to win ? »
 
-Kaydoudou hausse les épaules. Il ne sait pas. Puis le match commence. Au bout de dix minutes, il sait.
+« Je ne sais pas », dit Kaydoudou en haussant les épaules. Puis le match commence. Au bout de dix minutes, il sait.
 
 L'Espagne fait voyager le ballon.
 

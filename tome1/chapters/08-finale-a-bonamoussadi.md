@@ -8,155 +8,321 @@ resume: La finale du tournoi des quartiers contre les Panthères de Deïdo, deva
 illustration: Plan rapproché, intérieur d'un avion, matin, lumière blanche par le hublot. BriBri (10 ans, petite afro, sourire avec l'écart entre les dents, une chaussette rouge et une chaussette jaune visibles sous le siège) est assis contre le hublot et regarde dehors, le front presque collé à la vitre ; par le hublot, la terre rouge et les toits de tôle de Douala s'effacent sous des nuages blancs. À côté de lui, Kaydoudou (11 ans, raie fine à gauche, tee-shirt vert) a les yeux fermés et serre contre sa poitrine un cahier couvert de pagne vert et orange. Sur l'accoudoir, la petite main de BriBri tient fermement celle de son frère.
 ---
 
-Le premier tambour se mit à battre à six heures du matin, et BriBri crut d'abord que c'était son cœur.
+Boum ! Boum ! Ba-da-boum !
 
-Il sauta du lit, colla son nez contre la fenêtre. Dans la rue, trois hommes du quartier installaient de grands tambours en peau de chèvre sous le manguier, et un quatrième les essayait en riant, boum, boum, ba-da-boum. Il n'y avait même pas encore de soleil, juste un ciel rose au-dessus des tôles. La finale ne commençait qu'à quatre heures de l'après-midi.
+Six heures du matin. BriBri ouvre les yeux. Il croit d'abord que c'est son cœur.
 
-Mais à Bonamoussadi, ce jour-là, personne n'avait la patience d'attendre.
+Sous le manguier, sous un ciel encore rose, des hommes installent de grands tambours.
 
-À midi, un taxi jaune s'arrêta devant la maison des Ngassa, et une petite dame très droite en descendit, un foulard de pagne sur la tête et un panier sur le bras. Mami Nyanga avait pris le car de Bafoussam à l'aube, avec ses virages et son brouillard, et elle n'avait même pas été malade.
+« Kaydoudou ! Réveille-toi ! C'est la finale ! »
 
-« Je ne pouvais pas rater ça, dit-elle en serrant BriBri si fort qu'il entendit craquer son dos. Mes lions en finale. Et puis il faut bien que quelqu'un vous dise au revoir comme il faut. »
+« Je sais, grogne Kaydoudou sous son drap. Elle commence dans dix heures. »
 
-Dans son panier, il y avait du ndolé dans une marmite enveloppée de torchons, des beignets, et un feutre noir tout neuf, dont elle ne dit rien.
+« Dix heures, c'est rien du tout ! Les tambours sont déjà prêts ! »
 
-* * *
+« Les tambours n'ont pas besoin de dormir. Moi, si. »
 
-À quatre heures, on ne voyait plus le terrain. On voyait des gens. Des gens sur les murs, des enfants dans le manguier, des benskins garés sur trois rangs, des mamans avec des parasols, des papas debout sur des bidons. Les tambours battaient sans arrêt. Madame Ekotto avait fait tant de beignets-haricots que l'odeur flottait au-dessus du terrain comme un nuage. Tout au bout, sur une chaise en plastique qu'on lui avait donnée au premier rang, Mami était assise très droite, à côté de Papa et de Maman.
+« Personne ne sort sans manger ! crie Maman. Même les champions ! »
 
-Les Panthères de Deïdo entrèrent sur le terrain, et BriBri avala sa salive.
+Aujourd'hui, la finale contre les Panthères de Deïdo. Après-demain, l'avion. Et entre les deux, une promesse d'Ousmane : partir champion.
 
-Elles étaient grandes. Toutes. Même leur plus petit joueur faisait une tête de plus que lui. Elles portaient des maillots jaunes tachetés de noir, et leur gardien avait des bras si longs qu'il pouvait sans doute toucher les deux poteaux sans bouger. Bulldozer, à côté d'elles, aurait eu l'air d'un enfant de chœur.
+*Champion*, pense BriBri. *Ou rien.*
 
-« On va se faire manger », souffla Radio, sans micro pour une fois.
+À midi, une petite dame très droite descend d'un taxi jaune, foulard de pagne sur la tête, panier au bras.
 
-Sous le manguier, BriBri sortit le ballon de Mami. Kaydoudou était prêt. Dix passes. Pied, cuisse, tête. Toute la foule se mit à compter avec eux, et même les Panthères s'arrêtèrent pour regarder. Huit. Neuf. Dix.
+« MAMI ! »
 
-Poing contre poing. Main sur le cœur.
+« Mes lions ! »
 
-Au premier rang, Mami avait porté la main à sa bouche.
+Elle serre BriBri si fort qu'il entend craquer son dos.
 
-* * *
+« Tu es venue en car ? Toute seule ? Avec tous les virages ? »
 
-Le match fut un mur contre un mur.
+« Avec mes deux jambes et mon panier. Le car a fait le reste. Et je n'ai même pas été malade, moi. Pas comme un certain petit garçon. »
 
-Les Panthères jouaient fort, de la poitrine et des épaules. Elles gagnaient tous les ballons en l'air, tous les duels. Quand BriBri essaya son crochet du margouillat dans les premières minutes, il rebondit contre un défenseur comme une balle de tennis contre une porte.
+« Mamiii ! »
 
-Alors BriBri fit autre chose. Il fit tout ce qu'il avait appris.
+« Je ne pouvais pas rater ça. Mes lions en finale ! Et puis il faut bien que quelqu'un vous dise au revoir comme il faut. »
 
-Quand deux Panthères venaient sur lui, il donnait le ballon tout de suite. Quand un adversaire se mettait entre lui et son frère, il faisait deux pas, et redevenait visible. Quand il n'avait pas le ballon, il courait quand même, pour emmener un défenseur avec lui et ouvrir une porte pour Mireille. Il ne dribblait plus pour battre. Il dribblait pour attirer, puis il donnait. Le ballon passait par lui comme l'eau passe par un caniveau : vite, et sans jamais s'arrêter.
+Dans son panier, il y a du ndolé, des beignets, et un feutre noir tout neuf.
 
-Une fois, près de la touche, il fit le crochet du margouillat juste assez pour que deux maillots tachetés se jettent sur lui, puis il glissa le ballon à Radio d'une petite touche. Radio fut si surpris d'être seul qu'il en oublia de commenter. Sous le manguier, Tonton Fokou ne cria pas « Le ballon doit voyager ! ». Pour une fois, il n'en avait pas besoin.
+« C'est pour quoi, le feutre ? »
 
-Et Kaydoudou dirigeait. Pas avec la voix, pas encore beaucoup. Avec les mains. Une paume ouverte vers le sol : doucement, garde-le. Un bras tendu vers la droite : Mireille est seule. Deux doigts levés : BriBri, pars. Toute l'équipe regardait ses mains comme on regarde un chef d'orchestre.
-
-Mais les Panthères ne laissaient rien passer. Leur gardien aux longs bras sortit une frappe de Samuel du bout des doigts. Ousmane, de l'autre côté, plongea trois fois. À la mi-temps, 0-0. À la fin du match, 0-0 encore, et tout le monde était couvert de poussière rouge, comme si on les avait roulés dans du piment.
-
-Tonton Fokou siffla. Houou.
-
-« Tirs au but ! » hurla le père de Radio dans son micro.
-
-Les tambours se turent d'un coup.
+« Pour plus tard. Mange ton beignet. »
 
 * * *
 
-Cinq tireurs de chaque côté. Les Lionceaux commencèrent. Mireille : but. Panthères : but. Samuel : but, si fort que le filet de fortune se décrocha et qu'il fallut le rattacher. Panthères : but. Radio s'élança, glissa, frappa du tibia. Le ballon passa sous le gardien en roulant, très lentement, et franchit la ligne comme un escargot qui gagne une course. But quand même. Panthères : but.
+À quatre heures, on ne voit plus le terrain : on voit des gens. Mami est au premier rang, entre Papa et Maman.
 
-Kaydoudou s'avança. BriBri le vit essuyer ses mains sur son maillot, une fois, deux fois. Il frappa à ras de terre, dans le coin. Le gardien partit du bon côté. Le ballon passa sous sa main.
+« ET VOICI LES PANTHÈRES DE DEÏDO ! crie le père de Radio dans son micro. Les plus grandes du tournoi ! Et regardez leur gardien, mesdames et messieurs ! Il touche les deux poteaux sans bouger ! »
 
-Quatrième Panthère : poteau. La foule rugit.
+BriBri avale sa salive. Maillots jaunes tachetés de noir. Même leur plus petit joueur a une tête de plus que lui.
 
-Il restait un tir pour chaque équipe. Si les Lionceaux marquaient, c'était fini. Et le cinquième tireur, c'était BriBri.
+« On va se faire manger », souffle Radio.
 
-Il posa le ballon. Il recula. Il entendait son cœur, et les tambours qui ne jouaient plus, et un benskin très loin sur la route. Il regarda le gardien aux longs bras. Il pensa à toutes ses feintes, à son crochet, à son petit pont. Il voulut faire quelque chose d'extraordinaire, et il frappa beaucoup trop fort.
+« Lui, c'est Monsieur Pieuvre, décide BriBri. Huit bras. Au moins. »
 
-Le ballon passa au-dessus des bambous et alla se perdre dans le grillage de Monsieur Bilé.
+« Il en a deux », dit Kaydoudou.
+
+« Deux très longs. Ça compte pour huit. »
+
+Leur capitaine regarde BriBri de tout en haut.
+
+« C'est toi, le petit qui dribble ? Chez nous, les petits, on les ramasse à la pelle. »
+
+« Et moi, les grands, je passe dessous », répond BriBri.
+
+Puis vient le ballon de Mami. Dix passes, et toute la foule compte avec les frères. Même les Panthères regardent.
+
+« HUIT ! NEUF ! DIX ! »
+
+Poing contre poing. Main sur le cœur. Au premier rang, Mami porte la main à sa bouche.
+
+« Allez, mes enfants, dit Tonton Fokou. Faites voyager le ballon. Une dernière fois, tous ensemble. »
+
+* * *
+
+Le match, c'est un mur contre un mur.
+
+Les Panthères gagnent tous les duels. À la 3e minute, BriBri tente son crochet du margouillat. Boing ! Il rebondit contre un défenseur comme une balle contre une porte.
+
+« Aïe, aïe, aïe ! commente Radio en courant. Le margouillat s'est cogné contre un mur ! »
+
+BriBri se relève en frottant son épaule.
+
+*D'accord. Je ne peux pas les battre. Alors je vais les faire bouger.*
+
+« Deux Panthères sur BriBri ? annonce Radio. Le ballon part tout de suite ! Une Panthère devant lui ? Deux pas de côté ! Pas de ballon ? Il court quand même ! Mesdames et messieurs, BriBri Ngassa passe le ballon ! Il PASSE ! Appelez les journalistes ! »
+
+Près de la touche, BriBri tente le margouillat. Juste assez pour que deux maillots tachetés se jettent sur lui. Hop ! Petite touche vers Radio, tout seul.
+
+Radio est si surpris qu'il en oublie de commenter.
+
+« Radio ! crie Mireille. Joue ! Tu commenteras après ! »
+
+Sous le manguier, Tonton Fokou ne crie pas son « Le ballon doit voyager ! ». Pour une fois, il n'en a pas besoin.
+
+Et Kaydoudou dirige. Pas avec la voix : avec les mains. Paume vers le sol, doucement. Bras tendu, Mireille est seule. Deux doigts, BriBri, pars.
+
+« Regardez le numéro 8 ! dit le micro. Il ne parle pas, mais tout le monde l'écoute ! »
+
+« Frappe de Samuel ! Le gardien la sort du bout des doigts ! Et de l'autre côté, Ousmane plonge ! Il plonge encore ! Il plonge TROIS fois ! »
+
+0-0 à la mi-temps. Mireille tape dans un caillou.
+
+« Ils sont trop grands ! Tous les ballons en l'air sont pour eux ! »
+
+« Alors on joue par terre, dit Kaydoudou. Le ballon ne sait pas monter aussi haut qu'eux. Mais il roule plus vite. »
+
+Kaydoudou parle, maintenant. Et on l'écoute.
+
+0-0 à la fin quand même, et tout le monde est rouge de poussière.
+
+« TIRS AU BUT ! »
+
+Les tambours se taisent d'un coup.
+
+* * *
+
+BriBri tire en dernier. Kaydoudou se penche vers lui.
+
+« Fais simple. À ras de terre. Dans le coin. »
+
+« Simple, c'est pour les comptables », répond BriBri.
+
+« Premier tireur : Mireille, la Gazelle ! »
+
+But.
+
+« Les Panthères répondent ! Deuxième tireur : Samuel ! Il frappe si fort que le filet se décroche ! Quelqu'un peut rattacher le filet ? »
+
+But.
+
+« Les Panthères marquent encore ! Troisième tireur : Radio ! »
+
+Radio s'élance. Il glisse. Il frappe... du tibia. Le ballon roule sous le gardien, tout doucement, comme un escargot qui gagne une course.
+
+« Il est où, le ballon ? hurle Radio lui-même. Il est DEDANS ! »
+
+« Les Panthères marquent toujours ! Quatrième tireur : Kaydoudou Ngassa ! »
+
+Kaydoudou essuie ses mains sur son maillot. Une fois. Deux fois. À ras de terre, dans le coin. But.
+
+Quatrième Panthère... POTEAU !
+
+« ARRÊTÉ PAR LE BAMBOU ! 4-3 pour les Lionceaux ! Mesdames et messieurs, si le prochain marque, Bonamoussadi est champion ! Cinquième tireur : BriBri Ngassa ! »
+
+« BRI-BRI ! BRI-BRI ! »
+
+BriBri pose le ballon. Il recule. Les tambours se taisent, mais son cœur, lui, joue encore. Boum. Boum.
+
+Il regarde Monsieur Pieuvre.
+
+*Pas simple. Extraordinaire. Pour partir comme un champion.*
+
+« La frappe du tonnerre », murmure-t-il.
+
+Il frappe beaucoup trop fort.
+
+Le ballon passe au-dessus des bambous. Il monte, il monte, et il va se perdre dans le grillage de Monsieur Bilé.
 
 Silence.
 
-BriBri sentit tout son corps devenir froid. Il regarda ses chaussettes. Il ne pouvait plus regarder personne.
+BriBri sent son corps devenir froid. Il regarde ses chaussettes. Il ne peut plus regarder personne.
 
-La dernière Panthère s'avança. C'était leur capitaine, le plus grand de tous. S'il marquait, on continuait, un tireur chacun, jusqu'à ce que quelqu'un rate.
+« Si leur capitaine marque, on continue, dit le micro, tout bas. Jusqu'à ce que quelqu'un rate. »
 
-Ousmane Petit Pied se plaça sur sa ligne. Il ne sautait pas, ne gesticulait pas comme les autres gardiens. Il était juste debout, calme, les bras le long du corps, avec ses mains immenses qui pendaient comme deux feuilles de bananier.
+En revenant, BriBri passe devant Ousmane.
 
-La Panthère courut. Frappa.
+« Pardon, chuchote-t-il. Pardon, Ousmane. »
 
-Ousmane s'envola vers la droite. Il ne bloqua pas le ballon. Il le repoussa du bout de ses longs doigts, contre le poteau en bambou, qui trembla, qui pencha encore un peu plus, et le ballon revint sur le terrain.
+Ousmane ne le regarde pas. Il regarde le ballon.
 
-Pendant une seconde, personne ne bougea.
+« Regarde bien. »
 
-Puis Bonamoussadi explosa.
+Le capitaine des Panthères s'avance. Celui qui ramasse les petits à la pelle.
+
+Ousmane se place sur sa ligne. Il ne saute pas. Il ne fait pas de grimaces. Il est debout, calme, ses mains immenses pendues comme deux feuilles de bananier.
+
+Tout ralentit.
+
+La Panthère court. La poussière se lève derrière elle. BriBri n'entend plus rien. Même plus son cœur.
+
+Elle frappe.
+
+Ousmane s'envole vers la droite. Il ne bloque pas le ballon. Il le pousse du bout de ses longs doigts. Le ballon frappe le poteau en bambou. Le poteau tremble. Il penche encore un peu plus. Et le ballon revient sur le terrain.
+
+Une seconde, personne ne bouge.
+
+Puis Bonamoussadi explose.
+
+« CHAMPIOOOONS ! LES LIONCEAUX SONT CHAMPIONS DES QUARTIERS ! »
 
 * * *
 
-BriBri ne se rappela jamais exactement ce qui se passa ensuite. Il se souvint d'avoir couru vers Ousmane et d'être tombé sur lui, avec toute l'équipe par-dessus. Il se souvint d'Ousmane qui riait, lui qui ne riait jamais, sous une montagne de maillots. Il se souvint des tambours qui repartaient, plus fort qu'au matin.
+Après, BriBri ne se souvient que de morceaux.
 
-Il se souvint de Mami.
+Il court vers Ousmane et tombe sur lui. Toute l'équipe tombe par-dessus. Sous la montagne de maillots, Ousmane rit. Ousmane, qui ne rit jamais.
 
-Elle était au milieu du terrain, avec les femmes du quartier, et elle dansait. Elle dansait comme au njangi, les bras en l'air, le foulard qui glissait, et elle chantait la chanson qui montait et qui descendait, et les mamans de Bonamoussadi, qui ne la connaissaient pas, lui répondaient quand même.
+« J'ai tout raté ! crie BriBri dans son oreille. Et toi, tu as tout sauvé ! »
 
-Et il se souvint de Tonton Fokou, sous le manguier, un peu à l'écart. Il était assis sur son bidon jaune, la casquette baissée sur les yeux. Ses épaules tremblaient. Quand BriBri s'approcha, il se frotta vite le visage avec la manche.
+« Toi, tu rates. Moi, j'arrête. Ça s'appelle une équipe. »
+
+Kaydoudou passe la tête dans la montagne de maillots.
+
+« On part champions, BriBri. Comme il a dit. »
+
+Les tambours repartent, plus fort qu'au matin.
+
+« Mesdames et messieurs, crie Radio, je n'ai plus de voix ! Mais je commente quand même ! »
+
+Monsieur Bilé descend de son mur avec le ballon du tir raté.
+
+« Tiens, champion. Ton ballon était encore chez moi. »
+
+Papa soulève BriBri comme une plume.
+
+« Tu as fait le plus haut tir au but de l'histoire de Douala, mon fils ! Même les oiseaux l'ont vu passer ! »
+
+Et il y a Mami, qui danse au milieu du terrain, les bras en l'air, le foulard qui glisse. Elle chante la chanson du njangi, et les mamans du quartier lui répondent.
+
+« Mami ! Tu danses comme Roger Milla ! »
+
+« C'est Roger Milla qui danse comme moi, mon fils ! »
+
+Et il y a Tonton Fokou, sous le manguier, sur son bidon jaune. La casquette baissée sur les yeux. Les épaules qui tremblent. Quand BriBri arrive, il se frotte vite le visage avec sa manche.
 
 « La poussière, dit-il. Cette poussière rouge, elle entre partout. »
 
-BriBri fit semblant de le croire, et s'assit à côté de lui un moment, sans rien dire, en balançant ses jambes.
+« Oui, Tonton. Elle entre partout. »
 
-Le soir, quand le terrain fut vide, Mami sortit de son panier le feutre noir tout neuf.
+BriBri fait semblant de le croire. Il s'assoit à côté de lui et balance ses jambes.
 
-« Donne-moi ton ballon, BriBri. »
+Le soir, quand le terrain est vide, Mami sort son feutre noir.
 
-Elle tendit le ballon rapiécé à Ousmane, avec le feutre. Ousmane réfléchit longtemps. Puis il écrivit, en lettres appliquées, à côté du carré de pagne : « Ousmane. Les mains. »
+« Maintenant, c'est plus tard. Donne-moi ton ballon, BriBri. »
 
-Mireille prit le feutre ensuite. Elle écrivit « Mireille, la Gazelle » en grand, puis ajouta en dessous, plus petit : « Ne m'oubliez pas, sinon gare. »
+« Pour quoi faire ? »
 
-Tonton Fokou écrivit le dernier. Il prit son temps. Il écrivit seulement : « Le ballon doit voyager. Fokou. »
+« Un ballon qui voyage doit savoir d'où il vient. »
+
+Ousmane écrit le premier, en lettres appliquées, à côté du carré de pagne : « Ousmane. Les mains. »
+
+Mireille écrit en grand : « Mireille, la Gazelle ». Et dessous, plus petit : « Ne m'oubliez pas, sinon gare. »
+
+« Et moi ? demande Radio. Je signe où ? »
+
+« Toi, tu as déjà signé, dit Mireille. Avec ton tibia ! »
+
+Tonton Fokou écrit le dernier. Il prend son temps : « Le ballon doit voyager. Fokou. »
 
 * * *
 
-L'aéroport de Douala sentait le kérosène, la sueur et le café. Il y avait des valises partout, des familles qui pleuraient, des haut-parleurs qui annonçaient des villes lointaines.
+Lundi. L'aéroport de Douala sent l'essence d'avion et le café. Ousmane, Mireille, Tonton Fokou et Mami sont là.
 
-Ousmane et Mireille étaient venus, avec Tonton Fokou dans le vieux taxi de son cousin. Mami aussi, qui repartait pour Bafoussam le soir même.
+« Vol pour Paris, annonce le haut-parleur. Embarquement immédiat. »
 
-BriBri sortit de sa poche le bracelet qu'il avait tressé toute la nuit d'avant, avec des fils rouges, jaunes et verts pris dans la malle à chutes de Mami. Il était un peu tordu, et trop grand d'un côté. Il l'attacha au poignet d'Ousmane.
+BriBri sort de sa poche un bracelet de fils rouges, jaunes et verts. Il l'attache au poignet d'Ousmane.
 
-« Comme ça, quand tu arrêtes un ballon, je suis avec toi. »
+« Je l'ai tressé toute la nuit, avec les fils de la malle de Mami. Il est un peu tordu. Mais comme ça, quand tu arrêtes un ballon, je suis avec toi. »
 
-Ousmane regarda le bracelet longtemps. Puis il hocha la tête. C'était, de la part d'Ousmane, un discours de trois heures.
+Ousmane regarde le bracelet longtemps. Puis il hoche la tête. Pour Ousmane, c'est un discours de trois heures.
 
-Mireille, elle, croisa les bras.
+Mireille croise les bras.
 
-« Je vais vous envoyer des messages vocaux. Tous les jours. Avec le bruit des benskins dedans, pour que vous n'oubliez pas. Et si vous ne répondez pas, je viens en Amérique en courant. »
+« Je vais vous envoyer des messages vocaux. Tous les jours. Avec le bruit des benskins dedans. Comme ça, vous n'oublierez pas. Et si vous ne répondez pas, je viens en Amérique en courant. »
 
 « C'est loin, l'Amérique », dit Kaydoudou.
 
-« Je cours vite. »
+« Je cours vite. Et toi, BriBri, apprends bien l'américain. Pour me raconter. »
 
-Mami les serra contre elle, tous les deux à la fois, longtemps. Elle ne dit pas de proverbe, cette fois. Elle dit juste : « Mes lions », et ce fut plus fort que tous les proverbes.
+« On dit l'anglais, Mireille. »
 
-Kaydoudou, pendant tout ce temps, serrait contre sa poitrine le carnet couvert de pagne. Il ne le lâcha pas une seconde.
+« C'est pareil ! »
+
+Mami les serre contre elle, tous les deux à la fois. Pas de proverbe, cette fois. Juste deux mots.
+
+« Mes lions. »
+
+Et c'est plus fort que tous les proverbes du monde.
+
+Tonton Fokou tapote le carnet que Kaydoudou serre contre sa poitrine.
+
+« Écris tout, capitaine. »
+
+« Tout, Tonton. Promis. »
 
 * * *
 
-Dans l'avion, Kaydoudou avait laissé le hublot à BriBri. Il était assis bien droit, la ceinture serrée si fort qu'il avait du mal à respirer, le carnet serré contre sa poitrine.
+Dans l'avion, Kaydoudou laisse le hublot à BriBri. Il est assis tout droit, le carnet collé contre sa poitrine.
 
-Les moteurs se mirent à hurler. L'avion avança, de plus en plus vite. BriBri vit son frère fermer les yeux et devenir gris.
+Les moteurs hurlent. Vrrrooooum ! L'avion roule, de plus en plus vite. Kaydoudou ferme les yeux. Il devient tout gris.
 
-« Deux cents tonnes, murmura Kaydoudou. Deux cents tonnes. »
+« Deux cents tonnes, murmure-t-il. Deux cents tonnes. »
 
-Alors BriBri fit une chose qu'il n'avait jamais faite. Il posa sa petite main sur celle de son frère, sur l'accoudoir, et il la serra. Fort.
+Alors BriBri fait une chose qu'il n'a jamais faite. Il pose sa petite main sur celle de son frère, sur l'accoudoir. Et il serre. Fort.
 
-Kaydoudou ouvrit un œil. Il regarda la main de BriBri sur la sienne. Il ne la retira pas. Il referma l'œil, et ses doigts serrèrent ceux de son frère à leur tour.
+« Moi, je pèse vingt-huit kilos, chuchote-t-il. Ça fait deux cents tonnes et vingt-huit kilos. Ça change tout. »
 
-L'avion quitta le sol. Le ventre de BriBri descendit jusque dans ses chaussettes. La lumière blanche du matin entrait par le hublot, et il y colla presque son front.
+« Ça ne change rien », dit Kaydoudou, les yeux toujours fermés.
 
-En bas, il vit les toits de tôle qui brillaient, les routes rouges comme des veines, le fleuve Wouri, large et brun, et quelque part, très petit, peut-être, un terrain de terre rouge avec un manguier dans un coin. Puis les nuages arrivèrent, blancs, épais, comme le brouillard de Bafoussam, et la terre rouge disparut dessous.
+« Si. Maintenant, tu n'es plus tout seul dedans. »
 
-Dans le sac, sous le siège, il y avait le ballon de Mami, avec son carré de pagne et trois signatures.
+Kaydoudou ouvre un œil. Il regarde la main de BriBri sur la sienne. Il ne la retire pas. Il referme l'œil, et ses doigts serrent ceux de son frère à leur tour.
 
-BriBri sourit contre la vitre, de son grand sourire troué, et serra un peu plus fort la main de son frère.
+L'avion quitte le sol. Le ventre de BriBri descend jusque dans ses chaussettes, la rouge et la jaune. La lumière blanche du matin entre par le hublot. Il y colle presque son front.
 
-« Le ballon voyage », murmura-t-il.
+« Regarde, Kaydoudou ! Les toits qui brillent ! Le Wouri ! »
+
+« Je ne regarde pas. »
+
+Quelque part en bas, tout petit, peut-être, il y a un terrain de terre rouge avec un manguier dans un coin. Puis les nuages arrivent, blancs et épais comme le brouillard de Bafoussam. La terre rouge disparaît dessous.
+
+Sous le siège, dans le sac, il y a le ballon de Mami. Avec son carré de pagne et trois signatures.
+
+BriBri sourit contre la vitre, de son grand sourire troué. Il serre un peu plus fort la main de son frère.
+
+« Le ballon voyage », murmure-t-il.
 
 > [!CARNET] Leçon du Ballon n°8 : Le cœur du Njangi
 > Écrit dans l'avion. Ma main tremble, mais pas à cause de l'avion. (Un peu à cause de l'avion.)

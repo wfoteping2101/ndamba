@@ -8,165 +8,321 @@ resume: Demi-finale du tournoi des quartiers, revanche contre les Requins de Bé
 illustration: Plan moyen, fin d'après-midi, lumière dorée rasante et poussière rouge. Sous le manguier du terrain de Bonamoussadi, Tonton Fokou (62 ans, casquette usée, sifflet en bois au cou, une jambe légèrement fléchie) tend des deux mains un épais cahier couvert de pagne vert et orange à Kaydoudou (11 ans, mince, maillot vert forêt délavé numéro 8 à col blanc, raie fine à gauche, couvert de poussière), qui le prend avec émotion. Juste derrière Kaydoudou, BriBri (10 ans, petite afro, une chaussette rouge et une chaussette jaune) sautille sur la pointe des pieds et essaie de voir le cahier par-dessus l'épaule de son frère.
 ---
 
-Le jour de la demi-finale, Bonamoussadi avait mis ses habits de fête.
+« BONAMOUSSADI ! EST-CE QUE VOUS ÊTES LÀ ? »
 
-Il y avait du monde partout : sur le mur de Monsieur Bilé, sur les toits des boutiques, dans les branches basses du manguier, sur les selles des benskins garés en rang le long de la route. Une fanfare d'enfants tapait sur des seaux et des casseroles. Madame Ekotto avait doublé sa table de beignets-haricots et peint « LIONCEAUX » sur un carton, en lettres rouges qui avaient un peu coulé. Même le père de Radio était venu, avec un vrai micro branché sur un haut-parleur qui grésillait.
+Krrrrr ! Le haut-parleur grésille. Le père de Radio a apporté un vrai micro.
 
-De l'autre côté du terrain, les Requins de Bépanda étaient arrivés en chantant, dans leurs maillots bleus à aileron. Bulldozer marchait devant. Il avait encore grandi pendant les vacances de Noël, à moins que ce ne soit l'effet de la peur.
+« OUAIIIS ! » répond le quartier.
 
-Avant le coup d'envoi, à l'abri du manguier, BriBri sortit le ballon de Mami de son sac. Kaydoudou était déjà prêt. Dix passes, sans que le ballon touche le sol. Le pied, la cuisse, la tête, le pied. Le ballon partait de travers à cause de sa bosse de pagne, et il fallait le chercher, se pencher, s'étirer. Autour d'eux, des enfants comptaient à voix haute. Huit, neuf, dix.
+Samedi 3 janvier, demi-finale du tournoi des quartiers. Il y a du monde partout, sur le mur de Monsieur Bilé, sur les toits, jusque dans le manguier. Une fanfare d'enfants tape sur des casseroles. Bing ! Bong !
+
+« LION-CEAUX ! LION-CEAUX ! »
+
+« Beignets gratuits pour celui qui marque ! » crie Madame Ekotto sous son parasol rouge.
+
+Dans sa poche, Kaydoudou a une feuille pliée en huit, avec un mot écrit si fort que le crayon a cassé : « utile ».
+
+*Aujourd'hui, j'ose*, se dit-il. *Sinon, je n'oserai jamais.*
+
+Après cette demi-finale, il y a la finale. Et après la finale, l'avion.
+
+« À ma gauche, les Requins de Bépanda ! annonce le micro. À ma droite, nos Lionceaux de Bonamoussadi ! »
+
+Les Requins arrivent en chantant. Maillots bleus, aileron dessiné au feutre dans le dos. Devant, Bulldozer. Il a encore grandi pendant les vacances de Noël. Ou alors c'est la peur qui le fait grandir.
+
+Il fait claquer ses dents. Clac !
+
+« Ça sent le lait, par ici. »
+
+« Les Lionceaux ? Chez nous, à Bépanda, on appelle ça des chatons. »
+
+« Et chez nous, les requins, on les mange grillés, avec du plantain ! » répond Mireille.
+
+BriBri serre les poings.
+
+« Je vais lui faire un petit pont si grand qu'il va tomber dedans ! »
+
+« Pas maintenant, dit Kaydoudou. Sur le terrain. »
+
+Sous le manguier, BriBri sort le ballon de Mami.
+
+« Ballon de Mami, aujourd'hui, tu nous regardes. D'accord ? »
+
+Dix passes sans toucher le sol. Les enfants comptent avec eux.
+
+« Huit ! Neuf ! DIX ! »
 
 Poing contre poing. Main sur le cœur.
 
-« Aujourd'hui, dit BriBri, on garde rien. Ni la caisse ni la bouche. »
+« Aujourd'hui, on garde rien, dit BriBri. Ni la caisse ni la bouche. »
 
-« Ni la caisse ni la bouche », répéta Kaydoudou.
+« Ni la caisse ni la bouche », répète Kaydoudou.
 
-Il le pensait vraiment. Il avait la feuille dans la poche de son short, pliée en huit, celle avec la ligne de trois ronds et le mot « utile » qu'il avait écrit en cassant son crayon.
-
-Et puis le match commença, et il oublia tout.
+Il le pense vraiment. Puis le match commence, et il oublie tout.
 
 * * *
 
-Les Requins attaquaient comme des vagues : longs ballons vers Bulldozer, et tous derrière en courant. Le terrain avait séché depuis les pluies, mais il restait dur et bosselé, et le ballon sautait comme une sauterelle. Kaydoudou récupérait, donnait sur le côté. Récupérait, donnait derrière. À chaque fois qu'il levait les yeux vers l'avant, il voyait les maillots bleus serrés en ligne au milieu, comme les dents d'un peigne, et ses pieds choisissaient tout seuls la passe facile.
+« Coup d'envoi ! Les Requins attaquent ! Long ballon vers Bulldozer ! Et tout le monde court derrière ! »
 
-Il entendait Madame Ekotto : « Bien, Kaydoudou ! Propre ! » Il entendait Tonton Fokou se taire.
+Kaydoudou récupère. Il lève les yeux. Les maillots bleus sont serrés en ligne, comme les dents d'un peigne.
 
-À la quinzième minute, sur un corner, Bulldozer monta plus haut que tout le monde et marqua de la tête. Le ballon passa entre les mains d'Ousmane comme une pierre dans l'eau.
+*Trop risqué.*
+
+Passe sur le côté.
+
+Il récupère encore.
+
+*Trop risqué.*
+
+Passe en arrière.
+
+« Ngassa donne sur le côté ! Encore sur le côté ! Très propre, mesdames et messieurs ! »
+
+« Bien, Kaydoudou ! Propre ! » crie Madame Ekotto.
+
+Sous le manguier, Tonton Fokou ne dit rien. Son silence est plus fort que la fanfare.
+
+« 15e minute ! Corner pour Bépanda ! Bulldozer monte... il monte... il monte encore... »
+
+Bam ! De la tête. Le ballon glisse entre les mains d'Ousmane comme une pierre dans l'eau.
 
 0-1.
 
-Les Requins dansèrent devant le mur de Monsieur Bilé. La fanfare de casseroles se tut d'un coup.
+« Et c'est le Bulldozer qui écrase tout ! Euh... Pardon. Hou ! Hou ! »
 
-La fin de la mi-temps arriva sans que les Lionceaux aient tiré une seule fois au but.
+La fanfare se tait.
+
+« C'est rien ! crie BriBri. On va revenir ! »
+
+« Avec quoi ? répond Mireille. On n'a pas tiré une seule fois ! »
 
 * * *
 
-Ils s'assirent en rond à l'ombre du manguier. Personne ne parlait. Samuel buvait de l'eau en regardant ses pieds. Radio ne commentait plus. Mireille arrachait des brins d'herbe sèche un par un, très fort, comme si chaque brin lui avait fait du tort.
+Ils s'assoient en rond à l'ombre du manguier. Personne ne parle. Radio, pour la première fois de sa vie, est en panne. Mireille arrache des brins d'herbe, un par un, très fort.
 
-Tonton Fokou se tenait debout, appuyé sur sa jambe valide, les mains dans le dos. Il regarda chacun d'eux. Puis il regarda Kaydoudou, plus longtemps. Et il ne dit rien.
+Tonton Fokou est debout, sur sa bonne jambe, les mains dans le dos. Il regarde chaque joueur. Puis Kaydoudou. Plus longtemps.
 
-Kaydoudou comprit qu'il attendait.
+Et il ne dit rien.
 
-Il sentit son cœur cogner contre la feuille pliée dans sa poche. Il aurait préféré rater cent passes devant tout le quartier plutôt que de parler maintenant. Il ouvrit la bouche. Rien ne vint. Il la referma. BriBri, assis à côté de lui, lui donna un petit coup de genou.
+*Il attend que je parle*, comprend Kaydoudou. *Non. Pas moi. Je préfère rater cent passes devant tout le quartier.*
 
-Kaydoudou se leva.
+Il ouvre la bouche. Rien ne sort. BriBri lui donne un petit coup de genou.
 
-Ses jambes tremblaient. Sa voix aussi, quand elle sortit, mince et cassée, comme si elle n'avait pas servi depuis des années.
+« Ni la caisse ni la bouche », chuchote-t-il.
+
+Kaydoudou se lève. Ses jambes tremblent. Sa voix aussi, mince et cassée, comme une vieille porte.
 
 « Je... j'ai vu un truc. »
 
-Tout le monde leva la tête. Kaydoudou Ngassa parlait. Mireille en lâcha son brin d'herbe.
+« Il parle ! souffle Radio. Mesdames et messieurs, il parle ! »
 
-« Les Requins ont peur de BriBri. Dès qu'il touche le ballon, ils sont trois sur lui. Même Bulldozer vient. Tout leur côté glisse vers la gauche, comme une table qui penche. »
+Mireille en lâche son brin d'herbe.
 
-Il ramassa un bâton et dessina dans la poussière. Une ligne de ronds. Une flèche vers la gauche. Ses mains tremblaient moins quand elles dessinaient.
+« Les Requins ont peur de BriBri. Dès qu'il touche le ballon, ils sont trois sur lui. Même Bulldozer vient. Tout leur côté glisse vers la gauche. Comme une table qui penche. »
 
-« Alors on leur donne ce qu'ils veulent. On joue à gauche, vers BriBri. Ils viennent. Et quand ils sont tous là... il y a un trou au milieu de leur ligne. Je l'ai vu cinq fois. Cinq fois, et je n'ai rien fait. »
+Il ramasse un bâton et dessine dans la poussière. Quand ses mains dessinent, elles tremblent moins.
 
-Il avala sa salive.
+« Alors on leur donne ce qu'ils veulent. On joue à gauche, vers BriBri. Ils viennent. Et quand ils sont tous là, il y a un trou au milieu de leur ligne. Je l'ai vu cinq fois. Cinq fois, et je n'ai rien fait. »
 
-« Cette fois, je passe dedans. Par le trou. BriBri, toi, tu ne restes pas collé à la touche. Tu fais deux pas vers l'intérieur, dans leur dos, pour être visible. Et quand tu as le ballon, tu dribbles pour les attirer, pas pour les battre. Mireille, tu restes de l'autre côté. Toute seule. Tu attends. Ils vont t'oublier. »
+« Cinq fois ? dit Samuel. Et tu ne l'as pas dit ? »
 
-« Personne ne m'oublie, moi », dit Mireille. Mais elle souriait.
+« Je le dis maintenant. Cette fois, je passe dedans. Par le trou. BriBri, tu fais deux pas vers l'intérieur, dans leur dos. Et quand tu as le ballon, tu dribbles pour les attirer. Pas pour les battre. »
 
-Kaydoudou sentit qu'il lui restait une chose à dire. Il leva la main, l'index et le majeur tendus.
+« Pour les attirer, répète BriBri. Comme le miel attire les mouches. »
+
+« Mireille, tu restes de l'autre côté. Toute seule. Tu attends. Ils vont t'oublier. »
+
+« Personne ne m'oublie, moi. Mais d'accord. Je serai un fantôme. Un fantôme très rapide. »
+
+« Et moi ? » demande Radio.
+
+« Toi, tu cours au milieu et tu parles très fort. Ils vont te regarder. »
+
+« Ça, je sais faire ! »
+
+Pour la première fois, tout le monde rit. Kaydoudou lève la main, l'index et le majeur tendus.
 
 « Et si je fais ça, deux doigts, BriBri, tu me donnes le ballon et tu pars tout droit. Je te le rends dans le dos de Bulldozer. »
 
-BriBri regarda les deux doigts. Ses yeux s'allumèrent comme deux lampes.
+Les yeux de BriBri s'allument. Même Ousmane parle, ce qui n'arrive jamais.
 
-Kaydoudou se rassit. Il avait chaud jusqu'au bout des oreilles. Il n'osait regarder personne.
+« Et moi, je ferme la porte. »
 
-Tonton Fokou s'éclaircit la gorge.
+Kaydoudou se rassoit, les oreilles en feu. Tonton Fokou s'éclaircit la gorge.
 
 « Vous avez entendu votre capitaine. »
 
-Kaydoudou releva la tête. Capitaine ? Il n'était pas capitaine. Mais Tonton Fokou avait déjà soufflé dans son sifflet de bois, et l'équipe se levait autour de lui comme un seul corps.
+« Capitaine Ngassa ! » dit BriBri en faisant le salut militaire.
+
+*Capitaine ? Moi ?*
+
+Houou ! L'équipe se lève autour de lui comme un seul corps.
 
 * * *
 
-Le début de la deuxième mi-temps ressembla à la première. Kaydoudou donna à gauche. BriBri toucha le ballon, les Requins accoururent, BriBri le rendit. On recommença. Deux fois. Trois fois. Sur le mur, des gens commençaient à siffler. Bulldozer, lui, souriait : il croyait avoir gagné.
+« Deuxième mi-temps ! Les Lionceaux jouent à gauche... encore à gauche... toujours à gauche ! Ils ont perdu leur boussole ou quoi ? »
 
-À la quatrième fois, Kaydoudou vit la table pencher.
+Une fois. Deux fois. Trois fois. Des gens sifflent.
 
-Trois maillots bleus sur la gauche, autour de BriBri. Bulldozer qui arrivait, lui aussi, en courant. Et au milieu de leur ligne, là où il aurait dû y avoir deux Requins, un trou large comme une porte de garage.
+« Alors, les chatons ? lance Bulldozer. On a peur d'avancer ? »
 
-BriBri rendit le ballon à son frère et fit deux pas. Pas vers la touche. Vers l'intérieur. Dans le dos des Requins.
+À la quatrième fois, Kaydoudou voit la table pencher.
 
-Kaydoudou entendit toutes les voix dans sa tête : rater, contre-attaque, le quartier qui regarde. Il pensa au paquet de Papa qui se perd, et qu'on renvoie. Il pensa au mango.
+Trois maillots bleus autour de BriBri. Bulldozer qui arrive en courant. Et au milieu de leur ligne... un trou. Large comme une porte de garage.
 
-Il frappa.
+BriBri rend le ballon et fait deux pas. Vers l'intérieur. Dans le dos des Requins.
 
-Le ballon fila au ras de la terre rouge, entre deux maillots bleus, et traversa la ligne comme une aiguille traverse un tissu. Il arriva dans les pieds de BriBri, qui se retourna d'un seul mouvement.
+Tout ralentit.
 
-Devant BriBri, il n'y avait plus que deux défenseurs et le gardien.
+La poussière rouge flotte dans l'air. Le ballon tourne doucement devant le pied de Kaydoudou. Dans sa tête, des voix crient. *Tu vas rater ! Contre-attaque !* Puis la voix de Papa passe devant les autres. *Si le paquet se perd, on en renvoie un autre.*
 
-Avant, BriBri aurait essayé de les dribbler tous les deux. Cette fois, il conduisit le ballon droit vers eux, lentement, en balançant les épaules, le crochet du margouillat en promesse. Les deux défenseurs sortirent ensemble pour l'arrêter. Ensemble. Tous les deux.
+Il frappe.
 
-Et sur la droite, toute seule, oubliée, la Gazelle arrivait.
+Le ballon file au ras de la terre rouge, entre deux maillots bleus. Il traverse la ligne comme une aiguille traverse un tissu. Et il arrive pile dans les pieds de BriBri.
 
-BriBri glissa le ballon entre les deux défenseurs, de l'intérieur du pied, sans même la regarder. Mireille le reçut à six mètres du but et le posa dans le coin, comme une assiette sur une table.
+BriBri se retourne. Devant lui, deux défenseurs et le gardien. Avant, il les aurait dribblés pour le spectacle. Cette fois, il avance droit sur eux. Lentement. Il hoche la tête comme un lézard : le crochet du margouillat, en promesse.
+
+Les deux défenseurs sortent ensemble. Tous les deux.
+
+Et sur la droite, toute seule, oubliée, la Gazelle arrive.
+
+BriBri glisse le ballon entre eux, sans même la regarder. Mireille le pose dans le coin, comme on pose une assiette sur une table.
 
 1-1.
 
-La fanfare de casseroles explosa. Madame Ekotto jeta son carton en l'air. Le père de Radio hurla dans son micro, et le haut-parleur hurla avec lui en sifflant.
+« BUT ! BUT DE LA GAZELLE ! Mesdames et messieurs, vous avez vu la passe du numéro 8 ? Ce n'est pas une passe, c'est une flèche ! »
 
-Mireille courut vers Kaydoudou, pas vers BriBri. Elle lui donna une grande tape dans le dos.
+La fanfare explose. Madame Ekotto jette son carton en l'air.
+
+« Mireille ! Viens chercher tes beignets ! »
+
+Mais Mireille court donner une grande tape dans le dos de Kaydoudou.
 
 « Tu vois ? Quand tu parles, ça marche ! »
 
+Bulldozer, lui, ne fait plus claquer ses dents.
+
+« Ce n'était pas prévu, ça ! »
+
+Sous le manguier, Tonton Fokou lève sa casquette.
+
+« Voilà ! Le ballon voyage ! »
+
 * * *
 
-Les Requins étaient blessés, et un requin blessé devient méchant. Ils poussèrent, tirèrent, coururent. Ousmane fit deux arrêts magnifiques, le deuxième du bout de ses longs doigts, en s'envolant si loin qu'il atterrit dans les racines du manguier. Il se releva avec des feuilles dans les cheveux et ne dit rien.
+Un requin blessé devient méchant.
 
-Il restait deux minutes. Ousmane relança à la main vers Kaydoudou, au milieu. BriBri vint vers lui, sur la gauche, poursuivi par Bulldozer en personne.
+« Tir de Bulldozer ! Arrêt d'Ousmane ! Encore Bulldozer ! Ousmane s'envole... il s'envole... il atterrit dans le manguier ! »
 
-Kaydoudou leva la main. Deux doigts.
+Ousmane se relève avec des feuilles dans les cheveux. Pas un mot.
 
-BriBri n'hésita pas une demi-seconde. Il lui donna le ballon et partit tout droit, comme une flèche lâchée par un arc. Bulldozer, qui regardait le ballon, se retourna trop tard. Kaydoudou ne contrôla même pas. Il remit le ballon d'une seule touche, par-dessus le pied tendu d'un Requin, dans l'espace vide derrière Bulldozer, là où BriBri arrivait déjà.
+« Il reste deux minutes ! Ousmane relance vers Ngassa ! »
 
-BriBri le reçut lancé. Il était seul. Le gardien sortit. BriBri le regarda, attendit qu'il plonge, et poussa le ballon de l'autre côté, doucement, presque avec politesse.
+BriBri vient vers son frère sur la gauche, Bulldozer collé dans son dos.
+
+Les deux frères se regardent. Une demi-seconde.
+
+Kaydoudou lève deux doigts.
+
+« Ngassa lève deux doigts ! Qu'est-ce que ça veut dire ? Personne ne sait ! »
+
+BriBri, lui, sait. Il donne le ballon et part tout droit, comme une flèche. Kaydoudou remet en une seule touche, par-dessus le pied tendu d'un Requin, dans le dos de Bulldozer. Là où BriBri arrive déjà.
+
+« Bulldozer se retourne... TROP TARD ! »
+
+Seul devant le gardien, BriBri attend qu'il plonge. Puis il pousse le ballon de l'autre côté. Doucement. Presque poliment.
 
 2-1.
 
-BriBri ne s'arrêta pas. Il courut jusqu'au coin du terrain, là où un bout de bambou faisait office de drapeau. Il posa une main sur son ventre, leva l'autre au ciel, et se mit à rouler des hanches comme une pirogue sur le fleuve. La danse de Roger Milla. Tout Bonamoussadi, qui la connaissait par cœur, se mit à danser avec lui, sur les murs, sur les benskins, sous le parasol de Madame Ekotto.
+« Les Lionceaux passent devant ! »
 
-Quand Kaydoudou arriva près de lui, BriBri l'attrapa par le cou.
+« BriBri ! Deux beignets ! crie Madame Ekotto. Non, trois ! »
 
-« Le une-deux du Njangi ! hurla-t-il. Deux doigts ! On l'appelle le une-deux du Njangi ! »
+BriBri court au coin, là où un bout de bambou sert de drapeau. Une main sur le ventre, l'autre au ciel, les hanches qui roulent comme une pirogue sur le fleuve. La danse de Roger Milla ! Et tout Bonamoussadi danse avec lui.
 
-Tonton Fokou siffla la fin. Houou. Le hibou enrhumé avait l'air de rire.
+« Le une-deux du Njangi ! hurle BriBri en attrapant son frère par le cou. Deux doigts ! Ça s'appelle le une-deux du Njangi ! »
+
+« Le une-deux du quoi ? » demande Radio.
+
+« Du NJANGI ! Chacun verse sa part, et à la fin, on touche la caisse ! »
+
+Radio remet sa main en micro.
+
+« Mesdames et messieurs, retenez bien ce nom ! Le une-deux du Njangi ! »
+
+Houou ! Tonton Fokou siffle la fin. Le hibou enrhumé a l'air de rire.
+
+Bulldozer s'arrête devant Kaydoudou et lui tend la main.
+
+« Pas mal, les chatons. »
+
+« Lionceaux », dit Kaydoudou. Et il serre la main.
 
 * * *
 
-Quand la foule fut repartie et que la poussière fut retombée, Tonton Fokou appela Kaydoudou sous le manguier. BriBri suivit, évidemment. Le soleil descendait, et sa lumière dorée glissait à ras de terre.
+Plus tard, quand la foule est partie, Tonton Fokou appelle depuis le manguier.
 
-Tonton Fokou sortit de son vieux sac de riz un paquet enveloppé dans du papier journal. Il défit le papier lui-même, sans se presser, puis tendit ce qu'il contenait avec ses deux mains, comme Mami avait tendu la caisse du njangi à Maman Tchinda.
+« Capitaine ! Viens par ici. »
 
-C'était un cahier. Un vrai, épais, avec des pages lignées et une couverture recouverte de pagne vert et orange, aux motifs de calebasses, cousu tout autour à petits points. Kaydoudou le prit avec précaution, les mains encore rouges de poussière. Derrière lui, BriBri sautillait sur la pointe des pieds pour voir par-dessus son épaule.
+BriBri suit, évidemment.
+
+Le soleil descend, et sa lumière dorée glisse à ras de terre. Tonton Fokou, casquette usée et sifflet au cou, se tient sur sa bonne jambe, l'autre un peu pliée. Il défait un paquet de papier journal, sans se presser. Puis il tend ce qu'il y a dedans, avec ses deux mains.
+
+Un cahier. Épais. Couvert de pagne vert et orange, cousu tout autour à petits points.
+
+Kaydoudou le prend tout doucement, avec émotion. Ses mains sont encore rouges de poussière, comme son maillot 8. Derrière lui, BriBri sautille sur la pointe des pieds pour voir par-dessus son épaule.
+
+« Fais voir ! Il y a des calebasses sur le pagne ! Des vraies calebasses ! »
 
 « C'est ma femme, Mama Odile, qui l'a habillé, dit Tonton Fokou. Elle dit que les choses importantes doivent avoir de beaux vêtements. »
 
-« Pourquoi... ? »
+« Mais... pourquoi moi ? » demande Kaydoudou.
 
 « Parce que je sais que tu écris. Sur des feuilles volantes. Dans ton cahier de maths. »
 
-Kaydoudou devint tout rouge et se tourna vers BriBri, qui regarda soudain le manguier avec un très grand intérêt.
+Kaydoudou devient tout rouge et se tourne vers BriBri, qui regarde soudain le manguier avec un très, très grand intérêt.
 
-« Ton frère l'a dit à Madame Ekotto, expliqua Tonton Fokou. Et Madame Ekotto l'a dit au marché entier. »
+« Ton frère l'a dit à Madame Ekotto, explique Tonton Fokou. Et Madame Ekotto l'a dit au marché entier. »
 
-Il posa la main sur l'épaule de Kaydoudou. Sa voix devint plus grave, plus basse.
+Il pose la main sur l'épaule de Kaydoudou.
 
-« Moi aussi, j'étais un 8, autrefois. Je voyais tout, et je ne disais rien. Personne ne m'a jamais donné de cahier. » Il tapota la couverture de pagne. « Écris ce que le ballon t'apprend. Partout où tu iras. »
+« Moi aussi, j'étais un 8, autrefois. Je voyais tout, et je ne disais rien. Personne ne m'a jamais donné de cahier. »
 
-Le soir, à la table du salon, Kaydoudou recopia ses six premières leçons dans le carnet, une par page, en s'appliquant comme jamais. Il traça les schémas à la règle. BriBri, penché par-dessus son épaule, voulut ajouter un dessin de requin ; Kaydoudou le lui permit, dans la marge, tout petit. Puis il ouvrit la septième page, écrivit la date en haut, et souligna deux fois le titre.
+Il tapote le pagne.
 
-Quand il releva la tête, Papa se tenait dans l'encadrement de la porte, une enveloppe à la main. Le comité des quartiers venait de fixer la date de la finale, contre les Panthères de Deïdo : samedi prochain.
+« Écris ce que le ballon t'apprend. Partout où tu iras. »
 
-Et l'enveloppe de Papa contenait quatre billets d'avion. Douala, Paris, Washington.
+« Et si le ballon ne m'apprend rien ? »
 
-Départ le lundi suivant.
+« Le ballon parle tout le temps, mon fils. Il faut juste écouter. »
+
+Kaydoudou serre le carnet contre lui.
+
+« Merci, Tonton. »
+
+Cette fois, sa voix ne tremble pas.
+
+* * *
+
+Le soir, Kaydoudou recopie ses six premières leçons dans le carnet. Une par page. Les schémas à la règle.
+
+« Je peux dessiner un requin ? » demande BriBri.
+
+« Dans la marge. Tout petit. »
+
+BriBri dessine un requin minuscule, avec des dents énormes. Kaydoudou ouvre la septième page, écrit la date et souligne deux fois le titre.
+
+« Range ta règle, l'écrivain, dit Maman en passant. On mange bientôt. »
+
+Quand il relève la tête, Papa est à la porte, une enveloppe à la main.
+
+« Le comité des quartiers a appelé. La finale contre les Panthères de Deïdo, c'est samedi prochain. »
+
+« Samedi ! crie BriBri. On va les croquer ! »
+
+Papa ne sourit pas tout à fait. Il ouvre l'enveloppe. Dedans, il y a quatre billets d'avion. Douala, Paris, Washington.
+
+« Et le départ, c'est le lundi suivant. »
 
 > [!CARNET] Leçon du Ballon n°7 : Oser la passe qui traverse
 > Douala, samedi 3 janvier. Première page du vrai carnet.

@@ -8,95 +8,141 @@ resume: Un soir de ndolé, Papa pose sur la table une lettre venue de très loin
 illustration: Plan rapproché, nuit, lumière d'une lampe de poche sous une moustiquaire blanche. Deux lits côte à côte dans une petite chambre aux murs bleus. BriBri (10 ans, petite afro, pyjama, une chaussette rouge et une jaune aux pieds) est assis en tailleur sur son lit, les yeux brillants de larmes retenues, et tient le petit doigt tendu. Dans le lit d'à côté, Kaydoudou (11 ans, raie fine à gauche, tee-shirt vert) se redresse sur un coude et accroche son petit doigt à celui de son frère, à travers les deux moustiquaires. Entre eux, sur la table de nuit, le vieux ballon de cuir avec son carré de pagne rouge et jaune.
 ---
 
-Le ndolé de Maman sentait si bon que BriBri en avait oublié de se plaindre de ses devoirs.
-
-Il y avait la grande marmite au milieu de la table, avec les feuilles amères cuites dans la pâte d'arachide, les crevettes, la viande, et ce parfum qui remplissait toute la maison jusqu'aux chambres. Il y avait les plantains mûrs, frits, dorés sur les bords. Il y avait des bâtons de manioc dans leurs feuilles. Et il y avait Papa, qui ne mangeait pas.
-
-BriBri le remarqua tout de suite. Papa adorait le ndolé. D'habitude, il en prenait trois fois et disait que c'était le meilleur du Littoral, et Maman répondait que c'était le seul qu'il avait le droit de goûter. Ce soir, il tournait sa cuillère dans son assiette comme quelqu'un qui cherche une clé au fond d'un sac.
-
 « Papa, tu es malade ? »
 
-Papa sourit. Il regarda Maman. Maman lui fit un petit signe de la tête, de ceux que les parents se font quand ils croient que les enfants ne voient rien.
+BriBri pose la question la bouche pleine de plantain. C'est grave. Papa ne mange pas son ndolé.
 
-Alors Papa sortit de sa poche une feuille pliée en quatre et la posa sur la table, à côté de la marmite.
+Chez les Ngassa, le ndolé de Maman, c'est sacré. Les feuilles amères, la pâte d'arachide, les crevettes. D'habitude, Papa se sert trois fois.
+
+« Le meilleur ndolé du Littoral ! » dit-il toujours.
+
+« Le seul que tu as le droit de goûter », répond toujours Maman.
+
+Ce soir, Papa tourne sa cuillère dans son assiette, comme s'il cherchait une clé perdue au fond.
+
+« Je ne suis pas malade, BriBri. Je réfléchis. »
+
+« À quoi ? »
+
+Papa regarde Maman. Maman lui fait un petit oui de la tête. Le genre de oui que les parents se font quand ils croient que les enfants ne voient rien.
+
+*Je vois tout*, pense BriBri. *Je suis un aigle.*
+
+Papa sort de sa poche une feuille pliée en quatre. Il la pose à côté de la marmite.
 
 « Les garçons, j'ai reçu une proposition de travail. »
 
-Kaydoudou posa sa cuillère. BriBri tendit le cou pour lire. Il y avait un logo bleu en haut, beaucoup de mots en anglais, et au milieu, en gras, deux mots qu'il déchiffra lentement.
+BriBri tend le cou. Des mots en anglais. Et au milieu, en gras, un mot bizarre.
 
 « Wal... Waldorf ? »
 
-Il éternua presque en le disant.
+Ça sort tout seul, comme un éternuement. Atchoum. Waldorf.
 
-« Ça veut dire quoi, Waldorf ? C'est une maladie ? »
+« C'est quoi, Waldorf ? Une maladie ? »
 
-Personne ne rit, ce qui était mauvais signe. Quand BriBri faisait une blague et que personne ne riait, c'est que quelque chose de grave se cachait derrière.
+BriBri attend les rires.
 
-« Waldorf, c'est une ville, dit Papa doucement. Aux États-Unis. Dans le Maryland, près de Washington. Une grande entreprise veut que j'aille installer tous ses réseaux là-bas. C'est un très beau travail. Le plus beau qu'on m'ait jamais proposé. »
+Personne ne rit.
 
-Il laissa passer un silence.
+Mauvais signe. Quand BriBri fait une blague et que personne ne rit, c'est qu'un orage se cache derrière.
 
-« On partirait en janvier. Juste après la finale du tournoi, si vous y arrivez. »
+« Waldorf, c'est une ville, dit Papa doucement. Aux États-Unis. Dans le Maryland, près de Washington. Une grande entreprise veut que j'aille installer tous ses réseaux. C'est le plus beau travail qu'on m'ait jamais proposé. »
 
-BriBri regarda la lettre. Puis il regarda Papa. Puis Maman. Puis Kaydoudou, qui fixait la marmite sans bouger, les mains sous la table.
+« On part en janvier. Juste après la finale du tournoi. Si vous y arrivez. »
+
+BriBri regarde Kaydoudou. Son grand frère fixe la marmite, les mains cachées sous la table.
 
 « Non. »
 
-Ce fut tout petit, d'abord. Puis ça grandit, ça monta, ça déborda comme le lait sur le feu.
+C'est tout petit, d'abord. Puis ça monte, ça monte, et ça déborde, comme le lait sur le feu.
 
-« Non ! Non, non et non ! Et Ousmane ? Et Mireille ? Et Tonton Fokou ? Et Mami ? Et le tournoi ? On est en demi-finale, Papa ! Contre les Requins ! Je ne vais pas en Amérique, moi ! Je ne parle même pas l'américain ! »
+« Non, non et non ! Et Ousmane ? Et Mireille ? Et Tonton Fokou ? Et Mami ? On est en demi-finale, Papa ! Contre les Requins ! Je ne vais pas en Amérique, moi. Je ne parle même pas l'américain ! »
 
-« On dit l'anglais, mon chéri... », commença Maman.
+« On dit l'anglais, mon chéri... », commence Maman.
 
 « Je ne parle même pas l'anglais non plus ! »
 
-Il repoussa sa chaise si fort qu'elle tomba en arrière. Il traversa le salon, ouvrit la porte, et courut dans la nuit.
+Sa chaise tombe en arrière. Bam !
+
+BriBri traverse le salon, ouvre la porte et court dans la nuit.
 
 * * *
 
-Le terrain était au bout de la rue, à cent pas de la maison. Il faisait noir, et BriBri avait peur du noir, mais ce soir il avait encore plus peur de la lettre. Il courut sans s'arrêter jusqu'au manguier et se glissa entre les racines, là où la terre était sèche, le dos contre le tronc.
+Le terrain est au bout de la rue. Cent pas. BriBri les fait en courant.
 
-Le terrain était vide. Les buts en bambou ressemblaient à deux squelettes. Sur la route, un benskin passa avec son phare tremblant, et BriBri ferma les yeux pour que personne ne le voie.
+Il fait noir. BriBri a peur du noir, depuis toujours. Mais ce soir, il a encore plus peur de la lettre.
 
-Il pensa à Ousmane, qui ne parlait presque jamais, mais qui lui gardait toujours la moitié de ses arachides. Il pensa à Mireille, qui le grondait tout le temps et qui l'avait défendu, un jour, contre trois grands de Makepe. Il pensa à la voix enrhumée du sifflet de Tonton Fokou. À la machine à coudre de Mami. À l'odeur des beignets de Madame Ekotto. Au chat de Madame Ekotto, même, qu'il n'aimait pas tellement.
+Il se glisse entre les racines du manguier, le dos contre le tronc. Les buts en bambou ressemblent à deux squelettes.
 
-Et il pensa à une chose qui lui serra le ventre plus fort que le car de Bafoussam : quand on part très loin, les gens finissent par vous oublier.
+BriBri parle au manguier. Il parle à tout le monde, même aux arbres.
 
-Une lumière dansa sur le terrain. Une lampe de poche. Puis une voix.
+« Tu as entendu, toi ? Waldorf ! Et qui va me garder la moitié de ses arachides, à Waldorf ? Hein ? Ousmane, il le fait tous les jours, sans rien dire. Et Mireille ? Elle me gronde tout le temps, d'accord. Mais elle m'a défendu contre trois grands de Makepe ! Et le sifflet de Tonton Fokou ? Et la machine à coudre de Mami ? Même le chat de Madame Ekotto, il va me manquer. Et je ne l'aime même pas, ce chat ! »
+
+Le manguier ne répond pas. Les manguiers ne répondent jamais.
+
+Puis une pensée arrive. Plus froide que les autres.
+
+*Quand on part très loin, les gens finissent par vous oublier.*
+
+Une lumière danse sur le terrain. Une lampe de poche.
 
 « BriBri ? Je sais que tu es là. Tu chantes quand tu pleures. »
 
-C'était Maman. Elle s'assit dans les racines à côté de lui, sans se soucier de sa jolie robe, et éteignit la lampe. Ils restèrent un moment dans le noir, à écouter les grenouilles du caniveau.
+Zut. C'est vrai, il chante. Il ne l'a même pas remarqué.
 
-« Tu sais, dit-elle enfin, je comprends que tu sois en colère. Moi aussi, j'ai eu peur, quand Papa m'a montré la lettre. »
+Maman s'assoit dans les racines, avec sa jolie robe, et éteint la lampe.
+
+« Moi aussi, j'ai eu peur, dit Maman. Quand Papa m'a montré la lettre. »
+
+« Et si je reste ici ? Chez Ousmane ? Je dors par terre. Je ne mange pas beaucoup. »
+
+« Tu manges comme trois, mon chéri. »
 
 « Alors pourquoi on part ? »
 
-« Parce que c'est une chance. Pour Papa d'abord : il a travaillé tellement fort pour ça. Pour moi aussi. Là-bas, je vais repasser mes diplômes. Je veux devenir infirmière en Amérique, apprendre d'autres choses, soigner d'autres gens. Et pour vous. Vous allez voir le monde, mon chéri. Vous allez apprendre une langue, d'autres écoles, d'autres terrains. Tu comprends ? »
+« Parce que c'est une chance. Pour Papa, d'abord. Il a travaillé si fort pour ça. Pour moi aussi : là-bas, je vais repasser mes diplômes. Je veux devenir infirmière en Amérique. Et pour vous, mon chéri. Vous allez voir le monde. D'autres écoles. D'autres terrains. »
 
-BriBri renifla.
+BriBri renifle.
 
 « Il y a des terrains, là-bas ? »
 
-« Il paraît qu'il y en a beaucoup. Et de l'herbe partout. De la vraie herbe verte. »
+« Plein. Avec de l'herbe partout. De la vraie herbe verte. »
 
-« Pas de terre rouge ? »
+« Et de la terre rouge ? »
 
-Maman ne répondit pas tout de suite.
+Maman ne répond pas tout de suite.
 
 « Non. Pas de terre rouge. »
 
-Des pas approchèrent. Papa, et derrière lui Kaydoudou, les mains dans les poches. Papa s'accroupit devant BriBri. Il ne gronda pas pour la chaise renversée. Il posa simplement une main sur sa tête, au milieu de son afro.
+« Et il fait chaud, au moins ? »
+
+« Non. En janvier, il fait très froid. Il paraît qu'il neige. »
+
+« De la neige ? Ça mout ! »
+
+Des pas dans la poussière. Papa. Et derrière lui, Kaydoudou, les mains dans les poches.
+
+Papa s'accroupit devant BriBri. Il ne gronde pas pour la chaise. Il pose juste sa grande main sur l'afro de son fils.
 
 « On ne quitte pas sa maison, BriBri. On l'emporte. »
 
-BriBri ne comprit pas bien ce que ça voulait dire. Mais il se leva quand même, et rentra en tenant la main de Maman d'un côté et la manche de Kaydoudou de l'autre.
+BriBri fronce le nez.
 
-Kaydoudou, lui, n'avait toujours rien dit. Ses poings étaient restés fermés dans ses poches pendant tout le chemin.
+« On l'emporte comment ? Dans une valise ? Avec le manguier dedans ? »
+
+Papa sourit. Il ne répond pas.
+
+BriBri pourrait rester là. Bouder jusqu'à janvier. Mais le noir est très noir, et la main de Papa est très chaude.
+
+Alors BriBri se lève. Tout seul. Il prend la main de Maman d'un côté. De l'autre, la manche de son frère.
+
+Dans la poche, sous la manche, il sent le poing de Kaydoudou. Fermé. Serré. Tout le long du chemin.
 
 * * *
 
-Cette nuit-là, dans la petite chambre aux murs bleus, ni l'un ni l'autre ne dormait. BriBri le savait parce que Kaydoudou respirait trop régulièrement, comme quelqu'un qui fait semblant.
+Cette nuit-là, dans la petite chambre aux murs bleus, personne ne dort.
+
+BriBri le sait. Kaydoudou respire trop bien. Comme quelqu'un qui fait semblant.
 
 « Kaydoudou. Tu dors ? »
 
@@ -104,37 +150,41 @@ Cette nuit-là, dans la petite chambre aux murs bleus, ni l'un ni l'autre ne dor
 
 « Menteur. »
 
-Un silence. Dehors, un chien aboya, puis un autre lui répondit, très loin.
+« Tu as peur de quoi, toi ? »
 
-« Tu as peur de quoi, toi ? » demanda BriBri.
-
-Kaydoudou mit longtemps à répondre. Quand il parla, sa voix était si basse que BriBri dut retenir son souffle pour l'entendre.
+Long silence. Puis une voix si basse que BriBri retient son souffle.
 
 « De l'avion. »
 
-BriBri s'assit en tailleur sur son lit, en pyjama, ses chaussettes dépareillées encore aux pieds.
+BriBri s'assoit en tailleur sur son lit. Il est en pyjama, avec sa chaussette rouge et sa chaussette jaune. Il dort toujours avec.
 
-« De l'avion ? Toi ? Tu n'as peur de rien ! »
+« De l'avion ? Toi ? Mais tu n'as peur de rien ! »
 
-« J'ai calculé. L'avion pèse plus de deux cents tonnes. Deux cents tonnes, dans le ciel, BriBri. Ça n'a aucun sens. »
+« J'ai calculé. Un avion, ça pèse plus de deux cents tonnes. Deux cents tonnes, dans le ciel, BriBri. Ça n'a aucun sens. »
 
-BriBri voulut rire. Puis il ne rit pas. Il alluma la petite lampe de poche de son frère et la posa sur la table de nuit, entre les deux lits, à côté du ballon de Mami. Le carré de pagne brilla, rouge et jaune, comme un soleil miniature.
+BriBri veut rire. Il ne rit pas.
 
-« Moi, j'ai peur qu'on m'oublie, dit BriBri. Ousmane, Mireille, tout le monde. Je vais partir, et dans un an, ils vont dire : "BriBri ? C'était qui, déjà ? Le petit avec les chaussettes ?" »
+Il attrape la petite lampe de poche de son frère. Clic. Il la pose sur la table de nuit, entre les deux lits, juste à côté du ballon de Mami. Le carré de pagne s'allume, rouge et jaune. Un petit soleil dans la nuit.
 
-Kaydoudou se redressa sur un coude.
+« Moi, j'ai peur qu'on m'oublie, dit BriBri. Je pars, et dans un an, Ousmane dit : "BriBri ? C'était qui, déjà ? Le petit avec les chaussettes ?" »
 
-« Personne ne peut oublier quelqu'un qui porte une chaussette rouge et une chaussette jaune. C'est impossible. C'est scientifique. »
+Kaydoudou se redresse sur un coude. La lampe éclaire la moitié de son visage.
 
-BriBri sourit, les yeux brillants de larmes qu'il refusait de laisser tomber. Puis il tendit son petit doigt, à travers sa moustiquaire, vers le lit de son frère.
+« Personne ne peut oublier un garçon avec une chaussette rouge et une chaussette jaune. C'est impossible. C'est scientifique. »
+
+BriBri sourit. Ses yeux brillent. Les larmes sont là, tout au bord. Il ne les laisse pas tomber.
+
+*Pas maintenant. Pas devant le grand.*
+
+Il tend son petit doigt contre la moustiquaire.
 
 « Promets-moi un truc. »
 
 « Quoi ? »
 
-« Qu'on ne jouera jamais l'un contre l'autre. Jamais. Même si on est dans deux équipes différentes, même si on est grands, même si on est dans deux pays. »
+« Qu'on ne jouera jamais l'un contre l'autre. Jamais. Même dans deux équipes. Même quand on sera grands. Même dans deux pays. »
 
-Kaydoudou regarda le petit doigt tendu. Puis il appuya la main contre sa propre moustiquaire et accrocha son petit doigt à celui de BriBri, à travers les deux voiles blancs.
+Kaydoudou regarde le petit doigt. Il appuie la main contre sa propre moustiquaire. Et son petit doigt vient accrocher celui de BriBri, à travers les deux voiles blancs.
 
 « Promis. »
 
@@ -144,51 +194,115 @@ Kaydoudou regarda le petit doigt tendu. Puis il appuya la main contre sa propre 
 
 * * *
 
-Le lendemain, Papa appela Mami à Bafoussam. Il mit le haut-parleur et posa le téléphone au milieu de la table, et toute la famille se pencha dessus comme sur un feu de camp. On entendait des poules au fond, et la machine à coudre qui s'arrêta d'un coup.
+Le lendemain, Papa appelle Mami à Bafoussam, en haut-parleur. Toute la famille se penche sur le téléphone, comme autour d'un feu. On entend des poules. Tac-tac-tac, la machine à coudre. Puis elle s'arrête d'un coup.
 
-« Alors, mes lions s'en vont en Amérique ? »
+« Alors ? Mes lions s'en vont en Amérique ? »
 
-BriBri n'arriva pas à parler. Ce fut Kaydoudou qui répondit, d'une voix bizarre.
+BriBri ouvre la bouche. Rien ne sort. C'est Kaydoudou qui répond, d'une voix bizarre.
 
 « Oui, Mami. En janvier. »
 
-« Hmm. Écoutez-moi bien, tous les deux. L'eau qui coule ne perd pas sa source. Vous pouvez aller jusqu'au bout du monde, la source reste ici, à Bafoussam, à Douala, dans votre cœur. Elle ne bouge pas. C'est vous qui coulez. »
+Alors BriBri trouve sa voix. Toute petite.
 
-Il y eut un petit silence, puis un grand rire, celui qui commençait dans le ventre de Mami et finissait dans les arbres.
+« Mami... Là-bas, tout le monde va nous oublier. »
+
+« Vous oublier ? Toi ? Le garçon qui a donné son petit déjeuner au paysage, dans le car de Bafoussam ? Mon fils, même les poules de ma cour se souviennent de toi ! »
+
+BriBri rit, malgré lui. Un tout petit rire mouillé.
+
+« Hmm. Maintenant, écoutez-moi bien, tous les deux. L'eau qui coule ne perd pas sa source. Vous pouvez aller au bout du monde. La source reste ici, à Bafoussam, à Douala, dans votre cœur. Elle ne bouge pas. C'est vous qui coulez. »
+
+Puis arrive son grand rire. Celui qui part du ventre et finit dans les arbres.
 
 « Et le ballon ? Vous l'emportez, j'espère ! »
 
-« Le ballon ? » répéta BriBri.
+« Le ballon ? » répète BriBri.
 
-« Bien sûr, le ballon. Il a une mission, je vous l'avais dit. Il doit voyager. Et maintenant, il va voyager pour de vrai. »
+« Bien sûr, le ballon ! Il a une mission, je vous l'avais dit. Il doit voyager. Et maintenant, il va voyager pour de vrai. »
 
 * * *
 
-Le samedi, Tonton Fokou organisa un petit match d'entraînement, quatre contre quatre, sur un bout du terrain qui avait séché.
+Samedi. Petit match d'entraînement, quatre contre quatre, sur un bout de terrain qui a séché.
 
-BriBri n'avait pas envie de jouer. Il n'avait envie de rien. Quand le ballon venait vers lui, il le donnait tout de suite, sans même le regarder, pour qu'on le laisse tranquille. Puis il partit en courant vers le coin du terrain, loin de tout, loin du ballon, juste pour être seul un moment.
+BriBri n'a envie de rien. Le ballon arrive ? Il le donne. Tout de suite. Sans regarder.
 
-Mais il n'était pas seul. Le défenseur qui le surveillait, un grand de Makepe venu s'entraîner avec eux, le suivit. Il le suivit jusqu'au coin, collé à lui comme son ombre, parce qu'on ne laisse jamais BriBri Ngassa tout seul près d'un but.
+« BriBri ! crie Tonton Fokou. Tu joues ou tu dors ? »
 
-Et derrière eux, au milieu, il n'y avait plus personne.
+« Je dors. »
 
-Kaydoudou vit l'espace. Il glissa le ballon dedans. Mireille arriva lancée, comme une flèche, et marqua sans que personne ne la touche.
+« Mesdames et messieurs ! annonce Radio, la main devant la bouche comme un micro. BriBri Ngassa ne dribble plus ! Appelez un docteur ! »
 
-« Merci pour la course, BriBri ! » cria-t-elle en revenant.
+BriBri part en courant vers le coin du terrain. Loin de tout. Juste pour être seul.
 
-BriBri cligna des yeux. Quelle course ? Il n'avait rien fait. Il n'avait pas touché le ballon. Il s'était juste enfui. Et pourtant, parce qu'il avait bougé, il avait emmené un adversaire avec lui et ouvert une porte pour Mireille.
+« Et BriBri Ngassa s'en va... dans le coin ! commente Radio. Il va où ? Personne ne sait ! Même lui ne sait pas ! »
 
-Il regarda ses pieds, la chaussette rouge, la chaussette jaune. Il n'avait pas eu le ballon, mais il avait joué quand même. Il était resté dans l'équipe en partant à l'autre bout.
+Mais il n'est pas seul.
 
-Après le match, il s'assit à côté d'Ousmane sur le bidon de Tonton Fokou, qui l'avait laissé libre. Ousmane mangeait des arachides. Il lui en tendit la moitié, comme toujours.
+Son défenseur le suit. Un grand de Makepe, venu s'entraîner avec eux. Il colle à BriBri comme son ombre. On ne laisse jamais BriBri Ngassa tout seul près d'un but.
 
-BriBri prit une grande inspiration.
+Dans le coin, BriBri s'arrête. Il se retourne.
 
-« Ousmane, on part. En Amérique. En janvier. Après la finale. »
+Et tout ralentit.
 
-Ousmane arrêta de mâcher. Il regarda longtemps le terrain, les bambous, le manguier. Il ne dit rien pendant si longtemps que BriBri crut qu'il n'allait jamais rien dire.
+Le grand de Makepe, collé à lui, qui souffle fort. Derrière eux, le milieu du terrain. Vide. Plus personne. Un trou large comme une route.
 
-Puis il ferma sa grande main sur les arachides qui restaient, et parla.
+Kaydoudou lève la tête. Il a vu. Bien sûr. Il voit toujours tout.
+
+Le ballon part de son pied. Il roule dans le trou, tout droit, sur la terre sèche.
+
+Et Mireille arrive, lancée comme une flèche.
+
+Bam ! Le ballon passe entre les bambous. Le filet de fortune fait « chhh ».
+
+« But de la Gazelle ! hurle Radio. Et la passe décisive est pour... pour... personne ! »
+
+Mireille revient en trottinant. En passant, elle tape dans la main de BriBri.
+
+« Merci pour la course, BriBri ! Tu as emmené ton grand de Makepe en promenade ! »
+
+« Quelle course ? Je me suis sauvé, c'est tout ! »
+
+« Alors sauve-toi encore. Ça marche ! »
+
+Kaydoudou passe à côté de lui, les mains sur les hanches.
+
+« Tu devrais te sauver plus souvent, dit-il, très sérieux. Tu es très utile quand tu boudes. »
+
+« Je ne boude pas ! »
+
+« Si. Et ton défenseur boude avec toi. Il t'a suivi jusqu'au coin. »
+
+BriBri regarde le grand de Makepe. Puis le trou.
+
+Il n'a pas touché le ballon. Et pourtant, il a ouvert une porte pour Mireille.
+
+*J'ai joué*, pense-t-il. *Même tout au bout du terrain, j'ai joué.*
+
+Sous le manguier, le sifflet de Tonton Fokou fait son bruit de hibou enrhumé. Houou !
+
+« Tu as vu, BriBri ? Un joueur qui bouge reste dans l'équipe. »
+
+BriBri entend la phrase deux fois. Une fois avec ses oreilles de footballeur. Une fois avec son cœur.
+
+*Waldorf, c'est très loin*, pense-t-il. *Mais si on bouge, on reste une équipe.*
+
+* * *
+
+Après le match, Tonton Fokou laisse son bidon jaune libre. BriBri s'y assoit à côté d'Ousmane, une fesse chacun.
+
+Ousmane mange des arachides. Il en tend la moitié à BriBri. Comme toujours.
+
+BriBri prend une grande inspiration. Personne ne va le dire à sa place. C'est son ami. C'est à lui de le dire.
+
+« Ousmane. On part. En Amérique. En janvier. Après la finale. »
+
+Ousmane arrête de mâcher.
+
+Il regarde le terrain. Les bambous. Le manguier. Il ne dit rien. Longtemps. Si longtemps que BriBri compte dans sa tête. Un. Deux. Cinq. Dix.
+
+*Il ne va jamais rien dire. Jamais.*
+
+Puis Ousmane referme sa grande main, large comme une feuille de bananier, sur les arachides qui restent. Et il parle.
 
 « Alors on gagne le tournoi. Comme ça, tu pars champion. »
 

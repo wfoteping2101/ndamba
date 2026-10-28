@@ -1,0 +1,44 @@
+{
+  "chapter": 5,
+  "beats": [
+    {
+      "id": "ch05b",
+      "anchor": "Seul. Dans le dos de la première ligne de Cobras.",
+      "shot": "dynamic",
+      "cast": ["KAY"],
+      "extras": "Prosper, called Radio (11): a slim boy with dark brown skin and close-cropped hair, in a faded oversized white T-shirt with a blurred, unreadable print, alone in a gap behind the first line of defenders, both arms raised. The Cobras de Bonabéri (11 to 12): boys with dark brown skin in dark grey shirts and black shorts, standing in two tight lines like the teeth of a comb. Mireille (11), a tall slim girl with short braids in a faded oversized orange sleeveless basketball jersey, waiting on the right touchline. Far behind, under a red parasol, Madame Ekotto: a plump, cheerful woman in her fifties in a bright wax-print dress and headwrap, clapping beside her table of bean fritters.",
+      "outfit": "Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots. A plain worn leather match ball.",
+      "action": "A frozen instant: in midfield, Kaydoudou has the ball at his feet and his head up. Straight ahead, through a narrow gap between two grey shirts, he sees Radio completely alone with his arms raised. But Kaydoudou's hips and standing foot are already turning toward the side, toward Mireille: he is about to play the safe pass. His eyes are full of doubt.",
+      "location": "The red-earth pitch of Bonamoussadi, damp after the rains, bamboo goal in the background, spectators along the wall.",
+      "light": "Low grey sky between two showers, flat light, a single pale ray on Radio in the gap.",
+      "camera": "Dynamic shot from just behind Kaydoudou's right shoulder, the comb of grey shirts across the middle of the frame, Radio sharp in the gap, Mireille small on the right.",
+      "alt": "Kaydoudou voit Radio seul au milieu du peigne des Cobras, mais il choisit la passe sur le côté."
+    },
+    {
+      "id": "ch05c",
+      "anchor": "Il coupe un gros quartier jaune, juteux, et le tend au bout de la lame.",
+      "shot": "quiet",
+      "cast": ["FOKOU", "KAY"],
+      "extras": "",
+      "outfit": "Tonton Fokou (62), lean and slightly bent, in his worn faded cap, old green track jacket over a white T-shirt, dark track trousers, the wooden whistle on a cord around his neck. Kaydoudou after school in a plain forest-green T-shirt and black shorts, a worn school bag at his feet, thin shaved part on the left side of his head.",
+      "action": "Sitting on his yellow plastic jerrycan, Tonton Fokou holds out a thick, juicy yellow quarter of mango balanced on the tip of his small knife, his face calm and unreadable under the cap. Kaydoudou, sitting on a big stone in front of him, reaches for it carefully, a drop of juice about to fall.",
+      "location": "The corner of the red-earth pitch of Bonamoussadi, in front of Madame Ekotto's small wooden shop, its red parasol folded, the big mango tree overhead, the empty pitch behind.",
+      "light": "Warm late-afternoon light under the mango tree, dappled shade, the mango flesh glowing golden.",
+      "camera": "Quiet medium close shot at seated eye level, the mango quarter on the knife at the centre between the old man's hand and the boy's.",
+      "alt": "Devant la boutique de Madame Ekotto, Tonton Fokou tend à Kaydoudou un quartier de mango au bout de son couteau."
+    },
+    {
+      "id": "ch05d",
+      "anchor": "Il écrit le mot. Il appuie si fort que la mine de son crayon casse. Crac.",
+      "shot": "close",
+      "cast": ["KAY", "BRI"],
+      "extras": "",
+      "outfit": "Kaydoudou in a plain forest-green T-shirt for the night, thin shaved part on the left side of his head. BriBri asleep in his pyjamas, his yellow sock still on his LEFT foot.",
+      "action": "Kneeling on his bed under the white mosquito net, a small flashlight wedged between his chin and his shoulder, Kaydoudou presses his pencil so hard on a sheet of squared paper that the lead snaps, a tiny fragment flying off. On the sheet, only drawings: a row of three circles and two pencil arrows, one sliding along the side, the other going straight through between two circles, with no letters or words visible. His face is fierce and decided. In the next bed, BriBri sleeps with one leg out of the sheet.",
+      "location": "The brothers' small bedroom in Douala with blue walls, two beds side by side under white mosquito nets, a maths exercise book open on the sheet.",
+      "light": "Night: a single cone of warm flashlight on the paper and Kaydoudou's face, the rest in deep blue darkness, faint rain streaks on the window.",
+      "camera": "Close shot over Kaydoudou's shoulder, the snapping pencil tip sharp at the centre, his lit face on one side, BriBri's sleeping shape soft in the background.",
+      "alt": "La nuit, à la lampe de poche, Kaydoudou appuie si fort sur son crayon que la mine casse : sa décision est prise."
+    }
+  ]
+}

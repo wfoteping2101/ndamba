@@ -18,7 +18,7 @@ Kaydoudou vient de faire une passe sur le côté. Encore une.
 
 Kaydoudou fait ses comptes, comme toujours.
 
-*Si on gagne, on est en demi-finale. Si on fait match nul, ça dépend des buts. Si on perd, c'est fini.*
+*Une défaite contre les Requins. Une victoire contre les Aigles, avec la passe de BriBri. Si on gagne, on est en demi-finale. Si on fait match nul, ça dépend des buts. Si on perd, c'est fini.*
 
 « Ils sont serrés comme les dents d'un peigne ! râle Mireille. On ne passe nulle part ! »
 

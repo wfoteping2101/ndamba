@@ -36,7 +36,7 @@ Leur numéro 11 est petit et maigre, avec des yeux de chat. Il ne court presque 
 
 « Lui, il dort », rigole BriBri.
 
-« Non, dit Kaydoudou. Il guette. »
+« Non, dit Kaydoudou. Il guette. Comme un chat devant un trou de souris. »
 
 Potomac Valley a le ballon tout le temps.
 
