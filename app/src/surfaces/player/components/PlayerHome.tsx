@@ -100,8 +100,8 @@ export default function PlayerHome() {
             </div>
           </div>
           <dl className="mt-5 grid grid-cols-3 gap-x-3">
-            <div className="min-w-0 border-l-2 border-line pl-2.5"><dt className="truncate text-[12.5px] text-ink-muted">{t('streak.current')}</dt><dd className="font-display text-[22px] tabular-nums text-terra-600">{p.streak}</dd></div>
-            <div className="min-w-0 border-l-2 border-line pl-2.5"><dt className="truncate text-[12.5px] text-ink-muted">{t('xp.targets')}</dt><dd className="font-display text-[22px] tabular-nums text-ink">{p.hits}</dd></div>
+            <div className="min-w-0 border-l-2 border-line pl-2.5"><dt className="truncate text-[12.5px] text-ink-muted">{t('streak.current')}</dt><dd className="font-display text-[22px] tabular-nums text-ink">{p.streak}</dd></div>
+            <div className="min-w-0 border-l-2 border-line pl-2.5"><dt className="line-clamp-2 text-[12.5px] leading-tight text-ink-muted">{t('xp.targets')}</dt><dd className="font-display text-[22px] tabular-nums text-ink">{p.hits}</dd></div>
             <div className="min-w-0 border-l-2 border-line pl-2.5"><dt className="truncate text-[12.5px] text-ink-muted">{t('home.lessonsDone')}</dt><dd className="font-display text-[22px] tabular-nums text-forest-600">{understood.length}/40</dd></div>
           </dl>
           <WeekDots today={today} xpByDay={p.xpByDay} />
@@ -131,7 +131,7 @@ export default function PlayerHome() {
           {!team && cal !== null && <CreateTeamCard compact />}
           <Link to="/app/joueur/carnet" className="block overflow-hidden rounded-[18px] border border-line transition hover:border-terra-300" style={paperStyle(false)}>
             <div className="p-5">
-              <div className="flex items-center gap-2 text-[13.5px] font-semibold text-terra-700"><NotebookPen size={15} strokeWidth={1.75} aria-hidden="true" />{t('notebook.short')}</div>
+              <div className="flex items-center gap-2 text-[13.5px] font-semibold text-forest-600"><NotebookPen size={15} strokeWidth={1.75} aria-hidden="true" />{t('notebook.short')}</div>
               {lastEntry ? (
                 <>
                   <div className="mt-2 text-[19px] italic leading-snug text-ink" style={{ fontWeight: 700 }}>{lastEntry.title}</div>
@@ -197,7 +197,7 @@ export function NovelCard({ lessonNo, className }: { lessonNo?: number; classNam
           <BookImage src={COVER_IMG} alt={t('novel.coverAlt', { title })} width={1200} height={1800} className="aspect-[2/3] w-full rounded-lg object-cover" fallback={fallback} />
         </a>
         <div className="min-w-0">
-          <p className="text-[13.5px] font-semibold text-terra-700">{t('novel.eyebrow')}</p>
+          <p className="text-[13.5px] font-semibold text-forest-600">{t('novel.eyebrow')}</p>
           <h2 id="novel-h" className="mt-1 text-[18px] leading-tight text-ink">{title}</h2>
           <p className="mt-1.5 text-[14px] leading-relaxed text-ink-muted">{t('novel.body', { heroes: SERIES.heroes })}</p>
           <div className="mt-3 flex flex-col items-start gap-1">

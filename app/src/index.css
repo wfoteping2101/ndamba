@@ -19,7 +19,9 @@
     line-height: 1.08;
   }
   h1 { letter-spacing: -0.026em; line-height: 1.02; }
-  .font-display.font-semibold, h1.font-semibold, h2.font-semibold, h3.font-semibold { font-weight: 740; }
+  /* font-semibold or font-bold on a display heading keeps the display weight */
+  .font-display.font-semibold, h1.font-semibold, h2.font-semibold, h3.font-semibold,
+  .font-display.font-bold, h1.font-bold, h2.font-bold, h3.font-bold { font-weight: 780; }
   .font-display.font-medium { font-weight: 620; }
   .num, .tabular-nums { font-variant-numeric: tabular-nums lining-nums; }
   ::selection { background: #FFEAA6; color: #12211A; }
@@ -94,6 +96,12 @@
   .table-n td { @apply border-b border-line/70 px-3 py-3 align-top; }
   .table-n tbody tr:last-child td { @apply border-b-0; }
   .table-n th.num, .table-n td.num { @apply text-right tabular-nums; }
+
+  /* The floating Mola launcher (AppLayout wraps it in .mola-dock). A page lifts it above its own
+     sticky action bar, or hides it, with useMolaDock() from src/ui. The open chat is never moved. */
+  .mola-dock { display: contents; }
+  html[data-mola-dock='lift'] .mola-dock > .fixed:not([role='dialog']) { transform: translateY(calc(-1 * var(--mola-lift, 0px))); }
+  html[data-mola-dock='hide'] .mola-dock > .fixed:not([role='dialog']) { display: none; }
 
   .pitch-svg svg { width: 100%; height: auto; display: block; }
   .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }

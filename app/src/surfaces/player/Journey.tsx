@@ -31,19 +31,17 @@ export default function PlayerJourney() {
   if (players === null || (me && data === undefined)) return <Spinner />
   if (!me || !data) return (
     <div>{back}
-      <section className="card card-pad mx-auto max-w-2xl">
-        <div className="mb-3 flex items-center gap-3">
-          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-forest-600 text-cream"><Route size={20} aria-hidden="true" /></span>
-          <div>
-            <h1 className="font-display text-2xl font-semibold text-ink">{t('page.linkTitle')}</h1>
-            <p className="text-sm text-ink-muted">{t('page.linkBody', { team: team.name })}</p>
-          </div>
+      <section className="max-w-2xl rounded-[22px] border border-line bg-paper p-5 sm:p-7">
+        <div className="mb-5">
+          <Route size={24} strokeWidth={1.75} className="text-forest-600" aria-hidden="true" />
+          <h1 className="mt-3 text-[26px] leading-tight text-ink sm:text-[30px]">{t('page.linkTitle')}</h1>
+          <p className="mt-1.5 text-[15px] leading-relaxed text-ink-muted">{t('page.linkBody', { team: team.name })}</p>
         </div>
-        {players.length === 0 ? <p className="rounded-xl bg-sand/60 px-3 py-3 text-sm text-ink-muted">{t('page.linkEmpty')}</p> : (
-          <ul className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
+        {players.length === 0 ? <p className="text-[14.5px] text-ink-muted">{t('page.linkEmpty')}</p> : (
+          <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             {[...players].sort(byNumber).map((p) => (
               <li key={p.id}>
-                <button type="button" onClick={() => updateProfile({ playerId: p.id })} className="flex min-h-[52px] w-full items-center gap-3 rounded-xl border border-line px-3 text-left transition hover:border-forest-300 hover:bg-forest-50/40">
+                <button type="button" onClick={() => updateProfile({ playerId: p.id })} className="flex min-h-[52px] w-full items-center gap-3 rounded-xl border border-line px-3 text-left transition hover:border-forest-500 hover:bg-forest-50/40">
                   <NumberBadge player={p} size="sm" /><span className="min-w-0 flex-1 truncate text-sm font-semibold text-ink">{p.name}</span>
                 </button>
               </li>

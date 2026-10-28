@@ -72,7 +72,7 @@ export function NotebookHeader({ eyebrow, title, subtitle, actions, photo, child
         <div className="min-w-0 flex-1">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="min-w-0">
-            {eyebrow && <p className="mb-1.5 text-[14px] font-semibold text-terra-700">{eyebrow}</p>}
+            {eyebrow && <p className="mb-1.5 text-[14px] font-semibold text-forest-600">{eyebrow}</p>}
             <h1 className={cx(handCls, 'text-[32px] leading-tight text-ink sm:text-[42px]')}>{title}</h1>
             {subtitle && <p className="mt-2 max-w-2xl text-[15.5px] leading-relaxed text-ink-soft">{subtitle}</p>}
           </div>

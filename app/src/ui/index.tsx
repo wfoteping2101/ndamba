@@ -35,6 +35,29 @@ export function LangSwitch({ dark = false }: { dark?: boolean }) {
   )
 }
 
+/* ---------- The floating Mola launcher ---------- */
+
+/**
+ * Keep the floating Mola launcher clear of a page's own sticky action bar.
+ *   useMolaDock({ lift: 72 })   moves the launcher up by 72 px while the page is shown
+ *   useMolaDock({ hide: true }) hides it (the page has its own Mola entry, or a full-width bar)
+ * Only the launcher button and its teaser move; the open chat is never affected.
+ */
+export function useMolaDock({ lift = 0, hide = false }: { lift?: number; hide?: boolean } = {}) {
+  useEffect(() => {
+    const el = document.documentElement
+    if (hide) el.dataset.molaDock = 'hide'
+    else if (lift > 0) { el.dataset.molaDock = 'lift'; el.style.setProperty('--mola-lift', `${lift}px`) }
+    else return
+    return () => { delete el.dataset.molaDock; el.style.removeProperty('--mola-lift') }
+  }, [lift, hide])
+}
+/** The same as a component: <MolaDock lift={72} /> or <MolaDock hide /> anywhere in a page. */
+export function MolaDock(props: { lift?: number; hide?: boolean }) {
+  useMolaDock(props)
+  return null
+}
+
 /* ---------- Layout pieces ---------- */
 
 /**
@@ -85,9 +108,10 @@ type Tone = 'neutral' | 'forest' | 'terra' | 'sun' | 'clay' | 'dark' | 'ok'
 const toneCls: Record<Tone, string> = {
   neutral: 'bg-sand text-ink-soft',
   forest: 'bg-forest-50 text-forest-700',
-  // terra is never a label colour: it renders as the outlined neutral
-  terra: 'border border-line bg-transparent text-ink-soft',
-  sun: 'bg-sun-50 text-sun-800',
+  // terra is never a label colour: it renders as a pitch-green outline
+  terra: 'border border-forest-300 bg-transparent text-forest-700',
+  // gold is a fill with ink text, never gold text on a pale fill
+  sun: 'bg-sun-100 text-ink',
   clay: 'bg-clay-50 text-clay-700',
   dark: 'bg-night-800 text-cream',
   ok: 'bg-ok-50 text-ok-700',
@@ -99,9 +123,10 @@ export function Badge({ children, tone = 'neutral', className }: { children: Rea
 
 /** A key number with its label. The number carries the weight; colour only when it means something. */
 export function Stat({ label, value, hint, tone }: { label: string; value: ReactNode; hint?: ReactNode; tone?: 'forest' | 'terra' | 'sun' | 'clay' }) {
-  const color = tone === 'forest' ? 'text-forest-600' : tone === 'sun' ? 'text-sun-800' : tone === 'clay' ? 'text-clay-600' : 'text-ink'
+  // sun marks the key number with a gold rule on top (gold text is for dark backgrounds only)
+  const color = tone === 'forest' ? 'text-forest-600' : tone === 'clay' ? 'text-clay-600' : 'text-ink'
   return (
-    <div className="rounded-card border border-line bg-paper px-4 py-3.5">
+    <div className={cx('rounded-card border border-line bg-paper px-4 py-3.5', tone === 'sun' && 'border-t-[3px] border-t-sun-500')}>
       <div className="text-[13px] font-semibold leading-snug text-ink-muted">{label}</div>
       <div className={cx('num mt-2 font-display text-[30px] leading-none', color)}>{value}</div>
       {hint && <div className="mt-2 text-[12.5px] leading-snug text-ink-muted">{hint}</div>}
@@ -250,10 +275,12 @@ export function Callout({ tone = 'forest', title, children }: { tone?: 'forest' 
 
 /* ---------- Pitch diagrams (shared with the books) ---------- */
 
+const DIAGRAM_FONT = "'Archivo Variable', Archivo, sans-serif"
+
 export function Pitch({ spec, width = 640, title, className }: { spec?: DiagramSpec | null; width?: number; title?: string; className?: string }) {
   const svg = useMemo(() => {
     if (!spec) return ''
-    try { return renderDiagram(spec, { width, title }) } catch { return '' }
+    try { return renderDiagram(spec, { width, title, font: DIAGRAM_FONT }) } catch { return '' }
   }, [spec, width, title])
   if (!svg) return null
   return <div className={cx('pitch-svg overflow-hidden rounded-control', className)} dangerouslySetInnerHTML={{ __html: svg }} />

@@ -74,7 +74,7 @@ export function LessonCard({ lesson: l, variant = 'full', className }: { lesson:
               <Link to={`/app/joueur#defi-${challenge.id}`} className="flex min-h-[56px] items-center gap-3 rounded-[14px] border border-line bg-paper px-3.5 py-2.5 transition hover:border-terra-300">
                 <Target size={18} strokeWidth={1.75} className="shrink-0 text-terra-600" aria-hidden="true" />
                 <span className="min-w-0">
-                  <span className="block text-[12.5px] font-semibold text-terra-700">{t('lesson.challenge')}</span>
+                  <span className="block text-[12.5px] font-semibold text-ink-muted">{t('lesson.challenge')}</span>
                   <span className="block truncate text-[14px] font-medium text-ink">{challengeText(challenge, lang).title}</span>
                 </span>
               </Link>
@@ -83,7 +83,7 @@ export function LessonCard({ lesson: l, variant = 'full', className }: { lesson:
               <Link to={`/app/exercices/${drill.id}`} className="flex min-h-[56px] items-center gap-3 rounded-[14px] border border-line bg-paper px-3.5 py-2.5 transition hover:border-forest-300">
                 <Dumbbell size={18} strokeWidth={1.75} className="shrink-0 text-forest-600" aria-hidden="true" />
                 <span className="min-w-0">
-                  <span className="block text-[12.5px] font-semibold text-forest-700">{t('lesson.drill', { id: drill.id })}</span>
+                  <span className="block text-[12.5px] font-semibold text-ink-muted">{t('lesson.drill', { id: drill.id })}</span>
                   <span className="block truncate text-[14px] font-medium text-ink">{drillText(drill, lang).title}</span>
                 </span>
               </Link>

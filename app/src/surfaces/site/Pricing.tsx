@@ -44,7 +44,7 @@ export default function Pricing() {
             <button key={c} type="button" onClick={() => setCycle(c)} aria-pressed={cycle === c}
               className={cx('inline-flex min-h-[42px] items-center gap-2 rounded-full px-4 text-[14px] font-semibold transition-colors sm:px-5', cycle === c ? 'bg-ink text-cream' : 'text-ink-muted hover:text-ink')}>
               {c === 'month' ? t('pricing.monthly') : t('pricing.annual')}
-              {c === 'year' && <span className={cx('rounded-full px-2 py-0.5 text-[11.5px] font-semibold', cycle === 'year' ? 'bg-sun-500 text-ink' : 'bg-sun-50 text-sun-800')}>{t('pricing.annualHint')}</span>}
+              {c === 'year' && <span className={cx('rounded-full px-2 py-0.5 text-[11.5px] font-semibold', cycle === 'year' ? 'bg-sun-500 text-ink' : 'bg-sun-100 text-ink')}>{t('pricing.annualHint')}</span>}
             </button>
           ))}
         </div>

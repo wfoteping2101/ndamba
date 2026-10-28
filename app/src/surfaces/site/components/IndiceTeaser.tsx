@@ -7,7 +7,7 @@ import { cx } from '../../../lib/util'
 
 // Colours of the five sub-indices on a dark background.
 export const SUB_COLOR: Record<SubKey, string> = {
-  progression: '#73B391', penetration: '#DB8D66', fixation: '#FFD452', reprise: '#E8798A', controle: '#F6F7F2',
+  progression: '#3E9E6E', penetration: '#73B391', fixation: '#CBE5D6', reprise: '#F5B700', controle: '#F6F7F2',
 }
 
 // A realistic half of football for the Lionceaux (counts of tags), so the index starts near 65.

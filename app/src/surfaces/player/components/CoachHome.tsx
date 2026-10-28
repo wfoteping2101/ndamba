@@ -176,9 +176,10 @@ function TodayCard({ today, sessions, matches, md, inMatchWeek, busy, onCreate }
         </div>
       )}
       {!matchToday && s && (
-        <div className="mt-auto flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-3 sm:px-6">
+        <div className="mt-auto flex flex-wrap items-center justify-between gap-x-3 gap-y-2 border-t border-line px-5 py-3 sm:px-6">
+          {/* on phones the button comes first, on the left, clear of the floating Mola button */}
+          <Link to={`/app/seances/${s.id}`} className="btn-primary btn-sm order-first min-h-[44px] px-4 sm:order-last">{t('today.open')}</Link>
           <span className="text-[13.5px] text-ink-muted first-letter:uppercase">{fmtDate(today, lang, { weekday: 'long', day: 'numeric', month: 'long' })}</span>
-          <Link to={`/app/seances/${s.id}`} className="btn-primary btn-sm min-h-[44px] px-4">{t('today.open')}</Link>
         </div>
       )}
     </section>

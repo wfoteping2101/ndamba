@@ -213,7 +213,7 @@ export function renderDiagram(spec, opts = {}) {
   // zone labels
   for (const z of spec.zones || []) {
     if (!z.label) continue
-    out.push(`<text x="${r2(z.x * s + 6)}" y="${r2(z.y * s + 14)}" font-size="11" font-weight="700" letter-spacing="0.6" fill="${P.zoneLabel}" style="text-transform:uppercase">${esc(z.label)}</text>`)
+    out.push(`<text x="${r2(z.x * s + 6)}" y="${r2(z.y * s + 14)}" font-size="11.5" font-weight="650" fill="${P.zoneLabel}">${esc(z.label)}</text>`)
   }
   // grid corner cones by default + explicit cones
   const cones = spec.cones || (spec.view === 'grid' ? [[0, 0], [w, 0], [0, h], [w, h]] : [])

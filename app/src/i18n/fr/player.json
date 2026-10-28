@@ -29,7 +29,9 @@
     "notebookEmpty": "Ta première page t'attend",
     "notebookEmptyBody": "Écris ce que tu as appris aujourd'hui, comme BriBri.",
     "statDaily": "Défis",
-    "last7": "Mes 7 derniers jours"
+    "last7": "Mes 7 derniers jours",
+    "challengeMeta": "{{minutes}} min, {{skill}}",
+    "ritualLine": "Le match est {{when}} : prépare ton sac et couche-toi tôt la veille."
   },
   "today": {
     "eyebrow": "Aujourd'hui",
@@ -85,7 +87,8 @@
     "weekCreated_other": "{{count}} séances préparées pour la semaine du match.",
     "weekReady": "La semaine est déjà prête : chaque jour avant le match a sa séance.",
     "seeWeek": "Voir la semaine",
-    "liveShort": "Direct"
+    "liveShort": "Direct",
+    "againstTeam": "Contre {{opponent}}"
   },
   "week": {
     "title": "La semaine",
@@ -244,7 +247,8 @@
     "xpHint": "10 XP pour le défi, 10 de plus si tu atteins l'objectif",
     "xpWon": "+{{n}} XP",
     "saved": "Résultat noté",
-    "lesson": "Leçon du Ballon n° {{n}}"
+    "lesson": "Leçon du Ballon n° {{n}}",
+    "rowMeta": "Objectif {{target}}, {{minutes}} min, {{skill}}"
   },
   "units": {
     "jongles": "jongles",
@@ -377,7 +381,9 @@
     "partDone": "{{n}} sur {{total}} comprises",
     "partRange": "Partie {{n}}, leçons {{from}} à {{to}}",
     "nextPart": "Partie suivante : {{country}}",
-    "charactersAlt": "{{heroes}}, les héros du roman"
+    "charactersAlt": "{{heroes}}, les héros du roman",
+    "partTab": "Partie {{n}}, {{country}}",
+    "inPart": "Dans cette partie"
   },
   "parts": {
     "1": {
@@ -470,7 +476,8 @@
     },
     "fLesson": "Leçon liée",
     "fLessonHint": "Relie ta page à une Leçon du Ballon (facultatif).",
-    "noLesson": "Aucune"
+    "noLesson": "Aucune",
+    "lessonOption": "Leçon {{n}} : {{title}}"
   },
   "perf": {
     "hero": {

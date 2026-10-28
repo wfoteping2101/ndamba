@@ -12,7 +12,7 @@ import { useSession } from '../../lib/session'
 import { cx, fmtDate, nowISO, uid } from '../../lib/util'
 import type { NotebookEntry } from '../../lib/types'
 import { allLessons, lessonOfDay, partOf, type LessonView } from './lessons'
-import { NotebookHeader, PaperCard, handCls, useHandFont } from './components/Paper'
+import { NotebookHeader, PaperCard, handCls } from './components/Paper'
 import { useToast } from './components/bits'
 import { useToday } from './components/data'
 import { usePlayerTier } from './tier'
@@ -40,7 +40,6 @@ export default function Notebook() {
   /** senior wording when the performance space applies, the youth notebook otherwise */
   const k = (key: string) => (perf && PERF_KEYS.has(key) ? `perf.journal.${key}` : `notebook.${key}`)
   useDocumentTitle(t(k('docTitle')))
-  useHandFont()
   const { profile } = useSession()
   const today = useToday()
   const entries = useLiveQuery(() => db.notebook.orderBy('date').reverse().toArray(), [], null as NotebookEntry[] | null)
@@ -91,7 +90,7 @@ export default function Notebook() {
       <style>{PRINT_CSS}</style>
       {(() => {
         const actions = <>
-          {list.length > 0 && <button type="button" className="btn-outline min-h-[44px]" onClick={() => window.print()}><Printer size={16} aria-hidden="true" />{t('common:actions.print')}</button>}
+          {list.length > 0 && <button type="button" className="btn-outline min-h-[44px]" onClick={() => window.print()}><Printer size={16} strokeWidth={1.75} aria-hidden="true" />{t('common:actions.print')}</button>}
           <button type="button" className="btn-primary min-h-[44px]" onClick={() => setDraft({ date: today, title: '', text: '' })}><Plus size={16} aria-hidden="true" />{t(k('new'))}</button>
         </>
         const search = list.length > 4 && (
@@ -102,29 +101,29 @@ export default function Notebook() {
           </div>
         )
         return perf ? (
-          <div className="no-print mb-6"><PageHeader eyebrow={t('perf.journal.eyebrow')} title={t('perf.journal.heading')} subtitle={t('perf.journal.subtitle')} actions={actions} />{search}</div>
+          <div className="no-print mb-8"><PageHeader title={t('perf.journal.heading')} subtitle={t('perf.journal.subtitle')} actions={actions} />{search}</div>
         ) : (
           <NotebookHeader eyebrow={t('notebook.eyebrow')} title={t('notebook.title')} subtitle={t('notebook.subtitle')} actions={actions}>{search}</NotebookHeader>
         )
       })()}
 
       {entries === null ? null : list.length === 0 && perf ? (
-        <section className="card card-pad mx-auto max-w-2xl">
-          <NotebookPen size={28} aria-hidden="true" className="text-forest-600" />
-          <h2 className="mt-3 font-display text-[24px] font-semibold leading-tight text-ink">{t('perf.journal.emptyTitle')}</h2>
+        <section className="max-w-2xl rounded-[22px] border border-line bg-paper p-6 sm:p-8">
+          <NotebookPen size={26} strokeWidth={1.75} aria-hidden="true" className="text-forest-600" />
+          <h2 className="mt-4 text-[24px] leading-tight text-ink">{t('perf.journal.emptyTitle')}</h2>
           <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">{t('perf.journal.emptyBody')}</p>
           <button type="button" className="btn-primary mt-5 min-h-[44px]" onClick={() => setDraft({ date: today, title: '', text: '' })}><Plus size={16} aria-hidden="true" />{t('perf.journal.first')}</button>
         </section>
       ) : list.length === 0 ? (
-        <PaperCard className="mx-auto max-w-2xl">
+        <PaperCard className="max-w-2xl">
           <div className="py-8 pl-14 pr-6 sm:py-10">
-            <NotebookPen size={30} aria-hidden="true" className="text-terra-500" />
-            <h2 className={cx(handCls, 'mt-3 text-[26px] font-semibold leading-tight text-ink')}>{t('notebook.emptyTitle')}</h2>
+            <NotebookPen size={28} strokeWidth={1.75} aria-hidden="true" className="text-terra-600" />
+            <h2 className={cx(handCls, 'mt-3 text-[28px] leading-tight text-ink')}>{t('notebook.emptyTitle')}</h2>
             <p className="mt-2 text-[15.5px] leading-[28px] text-ink-soft">{t('notebook.emptyBody')}</p>
             <div className="mt-5 flex flex-wrap gap-2">
               <button type="button" className="btn-primary min-h-[44px]" onClick={() => setDraft({ date: today, title: '', text: '' })}><Plus size={16} aria-hidden="true" />{t('notebook.first')}</button>
               <button type="button" className="btn-outline min-h-[44px]" onClick={() => setDraft({ date: today, title: ofDay.title, text: '', lessonNo: ofDay.no })}>
-                <BookOpen size={16} aria-hidden="true" />{t('notebook.fromLesson', { n: ofDay.no })}
+                <BookOpen size={16} strokeWidth={1.75} aria-hidden="true" />{t('notebook.fromLesson', { n: ofDay.no })}
               </button>
             </div>
           </div>
@@ -135,10 +134,10 @@ export default function Notebook() {
             <div className={cx(handCls, 'text-[26px] font-semibold')}>{t(k('printTitle'), { name: profile?.name ?? '' })}</div>
           </div>
           {shown.length === 0 && <p className="py-8 text-center text-sm text-ink-muted">{t('notebook.noMatch')}</p>}
-          <div className="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-2">
+          <div className="max-w-3xl space-y-5">
             {shown.map((e) => <EntryCard key={e.id} e={e} plain={perf} lesson={perf ? undefined : lessons.find((l) => l.no === e.lessonNo)} onEdit={() => setDraft({ ...e })} onDelete={() => setToDelete(e)} />)}
           </div>
-          <p className="no-print mt-6 text-center text-xs text-ink-faint">{t(k('count'), { count: list.length })}</p>
+          <p className="no-print mt-6 max-w-3xl text-[13px] text-ink-muted">{t(k('count'), { count: list.length })}</p>
         </div>
       )}
 
@@ -160,32 +159,32 @@ function EntryCard({ e, lesson, plain = false, onEdit, onDelete }: { e: Notebook
   const { t, lang } = useT('player')
   const part = lesson ? partOf(lesson.no) : null
   if (plain) return (
-    <article className="card card-pad">
+    <article className="rounded-[18px] border border-line bg-paper p-5 sm:p-6">
       <div className="flex items-start justify-between gap-3">
-        <time dateTime={e.date} className="pt-0.5 text-[12.5px] font-semibold uppercase tracking-[0.1em] text-ink-muted">{fmtDate(e.date, lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</time>
+        <time dateTime={e.date} className="pt-0.5 text-[13.5px] font-semibold text-ink-muted first-letter:uppercase">{fmtDate(e.date, lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</time>
         <div className="no-print -mr-2 -mt-1 flex shrink-0">
           <button type="button" className="btn-ghost h-11 w-11 justify-center p-0" onClick={onEdit} aria-label={t('notebook.edit', { title: e.title })}><Pencil size={16} aria-hidden="true" /></button>
           <button type="button" className="btn-ghost h-11 w-11 justify-center p-0 hover:text-clay-600" onClick={onDelete} aria-label={t('notebook.delete', { title: e.title })}><Trash2 size={16} aria-hidden="true" /></button>
         </div>
       </div>
-      <h2 className="mt-1 font-display text-[20px] font-semibold leading-snug text-ink">{e.title}</h2>
-      {e.text && <p className="mt-1.5 whitespace-pre-line break-words text-[15px] leading-relaxed text-ink-soft">{e.text}</p>}
+      <h2 className="mt-1 text-[21px] leading-snug text-ink">{e.title}</h2>
+      {e.text && <p className="mt-2 whitespace-pre-line break-words text-[15.5px] leading-relaxed text-ink-soft">{e.text}</p>}
     </article>
   )
   return (
     <PaperCard as="article">
       <div className="py-4 pl-12 pr-4 sm:py-5 sm:pl-14 sm:pr-5">
         <div className="flex items-start justify-between gap-3">
-          <time dateTime={e.date} className={cx(handCls, 'pt-0.5 text-[15px] text-terra-700')}>{fmtDate(e.date, lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</time>
+          <time dateTime={e.date} className="pt-0.5 text-[14px] font-semibold text-ink-muted first-letter:uppercase">{fmtDate(e.date, lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</time>
           <div className="no-print -mr-2 -mt-1 flex shrink-0">
             <button type="button" className="btn-ghost h-11 w-11 justify-center p-0" onClick={onEdit} aria-label={t('notebook.edit', { title: e.title })}><Pencil size={16} aria-hidden="true" /></button>
             <button type="button" className="btn-ghost h-11 w-11 justify-center p-0 hover:text-clay-600" onClick={onDelete} aria-label={t('notebook.delete', { title: e.title })}><Trash2 size={16} aria-hidden="true" /></button>
           </div>
         </div>
-        <h2 className={cx(handCls, 'mt-1 text-[24px] font-semibold leading-tight text-ink')}>{e.title}</h2>
-        {e.text && <p className="mt-1 whitespace-pre-line break-words text-[15.5px] leading-[28px] text-ink-soft">{e.text}</p>}
+        <h2 className={cx(handCls, 'mt-1 text-[25px] leading-tight text-ink')}>{e.title}</h2>
+        {e.text && <p className="mt-1 whitespace-pre-line break-words text-[16px] leading-[28px] text-ink-soft">{e.text}</p>}
         {lesson && part && (
-          <Link to={`/app/joueur/lecons#lecon-${lesson.no}`} className="mt-3 inline-flex min-h-[36px] max-w-full items-center gap-2 rounded-full border border-[#DCE2D8] bg-paper/80 py-1 pl-1 pr-3 text-[13px] font-medium text-ink-soft hover:border-terra-300">
+          <Link to={`/app/joueur/lecons#lecon-${lesson.no}`} className="mt-3 inline-flex min-h-[40px] max-w-full items-center gap-2 rounded-full border border-line bg-paper py-1 pl-1 pr-3.5 text-[13.5px] font-medium text-ink-soft hover:border-terra-300">
             <span className="inline-flex h-7 shrink-0 items-center rounded-full px-2 text-[11px] font-bold tabular-nums" style={{ background: part.tone, color: part.ink }}>{t('lesson.number', { n: lesson.no })}</span>
             <span className="truncate">{lesson.title}</span>
           </Link>
@@ -219,7 +218,7 @@ function EntryEditor({ draft, lessons, perf, onClose, onSave }: { draft: Draft; 
         </Field>
         <div className="-mt-2 mb-4 flex flex-wrap gap-1.5" role="group" aria-label={t('notebook.prompts')}>
           {(perf ? PERF_PROMPTS : PROMPTS).map((p) => (
-            <button key={p} type="button" className="chip min-h-[36px] cursor-pointer hover:border-terra-300" onClick={() => addPrompt(t(`${perf ? 'perf.journal' : 'notebook'}.prompt.${p}`))}>
+            <button key={p} type="button" className="chip min-h-[38px] cursor-pointer px-3 text-[13px] hover:border-forest-300" onClick={() => addPrompt(t(`${perf ? 'perf.journal' : 'notebook'}.prompt.${p}`))}>
               <Plus size={12} aria-hidden="true" />{t(`${perf ? 'perf.journal' : 'notebook'}.prompt.${p}`)}
             </button>
           ))}
@@ -227,7 +226,7 @@ function EntryEditor({ draft, lessons, perf, onClose, onSave }: { draft: Draft; 
         {!perf && <Field label={t('notebook.fLesson')} htmlFor="nb-lesson" hint={t('notebook.fLessonHint')}>
           <select id="nb-lesson" className="input" value={d.lessonNo ?? ''} onChange={(e) => set({ lessonNo: e.target.value ? Number(e.target.value) : undefined })}>
             <option value="">{t('notebook.noLesson')}</option>
-            {lessons.map((l) => <option key={l.no} value={l.no}>{l.no}. {l.title}</option>)}
+            {lessons.map((l) => <option key={l.no} value={l.no}>{t('notebook.lessonOption', { n: l.no, title: l.title })}</option>)}
           </select>
         </Field>}
       </form>

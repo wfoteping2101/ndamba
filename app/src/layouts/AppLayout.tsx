@@ -172,7 +172,7 @@ export default function AppLayout() {
           </div>
         </div>
       )}
-      <MolaLauncher />
+      <div className="mola-dock"><MolaLauncher /></div>
     </div>
   )
 }
@@ -190,7 +190,7 @@ function TeamPlate({ team }: { team: Team }) {
     <Link to="/app/reglages" className="mx-3 mb-3 flex items-center gap-3 rounded-card bg-white/[0.06] px-3 py-3 transition-colors hover:bg-white/[0.09]" title={t('app.switchTeam')}>
       <span aria-hidden="true" className="h-8 w-8 shrink-0 rounded-full ring-2 ring-white/20" style={{ background: `linear-gradient(135deg, ${a} 50%, ${b} 50%)` }} />
       <span className="min-w-0">
-        <span className="block truncate font-display text-[14.5px] leading-tight text-white">{team.name}</span>
+        <span className="line-clamp-2 block font-display text-[14.5px] leading-tight text-white">{team.name}</span>
         <span className="mt-0.5 block truncate text-[12px] text-cream/60">{teamLine(team, t)}</span>
       </span>
     </Link>
