@@ -96,7 +96,7 @@ Chaque chapitre donne : le point de vue (POV), le moment, les étapes de l'histo
 - Sélections dans un grand dôme couvert. Des dizaines d'enfants avec des numéros sur des chasubles. Coach Dana Whitfield, sifflet, tablette, voix forte et sourire.
 - **Tyler Brooks** se moque des chaussettes dépareillées de Kaydoudou (« Did your laundry lose a fight? »). Kaydoudou répond par un petit pont sur Tyler. Tension.
 - Kaydoudou brille dans les jeux réduits. BriBri, crispé, joue trop prudemment et se fait remarquer seulement à la fin, avec une passe qui traverse tout le dôme.
-- Résultat : BriBri est pris en U12 ; Kaydoudou en U11, mais Coach Whitfield lui propose de jouer aussi avec les U12, **surclassé** (« playing up »). Les frères seront ensemble le samedi. Tyler est dans l'équipe.
+- Résultat : BriBri est pris en U12 ; Kaydoudou en U11, mais Coach Whitfield le fait jouer avec les U12, **surclassé** (« playing up ») : entraînements, vidéo et matchs. Les frères sont ensemble, Kaydoudou est le plus petit de l’équipe. Tyler est dans l'équipe.
 - **Fin** : premier entraînement : Coach Whitfield présente Marcus Bell, l'analyste à la tablette. « Marcus filme tout. Marcus compte tout. Ne mentez jamais à Marcus. »
 - **Carnet n°10 : Le premier contrôle va quelque part.** Contrôler le ballon vers l'espace libre fait gagner une seconde ; le contrôler sous ses pieds la fait perdre. Schéma : un joueur qui reçoit et contrôle vers l'espace vide, loin du défenseur.
 

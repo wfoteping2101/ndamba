@@ -68,7 +68,7 @@ Vieux ballon de cuir brun clair, déformé, coutures visibles ; **un carré de p
 
 - **Mami Nyanga** (`MAMI`), 68 ans (69 en parties II et III, 70 en partie IV, 71 à Londres en partie V, avec une canne) : petite, très droite, rire immense, **foulard et robe en pagne wax rouge et jaune**, lunettes au bout du nez quand elle coud, sandales.
 - **Tonton Fokou** (`FOKOU`), 62 ans : mince et sec, **casquette usée**, **sifflet en bois** au cou, veste de survêtement verte, une jambe qui boite un peu.
-- **Papa Armand** (`PAPA`), 41 ans : grand, barbe courte bien taillée, yeux chaleureux, chemise bleu clair ou chemise en pagne ; en hiver un bonnet vert, rouge et jaune tricoté par Maman.
+- **Papa Armand** (`PAPA`), 42 ans : grand, barbe courte bien taillée, yeux chaleureux, chemise bleu clair ou chemise en pagne ; en hiver un bonnet vert, rouge et jaune tricoté par Maman.
 - **Maman Estelle** (`MAMAN`), 39 ans : énergique, **tresses rassemblées en chignon**, grandes boucles d'oreilles dorées, robe en pagne bleu canard et jaune.
 
 Les personnages secondaires (Mireille, Ousmane, Coach Dana, Marcus, Diego, Tyler, Lacombe, Awa, Lucas, Kenzo, Jordi, Avi Ramon, Laia, Nil, Youssef, Coach Okafor, Jaden, Freddie, Monsieur Atéba) sont décrits dans `BIBLE.md` et les notes de partie ; chaque prompt reprend leur description complète.

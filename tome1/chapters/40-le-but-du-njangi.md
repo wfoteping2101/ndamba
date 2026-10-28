@@ -280,7 +280,7 @@ Il serre leurs mains, l'une après l'autre, entre les deux siennes.
 
 « Le pays a besoin de ça. »
 
-Il sourit à Kaydoudou. « Toi, tu seras le plus jeune du stage. Surclassé, comme ici. »
+Puis, à Kaydoudou : « Toi, tu seras le plus jeune. Surclassé, comme ici. »
 
 « J'ai l'habitude ! »
 
@@ -288,7 +288,7 @@ Il sourit à Kaydoudou. « Toi, tu seras le plus jeune du stage. Surclassé, com
 
 « Les Lionceaux, souffle Kaydoudou. Comme à Bonamoussadi. »
 
-« Le même nom, dit BriBri. Les mêmes lions. Tonton Fokou sur son bidon jaune. Ousmane. Mireille. On rentre à la maison, Kaydoudou. Sur la terre rouge. Avec le Njangi dans la tête. »
+« Le même nom, dit BriBri. Les mêmes lions. Tonton Fokou sur son bidon jaune. Ousmane. Mireille. On rentre à la maison. Sur la terre rouge. Avec le Njangi dans la tête. »
 
 Au bout du couloir, Papa arrive en courant.
 
