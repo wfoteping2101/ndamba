@@ -1,0 +1,44 @@
+{
+  "chapter": 27,
+  "beats": [
+    {
+      "id": "ch27b",
+      "anchor": "Il plonge dans l'herbe et fait trois mètres de brasse.",
+      "shot": "dynamic",
+      "cast": ["BRI"],
+      "extras": "Laia Ferrer, 13: a white Catalan girl with a brown bun, freckles up to her ears, a small white scar on her knee and socks rolled down, sitting on a bench lacing her boots and laughing. Nil Soler, 13: a tall, very thin white boy with sticking out ears and a usually serious face, clapping for once. Pol Vidal, 13: a tall, broad white striker, laughing out loud. All three in the sand gold Costa Daurada kit with a navy band. Far in the background, Jordi Puig, 45, a slim white Catalan coach with a salt and pepper beard and a carpenter's pencil behind his ear, small and blurred behind a little line marking machine.",
+      "outfit": "BriBri (12) in the sand gold Costa Daurada kit with a navy band, green shorts, red sock on his RIGHT foot and yellow sock on his LEFT foot, football boots, his soft little afro full of grass, the gap in his front teeth showing in a huge grin.",
+      "action": "BriBri lies flat on his belly on the grass between two fresh white lines, arms and legs spread in a breaststroke, swimming in the grass as if in a pool lane, cheeks puffed like a swimmer. On the bench, Laia laughs while lacing a boot, Nil claps, Pol bends over laughing.",
+      "location": "The grass pitch of La Granja del Mar in October, long straight lines of fresh white paint running down the pitch like swimming lanes, russet vineyards on one side and a row of pines on the other.",
+      "light": "Clear October morning, pale blue sky, fresh crisp sunlight making the white paint shine.",
+      "camera": "Dynamic low angle at grass level, BriBri swimming toward the camera inside his lane, the friends on the bench behind him.",
+      "alt": "BriBri plonge dans l'herbe entre deux lignes toutes fraîches et nage la brasse dans son couloir, sous les rires de Laia, Nil et Pol."
+    },
+    {
+      "id": "ch27c",
+      "anchor": "Le numéro 2 regarde la tribune, lui aussi.",
+      "shot": "medium",
+      "cast": ["BRI", "MAMAN"],
+      "extras": "The CF Torre del Far number 2: a tall, sturdy 13 year old white Catalan boy from a fishing village, tanned arms, hair bleached almost blond by salt and sun, in a blue and white kit with the number 2, glued one metre from BriBri. In the small stand behind, a few parents on wooden benches.",
+      "outfit": "BriBri (12) in the sand gold Costa Daurada kit with a navy band, green shorts, red sock on his RIGHT foot and yellow sock on his LEFT foot, his boots biting into the white touchline paint. Maman (Estelle Ngassa) in the stand: braids gathered in a bun, big gold hoop earrings, a teal blue and yellow wax print dress, waving back with a puzzled smile.",
+      "action": "BriBri stands planted on the touchline like in an armchair, waving cheerfully up at the stand. Right next to him, the big number 2 has turned his whole head to look at the stand too, completely lost, forgetting the game. Behind them, out of focus, the middle of the pitch is opening up.",
+      "location": "The touchline of the grass pitch of La Granja del Mar on a Saturday match day, a small wooden stand, vines and pines around.",
+      "light": "Bright autumn afternoon, warm sun, long shadows on the grass.",
+      "camera": "Medium shot from inside the pitch looking toward the touchline, BriBri and the number 2 side by side in the foreground, Maman waving in the stand above them.",
+      "alt": "Collé à sa ligne, BriBri salue Maman dans la tribune, et le numéro 2 du Torre del Far se retourne pour regarder lui aussi."
+    },
+    {
+      "id": "ch27d",
+      "anchor": "Capitaine Largeur ! Mon pouvoir : ouvrir les portes sans les toucher !",
+      "shot": "medium",
+      "cast": ["BRI", "KAY"],
+      "extras": "Pol Vidal, 13: a tall, broad white striker with a thunderous laugh, head thrown back. Laia Ferrer, 13: a white Catalan girl with a brown bun and freckles, whistling with two fingers in her mouth. Nil Soler, 13: a tall, very thin white boy with sticking out ears, drumming on the table. Jordi Puig, 45: a slim white Catalan coach with a short salt and pepper beard, not laughing, quietly looking at Kaydoudou while drawing a flat carpenter's pencil from behind his ear. Teammates in training gear around the table.",
+      "outfit": "BriBri (12) in the sand gold Costa Daurada training shirt with a navy band, green shorts, red sock on his RIGHT foot and yellow sock on his LEFT foot. Kaydoudou (13) in his faded green training jersey with number 8, the fine shaved part on the left of his head, the braided blue and white bracelet on his left wrist.",
+      "action": "BriBri stands at the end of an old farm table, fists on his hips, chest puffed out like a superhero, chin high, eyes shining. Around the table the team explodes: Pol laughing, Laia whistling, Nil drumming. Kaydoudou, seated, smiles in the corner of his mouth. Only Jordi stays serious, eyes on Kaydoudou, pencil in hand.",
+      "location": "The video room of the old stone farmhouse at La Granja del Mar: thick stone walls, narrow windows, a long worn farm table, a white screen hung on a wooden beam showing a frozen image of a pitch with marker circles and arrows drawn on it.",
+      "light": "Cool morning light from the narrow windows mixed with the glow of the projector on the screen.",
+      "camera": "Medium shot from the far end of the table, BriBri in heroic pose in the centre, the screen with its circles behind him like a backdrop.",
+      "alt": "Devant l'écran couvert de cercles, BriBri pose les poings sur les hanches et devient Capitaine Largeur, sous les rires de toute l'équipe."
+    }
+  ]
+}

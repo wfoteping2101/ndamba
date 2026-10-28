@@ -8,65 +8,119 @@ resume: La saison se termine, et avec elle la vie en France. Il faut annoncer le
 illustration: Plan moyen sur le terrain synthétique de l'ESM au bord de la Marne, un soir de juin, lumière orange et douce du soleil couchant, une péniche au loin. Monsieur Lacombe, moustache grise, survêtement bleu marine, est accroupi et signe au feutre noir le vieux ballon de Mami, rapiécé de pagne rouge et jaune, que lui tend BriBri, afro douce, chaussettes rouge et jaune, les joues mouillées de larmes. Debout derrière BriBri, Kaydoudou, fine raie à gauche, tient sur son bras un maillot blanc plié portant le numéro 8. Lacombe a les yeux brillants et détourne un peu la tête.
 ---
 
-Kenzo frappa dans le ballon si fort qu'il fit trembler tout le grillage de la cage.
+BAM !
 
-BriBri sursauta. Lucas aussi. C'était un mercredi de juin, il faisait chaud pour la première fois de l'année, et ils étaient tous les quatre dans le petit terrain derrière l'immeuble de Bussy, celui de la veille de Noël. Kaydoudou venait de parler. Il avait préparé sa phrase pendant des semaines, BriBri le savait, il l'avait entendu la répéter tout bas dans le lit d'à côté. Et finalement, il l'avait dite d'un coup, comme on arrache un pansement.
+Kenzo frappe dans le ballon si fort que tout le grillage de la cage tremble.
+
+Mercredi de juin. Premier jour de chaleur. Ils sont tous les quatre dans la cage, derrière l'immeuble, comme la veille de Noël.
+
+Kaydoudou vient de parler. Depuis des semaines, BriBri l'entend répéter sa phrase tout bas, la nuit, dans le lit d'à côté. Et il l'a dite d'un coup, comme on arrache un pansement.
 
 « On part en Espagne. À Barcelone. À la fin de l'été. »
 
-Lucas n'avait rien dit. Il était devenu tout blanc, puis tout rouge, puis il avait regardé ses grandes mains comme s'il y cherchait quelque chose.
+Lucas devient tout blanc. Puis tout rouge.
 
-Kenzo, lui, avait frappé dans le ballon.
+« Barcelone, c'est loin  ? » demande-t-il tout bas.
 
-« Évidemment », dit-il. Sa voix était bizarre, trop calme, comme une casserole juste avant que ça déborde. « Évidemment que vous partez. Tout le monde part. Mon père part. Ma mère part. Maintenant vous. »
+« Plus de mille kilomètres. »
+
+« C'est plus loin que ma ferme. »
+
+« Mais... et la cage ? dit BriBri. Et les pains au chocolat ? »
+
+Kenzo, lui, a frappé dans le ballon.
+
+« Évidemment », dit-il. Sa voix est trop calme, comme une casserole juste avant que ça déborde. « Évidemment que vous partez. Tout le monde part. Mon père part. Ma mère part. Maintenant vous. »
 
 « Ce n'est pas nous qui choisissons, dit Kaydoudou. C'est le travail de Papa. »
 
 « Je m'en fiche, de qui choisit ! »
 
-Kenzo ramassa son sac et sortit de la cage sans se retourner. La porte grillagée claqua derrière lui.
+Kenzo ramasse son sac et sort de la cage sans se retourner. La porte grillagée claque. Clang.
 
-BriBri courut jusqu'au grillage. « Kenzo ! Viens avec nous ! On te cache dans une valise ! » Kenzo continua de marcher, et la blague retomba toute seule sur le trottoir.
+*Fais quelque chose*, pense BriBri. *Vite.*
 
-BriBri regarda son frère. Kaydoudou avait les mâchoires serrées, et ses yeux brillaient. Lucas, toujours sans un mot, s'approcha, cassa une pomme en deux de ses grandes mains, et en tendit une moitié à chacun des frères. Puis il en sortit une deuxième de son sac et la garda, pour Kenzo, au cas où.
+Il court jusqu'au grillage.
+
+« Kenzo ! Viens avec nous ! On te cache dans une valise ! Je te donne ma place, je suis petit, je rentre dans un sac ! »
+
+Kenzo continue de marcher. La blague retombe toute seule sur le trottoir.
+
+Kaydoudou a les mâchoires serrées et les yeux qui brillent. Lucas s'approche. Il casse une pomme en deux avec ses grandes mains, crac, et tend une moitié à chaque frère. Puis il sort une deuxième pomme de son sac.
+
+« Celle-là, je la garde pour Kenzo. Au cas où. »
 
 * * *
 
-Kenzo ne leur parla pas pendant quatre jours.
+Kenzo ne leur parle pas pendant quatre jours.
 
-À l'entraînement, il faisait ses passes, ses courses, ses exercices, mais il ne regardait jamais Kaydoudou. Pendant le jeu des cinq secondes, il pressait comme un fou, comme s'il voulait arracher le ballon à quelqu'un d'autre que l'adversaire.
+« Kenzo, tu veux la pomme de Lucas  ? » demande BriBri à l'entraînement.
 
-« Il est fâché contre nous », dit BriBri à Awa, assis sur le muret à côté d'elle, un gobelet de jus de gingembre dans les mains.
+« Pas faim. »
 
-Awa regarda Kenzo, qui frappait contre le mur, tout seul.
+« Kenzo, on peut parler ? essaie Kaydoudou. »
 
-« Non. Il est fâché que vous partiez. Ce n'est pas pareil. Quand quelqu'un est en colère parce que tu t'en vas, BriBri, c'est que tu comptes pour lui. Laisse-lui un peu de temps. La colère, c'est souvent de la tristesse qui a mis un manteau trop grand. »
+« On ne parle pas. On joue. »
 
-Le cinquième jour, le samedi, il y eut le dernier match de la saison, contre l'Olympique des Trois-Moulins, les mêmes que pour le tout premier match. L'ESM gagna 3-0. BriBri reçut entre les lignes, se tourna, et fit marquer Kenzo, exactement comme en septembre, sauf que cette fois, il n'eut pas besoin de réfléchir une seule seconde.
+Il fait ses passes, ses courses, ses exercices. Il ne regarde jamais Kaydoudou. Pendant le jeu des cinq secondes, il presse comme un fou, comme s'il voulait arracher le ballon à quelqu'un d'autre que l'adversaire.
 
-Après le match, dans le vestiaire, Kenzo s'approcha de Kaydoudou. Il avait quelque chose de blanc dans les mains, plié en quatre. Il le lui tendit sans le regarder.
+BriBri s'assoit sur le muret, à côté d'Awa. Elle lui verse un gobelet de jus de gingembre.
 
-C'était son maillot de l'ESM. Blanc, avec l'étoile sur le cœur. Et dans le dos, le numéro 8.
+« Il est fâché contre nous », dit BriBri.
 
-Kaydoudou ne le prit pas tout de suite. Il regarda le maillot, puis Kenzo, puis le maillot encore.
+« Non. Il est fâché que vous partiez. Ce n'est pas pareil. »
+
+« C'est quoi, la différence ? »
+
+« Quand quelqu'un est en colère parce que tu t'en vas, c'est que tu comptes pour lui. Laisse-lui un peu de temps. » Elle souffle sur son gobelet. « La colère, BriBri, c'est souvent de la tristesse qui a mis un manteau trop grand. »
+
+BriBri regarde Kenzo, de loin.
+
+« Alors il a un très gros manteau. »
+
+« Le plus gros de tout le centre », dit Awa.
+
+Le cinquième jour, c'est le dernier match de la saison. Contre l'Olympique des Trois-Moulins, les mêmes que pour le tout premier match, en septembre. L'ESM gagne 3-0. BriBri reçoit entre les lignes, se tourne et fait marquer Kenzo. Comme en septembre. Sauf que cette fois, il n'a pas besoin de réfléchir une seule seconde.
+
+Dans le vestiaire, Kenzo s'approche de Kaydoudou. Il tient quelque chose de blanc, plié en quatre.
+
+C'est son maillot de l'ESM. Blanc, avec l'étoile sur le cœur. Et dans le dos, le numéro 8.
+
+« Tiens. »
+
+Kaydoudou ne le prend pas tout de suite.
 
 « Mais... ici, le 8, c'est toi. »
 
-« Je sais. » Kenzo haussa les épaules, et pour la première fois depuis le mercredi, il le regarda dans les yeux. « Mais tu le mérites autant que moi. C'est tout. Prends-le avant que je change d'avis. »
+« Je sais. » Kenzo hausse les épaules, et pour la première fois depuis mercredi, il le regarde dans les yeux. « Mais tu le mérites autant que moi. C'est tout. Prends-le avant que je change d'avis. »
 
-Kaydoudou le prit. Il ne dit rien, parce que sa voix ne marchait plus. Alors il fit une chose que BriBri ne l'avait jamais vu faire avec quelqu'un d'autre que lui : il tendit le poing. Kenzo hésita, puis cogna son poing contre le sien. Et Kaydoudou posa la main sur son cœur. Kenzo le regarda faire, ne comprit pas tout à fait, mais posa la main sur son cœur à son tour.
+Kaydoudou le prend. Sa voix ne marche plus. Alors il fait une chose que BriBri ne l'a jamais vu faire avec quelqu'un d'autre que lui. Il tend le poing.
 
-BriBri dut aller se moucher très fort dans les toilettes.
+Kenzo hésite. Puis il cogne son poing contre le sien. Kaydoudou pose la main sur son cœur. Kenzo ne comprend pas tout à fait. Mais il pose la main sur son cœur, lui aussi.
+
+« Je vais aux toilettes », annonce BriBri d'une voix bizarre.
+
+Et il va se moucher très, très fort.
 
 * * *
 
-Le dernier entraînement eut lieu un mardi soir, à la fin du mois de juin. Le soleil se couchait derrière les peupliers, au bord de la Marne, et toute la lumière était orange, comme si quelqu'un avait renversé du jus de mangue sur le ciel. Une péniche passait lentement, chargée de sable, et le marinier leva la main pour saluer les garçons.
+Dernier entraînement. Un mardi soir, à la fin du mois de juin.
 
-Monsieur Lacombe ne fit rien de spécial. Ce fut ça, le plus beau. Il dit : « Chasubles. » Puis : « Huit contre huit. On garde le ballon. Allez. » Exactement comme le premier jour.
+Le soleil se couche derrière les peupliers, au bord de la Marne. Toute la lumière est orange, comme si quelqu'un avait renversé du jus de mangue sur le ciel. Une péniche chargée de sable glisse sur l'eau. Le marinier salue les garçons de la main.
 
-Et BriBri joua.
+Monsieur Lacombe ne fait rien de spécial. C'est ça, le plus beau.
 
-Avant chaque ballon, il jetait un regard par-dessus l'épaule droite, un autre par-dessus la gauche, et il prenait ses photos : un adversaire ici, Lucas là-bas, l'espace devant. Il se glissait dans la poche entre les lignes, petit et rapide, la souris dans le mur. Quand il perdait le ballon, il ne levait pas les bras au ciel : il se retournait et il attaquait, avec Kenzo et Lucas, pendant cinq secondes. Et par-dessus tout, il entendait la voix de son frère, grave et sûre maintenant, qui le guidait comme un phare.
+« Chasubles. Huit contre huit. On garde le ballon. Allez. »
+
+Exactement comme le premier jour.
+
+« Avant de recevoir, tu regardes ! crie Lacombe. Toujours ! »
+
+« Déjà fait, Monsieur ! »
+
+Et BriBri joue. La mésange : un regard à droite, un regard à gauche, avant chaque ballon. La souris dans le mur : il se glisse dans la poche. Et quand il perd le ballon, il ne lève pas les bras au ciel. Il attaque. Cinq secondes.
+
+Par-dessus tout, il entend la voix de son frère. Grave. Sûre. Comme un phare.
 
 « Seul ! »
 
@@ -74,85 +128,159 @@ Avant chaque ballon, il jetait un regard par-dessus l'épaule droite, un autre p
 
 « Tourne ! »
 
-À la fin, sur un ballon venu de Mathis, Kaydoudou reçut le corps ouvert, vit BriBri dans la poche, et lui donna. BriBri se tourna sans même vérifier, parce qu'il avait déjà regardé. Il vit Kenzo partir à gauche, Lucas monter à droite. Il fit semblant de donner à Kenzo, deux chasubles jaunes se jetèrent de ce côté, et il glissa le ballon à Lucas, seul, qui frappa de toutes ses forces de paysan. Le ballon alla se loger dans la lucarne.
+Dernière action. Mathis donne à Kaydoudou, qui reçoit le corps ouvert et voit BriBri dans la poche.
 
-Lucas resta figé, les bras ballants, comme s'il venait de voir passer une soucoupe volante. C'était son premier but de toute la saison.
+« Tourne ! »
 
-Le sifflet en métal retentit. C'était fini.
+BriBri se tourne sans vérifier. Il a déjà regardé. À gauche, Kenzo part. À droite, Lucas monte, tout seul.
 
-Monsieur Lacombe fit signe à tout le monde d'aller boire. Puis il dit :
+*Les yeux à gauche. Le ballon à droite.*
 
-« Les Ngassa. Venez ici. »
+BriBri regarde Kenzo. Il fait semblant de lui donner. Deux chasubles jaunes se jettent de ce côté.
 
-Les deux frères s'approchèrent. Lacombe les regarda longtemps, l'un après l'autre, sous sa moustache grise, avec les mains dans le dos. BriBri avait l'impression qu'il comptait quelque chose.
+Et le ballon part à droite.
+
+Lucas frappe de toutes ses forces de paysan.
+
+BOUM. Lucarne.
+
+Lucas reste figé, les bras ballants, comme s'il venait de voir passer une soucoupe volante.
+
+« J'ai marqué ? Mon premier but de la saison ? Au dernier entraînement ? »
+
+« Tu m'as utilisé comme appât ! rit Kenzo. »
+
+« C'est la feinte des yeux, dit BriBri. Je regarde à gauche, je donne à droite. Inventée par BriBri Ngassa. Retenez bien ce nom. »
+
+Il commence la danse de Roger Milla. Lacombe lève un doigt.
+
+« Pas sur mes poteaux de corner. »
+
+Le sifflet en métal retentit.
+
+« Tout le monde va boire, dit Lacombe. Les Ngassa. Venez ici. »
+
+Les deux frères s'approchent. Lacombe les regarde longtemps, les mains dans le dos.
 
 « Vous vous souvenez de ce que j'ai dit à votre père, le premier jour ? »
 
 « Le grand a de la tête, dit Kaydoudou tout bas. Le petit a de la magie. »
 
-« Et aucun des deux n'a encore d'yeux », compléta BriBri.
+« Et aucun des deux n'a encore d'yeux », complète BriBri.
 
-Lacombe hocha la tête, lentement.
+Lacombe hoche la tête.
 
-« Vous êtes arrivés avec des pieds. » Il se tut un instant. « Vous repartez avec des yeux. »
+« Vous êtes arrivés avec des pieds. » Un silence. « Vous repartez avec des yeux. »
 
-Ce fut trop pour BriBri. Ça lui monta d'un coup, du ventre jusqu'aux paupières, et il se mit à pleurer, là, au milieu du terrain synthétique, devant tout le monde. Il n'essaya même pas de se cacher. Kaydoudou passa un bras autour de ses épaules, mais BriBri vit que son frère avait la lèvre qui tremblait, lui aussi.
+C'est trop pour BriBri. Ça monte d'un coup, du ventre jusqu'aux paupières. Il pleure, là, devant tout le monde, sans se cacher. Kaydoudou passe un bras autour de ses épaules, mais sa lèvre tremble, à lui aussi.
 
-Et puis BriBri vit autre chose. Il vit les yeux de Monsieur Lacombe. Ils brillaient. Ils brillaient beaucoup trop pour un homme qui ne félicitait jamais personne.
+Et puis BriBri voit les yeux de Monsieur Lacombe. Ils brillent. Beaucoup trop pour un homme qui ne félicite jamais personne.
 
-« Monsieur, dit BriBri entre deux sanglots. Vous pleurez ? »
+« Monsieur... Vous pleurez ? »
 
-Lacombe renifla très fort et se frotta les yeux du revers de la main.
+Lacombe renifle très fort.
 
 « C'est le vent. »
 
-BriBri regarda autour de lui. Les peupliers ne bougeaient pas. La Marne était lisse comme un miroir. Il n'y avait pas un souffle d'air.
+BriBri regarde autour de lui. Les peupliers ne bougent pas. La Marne est lisse comme un miroir. Pas un souffle d'air.
 
-Mais il ne dit rien. Il avait des yeux, maintenant, et il savait ce qu'ils voyaient.
-
-* * *
-
-Kaydoudou, le maillot de Kenzo plié sur le bras, sortit le ballon de Mami de son sac. Le vieux cuir déformé, la cicatrice de pagne rouge et jaune, et toutes les signatures au feutre qui s'étaient accumulées depuis Bonamoussadi : Ousmane, Mireille, Tonton Fokou, et puis Diego et Tyler, à Waldorf.
-
-Lucas signa le premier, en s'appliquant si fort qu'il tira la langue. À côté de son nom, il dessina un tout petit épi de blé. Kenzo signa d'un grand geste, avec une étoile, puis ajouta en dessous, plus petit : « Le 8 numéro 2 ». Awa signa en souriant, et écrivit à côté une phrase en bambara que personne ne comprit, et qu'elle refusa de traduire. « Vous le saurez quand vous serez grands », dit-elle seulement.
-
-Puis BriBri tendit le ballon à Monsieur Lacombe.
-
-Lacombe ne le prit pas. Il s'accroupit sur la pelouse, à la hauteur de BriBri, et regarda chaque nom, la pièce de pagne, les coutures de Mami, pendant que BriBri tenait le ballon à deux mains, les joues encore mouillées. Puis il signa d'une petite écriture serrée : « B. Lacombe ». Il hésita. Et à côté de son nom, avec trois petits traits de feutre, il dessina une moustache.
-
-BriBri le regarda, la bouche ouverte. Il pensa au petit dessin mystérieux sur son plâtre, en décembre. Lacombe se releva sans un mot, en détournant un peu la tête, mais au coin de sa moustache, la vraie, il y avait quelque chose qui ressemblait terriblement à un sourire.
+Il ne dit rien. Il a des yeux, maintenant. Il sait ce qu'ils voient.
 
 * * *
 
-Le message vocal arriva le soir même, alors que BriBri était encore assis sur son lit, le maillot de Kenzo étalé à côté de Kaydoudou.
+Kaydoudou, le maillot blanc de Kenzo plié sur le bras, sort le ballon de Mami de son sac. Le vieux cuir déformé, la pièce de pagne rouge et jaune.
 
-Il appuya sur le bouton, et la chambre de Bussy se remplit d'un coup de bruits de Douala : les klaxons des benskins, un coq qui chantait à l'heure où les coqs ne chantent pas, quelqu'un qui riait au loin. Et par-dessus tout ça, la voix de Mireille, plus grave qu'avant, mais toujours aussi pressée.
+BriBri lit les signatures à voix haute.
 
-« On dit quoi, les Parisiens ? Écoutez-moi bien, parce que je ne vais pas le répéter cent fois, ça coûte cher. J'ai été sélectionnée ! Dans l'équipe féminine U15 de Douala. Les U15, alors que j'ai même pas encore quinze ans ! L'entraîneuse a dit que je cours comme une gazelle qui a un rendez-vous. Ah, et autre chose : Ousmane est passé gardien titulaire. Titulaire, mola ! Il a arrêté deux penalties samedi dernier, avec ses petits pieds et ses grandes mains. Il vous dit que la tontine de l'amitié continue. Bon. Je vous laisse, ma mère m'appelle. Et Kaydoudou, arrête de faire le chef. BriBri, arrête de dribbler tout le monde. Bisous de la terre rouge ! »
+« Ousmane. Mireille. Tonton Fokou. Diego. Tyler. Owen. Coach Whitfield. Et la flèche de Marcus. » Il lève les yeux. « Il reste de la place pour la France. »
 
-BriBri le réécouta sept fois. Kaydoudou fit semblant de ne pas écouter les six dernières, mais il ne tournait plus les pages de son livre.
+Lucas signe le premier. Il tire la langue tellement il s'applique.
+
+« J'ai dessiné un épi de blé. Pour la ferme. »
+
+Kenzo signe d'un grand geste, avec une étoile. Puis il ajoute en dessous, plus petit : « Le 8 numéro 2 ».
+
+« Pourquoi numéro 2  ? » demande Kaydoudou.
+
+« Pour que tu n'oublies jamais qui était le premier. »
+
+Awa écrit une phrase en bambara.
+
+« Ça veut dire quoi ? »
+
+« Vous le saurez quand vous serez grands. »
+
+Puis BriBri tend le ballon à Monsieur Lacombe.
+
+Lacombe ne le prend pas. Il s'accroupit sur la pelouse, à la hauteur de BriBri, qui tient le ballon à deux mains, les joues encore mouillées. Derrière eux, la péniche s'en va dans la lumière orange. Lacombe regarde chaque nom. Puis il signe d'une petite écriture serrée : « B. Lacombe ».
+
+Il hésite.
+
+Et à côté de son nom, en trois petits traits de feutre, il dessine une moustache.
+
+« C'était vous ! crie BriBri. La moustache sur mon plâtre ! Je le savais ! »
+
+Lacombe se relève sans un mot, les yeux brillants, en détournant un peu la tête. Mais au coin de sa vraie moustache, il y a quelque chose qui ressemble terriblement à un sourire.
 
 * * *
 
-Ils partirent à la fin de l'été, un soir d'août, par le train de nuit.
+Le soir, un message vocal arrive de Douala. Des klaxons de benskins, un coq qui chante n'importe quand. Et la voix de Mireille, toujours aussi pressée.
 
-Les couchettes étaient minuscules, superposées comme des tiroirs. BriBri avait pris celle du haut, évidemment. Le train roula toute la nuit vers le sud, en se balançant doucement, et par la petite fenêtre défilaient des gares endormies, des champs noirs sous la lune. BriBri ne dormit presque pas. Il scannait la nuit.
+« On dit quoi, les Parisiens ? Écoutez bien, parce que je ne vais pas répéter cent fois, ça coûte cher ! J'ai été sélectionnée dans l'équipe féminine U15 de Douala ! Les U15, alors que j'ai même pas quinze ans ! L'entraîneuse dit que je cours comme une gazelle qui a un rendez-vous. Et Ousmane est passé gardien titulaire. Titulaire, mola ! Il a arrêté deux penalties samedi, avec ses petits pieds et ses grandes mains. Il est à côté de moi. Dis-leur, Ousmane ! »
 
-Au matin, à la frontière, il y eut une voiture de location qui sentait le plastique neuf, et une route qui longeait la côte. Les panneaux changèrent de langue. Le soleil se leva sur la gauche, du côté de la mer. Et BriBri, collé à la vitre, se mit à jeter des regards partout, à gauche, à droite, par-dessus l'épaule.
+« La tontine de l'amitié continue ! » crie une voix au fond.
 
-« Qu'est-ce que tu fais ? » demanda Maman.
+« Bon, ma mère m'appelle. Kaydoudou, arrête de faire le chef. BriBri, arrête de dribbler tout le monde. Bisous de la terre rouge ! »
+
+BriBri le réécoute. Encore. Et encore.
+
+« Une dernière fois ? »
+
+« Tu l'as déjà écouté sept fois », dit Kaydoudou.
+
+« Comment tu sais ? Tu n'écoutais pas. »
+
+Kaydoudou tourne une page de son livre. Il ne l'a pas lue.
+
+* * *
+
+Ils partent un soir d'août, par le train de nuit. Les couchettes sont empilées comme des tiroirs. BriBri prend celle du haut, évidemment.
+
+« Kayd ? Tu dors ? »
+
+« Non. »
+
+« Tu crois que Kenzo va nous oublier ? »
+
+« Il a signé le ballon. On n'oublie pas un ballon. »
+
+« Et Lacombe ? Tu crois qu'il pleure encore ? »
+
+« C'est le vent, BriBri. »
+
+« Il n'y avait pas de vent. »
+
+En bas, Kaydoudou rit doucement dans le noir. Le train se balance. BriBri scanne la nuit par la petite fenêtre jusqu'au matin.
+
+Après la frontière, il y a une voiture de location qui sent le plastique neuf, et une route au bord de la côte. Les panneaux changent de langue. Le soleil se lève sur la gauche, du côté de la mer. BriBri, collé à la vitre, regarde partout. À gauche. À droite. Par-dessus l'épaule.
+
+« Qu'est-ce que tu fais ? » demande Maman.
 
 « Je scanne l'Espagne. Pour savoir où est l'espace. »
 
-À côté de lui, Kaydoudou avait ouvert le carnet de Tonton Fokou sur ses genoux. BriBri le regarda tourner les pages : « Le cœur », écrit en grand après le Cameroun ; « La raison », écrit en grand après l'Amérique. Puis toutes les pages de France, pleines de flèches, de mésanges, de souris, de poches et de petits mots criés. À la dernière page de la partie française, il restait un grand espace blanc, tout en haut.
+À côté de lui, Kaydoudou a ouvert le carnet de Tonton Fokou. « Le cœur », écrit en grand après le Cameroun. « La raison », après l'Amérique. Puis les pages de France, pleines de flèches, de mésanges et de souris. En haut de la dernière page, il reste un grand espace blanc.
 
-Kaydoudou mordilla son crayon. Puis il écrivit, en lettres capitales, en s'appliquant :
+Kaydoudou mordille son crayon. Puis il écrit, en lettres capitales :
 
 LES YEUX.
 
-Au même moment, la route sortit d'un virage, et devant eux, d'un coup, il y eut la mer. Immense, bleue, scintillante, comme une nappe de fête qu'on vient de déplier.
+Au même moment, la route sort d'un virage. Et devant eux, d'un coup, il y a la mer. Immense, bleue, scintillante, comme une nappe de fête qu'on vient de déplier.
 
-BriBri l'avait vue avant tout le monde. Évidemment. Il avait regardé avant.
+« La mer ! » crient Papa et Maman en même temps.
+
+BriBri sourit. Lui, il l'a vue avant tout le monde.
+
+Évidemment. Il a regardé avant.
 
 > [!CARNET] Leçon du Ballon n°24 : Les yeux du Njangi
 > Ce que la France m'a appris, la troisième pièce, après le cœur et la raison :

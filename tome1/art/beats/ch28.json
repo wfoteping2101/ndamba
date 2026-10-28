@@ -1,0 +1,44 @@
+{
+  "chapter": 28,
+  "beats": [
+    {
+      "id": "ch28b",
+      "anchor": "Et il dessine un câble.",
+      "shot": "quiet",
+      "cast": ["KAY", "PAPA"],
+      "extras": "Jordi Puig, 45: a slim white Catalan coach with a short salt and pepper beard, a flat carpenter's pencil in his hand, a navy club jacket, leaning over a small round café table, delighted.",
+      "outfit": "Kaydoudou (13) in his green sweatshirt and jeans, the fine shaved part on the left of his head, the braided blue and white bracelet on his left wrist. Papa (Armand Ngassa): tall, short neatly trimmed beard, warm eyes, light blue shirt, a tiny cup of black coffee in his hand.",
+      "action": "On the café table, Jordi draws a little line on an empty, flattened sugar sachet with his carpenter's pencil: three small circles, one alone in front. Papa leans in with an amused engineer's nod. Kaydoudou, a cup of chocolate so thick that the spoon stands upright in front of him, stares at the lonely little circle with proud, nervous eyes.",
+      "location": "The terrace of the café on the village square of Vinyamar on a Saturday morning in November, small round metal tables, plane trees losing their yellow leaves, a few leaves on the table.",
+      "light": "Soft late autumn morning light, golden leaves falling, gentle shadows.",
+      "camera": "Quiet close medium shot from above the table, the sugar sachet and the standing spoon in the foreground, the three faces bent over them.",
+      "alt": "À la terrasse du café, Jordi dessine le pivot sur un sachet de sucre pendant que Papa hoche la tête et que Kaydoudou fixe le petit rond."
+    },
+    {
+      "id": "ch28c",
+      "anchor": "« Attention, piste dégagée ! » crie BriBri.",
+      "shot": "dynamic",
+      "cast": ["BRI", "KAY"],
+      "extras": "Nil Soler, 13: a tall, very thin white Catalan boy with big sticking out ears and long legs, running at full speed with his arms slightly out like wings, a very serious face. Laia Ferrer, 13: a white Catalan girl with a brown bun and freckles, watching from the side with her hands on her hips. All in sand gold Costa Daurada training kits with a navy band.",
+      "outfit": "BriBri (12) in the sand gold Costa Daurada training kit with a navy band, red sock on his RIGHT foot and yellow sock on his LEFT foot, waving both arms above his head like an airport ground controller. Kaydoudou (13) in his faded green training jersey with number 8, the fine shaved part on the left of his head, the braided blue and white bracelet on his left wrist, having just laid the ball off with one touch.",
+      "action": "Nil charges forward like a plane taking off, long legs, ears like wings. BriBri, off to the side, waves both arms over his head like a man on an airport runway, shouting. Kaydoudou, back to goal, has just tapped the ball into Nil's path, already looking elsewhere.",
+      "location": "The synthetic pitch of La Granja del Mar, three orange cones in a triangle, a small goal, dark pines behind.",
+      "light": "Bright weekday afternoon in November, low sun, clean shadows on the synthetic grass.",
+      "camera": "Dynamic three quarter angle from in front of Nil, as if he is taking off toward the viewer, BriBri waving in the background.",
+      "alt": "Nil décolle comme un avion avec ses grandes jambes, et BriBri agite les bras comme sur une piste d'aéroport."
+    },
+    {
+      "id": "ch28d",
+      "anchor": "Il frappe si fort qu'il en tombe sur les fesses.",
+      "shot": "dynamic",
+      "cast": ["KAY", "PAPA"],
+      "extras": "Nil Soler, 13: a tall, very thin white Catalan boy with sticking out ears, in the sand gold Costa Daurada kit with a navy band, falling backwards onto the wet grass as he strikes. Two UD Sant Pere de Mar players, 13, in white kits with black shorts, too late. In the small stand, Papa almost alone under a black umbrella.",
+      "outfit": "Kaydoudou (13) in the sand gold Costa Daurada kit with a navy band and number 8, soaked by rain, the fine shaved part on the left of his head, the braided blue and white bracelet on his left wrist. Papa (Armand Ngassa) in a dark raincoat over a light blue shirt and his knitted green, red and yellow hat.",
+      "action": "Under cold rain, Nil hits the ball so hard that both his feet leave the ground and he tips over backwards, the ball already a blur toward the net. Just behind him, Kaydoudou, who laid it off with one touch without looking, has his arms starting to rise. Steam rises from the players' shoulders. In the stand, Papa jumps up under his umbrella.",
+      "location": "A small grass pitch on a rainy November day, puddles shining, a low stand with a handful of spectators.",
+      "light": "Grey rainy late afternoon, silver rain streaks, steam glowing on the shoulders against the dark sky.",
+      "camera": "Dynamic low angle near the wet grass, Nil falling in the foreground, the ball shooting off frame, Kaydoudou behind, Papa small in the stand.",
+      "alt": "Sous la pluie froide, Nil frappe si fort qu'il tombe sur les fesses, juste après la remise de Kaydoudou."
+    }
+  ]
+}

@@ -29,15 +29,15 @@ for (const a of inv) {
   const r = review[a.id] || {}
   const approved = has && r.status !== 'redo'
   const isCode = a.id === 'code-cover-art'
-  const targets = isCode ? [] : (DEST[a.id] || (a.kind === 'chapter' || a.kind === 'part' || a.kind === 'sheet' ? [a.id + '.png'] : []))
+  const targets = isCode ? [] : (DEST[a.id] || (a.kind === 'chapter' || a.kind === 'beat' || a.kind === 'part' || a.kind === 'sheet' ? [a.id + '.png'] : []))
   if (approved) for (const t of targets) fs.copyFileSync(master, path.join(ILL, t))
   if (approved && isCode) { fs.mkdirSync(path.join(ROOT, 'coach', 'illustrations'), { recursive: true }); fs.copyFileSync(master, path.join(ROOT, 'coach', 'illustrations', 'cover-art.png')) }
   assets.push({
-    id: a.id, kind: a.kind, chapter: a.chapter, refs: a.refs, prompt: a.prompt, model: has ? MODEL : null,
+    id: a.id, kind: a.kind, chapter: a.chapter, refs: a.refs, prompt: a.prompt, model: has ? (r.model || MODEL) : null,
     master: has ? `tome1/illustrations/_masters/${a.id}.png` : null,
     status: !has ? 'pending' : r.status === 'redo' ? 'redo' : r.status === 'approved' ? 'approved, integrated' : 'generated, integrated',
     review: r.note || null,
-    integrated_in: !approved ? [] : a.kind === 'chapter' ? ['web reader /book/tome1/ (chapter opening)', 'PDF (full page before the chapter)', 'app (lessons)'] : a.kind === 'part' ? ['web reader (part opener)', 'PDF (part page)'] : a.id === 'cover-art' ? ['cover.png (composed with tools/compose_cover.mjs)', 'web reader', 'PDF', 'app library'] : a.id === 'code-cover-art' ? ['Le Code Njangi cover (compose_cover.mjs --code)', 'web reader', 'PDF', 'app library'] : a.id === 'sheet-brothers' ? ['characters page (reader and PDF)', 'reference for every scene'] : a.kind === 'sheet' ? ['reference sheet'] : a.kind === 'cover' ? ['rough, not published'] : [],
+    integrated_in: !approved ? [] : a.kind === 'beat' ? ['web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)', 'print (half page inside the text)'] : a.kind === 'chapter' ? ['web reader /book/tome1/ (chapter opening)', 'PDF (full page before the chapter)', 'app (lessons)'] : a.kind === 'part' ? ['web reader (part opener)', 'PDF (part page)'] : a.id === 'cover-art' ? ['cover.png (composed with tools/compose_cover.mjs)', 'web reader', 'PDF', 'app library'] : a.id === 'code-cover-art' ? ['Le Code Njangi cover (compose_cover.mjs --code)', 'web reader', 'PDF', 'app library'] : a.id === 'sheet-brothers' ? ['characters page (reader and PDF)', 'reference for every scene'] : a.kind === 'sheet' ? ['reference sheet'] : a.kind === 'cover' ? ['rough, not published'] : [],
   })
 }
 fs.writeFileSync(path.join(ROOT, 'tome1', 'art', 'assets.json'), JSON.stringify(assets, null, 1) + '\n')

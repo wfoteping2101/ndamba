@@ -1,0 +1,44 @@
+{
+  "chapter": 13,
+  "beats": [
+    {
+      "id": "ch13b",
+      "anchor": "Maman se réveille sur son livre. Elle rit si fort que ses papiers jaunes s'envolent.",
+      "shot": "medium",
+      "cast": ["BRI", "MAMAN", "KAY"],
+      "extras": "No secondary characters visible.",
+      "outfit": "BriBri in his sunny yellow T-shirt with a red vertical stripe on the left chest and green shorts with white piping, no shoes, his red sock on his right foot and yellow sock on his left foot, small soft round afro, the gap between his front teeth showing. Maman: energetic, braids gathered in a bun, big golden earrings, a light blue work tunic after her night shift. Kaydoudou in the navy Potomac Valley academy sweatshirt and jeans, his fine shaved part on the left side of his head.",
+      "action": "In the middle of the living room BriBri dances with a big red vacuum cleaner, spinning its hose above his head like a lasso, one leg out in a half split, beaming. At the kitchen table Maman has just woken up with her cheek creased from a huge textbook, laughing so hard that a cloud of small yellow sticky notes flies up around her. In the doorway Kaydoudou bursts out laughing, a dish towel in his hand.",
+      "location": "The small living room and open kitchen of a modest beige house in Waldorf, Maryland: a worn sofa, a floor lamp, a kitchen table covered with thick textbooks and a yellow highlighter, a pile of dishes in the sink.",
+      "light": "Soft daylight from the window, warm and cosy, the flying yellow notes catching the light.",
+      "camera": "Medium shot at child height, BriBri and his lasso in the centre foreground, Maman laughing at the table on the left, Kaydoudou in the doorway on the right.",
+      "alt": "BriBri fait tourner le tuyau de l'aspirateur comme un lasso, et Maman, réveillée sur son livre, rit si fort que ses papiers jaunes s'envolent."
+    },
+    {
+      "id": "ch13c",
+      "anchor": "Diego glisse le ballon entre deux milieux rouges",
+      "shot": "dynamic",
+      "cast": ["BRI"],
+      "extras": "Diego Ramírez (11): a small wiry Salvadoran-American boy with light brown skin, short black hair spiked with gel, in the navy Potomac Valley kit with white number 12, head up, just striking the pass. The Laurel Lions: boys of 11 and 12 in plain red kits with no crest, two red midfielders split apart by the pass and four red players twisting round to run back toward their own goal. Tyler Brooks (12): tall, broad-shouldered, very pale blond hair, navy kit with white number 9, further forward.",
+      "outfit": "BriBri in the navy Potomac Valley kit with white number 33, black shorts, his red sock on his right foot and yellow sock on his left foot, small soft round afro.",
+      "action": "Frozen instant of a pass that cuts a line: the ball rolls through a narrow gap between two red midfielders toward BriBri, who waits on tiptoe in the free space behind them, arms wide, eyes bright. Four red players have spun around at the same moment, bodies twisted, now running the wrong way toward their own goal, too late.",
+      "location": "A green grass youth pitch in Maryland on a Saturday morning in May, leafy trees in the background, a wooden parents' bench tiny and blurred along the far touchline.",
+      "light": "Soft, clear late spring morning light, long gentle shadows on the grass, a faint glowing trail behind the rolling ball.",
+      "camera": "Dynamic high angle from just behind Diego, looking along the path of the ball through the gap toward BriBri, the red line of players broken across the middle of the frame.",
+      "alt": "Diego glisse le ballon entre deux milieux rouges vers BriBri, et quatre Laurel Lions doivent se retourner tous en même temps."
+    },
+    {
+      "id": "ch13d",
+      "anchor": "Ils se jettent sur Maman tous les deux",
+      "shot": "medium",
+      "cast": ["KAY", "BRI", "MAMAN", "PAPA"],
+      "extras": "No secondary characters visible.",
+      "outfit": "Maman in her teal and yellow wax-print dress with a sauce-stained apron over it, braids in a bun, big golden earrings. Papa: tall, short well-trimmed beard, warm eyes, light blue shirt with rolled sleeves, a carrot in his hand. Kaydoudou in the navy Potomac Valley academy sweatshirt and jeans, his school bag dropped at his feet, fine shaved part on the left. BriBri in his sunny yellow T-shirt with a red vertical stripe and green shorts, red sock on his right foot, yellow sock on his left foot, mouth wide open in a joyful shout showing the gap in his teeth.",
+      "action": "Both brothers throw themselves on Maman at the same moment and hug her so hard that she stumbles back against the fridge, laughing and crying at once, arms wrapped around her two sons. A wooden spoon is falling in mid-air. Papa, by the counter, laughs and dances with his shoulders, a carrot raised like a trophy.",
+      "location": "The small kitchen of the beige house in Waldorf on a late afternoon: a pot of fried chicken, plantains and peppers on the stove, steam rising, a white fridge with drawings on it.",
+      "light": "Warm golden late-afternoon light through the kitchen window, steam glowing, joyful warmth.",
+      "camera": "Medium shot slightly from the side, the group hug against the fridge filling the centre, the falling spoon in the foreground, Papa dancing on the right edge.",
+      "alt": "Les deux frères se jettent sur Maman, qui vient de réussir son examen, et Papa danse à côté, une carotte à la main."
+    }
+  ]
+}

@@ -8,127 +8,337 @@ resume: Finale du Torneig de la Costa contre les invincibles de Madrid, devant t
 illustration: Plan moyen, soir de mai dans un petit stade au bord de la mer, projecteurs allumés, ciel rose et violet. Au bord du terrain, devant une tribune pleine de drapeaux catalans, Avi Ramon, très vieux, casquette de toile, chemise blanche, les mains tremblantes, signe au feutre le ballon de Mami, rapiécé de pagne rouge et jaune et couvert de signatures. Kaydoudou, maillot sable doré numéro 8, fine raie à gauche, le tient à deux mains et le regarde avec émotion. À côté, BriBri, petite afro, une chaussette rouge et une chaussette jaune, porte une médaille de champion autour du cou. Lumière chaude.
 ---
 
-Le stade de la finale s'appelait l'Estadi del Moll, le stade du port, et il était si près de la mer que Kaydoudou entendait les vagues depuis le vestiaire.
+« On joue dans la mer ou quoi ? »
 
-C'était un petit stade, quatre mille places à peine, avec une tribune couverte d'un côté, des gradins de béton de l'autre, et derrière l'un des buts, les mâts des voiliers qui se balançaient doucement dans le soir. Mais ce samedi de mai, il était plein. Tout Vinyamar était descendu. Le boulanger, avec sa femme et ses trois enfants. Les vieux du rondo du dimanche, en chemise blanche, alignés sur un banc comme des moineaux sur un fil. Montse, avec un panier de sandwichs. Martí et les jumeaux, peints en jaune et bleu jusqu'aux oreilles. Papa et Maman au premier rang, Maman avec un drapeau du Cameroun qu'elle avait cousu elle-même, le soir, pendant que les garçons dormaient.
+BriBri a l'oreille collée au mur du vestiaire. Derrière, on entend les vagues. Chhh... chhh...
 
-Et au milieu de tout ce monde, assis sur un coussin que Montse avait apporté, une couverture sur les genoux malgré la chaleur, il y avait Avi Ramon.
+« Presque, dit Kaydoudou. L'Estadi del Moll, le stade du port. Quatre mille places, tout au bord de l'eau. »
 
-Il était venu. Il avait promis.
+Derrière un des buts, les mâts des voiliers se balancent dans le soir. Et ce samedi de mai, c'est plein.
 
-Dans le vestiaire, les frères firent leur rituel. Le ballon de Mami, dix jongles sans qu'il touche le sol, en se le passant de l'un à l'autre. Le pagne rouge et jaune, toutes les signatures, le nom de Youssef en deux alphabets. À la dixième, BriBri le bloqua sur sa cuisse et le serra contre lui.
+À l'échauffement, BriBri fait l'appel en sautillant.
 
-« Pour Mami, dit-il. Pour sa hanche. »
+« Le boulanger, sa femme et ses trois enfants : présents ! Les vieux du rondo, en chemise blanche, alignés sur leur banc comme des moineaux sur un fil : présents ! Montse et son panier de sandwichs : présente ! Martí et les jumeaux, peints en jaune et bleu jusqu'aux oreilles : présents ! »
 
-« Pour Avi Ramon », dit Kaydoudou.
+« Et regarde Maman, dit Kaydoudou. Au premier rang, à côté de Papa. Elle agite un drapeau du Cameroun. »
+
+« Tu l'as cousu quand ? » lui crie BriBri.
+
+« La nuit, pendant que vous dormiez ! »
+
+La voix de BriBri devient toute douce. « Et Avi Ramon... présent. »
+
+Il est là, au milieu de tout ce monde, une couverture sur les genoux malgré la chaleur.
+
+« Il est venu », souffle Kaydoudou.
+
+« Il avait promis », dit BriBri.
+
+Dans le vestiaire, BriBri sort le ballon de Mami.
+
+« Rituel ! Dix jongles, et il ne touche pas le sol. »
+
+Ils se le passent de l'un à l'autre. « Un. Deux. Trois... » Le pagne rouge et jaune tourne dans l'air. Le nom de Youssef passe, en deux alphabets. « ... Neuf. Dix ! »
+
+BriBri bloque le ballon sur sa cuisse et le serre contre lui.
+
+« Pour Mami. Pour sa hanche. »
+
+« Pour Avi Ramon. »
 
 Poing contre poing. Main sur le cœur.
 
 * * *
 
-Le Real Club Atlético Castellana entra sur le terrain au pas, en survêtement blanc à bande violette, tous ensemble, sans un mot. De près, ils étaient encore plus impressionnants. Grands, rapides, parfaitement organisés. Leur numéro 6, un garçon blond aux yeux très clairs, donnait des ordres d'une voix calme, et toute l'équipe bougeait comme une seule machine. Ils n'avaient pas encaissé un seul but du tournoi.
+Le Real Club Atlético Castellana entre au pas. Survêtements blancs à bande violette. Pas un mot.
 
-Kaydoudou comprit pourquoi dès les premières minutes. La Castellana ne laissait aucun trou. Quand Nil relançait, leurs attaquants coupaient la passe vers Kaydoudou. Quand Kaydoudou recevait, deux joueurs se refermaient sur lui comme une porte. Quand BriBri restait large, leur latéral ne le suivait pas jusqu'à la ligne : il restait au milieu, et un autre glissait pour fermer. Ils connaissaient les couloirs. Ils connaissaient le troisième homme. Ils connaissaient tout. C'était comme jouer aux échecs contre quelqu'un qui avait lu le même livre que soi, mais deux fois.
+« Les invincibles », souffle Pol.
 
-Le Costa Daurada recula. Puis il paniqua un peu. Les passes devinrent plus rapides, plus nerveuses, plus longues. BriBri partit trois fois en dribble tout seul, et trois fois il se fit enfermer. Laia s'énerva contre l'arbitre. Pol ne toucha pas un ballon. À la vingt-sixième minute, leur numéro 6 trouva un attaquant entre les lignes, celui-ci se retourna, et frappa en pleine lucarne. 0-1.
+« On dirait des frigos, chuchote BriBri. Des frigos qui marchent au pas. »
 
-Les gradins de Vinyamar se turent d'un coup. On n'entendit plus que les tambours des parents madrilènes, et les vagues.
+« Pas un seul but encaissé de tout le tournoi, dit Nil. Pas un. »
 
-À la mi-temps, dans le vestiaire, personne ne parlait. BriBri avait la tête dans les mains. Laia arrachait l'herbe collée à ses crampons, brin par brin. Nil regardait le mur. Kaydoudou sentait son cœur battre dans ses tempes. Il attendait que Jordi crie. Pour la première fois de la saison, il avait presque envie que Jordi crie.
+Leur numéro 6, un blond aux yeux très clairs, donne ses ordres d'une voix calme.
 
-Jordi ne cria pas.
+« Cerrad. Tranquilos. Izquierda. »
 
-Il prit une serviette en papier sur la table des boissons, la déplia lentement sur son genou, sortit le crayon de menuisier de derrière son oreille, et dessina un triangle. Un seul. Trois points, trois traits. Puis il retourna la serviette vers eux.
+« Fermez, traduit Laia. Calmes. À gauche. »
 
-« Feu el que sabeu fer. »
+Toute l'équipe bouge avec lui, comme une seule machine.
 
-Il le répéta en français, tout doucement.
+Coup d'envoi. Et tout de suite, Kaydoudou comprend.
 
-« Faites ce que vous savez. »
+« Je ne peux pas te la donner ! crie Nil. Ils coupent la passe ! »
 
-Ce fut tout. Il plia la serviette, la glissa dans la main de Kaydoudou, et sortit du vestiaire.
+« Ils sont deux sur moi ! crie Kaydoudou. Ils se referment comme une porte ! »
 
-Kaydoudou regarda le triangle. Il pensa au premier rondo de septembre, à BriBri allongé dans l'herbe comme une étoile de mer. À la semelle d'Avi Ramon sur le ballon. Aux lignes blanches de la machine à peindre. Au sachet de sucre. Aux oranges et aux citrons. Ils n'avaient pas fait ce qu'ils savaient. Pendant une mi-temps entière, ils avaient joué comme des gens qui ont peur.
+« Mon latéral ne me suit pas ! crie BriBri depuis sa ligne. Il reste au milieu, et c'est un autre qui glisse ! »
 
-Il se leva. Il n'avait jamais aimé parler devant les autres, mais depuis la France, il savait que parler, c'était passer.
+« Ils connaissent les couloirs, le troisième homme, tout, souffle Kaydoudou à Laia. C'est comme jouer aux échecs contre quelqu'un qui a lu le même livre que nous. Mais deux fois. »
 
-« On a paniqué. On a joué vite parce qu'on avait peur. » Il leva la serviette. « Lent, lent, vite. La pausa. Un rondo. Comme le dimanche sur la place. Ils sont forts, mais ils n'ont pas de place du village, eux. »
+« Alors on va plus vite qu'eux ! » crie Laia.
 
-BriBri releva la tête. Laia lâcha son brin d'herbe. Nil se tourna enfin vers lui.
+Et le Costa Daurada panique. BriBri part trois fois en dribble tout seul. Trois fois, il se fait enfermer.
 
-« Un rondo », répéta BriBri. Et il sourit, avec sa dent du bonheur.
+« BriBri ! Joue simple ! »
+
+« J'ai joué simple ! C'est eux qui sont compliqués ! »
+
+« Arbitre ! hurle Laia. Il m'a tenu le maillot ! »
+
+« Je ne touche pas un ballon ! » râle Pol.
+
+Vingt-sixième minute. Leur numéro 6 trouve un attaquant entre les lignes. Il se retourne. Il frappe. Pleine lucarne.
+
+« Gol del Castellana », dit le haut-parleur.
+
+0-1.
+
+Les gradins de Vinyamar se taisent d'un coup. On n'entend plus que les tambours des parents madrilènes. Et les vagues.
 
 * * *
 
-La seconde mi-temps commença comme un dimanche midi.
+À la mi-temps, personne ne parle. BriBri a la tête dans les mains. Laia arrache l'herbe de ses crampons, brin par brin. Nil fixe le mur.
 
-Le ballon se mit à tourner. Nil, Kaydoudou, Laia, Nil. Toujours un triangle, toujours un angle, toujours une solution. Kaydoudou remettait en une touche ; quand ils étaient deux sur lui, il gardait le ballon une demi-seconde, la semelle dessus, comme un vieil homme en espadrilles, jusqu'à ce que l'un d'eux s'engage, et alors seulement, il jouait dans son dos. La Castellana courut. Elle courut beaucoup. Pour la première fois du tournoi, ses joueurs avaient l'air de chercher le ballon.
+*Crie, Jordi*, pense Kaydoudou. *Pour une fois, crie.*
 
-Dans la tribune, un vieux du rondo cria « Olé ». Puis deux. Puis tout Vinyamar.
+Jordi ne crie pas. Il déplie une serviette en papier sur son genou, sort le crayon de menuisier de derrière son oreille et dessine un triangle. Un seul. Trois points, trois traits.
 
-À la 48e minute, Nil récupéra un ballon dans sa moitié de terrain. Kaydoudou, dos au jeu, avait déjà regardé par-dessus son épaule. Deux fois. Il avait vu Laia, sur la droite, qui se préparait à partir. Le numéro 6 blond arrivait sur lui, les yeux fixés sur le ballon.
+Il retourne la serviette vers eux.
 
-Nil passa. Kaydoudou ne se retourna pas. D'une seule touche, il remit le ballon dans la course de Laia, qui arrivait lancée dans le demi-espace. Le numéro 6 regardait Kaydoudou. Il ne la vit jamais.
+« Feu el que sabeu fer. » Puis en français, tout doucement : « Faites ce que vous savez. »
 
-Laia fila jusqu'à la surface et frappa du gauche, au ras du poteau. 1-1.
+Il glisse la serviette dans la main de Kaydoudou et il sort. Clic.
 
-Elle courut vers la tribune de Vinyamar, et Kaydoudou vit Avi Ramon, au milieu des vieux, qui levait les deux bras au ciel, tremblants.
+« C'est tout ? dit Pol. Il n'a rien d'autre à dire ? »
 
-Après, ce fut un vrai match. La Castellana revint, piquée, plus forte, plus rapide. Leur gardien sauva sur une tête de Pol. Leur numéro 9 frappa sur la barre. Les minutes passaient, et Kaydoudou sentait ses jambes devenir lourdes comme des sacs de raisin. 1-1 à la 65e. Encore cinq minutes, puis les tirs au but.
+Kaydoudou n'aime pas parler devant les autres. Mais depuis la France, il le sait : parler, c'est passer.
 
-À la 66e minute, Kaydoudou glissa le ballon à BriBri, à gauche, contre sa ligne, à hauteur de la surface.
+Il se lève.
 
-Puis il s'arrêta de courir. Il voyait tout, d'en haut, comme sur un échiquier. Son frère. Le latéral de la Castellana. Le défenseur central qui hésitait. Et lui, Kaydoudou, au bord de la surface, que personne ne surveillait, parce qu'un pivot ne vient jamais dans la surface. Tout le monde le savait. Lui aussi, il le savait.
+« Si. Il a tout dit. »
 
-BriBri partit en conduite, vers l'intérieur. Le latéral le suivit. Puis le défenseur central quitta sa place pour venir l'aider. Deux joueurs. BriBri fit sa pausa, la semelle sur le ballon, juste assez pour que les deux se serrent sur lui comme Pol et Martí sur la plage. Tac... tac...
+Tout le monde lève les yeux.
 
-Kaydoudou entra dans la surface. Il ne réfléchit pas. Il courut dans le trou que les deux défenseurs venaient d'ouvrir en partant vers son frère.
+« On a paniqué. On a joué vite parce qu'on avait peur. » Il tient la serviette bien haut. « Rappelez-vous. Le premier rondo, en septembre. BriBri allongé dans l'herbe comme une étoile de mer. »
 
-BriBri leva la tête. Il le vit. Le dribble njangi. Il glissa le ballon entre les deux défenseurs, à ras de terre, et le rangea chez son frère.
+« Merci de le rappeler », grogne BriBri.
 
-Kaydoudou était seul. Le ballon arrivait. Le gardien sortait. Pendant une fraction de seconde, il entendit toutes les voix de sa vie en même temps : *le ballon doit voyager*, *une passe qui traverse, c'est utile*, *avant de recevoir, tu regardes*, *el bon moment, noi*. Il ouvrit son pied et frappa, sans élan, comme on pose une assiette sur une table.
+« La semelle d'Avi Ramon. Les lignes de la machine à peindre. Le sachet de sucre. Les oranges et les citrons. On sait tout ça. Et on n'en a rien fait. »
 
-Le ballon passa sous le bras du gardien et toucha le filet.
+« Moi, j'ai dribblé tout seul, dit BriBri tout bas. Trois fois. Pardon. »
+
+« Contre eux, ça ne marchera pas, dit Nil. Ils sont trop forts. »
+
+« Ils sont forts. Mais eux, ils n'ont pas de place du village. » Kaydoudou montre le triangle. « Lent, lent, vite. La pausa. Un rondo. Comme le dimanche sur la place. »
+
+« Il a raison », dit Laia, et elle lâche son brin d'herbe.
+
+Nil se tourne enfin vers lui.
+
+« Un rondo », répète BriBri. Et il sourit, avec sa dent du bonheur. « Et le taureau, c'est eux. »
+
+* * *
+
+La seconde mi-temps commence comme un dimanche midi.
+
+Et cette fois, Kaydoudou parle.
+
+« Nil, garde-la ! Laia, ouvre-toi ! Lent ! Encore ! Pas maintenant... pas maintenant... »
+
+« Nil... Kaydoudou... Laia... Nil ! compte BriBri. Toujours un triangle ! »
+
+Deux joueurs arrivent sur lui. Kaydoudou pose la semelle sur le ballon, comme un vieil homme en espadrilles, et attend qu'un des deux s'engage. Puis il joue dans son dos.
+
+« La pausa ! crie BriBri. La pausa d'Avi Ramon ! »
+
+Sur le banc madrilène, leur entraîneur se lève.
+
+« ¡Presión! ¡Arriba, arriba! »
+
+« Il leur dit de monter, souffle Laia. Pour la première fois, ce sont eux qui courent après le ballon ! »
+
+« Olé ! » crie un vieux du rondo, dans la tribune.
+
+« Olé ! Olé ! » répondent deux autres.
+
+Puis tout Vinyamar se lève.
+
+« OLÉÉÉ ! »
+
+48e minute. Nil récupère un ballon dans sa moitié.
+
+Kaydoudou est dos au jeu. Mais il a déjà regardé par-dessus son épaule. Deux fois. *Avant de recevoir, tu regardes.* Laia, à droite. Le numéro 6 qui fonce, les yeux sur le ballon.
+
+« Laia ! Va ! »
+
+Nil passe. Kaydoudou ne se retourne pas. Une touche, et le ballon file dans la course de Laia, lancée dans le demi-espace.
+
+Le numéro 6 regarde Kaydoudou. Il ne voit jamais Laia.
+
+« LE TROISIÈME HOMME ! » hurle BriBri.
+
+Laia frappe du gauche, au ras du poteau. 1-1 !
+
+« ¡Gol del Costa Daurada ! annonce le haut-parleur. ¡Laia Ferrer ! »
+
+« POUR VINYAMAR ! » crie Laia en courant vers la tribune.
+
+Au milieu des vieux, Avi Ramon lève les deux bras au ciel. Ils tremblent.
+
+« Attention, ils reviennent ! » crie Laia.
+
+Leur numéro 9 frappe la barre. Bang ! Leur gardien sort une tête de Pol.
+
+« Comment il a fait ? râle Pol. C'était dedans ! »
+
+Les jambes de Kaydoudou pèsent comme des sacs de raisin.
+
+« 65e minute, souffle Nil. Encore cinq minutes, et c'est les tirs au but. »
+
+« Pas de tirs au but, dit Kaydoudou. On finit avant. »
+
+* * *
+
+66e minute.
+
+Kaydoudou glisse le ballon à BriBri, à gauche, contre la ligne, à hauteur de la surface. Puis il s'arrête de courir.
+
+Il voit tout d'en haut, comme sur un échiquier. Son frère. Le latéral. Le central qui hésite. Et lui, au bord de la surface. Seul.
+
+Personne ne le surveille. Un pivot ne vient jamais dans la surface. Tout le monde le sait. Lui aussi.
+
+BriBri part en conduite vers l'intérieur. « Viens, khouya, murmure-t-il. Viens... » Le latéral le suit. Le central quitte sa place pour venir aider. Deux joueurs sur BriBri.
+
+Les deux frères se regardent. Une seconde. Ça suffit.
+
+BriBri fait sa pausa, la semelle sur le ballon, juste assez pour que les deux se serrent sur lui, comme Pol et Martí sur la plage. Tac... tac...
+
+Kaydoudou entre dans le trou. Il ne réfléchit plus.
+
+« ¡El pivote! crie le numéro 6. ¡El pivote! »
+
+Trop tard. *Le dribble njangi.* BriBri glisse le ballon entre les deux défenseurs, à ras de terre. Il le range chez son frère.
+
+Et le temps s'arrête.
+
+Le ballon roule. Le gardien sort. Les mâts des voiliers ne bougent plus. Kaydoudou entend toutes les voix de sa vie en même temps.
+
+« Le ballon doit voyager. »
+
+« Une passe qui traverse, c'est utile. »
+
+« Avant de recevoir, tu regardes. »
+
+« El bon moment, noi. »
+
+Il ouvre le pied et frappe sans élan, comme on pose une assiette sur une table.
+
+Le ballon passe sous le bras du gardien. Chhh.
 
 2-1.
 
-Kaydoudou resta une seconde immobile, sans comprendre. Il n'avait jamais marqué un but important. Jamais. Il était celui qui fait jouer les autres, celui qui fait la passe d'avant la passe d'avant. Puis BriBri lui sauta sur le dos en hurlant, Laia sur BriBri, Nil sur Laia, Pol sur tout le monde, et il se retrouva au fond d'une montagne de maillots couleur sable, de l'herbe dans la bouche, en train de rire et de pleurer en même temps.
+« ¡Gol del Costa Daurada! crie le haut-parleur. ¡Kaydoudou Ngassa! »
 
-Trois minutes plus tard, l'arbitre siffla la fin.
+« J'ai marqué ? » murmure Kaydoudou.
+
+Il n'a jamais marqué un but important. Jamais. Lui, il fait la passe d'avant la passe d'avant.
+
+« LE PIVOT A MARQUÉ ! hurle BriBri en lui sautant sur le dos. LE PIVOT A MARQUÉ ! »
+
+« C'est mon fils ! » crie Maman, au premier rang.
+
+« Tout le monde sur le pivot ! » crie Pol.
+
+Laia saute, Nil saute, Pol saute sur tout le monde. Kaydoudou disparaît sous une montagne de maillots couleur sable. Il rit et il pleure en même temps.
+
+Trois minutes plus tard, l'arbitre siffle la fin.
 
 * * *
 
-Le Costa Daurada était champion du Torneig de la Costa.
+« CHAMPIONS ! hurle BriBri. On est champions du Torneig de la Costa ! »
 
-Le numéro 6 blond vint serrer la main de Kaydoudou. Il ne souriait toujours pas, mais il dit en espagnol : « Buen partido, pivote. » Bon match, pivot. Venant de lui, pensa Kaydoudou, c'était presque un éclat de rire.
+Le numéro 6 blond vient serrer la main de Kaydoudou, sans sourire.
 
-Puis Avi Ramon descendit jusqu'au bord du terrain, au bras de Montse, à tout petits pas. Kaydoudou lui tendit un feutre et garda le ballon de Mami dans ses deux mains, bien droit, comme un plateau. À côté de lui, BriBri, sa médaille de champion autour du cou, la mordait pour vérifier qu'elle était vraie. Le vieil homme mit longtemps à trouver une place libre. Sa main tremblait tant que la signature sortit en zigzag, comme une vague : *Ramon*. Puis, en dessous, plus petit : *Vinyamar*. Il rendit le feutre et prit le visage de Kaydoudou entre ses deux mains sèches.
+« Buen partido, pivote. »
+
+« Il a dit quoi ? » demande BriBri.
+
+« Bon match, pivot. »
+
+« Venant de lui, c'est presque un éclat de rire. »
+
+Jordi tapote la poche de Kaydoudou.
+
+« Tu l'as gardée, la serviette ? »
+
+« Oui. »
+
+« Garde-la. »
+
+Sous les projecteurs, le ciel devient rose, puis violet. Dans la tribune, les drapeaux catalans dansent encore.
+
+Avi Ramon descend au bord du terrain, au bras de Montse, à tout petits pas. Casquette de toile, chemise blanche.
+
+« Doucement, papa ! »
+
+« Deixa'm, Montse. Celui-là, je le signe moi-même. »
+
+Kaydoudou, dans son maillot sable doré numéro 8, lui tend un feutre. Il tient le ballon de Mami à deux mains, bien droit, comme un plateau.
+
+À côté, BriBri mord sa médaille de champion.
+
+« Qu'est-ce que tu fais ? » demande Laia.
+
+« Je vérifie qu'elle est vraie. »
+
+La main du vieil homme tremble si fort que la signature sort en zigzag, comme une vague : *Ramon*. En dessous, plus petit : *Vinyamar*. Puis il prend le visage de Kaydoudou entre ses mains sèches.
 
 « El bon moment, noi. Tu l'as trouvé. »
 
-Laia signa juste à côté, en grand, avec un cœur sur le i. Nil signa en tout petit, très droit, et ajouta un triangle.
+Kaydoudou ne peut rien répondre. Sa gorge est trop serrée.
 
-Le soir, sur le terrat, la famille mangea du pain à la tomate face à la mer, sous les étoiles. Les médailles brillaient sur la table. C'est là que Papa posa sa fourchette et regarda Maman. Elle hocha la tête.
+Laia signe juste à côté, en grand, avec un cœur sur le i. Nil signe en tout petit, très droit, et ajoute un triangle.
+
+« Un triangle, évidemment », dit BriBri.
+
+* * *
+
+Le soir, sur le terrat, on mange du pain à la tomate sous les étoiles. Les médailles brillent sur la table.
+
+« Le pivot dans la surface, répète Papa en secouant la tête. J'ai failli tomber du gradin. »
+
+« Et toi, dit Maman à BriBri, tu as mordu ta médaille devant quatre mille personnes. »
+
+« Il fallait vérifier ! Peut-être que c'était du chocolat. »
+
+Papa pose sa fourchette. Il regarde Maman. Elle hoche la tête.
 
 « Les garçons. Mon entreprise m'envoie à Londres. En septembre. Ce sera le dernier déménagement avant longtemps, je vous le promets. »
 
-Kaydoudou pensa à la pluie. Il avait vu des photos : des rues grises, des parapluies noirs, un ciel bas comme un couvercle.
+BriBri arrête de mâcher.
 
-BriBri, lui, se redressa d'un coup.
+« Londres, répète Kaydoudou. J'ai vu des photos. Des rues grises, des parapluies noirs, un ciel bas comme un couvercle de marmite. »
+
+« Il ne pleut pas tout le temps, dit Papa. Presque tout le temps. »
+
+BriBri, lui, se redresse d'un coup.
 
 « Londres ? On va voir la Reine ! »
 
-Maman éclata de rire.
-
-« Mon chéri, il n'y a plus de Reine. Maintenant, c'est un Roi. »
+Maman éclate de rire. « Mon chéri, il n'y a plus de Reine. Maintenant, c'est un Roi. »
 
 BriBri réfléchit une seconde, très sérieux.
 
 « Alors on va voir le Roi. Il aime le football, tu crois ? »
 
-Plus tard, quand tout le monde dormait, Kaydoudou remonta seul sur le terrat avec son carnet et la serviette de Jordi pliée en quatre. La mer brillait sous la lune. Il colla la serviette sur une page, à côté du sachet de sucre. Puis il tourna les pages jusqu'au début de la partie espagnole, là où il avait laissé un titre vide en septembre.
+Plus tard, Kaydoudou remonte seul sur le terrat. La mer brille sous la lune. Il colle la serviette de Jordi dans son carnet, à côté du sachet de sucre. Puis il revient au début de la partie espagnole, où le titre est vide depuis septembre.
 
-Il écrivit, en lettres capitales, bien appliquées : *LA CARTE*.
+Il écrit en lettres capitales, bien appliquées : *LA CARTE*.
+
+Il tourne la page. Elle est blanche.
+
+Quelque part sous la pluie de Londres, la dernière pièce du Njangi l'attend.
 
 > [!CARNET] Leçon du Ballon n°32 : La carte du Njangi
 > Rondo, pausa, couloirs, troisième homme, supériorités, lent lent vite, dribble njangi.

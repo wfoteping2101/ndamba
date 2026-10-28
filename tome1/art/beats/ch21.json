@@ -1,0 +1,44 @@
+{
+  "chapter": 21,
+  "beats": [
+    {
+      "id": "ch21b",
+      "anchor": "« Vous l'avez en rouge et jaune ? » demande-t-il à l'infirmière.",
+      "shot": "medium",
+      "cast": ["BRI", "KAY", "MAMAN"],
+      "extras": "A hospital nurse in her twenties: light skin, dark hair in a ponytail, pale blue scrubs, a kind amused smile, holding a roll of white plaster bandage. In the background, the emergency doctor: a white man in his fifties with short grey hair, round red glasses and a white coat, standing near a light screen.",
+      "outfit": "BriBri in his muddy white ESM kit with the star on the chest, red sock on his RIGHT foot and yellow sock on his LEFT foot, a brand-new plain white plaster cast on his left forearm from the elbow to the fingers (not coloured yet). Kaydoudou in his muddy white ESM kit with the star on the chest, a navy tracksuit jacket over his shoulders, his fine shaved part on the left of his head, a braided blue and white bracelet on his left wrist. Maman Estelle with her braids gathered in a bun and big gold earrings, a dark winter coat open over her duck-blue and yellow wax dress.",
+      "action": "BriBri sits on the edge of a hospital bed, cheeks still wet from crying but eyebrows already raised in hope, lifting his new white cast toward the nurse as he asks if she has it in red and yellow; the gap between his front teeth shows. The nurse laughs and shakes her head. Maman stands beside him, one hand on his shoulder, her worried face softening into a smile. Kaydoudou leans against the wall with his calm eyes on his brother and a small crooked smile of relief. No pain shown, no wound visible.",
+      "location": "A small emergency room cubicle in a hospital near Paris on a November evening: a pale curtain on a rail, a bed with white sheets, a light screen on the wall showing a wrist X-ray with a thin dark line across the bone.",
+      "light": "Cool white hospital light softened by the warm glow of a small wall lamp on the faces.",
+      "camera": "Medium shot at bed height, BriBri and his raised cast at the centre, the nurse on the right, Maman on the left, Kaydoudou slightly behind against the wall.",
+      "alt": "Aux urgences, BriBri, les joues encore mouillées, lève son plâtre tout blanc et demande à l'infirmière s'il existe en rouge et jaune."
+    },
+    {
+      "id": "ch21c",
+      "anchor": "Trois garçons s'assoient dans l'herbe tellement ils rient.",
+      "shot": "medium",
+      "cast": ["KAY"],
+      "extras": "Mathis, a 13-year-old ESM defender: sturdy white boy with short dark-blond hair, one foot on the ball, looking up at the sky with a puzzled face. Three 12 and 13-year-old teammates of mixed backgrounds in white ESM training kits, sitting in the grass and doubled over with laughter. Monsieur Bertrand Lacombe, 55: white man, thick grey brush moustache, navy blue tracksuit, metal whistle on a cord, a small spiral notebook in one hand, passing his other hand over his moustache to hide a smile.",
+      "outfit": "Kaydoudou in the white ESM training kit with the star on the chest, black boots, his fine shaved part on the left of his head, a braided blue and white bracelet on his left wrist; the other boys in the same white kits.",
+      "action": "Kaydoudou stands frozen with his mouth still open from the shout that just cracked in two, ears burning, shoulders up, wishing he could vanish. In front of him, Mathis has stopped with his foot on the ball and searches the sky for the bird that squeaked. Three boys sit in the grass laughing, one wiping his eyes. On the touchline, Lacombe strokes his moustache.",
+      "location": "The ESM synthetic training pitch by the river Marne, a white building with a big painted star in the background, plastic cones on the grass.",
+      "light": "Grey late-November afternoon light, flat and cold, a pale sun behind thin clouds.",
+      "camera": "Medium shot from the side, Kaydoudou on the left third, Mathis looking up at the centre, the laughing boys low in the foreground, Lacombe small on the right.",
+      "alt": "Quand la voix de Kaydoudou se casse en plein cri, Mathis cherche le pigeon dans le ciel et trois garçons tombent assis de rire."
+    },
+    {
+      "id": "ch21d",
+      "anchor": "Lucas fait un pas de côté. Un seul. Il tend sa grande jambe. Le ballon est à lui.",
+      "shot": "dynamic",
+      "cast": ["KAY", "BRI"],
+      "extras": "Lucas Morel, 13, the ESM right back: tall white farm boy with straw-coloured hair, red cheeks, big hands and long legs, stretching one long leg to steal the ball. Kenzo Delattre, 13: slim white boy with brown curls and very white boots, sprinting back toward the ball. A 13-year-old defender of the Deux-Rives club in a sky-blue kit, ball under his sole, head up, his eyes sliding toward a lonely teammate far away on the touchline.",
+      "outfit": "Kaydoudou, Lucas and Kenzo in white ESM kits with the star on the chest (no back numbers visible); Kaydoudou's fine shaved part on the left of his head and his braided blue and white bracelet on his left wrist. Far behind on the bench, BriBri in a wool beanie, his left forearm in a cast coloured half red and half yellow and covered with scribbled signatures.",
+      "action": "Frozen slow-motion instant: three white shirts close in on the sky-blue defender from three sides. Kenzo turning back with fury in his eyes, Kaydoudou bursting forward from midfield with one arm reaching out, and Lucas taking one single step sideways, his long leg stretched, the tip of his boot touching the ball just as the defender tries to pass. Clouds of white breath hang in the air. Far in the background, small and blurred, BriBri stands on the bench shouting, hands cupped around his mouth.",
+      "location": "The ESM synthetic pitch on a freezing mid-December night, just outside the opponents' penalty area, the floodlit stand blurred behind.",
+      "light": "Hard white floodlights from above, sharp shadows on the turf, breath and frost glittering in the beams.",
+      "camera": "Low dynamic angle close to the turf, Lucas's outstretched leg and the ball in the foreground, the three converging players forming a triangle around the defender, motion lines in the painting.",
+      "alt": "Sous les projecteurs glacés, trois maillots blancs fondent sur le défenseur, et Lucas tend sa grande jambe pour lui prendre le ballon."
+    }
+  ]
+}

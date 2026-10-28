@@ -245,13 +245,44 @@ async function buildTome1() {
   const chImgs = {}
   for (const c of chapters) chImgs[c.no] = await prepImage(path.join(illDir, `ch${String(c.no).padStart(2, '0')}`), imgWeb, imgPrint, `ch${String(c.no).padStart(2, '0')}`)
 
+  // in-text illustrations (tome1/art/beats/chNN.json): each one goes right after the paragraph holding its anchor
+  const beatsOf = {}, beatImgs = {}
+  for (const c of chapters) {
+    const f = path.join(ROOT, 'tome1', 'art', 'beats', `ch${pad2(c.no)}.json`)
+    if (!fs.existsSync(f)) continue
+    try { beatsOf[c.no] = JSON.parse(read(f)).beats || [] } catch (e) { console.warn(`! ${f}: ${e.message}`); continue }
+    for (const b of beatsOf[c.no]) beatImgs[b.id] = await prepImage(path.join(illDir, b.id), imgWeb, imgPrint, b.id)
+  }
   const ALT = artAlts()
   const words = chapters.reduce((s, c) => s + (c.story.match(/[\p{L}\p{N}][\p{L}\p{N}'’\-]*/gu) || []).length, 0)
 
+  const withBeats = (c) => {
+    const list = (beatsOf[c.no] || []).filter((b) => beatImgs[b.id])
+    if (!list.length) return { md: c.story, figs: [] }
+    const paras = c.story.split(/\n\s*\n/).map((x) => x.trim()).filter(Boolean)
+    const after = {}, figs = []
+    for (const b of list) {
+      const hits = paras.map((x, i) => (x.includes(b.anchor) ? i : -1)).filter((i) => i >= 0)
+      if (hits.length !== 1) { console.warn(`! ${b.id}: anchor ${hits.length ? 'not unique' : 'not found'} in chapter ${c.no}, image left out`); continue }
+      ;(after[hits[0]] ||= []).push(figs.length)
+      figs.push(b)
+    }
+    const md = paras.map((x, i) => [x, ...(after[i] || []).map((k) => `BEATPLACEHOLDER${k}X`)].join('\n\n')).join('\n\n') + '\n'
+    return { md, figs }
+  }
+  const beatFigure = (b, mode) => {
+    const im = beatImgs[b.id]
+    const alt = b.alt || ALT[b.id] || ''
+    return mode === 'print'
+      ? `<figure class="beat"><img src="file://${im.print}" alt=""></figure>`
+      : `<figure class="illus beat">${picture(im, alt, { sizes: '(max-width: 760px) 100vw, 800px' })}</figure>`
+  }
   const chapterBody = (c, mode) => {
-    const story = frenchTypo(renderMarkdown(c.story))
+    const { md, figs } = withBeats(c)
+    let story = frenchTypo(renderMarkdown(md))
+    story = story.replace(/<p>BEATPLACEHOLDER(\d+)X<\/p>/g, (_, k) => beatFigure(figs[Number(k)], mode)).replace(/BEATPLACEHOLDER\d+X/g, '')
     const carnet = frenchTypo(carnetHTML(c.carnetRaw, mode === 'print' ? 520 : 620))
-    return { story, carnet }
+    return { story, carnet, beats: figs.length }
   }
 
   /* ---------- web reader: one page per chapter ---------- */
@@ -323,7 +354,7 @@ ${readerDrawer(toc)}
   pages += `<section class="pg front the-end"><p class="motto">« Le ballon doit voyager.<br>Mais il doit savoir où il va. »</p><p>À suivre…</p><p class="next">Lionceaux, tome 2 · La Tanière des Lionceaux</p></section>`
   const printHtml = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Lionceaux, tome 1 : Le Ballon qui voyage</title><style>${fontFaces('file://' + path.join(PUBLIC, 'book', 'fonts') + '/')}${TOME1_PRINT_CSS}</style></head><body>${pages}</body></html>`
   write(path.join(BUILD, 'tome1-print.html'), printHtml)
-  console.log(`tome1: ${chapters.length} chapters, ${words} words, ${Object.values(chImgs).filter(Boolean).length} chapter illustrations`)
+  console.log(`tome1: ${chapters.length} chapters, ${words} words, ${Object.values(chImgs).filter(Boolean).length} chapter illustrations, ${Object.values(beatImgs).filter(Boolean).length} in-text illustrations`)
   return { chapters: chapters.length, words }
 }
 
@@ -563,6 +594,7 @@ figure.diagram{margin:18px 0}figure.diagram svg{width:100%;height:auto;display:b
 `
 
 const TOME1_WEB_CSS = `
+.story .illus.beat{margin:26px -18px 28px}.story .illus.beat img{display:block}@media(min-width:760px){.story .illus.beat{margin:30px -40px 32px}.story .illus.beat img{border-radius:16px;box-shadow:0 14px 40px rgba(29,38,33,.18)}}
 .cover-drawn{aspect-ratio:2/3;display:grid;place-items:center;background:radial-gradient(circle at 30% 20%,#E3A92B 0,#C5762F 40%,#7a3e14 100%);color:#FBF7EE;font-family:Fraunces,serif}.cover-drawn b{display:block;font-size:30px}.cover-drawn small{letter-spacing:.2em;text-transform:uppercase;font:700 11px Inter,sans-serif}
 .story>p:first-child::first-letter{font-family:Fraunces,Georgia,serif;float:left;font-size:3.4em;line-height:.85;padding:.06em .08em 0 0;color:var(--forest);font-weight:600}
 .carnet{margin:34px 0 10px;border-radius:16px;overflow:hidden;background:#FFFDF6;border:1px solid #E9DEC6;box-shadow:0 6px 22px rgba(29,38,33,.08)}
@@ -603,6 +635,7 @@ figure.diagram{margin:10pt 0;break-inside:avoid}figure.diagram svg{width:100%;he
 `
 
 const TOME1_PRINT_CSS = PRINT_BASE + `
+figure.beat{margin:12pt 0 13pt;break-inside:avoid;page-break-inside:avoid}figure.beat img{display:block;width:100%;height:auto;max-height:3.55in;object-fit:cover;border-radius:3pt}
 @page{size:6in 9in;margin:0.72in 0.68in 0.8in 0.7in}
 @page cover{size:6in 9in;margin:0}@page full{size:6in 9in;margin:0}
 body{font-family:Literata,Georgia,serif;font-size:11.4pt;line-height:1.56}

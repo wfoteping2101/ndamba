@@ -8,151 +8,305 @@ resume: Maman prépare son grand examen d'infirmière et travaille la nuit. La m
 illustration: Plan moyen, un samedi matin de mai, au bord d'un terrain d'herbe verte. Sur un banc de bois, du côté des parents, Kaydoudou, grand et mince, fine raie à gauche, en jean et sweat bleu marine, sans crampons, est penché sur son carnet à couverture de pagne posé sur ses genoux ; il dessine des traits au crayon. À côté de lui, Marcus Bell, lunettes rondes, sweat gris, tient sa tablette et montre quelque chose sur le terrain du bout du doigt. Derrière eux, flou, un match de jeunes en maillots bleu marine. Lumière douce, concentration, une pointe de mélancolie.
 ---
 
-Le réveil de Maman sonnait à vingt heures quarante-cinq, le soir, comme si le monde marchait à l'envers.
+Dring-dring-dring.
 
-Kaydoudou l'entendait à travers le mur. D'abord la sonnerie, trois petites notes. Puis un long silence, pendant lequel il imaginait Maman assise au bord du lit, en train de rassembler son courage comme on ramasse des perles tombées par terre. Puis l'eau du lavabo, la blouse bleue, les clés. À vingt et une heures trente, les phares de la voiture balayaient le plafond de la chambre, comme un gardien de nuit.
+Vingt heures quarante-cinq. Le réveil de Maman sonne. Le soir. Comme si le monde marchait à l'envers.
 
-Maman travaillait dans une maison de retraite, de l'autre côté de Waldorf. Ici, son diplôme du Cameroun ne suffisait pas : pour être infirmière, il fallait passer un grand examen, en anglais, avec des centaines de questions. En attendant, elle aidait des vieilles dames à se coucher, à se lever, à boire leur eau, et elle leur chantait des chansons en ghomala' qu'aucune ne comprenait mais que toutes réclamaient.
+Kaydoudou l'entend à travers le mur. L'eau du lavabo. La blouse. Les clés. Puis les phares de la voiture balaient le plafond de la chambre.
 
-Elle rentrait à sept heures du matin, juste quand les garçons partaient pour le bus, la blouse sentant le savon et le désinfectant, les yeux rouges. Puis, au lieu de dormir, elle ouvrait sur la table de la cuisine des livres énormes, épais comme des briques, couverts de petits papiers jaunes.
+« Elle part sauver des mamies », chuchote BriBri dans le lit d'à côté.
 
-« Pourquoi tu ne dors pas ? » lui demanda Kaydoudou un matin.
+« Elle part travailler. »
 
-« Je dors entre deux chapitres », dit Maman en souriant.
+« C'est pareil. Elle les couche, elle les lève, elle leur donne à boire. Et elle leur chante des chansons en ghomala'. Elles ne comprennent rien, et elles en redemandent ! »
 
-Ce n'était pas une blague. Le soir, quand ils rentraient de l'école, ils la retrouvaient souvent endormie sur la table, la joue posée sur une page qui parlait du cœur ou des poumons, un surligneur jaune encore débouché dans la main.
+« Au Cameroun, elle était infirmière, dit Kaydoudou. Ici, son diplôme ne suffit pas. Il faut passer un grand examen. En anglais. Avec des centaines de questions. »
+
+« Des centaines ? » BriBri remonte sa couverture jusqu'au nez. « Moi, je mourrais. »
+
+« Maman, elle, va réussir », dit Kaydoudou.
+
+Maman rentre à sept heures du matin, quand les garçons partent pour le bus. Les yeux rouges. Et au lieu de dormir, elle ouvre sur la table de la cuisine des livres épais comme des briques.
+
+« Pourquoi tu ne dors pas, Maman ? »
+
+« Je dors entre deux chapitres. »
+
+« Combien de temps ? » demande BriBri.
+
+« Cinq minutes. Le cœur, ça se lit vite. »
+
+Ce n'est pas une blague. Le soir, ils la trouvent souvent endormie sur un livre, la joue sur une page qui parle du cœur. BriBri lui retire son surligneur tout doucement. Kaydoudou lui met une couverture sur les épaules.
 
 * * *
 
-La maison était fatiguée. La vaisselle s'empilait dans l'évier, le linge attendait au sous-sol, et Papa rentrait tard, lui aussi, des câbles plein son sac.
+« La maison est fatiguée, dit BriBri un soir. La vaisselle monte jusqu'au plafond. Le linge attend au sous-sol depuis des jours. Et Papa rentre tard, avec des câbles plein son sac. »
 
-Alors, sans que personne leur demande rien, les frères se mirent au travail.
+« On s'y met ? » demande Kaydoudou.
 
-Kaydoudou fit le riz. Il apprit à le rincer trois fois, comme Mami, et à compter l'eau avec la première phalange de son doigt. La première fois, le fond brûla. La deuxième fois, Papa en reprit deux fois en disant que Kaydoudou cuisinait comme un ingénieur : avec des mesures.
+« On s'y met. »
 
-BriBri, lui, prit en charge l'aspirateur. Ou plutôt, l'aspirateur prit BriBri en charge. C'était une grosse machine rouge qui grondait comme un benskin en montée, et BriBri inventa pour elle une danse complète : la danse de l'aspirateur. Il avançait en glissant, en faisant tourner le tuyau au-dessus de sa tête comme un lasso, puis il aspirait sous le canapé en faisant un grand écart, et finissait par la danse de Roger Milla autour du lampadaire du salon.
+Lundi, Kaydoudou fait le riz.
 
-Un matin, Maman se réveilla de sa sieste sur le cahier et le trouva en pleine chorégraphie. Elle rit si fort que ses papiers jaunes s'envolèrent.
+« Trois rinçages, comme Mami. Et l'eau jusqu'au premier pli du doigt. »
 
-« Tu as aspiré ma chaussette, BriBri ! »
+Le fond brûle.
+
+« Ça sent le pneu », dit BriBri.
+
+Mardi, il recommence. Papa en reprend deux fois.
+
+« Tu cuisines comme un ingénieur, dit Papa. Avec des mesures. »
+
+BriBri, lui, prend l'aspirateur. Une grosse machine rouge qui gronde comme un benskin dans une montée.
+
+« Mesdames et messieurs ! La danse de l'aspirateur ! Le lasso ! » Il fait tourner le tuyau au-dessus de sa tête. « Le grand écart sous le canapé ! Et pour finir... la danse de Roger Milla autour du lampadaire ! »
+
+Maman se réveille sur son livre. Elle rit si fort que ses papiers jaunes s'envolent.
+
+« BriBri ! Tu as aspiré ma chaussette ! »
 
 « Elle était seule, Maman. Une chaussette seule, ça ne sert à rien. »
 
-Il le disait avec une telle conviction que Kaydoudou, pour une fois, éclata de rire avant lui.
+Il le dit avec un tel sérieux que Kaydoudou, pour une fois, éclate de rire avant lui.
 
 * * *
 
-Le problème, c'était l'anglais.
+Le problème, c'est l'anglais.
 
-À la maison, tout le monde était fatigué, et Kaydoudou faisait ses devoirs tard, en vitesse, en pensant au football. Les rédactions de Mrs. Patterson étaient devenues des montagnes. Il fallait raconter sa journée, décrire un endroit, donner son avis sur un livre. Kaydoudou savait parler de mieux en mieux, mais écrire, c'était autre chose. Les verbes irréguliers s'enfuyaient dès qu'il les regardait. « I goed. » « I buyed. » « I thinked. »
+Parler, il y arrive de mieux en mieux. Écrire, c'est autre chose.
 
-Le jeudi, il trouva dans son cartable une enveloppe adressée aux parents. Il savait ce qu'il y avait dedans. Il la garda deux jours au fond de son sac, comme une braise. Le vendredi soir, il la posa sur la table de la cuisine, devant Maman, et il attendit.
+Jeudi, Mrs. Patterson l'appelle à son bureau. Ses lunettes rouges pendent au bout de leur petite chaîne. Elle lit sa rédaction à voix haute, tout doucement.
 
-Maman lut la lettre. Elle la relut. Puis elle enleva ses lunettes, ce qui était toujours mauvais signe.
+« Yesterday, I goed to the park. I buyed a ball. I thinked it was good. » Elle lève les yeux. « Kaydoudou. Goed is not a word. Buyed is not a word. Thinked is not a word. »
 
-« Un D, dit-elle. En rédaction. Kaydoudou, tu avais des vingt sur vingt à Douala. »
+« Sorry, Mrs. Patterson. »
+
+Elle lui tend une enveloppe.
+
+« This is for your parents. You can do better. I know you can. Remember : words are like snow. One, then another one. »
+
+Il la garde deux jours au fond de son sac. Elle brûle comme une braise.
+
+*Je pourrais la perdre*, pense-t-il. *Personne ne saurait.*
+
+« Tu as une tête bizarre, dit BriBri le vendredi. Tu as mangé un piment ? »
+
+« Non. »
+
+« Tu as cassé quelque chose ? »
+
+« Pas encore. »
+
+Le vendredi soir, il sort l'enveloppe. Il la pose lui-même sur la table de la cuisine, devant Maman. Et il attend.
+
+Maman lit la lettre. Elle la relit. Puis elle enlève ses lunettes. Mauvais signe.
+
+« Un D. En rédaction. Kaydoudou, tu avais des vingt sur vingt à Douala. »
 
 « Je sais. »
 
-« Tu sais. » Elle posa la lettre. Elle ne criait pas. Kaydoudou aurait préféré qu'elle crie. « Je passe mes nuits avec des vieilles dames qui ne savent plus leur nom, et mes jours avec des livres qui me font mal aux yeux. Je fais ça parce que les études, ça ouvre des portes. Pour moi. Pour vous. »
+« Tu sais. »
 
-Elle avait les yeux si fatigués que Kaydoudou eut honte comme jamais.
+« Je fais mes devoirs trop vite. Le soir, tard. En pensant au foot. »
 
-« Tu connais la règle », dit-elle.
+Elle ne crie pas. Kaydoudou aurait préféré qu'elle crie.
 
-Il la connaissait. Tout le monde la connaissait, chez les Ngassa, depuis qu'il avait six ans. Ce n'était écrit nulle part, et c'était gravé partout.
+« Je passe mes nuits avec des vieilles dames qui ne savent plus leur nom. Et mes jours avec des livres qui me brûlent les yeux. Je fais ça parce que l'école, ça ouvre des portes. Pour moi. Pour vous. Tu connais la règle. »
+
+Il la connaît. Chez les Ngassa, elle n'est écrite nulle part. Elle est gravée partout.
 
 « Pas de devoirs, pas de crampons », dit-il.
 
-« Pas de devoirs, pas de crampons, répéta Maman. Tu ne joues pas demain. »
+« Pas de devoirs, pas de crampons. Tu ne joues pas demain. »
+
+BriBri passe la tête par la porte. Il a tout entendu.
+
+« Maman... Il peut jouer la moitié du match ? »
+
+« Non. »
+
+« Un quart ? »
+
+« BriBri. »
+
+« D'accord. Je demandais juste. »
 
 * * *
 
-Ce samedi de mai, Kaydoudou alla quand même au terrain. Coach Whitfield l'avait demandé : un joueur privé de match reste un joueur de l'équipe. Mais il y alla en jean et en sweat de l'académie, sans crampons ni sac, et il s'assit du côté des parents, sur un banc de bois encore humide de rosée. Il avait apporté son carnet, parce qu'il l'emportait partout, et parce qu'il ne savait pas quoi faire de ses mains.
+Samedi matin, au mois de mai, Kaydoudou va quand même au terrain.
 
-Il n'avait jamais regardé son équipe sans jouer dedans. C'était horrible. Un autre garçon jouait à sa place, avec un maillot numéro 8 trop grand qui lui tombait sur les cuisses. Chaque fois que le ballon arrivait au milieu, les pieds de Kaydoudou bougeaient tout seuls dans l'herbe.
+« A grounded player is still a player of the team », a dit Coach Whitfield au téléphone. Un joueur puni reste un joueur de l'équipe.
 
-Quelqu'un s'assit à côté de lui. Des lunettes rondes, un sweat gris, une tablette.
+Mais il y va en jean et en sweat bleu marine. Pas de crampons. Il s'assoit du côté des parents, sur un banc de bois encore mouillé de rosée, son carnet sur les genoux.
 
-« Grounded ? » demanda Marcus.
+C'est horrible.
 
-« Grounded », dit Kaydoudou. Il connaissait ce mot, maintenant. Puni. Cloué au sol.
+Un autre garçon joue à sa place, avec un maillot numéro 8 trop grand qui lui tombe sur les cuisses. Chaque fois que le ballon arrive au milieu, les pieds de Kaydoudou bougent tout seuls dans l'herbe.
 
-Marcus hocha la tête, sans faire de commentaire. Puis il tourna un peu la tablette vers lui.
+*Lève la tête. Lève la tête !*
 
-« Good. Today you can watch the game like me. From above. »
+Quelqu'un s'assoit à côté de lui. Lunettes rondes. Sweat gris. Tablette.
 
-Du bout du doigt, il lui montra comment il travaillait. Il ne regardait pas le ballon, ou presque pas. Il regardait les adversaires. Une équipe qui défend, expliqua-t-il, ce n'est pas un tas de joueurs. C'est trois lignes, l'une derrière l'autre, comme trois rangées de grillage. Devant, les attaquants. Au milieu, les milieux. Derrière, les défenseurs.
+« Grounded ? » demande Marcus.
 
-« Every time we pass the ball through a line, everybody moves forward. Not only the ball. Everybody. »
+« Grounded. »
 
-Kaydoudou regarda le terrain. Au début, il ne vit rien. Puis, comme une image cachée dans un dessin, il les vit. Les trois lignes rouges des adversaires, les Laurel Lions, qui montaient et descendaient ensemble, en se tenant par des fils invisibles. Deux attaquants. Quatre milieux. Trois défenseurs. Elles bougeaient comme un accordéon.
+Puni. Cloué au sol, comme un avion qui n'a pas le droit de décoller.
 
-Et il vit les passes de Potomac Valley qui butaient dessus. Une passe devant la première ligne : rien ne change. Une passe à côté : rien ne change. Puis Diego glissa un ballon entre deux milieux adverses, vers BriBri, et d'un coup, quatre joueurs des Laurel Lions durent se retourner et courir vers leur but. Une seule passe, et toute une rangée de grillage se retrouvait derrière le ballon, inutile.
+« Good, dit Marcus. Aujourd'hui, tu regardes le match comme moi. D'en haut. »
 
-« Une ligne ! » dit Kaydoudou à voix haute, sans le vouloir.
+« On est sur un banc. »
 
-« One line, sourit Marcus. Count them. »
+« Avec les yeux, on est en haut. » Il tend le doigt vers le terrain. « Regarde eux. Les Laurel Lions. Ce n'est pas un tas de joueurs. C'est trois lignes. Comme... trois grillages. »
 
-Alors Kaydoudou compta. Il ouvrit son carnet et dessina un terrain, trois traits pour les trois lignes, et chaque fois qu'une passe en traversait une, il faisait un bâton. Mi-temps : neuf bâtons pour Potomac Valley. Il regarda la page, étonné. Du banc, les choses étaient si simples. Sur le terrain, il n'avait jamais vu les lignes, il n'avait vu que des jambes.
+« Les attaquants, les milieux, les défenseurs. »
 
-En deuxième mi-temps, il vit autre chose. Le remplaçant numéro 8 avait le ballon, et derrière les milieux adverses, il y avait un espace grand comme une salle de classe, où BriBri attendait en sautillant, seul. Il suffisait d'une passe. Le 8 ne la vit pas. Il fit la passe sur le côté. La passe polie.
+« Yes. Every time we pass through a line, everybody moves forward. Pas seulement le ballon. Tout le monde avance. »
 
-Kaydoudou se mordit la lèvre. Combien de fois avait-il fait exactement la même chose, sans le savoir ? Combien de fois BriBri avait-il attendu dans cet espace, derrière une ligne que Kaydoudou ne voyait pas ?
+« Je ne vois rien. Que des jambes. »
 
-À la 52e minute, Tyler marqua sur une passe de BriBri qui traversait deux lignes d'un coup, et Potomac Valley gagna 1-0. Sur le banc des parents, Kaydoudou fit le dernier bâton de la journée, si fort que la mine du crayon cassa.
+« Wait. Regarde encore. »
+
+Kaydoudou regarde. Et d'un coup, comme une image cachée dans un dessin, elles apparaissent.
+
+Trois lignes rouges. Deux attaquants, quatre milieux, trois défenseurs. Elles montent ensemble. Elles descendent ensemble. Comme si des fils invisibles les tenaient.
+
+Puis Diego lève la tête.
+
+Tout ralentit. Kaydoudou retient son souffle.
+
+Diego glisse le ballon entre deux milieux rouges, dans un trou pas plus large qu'une porte de placard. Le ballon roule vers BriBri. Et quatre Laurel Lions doivent se retourner, tous en même temps, et courir vers leur but. Une seule passe, et toute une rangée de grillage se retrouve derrière le ballon.
+
+« Une ligne ! » crie Kaydoudou.
+
+Une maman se retourne. Il rougit. Marcus sourit.
+
+« One line. Count them. Compte. »
+
+Alors Kaydoudou compte.
+
+Penché sur son carnet, il dessine un terrain au crayon. Trois traits pour les trois lignes. À côté de lui, Marcus montre le terrain du bout du doigt.
+
+« Là. Diego. Through. »
+
+Un bâton.
+
+« Là. Owen, long ball. Over two lines ! »
+
+Deux bâtons.
+
+« Et là ? »
+
+« Non, dit Kaydoudou. Sur le côté. Ça ne compte pas. »
+
+« You learn fast, man. »
+
+À la mi-temps, il y a neuf bâtons sur la page.
+
+« D'ici, c'est tellement simple, murmure Kaydoudou. Sur le terrain, je n'ai jamais vu les lignes. »
+
+« Because you play, dit Marcus. Now you see. »
+
+Deuxième mi-temps. Le remplaçant numéro 8 a le ballon. Derrière les milieux rouges, il y a un espace grand comme une salle de classe. BriBri y sautille, tout seul, les bras écartés.
+
+« Vas-y, souffle Kaydoudou. Vas-y... »
+
+Le 8 ne voit pas. Il fait la passe sur le côté. La passe polie.
+
+« Non ! »
+
+*Combien de fois j'ai fait exactement ça ? Combien de fois BriBri m'a attendu là, derrière une ligne que je ne voyais pas ?*
+
+« Maintenant, tu vois, dit Marcus doucement. Et tu ne peux plus... ne pas voir. »
+
+52e minute. BriBri reçoit entre les lignes. Il lève la tête. Il trouve Tyler d'une passe qui traverse deux lignes d'un coup. Tyler frappe. 1-0.
+
+Sur le terrain, BriBri se tourne vers le banc et agite les deux bras.
+
+« Tu as vu ? Tu as vu ? »
+
+« Deux lignes ! crie Kaydoudou. J'ai compté ! »
+
+Il trace le dernier bâton de la journée, si fort que la mine du crayon casse. Crac.
+
+Dix-sept.
 
 * * *
 
-Le lundi, à la récréation, Diego s'assit à côté de lui sur le muret de la cour, la tête dans les mains.
+Lundi, à la récré, Diego s'écroule à côté de lui sur le muret de la cour.
 
 « Bro, I'm gonna die. Math test on Friday. Fractions. I hate fractions. »
 
-Kaydoudou le regarda. Diego, qui parlait anglais comme une rivière, qui riait de tout, qui savait dire « no way » de cinquante façons, avait peur d'un demi et d'un quart.
+Diego, qui parle anglais comme une rivière, a peur d'un demi et d'un quart.
 
-« Les fractions, dit Kaydoudou, c'est facile. C'est comme couper une pizza. »
+« Les fractions, c'est facile, dit Kaydoudou. C'est comme couper une pizza. »
 
-« And English is easy for me, dit Diego, en relevant la tête. It's like... eating pizza. »
+« And English is easy for me. It's like... eating pizza. »
 
-Ils se regardèrent. Une idée passa entre eux, comme une passe qui traverse deux lignes.
+Ils se regardent. Une idée passe entre eux, comme une passe qui traverse deux lignes.
 
-« Deal ? » dit Diego en tendant la main.
+« Deal ? » Diego tend la main.
 
-« Deal », dit Kaydoudou.
+« Deal. In three weeks, bro, you'll write like a poet. »
 
-Pendant trois semaines, à la bibliothèque de l'école, ils firent leur marché. Vingt minutes de fractions, avec des pizzas dessinées. Vingt minutes de verbes irréguliers, que Diego chantait sur des airs de la radio : « I go, I went, I have gone ! Oh baby, I have gone ! » La bibliothécaire leur demandait de chanter moins fort. Diego chantait moins fort, mais il dansait plus. Kaydoudou apprit que « goed » n'existait pas. Diego apprit que trois quarts, c'était plus que deux tiers, et il le répéta à toute la cantine.
+« Et toi, tu couperas les pizzas comme un ingénieur. »
+
+Pendant trois semaines, à la bibliothèque, ils font leur marché. Vingt minutes de fractions, avec des pizzas dessinées partout. Vingt minutes de verbes, que Diego chante sur des airs de radio.
+
+« I go, I went, I have gone ! Oh baby, I have gone ! »
+
+« Shhh ! » fait la bibliothécaire.
+
+« Goed, ça n'existe pas, répète Kaydoudou. Went. Went. Went. »
+
+« Trois quarts, c'est plus que deux tiers ! » crie Diego à toute la cantine.
 
 * * *
 
-Le jour de l'examen de Maman, personne n'arriva à manger le matin.
+Le jour de l'examen, personne n'arrive à manger. Maman enfile sa veste du dimanche. BriBri lui a décoré un crayon porte-bonheur avec du scotch rouge et jaune.
 
-Elle partit à huit heures avec sa veste du dimanche et un crayon porte-bonheur que BriBri lui avait décoré avec du scotch rouge et jaune. À l'école, les aiguilles de l'horloge avancèrent toute la journée comme des tortues dans la boue.
+« Souhaitez-moi bonne chance », dit Maman sur le pas de la porte.
 
-Quand ils rentrèrent, la maison sentait le poulet frit, les plantains et le poivron. Ça sentait Douala. Ça sentait le dimanche.
+« Tu n'as pas besoin de chance, dit Kaydoudou. Tu as lu tous les chapitres. »
 
-Maman était dans la cuisine, en tablier, et elle chantait. Papa, à côté d'elle, coupait des carottes en dansant d'une drôle de façon, les épaules d'abord, comme dans les mariages au pays.
+« Et tu as dormi entre ! » ajoute BriBri. Il lui montre le crayon. « Et lui, il connaît toutes les réponses. Laisse-le faire. »
 
-« Elle a réussi, dit Papa avant même qu'ils posent leurs sacs. Votre mère est infirmière aux États-Unis d'Amérique. »
+À l'école, les aiguilles de l'horloge avancent comme des tortues dans la boue.
 
-BriBri hurla. Kaydoudou laissa tomber son cartable. Ils se jetèrent sur Maman, tous les deux en même temps, si fort qu'elle recula contre le frigo et qu'une cuillère en bois tomba par terre. Elle riait et pleurait à la fois, et Kaydoudou comprit que c'était le même rire et les mêmes larmes que le jour de la finale à Bonamoussadi.
+Le soir, la maison sent le poulet frit, les plantains et le poivron. Ça sent Douala. Maman chante dans la cuisine, en tablier. Papa coupe des carottes en dansant, les épaules d'abord, comme aux mariages du pays.
 
-Le poulet DG était parfait. Le poulet du Directeur Général, comme on disait au pays, le plat des grands jours. BriBri fit la danse de l'aspirateur sans l'aspirateur. Même Mrs. Hayes vint goûter, avec Biscuit, et déclara que c'était « the best chicken in Maryland, maybe in the world ».
+« Elle a réussi ! crie Papa avant même qu'ils posent leurs sacs. Votre mère est infirmière aux États-Unis d'Amérique ! »
 
-À la fin du repas, Kaydoudou se leva. Il sortit de son sac une feuille pliée en quatre et la posa devant Maman. C'était sa dernière rédaction. En haut, à l'encre rouge, Mrs. Patterson avait écrit : « B+. Great progress, Kaydoudou ! »
+« AAAAH ! » hurle BriBri.
 
-Maman la lut. Elle la serra contre son cœur, sur son tablier taché de sauce.
+« Je l'ai eu, mes garçons ! chante Maman. Je l'ai eu ! »
 
-« Et ça, dit Kaydoudou, en posant autre chose sur la table. Je l'ai fait depuis le banc. »
+Ils se jettent sur Maman tous les deux, si fort qu'elle recule contre le frigo. Une cuillère en bois tombe. Bing. Maman rit et pleure à la fois, comme le jour de la finale à Bonamoussadi.
 
-C'était le carnet de Tonton Fokou. Il l'ouvrit. Les pages étaient couvertes de terrains dessinés au crayon, de trois lignes, de bâtons comptés, de flèches qui traversaient, de petites notes. Il y en avait des dizaines.
+« Le poulet DG ! annonce Papa. Le poulet du Directeur Général ! Le plat des grands jours ! »
 
-Papa se pencha. Il tourna les pages lentement, l'une après l'autre, sans rien dire. Puis il releva la tête, et il regarda son fils comme on regarde un réseau qui marche enfin.
+Mrs. Hayes arrive avec Biscuit, goûte, et ferme les yeux.
+
+« The best chicken in Maryland. Maybe in the world. »
+
+« Elle dit que c'est le meilleur poulet du monde, traduit BriBri. Et Biscuit est d'accord. »
+
+À la fin du repas, Kaydoudou pose devant Maman une feuille pliée en quatre. Sa dernière rédaction. En haut, à l'encre rouge : « B+. Great progress, Kaydoudou ! »
+
+Maman la serre contre son cœur, sur son tablier taché de sauce.
+
+« Et ça, dit Kaydoudou. Je l'ai fait depuis le banc. »
+
+Il ouvre le carnet de Tonton Fokou sur la table. Des terrains au crayon. Trois lignes. Des bâtons. Des flèches qui traversent. Des dizaines de pages.
+
+Papa tourne les pages lentement, une par une. Même BriBri se tait. Puis Papa relève la tête. Il regarde son fils comme on regarde un réseau qui marche enfin.
 
 « Tu sais ce que c'est, ça, Kaydoudou ? »
 
-Kaydoudou fit non de la tête.
+Kaydoudou fait non de la tête.
 
-« C'est le travail d'un entraîneur », dit Papa.
+« C'est le travail d'un entraîneur. »
 
 > [!CARNET] Leçon du Ballon n°13 : Les lignes
 > Depuis le banc, j'ai vu ce que je ne voyais jamais en jouant.
