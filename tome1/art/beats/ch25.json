@@ -1,0 +1,44 @@
+{
+  "chapter": 25,
+  "beats": [
+    {
+      "id": "ch25b",
+      "anchor": "« Il vient de Bafoussam. Il est perdu. Je lui explique. »",
+      "shot": "quiet",
+      "cast": ["BRI", "KAY"],
+      "extras": "No secondary characters.",
+      "outfit": "BriBri in his sun-yellow T-shirt with a red vertical stripe on the left of the chest and green shorts, red sock on his RIGHT foot and yellow sock on his LEFT foot. Kaydoudou in a plain green T-shirt, his fine shaved part on the left of his head, a braided blue and white bracelet on his left wrist. Mami's ball: an old, misshapen light brown leather ball with a square of red and yellow wax cloth sewn on with big stitches, covered with small black marker scribbles.",
+      "action": "On the flat rooftop, BriBri kneels by the low wall and points at the view for Mami's ball, which sits on the wall facing the sea, as if he were a tour guide explaining the country to a friend. Behind him, Kaydoudou's head and shoulders pop up through the open roof hatch at the top of a spiral staircase, one eyebrow raised, trying not to laugh.",
+      "location": "The flat roof terrace of a narrow, tall stone house in a Catalan hill village: a low whitewashed wall, terracotta tiles, rows of vineyards on one side, the Mediterranean on the other, a square bell tower and the tops of plane trees below.",
+      "light": "September dusk, pink and orange sky over a darkening blue sea, the first warm lights of the village coming on.",
+      "camera": "Quiet medium wide shot from behind the ball, the ball in the foreground on the wall, BriBri beside it pointing to the sea, Kaydoudou's head in the hatch on the left.",
+      "alt": "Sur le toit de la maison, BriBri montre la Méditerranée au ballon de Mami posé sur le muret, et Kaydoudou passe la tête par la trappe."
+    },
+    {
+      "id": "ch25c",
+      "anchor": "« Kayd ! Une grande maison en pierre ! Un figuier !",
+      "shot": "wide",
+      "cast": ["BRI", "KAY"],
+      "extras": "Far away on the grass pitch, Jordi Puig, 45: a slim white man with a salt-and-pepper beard and a carpenter's pencil behind his ear, quietly setting out orange cones.",
+      "outfit": "BriBri in a sand-gold Costa Daurada training shirt with a navy blue band across the chest, green shorts, red sock on his RIGHT foot and yellow sock on his LEFT foot. Kaydoudou in his old faded green training shirt with a white number 8, his fine shaved part on the left of his head, a braided blue and white bracelet on his left wrist, a sports bag on his shoulder.",
+      "action": "BriBri runs along the dirt path with his arms flung wide, head turned back to shout to his brother, mouth wide open with amazement, the gap between his front teeth showing. Kaydoudou walks behind him with the bag, smiling at his brother's excitement.",
+      "location": "La Granja del Mar, an old Catalan farm: a big stone farmhouse with thick walls, a fig tree in the yard, an old well closed with an iron grille, and beyond it a grass pitch and two synthetic pitches squeezed between rows of vines heavy with purple grapes and a line of umbrella pines, a strip of beach and blue sea glinting behind the pines.",
+      "light": "Bright warm September afternoon light, deep blue sky, the green of the pitches and the purple of the grapes glowing.",
+      "camera": "Wide shot from slightly above the farmhouse yard, the boys small on the path in the lower left, the pitches, pines and sea opening up across the frame.",
+      "alt": "BriBri court partout à La Granja del Mar et découvre, ébloui, la vieille ferme, le figuier, les terrains entre les vignes et la mer derrière les pins."
+    },
+    {
+      "id": "ch25d",
+      "anchor": "La troisième fois qu'ils se retrouvent par terre, l'un sur l'autre, même Nil sourit.",
+      "shot": "medium",
+      "cast": ["BRI", "KAY"],
+      "extras": "Nil Soler, 13: a tall, very thin Catalan boy with light olive skin, short dark hair and ears that stick out, usually serious, smiling for the first time. Laia Ferrer, 13: a girl with light skin, freckles up to her ears, brown hair in a bun, a white scar on one knee and socks rolled down to her ankles, pointing at Nil and laughing. Jordi Puig, 45: slim white man, salt-and-pepper beard, carpenter's pencil behind his ear, arms crossed, amused. Two more 12 and 13-year-old players in the circle.",
+      "outfit": "The players in sand-gold Costa Daurada training shirts with a navy blue band across the chest. Kaydoudou in his old faded green training shirt with a white number 8, his fine shaved part on the left of his head, a braided blue and white bracelet on his left wrist. BriBri's red sock on his RIGHT foot and yellow sock on his LEFT foot.",
+      "action": "Inside the square of orange cones, the two brothers lie tangled on the grass after running into each other like two stubborn goats: BriBri underneath, grass in his afro, arguing and pointing to one side, Kaydoudou on top, pointing to the other side. The ball rolls away between them. Around the square, Nil smiles for the first time, and Laia points at him with delight. Jordi watches with his arms crossed.",
+      "location": "A grass training pitch at La Granja del Mar, bordered by rows of vines with purple grapes and a line of umbrella pines.",
+      "light": "Golden, low late-afternoon September light, long shadows of the players across the grass.",
+      "camera": "Medium shot at ground level, the tangled brothers in the foreground, Nil and Laia behind them, Jordi at the edge of the frame.",
+      "alt": "Pour la troisième fois, les deux frères se rentrent dedans comme deux chèvres têtues, et même Nil, qui ne rit jamais, se met à sourire."
+    }
+  ]
+}
