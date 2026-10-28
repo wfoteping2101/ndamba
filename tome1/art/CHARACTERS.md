@@ -66,7 +66,7 @@ Vieux ballon de cuir brun clair, déformé, coutures visibles ; **un carré de p
 
 ## Les adultes de la famille et du chapitre 1 (référence : `sheet-adults.png`)
 
-- **Mami Nyanga** (`MAMI`), 68 ans (70 en partie IV) : petite, très droite, rire immense, **foulard et robe en pagne wax rouge et jaune**, lunettes au bout du nez quand elle coud, sandales.
+- **Mami Nyanga** (`MAMI`), 68 ans (69 en parties II et III, 70 en partie IV, 71 à Londres en partie V, avec une canne) : petite, très droite, rire immense, **foulard et robe en pagne wax rouge et jaune**, lunettes au bout du nez quand elle coud, sandales.
 - **Tonton Fokou** (`FOKOU`), 62 ans : mince et sec, **casquette usée**, **sifflet en bois** au cou, veste de survêtement verte, une jambe qui boite un peu.
 - **Papa Armand Ngassa** (`PAPA`), 41 ans : grand, barbe courte bien taillée, yeux chaleureux, chemise bleu clair ou chemise en pagne ; en hiver un bonnet vert, rouge et jaune tricoté par Maman.
 - **Maman Estelle Ngassa** (`MAMAN`), 39 ans : énergique, **tresses rassemblées en chignon**, grandes boucles d'oreilles dorées, robe en pagne bleu canard et jaune.

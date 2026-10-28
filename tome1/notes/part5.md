@@ -59,3 +59,4 @@ Corner d'Amstelland à la 92e. Freddie capte, refuse de dégager (paume de Kaydo
 - **Theo** : garçon blanc aux cheveux blonds.
 - Maillot de match du Real Club Atlético Castellana (partie IV) : blanc à liserés violets, gardien en violet.
 - Gestes nommés des chapitres 31 à 35 : « la machine à coudre de Mami » (31), « le une-deux du Njangi, version anglaise » (33), « le coup du pigeon » (34), « le monstre à deux têtes » (35).
+- **Freddie** porte un maillot de gardien jaune vif (fixé dans les illustrations des chapitres 36 à 40).
