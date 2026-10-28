@@ -156,9 +156,9 @@ Le premier jour, il a même apporté un morceau de fromage dans du papier.
 
 Kaydoudou a regardé le fromage. Puis Lucas. Puis le fromage, avec des yeux immenses.
 
-« Il y a une région qui s'appelle comme moi ? Et un fromage ? »
+« Il y a une région qui s'appelle comme mon frère ? Bri, la Brie ! Et un fromage ? »
 
-« Le fromage était là avant toi. »
+« Le fromage était là avant ton frère. »
 
 « C'est un signe. »
 
@@ -192,7 +192,7 @@ Il revient vers Kaydoudou et le regarde de très haut, sous sa moustache.
 
 « Je décris un joueur. Pas encore toi. »
 
-« Ngassa le grand, crie Lacombe. Le ballon ! »
+« Le grand ! crie Lacombe. Le ballon ! »
 
 Kaydoudou se glisse dans l'espace, entre deux jaunes du milieu. Et pour la première fois, il fait comme dans le RER.
 
@@ -232,9 +232,9 @@ Mais sa voix est un tout petit peu moins rugueuse.
 
 Premier match officiel, un samedi gris, contre l'Olympique des Trois-Moulins. Le terrain sent l'herbe coupée et la frite. Lacombe mélange ses meilleurs U13 et ses U14, à onze contre onze, et lit la composition d'une voix sèche.
 
-« Delattre, le 8. Ngassa le grand, à côté de lui. Le petit, numéro 7, à droite. Morel, derrière le petit. »
+« Delattre, le 8. Le grand, à côté de lui. Le petit, numéro 7, à droite. Morel, derrière le petit. »
 
-Le cœur de Kaydoudou bat dans ses oreilles.
+Kaydoudou est le plus petit des vingt-deux joueurs. Son cœur bat dans ses oreilles.
 
 « Ça va aller », lui dit Lucas.
 

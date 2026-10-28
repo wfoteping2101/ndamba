@@ -98,7 +98,7 @@ Le lundi soir, Kaydoudou le regarde depuis le balcon, le menton sur la rambarde.
 
 * * *
 
-Le mardi, au premier ballon, BriBri tente la roulette. Il tourne sur lui-même, très bien. Quand il a fini de tourner, le ballon n'est plus là. Un U14 l'a poussé du bout du pied et s'en va avec, tranquille.
+Le mardi, au premier ballon, BriBri tente la roulette. Il tourne sur lui-même, très bien. Quand il a fini de tourner, le ballon n'est plus là. Un défenseur l'a poussé du bout du pied et s'en va avec, tranquille.
 
 « Joli manège ! »
 
@@ -108,13 +108,13 @@ Au deuxième ballon, le crochet derrière la jambe d'appui. Ses deux jambes se n
 
 Au troisième, la talonnade, sans regarder, comme Kenzo. Le ballon part droit dans les pieds d'un adversaire.
 
-« Merci, Ngassa ! » rigole l'adversaire.
+« Merci, Bri ! » rigole l'adversaire.
 
 Quelques garçons rient, pas méchamment. Kenzo, lui, ne rit pas. Il le regarde longtemps, avec une drôle d'expression, puis il se détourne. C'est presque pire.
 
 Le sifflet en métal.
 
-« Ngassa. Le bord du terrain. Cinq minutes. »
+« Le grand. Le bord du terrain. Cinq minutes. »
 
 BriBri va s'asseoir sur le banc de touche et enfile le gros manteau de remplaçant par-dessus son vieux maillot vert. Sous les projecteurs, la pluie fine brille comme de la poussière d'argent. Il regarde ses crampons, les épaules basses.
 
@@ -152,7 +152,7 @@ BriBri se lève. Dans sa tête, il entend la voix de Mami, un soir où Kaydoudou
 
 * * *
 
-Lacombe l'attend avec deux plots, un ballon et Mathis, un U14 qui joue défenseur.
+Lacombe l'attend avec deux plots, un ballon et Mathis, un défenseur costaud.
 
 « Quand tu reçois, tu reçois comment ? Montre. »
 
@@ -178,7 +178,7 @@ Mathis s'arrête, les mains sur les hanches.
 
 Ils le font trente fois.
 
-« Trente, Ngassa, souffle Mathis. Mes jambes te détestent. » À la fin, BriBri a la cheville gauche qui chauffe, et un sourire qu'il n'arrive pas à cacher.
+« Trente, Bri, souffle Mathis. Mes jambes te détestent. » À la fin, BriBri a la cheville gauche qui chauffe, et un sourire qu'il n'arrive pas à cacher.
 
 * * *
 
@@ -192,7 +192,7 @@ Son nom est dedans. Pas à la place de Kenzo.
 
 À côté de lui.
 
-« Ngassa, tu joues 6, dit Lacombe. Devant la défense. Tu reçois des défenseurs et tu donnes. C'est tout. Delattre, tu restes 8. Tu crées. »
+« Le grand, tu joues 6, dit Lacombe. Devant la défense. Tu reçois des défenseurs et tu donnes. C'est tout. Delattre, tu restes 8. Tu crées. »
 
 « C'est quoi, un 6 ? » chuchote Kaydoudou.
 
@@ -204,7 +204,7 @@ Son nom est dedans. Pas à la place de Kenzo.
 
 Très vite, BriBri sent que ce poste lui va comme un vieux maillot. Avant chaque passe, il regarde deux fois par-dessus l'épaule, comme la mésange. Il se met de côté, le corps ouvert, et en une touche, il joue vers l'avant. Vers Kenzo. Vers Kaydoudou, entre les lignes. Vers Lucas, qui monte sur le côté droit avec ses grandes jambes de paysan.
 
-« Ouvre, Ngassa ! crie Lacombe. Encore ! »
+« Ouvre ! crie Lacombe. Encore ! »
 
 Et Kenzo, débarrassé du travail de l'ombre, devient terrible. Le ballon lui arrive propre, au bon pied, au bon moment. Il fait marquer Kaydoudou. Il marque lui-même, une frappe sèche à ras de terre.
 

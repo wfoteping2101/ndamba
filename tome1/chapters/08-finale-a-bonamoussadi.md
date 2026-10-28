@@ -4,8 +4,8 @@ slug: finale-a-bonamoussadi
 titre: Finale à Bonamoussadi
 partie: 1
 pov: Kaydoudou
-resume: La finale du tournoi des quartiers contre les Panthères de Deïdo, devant Mami venue de Bafoussam et tout Bonamoussadi. Deux jours plus tard, un avion attend les frères Ngassa.
-illustration: Plan rapproché, intérieur d'un avion, matin, lumière blanche par le hublot. Kaydoudou (10 ans, petite afro, sourire avec l'écart entre les dents, une chaussette rouge et une chaussette jaune visibles sous le siège) est assis contre le hublot et regarde dehors, le front presque collé à la vitre ; par le hublot, la terre rouge et les toits de tôle de Douala s'effacent sous des nuages blancs. À côté de lui, BriBri (11 ans, raie fine à gauche, tee-shirt vert) a les yeux fermés et serre contre sa poitrine un cahier couvert de pagne vert et orange. Sur l'accoudoir, la petite main de Kaydoudou tient fermement celle de son frère.
+resume: La finale du tournoi des quartiers contre les Panthères de Deïdo, devant Mami venue de Bafoussam et tout Bonamoussadi. Deux jours plus tard, un avion attend les deux frères.
+illustration: Plan rapproché, intérieur d'un avion, matin, lumière blanche par le hublot. Kaydoudou (10 ans, petite afro, sourire avec l'écart entre les dents, une chaussette rouge et une chaussette jaune visibles sous le siège) est assis contre le hublot et regarde dehors, le front presque collé à la vitre ; par le hublot, la terre rouge et les toits de tôle de Douala s'effacent sous des nuages blancs. À côté de lui, BriBri (12 ans, raie fine à gauche, tee-shirt vert) a les yeux fermés et serre contre sa poitrine un cahier couvert de pagne vert et orange. Sur l'accoudoir, la petite main de Kaydoudou tient fermement celle de son frère.
 ---
 
 Boum ! Boum ! Ba-da-boum !

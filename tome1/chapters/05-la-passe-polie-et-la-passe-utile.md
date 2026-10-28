@@ -5,7 +5,7 @@ titre: La passe polie et la passe utile
 partie: 1
 pov: BriBri
 resume: Les Lionceaux se battent pour sortir de leur poule, et tout le quartier félicite BriBri pour ses passes si propres. Tout le quartier, sauf un vieil homme assis sur un bidon jaune.
-illustration: Plan moyen, crépuscule, lumière bleue et orange. Dans le salon des Ngassa, une ampoule nue au plafond, Papa (41 ans, chemise à manches courtes, lunettes relevées sur le front) est assis à la table à côté de BriBri (11 ans, raie fine à gauche, maillot vert délavé numéro 8). Papa dessine avec un stylo sur une feuille des petits ronds reliés par des flèches, comme un réseau ; BriBri suit la flèche du doigt, sourcils froncés, très attentif. Sur la table, un câble informatique enroulé et la moitié d'un mango. Au fond, flou, Kaydoudou allongé sur le canapé, une chaussette rouge et une jaune en l'air.
+illustration: Plan moyen, crépuscule, lumière bleue et orange. Dans le salon de la famille, une ampoule nue au plafond, Papa (41 ans, chemise à manches courtes, lunettes relevées sur le front) est assis à la table à côté de BriBri (12 ans, raie fine à gauche, maillot vert délavé numéro 8). Papa dessine avec un stylo sur une feuille des petits ronds reliés par des flèches, comme un réseau ; BriBri suit la flèche du doigt, sourcils froncés, très attentif. Sur la table, un câble informatique enroulé et la moitié d'un mango. Au fond, flou, Kaydoudou allongé sur le canapé, une chaussette rouge et une jaune en l'air.
 ---
 
 « Propre ! Très propre, BriBri ! »

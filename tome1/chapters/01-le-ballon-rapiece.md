@@ -5,7 +5,7 @@ titre: Le ballon rapiécé
 partie: 1
 pov: BriBri
 resume: Un samedi matin sur la terre rouge de Bonamoussadi, les Lionceaux de Tonton Fokou jouent un match de quartier, et Kaydoudou a bien l'intention de dribbler la ville entière. Mais le vieux ballon des frères n'a pas dit son dernier mot.
-illustration: Plan moyen, fin de matinée, lumière blanche et poussière rouge suspendue dans l'air. Au pied d'un grillage surmonté de fil de fer, sur le terrain de terre de Bonamoussadi, Kaydoudou (10 ans, petite afro, tee-shirt jaune à bande rouge, short vert, une chaussette rouge et une chaussette jaune) est assis par terre et serre contre lui un vieux ballon de cuir brun, ouvert le long d'une couture et dégonflé. Deux traces de larmes claires coupent la poussière de ses joues. Debout près de lui, BriBri (11 ans, mince, maillot vert forêt délavé numéro 8 à col blanc, raie fine à gauche) pose une main sur son épaule, grave. Au fond, flous : le manguier, un but en bambou, une casquette usée.
+illustration: Plan moyen, fin de matinée, lumière blanche et poussière rouge suspendue dans l'air. Au pied d'un grillage surmonté de fil de fer, sur le terrain de terre de Bonamoussadi, Kaydoudou (10 ans, petite afro, tee-shirt jaune à bande rouge, short vert, une chaussette rouge et une chaussette jaune) est assis par terre et serre contre lui un vieux ballon de cuir brun, ouvert le long d'une couture et dégonflé. Deux traces de larmes claires coupent la poussière de ses joues. Debout près de lui, BriBri (12 ans, mince, maillot vert forêt délavé numéro 8 à col blanc, raie fine à gauche) pose une main sur son épaule, grave. Au fond, flous : le manguier, un but en bambou, une casquette usée.
 ---
 
 « Houou ! »
@@ -26,11 +26,11 @@ Prosper, tout le monde l'appelle Radio.
 
 « Les deux, Gazelle ! Je suis un professionnel ! »
 
-BriBri a onze ans. Grand et mince, une raie fine à gauche, le 8 vert délavé sur le dos. Il parle avec les mains. Paume vers le sol : doucement. Bras tendu : là-bas, quelqu'un est seul.
+BriBri a douze ans. Grand et mince, une raie fine à gauche, le 8 vert délavé sur le dos. Il parle avec les mains. Paume vers le sol : doucement. Bras tendu : là-bas, quelqu'un est seul.
 
 Ce matin, il surveille aussi autre chose. Le ballon.
 
-« Le ballon du club est mort mardi, a annoncé Tonton Fokou avant le match. Un tesson de bouteille. Paix à son âme. Les Ngassa, vous prêtez le vôtre ? »
+« Le ballon du club est mort mardi, a annoncé Tonton Fokou avant le match. Un tesson de bouteille. Paix à son âme. BriBri, Kaydoudou, vous prêtez le vôtre ? »
 
 « Le ballon de Mami ? a dit Kaydoudou. Du vrai cuir, Tonton ! Cousu à la main ! »
 

@@ -5,14 +5,14 @@ titre: La lettre de Waldorf
 partie: 1
 pov: Kaydoudou
 resume: Un soir de ndolé, Papa pose sur la table une lettre venue de très loin, avec un nom de ville qui ressemble à un éternuement. Pour Kaydoudou, le monde se met à pencher comme le but en bambou de Bonamoussadi.
-illustration: Plan rapproché, nuit, lumière d'une lampe de poche sous une moustiquaire blanche. Deux lits côte à côte dans une petite chambre aux murs bleus. Kaydoudou (10 ans, petite afro, pyjama, une chaussette rouge et une jaune aux pieds) est assis en tailleur sur son lit, les yeux brillants de larmes retenues, et tient le petit doigt tendu. Dans le lit d'à côté, BriBri (11 ans, raie fine à gauche, tee-shirt vert) se redresse sur un coude et accroche son petit doigt à celui de son frère, à travers les deux moustiquaires. Entre eux, sur la table de nuit, le vieux ballon de cuir avec son carré de pagne rouge et jaune.
+illustration: Plan rapproché, nuit, lumière d'une lampe de poche sous une moustiquaire blanche. Deux lits côte à côte dans une petite chambre aux murs bleus. Kaydoudou (10 ans, petite afro, pyjama, une chaussette rouge et une jaune aux pieds) est assis en tailleur sur son lit, les yeux brillants de larmes retenues, et tient le petit doigt tendu. Dans le lit d'à côté, BriBri (12 ans, raie fine à gauche, tee-shirt vert) se redresse sur un coude et accroche son petit doigt à celui de son frère, à travers les deux moustiquaires. Entre eux, sur la table de nuit, le vieux ballon de cuir avec son carré de pagne rouge et jaune.
 ---
 
 « Papa, tu es malade ? »
 
 Kaydoudou pose la question la bouche pleine de plantain. C'est grave. Papa ne mange pas son ndolé.
 
-Chez les Ngassa, le ndolé de Maman, c'est sacré. Les feuilles amères, la pâte d'arachide, les crevettes. D'habitude, Papa se sert trois fois.
+À la maison, le ndolé de Maman, c'est sacré. Les feuilles amères, la pâte d'arachide, les crevettes. D'habitude, Papa se sert trois fois.
 
 « Le meilleur ndolé du Littoral ! » dit-il toujours.
 

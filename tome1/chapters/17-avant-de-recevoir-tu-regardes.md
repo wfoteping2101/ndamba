@@ -4,7 +4,7 @@ slug: avant-de-recevoir-tu-regardes
 titre: Avant de recevoir, tu regardes
 partie: 3
 pov: BriBri
-resume: Les Ngassa s'installent à Bussy-Saint-Georges, où tout le monde parle français, mais pas tout à fait comme eux. À l'essai du centre de formation de l'Étoile Sportive de Marne, un entraîneur à moustache grise pose à BriBri une question à laquelle il ne sait pas répondre.
+resume: La famille s'installe à Bussy-Saint-Georges, où tout le monde parle français, mais pas tout à fait comme eux. À l'essai du centre de formation de l'Étoile Sportive de Marne, un entraîneur à moustache grise pose à BriBri une question à laquelle il ne sait pas répondre.
 illustration: Plan moyen sur un terrain synthétique au bord de la Marne, fin d'après-midi de septembre, lumière dorée et rasante, une péniche floue au loin. Au premier plan, BriBri, mince, fine raie dessinée à gauche, chasuble orange par-dessus son vieux maillot vert numéro 8, se retourne trop tard : un garçon aux boucles brunes et aux crampons très blancs lui chipe le ballon dans le dos. À deux pas, Monsieur Lacombe, survêtement bleu marine, moustache grise taillée en brosse, sifflet en métal aux lèvres, lève une main pour arrêter le jeu. Au fond, petit et flou, Kaydoudou sur la pointe des pieds, chaussettes rouge et jaune, la bouche ouverte.
 ---
 
@@ -96,7 +96,7 @@ Puis il passe à la langue d'ici.
 
 « Ne te moque pas », dit Maman, qui rit.
 
-« Je ne me moque pas. J'apprends la langue. » Il se tourne vers son frère. « Et à la récré, ils t'appellent “Bri”. Ils disent que BriBri, c'est trop long. »
+« Je ne me moque pas. J'apprends la langue. » Il se tourne vers son frère. « Et à la récré, ils t'appellent “Bri”. Ils disent que BriBri, c'est deux fois la même chose, et qu'une fois suffit. »
 
 « Toi, ne commence pas. »
 
@@ -122,7 +122,7 @@ Dans le RER, le mercredi, il ne tient pas en place.
 
 Kaydoudou le regarde, et il se calme d'un coup.
 
-Le centre de l'ESM est au bord de la Marne. Trois terrains synthétiques, un bâtiment blanc avec une grande étoile, des péniches qui glissent sur l'eau. Une trentaine de garçons attendent le long de la main courante, la barrière autour du terrain.
+Le centre de l'ESM est au bord de la Marne. Trois terrains synthétiques, un bâtiment blanc avec une grande étoile, des péniches qui glissent sur l'eau. Une trentaine de garçons attendent le long de la main courante, la barrière autour du terrain. Kaydoudou est le plus petit de tous.
 
 À seize heures pile, sous un soleil déjà doré, Monsieur Bertrand Lacombe arrive.
 
@@ -242,7 +242,7 @@ Après l'essai, Kaydoudou rejoint son frère près de la main courante.
 
 Lacombe s'arrête devant Papa. BriBri tend l'oreille.
 
-« Monsieur Ngassa ? Le grand a de la tête. Le petit a de la magie. »
+« Vous êtes le papa ? Le grand a de la tête. Le petit a de la magie. »
 
 Papa sourit.
 
@@ -252,7 +252,7 @@ Le sourire de Papa reste en l'air, un peu perdu.
 
 « Des yeux ? »
 
-« Les yeux, ça s'apprend. La tête et la magie, beaucoup moins. » Lacombe regarde son carnet. « Section sport-études. Le grand chez les U13. Le petit avec lui, surclassé. Ici, les U13 et les U14 de la section s'entraînent ensemble, avec moi. Mardi, seize heures. Pas une minute de retard. »
+« Les yeux, ça s'apprend. La tête et la magie, beaucoup moins. » Lacombe regarde son carnet. « Section sport-études. Le grand chez les U14. Le petit avec lui, surclassé. Deux ans de moins que les autres, une tête de moins. Mais il va vite. Ici, les U13 et les U14 de la section s'entraînent ensemble, avec moi. Mardi, seize heures. Pas une minute de retard. »
 
 « On sera là », dit Papa.
 

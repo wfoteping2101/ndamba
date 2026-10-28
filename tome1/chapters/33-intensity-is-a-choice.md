@@ -90,9 +90,9 @@ Kaydoudou sursaute.
 
 « Moi, chuchote Kaydoudou. Enfin, je crois. »
 
-« I'm Nathan Okafor. Coach of the U15. » Il lit la liste en marchant. À « Ngassa », il s'arrête net.
+« I'm Nathan Okafor. Coach of the U15. » Il lit la liste en marchant. À « BriBri », il s'arrête net. Juste en dessous : « Kaydoudou ». Même adresse.
 
-« Ngassa and Ngassa ? Brothers ? Where from ? »
+« BriBri and Kaydoudou ? Brothers ? Where from ? »
 
 « Cameroon », répond BriBri.
 
@@ -132,7 +132,7 @@ Troisième ballon. Il essaie de se retourner. Il ne se retourne pas.
 
 « That's three, mate ! » ricane le grand garçon.
 
-Trois ballons perdus en dix minutes. Ça ne lui est plus arrivé depuis la terre rouge, quand il avait onze ans.
+Trois ballons perdus en dix minutes. Ça ne lui est plus arrivé depuis la terre rouge, quand il avait douze ans.
 
 Les Anglais fondent sur le ballon à trois, de partout. Le terrain rétrécit comme un pull dans la machine à laver.
 
@@ -163,6 +163,12 @@ Lents. Très lents. Le ventre de BriBri tombe dans ses chaussures.
 « Vos têtes sont rapides, chuchote Papa. Les jambes, ça s'entraîne. Les têtes, non. Vous êtes pris. »
 
 « On est pris ! » Kaydoudou bondit de sa chaise. Okafor lève un doigt. Kaydoudou se rassoit.
+
+Okafor se tourne vers lui. « You're thirteen. Young for this team. » Il hausse les épaules. « I don't care. You play up. With your brother. »
+
+« Tu joues surclassé, souffle BriBri. Avec les grands. Avec moi. »
+
+Kaydoudou se redresse sur sa chaise. Il essaie d'avoir l'air plus grand.
 
 « One thing. Here, nobody waits for you. Not the ball. Not the opponent. Not me. »
 

@@ -5,7 +5,7 @@ titre: Les Requins de Bépanda
 partie: 1
 pov: BriBri
 resume: Le tournoi des quartiers commence, et les Lionceaux affrontent tout de suite les Requins de Bépanda et leur capitaine, Junior « Bulldozer » Mvondo. Sur le chemin du retour, les deux frères se disent des choses qu'ils n'auraient pas dû se dire.
-illustration: Plan moyen, fin d'après-midi, ciel orange et poussière rouge. Au bord du terrain de Bonamoussadi, sous le manguier, Tonton Fokou (62 ans, casquette usée, sifflet en bois au cou) est assis sur un bidon jaune, le doigt levé, sérieux. Devant lui, debout, les deux frères se tournent le dos à moitié, fâchés : BriBri (11 ans, maillot vert délavé numéro 8, raie fine à gauche) serre les poings le long du corps ; Kaydoudou (10 ans, petite afro, chaussette rouge et chaussette jaune) a les bras croisés et la lèvre en avant. Derrière eux, floue, Mireille, les mains sur les hanches.
+illustration: Plan moyen, fin d'après-midi, ciel orange et poussière rouge. Au bord du terrain de Bonamoussadi, sous le manguier, Tonton Fokou (62 ans, casquette usée, sifflet en bois au cou) est assis sur un bidon jaune, le doigt levé, sérieux. Devant lui, debout, les deux frères se tournent le dos à moitié, fâchés : BriBri (12 ans, maillot vert délavé numéro 8, raie fine à gauche) serre les poings le long du corps ; Kaydoudou (10 ans, petite afro, chaussette rouge et chaussette jaune) a les bras croisés et la lèvre en avant. Derrière eux, floue, Mireille, les mains sur les hanches.
 ---
 
 « C'est lui, Bulldozer ? »
@@ -228,7 +228,7 @@ Ils sursautent tous les trois.
 
 Sous le manguier, Tonton Fokou est assis sur son bidon jaune, une bouteille d'eau à la main.
 
-« J'ai tout entendu. Le quartier aussi, je pense. Venez ici, les Ngassa. »
+« J'ai tout entendu. Le quartier aussi, je pense. Venez ici, les deux frères. »
 
 Ils approchent. Ils restent plantés devant lui, à moitié dos à dos, chacun tourné vers son côté du terrain.
 

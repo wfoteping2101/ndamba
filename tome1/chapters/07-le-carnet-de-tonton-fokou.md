@@ -5,7 +5,7 @@ titre: Le carnet de Tonton Fokou
 partie: 1
 pov: BriBri
 resume: Demi-finale du tournoi des quartiers, revanche contre les Requins de Bépanda, devant tout Bonamoussadi. À la mi-temps, BriBri, qui ne parle jamais, va devoir ouvrir la bouche.
-illustration: Plan moyen, fin d'après-midi, lumière dorée rasante et poussière rouge. Sous le manguier du terrain de Bonamoussadi, Tonton Fokou (62 ans, casquette usée, sifflet en bois au cou, une jambe légèrement fléchie) tend des deux mains un épais cahier couvert de pagne vert et orange à BriBri (11 ans, mince, maillot vert forêt délavé numéro 8 à col blanc, raie fine à gauche, couvert de poussière), qui le prend avec émotion. Juste derrière BriBri, Kaydoudou (10 ans, petite afro, une chaussette rouge et une chaussette jaune) sautille sur la pointe des pieds et essaie de voir le cahier par-dessus l'épaule de son frère.
+illustration: Plan moyen, fin d'après-midi, lumière dorée rasante et poussière rouge. Sous le manguier du terrain de Bonamoussadi, Tonton Fokou (62 ans, casquette usée, sifflet en bois au cou, une jambe légèrement fléchie) tend des deux mains un épais cahier couvert de pagne vert et orange à BriBri (12 ans, mince, maillot vert forêt délavé numéro 8 à col blanc, raie fine à gauche, couvert de poussière), qui le prend avec émotion. Juste derrière BriBri, Kaydoudou (10 ans, petite afro, une chaussette rouge et une chaussette jaune) sautille sur la pointe des pieds et essaie de voir le cahier par-dessus l'épaule de son frère.
 ---
 
 « BONAMOUSSADI ! EST-CE QUE VOUS ÊTES LÀ ? »
@@ -76,7 +76,7 @@ Il récupère encore.
 
 Passe en arrière.
 
-« Ngassa donne sur le côté ! Encore sur le côté ! Très propre, mesdames et messieurs ! »
+« Le numéro 8 donne sur le côté ! Encore sur le côté ! Très propre, mesdames et messieurs ! »
 
 « Bien, BriBri ! Propre ! » crie Madame Ekotto.
 
@@ -152,7 +152,7 @@ BriBri se rassoit, les oreilles en feu. Tonton Fokou s'éclaircit la gorge.
 
 « Vous avez entendu votre capitaine. »
 
-« Capitaine Ngassa ! » dit Kaydoudou en faisant le salut militaire.
+« Capitaine BriBri ! » dit Kaydoudou en faisant le salut militaire.
 
 *Capitaine ? Moi ?*
 
@@ -216,7 +216,7 @@ Un requin blessé devient méchant.
 
 Ousmane se relève avec des feuilles dans les cheveux. Pas un mot.
 
-« Il reste deux minutes ! Ousmane relance vers Ngassa ! »
+« Il reste deux minutes ! Ousmane relance vers BriBri ! »
 
 Kaydoudou vient vers son frère sur la gauche, Bulldozer collé dans son dos.
 
@@ -224,7 +224,7 @@ Les deux frères se regardent. Une demi-seconde.
 
 BriBri lève deux doigts.
 
-« Ngassa lève deux doigts ! Qu'est-ce que ça veut dire ? Personne ne sait ! »
+« Le grand frère lève deux doigts ! Qu'est-ce que ça veut dire ? Personne ne sait ! »
 
 Kaydoudou, lui, sait. Il donne le ballon et part tout droit, comme une flèche. BriBri remet en une seule touche, par-dessus le pied tendu d'un Requin, dans le dos de Bulldozer. Là où Kaydoudou arrive déjà.
 
