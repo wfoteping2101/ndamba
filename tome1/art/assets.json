@@ -349,10 +349,10 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch06.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch06.png",
+  "status": "redo",
+  "review": "Opener: BriBri seen in three quarter from his right with the shaved part on his RIGHT side. Regenerate with the part on his left.",
   "integrated_in": []
  },
  {
@@ -383,11 +383,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch08.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch08.png",
+  "status": "approved, integrated",
+  "review": "On the plane: Kaydoudou at the window (red sock right, yellow left), BriBri with the wax notebook, part on his left, holding hands.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch09",
@@ -1108,11 +1112,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch05b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch05b.png",
+  "status": "approved, integrated",
+  "review": "Cobras match on the wet red earth; BriBri number 8 with the ball, the comb of grey Cobras.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch05c",
@@ -1125,11 +1132,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch05c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch05c.png",
+  "status": "approved, integrated",
+  "review": "Tonton Fokou shares a mango with BriBri; part on his left.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch05d",
@@ -1141,11 +1151,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch05d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch05d.png",
+  "status": "approved, integrated",
+  "review": "BriBri draws the network by torchlight under the mosquito net; Kaydoudou asleep.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch06b",
@@ -1157,11 +1170,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch06b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch06b.png",
+  "status": "approved, integrated",
+  "review": "The letter from Waldorf at dinner: Kaydoudou furious, red sock right; Maman, Papa, BriBri.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch06c",
@@ -1173,11 +1189,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch06c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch06c.png",
+  "status": "approved, integrated",
+  "review": "Under the mango tree at night, Papa comforts Kaydoudou (red sock right); Maman and BriBri.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch06d",
@@ -1188,11 +1207,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch06d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch06d.png",
+  "status": "approved, integrated",
+  "review": "The decoy run: Kaydoudou drags his defender into the corner, BriBri plays into the middle.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch07b",
@@ -1203,11 +1225,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch07b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch07b.png",
+  "status": "approved, integrated",
+  "review": "Semi-final: Ousmane dives as Bulldozer heads; BriBri number 8 in the box.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch07c",
@@ -1218,11 +1243,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch07c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch07c.png",
+  "status": "approved, integrated",
+  "review": "BriBri number 8 breaks the lines; Kaydoudou (red sock right) runs in behind.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch07d",
@@ -1233,11 +1261,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch07d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch07d.png",
+  "status": "approved, integrated",
+  "review": "The corner-flag dance; Kaydoudou red sock right, BriBri number 8, the crowd and Mami.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch08b",
