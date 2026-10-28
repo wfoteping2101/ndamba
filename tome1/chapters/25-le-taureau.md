@@ -4,7 +4,7 @@ slug: le-taureau
 titre: Le taureau
 partie: 4
 pov: Kaydoudou
-resume: Les Ngassa s'installent dans un village catalan entre les vignes et la mer, et Kaydoudou découvre à La Granja del Mar un drôle de jeu où l'on court après un ballon qu'on n'attrape jamais.
+resume: La famille s'installe dans un village catalan entre les vignes et la mer, et Kaydoudou découvre à La Granja del Mar un drôle de jeu où l'on court après un ballon qu'on n'attrape jamais.
 illustration: Plan moyen, fin d'après-midi de septembre, sur un terrain d'herbe bordé de vignes chargées de raisins violets, avec une rangée de pins et un éclat de mer bleue au fond. Au centre d'un carré de plots orange, Kaydoudou, petite afro, une chaussette rouge et une chaussette jaune, se jette en avant, les deux index pointés sur la tête comme des cornes, la bouche ouverte de rire. Dans le cercle, Laia Ferrer, chignon brun et taches de rousseur, vient de lui glisser le ballon entre les jambes. Derrière elle, BriBri, maillot vert délavé numéro 8, fine raie à gauche, cache son sourire. Lumière dorée et rasante.
 ---
 
@@ -34,7 +34,7 @@ Pas une seule.
 
 « Bienvenue à Vinyamar ! dit Papa en ouvrant la porte de la maison. Une colline, des vignes, la mer. Et Tarragone à une demi-heure. »
 
-La maison des Ngassa est étroite et haute, avec un escalier qui tourne sur lui-même comme une coquille d'escargot. Tout en haut, il y a un toit plat, le « terrat ». Le premier soir, Kaydoudou y monte le ballon de Mami et le pose sur le muret, face à l'eau.
+La maison de la famille est étroite et haute, avec un escalier qui tourne sur lui-même comme une coquille d'escargot. Tout en haut, il y a un toit plat, le « terrat ». Le premier soir, Kaydoudou y monte le ballon de Mami et le pose sur le muret, face à l'eau.
 
 « Regarde, ballon. Ça, c'est la Méditerranée. Tu n'étais jamais venu ici. Là, ce sont les vignes. C'est la saison des vendanges, alors il y a des petits tracteurs pleins de raisins violets, et des guêpes qui les suivent en dansant. Les rues montent et descendent comme des toboggans. Et au bout de chaque ruelle, il y a un morceau de mer. Et tout sent la confiture. »
 
@@ -230,7 +230,13 @@ La troisième fois qu'ils se retrouvent par terre, l'un sur l'autre, même Nil s
 
 * * *
 
-À la fin de la séance, Jordi les réunit à l'ombre des pins. Il trace un triangle dans le sable avec la pointe de sa chaussure.
+À la fin de la séance, Jordi les réunit à l'ombre des pins. Il s'arrête devant Kaydoudou.
+
+« Dotze anys. Douze ans. Normalement, à ton âge, tu joues avec les plus jeunes. » Il montre BriBri avec son crayon. « Mais quand vous attaquez, ton frère et toi, vous parlez sans parler. Alors tu restes ici, avec les grands. Surclassé. »
+
+« Encore ! s'écrie Kaydoudou. Je suis le plus petit de trois pays ! »
+
+Jordi sourit et trace un triangle dans le sable avec la pointe de sa chaussure.
 
 « El rondo no és un joc. És una escola. Tot el futbol és aquí dins. » Il cherche ses mots français. « Le rondo, ce n'est pas un jeu. C'est une école. Tout le football est dedans. »
 

@@ -1,4 +1,4 @@
-// One page of Kaydoudou's notebook: a Leçon du Ballon with its lines, its diagram,
+// One page of BriBri's notebook: a Leçon du Ballon with its lines, its diagram,
 // the chapter picture when it exists, « J'ai compris », and what to do next.
 import { Link } from 'react-router-dom'
 import { BookOpen, Check, Dumbbell, NotebookPen, Target } from 'lucide-react'

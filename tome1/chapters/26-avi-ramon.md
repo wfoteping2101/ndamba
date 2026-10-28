@@ -134,7 +134,7 @@ BriBri entre dans le cercle. À sa deuxième passe, il joue trop vite, et le bal
 
 BriBri ne se jette pas. Il s'approche lentement, bien placé, comme Monsieur Lacombe le lui a appris. Il coupe la passe la plus facile. Avi Ramon ne passe pas. BriBri fait un pas de plus. Le vieil homme ne passe toujours pas.
 
-« Il va craquer, chuchote un papi à la terrasse. Le petit va l'avoir. »
+« Il va craquer, chuchote un papi à la terrasse. Le grand va l'avoir. »
 
 *Je vais l'avoir. Je vais être le premier.*
 

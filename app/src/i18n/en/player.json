@@ -27,7 +27,7 @@
     "allLessons": "All lessons",
     "ritual": "pack your bag and get to bed early the night before",
     "notebookEmpty": "Your first page is waiting",
-    "notebookEmptyBody": "Write down what you learned today, like Kaydoudou.",
+    "notebookEmptyBody": "Write down what you learned today, like BriBri.",
     "statDaily": "Today",
     "last7": "My last 7 days"
   },
@@ -286,8 +286,8 @@
     "libraryTitle": "All challenges",
     "libraryBody": "{{n}} challenges to do on your own, against a wall or with a few cones. Each one trains a competence of the grid and links to a Lesson of the Ball.",
     "moreLabel": "Go further",
-    "lessonsHint": "The 40 pages of Kaydoudou's notebook",
-    "notebookHint": "Write down what you learn, like Kaydoudou"
+    "lessonsHint": "The 40 pages of BriBri's notebook",
+    "notebookHint": "Write down what you learn, like BriBri"
   },
   "care": {
     "waterTitle": "Drink water",
@@ -359,9 +359,9 @@
   },
   "lessons": {
     "docTitle": "Ball Lessons",
-    "eyebrow": "Kaydoudou's notebook",
+    "eyebrow": "BriBri's notebook",
     "title": "The Ball Lessons",
-    "subtitle": "At the end of every chapter of {{book}}, Kaydoudou writes a lesson in his wax-print notebook. Here are all forty, with their diagrams.",
+    "subtitle": "At the end of every chapter of {{book}}, BriBri writes a lesson in his wax-print notebook. Here are all forty, with their diagrams.",
     "progress": "{{n}} of 40 understood",
     "writing": "{{n}} chapters written so far: the other pages arrive with the book.",
     "ofDay": "Lesson of the day (no. {{n}})",
@@ -427,13 +427,13 @@
     "eyebrow": "The Njangi notebook",
     "title": "My Njangi notebook",
     "short": "My Njangi notebook",
-    "subtitle": "Like Kaydoudou, write down what you learned after every training session or match. One page, one idea.",
+    "subtitle": "Like BriBri, write down what you learned after every training session or match. One page, one idea.",
     "new": "New page",
     "newTitle": "New notebook page",
     "editTitle": "Edit the page",
     "search": "Search my notebook",
     "emptyTitle": "Your notebook is still empty",
-    "emptyBody": "Kaydoudou started his with a single sentence: \"The ball must travel.\" Write yours: what you learned today, a pass you are proud of, what you want to work on.",
+    "emptyBody": "BriBri started his with a single sentence: \"The ball must travel.\" Write yours: what you learned today, a pass you are proud of, what you want to work on.",
     "first": "Write my first page",
     "fromLesson": "Start from today's lesson (no. {{n}})",
     "printTitle": "{{name}}'s Njangi notebook",
@@ -459,7 +459,7 @@
       "learned": "Today I learned",
       "proud": "A pass I am proud of:",
       "work": "Tomorrow I want to work on",
-      "kaydoudou": "In my place, Kaydoudou would have"
+      "kaydoudou": "In my place, BriBri would have"
     },
     "fLesson": "Linked lesson",
     "fLessonHint": "Link your page to a Ball Lesson (optional).",

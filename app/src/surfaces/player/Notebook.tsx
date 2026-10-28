@@ -1,4 +1,4 @@
-// /app/joueur/carnet: the user's own « carnet du Njangi », like Kaydoudou's notebook in the novel.
+// /app/joueur/carnet: the user's own « carnet du Njangi », like BriBri's notebook in the novel.
 // Entries live in db.notebook (date, title, text, optional linked lesson): create, edit, delete, print.
 // From 16 years old it becomes « Mon journal de joueur »: a sober page, adult prompts, no lesson link.
 import { useEffect, useMemo, useState } from 'react'

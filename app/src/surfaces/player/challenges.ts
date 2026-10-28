@@ -47,8 +47,8 @@ export const CHALLENGES: Challenge[] = [
   },
   {
     id: 'semelle-futsal', kind: 'conduite', skill: 'conduite', lesson: 9, target: 40, unit: 'touches', better: 'higher', minutes: 4, gear: ['ball'],
-    fr: { title: 'La semelle du futsal de Waldorf', how: "Fais rouler le ballon de gauche à droite sous la semelle, en alternant les pieds, pendant 30 secondes. Compte chaque touche. Trois essais, une minute de pause entre chaque.", score: 'Ton meilleur nombre de touches en 30 secondes', tip: 'Sur la pointe des pieds, comme BriBri.' },
-    en: { title: 'The Waldorf futsal sole roll', how: 'Roll the ball side to side under your sole, switching feet, for 30 seconds. Count every touch. Three tries, one minute of rest between them.', score: 'Your best touch count in 30 seconds', tip: 'Stay on your toes, like BriBri.' },
+    fr: { title: 'La semelle du futsal de Waldorf', how: "Fais rouler le ballon de gauche à droite sous la semelle, en alternant les pieds, pendant 30 secondes. Compte chaque touche. Trois essais, une minute de pause entre chaque.", score: 'Ton meilleur nombre de touches en 30 secondes', tip: 'Sur la pointe des pieds, comme Kaydoudou.' },
+    en: { title: 'The Waldorf futsal sole roll', how: 'Roll the ball side to side under your sole, switching feet, for 30 seconds. Count every touch. Three tries, one minute of rest between them.', score: 'Your best touch count in 30 seconds', tip: 'Stay on your toes, like Kaydoudou.' },
   },
   {
     id: 'pieds-rapides', kind: 'conduite', skill: 'conduite', lesson: 31, target: 60, unit: 'touches', better: 'higher', minutes: 4, gear: ['ball'],
@@ -97,8 +97,8 @@ export const CHALLENGES: Challenge[] = [
   },
   {
     id: 'jeu-des-yeux', kind: 'yeux', skill: 'scan', lesson: 22, target: 8, unit: 'points', better: 'higher', minutes: 6, gear: ['ball', 'wall', 'partner'],
-    fr: { title: 'Le jeu des yeux', how: "Le jeu inventé par BriBri et Lucas pendant le Noël du plâtre. Un parent, un frère ou une amie lève une carte de couleur derrière toi. Tu fais une passe contre le mur, tu regardes par-dessus l'épaule et tu annonces la couleur AVANT de recevoir. Dix passes.", score: 'Combien de bonnes couleurs sur 10', tip: 'Un regard court, puis les yeux reviennent sur le ballon.' },
-    en: { title: 'The eyes game', how: 'The game BriBri and Lucas invented during the Christmas of the plaster cast. A parent, a brother or a friend holds up a coloured card behind you. Pass against the wall, look over your shoulder and call the colour BEFORE you receive. Ten passes.', score: 'Correct colours out of 10', tip: 'A quick look, then your eyes come back to the ball.' },
+    fr: { title: 'Le jeu des yeux', how: "Le jeu inventé par Kaydoudou et Lucas pendant le Noël du plâtre. Un parent, un frère ou une amie lève une carte de couleur derrière toi. Tu fais une passe contre le mur, tu regardes par-dessus l'épaule et tu annonces la couleur AVANT de recevoir. Dix passes.", score: 'Combien de bonnes couleurs sur 10', tip: 'Un regard court, puis les yeux reviennent sur le ballon.' },
+    en: { title: 'The eyes game', how: 'The game Kaydoudou and Lucas invented during the Christmas of the plaster cast. A parent, a brother or a friend holds up a coloured card behind you. Pass against the wall, look over your shoulder and call the colour BEFORE you receive. Ten passes.', score: 'Correct colours out of 10', tip: 'A quick look, then your eyes come back to the ball.' },
   },
   {
     id: 'scan-epaules', kind: 'yeux', skill: 'scan', lesson: 17, target: 20, unit: 'passes', better: 'higher', minutes: 5, gear: ['ball', 'wall'],

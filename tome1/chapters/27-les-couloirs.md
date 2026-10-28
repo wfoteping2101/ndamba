@@ -28,7 +28,7 @@ Au milieu, Jordi Puig pousse une petite machine à roulettes qui crache de la pe
 
 Kaydoudou se met en position de départ, les bras tendus :
 
-« Dans le couloir numéro un, pour le Cameroun... KAYDOUDOU NGASSA ! »
+« Dans le couloir numéro un, pour le Cameroun... KAYDOUDOU, LE DAUPHIN DE DOUALA ! »
 
 Il plonge dans l'herbe et fait trois mètres de brasse. Nil applaudit. Nil n'applaudit jamais.
 

@@ -199,7 +199,7 @@ export const TOME1_TOC: TocEntry[] = [
   "title": "Le taureau",
   "part": 4,
   "pov": "Kaydoudou",
-  "summary": "Les Ngassa s'installent dans un village catalan entre les vignes et la mer, et Kaydoudou découvre à La Granja del Mar un drôle de jeu où l'on court après un ballon qu'on n'attrape jamais."
+  "summary": "La famille s'installe dans un village catalan entre les vignes et la mer, et Kaydoudou découvre à La Granja del Mar un drôle de jeu où l'on court après un ballon qu'on n'attrape jamais."
  },
  {
   "no": 26,

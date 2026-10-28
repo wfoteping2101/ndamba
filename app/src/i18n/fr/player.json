@@ -27,7 +27,7 @@
     "allLessons": "Toutes les leçons",
     "ritual": "prépare ton sac et couche-toi tôt la veille",
     "notebookEmpty": "Ta première page t'attend",
-    "notebookEmptyBody": "Écris ce que tu as appris aujourd'hui, comme Kaydoudou.",
+    "notebookEmptyBody": "Écris ce que tu as appris aujourd'hui, comme BriBri.",
     "statDaily": "Défis",
     "last7": "Mes 7 derniers jours"
   },
@@ -286,8 +286,8 @@
     "libraryTitle": "Tous les défis",
     "libraryBody": "{{n}} défis à faire seul, contre un mur ou avec quelques plots. Chacun travaille une compétence de la grille et renvoie à une Leçon du Ballon.",
     "moreLabel": "Aller plus loin",
-    "lessonsHint": "Les 40 pages du carnet de Kaydoudou",
-    "notebookHint": "Écris ce que tu apprends, comme Kaydoudou"
+    "lessonsHint": "Les 40 pages du carnet de BriBri",
+    "notebookHint": "Écris ce que tu apprends, comme BriBri"
   },
   "care": {
     "waterTitle": "Bois de l'eau",
@@ -359,9 +359,9 @@
   },
   "lessons": {
     "docTitle": "Leçons du Ballon",
-    "eyebrow": "Le carnet de Kaydoudou",
+    "eyebrow": "Le carnet de BriBri",
     "title": "Les Leçons du Ballon",
-    "subtitle": "À la fin de chaque chapitre de {{book}}, Kaydoudou écrit une leçon dans son carnet couvert de pagne. Les voici toutes les quarante, avec leur schéma.",
+    "subtitle": "À la fin de chaque chapitre de {{book}}, BriBri écrit une leçon dans son carnet couvert de pagne. Les voici toutes les quarante, avec leur schéma.",
     "progress": "{{n}} sur 40 comprises",
     "writing": "{{n}} chapitres écrits pour l'instant : les autres pages arrivent avec le livre.",
     "ofDay": "La leçon du jour (n° {{n}})",
@@ -427,13 +427,13 @@
     "eyebrow": "Le carnet du Njangi",
     "title": "Mon carnet du Njangi",
     "short": "Mon carnet du Njangi",
-    "subtitle": "Comme Kaydoudou, écris après chaque entraînement ou chaque match ce que tu as appris. Une page, une idée.",
+    "subtitle": "Comme BriBri, écris après chaque entraînement ou chaque match ce que tu as appris. Une page, une idée.",
     "new": "Nouvelle page",
     "newTitle": "Nouvelle page du carnet",
     "editTitle": "Modifier la page",
     "search": "Chercher dans mon carnet",
     "emptyTitle": "Ton carnet est encore vide",
-    "emptyBody": "Kaydoudou a commencé le sien avec une seule phrase : « Le ballon doit voyager. » Écris la tienne : ce que tu as appris aujourd'hui, une passe dont tu es fier ou fière, ce que tu veux travailler.",
+    "emptyBody": "BriBri a commencé le sien avec une seule phrase : « Le ballon doit voyager. » Écris la tienne : ce que tu as appris aujourd'hui, une passe dont tu es fier ou fière, ce que tu veux travailler.",
     "first": "Écrire ma première page",
     "fromLesson": "Partir de la leçon du jour (n° {{n}})",
     "printTitle": "Le carnet du Njangi de {{name}}",
@@ -459,7 +459,7 @@
       "learned": "Aujourd'hui, j'ai appris",
       "proud": "Une passe dont je suis fier ou fière :",
       "work": "Demain, je veux travailler",
-      "kaydoudou": "À ma place, Kaydoudou aurait"
+      "kaydoudou": "À ma place, BriBri aurait"
     },
     "fLesson": "Leçon liée",
     "fLessonHint": "Relie ta page à une Leçon du Ballon (facultatif).",

@@ -1,4 +1,4 @@
-// Kaydoudou's notebook look: a lined paper page with a margin, a wax-print (pagne) band
+// BriBri's notebook look: a lined paper page with a margin, a wax-print (pagne) band
 // drawn in SVG, and handwritten-feel headings in Fraunces italic.
 import { useEffect, useId, type CSSProperties, type ReactNode } from 'react'
 import { cx } from '../../../lib/util'
