@@ -3,9 +3,9 @@ numero: 39
 slug: l-avion-de-mami
 titre: L'avion de Mami
 partie: 5
-pov: Kaydoudou
+pov: BriBri
 resume: À soixante et onze ans, Mami Nyanga prend l'avion pour la première fois de sa vie et débarque à Londres avec une canne, un manteau trop grand et un sac plein de ndolé congelé. La veille de la finale, il reste une page à écrire dans le carnet.
-illustration: Plan moyen dans la cuisine étroite de Lewisham, la nuit, sous la lumière jaune d'une lampe basse ; la pluie raye la vitre noire. Mami Nyanga, petite et très droite, foulard rouge et jaune, robe de pagne, écrit lentement dans le carnet couvert de pagne vert et orange. Kaydoudou, raie dessinée à gauche, qui vient de lui tendre son stylo, tient le carnet ouvert à plat de ses deux mains et suit chaque lettre des yeux. En face, BriBri, à genoux sur sa chaise, afro douce, chaussettes rouge et jaune, fait tourner sous la lampe le vieux ballon rapiécé couvert de signatures. Émotion : le recueillement, une famille qui écrit la même phrase.
+illustration: Plan moyen dans la cuisine étroite de Lewisham, la nuit, sous la lumière jaune d'une lampe basse ; la pluie raye la vitre noire. Mami Nyanga, petite et très droite, foulard rouge et jaune, robe de pagne, écrit lentement dans le carnet couvert de pagne vert et orange. BriBri, raie dessinée à gauche, qui vient de lui tendre son stylo, tient le carnet ouvert à plat de ses deux mains et suit chaque lettre des yeux. En face, Kaydoudou, à genoux sur sa chaise, afro douce, chaussettes rouge et jaune, fait tourner sous la lampe le vieux ballon rapiécé couvert de signatures. Émotion : le recueillement, une famille qui écrit la même phrase.
 ---
 
 « Excuse me ! Excuse me ! »
@@ -28,9 +28,9 @@ Elle a refusé de s'asseoir.
 
 « MAMI ! »
 
-BriBri lui saute au cou si fort que la canne tombe. Papa la rattrape au vol.
+Kaydoudou lui saute au cou si fort que la canne tombe. Papa la rattrape au vol.
 
-Puis c'est le tour de Kaydoudou, et il a un choc. La dernière fois, à l'aéroport de Douala, il avait le nez dans son foulard. Maintenant, c'est le foulard qui arrive sous son menton.
+Puis c'est le tour de BriBri, et il a un choc. La dernière fois, à l'aéroport de Douala, il avait le nez dans son foulard. Maintenant, c'est le foulard qui arrive sous son menton.
 
 Mami recule pour le regarder. Elle touche sa raie du bout du doigt, comme avant.
 
@@ -38,19 +38,19 @@ Mami recule pour le regarder. Elle touche sa raie du bout du doigt, comme avant.
 
 Maman retire déjà son grand manteau gris. Elle le pose sur les épaules de Mami, par-dessus le pagne. Mami disparaît dedans jusqu'aux chevilles. On ne voit plus que le foulard, la canne et deux yeux très vifs.
 
-« Alors, Mami, l'avion ? » demande BriBri, qui sautille autour d'elle comme un cabri.
+« Alors, Mami, l'avion ? » demande Kaydoudou, qui sautille autour d'elle comme un cabri.
 
 « Au-dessus des nuages, il fait toujours beau. Soixante et onze ans que je regarde le ciel par en dessous, et personne ne me l'avait dit ! »
 
-« Tu n'as pas eu peur ? » demande Kaydoudou.
+« Tu n'as pas eu peur ? » demande BriBri.
 
 Elle le regarde par-dessus ses lunettes.
 
-« BriBri m'a raconté. Deux cents tonnes, c'est ça ? »
+« Kaydoudou m'a raconté. Deux cents tonnes, c'est ça ? »
 
-Kaydoudou devient tout rouge. BriBri étudie le plafond en sifflotant.
+BriBri devient tout rouge. Kaydoudou étudie le plafond en sifflotant.
 
-« J'ai prié pour le pilote, j'ai mangé le poulet, et j'ai dormi. » Mami tapote la joue de Kaydoudou. « Deux cents tonnes qui volent, parce que chaque morceau fait sa part. Ton avion, mon fils, c'est un njangi. »
+« J'ai prié pour le pilote, j'ai mangé le poulet, et j'ai dormi. » Mami tapote la joue de BriBri. « Deux cents tonnes qui volent, parce que chaque morceau fait sa part. Ton avion, mon fils, c'est un njangi. »
 
 Elle ouvre le sac à carreaux.
 
@@ -60,9 +60,9 @@ Tout au fond, il y a un petit pot de confiture vide. Dedans, une poignée de ter
 
 « Tonton Fokou m'a conduite à l'aéroport de Douala, dans le taxi de son cousin. Il a ramassé ça sous le manguier, sur votre terrain. Il a dit : pour qu'ils n'oublient pas sur quoi ils ont appris. »
 
-BriBri prend le pot à deux mains. Il le colle contre sa joue.
+Kaydoudou prend le pot à deux mains. Il le colle contre sa joue.
 
-Kaydoudou ne dit rien. Il ne peut pas.
+BriBri ne dit rien. Il ne peut pas.
 
 Dehors, Mami s'arrête. Elle regarde le ciel gris. Les taxis noirs qui avancent sans klaxonner. Un monsieur qui demande pardon à une valise qu'il vient de bousculer. La pluie qui tombe sans bruit.
 
@@ -82,7 +82,7 @@ Mami le regarde longtemps. De bas en haut. Ça prend du temps : il y a beaucoup 
 
 « C'est toi, le lion qui crie toute la journée ? »
 
-Kaydoudou traduit. Okafor éclate de son rire énorme, et le vestiaire avec lui.
+BriBri traduit. Okafor éclate de son rire énorme, et le vestiaire avec lui.
 
 Mami s'assoit sur l'unique chaise. Ses yeux s'arrêtent sur la petite ardoise accrochée au mur, celle qui suit l'équipe à chaque match. NJANGI. Elle sourit sans rien dire.
 
@@ -90,9 +90,9 @@ Mami s'assoit sur l'unique chaise. Ses yeux s'arrêtent sur la petite ardoise ac
 
 Les deux frères traduisent en même temps.
 
-« She says the box is green », dit Kaydoudou.
+« She says the box is green », dit BriBri.
 
-« She says the box is very very green, like a frog », dit BriBri.
+« She says the box is very very green, like a frog », dit Kaydoudou.
 
 « She didn't say frog ! »
 
@@ -118,7 +118,7 @@ Et il traduit. Phrase après phrase, lentement, comme on porte quelque chose de 
 
 « Forty years ago, she had no sewing machine, traduit Jaden. The njangi bought it for her. »
 
-Mami montre le ballon, sur les genoux de BriBri.
+Mami montre le ballon, sur les genoux de Kaydoudou.
 
 « C'est avec cette machine que j'ai recousu ce ballon. Alors ce ballon, c'est un enfant du njangi. Et ce mois-ci, vingt-deux femmes ont mis leur part dans la caisse verte pour que je traverse le ciel. » Elle pose la main sur son cœur. « Je ne suis pas venue seule. Elles sont toutes ici. »
 
@@ -138,7 +138,7 @@ Un très long silence. Près de la porte, Okafor s'essuie les yeux avec le pouce
 
 C'est la pluie.
 
-Il ne pleut pas dans le vestiaire. *Tonton Fokou accusait la poussière, Monsieur Lacombe le vent*, pense Kaydoudou. *Tous les entraîneurs ont la même maladie : la météo qui leur tombe dans les yeux.*
+Il ne pleut pas dans le vestiaire. *Tonton Fokou accusait la poussière, Monsieur Lacombe le vent*, pense BriBri. *Tous les entraîneurs ont la même maladie : la météo qui leur tombe dans les yeux.*
 
 Freddie lève la main. Ses oreilles sont déjà rouges.
 
@@ -160,7 +160,7 @@ Le ndolé a réchauffé dans la grande marmite. Les plantains ont grésillé dan
 
 « La voisine a frappé pour demander la recette ! » a ri Maman, avant de monter se coucher avec Papa. Il ne reste qu'eux trois, dans la cuisine étroite. Une lampe jaune, toute basse. La pluie qui raye la vitre noire.
 
-Kaydoudou ouvre le carnet de Tonton Fokou et tourne les pages. LE CŒUR, après le Cameroun. LA RAISON, après l'Amérique. LES YEUX, après la France. LA CARTE, après l'Espagne. Puis Londres : des cages, des bus, des lions qui ressemblent à des moutons. En haut de la première page, une place vide, gardée depuis septembre.
+BriBri ouvre le carnet de Tonton Fokou et tourne les pages. LE CŒUR, après le Cameroun. LA RAISON, après l'Amérique. LES YEUX, après la France. LA CARTE, après l'Espagne. Puis Londres : des cages, des bus, des lions qui ressemblent à des moutons. En haut de la première page, une place vide, gardée depuis septembre.
 
 Il écrit : LE SOUFFLE.
 
@@ -168,13 +168,13 @@ La saison n'est pas finie. Mais il sait.
 
 Vers la fin du carnet, il reste quelques pages blanches. Il les garde depuis Vinyamar sans savoir pourquoi. En haut, il écrit : LE NJANGI.
 
-En face, BriBri, à genoux sur sa chaise, fait tourner le ballon de Mami sous la lampe. Mami a mis ses lunettes au bout de son nez.
+En face, Kaydoudou, à genoux sur sa chaise, fait tourner le ballon de Mami sous la lampe. Mami a mis ses lunettes au bout de son nez.
 
 « Lis-moi chaque pièce à voix haute », dit-elle.
 
-« Le cœur, lit Kaydoudou en écrivant. On joue ensemble, chacun verse sa part. »
+« Le cœur, lit BriBri en écrivant. On joue ensemble, chacun verse sa part. »
 
-« La terre rouge, dit BriBri. Le sifflet qui fait houou. Ousmane qui s'envole. »
+« La terre rouge, dit Kaydoudou. Le sifflet qui fait houou. Ousmane qui s'envole. »
 
 « La raison. Chaque passe doit servir à quelque chose. »
 
@@ -182,7 +182,7 @@ En face, BriBri, à genoux sur sa chaise, fait tourner le ballon de Mami sous la
 
 « Les yeux. Voir avant de recevoir, reprendre vite. »
 
-« La moustache de Monsieur Lacombe », dit BriBri, et il prend une grosse voix : « Avant de recevoir, tu regardes ! »
+« La moustache de Monsieur Lacombe », dit Kaydoudou, et il prend une grosse voix : « Avant de recevoir, tu regardes ! »
 
 « La carte. Être au bon endroit, créer des triangles. »
 
@@ -190,7 +190,7 @@ En face, BriBri, à genoux sur sa chaise, fait tourner le ballon de Mami sous la
 
 « Le souffle. Posséder aussi quand ça brûle. »
 
-« La pluie. La neige de mars. Le ballon qui respire pour nous. » BriBri arrête le ballon. « Tu as oublié les chaussettes. Et les beignets de Madame Ekotto. »
+« La pluie. La neige de mars. Le ballon qui respire pour nous. » Kaydoudou arrête le ballon. « Tu as oublié les chaussettes. Et les beignets de Madame Ekotto. »
 
 « Les chaussettes ne sont pas une pièce du Njangi. »
 
@@ -200,7 +200,7 @@ Mami rit si fort que la lampe tremble. Puis elle tapote la page.
 
 « Et la devise ? »
 
-Kaydoudou écrit : « Le ballon doit voyager. »
+BriBri écrit : « Le ballon doit voyager. »
 
 Et il s'arrête, le stylo en l'air.
 
@@ -218,25 +218,25 @@ Il lui tend son stylo.
 
 Tout devient très calme.
 
-Kaydoudou tient le carnet ouvert, bien à plat, de ses deux mains. La lampe fait un rond jaune sur la page. En face, sous la lampe, le ballon tourne doucement entre les doigts de BriBri.
+BriBri tient le carnet ouvert, bien à plat, de ses deux mains. La lampe fait un rond jaune sur la page. En face, sous la lampe, le ballon tourne doucement entre les doigts de Kaydoudou.
 
 Mami se penche. Le stylo gratte le papier, lentement. Sous la phrase de Tonton Fokou, elle écrit de sa grande écriture de couturière. Des lettres rondes et serrées, comme des points de couture :
 
 « Mais il doit savoir où il va. »
 
-Kaydoudou suit chaque lettre des yeux. Il ne respire plus.
+BriBri suit chaque lettre des yeux. Il ne respire plus.
 
-Mami pose le stylo et tend les mains vers BriBri, qui lui donne le ballon. Elle le tourne doucement, comme le soir où elle l'a recousu, et lit les signatures en remuant les lèvres.
+Mami pose le stylo et tend les mains vers Kaydoudou, qui lui donne le ballon. Elle le tourne doucement, comme le soir où elle l'a recousu, et lit les signatures en remuant les lèvres.
 
 « Ousmane. Les mains. Mireille, la Gazelle. Le ballon doit voyager, Fokou. Diego. Tyler. Et cette petite flèche ? »
 
-« Marcus, dit BriBri. Elle demande : Why ? » Il montre du doigt, à toute vitesse. « Là, l'épi de blé de Lucas. L'étoile de Kenzo. La phrase d'Awa, que personne ne sait traduire. La moustache de Monsieur Lacombe. Ramon, en zigzag. Le cœur sur le i, c'est Laia. Le triangle, c'est Nil. Youssef, en deux alphabets. Les lettres énormes, Freddie. »
+« Marcus, dit Kaydoudou. Elle demande : Why ? » Il montre du doigt, à toute vitesse. « Là, l'épi de blé de Lucas. L'étoile de Kenzo. La phrase d'Awa, que personne ne sait traduire. La moustache de Monsieur Lacombe. Ramon, en zigzag. Le cœur sur le i, c'est Laia. Le triangle, c'est Nil. Youssef, en deux alphabets. Les lettres énormes, Freddie. »
 
 Et tout petit, à côté du pagne, Jaden, avec Maya et Grace.
 
 « Ce ballon a fait plus de voyages que moi, dit-elle enfin. Il a fait son njangi avec le monde entier. »
 
-« Et toi, Mami ? demande BriBri. Tu ne signes pas ? »
+« Et toi, Mami ? demande Kaydoudou. Tu ne signes pas ? »
 
 Mami lui rend le ballon.
 
@@ -244,7 +244,7 @@ Mami lui rend le ballon.
 
 * * *
 
-Cette nuit-là, Kaydoudou ne dort pas.
+Cette nuit-là, BriBri ne dort pas.
 
 À l'étage du dessous, dans le petit bureau de Papa, sur un lit prêté par les voisins, Mami ronfle doucement. Tac... tac... tac. Comme une machine à coudre au ralenti.
 
@@ -252,15 +252,15 @@ Il pense aux Néerlandais du FC Amstelland, invaincus depuis le début du tourno
 
 Dans le lit d'à côté, une voix chuchote.
 
-« Kayd. Tu dors ? »
+« Bri. Tu dors ? »
 
 « Non. »
 
-Il entend BriBri se tourner vers lui dans le noir.
+Il entend Kaydoudou se tourner vers lui dans le noir.
 
 « Demain, on fait le but du Njangi. Tout le monde touche. Promis ? »
 
-Kaydoudou regarde le plafond qu'il ne voit pas. En bas, la machine à coudre de Mami continue son tac... tac... tac.
+BriBri regarde le plafond qu'il ne voit pas. En bas, la machine à coudre de Mami continue son tac... tac... tac.
 
 « Promis. »
 
@@ -272,7 +272,7 @@ Kaydoudou regarde le plafond qu'il ne voit pas. En bas, la machine à coudre de 
 > - La carte (Espagne) : être au bon endroit, créer des triangles.
 > - Le souffle (Angleterre) : posséder aussi quand ça brûle.
 > « Le ballon doit voyager. » (Tonton Fokou) « Mais il doit savoir où il va. » (Mami, de sa main)
-> (BriBri : « Les chaussettes, c'est la sixième pièce. La secrète. »)
+> (Kaydoudou : « Les chaussettes, c'est la sixième pièce. La secrète. »)
 
 ```schema
 {

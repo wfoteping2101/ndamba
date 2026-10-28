@@ -30,7 +30,7 @@ Format 2:3 (1800 x 2700 px pour le master composé, 6 x 9 pouces).
 - **Zone titre en haut (30 % de la hauteur)** : ciel calme, sans détail. Le mot-marque **LIONCEAUX** en capitales grasses condensées blanches avec un contour sombre et une ombre portée chaude ; dessous, le numéro du tome en chiffres romains dorés (**I**).
 - **Les deux frères** au premier plan ou au plan moyen, de trois quarts pour que les deux visages restent lisibles, avec une interaction claire.
 - **Une destination** au loin, sur l'axe d'un chemin ou d'un portail.
-- **Bas de couverture** : une fine bande de pagne rouge et jaune, le titre du tome en serif blanc (« Le Ballon qui voyage »), la ligne « Une aventure de Kaydoudou & BriBri » et le nom de l'auteur entre deux filets dorés.
+- **Bas de couverture** : une fine bande de pagne rouge et jaune, le titre du tome en serif blanc (« Le Ballon qui voyage »), la ligne « Une aventure de BriBri & Kaydoudou » et le nom de l'auteur entre deux filets dorés.
 - Le lettrage est **composé séparément** (`tools/compose_cover.mjs`), jamais peint par le générateur, pour rester exact et modifiable.
 - Pour les tomes suivants : même typographie, même placement ; seuls changent le décor, la pose, la palette dominante et l'enjeu. Tome 1 : or du couchant, terre rouge, ciel turquoise. Les tomes 2 à 6 n'ont pas encore de couverture : on n'en fabrique pas.
 - Aucune critique, étoile, récompense ou recommandation inventée, ni sur la couverture ni ailleurs.

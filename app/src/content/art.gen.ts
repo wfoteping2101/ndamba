@@ -11,7 +11,7 @@ export const TOME1_ART: ArtImage[] = [
   "chapter": null,
   "part": null,
   "title": null,
-  "alt": "Couverture : Kaydoudou et BriBri courent vers nous à travers leur but en bambou, le ballon de Mami entre eux ; derrière eux, la route traverse le Cameroun, les États-Unis, la France, l'Espagne et l'Angleterre.",
+  "alt": "Couverture : BriBri et Kaydoudou courent vers nous à travers leur but en bambou, le ballon de Mami entre eux ; derrière eux, la route traverse le Cameroun, les États-Unis, la France, l'Espagne et l'Angleterre.",
   "w": 1200,
   "h": 1800,
   "thumb": true,
@@ -26,13 +26,13 @@ export const TOME1_ART: ArtImage[] = [
   "chapter": null,
   "part": null,
   "title": null,
-  "alt": "Kaydoudou et BriBri côte à côte : le grand frère calme au maillot vert numéro 8, le petit frère qui rebondit, une chaussette rouge et une chaussette jaune.",
+  "alt": "BriBri et Kaydoudou côte à côte : le grand frère calme au maillot vert numéro 8, le petit frère qui rebondit, une chaussette rouge et une chaussette jaune.",
   "w": 1024,
   "h": 1536,
   "thumb": true,
   "webp": true,
   "status": "approved",
-  "note": "Identity locked: shaved part on Kaydoudou's left, gap tooth, red sock right and yellow sock left, BriBri's head at his brother's chin."
+  "note": "Identity locked: shaved part on BriBri's left, gap tooth, red sock right and yellow sock left, Kaydoudou's head at his brother's chin."
  },
  {
   "file": "family",
@@ -71,7 +71,7 @@ export const TOME1_ART: ArtImage[] = [
   "chapter": 1,
   "part": 1,
   "title": "Le ballon rapiécé",
-  "alt": "BriBri pleure assis contre le grillage, le vieux ballon crevé dans les bras ; Kaydoudou pose la main sur son épaule.",
+  "alt": "Kaydoudou pleure assis contre le grillage, le vieux ballon crevé dans les bras ; BriBri pose la main sur son épaule.",
   "w": 1024,
   "h": 1536,
   "thumb": true,
@@ -86,13 +86,13 @@ export const TOME1_ART: ArtImage[] = [
   "chapter": 2,
   "part": 1,
   "title": "Le njangi de Mami",
-  "alt": "Mami Nyanga coud le carré de pagne rouge et jaune sur le ballon, BriBri penché sur son épaule, Kaydoudou dans l'embrasure.",
+  "alt": "Mami Nyanga coud le carré de pagne rouge et jaune sur le ballon, Kaydoudou penché sur son épaule, BriBri dans l'embrasure.",
   "w": 1024,
   "h": 1536,
   "thumb": true,
   "webp": true,
   "status": "approved",
-  "note": "Mami sews the wax patch, BriBri leans in, Kaydoudou in the doorway."
+  "note": "Mami sews the wax patch, Kaydoudou leans in, BriBri in the doorway."
  },
  {
   "file": "ch04",
@@ -101,7 +101,7 @@ export const TOME1_ART: ArtImage[] = [
   "chapter": 4,
   "part": 1,
   "title": "La boue et le pagne",
-  "alt": "Bataille de boue sur le terrain de Bonamoussadi : BriBri lance de la boue en riant, Ousmane se protège, Tonton Fokou fait semblant d'être fâché.",
+  "alt": "Bataille de boue sur le terrain de Bonamoussadi : Kaydoudou lance de la boue en riant, Ousmane se protège, Tonton Fokou fait semblant d'être fâché.",
   "w": 1024,
   "h": 1536,
   "thumb": true,
@@ -116,13 +116,13 @@ export const TOME1_ART: ArtImage[] = [
   "chapter": 5,
   "part": 1,
   "title": "La passe polie et la passe utile",
-  "alt": "Papa dessine un réseau de ronds et de flèches ; Kaydoudou suit une flèche du doigt.",
+  "alt": "Papa dessine un réseau de ronds et de flèches ; BriBri suit une flèche du doigt.",
   "w": 1024,
   "h": 1536,
   "thumb": true,
   "webp": true,
   "status": "approved",
-  "note": "Papa draws the network, Kaydoudou follows the arrow, BriBri's socks in the air on the sofa."
+  "note": "Papa draws the network, BriBri follows the arrow, Kaydoudou's socks in the air on the sofa."
  },
  {
   "file": "ch07",
@@ -131,7 +131,7 @@ export const TOME1_ART: ArtImage[] = [
   "chapter": 7,
   "part": 1,
   "title": "Le carnet de Tonton Fokou",
-  "alt": "Sous le manguier, Tonton Fokou tend le carnet couvert de pagne à Kaydoudou ; BriBri essaie de voir par-dessus son épaule.",
+  "alt": "Sous le manguier, Tonton Fokou tend le carnet couvert de pagne à BriBri ; Kaydoudou essaie de voir par-dessus son épaule.",
   "w": 1024,
   "h": 1536,
   "thumb": true,
@@ -152,7 +152,7 @@ export const TOME1_ART: ArtImage[] = [
   "thumb": true,
   "webp": true,
   "status": "approved",
-  "note": "Owen 4, Kaydoudou 8, the green 11 steals the ball in the mud. The match ball carries a red and yellow patch like Mami's ball: acceptable, noted."
+  "note": "Owen 4, BriBri 8, the green 11 steals the ball in the mud. The match ball carries a red and yellow patch like Mami's ball: acceptable, noted."
  },
  {
   "file": "ch11c",
@@ -161,13 +161,13 @@ export const TOME1_ART: ArtImage[] = [
   "chapter": 11,
   "part": 2,
   "title": "Soixante-dix pour cent",
-  "alt": "Dans la voiture, Papa regarde Kaydoudou dans le rétroviseur ; BriBri serre le ballon de Mami et observe son grand frère.",
+  "alt": "Dans la voiture, Papa regarde BriBri dans le rétroviseur ; Kaydoudou serre le ballon de Mami et observe son grand frère.",
   "w": 1200,
   "h": 800,
   "thumb": true,
   "webp": true,
   "status": "approved",
-  "note": "Papa in the beanie in the mirror; part on Kaydoudou's left; red sock right, yellow sock left; patched ball on BriBri's lap."
+  "note": "Papa in the beanie in the mirror; part on BriBri's left; red sock right, yellow sock left; patched ball on Kaydoudou's lap."
  },
  {
   "file": "ch11d",
@@ -176,7 +176,7 @@ export const TOME1_ART: ArtImage[] = [
   "chapter": 11,
   "part": 2,
   "title": "Soixante-dix pour cent",
-  "alt": "Dans la salle vide, Marcus Bell tend sa tablette à Kaydoudou, qui sourit pour la première fois depuis samedi.",
+  "alt": "Dans la salle vide, Marcus Bell tend sa tablette à BriBri, qui sourit pour la première fois depuis samedi.",
   "w": 1200,
   "h": 800,
   "thumb": true,
@@ -262,7 +262,7 @@ export const ART_DIRECTION: ArtSection[] = [
    },
    {
     "type": "li",
-    "text": "Bas de couverture : une fine bande de pagne rouge et jaune, le titre du tome en serif blanc (« Le Ballon qui voyage »), la ligne « Une aventure de Kaydoudou & BriBri » et le nom de l'auteur entre deux filets dorés."
+    "text": "Bas de couverture : une fine bande de pagne rouge et jaune, le titre du tome en serif blanc (« Le Ballon qui voyage »), la ligne « Une aventure de BriBri & Kaydoudou » et le nom de l'auteur entre deux filets dorés."
    },
    {
     "type": "li",

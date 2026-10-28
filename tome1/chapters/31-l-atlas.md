@@ -3,28 +3,28 @@ numero: 31
 slug: l-atlas
 titre: L'Atlas
 partie: 4
-pov: BriBri
+pov: Kaydoudou
 resume: Au Torneig de la Costa, les frères affrontent en demi-finale une académie venue du Maroc, et découvrent qu'on peut jouer contre sa propre famille.
-illustration: Plan moyen, fin de journée de mai au bord d'un terrain, la mer bleue et des drapeaux de plusieurs pays qui claquent au vent derrière. BriBri, petite afro, une chaussette rouge et une chaussette jaune, porte le maillot rouge à étoile verte de l'Académie de l'Atlas, trop grand pour lui. Il tient le vieux ballon de Mami, rapiécé de pagne rouge et jaune et couvert de signatures, pendant que Youssef, capitaine marocain de treize ans, cheveux bouclés, sourcils épais, en maillot sable doré du Costa Daurada, y écrit son nom au feutre, la langue entre les dents. Lumière orangée, sourires.
+illustration: Plan moyen, fin de journée de mai au bord d'un terrain, la mer bleue et des drapeaux de plusieurs pays qui claquent au vent derrière. Kaydoudou, petite afro, une chaussette rouge et une chaussette jaune, porte le maillot rouge à étoile verte de l'Académie de l'Atlas, trop grand pour lui. Il tient le vieux ballon de Mami, rapiécé de pagne rouge et jaune et couvert de signatures, pendant que Youssef, capitaine marocain de treize ans, cheveux bouclés, sourcils épais, en maillot sable doré du Costa Daurada, y écrit son nom au feutre, la langue entre les dents. Lumière orangée, sourires.
 ---
 
 « Dix-sept ! »
 
-BriBri tourne sur lui-même, le doigt en l'air.
+Kaydoudou tourne sur lui-même, le doigt en l'air.
 
-« Dix-sept drapeaux, Kayd ! J'ai compté deux fois ! »
+« Dix-sept drapeaux, Bri ! J'ai compté deux fois ! »
 
 Clac, clac, clac. Sur le front de mer, le vent les fait claquer comme un public qui applaudit.
 
-BriBri met la main devant sa bouche, comme un micro.
+Kaydoudou met la main devant sa bouche, comme un micro.
 
 « Mesdames et messieurs ! Le rouge et blanc de Gênes ! L'orange de Rotterdam ! Le vert et rouge de Lisbonne ! Et le blanc et violet du Real Club Atlético Castellana, de Madrid ! »
 
-« Tu cries », dit Kaydoudou.
+« Tu cries », dit BriBri.
 
 « Je ne crie pas. Je présente. »
 
-Kaydoudou lit le programme à voix haute. « Torneig de la Costa. Pendant cinq jours, Vinyamar et les villages voisins deviennent la capitale du football des jeunes. Les équipes dorment dans les hôtels de la plage et mangent toutes ensemble, sous la grande tente blanche. »
+BriBri lit le programme à voix haute. « Torneig de la Costa. Pendant cinq jours, Vinyamar et les villages voisins deviennent la capitale du football des jeunes. Les équipes dorment dans les hôtels de la plage et mangent toutes ensemble, sous la grande tente blanche. »
 
 « Donc on va manger avec les Italiens ? »
 
@@ -32,21 +32,21 @@ Kaydoudou lit le programme à voix haute. « Torneig de la Costa. Pendant cinq j
 
 Au bout de la rangée, il y a un drapeau tout seul. Rouge, avec une étoile verte à cinq branches.
 
-BriBri s'arrête net, comme devant une vitrine de gâteaux.
+Kaydoudou s'arrête net, comme devant une vitrine de gâteaux.
 
-« Kaydoudou. » Sa voix devient toute petite. « Le Maroc. »
+« BriBri. » Sa voix devient toute petite. « Le Maroc. »
 
-« L'Académie de l'Atlas, dit Kaydoudou. Ils sont arrivés hier, en car, après le bateau depuis Tanger. »
+« L'Académie de l'Atlas, dit BriBri. Ils sont arrivés hier, en car, après le bateau depuis Tanger. »
 
 Le soir, devant leur hôtel, on les entend jusque dans la rue. Boum-tak, boum-tak !
 
-« C'est quoi, ce tambour ? » demande BriBri.
+« C'est quoi, ce tambour ? » demande Kaydoudou.
 
-« Une darbouka, dit Kaydoudou. Un tambour en forme de sablier. »
+« Une darbouka, dit BriBri. Un tambour en forme de sablier. »
 
 Sur le balcon, toute l'équipe chante et frappe dans ses mains.
 
-BriBri écoute une heure sur le trottoir. Puis ses pieds se mettent à danser tout seuls. Puis un garçon se penche par-dessus la rambarde.
+Kaydoudou écoute une heure sur le trottoir. Puis ses pieds se mettent à danser tout seuls. Puis un garçon se penche par-dessus la rambarde.
 
 « Hé, toi ! Monte ! »
 
@@ -54,11 +54,11 @@ Il a treize ans, des cheveux bouclés coupés court et des sourcils si épais qu
 
 « Il le garde même pour dormir », rigole un coéquipier.
 
-« Salam, dit le garçon en serrant la main de BriBri. Je m'appelle Youssef. Je viens de Fès. Toi, tu es le Camerounais qui danse dans la rue ? »
+« Salam, dit le garçon en serrant la main de Kaydoudou. Je m'appelle Youssef. Je viens de Fès. Toi, tu es le Camerounais qui danse dans la rue ? »
 
 « Non. Moi, je suis le Camerounais qui danse partout. »
 
-Youssef éclate de rire, et BriBri le sait tout de suite : ils vont être amis.
+Youssef éclate de rire, et Kaydoudou le sait tout de suite : ils vont être amis.
 
 Son français chante. « Avec mes copains, je parle darija, l'arabe du Maroc. Et l'espagnol, je l'ai appris à la télé. »
 
@@ -66,11 +66,11 @@ Son français chante. « Avec mes copains, je parle darija, l'arabe du Maroc. Et
 
 « Salam, c'est bonjour. Khouya, c'est mon frère. Et zwin, c'est beau. »
 
-BriBri les range aussitôt dans le camfrancatañol, son mélange de langues. Au petit déjeuner, il salue son frère.
+Kaydoudou les range aussitôt dans le camfrancatañol, son mélange de langues. Au petit déjeuner, il salue son frère.
 
 « Bon dia, khouya, ça mout, ¡qué zwin ! »
 
-Kaydoudou pose sa tartine. « C'est quelle langue, ça ? »
+BriBri pose sa tartine. « C'est quelle langue, ça ? »
 
 « La mienne. »
 
@@ -80,23 +80,23 @@ Kaydoudou pose sa tartine. « C'est quelle langue, ça ? »
 
 * * *
 
-BriBri commente tout, comme Radio à Bonamoussadi.
+Kaydoudou commente tout, comme Radio à Bonamoussadi.
 
-« Premier tour, match nul contre Gênes ! Leur gardien a des gants orange et il arrête tout ! Même ma talonnade, mesdames et messieurs, une talonnade de musée ! On devrait interdire ce gardien ! Deuxième tour, victoire contre Lisbonne, 2-0 ! Un but de Pol, un but de Laia sur une remise de Kaydoudou ! Zéro défaite, mesdames et messieurs ! »
+« Premier tour, match nul contre Gênes ! Leur gardien a des gants orange et il arrête tout ! Même ma talonnade, mesdames et messieurs, une talonnade de musée ! On devrait interdire ce gardien ! Deuxième tour, victoire contre Lisbonne, 2-0 ! Un but de Pol, un but de Laia sur une remise de BriBri ! Zéro défaite, mesdames et messieurs ! »
 
-« Et pendant ce temps, ajoute Kaydoudou, l'Atlas bat Rotterdam. Et la Castellana écrase tout le monde. »
+« Et pendant ce temps, ajoute BriBri, l'Atlas bat Rotterdam. Et la Castellana écrase tout le monde. »
 
 Le soir, sous la tente, un monsieur prend le micro. Les fourchettes s'arrêtent.
 
 « Demi-finales ! Castellana contre Rotterdam ! Et Costa Daurada contre l'Académie de l'Atlas ! »
 
-À l'autre bout de la tente, Youssef se lève. Il cherche BriBri des yeux et pose la main sur son cœur. BriBri fait pareil. Entre les deux, Kaydoudou regarde l'un, puis l'autre, avec une drôle de tête.
+À l'autre bout de la tente, Youssef se lève. Il cherche Kaydoudou des yeux et pose la main sur son cœur. Kaydoudou fait pareil. Entre les deux, BriBri regarde l'un, puis l'autre, avec une drôle de tête.
 
 Plus tard, sur le terrat de la maison, les frères ne jonglent pas. Ils regardent la mer.
 
-« C'est bizarre, dit Kaydoudou. Je ne sais pas si j'ai envie de les battre. »
+« C'est bizarre, dit BriBri. Je ne sais pas si j'ai envie de les battre. »
 
-« Moi non plus. » BriBri serre ses genoux contre lui. « C'est comme jouer contre Ousmane. »
+« Moi non plus. » Kaydoudou serre ses genoux contre lui. « C'est comme jouer contre Ousmane. »
 
 * * *
 
@@ -104,13 +104,13 @@ Le matin de la demi-finale, Youssef vient s'asseoir avec eux. Il ne rigole pas, 
 
 « Vous savez où j'étais, le soir de Boston ? Le quart de finale de la Coupe du monde, Maroc contre France ? »
 
-« Non », dit BriBri.
+« Non », dit Kaydoudou.
 
 « Chez mon oncle, à Fès. Trente personnes dans un salon, les cousins assis par terre. Et on a perdu 2-0. » Il arrache un brin d'herbe. « À la fin, tout le monde pleurait. Même mon grand-père, qui ne pleure jamais. Mais c'étaient des larmes fières. Tu comprends ? On était tristes et fiers en même temps. »
 
-« Nous, on a regardé votre match à Waldorf, en Amérique, dit Kaydoudou. Papa est resté debout devant le canapé du début à la fin. »
+« Nous, on a regardé votre match à Waldorf, en Amérique, dit BriBri. Papa est resté debout devant le canapé du début à la fin. »
 
-« Le Cameroun n'était pas qualifié, ajoute BriBri. Alors ce soir-là, on était tous marocains. »
+« Le Cameroun n'était pas qualifié, ajoute Kaydoudou. Alors ce soir-là, on était tous marocains. »
 
 Youssef les regarde longtemps.
 
@@ -118,29 +118,29 @@ Youssef les regarde longtemps.
 
 Personne ne parle. Dans les tribunes, le public arrive.
 
-« Regarde, dit Kaydoudou. Tout Vinyamar est là. Et Avi Ramon est guéri. »
+« Regarde, dit BriBri. Tout Vinyamar est là. Et Avi Ramon est guéri. »
 
 Le vieil homme est assis au bout d'un banc, une écharpe au cou.
 
-« Une écharpe ? s'étonne BriBri. Il fait trente degrés ! »
+« Une écharpe ? s'étonne Kaydoudou. Il fait trente degrés ! »
 
 En face, des dizaines de familles agitent des drapeaux rouges. Des tambours, des youyous qui montent dans le ciel. You-you-you-you !
 
 « Elles viennent de Reus, de Tarragone, de toute la côte, dit Youssef. Ce sont nos familles. »
 
-La gorge de BriBri se serre. *On dirait l'aéroport de Douala, le jour du départ. On dirait un mariage.*
+La gorge de Kaydoudou se serre. *On dirait l'aéroport de Douala, le jour du départ. On dirait un mariage.*
 
 « Je me sens en famille », souffle-t-il.
 
-« Alors on va jouer contre la famille, dit Kaydoudou. Et la famille, ça joue fort. »
+« Alors on va jouer contre la famille, dit BriBri. Et la famille, ça joue fort. »
 
 * * *
 
 Et la famille joue fort.
 
-Dès le coup d'envoi, les rouges de l'Atlas se jettent sur le ballon comme des abeilles sur un pot de miel. Une touche, une talonnade, un petit pont. Leur numéro 10, Ilyas, est minuscule. Il a des pieds de magicien et le même sourire que BriBri.
+Dès le coup d'envoi, les rouges de l'Atlas se jettent sur le ballon comme des abeilles sur un pot de miel. Une touche, une talonnade, un petit pont. Leur numéro 10, Ilyas, est minuscule. Il a des pieds de magicien et le même sourire que Kaydoudou.
 
-« C'est mon jumeau ! » crie BriBri.
+« C'est mon jumeau ! » crie Kaydoudou.
 
 « Alors arrête ton jumeau ! » crie Laia.
 
@@ -152,17 +152,17 @@ Le Costa Daurada accélère. Mais à ce jeu-là, l'Atlas est meilleur. Les passe
 
 Vingtième minute. Ilyas fait un une-deux avec Youssef, puis un autre, et glisse le ballon sous le gardien. 0-1. Les youyous montent jusqu'au ciel.
 
-À la mi-temps, BriBri attend le crayon de Jordi. Le triangle. Il ne vient pas.
+À la mi-temps, Kaydoudou attend le crayon de Jordi. Le triangle. Il ne vient pas.
 
 Jordi Puig prend une bouteille d'eau et la penche tout doucement au-dessus de l'herbe. Une goutte. Une goutte. Une goutte. Puis il la renverse d'un coup. Splaaatch !
 
-« Ells estimen la velocitat, dit-il de sa voix très douce. Ils aiment la vitesse. Alors donnez-leur de la lenteur. » Il regarde Kaydoudou et Nil. « Faites tourner le ballon derrière. Doucement. Lent, lent. La lenteur va les rendre fous. Ils vont monter le chercher, tous. Et quand ils seront montés... »
+« Ells estimen la velocitat, dit-il de sa voix très douce. Ils aiment la vitesse. Alors donnez-leur de la lenteur. » Il regarde BriBri et Nil. « Faites tourner le ballon derrière. Doucement. Lent, lent. La lenteur va les rendre fous. Ils vont monter le chercher, tous. Et quand ils seront montés... »
 
 Il frappe dans ses mains. Clac !
 
 « Vite. »
 
-BriBri ferme les yeux. Il entend la machine à coudre de Mami. Il les rouvre d'un coup.
+Kaydoudou ferme les yeux. Il entend la machine à coudre de Mami. Il les rouvre d'un coup.
 
 « C'est la machine à coudre de Mami ! »
 
@@ -170,13 +170,13 @@ Laia fronce les sourcils. « La quoi ? »
 
 « Au début, Mami appuie à peine sur la pédale. La roue tourne doucement : tac... tac... tac... Et puis elle enfonce tout. VRRROUM ! L'aiguille file comme une moto-taxi ! Lent, lent, vite ! Ce n'est pas une tactique, c'est une musique ! »
 
-Kaydoudou sourit en coin. « D'accord. On joue la machine à coudre. »
+BriBri sourit en coin. « D'accord. On joue la machine à coudre. »
 
 * * *
 
 Seconde mi-temps. Le Costa Daurada joue au ralenti.
 
-Nil passe à Kaydoudou. Kaydoudou fait sa pausa, la semelle sur le ballon, et rend à Nil. Nil donne à l'autre défenseur central. Retour à Kaydoudou. Tac. Tac. Tac.
+Nil passe à BriBri. BriBri fait sa pausa, la semelle sur le ballon, et rend à Nil. Nil donne à l'autre défenseur central. Retour à BriBri. Tac. Tac. Tac.
 
 « Allez ! crie quelqu'un dans la tribune. On s'ennuie ! »
 
@@ -186,13 +186,13 @@ Ilyas avance de cinq mètres. Puis Youssef. Puis tout leur milieu, comme un chat
 
 Derrière eux, l'espace s'ouvre.
 
-Kaydoudou lève deux doigts. VRRROUM ! La passe part d'un coup, entre les lignes, vers Pol, qui remet en une touche pour Laia, lancée comme une flèche. Elle frappe du gauche. Chhh. 1-1 !
+BriBri lève deux doigts. VRRROUM ! La passe part d'un coup, entre les lignes, vers Pol, qui remet en une touche pour Laia, lancée comme une flèche. Elle frappe du gauche. Chhh. 1-1 !
 
-« La machine à coudre ! hurle BriBri. Elle marche ! »
+« La machine à coudre ! hurle Kaydoudou. Elle marche ! »
 
 Mais l'Atlas ne lâche rien. Ilyas touche le poteau. Bong ! Youssef oblige le gardien à plonger. Le match devient superbe. Serré. Chaque minute dure une heure.
 
-Pendant un arrêt de jeu, Youssef reprend son souffle à côté de BriBri.
+Pendant un arrêt de jeu, Youssef reprend son souffle à côté de Kaydoudou.
 
 « Pourquoi tu souris tout le temps ? »
 
@@ -200,19 +200,19 @@ Pendant un arrêt de jeu, Youssef reprend son souffle à côté de BriBri.
 
 « Je ne sais pas non plus. »
 
-Jamais BriBri n'a joué un match aussi beau.
+Jamais Kaydoudou n'a joué un match aussi beau.
 
 68e minute. Plus que deux minutes.
 
-Nil récupère un ballon devant sa surface. Il ne se précipite pas. Il passe à Kaydoudou.
+Nil récupère un ballon devant sa surface. Il ne se précipite pas. Il passe à BriBri.
 
-« Une », souffle BriBri.
+« Une », souffle Kaydoudou.
 
-Kaydoudou rend à Nil.
+BriBri rend à Nil.
 
 « Deux. »
 
-Nil repasse à Kaydoudou, encore plus lentement, comme s'il avait tout l'après-midi.
+Nil repasse à BriBri, encore plus lentement, comme s'il avait tout l'après-midi.
 
 « Trois. »
 
@@ -220,13 +220,13 @@ Fatigués de courir après le vent, les rouges montent une dernière fois, tous 
 
 Tac... tac... tac...
 
-Et BriBri est déjà parti. Il a vu le trou derrière leur latéral. Il a vu son frère lever le menton. Entre eux, ça a toujours suffi.
+Et Kaydoudou est déjà parti. Il a vu le trou derrière leur latéral. Il a vu son frère lever le menton. Entre eux, ça a toujours suffi.
 
 *Vas-y, Mami. Appuie sur la pédale.*
 
 Quatre.
 
-Tout ralentit. BriBri entend son souffle, un tambour très loin, ses crampons dans l'herbe. Le ballon de Kaydoudou traverse la moitié du terrain, long et tendu, en tournant sur lui-même dans la lumière. Il tombe pile dans sa course, à vingt mètres du but. Devant, il n'y a que le gardien.
+Tout ralentit. Kaydoudou entend son souffle, un tambour très loin, ses crampons dans l'herbe. Le ballon de BriBri traverse la moitié du terrain, long et tendu, en tournant sur lui-même dans la lumière. Il tombe pile dans sa course, à vingt mètres du but. Devant, il n'y a que le gardien.
 
 Pas de dribble. Pas de geste. Un contrôle vers l'avant, un regard, et le ballon glissé à ras de terre, au premier poteau.
 
@@ -234,31 +234,31 @@ Chhh.
 
 2-1.
 
-BriBri file au poteau de corner faire la danse de Roger Milla. Et là, incroyable : les familles marocaines applaudissent aussi. Un vieux monsieur en djellaba blanche tape dans ses mains en riant. Une dame lance un youyou rien que pour lui.
+Kaydoudou file au poteau de corner faire la danse de Roger Milla. Et là, incroyable : les familles marocaines applaudissent aussi. Un vieux monsieur en djellaba blanche tape dans ses mains en riant. Une dame lance un youyou rien que pour lui.
 
 Trente secondes plus tard, l'arbitre siffle la fin.
 
 * * *
 
-Youssef pleure un peu, mais c'est lui qui arrive le premier. Il enlève son maillot rouge à étoile verte et le tend à BriBri.
+Youssef pleure un peu, mais c'est lui qui arrive le premier. Il enlève son maillot rouge à étoile verte et le tend à Kaydoudou.
 
 « Échange ? »
 
-BriBri lui donne le sien, couleur sable doré. Ils les enfilent tout de suite. Celui de Youssef descend jusqu'aux genoux de BriBri.
+Kaydoudou lui donne le sien, couleur sable doré. Ils les enfilent tout de suite. Celui de Youssef descend jusqu'aux genoux de Kaydoudou.
 
-« On dirait une robe », rigole Kaydoudou.
+« On dirait une robe », rigole BriBri.
 
 « Zwin, dit Youssef. Très zwin. »
 
 Le soleil descend. La mer est encore bleue, mais la lumière devient orange. Derrière eux, les drapeaux de tous les pays claquent au vent.
 
-BriBri court chercher le ballon de Mami et un feutre dans le sac de Kaydoudou.
+Kaydoudou court chercher le ballon de Mami et un feutre dans le sac de BriBri.
 
 « Tu dois signer. Attends, je t'explique. » Il parle à toute vitesse. « Ça, c'est le pagne de Mami, à Bafoussam. Elle l'a cousu elle-même. Là, c'est Tonton Fokou. Ici, Ousmane et Mireille, du Cameroun. Diego et Tyler, en Amérique. Lucas et Kenzo, en France... »
 
-Youssef écoute tout. Puis il cherche une place libre entre les signatures. BriBri tient le ballon bien droit contre son ventre. Youssef écrit son nom en lettres françaises, puis en lettres arabes, juste à côté, la langue entre les dents. Ils sourient tous les deux.
+Youssef écoute tout. Puis il cherche une place libre entre les signatures. Kaydoudou tient le ballon bien droit contre son ventre. Youssef écrit son nom en lettres françaises, puis en lettres arabes, juste à côté, la langue entre les dents. Ils sourient tous les deux.
 
-Youssef rebouche le feutre et pose la main sur l'épaule de BriBri.
+Youssef rebouche le feutre et pose la main sur l'épaule de Kaydoudou.
 
 « En 2030, on se retrouve. Même équipe ou pas, c'est l'Afrique. »
 
@@ -274,18 +274,18 @@ Pol siffle entre ses dents. « Ils ont gagné tous leurs matchs. Et ils n'ont pa
 
 À l'autre bout de la tente, les Madrilènes mangent en silence. Survêtements blanc et violet, tous coiffés pareil, droits comme des soldats. Leur entraîneur parle au téléphone en regardant sa montre. Aucun d'eux ne danse.
 
-BriBri, toujours dans le maillot de Youssef, les observe longtemps.
+Kaydoudou, toujours dans le maillot de Youssef, les observe longtemps.
 
-« Kayd, chuchote-t-il. Ils n'ont pas l'air de s'amuser. »
+« Bri, chuchote-t-il. Ils n'ont pas l'air de s'amuser. »
 
-« Non, dit Kaydoudou. Ils ont l'air de gagner. »
+« Non, dit BriBri. Ils ont l'air de gagner. »
 
 > [!CARNET] Leçon du Ballon n°31 : Lent, lent, VITE
 > On fait circuler lentement, derrière, pour donner envie à l'adversaire de monter.
 > Quand il monte, l'espace s'ouvre dans son dos.
 > Alors on accélère d'un coup : une seule passe, longue et rapide.
 > Le changement de rythme est une arme. C'est comme la machine à coudre de Mami.
-> (BriBri : « Tac... tac... tac... VRRROUM. »)
+> (Kaydoudou : « Tac... tac... tac... VRRROUM. »)
 
 ```schema
 {

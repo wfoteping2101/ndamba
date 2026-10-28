@@ -48,7 +48,7 @@
       "L'entraîneur fige le jeu une fois par série pour montrer les intervalles."
     ],
     "measure": "Lignes traversées par série et par équipe, et part des actions avec au moins une ligne traversée qui finissent par un tir. Ce comptage nourrit le sous-indice Progression de l'Indice Njangi.",
-    "story": "Tonton Fokou le dit à Kaydoudou en lui tendant une mangue : « Une passe sur le côté, c'est poli. Une passe qui traverse, c'est utile. »"
+    "story": "Tonton Fokou le dit à BriBri en lui tendant une mangue : « Une passe sur le côté, c'est poli. Une passe qui traverse, c'est utile. »"
   },
   "en": {
     "title": "Lines Broken",
@@ -86,7 +86,7 @@
       "The coach freezes play once per set to show the gaps."
     ],
     "measure": "Lines broken per set and per team, and the share of moves with at least one line broken that end in a shot. This count feeds the Progression sub-index of the Njangi Index.",
-    "story": "Tonton Fokou tells Kaydoudou as he hands him a mango: \"A pass sideways is polite. A pass that goes through is useful.\""
+    "story": "Tonton Fokou tells BriBri as he hands him a mango: \"A pass sideways is polite. A pass that goes through is useful.\""
   },
   "diagram": {
     "view": "grid", "w": 40, "h": 30,

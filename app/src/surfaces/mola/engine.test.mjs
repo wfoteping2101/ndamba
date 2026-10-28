@@ -117,9 +117,9 @@ check('name sentence', { n: parseName("Bonjour, je m'appelle Aïcha Ngono") }, {
 check('age U-17', { a: parseAgeGroup('les U-17') }, { a: 'U17' })
 check('format 7 contre 7', { f: parseFormat('on joue à 7 contre 7') }, { f: 7 })
 check('format bare', { f: parseFormat('11', true) }, { f: 11 })
-check('player list', { l: parsePlayerList('1. Ousmane Bello (GK)\n8 Kaydoudou\nBriBri 7, Samuel Owona - attaquant') }, { l: [{ name: 'Ousmane Bello', number: 1, position: 'GK' }, { name: 'Kaydoudou', number: 8 }, { name: 'BriBri', number: 7 }, { name: 'Samuel Owona', position: 'ST' }] })
+check('player list', { l: parsePlayerList('1. Ousmane Bello (GK)\n8 BriBri\nKaydoudou 7, Samuel Owona - attaquant') }, { l: [{ name: 'Ousmane Bello', number: 1, position: 'GK' }, { name: 'BriBri', number: 8 }, { name: 'Kaydoudou', number: 7 }, { name: 'Samuel Owona', position: 'ST' }] })
 
-check('player list with position after comma', { l: parsePlayerList('1. Ousmane Bello (GK)\n8 Kaydoudou\n9 Samuel Owona, attaquant') }, { l: [{ name: 'Ousmane Bello', number: 1, position: 'GK' }, { name: 'Kaydoudou', number: 8 }, { name: 'Samuel Owona', number: 9, position: 'ST' }] })
+check('player list with position after comma', { l: parsePlayerList('1. Ousmane Bello (GK)\n8 BriBri\n9 Samuel Owona, attaquant') }, { l: [{ name: 'Ousmane Bello', number: 1, position: 'GK' }, { name: 'BriBri', number: 8 }, { name: 'Samuel Owona', number: 9, position: 'ST' }] })
 
 // ---- every level, from U8 to the professionals ----
 const noClub = (p) => ({ ...p, club: p.club ?? null, name: p.name ?? null })
@@ -145,7 +145,7 @@ check('national team (en)', { a: parseAgeGroup('I coach the national team') }, {
 check('U17 national team keeps its age', { a: parseAgeGroup("l'équipe nationale U17") }, { a: 'U17' })
 
 // ---- onboarding: a professional coach introduces themselves ----
-const base = { ...emptyDraft(), lang: 'fr', name: 'Daniel Ngassa' }
+const base = { ...emptyDraft(), lang: 'fr', name: 'Daniel Mbarga' }
 const pro = absorb(base, 'role', "Je suis entraîneur principal d'une équipe de Ligue 1 au Cameroun")
 check('onboarding pro coach', pro.draft, { role: 'coach', ageGroup: 'Pro', format: 11, country: 'CM' })
 check('onboarding pro coach: next question is the team', { s: nextStep(pro.draft) }, { s: 'team' })

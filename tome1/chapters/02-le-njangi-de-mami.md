@@ -3,14 +3,14 @@ numero: 2
 slug: le-njangi-de-mami
 titre: Le njangi de Mami
 partie: 1
-pov: BriBri
-resume: Pour les vacances de la Toussaint, les frères montent à Bafoussam, chez Mami Nyanga et sa machine à coudre. BriBri y découvre une drôle de caisse que les femmes du quartier se passent de main en main.
-illustration: Plan moyen, intérieur d'une petite pièce aux murs ocre, fin d'après-midi, une lumière dorée entre par une fenêtre sans vitre et fait briller la poussière. Mami Nyanga (68 ans, petite, très droite, foulard en pagne noué sur la tête) est assise à une vieille machine à coudre noire à pédale, le pied sur la grille de fer, les lunettes au bout du nez. Elle coud un carré de pagne rouge et jaune sur un vieux ballon de cuir brun. Penché sur son épaule, BriBri (10 ans, petite afro, chaussettes rouge et jaune dépareillées) retient son souffle, les yeux immenses. Dans l'embrasure de la porte, Kaydoudou (raie fine à gauche) regarde, un crayon derrière l'oreille.
+pov: Kaydoudou
+resume: Pour les vacances de la Toussaint, les frères montent à Bafoussam, chez Mami Nyanga et sa machine à coudre. Kaydoudou y découvre une drôle de caisse que les femmes du quartier se passent de main en main.
+illustration: Plan moyen, intérieur d'une petite pièce aux murs ocre, fin d'après-midi, une lumière dorée entre par une fenêtre sans vitre et fait briller la poussière. Mami Nyanga (68 ans, petite, très droite, foulard en pagne noué sur la tête) est assise à une vieille machine à coudre noire à pédale, le pied sur la grille de fer, les lunettes au bout du nez. Elle coud un carré de pagne rouge et jaune sur un vieux ballon de cuir brun. Penché sur son épaule, Kaydoudou (10 ans, petite afro, chaussettes rouge et jaune dépareillées) retient son souffle, les yeux immenses. Dans l'embrasure de la porte, BriBri (raie fine à gauche) regarde, un crayon derrière l'oreille.
 ---
 
-« Je ne suis pas malade, déclare BriBri. C'est mon petit déjeuner qui veut voir le paysage. »
+« Je ne suis pas malade, déclare Kaydoudou. C'est mon petit déjeuner qui veut voir le paysage. »
 
-Le car prend un virage. Et le petit déjeuner de BriBri voit le paysage, pour la troisième fois depuis Douala, par la fenêtre ouverte.
+Le car prend un virage. Et le petit déjeuner de Kaydoudou voit le paysage, pour la troisième fois depuis Douala, par la fenêtre ouverte.
 
 Toute la rangée éclate de rire.
 
@@ -20,19 +20,19 @@ Toute la rangée éclate de rire.
 
 « Je ne suis pas un bébé, j'ai dix ans. Et mon ventre est un artiste. »
 
-« Ton ventre n'aime pas les virages, dit Kaydoudou, le nez collé à l'autre fenêtre. Il préfère les lignes droites. »
+« Ton ventre n'aime pas les virages, dit BriBri, le nez collé à l'autre fenêtre. Il préfère les lignes droites. »
 
 « Mon ventre n'aime pas qu'on lui dise où aller. Comme moi. »
 
 Maman lui essuie le front en riant.
 
-« Donne-moi ce sac, BriBri. Tu vas l'écraser. »
+« Donne-moi ce sac, Kaydoudou. Tu vas l'écraser. »
 
 « Non. C'est le blessé. Je l'emmène chez le docteur. »
 
 Dans le sac, il y a le ballon de Mami. Ouvert, tout mou.
 
-*Tiens bon*, pense BriBri.
+*Tiens bon*, pense Kaydoudou.
 
 La route monte entre des collines si vertes qu'on les croirait peintes. À chaque arrêt, des vendeurs courent jusqu'aux fenêtres.
 
@@ -40,19 +40,19 @@ La route monte entre des collines si vertes qu'on les croirait peintes. À chaqu
 
 « Bâtons de manioc ! Arachides grillées ! »
 
-Papa achète des prunes violettes, cuites dans la braise. BriBri en mange quatre.
+Papa achète des prunes violettes, cuites dans la braise. Kaydoudou en mange quatre.
 
-« Ce n'est peut-être pas une idée géniale », dit Kaydoudou.
+« Ce n'est peut-être pas une idée géniale », dit BriBri.
 
-« Je suis en vacances », répond BriBri, la bouche toute violette.
+« Je suis en vacances », répond Kaydoudou, la bouche toute violette.
 
 Au virage suivant, les prunes voient le paysage, elles aussi.
 
 Puis le brouillard tombe d'un coup. Épais, blanc, mouillé, comme si quelqu'un avait renversé un grand bol de lait sur le monde. Les arbres deviennent des fantômes.
 
-BriBri colle son nez à la vitre. Il oublie son ventre.
+Kaydoudou colle son nez à la vitre. Il oublie son ventre.
 
-« Kaydoudou ! On est DANS les nuages ! »
+« BriBri ! On est DANS les nuages ! »
 
 * * *
 
@@ -60,13 +60,13 @@ BriBri colle son nez à la vitre. Il oublie son ventre.
 
 Mami Nyanga traverse la cour, les bras grands ouverts. Elle est petite, mais si droite qu'elle paraît plus grande que tout le monde. Un foulard en pagne sur la tête, et un rire immense, qui commence dans son ventre et finit dans les arbres.
 
-Elle les serre si fort que BriBri entend craquer quelque chose. Son dos, peut-être. Ou celui de Mami.
+Elle les serre si fort que Kaydoudou entend craquer quelque chose. Son dos, peut-être. Ou celui de Mami.
 
-« Kaydoudou ! Tu ressembles à ton grand-père au même âge ! Et toi, BriBri, ces joues ! Je peux les manger ? »
+« BriBri ! Tu ressembles à ton grand-père au même âge ! Et toi, Kaydoudou, ces joues ! Je peux les manger ? »
 
 « Pas aujourd'hui, Mami. J'ai une urgence. »
 
-Ça sent le ndolé et le plantain grillé. Mais BriBri n'a pas faim. Il tend le sac à deux mains.
+Ça sent le ndolé et le plantain grillé. Mais Kaydoudou n'a pas faim. Il tend le sac à deux mains.
 
 « Mami. Il est mort. »
 
@@ -106,7 +106,7 @@ Le monsieur colle deux rustines, des petits pansements de caoutchouc, en sifflot
 
 « Rien du tout. Pour Maman Nyanga, c'est gratuit. »
 
-« Merci, docteur ! » crie BriBri.
+« Merci, docteur ! » crie Kaydoudou.
 
 Il rentre en courant.
 
@@ -116,11 +116,11 @@ Mais Mami a posé le cuir à plat sur la table. Elle secoue la tête.
 
 « Regarde la peau, mon fils. »
 
-BriBri regarde. Il manque un morceau. Un trou grand comme sa main.
+Kaydoudou regarde. Il manque un morceau. Un trou grand comme sa main.
 
 « On ne peut pas recoudre du vide », dit Mami.
 
-BriBri sent son cœur tomber dans ses chaussettes. La rouge et la jaune.
+Kaydoudou sent son cœur tomber dans ses chaussettes. La rouge et la jaune.
 
 « Alors c'est fini ? Il va mourir quand même ? »
 
@@ -142,7 +142,7 @@ En fin d'après-midi, la petite pièce aux murs ocre devient toute dorée. La lu
 
 Sous la fenêtre, il y a la machine à coudre. Noire, avec des fleurs dorées presque effacées. En dessous, une grande pédale en grille de fer.
 
-« Elle a quel âge, ta machine ? » demande BriBri.
+« Elle a quel âge, ta machine ? » demande Kaydoudou.
 
 « Quarante ans. Elle a cousu toutes les robes de mariage du quartier. Et tous les pagnes du njangi. »
 
@@ -154,15 +154,15 @@ Tac-tac-tac-tac.
 
 Régulière comme un cœur.
 
-BriBri se penche sur l'épaule de Mami. Il retient son souffle. Ses yeux sont immenses. C'est la première fois de sa vie qu'il reste immobile plus de trois minutes.
+Kaydoudou se penche sur l'épaule de Mami. Il retient son souffle. Ses yeux sont immenses. C'est la première fois de sa vie qu'il reste immobile plus de trois minutes.
 
-*Respire pas, BriBri*, pense-t-il. *Respire pas.*
+*Respire pas, Kaydoudou*, pense-t-il. *Respire pas.*
 
-Sur le pas de la porte, Kaydoudou regarde aussi, un crayon derrière l'oreille.
+Sur le pas de la porte, BriBri regarde aussi, un crayon derrière l'oreille.
 
-« Elle va trop vite, chuchote BriBri. Elle va se piquer. »
+« Elle va trop vite, chuchote Kaydoudou. Elle va se piquer. »
 
-« Elle fait ça depuis quarante ans », chuchote Kaydoudou.
+« Elle fait ça depuis quarante ans », chuchote BriBri.
 
 « Moi, je joue au foot depuis sept ans, et je rate encore des passes. »
 
@@ -180,7 +180,7 @@ Enfin, Mami coupe le dernier fil avec ses dents. Elle relève ses lunettes.
 
 Mais le ballon n'est plus tout à fait rond. Là où le pagne est cousu, il fait une petite bosse, comme une joue gonflée.
 
-« Il ne roulera plus jamais tout droit », dit Kaydoudou, inquiet.
+« Il ne roulera plus jamais tout droit », dit BriBri, inquiet.
 
 Mami lui tend le ballon.
 
@@ -194,9 +194,9 @@ Le lendemain, les garçons du quartier viennent les chercher.
 
 Leur terrain est une pente d'herbe entre deux champs de maïs. Un but en haut, un but en bas. Leur ballon ? Des sachets plastiques ficelés avec des élastiques.
 
-BriBri tend la main vers le ballon de Mami.
+Kaydoudou tend la main vers le ballon de Mami.
 
-« Non, dit Kaydoudou. Il est convalescent. »
+« Non, dit BriBri. Il est convalescent. »
 
 « Il est quoi ? »
 
@@ -208,7 +208,7 @@ BriBri tend la main vers le ballon de Mami.
 
 En fin de journée, le brouillard revient. Il avale le but d'en haut. Puis les joueurs. Puis tout.
 
-BriBri, dans l'équipe du bas, part en dribble vers le haut. Un garçon : dribblé. Un deuxième : dribblé. Une chèvre qui passe par là : dribblée aussi.
+Kaydoudou, dans l'équipe du bas, part en dribble vers le haut. Un garçon : dribblé. Un deuxième : dribblé. Une chèvre qui passe par là : dribblée aussi.
 
 « Mêêê ! » proteste la chèvre.
 
@@ -216,7 +216,7 @@ Et puis plus rien.
 
 Du blanc partout. Plus de but. Plus de partenaires.
 
-« Hé ! crie BriBri. Il est où, le haut ? »
+« Hé ! crie Kaydoudou. Il est où, le haut ? »
 
 Il s'arrête, le ballon de sachets sous le pied. Son cœur cogne. Il entend des pieds dans l'herbe mouillée. Une respiration, tout près. Ami ? Ennemi ?
 
@@ -228,13 +228,13 @@ Il s'arrête, le ballon de sachets sous le pied. Son cœur cogne. Il entend des 
 
 Et puis une voix qu'il reconnaîtrait entre mille.
 
-« BriBri ! À gauche ! »
+« Kaydoudou ! À gauche ! »
 
-Kaydoudou.
+BriBri.
 
-BriBri ne voit rien. Mais il n'a pas besoin de voir. Il frappe vers la voix de son frère.
+Kaydoudou ne voit rien. Mais il n'a pas besoin de voir. Il frappe vers la voix de son frère.
 
-« Je l'ai ! crie Kaydoudou. Joseph, devant toi ! »
+« Je l'ai ! crie BriBri. Joseph, devant toi ! »
 
 « Je l'ai ! Plus haut ! Plus haut ! »
 
@@ -246,19 +246,19 @@ Puis un grand cri de joie explose quelque part dans le blanc.
 
 « BUUUT ! »
 
-« Qui a marqué ? » crie BriBri.
+« Qui a marqué ? » crie Kaydoudou.
 
 « Moi ! Ernest ! » répond une voix invisible.
 
-BriBri saute quand même. Il crie quand même. C'est le premier but de sa vie qu'il fête sans savoir à quoi il ressemble.
+Kaydoudou saute quand même. Il crie quand même. C'est le premier but de sa vie qu'il fête sans savoir à quoi il ressemble.
 
 * * *
 
 Le dimanche, après l'église, la cour se remplit de femmes. Toutes dans le même pagne bleu et blanc, avec des bébés dans le dos et des plats sous des torchons.
 
-« Elles sont combien ? » chuchote BriBri.
+« Elles sont combien ? » chuchote Kaydoudou.
 
-« Vingt-deux, chuchote Kaydoudou. C'est le njangi des femmes du quartier. Mami est leur présidente depuis trente ans. »
+« Vingt-deux, chuchote BriBri. C'est le njangi des femmes du quartier. Mami est leur présidente depuis trente ans. »
 
 « Pourquoi elles ont toutes le même pagne ? »
 
@@ -266,7 +266,7 @@ Le dimanche, après l'église, la cour se remplit de femmes. Toutes dans le mêm
 
 Mami s'assoit au milieu, devant une petite table. Dessus, un gros cahier noir et une caisse en métal peinte en vert.
 
-On chante d'abord. BriBri tape dans ses mains au bon moment.
+On chante d'abord. Kaydoudou tape dans ses mains au bon moment.
 
 Puis la trésorière, Mama Kemadjou, grande et maigre, ouvre le cahier noir.
 
@@ -280,13 +280,13 @@ Une autre enveloppe.
 
 « Merci, ma sœur. »
 
-« Regarde, chuchote Kaydoudou. Personne ne saute son tour. Même la vieille dame au bâton. »
+« Regarde, chuchote BriBri. Personne ne saute son tour. Même la vieille dame au bâton. »
 
 Elle traverse toute la cour pour déposer son enveloppe elle-même.
 
-« C'est quoi, cet argent ? » chuchote BriBri.
+« C'est quoi, cet argent ? » chuchote Kaydoudou.
 
-« Chacune verse sa part, chuchote Kaydoudou. Et ce mois-ci, toute la caisse va à une seule personne. »
+« Chacune verse sa part, chuchote BriBri. Et ce mois-ci, toute la caisse va à une seule personne. »
 
 « Laquelle ? »
 
@@ -300,15 +300,15 @@ Maman Tchinda pleure. Puis elle rit. Puis les deux à la fois.
 
 « À table, mes sœurs ! » crie Mama Kemadjou.
 
-On ouvre les plats. BriBri mange des beignets jusqu'à ce que son ventre d'artiste demande pitié.
+On ouvre les plats. Kaydoudou mange des beignets jusqu'à ce que son ventre d'artiste demande pitié.
 
-Le soir, la cour sent encore le beignet. BriBri s'assoit à côté de Mami sur le banc.
+Le soir, la cour sent encore le beignet. Kaydoudou s'assoit à côté de Mami sur le banc.
 
 « Mami. Le mois prochain, la caisse va à quelqu'un d'autre ? »
 
 « À Mama Fotso. Pour l'école de ses enfants. Puis à une autre. Chacune touche une fois. Chacune verse toujours. »
 
-BriBri réfléchit. En silence. Ça ne lui arrive presque jamais.
+Kaydoudou réfléchit. En silence. Ça ne lui arrive presque jamais.
 
 « Et si quelqu'un garde l'argent pour lui ? »
 
@@ -320,7 +320,7 @@ Elle attend un peu.
 
 « Mais écoute bien. Si l'argent tourne, tourne, tourne, et ne sert jamais à rien, il meurt aussi. Pas de boutique, pas d'école, pas de toit. Rien. L'argent du njangi doit circuler. Et il doit savoir où il va. »
 
-Sur la chaise d'à côté, Kaydoudou fait semblant de lire. Il relève la tête d'un coup.
+Sur la chaise d'à côté, BriBri fait semblant de lire. Il relève la tête d'un coup.
 
 « C'est le ballon. »
 
@@ -328,17 +328,17 @@ Sur la chaise d'à côté, Kaydoudou fait semblant de lire. Il relève la tête 
 
 « Le njangi, c'est comme le ballon. Chacun verse sa passe. Le ballon passe par tout le monde. Et à la fin, quelqu'un touche la caisse. »
 
-BriBri fronce les sourcils. Très fort. Comme quelqu'un qui ne comprend rien du tout.
+Kaydoudou fronce les sourcils. Très fort. Comme quelqu'un qui ne comprend rien du tout.
 
 « Tu veux dire qu'on doit donner de l'argent au gardien ? »
 
-Kaydoudou lève les yeux au ciel. Mami éclate de son grand rire.
+BriBri lève les yeux au ciel. Mami éclate de son grand rire.
 
-BriBri attend qu'ils aient fini. Puis il dit, l'air de rien :
+Kaydoudou attend qu'ils aient fini. Puis il dit, l'air de rien :
 
 « Et la boutique de Maman Tchinda, c'est le but. Et le cousin dans le brouillard, c'était Maman Tchinda. »
 
-Kaydoudou reste la bouche ouverte.
+BriBri reste la bouche ouverte.
 
 « Ça, c'est la meilleure phrase de ta vie. »
 
@@ -346,11 +346,11 @@ Kaydoudou reste la bouche ouverte.
 
 Mami va chercher le ballon rapiécé. Sous l'ampoule de la cour, le carré de pagne brille comme un petit soleil cousu.
 
-Elle le pose dans les mains de BriBri. Puis elle referme les mains de Kaydoudou par-dessus. Quatre mains tiennent le ballon ensemble.
+Elle le pose dans les mains de Kaydoudou. Puis elle referme les mains de BriBri par-dessus. Quatre mains tiennent le ballon ensemble.
 
 « Maintenant, ce ballon a une mission, dit-elle. Il doit voyager. »
 
-BriBri hoche la tête, très sérieux.
+Kaydoudou hoche la tête, très sérieux.
 
 « Voyager où ? À Bépanda ? Jusqu'à Yaoundé ? »
 
@@ -358,7 +358,7 @@ Mami sourit.
 
 « Ça, mon fils, c'est le ballon qui le sait. »
 
-Personne ne peut deviner. Ni BriBri, ni Kaydoudou, ni même Mami, qui sait pourtant tant de choses.
+Personne ne peut deviner. Ni Kaydoudou, ni BriBri, ni même Mami, qui sait pourtant tant de choses.
 
 Ce vieux ballon va aller beaucoup, beaucoup plus loin que Yaoundé.
 
@@ -367,7 +367,7 @@ Ce vieux ballon va aller beaucoup, beaucoup plus loin que Yaoundé.
 > Au foot, chacun verse sa passe. Le ballon passe par tout le monde. À la fin, quelqu'un touche le but.
 > Si quelqu'un garde la caisse, le njangi meurt.
 > Mais une passe qui ne va nulle part ne sert à rien non plus.
-> (BriBri : « Et dans le brouillard, on passe à la voix. »)
+> (Kaydoudou : « Et dans le brouillard, on passe à la voix. »)
 
 ```schema
 {

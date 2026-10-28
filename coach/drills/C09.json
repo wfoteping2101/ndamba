@@ -48,7 +48,7 @@
       "L'attaquant marque en gardant le ballon 5 secondes, sans obligation de sortir."
     ],
     "measure": "Ballons gardés puis joués vers un appui par séquence de 30 secondes, et pertes de balle. Compter aussi les fautes de mains : objectif zéro.",
-    "story": "À Londres, le ballon est brûlant ; Kaydoudou écrit que son corps est un mur, genoux pliés, bras ouvert, et BriBri ajoute qu'il est un excellent mur."
+    "story": "À Londres, le ballon est brûlant ; BriBri écrit que son corps est un mur, genoux pliés, bras ouvert, et Kaydoudou ajoute qu'il est un excellent mur."
   },
   "en": {
     "title": "The Shielding Box",
@@ -86,7 +86,7 @@
       "The attacker scores by keeping the ball for 5 seconds, with no need to get out."
     ],
     "measure": "Balls kept then played to a support per 30-second turn, and balls lost. Also count hand fouls: target zero.",
-    "story": "In London the ball is red hot; Kaydoudou writes that his body is a wall, knees bent, arm out, and BriBri adds that he is an excellent wall."
+    "story": "In London the ball is red hot; BriBri writes that his body is a wall, knees bent, arm out, and Kaydoudou adds that he is an excellent wall."
   },
   "diagram": {
     "view": "grid", "w": 8, "h": 8,

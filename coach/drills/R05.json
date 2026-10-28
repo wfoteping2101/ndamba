@@ -48,7 +48,7 @@
       "L'entraîneur lève la couleur plus tôt, avant la passe."
     ],
     "measure": "Pourcentage d'annonces justes par série et nombre de pertes de balle. Un joueur qui annonce juste et perd moins de ballons a gagné une habitude de scan.",
-    "story": "Le poignet dans le plâtre, BriBri invente avec Lucas le jeu des cartes de couleur montrées dans le dos ; ce rondo en est la version de terrain."
+    "story": "Le poignet dans le plâtre, Kaydoudou invente avec Lucas le jeu des cartes de couleur montrées dans le dos ; ce rondo en est la version de terrain."
   },
   "en": {
     "title": "The Eyes Rondo",
@@ -86,7 +86,7 @@
       "The coach lifts the colour earlier, before the pass."
     ],
     "measure": "Share of correct calls per set and number of balls lost. A player who calls correctly and loses fewer balls has built a scanning habit.",
-    "story": "With his wrist in plaster, BriBri and Lucas invent the game of colour cards shown behind your back; this rondo is the pitch version of it."
+    "story": "With his wrist in plaster, Kaydoudou and Lucas invent the game of colour cards shown behind your back; this rondo is the pitch version of it."
   },
   "diagram": {
     "view": "grid", "w": 16, "h": 16,

@@ -48,7 +48,7 @@
       "L'entraîneur fige le premier ballon de chaque série pour montrer le losange."
     ],
     "measure": "Points par série et nombre de passes base vers pointe tentées. Un losange vivant tente la passe qui traverse au moins une fois toutes les 8 passes.",
-    "story": "Comme les trois amis que Kaydoudou dessine autour du porteur dans son carnet, le losange ne laisse jamais le ballon seul."
+    "story": "Comme les trois amis que BriBri dessine autour du porteur dans son carnet, le losange ne laisse jamais le ballon seul."
   },
   "en": {
     "title": "The Diamond",
@@ -86,7 +86,7 @@
       "The coach freezes the first ball of each set to show the diamond."
     ],
     "measure": "Points per set and number of base-to-tip passes attempted. A living diamond tries the splitting pass at least once every 8 passes.",
-    "story": "Like the three friends Kaydoudou draws around the ball carrier in his notebook, the diamond never leaves the ball alone."
+    "story": "Like the three friends BriBri draws around the ball carrier in his notebook, the diamond never leaves the ball alone."
   },
   "diagram": {
     "view": "grid", "w": 30, "h": 25,

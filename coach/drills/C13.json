@@ -47,7 +47,7 @@
       "L'entraîneur donne le signal de départ de C."
     ],
     "measure": "Combinaisons réussies (C reçoit lancé, dans sa course) à chaque étape, et part des buts à 3 points en 3 contre 2. Viser au moins un but sur trois après une course du troisième homme.",
-    "story": "« J'ai été le défenseur cent fois. Je n'ai jamais vu Laia », avoue BriBri : le troisième homme arrive toujours là où le défenseur ne regarde pas."
+    "story": "« J'ai été le défenseur cent fois. Je n'ai jamais vu Laia », avoue Kaydoudou : le troisième homme arrive toujours là où le défenseur ne regarde pas."
   },
   "en": {
     "title": "Three-Player Pattern Play",
@@ -84,7 +84,7 @@
       "The coach gives C the signal to go."
     ],
     "measure": "Successful combinations (C receives on the run, in stride) at each stage, and the share of 3-point goals in the 3 v 2. Aim for at least one goal in three after a third-man run.",
-    "story": "\"I was the defender a hundred times. I never saw Laia,\" BriBri admits: the third man always arrives where the defender is not looking."
+    "story": "\"I was the defender a hundred times. I never saw Laia,\" Kaydoudou admits: the third man always arrives where the defender is not looking."
   },
   "diagram": {
     "view": "grid", "w": 30, "h": 20,

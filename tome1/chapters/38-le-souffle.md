@@ -3,20 +3,20 @@ numero: 38
 slug: le-souffle
 titre: Le souffle
 partie: 5
-pov: BriBri
-resume: Une demi-finale sous la neige de mars, contre des Allemands qui ne fatiguent jamais. Quand les jambes de BriBri prennent feu, il découvre que le ballon peut respirer à sa place.
-illustration: Plan moyen sur un terrain du nord de Londres, un soir glacial de mars, sous les projecteurs ; de gros flocons tombent en biais dans la lumière blanche. Kaydoudou, numéro 8 sur son maillot vert sombre aux manches blanches, raie à gauche, le ballon au pied, lève deux doigts. BriBri, petit, afro douce poudrée de neige, chaussettes dépareillées rouge et jaune, vient de lui donner le ballon après avoir attiré sur lui deux grands défenseurs allemands en bleu marine ; il démarre déjà dans leur dos, un grand sourire aux lèvres, le souffle formant un nuage devant sa bouche. Émotion : la fatigue changée en joie, le une-deux du Njangi sous la neige.
+pov: Kaydoudou
+resume: Une demi-finale sous la neige de mars, contre des Allemands qui ne fatiguent jamais. Quand les jambes de Kaydoudou prennent feu, il découvre que le ballon peut respirer à sa place.
+illustration: Plan moyen sur un terrain du nord de Londres, un soir glacial de mars, sous les projecteurs ; de gros flocons tombent en biais dans la lumière blanche. BriBri, numéro 8 sur son maillot vert sombre aux manches blanches, raie à gauche, le ballon au pied, lève deux doigts. Kaydoudou, petit, afro douce poudrée de neige, chaussettes dépareillées rouge et jaune, vient de lui donner le ballon après avoir attiré sur lui deux grands défenseurs allemands en bleu marine ; il démarre déjà dans leur dos, un grand sourire aux lèvres, le souffle formant un nuage devant sa bouche. Émotion : la fatigue changée en joie, le une-deux du Njangi sous la neige.
 ---
 
 « Il neige ! »
 
-BriBri saute du car, lève la tête vers le ciel noir et ouvre la bouche.
+Kaydoudou saute du car, lève la tête vers le ciel noir et ouvre la bouche.
 
 Un flocon tombe sur sa langue.
 
 « Même goût qu'à Waldorf, quand j'avais dix ans ! Rien du tout. Un rien glacé. »
 
-« Tu as presque quatorze ans, soupire Kaydoudou. Et tu manges encore la neige. »
+« Tu as presque quatorze ans, soupire BriBri. Et tu manges encore la neige. »
 
 « La neige anglaise, je ne l'avais pas encore goûtée. C'est pour la science. »
 
@@ -26,11 +26,11 @@ Un flocon tombe sur sa langue.
 
 Demi-finale de la Coupe des Académies, au nord de Londres, tout au bout d'une longue ligne de métro.
 
-« Regarde ! s'écrie BriBri. Une vraie tribune, avec un toit ! Et les projecteurs, ils sont hauts comme des immeubles ! Et les gens ont déjà de la neige sur les épaules ! »
+« Regarde ! s'écrie Kaydoudou. Une vraie tribune, avec un toit ! Et les projecteurs, ils sont hauts comme des immeubles ! Et les gens ont déjà de la neige sur les épaules ! »
 
 Au vestiaire, Freddie lit le thermomètre : « Minus one ! » Moins un degré. Il enfile deux paires de gants, l'une sur l'autre.
 
-« Tu ressembles à un homard », dit BriBri.
+« Tu ressembles à un homard », dit Kaydoudou.
 
 « Un homard qui arrête tout », répond Freddie en faisant claquer ses pinces.
 
@@ -38,15 +38,15 @@ Au vestiaire, Freddie lit le thermomètre : « Minus one ! » Moins un degré. I
 
 « Le TSV Rheinhafen, annonce Arjun. Une académie allemande. Ils viennent d'une ville de port, au bord du Rhin. »
 
-BriBri les regarde s'échauffer.
+Kaydoudou les regarde s'échauffer.
 
 « Ils sont grands. Tous ! Ils courent en ligne, les genoux qui montent en même temps. Boum. Boum. Boum. Quand ils sprintent, le sol tremble. On dirait une armée de robots. »
 
 « Ils ne sont jamais fatigués, eux, murmure Arjun. Ce sont des machines. »
 
-« Les machines aussi tombent en panne, dit Kaydoudou. Il suffit de trouver le bouton. »
+« Les machines aussi tombent en panne, dit BriBri. Il suffit de trouver le bouton. »
 
-« Et il est où, le bouton ? » demande BriBri.
+« Et il est où, le bouton ? » demande Kaydoudou.
 
 « Je ne sais pas encore. »
 
@@ -60,11 +60,11 @@ Dans le couloir, les frères sortent le ballon de Mami. Tête, cuisse, pied. Le 
 
 « Eight, nine, TEN ! » compte Freddie.
 
-Le numéro 6 allemand s'arrête devant BriBri. Le plus grand de tous, avec des épaules immenses.
+Le numéro 6 allemand s'arrête devant Kaydoudou. Le plus grand de tous, avec des épaules immenses.
 
 « Nice ball, small boy, dit-il en anglais. Joli ballon. Très vieux. Comme ton équipe. »
 
-« Lui, c'est le Frigo, chuchote BriBri. Le deuxième de ma vie, après le gardien du Maryland. Grand, froid, et il fait du bruit. »
+« Lui, c'est le Frigo, chuchote Kaydoudou. Le deuxième de ma vie, après le gardien du Maryland. Grand, froid, et il fait du bruit. »
 
 Poing contre poing. Main sur le cœur.
 
@@ -88,7 +88,7 @@ Trois maillots bleu marine sur chaque défenseur vert, comme des pigeons sur une
 
 « Pas ta faute, Octopus ! » répond Tom.
 
-BriBri sent le froid entrer en lui. Pas le froid de la neige. L'autre.
+Kaydoudou sent le froid entrer en lui. Pas le froid de la neige. L'autre.
 
 Kingsbridge veut répondre en courant.
 
@@ -98,9 +98,9 @@ Mais chaque ballon repris est reperdu en dix secondes.
 
 « Doucement ! crie Okafor depuis son banc. Calm ! »
 
-« On joue à la patate brûlante ! » râle BriBri en passant près de son frère. « Personne ne veut le garder ! »
+« On joue à la patate brûlante ! » râle Kaydoudou en passant près de son frère. « Personne ne veut le garder ! »
 
-Juste avant la mi-temps, Kaydoudou glisse une passe parfaite dans le dos de la défense. Jaden arrive lancé, comme un train qui entre en gare. Plat du pied, sans contrôle. Bam !
+Juste avant la mi-temps, BriBri glisse une passe parfaite dans le dos de la défense. Jaden arrive lancé, comme un train qui entre en gare. Plat du pied, sans contrôle. Bam !
 
 1-1.
 
@@ -114,11 +114,11 @@ Mais au vestiaire, personne n'a l'air d'avoir gagné.
 
 À la pause, on n'entend que des respirations. Hiii-haaa. Hiii-haaa.
 
-BriBri est assis par terre, le dos contre un casier. Theo a la tête sous une serviette. Tom se masse les mollets en grimaçant.
+Kaydoudou est assis par terre, le dos contre un casier. Theo a la tête sous une serviette. Tom se masse les mollets en grimaçant.
 
-« Mes jambes ne sont plus à moi, souffle BriBri. Quelqu'un a allumé un feu de bois sous mes cuisses. Et mes poumons font le bruit d'un vieil accordéon. »
+« Mes jambes ne sont plus à moi, souffle Kaydoudou. Quelqu'un a allumé un feu de bois sous mes cuisses. Et mes poumons font le bruit d'un vieil accordéon. »
 
-« Les miens aussi », dit Kaydoudou.
+« Les miens aussi », dit BriBri.
 
 « Freddie ? Une blague ? »
 
@@ -130,17 +130,17 @@ Okafor s'accroupit au milieu d'eux.
 
 Il ne dit rien d'autre. Il les laisse chercher.
 
-BriBri ferme les yeux.
+Kaydoudou ferme les yeux.
 
 Il entend la place de Vinyamar, le dimanche. Il voit Avi Ramon sous les platanes.
 
-BriBri rouvre les yeux d'un coup.
+Kaydoudou rouvre les yeux d'un coup.
 
 « Le ballon n'est jamais fatigué », dit-il.
 
-Tout le monde le regarde. Kaydoudou fronce les sourcils.
+Tout le monde le regarde. BriBri fronce les sourcils.
 
-BriBri se relève. Ses jambes crient. Il ne les écoute pas.
+Kaydoudou se relève. Ses jambes crient. Il ne les écoute pas.
 
 « En Espagne, il y a un vieux monsieur, Avi Ramon. Soixante-dix-neuf ans. Le dimanche, il joue au rondo sur la place du village, au milieu des enfants. Il ne court jamais. Il bouge à peine. Et il ne perd jamais le ballon ! À la fin, ce sont les taureaux qui ont les mains sur les genoux. Jamais lui. Vous savez pourquoi ? »
 
@@ -152,15 +152,15 @@ Il cherche le mot.
 
 Nous, on respire.
 
-Silence. Puis Kaydoudou sourit, de son petit sourire en coin.
+Silence. Puis BriBri sourit, de son petit sourire en coin.
 
 « Le rondo d'Avi Ramon », dit-il.
 
-« Le rondo d'Avi Ramon », répète BriBri.
+« Le rondo d'Avi Ramon », répète Kaydoudou.
 
 « What's a rondo ? » demande Theo sous sa serviette.
 
-« Un jeu de vieux, répond BriBri. Les vieux ne courent pas. Et ils gagnent quand même. »
+« Un jeu de vieux, répond Kaydoudou. Les vieux ne courent pas. Et ils gagnent quand même. »
 
 « Alors on joue comme des vieux », dit Jaden.
 
@@ -178,11 +178,11 @@ Et Kingsbridge change de visage.
 
 Samir reçoit de Freddie. Il attend une demi-seconde.
 
-« La pausa ! » souffle BriBri.
+« La pausa ! » souffle Kaydoudou.
 
-Kaydoudou s'offre entre les deux attaquants allemands, le corps ouvert. BriBri recule. Avec Arjun et Jaden, ils forment un losange.
+BriBri s'offre entre les deux attaquants allemands, le corps ouvert. Kaydoudou recule. Avec Arjun et Jaden, ils forment un losange.
 
-« Losange ! » appelle Kaydoudou.
+« Losange ! » appelle BriBri.
 
 Et le ballon se met à tourner.
 
@@ -190,27 +190,27 @@ Et le ballon se met à tourner.
 
 « Jaden ! »
 
-« Kayd ! »
+« Bri ! »
 
-« BriBri ! »
+« Kaydoudou ! »
 
 Une touche. Deux touches. Gauche, droite, en arrière, de côté. Le ballon voyage sans arrêt.
 
 Et les Allemands courent.
 
-« Regarde-les ! » BriBri rit en passant près de son frère. « Ils courent à trois sur le ballon, et le ballon est déjà parti ! Ils courent de l'autre côté, et hop, il revient ! »
+« Regarde-les ! » Kaydoudou rit en passant près de son frère. « Ils courent à trois sur le ballon, et le ballon est déjà parti ! Ils courent de l'autre côté, et hop, il revient ! »
 
-« Laisse-les courir », dit Kaydoudou.
+« Laisse-les courir », dit BriBri.
 
-Dix minutes plus tard, BriBri n'en revient pas.
+Dix minutes plus tard, Kaydoudou n'en revient pas.
 
-« Kayd ! Le feu baisse ! Je marche presque ! Je respire ! Mon accordéon joue une musique normale ! »
+« Bri ! Le feu baisse ! Je marche presque ! Je respire ! Mon accordéon joue une musique normale ! »
 
 En face, le Frigo met les mains sur les hanches. Pour la première fois.
 
 « Le Frigo est en panne ! » hurle Freddie depuis son but.
 
-« C'est le bouton ! crie BriBri. Kaydoudou, j'ai trouvé le bouton ! »
+« C'est le bouton ! crie Kaydoudou. BriBri, j'ai trouvé le bouton ! »
 
 « Alors appuie dessus ! »
 
@@ -218,7 +218,7 @@ En face, le Frigo met les mains sur les hanches. Pour la première fois.
 
 C'est le plus beau match de sa vie.
 
-« Encore, BriBri ! » crie Kaydoudou.
+« Encore, Kaydoudou ! » crie BriBri.
 
 « Scan, Socks ! » hurle Okafor.
 
@@ -232,7 +232,7 @@ C'est Papa.
 
 71e minute.
 
-BriBri reçoit sur le côté gauche, à trente mètres du but. Deux défenseurs allemands foncent sur lui. Deux armoires bleu marine.
+Kaydoudou reçoit sur le côté gauche, à trente mètres du but. Deux défenseurs allemands foncent sur lui. Deux armoires bleu marine.
 
 Il ne panique pas. Il conduit le ballon vers le milieu. Très lentement.
 
@@ -240,25 +240,25 @@ Il ne panique pas. Il conduit le ballon vers le milieu. Très lentement.
 
 Le dribble njangi. Celui qui attire et qui donne.
 
-Les deux Allemands mordent. Au dernier moment, BriBri donne à Kaydoudou, seul dans le trou qu'ils ont laissé.
+Les deux Allemands mordent. Au dernier moment, Kaydoudou donne à BriBri, seul dans le trou qu'ils ont laissé.
 
-Kaydoudou ne tire pas.
+BriBri ne tire pas.
 
 Il lève deux doigts.
 
 Et le temps s'arrête.
 
-La neige reste suspendue dans la lumière. Le numéro 8 brille sur le maillot vert sombre aux manches blanches. BriBri sent les flocons dans son afro. Il voit le petit nuage blanc qui sort de sa bouche.
+La neige reste suspendue dans la lumière. Le numéro 8 brille sur le maillot vert sombre aux manches blanches. Kaydoudou sent les flocons dans son afro. Il voit le petit nuage blanc qui sort de sa bouche.
 
 Les deux doigts. Comme sur la terre rouge.
 
 Il part. Avant même de réfléchir. Un grand sourire aux lèvres. Dans le dos des deux Allemands.
 
-Kaydoudou remet d'une seule touche. Le ballon glisse sur la neige, pile dans sa course.
+BriBri remet d'une seule touche. Le ballon glisse sur la neige, pile dans sa course.
 
 « LE UNE-DEUX DU NJANGI ! » hurle une voix dans la tribune. Papa, encore.
 
-BriBri est seul face au gardien, sous les flocons. Il ouvre le pied. Il place le ballon à ras du poteau. Tout doucement. Presque poliment.
+Kaydoudou est seul face au gardien, sous les flocons. Il ouvre le pied. Il place le ballon à ras du poteau. Tout doucement. Presque poliment.
 
 Chhh.
 
@@ -268,7 +268,7 @@ Il court au poteau de corner. La neige tombe comme des confettis. Main sur la ha
 
 « Je suis un homard très heureux ! »
 
-Kaydoudou arrive le dernier. « Tu vois ? Le ballon n'est jamais fatigué. »
+BriBri arrive le dernier. « Tu vois ? Le ballon n'est jamais fatigué. »
 
 « Moi non plus, maintenant ! »
 
@@ -276,7 +276,7 @@ Les vingt dernières minutes, Kingsbridge garde le ballon. Les Allemands courent
 
 Kingsbridge Albion est en finale.
 
-BriBri va tendre la main au Frigo, assis dans la neige.
+Kaydoudou va tendre la main au Frigo, assis dans la neige.
 
 « Very old ball, dit-il. But never tired. »
 
@@ -284,7 +284,7 @@ Le Frigo le regarde longtemps. Puis il prend sa main. « Good game, small boy. �
 
 « FI-NALE ! FI-NALE ! » chante tout le vestiaire, en sautant sur les bancs.
 
-« Le bouton, hein ? » dit Kaydoudou en ébouriffant l'afro de son frère.
+« Le bouton, hein ? » dit BriBri en ébouriffant l'afro de son frère.
 
 « Le bouton ! »
 
@@ -292,7 +292,7 @@ Le Frigo le regarde longtemps. Puis il prend sa main. « Good game, small boy. �
 
 Le soir, la neige a bloqué la moitié des trains. L'équipe dort dans un petit hôtel près du stade. Les frères partagent une chambre avec Papa et Maman, venus voir le match.
 
-BriBri est allongé en travers du lit, en chaussettes, une rouge et une jaune. Il raconte son but pour la cinquième fois.
+Kaydoudou est allongé en travers du lit, en chaussettes, une rouge et une jaune. Il raconte son but pour la cinquième fois.
 
 « Et là, les deux doigts. Et là, fiouuu, je pars ! Et là, chhh, le filet ! »
 
@@ -300,17 +300,17 @@ BriBri est allongé en travers du lit, en chaussettes, une rouge et une jaune. I
 
 « Mais vous n'aviez pas les bruitages. »
 
-« Sixième fois, compte Kaydoudou. Et toujours les bruitages. »
+« Sixième fois, compte BriBri. Et toujours les bruitages. »
 
 « Parce qu'il est de mieux en mieux, ce but. »
 
 Papa est assis près de la fenêtre. Il a un drôle d'air.
 
-« Il a sa tête du Maryland, chuchote BriBri. Celle du soir de l'appel pour Paris. »
+« Il a sa tête du Maryland, chuchote Kaydoudou. Celle du soir de l'appel pour Paris. »
 
 « J'ai une surprise », dit Papa.
 
-BriBri se redresse. Kaydoudou aussi.
+Kaydoudou se redresse. BriBri aussi.
 
 « Un chien ? Une glace ? Un autre match ? »
 
@@ -318,19 +318,19 @@ BriBri se redresse. Kaydoudou aussi.
 
 « J'ai parlé à Mami ce soir. » Papa fait une pause, comme Avi Ramon avec le ballon. « Le njangi des femmes de Bafoussam s'est réuni dimanche. Et ce mois-ci, la caisse est allée à Mami. »
 
-« Pour sa hanche ? » demande Kaydoudou.
+« Pour sa hanche ? » demande BriBri.
 
 « C'est ce que tout le monde croyait. » Papa sourit. Ses yeux brillent. « Mais elle a pris tout l'argent de la caisse. Et elle s'est acheté un billet d'avion. Elle a dit : je veux voir mes lions en vrai. »
 
 « Mami vient à Londres, dit Maman doucement. Pour la finale. »
 
-BriBri hurle.
+Kaydoudou hurle.
 
-Un cri qui part des chaussettes, traverse tout son corps et sort par le haut de sa tête. Il saute sur le lit. Il saute par terre. Il saute dans les bras de Kaydoudou, qui tombe à la renverse.
+Un cri qui part des chaussettes, traverse tout son corps et sort par le haut de sa tête. Il saute sur le lit. Il saute par terre. Il saute dans les bras de BriBri, qui tombe à la renverse.
 
 « MAMI ! MAMI DANS L'AVION ! »
 
-« BriBri ! s'écrie Maman. Il est onze heures du soir ! »
+« Kaydoudou ! s'écrie Maman. Il est onze heures du soir ! »
 
 Drrring ! Trois secondes plus tard, le téléphone de la chambre sonne.
 
@@ -342,11 +342,11 @@ Il raccroche.
 
 « C'était la réception. Ils voulaient savoir si quelqu'un était blessé. »
 
-« Personne n'est blessé ! » hurle BriBri vers la porte. « On est heureux ! »
+« Personne n'est blessé ! » hurle Kaydoudou vers la porte. « On est heureux ! »
 
 « Arrête, tu m'écrases ! »
 
-Sous lui, Kaydoudou rit si fort qu'il pleure. Ou il pleure si fort qu'il rit. BriBri ne sait pas.
+Sous lui, BriBri rit si fort qu'il pleure. Ou il pleure si fort qu'il rit. Kaydoudou ne sait pas.
 
 Il sait seulement une chose. Mami n'a jamais pris l'avion de sa vie.
 
@@ -357,7 +357,7 @@ Et elle va traverser le ciel pour eux.
 > Il va plus vite que nous et il n'est jamais fatigué.
 > On le garde, on le fait tourner en losange, on fait la pausa. Eux courent, nous respirons.
 > Garder le ballon, c'est aussi une façon de se reposer.
-> (BriBri : « J'ai trouvé le bouton des Allemands. C'était le ballon. »)
+> (Kaydoudou : « J'ai trouvé le bouton des Allemands. C'était le ballon. »)
 
 ```schema
 {

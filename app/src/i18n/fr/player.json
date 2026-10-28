@@ -25,7 +25,7 @@
     "mySpace": "Mon espace joueur",
     "lessonTitle": "La leçon du jour",
     "allLessons": "Toutes les leçons",
-    "ritual": "dix jongles avec le ballon de Mami avant ?",
+    "ritual": "prépare ton sac et couche-toi tôt la veille",
     "notebookEmpty": "Ta première page t'attend",
     "notebookEmptyBody": "Écris ce que tu as appris aujourd'hui, comme Kaydoudou.",
     "statDaily": "Défis",
@@ -160,57 +160,58 @@
     "age": "Catégorie",
     "format": "Format",
     "create": "Créer l'équipe",
-    "open": "Ajouter mon équipe"
+    "open": "Ajouter mon équipe",
+    "pro": "Seniors pro"
   },
   "parent": {
     "title": "Pour les parents",
     "body": "Quinze minutes, un mur et un ballon suffisent. Restez à côté, aidez à compter et rappelez de boire de l'eau. Le jeu des yeux se joue à deux : c'est vous qui levez la carte de couleur."
   },
   "levelUp": {
-    "title": "Niveau {{n}} atteint !",
-    "body": "Te voilà « {{name}} ». Continue : le ballon voyage avec toi."
+    "title": "Palier {{n}} atteint",
+    "body": "Tu passes au palier « {{name}} ». Garde ce rythme : c'est la régularité qui fait progresser."
   },
   "levels": {
     "0": {
-      "name": "Le ballon rapiécé",
-      "body": "Tout commence avec un vieux ballon et l'envie de jouer."
+      "name": "Les fondations",
+      "body": "Tout commence par la régularité : un défi, puis un autre."
     },
     "1": {
-      "name": "Terre rouge",
-      "body": "Tu reviens chaque jour sur le terrain, comme les Lionceaux de Bonamoussadi."
+      "name": "La régularité",
+      "body": "Tu reviens chaque jour : c'est là que tout se construit."
     },
     "2": {
       "name": "Le cœur",
-      "body": "Tu joues pour les autres : chacun verse sa part."
+      "body": "Tu joues pour l'équipe : chacun apporte sa part."
     },
     "3": {
       "name": "La raison",
-      "body": "Chaque touche sert à quelque chose."
+      "body": "Chaque touche a un but."
     },
     "4": {
       "name": "Les yeux",
-      "body": "Tu regardes avant de recevoir."
+      "body": "Tu prends l'information avant de recevoir."
     },
     "5": {
       "name": "La carte",
-      "body": "Tu sais où te placer et quand passer."
+      "body": "Tu sais où te placer et quand jouer."
     },
     "6": {
       "name": "Le souffle",
-      "body": "Tu gardes le ballon même quand ça brûle."
+      "body": "Tu gardes le ballon même sous pression."
     },
     "7": {
       "name": "Le Njangi complet",
-      "body": "Les cinq pièces sont réunies. Maintenant, apprends-les aux autres."
+      "body": "Les cinq pièces sont réunies. À toi de les transmettre."
     }
   },
   "xp": {
     "label": "XP",
-    "level": "niveau",
+    "level": "palier",
     "toNext": "Encore {{n}} XP avant « {{name}} »",
-    "max": "Niveau maximum : tu as réuni les cinq pièces.",
+    "max": "Dernier palier atteint : les cinq pièces du Njangi sont réunies.",
     "total": "{{n}} XP",
-    "targets": "Objectifs"
+    "targets": "Cibles atteintes"
   },
   "streak": {
     "label": "Série",
@@ -280,10 +281,10 @@
       "historique": "Historique"
     },
     "dailyTitle": "Les défis du jour",
-    "dailyBody": "Trois défis pour aujourd'hui, les mêmes pour tous les lionceaux : un pour le ballon, un pour la tête, un pour les jambes. Note ton meilleur résultat.",
-    "xpRule": "{{done}} XP par défi fait, {{target}} XP de plus si tu atteins l'objectif, {{daily}} XP de bonus pour un défi du jour. Ton niveau monte tout seul.",
+    "dailyBody": "Trois défis par jour, les mêmes pour tous les joueurs : maîtrise du ballon, prise d'information, condition physique. Note ton meilleur résultat : ta courbe se construit jour après jour.",
+    "xpRule": "{{done}} XP par défi fait, {{target}} XP de plus si tu atteins l'objectif, {{daily}} XP de bonus pour un défi du jour. Ton palier monte tout seul.",
     "libraryTitle": "Tous les défis",
-    "libraryBody": "{{n}} défis à faire seul, avec un mur ou quelques plots. Chacun fait écho à une Leçon du Ballon.",
+    "libraryBody": "{{n}} défis à faire seul, contre un mur ou avec quelques plots. Chacun travaille une compétence de la grille et renvoie à une Leçon du Ballon.",
     "moreLabel": "Aller plus loin",
     "lessonsHint": "Les 40 pages du carnet de Kaydoudou",
     "notebookHint": "Écris ce que tu apprends, comme Kaydoudou"
@@ -292,7 +293,7 @@
     "waterTitle": "Bois de l'eau",
     "waterBody": "Avant, pendant et après. Une gourde à côté du mur, toujours.",
     "restTitle": "Repose-toi",
-    "restBody": "Un jour sans défi par semaine. Échauffe-toi cinq minutes avant les sprints. Si tu as mal, tu t'arrêtes et tu le dis à un adulte."
+    "restBody": "Un jour sans défi par semaine. Échauffe-toi cinq minutes avant les sprints. Si tu as mal, arrête-toi et préviens ton entraîneur ou tes parents."
   },
   "progress": {
     "title": "Ma progression",
@@ -317,7 +318,7 @@
   },
   "self": {
     "title": "Mon regard sur moi",
-    "body": "Où en es-tu dans les dix compétences du Njangi ? Sois honnête : c'est pour toi, rien n'est envoyé.",
+    "body": "Où en es-tu sur les dix compétences de la grille ? Sois honnête : c'est pour toi, rien n'est envoyé.",
     "scale": "Échelle de 1 à 4",
     "levels": {
       "1": "Je découvre",
@@ -463,5 +464,345 @@
     "fLesson": "Leçon liée",
     "fLessonHint": "Relie ta page à une Leçon du Ballon (facultatif).",
     "noLesson": "Aucune"
+  },
+  "perf": {
+    "hero": {
+      "matchDay": "Jour de match",
+      "matchLine": "Contre {{opponent}}, coup d'envoi à {{time}}.",
+      "matchLineNoTime": "Contre {{opponent}}.",
+      "today": "Aujourd'hui",
+      "todayMd": "Aujourd'hui · {{md}}",
+      "form": "Forme",
+      "toLog": "À noter",
+      "load": "Charge 7 j",
+      "lastIndice": "Indice {{v}}"
+    },
+    "link": {
+      "title": "Ta fiche n'est pas encore reliée.",
+      "body": "Relie ton profil à ton nom dans l'effectif : tes minutes, tes objectifs et les observations du staff apparaîtront ici.",
+      "cta": "Relier mon profil"
+    },
+    "form": {
+      "eyebrow": "Chaque matin",
+      "title": "Ma forme du jour",
+      "hint": "Trente secondes, avant l'entraînement. Réponds seul et honnêtement : personne ne te juge sur tes réponses, elles servent à doser ta semaine.",
+      "dropTitle": "Ta forme baisse depuis trois jours",
+      "dropBody": "Tes trois dernières notes sont nettement sous ta moyenne. Parles-en au staff médical avant la prochaine séance.",
+      "private": "Tes réponses restent sur cet appareil.",
+      "save": "Enregistrer ma forme",
+      "progress": "{{n}} sur {{total}}",
+      "items": {
+        "sleep": {
+          "label": "Sommeil",
+          "low": "Très mauvais",
+          "high": "Excellent",
+          "short": "Sommeil"
+        },
+        "fatigue": {
+          "label": "Fraîcheur",
+          "low": "Épuisé",
+          "high": "Très frais",
+          "short": "Fraîcheur"
+        },
+        "soreness": {
+          "label": "Courbatures",
+          "low": "Très fortes",
+          "high": "Aucune",
+          "short": "Muscles"
+        },
+        "mood": {
+          "label": "Humeur",
+          "low": "Très basse",
+          "high": "Excellente",
+          "short": "Humeur"
+        },
+        "stress": {
+          "label": "Stress",
+          "low": "Très stressé",
+          "high": "Très détendu",
+          "short": "Stress"
+        }
+      },
+      "band": {
+        "fresh": "Frais",
+        "ok": "Correct",
+        "low": "Entamé"
+      },
+      "vsBaseline": "{{diff}} par rapport à ta moyenne ({{avg}} sur 25, 28 jours)",
+      "noBaseline": "Ta moyenne apparaîtra après cinq jours de réponses.",
+      "detail": "Détail des cinq réponses",
+      "lowHint": "Note basse : préviens le staff avant la séance, il adaptera ta charge."
+    },
+    "rpe": {
+      "title": "Après la séance",
+      "ctxMatch": "Ton effort contre {{opponent}}, environ trente minutes après le coup de sifflet final.",
+      "ctxSession": "{{title}} : note ton effort environ trente minutes après la fin de la séance.",
+      "ctxOwn": "Une séance individuelle ou un footing : note ton effort et sa durée.",
+      "done": "Effort {{rpe}} sur 10 ({{word}}), {{minutes}} min.",
+      "none": "Pas de séance prévue aujourd'hui.",
+      "add": "Noter une séance individuelle",
+      "when": "À noter une demi-heure après la séance : ton effort de 0 à 10 et les minutes.",
+      "question": "À quel point la séance a-t-elle été difficile ?",
+      "words": {
+        "0": "Repos",
+        "1": "Facile",
+        "2": "Modéré",
+        "3": "Difficile",
+        "4": "Très difficile",
+        "5": "Maximal"
+      },
+      "minutes": "Durée (minutes)",
+      "preview": "Charge de la séance :",
+      "formula": "Effort multiplié par les minutes : la charge de la séance.",
+      "save": "Enregistrer l'effort",
+      "addNow": "Noter l'effort"
+    },
+    "load": {
+      "ua": "{{n}} UA",
+      "uaShort": "UA",
+      "eyebrow": "Charge d'entraînement",
+      "title": "Ma charge",
+      "hint": "Ton effort de 0 à 10 multiplié par les minutes, en unités arbitraires (UA). On se compare à soi-même, semaine après semaine.",
+      "empty": "Pas encore de charge enregistrée. Après ta prochaine séance, note ton effort de 0 à 10 : ta courbe commence.",
+      "last7": "7 derniers jours",
+      "sessions_one": "{{count}} séance ou match",
+      "sessions_other": "{{count}} séances et matchs",
+      "prevAvg": "Moyenne des 3 semaines d'avant",
+      "delta": "Écart",
+      "band": {
+        "spike": "Pic de charge",
+        "steady": "Charge régulière",
+        "light": "Semaine allégée"
+      },
+      "spikeHint": "Ta semaine est nettement plus lourde que les précédentes. Parles-en au staff avant d'en rajouter.",
+      "daily": "Charge par jour, 14 derniers jours",
+      "dailyAria": "Charge de chaque jour sur 14 jours, en UA : {{values}}",
+      "weeks": "Les quatre dernières semaines",
+      "wk": "S-{{n}}"
+    },
+    "trend": {
+      "eyebrow": "Deux semaines",
+      "title": "Ma forme dans le temps",
+      "hint": "Ta note sur 25 chaque matin, face à ta moyenne. C'est la courbe qui compte, plus que le chiffre du jour.",
+      "empty": "Ta courbe apparaîtra après deux jours de réponses.",
+      "avg": "Ta moyenne",
+      "aria": "Notes de forme des 14 derniers jours : {{values}}",
+      "rowLoad": "Effort {{rpe}}, {{n}} UA",
+      "noLoad": "Sans séance",
+      "low": "Point bas : {{items}}"
+    },
+    "week": {
+      "eyebrow": "Ma semaine",
+      "titleMatch": "Vers le match contre {{opponent}}",
+      "title": "La semaine",
+      "hint": "Chaque jour a son rôle, du lendemain de match à la veille. {{n}} min d'entraînement prévues.",
+      "days": "Les jours de la semaine",
+      "session": "Séance",
+      "rest": "Repos",
+      "today": "Aujourd'hui",
+      "legendIntensity": "Intensité habituelle",
+      "legendLogged": "Effort noté",
+      "matchDay": "Match contre {{opponent}}",
+      "score": "Score : {{us}}-{{them}}",
+      "staffNotes": "Consignes du staff",
+      "restTitle": "Repos",
+      "logged": "Noté : effort {{rpe}} sur 10, {{minutes}} min, soit {{n}} UA.",
+      "hintEmpty": "Chaque jour a son rôle, du lendemain de match à la veille. Aucune séance prévue pour l'instant."
+    },
+    "mdWhy": {
+      "MD+1": "Lendemain de match : régénération pour ceux qui ont joué, compensation à haute intensité pour les autres.",
+      "MD-4": "Tension : petits espaces, duels, changements de direction. Le jour le plus intense de la semaine.",
+      "MD-3": "Durée : grands espaces et longues séquences, au rythme du match.",
+      "MD-2": "Vitesse : efforts courts et explosifs, transitions et finition, récupération complète entre les répétitions.",
+      "MD-1": "Activation : peu de volume, de la vitesse et de la précision, les coups de pied arrêtés. Les jambes restent fraîches.",
+      "youth": "Séance de développement : beaucoup de ballons, de jeu et de décisions.",
+      "rest": "Pas de séance : sommeil, hydratation et soins. Le corps progresse quand il récupère."
+    },
+    "next": {
+      "none": "Aucun match au calendrier",
+      "noneBody": "Dès que le staff ajoute le prochain match, il apparaît ici avec la semaine qui le prépare.",
+      "myPlace": "Ma place",
+      "starterAt": "Titulaire prévu : {{slot}}",
+      "starter": "Titulaire dans la composition prévue",
+      "bench": "Sur le banc dans la composition prévue",
+      "role": "{{pos}}, rôle du {{n}}",
+      "plan": "Le plan de jeu",
+      "planKeys": {
+        "possession": "Avec le ballon",
+        "transitionDef": "À la perte"
+      },
+      "sheet": "Feuille de match"
+    },
+    "last": {
+      "eyebrow": "Mon dernier match",
+      "emptyTitle": "Pas encore de match joué",
+      "emptyBody": "Après ton premier match, tu verras ici l'Indice Njangi de l'équipe, ta part dans le jeu et tes actions minute par minute.",
+      "title": "Contre {{opponent}}",
+      "result": {
+        "win": "Victoire",
+        "loss": "Défaite",
+        "draw": "Nul"
+      },
+      "teamIndice": "Indice Njangi de l'équipe",
+      "untagged": "Ce match n'a pas été tagué en direct : pas d'Indice Njangi ni d'actions détaillées.",
+      "myPart": "Ma part dans le jeu",
+      "minutes": "Temps de jeu",
+      "started": "Titulaire",
+      "cameOn": "Entré en jeu",
+      "progressive": "Actions qui font avancer",
+      "shareOfTeam": "{{v}} de l'équipe",
+      "entries": "Entrées dernier tiers et surface",
+      "boxEntries_one": "dont {{count}} dans la surface",
+      "boxEntries_other": "dont {{count}} dans la surface",
+      "shots": "Tirs",
+      "goals_one": "{{count}} but",
+      "goals_other": "{{count}} buts",
+      "onTarget_one": "{{count}} cadré",
+      "onTarget_other": "{{count}} cadrés",
+      "actions": "Mes actions taguées",
+      "more_one": "et {{count}} autre dans le rapport",
+      "more_other": "et {{count}} autres dans le rapport",
+      "noActions": "Aucune action taguée à ton nom dans ce match.",
+      "report": "Rapport du match",
+      "addVideo": "Ajouter la vidéo du match",
+      "analysis": "Ouvrir l'analyse",
+      "actionsCount_one": "{{count}} action taguée à ton nom",
+      "actionsCount_other": "{{count}} actions taguées à ton nom",
+      "trackAria": "Tes {{count}} actions taguées le long du match, {{minutes}} minutes jouées",
+      "kind": {
+        "ball": "Avec le ballon",
+        "regain": "Récupération",
+        "shot": "Tir ou but",
+        "loss": "Perte"
+      },
+      "onPitch": "Sur le terrain"
+    },
+    "obj": {
+      "eyebrow": "Cycle en cours",
+      "title": "Mes objectifs",
+      "hint": "De un à {{n}} objectifs à la fois, pour six à huit semaines, puis un bilan avec le staff.",
+      "noLink": "Relie ton profil à ta fiche de l'effectif pour voir tes objectifs et ta saison.",
+      "empty": "Aucun objectif en cours. Choisis avec le staff une ou deux choses à travailler pendant ce cycle.",
+      "set": "Fixer un objectif",
+      "byStaff": "Fixé par le staff",
+      "level": "Niveau actuel : {{level}}",
+      "drills": "Les exercices du Code Njangi qui les travaillent",
+      "manage": "Gérer mes objectifs dans mon parcours"
+    },
+    "season": {
+      "eyebrow": "Saison {{label}}",
+      "title": "Ma saison",
+      "starts_one": "{{count}} titularisation",
+      "starts_other": "{{count}} titularisations",
+      "evals": "Évaluations du staff",
+      "lastEval": "la dernière le {{date}}",
+      "lastObs": "Dernière observation du staff",
+      "tone": {
+        "plus": "Point fort",
+        "work": "À travailler"
+      },
+      "inMatch": "contre {{opponent}}",
+      "inMatchMin": "contre {{opponent}}, {{min}}e minute",
+      "open": "Ouvrir mon parcours"
+    },
+    "links": {
+      "label": "Aller plus loin",
+      "space": "Mon espace performance",
+      "spaceHint": "Forme, charge et dernier match en détail",
+      "parcoursHint": "Évaluations et observations, saison après saison",
+      "journalHint": "Ce qui a marché, ce que tu ajustes",
+      "codeHint": "La méthode : posséder avec intention"
+    },
+    "journal": {
+      "title": "Mon journal",
+      "docTitle": "Mon journal",
+      "eyebrow": "Journal de joueur",
+      "heading": "Mon journal de joueur",
+      "subtitle": "Après chaque séance ou chaque match : ce qui a marché, ce que tu ajustes, ce que tu veux revoir en vidéo. Quelques lignes suffisent.",
+      "emptyTitle": "Ton journal est encore vide",
+      "emptyBody": "Les joueurs qui progressent le plus écrivent souvent, et court. Commence par ton dernier match : une action que tu gardes, une que tu veux corriger.",
+      "first": "Écrire ma première note",
+      "printTitle": "Journal de {{name}}",
+      "new": "Nouvelle note",
+      "newTitle": "Nouvelle note",
+      "editTitle": "Modifier la note",
+      "search": "Chercher dans mon journal",
+      "fTitlePh": "Bafoussam : nos sorties de balle",
+      "fTextPh": "Ce qui a marché, ce que je change...",
+      "fTextHint": "Quelques lignes suffisent.",
+      "count_one": "{{count}} note dans ton journal",
+      "count_other": "{{count}} notes dans ton journal",
+      "saved": "Note ajoutée au journal.",
+      "updated": "Note modifiée.",
+      "deleted": "Note supprimée.",
+      "deleteTitle": "Supprimer cette note ?",
+      "deleteBody": "La note « {{title}} » du {{date}} sera effacée de cet appareil.",
+      "prompt": {
+        "worked": "Ce qui a marché :",
+        "keep": "Une action que je garde :",
+        "adjust": "À ajuster :",
+        "video": "À revoir en vidéo :"
+      },
+      "fText": "Ma note"
+    },
+    "space": {
+      "docTitle": "Espace performance",
+      "eyebrow": "Espace performance",
+      "formToday": "Forme du jour",
+      "formLast": "Dernière forme",
+      "vsPrev": "{{v}} sur 3 semaines",
+      "lastIndice": "Dernier Indice",
+      "vs": "contre {{opponent}}",
+      "objectives": "Objectifs en cours",
+      "cycle": "sur ce cycle",
+      "season": "Saison {{label}}",
+      "nav": {
+        "semaine": "La semaine",
+        "forme": "Forme et charge",
+        "match": "Dernier match",
+        "objectifs": "Objectifs",
+        "regard": "Auto-évaluation"
+      },
+      "weekTitle": "La semaine",
+      "weekBody": "Le programme du staff jour par jour, et le prochain match.",
+      "formTitle": "Forme et charge",
+      "formBody": "Le questionnaire du matin, ton effort après chaque séance et la comparaison avec tes semaines habituelles (Le Code Njangi, chapitre 29).",
+      "matchTitle": "Dernier match",
+      "matchBody": "L'Indice Njangi de l'équipe, ta part dans le jeu et chacune de tes actions taguées.",
+      "objTitle": "Objectifs et saison",
+      "objBody": "Ce que tu travailles pendant ce cycle, les exercices qui vont avec et ta saison en chiffres."
+    },
+    "self": {
+      "eyebrow": "Auto-évaluation",
+      "title": "Mon regard sur mon jeu",
+      "body": "Les dix compétences de la grille du staff (Le Code Njangi, chapitre 25). Note-toi sans complaisance, puis compare avec l'évaluation du staff. Rien n'est envoyé.",
+      "me": "Moi",
+      "coach": "Le staff",
+      "radarTitle": "Moi face au staff",
+      "radarEmpty": "Choisis un niveau pour chaque compétence : ton radar se dessine ici, à côté de l'évaluation du staff.",
+      "coachNote": "L'évaluation du staff vient de ta fiche dans l'effectif. Un écart ? C'est un bon sujet pour le prochain bilan.",
+      "staffSays": "staff : {{level}}"
+    },
+    "skillHint": {
+      "scan": "Je prends l'information avant chaque réception, des deux côtés.",
+      "controle": "Mon premier contrôle oriente le jeu vers l'espace libre.",
+      "passe": "Je choisis la passe qui casse une ligne quand elle est ouverte.",
+      "conduite": "Je conduis tête levée pour attirer, puis je libère.",
+      "dribble-njangi": "Je dribble pour fixer deux adversaires, puis je donne.",
+      "appels": "Mes courses créent de l'espace pour les partenaires.",
+      "communication": "J'organise à la voix : annonces, couverture, défense de repos.",
+      "protection": "Je garde le ballon dos au but sous la pression.",
+      "contre-pression": "À la perte, je presse dans les cinq secondes.",
+      "decision": "Je décide avant la réception, au bon tempo."
+    },
+    "team": {
+      "title": "Tu joues dans un club ?",
+      "body": "Ajoute ton équipe : ta semaine, tes matchs et ton parcours apparaîtront ici. Ta forme et ta charge se notent aussi sans équipe."
+    },
+    "linkStaff": {
+      "title": "Aperçu pour le staff.",
+      "body": "Ici, chaque joueur de 16 ans et plus voit sa semaine, sa forme, sa charge et son dernier match. Choisis une fiche de l'effectif pour voir l'espace avec ses données.",
+      "cta": "Choisir un joueur"
+    }
   }
 }

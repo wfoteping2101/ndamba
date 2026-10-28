@@ -3,16 +3,16 @@
   "beats": [
     {
       "id": "ch29b",
-      "anchor": "Le soir, BriBri monte quand même sur le terrat.",
+      "anchor": "Le soir, Kaydoudou monte quand même sur le terrat.",
       "shot": "quiet",
-      "cast": ["BRI"],
+      "cast": ["KAY"],
       "extras": "None.",
-      "outfit": "BriBri (12) in the sand gold Costa Daurada shirt with a navy band and green shorts, a woollen blanket wrapped around his shoulders, red sock on his RIGHT foot and yellow sock on his LEFT foot, his soft little afro pushed by the wind.",
-      "action": "Alone at the low stone wall of the flat rooftop, BriBri holds the blanket tight under his chin and stares south over the dark sea. His eyes are wet; the wind tears at the blanket. Far away, the small lights of ships.",
+      "outfit": "Kaydoudou (12) in the sand gold Costa Daurada shirt with a navy band and green shorts, a woollen blanket wrapped around his shoulders, red sock on his RIGHT foot and yellow sock on his LEFT foot, his soft little afro pushed by the wind.",
+      "action": "Alone at the low stone wall of the flat rooftop, Kaydoudou holds the blanket tight under his chin and stares south over the dark sea. His eyes are wet; the wind tears at the blanket. Far away, the small lights of ships.",
       "location": "The flat roof terrace of a narrow tall stone house in a Catalan hill village in February: a low wall, a spiral stair hatch, bare vines on the hills on one side, the dark Mediterranean on the other.",
       "light": "Cold windy night, deep blue sky with a few stars, tiny warm lights of boats on the black sea, a faint glow from the village below.",
       "camera": "Quiet wide medium shot from behind and slightly to the side, the small figure against the vast dark sea.",
-      "alt": "Seul sur le terrat, dans le vent froid de la tramuntana, BriBri regarde vers le sud, là où doit être l'Afrique."
+      "alt": "Seul sur le terrat, dans le vent froid de la tramuntana, Kaydoudou regarde vers le sud, là où doit être l'Afrique."
     },
     {
       "id": "ch29c",
@@ -31,14 +31,14 @@
       "id": "ch29d",
       "anchor": "Il s'accroupit et dessine dans le sable.",
       "shot": "medium",
-      "cast": ["BRI", "KAY"],
+      "cast": ["KAY", "BRI"],
       "extras": "Laia Ferrer, 13: a white Catalan girl with her brown bun undone by the wind, freckles, soaked to the knees and shivering happily, crouching to look. Martí, 7: a small white Catalan boy with tousled light brown hair, kneeling, mouth open, repeating a word. The twins Arnau and Biel, 8: two identical white boys, one in a blue woolly hat and one in a red woolly hat. Pol Vidal, 13: tall and broad, and Nil Soler, 13: tall, very thin, sticking out ears, standing behind. All barefoot, trousers rolled up.",
-      "outfit": "BriBri (12) barefoot, in the sand gold Costa Daurada shirt with a navy band and green shorts, his red and yellow socks rolled into a ball in his left fist, his soft little afro dusted with sand, the gap in his front teeth showing. Kaydoudou (13) in his green sweatshirt and rolled up jeans, barefoot, sitting on a blue and white fishing boat with Maman's phone in his hand, the fine shaved part on the left of his head, the braided blue and white bracelet on his left wrist.",
-      "action": "BriBri crouches on the sand and traces a big circle with his finger, explaining with his whole face. The children gather round him in a ring, heads bent over the drawing. Martí's mouth is open on a word. Kaydoudou watches from the boat with a small proud smile.",
+      "outfit": "Kaydoudou (12) barefoot, in the sand gold Costa Daurada shirt with a navy band and green shorts, his red and yellow socks rolled into a ball in his left fist, his soft little afro dusted with sand, the gap in his front teeth showing. BriBri (13) in his green sweatshirt and rolled up jeans, barefoot, sitting on a blue and white fishing boat with Maman's phone in his hand, the fine shaved part on the left of his head, the braided blue and white bracelet on his left wrist.",
+      "action": "Kaydoudou crouches on the sand and traces a big circle with his finger, explaining with his whole face. The children gather round him in a ring, heads bent over the drawing. Martí's mouth is open on a word. BriBri watches from the boat with a small proud smile.",
       "location": "A small golden sand cove at the foot of a Catalan village in February: blue and white fishing boats pulled up on the sand, a turquoise calm sea, two flip flops stuck in the sand as a goal, an almond tree in white blossom on the hill behind.",
       "light": "Bright clean afternoon light after the wind, sparkling sea, sharp blue sky.",
-      "camera": "Medium shot at child height, the circle drawn in the sand in the foreground, the ring of faces around BriBri, the boat with Kaydoudou on the right.",
-      "alt": "Accroupi sur la plage, BriBri dessine un cercle dans le sable pour expliquer le dribble njangi aux enfants de Vinyamar."
+      "camera": "Medium shot at child height, the circle drawn in the sand in the foreground, the ring of faces around Kaydoudou, the boat with BriBri on the right.",
+      "alt": "Accroupi sur la plage, Kaydoudou dessine un cercle dans le sable pour expliquer le dribble njangi aux enfants de Vinyamar."
     }
   ]
 }

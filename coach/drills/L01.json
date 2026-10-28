@@ -46,7 +46,7 @@
       "Terrain réduit à 70 x 44 m pour raccourcir les renversements."
     ],
     "measure": "Nombre de renversements d'un couloir à l'autre par série, et part de ces renversements suivis d'un centre ou d'une entrée dans la surface en moins de 8 secondes.",
-    "story": "À Waldorf, Coach Dana demande à BriBri de rester collé à sa ligne. Quand le ballon arrive enfin de l'autre côté, tout le couloir est à lui."
+    "story": "À Waldorf, Coach Dana demande à Kaydoudou de rester collé à sa ligne. Quand le ballon arrive enfin de l'autre côté, tout le couloir est à lui."
   },
   "en": {
     "title": "Free Channels",
@@ -82,7 +82,7 @@
       "Pitch narrowed to 70 x 44 m to shorten the switches."
     ],
     "measure": "Number of switches from one channel to the other per set, and the share of those switches followed by a cross or an entry into the box within 8 seconds.",
-    "story": "In Waldorf, Coach Dana asks BriBri to stay glued to his line. When the ball finally arrives from the other side, the whole channel is his."
+    "story": "In Waldorf, Coach Dana asks Kaydoudou to stay glued to his line. When the ball finally arrives from the other side, the whole channel is his."
   },
   "diagram": {
     "view": "grid", "w": 70, "h": 50,

@@ -25,7 +25,7 @@
     "mySpace": "My player space",
     "lessonTitle": "Lesson of the day",
     "allLessons": "All lessons",
-    "ritual": "ten juggles with Mami's ball first?",
+    "ritual": "pack your bag and get to bed early the night before",
     "notebookEmpty": "Your first page is waiting",
     "notebookEmptyBody": "Write down what you learned today, like Kaydoudou.",
     "statDaily": "Today",
@@ -160,57 +160,58 @@
     "age": "Age group",
     "format": "Format",
     "create": "Create the team",
-    "open": "Add my team"
+    "open": "Add my team",
+    "pro": "Senior pro"
   },
   "parent": {
     "title": "For parents",
     "body": "Fifteen minutes, a wall and a ball are enough. Stay close, help count and remind them to drink water. The eyes game takes two: you are the one holding up the coloured card."
   },
   "levelUp": {
-    "title": "Level {{n}} reached!",
-    "body": "You are now \"{{name}}\". Keep going: the ball travels with you."
+    "title": "Stage {{n}} reached",
+    "body": "You move up to “{{name}}”. Keep this rhythm: regular work is what makes you improve."
   },
   "levels": {
     "0": {
-      "name": "The patched ball",
-      "body": "It all starts with an old ball and the urge to play."
+      "name": "The foundations",
+      "body": "It all starts with regular work: one challenge, then another."
     },
     "1": {
-      "name": "Red earth",
-      "body": "You come back to the pitch every day, like the Bonamoussadi Lion Cubs."
+      "name": "Regular work",
+      "body": "You come back every day: that is where it all gets built."
     },
     "2": {
       "name": "The heart",
-      "body": "You play for the others: everyone puts in their share."
+      "body": "You play for the team: everyone puts in their share."
     },
     "3": {
       "name": "The reason",
-      "body": "Every touch serves a purpose."
+      "body": "Every touch has a purpose."
     },
     "4": {
       "name": "The eyes",
-      "body": "You look before you receive."
+      "body": "You check before you receive."
     },
     "5": {
       "name": "The map",
-      "body": "You know where to stand and when to pass."
+      "body": "You know where to stand and when to play."
     },
     "6": {
       "name": "The breath",
-      "body": "You keep the ball even when it burns."
+      "body": "You keep the ball even under pressure."
     },
     "7": {
-      "name": "The full Njangi",
-      "body": "All five pieces are together. Now teach them to others."
+      "name": "The complete Njangi",
+      "body": "The five pieces are together. Now pass them on."
     }
   },
   "xp": {
     "label": "XP",
-    "level": "level",
+    "level": "stage",
     "toNext": "{{n}} XP to go before \"{{name}}\"",
-    "max": "Top level: you have gathered all five pieces.",
+    "max": "Final stage reached: the five pieces of the Njangi are together.",
     "total": "{{n}} XP",
-    "targets": "Targets"
+    "targets": "Targets hit"
   },
   "streak": {
     "label": "Streak",
@@ -280,10 +281,10 @@
       "historique": "History"
     },
     "dailyTitle": "Today's challenges",
-    "dailyBody": "Three challenges for today, the same for every lion cub: one for the ball, one for the head, one for the legs. Log your best result.",
-    "xpRule": "{{done}} XP for each challenge done, {{target}} more if you reach the target, a {{daily}} XP bonus for a challenge of the day. Your level goes up on its own.",
+    "dailyBody": "Three challenges a day, the same for every player: ball mastery, scanning, fitness. Log your best result: your curve builds day after day.",
+    "xpRule": "{{done}} XP per challenge done, {{target}} more XP if you reach the target, a {{daily}} XP bonus for a challenge of the day. Your stage goes up on its own.",
     "libraryTitle": "All challenges",
-    "libraryBody": "{{n}} challenges to do alone, with a wall or a few cones. Each one echoes a Ball Lesson.",
+    "libraryBody": "{{n}} challenges to do on your own, against a wall or with a few cones. Each one trains a competence of the grid and links to a Lesson of the Ball.",
     "moreLabel": "Go further",
     "lessonsHint": "The 40 pages of Kaydoudou's notebook",
     "notebookHint": "Write down what you learn, like Kaydoudou"
@@ -292,7 +293,7 @@
     "waterTitle": "Drink water",
     "waterBody": "Before, during and after. A water bottle next to the wall, always.",
     "restTitle": "Rest",
-    "restBody": "One day a week without challenges. Warm up for five minutes before sprints. If something hurts, stop and tell an adult."
+    "restBody": "One day a week without challenges. Warm up for five minutes before sprints. If it hurts, stop and tell your coach or your parents."
   },
   "progress": {
     "title": "My progress",
@@ -317,7 +318,7 @@
   },
   "self": {
     "title": "How I see myself",
-    "body": "Where are you on the ten Njangi skills? Be honest: it is for you, nothing is sent anywhere.",
+    "body": "Where do you stand on the ten competences of the grid? Be honest: it is for you, nothing is sent.",
     "scale": "Scale from 1 to 4",
     "levels": {
       "1": "I'm discovering it",
@@ -463,5 +464,345 @@
     "fLesson": "Linked lesson",
     "fLessonHint": "Link your page to a Ball Lesson (optional).",
     "noLesson": "None"
+  },
+  "perf": {
+    "hero": {
+      "matchDay": "Match day",
+      "matchLine": "Against {{opponent}}, kick-off at {{time}}.",
+      "matchLineNoTime": "Against {{opponent}}.",
+      "today": "Today",
+      "todayMd": "Today · {{md}}",
+      "form": "Form",
+      "toLog": "To log",
+      "load": "7-day load",
+      "lastIndice": "Indice {{v}}"
+    },
+    "link": {
+      "title": "Your squad record is not linked yet.",
+      "body": "Link your profile to your name in the squad: your minutes, your objectives and the staff's observations will show up here.",
+      "cta": "Link my profile"
+    },
+    "form": {
+      "eyebrow": "Every morning",
+      "title": "My form today",
+      "hint": "Thirty seconds, before training. Answer on your own and honestly: nobody judges your answers, they help dose your week.",
+      "dropTitle": "Your form has dropped for three days",
+      "dropBody": "Your last three scores are clearly below your average. Talk to the medical staff before the next session.",
+      "private": "Your answers stay on this device.",
+      "save": "Save my form",
+      "progress": "{{n}} of {{total}}",
+      "items": {
+        "sleep": {
+          "label": "Sleep",
+          "low": "Very poor",
+          "high": "Excellent",
+          "short": "Sleep"
+        },
+        "fatigue": {
+          "label": "Freshness",
+          "low": "Exhausted",
+          "high": "Very fresh",
+          "short": "Fresh"
+        },
+        "soreness": {
+          "label": "Soreness",
+          "low": "Very sore",
+          "high": "None",
+          "short": "Muscles"
+        },
+        "mood": {
+          "label": "Mood",
+          "low": "Very low",
+          "high": "Excellent",
+          "short": "Mood"
+        },
+        "stress": {
+          "label": "Stress",
+          "low": "Very stressed",
+          "high": "Very relaxed",
+          "short": "Stress"
+        }
+      },
+      "band": {
+        "fresh": "Fresh",
+        "ok": "Fair",
+        "low": "Below par"
+      },
+      "vsBaseline": "{{diff}} against your average ({{avg}} out of 25, 28 days)",
+      "noBaseline": "Your average appears after five days of answers.",
+      "detail": "The five answers",
+      "lowHint": "Low score: tell the staff before the session, they will adjust your load."
+    },
+    "rpe": {
+      "title": "After the session",
+      "ctxMatch": "Your effort against {{opponent}}, about thirty minutes after the final whistle.",
+      "ctxSession": "{{title}}: log your effort about thirty minutes after the session ends.",
+      "ctxOwn": "A session on your own or a run: log your effort and how long it lasted.",
+      "done": "Effort {{rpe}} out of 10 ({{word}}), {{minutes}} min.",
+      "none": "No session planned today.",
+      "add": "Log a session on my own",
+      "when": "Log it half an hour after the session: your effort from 0 to 10 and the minutes.",
+      "question": "How hard was the session?",
+      "words": {
+        "0": "Rest",
+        "1": "Easy",
+        "2": "Moderate",
+        "3": "Hard",
+        "4": "Very hard",
+        "5": "Maximal"
+      },
+      "minutes": "Duration (minutes)",
+      "preview": "Session load:",
+      "formula": "Effort times minutes: the load of the session.",
+      "save": "Save my effort",
+      "addNow": "Log my effort"
+    },
+    "load": {
+      "ua": "{{n}} AU",
+      "uaShort": "AU",
+      "eyebrow": "Training load",
+      "title": "My load",
+      "hint": "Your effort from 0 to 10 times the minutes, in arbitrary units (AU). You compare yourself with yourself, week after week.",
+      "empty": "No load logged yet. After your next session, rate your effort from 0 to 10: your curve starts there.",
+      "last7": "Last 7 days",
+      "sessions_one": "{{count}} session or match",
+      "sessions_other": "{{count}} sessions and matches",
+      "prevAvg": "Average of the 3 weeks before",
+      "delta": "Change",
+      "band": {
+        "spike": "Load spike",
+        "steady": "Steady load",
+        "light": "Lighter week"
+      },
+      "spikeHint": "This week is clearly heavier than the previous ones. Talk to the staff before adding more.",
+      "daily": "Daily load, last 14 days",
+      "dailyAria": "Load of each day over 14 days, in AU: {{values}}",
+      "weeks": "The last four weeks",
+      "wk": "W-{{n}}"
+    },
+    "trend": {
+      "eyebrow": "Two weeks",
+      "title": "My form over time",
+      "hint": "Your morning score out of 25 against your average. The curve matters more than today's number.",
+      "empty": "Your curve appears after two days of answers.",
+      "avg": "Your average",
+      "aria": "Form scores of the last 14 days: {{values}}",
+      "rowLoad": "Effort {{rpe}}, {{n}} AU",
+      "noLoad": "No session",
+      "low": "Low point: {{items}}"
+    },
+    "week": {
+      "eyebrow": "My week",
+      "titleMatch": "Building up to {{opponent}}",
+      "title": "The week",
+      "hint": "Every day has its job, from the day after the match to the eve of the next. {{n}} min of training planned.",
+      "days": "Days of the week",
+      "session": "Session",
+      "rest": "Rest",
+      "today": "Today",
+      "legendIntensity": "Usual intensity",
+      "legendLogged": "Effort logged",
+      "matchDay": "Match against {{opponent}}",
+      "score": "Score: {{us}}-{{them}}",
+      "staffNotes": "Staff notes",
+      "restTitle": "Rest day",
+      "logged": "Logged: effort {{rpe}} out of 10, {{minutes}} min, so {{n}} AU.",
+      "hintEmpty": "Every day has its job, from the day after the match to the eve of the next. No session planned yet."
+    },
+    "mdWhy": {
+      "MD+1": "The day after the match: regeneration for those who played, a high-intensity top-up for the others.",
+      "MD-4": "Tension: small spaces, duels, changes of direction. The most intense day of the week.",
+      "MD-3": "Duration: big spaces and long blocks, at match tempo.",
+      "MD-2": "Speed: short, explosive efforts, transitions and finishing, full recovery between reps.",
+      "MD-1": "Activation: low volume, speed and precision, set pieces. The legs stay fresh.",
+      "youth": "Development session: lots of touches, play and decisions.",
+      "rest": "No session: sleep, hydration and treatment. The body improves while it recovers."
+    },
+    "next": {
+      "none": "No match on the calendar",
+      "noneBody": "As soon as the staff adds the next match, it shows up here with the week that prepares it.",
+      "myPlace": "My place",
+      "starterAt": "Expected to start: {{slot}}",
+      "starter": "Starting in the planned line-up",
+      "bench": "On the bench in the planned line-up",
+      "role": "{{pos}}, number {{n}} role",
+      "plan": "The game plan",
+      "planKeys": {
+        "possession": "In possession",
+        "transitionDef": "When we lose it"
+      },
+      "sheet": "Match sheet"
+    },
+    "last": {
+      "eyebrow": "My last match",
+      "emptyTitle": "No match played yet",
+      "emptyBody": "After your first match, you will see the team's Indice Njangi here, your share of the play and your actions minute by minute.",
+      "title": "Against {{opponent}}",
+      "result": {
+        "win": "Win",
+        "loss": "Loss",
+        "draw": "Draw"
+      },
+      "teamIndice": "Team Indice Njangi",
+      "untagged": "This match was not tagged live: no Indice Njangi and no detailed actions.",
+      "myPart": "My share of the play",
+      "minutes": "Minutes played",
+      "started": "Started",
+      "cameOn": "Came on",
+      "progressive": "Actions that move us forward",
+      "shareOfTeam": "{{v}} of the team",
+      "entries": "Final third and box entries",
+      "boxEntries_one": "{{count}} into the box",
+      "boxEntries_other": "{{count}} into the box",
+      "shots": "Shots",
+      "goals_one": "{{count}} goal",
+      "goals_other": "{{count}} goals",
+      "onTarget_one": "{{count}} on target",
+      "onTarget_other": "{{count}} on target",
+      "actions": "My tagged actions",
+      "more_one": "and {{count}} more in the report",
+      "more_other": "and {{count}} more in the report",
+      "noActions": "No action tagged to you in this match.",
+      "report": "Match report",
+      "addVideo": "Add the match video",
+      "analysis": "Open the analysis",
+      "actionsCount_one": "{{count}} action tagged to you",
+      "actionsCount_other": "{{count}} actions tagged to you",
+      "trackAria": "Your {{count}} tagged actions across the match, {{minutes}} minutes played",
+      "kind": {
+        "ball": "On the ball",
+        "regain": "Ball won",
+        "shot": "Shot or goal",
+        "loss": "Ball lost"
+      },
+      "onPitch": "On the pitch"
+    },
+    "obj": {
+      "eyebrow": "Current cycle",
+      "title": "My objectives",
+      "hint": "One to {{n}} objectives at a time, for six to eight weeks, then a review with the staff.",
+      "noLink": "Link your profile to your squad record to see your objectives and your season.",
+      "empty": "No objective in progress. Pick one or two things to work on this cycle, with the staff.",
+      "set": "Set an objective",
+      "byStaff": "Set by the staff",
+      "level": "Current level: {{level}}",
+      "drills": "The Njangi Code drills that train them",
+      "manage": "Manage my objectives in my journey"
+    },
+    "season": {
+      "eyebrow": "Season {{label}}",
+      "title": "My season",
+      "starts_one": "{{count}} start",
+      "starts_other": "{{count}} starts",
+      "evals": "Staff evaluations",
+      "lastEval": "latest on {{date}}",
+      "lastObs": "Latest staff observation",
+      "tone": {
+        "plus": "Strength",
+        "work": "To work on"
+      },
+      "inMatch": "against {{opponent}}",
+      "inMatchMin": "against {{opponent}}, minute {{min}}",
+      "open": "Open my journey"
+    },
+    "links": {
+      "label": "Go further",
+      "space": "My performance space",
+      "spaceHint": "Form, load and the last match in detail",
+      "parcoursHint": "Evaluations and observations, season after season",
+      "journalHint": "What worked, what you adjust",
+      "codeHint": "The method: possession with purpose"
+    },
+    "journal": {
+      "title": "My journal",
+      "docTitle": "My journal",
+      "eyebrow": "Player journal",
+      "heading": "My player journal",
+      "subtitle": "After every session or match: what worked, what you adjust, what you want to watch again on video. A few lines are enough.",
+      "emptyTitle": "Your journal is still empty",
+      "emptyBody": "The players who improve most write often, and short. Start with your last match: one action you keep, one you want to fix.",
+      "first": "Write my first note",
+      "printTitle": "{{name}}'s journal",
+      "new": "New note",
+      "newTitle": "New note",
+      "editTitle": "Edit the note",
+      "search": "Search my journal",
+      "fTitlePh": "Bafoussam: our build-up",
+      "fTextPh": "What worked, what I change...",
+      "fTextHint": "A few lines are enough.",
+      "count_one": "{{count}} note in your journal",
+      "count_other": "{{count}} notes in your journal",
+      "saved": "Note added to your journal.",
+      "updated": "Note updated.",
+      "deleted": "Note deleted.",
+      "deleteTitle": "Delete this note?",
+      "deleteBody": "The note “{{title}}” from {{date}} will be erased from this device.",
+      "prompt": {
+        "worked": "What worked:",
+        "keep": "One action I keep:",
+        "adjust": "To adjust:",
+        "video": "To watch again on video:"
+      },
+      "fText": "My note"
+    },
+    "space": {
+      "docTitle": "Performance space",
+      "eyebrow": "Performance space",
+      "formToday": "Form today",
+      "formLast": "Latest form",
+      "vsPrev": "{{v}} on 3 weeks",
+      "lastIndice": "Last Indice",
+      "vs": "against {{opponent}}",
+      "objectives": "Active objectives",
+      "cycle": "this cycle",
+      "season": "Season {{label}}",
+      "nav": {
+        "semaine": "The week",
+        "forme": "Form and load",
+        "match": "Last match",
+        "objectifs": "Objectives",
+        "regard": "Self-assessment"
+      },
+      "weekTitle": "The week",
+      "weekBody": "The staff's programme day by day, and the next match.",
+      "formTitle": "Form and load",
+      "formBody": "The morning questionnaire, your effort after every session and the comparison with your usual weeks (The Njangi Code, chapter 29).",
+      "matchTitle": "Last match",
+      "matchBody": "The team's Indice Njangi, your share of the play and each of your tagged actions.",
+      "objTitle": "Objectives and season",
+      "objBody": "What you are working on this cycle, the drills that go with it and your season in numbers."
+    },
+    "self": {
+      "eyebrow": "Self-assessment",
+      "title": "How I rate my game",
+      "body": "The ten competences of the staff's grid (The Njangi Code, chapter 25). Be hard on yourself, then compare with the staff's evaluation. Nothing is sent.",
+      "me": "Me",
+      "coach": "The staff",
+      "radarTitle": "Me and the staff",
+      "radarEmpty": "Pick a level for each competence: your radar appears here, next to the staff's evaluation.",
+      "coachNote": "The staff's evaluation comes from your squad record. A gap? It is a good topic for the next review.",
+      "staffSays": "staff: {{level}}"
+    },
+    "skillHint": {
+      "scan": "I check my surroundings before every reception, on both sides.",
+      "controle": "My first touch takes the play into free space.",
+      "passe": "I pick the line-breaking pass when it is on.",
+      "conduite": "I carry with my head up to draw, then release.",
+      "dribble-njangi": "I dribble to draw two opponents, then I pass.",
+      "appels": "My runs create space for my teammates.",
+      "communication": "I organise with my voice: calls, cover, rest defence.",
+      "protection": "I keep the ball with my back to goal under pressure.",
+      "contre-pression": "When we lose it, I press within five seconds.",
+      "decision": "I decide before the ball arrives, at the right tempo."
+    },
+    "team": {
+      "title": "Do you play for a club?",
+      "body": "Add your team: your week, your matches and your journey will show up here. You can log your form and load without a team too."
+    },
+    "linkStaff": {
+      "title": "Staff preview.",
+      "body": "Here, every player aged 16 and over sees their week, form, load and last match. Pick a squad record to see the space with that player's data.",
+      "cta": "Pick a player"
+    }
   }
 }

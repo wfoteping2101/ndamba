@@ -48,7 +48,7 @@
       "Pour les U9, une seule règle au début : franchir une porte."
     ],
     "measure": "Sur 8 duels par joueur : portes franchies. Part des actions où le défenseur a été fixé avant (l'adjoint coche fixé ou pas). En 2 contre 1 : passes données au bon moment.",
-    "story": "« Mon dribble, c'est un cadeau », écrit BriBri en gros dans le carnet : il attire deux adversaires, puis il donne au partenaire qui a l'espace."
+    "story": "« Mon dribble, c'est un cadeau », écrit Kaydoudou en gros dans le carnet : il attire deux adversaires, puis il donne au partenaire qui a l'espace."
   },
   "en": {
     "title": "The Njangi Dribble Gates",
@@ -86,7 +86,7 @@
       "For U9s, one rule at first: get through a gate."
     ],
     "measure": "Out of 8 duels per player: gates crossed. Share of actions where the defender was pinned first (the assistant ticks pinned or not). In 2 v 1: passes released at the right moment.",
-    "story": "\"My dribble is a gift,\" BriBri writes in the notebook: he draws two opponents, then gives it to the teammate with space."
+    "story": "\"My dribble is a gift,\" Kaydoudou writes in the notebook: he draws two opponents, then gives it to the teammate with space."
   },
   "diagram": {
     "view": "grid", "w": 22, "h": 16,

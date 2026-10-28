@@ -11,7 +11,7 @@ const here = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(here, '..')
 const BEATS = path.join(ROOT, 'tome1', 'art', 'beats')
 const CH = path.join(ROOT, 'tome1', 'chapters')
-const CAST = ['KAY', 'BRI', 'MAMI', 'FOKOU', 'PAPA', 'MAMAN']
+const CAST = ['BRI', 'KAY', 'MAMI', 'FOKOU', 'PAPA', 'MAMAN']
 const SHOTS = ['close', 'medium', 'wide', 'dynamic', 'quiet']
 const FIELDS = ['id', 'anchor', 'shot', 'cast', 'outfit', 'action', 'location', 'light', 'camera', 'alt']
 

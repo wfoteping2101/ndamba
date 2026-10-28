@@ -3,34 +3,34 @@
   "beats": [
     {
       "id": "ch08b",
-      "anchor": "« Et moi, les grands, je passe dessous », répond BriBri.",
+      "anchor": "« Et moi, les grands, je passe dessous », répond Kaydoudou.",
       "shot": "medium",
       "cast": [
-        "BRI",
-        "KAY"
+        "KAY",
+        "BRI"
       ],
-      "extras": "The captain of the Panthères de Deïdo (12): the tallest boy of the tournament, long and strong, dark brown skin, very short hair, a confident smirk, in a yellow football shirt covered with black leopard spots and black shorts, bending down to look at BriBri from very high up. Behind him, Panthères players a head taller than BriBri in the same spotted yellow shirts, and their goalkeeper, a lanky boy with incredibly long arms hanging nearly to his knees, in a plain dark green goalkeeper top. Prosper, called Radio (11): a slim boy with close-cropped hair, in a faded oversized white T-shirt with a blurred, unreadable print, swallowing hard.",
-      "outfit": "BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, small soft round afro, the gap between his front teeth showing. Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots.",
-      "action": "Before the final, the giant captain leans over BriBri, chin high, sneering. BriBri stands on his tiptoes to reach a little higher, looks straight up into his eyes and answers with a cheeky grin. Kaydoudou stands calmly at his brother's side, a hint of a smile in the corner of his mouth. Radio hides half behind Kaydoudou.",
+      "extras": "The captain of the Panthères de Deïdo (12): the tallest boy of the tournament, long and strong, dark brown skin, very short hair, a confident smirk, in a yellow football shirt covered with black leopard spots and black shorts, bending down to look at Kaydoudou from very high up. Behind him, Panthères players a head taller than Kaydoudou in the same spotted yellow shirts, and their goalkeeper, a lanky boy with incredibly long arms hanging nearly to his knees, in a plain dark green goalkeeper top. Prosper, called Radio (11): a slim boy with close-cropped hair, in a faded oversized white T-shirt with a blurred, unreadable print, swallowing hard.",
+      "outfit": "Kaydoudou in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, small soft round afro, the gap between his front teeth showing. BriBri in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots.",
+      "action": "Before the final, the giant captain leans over Kaydoudou, chin high, sneering. Kaydoudou stands on his tiptoes to reach a little higher, looks straight up into his eyes and answers with a cheeky grin. BriBri stands calmly at his brother's side, a hint of a smile in the corner of his mouth. Radio hides half behind BriBri.",
       "location": "The edge of the red-earth pitch of Bonamoussadi on final day, packed with people on the walls, on the roofs and on motorbike taxis; big goatskin drums under the mango tree.",
       "light": "Hot four o'clock sun, strong contrast, the spotted yellow shirts very bright.",
-      "camera": "Medium shot from a low child's eye level, the captain towering at the top of the frame, BriBri's upturned face in the centre.",
-      "alt": "Le capitaine géant des Panthères se penche sur BriBri, qui se dresse sur la pointe des pieds et lui répond avec un grand sourire."
+      "camera": "Medium shot from a low child's eye level, the captain towering at the top of the frame, Kaydoudou's upturned face in the centre.",
+      "alt": "Le capitaine géant des Panthères se penche sur Kaydoudou, qui se dresse sur la pointe des pieds et lui répond avec un grand sourire."
     },
     {
       "id": "ch08c",
       "anchor": "Ousmane s'envole vers la droite.",
       "shot": "dynamic",
       "cast": [
-        "BRI"
+        "KAY"
       ],
       "extras": "Ousmane, called Petit Pied (10), the goalkeeper: a calm, slim boy from the north of Cameroon with medium dark brown skin, close-cropped hair and a serious face, small feet but enormous long flat hands, in a faded grey T-shirt and dark shorts, flying sideways to his right with his body fully stretched. The captain of the Panthères de Deïdo (12): the tallest boy, dark brown skin, very short hair, in a yellow shirt with black leopard spots, frozen after his kick. Behind the goal, the crowd on the wall and the roofs, all mouths open, completely still.",
-      "outfit": "BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, red dust on his legs, both hands on top of his small afro. The match ball is a plain worn leather ball.",
-      "action": "The last penalty, frozen in slow motion. Ousmane flies to his right and pushes the ball with the very tips of his long fingers. The ball hits the bamboo post, which shakes and leans a little more. In the foreground, seen from behind and from the side, BriBri watches with both hands on his head, his whole body tense.",
+      "outfit": "Kaydoudou in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, red dust on his legs, both hands on top of his small afro. The match ball is a plain worn leather ball.",
+      "action": "The last penalty, frozen in slow motion. Ousmane flies to his right and pushes the ball with the very tips of his long fingers. The ball hits the bamboo post, which shakes and leans a little more. In the foreground, seen from behind and from the side, Kaydoudou watches with both hands on his head, his whole body tense.",
       "location": "The bamboo goal of the red-earth pitch of Bonamoussadi, a makeshift net, the mango tree, the neighbour's wire fence behind the goal.",
       "light": "Late afternoon, golden low sun, dust hanging in the air around the goalkeeper, a halo of light along his outstretched arms.",
-      "camera": "Dynamic side angle at ground level, Ousmane stretched across the frame, the trembling post on the right, BriBri blurred in the left foreground.",
-      "alt": "Au ralenti, Ousmane s'envole et pousse le dernier tir sur le poteau en bambou, sous les yeux de BriBri, les mains sur la tête."
+      "camera": "Dynamic side angle at ground level, Ousmane stretched across the frame, the trembling post on the right, Kaydoudou blurred in the left foreground.",
+      "alt": "Au ralenti, Ousmane s'envole et pousse le dernier tir sur le poteau en bambou, sous les yeux de Kaydoudou, les mains sur la tête."
     },
     {
       "id": "ch08d",
@@ -38,15 +38,15 @@
       "shot": "wide",
       "cast": [
         "MAMI",
-        "BRI"
+        "KAY"
       ],
       "extras": "The mothers of Bonamoussadi: women of all ages with dark brown skin in bright, many-coloured wax-print dresses and headwraps, dancing in a circle around Mami and clapping. Behind them, three drummers playing big goatskin drums under the mango tree, and children jumping on the low wall.",
-      "outfit": "Mami Nyanga (68), small and very straight, in her red-and-yellow wax-print dress and matching headscarf slipping off her head, sandals, a huge laugh. BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, covered in red dust, the gap in his teeth showing.",
-      "action": "Champions. In the middle of the pitch, Mami dances with both arms raised high, her headscarf sliding back, singing with her eyes closed. The mothers of the neighbourhood dance and answer her song all around. BriBri points at her and shouts with joy, laughing so hard he bends forward.",
+      "outfit": "Mami Nyanga (68), small and very straight, in her red-and-yellow wax-print dress and matching headscarf slipping off her head, sandals, a huge laugh. Kaydoudou in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, covered in red dust, the gap in his teeth showing.",
+      "action": "Champions. In the middle of the pitch, Mami dances with both arms raised high, her headscarf sliding back, singing with her eyes closed. The mothers of the neighbourhood dance and answer her song all around. Kaydoudou points at her and shouts with joy, laughing so hard he bends forward.",
       "location": "The middle of the red-earth pitch of Bonamoussadi just after the final, full of people, the bamboo goals and the mango tree around.",
       "light": "Sunset, warm orange light, red dust glowing like embers in the air.",
-      "camera": "Wide shot at eye level, Mami at the centre of a circle of dancing women, BriBri in the right foreground.",
-      "alt": "Au milieu du terrain, Mami danse les bras en l'air avec les mamans du quartier, et BriBri rit en la montrant du doigt."
+      "camera": "Wide shot at eye level, Mami at the centre of a circle of dancing women, Kaydoudou in the right foreground.",
+      "alt": "Au milieu du terrain, Mami danse les bras en l'air avec les mamans du quartier, et Kaydoudou rit en la montrant du doigt."
     }
   ]
 }

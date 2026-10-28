@@ -48,7 +48,7 @@
       "5 contre 1 : deux attaquants sur le même côté pour multiplier les angles."
     ],
     "measure": "Nombre moyen de passes consécutives par séquence, et nombre de fois où le porteur n'a aucune ligne de passe libre (objectif : presque jamais).",
-    "story": "Le premier jour en Catalogne, BriBri reste une éternité au milieu du rondo ; ici, le taureau change chaque minute et chacun apprend à offrir un angle."
+    "story": "Le premier jour en Catalogne, Kaydoudou reste une éternité au milieu du rondo ; ici, le taureau change chaque minute et chacun apprend à offrir un angle."
   },
   "en": {
     "title": "The Bull",
@@ -86,7 +86,7 @@
       "5 v 1: two attackers on the same side to create more angles."
     ],
     "measure": "Average number of consecutive passes per sequence, and how often the player on the ball has no open passing lane (target: almost never).",
-    "story": "On his first day in Catalonia, BriBri spends forever in the middle of the rondo; here the bull changes every minute and everyone learns to offer an angle."
+    "story": "On his first day in Catalonia, Kaydoudou spends forever in the middle of the rondo; here the bull changes every minute and everyone learns to offer an angle."
   },
   "diagram": {
     "view": "grid", "w": 10, "h": 10,

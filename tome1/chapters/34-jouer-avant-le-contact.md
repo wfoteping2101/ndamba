@@ -3,24 +3,24 @@ numero: 34
 slug: jouer-avant-le-contact
 titre: Jouer avant le contact
 partie: 5
-pov: BriBri
-resume: En Angleterre, BriBri passe plus de temps par terre que debout. Entre un gardien farceur, un rival qui court partout et un entraîneur qui parle de bus, il va devoir apprendre à faire disparaître les duels.
-illustration: Plan moyen sur la pelouse synthétique trempée de Kingsbridge, un mardi soir, sous une pluie froide et les projecteurs. BriBri, petite afro piquée de brins de synthétique noir, chaussettes dépareillées rouge et jaune, vient de pousser le ballon d'un seul contrôle loin de Jaden Clarke et le lâche déjà vers son frère, une demi-seconde avant le contact. Jaden, grand, athlétique, glisse les deux jambes en avant dans une flaque qui gicle très haut : il tacle l'air. À gauche, Kaydoudou, raie dessinée à gauche, reçoit la passe le corps ouvert, mais ses yeux restent fixés sur Jaden. Émotion : l'éclat de rire, et une rivalité qui couve.
+pov: Kaydoudou
+resume: En Angleterre, Kaydoudou passe plus de temps par terre que debout. Entre un gardien farceur, un rival qui court partout et un entraîneur qui parle de bus, il va devoir apprendre à faire disparaître les duels.
+illustration: Plan moyen sur la pelouse synthétique trempée de Kingsbridge, un mardi soir, sous une pluie froide et les projecteurs. Kaydoudou, petite afro piquée de brins de synthétique noir, chaussettes dépareillées rouge et jaune, vient de pousser le ballon d'un seul contrôle loin de Jaden Clarke et le lâche déjà vers son frère, une demi-seconde avant le contact. Jaden, grand, athlétique, glisse les deux jambes en avant dans une flaque qui gicle très haut : il tacle l'air. À gauche, BriBri, raie dessinée à gauche, reçoit la passe le corps ouvert, mais ses yeux restent fixés sur Jaden. Émotion : l'éclat de rire, et une rivalité qui couve.
 ---
 
 « Get up, little man ! »
 
-Un défenseur enjambe BriBri comme on enjambe une flaque.
+Un défenseur enjambe Kaydoudou comme on enjambe une flaque.
 
-BriBri reste allongé dans l'herbe mouillée. Vu d'en bas, le ciel de Londres est gris perle. Depuis un mois, il le connaît par cœur.
+Kaydoudou reste allongé dans l'herbe mouillée. Vu d'en bas, le ciel de Londres est gris perle. Depuis un mois, il le connaît par cœur.
 
 « Treize, marmonne-t-il. Onze au premier match. Neuf au deuxième. Et treize aujourd'hui. Record battu. »
 
 « Play on ! » crie l'arbitre, en agitant les bras comme quelqu'un qui chasse des poules.
 
-Et le jeu repart. Sans BriBri.
+Et le jeu repart. Sans Kaydoudou.
 
-« Little man. » Petit homme. BriBri déteste ça encore plus que la pluie.
+« Little man. » Petit homme. Kaydoudou déteste ça encore plus que la pluie.
 
 Au bout de vingt minutes, ses chaussettes, une rouge et une jaune, sont marron. Et jusqu'au soir, sa petite afro garde des brins de synthétique noir, comme du poivre.
 
@@ -30,21 +30,21 @@ Alors il se plaint. Il lève les bras vers l'arbitre. Il roule deux fois sur lui
 
 Fiiiiu ! siffle le public adverse. Et c'est tout.
 
-Dans le vestiaire, BriBri vide ses crampons pleins de boue.
+Dans le vestiaire, Kaydoudou vide ses crampons pleins de boue.
 
 « Ils jouent au foot ou au bowling ? Et moi, je suis la quille ? »
 
-« Les deux », dit Kaydoudou en haussant les épaules. Lui aussi a assez de bleus pour remplir une boîte de peinture.
+« Les deux », dit BriBri en haussant les épaules. Lui aussi a assez de bleus pour remplir une boîte de peinture.
 
-BriBri compte sur ses doigts. « En Amérique, on trouvait mes chaussettes bizarres. En France, on me trouvait petit mais malin. En Espagne, lent au rondo. Ici, on me trouve par terre ! »
+Kaydoudou compte sur ses doigts. « En Amérique, on trouvait mes chaussettes bizarres. En France, on me trouvait petit mais malin. En Espagne, lent au rondo. Ici, on me trouve par terre ! »
 
 * * *
 
-Dans ce vestiaire, BriBri regarde surtout deux personnes.
+Dans ce vestiaire, Kaydoudou regarde surtout deux personnes.
 
 La première, c'est Jaden Clarke. Quinze ans, numéro 4. Et il court.
 
-« Regarde-le, chuchote BriBri à Freddie. Il défend devant notre surface. Et hop, dix secondes plus tard, il est chez eux. Il ne transpire même pas. Il a un moteur caché sous le maillot ! »
+« Regarde-le, chuchote Kaydoudou à Freddie. Il défend devant notre surface. Et hop, dix secondes plus tard, il est chez eux. Il ne transpire même pas. Il a un moteur caché sous le maillot ! »
 
 « And he doesn't like your brother, ricane Freddie. He says your brother is a lamppost. »
 
@@ -52,21 +52,21 @@ La première, c'est Jaden Clarke. Quinze ans, numéro 4. Et il court.
 
 « He just stands there. And he talks with his hands, like a policeman. »
 
-« Et Kaydoudou, lui, il dit que Jaden court partout comme un poulet sans tête. »
+« Et BriBri, lui, il dit que Jaden court partout comme un poulet sans tête. »
 
 Ils ne se le disent pas en face. Ils se le montrent. C'est pire.
 
-*Mami dirait : deux coqs dans la même cour*, pense BriBri. *Beaucoup de bruit, et pas un seul œuf.*
+*Mami dirait : deux coqs dans la même cour*, pense Kaydoudou. *Beaucoup de bruit, et pas un seul œuf.*
 
 La deuxième personne, c'est Freddie Shaw, le gardien. Quatorze ans, un mètre quatre-vingts, des taches de rousseur jusque sur les paupières, et des oreilles qui rougissent au moindre compliment.
 
 « Mes bras sont si longs, se vante Freddie, que je peux me gratter le dos des deux côtés à la fois. »
 
-Le premier jour, il a regardé les pieds de BriBri. Une chaussette rouge, une chaussette jaune.
+Le premier jour, il a regardé les pieds de Kaydoudou. Une chaussette rouge, une chaussette jaune.
 
 « Nice socks. I'll call you Socks. »
 
-« D'accord, a répondu BriBri. Et moi, je t'appelle Octopus. La pieuvre ! » Il a mimé huit bras.
+« D'accord, a répondu Kaydoudou. Et moi, je t'appelle Octopus. La pieuvre ! » Il a mimé huit bras.
 
 Freddie a trouvé ça magnifique. Depuis, ils sont inséparables.
 
@@ -78,19 +78,19 @@ Un lundi, il enlève ses gants et lève un doigt.
 
 « Why are football stadiums so cool ? Because every seat has a fan ! »
 
-Le vestiaire grogne. Puis il rit. BriBri, lui, ne comprend pas.
+Le vestiaire grogne. Puis il rit. Kaydoudou, lui, ne comprend pas.
 
-« Fan, ça veut dire supporter, lui souffle Kaydoudou. Mais aussi ventilateur. »
+« Fan, ça veut dire supporter, lui souffle BriBri. Mais aussi ventilateur. »
 
-Trois secondes. *Chaque siège a son ventilateur !* BriBri éclate de rire tout seul, longtemps après les autres. C'est si drôle que tout le monde repart.
+Trois secondes. *Chaque siège a son ventilateur !* Kaydoudou éclate de rire tout seul, longtemps après les autres. C'est si drôle que tout le monde repart.
 
 « Two points ! » réclame Freddie.
 
-BriBri se lève. Son arme secrète : l'imitation. Il roule des épaules, prend une voix de tonnerre et frappe dans ses mains.
+Kaydoudou se lève. Son arme secrète : l'imitation. Il roule des épaules, prend une voix de tonnerre et frappe dans ses mains.
 
 « INTENSITY IS A CHOICE ! »
 
-Le vestiaire hurle. Puis BriBri devient l'arbitre du samedi.
+Le vestiaire hurle. Puis Kaydoudou devient l'arbitre du samedi.
 
 « Play on... play on... » Il fait semblant qu'un défenseur invisible lui marche sur la tête. « Aïe ! Play on ! »
 
@@ -100,7 +100,7 @@ Dans son coin, même Jaden sourit. Puis il se rappelle qu'il ne sourit pas.
 
 À la fin du mois, le tableau dit : OCTOPUS 11, SOCKS 11.
 
-Et BriBri tombe toujours.
+Et Kaydoudou tombe toujours.
 
 * * *
 
@@ -114,7 +114,7 @@ Même lui dit Socks, maintenant.
 
 « Way too much. »
 
-« L'arbitre ne me sauvera pas, répète BriBri tout bas. Seul mon premier contrôle me sauvera. »
+« L'arbitre ne me sauvera pas, répète Kaydoudou tout bas. Seul mon premier contrôle me sauvera. »
 
 Okafor pose un plot jaune sur le synthétique.
 
@@ -124,7 +124,7 @@ Okafor pose un plot jaune sur le synthétique.
 
 « Away. Always away. And then ? »
 
-BriBri ne sait pas.
+Kaydoudou ne sait pas.
 
 « Listen. Here, the defender is a bus. Big. Heavy. He can't turn. If you're on the road when the bus arrives... BOOM ! » Okafor frappe son poing dans sa main. « So you don't fight the bus. You leave before it arrives. When he gets there, the ball is already gone. He tackles the air. »
 
@@ -132,13 +132,13 @@ BriBri ne sait pas.
 
 « A clever little lad doesn't need to win duels, dit Okafor. He makes them disappear. »
 
-« Un petit malin ne gagne pas les duels, traduit BriBri. Il les fait disparaître. Comme un magicien ! »
+« Un petit malin ne gagne pas les duels, traduit Kaydoudou. Il les fait disparaître. Comme un magicien ! »
 
 Alors ils travaillent. Okafor fait le bus.
 
 « One... two ! »
 
-À « two », il arrive. BriBri doit contrôler loin du plot, puis lâcher le ballon avant.
+À « two », il arrive. Kaydoudou doit contrôler loin du plot, puis lâcher le ballon avant.
 
 Premier essai : bam, contre la barrière.
 
@@ -148,7 +148,7 @@ Troisième : le ballon reste coincé sous sa semelle. BAM.
 
 « Again ! Away, Socks ! Away ! »
 
-Et d'un coup, BriBri comprend.
+Et d'un coup, Kaydoudou comprend.
 
 « Le premier contrôle, ce n'est pas un arrêt ! C'est un départ ! »
 
@@ -166,13 +166,13 @@ Le bus arrive dans le vide.
 
 « Here comes the bus », dit Jaden, sans sourire.
 
-Il fonce sur BriBri comme un train de marchandises.
+Il fonce sur Kaydoudou comme un train de marchandises.
 
-Tout ralentit. La pluie froide dans les projecteurs. Les brins de synthétique noir dans son afro. Les crampons de Jaden qui mordent le sol. Et Kaydoudou, sur la gauche, qui ouvre son corps.
+Tout ralentit. La pluie froide dans les projecteurs. Les brins de synthétique noir dans son afro. Les crampons de Jaden qui mordent le sol. Et BriBri, sur la gauche, qui ouvre son corps.
 
 Un contrôle. Un seul. Le ballon part loin de Jaden.
 
-Une demi-seconde avant le contact, BriBri le lâche déjà vers son frère.
+Une demi-seconde avant le contact, Kaydoudou le lâche déjà vers son frère.
 
 Jaden glisse, les deux jambes en avant, et finit sa course dans une flaque.
 
@@ -184,31 +184,31 @@ L'eau gicle jusqu'aux genoux d'Okafor.
 
 « Good, Socks, dit Okafor. Very good. »
 
-Tout le monde éclate de rire. Sauf Jaden, qui se relève tout seul. Et sauf Kaydoudou. Il a reçu la passe le corps ouvert, mais ses yeux ne quittent pas Jaden.
+Tout le monde éclate de rire. Sauf Jaden, qui se relève tout seul. Et sauf BriBri. Il a reçu la passe le corps ouvert, mais ses yeux ne quittent pas Jaden.
 
 * * *
 
-Dans le bus du retour, BriBri fonce vers le siège du pilote. Kaydoudou s'assoit à côté de lui sans rien dire. Il a la tête des jours où il réfléchit trop.
+Dans le bus du retour, Kaydoudou fonce vers le siège du pilote. BriBri s'assoit à côté de lui sans rien dire. Il a la tête des jours où il réfléchit trop.
 
-Au feu rouge, BriBri colle son front contre la vitre.
+Au feu rouge, Kaydoudou colle son front contre la vitre.
 
-« Regarde, Kayd. Le pigeon, au milieu de la route. Il se promène comme un contrôleur. Le bus redémarre... Il ne bouge pas... Il attend... Il attend encore... Et HOP ! Deux petits pas, et il s'envole ! »
+« Regarde, Bri. Le pigeon, au milieu de la route. Il se promène comme un contrôleur. Le bus redémarre... Il ne bouge pas... Il attend... Il attend encore... Et HOP ! Deux petits pas, et il s'envole ! »
 
 Le bus passe dans le vide.
 
 « Il a joué avant le contact ! Le pigeon a joué avant le contact ! »
 
-Kaydoudou tourne lentement la tête vers lui.
+BriBri tourne lentement la tête vers lui.
 
 « Tu es en train de me dire que ton nouvel entraîneur, c'est un pigeon de Lewisham ? »
 
-« Je te dis que le pigeon a compris avant moi. C'est la honte, mais c'est vrai. » BriBri lève un doigt. « À partir d'aujourd'hui, mon geste s'appelle le coup du pigeon. »
+« Je te dis que le pigeon a compris avant moi. C'est la honte, mais c'est vrai. » Kaydoudou lève un doigt. « À partir d'aujourd'hui, mon geste s'appelle le coup du pigeon. »
 
-Kaydoudou sourit enfin. Puis il regarde la pluie.
+BriBri sourit enfin. Puis il regarde la pluie.
 
 « Jaden ne m'aime pas », murmure-t-il. Plus pour lui que pour son frère.
 
-« Jaden ne t'aime pas encore, corrige BriBri. Moi non plus, je ne t'aimais pas, quand je suis né. Tu m'avais volé mon biberon. »
+« Jaden ne t'aime pas encore, corrige Kaydoudou. Moi non plus, je ne t'aimais pas, quand je suis né. Tu m'avais volé mon biberon. »
 
 « J'avais un an. »
 
@@ -236,9 +236,9 @@ Mami rit si fort que l'écran tremble.
 
 C'est vrai. Leur arrière droit est si large qu'il cache la moitié du but quand il se met devant.
 
-« Lui, ce n'est pas un bus, souffle BriBri. C'est un bus à étage. »
+« Lui, ce n'est pas un bus, souffle Kaydoudou. C'est un bus à étage. »
 
-Premier ballon. BriBri voit le numéro 2 arriver par-dessus son épaule. Contrôle de l'extérieur du pied, loin de lui. Passe à Arjun, le meneur de jeu. Le numéro 2 freine, surpris. Il ne l'a même pas touché.
+Premier ballon. Kaydoudou voit le numéro 2 arriver par-dessus son épaule. Contrôle de l'extérieur du pied, loin de lui. Passe à Arjun, le meneur de jeu. Le numéro 2 freine, surpris. Il ne l'a même pas touché.
 
 « Oi ! Come here ! »
 
@@ -248,17 +248,17 @@ Troisième ballon. Le numéro 2 en a assez. Il se jette, les deux pieds en avant
 
 *Le coup du pigeon.*
 
-BriBri n'est plus là. Le ballon non plus. Le numéro 2 glisse jusqu'à la ligne de touche et se relève couvert de boue. Il regarde partout, comme quelqu'un qui a perdu ses clés.
+Kaydoudou n'est plus là. Le ballon non plus. Le numéro 2 glisse jusqu'à la ligne de touche et se relève couvert de boue. Il regarde partout, comme quelqu'un qui a perdu ses clés.
 
 « Where did he go ? » grogne le numéro 2.
 
 « HE TACKLED THE AIR ! » hurle Freddie au fond de son but.
 
-BriBri ne marque pas ce jour-là. Mais il fait deux passes décisives, dont une pour Theo, en une touche, après avoir attiré deux défenseurs. Kingsbridge gagne 3-0.
+Kaydoudou ne marque pas ce jour-là. Mais il fait deux passes décisives, dont une pour Theo, en une touche, après avoir attiré deux défenseurs. Kingsbridge gagne 3-0.
 
 « That's it, Socks ! rugit Okafor. You made him disappear ! »
 
-Au coup de sifflet final, BriBri baisse les yeux. Une chaussette rouge, une chaussette jaune. Propres.
+Au coup de sifflet final, Kaydoudou baisse les yeux. Une chaussette rouge, une chaussette jaune. Propres.
 
 Enfin, presque.
 
@@ -266,47 +266,47 @@ Freddie traverse le terrain, les bras en l'air.
 
 « Zero ! I counted ! Zero ! He never fell ! Not once ! »
 
-« Zéro chute ! » répète BriBri, ébloui.
+« Zéro chute ! » répète Kaydoudou, ébloui.
 
 Dans le vestiaire, Freddie fait asseoir tout le monde. Il sort de son sac une médaille découpée dans une boîte de céréales, peinte en doré au feutre, avec un ruban en strap de gardien.
 
-« C'est de l'or ? » demande BriBri.
+« C'est de l'or ? » demande Kaydoudou.
 
 « Cereal gold. »
 
-Freddie fredonne un hymne très sérieux, comme pour un roi, qu'il invente au fur et à mesure. « Oh Socks, oh Socks, he never fell down... » Les joueurs tapent en rythme sur les casiers. Boum, boum, boum. Puis Freddie passe la médaille au cou de BriBri.
+Freddie fredonne un hymne très sérieux, comme pour un roi, qu'il invente au fur et à mesure. « Oh Socks, oh Socks, he never fell down... » Les joueurs tapent en rythme sur les casiers. Boum, boum, boum. Puis Freddie passe la médaille au cou de Kaydoudou.
 
 Dessus, en lettres capitales : MOST UPRIGHT PLAYER.
 
-« Le joueur le plus debout », traduit Kaydoudou.
+« Le joueur le plus debout », traduit BriBri.
 
-« Le plus debout de tout Londres ! » corrige BriBri.
+« Le plus debout de tout Londres ! » corrige Kaydoudou.
 
-Kaydoudou, lui, rit aux éclats. Pour la première fois depuis des semaines.
+BriBri, lui, rit aux éclats. Pour la première fois depuis des semaines.
 
-BriBri monte sur le banc, la médaille sur le cœur, et salue comme un roi.
+Kaydoudou monte sur le banc, la médaille sur le cœur, et salue comme un roi.
 
 « Thank you, my people ! »
 
-Freddie s'ajoute un point au tableau. BriBri ne proteste pas.
+Freddie s'ajoute un point au tableau. Kaydoudou ne proteste pas.
 
 Cette nuit-là, il dort avec la médaille. Dans le noir, il entend son frère se retourner dans son lit.
 
-« Kayd ? Jaden, il s'est relevé tout seul de sa flaque. »
+« Bri ? Jaden, il s'est relevé tout seul de sa flaque. »
 
 « Je sais. »
 
-BriBri repense au regard de son frère, mardi, sous la pluie.
+Kaydoudou repense au regard de son frère, mardi, sous la pluie.
 
 Deux coqs dans la même cour.
 
-BriBri serre sa médaille dans le noir. *Ce match-là n'a pas encore commencé.*
+Kaydoudou serre sa médaille dans le noir. *Ce match-là n'a pas encore commencé.*
 
 > [!CARNET] Leçon du Ballon n°34 : Jouer avant le contact
 > Mon premier contrôle m'éloigne du défenseur. Jamais vers lui.
 > Je lâche le ballon avant qu'il me touche : quand il arrive, il tacle l'air.
 > Le défenseur, c'est un bus : gros, lourd, lent à tourner. Il ne faut pas être sur la route.
-> (BriBri : « Le meilleur tacle, c'est celui qu'on ne reçoit pas. »)
+> (Kaydoudou : « Le meilleur tacle, c'est celui qu'on ne reçoit pas. »)
 
 ```schema
 {

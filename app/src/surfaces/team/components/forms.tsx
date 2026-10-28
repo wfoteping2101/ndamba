@@ -138,7 +138,7 @@ export function PlayerFormModal({ open, onClose, teamId, player, takenNumbers = 
   )
 }
 
-/** Paste a list: one name per line, optional number first ("8 Kaydoudou", "8. Kaydoudou", "#8 Kaydoudou", "Kaydoudou 8"). */
+/** Paste a list: one name per line, optional number first ("8 BriBri", "8. BriBri", "#8 BriBri", "BriBri 8"). */
 export function parseRoster(text: string) {
   return text.split(/\r?\n/).map((raw) => raw.replace(/^\s*[-*•]\s*/, '').trim()).filter(Boolean).map((line) => {
     let m = line.match(/^#?(\d{1,2})\s*[.):,-]?\s+(.+)$/)

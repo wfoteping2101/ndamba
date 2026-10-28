@@ -1,7 +1,7 @@
 {
  "sheet-brothers": {
   "status": "approved",
-  "note": "Identity locked: shaved part on Kaydoudou's left, gap tooth, red sock right and yellow sock left, BriBri's head at his brother's chin."
+  "note": "Identity locked: shaved part on BriBri's left, gap tooth, red sock right and yellow sock left, Kaydoudou's head at his brother's chin."
  },
  "sheet-adults": {
   "status": "approved",
@@ -49,7 +49,7 @@
  },
  "ch02": {
   "status": "approved",
-  "note": "Mami sews the wax patch, BriBri leans in, Kaydoudou in the doorway."
+  "note": "Mami sews the wax patch, Kaydoudou leans in, BriBri in the doorway."
  },
  "ch04": {
   "status": "approved",
@@ -57,16 +57,16 @@
  },
  "ch05": {
   "status": "approved",
-  "note": "Papa draws the network, Kaydoudou follows the arrow, BriBri's socks in the air on the sofa."
+  "note": "Papa draws the network, BriBri follows the arrow, Kaydoudou's socks in the air on the sofa."
  },
  "ch11b": {
   "status": "approved",
-  "note": "Owen 4, Kaydoudou 8, the green 11 steals the ball in the mud. The match ball carries a red and yellow patch like Mami's ball: acceptable, noted.",
+  "note": "Owen 4, BriBri 8, the green 11 steals the ball in the mud. The match ball carries a red and yellow patch like Mami's ball: acceptable, noted.",
   "model": "Cloudinary image generation, gpt-image-2-edit (premium), with the canonical sheets and ch07 as reference images, 1536 x 1024"
  },
  "ch11c": {
   "status": "approved",
-  "note": "Papa in the beanie in the mirror; part on Kaydoudou's left; red sock right, yellow sock left; patched ball on BriBri's lap.",
+  "note": "Papa in the beanie in the mirror; part on BriBri's left; red sock right, yellow sock left; patched ball on Kaydoudou's lap.",
   "model": "Cloudinary image generation, gpt-image-2-edit (premium), with the canonical sheets and ch07 as reference images, 1536 x 1024"
  },
  "ch11d": {

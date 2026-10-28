@@ -3,14 +3,14 @@ numero: 27
 slug: les-couloirs
 titre: Les couloirs
 partie: 4
-pov: BriBri
-resume: Jordi découpe le terrain en cinq couloirs et colle BriBri contre la ligne de touche, loin du ballon, loin de tout, au bout du monde.
-illustration: Plan large en plongée, matin d'octobre sur le terrain d'herbe de La Granja del Mar, avec les vignes rousses d'un côté et les pins de l'autre. Quatre longues lignes de peinture blanche fraîche découpent le terrain en cinq bandes, dans le sens de la longueur. Au premier plan, tout près de la ligne de touche, BriBri, petite afro, une chaussette rouge et une chaussette jaune, est assis en tailleur, le menton dans les mains, l'air boudeur, à côté d'un seau de peinture. Au centre, Jordi Puig, barbe poivre et sel, crayon derrière l'oreille, pousse une machine à tracer les lignes. Ciel bleu pâle.
+pov: Kaydoudou
+resume: Jordi découpe le terrain en cinq couloirs et colle Kaydoudou contre la ligne de touche, loin du ballon, loin de tout, au bout du monde.
+illustration: Plan large en plongée, matin d'octobre sur le terrain d'herbe de La Granja del Mar, avec les vignes rousses d'un côté et les pins de l'autre. Quatre longues lignes de peinture blanche fraîche découpent le terrain en cinq bandes, dans le sens de la longueur. Au premier plan, tout près de la ligne de touche, Kaydoudou, petite afro, une chaussette rouge et une chaussette jaune, est assis en tailleur, le menton dans les mains, l'air boudeur, à côté d'un seau de peinture. Au centre, Jordi Puig, barbe poivre et sel, crayon derrière l'oreille, pousse une machine à tracer les lignes. Ciel bleu pâle.
 ---
 
 « Au secours ! Quelqu'un a cassé le terrain ! »
 
-BriBri s'arrête net au bord de l'herbe, le sac sur l'épaule. Un lundi matin d'octobre, à La Granja del Mar. Le terrain est rayé.
+Kaydoudou s'arrête net au bord de l'herbe, le sac sur l'épaule. Un lundi matin d'octobre, à La Granja del Mar. Le terrain est rayé.
 
 Quatre longues lignes blanches le traversent d'un but à l'autre. Toutes fraîches.
 
@@ -20,15 +20,15 @@ Quatre longues lignes blanches le traversent d'un but à l'autre. Toutes fraîch
 
 Au milieu, Jordi Puig pousse une petite machine à roulettes qui crache de la peinture. Il marche lentement, la langue entre les dents, le crayon derrière l'oreille.
 
-« Il a peint des rails, dit BriBri. On va jouer au train ? »
+« Il a peint des rails, dit Kaydoudou. On va jouer au train ? »
 
 « Ce sont des couloirs », dit Laia, qui lace ses crampons sur le banc.
 
 « Comme à la piscine ? »
 
-BriBri se met en position de départ, les bras tendus :
+Kaydoudou se met en position de départ, les bras tendus :
 
-« Dans le couloir numéro un, pour le Cameroun... BRIBRI NGASSA ! »
+« Dans le couloir numéro un, pour le Cameroun... KAYDOUDOU NGASSA ! »
 
 Il plonge dans l'herbe et fait trois mètres de brasse. Nil applaudit. Nil n'applaudit jamais.
 
@@ -36,7 +36,7 @@ Jordi réunit l'équipe au centre. Il parle tout doucement, comme toujours.
 
 « Cinc carrils. Cinq couloirs. » Son crayon les montre un par un. « Deux sur les côtés, contre les lignes de touche. Deux entre les côtés et le milieu : els mitjos espais, les demi-espaces. Et un au centre : l'axe. »
 
-« Et le ballon, il va dans quel couloir ? » demande BriBri.
+« Et le ballon, il va dans quel couloir ? » demande Kaydoudou.
 
 « Partout. Mais les joueurs, non. Le football, ce n'est pas une foule qui court après un ballon. C'est une carte. Et sur une carte, chacun a sa place. »
 
@@ -46,7 +46,7 @@ Il lève deux doigts.
 
 « Et deux ? »
 
-Jordi se tourne lentement vers BriBri.
+Jordi se tourne lentement vers Kaydoudou.
 
 « Deux : l'ailier donne la largeur. Amplada. Toi, tu es mon ailier gauche. Ton couloir, c'est celui-là. »
 
@@ -54,9 +54,9 @@ Le crayon montre la bande d'herbe tout à gauche, contre les vignes rousses.
 
 « Celui-là ? Le tout petit, à côté des bouteilles d'eau et du seau de peinture ? Mais c'est le bout du monde ! »
 
-Jordi ne répond pas. Il reprend sa machine et repasse une couche de blanc sur la ligne qui ferme le couloir de BriBri, lentement, comme on ferme une barrière. Puis il continue vers le milieu du terrain.
+Jordi ne répond pas. Il reprend sa machine et repasse une couche de blanc sur la ligne qui ferme le couloir de Kaydoudou, lentement, comme on ferme une barrière. Puis il continue vers le milieu du terrain.
 
-BriBri s'assoit en tailleur au bord de sa bande d'herbe, à côté du seau de peinture, le menton dans les mains. Il boude. Entre les vignes et les pins, sous le ciel bleu pâle, la ligne fraîche brille.
+Kaydoudou s'assoit en tailleur au bord de sa bande d'herbe, à côté du seau de peinture, le menton dans les mains. Il boude. Entre les vignes et les pins, sous le ciel bleu pâle, la ligne fraîche brille.
 
 *Le bout du monde*, pense-t-il. *Ils m'ont envoyé au bout du monde.*
 
@@ -66,13 +66,13 @@ C'est pire que le bout du monde. C'est l'exil.
 
 Dès qu'il glisse vers le milieu, attiré par le ballon comme un moustique par une lampe, Jordi murmure :
 
-« BriBri. Carril. »
+« Kaydoudou. Carril. »
 
 Il ne crie pas. Il murmure. Et tout le monde se retourne.
 
-Alors BriBri retourne contre sa ligne. Le ballon tourne de l'autre côté. Lui, il fait la seule chose qui lui reste : le commentateur.
+Alors Kaydoudou retourne contre sa ligne. Le ballon tourne de l'autre côté. Lui, il fait la seule chose qui lui reste : le commentateur.
 
-« Mesdames et messieurs, bonjour du couloir numéro un ! Ici, il ne se passe rien. Absolument rien. Le joueur BriBri Ngassa compte les vignes. Quarante et une... quarante-deux... quarante-trois ! Record du monde ! »
+« Mesdames et messieurs, bonjour du couloir numéro un ! Ici, il ne se passe rien. Absolument rien. Le joueur Kaydoudou compte les vignes. Quarante et une... quarante-deux... quarante-trois ! Record du monde ! »
 
 Une dame passe sur le chemin avec son chien.
 
@@ -86,9 +86,9 @@ Puis le ballon reste longtemps de l'autre côté. Très longtemps.
 
 « Et là-bas, mesdames et messieurs... ses amis rigolent. Ils font des une-deux. Sans lui. »
 
-La voix du commentateur devient toute petite. Puis elle se tait. Quelque chose de froid descend dans le ventre de BriBri.
+La voix du commentateur devient toute petite. Puis elle se tait. Quelque chose de froid descend dans le ventre de Kaydoudou.
 
-Une vieille peur de Douala : rester le dernier quand on forme les équipes. La peur qu'il a avouée à Kaydoudou sous la moustiquaire, la nuit de la lettre de Waldorf.
+Une vieille peur de Douala : rester le dernier quand on forme les équipes. La peur qu'il a avouée à BriBri sous la moustiquaire, la nuit de la lettre de Waldorf.
 
 La peur qu'on l'oublie.
 
@@ -96,7 +96,7 @@ La peur qu'on l'oublie.
 
 À la pause, il rejoint son frère près des bouteilles d'eau.
 
-« Kayd. Je suis un ailier ou un poteau ? »
+« Bri. Je suis un ailier ou un poteau ? »
 
 « Un poteau, au moins, ça ne se plaint pas. »
 
@@ -104,9 +104,9 @@ La peur qu'on l'oublie.
 
 « Tu ne sais même pas où c'est, la Sibérie. »
 
-« Je sais que c'est loin du ballon. » BriBri baisse la voix. « Et si vous m'oubliez, là-bas ? »
+« Je sais que c'est loin du ballon. » Kaydoudou baisse la voix. « Et si vous m'oubliez, là-bas ? »
 
-Kaydoudou ne rit pas.
+BriBri ne rit pas.
 
 « Personne ne peut oublier quelqu'un qui porte une chaussette rouge et une chaussette jaune. »
 
@@ -114,7 +114,7 @@ Kaydoudou ne rit pas.
 
 « C'est toujours scientifique. »
 
-À la fin de la séance, BriBri va voir Jordi, avec un discours en trois langues.
+À la fin de la séance, Kaydoudou va voir Jordi, avec un discours en trois langues.
 
 « Jordi, escolta. Écoute. En France, Monsieur Lacombe m'a appris à jouer entre les lignes. Là-bas, j'étais une souris dans un mur ! Je suis petit, je me glisse, je me tourne, hop ! Mais une souris collée à la ligne de touche, elle fait quoi ? Elle meurt de faim. Je veux venir au milieu. Si us plau. Por favor. S'il te plaît. »
 
@@ -126,9 +126,9 @@ Jordi l'écoute jusqu'au bout, très sérieux. Puis il hoche la tête.
 
 « Sencera. Entière. Promis ? »
 
-« Promis », grogne BriBri.
+« Promis », grogne Kaydoudou.
 
-Puis, tout bas, à Kaydoudou :
+Puis, tout bas, à BriBri :
 
 « Une mi-temps dans le couloir de la piscine. Autant me demander de ne pas manger de beignets pendant un mois. »
 
@@ -136,11 +136,11 @@ Puis, tout bas, à Kaydoudou :
 
 Samedi. Le Costa Daurada reçoit le CF Torre del Far, un village de pêcheurs du sud. Des garçons et des filles costauds, aux bras bronzés. Dès la première minute, ils se serrent tous devant leur but.
 
-« Des sardines ! chuchote BriBri. Ils défendent comme des sardines dans une boîte ! »
+« Des sardines ! chuchote Kaydoudou. Ils défendent comme des sardines dans une boîte ! »
 
-« Alors il faut ouvrir la boîte », dit Kaydoudou.
+« Alors il faut ouvrir la boîte », dit BriBri.
 
-BriBri tient dix minutes dans son couloir. Dix longues minutes.
+Kaydoudou tient dix minutes dans son couloir. Dix longues minutes.
 
 Puis le ballon lui manque trop.
 
@@ -148,19 +148,19 @@ Puis le ballon lui manque trop.
 
 Il glisse vers le milieu. Une fois. Deux fois. Dix fois. Et chaque fois, il se retrouve dans le demi-espace de Laia, sur la même ligne qu'elle.
 
-« BriBri ! siffle Laia. Tu es sur mes pieds ! »
+« Kaydoudou ! siffle Laia. Tu es sur mes pieds ! »
 
 « Je viens t'aider ! »
 
 « Tu aides leur défenseur ! Il nous garde tous les deux ! »
 
-« Je ne vois rien ! crie Kaydoudou. Que des maillots ! »
+« Je ne vois rien ! crie BriBri. Que des maillots ! »
 
 Un mur de bleu et de blanc. Avec un petit ailier coincé dedans, comme un raisin dans une grappe.
 
 Mi-temps : 0-0. Un 0-0 poisseux, qui colle aux crampons.
 
-Jordi ne crie pas. Il ne crie jamais. Il s'accroupit devant BriBri, sur le banc, et montre la ligne de touche.
+Jordi ne crie pas. Il ne crie jamais. Il s'accroupit devant Kaydoudou, sur le banc, et montre la ligne de touche.
 
 « Una mitja part. Tu m'avais promis. »
 
@@ -168,7 +168,7 @@ Jordi ne crie pas. Il ne crie jamais. Il s'accroupit devant BriBri, sur le banc,
 
 « Il va revenir. Par un autre chemin. »
 
-BriBri soupire jusqu'au fond de ses chaussettes, la rouge et la jaune.
+Kaydoudou soupire jusqu'au fond de ses chaussettes, la rouge et la jaune.
 
 Deuxième mi-temps. Il se plante si près de la ligne que ses crampons mordent la peinture blanche. Il s'y installe comme dans un fauteuil.
 
@@ -184,7 +184,7 @@ Le numéro 2 du Torre del Far le suit. Un grand garçon aux cheveux décolorés 
 
 « Il viendra peut-être. Un jour. »
 
-BriBri fait un pas en avant. Le chewing-gum fait un pas en avant. BriBri recule. Le chewing-gum recule. Pour voir, BriBri salue la petite tribune.
+Kaydoudou fait un pas en avant. Le chewing-gum fait un pas en avant. Kaydoudou recule. Le chewing-gum recule. Pour voir, Kaydoudou salue la petite tribune.
 
 « Coucou, Maman ! »
 
@@ -196,23 +196,23 @@ Le numéro 2 regarde la tribune, lui aussi.
 
 Et pendant ce temps, au milieu du terrain, quelque chose s'ouvre.
 
-BriBri jette un regard par-dessus son épaule, comme Monsieur Lacombe le lui a appris.
+Kaydoudou jette un regard par-dessus son épaule, comme Monsieur Lacombe le lui a appris.
 
 Et il le voit.
 
 Entre son chewing-gum et le défenseur central, il y a un trou. Un trou énorme.
 
-« Waouh, souffle BriBri. On pourrait garer le tracteur des vendanges, là-dedans. »
+« Waouh, souffle Kaydoudou. On pourrait garer le tracteur des vendanges, là-dedans. »
 
 La boîte de sardines s'est ouverte toute seule. Parce qu'un petit garçon aux chaussettes dépareillées est allé s'asseoir sur la ligne de touche.
 
-*C'est moi*, pense BriBri. *C'est moi qui ai fait ce trou.*
+*C'est moi*, pense Kaydoudou. *C'est moi qui ai fait ce trou.*
 
-Kaydoudou le voit aussi. BriBri voit son frère lever les yeux. Puis le menton. Puis deux doigts.
+BriBri le voit aussi. Kaydoudou voit son frère lever les yeux. Puis le menton. Puis deux doigts.
 
 Les deux doigts ! Le signal des frères ! Sauf que cette fois, ce n'est pas pour lui.
 
-« Laia ! » crie Kaydoudou.
+« Laia ! » crie BriBri.
 
 La passe part à ras de l'herbe et traverse le trou comme un éclair. Laia arrive lancée. Contrôle. Tête levée. Frappe.
 
@@ -220,15 +220,15 @@ Chhh. Le filet tremble.
 
 1-0 !
 
-Tout le banc saute. Et BriBri, à quarante mètres, saute aussi. Tout seul. Contre sa ligne.
+Tout le banc saute. Et Kaydoudou, à quarante mètres, saute aussi. Tout seul. Contre sa ligne.
 
 « C'est ta faute, ça ! » grogne le numéro 2.
 
-« Je sais ! » répond BriBri, ravi.
+« Je sais ! » répond Kaydoudou, ravi.
 
 Après ça, il ne dribble personne. Il ne marque pas. Mais à chaque attaque, le même trou s'ouvre. Et le commentateur se réveille.
 
-« Le trou est encore là, mesdames et messieurs ! Kaydoudou fonce dedans ! Laia aussi ! Et... ce n'est pas possible... Nil ! Nil Soler monte jusqu'à la surface ! »
+« Le trou est encore là, mesdames et messieurs ! BriBri fonce dedans ! Laia aussi ! Et... ce n'est pas possible... Nil ! Nil Soler monte jusqu'à la surface ! »
 
 Nil lui-même a la bouche ouverte de surprise.
 
@@ -236,43 +236,43 @@ Nil lui-même a la bouche ouverte de surprise.
 
 « No ho sé ! Je ne sais pas ! »
 
-À 2-0, BriBri commence à rire. À 3-0, il rit tellement que le numéro 2 rit aussi, sans savoir pourquoi.
+À 2-0, Kaydoudou commence à rire. À 3-0, il rit tellement que le numéro 2 rit aussi, sans savoir pourquoi.
 
 Le match finit 3-1.
 
-Dans la voiture, BriBri se tait longtemps, la tête contre la vitre.
+Dans la voiture, Kaydoudou se tait longtemps, la tête contre la vitre.
 
 « Je n'ai presque pas touché le ballon », dit-il enfin.
 
-« Six fois, dit Kaydoudou. J'ai compté. »
+« Six fois, dit BriBri. J'ai compté. »
 
 « Mais je jouais. » Il se redresse d'un coup. « Je ne touche pas le ballon, mais je joue. C'est possible, ça ? »
 
-Kaydoudou sourit en coin et regarde par la fenêtre. Pour BriBri, ce sourire-là, c'est un oui.
+BriBri sourit en coin et regarde par la fenêtre. Pour Kaydoudou, ce sourire-là, c'est un oui.
 
 * * *
 
 Le lundi, salle vidéo de la masia. Une vieille table de ferme. Un écran blanc tendu sur une poutre.
 
-Premier but. Pause. Jordi prend un feutre et dessine sur l'écran. Un cercle autour de BriBri, collé à la touche. Un cercle autour du numéro 2, collé à BriBri. Une flèche vers le trou. Et dans le trou, Laia.
+Premier but. Pause. Jordi prend un feutre et dessine sur l'écran. Un cercle autour de Kaydoudou, collé à la touche. Un cercle autour du numéro 2, collé à Kaydoudou. Une flèche vers le trou. Et dans le trou, Laia.
 
-« Mais là, BriBri ne fait rien ! » dit Pol.
+« Mais là, Kaydoudou ne fait rien ! » dit Pol.
 
 « Exacte. Il ne fait rien. Et regarde ce que ça fait. Un. »
 
-Deuxième but. Même cercle. Même flèche. Même trou. Kaydoudou dedans.
+Deuxième but. Même cercle. Même flèche. Même trou. BriBri dedans.
 
 « Dos. »
 
-« Encore le cercle de BriBri ! » s'écrie Laia.
+« Encore le cercle de Kaydoudou ! » s'écrie Laia.
 
 « C'est moi, ce cercle ? C'est vraiment moi ? »
 
 Troisième but. Même cercle, encore. Nil débarque dans le trou avec sa tête de surpris, et sert Pol.
 
-« Tres. Trois buts. » Jordi tapote le cercle autour de BriBri. « Tous les trois sont nés là. Ta largeur a ouvert la porte. Tu n'as pas touché le ballon. Mais tu étais dans chaque but. »
+« Tres. Trois buts. » Jordi tapote le cercle autour de Kaydoudou. « Tous les trois sont nés là. Ta largeur a ouvert la porte. Tu n'as pas touché le ballon. Mais tu étais dans chaque but. »
 
-Toute l'équipe se retourne vers BriBri.
+Toute l'équipe se retourne vers Kaydoudou.
 
 « Tres de tres, compte Nil. Trois sur trois. Cent pour cent. »
 
@@ -288,14 +288,14 @@ Il se lève. Il pose les poings sur les hanches. Il bombe le torse.
 
 Laia siffle avec deux doigts. Même Nil tape sur la table.
 
-Seul Jordi ne rit pas. Il regarde Kaydoudou, longtemps. Puis il sort le crayon de derrière son oreille.
+Seul Jordi ne rit pas. Il regarde BriBri, longtemps. Puis il sort le crayon de derrière son oreille.
 
 > [!CARNET] Leçon du Ballon n°27 : Les cinq couloirs
 > Le terrain a cinq couloirs : deux côtés, deux demi-espaces, l'axe.
 > - Jamais deux joueurs dans le même couloir sur la même ligne.
 > - L'ailier reste large : il emmène son défenseur avec lui et ouvre le milieu.
 > Bien répartis, on étire l'adversaire comme un élastique, et le trou apparaît.
-> (BriBri : « Nom de super-héros : Capitaine Largeur. Pouvoir : ouvrir les portes sans les toucher. »)
+> (Kaydoudou : « Nom de super-héros : Capitaine Largeur. Pouvoir : ouvrir les portes sans les toucher. »)
 
 ```schema
 {

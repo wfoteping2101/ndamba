@@ -3,9 +3,9 @@ numero: 36
 slug: le-njangi-du-vestiaire
 titre: Le njangi du vestiaire
 partie: 5
-pov: BriBri
+pov: Kaydoudou
 resume: L'hiver tombe sur Londres, les défaites s'empilent et le vestiaire de Kingsbridge se fissure. Le clown de l'équipe va devoir parler sérieusement, avec une boîte à chaussures et une histoire venue de Bafoussam.
-illustration: Plan moyen dans le vestiaire de Kingsbridge, un soir de décembre, vitres embuées, lumière jaune des néons. BriBri, afro douce, chaussettes dépareillées rouge et jaune, est debout sur un banc, le vieux ballon rapiécé de Mami calé sous un bras ; de l'autre main, il soulève le couvercle d'une boîte à chaussures pleine de petits papiers pliés, et il parle, les yeux brillants. Près de la porte, Kaydoudou, raie dessinée à gauche, se penche vers lui et lui lance à mi-voix le mot anglais qui manquait. Au fond, Jaden Clarke, capuche sur la tête, relève à peine les yeux. Émotion : un silence qui s'ouvre, une idée qui va tout recoudre.
+illustration: Plan moyen dans le vestiaire de Kingsbridge, un soir de décembre, vitres embuées, lumière jaune des néons. Kaydoudou, afro douce, chaussettes dépareillées rouge et jaune, est debout sur un banc, le vieux ballon rapiécé de Mami calé sous un bras ; de l'autre main, il soulève le couvercle d'une boîte à chaussures pleine de petits papiers pliés, et il parle, les yeux brillants. Près de la porte, BriBri, raie dessinée à gauche, se penche vers lui et lui lance à mi-voix le mot anglais qui manquait. Au fond, Jaden Clarke, capuche sur la tête, relève à peine les yeux. Émotion : un silence qui s'ouvre, une idée qui va tout recoudre.
 ---
 
 « Where were you, Jaden ? You were sleeping ! »
@@ -20,11 +20,11 @@ Personne ne bouge. Le néon grésille. Dehors, il fait nuit noire. Il est quatre
 
 La pluie de septembre ne s'est jamais arrêtée. Elle est juste devenue froide. Elle pique les oreilles. Dans son but, Freddie souffle dans ses gants entre chaque tir.
 
-BriBri regarde le maillot par terre. Il compte sur ses doigts.
+Kaydoudou regarde le maillot par terre. Il compte sur ses doigts.
 
 « Southmere, 2-1, sur un penalty à la dernière minute. Crayford Town, 1-0, dans la boue. Le ballon s'arrêtait tout seul dans les flaques ! Hampton Forest, 3-0 au retour. Et ce soir, Belvedere Park, 2-1. Alors qu'on menait. »
 
-« Arrête de compter », dit Kaydoudou.
+« Arrête de compter », dit BriBri.
 
 « Quatre défaites de suite. Même sur la terre rouge, on n'a jamais perdu autant. »
 
@@ -40,21 +40,21 @@ Derrière eux, la dispute repart.
 
 Callum ne dit rien. Il met ses écouteurs.
 
-Ils parlent anglais, mais BriBri l'entend en français dans sa tête. Et ça ne lui plaît pas du tout.
+Ils parlent anglais, mais Kaydoudou l'entend en français dans sa tête. Et ça ne lui plaît pas du tout.
 
 Avant, ce vestiaire faisait du bruit. Maintenant, il chuchote. Les défenseurs d'un côté, les attaquants de l'autre, les milieux au milieu. Un pays coupé en trois.
 
-« Et Jaden ? chuchote BriBri. Qu'est-ce qu'il a ? »
+« Et Jaden ? chuchote Kaydoudou. Qu'est-ce qu'il a ? »
 
-« Il arrive en retard, les yeux rouges, répond Kaydoudou. Il repart le premier. Sur le terrain, il court encore. Mais comme quelqu'un qui fuit. »
+« Il arrive en retard, les yeux rouges, répond BriBri. Il repart le premier. Sur le terrain, il court encore. Mais comme quelqu'un qui fuit. »
 
 Même la Joke League est morte. Sur le tableau blanc, le score n'a pas bougé depuis trois semaines : OCTOPUS 19, SOCKS 19.
 
-« Freddie, tu as une blague ? » essaie BriBri.
+« Freddie, tu as une blague ? » essaie Kaydoudou.
 
 « No. »
 
-*Un Freddie sans blagues, c'est une pieuvre sans bras*, pense BriBri. *Ça ne ressemble plus à rien.*
+*Un Freddie sans blagues, c'est une pieuvre sans bras*, pense Kaydoudou. *Ça ne ressemble plus à rien.*
 
 * * *
 
@@ -78,29 +78,29 @@ Il organise même une soirée pizzas dans la salle vidéo. Les défenseurs mange
 
 « Viens le chercher », répond Tom.
 
-« Même les pizzas sont fâchées », chuchote BriBri.
+« Même les pizzas sont fâchées », chuchote Kaydoudou.
 
 Un soir, par la porte entrouverte du bureau du coach, il voit quelque chose qu'il n'aime pas. Pas du tout.
 
 Dans le bus rouge, il ne monte même pas tout devant, en haut. Il s'assoit en bas, au fond, avec son frère.
 
-« Tu ne prends pas le siège du pilote ? » demande Kaydoudou.
+« Tu ne prends pas le siège du pilote ? » demande BriBri.
 
-« Le pilote est en grève. Il fait nuit tout le temps, de toute façon. On sort du collège : nuit. On rentre : encore plus nuit. » BriBri soupire. « J'ai vu Okafor, tout à l'heure. Tout seul dans son bureau, la tête dans les mains, devant son tableau plein de flèches. On aurait dit un lion qui a perdu sa savane. Ça mout, Kayd. C'est dur. »
+« Le pilote est en grève. Il fait nuit tout le temps, de toute façon. On sort du collège : nuit. On rentre : encore plus nuit. » Kaydoudou soupire. « J'ai vu Okafor, tout à l'heure. Tout seul dans son bureau, la tête dans les mains, devant son tableau plein de flèches. On aurait dit un lion qui a perdu sa savane. Ça mout, Bri. C'est dur. »
 
-« Je sais. » Kaydoudou dessine un rond sur la vitre pleine de buée. « Le ballon ne voyage plus. Il reste dans chaque petit groupe. »
+« Je sais. » BriBri dessine un rond sur la vitre pleine de buée. « Le ballon ne voyage plus. Il reste dans chaque petit groupe. »
 
-« Comme une caisse de njangi que chacun garde dans sa poche », murmure BriBri.
+« Comme une caisse de njangi que chacun garde dans sa poche », murmure Kaydoudou.
 
 Il se redresse d'un coup.
 
 « Quoi ? »
 
-« Rien. Une idée. » BriBri plisse les yeux. « Une idée de Mami. »
+« Rien. Une idée. » Kaydoudou plisse les yeux. « Une idée de Mami. »
 
 * * *
 
-Le lendemain soir, avant l'entraînement, BriBri entre dans le vestiaire avec une boîte à chaussures et le ballon de Mami. Il monte sur le banc.
+Le lendemain soir, avant l'entraînement, Kaydoudou entre dans le vestiaire avec une boîte à chaussures et le ballon de Mami. Il monte sur le banc.
 
 Personne ne le remarque.
 
@@ -114,9 +114,9 @@ Vingt têtes se tournent. Quelqu'un rit, sans le vouloir. C'est un début.
 
 « I want to tell you a story. About my grandmother. Mami Nyanga. In Cameroon. »
 
-Son anglais a encore des trous. Alors Kaydoudou, debout près de la porte, bouche les trous quand un mot manque.
+Son anglais a encore des trous. Alors BriBri, debout près de la porte, bouche les trous quand un mot manque.
 
-« À Bafoussam, le matin, il y a du brouillard, raconte BriBri. Ma grand-mère a une cour en terre et une machine à coudre à pédale. Le dimanche, les femmes du quartier s'assoient en cercle. Elles chantent. Elles mangent des beignets. Il y a un grand cahier pour les comptes. Et chacune met sa part dans la même caisse. »
+« À Bafoussam, le matin, il y a du brouillard, raconte Kaydoudou. Ma grand-mère a une cour en terre et une machine à coudre à pédale. Le dimanche, les femmes du quartier s'assoient en cercle. Elles chantent. Elles mangent des beignets. Il y a un grand cahier pour les comptes. Et chacune met sa part dans la même caisse. »
 
 « Chaque mois, toute la caisse va à une seule femme. Chacune son tour. Pour ouvrir une boutique. Pour payer l'école. Pour acheter une machine à coudre à une jeune apprentie. Nobody keeps the money. The money travels. »
 
@@ -126,21 +126,21 @@ Personne ne garde l'argent. L'argent voyage.
 
 Le vestiaire se tait. Un vrai silence, cette fois. Pas un silence de dispute.
 
-BriBri cale le ballon de Mami sous son bras. De l'autre main, il soulève le couvercle de la boîte.
+Kaydoudou cale le ballon de Mami sous son bras. De l'autre main, il soulève le couvercle de la boîte.
 
 Tout ralentit.
 
-Le couvercle monte. Dedans, des dizaines de petits papiers pliés, et un feutre. Les vitres sont blanches de buée. Le néon jaune bourdonne. Vingt paires d'yeux fixent la boîte. Les yeux de BriBri brillent.
+Le couvercle monte. Dedans, des dizaines de petits papiers pliés, et un feutre. Les vitres sont blanches de buée. Le néon jaune bourdonne. Vingt paires d'yeux fixent la boîte. Les yeux de Kaydoudou brillent.
 
 « My grandmother says : what does not circulate... »
 
-Le mot ne vient pas. BriBri jette un regard vers la porte.
+Le mot ne vient pas. Kaydoudou jette un regard vers la porte.
 
-Kaydoudou se penche vers lui. Il souffle, à mi-voix :
+BriBri se penche vers lui. Il souffle, à mi-voix :
 
 « Rots. »
 
-« ... ROTS ! » Ce qui ne circule pas pourrit. BriBri regarde les trois groupes, un par un. « We are rotting. »
+« ... ROTS ! » Ce qui ne circule pas pourrit. Kaydoudou regarde les trois groupes, un par un. « We are rotting. »
 
 Nous, on pourrit.
 
@@ -148,7 +148,7 @@ Au fond, sous sa capuche, Jaden relève à peine les yeux.
 
 Personne ne rit.
 
-« So I propose a njangi. A dressing room njangi, dit BriBri. Chaque semaine, chacun apporte quelque chose à l'équipe. Pas de l'argent. Une chanson. À manger. Une blague. Un exercice. Un mot pour quelqu'un qui est triste. Chaque semaine, tu donnes. Et chaque samedi, tout le monde touche la caisse. »
+« So I propose a njangi. A dressing room njangi, dit Kaydoudou. Chaque semaine, chacun apporte quelque chose à l'équipe. Pas de l'argent. Une chanson. À manger. Une blague. Un exercice. Un mot pour quelqu'un qui est triste. Chaque semaine, tu donnes. Et chaque samedi, tout le monde touche la caisse. »
 
 Il sourit avec sa dent du bonheur.
 
@@ -176,15 +176,15 @@ Callum, l'homme aux écouteurs, écrit : « I clean everybody's boots on Friday.
 
 Ollie, le latéral qui ne parle jamais, écrit seulement trois mots : « I'll listen. » J'écouterai.
 
-« Un rondo à la catalane, chaque jeudi, propose Kaydoudou. Avec la pausa d'Avi Ramon. »
+« Un rondo à la catalane, chaque jeudi, propose BriBri. Avec la pausa d'Avi Ramon. »
 
-« Et moi, une imitation par semaine, annonce BriBri. Au choix du public. »
+« Et moi, une imitation par semaine, annonce Kaydoudou. Au choix du public. »
 
 « Okafor ! » crient trois voix à la fois.
 
 Jaden, lui, ne prend pas de papier. Il reste dans son coin, la capuche sur la tête.
 
-Alors Kaydoudou va s'asseoir à côté de lui. Il ne dit rien. Longtemps. BriBri connaît ce truc. C'est celui de Tonton Fokou sur son bidon jaune : parfois, la meilleure passe, c'est d'attendre que l'autre t'appelle.
+Alors BriBri va s'asseoir à côté de lui. Il ne dit rien. Longtemps. Kaydoudou connaît ce truc. C'est celui de Tonton Fokou sur son bidon jaune : parfois, la meilleure passe, c'est d'attendre que l'autre t'appelle.
 
 Au bout d'une minute, Jaden parle. Très bas.
 
@@ -202,7 +202,7 @@ Theo baisse les yeux. Il traverse la pièce et s'arrête devant Jaden.
 
 C'est tout. Mais c'est beaucoup.
 
-Sur son banc, BriBri sent sa gorge se serrer. Il pense à Maman, à Waldorf, quand elle travaillait la nuit. À la maison fatiguée. Au poulet DG qui a tout réparé.
+Sur son banc, Kaydoudou sent sa gorge se serrer. Il pense à Maman, à Waldorf, quand elle travaillait la nuit. À la maison fatiguée. Au poulet DG qui a tout réparé.
 
 « That's the njangi, dit-il doucement. Quand quelqu'un porte trop lourd, on porte avec lui. »
 
@@ -218,7 +218,7 @@ Quand Okafor l'apprend, il fait une annonce.
 
 Pour des raisons pratiques. Il ne dit jamais lesquelles.
 
-Et le vendredi, Maman tend à Kaydoudou une énorme boîte de beignets.
+Et le vendredi, Maman tend à BriBri une énorme boîte de beignets.
 
 « C'est pour les petites sœurs de Jaden. »
 
@@ -226,13 +226,13 @@ Il y en a assez pour une armée de petites sœurs.
 
 * * *
 
-Le vendredi, une semaine avant le match contre Woolwich Common, BriBri sort le ballon de Mami.
+Le vendredi, une semaine avant le match contre Woolwich Common, Kaydoudou sort le ballon de Mami.
 
 « Ce carré de pagne rouge et jaune, c'est Mami qui l'a cousu. Et ça, partout, ce sont des signatures. Ousmane, Mireille, Tonton Fokou. Diego, Tyler. Kenzo, Lucas, Awa, Monsieur Lacombe. Avi Ramon, Laia, Nil, Youssef. » Il lève le ballon. « Ce ballon a voyagé avec nous dans cinq pays. Tous ceux qui nous ont aidés l'ont signé. Now it's your turn. »
 
 À vous.
 
-Il le lance à Freddie, qui signe en lettres énormes. Puis le ballon part de main en main. BriBri fait sa voix de Radio, la main devant la bouche :
+Il le lance à Freddie, qui signe en lettres énormes. Puis le ballon part de main en main. Kaydoudou fait sa voix de Radio, la main devant la bouche :
 
 « Freddie pour Theo ! Theo pour Tom ! Tom pour Arjun ! Personne ne le garde, mesdames et messieurs ! Le ballon voyage ! »
 
@@ -252,11 +252,11 @@ Il attend. Il attend encore.
 
 Pour arrêter les ballons hauts.
 
-C'est une blague horrible. Une des pires que BriBri connaisse, et il en connaît beaucoup. Surtout les siennes.
+C'est une blague horrible. Une des pires que Kaydoudou connaisse, et il en connaît beaucoup. Surtout les siennes.
 
 « Ouhhhh ! » fait le vestiaire.
 
-Theo lance une chaussette. Tom se bouche les oreilles. Mais tout le monde rit. Le même rire, d'un bout à l'autre de la pièce. Et BriBri sent une chose cassée qui se recoud, point après point, comme le ballon sous la machine à pédale de Mami.
+Theo lance une chaussette. Tom se bouche les oreilles. Mais tout le monde rit. Le même rire, d'un bout à l'autre de la pièce. Et Kaydoudou sent une chose cassée qui se recoud, point après point, comme le ballon sous la machine à pédale de Mami.
 
 Le samedi, contre Woolwich Common, Jaden saute plus haut que tout le monde. Bam ! De la tête. Il ne court pas vers les tribunes. Il court vers le banc, où Callum, qui a nettoyé ses crampons, l'attend les bras ouverts.
 
@@ -268,7 +268,7 @@ Et sur le tableau blanc, Freddie efface OCTOPUS et SOCKS. À la place, il écrit
 
 * * *
 
-Ce soir-là, BriBri revient au club chercher son écharpe oubliée.
+Ce soir-là, Kaydoudou revient au club chercher son écharpe oubliée.
 
 La porte du bureau d'Okafor est ouverte. Le coach est debout devant son tableau blanc. Il a tout effacé : les flèches, les plans, les chiffres.
 
@@ -278,7 +278,7 @@ NJANGI.
 
 Il recule d'un pas. Il le regarde longtemps. Puis il pose le feutre.
 
-Il ne voit pas BriBri. BriBri ne dit rien. Il récupère son écharpe et repart dans la nuit de quatre heures, le cœur léger comme un ballon.
+Il ne voit pas Kaydoudou. Kaydoudou ne dit rien. Il récupère son écharpe et repart dans la nuit de quatre heures, le cœur léger comme un ballon.
 
 Ce mot-là, Okafor ne l'effacera jamais.
 
@@ -287,7 +287,7 @@ Ce mot-là, Okafor ne l'effacera jamais.
 > Quand quelqu'un porte trop lourd, on porte avec lui.
 > Et tout le monde touche la caisse : la victoire.
 > Ce qui ne circule pas pourrit. Même dans un vestiaire.
-> (BriBri : « Le njangi, c'est moi qui l'ai proposé. Je le note pour l'histoire. »)
+> (Kaydoudou : « Le njangi, c'est moi qui l'ai proposé. Je le note pour l'histoire. »)
 
 ```schema
 {

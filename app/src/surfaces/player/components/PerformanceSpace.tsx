@@ -73,7 +73,7 @@ export default function PerformanceSpace() {
         </div>
       </section>
 
-      {!team && <CreateTeamCard compact className="mb-5" />}
+      {!team && <CreateTeamCard compact senior className="mb-5" />}
       {team && !me && <LinkCallout />}
 
       <nav aria-label={t('space.navLabel')} className="-mx-4 mb-6 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">

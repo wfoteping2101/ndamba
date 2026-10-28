@@ -5,40 +5,40 @@
       "id": "ch03b",
       "anchor": "Bulldozer regarde la bosse de pagne rouge et jaune. Il sourit d'un seul côté.",
       "shot": "medium",
-      "cast": ["BRI", "KAY"],
+      "cast": ["KAY", "BRI"],
       "extras": "Junior Mvondo, called Bulldozer (12, looks 15): a huge, broad-shouldered boy with dark brown skin, a shaved head, thick neck and calves, in a clean royal blue football shirt with a shark fin drawn in black marker on the chest, blue shorts, white socks. Behind him four or five Requins de Bépanda boys in the same clean blue shirts with marker-drawn fins, elbowing each other and laughing. Prosper, called Radio (11): a slim Lionceaux boy with close-cropped hair, in a faded oversized white T-shirt with a blurred, unreadable print, wincing.",
-      "outfit": "BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, small soft round afro. Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots. Mami's old brown leather ball now has its hand-sewn square patch of red-and-yellow wax cloth with sun-like circles, making a small lump.",
-      "action": "On tiptoe, chest puffed out, BriBri proudly holds Mami's patched ball up to Bulldozer with both hands. Bulldozer towers over him and looks down at the lumpy patch with a smirk on one side of his mouth. The Requins behind him burst out laughing. One step behind BriBri, Kaydoudou frowns: he has seen his brother's jaw begin to clench.",
+      "outfit": "Kaydoudou in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, small soft round afro. BriBri in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots. Mami's old brown leather ball now has its hand-sewn square patch of red-and-yellow wax cloth with sun-like circles, making a small lump.",
+      "action": "On tiptoe, chest puffed out, Kaydoudou proudly holds Mami's patched ball up to Bulldozer with both hands. Bulldozer towers over him and looks down at the lumpy patch with a smirk on one side of his mouth. The Requins behind him burst out laughing. One step behind Kaydoudou, BriBri frowns: he has seen his brother's jaw begin to clench.",
       "location": "The edge of the red-earth pitch of Bonamoussadi before kick-off: in the corner a red parasol over a small table of bean fritters, children sitting on a low wall with dangling legs, the big mango tree, bamboo goals.",
       "light": "Warm afternoon sun, long shadows, a little red dust in the air.",
-      "camera": "Medium shot from slightly below BriBri's height, so Bulldozer looms huge in the upper part of the frame; the ball sharp in the centre.",
-      "alt": "Bulldozer regarde le ballon de Mami avec un sourire en coin ; BriBri le lui montre, tout fier, et les Requins éclatent de rire."
+      "camera": "Medium shot from slightly below Kaydoudou's height, so Bulldozer looms huge in the upper part of the frame; the ball sharp in the centre.",
+      "alt": "Bulldozer regarde le ballon de Mami avec un sourire en coin ; Kaydoudou le lui montre, tout fier, et les Requins éclatent de rire."
     },
     {
       "id": "ch03c",
-      "anchor": "La fois d'après, Kaydoudou est libre. À cinq mètres. Au milieu. Il lève la main.",
+      "anchor": "La fois d'après, BriBri est libre. À cinq mètres. Au milieu. Il lève la main.",
       "shot": "wide",
-      "cast": ["KAY", "BRI"],
-      "extras": "Two Requins de Bépanda boys (12): sturdy boys with dark brown skin and short hair, in clean royal blue shirts with a shark fin drawn in black marker on the chest, closing in on BriBri from two sides like a wall. Far behind, Mireille (11), a tall slim girl with short braids in a faded oversized orange sleeveless basketball jersey, alone on the right wing with empty red ground in front of her.",
-      "outfit": "Kaydoudou in his faded forest-green football shirt with white collar and white number 8, black shorts, white socks, worn black boots. BriBri in his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and yellow sock on his LEFT foot. The match ball is a plain worn leather football.",
-      "action": "BriBri charges head down, ball at his feet, straight into the two blue shirts that close on him. Five metres away, in a big circle of empty red ground, Kaydoudou stands completely free with one hand raised, his mouth tightly shut. Nobody looks at him.",
+      "cast": ["BRI", "KAY"],
+      "extras": "Two Requins de Bépanda boys (12): sturdy boys with dark brown skin and short hair, in clean royal blue shirts with a shark fin drawn in black marker on the chest, closing in on Kaydoudou from two sides like a wall. Far behind, Mireille (11), a tall slim girl with short braids in a faded oversized orange sleeveless basketball jersey, alone on the right wing with empty red ground in front of her.",
+      "outfit": "BriBri in his faded forest-green football shirt with white collar and white number 8, black shorts, white socks, worn black boots. Kaydoudou in his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and yellow sock on his LEFT foot. The match ball is a plain worn leather football.",
+      "action": "Kaydoudou charges head down, ball at his feet, straight into the two blue shirts that close on him. Five metres away, in a big circle of empty red ground, BriBri stands completely free with one hand raised, his mouth tightly shut. Nobody looks at him.",
       "location": "The red-earth pitch of Bonamoussadi during the match, bamboo goal in the distance, spectators along the low wall and the red parasol in a corner.",
-      "light": "Afternoon sun turning golden, long shadows on the red earth, dust around BriBri's feet.",
-      "camera": "High wide angle from behind the halfway line, so the empty space around Kaydoudou is obvious and the two blue shirts form a cage around BriBri.",
-      "alt": "BriBri fonce dans deux Requins pendant que Kaydoudou, seul à cinq mètres, lève la main sans un mot."
+      "light": "Afternoon sun turning golden, long shadows on the red earth, dust around Kaydoudou's feet.",
+      "camera": "High wide angle from behind the halfway line, so the empty space around BriBri is obvious and the two blue shirts form a cage around Kaydoudou.",
+      "alt": "Kaydoudou fonce dans deux Requins pendant que BriBri, seul à cinq mètres, lève la main sans un mot."
     },
     {
       "id": "ch03d",
       "anchor": "Il approche le sien, petit et rond.",
       "shot": "close",
-      "cast": ["KAY", "BRI"],
+      "cast": ["BRI", "KAY"],
       "extras": "",
-      "outfit": "Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, red dust on his arms. BriBri in his sun-yellow T-shirt with the red stripe, small soft round afro, the gap between his two front teeth just starting to show.",
-      "action": "Under the mango tree, the two brothers face each other. Kaydoudou holds out his long closed fist, serious, a little shy. BriBri's small round fist is approaching it, one instant before they touch, his shining eyes on his brother and a smile beginning. Between their fists a single mango leaf is falling, turning in the air.",
+      "outfit": "BriBri in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, red dust on his arms. Kaydoudou in his sun-yellow T-shirt with the red stripe, small soft round afro, the gap between his two front teeth just starting to show.",
+      "action": "Under the mango tree, the two brothers face each other. BriBri holds out his long closed fist, serious, a little shy. Kaydoudou's small round fist is approaching it, one instant before they touch, his shining eyes on his brother and a smile beginning. Between their fists a single mango leaf is falling, turning in the air.",
       "location": "Under the big mango tree at the edge of the now empty red-earth pitch of Bonamoussadi; a yellow plastic jerrycan stands alone behind them; tin roofs of the neighbourhood beyond.",
       "light": "Dusk: violet sky over the tin roofs, a last orange glow on the faces, the falling leaf lit from behind.",
       "camera": "Close shot at fist height, the two fists and the falling leaf sharp in the centre, the two faces on each side in soft focus.",
-      "alt": "Sous le manguier, au crépuscule, BriBri approche son petit poing de celui de son frère : le premier poing contre poing."
+      "alt": "Sous le manguier, au crépuscule, Kaydoudou approche son petit poing de celui de son frère : le premier poing contre poing."
     }
   ]
 }

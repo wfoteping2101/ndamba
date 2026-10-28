@@ -3,7 +3,7 @@ import { useT } from '../../../i18n'
 
 /**
  * The "but du Njangi" (Tome 1, chapter 40): from the keeper, the ball goes through all eleven
- * players and Kaydoudou serves BriBri, who scores. Ten passes drawn once on page load.
+ * players and BriBri serves Kaydoudou, who scores. Ten passes drawn once on page load.
  */
 const W = 105, H = 68, S = 6 // px per metre
 type Pos = { n: string; x: number; y: number; star?: boolean }

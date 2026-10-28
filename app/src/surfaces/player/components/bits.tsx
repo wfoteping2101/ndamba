@@ -57,11 +57,11 @@ export function LevelUpBanner({ level, onClose }: { level: number | null; onClos
 
 /* ---------- create a team ---------- */
 
-const AGES = ['U9', 'U11', 'U13', 'U15', 'U17', 'U19', 'Seniors']
+const AGES = ['U9', 'U11', 'U13', 'U15', 'U17', 'U19', 'U21', 'Seniors', 'Pro']
 const FORMATS: Team['format'][] = [5, 7, 8, 9, 11]
 
 /** One small form: the first step for a coach without a team. */
-export function CreateTeamCard({ compact = false, className }: { compact?: boolean; className?: string }) {
+export function CreateTeamCard({ compact = false, senior = false, className }: { compact?: boolean; senior?: boolean; className?: string }) {
   const { t } = useT('player')
   const [name, setName] = useState('')
   const [age, setAge] = useState('U13')
@@ -79,15 +79,15 @@ export function CreateTeamCard({ compact = false, className }: { compact?: boole
       <div className="flex items-start gap-3">
         <div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-forest-600 text-cream"><Shirt size={20} aria-hidden="true" /></div>
         <div className="min-w-0 flex-1">
-          <h2 className="font-display text-lg font-semibold text-ink">{compact ? t('team.playerTitle') : t('team.title')}</h2>
-          <p className="text-sm text-ink-muted">{compact ? t('team.playerBody') : t('team.body')}</p>
+          <h2 className="font-display text-lg font-semibold text-ink">{senior ? t('perf.team.title') : compact ? t('team.playerTitle') : t('team.title')}</h2>
+          <p className="text-sm text-ink-muted">{senior ? t('perf.team.body') : compact ? t('team.playerBody') : t('team.body')}</p>
         </div>
       </div>
       {open ? (
         <>
           <div className="mt-4 grid gap-x-3 sm:grid-cols-[2fr_1fr_1fr]">
             <Field label={t('team.name')} htmlFor="pt-name"><input id="pt-name" className="input" value={name} onChange={(e) => setName(e.target.value)} placeholder={t('team.namePh')} required /></Field>
-            <Field label={t('team.age')} htmlFor="pt-age"><select id="pt-age" className="input" value={age} onChange={(e) => setAge(e.target.value)}>{AGES.map((a) => <option key={a}>{a}</option>)}</select></Field>
+            <Field label={t('team.age')} htmlFor="pt-age"><select id="pt-age" className="input" value={age} onChange={(e) => setAge(e.target.value)}>{AGES.map((a) => <option key={a} value={a}>{a === 'Pro' ? t('team.pro') : a}</option>)}</select></Field>
             <Field label={t('team.format')} htmlFor="pt-format"><select id="pt-format" className="input" value={format} onChange={(e) => setFormat(Number(e.target.value) as Team['format'])}>{FORMATS.map((f) => <option key={f} value={f}>{f} {t('common:app.vs')} {f}</option>)}</select></Field>
           </div>
           <button type="submit" className="btn-primary min-h-[44px]" disabled={!name.trim() || busy}>{t('team.create')}</button>

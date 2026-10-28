@@ -448,9 +448,9 @@ export function parsePlayer(text: string): Pick<Slots, 'name' | 'names' | 'numbe
   return out
 }
 
-/** "Samuel 9, Junior Ndzana (FB)\n10 BriBri ailier" -> players. */
+/** "Samuel 9, Junior Ndzana (FB)\n10 Kaydoudou ailier" -> players. */
 export function parsePlayerList(text: string): { name: string; number?: number; position?: string }[] {
-  // one line can hold several players ("BriBri 7, Samuel Owona") or one player and their position ("Samuel Owona, attaquant")
+  // one line can hold several players ("Kaydoudou 7, Samuel Owona") or one player and their position ("Samuel Owona, attaquant")
   const items: string[] = []
   for (const line of text.split(/\n|;/)) {
     for (const part of line.split(/,|\s+(?:et|and)\s+/i).map((s) => s.trim()).filter(Boolean)) {

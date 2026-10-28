@@ -72,7 +72,7 @@
       "Deux joueurs seulement ont le droit de contre-presser."
     ],
     "measure": "Pertes et reprises en moins de 5 secondes, par équipe et par série. Un repère interne, à calibrer sur ses matchs : une reprise pour trois pertes. C'est le sous-indice Reprise de l'Indice Njangi.",
-    "story": "En France, Monsieur Lacombe compte à voix haute après chaque perte. BriBri, qui boudait après un ballon perdu, apprend à repartir avant le « deux »."
+    "story": "En France, Monsieur Lacombe compte à voix haute après chaque perte. Kaydoudou, qui boudait après un ballon perdu, apprend à repartir avant le « deux »."
   },
   "en": {
     "title": "The Five Seconds",
@@ -109,7 +109,7 @@
       "Only two players may counter-press."
     ],
     "measure": "Balls lost and regains within 5 seconds, per team and per set. An internal benchmark, to calibrate on your own matches: one regain for every three losses. This is the Regain sub-index of the Njangi Index.",
-    "story": "In France, Monsieur Lacombe counts out loud after every loss. BriBri, who used to sulk after losing the ball, learns to react before \"two\"."
+    "story": "In France, Monsieur Lacombe counts out loud after every loss. Kaydoudou, who used to sulk after losing the ball, learns to react before \"two\"."
   },
   "diagram": {
     "view": "grid",

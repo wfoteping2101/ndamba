@@ -8,7 +8,7 @@ export const LESSONS: Lesson[] = [
   "chapterTitle": "Le ballon rapiécé",
   "title": "Le ballon doit voyager",
   "lines": [
-   "BriBri a dribblé cinq joueurs. À la fin, le ballon était chez eux.",
+   "Kaydoudou a dribblé cinq joueurs. À la fin, le ballon était chez eux.",
    "Après, il y a eu trois passes : un tibia, Radio, Mireille. But. Quatre secondes.",
    "Un joueur qui dribble tout le monde fatigue le ballon.",
    "Trois passes le font arriver plus vite que n'importe qui en courant.",
@@ -134,7 +134,7 @@ export const LESSONS: Lesson[] = [
    "Au foot, chacun verse sa passe. Le ballon passe par tout le monde. À la fin, quelqu'un touche le but.",
    "Si quelqu'un garde la caisse, le njangi meurt.",
    "Mais une passe qui ne va nulle part ne sert à rien non plus.",
-   "(BriBri : « Et dans le brouillard, on passe à la voix. »)"
+   "(Kaydoudou : « Et dans le brouillard, on passe à la voix. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -254,11 +254,11 @@ export const LESSONS: Lesson[] = [
   "chapterTitle": "Les Requins de Bépanda",
   "title": "Quand on te serre, le ballon doit partir",
   "lines": [
-   "Bulldozer a mis deux Requins sur BriBri. À chaque fois.",
+   "Bulldozer a mis deux Requins sur Kaydoudou. À chaque fois.",
    "Mais quand deux adversaires viennent sur toi, un partenaire est libre quelque part. Forcément.",
    "Alors le ballon doit partir. Tout de suite.",
    "Et moi, si je vois le partenaire libre, je dois le dire. Fort.",
-   "(BriBri : « Kaydoudou doit crier. C'est écrit. »)"
+   "(Kaydoudou : « BriBri doit crier. C'est écrit. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -359,8 +359,8 @@ export const LESSONS: Lesson[] = [
    "Si un adversaire est entre toi et celui qui a le ballon, tu n'existes pas.",
    "Ce n'est pas que les autres t'oublient. C'est toi qui es caché.",
    "Deux pas de côté, et tu redeviens une solution.",
-   "BriBri a fait deux pas contre les Aigles. 1-0.",
-   "(BriBri : « Je suis visible. C'est mon nouveau super-pouvoir. »)"
+   "Kaydoudou a fait deux pas contre les Aigles. 1-0.",
+   "(Kaydoudou : « Je suis visible. C'est mon nouveau super-pouvoir. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -538,7 +538,7 @@ export const LESSONS: Lesson[] = [
   "chapterTitle": "La lettre de Waldorf",
   "title": "Un joueur qui bouge reste dans l'équipe",
   "lines": [
-   "BriBri est parti dans le coin sans le ballon. Son défenseur l'a suivi.",
+   "Kaydoudou est parti dans le coin sans le ballon. Son défenseur l'a suivi.",
    "Au milieu, il y avait une porte ouverte. Mireille est passée. But.",
    "Quand tu cours sans ballon, tu emmènes un adversaire avec toi et tu ouvres un espace pour un autre.",
    "Nous aussi, on bouge. On reste une équipe."
@@ -654,10 +654,10 @@ export const LESSONS: Lesson[] = [
   "lines": [
    "Douala, samedi 3 janvier. Première page du vrai carnet.",
    "Mi-temps : 0-1. J'avais encore joué poli. Alors j'ai parlé. J'avais les jambes en papier.",
-   "- On attire les Requins à gauche, vers BriBri.",
+   "- On attire les Requins à gauche, vers Kaydoudou.",
    "- Leur ligne s'ouvre au milieu. Je passe dedans.",
-   "- BriBri attire deux défenseurs et donne à Mireille, seule.",
-   "Une passe qui traverse, c'est utile. Le une-deux du Njangi aussi. (BriBri : « C'est moi qui ai trouvé le nom. »)"
+   "- Kaydoudou attire deux défenseurs et donne à Mireille, seule.",
+   "Une passe qui traverse, c'est utile. Le une-deux du Njangi aussi. (Kaydoudou : « C'est moi qui ai trouvé le nom. »)"
   ],
   "diagram": {
    "view": "half",
@@ -775,7 +775,7 @@ export const LESSONS: Lesson[] = [
    "- Faire voyager le ballon.",
    "- Se montrer : deux pas, et on existe.",
    "- Oser la passe qui traverse. Et parler.",
-   "Le Cameroun m'a donné le cœur. (BriBri : « Et Ousmane a donné les mains. »)"
+   "Le Cameroun m'a donné le cœur. (Kaydoudou : « Et Ousmane a donné les mains. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -884,7 +884,7 @@ export const LESSONS: Lesson[] = [
    "Alors il faut savoir quoi faire AVANT que le ballon arrive.",
    "- Le ballon roule vers moi : je décide.",
    "- Le ballon touche mon pied : il repart déjà.",
-   "(BriBri : moi, je décide avec mes pieds. Ils sont plus rapides que ma tête.)"
+   "(Kaydoudou : moi, je décide avec mes pieds. Ils sont plus rapides que ma tête.)"
   ],
   "diagram": {
    "view": "grid",
@@ -1005,7 +1005,7 @@ export const LESSONS: Lesson[] = [
    "Coach Whitfield dit que le contrôle, c'est déjà un voyage : je pousse le ballon vers l'espace libre, loin du défenseur.",
    "- Sous mes pieds : je perds une seconde.",
    "- Vers l'espace : je gagne une seconde, et une seconde, c'est une passe.",
-   "(BriBri : et le petit pont, ça compte comme un contrôle ?)"
+   "(Kaydoudou : et le petit pont, ça compte comme un contrôle ?)"
   ],
   "diagram": {
    "view": "grid",
@@ -1203,11 +1203,11 @@ export const LESSONS: Lesson[] = [
   "chapterTitle": "Les chiffres de Marcus",
   "title": "Dribbler pour attirer",
   "lines": [
-   "BriBri déteste les chiffres, alors je les écris pour lui :",
+   "Kaydoudou déteste les chiffres, alors je les écris pour lui :",
    "23 dribbles, 17 perdus. Mais 4 dribbles ont fait venir deux défenseurs, et 3 fois un copain a pu tirer.",
    "Un dribble qui attire deux adversaires libère un partenaire.",
    "Le plus utile n'est pas le plus beau.",
-   "(BriBri : mais le petit pont sur Tyler, c'était utile aussi. Pour le moral.)"
+   "(Kaydoudou : mais le petit pont sur Tyler, c'était utile aussi. Pour le moral.)"
   ],
   "diagram": {
    "view": "third",
@@ -1565,11 +1565,11 @@ export const LESSONS: Lesson[] = [
   "chapterTitle": "Courir pour les autres",
   "title": "Courir pour les autres",
   "lines": [
-   "Leur numéro 5 suivait tout le monde. Alors BriBri a couru vers le premier poteau, et il l'a emmené avec lui.",
+   "Leur numéro 5 suivait tout le monde. Alors Kaydoudou a couru vers le premier poteau, et il l'a emmené avec lui.",
    "Le trou s'est ouvert au milieu, j'ai passé dans le trou, et Tyler a marqué.",
    "Une course sans ballon peut faire marquer un autre.",
    "C'est verser sa part au njangi sans rien toucher ce mois-ci.",
-   "(BriBri : personne ne m'a passé le ballon et c'était ma meilleure action. C'est bizarre, le foot.)"
+   "(Kaydoudou : personne ne m'a passé le ballon et c'était ma meilleure action. C'est bizarre, le foot.)"
   ],
   "diagram": {
    "view": "third",
@@ -1681,7 +1681,7 @@ export const LESSONS: Lesson[] = [
    "En août : 48 % de possession, 34 lignes traversées, 22 ballons dans la surface, défaite quand même.",
    "Mais ce n'est pas la même défaite. La deuxième, c'est une défaite qui joue bien.",
    "Le pourcentage ne dit pas qui joue bien. Ce qui compte : les lignes traversées, les ballons dans la surface, les bonnes occasions.",
-   "(BriBri : et les chaussettes. Ça compte aussi.)"
+   "(Kaydoudou : et les chaussettes. Ça compte aussi.)"
   ],
   "diagram": {
    "view": "half",
@@ -1773,7 +1773,7 @@ export const LESSONS: Lesson[] = [
    "- Où sont les adversaires ? Où sont mes partenaires ? Où est l'espace ?",
    "Chaque regard est une photo. Quand le ballon arrive, j'ai déjà la photo dans la tête, et je joue.",
    "Le ballon sait où il est. Moi, je dois savoir où je suis.",
-   "(BriBri : « Moi, j'ai déjà scanné la boulangerie. Deux barres. »)"
+   "(Kaydoudou : « Moi, j'ai déjà scanné la boulangerie. Deux barres. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -1890,7 +1890,7 @@ export const LESSONS: Lesson[] = [
    "Les milieux ne voient pas dans leur dos. Les défenseurs ont peur de sortir.",
    "Celui qui reçoit dans la poche et qui se tourne met toute la défense en danger.",
    "Mais il faut avoir regardé avant, sinon on reçoit dos au jeu.",
-   "(BriBri : « La poche, c'est chez moi. Je suis la souris. Kaydoudou est le facteur. »)"
+   "(Kaydoudou : « La poche, c'est chez moi. Je suis la souris. BriBri est le facteur. »)"
   ],
   "diagram": {
    "view": "half",
@@ -2013,7 +2013,7 @@ export const LESSONS: Lesson[] = [
    "Je reçois sur le pied le plus loin du défenseur. Mes épaules regardent le jeu.",
    "Comme ça, je vois plus, et mon premier contact va déjà vers l'avant.",
    "Je ne suis pas Kenzo. Je suis le 6. Le manguier donne des mangues.",
-   "(BriBri : « Et moi je suis le cocotier. Je donne des buts. »)"
+   "(Kaydoudou : « Et moi je suis le cocotier. Je donne des buts. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -2140,8 +2140,8 @@ export const LESSONS: Lesson[] = [
    "Aujourd'hui je n'écris pas une leçon de football. Ou alors si.",
    "Quand un partenaire a le ballon, il doit avoir trois amis tout près : un devant, un à gauche, un à droite.",
    "Quand un partenaire a un problème, c'est pareil. On vient. On fait le cercle.",
-   "Ce qu'il a dit ne dit rien de BriBri. Ça dit tout de lui.",
-   "(BriBri a écrit en dessous, tout petit : « Merci Lucas. Merci Kenzo. Merci tout le monde. »)"
+   "Ce qu'il a dit ne dit rien de Kaydoudou. Ça dit tout de lui.",
+   "(Kaydoudou a écrit en dessous, tout petit : « Merci Lucas. Merci Kenzo. Merci tout le monde. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -2243,7 +2243,7 @@ export const LESSONS: Lesson[] = [
    "Celui qui vient de le prendre n'a pas regardé avant : il est comme quelqu'un qui se réveille.",
    "Alors les trois plus proches attaquent le ballon tout de suite. Cinq secondes. Après, on se replace.",
    "On ne lève pas les bras au ciel. On se retourne et on y va.",
-   "(BriBri : « Trois secondes. C'est moi qui ai compté. »)"
+   "(Kaydoudou : « Trois secondes. C'est moi qui ai compté. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -2349,7 +2349,7 @@ export const LESSONS: Lesson[] = [
    "Celui qui a déjà regardé n'a pas besoin de réfléchir quand le ballon arrive.",
    "La décision est prise avant. Le pied n'a plus qu'à obéir : une seule touche.",
    "Kenzo, dans la cage : carte rouge, à gauche. Carte jaune, à droite. Il a regardé avant, il a joué tout de suite.",
-   "(BriBri : « Champion du monde du jeu des yeux. 12 à 3 contre Kaydoudou. Je le note pour l'histoire. »)"
+   "(Kaydoudou : « Champion du monde du jeu des yeux. 12 à 3 contre BriBri. Je le note pour l'histoire. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -2451,7 +2451,7 @@ export const LESSONS: Lesson[] = [
    "- « Tourne ! » : personne dans ton dos, retourne-toi.",
    "- « Garde ! » : protège, j'arrive.",
    "Celui qui voit doit parler pour celui qui ne voit pas.",
-   "(BriBri : « Il manque un mot : MOUETTE ! »)"
+   "(Kaydoudou : « Il manque un mot : MOUETTE ! »)"
   ],
   "diagram": {
    "view": "half",
@@ -2582,7 +2582,7 @@ export const LESSONS: Lesson[] = [
    "- Je cherche entre les lignes : la poche où personne n'habite.",
    "- Je reprends en cinq secondes : quand on perd le ballon, on y va tous.",
    "- Je parle : Seul, Homme, Tourne, Garde. On ne laisse personne seul.",
-   "(BriBri : « Et on regarde le ciel. À cause des mouettes. »)"
+   "(Kaydoudou : « Et on regarde le ciel. À cause des mouettes. »)"
   ],
   "diagram": null
  },
@@ -2596,7 +2596,7 @@ export const LESSONS: Lesson[] = [
    "- Toujours offrir un angle au porteur : des triangles, jamais une ligne droite.",
    "- Ne jamais rester caché derrière le taureau (Tonton Fokou le disait déjà dans la boue).",
    "- La plus belle passe file entre les deux taureaux.",
-   "(BriBri : « Taureau, c'est le pire métier du monde. Mais je vais devenir le meilleur. »)"
+   "(Kaydoudou : « Taureau, c'est le pire métier du monde. Mais je vais devenir le meilleur. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -2687,7 +2687,7 @@ export const LESSONS: Lesson[] = [
    "Quand il met son poids sur une jambe, la porte s'ouvre : je joue dans son dos.",
    "La pausa, ce n'est pas être lent. C'est attendre avec une idée dans la tête.",
    "Le ballon doit savoir où il va. Maintenant, il doit aussi savoir quand.",
-   "(BriBri : « J'ai pausé Nil. C'est officiel, c'est un verbe. »)"
+   "(Kaydoudou : « J'ai pausé Nil. C'est officiel, c'est un verbe. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -2764,7 +2764,7 @@ export const LESSONS: Lesson[] = [
    "- Jamais deux joueurs dans le même couloir sur la même ligne.",
    "- L'ailier reste large : il emmène son défenseur avec lui et ouvre le milieu.",
    "Bien répartis, on étire l'adversaire comme un élastique, et le trou apparaît.",
-   "(BriBri : « Nom de super-héros : Capitaine Largeur. Pouvoir : ouvrir les portes sans les toucher. »)"
+   "(Kaydoudou : « Nom de super-héros : Capitaine Largeur. Pouvoir : ouvrir les portes sans les toucher. »)"
   ],
   "diagram": {
    "view": "half",
@@ -2918,7 +2918,7 @@ export const LESSONS: Lesson[] = [
    "Le défenseur regarde B. Il ne voit jamais C.",
    "Pour remettre au bon endroit, il faut avoir vu C AVANT que le ballon arrive.",
    "Une passe peut être polie ET utile : elle prépare celle d'après.",
-   "(BriBri : « J'ai été le défenseur cent fois. Je n'ai jamais vu Laia. Jamais. »)"
+   "(Kaydoudou : « J'ai été le défenseur cent fois. Je n'ai jamais vu Laia. Jamais. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -3005,12 +3005,12 @@ export const LESSONS: Lesson[] = [
   "no": 29,
   "part": 4,
   "chapterTitle": "La mer et Mami",
-  "title": "Le dribble njangi (inventé par BriBri)",
+  "title": "Le dribble njangi (inventé par Kaydoudou)",
   "lines": [
    "Je dribble pour attirer. Quand deux adversaires viennent sur moi, un partenaire est libre.",
    "Je fais ma pausa, je les fixe, puis je donne au partenaire qui a l'espace.",
    "Mami dit : « Quand tu donnes, tu ne perds pas. Tu ranges chez l'autre. »",
-   "(BriBri, en gros, par-dessus : « MON DRIBBLE, C'EST UN CADEAU. »)"
+   "(Kaydoudou, en gros, par-dessus : « MON DRIBBLE, C'EST UN CADEAU. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -3123,7 +3123,7 @@ export const LESSONS: Lesson[] = [
    "- De qualité : mettre notre meilleur dribbleur seul contre un défenseur plus faible.",
    "On attire d'un côté, et on change de côté VITE, avant qu'ils glissent.",
    "Le jeu de position, c'est jouer aux échecs avec des amis : les pièces pensent avec moi.",
-   "(BriBri : « Je suis la grosse orange. C'est écrit. »)"
+   "(Kaydoudou : « Je suis la grosse orange. C'est écrit. »)"
   ],
   "diagram": {
    "view": "half",
@@ -3230,7 +3230,7 @@ export const LESSONS: Lesson[] = [
    "Quand il monte, l'espace s'ouvre dans son dos.",
    "Alors on accélère d'un coup : une seule passe, longue et rapide.",
    "Le changement de rythme est une arme. C'est comme la machine à coudre de Mami.",
-   "(BriBri : « Tac... tac... tac... VRRROUM. »)"
+   "(Kaydoudou : « Tac... tac... tac... VRRROUM. »)"
   ],
   "diagram": {
    "view": "full",
@@ -3359,9 +3359,9 @@ export const LESSONS: Lesson[] = [
   "lines": [
    "Rondo, pausa, couloirs, troisième homme, supériorités, lent lent vite, dribble njangi.",
    "La carte, c'est savoir où être, quand passer, et pour qui.",
-   "Le but de la victoire : je donne à BriBri, il attire deux défenseurs, et moi, le pivot, j'entre dans le trou.",
+   "Le but de la victoire : je donne à Kaydoudou, il attire deux défenseurs, et moi, le pivot, j'entre dans le trou.",
    "Quand on a peur, on oublie la carte. Jordi dit : « Faites ce que vous savez. »",
-   "(BriBri : « Le pivot a marqué. Je l'ai vu de mes yeux. Personne ne va me croire à Bafoussam. »)"
+   "(Kaydoudou : « Le pivot a marqué. Je l'ai vu de mes yeux. Personne ne va me croire à Bafoussam. »)"
   ],
   "diagram": {
    "view": "half",
@@ -3497,7 +3497,7 @@ export const LESSONS: Lesson[] = [
    "- Mon corps est un mur : genoux pliés, bras ouvert, ballon sur le pied loin de l'adversaire.",
    "- Je joue loin de la pression : s'il arrive par la gauche, je pars à droite.",
    "- Si je suis coincé, je ne me bats pas : une touche sur le mur, il me la rend, je suis parti.",
-   "(BriBri : « Le mur, c'était moi. Je suis un excellent mur. »)"
+   "(Kaydoudou : « Le mur, c'était moi. Je suis un excellent mur. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -3580,7 +3580,7 @@ export const LESSONS: Lesson[] = [
    "Mon premier contrôle m'éloigne du défenseur. Jamais vers lui.",
    "Je lâche le ballon avant qu'il me touche : quand il arrive, il tacle l'air.",
    "Le défenseur, c'est un bus : gros, lourd, lent à tourner. Il ne faut pas être sur la route.",
-   "(BriBri : « Le meilleur tacle, c'est celui qu'on ne reçoit pas. »)"
+   "(Kaydoudou : « Le meilleur tacle, c'est celui qu'on ne reçoit pas. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -3674,7 +3674,7 @@ export const LESSONS: Lesson[] = [
    "- Les signaux : une passe en arrière, un mauvais contrôle, un ballon près de la touche.",
    "- Je cours en cachant derrière mon dos la passe qu'il voudrait faire : c'est mon ombre.",
    "- Deux ou trois restent toujours derrière. C'est la caisse de secours du njangi.",
-   "(BriBri : « Jaden court, Kaydoudou regarde. Ensemble, ça fait peur. »)"
+   "(Kaydoudou : « Jaden court, BriBri regarde. Ensemble, ça fait peur. »)"
   ],
   "diagram": {
    "view": "half",
@@ -3814,7 +3814,7 @@ export const LESSONS: Lesson[] = [
    "Quand quelqu'un porte trop lourd, on porte avec lui.",
    "Et tout le monde touche la caisse : la victoire.",
    "Ce qui ne circule pas pourrit. Même dans un vestiaire.",
-   "(BriBri : « Le njangi, c'est moi qui l'ai proposé. Je le note pour l'histoire. »)"
+   "(Kaydoudou : « Le njangi, c'est moi qui l'ai proposé. Je le note pour l'histoire. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -3974,7 +3974,7 @@ export const LESSONS: Lesson[] = [
    "- Si c'est ouvert : on attaque vite, tout de suite.",
    "- Si c'est fermé : on garde, on respire, on s'organise.",
    "On joue pour faire voyager le ballon. Pas pour ceux qui regardent.",
-   "(BriBri : « Ça, c'est moi qui l'ai dit. Dans l'escalier. »)"
+   "(Kaydoudou : « Ça, c'est moi qui l'ai dit. Dans l'escalier. »)"
   ],
   "diagram": {
    "view": "half",
@@ -4083,7 +4083,7 @@ export const LESSONS: Lesson[] = [
    "Il va plus vite que nous et il n'est jamais fatigué.",
    "On le garde, on le fait tourner en losange, on fait la pausa. Eux courent, nous respirons.",
    "Garder le ballon, c'est aussi une façon de se reposer.",
-   "(BriBri : « J'ai trouvé le bouton des Allemands. C'était le ballon. »)"
+   "(Kaydoudou : « J'ai trouvé le bouton des Allemands. C'était le ballon. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -4190,7 +4190,7 @@ export const LESSONS: Lesson[] = [
    "- La carte (Espagne) : être au bon endroit, créer des triangles.",
    "- Le souffle (Angleterre) : posséder aussi quand ça brûle.",
    "« Le ballon doit voyager. » (Tonton Fokou) « Mais il doit savoir où il va. » (Mami, de sa main)",
-   "(BriBri : « Les chaussettes, c'est la sixième pièce. La secrète. »)"
+   "(Kaydoudou : « Les chaussettes, c'est la sixième pièce. La secrète. »)"
   ],
   "diagram": {
    "view": "grid",
@@ -4320,9 +4320,9 @@ export const LESSONS: Lesson[] = [
    "Onze joueurs, onze touches. Personne n'a gardé la caisse.",
    "- Freddie a gardé son calme, Samir a fait la pausa, Tom a préparé, Ollie a joué avant le contact.",
    "- Arjun a fait jouer le troisième homme, Jaden a donné son souffle, Callum a attiré, Theo a fait le mur.",
-   "- Reece a pris le couloir vide, BriBri a fait le dribble njangi.",
+   "- Reece a pris le couloir vide, Kaydoudou a fait le dribble njangi.",
    "Chacun a versé sa part, tout le monde a touché, et le ballon savait où il allait.",
-   "(BriBri : « Il a oublié de s'écrire. Kaydoudou a parlé tout le temps, et il a fait la dernière passe. Moi, j'ai compté jusqu'à onze. D'habitude, je compte mes chutes. »)"
+   "(Kaydoudou : « Il a oublié de s'écrire. BriBri a parlé tout le temps, et il a fait la dernière passe. Moi, j'ai compté jusqu'à onze. D'habitude, je compte mes chutes. »)"
   ],
   "diagram": {
    "view": "full",

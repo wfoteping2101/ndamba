@@ -47,7 +47,7 @@
       "Touches libres pendant la circulation."
     ],
     "measure": "Points à 1 et à 2 par série. L'analyste chronomètre la première passe vers l'avant jusqu'à la cible : la majorité des accélérations doit finir en moins de 3 secondes.",
-    "story": "Contre l'Académie de l'Atlas, les frères gagnent en circulant lentement pour attirer, puis en accélérant d'un coup. Kaydoudou l'écrit : lent, lent, VITE."
+    "story": "Contre l'Académie de l'Atlas, les frères gagnent en circulant lentement pour attirer, puis en accélérant d'un coup. BriBri l'écrit : lent, lent, VITE."
   },
   "en": {
     "title": "Slow, Slow, QUICK",
@@ -84,7 +84,7 @@
       "Unlimited touches during circulation."
     ],
     "measure": "1-point and 2-point scores per set. The analyst times each attack from the first forward pass to the target: most accelerations should finish in under 3 seconds.",
-    "story": "Against the Atlas Academy, the brothers win by moving the ball slowly to draw them in, then speeding up all at once. Kaydoudou writes it down: slow, slow, QUICK."
+    "story": "Against the Atlas Academy, the brothers win by moving the ball slowly to draw them in, then speeding up all at once. BriBri writes it down: slow, slow, QUICK."
   },
   "diagram": {
     "view": "grid", "w": 45, "h": 30,

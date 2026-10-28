@@ -47,7 +47,7 @@
       "Le partenaire part déjà dans la zone de but."
     ],
     "measure": "Part des actions où le défenseur sort sur le porteur avant la passe, et part des buts à 2 points. Sur 10 actions, viser 6 fixations réussies.",
-    "story": "Avi Ramon apprend la pausa à BriBri : garder le ballon une demi-seconde de plus pour que l'adversaire s'engage, puis jouer dans son dos."
+    "story": "Avi Ramon apprend la pausa à Kaydoudou : garder le ballon une demi-seconde de plus pour que l'adversaire s'engage, puis jouer dans son dos."
   },
   "en": {
     "title": "Carry to Pin",
@@ -84,7 +84,7 @@
       "The teammate starts already in the scoring zone."
     ],
     "measure": "Share of actions where the defender steps out to the carrier before the pass, and share of 2-point goals. Out of 10 actions, aim for 6 successful pins.",
-    "story": "Avi Ramon teaches BriBri the pausa: keep the ball half a second longer so the opponent commits, then play in behind him."
+    "story": "Avi Ramon teaches Kaydoudou the pausa: keep the ball half a second longer so the opponent commits, then play in behind him."
   },
   "diagram": {
     "view": "grid", "w": 30, "h": 20,

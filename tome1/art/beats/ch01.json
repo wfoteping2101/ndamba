@@ -5,40 +5,40 @@
       "id": "ch01b",
       "anchor": "Premier défenseur. Stop. Petit coup de tête, comme un lézard sur un mur. Et hop, de l'autre côté.",
       "shot": "dynamic",
-      "cast": ["BRI", "KAY"],
+      "cast": ["KAY", "BRI"],
       "extras": "Prosper, called Radio (11), a Lionceaux midfielder: a slim boy with dark brown skin, close-cropped hair and a big talkative mouth, in a faded oversized white T-shirt with a blurred, unreadable faded print, one hand cupped in front of his mouth like a microphone. Mireille Eyenga, called the Gazelle (11): a tall slim girl with dark brown skin and short braids, long runner's legs, in a faded oversized orange sleeveless basketball jersey with no number, black shorts, bare dusty shins. One Gars de la Pharmacie defender (10): a skinny neighbourhood boy with dark brown skin and a shaved head, in a washed-out purple T-shirt, falling on his bottom.",
-      "outfit": "BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts with a thin white side stripe, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, small soft round afro, the gap between his two front teeth showing. Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots. The ball is Mami's old brown leather ball, still round and whole, with NO patch yet.",
-      "action": "BriBri performs the crochet du margouillat: stopped dead on his toes, the ball trapped under his sole, he tilts his head sideways like a lizard on a wall, mischievous grin, while the first defender, fooled, topples backward onto his bottom in a puff of red dust. In the left foreground Radio runs alongside, hand cupped at his mouth, shouting his commentary. Far behind, Kaydoudou stands alone on the right with one arm half raised, calm, watching not his brother but Mireille, who waits alone in the middle with her arms wide open.",
+      "outfit": "Kaydoudou in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts with a thin white side stripe, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, small soft round afro, the gap between his two front teeth showing. BriBri in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots. The ball is Mami's old brown leather ball, still round and whole, with NO patch yet.",
+      "action": "Kaydoudou performs the crochet du margouillat: stopped dead on his toes, the ball trapped under his sole, he tilts his head sideways like a lizard on a wall, mischievous grin, while the first defender, fooled, topples backward onto his bottom in a puff of red dust. In the left foreground Radio runs alongside, hand cupped at his mouth, shouting his commentary. Far behind, BriBri stands alone on the right with one arm half raised, calm, watching not his brother but Mireille, who waits alone in the middle with her arms wide open.",
       "location": "The red-earth neighbourhood pitch of Bonamoussadi in Douala: powdery red ground, two goals made of bamboo poles tied with wire (the left one leaning), a big mango tree in one corner, a low wall, motorbike taxis passing on the road behind.",
       "light": "Dry-season late morning, hard white sun, fine red dust kicked up and glowing in the air.",
-      "camera": "Low dynamic angle at ball height, BriBri large in the centre, the falling defender on the right, Radio cut by the left edge, Kaydoudou and Mireille small and sharp in the depth.",
-      "alt": "BriBri lance le crochet du margouillat, la tête penchée comme un lézard, pendant que Radio commente tout, la main devant la bouche."
+      "camera": "Low dynamic angle at ball height, Kaydoudou large in the centre, the falling defender on the right, Radio cut by the left edge, BriBri and Mireille small and sharp in the depth.",
+      "alt": "Kaydoudou lance le crochet du margouillat, la tête penchée comme un lézard, pendant que Radio commente tout, la main devant la bouche."
     },
     {
       "id": "ch01c",
       "anchor": "Et il voit Radio. Seul au milieu. La bouche ouverte. Sans un mot, pour une fois.",
       "shot": "close",
-      "cast": ["KAY"],
-      "extras": "Prosper, called Radio (11): a slim boy with dark brown skin and close-cropped hair, in a faded oversized white T-shirt with a blurred, unreadable faded print, standing alone in midfield with his mouth wide open and his hands empty. Mireille (11), a tall slim girl with short braids in a faded oversized orange sleeveless basketball jersey, already sprinting on the right. In the background, three Gars de la Pharmacie boys in washed-out T-shirts packed around BriBri like a wall, and their goalkeeper, a chubby boy in a red T-shirt, still staring at BriBri.",
-      "outfit": "Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots, red dust on his shins. The ball is Mami's old brown leather ball, whole, with NO patch yet.",
-      "action": "Slow motion. The old brown ball rolls toward Kaydoudou, spinning slowly, its seams visible. He has not stopped it: his right foot is already swinging to strike it first time with the inside of the foot. His calm eyes are not on the ball but on Radio, alone in the middle with his mouth open. Red dust hangs motionless around them like suspended sparks.",
+      "cast": ["BRI"],
+      "extras": "Prosper, called Radio (11): a slim boy with dark brown skin and close-cropped hair, in a faded oversized white T-shirt with a blurred, unreadable faded print, standing alone in midfield with his mouth wide open and his hands empty. Mireille (11), a tall slim girl with short braids in a faded oversized orange sleeveless basketball jersey, already sprinting on the right. In the background, three Gars de la Pharmacie boys in washed-out T-shirts packed around Kaydoudou like a wall, and their goalkeeper, a chubby boy in a red T-shirt, still staring at Kaydoudou.",
+      "outfit": "BriBri in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots, red dust on his shins. The ball is Mami's old brown leather ball, whole, with NO patch yet.",
+      "action": "Slow motion. The old brown ball rolls toward BriBri, spinning slowly, its seams visible. He has not stopped it: his right foot is already swinging to strike it first time with the inside of the foot. His calm eyes are not on the ball but on Radio, alone in the middle with his mouth open. Red dust hangs motionless around them like suspended sparks.",
       "location": "The red-earth pitch of Bonamoussadi, Douala, bamboo goals and the mango tree blurred behind.",
       "light": "White late-morning sun, every grain of red dust frozen and glowing, a sharp halo on the edge of the ball.",
-      "camera": "Close dynamic shot at ankle height behind Kaydoudou's striking foot, the rolling ball sharp in the foreground, Radio sharp in the distance along his eyeline, everything else softly blurred.",
-      "alt": "Le temps s'arrête : le ballon roule vers Kaydoudou, qui a déjà vu Radio, seul au milieu, la bouche ouverte."
+      "camera": "Close dynamic shot at ankle height behind BriBri's striking foot, the rolling ball sharp in the foreground, Radio sharp in the distance along his eyeline, everything else softly blurred.",
+      "alt": "Le temps s'arrête : le ballon roule vers BriBri, qui a déjà vu Radio, seul au milieu, la bouche ouverte."
     },
     {
       "id": "ch01d",
       "anchor": "Il se cogne dans la table. « Aïe ! » Il continue quand même.",
       "shot": "medium",
-      "cast": ["PAPA", "BRI", "KAY"],
+      "cast": ["PAPA", "KAY", "BRI"],
       "extras": "",
-      "outfit": "Papa Armand (41), tall, short neat beard, in a light blue short-sleeved shirt and olive trousers. BriBri still in his dusty sun-yellow T-shirt with the red stripe and green shorts, his red sock on his RIGHT foot and yellow sock on his LEFT foot. Kaydoudou in a plain forest-green T-shirt, thin shaved part on the left side of his head. On BriBri's knees, Mami's old brown leather ball, torn open along one seam and completely deflated.",
-      "action": "In the middle of the small living room, Papa dances the famous corner-flag dance, one hand on his belly, the other raised high, hips rolling like a canoe on the river, and his hip has just bumped the table: a glass wobbles, Papa grimaces comically but keeps dancing. BriBri, curled up on a plastic chair with the torn ball on his knees, smiles in spite of himself, his eyes still a little red. Kaydoudou leans against the door frame with his small one-sided smile.",
+      "outfit": "Papa Armand (41), tall, short neat beard, in a light blue short-sleeved shirt and olive trousers. Kaydoudou still in his dusty sun-yellow T-shirt with the red stripe and green shorts, his red sock on his RIGHT foot and yellow sock on his LEFT foot. BriBri in a plain forest-green T-shirt, thin shaved part on the left side of his head. On Kaydoudou's knees, Mami's old brown leather ball, torn open along one seam and completely deflated.",
+      "action": "In the middle of the small living room, Papa dances the famous corner-flag dance, one hand on his belly, the other raised high, hips rolling like a canoe on the river, and his hip has just bumped the table: a glass wobbles, Papa grimaces comically but keeps dancing. Kaydoudou, curled up on a plastic chair with the torn ball on his knees, smiles in spite of himself, his eyes still a little red. BriBri leans against the door frame with his small one-sided smile.",
       "location": "A modest living room in Douala: a wooden table with an open laptop turned away from the viewer (its screen not visible, only a soft glow), plastic chairs, a sofa with a wax-print throw, a window onto tin roofs.",
       "light": "Warm light from a bare bulb, blue evening outside the window, the cool glow of the laptop on the table.",
-      "camera": "Medium shot at child eye level, Papa dancing in the centre, BriBri on the left on his chair, Kaydoudou on the right in the doorway.",
-      "alt": "Dans le salon, Papa danse la danse de Roger Milla et se cogne dans la table ; BriBri, le ballon crevé sur les genoux, sourit malgré lui."
+      "camera": "Medium shot at child eye level, Papa dancing in the centre, Kaydoudou on the left on his chair, BriBri on the right in the doorway.",
+      "alt": "Dans le salon, Papa danse la danse de Roger Milla et se cogne dans la table ; Kaydoudou, le ballon crevé sur les genoux, sourit malgré lui."
     }
   ]
 }

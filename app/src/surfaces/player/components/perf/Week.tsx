@@ -29,7 +29,7 @@ export function WeekCard({ d }: { d: PerfData }) {
     <section className="card overflow-hidden" aria-labelledby="wk-h">
       <div className="px-4 pt-4 sm:px-5 sm:pt-5">
         <PerfHead id="wk-h" icon={<CalendarDays />} eyebrow={t('perf.week.eyebrow')} title={d.next && daysBetween(d.today, d.next.date) <= 6 ? t('perf.week.titleMatch', { opponent: d.next.opponent }) : t('perf.week.title')}
-          hint={t('perf.week.hint', { n: fmtInt(total, lang) })} />
+          hint={total ? t('perf.week.hint', { n: fmtInt(total, lang) }) : t('perf.week.hintEmpty')} />
       </div>
       <ol className="grid grid-cols-7 gap-1 px-3 sm:gap-2 sm:px-5" aria-label={t('perf.week.days')}>
         {days.map((day) => {

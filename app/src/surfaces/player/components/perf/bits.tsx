@@ -26,7 +26,7 @@ export function Figure({ label, value, sub, tone = 'ink', className }: { label: 
   const color = tone === 'forest' ? 'text-forest-700' : tone === 'terra' ? 'text-terra-700' : tone === 'sun' ? 'text-sun-700' : 'text-ink'
   return (
     <div className={cx('min-w-0 rounded-xl bg-cream/80 px-3 py-2.5 ring-1 ring-line/70', className)}>
-      <div className="truncate text-[11.5px] font-medium text-ink-muted">{label}</div>
+      <div className="line-clamp-2 text-[11.5px] font-medium leading-tight text-ink-muted">{label}</div>
       <div className={cx('font-display text-[22px] font-semibold leading-tight tabular-nums', color)}>{value}</div>
       {sub && <div className="truncate text-[11.5px] text-ink-faint">{sub}</div>}
     </div>
@@ -37,6 +37,7 @@ export function Figure({ label, value, sub, tone = 'ink', className }: { label: 
 export function ScaleRow({ id, label, value, onChange, from = 1, to = 5, low, high, describe }: {
   id: string; label: string; value?: number; onChange: (v: number) => void; from?: number; to?: number; low: string; high: string; describe?: (v: number) => string
 }) {
+  // 0 to 10: two rows on phones, one row from 640 px
   const values = Array.from({ length: to - from + 1 }, (_, i) => from + i)
   const wide = values.length > 6
   return (

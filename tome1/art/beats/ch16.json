@@ -3,51 +3,51 @@
   "beats": [
     {
       "id": "ch16b",
-      "anchor": "BriBri pose la semelle sur le ballon, et il attend.",
+      "anchor": "Kaydoudou pose la semelle sur le ballon, et il attend.",
       "shot": "dynamic",
       "cast": [
-        "BRI",
-        "KAY"
+        "KAY",
+        "BRI"
       ],
-      "extras": "Two Shenandoah Valley Stallions players, both 12 but tall and broad like older brothers: one with pale skin and a blond buzz cut, one with light brown skin and short black curls, in plain black kits with white numbers, lunging at BriBri from both sides at once. Diego Ramírez, 11, Salvadoran-American, light brown skin, spiky black hair, navy kit with white number 12, sprinting in free on the left edge of the frame.",
-      "outfit": "BriBri in the navy Potomac Valley kit with white number 33, red sock on his RIGHT foot and yellow sock on his LEFT foot, small soft afro. Kaydoudou in the navy Potomac Valley kit with white number 8, shaved part on the left side of his head, no bracelet yet.",
-      "action": "BriBri stands on tiptoe with the sole of his right boot resting on the ball, perfectly calm, a cheeky grin showing the gap between his front teeth, while the two big defenders dive at him like mosquitoes on a bare arm. His eyes already slide sideways toward Diego, who arrives alone. Far behind, in the middle of the pitch, Kaydoudou still holds two fingers up after his pass.",
+      "extras": "Two Shenandoah Valley Stallions players, both 12 but tall and broad like older brothers: one with pale skin and a blond buzz cut, one with light brown skin and short black curls, in plain black kits with white numbers, lunging at Kaydoudou from both sides at once. Diego Ramírez, 11, Salvadoran-American, light brown skin, spiky black hair, navy kit with white number 12, sprinting in free on the left edge of the frame.",
+      "outfit": "Kaydoudou in the navy Potomac Valley kit with white number 33, red sock on his RIGHT foot and yellow sock on his LEFT foot, small soft afro. BriBri in the navy Potomac Valley kit with white number 8, shaved part on the left side of his head, no bracelet yet.",
+      "action": "Kaydoudou stands on tiptoe with the sole of his right boot resting on the ball, perfectly calm, a cheeky grin showing the gap between his front teeth, while the two big defenders dive at him like mosquitoes on a bare arm. His eyes already slide sideways toward Diego, who arrives alone. Far behind, in the middle of the pitch, BriBri still holds two fingers up after his pass.",
       "location": "A sun-scorched grass pitch in a huge tournament complex in Maryland in August, white and blue parents' tents and a small metal stand blurred in the background.",
       "light": "Hard August sun, bleached white sky, heat haze shimmering above the yellowed grass.",
-      "camera": "Low dynamic angle at ball height, BriBri and the ball at the centre, the two defenders converging diagonally from left and right, Diego small and sharp on the left edge, Kaydoudou soft in the distance.",
-      "alt": "BriBri pose la semelle sur le ballon et attend ; deux Stallions se jettent sur lui pendant que Diego arrive tout seul."
+      "camera": "Low dynamic angle at ball height, Kaydoudou and the ball at the centre, the two defenders converging diagonally from left and right, Diego small and sharp on the left edge, BriBri soft in the distance.",
+      "alt": "Kaydoudou pose la semelle sur le ballon et attend ; deux Stallions se jettent sur lui pendant que Diego arrive tout seul."
     },
     {
       "id": "ch16c",
       "anchor": "hurle toute l'équipe à travers les larmes",
       "shot": "medium",
       "cast": [
-        "KAY",
-        "BRI"
-      ],
-      "extras": "Coach Dana Whitfield, about 40, fit, light skin, brown ponytail, navy academy polo shirt, a whistle around her neck, red eyes and a proud smile, one fist raised. Diego Ramírez, 11, light brown skin, spiky black hair, navy kit number 12, shouting with wet cheeks. Tyler Brooks, 12, tall, pale skin, blond hair, navy kit number 9, one red sock and one yellow sock, sitting on the floor against the wall, shouting with his fist up. Owen, 12, tall, pale freckled skin, red hair, a towel around his neck, shouting through tears.",
-      "outfit": "Kaydoudou and BriBri in their navy Potomac Valley kits, number 8 and number 33; Kaydoudou's shaved part on the left, no bracelet yet; BriBri's red sock on his RIGHT foot and yellow sock on his LEFT foot.",
-      "action": "The whole team, sitting on wooden benches, throws their heads back and roars together with tears still on their cheeks and fists in the air. In the middle, BriBri bursts out laughing while still crying, mouth wide open on the gap in his teeth, tears and a runny nose. Next to him, Kaydoudou, eyes red, shouts too, a small surprised smile breaking through. Coach Whitfield stands in front of them, fist raised, smiling with wet eyes.",
-      "location": "A locker room after the lost final: cinder-block walls painted light blue, long wooden benches, kit bags on the floor, no writing anywhere.",
-      "light": "Yellow neon light from the ceiling, warm on the wet faces, soft shadows.",
-      "camera": "Medium shot at bench height, the two brothers at the centre, teammates on both sides, the coach's back and raised fist in the foreground on the right.",
-      "alt": "Dans le vestiaire, toute l'équipe crie à travers les larmes, et BriBri éclate de rire en pleurant à côté de Kaydoudou."
-    },
-    {
-      "id": "ch16d",
-      "anchor": "BriBri s'approche de la vitre.",
-      "shot": "quiet",
-      "cast": [
         "BRI",
         "KAY"
       ],
+      "extras": "Coach Dana Whitfield, about 40, fit, light skin, brown ponytail, navy academy polo shirt, a whistle around her neck, red eyes and a proud smile, one fist raised. Diego Ramírez, 11, light brown skin, spiky black hair, navy kit number 12, shouting with wet cheeks. Tyler Brooks, 12, tall, pale skin, blond hair, navy kit number 9, one red sock and one yellow sock, sitting on the floor against the wall, shouting with his fist up. Owen, 12, tall, pale freckled skin, red hair, a towel around his neck, shouting through tears.",
+      "outfit": "BriBri and Kaydoudou in their navy Potomac Valley kits, number 8 and number 33; BriBri's shaved part on the left, no bracelet yet; Kaydoudou's red sock on his RIGHT foot and yellow sock on his LEFT foot.",
+      "action": "The whole team, sitting on wooden benches, throws their heads back and roars together with tears still on their cheeks and fists in the air. In the middle, Kaydoudou bursts out laughing while still crying, mouth wide open on the gap in his teeth, tears and a runny nose. Next to him, BriBri, eyes red, shouts too, a small surprised smile breaking through. Coach Whitfield stands in front of them, fist raised, smiling with wet eyes.",
+      "location": "A locker room after the lost final: cinder-block walls painted light blue, long wooden benches, kit bags on the floor, no writing anywhere.",
+      "light": "Yellow neon light from the ceiling, warm on the wet faces, soft shadows.",
+      "camera": "Medium shot at bench height, the two brothers at the centre, teammates on both sides, the coach's back and raised fist in the foreground on the right.",
+      "alt": "Dans le vestiaire, toute l'équipe crie à travers les larmes, et Kaydoudou éclate de rire en pleurant à côté de BriBri."
+    },
+    {
+      "id": "ch16d",
+      "anchor": "Kaydoudou s'approche de la vitre.",
+      "shot": "quiet",
+      "cast": [
+        "KAY",
+        "BRI"
+      ],
       "extras": "Tyler Brooks, 12, tall, pale skin, blond hair, in a plain grey T-shirt, sitting in the passenger seat of his mother's car, cheeks and forehead bright red, looking away out of embarrassment, eyes a little wet. His mother at the wheel, blurred, a blonde woman in sunglasses.",
-      "outfit": "BriBri in his sun-yellow T-shirt with the red stripe on the left of the chest and green shorts, red sock on his RIGHT foot and yellow sock on his LEFT foot, holding the brand-new pair of football socks (one red, one yellow) against his chest. Kaydoudou in a plain green T-shirt, the new braided blue and white bracelet on his LEFT wrist, shaved part on the left.",
-      "action": "BriBri leans toward the open car window, the new socks pressed to his heart, looking straight at Tyler with a serious, glowing face. Tyler blushes to his forehead and stares at the dashboard. Behind them, on the steps of the house among moving boxes, Kaydoudou watches with a soft smile.",
+      "outfit": "Kaydoudou in his sun-yellow T-shirt with the red stripe on the left of the chest and green shorts, red sock on his RIGHT foot and yellow sock on his LEFT foot, holding the brand-new pair of football socks (one red, one yellow) against his chest. BriBri in a plain green T-shirt, the new braided blue and white bracelet on his LEFT wrist, shaved part on the left.",
+      "action": "Kaydoudou leans toward the open car window, the new socks pressed to his heart, looking straight at Tyler with a serious, glowing face. Tyler blushes to his forehead and stares at the dashboard. Behind them, on the steps of the house among moving boxes, BriBri watches with a soft smile.",
       "location": "The driveway of a small beige house in Waldorf at the end of summer, cardboard moving boxes piled up, a basketball hoop above the garage, a quiet street of beige houses.",
       "light": "Golden late-afternoon summer light, long shadows across the driveway.",
-      "camera": "Quiet medium shot from the street side, the car window frame on the right with Tyler inside, BriBri in profile at the centre, Kaydoudou small on the steps in the background.",
-      "alt": "Devant la petite maison beige, BriBri serre les chaussettes neuves contre lui et parle à Tyler, tout rouge derrière la vitre."
+      "camera": "Quiet medium shot from the street side, the car window frame on the right with Tyler inside, Kaydoudou in profile at the centre, BriBri small on the steps in the background.",
+      "alt": "Devant la petite maison beige, Kaydoudou serre les chaussettes neuves contre lui et parle à Tyler, tout rouge derrière la vitre."
     }
   ]
 }

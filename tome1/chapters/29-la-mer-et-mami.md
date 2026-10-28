@@ -3,16 +3,16 @@ numero: 29
 slug: la-mer-et-mami
 titre: La mer et Mami
 partie: 4
-pov: BriBri
-resume: Un hiver de vent froid, une mauvaise nouvelle venue de Bafoussam, puis un après-midi de soleil sur la plage où BriBri donne enfin un nom à son dribble.
-illustration: Plan large, après-midi lumineux de février sur une petite plage de sable doré, la mer turquoise et calme, des barques de pêcheurs tirées sur le sable, un amandier en fleurs blanches sur la colline. Au premier plan, pieds nus, BriBri, petite afro, une chaussette rouge et une chaussette jaune roulées dans les poings comme des drapeaux, vient de lever le ballon par-dessus le pied d'un enfant. Deux tongs posées dans le sable forment un but. Laia Ferrer, chignon brun défait par le vent, court seule vers ce but, les bras ouverts. Joie, sable qui vole.
+pov: Kaydoudou
+resume: Un hiver de vent froid, une mauvaise nouvelle venue de Bafoussam, puis un après-midi de soleil sur la plage où Kaydoudou donne enfin un nom à son dribble.
+illustration: Plan large, après-midi lumineux de février sur une petite plage de sable doré, la mer turquoise et calme, des barques de pêcheurs tirées sur le sable, un amandier en fleurs blanches sur la colline. Au premier plan, pieds nus, Kaydoudou, petite afro, une chaussette rouge et une chaussette jaune roulées dans les poings comme des drapeaux, vient de lever le ballon par-dessus le pied d'un enfant. Deux tongs posées dans le sable forment un but. Laia Ferrer, chignon brun défait par le vent, court seule vers ce but, les bras ouverts. Joie, sable qui vole.
 ---
 
 Clac ! Clac ! CLAC !
 
-Les volets verts claquent toute la nuit. BriBri tire la couverture sur sa tête.
+Les volets verts claquent toute la nuit. Kaydoudou tire la couverture sur sa tête.
 
-« Kayd. Il y a un monstre dehors. »
+« Bri. Il y a un monstre dehors. »
 
 « C'est la tramuntana. Le vent du nord. Elle descend des montagnes. »
 
@@ -24,7 +24,7 @@ Les volets verts claquent toute la nuit. BriBri tire la couverture sur sa tête.
 
 La mer devient grise. Sur la place, les platanes sans feuilles ressemblent à de grands squelettes qui lèvent les bras.
 
-Le soir, BriBri monte quand même sur le terrat. Il regarde vers le sud, là où doit être l'Afrique. Il ne voit que du noir et des lumières de bateaux. Le vent lui tire des larmes. Il peut faire croire que c'est seulement le vent.
+Le soir, Kaydoudou monte quand même sur le terrat. Il regarde vers le sud, là où doit être l'Afrique. Il ne voit que du noir et des lumières de bateaux. Le vent lui tire des larmes. Il peut faire croire que c'est seulement le vent.
 
 Dans le lit, il chuchote :
 
@@ -34,7 +34,7 @@ Dans le lit, il chuchote :
 
 « Et des benskins qui klaxonnent comme des canards en colère ? Et du brouillard chez Mami, le matin, quand on ne voit plus ses pieds ? »
 
-« Je me souviens de tout, BriBri. »
+« Je me souviens de tout, Kaydoudou. »
 
 « Douze ans, quatre pays, et pas un seul beignet-haricot ici. » Un silence. « Tu crois qu'on rentrera un jour ? »
 
@@ -42,7 +42,7 @@ Son frère met longtemps à répondre.
 
 « Oui. Je ne sais pas quand. Mais oui. »
 
-C'est une réponse de Kaydoudou. Courte. Sans promesse en trop. BriBri s'endort dessus comme sur un oreiller.
+C'est une réponse de BriBri. Courte. Sans promesse en trop. Kaydoudou s'endort dessus comme sur un oreiller.
 
 * * *
 
@@ -52,13 +52,13 @@ Drrr. Drrr. Le téléphone de Papa vibre sur la table. Il se lève et part dans 
 
 « Quand ? ... Elle a mal où ? ... Le docteur a dit quoi ? »
 
-Maman pose sa fourchette. Kaydoudou arrête de mâcher. Personne ne bouge.
+Maman pose sa fourchette. BriBri arrête de mâcher. Personne ne bouge.
 
 Quand Papa revient, il essaie de sourire. Son sourire tient mal.
 
 « C'est Mami. Elle a glissé dans sa cour, ce matin. Il avait plu, les pierres étaient mouillées. Elle s'est fait mal à la hanche. »
 
-Le ventre de BriBri tombe dans ses chaussettes.
+Le ventre de Kaydoudou tombe dans ses chaussettes.
 
 « Elle va... elle va guérir ? »
 
@@ -66,9 +66,9 @@ Le ventre de BriBri tombe dans ses chaussettes.
 
 Maman est infirmière. Elle sait ce que veut dire « fragile ». Elle prend la main de Papa sur la table.
 
-Cette nuit-là, BriBri ne dort presque pas.
+Cette nuit-là, Kaydoudou ne dort presque pas.
 
-« Kayd. Tu dors ? »
+« Bri. Tu dors ? »
 
 « Non. »
 
@@ -78,11 +78,11 @@ Cette nuit-là, BriBri ne dort presque pas.
 
 « Mais si on n'avait pas été dans le journal... »
 
-« BriBri. Ce n'est pas ta faute. »
+« Kaydoudou. Ce n'est pas ta faute. »
 
 « Alors pourquoi j'ai mal au ventre ? »
 
-Kaydoudou ne sait pas quoi répondre. BriBri imagine Mami par terre dans la cour, toute seule, le foulard de travers. Il serre son oreiller si fort qu'il en a mal aux doigts.
+BriBri ne sait pas quoi répondre. Kaydoudou imagine Mami par terre dans la cour, toute seule, le foulard de travers. Il serre son oreiller si fort qu'il en a mal aux doigts.
 
 * * *
 
@@ -106,13 +106,13 @@ Maman Tchinda se penche vers l'écran.
 
 « La poussière n'attend pas que les hanches guérissent », répond Mami, très digne.
 
-BriBri se penche vers l'écran.
+Kaydoudou se penche vers l'écran.
 
 « Mami... C'est à cause du tabouret ? »
 
 « Le tabouret ? Le tabouret est innocent ! C'est la pluie, la coupable. Et la pluie, je lui ai dit ma façon de penser. »
 
-« Et le njangi, Mami ? demande BriBri. Qui le dirige, maintenant ? »
+« Et le njangi, Mami ? demande Kaydoudou. Qui le dirige, maintenant ? »
 
 « Moi ! Depuis mon fauteuil ! On a changé la règle. Chaque jour, une femme vient chez moi. Une apporte le repas. Une fait la lessive. Une autre me lit le cahier des comptes. Et la réunion du dimanche, on la fait ici, dans ma cour. Pour que la présidente puisse présider ! »
 
@@ -120,15 +120,15 @@ BriBri se penche vers l'écran.
 
 « Assise, mais présidente. »
 
-Puis Mami regarde BriBri droit dans les yeux, à travers l'écran et toute la Méditerranée.
+Puis Mami regarde Kaydoudou droit dans les yeux, à travers l'écran et toute la Méditerranée.
 
 « Pendant trente ans, j'ai donné. Mon temps, mon fil, mes conseils, mes beignets. Et maintenant, tout revient. Tu vois, mon petit, quand tu donnes, tu ne perds pas. Tu ranges chez l'autre. Et un jour, quand tu en as besoin, tu vas le chercher. »
 
-BriBri fait tourner la phrase dans sa tête, comme un caillou dans sa poche.
+Kaydoudou fait tourner la phrase dans sa tête, comme un caillou dans sa poche.
 
 *Tu ranges chez l'autre.*
 
-Quand il passe le ballon, BriBri a toujours l'impression de le perdre un peu. Mais si Mami avait raison ? Si une passe, c'était un ballon rangé chez un ami ?
+Quand il passe le ballon, Kaydoudou a toujours l'impression de le perdre un peu. Mais si Mami avait raison ? Si une passe, c'était un ballon rangé chez un ami ?
 
 *Et si un dribble aussi pouvait donner ?*
 
@@ -140,13 +140,13 @@ Avant de raccrocher, Mami lève sa canne vers l'écran, comme une épée.
 
 Le samedi, la tramuntana tombe d'un coup. Comme un drap qu'on lâche.
 
-Le ciel devient d'un bleu tout propre. La mer redevient turquoise. BriBri ouvre la fenêtre et crie :
+Le ciel devient d'un bleu tout propre. La mer redevient turquoise. Kaydoudou ouvre la fenêtre et crie :
 
-« Kaydoudou ! Viens voir ! Il a neigé sur l'arbre ! »
+« BriBri ! Viens voir ! Il a neigé sur l'arbre ! »
 
 Sur la colline, un grand arbre est tout blanc.
 
-« Ce sont des fleurs, dit Kaydoudou. Les amandiers fleurissent en février. »
+« Ce sont des fleurs, dit BriBri. Les amandiers fleurissent en février. »
 
 « Des fleurs en février ? Ce pays est fou. »
 
@@ -154,7 +154,7 @@ Laia passe les chercher à deux heures, avec Nil, Pol et une bande de petits du 
 
 « Je vous présente Martí, sept ans. Il ne parle que catalan. Et les jumeaux, Arnau et Biel, huit ans. »
 
-« Comment on les reconnaît ? » demande BriBri.
+« Comment on les reconnaît ? » demande Kaydoudou.
 
 « Au bonnet. Le bleu, c'est Arnau. Le rouge, c'est Biel. Sauf quand ils échangent. »
 
@@ -166,7 +166,7 @@ Laia passe les chercher à deux heures, avec Nil, Pol et une bande de petits du 
 
 « Voilà la platja del Racó, annonce Laia. Notre plage secrète. »
 
-C'est une petite crique, avec des barques bleues et blanches tirées sur le sable. Tout le monde enlève ses chaussures. BriBri enlève aussi ses chaussettes, la rouge et la jaune, et les roule en boule dans ses poings.
+C'est une petite crique, avec des barques bleues et blanches tirées sur le sable. Tout le monde enlève ses chaussures. Kaydoudou enlève aussi ses chaussettes, la rouge et la jaune, et les roule en boule dans ses poings.
 
 « Pourquoi tu les gardes dans tes mains ? » demande Laia.
 
@@ -198,7 +198,7 @@ Il tente un retourné pour se venger et retombe sur le dos, comme une tortue. Ma
 
 Ça marche une fois sur deux.
 
-BriBri est au paradis. Ici, on peut tomber, rouler, glisser : rien ne fait mal.
+Kaydoudou est au paradis. Ici, on peut tomber, rouler, glisser : rien ne fait mal.
 
 « Attention ! La vague ! »
 
@@ -206,7 +206,7 @@ Il fait semblant de partir vers la mer, et ses deux adversaires courent vers l'e
 
 « Massa alt ! hurle Martí. Trop haut ! »
 
-« Il était parfait ! » jure BriBri en camfrancatañol.
+« Il était parfait ! » jure Kaydoudou en camfrancatañol.
 
 Sans barre transversale, impossible de savoir. Nil tranche :
 
@@ -220,7 +220,7 @@ Sans barre transversale, impossible de savoir. Nil tranche :
 
 « Le prochain but gagne ! »
 
-BriBri reçoit le ballon près des barques. Devant lui, Pol. Un peu plus loin, Martí. Il part en conduite, en soulevant le ballon à petits coups.
+Kaydoudou reçoit le ballon près des barques. Devant lui, Pol. Un peu plus loin, Martí. Il part en conduite, en soulevant le ballon à petits coups.
 
 *Le but de la victoire*, pense-t-il. *Rien que pour moi.*
 
@@ -230,7 +230,7 @@ Et derrière eux, Laia. Seule. Au bord de l'eau, les pieds dans l'écume, à tro
 
 Le temps ralentit.
 
-BriBri entend les vagues. Il sent le sable froid sous ses orteils. Il voit le chignon de Laia, défait par le vent, ses cheveux qui volent.
+Kaydoudou entend les vagues. Il sent le sable froid sous ses orteils. Il voit le chignon de Laia, défait par le vent, ses cheveux qui volent.
 
 *Tu ranges chez l'autre.*
 
@@ -252,17 +252,17 @@ Laia court dans la mer jusqu'aux genoux, et ressort aussitôt avec un cri de mou
 
 « Elle est gelée ! ELLE EST GELÉE ! »
 
-BriBri reste planté là, Pol et Martí collés à lui. Il n'a pas marqué. Et il est aussi heureux que s'il avait marqué trois fois.
+Kaydoudou reste planté là, Pol et Martí collés à lui. Il n'a pas marqué. Et il est aussi heureux que s'il avait marqué trois fois.
 
-« Tu pouvais marquer », dit Kaydoudou, assis sur une barque, le téléphone de Maman à la main.
+« Tu pouvais marquer », dit BriBri, assis sur une barque, le téléphone de Maman à la main.
 
-« Je sais. » BriBri sourit de toutes ses dents. « Mais Laia était toute seule. »
+« Je sais. » Kaydoudou sourit de toutes ses dents. « Mais Laia était toute seule. »
 
 Laia revient, trempée, les dents qui claquent, rayonnante.
 
 « Ce dribble, il a un nom ? »
 
-BriBri pense à la cour de Mami. Aux femmes autour du fauteuil. À la caisse qui passe de main en main.
+Kaydoudou pense à la cour de Mami. Aux femmes autour du fauteuil. À la caisse qui passe de main en main.
 
 « Oui, dit-il. C'est le dribble njangi. »
 
@@ -282,15 +282,15 @@ Le soir même, tous les enfants de Vinyamar savent ce que c'est.
 
 * * *
 
-« On la refait pour Mami, dit Kaydoudou. En mieux. »
+« On la refait pour Mami, dit BriBri. En mieux. »
 
-Ils la refont sept fois. Une vague emporte une tong. BriBri rit trop. Martí crie au mauvais moment. À la septième, c'est parfait.
+Ils la refont sept fois. Une vague emporte une tong. Kaydoudou rit trop. Martí crie au mauvais moment. À la septième, c'est parfait.
 
-BriBri l'envoie à Mami, avec un message : « Pour ta télévision. C'est le dribble njangi. Je l'ai appris de toi. »
+Kaydoudou l'envoie à Mami, avec un message : « Pour ta télévision. C'est le dribble njangi. Je l'ai appris de toi. »
 
 La réponse arrive deux heures plus tard, pendant le dîner. Un message vocal.
 
-« C'est Mami ! » crie BriBri.
+« C'est Mami ! » crie Kaydoudou.
 
 Il appuie sur le bouton. Toute la famille se penche.
 
@@ -304,15 +304,15 @@ Puis la voix de Mami, essoufflée, ravie, toute proche du téléphone :
 
 Et le chant repart de plus belle.
 
-BriBri écoute le message dix fois. Puis vingt. Ce soir-là, il s'endort avec le téléphone sur la poitrine.
+Kaydoudou écoute le message dix fois. Puis vingt. Ce soir-là, il s'endort avec le téléphone sur la poitrine.
 
 Dans son rêve, la tramuntana souffle vers le sud. Et elle emporte jusqu'à Bafoussam l'odeur des amandiers en fleurs.
 
-> [!CARNET] Leçon du Ballon n°29 : Le dribble njangi (inventé par BriBri)
+> [!CARNET] Leçon du Ballon n°29 : Le dribble njangi (inventé par Kaydoudou)
 > Je dribble pour attirer. Quand deux adversaires viennent sur moi, un partenaire est libre.
 > Je fais ma pausa, je les fixe, puis je donne au partenaire qui a l'espace.
 > Mami dit : « Quand tu donnes, tu ne perds pas. Tu ranges chez l'autre. »
-> (BriBri, en gros, par-dessus : « MON DRIBBLE, C'EST UN CADEAU. »)
+> (Kaydoudou, en gros, par-dessus : « MON DRIBBLE, C'EST UN CADEAU. »)
 
 ```schema
 {

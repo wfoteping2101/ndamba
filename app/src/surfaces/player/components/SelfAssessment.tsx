@@ -75,7 +75,7 @@ export function SelfAssessment({ teamId, name, senior = false, coachSkills }: { 
           ) : (
             <>
               <div className="mx-auto mt-2 w-full max-w-[420px]"><SkillRadar axes={axes} series={series} size={300} /></div>
-              <Legend items={series.map((s) => ({ name: s.name, color: s.color }))} />
+              <Legend items={series.filter((s) => Object.values(s.values).some(Boolean)).map((s) => ({ name: s.name, color: s.color }))} />
               {coachHas && <p className="mt-2 text-xs text-ink-muted">{t(`${P}.coachNote`)}</p>}
             </>
           )}

@@ -1,5 +1,5 @@
-// Home for players and parents: today's challenge, XP and streak, the lesson of the day,
-// the novel, the next match of the team and the notebook.
+// Home for players under 16 and for parents: the journey, today's challenge, XP and streak, the lesson
+// of the day, the novel, the next match of the team and the notebook. (16 and over: PerformanceHome.)
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, BookOpen, CalendarDays, Check, Flame, MapPin, NotebookPen, Star, Trophy } from 'lucide-react'
@@ -21,6 +21,7 @@ import { BookImage, COVER_IMG } from './BookImage'
 import { CreateTeamCard, LevelUpBanner, SectionHead } from './bits'
 import { useLevelUp, usePlayerData, useTeamCalendar } from './data'
 import { useUnderstood } from './storage'
+import { JourneyCard } from './JourneyCard'
 
 export default function PlayerHome() {
   const { t, lang } = useT('player')
@@ -57,6 +58,7 @@ export default function PlayerHome() {
         } />
 
       {parent && <div className="mb-5"><Callout tone="sun" title={t('parent.title')}>{t('parent.body')}</Callout></div>}
+      {team && <JourneyCard />}
 
       <div className="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3">
         <section className="lg:col-span-2" aria-labelledby="hd-h">

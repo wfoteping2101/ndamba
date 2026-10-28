@@ -47,7 +47,7 @@
       "Un seul défenseur actif, l'autre reste immobile au centre."
     ],
     "measure": "Nombre de passes jouées vers le joker par minute et pourcentage de ces passes qui arrivent. On veut beaucoup de tentatives à travers le bloc, pas seulement autour.",
-    "story": "Comme Kaydoudou devenu pivot en Catalogne, le joker apprend à recevoir au milieu des adversaires et à faire jouer la passe d'après."
+    "story": "Comme BriBri devenu pivot en Catalogne, le joker apprend à recevoir au milieu des adversaires et à faire jouer la passe d'après."
   },
   "en": {
     "title": "The Pivot in the Middle",
@@ -84,7 +84,7 @@
       "Only one active defender; the other stands still in the middle."
     ],
     "measure": "Passes played into the joker per minute and the share that arrive. We want plenty of attempts through the block, not only around it.",
-    "story": "Like Kaydoudou when he became a pivot in Catalonia, the joker learns to receive among opponents and set up the next pass."
+    "story": "Like BriBri when he became a pivot in Catalonia, the joker learns to receive among opponents and set up the next pass."
   },
   "diagram": {
     "view": "grid", "w": 12, "h": 12,

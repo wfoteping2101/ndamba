@@ -3,9 +3,9 @@ numero: 14
 slug: la-coupe-du-monde-chez-nous
 titre: La Coupe du monde chez nous
 partie: 2
-pov: Kaydoudou
+pov: BriBri
 resume: L'été 2026, la plus grande fête du football du monde s'installe en Amérique, à quelques heures de Waldorf. Le Cameroun n'y est pas, mais l'Afrique, elle, va faire trembler les stades.
-illustration: Plan large, de nuit, dans les gradins d'un stade immense de Philadelphie illuminé par des centaines de projecteurs. Au premier plan, de dos et de trois quarts, Kaydoudou, fine raie à gauche, et BriBri, petite afro, une chaussette rouge et une chaussette jaune dépassant de ses baskets, se lèvent les bras en l'air au moment où la vague humaine arrive sur leur rangée. Papa, entre eux, lève les bras lui aussi. Autour, des drapeaux de toutes les couleurs, des visages peints, la pelouse verte tout en bas, minuscule. Émerveillement, joie, vertige.
+illustration: Plan large, de nuit, dans les gradins d'un stade immense de Philadelphie illuminé par des centaines de projecteurs. Au premier plan, de dos et de trois quarts, BriBri, fine raie à gauche, et Kaydoudou, petite afro, une chaussette rouge et une chaussette jaune dépassant de ses baskets, se lèvent les bras en l'air au moment où la vague humaine arrive sur leur rangée. Papa, entre eux, lève les bras lui aussi. Autour, des drapeaux de toutes les couleurs, des visages peints, la pelouse verte tout en bas, minuscule. Émerveillement, joie, vertige.
 ---
 
 BOUM. BOUM. BOUM.
@@ -14,15 +14,15 @@ Des tambours. Des milliers de voix. Un bruit énorme qui tape dans la poitrine.
 
 Le tunnel de béton s'ouvre d'un coup. Et le stade est là.
 
-Kaydoudou s'arrête net sur la marche. Un monsieur en perruque bleue lui rentre dans le dos.
+BriBri s'arrête net sur la marche. Un monsieur en perruque bleue lui rentre dans le dos.
 
 « Sorry, little man ! »
 
-« Sorry », répond Kaydoudou, sans se retourner.
+« Sorry », répond BriBri, sans se retourner.
 
 Il ne peut regarder que ça. Une cuvette géante, plus haute que tous les immeubles de Douala, pleine à ras bord. La nuit est blanche sous des centaines de projecteurs. Tout en bas, très loin, la pelouse brille comme un tapis de billard.
 
-*Le stade respire*, pense Kaydoudou.
+*Le stade respire*, pense BriBri.
 
 « Bienvenue à la Coupe du monde, les garçons, dit Papa, la voix tremblante. Chez nous. Enfin... chez les Américains. Les États-Unis, le Canada et le Mexique. Quarante-huit équipes ! »
 
@@ -30,7 +30,7 @@ Juin 2026. La plus grande fête du football du monde, à quelques heures de Wald
 
 « Ton père a passé des nuits entières devant l'ordinateur pour ces billets », dit Maman.
 
-« Il a raté dix fois ! raconte BriBri à tout le monde. Dix fois ! »
+« Il a raté dix fois ! raconte Kaydoudou à tout le monde. Dix fois ! »
 
 « Onze », corrige Papa.
 
@@ -38,17 +38,17 @@ Juin 2026. La plus grande fête du football du monde, à quelques heures de Wald
 
 Leurs places sont tout en haut. Presque dans le ciel.
 
-« On voit l'Afrique, d'ici ? » demande BriBri.
+« On voit l'Afrique, d'ici ? » demande Kaydoudou.
 
 « Non, dit Papa. Mais on voit le New Jersey. C'est déjà pas mal. »
 
 Autour d'eux, c'est le monde entier. Des joues peintes, des drapeaux grands comme des draps de lit, des trompettes. Une odeur de pop-corn et de saucisses grillées.
 
-« Papa, regarde ! crie BriBri. Une famille toute en vert qui chante en portugais ! Des chapeaux mexicains grands comme des parasols ! Et le monsieur en blanc, là, il pleure déjà ! Le match n'a même pas commencé ! »
+« Papa, regarde ! crie Kaydoudou. Une famille toute en vert qui chante en portugais ! Des chapeaux mexicains grands comme des parasols ! Et le monsieur en blanc, là, il pleure déjà ! Le match n'a même pas commencé ! »
 
 « C'est la Coupe du monde, dit Papa. Ici, on pleure avant, pendant et après. »
 
-BriBri a mis ses chaussettes porte-bonheur. La rouge et la jaune, bien visibles au-dessus de ses baskets.
+Kaydoudou a mis ses chaussettes porte-bonheur. La rouge et la jaune, bien visibles au-dessus de ses baskets.
 
 « Pour l'Afrique, explique-t-il à son voisin. Africa ! Socks ! Lucky ! »
 
@@ -60,9 +60,9 @@ Puis il serre la main de chaque personne de la rangée. À la onzième, Maman le
 
 Au milieu du match, quelque chose arrive de l'autre côté du stade. Un frisson. Des milliers de bras qui se lèvent. Qui retombent. Qui se lèvent un peu plus près.
 
-« La vague ! hurle BriBri. Elle arrive ! ELLE ARRIVE ! »
+« La vague ! hurle Kaydoudou. Elle arrive ! ELLE ARRIVE ! »
 
-Kaydoudou la regarde venir. Elle traverse les tribunes d'en face. Elle fait le tour du stade. Elle grimpe vers eux, rangée après rangée.
+BriBri la regarde venir. Elle traverse les tribunes d'en face. Elle fait le tour du stade. Elle grimpe vers eux, rangée après rangée.
 
 « Prêts ? » demande Papa.
 
@@ -76,25 +76,25 @@ Une.
 
 « MAINTENANT ! »
 
-Toute la rangée se lève d'un seul coup, les bras en l'air. Papa, debout entre ses deux fils, lève les bras lui aussi. Maman. Les étudiants mexicains. Le vieux monsieur en blanc. Et BriBri, qui saute si haut que sa casquette s'envole trois rangs plus bas.
+Toute la rangée se lève d'un seul coup, les bras en l'air. Papa, debout entre ses deux fils, lève les bras lui aussi. Maman. Les étudiants mexicains. Le vieux monsieur en blanc. Et Kaydoudou, qui saute si haut que sa casquette s'envole trois rangs plus bas.
 
 « HOUUUUU ! »
 
-« Ma casquette ! » crie BriBri.
+« Ma casquette ! » crie Kaydoudou.
 
 « Elle fait la vague toute seule ! » rit Papa.
 
-Pendant une seconde, Kaydoudou sent une chose qu'il n'a jamais sentie. Soixante mille personnes qui font le même geste en même temps, sans se connaître, sans parler la même langue.
+Pendant une seconde, BriBri sent une chose qu'il n'a jamais sentie. Soixante mille personnes qui font le même geste en même temps, sans se connaître, sans parler la même langue.
 
 La vague continue son chemin. Il la regarde partir, la gorge serrée. *Comme un ballon qui voyage par tous les joueurs.*
 
 Puis il cherche quelque chose dans les tribunes.
 
-« Tu cherches quoi ? » demande BriBri.
+« Tu cherches quoi ? » demande Kaydoudou.
 
 « Le drapeau. Vert, rouge, jaune, avec l'étoile au milieu. »
 
-« Il n'est pas là », dit BriBri tout bas.
+« Il n'est pas là », dit Kaydoudou tout bas.
 
 « Je sais. »
 
@@ -102,11 +102,11 @@ Le Cameroun ne s'est pas qualifié.
 
 * * *
 
-Ils l'ont appris à Douala, quelques mois plus tôt. Papa a éteint la télé sans rien dire. Il est sorti marcher dans la nuit. Ce soir-là, sous la moustiquaire, BriBri a demandé :
+Ils l'ont appris à Douala, quelques mois plus tôt. Papa a éteint la télé sans rien dire. Il est sorti marcher dans la nuit. Ce soir-là, sous la moustiquaire, Kaydoudou a demandé :
 
 « Les Lions Indomptables sont morts ? »
 
-« Non, a dit Kaydoudou. Les lions ne meurent pas. Ils dorment. »
+« Non, a dit BriBri. Les lions ne meurent pas. Ils dorment. »
 
 « Ils dorment combien de temps ? »
 
@@ -114,15 +114,15 @@ Ils l'ont appris à Douala, quelques mois plus tôt. Papa a éteint la télé sa
 
 Il n'en était pas sûr du tout.
 
-Dans la voiture, au retour de Philadelphie, BriBri dort contre la vitre, sa casquette retrouvée sur les genoux. Les lumières de l'autoroute glissent sur le visage de Papa.
+Dans la voiture, au retour de Philadelphie, Kaydoudou dort contre la vitre, sa casquette retrouvée sur les genoux. Les lumières de l'autoroute glissent sur le visage de Papa.
 
-« Ça te fait mal, Papa ? demande Kaydoudou tout bas. Que le Cameroun ne soit pas là ? »
+« Ça te fait mal, Papa ? demande BriBri tout bas. Que le Cameroun ne soit pas là ? »
 
 Papa met longtemps à répondre.
 
 « En 1990, j'avais six ans. Ton grand-père m'avait mis sur ses épaules. Toute la ville était dans la rue. Les gens dansaient sur les voitures. J'ai cru que le Cameroun gagnerait toujours. » Il sourit dans le rétroviseur. « Ça fait mal, oui. Mais c'est une bonne douleur. C'est la douleur de quelqu'un qui aime. »
 
-« Alors moi aussi, j'ai mal », dit Kaydoudou tout bas.
+« Alors moi aussi, j'ai mal », dit BriBri tout bas.
 
 * * *
 
@@ -130,13 +130,13 @@ Et pourtant, cet été-là, l'Afrique est magnifique.
 
 « Dix nations africaines dans cette Coupe du monde ! répète Papa à chaque repas. Et neuf passent en phase à élimination directe, là où celui qui perd rentre chez lui ! Neuf ! Avant, jamais plus de trois. Jamais ! »
 
-« Merci, Monsieur Neuf », dit BriBri.
+« Merci, Monsieur Neuf », dit Kaydoudou.
 
 Le surnom reste.
 
 « Le Cameroun n'est pas là, annonce Maman. Alors on adopte tout le continent. »
 
-« Tout ? » demande BriBri.
+« Tout ? » demande Kaydoudou.
 
 « Tout. »
 
@@ -144,7 +144,7 @@ Alors on adopte.
 
 « L'Afrique du Sud passe ! crie Papa. Pour la première fois de son histoire ! »
 
-« Regardez ! crie BriBri en sautant sur le canapé. La danse des Bafana ! »
+« Regardez ! crie Kaydoudou en sautant sur le canapé. La danse des Bafana ! »
 
 La RD Congo mène 1-0 contre l'Angleterre en seizièmes de finale. De longues minutes de bonheur. Papa reste debout devant la télé, les mains sur la tête.
 
@@ -162,7 +162,7 @@ Il reste deux heures sur le canapé, le tournevis à la main.
 
 « Why is everybody screaming ? »
 
-« Because Egypt ! » hurle BriBri.
+« Because Egypt ! » hurle Kaydoudou.
 
 Et l'Égypte perd 3-2.
 
@@ -178,11 +178,11 @@ Il gagne, et il gagne encore.
 
 « Quart de finale ! annonce Papa. Le Maroc contre la France, à Boston ! »
 
-Ce soir-là, la famille s'installe devant la télé avec des drapeaux marocains en papier, coloriés par BriBri l'après-midi. Diego vient aussi, avec ses parents et une énorme marmite.
+Ce soir-là, la famille s'installe devant la télé avec des drapeaux marocains en papier, coloriés par Kaydoudou l'après-midi. Diego vient aussi, avec ses parents et une énorme marmite.
 
 « Pupusas ! annonce-t-il en soulevant le couvercle. Des galettes de maïs avec du fromage dedans. La recette de ma grand-mère ! »
 
-« C'est trop bon, dit BriBri, la bouche pleine. Je veux me marier avec cette marmite. »
+« C'est trop bon, dit Kaydoudou, la bouche pleine. Je veux me marier avec cette marmite. »
 
 Puis il met la main devant sa bouche, comme Radio à Bonamoussadi.
 
@@ -192,11 +192,11 @@ Puis il met la main devant sa bouche, comme Radio à Bonamoussadi.
 
 Le Maroc se bat jusqu'au bout. La France gagne 2-0.
 
-Au coup de sifflet final, personne ne parle. Même BriBri pose son micro imaginaire.
+Au coup de sifflet final, personne ne parle. Même Kaydoudou pose son micro imaginaire.
 
 « Ils ont été des lions, dit enfin Papa. Jusqu'au bout. »
 
-Kaydoudou regarde les joueurs marocains assis sur la pelouse, et il a l'impression que ce sont ses cousins.
+BriBri regarde les joueurs marocains assis sur la pelouse, et il a l'impression que ce sont ses cousins.
 
 * * *
 
@@ -210,9 +210,9 @@ L'Espagne contre l'Argentine.
 
 « ¡Que gane el que juegue mejor ! » lance Abuela Rosa.
 
-« Grandma says : may the best team win », traduit Diego. Puis il se tourne vers Kaydoudou. « Who do you want to win ? »
+« Grandma says : may the best team win », traduit Diego. Puis il se tourne vers BriBri. « Who do you want to win ? »
 
-« Je ne sais pas », dit Kaydoudou en haussant les épaules. Puis le match commence. Au bout de dix minutes, il sait.
+« Je ne sais pas », dit BriBri en haussant les épaules. Puis le match commence. Au bout de dix minutes, il sait.
 
 L'Espagne fait voyager le ballon.
 
@@ -230,15 +230,15 @@ Un trou s'ouvre dans la défense. Une passe le traverse, pile au bon moment.
 
 « ... celle qui traverse ! »
 
-« Comment tu savais ? » demande BriBri, les yeux ronds.
+« Comment tu savais ? » demande Kaydoudou, les yeux ronds.
 
 « Parce que le ballon sait où il va. Il cherche. Et ils bougent tous ensemble, comme s'ils avaient le même plan dans la tête. »
 
-Kaydoudou a ouvert son carnet sur ses genoux. Il ne prend pas de notes. Il le tient, c'est tout. Comme on tient la main de quelqu'un.
+BriBri a ouvert son carnet sur ses genoux. Il ne prend pas de notes. Il le tient, c'est tout. Comme on tient la main de quelqu'un.
 
 « Le ballon doit voyager », murmure-t-il.
 
-« Tonton Fokou ! » dit BriBri.
+« Tonton Fokou ! » dit Kaydoudou.
 
 « Le ballon, c'est la caisse du njangi. »
 
@@ -250,11 +250,11 @@ Kaydoudou a ouvert son carnet sur ses genoux. Il ne prend pas de notes. Il le ti
 
 « Est-ce que cette passe nous rapproche du but ? »
 
-BriBri sourit.
+Kaydoudou sourit.
 
 « Ça, c'est toi. C'est ton carnet. »
 
-Ces phrases, Kaydoudou les a entendues dans trois langues. Sur de la terre rouge, dans un dôme blanc, dans une salle qui sentait les chaussettes. Et maintenant, elles sont toutes là, sur l'écran géant.
+Ces phrases, BriBri les a entendues dans trois langues. Sur de la terre rouge, dans un dôme blanc, dans une salle qui sentait les chaussettes. Et maintenant, elles sont toutes là, sur l'écran géant.
 
 Elles jouent au football.
 
@@ -268,9 +268,9 @@ L'Espagne marque. 1-0.
 
 « Champions du monde ! hurle Diego. Champions du monde ! »
 
-La maison des Ramírez explose. Le perroquet siffle comme une sirène. Diego danse avec sa grand-mère. BriBri danse avec le chien d'un cousin.
+La maison des Ramírez explose. Le perroquet siffle comme une sirène. Diego danse avec sa grand-mère. Kaydoudou danse avec le chien d'un cousin.
 
-Kaydoudou ne bouge pas. Il regarde les hommes en rouge qui pleurent de joie sur la pelouse.
+BriBri ne bouge pas. Il regarde les hommes en rouge qui pleurent de joie sur la pelouse.
 
 *Maintenant, je comprends*, pense-t-il. *Tout ce que disait Tonton Fokou. Tout.*
 
@@ -278,11 +278,11 @@ Kaydoudou ne bouge pas. Il regarde les hommes en rouge qui pleurent de joie sur 
 
 Ils rentrent à pied, sous un ciel lourd et chaud. Papa marche entre ses deux fils, les mains dans les poches. Dans les jardins, des petites lumières clignotent.
 
-« C'est quoi ? » demande BriBri.
+« C'est quoi ? » demande Kaydoudou.
 
 « Des lucioles. Des petites bêtes qui s'allument la nuit. Comme les lumières d'un réseau. »
 
-« Tu as vu ? » dit Kaydoudou.
+« Tu as vu ? » dit BriBri.
 
 « J'ai vu. »
 
@@ -292,13 +292,13 @@ Papa s'arrête sous un lampadaire. Il réfléchit, comme s'il y pensait depuis t
 
 « À l'Afrique, il ne manque pas le talent. On a vu le Maroc, l'Égypte, le Congo, tous les autres. Du talent, on en a plus que personne. Ce qui nous manque, c'est une idée commune. Une manière à nous de jouer, que tout le monde connaît, du plus petit au plus grand. Du gamin de Bonamoussadi jusqu'aux Lions. Une idée qui voyage. »
 
-« Comme le ballon de Mami ? » demande BriBri en bâillant.
+« Comme le ballon de Mami ? » demande Kaydoudou en bâillant.
 
 Papa sourit.
 
 « Exactement comme le ballon de Mami. »
 
-Kaydoudou s'arrête net sur le trottoir.
+BriBri s'arrête net sur le trottoir.
 
 « Une idée qui voyage », répète-t-il.
 
@@ -308,7 +308,7 @@ Ce soir-là, il ne dort pas tout de suite. Il allume la petite lampe au-dessus d
 
 La prochaine Coupe du monde, au Maroc, en Espagne et au Portugal. Et celle d'après. Il aura seize ans. Puis vingt. Il fait le calcul deux fois, pour être sûr.
 
-Le lit d'à côté grince. BriBri, qu'il croyait endormi, se penche par-dessus son épaule, les yeux à moitié fermés. Il lit. Il ne pose aucune question.
+Le lit d'à côté grince. Kaydoudou, qu'il croyait endormi, se penche par-dessus son épaule, les yeux à moitié fermés. Il lit. Il ne pose aucune question.
 
 Il prend le crayon des mains de son frère. Et en dessous, de sa petite écriture qui penche toujours vers la droite, comme si elle courait, il ajoute :
 

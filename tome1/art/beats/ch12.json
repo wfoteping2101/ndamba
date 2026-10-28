@@ -3,42 +3,42 @@
   "beats": [
     {
       "id": "ch12b",
-      "anchor": "« Mesdames et messieurs, voici le nouveau coup spécial de BriBri Ngassa... L'AIMANT ! »",
+      "anchor": "« Mesdames et messieurs, voici le nouveau coup spécial de Kaydoudou... L'AIMANT ! »",
       "shot": "medium",
-      "cast": ["BRI"],
+      "cast": ["KAY"],
       "extras": "Marcus Bell (28), the academy's video analyst: a slim African-American man with round glasses, a short neat fade haircut and a grey hoodie, seated on a big plastic cooler box with his tablet on his knees, laughing. Diego Ramírez (11): a small wiry Salvadoran-American boy with light brown skin, short black hair spiked with gel and a big chatty grin, in the navy Potomac Valley kit with white number 12, one foot on a ball.",
-      "outfit": "BriBri in the navy Potomac Valley kit with white number 33, black shorts, his red sock on his right foot and yellow sock on his left foot, small soft round afro, the gap between his two front teeth showing.",
-      "action": "BriBri stands on tiptoe, chest puffed out, one hand cupped in front of his mouth like an imaginary microphone, shouting the name of his new special move with huge sparkling eyes and a wide gap-toothed grin. Marcus laughs on his cooler, the tablet with small red crosses and green circles tilted on his knees. Diego, beside them, grins and claps.",
+      "outfit": "Kaydoudou in the navy Potomac Valley kit with white number 33, black shorts, his red sock on his right foot and yellow sock on his left foot, small soft round afro, the gap between his two front teeth showing.",
+      "action": "Kaydoudou stands on tiptoe, chest puffed out, one hand cupped in front of his mouth like an imaginary microphone, shouting the name of his new special move with huge sparkling eyes and a wide gap-toothed grin. Marcus laughs on his cooler, the tablet with small red crosses and green circles tilted on his knees. Diego, beside them, grins and claps.",
       "location": "Inside a huge white inflatable football dome: a too-bright green artificial pitch sprinkled with tiny black rubber crumbs, orange cones, the curved white roof high above.",
-      "light": "Even white floodlight inside the dome, soft shadows, a playful glow on BriBri's face.",
-      "camera": "Medium shot at child height, BriBri in the centre in full voice, Marcus seated on the left, Diego on the right, the vast white dome curving behind them.",
-      "alt": "Sur la pointe des pieds, la main devant la bouche comme un micro, BriBri annonce son nouveau coup spécial, l'aimant, devant Marcus et Diego qui rient."
+      "light": "Even white floodlight inside the dome, soft shadows, a playful glow on Kaydoudou's face.",
+      "camera": "Medium shot at child height, Kaydoudou in the centre in full voice, Marcus seated on the left, Diego on the right, the vast white dome curving behind them.",
+      "alt": "Sur la pointe des pieds, la main devant la bouche comme un micro, Kaydoudou annonce son nouveau coup spécial, l'aimant, devant Marcus et Diego qui rient."
     },
     {
       "id": "ch12c",
       "anchor": "Bonk !",
       "shot": "close",
-      "cast": ["BRI"],
+      "cast": ["KAY"],
       "extras": "Tyler Brooks (12): a tall, broad-shouldered white boy with very pale blond hair, almost white, in the navy Potomac Valley kit with white number 9 and black socks pulled perfectly up to his knees. In the soft background, other young players in navy kits drinking from water bottles.",
-      "outfit": "BriBri in the navy Potomac Valley kit with white number 33, his red sock on his right foot and yellow sock on his left foot, small soft round afro.",
-      "action": "BriBri and Tyler, both bent over the very last orange cone in the middle of the pitch, have just knocked their foreheads together. Both wince with their eyes squeezed shut, one hand flying to their forehead, the other still reaching for the same cone, a cartoon burst of little stars between their heads.",
+      "outfit": "Kaydoudou in the navy Potomac Valley kit with white number 33, his red sock on his right foot and yellow sock on his left foot, small soft round afro.",
+      "action": "Kaydoudou and Tyler, both bent over the very last orange cone in the middle of the pitch, have just knocked their foreheads together. Both wince with their eyes squeezed shut, one hand flying to their forehead, the other still reaching for the same cone, a cartoon burst of little stars between their heads.",
       "location": "The middle of the green artificial pitch inside the white football dome, a big mesh bag full of collected orange cones on the grass nearby.",
       "light": "White floodlight from the dome, bright and flat, a comic spark of light at the point of impact.",
       "camera": "Close shot at grass level, the two heads meeting in the centre of the frame, the cone between their hands in the foreground.",
-      "alt": "En ramassant le dernier cône, BriBri et Tyler se cognent la tête en même temps, et chacun se tient le front en grimaçant."
+      "alt": "En ramassant le dernier cône, Kaydoudou et Tyler se cognent la tête en même temps, et chacun se tient le front en grimaçant."
     },
     {
       "id": "ch12d",
-      "anchor": "Kaydoudou descend et s'assoit à côté de lui.",
+      "anchor": "BriBri descend et s'assoit à côté de lui.",
       "shot": "quiet",
-      "cast": ["KAY", "BRI"],
+      "cast": ["BRI", "KAY"],
       "extras": "No secondary characters visible.",
-      "outfit": "BriBri still in his navy Potomac Valley kit with white number 33 from the morning match, red sock on his right foot, yellow sock on his left foot. Kaydoudou in the navy academy sweatshirt and jeans, his fine shaved part on the left side of his head. Mami's ball: an old, slightly misshapen light-brown leather ball with a square of red and yellow wax-print cloth hand-stitched onto it with big stitches.",
-      "action": "BriBri sits on the cement floor hugging Mami's ball tight against his chest, his nose pressed into the red and yellow patch, eyes wet but starting to laugh. Kaydoudou sits right beside him, shoulder against shoulder, knees up, looking at his little brother with a calm small side smile.",
+      "outfit": "Kaydoudou still in his navy Potomac Valley kit with white number 33 from the morning match, red sock on his right foot, yellow sock on his left foot. BriBri in the navy academy sweatshirt and jeans, his fine shaved part on the left side of his head. Mami's ball: an old, slightly misshapen light-brown leather ball with a square of red and yellow wax-print cloth hand-stitched onto it with big stitches.",
+      "action": "Kaydoudou sits on the cement floor hugging Mami's ball tight against his chest, his nose pressed into the red and yellow patch, eyes wet but starting to laugh. BriBri sits right beside him, shoulder against shoulder, knees up, looking at his little brother with a calm small side smile.",
       "location": "The basement of a small beige house in Waldorf: cement floor, a washing machine, the boiler in the corner, a bare light bulb hanging from its wire, a small round ball mark on the ceiling.",
       "light": "The single warm bare bulb above them, deep soft shadows all around, a cosy pool of light on the two brothers.",
       "camera": "Quiet medium shot from slightly above, the bulb at the top of the frame, the two brothers small and close together in its circle of light.",
-      "alt": "Au sous-sol, sous l'ampoule nue, BriBri serre le ballon de Mami contre lui, et Kaydoudou s'assoit tout contre son épaule."
+      "alt": "Au sous-sol, sous l'ampoule nue, Kaydoudou serre le ballon de Mami contre lui, et BriBri s'assoit tout contre son épaule."
     }
   ]
 }

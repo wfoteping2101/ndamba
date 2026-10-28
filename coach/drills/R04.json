@@ -47,7 +47,7 @@
       "Le défenseur qui suit trottine."
     ],
     "measure": "Nombre de renversements réussis par série et nombre de passes jouées avant le renversement. Un bon groupe renverse quand les deux défenseurs sont attirés, pas avant.",
-    "story": "C'est le plan de Kaydoudou contre les Requins : les faire venir d'un côté, puis traverser vers l'autre."
+    "story": "C'est le plan de BriBri contre les Requins : les faire venir d'un côté, puis traverser vers l'autre."
   },
   "en": {
     "title": "The Two Squares",
@@ -84,7 +84,7 @@
       "The following defender jogs."
     ],
     "measure": "Successful switches per set and passes played before each switch. A good group switches once both defenders are drawn in, not before.",
-    "story": "It is Kaydoudou's plan against the Sharks: bring them to one side, then go through on the other."
+    "story": "It is BriBri's plan against the Sharks: bring them to one side, then go through on the other."
   },
   "diagram": {
     "view": "grid", "w": 25, "h": 10,

@@ -644,7 +644,7 @@ export const DRILLS: Drill[] = [
     "Portes de 2,5 m."
    ],
    "measure": "Sur 10 passes par joueur et par surface : passes qui traversent la porte et passes contrôlées sans pas de rattrapage. Objectif : 7 sur 10 au pied faible.",
-   "story": "Papa dit qu'un réseau est comme une équipe ; Kaydoudou ajoute dans son carnet qu'une passe, comme un message, doit arriver à la bonne vitesse pour être ouverte."
+   "story": "Papa dit qu'un réseau est comme une équipe ; BriBri ajoute dans son carnet qu'une passe, comme un message, doit arriver à la bonne vitesse pour être ouverte."
   },
   "en": {
    "title": "The Surfaces Square",
@@ -682,7 +682,7 @@ export const DRILLS: Drill[] = [
     "2.5 m gates."
    ],
    "measure": "Out of 10 passes per player and per surface: passes through the gate and passes controlled without a recovery step. Target: 7 out of 10 with the weaker foot.",
-   "story": "Papa says a network is like a team; Kaydoudou adds in his notebook that a pass, like a message, must arrive at the right speed to be opened."
+   "story": "Papa says a network is like a team; BriBri adds in his notebook that a pass, like a message, must arrive at the right speed to be opened."
   },
   "diagram": {
    "view": "grid",
@@ -869,7 +869,7 @@ export const DRILLS: Drill[] = [
     "A passe à la main pour les plus jeunes, au sol ensuite."
    ],
    "measure": "Sur 10 ballons par joueur et par série : demi-tours réussis (porte franchie face au jeu). Viser 8 sur 10 contre le passif, 5 sur 10 contre l'actif.",
-   "story": "« Avant de recevoir, tu regardes. Toujours. » Monsieur Lacombe ajoute la suite, que Kaydoudou recopie dans son carnet : de profil, sur le pied loin du défenseur."
+   "story": "« Avant de recevoir, tu regardes. Toujours. » Monsieur Lacombe ajoute la suite, que BriBri recopie dans son carnet : de profil, sur le pied loin du défenseur."
   },
   "en": {
    "title": "Receiving on the Half-Turn",
@@ -908,7 +908,7 @@ export const DRILLS: Drill[] = [
     "A throws the ball for the youngest, then passes along the ground."
    ],
    "measure": "Out of 10 balls per player and per set: successful half-turns (gate crossed facing play). Aim for 8 out of 10 against the passive defender, 5 out of 10 against the active one.",
-   "story": "\"Before you receive, you look. Always.\" Monsieur Lacombe adds the rest, which Kaydoudou copies out: side-on, on the foot away from the defender."
+   "story": "\"Before you receive, you look. Always.\" Monsieur Lacombe adds the rest, which BriBri copies out: side-on, on the foot away from the defender."
   },
   "diagram": {
    "view": "grid",
@@ -1177,7 +1177,7 @@ export const DRILLS: Drill[] = [
     "L'entraîneur annonce le défenseur avant la passe."
    ],
    "measure": "Sur 10 réceptions par joueur : premiers contrôles orientés vers la bonne porte. Objectif 7 sur 10, et de moins en moins de touches avant la porte d'une série à l'autre.",
-   "story": "Au dôme de Waldorf, Coach Whitfield le dit à Kaydoudou : le contrôle, c'est déjà un voyage, vers l'espace libre et loin du défenseur."
+   "story": "Au dôme de Waldorf, Coach Whitfield le dit à BriBri : le contrôle, c'est déjà un voyage, vers l'espace libre et loin du défenseur."
   },
   "en": {
    "title": "The Touch That Escapes Pressure",
@@ -1214,7 +1214,7 @@ export const DRILLS: Drill[] = [
     "The coach names the defender before the pass."
    ],
    "measure": "Out of 10 receptions per player: first touches towards the right gate. Target 7 out of 10, and fewer touches before the gate from one set to the next.",
-   "story": "In the Waldorf dome, Coach Whitfield tells Kaydoudou that the first touch is already a journey, into open space and away from the defender."
+   "story": "In the Waldorf dome, Coach Whitfield tells BriBri that the first touch is already a journey, into open space and away from the defender."
   },
   "diagram": {
    "view": "grid",
@@ -1395,7 +1395,7 @@ export const DRILLS: Drill[] = [
     "Touches libres pour les U11."
    ],
    "measure": "Sur 10 réceptions par joueur : annonces justes et portes justes. Un adjoint compte aussi les regards avant la passe (au moins un, idéalement deux).",
-   "story": "Monsieur Lacombe veut des regards de mésange, deux ou trois par-dessus l'épaule ; ici, la couleur dans le dos dit tout de suite si Kaydoudou a vraiment regardé."
+   "story": "Monsieur Lacombe veut des regards de mésange, deux ou trois par-dessus l'épaule ; ici, la couleur dans le dos dit tout de suite si BriBri a vraiment regardé."
   },
   "en": {
    "title": "The Eyes Circuit",
@@ -1434,7 +1434,7 @@ export const DRILLS: Drill[] = [
     "Unlimited touches for U11s."
    ],
    "measure": "Out of 10 receptions per player: correct calls and correct gates. An assistant also counts the looks before the pass (at least one, ideally two).",
-   "story": "Monsieur Lacombe wants looks like a bird's, two or three over the shoulder; here, the colour behind him shows at once whether Kaydoudou really looked."
+   "story": "Monsieur Lacombe wants looks like a bird's, two or three over the shoulder; here, the colour behind him shows at once whether BriBri really looked."
   },
   "diagram": {
    "view": "grid",
@@ -1634,7 +1634,7 @@ export const DRILLS: Drill[] = [
     "Pour les U9, une seule règle au début : franchir une porte."
    ],
    "measure": "Sur 8 duels par joueur : portes franchies. Part des actions où le défenseur a été fixé avant (l'adjoint coche fixé ou pas). En 2 contre 1 : passes données au bon moment.",
-   "story": "« Mon dribble, c'est un cadeau », écrit BriBri en gros dans le carnet : il attire deux adversaires, puis il donne au partenaire qui a l'espace."
+   "story": "« Mon dribble, c'est un cadeau », écrit Kaydoudou en gros dans le carnet : il attire deux adversaires, puis il donne au partenaire qui a l'espace."
   },
   "en": {
    "title": "The Njangi Dribble Gates",
@@ -1672,7 +1672,7 @@ export const DRILLS: Drill[] = [
     "For U9s, one rule at first: get through a gate."
    ],
    "measure": "Out of 8 duels per player: gates crossed. Share of actions where the defender was pinned first (the assistant ticks pinned or not). In 2 v 1: passes released at the right moment.",
-   "story": "\"My dribble is a gift,\" BriBri writes in the notebook: he draws two opponents, then gives it to the teammate with space."
+   "story": "\"My dribble is a gift,\" Kaydoudou writes in the notebook: he draws two opponents, then gives it to the teammate with space."
   },
   "diagram": {
    "view": "grid",
@@ -1997,7 +1997,7 @@ export const DRILLS: Drill[] = [
     "Le partenaire part déjà dans la zone de but."
    ],
    "measure": "Part des actions où le défenseur sort sur le porteur avant la passe, et part des buts à 2 points. Sur 10 actions, viser 6 fixations réussies.",
-   "story": "Avi Ramon apprend la pausa à BriBri : garder le ballon une demi-seconde de plus pour que l'adversaire s'engage, puis jouer dans son dos."
+   "story": "Avi Ramon apprend la pausa à Kaydoudou : garder le ballon une demi-seconde de plus pour que l'adversaire s'engage, puis jouer dans son dos."
   },
   "en": {
    "title": "Carry to Pin",
@@ -2034,7 +2034,7 @@ export const DRILLS: Drill[] = [
     "The teammate starts already in the scoring zone."
    ],
    "measure": "Share of actions where the defender steps out to the carrier before the pass, and share of 2-point goals. Out of 10 actions, aim for 6 successful pins.",
-   "story": "Avi Ramon teaches BriBri the pausa: keep the ball half a second longer so the opponent commits, then play in behind him."
+   "story": "Avi Ramon teaches Kaydoudou the pausa: keep the ball half a second longer so the opponent commits, then play in behind him."
   },
   "diagram": {
    "view": "grid",
@@ -2258,7 +2258,7 @@ export const DRILLS: Drill[] = [
     "L'attaquant marque en gardant le ballon 5 secondes, sans obligation de sortir."
    ],
    "measure": "Ballons gardés puis joués vers un appui par séquence de 30 secondes, et pertes de balle. Compter aussi les fautes de mains : objectif zéro.",
-   "story": "À Londres, le ballon est brûlant ; Kaydoudou écrit que son corps est un mur, genoux pliés, bras ouvert, et BriBri ajoute qu'il est un excellent mur."
+   "story": "À Londres, le ballon est brûlant ; BriBri écrit que son corps est un mur, genoux pliés, bras ouvert, et Kaydoudou ajoute qu'il est un excellent mur."
   },
   "en": {
    "title": "The Shielding Box",
@@ -2296,7 +2296,7 @@ export const DRILLS: Drill[] = [
     "The attacker scores by keeping the ball for 5 seconds, with no need to get out."
    ],
    "measure": "Balls kept then played to a support per 30-second turn, and balls lost. Also count hand fouls: target zero.",
-   "story": "In London the ball is red hot; Kaydoudou writes that his body is a wall, knees bent, arm out, and BriBri adds that he is an excellent wall."
+   "story": "In London the ball is red hot; BriBri writes that his body is a wall, knees bent, arm out, and Kaydoudou adds that he is an excellent wall."
   },
   "diagram": {
    "view": "grid",
@@ -2450,7 +2450,7 @@ export const DRILLS: Drill[] = [
     "Une seule forme, le une-deux court, sur toute la séance."
    ],
    "measure": "Sur 10 répétitions par forme : retours du mur qui arrivent dans la course sans la ralentir, et frappes cadrées. Viser 7 frappes cadrées sur 10 au une-deux court.",
-   "story": "BriBri a trouvé le nom, Kaydoudou a trouvé le signal : deux doigts levés, et le une-deux du Njangi part en profondeur."
+   "story": "Kaydoudou a trouvé le nom, BriBri a trouvé le signal : deux doigts levés, et le une-deux du Njangi part en profondeur."
   },
   "en": {
    "title": "The one-two circuit",
@@ -2487,7 +2487,7 @@ export const DRILLS: Drill[] = [
     "One form only, the short one-two, for the whole session."
    ],
    "measure": "Out of 10 reps per form: returns from the wall that arrive in stride without slowing the run, and shots on target. Aim for 7 shots on target out of 10 on the short one-two.",
-   "story": "BriBri found the name, Kaydoudou found the signal: two fingers raised, and the Njangi one-two goes in behind."
+   "story": "Kaydoudou found the name, BriBri found the signal: two fingers raised, and the Njangi one-two goes in behind."
   },
   "diagram": {
    "view": "grid",
@@ -3338,7 +3338,7 @@ export const DRILLS: Drill[] = [
     "L'entraîneur donne le signal de départ de C."
    ],
    "measure": "Combinaisons réussies (C reçoit lancé, dans sa course) à chaque étape, et part des buts à 3 points en 3 contre 2. Viser au moins un but sur trois après une course du troisième homme.",
-   "story": "« J'ai été le défenseur cent fois. Je n'ai jamais vu Laia », avoue BriBri : le troisième homme arrive toujours là où le défenseur ne regarde pas."
+   "story": "« J'ai été le défenseur cent fois. Je n'ai jamais vu Laia », avoue Kaydoudou : le troisième homme arrive toujours là où le défenseur ne regarde pas."
   },
   "en": {
    "title": "Three-Player Pattern Play",
@@ -3375,7 +3375,7 @@ export const DRILLS: Drill[] = [
     "The coach gives C the signal to go."
    ],
    "measure": "Successful combinations (C receives on the run, in stride) at each stage, and the share of 3-point goals in the 3 v 2. Aim for at least one goal in three after a third-man run.",
-   "story": "\"I was the defender a hundred times. I never saw Laia,\" BriBri admits: the third man always arrives where the defender is not looking."
+   "story": "\"I was the defender a hundred times. I never saw Laia,\" Kaydoudou admits: the third man always arrives where the defender is not looking."
   },
   "diagram": {
    "view": "grid",
@@ -3647,7 +3647,7 @@ export const DRILLS: Drill[] = [
     "Ballon en mousse ou plus léger pour les U9."
    ],
    "measure": "Sur 10 lancers par joueur et par surface : amortis qui restent à moins d'un mètre, passes réussies vers la cible. Têtes : l'entraîneur les compte pour qu'elles restent rares.",
-   "story": "Avant les grands matchs, les frères jonglent à deux avec le ballon de Mami, puis BriBri le bloque sur sa cuisse."
+   "story": "Avant les grands matchs, les frères jonglent à deux avec le ballon de Mami, puis Kaydoudou le bloque sur sa cuisse."
   },
   "en": {
    "title": "Aerial Play",
@@ -3685,7 +3685,7 @@ export const DRILLS: Drill[] = [
     "Foam or lighter ball for U9s."
    ],
    "measure": "Out of 10 throws per player and per surface: cushioned touches that stay within a metre, passes that reach the target. Headers: the coach counts them so they stay rare.",
-   "story": "Before big matches the brothers juggle Mami's ball together, then BriBri traps it on his thigh."
+   "story": "Before big matches the brothers juggle Mami's ball together, then Kaydoudou traps it on his thigh."
   },
   "diagram": {
    "view": "grid",
@@ -3831,7 +3831,7 @@ export const DRILLS: Drill[] = [
     "5 contre 1 : deux attaquants sur le même côté pour multiplier les angles."
    ],
    "measure": "Nombre moyen de passes consécutives par séquence, et nombre de fois où le porteur n'a aucune ligne de passe libre (objectif : presque jamais).",
-   "story": "Le premier jour en Catalogne, BriBri reste une éternité au milieu du rondo ; ici, le taureau change chaque minute et chacun apprend à offrir un angle."
+   "story": "Le premier jour en Catalogne, Kaydoudou reste une éternité au milieu du rondo ; ici, le taureau change chaque minute et chacun apprend à offrir un angle."
   },
   "en": {
    "title": "The Bull",
@@ -3869,7 +3869,7 @@ export const DRILLS: Drill[] = [
     "5 v 1: two attackers on the same side to create more angles."
    ],
    "measure": "Average number of consecutive passes per sequence, and how often the player on the ball has no open passing lane (target: almost never).",
-   "story": "On his first day in Catalonia, BriBri spends forever in the middle of the rondo; here the bull changes every minute and everyone learns to offer an angle."
+   "story": "On his first day in Catalonia, Kaydoudou spends forever in the middle of the rondo; here the bull changes every minute and everyone learns to offer an angle."
   },
   "diagram": {
    "view": "grid",
@@ -4223,7 +4223,7 @@ export const DRILLS: Drill[] = [
     "Un seul défenseur actif, l'autre reste immobile au centre."
    ],
    "measure": "Nombre de passes jouées vers le joker par minute et pourcentage de ces passes qui arrivent. On veut beaucoup de tentatives à travers le bloc, pas seulement autour.",
-   "story": "Comme Kaydoudou devenu pivot en Catalogne, le joker apprend à recevoir au milieu des adversaires et à faire jouer la passe d'après."
+   "story": "Comme BriBri devenu pivot en Catalogne, le joker apprend à recevoir au milieu des adversaires et à faire jouer la passe d'après."
   },
   "en": {
    "title": "The Pivot in the Middle",
@@ -4260,7 +4260,7 @@ export const DRILLS: Drill[] = [
     "Only one active defender; the other stands still in the middle."
    ],
    "measure": "Passes played into the joker per minute and the share that arrive. We want plenty of attempts through the block, not only around it.",
-   "story": "Like Kaydoudou when he became a pivot in Catalonia, the joker learns to receive among opponents and set up the next pass."
+   "story": "Like BriBri when he became a pivot in Catalonia, the joker learns to receive among opponents and set up the next pass."
   },
   "diagram": {
    "view": "grid",
@@ -4410,7 +4410,7 @@ export const DRILLS: Drill[] = [
     "Le défenseur qui suit trottine."
    ],
    "measure": "Nombre de renversements réussis par série et nombre de passes jouées avant le renversement. Un bon groupe renverse quand les deux défenseurs sont attirés, pas avant.",
-   "story": "C'est le plan de Kaydoudou contre les Requins : les faire venir d'un côté, puis traverser vers l'autre."
+   "story": "C'est le plan de BriBri contre les Requins : les faire venir d'un côté, puis traverser vers l'autre."
   },
   "en": {
    "title": "The Two Squares",
@@ -4447,7 +4447,7 @@ export const DRILLS: Drill[] = [
     "The following defender jogs."
    ],
    "measure": "Successful switches per set and passes played before each switch. A good group switches once both defenders are drawn in, not before.",
-   "story": "It is Kaydoudou's plan against the Sharks: bring them to one side, then go through on the other."
+   "story": "It is BriBri's plan against the Sharks: bring them to one side, then go through on the other."
   },
   "diagram": {
    "view": "grid",
@@ -4673,7 +4673,7 @@ export const DRILLS: Drill[] = [
     "L'entraîneur lève la couleur plus tôt, avant la passe."
    ],
    "measure": "Pourcentage d'annonces justes par série et nombre de pertes de balle. Un joueur qui annonce juste et perd moins de ballons a gagné une habitude de scan.",
-   "story": "Le poignet dans le plâtre, BriBri invente avec Lucas le jeu des cartes de couleur montrées dans le dos ; ce rondo en est la version de terrain."
+   "story": "Le poignet dans le plâtre, Kaydoudou invente avec Lucas le jeu des cartes de couleur montrées dans le dos ; ce rondo en est la version de terrain."
   },
   "en": {
    "title": "The Eyes Rondo",
@@ -4711,7 +4711,7 @@ export const DRILLS: Drill[] = [
     "The coach lifts the colour earlier, before the pass."
    ],
    "measure": "Share of correct calls per set and number of balls lost. A player who calls correctly and loses fewer balls has built a scanning habit.",
-   "story": "With his wrist in plaster, BriBri and Lucas invent the game of colour cards shown behind your back; this rondo is the pitch version of it."
+   "story": "With his wrist in plaster, Kaydoudou and Lucas invent the game of colour cards shown behind your back; this rondo is the pitch version of it."
   },
   "diagram": {
    "view": "grid",
@@ -5332,7 +5332,7 @@ export const DRILLS: Drill[] = [
     "Carré de 12 x 12 m : la reprise est plus facile."
    ],
    "measure": "Pourcentage de ballons repris en moins de 5 secondes par série. C'est l'image en petit de l'indicateur de match : récupérations dans les 5 secondes après la perte.",
-   "story": "En France, l'équipe de Kaydoudou gagne un match grâce à un ballon repris en trois secondes. Ici, chacun apprend que la perte est le meilleur moment pour reprendre."
+   "story": "En France, l'équipe de BriBri gagne un match grâce à un ballon repris en trois secondes. Ici, chacun apprend que la perte est le meilleur moment pour reprendre."
   },
   "en": {
    "title": "Five-Second Rondo",
@@ -5368,7 +5368,7 @@ export const DRILLS: Drill[] = [
     "12 x 12 m square: winning it back is easier."
    ],
    "measure": "Share of balls won back within 5 seconds per set. It is a small version of the match indicator: regains within 5 seconds of losing the ball.",
-   "story": "In France, Kaydoudou's team wins a match with a ball won back in three seconds. Here, everyone learns that losing the ball is the best moment to win it back."
+   "story": "In France, BriBri's team wins a match with a ball won back in three seconds. Here, everyone learns that losing the ball is the best moment to win it back."
   },
   "diagram": {
    "view": "grid",
@@ -5544,7 +5544,7 @@ export const DRILLS: Drill[] = [
     "L'entraîneur fige le premier ballon de chaque série pour montrer le losange."
    ],
    "measure": "Points par série et nombre de passes base vers pointe tentées. Un losange vivant tente la passe qui traverse au moins une fois toutes les 8 passes.",
-   "story": "Comme les trois amis que Kaydoudou dessine autour du porteur dans son carnet, le losange ne laisse jamais le ballon seul."
+   "story": "Comme les trois amis que BriBri dessine autour du porteur dans son carnet, le losange ne laisse jamais le ballon seul."
   },
   "en": {
    "title": "The Diamond",
@@ -5582,7 +5582,7 @@ export const DRILLS: Drill[] = [
     "The coach freezes the first ball of each set to show the diamond."
    ],
    "measure": "Points per set and number of base-to-tip passes attempted. A living diamond tries the splitting pass at least once every 8 passes.",
-   "story": "Like the three friends Kaydoudou draws around the ball carrier in his notebook, the diamond never leaves the ball alone."
+   "story": "Like the three friends BriBri draws around the ball carrier in his notebook, the diamond never leaves the ball alone."
   },
   "diagram": {
    "view": "grid",
@@ -5765,7 +5765,7 @@ export const DRILLS: Drill[] = [
     "Pas de sanction d'occupation : l'entraîneur nomme seulement les fautes."
    ],
    "measure": "Renversements réussis par série et fautes d'occupation. Une équipe qui a compris la carte renverse souvent et n'aligne presque jamais deux joueurs.",
-   "story": "En Catalogne, BriBri colle à la ligne et s'ennuie, puis découvre que sa largeur ouvre un espace immense au milieu."
+   "story": "En Catalogne, Kaydoudou colle à la ligne et s'ennuie, puis découvre que sa largeur ouvre un espace immense au milieu."
   },
   "en": {
    "title": "The Five Lanes",
@@ -5803,7 +5803,7 @@ export const DRILLS: Drill[] = [
     "No penalty for spacing: the coach just names the mistakes."
    ],
    "measure": "Successful switches per set and spacing mistakes. A team that understands the map switches often and almost never lines up two players.",
-   "story": "In Catalonia, BriBri hugs the touchline and gets bored, then finds out that his width opens a huge space in the middle."
+   "story": "In Catalonia, Kaydoudou hugs the touchline and gets bored, then finds out that his width opens a huge space in the middle."
   },
   "diagram": {
    "view": "grid",
@@ -6006,7 +6006,7 @@ export const DRILLS: Drill[] = [
     "Zones de 10 x 24 m."
    ],
    "measure": "Troisièmes hommes réussis par série et pourcentage de remises en une touche qui arrivent dans la course du partenaire.",
-   "story": "Jordi l'apprend à Kaydoudou en Catalogne : le meilleur passeur n'est pas celui qui fait la passe décisive, c'est celui qui fait jouer la passe d'après."
+   "story": "Jordi l'apprend à BriBri en Catalogne : le meilleur passeur n'est pas celui qui fait la passe décisive, c'est celui qui fait jouer la passe d'après."
   },
   "en": {
    "title": "The Third Man",
@@ -6043,7 +6043,7 @@ export const DRILLS: Drill[] = [
     "10 x 24 m zones."
    ],
    "measure": "Successful third-man combinations per set and share of one-touch lay-offs that land in the teammate's stride.",
-   "story": "Jordi teaches Kaydoudou in Catalonia: the best passer is not the one who plays the assist, but the one who sets up the next pass."
+   "story": "Jordi teaches BriBri in Catalonia: the best passer is not the one who plays the assist, but the one who sets up the next pass."
   },
   "diagram": {
    "view": "grid",
@@ -6521,7 +6521,7 @@ export const DRILLS: Drill[] = [
     "Touches libres dans la zone centrale."
    ],
    "measure": "Réceptions entre les lignes suivies d'un retournement, par série et par équipe, et part de ces retournements qui donnent une passe réussie vers l'avant. Repère : au moins 3 retournements par série de 4 min.",
-   "story": "Comme BriBri chez Monsieur Lacombe, le joueur se glisse entre les lignes comme une souris dans un mur, puis se tourne vers le but."
+   "story": "Comme Kaydoudou chez Monsieur Lacombe, le joueur se glisse entre les lignes comme une souris dans un mur, puis se tourne vers le but."
   },
   "en": {
    "title": "Between the Lines",
@@ -6559,7 +6559,7 @@ export const DRILLS: Drill[] = [
     "Unlimited touches in the central zone."
    ],
    "measure": "Receptions between the lines followed by a turn, per set and per team, and the share of those turns that lead to a completed forward pass. Benchmark: at least 3 turns per 4 min set.",
-   "story": "Like BriBri with Monsieur Lacombe, the player slips between the lines like a mouse into a wall, then turns towards goal."
+   "story": "Like Kaydoudou with Monsieur Lacombe, the player slips between the lines like a mouse into a wall, then turns towards goal."
   },
   "diagram": {
    "view": "grid",
@@ -6807,7 +6807,7 @@ export const DRILLS: Drill[] = [
     "Terrain agrandi à 50 x 40 m."
    ],
    "measure": "Touches du pivot par série et part des points marqués après une passe vers l'avant du pivot. Repère : le pivot touche le ballon au moins une fois toutes les 5 à 6 passes de son équipe.",
-   "story": "Devenu le 6 en Catalogne, Kaydoudou apprend que le pivot n'a pas besoin de briller : il touche, il oriente, et le ballon voyage."
+   "story": "Devenu le 6 en Catalogne, BriBri apprend que le pivot n'a pas besoin de briller : il touche, il oriente, et le ballon voyage."
   },
   "en": {
    "title": "The Pivot Must Touch",
@@ -6845,7 +6845,7 @@ export const DRILLS: Drill[] = [
     "Enlarge the area to 50 x 40 m."
    ],
    "measure": "Pivot touches per set and share of points scored after a forward pass by the pivot. Benchmark: the pivot touches the ball at least once every 5 to 6 passes by his team.",
-   "story": "Once he becomes the 6 in Catalonia, Kaydoudou learns that the pivot does not need to shine: he touches, he directs, and the ball travels."
+   "story": "Once he becomes the 6 in Catalonia, BriBri learns that the pivot does not need to shine: he touches, he directs, and the ball travels."
   },
   "diagram": {
    "view": "grid",
@@ -7343,7 +7343,7 @@ export const DRILLS: Drill[] = [
     "Défenseur passif sur la première vague."
    ],
    "measure": "Part des vagues où la supériorité annoncée est réellement créée, et buts par type de supériorité. Repère : la supériorité annoncée apparaît au moins deux fois sur trois.",
-   "story": "Jordi résume les trois supériorités à Kaydoudou en une phrase : plus nombreux, mieux placés, meilleur dans le duel."
+   "story": "Jordi résume les trois supériorités à BriBri en une phrase : plus nombreux, mieux placés, meilleur dans le duel."
   },
   "en": {
    "title": "The Three Superiorities",
@@ -7380,7 +7380,7 @@ export const DRILLS: Drill[] = [
     "Passive defender on the first wave."
    ],
    "measure": "Share of waves in which the called superiority is really created, and goals per type of superiority. Benchmark: the called superiority appears at least two times out of three.",
-   "story": "Jordi sums up the three superiorities for Kaydoudou in one sentence: more players, better placed, better in the duel."
+   "story": "Jordi sums up the three superiorities for BriBri in one sentence: more players, better placed, better in the duel."
   },
   "diagram": {
    "view": "third",
@@ -7637,7 +7637,7 @@ export const DRILLS: Drill[] = [
     "Touches libres pendant la circulation."
    ],
    "measure": "Points à 1 et à 2 par série. L'analyste chronomètre la première passe vers l'avant jusqu'à la cible : la majorité des accélérations doit finir en moins de 3 secondes.",
-   "story": "Contre l'Académie de l'Atlas, les frères gagnent en circulant lentement pour attirer, puis en accélérant d'un coup. Kaydoudou l'écrit : lent, lent, VITE."
+   "story": "Contre l'Académie de l'Atlas, les frères gagnent en circulant lentement pour attirer, puis en accélérant d'un coup. BriBri l'écrit : lent, lent, VITE."
   },
   "en": {
    "title": "Slow, Slow, QUICK",
@@ -7674,7 +7674,7 @@ export const DRILLS: Drill[] = [
     "Unlimited touches during circulation."
    ],
    "measure": "1-point and 2-point scores per set. The analyst times each attack from the first forward pass to the target: most accelerations should finish in under 3 seconds.",
-   "story": "Against the Atlas Academy, the brothers win by moving the ball slowly to draw them in, then speeding up all at once. Kaydoudou writes it down: slow, slow, QUICK."
+   "story": "Against the Atlas Academy, the brothers win by moving the ball slowly to draw them in, then speeding up all at once. BriBri writes it down: slow, slow, QUICK."
   },
   "diagram": {
    "view": "grid",
@@ -7882,7 +7882,7 @@ export const DRILLS: Drill[] = [
     "L'équipe qui défend presse à 6 ; ses deux autres joueurs récupèrent hors du terrain, puis on tourne."
    ],
    "measure": "Possessions de 45 secondes par série et pertes dans notre moitié. On peut demander la difficulté perçue (de 0 à 10) aux deux équipes : celle qui a su respirer finit en général moins éprouvée.",
-   "story": "En demi-finale, par un soir glacial, BriBri le découvre : « Le ballon court plus vite que nous et il n'est jamais fatigué. »"
+   "story": "En demi-finale, par un soir glacial, Kaydoudou le découvre : « Le ballon court plus vite que nous et il n'est jamais fatigué. »"
   },
   "en": {
    "title": "Breathe",
@@ -7919,7 +7919,7 @@ export const DRILLS: Drill[] = [
     "The defending team presses with 6; its other two players recover off the pitch, then rotate."
    ],
    "measure": "45-second possessions per set and balls lost in our half. You can ask both teams for perceived effort (0 to 10): the team that managed to breathe usually finishes less drained.",
-   "story": "In the semi-final, on a freezing night, BriBri finds it out: \"The ball runs faster than us and it never gets tired.\""
+   "story": "In the semi-final, on a freezing night, Kaydoudou finds it out: \"The ball runs faster than us and it never gets tired.\""
   },
   "diagram": {
    "view": "grid",
@@ -8158,7 +8158,7 @@ export const DRILLS: Drill[] = [
     "Une seule règle au début, marquer ; les 2 points arrivent à la deuxième série."
    ],
    "measure": "Part des buts marqués dans le but le moins protégé et buts à 2 points par série. Chez les U9, l'entraîneur compte simplement combien d'enfants lèvent la tête avant de choisir un but.",
-   "story": "Tonton Fokou reproche à Kaydoudou de tout voir sans rien dire ; ici, celui qui voit le but libre le dit, ou le joue."
+   "story": "Tonton Fokou reproche à BriBri de tout voir sans rien dire ; ici, celui qui voit le but libre le dit, ou le joue."
   },
   "en": {
    "title": "Four Small Goals",
@@ -8195,7 +8195,7 @@ export const DRILLS: Drill[] = [
     "Just one rule at first, score; the 2 points come in from the second set."
    ],
    "measure": "Share of goals scored in the less protected goal and 2-point goals per set. With U9s, the coach simply counts how many children look up before choosing a goal.",
-   "story": "Tonton Fokou tells Kaydoudou off for seeing everything and saying nothing; here, whoever sees the open goal calls it, or plays it."
+   "story": "Tonton Fokou tells BriBri off for seeing everything and saying nothing; here, whoever sees the open goal calls it, or plays it."
   },
   "diagram": {
    "view": "grid",
@@ -8638,7 +8638,7 @@ export const DRILLS: Drill[] = [
     "Terrain agrandi à 45 x 35 m."
    ],
    "measure": "Passes vers l'appui par série et part des remises qui donnent un tir en moins de 3 secondes. Une équipe qui a compris joue son appui dès qu'un défenseur sort, pas seulement quand elle est bloquée.",
-   "story": "À Londres, Kaydoudou apprend à se servir du mur : une touche sur un partenaire, et le pressing passe à côté. Ici, l'appui est ce mur."
+   "story": "À Londres, BriBri apprend à se servir du mur : une touche sur un partenaire, et le pressing passe à côté. Ici, l'appui est ce mur."
   },
   "en": {
    "title": "Support Players",
@@ -8676,7 +8676,7 @@ export const DRILLS: Drill[] = [
     "Pitch enlarged to 45 x 35 m."
    ],
    "measure": "Passes into the support player per set and the share of lay-offs that lead to a shot within 3 seconds. A team that gets it uses its support player as soon as a defender steps out, not only when it is stuck.",
-   "story": "In London, Kaydoudou learns to use the wall: one touch off a teammate and the press goes past him. Here, the support player is that wall."
+   "story": "In London, BriBri learns to use the wall: one touch off a teammate and the press goes past him. Here, the support player is that wall."
   },
   "diagram": {
    "view": "grid",
@@ -8908,7 +8908,7 @@ export const DRILLS: Drill[] = [
     "Pendant la première série, les défenseurs ferment sans tacler."
    ],
    "measure": "Nombre de « Deux ! » par série et part de ces actions qui finissent par un tir ou un but. C'est ce que compte le sous-indice Fixation de l'Indice Njangi : les dribbles et conduites qui attirent deux adversaires.",
-   "story": "Marcus le montre à BriBri sur sa tablette : « Ton dribble le plus utile n'est pas le plus beau. C'est celui qui fait venir deux joueurs vers toi. »"
+   "story": "Marcus le montre à Kaydoudou sur sa tablette : « Ton dribble le plus utile n'est pas le plus beau. C'est celui qui fait venir deux joueurs vers toi. »"
   },
   "en": {
    "title": "The Njangi Dribble",
@@ -8945,7 +8945,7 @@ export const DRILLS: Drill[] = [
     "During the first set, defenders close down without tackling."
    ],
    "measure": "Number of \"Two!\" calls per set and share of those actions that end in a shot or a goal. This is what the Fixation sub-index of the Njangi Index counts: dribbles and carries that draw two opponents.",
-   "story": "Marcus shows BriBri on his tablet: \"Your most useful dribble is not the prettiest one. It is the one that brings two players towards you.\""
+   "story": "Marcus shows Kaydoudou on his tablet: \"Your most useful dribble is not the prettiest one. It is the one that brings two players towards you.\""
   },
   "diagram": {
    "view": "grid",
@@ -9154,7 +9154,7 @@ export const DRILLS: Drill[] = [
     "Terrain raccourci à 40 x 35 m pour arriver plus vite aux buts."
    ],
    "measure": "Buts à 2 points par série et renversements tentés. Repère : une équipe qui fixe bien marque au moins la moitié de ses buts du côté opposé à celui où l'action a commencé.",
-   "story": "Contre Riu Ebre, le plan de Jordi tient en une phrase : faire circuler à droite, attirer, puis renverser vite pour laisser BriBri seul à gauche."
+   "story": "Contre Riu Ebre, le plan de Jordi tient en une phrase : faire circuler à droite, attirer, puis renverser vite pour laisser Kaydoudou seul à gauche."
   },
   "en": {
    "title": "Six Goals",
@@ -9191,7 +9191,7 @@ export const DRILLS: Drill[] = [
     "Shorten the pitch to 40 x 35 m to reach the goals faster."
    ],
    "measure": "2-point goals per set and switches attempted. Benchmark: a team that pins well scores at least half of its goals on the side opposite to where the move started.",
-   "story": "Against Riu Ebre, Jordi's plan fits in one sentence: move it on the right, draw them in, then switch fast to leave BriBri one against one on the left."
+   "story": "Against Riu Ebre, Jordi's plan fits in one sentence: move it on the right, draw them in, then switch fast to leave Kaydoudou one against one on the left."
   },
   "diagram": {
    "view": "grid",
@@ -9745,7 +9745,7 @@ export const DRILLS: Drill[] = [
     "L'entraîneur fige le jeu une fois par série pour montrer les intervalles."
    ],
    "measure": "Lignes traversées par série et par équipe, et part des actions avec au moins une ligne traversée qui finissent par un tir. Ce comptage nourrit le sous-indice Progression de l'Indice Njangi.",
-   "story": "Tonton Fokou le dit à Kaydoudou en lui tendant une mangue : « Une passe sur le côté, c'est poli. Une passe qui traverse, c'est utile. »"
+   "story": "Tonton Fokou le dit à BriBri en lui tendant une mangue : « Une passe sur le côté, c'est poli. Une passe qui traverse, c'est utile. »"
   },
   "en": {
    "title": "Lines Broken",
@@ -9783,7 +9783,7 @@ export const DRILLS: Drill[] = [
     "The coach freezes play once per set to show the gaps."
    ],
    "measure": "Lines broken per set and per team, and the share of moves with at least one line broken that end in a shot. This count feeds the Progression sub-index of the Njangi Index.",
-   "story": "Tonton Fokou tells Kaydoudou as he hands him a mango: \"A pass sideways is polite. A pass that goes through is useful.\""
+   "story": "Tonton Fokou tells BriBri as he hands him a mango: \"A pass sideways is polite. A pass that goes through is useful.\""
   },
   "diagram": {
    "view": "grid",
@@ -10226,7 +10226,7 @@ export const DRILLS: Drill[] = [
     "Terrain réduit à 70 x 44 m pour raccourcir les renversements."
    ],
    "measure": "Nombre de renversements d'un couloir à l'autre par série, et part de ces renversements suivis d'un centre ou d'une entrée dans la surface en moins de 8 secondes.",
-   "story": "À Waldorf, Coach Dana demande à BriBri de rester collé à sa ligne. Quand le ballon arrive enfin de l'autre côté, tout le couloir est à lui."
+   "story": "À Waldorf, Coach Dana demande à Kaydoudou de rester collé à sa ligne. Quand le ballon arrive enfin de l'autre côté, tout le couloir est à lui."
   },
   "en": {
    "title": "Free Channels",
@@ -10262,7 +10262,7 @@ export const DRILLS: Drill[] = [
     "Pitch narrowed to 70 x 44 m to shorten the switches."
    ],
    "measure": "Number of switches from one channel to the other per set, and the share of those switches followed by a cross or an entry into the box within 8 seconds.",
-   "story": "In Waldorf, Coach Dana asks BriBri to stay glued to his line. When the ball finally arrives from the other side, the whole channel is his."
+   "story": "In Waldorf, Coach Dana asks Kaydoudou to stay glued to his line. When the ball finally arrives from the other side, the whole channel is his."
   },
   "diagram": {
    "view": "grid",
@@ -10512,7 +10512,7 @@ export const DRILLS: Drill[] = [
     "Touches libres partout et pas de hors-jeu."
    ],
    "measure": "Nombre d'actions parties du premier tiers qui atteignent le dernier tiers, et nombre moyen de passes pour y arriver (repère : moins de 8).",
-   "story": "Kaydoudou fait souvent la passe facile. Ici, la passe qui casse les lignes fait gagner le double : il apprend à l'oser."
+   "story": "BriBri fait souvent la passe facile. Ici, la passe qui casse les lignes fait gagner le double : il apprend à l'oser."
   },
   "en": {
    "title": "Cross Three Lines",
@@ -10548,7 +10548,7 @@ export const DRILLS: Drill[] = [
     "Unlimited touches everywhere and no offside."
    ],
    "measure": "Number of moves starting in the first third that reach the final third, and the average number of passes needed to get there (benchmark: fewer than 8).",
-   "story": "Kaydoudou often plays the easy pass. Here, the pass that breaks lines is worth double: he learns to dare to play it."
+   "story": "BriBri often plays the easy pass. Here, the pass that breaks lines is worth double: he learns to dare to play it."
   },
   "diagram": {
    "view": "grid",
@@ -10817,7 +10817,7 @@ export const DRILLS: Drill[] = [
     "Le long ballon du gardien est autorisé une fois par action."
    ],
    "measure": "Part des sorties de but qui franchissent la ligne médiane en possession, et récupérations de B dans le premier tiers suivies d'un tir. Bon repère : plus d'une sortie sur deux réussie.",
-   "story": "À Londres, Coach Okafor fait presser ses U15 à huit dans le camp adverse : Kaydoudou y gagne la pièce du souffle, garder le ballon même quand ça brûle."
+   "story": "À Londres, Coach Okafor fait presser ses U15 à huit dans le camp adverse : BriBri y gagne la pièce du souffle, garder le ballon même quand ça brûle."
   },
   "en": {
    "title": "Building Out Under Pressure",
@@ -10854,7 +10854,7 @@ export const DRILLS: Drill[] = [
     "The goalkeeper may go long once per move."
    ],
    "measure": "Share of goal kicks that cross the halfway line in possession, and B regains in the first third followed by a shot. Good benchmark: more than one build-up in two succeeds.",
-   "story": "In London, Coach Okafor has his U15s press with eight in the opponents' half: Kaydoudou earns the piece called the breath, keeping the ball even when it burns."
+   "story": "In London, Coach Okafor has his U15s press with eight in the opponents' half: BriBri earns the piece called the breath, keeping the ball even when it burns."
   },
   "diagram": {
    "view": "full",
@@ -13581,7 +13581,7 @@ export const DRILLS: Drill[] = [
     "Pas de contre-attaque : les défenseurs rendent le ballon à l'entraîneur."
    ],
    "measure": "Entrées dans la surface et centres en retrait par série, et tirs pris entre le point de penalty et la petite surface. L'analyste compare avec le nombre de centres aériens perdus.",
-   "story": "À Kingsbridge, sous la pluie fine, les U15 butent sur un bloc bas. Kaydoudou garde le ballon, attend, et sert BriBri qui arrive dans le dos du milieu."
+   "story": "À Kingsbridge, sous la pluie fine, les U15 butent sur un bloc bas. BriBri garde le ballon, attend, et sert Kaydoudou qui arrive dans le dos du milieu."
   },
   "en": {
    "title": "Against a Low Block",
@@ -13618,7 +13618,7 @@ export const DRILLS: Drill[] = [
     "No counter-attack: defenders give the ball back to the coach."
    ],
    "measure": "Entries into the box and cut-backs per set, and shots taken between the penalty spot and the six-yard box. The analyst compares this with the number of crosses lost in the air.",
-   "story": "At Kingsbridge, in fine rain, the U15s run into a low block. Kaydoudou keeps the ball, waits, and finds BriBri arriving behind the midfield."
+   "story": "At Kingsbridge, in fine rain, the U15s run into a low block. BriBri keeps the ball, waits, and finds Kaydoudou arriving behind the midfield."
   },
   "diagram": {
    "view": "half",
@@ -13901,7 +13901,7 @@ export const DRILLS: Drill[] = [
     "L'entraîneur fige le jeu à la perte pour vérifier la place de chacun."
    ],
    "measure": "Pertes avec ou sans défense de repos en place, récupérations dans les 5 secondes, et contre-attaques de B qui finissent par un tir. L'analyste les relie au sous-indice Reprise de l'Indice Njangi.",
-   "story": "À Londres, Coach Okafor arrête le jeu : « Count behind you. » Kaydoudou, devenu pivot, compte derrière le ballon avant d'attaquer."
+   "story": "À Londres, Coach Okafor arrête le jeu : « Count behind you. » BriBri, devenu pivot, compte derrière le ballon avant d'attaquer."
   },
   "en": {
    "title": "Rest Defence",
@@ -13939,7 +13939,7 @@ export const DRILLS: Drill[] = [
     "The coach freezes play when the ball is lost to check everyone's position."
    ],
    "measure": "Balls lost with or without the rest defence in place, regains within 5 seconds, and B counter-attacks that end in a shot. The analyst links them to the Regain sub-index of the Njangi Index.",
-   "story": "In London, Coach Okafor stops play: \"Count behind you.\" Kaydoudou, now the pivot, counts behind the ball before he attacks."
+   "story": "In London, Coach Okafor stops play: \"Count behind you.\" BriBri, now the pivot, counts behind the ball before he attacks."
   },
   "diagram": {
    "view": "full",
@@ -14350,7 +14350,7 @@ export const DRILLS: Drill[] = [
     "Deux joueurs seulement ont le droit de contre-presser."
    ],
    "measure": "Pertes et reprises en moins de 5 secondes, par équipe et par série. Un repère interne, à calibrer sur ses matchs : une reprise pour trois pertes. C'est le sous-indice Reprise de l'Indice Njangi.",
-   "story": "En France, Monsieur Lacombe compte à voix haute après chaque perte. BriBri, qui boudait après un ballon perdu, apprend à repartir avant le « deux »."
+   "story": "En France, Monsieur Lacombe compte à voix haute après chaque perte. Kaydoudou, qui boudait après un ballon perdu, apprend à repartir avant le « deux »."
   },
   "en": {
    "title": "The Five Seconds",
@@ -14387,7 +14387,7 @@ export const DRILLS: Drill[] = [
     "Only two players may counter-press."
    ],
    "measure": "Balls lost and regains within 5 seconds, per team and per set. An internal benchmark, to calibrate on your own matches: one regain for every three losses. This is the Regain sub-index of the Njangi Index.",
-   "story": "In France, Monsieur Lacombe counts out loud after every loss. BriBri, who used to sulk after losing the ball, learns to react before \"two\"."
+   "story": "In France, Monsieur Lacombe counts out loud after every loss. Kaydoudou, who used to sulk after losing the ball, learns to react before \"two\"."
   },
   "diagram": {
    "view": "grid",
@@ -14617,7 +14617,7 @@ export const DRILLS: Drill[] = [
     "Possession libre dans la zone centrale, sans compter les passes."
    ],
    "measure": "Part des récupérations suivies d'une première passe vers l'avant, et temps entre la récupération et le tir. Bon repère : au moins une récupération sur deux finit par un tir.",
-   "story": "Kaydoudou lève deux doigts, BriBri part en profondeur. Depuis Bonamoussadi, les frères regardent devant avant même d'avoir le ballon."
+   "story": "BriBri lève deux doigts, Kaydoudou part en profondeur. Depuis Bonamoussadi, les frères regardent devant avant même d'avoir le ballon."
   },
   "en": {
    "title": "Look Forward",
@@ -14654,7 +14654,7 @@ export const DRILLS: Drill[] = [
     "Free possession in the central zone, without counting passes."
    ],
    "measure": "Share of regains followed by a first pass forward, and the time from regain to shot. Good benchmark: at least one regain in two ends in a shot.",
-   "story": "Kaydoudou raises two fingers and BriBri runs in behind. Since Bonamoussadi, the brothers look forward before they even have the ball."
+   "story": "BriBri raises two fingers and Kaydoudou runs in behind. Since Bonamoussadi, the brothers look forward before they even have the ball."
   },
   "diagram": {
    "view": "grid",
@@ -15152,7 +15152,7 @@ export const DRILLS: Drill[] = [
     "Finir en moins de 15 secondes."
    ],
    "measure": "Récupérations dans les 30 m adverses et part de ces récupérations suivies d'un tir en moins de 10 secondes. L'analyste peut aussi suivre la hauteur moyenne des récupérations.",
-   "story": "À Londres, au début, BriBri presse seul et se fait éliminer d'une passe. Coach Okafor lui montre que le pressing est une décision d'équipe."
+   "story": "À Londres, au début, Kaydoudou presse seul et se fait éliminer d'une passe. Coach Okafor lui montre que le pressing est une décision d'équipe."
   },
   "en": {
    "title": "The Trigger",
@@ -15191,7 +15191,7 @@ export const DRILLS: Drill[] = [
     "Finish within 15 seconds."
    ],
    "measure": "Regains within 30 m of the opposition goal and the share of those regains followed by a shot within 10 seconds. The analyst can also track the average height of regains.",
-   "story": "In London, BriBri presses alone at first and is beaten by one pass. Coach Okafor shows him that pressing is a team decision."
+   "story": "In London, Kaydoudou presses alone at first and is beaten by one pass. Coach Okafor shows him that pressing is a team decision."
   },
   "diagram": {
    "view": "half",
@@ -15575,7 +15575,7 @@ export const DRILLS: Drill[] = [
     "Le défenseur qui revient part 10 m derrière."
    ],
    "measure": "Part des vagues qui finissent par un tir en moins de 8 secondes, et nombre de passes avant le tir (repère : 2 ou 3). Chez les jeunes, compter aussi les buteurs différents.",
-   "story": "À Waldorf, Tyler Brooks veut tout faire seul en contre-attaque. BriBri lui montre qu'un appel large vaut un dribble : le ballon voyage plus vite que le joueur."
+   "story": "À Waldorf, Tyler Brooks veut tout faire seul en contre-attaque. Kaydoudou lui montre qu'un appel large vaut un dribble : le ballon voyage plus vite que le joueur."
   },
   "en": {
    "title": "The Counter-Attack",
@@ -15612,7 +15612,7 @@ export const DRILLS: Drill[] = [
     "The recovering defender starts 10 m behind."
    ],
    "measure": "Share of waves that end in a shot within 8 seconds, and the number of passes before the shot (benchmark: 2 or 3). With young players, also count how many different players score.",
-   "story": "In Waldorf, Tyler Brooks wants to do everything alone on the counter. BriBri shows him that a wide run is worth as much as a dribble: the ball travels faster than the player."
+   "story": "In Waldorf, Tyler Brooks wants to do everything alone on the counter. Kaydoudou shows him that a wide run is worth as much as a dribble: the ball travels faster than the player."
   },
   "diagram": {
    "view": "half",
@@ -16363,7 +16363,7 @@ export const DRILLS: Drill[] = [
     "Ballon donné à la main par l'entraîneur dans la zone de retrait."
    ],
    "measure": "Centres en retrait qui arrivent dans la course d'un attaquant, et frappes cadrées, sur 10 répétitions de chaque côté. Repère : 7 centres réussis sur 10.",
-   "story": "À Waldorf, BriBri arrive à la ligne de but et lève la tête : Kaydoudou est déjà au point de penalty. Le une-deux des frères devient un centre en retrait."
+   "story": "À Waldorf, Kaydoudou arrive à la ligne de but et lève la tête : BriBri est déjà au point de penalty. Le une-deux des frères devient un centre en retrait."
   },
   "en": {
    "title": "The Cut-Back",
@@ -16401,7 +16401,7 @@ export const DRILLS: Drill[] = [
     "The coach hands the ball in to the cut-back zone."
    ],
    "measure": "Cut-backs that reach an arriving forward's run, and shots on target, over 10 repetitions on each side. Benchmark: 7 good cut-backs out of 10.",
-   "story": "In Waldorf, BriBri reaches the goal line and lifts his head: Kaydoudou is already at the penalty spot. The brothers' one-two becomes a cut-back."
+   "story": "In Waldorf, Kaydoudou reaches the goal line and lifts his head: BriBri is already at the penalty spot. The brothers' one-two becomes a cut-back."
   },
   "diagram": {
    "view": "half",
@@ -16608,7 +16608,7 @@ export const DRILLS: Drill[] = [
     "Gardien qui joue à moitié, pour que chacun marque souvent."
    ],
    "measure": "Une-deux réussis (la remise arrive dans le dos du défenseur) et frappes cadrées, sur 10 répétitions de chaque côté. En jeu : part des buts marqués après un une-deux.",
-   "story": "Kaydoudou lève deux doigts, BriBri part en profondeur : c'est le une-deux du Njangi, né sur la terre rouge de Bonamoussadi."
+   "story": "BriBri lève deux doigts, Kaydoudou part en profondeur : c'est le une-deux du Njangi, né sur la terre rouge de Bonamoussadi."
   },
   "en": {
    "title": "The Njangi One-Two",
@@ -16645,7 +16645,7 @@ export const DRILLS: Drill[] = [
     "Goalkeeper plays at half speed, so everyone scores often."
    ],
    "measure": "Successful one-twos (the return reaches the runner behind the defender) and shots on target, over 10 repetitions on each side. In the game: share of goals scored after a one-two.",
-   "story": "Kaydoudou raises two fingers and BriBri runs in behind: that is the Njangi one-two, born on the red earth of Bonamoussadi."
+   "story": "BriBri raises two fingers and Kaydoudou runs in behind: that is the Njangi one-two, born on the red earth of Bonamoussadi."
   },
   "diagram": {
    "view": "half",
@@ -16945,7 +16945,7 @@ export const DRILLS: Drill[] = [
     "Deux mini-buts dans les coins du but pour apprendre à viser."
    ],
    "measure": "Remises en une touche qui arrivent dans la course de l'intérieur, et frappes cadrées, sur 10 répétitions par série. Avec le défenseur actif, viser 6 frappes cadrées sur 10.",
-   "story": "À la Granja del Mar, Jordi Puig fait répéter le troisième homme jusqu'à ce que Kaydoudou le joue les yeux fermés : le pivot, l'appui, la frappe."
+   "story": "À la Granja del Mar, Jordi Puig fait répéter le troisième homme jusqu'à ce que BriBri le joue les yeux fermés : le pivot, l'appui, la frappe."
   },
   "en": {
    "title": "Third Man and Shot",
@@ -16982,7 +16982,7 @@ export const DRILLS: Drill[] = [
     "Two mini goals in the corners of the goal to learn to pick a spot."
    ],
    "measure": "First-time lay-offs that arrive in the inside midfielder's run, and shots on target, over 10 repetitions per set. With the active defender, aim for 6 shots on target out of 10.",
-   "story": "At La Granja del Mar, Jordi Puig repeats the third man until Kaydoudou can play it with his eyes closed: the pivot, the lay-off, the shot."
+   "story": "At La Granja del Mar, Jordi Puig repeats the third man until BriBri can play it with his eyes closed: the pivot, the lay-off, the shot."
   },
   "diagram": {
    "view": "half",
@@ -17251,7 +17251,7 @@ export const DRILLS: Drill[] = [
     "L'entraîneur joue directement le ballon à l'ailier pour travailler le 1 contre 1."
    ],
    "measure": "1 contre 1 tentés et gagnés par l'ailier, et part de ceux qui finissent par un tir ou un centre en retrait. L'analyste note aussi les dribbles qui attirent deux défenseurs.",
-   "story": "BriBri adore dribbler. Ici, il comprend que toute l'équipe travaille pour lui offrir un 1 contre 1, et qu'il doit le rendre à l'équipe en but."
+   "story": "Kaydoudou adore dribbler. Ici, il comprend que toute l'équipe travaille pour lui offrir un 1 contre 1, et qu'il doit le rendre à l'équipe en but."
   },
   "en": {
    "title": "Isolate the Winger",
@@ -17288,7 +17288,7 @@ export const DRILLS: Drill[] = [
     "The coach plays the ball straight to the winger to work on the 1 v 1."
    ],
    "measure": "1 v 1s attempted and won by the winger, and the share that end in a shot or a cut-back. The analyst also notes dribbles that draw two defenders.",
-   "story": "BriBri loves to dribble. Here he understands that the whole team works to give him a 1 v 1, and that he must give it back to the team as a goal."
+   "story": "Kaydoudou loves to dribble. Here he understands that the whole team works to give him a 1 v 1, and that he must give it back to the team as a goal."
   },
   "diagram": {
    "view": "half",
@@ -17510,7 +17510,7 @@ export const DRILLS: Drill[] = [
     "L'entraîneur sert le ballon à la main au point de penalty."
    ],
    "measure": "Tirs pris dans la surface et tirs cadrés, par équipe et par série. Repère : au moins deux tirs sur trois pris dans la surface. C'est l'idée de la qualité des occasions, le xG, sans formule.",
-   "story": "À Kingsbridge, Freddie Shaw, le gardien blagueur, arrête tous les tirs de loin. BriBri apprend à faire une passe de plus et à frapper de près."
+   "story": "À Kingsbridge, Freddie Shaw, le gardien blagueur, arrête tous les tirs de loin. Kaydoudou apprend à faire une passe de plus et à frapper de près."
   },
   "en": {
    "title": "Finish in the Box",
@@ -17547,7 +17547,7 @@ export const DRILLS: Drill[] = [
     "The coach serves the ball by hand to the penalty spot."
    ],
    "measure": "Shots taken inside the box and shots on target, per team and per set. Benchmark: at least two shots in three taken inside the box. This is the idea behind chance quality, xG, without the formula.",
-   "story": "At Kingsbridge, Freddie Shaw, the joker in goal, saves every long shot. BriBri learns to make one more pass and shoot from close range."
+   "story": "At Kingsbridge, Freddie Shaw, the joker in goal, saves every long shot. Kaydoudou learns to make one more pass and shoot from close range."
   },
   "diagram": {
    "view": "half",

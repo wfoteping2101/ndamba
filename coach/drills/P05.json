@@ -48,7 +48,7 @@
       "Touches libres dans la zone centrale."
     ],
     "measure": "Réceptions entre les lignes suivies d'un retournement, par série et par équipe, et part de ces retournements qui donnent une passe réussie vers l'avant. Repère : au moins 3 retournements par série de 4 min.",
-    "story": "Comme BriBri chez Monsieur Lacombe, le joueur se glisse entre les lignes comme une souris dans un mur, puis se tourne vers le but."
+    "story": "Comme Kaydoudou chez Monsieur Lacombe, le joueur se glisse entre les lignes comme une souris dans un mur, puis se tourne vers le but."
   },
   "en": {
     "title": "Between the Lines",
@@ -86,7 +86,7 @@
       "Unlimited touches in the central zone."
     ],
     "measure": "Receptions between the lines followed by a turn, per set and per team, and the share of those turns that lead to a completed forward pass. Benchmark: at least 3 turns per 4 min set.",
-    "story": "Like BriBri with Monsieur Lacombe, the player slips between the lines like a mouse into a wall, then turns towards goal."
+    "story": "Like Kaydoudou with Monsieur Lacombe, the player slips between the lines like a mouse into a wall, then turns towards goal."
   },
   "diagram": {
     "view": "grid", "w": 40, "h": 30,

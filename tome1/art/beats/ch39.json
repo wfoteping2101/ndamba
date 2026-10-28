@@ -3,21 +3,21 @@
   "beats": [
     {
       "id": "ch39b",
-      "anchor": "BriBri lui saute au cou si fort que la canne tombe.",
+      "anchor": "Kaydoudou lui saute au cou si fort que la canne tombe.",
       "shot": "dynamic",
       "cast": [
         "MAMI",
-        "BRI",
+        "KAY",
         "PAPA",
-        "KAY"
+        "BRI"
       ],
       "extras": "An airport hostess in a yellow high visibility vest, a young woman with brown skin and a neat bun, catching her breath beside an empty wheelchair piled with luggage: a suitcase tied with a clothesline, a big blue and red checked bag and a basket covered with a tea towel.",
-      "outfit": "Mami Nyanga (71): small and very straight, a huge smile, glasses on the tip of her nose, a red and yellow wax print headscarf and a red and yellow wax print dress, with a wooden cane. BriBri (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, in a dark green Kingsbridge Albion tracksuit. Kaydoudou (15): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist, in a green sweatshirt and jeans. Papa Armand: tall, short neat beard, warm eyes, a light blue shirt, a grey coat open over the shirt, his green, red and yellow knitted beanie on his head.",
-      "action": "In the arrivals hall, BriBri throws himself around Mami's neck so hard that her cane flies out of her hand, and Papa catches it in mid-air with a surprised laugh. Tiny, very straight Mami hugs BriBri with her eyes closed and a huge smile. Kaydoudou, a head taller than his brother, waits just behind, arms half open, his turn next.",
+      "outfit": "Mami Nyanga (71): small and very straight, a huge smile, glasses on the tip of her nose, a red and yellow wax print headscarf and a red and yellow wax print dress, with a wooden cane. Kaydoudou (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, in a dark green Kingsbridge Albion tracksuit. BriBri (15): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist, in a green sweatshirt and jeans. Papa Armand: tall, short neat beard, warm eyes, a light blue shirt, a grey coat open over the shirt, his green, red and yellow knitted beanie on his head.",
+      "action": "In the arrivals hall, Kaydoudou throws himself around Mami's neck so hard that her cane flies out of her hand, and Papa catches it in mid-air with a surprised laugh. Tiny, very straight Mami hugs Kaydoudou with her eyes closed and a huge smile. BriBri, a head taller than his brother, waits just behind, arms half open, his turn next.",
       "location": "The arrivals hall of a London airport: shiny grey floor, glass walls, a grey rainy sky outside, travellers with trolleys blurred in the background.",
       "light": "Bright, cool airport light with soft grey daylight from the glass walls.",
       "camera": "Dynamic medium wide shot at chest height, the flying cane near the top of the frame.",
-      "alt": "À l'aéroport, BriBri saute au cou de Mami si fort que sa canne s'envole, et Papa la rattrape au vol."
+      "alt": "À l'aéroport, Kaydoudou saute au cou de Mami si fort que sa canne s'envole, et Papa la rattrape au vol."
     },
     {
       "id": "ch39c",
@@ -25,12 +25,12 @@
       "shot": "medium",
       "cast": [
         "MAMI",
-        "BRI",
-        "KAY"
+        "KAY",
+        "BRI"
       ],
       "extras": "Coach Nathan Okafor, 38: a British Nigerian man with a shaved head, very broad shoulders and a big laugh, in a black tracksuit, standing by the door and wiping one eye with his thumb. Jaden Clarke, 15, number 4: a tall, athletic Black British boy with dark brown skin and close cropped black hair with a sharp hairline, standing at the back, embarrassed and proud, having just translated. Freddie Shaw, 14, the goalkeeper: a very tall, gangly white English boy (1.80 m) with copper red hair, freckles all the way up to his eyelids, ears that turn red, extremely long arms, with one sock on and one foot bare, very moved. Theo, 15: a tall white English striker with short fair hair, Tom Whitaker, 15: a tall, broad white English centre back with short brown hair and Arjun, 14: a slim South Asian British playmaker with neat black hair on the benches with the other teammates, silent.",
-      "outfit": "Mami Nyanga (71): small and very straight, a huge smile, glasses on the tip of her nose, a red and yellow wax print headscarf and a red and yellow wax print dress, lost in a long grey woman's coat that reaches her ankles, worn over her wax print dress. BriBri (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, in a dark green Kingsbridge Albion tracksuit, Mami's ball: an old, slightly misshapen light brown leather ball with a hand sewn square patch of red and yellow wax print and many black marker signatures drawn only as scribbles on his knees. Kaydoudou (15): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist, in the same tracksuit.",
-      "action": "Mami sits very straight on the only chair, one hand on her heart. The whole dressing room is silent and moved. BriBri holds Mami's patched ball on his knees and looks up at her; Kaydoudou has turned toward the door, where the big coach is secretly wiping his eye with his thumb, pretending it is nothing.",
+      "outfit": "Mami Nyanga (71): small and very straight, a huge smile, glasses on the tip of her nose, a red and yellow wax print headscarf and a red and yellow wax print dress, lost in a long grey woman's coat that reaches her ankles, worn over her wax print dress. Kaydoudou (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, in a dark green Kingsbridge Albion tracksuit, Mami's ball: an old, slightly misshapen light brown leather ball with a hand sewn square patch of red and yellow wax print and many black marker signatures drawn only as scribbles on his knees. BriBri (15): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist, in the same tracksuit.",
+      "action": "Mami sits very straight on the only chair, one hand on her heart. The whole dressing room is silent and moved. Kaydoudou holds Mami's patched ball on his knees and looks up at her; BriBri has turned toward the door, where the big coach is secretly wiping his eye with his thumb, pretending it is nothing.",
       "location": "The Kingsbridge Albion dressing room on a Thursday afternoon: benches, metal lockers, a small slate hanging on the wall seen from the side so its writing does not show, the shower room door half open.",
       "light": "Soft grey daylight from a high window mixed with warm neon light.",
       "camera": "Medium wide shot from the back of the room, Mami in the centre, Okafor small by the door on the right.",
@@ -41,16 +41,16 @@
       "anchor": "Demain, on fait le but du Njangi. Tout le monde touche. Promis ?",
       "shot": "quiet",
       "cast": [
-        "KAY",
-        "BRI"
+        "BRI",
+        "KAY"
       ],
       "extras": "",
-      "outfit": "Kaydoudou (15): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist, in a plain green T shirt. BriBri (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, in pyjamas, his red sock on his RIGHT foot and yellow sock on his LEFT foot sticking out from under the duvet.",
-      "action": "In two narrow beds under a sloping attic ceiling, the brothers lie awake in the dark. BriBri has turned on his side toward his brother and whispers, one hand out of the duvet, little finger raised to seal a promise. Kaydoudou lies on his back, eyes open on the dark ceiling, about to answer.",
+      "outfit": "BriBri (15): tall and slim, the fine shaved part on the left of his head, calm eyes, the braided blue and white bracelet on his left wrist, in a plain green T shirt. Kaydoudou (13): a head shorter than his brother, round cheeks, soft little afro, the gap between his front teeth, red sock on his RIGHT foot and yellow sock on his LEFT foot, in pyjamas, his red sock on his RIGHT foot and yellow sock on his LEFT foot sticking out from under the duvet.",
+      "action": "In two narrow beds under a sloping attic ceiling, the brothers lie awake in the dark. Kaydoudou has turned on his side toward his brother and whispers, one hand out of the duvet, little finger raised to seal a promise. BriBri lies on his back, eyes open on the dark ceiling, about to answer.",
       "location": "The boys' attic bedroom in the narrow Lewisham house: sloping ceiling, a small skylight streaked with rain, a shelf with the notebook covered in green and orange wax cloth, a small team photo and Mami's old patched ball.",
       "light": "Very dim blue night light from the rainy skylight, a thin line of warm light under the door.",
       "camera": "Quiet shot from the foot of the beds, both faces in soft blue light.",
-      "alt": "Dans le noir, sous le toit penché, BriBri chuchote à son frère : demain, le but du Njangi, tout le monde touche, promis ?"
+      "alt": "Dans le noir, sous le toit penché, Kaydoudou chuchote à son frère : demain, le but du Njangi, tout le monde touche, promis ?"
     }
   ]
 }

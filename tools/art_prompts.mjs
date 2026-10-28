@@ -16,21 +16,22 @@ const { SHEETS, COVERS, COVER_FINAL, CODE_COVER, PARTS, CHAPTERS } = await impor
 
 export const STYLE = 'Cinematic stylized 3D-animation look translated into a hand-painted illustration: deliberate cel-shaded shadow shapes with two or three clean value steps, sculpted dimensional forms, angular but appealing shape design, visible painterly brush texture on surfaces and backgrounds, expressive child faces with clear readable features, rich saturated colour held together by one dominant palette, controlled dramatic lighting with a clear key light and a coloured rim light, atmospheric depth with soft haze between planes, composed like animated-feature key art. Warm, joyful, adventurous, for readers aged 8 to 12. Recognisably childlike proportions. Avoid: clip-art look, flat shading without depth, plastic or glossy toy skin, airbrushed faces, photorealistic adult faces on children, neon glow, bloom, lens flare, muddy darkness, clutter, mixed media, chibi proportions.'
 
-const AGES = { 1: [11, 10], 2: [11, 10], 3: [12, 11], 4: [13, 12], 5: [14, 13] }
+// [BriBri the elder, Kaydoudou the younger], two years apart
+const AGES = { 1: [12, 10], 2: [12, 10], 3: [13, 11], 4: [14, 12], 5: [15, 13] }
 
 const PEOPLE = {
-  KAY: (p) => `Kaydoudou Ngassa (age ${AGES[p][0]}), the elder brother: slim and tall for his age with long limbs and narrow shoulders, dark brown skin with a warm undertone, a long oval face with high cheekbones, a slim jaw and slightly prominent ears, very short tightly curled black hair with ONE THIN SHAVED PART LINE ON THE LEFT SIDE of his head, calm attentive almond-shaped dark brown eyes, a small one-sided smile; upright, still posture.${p >= 4 ? ' He is a young teenager now, taller and leaner than on the reference sheet.' : ''}`,
-  BRI: (p) => `BriBri Ngassa (age ${AGES[p][1]}), the younger brother: a head shorter than Kaydoudou (the top of his head reaches his brother's chin), compact and springy, dark brown skin with a warm undertone, a round face with full round cheeks and a small nose, a small soft round black afro, big round sparkling mischievous dark brown eyes, a wide grin with a visible GAP BETWEEN HIS TWO FRONT TEETH; always up on his toes. He always wears ONE RED SOCK ON HIS RIGHT FOOT AND ONE YELLOW SOCK ON HIS LEFT FOOT.${p >= 4 ? ' He is growing too, but stays shorter and rounder-faced than his brother.' : ''}`,
+  BRI: (p) => `BriBri (age ${AGES[p][0]}), the elder brother: slim and tall for his age with long limbs and narrow shoulders, dark brown skin with a warm undertone, a long oval face with high cheekbones, a slim jaw and slightly prominent ears, very short tightly curled black hair with ONE THIN SHAVED PART LINE ON THE LEFT SIDE of his head, calm attentive almond-shaped dark brown eyes, a small one-sided smile; upright, still posture.${p >= 4 ? ' He is a young teenager now, taller and leaner than on the reference sheet.' : ''}`,
+  KAY: (p) => `Kaydoudou (age ${AGES[p][1]}), the younger brother: a head shorter than BriBri (the top of his head reaches his brother's chin), compact and springy, dark brown skin with a warm undertone, a round face with full round cheeks and a small nose, a small soft round black afro, big round sparkling mischievous dark brown eyes, a wide grin with a visible GAP BETWEEN HIS TWO FRONT TEETH; always up on his toes. He always wears ONE RED SOCK ON HIS RIGHT FOOT AND ONE YELLOW SOCK ON HIS LEFT FOOT.${p >= 4 ? ' He is growing too, but stays shorter and rounder-faced than his brother.' : ''}`,
   MAMI: (p) => `Mami Nyanga (${p >= 5 ? 71 : p >= 4 ? 70 : p >= 2 ? 69 : 68}), their grandmother: small and very upright, a huge laugh, a red-and-yellow wax-print headscarf and dress.${p >= 5 ? ' In London she walks with a cane.' : ''}`,
   FOKOU: () => 'Tonton Fokou (62), their first coach: lean and wiry, a worn faded cap, a wooden whistle on a cord, a slight limp.',
-  PAPA: () => 'Papa Armand Ngassa (41): tall, a short neatly trimmed beard, warm eyes.',
-  MAMAN: () => 'Maman Estelle Ngassa (39): energetic, braids gathered in a bun, large gold hoop earrings.',
+  PAPA: () => 'Papa Armand (41): tall, a short neatly trimmed beard, warm eyes.',
+  MAMAN: () => 'Maman Estelle (39): energetic, braids gathered in a bun, large gold hoop earrings.',
 }
 
 const REF_LABEL = {
-  'identity-v1-brothers.png': 'an earlier watercolour character sheet of the two brothers (Kaydoudou on the left, BriBri on the right): copy their identity (faces, hair, skin tone, build, relative height, outfits) but NOT its watercolour style',
+  'identity-v1-brothers.png': 'an earlier watercolour character sheet of the two brothers (BriBri on the left, Kaydoudou on the right): copy their identity (faces, hair, skin tone, build, relative height, outfits) but NOT its watercolour style',
   'identity-v1-adults.png': 'an earlier watercolour sheet of the four adults (left to right: Mami Nyanga, Tonton Fokou, Papa Armand, Maman Estelle): copy their identity but NOT its watercolour style',
-  'sheet-brothers.png': 'the canonical character sheet of the two brothers (Kaydoudou on the left, BriBri on the right): keep their faces, hair, skin tone, build and relative height exactly, adapting only age and clothes as stated',
+  'sheet-brothers.png': 'the canonical character sheet of the two brothers (BriBri on the left, Kaydoudou on the right): keep their faces, hair, skin tone, build and relative height exactly, adapting only age and clothes as stated',
   'sheet-adults.png': 'the canonical sheet of the four adults (left to right: Mami Nyanga, Tonton Fokou, Papa Armand, Maman Estelle): keep them consistent when they appear',
   'ch07.png': 'a finished interior illustration of this book: match its painting style, shading, palette handling and level of detail',
   'cover-art.png': 'the cover art of this book: match its painting style',
@@ -53,7 +54,7 @@ function defaultRefs(kind, e, id) {
   if (kind === 'beat') {
     const cast = e.cast || []
     const r = []
-    if (cast.includes('KAY') || cast.includes('BRI')) r.push('sheet-brothers.png')
+    if (cast.includes('BRI') || cast.includes('KAY')) r.push('sheet-brothers.png')
     if (cast.some((c) => ADULT_IDS.includes(c))) r.push('sheet-adults.png')
     const opener = id.slice(0, 4) + '.png'
     if (opener !== 'ch07.png' && fs.existsSync(path.join(ILL, opener))) r.push(opener)
@@ -113,7 +114,7 @@ for (const f of fs.readdirSync(chDir).filter((x) => /^\d\d-.*\.md$/.test(x))) {
 for (const [n, e] of Object.entries(CHAPTERS)) {
   const id = `ch${String(n).padStart(2, '0')}`
   const part = Number(meta[n]?.partie) || 1
-  items.push({ ...build(id, 'chapter', { ...e, part, cast: e.cast || ['KAY', 'BRI'].filter((c) => e.outfit?.includes(c === 'KAY' ? 'Kaydoudou' : 'BriBri')).concat(ADULT_IDS.filter((a) => e.outfit?.includes({ MAMI: 'Mami', FOKOU: 'Fokou', PAPA: 'Papa', MAMAN: 'Maman' }[a]))) }), e, n: Number(n), part, meta: meta[n] })
+  items.push({ ...build(id, 'chapter', { ...e, part, cast: e.cast || ['BRI', 'KAY'].filter((c) => e.outfit?.includes(c === 'BRI' ? 'BriBri' : 'Kaydoudou')).concat(ADULT_IDS.filter((a) => e.outfit?.includes({ MAMI: 'Mami', FOKOU: 'Fokou', PAPA: 'Papa', MAMAN: 'Maman' }[a]))) }), e, n: Number(n), part, meta: meta[n] })
 }
 
 // in-text beats (tome1/art/beats/chNN.json), three per chapter, landscape

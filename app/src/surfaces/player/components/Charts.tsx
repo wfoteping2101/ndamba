@@ -80,7 +80,8 @@ export function DayBars({ data, height = 150, unit, ariaLabel, max: maxIn }: { d
   const top = 18, bottom = 22
   const max = Math.max(maxIn ?? 0, ...data.map((d) => d.value), 1)
   const nice = max <= 20 ? Math.ceil(max / 5) * 5 : max <= 50 ? Math.ceil(max / 10) * 10 : Math.ceil(max / 25) * 25
-  const band = W / data.length
+  const left = String(nice).length * 7 + 6 // a gutter for the axis values, so they never sit on a bar
+  const band = (W - left) / data.length
   const bw = Math.min(24, band * 0.62)
   const h = height - top - bottom
   const y = (v: number) => top + h - (v / nice) * h
@@ -90,12 +91,12 @@ export function DayBars({ data, height = 150, unit, ariaLabel, max: maxIn }: { d
       <svg viewBox={`0 0 ${W} ${height}`} className="h-auto w-full" role="img" aria-label={ariaLabel} onPointerLeave={() => setHover(null)}>
         {[0, 0.5, 1].map((f) => (
           <g key={f}>
-            <line x1="0" x2={W} y1={y(nice * f)} y2={y(nice * f)} stroke={C.line} strokeWidth="1" />
-            {f > 0 && <text x="0" y={y(nice * f) - 4} fontSize="11" fill={C.axis} style={{ fontVariantNumeric: 'tabular-nums' }}>{Math.round(nice * f)}</text>}
+            <line x1={left} x2={W} y1={y(nice * f)} y2={y(nice * f)} stroke={C.line} strokeWidth="1" />
+            {f > 0 && <text x={left - 6} y={y(nice * f) + 4} fontSize="11" textAnchor="end" fill={C.axis} style={{ fontVariantNumeric: 'tabular-nums' }}>{Math.round(nice * f)}</text>}
           </g>
         ))}
         {data.map((d, i) => {
-          const cx = band * i + band / 2
+          const cx = left + band * i + band / 2
           const bh = Math.max(0, y(0) - y(d.value))
           const x0 = cx - bw / 2, y0 = y(d.value)
           const path = bh > r
@@ -103,7 +104,7 @@ export function DayBars({ data, height = 150, unit, ariaLabel, max: maxIn }: { d
             : `M ${x0} ${y(0)} L ${x0} ${y(0) - bh} L ${x0 + bw} ${y(0) - bh} L ${x0 + bw} ${y(0)} Z`
           return (
             <g key={d.key} onPointerEnter={() => setHover(i)} onFocus={() => setHover(i)} onBlur={() => setHover(null)} tabIndex={0} aria-label={`${d.label}: ${d.value} ${unit}`} className="outline-none">
-              <rect x={band * i} y={top} width={band} height={h + bottom} fill="transparent" />
+              <rect x={left + band * i} y={top} width={band} height={h + bottom} fill="transparent" />
               {d.value > 0 && <path d={path} fill={d.highlight ? C.terra : C.forest} opacity={hover === null || hover === i ? 1 : 0.55} />}
               <text x={cx} y={height - 6} fontSize="11" textAnchor="middle" fill={d.highlight ? C.ink : C.soft} fontWeight={d.highlight ? 700 : 500}>{d.short}</text>
             </g>
@@ -111,7 +112,7 @@ export function DayBars({ data, height = 150, unit, ariaLabel, max: maxIn }: { d
         })}
       </svg>
       {hover !== null && (
-        <Tip x={band * hover + band / 2} yPct={(y(data[hover].value) / height) * 100} w={W}>
+        <Tip x={left + band * hover + band / 2} yPct={(y(data[hover].value) / height) * 100} w={W}>
           <span className="font-semibold text-ink">{data[hover].value} {unit}</span>
           <span className="ml-1.5 text-ink-muted">{data[hover].label}</span>
         </Tip>
@@ -121,14 +122,14 @@ export function DayBars({ data, height = 150, unit, ariaLabel, max: maxIn }: { d
 }
 
 /** A best-score history with the target as a reference line. */
-export function HistoryLine({ points, target, unit, ariaLabel, targetLabel }: { points: { label: string; value: number }[]; target: number; unit: string; ariaLabel: string; targetLabel: string }) {
+export function HistoryLine({ points, target, unit, ariaLabel, targetLabel, min = 0, max: maxIn, labelAt = 'end', plain = false }: { points: { label: string; value: number }[]; target: number; unit: string; ariaLabel: string; targetLabel: string; min?: number; max?: number; labelAt?: 'start' | 'end'; plain?: boolean }) {
   const [hover, setHover] = useState<number | null>(null)
   const [box, W] = useBoxWidth()
-  const H = 170, top = 16, bottom = 22, left = 28, right = 14
-  const max = Math.max(target * 1.25, ...points.map((p) => p.value), 1)
+  const H = 170, top = labelAt === 'start' ? 30 : 16, bottom = 22, left = 28, right = 14
+  const max = maxIn ?? Math.max(target * 1.25, ...points.map((p) => p.value), 1)
   const n = points.length
   const x = (i: number) => (n === 1 ? (left + W - right) / 2 : left + (i * (W - left - right)) / (n - 1))
-  const y = (v: number) => top + (1 - v / max) * (H - top - bottom)
+  const y = (v: number) => top + (1 - (v - min) / (max - min || 1)) * (H - top - bottom)
   const d = points.map((p, i) => `${i ? 'L' : 'M'} ${x(i).toFixed(1)} ${y(p.value).toFixed(1)}`).join(' ')
   const gid = useId().replace(/:/g, '')
   return (
@@ -142,18 +143,24 @@ export function HistoryLine({ points, target, unit, ariaLabel, targetLabel }: { 
           setHover(best)
         }}>
         <defs><clipPath id={`c-${gid}`}><rect x="0" y="0" width={W} height={H - bottom} /></clipPath></defs>
-        <line x1={left} x2={W - right} y1={y(0)} y2={y(0)} stroke={C.line} strokeWidth="1" />
+        <line x1={left} x2={W - right} y1={y(min)} y2={y(min)} stroke={C.line} strokeWidth="1" />
         <line x1={left} x2={W - right} y1={y(target)} y2={y(target)} stroke={C.sun} strokeWidth="1.5" />
-        <text x={W - right} y={y(target) - 5} fontSize="11" textAnchor="end" fill={C.soft} fontWeight="600">{targetLabel} {target}</text>
-        <text x={left - 6} y={y(0) + 4} fontSize="11" textAnchor="end" fill={C.axis}>0</text>
-        {n > 1 && <path d={`${d} L ${x(n - 1)} ${y(0)} L ${x(0)} ${y(0)} Z`} fill={C.forest} opacity="0.08" clipPath={`url(#c-${gid})`} />}
+        {labelAt === 'start' ? (
+          <g>
+            <line x1={left} x2={left + 16} y1={10} y2={10} stroke={C.sun} strokeWidth="1.5" />
+            <text x={left + 22} y={14} fontSize="11" fill={C.soft} fontWeight="600">{targetLabel} {target}</text>
+          </g>
+        ) : <text x={W - right} y={y(target) - 5} fontSize="11" textAnchor="end" fill={C.soft} fontWeight="600">{targetLabel} {target}</text>}
+        <text x={left - 6} y={y(min) + 4} fontSize="11" textAnchor="end" fill={C.axis}>{min}</text>
+        {maxIn !== undefined && <text x={left - 6} y={y(maxIn) + 4} fontSize="11" textAnchor="end" fill={C.axis}>{maxIn}</text>}
+        {n > 1 && <path d={`${d} L ${x(n - 1)} ${y(min)} L ${x(0)} ${y(min)} Z`} fill={C.forest} opacity="0.08" clipPath={`url(#c-${gid})`} />}
         {n > 1 && <path d={d} fill="none" stroke={C.forest} strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />}
-        {hover !== null && <line x1={x(hover)} x2={x(hover)} y1={top} y2={y(0)} stroke={C.axis} strokeWidth="1" />}
+        {hover !== null && <line x1={x(hover)} x2={x(hover)} y1={top} y2={y(min)} stroke={C.axis} strokeWidth="1" />}
         {points.map((p, i) => (
-          <circle key={i} cx={x(i)} cy={y(p.value)} r={i === n - 1 || i === hover ? 5 : 4} fill={p.value >= target ? C.terra : C.forest} stroke={C.surface} strokeWidth="2" />
+          <circle key={i} cx={x(i)} cy={y(p.value)} r={i === n - 1 || i === hover ? 5 : 4} fill={!plain && p.value >= target ? C.terra : C.forest} stroke={C.surface} strokeWidth="2" />
         ))}
         {points.map((p, i) => (n <= 8 || i === 0 || i === n - 1) && (
-          <text key={'l' + i} x={x(i)} y={H - 6} fontSize="11" textAnchor="middle" fill={C.soft}>{p.label}</text>
+          <text key={'l' + i} x={x(i)} y={H - 6} fontSize="11" textAnchor={n > 1 && i === 0 ? 'start' : n > 1 && i === n - 1 ? 'end' : 'middle'} fill={C.soft}>{p.label}</text>
         ))}
       </svg>
       {hover !== null && (

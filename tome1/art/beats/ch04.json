@@ -5,40 +5,40 @@
       "id": "ch04b",
       "anchor": "Splatch ! Il tombe assis dans une flaque.",
       "shot": "dynamic",
-      "cast": ["BRI"],
+      "cast": ["KAY"],
       "extras": "In the background, Prosper, called Radio (11): a slim boy with close-cropped hair, in a faded oversized white T-shirt with a blurred, unreadable print, splashed with mud, one hand cupped at his mouth like a microphone, laughing as he comments. Two or three other Lionceaux boys laughing, mud to the knees.",
-      "outfit": "BriBri in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, all already spattered with red mud, small soft round afro. The training ball is a plain worn leather football.",
-      "action": "Mid crochet du margouillat, BriBri's feet have shot out from under him: he lands bottom first in a red puddle, a crown of muddy water frozen in the air around him, arms flung up, eyes and mouth wide open in surprise. Right next to him the ball sits stuck in the mud, perfectly still, as if it were looking at him.",
+      "outfit": "Kaydoudou in his sun-yellow T-shirt with one vertical red stripe on the left side of the chest, green shorts, his red sock on his RIGHT foot and his yellow sock on his LEFT foot, scuffed white trainers, all already spattered with red mud, small soft round afro. The training ball is a plain worn leather football.",
+      "action": "Mid crochet du margouillat, Kaydoudou's feet have shot out from under him: he lands bottom first in a red puddle, a crown of muddy water frozen in the air around him, arms flung up, eyes and mouth wide open in surprise. Right next to him the ball sits stuck in the mud, perfectly still, as if it were looking at him.",
       "location": "The Bonamoussadi pitch turned into a red and brown pond after days of rain: islands of drier earth, bamboo sticks planted in groups of three, the leaning bamboo goal, the dripping mango tree.",
       "light": "Grey rainy-season daylight under a heavy sky, puddles reflecting the clouds, wet shine on the mud.",
-      "camera": "Low dynamic angle almost at water level, the splash and BriBri's surprised face filling the frame, the ball sharp in the near foreground.",
-      "alt": "Dans la boue, le crochet du margouillat tourne mal : BriBri tombe assis dans une flaque, et le ballon reste collé à côté de lui."
+      "camera": "Low dynamic angle almost at water level, the splash and Kaydoudou's surprised face filling the frame, the ball sharp in the near foreground.",
+      "alt": "Dans la boue, le crochet du margouillat tourne mal : Kaydoudou tombe assis dans une flaque, et le ballon reste collé à côté de lui."
     },
     {
       "id": "ch04c",
       "anchor": "Et tout à coup, il voit le visage de son frère. Tout entier. Sans Ousmane au milieu.",
       "shot": "medium",
-      "cast": ["BRI", "KAY"],
+      "cast": ["KAY", "BRI"],
       "extras": "Ousmane, called Petit Pied (10), the goalkeeper: a calm, slim boy from the north of Cameroon with medium dark brown skin, close-cropped hair and a serious face, small feet but enormous long flat hands spread open like two doors, in a faded grey T-shirt and dark shorts, mud on his legs. Mireille (11): a tall slim girl with short braids in a faded oversized orange sleeveless basketball jersey, at the third corner of the triangle.",
-      "outfit": "BriBri in his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and yellow sock on his LEFT foot, everything spattered with mud. Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, mud to the knees. A plain worn leather training ball.",
-      "action": "BriBri has just taken two quick steps sideways in the mud, a little splash still at his feet, and now stands clearly beside Ousmane instead of behind him. Across the triangle of bamboo sticks, Kaydoudou has already played a low pass: the ball slides toward BriBri over the shallow water, leaving a wake. BriBri's face lights up with surprise and joy.",
+      "outfit": "Kaydoudou in his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and yellow sock on his LEFT foot, everything spattered with mud. BriBri in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, mud to the knees. A plain worn leather training ball.",
+      "action": "Kaydoudou has just taken two quick steps sideways in the mud, a little splash still at his feet, and now stands clearly beside Ousmane instead of behind him. Across the triangle of bamboo sticks, BriBri has already played a low pass: the ball slides toward Kaydoudou over the shallow water, leaving a wake. Kaydoudou's face lights up with surprise and joy.",
       "location": "The flooded red-earth pitch of Bonamoussadi, bamboo sticks planted in triangles in the mud, other triangles of children training in the background.",
       "light": "Soft grey light, the rain has almost stopped, silver reflections on the water.",
-      "camera": "Medium shot from just behind Kaydoudou's shoulder, the sliding ball and its wake leading the eye to BriBri's lit-up face, Ousmane's big hands on the side.",
-      "alt": "BriBri fait deux pas de côté dans la boue : il voit enfin le visage de son frère, et le ballon arrive en glissant sur l'eau."
+      "camera": "Medium shot from just behind BriBri's shoulder, the sliding ball and its wake leading the eye to Kaydoudou's lit-up face, Ousmane's big hands on the side.",
+      "alt": "Kaydoudou fait deux pas de côté dans la boue : il voit enfin le visage de son frère, et le ballon arrive en glissant sur l'eau."
     },
     {
       "id": "ch04d",
-      "anchor": "Kaydoudou plonge presque. Bout du pied. Le ballon remonte.",
+      "anchor": "BriBri plonge presque. Bout du pied. Le ballon remonte.",
       "shot": "dynamic",
-      "cast": ["KAY", "BRI"],
+      "cast": ["BRI", "KAY"],
       "extras": "Around them the Lionceaux team counting aloud, fingers raised: Mireille (11), a tall slim girl with short braids in a faded oversized orange sleeveless basketball jersey; Ousmane (10), a calm slim boy with close-cropped hair and enormous hands, in a faded grey T-shirt; Prosper, called Radio (11), slim, close-cropped hair, faded oversized white T-shirt with a blurred, unreadable print; Samuel (11), a very tall lanky boy with long legs and a short haircut, in a plain white vest.",
-      "outfit": "Kaydoudou in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots, mud on his legs. BriBri in his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and yellow sock on his LEFT foot. In the air, Mami's old brown leather ball with its hand-sewn square patch of red-and-yellow wax cloth, perfectly clean.",
-      "action": "Mami's patched ball wobbles off course in the air because of its lump. Kaydoudou stretches almost horizontally, one leg reaching out, and flicks it back up with the very tip of his boot just above a puddle. BriBri, on tiptoe, arms out for balance, is already under it ready to head it. All around, the teammates shout the count with their fingers in the air.",
+      "outfit": "BriBri in his faded forest-green football shirt with white collar and white number 8, thin shaved part on the left side of his head, black shorts, white socks, worn black boots, mud on his legs. Kaydoudou in his sun-yellow T-shirt with the red stripe, green shorts, his red sock on his RIGHT foot and yellow sock on his LEFT foot. In the air, Mami's old brown leather ball with its hand-sewn square patch of red-and-yellow wax cloth, perfectly clean.",
+      "action": "Mami's patched ball wobbles off course in the air because of its lump. BriBri stretches almost horizontally, one leg reaching out, and flicks it back up with the very tip of his boot just above a puddle. Kaydoudou, on tiptoe, arms out for balance, is already under it ready to head it. All around, the teammates shout the count with their fingers in the air.",
       "location": "The muddy Bonamoussadi pitch before the match against the Aigles de Makepe: puddles everywhere, the leaning bamboo goal, the mango tree, the opposing team warming up blurred in the background in plain white shirts.",
       "light": "Soft grey light with one gap of sun breaking through the clouds and catching the ball.",
-      "camera": "Dynamic low angle, the patched ball sharp in the upper centre, Kaydoudou's stretched leg across the frame, the circle of counting faces around.",
-      "alt": "Avant le match, le ballon de Mami vole de travers ; Kaydoudou le rattrape du bout du pied pendant que toute l'équipe compte."
+      "camera": "Dynamic low angle, the patched ball sharp in the upper centre, BriBri's stretched leg across the frame, the circle of counting faces around.",
+      "alt": "Avant le match, le ballon de Mami vole de travers ; BriBri le rattrape du bout du pied pendant que toute l'équipe compte."
     }
   ]
 }

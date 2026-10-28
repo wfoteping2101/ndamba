@@ -72,14 +72,14 @@ export function LastMatchCard({ d, full = false }: { d: PerfData; full?: boolean
             {full && <Figure label={t('perf.last.entries')} value={c.FINAL3 + c.BOX} sub={t('perf.last.boxEntries', { count: c.BOX })} />}
             {full && <Figure label={t('perf.last.shots')} value={c.SHOT} sub={c.GOAL ? t('perf.last.goals', { count: c.GOAL }) : t('perf.last.onTarget', { count: c.SHOT_IN })} />}
           </dl>
-          {line.tagged && (
+          {line.tagged && !full && (
             <div className="mt-4">
               <div className="mb-1.5 flex items-baseline justify-between gap-2">
                 <span className="text-[12px] font-semibold text-ink-muted">{t('perf.last.actions')}</span>
                 {!full && actions.length > shown.length && <span className="text-[11.5px] text-ink-faint">{t('perf.last.more', { count: actions.length - shown.length })}</span>}
               </div>
               {shown.length === 0 ? <p className="text-[13px] text-ink-muted">{t('perf.last.noActions')}</p> : (
-                <ol className={cx('grid gap-1', full && 'sm:grid-cols-2')}>
+                <ol className="grid grid-cols-2 gap-x-2 gap-y-1">
                   {shown.map(({ e, min }) => (
                     <li key={e.id} className="flex items-center gap-2.5 rounded-lg px-1 py-1">
                       <span className="w-9 shrink-0 text-right font-display text-[14px] font-semibold tabular-nums text-ink-soft">{min}'</span>
@@ -93,6 +93,28 @@ export function LastMatchCard({ d, full = false }: { d: PerfData; full?: boolean
         </div>
       </div>
 
+      {full && line.tagged && (
+        <div className="border-t border-line/70 px-4 py-4 sm:px-5">
+          <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+            <h3 className="text-[14px] font-semibold text-ink">{t('perf.last.actions')}</h3>
+            <span className="text-[12px] text-ink-muted">{t('perf.last.actionsCount', { count: actions.length })}</span>
+          </div>
+          {actions.length === 0 ? <p className="text-[13px] text-ink-muted">{t('perf.last.noActions')}</p> : (
+            <>
+              <ActionTrack actions={actions} length={2 * m.halfMinutes} half={m.halfMinutes} minutes={line.minutes} starter={line.starter} />
+              <ol className="mt-4 grid grid-cols-2 gap-x-3 gap-y-1 sm:grid-cols-3 lg:grid-cols-4">
+                {actions.map(({ e, min }) => (
+                  <li key={e.id} className="flex min-w-0 items-center gap-2 py-0.5">
+                    <span className="w-8 shrink-0 text-right font-display text-[13.5px] font-semibold tabular-nums text-ink-soft">{min}'</span>
+                    <span className={cx('truncate rounded-full px-2 py-0.5 text-[12px] font-semibold', CODE_TONE[e.code] ?? 'bg-forest-50 text-forest-700')}>{t(`common:events.${e.code}`)}</span>
+                  </li>
+                ))}
+              </ol>
+            </>
+          )}
+        </div>
+      )}
+
       <div className="mt-auto flex flex-wrap items-center gap-2 border-t border-line/70 bg-cream/50 px-4 py-3 sm:px-5">
         {result && <Link to={`/app/analyse/rapport/${m.id}`} className="btn-primary btn-sm min-h-[44px]"><ChartLine size={16} aria-hidden="true" />{t('perf.last.report')}</Link>}
         {videos.map((v) => <Link key={v.id} to={`/app/analyse/video/${v.id}`} className="btn-outline btn-sm min-h-[44px]"><Clapperboard size={16} aria-hidden="true" /><span className="max-w-[180px] truncate">{v.title}</span></Link>)}
@@ -100,5 +122,44 @@ export function LastMatchCard({ d, full = false }: { d: PerfData; full?: boolean
         {!result && <Link to="/app/analyse" className="inline-flex min-h-[44px] items-center gap-1.5 px-1 text-[13px] font-semibold text-forest-700 hover:underline"><Radio size={15} aria-hidden="true" />{t('perf.last.analysis')}</Link>}
       </div>
     </section>
+  )
+}
+
+/* ---------------- the match as one line: my actions minute by minute ---------------- */
+
+type Kind = 'ball' | 'regain' | 'shot' | 'loss'
+const KIND_OF = (c: EventCode): Kind => (c === 'REGAIN5' || c === 'REGAIN' ? 'regain' : c === 'SHOT' || c === 'SHOT_IN' || c === 'GOAL' ? 'shot' : c === 'LOSS' ? 'loss' : 'ball')
+const KIND_COLOR: Record<Kind, string> = { ball: '#1F4D3A', regain: '#3D4F6B', shot: '#E3A92B', loss: '#C5762F' }
+
+function ActionTrack({ actions, length, half, minutes, starter }: { actions: { e: { id: string; code: EventCode }; min: number }[]; length: number; half: number; minutes: number; starter: boolean }) {
+  const { t } = useT('player')
+  const pct = (m: number) => `${Math.min(100, Math.max(0, (m / length) * 100))}%`
+  const lane = new Map<number, number>()
+  const on = starter ? [0, minutes] : [length - minutes, length]
+  return (
+    <div>
+      <div className="relative h-[58px]" role="img" aria-label={t('perf.last.trackAria', { count: actions.length, minutes })}>
+        <div className="absolute inset-x-0 top-[26px] h-1.5 rounded-full bg-sand" />
+        <div className="absolute top-[26px] h-1.5 rounded-full bg-forest-100" style={{ left: pct(on[0]), width: `calc(${pct(on[1])} - ${pct(on[0])})` }} />
+        <div className="absolute top-[14px] h-[30px] w-px bg-line" style={{ left: pct(half) }} />
+        {actions.map(({ e, min }) => {
+          const k = lane.get(min) ?? 0
+          lane.set(min, k + 1)
+          const up = k % 2 === 0
+          const step = Math.floor(k / 2)
+          return <span key={e.id} title={`${min}' ${t(`common:events.${e.code}`)}`} className="absolute h-2.5 w-2.5 -translate-x-1/2 rounded-full ring-2 ring-paper"
+            style={{ left: pct(min - 0.5), top: up ? 12 - step * 9 : 36 + step * 9, background: KIND_COLOR[KIND_OF(e.code)] }} />
+        })}
+      </div>
+      <div className="relative mt-0.5 h-4 text-[11px] tabular-nums text-ink-faint" aria-hidden="true">
+        <span className="absolute left-0">0'</span>
+        <span className="absolute -translate-x-1/2" style={{ left: pct(half) }}>{half}'</span>
+        <span className="absolute right-0">{length}'</span>
+      </div>
+      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[11.5px] text-ink-muted" aria-hidden="true">
+        {(['ball', 'regain', 'shot', 'loss'] as Kind[]).map((k) => <span key={k} className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-full" style={{ background: KIND_COLOR[k] }} />{t(`perf.last.kind.${k}`)}</span>)}
+        <span className="inline-flex items-center gap-1.5"><span className="h-1.5 w-4 rounded-full bg-forest-100" />{t('perf.last.onPitch')}</span>
+      </div>
+    </div>
   )
 }

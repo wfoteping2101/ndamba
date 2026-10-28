@@ -164,7 +164,7 @@
   "import": {
     "title": "Importer une liste",
     "body": "Collez un nom par ligne. Le numéro est facultatif, en début de ligne.",
-    "placeholder": "1 Ousmane Bello\n4 Paul Ebanda\n8 Kaydoudou\nBriBri",
+    "placeholder": "1 Ousmane Bello\n4 Paul Ebanda\n8 BriBri\nKaydoudou",
     "list": "Liste des joueurs",
     "defaultPosition": "Poste pour tous",
     "preview_one": "{{count}} joueur prêt à importer",

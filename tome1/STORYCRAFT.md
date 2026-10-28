@@ -8,13 +8,13 @@ Des lecteurs de 8 à 14 ans qui regardent des animés et des dessins animés de 
 
 ## 2. La langue
 
-- **Présent de narration.** Tout le récit passe au présent (« Kaydoudou lève deux doigts. BriBri part. »). Les souvenirs restent au passé composé ou à l'imparfait. Plus aucun passé simple.
+- **Présent de narration.** Tout le récit passe au présent (« BriBri lève deux doigts. Kaydoudou part. »). Les souvenirs restent au passé composé ou à l'imparfait. Plus aucun passé simple.
 - **Phrases courtes.** En moyenne 8 à 12 mots. Une idée par phrase. Les phrases longues sont rares et réservées aux moments de joie qui débordent.
 - **Mots de tous les jours.** Pas de mots rares ni littéraires (« tenait du miracle », « épuisé », « déconcerté », « réverbération », « vaciller » : non). Si un mot de foot est technique, un personnage l'explique en une phrase drôle ou imagée.
 - **Peu de comparaisons, mais fortes.** Une image par paragraphe au maximum, prise dans le monde des enfants (un lézard, un moustique, une moto-taxi, un dessin animé), jamais trois à la suite.
 - **Paragraphes courts.** Trois ou quatre lignes au plus sur un téléphone. Une ligne seule pour les coups de théâtre.
-- **Dialogue d'abord.** Au moins 40 % du chapitre en dialogues vivants : répliques courtes, chacun parle à sa façon (Kaydoudou peu et juste, BriBri vite et drôle, Mami en proverbes, Radio comme un commentateur, les coachs avec leur phrase culte).
-- **Les pensées en italique.** *Pas maintenant*, pense Kaydoudou. Une ou deux par scène, pour entrer dans la tête du héros du chapitre.
+- **Dialogue d'abord.** Au moins 40 % du chapitre en dialogues vivants : répliques courtes, chacun parle à sa façon (BriBri peu et juste, Kaydoudou vite et drôle, Mami en proverbes, Radio comme un commentateur, les coachs avec leur phrase culte).
+- **Les pensées en italique.** *Pas maintenant*, pense BriBri. Une ou deux par scène, pour entrer dans la tête du héros du chapitre.
 - **Onomatopées et sons du terrain.** « Pin-pin ! », « Houou ! », « Bam ! », le filet qui fait « chhh ». Avec mesure.
 - **Toujours sans tiret long ni tiret moyen, guillemets français pour les dialogues.**
 
@@ -27,14 +27,14 @@ Chaque chapitre est un épisode. Il suit cette colonne, adaptée de la « story 
 3. **L'enjeu** : ce qu'ils perdent s'ils échouent (la finale, leur place, la fierté, l'amitié, la promesse à Mami).
 4. **L'escalade** : deux ou trois obstacles de plus en plus durs, qui naissent souvent de leurs propres choix.
 5. **Le moment d'aura** : la scène que le lecteur racontera à ses copains (voir section 4).
-6. **Le choix d'un frère** : c'est toujours Kaydoudou ou BriBri qui décide, qui ose, qui se trompe ou qui répare. Jamais un adulte qui résout tout à leur place.
+6. **Le choix d'un frère** : c'est toujours BriBri ou Kaydoudou qui décide, qui ose, qui se trompe ou qui répare. Jamais un adulte qui résout tout à leur place.
 7. **Le prix ou la récompense** : on paie ses erreurs, on mérite ses victoires.
 8. **La chute qui accroche** : la dernière ligne pose une question, une menace, une surprise ou une émotion qui oblige à lire le chapitre suivant.
 
 ## 4. L'aura : comment écrire les grands moments
 
 - **Le ralenti** : le temps s'arrête. Lignes courtes. Ce que le héros voit, entend, sent : le ballon qui tourne, la poussière suspendue, un cri lointain. Puis tout explose en une phrase.
-- **Le geste qui porte un nom** : les gestes signatures sont annoncés comme des coups spéciaux, avec un nom que les personnages crient ou que Radio commente : « le une-deux du Njangi », « le crochet du margouillat », « le dribble njangi », « les deux doigts » de Kaydoudou, « la pausa » d'Avi Ramon. Chaque partie peut en faire naître un nouveau, gagné à l'entraînement.
+- **Le geste qui porte un nom** : les gestes signatures sont annoncés comme des coups spéciaux, avec un nom que les personnages crient ou que Radio commente : « le une-deux du Njangi », « le crochet du margouillat », « le dribble njangi », « les deux doigts » de BriBri, « la pausa » d'Avi Ramon. Chaque partie peut en faire naître un nouveau, gagné à l'entraînement.
 - **L'entrée des rivaux** : un rival arrive avec un surnom, un détail physique, une réplique qui fait peur ou rire (Bulldozer, Tyler, Kenzo, les invincibles de Madrid, les Allemands qui ne fatiguent jamais). On doit avoir envie de les battre, puis de les respecter.
 - **La foule et le chœur** : le quartier, les parents, les coéquipiers réagissent. Une tribune qui se tait, puis qui explose.
 - **Le regard** : avant un geste décisif, un échange de regards entre les frères, le rituel poing contre poing puis main sur le cœur.
@@ -42,7 +42,7 @@ Chaque chapitre est un épisode. Il suit cette colonne, adaptée de la « story 
 
 ## 5. Les fils rouges qui donnent de l'énergie à la saga
 
-- **Les gags qui reviennent** : les chaussettes dépareillées de BriBri, Radio qui commente tout, le sifflet-hibou de Tonton Fokou, les proverbes de Mami.
+- **Les gags qui reviennent** : les chaussettes dépareillées de Kaydoudou, Radio qui commente tout, le sifflet-hibou de Tonton Fokou, les proverbes de Mami.
 - **Le ballon de Mami** : chaque nouvelle signature est un petit moment fort.
 - **La rivalité tendre des frères** : disputes rapides, réconciliations qui touchent.
 - **Le compte à rebours** : un match, un départ, un essai, une finale approche toujours.
@@ -70,29 +70,29 @@ Chaque chapitre est un épisode. Il suit cette colonne, adaptée de la « story 
 >
 > « Le ballon doit voyager ! »
 >
-> Troisième fois en cinq minutes. Kaydoudou sourit.
+> Troisième fois en cinq minutes. BriBri sourit.
 >
 > Samedi matin, terrain de Bonamoussadi. Dix jours sans pluie à Douala, du jamais vu. La terre rouge est devenue de la poudre. Elle colle aux chevilles, aux genoux, jusqu'aux cils. Derrière le manguier, les motos-taxis klaxonnent. Pin-pin !
 >
-> Et puis il y a BriBri.
+> Et puis il y a Kaydoudou.
 >
 > Dix ans. Des joues rondes. Une petite afro qui rebondit à chaque pas. Un sourire avec un trou entre les dents de devant. Aux pieds, une chaussette rouge et une chaussette jaune. « Ça porte bonheur », jure-t-il.
 >
 > Le ballon arrive sur la gauche. Dans ses pieds.
 >
-> Kaydoudou voit les épaules de son frère se soulever. Il sait ce qui va se passer. Tout le quartier le sait.
+> BriBri voit les épaules de son frère se soulever. Il sait ce qui va se passer. Tout le quartier le sait.
 >
 > Premier défenseur : le crochet du margouillat. Stop. Petit coup de tête, comme un lézard sur un mur. Et hop, de l'autre côté.
 >
 > Deuxième : petit pont.
 >
-> Troisième : BriBri tourne si vite que son afro reste une seconde en arrière.
+> Troisième : Kaydoudou tourne si vite que son afro reste une seconde en arrière.
 >
 > « CINQ ! hurle Radio, la main devant la bouche comme un micro. Il en a dribblé CINQ ! Il va dribbler tout Douala ! »
 >
-> Mais Kaydoudou, lui, ne regarde pas son frère. Il regarde Mireille, seule au milieu, les bras écartés. Personne ne la surveille.
+> Mais BriBri, lui, ne regarde pas son frère. Il regarde Mireille, seule au milieu, les bras écartés. Personne ne la surveille.
 >
-> *Passe, BriBri. Passe.*
+> *Passe, Kaydoudou. Passe.*
 
 ## Sources d'inspiration (méthode)
 

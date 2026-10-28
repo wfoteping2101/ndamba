@@ -46,7 +46,7 @@
       "Touches libres partout et pas de hors-jeu."
     ],
     "measure": "Nombre d'actions parties du premier tiers qui atteignent le dernier tiers, et nombre moyen de passes pour y arriver (repère : moins de 8).",
-    "story": "Kaydoudou fait souvent la passe facile. Ici, la passe qui casse les lignes fait gagner le double : il apprend à l'oser."
+    "story": "BriBri fait souvent la passe facile. Ici, la passe qui casse les lignes fait gagner le double : il apprend à l'oser."
   },
   "en": {
     "title": "Cross Three Lines",
@@ -82,7 +82,7 @@
       "Unlimited touches everywhere and no offside."
     ],
     "measure": "Number of moves starting in the first third that reach the final third, and the average number of passes needed to get there (benchmark: fewer than 8).",
-    "story": "Kaydoudou often plays the easy pass. Here, the pass that breaks lines is worth double: he learns to dare to play it."
+    "story": "BriBri often plays the easy pass. Here, the pass that breaks lines is worth double: he learns to dare to play it."
   },
   "diagram": {
     "view": "grid", "w": 72, "h": 50,

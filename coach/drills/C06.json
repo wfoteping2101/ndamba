@@ -49,7 +49,7 @@
       "Touches libres pour les U11."
     ],
     "measure": "Sur 10 réceptions par joueur : annonces justes et portes justes. Un adjoint compte aussi les regards avant la passe (au moins un, idéalement deux).",
-    "story": "Monsieur Lacombe veut des regards de mésange, deux ou trois par-dessus l'épaule ; ici, la couleur dans le dos dit tout de suite si Kaydoudou a vraiment regardé."
+    "story": "Monsieur Lacombe veut des regards de mésange, deux ou trois par-dessus l'épaule ; ici, la couleur dans le dos dit tout de suite si BriBri a vraiment regardé."
   },
   "en": {
     "title": "The Eyes Circuit",
@@ -88,7 +88,7 @@
       "Unlimited touches for U11s."
     ],
     "measure": "Out of 10 receptions per player: correct calls and correct gates. An assistant also counts the looks before the pass (at least one, ideally two).",
-    "story": "Monsieur Lacombe wants looks like a bird's, two or three over the shoulder; here, the colour behind him shows at once whether Kaydoudou really looked."
+    "story": "Monsieur Lacombe wants looks like a bird's, two or three over the shoulder; here, the colour behind him shows at once whether BriBri really looked."
   },
   "diagram": {
     "view": "grid", "w": 20, "h": 20,

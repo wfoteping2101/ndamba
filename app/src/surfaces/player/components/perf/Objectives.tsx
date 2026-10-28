@@ -106,7 +106,7 @@ export function SeasonCard({ d }: { d: PerfData }) {
             <figure className="mt-3 rounded-xl border-l-2 border-forest-600 bg-forest-50/60 px-3 py-2.5">
               <figcaption className="flex items-center gap-1.5 text-[11.5px] font-semibold uppercase tracking-[0.1em] text-forest-700">
                 <MessageSquareQuote size={13} aria-hidden="true" />{t('perf.season.lastObs')}
-                <span className={cx('ml-auto rounded-full px-1.5 text-[10.5px] normal-case tracking-normal', obsTone(lastNote) === 'work' ? 'bg-terra-50 text-terra-700' : 'bg-paper text-forest-700')}>{t(`perf.season.tone.${obsTone(lastNote) === 'work' ? 'work' : 'plus'}`)}</span>
+                <span className={cx('ml-auto shrink-0 whitespace-nowrap rounded-full px-1.5 text-[10.5px] normal-case tracking-normal', obsTone(lastNote) === 'work' ? 'bg-terra-50 text-terra-700' : 'bg-paper text-forest-700')}>{t(`perf.season.tone.${obsTone(lastNote) === 'work' ? 'work' : 'plus'}`)}</span>
               </figcaption>
               <blockquote className="mt-1 text-[14px] leading-snug text-ink">{quote(lastNote.note!, lang)}</blockquote>
               <div className="mt-1 text-[11.5px] text-ink-muted">

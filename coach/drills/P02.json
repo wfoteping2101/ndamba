@@ -48,7 +48,7 @@
       "Pas de sanction d'occupation : l'entraîneur nomme seulement les fautes."
     ],
     "measure": "Renversements réussis par série et fautes d'occupation. Une équipe qui a compris la carte renverse souvent et n'aligne presque jamais deux joueurs.",
-    "story": "En Catalogne, BriBri colle à la ligne et s'ennuie, puis découvre que sa largeur ouvre un espace immense au milieu."
+    "story": "En Catalogne, Kaydoudou colle à la ligne et s'ennuie, puis découvre que sa largeur ouvre un espace immense au milieu."
   },
   "en": {
     "title": "The Five Lanes",
@@ -86,7 +86,7 @@
       "No penalty for spacing: the coach just names the mistakes."
     ],
     "measure": "Successful switches per set and spacing mistakes. A team that understands the map switches often and almost never lines up two players.",
-    "story": "In Catalonia, BriBri hugs the touchline and gets bored, then finds out that his width opens a huge space in the middle."
+    "story": "In Catalonia, Kaydoudou hugs the touchline and gets bored, then finds out that his width opens a huge space in the middle."
   },
   "diagram": {
     "view": "grid", "w": 40, "h": 30,

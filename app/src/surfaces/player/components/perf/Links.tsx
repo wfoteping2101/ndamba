@@ -7,7 +7,7 @@ import { BOOKS } from '../../../../lib/config'
 
 type Item = 'space' | 'parcours' | 'journal' | 'code'
 
-export function PerfLinks({ items }: { items: Item[] }) {
+export function PerfLinks({ items, stack = false }: { items: Item[]; stack?: boolean }) {
   const { t, lang } = useT('player')
   const def: Record<Item, { to: string; external?: boolean; icon: ReactNode; title: string; hint: string }> = {
     space: { to: '/app/joueur', icon: <Gauge size={18} />, title: t('perf.links.space'), hint: t('perf.links.spaceHint') },
@@ -17,7 +17,7 @@ export function PerfLinks({ items }: { items: Item[] }) {
   }
   const cls = 'flex min-h-[64px] items-center gap-3 rounded-2xl border border-line bg-paper px-4 py-3 transition hover:border-forest-300'
   return (
-    <nav aria-label={t('perf.links.label')} className={`grid grid-cols-1 gap-2.5 sm:grid-cols-2 ${items.length >= 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'}`}>
+    <nav aria-label={t('perf.links.label')} className={stack ? 'grid grid-cols-1 content-start gap-2.5 sm:grid-cols-2 lg:grid-cols-1' : `grid grid-cols-1 gap-2.5 sm:grid-cols-2 ${items.length === 3 ? 'lg:grid-cols-3' : ''}`}>
       {items.map((k) => {
         const it = def[k]
         const body = (

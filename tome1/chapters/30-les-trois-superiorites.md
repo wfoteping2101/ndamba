@@ -3,18 +3,18 @@ numero: 30
 slug: les-trois-superiorites
 titre: Les trois supériorités
 partie: 4
-pov: Kaydoudou
+pov: BriBri
 resume: Avec des oranges et des citrons, Jordi explique les trois façons d'être plus fort que l'adversaire, juste avant le match le plus rugueux de la saison.
-illustration: Plan moyen, intérieur sombre et chaud d'une petite pièce de vieille maison catalane, en fin d'après-midi de mars. Près d'une fenêtre aux volets verts entrouverts, Avi Ramon, très vieux, cheveux blancs fins, couverture écossaise sur les genoux, est assis dans un fauteuil devant un échiquier de bois aux cases usées. Sa main tremblante tient un fou blanc au-dessus du plateau. En face de lui, penché en avant, Kaydoudou, sweat vert, fine raie à gauche, réfléchit, le menton dans la main. Derrière lui, BriBri, petite afro, chaussettes rouge et jaune, tient un pion tombé. Lumière dorée en rayons à travers les volets.
+illustration: Plan moyen, intérieur sombre et chaud d'une petite pièce de vieille maison catalane, en fin d'après-midi de mars. Près d'une fenêtre aux volets verts entrouverts, Avi Ramon, très vieux, cheveux blancs fins, couverture écossaise sur les genoux, est assis dans un fauteuil devant un échiquier de bois aux cases usées. Sa main tremblante tient un fou blanc au-dessus du plateau. En face de lui, penché en avant, BriBri, sweat vert, fine raie à gauche, réfléchit, le menton dans la main. Derrière lui, Kaydoudou, petite afro, chaussettes rouge et jaune, tient un pion tombé. Lumière dorée en rayons à travers les volets.
 ---
 
 « Il va nous faire un jus. »
 
-BriBri a chuchoté ça à l'oreille de Kaydoudou. Jordi Puig vient d'entrer dans la salle de la masia avec un filet d'oranges dans une main et trois citrons dans l'autre.
+Kaydoudou a chuchoté ça à l'oreille de BriBri. Jordi Puig vient d'entrer dans la salle de la masia avec un filet d'oranges dans une main et trois citrons dans l'autre.
 
 Il les pose sur la vieille table de ferme, sans un mot.
 
-« Leçon du jour, continue BriBri : le jus de la victoire. »
+« Leçon du jour, continue Kaydoudou : le jus de la victoire. »
 
 Jordi aligne trois oranges d'un côté de la table. En face, il pose deux citrons.
 
@@ -24,29 +24,29 @@ Jordi aligne trois oranges d'un côté de la table. En face, il pose deux citron
 
 « Exacte. Le taureau perd toujours, parce qu'il est seul. »
 
-BriBri hoche la tête avec la gravité d'un ancien taureau.
+Kaydoudou hoche la tête avec la gravité d'un ancien taureau.
 
 Jordi glisse une quatrième orange derrière les citrons, tout au bout de la table.
 
 « La segona. La posicional. Être placé là où l'adversaire ne peut pas te gêner. Entre ses lignes. Dans son dos. Dans le trou. » Il tapote l'orange cachée. « Les citrons regardent devant eux. Ils ne la voient pas. Elle n'est pas plus forte. Elle n'est pas plus nombreuse. Elle est mieux placée. »
 
-*Comme BriBri entre les lignes, en France*, pense Kaydoudou. *Comme Laia dans le dos des défenseurs. Comme le petit rond du sachet de sucre.*
+*Comme Kaydoudou entre les lignes, en France*, pense BriBri. *Comme Laia dans le dos des défenseurs. Comme le petit rond du sachet de sucre.*
 
 Enfin, Jordi pose la plus grosse orange du filet toute seule, en face du dernier citron. Un petit citron sec et ridé.
 
-« Le pauvre, dit BriBri. Il a passé l'hiver au fond d'un frigo, celui-là. »
+« Le pauvre, dit Kaydoudou. Il a passé l'hiver au fond d'un frigo, celui-là. »
 
 « La tercera. La qualitativa. Mettre ton meilleur joueur seul contre un adversaire plus faible. Un contre un. Mais ça se prépare. Il faut que la grosse orange se retrouve seule, avec de l'espace, devant le petit citron. »
 
-Silence. Puis toute l'équipe se tourne lentement vers BriBri.
+Silence. Puis toute l'équipe se tourne lentement vers Kaydoudou.
 
 Il bombe le torse.
 
 « C'est moi, la grosse orange. »
 
-« Toi, tu es surtout le citron ridé », dit Kaydoudou.
+« Toi, tu es surtout le citron ridé », dit BriBri.
 
-Pol éclate de son rire de tonnerre. Même Nil pose le stylo de son petit carnet à spirale, copié sur celui de Kaydoudou.
+Pol éclate de son rire de tonnerre. Même Nil pose le stylo de son petit carnet à spirale, copié sur celui de BriBri.
 
 Jordi attend, en épluchant tranquillement la grosse orange. Puis il distribue les quartiers.
 
@@ -58,13 +58,13 @@ Jordi attend, en épluchant tranquillement la grosse orange. Puis il distribue l
 
 Plus personne ne rit.
 
-« Ils sont deuxièmes, à un point de nous, souffle Laia à Kaydoudou. Celui qui gagne finit premier du groupe. Et ils jouent dur. Très dur. »
+« Ils sont deuxièmes, à un point de nous, souffle Laia à BriBri. Celui qui gagne finit premier du groupe. Et ils jouent dur. Très dur. »
 
 * * *
 
 Le dimanche d'avant, pour la première fois depuis septembre, Avi Ramon n'est pas venu au rondo. Pas de canne contre la fontaine.
 
-« On és l'Avi ? a demandé BriBri au boulanger. Où est Avi Ramon ? »
+« On és l'Avi ? a demandé Kaydoudou au boulanger. Où est Avi Ramon ? »
 
 « La grip. La grippe. »
 
@@ -86,29 +86,29 @@ Mais ses yeux brillent.
 
 « Et ta grand-mère, noi ? Laia m'a dit. La hanche. »
 
-« Elle va mieux, dit Kaydoudou. Elle dirige son njangi depuis son fauteuil. »
+« Elle va mieux, dit BriBri. Elle dirige son njangi depuis son fauteuil. »
 
 Avi Ramon rit, puis tousse.
 
 « Une femme comme ça, je l'aurais voulue capitaine de mon cargo. » Il montre l'échiquier. « Tu sais jouer, noi ? »
 
-« Oui, dit Kaydoudou. Papa m'a appris à Waldorf, pendant les semaines de neige. »
+« Oui, dit BriBri. Papa m'a appris à Waldorf, pendant les semaines de neige. »
 
 Il remonte les manches de son sweat vert et s'assoit en face.
 
 La main d'Avi Ramon tremble tant qu'en avançant son cavalier, il fait tomber un pion. Puis un autre. « Perdó, perdó. Mes mains font la grève. »
 
-BriBri ramasse les pions sans rien dire et les remet à leur place, tout doucement. Kaydoudou ne savait pas que son frère pouvait être aussi doux.
+Kaydoudou ramasse les pions sans rien dire et les remet à leur place, tout doucement. BriBri ne savait pas que son frère pouvait être aussi doux.
 
-Au douzième coup, Kaydoudou réfléchit, penché en avant, le menton dans la main. Le soleil sort entre deux nuages. Des rayons dorés passent à travers les volets.
+Au douzième coup, BriBri réfléchit, penché en avant, le menton dans la main. Le soleil sort entre deux nuages. Des rayons dorés passent à travers les volets.
 
-Avi Ramon soulève un fou blanc. Il le tient au-dessus du plateau. Sa main tremble. Derrière Kaydoudou, BriBri serre encore un pion tombé.
+Avi Ramon soulève un fou blanc. Il le tient au-dessus du plateau. Sa main tremble. Derrière BriBri, Kaydoudou serre encore un pion tombé.
 
 Toc. Le fou se pose.
 
-Kaydoudou vient de perdre sa reine.
+BriBri vient de perdre sa reine.
 
-« Oh. Ta reine », chuchote BriBri.
+« Oh. Ta reine », chuchote Kaydoudou.
 
 « Quoi ? Mais... il sort d'où ? »
 
@@ -122,7 +122,7 @@ Avi Ramon boit, puis pose un doigt noueux sur le roi noir.
 
 « Mais les échecs, noi, c'est un jeu triste. Les pièces sont bêtes. Elles attendent que tu les bouges, une par une. Et toi, tu dois tout penser tout seul. » Il regarde vers la fenêtre. « Sur un terrain, les pièces pensent. Elles bougent avec toi. C'est ça qui est beau. »
 
-« Je ne comprends pas », avoue Kaydoudou.
+« Je ne comprends pas », avoue BriBri.
 
 « Tu comprendras. Garde la phrase dans ta poche, noi. »
 
@@ -132,13 +132,13 @@ Quand ils repartent, Avi Ramon lève la main.
 
 Dans la ruelle, personne ne parle.
 
-*Avi Ramon. Mami*, pense Kaydoudou. *Ils sont loin, ou fragiles, ou les deux. Et moi, je ne sais faire que du football.*
+*Avi Ramon. Mami*, pense BriBri. *Ils sont loin, ou fragiles, ou les deux. Et moi, je ne sais faire que du football.*
 
-« On va gagner samedi, dit BriBri tout à coup. Pour lui. »
+« On va gagner samedi, dit Kaydoudou tout à coup. Pour lui. »
 
 « Per l'Avi », dit Laia.
 
-« Pour lui », dit Kaydoudou.
+« Pour lui », dit BriBri.
 
 * * *
 
@@ -146,7 +146,7 @@ L'Unió Esportiva Riu Ebre arrive du sud, du delta de l'Èbre. Les joueurs desce
 
 Leur numéro 2 descend le dernier. Il doit baisser la tête pour passer la porte.
 
-« On dirait une armoire avec des jambes », chuchote BriBri.
+« On dirait une armoire avec des jambes », chuchote Kaydoudou.
 
 « Il s'appelle Toni, dit Laia. Imbattable de la tête. Fort comme un tronc d'olivier. »
 
@@ -154,9 +154,9 @@ Leur numéro 2 descend le dernier. Il doit baisser la tête pour passer la porte
 
 Dans le vestiaire, Jordi dessine son plan sur une serviette en papier.
 
-« On commence à droite. Laia, Jan et Èric, à trois contre leurs deux. On fait tourner, on les attire. Tout leur milieu va glisser de ce côté pour aider. » Il trace une grande flèche d'un bout à l'autre de la serviette. « Et quand ils sont tous là, on change de côté. Vite. Et BriBri se retrouve seul contre Toni. »
+« On commence à droite. Laia, Jan et Èric, à trois contre leurs deux. On fait tourner, on les attire. Tout leur milieu va glisser de ce côté pour aider. » Il trace une grande flèche d'un bout à l'autre de la serviette. « Et quand ils sont tous là, on change de côté. Vite. Et Kaydoudou se retrouve seul contre Toni. »
 
-« Les trois supériorités », murmure Kaydoudou.
+« Les trois supériorités », murmure BriBri.
 
 « Les trois. Numérique à droite. De qualité à gauche. Et la position, c'est toi qui la trouves, au milieu. »
 
@@ -166,11 +166,11 @@ Le Riu Ebre joue dur. Pas méchant, mais dur. Laia est renversée deux fois. Deu
 
 « Ils ne s'excusent jamais, ceux-là ! » grogne-t-elle.
 
-À droite, le trois contre deux marche : les rouges glissent, comme prévu. Mais quand le ballon revient à Kaydoudou, il le contrôle d'abord. Il lève la tête. Il cherche BriBri. Trop lent.
+À droite, le trois contre deux marche : les rouges glissent, comme prévu. Mais quand le ballon revient à BriBri, il le contrôle d'abord. Il lève la tête. Il cherche Kaydoudou. Trop lent.
 
 « Massa tard », murmure Jordi sur le banc.
 
-« Trop tard ! crie BriBri, coincé contre la touche. Ils sont deux sur moi ! »
+« Trop tard ! crie Kaydoudou, coincé contre la touche. Ils sont deux sur moi ! »
 
 Sur un corner, juste avant la pause, leur grand défenseur central saute plus haut que tout le monde.
 
@@ -178,33 +178,33 @@ Bam. 0-1.
 
 « Ai, ai, ai ! » gémit Pol.
 
-À la mi-temps, Jordi s'accroupit devant Kaydoudou.
+À la mi-temps, Jordi s'accroupit devant BriBri.
 
 « Ton changement de côté arrive trop tard. Le ballon doit traverser le terrain avant qu'ils aient le temps de glisser. » Il lui tapote le front avec son crayon. « Tu dois savoir où est ton frère avant de recevoir. Pas après. »
 
-Kaydoudou ferme les yeux. Il entend une autre voix, à mille kilomètres de là.
+BriBri ferme les yeux. Il entend une autre voix, à mille kilomètres de là.
 
 *Avant de recevoir, tu regardes. Toujours.*
 
-Dans le couloir, BriBri tend le poing. Kaydoudou le touche avec le sien. Puis chacun pose la main sur son cœur.
+Dans le couloir, Kaydoudou tend le poing. BriBri le touche avec le sien. Puis chacun pose la main sur son cœur.
 
-« Pour Avi », souffle BriBri.
+« Pour Avi », souffle Kaydoudou.
 
 « Tu es prêt ? »
 
-« Maintenant, oui », dit Kaydoudou.
+« Maintenant, oui », dit BriBri.
 
 Deuxième mi-temps. Le ballon tourne à droite. Èric. Jan. Laia. Èric. Les rouges glissent, glissent encore, comme une marée qui monte d'un seul côté.
 
-Kaydoudou jette un regard par-dessus son épaule gauche. Puis un deuxième.
+BriBri jette un regard par-dessus son épaule gauche. Puis un deuxième.
 
-BriBri, collé à sa ligne. Toni, seul. Et entre eux et le reste du monde, trente mètres d'herbe vide.
+Kaydoudou, collé à sa ligne. Toni, seul. Et entre eux et le reste du monde, trente mètres d'herbe vide.
 
-« Kaydoudou ! » crie Laia. Elle lui passe le ballon.
+« BriBri ! » crie Laia. Elle lui passe le ballon.
 
 Et le temps ralentit.
 
-Kaydoudou ouvre son corps, comme en France. Il entend son cœur. Il voit BriBri, tout petit là-bas, sur la pointe des pieds.
+BriBri ouvre son corps, comme en France. Il entend son cœur. Il voit Kaydoudou, tout petit là-bas, sur la pointe des pieds.
 
 Une seule touche. L'intérieur du pied sous le ballon.
 
@@ -212,25 +212,25 @@ Le ballon s'envole. Il traverse tout le terrain en tournant sur lui-même, au-de
 
 « Ooooh... »
 
-Il retombe dans les pieds de BriBri. Pile.
+Il retombe dans les pieds de Kaydoudou. Pile.
 
-Toni arrive. BriBri l'attend. La pausa : la semelle sur le ballon, une demi-seconde. Toni s'engage. Son poids part sur la jambe droite.
+Toni arrive. Kaydoudou l'attend. La pausa : la semelle sur le ballon, une demi-seconde. Toni s'engage. Son poids part sur la jambe droite.
 
-Fffft. BriBri passe à gauche comme un courant d'air.
+Fffft. Kaydoudou passe à gauche comme un courant d'air.
 
-Le temps que le paquebot fasse demi-tour, BriBri est dans la surface. Il remet en retrait pour Pol, qui n'a qu'à pousser.
+Le temps que le paquebot fasse demi-tour, Kaydoudou est dans la surface. Il remet en retrait pour Pol, qui n'a qu'à pousser.
 
 1-1 ! La tribune explose.
 
 « C'EST ÇA ! » hurle Papa, debout sur les gradins.
 
-Et c'est là, en courant vers BriBri, que Kaydoudou comprend.
+Et c'est là, en courant vers Kaydoudou, que BriBri comprend.
 
 Il voit le terrain comme un échiquier vu d'en haut. Mais ces pièces-là n'attendent pas qu'on les bouge.
 
 *Sur un terrain, les pièces pensent.*
 
-« BriBri ! crie-t-il en le serrant contre lui. Personne ne t'a bougé ! Tu étais déjà large ! Laia courait déjà ! Le jeu de position, c'est jouer aux échecs avec des amis ! »
+« Kaydoudou ! crie-t-il en le serrant contre lui. Personne ne t'a bougé ! Tu étais déjà large ! Laia courait déjà ! Le jeu de position, c'est jouer aux échecs avec des amis ! »
 
 « Hein ? Il y a des échecs, maintenant ? »
 
@@ -240,19 +240,19 @@ Le Riu Ebre, lui aussi, réfléchit.
 
 Un deuxième défenseur court aider Toni.
 
-Alors Kaydoudou regarde de l'autre côté, comme un joueur d'échecs. *Si deux rouges gardent BriBri, quelqu'un est libre ailleurs.* À droite, Jan est seul contre un seul.
+Alors BriBri regarde de l'autre côté, comme un joueur d'échecs. *Si deux rouges gardent Kaydoudou, quelqu'un est libre ailleurs.* À droite, Jan est seul contre un seul.
 
 « Jan ! »
 
-Kaydoudou renverse encore, dans l'autre sens cette fois. Jan centre au premier poteau. Pol plonge, la tête en avant.
+BriBri renverse encore, dans l'autre sens cette fois. Jan centre au premier poteau. Pol plonge, la tête en avant.
 
 Chhh. 2-1.
 
-Au coup de sifflet final, Toni vient serrer la main de BriBri. Il a de la boue jusqu'aux oreilles.
+Au coup de sifflet final, Toni vient serrer la main de Kaydoudou. Il a de la boue jusqu'aux oreilles.
 
 « Ets molt ràpid, petit. Tu es très rapide, petit. »
 
-« Et toi, tu es très grand », répond BriBri. Et ils rient tous les deux.
+« Et toi, tu es très grand », répond Kaydoudou. Et ils rient tous les deux.
 
 * * *
 
@@ -272,11 +272,11 @@ Jordi lève la main.
 
 « Et une dernière, invitée pour la première fois. » Jordi regarde les deux frères. « L'Académie de l'Atlas. Du Maroc. »
 
-BriBri se lève d'un bond, une seule chaussette au pied.
+Kaydoudou se lève d'un bond, une seule chaussette au pied.
 
 « Le Maroc ? C'est l'Afrique ! L'Afrique vient en Espagne ! »
 
-Kaydoudou, lui, reste assis. BriBri se tourne vers lui.
+BriBri, lui, reste assis. Kaydoudou se tourne vers lui.
 
 « Tu te souviens, à Waldorf ? Le quart de finale du Maroc, au Mondial ? Les drapeaux rouges à étoile verte dans les tribunes de Boston ? »
 
@@ -292,7 +292,7 @@ Pour la première fois, ils vont retrouver l'Afrique sur un terrain de football.
 > - De qualité : mettre notre meilleur dribbleur seul contre un défenseur plus faible.
 > On attire d'un côté, et on change de côté VITE, avant qu'ils glissent.
 > Le jeu de position, c'est jouer aux échecs avec des amis : les pièces pensent avec moi.
-> (BriBri : « Je suis la grosse orange. C'est écrit. »)
+> (Kaydoudou : « Je suis la grosse orange. C'est écrit. »)
 
 ```schema
 {

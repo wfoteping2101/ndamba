@@ -10,7 +10,7 @@
   "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
   "master": "tome1/illustrations/_masters/sheet-brothers.png",
   "status": "approved, integrated",
-  "review": "Identity locked: shaved part on Kaydoudou's left, gap tooth, red sock right and yellow sock left, BriBri's head at his brother's chin.",
+  "review": "Identity locked: shaved part on BriBri's left, gap tooth, red sock right and yellow sock left, Kaydoudou's head at his brother's chin.",
   "integrated_in": [
    "characters page (reader and PDF)",
    "reference for every scene"
@@ -261,7 +261,7 @@
   "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
   "master": "tome1/illustrations/_masters/ch02.png",
   "status": "approved, integrated",
-  "review": "Mami sews the wax patch, BriBri leans in, Kaydoudou in the doorway.",
+  "review": "Mami sews the wax patch, Kaydoudou leans in, BriBri in the doorway.",
   "integrated_in": [
    "web reader /book/tome1/ (chapter opening)",
    "PDF (full page before the chapter)",
@@ -317,7 +317,7 @@
   "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
   "master": "tome1/illustrations/_masters/ch05.png",
   "status": "approved, integrated",
-  "review": "Papa draws the network, Kaydoudou follows the arrow, BriBri's socks in the air on the sofa.",
+  "review": "Papa draws the network, BriBri follows the arrow, Kaydoudou's socks in the air on the sofa.",
   "integrated_in": [
    "web reader /book/tome1/ (chapter opening)",
    "PDF (full page before the chapter)",
@@ -869,7 +869,7 @@
   "model": "Cloudinary image generation, gpt-image-2-edit (premium), with the canonical sheets and ch07 as reference images, 1536 x 1024",
   "master": "tome1/illustrations/_masters/ch11b.png",
   "status": "approved, integrated",
-  "review": "Owen 4, Kaydoudou 8, the green 11 steals the ball in the mud. The match ball carries a red and yellow patch like Mami's ball: acceptable, noted.",
+  "review": "Owen 4, BriBri 8, the green 11 steals the ball in the mud. The match ball carries a red and yellow patch like Mami's ball: acceptable, noted.",
   "integrated_in": [
    "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
    "print (half page inside the text)"
@@ -888,7 +888,7 @@
   "model": "Cloudinary image generation, gpt-image-2-edit (premium), with the canonical sheets and ch07 as reference images, 1536 x 1024",
   "master": "tome1/illustrations/_masters/ch11c.png",
   "status": "approved, integrated",
-  "review": "Papa in the beanie in the mirror; part on Kaydoudou's left; red sock right, yellow sock left; patched ball on BriBri's lap.",
+  "review": "Papa in the beanie in the mirror; part on BriBri's left; red sock right, yellow sock left; patched ball on Kaydoudou's lap.",
   "integrated_in": [
    "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
    "print (half page inside the text)"

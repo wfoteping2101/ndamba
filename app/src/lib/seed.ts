@@ -24,10 +24,10 @@ const ROSTER: [string, number, string, number, 'R' | 'L' | 'B', number][] = [
   ['Paul Ebanda', 4, 'CB', 2013, 'R', 3],
   ['Steve Mbarga', 5, 'CB', 2013, 'L', 3],
   ['Arnold Nkolo', 3, 'FB', 2014, 'L', 2],
-  ['Kaydoudou', 8, 'DM', 2014, 'R', 4],
+  ['BriBri', 8, 'DM', 2014, 'R', 4],
   ['Mireille « la Gazelle » Eyenga', 10, 'CM', 2014, 'R', 3],
   ['Cédric Fouda', 6, 'CM', 2013, 'B', 3],
-  ['BriBri', 7, 'W', 2015, 'L', 4],
+  ['Kaydoudou', 7, 'W', 2015, 'L', 4],
   ['Samuel Owona', 9, 'ST', 2013, 'R', 3],
   ['Yannick Tchoumi', 11, 'W', 2014, 'R', 2],
   ['Hervé Kamga', 12, 'CB', 2014, 'R', 2],
@@ -84,7 +84,7 @@ export async function seedDemo(role: Role = 'coach', lang: 'fr' | 'en' = 'fr', l
     const players: Player[] = ROSTER.map(([name, number, position, birthYear, foot, base], i) => ({ id: `pl_${number}`, teamId: team.id, name, number, position, birthYear, foot, skills: skills(i + 1, base), createdAt: now }))
     await db.players.bulkPut(players)
     const profile: Profile = {
-      id: 'me', name: role === 'player' ? 'Kaydoudou' : 'Tonton Fokou', role, lang, country: 'Cameroun', city: 'Douala', club: 'Lionceaux de Bonamoussadi',
+      id: 'me', name: role === 'player' ? 'BriBri' : 'Tonton Fokou', role, lang, country: 'Cameroun', city: 'Douala', club: 'Lionceaux de Bonamoussadi',
       ageGroup: 'U13', position: role === 'player' ? 'DM' : undefined, goals: role === 'player' ? ['scan', 'passe'] : ['identite', 'semaine', 'analyse'],
       plan: 'coach', onboarded: true, activeTeamId: team.id, createdAt: now,
     }
@@ -108,8 +108,8 @@ export async function seedDemo(role: Role = 'coach', lang: 'fr' | 'en' = 'fr', l
     const order = ['pl_1', 'pl_2', 'pl_4', 'pl_5', 'pl_3', 'pl_8', 'pl_6', 'pl_10', 'pl_7', 'pl_9', 'pl_11']
     const lineup = slots.map((s, i) => ({ slot: s.id, playerId: order[i] }))
     const plan = lang === 'fr'
-      ? { possession: 'Sortir à trois avec Kaydoudou en pivot. Fixer à droite, renverser vers BriBri.', transitionDef: 'Cinq secondes de contre-pression. Défense de repos à 3 + 2.', defense: 'Bloc médian, pressing sur passe en arrière.', transitionOff: 'Regarder devant : BriBri et Samuel attaquent la profondeur.', setPieces: 'Corners rentrants, Paul et Steve au premier poteau.' }
-      : { possession: 'Build up with three, Kaydoudou as the pivot. Overload right, switch to BriBri.', transitionDef: 'Five seconds of counter-press. Rest defence 3 + 2.', defense: 'Mid block, press on the back pass.', transitionOff: 'Look forward first: BriBri and Samuel attack the space in behind.', setPieces: 'Inswinging corners, Paul and Steve at the near post.' }
+      ? { possession: 'Sortir à trois avec BriBri en pivot. Fixer à droite, renverser vers Kaydoudou.', transitionDef: 'Cinq secondes de contre-pression. Défense de repos à 3 + 2.', defense: 'Bloc médian, pressing sur passe en arrière.', transitionOff: 'Regarder devant : Kaydoudou et Samuel attaquent la profondeur.', setPieces: 'Corners rentrants, Paul et Steve au premier poteau.' }
+      : { possession: 'Build up with three, BriBri as the pivot. Overload right, switch to Kaydoudou.', transitionDef: 'Five seconds of counter-press. Rest defence 3 + 2.', defense: 'Mid block, press on the back pass.', transitionOff: 'Look forward first: Kaydoudou and Samuel attack the space in behind.', setPieces: 'Inswinging corners, Paul and Steve at the near post.' }
     const past: Match = {
       id: 'ma_past', teamId: team.id, opponent: 'Requins de Bépanda', date: addDays(monday, -2), time: '15:00', venue: 'Terrain de Bonamoussadi', home: true,
       competition: lang === 'fr' ? 'Tournoi des quartiers' : 'Neighbourhood tournament', format: 11, formation: '4-3-3', halfMinutes: 35, lineup, subs: ['pl_12', 'pl_14', 'pl_15', 'pl_16'],
@@ -301,7 +301,7 @@ async function seedProDemo(role: Role, lang: 'fr' | 'en') {
     await db.players.bulkPut(players)
     const player = role === 'player'
     const profile: Profile = {
-      id: 'me', name: player ? 'Steve Ndjock' : 'Daniel Ngassa', role, lang, country: 'Cameroun', city: 'Douala', club: team.name,
+      id: 'me', name: player ? 'Steve Ndjock' : 'Daniel Mbarga', role, lang, country: 'Cameroun', city: 'Douala', club: team.name,
       ageGroup: 'Seniors', position: player ? 'CM' : undefined, goals: player ? ['progresser', 'analyse'] : ['identite', 'semaine', 'analyse'],
       plan: 'coach', onboarded: true, activeTeamId: team.id, playerId: player ? 'pl_8' : undefined, createdAt: now,
     }
@@ -366,7 +366,8 @@ async function seedProDemo(role: Role, lang: 'fr' | 'en') {
  * PLAYER PERFORMANCE DEMO (begin): the form and load log of the performance space (db.wellness,
  * Le Code Njangi, chapter 29). Only the pro demo opened as a player gets data: Steve Ndjock (pl_8,
  * central midfielder of Étoile de la Côte) logged four weeks of morning questionnaires and of
- * perceived exertion after the sessions he attended and the matches he played. Today is left empty,
+ * perceived exertion after the sessions he attended and the matches he played (plus a friendly on the
+ * free Saturday four weeks ago, so every week of the comparison has its match). Today is left empty,
  * so the demo opens on the questionnaire. Every other demo only clears the table.
  * ================================================================================================== */
 
@@ -405,7 +406,9 @@ async function seedPerformance(role: Role, level: DemoLevel) {
     if (match) { stress -= 0.5; mood += 0.3; fatigue += 0.4 }
     // the exertion, about thirty minutes after: the shape of the example week of chapter 29
     let rpe: number | undefined, minutes: number | undefined, sessionId: string | undefined, matchId: string | undefined
+    const friendly = !match && !s && k > 20 && new Date(`${date}T12:00:00`).getDay() === 6 && !matches.some((m) => m.status === 'done' && Math.abs(new Date(m.date).getTime() - new Date(date).getTime()) < 5 * 86400000)
     if (match && played(match) > 0) { rpe = 8 + (rnd() < 0.5 ? 1 : 0); minutes = played(match); matchId = match.id }
+    else if (friendly) { rpe = 8; minutes = 75 }
     else if (trained && s) {
       const total = s.blocks.reduce((a, x) => a + (x.minutes || 0), 0) || 60
       const regen = !!after && played(after) > 60

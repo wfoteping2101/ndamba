@@ -164,7 +164,7 @@
   "import": {
     "title": "Import a list",
     "body": "Paste one name per line. The shirt number is optional, at the start of the line.",
-    "placeholder": "1 Ousmane Bello\n4 Paul Ebanda\n8 Kaydoudou\nBriBri",
+    "placeholder": "1 Ousmane Bello\n4 Paul Ebanda\n8 BriBri\nKaydoudou",
     "list": "Player list",
     "defaultPosition": "Position for everyone",
     "preview_one": "{{count}} player ready to import",

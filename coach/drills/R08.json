@@ -46,7 +46,7 @@
       "Carré de 12 x 12 m : la reprise est plus facile."
     ],
     "measure": "Pourcentage de ballons repris en moins de 5 secondes par série. C'est l'image en petit de l'indicateur de match : récupérations dans les 5 secondes après la perte.",
-    "story": "En France, l'équipe de Kaydoudou gagne un match grâce à un ballon repris en trois secondes. Ici, chacun apprend que la perte est le meilleur moment pour reprendre."
+    "story": "En France, l'équipe de BriBri gagne un match grâce à un ballon repris en trois secondes. Ici, chacun apprend que la perte est le meilleur moment pour reprendre."
   },
   "en": {
     "title": "Five-Second Rondo",
@@ -82,7 +82,7 @@
       "12 x 12 m square: winning it back is easier."
     ],
     "measure": "Share of balls won back within 5 seconds per set. It is a small version of the match indicator: regains within 5 seconds of losing the ball.",
-    "story": "In France, Kaydoudou's team wins a match with a ball won back in three seconds. Here, everyone learns that losing the ball is the best moment to win it back."
+    "story": "In France, BriBri's team wins a match with a ball won back in three seconds. Here, everyone learns that losing the ball is the best moment to win it back."
   },
   "diagram": {
     "view": "grid", "w": 15, "h": 15,

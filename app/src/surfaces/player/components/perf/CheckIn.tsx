@@ -14,7 +14,7 @@ import { PerfHead, ScaleRow, fmtInt, fmtSigned } from './bits'
 /** Words for the exertion scale (the table of chapter 29). */
 export const rpeWord = (v: number) => (v <= 0 ? 0 : v <= 2 ? 1 : v <= 4 ? 2 : v <= 6 ? 3 : v <= 8 ? 4 : 5)
 
-export function CheckInCard({ d, compact = false }: { d: PerfData; compact?: boolean }) {
+export function CheckInCard({ d }: { d: PerfData }) {
   const { t, lang } = useT('player')
   const { today, form } = d
   const todays = form.todays
@@ -30,7 +30,8 @@ export function CheckInCard({ d, compact = false }: { d: PerfData; compact?: boo
   const rpeDone = typeof todays?.rpe === 'number'
   const [rpeOpen, setRpeOpen] = useState(false)
   const expectRpe = !!session || !!match
-  const showRpe = (!rpeDone && (expectRpe || rpeOpen)) || editRpe
+  // the exertion comes after the session: its form opens once the questionnaire is done, or on demand
+  const showRpe = (!rpeDone && ((expectRpe && done) || rpeOpen)) || editRpe
 
   return (
     <section className="card card-pad flex h-full flex-col" aria-labelledby="ci-h">
@@ -41,7 +42,7 @@ export function CheckInCard({ d, compact = false }: { d: PerfData; compact?: boo
       {form.dropping && <div className="mb-4"><Callout tone="terra" title={t('perf.form.dropTitle')}>{t('perf.form.dropBody')}</Callout></div>}
 
       {showForm ? (
-        <FormQuestions initial={todays} compact={compact} onSave={async (v) => { await saveWellness(today, { ...v, playerId: d.me?.id }); setEditForm(false) }} onCancel={done ? () => setEditForm(false) : undefined} />
+        <FormQuestions initial={todays} onSave={async (v) => { await saveWellness(today, { ...v, playerId: d.me?.id }); setEditForm(false) }} onCancel={done ? () => setEditForm(false) : undefined} />
       ) : (
         <FormSummary w={todays!} baseline={form.baseline} />
       )}
@@ -63,25 +64,24 @@ export function CheckInCard({ d, compact = false }: { d: PerfData; compact?: boo
           </p>
         ) : (
           <div className="flex flex-wrap items-center justify-between gap-2">
-            <p className="text-[13px] text-ink-muted">{t('perf.rpe.none')}</p>
-            <button type="button" className="btn-outline btn-sm min-h-[44px]" onClick={() => setRpeOpen(true)}>{t('perf.rpe.add')}</button>
+            <p className="min-w-0 flex-1 basis-56 text-[13px] text-ink-muted">{expectRpe ? t('perf.rpe.when') : t('perf.rpe.none')}</p>
+            <button type="button" className="btn-outline btn-sm min-h-[44px]" onClick={() => setRpeOpen(true)}>{expectRpe ? t('perf.rpe.addNow') : t('perf.rpe.add')}</button>
           </div>
         )}
-        {!showRpe && !rpeDone && expectRpe && <p className="mt-1 text-[12px] text-ink-faint">{t('perf.rpe.when')}</p>}
       </div>
       <p className="mt-auto pt-4 text-[11.5px] text-ink-faint">{t('perf.form.private')}</p>
     </section>
   )
 }
 
-function FormQuestions({ initial, compact, onSave, onCancel }: { initial: Wellness | null; compact: boolean; onSave: (v: Record<FormKey, Score5>) => void; onCancel?: () => void }) {
+function FormQuestions({ initial, onSave, onCancel }: { initial: Wellness | null; onSave: (v: Record<FormKey, Score5>) => void; onCancel?: () => void }) {
   const { t } = useT('player')
   const [v, setV] = useState<Partial<Record<FormKey, Score5>>>(() => (initial ? Object.fromEntries(FORM_KEYS.filter((k) => initial[k]).map((k) => [k, initial[k]])) : {}))
   const complete = FORM_KEYS.every((k) => v[k])
   const n = FORM_KEYS.filter((k) => v[k]).length
   return (
     <form onSubmit={(e) => { e.preventDefault(); if (complete) onSave(v as Record<FormKey, Score5>) }}>
-      <div className={cx('grid gap-x-5 gap-y-4', !compact && 'xl:grid-cols-2')}>
+      <div className="grid gap-x-5 gap-y-4 sm:grid-cols-2">
         {FORM_KEYS.map((k) => (
           <ScaleRow key={k} id={`f-${k}`} label={t(`perf.form.items.${k}.label`)} value={v[k]} onChange={(x) => setV((p) => ({ ...p, [k]: x as Score5 }))}
             low={t(`perf.form.items.${k}.low`)} high={t(`perf.form.items.${k}.high`)} />

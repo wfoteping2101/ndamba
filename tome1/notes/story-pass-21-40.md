@@ -2,14 +2,14 @@
 
 Passe d'éditeur jeunesse, pas une réécriture. Ordre des événements, leçons apprises, état des personnages en fin de chapitre et moments décrits dans les champs `illustration` : inchangés. En-têtes non modifiés. Blocs CARNET non modifiés, sauf deux erreurs factuelles (ch. 24 et 40, signalées plus bas).
 
-Pour chaque chapitre : objectif immédiat des frères, obstacle, choix important (et qui le fait), changement émotionnel, moment visuel (champ `illustration`, résumé), accroche de fin, puis un verdict d'une ligne sur l'agentivité de chaque frère. K = Kaydoudou, B = BriBri.
+Pour chaque chapitre : objectif immédiat des frères, obstacle, choix important (et qui le fait), changement émotionnel, moment visuel (champ `illustration`, résumé), accroche de fin, puis un verdict d'une ligne sur l'agentivité de chaque frère. K = BriBri, B = Kaydoudou.
 
 ---
 
 ## Partie III, France (fin)
 
 ### 21. Les cinq secondes (POV K)
-- **Objectif** : garder l'équipe vivante sans BriBri ; pour K, trouver sa voix ; pour B, rester utile avec un plâtre.
+- **Objectif** : garder l'équipe vivante sans Kaydoudou ; pour K, trouver sa voix ; pour B, rester utile avec un plâtre.
 - **Obstacle** : la fracture du poignet (six semaines sans match), la timidité de K et sa voix qui mue, une équipe éteinte.
 - **Choix** : K continue de crier malgré les rires (K) ; B choisit de lire le match depuis le banc et crie l'information qui fait gagner le ballon (B).
 - **Changement émotionnel** : effondrement de B et honte de K, puis fierté partagée à distance, sous les projecteurs.
@@ -219,16 +219,16 @@ Pour chaque chapitre : objectif immédiat des frères, obstacle, choix important
 5. **Ch. 28** : foulard de Mami « vert et violet » (canon : pagne rouge et jaune) ; question de Marcus écrite « deux ans plus tôt » (un an et demi) ; pages de Waldorf appelées « premières pages » du carnet (ce sont celles de Douala). Corrigés.
 6. **Ch. 31** : Youssef, 13 ans en mai 2028, dit qu'il aura 17 ans en 2030. Corrigé en quinze ans.
 7. **Ch. 37** : Papa devant les vidéos de 1990 « comme s'il avait encore vingt ans » ; il avait six ans en 1990 (notes partie V et ch. 40). Corrigé en « six ans ».
-8. **Ch. 38** : BriBri « avait onze ans » le premier jour à Waldorf ; il en avait dix (U11 au ch. 10, bible). Corrigé.
+8. **Ch. 38** : Kaydoudou « avait onze ans » le premier jour à Waldorf ; il en avait dix (U11 au ch. 10, bible). Corrigé.
 9. **Ch. 40** : « Il ne comptait jamais rien » et, dans le CARNET, « la première fois que je compte quelque chose en entier » : contredit les ch. 21 (les secondes), 22 (les signatures du plâtre), 27 (les vignes et les pins) et 34 (ses chutes). Texte corrigé en « Il ne comptait jamais les passes » ; aparté du CARNET corrigé en « D'habitude, je compte mes chutes » (erreur factuelle, bloc CARNET modifié pour cette seule raison).
-10. **Ch. 36** : « plus légère que d'habitude » pour BriBri (accord fautif) ; « le vendredi, avant le match » ambigu avec la chronologie lundi puis samedi. Corrigés.
+10. **Ch. 36** : « plus légère que d'habitude » pour Kaydoudou (accord fautif) ; « le vendredi, avant le match » ambigu avec la chronologie lundi puis samedi. Corrigés.
 11. **Ch. 27** : glissement de point de vue (perception de K dans un chapitre POV B). Corrigé.
 
 ## Vérifié sans changement
 - **Âge de Mami** : 68 ans au début, 70 à sa chute (février 2028), 71 à Londres au printemps 2029. Cohérent si son anniversaire tombe entre mai et octobre. À noter éventuellement dans la bible.
 - Scores et buteurs des parties IV et V conformes aux notes (Torre del Far 3-1, Platja Llarga 2-0, Sant Pere 3-2, Les Oliveres 1-0, Riu Ebre 2-1, Atlas 2-1 à la 68e, Castellana 2-1 à la 66e, Millbrook 2-1, Kidbrooke 3-0, Hampton Forest 3-1, les quatre défaites, Eltham Vale 1-1, Northfleet 1-0 à la 56e, Rheinhafen 2-1 à la 71e, Amstelland 2-1 à la 92e).
 - Signatures du ballon relues par Mami au ch. 39 : toutes attestées (Ousmane « Les mains », Mireille « la Gazelle », « Le ballon doit voyager. Fokou », Diego, Tyler, la flèche « Why ? » de Marcus au ch. 16, puis France, Espagne, Kingsbridge). « Deux cents tonnes » est bien posé aux ch. 6 et 8. La phrase de Mami « il doit savoir où il va » et K qui « faisait semblant de lire » sont au ch. 2.
-- Gardés volontairement : « à mille kilomètres » (ch. 30, ordre de grandeur), « lettres françaises » pour Youssef (voix de BriBri), « quatre pays » au ch. 36 (les signatures viennent de quatre pays).
+- Gardés volontairement : « à mille kilomètres » (ch. 30, ordre de grandeur), « lettres françaises » pour Youssef (voix de Kaydoudou), « quatre pays » au ch. 36 (les signatures viennent de quatre pays).
 
 ## À signaler (hors de mon périmètre)
 - **Art** : `art/CHARACTERS.md` (fiche BALL) ne cite pas les signatures du ch. 16 de Coach Whitfield (« Work rate ! » avec un cœur), d'Owen et de Marcus (petite flèche qui traverse trois traits, « Why ? »). Utile pour les illustrations où le ballon est visible (ch. 24, 31, 32, 36, 39).
@@ -238,25 +238,25 @@ Pour chaque chapitre : objectif immédiat des frères, obstacle, choix important
 
 ## Journal des changements par chapitre
 
-- **21** : scène courte où BriBri, en coloriant son plâtre, pousse son frère à parler (il devient acteur, plus seulement spectateur) ; dans le but décisif, son cri depuis le banc fait couper la passe par Lucas ; dernière phrase renforcée (« une passe décisive avec la voix »). 1760 → 1914 mots.
-- **22** : distance Paris-Bafoussam corrigée ; BriBri se laisse tomber sur le canapé à côté de Kenzo et le poulet DG est sur la table basse, comme dans l'illustration ; deux coupes pour rester sous 1950. 1924 → 1949.
-- **23** : tirs au but rendus arithmétiquement possibles (4-4 puis 5-4) ; main en porte-voix et BriBri entre deux maillots bordeaux, comme dans l'illustration ; une coupe. 1916 → 1943.
-- **24** : BriBri réagit dans la scène de la cage (blague qui tombe à plat) ; signature de Lacombe alignée sur l'illustration (BriBri tient le ballon, Lacombe accroupi détourne la tête, Kaydoudou porte le maillot 8) ; lever du soleil corrigé ; CARNET : « troisième pièce ». Coupes de compensation. 1950 → 1947.
-- **25** : la charge aux cornes, le petit pont et le sourire caché de Kaydoudou réunis dans le même instant, comme dans l'illustration. 1895 → 1925.
-- **26** : pied droit sur le ballon et sourire d'Avi Ramon, BriBri figé déséquilibré, Kaydoudou les yeux grands ouverts, explicités. 1769 → 1794.
-- **27** : ajout du moment illustré (Jordi repasse la ligne du couloir, BriBri boude en tailleur près du seau) ; glissement de point de vue corrigé. 1735 → 1805.
-- **28** : foulard de Mami au canon ; chronologie du carnet corrigée ; BriBri défenseur bras écartés. 1760 → 1769.
+- **21** : scène courte où Kaydoudou, en coloriant son plâtre, pousse son frère à parler (il devient acteur, plus seulement spectateur) ; dans le but décisif, son cri depuis le banc fait couper la passe par Lucas ; dernière phrase renforcée (« une passe décisive avec la voix »). 1760 → 1914 mots.
+- **22** : distance Paris-Bafoussam corrigée ; Kaydoudou se laisse tomber sur le canapé à côté de Kenzo et le poulet DG est sur la table basse, comme dans l'illustration ; deux coupes pour rester sous 1950. 1924 → 1949.
+- **23** : tirs au but rendus arithmétiquement possibles (4-4 puis 5-4) ; main en porte-voix et Kaydoudou entre deux maillots bordeaux, comme dans l'illustration ; une coupe. 1916 → 1943.
+- **24** : Kaydoudou réagit dans la scène de la cage (blague qui tombe à plat) ; signature de Lacombe alignée sur l'illustration (Kaydoudou tient le ballon, Lacombe accroupi détourne la tête, BriBri porte le maillot 8) ; lever du soleil corrigé ; CARNET : « troisième pièce ». Coupes de compensation. 1950 → 1947.
+- **25** : la charge aux cornes, le petit pont et le sourire caché de BriBri réunis dans le même instant, comme dans l'illustration. 1895 → 1925.
+- **26** : pied droit sur le ballon et sourire d'Avi Ramon, Kaydoudou figé déséquilibré, BriBri les yeux grands ouverts, explicités. 1769 → 1794.
+- **27** : ajout du moment illustré (Jordi repasse la ligne du couloir, Kaydoudou boude en tailleur près du seau) ; glissement de point de vue corrigé. 1735 → 1805.
+- **28** : foulard de Mami au canon ; chronologie du carnet corrigée ; Kaydoudou défenseur bras écartés. 1760 → 1769.
 - **29** : chaussettes roulées dans les poings et Laia bras ouverts au moment du dribble njangi ; coupes pour repasser sous 1950. 1951 → 1948.
-- **30** : moment de l'échiquier rendu exact (fou blanc levé, menton dans la main, pion tombé dans la main de BriBri) ; répétition du « caillou dans la poche » (déjà au ch. 29) supprimée ; coupes. 1951 → 1945.
-- **31** : âge de Youssef en 2030 corrigé ; BriBri tient le ballon pendant que Youssef signe, comme dans l'illustration. 1776 → 1786.
-- **32** : Kaydoudou tient le ballon à deux mains pendant la signature d'Avi Ramon ; BriBri, médaille au cou, la mord pour vérifier qu'elle est vraie. 1757 → 1785.
-- **33** : la cage ancrée dans le soir de pluie, avec le vieux maillot vert 8 et BriBri comme mur, comme dans l'illustration. 1771 → 1795.
-- **34** : échange du biberon rendu clair et drôle (« Un an, et déjà voleur. Et regarde-nous maintenant. ») ; Kaydoudou reçoit le corps ouvert en fixant Jaden. 1775 → 1787.
-- **35** : troisième but : la tenaille décrite comme dans l'illustration, et BriBri lit le piège avant tout le monde au lieu de seulement recevoir. 1687 → 1711.
-- **36** : le mot anglais soufflé par Kaydoudou mis en scène (« Rots ») ; couvercle de la boîte et ballon sous le bras ; Jaden relève à peine les yeux ; chronologie et accord corrigés. 1757 → 1809.
+- **30** : moment de l'échiquier rendu exact (fou blanc levé, menton dans la main, pion tombé dans la main de Kaydoudou) ; répétition du « caillou dans la poche » (déjà au ch. 29) supprimée ; coupes. 1951 → 1945.
+- **31** : âge de Youssef en 2030 corrigé ; Kaydoudou tient le ballon pendant que Youssef signe, comme dans l'illustration. 1776 → 1786.
+- **32** : BriBri tient le ballon à deux mains pendant la signature d'Avi Ramon ; Kaydoudou, médaille au cou, la mord pour vérifier qu'elle est vraie. 1757 → 1785.
+- **33** : la cage ancrée dans le soir de pluie, avec le vieux maillot vert 8 et Kaydoudou comme mur, comme dans l'illustration. 1771 → 1795.
+- **34** : échange du biberon rendu clair et drôle (« Un an, et déjà voleur. Et regarde-nous maintenant. ») ; BriBri reçoit le corps ouvert en fixant Jaden. 1775 → 1787.
+- **35** : troisième but : la tenaille décrite comme dans l'illustration, et Kaydoudou lit le piège avant tout le monde au lieu de seulement recevoir. 1687 → 1711.
+- **36** : le mot anglais soufflé par BriBri mis en scène (« Rots ») ; couvercle de la boîte et ballon sous le bras ; Jaden relève à peine les yeux ; chronologie et accord corrigés. 1757 → 1809.
 - **37** : « comme s'il avait encore six ans » (Papa en 1990). 1730 → 1730.
-- **38** : BriBri avait dix ans à Waldorf ; sourire et souffle en nuage au départ du une-deux, comme dans l'illustration. 1692 → 1706.
-- **39** : réplique de Mami ajoutée avant le gag de traduction (le lecteur entend enfin ce que les frères traduisent) ; Kaydoudou suit chaque lettre des yeux. 1935 → 1946.
+- **38** : Kaydoudou avait dix ans à Waldorf ; sourire et souffle en nuage au départ du une-deux, comme dans l'illustration. 1692 → 1706.
+- **39** : réplique de Mami ajoutée avant le gag de traduction (le lecteur entend enfin ce que les frères traduisent) ; BriBri suit chaque lettre des yeux. 1935 → 1946.
 - **40** : contradiction « il ne comptait jamais rien » corrigée dans le texte et dans l'aparté du CARNET ; ligne explicite sur les cinq pièces dans la dernière scène ; une phrase d'odeur redondante coupée. 1927 → 1945.
 
 Vérification finale : `node tools/check.mjs tome1/chapters/{21..40}-*.md` affiche `ok` pour les 20 fichiers (1706 à 1949 mots de récit, tous les schémas valides), aucun tiret long ni moyen.

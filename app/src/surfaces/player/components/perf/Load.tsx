@@ -21,10 +21,10 @@ export function LoadCard({ d, full = false }: { d: PerfData; full?: boolean }) {
         <p className="rounded-xl bg-sand/60 px-3 py-3 text-sm text-ink-muted">{t('perf.load.empty')}</p>
       ) : (
         <>
-          <dl className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+          <dl className={cx('grid grid-cols-2 gap-2', full && 'sm:grid-cols-3')}>
             <Figure label={t('perf.load.last7')} value={fmtInt(L.current, lang)} sub={t('perf.load.sessions', { count: L.sessions7 })} tone="forest" />
             <Figure label={t('perf.load.prevAvg')} value={L.prevAvg !== null ? fmtInt(L.prevAvg, lang) : '·'} sub={t('perf.load.uaShort')} />
-            <div className="col-span-2 min-w-0 rounded-xl bg-cream/80 px-3 py-2.5 ring-1 ring-line/70 sm:col-span-1">
+            <div className={cx('col-span-2 min-w-0 rounded-xl bg-cream/80 px-3 py-2.5 ring-1 ring-line/70', full && 'sm:col-span-1')}>
               <div className="truncate text-[11.5px] font-medium text-ink-muted">{t('perf.load.delta')}</div>
               <div className="font-display text-[22px] font-semibold leading-tight tabular-nums text-ink">{pct ?? '·'}</div>
               {L.band && <span className={cx('mt-0.5 inline-flex rounded-full px-2 py-0.5 text-[11.5px] font-semibold', BAND_TONE[L.band])}>{t(`perf.load.band.${L.band}`)}</span>}
@@ -56,7 +56,7 @@ function WeekBars({ weeks }: { weeks: number[] }) {
     <ul className="grid grid-cols-4 gap-2">
       {weeks.map((v, i) => (
         <li key={i} className="min-w-0">
-          <div className="flex h-20 items-end"><span className={cx('block w-full rounded-t-[4px]', i === 3 ? 'bg-terra-500' : 'bg-forest-600')} style={{ height: `${Math.max(3, (v / max) * 100)}%` }} /></div>
+          <div className="flex h-20 items-end justify-center"><span className={cx('block w-full max-w-[56px] rounded-t-[4px]', i === 3 ? 'bg-terra-500' : 'bg-forest-600')} style={{ height: `${Math.max(3, (v / max) * 100)}%` }} /></div>
           <div className="mt-1 text-center text-[12px] font-semibold tabular-nums text-ink">{fmtInt(v, lang)}</div>
           <div className="truncate text-center text-[11px] text-ink-faint">{names[i]}</div>
         </li>
@@ -76,7 +76,7 @@ export function FormTrendCard({ d }: { d: PerfData }) {
       {pts.length < 2 ? (
         <p className="rounded-xl bg-sand/60 px-3 py-3 text-sm text-ink-muted">{t('perf.trend.empty')}</p>
       ) : (
-        <HistoryLine points={pts} target={Math.round(F.baseline ?? pts.reduce((a, p) => a + p.value, 0) / pts.length)} unit={`/ ${FORM_MAX}`}
+        <HistoryLine points={pts} min={5} max={FORM_MAX} labelAt="start" plain target={Math.round(F.baseline ?? pts.reduce((a, p) => a + p.value, 0) / pts.length)} unit={`/ ${FORM_MAX}`}
           targetLabel={t('perf.trend.avg')} ariaLabel={t('perf.trend.aria', { values: pts.map((p) => p.value).join(', ') })} />
       )}
       {recent.length > 0 && (
@@ -84,13 +84,16 @@ export function FormTrendCard({ d }: { d: PerfData }) {
           {recent.map((l) => {
             const s = formScore(l)
             const band = s !== null ? formBand(s) : null
+            const lowPoint = (w: typeof l) => {
+              if (!hasForm(w)) return ''
+              const lows = FORM_KEYS.filter((k) => (w[k] as number) <= 2)
+              return lows.length ? t('perf.trend.low', { items: lows.map((k) => `${t(`perf.form.items.${k}.label`).toLowerCase()} ${w[k]}`).join(', ') }) : ''
+            }
             return (
               <li key={l.id} className="flex items-center gap-3 py-2">
                 <span className="w-24 shrink-0 text-[12.5px] text-ink-muted">{fmtDate(l.date, lang, { weekday: 'short', day: 'numeric', month: 'short' })}</span>
                 <span className={cx('w-12 shrink-0 rounded-full px-2 py-0.5 text-center text-[12px] font-semibold tabular-nums', band ? `${FORM_TONE[band].bg} ${FORM_TONE[band].text}` : 'bg-sand text-ink-faint')}>{s ?? '·'}</span>
-                <span className="hidden min-w-0 flex-1 truncate text-[12px] text-ink-faint sm:block">
-                  {hasForm(l) ? FORM_KEYS.map((k) => `${t(`perf.form.items.${k}.short`)} ${l[k]}`).join(' · ') : ''}
-                </span>
+                <span className="min-w-0 flex-1 truncate text-[12px] text-ink-muted">{lowPoint(l)}</span>
                 <span className="ml-auto shrink-0 text-right text-[12.5px] tabular-nums text-ink-soft">{loadOf(l) > 0 ? t('perf.trend.rowLoad', { rpe: l.rpe, n: fmtInt(loadOf(l), lang) }) : t('perf.trend.noLoad')}</span>
               </li>
             )

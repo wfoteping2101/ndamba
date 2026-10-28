@@ -6,23 +6,23 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "le-ballon-rapiece",
   "title": "Le ballon rapiécé",
   "part": 1,
-  "pov": "Kaydoudou",
-  "summary": "Un samedi matin sur la terre rouge de Bonamoussadi, les Lionceaux de Tonton Fokou jouent un match de quartier, et BriBri a bien l'intention de dribbler la ville entière. Mais le vieux ballon des frères n'a pas dit son dernier mot."
+  "pov": "BriBri",
+  "summary": "Un samedi matin sur la terre rouge de Bonamoussadi, les Lionceaux de Tonton Fokou jouent un match de quartier, et Kaydoudou a bien l'intention de dribbler la ville entière. Mais le vieux ballon des frères n'a pas dit son dernier mot."
  },
  {
   "no": 2,
   "slug": "le-njangi-de-mami",
   "title": "Le njangi de Mami",
   "part": 1,
-  "pov": "BriBri",
-  "summary": "Pour les vacances de la Toussaint, les frères montent à Bafoussam, chez Mami Nyanga et sa machine à coudre. BriBri y découvre une drôle de caisse que les femmes du quartier se passent de main en main."
+  "pov": "Kaydoudou",
+  "summary": "Pour les vacances de la Toussaint, les frères montent à Bafoussam, chez Mami Nyanga et sa machine à coudre. Kaydoudou y découvre une drôle de caisse que les femmes du quartier se passent de main en main."
  },
  {
   "no": 3,
   "slug": "les-requins-de-bepanda",
   "title": "Les Requins de Bépanda",
   "part": 1,
-  "pov": "Kaydoudou",
+  "pov": "BriBri",
   "summary": "Le tournoi des quartiers commence, et les Lionceaux affrontent tout de suite les Requins de Bépanda et leur capitaine, Junior « Bulldozer » Mvondo. Sur le chemin du retour, les deux frères se disent des choses qu'ils n'auraient pas dû se dire."
  },
  {
@@ -30,39 +30,39 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "la-boue-et-le-pagne",
   "title": "La boue et le pagne",
   "part": 1,
-  "pov": "BriBri",
-  "summary": "Les pluies s'abattent sur Douala et le terrain de terre rouge devient une mare de boue où plus aucun dribble ne passe. Tonton Fokou invente un entraînement très bizarre, et BriBri découvre qu'on peut devenir invisible en restant immobile."
+  "pov": "Kaydoudou",
+  "summary": "Les pluies s'abattent sur Douala et le terrain de terre rouge devient une mare de boue où plus aucun dribble ne passe. Tonton Fokou invente un entraînement très bizarre, et Kaydoudou découvre qu'on peut devenir invisible en restant immobile."
  },
  {
   "no": 5,
   "slug": "la-passe-polie-et-la-passe-utile",
   "title": "La passe polie et la passe utile",
   "part": 1,
-  "pov": "Kaydoudou",
-  "summary": "Les Lionceaux se battent pour sortir de leur poule, et tout le quartier félicite Kaydoudou pour ses passes si propres. Tout le quartier, sauf un vieil homme assis sur un bidon jaune."
+  "pov": "BriBri",
+  "summary": "Les Lionceaux se battent pour sortir de leur poule, et tout le quartier félicite BriBri pour ses passes si propres. Tout le quartier, sauf un vieil homme assis sur un bidon jaune."
  },
  {
   "no": 6,
   "slug": "la-lettre-de-waldorf",
   "title": "La lettre de Waldorf",
   "part": 1,
-  "pov": "BriBri",
-  "summary": "Un soir de ndolé, Papa pose sur la table une lettre venue de très loin, avec un nom de ville qui ressemble à un éternuement. Pour BriBri, le monde se met à pencher comme le but en bambou de Bonamoussadi."
+  "pov": "Kaydoudou",
+  "summary": "Un soir de ndolé, Papa pose sur la table une lettre venue de très loin, avec un nom de ville qui ressemble à un éternuement. Pour Kaydoudou, le monde se met à pencher comme le but en bambou de Bonamoussadi."
  },
  {
   "no": 7,
   "slug": "le-carnet-de-tonton-fokou",
   "title": "Le carnet de Tonton Fokou",
   "part": 1,
-  "pov": "Kaydoudou",
-  "summary": "Demi-finale du tournoi des quartiers, revanche contre les Requins de Bépanda, devant tout Bonamoussadi. À la mi-temps, Kaydoudou, qui ne parle jamais, va devoir ouvrir la bouche."
+  "pov": "BriBri",
+  "summary": "Demi-finale du tournoi des quartiers, revanche contre les Requins de Bépanda, devant tout Bonamoussadi. À la mi-temps, BriBri, qui ne parle jamais, va devoir ouvrir la bouche."
  },
  {
   "no": 8,
   "slug": "finale-a-bonamoussadi",
   "title": "Finale à Bonamoussadi",
   "part": 1,
-  "pov": "BriBri",
+  "pov": "Kaydoudou",
   "summary": "La finale du tournoi des quartiers contre les Panthères de Deïdo, devant Mami venue de Bafoussam et tout Bonamoussadi. Deux jours plus tard, un avion attend les frères Ngassa."
  },
  {
@@ -70,23 +70,23 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "la-neige-de-waldorf",
   "title": "La neige de Waldorf",
   "part": 2,
-  "pov": "Kaydoudou",
-  "summary": "En janvier, les frères découvrent le froid, la neige et une école où Kaydoudou ne comprend plus rien. Heureusement, il reste un sous-sol, un ballon rapiécé et, le samedi matin, un drôle de petit terrain."
+  "pov": "BriBri",
+  "summary": "En janvier, les frères découvrent le froid, la neige et une école où BriBri ne comprend plus rien. Heureusement, il reste un sous-sol, un ballon rapiécé et, le samedi matin, un drôle de petit terrain."
  },
  {
   "no": 10,
   "slug": "les-tryouts",
   "title": "Les tryouts",
   "part": 2,
-  "pov": "BriBri",
-  "summary": "Sous un immense dôme blanc, des dizaines d'enfants se disputent une place à la Potomac Valley Soccer Academy. BriBri y croise un grand blond qui n'aime pas du tout ses chaussettes, et Kaydoudou y perd presque ses moyens."
+  "pov": "Kaydoudou",
+  "summary": "Sous un immense dôme blanc, des dizaines d'enfants se disputent une place à la Potomac Valley Soccer Academy. Kaydoudou y croise un grand blond qui n'aime pas du tout ses chaussettes, et BriBri y perd presque ses moyens."
  },
  {
   "no": 11,
   "slug": "soixante-dix-pour-cent",
   "title": "Soixante-dix pour cent",
   "part": 2,
-  "pov": "Kaydoudou",
+  "pov": "BriBri",
   "summary": "Pour leur premier match de printemps, les joueurs de Potomac Valley ont le ballon presque tout le temps. Les parents applaudissent chaque passe. Puis, le lundi, Marcus Bell allume sa tablette."
  },
  {
@@ -94,23 +94,23 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "les-chiffres-de-marcus",
   "title": "Les chiffres de Marcus",
   "part": 2,
-  "pov": "BriBri",
-  "summary": "BriBri déteste les chiffres, mais Marcus Bell a compté tous ses dribbles. Parmi eux se cache le plus utile de tous, et ce n'est pas du tout le plus beau."
+  "pov": "Kaydoudou",
+  "summary": "Kaydoudou déteste les chiffres, mais Marcus Bell a compté tous ses dribbles. Parmi eux se cache le plus utile de tous, et ce n'est pas du tout le plus beau."
  },
  {
   "no": 13,
   "slug": "pas-de-devoirs-pas-de-crampons",
   "title": "Pas de devoirs, pas de crampons",
   "part": 2,
-  "pov": "Kaydoudou",
-  "summary": "Maman prépare son grand examen d'infirmière et travaille la nuit. La maison est fatiguée, les notes de Kaydoudou dégringolent, et la règle la plus ancienne de la famille tombe comme un couperet."
+  "pov": "BriBri",
+  "summary": "Maman prépare son grand examen d'infirmière et travaille la nuit. La maison est fatiguée, les notes de BriBri dégringolent, et la règle la plus ancienne de la famille tombe comme un couperet."
  },
  {
   "no": 14,
   "slug": "la-coupe-du-monde-chez-nous",
   "title": "La Coupe du monde chez nous",
   "part": 2,
-  "pov": "Kaydoudou",
+  "pov": "BriBri",
   "summary": "L'été 2026, la plus grande fête du football du monde s'installe en Amérique, à quelques heures de Waldorf. Le Cameroun n'y est pas, mais l'Afrique, elle, va faire trembler les stades."
  },
  {
@@ -118,15 +118,15 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "courir-pour-les-autres",
   "title": "Courir pour les autres",
   "part": 2,
-  "pov": "BriBri",
-  "summary": "Au plus chaud de l'été, Potomac Valley dispute la Mid-Atlantic Summer Cup sous les tentes et les glacières. BriBri y fait la meilleure action de sa vie sans jamais toucher le ballon."
+  "pov": "Kaydoudou",
+  "summary": "Au plus chaud de l'été, Potomac Valley dispute la Mid-Atlantic Summer Cup sous les tentes et les glacières. Kaydoudou y fait la meilleure action de sa vie sans jamais toucher le ballon."
  },
  {
   "no": 16,
   "slug": "goodbye-potomac",
   "title": "Goodbye, Potomac",
   "part": 2,
-  "pov": "Kaydoudou",
+  "pov": "BriBri",
   "summary": "Une finale contre la plus grosse équipe de Virginie, des larmes dans un vestiaire, des cadeaux qu'on n'oubliera jamais, et une dernière nuit dans la petite maison de Waldorf avant de traverser l'océan encore une fois."
  },
  {
@@ -134,55 +134,55 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "avant-de-recevoir-tu-regardes",
   "title": "Avant de recevoir, tu regardes",
   "part": 3,
-  "pov": "Kaydoudou",
-  "summary": "Les Ngassa s'installent à Bussy-Saint-Georges, où tout le monde parle français, mais pas tout à fait comme eux. À l'essai du centre de formation de l'Étoile Sportive de Marne, un entraîneur à moustache grise pose à Kaydoudou une question à laquelle il ne sait pas répondre."
+  "pov": "BriBri",
+  "summary": "Les Ngassa s'installent à Bussy-Saint-Georges, où tout le monde parle français, mais pas tout à fait comme eux. À l'essai du centre de formation de l'Étoile Sportive de Marne, un entraîneur à moustache grise pose à BriBri une question à laquelle il ne sait pas répondre."
  },
  {
   "no": 18,
   "slug": "entre-les-lignes",
   "title": "Entre les lignes",
   "part": 3,
-  "pov": "BriBri",
-  "summary": "Monsieur Lacombe crie « Regarde ! » cent fois par séance, et BriBri décide de s'entraîner à regarder partout, même là où il ne faudrait pas. Puis on lui montre un drôle d'endroit sur le terrain, un endroit qui semble avoir été fait exprès pour lui."
+  "pov": "Kaydoudou",
+  "summary": "Monsieur Lacombe crie « Regarde ! » cent fois par séance, et Kaydoudou décide de s'entraîner à regarder partout, même là où il ne faudrait pas. Puis on lui montre un drôle d'endroit sur le terrain, un endroit qui semble avoir été fait exprès pour lui."
  },
  {
   "no": 19,
   "slug": "kenzo",
   "title": "Kenzo",
   "part": 3,
-  "pov": "Kaydoudou",
-  "summary": "Kenzo Delattre est plus rapide, plus technique, plus brillant, et c'est lui qui porte le 8. Sur le banc, Kaydoudou découvre la jalousie, puis une femme aux longues tresses qui lui pose une question qu'il n'attendait pas."
+  "pov": "BriBri",
+  "summary": "Kenzo Delattre est plus rapide, plus technique, plus brillant, et c'est lui qui porte le 8. Sur le banc, BriBri découvre la jalousie, puis une femme aux longues tresses qui lui pose une question qu'il n'attendait pas."
  },
  {
   "no": 20,
   "slug": "le-match-de-trop",
   "title": "Le match de trop",
   "part": 3,
-  "pov": "BriBri",
-  "summary": "Lors d'un match à l'extérieur, BriBri joue l'un de ses plus beaux matchs, jusqu'au moment où une voix, derrière la main courante, fait disparaître tous les autres bruits. Ce jour-là, il découvre qu'il n'est pas seul."
+  "pov": "Kaydoudou",
+  "summary": "Lors d'un match à l'extérieur, Kaydoudou joue l'un de ses plus beaux matchs, jusqu'au moment où une voix, derrière la main courante, fait disparaître tous les autres bruits. Ce jour-là, il découvre qu'il n'est pas seul."
  },
  {
   "no": 21,
   "slug": "les-cinq-secondes",
   "title": "Les cinq secondes",
   "part": 3,
-  "pov": "Kaydoudou",
-  "summary": "Une mauvaise chute, un craquement, et BriBri se retrouve au bord du terrain avec un bras dans le plâtre. Sans son petit frère, Kaydoudou doit trouver ce qui lui a toujours manqué sur un terrain : sa voix."
+  "pov": "BriBri",
+  "summary": "Une mauvaise chute, un craquement, et Kaydoudou se retrouve au bord du terrain avec un bras dans le plâtre. Sans son petit frère, BriBri doit trouver ce qui lui a toujours manqué sur un terrain : sa voix."
  },
  {
   "no": 22,
   "slug": "noel-sans-mami",
   "title": "Noël sans Mami",
   "part": 3,
-  "pov": "BriBri",
-  "summary": "Paris s'illumine pour Noël, mais il manque quelqu'un à la table des Ngassa, et même plusieurs. Avec son plâtre et l'aide de Lucas, BriBri invente un jeu bizarre, tandis qu'un garçon tape tout seul dans un ballon contre un mur, dans le froid."
+  "pov": "Kaydoudou",
+  "summary": "Paris s'illumine pour Noël, mais il manque quelqu'un à la table des Ngassa, et même plusieurs. Avec son plâtre et l'aide de Lucas, Kaydoudou invente un jeu bizarre, tandis qu'un garçon tape tout seul dans un ballon contre un mur, dans le froid."
  },
  {
   "no": 23,
   "slug": "parler-c-est-passer",
   "title": "Parler, c'est passer",
   "part": 3,
-  "pov": "Kaydoudou",
+  "pov": "BriBri",
   "summary": "À Pâques, l'ESM part en Bretagne pour un grand tournoi face aux meilleurs centres de formation. Il y a du vent, de la pluie, des crêpes, une mouette voleuse, et quatre petits mots qui changent tout."
  },
  {
@@ -190,7 +190,7 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "des-yeux-pour-partir",
   "title": "Des yeux pour partir",
   "part": 3,
-  "pov": "BriBri",
+  "pov": "Kaydoudou",
   "summary": "La saison se termine, et avec elle la vie en France. Il faut annoncer le départ à Kenzo et à Lucas, jouer un dernier entraînement sous la moustache de Monsieur Lacombe, et trouver comment dire au revoir avec les yeux."
  },
  {
@@ -198,15 +198,15 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "le-taureau",
   "title": "Le taureau",
   "part": 4,
-  "pov": "BriBri",
-  "summary": "Les Ngassa s'installent dans un village catalan entre les vignes et la mer, et BriBri découvre à La Granja del Mar un drôle de jeu où l'on court après un ballon qu'on n'attrape jamais."
+  "pov": "Kaydoudou",
+  "summary": "Les Ngassa s'installent dans un village catalan entre les vignes et la mer, et Kaydoudou découvre à La Granja del Mar un drôle de jeu où l'on court après un ballon qu'on n'attrape jamais."
  },
  {
   "no": 26,
   "slug": "avi-ramon",
   "title": "Avi Ramon",
   "part": 4,
-  "pov": "Kaydoudou",
+  "pov": "BriBri",
   "summary": "Le dimanche, après la messe, la place de Vinyamar devient un terrain de rondo, et un vieil homme de soixante-dix-neuf ans y garde le ballon sans presque bouger."
  },
  {
@@ -214,31 +214,31 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "les-couloirs",
   "title": "Les couloirs",
   "part": 4,
-  "pov": "BriBri",
-  "summary": "Jordi découpe le terrain en cinq couloirs et colle BriBri contre la ligne de touche, loin du ballon, loin de tout, au bout du monde."
+  "pov": "Kaydoudou",
+  "summary": "Jordi découpe le terrain en cinq couloirs et colle Kaydoudou contre la ligne de touche, loin du ballon, loin de tout, au bout du monde."
  },
  {
   "no": 28,
   "slug": "le-troisieme-homme",
   "title": "Le troisième homme",
   "part": 4,
-  "pov": "Kaydoudou",
-  "summary": "Jordi fait de Kaydoudou son pivot et lui apprend une passe étrange, une petite passe qui ne fait pas marquer, mais sans laquelle personne ne marque."
+  "pov": "BriBri",
+  "summary": "Jordi fait de BriBri son pivot et lui apprend une passe étrange, une petite passe qui ne fait pas marquer, mais sans laquelle personne ne marque."
  },
  {
   "no": 29,
   "slug": "la-mer-et-mami",
   "title": "La mer et Mami",
   "part": 4,
-  "pov": "BriBri",
-  "summary": "Un hiver de vent froid, une mauvaise nouvelle venue de Bafoussam, puis un après-midi de soleil sur la plage où BriBri donne enfin un nom à son dribble."
+  "pov": "Kaydoudou",
+  "summary": "Un hiver de vent froid, une mauvaise nouvelle venue de Bafoussam, puis un après-midi de soleil sur la plage où Kaydoudou donne enfin un nom à son dribble."
  },
  {
   "no": 30,
   "slug": "les-trois-superiorites",
   "title": "Les trois supériorités",
   "part": 4,
-  "pov": "Kaydoudou",
+  "pov": "BriBri",
   "summary": "Avec des oranges et des citrons, Jordi explique les trois façons d'être plus fort que l'adversaire, juste avant le match le plus rugueux de la saison."
  },
  {
@@ -246,7 +246,7 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "l-atlas",
   "title": "L'Atlas",
   "part": 4,
-  "pov": "BriBri",
+  "pov": "Kaydoudou",
   "summary": "Au Torneig de la Costa, les frères affrontent en demi-finale une académie venue du Maroc, et découvrent qu'on peut jouer contre sa propre famille."
  },
  {
@@ -254,7 +254,7 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "la-carte-du-njangi",
   "title": "La carte du Njangi",
   "part": 4,
-  "pov": "Kaydoudou",
+  "pov": "BriBri",
   "summary": "Finale du Torneig de la Costa contre les invincibles de Madrid, devant tout le village de Vinyamar, et une serviette en papier pour tout plan."
  },
  {
@@ -262,31 +262,31 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "intensity-is-a-choice",
   "title": "Intensity is a choice",
   "part": 5,
-  "pov": "Kaydoudou",
-  "summary": "Londres, sa pluie fine, ses bus rouges et une maison étroite à Lewisham. À l'essai de Kingsbridge Albion, Kaydoudou découvre un football où personne n'attend personne."
+  "pov": "BriBri",
+  "summary": "Londres, sa pluie fine, ses bus rouges et une maison étroite à Lewisham. À l'essai de Kingsbridge Albion, BriBri découvre un football où personne n'attend personne."
  },
  {
   "no": 34,
   "slug": "jouer-avant-le-contact",
   "title": "Jouer avant le contact",
   "part": 5,
-  "pov": "BriBri",
-  "summary": "En Angleterre, BriBri passe plus de temps par terre que debout. Entre un gardien farceur, un rival qui court partout et un entraîneur qui parle de bus, il va devoir apprendre à faire disparaître les duels."
+  "pov": "Kaydoudou",
+  "summary": "En Angleterre, Kaydoudou passe plus de temps par terre que debout. Entre un gardien farceur, un rival qui court partout et un entraîneur qui parle de bus, il va devoir apprendre à faire disparaître les duels."
  },
  {
   "no": 35,
   "slug": "le-pressing",
   "title": "Le pressing",
   "part": 5,
-  "pov": "Kaydoudou",
-  "summary": "Coach Okafor dessine un lion qui ressemble à un mouton et enseigne l'art de reprendre le ballon tous ensemble. Mais pour presser à deux, Kaydoudou et Jaden vont d'abord devoir se supporter."
+  "pov": "BriBri",
+  "summary": "Coach Okafor dessine un lion qui ressemble à un mouton et enseigne l'art de reprendre le ballon tous ensemble. Mais pour presser à deux, BriBri et Jaden vont d'abord devoir se supporter."
  },
  {
   "no": 36,
   "slug": "le-njangi-du-vestiaire",
   "title": "Le njangi du vestiaire",
   "part": 5,
-  "pov": "BriBri",
+  "pov": "Kaydoudou",
   "summary": "L'hiver tombe sur Londres, les défaites s'empilent et le vestiaire de Kingsbridge se fissure. Le clown de l'équipe va devoir parler sérieusement, avec une boîte à chaussures et une histoire venue de Bafoussam."
  },
  {
@@ -294,23 +294,23 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "monsieur-ateba",
   "title": "Monsieur Atéba",
   "part": 5,
-  "pov": "Kaydoudou",
-  "summary": "Un homme au bonnet vert, rouge et jaune vient regarder les matchs de Kingsbridge. Ce qu'il cherche pourrait changer la vie des frères, et c'est justement ce qui fait trembler Kaydoudou."
+  "pov": "BriBri",
+  "summary": "Un homme au bonnet vert, rouge et jaune vient regarder les matchs de Kingsbridge. Ce qu'il cherche pourrait changer la vie des frères, et c'est justement ce qui fait trembler BriBri."
  },
  {
   "no": 38,
   "slug": "le-souffle",
   "title": "Le souffle",
   "part": 5,
-  "pov": "BriBri",
-  "summary": "Une demi-finale sous la neige de mars, contre des Allemands qui ne fatiguent jamais. Quand les jambes de BriBri prennent feu, il découvre que le ballon peut respirer à sa place."
+  "pov": "Kaydoudou",
+  "summary": "Une demi-finale sous la neige de mars, contre des Allemands qui ne fatiguent jamais. Quand les jambes de Kaydoudou prennent feu, il découvre que le ballon peut respirer à sa place."
  },
  {
   "no": 39,
   "slug": "l-avion-de-mami",
   "title": "L'avion de Mami",
   "part": 5,
-  "pov": "Kaydoudou",
+  "pov": "BriBri",
   "summary": "À soixante et onze ans, Mami Nyanga prend l'avion pour la première fois de sa vie et débarque à Londres avec une canne, un manteau trop grand et un sac plein de ndolé congelé. La veille de la finale, il reste une page à écrire dans le carnet."
  },
  {
@@ -318,7 +318,7 @@ export const TOME1_TOC: TocEntry[] = [
   "slug": "le-but-du-njangi",
   "title": "Le but du Njangi",
   "part": 5,
-  "pov": "BriBri, puis Kaydoudou",
+  "pov": "Kaydoudou, puis BriBri",
   "summary": "La finale de la Coupe des Académies, dans un vrai stade, contre les Néerlandais invaincus du FC Amstelland. Mami est dans la tribune, Monsieur Atéba aussi, et les frères ont fait une promesse."
  }
 ]

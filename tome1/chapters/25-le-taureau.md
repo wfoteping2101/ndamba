@@ -3,14 +3,14 @@ numero: 25
 slug: le-taureau
 titre: Le taureau
 partie: 4
-pov: BriBri
-resume: Les Ngassa s'installent dans un village catalan entre les vignes et la mer, et BriBri découvre à La Granja del Mar un drôle de jeu où l'on court après un ballon qu'on n'attrape jamais.
-illustration: Plan moyen, fin d'après-midi de septembre, sur un terrain d'herbe bordé de vignes chargées de raisins violets, avec une rangée de pins et un éclat de mer bleue au fond. Au centre d'un carré de plots orange, BriBri, petite afro, une chaussette rouge et une chaussette jaune, se jette en avant, les deux index pointés sur la tête comme des cornes, la bouche ouverte de rire. Dans le cercle, Laia Ferrer, chignon brun et taches de rousseur, vient de lui glisser le ballon entre les jambes. Derrière elle, Kaydoudou, maillot vert délavé numéro 8, fine raie à gauche, cache son sourire. Lumière dorée et rasante.
+pov: Kaydoudou
+resume: Les Ngassa s'installent dans un village catalan entre les vignes et la mer, et Kaydoudou découvre à La Granja del Mar un drôle de jeu où l'on court après un ballon qu'on n'attrape jamais.
+illustration: Plan moyen, fin d'après-midi de septembre, sur un terrain d'herbe bordé de vignes chargées de raisins violets, avec une rangée de pins et un éclat de mer bleue au fond. Au centre d'un carré de plots orange, Kaydoudou, petite afro, une chaussette rouge et une chaussette jaune, se jette en avant, les deux index pointés sur la tête comme des cornes, la bouche ouverte de rire. Dans le cercle, Laia Ferrer, chignon brun et taches de rousseur, vient de lui glisser le ballon entre les jambes. Derrière elle, BriBri, maillot vert délavé numéro 8, fine raie à gauche, cache son sourire. Lumière dorée et rasante.
 ---
 
-« Kayd. Les arbres sont en panne. »
+« Bri. Les arbres sont en panne. »
 
-Papa vient de couper le moteur au bout d'une rue étroite qui sent le raisin écrasé. BriBri pose un pied sur le trottoir brûlant, et il ne bouge plus.
+Papa vient de couper le moteur au bout d'une rue étroite qui sent le raisin écrasé. Kaydoudou pose un pied sur le trottoir brûlant, et il ne bouge plus.
 
 Zzzzzzzz.
 
@@ -18,7 +18,7 @@ Dans les pins, dans les buissons secs, dans les deux grands arbres du coin de la
 
 « Ce sont des cigales, dit Maman en riant. Des insectes. Elles chantent quand il fait chaud. »
 
-« Elles chantent ? proteste BriBri. Elles font le bruit des beignets dans l'huile de Madame Ekotto ! »
+« Elles chantent ? proteste Kaydoudou. Elles font le bruit des beignets dans l'huile de Madame Ekotto ! »
 
 Il les cherche sur les troncs, sous les feuilles, dans les fentes des murs.
 
@@ -28,17 +28,17 @@ Pas une seule.
 
 « Invisibles et bruyantes », annonce-t-il le soir.
 
-« Comme toi la nuit, dit Kaydoudou. On ne te voit pas, mais on t'entend ronfler. »
+« Comme toi la nuit, dit BriBri. On ne te voit pas, mais on t'entend ronfler. »
 
 * * *
 
 « Bienvenue à Vinyamar ! dit Papa en ouvrant la porte de la maison. Une colline, des vignes, la mer. Et Tarragone à une demi-heure. »
 
-La maison des Ngassa est étroite et haute, avec un escalier qui tourne sur lui-même comme une coquille d'escargot. Tout en haut, il y a un toit plat, le « terrat ». Le premier soir, BriBri y monte le ballon de Mami et le pose sur le muret, face à l'eau.
+La maison des Ngassa est étroite et haute, avec un escalier qui tourne sur lui-même comme une coquille d'escargot. Tout en haut, il y a un toit plat, le « terrat ». Le premier soir, Kaydoudou y monte le ballon de Mami et le pose sur le muret, face à l'eau.
 
 « Regarde, ballon. Ça, c'est la Méditerranée. Tu n'étais jamais venu ici. Là, ce sont les vignes. C'est la saison des vendanges, alors il y a des petits tracteurs pleins de raisins violets, et des guêpes qui les suivent en dansant. Les rues montent et descendent comme des toboggans. Et au bout de chaque ruelle, il y a un morceau de mer. Et tout sent la confiture. »
 
-Kaydoudou passe la tête par la trappe.
+BriBri passe la tête par la trappe.
 
 « Tu parles à un ballon ? »
 
@@ -52,35 +52,35 @@ Maman colle des petits papiers jaunes partout dans la cuisine.
 
 « Pour l'hôpital de Tarragone, il me faut le catalan. La nevera, le frigo. La finestra, la fenêtre. La porta, la porte. »
 
-Le deuxième matin, BriBri colle un papier jaune dans le dos de son frère : *el germà pesat*. Le frère pénible. Kaydoudou le porte jusqu'à la boulangerie sans rien remarquer.
+Le deuxième matin, Kaydoudou colle un papier jaune dans le dos de son frère : *el germà pesat*. Le frère pénible. BriBri le porte jusqu'à la boulangerie sans rien remarquer.
 
 « Bon dia ! » dit la boulangère.
 
 « ¡Buenos días ! » dit la vieille dame derrière eux.
 
-« Deux langues, chuchote Kaydoudou. Le catalan et l'espagnol. Et ils changent au milieu des phrases, comme un ailier qui change de pied. »
+« Deux langues, chuchote BriBri. Le catalan et l'espagnol. Et ils changent au milieu des phrases, comme un ailier qui change de pied. »
 
-*Génial*, pense BriBri. *Moi, j'en fais trois.*
+*Génial*, pense Kaydoudou. *Moi, j'en fais trois.*
 
 « Bon dia, mola ! ¿Qué tal ? Un pain, s'il vous plaît. Gràcies, gracias, merci ! »
 
-La boulangère rit si fort qu'elle lui offre une petite brioche couverte de sucre et de pignons. Puis elle lit à voix haute le papier jaune, dans le dos de Kaydoudou.
+La boulangère rit si fort qu'elle lui offre une petite brioche couverte de sucre et de pignons. Puis elle lit à voix haute le papier jaune, dans le dos de BriBri.
 
-« Qu'est-ce qu'elle a dit ? » demande Kaydoudou.
+« Qu'est-ce qu'elle a dit ? » demande BriBri.
 
-« Elle a dit que tu es très gentil », répond BriBri, l'air innocent.
+« Elle a dit que tu es très gentil », répond Kaydoudou, l'air innocent.
 
-« Tu as vu ? dit BriBri sur le chemin du retour, la bouche pleine. Trois langues, trois fois plus de gâteaux. »
+« Tu as vu ? dit Kaydoudou sur le chemin du retour, la bouche pleine. Trois langues, trois fois plus de gâteaux. »
 
-« Ce que tu parles, ce n'est même pas une langue, dit Kaydoudou. C'est du camfranglais avec du catalan et de l'espagnol dedans. Du camfrancatañol. »
+« Ce que tu parles, ce n'est même pas une langue, dit BriBri. C'est du camfranglais avec du catalan et de l'espagnol dedans. Du camfrancatañol. »
 
-BriBri adopte le mot sur-le-champ. Le soir même, il l'enseigne à Mireille par message vocal.
+Kaydoudou adopte le mot sur-le-champ. Le soir même, il l'enseigne à Mireille par message vocal.
 
 « Mireille ! Nouveau mot ! Camfrancatañol ! Répète après moi ! »
 
 Sur la place du village, il y a une fontaine, une église au clocher carré, la terrasse d'un café et huit platanes immenses. Leur écorce tombe par plaques, et les troncs ressemblent à des cartes du monde.
 
-« Regarde, Kayd ! Le Cameroun ! »
+« Regarde, Bri ! Le Cameroun ! »
 
 « C'est de la mousse. »
 
@@ -88,19 +88,19 @@ Sur la place du village, il y a une fontaine, une église au clocher carré, la 
 
 * * *
 
-La Granja del Mar, le centre de formation du Club Esportiu Costa Daurada, est une ancienne ferme au bout d'un chemin de terre, entre les vignes. BriBri saute de la voiture et court partout.
+La Granja del Mar, le centre de formation du Club Esportiu Costa Daurada, est une ancienne ferme au bout d'un chemin de terre, entre les vignes. Kaydoudou saute de la voiture et court partout.
 
-« Kayd ! Une grande maison en pierre ! Un figuier ! Un vieux puits avec une grille ! Et là, derrière... un terrain en herbe ! Deux synthétiques ! Et des pins ! Et derrière les pins... » Il s'arrête, la bouche ouverte. « On entend la mer. Depuis le rond central, on entend la mer. Ils ont mis des terrains de foot dans un jardin ! »
+« Bri ! Une grande maison en pierre ! Un figuier ! Un vieux puits avec une grille ! Et là, derrière... un terrain en herbe ! Deux synthétiques ! Et des pins ! Et derrière les pins... » Il s'arrête, la bouche ouverte. « On entend la mer. Depuis le rond central, on entend la mer. Ils ont mis des terrains de foot dans un jardin ! »
 
 L'entraîneur s'appelle Jordi Puig. Les garçons l'ont rencontré la veille, au restaurant de la place, avec Papa. Un homme mince, une barbe poivre et sel, un crayon de menuisier derrière l'oreille. Il parle si doucement qu'il faut se pencher pour l'entendre. Pendant tout le repas, il a dessiné des triangles sur la nappe en papier.
 
-« Pourquoi des triangles ? » a demandé BriBri.
+« Pourquoi des triangles ? » a demandé Kaydoudou.
 
 « Parce que le football, c'est des triangles. Tu verras. »
 
 Quand la nappe a été pleine, la serveuse en a apporté une neuve sans rien dire.
 
-« Vous êtes architecte ? » a demandé BriBri.
+« Vous êtes architecte ? » a demandé Kaydoudou.
 
 « No. Soc entrenador. » Puis, dans un français de vacances qui chante un peu : « Entraîneur. C'est pire. »
 
@@ -116,7 +116,7 @@ Elle roule les r comme des cailloux dans un torrent. Elle montre un grand garço
 
 « Lui, c'est Nil Soler. Défenseur central. Il ne rit jamais, et ses passes, ce sont des lasers. Bon. Le rondo, c'est simple. Quatre dehors, un dedans. Le cercle se passe le ballon en une touche, deux au maximum. Celui du milieu doit le prendre. On l'appelle *el toro*. Le taureau. »
 
-La main de BriBri jaillit avant qu'il ait réfléchi.
+La main de Kaydoudou jaillit avant qu'il ait réfléchi.
 
 « Moi ! Moi, le taureau ! »
 
@@ -134,7 +134,7 @@ Le ballon part.
 
 Tic.
 
-BriBri fonce.
+Kaydoudou fonce.
 
 Tac.
 
@@ -146,9 +146,9 @@ Il fait demi-tour. Le ballon repart dans son dos.
 
 « Olé ! » crie Laia.
 
-Alors, à chaque passe, tout le cercle crie « Olé ! », et BriBri devient une toupie qu'on fouette à coups d'olés. Il court vers le ballon : il n'y est plus. Il devine : il devine faux. Il plonge, il glisse, il se relève couvert d'herbe.
+Alors, à chaque passe, tout le cercle crie « Olé ! », et Kaydoudou devient une toupie qu'on fouette à coups d'olés. Il court vers le ballon : il n'y est plus. Il devine : il devine faux. Il plonge, il glisse, il se relève couvert d'herbe.
 
-« Courage, BriBri ! » lance Kaydoudou depuis le cercle.
+« Courage, Kaydoudou ! » lance BriBri depuis le cercle.
 
 « Tais-toi et rate une passe ! »
 
@@ -156,13 +156,13 @@ Nil compte les passes à voix basse, sans sourire.
 
 « Deu... vint... trenta... »
 
-À la trente-deuxième passe, BriBri n'en peut plus. Il remet ses index sur sa tête, baisse les cornes, et il hurle :
+À la trente-deuxième passe, Kaydoudou n'en peut plus. Il remet ses index sur sa tête, baisse les cornes, et il hurle :
 
 « Attention, Catalogne ! LA CHARGE DU TAUREAU ! »
 
 Il fonce droit sur Laia en riant comme un fou.
 
-Laia ne bouge presque pas. Elle fait rouler le ballon entre les jambes du taureau. Tranquille. Derrière elle, dans son vieux maillot vert délavé numéro 8, Kaydoudou cache son sourire dans sa main.
+Laia ne bouge presque pas. Elle fait rouler le ballon entre les jambes du taureau. Tranquille. Derrière elle, dans son vieux maillot vert délavé numéro 8, BriBri cache son sourire dans sa main.
 
 « Un petit pont ? À MOI ? Moi qui en ai fait un à Tyler Brooks devant tout le dôme de Potomac Valley ? »
 
@@ -176,21 +176,21 @@ Nil lui tend la main pour le relever.
 
 * * *
 
-Dans le cercle, Kaydoudou joue comme il joue toujours. Proprement. Il reçoit, il contrôle, il regarde, il passe. Deux touches, bien appliquées.
+Dans le cercle, BriBri joue comme il joue toujours. Proprement. Il reçoit, il contrôle, il regarde, il passe. Deux touches, bien appliquées.
 
-« Massa temps, Kaydoudou, murmure Jordi. Trop de temps. »
+« Massa temps, BriBri, murmure Jordi. Trop de temps. »
 
-Kaydoudou fronce les sourcils, veut aller plus vite, hésite une fraction de seconde. BriBri n'a plus rien à perdre. Il se jette dans ses pieds. Le ballon roule hors du carré.
+BriBri fronce les sourcils, veut aller plus vite, hésite une fraction de seconde. Kaydoudou n'a plus rien à perdre. Il se jette dans ses pieds. Le ballon roule hors du carré.
 
-Le seul ballon que BriBri récupère de toute la séance, il le prend à son propre frère. Il fait la danse de Roger Milla autour d'un plot.
+Le seul ballon que Kaydoudou récupère de toute la séance, il le prend à son propre frère. Il fait la danse de Roger Milla autour d'un plot.
 
-« Pardon, Kayd. Enfin, non. Pas pardon du tout. »
+« Pardon, Bri. Enfin, non. Pas pardon du tout. »
 
-Kaydoudou entre au milieu avec la tête d'un roi qu'on vient de chasser de son trône.
+BriBri entre au milieu avec la tête d'un roi qu'on vient de chasser de son trône.
 
-« Ce n'est pas fini, BriBri. »
+« Ce n'est pas fini, Kaydoudou. »
 
-Mais dans le cercle, BriBri découvre un autre problème. Personne ne lui passe le ballon.
+Mais dans le cercle, Kaydoudou découvre un autre problème. Personne ne lui passe le ballon.
 
 « Ici ! Je suis là ! Hé ! Je suis là, je vous dis ! »
 
@@ -200,17 +200,17 @@ Jordi vient se placer derrière lui, sans bruit.
 
 « Si le taureau est entre toi et le ballon, tu n'existes pas », traduit Laia.
 
-BriBri ouvre grand la bouche. Tonton Fokou a dit presque la même chose, deux ans plus tôt, dans la boue de Bonamoussadi.
+Kaydoudou ouvre grand la bouche. Tonton Fokou a dit presque la même chose, deux ans plus tôt, dans la boue de Bonamoussadi.
 
 *Les entraîneurs du monde entier s'écrivent des lettres en cachette, ou quoi ?*
 
-Son frère est au milieu, juste entre lui et le ballon. BriBri est caché dans son ombre. Il fait deux pas de côté.
+Son frère est au milieu, juste entre lui et le ballon. Kaydoudou est caché dans son ombre. Il fait deux pas de côté.
 
 Le ballon arrive aussitôt dans ses pieds.
 
 « Tu existes ! » lui crie Laia.
 
-« J'existe ! » hurle BriBri, et il remet le ballon en une touche.
+« J'existe ! » hurle Kaydoudou, et il remet le ballon en une touche.
 
 Ensuite, Jordi passe au cinq contre deux et met les deux frères au milieu, ensemble. Une catastrophe magnifique. Quand ils attaquent, les frères se comprennent sans un mot. Mais quand ils défendent, ils courent vers le même ballon et se rentrent dedans comme deux chèvres têtues.
 
@@ -222,7 +222,7 @@ Bonk.
 
 La troisième fois qu'ils se retrouvent par terre, l'un sur l'autre, même Nil sourit.
 
-« C'est ton côté », souffle BriBri sous son frère.
+« C'est ton côté », souffle Kaydoudou sous son frère.
 
 « Non, c'est le tien. »
 
@@ -234,7 +234,7 @@ La troisième fois qu'ils se retrouvent par terre, l'un sur l'autre, même Nil s
 
 « El rondo no és un joc. És una escola. Tot el futbol és aquí dins. » Il cherche ses mots français. « Le rondo, ce n'est pas un jeu. C'est une école. Tout le football est dedans. »
 
-BriBri est encore assis par terre, de l'herbe dans l'afro, la chaussette rouge tombée sur la cheville droite, la jaune remontée jusqu'au genou. Il lève la main, comme en classe.
+Kaydoudou est encore assis par terre, de l'herbe dans l'afro, la chaussette rouge tombée sur la cheville droite, la jaune remontée jusqu'au genou. Il lève la main, comme en classe.
 
 « Alors moi, je vais devenir le meilleur élève de l'école. Le meilleur du rondo. Un jour, c'est moi qui ferai courir le taureau. Je le jure sur ma chaussette rouge et sur ma chaussette jaune. »
 
@@ -244,7 +244,7 @@ Laia le regarde de haut en bas, avec son sourire en coin.
 
 « Les vieux ? »
 
-BriBri se tourne vers son frère. Kaydoudou hausse les épaules.
+Kaydoudou se tourne vers son frère. BriBri hausse les épaules.
 
 Dans les pins, les cigales invisibles rient de plus belle.
 
@@ -253,7 +253,7 @@ Dans les pins, les cigales invisibles rient de plus belle.
 > - Toujours offrir un angle au porteur : des triangles, jamais une ligne droite.
 > - Ne jamais rester caché derrière le taureau (Tonton Fokou le disait déjà dans la boue).
 > - La plus belle passe file entre les deux taureaux.
-> (BriBri : « Taureau, c'est le pire métier du monde. Mais je vais devenir le meilleur. »)
+> (Kaydoudou : « Taureau, c'est le pire métier du monde. Mais je vais devenir le meilleur. »)
 
 ```schema
 {

@@ -5,12 +5,14 @@ import { Link } from 'react-router-dom'
 import { Hash, Shirt } from 'lucide-react'
 import { useT } from '../../../i18n'
 import { useDocumentTitle } from '../../../lib/hooks'
+import { useSession } from '../../../lib/session'
 import { BRAND } from '../../../lib/config'
 import { fmtNjangi } from '../../../lib/njangi'
 import { daysBetween } from '../../../lib/util'
 import { Spinner } from '../../team/components/journey/bits'
 import { Greeting, type RotatingLine } from './Greeting'
 import { CreateTeamCard } from './bits'
+import { isPlayerRole } from './data'
 import { FORM_MAX, formBand, usePerformance, type PerfData } from './perf/data'
 import { CheckInCard } from './perf/CheckIn'
 import { LastMatchCard } from './perf/LastMatch'
@@ -31,19 +33,19 @@ export default function PerformanceHome() {
   return (
     <div>
       <PerfGreeting d={d} />
-      {!team && <CreateTeamCard compact className="mb-5" />}
+      {!team && <CreateTeamCard compact senior className="mb-5" />}
       {team && !d.me && <LinkCallout />}
 
       <div className="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3">
         <div className="min-w-0 lg:col-span-2"><WeekCard d={d} /></div>
         <NextMatchCard d={d} />
-        <CheckInCard d={d} compact />
-        <div className="min-w-0 lg:col-span-2"><LastMatchCard d={d} /></div>
+        <div className="min-w-0 lg:col-span-2"><CheckInCard d={d} /></div>
+        <LoadCard d={d} />
+        <div className="min-w-0 lg:col-span-3"><LastMatchCard d={d} /></div>
         <ObjectivesCard d={d} />
         <SeasonCard d={d} />
-        <LoadCard d={d} />
+        <PerfLinks items={['space', 'parcours', 'journal', 'code']} stack />
       </div>
-      <div className="mt-6"><PerfLinks items={['space', 'parcours', 'journal', 'code']} /></div>
     </div>
   )
 }
@@ -54,7 +56,7 @@ function PerfGreeting({ d }: { d: PerfData }) {
   const s = d.sessions.find((x) => x.date === d.today)
   const m = d.matches.find((x) => x.date === d.today)
   const lines: RotatingLine[] = [
-    m ? { label: t('perf.hero.matchDay'), text: t('perf.hero.matchLine', { opponent: m.opponent, time: m.time ?? '' }) }
+    m ? { label: t('perf.hero.matchDay'), text: m.time ? t('perf.hero.matchLine', { opponent: m.opponent, time: m.time }) : t('perf.hero.matchLineNoTime', { opponent: m.opponent }) }
       : s ? { label: s.md === 'youth' ? t('perf.hero.today') : t('perf.hero.todayMd', { md: t(`common:md.${s.md}`) }), text: s.title }
         : { label: t('perf.hero.today'), text: t('perf.week.restTitle') },
     { label: t('greeting.motto'), text: BRAND.motto[lang] },
@@ -92,12 +94,16 @@ function Mini({ label, value, sub }: { label: string; value: ReactNode; sub?: st
   )
 }
 
+/** The profile is not linked to a squad record: a player links himself; a staff member previews the space. */
 export function LinkCallout() {
   const { t } = useT('player')
+  const { profile } = useSession()
+  const staff = !isPlayerRole(profile?.role)
+  const k = staff ? 'perf.linkStaff' : 'perf.link'
   return (
     <div className="mb-5 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-sun-300 bg-sun-50 px-4 py-3">
-      <p className="min-w-0 flex-1 text-sm text-ink-soft"><span className="font-semibold text-ink">{t('perf.link.title')}</span> {t('perf.link.body')}</p>
-      <Link to="/app/joueur/parcours" className="btn-dark btn-sm min-h-[44px]">{t('perf.link.cta')}</Link>
+      <p className="min-w-0 flex-1 basis-64 text-sm text-ink-soft"><span className="font-semibold text-ink">{t(`${k}.title`)}</span> {t(`${k}.body`)}</p>
+      <Link to="/app/joueur/parcours" className="btn-dark btn-sm min-h-[44px]">{t(`${k}.cta`)}</Link>
     </div>
   )
 }
