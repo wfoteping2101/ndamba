@@ -355,7 +355,7 @@
   "welcome": {
     "coachTeam": "Bienvenue {{name}}. Votre équipe {{team}} est créée et votre espace {{app}} est prêt. Je peux préparer votre première semaine, organiser un match ou vous proposer des exercices. Par quoi commence-t-on ?",
     "coach": "Bienvenue {{name}}. Votre espace {{app}} est prêt. Pour commencer, je peux créer votre équipe, vous proposer des exercices ou ouvrir « {{methode}} ».",
-    "player": "Bienvenue {{name}}. Votre espace {{app}} est prêt. Commencez par la leçon 1 de {{series}}, avec {{heroes}}, ou demandez-moi des exercices pour progresser.",
+    "player": "Bienvenue {{name}}. Votre espace {{app}} est prêt. Je peux vous proposer des exercices pour progresser, suivre votre parcours match après match, ou ouvrir les défis du jour.",
     "parent": "Bienvenue {{name}}. Je peux vous aider à accompagner votre enfant : les Leçons du Ballon de {{series}}, des exercices simples, et le roman « {{tome1}} » avec {{heroes}}.",
     "demo": "Bienvenue dans la démo, {{name}}. Vous entraînez {{team}} : {{count}} joueurs, une semaine de séances, un match déjà analysé et un match à venir samedi. Demandez-moi ce que vous voulez, par exemple d'analyser le dernier match ou de rédiger la convocation."
   },
@@ -456,7 +456,7 @@
   "ob": {
     "docTitle": "Bienvenue",
     "chatLabel": "Conversation avec Mola",
-    "demo": "Essayer la démo",
+    "demo": "Démo",
     "hello": "Bonjour, je suis Mola, l'agent de {{app}}. Je vais créer votre espace avec vous, en quelques questions.",
     "langOk": "Parfait, on continue en français.",
     "ack": "Noté : {{list}}.",
@@ -469,9 +469,9 @@
       "nameAgain": "Et comment vous appelez-vous ?",
       "role": "Ravi de vous rencontrer, {{name}}. Dans le football, vous êtes :",
       "team": "Comment s'appelle votre équipe ?",
-      "age": "Dans quelle catégorie ?",
-      "age_coach": "Quelle catégorie entraînez-vous ?",
-      "age_player": "Dans quelle catégorie jouez-vous ? Votre âge suffit.",
+      "age": "Dans quelle catégorie ? Des U8 aux seniors, amateurs ou professionnels.",
+      "age_coach": "Quelle catégorie entraînez-vous ? Des U8 aux seniors, amateurs ou professionnels : « U13 », « seniors » ou « Ligue 1 » suffisent.",
+      "age_player": "Dans quelle catégorie jouez-vous ? Votre âge suffit, ou dites-moi si vous êtes senior ou professionnel.",
       "childAge": "Quel âge a votre enfant, ou dans quelle catégorie joue-t-il ?",
       "format": "Vous jouez à combien ?",
       "players": "Vous pouvez coller la liste de vos joueurs ici, un par ligne, avec le numéro si vous l'avez. Sinon, on le fera plus tard.",
@@ -565,6 +565,21 @@
       "open": "Ouvrir l'application",
       "restart": "Recommencer avec un nouveau profil",
       "note": "Recommencer remplace votre profil à la fin de la conversation. Vos séances et vos matchs restent."
+    },
+    "demoMenu": "Choisir une démo",
+    "demos": {
+      "pro": {
+        "title": "Club pro : Étoile de la Côte",
+        "body": "Seniors, Ligue 1, Douala. 22 joueurs, un match analysé."
+      },
+      "youth": {
+        "title": "Académie : Lionceaux U13",
+        "body": "L'équipe de Kaydoudou et BriBri. 15 joueurs, un match analysé."
+      }
+    },
+    "level": {
+      "Seniors": "Seniors",
+      "Pro": "Seniors pro"
     }
   }
 }

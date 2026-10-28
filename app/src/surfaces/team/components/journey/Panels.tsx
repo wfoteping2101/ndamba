@@ -45,7 +45,7 @@ export function ObjectivesCard({ data, stage, viewer, onAdd, onOpen }: { data: J
                     <span className="rounded-full bg-forest-50 px-2 py-0.5 text-[11.5px] font-semibold text-forest-700">{o.skill ? t(`common:skills.${o.skill}`) : t('objectives.subLink', { name: t(`analysis:sub.${o.sub}.name`) })}</span>
                     {o.by === 'player' && <span className="rounded-full bg-sand px-2 py-0.5 text-[11.5px] font-semibold text-ink-soft">{viewer === 'player' ? t('objectives.byMe') : t('objectives.byPlayer')}</span>}
                     <span className={cx('ml-auto text-[11.5px] font-semibold', left < 0 ? 'text-sun-700' : 'text-ink-muted')}>
-                      {left < 0 ? t('objectives.reviewDue') : t('objectives.reviewIn', { count: Math.max(0, left), date: fmtDate(o.review, lang, { day: 'numeric', month: 'short' }) })}
+                      {left < 0 ? t('objectives.reviewDue') : left === 0 ? t('objectives.reviewToday') : t('objectives.reviewIn', { count: left, date: fmtDate(o.review, lang, { day: 'numeric', month: 'short' }) })}
                     </span>
                   </span>
                   <span className="mt-1.5 block font-display text-[16px] font-semibold leading-snug text-ink">{o.title}</span>

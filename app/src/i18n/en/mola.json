@@ -355,7 +355,7 @@
   "welcome": {
     "coachTeam": "Welcome {{name}}. Your team {{team}} is created and your {{app}} space is ready. I can plan your first week, set up a match or suggest drills. Where shall we start?",
     "coach": "Welcome {{name}}. Your {{app}} space is ready. To begin, I can create your team, suggest drills or open “{{methode}}”.",
-    "player": "Welcome {{name}}. Your {{app}} space is ready. Start with lesson 1 of {{series}}, with {{heroes}}, or ask me for drills to improve.",
+    "player": "Welcome {{name}}. Your {{app}} space is ready. I can suggest drills to improve, follow your journey match after match, or open today's challenges.",
     "parent": "Welcome {{name}}. I can help you support your child: the Leçons du Ballon of {{series}}, simple drills, and the novel “{{tome1}}” with {{heroes}}.",
     "demo": "Welcome to the demo, {{name}}. You coach {{team}}: {{count}} players, a week of sessions, a match already analysed and a match coming up on Saturday. Ask me anything, for example to analyse the last match or to draft the call-up."
   },
@@ -456,7 +456,7 @@
   "ob": {
     "docTitle": "Welcome",
     "chatLabel": "Conversation with Mola",
-    "demo": "Try the demo",
+    "demo": "Demo",
     "hello": "Hello, I'm Mola, {{app}}'s agent. I'll set up your space with you in a few questions.",
     "langOk": "Great, let's continue in English.",
     "ack": "Got it: {{list}}.",
@@ -469,9 +469,9 @@
       "nameAgain": "And what's your name?",
       "role": "Nice to meet you, {{name}}. In football, you are:",
       "team": "What is your team called?",
-      "age": "Which age group?",
-      "age_coach": "Which age group do you coach?",
-      "age_player": "Which age group do you play in? Your age is enough.",
+      "age": "Which age group? From U8 to seniors, amateur or professional.",
+      "age_coach": "Which age group do you coach? From U8 to seniors, amateur or professional: “U13”, “seniors” or “top flight” is enough.",
+      "age_player": "Which age group do you play in? Your age is enough, or tell me if you are a senior or a professional.",
       "childAge": "How old is your child, or which age group do they play in?",
       "format": "How many a side do you play?",
       "players": "You can paste your list of players here, one per line, with the shirt number if you have it. Or we'll do it later.",
@@ -565,6 +565,21 @@
       "open": "Open the app",
       "restart": "Start again with a new profile",
       "note": "Starting again replaces your profile at the end of the conversation. Your sessions and matches stay."
+    },
+    "demoMenu": "Choose a demo",
+    "demos": {
+      "pro": {
+        "title": "Pro club: Étoile de la Côte",
+        "body": "Seniors, Ligue 1, Douala. 22 players, one match analysed."
+      },
+      "youth": {
+        "title": "Academy: Lionceaux U13",
+        "body": "Kaydoudou and BriBri's team. 15 players, one match analysed."
+      }
+    },
+    "level": {
+      "Seniors": "Seniors",
+      "Pro": "Pro seniors"
     }
   }
 }

@@ -6,7 +6,10 @@
     "milestone": "Jalon",
     "myObjective": "Me fixer un objectif"
   },
-  "tone": { "plus": "Positif", "work": "À travailler" },
+  "tone": {
+    "plus": "Positif",
+    "work": "À travailler"
+  },
   "page": {
     "docTitle": "Parcours de {{name}}",
     "docTitleBare": "Parcours",
@@ -67,7 +70,12 @@
   "ribbon": {
     "aria": "Saison en un coup d'œil : {{sessions}} séances suivies sur {{marked}}, {{matches}} matchs joués, {{obs}} observations, {{evals}} évaluations.",
     "today": "Aujourd'hui",
-    "lane": { "top": "Jalons", "match": "Matchs", "session": "Séances", "obs": "Observations" },
+    "lane": {
+      "top": "Jalons",
+      "match": "Matchs",
+      "session": "Séances",
+      "obs": "Observations"
+    },
     "key": {
       "eval": "Évaluation",
       "milestone": "Jalon",
@@ -99,7 +107,15 @@
     "hintCoach": "Tout ce qui s'est passé, du plus récent au plus ancien : évaluations, observations, matchs, séances, objectifs et jalons.",
     "hintPlayer": "Ton histoire de la saison, du plus récent au plus ancien.",
     "filter": "Filtrer le fil",
-    "filters": { "all": "Tout", "milestone": "Jalons", "evaluation": "Évaluations", "observation": "Observations", "match": "Matchs", "week": "Séances", "objective": "Objectifs" },
+    "filters": {
+      "all": "Tout",
+      "milestone": "Jalons",
+      "evaluation": "Évaluations",
+      "observation": "Observations",
+      "match": "Matchs",
+      "week": "Séances",
+      "objective": "Objectifs"
+    },
     "emptyCoach": "Rien encore sur cette saison. Observez une séance, faites l'appel ou évaluez les compétences : le fil se remplit tout seul.",
     "emptyPlayer": "Rien encore sur cette saison. Ton fil se remplit avec tes séances, tes matchs et les observations de ton coach.",
     "more_one": "Afficher {{count}} élément de plus",
@@ -172,7 +188,7 @@
     "reviewIn_other": "Bilan dans {{count}} jours ({{date}})",
     "levelNow": "Niveau {{n}} aujourd'hui",
     "levelMoved": "Niveau {{from}} au départ, {{to}} aujourd'hui",
-    "seen": "Vu en jeu : {{plus}} positif, {{work}} à travailler",
+    "seen": "Observations positives : {{plus}}, à travailler : {{work}}",
     "subActions_one": "{{count}} action liée en {{matches}} match depuis le début",
     "subActions_other": "{{count}} actions liées en {{matches}} matchs depuis le début",
     "subNoMatch": "Pas encore de match joué depuis le début du cycle",
@@ -227,7 +243,8 @@
     "reviewNote": "Ce que l'on retient",
     "reviewNotePh": "Ce qui a marché, ce qui reste à faire.",
     "save": "Enregistrer l'objectif",
-    "saveEdit": "Enregistrer"
+    "saveEdit": "Enregistrer",
+    "reviewToday": "Bilan aujourd'hui"
   },
   "milestones": {
     "title": "Les grands moments",
@@ -413,7 +430,13 @@
     "noPlayers": "Aucun joueur dans l'effectif.",
     "unmarked": "Non pointé",
     "statusFor": "Présence de {{name}}",
-    "status": { "present": "Présent", "late": "En retard", "absent": "Absent", "excused": "Excusé", "injured": "Blessé" },
+    "status": {
+      "present": "Présent",
+      "late": "En retard",
+      "absent": "Absent",
+      "excused": "Excusé",
+      "injured": "Blessé"
+    },
     "summary_one": "{{n}} présent sur {{count}}",
     "summary_other": "{{n}} présents sur {{count}}",
     "done": "Terminé",
