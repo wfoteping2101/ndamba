@@ -74,26 +74,25 @@ function Hero({ data, viewer, stage, summary, seasons, seasonId, onSeason, actio
   const age = ageOf(p, data.team)
   const s = summary
   const cells: { label: string; value: ReactNode; sub?: string }[] = [
-    { label: t('hero.sessions'), value: s.sessions.marked ? `${s.sessions.attended}/${s.sessions.marked}` : '·', sub: s.sessions.rate !== null ? t('hero.rate', { v: fmtPct(s.sessions.rate, lang) }) : t('hero.noRegister') },
+    { label: t('hero.sessions'), value: s.sessions.marked ? `${s.sessions.attended}/${s.sessions.marked}` : '-', sub: s.sessions.rate !== null ? t('hero.rate', { v: fmtPct(s.sessions.rate, lang) }) : t('hero.noRegister') },
     { label: t('hero.matches'), value: s.matches.played, sub: s.matches.played ? fmtMinutes(s.matches.minutes, lang) : s.matches.squad ? t('hero.inSquad', { count: s.matches.squad }) : undefined },
     ...(s.matches.goals > 0 || stage === 'adult' ? [{ label: t('hero.goals'), value: s.matches.goals, sub: s.matches.captain ? t('hero.captain', { count: s.matches.captain }) : undefined }] : []),
     { label: t('hero.observations'), value: s.observations.total, sub: s.observations.total ? t('hero.obsPlus', { count: s.observations.plus }) : undefined },
-    { label: t('hero.levels'), value: s.levels.gained ? `+${s.levels.gained}` : s.levels.changed ? '0' : '·', sub: s.levels.gained ? t('hero.levelsGained', { count: s.levels.gained }) : t('hero.levelsNone') },
-    { label: t('hero.objectives'), value: s.objectives.total ? `${s.objectives.achieved}/${s.objectives.total}` : '·', sub: s.objectives.active ? t('hero.objActive', { count: s.objectives.active }) : undefined },
+    { label: t('hero.levels'), value: s.levels.gained ? `+${s.levels.gained}` : s.levels.changed ? '0' : '-', sub: s.levels.gained ? t('hero.levelsGained', { count: s.levels.gained }) : t('hero.levelsNone') },
+    { label: t('hero.objectives'), value: s.objectives.total ? `${s.objectives.achieved}/${s.objectives.total}` : '-', sub: s.objectives.active ? t('hero.objActive', { count: s.objectives.active }) : undefined },
   ]
   const P = viewer === 'player' ? 'Player' : ''
   return (
-    <section className="relative mb-5 overflow-hidden rounded-[26px] bg-forest-600 text-cream shadow-card sm:mb-6">
-      <div className="pointer-events-none absolute -right-24 -top-28 h-72 w-72 rounded-full border-[28px] border-white/[0.035]" aria-hidden="true" />
+    <section className="relative mb-5 overflow-hidden rounded-[22px] bg-forest-600 text-cream sm:mb-6 [&_:focus-visible]:outline-cream">
       <div className="relative p-5 sm:p-7">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex min-w-0 items-center gap-4">
-            <span aria-hidden="true" className={cx('grid h-16 w-16 shrink-0 place-items-center rounded-2xl font-display text-3xl font-semibold tabular-nums', p.position === 'GK' ? 'bg-sun-500 text-night-900' : 'bg-cream text-forest-700', p.number === undefined && 'text-xl')}>
+            <span aria-hidden="true" className={cx('grid h-16 w-16 shrink-0 place-items-center rounded-[14px] font-display text-3xl tabular-nums', p.position === 'GK' ? 'bg-sun-500 text-night-900' : 'bg-cream text-forest-700', p.number === undefined && 'text-xl')}>
               {p.number ?? initials(p.name)}
             </span>
             <div className="min-w-0">
-              <div className="text-[13px] font-semibold text-sun-300">{viewer === 'player' ? t('hero.eyebrowPlayer') : t('hero.eyebrow')}</div>
-              <h1 className="font-display text-[28px] font-semibold leading-[1.08] sm:text-[38px]">{p.name}</h1>
+              <div className="text-[13px] font-semibold text-cream/70">{viewer === 'player' ? t('hero.eyebrowPlayer') : t('hero.eyebrow')}</div>
+              <h1 className="font-display text-[28px] leading-[1.06] sm:text-[38px]">{p.name}</h1>
               <div className="mt-2 flex flex-wrap gap-1.5 text-[12.5px] font-semibold">
                 <span className="rounded-full border border-white/20 bg-white/10 px-2.5 py-0.5">{t(`common:positions.${p.position}`)}</span>
                 {age !== null && p.birthYear && <span className="rounded-full border border-white/20 bg-white/10 px-2.5 py-0.5">{t('hero.age', { count: age })}</span>}

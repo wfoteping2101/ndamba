@@ -104,7 +104,7 @@ export function PlayerFormModal({ open, onClose, teamId, player, takenNumbers = 
           <Field label={t('playerForm.name')} htmlFor="pf-name" hint={error ? <span className="text-clay-600">{error}</span> : undefined}>
             <input id="pf-name" className="input" value={name} onChange={(e) => { setName(e.target.value); setError('') }} placeholder={t('playerForm.namePh')} autoFocus aria-invalid={!!error} />
           </Field>
-          <Field label={t('playerForm.number')} htmlFor="pf-num" hint={numClash ? <span className="text-terra-600">{t('playerForm.numberTaken', { n: number })}</span> : undefined}>
+          <Field label={t('playerForm.number')} htmlFor="pf-num" hint={numClash ? <span className="text-clay-600">{t('playerForm.numberTaken', { n: number })}</span> : undefined}>
             <input id="pf-num" className="input text-center tabular-nums" inputMode="numeric" pattern="[0-9]*" maxLength={2} value={number} onChange={(e) => setNumber(e.target.value.replace(/\D/g, ''))} />
           </Field>
         </div>
@@ -165,7 +165,7 @@ export function ImportModal({ open, onClose, teamId }: { open: boolean; onClose:
       <p className="mb-3 text-sm text-ink-muted">{t('import.body')}</p>
       <div className="grid gap-4 sm:grid-cols-2">
         <Field label={t('import.list')} htmlFor="imp-list">
-          <textarea id="imp-list" className="input min-h-[220px] font-mono text-[14px] leading-6" value={text} onChange={(e) => setText(e.target.value)} placeholder={t('import.placeholder')} autoFocus />
+          <textarea id="imp-list" className="input min-h-[220px] text-[14px] leading-6 tabular-nums" value={text} onChange={(e) => setText(e.target.value)} placeholder={t('import.placeholder')} autoFocus />
         </Field>
         <div>
           <Field label={t('import.defaultPosition')} hint={t('import.hint')}>
@@ -177,7 +177,7 @@ export function ImportModal({ open, onClose, teamId }: { open: boolean; onClose:
           <ul className="mt-2 max-h-[150px] space-y-1 overflow-y-auto pr-1">
             {rows.map((r, i) => (
               <li key={i} className="flex items-center gap-2 text-sm">
-                <span className={cx('flex h-6 w-7 shrink-0 items-center justify-center rounded-md text-[12px] font-semibold tabular-nums', r.number !== undefined ? 'bg-forest-600 text-cream' : 'bg-sand text-ink-faint')}>{r.number ?? '·'}</span>
+                <span className={cx('flex h-6 w-7 shrink-0 items-center justify-center rounded-md text-[12px] font-semibold tabular-nums', r.number !== undefined ? 'bg-forest-600 text-cream' : 'bg-sand text-ink-faint')}>{r.number ?? '-'}</span>
                 <span className="truncate text-ink-soft">{r.name}</span>
               </li>
             ))}

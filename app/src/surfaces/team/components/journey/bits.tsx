@@ -1,7 +1,7 @@
 // Small shared pieces of the Parcours (journey), the Observer and the attendance sheet.
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { Check } from 'lucide-react'
+import { Check, Plus, Target } from 'lucide-react'
 import { useLiveQuery } from '../../../../lib/hooks'
 import { loadJourney, type JourneyData, type Level } from '../../../../lib/journey'
 import type { ObsTone, SkillKey } from '../../../../lib/types'
@@ -28,9 +28,10 @@ export function useJourney(playerId: string | undefined) {
   return useLiveQuery(async () => (playerId ? loadJourney(playerId) : null), [playerId], undefined as JourneyData | null | undefined)
 }
 
-export const toneText: Record<ObsTone, string> = { plus: 'text-forest-700', work: 'text-terra-700' }
-export const toneChip: Record<ObsTone, string> = { plus: 'border-forest-100 bg-forest-50 text-forest-700', work: 'border-terra-100 bg-terra-50 text-terra-700' }
-export const toneSolid: Record<ObsTone, string> = { plus: 'border-forest-600 bg-forest-600 text-cream', work: 'border-terra-500 bg-terra-500 text-white' }
+// Two tones of an observation: a strength (pitch green) and something to work on (ink, calm, never alarming).
+export const toneText: Record<ObsTone, string> = { plus: 'text-forest-700', work: 'text-ink' }
+export const toneChip: Record<ObsTone, string> = { plus: 'border-forest-100 bg-forest-50 text-forest-700', work: 'border-ink/15 bg-sand text-ink' }
+export const toneSolid: Record<ObsTone, string> = { plus: 'border-forest-600 bg-forest-600 text-cream', work: 'border-ink bg-ink text-cream' }
 
 /** Four pips for a level of the chapter 25 grid. */
 export function LevelPips({ level, className, light = false }: { level?: number; className?: string; light?: boolean }) {
@@ -48,7 +49,7 @@ export function SkillChip({ skill, tone, className }: { skill: SkillKey; tone?: 
   const { t } = useT('journey')
   return (
     <span className={cx('inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11.5px] font-semibold', tone ? toneChip[tone] : 'border-line bg-paper text-ink-soft', className)}>
-      {tone && <span aria-hidden="true">{tone === 'plus' ? '+' : '·'}</span>}
+      {tone && (tone === 'plus' ? <Plus size={11} strokeWidth={3} aria-hidden="true" /> : <Target size={11} strokeWidth={2.5} aria-hidden="true" />)}
       {t(`team:skillsShort.${skill}`)}
       {tone && <span className="sr-only">{t(`tone.${tone}`)}</span>}
     </span>
@@ -60,7 +61,7 @@ export function RatingDots({ value, className }: { value: number; className?: st
   const { t } = useT('journey')
   return (
     <span className={cx('inline-flex items-center gap-[3px]', className)} role="img" aria-label={t('observe.ratingAria', { n: value })}>
-      {[1, 2, 3, 4, 5].map((i) => <span key={i} className={cx('h-1.5 w-1.5 rounded-full', i <= value ? 'bg-sun-500' : 'bg-line')} />)}
+      {[1, 2, 3, 4, 5].map((i) => <span key={i} className={cx('h-1.5 w-1.5 rounded-full', i <= value ? 'bg-forest-600' : 'bg-line')} />)}
     </span>
   )
 }
@@ -71,7 +72,7 @@ export function LevelTag({ level, className }: { level?: Level; className?: stri
   if (!level) return <span className={cx('text-[12px] text-ink-faint', className)}>{t('team:levels.0')}</span>
   return (
     <span className={cx('inline-flex items-center gap-1.5', className)}>
-      <span className="grid h-6 w-6 place-items-center rounded-md bg-forest-600 font-display text-[13px] font-semibold text-cream">{level}</span>
+      <span className="grid h-6 w-6 place-items-center rounded-md bg-forest-600 text-[13px] font-semibold tabular-nums text-cream">{level}</span>
       <span className="text-[12.5px] font-semibold text-ink-soft">{t(`team:levels.${level}`)}</span>
     </span>
   )
@@ -101,7 +102,7 @@ export function useToast() {
   const node = msg ? (
     <div key={msg.n} role="status" aria-live="polite" className="fixed inset-x-0 bottom-[calc(env(safe-area-inset-bottom)+84px)] z-[60] flex justify-center px-4 lg:bottom-8">
       <div className="flex max-w-md items-center gap-3 rounded-2xl bg-night-800 py-2.5 pl-4 pr-2 text-sm text-cream shadow-lift">
-        <Check size={16} className="shrink-0 text-sun-300" aria-hidden="true" />
+        <Check size={16} className="shrink-0 text-forest-300" aria-hidden="true" />
         <span className="min-w-0 flex-1">{msg.text}</span>
         {msg.action && <button type="button" className="min-h-[40px] rounded-xl px-3 font-semibold text-sun-300 hover:bg-white/10" onClick={() => { msg.onAction?.(); setMsg(null) }}>{msg.action}</button>}
       </div>
@@ -115,7 +116,7 @@ export function CardHead({ id, title, hint, action, icon }: { id?: string; title
   return (
     <div className="mb-3 flex flex-wrap items-start justify-between gap-x-3 gap-y-2">
       <div className="min-w-0">
-        <h2 id={id} className="flex items-center gap-2 font-display text-lg font-semibold text-ink">{icon}{title}</h2>
+        <h2 id={id} className="flex items-center gap-2 font-display text-lg text-ink">{icon}{title}</h2>
         {hint && <p className="mt-0.5 text-[13px] text-ink-muted">{hint}</p>}
       </div>
       {action}

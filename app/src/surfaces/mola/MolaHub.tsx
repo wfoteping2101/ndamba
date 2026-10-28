@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { ArrowRight, Hand, ListChecks, ShieldCheck } from 'lucide-react'
+import { ShieldCheck } from 'lucide-react'
 import { MolaMark } from '../../ui/brand'
 import { useT } from '../../i18n'
 import { db } from '../../lib/db'
@@ -8,7 +8,7 @@ import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
 import { useSession } from '../../lib/session'
 import type { TaskStatus } from '../../lib/types'
 import { cx } from '../../lib/util'
-import { Badge, EmptyState, Tabs } from '../../ui'
+import { Tabs } from '../../ui'
 import { BRAND } from '../../lib/config'
 import ChatPanel from './components/ChatPanel'
 import MolaAvatar from './components/MolaAvatar'
@@ -21,7 +21,7 @@ import './components/mola.css'
 type Tab = 'chat' | 'tasks' | 'approvals'
 type Filter = 'all' | 'running' | 'needs_approval' | 'done' | 'cancelled'
 
-const STATUS_TONE: Record<TaskStatus, 'forest' | 'sun' | 'ok' | 'neutral' | 'clay'> = { running: 'forest', needs_approval: 'sun', done: 'ok', cancelled: 'neutral', failed: 'clay' }
+const STATUS_DOT: Record<TaskStatus, string> = { running: 'bg-forest-500', needs_approval: 'bg-sun-500', done: 'bg-forest-600', cancelled: 'bg-ink-faint', failed: 'bg-clay-500' }
 
 export default function MolaHub() {
   const { t, lang } = useT('mola')
@@ -48,35 +48,37 @@ export default function MolaHub() {
 
   const tabs = [
     { id: 'chat' as Tab, label: t('hub.tabs.chat') },
-    { id: 'tasks' as Tab, label: <span className="inline-flex items-center gap-1.5">{t('hub.tabs.tasks')}{tasks.length > 0 && <span className="text-[11px] opacity-70">{tasks.length}</span>}</span> },
-    { id: 'approvals' as Tab, label: <span className="inline-flex items-center gap-1.5">{t('hub.tabs.approvals')}{pending.length > 0 && <span className="grid h-5 min-w-5 place-items-center rounded-full bg-sun-500 px-1.5 text-[11px] font-bold text-ink" aria-label={t('hub.pendingCount', { count: pending.length })}>{pending.length}</span>}</span> },
+    { id: 'tasks' as Tab, label: <span className="inline-flex items-center gap-1.5">{t('hub.tabs.tasks')}{tasks.length > 0 && <span className="tabular-nums opacity-60">{tasks.length}</span>}</span> },
+    { id: 'approvals' as Tab, label: <span className="inline-flex items-center gap-1.5">{t('hub.tabs.approvals')}{pending.length > 0 && <span className="grid h-5 min-w-5 place-items-center rounded-full bg-sun-500 px-1.5 text-[11px] font-bold tabular-nums text-ink" aria-label={t('hub.pendingCount', { count: pending.length })}>{pending.length}</span>}</span> },
   ]
 
   return (
     <div>
-      <header className="mb-4 flex items-center gap-3 sm:mb-6 sm:gap-4">
-        <MolaAvatar size={48} busy={busy} className="sm:hidden" />
-        <MolaAvatar size={64} busy={busy} className="hidden sm:inline-grid" />
+      <header className="mb-5 flex items-center gap-4 sm:mb-7">
+        <MolaAvatar size={52} busy={busy} className="sm:hidden" />
+        <MolaAvatar size={68} busy={busy} className="hidden sm:inline-grid" />
         <div className="min-w-0">
-          <div className="eyebrow">{t('agentOf', { app: BRAND.name })}</div>
-          <h1 className="text-[26px] font-semibold leading-tight text-ink sm:text-[34px]">{t('name')}</h1>
-          <p className="mt-0.5 hidden max-w-2xl text-[15px] text-ink-muted sm:block">{t('hub.subtitle')}</p>
+          <h1 className="text-[30px] leading-none text-ink sm:text-[38px]">{t('name')}</h1>
+          <p className="mt-1.5 text-[14.5px] text-ink-muted sm:text-[15.5px]">
+            <span className="font-semibold text-ink-soft">{t('agentOf', { app: BRAND.name })}</span>{' '}
+            <span className="hidden sm:inline">{busy ? t('hub.statusBusy') : t('hub.status')}</span>
+          </p>
         </div>
       </header>
 
-      <Tabs tabs={tabs} value={tab} onChange={setTab} className="mb-4 w-full sm:w-fit" />
+      <Tabs tabs={tabs} value={tab} onChange={setTab} className="mb-4 w-full sm:mb-5 sm:w-fit" />
 
       {tab === 'chat' && (
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
-          <div className="card flex h-[calc(100dvh-17.5rem)] min-h-[440px] flex-col overflow-hidden lg:h-[calc(100dvh-15rem)] lg:min-h-[560px]">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_288px]">
+          <div className="-mx-4 flex h-[calc(100dvh-17rem)] min-h-[460px] flex-col overflow-hidden border-y border-line bg-paper sm:mx-0 sm:rounded-[22px] sm:border lg:h-[calc(100dvh-15.5rem)] lg:min-h-[560px]">
             <ChatPanel className="h-full" after={<Suggestions />} autoFocus={typeof window !== 'undefined' && window.innerWidth >= 1024} prefill={prefill} />
           </div>
-          <aside className="hidden space-y-4 lg:block">
+          <aside className="hidden lg:block">
             <Capabilities role={profile?.role} />
-            <div className="rounded-2xl border border-forest-100 bg-forest-50 p-4">
-              <div className="flex items-center gap-2 text-[14px] font-semibold text-forest-700"><ShieldCheck size={17} aria-hidden="true" />{t('hub.trustTitle')}</div>
-              <p className="mt-1.5 text-[13px] leading-relaxed text-ink-soft">{t('hub.trustBody')}</p>
-              {pending.length > 0 && <button type="button" className="link mt-2 text-[13px]" onClick={() => setTab('approvals')}>{t('hub.seePending', { count: pending.length })}</button>}
+            <div className="mt-7 border-t border-line pt-5">
+              <h2 className="flex items-center gap-2 text-[15px] font-semibold text-ink"><ShieldCheck size={17} strokeWidth={1.75} className="text-forest-600" aria-hidden="true" />{t('hub.trustTitle')}</h2>
+              <p className="mt-1.5 text-[13.5px] leading-relaxed text-ink-muted">{t('hub.trustBody')}</p>
+              {pending.length > 0 && <button type="button" className="link mt-2 text-[13.5px]" onClick={() => setTab('approvals')}>{t('hub.seePending', { count: pending.length })}</button>}
             </div>
           </aside>
         </div>
@@ -86,15 +88,15 @@ export default function MolaHub() {
 
       {tab === 'approvals' && (
         pending.length === 0 ? (
-          <EmptyState icon={<ShieldCheck size={36} />} title={t('hub.approvals.emptyTitle')} body={t('hub.approvals.emptyBody')}
-            action={<button type="button" className="btn-primary" onClick={() => { setTab('chat'); askMola(t('chips.sendConvocation')) }}>{t('hub.approvals.cta')}</button>} />
+          <Empty title={t('hub.approvals.emptyTitle')} body={t('hub.approvals.emptyBody')}
+            action={<button type="button" className="btn-primary min-h-[44px]" onClick={() => { setTab('chat'); askMola(t('chips.sendConvocation')) }}><MolaMark size={16} aria-hidden="true" />{t('hub.approvals.cta')}</button>} />
         ) : (
-          <div className="grid gap-4 lg:grid-cols-2">
+          <div className="max-w-3xl space-y-5">
             {pending.map((task) => (
-              <div key={task.id} className="card card-pad">
+              <article key={task.id} className="rounded-[22px] border border-line bg-paper p-4 sm:p-6">
                 <TaskHead task={task} lang={lang} />
-                <TaskCard task={task} />
-              </div>
+                <TaskCard task={task} latest />
+              </article>
             ))}
           </div>
         )
@@ -103,17 +105,28 @@ export default function MolaHub() {
   )
 }
 
+function Empty({ title, body, action }: { title: string; body: string; action: React.ReactNode }) {
+  return (
+    <div className="max-w-xl rounded-[22px] border border-line bg-paper px-5 py-8 sm:px-8">
+      <MolaAvatar size={40} ring={false} />
+      <h2 className="mt-4 text-[22px] text-ink">{title}</h2>
+      <p className="mt-1.5 text-[15px] leading-relaxed text-ink-muted">{body}</p>
+      <div className="mt-5">{action}</div>
+    </div>
+  )
+}
+
 function Capabilities({ role }: { role?: string }) {
   const { t, lang } = useT('mola')
   const chips = defaultChips(lang, role)
   return (
-    <div className="card card-pad">
-      <div className="mb-2 flex items-center gap-2 font-display text-[17px] font-semibold text-ink"><MolaMark size={17} className="text-terra-600" aria-hidden="true" />{t('hub.canDo')}</div>
-      <ul className="space-y-0.5">
+    <div>
+      <h2 className="flex items-center gap-2 text-[17px] text-ink"><MolaMark size={18} className="text-forest-600" aria-hidden="true" />{t('hub.canDo')}</h2>
+      <ul className="mt-2 divide-y divide-line border-y border-line">
         {chips.map((c) => (
           <li key={c}>
-            <button type="button" onClick={() => askMola(c)} className="group flex w-full items-center gap-2 rounded-lg px-2 py-2 text-left text-[14px] text-ink-soft hover:bg-sand">
-              <span className="min-w-0 flex-1">{c}</span><ArrowRight size={14} className="shrink-0 text-ink-faint transition group-hover:translate-x-0.5 group-hover:text-forest-600" aria-hidden="true" />
+            <button type="button" onClick={() => askMola(c)} className="flex min-h-[44px] w-full items-center py-2.5 text-left text-[14.5px] leading-snug text-ink-soft transition hover:text-forest-700">
+              {c}
             </button>
           </li>
         ))}
@@ -122,18 +135,22 @@ function Capabilities({ role }: { role?: string }) {
   )
 }
 
+function when(iso: string, lang: 'fr' | 'en') {
+  return new Date(iso).toLocaleString(lang === 'fr' ? 'fr-FR' : 'en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
+}
+
 function TaskHead({ task, lang }: { task: MolaTask; lang: 'fr' | 'en' }) {
   const { t } = useT('mola')
   const Icon = INTENT_ICON[task.intent] ?? MolaMark
   return (
     <div className="flex items-start gap-3">
-      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sand text-forest-600"><Icon size={18} aria-hidden="true" /></span>
+      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-sand text-forest-700"><Icon size={17} strokeWidth={1.75} aria-hidden="true" /></span>
       <div className="min-w-0 flex-1">
-        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-          <span className="font-semibold text-ink">{t(`intent.${task.intent}`)}</span>
-          <Badge tone={STATUS_TONE[task.status]}>{t(`status.${task.status}`)}</Badge>
+        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-0.5">
+          <h3 className="text-[16px] font-semibold leading-snug text-ink">{t(`intent.${task.intent}`)}</h3>
+          <span className="inline-flex items-center gap-1.5 text-[13px] font-medium text-ink-muted"><span className={cx('h-1.5 w-1.5 rounded-full', STATUS_DOT[task.status])} aria-hidden="true" />{t(`status.${task.status}`)}</span>
         </div>
-        <p className="mt-0.5 truncate text-[13px] text-ink-muted">{t('hub.tasks.asked', { request: task.request })} · {new Date(task.createdAt).toLocaleString(lang === 'fr' ? 'fr-FR' : 'en-US', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</p>
+        <p className="mt-0.5 text-[13.5px] text-ink-muted"><span className="text-ink-soft">{t('hub.tasks.asked', { request: task.request })}</span>, {when(task.createdAt, lang)}</p>
       </div>
     </div>
   )
@@ -146,32 +163,34 @@ function TaskList({ tasks, lang, onChat }: { tasks: MolaTask[]; lang: 'fr' | 'en
   const list = useMemo(() => tasks.filter((x) => filter === 'all' || x.status === filter || (filter === 'cancelled' && x.status === 'failed')), [tasks, filter])
   const count = (f: Filter) => tasks.filter((x) => f === 'all' || x.status === f || (f === 'cancelled' && x.status === 'failed')).length
   if (!tasks.length) return (
-    <EmptyState icon={<ListChecks size={36} />} title={t('hub.tasks.emptyTitle')} body={t('hub.tasks.emptyBody')}
-      action={<button type="button" className="btn-primary" onClick={onChat}>{t('hub.tasks.start')}</button>} />
+    <Empty title={t('hub.tasks.emptyTitle')} body={t('hub.tasks.emptyBody')}
+      action={<button type="button" className="btn-primary min-h-[44px]" onClick={onChat}>{t('hub.tasks.start')}</button>} />
   )
   return (
-    <div>
+    <div className="max-w-4xl">
       <div className="mola-noscroll -mx-4 mb-4 flex gap-1.5 overflow-x-auto px-4 sm:mx-0 sm:flex-wrap sm:px-0" role="group" aria-label={t('hub.tasks.filter')}>
         {(['all', 'running', 'needs_approval', 'done', 'cancelled'] as Filter[]).map((f) => (
           <button key={f} type="button" aria-pressed={filter === f} onClick={() => setFilter(f)}
-            className={cx('inline-flex min-h-[40px] shrink-0 items-center gap-1.5 rounded-full border px-3.5 text-[13px] font-semibold transition', filter === f ? 'border-forest-600 bg-forest-600 text-cream' : 'border-line bg-paper text-ink-soft hover:border-forest-300')}>
-            {f === 'needs_approval' && <Hand size={13} aria-hidden="true" />}{t(`hub.tasks.f.${f}`)}<span className="opacity-60">{count(f)}</span>
+            className={cx('inline-flex min-h-[40px] shrink-0 items-center gap-1.5 rounded-full border px-3.5 text-[13.5px] font-semibold transition', filter === f ? 'border-forest-600 bg-forest-600 text-cream' : 'border-line bg-paper text-ink-soft hover:border-forest-300')}>
+            {t(`hub.tasks.f.${f}`)}<span className="tabular-nums opacity-60">{count(f)}</span>
           </button>
         ))}
       </div>
-      {list.length === 0 ? <p className="rounded-2xl border border-dashed border-line px-4 py-8 text-center text-sm text-ink-muted">{t('hub.tasks.none')}</p> : (
-        <ul className="space-y-3">
+      {list.length === 0 ? <p className="rounded-[14px] border border-dashed border-line px-4 py-8 text-center text-[14px] text-ink-muted">{t('hub.tasks.none')}</p> : (
+        <ul className="divide-y divide-line overflow-hidden rounded-[22px] border border-line bg-paper">
           {list.map((task) => (
-            <li key={task.id} className="card card-pad">
+            <li key={task.id} className="px-4 py-4 sm:px-6">
               <TaskHead task={task} lang={lang} />
-              {task.summary && <p className="mt-2.5 line-clamp-3 whitespace-pre-line text-[14px] leading-relaxed text-ink-soft">{task.summary}</p>}
-              <div className="mt-3 flex flex-wrap items-center gap-2">
-                {task.resultRoute && task.status === 'done' && <SmartLink to={task.resultRoute} className="btn-outline btn-sm min-h-[40px]">{task.payload?.resultLabel ?? t('open.result')}<ArrowRight size={14} aria-hidden="true" /></SmartLink>}
-                <button type="button" className="btn-ghost btn-sm min-h-[40px]" aria-expanded={open === task.id} onClick={() => setOpen(open === task.id ? null : task.id)}>
-                  {open === task.id ? t('hub.tasks.hide') : t(task.status === 'needs_approval' ? 'hub.tasks.review' : 'hub.tasks.details', { count: task.steps.length })}
-                </button>
+              <div className="sm:pl-12">
+                {task.summary && open !== task.id && <p className="mt-2 line-clamp-2 whitespace-pre-line text-[14.5px] leading-relaxed text-ink-soft">{task.summary}</p>}
+                <div className="mt-2 flex flex-wrap items-center gap-1.5">
+                  {task.resultRoute && task.status === 'done' && <SmartLink to={task.resultRoute} className="btn-outline btn-sm min-h-[40px] px-3.5">{task.payload?.resultLabel ?? t('open.result')}</SmartLink>}
+                  <button type="button" className={cx('btn-sm min-h-[40px] px-3', task.status === 'needs_approval' ? 'btn-primary' : 'btn-ghost')} aria-expanded={open === task.id} onClick={() => setOpen(open === task.id ? null : task.id)}>
+                    {open === task.id ? t('hub.tasks.hide') : t(task.status === 'needs_approval' ? 'hub.tasks.review' : 'hub.tasks.details', { count: task.steps.length })}
+                  </button>
+                </div>
+                {open === task.id && <TaskCard task={task} stepsOpen />}
               </div>
-              {open === task.id && <TaskCard task={task} />}
             </li>
           ))}
         </ul>

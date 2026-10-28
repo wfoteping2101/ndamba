@@ -26,7 +26,8 @@ export function useMolaThread(limit = 80) {
   return { messages, tasks, busy: useMolaBusy() }
 }
 
-/** Chat bubbles, steps, approvals, chips and the composer. The hub and the launcher share it. */
+/** A Mola turn: the badge and the name at the start of a group, then the text set calmly on the page (no bubble).
+ *  The person's words sit on the right in pitch green. The hub and the launcher share this panel. */
 export default function ChatPanel({ compact = false, limit = 80, before, after, onNavigate, autoFocus, className, inputId, prefill }: {
   compact?: boolean; limit?: number; before?: ReactNode; after?: ReactNode; onNavigate?: () => void; autoFocus?: boolean; className?: string; inputId?: string
   /** Pre-fills the composer without sending (see Composer). */
@@ -37,45 +38,51 @@ export default function ChatPanel({ compact = false, limit = 80, before, after, 
   const scroller = useRef<HTMLDivElement>(null)
   const last = messages[messages.length - 1]
   const chips = !busy && last?.role === 'mola' ? last.chips ?? [] : []
-  // follow the conversation: new messages, ticking steps, the typing dots
+  const latestTask = [...messages].reverse().find((m) => m.taskId)?.taskId
+  // follow the conversation: new messages, ticking steps, Mola writing
   const signature = useMemo(() => messages.map((m) => m.id).join() + JSON.stringify(Object.values(tasks).map((x) => [x.status, x.steps.length])) + busy, [messages, tasks, busy])
   useLayoutEffect(() => { const el = scroller.current; if (el) el.scrollTop = el.scrollHeight }, [signature])
   useEffect(() => { const el = scroller.current; if (el) requestAnimationFrame(() => { el.scrollTop = el.scrollHeight }) }, [])
+  const av = compact ? 28 : 32
 
   return (
     <div className={cx('flex min-h-0 flex-col', className)}>
-      <div ref={scroller} className={cx('min-h-0 flex-1 overflow-y-auto overscroll-contain', compact ? 'px-3 py-3' : 'px-3 py-4 sm:px-5 sm:py-5')} aria-live="polite" aria-relevant="additions">
+      <div ref={scroller} className={cx('min-h-0 flex-1 overflow-y-auto overscroll-contain', compact ? 'px-3.5 py-4' : 'px-4 py-5 sm:px-6 sm:py-6')} aria-live="polite" aria-relevant="additions">
         {before}
-        <div className="space-y-3">
+        <div>
           {messages.map((m, i) => {
             const prev = messages[i - 1]
             const grouped = prev?.role === m.role
             if (m.role === 'user') return (
-              <div key={m.id} className="mola-in flex justify-end">
-                <div className="max-w-[86%] whitespace-pre-line rounded-2xl rounded-br-md bg-forest-600 px-4 py-2.5 text-[15px] leading-relaxed text-cream">{m.text}</div>
+              <div key={m.id} className={cx('mola-in flex justify-end', i === 0 ? '' : grouped ? 'mt-1.5' : 'mt-5')}>
+                <div className="max-w-[82%] whitespace-pre-line rounded-[18px] rounded-br-[6px] bg-forest-600 px-4 py-2.5 text-[15px] leading-relaxed text-cream">{m.text}</div>
               </div>
             )
             const task = m.taskId ? tasks[m.taskId] : undefined
             return (
-              <div key={m.id} className="mola-in flex items-start gap-2">
-                {!compact && <span className="w-8 shrink-0">{!grouped && <MolaAvatar size={32} ring={false} />}</span>}
-                <div className={cx('min-w-0 rounded-2xl rounded-tl-md border border-line bg-paper px-4 py-3 shadow-card', task ? 'w-full max-w-[560px]' : 'max-w-[92%]')}>
-                  <p className="whitespace-pre-line text-[15px] leading-relaxed text-ink">{m.text}</p>
-                  {task && <TaskCard task={task} compact={compact} onNavigate={onNavigate} />}
+              <div key={m.id} className={cx('mola-in', i === 0 ? '' : grouped ? 'mt-3' : 'mt-5')}>
+                <div className="flex items-start gap-3">
+                  <span className="shrink-0" style={{ width: av }}>{!grouped && <MolaAvatar size={av} ring={false} />}</span>
+                  <div className="min-w-0 max-w-[62ch] flex-1">
+                    {!grouped && <div className="mb-0.5 text-[13px] font-semibold leading-[22px] text-ink">{t('name')}</div>}
+                    <p className="whitespace-pre-line text-[15.5px] leading-[1.6] text-ink">{m.text}</p>
+                  </div>
                 </div>
+                {/* the work itself takes the full width on phones, and sits under the text from 640 px */}
+                {task && <div className={cx('max-w-[620px]', compact ? '' : 'sm:pl-11')}><TaskCard task={task} compact={compact} onNavigate={onNavigate} latest={task.id === latestTask} /></div>}
               </div>
             )
           })}
-          {!busy && after}
+          {!busy && after && <div className="mt-4">{after}</div>}
           {busy && (
-            <div className="mola-in flex items-center gap-2">
-              {!compact && <span className="w-8 shrink-0"><MolaAvatar size={32} busy /></span>}
-              <div className="rounded-2xl rounded-tl-md border border-line bg-paper px-4 py-2.5 shadow-card"><TypingDots label={t('typing')} /></div>
+            <div className="mola-in mt-5 flex items-center gap-3">
+              <span className="shrink-0" style={{ width: av }}><MolaAvatar size={av} busy /></span>
+              <TypingDots label={t('typing')} />
             </div>
           )}
         </div>
       </div>
-      <div className={cx('border-t border-line bg-paper/95', compact ? 'space-y-2 px-3 pb-3 pt-2.5' : 'space-y-2.5 px-3 pb-3 pt-3 sm:px-5')}>
+      <div className={cx('border-t border-line bg-paper', compact ? 'space-y-2 px-3 pb-3 pt-2.5' : 'space-y-2.5 px-4 pb-4 pt-3 sm:px-6')}>
         {chips.length > 0 && <Chips chips={chips} onSend={(c) => askMola(c)} onNavigate={onNavigate} scroll />}
         <Composer id={inputId} onSend={(v) => askMola(v)} placeholder={t('composer.placeholder')} label={t('composer.label')} sendLabel={t('composer.send')} autoFocus={autoFocus} prefill={prefill} />
       </div>

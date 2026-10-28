@@ -1,7 +1,7 @@
 {
   "name": "Mola",
   "agentOf": "{{app}}'s agent",
-  "typing": "Mola is typing",
+  "typing": "Mola is writing…",
   "greeting": "Hello, I'm Mola, {{app}}'s agent. Tell me what you want to prepare and I'll take care of it right here. Before anything leaves the app, I always ask you first.",
   "greetingName": "Hello {{name}}, I'm Mola, {{app}}'s agent. Tell me what you want to prepare and I'll take care of it right here. Before anything leaves the app, I always ask you first.",
   "error": "Sorry, something went wrong on my side. Please try again in a moment.",
@@ -294,7 +294,7 @@
     }
   },
   "approval": {
-    "title": "Approve before sending",
+    "title": "Waiting for your approval",
     "explain": {
       "whatsapp": "Nothing goes out without you. When you approve, I open WhatsApp with the message ready: you choose the group and press Send.",
       "sms": "Nothing goes out without you. When you approve, I open your text messages with the message ready: you press Send.",
@@ -302,7 +302,7 @@
       "copy": "When you approve, I copy the message: paste it wherever you like.",
       "calendar": "When you approve, I download an .ics file: open it to add the events to your calendar."
     },
-    "channel": "Channel",
+    "channel": "Send with",
     "to": {
       "whatsapp": "Number (optional)",
       "sms": "Number (optional)",
@@ -360,7 +360,7 @@
     "demo": "Welcome to the demo, {{name}}. You coach {{team}}: {{count}} players, a week of sessions, a match already analysed and a match coming up on Saturday. Ask me anything, for example to analyse the last match or to draft the call-up."
   },
   "pro": {
-    "eyebrow": "Mola suggests",
+    "eyebrow": "Mola noticed",
     "dismiss": "Hide this idea",
     "team": "You don't have a team yet. Shall we create it together?",
     "teamCta": "Yes, let's create it",
@@ -381,7 +381,10 @@
   "task": {
     "steps": "Steps",
     "more_one": "and 1 more",
-    "more_other": "and {{count}} more"
+    "more_other": "and {{count}} more",
+    "showSteps_one": "See the step",
+    "showSteps_other": "See the {{count}} steps",
+    "hideSteps": "Hide the steps"
   },
   "intent": {
     "plan_week": "Week planned",
@@ -441,7 +444,9 @@
       "details_one": "See the step",
       "details_other": "See the {{count}} steps",
       "asked": "“{{request}}”"
-    }
+    },
+    "status": "It prepares inside the app; you approve anything that leaves it.",
+    "statusBusy": "Working on it now."
   },
   "launcher": {
     "open": "Talk to Mola",
@@ -537,7 +542,10 @@
       "choose": "Choose",
       "save": "Save",
       "cancel": "Cancel",
-      "note": "Everything stays in this browser. You can change it all later in the settings."
+      "note": "Everything stays in this browser. You can change it all later in the settings.",
+      "namePh": "Your name",
+      "rolePh": "Your role in football",
+      "count": "{{done}} of {{total}}"
     },
     "playersPh": "One player per line, for example: 9 Samuel Owona",
     "playersHint": "One player per line. Ctrl + Enter to send.",
@@ -570,16 +578,19 @@
     "demos": {
       "pro": {
         "title": "Pro club: Étoile de la Côte",
-        "body": "Seniors, Ligue 1, Douala. 22 players, one match analysed."
+        "body": "Étoile de la Côte, a top-flight senior side in Douala: 22 players, one match analysed.",
+        "cta": "Pro club demo"
       },
       "youth": {
         "title": "Academy: Lionceaux U13",
-        "body": "Kaydoudou and BriBri's team. 15 players, one match analysed."
+        "body": "The Lionceaux de Bonamoussadi, Kaydoudou and BriBri's team: 15 players, one match analysed.",
+        "cta": "U13 academy demo"
       }
     },
     "level": {
       "Seniors": "Seniors",
       "Pro": "Pro seniors"
-    }
+    },
+    "intro": "{{app}}'s agent. A few questions and your space is ready."
   }
 }

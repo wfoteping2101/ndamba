@@ -63,7 +63,7 @@ export function ObservePanel({ teamId, groups, context, minute, onMinute, showMi
   const picker = (
     <div>
       <div className="mb-2 flex items-center justify-between gap-2">
-        <h2 className="font-display text-lg font-semibold text-ink">{t('observe.players')}</h2>
+        <h2 className="font-display text-lg text-ink">{t('observe.players')}</h2>
         <div className="flex items-center gap-1">
           <span className="text-xs font-semibold tabular-nums text-ink-muted" aria-live="polite">{t('observe.selected', { count: selected.size })}</span>
           {selected.size > 0 && <button type="button" className="btn-ghost btn-sm min-h-[36px]" onClick={() => setSelected(new Set())}><X size={14} />{t('observe.clear')}</button>}
@@ -154,7 +154,7 @@ export function ObservePanel({ teamId, groups, context, minute, onMinute, showMi
             {([1, 2, 3, 4, 5] as const).map((n) => (
               <button key={n} type="button" role="radio" aria-checked={rating === n} onClick={() => setRating(rating === n ? undefined : n)}
                 className={cx('grid h-11 w-11 place-items-center rounded-full border text-sm font-semibold tabular-nums transition',
-                  rating === n ? 'border-sun-500 bg-sun-500 text-night-900' : rating && n < rating ? 'border-sun-100 bg-sun-50 text-sun-700' : 'border-line bg-paper text-ink-muted hover:border-ink-faint')}>{n}</button>
+                  rating === n ? 'border-forest-600 bg-forest-600 text-cream' : rating && n < rating ? 'border-forest-100 bg-forest-50 text-forest-700' : 'border-line bg-paper text-ink-muted hover:border-ink-faint')}>{n}</button>
             ))}
           </div>
           <p className="mt-1 text-[11.5px] text-ink-faint">{t('observe.ratingHint')}</p>
@@ -241,7 +241,7 @@ export function ObservationFeed({ teamId, context, players, limit = 30 }: { team
   return (
     <section className="card card-pad" aria-labelledby="feed-h">
       <div className="mb-2 flex items-baseline justify-between gap-2">
-        <h2 id="feed-h" className="font-display text-lg font-semibold text-ink">{context.sessionId ? t('feed.session') : context.matchId ? t('feed.match') : t('feed.today')}</h2>
+        <h2 id="feed-h" className="font-display text-lg text-ink">{context.sessionId ? t('feed.session') : context.matchId ? t('feed.match') : t('feed.today')}</h2>
         <span className="text-xs tabular-nums text-ink-muted">{t('feed.count', { count: list.length })}</span>
       </div>
       {rows.length === 0 ? <p className="text-sm text-ink-muted">{t('feed.empty')}</p> : (

@@ -210,7 +210,9 @@
     "min": "{{n}} min",
     "gridNote": "Grid from chapter 25 of The Njangi Code. A grid to help players grow, never to rank them.",
     "profileNote": "A portrait, not a total: pick two skills to work on for six to eight weeks.",
-    "levelIs": "{{level}}: "
+    "levelIs": "{{level}}: ",
+    "colProg": "Prog.",
+    "colRegain": "5 s reg."
   },
   "matches": {
     "docTitle": "Matches",
@@ -346,7 +348,8 @@
       "regenerate": "Rebuild the message",
       "edited": "Message edited by hand",
       "saveFirst": "The match will be saved with this message."
-    }
+    },
+    "nextStep": "Next: {{step}}"
   },
   "moments": {
     "possession": {

@@ -48,24 +48,24 @@ export default function MolaLauncher() {
   return (
     <>
       {showTeaser && (
-        <div className="mola-in fixed bottom-[calc(env(safe-area-inset-bottom)+142px)] right-4 z-40 w-[min(300px,calc(100vw-2rem))] lg:bottom-[100px] lg:right-6">
-          <div className="relative rounded-2xl rounded-br-md border border-line bg-paper p-3 pr-9 shadow-lift">
+        <div className="mola-in fixed bottom-[calc(env(safe-area-inset-bottom)+146px)] right-4 z-40 w-[min(300px,calc(100vw-2rem))] lg:bottom-[96px] lg:right-6">
+          <div className="relative rounded-[14px] rounded-br-[6px] border border-line bg-paper py-3 pl-3.5 pr-10 shadow-lift">
             <button type="button" onClick={() => { closeTeaser(); setOpen(true) }} className="block text-left">
-              <span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-terra-600">{t('name')}</span>
-              <span className="mt-0.5 line-clamp-3 text-[14px] leading-snug text-ink">{last!.text}</span>
+              <span className="block text-[13px] font-semibold text-ink">{t('name')}</span>
+              <span className="mt-0.5 line-clamp-3 text-[14px] leading-snug text-ink-soft">{last!.text}</span>
             </button>
-            <button type="button" onClick={closeTeaser} className="absolute right-1 top-1 grid h-9 w-9 place-items-center rounded-full text-ink-muted hover:bg-sand" aria-label={t('launcher.dismiss')}><X size={15} /></button>
+            <button type="button" onClick={closeTeaser} className="absolute right-1 top-1 grid h-9 w-9 place-items-center rounded-full text-ink-muted hover:bg-sand" aria-label={t('launcher.dismiss')}><X size={15} aria-hidden="true" /></button>
           </div>
         </div>
       )}
 
       {!open && (
         <button type="button" onClick={() => { closeTeaser(); setOpen(true) }}
-          className="fixed bottom-[calc(env(safe-area-inset-bottom)+76px)] right-4 z-40 grid h-[58px] w-[58px] place-items-center rounded-full bg-paper shadow-lift transition hover:scale-[1.04] lg:bottom-6 lg:right-6"
+          className="fixed bottom-[calc(env(safe-area-inset-bottom)+78px)] right-4 z-40 grid h-[60px] w-[60px] place-items-center rounded-full border border-line bg-paper shadow-lift transition hover:border-forest-300 lg:bottom-6 lg:right-6"
           aria-label={pending ? t('launcher.openPending', { count: pending }) : t('launcher.open')}>
-          <MolaAvatar size={50} busy={busy} />
+          <MolaAvatar size={48} busy={busy} />
           {(pending > 0 || unread) && (
-            <span className={cx('mola-pop absolute -right-0.5 -top-0.5 grid h-[22px] min-w-[22px] place-items-center rounded-full border-2 border-paper px-1 text-[11px] font-bold', pending > 0 ? 'bg-sun-500 text-ink' : 'bg-clay-500 text-white')}>
+            <span className={cx('mola-pop absolute -right-0.5 -top-0.5 grid place-items-center rounded-full border-2 border-paper font-bold tabular-nums', pending > 0 ? 'h-[22px] min-w-[22px] bg-sun-500 px-1 text-[11px] text-ink' : 'h-3.5 w-3.5 bg-forest-500')}>
               {pending > 0 ? pending : ''}
             </span>
           )}
@@ -75,11 +75,11 @@ export default function MolaLauncher() {
       {open && (
         <div className="fixed inset-0 z-50 sm:inset-auto sm:bottom-6 sm:right-6" role="dialog" aria-modal="true" aria-label={t('launcher.title')}>
           <div className="absolute inset-0 bg-night-900/40 sm:hidden" onClick={() => setOpen(false)} />
-          <div className="safe-bottom absolute inset-x-0 bottom-0 flex h-[min(86dvh,680px)] flex-col overflow-hidden rounded-t-3xl border border-line bg-cream shadow-lift sm:relative sm:inset-auto sm:h-[min(640px,calc(100dvh-3rem))] sm:w-[400px] sm:rounded-3xl">
-            <div className="flex items-center gap-3 border-b border-line bg-paper px-4 py-3">
+          <div className="safe-bottom absolute inset-x-0 bottom-0 flex h-[min(88dvh,700px)] flex-col overflow-hidden rounded-t-[22px] border border-line bg-paper shadow-lift sm:relative sm:inset-auto sm:h-[min(660px,calc(100dvh-3rem))] sm:w-[408px] sm:rounded-[22px]">
+            <div className="flex items-center gap-3 border-b border-line px-4 py-3">
               <MolaAvatar size={38} busy={busy} />
               <div className="min-w-0 flex-1">
-                <div className="font-display text-[17px] font-semibold leading-tight text-ink">{t('name')}</div>
+                <div className="font-display text-[18px] leading-tight text-ink">{t('name')}</div>
                 <div className="truncate text-[12px] text-ink-muted">{busy ? t('launcher.working') : t('agentOf', { app: BRAND.name })}</div>
               </div>
               <Link to="/app/mola" className="btn-ghost btn-sm min-h-[40px]" onClick={() => setOpen(false)}><Maximize2 size={15} aria-hidden="true" /><span className="hidden min-[380px]:inline">{t('launcher.full')}</span></Link>

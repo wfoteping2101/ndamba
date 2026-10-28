@@ -71,8 +71,8 @@ export function Timeline({ data, season, stage, viewer }: { data: JourneyData; s
   )
 }
 
-function Node({ tone, children }: { tone: 'forest' | 'terra' | 'sun' | 'neutral' | 'mixed'; children: ReactNode }) {
-  const cls = tone === 'forest' ? 'bg-forest-600 text-cream' : tone === 'terra' ? 'bg-terra-500 text-white' : tone === 'sun' ? 'bg-sun-500 text-night-900' : tone === 'mixed' ? 'bg-sun-100 text-sun-700' : 'bg-sand text-ink-soft'
+function Node({ tone, children }: { tone: 'forest' | 'work' | 'sun' | 'neutral' | 'mixed'; children: ReactNode }) {
+  const cls = tone === 'forest' ? 'bg-forest-600 text-cream' : tone === 'work' ? 'bg-ink text-cream' : tone === 'sun' ? 'bg-sun-500 text-night-900' : tone === 'mixed' ? 'bg-forest-100 text-forest-800' : 'bg-sand text-ink-soft'
   return <span className={cx('absolute -left-[17px] top-3 grid h-8 w-8 place-items-center rounded-full ring-4 ring-paper [&>svg]:h-4 [&>svg]:w-4', cls)} aria-hidden="true">{children}</span>
 }
 
@@ -116,8 +116,8 @@ function Item({ i, stage, viewer, onRemoveObs, onRemoveEval }: {
           {!i.first && i.changes.length > 0 && (
             <ul className="flex flex-wrap gap-1.5">
               {i.changes.map((c) => (
-                <li key={c.skill} className={cx('inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11.5px] font-semibold', !c.from || c.to > c.from ? 'bg-forest-50 text-forest-700' : 'bg-terra-50 text-terra-700')}>
-                  {t(`team:skillsShort.${c.skill}`)}<span className="tabular-nums">{c.from ?? '·'}</span><ArrowRight size={11} aria-label={t('timeline.to')} /><span className="tabular-nums">{c.to}</span>
+                <li key={c.skill} className={cx('inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11.5px] font-semibold', !c.from || c.to > c.from ? 'bg-forest-50 text-forest-700' : 'bg-clay-50 text-clay-700')}>
+                  {t(`team:skillsShort.${c.skill}`)}<span className="tabular-nums">{c.from ?? '-'}</span><ArrowRight size={11} aria-label={t('timeline.to')} /><span className="tabular-nums">{c.to}</span>
                 </li>
               ))}
             </ul>
@@ -133,7 +133,7 @@ function Item({ i, stage, viewer, onRemoveObs, onRemoveEval }: {
       const tones = obsSkillTones({ skills: o.skills, tags: [] })
       const p = tones.filter(([, x]) => x === 'plus').length + o.tags.filter((id) => obsTag(id)?.tone === 'plus').length
       const w = tones.filter(([, x]) => x === 'work').length + o.tags.filter((id) => obsTag(id)?.tone === 'work').length
-      const tone = p && w ? 'mixed' : w ? 'terra' : p ? 'forest' : 'neutral'
+      const tone = p && w ? 'mixed' : w ? 'work' : p ? 'forest' : 'neutral'
       const where = i.match ? t('timeline.obsMatch', { opponent: i.match.opponent }) + (o.minute ? `, ${t('timeline.minute', { n: o.minute })}` : '')
         : i.session ? t('timeline.obsSession', { title: i.session.title }) : t('timeline.obsFree')
       const hideRating = viewer === 'player' && stage === 'kid'
@@ -162,14 +162,14 @@ function Item({ i, stage, viewer, onRemoveObs, onRemoveEval }: {
       const title = (
         <span className="inline-flex flex-wrap items-center gap-x-2 gap-y-0.5">
           <span>{t('timeline.vs', { opponent: m.opponent })}</span>
-          <span className={cx('rounded-md px-1.5 text-[12px] font-bold tabular-nums', res === 'W' ? 'bg-sun-100 text-sun-700' : res === 'L' ? 'bg-clay-50 text-clay-700' : 'bg-sand text-ink-soft')}>{m.scoreUs}-{m.scoreThem}</span>
+          <span className={cx('rounded-md px-1.5 text-[12px] font-bold tabular-nums', res === 'W' ? 'bg-forest-50 text-forest-700' : res === 'L' ? 'bg-clay-50 text-clay-700' : 'bg-sand text-ink-soft')}>{m.scoreUs}-{m.scoreThem}</span>
         </span>
       )
       return (
         <Row node={<Node tone={l.minutes > 0 ? 'forest' : 'neutral'}><Trophy /></Node>} date={i.date} meta={m.competition} title={coach ? <Link to={`/app/matchs/${m.id}`} className="hover:underline">{title}</Link> : title}>
           <div className="flex flex-wrap items-center gap-1.5 text-[12.5px]">
             <span className="font-semibold text-ink-soft">{role}{l.minutes > 0 ? `, ${fmtMinutes(l.minutes, lang)}` : ''}</span>
-            {l.captain && l.minutes > 0 && <span className="inline-flex items-center gap-1 rounded-full bg-terra-50 px-2 py-0.5 text-[11.5px] font-semibold text-terra-700"><Crown size={12} aria-hidden="true" />{t('timeline.captain')}</span>}
+            {l.captain && l.minutes > 0 && <span className="inline-flex items-center gap-1 rounded-full bg-sand px-2 py-0.5 text-[11.5px] font-semibold text-ink"><Crown size={12} aria-hidden="true" />{t('timeline.captain')}</span>}
             {c.GOAL > 0 && <span className="rounded-full bg-sun-500 px-2 py-0.5 text-[11.5px] font-bold text-night-900">{t('stats.goals', { count: c.GOAL })}</span>}
           </div>
           {l.tagged && l.minutes > 0 && (
@@ -210,7 +210,7 @@ function Item({ i, stage, viewer, onRemoveObs, onRemoveEval }: {
       )
       return (
         <Row node={<Node tone={o.status === 'achieved' ? 'sun' : 'neutral'}><Flag /></Node>} date={i.date} title={t('timeline.objReview', { title: o.title })}>
-          <span className={cx('inline-flex rounded-full px-2 py-0.5 text-[11.5px] font-semibold', o.status === 'achieved' ? 'bg-sun-100 text-sun-700' : o.status === 'partial' ? 'bg-forest-50 text-forest-700' : 'bg-sand text-ink-soft')}>{t(`objectives.status.${o.status}${o.status === 'notyet' && stage === 'adult' ? 'Adult' : ''}`)}</span>
+          <span className={cx('inline-flex rounded-full px-2 py-0.5 text-[11.5px] font-semibold', o.status === 'achieved' ? 'bg-forest-600 text-cream' : o.status === 'partial' ? 'bg-forest-50 text-forest-700' : 'bg-sand text-ink-soft')}>{t(`objectives.status.${o.status}${o.status === 'notyet' && stage === 'adult' ? 'Adult' : ''}`)}</span>
           {o.reviewNote && <p className="mt-1.5 text-[13.5px] italic leading-snug text-ink-soft">{quote(o.reviewNote, lang)}</p>}
         </Row>
       )

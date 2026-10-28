@@ -108,10 +108,11 @@
     "accuracyShort": "de réussite",
     "linesShort": "lignes traversées",
     "boxShort": "dans la surface",
-    "goalsShort": "but(s)",
     "switchShort": "renversements",
     "lossOnBall": "en conduite ou en duel",
-    "ofLosses": "des pertes"
+    "ofLosses": "des pertes",
+    "goalsLine_one": "{{count}} but",
+    "goalsLine_other": "{{count}} buts"
   },
   "hub": {
     "title": "Analyse",
@@ -127,18 +128,15 @@
     "analysedEmpty": "Aucun match analysé pour l'instant. Lancez le direct au prochain match : chaque tap compte.",
     "noTags": "Pas de tags",
     "openReport": "Ouvrir le rapport",
-    "tags": "{{n}} tags",
     "trend": "L'Indice au fil des matchs",
     "trendOne": "La courbe apparaît dès le deuxième match analysé.",
     "averages": "La saison, sous-indice par sous-indice",
-    "averagesHint": "Sur {{n}} match(s) analysé(s). Les codes sont additionnés, puis l'Indice est calculé : jamais la moyenne des matchs.",
     "whatTitle": "L'Indice Njangi, en deux phrases",
     "what1": "Le pourcentage de possession ment : une équipe peut avoir le ballon sans jamais aller nulle part. L'Indice Njangi mesure, sur 100, si votre équipe a possédé avec intention.",
     "what2": "Il additionne cinq sous-indices sur 20 : Progression, Pénétration, Fixation, Reprise et Contrôle. Ce sont des repères internes à la méthode Njangi, à calibrer sur vos propres matchs.",
     "readChapter": "Lire {{book}}, chapitre 32",
     "videoTitle": "Analyse vidéo",
     "videoBody": "Ouvrez la vidéo d'un match sur votre appareil, codez les actions, dessinez sur l'image et exportez vos extraits.",
-    "videoCount": "{{n}} projet(s)",
     "videoOpen": "Ouvrir l'analyse vidéo",
     "noTeamTitle": "Créez d'abord votre équipe",
     "noTeamBody": "L'analyse s'appuie sur une équipe et ses matchs. Donnez-lui un nom, {{app}} prépare le reste.",
@@ -156,7 +154,14 @@
     "next": "Prochain match",
     "nextHint": "Deux mi-temps de {{half}} min. Le téléphone reste allumé pendant le direct.",
     "pastDate": "Date passée",
-    "teamNamePh": "Ex. : Lionceaux de Bonamoussadi U13"
+    "teamNamePh": "Ex. : Lionceaux de Bonamoussadi U13",
+    "tags_one": "{{count}} tag",
+    "tags_other": "{{count}} tags",
+    "averagesHint_one": "Sur un match analysé. Les codes sont additionnés, puis l'Indice est calculé : jamais la moyenne des matchs.",
+    "averagesHint_other": "Sur {{count}} matchs analysés. Les codes sont additionnés, puis l'Indice est calculé : jamais la moyenne des matchs.",
+    "videoCount_one": "Un projet",
+    "videoCount_other": "{{count}} projets",
+    "videoCount_zero": "Aucun projet pour l'instant"
   },
   "live": {
     "title": "Direct",
@@ -216,7 +221,6 @@
     "regainWindow": "Reprise ! {{s}} s",
     "panel": "Indice en direct",
     "panelOpen": "Voir l'Indice en direct",
-    "tagged": "{{n}} tags",
     "notFound": "Match introuvable",
     "notFoundBody": "Ce match n'existe pas ou a été supprimé.",
     "back": "Retour à l'analyse",
@@ -233,7 +237,11 @@
     "settingsShort": "Réglages",
     "keySpace": "Espace",
     "keyUndoKeys": "U, Retour arrière, Ctrl+Z",
-    "keyEsc": "Fermer une fenêtre"
+    "keyEsc": "Fermer une fenêtre",
+    "undoneTag": "Annulé : {{tag}}",
+    "clockAdjust": "Corriger le chrono, {{half}}",
+    "tagged_one": "{{count}} tag",
+    "tagged_other": "{{count}} tags"
   },
   "report": {
     "title": "Rapport de match",
@@ -266,7 +274,6 @@
     "drillsHint": "Pour les sous-indices les plus faibles : {{subs}}.",
     "objectives": "Objectifs de la semaine",
     "plan": "Planifier la semaine avec ces objectifs",
-    "planDone": "{{n}} séance(s) créée(s) pour la semaine du match contre {{opp}}.",
     "planNone": "Les séances de cette semaine existent déjà. Ouvrez la semaine pour les ajuster.",
     "openWeek": "Ouvrir la semaine",
     "planNoMatch": "Créez d'abord le prochain match : la semaine se planifie à rebours depuis le jour du match.",
@@ -331,7 +338,7 @@
       "3": "Prol. 1",
       "4": "Prol. 2"
     },
-    "nextWeek": "La semaine prochaine",
+    "nextWeek": "Ce que ce match demande à la semaine qui vient.",
     "prevShort": "Match précédent",
     "thisMatch": "Ce match",
     "youthNote": "Chez les jeunes, l'Indice mesure l'équipe, jamais un enfant. Gardez ce tableau pour le staff et ne comparez pas les joueurs devant le groupe.",
@@ -344,7 +351,11 @@
       "planned": "À venir",
       "live": "En cours",
       "done": "Terminé"
-    }
+    },
+    "philosophyFor": "Ce que les tags disent du jeu de {{team}}.",
+    "drillMeta": "{{family}}, {{n}} min",
+    "planDone_one": "Une séance créée pour la semaine du match contre {{opp}}.",
+    "planDone_other": "{{count}} séances créées pour la semaine du match contre {{opp}}."
   },
   "summary": {
     "headline": "{{label}} : {{total}} sur 100",
@@ -390,7 +401,7 @@
       "fixation": "Fixation ({{v}}/20) : {{fix}} fixations et {{sw}} renversements pour jouer de l'autre côté.",
       "reprise": "Reprise ({{v}}/20) : {{pct}} % des pertes suivies d'une reprise en 5 secondes.",
       "controle": "Contrôle ({{v}}/20) : {{k}} % de nos actions de possession ont gardé le ballon.",
-      "goals": "Efficacité : {{goals}} but(s) sur {{shotsIn}} tir(s) cadré(s).",
+      "goals": "Efficacité : {{goals}} sur {{shotsIn}} tirs cadrés au fond.",
       "shotsIn": "Précision : {{shotsIn}} tirs cadrés sur {{shots}}.",
       "regains": "Combativité : {{n}} récupérations au total.",
       "effort": "L'envie de jouer : {{n}} actions codées, l'équipe a voulu avoir le ballon."
@@ -435,7 +446,6 @@
     "create": "Créer le projet",
     "empty": "Aucun projet vidéo",
     "emptyBody": "Filmez avec un téléphone et un trépied, puis ouvrez le fichier ici. La vidéo reste sur votre appareil : {{app}} n'enregistre que vos tags et vos dessins.",
-    "tags": "{{n}} tags",
     "file": "Fichier : {{name}}",
     "noFile": "Pas encore de vidéo",
     "delete": "Supprimer le projet",
@@ -522,6 +532,9 @@
         "body": "Mettez en pause, dessinez flèches et cercles, enregistrez l'image. Cinq extraits suffisent pour la séance vidéo."
       }
     },
-    "rename": "Renommer le projet"
+    "rename": "Renommer le projet",
+    "tags_one": "{{count}} tag",
+    "tags_other": "{{count}} tags",
+    "howTitle": "Analyser une vidéo en trois temps"
   }
 }

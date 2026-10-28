@@ -4,31 +4,31 @@ import { useT } from '../../../../i18n'
 import { cx } from '../../../../lib/util'
 import { fmtNjangi, type SubKey } from '../../../../lib/njangi'
 
-/** Card heading: eyebrow, title, a short hint and an optional action on the right. */
-export function PerfHead({ id, eyebrow, title, hint, action, icon }: { id?: string; eyebrow?: string; title: string; hint?: ReactNode; action?: ReactNode; icon?: ReactNode }) {
+/** Card heading: a small label when it says something (when, which cycle), the title, a short hint, an optional action.
+ *  `icon` is accepted for older call sites and no longer drawn: the cards are told apart by their content. */
+export function PerfHead({ id, eyebrow, title, hint, action }: { id?: string; eyebrow?: string; title: string; hint?: ReactNode; action?: ReactNode; icon?: ReactNode }) {
   return (
-    <div className="mb-4 flex flex-wrap items-start justify-between gap-x-3 gap-y-2">
-      <div className="flex min-w-0 items-start gap-3">
-        {icon && <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-forest-50 text-forest-700 [&>svg]:h-[18px] [&>svg]:w-[18px]" aria-hidden="true">{icon}</span>}
-        <div className="min-w-0">
-          {eyebrow && <div className="eyebrow mb-0.5">{eyebrow}</div>}
-          <h2 id={id} className="font-display text-[20px] font-semibold leading-tight text-ink">{title}</h2>
-          {hint && <p className="mt-0.5 max-w-xl text-[13px] text-ink-muted">{hint}</p>}
-        </div>
+    <div className="mb-5 flex flex-wrap items-start justify-between gap-x-3 gap-y-2">
+      <div className="min-w-0">
+        {eyebrow && <p className="mb-1 text-[13.5px] font-semibold text-forest-600 first-letter:uppercase">{eyebrow}</p>}
+        <h2 id={id} className="text-[22px] leading-tight text-ink">{title}</h2>
+        {hint && <p className="mt-1.5 max-w-xl text-[14px] leading-relaxed text-ink-muted">{hint}</p>}
       </div>
       {action}
     </div>
   )
 }
 
-/** A number with its label, for the rows of figures inside a card. */
+/** A number with its label, for the rows of figures inside a card: no box, a hairline on its left. */
 export function Figure({ label, value, sub, tone = 'ink', className }: { label: string; value: ReactNode; sub?: ReactNode; tone?: 'ink' | 'forest' | 'terra' | 'sun'; className?: string }) {
-  const color = tone === 'forest' ? 'text-forest-700' : tone === 'terra' ? 'text-terra-700' : tone === 'sun' ? 'text-sun-700' : 'text-ink'
+  const { t } = useT('player')
+  const color = tone === 'forest' ? 'text-forest-600' : 'text-ink'
+  const empty = value === null || value === undefined || value === ''
   return (
-    <div className={cx('min-w-0 rounded-xl bg-cream/80 px-3 py-2.5 ring-1 ring-line/70', className)}>
-      <div className="line-clamp-2 text-[11.5px] font-medium leading-tight text-ink-muted">{label}</div>
-      <div className={cx('font-display text-[22px] font-semibold leading-tight tabular-nums', color)}>{value}</div>
-      {sub && <div className="truncate text-[11.5px] text-ink-faint">{sub}</div>}
+    <div className={cx('min-w-0 border-l-2 border-line pl-3', className)}>
+      <dt className="line-clamp-2 text-[12.5px] font-medium leading-tight text-ink-muted">{label}</dt>
+      <dd className={cx('mt-0.5 leading-tight tabular-nums', empty ? 'py-1 text-[15px] font-medium text-ink-faint' : cx('font-display text-[24px]', color))}>{empty ? t('perf.none') : value}</dd>
+      {sub && <dd className="truncate text-[12.5px] text-ink-muted">{sub}</dd>}
     </div>
   )
 }
@@ -42,7 +42,7 @@ export function ScaleRow({ id, label, value, onChange, from = 1, to = 5, low, hi
   const wide = values.length > 6
   return (
     <fieldset className="min-w-0">
-      <legend id={`${id}-l`} className="mb-1.5 flex w-full items-baseline justify-between gap-2 text-[13.5px] font-semibold text-ink">
+      <legend id={`${id}-l`} className="mb-1.5 flex w-full items-baseline justify-between gap-2 text-[14px] font-semibold text-ink">
         <span>{label}</span>
         {value !== undefined && describe && <span className="text-[12px] font-medium text-ink-muted">{describe(value)}</span>}
       </legend>
@@ -55,7 +55,7 @@ export function ScaleRow({ id, label, value, onChange, from = 1, to = 5, low, hi
           </button>
         ))}
       </div>
-      <div className="mt-1 flex justify-between gap-2 text-[11px] text-ink-faint" aria-hidden="true"><span>{low}</span><span className="text-right">{high}</span></div>
+      <div className="mt-1 flex justify-between gap-2 text-[12px] text-ink-muted" aria-hidden="true"><span>{low}</span><span className="text-right">{high}</span></div>
     </fieldset>
   )
 }
@@ -70,11 +70,11 @@ export function SubBars({ sub, weakest }: { sub: Record<SubKey, number>; weakest
         return (
           <li key={k}>
             <div className="mb-1 flex items-baseline justify-between gap-2 text-[13px]">
-              <span className={cx('font-medium', weak ? 'text-terra-700' : 'text-ink-soft')}>{t(`subs.${k}`)}{weak && <span className="ml-1.5 text-[11.5px] font-semibold text-terra-600">{t('indice.weakest')}</span>}</span>
+              <span className={cx(weak ? 'font-semibold text-ink' : 'font-medium text-ink-soft')}>{t(`subs.${k}`)}{weak && <span className="ml-2 rounded-full bg-sand px-2 py-0.5 text-[12px] font-semibold text-ink-soft">{t('indice.weakest')}</span>}</span>
               <span className="tabular-nums text-ink-muted"><span className="font-semibold text-ink">{fmtNjangi(sub[k], lang)}</span> / 20</span>
             </div>
             <div className="h-1.5 overflow-hidden rounded-full bg-sand" role="img" aria-label={`${t(`subs.${k}`)} ${fmtNjangi(sub[k], lang)} / 20`}>
-              <div className={cx('h-full rounded-full', weak ? 'bg-terra-500' : 'bg-forest-600')} style={{ width: `${Math.min(100, (sub[k] / 20) * 100)}%` }} />
+              <div className={cx('h-full rounded-full', weak ? 'bg-forest-300' : 'bg-forest-600')} style={{ width: `${Math.min(100, (sub[k] / 20) * 100)}%` }} />
             </div>
           </li>
         )
@@ -88,7 +88,7 @@ export function IntensityPips({ level, light = false, label }: { level: number; 
   return (
     <span className="inline-flex items-end gap-[2px]" role={label ? 'img' : undefined} aria-label={label} aria-hidden={label ? undefined : true}>
       {[1, 2, 3, 4].map((l) => (
-        <span key={l} className={cx('w-[4px] rounded-[1px]', l <= level ? (light ? 'bg-sun-300' : 'bg-terra-500') : light ? 'bg-white/25' : 'bg-line')} style={{ height: 3 + l * 2.5 }} />
+        <span key={l} className={cx('w-[4px] rounded-[1px]', l <= level ? (light ? 'bg-cream' : 'bg-forest-600') : light ? 'bg-white/25' : 'bg-line')} style={{ height: 3 + l * 2.5 }} />
       ))}
     </span>
   )

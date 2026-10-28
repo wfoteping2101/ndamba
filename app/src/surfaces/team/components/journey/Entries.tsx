@@ -25,15 +25,15 @@ export function JourneyTeaser({ playerId }: { playerId: string }) {
   const s = useMemo(() => (data ? seasonSummary(data, season) : null), [data, season])
   if (!data || !s) return null
   const stats = [
-    { label: t('hero.sessions'), value: s.sessions.marked ? `${s.sessions.attended}/${s.sessions.marked}` : '·', sub: s.sessions.rate !== null ? fmtPct(s.sessions.rate, lang) : undefined },
+    { label: t('hero.sessions'), value: s.sessions.marked ? `${s.sessions.attended}/${s.sessions.marked}` : '-', sub: s.sessions.rate !== null ? fmtPct(s.sessions.rate, lang) : undefined },
     { label: t('hero.matches'), value: s.matches.played, sub: s.matches.played ? fmtMinutes(s.matches.minutes, lang) : undefined },
     { label: t('hero.observations'), value: s.observations.total },
     { label: t('hero.objectives'), value: s.objectives.active, sub: t('teaser.active') },
   ]
   return (
-    <section className="overflow-hidden rounded-2xl bg-forest-600 text-cream shadow-card" aria-labelledby="jt-h">
+    <section className="overflow-hidden rounded-[22px] bg-forest-600 text-cream [&_:focus-visible]:outline-cream" aria-labelledby="jt-h">
       <div className="flex flex-wrap items-center justify-between gap-2 px-4 pt-4 sm:px-5">
-        <h2 id="jt-h" className="flex items-center gap-2 font-display text-lg font-semibold"><Route size={18} className="text-sun-300" aria-hidden="true" />{t('teaser.title', { season: season.label })}</h2>
+        <h2 id="jt-h" className="flex items-center gap-2 font-display text-lg"><Route size={18} strokeWidth={1.75} className="text-cream/70" aria-hidden="true" />{t('teaser.title', { season: season.label })}</h2>
         <div className="flex gap-2">
           <Link to={`/app/observer?joueur=${playerId}`} className="btn min-h-[40px] border border-white/25 px-3 py-1.5 text-[13px] text-cream hover:bg-white/10"><Eye size={15} />{t('actions.observe')}</Link>
           <Link to={`/app/equipe/${playerId}/parcours`} className="btn-sun min-h-[40px] px-3 py-1.5 text-[13px]">{t('teaser.open')}</Link>

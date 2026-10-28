@@ -27,7 +27,7 @@ export function WeekLoadChart({ days }: { days: LoadDay[] }) {
             return (
               <div key={d.date} role="listitem" tabIndex={0} aria-label={desc}
                 onPointerEnter={() => setHover(i)} onPointerLeave={() => setHover(null)} onFocus={() => setHover(i)} onBlur={() => setHover(null)}
-                className="relative flex flex-col items-center justify-end outline-none" style={{ paddingBottom: 0, height: H + 22 }}>
+                className="relative flex flex-col items-center justify-end rounded-lg focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest-500" style={{ paddingBottom: 0, height: H + 22 }}>
                 {d.match ? (
                   <div className="mb-1 flex flex-col items-center gap-1 text-[11px] font-semibold text-forest-700">
                     <span className="grid h-8 w-8 place-items-center rounded-full bg-forest-600 text-cream"><Trophy size={15} aria-hidden="true" /></span>
@@ -35,7 +35,7 @@ export function WeekLoadChart({ days }: { days: LoadDay[] }) {
                   </div>
                 ) : d.load > 0 ? (
                   <>
-                    <span className="mb-1 text-[11px] font-semibold tabular-nums text-ink-soft">{d.load}</span>
+                    <span className="mb-1 text-[12px] font-semibold tabular-nums text-ink-soft">{d.load}</span>
                     <div className={cx('w-full max-w-[24px] rounded-t-[4px] transition-opacity', hover !== null && hover !== i && 'opacity-55')} style={{ height: h, background: LOAD_COLOR }} />
                   </>
                 ) : (
@@ -44,7 +44,7 @@ export function WeekLoadChart({ days }: { days: LoadDay[] }) {
                 {hover === i && (
                   <div className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 w-max max-w-[200px] -translate-x-1/2 rounded-lg bg-night-800 px-2.5 py-1.5 text-xs text-cream shadow-lift">
                     <div className="font-semibold">{d.match ? t('week.matchDay', { opponent: d.match }) : t('week.loadValue', { load: d.load, minutes: d.minutes })}</div>
-                    <div className="text-cream/75">{fmtDay(d.date, lang)}{d.label ? ` · ${d.label}` : ''}</div>
+                    <div className="text-cream/75">{fmtDay(d.date, lang)}{d.label ? ` (${d.label})` : ''}</div>
                   </div>
                 )}
               </div>
@@ -55,8 +55,8 @@ export function WeekLoadChart({ days }: { days: LoadDay[] }) {
       <div className="mt-1.5 grid grid-cols-7 gap-1 text-center sm:gap-2" aria-hidden="true">
         {days.map((d) => (
           <div key={d.date} className="min-w-0">
-            <div className={cx('text-[11px] font-semibold uppercase', d.today ? 'text-terra-600' : 'text-ink-muted')}>{fmtDate(d.date, lang, { weekday: 'narrow' })}</div>
-            <div className="truncate text-[10px] text-ink-faint">{d.label || ' '}</div>
+            <div className={cx('text-[12px] font-semibold', d.today ? 'text-forest-700 underline decoration-2 underline-offset-4' : 'text-ink-muted')}>{fmtDate(d.date, lang, { weekday: 'narrow' })}</div>
+            <div className="truncate text-[11px] tabular-nums text-ink-faint">{d.label || ' '}</div>
           </div>
         ))}
       </div>

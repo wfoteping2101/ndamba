@@ -10,6 +10,7 @@ const Library = lazy(() => import('./surfaces/site/Library'))
 const Pricing = lazy(() => import('./surfaces/site/Pricing'))
 const Settings = lazy(() => import('./surfaces/site/Settings'))
 const Review = lazy(() => import('./surfaces/site/Review'))
+const Brand = lazy(() => import('./surfaces/site/Brand'))
 // Mola (onboarding + action agent)
 const Onboarding = lazy(() => import('./surfaces/mola/Onboarding'))
 const MolaHub = lazy(() => import('./surfaces/mola/MolaHub'))
@@ -53,6 +54,7 @@ export default function App() {
               <Route path="livres" element={<Library />} />
               <Route path="premium" element={<Pricing />} />
               <Route path="revue" element={<Review />} />
+              <Route path="marque" element={<Brand />} />
             </Route>
             <Route path="bienvenue" element={<Onboarding />} />
             <Route path="app" element={<AppLayout />}>

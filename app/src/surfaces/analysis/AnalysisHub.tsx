@@ -21,7 +21,7 @@ export default function AnalysisHub() {
   const { t } = useT('analysis')
   const { team, profile } = useSession()
   useDocumentTitle(t('hub.title'))
-  const header = <PageHeader eyebrow={t('hub.eyebrow')} title={t('hub.title')} subtitle={t('hub.subtitle', { app: BRAND.name })} />
+  const header = <PageHeader title={t('hub.title')} subtitle={t('hub.subtitle', { app: BRAND.name })} />
   if (!team) return <div>{header}<CreateTeam /></div>
   return <Hub team={team} free={profile?.plan === 'free'} header={header} />
 }
@@ -62,7 +62,11 @@ function Hub({ team, free, header }: { team: Team; free: boolean; header: JSX.El
       {next ? (
         <div className="space-y-3">
           <NextCard match={next} team={team} events={analysis.events.get(next.id)?.length ?? 0} gated={gated(next)} />
-          {later.map((m) => <ToTagRow key={m.id} match={m} events={analysis.events.get(m.id)?.length ?? 0} gated={gated(m)} past={m.date < today} />)}
+          {later.length > 0 && (
+            <ul className="card divide-y divide-line overflow-hidden">
+              {later.map((m) => <li key={m.id}><ToTagRow match={m} events={analysis.events.get(m.id)?.length ?? 0} gated={gated(m)} past={m.date < today} /></li>)}
+            </ul>
+          )}
         </div>
       ) : (
         <div className="rounded-2xl border border-dashed border-line bg-paper/60 px-5 py-6 text-center">
@@ -77,10 +81,10 @@ function Hub({ team, free, header }: { team: Team; free: boolean; header: JSX.El
     <section aria-labelledby="done-h">
       <h2 id="done-h" className="mb-3 font-display text-xl font-semibold text-ink">{t('hub.analysed')}</h2>
       {analysed.length || doneNoTags.length ? (
-        <div className="space-y-2.5">
-          {[...analysed].reverse().map(({ match, events, result }) => <AnalysedRow key={match.id} match={match} events={events} total={result.total} />)}
-          {doneNoTags.map((m) => <AnalysedRow key={m.id} match={m} events={[]} />)}
-        </div>
+        <ul className="card divide-y divide-line overflow-hidden">
+          {[...analysed].reverse().map(({ match, events, result }) => <li key={match.id}><AnalysedRow match={match} events={events} total={result.total} /></li>)}
+          {doneNoTags.map((m) => <li key={m.id}><AnalysedRow match={m} events={[]} /></li>)}
+        </ul>
       ) : <p className="rounded-2xl border border-dashed border-line bg-paper/60 px-5 py-6 text-sm text-ink-muted">{t('hub.analysedEmpty')}</p>}
     </section>
   )
@@ -114,8 +118,8 @@ function Hub({ team, free, header }: { team: Team; free: boolean; header: JSX.El
           <p className="mt-0.5 text-sm text-ink-muted">{t('hub.averagesHint', { count: analysed.length, n: analysed.length })}</p>
         </div>
         <div className="shrink-0 text-right">
-          <div className="font-display text-[30px] font-semibold leading-none tabular-nums text-forest-600">{fmtNjangi(season.total, lang)}</div>
-          <div className="mt-1 text-[11px] font-semibold text-ink-muted">{njangiLabel(season.total, lang)}</div>
+          <div className="font-display text-[32px] leading-none tabular-nums text-forest-600">{fmtNjangi(season.total, lang)}</div>
+          <div className="mt-1 text-[12px] font-semibold text-ink-muted">{njangiLabel(season.total, lang)}</div>
         </div>
       </div>
       <SubBars result={season} className="mt-4" />
@@ -123,15 +127,12 @@ function Hub({ team, free, header }: { team: Team; free: boolean; header: JSX.El
   )
 
   const explain = (
-    <section className="card overflow-hidden" aria-labelledby="what-h">
-      <div className="bg-night-800 px-5 py-4 text-cream sm:px-6">
-        <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-sun-300">{t('hub.eyebrow')}</div>
-        <h2 id="what-h" className="mt-0.5 font-display text-[20px] font-semibold">{t('hub.whatTitle')}</h2>
-      </div>
-      <div className="space-y-3 px-5 py-5 text-[14.5px] leading-6 text-ink-soft sm:px-6">
+    <section className="border-t border-line pt-6" aria-labelledby="what-h">
+      <h2 id="what-h" className="font-display text-[20px] text-ink">{t('hub.whatTitle')}</h2>
+      <div className="mt-3 max-w-[64ch] space-y-3 text-[15px] leading-7 text-ink-soft">
         <p>{t('hub.what1')}</p>
         <p>{t('hub.what2')}</p>
-        <blockquote className="border-l-4 border-sun-500 pl-3 font-display text-[16px] italic text-ink">{BRAND.motto[lang]}</blockquote>
+        <blockquote className="border-l-2 border-forest-500 pl-3 text-[16px] font-semibold italic text-ink">{BRAND.motto[lang]}</blockquote>
         <a href={`${BOOKS.methode.href}#ch-32`} className="link inline-flex min-h-[44px] items-center gap-1.5"><BookOpen size={16} />{t('hub.readChapter', { book: BOOKS.methode.title[lang] })}</a>
       </div>
     </section>
@@ -140,7 +141,7 @@ function Hub({ team, free, header }: { team: Team; free: boolean; header: JSX.El
   const videoCard = (
     <section className="card card-pad" aria-labelledby="video-h">
       <div className="flex items-start gap-3">
-        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-terra-50 text-terra-600"><Film size={20} /></span>
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-forest-50 text-forest-700"><Film size={20} strokeWidth={1.75} /></span>
         <div className="min-w-0 flex-1">
           <h2 id="video-h" className="font-display text-lg font-semibold text-ink">{t('hub.videoTitle')}</h2>
           <p className="mt-0.5 text-sm text-ink-muted">{t('hub.videoBody')}</p>
@@ -149,7 +150,7 @@ function Hub({ team, free, header }: { team: Team; free: boolean; header: JSX.El
       {videos.length > 0 && (
         <ul className="mt-3 divide-y divide-line/70">
           {[...videos].sort((a, b) => b.createdAt.localeCompare(a.createdAt)).slice(0, 3).map((v) => (
-            <li key={v.id}><Link to={`/app/analyse/video/${v.id}`} className="flex min-h-[44px] items-center gap-2 py-2 text-sm hover:text-forest-600"><Video size={15} className="shrink-0 text-ink-faint" /><span className="min-w-0 flex-1 truncate font-medium text-ink">{v.title}</span><span className="shrink-0 text-xs text-ink-faint">{t('video.tags', { n: v.tags.length })}</span></Link></li>
+            <li key={v.id}><Link to={`/app/analyse/video/${v.id}`} className="flex min-h-[44px] items-center gap-2 py-2 text-sm hover:text-forest-600"><Video size={15} className="shrink-0 text-ink-faint" /><span className="min-w-0 flex-1 truncate font-medium text-ink">{v.title}</span><span className="shrink-0 text-xs text-ink-faint">{t('video.tags', { count: v.tags.length })}</span></Link></li>
           ))}
         </ul>
       )}
@@ -181,8 +182,8 @@ function DateChip({ iso, dark = false }: { iso: string; dark?: boolean }) {
   const { lang } = useT('analysis')
   return (
     <div className={cx('flex w-14 shrink-0 flex-col items-center rounded-xl py-1.5 text-center', dark ? 'bg-white/10 text-cream' : 'bg-sand text-ink')}>
-      <span className={cx('text-[10px] font-semibold uppercase tracking-wide', dark ? 'text-cream/70' : 'text-ink-muted')}>{fmtDate(iso, lang, { weekday: 'short' }).replace('.', '')}</span>
-      <span className="font-display text-2xl font-semibold leading-none">{parseISODate(iso).getDate()}</span>
+      <span className={cx('text-[11px] font-semibold', dark ? 'text-cream/70' : 'text-ink-muted')}>{fmtDate(iso, lang, { weekday: 'short' }).replace('.', '')}</span>
+      <span className="font-display text-2xl leading-none tabular-nums">{parseISODate(iso).getDate()}</span>
       <span className={cx('text-[11px] font-medium', dark ? 'text-cream/80' : 'text-ink-muted')}>{fmtDate(iso, lang, { month: 'short' }).replace('.', '')}</span>
     </div>
   )
@@ -202,18 +203,17 @@ function LiveButton({ match, events, gated, big = false }: { match: Match; event
 function NextCard({ match, team, events, gated }: { match: Match; team: Team; events: number; gated: boolean }) {
   const { t, lang } = useT('analysis')
   return (
-    <div className="relative overflow-hidden rounded-[24px] bg-night-800 p-5 text-cream shadow-card sm:p-6">
-      <div className="pointer-events-none absolute -right-16 -top-20 h-60 w-60 rounded-full border-[14px] border-white/[0.04]" aria-hidden="true" />
-      <div className="relative flex items-center gap-2">
-        <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-sun-300">{match.status === 'live' ? t('hub.live') : t('hub.next')}</span>
-        {match.status === 'live' && <span className="h-2 w-2 animate-pulse rounded-full bg-clay-300" />}
-        {events > 0 && <span className="text-[11px] text-cream/60">{t('hub.tags', { n: events })}</span>}
+    <div className="relative overflow-hidden rounded-[22px] bg-night-800 p-5 text-cream sm:p-6 [&_:focus-visible]:outline-cream">
+      <div className="relative flex items-center gap-2.5">
+        {match.status === 'live' && <span className="h-2 w-2 animate-pulse rounded-full bg-clay-300" aria-hidden="true" />}
+        <span className="text-[13px] font-semibold text-cream/75">{match.status === 'live' ? t('hub.live') : t('hub.next')}</span>
+        {events > 0 && <span className="text-[12.5px] tabular-nums text-cream/60">{t('hub.tags', { count: events })}</span>}
       </div>
       <div className="relative mt-4 flex items-start gap-4">
         <DateChip iso={match.date} dark />
         <div className="min-w-0 flex-1">
-          <div className="text-xs text-cream/65">{team.name} · {match.home ? t('report.atHome') : t('report.away')}</div>
-          <div className="mt-1 font-display text-[26px] font-semibold leading-[1.1] sm:text-[30px]"><span className="mr-1.5 font-sans text-[15px] font-medium text-cream/60">{t('common:app.vs')}</span>{match.opponent}</div>
+          <div className="text-[13px] text-cream/70">{[match.competition, match.home ? t('report.atHome') : t('report.away')].filter(Boolean).join(', ')}</div>
+          <div className="mt-1 font-display text-[26px] leading-[1.1] sm:text-[30px]"><span className="mr-1.5 font-sans text-[15px] font-medium text-cream/60">{t('common:app.vs')}</span>{match.opponent}</div>
           <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[13px] text-cream/75">
             <span>{fmtDate(match.date, lang, { weekday: 'long', day: 'numeric', month: 'long' })}{match.time ? `, ${match.time}` : ''}</span>
             {match.venue && <span className="inline-flex items-center gap-1"><MapPin size={13} />{match.venue}</span>}
@@ -232,13 +232,13 @@ function NextCard({ match, team, events, gated }: { match: Match; team: Team; ev
 function ToTagRow({ match, events, gated, past }: { match: Match; events: number; gated: boolean; past: boolean }) {
   const { t } = useT('analysis')
   return (
-    <div className="card flex flex-wrap items-center gap-3 p-3 sm:flex-nowrap sm:p-4">
+    <div className="flex flex-wrap items-center gap-3 p-3 sm:flex-nowrap sm:px-4">
       <DateChip iso={match.date} />
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-1.5">
           {match.status === 'live' && <span className="inline-flex items-center gap-1.5 rounded-full bg-clay-500 px-2 py-0.5 text-[11px] font-semibold text-white"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-white" />{t('hub.live')}</span>}
           {past && match.status === 'planned' && <span className="rounded-full bg-sun-50 px-2 py-0.5 text-[11px] font-semibold text-sun-700">{t('hub.pastDate')}</span>}
-          <span className="text-[11.5px] text-ink-muted">{match.home ? t('hub.home') : t('hub.away')}{match.time ? ` · ${match.time}` : ''}</span>
+          <span className="text-[12.5px] text-ink-muted">{match.home ? t('report.atHome') : t('report.away')}{match.time ? `, ${match.time}` : ''}</span>
         </div>
         <div className="mt-0.5 truncate text-[16px] font-semibold text-ink"><span className="mr-1 text-[13px] font-normal text-ink-faint">{t('common:app.vs')}</span>{match.opponent}</div>
       </div>
@@ -250,20 +250,22 @@ function ToTagRow({ match, events, gated, past }: { match: Match; events: number
 function AnalysedRow({ match, events, total }: { match: Match; events: MatchEvent[]; total?: number }) {
   const { t, lang } = useT('analysis')
   const res = match.scoreUs > match.scoreThem ? 'W' : match.scoreUs < match.scoreThem ? 'L' : 'D'
-  const resTone = res === 'W' ? 'bg-forest-600 text-cream' : res === 'L' ? 'bg-clay-500 text-white' : 'bg-sand text-ink-soft'
+  const resTone = res === 'W' ? 'bg-forest-50 text-forest-700' : res === 'L' ? 'bg-clay-50 text-clay-700' : 'bg-sand text-ink-soft'
   return (
-    <Link to={`/app/analyse/rapport/${match.id}`} className="card group flex items-center gap-3 p-3 transition hover:border-forest-300 sm:gap-4 sm:p-4">
-      {total != null ? <MiniDial value={total} size={52} /> : <span className="grid h-[52px] w-[52px] shrink-0 place-items-center rounded-full border-2 border-dashed border-line text-ink-faint"><Trophy size={18} /></span>}
+    <Link to={`/app/analyse/rapport/${match.id}`} className="group flex items-center gap-3 p-3 transition hover:bg-sand/50 sm:gap-4 sm:px-4">
+      {total != null ? <MiniDial value={total} size={52} /> : <span className="grid h-[52px] w-[52px] shrink-0 place-items-center rounded-full bg-sand text-ink-faint"><Trophy size={18} strokeWidth={1.75} /></span>}
       <div className="min-w-0 flex-1">
         <div className="text-[15.5px] font-semibold leading-snug text-ink"><span className="mr-1 text-[13px] font-normal text-ink-faint">{t('common:app.vs')}</span>{match.opponent}</div>
-        <div className="mt-0.5 line-clamp-2 text-[12.5px] text-ink-muted">
-          {fmtDate(match.date, lang, { day: 'numeric', month: 'short' })} · {total != null ? njangiLabel(total, lang) : t('hub.noTags')}{events.length ? ` · ${t('hub.tags', { n: events.length })}` : ''}
+        <div className="mt-0.5 flex flex-wrap gap-x-3 text-[12.5px] text-ink-muted">
+          <span>{fmtDate(match.date, lang, { day: 'numeric', month: 'short' })}</span>
+          <span className={total != null ? 'font-medium text-ink-soft' : undefined}>{total != null ? njangiLabel(total, lang) : t('hub.noTags')}</span>
+          {events.length > 0 && <span className="tabular-nums">{t('hub.tags', { count: events.length })}</span>}
         </div>
       </div>
       <div className="flex shrink-0 items-center gap-2">
         <div className="text-right">
-          <div className="font-display text-xl font-semibold tabular-nums leading-none text-ink">{match.scoreUs}<span className="px-0.5 text-ink-faint">-</span>{match.scoreThem}</div>
-          {match.status === 'done' && <span className={cx('mt-1 inline-block rounded px-1.5 text-[10.5px] font-bold', resTone)}>{t(`report.result.${res}`)}</span>}
+          <div className="font-display text-xl tabular-nums leading-none text-ink">{match.scoreUs}<span className="px-1 text-ink-faint">-</span>{match.scoreThem}</div>
+          {match.status === 'done' && <span className={cx('mt-1.5 inline-block rounded-full px-2 text-[11px] font-semibold', resTone)}>{t(`report.result.${res}`)}</span>}
         </div>
         <ChevronRight size={18} className="text-ink-faint transition group-hover:translate-x-0.5" />
       </div>
@@ -288,8 +290,8 @@ function CreateTeam() {
   return (
     <div className="card mx-auto max-w-xl overflow-hidden">
       <div className="bg-forest-600 px-5 py-5 text-cream sm:px-6">
-        <Shirt size={26} className="text-sun-300" />
-        <h2 className="mt-2 font-display text-[22px] font-semibold">{t('hub.noTeamTitle')}</h2>
+        <Shirt size={26} strokeWidth={1.75} className="text-cream/80" />
+        <h2 className="mt-2 font-display text-[22px]">{t('hub.noTeamTitle')}</h2>
         <p className="mt-1 text-[14.5px] text-cream/80">{t('hub.noTeamBody', { app: BRAND.name })}</p>
       </div>
       <form onSubmit={submit} className="px-5 py-5 sm:px-6">

@@ -44,15 +44,15 @@ export function PrintSheet({ s, team }: { s: Session; team?: Team | null }) {
       <div className="nj-print" aria-hidden="true">
         <header className="mb-3 flex items-end justify-between gap-4 border-b-2 border-forest-600 pb-2">
           <div>
-            <div className="text-[8pt] font-bold uppercase tracking-[0.18em] text-terra-600">{BRAND.name} · {team?.name ?? t('sheet.session')}</div>
-            <h1 className="font-display text-[20pt] font-semibold leading-tight">{s.title}</h1>
+            <div className="text-[8.5pt] font-semibold text-forest-700">{team?.name ?? t('sheet.session')}</div>
+            <h1 className="font-display text-[20pt] leading-tight">{s.title}</h1>
             <div className="text-[9.5pt] text-ink-soft">
-              {fmtDate(s.date, lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })} · {t(`common:md.${s.md}`)}
-              {s.intention ? ` · ${t('fields.intention')}${t('colon')}${t(`common:intentions.${s.intention}`)}` : ''}
+              {fmtDate(s.date, lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}, {t(`common:md.${s.md}`)}
+              {s.intention ? `. ${t('fields.intention')}${t('colon')}${t(`common:intentions.${s.intention}`)}` : ''}
             </div>
           </div>
           <div className="shrink-0 text-right">
-            <div className="font-display text-[22pt] font-semibold leading-none text-forest-600">{total}<span className="text-[10pt]"> min</span></div>
+            <div className="font-display text-[22pt] leading-none tabular-nums text-forest-600">{total}<span className="text-[10pt]"> min</span></div>
             <div className="text-[8.5pt] text-ink-muted">{t('blocksCount', { count: n })}</div>
             <div className="mt-1 w-[42mm]"><IntensityProfile session={s} height={16} /></div>
           </div>
@@ -69,10 +69,10 @@ export function PrintSheet({ s, team }: { s: Session; team?: Team | null }) {
                 </div>
                 <div className="min-w-0 flex-1">
                   <div className="flex items-baseline justify-between gap-2">
-                    <div className="font-semibold"><span className="mr-1 text-forest-600">{i + 1}.</span>{b.drillId && <span className="mr-1 font-mono text-[9pt] text-ink-muted">{b.drillId}</span>}{blockTitle(b, lang) || t('builder.freeBlock')}</div>
-                    <div className="shrink-0 text-[9pt] font-semibold tabular-nums">{from}' {t('to')} {from + b.minutes}' · {b.minutes} min · {t(`common:intensity.${blockIntensity(b, s.md)}`)}</div>
+                    <div className="font-semibold"><span className="mr-1 text-forest-600">{i + 1}.</span>{b.drillId && <span className="mr-1 text-[9pt] tabular-nums text-ink-muted">{b.drillId}</span>}{blockTitle(b, lang) || t('builder.freeBlock')}</div>
+                    <div className="shrink-0 text-[9pt] font-semibold tabular-nums">{from}' {t('to')} {from + b.minutes}', {b.minutes} min, {t(`common:intensity.${blockIntensity(b, s.md)}`).toLowerCase()}</div>
                   </div>
-                  {tx && <div className="text-[9pt] italic text-ink-soft">{tx.subtitle}{d ? ` · ${lang === 'en' ? d.players.en : d.players.fr} · ${d.space.w} x ${d.space.h} m` : ''}</div>}
+                  {tx && <div className="text-[9pt] italic text-ink-soft">{tx.subtitle}{d ? `. ${lang === 'en' ? d.players.en : d.players.fr}, ${d.space.w} x ${d.space.h} m` : ''}</div>}
                   {tx?.coaching?.length ? (
                     <ul className="mt-1 list-disc pl-4 text-[9.5pt] leading-snug">
                       {tx.coaching.slice(0, maxPoints).map((c, k) => <li key={k}>{c}</li>)}
@@ -86,8 +86,8 @@ export function PrintSheet({ s, team }: { s: Session; team?: Team | null }) {
         </ol>
         {s.notes && <p className="mt-2 text-[9.5pt]"><b>{t('builder.sessionNotes')}{t('colon').trimEnd()}</b> {s.notes}</p>}
         <footer className="mt-4 border-t-2 border-forest-600 pt-2 text-center">
-          <div className="font-display text-[13pt] italic text-forest-700">{lang === 'fr' ? `« ${t('common:brand.motto')} »` : `“${t('common:brand.motto')}”`}</div>
-          <div className="mt-0.5 text-[7.5pt] text-ink-faint">{t('common:footer.methode')} · {BRAND.name}</div>
+          <div className="text-[12pt] font-semibold italic text-forest-700">{lang === 'fr' ? `« ${t('common:brand.motto')} »` : `“${t('common:brand.motto')}”`}</div>
+          <div className="mt-0.5 text-[7.5pt] text-ink-faint">{t('sheet.footer', { book: t('common:footer.methode'), app: BRAND.name })}</div>
         </footer>
       </div>
     </>,

@@ -46,7 +46,7 @@ export function NjangiGauge({ total, size = 240, dark = false, showLabel = true 
   const end = start + (GAUGE_SWEEP * v) / 100
   const c = 100, r = 82
   const band = njangiBand(v)
-  const fill = band >= 3 ? '#0B5D3B' : band === 2 ? '#13804F' : band === 1 ? '#BF5A2E' : '#D7263D'
+  const fill = band >= 3 ? '#0B5D3B' : band === 2 ? '#13804F' : band === 1 ? '#E8798A' : '#D7263D'
   return (
     <figure className="flex flex-col items-center" aria-label={`Indice Njangi ${fmtNjangi(v, lang)} / 100, ${njangiLabel(v, lang)}`}>
       <svg viewBox="0 0 200 178" width={size} height={size * 0.89} role="img" aria-hidden="true">
@@ -58,12 +58,8 @@ export function NjangiGauge({ total, size = 240, dark = false, showLabel = true 
           const [x1, y1] = polar(c, c, r - 19, a)
           return <line key={b} x1={x0} y1={y0} x2={x1} y2={y1} stroke={dark ? 'rgba(255,255,255,.35)' : '#94A198'} strokeWidth="1.5" strokeLinecap="round" />
         })}
-        {[0, 100].map((b) => {
-          const [lx, ly] = polar(c, c, r - 30, start + (GAUGE_SWEEP * b) / 100)
-          return <text key={b} x={lx} y={ly + 4} textAnchor="middle" fontSize="10" fill={dark ? 'rgba(251,247,238,.55)' : '#94A198'} fontFamily="Inter, sans-serif">{b}</text>
-        })}
-        <text x={c} y={c + 8} textAnchor="middle" fontSize="48" fontWeight="650" fill={dark ? '#F6F7F2' : '#12211A'} fontFamily="Inter, sans-serif" style={{ letterSpacing: '-0.03em' }}>{fmtNjangi(v, lang)}</text>
-        <text x={c} y={c + 30} textAnchor="middle" fontSize="11" fill={dark ? 'rgba(251,247,238,.6)' : '#5D6C63'} fontFamily="Inter, sans-serif">{t('report.outOf100')}</text>
+        <text x={c} y={c + 10} textAnchor="middle" fontSize="46" fontWeight="780" fill={dark ? '#F6F7F2' : '#12211A'} style={{ letterSpacing: '-0.02em', fontStretch: '116%', fontVariantNumeric: 'tabular-nums lining-nums' }}>{fmtNjangi(v, lang)}</text>
+        <text x={c} y={c + 32} textAnchor="middle" fontSize="11" fontWeight="500" fill={dark ? 'rgba(246,247,242,.6)' : '#5D6C63'}>{t('report.outOf100')}</text>
       </svg>
       {showLabel && <figcaption className={cx('-mt-3 text-center font-display text-lg font-semibold', dark ? 'text-cream' : 'text-ink')}>{njangiLabel(v, lang)}</figcaption>}
     </figure>
@@ -72,7 +68,9 @@ export function NjangiGauge({ total, size = 240, dark = false, showLabel = true 
 
 /* ------------------------------------------------------------------ sub-index bars */
 
-const levelTone = ['text-clay-600', 'text-terra-600', 'text-forest-600']
+const levelTone = ['text-clay-600', 'text-ink-muted', 'text-forest-700']
+const levelBar = ['bg-clay-500', 'bg-forest-300', 'bg-forest-600']
+const levelBarDark = ['bg-clay-300', 'bg-forest-300/60', 'bg-forest-300']
 
 /** One sub-index: name, value out of 20, bar. */
 export function SubBar({ k, value, prev, compact = false, dark = false }: { k: SubKey; value: number; prev?: number; compact?: boolean; dark?: boolean }) {
@@ -86,11 +84,11 @@ export function SubBar({ k, value, prev, compact = false, dark = false }: { k: S
         <span className={cx('font-semibold', compact ? 'text-[12px]' : 'text-[15px]', dark ? 'text-cream/90' : 'text-ink')}>{t(`sub.${k}.name`)}</span>
         <span className={cx('tabular-nums', compact ? 'text-[12px]' : 'text-sm', dark ? 'text-cream' : 'text-ink')}>
           <b className="font-semibold">{fmt(value)}</b><span className={dark ? 'text-cream/50' : 'text-ink-faint'}> / 20</span>
-          {!compact && <span className={cx('ml-2 text-xs font-semibold', dark ? 'text-sun-300' : levelTone[lvl])}>{t(`level.${lvl}`)}</span>}
+          {!compact && <span className={cx('ml-2 inline-block min-w-[5.5rem] text-right text-xs font-semibold', dark ? (lvl === 0 ? 'text-clay-300' : 'text-cream/60') : levelTone[lvl])}>{t(`level.${lvl}`)}</span>}
         </span>
       </div>
       <div className={cx('relative w-full overflow-hidden rounded-full', compact ? 'h-1.5' : 'h-2.5', dark ? 'bg-white/10' : 'bg-sand')}>
-        <div className={cx('h-full rounded-full transition-all duration-500', dark ? 'bg-sun-500' : lvl === 0 ? 'bg-clay-500' : lvl === 1 ? 'bg-terra-500' : 'bg-forest-600')} style={{ width: `${pct}%` }} />
+        <div className={cx('h-full rounded-full transition-all duration-500', dark ? levelBarDark[lvl] : levelBar[lvl])} style={{ width: `${pct}%` }} />
         {prev != null && <div className="absolute top-0 h-full w-0.5 bg-ink/50" style={{ left: `calc(${Math.max(0, Math.min(100, (prev / 20) * 100))}% - 1px)` }} title="prev" />}
       </div>
     </div>
@@ -341,7 +339,7 @@ export function CompareBars({ cur, prev }: { cur: NjangiResult; prev: NjangiResu
           <div key={k}>
             <div className="mb-1 flex items-baseline justify-between text-sm">
               <span className="font-semibold text-ink">{t(`sub.${k}.name`)}</span>
-              <span className="tabular-nums text-ink-muted">{fmt(prev.sub[k])} <span className="text-ink-faint">{'>'}</span> <b className="text-ink">{fmt(cur.sub[k])}</b> <span className={cx('ml-1 font-semibold', d > 0 ? 'text-forest-600' : d < 0 ? 'text-clay-600' : 'text-ink-faint')}>{d > 0 ? '+' : ''}{fmt(d)}</span></span>
+              <span className="tabular-nums text-ink-muted">{fmt(prev.sub[k])} <span className="text-ink-faint" aria-hidden="true">{'>'}</span> <b className="text-ink">{fmt(cur.sub[k])}</b> <span className={cx('ml-1 font-semibold', d > 0 ? 'text-forest-600' : d < 0 ? 'text-clay-600' : 'text-ink-faint')}>{d > 0 ? '+' : ''}{fmt(d)}</span></span>
             </div>
             <div className="space-y-1">
               <div className="h-1.5 overflow-hidden rounded-full bg-sand"><div className="h-full rounded-full bg-ink-faint" style={{ width: `${(prev.sub[k] / 20) * 100}%` }} /></div>
@@ -356,7 +354,7 @@ export function CompareBars({ cur, prev }: { cur: NjangiResult; prev: NjangiResu
 
 /* ------------------------------------------------------------------ mini dial */
 
-const dialColor = (v: number) => ['#D7263D', '#BF5A2E', '#F5B700', '#13804F', '#0B5D3B'][njangiBand(v)]
+const dialColor = (v: number) => ['#D7263D', '#E8798A', '#73B391', '#13804F', '#0B5D3B'][njangiBand(v)]
 
 /** The Indice as a small ring, for lists. */
 export function MiniDial({ value, size = 48 }: { value: number; size?: number }) {

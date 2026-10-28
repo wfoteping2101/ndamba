@@ -1,8 +1,6 @@
 // Home for players of 16 and over (U17 to senior professionals): the match week and the next match first,
 // then today's form and effort, the last match with the Indice Njangi, the objectives and the season.
-import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { Hash, Shirt } from 'lucide-react'
 import { useT } from '../../../i18n'
 import { useDocumentTitle } from '../../../lib/hooks'
 import { useSession } from '../../../lib/session'
@@ -10,8 +8,8 @@ import { BRAND } from '../../../lib/config'
 import { fmtNjangi } from '../../../lib/njangi'
 import { daysBetween } from '../../../lib/util'
 import { Spinner } from '../../team/components/journey/bits'
-import { Greeting, type RotatingLine } from './Greeting'
-import { CreateTeamCard } from './bits'
+import { Greeting, HeroFigures, type RotatingLine } from './Greeting'
+import { CreateTeamCard, mdParts } from './bits'
 import { isPlayerRole } from './data'
 import { FORM_MAX, formBand, usePerformance, type PerfData } from './perf/data'
 import { CheckInCard } from './perf/CheckIn'
@@ -33,10 +31,10 @@ export default function PerformanceHome() {
   return (
     <div>
       <PerfGreeting d={d} />
-      {!team && <CreateTeamCard compact senior className="mb-5" />}
+      {!team && <CreateTeamCard compact senior className="mb-6" />}
       {team && !d.me && <LinkCallout />}
 
-      <div className="grid grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 lg:gap-6">
         <div className="min-w-0 lg:col-span-2"><WeekCard d={d} /></div>
         <NextMatchCard d={d} />
         <div className="min-w-0 lg:col-span-2"><CheckInCard d={d} /></div>
@@ -50,6 +48,11 @@ export default function PerformanceHome() {
   )
 }
 
+/** Who the player is in this squad, as one sentence: position, number, team. */
+export function playerLine(t: (k: string, o?: Record<string, unknown>) => string, pos?: string, number?: number, team?: string, age?: string) {
+  return [pos ? t(`common:positions.${pos}`) : '', number !== undefined ? t('perf.hero.number', { n: number }) : '', team ?? '', age ?? ''].filter(Boolean).join(', ')
+}
+
 /** The greeting band: today's role in the week, the motto, and three numbers. */
 function PerfGreeting({ d }: { d: PerfData }) {
   const { t, lang } = useT('player')
@@ -57,40 +60,25 @@ function PerfGreeting({ d }: { d: PerfData }) {
   const m = d.matches.find((x) => x.date === d.today)
   const lines: RotatingLine[] = [
     m ? { label: t('perf.hero.matchDay'), text: m.time ? t('perf.hero.matchLine', { opponent: m.opponent, time: m.time }) : t('perf.hero.matchLineNoTime', { opponent: m.opponent }) }
-      : s ? { label: s.md === 'youth' ? t('perf.hero.today') : t('perf.hero.todayMd', { md: t(`common:md.${s.md}`) }), text: s.title }
+      : s ? { label: s.md === 'youth' ? t('perf.hero.today') : t('perf.hero.todayMd', { md: mdParts(t, s.md).full }), text: s.title }
         : { label: t('perf.hero.today'), text: t('perf.week.restTitle') },
     { label: t('greeting.motto'), text: BRAND.motto[lang] },
   ]
   const score = d.form.todayScore
   const days = d.next ? daysBetween(d.today, d.next.date) : null
   const pos = d.me?.position ?? d.profile?.position
+  const who = playerLine(t, pos, d.me?.number, d.team?.name)
   return (
     <Greeting name={d.profile?.name ?? ''} today={d.today} lines={lines} tone="night"
       aside={
-        <dl className="grid grid-cols-3 gap-2 text-center lg:w-[360px]">
-          <Mini label={t('perf.hero.form')} value={score !== null ? `${score}/${FORM_MAX}` : t('perf.hero.toLog')} sub={score !== null ? t(`perf.form.band.${formBand(score)}`) : undefined} />
-          <Mini label={t('perf.hero.load')} value={fmtInt(d.load.current, lang)} sub={t('perf.load.uaShort')} />
-          <Mini label={t('home.statNext')} value={days === null ? t('home.none') : days === 0 ? t('home.matchDay') : t('home.jMinus', { n: days })} sub={d.last?.result ? t('perf.hero.lastIndice', { v: fmtNjangi(d.last.result.total, lang) }) : undefined} />
-        </dl>
+        <HeroFigures className="lg:w-[400px]" items={[
+          { label: t('perf.hero.form'), value: score !== null ? `${score}/${FORM_MAX}` : t('perf.hero.toLog'), sub: score !== null ? t(`perf.form.band.${formBand(score)}`) : undefined },
+          { label: t('perf.hero.load'), value: fmtInt(d.load.current, lang), sub: t('perf.load.uaShort') },
+          { label: t('home.statNext'), value: days === null ? t('home.none') : days === 0 ? t('home.matchDay') : t('home.jMinus', { n: days }), sub: d.last?.result ? t('perf.hero.lastIndice', { v: fmtNjangi(d.last.result.total, lang) }) : undefined },
+        ]} />
       }>
-      {(pos || d.team) && (
-        <div className="mt-4 flex flex-wrap gap-1.5 text-[12.5px] font-semibold">
-          {pos && <span className="rounded-full border border-white/15 bg-white/10 px-2.5 py-1">{t(`common:positions.${pos}`)}</span>}
-          {d.me?.number !== undefined && <span className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-white/10 px-2.5 py-1"><Hash size={12} aria-hidden="true" />{d.me.number}</span>}
-          {d.team && <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/10 px-2.5 py-1"><Shirt size={13} aria-hidden="true" />{d.team.name}</span>}
-        </div>
-      )}
+      {who && <p className="mt-5 text-[14px] font-medium text-cream/70">{who}</p>}
     </Greeting>
-  )
-}
-
-function Mini({ label, value, sub }: { label: string; value: ReactNode; sub?: string }) {
-  return (
-    <div className="min-w-0 rounded-2xl bg-white/10 px-2 py-2.5">
-      <dt className="truncate text-[10.5px] font-semibold uppercase tracking-[0.08em] text-cream/65">{label}</dt>
-      <dd className="mt-0.5 truncate font-display text-[19px] font-semibold tabular-nums text-cream">{value}</dd>
-      {sub && <dd className="truncate text-[11px] text-cream/60">{sub}</dd>}
-    </div>
   )
 }
 
@@ -101,9 +89,9 @@ export function LinkCallout() {
   const staff = !isPlayerRole(profile?.role)
   const k = staff ? 'perf.linkStaff' : 'perf.link'
   return (
-    <div className="mb-5 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-sun-300 bg-sun-50 px-4 py-3">
-      <p className="min-w-0 flex-1 basis-64 text-sm text-ink-soft"><span className="font-semibold text-ink">{t(`${k}.title`)}</span> {t(`${k}.body`)}</p>
-      <Link to="/app/joueur/parcours" className="btn-dark btn-sm min-h-[44px]">{t(`${k}.cta`)}</Link>
+    <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-[14px] border border-line bg-paper px-4 py-3.5 sm:px-5">
+      <p className="min-w-0 flex-1 basis-64 text-[14.5px] text-ink-soft"><span className="font-semibold text-ink">{t(`${k}.title`)}</span> {t(`${k}.body`)}</p>
+      <Link to="/app/joueur/parcours" className="btn-primary btn-sm min-h-[44px] px-4">{t(`${k}.cta`)}</Link>
     </div>
   )
 }

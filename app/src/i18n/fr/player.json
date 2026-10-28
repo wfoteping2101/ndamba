@@ -50,7 +50,11 @@
     "more_one": "Et {{count}} autre séance aujourd'hui.",
     "more_other": "Et {{count}} autres séances aujourd'hui.",
     "methodDrill": "Exercice du Code Njangi",
-    "suggestFree": "Rien de prévu aujourd'hui, et pas de match à l'horizon. Je te propose une séance {{md}} : de grands espaces et du temps de jeu."
+    "suggestFree": "Rien de prévu aujourd'hui, et pas de match à l'horizon. Je te propose une séance {{md}} : de grands espaces et du temps de jeu.",
+    "intention": "Intention : {{intention}}",
+    "byMola": "Préparée par Mola",
+    "blocksLabel": "Déroulé de la séance",
+    "startsAt": "Commence à la minute {{n}}"
   },
   "mdWhy": {
     "MD-4": "Quatre jours avant le match : petits espaces et beaucoup de duels, c'est le jour le plus intense.",
@@ -80,7 +84,8 @@
     "weekCreated_one": "{{count}} séance préparée pour la semaine du match.",
     "weekCreated_other": "{{count}} séances préparées pour la semaine du match.",
     "weekReady": "La semaine est déjà prête : chaque jour avant le match a sa séance.",
-    "seeWeek": "Voir la semaine"
+    "seeWeek": "Voir la semaine",
+    "liveShort": "Direct"
   },
   "week": {
     "title": "La semaine",
@@ -93,7 +98,8 @@
     "sessions_other": "{{count}} séances",
     "rest": "repos",
     "legendSession": "Séance",
-    "legendMatch": "Match"
+    "legendMatch": "Match",
+    "range": "Du {{from}} au {{to}}, {{n}} min d'entraînement"
   },
   "indice": {
     "eyebrow": "Indice Njangi du dernier match",
@@ -109,7 +115,8 @@
     "weakest": "à travailler",
     "work": "Le point faible : {{sub}}. Cette semaine, l'intention à travailler est « {{intention}} ».",
     "prepare": "Préparer la semaine sur « {{intention}} »",
-    "report": "Voir le rapport"
+    "report": "Voir le rapport",
+    "againstLine": "Contre {{opponent}}, {{score}}, le {{date}}"
   },
   "subs": {
     "progression": "Progression",
@@ -119,8 +126,8 @@
     "controle": "Contrôle"
   },
   "mola": {
-    "title": "Mola propose",
-    "subtitle": "Ton agent : il agit pour toi",
+    "title": "Mola",
+    "subtitle": "Ton agent : il prépare, tu valides",
     "noTeam": "Donne-moi le nom de ton équipe et sa catégorie : je la crée et j'ajoute tes joueurs.",
     "missing_one": "Le match contre {{opponent}} est {{day}}. Il manque {{count}} séance avant : je la prépare ?",
     "missing_other": "Le match contre {{opponent}} est {{day}}. Il manque {{count}} séances avant : je les prépare ?",
@@ -128,7 +135,7 @@
     "indice": "Ton point faible au dernier match : {{sub}}. Je te montre les exercices qui le travaillent ?",
     "default": "Demande-moi une séance, un plan de semaine, un match ou un message aux parents : je m'en occupe.",
     "cta": "Parler à Mola",
-    "ask": "Tu peux aussi lui demander :",
+    "ask": "Tu peux aussi lui demander",
     "examples": {
       "session": "Prépare la séance de demain",
       "callup": "Écris la convocation du match",
@@ -331,7 +338,7 @@
     "radarTitle": "Mes dix compétences",
     "radarEmpty": "Choisis un niveau pour chaque compétence : ton radar se dessine ici.",
     "coachNote": "Le regard du coach vient de la fiche de l'équipe. Si vous ne voyez pas la même chose, parlez-en après l'entraînement.",
-    "updated": "Mis à jour le {{date}} · {{n}} sur 10",
+    "updated": "Mis à jour le {{date}}, {{n}} compétences sur 10",
     "private": "Gardé seulement sur cet appareil."
   },
   "skillHint": {
@@ -368,7 +375,7 @@
     "partsLabel": "Les cinq parties du voyage",
     "part": "Partie {{n}}",
     "partDone": "{{n}} sur {{total}} comprises",
-    "partRange": "Partie {{n}} · leçons {{from}} à {{to}}",
+    "partRange": "Partie {{n}}, leçons {{from}} à {{to}}",
     "nextPart": "Partie suivante : {{country}}",
     "charactersAlt": "{{heroes}}, les héros du roman"
   },
@@ -401,7 +408,7 @@
   },
   "lesson": {
     "number": "Leçon {{n}}",
-    "chapter": "Chapitre {{n}} · {{title}}",
+    "chapter": "Chapitre {{n}} : {{title}}",
     "writing": "Chapitre en cours d'écriture",
     "understood": "Comprise",
     "imgAlt": "Illustration du chapitre {{n}} : {{title}}",
@@ -471,11 +478,12 @@
       "matchLine": "Contre {{opponent}}, coup d'envoi à {{time}}.",
       "matchLineNoTime": "Contre {{opponent}}.",
       "today": "Aujourd'hui",
-      "todayMd": "Aujourd'hui · {{md}}",
+      "todayMd": "Aujourd'hui, {{md}}",
       "form": "Forme",
       "toLog": "À noter",
       "load": "Charge 7 j",
-      "lastIndice": "Indice {{v}}"
+      "lastIndice": "Indice {{v}}",
+      "number": "n° {{n}}"
     },
     "link": {
       "title": "Ta fiche n'est pas encore reliée.",
@@ -687,7 +695,8 @@
       "byStaff": "Fixé par le staff",
       "level": "Niveau actuel : {{level}}",
       "drills": "Les exercices du Code Njangi qui les travaillent",
-      "manage": "Gérer mes objectifs dans mon parcours"
+      "manage": "Gérer mes objectifs dans mon parcours",
+      "drillSub": "{{family}}, pour {{skill}}"
     },
     "season": {
       "eyebrow": "Saison {{label}}",
@@ -803,6 +812,7 @@
       "title": "Aperçu pour le staff.",
       "body": "Ici, chaque joueur de 16 ans et plus voit sa semaine, sa forme, sa charge et son dernier match. Choisis une fiche de l'effectif pour voir l'espace avec ses données.",
       "cta": "Choisir un joueur"
-    }
+    },
+    "none": "Pas encore"
   }
 }

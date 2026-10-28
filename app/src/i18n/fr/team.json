@@ -210,7 +210,9 @@
     "min": "{{n}} min",
     "gridNote": "Grille du chapitre 25 du Code Njangi. Une grille pour progresser, pas pour trier.",
     "profileNote": "Un portrait, pas un total : choisissez deux compétences à travailler pendant six à huit semaines.",
-    "levelIs": "{{level}} : "
+    "levelIs": "{{level}} : ",
+    "colProg": "Prog.",
+    "colRegain": "Rep. 5 s"
   },
   "matches": {
     "docTitle": "Matchs",
@@ -346,7 +348,8 @@
       "regenerate": "Régénérer le message",
       "edited": "Message modifié à la main",
       "saveFirst": "Le match sera enregistré avec ce message."
-    }
+    },
+    "nextStep": "Suivant : {{step}}"
   },
   "moments": {
     "possession": {

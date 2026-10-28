@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ArrowRight, Check, ChevronDown, GraduationCap, LoaderCircle, PlayCircle, RotateCcw, Trophy } from 'lucide-react'
+import { Check, ChevronDown, LoaderCircle, RotateCcw } from 'lucide-react'
 import { MolaMark } from '../../ui/brand'
 import i18n, { setLang, useT } from '../../i18n'
 import { db } from '../../lib/db'
@@ -14,6 +14,7 @@ import { LangSwitch, Logo } from '../../ui'
 import Chips from './components/Chips'
 import Composer from './components/Composer'
 import MolaAvatar, { TypingDots } from './components/MolaAvatar'
+import PassSteps from './components/PassSteps'
 import ProfileCard, { fieldValue, levelLabel } from './components/ProfileCard'
 import { parsePlayerList, type Lang } from './engine'
 import { postWelcome, tm } from './executors'
@@ -279,19 +280,22 @@ export default function Onboarding() {
   const fields = fieldsFor(draft.role)
   const done = fields.filter((f) => isFieldFilled(f, draft)).length
 
+  const summary = [draft.role ? t(`ob.roleShort.${draft.role}`) : '', draft.teamName || draft.club || '', draft.city || ''].filter(Boolean).join(', ')
+  const grid = step === 'role' || step === 'lang'
+
   /* ---------- an existing profile: offer to go back to the app ---------- */
   if (ready && profile && !restart && !creating) {
     return (
       <Shell onDemo={tryDemo} demoBusy={demoBusy}>
-        <div className="mx-auto flex max-w-lg flex-col items-center px-4 pb-16 pt-14 text-center sm:pt-24">
-          <MolaAvatar size={72} />
-          <h1 className="mt-5 text-[30px] font-semibold leading-tight text-ink sm:text-[36px]">{t('ob.back.title', { name: profile.name.split(' ')[0] })}</h1>
-          <p className="mt-2 text-[16px] text-ink-muted">{t('ob.back.body', { app: BRAND.name })}</p>
-          <div className="mt-7 flex w-full flex-col gap-2.5 sm:w-auto sm:flex-row">
-            <Link to="/app" className="btn-primary btn-lg whitespace-nowrap">{t('ob.back.open')}<ArrowRight size={18} aria-hidden="true" /></Link>
+        <div className="mx-auto flex max-w-lg flex-col items-center px-4 pb-16 pt-16 text-center sm:pt-28">
+          <MolaAvatar size={76} />
+          <h1 className="mt-6 text-[32px] text-ink sm:text-[40px]">{t('ob.back.title', { name: profile.name.split(' ')[0] })}</h1>
+          <p className="mt-3 text-[16px] text-ink-muted">{t('ob.back.body', { app: BRAND.name })}</p>
+          <div className="mt-8 flex w-full flex-col gap-2.5 sm:w-auto sm:flex-row">
+            <Link to="/app" className="btn-primary btn-lg whitespace-nowrap">{t('ob.back.open')}</Link>
             <button type="button" className="btn-outline btn-lg" onClick={startOver}><RotateCcw size={17} aria-hidden="true" />{t('ob.back.restart')}</button>
           </div>
-          <p className="mt-4 max-w-sm text-[13px] text-ink-faint">{t('ob.back.note')}</p>
+          <p className="mt-5 max-w-sm text-[13.5px] leading-relaxed text-ink-muted">{t('ob.back.note')}</p>
         </div>
       </Shell>
     )
@@ -299,66 +303,71 @@ export default function Onboarding() {
 
   return (
     <Shell onDemo={tryDemo} demoBusy={demoBusy}>
-      <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-8 lg:px-6 lg:py-6">
-        <section className="flex h-[calc(100dvh-3.5rem)] min-h-0 flex-col sm:h-[calc(100dvh-4rem)] lg:card lg:h-[calc(100dvh-7rem)] lg:overflow-hidden" aria-label={t('ob.chatLabel')}>
-          {/* phone: the profile, collapsible */}
-          <div className="border-b border-line bg-paper/80 lg:hidden">
-            <button type="button" onClick={() => setCardOpen(!cardOpen)} aria-expanded={cardOpen} className={cx('flex min-h-[52px] w-full items-center gap-3 px-4 text-left', flash.length > 0 && 'mola-flash')}>
+      <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,1fr)_372px] lg:gap-12 lg:px-6">
+        <section className="flex h-[calc(100dvh-3.5rem)] min-h-0 flex-col sm:h-[calc(100dvh-4rem)]" aria-label={t('ob.chatLabel')}>
+          {/* phone: the licence, folded */}
+          <div className="border-b border-line bg-paper lg:hidden">
+            <button type="button" onClick={() => setCardOpen(!cardOpen)} aria-expanded={cardOpen} className={cx('flex min-h-[58px] w-full items-center gap-3 px-4 text-left', flash.length > 0 && 'mola-flash')}>
+              <ProgressRing value={done} max={fields.length} />
               <span className="min-w-0 flex-1">
-                <span className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-terra-600">{t('ob.card.eyebrow')}</span>
-                <span className="block truncate text-[14px] font-medium text-ink">{draft.name || t('ob.card.title')}{draft.role ? ` · ${t(`ob.roleShort.${draft.role}`)}` : ''}{draft.city ? ` · ${draft.city}` : ''}</span>
+                <span className="block truncate text-[15px] font-semibold text-ink">{draft.name || t('ob.card.eyebrow')}</span>
+                <span className="block truncate text-[13px] text-ink-muted">{summary || t('ob.card.title')}</span>
               </span>
-              <span className="text-[12px] font-semibold tabular-nums text-ink-muted">{done}/{fields.length}</span>
+              <span className="text-[12.5px] font-semibold tabular-nums text-ink-muted">{t('ob.card.count', { done, total: fields.length })}</span>
               <ChevronDown size={18} className={cx('shrink-0 text-ink-muted transition', cardOpen && 'rotate-180')} aria-hidden="true" />
             </button>
-            {cardOpen && <div className="max-h-[42dvh] overflow-y-auto px-3 pb-3"><ProfileCard draft={draft} onEdit={onEdit} flash={flash} header={<span />} /></div>}
+            {cardOpen && <div className="max-h-[46dvh] overflow-y-auto border-t border-line"><ProfileCard draft={draft} onEdit={onEdit} flash={flash} bare className="rounded-none border-0" /></div>}
           </div>
 
-          <div ref={scroller} className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 py-5 sm:px-6" aria-live="polite">
-            <div className="mx-auto max-w-2xl space-y-3">
-              {msgs.map((m, i) => m.from === 'user' ? (
-                <div key={m.id} className="mola-in flex justify-end">
-                  <div className="max-w-[86%] whitespace-pre-line rounded-2xl rounded-br-md bg-forest-600 px-4 py-2.5 text-[15px] leading-relaxed text-cream">{m.text}</div>
+          <div ref={scroller} className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 pb-6 pt-6 sm:px-6 lg:px-0 lg:pt-10" aria-live="polite">
+            <div className="mx-auto max-w-[680px]">
+              <div className="mb-8 flex items-center gap-4 border-b border-line pb-6">
+                <MolaAvatar size={56} />
+                <div className="min-w-0">
+                  <div className="font-display text-[28px] leading-none text-ink">{t('name')}</div>
+                  <p className="mt-2 text-[14.5px] leading-snug text-ink-muted">{t('ob.intro', { app: BRAND.name })}</p>
                 </div>
-              ) : (
-                <div key={m.id} className="mola-in flex items-start gap-2.5">
-                  <span className="w-9 shrink-0">{msgs[i - 1]?.from !== 'mola' && <MolaAvatar size={36} busy={typing || creating} ring={i === 0 || msgs[i - 1]?.from === 'user'} />}</span>
-                  <div className="max-w-[88%] rounded-2xl rounded-tl-md border border-line bg-paper px-4 py-3 shadow-card">
-                    <p className="whitespace-pre-line text-[15px] leading-relaxed text-ink">{m.text}</p>
-                    {m.steps && (
-                      <ul className="mt-2.5 space-y-1.5">
-                        {m.steps.map((s, j) => (
-                          <li key={j} className="flex items-center gap-2.5 text-[14px]">
-                            <span className={cx('grid h-5 w-5 place-items-center rounded-full', s.done ? 'bg-forest-600 text-cream' : 'bg-sand text-ink-muted')}>
-                              {s.done ? <Check size={12} strokeWidth={3} /> : <LoaderCircle size={12} className="motion-safe:animate-spin" />}
-                            </span>
-                            <span className={s.done ? 'text-ink-soft' : 'text-ink-muted'}>{s.label}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+              </div>
+
+              <div>
+                {msgs.map((m, i) => {
+                  const grouped = msgs[i - 1]?.from === m.from
+                  if (m.from === 'user') return (
+                    <div key={m.id} className={cx('mola-in flex justify-end', i === 0 ? '' : grouped ? 'mt-1.5' : 'mt-5')}>
+                      <div className="max-w-[82%] whitespace-pre-line rounded-[18px] rounded-br-[6px] bg-forest-600 px-4 py-2.5 text-[15px] leading-relaxed text-cream">{m.text}</div>
+                    </div>
+                  )
+                  const firstOpen = m.steps ? m.steps.findIndex((s) => !s.done) : -1
+                  return (
+                    <div key={m.id} className={cx('mola-in flex items-start gap-3', i === 0 ? '' : grouped ? 'mt-2' : 'mt-5')}>
+                      <span className="w-8 shrink-0">{!grouped && <MolaAvatar size={32} ring={false} />}</span>
+                      <div className="min-w-0 max-w-[62ch] flex-1 pt-[5px]">
+                        <p className="whitespace-pre-line text-[16px] leading-[1.6] text-ink">{m.text}</p>
+                        {m.steps && <PassSteps className="mt-3" steps={m.steps.map((s, j) => ({ label: s.label, state: s.done ? 'done' : j === firstOpen ? 'running' : 'todo' }))} />}
+                      </div>
+                    </div>
+                  )
+                })}
+                {typing && (
+                  <div className={cx('mola-in flex items-center gap-3', msgs.length && 'mt-5')}>
+                    <span className="w-8 shrink-0"><MolaAvatar size={32} busy /></span>
+                    <TypingDots label={t('typing')} />
                   </div>
-                </div>
-              ))}
-              {typing && (
-                <div className="mola-in flex items-center gap-2.5">
-                  <span className="w-9 shrink-0"><MolaAvatar size={36} busy /></span>
-                  <div className="rounded-2xl rounded-tl-md border border-line bg-paper px-4 py-2.5 shadow-card"><TypingDots label={t('typing')} /></div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
           </div>
 
-          <div className="safe-bottom border-t border-line bg-paper/95 px-4 pb-3 pt-3 sm:px-6">
-            <div className="mx-auto max-w-2xl space-y-2.5">
+          <div className="safe-bottom border-t border-line bg-cream px-4 pb-3 pt-3 sm:px-6 lg:px-0 lg:pb-6">
+            <div className="mx-auto max-w-[680px] space-y-2.5">
               {!typing && step === 'goals' && (
                 <div className="space-y-2.5">
-                  <div className="flex flex-wrap gap-2" role="group" aria-label={t('ob.field.goals')}>
+                  <div className="flex flex-wrap gap-1.5" role="group" aria-label={t('ob.field.goals')}>
                     {goalsFor(draft.role).map((g) => {
                       const on = goalSel.includes(g)
                       return (
                         <button key={g} type="button" aria-pressed={on} onClick={() => setGoalSel(on ? goalSel.filter((x) => x !== g) : [...goalSel, g])}
-                          className={cx('inline-flex min-h-[44px] items-center gap-1.5 rounded-full border px-3.5 text-[14px] font-medium transition sm:min-h-[38px]', on ? 'border-forest-600 bg-forest-600 text-cream' : 'border-line bg-paper text-ink-soft hover:border-forest-300')}>
+                          className={cx('inline-flex min-h-[44px] items-center gap-1.5 rounded-full border px-3.5 text-[14px] font-medium transition sm:min-h-[40px]', on ? 'border-forest-600 bg-forest-600 text-cream' : 'border-line bg-paper text-ink-soft hover:border-forest-300')}>
                           {on && <Check size={14} strokeWidth={3} aria-hidden="true" />}{t(`ob.goal.${g}`)}
                         </button>
                       )
@@ -368,14 +377,23 @@ export default function Onboarding() {
                 </div>
               )}
               {!typing && step === 'review' && (
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
-                  <button type="button" className="btn-primary btn-lg" onClick={finish} disabled={creating || !draft.name || !draft.role}>
-                    {creating ? <LoaderCircle size={18} className="motion-safe:animate-spin" aria-hidden="true" /> : <MolaMark size={18} aria-hidden="true" />}{t('ob.create')}
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+                  <button type="button" className="btn-sun btn-lg" onClick={finish} disabled={creating || !draft.name || !draft.role}>
+                    {creating ? <LoaderCircle size={18} className="motion-safe:animate-spin" aria-hidden="true" /> : <MolaMark size={19} ball="#0B5D3B" aria-hidden="true" />}{t('ob.create')}
                   </button>
-                  <span className="text-[13px] text-ink-muted">{t('ob.createHint')}</span>
+                  <span className="text-[13.5px] text-ink-muted">{t('ob.createHint')}</span>
                 </div>
               )}
-              {!typing && choices.length > 0 && <Chips chips={choices.map((c) => c.label)} onSend={(label) => { const c = choices.find((x) => x.label === label); if (c) onChoice(c) }} scroll={step !== 'role' && step !== 'lang'} />}
+              {!typing && choices.length > 0 && (grid ? (
+                <div className={cx('grid gap-2', step === 'role' ? 'grid-cols-2 sm:grid-cols-3' : 'grid-cols-2')} role="group" aria-label={question(step, draft)}>
+                  {choices.map((c) => (
+                    <button key={c.value} type="button" onClick={() => onChoice(c)} disabled={creating}
+                      className="flex min-h-[48px] items-center rounded-xl border border-line bg-paper px-3.5 py-2 text-left text-[14.5px] font-medium leading-snug text-ink transition hover:border-forest-500 hover:bg-forest-50/40">
+                      {c.label}
+                    </button>
+                  ))}
+                </div>
+              ) : <Chips chips={choices.map((c) => c.label)} onSend={(label) => { const c = choices.find((x) => x.label === label); if (c) onChoice(c) }} scroll />)}
               {!creating && (
                 <Composer onSend={onText} multiline={step === 'players'} autoFocus={typeof window !== 'undefined' && window.innerWidth >= 1024}
                   placeholder={t(step === 'players' ? 'ob.ph.players' : step === 'review' ? 'ob.ph.review' : 'ob.ph.default')}
@@ -387,9 +405,9 @@ export default function Onboarding() {
         </section>
 
         <aside className="hidden lg:block">
-          <div className="mola-noscroll sticky top-24 max-h-[calc(100dvh-7rem)] space-y-4 overflow-y-auto pb-2">
+          <div className="mola-noscroll sticky top-16 max-h-[calc(100dvh-4rem)] overflow-y-auto pb-6 pt-10">
             <ProfileCard draft={draft} onEdit={onEdit} flash={flash} />
-            <p className="px-1 text-[13px] leading-relaxed text-ink-muted">{t('ob.card.note')}</p>
+            <p className="mt-4 px-1 text-[13.5px] leading-relaxed text-ink-muted">{t('ob.card.note')}</p>
           </div>
         </aside>
       </div>
@@ -397,15 +415,25 @@ export default function Onboarding() {
   )
 }
 
+/** How much of the licence is filled, as a small ring (phone bar). */
+function ProgressRing({ value, max }: { value: number; max: number }) {
+  const r = 12, c = 2 * Math.PI * r, f = max ? value / max : 0
+  return (
+    <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" className="-rotate-90 shrink-0">
+      <circle cx="15" cy="15" r={r} fill="none" stroke="#ECEFE8" strokeWidth="3.5" />
+      <circle cx="15" cy="15" r={r} fill="none" stroke="#0B5D3B" strokeWidth="3.5" strokeLinecap="round" strokeDasharray={`${c * f} ${c}`} className="transition-all duration-500" />
+    </svg>
+  )
+}
+
 function Shell({ children, onDemo, demoBusy }: { children: ReactNode; onDemo: (level: DemoLevel) => void; demoBusy: boolean }) {
-  const { t } = useT('mola')
   return (
     <div className="min-h-[100dvh] bg-cream">
-      <header className="sticky top-0 z-30 border-b border-line/70 bg-cream/90 backdrop-blur">
+      <header className="sticky top-0 z-30 border-b border-line bg-cream/95 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-2 px-4 sm:h-16 sm:px-6">
-          <Link to="/" aria-label={BRAND.name}><Logo /></Link>
+          <Link to="/" aria-label={BRAND.name}><Logo size="sm" className="sm:hidden" /><Logo className="hidden sm:inline-flex" /></Link>
           <div className="flex items-center gap-2">
-            <DemoMenu onDemo={onDemo} busy={demoBusy} label={t('ob.demo')} />
+            <DemoChoice onDemo={onDemo} busy={demoBusy} />
             <LangSwitch />
           </div>
         </div>
@@ -415,10 +443,11 @@ function Shell({ children, onDemo, demoBusy }: { children: ReactNode; onDemo: (l
   )
 }
 
-/** « Démo » opens a small menu: the professional club or the U13 academy. */
-function DemoMenu({ onDemo, busy, label }: { onDemo: (level: DemoLevel) => void; busy: boolean; label: string }) {
+/** The two demos: side by side from 640 px, in a small menu on phones. */
+function DemoChoice({ onDemo, busy }: { onDemo: (level: DemoLevel) => void; busy: boolean }) {
   const { t } = useT('mola')
   const [open, setOpen] = useState(false)
+  const [which, setWhich] = useState<DemoLevel | null>(null)
   const box = useRef<HTMLDivElement>(null)
   useEffect(() => {
     if (!open) return
@@ -428,28 +457,33 @@ function DemoMenu({ onDemo, busy, label }: { onDemo: (level: DemoLevel) => void;
     document.addEventListener('keydown', esc)
     return () => { document.removeEventListener('mousedown', off); document.removeEventListener('keydown', esc) }
   }, [open])
-  const choose = (level: DemoLevel) => { setOpen(false); onDemo(level) }
+  const choose = (level: DemoLevel) => { setOpen(false); setWhich(level); onDemo(level) }
+  const spin = <LoaderCircle size={15} className="motion-safe:animate-spin" aria-hidden="true" />
   return (
-    <div ref={box} className="relative">
-      <button type="button" onClick={() => setOpen(!open)} disabled={busy} aria-expanded={open} aria-haspopup="menu" className="btn-outline btn-sm min-h-[40px] whitespace-nowrap">
-        {busy ? <LoaderCircle size={15} className="motion-safe:animate-spin" aria-hidden="true" /> : <PlayCircle size={15} className="hidden min-[400px]:block" aria-hidden="true" />}{label}
-        <ChevronDown size={14} className={cx('transition', open && 'rotate-180')} aria-hidden="true" />
-      </button>
-      {open && (
-        <div role="menu" aria-label={t('ob.demoMenu')} className="absolute right-0 top-[calc(100%+6px)] z-40 w-[min(19rem,calc(100vw-2rem))] overflow-hidden rounded-2xl border border-line bg-paper p-1.5 shadow-lift">
-          {(['pro', 'youth'] as const).map((lv) => (
-            <button key={lv} type="button" role="menuitem" onClick={() => choose(lv)} className="flex w-full items-start gap-3 rounded-xl px-3 py-2.5 text-left hover:bg-sand">
-              <span className={cx('mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl', lv === 'pro' ? 'bg-night-800 text-sun-300' : 'bg-forest-50 text-forest-600')}>
-                {lv === 'pro' ? <Trophy size={17} aria-hidden="true" /> : <GraduationCap size={17} aria-hidden="true" />}
-              </span>
-              <span className="min-w-0">
-                <span className="block text-[14.5px] font-semibold text-ink">{t(`ob.demos.${lv}.title`)}</span>
-                <span className="block text-[12.5px] leading-snug text-ink-muted">{t(`ob.demos.${lv}.body`)}</span>
-              </span>
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
+    <>
+      <div className="hidden items-center gap-1 sm:flex">
+        {(['pro', 'youth'] as const).map((lv) => (
+          <button key={lv} type="button" onClick={() => choose(lv)} disabled={busy} title={t(`ob.demos.${lv}.body`)} className="btn-ghost btn-sm min-h-[40px] whitespace-nowrap px-3 text-[13.5px]">
+            {busy && which === lv && spin}{t(`ob.demos.${lv}.cta`)}
+          </button>
+        ))}
+      </div>
+      <div ref={box} className="relative sm:hidden">
+        <button type="button" onClick={() => setOpen(!open)} disabled={busy} aria-expanded={open} aria-haspopup="menu" className="btn-outline btn-sm min-h-[40px] whitespace-nowrap">
+          {busy && spin}{t('ob.demo')}
+          <ChevronDown size={14} className={cx('transition', open && 'rotate-180')} aria-hidden="true" />
+        </button>
+        {open && (
+          <div role="menu" aria-label={t('ob.demoMenu')} className="absolute right-0 top-[calc(100%+6px)] z-40 w-[min(18.5rem,calc(100vw-2rem))] overflow-hidden rounded-[14px] border border-line bg-paper p-1 shadow-lift">
+            {(['pro', 'youth'] as const).map((lv) => (
+              <button key={lv} type="button" role="menuitem" onClick={() => choose(lv)} className="block w-full rounded-[10px] px-3 py-2.5 text-left hover:bg-sand">
+                <span className="block text-[14.5px] font-semibold text-ink">{t(`ob.demos.${lv}.cta`)}</span>
+                <span className="mt-0.5 block text-[13px] leading-snug text-ink-muted">{t(`ob.demos.${lv}.body`)}</span>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </>
   )
 }

@@ -4,7 +4,6 @@
   "intensity": "Intensity",
   "blocksCount_one": "{{count}} block",
   "blocksCount_other": "{{count}} blocks",
-
   "mdName": {
     "MD-4": "Tension",
     "MD-3": "Duration",
@@ -46,9 +45,9 @@
     "lsg": "The game model on a big pitch, as close to the match as it gets.",
     "phase": "One precise phase of the match, repeated against real opposition.",
     "transition": "Win it back within five seconds, look forward after winning it.",
-    "finishing": "Get into the finishing zone and shoot with purpose."
+    "finishing": "Get into the finishing zone and shoot with purpose.",
+    "technique": "Technique inside the game: oriented touches, one-twos, the third man. Short patterns, repeated just before they are played."
   },
-
   "fields": {
     "title": "Title",
     "date": "Date",
@@ -59,7 +58,6 @@
     "team": "Team",
     "noTeam": "No team"
   },
-
   "library": {
     "docTitle": "Drills",
     "title": "The 64 drills",
@@ -86,7 +84,6 @@
     "emptyBody": "The 64 drills of The Njangi Code are being written. They will appear here, ready to drop into your sessions.",
     "toSessions": "Build a session with these drills"
   },
-
   "detail": {
     "back": "All drills",
     "nav": "Previous and next drill",
@@ -125,7 +122,6 @@
     "createdToast": "Session \"{{title}}\" created",
     "openSession": "Open"
   },
-
   "sessions": {
     "docTitle": "Sessions",
     "eyebrow": "Training",
@@ -143,17 +139,19 @@
     "deleteTitle": "Delete this session?",
     "deleteBody": "\"{{title}}\" on {{date}} will be deleted. The drills stay in the library.",
     "deleted": "\"{{title}}\" deleted",
-    "weekSummary_one": "{{count}} session · {{minutes}} min · load {{load}}",
-    "weekSummary_other": "{{count}} sessions · {{minutes}} min · load {{load}}",
     "emptyTitle": "Your first session",
     "emptyBody": "Give a date and an MD day: Mola builds the session with the right drills, or you build it block by block.",
     "emptyCta": "Create a session",
     "browse": "Browse the drills",
     "noUpcoming": "Nothing planned yet",
     "noUpcomingBody": "Plan the whole week around the next match in one go.",
-    "noPast": "No past sessions"
+    "noPast": "No past sessions",
+    "byMolaShort": "Mola",
+    "sumSessions": "Sessions",
+    "sumMinutes": "Minutes",
+    "sumLoad": "Load",
+    "profile": "Intensity profile, block by block"
   },
-
   "newSession": {
     "title": "New session",
     "titleWith": "New session with {{drill}}",
@@ -166,7 +164,6 @@
     "submit": "Create session",
     "submitMola": "Build the session"
   },
-
   "builder": {
     "docTitle": "Session",
     "back": "All sessions",
@@ -199,7 +196,7 @@
     "minutes": "Minutes",
     "lessMin": "One minute less",
     "moreMin": "One minute more",
-    "more": "More actions",
+    "more": "Options",
     "up": "Move up",
     "down": "Move down",
     "remove": "Remove",
@@ -222,7 +219,6 @@
     "copied": "Text copied",
     "copyFail": "Copying is not available on this device"
   },
-
   "week": {
     "docTitle": "Week",
     "eyebrow": "Periodization",
@@ -253,7 +249,7 @@
     "createdNone": "Every day from MD-4 to MD-1 already has a session. Nothing to add.",
     "loadTitle": "This week's load",
     "loadHint": "Load = minutes x intensity (low 1, medium 2, high 3, very high 4)",
-    "loadValue": "Load {{load}} · {{minutes}} min",
+    "loadValue": "Load {{load}}, {{minutes}} min",
     "matchDay": "Match against {{opponent}}",
     "restDay": "Rest",
     "showTable": "Show as table",
@@ -263,9 +259,9 @@
     "logicTitle": "How the week works",
     "logicIntro": "With one match a week, load rises early in the week then comes down so players arrive fresh on match day. The day after the match is for recovery; the day after that is rest.",
     "logicHeat": "In strong heat, train early in the morning or late in the day, add breaks in the shade and plenty of water. With young players, load always stays suited to their age.",
-    "readCh14": "The Njangi Code, chapter 27: Njangi periodization"
+    "readCh14": "The Njangi Code, chapter 27: Njangi periodization",
+    "awayAria": "Away"
   },
-
   "team": {
     "title": "Create your team first",
     "body": "Sessions and the week are organised by team. A name, an age group, a format: that's all.",
@@ -275,7 +271,6 @@
     "format": "Format",
     "create": "Create team"
   },
-
   "upgrade": {
     "title": "Your {{n}} free sessions are used",
     "body": "With Coach Pro, sessions are unlimited, the week plans itself in one tap and Mola builds sessions for you.",
@@ -284,8 +279,8 @@
     "left_one": "Free plan: {{count}} more session available.",
     "left_other": "Free plan: {{count}} more sessions available."
   },
-
   "sheet": {
-    "session": "Session sheet"
+    "session": "Session sheet",
+    "footer": "Session prepared with {{app}}, from {{book}}."
   }
 }

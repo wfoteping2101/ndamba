@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { GraduationCap, LoaderCircle, Play, Trophy } from 'lucide-react'
 import { useT, type Lang } from '../../../i18n'
@@ -31,7 +31,24 @@ export function useInApp() {
 export function PageFrame({ children }: { children: ReactNode }) {
   const inApp = useInApp()
   if (inApp) return <>{children}</>
-  return <div className="container-page pb-6 pt-8 sm:pt-12">{children}</div>
+  return <div className="container-page pb-4 pt-10 sm:pt-14">{children}</div>
+}
+
+/** Links such as /#mola or /livres#lionceaux: scroll to the section when the hash changes. */
+export function useHashScroll() {
+  const { hash } = useLocation()
+  const first = useRef(true)
+  useEffect(() => {
+    const initial = first.current
+    first.current = false
+    if (!hash) return
+    const id = decodeURIComponent(hash.slice(1))
+    const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    // arriving from another page: jump; a click on this page: glide
+    const behavior: ScrollBehavior = initial || reduced ? 'auto' : 'smooth'
+    const timer = window.setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior, block: 'start' }), initial ? 140 : 40)
+    return () => window.clearTimeout(timer)
+  }, [hash])
 }
 
 export type DemoLevel = 'youth' | 'pro'
@@ -116,22 +133,23 @@ export function DemoChoice({ demo, role = 'coach', to = '/app', dark = false, qu
 }) {
   const { t } = useSiteT()
   const lg = size === 'lg'
-  const second = dark ? 'border border-cream/30 text-cream hover:bg-white/10' : 'btn-outline'
+  const second = dark ? 'btn-outline-light' : 'btn-outline'
   // quiet: next to a stronger call to action (the hero), both demos are secondary buttons
-  const first = quiet && dark ? 'btn border border-sun-300/60 bg-white/[0.06] text-cream hover:bg-white/10' : dark ? 'btn-sun' : 'btn-primary'
+  const first = quiet ? second : dark ? 'btn-sun' : 'btn-primary'
+  const busy = demo.busy
   return (
-    <div className={`flex flex-col gap-3 sm:flex-row sm:flex-wrap ${className ?? ''}`} role="group" aria-label={t('demo.choose')}>
-      <button type="button" onClick={() => demo.launch(role, to, 'pro')} disabled={demo.busy} className={`${first} ${lg ? 'btn-lg' : 'min-h-[44px]'}`}>
-        <Trophy size={lg ? 18 : 16} aria-hidden="true" />{t('demo.pro.cta')}
+    <div className={`flex flex-col gap-2.5 min-[420px]:flex-row min-[420px]:flex-wrap ${className ?? ''}`} role="group" aria-label={t('demo.choose')}>
+      <button type="button" onClick={() => demo.launch(role, to, 'pro')} disabled={busy} className={`${first} ${lg ? 'btn-lg' : ''}`}>
+        <Trophy size={lg ? 18 : 16} strokeWidth={1.75} aria-hidden="true" />{t('demo.pro.cta')}
       </button>
-      <button type="button" onClick={() => demo.launch(role, to, 'youth')} disabled={demo.busy} className={`btn ${second} ${lg ? 'btn-lg' : 'min-h-[44px]'}`}>
-        <GraduationCap size={lg ? 18 : 16} aria-hidden="true" />{t('demo.youth.cta')}
+      <button type="button" onClick={() => demo.launch(role, to, 'youth')} disabled={busy} className={`${second} ${lg ? 'btn-lg' : ''}`}>
+        <GraduationCap size={lg ? 18 : 16} strokeWidth={1.75} aria-hidden="true" />{t('demo.youth.cta')}
       </button>
     </div>
   )
 }
 
-/** Small gold uppercase label used above book titles (dark = on a dark background). */
+/** The small sentence-case label above a book title or a block (dark = on a dark background). Never tracked capitals. */
 export function GoldLabel({ children, dark = false, className = '' }: { children: ReactNode; dark?: boolean; className?: string }) {
-  return <span className={`text-[11px] font-bold uppercase tracking-[0.18em] ${dark ? 'text-sun-300' : 'text-sun-700'} ${className}`}>{children}</span>
+  return <span className={`text-[13px] font-semibold leading-snug ${dark ? 'text-sun-300' : 'text-forest-600'} ${className}`}>{children}</span>
 }

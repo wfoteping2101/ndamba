@@ -6,7 +6,7 @@ import { addDays, daysBetween, parseISODate, todayISO } from '../../../../lib/ut
 import { attended, buildTimeline, obsTone, type JourneyData, type Season } from '../../../../lib/journey'
 import { useWidth } from './bits'
 
-const C = { cream: '#F6F7F2', faint: 'rgba(251,247,238,.16)', grid: 'rgba(251,247,238,.09)', sun: '#F5B700', sun3: '#FFD452', clay: '#E8798A', plus: '#CBE5D6', work: '#DB8D66' }
+const C = { cream: '#F6F7F2', faint: 'rgba(251,247,238,.16)', grid: 'rgba(251,247,238,.09)', sun: '#F5B700', sun3: '#FFD452', clay: '#E8798A', plus: '#CBE5D6', work: '#94A198' }
 
 export function SeasonRibbon({ data, season }: { data: JourneyData; season: Season | null }) {
   const { t, lang } = useT('journey')
@@ -64,12 +64,12 @@ export function SeasonRibbon({ data, season }: { data: JourneyData; season: Seas
         {width > 0 && (
           <svg width={width} height={H} viewBox={`0 0 ${width} ${H}`} role="img" aria-label={aria} className="block">
             {gutter > 0 && (['top', 'match', 'session', 'obs'] as const).map((k) => (
-              <text key={k} x={0} y={lanes[k] + 3.5} fontSize="11" fill="rgba(251,247,238,.62)" fontFamily="Inter, sans-serif" fontWeight={600}>{t(`ribbon.lane.${k}`)}</text>
+              <text key={k} x={0} y={lanes[k] + 3.5} fontSize="11" fill="rgba(251,247,238,.62)" fontWeight={600}>{t(`ribbon.lane.${k}`)}</text>
             ))}
             {months.map((m) => (
               <g key={m.iso}>
                 <line x1={x(m.iso)} x2={x(m.iso)} y1={4} y2={H - 16} stroke={C.grid} />
-                <text x={x(m.iso) + 3} y={H - 3} fontSize="10.5" fill="rgba(251,247,238,.6)" fontFamily="Inter, sans-serif">{m.label}</text>
+                <text x={x(m.iso) + 3} y={H - 3} fontSize="10.5" fill="rgba(251,247,238,.6)">{m.label}</text>
               </g>
             ))}
             {[lanes.match, lanes.session, lanes.obs].map((y) => <line key={y} x1={gutter + pad} x2={width - pad} y1={y} y2={y} stroke={C.faint} strokeWidth={1} />)}
@@ -92,7 +92,7 @@ export function SeasonRibbon({ data, season }: { data: JourneyData; season: Seas
                 <g key={l.match.id}>
                   <circle cx={xx} cy={lanes.match} r={r} fill={l.minutes > 0 ? C.cream : 'none'} stroke={C.cream} strokeWidth={1.5} />
                   {Array.from({ length: Math.min(3, l.counts.GOAL) }).map((_, i) => <circle key={i} cx={xx} cy={lanes.match - r - 4 - i * 5} r={2.2} fill={C.sun} />)}
-                  {l.captain && l.minutes > 0 && <text x={xx} y={lanes.match + r + 10} textAnchor="middle" fontSize="8.5" fontWeight={700} fill={C.sun3} fontFamily="Inter, sans-serif">C</text>}
+                  {l.captain && l.minutes > 0 && <text x={xx} y={lanes.match + r + 10} textAnchor="middle" fontSize="8.5" fontWeight={700} fill={C.sun3}>C</text>}
                 </g>
               )
             })}
@@ -113,7 +113,7 @@ export function SeasonRibbon({ data, season }: { data: JourneyData; season: Seas
             {today >= domain.start && today <= domain.end && (
               <g>
                 <line x1={x(today)} x2={x(today)} y1={4} y2={H - 16} stroke={C.sun} strokeDasharray="3 3" strokeWidth={1.2} />
-                <text x={Math.min(x(today) + 4, width - 70)} y={10} fontSize="10" fontWeight={700} fill={C.sun} fontFamily="Inter, sans-serif">{t('ribbon.today')}</text>
+                <text x={Math.min(x(today) + 4, width - 70)} y={10} fontSize="10" fontWeight={700} fill={C.sun}>{t('ribbon.today')}</text>
               </g>
             )}
           </svg>

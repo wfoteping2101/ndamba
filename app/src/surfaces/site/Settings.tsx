@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, BookOpen, Check, Crown, Database, Download, Info, LoaderCircle, Pencil, Plus, Shirt, Trash2, Upload, UserRound } from 'lucide-react'
+import { BookOpen, Check, Crown, Database, Download, Info, LoaderCircle, Pencil, Plus, Shirt, Trash2, Upload, UserRound } from 'lucide-react'
 import { setLang, type Lang } from '../../i18n'
 import { createTeam } from '../../lib/actions'
 import { BRAND } from '../../lib/config'
@@ -44,12 +44,12 @@ export default function Settings() {
 
 function Panel({ icon, title, lead, action, children }: { icon: ReactNode; title: string; lead?: string; action?: ReactNode; children: ReactNode }) {
   return (
-    <section className="card card-pad sm:p-6">
+    <section className="panel p-5 sm:p-6">
       <div className="mb-4 flex items-start justify-between gap-3">
         <div className="flex min-w-0 items-start gap-3">
-          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-forest-50 text-forest-600">{icon}</span>
+          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-forest-50 text-forest-600 [&_svg]:h-[18px] [&_svg]:w-[18px]">{icon}</span>
           <div className="min-w-0">
-            <h2 className="font-display text-[20px] font-semibold leading-tight text-ink">{title}</h2>
+            <h2 className="text-[19px] leading-tight text-ink">{title}</h2>
             {lead && <p className="mt-0.5 text-[14px] leading-snug text-ink-muted">{lead}</p>}
           </div>
         </div>
@@ -160,7 +160,7 @@ function TeamsCard({ profile }: { profile: Profile }) {
         <EmptyState icon={<Shirt size={28} />} title={t('settings.teams.empty')} body={t('settings.teams.emptyBody')}
           action={<button type="button" className="btn-primary min-h-[44px]" onClick={() => setEditing('new')}><Plus size={16} />{t('settings.teams.create')}</button>} />
       ) : (
-        <ul className="divide-y divide-line overflow-hidden rounded-2xl border border-line">
+        <ul className="divide-y divide-line overflow-hidden rounded-card border border-line">
           {teams.map((tm) => {
             const isActive = active?.id === tm.id || (!active && profile.activeTeamId === tm.id)
             return (
@@ -170,10 +170,10 @@ function TeamsCard({ profile }: { profile: Profile }) {
                   <div className="min-w-0">
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="truncate font-semibold text-ink">{tm.name}</span>
-                      {isActive && <span className="rounded-full bg-forest-600 px-2 py-0.5 text-[11px] font-bold text-cream">{t('settings.teams.active')}</span>}
+                      {isActive && <span className="rounded-full bg-forest-600 px-2.5 py-0.5 text-[12px] font-semibold text-white">{t('settings.teams.active')}</span>}
                     </div>
                     <div className="text-[13px] text-ink-muted">
-                      {tm.ageGroup === 'Seniors' ? t('settings.teams.seniors') : tm.ageGroup === 'Pro' ? t('settings.teams.pro') : tm.ageGroup} · {t('settings.teams.formatOpt', { n: tm.format })} · {tm.formation} · {t('settings.teams.players', { count: counts[tm.id] || 0 })}
+                      {[tm.ageGroup === 'Seniors' ? t('settings.teams.seniors') : tm.ageGroup === 'Pro' ? t('settings.teams.pro') : tm.ageGroup, t('settings.teams.formatOpt', { n: tm.format }), tm.formation, t('settings.teams.players', { count: counts[tm.id] || 0 })].join(', ')}
                     </div>
                   </div>
                 </div>
@@ -263,12 +263,12 @@ function PlanCard({ profile }: { profile: Profile }) {
   const { t } = useSiteT()
   return (
     <Panel icon={<Crown size={18} />} title={t('settings.plan.title')}>
-      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-sand/60 px-4 py-3">
+      <div className="flex flex-wrap items-center justify-between gap-3 rounded-card bg-sand/60 px-4 py-3">
         <div>
-          <div className="text-[12px] font-medium text-ink-muted">{t('settings.plan.current')}</div>
-          <div className="font-display text-[19px] font-semibold text-ink">{t(`common:plans.${profile.plan}`)}</div>
+          <div className="text-[13px] font-semibold text-ink-muted">{t('settings.plan.current')}</div>
+          <div className="mt-0.5 font-display text-[19px] text-ink">{t(`common:plans.${profile.plan}`)}</div>
         </div>
-        <Link to="/app/premium" className="btn-outline btn-sm min-h-[40px]">{t('settings.plan.see')}<ArrowRight size={15} /></Link>
+        <Link to="/app/premium" className="btn-outline btn-sm min-h-[40px]">{t('settings.plan.see')}</Link>
       </div>
     </Panel>
   )
@@ -373,7 +373,7 @@ function DataCard() {
 
 function DataRow({ title, hint, action, danger = false }: { title: string; hint: string; action: ReactNode; danger?: boolean }) {
   return (
-    <div className={cx('flex flex-col gap-3 rounded-2xl border px-4 py-3.5', danger ? 'border-clay-100 bg-clay-50/40' : 'border-line')}>
+    <div className={cx('flex flex-col gap-3 rounded-card border px-4 py-3.5', danger ? 'border-clay-100 bg-clay-50/40' : 'border-line')}>
       <div className="min-w-0">
         <div className={cx('text-[15px] font-semibold', danger ? 'text-clay-700' : 'text-ink')}>{title}</div>
         <div className="text-[13.5px] leading-snug text-ink-muted">{hint}</div>

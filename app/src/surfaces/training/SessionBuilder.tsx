@@ -38,6 +38,16 @@ export default function SessionBuilder() {
   const [more, setMore] = useState(false)
   const { toast, toastNode } = useToast()
   useDocumentTitle(s?.title || t('builder.docTitle'))
+  // the title wraps on phones: grow the field with its text
+  const titleRef = useRef<HTMLTextAreaElement>(null)
+  useEffect(() => {
+    const el = titleRef.current
+    if (!el) return
+    const fit = () => { el.style.height = 'auto'; el.style.height = `${el.scrollHeight}px` }
+    fit()
+    window.addEventListener('resize', fit)
+    return () => window.removeEventListener('resize', fit)
+  }, [s?.title])
 
   // local copy for instant typing; saved to IndexedDB shortly after each change
   useEffect(() => { if (stored && !dirty.current) setS(stored) }, [stored])
@@ -81,7 +91,7 @@ export default function SessionBuilder() {
   const shareText = () => {
     const lines = [
       `${s.title}`,
-      `${fmtDate(s.date, lang, { weekday: 'long', day: 'numeric', month: 'long' })} · ${t(`common:md.${s.md}`)}${team ? ` · ${team.name}` : ''}`,
+      `${fmtDate(s.date, lang, { weekday: 'long', day: 'numeric', month: 'long' })}, ${t(`common:md.${s.md}`)}${team ? `, ${team.name}` : ''}`,
       s.intention ? `${t('fields.intention')}${t('colon')}${t(`common:intentions.${s.intention}`)}` : '',
       '',
       ...s.blocks.map((b, i) => `${i + 1}. ${b.drillId ? b.drillId + ' ' : ''}${blockTitle(b, lang) || t('builder.freeBlock')} (${b.minutes} min)`),
@@ -115,15 +125,16 @@ export default function SessionBuilder() {
     <div>
       <div className="no-print mb-4 flex items-center justify-between gap-2">
         <Link to="/app/seances" className="btn-ghost btn-sm -ml-2"><ArrowLeft size={16} aria-hidden="true" />{t('builder.back')}</Link>
-        {s.createdBy === 'mola' && <span className="inline-flex items-center gap-1 text-xs font-semibold text-terra-600"><MolaMark size={13} aria-hidden="true" />{t('sessions.byMola')}</span>}
+        {s.createdBy === 'mola' && <span className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-forest-700"><MolaMark size={15} aria-hidden="true" />{t('sessions.byMola')}</span>}
       </div>
 
       {/* editable header */}
       <section className="card card-pad mb-6">
         <label htmlFor="sb-title" className="sr-only">{t('fields.title')}</label>
         <div className="flex items-start gap-2">
-          <input id="sb-title" value={s.title} onChange={(e) => patch({ title: e.target.value })} placeholder={t(`mdTitle.${s.md}`)}
-            className="-ml-2 min-w-0 flex-1 rounded-xl border border-transparent bg-transparent px-2 py-1 font-display text-[26px] font-semibold leading-tight text-ink hover:border-line focus:border-forest-500 focus:bg-white focus:outline-none sm:text-[32px]" />
+          <textarea id="sb-title" ref={titleRef} rows={1} value={s.title} onChange={(e) => patch({ title: e.target.value.replace(/\n/g, ' ') })} placeholder={t(`mdTitle.${s.md}`)}
+            onKeyDown={(e) => { if (e.key === 'Enter') e.preventDefault() }}
+            className="-ml-2 min-w-0 flex-1 resize-none overflow-hidden rounded-xl border border-transparent bg-transparent px-2 py-1 font-display text-[24px] leading-tight text-ink hover:border-line focus:border-forest-500 focus:bg-white focus:outline-none sm:text-[32px]" />
           <PenLine size={18} className="mt-3 shrink-0 text-ink-faint" aria-hidden="true" />
         </div>
         <div className="mt-3 grid gap-x-3 sm:grid-cols-3">
@@ -156,13 +167,13 @@ export default function SessionBuilder() {
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="min-w-0">
           <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-            <h2 className="font-display text-xl font-semibold text-ink">{t('builder.blocks')} <span className="text-base font-normal text-ink-faint">· {s.blocks.length}</span></h2>
+            <h2 className="flex items-baseline gap-2 font-display text-xl text-ink">{t('builder.blocks')}<span className="font-sans text-[15px] font-semibold tabular-nums text-ink-faint" style={{ fontStretch: '100%' }}>{s.blocks.length}</span></h2>
             <button type="button" className="btn-outline btn-sm" onClick={() => (s.blocks.length ? setAutoOpen(true) : autoCompose())}><MolaMark size={15} aria-hidden="true" />{t('builder.auto')}</button>
           </div>
 
           {s.blocks.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-line bg-paper/60 px-5 py-8 text-center">
-              <h3 className="font-display text-lg font-semibold text-ink">{t('builder.emptyTitle')}</h3>
+              <h3 className="font-display text-lg text-ink">{t('builder.emptyTitle')}</h3>
               <p className="mx-auto mt-1 max-w-md text-sm text-ink-muted">{t('builder.emptyBody')}</p>
               <div className="mt-4 flex flex-wrap justify-center gap-2">
                 <button type="button" className="btn-primary" onClick={autoCompose}><MolaMark size={16} aria-hidden="true" />{t('builder.autoFirst')}</button>
@@ -195,21 +206,21 @@ export default function SessionBuilder() {
           <div className="card card-pad">
             <div className="flex items-end justify-between gap-3">
               <div>
-                <div className="text-xs font-medium text-ink-muted">{t('builder.total')}</div>
-                <div className="font-display text-4xl font-semibold leading-none text-forest-600">{stats.minutes}<span className="ml-1 text-base font-medium text-ink-muted">{t('common:misc.minutes')}</span></div>
+                <div className="text-[12.5px] font-medium text-ink-muted">{t('builder.total')}</div>
+                <div className="mt-0.5 font-display text-[40px] leading-none tabular-nums text-ink">{stats.minutes}<span className="ml-1.5 font-sans text-base font-medium text-ink-muted" style={{ fontStretch: '100%' }}>{t('common:misc.minutes')}</span></div>
               </div>
               <div className="text-right">
-                <div className="text-xs font-medium text-ink-muted" title={t('week.loadHint')}>{t('builder.load')}</div>
-                <div className="font-display text-2xl font-semibold leading-none text-terra-600">{stats.load}</div>
+                <div className="text-[12.5px] font-medium text-ink-muted" title={t('week.loadHint')}>{t('builder.load')}</div>
+                <div className="mt-0.5 font-display text-[26px] leading-none tabular-nums text-forest-600">{stats.load}</div>
               </div>
             </div>
             <div className="mt-4">
-              <div className="mb-1.5 flex items-center justify-between text-xs text-ink-muted"><span>{t('builder.profile')}</span><MdBadge md={s.md} /></div>
+              <div className="mb-1.5 flex items-center justify-between text-[12.5px] text-ink-muted"><span>{t('builder.profile')}</span><MdBadge md={s.md} /></div>
               <IntensityProfile session={s} height={64} labels interactive />
               <div className="mt-2"><IntensityLegend /></div>
             </div>
             <div className="mt-4 border-t border-line pt-3">
-              <div className="mb-1.5 text-xs font-medium text-ink-muted">{t('builder.intentions')}</div>
+              <div className="mb-1.5 text-[12.5px] font-medium text-ink-muted">{t('builder.intentions')}</div>
               {intentionsList.length ? (
                 <div className="flex flex-wrap gap-1">
                   {intentionsList.map((i) => <Badge key={i} tone={i === s.intention ? 'dark' : 'forest'}>{t(`common:intentions.${i}`)}</Badge>)}
@@ -218,13 +229,13 @@ export default function SessionBuilder() {
               {s.intention && !stats.intentions.has(s.intention) && s.blocks.length > 0 && <p className="mt-2 text-xs text-clay-600">{t('builder.intentionMissing', { i: t(`common:intentions.${s.intention}`) })}</p>}
             </div>
             <div className="mt-3 border-t border-line pt-3">
-              <div className="mb-1.5 text-xs font-medium text-ink-muted">{t('builder.skills', { n: skillsList.length })}</div>
+              <div className="mb-1.5 text-[12.5px] font-medium text-ink-muted">{t('builder.skills', { n: skillsList.length })}</div>
               {skillsList.length ? <div className="flex flex-wrap gap-1">{skillsList.map((k) => <Badge key={k}>{t(`common:skills.${k}`)}</Badge>)}</div> : <p className="text-xs text-ink-faint">{t('builder.nothingYet')}</p>}
             </div>
           </div>
 
           <div className="no-print mt-3 grid grid-cols-2 gap-2">
-            <button type="button" className="btn-dark min-h-[48px]" onClick={() => window.print()} disabled={!s.blocks.length}><Printer size={16} aria-hidden="true" />{t('builder.print')}</button>
+            <button type="button" className="btn-outline min-h-[48px]" onClick={() => window.print()} disabled={!s.blocks.length}><Printer size={16} aria-hidden="true" />{t('builder.print')}</button>
             <a href={whatsappLink(shareText())} target="_blank" rel="noreferrer" className="btn-outline min-h-[48px]"><MessageCircle size={16} aria-hidden="true" />WhatsApp</a>
             <button type="button" className="btn-outline min-h-[48px]" onClick={icsFile}><CalendarPlus size={16} aria-hidden="true" />{t('builder.ics')}</button>
             <div className="relative">
@@ -242,7 +253,7 @@ export default function SessionBuilder() {
             </div>
           </div>
           <SessionJourneyCard session={s} />
-          <p className="mt-4 text-center font-display text-[15px] italic text-ink-muted">{t('common:brand.motto')}</p>
+          <p className="mt-5 text-center text-[14px] font-semibold italic text-ink-muted">{t('common:brand.motto')}</p>
         </aside>
       </div>
 

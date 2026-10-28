@@ -10,12 +10,16 @@ export type Tone = 'neutral' | 'forest' | 'terra' | 'sun' | 'clay' | 'dark' | 'o
 
 export const INTENSITIES: Intensity[] = ['low', 'medium', 'high', 'very-high']
 export const INTENSITY_FACTOR: Record<Intensity, number> = { low: 1, medium: 2, high: 3, 'very-high': 4 }
-/** Sequential terracotta ramp, light to dark (validated against the paper surface). */
-export const INTENSITY_COLOR: Record<Intensity, string> = { low: '#DB8D66', medium: '#BF5A2E', high: '#A04A24', 'very-high': '#7D391B' }
-export const LOAD_COLOR = '#BF5A2E'
+/** Sequential pitch-green ramp, light to dark: the harder the work, the deeper the green. Always shown with a text label. */
+export const INTENSITY_COLOR: Record<Intensity, string> = { low: '#73B391', medium: '#13804F', high: '#0B5D3B', 'very-high': '#063A25' }
+export const LOAD_COLOR = '#0B5D3B'
 
 export const MD_LIST: MD[] = ['MD-4', 'MD-3', 'MD-2', 'MD-1', 'MD+1', 'youth']
-export const MD_TONE: Record<MD, Tone> = { 'MD-4': 'clay', 'MD-3': 'terra', 'MD-2': 'sun', 'MD-1': 'forest', 'MD+1': 'neutral', youth: 'ok' }
+/** MD chips follow the load of the day, on the same green ramp as the intensity bars (MD-4 the densest, MD+1 recovery). */
+export const MD_CHIP: Record<MD, string> = {
+  'MD-4': 'bg-forest-700 text-cream', 'MD-3': 'bg-forest-500 text-cream', 'MD-2': 'bg-forest-100 text-forest-800',
+  'MD-1': 'bg-forest-50 text-forest-700 ring-1 ring-inset ring-forest-100', 'MD+1': 'bg-sand text-ink-soft', youth: 'bg-ok-50 text-ok-500',
+}
 
 /** "U11+" -> 11. Drills without an age are open to everyone. */
 export const ageNum = (ages?: string) => { const m = (ages || '').match(/U(\d+)/i); return m ? Number(m[1]) : 6 }

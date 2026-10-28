@@ -116,7 +116,7 @@ export function NewSessionModal({ open, onClose, preset, onCreated }: { open: bo
             <legend className="label">{t('newSession.how')}</legend>
             <div className="grid gap-2 sm:grid-cols-2">
               {([['mola', MolaMark], ['me', PenLine]] as const).map(([k, Icon]) => (
-                <label key={k} className={cx('flex cursor-pointer gap-3 rounded-2xl border p-3 transition', mode === k ? 'border-forest-600 bg-forest-50' : 'border-line hover:border-ink-faint')}>
+                <label key={k} className={cx('flex cursor-pointer gap-3 rounded-[14px] border p-3 transition has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-forest-500', mode === k ? 'border-forest-600 bg-forest-50' : 'border-line hover:border-ink-faint')}>
                   <input type="radio" name="ns-mode" className="sr-only" checked={mode === k} onChange={() => setMode(k)} />
                   <span className={cx('grid h-9 w-9 shrink-0 place-items-center rounded-xl', mode === k ? 'bg-forest-600 text-cream' : 'bg-sand text-ink-soft')}><Icon size={18} aria-hidden="true" /></span>
                   <span className="min-w-0">

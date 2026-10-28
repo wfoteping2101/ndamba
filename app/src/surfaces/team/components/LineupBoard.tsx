@@ -89,7 +89,7 @@ export function LineupBoard({ format, formation, lineup, players, captainId, onS
   const disc = size === 'sm' ? 32 : 42
   return (
     <div
-      className={cx('relative w-full select-none overflow-hidden rounded-[22px] shadow-card ring-1 ring-forest-900/20', className)}
+      className={cx('relative w-full select-none overflow-hidden rounded-[22px] ring-1 ring-forest-900/20', className)}
       style={{ aspectRatio: v ? `${W + 2 * PAD} / ${L + 2 * PAD}` : `${L + 2 * PAD} / ${W + 2 * PAD}` }}
       role="group"
       aria-label={t('board.aria', { formation })}
@@ -105,10 +105,10 @@ export function LineupBoard({ format, formation, lineup, players, captainId, onS
         const body = (
           <>
             <span
-              className={cx('relative flex items-center justify-center rounded-full font-display font-semibold tabular-nums transition',
+              className={cx('relative flex items-center justify-center rounded-full font-display tabular-nums transition',
                 p ? (gk ? 'bg-sun-500 text-night-900' : 'bg-cream text-forest-700') : 'border-2 border-dashed border-cream/60 bg-forest-900/30 text-cream/85',
                 p && 'shadow-[0_2px_6px_rgba(0,0,0,.35)]',
-                active && 'ring-4 ring-terra-500 ring-offset-2 ring-offset-forest-700',
+                active && 'ring-4 ring-sun-300 ring-offset-2 ring-offset-forest-700',
                 onSlotClick && 'group-hover:scale-105')}
               style={{ width: disc, height: disc, fontSize: size === 'sm' ? 14 : 18 }}
             >
@@ -119,7 +119,7 @@ export function LineupBoard({ format, formation, lineup, players, captainId, onS
                 </span>
               )}
               {p && captainId === p.id && (
-                <span className="absolute -right-1 -top-1 flex h-[18px] w-[18px] items-center justify-center rounded-full bg-terra-500 font-sans text-[10px] font-bold text-white ring-2 ring-forest-700" title={t('board.captain')}>C</span>
+                <span className="absolute -right-1 -top-1 flex h-[18px] w-[18px] items-center justify-center rounded-full bg-ink font-sans text-[10px] font-bold text-cream ring-2 ring-cream" title={t('board.captain')}>C</span>
               )}
             </span>
             <span className={cx('mt-1 truncate rounded-md py-[1px] text-center font-semibold leading-tight',

@@ -21,7 +21,7 @@ export function ObjectivesCard({ data, stage, viewer, onAdd, onOpen }: { data: J
   const levelsNow = levelsAt(data.evaluations, today)
   return (
     <section className="card card-pad" aria-labelledby="obj-h">
-      <CardHead id="obj-h" icon={<Target size={18} className="text-sun-600" />} title={t('objectives.title')} hint={t('objectives.hint', { n: MAX_ACTIVE_OBJECTIVES })}
+      <CardHead id="obj-h" icon={<Target size={18} strokeWidth={1.75} className="text-forest-600" />} title={t('objectives.title')} hint={t('objectives.hint', { n: MAX_ACTIVE_OBJECTIVES })}
         action={active.length > 0 && active.length < MAX_ACTIVE_OBJECTIVES ? <button type="button" className="btn-outline btn-sm min-h-[40px]" onClick={onAdd}><Plus size={15} />{t('objectives.add')}</button> : undefined} />
       {active.length === 0 ? (
         <div className="rounded-xl bg-sand/60 px-3 py-3 text-sm text-ink-muted">
@@ -40,11 +40,11 @@ export function ObjectivesCard({ data, stage, viewer, onAdd, onOpen }: { data: J
             const left = daysBetween(today, o.review)
             return (
               <li key={o.id}>
-                <button type="button" onClick={() => onOpen(o)} className="w-full rounded-2xl border border-line bg-paper p-3 text-left transition hover:border-sun-500">
+                <button type="button" onClick={() => onOpen(o)} className="w-full rounded-2xl border border-line bg-paper p-3 text-left transition hover:border-forest-300">
                   <span className="flex flex-wrap items-center gap-1.5">
                     <span className="rounded-full bg-forest-50 px-2 py-0.5 text-[11.5px] font-semibold text-forest-700">{o.skill ? t(`common:skills.${o.skill}`) : t('objectives.subLink', { name: t(`analysis:sub.${o.sub}.name`) })}</span>
                     {o.by === 'player' && <span className="rounded-full bg-sand px-2 py-0.5 text-[11.5px] font-semibold text-ink-soft">{viewer === 'player' ? t('objectives.byMe') : t('objectives.byPlayer')}</span>}
-                    <span className={cx('ml-auto text-[11.5px] font-semibold', left < 0 ? 'text-sun-700' : 'text-ink-muted')}>
+                    <span className={cx('ml-auto text-[11.5px] font-semibold', left < 0 ? 'text-clay-600' : 'text-ink-muted')}>
                       {left < 0 ? t('objectives.reviewDue') : left === 0 ? t('objectives.reviewToday') : t('objectives.reviewIn', { count: left, date: fmtDate(o.review, lang, { day: 'numeric', month: 'short' }) })}
                     </span>
                   </span>
@@ -74,7 +74,7 @@ export function ObjectivesCard({ data, stage, viewer, onAdd, onOpen }: { data: J
               {done.map((o) => (
                 <li key={o.id}>
                   <button type="button" onClick={() => onOpen(o)} className="flex w-full items-start gap-2 rounded-xl px-2 py-2 text-left hover:bg-sand/60">
-                    <span className={cx('mt-0.5 shrink-0 rounded-full px-2 py-0.5 text-[11px] font-semibold', o.status === 'achieved' ? 'bg-sun-100 text-sun-700' : o.status === 'partial' ? 'bg-forest-50 text-forest-700' : 'bg-sand text-ink-soft')}>
+                    <span className={cx('mt-0.5 shrink-0 rounded-full px-2 py-0.5 text-[11px] font-semibold', o.status === 'achieved' ? 'bg-forest-600 text-cream' : o.status === 'partial' ? 'bg-forest-50 text-forest-700' : 'bg-sand text-ink-soft')}>
                       {t(`objectives.status.${o.status}${o.status === 'notyet' && stage === 'adult' ? 'Adult' : ''}`)}
                     </span>
                     <span className="min-w-0 text-[13px] leading-snug text-ink-soft">{o.title}</span>
@@ -137,7 +137,7 @@ export function MatchPanel({ s, stage, viewer, data }: { s: SeasonSummary; stage
     [t('perf.starts'), t('perf.startsVal', { starts: s.matches.starts, played: s.matches.played })],
     [t('perf.goals'), String(c.GOAL), s.taggedMinutes ? t('perf.per90', { v: fmtDec(per90(c.GOAL), lang, 2) }) : undefined],
     [t('perf.shots'), String(c.SHOT), [t('perf.onTarget', { n: c.SHOT_IN }), s.taggedMinutes ? t('perf.per90', { v: fmtDec(per90(c.SHOT), lang) }) : ''].filter(Boolean).join(', ')],
-    [t('perf.passAcc'), passes ? fmtPct(c.PASS_OK / passes, lang) : '·', passes ? t('perf.passesVal', { ok: c.PASS_OK, n: passes }) : undefined],
+    [t('perf.passAcc'), passes ? fmtPct(c.PASS_OK / passes, lang) : '-', passes ? t('perf.passesVal', { ok: c.PASS_OK, n: passes }) : undefined],
     [t('perf.progressions'), fmtDec(per90(c.PROG + c.LINE), lang), t('perf.per90Label')],
     [t('perf.entries'), fmtDec(per90(c.FINAL3 + c.BOX), lang), t('perf.per90Label')],
     [t('perf.regain5'), fmtDec(per90(c.REGAIN5), lang), t('perf.per90Label')],

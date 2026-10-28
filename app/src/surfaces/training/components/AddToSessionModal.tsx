@@ -33,7 +33,7 @@ export function AddToSessionModal({ drill, open, onClose, onDone }: { drill: Dri
           <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-forest-600 text-cream"><Plus size={20} aria-hidden="true" /></span>
           <span><span className="block font-semibold text-ink">{t('detail.addNew')}</span><span className="block text-xs text-ink-muted">{t('detail.addNewHint')}</span></span>
         </button>
-        <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-faint">{t('detail.addExisting')}</div>
+        <h3 className="mb-2 font-sans text-[13px] font-semibold tracking-normal text-ink-muted" style={{ fontStretch: '100%' }}>{t('detail.addExisting')}</h3>
         {upcoming.length === 0 ? (
           <p className="rounded-2xl bg-sand px-4 py-3 text-sm text-ink-muted">{t('detail.noUpcoming')}</p>
         ) : (
@@ -45,13 +45,13 @@ export function AddToSessionModal({ drill, open, onClose, onDone }: { drill: Dri
                 <li key={s.id}>
                   <button type="button" onClick={() => add(s)} className="flex min-h-[56px] w-full items-center gap-3 rounded-2xl border border-line bg-paper p-3 text-left transition hover:border-forest-600">
                     <div className="w-14 shrink-0 text-center">
-                      <div className="text-[11px] font-semibold uppercase text-ink-faint">{fmtDate(s.date, lang, { weekday: 'short' })}</div>
+                      <div className="text-[11.5px] font-semibold text-ink-faint">{fmtDate(s.date, lang, { weekday: 'short' })}</div>
                       <div className="font-display text-xl font-semibold leading-none text-ink">{fmtDate(s.date, lang, { day: 'numeric' })}</div>
                     </div>
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2"><MdBadge md={s.md} />{fits && <span className="text-[11px] font-semibold text-ok-500">{t('detail.fitsDay')}</span>}</div>
                       <div className="truncate font-semibold text-ink">{s.title}</div>
-                      <div className="text-xs text-ink-muted">{t('blocksCount', { count: s.blocks.length })} · {sessionMinutes(s)} {t('common:misc.minutes')}</div>
+                      <div className="flex gap-x-3 text-[12.5px] text-ink-muted"><span>{t('blocksCount', { count: s.blocks.length })}</span><span className="tabular-nums">{sessionMinutes(s)} {t('common:misc.minutes')}</span></div>
                     </div>
                     {already ? <span className="inline-flex items-center gap-1 text-xs font-semibold text-ink-faint"><Check size={14} aria-hidden="true" />{t('detail.already')}</span> : <Plus size={18} className="shrink-0 text-forest-600" aria-hidden="true" />}
                   </button>

@@ -80,16 +80,16 @@ export function SkillProgress({ data, season, viewer }: { data: JourneyData; sea
                 className={cx('flex h-full min-h-[96px] w-full flex-col rounded-xl border p-2.5 text-left transition', sel === k ? 'border-forest-600 bg-forest-50/70 ring-1 ring-forest-600' : 'border-line bg-paper hover:border-forest-300', !pts.length && 'opacity-60')}>
                 <span className="flex items-baseline justify-between gap-1">
                   <span className="truncate text-[12.5px] font-semibold text-ink">{t(`team:skillsShort.${k}`)}</span>
-                  <span className="font-display text-lg font-semibold leading-none text-forest-700">{now ?? '·'}</span>
+                  <span className="font-display text-lg leading-none text-forest-700">{now ?? '-'}</span>
                 </span>
                 <Spark pts={pts} domain={domain} />
                 <span className="mt-auto flex items-center gap-2 text-[11px] font-semibold tabular-nums">
                   {delta > 0 && <span className="inline-flex items-center text-forest-700"><ArrowUpRight size={13} aria-hidden="true" />{t('skills.up', { n: delta })}</span>}
-                  {delta < 0 && <span className="inline-flex items-center text-terra-700"><ArrowDownRight size={13} aria-hidden="true" />{t('skills.down', { n: -delta })}</span>}
+                  {delta < 0 && <span className="inline-flex items-center text-clay-700"><ArrowDownRight size={13} aria-hidden="true" />{t('skills.down', { n: -delta })}</span>}
                   {delta === 0 && pts.length > 0 && <span className="text-ink-faint">{t('skills.same')}</span>}
                   <span className="ml-auto flex items-center gap-1.5 text-ink-muted">
                     {ev.some((e) => e.tone === 'plus') && <span className="inline-flex items-center gap-0.5"><span className="h-1.5 w-1.5 rounded-full bg-forest-500" />{ev.filter((e) => e.tone === 'plus').length}<span className="sr-only">{t('tone.plus')}</span></span>}
-                    {ev.some((e) => e.tone === 'work') && <span className="inline-flex items-center gap-0.5"><span className="h-1.5 w-1.5 rounded-full bg-terra-500" />{ev.filter((e) => e.tone === 'work').length}<span className="sr-only">{t('tone.work')}</span></span>}
+                    {ev.some((e) => e.tone === 'work') && <span className="inline-flex items-center gap-0.5"><span className="h-1.5 w-1.5 rounded-full border border-ink bg-paper" />{ev.filter((e) => e.tone === 'work').length}<span className="sr-only">{t('tone.work')}</span></span>}
                   </span>
                 </span>
               </button>
@@ -144,28 +144,28 @@ function Detail({ skill, pts, evidence, domain }: { skill: SkillKey; pts: Pt[]; 
         {[1, 2, 3, 4].map((l) => (
           <g key={l}>
             <line x1={L} x2={W - R} y1={y(l)} y2={y(l)} stroke="#DCE2D8" strokeDasharray={l === 4 ? undefined : '3 4'} />
-            <text x={L - 8} y={y(l) + 4} textAnchor="end" fontSize="12" fontWeight={700} fill="#5D6C63" fontFamily="Inter, sans-serif">{l}</text>
+            <text x={L - 8} y={y(l) + 4} textAnchor="end" fontSize="12" fontWeight={700} fill="#5D6C63" >{l}</text>
           </g>
         ))}
         {months.map((m) => (
           <g key={m}>
             <line x1={x(m)} x2={x(m)} y1={T} y2={H - B + 6} stroke="#E6EAE2" />
-            <text x={x(m) + 3} y={H - B + 18} fontSize="11" fill="#94A198" fontFamily="Inter, sans-serif">{fmtDate(m, lang, { month: 'short' }).replace('.', '')}</text>
+            <text x={x(m) + 3} y={H - B + 18} fontSize="11" fill="#94A198" >{fmtDate(m, lang, { month: 'short' }).replace('.', '')}</text>
           </g>
         ))}
         {pts.length > 0 && <path d={stepPath(pts, x, y, domain.end)} fill="none" stroke="#0B5D3B" strokeWidth={3} strokeLinejoin="round" strokeLinecap="round" />}
         {pts.map((p, i) => <circle key={i} cx={x(p.date)} cy={y(p.level)} r={4.5} fill="#FFFFFF" stroke="#0B5D3B" strokeWidth={2.4} />)}
         {/* evidence lanes: strengths seen, then things to work on */}
-        <text x={L - 8} y={H - 18} textAnchor="end" fontSize="13" fontWeight={700} fill="#13804F" fontFamily="Inter, sans-serif">+</text>
-        <text x={L - 8} y={H - 4} textAnchor="end" fontSize="13" fontWeight={700} fill="#A04A24" fontFamily="Inter, sans-serif">·</text>
+        <text x={L - 8} y={H - 18} textAnchor="end" fontSize="13" fontWeight={700} fill="#13804F" >+</text>
+        <circle cx={L - 11} cy={H - 8} r={3.2} fill="none" stroke="#12211A" strokeWidth={1.6} />
         {stack(plus).map((e, i) => <circle key={`p${i}`} cx={x(e.date) + e.n * 7} cy={H - 22} r={3.6} fill="#13804F" />)}
-        {stack(work).map((e, i) => <circle key={`w${i}`} cx={x(e.date) + e.n * 7} cy={H - 8} r={3.6} fill="#BF5A2E" />)}
+        {stack(work).map((e, i) => <circle key={`w${i}`} cx={x(e.date) + e.n * 7} cy={H - 8} r={3.2} fill="#FFFFFF" stroke="#12211A" strokeWidth={1.6} />)}
       </svg>}
       </div>
       <dl className="mt-2 grid gap-2 text-[13px] leading-snug sm:grid-cols-2">
         {now && <div className="rounded-xl bg-paper px-3 py-2"><dt className="text-[11.5px] font-semibold text-ink-muted">{t('skills.seenNow')}</dt><dd className="text-ink-soft">{t(`team:skillDesc.${skill}.${now}`)}</dd></div>}
         {now && now < 4 && <div className="rounded-xl bg-forest-50 px-3 py-2"><dt className="text-[11.5px] font-semibold text-forest-700">{t('skills.nextStep', { n: now + 1 })}</dt><dd className="text-ink-soft">{t(`team:skillDesc.${skill}.${now + 1}`)}</dd></div>}
-        {now === 4 && <div className="rounded-xl bg-sun-50 px-3 py-2"><dt className="text-[11.5px] font-semibold text-sun-700">{t('skills.top')}</dt><dd className="text-ink-soft">{t('skills.topBody')}</dd></div>}
+        {now === 4 && <div className="rounded-xl bg-forest-600 px-3 py-2 text-cream"><dt className="text-[11.5px] font-semibold text-cream/80">{t('skills.top')}</dt><dd className="text-cream">{t('skills.topBody')}</dd></div>}
       </dl>
       <p className="mt-2 text-[11.5px] text-ink-faint">{t('skills.evidenceNote', { plus: plus.length, work: work.length })}</p>
     </div>

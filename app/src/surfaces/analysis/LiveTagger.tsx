@@ -10,7 +10,7 @@ import { cx, fmtClock } from '../../lib/util'
 import { uid } from '../../lib/util'
 import type { EventCode, Match, MatchEvent, Player, Team } from '../../lib/types'
 import { computeNjangi, fmtNjangi, njangiLabel, SUB_KEYS, type NjangiResult } from '../../lib/njangi'
-import { buzz, defFor, fmtPct, GROUP_ORDER, shortTeam, halfLength, isTyping, matchSeconds, minuteLabel, shortKey, tagFromKey, TAGS, type GroupId, type LiveKey, type TagDef } from './components/codes'
+import { buzz, defFor, fmtPct, GROUP_ORDER, markInk, shortTeam, halfLength, isTyping, matchSeconds, minuteLabel, shortKey, tagFromKey, TAGS, type GroupId, type LiveKey, type TagDef } from './components/codes'
 import { secondsOf, useClock, type Half } from './components/clock'
 import { Sheet } from './components/Sheet'
 import { useMedia } from './components/data'
@@ -41,7 +41,7 @@ const PHONE_WEIGHT: Partial<Record<LiveKey, number>> = { ...WEIGHT, FIX2: 1.2, S
 const LOSS_WINDOW = 5000
 const STRIP_MS = 2500
 
-const groupDot: Record<GroupId, string> = { possession: 'bg-forest-300', danger: 'bg-sun-500', fixation: 'bg-terra-500', transition: 'bg-clay-300', opponent: 'bg-ink-faint' }
+const groupDot: Record<GroupId, string> = { possession: 'bg-forest-500', danger: 'bg-cream', fixation: 'bg-forest-300', transition: 'bg-clay-300', opponent: 'bg-white/30' }
 
 interface Prefs { attribution: boolean; oppMode: boolean }
 const PREFS_KEY = 'njangi.live.prefs'
@@ -85,7 +85,7 @@ function Tagger({ match }: { match: Match }) {
 
   const [sheet, setSheet] = useState<null | 'log' | 'help' | 'end' | 'settings' | 'panel' | 'observe'>(null)
   const [flash, setFlash] = useState<{ key: LiveKey; n: number } | null>(null)
-  const [toast, setToast] = useState<{ text: string; n: number; tone?: 'ok' | 'sun' } | null>(null)
+  const [toast, setToast] = useState<{ text: string; n: number; tone?: 'ok' | 'sun'; minute?: string; note?: string } | null>(null)
   const [lossUntil, setLossUntil] = useState(0)
   const [strip, setStrip] = useState<{ createdAt: string; until: number; label: string } | null>(null)
   const [now, setNow] = useState(Date.now())
@@ -161,7 +161,7 @@ function Tagger({ match }: { match: Match }) {
     flashN.current += 1
     setFlash({ key: shownKey, n: flashN.current })
     const mins = minuteLabel(half, sec, match.halfMinutes)
-    setToast({ text: `${label(shownKey)} · ${mins}${def.implies?.length && code === def.code ? ` · ${t('live.autoAdded')}` : ''}`, n: flashN.current, tone: shownKey === 'REGAIN5' && def.key === 'REGAIN' ? 'sun' : 'ok' })
+    setToast({ text: label(shownKey), minute: mins, note: def.implies?.length && code === def.code ? t('live.autoAdded') : undefined, n: flashN.current, tone: shownKey === 'REGAIN5' && def.key === 'REGAIN' ? 'sun' : 'ok' })
     if (def.side === 'us' && (code === 'LOSS' || code === 'PASS_LOST')) setLossUntil(tnow + LOSS_WINDOW)
     else if (def.side === 'us' && (code === 'REGAIN5' || code === 'REGAIN')) setLossUntil(0)
     if (prefs.attribution && def.side === 'us' && squad.length) setStrip({ createdAt, until: tnow + STRIP_MS, label: label(shownKey) })
@@ -189,7 +189,7 @@ function Tagger({ match }: { match: Match }) {
     buzz([10, 40, 10])
     setStrip(null)
     if (group.some((e) => (e.code === 'LOSS' || e.code === 'PASS_LOST') && e.side === 'us')) setLossUntil(0)
-    setToast({ text: `${t('live.undone')} · ${label(shortKey(group[0].code, group[0].side) as LiveKey)}`, n: Date.now() })
+    setToast({ text: t('live.undoneTag', { tag: label(shortKey(group[0].code, group[0].side) as LiveKey) }), n: Date.now() })
     await db.events.bulkDelete(group.map((e) => e.id))
     const goals = group.filter((e) => e.code === 'GOAL')
     if (goals.length) await db.matches.where('id').equals(match.id).modify((m) => { for (const g of goals) { if (g.side === 'us') m.scoreUs = Math.max(0, m.scoreUs - 1); else m.scoreThem = Math.max(0, m.scoreThem - 1) } })
@@ -243,13 +243,13 @@ function Tagger({ match }: { match: Match }) {
     return (
       <button key={k} type="button" onClick={() => record(def)} aria-label={`${label(k)}${desktop ? ` (${def.kbd})` : ''}`} title={t(`help.${k}`)}
         style={{ flexGrow: (desktop ? WEIGHT : PHONE_WEIGHT)[k] ?? 1, flexBasis: 0 }}
-        className={cx('relative flex min-h-[52px] min-w-0 flex-col items-center justify-center gap-1 overflow-hidden rounded-2xl px-1.5 py-2 font-semibold shadow-[inset_0_-3px_0_rgba(0,0,0,.18)] transition-transform active:scale-[0.97]',
+        className={cx('relative flex min-h-[52px] min-w-0 flex-col items-center justify-center gap-1 overflow-hidden rounded-[14px] px-1.5 py-2 font-semibold transition-transform active:scale-[0.97]',
           def.btn, isRegain && 'ring-4 ring-sun-300 ring-offset-2 ring-offset-night-900')}>
         {flash?.key === k && <span key={flash.n} className="nj-flash pointer-events-none absolute inset-0 rounded-2xl bg-white" />}
         <Icon size={desktop ? 24 : 22} strokeWidth={2.4} aria-hidden="true" />
         <span lang={lang} className={cx('max-w-full text-center leading-tight [hyphens:auto]', desktop ? 'text-[15px]' : label(k).length > 11 ? 'text-[12.5px] tracking-[-0.01em]' : 'text-[13.5px]')}>{isRegain ? t('live.regainWindow', { s: Math.ceil(lossLeft) }) : label(k)}</span>
-        {n > 0 && !isRegain && <span className="absolute right-2 top-1.5 text-[11px] font-semibold leading-none tabular-nums opacity-60">{n}</span>}
-        {desktop && <kbd className="absolute left-2 top-1.5 rounded bg-black/15 px-1.5 text-[11px] font-semibold opacity-70">{def.kbd}</kbd>}
+        {n > 0 && !isRegain && <span className="absolute right-2 top-1.5 text-[12px] font-semibold leading-none tabular-nums opacity-70">{n}</span>}
+        {desktop && <kbd className="absolute left-2 top-1.5 rounded-md px-1 font-sans text-[11px] font-semibold leading-4 opacity-55 ring-1 ring-current">{def.kbd}</kbd>}
         {isRegain && <LossRing key={lossUntil} left={lossLeft} />}
       </button>
     )
@@ -261,7 +261,7 @@ function Tagger({ match }: { match: Match }) {
         <div key={li} className="flex min-h-0 gap-2 lg:gap-3" style={{ flexGrow: Math.max(...line.map((b) => b.rows.length)) * (desktop && line.every((b) => b.group === 'opponent') ? 0.7 : 1), flexBasis: 0 }}>
           {line.map((b, bi) => (
             <div key={bi} className="flex min-w-0 flex-col" style={{ flexGrow: Math.max(...b.rows.map((r) => r.length)), flexBasis: 0 }}>
-              <div className="mb-1 flex items-center gap-1.5 px-0.5 text-[10.5px] font-semibold uppercase tracking-[0.14em] text-cream/55">
+              <div className="mb-1 flex items-center gap-1.5 px-0.5 text-[12px] font-semibold text-cream/60">
                 <span className={cx('h-1.5 w-1.5 rounded-full', groupDot[b.group])} />{t(`groups.${b.group}`)}
               </div>
               <div className="flex min-h-0 flex-1 flex-col gap-2">
@@ -287,11 +287,11 @@ function Tagger({ match }: { match: Match }) {
 
   const clockBtn = (
     <button type="button" onClick={clock.toggle} aria-label={clock.state.running ? t('live.pause') : clock.state.elapsed[half] > 0 ? t('live.resume') : t('live.start')}
-      className={cx('flex min-h-[48px] items-center gap-2.5 rounded-2xl px-3 py-1 ring-1 transition', clock.state.running ? 'bg-white/5 ring-white/10' : 'bg-sun-500 text-ink ring-sun-300')}>
-      <span className={cx('grid h-9 w-9 shrink-0 place-items-center rounded-full', clock.state.running ? 'bg-white/10' : 'bg-ink/10')}>
+      className={cx('flex min-h-[48px] items-center gap-2.5 rounded-[14px] py-1 pl-1.5 pr-3 ring-1 transition', clock.state.running ? 'bg-white/5 ring-white/10' : 'bg-cream text-ink ring-cream')}>
+      <span className={cx('grid h-9 w-9 shrink-0 place-items-center rounded-full', clock.state.running ? 'bg-white/10' : 'bg-sun-500 text-ink')}>
         {clock.state.running ? <Pause size={18} fill="currentColor" /> : <Play size={18} fill="currentColor" />}
       </span>
-      <span className="font-sans text-[34px] font-semibold leading-none tabular-nums tracking-tight lg:text-[38px]">{fmtClock(added ? len + matchSeconds(half, 0, match.halfMinutes) : shown)}</span>
+      <span className="font-display text-[30px] leading-none tabular-nums lg:text-[34px]">{fmtClock(added ? len + matchSeconds(half, 0, match.halfMinutes) : shown)}</span>
       {added > 0 && <span className="rounded-md bg-clay-500 px-1.5 py-0.5 text-[13px] font-semibold tabular-nums text-white">+{fmtClock(added)}</span>}
       {!clock.state.running && <span className="hidden text-sm font-semibold sm:inline">{clock.state.elapsed[half] > 0 ? t('live.resume') : t('live.start')}</span>}
     </button>
@@ -300,7 +300,7 @@ function Tagger({ match }: { match: Match }) {
   const scoreBlock = (
     <div className="flex min-w-0 flex-1 items-center justify-center gap-2.5">
       <span className="min-w-0 truncate text-right text-[13px] font-semibold text-cream/85 lg:text-[15px]" title={teamName}>{shortTeam(teamName)}</span>
-      <span className="shrink-0 rounded-xl bg-white/5 px-2.5 py-1 text-[24px] font-bold leading-none tabular-nums ring-1 ring-white/10 lg:text-[28px]">{match.scoreUs}<span className="mx-1 text-cream/40">:</span>{match.scoreThem}</span>
+      <span className="shrink-0 rounded-xl bg-white/5 px-2.5 py-1.5 font-display text-[22px] leading-none tabular-nums ring-1 ring-white/10 lg:text-[26px]">{match.scoreUs}<span className="mx-1 text-cream/35">-</span>{match.scoreThem}</span>
       <span className="min-w-0 truncate text-[13px] font-semibold text-cream/85 lg:text-[15px]" title={match.opponent}>{shortTeam(match.opponent)}</span>
     </div>
   )
@@ -316,14 +316,14 @@ function Tagger({ match }: { match: Match }) {
     <button type="button" onClick={() => setSheet('panel')} aria-label={t('live.panelOpen')}
       className="mx-3 mb-2 flex min-h-[46px] items-center gap-3 rounded-2xl bg-white/[0.04] px-3 py-1.5 text-left ring-1 ring-white/10 lg:hidden">
       <span className="shrink-0">
-        <span className="block text-[10px] font-semibold uppercase tracking-[0.14em] text-cream/50">{t('live.indice')}</span>
-        <span className="block text-[22px] font-bold leading-none tabular-nums text-sun-300">{fmtNjangi(result.total, lang)}</span>
+        <span className="block text-[11px] font-semibold leading-tight text-cream/60">{t('live.indice')}</span>
+        <span className="block font-display text-[22px] leading-none tabular-nums text-sun-300">{fmtNjangi(result.total, lang)}</span>
       </span>
       <span className="grid min-w-0 flex-1 grid-cols-5 gap-1.5">
         {SUB_KEYS.map((k) => (
           <span key={k} className="min-w-0">
             <span className="flex items-baseline justify-between text-[10px] font-semibold text-cream/60"><span>{t(`sub.${k}.letter`)}</span><span className="tabular-nums text-cream/85">{Math.round(result.sub[k])}</span></span>
-            <span className="mt-0.5 block h-1.5 overflow-hidden rounded-full bg-white/10"><span className="block h-full rounded-full bg-sun-500 transition-all duration-500" style={{ width: `${(result.sub[k] / 20) * 100}%` }} /></span>
+            <span className="mt-0.5 block h-1.5 overflow-hidden rounded-full bg-white/10"><span className="block h-full rounded-full bg-forest-300 transition-all duration-500" style={{ width: `${(result.sub[k] / 20) * 100}%` }} /></span>
           </span>
         ))}
       </span>
@@ -332,8 +332,9 @@ function Tagger({ match }: { match: Match }) {
   )
 
   return (
-    <div className="flex h-[100dvh] select-none flex-col overflow-hidden bg-night-900 text-cream" style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>
+    <div className="nj-live flex h-[100dvh] select-none flex-col overflow-hidden bg-night-900 text-cream" style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>
       <style>{`
+        .nj-live :focus-visible { outline-color: #FFD452; outline-offset: 3px }
         @keyframes njFlash { from { opacity: .55 } to { opacity: 0 } }
         .nj-flash { animation: njFlash .35s ease-out forwards }
         @keyframes njShrink { from { transform: scaleX(1) } to { transform: scaleX(0) } }
@@ -360,7 +361,7 @@ function Tagger({ match }: { match: Match }) {
               </div>
             </>
           ) : scoreBlock}
-          <button type="button" onClick={() => setSheet('end')} aria-label={t('live.end')} className="flex min-h-[44px] shrink-0 items-center gap-1.5 rounded-xl bg-clay-500 px-3 text-[13px] font-semibold text-white">
+          <button type="button" onClick={() => setSheet('end')} aria-label={t('live.end')} className="flex min-h-[44px] shrink-0 items-center gap-1.5 rounded-xl px-3 text-[13px] font-semibold text-cream ring-1 ring-white/25 hover:bg-white/10">
             <Flag size={16} />{desktop ? t('live.end') : t('live.endShort')}
           </button>
         </div>
@@ -390,8 +391,8 @@ function Tagger({ match }: { match: Match }) {
             <LivePanel result={result} />
             <div className="rounded-2xl bg-white/[0.04] p-4 ring-1 ring-white/10">
               <div className="mb-2 flex items-center justify-between">
-                <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-cream/55">{t('live.logTitle')}</span>
-                <button type="button" onClick={() => setSheet('log')} className="text-[12px] font-semibold text-sun-300">{t('live.tagged', { n: events.length })}</button>
+                <span className="text-[13px] font-semibold text-cream/70">{t('live.logTitle')}</span>
+                <button type="button" onClick={() => setSheet('log')} className="min-h-[32px] text-[12.5px] font-semibold tabular-nums text-cream/80 underline decoration-white/25 underline-offset-4 hover:text-cream">{t('live.tagged', { count: events.length })}</button>
               </div>
               {lastEvents.length === 0 ? <p className="text-[13px] text-cream/60">{t('live.logEmpty')}</p> : (
                 <ul className="space-y-1">
@@ -408,7 +409,7 @@ function Tagger({ match }: { match: Match }) {
       {!desktop && (
         <nav className="safe-bottom grid shrink-0 grid-cols-5 border-t border-white/10 bg-night-800/80">
           <BottomBtn icon={<Undo2 size={20} />} label={t('live.undo')} onClick={undo} />
-          <BottomBtn icon={<ListOrdered size={20} />} label={`${t('live.log')} · ${events.length}`} onClick={() => setSheet('log')} />
+          <BottomBtn icon={<ListOrdered size={20} />} label={t('live.log')} count={events.length} onClick={() => setSheet('log')} />
           <BottomBtn icon={<Eye size={20} />} label={t('journey:actions.observe')} onClick={() => setSheet('observe')} />
           <BottomBtn icon={<CircleHelp size={20} />} label={t('live.help')} onClick={() => setSheet('help')} />
           <BottomBtn icon={<Settings2 size={20} />} label={t('live.settingsShort')} onClick={() => setSheet('settings')} />
@@ -419,7 +420,7 @@ function Tagger({ match }: { match: Match }) {
       {toast && (
         <div key={toast.n} role="status" aria-live="polite" className={cx('pointer-events-none fixed left-1/2 z-50 flex max-w-[92vw] items-center gap-2 rounded-full px-4 py-2 text-[14px] font-semibold shadow-lift',
           toast.tone === 'sun' ? 'bg-sun-500 text-ink' : 'bg-cream text-ink')} style={{ animation: 'njToast 1.4s ease forwards', top: (headerRef.current?.getBoundingClientRect().bottom ?? 64) + 4 }}>
-          <Check size={16} strokeWidth={3} /><span className="truncate">{toast.text}</span>
+          <Check size={16} strokeWidth={3} /><span className="truncate">{toast.text}</span>{toast.minute && <span className="tabular-nums text-ink-muted">{toast.minute}</span>}{toast.note && <span className="truncate font-medium text-ink-muted">{toast.note}</span>}
         </div>
       )}
 
@@ -450,7 +451,8 @@ function Tagger({ match }: { match: Match }) {
         <LivePanel result={result} flat />
       </Sheet>
 
-      <Sheet open={sheet === 'log'} onClose={() => setSheet(null)} title={`${t('live.logTitle')} · ${events.length}`} closeLabel={t('common:actions.close')} wide>
+      <Sheet open={sheet === 'log'} onClose={() => setSheet(null)} title={t('live.logTitle')} closeLabel={t('common:actions.close')} wide>
+        {lastEvents.length > 0 && <p className="mb-1 text-[13px] text-cream/60">{t('live.tagged', { count: events.length })}</p>}
         {lastEvents.length === 0 ? <p className="py-6 text-center text-cream/60">{t('live.logEmpty')}</p> : (
           <LogList events={lastEvents} match={match} squad={squad} playerById={playerById} onDelete={removeOne} />
         )}
@@ -465,7 +467,7 @@ function Tagger({ match }: { match: Match }) {
           <DarkToggle checked={prefs.attribution} onChange={(v) => savePrefs({ ...prefs, attribution: v })} label={t('live.attribution')} hint={t('live.attributionHint')} />
           <DarkToggle checked={prefs.oppMode} onChange={(v) => savePrefs({ ...prefs, oppMode: v })} label={t('live.oppMode')} hint={t('live.oppModeHint')} />
           <div>
-            <div className="mb-2 text-sm font-semibold">{t(`live.halvesLong.${half}`)} · {fmtClock(sec)}</div>
+            <div className="mb-2 flex items-baseline justify-between text-sm font-semibold"><span>{t('live.clockAdjust', { half: t(`live.halvesLong.${half}`) })}</span><span className="tabular-nums text-cream/70">{fmtClock(sec)}</span></div>
             <div className="grid grid-cols-4 gap-2">
               {[-60, -10, 10, 60].map((d) => (
                 <button key={d} type="button" onClick={() => clock.setSeconds(secondsOf(clock.state) + d)} className="min-h-[44px] rounded-xl bg-white/10 text-sm font-semibold tabular-nums">
@@ -503,10 +505,11 @@ function LossRing({ left }: { left: number }) {
   )
 }
 
-function BottomBtn({ icon, label, onClick }: { icon: ReactNode; label: string; onClick: () => void }) {
+function BottomBtn({ icon, label, onClick, count }: { icon: ReactNode; label: string; onClick: () => void; count?: number }) {
   return (
-    <button type="button" onClick={onClick} className="flex min-h-[56px] flex-col items-center justify-center gap-0.5 text-[11.5px] font-semibold text-cream/80 active:bg-white/5">
-      {icon}<span className="max-w-full truncate px-1">{label}</span>
+    <button type="button" onClick={onClick} className="relative flex min-h-[56px] flex-col items-center justify-center gap-0.5 text-[11.5px] font-semibold text-cream/80 active:bg-white/5">
+      <span className="relative">{icon}{count ? <span className="absolute -right-3.5 -top-1.5 min-w-[18px] rounded-full bg-cream px-1 text-center text-[10.5px] font-bold leading-[16px] tabular-nums text-ink">{count > 999 ? '999+' : count}</span> : null}</span>
+      <span className="max-w-full truncate px-1">{label}</span>
     </button>
   )
 }
@@ -525,14 +528,14 @@ function LivePanel({ result, flat = false }: { result: NjangiResult; flat?: bool
     <div className={cx(!flat && 'rounded-2xl bg-white/[0.04] p-4 ring-1 ring-white/10')}>
       <div className="flex items-end justify-between gap-3">
         <div>
-          <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-cream/55">{t('live.panel')}</div>
-          <div className="mt-0.5 text-[44px] font-bold leading-none tabular-nums text-sun-300">{fmtNjangi(result.total, lang)}<span className="ml-1 text-base font-semibold text-cream/40">/ 100</span></div>
+          <div className="text-[13px] font-semibold text-cream/70">{t('live.panel')}</div>
+          <div className="mt-1 font-display text-[44px] leading-none tabular-nums text-sun-300">{fmtNjangi(result.total, lang)}<span className="ml-1 text-base font-semibold text-cream/40">/ 100</span></div>
           <div className="mt-1 font-display text-[16px] font-semibold text-cream">{njangiLabel(result.total, lang)}</div>
         </div>
       </div>
       <SubBars result={result} dark className="mt-4" />
       <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-1.5 border-t border-white/10 pt-3 text-[12.5px]">
-        {stats.map(([k, v]) => <div key={k} className="flex justify-between gap-2"><dt className="truncate text-cream/60">{k}</dt><dd className="font-semibold tabular-nums">{v}</dd></div>)}
+        {stats.map(([k, v]) => <div key={k} className="flex justify-between gap-2"><dt className="truncate text-cream/60">{k}</dt><dd className="text-right font-semibold tabular-nums">{v}</dd></div>)}
       </dl>
     </div>
   )
@@ -545,9 +548,9 @@ function EventRow({ e, match, player, compact = false, children, onClick }: { e:
   const content = (
     <>
       <span className="w-12 shrink-0 text-[13px] font-semibold tabular-nums text-cream/70">{minuteLabel(e.half, e.t, match.halfMinutes)}</span>
-      <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg" style={{ background: def?.color ?? '#5D6C63' }}>{Icon && <Icon size={15} className={def && /text-ink/.test(def.btn) ? 'text-ink' : 'text-white'} />}</span>
+      <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg" style={{ background: def?.color ?? '#5D6C63' }}>{Icon && <Icon size={15} className={markInk(def?.color ?? '#5D6C63')} />}</span>
       <span className="min-w-0 flex-1 truncate text-[14px] font-semibold">{t(`short.${shortKey(e.code, e.side)}`)}{e.side === 'them' && def?.side !== 'them' ? ` (${t('live.them')})` : ''}</span>
-      {player && <span className="max-w-[40%] truncate text-[12px] text-cream/65">{player.number != null ? `${player.number} · ` : ''}{player.name}</span>}
+      {player && <span className="flex max-w-[40%] items-baseline gap-1.5 truncate text-[12px] text-cream/65">{player.number != null && <span className="font-semibold tabular-nums text-cream/85">{player.number}</span>}<span className="truncate">{player.name}</span></span>}
     </>
   )
   return (
@@ -566,7 +569,7 @@ function LogList({ events, match, squad, playerById, onDelete }: { events: Match
   return (
     <ul className="divide-y divide-white/5">
       {events.slice(0, limit).map((e) => {
-        const head = e.half !== lastHalf ? (lastHalf = e.half, <li key={`h${e.half}-${e.id}`} className="pb-1 pt-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-sun-300">{t(`live.halvesLong.${e.half}`)}</li>) : null
+        const head = e.half !== lastHalf ? (lastHalf = e.half, <li key={`h${e.half}-${e.id}`} className="pb-1 pt-4 text-[13px] font-semibold text-cream/70">{t(`live.halvesLong.${e.half}`)}</li>) : null
         return [
           head,
           <EventRow key={e.id} e={e} match={match} player={e.playerId ? playerById.get(e.playerId) : undefined} onClick={e.side === 'us' && squad.length ? () => setOpen(open === e.id ? null : e.id) : undefined}>
@@ -607,14 +610,14 @@ function HelpBody() {
         <h3 className="mb-2 font-display text-base font-semibold text-cream">{t('live.codes')}</h3>
         {GROUP_ORDER.map((g) => (
           <div key={g} className="mb-3">
-            <div className="mb-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-cream/55">{t(`groups.${g}`)}</div>
+            <div className="mb-1.5 text-[13px] font-semibold text-cream/70">{t(`groups.${g}`)}</div>
             <ul className="space-y-1.5">
               {TAGS.filter((x) => x.group === g).map((x) => {
                 const Icon = x.icon
                 return (
                   <li key={x.key} className="flex gap-2.5">
                     <kbd className="mt-0.5 h-6 min-w-[26px] shrink-0 rounded-md bg-white/10 text-center text-[12px] font-semibold leading-6">{x.kbd}</kbd>
-                    <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-md" style={{ background: x.color }}><Icon size={13} className="text-white" /></span>
+                    <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-md" style={{ background: x.color }}><Icon size={13} className={markInk(x.color)} /></span>
                     <span><b className="font-semibold text-cream">{t(`short.${x.key}`)}</b> <span className="text-cream/70">{t(`help.${x.key}`)}</span></span>
                   </li>
                 )
@@ -630,7 +633,7 @@ function HelpBody() {
 function DarkToggle({ checked, onChange, label, hint }: { checked: boolean; onChange: (v: boolean) => void; label: string; hint?: string }) {
   return (
     <button type="button" role="switch" aria-checked={checked} onClick={() => onChange(!checked)} className="flex w-full items-start gap-3 text-left">
-      <span className={cx('relative mt-0.5 h-7 w-12 shrink-0 rounded-full transition', checked ? 'bg-sun-500' : 'bg-white/15')}>
+      <span className={cx('relative mt-0.5 h-7 w-12 shrink-0 rounded-full transition', checked ? 'bg-forest-500' : 'bg-white/15')}>
         <span className={cx('absolute top-0.5 h-6 w-6 rounded-full bg-cream shadow transition', checked ? 'left-[22px]' : 'left-0.5')} />
       </span>
       <span><span className="block text-sm font-semibold">{label}</span>{hint && <span className="block text-[13px] text-cream/60">{hint}</span>}</span>
@@ -645,7 +648,7 @@ function Stepper({ label, value, onChange }: { label: string; value: number; onC
       <span className="min-w-0 truncate text-sm font-semibold">{label}</span>
       <div className="flex items-center gap-2">
         <button type="button" aria-label={`${label} -1`} onClick={() => onChange(Math.max(0, value - 1))} className="grid h-11 w-11 place-items-center rounded-xl bg-white/10"><Minus size={18} /></button>
-        <span className="w-8 text-center text-2xl font-bold tabular-nums" aria-label={t('live.score')}>{value}</span>
+        <span className="w-8 text-center font-display text-2xl tabular-nums" aria-label={t('live.score')}>{value}</span>
         <button type="button" aria-label={`${label} +1`} onClick={() => onChange(value + 1)} className="grid h-11 w-11 place-items-center rounded-xl bg-white/10"><Plus size={18} /></button>
       </div>
     </div>

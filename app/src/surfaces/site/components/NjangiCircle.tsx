@@ -70,21 +70,21 @@ export default function NjangiCircle({ className }: { className?: string }) {
           <rect className="goalflash" x={GOAL[0] - 4} y={GOAL[1] - 30} width="22" height="60" rx="4" fill="#F5B700" opacity="0" />
           <path d={`M ${GOAL[0] + 14} ${GOAL[1] - 26} H ${GOAL[0]} V ${GOAL[1] + 26} H ${GOAL[0] + 14}`} fill="none" stroke="#12211A" strokeWidth="3" strokeLinejoin="round" />
           <g stroke="#12211A" strokeOpacity=".25" strokeWidth="1"><path d={`M ${GOAL[0] + 5} ${GOAL[1] - 26} V ${GOAL[1] + 26} M ${GOAL[0] + 10} ${GOAL[1] - 26} V ${GOAL[1] + 26} M ${GOAL[0]} ${GOAL[1] - 13} H ${GOAL[0] + 14} M ${GOAL[0]} ${GOAL[1]} H ${GOAL[0] + 14} M ${GOAL[0]} ${GOAL[1] + 13} H ${GOAL[0] + 14}`} /></g>
-          <text x={GOAL[0] + 7} y={GOAL[1] + 46} textAnchor="middle" fontSize="11" fontWeight="600" fill="#5D6C63" fontFamily="Inter, sans-serif">{t('landing.njangi.goal')}</text>
+          <text x={GOAL[0] + 7} y={GOAL[1] + 46} textAnchor="middle" fontSize="11" fontWeight="600" fill="#5D6C63" fontFamily="'Archivo Variable', Archivo, sans-serif">{t('landing.njangi.goal')}</text>
         </g>
         {/* the pot in the middle: six parts, one per touch */}
         <circle className="potglow" cx={CX} cy={CY} r="46" fill="#F5B700" opacity="0" />
         <circle cx={CX} cy={CY} r="34" fill="#FFFFFF" stroke="#DCE2D8" />
         {ANGLES.map((a, i) => (
-          <path key={i} className={`seg${i}`} d={arc(40, a - 27, a + 27)} stroke={['#0B5D3B', '#BF5A2E', '#F5B700', '#D7263D', '#13804F', '#D29C00'][i]} strokeWidth="9" strokeLinecap="round" fill="none" opacity=".14" />
+          <path key={i} className={`seg${i}`} d={arc(40, a - 27, a + 27)} stroke={['#0B5D3B', '#13804F', '#73B391', '#0B5D3B', '#13804F', '#F5B700'][i]} strokeWidth="9" strokeLinecap="round" fill="none" opacity=".14" />
         ))}
-        <text x={CX} y={CY + 4} textAnchor="middle" fontSize="13" fontStyle="italic" fontWeight="600" fill="#12211A" fontFamily="Fraunces, Georgia, serif">{t('landing.njangi.pot')}</text>
+        <text x={CX} y={CY + 4} textAnchor="middle" fontSize="13" fontStyle="italic" fontWeight="650" fill="#12211A" fontFamily="'Archivo Variable', Archivo, sans-serif">{t('landing.njangi.pot')}</text>
         {/* the six players */}
         {P.map((p, i) => (
           <g key={i}>
             <circle className={`touch${i} touchring`} cx={p[0]} cy={p[1]} r="15" fill="none" stroke="#F5B700" strokeWidth="3" opacity="0" />
             <circle cx={p[0]} cy={p[1]} r="15" fill="#0B5D3B" stroke="#F6F7F2" strokeWidth="2.5" />
-            <text x={p[0]} y={p[1] + 4.5} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#F6F7F2" fontFamily="Inter, sans-serif">{i + 1}</text>
+            <text x={p[0]} y={p[1] + 4.5} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#F6F7F2" fontFamily="'Archivo Variable', Archivo, sans-serif">{i + 1}</text>
           </g>
         ))}
         {/* the ball */}
@@ -95,7 +95,7 @@ export default function NjangiCircle({ className }: { className?: string }) {
           </g>
         </g>
       </svg>
-      <figcaption className="mt-3 text-center text-sm text-ink-muted">{t('landing.njangi.figCaption')}</figcaption>
+      <figcaption className="mt-3 text-center text-[13.5px] text-ink-muted">{t('landing.njangi.figCaption')}</figcaption>
     </figure>
   )
 }

@@ -22,7 +22,7 @@ import { getPending, navChip, postMessage, setBusy, setPending, sleep, type Pend
 /* Types                                                               */
 /* ------------------------------------------------------------------ */
 
-export interface TaskItem { label: string; sub?: string; route?: string }
+export interface TaskItem { label: string; sub?: string; route?: string; code?: string }
 export interface TaskPayload {
   items?: TaskItem[]
   resultLabel?: string
@@ -413,7 +413,7 @@ const planWeekExec: Exec = async (ctx, slots, request) => {
     resultRoute: `/app/semaine?w=${weekStart(created[0]?.date ?? addDays(matchDate, -1))}`,
     payload: {
       resultLabel: t('open.week'), motto: await mottoTurn(),
-      items: created.map((s) => ({ label: s.title, sub: `${s.md} · ${shortDay(s.date, lang)} · ${sessionMinutes(s)} ${tc('misc.minutes')}`, route: `/app/seances/${s.id}` })),
+      items: created.map((s) => ({ label: s.title, sub: `${s.md}, ${shortDay(s.date, lang)}, ${sessionMinutes(s)} ${tc('misc.minutes')}`, route: `/app/seances/${s.id}` })),
     },
   })
   const chips = match && ctx.team ? [t('chips.sendConvocation'), t('chips.exportCalendar')] : [t('chips.exportCalendar')]
@@ -445,7 +445,7 @@ const createSessionExec: Exec = async (ctx, slots, request) => {
       resultLabel: t('open.session'), motto: await mottoTurn(),
       items: s.blocks.map((b) => {
         const d = getDrill(b.drillId)
-        return { label: d ? `${d.id} · ${drillText(d, lang).title}` : b.title || '', sub: `${b.minutes} ${tc('misc.minutes')}`, route: d ? `/app/exercices/${d.id}` : undefined }
+        return { code: d?.id, label: d ? drillText(d, lang).title : b.title || '', sub: `${b.minutes} ${tc('misc.minutes')}`, route: d ? `/app/exercices/${d.id}` : undefined }
       }),
     },
   })
@@ -501,7 +501,7 @@ const addPlayerExec: Exec = async (ctx, slots, request) => {
   if (single && !slots.position) summary.push(t('player.defaultPos', { position: tc('positions.CM') }))
   await finish(task, {
     summary: summary.join(' '), resultRoute: single ? `/app/equipe/${added[0].id}` : '/app/equipe',
-    payload: { resultLabel: single ? t('open.player') : t('open.team'), items: added.map((p) => ({ label: p.name, sub: `${p.number ? `n° ${p.number} · ` : ''}${tc(`positions.${p.position}`)}`, route: `/app/equipe/${p.id}` })) },
+    payload: { resultLabel: single ? t('open.player') : t('open.team'), items: added.map((p) => ({ label: p.name, sub: `${p.number ? `n° ${p.number}, ` : ''}${tc(`positions.${p.position}`)}`, route: `/app/equipe/${p.id}` })) },
   })
   await setChips(msgId, [t('chips.addPlayer'), t('chips.setupMatch')])
 }
@@ -561,7 +561,7 @@ const exportCalendarExec: Exec = async (ctx, slots, request) => {
     ...w.sessions.map((s) => ({ uid: s.id, title: `${s.title} (${s.md})`, date: s.date, minutes: sessionMinutes(s) || 90, description: s.blocks.map((b) => { const d = getDrill(b.drillId); return `${d ? `${d.id} ${drillText(d, lang).title}` : b.title || ''} (${b.minutes} min)` }).join('\n') })),
     ...w.matches.map((m) => ({ uid: m.id, title: `${teamName} ${tc('app.vs')} ${m.opponent}`, date: m.date, time: m.time, minutes: m.halfMinutes * 2 + 15, location: m.venue })),
   ].sort((a, b) => a.date.localeCompare(b.date))
-  const preview = events.map((e) => `${shortDay(e.date, lang)}${'time' in e && e.time ? ` ${e.time}` : ''} · ${e.title}`).join('\n')
+  const preview = events.map((e) => `${shortDay(e.date, lang)}${'time' in e && e.time ? ` ${e.time}` : ''}${lang === 'fr' ? ' :' : ':'} ${e.title}`).join('\n')
   const { task } = await startTask('export_calendar', request, t('calendar.ack', { from: shortDay(w.monday, lang), to: shortDay(w.sunday, lang) }))
   await step(task, t('calendar.s.collect', { sessions: t('calendar.nSessions', { count: w.sessions.length }), matches: t('calendar.nMatches', { count: w.matches.length }) }))
   const ics = toICS(events)
@@ -600,7 +600,7 @@ const analyzeExec: Exec = async (ctx, slots, request) => {
     summary: lines.join('\n'), resultRoute: `/app/analyse/rapport/${m.id}`,
     payload: {
       resultLabel: t('open.report'), njangi: { total: r.total, label: njangiLabel(r.total, lang), sub: r.sub },
-      items: drillIds.map((id) => getDrill(id)).filter(Boolean).map((d) => ({ label: `${d!.id} · ${drillText(d!, lang).title}`, sub: tc(`families.${d!.family}`), route: `/app/exercices/${d!.id}` })),
+      items: drillIds.map((id) => getDrill(id)).filter(Boolean).map((d) => ({ code: d!.id, label: drillText(d!, lang).title, sub: tc(`families.${d!.family}`), route: `/app/exercices/${d!.id}` })),
     },
   })
   const intention = tc(`intentions.${s.intention}`)
@@ -628,7 +628,7 @@ const recommendDrillsExec: Exec = async (ctx, slots, request) => {
     resultRoute: slots.intention ? `/app/exercices?i=${slots.intention}` : '/app/exercices',
     payload: {
       resultLabel: t('open.drills'),
-      items: top.map((d) => { const x = drillText(d, lang); return { label: `${d.id} · ${x.title}`, sub: `${tc(`families.${d.family}`)} · ${d.minutes} ${tc('misc.minutes')} · ${d.ages}`, route: `/app/exercices/${d.id}` } }),
+      items: top.map((d) => { const x = drillText(d, lang); return { code: d.id, label: x.title, sub: `${tc(`families.${d.family}`)}, ${d.minutes} ${tc('misc.minutes')}, ${d.ages}`, route: `/app/exercices/${d.id}` } }),
     },
   })
   const chips = slots.intention ? [t('chips.sessionIntention', { intention: what })] : []

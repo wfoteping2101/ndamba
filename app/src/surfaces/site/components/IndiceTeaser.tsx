@@ -59,9 +59,9 @@ export function IndiceGauge({ sub, total, label, className }: { sub: Record<SubK
           </g>
         )
       })}
-      <text x={C} y={C + 10} textAnchor="middle" fontSize="62" fontWeight="600" fill="#F6F7F2" fontFamily="Fraunces, Georgia, serif" letterSpacing="-2">{shown}</text>
-      <text x={C} y={C + 32} textAnchor="middle" fontSize="11.5" fill="#F6F7F2" fillOpacity=".6" fontFamily="Inter, sans-serif">{t('landing.live.outOf')}</text>
-      <text x={C} y={C + 74} textAnchor="middle" fontSize="13.5" fontStyle="italic" fontWeight="600" fill="#FFD452" fontFamily="Fraunces, Georgia, serif">{label}</text>
+      <text x={C} y={C + 10} textAnchor="middle" fontSize="56" fontWeight="780" fill="#F6F7F2" fontFamily="'Archivo Variable', Archivo, sans-serif" style={{ fontStretch: '116%' }} letterSpacing="-1.5">{shown}</text>
+      <text x={C} y={C + 32} textAnchor="middle" fontSize="11.5" fill="#F6F7F2" fillOpacity=".6" fontFamily="'Archivo Variable', Archivo, sans-serif">{t('landing.live.outOf')}</text>
+      <text x={C} y={C + 74} textAnchor="middle" fontSize="14" fontStyle="italic" fontWeight="650" fill="#FFD452" fontFamily="'Archivo Variable', Archivo, sans-serif">{label}</text>
     </svg>
   )
 }
@@ -96,7 +96,7 @@ export default function IndiceTeaser() {
                   <span className="font-semibold text-cream">{t(`landing.live.subs.${k}.label`)}</span>
                   <span className="ml-2 text-[13px] text-cream/55">{t(`landing.live.subs.${k}.hint`)}</span>
                 </div>
-                <span className="shrink-0 font-display text-lg tabular-nums text-cream">{fmtNjangi(res.sub[k], lang)}<span className="text-xs text-cream/45"> / 20</span></span>
+                <span className="num shrink-0 font-display text-lg text-cream">{fmtNjangi(res.sub[k], lang)}<span className="text-xs text-cream/45"> / 20</span></span>
               </div>
               <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-white/10">
                 <div className="h-full rounded-full motion-safe:transition-all motion-safe:duration-500" style={{ width: `${(res.sub[k] / 20) * 100}%`, background: SUB_COLOR[k] }} />
@@ -105,17 +105,17 @@ export default function IndiceTeaser() {
           ))}
         </ul>
 
-        <div className="mt-7 rounded-2xl border border-white/10 bg-white/[0.04] p-3.5">
+        <div className="mt-8 rounded-card border border-white/10 bg-white/[0.04] p-4">
           <div className="mb-2.5 flex items-center justify-between gap-2">
             <span className="text-sm font-semibold text-cream">{t('landing.live.try')}</span>
             <span aria-live="polite" className={cx('text-xs tabular-nums', delta > 0 ? 'text-forest-300' : delta < 0 ? 'text-clay-300' : 'text-cream/50')}>
-              {last ? `${t('landing.live.last', { label: t(`common:events.${last}`) })} · ${delta > 0 ? '+' : ''}${fmtNjangi(delta, lang)}` : ''}
+              {last ? <>{t('landing.live.last', { label: t(`common:events.${last}`) })}<span className="ml-2 font-semibold">{delta > 0 ? '+' : ''}{fmtNjangi(delta, lang)}</span></> : ''}
             </span>
           </div>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
             {ACTIONS.map((code) => (
               <button key={code} type="button" onClick={() => setExtra((x) => [...x, code])}
-                className={cx('min-h-[44px] rounded-xl border px-3 py-2 text-left text-[13px] font-semibold transition active:scale-[0.98]',
+                className={cx('min-h-[44px] rounded-control border px-3 py-2 text-left text-[13.5px] font-semibold transition-colors',
                   code === 'LOSS' ? 'border-clay-300/40 bg-clay-500/15 text-clay-100 hover:bg-clay-500/25' : 'border-white/15 bg-white/[0.06] text-cream hover:bg-white/[0.12]')}>
                 {t(`common:events.${code}`)}
               </button>

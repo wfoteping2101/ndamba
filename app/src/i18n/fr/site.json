@@ -13,19 +13,15 @@
   },
   "landing": {
     "hero": {
-      "lead": "{{app}} est l'application de football avec intention pour tous les joueurs, de l'école de foot aux professionnels, et pour ceux qui les font progresser : entraîneurs, analystes, clubs et fédérations. Séances et semaine périodisée, matchs, analyse en direct avec l'Indice Njangi, vidéo, et le parcours de chaque joueur, saison après saison.",
+      "lead": "{{app}} est l'application de football avec intention : séances et semaine d'entraînement, matchs, analyse en direct avec l'Indice Njangi, vidéo et parcours de chaque joueur. De l'école de foot aux professionnels.",
       "ctaStart": "Commencer avec Mola",
-      "ctaPlayer": "Espace joueur",
-      "demoNote": "La démo s'installe dans votre navigateur : l'Étoile de la Côte, club professionnel de Douala, ou les Lionceaux de Bonamoussadi U13, une équipe d'académie.",
       "pitchTitle": "Le but du Njangi : le ballon passe par toute l'équipe, du gardien jusqu'au but.",
-      "pitchCaption": "Du gardien au but : dix passes, onze joueurs, une seule direction.",
-      "title": "Entraîner, observer, suivre chaque joueur. Des jeunes aux pros.",
-      "forWho": "Pour qui",
-      "demoTitle": "Ou essayez une démo, sans compte",
-      "mantraLabel": "Notre mantra :"
+      "pitchCaption": "Le but du Njangi, dans le tome 1 : du gardien au filet, dix passes, onze joueurs.",
+      "demoTitle": "Ou ouvrez une démo, sans compte",
+      "replay": "Rejouer l'action"
     },
     "pillars": {
-      "title": "Entraîner, observer, suivre",
+      "title": "Entraîner, observer, suivre chaque joueur.",
       "train": {
         "title": "Entraîner",
         "body": "Les exercices de la méthode avec leurs schémas, des séances construites en quelques touches, la semaine de MD-4 à MD-1 : adaptées à l'âge, au niveau et au calendrier, des U8 à l'équipe première."
@@ -37,10 +33,10 @@
       "follow": {
         "title": "Suivre",
         "body": "Les dix compétences, les matchs, les minutes et les progrès de chaque joueur, saison après saison : le parcours complet, du premier ballon au plus haut niveau."
-      }
+      },
+      "lead": "Des U8 à l'équipe première, avec les mêmes mots et les mêmes exercices, pour l'éducateur de quartier comme pour le staff d'un club de Ligue 1."
     },
     "njangi": {
-      "eyebrow": "Le njangi",
       "title": "Chacun verse, la caisse circule, tout le monde touche.",
       "p1": "Au Cameroun, le njangi (on dit aussi la tontine) réunit des voisins, des collègues, des amis. Chaque mois, chacun verse sa part dans la même caisse, et la caisse entière va à un membre, à tour de rôle. Personne ne garde l'argent pour lui.",
       "p2": "Sur le terrain, le ballon est la caisse. La passe est la cotisation. Le but, c'est la caisse touchée.",
@@ -65,11 +61,10 @@
       "goal": "but"
     },
     "features": {
-      "eyebrow": "L'application",
-      "title": "Pour tout le football, de l'école de foot aux pros",
-      "lead": "Choisissez votre rôle : voici ce que {{app}} fait pour vous.",
+      "title": "Ce que l'application fait pour vous",
+      "lead": "Choisissez votre rôle.",
       "tabs": {
-        "players": "Joueurs (des jeunes aux pros)",
+        "players": "Joueurs",
         "coaches": "Entraîneurs",
         "analysts": "Analystes",
         "clubs": "Clubs et fédérations"
@@ -170,7 +165,7 @@
           "eT": "Le haut niveau et le modèle national"
         },
         "journeyTitle": "Le parcours de Steve Ndjock",
-        "journeyRole": "Milieu intérieur, n°8 · Étoile de la Côte",
+        "journeyRole": "Milieu intérieur, n°8 de l'Étoile de la Côte",
         "journeyThen": "Saison passée",
         "journeyNow": "Progrès cette saison",
         "journeyBar": "Saison passée {{then}} sur 4, cette saison {{now}} sur 4",
@@ -181,7 +176,14 @@
           "u17": "U17",
           "u19": "U19",
           "pro": "Pro"
-        }
+        },
+        "mdNames": {
+          "MD-4": "Tension",
+          "MD-3": "Durée",
+          "MD-2": "Vitesse",
+          "MD-1": "Activation"
+        },
+        "tagClock": "{{half}}, {{clock}}"
       },
       "open": "Ouvrir dans une démo :",
       "who": {
@@ -192,7 +194,6 @@
       }
     },
     "live": {
-      "eyebrow": "Analyse en direct",
       "title": "L'Indice Njangi : la possession qui sert à quelque chose",
       "lead": "Le pourcentage de possession ment. L'Indice Njangi mesure, de 0 à 100, si votre équipe a possédé avec intention. Touchez une action pour voir l'indice bouger.",
       "example": "Exemple : Étoile de la Côte, deuxième mi-temps",
@@ -223,10 +224,10 @@
         }
       },
       "gaugeLabel": "Indice Njangi : {{v}} sur 100",
-      "cta": "Voir un vrai rapport dans une démo"
+      "cta": "Voir un vrai rapport dans une démo",
+      "delta": "{{v}} points"
     },
     "mola": {
-      "eyebrow": "Mola, l'agent de {{app}}",
       "title": "Mola fait le travail. Vous gardez la main.",
       "p1": "« Mola », c'est « l'ami » en camfranglais. Il vous accueille en parlant et remplit votre profil pendant la conversation. Ensuite, il agit dans l'application avec les mêmes outils que vous.",
       "p2": "Rien ne part sans votre accord : chaque message à envoyer attend votre validation.",
@@ -258,25 +259,21 @@
       "cta": "Commencer avec Mola"
     },
     "companions": {
-      "eyebrow": "Les compagnons",
       "title": "Deux livres pour accompagner l'application",
       "lead": "Le Code Njangi donne la méthode aux entraîneurs et aux analystes. Lionceaux la raconte aux enfants. Les deux se lisent librement en ligne, chapitre par chapitre.",
       "read": "Lire le livre",
       "all": "Tous les livres",
       "methode": {
         "label": "Le livre de la méthode",
-        "audience": "Pour les entraîneurs et les analystes, de l'école de foot au haut niveau professionnel et aux sélections nationales",
         "body": "Le modèle de jeu africain : les quatre moments, les cinq intentions de la possession, les rôles, la semaine d'entraînement et la périodisation, l'Indice Njangi et le rapport de match, le plan 2030 pour une fédération. Ses exercices et leurs schémas sont dans l'application."
       },
       "series": {
         "label": "Le roman jeunesse",
-        "heroes": "Avec {{heroes}}",
-        "meta": "Roman, 8 à 12 ans · six tomes prévus",
+        "meta": "Avec Kaydoudou et BriBri. Roman pour les 8 à 12 ans, six tomes prévus.",
         "body": "Deux frères camerounais suivent leurs parents de Douala au Maryland, puis en France, en Catalogne et à Londres. Dans chaque pays, ils apprennent une pièce du football. Ses 40 Leçons du Ballon sont dans l'espace joueur de l'application, pour les plus jeunes."
       }
     },
     "roadmap": {
-      "eyebrow": "Le compte à rebours",
       "title": "2030 ou 2034 : le compte à rebours a commencé",
       "lead": "La plupart des joueurs de ces Coupes du monde ont aujourd'hui entre 14 et 26 ans. Ils sont déjà dans nos quartiers, nos académies et notre diaspora.",
       "steps": {
@@ -303,14 +300,12 @@
       }
     },
     "pricing": {
-      "eyebrow": "Premium",
       "title": "Gratuit pour commencer",
       "body": "Les livres et les exercices de la méthode sont gratuits. Les formules Premium commencent à {{price}} par mois (environ {{fcfa}}).",
       "cta": "Voir les formules"
     },
     "final": {
-      "body": "Commencez par une conversation avec Mola : quelques questions, et votre espace est prêt, que vous entraîniez des U9 ou une équipe professionnelle.",
-      "secondary": "Lire les livres"
+      "body": "Commencez par une conversation avec Mola : quelques questions, et votre espace est prêt, que vous entraîniez des U9 ou une équipe professionnelle."
     },
     "demoModal": {
       "title": "Lancer la démo ?",
@@ -325,13 +320,13 @@
     "available": "Disponible",
     "soon": "À paraître",
     "read": "Lire",
-    "readLabel": "Lire {{title}} en ligne"
+    "readLabel": "Lire {{title}} en ligne",
+    "tomeAvailable": "Tome {{n}}, disponible"
   },
   "library": {
     "docTitle": "Les livres",
-    "eyebrow": "Bibliothèque",
     "title": "Les livres",
-    "subtitle": "Les deux compagnons de {{app}}. Le Code Njangi, la méthode pour les entraîneurs et les analystes, de l'école de foot au niveau professionnel et aux sélections nationales. Lionceaux, la saga romanesque pour les lecteurs de 8 à 12 ans. Ils se lisent librement en ligne, chapitre par chapitre.",
+    "subtitle": "Les deux compagnons de {{app}}, à lire librement en ligne, chapitre par chapitre. Le Code Njangi donne la méthode aux entraîneurs et aux analystes. Lionceaux la raconte aux lecteurs de 8 à 12 ans.",
     "frenchOnly": "",
     "read": "Lire en ligne",
     "contents": "Sommaire",
@@ -344,8 +339,7 @@
     "povLabel": "Raconté par {{pov}}",
     "series": {
       "label": "Le roman jeunesse",
-      "heroes": "Avec {{heroes}}",
-      "meta": "Roman, 8 à 12 ans · six tomes prévus",
+      "meta": "Avec Kaydoudou et BriBri. Roman pour les 8 à 12 ans, six tomes prévus.",
       "shelfTitle": "La saga en six tomes",
       "shelfLead": "Six tomes pour suivre les deux frères du terrain de quartier jusqu'à la Coupe du monde. Le tome 1 est disponible, les suivants s'écrivent."
     },
@@ -413,7 +407,6 @@
   },
   "pricing": {
     "docTitle": "Premium",
-    "eyebrow": "Formules",
     "title": "Une formule pour chaque rôle",
     "subtitle": "Les livres et les exercices de la méthode restent gratuits. Les formules Premium ouvrent les outils de préparation, d'analyse et de suivi des joueurs, et Mola qui agit pour vous, de l'école de foot au club professionnel.",
     "billing": "Facturation",
@@ -557,11 +550,9 @@
   "review": {
     "docTitle": "Revue du projet",
     "nav": "Revue du projet",
-    "eyebrow": "Revue du projet",
     "title": "Quatre projets, à relire un par un",
     "lead": "Le roman, le livre de la méthode, l'application et l'agent sont présentés séparément. Ouvrez chacun, testez-le, et demandez une modification depuis sa section : la demande s'ouvre dans Mola, pré-remplie, et rien n'est envoyé sans vous.",
     "jump": "Les quatre projets",
-    "projectN": "Projet {{n}}",
     "request": "Demander une modification",
     "requestShort": "Modifier",
     "requestText": "Modification pour {{section}} : ",
@@ -610,7 +601,9 @@
         "family": "La famille",
         "part": "Partie {{n}}",
         "chapter": "Chapitre {{n}}",
-        "beat": "Chapitre {{n}}, dans le texte"
+        "beat": "Chapitre {{n}}, dans le texte",
+        "partCountry": "Partie {{n}}, {{country}}",
+        "withTitle": "{{label}}, {{title}}"
       },
       "status": {
         "approved": "Validée",
@@ -649,7 +642,8 @@
           "body": "On refait toute image où l'identité, l'âge ou la taille changent, où les chaussettes (rouge à droite, jaune à gauche) sont inversées, où un maillot est faux ou du texte apparaît."
         }
       },
-      "artFull": "Lire la direction artistique complète"
+      "artFull": "Lire la direction artistique complète",
+      "reviewNoteStatus": "Note de revue, {{status}}"
     },
     "methode": {
       "intro": "La méthode pour les entraîneurs et les analystes, de l'école de foot au niveau professionnel et aux sélections nationales : le modèle de jeu, la semaine d'entraînement, l'analyse et le plan 2030.",
@@ -667,7 +661,7 @@
       "drillsLead": "Chaque fiche a son schéma, tracé comme dans le livre. Touchez une fiche pour l'ouvrir dans l'application.",
       "all": "Tous",
       "openDrill": "Ouvrir la fiche {{code}}",
-      "drillMeta": "{{ages}} · {{minutes}} min",
+      "drillMeta": "{{ages}}, {{minutes}} min",
       "library": "Ouvrir la bibliothèque d'exercices"
     },
     "app": {
@@ -676,12 +670,12 @@
       "demos": {
         "pro": {
           "title": "Club pro : Étoile de la Côte",
-          "meta": "Seniors · Ligue 1 · Douala",
+          "meta": "Seniors, Ligue 1, Douala",
           "body": "22 joueurs en 4-3-3, six matchs au calendrier, une victoire 2-1 contre le Météore de Bafoussam codée en direct (Indice Njangi 67,9, la fixation à travailler), et la semaine MD+1, MD-4 à MD-1 avant le déplacement à Kribi."
         },
         "youth": {
           "title": "Académie : Lionceaux de Bonamoussadi U13",
-          "meta": "U13 · 11 contre 11 · Douala",
+          "meta": "U13, 11 contre 11, Douala",
           "body": "L'équipe de Kaydoudou et BriBri : 15 joueurs, quatre séances cette semaine, une victoire 2-1 contre les Requins de Bépanda codée en direct et un match à venir samedi."
         }
       },
@@ -747,6 +741,136 @@
         "b": "Analyse mon dernier match",
         "c": "Quels exercices pour mieux fixer et renverser ?"
       }
+    },
+    "brandLink": "Revoir la marque Ndamba",
+    "brandHint": "Le logo, le signe de Mola, les couleurs et la typographie sur une seule page.",
+    "route": "Démo conseillée : {{demo}}. Adresse : {{path}}"
+  },
+  "brand": {
+    "docTitle": "La marque Ndamba",
+    "title": "La marque Ndamba",
+    "lead": "Toute l'identité sur une page : le logo, le signe de Mola, les couleurs, la typographie et les règles d'usage. C'est la référence pour l'application, le site, les livres et tout ce qui portera le nom.",
+    "logo": {
+      "title": "Le logo",
+      "body": "Le ballon et le mot « ndamba », en minuscules, toujours ensemble dans cet ordre. Le mot est dessiné, pas tapé : on ne le recompose jamais dans une police.",
+      "onLight": "Sur fond clair : ballon vert, étoile or, mot à l'encre.",
+      "onPitch": "Sur le vert du terrain : ballon craie, étoile or, mot craie."
+    },
+    "sizes": {
+      "title": "Le ballon seul",
+      "body": "Le ballon vit seul quand la place manque : icône de l'application, favicon, avatar d'équipe. Il reste lisible jusqu'à 16 pixels.",
+      "px": "{{n}} px"
+    },
+    "construction": {
+      "title": "La construction",
+      "a": "Un ballon dont le panneau central est l'étoile : l'étoile des Lions, au cœur du jeu.",
+      "b": "Cinq pointes pour les cinq pièces du Njangi, que le ballon apprend dans chaque pays du roman.",
+      "pieces": "Les cinq pièces"
+    },
+    "mola": {
+      "title": "Le signe de Mola",
+      "body": "Le M de Mola est dessiné comme une action de jeu : quatre joueurs, quatre passes, et le ballon arrive. Il remplace toute icône d'étincelle ou de magie, partout où Mola agit.",
+      "sign": "Le signe, dans les boutons et les menus",
+      "badge": "Le badge, pour la conversation",
+      "button": "Préparer avec Mola",
+      "made": "Créé par Mola"
+    },
+    "colors": {
+      "title": "Les couleurs",
+      "body": "Le vert porte la marque. L'or est la seule couleur d'accent : une fois par écran au plus, pour l'action principale, le ballon ou le chiffre clé. Le rouge ne signifie que le danger ou l'enregistrement en direct.",
+      "core": "Le cœur de la marque",
+      "support": "Les couleurs d'appui",
+      "items": {
+        "pitch": {
+          "name": "Pelouse",
+          "role": "La marque, les actions principales, les liens"
+        },
+        "gold": {
+          "name": "Or de l'étoile",
+          "role": "L'accent unique : l'étoile, le ballon, l'action clé"
+        },
+        "chalk": {
+          "name": "Craie",
+          "role": "Le fond de l'application et du site"
+        },
+        "ink": {
+          "name": "Encre",
+          "role": "Le texte"
+        },
+        "paper": {
+          "name": "Papier",
+          "role": "Cartes, panneaux, champs"
+        },
+        "mist": {
+          "name": "Brume",
+          "role": "Remplissages discrets, lignes choisies"
+        },
+        "line": {
+          "name": "Trait",
+          "role": "Filets et séparations"
+        },
+        "pitchLight": {
+          "name": "Pelouse vive",
+          "role": "Survol, focus, actions secondaires"
+        },
+        "pitchDeep": {
+          "name": "Pelouse profonde",
+          "role": "Les grandes surfaces vertes, la barre latérale"
+        },
+        "night": {
+          "name": "Nuit",
+          "role": "Le terrain la nuit, le codage en direct"
+        },
+        "kola": {
+          "name": "Rouge kola",
+          "role": "Erreurs, suppression, direct en cours"
+        },
+        "earth": {
+          "name": "Terre rouge",
+          "role": "Rare : la terre de Douala dans les illustrations"
+        }
+      }
+    },
+    "type": {
+      "title": "La typographie",
+      "body": "Une seule famille, Archivo. Large et grasse pour les titres, comme le lettrage d'un maillot ; normale pour le texte, qui doit se lire vite au bord du terrain.",
+      "display": "Archivo display, largeur 116 %, graisse 780",
+      "displaySample": "Le ballon doit voyager.",
+      "scale": "Prochain match à Kribi",
+      "text": "Archivo texte, largeur 100 %, graisse 400, 16 px, interligne 1,6",
+      "textSample": "Codez le match au bord du terrain, une touche par action. L'Indice Njangi dit, de 0 à 100, si l'équipe a possédé avec intention, et le rapport propose les exercices de la semaine suivante.",
+      "label": "Étiquettes : 13 px, graisse 600, une majuscule en début de phrase seulement",
+      "labelSample": "Prochain match",
+      "numbers": "Chiffres : à chasse fixe, alignés",
+      "italic": "Devises et citations : Archivo italique, jamais une serif"
+    },
+    "rules": {
+      "title": "À faire, à éviter",
+      "do": "À faire",
+      "dont": "À éviter",
+      "mola": {
+        "do": "Le signe de Mola sur chaque action de Mola.",
+        "dont": "Jamais d'étincelle, de baguette ou d'icône « IA »."
+      },
+      "labels": {
+        "do": "Des étiquettes courtes, une seule majuscule, qui disent quelque chose.",
+        "dont": "Jamais de capitales espacées au-dessus des titres."
+      },
+      "star": {
+        "do": "L'étoile toujours or, le ballon vert ou craie.",
+        "dont": "Ne jamais recolorer l'étoile ni le ballon."
+      },
+      "labelDo": "Prochain match",
+      "labelDont": "Prochain match",
+      "match": "Rapides de Kribi"
+    },
+    "icons": {
+      "title": "Icônes et image de partage",
+      "body": "L'icône de l'application, le favicon et l'image qui s'affiche quand on partage un lien vers Ndamba.",
+      "app": "Icône de l'application",
+      "maskable": "Icône adaptative Android",
+      "favicon": "Favicon",
+      "og": "Image de partage, 1200 x 630"
     }
   }
 }

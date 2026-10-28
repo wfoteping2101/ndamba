@@ -25,16 +25,16 @@ export function BlockRow({ b, index, count, md, startMin, onChange, onMove, onRe
         <div className="relative w-28 shrink-0 sm:w-36">
           {d ? <Link to={`/app/exercices/${d.id}`} aria-label={title}><LazyPitch spec={d.diagram} width={260} fit={0.85} /></Link>
             : <NoDiagram label={b.drillId ? t('builder.drillPending') : t('builder.freeBlock')} />}
-          <span className="absolute -left-1.5 -top-1.5 grid h-7 w-7 place-items-center rounded-full border-2 border-paper bg-forest-600 text-xs font-bold text-cream">{index + 1}</span>
+          <span className="absolute -left-1.5 -top-1.5 grid h-7 w-7 place-items-center rounded-full border-2 border-paper bg-forest-600 text-xs font-semibold tabular-nums text-cream">{index + 1}</span>
         </div>
         <div className="min-w-0 flex-1">
-          <div className="flex items-center gap-1.5 text-[11px] font-semibold text-ink-faint">
-            {b.drillId ? <span className="font-mono text-forest-600">{b.drillId}</span> : <span className="uppercase tracking-[0.12em]">{t('builder.freeBlock')}</span>}
-            {d && <span className="hidden truncate sm:inline">· {t(`common:families.${d.family}`)}</span>}
-            <span className="ml-auto shrink-0 tabular-nums" title={t('builder.startsAt')}>{startMin}' {t('to')} {startMin + (Number(b.minutes) || 0)}'</span>
+          <div className="flex items-center gap-2 text-[12px] font-semibold text-ink-faint">
+            {b.drillId ? <span className="tabular-nums text-forest-700">{b.drillId}</span> : <span>{t('builder.freeBlock')}</span>}
+            {d && <span className="hidden truncate font-medium text-ink-muted sm:inline">{t(`common:families.${d.family}`)}</span>}
+            <span className="ml-auto shrink-0 tabular-nums text-ink-muted" title={t('builder.startsAt')}>{startMin}' {t('to')} {startMin + (Number(b.minutes) || 0)}'</span>
           </div>
           {d ? (
-            <Link to={`/app/exercices/${d.id}`} className="line-clamp-2 font-display text-[17px] font-semibold leading-snug text-ink hover:text-forest-600">{title}</Link>
+            <Link to={`/app/exercices/${d.id}`} className="line-clamp-2 font-display text-[17px] leading-snug text-ink hover:text-forest-600">{title}</Link>
           ) : b.drillId ? (
             <div className="font-display text-[17px] font-semibold leading-snug text-ink-muted">{t('builder.drillPendingTitle', { id: b.drillId })}</div>
           ) : (

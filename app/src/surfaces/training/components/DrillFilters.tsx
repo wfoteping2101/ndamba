@@ -20,7 +20,7 @@ function Chip({ on, count, onClick, children, title }: { on: boolean; count: num
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="flex flex-col gap-1.5 py-2 sm:flex-row sm:items-start sm:gap-3">
-      <div className="shrink-0 pt-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-faint sm:w-24">{label}</div>
+      <div className="shrink-0 pt-2 text-[13px] font-semibold text-ink-muted sm:w-28">{label}</div>
       <div className="flex flex-wrap gap-1.5">{children}</div>
     </div>
   )
@@ -49,7 +49,7 @@ export function DrillFilters({ drills, value, onChange, facets = ['family', 'int
         </label>
         <button type="button" className={cx('btn-outline min-h-[44px] shrink-0', open && 'border-forest-600 text-forest-600')} onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-controls={`${idPrefix}-filters`}>
           <SlidersHorizontal size={17} aria-hidden="true" /><span className="hidden sm:inline">{t('library.filters')}</span>
-          {n > 0 && <span className="grid h-5 min-w-5 place-items-center rounded-full bg-terra-500 px-1 text-[11px] font-bold text-white">{n}</span>}
+          {n > 0 && <span className="grid h-5 min-w-5 place-items-center rounded-full bg-forest-600 px-1 text-[11px] font-semibold tabular-nums text-cream">{n}</span>}
         </button>
       </div>
 

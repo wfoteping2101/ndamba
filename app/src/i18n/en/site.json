@@ -13,19 +13,15 @@
   },
   "landing": {
     "hero": {
-      "lead": "{{app}} is the football app with purpose for every player, from grassroots to the professional game, and for the people who help them grow: coaches, analysts, clubs and federations. Sessions and a periodised week, matches, live analysis with the Njangi Index, video, and each player's journey, season after season.",
+      "lead": "{{app}} is the football app with purpose: sessions and the training week, matches, live analysis with the Njangi Index, video and each player's journey. From grassroots to the professional game.",
       "ctaStart": "Get started with Mola",
-      "ctaPlayer": "Player space",
-      "demoNote": "The demo runs in your browser: Étoile de la Côte, a professional club in Douala, or the Lionceaux de Bonamoussadi U13, an academy team.",
       "pitchTitle": "The Njangi goal: the ball goes through the whole team, from the keeper to the goal.",
-      "pitchCaption": "From the keeper to the goal: ten passes, eleven players, one direction.",
-      "title": "Train, observe, follow every player. From kids to pros.",
-      "forWho": "Who it is for",
-      "demoTitle": "Or try a demo, no account needed",
-      "mantraLabel": "Our mantra:"
+      "pitchCaption": "The Njangi goal, from book 1: keeper to net, ten passes, eleven players.",
+      "demoTitle": "Or open a demo, no account needed",
+      "replay": "Replay the move"
     },
     "pillars": {
-      "title": "Train, observe, follow",
+      "title": "Train, observe, follow every player.",
       "train": {
         "title": "Train",
         "body": "The method's drills with their diagrams, sessions built in a few taps, the week from MD-4 to MD-1: fitted to the age group, the level and the fixture list, from U8 to the first team."
@@ -37,10 +33,10 @@
       "follow": {
         "title": "Follow",
         "body": "Each player's ten skills, matches, minutes and progress, season after season: the whole journey, from the first ball to the highest level."
-      }
+      },
+      "lead": "From U8 to the first team, with the same words and the same drills, for the neighbourhood coach as much as the staff of a top-flight club."
     },
     "njangi": {
-      "eyebrow": "The njangi",
       "title": "Everyone pays in, the pot goes round, everyone benefits.",
       "p1": "In Cameroon, a njangi (also called a tontine) brings neighbours, colleagues and friends together. Each month, everyone puts their share into the same pot, and the whole pot goes to one member, in turn. Nobody keeps the money for themselves.",
       "p2": "On the pitch, the ball is the pot. The pass is the contribution. The goal is the pot paid out.",
@@ -65,11 +61,10 @@
       "goal": "goal"
     },
     "features": {
-      "eyebrow": "The app",
-      "title": "For all of football, from grassroots to the pros",
-      "lead": "Pick your role: here is what {{app}} does for you.",
+      "title": "What the app does for you",
+      "lead": "Pick your role.",
       "tabs": {
-        "players": "Players (kids to pros)",
+        "players": "Players",
         "coaches": "Coaches",
         "analysts": "Analysts",
         "clubs": "Clubs and federations"
@@ -170,7 +165,7 @@
           "eT": "The top level and the national model"
         },
         "journeyTitle": "Steve Ndjock's journey",
-        "journeyRole": "Central midfielder, no. 8 · Étoile de la Côte",
+        "journeyRole": "Central midfielder, no. 8 at Étoile de la Côte",
         "journeyThen": "Last season",
         "journeyNow": "Progress this season",
         "journeyBar": "Last season {{then}} out of 4, this season {{now}} out of 4",
@@ -181,7 +176,14 @@
           "u17": "U17",
           "u19": "U19",
           "pro": "Pro"
-        }
+        },
+        "mdNames": {
+          "MD-4": "Tension",
+          "MD-3": "Duration",
+          "MD-2": "Speed",
+          "MD-1": "Activation"
+        },
+        "tagClock": "{{half}}, {{clock}}"
       },
       "open": "Open it in a demo:",
       "who": {
@@ -192,7 +194,6 @@
       }
     },
     "live": {
-      "eyebrow": "Live analysis",
       "title": "The Njangi Index: possession that serves a purpose",
       "lead": "Possession percentage lies. The Njangi Index measures, from 0 to 100, whether your team kept the ball with purpose. Tap an action and watch the index move.",
       "example": "Example: Étoile de la Côte, second half",
@@ -223,10 +224,10 @@
         }
       },
       "gaugeLabel": "Njangi Index: {{v}} out of 100",
-      "cta": "See a real report in a demo"
+      "cta": "See a real report in a demo",
+      "delta": "{{v}} points"
     },
     "mola": {
-      "eyebrow": "Mola, the agent of {{app}}",
       "title": "Mola does the work. You stay in charge.",
       "p1": "“Mola” means “mate” in Cameroonian camfranglais. It welcomes you by talking and fills in your profile as you chat. Then it acts in the app with the same tools you use.",
       "p2": "Nothing goes out without your say-so: every message waits for your approval.",
@@ -258,25 +259,21 @@
       "cta": "Get started with Mola"
     },
     "companions": {
-      "eyebrow": "The companions",
       "title": "Two books that go with the app",
       "lead": "The Njangi Code gives coaches and analysts the method. Lionceaux tells it to children. Both are free to read online, chapter by chapter.",
       "read": "Read the book",
       "all": "All the books",
       "methode": {
         "label": "The method book",
-        "audience": "For coaches and analysts, from grassroots to the professional game and national teams",
         "body": "The African game model: the four moments, the five intentions of possession, the roles, the training week and periodisation, the Njangi Index and the match report, the 2030 plan for a federation. Its drills and their diagrams are in the app."
       },
       "series": {
         "label": "The children's novel",
-        "heroes": "Starring {{heroes}}",
-        "meta": "Novel, ages 8 to 12 · six books planned",
+        "meta": "Starring Kaydoudou and BriBri. A novel for ages 8 to 12, six books planned.",
         "body": "Two Cameroonian brothers follow their parents from Douala to Maryland, then to France, Catalonia and London. In each country they learn one piece of football. Its 40 Ball Lessons are in the app's player space, for the youngest."
       }
     },
     "roadmap": {
-      "eyebrow": "The countdown",
       "title": "2030 or 2034: the countdown has started",
       "lead": "Most of the players at those World Cups are between 14 and 26 today. They are already in our neighbourhoods, our academies and our diaspora.",
       "steps": {
@@ -303,14 +300,12 @@
       }
     },
     "pricing": {
-      "eyebrow": "Premium",
       "title": "Free to start",
       "body": "The books and the method's drills are free. Premium plans start at {{price}} a month (about {{fcfa}}).",
       "cta": "See the plans"
     },
     "final": {
-      "body": "Start with a conversation with Mola: a few questions and your space is ready, whether you coach U9s or a professional side.",
-      "secondary": "Read the books"
+      "body": "Start with a conversation with Mola: a few questions and your space is ready, whether you coach U9s or a professional side."
     },
     "demoModal": {
       "title": "Start the demo?",
@@ -325,13 +320,13 @@
     "available": "Available",
     "soon": "Coming soon",
     "read": "Read",
-    "readLabel": "Read {{title}} online"
+    "readLabel": "Read {{title}} online",
+    "tomeAvailable": "Book {{n}}, available"
   },
   "library": {
     "docTitle": "The books",
-    "eyebrow": "Library",
     "title": "The books",
-    "subtitle": "The two companions of {{app}}. The Njangi Code, the method for coaches and analysts, from grassroots to the professional game and national teams. Lionceaux, the novel saga for readers aged 8 to 12. Both are free to read online, chapter by chapter.",
+    "subtitle": "The two companions of {{app}}, free to read online, chapter by chapter. The Njangi Code gives coaches and analysts the method. Lionceaux tells it to readers aged 8 to 12.",
     "frenchOnly": "The books are written in French, so chapter titles are shown in French.",
     "read": "Read online",
     "contents": "Contents",
@@ -344,8 +339,7 @@
     "povLabel": "Told by {{pov}}",
     "series": {
       "label": "The children's novel",
-      "heroes": "Starring {{heroes}}",
-      "meta": "Novel, ages 8 to 12 · six books planned",
+      "meta": "Starring Kaydoudou and BriBri. A novel for ages 8 to 12, six books planned.",
       "shelfTitle": "The saga in six books",
       "shelfLead": "Six books that follow the two brothers from the neighbourhood pitch to the World Cup. Book 1 is out, the next ones are being written."
     },
@@ -413,7 +407,6 @@
   },
   "pricing": {
     "docTitle": "Premium",
-    "eyebrow": "Plans",
     "title": "A plan for every role",
     "subtitle": "The books and the method's drills stay free. Premium plans unlock the tools to prepare, analyse and follow your players, and Mola acting for you, from grassroots to the professional club.",
     "billing": "Billing",
@@ -557,11 +550,9 @@
   "review": {
     "docTitle": "Project review",
     "nav": "Project review",
-    "eyebrow": "Project review",
     "title": "Four projects, to review one by one",
     "lead": "The novel, the method book, the app and the agent are presented separately. Open each one, try it, and ask for a change from its section: the request opens in Mola, pre-filled, and nothing is sent without you.",
     "jump": "The four projects",
-    "projectN": "Project {{n}}",
     "request": "Ask for a change",
     "requestShort": "Change",
     "requestText": "Change for {{section}}: ",
@@ -610,7 +601,9 @@
         "family": "The family",
         "part": "Part {{n}}",
         "chapter": "Chapter {{n}}",
-        "beat": "Chapter {{n}}, inside the text"
+        "beat": "Chapter {{n}}, inside the text",
+        "partCountry": "Part {{n}}, {{country}}",
+        "withTitle": "{{label}}, {{title}}"
       },
       "status": {
         "approved": "Approved",
@@ -649,7 +642,8 @@
           "body": "Any image is redone when identity, age or size drift, when the socks (red on the right, yellow on the left) are swapped, when a shirt is wrong or text appears."
         }
       },
-      "artFull": "Read the full art direction (in French)"
+      "artFull": "Read the full art direction (in French)",
+      "reviewNoteStatus": "Review note, {{status}}"
     },
     "methode": {
       "intro": "The method for coaches and analysts, from grassroots to the professional game and national teams: the game model, the training week, analysis and the 2030 plan.",
@@ -667,7 +661,7 @@
       "drillsLead": "Each drill sheet has its diagram, drawn as in the book. Tap a drill to open it in the app.",
       "all": "All",
       "openDrill": "Open drill {{code}}",
-      "drillMeta": "{{ages}} · {{minutes}} min",
+      "drillMeta": "{{ages}}, {{minutes}} min",
       "library": "Open the drill library"
     },
     "app": {
@@ -676,12 +670,12 @@
       "demos": {
         "pro": {
           "title": "Pro club: Étoile de la Côte",
-          "meta": "Seniors · Ligue 1 · Douala",
+          "meta": "Seniors, Ligue 1, Douala",
           "body": "22 players in a 4-3-3, six fixtures, a 2-1 win against the Météore de Bafoussam tagged live (Njangi Index 67.9, fixation to work on), and the week MD+1, MD-4 to MD-1 before the trip to Kribi."
         },
         "youth": {
           "title": "Academy: Lionceaux de Bonamoussadi U13",
-          "meta": "U13 · 11 v 11 · Douala",
+          "meta": "U13, 11 v 11, Douala",
           "body": "Kaydoudou and BriBri's team: 15 players, four sessions this week, a 2-1 win against the Requins de Bépanda tagged live and a match coming up on Saturday."
         }
       },
@@ -747,6 +741,136 @@
         "b": "Analyse my last match",
         "c": "Which drills to draw them in and switch play better?"
       }
+    },
+    "brandLink": "Review the Ndamba brand",
+    "brandHint": "The logo, Mola's sign, the colours and the type on one page.",
+    "route": "Suggested demo: {{demo}}. Address: {{path}}"
+  },
+  "brand": {
+    "docTitle": "The Ndamba brand",
+    "title": "The Ndamba brand",
+    "lead": "The whole identity on one page: the logo, Mola's sign, the colours, the type and the rules of use. It is the reference for the app, the site, the books and anything that will carry the name.",
+    "logo": {
+      "title": "The logo",
+      "body": "The ball and the word “ndamba”, in lower case, always together and in that order. The word is drawn, not typed: never set it again in a font.",
+      "onLight": "On light backgrounds: green ball, gold star, ink word.",
+      "onPitch": "On pitch green: chalk ball, gold star, chalk word."
+    },
+    "sizes": {
+      "title": "The ball on its own",
+      "body": "The ball stands alone when space is short: app icon, favicon, team avatar. It stays readable down to 16 pixels.",
+      "px": "{{n}} px"
+    },
+    "construction": {
+      "title": "The construction",
+      "a": "A ball whose centre panel is the star: the star of the Lions, at the heart of the game.",
+      "b": "Five points for the five pieces of the Njangi, which the ball learns in each country of the novel.",
+      "pieces": "The five pieces"
+    },
+    "mola": {
+      "title": "Mola's sign",
+      "body": "Mola's M is drawn as a passing move: four players, four passes, and the ball arrives. It replaces every sparkle or magic icon, wherever Mola acts.",
+      "sign": "The sign, in buttons and menus",
+      "badge": "The badge, for the conversation",
+      "button": "Prepare with Mola",
+      "made": "Made by Mola"
+    },
+    "colors": {
+      "title": "The colours",
+      "body": "Green carries the brand. Gold is the only accent: once per screen at most, for the main action, the ball or the key number. Red only means danger or live recording.",
+      "core": "The core of the brand",
+      "support": "Supporting colours",
+      "items": {
+        "pitch": {
+          "name": "Pitch",
+          "role": "The brand, main actions, links"
+        },
+        "gold": {
+          "name": "Star gold",
+          "role": "The single accent: the star, the ball, the key action"
+        },
+        "chalk": {
+          "name": "Chalk",
+          "role": "The background of the app and the site"
+        },
+        "ink": {
+          "name": "Ink",
+          "role": "Text"
+        },
+        "paper": {
+          "name": "Paper",
+          "role": "Cards, panels, fields"
+        },
+        "mist": {
+          "name": "Mist",
+          "role": "Quiet fills, selected rows"
+        },
+        "line": {
+          "name": "Line",
+          "role": "Hairlines and dividers"
+        },
+        "pitchLight": {
+          "name": "Bright pitch",
+          "role": "Hover, focus, secondary actions"
+        },
+        "pitchDeep": {
+          "name": "Deep pitch",
+          "role": "Large green surfaces, the sidebar"
+        },
+        "night": {
+          "name": "Night",
+          "role": "The pitch at night, live tagging"
+        },
+        "kola": {
+          "name": "Kola red",
+          "role": "Errors, deleting, live in progress"
+        },
+        "earth": {
+          "name": "Red earth",
+          "role": "Rare: the earth of Douala in illustrations"
+        }
+      }
+    },
+    "type": {
+      "title": "The type",
+      "body": "One family, Archivo. Wide and bold for titles, like the lettering on a shirt; regular for text, which has to read fast on the touchline.",
+      "display": "Archivo display, 116% width, weight 780",
+      "displaySample": "The ball must travel.",
+      "scale": "Next match at Kribi",
+      "text": "Archivo text, 100% width, weight 400, 16 px, line height 1.6",
+      "textSample": "Tag the match from the touchline, one tap per action. The Njangi Index tells you, from 0 to 100, whether the team kept the ball with purpose, and the report suggests next week's drills.",
+      "label": "Labels: 13 px, weight 600, sentence case",
+      "labelSample": "Next match",
+      "numbers": "Numbers: tabular, aligned",
+      "italic": "Mottos and quotes: Archivo italic, never a serif"
+    },
+    "rules": {
+      "title": "Do and don't",
+      "do": "Do",
+      "dont": "Don't",
+      "mola": {
+        "do": "Mola's sign on every action Mola takes.",
+        "dont": "Never a sparkle, a wand or an “AI” icon."
+      },
+      "labels": {
+        "do": "Short sentence-case labels that say something.",
+        "dont": "Never letter-spaced capitals above headings."
+      },
+      "star": {
+        "do": "The star always gold, the ball green or chalk.",
+        "dont": "Never recolour the star or the ball."
+      },
+      "labelDo": "Next match",
+      "labelDont": "Next match",
+      "match": "Rapides de Kribi"
+    },
+    "icons": {
+      "title": "Icons and share image",
+      "body": "The app icon, the favicon and the picture shown when someone shares a link to Ndamba.",
+      "app": "App icon",
+      "maskable": "Android adaptive icon",
+      "favicon": "Favicon",
+      "og": "Share image, 1200 x 630"
     }
   }
 }

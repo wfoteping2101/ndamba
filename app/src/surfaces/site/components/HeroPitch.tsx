@@ -1,11 +1,15 @@
-import { useId } from 'react'
+import { useEffect, useId, useState } from 'react'
+import { RotateCcw } from 'lucide-react'
 import { useT } from '../../../i18n'
+import { NdambaMark } from '../../../ui/brand'
 
 /**
  * The "but du Njangi" (Tome 1, chapter 40): from the keeper, the ball goes through all eleven
- * players and BriBri serves Kaydoudou, who scores. Ten passes drawn once on page load.
+ * players and BriBri serves Kaydoudou, who scores. The ball is the Ndamba mark itself: it travels
+ * pass by pass and draws its trace in gold, then ends in the net. One orchestrated motion, once,
+ * on page load (or on « Rejouer »). With prefers-reduced-motion the finished move is shown still.
  */
-const W = 105, H = 68, S = 6 // px per metre
+const W = 105, H = 68, S = 6 // pitch in metres, px per metre
 type Pos = { n: string; x: number; y: number; star?: boolean }
 const TEAM: Record<string, Pos> = {
   gk: { n: '1', x: 4.5, y: 34 },
@@ -22,43 +26,80 @@ const TEAM: Record<string, Pos> = {
 }
 const PATH = ['gk', 'lcb', 'rcb', 'rb', 'cm6', 'cm10', 'lb', 'lw', 'st', 'k', 'b']
 const THEM: [number, number][] = [[58, 30], [60, 44], [64, 20], [76, 24], [80, 40], [86, 18], [88, 56], [94, 36], [70, 54], [52, 14]]
-const STEP = 0.32 // seconds per pass
+
+const DELAY = 0.7 // s before the first pass
+const STEP = 0.44 // s per pass
+const TRAVEL = 0.35 // s the ball is in the air; the rest is the touch
+const SHOT = 0.42
+const TOTAL = DELAY + (PATH.length - 1) * STEP + SHOT + 0.4
+const BALL = 30 // ball diameter in svg units
+const GOLD = '#FFD452'
+const CHALK = '#F6F7F2'
+const r1 = (v: number) => Math.round(v * 10) / 10
+const pct = (s: number) => `${r1((s / TOTAL) * 100)}%`
+
+/** A point at `d` metres from p towards q (in svg units). */
+function along(p: { x: number; y: number }, q: { x: number; y: number }, d: number) {
+  const dx = q.x - p.x, dy = q.y - p.y, L = Math.hypot(dx, dy)
+  return { x: (p.x + (dx / L) * d) * S, y: (p.y + (dy / L) * d) * S }
+}
 
 export default function HeroPitch({ className }: { className?: string }) {
   const { t } = useT('site')
   const id = useId().replace(/:/g, '')
-  const segs = PATH.slice(0, -1).map((a, i) => {
+  const [run, setRun] = useState(0)
+  const [motion, setMotion] = useState(false)
+  useEffect(() => {
+    const mq = window.matchMedia?.('(prefers-reduced-motion: reduce)')
+    setMotion(!mq?.matches)
+  }, [])
+
+  const passes = PATH.slice(0, -1).map((a, i) => {
     const p = TEAM[a], q = TEAM[PATH[i + 1]]
-    const dx = q.x - p.x, dy = q.y - p.y, d = Math.hypot(dx, dy)
-    const sh = 2.1 / d // shorten each end by about 2 m (the player disc)
-    return { x1: (p.x + dx * sh) * S, y1: (p.y + dy * sh) * S, x2: (q.x - dx * sh) * S, y2: (q.y - dy * sh) * S, mx: ((p.x + q.x) / 2) * S, my: ((p.y + q.y) / 2) * S, len: (d - 4.2) * S }
+    const from = along(p, q, 2.3), to = along(q, p, 2.3)
+    const ballFrom = along(p, q, 3.2), ballTo = along(q, p, 3.4)
+    return { from, to, ballFrom, ballTo, len: Math.hypot(to.x - from.x, to.y - from.y), start: DELAY + i * STEP }
   })
   const B = TEAM.b
-  const shot = { x1: (B.x + 2.2) * S, y1: (B.y - 1.4) * S, x2: (W - 0.6) * S, y2: 36.4 * S }
-  const shotLen = Math.hypot(shot.x2 - shot.x1, shot.y2 - shot.y1)
+  const goal = { x: (W + 1.05) * S, y: 33.6 * S }
+  const shotFrom = along(B, { x: W, y: 33.6 }, 3.2)
+  const shotStart = DELAY + passes.length * STEP
+  const shotLen = Math.hypot(goal.x - shotFrom.x, goal.y - shotFrom.y)
+
+  // the ball's route: hold at the keeper, then for each pass fly (TRAVEL) and take a touch, then the shot
+  const at = (x: number, y: number) => `transform: translate(${r1(x)}px, ${r1(y)}px)`
+  let frames = `0% { ${at(passes[0].ballFrom.x, passes[0].ballFrom.y)} }\n`
+  passes.forEach((ps, i) => {
+    frames += `${pct(ps.start)} { ${at(ps.ballFrom.x, ps.ballFrom.y)} }\n${pct(ps.start + TRAVEL)} { ${at(ps.ballTo.x, ps.ballTo.y)} }\n`
+    if (i === passes.length - 1) frames += `${pct(shotStart)} { ${at(shotFrom.x, shotFrom.y)} }\n`
+  })
+  frames += `${pct(shotStart + SHOT)} { ${at(goal.x, goal.y)} }\n100% { ${at(goal.x, goal.y)} }`
+
+  const k = `${id}-${run}`
   const css = `
-.hp-${id} .seg { stroke-dasharray: var(--l); stroke-dashoffset: var(--l); animation: hp-draw-${id} ${STEP}s ease-out forwards; animation-delay: var(--d) }
-.hp-${id} .num, .hp-${id} .touch { opacity: 0; animation: hp-in-${id} .25s ease-out forwards; animation-delay: var(--d) }
-.hp-${id} .net { opacity: 0; animation: hp-in-${id} .5s ease-out forwards; animation-delay: ${(segs.length + 1) * STEP + 0.3}s }
-@keyframes hp-draw-${id} { to { stroke-dashoffset: 0 } }
-@keyframes hp-in-${id} { to { opacity: 1 } }
+@keyframes hp-ball-${k} { ${frames} }
+@keyframes hp-draw-${k} { to { stroke-dashoffset: 0 } }
+@keyframes hp-in-${k} { to { opacity: 1 } }
+.hp-${k} .ball { animation: hp-ball-${k} ${TOTAL.toFixed(2)}s ease-out both }
+.hp-${k} .seg { stroke-dasharray: var(--l); stroke-dashoffset: var(--l); animation: hp-draw-${k} var(--t) ease-out var(--d) forwards }
+.hp-${k} .touch, .hp-${k} .net { opacity: 0; animation: hp-in-${k} .3s ease-out var(--d) forwards }
 @media (prefers-reduced-motion: reduce) {
-  .hp-${id} .seg { animation: none; stroke-dashoffset: 0 }
-  .hp-${id} .num, .hp-${id} .touch, .hp-${id} .net { animation: none; opacity: 1 }
+  .hp-${k} .ball { animation: none; ${at(goal.x, goal.y)} }
+  .hp-${k} .seg { animation: none; stroke-dashoffset: 0 }
+  .hp-${k} .touch, .hp-${k} .net { animation: none; opacity: 1 }
 }`
-  const L = { stroke: '#F6F7F2', strokeOpacity: 0.28, strokeWidth: 1.6, fill: 'none' }
+  const L = { stroke: CHALK, strokeOpacity: 0.26, strokeWidth: 1.6, fill: 'none' }
+  const num = { textAnchor: 'middle' as const, fontSize: 12.5, fontWeight: 700, fontFamily: "'Archivo Variable', Archivo, sans-serif" }
   return (
     <figure className={className}>
       <style>{css}</style>
-      <svg viewBox={`-10 -10 ${W * S + 20} ${H * S + 20}`} className={`hp-${id} block h-auto w-full`} role="img" aria-label={t('landing.hero.pitchTitle')}>
+      <svg key={run} viewBox={`-12 -12 ${W * S + 30} ${H * S + 24}`} className={`hp-${k} block h-auto w-full`} role="img" aria-label={t('landing.hero.pitchTitle')}>
         <defs>
-          <pattern id={`mow-${id}`} width={W * S / 9} height={H * S} patternUnits="userSpaceOnUse">
-            <rect width={W * S / 18} height={H * S} fill="#F6F7F2" fillOpacity="0.025" />
+          <pattern id={`mow-${k}`} width={(W * S) / 9} height={H * S} patternUnits="userSpaceOnUse">
+            <rect width={(W * S) / 18} height={H * S} fill={CHALK} fillOpacity="0.03" />
           </pattern>
-          <marker id={`ah-${id}`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#FFD452" /></marker>
-          <marker id={`ahs-${id}`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#DB8D66" /></marker>
         </defs>
-        <rect x="0" y="0" width={W * S} height={H * S} fill={`url(#mow-${id})`} />
+        <rect x="0" y="0" width={W * S} height={H * S} fill={`url(#mow-${k})`} />
         {/* markings */}
         <g {...L}>
           <rect x="0" y="0" width={W * S} height={H * S} rx="2" />
@@ -71,43 +112,60 @@ export default function HeroPitch({ className }: { className?: string }) {
           <path d={`M ${16.5 * S} ${26.7 * S} A ${9.15 * S} ${9.15 * S} 0 0 1 ${16.5 * S} ${41.3 * S}`} />
           <path d={`M ${(W - 16.5) * S} ${26.7 * S} A ${9.15 * S} ${9.15 * S} 0 0 0 ${(W - 16.5) * S} ${41.3 * S}`} />
         </g>
-        <g fill="#F6F7F2" fillOpacity=".35"><circle cx={(W / 2) * S} cy={(H / 2) * S} r="3" /><circle cx={11 * S} cy={(H / 2) * S} r="2.5" /><circle cx={(W - 11) * S} cy={(H / 2) * S} r="2.5" /></g>
-        {/* goals */}
-        <rect x={-2.2 * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="none" stroke="#F6F7F2" strokeOpacity=".5" strokeWidth="2" />
-        <rect className="net" x={W * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="#F5B700" fillOpacity=".55" stroke="#FFD452" strokeWidth="2" />
-        <rect x={W * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="none" stroke="#F6F7F2" strokeOpacity=".5" strokeWidth="2" />
-        {/* opponents */}
-        {THEM.map(([x, y], i) => <circle key={i} cx={x * S} cy={y * S} r="9" fill="#D7263D" fillOpacity=".55" stroke="#042A1B" strokeOpacity=".4" strokeWidth="1.5" />)}
-        {/* the passes */}
-        <g stroke="#FFD452" strokeWidth="3" strokeLinecap="round" fill="none">
-          {segs.map((s, i) => (
-            <line key={i} className="seg" x1={s.x1} y1={s.y1} x2={s.x2} y2={s.y2} markerEnd={`url(#ah-${id})`}
-              style={{ ['--l' as string]: `${s.len.toFixed(1)}px`, ['--d' as string]: `${(0.5 + i * STEP).toFixed(2)}s` }} />
+        <g fill={CHALK} fillOpacity=".3"><circle cx={(W / 2) * S} cy={(H / 2) * S} r="3" /><circle cx={11 * S} cy={(H / 2) * S} r="2.5" /><circle cx={(W - 11) * S} cy={(H / 2) * S} r="2.5" /></g>
+        {/* goals: the far net lights up when the ball arrives */}
+        <rect x={-2.2 * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="none" stroke={CHALK} strokeOpacity=".45" strokeWidth="2" />
+        <rect className="net" style={{ ['--d' as string]: `${(shotStart + SHOT - 0.05).toFixed(2)}s` }} x={W * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill={GOLD} fillOpacity=".28" />
+        <rect x={W * S} y={30.34 * S} width={2.2 * S} height={7.32 * S} fill="none" stroke={CHALK} strokeOpacity=".55" strokeWidth="2" />
+        {/* the opponents: hollow, like cones on a tactics board */}
+        {THEM.map(([x, y], i) => <circle key={i} cx={x * S} cy={y * S} r="8.5" fill="none" stroke={CHALK} strokeOpacity=".34" strokeWidth="1.6" />)}
+        {/* the gold trace the ball leaves */}
+        <g stroke={GOLD} strokeWidth="2.6" strokeLinecap="round" fill="none">
+          {passes.map((s, i) => (
+            <line key={i} className="seg" x1={s.from.x} y1={s.from.y} x2={s.to.x} y2={s.to.y}
+              style={{ ['--l' as string]: `${s.len.toFixed(1)}px`, ['--d' as string]: `${s.start.toFixed(2)}s`, ['--t' as string]: `${TRAVEL}s` }} />
           ))}
-          <line className="seg" x1={shot.x1} y1={shot.y1} x2={shot.x2} y2={shot.y2} stroke="#DB8D66" strokeWidth="3.4" strokeDasharray="none" markerEnd={`url(#ahs-${id})`}
-            style={{ ['--l' as string]: `${shotLen.toFixed(1)}px`, ['--d' as string]: `${(0.5 + segs.length * STEP).toFixed(2)}s` }} />
+          <line className="seg" x1={shotFrom.x} y1={shotFrom.y} x2={goal.x - 6} y2={goal.y} strokeWidth="3.2" strokeDasharray="none"
+            style={{ ['--l' as string]: `${shotLen.toFixed(1)}px`, ['--d' as string]: `${shotStart.toFixed(2)}s`, ['--t' as string]: `${SHOT}s` }} />
         </g>
-        {/* pass numbers */}
-        {segs.map((s, i) => (
-          <g key={i} className="num" style={{ ['--d' as string]: `${(0.5 + i * STEP + STEP * 0.6).toFixed(2)}s` }}>
-            <circle cx={s.mx} cy={s.my} r="9.5" fill="#042A1B" stroke="#FFD452" strokeWidth="1.4" />
-            <text x={s.mx} y={s.my + 3.6} textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#FFD452" fontFamily="Inter, sans-serif">{i + 1}</text>
-          </g>
-        ))}
+        {/* arrowheads, shown once each pass has arrived */}
+        <g fill={GOLD}>
+          {passes.map((s, i) => {
+            const a = (Math.atan2(s.to.y - s.from.y, s.to.x - s.from.x) * 180) / Math.PI
+            return <path key={i} className="touch" d="M -7 -4.6 L 1.5 0 L -7 4.6 Z" transform={`translate(${r1(s.to.x)} ${r1(s.to.y)}) rotate(${r1(a)})`}
+              style={{ ['--d' as string]: `${(s.start + TRAVEL * 0.85).toFixed(2)}s` }} />
+          })}
+        </g>
         {/* our eleven */}
-        {PATH.map((k, i) => {
-          const p = TEAM[k]
+        {PATH.map((key, i) => {
+          const p = TEAM[key]
+          const touched = i === 0 ? DELAY - 0.2 : passes[i - 1].start + TRAVEL
           return (
-            <g key={k}>
-              <circle className="touch" cx={p.x * S} cy={p.y * S} r="19" fill="none" stroke="#FFD452" strokeOpacity=".55" strokeWidth="2"
-                style={{ ['--d' as string]: `${(0.5 + Math.max(0, i - 1) * STEP + (i ? STEP : 0)).toFixed(2)}s` }} />
-              <circle cx={p.x * S} cy={p.y * S} r="13" fill={p.star ? '#FFD452' : '#F6F7F2'} stroke="#042A1B" strokeWidth="2" />
-              <text x={p.x * S} y={p.y * S + 4.6} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#063A25" fontFamily="Inter, sans-serif">{p.n}</text>
+            <g key={key}>
+              <circle className="touch" cx={p.x * S} cy={p.y * S} r="18" fill="none" stroke={GOLD} strokeOpacity=".5" strokeWidth="1.6"
+                style={{ ['--d' as string]: `${touched.toFixed(2)}s` }} />
+              <circle cx={p.x * S} cy={p.y * S} r="13" fill={CHALK} stroke={p.star ? GOLD : '#042A1B'} strokeWidth={p.star ? 3 : 2} />
+              <text x={p.x * S} y={p.y * S + 4.5} {...num} fill="#063A25">{p.n}</text>
             </g>
           )
         })}
+        {/* the ball: the Ndamba mark */}
+        <g className="ball" style={{ transform: `translate(${r1(goal.x)}px, ${r1(goal.y)}px)` }}>
+          <g transform={`translate(${-BALL / 2} ${-BALL / 2})`}>
+            <circle cx={BALL / 2} cy={BALL / 2 + 1.5} r={BALL / 2} fill="#021A10" fillOpacity=".35" />
+            <NdambaMark size={BALL} tone="light" />
+          </g>
+        </g>
       </svg>
-      <figcaption className="mt-3 text-sm text-cream/60">{t('landing.hero.pitchCaption')}</figcaption>
+      <figcaption className="mt-3 flex items-start justify-between gap-4">
+        <span className="text-[13.5px] leading-snug text-cream/60">{t('landing.hero.pitchCaption')}</span>
+        {motion && (
+          <button type="button" onClick={() => setRun((r) => r + 1)}
+            className="-mr-2 -mt-2 inline-flex min-h-[40px] shrink-0 items-center gap-1.5 rounded-[10px] px-2.5 text-[13px] font-semibold text-cream/70 transition-colors hover:bg-white/[0.07] hover:text-cream">
+            <RotateCcw size={14} strokeWidth={1.75} aria-hidden="true" />{t('landing.hero.replay')}
+          </button>
+        )}
+      </figcaption>
     </figure>
   )
 }

@@ -41,8 +41,7 @@ export default function Matches() {
   const header = (
     <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
       <div>
-        <div className="eyebrow mb-1">{team ? team.name : t('matches.eyebrow')}</div>
-        <h1 className="text-[30px] font-semibold leading-tight text-ink sm:text-[36px]">{t('matches.title')}</h1>
+        <h1 className="text-[30px] leading-tight text-ink sm:text-[38px]">{t('matches.title')}</h1>
         <p className="mt-1 max-w-xl text-[15px] text-ink-muted">{t('matches.subtitle')}</p>
       </div>
       {team && <Link to="/app/matchs/nouveau" className="btn-primary btn-lg self-start sm:self-auto"><CalendarPlus size={18} />{t('matches.new')}</Link>}
@@ -68,18 +67,18 @@ export default function Matches() {
       {header}
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-start">
         <section aria-labelledby="up-h" className="min-w-0">
-          <h2 id="up-h" className="mb-3 font-display text-xl font-semibold">{t('matches.upcoming')}</h2>
+          <h2 id="up-h" className="mb-3 font-display text-[20px]">{t('matches.upcoming')}</h2>
           {next ? (
             <div className="space-y-3">
               <NextMatchCard match={next} team={team} />
-              {later.map((m) => <MatchRow key={m.id} match={m} team={team} />)}
+              {later.length > 0 && <ul className="card divide-y divide-line overflow-hidden">{later.map((m) => <li key={m.id}><MatchRow match={m} team={team} /></li>)}</ul>}
             </div>
           ) : <p className="rounded-2xl border border-dashed border-line bg-paper/60 px-4 py-6 text-sm text-ink-muted">{t('matches.noneUpcoming')}</p>}
         </section>
         <section aria-labelledby="past-h" className="min-w-0">
-          <h2 id="past-h" className="mb-3 font-display text-xl font-semibold">{t('matches.past')}</h2>
+          <h2 id="past-h" className="mb-3 font-display text-[20px]">{t('matches.past')}</h2>
           {past.length ? (
-            <div className="space-y-3">{past.map((m) => <MatchRow key={m.id} match={m} team={team} njangi={njangi.get(m.id)} events={eventCount.get(m.id) || 0} />)}</div>
+            <ul className="card divide-y divide-line overflow-hidden">{past.map((m) => <li key={m.id}><MatchRow match={m} team={team} njangi={njangi.get(m.id)} events={eventCount.get(m.id) || 0} /></li>)}</ul>
           ) : <p className="rounded-2xl border border-dashed border-line bg-paper/60 px-4 py-6 text-sm text-ink-muted">{t('matches.nonePast')}</p>}
         </section>
       </div>
@@ -100,19 +99,18 @@ function NextMatchCard({ match, team }: { match: Match; team: Team }) {
   const when = whenLabel(match.date, t)
   const filled = match.lineup.filter((l) => l.playerId).length
   return (
-    <Link to={`/app/matchs/${match.id}`} className="group block overflow-hidden rounded-[24px] bg-forest-600 text-cream shadow-card transition hover:shadow-lift">
+    <Link to={`/app/matchs/${match.id}`} className="group block overflow-hidden rounded-[22px] bg-forest-600 text-cream transition hover:bg-forest-700">
       <div className="relative p-5 sm:p-6">
-        <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full border-[14px] border-white/[0.06]" aria-hidden="true" />
         <div className="relative flex items-center gap-2">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-sun-300">{t('matches.next')}</span>
-          {when && <span className="rounded-full bg-sun-500 px-2 py-0.5 text-[11px] font-bold text-night-900">{when}</span>}
+          <span className="text-[13px] font-semibold text-cream/75">{t('matches.next')}</span>
+          {when && <span className="rounded-full bg-sun-500 px-2.5 py-0.5 text-[12px] font-semibold text-night-900">{when}</span>}
           {match.status === 'live' && <StatusBadge status="live" />}
         </div>
         <div className="relative mt-4 flex items-start gap-4">
           <DateBlock iso={match.date} dark />
           <div className="min-w-0 flex-1">
-            <div className="text-xs text-cream/70">{match.home ? t('matches.home') : t('matches.away')}{match.competition ? `, ${match.competition}` : ''}</div>
-            <div className="mt-1 font-display text-[26px] font-semibold leading-[1.1] sm:text-[30px]"><span className="mr-1.5 font-sans text-[15px] font-medium text-cream/70">{t('matches.vs')}</span>{match.opponent}</div>
+            <div className="text-[13px] text-cream/75">{match.home ? t('matches.home') : t('matches.away')}{match.competition ? `, ${match.competition}` : ''}</div>
+            <div className="mt-1 font-display text-[26px] leading-[1.1] sm:text-[30px]"><span className="mr-1.5 font-sans text-[15px] font-medium text-cream/70">{t('matches.vs')}</span>{match.opponent}</div>
           </div>
         </div>
         <div className="relative mt-4 flex flex-wrap gap-x-5 gap-y-1.5 text-[13.5px] text-cream/85">
@@ -120,8 +118,8 @@ function NextMatchCard({ match, team }: { match: Match; team: Team }) {
           {match.venue && <span className="inline-flex items-center gap-1.5"><MapPin size={15} />{match.venue}</span>}
         </div>
         <div className="relative mt-5 flex items-center justify-between gap-3 border-t border-white/15 pt-4 text-[13px]">
-          <span className="text-cream/80">{match.formation} · {t('matches.lineupReady', { n: filled, total: match.lineup.length })}</span>
-          <span className="inline-flex items-center gap-1 font-semibold text-sun-300">{t('matches.sheet')}<ChevronRight size={16} className="transition group-hover:translate-x-0.5" /></span>
+          <span className="flex flex-wrap gap-x-3 text-cream/80"><span className="font-semibold tabular-nums text-cream">{match.formation}</span><span>{t('matches.lineupReady', { n: filled, total: match.lineup.length })}</span></span>
+          <span className="inline-flex shrink-0 items-center gap-1 font-semibold text-cream">{t('matches.sheet')}<ChevronRight size={16} className="transition group-hover:translate-x-0.5" /></span>
         </div>
       </div>
     </Link>
@@ -133,17 +131,17 @@ function MatchRow({ match, team, njangi, events = 0 }: { match: Match; team: Tea
   const done = match.status === 'done'
   const toScore = match.status === 'planned' && match.date < todayISO()
   const res = done ? resultOf(match) : null
-  const resTone = res === 'W' ? 'bg-forest-600 text-cream' : res === 'L' ? 'bg-clay-500 text-white' : 'bg-sand text-ink-soft'
+  const resTone = res === 'W' ? 'bg-forest-50 text-forest-700' : res === 'L' ? 'bg-clay-50 text-clay-700' : 'bg-sand text-ink-soft'
   const left = match.home ? match.scoreUs : match.scoreThem
   const right = match.home ? match.scoreThem : match.scoreUs
   return (
-    <Link to={`/app/matchs/${match.id}`} className="card group flex items-center gap-3 p-3 transition hover:border-ink-faint/60 sm:gap-4 sm:p-4">
+    <Link to={`/app/matchs/${match.id}`} className="group flex items-center gap-3 p-3 transition hover:bg-sand/50 sm:gap-4 sm:px-4">
       <DateBlock iso={match.date} />
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-1.5">
           <StatusBadge status={match.status} toScore={toScore} />
-          <span className="inline-flex items-center gap-1 text-[11.5px] font-medium text-ink-muted">
-            {match.home ? <House size={12} /> : <Plane size={12} />}{match.home ? t('matches.home') : t('matches.away')}
+          <span className="inline-flex items-center gap-1 text-[12.5px] font-medium text-ink-muted">
+            {match.home ? <House size={13} strokeWidth={1.75} /> : <Plane size={13} strokeWidth={1.75} />}{match.home ? t('matches.home') : t('matches.away')}
           </span>
         </div>
         <div className="mt-1 line-clamp-2 break-words text-[16px] font-semibold leading-snug text-ink"><span className="mr-1 text-[13px] font-normal text-ink-faint">{t('matches.vs')}</span>{match.opponent}</div>
@@ -154,13 +152,13 @@ function MatchRow({ match, team, njangi, events = 0 }: { match: Match; team: Tea
       {done ? (
         <div className="flex shrink-0 items-center gap-3">
           <div className="text-right">
-            <div className="font-display text-2xl font-semibold tabular-nums leading-none text-ink">{left}<span className="px-0.5 text-ink-faint">-</span>{right}</div>
-            {res && <span className={cx('mt-1 inline-block rounded px-1.5 text-[10.5px] font-bold', resTone)}>{t(`matches.result.${res}`)}</span>}
+            <div className="font-display text-2xl tabular-nums leading-none text-ink">{left}<span className="px-1 text-ink-faint">-</span>{right}</div>
+            {res && <span className={cx('mt-1.5 inline-block rounded-full px-2 text-[11px] font-semibold', resTone)}>{t(`matches.result.${res}`)}</span>}
           </div>
           {njangi !== undefined && events > 0 && (
             <span className="flex flex-col items-center" title={t('matches.njangiTitle', { label: njangiLabel(njangi, lang) })}>
               <NjangiDial value={njangi} size={42} label={t('matches.njangi')} />
-              <span className="mt-0.5 text-[9.5px] font-semibold text-ink-faint" aria-hidden="true">{t('matches.njangiShort')}</span>
+              <span className="mt-0.5 text-[11px] font-semibold text-ink-faint" aria-hidden="true">{t('matches.njangiShort')}</span>
             </span>
           )}
         </div>

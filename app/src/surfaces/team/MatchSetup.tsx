@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Crown, House, Plane, Plus, RefreshCw, Save, Shirt, UserPlus, X } from 'lucide-react'
+import { ArrowLeft, Check, ChevronLeft, Crown, House, Plane, Plus, RefreshCw, Save, Shirt, UserPlus, X } from 'lucide-react'
 import { MolaMark } from '../../ui/brand'
 import { db } from '../../lib/db'
 import { useLiveQuery, useDocumentTitle } from '../../lib/hooks'
@@ -133,8 +133,7 @@ export default function MatchSetup() {
       <div className="mb-6">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div className="min-w-0">
-            <div className="eyebrow mb-1">{t('setup.stepOf', { n: idx + 1 })}</div>
-            <h1 className="text-[28px] font-semibold leading-tight text-ink sm:text-[34px]">
+            <h1 className="text-[28px] leading-tight text-ink sm:text-[36px]">
               {isEdit ? t('setup.titleEdit') : t('setup.titleNew')}
               {d.opponent.trim() && <span className="block truncate font-sans text-base font-medium text-ink-muted sm:inline sm:pl-3">{t('setup.against', { opponent: d.opponent.trim() })}</span>}
             </h1>
@@ -148,9 +147,9 @@ export default function MatchSetup() {
               <li key={s}>
                 <button type="button" onClick={() => go(s)} aria-current={cur ? 'step' : undefined}
                   className="group flex w-full flex-col gap-1.5 rounded-lg pt-1 text-left focus-visible:outline-offset-2">
-                  <span className={cx('h-1.5 w-full rounded-full transition-colors', cur ? 'bg-terra-500' : done ? 'bg-forest-600' : 'bg-line')} />
+                  <span className={cx('h-1 w-full rounded-full transition-colors', cur ? 'bg-forest-600' : done ? 'bg-forest-300' : 'bg-line')} />
                   <span className={cx('flex items-center gap-1 text-[12px] font-semibold leading-tight sm:text-[13px]', cur ? 'text-ink' : done ? 'text-forest-700' : 'text-ink-faint')}>
-                    <span className={cx('hidden h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] tabular-nums sm:flex', cur ? 'bg-terra-500 text-white' : done ? 'bg-forest-600 text-cream' : 'bg-sand text-ink-muted')}>
+                    <span className={cx('hidden h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] tabular-nums sm:flex', cur ? 'bg-forest-600 text-cream' : done ? 'bg-forest-100 text-forest-700' : 'bg-sand text-ink-muted')}>
                       {done ? <Check size={12} strokeWidth={3} /> : i + 1}
                     </span>
                     <span className="truncate">{t(`setup.steps.${s}`)}</span>
@@ -173,7 +172,7 @@ export default function MatchSetup() {
       )}
 
       {/* step footer: sits above the mobile tab bar */}
-      <div className="sticky bottom-[calc(4.25rem+env(safe-area-inset-bottom))] z-20 mt-8 lg:bottom-4">
+      <div className="sticky bottom-[calc(4.25rem+env(safe-area-inset-bottom))] z-20 mt-8 pr-[68px] lg:bottom-4 lg:pr-[76px]">{/* room for the Mola launcher */}
         <div className="flex items-center gap-2 rounded-2xl border border-line bg-paper/95 p-2 shadow-lift backdrop-blur">
           {idx > 0 ? (
             <button type="button" className="btn-ghost min-h-[44px]" onClick={() => go(STEPS[idx - 1])} aria-label={t('common:actions.previous')}><ChevronLeft size={18} /><span className="hidden min-[400px]:inline">{t('common:actions.previous')}</span></button>
@@ -181,9 +180,9 @@ export default function MatchSetup() {
           <div className="ml-auto flex gap-2">
             {isEdit && idx < STEPS.length - 1 && <button type="button" className="btn-outline min-h-[44px] sm:hidden" onClick={save} disabled={saving} aria-label={t('common:actions.save')}><Save size={17} /></button>}
             {idx < STEPS.length - 1 ? (
-              <button type="button" className="btn-primary min-h-[44px] px-5" onClick={() => go(STEPS[idx + 1])}>{t(`setup.steps.${STEPS[idx + 1]}`)}<ChevronRight size={18} /></button>
+              <button type="button" className="btn-primary min-h-[44px] px-5" onClick={() => go(STEPS[idx + 1])}>{t('setup.nextStep', { step: t(`setup.steps.${STEPS[idx + 1]}`) })}</button>
             ) : (
-              <button type="button" className="btn-accent min-h-[44px] px-5" onClick={save} disabled={saving}><Save size={17} />{saving ? t('setup.saving') : t('setup.save')}</button>
+              <button type="button" className="btn-primary min-h-[44px] px-5" onClick={save} disabled={saving}><Save size={17} />{saving ? t('setup.saving') : t('setup.save')}</button>
             )}
           </div>
         </div>
@@ -201,7 +200,7 @@ function StepCard({ title, intro, children, aside }: { title: string; intro?: st
   return (
     <section className="card card-pad sm:p-6">
       <div className="mb-4 flex flex-wrap items-start justify-between gap-2">
-        <div><h2 className="font-display text-xl font-semibold">{title}</h2>{intro && <p className="mt-0.5 max-w-2xl text-sm text-ink-muted">{intro}</p>}</div>
+        <div><h2 className="font-display text-xl">{title}</h2>{intro && <p className="mt-1 max-w-2xl text-[14px] text-ink-muted">{intro}</p>}</div>
         {aside}
       </div>
       {children}
@@ -302,21 +301,21 @@ function LineupStep({ d, set, players, onFormation, onAuto, onSlot, activeSlot }
         <section className="card card-pad">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="min-w-0">
-              <h2 className="font-display text-xl font-semibold">{t('setup.lineup.title')}</h2>
+              <h2 className="font-display text-xl">{t('setup.lineup.title')}</h2>
               <p className="text-[13px] text-ink-muted">{t('setup.lineup.squad', { starters: starters.length, subs: bench.length })}</p>
             </div>
-            <button type="button" className="btn-sun" onClick={onAuto}><MolaMark size={17} />{t('setup.lineup.auto')}</button>
+            <button type="button" className="btn-sun" onClick={onAuto}><MolaMark size={17} ball="#0B5D3B" aria-hidden="true" />{t('setup.lineup.auto')}</button>
           </div>
           <p className="mt-2 text-xs text-ink-faint">{t('setup.lineup.autoHint', { app: BRAND.name })}</p>
         </section>
 
         <section className="card card-pad" aria-labelledby="cap-h">
-          <h3 id="cap-h" className="mb-2 flex items-center gap-2 text-sm font-semibold text-ink"><Crown size={16} className="text-terra-500" />{t('setup.lineup.captain')}</h3>
+          <h3 id="cap-h" className="mb-2 flex items-center gap-2 text-sm font-semibold text-ink"><Crown size={16} strokeWidth={1.75} className="text-forest-700" />{t('setup.lineup.captain')}</h3>
           <div className="flex flex-wrap gap-1.5" role="radiogroup" aria-labelledby="cap-h">
             {capOptions.map((p) => (
               <button key={p.id} type="button" role="radio" aria-checked={d.captainId === p.id} onClick={() => set({ captainId: d.captainId === p.id ? undefined : p.id })}
-                className={cx('inline-flex min-h-[40px] items-center gap-1.5 rounded-full border py-1 pl-1 pr-3 text-[13px] font-semibold transition', d.captainId === p.id ? 'border-terra-500 bg-terra-500 text-white' : 'border-line bg-paper text-ink-soft hover:border-ink-faint')}>
-                <span className={cx('flex h-7 w-7 items-center justify-center rounded-full text-[12px] tabular-nums', d.captainId === p.id ? 'bg-white/20' : 'bg-sand')}>{p.number ?? '·'}</span>
+                className={cx('inline-flex min-h-[40px] items-center gap-1.5 rounded-full border py-1 pl-1 pr-3 text-[13px] font-semibold transition', d.captainId === p.id ? 'border-forest-600 bg-forest-600 text-cream' : 'border-line bg-paper text-ink-soft hover:border-ink-faint')}>
+                <span className={cx('flex h-7 w-7 items-center justify-center rounded-full text-[12px] tabular-nums', d.captainId === p.id ? 'bg-white/20' : 'bg-sand')}>{p.number ?? '-'}</span>
                 {shortName(p.name)}
               </button>
             ))}
@@ -346,7 +345,7 @@ function LineupStep({ d, set, players, onFormation, onAuto, onSlot, activeSlot }
               {out.map((p) => (
                 <button key={p.id} type="button" onClick={() => set({ subs: [...d.subs, p.id] })} aria-label={t('setup.lineup.toBench', { name: p.name })}
                   className="inline-flex min-h-[40px] items-center gap-1.5 rounded-full border border-line bg-paper py-1 pl-1 pr-3 text-[13px] font-semibold text-ink-soft transition hover:border-forest-300">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-sand text-[12px] tabular-nums">{p.number ?? '·'}</span>{shortName(p.name)}<Plus size={14} className="text-forest-600" />
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-sand text-[12px] tabular-nums">{p.number ?? '-'}</span>{shortName(p.name)}<Plus size={14} className="text-forest-600" />
                 </button>
               ))}
             </div>
@@ -371,22 +370,20 @@ function PlanStep({ plan, onChange }: { plan: GamePlan; onChange: (p: GamePlan) 
   }
   return (
     <StepCard title={t('setup.plan.title')} intro={t('setup.plan.intro')}>
-      <div className="grid gap-4 lg:grid-cols-2">
-        {MOMENTS.map((k, i) => {
+      <div className="divide-y divide-line border-t border-line">
+        {MOMENTS.map((k) => {
           const ideas = t(`suggest.${k}`, { returnObjects: true }) as unknown as string[]
           return (
-            <div key={k} className={cx('rounded-2xl border border-line bg-cream/50 p-4', k === 'setPieces' && 'lg:col-span-2')}>
-              <div className="mb-2 flex items-start gap-3">
-                <span className={cx('mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full font-display text-sm font-semibold', k === 'setPieces' ? 'bg-sun-100 text-sun-700' : 'bg-forest-600 text-cream')}>{k === 'setPieces' ? '+' : i + 1}</span>
-                <div className="min-w-0">
-                  <label htmlFor={`plan-${k}`} className="block font-display text-[17px] font-semibold text-ink">{t(`moments.${k}.title`)}</label>
-                  <p className="text-[13px] text-ink-muted">{t(`moments.${k}.q`)}</p>
-                </div>
+            <div key={k} className="grid gap-3 py-5 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-8">
+              <div className="min-w-0">
+                <label htmlFor={`plan-${k}`} className="block font-display text-[17px] text-ink">{t(`moments.${k}.title`)}</label>
+                <p className="mt-0.5 text-[13.5px] leading-snug text-ink-muted">{t(`moments.${k}.q`)}</p>
               </div>
+              <div className="min-w-0">
               <textarea id={`plan-${k}`} className="input min-h-[96px] bg-white leading-6" value={plan[k]} onChange={(e) => onChange({ ...plan, [k]: e.target.value })} />
               {Array.isArray(ideas) && (
                 <div className="mt-2.5">
-                  <div className="mb-1.5 text-[11px] font-semibold text-terra-600">{t('setup.plan.suggest')}</div>
+                  <div className="mb-1.5 text-[13px] font-semibold text-ink-muted">{t('setup.plan.suggest')}</div>
                   <div className="flex flex-wrap gap-1.5">
                     {ideas.map((idea) => {
                       const on = plan[k].includes(idea)
@@ -400,6 +397,7 @@ function PlanStep({ plan, onChange }: { plan: GamePlan; onChange: (p: GamePlan) 
                   </div>
                 </div>
               )}
+              </div>
             </div>
           )
         })}
@@ -424,7 +422,7 @@ function ConvoStep({ text, edited, onChange, onRegenerate, match, team, players 
       <aside className="card overflow-hidden">
         <div className="bg-forest-600 px-4 py-4 text-cream">
           <div className="text-xs text-cream/70">{match.competition || t(match.home ? 'matches.home' : 'matches.away')}</div>
-          <div className="mt-1 font-display text-xl font-semibold leading-tight">{match.home ? `${team.name} ${t('matches.vs')} ${match.opponent}` : `${match.opponent} ${t('matches.vs')} ${team.name}`}</div>
+          <div className="mt-1 font-display text-xl leading-tight">{match.home ? `${team.name} ${t('matches.vs')} ${match.opponent}` : `${match.opponent} ${t('matches.vs')} ${team.name}`}</div>
           <div className="mt-1 text-[13px] text-cream/85">{fmtDate(match.date, lang, { weekday: 'long', day: 'numeric', month: 'long' })}{match.time ? `, ${match.time}` : ''}{match.venue ? `, ${match.venue}` : ''}</div>
         </div>
         <div className="mx-auto max-w-[260px] p-3"><LineupBoard format={match.format} formation={match.formation} lineup={match.lineup} players={players} captainId={match.captainId} size="sm" /></div>

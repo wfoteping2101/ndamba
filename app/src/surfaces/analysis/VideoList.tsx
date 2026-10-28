@@ -30,7 +30,7 @@ export default function VideoList() {
   }
 
   const header = (
-    <PageHeader eyebrow={t('video.eyebrow')} title={t('video.title')} subtitle={t('video.subtitle')}
+    <PageHeader title={t('video.title')} subtitle={t('video.subtitle')}
       actions={<button type="button" onClick={() => setCreating(true)} className="btn-primary btn-lg"><Plus size={18} />{t('video.new')}</button>} />
   )
 
@@ -49,16 +49,16 @@ export default function VideoList() {
             const images = p.tags.filter((x) => x.drawing).length
             return (
               <div key={p.id} className="card group relative flex items-start gap-3 p-4 transition hover:border-forest-300">
-                {r.tagged > 0 ? <MiniDial value={r.total} size={52} /> : <span className="grid h-[52px] w-[52px] shrink-0 place-items-center rounded-full bg-terra-50 text-terra-600"><Video size={20} /></span>}
+                {r.tagged > 0 ? <MiniDial value={r.total} size={52} /> : <span className="grid h-[52px] w-[52px] shrink-0 place-items-center rounded-full bg-forest-50 text-forest-700"><Video size={20} strokeWidth={1.75} /></span>}
                 <div className="min-w-0 flex-1">
                   <Link to={`/app/analyse/video/${p.id}`} className="block text-[16px] font-semibold leading-snug text-ink after:absolute after:inset-0 after:rounded-2xl after:content-['']">{p.title}</Link>
                   <div className="mt-0.5 text-[12.5px] text-ink-muted">
-                    {m ? `${fmtDate(m.date, lang, { day: 'numeric', month: 'short' })} · ${t('common:app.vs')} ${m.opponent}` : fmtDate(p.createdAt.slice(0, 10), lang, { day: 'numeric', month: 'short', year: 'numeric' })}
+                    {m ? `${t('common:app.vs')} ${m.opponent}, ${fmtDate(m.date, lang, { day: 'numeric', month: 'short' })}` : fmtDate(p.createdAt.slice(0, 10), lang, { day: 'numeric', month: 'short', year: 'numeric' })}
                   </div>
                   <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-ink-faint">
                     <span className="inline-flex items-center gap-1"><FileVideo size={13} />{p.fileName ?? t('video.noFile')}</span>
                     {p.duration ? <span>{t('video.duration', { d: fmtClock(p.duration) })}</span> : null}
-                    <span>{t('video.tags', { n: visible.length })}</span>
+                    <span>{t('video.tags', { count: visible.length })}</span>
                     {images > 0 && <span className="inline-flex items-center gap-1"><ImageIcon size={13} />{images}</span>}
                     {r.tagged > 0 && <span className="font-semibold text-ink-muted">{njangiLabel(r.total, lang)}</span>}
                   </div>
@@ -73,15 +73,17 @@ export default function VideoList() {
         </div>
       )}
 
-      <section className="mt-8 grid gap-3 sm:grid-cols-3">
+      <ol className="mt-10 grid gap-x-8 gap-y-5 border-t border-line pt-6 sm:grid-cols-3" aria-label={t('video.howTitle')}>
         {(['film', 'tag', 'draw'] as const).map((k, i) => (
-          <div key={k} className="rounded-2xl border border-line bg-paper/70 p-4">
-            <div className="font-display text-2xl font-semibold text-terra-500">{i + 1}</div>
-            <div className="mt-1 text-[14.5px] font-semibold text-ink">{t(`video.how.${k}.title`)}</div>
-            <p className="mt-0.5 text-[13px] leading-relaxed text-ink-muted">{t(`video.how.${k}.body`)}</p>
-          </div>
+          <li key={k} className="flex gap-3">
+            <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-forest-300 text-[13px] font-semibold tabular-nums text-forest-700" aria-hidden="true">{i + 1}</span>
+            <div className="min-w-0">
+              <div className="text-[15px] font-semibold text-ink">{t(`video.how.${k}.title`)}</div>
+              <p className="mt-0.5 text-[13.5px] leading-relaxed text-ink-muted">{t(`video.how.${k}.body`)}</p>
+            </div>
+          </li>
         ))}
-      </section>
+      </ol>
 
       <NewProject open={creating} onClose={() => setCreating(false)} matches={matches} teamName={team?.name} onCreate={create} />
 
@@ -118,7 +120,7 @@ function NewProject({ open, onClose, matches, teamName, onCreate }: { open: bool
         <Field label={t('video.linkedMatch')} htmlFor="nj-vmatch">
           <select id="nj-vmatch" className="input" value={matchId} onChange={(e) => pickMatch(e.target.value)}>
             <option value="">{t('video.noMatch')}</option>
-            {sorted.map((m) => <option key={m.id} value={m.id}>{fmtDate(m.date, lang, { day: 'numeric', month: 'short' })} · {t('common:app.vs')} {m.opponent}</option>)}
+            {sorted.map((m) => <option key={m.id} value={m.id}>{fmtDate(m.date, lang, { day: 'numeric', month: 'short' })}, {t('common:app.vs')} {m.opponent}</option>)}
           </select>
         </Field>
         <Field label={t('video.projectTitle')} htmlFor="nj-vtitle-new">

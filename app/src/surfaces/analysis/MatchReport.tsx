@@ -128,7 +128,7 @@ function Report({ match }: { match: Match }) {
       <section className="card mb-6 overflow-hidden" aria-labelledby="indice-h">
         <div className="grid gap-0 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
           <div className="flex flex-col items-center justify-center border-b border-line px-5 py-6 lg:border-b-0 lg:border-r">
-            <h2 id="indice-h" className="eyebrow mb-2">Indice Njangi</h2>
+            <h2 id="indice-h" className="mb-1 text-[15px] font-semibold text-ink" style={{ fontStretch: '100%' }}>Indice Njangi</h2>
             <NjangiGauge total={result.total} size={236} />
             <BandScale total={result.total} />
             {prev && <DeltaChip cur={result.total} prev={prev.result.total} lang={lang} label={t('report.vsPrev', { opp: prev.match.opponent })} />}
@@ -171,7 +171,7 @@ function ReportHeader({ match, teamName, events, players, onCopy, onPrint, onVid
   const res = match.scoreUs > match.scoreThem ? 'W' : match.scoreUs < match.scoreThem ? 'L' : 'D'
   const goals = events.filter((e) => e.code === 'GOAL').sort((a, b) => a.half - b.half || a.t - b.t)
   const byId = new Map(players.map((p) => [p.id, p]))
-  const resTone = res === 'W' ? 'bg-sun-500 text-night-900' : res === 'L' ? 'bg-clay-500 text-white' : 'bg-white/15 text-cream'
+  const resTone = res === 'W' ? 'bg-cream text-forest-700' : res === 'L' ? 'bg-clay-500 text-white' : 'bg-white/15 text-cream'
   return (
     <div className="mb-6">
       <div className="no-print mb-3 flex items-center justify-between gap-2">
@@ -181,22 +181,19 @@ function ReportHeader({ match, teamName, events, players, onCopy, onPrint, onVid
           <button type="button" onClick={onPrint} className="btn-outline btn-sm min-h-[44px]"><Printer size={15} />{t('report.print')}</button>
         </div>
       </div>
-      <div className="relative overflow-hidden rounded-[24px] bg-forest-600 text-cream shadow-card">
-        <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full border-[18px] border-white/[0.05]" aria-hidden="true" />
+      <div className="relative overflow-hidden rounded-[22px] bg-forest-600 text-cream [&_:focus-visible]:outline-cream">
         <div className="relative px-5 pb-5 pt-5 sm:px-7 sm:pt-6">
-          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-sun-300">
-            <span>{BRAND.name}</span><span className="text-cream/40">·</span><span>{t('report.title')}</span>
-          </div>
-          <div className="mt-1 text-[13px] text-cream/75">
+          <h1 className="text-[13px] font-semibold tracking-normal text-cream/70" style={{ fontStretch: '100%', lineHeight: 1.4 }}>{t('report.title')}</h1>
+          <div className="mt-0.5 text-[13px] text-cream/85">
             {[match.competition, fmtDate(match.date, lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }), match.home ? t('report.atHome') : t('report.away')].filter(Boolean).join(', ')}
           </div>
           <div className="mt-4 grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 sm:gap-5">
-            <div className="min-w-0 text-right font-display text-[17px] font-semibold leading-tight sm:text-[26px]">{teamName}</div>
+            <div className="min-w-0 text-right font-display text-[15px] leading-tight sm:text-[26px]">{teamName}</div>
             <div className="flex flex-col items-center">
-              <div className="whitespace-nowrap font-display text-[42px] font-semibold leading-none tabular-nums sm:text-[56px]">{match.scoreUs}<span className="mx-1.5 text-cream/40">-</span>{match.scoreThem}</div>
-              <span className={cx('mt-1.5 rounded-md px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide', match.status === 'done' ? resTone : 'bg-white/15 text-cream')}>{match.status === 'done' ? t(`report.result.${res}`) : t(`report.status.${match.status}`)}</span>
+              <div className="whitespace-nowrap font-display text-[44px] leading-none tabular-nums sm:text-[60px]">{match.scoreUs}<span className="mx-2.5 inline-block h-[0.07em] w-[0.32em] rounded-full bg-cream/40 align-middle sm:mx-3" aria-label="-" />{match.scoreThem}</div>
+              <span className={cx('mt-2 rounded-full px-2.5 py-0.5 text-[12px] font-semibold', match.status === 'done' ? resTone : 'bg-white/15 text-cream')}>{match.status === 'done' ? t(`report.result.${res}`) : t(`report.status.${match.status}`)}</span>
             </div>
-            <div className="min-w-0 font-display text-[17px] font-semibold leading-tight sm:text-[26px]">{match.opponent}</div>
+            <div className="min-w-0 font-display text-[15px] leading-tight sm:text-[26px]">{match.opponent}</div>
           </div>
           {goals.length > 0 && (
             <ul className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-1 text-[13px] text-cream/85">
@@ -216,7 +213,7 @@ function ReportHeader({ match, teamName, events, players, onCopy, onPrint, onVid
             <Link to={`/app/analyse/live/${match.id}`} className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl bg-white/10 px-3 text-[13px] font-semibold hover:bg-white/15"><Pencil size={15} />{t('report.editTags')}</Link>
             <button type="button" onClick={onVideo} className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl bg-white/10 px-3 text-[13px] font-semibold hover:bg-white/15"><Video size={15} />{t('report.video')}</button>
             <Link to={`/app/matchs/${match.id}`} className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl bg-white/10 px-3 text-[13px] font-semibold hover:bg-white/15"><ListChecks size={15} />{t('report.sheet')}</Link>
-            <span className="ml-auto self-center text-[12px] text-cream/60">{t('hub.tags', { n: events.length })}</span>
+            <span className="ml-auto self-center text-[12.5px] tabular-nums text-cream/70">{t('hub.tags', { count: events.length })}</span>
           </div>
         </div>
       </div>
@@ -238,7 +235,7 @@ function BandScale({ total }: { total: number }) {
   const { lang } = useT('analysis')
   const bands = NJANGI_BANDS
   const cur = njangiBand(total)
-  const tone = ['bg-clay-500', 'bg-terra-500', 'bg-sun-500', 'bg-forest-500', 'bg-forest-600']
+  const tone = ['bg-clay-500', 'bg-clay-300', 'bg-forest-300', 'bg-forest-500', 'bg-forest-600']
   return (
     <div className="mt-4 w-full max-w-[280px]" aria-hidden="true">
       <div className="relative flex h-2 gap-0.5">
@@ -286,12 +283,12 @@ function Philosophy({ summary, teamName }: { summary: NjangiSummary; teamName: s
   const { t } = useT('analysis')
   return (
     <section className="card overflow-hidden" aria-labelledby="philo-h">
-      <div className="border-b border-line bg-sand/50 px-5 py-4 sm:px-6">
-        <div className="eyebrow mb-1">{teamName}</div>
-        <h2 id="philo-h" className="font-display text-[22px] font-semibold leading-tight text-ink">{t('report.philosophy')}</h2>
+      <div className="px-5 pt-5 sm:px-7 sm:pt-6">
+        <h2 id="philo-h" className="font-display text-[22px] leading-tight text-ink">{t('report.philosophy')}</h2>
+        <p className="mt-1 text-[13px] text-ink-muted">{t('report.philosophyFor', { team: teamName })}</p>
       </div>
-      <div className="space-y-3 px-5 py-5 sm:px-6">
-        {summary.paragraphs.map((p, i) => <p key={i} className={cx('text-[15.5px] leading-7 text-ink-soft', i === 0 && 'first-letter:font-display first-letter:text-[1.6em] first-letter:font-semibold first-letter:text-forest-600')}>{p}</p>)}
+      <div className="max-w-[68ch] space-y-3 px-5 pb-6 pt-4 sm:px-7">
+        {summary.paragraphs.map((p, i) => <p key={i} className={cx('leading-7 text-ink-soft', i === 0 ? 'text-[16.5px] text-ink' : 'text-[15.5px]')}>{p}</p>)}
       </div>
       <div className="grid gap-0 border-t border-line sm:grid-cols-2">
         <ListBlock icon={<ThumbsUp size={16} />} tone="forest" title={t('report.strengths')} items={summary.strengths} />
@@ -304,15 +301,12 @@ function Philosophy({ summary, teamName }: { summary: NjangiSummary; teamName: s
 function ListBlock({ icon, tone, title, items, className }: { icon: ReactNode; tone: 'forest' | 'clay'; title: string; items: string[]; className?: string }) {
   return (
     <div className={cx('px-5 py-5 sm:px-6', className)}>
-      <h3 className={cx('mb-3 flex items-center gap-2 font-sans text-[13px] font-semibold uppercase tracking-[0.12em]', tone === 'forest' ? 'text-forest-600' : 'text-clay-600')}>{icon}{title}</h3>
-      <ol className="space-y-3">
+      <h3 className={cx('mb-3 flex items-center gap-2 font-sans text-[14px] font-semibold tracking-normal', tone === 'forest' ? 'text-forest-700' : 'text-clay-600')} style={{ fontStretch: '100%' }}>{icon}{title}</h3>
+      <ul className="space-y-3">
         {items.map((s, i) => (
-          <li key={i} className="flex gap-3 text-[14.5px] leading-6 text-ink-soft">
-            <span className={cx('mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full text-[12px] font-bold', tone === 'forest' ? 'bg-forest-50 text-forest-700' : 'bg-clay-50 text-clay-700')}>{i + 1}</span>
-            <span>{s}</span>
-          </li>
+          <li key={i} className={cx('border-l-2 pl-3 text-[14.5px] leading-6 text-ink-soft', tone === 'forest' ? 'border-forest-300' : 'border-clay-300')}>{s}</li>
         ))}
-      </ol>
+      </ul>
     </div>
   )
 }
@@ -329,12 +323,12 @@ function SubExplain({ k, r }: { k: SubKey; r: NjangiResult }) {
     <div className="py-3.5 first:pt-0 last:pb-0">
       <div className="flex items-baseline justify-between gap-3">
         <h3 className="font-sans text-[15px] font-semibold text-ink">{t(`sub.${k}.name`)}</h3>
-        <span className="shrink-0 text-sm tabular-nums"><b className="text-ink">{fmtNjangi(r.sub[k], lang)}</b><span className="text-ink-faint"> / 20</span> <span className={cx('ml-1 text-xs font-semibold', lvl === 0 ? 'text-clay-600' : lvl === 1 ? 'text-terra-600' : 'text-forest-600')}>{t(`level.${lvl}`)}</span></span>
+        <span className="shrink-0 text-sm tabular-nums"><b className="text-ink">{fmtNjangi(r.sub[k], lang)}</b><span className="text-ink-faint"> / 20</span> <span className={cx('ml-1 text-xs font-semibold', lvl === 0 ? 'text-clay-600' : lvl === 1 ? 'text-ink-muted' : 'text-forest-700')}>{t(`level.${lvl}`)}</span></span>
       </div>
       <p className="mt-1 text-[14px] leading-6 text-ink-muted">{t(`sub.${k}.what`)}</p>
       <details className="group mt-1.5">
         <summary className="inline-flex min-h-[32px] cursor-pointer list-none items-center gap-1 text-[13px] font-semibold text-forest-600">{t('report.showFormula')}<ChevronDown size={14} className="transition group-open:rotate-180" /></summary>
-        <div className="mt-1 rounded-lg bg-sand/70 px-3 py-2 font-mono text-[12.5px] text-ink-soft">{t(`sub.${k}.how`, vars)} = {fmtNjangi(r.sub[k], lang)}</div>
+        <div className="mt-1 rounded-xl bg-sand/70 px-3 py-2 text-[13px] tabular-nums text-ink-soft">{t(`sub.${k}.how`, vars)} = {fmtNjangi(r.sub[k], lang)}</div>
       </details>
     </div>
   )
@@ -358,17 +352,17 @@ function WeekPlan({ summary, team }: { summary: NjangiSummary; team?: Team }) {
   }
   return (
     <section className="card overflow-hidden" aria-labelledby="week-h">
-      <div className="bg-night-800 px-5 py-4 text-cream sm:px-6">
-        <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-sun-300">{t('report.nextWeek')}</div>
-        <h2 id="week-h" className="mt-0.5 font-display text-[20px] font-semibold">{t('report.objectives')}</h2>
+      <div className="px-5 pt-5 sm:px-6">
+        <h2 id="week-h" className="font-display text-[20px] text-ink">{t('report.objectives')}</h2>
+        <p className="mt-1 text-[13px] text-ink-muted">{t('report.nextWeek')}</p>
       </div>
-      <div className="px-5 py-5 sm:px-6">
+      <div className="px-5 pb-5 pt-4 sm:px-6">
         <ul className="space-y-2.5">
           {summary.objectives.map((o, i) => (
-            <li key={i} className="flex gap-2.5 text-[14.5px] leading-6 text-ink-soft"><Target size={17} className="mt-0.5 shrink-0 text-terra-500" /><span>{o}</span></li>
+            <li key={i} className="flex gap-2.5 text-[14.5px] leading-6 text-ink-soft"><Target size={17} strokeWidth={1.75} className="mt-0.5 shrink-0 text-forest-600" /><span>{o}</span></li>
           ))}
         </ul>
-        <h3 className="mb-1 mt-5 flex items-center gap-2 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-ink-muted"><Dumbbell size={15} />{t('report.drills')}</h3>
+        <h3 className="mb-1 mt-6 flex items-center gap-2 font-sans text-[14px] font-semibold tracking-normal text-ink" style={{ fontStretch: '100%' }}><Dumbbell size={16} strokeWidth={1.75} className="text-forest-600" />{t('report.drills')}</h3>
         <p className="mb-3 text-[13px] text-ink-faint">{t('report.drillsHint', { subs: subNames })}</p>
         <div className="grid gap-2">
           {summary.drills.flatMap((d) => d.ids.map((id) => ({ id, sub: d.sub }))).map(({ id, sub }) => <DrillLink key={id} id={id} sub={sub} />)}
@@ -379,11 +373,11 @@ function WeekPlan({ summary, team }: { summary: NjangiSummary; team?: Team }) {
               <p className="mb-3 text-[13px] text-ink-muted">{t('report.planFor', { opp: next.opponent, date: fmtDate(next.date, lang, { weekday: 'long', day: 'numeric', month: 'long' }), intention: t(`common:intentions.${summary.intention}`) })}</p>
               {done ? (
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-forest-600"><Check size={16} />{done.n ? t('report.planDone', { n: done.n, opp: next.opponent }) : t('report.planNone')}</span>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-forest-600"><Check size={16} />{done.n ? t('report.planDone', { count: done.n, opp: next.opponent }) : t('report.planNone')}</span>
                   <Link to={`/app/semaine?w=${done.week}`} className="btn-outline btn-sm min-h-[40px]"><CalendarCheck size={15} />{t('report.openWeek')}</Link>
                 </div>
               ) : (
-                <button type="button" onClick={plan} disabled={busy} className="btn-accent w-full justify-center py-3"><MolaMark size={17} />{t('report.plan')}</button>
+                <button type="button" onClick={plan} disabled={busy} className="btn-sun w-full justify-center py-3"><MolaMark size={18} ball="#0B5D3B" aria-hidden="true" />{t('report.plan')}</button>
               )}
             </>
           ) : (
@@ -401,10 +395,10 @@ function DrillLink({ id, sub }: { id: string; sub: SubKey }) {
   const text = d ? drillText(d, lang) : null
   return (
     <Link to={`/app/exercices/${id}`} className="group flex items-center gap-3 rounded-xl border border-line bg-paper p-2.5 transition hover:border-forest-300">
-      <span className="grid h-11 w-12 shrink-0 place-items-center rounded-lg bg-forest-600 font-display text-[15px] font-semibold text-cream">{id}</span>
+      <span className="grid h-10 w-12 shrink-0 place-items-center rounded-lg bg-forest-50 text-[13px] font-semibold tabular-nums text-forest-700">{id}</span>
       <span className="min-w-0 flex-1">
         <span className="block truncate text-[14px] font-semibold text-ink">{text?.title ?? t('report.drill', { id })}</span>
-        <span className="block truncate text-[12px] text-ink-muted">{t(`sub.${sub}.name`)}{d ? ` · ${t(`common:families.${d.family}`)} · ${d.minutes} ${t('common:misc.minutes')}` : ''}</span>
+        <span className="flex min-w-0 gap-x-2 truncate text-[12.5px] text-ink-muted"><span className="font-medium text-forest-700">{t(`sub.${sub}.name`)}</span>{d && <span className="truncate">{t('report.drillMeta', { family: t(`common:families.${d.family}`), n: d.minutes })}</span>}</span>
       </span>
       <span className="hidden shrink-0 text-[12px] font-semibold text-forest-600 opacity-0 transition group-hover:opacity-100 sm:inline">{t('report.openDrill')}</span>
     </Link>
@@ -423,7 +417,7 @@ function KeyCounts({ result, extras, oppShots, events }: { result: NjangiResult;
     [t('counts.conservation'), pct(result.conservation)],
     [t('counts.progressive'), c.PROG, `${c.LINE} ${t('counts.linesShort')}`],
     [t('counts.final3'), c.FINAL3, `${c.BOX} ${t('counts.boxShort')}`],
-    [t('counts.shots'), `${c.SHOT} (${c.SHOT_IN})`, `${c.GOAL} ${t('counts.goalsShort')}`],
+    [t('counts.shots'), `${c.SHOT} (${c.SHOT_IN})`, t('counts.goalsLine', { count: c.GOAL })],
     [t('counts.fixations'), c.FIX2, `${c.SWITCH} ${t('counts.switchShort')}`],
     [t('counts.losses'), result.losses, `${c.LOSS} ${t('counts.lossOnBall')}`],
     [t('counts.regain5'), c.REGAIN5, `${pct(result.repriseRate)} ${t('counts.ofLosses')}`],
@@ -431,16 +425,15 @@ function KeyCounts({ result, extras, oppShots, events }: { result: NjangiResult;
   return (
     <section className="card card-pad">
       <h2 className="mb-3 font-display text-lg font-semibold text-ink">{t('report.keyCounts')}</h2>
-      <div className="grid grid-cols-2 gap-2">
+      <dl className="border-t border-line">
         {tiles.map(([label, v, hint]) => (
-          <div key={label} className="rounded-xl bg-cream/70 px-3 py-2.5 ring-1 ring-line/70">
-            <div className="truncate text-[12px] font-medium text-ink-muted">{label}</div>
-            <div className="mt-0.5 font-display text-[22px] font-semibold leading-tight tabular-nums text-ink">{v}</div>
-            {hint && <div className="text-[11.5px] leading-snug text-ink-faint">{hint}</div>}
+          <div key={label} className="flex items-baseline justify-between gap-3 border-b border-line/70 py-2.5">
+            <dt className="min-w-0"><span className="block truncate text-[13.5px] font-medium text-ink-soft">{label}</span>{hint && <span className="block truncate text-[12px] tabular-nums text-ink-faint">{hint}</span>}</dt>
+            <dd className="shrink-0 text-right font-display text-[22px] leading-none tabular-nums text-ink">{v}</dd>
           </div>
         ))}
-      </div>
-      <h3 className="mb-1 mt-5 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-ink-muted">{t('report.extras')}</h3>
+      </dl>
+      <h3 className="mb-1 mt-6 font-sans text-[14px] font-semibold tracking-normal text-ink" style={{ fontStretch: '100%' }}>{t('report.extras')}</h3>
       <p className="mb-2 text-[12.5px] text-ink-faint">{t('report.extrasHint')}</p>
       <dl className="divide-y divide-line/70 text-[14px]">
         <Row k={t('report.possessionShare')} v={extras.possessionShare == null ? '-' : fmtPct(extras.possessionShare, lang, 1)} />
@@ -451,7 +444,7 @@ function KeyCounts({ result, extras, oppShots, events }: { result: NjangiResult;
     </section>
   )
 }
-const Row = ({ k, v }: { k: string; v: ReactNode }) => <div className="flex items-center justify-between gap-3 py-2"><dt className="text-ink-soft">{k}</dt><dd className="font-semibold tabular-nums text-ink">{v}</dd></div>
+const Row = ({ k, v }: { k: string; v: ReactNode }) => <div className="flex items-center justify-between gap-3 py-2"><dt className="text-ink-soft">{k}</dt><dd className="text-right font-semibold tabular-nums text-ink">{v}</dd></div>
 
 /* ------------------------------------------------------------------ players */
 
@@ -487,7 +480,7 @@ function Contributions({ events, players, team }: { events: MatchEvent[]; player
               {rows.map((r) => (
                 <tr key={r.pid}>
                   <td className="whitespace-nowrap">
-                    <span className="mr-2 inline-grid h-7 min-w-[28px] place-items-center rounded-md bg-forest-600 px-1 text-[12px] font-bold tabular-nums text-cream">{r.p?.number ?? '?'}</span>
+                    <span className="mr-2.5 inline-block w-6 text-right text-[13px] font-semibold tabular-nums text-ink-muted">{r.p?.number ?? ''}</span>
                     <span className="font-medium text-ink">{r.p?.name ?? '?'}</span>
                   </td>
                   <td className="text-right tabular-nums">{r.pass}</td>
@@ -530,7 +523,7 @@ function CodesTable({ result, events }: { result: NjangiResult; events: MatchEve
                 const def = defFor(c, 'us')
                 return (
                   <tr key={c}>
-                    <td><span className="inline-flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-[3px]" style={{ background: def?.color }} /><span className="font-mono text-[12px] text-ink-muted">{c}</span><span className="text-ink-soft">{t(`common:events.${c}`)}</span></span></td>
+                    <td><span className="inline-flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-[3px] ring-1 ring-inset ring-black/10" style={{ background: def?.color }} /><span className="text-ink-soft">{t(`common:events.${c}`)}</span><span className="text-[12px] text-ink-faint">{c}</span></span></td>
                     <td className="text-right font-semibold tabular-nums">{result.counts[c]}</td>
                     {anyThem && <td className="text-right tabular-nums text-ink-muted">{them.get(c) ?? 0}</td>}
                   </tr>
@@ -538,7 +531,7 @@ function CodesTable({ result, events }: { result: NjangiResult; events: MatchEve
               })}
             </tbody>
           </table>
-          <h3 className="mb-1 mt-4 font-sans text-[13px] font-semibold uppercase tracking-[0.12em] text-ink-muted">{t('report.bases')}</h3>
+          <h3 className="mb-1 mt-5 font-sans text-[14px] font-semibold tracking-normal text-ink" style={{ fontStretch: '100%' }}>{t('report.bases')}</h3>
           <dl className="divide-y divide-line/70 text-[14px]">
             <Row k="PASSES = PASS_OK + PASS_LOST" v={result.passes} />
             <Row k="PERTES = PASS_LOST + LOSS" v={result.losses} />
@@ -558,7 +551,7 @@ function reportText({ match, teamName, result, halves, summary, lang, t }: {
 }) {
   const f = (v: number) => fmtNjangi(v, lang)
   const lines = [
-    `${BRAND.name} · ${t('report.title')}`,
+    `${t('report.title')}, ${BRAND.name}`,
     `${teamName} ${match.scoreUs} - ${match.scoreThem} ${match.opponent}`,
     [match.competition, fmtDate(match.date, lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })].filter(Boolean).join(', '),
     '',
@@ -566,7 +559,7 @@ function reportText({ match, teamName, result, halves, summary, lang, t }: {
     ...SUB_KEYS.map((k) => t('report.txt.sub', { name: t(`sub.${k}.name`), v: f(result.sub[k]) })),
     halves.length > 1 ? t('report.txt.halves', { label: t('report.byHalf'), list: halves.map(({ h, r }) => `${t(`report.halfCol.${h}`)} ${f(r.total)}`).join(', ') }) : '',
     '',
-    t('report.philosophy').toUpperCase(),
+    t('report.philosophy'),
     summary.text,
     '',
     t('report.drills'),

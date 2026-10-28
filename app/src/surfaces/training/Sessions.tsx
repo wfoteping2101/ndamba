@@ -53,7 +53,7 @@ export default function Sessions() {
 
   return (
     <div>
-      <PageHeader eyebrow={t('sessions.eyebrow')} title={t('sessions.title')} subtitle={t('sessions.subtitle')}
+      <PageHeader title={t('sessions.title')} subtitle={t('sessions.subtitle')}
         actions={<>
           <Link to="/app/semaine" className="btn-outline"><CalendarDays size={17} aria-hidden="true" />{t('sessions.toWeek')}</Link>
           <button type="button" className="btn-primary" onClick={() => setCreating(true)}><Plus size={17} aria-hidden="true" />{t('sessions.new')}</button>
@@ -71,7 +71,7 @@ export default function Sessions() {
       ) : (
         <>
           <Tabs className="mb-6 w-full sm:w-max" value={tab} onChange={setTab}
-            tabs={[{ id: 'upcoming', label: `${t('sessions.upcoming')} · ${counts.upcoming}` }, { id: 'past', label: `${t('sessions.past')} · ${counts.past}` }]} />
+            tabs={[{ id: 'upcoming', label: <span className="inline-flex items-baseline gap-1.5">{t('sessions.upcoming')}<span className="tabular-nums opacity-70">{counts.upcoming}</span></span> }, { id: 'past', label: <span className="inline-flex items-baseline gap-1.5">{t('sessions.past')}<span className="tabular-nums opacity-70">{counts.past}</span></span> }]} />
           {groups.length === 0 ? (
             <EmptyState icon={<CalendarDays size={32} />} title={tab === 'upcoming' ? t('sessions.noUpcoming') : t('sessions.noPast')} body={tab === 'upcoming' ? t('sessions.noUpcomingBody') : undefined}
               action={tab === 'upcoming' ? <Link to="/app/semaine" className="btn-primary">{t('week.plan')}</Link> : undefined} />
@@ -81,13 +81,17 @@ export default function Sessions() {
             const load = items.reduce((a, s) => a + sessionLoad(s), 0)
             return (
               <section key={k} className="mb-8">
-                <div className="mb-3 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-line pb-2">
-                  <h2 className="font-display text-xl font-semibold text-ink">{w.title} <span className="text-sm font-normal text-ink-faint">{w.range}</span></h2>
-                  <span className="text-xs text-ink-muted">{t('sessions.weekSummary', { count: items.length, minutes: mins, load })}</span>
+                <div className="mb-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <h2 className="font-display text-xl text-ink">{w.title} <span className="ml-1 font-sans text-sm font-medium text-ink-faint" style={{ fontStretch: '100%' }}>{w.range}</span></h2>
+                  <dl className="flex gap-x-4 text-[12.5px] text-ink-muted">
+                    <div className="flex gap-1"><dt>{t('sessions.sumSessions')}</dt><dd className="font-semibold tabular-nums text-ink">{items.length}</dd></div>
+                    <div className="flex gap-1"><dt>{t('sessions.sumMinutes')}</dt><dd className="font-semibold tabular-nums text-ink">{mins}</dd></div>
+                    <div className="flex gap-1"><dt>{t('sessions.sumLoad')}</dt><dd className="font-semibold tabular-nums text-ink">{load}</dd></div>
+                  </dl>
                 </div>
-                <div className="grid grid-cols-1 gap-3 lg:grid-cols-2">
-                  {items.map((s) => <SessionCard key={s.id} s={s} onDuplicate={() => duplicate(s)} onDelete={() => setToDelete(s)} />)}
-                </div>
+                <ul className="card divide-y divide-line">
+                  {items.map((s) => <li key={s.id} className="min-w-0 first:[&>article]:rounded-t-2xl last:[&>article]:rounded-b-2xl"><SessionCard s={s} onDuplicate={() => duplicate(s)} onDelete={() => setToDelete(s)} /></li>)}
+                </ul>
               </section>
             )
           })}

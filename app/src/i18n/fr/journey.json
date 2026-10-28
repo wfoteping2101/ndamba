@@ -101,7 +101,7 @@
     "nextStep": "La marche suivante (niveau {{n}})",
     "top": "Niveau référence",
     "topBody": "Ce comportement fait la différence et fait mieux jouer les autres. Il s'agit maintenant de le garder sous fatigue et sous pression.",
-    "evidenceNote": "Sous la courbe : {{plus}} observations positives (vert) et {{work}} à travailler (terre), comme preuves en jeu."
+    "evidenceNote": "Sous la courbe, les preuves en jeu : {{plus}} points forts (points pleins) et {{work}} points à travailler (cercles)."
   },
   "timeline": {
     "title": "Le fil du parcours",

@@ -8,8 +8,8 @@ import { levelsAt, obsSkillTones, saveEvaluation, SKILL_KEYS, type JourneyData, 
 
 const LEVELS: Level[] = [1, 2, 3, 4]
 const levelTone: Record<Level, string> = {
-  1: 'border-terra-500 bg-terra-500 text-white',
-  2: 'border-sun-500 bg-sun-500 text-night-900',
+  1: 'border-forest-100 bg-forest-100 text-forest-800',
+  2: 'border-forest-300 bg-forest-300 text-night-900',
   3: 'border-forest-500 bg-forest-500 text-cream',
   4: 'border-forest-700 bg-forest-700 text-cream',
 }
@@ -64,18 +64,18 @@ export function EvaluationModal({ open, onClose, data, onSaved }: { open: boolea
       </div>
       {last && <p className="mb-2 text-[13px] text-ink-muted">{t('evaluate.since', { date: fmtDate(last.date, lang, { day: 'numeric', month: 'long' }) })}</p>}
       <ol className="divide-y divide-line/70 rounded-2xl border border-line">
-        {SKILL_KEYS.map((k, idx) => {
+        {SKILL_KEYS.map((k) => {
           const v = levels[k]
           const ev = evidence[k]
           const before = prev[k]
           return (
             <li key={k} className="px-3 py-3 sm:px-4">
               <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-                <h3 className="font-sans text-[15px] font-semibold tracking-normal text-ink"><span className="mr-2 text-xs tabular-nums text-ink-faint">{idx + 1}</span>{t(`common:skills.${k}`)}</h3>
+                <h3 className="font-sans text-[15px] font-semibold tracking-normal text-ink" style={{ fontStretch: '100%' }}>{t(`common:skills.${k}`)}</h3>
                 <span className="flex items-center gap-2 text-[11.5px] font-semibold">
                   {ev?.plus ? <span className="rounded-full bg-forest-50 px-2 py-0.5 text-forest-700">{t('evaluate.plus', { count: ev.plus })}</span> : null}
-                  {ev?.work ? <span className="rounded-full bg-terra-50 px-2 py-0.5 text-terra-700">{t('evaluate.work', { count: ev.work })}</span> : null}
-                  {before && v && before !== v && <span className={before < v ? 'text-forest-700' : 'text-terra-700'}>{t('evaluate.was', { n: before })}</span>}
+                  {ev?.work ? <span className="rounded-full bg-sand px-2 py-0.5 text-ink">{t('evaluate.work', { count: ev.work })}</span> : null}
+                  {before && v && before !== v && <span className={before < v ? 'text-forest-700' : 'text-clay-700'}>{t('evaluate.was', { n: before })}</span>}
                 </span>
               </div>
               <div className="mt-2 grid grid-cols-4 gap-1.5" role="radiogroup" aria-label={t(`common:skills.${k}`)}>

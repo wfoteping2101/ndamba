@@ -27,8 +27,9 @@ export type FormBand = 'fresh' | 'ok' | 'low'
 export const formBand = (score: number): FormBand => (score >= 20 ? 'fresh' : score >= 15 ? 'ok' : 'low')
 export const FORM_TONE: Record<FormBand, { text: string; bg: string; bar: string }> = {
   fresh: { text: 'text-forest-700', bg: 'bg-forest-50', bar: 'bg-forest-600' },
-  ok: { text: 'text-sun-700', bg: 'bg-sun-50', bar: 'bg-sun-500' },
-  low: { text: 'text-terra-700', bg: 'bg-terra-50', bar: 'bg-terra-500' },
+  ok: { text: 'text-ink-soft', bg: 'bg-sand', bar: 'bg-forest-300' },
+  // a low score is a signal for the medical staff: the red of an alert
+  low: { text: 'text-clay-700', bg: 'bg-clay-50', bar: 'bg-clay-500' },
 }
 
 /* ---------------- load ---------------- */

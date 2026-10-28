@@ -25,7 +25,7 @@ export default function DrillLibrary() {
 
   return (
     <div>
-      <PageHeader eyebrow={book} title={t('library.title')} subtitle={t('library.subtitle')}
+      <PageHeader title={t('library.title')} subtitle={t('library.subtitle')}
         actions={<a href={BOOKS.methode.href} className="btn-outline btn-sm"><BookOpen size={16} aria-hidden="true" />{t('library.readBook', { book })}</a>} />
 
       {DRILLS.length === 0 ? (
@@ -39,7 +39,7 @@ export default function DrillLibrary() {
           <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2 text-sm text-ink-muted">
             <span aria-live="polite">
               {filtered ? t('library.found', { count: list.length }) : t('library.count', { count: DRILLS.length })}
-              {DRILLS.length < TOTAL && <span className="text-ink-faint"> · {t('library.partial', { n: DRILLS.length, total: TOTAL })}</span>}
+              {DRILLS.length < TOTAL && <span className="ml-2 text-ink-faint">{t('library.partial', { n: DRILLS.length, total: TOTAL })}</span>}
             </span>
             {filtered && <button type="button" className="link text-sm" onClick={() => setFilter(EMPTY_FILTER)}>{t('library.showAll')}</button>}
           </div>
@@ -54,7 +54,7 @@ export default function DrillLibrary() {
               <nav aria-label={t('library.family')} className="-mx-4 mb-6 flex gap-1.5 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
                 {FAMILIES.filter((f) => list.some((d) => d.family === f)).map((f) => (
                   <a key={f} href={`#fam-${f}`} className="chip shrink-0 px-3 py-1.5 hover:border-ink-faint">
-                    <span className="font-mono font-bold text-forest-600">{FAMILY_CODE[f]}</span>{t(`common:families.${f}`)}
+                    <span className="font-semibold text-forest-700">{FAMILY_CODE[f]}</span>{t(`common:families.${f}`)}
                   </a>
                 ))}
               </nav>
@@ -63,11 +63,11 @@ export default function DrillLibrary() {
                 if (!items.length) return null
                 return (
                   <section key={f} id={`fam-${f}`} className="mb-10 scroll-mt-32 lg:scroll-mt-6">
-                    <div className="mb-4 flex items-end gap-3 border-b border-line pb-3">
-                      <span className="font-display text-4xl font-semibold leading-none text-terra-500" aria-hidden="true">{FAMILY_CODE[f]}</span>
+                    <div className="mb-4 flex items-start gap-4 border-b border-line pb-3">
+                      <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-forest-600 font-display text-[22px] leading-none text-cream" aria-hidden="true">{FAMILY_CODE[f]}</span>
                       <div className="min-w-0">
-                        <h2 className="font-display text-xl font-semibold text-ink">{t(`common:families.${f}`)} <span className="text-base font-normal text-ink-faint">· {items.length}</span></h2>
-                        <p className="text-sm text-ink-muted">{t(`familyIntro.${f}`)}</p>
+                        <h2 className="flex items-baseline gap-2 font-display text-xl text-ink">{t(`common:families.${f}`)}<span className="font-sans text-[15px] font-semibold tabular-nums text-ink-faint" style={{ fontStretch: '100%' }}>{items.length}</span></h2>
+                        <p className="mt-0.5 max-w-2xl text-[14px] text-ink-muted">{t(`familyIntro.${f}`)}</p>
                       </div>
                     </div>
                     <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3">{items.map((d) => <DrillCard key={d.id} d={d} search={search} />)}</div>
@@ -76,7 +76,7 @@ export default function DrillLibrary() {
               })}
             </>
           )}
-          <p className="mt-10 text-center font-display text-lg italic text-ink-muted">{t('common:brand.motto')}</p>
+          <p className="mt-12 text-center text-[17px] font-semibold italic text-ink-muted">{t('common:brand.motto')}</p>
           <p className="mt-2 text-center text-sm"><Link to="/app/seances" className="link">{t('library.toSessions')}</Link></p>
         </>
       )}

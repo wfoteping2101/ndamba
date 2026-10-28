@@ -34,7 +34,7 @@ export default function BookCover({ book, className, eager = false, sizes }: { b
   }, [])
 
   return (
-    <div className={cx('relative aspect-[2/3] overflow-hidden rounded-[4px_10px_10px_4px] bg-sand shadow-lift ring-1 ring-black/5', className)}>
+    <div className={cx('relative aspect-[2/3] overflow-hidden rounded-[4px_10px_10px_4px] bg-sand shadow-[0_12px_28px_-14px_rgba(6,58,37,.5)] ring-1 ring-black/5', className)}>
       {failed ? (
         <TypeFallback book={book} />
       ) : (
@@ -54,18 +54,18 @@ function TypeFallback({ book }: { book: BookId }) {
   const { t, lang } = useSiteT()
   const tome1 = book === 'tome1'
   return (
-    <div aria-hidden="true" className={cx('absolute inset-0 flex flex-col items-center px-[9%] py-[11%] text-center [container-type:inline-size]', tome1 ? 'bg-terra-700 text-cream' : 'bg-forest-700 text-cream')}>
+    <div aria-hidden="true" className={cx('absolute inset-0 flex flex-col items-center px-[9%] py-[11%] text-center [container-type:inline-size]', tome1 ? 'bg-forest-800 text-cream' : 'bg-forest-700 text-cream')}>
       <div className="absolute inset-[4%] rounded-[2px] border border-cream/20" />
-      <span className="text-[length:5.2cqw] font-bold uppercase tracking-[0.24em] text-sun-300">
-        {tome1 ? `${SERIES.name} · ${t('shelf.tome', { n: 1 })}` : t('library.methode.label')}
+      <span className="text-[length:6cqw] font-semibold text-sun-300">
+        {tome1 ? `${SERIES.name}, ${t('shelf.tome', { n: 1 }).toLowerCase()}` : t('library.methode.label')}
       </span>
-      <span className="mt-[9%] font-display text-[length:13cqw] font-semibold leading-[1.02] tracking-tight">
+      <span className="mt-[9%] font-display text-[length:12cqw] leading-[1.04]">
         {tome1 ? SERIES.tomes[0]?.title : BOOKS.methode.title[lang]}
       </span>
-      <span className="mt-[6%] font-display text-[length:6cqw] italic leading-snug text-cream/80">
+      <span className="mt-[6%] text-[length:6cqw] italic leading-snug text-cream/80">
         {tome1 ? SERIES.heroes : BOOKS.methode.subtitle[lang]}
       </span>
-      <span className="mt-auto text-[length:4.6cqw] font-semibold uppercase tracking-[0.22em] text-cream/75">{t('library.cover.author')}</span>
+      <span className="mt-auto text-[length:5.4cqw] font-semibold text-cream/75">{t('library.cover.author')}</span>
     </div>
   )
 }

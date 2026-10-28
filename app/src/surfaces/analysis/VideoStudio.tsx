@@ -12,7 +12,7 @@ import type { EventCode, Match, VideoProject, VideoTag } from '../../lib/types'
 import { computeNjangi, fmtNjangi, njangiLabel } from '../../lib/njangi'
 import { EmptyState, Modal } from '../../ui'
 import { SubBars } from './components/charts'
-import { defFor, GROUP_ORDER, isTyping, NOTE_DEF, shortKey, tagFromKey, TAGS, type GroupId, type TagDef } from './components/codes'
+import { defFor, GROUP_ORDER, isTyping, markInk, NOTE_DEF, shortKey, tagFromKey, TAGS, type GroupId, type TagDef } from './components/codes'
 import { DRAW_COLORS, DrawLayer, snapshot, type DrawColor, type Shape, type Tool } from './components/Telestrator'
 import { slug, useMedia } from './components/data'
 
@@ -113,7 +113,7 @@ function Studio({ project }: { project: VideoProject }) {
     const id = uid('vt_')
     if (def === 'NOTE') {
       const tag: VideoTag = { id, t: at, code: 'NOTE', side: 'us', ...extra }
-      await mutate((l) => [...l, tag]); setSelected(id); flash(`${t('short.NOTE')} · ${fmtT(at)}`)
+      await mutate((l) => [...l, tag]); setSelected(id); flash(`${t('short.NOTE')}, ${fmtT(at)}`)
       return tag
     }
     let code: EventCode = def.code
@@ -126,7 +126,7 @@ function Studio({ project }: { project: VideoProject }) {
     const kids: VideoTag[] = code === def.code ? (def.implies ?? []).map((c) => ({ id: `${id}~${c}`, t: at, code: c, side: def.side })) : []
     await mutate((l) => [...l, parent, ...kids])
     setSelected(id)
-    flash(`${t(`short.${shortKey(code, def.side)}`)} · ${fmtT(at)}`)
+    flash(`${t(`short.${shortKey(code, def.side)}`)}, ${fmtT(at)}`)
     return parent
   }, [cur, tags, mutate, flash, t])
 
@@ -268,7 +268,7 @@ function Studio({ project }: { project: VideoProject }) {
       <div className="space-y-3">
         {GROUP_ORDER.map((g) => (
           <div key={g}>
-            <div className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-muted">{t(`groups.${g}`)}</div>
+            <div className="mb-1.5 text-[13px] font-semibold text-ink-muted">{t(`groups.${g}`)}</div>
             <div className="flex flex-wrap gap-1.5">
               {TAGS.filter((x) => x.group === g).map((x) => {
                 const Icon = x.icon
@@ -276,7 +276,7 @@ function Studio({ project }: { project: VideoProject }) {
                 return (
                   <button key={x.key} type="button" disabled={!src} onClick={() => addTag(x)} title={`${t(`help.${x.key}`)} (${x.kbd})`}
                     className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-line bg-paper py-1.5 pl-1.5 pr-3 text-[13.5px] font-semibold text-ink transition hover:border-ink-faint active:scale-[0.98] disabled:opacity-45">
-                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg text-white" style={{ background: x.color }}><Icon size={16} className={x.side === 'us' && /text-ink/.test(x.btn) ? 'text-ink' : 'text-white'} /></span>
+                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg ring-1 ring-inset ring-black/5" style={{ background: x.color }}><Icon size={16} className={markInk(x.color)} /></span>
                     {t(`short.${x.key}`)}
                     {n > 0 && <span className="text-[12px] font-medium tabular-nums text-ink-faint">×{n}</span>}
                     {wide && <kbd className="ml-0.5 rounded border border-line px-1 font-sans text-[10.5px] font-semibold leading-4 text-ink-faint">{x.kbd}</kbd>}
@@ -287,7 +287,7 @@ function Studio({ project }: { project: VideoProject }) {
           </div>
         ))}
         <div>
-          <div className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-muted">{t('groups.note')}</div>
+          <div className="mb-1.5 text-[13px] font-semibold text-ink-muted">{t('groups.note')}</div>
           <form className="flex gap-2" onSubmit={(e) => { e.preventDefault(); addNote() }}>
             <label className="sr-only" htmlFor="nj-note">{t('video.notePh')}</label>
             <input id="nj-note" ref={noteInput} className="input min-w-0 flex-1" value={note} onChange={(e) => setNote(e.target.value)} placeholder={t('video.notePh')} disabled={!src} />
@@ -337,7 +337,7 @@ function Studio({ project }: { project: VideoProject }) {
               <li key={x.id} className={cx('flex items-center gap-2 rounded-lg px-1 py-1.5', selected === x.id && 'bg-forest-50')}>
                 <button type="button" onClick={() => goTo(x)} className="flex min-h-[44px] min-w-0 flex-1 items-center gap-2.5 text-left" aria-label={`${t('video.seek')} ${fmtT(x.t)}`}>
                   <span className="w-12 shrink-0 text-[13px] font-semibold tabular-nums text-ink-muted">{fmtT(x.t)}</span>
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg" style={{ background: def?.color ?? NOTE_DEF.color }}><Icon size={15} className={!def || /text-ink/.test(def.btn) ? 'text-ink' : 'text-white'} /></span>
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg ring-1 ring-inset ring-black/5" style={{ background: def?.color ?? NOTE_DEF.color }}><Icon size={15} className={markInk(def?.color ?? NOTE_DEF.color)} /></span>
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-[14px] font-semibold text-ink">{t(`short.${shortKey(x.code, x.side)}`)}{kids.length > 0 && <span className="ml-1.5 text-[11.5px] font-normal text-ink-faint">+ {kids.map((k) => t(`short.${shortKey(k.code, k.side)}`)).join(', ')}</span>}</span>
                     {x.note && <span className="block truncate text-[12.5px] text-ink-muted">{x.note}</span>}
@@ -364,14 +364,13 @@ function Studio({ project }: { project: VideoProject }) {
         </div>
       </div>
       <div className="mb-5">
-        <div className="eyebrow mb-1">{t('video.title')}</div>
         <TitleEditor key={project.id} value={project.title} label={t('video.rename')} onSave={(v2) => db.videos.update(project.id, { title: v2 })} />
         <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-[13px] text-ink-muted">
           <label className="inline-flex items-center gap-2">
             <span>{t('video.linkedMatch')}</span>
             <select className="input min-h-[40px] w-auto py-1.5 text-[13px]" value={project.matchId ?? ''} onChange={(e) => db.videos.update(project.id, { matchId: e.target.value || undefined })}>
               <option value="">{t('video.noMatch')}</option>
-              {[...matches].sort((a, b) => b.date.localeCompare(a.date)).map((m) => <option key={m.id} value={m.id}>{fmtDate(m.date, lang, { day: 'numeric', month: 'short' })} · {t('common:app.vs')} {m.opponent}</option>)}
+              {[...matches].sort((a, b) => b.date.localeCompare(a.date)).map((m) => <option key={m.id} value={m.id}>{fmtDate(m.date, lang, { day: 'numeric', month: 'short' })}, {t('common:app.vs')} {m.opponent}</option>)}
             </select>
           </label>
           {linked && <Link to={`/app/analyse/rapport/${linked.id}`} className="link inline-flex min-h-[40px] items-center gap-1"><ChartLine size={14} />{t('video.openReport')}</Link>}
@@ -392,7 +391,7 @@ function Studio({ project }: { project: VideoProject }) {
       )}
 
       {preview?.drawing && (
-        <Modal open onClose={() => setPreview(null)} title={`${t(`short.${shortKey(preview.code, preview.side)}`)} · ${fmtT(preview.t)}`} wide
+        <Modal open onClose={() => setPreview(null)} title={`${t(`short.${shortKey(preview.code, preview.side)}`)}, ${fmtT(preview.t)}`} wide
           footer={<>
             <button type="button" className="btn-ghost" onClick={() => { mutate((l) => l.map((x) => (x.id === preview.id ? { ...x, drawing: undefined } : x))); setPreview(null) }}><Trash2 size={16} />{t('video.removeImage')}</button>
             <button type="button" className="btn-outline" onClick={() => download(`${slug(BRAND.name)}-${slug(project.title)}-${Math.round(preview.t)}s.jpg`, dataUrlBlob(preview.drawing!), 'image/jpeg')}><Download size={16} />{t('video.downloadImage')}</button>
@@ -462,7 +461,7 @@ function Timeline({ tags, span, cur, selected, onSeek, onPick }: { tags: VideoTa
         {tags.map((x) => {
           const def = defFor(x.code, x.side)
           return (
-            <button key={x.id} type="button" data-marker="1" onClick={() => onPick(x)} aria-label={`${t(`short.${shortKey(x.code, x.side)}`)} ${fmtT(x.t)}`} title={`${t(`short.${shortKey(x.code, x.side)}`)} · ${fmtT(x.t)}`}
+            <button key={x.id} type="button" data-marker="1" onClick={() => onPick(x)} aria-label={`${t(`short.${shortKey(x.code, x.side)}`)} ${fmtT(x.t)}`} title={`${t(`short.${shortKey(x.code, x.side)}`)}, ${fmtT(x.t)}`}
               className={cx('absolute top-1 h-7 w-[5px] -translate-x-1/2 rounded-full', selected === x.id && 'ring-2 ring-cream')} style={{ left: pct(x.t), background: def?.color ?? NOTE_DEF.color }} />
           )
         })}

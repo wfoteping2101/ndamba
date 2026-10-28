@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Lightbulb, X } from 'lucide-react'
+import { X } from 'lucide-react'
+import { MolaMark } from '../../../ui/brand'
 import { useT } from '../../../i18n'
 import { db } from '../../../lib/db'
 import { useLiveQuery } from '../../../lib/hooks'
@@ -11,7 +12,8 @@ const KEY = 'mola.dismissed'
 const readDismissed = (): string[] => { try { const v = JSON.parse(localStorage.getItem(KEY) || '{}'); return v.d === todayISO() ? v.ids : [] } catch { return [] } }
 const writeDismissed = (ids: string[]) => { try { localStorage.setItem(KEY, JSON.stringify({ d: todayISO(), ids })) } catch { /* private mode */ } }
 
-/** Mola's ideas from the person's real data (next match without a week, convocation, last report), one tap to do it. */
+/** What Mola noticed in the person's real data (a match without its week, a call-up to write, a report to read),
+ *  offered like an assistant who leans in: one sentence, one yes. */
 export default function Suggestions({ compact = false }: { compact?: boolean }) {
   const { t, lang } = useT('mola')
   const { team } = useSession()
@@ -25,18 +27,23 @@ export default function Suggestions({ compact = false }: { compact?: boolean }) 
   if (!shown.length) return null
   const dismiss = (id: string) => { const ids = [...dismissed, id]; setDismissed(ids); writeDismissed(ids) }
   return (
-    <div className={compact ? 'space-y-2 pt-1' : 'space-y-2 pt-1 sm:pl-10'}>
-      {shown.map((s) => (
-        <div key={s.id} className="mola-in flex items-start gap-2.5 rounded-2xl border border-terra-100 bg-terra-50/70 px-3 py-2.5">
-          <Lightbulb size={17} className="mt-0.5 shrink-0 text-terra-600" aria-hidden="true" />
-          <div className="min-w-0 flex-1">
-            <div className="text-[10.5px] font-semibold uppercase tracking-[0.14em] text-terra-700">{t('pro.eyebrow')}</div>
-            <p className="mt-0.5 text-[14px] leading-snug text-ink">{s.text}</p>
-            <button type="button" className="btn-primary btn-sm mt-2 min-h-[40px]" onClick={() => { dismiss(s.id); askMola(s.request, { intent: s.intent, slots: s.slots }) }}>{s.cta}</button>
-          </div>
-          <button type="button" className="-mr-1 -mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full text-ink-muted hover:bg-terra-100" aria-label={t('pro.dismiss')} onClick={() => dismiss(s.id)}><X size={16} /></button>
+    <div className={compact ? '' : 'sm:pl-11'}>
+      <div className="overflow-hidden rounded-[14px] border border-forest-100 bg-forest-50/50">
+        <div className="flex items-center gap-1.5 px-3.5 pt-2.5 text-[13px] font-semibold text-forest-700">
+          <MolaMark size={15} aria-hidden="true" />{t('pro.eyebrow')}
         </div>
-      ))}
+        <ul className="divide-y divide-forest-100">
+          {shown.map((s) => (
+            <li key={s.id} className="mola-in flex items-start gap-2 px-3.5 py-2.5">
+              <div className="min-w-0 flex-1">
+                <p className="text-[14.5px] leading-snug text-ink">{s.text}</p>
+                <button type="button" className="btn-primary btn-sm mt-2 min-h-[40px] px-3.5" onClick={() => { dismiss(s.id); askMola(s.request, { intent: s.intent, slots: s.slots }) }}>{s.cta}</button>
+              </div>
+              <button type="button" className="-mr-1.5 grid h-10 w-10 shrink-0 place-items-center rounded-full text-ink-muted hover:bg-forest-100 hover:text-ink" aria-label={t('pro.dismiss')} onClick={() => dismiss(s.id)}><X size={16} aria-hidden="true" /></button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }

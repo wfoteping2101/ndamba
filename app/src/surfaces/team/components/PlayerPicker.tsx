@@ -59,7 +59,7 @@ export function PlayerPicker({ open, onClose, slotId, format, formation, lineup,
       {players.length === 0 ? <p className="py-4 text-sm text-ink-muted">{t('picker.noPlayers')}</p> : (
         <div className="-mx-2">
           {suggested.length > 0 && <>
-            <h3 className="mb-1 px-2 text-xs font-semibold text-terra-600">{t('picker.suggested')}</h3>
+            <h3 className="mb-1 px-2 font-sans text-[13px] font-semibold tracking-normal text-forest-700">{t('picker.suggested')}</h3>
             <ul className="mb-3 space-y-0.5">{suggested.map(row)}</ul>
           </>}
           {others.length > 0 && <>

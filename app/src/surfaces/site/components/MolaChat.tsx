@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Check, CalendarDays, LoaderCircle, RotateCcw, SendHorizontal } from 'lucide-react'
-import { MolaMark } from '../../../ui/brand'
+import { MolaAvatar } from '../../../ui/brand'
 import { useT } from '../../../i18n'
 import { cx } from '../../../lib/util'
 
@@ -44,14 +44,14 @@ export default function MolaChat({ onOpen }: { onOpen?: () => void }) {
   const working = phase >= 2 && phase < 7
 
   return (
-    <div ref={ref} className="overflow-hidden rounded-[28px] border border-line bg-paper shadow-lift">
+    <div ref={ref} className="overflow-hidden rounded-panel border border-line bg-paper">
       {/* header */}
-      <div className="flex items-center gap-3 border-b border-line px-4 py-3">
-        <span className="grid h-10 w-10 place-items-center rounded-full bg-forest-600 text-sun-300"><MolaMark size={18} /></span>
+      <div className="flex items-center gap-3 border-b border-line px-4 py-3.5">
+        <MolaAvatar size={40} className="shrink-0" />
         <div className="min-w-0 flex-1">
-          <div className="font-display text-[17px] font-semibold leading-tight text-ink">{t('landing.mola.chat.name')}</div>
+          <div className="font-display text-[17px] leading-tight text-ink">{t('landing.mola.chat.name')}</div>
           <div className="flex items-center gap-1.5 text-xs text-ink-muted">
-            <span className={cx('h-1.5 w-1.5 rounded-full', working ? 'bg-sun-500 motion-safe:animate-pulse' : 'bg-ok-500')} />
+            <span className={cx('h-1.5 w-1.5 rounded-full', working ? 'bg-sun-500' : 'bg-ok-500')} />
             {phase >= 7 ? t('landing.mola.chat.statusDone') : t('landing.mola.chat.status')}
           </div>
         </div>
@@ -63,14 +63,14 @@ export default function MolaChat({ onOpen }: { onOpen?: () => void }) {
       </div>
 
       {/* conversation */}
-      <div className="min-h-[360px] space-y-3 bg-cream/60 px-4 py-5 sm:min-h-[380px]" aria-live="polite">
+      <div className="min-h-[360px] space-y-3 bg-cream px-4 py-5 sm:min-h-[380px]" aria-live="polite">
         {phase >= 1 && (
           <div className="flex justify-end">
             <div className="max-w-[85%] rounded-2xl rounded-br-md bg-forest-600 px-4 py-2.5 text-[15px] text-cream">{request}</div>
           </div>
         )}
         {phase >= 2 && (
-          <div className="max-w-[92%] rounded-2xl rounded-bl-md border border-line bg-paper px-4 py-3 shadow-card">
+          <div className="max-w-[92%] rounded-2xl rounded-bl-md border border-line bg-paper px-4 py-3">
             <p className="text-[15px] text-ink">{t('landing.mola.chat.ack')}</p>
             <ul className="mt-2.5 space-y-2">
               {STEPS.map((s, i) => {
@@ -90,16 +90,16 @@ export default function MolaChat({ onOpen }: { onOpen?: () => void }) {
           </div>
         )}
         {phase >= 7 && (
-          <div className="max-w-[92%] rounded-2xl rounded-bl-md border border-line bg-paper px-4 py-3 shadow-card">
+          <div className="max-w-[92%] rounded-2xl rounded-bl-md border border-line bg-paper px-4 py-3">
             <p className="text-[15px] text-ink">{t('landing.mola.chat.done')}</p>
-            <button type="button" onClick={onOpen} className="btn-primary btn-sm mt-2.5 min-h-[40px]"><CalendarDays size={15} />{t('landing.mola.chat.open')}</button>
+            <button type="button" onClick={onOpen} className="btn-primary btn-sm mt-3 min-h-[40px]"><CalendarDays size={15} strokeWidth={1.75} />{t('landing.mola.chat.open')}</button>
           </div>
         )}
       </div>
 
       {/* composer */}
       <div className="flex items-center gap-2 border-t border-line bg-paper px-3 py-3">
-        <div className={cx('min-h-[44px] flex-1 truncate rounded-2xl border border-line bg-white px-3.5 py-2.5 text-[15px]', phase === 0 && typed > 0 ? 'text-ink' : 'text-ink-faint')} aria-hidden="true">
+        <div className={cx('min-h-[44px] flex-1 truncate rounded-control border border-line bg-white px-3.5 py-2.5 text-[15px]', phase === 0 && typed > 0 ? 'text-ink' : 'text-ink-faint')} aria-hidden="true">
           {phase === 0 && typed > 0 ? <>{request.slice(0, typed)}<span className="ml-px inline-block h-4 w-[2px] translate-y-[3px] bg-forest-600 motion-safe:animate-pulse" /></> : t('landing.mola.chat.input')}
         </div>
         <span className={cx('grid h-11 w-11 shrink-0 place-items-center rounded-full', phase === 0 && typed >= request.length ? 'bg-forest-600 text-cream' : 'bg-sand text-ink-faint')} aria-hidden="true"><SendHorizontal size={18} /></span>

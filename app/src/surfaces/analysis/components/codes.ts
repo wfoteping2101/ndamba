@@ -20,9 +20,9 @@ export interface TagDef {
   codes: string[]
   keys: string[]
   icon: LucideIcon
-  /** tailwind classes for the big dark-screen button */
+  /** tailwind classes for the big dark-screen button (possession green, danger chalk, the goal gold, fixation mint, losses kola red) */
   btn: string
-  /** a hex colour for dots, markers and chart marks */
+  /** a hex colour for dots, markers and chart marks (readable on chalk and on night) */
   color: string
   /** negative event (a loss of the ball) */
   negative?: boolean
@@ -40,24 +40,33 @@ const digit = (n: number) => [`Digit${n}`, `Numpad${n}`]
 export const TAGS: TagDef[] = [
   d('PASS_OK', 'PASS_OK', 'us', 'possession', '1', digit(1), [], ArrowRight, 'bg-forest-500 text-cream', '#13804F'),
   d('PASS_LOST', 'PASS_LOST', 'us', 'possession', '2', digit(2), [], X, 'bg-clay-500 text-white', '#D7263D', true),
-  d('PROG', 'PROG', 'us', 'possession', '3', digit(3), [], ArrowUpRight, 'bg-[#3B8C66] text-white', '#3B8C66'),
-  d('LINE', 'LINE', 'us', 'possession', '4', digit(4), [], ChevronsRight, 'bg-[#3B8C66] text-white', '#3B8C66'),
-  d('FINAL3', 'FINAL3', 'us', 'danger', '5', digit(5), [], Flag, 'bg-sun-500 text-ink', '#F5B700'),
-  d('BOX', 'BOX', 'us', 'danger', '6', digit(6), [], SquareDashed, 'bg-sun-500 text-ink', '#F5B700'),
-  d('SHOT', 'SHOT', 'us', 'danger', '7', digit(7), [], Crosshair, 'bg-sun-300 text-ink', '#D29C00'),
-  d('SHOT_IN', 'SHOT_IN', 'us', 'danger', '8', digit(8), [], Target, 'bg-sun-300 text-ink', '#D29C00', false, { implies: ['SHOT'] }),
-  d('GOAL', 'GOAL', 'us', 'danger', '9', digit(9), [], Goal, 'bg-cream text-ink ring-4 ring-inset ring-sun-500', '#F5B700', false, { implies: ['SHOT', 'SHOT_IN'] }),
-  d('FIX2', 'FIX2', 'us', 'fixation', 'F', [], ['f'], Magnet, 'bg-terra-500 text-white', '#BF5A2E'),
-  d('SWITCH', 'SWITCH', 'us', 'fixation', 'S', [], ['s'], ArrowLeftRight, 'bg-terra-500 text-white', '#BF5A2E'),
+  d('PROG', 'PROG', 'us', 'possession', '3', digit(3), [], ArrowUpRight, 'bg-forest-600 text-cream ring-1 ring-inset ring-forest-300/35', '#0B5D3B'),
+  d('LINE', 'LINE', 'us', 'possession', '4', digit(4), [], ChevronsRight, 'bg-forest-600 text-cream ring-1 ring-inset ring-forest-300/35', '#0B5D3B'),
+  d('FINAL3', 'FINAL3', 'us', 'danger', '5', digit(5), [], Flag, 'bg-cream text-ink', '#C9D1C5'),
+  d('BOX', 'BOX', 'us', 'danger', '6', digit(6), [], SquareDashed, 'bg-cream text-ink', '#C9D1C5'),
+  d('SHOT', 'SHOT', 'us', 'danger', '7', digit(7), [], Crosshair, 'bg-cream text-ink', '#94A198'),
+  d('SHOT_IN', 'SHOT_IN', 'us', 'danger', '8', digit(8), [], Target, 'bg-cream text-ink', '#94A198', false, { implies: ['SHOT'] }),
+  d('GOAL', 'GOAL', 'us', 'danger', '9', digit(9), [], Goal, 'bg-sun-500 text-ink', '#F5B700', false, { implies: ['SHOT', 'SHOT_IN'] }),
+  d('FIX2', 'FIX2', 'us', 'fixation', 'F', [], ['f'], Magnet, 'bg-forest-300 text-night-900', '#73B391'),
+  d('SWITCH', 'SWITCH', 'us', 'fixation', 'S', [], ['s'], ArrowLeftRight, 'bg-forest-300 text-night-900', '#73B391'),
   d('LOSS', 'LOSS', 'us', 'transition', 'L', [], ['l'], Unlink, 'bg-clay-600 text-white', '#B51D31', true),
-  d('REGAIN5', 'REGAIN5', 'us', 'transition', 'K', [], ['k'], Timer, 'bg-forest-100 text-forest-800', '#73B391'),
-  d('REGAIN', 'REGAIN', 'us', 'transition', 'R', [], ['r'], Hand, 'bg-forest-100 text-forest-800', '#73B391'),
-  d('OPP_SHOT', 'SHOT', 'them', 'opponent', 'A', [], ['a'], Crosshair, 'bg-night-700 text-cream ring-1 ring-inset ring-white/20', '#94A198'),
-  d('OPP_GOAL', 'GOAL', 'them', 'opponent', 'B', [], ['b'], ShieldAlert, 'bg-night-700 text-cream ring-2 ring-inset ring-clay-300', '#E8798A', false, { implies: ['SHOT'] }),
-  d('OPP_PASS', 'PASS_OK', 'them', 'opponent', 'Q', [], ['q'], ArrowRight, 'bg-night-700 text-cream/90 ring-1 ring-inset ring-white/15', '#94A198', false, { optional: true }),
-  d('OPP_PASS_LOST', 'PASS_LOST', 'them', 'opponent', 'W', [], ['w'], X, 'bg-night-700 text-cream/90 ring-1 ring-inset ring-white/15', '#94A198', false, { optional: true }),
-  d('OPP_FINAL3', 'FINAL3', 'them', 'opponent', 'E', [], ['e'], Flag, 'bg-night-700 text-cream/90 ring-1 ring-inset ring-white/15', '#94A198', false, { optional: true }),
+  d('REGAIN5', 'REGAIN5', 'us', 'transition', 'K', [], ['k'], Timer, 'bg-night-700 text-forest-100 ring-2 ring-inset ring-forest-300/60', '#CBE5D6'),
+  d('REGAIN', 'REGAIN', 'us', 'transition', 'R', [], ['r'], Hand, 'bg-night-700 text-forest-100 ring-2 ring-inset ring-forest-300/60', '#CBE5D6'),
+  d('OPP_SHOT', 'SHOT', 'them', 'opponent', 'A', [], ['a'], Crosshair, 'bg-white/[0.03] text-cream/90 ring-1 ring-inset ring-white/20', '#5D6C63'),
+  d('OPP_GOAL', 'GOAL', 'them', 'opponent', 'B', [], ['b'], ShieldAlert, 'bg-white/[0.03] text-cream ring-2 ring-inset ring-clay-300/80', '#E8798A', false, { implies: ['SHOT'] }),
+  d('OPP_PASS', 'PASS_OK', 'them', 'opponent', 'Q', [], ['q'], ArrowRight, 'bg-white/[0.03] text-cream/80 ring-1 ring-inset ring-white/15', '#5D6C63', false, { optional: true }),
+  d('OPP_PASS_LOST', 'PASS_LOST', 'them', 'opponent', 'W', [], ['w'], X, 'bg-white/[0.03] text-cream/80 ring-1 ring-inset ring-white/15', '#5D6C63', false, { optional: true }),
+  d('OPP_FINAL3', 'FINAL3', 'them', 'opponent', 'E', [], ['e'], Flag, 'bg-white/[0.03] text-cream/80 ring-1 ring-inset ring-white/15', '#5D6C63', false, { optional: true }),
 ]
+
+/** Ink or chalk for an icon drawn on a tag's marker colour. */
+export function markInk(color?: string) {
+  const m = /^#([0-9a-f]{6})$/i.exec(color ?? '')
+  if (!m) return 'text-ink'
+  const n = parseInt(m[1], 16)
+  const lum = (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255
+  return lum > 0.55 ? 'text-ink' : 'text-white'
+}
 
 export const NOTE_DEF = { icon: StickyNote, color: '#ECEFE8', kbd: 'N' }
 

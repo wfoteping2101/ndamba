@@ -1,7 +1,7 @@
 // Small UI pieces of the home page and the player space.
 import { useCallback, useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { PartyPopper, Shirt, X } from 'lucide-react'
+import { Award, X } from 'lucide-react'
 import { Field } from '../../../ui'
 import { useT } from '../../../i18n'
 import { createTeam } from '../../../lib/actions'
@@ -43,8 +43,8 @@ export function LevelUpBanner({ level, onClose }: { level: number | null; onClos
   if (level === null) return null
   return (
     <div className="fixed inset-x-0 top-16 z-50 flex justify-center px-4 lg:top-6" role="status">
-      <div className="flex max-w-md items-center gap-3 rounded-2xl border border-sun-300 bg-sun-50 px-4 py-3 shadow-lift">
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sun-500 text-ink"><PartyPopper size={20} aria-hidden="true" /></span>
+      <div className="flex max-w-md items-center gap-3 rounded-[14px] border border-line bg-paper px-4 py-3 shadow-lift">
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-night-800 text-sun-300"><Award size={20} strokeWidth={1.75} aria-hidden="true" /></span>
         <div className="min-w-0 flex-1">
           <div className="text-sm font-semibold text-ink">{t('levelUp.title', { n: level + 1 })}</div>
           <div className="text-sm text-ink-soft">{t('levelUp.body', { name: t(`levels.${level}.name`) })}</div>
@@ -75,13 +75,10 @@ export function CreateTeamCard({ compact = false, senior = false, className }: {
     try { await createTeam({ name: name.trim(), ageGroup: age, format }) } finally { setBusy(false) }
   }
   return (
-    <form onSubmit={submit} className={cx('card card-pad', className)}>
-      <div className="flex items-start gap-3">
-        <div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-forest-600 text-cream"><Shirt size={20} aria-hidden="true" /></div>
-        <div className="min-w-0 flex-1">
-          <h2 className="font-display text-lg font-semibold text-ink">{senior ? t('perf.team.title') : compact ? t('team.playerTitle') : t('team.title')}</h2>
-          <p className="text-sm text-ink-muted">{senior ? t('perf.team.body') : compact ? t('team.playerBody') : t('team.body')}</p>
-        </div>
+    <form onSubmit={submit} className={cx('rounded-[22px] border border-line bg-paper p-5 sm:p-6', className)}>
+      <div className="min-w-0">
+        <h2 className="text-[20px] text-ink">{senior ? t('perf.team.title') : compact ? t('team.playerTitle') : t('team.title')}</h2>
+        <p className="mt-1 max-w-xl text-[14.5px] text-ink-muted">{senior ? t('perf.team.body') : compact ? t('team.playerBody') : t('team.body')}</p>
       </div>
       {open ? (
         <>
@@ -99,15 +96,25 @@ export function CreateTeamCard({ compact = false, senior = false, className }: {
   )
 }
 
+/* ---------- match-week labels ---------- */
+
+/** "MD-3, durée" (common:md) as its code and its name, so the code can sit in a tag and the name in the text. */
+export function mdParts(t: (k: string) => string, md: string) {
+  const full = t(`common:md.${md}`)
+  const [code, ...rest] = full.split(/\s*[,·]\s*/)
+  const name = rest.join(' ')
+  return { code: md === 'youth' ? full : code, name: name ? name.charAt(0).toUpperCase() + name.slice(1) : '', full }
+}
+
 /* ---------- section heading ---------- */
 
 export function SectionHead({ id, headingId, eyebrow, title, action, children }: { id?: string; headingId?: string; eyebrow?: string; title: string; action?: ReactNode; children?: ReactNode }) {
   return (
-    <div id={id} className="mb-4 flex scroll-mt-24 flex-wrap items-end justify-between gap-x-4 gap-y-2">
+    <div id={id} className="mb-5 flex scroll-mt-24 flex-wrap items-end justify-between gap-x-4 gap-y-2">
       <div className="min-w-0">
-        {eyebrow && <div className="eyebrow mb-1">{eyebrow}</div>}
-        <h2 id={headingId} className="font-display text-[22px] font-semibold leading-tight text-ink sm:text-2xl">{title}</h2>
-        {children && <p className="mt-1 max-w-2xl text-sm text-ink-muted">{children}</p>}
+        {eyebrow && <div className="mb-1 text-[13.5px] font-semibold text-forest-600 first-letter:uppercase">{eyebrow}</div>}
+        <h2 id={headingId} className="text-[24px] leading-tight text-ink sm:text-[28px]">{title}</h2>
+        {children && <p className="mt-1.5 max-w-2xl text-[15px] leading-relaxed text-ink-muted">{children}</p>}
       </div>
       {action}
     </div>

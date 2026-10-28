@@ -53,13 +53,11 @@ export default function Roster() {
   return (
     <div>
       {/* Team plate */}
-      <section className="relative mb-6 overflow-hidden rounded-[26px] bg-forest-600 text-cream shadow-card">
-        <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 opacity-[0.07] sm:block" aria-hidden="true"
-          style={{ background: 'repeating-linear-gradient(90deg, #F6F7F2 0 2px, transparent 2px 46px)' }} />
-        <div className="relative grid gap-6 p-5 sm:p-7 lg:grid-cols-[1fr_260px] lg:items-center">
+      <section className="relative mb-8 overflow-hidden rounded-[22px] bg-forest-600 text-cream [&_:focus-visible]:outline-cream">
+        <div className="relative grid gap-6 p-5 sm:p-7 lg:grid-cols-[1fr_250px] lg:items-center">
           <div className="min-w-0">
-            <div className="mb-2 flex flex-wrap items-center gap-2">
-              <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-sun-300">{t('roster.eyebrow')}</span>
+            <div className="mb-1 flex flex-wrap items-center gap-2">
+              <span className="text-[13px] font-semibold text-cream/70">{t('roster.eyebrow')}</span>
               {teams.length > 1 && (
                 <label className="ml-auto inline-flex items-center gap-2 text-xs text-cream/80">
                   <span className="sr-only">{t('roster.switchTeam')}</span>
@@ -70,18 +68,18 @@ export default function Roster() {
                 </label>
               )}
             </div>
-            <h1 className="font-display text-[30px] font-semibold leading-[1.08] sm:text-[40px]">{team.name}</h1>
+            <h1 className="font-display text-[30px] leading-[1.06] sm:text-[42px]">{team.name}</h1>
             <div className="mt-3 flex flex-wrap gap-1.5">
               {[team.ageGroup, t('formatLabel', { n: team.format }), team.formation].map((x) => (
-                <span key={x} className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[13px] font-semibold">{x}</span>
+                <span key={x} className="rounded-full bg-white/10 px-3 py-1 text-[13px] font-semibold">{x}</span>
               ))}
             </div>
-            <dl className="mt-5 flex flex-wrap gap-x-8 gap-y-3">
-              <div><dt className="text-xs text-cream/70">{t('roster.statPlayers')}</dt><dd className="font-display text-3xl font-semibold tabular-nums">{players.length}</dd></div>
-              <div><dt className="text-xs text-cream/70">{t('roster.statKeepers')}</dt><dd className="font-display text-3xl font-semibold tabular-nums">{grouped.gk.length}</dd></div>
-              <div><dt className="text-xs text-cream/70">{t('roster.avgLevel')}</dt><dd className="font-display text-3xl font-semibold tabular-nums">{teamAvg ? fmtAvg(teamAvg, lang) : '·'}<span className="text-base text-cream/60"> / 4</span></dd></div>
+            <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-3">
+              <div><dt className="text-[13px] text-cream/70">{t('roster.statPlayers')}</dt><dd className="mt-0.5 font-display text-[32px] leading-none tabular-nums">{players.length}</dd></div>
+              <div><dt className="text-[13px] text-cream/70">{t('roster.statKeepers')}</dt><dd className="mt-0.5 font-display text-[32px] leading-none tabular-nums">{grouped.gk.length}</dd></div>
+              <div><dt className="text-[13px] text-cream/70">{t('roster.avgLevel')}</dt><dd className="mt-0.5 font-display text-[32px] leading-none tabular-nums">{teamAvg ? fmtAvg(teamAvg, lang) : '-'}<span className="ml-1 font-sans text-[15px] font-medium text-cream/60">/ 4</span></dd></div>
             </dl>
-            <div className="mt-5 flex flex-wrap gap-2">
+            <div className="mt-6 flex flex-wrap gap-2">
               <button type="button" className="btn bg-cream text-forest-700 hover:bg-white" onClick={() => setAddOpen(true)}><UserPlus size={17} />{t('roster.addPlayer')}</button>
               <button type="button" className="btn border border-white/25 text-cream hover:bg-white/10" onClick={() => setImportOpen(true)}><ListPlus size={17} />{t('roster.import')}</button>
               <button type="button" className="btn text-cream/90 hover:bg-white/10" onClick={() => setTeamModal('edit')}><Pencil size={16} />{t('roster.editTeam')}</button>
@@ -104,12 +102,12 @@ export default function Roster() {
           </div>} />
       ) : (
         <>
-          <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-2">
             {LINES.map((line) => (
               <section key={line} aria-labelledby={`line-${line}`} className="min-w-0">
-                <div className="mb-2 flex items-baseline justify-between px-1">
-                  <h2 id={`line-${line}`} className="font-display text-xl font-semibold text-ink">{t(`lines.${line}`)}</h2>
-                  <span className="text-xs font-semibold tabular-nums text-ink-faint">{grouped[line].length}</span>
+                <div className="mb-2.5 flex items-baseline gap-2 px-1">
+                  <h2 id={`line-${line}`} className="font-display text-[20px] text-ink">{t(`lines.${line}`)}</h2>
+                  <span className="text-[13px] font-semibold tabular-nums text-ink-faint">{grouped[line].length}</span>
                 </div>
                 <ul className="card divide-y divide-line/70 overflow-hidden">
                   {grouped[line].length === 0 && <li className="px-4 py-5 text-sm text-ink-faint">{t('roster.emptyLine')}</li>}
@@ -118,7 +116,7 @@ export default function Roster() {
                       <Link to={`/app/equipe/${p.id}`} className="flex min-w-0 flex-1 items-center gap-3 px-3 py-3 transition hover:bg-sand/50 sm:px-4">
                         <NumberBadge player={p} />
                         <span className="min-w-0 flex-1">
-                          <span className="block truncate text-[15px] font-semibold text-ink">{p.name}</span>
+                          <span className="block truncate text-[15.5px] font-semibold text-ink">{p.name}</span>
                           <span className="mt-0.5 flex flex-wrap items-center gap-x-2 text-[12.5px] text-ink-muted">
                             <span>{t(`common:positions.${p.position}`)}</span>
                             {p.birthYear && <span className="tabular-nums">{p.birthYear}</span>}
@@ -130,8 +128,8 @@ export default function Roster() {
                         <ChevronRight size={18} className="hidden shrink-0 text-ink-faint sm:block" />
                       </Link>
                       <button type="button" onClick={() => setToDelete(p)} aria-label={t('roster.remove', { name: p.name })}
-                        className={cx('mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-ink-faint transition hover:bg-clay-50 hover:text-clay-600')}>
-                        <Trash2 size={17} />
+                        className={cx('mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-ink-faint/70 transition hover:bg-clay-50 hover:text-clay-600')}>
+                        <Trash2 size={16} strokeWidth={1.75} />
                       </button>
                     </li>
                   ))}

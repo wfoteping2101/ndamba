@@ -1,5 +1,14 @@
 {
-  "nav": { "books": "The books", "app": "The app", "mola": "Mola", "premium": "Premium", "start": "Get started", "openApp": "Open the app" },
+  "nav": {
+    "books": "The books",
+    "app": "The app",
+    "mola": "Mola",
+    "premium": "Premium",
+    "start": "Get started",
+    "openApp": "Open the app",
+    "menu": "Menu",
+    "close": "Close the menu"
+  },
   "footer": {
     "motto": "The ball must travel. But it must know where it is going.",
     "products": "Ndamba",
@@ -8,16 +17,74 @@
     "app": "The app",
     "mola": "Mola, the agent that acts",
     "mantraTitle": "Our mantra",
-    "mantra": "An African nation crowned world champion in 2030 or 2034."
+    "mantra": "An African nation crowned world champion in 2030 or 2034.",
+    "project": "The project",
+    "review": "Project review",
+    "brand": "The Ndamba brand",
+    "premium": "Premium",
+    "rights": "Lemon Network Solutions",
+    "home": "Ndamba home"
   },
   "app": {
-    "home": "Home", "mola": "Mola", "drills": "Drills", "sessions": "Sessions", "week": "Week", "team": "Team", "matches": "Matches",
-    "analysis": "Analysis", "video": "Video", "player": "Player space", "books": "Books", "premium": "Premium", "settings": "Settings", "vs": "v",
-    "groups": { "training": "Training", "team": "Team", "analysis": "Analysis", "me": "Me" },
-    "tabs": { "training": "Train", "analysis": "Analysis", "more": "More" }
+    "home": "Home",
+    "mola": "Mola",
+    "drills": "Drills",
+    "sessions": "Sessions",
+    "week": "Week",
+    "team": "Team",
+    "matches": "Matches",
+    "analysis": "Analysis",
+    "video": "Video",
+    "player": "Player space",
+    "books": "Books",
+    "premium": "Premium",
+    "settings": "Settings",
+    "vs": "v",
+    "groups": {
+      "training": "Training",
+      "team": "Team",
+      "analysis": "Analysis",
+      "me": "Me"
+    },
+    "tabs": {
+      "training": "Train",
+      "analysis": "Analysis",
+      "more": "More"
+    },
+    "menu": "Menu",
+    "mainNav": "Main navigation",
+    "teamLine": "{{age}}, {{format}} v {{format}}, {{formation}}",
+    "switchTeam": "Switch team"
   },
-  "actions": { "save": "Save", "cancel": "Cancel", "delete": "Delete", "edit": "Edit", "add": "Add", "close": "Close", "back": "Back", "create": "Create", "print": "Print", "share": "Share", "export": "Export", "confirm": "Confirm", "open": "Open", "next": "Next", "previous": "Previous", "done": "Done", "seeAll": "See all", "search": "Search" },
-  "intentions": { "sortir": "Build out", "progresser": "Progress", "fixer": "Pin", "finir": "Finish", "respirer": "Breathe", "reprendre": "Win it back", "regarder-devant": "Look forward" },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "close": "Close",
+    "back": "Back",
+    "create": "Create",
+    "print": "Print",
+    "share": "Share",
+    "export": "Export",
+    "confirm": "Confirm",
+    "open": "Open",
+    "next": "Next",
+    "previous": "Previous",
+    "done": "Done",
+    "seeAll": "See all",
+    "search": "Search"
+  },
+  "intentions": {
+    "sortir": "Build out",
+    "progresser": "Progress",
+    "fixer": "Pin",
+    "finir": "Finish",
+    "respirer": "Breathe",
+    "reprendre": "Win it back",
+    "regarder-devant": "Look forward"
+  },
   "intentionsHint": {
     "sortir": "Build from the back by drawing pressure to free a player",
     "progresser": "Break the opponent's lines",
@@ -27,28 +94,137 @@
     "reprendre": "Five seconds of counter-press after losing the ball",
     "regarder-devant": "After winning the ball, look forward first"
   },
-  "skills": { "scan": "Scanning", "controle": "Directional first touch", "passe": "Passing with purpose", "conduite": "Carrying", "dribble-njangi": "Njangi dribble", "appels": "Runs for others", "communication": "Communication", "protection": "Ball protection", "contre-pression": "Counter-pressing", "decision": "Decision making" },
-  "families": { "technique": "Technique and patterns", "rondo": "Rondos", "position": "Positional games", "ssg": "Small-sided games", "lsg": "Large-sided games", "phase": "Phases of play", "transition": "Transitions", "finishing": "Finishing" },
-  "md": { "MD-4": "MD-4 · Tension", "MD-3": "MD-3 · Duration", "MD-2": "MD-2 · Speed", "MD-1": "MD-1 · Activation", "MD+1": "MD+1 · Recovery", "youth": "Youth" },
-  "intensity": { "low": "Low", "medium": "Medium", "high": "High", "very-high": "Very high" },
-  "pieces": { "le cœur": "The heart", "la raison": "The reason", "les yeux": "The eyes", "la carte": "The map", "le souffle": "The breath" },
-  "positions": { "GK": "Goalkeeper", "CB": "Centre back", "FB": "Full back", "DM": "Pivot", "CM": "Central midfielder", "AM": "Attacking midfielder", "W": "Winger", "ST": "Striker" },
-  "roles": { "player": "Player", "coach": "Coach or educator", "analyst": "Analyst", "parent": "Parent", "manager": "Manager or technical director", "federation": "Federation or league" },
+  "skills": {
+    "scan": "Scanning",
+    "controle": "Directional first touch",
+    "passe": "Passing with purpose",
+    "conduite": "Carrying",
+    "dribble-njangi": "Njangi dribble",
+    "appels": "Runs for others",
+    "communication": "Communication",
+    "protection": "Ball protection",
+    "contre-pression": "Counter-pressing",
+    "decision": "Decision making"
+  },
+  "families": {
+    "technique": "Technique and patterns",
+    "rondo": "Rondos",
+    "position": "Positional games",
+    "ssg": "Small-sided games",
+    "lsg": "Large-sided games",
+    "phase": "Phases of play",
+    "transition": "Transitions",
+    "finishing": "Finishing"
+  },
+  "md": {
+    "MD-4": "MD-4, tension",
+    "MD-3": "MD-3, duration",
+    "MD-2": "MD-2, speed",
+    "MD-1": "MD-1, activation",
+    "MD+1": "MD+1, recovery",
+    "youth": "Youth"
+  },
+  "intensity": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "very-high": "Very high"
+  },
+  "pieces": {
+    "le cœur": "The heart",
+    "la raison": "The reason",
+    "les yeux": "The eyes",
+    "la carte": "The map",
+    "le souffle": "The breath"
+  },
+  "positions": {
+    "GK": "Goalkeeper",
+    "CB": "Centre back",
+    "FB": "Full back",
+    "DM": "Pivot",
+    "CM": "Central midfielder",
+    "AM": "Attacking midfielder",
+    "W": "Winger",
+    "ST": "Striker"
+  },
+  "roles": {
+    "player": "Player",
+    "coach": "Coach or educator",
+    "analyst": "Analyst",
+    "parent": "Parent",
+    "manager": "Manager or technical director",
+    "federation": "Federation or league"
+  },
   "events": {
-    "PASS_OK": "Pass completed", "PASS_LOST": "Pass lost", "PROG": "Progressive", "LINE": "Line broken", "FINAL3": "Final third entry", "BOX": "Box entry",
-    "FIX2": "Pins two", "SWITCH": "Switch", "LOSS": "Loss", "REGAIN5": "Won back in 5 s", "REGAIN": "Regain", "SHOT": "Shot", "SHOT_IN": "On target", "GOAL": "Goal", "NOTE": "Note"
+    "PASS_OK": "Pass completed",
+    "PASS_LOST": "Pass lost",
+    "PROG": "Progressive",
+    "LINE": "Line broken",
+    "FINAL3": "Final third entry",
+    "BOX": "Box entry",
+    "FIX2": "Pins two",
+    "SWITCH": "Switch",
+    "LOSS": "Loss",
+    "REGAIN5": "Won back in 5 s",
+    "REGAIN": "Regain",
+    "SHOT": "Shot",
+    "SHOT_IN": "On target",
+    "GOAL": "Goal",
+    "NOTE": "Note"
   },
   "plans": {
-    "free": "Free", "player": "Player Premium", "coach": "Coach Pro", "club": "Club and academy", "federation": "Federation",
-    "perMonth": "per month", "onQuote": "On quote", "approx": "about",
+    "free": "Free",
+    "player": "Player Premium",
+    "coach": "Coach Pro",
+    "club": "Club and academy",
+    "federation": "Federation",
+    "perMonth": "per month",
+    "onQuote": "On quote",
+    "approx": "about",
     "features": {
-      "books": "Both books, free to read", "drills": "The 64 drills of the method", "oneTeam": "One team", "liveOne": "One match analysed live", "molaBasic": "Mola to guide you",
-      "playerPlan": "Personal plan and challenges", "lessons": "The 40 Ball Lessons", "notebook": "Your Njangi notebook", "videoSelf": "Your annotated videos",
-      "everythingPlayer": "Everything in Player Premium", "unlimitedSessions": "Unlimited sessions", "weekPlanner": "Week planning", "liveUnlimited": "Unlimited live analysis", "reports": "Reports and Njangi Index", "video": "Video analysis", "molaActions": "Mola acts for you",
-      "everythingCoach": "Everything in Coach Pro", "teams": "Unlimited teams", "staff": "Staff accounts", "clubModel": "Your club game model", "export": "Exports and printing",
-      "everythingClub": "Everything in Club", "nationalModel": "National game model", "coachEducation": "Coach education", "support": "Dedicated support"
+      "books": "Both books, free to read",
+      "drills": "The 64 drills of the method",
+      "oneTeam": "One team",
+      "liveOne": "One match analysed live",
+      "molaBasic": "Mola to guide you",
+      "playerPlan": "Personal plan and challenges",
+      "lessons": "The 40 Ball Lessons",
+      "notebook": "Your Njangi notebook",
+      "videoSelf": "Your annotated videos",
+      "everythingPlayer": "Everything in Player Premium",
+      "unlimitedSessions": "Unlimited sessions",
+      "weekPlanner": "Week planning",
+      "liveUnlimited": "Unlimited live analysis",
+      "reports": "Reports and Njangi Index",
+      "video": "Video analysis",
+      "molaActions": "Mola acts for you",
+      "everythingCoach": "Everything in Coach Pro",
+      "teams": "Unlimited teams",
+      "staff": "Staff accounts",
+      "clubModel": "Your club game model",
+      "export": "Exports and printing",
+      "everythingClub": "Everything in Club",
+      "nationalModel": "National game model",
+      "coachEducation": "Coach education",
+      "support": "Dedicated support"
     }
   },
-  "brand": { "tagline": "Football with purpose", "philosophy": "Possession with purpose", "motto": "The ball must travel. But it must know where it is going.", "mantra": "An African nation crowned world champion in 2030 or 2034." },
-  "misc": { "minutes": "min", "players": "players", "demo": "Demo", "free": "Free", "premium": "Premium", "comingSoon": "Coming soon", "loading": "Loading", "none": "None", "today": "Today", "tomorrow": "Tomorrow" }
+  "brand": {
+    "tagline": "Football with purpose",
+    "philosophy": "Possession with purpose",
+    "motto": "The ball must travel. But it must know where it is going.",
+    "mantra": "An African nation crowned world champion in 2030 or 2034."
+  },
+  "misc": {
+    "minutes": "min",
+    "players": "players",
+    "demo": "Demo",
+    "free": "Free",
+    "premium": "Premium",
+    "comingSoon": "Coming soon",
+    "loading": "Loading",
+    "none": "None",
+    "today": "Today",
+    "tomorrow": "Tomorrow"
+  }
 }

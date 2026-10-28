@@ -3,7 +3,7 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
 import { cx } from '../../../lib/util'
 
-const C = { line: '#DCE2D8', axis: '#94A198', ink: '#12211A', soft: '#5D6C63', forest: '#0B5D3B', terra: '#BF5A2E', sun: '#F5B700', surface: '#FFFFFF' }
+const C = { line: '#DCE2D8', axis: '#94A198', ink: '#12211A', soft: '#5D6C63', forest: '#0B5D3B', forestSoft: '#73B391', terra: '#BF5A2E', sun: '#F5B700', surface: '#FFFFFF' }
 
 /** Tooltip placed in % of the chart box (x in viewBox units of width w, yPct in % of the height). */
 function Tip({ x, yPct, children, w }: { x: number; yPct: number; children: ReactNode; w: number }) {
@@ -73,8 +73,11 @@ export function Sparkline({ values, labels, width = 160, height = 44, color = C.
 
 export interface BarDatum { key: string; label: string; short: string; value: number; highlight?: boolean }
 
-/** Columns that grow from one baseline, 4px rounded top, value on hover and in the label below. */
-export function DayBars({ data, height = 150, unit, ariaLabel, max: maxIn }: { data: BarDatum[]; height?: number; unit: string; ariaLabel: string; max?: number }) {
+/** Columns that grow from one baseline, 4px rounded top, value on hover and in the label below.
+ *  tone "pitch" (senior): soft green days, today in pitch green; "earth" (youth): pitch green days, today in red earth. */
+export function DayBars({ data, height = 150, unit, ariaLabel, max: maxIn, tone = 'pitch' }: { data: BarDatum[]; height?: number; unit: string; ariaLabel: string; max?: number; tone?: 'pitch' | 'earth' }) {
+  const base = tone === 'earth' ? C.forest : C.forestSoft
+  const hi = tone === 'earth' ? C.terra : C.forest
   const [hover, setHover] = useState<number | null>(null)
   const [box, W] = useBoxWidth()
   const top = 18, bottom = 22
@@ -105,7 +108,7 @@ export function DayBars({ data, height = 150, unit, ariaLabel, max: maxIn }: { d
           return (
             <g key={d.key} onPointerEnter={() => setHover(i)} onFocus={() => setHover(i)} onBlur={() => setHover(null)} tabIndex={0} aria-label={`${d.label}: ${d.value} ${unit}`} className="outline-none">
               <rect x={left + band * i} y={top} width={band} height={h + bottom} fill="transparent" />
-              {d.value > 0 && <path d={path} fill={d.highlight ? C.terra : C.forest} opacity={hover === null || hover === i ? 1 : 0.55} />}
+              {d.value > 0 && <path d={path} fill={d.highlight ? hi : base} opacity={hover === null || hover === i ? 1 : 0.55} />}
               <text x={cx} y={height - 6} fontSize="11" textAnchor="middle" fill={d.highlight ? C.ink : C.soft} fontWeight={d.highlight ? 700 : 500}>{d.short}</text>
             </g>
           )
@@ -144,10 +147,10 @@ export function HistoryLine({ points, target, unit, ariaLabel, targetLabel, min 
         }}>
         <defs><clipPath id={`c-${gid}`}><rect x="0" y="0" width={W} height={H - bottom} /></clipPath></defs>
         <line x1={left} x2={W - right} y1={y(min)} y2={y(min)} stroke={C.line} strokeWidth="1" />
-        <line x1={left} x2={W - right} y1={y(target)} y2={y(target)} stroke={C.sun} strokeWidth="1.5" />
+        <line x1={left} x2={W - right} y1={y(target)} y2={y(target)} stroke={C.soft} strokeWidth="1.25" strokeDasharray="4 4" />
         {labelAt === 'start' ? (
           <g>
-            <line x1={left} x2={left + 16} y1={10} y2={10} stroke={C.sun} strokeWidth="1.5" />
+            <line x1={left} x2={left + 16} y1={10} y2={10} stroke={C.soft} strokeWidth="1.25" strokeDasharray="4 4" />
             <text x={left + 22} y={14} fontSize="11" fill={C.soft} fontWeight="600">{targetLabel} {target}</text>
           </g>
         ) : <text x={W - right} y={y(target) - 5} fontSize="11" textAnchor="end" fill={C.soft} fontWeight="600">{targetLabel} {target}</text>}
@@ -173,7 +176,7 @@ export function HistoryLine({ points, target, unit, ariaLabel, targetLabel, min 
   )
 }
 
-/** Ten-axis radar of the competences. Series: me (forest) and optionally my coach (terra). */
+/** Ten-axis radar of the competences. Series: me (pitch green) and optionally the staff (the caller picks the colour). */
 export function SkillRadar({ axes, series, size = 300, className }: { axes: { key: string; label: string }[]; series: { name: string; color: string; values: Record<string, number | undefined> }[]; size?: number; className?: string }) {
   const cx = size / 2, cy = size / 2, R = size / 2 - 40
   const padX = 90 // room for the long competence names on the left and right
@@ -225,14 +228,14 @@ export function Legend({ items }: { items: { name: string; color: string }[] }) 
   )
 }
 
-export function RingProgress({ value, max, size = 64, stroke = 6, color = C.forest, children, className }: { value: number; max: number; size?: number; stroke?: number; color?: string; children?: ReactNode; className?: string }) {
+export function RingProgress({ value, max, size = 64, stroke = 6, color = C.forest, track = '#ECEFE8', children, className }: { value: number; max: number; size?: number; stroke?: number; color?: string; track?: string; children?: ReactNode; className?: string }) {
   const r = (size - stroke) / 2
   const c = 2 * Math.PI * r
   const f = Math.max(0, Math.min(1, max ? value / max : 0))
   return (
     <div className={cx('relative inline-grid place-items-center', className)} style={{ width: size, height: size }}>
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} aria-hidden="true" className="-rotate-90">
-        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="#ECEFE8" strokeWidth={stroke} />
+        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={track} strokeWidth={stroke} />
         <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={color} strokeWidth={stroke} strokeLinecap="round" strokeDasharray={`${c * f} ${c}`} />
       </svg>
       <div className="absolute inset-0 grid place-items-center">{children}</div>

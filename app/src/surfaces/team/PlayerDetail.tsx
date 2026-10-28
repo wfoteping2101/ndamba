@@ -22,8 +22,8 @@ type Level = 1 | 2 | 3 | 4
 const LEVELS: Level[] = [1, 2, 3, 4]
 const CONTRIB: EventCode[] = ['PROG', 'LINE', 'REGAIN5', 'FIX2', 'SWITCH', 'FINAL3', 'BOX', 'SHOT', 'REGAIN', 'LOSS']
 const levelTone: Record<Level, string> = {
-  1: 'border-terra-500 bg-terra-500 text-white',
-  2: 'border-sun-500 bg-sun-500 text-night-900',
+  1: 'border-forest-100 bg-forest-100 text-forest-800',
+  2: 'border-forest-300 bg-forest-300 text-night-900',
   3: 'border-forest-500 bg-forest-500 text-cream',
   4: 'border-forest-700 bg-forest-700 text-cream',
 }
@@ -75,8 +75,8 @@ export default function PlayerDetail() {
   const radarCard = (
     <section className="card card-pad" aria-labelledby="radar-h">
       <div className="mb-1 flex items-baseline justify-between gap-2">
-        <h2 id="radar-h" className="font-display text-lg font-semibold">{t('player.radarTitle')}</h2>
-        <span className="flex items-center gap-1.5 text-[11.5px] text-ink-muted"><span className="inline-block h-0 w-4 border-t-2 border-dashed border-terra-500" />{t('player.radarTeam')}</span>
+        <h2 id="radar-h" className="font-display text-lg">{t('player.radarTitle')}</h2>
+        <span className="flex items-center gap-1.5 text-[11.5px] text-ink-muted"><span className="inline-block h-0 w-4 border-t-2 border-dashed border-ink-muted" />{t('player.radarTeam')}</span>
       </div>
       {ratedCount >= 3 ? <div className="flex justify-center"><SkillRadar skills={player.skills} compare={teamAvgSkills} /></div>
         : <p className="py-8 text-center text-sm text-ink-muted">{t('player.radarEmpty')}</p>}
@@ -92,12 +92,12 @@ export default function PlayerDetail() {
         <div className="flex min-w-0 flex-1 items-center gap-4">
           <NumberBadge player={player} size="lg" />
           <div className="min-w-0">
-            <h1 className="font-display text-[28px] font-semibold leading-tight text-ink sm:text-[36px]">{player.name}</h1>
+            <h1 className="font-display text-[28px] leading-tight text-ink sm:text-[38px]">{player.name}</h1>
             <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
               <Badge tone="forest">{t(`common:positions.${player.position}`)}</Badge>
               {player.birthYear && <Badge>{t('player.born', { year: player.birthYear })}</Badge>}
               {player.foot && <Badge>{t(`foot.${player.foot}`)}</Badge>}
-              {avg > 0 && <Badge tone="sun">{t('player.average')} {fmtAvg(avg, lang)} / 4</Badge>}
+              {avg > 0 && <Badge tone="forest"><span className="tabular-nums">{t('player.average')} {fmtAvg(avg, lang)} / 4</span></Badge>}
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function PlayerDetail() {
           <section className="card overflow-hidden" aria-labelledby="skills-h">
             <div className="flex flex-wrap items-start justify-between gap-2 border-b border-line px-4 py-4 sm:px-5">
               <div className="min-w-0">
-                <h2 id="skills-h" className="font-display text-xl font-semibold">{t('player.skillsTitle')}</h2>
+                <h2 id="skills-h" className="font-display text-xl">{t('player.skillsTitle')}</h2>
                 <p className="mt-0.5 max-w-xl text-[13px] text-ink-muted">{t('player.skillsHint')}</p>
               </div>
               <div className="flex items-center gap-2">
@@ -125,31 +125,30 @@ export default function PlayerDetail() {
                 </button>
               </div>
             </div>
-            <ol className="divide-y divide-line/70">
-              {SKILL_KEYS.map((k, idx) => {
+            <ul className="divide-y divide-line/70">
+              {SKILL_KEYS.map((k) => {
                 const v = player.skills[k] as Level | undefined
                 return (
                   <li key={k} className="px-4 py-4 sm:px-5">
                     <div className="flex items-baseline gap-2">
-                      <span className="w-5 shrink-0 text-xs font-semibold tabular-nums text-ink-faint">{idx + 1}</span>
                       <div className="min-w-0 flex-1">
                         <h3 className="text-[15.5px] font-semibold text-ink">{t(`common:skills.${k}`)}</h3>
                         <p className="text-[12.5px] leading-snug text-ink-muted">{t(`skillDef.${k}`)}</p>
                       </div>
                     </div>
-                    <div className="mt-3 grid grid-cols-4 gap-1.5 sm:pl-7" role="radiogroup" aria-label={t(`common:skills.${k}`)}>
+                    <div className="mt-3 grid grid-cols-4 gap-1.5" role="radiogroup" aria-label={t(`common:skills.${k}`)}>
                       {LEVELS.map((l) => (
                         <button key={l} type="button" role="radio" aria-checked={v === l} onClick={() => setLevel(k, l)}
                           title={t(`skillDesc.${k}.${l}`)}
                           className={cx('flex min-h-[48px] flex-col items-center justify-center rounded-xl border px-1 py-1.5 transition',
                             v === l ? levelTone[l] : v && l < v ? 'border-forest-100 bg-forest-50 text-forest-700' : 'border-line bg-paper text-ink-muted hover:border-ink-faint')}>
-                          <span className="font-display text-lg font-semibold leading-none">{l}</span>
+                          <span className="font-display text-lg leading-none tabular-nums">{l}</span>
                           <span className="mt-0.5 max-w-full truncate text-[10.5px] font-semibold">{t(`levels.${l}`)}</span>
                         </button>
                       ))}
                     </div>
                     {grid ? (
-                      <ul className="mt-3 space-y-1.5 sm:pl-7">
+                      <ul className="mt-3 space-y-1.5">
                         {LEVELS.map((l) => (
                           <li key={l} className={cx('flex gap-2 rounded-lg px-2 py-1.5 text-[13px] leading-snug', v === l ? 'bg-forest-50 text-ink' : 'text-ink-muted')}>
                             <span className="w-4 shrink-0 font-semibold tabular-nums">{l}</span><span>{t(`skillDesc.${k}.${l}`)}</span>
@@ -157,12 +156,12 @@ export default function PlayerDetail() {
                         ))}
                       </ul>
                     ) : v ? (
-                      <p className="mt-2 text-[13px] leading-snug text-ink-soft sm:pl-7"><span className="font-semibold text-forest-700">{t('player.levelIs', { level: t(`levels.${v}`) })}</span>{t(`skillDesc.${k}.${v}`)}</p>
+                      <p className="mt-2 text-[13px] leading-snug text-ink-soft"><span className="font-semibold text-forest-700">{t('player.levelIs', { level: t(`levels.${v}`) })}</span>{t(`skillDesc.${k}.${v}`)}</p>
                     ) : null}
                   </li>
                 )
               })}
-            </ol>
+            </ul>
             <p className="border-t border-line bg-sand/40 px-4 py-3 text-xs text-ink-muted sm:px-5">{t('player.gridNote')}</p>
           </section>
 
@@ -220,7 +219,7 @@ function Contribution({ player, events, matches }: { player: Player; events: Mat
   const tiles = CONTRIB.filter((c) => counts[c])
   return (
     <section className="card card-pad" aria-labelledby="contrib-h">
-      <h2 id="contrib-h" className="font-display text-lg font-semibold">{t('player.contribTitle')}</h2>
+      <h2 id="contrib-h" className="font-display text-lg">{t('player.contribTitle')}</h2>
       <p className="mb-3 text-xs text-ink-muted">{t('player.contribHint')}</p>
       {events.length === 0 ? <p className="rounded-xl bg-sand/60 px-3 py-3 text-sm text-ink-muted">{t('player.contribEmpty')}</p> : (
         <>
@@ -230,30 +229,30 @@ function Contribution({ player, events, matches }: { player: Player; events: Mat
           </div>
           {passes > 0 && (
             <div className="mb-3 rounded-xl border border-line p-3">
-              <div className="flex items-baseline justify-between"><span className="text-xs font-medium text-ink-muted">{t('player.passAcc')}</span><span className="font-display text-2xl font-semibold tabular-nums text-forest-600">{Math.round(((counts.PASS_OK || 0) / passes) * 100)} %</span></div>
+              <div className="flex items-baseline justify-between"><span className="text-xs font-medium text-ink-muted">{t('player.passAcc')}</span><span className="font-display text-2xl tabular-nums text-forest-600">{Math.round(((counts.PASS_OK || 0) / passes) * 100)}{lang === 'fr' ? ' %' : '%'}</span></div>
               <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-sand"><div className="h-full rounded-full bg-forest-600" style={{ width: `${((counts.PASS_OK || 0) / passes) * 100}%` }} /></div>
               <div className="mt-1 text-[11px] tabular-nums text-ink-faint">{counts.PASS_OK || 0} / {passes}</div>
             </div>
           )}
-          <dl className="grid grid-cols-2 gap-2">
+          <dl className="divide-y divide-line/70 border-y border-line/70">
             {tiles.map((c) => (
-              <div key={c} className={cx('rounded-xl px-3 py-2', c === 'LOSS' ? 'bg-clay-50' : 'bg-sand/60')}>
-                <dt className="truncate text-[11.5px] font-medium text-ink-muted">{t(`common:events.${c}`)}</dt>
-                <dd className={cx('font-display text-2xl font-semibold tabular-nums', c === 'LOSS' ? 'text-clay-600' : 'text-ink')}>{counts[c]}</dd>
+              <div key={c} className="flex items-baseline justify-between gap-3 py-2">
+                <dt className="min-w-0 truncate text-[13.5px] text-ink-soft">{t(`common:events.${c}`)}</dt>
+                <dd className={cx('shrink-0 text-right font-display text-[18px] tabular-nums', c === 'LOSS' ? 'text-clay-600' : 'text-ink')}>{counts[c]}</dd>
               </div>
             ))}
           </dl>
           {byMatch.length > 0 && (
             <>
-              <h3 className="mb-1.5 mt-4 text-xs font-semibold text-ink-muted">{t('player.byMatch')}</h3>
+              <div className="mb-1 mt-5 flex items-baseline gap-2 px-2 text-[12px] font-semibold text-ink-muted"><h3 className="min-w-0 flex-1 font-sans text-[13px] font-semibold tracking-normal text-ink" style={{ fontStretch: '100%' }}>{t('player.byMatch')}</h3><span className="w-14 text-right" title={`${t('common:events.PROG')} + ${t('common:events.LINE')}`}>{t('player.colProg')}</span><span className="w-14 text-right" title={t('common:events.REGAIN5')}>{t('player.colRegain')}</span></div>
               <ul className="space-y-1">
                 {byMatch.map(({ match, c }) => (
                   <li key={match!.id}>
                     <Link to={`/app/matchs/${match!.id}`} className="flex min-h-[44px] items-center gap-2 rounded-lg px-2 text-sm hover:bg-sand/60">
                       <span className="min-w-0 flex-1 truncate font-medium text-ink">{match!.opponent}</span>
                       <span className="shrink-0 text-[11.5px] tabular-nums text-ink-muted">{fmtDate(match!.date, lang, { day: 'numeric', month: 'short' })}</span>
-                      <span className="shrink-0 rounded-md bg-forest-50 px-1.5 text-[11.5px] font-semibold tabular-nums text-forest-700" title={`${t('common:events.PROG')} + ${t('common:events.LINE')}`}>{(c.PROG || 0) + (c.LINE || 0)}</span>
-                      <span className="shrink-0 rounded-md bg-sun-50 px-1.5 text-[11.5px] font-semibold tabular-nums text-sun-700" title={t('common:events.REGAIN5')}>{c.REGAIN5 || 0}</span>
+                      <span className="w-14 shrink-0 text-right text-[13px] font-semibold tabular-nums text-forest-700" title={`${t('common:events.PROG')} + ${t('common:events.LINE')}`}>{(c.PROG || 0) + (c.LINE || 0)}</span>
+                      <span className="w-14 shrink-0 text-right text-[13px] font-semibold tabular-nums text-ink" title={t('common:events.REGAIN5')}>{c.REGAIN5 || 0}</span>
                     </Link>
                   </li>
                 ))}
@@ -278,7 +277,7 @@ function SuggestedDrills({ player }: { player: Player }) {
   }, [weakest.join(',')])
   return (
     <section className="card card-pad" aria-labelledby="drills-h">
-      <h2 id="drills-h" className="mb-1 flex items-center gap-2 font-display text-lg font-semibold"><Dumbbell size={18} className="text-terra-500" />{t('player.drillsTitle')}</h2>
+      <h2 id="drills-h" className="mb-1 flex items-center gap-2 font-display text-lg"><Dumbbell size={18} strokeWidth={1.75} className="text-forest-600" />{t('player.drillsTitle')}</h2>
       {!weakest.length ? <p className="text-sm text-ink-muted">{t('player.drillsNoRating', { app: BRAND.name })}</p> : (
         <>
           <p className="mb-3 text-[13px] text-ink-muted">
@@ -295,10 +294,10 @@ function SuggestedDrills({ player }: { player: Player }) {
                 return (
                   <li key={d.id}>
                     <Link to={`/app/exercices/${d.id}`} className="flex items-center gap-3 rounded-xl border border-line px-3 py-2.5 transition hover:border-forest-300 hover:bg-forest-50/40">
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-forest-50 font-display text-sm font-semibold text-forest-700">{d.id}</span>
+                      <span className="flex h-10 w-11 shrink-0 items-center justify-center rounded-lg bg-forest-50 text-[13px] font-semibold tabular-nums text-forest-700">{d.id}</span>
                       <span className="min-w-0 flex-1">
                         <span className="block truncate text-sm font-semibold text-ink">{txt.title}</span>
-                        <span className="block truncate text-[12px] text-ink-muted">{d.skills.filter((s) => weakest.includes(s)).map((s) => t(`common:skills.${s}`)).join(', ')} · {t('player.min', { n: d.minutes })}</span>
+                        <span className="flex gap-x-2 truncate text-[12.5px] text-ink-muted"><span className="truncate">{d.skills.filter((s) => weakest.includes(s)).map((s) => t(`common:skills.${s}`)).join(', ')}</span><span className="shrink-0 tabular-nums">{t('player.min', { n: d.minutes })}</span></span>
                       </span>
                     </Link>
                   </li>

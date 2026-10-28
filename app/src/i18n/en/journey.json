@@ -101,7 +101,7 @@
     "nextStep": "The next step (level {{n}})",
     "top": "Reference level",
     "topBody": "This behaviour makes the difference and makes others play better. Now the job is to keep it under fatigue and pressure.",
-    "evidenceNote": "Below the curve: {{plus}} strengths (green) and {{work}} things to work on (clay), as evidence from play."
+    "evidenceNote": "Below the curve, the evidence from play: {{plus}} strengths (filled dots) and {{work}} things to work on (circles)."
   },
   "timeline": {
     "title": "The journey, step by step",

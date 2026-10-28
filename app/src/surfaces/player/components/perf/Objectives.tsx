@@ -1,7 +1,7 @@
 // « Mes objectifs du cycle » (from the Parcours) and, in the performance space, the drills of
 // Le Code Njangi that train them. « Ma saison »: the Parcours in a few figures and the last word of the staff.
 import { Link } from 'react-router-dom'
-import { ArrowRight, Dumbbell, MessageSquareQuote, Route, Target } from 'lucide-react'
+import { MessageSquareQuote } from 'lucide-react'
 import { useT } from '../../../../i18n'
 import { DRILLS, drillText, getDrill } from '../../../../content'
 import { DRILLS_FOR } from '../../../../lib/njangi'
@@ -26,45 +26,45 @@ export function ObjectivesCard({ d, withDrills = false }: { d: PerfData; withDri
   const used = new Set<string>()
   const drills = withDrills ? active.flatMap((o) => drillsFor(o).filter((x) => !used.has(x.id)).slice(0, 2).map((x) => { used.add(x.id); return { o, x } })).slice(0, 4) : []
   return (
-    <section className="card card-pad h-full" aria-labelledby="ob-h">
-      <PerfHead id="ob-h" icon={<Target />} eyebrow={t('perf.obj.eyebrow')} title={t('perf.obj.title')} hint={t('perf.obj.hint', { n: MAX_ACTIVE_OBJECTIVES })} />
+    <section className="h-full rounded-[22px] border border-line bg-paper p-5 sm:p-6" aria-labelledby="ob-h">
+      <PerfHead id="ob-h" eyebrow={t('perf.obj.eyebrow')} title={t('perf.obj.title')} hint={t('perf.obj.hint', { n: MAX_ACTIVE_OBJECTIVES })} />
       {!j ? <NoLink /> : active.length === 0 ? (
-        <div className="rounded-xl bg-sand/60 px-3 py-3 text-sm text-ink-muted">
+        <div className="text-[14.5px] leading-relaxed text-ink-muted">
           {t('perf.obj.empty')}
-          <div className="mt-2"><Link to="/app/joueur/parcours" className="btn-primary btn-sm min-h-[44px]">{t('perf.obj.set')}</Link></div>
+          <div className="mt-3"><Link to="/app/joueur/parcours" className="btn-primary btn-sm min-h-[44px] px-4">{t('perf.obj.set')}</Link></div>
         </div>
       ) : (
-        <ul className="space-y-2">
+        <ul className="divide-y divide-line border-y border-line">
           {active.map((o) => {
             const left = daysBetween(d.today, o.review)
             const lvl = o.skill ? now[o.skill] : undefined
             return (
-              <li key={o.id} className="rounded-2xl border border-line bg-paper p-3">
+              <li key={o.id} className="py-3.5">
                 <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="rounded-full bg-forest-50 px-2 py-0.5 text-[11.5px] font-semibold text-forest-700">{o.skill ? t(`common:skills.${o.skill}`) : t('journey:objectives.subLink', { name: t(`subs.${o.sub}`) })}</span>
-                  <span className="rounded-full bg-sand px-2 py-0.5 text-[11.5px] font-semibold text-ink-soft">{o.by === 'player' ? t('journey:objectives.byMe') : t('perf.obj.byStaff')}</span>
-                  <span className={cx('ml-auto text-[11.5px] font-semibold', left < 0 ? 'text-sun-700' : 'text-ink-muted')}>
+                  <span className="rounded-full bg-forest-50 px-2.5 py-0.5 text-[12px] font-semibold text-forest-700">{o.skill ? t(`common:skills.${o.skill}`) : t('journey:objectives.subLink', { name: t(`subs.${o.sub}`) })}</span>
+                  <span className="text-[12.5px] font-medium text-ink-muted">{o.by === 'player' ? t('journey:objectives.byMe') : t('perf.obj.byStaff')}</span>
+                  <span className={cx('ml-auto text-[12.5px] font-semibold', left < 0 ? 'text-clay-700' : 'text-ink-muted')}>
                     {left < 0 ? t('journey:objectives.reviewDue') : left === 0 ? t('journey:objectives.reviewToday') : t('journey:objectives.reviewIn', { count: left, date: fmtDate(o.review, lang, { day: 'numeric', month: 'short' }) })}
                   </span>
                 </div>
-                <div className="mt-1.5 font-display text-[16px] font-semibold leading-snug text-ink">{o.title}</div>
-                {lvl && <div className="mt-1.5 flex items-center gap-1.5 text-[12.5px] text-ink-muted"><LevelPips level={lvl} />{t('perf.obj.level', { level: t(`team:levels.${lvl}`) })}</div>}
+                <div className="mt-2 text-[16.5px] font-semibold leading-snug text-ink">{o.title}</div>
+                {lvl && <div className="mt-1.5 flex items-center gap-1.5 text-[13px] text-ink-muted"><LevelPips level={lvl} />{t('perf.obj.level', { level: t(`team:levels.${lvl}`) })}</div>}
               </li>
             )
           })}
         </ul>
       )}
       {drills.length > 0 && (
-        <div className="mt-4 border-t border-line/70 pt-3">
-          <h3 className="mb-2 flex items-center gap-1.5 text-[13px] font-semibold text-ink"><Dumbbell size={15} aria-hidden="true" className="text-terra-600" />{t('perf.obj.drills')}</h3>
-          <ul className="grid gap-1.5 sm:grid-cols-2">
+        <div className="mt-5">
+          <h3 className="mb-2 text-[14px] font-semibold text-ink">{t('perf.obj.drills')}</h3>
+          <ul className="grid gap-2 sm:grid-cols-2">
             {drills.map(({ o, x }) => (
               <li key={x.id}>
-                <Link to={`/app/exercices/${x.id}`} className="flex min-h-[52px] items-center gap-2.5 rounded-xl border border-line px-3 py-2 transition hover:border-forest-300">
-                  <span className="shrink-0 text-[12px] font-semibold text-terra-600">{x.id}</span>
+                <Link to={`/app/exercices/${x.id}`} className="flex min-h-[56px] items-center gap-3 rounded-xl border border-line px-3 py-2 transition hover:border-forest-300">
+                  <span className="shrink-0 text-[12.5px] font-semibold text-forest-600">{x.id}</span>
                   <span className="min-w-0 flex-1">
-                    <span className="block truncate text-[13.5px] font-medium text-ink">{drillText(x, lang).title}</span>
-                    <span className="block truncate text-[11.5px] text-ink-muted">{t(`common:families.${x.family}`)} · {o.skill ? t(`common:skills.${o.skill}`) : t(`subs.${o.sub}`)}</span>
+                    <span className="block truncate text-[14px] font-medium text-ink">{drillText(x, lang).title}</span>
+                    <span className="block truncate text-[12.5px] text-ink-muted">{t('perf.obj.drillSub', { family: t(`common:families.${x.family}`), skill: o.skill ? t(`common:skills.${o.skill}`) : t(`subs.${o.sub}`) })}</span>
                   </span>
                 </Link>
               </li>
@@ -72,7 +72,7 @@ export function ObjectivesCard({ d, withDrills = false }: { d: PerfData; withDri
           </ul>
         </div>
       )}
-      {j && <Link to="/app/joueur/parcours" className="mt-3 inline-flex min-h-[44px] items-center gap-1.5 text-[13.5px] font-semibold text-forest-700 hover:underline">{t('perf.obj.manage')}<ArrowRight size={15} aria-hidden="true" /></Link>}
+      {j && <Link to="/app/joueur/parcours" className="link mt-4 inline-flex min-h-[44px] items-center text-[14px]">{t('perf.obj.manage')}</Link>}
     </section>
   )
 }
@@ -86,35 +86,35 @@ export function SeasonCard({ d }: { d: PerfData }) {
   const ses = lastNote?.sessionId ? j!.sessions.find((x) => x.id === lastNote.sessionId) : undefined
   const lastEval = j ? j.evaluations.filter((e) => e.by === 'coach').slice(-1)[0] : undefined
   return (
-    <section className="card card-pad h-full" aria-labelledby="se-h">
-      <PerfHead id="se-h" icon={<Route />} eyebrow={t('perf.season.eyebrow', { label: d.season.label })} title={t('perf.season.title')} />
+    <section className="h-full rounded-[22px] border border-line bg-paper p-5 sm:p-6" aria-labelledby="se-h">
+      <PerfHead id="se-h" eyebrow={t('perf.season.eyebrow', { label: d.season.label })} title={t('perf.season.title')} />
       {!s || !j ? <NoLink /> : (
         <>
-          <dl className="grid grid-cols-2 gap-2">
+          <dl className="grid grid-cols-2 gap-x-4 gap-y-5">
             <Figure label={t('journey:hero.matches')} value={s.matches.played} sub={t('perf.season.starts', { count: s.matches.starts })} />
             <Figure label={t('journey:perf.minutes')} value={fmtMinutes(s.matches.minutes, lang)} sub={s.matches.played ? t('journey:perf.avgMin', { n: Math.round(s.matches.minutes / s.matches.played) }) : undefined} />
-            <Figure label={t('journey:hero.sessions')} value={s.sessions.marked ? `${s.sessions.attended}/${s.sessions.marked}` : '·'} sub={s.sessions.rate !== null ? t('journey:hero.rate', { v: fmtPct(s.sessions.rate, lang) }) : t('journey:hero.noRegister')} />
+            <Figure label={t('journey:hero.sessions')} value={s.sessions.marked ? `${s.sessions.attended}/${s.sessions.marked}` : null} sub={s.sessions.rate !== null ? t('journey:hero.rate', { v: fmtPct(s.sessions.rate, lang) }) : t('journey:hero.noRegister')} />
             <Figure label={t('perf.season.evals')} value={j.evaluations.filter((e) => e.by === 'coach').length} sub={lastEval ? t('perf.season.lastEval', { date: fmtDate(lastEval.date, lang, { day: 'numeric', month: 'short' }) }) : undefined} />
           </dl>
           {(s.strength || s.nextStep) && (
-            <p className="mt-3 text-[13.5px] leading-relaxed text-ink-soft">
+            <p className="mt-5 text-[14.5px] leading-relaxed text-ink-soft">
               {s.strength && <span>{t('journey:hero.strengthPlayer', { skill: t(`common:skills.${s.strength}`), level: s.levels.now[s.strength] })} </span>}
               {s.nextStep && <span>{t('journey:hero.nextPlayerAdult', { skill: t(`common:skills.${s.nextStep}`) })}</span>}
             </p>
           )}
           {lastNote && (
-            <figure className="mt-3 rounded-xl border-l-2 border-forest-600 bg-forest-50/60 px-3 py-2.5">
-              <figcaption className="flex items-center gap-1.5 text-[11.5px] font-semibold uppercase tracking-[0.1em] text-forest-700">
-                <MessageSquareQuote size={13} aria-hidden="true" />{t('perf.season.lastObs')}
-                <span className={cx('ml-auto shrink-0 whitespace-nowrap rounded-full px-1.5 text-[10.5px] normal-case tracking-normal', obsTone(lastNote) === 'work' ? 'bg-terra-50 text-terra-700' : 'bg-paper text-forest-700')}>{t(`perf.season.tone.${obsTone(lastNote) === 'work' ? 'work' : 'plus'}`)}</span>
+            <figure className="mt-5 border-l-2 border-forest-600 pl-3.5">
+              <figcaption className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] font-semibold text-ink">
+                <MessageSquareQuote size={14} strokeWidth={1.75} aria-hidden="true" className="text-forest-600" />{t('perf.season.lastObs')}
+                <span className={cx('rounded-full px-2 py-0.5 text-[12px] font-semibold', obsTone(lastNote) === 'work' ? 'bg-sand text-ink-soft' : 'bg-forest-50 text-forest-700')}>{t(`perf.season.tone.${obsTone(lastNote) === 'work' ? 'work' : 'plus'}`)}</span>
               </figcaption>
-              <blockquote className="mt-1 text-[14px] leading-snug text-ink">{quote(lastNote.note!, lang)}</blockquote>
-              <div className="mt-1 text-[11.5px] text-ink-muted">
-                {fmtDate(lastNote.date, lang, { day: 'numeric', month: 'long' })}{ctx ? ` · ${lastNote.minute ? t('perf.season.inMatchMin', { opponent: ctx.opponent, min: lastNote.minute }) : t('perf.season.inMatch', { opponent: ctx.opponent })}` : ses ? ` · ${ses.title}` : ''}
+              <blockquote className="mt-1.5 text-[15px] italic leading-snug text-ink">{quote(lastNote.note!, lang)}</blockquote>
+              <div className="mt-1.5 text-[12.5px] text-ink-muted">
+                {fmtDate(lastNote.date, lang, { day: 'numeric', month: 'long' })}{ctx ? `, ${lastNote.minute ? t('perf.season.inMatchMin', { opponent: ctx.opponent, min: lastNote.minute }) : t('perf.season.inMatch', { opponent: ctx.opponent })}` : ses ? `, ${ses.title}` : ''}
               </div>
             </figure>
           )}
-          <Link to="/app/joueur/parcours" className="mt-3 inline-flex min-h-[44px] items-center gap-1.5 text-[13.5px] font-semibold text-forest-700 hover:underline">{t('perf.season.open')}<ArrowRight size={15} aria-hidden="true" /></Link>
+          <Link to="/app/joueur/parcours" className="link mt-4 inline-flex min-h-[44px] items-center text-[14px]">{t('perf.season.open')}</Link>
         </>
       )}
     </section>
@@ -124,9 +124,9 @@ export function SeasonCard({ d }: { d: PerfData }) {
 function NoLink() {
   const { t } = useT('player')
   return (
-    <div className="rounded-xl bg-sand/60 px-3 py-3 text-sm text-ink-muted">
+    <div className="text-[14.5px] leading-relaxed text-ink-muted">
       {t('perf.obj.noLink')}
-      <div className="mt-2"><Link to="/app/joueur/parcours" className="btn-outline btn-sm min-h-[44px]">{t('perf.link.cta')}</Link></div>
+      <div className="mt-3"><Link to="/app/joueur/parcours" className="btn-outline btn-sm min-h-[44px] px-4">{t('perf.link.cta')}</Link></div>
     </div>
   )
 }

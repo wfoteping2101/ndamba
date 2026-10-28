@@ -94,12 +94,10 @@ export default function MatchSheet() {
         </div>
       </div>
 
-      <div className="mb-1 hidden text-xs font-semibold uppercase tracking-[0.16em] text-ink-muted print:block">{BRAND.name} · {t('sheet.printTitle')}</div>
+      <div className="mb-1 hidden text-xs font-semibold text-ink-muted print:block">{t('sheet.printTitle')}, {BRAND.name}</div>
 
       {/* match plate */}
-      <section className="print-plate relative mb-5 overflow-hidden rounded-[26px] bg-forest-600 text-cream shadow-card">
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-72 w-72 print:hidden -translate-x-1/2 -translate-y-1/2 rounded-full border-[2px] border-white/[0.07]" aria-hidden="true" />
-        <div className="pointer-events-none absolute inset-y-0 left-1/2 w-[2px] print:hidden bg-white/[0.07]" aria-hidden="true" />
+      <section className="print-plate relative mb-5 overflow-hidden rounded-[22px] bg-forest-600 text-cream">
         <div className="relative px-5 pb-5 pt-4 sm:px-8 sm:pb-7 sm:pt-6">
           <div className="flex flex-wrap items-center justify-center gap-2 text-center">
             <StatusBadge status={match.status} toScore={match.status === 'planned' && match.date < todayISO()} />
@@ -109,11 +107,11 @@ export default function MatchSheet() {
             <TeamSide name={left.name} us={left.us} align="right" />
             <div className="text-center">
               {done ? (
-                <div className="font-display text-[44px] font-semibold leading-none tabular-nums sm:text-[60px]">{left.score}<span className="px-1 text-cream/40 sm:px-2">-</span>{right.score}</div>
+                <div className="font-display text-[44px] leading-none tabular-nums sm:text-[60px]">{left.score}<span className="mx-2.5 inline-block h-[0.07em] w-[0.32em] rounded-full bg-cream/40 align-middle sm:mx-3" aria-label="-" />{right.score}</div>
               ) : (
-                <div className="font-display text-[30px] font-semibold leading-none tabular-nums sm:text-[44px]">{match.time || t('matches.vs')}</div>
+                <div className="font-display text-[30px] leading-none tabular-nums sm:text-[44px]">{match.time || t('matches.vs')}</div>
               )}
-              {res && <div className={cx('mt-2 inline-block rounded-full px-2.5 py-0.5 text-[11px] font-bold', res === 'W' ? 'bg-sun-500 text-night-900' : res === 'L' ? 'bg-clay-500 text-white' : 'bg-white/15 text-cream')}>{t(`matches.result.${res}`)}</div>}
+              {res && <div className={cx('mt-2 inline-block rounded-full px-2.5 py-0.5 text-[12px] font-semibold', res === 'W' ? 'bg-cream text-forest-700' : res === 'L' ? 'bg-clay-500 text-white' : 'bg-white/15 text-cream')}>{t(`matches.result.${res}`)}</div>}
             </div>
             <TeamSide name={right.name} us={right.us} align="left" />
           </div>
@@ -147,20 +145,20 @@ export default function MatchSheet() {
         <div className="space-y-5">
           <section className="card card-pad" aria-labelledby="lu-h">
             <div className="mb-3 flex items-baseline justify-between">
-              <h2 id="lu-h" className="font-display text-lg font-semibold">{t('sheet.lineup')}</h2>
+              <h2 id="lu-h" className="font-display text-lg">{t('sheet.lineup')}</h2>
               <span className="text-sm font-semibold tabular-nums text-ink-muted">{match.formation}</span>
             </div>
             <div className="mx-auto max-w-[360px]">
               <LineupBoard format={match.format} formation={match.formation} lineup={match.lineup} players={players} captainId={match.captainId} />
             </div>
             {captain && (
-              <div className="mt-3 flex items-center gap-2 rounded-xl bg-terra-50 px-3 py-2 text-sm">
-                <Crown size={16} className="text-terra-600" /><span className="text-ink-muted">{t('sheet.captain')}</span><span className="font-semibold text-ink">{captain.name}</span>
+              <div className="mt-3 flex items-center gap-2 rounded-xl bg-sand px-3 py-2 text-sm">
+                <Crown size={16} strokeWidth={1.75} className="text-forest-700" /><span className="text-ink-muted">{t('sheet.captain')}</span><span className="font-semibold text-ink">{captain.name}</span>
               </div>
             )}
           </section>
           <section className="card card-pad" aria-labelledby="bench-h">
-            <h2 id="bench-h" className="mb-2 font-display text-lg font-semibold">{t('sheet.bench')}</h2>
+            <h2 id="bench-h" className="mb-2 font-display text-lg">{t('sheet.bench')}</h2>
             {bench.length === 0 ? <p className="text-sm text-ink-muted">{t('sheet.noBench')}</p> : (
               <ul className="grid grid-cols-1 gap-1 min-[420px]:grid-cols-2 print:grid-cols-1">
                 {[...bench].sort(byNumber).map((p) => (
@@ -183,8 +181,8 @@ export default function MatchSheet() {
             <Link to={`/app/analyse/rapport/${match.id}`} className="card card-pad flex items-center gap-4 transition hover:border-forest-300">
               <NjangiDial value={njangi.total} size={64} label={t('matches.njangi')} />
               <div className="min-w-0">
-                <div className="text-xs font-semibold text-terra-600">{t('matches.njangi')}</div>
-                <div className="font-display text-lg font-semibold text-ink">{njangiLabel(njangi.total, lang)}<span className="ml-2 font-sans text-sm font-semibold tabular-nums text-ink-muted">{njangi.total.toLocaleString(lang === 'fr' ? 'fr-FR' : 'en-US', { maximumFractionDigits: 1 })} / 100</span></div>
+                <div className="text-[13px] font-semibold text-forest-700">{t('matches.njangi')}</div>
+                <div className="font-display text-lg text-ink">{njangiLabel(njangi.total, lang)}<span className="ml-2 font-sans text-sm font-semibold tabular-nums text-ink-muted">{njangi.total.toLocaleString(lang === 'fr' ? 'fr-FR' : 'en-US', { maximumFractionDigits: 1 })} / 100</span></div>
                 <div className="text-xs text-ink-muted">{t('sheet.events', { count: eventCount })}</div>
               </div>
             </Link>
@@ -192,17 +190,14 @@ export default function MatchSheet() {
 
           <section className="card overflow-hidden" aria-labelledby="plan-h">
             <div className="flex items-center justify-between border-b border-line px-4 py-3 sm:px-5">
-              <h2 id="plan-h" className="font-display text-lg font-semibold">{t('sheet.plan')}</h2>
+              <h2 id="plan-h" className="font-display text-lg">{t('sheet.plan')}</h2>
               <Link to={`/app/matchs/${match.id}/modifier`} className="no-print btn-ghost btn-sm"><Pencil size={14} />{t('sheet.edit')}</Link>
             </div>
             {planFilled ? (
               <dl className="divide-y divide-line/70">
-                {MOMENTS.map((k, i) => (
-                  <div key={k} className="grid gap-1 px-4 py-3 sm:grid-cols-[170px_1fr] sm:gap-4 sm:px-5">
-                    <dt className="flex items-center gap-2 text-sm font-semibold text-ink">
-                      <span className={cx('flex h-6 w-6 shrink-0 items-center justify-center rounded-full font-display text-[12px]', k === 'setPieces' ? 'bg-sun-100 text-sun-700' : 'bg-forest-600 text-cream')}>{k === 'setPieces' ? '+' : i + 1}</span>
-                      {t(`moments.${k}.title`)}
-                    </dt>
+                {MOMENTS.map((k) => (
+                  <div key={k} className="grid gap-1 px-4 py-3.5 sm:grid-cols-[180px_1fr] sm:gap-5 sm:px-5">
+                    <dt className="text-[14px] font-semibold text-ink">{t(`moments.${k}.title`)}</dt>
                     <dd className={cx('whitespace-pre-line text-[14.5px] leading-6', match.plan?.[k]?.trim() ? 'text-ink-soft' : 'text-ink-faint')}>{match.plan?.[k]?.trim() || t('sheet.planEmpty')}</dd>
                   </div>
                 ))}
@@ -218,7 +213,7 @@ export default function MatchSheet() {
           {!done && (
             <section className="card card-pad no-print" aria-labelledby="convo-h">
               <div className="mb-1 flex items-center justify-between gap-2">
-                <h2 id="convo-h" className="font-display text-lg font-semibold">{t('sheet.convocation')}</h2>
+                <h2 id="convo-h" className="font-display text-lg">{t('sheet.convocation')}</h2>
                 <button type="button" className="btn-ghost btn-sm" onClick={() => setConvoOpen(true)}>{t('common:actions.open')}</button>
               </div>
               <p className="mb-3 text-[13px] text-ink-muted">{t('sheet.convoHint')}</p>
@@ -241,7 +236,7 @@ export default function MatchSheet() {
 function TeamSide({ name, us, align }: { name: string; us: boolean; align: 'left' | 'right' }) {
   return (
     <div className={cx('min-w-0', align === 'right' ? 'text-right' : 'text-left')}>
-      <div className={cx('font-display text-[17px] font-semibold leading-tight sm:text-[24px]', us ? 'text-cream' : 'text-cream/90')}>{name}</div>
+      <div className={cx('font-display text-[16px] leading-tight sm:text-[24px]', us ? 'text-cream' : 'text-cream/85')}>{name}</div>
       {us && <div className={cx('mt-1.5 h-1 w-8 rounded-full bg-sun-500', align === 'right' ? 'ml-auto' : '')} aria-hidden="true" />}
     </div>
   )
@@ -264,7 +259,7 @@ function ScoreModal({ open, onClose, match, teamName }: { open: boolean; onClose
       <div className="space-y-3">
         {ordered.map((r) => (
           <div key={r.name} className="flex items-center justify-between gap-3 rounded-2xl border border-line px-4 py-3">
-            <span className="min-w-0 truncate font-display text-lg font-semibold">{r.name}</span>
+            <span className="min-w-0 truncate font-display text-lg">{r.name}</span>
             <Stepper value={r.v} onChange={r.set} max={40} lessLabel={t('sheet.less', { team: r.name })} moreLabel={t('sheet.more', { team: r.name })} big />
           </div>
         ))}

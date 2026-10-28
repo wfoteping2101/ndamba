@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { BookOpen, CalendarCheck, ChevronLeft, ChevronRight, MapPin, Plus, Trophy } from 'lucide-react'
+import { BookOpen, CalendarCheck, ChevronLeft, ChevronRight, MapPin, Plane, Plus, Trophy } from 'lucide-react'
 import { MolaMark } from '../../ui/brand'
 import { Callout, Modal, PageHeader } from '../../ui'
 import { useT } from '../../i18n'
@@ -69,7 +69,7 @@ export default function WeekPlanner() {
 
   return (
     <div>
-      <PageHeader eyebrow={t('week.eyebrow')} title={t('week.title')} subtitle={t('week.subtitle')} />
+      <PageHeader title={t('week.title')} subtitle={t('week.subtitle')} />
       {!team && <CreateTeamCard />}
 
       {/* week navigation */}
@@ -77,8 +77,8 @@ export default function WeekPlanner() {
         <div className="flex items-center gap-1">
           <button type="button" className="btn-outline h-11 w-11 p-0" onClick={() => go(-1)} aria-label={t('week.prev')}><ChevronLeft size={18} /></button>
           <div className="min-w-[170px] px-2 text-center">
-            <div className="font-display text-lg font-semibold leading-tight text-ink">{isCurrent ? t('week.thisWeek') : t('week.weekOf', { date: fmtDate(monday, lang, { day: 'numeric', month: 'long' }) })}</div>
-            <div className="text-xs text-ink-muted">{weekLabel}</div>
+            <div className="font-display text-lg leading-tight text-ink">{isCurrent ? t('week.thisWeek') : t('week.weekOf', { date: fmtDate(monday, lang, { day: 'numeric', month: 'long' }) })}</div>
+            <div className="text-[12.5px] tabular-nums text-ink-muted">{weekLabel}</div>
           </div>
           <button type="button" className="btn-outline h-11 w-11 p-0" onClick={() => go(1)} aria-label={t('week.next')}><ChevronRight size={18} /></button>
           {!isCurrent && <button type="button" className="btn-ghost btn-sm ml-1" onClick={() => setSp({}, { replace: true })}>{t('common:misc.today')}</button>}
@@ -88,8 +88,8 @@ export default function WeekPlanner() {
             <CalendarCheck size={17} aria-hidden="true" />{hasPlan ? t('week.planDone') : t('week.planNothing')}
           </span>
         ) : planTarget ? (
-          <button type="button" className="btn-accent min-h-[44px]" onClick={runPlan} disabled={busy || quota.limited}>
-            <MolaMark size={16} aria-hidden="true" />{t('week.plan')}
+          <button type="button" className="btn-sun min-h-[44px]" onClick={runPlan} disabled={busy || quota.limited}>
+            <MolaMark size={17} ball="#0B5D3B" aria-hidden="true" />{t('week.plan')}
           </button>
         ) : (
           <Link to="/app/matchs/nouveau" className="btn-outline min-h-[44px]"><Trophy size={16} aria-hidden="true" />{t('week.addMatch')}</Link>
@@ -112,15 +112,15 @@ export default function WeekPlanner() {
           const empty = !ss.length && !ms.length
           return (
             <section key={d} aria-label={fmtDate(d, lang, { weekday: 'long', day: 'numeric', month: 'long' })}
-              className={cx('flex min-w-0 flex-col rounded-2xl border p-2.5 md:min-h-[240px]', isToday ? 'border-terra-300 bg-paper ring-2 ring-terra-100' : ms.length ? 'border-forest-300 bg-forest-50/60' : 'border-line bg-paper/70')}>
+              className={cx('flex min-w-0 flex-col rounded-[14px] border p-2.5 md:min-h-[240px]', isToday ? 'border-forest-600 bg-paper ring-1 ring-forest-600' : ms.length ? 'border-forest-100 bg-forest-50/70' : past ? 'border-line/70 bg-cream' : 'border-line bg-paper')}>
               <header className="mb-2 flex items-center justify-between gap-1 md:flex-col md:items-start">
                 <div className="flex items-baseline gap-1.5 md:flex-col md:gap-0">
-                  <span className={cx('text-[11px] font-semibold uppercase tracking-wide', isToday ? 'text-terra-600' : 'text-ink-muted')}>{isToday ? t('common:misc.today') : fmtDate(d, lang, { weekday: 'short' })}</span>
-                  <span className="font-display text-xl font-semibold leading-none text-ink">{fmtDate(d, lang, { day: 'numeric' })}</span>
+                  <span className={cx('text-[12px] font-semibold', isToday ? 'text-forest-700' : 'text-ink-muted')}>{isToday ? t('common:misc.today') : fmtDate(d, lang, { weekday: 'short' })}</span>
+                  <span className="font-display text-xl leading-none tabular-nums text-ink">{fmtDate(d, lang, { day: 'numeric' })}</span>
                 </div>
                 {info.label && (
-                  <span className={cx('rounded-md px-1.5 py-0.5 text-[11px] font-bold tabular-nums', info.kind === 'match' ? 'bg-forest-600 text-cream' : info.kind === 'pre' ? 'bg-sand text-ink-soft' : 'bg-sand/70 text-ink-muted')} title={t(`dayHint.${info.hint}`)}>
-                    {info.label}{info.alt && <span className="font-medium text-ink-faint"> · {info.alt}</span>}
+                  <span className={cx('rounded-full px-2 py-0.5 text-[11.5px] font-semibold tabular-nums', info.kind === 'match' ? 'bg-ink text-cream' : info.kind === 'pre' ? 'bg-sand text-ink-soft' : 'bg-sand/70 text-ink-muted')} title={t(`dayHint.${info.hint}`)}>
+                    {info.label}{info.alt && <span className="font-medium text-ink-faint"> / {info.alt}</span>}
                   </span>
                 )}
               </header>
@@ -128,15 +128,15 @@ export default function WeekPlanner() {
               <div className="flex flex-1 flex-col gap-1.5">
                 {ms.map((m) => (
                   <Link key={m.id} to={`/app/matchs/${m.id}`} className="block rounded-xl bg-forest-600 p-2.5 text-cream hover:bg-forest-700">
-                    <div className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wide text-sun-300"><Trophy size={12} aria-hidden="true" />{m.status === 'done' ? t('week.played') : t('week.match')}{m.time ? ` · ${m.time}` : ''}</div>
-                    <div className="mt-0.5 text-sm font-semibold leading-snug">{m.home ? '' : '@ '}{m.opponent}</div>
-                    {m.status === 'done' ? <div className="font-display text-lg font-semibold">{m.scoreUs} : {m.scoreThem}</div>
+                    <div className="flex items-center gap-1.5 text-[12px] font-semibold text-cream/80"><Trophy size={12} aria-hidden="true" />{m.status === 'done' ? t('week.played') : t('week.match')}{m.time && <span className="tabular-nums">{m.time}</span>}{!m.home && <Plane size={12} className="ml-auto" aria-label={t('week.awayAria')} />}</div>
+                    <div className="mt-0.5 text-sm font-semibold leading-snug">{m.opponent}</div>
+                    {m.status === 'done' ? <div className="font-display text-lg tabular-nums">{m.scoreUs}-{m.scoreThem}</div>
                       : m.venue ? <div className="mt-0.5 flex items-center gap-1 truncate text-[11px] text-cream/75"><MapPin size={11} aria-hidden="true" />{m.venue}</div> : null}
                   </Link>
                 ))}
                 {ss.map((s) => (
-                  <Link key={s.id} to={`/app/seances/${s.id}`} className="block rounded-xl border border-line bg-paper p-2.5 shadow-card transition hover:border-forest-300 hover:shadow-lift">
-                    <div className="flex items-center justify-between gap-1"><MdBadge md={s.md} /><span className="text-[11px] tabular-nums text-ink-muted">{sessionMinutes(s)}'</span></div>
+                  <Link key={s.id} to={`/app/seances/${s.id}`} className="block rounded-xl border border-line bg-paper p-2.5 transition hover:border-forest-300">
+                    <div className="flex items-center justify-between gap-1"><MdBadge md={s.md} /><span className="text-[12px] tabular-nums text-ink-muted">{sessionMinutes(s)} min</span></div>
                     <div className="mt-1 line-clamp-2 text-[13px] font-semibold leading-snug text-ink">{s.title}</div>
                     <div className="mt-1.5"><IntensityProfile session={s} height={12} /></div>
                   </Link>
@@ -162,12 +162,12 @@ export default function WeekPlanner() {
         <section className="card card-pad">
           <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
             <div>
-              <h2 className="font-display text-xl font-semibold text-ink">{t('week.loadTitle')}</h2>
-              <p className="text-xs text-ink-muted">{t('week.loadHint')}</p>
+              <h2 className="font-display text-xl text-ink">{t('week.loadTitle')}</h2>
+              <p className="mt-0.5 text-[12.5px] text-ink-muted">{t('week.loadHint')}</p>
             </div>
             <div className="flex gap-5 text-right">
-              <div><div className="text-[11px] text-ink-muted">{t('builder.minutes')}</div><div className="font-display text-2xl font-semibold leading-none text-ink">{weekMinutes}</div></div>
-              <div><div className="text-[11px] text-ink-muted">{t('builder.load')}</div><div className="font-display text-2xl font-semibold leading-none text-terra-600">{weekLoad}</div></div>
+              <div><div className="text-[12px] text-ink-muted">{t('builder.minutes')}</div><div className="mt-0.5 font-display text-[26px] leading-none tabular-nums text-ink">{weekMinutes}</div></div>
+              <div><div className="text-[12px] text-ink-muted">{t('builder.load')}</div><div className="mt-0.5 font-display text-[26px] leading-none tabular-nums text-forest-600">{weekLoad}</div></div>
             </div>
           </div>
           <WeekLoadChart days={loadDays} />
@@ -177,7 +177,7 @@ export default function WeekPlanner() {
         </section>
 
         <section className="card card-pad">
-          <h2 className="mb-2 font-display text-xl font-semibold text-ink">{t('week.logicTitle')}</h2>
+          <h2 className="mb-2 font-display text-xl text-ink">{t('week.logicTitle')}</h2>
           <p className="mb-3 text-sm text-ink-soft">{t('week.logicIntro')}</p>
           <ul className="mb-4 space-y-2">
             {(['MD+1', 'MD-4', 'MD-3', 'MD-2', 'MD-1'] as const).map((m) => (
@@ -209,7 +209,7 @@ export default function WeekPlanner() {
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2"><MdBadge md={s.md} /><span className="text-xs text-ink-muted">{fmtDay(s.date, lang)}</span></div>
                       <div className="truncate font-semibold text-ink">{s.title}</div>
-                      <div className="text-xs text-ink-muted">{t('blocksCount', { count: s.blocks.length })} · {sessionMinutes(s)} {t('common:misc.minutes')}</div>
+                      <div className="flex gap-x-3 text-[12.5px] text-ink-muted"><span>{t('blocksCount', { count: s.blocks.length })}</span><span className="tabular-nums">{sessionMinutes(s)} {t('common:misc.minutes')}</span></div>
                     </div>
                     <ChevronRight size={16} className="text-ink-faint" aria-hidden="true" />
                   </Link>

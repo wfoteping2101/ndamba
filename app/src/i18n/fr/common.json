@@ -1,5 +1,14 @@
 {
-  "nav": { "books": "Les livres", "app": "L'application", "mola": "Mola", "premium": "Premium", "start": "Commencer", "openApp": "Ouvrir l'app" },
+  "nav": {
+    "books": "Les livres",
+    "app": "L'application",
+    "mola": "Mola",
+    "premium": "Premium",
+    "start": "Commencer",
+    "openApp": "Ouvrir l'app",
+    "menu": "Menu",
+    "close": "Fermer le menu"
+  },
   "footer": {
     "motto": "Le ballon doit voyager. Mais il doit savoir où il va.",
     "products": "Ndamba",
@@ -8,16 +17,74 @@
     "app": "L'application",
     "mola": "Mola, l'agent qui agit",
     "mantraTitle": "Notre mantra",
-    "mantra": "Une nation africaine championne du monde en 2030 ou en 2034."
+    "mantra": "Une nation africaine championne du monde en 2030 ou en 2034.",
+    "project": "Le projet",
+    "review": "Revue du projet",
+    "brand": "La marque Ndamba",
+    "premium": "Premium",
+    "rights": "Lemon Network Solutions",
+    "home": "Accueil Ndamba"
   },
   "app": {
-    "home": "Accueil", "mola": "Mola", "drills": "Exercices", "sessions": "Séances", "week": "Semaine", "team": "Équipe", "matches": "Matchs",
-    "analysis": "Analyse", "video": "Vidéo", "player": "Espace joueur", "books": "Livres", "premium": "Premium", "settings": "Réglages", "vs": "contre",
-    "groups": { "training": "Entraînement", "team": "Équipe", "analysis": "Analyse", "me": "Moi" },
-    "tabs": { "training": "Entraîner", "analysis": "Analyse", "more": "Plus" }
+    "home": "Accueil",
+    "mola": "Mola",
+    "drills": "Exercices",
+    "sessions": "Séances",
+    "week": "Semaine",
+    "team": "Équipe",
+    "matches": "Matchs",
+    "analysis": "Analyse",
+    "video": "Vidéo",
+    "player": "Espace joueur",
+    "books": "Livres",
+    "premium": "Premium",
+    "settings": "Réglages",
+    "vs": "contre",
+    "groups": {
+      "training": "Entraînement",
+      "team": "Équipe",
+      "analysis": "Analyse",
+      "me": "Moi"
+    },
+    "tabs": {
+      "training": "Entraîner",
+      "analysis": "Analyse",
+      "more": "Plus"
+    },
+    "menu": "Menu",
+    "mainNav": "Navigation principale",
+    "teamLine": "{{age}}, {{format}} contre {{format}}, {{formation}}",
+    "switchTeam": "Changer d'équipe"
   },
-  "actions": { "save": "Enregistrer", "cancel": "Annuler", "delete": "Supprimer", "edit": "Modifier", "add": "Ajouter", "close": "Fermer", "back": "Retour", "create": "Créer", "print": "Imprimer", "share": "Partager", "export": "Exporter", "confirm": "Confirmer", "open": "Ouvrir", "next": "Suivant", "previous": "Précédent", "done": "Terminé", "seeAll": "Tout voir", "search": "Rechercher" },
-  "intentions": { "sortir": "Sortir", "progresser": "Progresser", "fixer": "Fixer", "finir": "Finir", "respirer": "Respirer", "reprendre": "Reprendre", "regarder-devant": "Regarder devant" },
+  "actions": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "close": "Fermer",
+    "back": "Retour",
+    "create": "Créer",
+    "print": "Imprimer",
+    "share": "Partager",
+    "export": "Exporter",
+    "confirm": "Confirmer",
+    "open": "Ouvrir",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "done": "Terminé",
+    "seeAll": "Tout voir",
+    "search": "Rechercher"
+  },
+  "intentions": {
+    "sortir": "Sortir",
+    "progresser": "Progresser",
+    "fixer": "Fixer",
+    "finir": "Finir",
+    "respirer": "Respirer",
+    "reprendre": "Reprendre",
+    "regarder-devant": "Regarder devant"
+  },
   "intentionsHint": {
     "sortir": "Construire depuis l'arrière en attirant pour libérer",
     "progresser": "Traverser les lignes adverses",
@@ -27,28 +94,137 @@
     "reprendre": "Cinq secondes de contre-pression après la perte",
     "regarder-devant": "Après la récupération, le premier regard va devant"
   },
-  "skills": { "scan": "Scan", "controle": "Contrôle orienté", "passe": "Passe avec intention", "conduite": "Conduite", "dribble-njangi": "Dribble njangi", "appels": "Appels et courses pour les autres", "communication": "Communication", "protection": "Protection du ballon", "contre-pression": "Contre-pression", "decision": "Prise de décision" },
-  "families": { "technique": "Technique et combinaisons", "rondo": "Rondos", "position": "Jeux de position", "ssg": "Petits jeux", "lsg": "Grands jeux", "phase": "Phases de jeu", "transition": "Transitions", "finishing": "Finition" },
-  "md": { "MD-4": "MD-4 · Tension", "MD-3": "MD-3 · Durée", "MD-2": "MD-2 · Vitesse", "MD-1": "MD-1 · Activation", "MD+1": "MD+1 · Récupération", "youth": "Jeunes" },
-  "intensity": { "low": "Basse", "medium": "Moyenne", "high": "Haute", "very-high": "Très haute" },
-  "pieces": { "le cœur": "Le cœur", "la raison": "La raison", "les yeux": "Les yeux", "la carte": "La carte", "le souffle": "Le souffle" },
-  "positions": { "GK": "Gardien", "CB": "Défenseur central", "FB": "Latéral", "DM": "Pivot", "CM": "Milieu intérieur", "AM": "Milieu offensif", "W": "Ailier", "ST": "Attaquant" },
-  "roles": { "player": "Joueur ou joueuse", "coach": "Entraîneur ou éducateur", "analyst": "Analyste", "parent": "Parent", "manager": "Manager ou directeur technique", "federation": "Fédération ou ligue" },
+  "skills": {
+    "scan": "Scan",
+    "controle": "Contrôle orienté",
+    "passe": "Passe avec intention",
+    "conduite": "Conduite",
+    "dribble-njangi": "Dribble njangi",
+    "appels": "Appels et courses pour les autres",
+    "communication": "Communication",
+    "protection": "Protection du ballon",
+    "contre-pression": "Contre-pression",
+    "decision": "Prise de décision"
+  },
+  "families": {
+    "technique": "Technique et combinaisons",
+    "rondo": "Rondos",
+    "position": "Jeux de position",
+    "ssg": "Petits jeux",
+    "lsg": "Grands jeux",
+    "phase": "Phases de jeu",
+    "transition": "Transitions",
+    "finishing": "Finition"
+  },
+  "md": {
+    "MD-4": "MD-4, tension",
+    "MD-3": "MD-3, durée",
+    "MD-2": "MD-2, vitesse",
+    "MD-1": "MD-1, activation",
+    "MD+1": "MD+1, récupération",
+    "youth": "Jeunes"
+  },
+  "intensity": {
+    "low": "Basse",
+    "medium": "Moyenne",
+    "high": "Haute",
+    "very-high": "Très haute"
+  },
+  "pieces": {
+    "le cœur": "Le cœur",
+    "la raison": "La raison",
+    "les yeux": "Les yeux",
+    "la carte": "La carte",
+    "le souffle": "Le souffle"
+  },
+  "positions": {
+    "GK": "Gardien",
+    "CB": "Défenseur central",
+    "FB": "Latéral",
+    "DM": "Pivot",
+    "CM": "Milieu intérieur",
+    "AM": "Milieu offensif",
+    "W": "Ailier",
+    "ST": "Attaquant"
+  },
+  "roles": {
+    "player": "Joueur ou joueuse",
+    "coach": "Entraîneur ou éducateur",
+    "analyst": "Analyste",
+    "parent": "Parent",
+    "manager": "Manager ou directeur technique",
+    "federation": "Fédération ou ligue"
+  },
   "events": {
-    "PASS_OK": "Passe réussie", "PASS_LOST": "Passe perdue", "PROG": "Progressive", "LINE": "Ligne traversée", "FINAL3": "Entrée dernier tiers", "BOX": "Entrée surface",
-    "FIX2": "Fixe deux", "SWITCH": "Renversement", "LOSS": "Perte", "REGAIN5": "Reprise en 5 s", "REGAIN": "Récupération", "SHOT": "Tir", "SHOT_IN": "Tir cadré", "GOAL": "But", "NOTE": "Note"
+    "PASS_OK": "Passe réussie",
+    "PASS_LOST": "Passe perdue",
+    "PROG": "Progressive",
+    "LINE": "Ligne traversée",
+    "FINAL3": "Entrée dernier tiers",
+    "BOX": "Entrée surface",
+    "FIX2": "Fixe deux",
+    "SWITCH": "Renversement",
+    "LOSS": "Perte",
+    "REGAIN5": "Reprise en 5 s",
+    "REGAIN": "Récupération",
+    "SHOT": "Tir",
+    "SHOT_IN": "Tir cadré",
+    "GOAL": "But",
+    "NOTE": "Note"
   },
   "plans": {
-    "free": "Gratuit", "player": "Joueur Premium", "coach": "Coach Pro", "club": "Club et académie", "federation": "Fédération",
-    "perMonth": "par mois", "onQuote": "Sur devis", "approx": "environ",
+    "free": "Gratuit",
+    "player": "Joueur Premium",
+    "coach": "Coach Pro",
+    "club": "Club et académie",
+    "federation": "Fédération",
+    "perMonth": "par mois",
+    "onQuote": "Sur devis",
+    "approx": "environ",
     "features": {
-      "books": "Les deux livres en lecture libre", "drills": "Les 64 exercices de la méthode", "oneTeam": "Une équipe", "liveOne": "Un match analysé en direct", "molaBasic": "Mola pour vous guider",
-      "playerPlan": "Programme personnel et défis", "lessons": "Les 40 Leçons du Ballon", "notebook": "Ton carnet du Njangi", "videoSelf": "Tes vidéos annotées",
-      "everythingPlayer": "Tout Joueur Premium", "unlimitedSessions": "Séances illimitées", "weekPlanner": "Planification de la semaine", "liveUnlimited": "Analyse en direct illimitée", "reports": "Rapports et Indice Njangi", "video": "Analyse vidéo", "molaActions": "Mola agit pour vous",
-      "everythingCoach": "Tout Coach Pro", "teams": "Équipes illimitées", "staff": "Comptes du staff", "clubModel": "Le modèle de jeu du club", "export": "Exports et impressions",
-      "everythingClub": "Tout Club", "nationalModel": "Modèle de jeu national", "coachEducation": "Formation des entraîneurs", "support": "Accompagnement dédié"
+      "books": "Les deux livres en lecture libre",
+      "drills": "Les 64 exercices de la méthode",
+      "oneTeam": "Une équipe",
+      "liveOne": "Un match analysé en direct",
+      "molaBasic": "Mola pour vous guider",
+      "playerPlan": "Programme personnel et défis",
+      "lessons": "Les 40 Leçons du Ballon",
+      "notebook": "Ton carnet du Njangi",
+      "videoSelf": "Tes vidéos annotées",
+      "everythingPlayer": "Tout Joueur Premium",
+      "unlimitedSessions": "Séances illimitées",
+      "weekPlanner": "Planification de la semaine",
+      "liveUnlimited": "Analyse en direct illimitée",
+      "reports": "Rapports et Indice Njangi",
+      "video": "Analyse vidéo",
+      "molaActions": "Mola agit pour vous",
+      "everythingCoach": "Tout Coach Pro",
+      "teams": "Équipes illimitées",
+      "staff": "Comptes du staff",
+      "clubModel": "Le modèle de jeu du club",
+      "export": "Exports et impressions",
+      "everythingClub": "Tout Club",
+      "nationalModel": "Modèle de jeu national",
+      "coachEducation": "Formation des entraîneurs",
+      "support": "Accompagnement dédié"
     }
   },
-  "brand": { "tagline": "Le football avec intention", "philosophy": "Posséder avec intention", "motto": "Le ballon doit voyager. Mais il doit savoir où il va.", "mantra": "Une nation africaine championne du monde en 2030 ou en 2034." },
-  "misc": { "minutes": "min", "players": "joueurs", "demo": "Démo", "free": "Gratuit", "premium": "Premium", "comingSoon": "Bientôt", "loading": "Chargement", "none": "Aucun", "today": "Aujourd'hui", "tomorrow": "Demain" }
+  "brand": {
+    "tagline": "Le football avec intention",
+    "philosophy": "Posséder avec intention",
+    "motto": "Le ballon doit voyager. Mais il doit savoir où il va.",
+    "mantra": "Une nation africaine championne du monde en 2030 ou en 2034."
+  },
+  "misc": {
+    "minutes": "min",
+    "players": "joueurs",
+    "demo": "Démo",
+    "free": "Gratuit",
+    "premium": "Premium",
+    "comingSoon": "Bientôt",
+    "loading": "Chargement",
+    "none": "Aucun",
+    "today": "Aujourd'hui",
+    "tomorrow": "Demain"
+  }
 }

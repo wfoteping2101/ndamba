@@ -50,7 +50,11 @@
     "more_one": "Plus {{count}} more session today.",
     "more_other": "Plus {{count}} more sessions today.",
     "methodDrill": "Njangi Code drill",
-    "suggestFree": "Nothing planned today and no match in sight. How about an {{md}} session: big spaces and long playing time."
+    "suggestFree": "Nothing planned today and no match in sight. How about an {{md}} session: big spaces and long playing time.",
+    "intention": "Intention: {{intention}}",
+    "byMola": "Prepared by Mola",
+    "blocksLabel": "Session plan",
+    "startsAt": "Starts at minute {{n}}"
   },
   "mdWhy": {
     "MD-4": "Four days before the match: small spaces and lots of duels, the most intense day of the week.",
@@ -80,7 +84,8 @@
     "weekCreated_one": "{{count}} session prepared for match week.",
     "weekCreated_other": "{{count}} sessions prepared for match week.",
     "weekReady": "The week is already set: every day before the match has its session.",
-    "seeWeek": "See the week"
+    "seeWeek": "See the week",
+    "liveShort": "Live"
   },
   "week": {
     "title": "This week",
@@ -93,7 +98,8 @@
     "sessions_other": "{{count}} sessions",
     "rest": "rest",
     "legendSession": "Session",
-    "legendMatch": "Match"
+    "legendMatch": "Match",
+    "range": "{{from}} to {{to}}, {{n}} min of training"
   },
   "indice": {
     "eyebrow": "Indice Njangi, last match",
@@ -109,7 +115,8 @@
     "weakest": "to work on",
     "work": "Weak spot: {{sub}}. This week, the intention to train is \"{{intention}}\".",
     "prepare": "Prepare the week around \"{{intention}}\"",
-    "report": "See the report"
+    "report": "See the report",
+    "againstLine": "Against {{opponent}}, {{score}}, on {{date}}"
   },
   "subs": {
     "progression": "Progression",
@@ -119,8 +126,8 @@
     "controle": "Control"
   },
   "mola": {
-    "title": "Mola suggests",
-    "subtitle": "Your agent: it does things for you",
+    "title": "Mola",
+    "subtitle": "Your agent: it prepares, you approve",
     "noTeam": "Tell me your team's name and age group: I'll create it and add your players.",
     "missing_one": "The match against {{opponent}} is on {{day}}. {{count}} session is still missing before it: shall I prepare it?",
     "missing_other": "The match against {{opponent}} is on {{day}}. {{count}} sessions are still missing before it: shall I prepare them?",
@@ -128,7 +135,7 @@
     "indice": "Your weak spot in the last match: {{sub}}. Shall I show you the drills that train it?",
     "default": "Ask me for a session, a week plan, a match or a message to the parents: I'll take care of it.",
     "cta": "Talk to Mola",
-    "ask": "You can also ask:",
+    "ask": "You can also ask",
     "examples": {
       "session": "Prepare tomorrow's session",
       "callup": "Write the match call-up",
@@ -331,7 +338,7 @@
     "radarTitle": "My ten skills",
     "radarEmpty": "Pick a level for each skill and your radar draws itself here.",
     "coachNote": "Your coach's view comes from the team sheet. If you don't see it the same way, talk about it after training.",
-    "updated": "Updated on {{date}} · {{n}} of 10",
+    "updated": "Updated on {{date}}, {{n}} skills of 10",
     "private": "Kept on this device only."
   },
   "skillHint": {
@@ -368,7 +375,7 @@
     "partsLabel": "The five parts of the journey",
     "part": "Part {{n}}",
     "partDone": "{{n}} of {{total}} understood",
-    "partRange": "Part {{n}} · lessons {{from}} to {{to}}",
+    "partRange": "Part {{n}}, lessons {{from}} to {{to}}",
     "nextPart": "Next part: {{country}}",
     "charactersAlt": "{{heroes}}, the heroes of the novel"
   },
@@ -401,7 +408,7 @@
   },
   "lesson": {
     "number": "Lesson {{n}}",
-    "chapter": "Chapter {{n}} · {{title}}",
+    "chapter": "Chapter {{n}}: {{title}}",
     "writing": "Chapter still being written",
     "understood": "Understood",
     "imgAlt": "Illustration for chapter {{n}}: {{title}}",
@@ -471,11 +478,12 @@
       "matchLine": "Against {{opponent}}, kick-off at {{time}}.",
       "matchLineNoTime": "Against {{opponent}}.",
       "today": "Today",
-      "todayMd": "Today · {{md}}",
+      "todayMd": "Today, {{md}}",
       "form": "Form",
       "toLog": "To log",
       "load": "7-day load",
-      "lastIndice": "Indice {{v}}"
+      "lastIndice": "Indice {{v}}",
+      "number": "no. {{n}}"
     },
     "link": {
       "title": "Your squad record is not linked yet.",
@@ -687,7 +695,8 @@
       "byStaff": "Set by the staff",
       "level": "Current level: {{level}}",
       "drills": "The Njangi Code drills that train them",
-      "manage": "Manage my objectives in my journey"
+      "manage": "Manage my objectives in my journey",
+      "drillSub": "{{family}}, for {{skill}}"
     },
     "season": {
       "eyebrow": "Season {{label}}",
@@ -803,6 +812,7 @@
       "title": "Staff preview.",
       "body": "Here, every player aged 16 and over sees their week, form, load and last match. Pick a squad record to see the space with that player's data.",
       "cta": "Pick a player"
-    }
+    },
+    "none": "Not yet"
   }
 }

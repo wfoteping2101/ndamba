@@ -4,7 +4,6 @@
   "intensity": "Intensité",
   "blocksCount_one": "{{count}} bloc",
   "blocksCount_other": "{{count}} blocs",
-
   "mdName": {
     "MD-4": "Tension",
     "MD-3": "Durée",
@@ -46,9 +45,9 @@
     "lsg": "Le modèle de jeu sur un grand terrain, au plus près du match.",
     "phase": "Une phase précise du match, répétée avec une opposition réelle.",
     "transition": "Reprendre en cinq secondes, regarder devant après la récupération.",
-    "finishing": "Entrer dans la zone de finition et tirer avec intention."
+    "finishing": "Entrer dans la zone de finition et tirer avec intention.",
+    "technique": "Le geste dans le jeu : contrôles orientés, une-deux, troisième homme. Des circuits courts, répétés juste avant d'être joués."
   },
-
   "fields": {
     "title": "Titre",
     "date": "Date",
@@ -59,7 +58,6 @@
     "team": "Équipe",
     "noTeam": "Sans équipe"
   },
-
   "library": {
     "docTitle": "Exercices",
     "title": "Les 64 exercices",
@@ -86,7 +84,6 @@
     "emptyBody": "Les 64 exercices du Code Njangi sont en cours d'écriture. Ils apparaîtront ici, prêts à glisser dans vos séances.",
     "toSessions": "Composer une séance avec ces exercices"
   },
-
   "detail": {
     "back": "Tous les exercices",
     "nav": "Exercice précédent et suivant",
@@ -125,7 +122,6 @@
     "createdToast": "Séance « {{title}} » créée",
     "openSession": "Ouvrir"
   },
-
   "sessions": {
     "docTitle": "Séances",
     "eyebrow": "Entraînement",
@@ -143,17 +139,19 @@
     "deleteTitle": "Supprimer la séance ?",
     "deleteBody": "« {{title}} » du {{date}} sera supprimée. Les exercices restent dans la bibliothèque.",
     "deleted": "« {{title}} » supprimée",
-    "weekSummary_one": "{{count}} séance · {{minutes}} min · charge {{load}}",
-    "weekSummary_other": "{{count}} séances · {{minutes}} min · charge {{load}}",
     "emptyTitle": "Votre première séance",
     "emptyBody": "Donnez une date et un jour MD : Mola compose la séance avec les bons exercices, ou vous la construisez bloc par bloc.",
     "emptyCta": "Créer une séance",
     "browse": "Parcourir les exercices",
     "noUpcoming": "Rien de prévu pour l'instant",
     "noUpcomingBody": "Planifiez la semaine autour du prochain match, en une seule fois.",
-    "noPast": "Aucune séance passée"
+    "noPast": "Aucune séance passée",
+    "byMolaShort": "Mola",
+    "sumSessions": "Séances",
+    "sumMinutes": "Minutes",
+    "sumLoad": "Charge",
+    "profile": "Profil d'intensité, bloc par bloc"
   },
-
   "newSession": {
     "title": "Nouvelle séance",
     "titleWith": "Nouvelle séance avec {{drill}}",
@@ -166,7 +164,6 @@
     "submit": "Créer la séance",
     "submitMola": "Composer la séance"
   },
-
   "builder": {
     "docTitle": "Séance",
     "back": "Toutes les séances",
@@ -199,7 +196,7 @@
     "minutes": "Minutes",
     "lessMin": "Une minute de moins",
     "moreMin": "Une minute de plus",
-    "more": "Autres actions",
+    "more": "Options",
     "up": "Monter",
     "down": "Descendre",
     "remove": "Retirer",
@@ -222,7 +219,6 @@
     "copied": "Texte copié",
     "copyFail": "Copie impossible sur cet appareil"
   },
-
   "week": {
     "docTitle": "Semaine",
     "eyebrow": "Périodisation",
@@ -253,7 +249,7 @@
     "createdNone": "Chaque jour de MD-4 à MD-1 a déjà sa séance. Rien à ajouter.",
     "loadTitle": "La charge de la semaine",
     "loadHint": "Charge = minutes x intensité (basse 1, moyenne 2, haute 3, très haute 4)",
-    "loadValue": "Charge {{load}} · {{minutes}} min",
+    "loadValue": "Charge {{load}}, {{minutes}} min",
     "matchDay": "Match contre {{opponent}}",
     "restDay": "Repos",
     "showTable": "Voir le tableau",
@@ -263,9 +259,9 @@
     "logicTitle": "La logique de la semaine",
     "logicIntro": "Avec un match par semaine, la charge monte en début de semaine puis redescend pour arriver frais le jour du match. Le lendemain du match, on récupère ; le surlendemain, on se repose.",
     "logicHeat": "Par forte chaleur, avancez la séance tôt le matin ou en fin de journée, multipliez les pauses à l'ombre et l'eau. Avec les jeunes, la charge reste toujours adaptée à l'âge.",
-    "readCh14": "Le Code Njangi, chapitre 27 : la périodisation Njangi"
+    "readCh14": "Le Code Njangi, chapitre 27 : la périodisation Njangi",
+    "awayAria": "À l'extérieur"
   },
-
   "team": {
     "title": "Créez d'abord votre équipe",
     "body": "Les séances et la semaine se rangent par équipe. Un nom, une catégorie, un format : c'est tout.",
@@ -275,7 +271,6 @@
     "format": "Format",
     "create": "Créer l'équipe"
   },
-
   "upgrade": {
     "title": "Vos {{n}} séances gratuites sont utilisées",
     "body": "Avec Coach Pro, les séances sont illimitées, la semaine se planifie en un geste et Mola compose pour vous.",
@@ -284,8 +279,8 @@
     "left_one": "Offre gratuite : encore {{count}} séance possible.",
     "left_other": "Offre gratuite : encore {{count}} séances possibles."
   },
-
   "sheet": {
-    "session": "Fiche de séance"
+    "session": "Fiche de séance",
+    "footer": "Séance préparée avec {{app}}, d'après {{book}}."
   }
 }

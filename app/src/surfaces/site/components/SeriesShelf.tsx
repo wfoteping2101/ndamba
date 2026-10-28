@@ -23,12 +23,12 @@ export default function SeriesShelf({ dark = false, className }: { dark?: boolea
   )
 }
 
-function TileCaption({ n, title, dark, extra }: { n: number; title: string; dark: boolean; extra?: string }) {
+function TileCaption({ n, title, dark, available = false }: { n: number; title: string; dark: boolean; available?: boolean }) {
   const { t } = useSiteT()
   return (
     <div className="mt-3">
-      <GoldLabel dark={dark}>{t('shelf.tome', { n })}{extra && <span className={cx('ml-1.5 font-semibold tracking-[0.12em]', dark ? 'text-cream/55' : 'text-ink-muted')}>· {extra}</span>}</GoldLabel>
-      <h3 className={cx('mt-1 font-display text-[17px] font-semibold leading-snug', dark ? 'text-cream' : 'text-ink')}>{title}</h3>
+      <GoldLabel dark={dark}>{available ? t('shelf.tomeAvailable', { n }) : t('shelf.tome', { n })}</GoldLabel>
+      <h3 className={cx('mt-1 text-[16.5px] leading-snug', dark ? 'text-cream' : 'text-ink')}>{title}</h3>
     </div>
   )
 }
@@ -39,12 +39,12 @@ function AvailableTile({ n, title, dark }: { n: number; title: string; dark: boo
   return (
     <div>
       <a href={BOOKS.tome1.href} className="group block rounded-[4px_10px_10px_4px] focus-visible:outline-offset-4" aria-label={t('shelf.readLabel', { title: full })}>
-        <BookCover book="tome1" sizes="(min-width: 1024px) 180px, 46vw" className="transition duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_18px_40px_rgba(29,38,33,.22)] motion-reduce:transition-none motion-reduce:group-hover:translate-y-0" />
+        <BookCover book="tome1" sizes="(min-width: 1024px) 180px, 46vw" />
       </a>
-      <TileCaption n={n} title={title} dark={dark} extra={t('shelf.available')} />
+      <TileCaption n={n} title={title} dark={dark} available />
       <div className="mt-2.5 flex gap-2">
         <a href={BOOKS.tome1.href} className={cx('btn-sm min-h-[40px] flex-1', dark ? 'btn-sun' : 'btn-primary')} aria-label={t('shelf.readLabel', { title: full })}>
-          <BookOpen size={15} />{t('shelf.read')}
+          <BookOpen size={15} strokeWidth={1.75} />{t('shelf.read')}
         </a>
       </div>
     </div>
@@ -55,10 +55,10 @@ function SoonTile({ n, title, dark }: { n: number; title: string; dark: boolean 
   const { t } = useSiteT()
   return (
     <div>
-      <div className={cx('relative flex aspect-[2/3] flex-col items-center justify-center rounded-[4px_10px_10px_4px] border border-dashed [container-type:inline-size]',
-        dark ? 'border-white/20 bg-white/[0.03]' : 'border-ink-faint/40 bg-sand/60')}>
-        <span aria-hidden="true" className={cx('font-display text-[length:46cqw] font-light italic leading-none', dark ? 'text-cream/15' : 'text-ink/[0.13]')}>{n}</span>
-        <span className={cx('mt-[8%] text-[length:max(10px,7cqw)] font-semibold uppercase tracking-[0.2em]', dark ? 'text-cream/60' : 'text-ink-muted')}>{t('shelf.soon')}</span>
+      <div className={cx('relative flex aspect-[2/3] flex-col items-center justify-center rounded-[4px_10px_10px_4px] border [container-type:inline-size]',
+        dark ? 'border-white/15 bg-white/[0.03]' : 'border-line bg-cream')}>
+        <span aria-hidden="true" className={cx('num font-display text-[length:44cqw] leading-none', dark ? 'text-cream/15' : 'text-ink/[0.09]')}>{n}</span>
+        <span className={cx('mt-[8%] text-[length:max(12px,8cqw)] font-semibold', dark ? 'text-cream/60' : 'text-ink-muted')}>{t('shelf.soon')}</span>
       </div>
       <TileCaption n={n} title={title} dark={dark} />
     </div>

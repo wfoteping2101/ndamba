@@ -1,7 +1,7 @@
 // « Ma forme du jour »: the morning questionnaire (five items from 1 to 5) and, after the session or the
 // match, the perceived exertion (0 to 10) and the minutes. Le Code Njangi, chapter 29.
 import { useEffect, useState } from 'react'
-import { Activity, Check, HeartPulse, Pencil } from 'lucide-react'
+import { Check, Pencil } from 'lucide-react'
 import { Callout } from '../../../../ui'
 import { useT } from '../../../../i18n'
 import { sessionMinutes } from '../../../../lib/actions'
@@ -34,12 +34,12 @@ export function CheckInCard({ d }: { d: PerfData }) {
   const showRpe = (!rpeDone && ((expectRpe && done) || rpeOpen)) || editRpe
 
   return (
-    <section className="card card-pad flex h-full flex-col" aria-labelledby="ci-h">
-      <PerfHead id="ci-h" icon={<HeartPulse />} eyebrow={t('perf.form.eyebrow')} title={t('perf.form.title')}
+    <section className="flex h-full flex-col rounded-[22px] border border-line bg-paper p-5 sm:p-6" aria-labelledby="ci-h">
+      <PerfHead id="ci-h" eyebrow={t('perf.form.eyebrow')} title={t('perf.form.title')}
         hint={showForm ? t('perf.form.hint') : undefined}
         action={done && !editForm ? <button type="button" className="btn-ghost btn-sm min-h-[44px]" onClick={() => setEditForm(true)}><Pencil size={15} aria-hidden="true" />{t('common:actions.edit')}</button> : undefined} />
 
-      {form.dropping && <div className="mb-4"><Callout tone="terra" title={t('perf.form.dropTitle')}>{t('perf.form.dropBody')}</Callout></div>}
+      {form.dropping && <div className="mb-5"><Callout tone="clay" title={t('perf.form.dropTitle')}>{t('perf.form.dropBody')}</Callout></div>}
 
       {showForm ? (
         <FormQuestions initial={todays} onSave={async (v) => { await saveWellness(today, { ...v, playerId: d.me?.id }); setEditForm(false) }} onCancel={done ? () => setEditForm(false) : undefined} />
@@ -47,9 +47,9 @@ export function CheckInCard({ d }: { d: PerfData }) {
         <FormSummary w={todays!} baseline={form.baseline} />
       )}
 
-      <div className="mt-5 border-t border-line/70 pt-4">
+      <div className="mt-6 border-t border-line pt-5">
         <div className="mb-2 flex items-center justify-between gap-2">
-          <h3 className="flex items-center gap-2 text-[14px] font-semibold text-ink"><Activity size={16} aria-hidden="true" className="text-terra-600" />{t('perf.rpe.title')}</h3>
+          <h3 className="text-[17px] leading-tight text-ink">{t('perf.rpe.title')}</h3>
           {rpeDone && !editRpe && <button type="button" className="btn-ghost btn-sm min-h-[44px]" onClick={() => setEditRpe(true)}><Pencil size={15} aria-hidden="true" />{t('common:actions.edit')}</button>}
         </div>
         {showRpe ? (
@@ -69,7 +69,7 @@ export function CheckInCard({ d }: { d: PerfData }) {
           </div>
         )}
       </div>
-      <p className="mt-auto pt-4 text-[11.5px] text-ink-faint">{t('perf.form.private')}</p>
+      <p className="mt-auto pt-5 text-[12.5px] text-ink-muted">{t('perf.form.private')}</p>
     </section>
   )
 }
@@ -90,7 +90,7 @@ function FormQuestions({ initial, onSave, onCancel }: { initial: Wellness | null
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <button type="submit" className="btn-primary min-h-[44px]" disabled={!complete}><Check size={16} aria-hidden="true" />{t('perf.form.save')}</button>
         {onCancel && <button type="button" className="btn-ghost min-h-[44px]" onClick={onCancel}>{t('common:actions.cancel')}</button>}
-        <span className="text-[12px] tabular-nums text-ink-faint" aria-live="polite">{t('perf.form.progress', { n, total: FORM_KEYS.length })}</span>
+        <span className="text-[13px] tabular-nums text-ink-muted" aria-live="polite">{t('perf.form.progress', { n, total: FORM_KEYS.length })}</span>
       </div>
     </form>
   )
@@ -106,7 +106,7 @@ function FormSummary({ w, baseline }: { w: Wellness; baseline: number | null }) 
     <div>
       <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
         <div className="flex items-end gap-1.5">
-          <span className={cx('font-display text-[52px] font-semibold leading-none tabular-nums', tone.text)}>{score}</span>
+          <span className={cx('font-display text-[56px] leading-none tabular-nums', tone.text)}>{score}</span>
           <span className="pb-1.5 text-sm font-semibold text-ink-faint">/ {FORM_MAX}</span>
         </div>
         <div className="pb-1">
@@ -122,11 +122,11 @@ function FormSummary({ w, baseline }: { w: Wellness; baseline: number | null }) 
             <div className="flex h-12 items-end gap-[3px]" role="img" aria-label={`${t(`perf.form.items.${k}.label`)} : ${w[k]} / 5`}>
               {[1, 2, 3, 4, 5].map((l) => <span key={l} className={cx('flex-1 rounded-[2px]', l <= (w[k] ?? 0) ? tone.bar : 'bg-sand')} style={{ height: `${l * 20}%` }} />)}
             </div>
-            <div className="mt-1 truncate text-center text-[11px] font-medium text-ink-muted">{t(`perf.form.items.${k}.short`)}</div>
+            <div className="mt-1 truncate text-center text-[12px] font-medium text-ink-muted">{t(`perf.form.items.${k}.short`)}</div>
           </li>
         ))}
       </ul>
-      {band === 'low' && <p className="mt-3 text-[13px] text-terra-700">{t('perf.form.lowHint')}</p>}
+      {band === 'low' && <p className="mt-3 text-[13.5px] font-medium text-clay-700">{t('perf.form.lowHint')}</p>}
     </div>
   )
 }

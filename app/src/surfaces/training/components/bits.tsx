@@ -8,15 +8,15 @@ import { GATES } from '../../../lib/config'
 import { viewSize } from '../../../lib/pitch.mjs'
 import { cx } from '../../../lib/util'
 import type { DiagramSpec, Intention, MD, Session } from '../../../lib/types'
-import { INTENSITY_COLOR, INTENSITY_FACTOR, MD_TONE, blockIntensity, blockTitle, type Intensity } from './helpers'
+import { INTENSITY_COLOR, INTENSITY_FACTOR, MD_CHIP, blockIntensity, blockTitle, type Intensity } from './helpers'
 
 /* ---------- badges ---------- */
 
 export function MdBadge({ md, className }: { md: MD; className?: string }) {
   const { t } = useT('training')
   return (
-    <span title={t(`mdName.${md}`)} className={cx('inline-flex', className)}>
-      <Badge tone={MD_TONE[md]}>{md === 'youth' ? t('common:md.youth') : md}</Badge>
+    <span title={t(`mdName.${md}`)} className={cx('inline-flex items-center rounded-full px-2 py-0.5 text-[11.5px] font-semibold tabular-nums', MD_CHIP[md] ?? 'bg-sand text-ink-soft', className)}>
+      {md === 'youth' ? t('common:md.youth') : md}
     </span>
   )
 }
@@ -26,7 +26,7 @@ export function IntentionBadge({ i }: { i: Intention }) {
   const { t } = useT('training')
   return (
     <span title={t(`common:intentionsHint.${i}`)} className="inline-flex">
-      <Badge tone={REFLEXES.includes(i) ? 'terra' : 'forest'}>{t(`common:intentions.${i}`)}</Badge>
+      <Badge tone={REFLEXES.includes(i) ? 'neutral' : 'forest'}>{t(`common:intentions.${i}`)}</Badge>
     </span>
   )
 }
@@ -86,7 +86,7 @@ export function LazyPitch({ spec, width = 360, className, title, fit }: { spec?:
 /** Placeholder used when a block has no diagram (free block or drill not written yet). */
 export function NoDiagram({ label, className }: { label?: string; className?: string }) {
   return (
-    <div className={cx('grid aspect-[4/3] w-full place-items-center rounded-xl border border-dashed border-line bg-sand/60 px-2 text-center text-[11px] font-semibold uppercase tracking-wide text-ink-faint', className)}>
+    <div className={cx('grid aspect-[4/3] w-full place-items-center rounded-xl border border-dashed border-line bg-sand/60 px-2 text-center text-[12px] font-semibold text-ink-faint', className)}>
       {label}
     </div>
   )
@@ -110,7 +110,7 @@ export function IntensityProfile({ session, height = 56, labels = false, interac
           return (
             <div key={b.id} role={interactive ? 'listitem' : undefined} tabIndex={interactive ? 0 : undefined} aria-label={interactive ? label : undefined}
               onPointerEnter={() => interactive && setHover(i)} onPointerLeave={() => interactive && setHover(null)} onFocus={() => interactive && setHover(i)} onBlur={() => interactive && setHover(null)}
-              className="relative flex h-full min-w-[6px] flex-col justify-end outline-none" style={{ flexGrow: Number(b.minutes) || 1, flexBasis: 0 }}>
+              className="relative flex h-full min-w-[6px] flex-col justify-end rounded-t-[4px] focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest-500" style={{ flexGrow: Number(b.minutes) || 1, flexBasis: 0 }}>
               <div className={cx('w-full rounded-t-[4px] transition-opacity', hover !== null && hover !== i && 'opacity-60')} style={{ height: `${(f / 4) * 100}%`, background: INTENSITY_COLOR[lvl] }} />
             </div>
           )
@@ -123,7 +123,7 @@ export function IntensityProfile({ session, height = 56, labels = false, interac
       )}
       {interactive && hover !== null && session.blocks[hover] && (
         <div className="pointer-events-none absolute -top-2 left-1/2 z-10 w-max max-w-[240px] -translate-x-1/2 -translate-y-full rounded-lg bg-night-800 px-2.5 py-1.5 text-xs text-cream shadow-lift">
-          <div className="font-semibold">{session.blocks[hover].minutes} min · {t(`common:intensity.${blockIntensity(session.blocks[hover], session.md)}`)}</div>
+          <div className="font-semibold">{session.blocks[hover].minutes} min, {t(`common:intensity.${blockIntensity(session.blocks[hover], session.md)}`).toLowerCase()}</div>
           <div className="truncate text-cream/75">{hover + 1}. {blockTitle(session.blocks[hover], lang)}</div>
         </div>
       )}
@@ -179,7 +179,7 @@ export function UpgradeCard({ compact = false }: { compact?: boolean }) {
       <div className="flex items-start gap-3">
         <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sun-500 text-ink"><Crown size={20} /></div>
         <div className="min-w-0">
-          <h3 className="font-display text-lg font-semibold text-ink">{t('upgrade.title', { n: GATES.sessionsFree })}</h3>
+          <h3 className="font-display text-lg text-ink">{t('upgrade.title', { n: GATES.sessionsFree })}</h3>
           <p className="mt-1 text-sm text-ink-soft">{t('upgrade.body')}</p>
           {!compact && <p className="mt-1 text-sm text-ink-muted">{t('upgrade.free')}</p>}
           <Link to="/app/premium" className="btn-sun btn-sm mt-3">{t('upgrade.cta')}</Link>
