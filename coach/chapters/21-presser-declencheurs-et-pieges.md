@@ -155,7 +155,7 @@ Le pressing le plus rentable du Njangi n'est pas celui que l'on prépare, c'est 
 
 Le premier pas décide de tout. Le joueur qui a perdu le ballon dit « Reprends » et attaque aussitôt : c'est lui le plus proche, et c'est souvent lui qui reprend. Après 5 secondes sans récupération, l'équipe arrête et se replie en bloc : continuer, c'est s'épuiser. On ne contre-presse pas non plus quand la perte survient loin de nos joueurs, quand le receveur est déjà face au jeu avec de l'espace, ou quand la défense de repos est en infériorité. La faute tactique, enfin, n'est pas un plan : elle coûte des cartons et ne remplace jamais une défense de repos bien placée.
 
-Le sous-indice **Reprise** de l'Indice Njangi (chapitre 32) mesure exactement ce réflexe : les ballons repris dans les 5 secondes, rapportés à toutes nos pertes. Une équipe qui perd souvent le ballon mais le reprend aussitôt reste une équipe qui contrôle le match. C'est aussi le sous-indice qui baisse le premier quand la fatigue arrive : quand il chute en seconde période, il est temps de changer de jambes ou de baisser le bloc.
+Le sous-indice **Reprise** de l'Indice Njangi (chapitre 32) mesure exactement ce réflexe : les ballons repris dans les 5 secondes, rapportés à toutes nos pertes. Une équipe qui perd souvent le ballon mais le reprend aussitôt reste une équipe qui contrôle le match. C'est souvent l'un des premiers à baisser quand la fatigue arrive : quand il chute en seconde période, il est temps de changer de jambes ou de baisser le bloc.
 
 ## Quand presser haut, quand attendre
 

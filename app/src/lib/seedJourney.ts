@@ -303,13 +303,15 @@ async function seedTeam(team: Team, li: 0 | 1) {
     const strong = [...rated].sort((a, b) => (lv[b]! - lv[a]!) || (pr() - 0.5))
     const weak = [...rated].sort((a, b) => (lv[a]! - lv[b]!) || (pr() - 0.5))
     const n = heroes.has(p.id) ? 7 : 3 + Math.floor(pr() * 3)
+    const usedSessions = new Set<string>()
     for (let i = 0; i < n; i++) {
       const tone: ObsTone = i % 3 === 2 ? 'work' : 'plus'
       const skill = tone === 'plus' ? strong[i % Math.min(3, strong.length)] : weak[Math.floor(i / 3) % Math.min(2, weak.length)]
       const useMatch = done.length > 0 && pr() < 0.35
       const m = useMatch ? pick(pr, done.filter((x) => x.lineup.some((l) => l.playerId === p.id) || x.subs.includes(p.id))) : undefined
-      const sPool = recent.filter((s) => presentAt(p.id, s.id))
+      const sPool = recent.filter((s) => presentAt(p.id, s.id) && !usedSessions.has(s.id))
       const s = !m && sPool.length ? sPool[Math.floor(pr() * sPool.length)] : undefined
+      if (s) usedSessions.add(s.id)
       if (!m && !s) continue
       const tag = SKILL_TAG[skill]?.[tone] ?? (tone === 'plus' ? pick(pr, ['effort', 'focus', 'leader']) : pick(pr, ['distracted', 'frustration']))
       const extra = tone === 'plus' && pr() < 0.4 && strong[1] && strong[1] !== skill ? { [strong[1]]: 'plus' as ObsTone } : {}
@@ -356,7 +358,8 @@ async function seedTeam(team: Team, li: 0 | 1) {
       }
     }
     // current cycle: the next step, plus a sub-index or a player's own objective for some
-    const weakest = [...rated].filter((k) => lv[k]! < 4).sort((a, b) => lv[a]! - lv[b]! || pr() - 0.5)[0]
+    const lastSkill = objs.find((o) => o.id === `obj_demo_${p.id}_a`)?.skill
+    const weakest = [...rated].filter((k) => lv[k]! < 4 && k !== lastSkill).sort((a, b) => lv[a]! - lv[b]! || pr() - 0.5)[0]
     const start = addDays(monday, -13)
     if (weakest) objs.push({ id: `obj_demo_${p.id}_b`, playerId: p.id, teamId: team.id, title: OBJ_SKILL[weakest][li], skill: weakest, start, review: addDays(start, 42), status: 'active', by: 'coach', createdAt: now })
     const x = pr()

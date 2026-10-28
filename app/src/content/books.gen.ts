@@ -452,12 +452,68 @@ export const METHODE_TOC: TocEntry[] = [
   "summary": "Le placement avant la puissance, la finition du premier coup, le centre en retrait, la frappe après un appel de troisième homme, le premier et le second poteau, le calme devant le but, et la place prudente du jeu de tête chez les jeunes."
  },
  {
+  "no": 16,
+  "slug": "le-gardien-qui-joue",
+  "title": "Le gardien qui joue",
+  "part": 3,
+  "partTitle": "La technique au service de l'intention",
+  "summary": "Le gardien en possession : recevoir une passe en retrait, les types de relance, le placement pendant la sortie de balle et des règles de décision simples pour choisir entre jouer court, jouer long, attirer ou accélérer."
+ },
+ {
   "no": 17,
   "slug": "les-systemes-avec-et-sans-ballon",
   "title": "Les systèmes avec et sans ballon",
   "part": 4,
   "partTitle": "La tactique Njangi",
   "summary": "Les principes avant les chiffres. Comment un système de départ devient un 3-2-5, un 2-3-5 ou un 3-1-6 avec le ballon, un 4-4-2, un 4-5-1 ou un 5-4-1 sans lui, comment les couloirs et les hauteurs sont occupés, ce que coûte la bascule, et quel système choisir selon l'âge et l'effectif."
+ },
+ {
+  "no": 18,
+  "slug": "sortir-contre-chaque-pressing",
+  "title": "Sortir le ballon contre chaque pressing",
+  "part": 4,
+  "partTitle": "La tactique Njangi",
+  "summary": "Compter, puis choisir. La sortie de balle depuis le gardien contre un, deux et trois attaquants et contre un pressing individuel, le pivot qui descend, le latéral qui rentre, le troisième homme, et le jeu long choisi avec intention."
+ },
+ {
+  "no": 19,
+  "slug": "progresser",
+  "title": "Progresser : troisième homme, surcharges, changements de côté",
+  "part": 4,
+  "partTitle": "La tactique Njangi",
+  "summary": "Traverser les lignes adverses avec intention. Recevoir et se retourner entre les lignes, les trois formes du troisième homme, la surcharge qui isole, le changement de côté qui punit et les rotations qui déplacent l'adversaire sans casser la structure."
+ },
+ {
+  "no": 20,
+  "slug": "le-dernier-tiers",
+  "title": "Le dernier tiers : attaquer la surface",
+  "part": 4,
+  "partTitle": "La tactique Njangi",
+  "summary": "Les zones du dernier tiers, les courses dans le demi-espace, la zone de retrait et le centre en retrait, la règle des cinq pour occuper la surface, les types de centres, l'attaque d'un bloc bas, et la défense de repos qui protège l'équipe pendant qu'elle attaque."
+ },
+ {
+  "no": 21,
+  "slug": "presser-declencheurs-et-pieges",
+  "title": "Presser : déclencheurs et pièges",
+  "part": 4,
+  "partTitle": "La tactique Njangi",
+  "summary": "Presser, c'est choisir où l'adversaire jouera. Les rôles du pressing, les déclencheurs, la course en arc et les ombres de couverture, les pièges zone par zone, la contre-pression des cinq secondes et le sous-indice Reprise, quand presser et quand attendre, et le pressing adapté aux jeunes."
+ },
+ {
+  "no": 22,
+  "slug": "bloc-median-bloc-bas-defense-de-repos",
+  "title": "Le bloc médian, le bloc bas et la défense de repos",
+  "part": 4,
+  "partTitle": "La tactique Njangi",
+  "summary": "La compacité en distances et en mouvements, le bloc médian de référence, le bloc bas choisi plutôt que subi, la défense de la surface, les structures de défense de repos (2 + 1, 3 + 1, 3 + 2, 2 + 3) et la manière de défendre une transition quand la contre-pression a échoué."
+ },
+ {
+  "no": 23,
+  "slug": "le-plan-de-match",
+  "title": "Le plan de match",
+  "part": 4,
+  "partTitle": "La tactique Njangi",
+  "summary": "Lire l'adversaire avec l'analyste, choisir deux ou trois clés, préparer les ajustements, réussir la mi-temps, lire l'Indice Njangi en direct et gérer le score, avec un exemple complet de plan : notre sélection A contre la Bandara."
  },
  {
   "no": 24,
@@ -521,7 +577,7 @@ export const METHODE_TOC: TocEntry[] = [
   "title": "Comment utiliser les fiches",
   "part": 7,
   "partTitle": "Les exercices",
-  "summary": "Lire une fiche d'exercice Njangi et choisir le bon exercice selon l'intention, l'âge et le jour de la semaine, avec le tableau des sept familles."
+  "summary": "Lire une fiche d'exercice Njangi et choisir le bon exercice selon l'intention, l'âge et le jour de la semaine, avec le tableau des huit familles."
  },
  {
   "no": 32,

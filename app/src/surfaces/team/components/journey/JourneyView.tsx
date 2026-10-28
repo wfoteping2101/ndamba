@@ -54,7 +54,7 @@ export function JourneyView({ data, viewer, top }: { data: JourneyData; viewer: 
         <aside className="order-1 min-w-0 space-y-5 lg:order-2">
           <ObjectivesCard data={data} stage={stage} viewer={viewer} onAdd={() => setObjective('new')} onOpen={(o) => setObjective(o)} />
           <MatchPanel s={summary} stage={stage} viewer={viewer} data={data} />
-          <MilestonesCard data={data} season={season} viewer={viewer} onAdd={() => setMilestone('new')} onOpen={(id) => setMilestone(data.milestones.find((m) => m.id === id) ?? null)} />
+          <MilestonesCard data={data} season={season} stage={stage} viewer={viewer} onAdd={() => setMilestone('new')} onOpen={(id) => setMilestone(data.milestones.find((m) => m.id === id) ?? null)} />
         </aside>
       </div>
 
@@ -101,7 +101,7 @@ function Hero({ data, viewer, stage, summary, seasons, seasonId, onSeason, actio
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap gap-2 lg:max-w-[440px] lg:justify-end">{actions}</div>
+          <div className="flex flex-wrap gap-2 lg:max-w-[580px] lg:justify-end">{actions}</div>
         </div>
 
         <div className="mt-5 flex flex-wrap items-center gap-2">

@@ -1,23 +1,10 @@
 // The season at a glance, drawn on the dark green plate: four lanes on one time axis
 // (milestones and evaluations, matches, sessions, observations). Pure SVG, measured to its box.
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useMemo } from 'react'
 import { useT } from '../../../../i18n'
 import { addDays, daysBetween, parseISODate, todayISO } from '../../../../lib/util'
 import { attended, buildTimeline, obsTone, type JourneyData, type Season } from '../../../../lib/journey'
-
-function useWidth<T extends HTMLElement>() {
-  const ref = useRef<T>(null)
-  const [w, setW] = useState(0)
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const ro = new ResizeObserver(([e]) => setW(Math.round(e.contentRect.width)))
-    ro.observe(el)
-    setW(Math.round(el.getBoundingClientRect().width))
-    return () => ro.disconnect()
-  }, [])
-  return [ref, w] as const
-}
+import { useWidth } from './bits'
 
 const C = { cream: '#FBF7EE', faint: 'rgba(251,247,238,.16)', grid: 'rgba(251,247,238,.09)', sun: '#E3A92B', sun3: '#F0C760', clay: '#D9806F', plus: '#CDE2D5', work: '#E0A56B' }
 

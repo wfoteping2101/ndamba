@@ -71,7 +71,7 @@ export function EvaluationModal({ open, onClose, data, onSaved }: { open: boolea
           return (
             <li key={k} className="px-3 py-3 sm:px-4">
               <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-                <h3 className="text-[15px] font-semibold text-ink"><span className="mr-2 text-xs tabular-nums text-ink-faint">{idx + 1}</span>{t(`common:skills.${k}`)}</h3>
+                <h3 className="font-sans text-[15px] font-semibold tracking-normal text-ink"><span className="mr-2 text-xs tabular-nums text-ink-faint">{idx + 1}</span>{t(`common:skills.${k}`)}</h3>
                 <span className="flex items-center gap-2 text-[11.5px] font-semibold">
                   {ev?.plus ? <span className="rounded-full bg-forest-50 px-2 py-0.5 text-forest-700">{t('evaluate.plus', { count: ev.plus })}</span> : null}
                   {ev?.work ? <span className="rounded-full bg-terra-50 px-2 py-0.5 text-terra-700">{t('evaluate.work', { count: ev.work })}</span> : null}

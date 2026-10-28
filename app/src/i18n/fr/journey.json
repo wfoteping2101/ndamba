@@ -145,10 +145,9 @@
     "inGroup": "Dans le groupe",
     "captain": "Capitaine",
     "week": "Semaine du {{date}}",
-    "weekCount_one": "{{n}} séance suivie sur {{count}}",
-    "weekCount_other": "{{n}} séances suivies sur {{count}}",
     "objSet": "Nouvel objectif : {{title}}",
-    "objReview": "Bilan d'objectif : {{title}}"
+    "objReview": "Bilan d'objectif : {{title}}",
+    "weekCount": "Séances suivies : {{n}} sur {{count}}"
   },
   "stats": {
     "passes": "{{ok}} passes réussies sur {{n}}",
@@ -171,7 +170,11 @@
     "first_goal": "Premier but, contre {{opponent}}",
     "first_captain": "Premier match comme capitaine, contre {{opponent}}",
     "matches_n": "{{n}}e match joué, contre {{opponent}}",
-    "skill_level": "{{skill}} : niveau {{level}} atteint"
+    "skill_level": "{{skill}} : niveau {{level}} atteint",
+    "first_matchAdult": "Premier match suivi dans Ndamba, contre {{opponent}}",
+    "first_startAdult": "Première titularisation suivie, contre {{opponent}}",
+    "first_goalAdult": "Premier but suivi dans Ndamba, contre {{opponent}}",
+    "first_captainAdult": "Premier brassard suivi, contre {{opponent}}"
   },
   "objectives": {
     "title": "Objectifs du cycle",
@@ -189,8 +192,6 @@
     "levelNow": "Niveau {{n}} aujourd'hui",
     "levelMoved": "Niveau {{from}} au départ, {{to}} aujourd'hui",
     "seen": "Observations positives : {{plus}}, à travailler : {{work}}",
-    "subActions_one": "{{count}} action liée en {{matches}} match depuis le début",
-    "subActions_other": "{{count}} actions liées en {{matches}} matchs depuis le début",
     "subNoMatch": "Pas encore de match joué depuis le début du cycle",
     "fullTitle": "{{n}} objectifs en cours, c'est le maximum",
     "fullBody": "Faites d'abord le bilan d'un objectif en cours : trois objectifs à la fois suffisent pour progresser.",
@@ -244,7 +245,8 @@
     "reviewNotePh": "Ce qui a marché, ce qui reste à faire.",
     "save": "Enregistrer l'objectif",
     "saveEdit": "Enregistrer",
-    "reviewToday": "Bilan aujourd'hui"
+    "reviewToday": "Bilan aujourd'hui",
+    "subActions": "Actions liées depuis le début : {{count}} (matchs joués : {{matches}})"
   },
   "milestones": {
     "title": "Les grands moments",

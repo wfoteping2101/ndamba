@@ -6,7 +6,7 @@ import { useT } from '../../../../i18n'
 import { addDays, cx, daysBetween, fmtDate, todayISO } from '../../../../lib/util'
 import { levelsAt, obsSkillTones, SKILL_KEYS, type JourneyData, type Level, type Season } from '../../../../lib/journey'
 import type { SkillKey } from '../../../../lib/types'
-import { CardHead } from './bits'
+import { CardHead, useWidth } from './bits'
 
 interface Pt { date: string; level: Level }
 
@@ -65,9 +65,9 @@ export function SkillProgress({ data, season, viewer }: { data: JourneyData; sea
   return (
     <section className="card card-pad" aria-labelledby="sp-h">
       <CardHead id="sp-h" icon={<LineChart size={18} className="text-forest-600" />} title={t('skills.title')}
-        hint={t('skills.hint', { from: fmtDate(domain.start, lang, { day: 'numeric', month: 'short', year: 'numeric' }) })} />
+        hint={t('skills.hint', { from: fmtDate(domain.start, lang, { day: 'numeric', month: 'long', year: 'numeric' }).replace(/^1 /, lang === 'fr' ? '1er ' : '1 ') })} />
       {sel && <Detail skill={sel} pts={series[sel]} evidence={evidence[sel] ?? []} domain={domain} />}
-      <ul className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 xl:grid-cols-5">
+      <ul className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 2xl:grid-cols-5">
         {SKILL_KEYS.map((k) => {
           const pts = series[k]
           const now = pts[pts.length - 1]?.level
@@ -116,7 +116,8 @@ function Spark({ pts, domain }: { pts: Pt[]; domain: { start: string; end: strin
 
 function Detail({ skill, pts, evidence, domain }: { skill: SkillKey; pts: Pt[]; evidence: { date: string; tone: 'plus' | 'work' }[]; domain: { start: string; end: string } }) {
   const { t, lang } = useT('journey')
-  const W = 640, H = 196, L = 30, R = 10, T = 12, B = 54
+  const [box, bw] = useWidth<HTMLDivElement>()
+  const W = Math.max(260, bw), H = W < 480 ? 180 : 200, L = 26, R = 10, T = 12, B = 54
   const days = Math.max(1, daysBetween(domain.start, domain.end))
   const x = (d: string) => L + (daysBetween(domain.start, d) / days) * (W - L - R)
   const y = (l: number) => T + (4 - l) * ((H - T - B) / 3)
@@ -126,9 +127,9 @@ function Detail({ skill, pts, evidence, domain }: { skill: SkillKey; pts: Pt[]; 
     let d = domain.start.slice(0, 8) + '01'
     if (d < domain.start) d = addDays(d, 32).slice(0, 8) + '01'
     for (let i = 0; d <= domain.end && i < 40; i++) { out.push(d); d = addDays(d, 32).slice(0, 8) + '01' }
-    const step = Math.ceil(out.length / 7)
+    const step = Math.ceil(out.length / (W < 480 ? 4 : 7))
     return out.filter((_, i) => i % step === 0)
-  }, [domain])
+  }, [domain, W])
   const plus = evidence.filter((e) => e.tone === 'plus'), work = evidence.filter((e) => e.tone === 'work')
   const stack = (list: typeof evidence) => { const m = new Map<string, number>(); return list.map((e) => { const n = m.get(e.date) ?? 0; m.set(e.date, n + 1); return { ...e, n } }) }
   const label = pts.map((p) => `${fmtDate(p.date, lang, { day: 'numeric', month: 'short' })} ${p.level}`).join(', ')
@@ -138,7 +139,8 @@ function Detail({ skill, pts, evidence, domain }: { skill: SkillKey; pts: Pt[]; 
         <h3 className="font-display text-[17px] font-semibold text-ink">{t(`common:skills.${skill}`)}</h3>
         {now && <span className="text-[13px] font-semibold text-forest-700">{t('skills.levelNow', { n: now, name: t(`team:levels.${now}`) })}</span>}
       </div>
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={t('skills.chartAria', { skill: t(`common:skills.${skill}`), points: label, plus: plus.length, work: work.length })}>
+      <div ref={box} className="w-full">
+      {bw > 0 && <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} className="block" role="img" aria-label={t('skills.chartAria', { skill: t(`common:skills.${skill}`), points: label, plus: plus.length, work: work.length })}>
         {[1, 2, 3, 4].map((l) => (
           <g key={l}>
             <line x1={L} x2={W - R} y1={y(l)} y2={y(l)} stroke="#E6DDCB" strokeDasharray={l === 4 ? undefined : '3 4'} />
@@ -158,7 +160,8 @@ function Detail({ skill, pts, evidence, domain }: { skill: SkillKey; pts: Pt[]; 
         <text x={L - 8} y={H - 4} textAnchor="end" fontSize="13" fontWeight={700} fill="#A86020" fontFamily="Inter, sans-serif">·</text>
         {stack(plus).map((e, i) => <circle key={`p${i}`} cx={x(e.date) + e.n * 7} cy={H - 22} r={3.6} fill="#2F6B52" />)}
         {stack(work).map((e, i) => <circle key={`w${i}`} cx={x(e.date) + e.n * 7} cy={H - 8} r={3.6} fill="#C5762F" />)}
-      </svg>
+      </svg>}
+      </div>
       <dl className="mt-2 grid gap-2 text-[13px] leading-snug sm:grid-cols-2">
         {now && <div className="rounded-xl bg-paper px-3 py-2"><dt className="text-[11.5px] font-semibold text-ink-muted">{t('skills.seenNow')}</dt><dd className="text-ink-soft">{t(`team:skillDesc.${skill}.${now}`)}</dd></div>}
         {now && now < 4 && <div className="rounded-xl bg-forest-50 px-3 py-2"><dt className="text-[11.5px] font-semibold text-forest-700">{t('skills.nextStep', { n: now + 1 })}</dt><dd className="text-ink-soft">{t(`team:skillDesc.${skill}.${now + 1}`)}</dd></div>}

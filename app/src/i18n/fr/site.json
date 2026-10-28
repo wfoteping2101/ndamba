@@ -28,7 +28,7 @@
       "title": "Entraîner, observer, suivre",
       "train": {
         "title": "Entraîner",
-        "body": "Les 50 exercices de la méthode avec leurs schémas, des séances construites en quelques touches, la semaine de MD-4 à MD-1 : adaptées à l'âge, au niveau et au calendrier, des U8 à l'équipe première."
+        "body": "Les exercices de la méthode avec leurs schémas, des séances construites en quelques touches, la semaine de MD-4 à MD-1 : adaptées à l'âge, au niveau et au calendrier, des U8 à l'équipe première."
       },
       "observe": {
         "title": "Observer",
@@ -266,7 +266,7 @@
       "methode": {
         "label": "Le livre de la méthode",
         "audience": "Pour les entraîneurs et les analystes, de l'école de foot au haut niveau professionnel et aux sélections nationales",
-        "body": "Le modèle de jeu africain : les quatre moments, les cinq intentions de la possession, les rôles, la semaine d'entraînement et la périodisation, l'Indice Njangi et le rapport de match, le plan 2030 pour une fédération. Ses 50 exercices et leurs schémas sont dans l'application."
+        "body": "Le modèle de jeu africain : les quatre moments, les cinq intentions de la possession, les rôles, la semaine d'entraînement et la périodisation, l'Indice Njangi et le rapport de match, le plan 2030 pour une fédération. Ses exercices et leurs schémas sont dans l'application."
       },
       "series": {
         "label": "Le roman jeunesse",
@@ -573,7 +573,7 @@
         "name": "Lionceaux, tome 1",
         "kind": "Roman jeunesse, 8 à 12 ans",
         "status": "{{n}} illustrations sur {{total}}",
-        "request": "Lionceaux, tome 1 : Le Ballon qui voyage"
+        "request": "Lionceaux, tome 1"
       },
       "methode": {
         "name": "Le Code Njangi",

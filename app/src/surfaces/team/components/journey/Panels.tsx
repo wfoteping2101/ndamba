@@ -163,7 +163,7 @@ export function MatchPanel({ s, stage, viewer, data }: { s: SeasonSummary; stage
           {regShare !== null && <ShareTile label={t('perf.shareRegain')} v={regShare} />}
         </div>
       )}
-      <h3 className="mb-1.5 mt-4 text-xs font-semibold text-ink-muted">{t('perf.minutesByMatch')}</h3>
+      <h3 className="mb-1.5 mt-4 font-sans text-xs font-semibold tracking-normal text-ink-muted">{t('perf.minutesByMatch')}</h3>
       <ul className="flex h-20 items-end gap-1" aria-label={t('perf.minutesByMatch')}>
         {lines.map((l) => (
           <li key={l.match.id} className="flex h-full min-w-0 flex-1 flex-col justify-end" title={`${l.match.opponent}: ${l.minutes} min`}>
@@ -191,7 +191,7 @@ function ShareTile({ label, v }: { label: string; v: number }) {
 
 /* ---------------- big moments ---------------- */
 
-export function MilestonesCard({ data, season, viewer, onAdd, onOpen }: { data: JourneyData; season: Season | null; viewer: 'coach' | 'player'; onAdd: () => void; onOpen: (id: string) => void }) {
+export function MilestonesCard({ data, season, stage, viewer, onAdd, onOpen }: { data: JourneyData; season: Season | null; stage: Stage; viewer: 'coach' | 'player'; onAdd: () => void; onOpen: (id: string) => void }) {
   const { t, lang } = useT('journey')
   const items = useMemo(() => buildTimeline(data, season).filter((i): i is Extract<JourneyItem, { kind: 'milestone' | 'derived' }> => i.kind === 'milestone' || i.kind === 'derived'), [data, season])
   return (
@@ -203,7 +203,7 @@ export function MilestonesCard({ data, season, viewer, onAdd, onOpen }: { data: 
           {items.map((i) => {
             const title = i.kind === 'milestone' ? i.ms.title
               : i.type === 'skill_level' ? t('derived.skill_level', { skill: t(`common:skills.${i.skill}`), level: t(`team:levels.${i.level}`) })
-                : t(`derived.${i.type}`, { opponent: i.match?.opponent ?? '', n: i.n ?? 0 })
+                : t(`derived.${i.type}${stage === 'adult' && i.type !== 'matches_n' ? 'Adult' : ''}`, { opponent: i.match?.opponent ?? '', n: i.n ?? 0 })
             const body = (
               <>
                 <Star size={15} className="mt-0.5 shrink-0 fill-sun-500 text-sun-500" aria-hidden="true" />

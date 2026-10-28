@@ -8,6 +8,21 @@ import type { ObsTone, SkillKey } from '../../../../lib/types'
 import { useT } from '../../../../i18n'
 import { cx } from '../../../../lib/util'
 
+/** Width of an element, kept up to date (charts are drawn at their real size so text stays readable). */
+export function useWidth<T extends HTMLElement>() {
+  const ref = useRef<T>(null)
+  const [w, setW] = useState(0)
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const ro = new ResizeObserver(([e]) => setW(Math.round(e.contentRect.width)))
+    ro.observe(el)
+    setW(Math.round(el.getBoundingClientRect().width))
+    return () => ro.disconnect()
+  }, [])
+  return [ref, w] as const
+}
+
 /** Live journey of one player (undefined while loading, null when the player does not exist). */
 export function useJourney(playerId: string | undefined) {
   return useLiveQuery(async () => (playerId ? loadJourney(playerId) : null), [playerId], undefined as JourneyData | null | undefined)

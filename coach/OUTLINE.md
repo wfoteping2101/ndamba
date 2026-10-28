@@ -1,5 +1,7 @@
 # Le Code Njangi : plan détaillé
 
+> **Structure à jour (octobre 2026).** Le livre compte maintenant neuf parties et des annexes : 1 Le manifeste (ch. 1 à 3), 2 Le modèle de jeu Njangi (ch. 4 à 10), 3 La technique au service de l'intention (ch. 11 à 16), 4 La tactique Njangi (ch. 17 à 23), 5 Des jeunes aux pros (ch. 24 à 26), 6 La semaine d'entraînement et la périodisation (ch. 27 à 30), 7 Les exercices (ch. 31 et les 64 fiches, familles C, R, P, S, L, F, T, G), 8 L'analyse (ch. 32 à 34), 9 Le manager et la fédération (ch. 35 et 36), Annexes (ch. 37). Les numéros de chapitre cités plus bas dans ce plan d'origine suivent l'ancienne numérotation (ancien chapitre N = nouveau N + 13 à partir du chapitre 11).
+
 Titre : **Le Code Njangi** (sous-titre : Posséder avec intention : la méthode africaine pour gagner la Coupe du monde)
 Sous-titre : **Posséder avec intention. Le modèle de jeu africain pour gagner la Coupe du monde.**
 Bandeau de couverture : 50 exercices · Des jeunes aux pros · La semaine d'entraînement · Périodisation · L'analyse

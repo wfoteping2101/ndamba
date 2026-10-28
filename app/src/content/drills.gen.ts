@@ -46,79 +46,75 @@ export const DRILLS: Drill[] = [
   "fr": {
    "title": "Le Y du Njangi",
    "subtitle": "Circuit de passes en Y : le troisième homme arrive lancé",
-   "objective": "Automatiser la combinaison du troisième homme dans un circuit sans opposition : passe dans les pieds du pivot, remise en une touche, passe vers l'avant de celui qui arrive lancé. Chaque passe prépare la suivante.",
+   "objective": "Automatiser le troisième homme sans opposition : passe dans les pieds du pivot, remise en une touche, passe vers l'avant de celui qui arrive lancé. Chaque passe prépare la suivante.",
    "organisation": [
-    "Un Y de plots sur 30 x 20 m : la base à gauche, le pivot au croisement à 10 m, deux branches 12 m plus loin.",
-    "À la base, deux files : A avec les ballons, C décalé de 5 m. Un joueur au pivot (B), un au bout de chaque branche (D).",
-    "Avec un grand groupe, installez trois ou quatre Y côte à côte plutôt qu'une longue file : jamais plus de deux joueurs qui attendent.",
-    "Un ballon pour deux joueurs suffit : le joueur de branche revient en conduite à la base avec le ballon.",
-    "Par forte chaleur : files à l'ombre, eau entre les séries, séries de 3 min au lieu de 4."
+    "Un Y de plots sur 30 x 20 m : la base à gauche, le pivot à 10 m, deux branches 12 m plus loin.",
+    "À la base, A avec les ballons et C décalé de 5 m ; B au pivot, un joueur D au bout de chaque branche.",
+    "Grand groupe : trois ou quatre Y côte à côte, jamais plus de deux joueurs qui attendent.",
+    "Peu de ballons : un pour deux joueurs suffit, le joueur de branche le ramène en conduite.",
+    "Forte chaleur : files à l'ombre, eau entre les séries, séries de 3 min."
    ],
    "rules": [
-    "A joue dans les pieds de B ; B remet en une touche vers C, qui joue vers une branche en une ou deux touches.",
-    "La passe directe de la base vers une branche est interdite.",
-    "Chacun suit sa passe : A va au pivot, B dans la file C, C à la branche, D revient à la base.",
-    "Le joueur de branche qui lève la main est la cible ; C doit l'avoir vu avant la remise.",
-    "On change de branche à chaque série : haute, puis basse."
+    "A joue dans les pieds de B ; B remet en une touche à C, qui joue vers une branche.",
+    "Passe directe de la base vers une branche : interdite.",
+    "Chacun suit sa passe ; D revient à la base en conduite.",
+    "La cible est le joueur de branche qui lève la main ; C doit l'avoir vu avant la remise."
    ],
    "coaching": [
-    "B, fais un appel puis un contre-appel avant de te montrer : décolle-toi de ton plot.",
-    "A, passe ferme, au sol, sur le pied de B le plus loin de la branche visée.",
+    "B, appel puis contre-appel : décolle-toi de ton plot avant de te montrer.",
+    "A, passe ferme et au sol : B doit pouvoir remettre sans contrôle.",
     "B, remise en une touche, dans la course de C, pas dans ses pieds.",
     "C, pars au moment où A passe : tu dois arriver, pas attendre.",
     "C, regarde la branche pendant que la remise roule."
    ],
    "progressions": [
     "Une touche pour tous.",
-    "Un défenseur passif dans le dos de B, puis actif : s'il ne suit pas, B se retourne et joue la branche lui-même.",
-    "Les deux joueurs de branche bougent ; seul celui qui se démarque peut recevoir.",
-    "Passer au jeu de combinaisons à trois (C13), puis à la fiche P03."
+    "Défenseur passif puis actif dans le dos de B : s'il ne suit pas, B se retourne et joue la branche.",
+    "Les joueurs de branche bougent ; ensuite, passer aux fiches C13 et P03."
    ],
    "regressions": [
     "Deux touches pour B et pour C.",
     "Distances réduites : pivot à 8 m de la base, branches à 8 m du pivot.",
     "L'entraîneur annonce la branche à voix haute avant la première passe."
    ],
-   "measure": "Circuits complets sans faute en 2 minutes, et part des remises de B jouées en une touche dans la course de C (objectif : 8 sur 10).",
+   "measure": "Circuits complets sans faute en 2 minutes. Part des remises de B jouées en une touche dans la course de C : objectif 8 sur 10.",
    "story": "« Le ballon doit voyager », répète Tonton Fokou sur la terre rouge de Bonamoussadi ; dans le Y, il passe par trois joueurs avant d'arriver là où il doit aller."
   },
   "en": {
    "title": "The Njangi Y",
    "subtitle": "Y-shaped passing pattern: the third man arrives on the run",
-   "objective": "Make the third-man combination automatic in an unopposed pattern: a pass into the pivot's feet, a one-touch set, a forward pass from the player arriving on the run. Every pass prepares the next one.",
+   "objective": "Make the third man automatic without opposition: pass into the pivot's feet, one-touch set, forward pass by the player arriving on the run. Every pass prepares the next one.",
    "organisation": [
-    "A Y of cones on 30 x 20 m: the base on the left, the pivot where the arms meet 10 m away, two arms 12 m further on.",
-    "Two lines at the base: A with the balls, C 5 m to the side. One player at the pivot (B), one at the end of each arm (D).",
-    "With a big group, set up three or four Ys side by side rather than one long queue: never more than two players waiting.",
-    "One ball for two players is enough: the arm player dribbles the ball back to the base.",
-    "In strong heat: queues in the shade, water between sets, 3 min sets instead of 4."
+    "A Y of cones on 30 x 20 m: base on the left, pivot 10 m away, two arms 12 m further on.",
+    "At the base, A with the balls and C 5 m to the side; B at the pivot, a player D at the end of each arm.",
+    "Big group: three or four Ys side by side, never more than two players waiting.",
+    "Few balls: one for two players is enough, the arm player dribbles it back.",
+    "Strong heat: queues in the shade, water between sets, 3 min sets."
    ],
    "rules": [
-    "A plays into B's feet; B sets it first time for C, who plays to an arm in one or two touches.",
+    "A plays into B's feet; B sets it first time for C, who plays to an arm.",
     "No direct pass from the base to an arm.",
-    "Everyone follows their pass: A to the pivot, B to the C line, C to the arm, D back to the base.",
-    "The arm player who raises a hand is the target; C must have seen him before the set.",
-    "Switch arms every set: top, then bottom."
+    "Everyone follows their pass; D dribbles back to the base.",
+    "The target is the arm player who raises a hand; C must have seen him before the set."
    ],
    "coaching": [
-    "B, go away then come back before you show: lose your cone.",
-    "A, firm pass along the ground, onto B's foot furthest from the target arm.",
+    "B, go away then come back: lose your cone before you show.",
+    "A, firm pass along the ground: B must be able to set it without a touch.",
     "B, set it first time into C's stride, not onto his feet.",
     "C, set off as A passes: you must arrive, not wait.",
     "C, look at the arm while the set is still rolling."
    ],
    "progressions": [
     "One touch for everyone.",
-    "A passive defender behind B, then an active one: if he does not follow, B turns and plays the arm himself.",
-    "Both arm players move; only the one who gets free may receive.",
-    "Move on to the three-player pattern game (C13), then drill P03."
+    "Passive then active defender behind B: if he does not follow, B turns and plays the arm.",
+    "The arm players move; then move on to drills C13 and P03."
    ],
    "regressions": [
     "Two touches for B and C.",
     "Shorter distances: pivot 8 m from the base, arms 8 m from the pivot.",
     "The coach calls the arm out loud before the first pass."
    ],
-   "measure": "Clean full patterns in 2 minutes, and the share of B's sets played first time into C's stride (target: 8 out of 10).",
+   "measure": "Clean full patterns in 2 minutes. Share of B's sets played first time into C's stride: target 8 out of 10.",
    "story": "\"The ball must travel,\" Tonton Fokou repeats on the red earth of Bonamoussadi; in the Y it goes through three players before it gets where it needs to go."
   },
   "diagram": {
@@ -200,8 +196,8 @@ export const DRILLS: Drill[] = [
    ],
    "labels": [
     {
-     "x": 19.2,
-     "y": 7.6,
+     "x": 6.4,
+     "y": 2.4,
      "text": "troisième homme"
     }
    ]
@@ -378,7 +374,7 @@ export const DRILLS: Drill[] = [
    "subtitle": "Diamond passing pattern with rotations",
    "objective": "Move the ball around a diamond, receiving with an open body, then learn the rotations: the tip drops, the side goes up. Players learn that moving creates the next pass.",
    "organisation": [
-    "Four cones in a diamond on 30 x 20 m: the base on the left, two sides 14 m away, the tip on the right.",
+    "Four cones in a diamond on 30 x 20 m: base on the left, two sides 14 m away, tip on the right.",
     "Two players at the base, one on each other cone; with more than 5 players, add one at the tip.",
     "With a big group, several diamonds side by side; with few balls, one ball per diamond is enough.",
     "A second ball starts from the tip once the group is comfortable: the two must never arrive at the same cone.",
@@ -789,8 +785,8 @@ export const DRILLS: Drill[] = [
      "text": "extérieur"
     },
     {
-     "x": 9.6,
-     "y": 10.1,
+     "x": 11.3,
+     "y": 9.7,
      "text": "cou-de-pied"
     }
    ]
@@ -873,7 +869,7 @@ export const DRILLS: Drill[] = [
     "A passe à la main pour les plus jeunes, au sol ensuite."
    ],
    "measure": "Sur 10 ballons par joueur et par série : demi-tours réussis (porte franchie face au jeu). Viser 8 sur 10 contre le passif, 5 sur 10 contre l'actif.",
-   "story": "« Avant de recevoir, tu regardes. Toujours. » Monsieur Lacombe ajoute la suite, que Kaydoudou recopie le jour du corps ouvert : de profil, sur le pied loin du défenseur."
+   "story": "« Avant de recevoir, tu regardes. Toujours. » Monsieur Lacombe ajoute la suite, que Kaydoudou recopie dans son carnet : de profil, sur le pied loin du défenseur."
   },
   "en": {
    "title": "Receiving on the Half-Turn",
@@ -912,7 +908,7 @@ export const DRILLS: Drill[] = [
     "A throws the ball for the youngest, then passes along the ground."
    ],
    "measure": "Out of 10 balls per player and per set: successful half-turns (gate crossed facing play). Aim for 8 out of 10 against the passive defender, 5 out of 10 against the active one.",
-   "story": "\"Before you receive, you look. Always.\" Monsieur Lacombe adds the rest, which Kaydoudou copies out on the day of the open body: side-on, on the foot away from the defender."
+   "story": "\"Before you receive, you look. Always.\" Monsieur Lacombe adds the rest, which Kaydoudou copies out: side-on, on the foot away from the defender."
   },
   "diagram": {
    "view": "grid",
@@ -1188,7 +1184,7 @@ export const DRILLS: Drill[] = [
    "subtitle": "Directional first touch away from the incoming defender",
    "objective": "Turn the first touch into movement: push the ball into open space, away from the defender, instead of stopping it under the foot. The receiver gains a second, and a second is a pass.",
    "organisation": [
-    "16 x 16 m square: server S on the left, receiver R in the middle, one defender at the top and one at the bottom.",
+    "16 x 16 m square: server S on the left, receiver R in the middle, one defender at the top, one at the bottom.",
     "Two 3 m gates on the right side, one high, one low.",
     "As the pass is played, the coach points at one defender, who goes out to R.",
     "Rotate every 5 receptions; one ball per square, with a spare by the server.",
@@ -1365,7 +1361,7 @@ export const DRILLS: Drill[] = [
   "fr": {
    "title": "Le circuit des yeux",
    "subtitle": "Regarder derrière soi avant de recevoir : la couleur ou le nombre décide de la porte",
-   "objective": "Faire du regard par-dessus l'épaule un réflexe, sans adversaire pour commencer. L'information est derrière le receveur : s'il n'a pas regardé avant la passe, il ne peut pas choisir la bonne porte.",
+   "objective": "Faire du regard par-dessus l'épaule un réflexe, d'abord sans adversaire. L'information est derrière le receveur : sans regard avant la passe, pas de bonne porte.",
    "organisation": [
     "Carré de 20 x 20 m : le serveur S à gauche, le receveur R dans une zone de 3 x 3 m au centre.",
     "Trois portes de 3 m sur le côté droit, chacune avec sa couleur (plots ou chasubles : rouge, jaune, bleu).",
@@ -1376,7 +1372,7 @@ export const DRILLS: Drill[] = [
    "rules": [
     "Au moment où S passe, E lève une couleur ; R l'annonce à voix haute avant son premier contact.",
     "R joue à travers la porte de cette couleur en deux touches maximum : 1 point.",
-    "Couleur fausse, oubliée ou mauvaise porte : 0 point, le circuit continue sans arrêt.",
+    "Erreur de couleur ou de porte : pas de point, le circuit continue.",
     "S ne passe que lorsque R a regardé au moins une fois par-dessus son épaule.",
     "Rotation : S devient receveur, R va derrière la porte jouée, le joueur de porte devient serveur."
    ],
@@ -1404,7 +1400,7 @@ export const DRILLS: Drill[] = [
   "en": {
    "title": "The Eyes Circuit",
    "subtitle": "Look behind you before receiving: the colour or the number picks the gate",
-   "objective": "Make the look over the shoulder a reflex, with no opponent to start with. The information is behind the receiver: if he has not looked before the pass, he cannot pick the right gate.",
+   "objective": "Make the look over the shoulder a reflex, with no opponent at first. The information is behind the receiver: no look before the pass, no right gate.",
    "organisation": [
     "20 x 20 m square: server S on the left, receiver R in a 3 x 3 m zone in the middle.",
     "Three 3 m gates on the right side, each with its colour (cones or bibs: red, yellow, blue).",
@@ -1415,7 +1411,7 @@ export const DRILLS: Drill[] = [
    "rules": [
     "As S passes, E raises a colour; R calls it out loud before his first touch.",
     "R plays through the gate of that colour in two touches maximum: 1 point.",
-    "Wrong or forgotten colour, or wrong gate: no point, the circuit keeps going.",
+    "Wrong colour or wrong gate: no point, the circuit keeps going.",
     "S only passes once R has looked over his shoulder at least once.",
     "Rotation: S becomes receiver, R goes behind the gate he played through, the gate player becomes server."
    ],
@@ -1462,8 +1458,8 @@ export const DRILLS: Drill[] = [
     {
      "id": "e",
      "team": "n",
-     "x": 13.5,
-     "y": 14,
+     "x": 12.5,
+     "y": 13.2,
      "label": "E"
     }
    ],
@@ -1542,7 +1538,7 @@ export const DRILLS: Drill[] = [
    "labels": [
     {
      "x": 16.6,
-     "y": 2.1,
+     "y": 3.1,
      "text": "rouge"
     },
     {
@@ -1556,8 +1552,8 @@ export const DRILLS: Drill[] = [
      "text": "bleu"
     },
     {
-     "x": 13.5,
-     "y": 16.6,
+     "x": 12.5,
+     "y": 15.8,
      "text": "« Rouge »"
     }
    ]
@@ -1605,9 +1601,9 @@ export const DRILLS: Drill[] = [
   "fr": {
    "title": "Les portes du dribble njangi",
    "subtitle": "1 contre 1 vers trois portes : fixer, attirer, libérer",
-   "objective": "Dribbler avec une intention : fixer le défenseur en conduisant droit sur lui, l'attirer d'un côté, puis se libérer vers la porte ouverte ou libérer un partenaire. Le dribble njangi est un cadeau : il sert l'équipe.",
+   "objective": "Dribbler avec une intention : fixer le défenseur, l'attirer d'un côté, puis se libérer vers la porte ouverte ou libérer un partenaire. Le dribble njangi est un cadeau : il sert l'équipe.",
    "organisation": [
-    "Rectangle de 22 x 16 m ; trois portes de 2,5 m sur la ligne de droite.",
+    "Rectangle de 22 x 16 m ; trois portes de 2 m sur la ligne de droite.",
     "L'attaquant part de la ligne de gauche avec le ballon, le défenseur du milieu du rectangle.",
     "Deuxième partie : un partenaire part 7 m sous l'attaquant, 2 contre 1.",
     "Avec un grand groupe, plusieurs rectangles côte à côte, trois ou quatre joueurs par file ; un ballon par rectangle, le défenseur le ramène.",
@@ -1637,15 +1633,15 @@ export const DRILLS: Drill[] = [
     "Portes de 4 m, rectangle de 25 x 18 m.",
     "Pour les U9, une seule règle au début : franchir une porte."
    ],
-   "measure": "Sur 8 duels par joueur : portes franchies, et part des actions où le défenseur a été fixé avant (l'adjoint coche fixé ou pas fixé). En 2 contre 1 : passes données au bon moment.",
-   "story": "« Mon dribble, c'est un cadeau », écrit BriBri en gros dans le carnet : il dribble pour attirer deux adversaires, puis il donne au partenaire qui a l'espace."
+   "measure": "Sur 8 duels par joueur : portes franchies. Part des actions où le défenseur a été fixé avant (l'adjoint coche fixé ou pas). En 2 contre 1 : passes données au bon moment.",
+   "story": "« Mon dribble, c'est un cadeau », écrit BriBri en gros dans le carnet : il attire deux adversaires, puis il donne au partenaire qui a l'espace."
   },
   "en": {
    "title": "The Njangi Dribble Gates",
    "subtitle": "1 v 1 towards three gates: pin, draw, release",
-   "objective": "Dribble with a purpose: pin the defender by running straight at him, draw him to one side, then break free through the open gate or release a teammate. The njangi dribble is a gift: it serves the team.",
+   "objective": "Dribble with a purpose: pin the defender, draw him to one side, then break free through the open gate or release a teammate. The njangi dribble is a gift: it serves the team.",
    "organisation": [
-    "22 x 16 m area; three 2.5 m gates on the right-hand line.",
+    "22 x 16 m area; three 2 m gates on the right-hand line.",
     "The attacker starts on the left line with the ball, the defender in the middle of the area.",
     "Second part: a teammate starts 7 m below the attacker, 2 v 1.",
     "With a big group, several areas side by side, three or four players per queue; one ball per area, the defender brings it back.",
@@ -1675,8 +1671,8 @@ export const DRILLS: Drill[] = [
     "4 m gates, 25 x 18 m area.",
     "For U9s, one rule at first: get through a gate."
    ],
-   "measure": "Out of 8 duels per player: gates crossed, and the share of actions where the defender was pinned first (the assistant ticks pinned or not pinned). In 2 v 1: passes released at the right moment.",
-   "story": "\"My dribble is a gift,\" BriBri writes in big letters in the notebook: he dribbles to draw two opponents, then gives the ball to the teammate with space."
+   "measure": "Out of 8 duels per player: gates crossed. Share of actions where the defender was pinned first (the assistant ticks pinned or not). In 2 v 1: passes released at the right moment.",
+   "story": "\"My dribble is a gift,\" BriBri writes in the notebook: he draws two opponents, then gives it to the teammate with space."
   },
   "diagram": {
    "view": "grid",
@@ -1693,8 +1689,8 @@ export const DRILLS: Drill[] = [
     {
      "id": "d",
      "team": "b",
-     "x": 12.5,
-     "y": 7.6
+     "x": 13.2,
+     "y": 8.2
     }
    ],
    "ball": "a",
@@ -1711,20 +1707,20 @@ export const DRILLS: Drill[] = [
     {
      "from": "d",
      "to": [
-      11.2,
-      6.2
+      11.6,
+      5.9
      ],
      "kind": "press",
      "n": 2
     },
     {
      "from": [
-      9.3,
-      9
+      9,
+      8
      ],
      "to": [
       20.6,
-      12.75
+      13.5
      ],
      "kind": "dribble",
      "n": 3
@@ -1749,27 +1745,27 @@ export const DRILLS: Drill[] = [
     ],
     [
      21,
-     2
+     1.5
     ],
     [
      21,
-     4.5
+     3.5
     ],
     [
      21,
-     6.75
+     7
     ],
     [
      21,
-     9.25
+     9
     ],
     [
      21,
-     11.5
+     12.5
     ],
     [
      21,
-     14
+     14.5
     ]
    ],
    "labels": [
@@ -1779,13 +1775,13 @@ export const DRILLS: Drill[] = [
      "text": "fixer"
     },
     {
-     "x": 11.2,
-     "y": 4.4,
+     "x": 9.6,
+     "y": 4.6,
      "text": "attirer"
     },
     {
-     "x": 15.4,
-     "y": 14.4,
+     "x": 15.2,
+     "y": 15.2,
      "text": "se libérer"
     }
    ]
@@ -1812,8 +1808,8 @@ export const DRILLS: Drill[] = [
     {
      "id": "d",
      "team": "b",
-     "x": 12.5,
-     "y": 7.2
+     "x": 13.4,
+     "y": 7.8
     }
    ],
    "ball": "a",
@@ -1830,7 +1826,7 @@ export const DRILLS: Drill[] = [
     {
      "from": "d",
      "to": [
-      10.9,
+      11,
       6.9
      ],
      "kind": "press",
@@ -1840,19 +1836,19 @@ export const DRILLS: Drill[] = [
      "from": "p",
      "to": [
       15,
-      12.8
+      13.5
      ],
      "kind": "run",
      "n": 3
     },
     {
      "from": [
-      9.3,
-      7.4
+      9,
+      6.4
      ],
      "to": [
       15,
-      12.8
+      13.5
      ],
      "kind": "pass",
      "n": 4
@@ -1860,11 +1856,11 @@ export const DRILLS: Drill[] = [
     {
      "from": [
       15,
-      12.8
+      13.5
      ],
      "to": [
       20.6,
-      12.75
+      13.5
      ],
      "kind": "dribble",
      "n": 5
@@ -1889,27 +1885,27 @@ export const DRILLS: Drill[] = [
     ],
     [
      21,
-     2
+     1.5
     ],
     [
      21,
-     4.5
+     3.5
     ],
     [
      21,
-     6.75
+     7
     ],
     [
      21,
-     9.25
+     9
     ],
     [
      21,
-     11.5
+     12.5
     ],
     [
      21,
-     14
+     14.5
     ]
    ],
    "labels": [
@@ -1919,8 +1915,8 @@ export const DRILLS: Drill[] = [
      "text": "fixer, attirer"
     },
     {
-     "x": 13.8,
-     "y": 9.6,
+     "x": 14.2,
+     "y": 9.9,
      "text": "libérer"
     }
    ]
@@ -1971,7 +1967,7 @@ export const DRILLS: Drill[] = [
    "subtitle": "Conduire droit vers la pression pour créer le 2 contre 1",
    "objective": "Conduire le ballon vers la pression, pas pour l'éviter : un porteur qui avance oblige un défenseur à sortir, et ce défenseur libère un partenaire. Celui qui ne conduit pas laisse le défenseur choisir.",
    "organisation": [
-    "Rectangle de 30 x 20 m en trois parties : zone de départ (10 m), zone du défenseur (10 m), zone de but avec deux mini-buts.",
+    "Rectangle de 30 x 20 m en trois bandes de 10 m : départ, zone du défenseur, zone de but avec deux mini-buts.",
     "2 attaquants contre 1 défenseur qui ne quitte pas sa zone ; le porteur part dans l'axe, son partenaire sur un côté.",
     "Le porteur change de côté à chaque passage ; le défenseur change toutes les 6 actions.",
     "Avec un grand groupe, deux rectangles côte à côte et des vagues de trois ; un ballon par vague, rendu par les côtés.",
@@ -2006,9 +2002,9 @@ export const DRILLS: Drill[] = [
   "en": {
    "title": "Carry to Pin",
    "subtitle": "Carry straight at the pressure to create the 2 v 1",
-   "objective": "Carry the ball towards the pressure, not away from it: a carrier who advances forces a defender to step out, and that defender frees a teammate. A player who does not carry lets the defender choose.",
+   "objective": "Carry the ball at the pressure, not away from it: a carrier who advances forces a defender out, and that defender frees a teammate. A player who does not carry lets the defender choose.",
    "organisation": [
-    "30 x 20 m area in three parts: start zone (10 m), defender zone (10 m), scoring zone with two mini goals.",
+    "30 x 20 m area in three 10 m strips: start, defender zone, scoring zone with two mini goals.",
     "2 attackers against 1 defender who stays in his zone; the carrier starts in the middle, his teammate on one side.",
     "The carrier changes side every turn; the defender changes every 6 actions.",
     "With a big group, two areas side by side and waves of three; one ball per wave, returned along the sides.",
@@ -2107,7 +2103,7 @@ export const DRILLS: Drill[] = [
      "id": "a",
      "team": "a",
      "x": 2.5,
-     "y": 11.5,
+     "y": 12,
      "label": "A"
     },
     {
@@ -2120,8 +2116,8 @@ export const DRILLS: Drill[] = [
     {
      "id": "d",
      "team": "b",
-     "x": 15.5,
-     "y": 9
+     "x": 16.8,
+     "y": 12.6
     }
    ],
    "ball": "a",
@@ -2130,7 +2126,7 @@ export const DRILLS: Drill[] = [
      "from": "a",
      "to": [
       11.5,
-      11.5
+      12
      ],
      "kind": "dribble",
      "n": 1
@@ -2138,8 +2134,8 @@ export const DRILLS: Drill[] = [
     {
      "from": "d",
      "to": [
-      13.6,
-      10.6
+      14,
+      12.4
      ],
      "kind": "press",
      "n": 2
@@ -2155,8 +2151,8 @@ export const DRILLS: Drill[] = [
     },
     {
      "from": [
-      12,
-      10.8
+      11.5,
+      12
      ],
      "to": [
       23,
@@ -2181,7 +2177,7 @@ export const DRILLS: Drill[] = [
    "labels": [
     {
      "x": 6.5,
-     "y": 14.2,
+     "y": 14.8,
      "text": "conduire vers lui"
     }
    ]
@@ -2229,7 +2225,7 @@ export const DRILLS: Drill[] = [
   "fr": {
    "title": "La boîte de protection",
    "subtitle": "1 contre 1 dans une petite boîte : protéger, puis jouer",
-   "objective": "Protéger le ballon avec le corps face à un adversaire qui presse, garder l'équilibre et trouver la sortie : se retourner ou jouer vers un appui. Protéger n'est pas garder pour soi : c'est gagner le temps d'une passe.",
+   "objective": "Protéger le ballon avec le corps contre un adversaire qui presse, garder l'équilibre, puis sortir : se retourner ou jouer vers un appui. Protéger n'est pas garder pour soi : c'est gagner le temps d'une passe.",
    "organisation": [
     "Boîte de 8 x 8 m (6 x 6 m pour les U9), un attaquant et un défenseur dedans.",
     "Un appui de chaque côté, à l'extérieur de la boîte, qui se déplace le long de sa ligne.",
@@ -2267,7 +2263,7 @@ export const DRILLS: Drill[] = [
   "en": {
    "title": "The Shielding Box",
    "subtitle": "1 v 1 in a small box: shield, then play",
-   "objective": "Shield the ball with the body against an opponent who presses, keep your balance and find the way out: turn, or play to a support. Shielding is not keeping it for yourself: it buys the time for a pass.",
+   "objective": "Shield the ball with your body against a pressing opponent, keep your balance, then get out: turn, or play to a support. Shielding is not keeping it for yourself: it buys the time for a pass.",
    "organisation": [
     "8 x 8 m box (6 x 6 m for U9s), one attacker and one defender inside.",
     "One support on each side, outside the box, moving along his line.",
@@ -2322,15 +2318,15 @@ export const DRILLS: Drill[] = [
     {
      "id": "a",
      "team": "a",
-     "x": 3.4,
-     "y": 4.6,
+     "x": 3.3,
+     "y": 4.8,
      "label": "A"
     },
     {
      "id": "d",
      "team": "b",
-     "x": 4.5,
-     "y": 3.6
+     "x": 4.05,
+     "y": 4.1
     }
    ],
    "ball": "n1",
@@ -2342,37 +2338,28 @@ export const DRILLS: Drill[] = [
      "n": 1
     },
     {
-     "from": "d",
+     "from": "a",
      "to": [
-      3.95,
-      4.15
+      5.3,
+      6.3
      ],
-     "kind": "press",
+     "kind": "dribble",
      "n": 2
     },
     {
-     "from": "a",
-     "to": [
-      5.4,
-      6.1
-     ],
-     "kind": "dribble",
-     "n": 3
-    },
-    {
      "from": [
-      5.6,
-      6
+      5.3,
+      6.3
      ],
      "to": "n2",
      "kind": "pass",
-     "n": 4
+     "n": 3
     }
    ],
    "labels": [
     {
-     "x": 4,
-     "y": 1.5,
+     "x": 2.9,
+     "y": 3.3,
      "text": "le corps est un mur"
     },
     {
@@ -2429,11 +2416,11 @@ export const DRILLS: Drill[] = [
    "le cœur"
   ],
   "fr": {
-   "title": "Le une-deux du Njangi",
+   "title": "Le circuit du une-deux",
    "subtitle": "Trois une-deux en circuit, puis la frappe",
    "objective": "Maîtriser les trois formes du une-deux, court, en profondeur et double, jusqu'à la frappe. Cette fiche apprend les gestes sans opposition ; la fiche G02 les met en jeu à 2 contre 1.",
    "organisation": [
-    "Devant un but avec gardien, un circuit de 30 m : un mannequin, un plot haut ou un défenseur passif à 20 m du but, un mur sur le côté.",
+    "Un but avec gardien ; un mannequin ou un plot haut à 20 m, un mur sur le côté, départ à 30 m.",
     "Une forme par série : le une-deux court autour du mannequin, le une-deux en profondeur entre deux mannequins, le double une-deux avec deux murs.",
     "Files de 3 joueurs au plus ; les murs changent toutes les 5 répétitions, et on alterne côté gauche et côté droit.",
     "Peu de ballons : 6 à 8 suffisent, avec deux ramasseurs derrière le but qui les rendent en conduite.",
@@ -2466,11 +2453,11 @@ export const DRILLS: Drill[] = [
    "story": "BriBri a trouvé le nom, Kaydoudou a trouvé le signal : deux doigts levés, et le une-deux du Njangi part en profondeur."
   },
   "en": {
-   "title": "The Njangi One-Two",
+   "title": "The one-two circuit",
    "subtitle": "Three one-twos in a pattern, then the shot",
    "objective": "Master the three forms of the one-two, short, in behind and double, all the way to the shot. This drill teaches the moves without opposition; drill G02 puts them into a 2 v 1 game.",
    "organisation": [
-    "In front of a goal with a goalkeeper, a 30 m pattern: a mannequin, a tall marker or a passive defender 20 m from goal, a wall player to the side.",
+    "A goal with a goalkeeper; a mannequin or tall marker 20 m out, a wall player to the side, start at 30 m.",
     "One form per set: the short one-two around the mannequin, the one-two in behind between two mannequins, the double one-two with two wall players.",
     "Queues of 3 players at most; wall players change every 5 reps, alternating left and right sides.",
     "Few balls: 6 to 8 are enough, with two collectors behind the goal who dribble them back.",
@@ -2575,11 +2562,11 @@ export const DRILLS: Drill[] = [
     {
      "from": [
       10,
-      13.1
+      12.8
      ],
      "to": [
       19.5,
-      11.2
+      10.8
      ],
      "kind": "run",
      "n": 3
@@ -2588,7 +2575,7 @@ export const DRILLS: Drill[] = [
      "from": "b",
      "to": [
       19.5,
-      11.2
+      10.8
      ],
      "kind": "pass",
      "n": 4
@@ -2596,7 +2583,7 @@ export const DRILLS: Drill[] = [
     {
      "from": [
       19.5,
-      11.2
+      10.8
      ],
      "to": [
       31.8,
@@ -2604,13 +2591,6 @@ export const DRILLS: Drill[] = [
      ],
      "kind": "shot",
      "n": 5
-    }
-   ],
-   "labels": [
-    {
-     "x": 14.5,
-     "y": 16.8,
-     "text": "mannequin"
     }
    ]
   },
@@ -2761,7 +2741,7 @@ export const DRILLS: Drill[] = [
    "subtitle": "Circuit de frappes en une touche : centre en retrait, remise, passe latérale",
    "objective": "Frapper en une touche les ballons qui arrivent dans la surface : centre en retrait, remise du pivot, passe latérale. Dans la surface, le temps d'un contrôle est souvent le temps qui manque.",
    "organisation": [
-    "Un but avec gardien et trois stations : le retrait depuis la ligne de but, la remise du pivot à l'entrée de la surface, la passe latérale entre deux attaquants.",
+    "Un but avec gardien et trois stations : le retrait depuis la ligne de but, la remise du pivot, la passe latérale entre deux attaquants.",
     "Les stations jouent l'une après l'autre ; le gardien annonce « Prêt » avant chaque action.",
     "Files de 3 au plus par station ; avec un grand groupe, un deuxième but et un deuxième gardien sur l'autre moitié.",
     "8 à 10 ballons suffisent : deux ramasseurs derrière le but, qui changent à chaque série.",
@@ -2798,7 +2778,7 @@ export const DRILLS: Drill[] = [
    "subtitle": "One-touch finishing pattern: cut-back, set, square pass",
    "objective": "Finish first time on the balls that arrive in the box: the cut-back, the pivot's set, the square pass. In the box, the time for a control touch is often the time you do not have.",
    "organisation": [
-    "One goal with a goalkeeper and three stations: the cut-back from the goal line, the pivot's set at the edge of the box, the square pass between two forwards.",
+    "One goal with a goalkeeper and three stations: the cut-back from the goal line, the pivot's set, the square pass between two forwards.",
     "Stations play one after the other; the goalkeeper calls \"Ready\" before each action.",
     "Queues of 3 at most per station; with a big group, a second goal and goalkeeper on the other half.",
     "8 to 10 balls are enough: two collectors behind the goal, changing every set.",
@@ -2879,8 +2859,8 @@ export const DRILLS: Drill[] = [
     {
      "from": "w",
      "to": [
-      26.5,
-      3.4
+      27.6,
+      3.8
      ],
      "kind": "dribble",
      "n": 1
@@ -2896,8 +2876,8 @@ export const DRILLS: Drill[] = [
     },
     {
      "from": [
-      26.5,
-      3.4
+      27.6,
+      3.8
      ],
      "to": [
       20.5,
@@ -2921,8 +2901,8 @@ export const DRILLS: Drill[] = [
    ],
    "labels": [
     {
-     "x": 25.4,
-     "y": 8.9,
+     "x": 26.4,
+     "y": 9.4,
      "text": "retrait"
     }
    ]
@@ -3069,20 +3049,20 @@ export const DRILLS: Drill[] = [
   "fr": {
    "title": "Le gardien qui relance",
    "subtitle": "Recevoir une passe en retrait sous pression et relancer du côté libre",
-   "objective": "Apprendre au gardien à recevoir une passe en retrait le corps ouvert, à lire d'où vient la pression et à relancer vers le côté libre, au pied puis à la main. Le ballon doit voyager dès le gardien.",
+   "objective": "Apprendre au gardien à recevoir une passe en retrait le corps ouvert et à lire d'où vient la pression. Il relance vers le côté libre, au pied puis à la main : le ballon voyage dès le gardien.",
    "organisation": [
-    "Un but avec gardien, deux relanceurs (4 et 5) écartés aux angles de la surface, deux portes de 4 m à 24 m du but.",
+    "Un but avec gardien ; deux relanceurs, 4 et 5, aux angles de la surface ; deux portes de 4 m à 24 m du but.",
     "L'entraîneur (E) joue la passe en retrait depuis 20 m ; un attaquant part près du point de penalty pour presser.",
     "L'attaquant change toutes les 4 actions ; les relanceurs changent de côté à chaque série.",
-    "Un seul gardien ? Séries courtes, et un joueur de champ volontaire prend le but une série sur trois : tout le monde gagne à savoir relancer.",
-    "Par forte chaleur, le gardien boit à chaque série et attend à l'ombre ; 8 ballons au pied de l'entraîneur suffisent."
+    "Un seul gardien ? Séries courtes, et un joueur de champ volontaire prend le but une série sur trois.",
+    "Forte chaleur : le gardien boit à chaque série et attend à l'ombre. 8 ballons suffisent."
    ],
    "rules": [
     "Deux touches maximum pour le gardien ; comme en match, pas de prise à la main sur une passe en retrait.",
     "Relance vers le relanceur libre, qui franchit sa porte en conduite : 1 point.",
     "Relance jouée en une touche vers le côté libre : 2 points.",
     "L'attaquant qui touche le ballon marque 2 points, 3 s'il marque dans le but.",
-    "Si les deux côtés sont fermés, la passe longue au-delà des portes est permise, sans point."
+    "Deux côtés fermés : passe longue au-delà des portes permise, sans point."
    ],
    "coaching": [
     "Regarde l'attaquant avant que le ballon arrive : de quel côté vient-il ?",
@@ -3108,20 +3088,20 @@ export const DRILLS: Drill[] = [
   "en": {
    "title": "The Goalkeeper Who Builds",
    "subtitle": "Receive a back-pass under pressure and play out to the free side",
-   "objective": "Teach the goalkeeper to receive a back-pass with an open body, read where the pressure comes from and play to the free side, with the feet then the hands. The ball must travel from the goalkeeper on.",
+   "objective": "Teach the goalkeeper to receive a back-pass with an open body and read where the pressure comes from. He plays to the free side, with the feet then the hands: the ball travels from the goalkeeper on.",
    "organisation": [
-    "One goal with a goalkeeper, two receivers (4 and 5) split wide at the corners of the box, two 4 m gates 24 m from goal.",
+    "One goal with a goalkeeper; two receivers, 4 and 5, at the corners of the box; two 4 m gates 24 m from goal.",
     "The coach (E) plays the back-pass from 20 m; a forward starts near the penalty spot to press.",
     "The forward changes every 4 actions; the receivers switch sides every set.",
-    "Only one goalkeeper? Short sets, and a volunteer outfield player goes in goal one set in three: everyone gains from knowing how to play out.",
-    "In strong heat, the goalkeeper drinks every set and waits in the shade; 8 balls at the coach's feet are enough."
+    "Only one goalkeeper? Short sets, and a volunteer outfield player goes in goal one set in three.",
+    "Strong heat: the goalkeeper drinks every set and waits in the shade. 8 balls are enough."
    ],
    "rules": [
     "Two touches maximum for the goalkeeper; as in a match, no handling a back-pass.",
     "A pass to the free receiver, who dribbles through his gate: 1 point.",
     "A first-time pass to the free side: 2 points.",
     "A forward who touches the ball scores 2 points, 3 if he scores in the goal.",
-    "If both sides are closed, the long pass beyond the gates is allowed, with no point."
+    "Both sides closed: a long pass beyond the gates is allowed, with no point."
    ],
    "coaching": [
     "Look at the forward before the ball arrives: which side is he coming from?",
@@ -3335,7 +3315,7 @@ export const DRILLS: Drill[] = [
     "Par forte chaleur, retour en marchant et eau entre les étapes."
    ],
    "rules": [
-    "Sans opposition : A joue dans les pieds de B, C arrive lancé, B joue dans sa course en une touche, C entre dans la zone cible.",
+    "Sans opposition : A joue dans les pieds de B, qui joue en une touche dans la course de C ; C entre dans la zone cible.",
     "Avec défenseur : la passe directe de A vers C est interdite.",
     "3 contre 2 : but après une course du troisième homme, 3 points ; autre but, 1 point.",
     "Défenseurs qui récupèrent : 1 point s'ils conduisent jusqu'à la ligne de départ."
@@ -3372,7 +3352,7 @@ export const DRILLS: Drill[] = [
     "In strong heat, walk back and drink between stages."
    ],
    "rules": [
-    "Unopposed: A plays into B's feet, C arrives on the run, B plays first time into his stride, C enters the target zone.",
+    "Unopposed: A plays into B's feet, B plays first time into C's stride, and C enters the target zone.",
     "With a defender: no direct pass from A to C.",
     "3 v 2: goal after a third-man run, 3 points; any other goal, 1 point.",
     "Defenders who win the ball: 1 point if they dribble to the starting line."
@@ -3634,82 +3614,78 @@ export const DRILLS: Drill[] = [
   "fr": {
    "title": "Le jeu aérien",
    "subtitle": "Amortir de la cuisse, de la poitrine et du pied ; la tête seulement à partir de 13 ans",
-   "objective": "Maîtriser un ballon qui arrive en l'air pour le garder et le rejouer au sol : cuisse, poitrine, coup de pied. Le jeu de tête n'est abordé qu'à partir de 13 ans, avec précaution.",
+   "objective": "Maîtriser un ballon aérien pour le garder et le rejouer au sol : cuisse, poitrine, coup de pied. Le jeu de tête attend 13 ans, et se travaille avec précaution.",
    "organisation": [
     "Groupes de trois sur 20 x 12 m : un lanceur, un receveur à 6 m, une cible à 8 m sur le côté.",
-    "Le lanceur lance à la main, à hauteur de cuisse puis de poitrine ; le receveur amortit et passe au sol à la cible.",
-    "Rotation tous les 6 lancers ; un ballon pour trois suffit, ce qui convient aux groupes nombreux.",
-    "Ballons de taille adaptée à l'âge ; pour la tête, à partir de 13 ans, ballon plus léger ou moins gonflé.",
-    "Par forte chaleur, séries courtes à l'ombre ; ce travail se place en début de séance, joueurs frais."
+    "Lancer à la main, à hauteur de cuisse puis de poitrine ; le receveur amortit et passe au sol à la cible.",
+    "Rotation tous les 6 lancers ; un ballon pour trois suffit, même avec un grand groupe.",
+    "Ballons de taille adaptée à l'âge ; pour la tête, un ballon plus léger ou moins gonflé.",
+    "Forte chaleur : séries courtes à l'ombre, en début de séance."
    ],
    "rules": [
     "Amorti puis passe à la cible en deux touches au plus : 1 point.",
     "L'entraîneur annonce la surface : cuisse, poitrine, coup de pied, ou au choix.",
-    "Avant 13 ans : aucun jeu de tête dans cette fiche.",
-    "À partir de 13 ans : tête seulement sur ballon léger lancé à la main de près, et très peu de répétitions par séance.",
-    "Jamais de tête sur un long ballon frappé ; si votre fédération fixe des règles plus strictes, elles s'appliquent.",
-    "Choc à la tête, mal de tête ou vertige : le joueur arrête, ne reprend pas le jour même, et l'on prévient la famille et un soignant."
+    "Avant 13 ans : aucun jeu de tête. Dès 13 ans : ballon léger lancé à la main de près, très peu de répétitions par séance.",
+    "Jamais de tête sur un long ballon frappé ; les règles plus strictes de votre fédération priment.",
+    "Choc à la tête, mal de tête ou vertige : le joueur arrête et ne reprend pas le jour même ; on prévient la famille et un soignant."
    ],
    "coaching": [
     "Lis la trajectoire tôt et place-toi sous le ballon.",
     "Cuisse : elle descend au contact pour amortir, le ballon tombe devant toi.",
     "Poitrine : bombe-la, puis recule un peu les épaules au contact.",
     "Ton premier contact va déjà vers la cible.",
-    "Tête, à partir de 13 ans : yeux ouverts, cou gainé, le front, les bras pour l'équilibre, jamais les coudes."
+    "Tête, dès 13 ans : yeux ouverts, cou gainé, front, bras pour l'équilibre, jamais les coudes."
    ],
    "progressions": [
     "Le lanceur varie la hauteur sans prévenir.",
     "Un défenseur passif dans le dos du receveur : amortir en protégeant le ballon.",
-    "À partir de 13 ans, ballon frappé au pied depuis 15 m, pour l'amorti seulement.",
-    "À partir de 13 ans, remise de la tête vers la cible, ballon léger lancé à la main."
+    "Dès 13 ans : amorti d'un ballon frappé depuis 15 m. La remise de la tête reste sur lancer à la main."
    ],
    "regressions": [
     "Lancer plus doux, à 4 m.",
     "Le ballon rebondit une fois avant le contrôle.",
     "Ballon en mousse ou plus léger pour les U9."
    ],
-   "measure": "Sur 10 lancers par joueur et par surface : amortis qui restent à moins d'un mètre, et passes réussies vers la cible. Pour la tête, l'entraîneur note les répétitions pour qu'elles restent rares.",
-   "story": "Avant les grands matchs, les frères se passent le ballon de Mami en l'air, dix jongles sans qu'il touche le sol, puis BriBri le bloque sur sa cuisse."
+   "measure": "Sur 10 lancers par joueur et par surface : amortis qui restent à moins d'un mètre, passes réussies vers la cible. Têtes : l'entraîneur les compte pour qu'elles restent rares.",
+   "story": "Avant les grands matchs, les frères jonglent à deux avec le ballon de Mami, puis BriBri le bloque sur sa cuisse."
   },
   "en": {
    "title": "Aerial Play",
    "subtitle": "Cushion with the thigh, chest and foot; heading only from age 13",
-   "objective": "Master a ball that arrives in the air so you can keep it and play it on the ground: thigh, chest, instep. Heading is only introduced from age 13, with care.",
+   "objective": "Master a ball in the air so you can keep it and play it on the ground: thigh, chest, instep. Heading waits until age 13, and is practised with care.",
    "organisation": [
     "Groups of three on 20 x 12 m: a thrower, a receiver 6 m away, a target 8 m to the side.",
-    "The thrower throws by hand, at thigh height then chest height; the receiver cushions it and passes along the ground to the target.",
-    "Rotate every 6 throws; one ball for three is enough, which suits large groups.",
-    "Balls of the right size for the age; for heading, from age 13, a lighter or softer ball.",
-    "In strong heat, short sets in the shade; do this early in the session, with fresh players."
+    "Throw by hand, at thigh height then chest height; the receiver cushions it and passes along the ground to the target.",
+    "Rotate every 6 throws; one ball for three is enough, even with a big group.",
+    "Balls of the right size for the age; for heading, a lighter or softer ball.",
+    "Strong heat: short sets in the shade, early in the session."
    ],
    "rules": [
     "Cushion then pass to the target in two touches at most: 1 point.",
     "The coach calls the surface: thigh, chest, instep, or player's choice.",
-    "Under 13: no heading at all in this drill.",
-    "From 13: heading only on a light ball thrown by hand from close range, with very few reps per session.",
-    "Never head a long kicked ball; if your federation has stricter rules, they apply.",
-    "A knock to the head, a headache or dizziness: the player stops, does not return that day, and the family and a medic are told."
+    "Under 13: no heading at all. From 13: a light ball thrown by hand from close range, very few reps per session.",
+    "Never head a long kicked ball; your federation's stricter rules always come first.",
+    "A knock to the head, a headache or dizziness: the player stops and does not return that day; tell the family and a medic."
    ],
    "coaching": [
     "Read the flight early and get under the ball.",
     "Thigh: let it drop on contact to cushion, the ball falls in front of you.",
     "Chest: push it out, then draw the shoulders back slightly on contact.",
     "Your first touch already goes towards the target.",
-    "Heading, from 13: eyes open, neck firm, use the forehead, arms for balance, never the elbows."
+    "Heading, from 13: eyes open, neck firm, forehead, arms for balance, never the elbows."
    ],
    "progressions": [
     "The thrower varies the height without warning.",
     "A passive defender behind the receiver: cushion while shielding the ball.",
-    "From 13, a ball kicked from 15 m, for cushioning only.",
-    "From 13, a headed lay-off to the target, light ball thrown by hand."
+    "From 13: cushion a ball kicked from 15 m. Headed lay-offs stay on a hand throw."
    ],
    "regressions": [
     "Softer throw, from 4 m.",
     "The ball bounces once before the control.",
     "Foam or lighter ball for U9s."
    ],
-   "measure": "Out of 10 throws per player and per surface: cushioned touches that stay within a metre, and passes that reach the target. For heading, the coach logs the reps so they stay rare.",
-   "story": "Before big matches the brothers pass Mami's ball in the air, ten touches without it hitting the ground, then BriBri traps it on his thigh."
+   "measure": "Out of 10 throws per player and per surface: cushioned touches that stay within a metre, passes that reach the target. Headers: the coach counts them so they stay rare.",
+   "story": "Before big matches the brothers juggle Mami's ball together, then BriBri traps it on his thigh."
   },
   "diagram": {
    "view": "grid",

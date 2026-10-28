@@ -199,7 +199,7 @@ function Toc({ entries, planned, base, partLabel, partName, numberOf, countable,
             return (
               <a key={part} href={chapterUrl(base, e.no)} className="block border-b border-line px-5 py-4 transition last:border-b-0 hover:bg-sand/40 sm:px-6">
                 <span className="block font-display text-[17px] font-semibold leading-snug text-ink">{partName(part, e)}</span>
-                {e.summary && <span className="mt-0.5 line-clamp-2 block text-[14px] leading-snug text-ink-muted">{e.summary}</span>}
+                {e.summary && <span className="mt-0.5 line-clamp-2 text-[14px] leading-snug text-ink-muted">{e.summary}</span>}
               </a>
             )
           }
@@ -226,7 +226,7 @@ function Toc({ entries, planned, base, partLabel, partName, numberOf, countable,
                           <span className="block font-semibold leading-snug text-ink">
                             {num && <span className="sr-only">{t('library.chapter', { n: num })}, </span>}{e.title}
                           </span>
-                          {e.summary && <span className="mt-0.5 line-clamp-2 block text-[14px] leading-snug text-ink-muted">{e.summary}</span>}
+                          {e.summary && <span className="mt-0.5 line-clamp-2 text-[14px] leading-snug text-ink-muted">{e.summary}</span>}
                           {showPov && e.pov && <span className="mt-1 block text-[12px] font-semibold text-terra-600">{t('library.povLabel', { pov: e.pov })}</span>}
                         </span>
                       </a>

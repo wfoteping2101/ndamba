@@ -54,6 +54,9 @@ export default function Onboarding() {
   const [creating, setCreating] = useState(false)
   const [demoBusy, setDemoBusy] = useState(false)
   const [restart, setRestart] = useState(false)
+  // after a demo is seeded, wait until the session sees it before opening /app (or /app sends us back here)
+  const [goApp, setGoApp] = useState(false)
+  useEffect(() => { if (goApp && ready && profile) { setGoApp(false); nav('/app', { replace: true }) } }, [goApp, ready, profile]) // eslint-disable-line react-hooks/exhaustive-deps
   const queue = useRef<Promise<void>>(Promise.resolve())
   const scroller = useRef<HTMLDivElement>(null)
   const draftRef = useRef(draft)
@@ -243,7 +246,7 @@ export default function Onboarding() {
       const players = team ? await db.players.where('teamId').equals(team.id).count() : 0
       await postWelcome({ lang, name: p?.name ?? '', role: p?.role ?? 'coach', teamName: team?.name, players, demo: true })
       clear()
-      nav('/app', { replace: true })
+      setGoApp(true)
     } catch (e) { console.error('[demo]', e); setDemoBusy(false) }
   }
 

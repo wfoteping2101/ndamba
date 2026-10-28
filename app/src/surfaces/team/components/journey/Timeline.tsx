@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, CalendarCheck, ClipboardCheck, Crown, Eye, Flag, Star, Target, Trash2, Trophy } from 'lucide-react'
 import { db } from '../../../../lib/db'
 import { useT } from '../../../../i18n'
-import { cx, fmtDate } from '../../../../lib/util'
+import { cx, fmtDate, weekStart } from '../../../../lib/util'
 import { buildTimeline, deleteEvaluation, filterOf, saveEvaluation, obsSkillTones, obsTag, type ItemFilter, type JourneyData, type JourneyItem, type Season, type Stage } from '../../../../lib/journey'
 import type { AttendanceStatus, EventCode } from '../../../../lib/types'
 import { CardHead, RatingDots, SkillChip, fmtMinutes, quote, toneChip, useToast } from './bits'
@@ -184,7 +184,7 @@ function Item({ i, stage, viewer, onRemoveObs, onRemoveEval }: {
       const present = i.marks.filter((m) => m.status === 'present' || m.status === 'late').length
       return (
         <Row node={<Node tone="neutral"><CalendarCheck /></Node>} date={i.date}
-          title={t('timeline.week', { date: fmtDate(i.marks[0].session.date, lang, { day: 'numeric', month: 'short' }) })}>
+          title={t('timeline.week', { date: fmtDate(weekStart(i.marks[0].session.date), lang, { day: 'numeric', month: 'short' }) })}>
           <div className="flex flex-wrap items-center gap-2 text-[12.5px] text-ink-muted">
             <span className="font-semibold text-ink-soft">{t('timeline.weekCount', { n: present, count: i.marks.length })}</span>
             <span className="flex flex-wrap gap-1">
@@ -223,7 +223,7 @@ function Item({ i, stage, viewer, onRemoveObs, onRemoveEval }: {
       )
     case 'derived': {
       const title = i.type === 'skill_level' ? t('derived.skill_level', { skill: t(`common:skills.${i.skill}`), level: t(`team:levels.${i.level}`) })
-        : t(`derived.${i.type}`, { opponent: i.match?.opponent ?? '', n: i.n ?? 0 })
+        : t(`derived.${i.type}${stage === 'adult' && i.type !== 'matches_n' ? 'Adult' : ''}`, { opponent: i.match?.opponent ?? '', n: i.n ?? 0 })
       return <Row node={<Node tone="sun"><Star /></Node>} date={i.date} title={title} />
     }
   }

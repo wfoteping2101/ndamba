@@ -8,99 +8,283 @@ resume: Le dimanche, après la messe, la place de Vinyamar devient un terrain de
 illustration: Plan moyen, midi d'un dimanche de septembre, sur la place pavée du village, sous les grands platanes à l'écorce tachetée, devant la fontaine et le clocher carré. Avi Ramon, soixante-dix-neuf ans, grand et maigre, chemise blanche boutonnée jusqu'au cou, casquette de toile, espadrilles, le pied droit posé sur le ballon, immobile, un petit sourire sous sa moustache blanche. Face à lui, BriBri, petite afro, chaussette rouge et chaussette jaune, est figé en plein élan, déséquilibré. Kaydoudou, maillot vert numéro 8, fine raie à gauche, regarde la scène, les yeux grands ouverts. Lumière douce filtrée par les feuilles.
 ---
 
-À midi pile, les cloches de Vinyamar sonnèrent la fin de la messe, et la place se transforma en terrain de football.
+« Dong ! Dong ! Dong ! »
 
-Kaydoudou n'en crut pas ses yeux. Les portes de l'église s'ouvrirent, les gens sortirent dans leurs habits du dimanche, les dames avec leurs éventails, les messieurs avec leurs vestes sur le bras, les enfants qui couraient déjà. Et au lieu de rentrer déjeuner, une bonne partie de ce monde se dirigea vers les platanes. Un monsieur posa sa veste sur un banc. Un autre posa la sienne sur le rebord de la fontaine. Un petit garçon en chemise blanche sortit un ballon d'un sac de courses. En deux minutes, entre les troncs tachetés, sur les pavés usés, deux cercles s'étaient formés, avec un ou deux joueurs au milieu de chacun.
+Midi pile. Les cloches de Vinyamar sonnent la fin de la messe.
 
-« C'est la messe du foot », souffla BriBri.
+Et la place devient un terrain de foot.
 
-Il y avait des enfants de six ans et des messieurs de soixante-dix. Il y avait Laia, qui jouait en robe à fleurs et en baskets, et qui leur fit signe d'approcher sans même regarder le ballon qu'elle venait de renvoyer. Il y avait Nil, toujours aussi sérieux, qui comptait les passes à voix basse. Il y avait le boulanger, avec de la farine sur les avant-bras. Et autour, assis à la terrasse du café, une vingtaine de spectateurs qui buvaient leur petit café noir en commentant chaque passe comme si c'était une finale.
+Les portes de l'église s'ouvrent. Personne ne rentre déjeuner. Un monsieur pose sa veste sur un banc. Un petit garçon sort un ballon d'un sac de courses. Deux minutes plus tard, sous les grands platanes, deux cercles tournent déjà sur les pavés.
 
-La règle était simple : celui qui perdait le ballon entrait au milieu. Celui du milieu qui le récupérait sortait. Pas d'arbitre, pas de sifflet. Tout le monde savait.
+« C'est la messe du foot ! souffle BriBri. Regarde ! Il y a des bébés de six ans et des papis de soixante-dix ans ! Et le boulanger ! Il a encore de la farine sur les bras ! »
 
-Kaydoudou regardait surtout un homme.
+Kaydoudou a mis son vieux maillot vert numéro 8 ce matin, sans savoir pourquoi. Maintenant, il sait.
 
-Il était grand, maigre, un peu voûté, avec une chemise blanche boutonnée jusqu'au cou, une casquette de toile beige et une moustache blanche taillée bien droit. Il portait des espadrilles, ces chaussures de toile à semelle de corde, et il avait posé sa canne contre la fontaine avant d'entrer dans le cercle. Il ne courait pas. Il ne sautait pas. Il bougeait à peine. Et pourtant, depuis dix minutes que Kaydoudou l'observait, il n'avait pas perdu le ballon une seule fois.
+Dans un cercle, Nil compte les passes tout bas : « Una, dues, tres... » Laia, en robe à fleurs et en baskets, renvoie le ballon sans le regarder.
 
-« C'est Avi Ramon, dit Laia en venant vers eux, essoufflée. Avi, ça veut dire grand-père. Ce n'est pas mon grand-père à moi, mais c'est le grand-père de tout le monde ici. Il a soixante-dix-neuf ans. Il a entraîné les enfants du village pendant trente ans. Mon père, c'est lui qui lui a appris à jouer. » Elle baissa la voix. « Personne ne lui prend jamais le ballon. Jamais. »
+« Veniu ! Venez, les Camerounais ! Vous jouez ou vous regardez ? »
 
-« Moi, je vais le lui prendre », dit BriBri.
+« C'est quoi, la règle ? » demande Kaydoudou.
 
-Laia sourit comme quelqu'un qui connaît déjà la fin du film.
+« Tu perds le ballon, tu vas au milieu. Tu le reprends, tu sors. Pas d'arbitre, pas de sifflet. Tout le monde sait. »
+
+À la terrasse du café, les vieux commentent chaque passe comme une finale.
+
+Mais Kaydoudou ne regarde qu'un seul joueur.
+
+Un vieil homme. Grand, maigre, un peu voûté. Chemise blanche boutonnée jusqu'au cou. Casquette de toile beige. Moustache blanche taillée bien droit. Aux pieds, des espadrilles, ces chaussures de toile avec une semelle en corde. Sa canne attend contre la fontaine.
+
+Il ne court pas. Il ne saute pas. Il bouge à peine.
+
+Et depuis dix minutes, il n'a pas perdu le ballon une seule fois.
+
+*Comment il fait ?* pense Kaydoudou.
+
+Laia arrive, essoufflée, les joues rouges.
+
+« Lui, c'est Avi Ramon. Avi, ça veut dire grand-père. Ce n'est pas le mien, mais c'est le grand-père de tout le village. »
+
+« Il a quel âge ? » demande Kaydoudou.
+
+« Soixante-dix-neuf ans. Il a entraîné les enfants d'ici pendant trente ans. Mon père, c'est lui qui lui a appris à jouer. » Elle baisse la voix. « Personne ne lui prend le ballon. Personne. Jamais. »
+
+BriBri se met sur la pointe des pieds. Ses yeux brillent comme deux billes.
+
+« Moi, je vais le lui prendre. »
+
+Laia sourit. Le sourire de quelqu'un qui connaît déjà la fin du film.
+
+« Bona sort, toro. Bonne chance. »
 
 * * *
 
-BriBri perdit volontairement le ballon dès sa première passe, pour entrer au milieu du cercle d'Avi Ramon. Il se mit en position, sur la pointe des pieds, les bras écartés. Le ballon tourna, une fois, deux fois, puis il arriva dans les espadrilles du vieil homme.
+BriBri ne perd pas une seconde. Il entre dans le cercle d'Avi Ramon, reçoit une passe et la rate exprès.
 
-BriBri fonça.
+« Oh, pardon ! Bon, je vais au milieu, alors. »
 
-Avi Ramon ne bougea pas. Il posa simplement le pied droit sur le ballon et attendit, un petit sourire sous sa moustache blanche. Une demi-seconde. Peut-être moins. BriBri, qui arrivait à toute vitesse, dut choisir un côté, il choisit la gauche, il tendit la jambe... et le ballon était déjà parti à droite, glissé avec l'intérieur du pied, dans le petit trou que BriBri venait d'ouvrir lui-même en se jetant. BriBri resta figé en plein élan, tout déséquilibré, une jambe tendue vers rien.
+Le boulanger lève les yeux au ciel. Kaydoudou cache son rire dans sa main.
+
+Le ballon tourne. Puis il arrive dans les espadrilles du vieil homme.
+
+BriBri fonce.
+
+Et le temps ralentit.
+
+Kaydoudou voit tout. Avi Ramon qui pose le pied droit sur le ballon. Doucement. Comme on pose la main sur la tête d'un chat. Le petit sourire sous la moustache blanche. Les feuilles des platanes qui laissent tomber des taches de soleil sur les pavés.
+
+Le vieil homme attend.
+
+Une demi-seconde. Peut-être moins.
+
+BriBri arrive à toute vitesse. Il doit choisir un côté. Il choisit la gauche. Il tend la jambe... et il reste là, figé en plein élan, tout déséquilibré, comme un dessin animé sur pause.
+
+Avi Ramon, lui, n'a pas bougé. Le pied droit sur le ballon. Le petit sourire.
+
+Kaydoudou regarde, les yeux grands ouverts.
+
+Tac.
+
+Le ballon file à droite, dans le trou que BriBri vient d'ouvrir tout seul.
 
 « Olé », dit tranquillement le boulanger.
 
-La deuxième fois, ce fut pareil. La troisième aussi. À la quatrième, BriBri décida de ne plus se jeter et s'arrêta pile devant le vieil homme, à un mètre, en le fixant dans les yeux. Avi Ramon le regarda avec beaucoup d'intérêt, la semelle toujours posée sur le ballon. Ils restèrent ainsi, immobiles, l'un en face de l'autre, comme deux statues de la fontaine. À la terrasse, quelqu'un éclata de rire. BriBri tint trois secondes, puis il n'y tint plus : il plongea. Le ballon passa dans son dos.
+« OLÉ ! » répond toute la terrasse.
 
-Kaydoudou, lui, ne riait pas. Il regardait, les yeux grands ouverts. Depuis le premier rondo de La Granja, depuis que Jordi lui avait murmuré « massa temps », il avait passé la semaine à essayer d'aller vite. Toujours plus vite. Une touche, une touche, une touche. Il voulait que le ballon brûle ses pieds. Résultat : il avait perdu plus de ballons en cinq jours qu'en un mois à l'ESM. Il passait trop tôt, avant que la solution soit ouverte, et le taureau n'avait qu'à tendre la jambe.
+Deuxième essai. Pareil. Troisième essai. Pareil.
 
-Et ce vieil homme, lui, faisait exactement le contraire. Il gardait le ballon. Il attendait. Et il ne le perdait jamais.
+« C'est pas possible, grogne BriBri. Il a de la colle sous l'espadrille ! »
 
-Quand ce fut le tour de Kaydoudou d'entrer au milieu, il essaya de ne pas se jeter. Il s'approcha lentement, bien placé, comme Monsieur Lacombe le lui avait appris, pour couper la passe la plus évidente. Avi Ramon le regarda venir. Il ne passa pas. Kaydoudou fit un pas de plus. Le vieil homme ne passa toujours pas. Kaydoudou sentit monter une petite fièvre : il allait l'avoir, il allait être le premier, il n'avait qu'à avancer encore un peu, juste un peu, et voilà, son poids passa sur la jambe avant...
+Quatrième essai. Cette fois, BriBri ne se jette pas. Il s'arrête net, à un mètre du vieil homme, et le fixe droit dans les yeux. Avi Ramon le regarde avec beaucoup d'intérêt, la semelle toujours sur le ballon.
 
-Le ballon partit dans son dos, au millimètre, vers Laia.
+Personne ne bouge. On dirait deux cow-boys dans un vieux film.
 
-Kaydoudou se retourna, et il comprit. Ce n'était pas le vieil homme qui avait choisi le moment de la passe. C'était lui, Kaydoudou. En s'engageant, il avait ouvert la porte, et Avi Ramon n'avait eu qu'à attendre qu'elle s'ouvre.
+« Un... », compte Nil.
+
+« Deux... », compte le boulanger.
+
+« Tres ! » crie toute la terrasse.
+
+BriBri ne tient plus. Il plonge.
+
+Le ballon passe dans son dos.
+
+À la terrasse, un papi rit si fort qu'il renverse son café.
+
+Kaydoudou, lui, ne rit pas. BriBri revient en se frottant les fesses.
+
+« Toi, tu ne rigoles pas parce que tu es jaloux. Depuis que Jordi t'a dit *massa temps*, tu joues comme si le ballon était une patate brûlante. Une touche, pof ! Une touche, pof ! Tu en as perdu combien, cette semaine ? »
+
+« Beaucoup. »
+
+« Combien, beaucoup ? »
+
+Kaydoudou soupire.
+
+« Plus qu'en un mois à l'ESM. Je passe trop tôt. Avant que la porte soit ouverte. »
+
+« Et lui, il ne passe jamais ! »
+
+« Il attend. Et il ne perd jamais le ballon. »
+
+Kaydoudou entre dans le cercle. À sa deuxième passe, il joue trop vite, et le ballon finit dans les pieds du boulanger.
+
+« Al mig, noi. Au milieu, petit. »
+
+« Ne te jette pas ! crie BriBri. Fais pas comme moi ! »
+
+Kaydoudou ne se jette pas. Il s'approche lentement, bien placé, comme Monsieur Lacombe le lui a appris. Il coupe la passe la plus facile. Avi Ramon ne passe pas. Kaydoudou fait un pas de plus. Le vieil homme ne passe toujours pas.
+
+« Il va craquer, chuchote un papi à la terrasse. Le petit va l'avoir. »
+
+*Je vais l'avoir. Je vais être le premier.*
+
+Une petite fièvre lui monte aux joues. Encore un pas. Juste un petit. Son poids glisse sur la jambe avant...
+
+Tac.
+
+Le ballon part dans son dos, au millimètre, vers Laia.
+
+Kaydoudou se retourne. Et il comprend.
+
+« Il t'a eu ! » rigole BriBri.
+
+« Non. Je me suis eu tout seul. C'est moi qui ai choisi le moment de la passe. En avançant, j'ai ouvert la porte. Lui, il a juste attendu. »
+
+« Olé », dit le boulanger, très doucement.
 
 * * *
 
-Après le rondo, Avi Ramon s'assit sur le banc de pierre, sous le plus grand des platanes, et il fit signe aux deux frères de venir s'asseoir à côté de lui. Il reprit sa canne. Ses mains étaient tachées de brun, avec de grosses veines bleues, et elles tremblaient un peu. Sur son avant-bras, presque effacé, il y avait un tatouage : une étoile à huit branches, avec de petites lettres au bout des branches.
+Après le rondo, Avi Ramon reprend sa canne et s'assoit sur le banc de pierre, sous le plus grand platane. Il fait signe aux deux frères.
 
-« Vous êtes les deux petits Camerounais de chez Jordi », dit-il en français. Il avait un accent qui roulait, rond et chaud, comme celui de Laia mais plus lent. « J'ai appris le français à Marseille, il y a soixante ans. Sur le port. Alors, vous voulez savoir ? »
+« Venez. Asseyez-vous. »
 
-Kaydoudou hocha la tête. BriBri aussi, très fort.
+Ses mains sont tachées de brun, avec de grosses veines bleues. Elles tremblent un peu. Sur son avant-bras, il y a un vieux tatouage presque effacé : une étoile à huit branches, avec des petites lettres au bout.
 
-« Ça s'appelle la pausa. La pause. » Il leva un doigt noueux. « Le défenseur veut le ballon. Il a faim. Alors moi, je ne lui donne rien. J'attends. Une demi-seconde de plus que ce qu'il croit. Et le défenseur, il ne peut pas attendre, lui. Il a trop faim. Il s'engage. Il met son poids sur une jambe. Et à ce moment-là, la porte s'ouvre. » Il fit glisser sa main sur le côté, doucement. « Et le ballon passe dans son dos. El futbol és l'art d'esperar el bon moment, noi. Le football, c'est l'art d'attendre le bon moment, petit. »
+« Vous êtes les deux petits Camerounais de chez Jordi », dit-il en français, avec un accent qui roule.
 
-Kaydoudou fronça les sourcils.
+« Vous parlez français ? » s'étonne BriBri.
 
-« Mais l'entraîneur m'a dit que je prenais trop de temps. »
+« Je l'ai appris à Marseille. Il y a soixante ans, sur le port. » Il cligne de l'œil. « Alors ? Vous voulez savoir ? »
 
-Avi Ramon eut un petit rire.
+Kaydoudou hoche la tête. BriBri hoche la tête si fort que son afro rebondit.
 
-« Jordi a raison. Et moi aussi. Tu sais pourquoi ? Parce que ce n'est pas le même temps. » Il se pencha vers lui. « Toi, tu gardes le ballon parce que tu ne sais pas encore où le donner. Tu attends parce que tu as peur. Moi, je garde le ballon parce que je sais déjà où il va. J'attends seulement que la porte s'ouvre. La pausa, ce n'est pas être lent. C'est être patient avec une idée dans la tête. »
+Avi Ramon lève un doigt tordu comme une racine.
 
-Kaydoudou resta silencieux. Il pensait à Tonton Fokou, à Papa, à Marcus et à ses flèches, à Monsieur Lacombe. Le ballon doit voyager. Mais il doit savoir où il va. Avi Ramon venait d'ajouter un mot à la phrase, un mot qu'il n'avait jamais entendu : quand.
+« Ça s'appelle la pausa. La pause. »
 
-« Et pour dribbler, ça marche aussi ? » demanda BriBri.
+« La pausa », répète Kaydoudou tout bas. On dirait le nom d'un coup secret.
 
-Le vieil homme le regarda avec malice.
+« Le défenseur veut le ballon. Il a faim. Moi, je ne lui donne rien. J'attends. Une demi-seconde de plus que ce qu'il croit. »
+
+« Et après ? » demande BriBri.
+
+« Après, lui, il ne peut plus attendre. Il a trop faim. Il met son poids sur une jambe. Et à ce moment-là, crac, la porte s'ouvre. »
+
+Sa main glisse doucement sur le côté.
+
+« Et le ballon passe dans son dos. » Il sourit. « El futbol és l'art d'esperar el bon moment, noi. Le football, c'est l'art d'attendre le bon moment, petit. »
+
+Kaydoudou fronce les sourcils.
+
+« Mais Jordi m'a dit que je prenais trop de temps. »
+
+Avi Ramon rit tout bas.
+
+« Jordi a raison. Et moi aussi. Parce que ce n'est pas le même temps. » Il se penche vers lui. « Toi, tu gardes le ballon parce que tu ne sais pas encore où le donner. Tu attends parce que tu as peur. Moi, je le garde parce que je sais déjà où il va. J'attends juste que la porte s'ouvre. »
+
+Il tapote sa tempe.
+
+« La pausa, ce n'est pas être lent. C'est être patient avec une idée dans la tête. »
+
+Kaydoudou ne dit rien. Il pense à Tonton Fokou, à Papa, à Marcus et ses flèches, à Monsieur Lacombe. *Le ballon doit voyager. Mais il doit savoir où il va.* Et voilà qu'un vieil homme, sur un banc, ajoute un mot à la phrase. Un tout petit mot.
+
+*Quand.*
+
+« Et pour dribbler ? demande BriBri. Ça marche aussi ? »
+
+Le vieil homme le regarde avec malice.
 
 « Essaie. »
 
-BriBri repartit vers le cercle comme une flèche. Cette fois, quand le ballon arriva, il ne fila pas tout droit comme d'habitude. Il s'arrêta net, la semelle sur le ballon, juste une demi-seconde, face à Nil, qui venait d'entrer au milieu et arrivait sur lui. Nil freina, hésita, déplaça son poids... et BriBri passa de l'autre côté comme un courant d'air. Nil resta planté sur les pavés, la bouche ouverte. Il ne comptait même plus les passes.
+BriBri file vers le cercle comme une flèche. Nil vient d'entrer au milieu. Le ballon arrive à BriBri. D'habitude, il fonce tout droit. Pas cette fois.
 
-« Vous avez vu ? hurla BriBri. Je l'ai pausé ! J'ai pausé Nil ! »
+Il s'arrête net. La semelle sur le ballon.
+
+Une demi-seconde.
+
+Nil arrive, freine, hésite. Son poids passe sur une jambe...
+
+Fffft. BriBri passe de l'autre côté, comme un courant d'air.
+
+Nil reste planté sur les pavés, la bouche ouverte. Il a même arrêté de compter.
+
+« Mira ! crie Laia. Il apprend vite, le taureau ! »
+
+« Vous avez vu ? hurle BriBri. Je l'ai pausé ! J'ai pausé Nil ! »
 
 « On ne dit pas pausé », dit Kaydoudou.
 
-« Si, maintenant on dit pausé. »
+« Si. Maintenant, on dit pausé. »
 
-Toute la terrasse du café applaudit. Même Nil, en se grattant la tête, finit par sourire.
+Toute la terrasse applaudit. Nil se gratte la tête. Puis il finit par sourire, lui aussi.
 
-Avi Ramon les regardait, les mains posées sur sa canne. Alors il raconta. Il avait été marin, avant d'être éducateur, pendant vingt ans. Il avait traversé toute la Méditerranée sur des cargos : Marseille, Gênes, Alger, Tunis, Alexandrie. Il avait vu la mer devenir violette au coucher du soleil, il avait dormi sur des ponts brûlants, il avait connu des tempêtes à faire pleurer les capitaines. Puis un jour, son bateau avait passé le détroit de Gibraltar et descendu la côte de l'Afrique, jusqu'à Dakar, Abidjan, et même Douala.
+« Avant d'être entraîneur, j'ai été marin, raconte Avi Ramon. Vingt ans sur des cargos. »
 
-« Douala ? » répétèrent les deux frères en même temps.
+« Les gros bateaux avec des boîtes dessus ? » demande BriBri.
 
-« Douala. » Il sourit. « Il faisait chaud comme dans un four, et on jouait sur les quais, le soir, avec les dockers. Il y avait là des garçons... » Il secoua lentement la tête. « Des joueurs formidables. Plus forts que tous ceux que j'ai vus ici. Mais personne ne les portait. Ils n'avaient pas d'école. Pas de rondo du dimanche, pas de vieux pour leur montrer la pausa, pas d'idée commune. Juste leur talent, tout seuls. Et le talent tout seul, ça s'use, noi. Ça s'use comme un bateau sans port. »
+« Les gros bateaux avec des boîtes dessus. » Il rit. « Marseille, Gênes, Alger, Tunis, Alexandrie. J'ai vu la mer devenir violette le soir. J'ai dormi sur des ponts brûlants. J'ai vu des tempêtes à faire pleurer les capitaines. »
 
-Kaydoudou sentit quelque chose se serrer dans sa poitrine. Papa avait dit presque la même chose, devant la finale de la Coupe du monde, chez Diego : à l'Afrique, il ne manque pas le talent, il manque une idée commune. Il regarda son petit frère. BriBri, pour une fois, ne disait rien.
+Il regarde au bout de la ruelle, où brille un morceau de mer.
 
-Avi Ramon se leva lentement, en s'appuyant sur sa canne. Il remit sa casquette bien droite. Il avait l'air plus petit, tout à coup, et plus fatigué que dans le cercle.
+« Un jour, on a passé Gibraltar. On a descendu la côte de l'Afrique. Dakar. Abidjan. Et même Douala. »
 
-« Revenez chaque dimanche. Tous les deux. » Il posa sa main tremblante sur l'épaule de Kaydoudou. « Je n'ai plus beaucoup de temps pour donner. Alors je donne vite. »
+« DOUALA ? »
 
-Il partit à petits pas sous les platanes, vers une maison aux volets verts, au coin de la place. Kaydoudou le suivit des yeux jusqu'à ce que la porte se referme. Alors seulement, il repensa à l'étoile tatouée sur l'avant-bras du vieil homme. Huit branches, et une lettre au bout des plus longues : N, E, S, O. Une rose des vents. La carte des marins, pour ne jamais se perdre en mer.
+Les deux frères ont crié en même temps. Un pigeon s'envole de la fontaine.
 
-Le soir, dans son carnet, il écrivit un seul mot en haut d'une page blanche, et il le souligna deux fois : *pausa*.
+« Douala. » Le vieil homme sourit. « Il faisait chaud comme dans un four. Le soir, on jouait sur les quais avec les dockers. Et il y avait là des garçons... »
+
+« Des garçons comment ? » demande BriBri.
+
+« Des joueurs formidables. Plus forts que tous ceux que j'ai vus ici. Mais personne ne les portait. Ils n'avaient pas d'école. Pas de rondo du dimanche. Pas de vieux pour leur montrer la pausa. Pas d'idée commune. Juste leur talent, tout seuls. Et le talent tout seul, ça s'use, noi. Comme un bateau sans port. »
+
+Kaydoudou sent sa poitrine se serrer. Il entend la voix de Papa, l'été de la Coupe du monde, chez Diego : « À l'Afrique, il ne manque pas le talent. Il manque une idée commune. »
+
+Il regarde son petit frère. BriBri, pour une fois, ne dit rien du tout.
+
+Avi Ramon se lève lentement, appuyé sur sa canne. Il remet sa casquette bien droite. Tout à coup, il a l'air plus petit. Et plus fatigué que dans le cercle.
+
+« Revenez chaque dimanche. Tous les deux. »
+
+Il pose sa main qui tremble sur l'épaule de Kaydoudou.
+
+« Je n'ai plus beaucoup de temps pour donner. Alors je donne vite. »
+
+« On viendra ! promet BriBri. Même s'il pleut ! Même s'il neige ! »
+
+« Promis », dit Kaydoudou.
+
+Avi Ramon s'en va à petits pas, sous les platanes, vers une maison aux volets verts, au coin de la place. Kaydoudou le suit des yeux jusqu'à ce que la porte se ferme.
+
+Alors seulement, il repense au tatouage. Une étoile à huit branches. Une lettre au bout des plus longues : N, E, S, O.
+
+« BriBri. Son tatouage. C'est une rose des vents. »
+
+« Une rose qui fait du vent ? »
+
+« Le dessin des boussoles. Les marins s'en servent pour ne jamais se perdre en mer. »
+
+Le soir, dans sa chambre, Kaydoudou ouvre le carnet. En haut d'une page blanche, il écrit un seul mot, et il le souligne deux fois.
+
+« Tu écris quoi ? » demande BriBri depuis son lit.
+
+« Le mot le plus important de la semaine. »
+
+*Pausa.*
+
+Puis il compte les jours jusqu'à dimanche. Sept.
+
+C'est beaucoup trop long.
 
 > [!CARNET] Leçon du Ballon n°26 : La pausa
 > Je garde le ballon une demi-seconde de plus, pour que l'adversaire s'engage.

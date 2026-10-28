@@ -37,10 +37,10 @@ export function MinutesModal({ open, onClose, match, players }: { open: boolean;
     <Modal open={open} onClose={onClose} title={t('minutes.title')}
       footer={<><button type="button" className="btn-ghost" onClick={onClose}>{t('common:actions.cancel')}</button><button type="button" className="btn-primary" onClick={save}>{t('minutes.save')}</button></>}>
       <p className="mb-3 text-[13.5px] text-ink-muted">{t('minutes.hint', { n: full })}</p>
-      <h3 className="mb-1 text-xs font-semibold text-ink-muted">{t('minutes.starters')}</h3>
+      <h3 className="mb-1 font-sans text-xs font-semibold tracking-normal text-ink-muted">{t('minutes.starters')}</h3>
       <ul className="mb-4 divide-y divide-line/70 rounded-2xl border border-line">{starters.map(row)}</ul>
       {subs.length > 0 && <>
-        <h3 className="mb-1 text-xs font-semibold text-ink-muted">{t('minutes.subs')}</h3>
+        <h3 className="mb-1 font-sans text-xs font-semibold tracking-normal text-ink-muted">{t('minutes.subs')}</h3>
         <ul className="divide-y divide-line/70 rounded-2xl border border-line">{subs.map(row)}</ul>
       </>}
     </Modal>

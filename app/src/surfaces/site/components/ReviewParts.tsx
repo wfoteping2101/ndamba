@@ -85,7 +85,7 @@ export function ArtGallery({ art, planned, demo, book }: { art: ArtImage[]; plan
       <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
         {art.map((a, i) => (
           <li key={a.file}>
-            <button type="button" onClick={() => setOpen(i)} className="group block w-full overflow-hidden rounded-2xl border border-line bg-paper text-left shadow-card transition hover:-translate-y-0.5 hover:shadow-lift focus-visible:-translate-y-0.5 motion-reduce:transition-none">
+            <button type="button" onClick={() => setOpen(i)} className="group block h-full w-full overflow-hidden rounded-2xl border border-line bg-paper text-left shadow-card transition hover:-translate-y-0.5 hover:shadow-lift focus-visible:-translate-y-0.5 motion-reduce:transition-none">
               <span className="relative block aspect-[2/3] overflow-hidden bg-sand">
                 <Thumb a={a} sizes="(min-width: 1024px) 270px, (min-width: 640px) 33vw, 50vw" className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03] motion-reduce:transition-none" />
                 {a.status === 'redo' && <span className="absolute left-2 top-2 rounded-full bg-clay-500 px-2 py-0.5 text-[10.5px] font-bold uppercase tracking-wide text-white">{t('review.tome1.status.redo')}</span>}
@@ -93,7 +93,7 @@ export function ArtGallery({ art, planned, demo, book }: { art: ArtImage[]; plan
               <span className="block px-3 pb-3 pt-2.5">
                 <span className="block text-[11px] font-bold uppercase tracking-[0.12em] text-terra-600">{label(a)}</span>
                 {a.title && <span className="mt-0.5 block truncate font-display text-[15px] font-semibold text-ink">{a.title}</span>}
-                <span className="mt-1 line-clamp-2 block text-[12.5px] leading-snug text-ink-muted">{a.alt}</span>
+                <span className="mt-1 line-clamp-2 text-[12.5px] leading-snug text-ink-muted">{a.alt}</span>
               </span>
             </button>
           </li>
@@ -193,10 +193,10 @@ export function DrillGrid({ drills, demo }: { drills: Drill[]; demo: Demo }) {
                   <span className="min-w-0 text-[11px] font-semibold uppercase leading-tight tracking-wide text-ink-faint">{t(`common:families.${d.family}`)}</span>
                 </span>
                 <span className="block px-3 font-display text-[15px] font-semibold leading-snug text-ink sm:text-[16px]">{tx.title}</span>
-                <LazyMount className="mt-auto px-2 pb-1 pt-2" placeholder={<span className="block aspect-[3/2] rounded-xl bg-sand/60" />}>
+                <LazyMount className="px-2 pb-1 pt-2" placeholder={<span className="block aspect-[3/2] rounded-xl bg-sand/60" />}>
                   <Pitch spec={d.diagram} width={420} title={tx.title} className="border border-line" />
                 </LazyMount>
-                <span className="flex items-center justify-between gap-2 px-3 pb-3 pt-1 text-[12px] text-ink-muted">
+                <span className="mt-auto flex items-center justify-between gap-2 px-3 pb-3 pt-1 text-[12px] text-ink-muted">
                   <span className="truncate">{t('review.methode.drillMeta', { ages: d.ages, minutes: d.minutes })}</span>
                   <ArrowRight size={14} className="shrink-0 text-forest-600 transition group-hover:translate-x-0.5" aria-hidden="true" />
                 </span>

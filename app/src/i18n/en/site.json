@@ -28,7 +28,7 @@
       "title": "Train, observe, follow",
       "train": {
         "title": "Train",
-        "body": "The method's 50 drills with their diagrams, sessions built in a few taps, the week from MD-4 to MD-1: fitted to the age group, the level and the fixture list, from U8 to the first team."
+        "body": "The method's drills with their diagrams, sessions built in a few taps, the week from MD-4 to MD-1: fitted to the age group, the level and the fixture list, from U8 to the first team."
       },
       "observe": {
         "title": "Observe",
@@ -266,7 +266,7 @@
       "methode": {
         "label": "The method book",
         "audience": "For coaches and analysts, from grassroots to the professional game and national teams",
-        "body": "The African game model: the four moments, the five intentions of possession, the roles, the training week and periodisation, the Njangi Index and the match report, the 2030 plan for a federation. Its 50 drills and their diagrams are in the app."
+        "body": "The African game model: the four moments, the five intentions of possession, the roles, the training week and periodisation, the Njangi Index and the match report, the 2030 plan for a federation. Its drills and their diagrams are in the app."
       },
       "series": {
         "label": "The children's novel",
@@ -573,7 +573,7 @@
         "name": "Lionceaux, book 1",
         "kind": "Children's novel, ages 8 to 12",
         "status": "{{n}} of {{total}} illustrations",
-        "request": "Lionceaux, book 1: Le Ballon qui voyage"
+        "request": "Lionceaux, book 1"
       },
       "methode": {
         "name": "The Njangi Code",

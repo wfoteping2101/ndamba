@@ -89,13 +89,18 @@ function StickyNav() {
   const { t } = useSiteT()
   const [active, setActive] = useState<string>(SECTIONS[0].id)
   useEffect(() => {
-    if (typeof IntersectionObserver === 'undefined') return
-    const io = new IntersectionObserver((es) => {
-      const vis = es.filter((e) => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
-      if (vis[0]) setActive(vis[0].target.id)
-    }, { rootMargin: '-120px 0px -60% 0px' })
-    for (const s of SECTIONS) { const el = document.getElementById(s.id); if (el) io.observe(el) }
-    return () => io.disconnect()
+    // the active project is the last one whose top has passed under the sticky bars
+    let frame = 0
+    const update = () => {
+      frame = 0
+      let cur: string = SECTIONS[0].id
+      for (const s of SECTIONS) { const el = document.getElementById(s.id); if (el && el.getBoundingClientRect().top <= 160) cur = s.id }
+      setActive(cur)
+    }
+    const onScroll = () => { if (!frame) frame = requestAnimationFrame(update) }
+    update()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => { window.removeEventListener('scroll', onScroll); if (frame) cancelAnimationFrame(frame) }
   }, [])
   return (
     <nav className="sticky top-16 z-30 border-b border-line/70 bg-cream/90 backdrop-blur" aria-label={t('review.jump')}>

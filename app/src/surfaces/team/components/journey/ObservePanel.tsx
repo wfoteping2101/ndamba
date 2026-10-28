@@ -17,7 +17,7 @@ export interface PlayerGroup { id: string; label: string; players: Player[]; mut
 
 export interface ObserveContext { sessionId?: string; matchId?: string; date?: string }
 
-export function ObservePanel({ teamId, groups, context, minute, onMinute, showMinute = false, initialSelected = [], compact = false, stickyClass = 'bottom-[76px] lg:bottom-4' }: {
+export function ObservePanel({ teamId, groups, context, minute, onMinute, showMinute = false, initialSelected = [], compact = false, stickyClass = 'bottom-[calc(env(safe-area-inset-bottom)+76px)] mr-[66px] lg:bottom-6 lg:mr-[76px]' }: {
   teamId: string
   groups: PlayerGroup[]
   context: ObserveContext
@@ -72,14 +72,14 @@ export function ObservePanel({ teamId, groups, context, minute, onMinute, showMi
       {groups.filter((g) => g.players.length).map((g) => (
         <div key={g.id} className="mb-3">
           <div className="mb-1.5 flex items-center justify-between">
-            <h3 className="text-[12px] font-semibold text-ink-muted">{g.label} <span className="tabular-nums text-ink-faint">{g.players.length}</span></h3>
+            <h3 className="font-sans text-[12px] font-semibold tracking-normal text-ink-muted">{g.label} <span className="tabular-nums text-ink-faint">{g.players.length}</span></h3>
             {!g.muted && g.players.length > 1 && (
               <button type="button" className="text-[12px] font-semibold text-forest-700 hover:underline" onClick={() => setSelected((s) => { const n = new Set(s); const allIn = g.players.every((p) => n.has(p.id)); g.players.forEach((p) => (allIn ? n.delete(p.id) : n.add(p.id))); return n })}>
                 {g.players.every((p) => selected.has(p.id)) ? t('observe.noneGroup') : t('observe.allGroup')}
               </button>
             )}
           </div>
-          <ul className={cx('grid gap-1.5', compact ? 'grid-cols-3 sm:grid-cols-5' : 'grid-cols-3 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4')}>
+          <ul className={cx('grid gap-1.5', compact ? 'grid-cols-2 min-[400px]:grid-cols-3 sm:grid-cols-4' : 'grid-cols-2 min-[400px]:grid-cols-3 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-3')}>
             {g.players.map((p) => {
               const on = selected.has(p.id)
               return (
@@ -114,7 +114,7 @@ export function ObservePanel({ teamId, groups, context, minute, onMinute, showMi
       </div>
 
       <div>
-        <h3 className="mb-1.5 text-[13px] font-semibold text-ink-soft">{t('observe.skills')}</h3>
+        <h3 className="mb-1.5 font-sans text-[13px] font-semibold tracking-normal text-ink-soft">{t('observe.skills')}</h3>
         <ul className="grid grid-cols-2 gap-1.5 sm:grid-cols-5">
           {SKILL_KEYS.map((k) => {
             const v = skills[k]
@@ -133,7 +133,7 @@ export function ObservePanel({ teamId, groups, context, minute, onMinute, showMi
       </div>
 
       <div>
-        <h3 className="mb-1.5 text-[13px] font-semibold text-ink-soft">{tone === 'plus' ? t('observe.tagsPlus') : t('observe.tagsWork')}</h3>
+        <h3 className="mb-1.5 font-sans text-[13px] font-semibold tracking-normal text-ink-soft">{tone === 'plus' ? t('observe.tagsPlus') : t('observe.tagsWork')}</h3>
         <div className="flex flex-wrap gap-1.5">
           {OBS_TAGS.filter((tg) => tg.tone === tone).map((tg) => {
             const on = tags.includes(tg.id)
@@ -149,7 +149,7 @@ export function ObservePanel({ teamId, groups, context, minute, onMinute, showMi
 
       <div className={cx('grid gap-4', showMinute && 'sm:grid-cols-[1fr_auto]')}>
         <div>
-          <h3 className="mb-1.5 text-[13px] font-semibold text-ink-soft" id="obs-rating">{t('observe.rating')}</h3>
+          <h3 className="mb-1.5 font-sans text-[13px] font-semibold tracking-normal text-ink-soft" id="obs-rating">{t('observe.rating')}</h3>
           <div className="flex items-center gap-1.5" role="radiogroup" aria-labelledby="obs-rating">
             {([1, 2, 3, 4, 5] as const).map((n) => (
               <button key={n} type="button" role="radio" aria-checked={rating === n} onClick={() => setRating(rating === n ? undefined : n)}
@@ -188,7 +188,7 @@ export function ObservePanel({ teamId, groups, context, minute, onMinute, showMi
   const summaryChips = obsSkillTones({ skills, tags: [] })
   return (
     <div>
-      <div className={cx('grid gap-5', !compact && 'lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-8')}>
+      <div className={cx('grid gap-5', !compact && 'lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-start lg:gap-6')}>
         <section className={cx(!compact && 'card card-pad')} aria-label={t('observe.players')}>{picker}</section>
         <section className={cx(!compact && 'card card-pad')} aria-label={t('observe.what')}>{form}</section>
       </div>

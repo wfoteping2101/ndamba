@@ -1,4 +1,4 @@
-import { useCallback, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useState, type ReactNode } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { GraduationCap, LoaderCircle, Play, Trophy } from 'lucide-react'
 import { useT, type Lang } from '../../../i18n'
@@ -50,18 +50,29 @@ export function useDemo() {
   const navigate = useNavigate()
   const [pending, setPending] = useState<{ role: Role; to: string; level: DemoLevel } | null>(null)
   const [busy, setBusy] = useState(false)
+  // where to go once the session sees the new demo (navigating earlier lets /app send the visitor to onboarding)
+  const [go, setGo] = useState<{ to: string; team: string; role: Role } | null>(null)
 
   const run = useCallback(async (role: Role, to: string, level: DemoLevel) => {
     setBusy(true)
     try {
       const m = await import('../../../lib/seed')
       await m.seedDemo(role, lang, level)
-      navigate(to)
-    } finally {
+      setGo({ to, team: DEMO_TEAM_IDS[level], role })
+    } catch (e) {
+      console.error('[demo]', e)
       setBusy(false)
+    } finally {
       setPending(null)
     }
-  }, [lang, navigate])
+  }, [lang])
+
+  useEffect(() => {
+    if (!go || !profile || profile.role !== go.role || !teams.some((tm) => tm.id === go.team)) return
+    navigate(go.to)
+    setGo(null)
+    setBusy(false)
+  }, [go, profile, teams, navigate])
 
   /** Which demo the browser holds now, if any. */
   const current: DemoLevel | null = teams.some((tm) => tm.id === DEMO_TEAM_IDS.pro) ? 'pro' : teams.some((tm) => tm.id === DEMO_TEAM_IDS.youth) ? 'youth' : null
@@ -100,15 +111,17 @@ export function useDemo() {
  * The two demo buttons, side by side: « Démo club pro » and « Démo académie U13 ».
  * dark: on a dark background. size: 'lg' in heroes, 'md' elsewhere.
  */
-export function DemoChoice({ demo, role = 'coach', to = '/app', dark = false, size = 'md', className }: {
-  demo: ReturnType<typeof useDemo>; role?: Role; to?: string; dark?: boolean; size?: 'md' | 'lg'; className?: string
+export function DemoChoice({ demo, role = 'coach', to = '/app', dark = false, quiet = false, size = 'md', className }: {
+  demo: ReturnType<typeof useDemo>; role?: Role; to?: string; dark?: boolean; quiet?: boolean; size?: 'md' | 'lg'; className?: string
 }) {
   const { t } = useSiteT()
   const lg = size === 'lg'
   const second = dark ? 'border border-cream/30 text-cream hover:bg-white/10' : 'btn-outline'
+  // quiet: next to a stronger call to action (the hero), both demos are secondary buttons
+  const first = quiet && dark ? 'btn border border-sun-300/60 bg-white/[0.06] text-cream hover:bg-white/10' : dark ? 'btn-sun' : 'btn-primary'
   return (
     <div className={`flex flex-col gap-3 sm:flex-row sm:flex-wrap ${className ?? ''}`} role="group" aria-label={t('demo.choose')}>
-      <button type="button" onClick={() => demo.launch(role, to, 'pro')} disabled={demo.busy} className={`${dark ? 'btn-sun' : 'btn-primary'} ${lg ? 'btn-lg' : 'min-h-[44px]'}`}>
+      <button type="button" onClick={() => demo.launch(role, to, 'pro')} disabled={demo.busy} className={`${first} ${lg ? 'btn-lg' : 'min-h-[44px]'}`}>
         <Trophy size={lg ? 18 : 16} aria-hidden="true" />{t('demo.pro.cta')}
       </button>
       <button type="button" onClick={() => demo.launch(role, to, 'youth')} disabled={demo.busy} className={`btn ${second} ${lg ? 'btn-lg' : 'min-h-[44px]'}`}>

@@ -99,7 +99,7 @@ function Hero({ demo }: { demo: Demo }) {
             <Link to="/bienvenue" className="btn-sun btn-lg"><Sparkles size={18} />{t('landing.hero.ctaStart')}</Link>
           </div>
           <p className="mt-6 text-[12px] font-bold uppercase tracking-[0.16em] text-cream/55">{t('landing.hero.demoTitle')}</p>
-          <DemoChoice demo={demo} dark className="mt-3" />
+          <DemoChoice demo={demo} dark quiet className="mt-3" />
           <p className="mt-4 max-w-xl text-[13px] leading-relaxed text-cream/55">
             {t('landing.hero.demoNote')}{' '}
             <button type="button" onClick={() => demo.launch('player', '/app/joueur', 'pro')} disabled={demo.busy}
@@ -133,7 +133,7 @@ function Pillars() {
       <ol className="grid gap-4 sm:grid-cols-3 sm:gap-5">
         {items.map(([k, Icon], i) => (
           <li key={k} className="relative overflow-hidden rounded-[24px] border border-line bg-paper p-5 shadow-card sm:p-6">
-            <span aria-hidden="true" className="absolute -right-2 -top-4 font-display text-[88px] font-semibold leading-none text-sand">{i + 1}</span>
+            <span aria-hidden="true" className="absolute right-5 top-3 font-display text-[60px] font-semibold leading-none text-sand">{i + 1}</span>
             <span className="relative grid h-11 w-11 place-items-center rounded-2xl bg-forest-600 text-cream"><Icon size={21} /></span>
             <h3 className="relative mt-4 font-display text-[24px] font-semibold leading-tight text-ink">{t(`landing.pillars.${k}.title`)}</h3>
             <p className="relative mt-2 text-[15px] leading-relaxed text-ink-muted">{t(`landing.pillars.${k}.body`)}</p>

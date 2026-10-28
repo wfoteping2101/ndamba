@@ -8,125 +8,307 @@ resume: Une mauvaise chute, un craquement, et BriBri se retrouve au bord du terr
 illustration: Plan moyen au bord d'un terrain synthétique, un soir glacé de décembre, sous les projecteurs, souffles qui fument. Au premier plan, BriBri, afro douce, bonnet de laine, bras gauche dans un plâtre colorié moitié rouge, moitié jaune, couvert de signatures au feutre, debout sur le banc, lève son plâtre vers le ciel comme une torche et hurle de joie, la bouche grande ouverte sur sa dent du bonheur. À côté de lui, Awa Keïta-Lambert, longues tresses en chignon, rit en le retenant par la manche. Au second plan, sur le terrain, Kaydoudou, fine raie à gauche, maillot blanc de l'ESM, poing levé, se retourne vers son frère.
 ---
 
-Le craquement fut tout petit. Un bruit de brindille sèche, comme quand on marche sur un bout de bois dans la forêt de Bafoussam. Personne ne l'entendit, sauf Kaydoudou, qui était à trois mètres.
+« Crac. »
 
-C'était un samedi de fin novembre, contre l'Entente du Val-Morin, sur un terrain rendu glissant par une pluie fine qui tombait depuis le matin. BriBri avait reçu entre les lignes, il s'était tourné, il avait vu deux défenseurs arriver en même temps. Il avait sauté pour éviter la jambe du premier, et en sautant, son pied d'appui avait glissé sur l'herbe mouillée. Il était retombé de tout son poids, le bras tendu en arrière pour amortir la chute.
+Le bruit est tout petit. Une brindille sèche sous une chaussure. Personne ne l'entend.
 
-Pas de faute. Le défenseur s'était arrêté net, les mains sur la tête. Juste une chute, une mauvaise.
+Sauf Kaydoudou. Il est à trois mètres.
 
-BriBri ne cria pas tout de suite. Il resta assis dans l'herbe, le bras gauche serré contre son ventre, et il regarda son poignet avec des yeux étonnés, comme si ce poignet appartenait à quelqu'un d'autre. Puis son visage se plissa, et Kaydoudou était déjà à genoux à côté de lui.
+Samedi de fin novembre, contre l'Entente du Val-Morin. Il pleut depuis le matin. Le synthétique glisse comme un savon. BriBri vient de recevoir entre les lignes, la souris dans le mur. Il se tourne. Deux défenseurs arrivent en même temps.
+
+Il saute pour éviter la première jambe. Son pied d'appui glisse. Il retombe de tout son poids, le bras gauche tendu en arrière.
+
+Le défenseur s'arrête net, les mains sur la tête.
+
+« Je l'ai pas touché ! Je le jure, je l'ai pas touché ! »
+
+Pas de faute. Juste une mauvaise chute.
+
+BriBri ne crie pas. Il reste assis, le bras serré contre le ventre. Il regarde son poignet avec des yeux étonnés, comme si ce poignet était à quelqu'un d'autre.
+
+Kaydoudou est déjà à genoux à côté de lui.
 
 « Ça fait mal, Kayd. Ça fait très mal. »
 
-Maman était dans les tribunes. Elle descendit jusqu'à la main courante, enjamba la barrière comme si elle avait fait ça toute sa vie, et traversa le terrain sans demander la permission à personne. Elle s'accroupit, prit le bras de BriBri avec des gestes très doux, très précis, et regarda le poignet sans rien dire. Kaydoudou vit son visage changer : ce n'était plus le visage de Maman, c'était le visage de l'infirmière. Calme, lisse, concentré. C'est à ce visage-là qu'il comprit que c'était grave.
+« Bouge pas. Je suis là. »
+
+Maman saute la barrière de la tribune et traverse le terrain sans demander la permission à personne. Elle prend le bras de BriBri tout doucement.
+
+« Laisse-moi voir, mon cœur. Ne bouge pas les doigts. »
+
+Kaydoudou voit son visage changer. Ce n'est plus Maman. C'est l'infirmière, calme et sérieuse.
+
+*Elle fait sa tête du travail*, pense-t-il. *C'est grave.*
 
 « On ne bouge pas ce bras, dit-elle. On va à l'hôpital. »
 
-Le soir, aux urgences, un médecin aux lunettes rouges montra la radio à BriBri sur un écran lumineux. On voyait un os du poignet, avec une petite ligne noire en travers, fine comme un cheveu.
+* * *
 
-« Une fracture. Rien de méchant, ça se répare très bien à ton âge. Mais six semaines de plâtre. Et pas de match, évidemment. »
+Aux urgences, un médecin aux lunettes rouges allume un écran. La radio du poignet apparaît.
 
-« Six semaines ? » BriBri compta sur les doigts de sa main valide. « Mais c'est presque jusqu'à Noël. C'est même après Noël ! »
+« Tu vois cette petite ligne noire, sur l'os ? Fine comme un cheveu ? C'est une fracture. Rien de méchant. À ton âge, ça se répare très bien. Six semaines de plâtre. Et pas de match, bien sûr. »
 
-Il éclata en sanglots. Pas à cause de la douleur, cette fois. À cause du calendrier.
+BriBri compte sur les doigts de sa bonne main.
 
-On lui posa un plâtre blanc, du coude jusqu'aux doigts. Il demanda à l'infirmière si on pouvait le faire moitié rouge, moitié jaune. Elle n'avait que du blanc. Il soupira comme un vieux monsieur et annonça qu'il le colorierait lui-même.
+« Six semaines ? Mais c'est après Noël ! »
+
+« C'est après Noël », dit le médecin.
+
+Et BriBri éclate en sanglots. Pas à cause de la douleur. À cause du calendrier.
+
+« Ils vont m'oublier, Kayd. L'équipe va jouer sans moi, et tout le monde va m'oublier. »
+
+« Personne n'oublie un garçon qui fait autant de bruit que toi. »
+
+BriBri renifle. On lui pose un plâtre blanc, du coude jusqu'aux doigts.
+
+« Vous l'avez en rouge et jaune ? » demande-t-il à l'infirmière.
+
+« Seulement en blanc, mon grand. »
+
+« Bon. » Il soupire comme un vieux monsieur. « Je le colorierai moi-même. »
 
 * * *
 
-Sans BriBri, l'équipe s'éteignit.
+Sans BriBri, l'équipe s'éteint.
 
-Kaydoudou ne l'aurait pas cru. BriBri était petit, il perdait encore des ballons, il ne défendait pas toujours. Mais sur le terrain, c'était lui qui allumait les choses. Il appelait le ballon, il riait, il dansait presque, et les autres suivaient. Sans lui, le match suivant ressembla à une soirée où quelqu'un a oublié de mettre la musique. L'ESM fit match nul 0-0 contre une équipe faible. Personne ne parlait. Kenzo s'énervait tout seul. Lucas, qui ne disait déjà presque rien, ne disait plus rien du tout.
+Le samedi suivant, l'ESM fait 0-0 contre une équipe faible. Un match comme une fête où quelqu'un a oublié la musique.
 
-Après le match, Lacombe prit Kaydoudou à part, près des plots empilés.
+« C'est un enterrement, ou quoi ? râle Kenzo à la mi-temps. Personne ne parle ! Personne n'appelle le ballon ! »
+
+« D'habitude, c'est BriBri qui parle », dit Mathis.
+
+« D'habitude, BriBri parle même quand on ne lui demande rien, dit Kenzo. Et là, il nous manque. Génial. Je n'aurais jamais cru dire ça. »
+
+Lucas, lui, ne dit plus rien du tout.
+
+*Sans lui, il n'y a plus de lumière*, pense Kaydoudou.
+
+Après le match, Lacombe prend Kaydoudou à part.
 
 « Ngassa. Sur le terrain, tu parles avec les mains. »
 
-C'était vrai. Depuis Douala, Kaydoudou orientait les autres avec les mains : deux doigts pour BriBri, la paume vers le sol pour dire « calme », le bras tendu pour montrer l'espace.
+C'est vrai. Deux doigts pour lancer BriBri, la paume vers le sol pour dire « calme », le bras tendu vers l'espace.
 
-« Les mains, c'est bien, continua Lacombe. Mais ton défenseur, il a les yeux sur le ballon. Ton ailier, il a le dos tourné. Personne ne voit tes mains dans son dos. » Il tapota sa propre gorge. « Le petit, il faisait du bruit pour deux. Maintenant, le bruit, c'est toi. »
-
-Le soir, BriBri coloriait son plâtre sur son lit, un feutre rouge dans la main valide, un feutre jaune entre les dents. Kaydoudou lui répéta la phrase de Lacombe. BriBri cracha le feutre jaune.
-
-« Il a raison. Toi, même quand tu as faim, tu le dis en chuchotant. » Il prit une toute petite voix polie. « Excuse-moi, Maman, serait-il possible d'avoir un peu de ndolé, s'il te plaît ? » Puis il pointa le feutre rouge sur son frère, comme une baguette de maître d'école. « Si tu ne fais pas de bruit, l'équipe va s'endormir. Et moi, avec ce bras, je ne peux réveiller personne. »
-
-Kaydoudou essaya, à l'entraînement suivant. Il prit une grande inspiration, et au moment où Mathis recevait le ballon, il voulut crier « Avance ! » d'une voix de capitaine. Sa voix, malheureusement, choisit ce moment précis pour muer. Le mot sortit en deux morceaux, le premier grave comme un tambour, le second aigu comme un sifflet de bouilloire.
-
-« A-VAAANCE ! »
-
-Mathis s'arrêta, le ballon sous le pied, et regarda autour de lui pour voir quel oiseau avait crié. Trois garçons durent s'asseoir dans l'herbe tellement ils riaient. Même Lacombe passa la main sur sa moustache, ce qui, chez lui, voulait peut-être dire quelque chose.
-
-Kaydoudou aurait voulu disparaître sous le synthétique. Mais il pensa au feutre rouge de BriBri, pointé sur lui. Alors il recommença. « Serrez ! » « Allez, Lucas, monte ! » « Bien, Mathis ! » Sa voix craqua encore dix fois. À la onzième, plus personne ne riait. Ils écoutaient.
+« Les mains, c'est bien, dit Lacombe. Mais ton défenseur regarde le ballon. Ton ailier a le dos tourné. Qui voit tes mains dans son dos ? Personne. » Il tapote sa propre gorge. « Ton frère faisait du bruit pour deux. Maintenant, le bruit, c'est toi. »
 
 * * *
 
-Le jeudi, Lacombe arriva avec un chronomètre autour du cou en plus de son sifflet.
+Le soir, BriBri colorie son plâtre sur son lit. Un feutre rouge dans la bonne main, un feutre jaune entre les dents.
 
-« Aujourd'hui, on va travailler le moment le plus important du football. Et ce n'est pas quand on a le ballon. » Il laissa passer un silence. « C'est la seconde où on le perd. »
+« Lacombe veut que je fasse du bruit, raconte Kaydoudou. Beaucoup de bruit. »
 
-Il expliqua. Quand une équipe vient de récupérer le ballon, elle n'est pas encore prête. Ses joueurs étaient en train de défendre : ils sont serrés, ils regardent leur but, ils n'ont pas encore levé la tête. Celui qui vient de prendre le ballon ne sait pas encore où sont ses partenaires.
+BriBri crache le feutre jaune.
 
-« C'est comme toi le matin, Ngassa, quand ta mère t'appelle pour l'école. Pendant cinq secondes, tu ne sais pas si tu es dans ton lit, dans un avion ou au Cameroun. » Quelques rires. « Eh bien, l'adversaire qui vient de prendre le ballon, c'est pareil. Il vient de se réveiller. Il est perdu. Pendant cinq secondes. Alors, dès que vous perdez le ballon, vous ne reculez pas. Vous ne râlez pas. Vous ne levez pas les bras au ciel. Les trois plus proches attaquent le ballon tout de suite, tous ensemble. Cinq secondes. Après, si on ne l'a pas repris, on se replace. »
+« Il a raison, ton moustachu. Toi, même quand tu as faim, tu chuchotes. » Il prend une toute petite voix polie. « Excuse-moi, Maman, serait-il possible d'avoir un peu de ndolé, s'il te plaît ? »
 
-Kaydoudou pensa aussitôt au scan. Avant de recevoir, regarder. Celui qui vient de récupérer le ballon n'a pas regardé, puisqu'il était occupé à défendre. Il n'a pas la photo dans la tête. Pendant cinq secondes, il est aveugle.
+« Je ne parle pas comme ça. »
 
-L'exercice était simple et terrible. Huit contre huit dans un petit carré. Quand une équipe perdait le ballon, Lacombe déclenchait le chronomètre et comptait à voix haute : « Un ! Deux ! Trois ! Quatre ! Cinq ! » Si l'équipe reprenait le ballon avant « cinq », elle marquait un point. Si elle marquait un but juste après l'avoir repris, ça comptait triple.
-
-Au bout de dix minutes, Kaydoudou avait les poumons en feu. Au bout de vingt, Lucas était violet. Kenzo, plié en deux, les mains sur les genoux, souffla : « Il veut nous tuer. »
-
-« Non, dit Kaydoudou, qui reprenait sa respiration. Il veut qu'ils aient peur de nous prendre le ballon. »
-
-Kenzo le regarda, surpris. Puis il hocha la tête, et pendant le reste de l'exercice, chaque fois qu'il perdait le ballon, il fut le premier à attaquer.
+« Tu parles exactement comme ça. » Il pointe le feutre rouge sur son frère, comme une baguette de maître d'école. « Si tu ne fais pas de bruit, l'équipe va s'endormir. Et moi, avec ce bras, je ne peux réveiller personne. Alors tu cries. Pour nous deux. »
 
 * * *
 
-BriBri venait à tous les entraînements, son plâtre en écharpe, un bonnet enfoncé jusqu'aux sourcils. Lacombe lui avait interdit de toucher un ballon, même du pied, « même pour jongler, même pour rire, même dans tes rêves ». Alors BriBri s'asseyait sur le banc, à côté d'Awa et de sa thermos de jus de gingembre, et il regardait.
+Kaydoudou essaie dès le mardi.
 
-Les premiers jours, il s'ennuyait. Il soupirait. Il faisait signer son plâtre par tout ce qui bougeait : Lucas, Kenzo, Mathis, Awa, le gardien du stade, la dame de la cafétéria. Lacombe ne signa pas, mais un matin, BriBri trouva sur le plâtre, dans un coin, un tout petit dessin de moustache au feutre noir. Personne n'avoua jamais.
+Mathis reçoit le ballon en défense. Kaydoudou prend une grande inspiration. Il veut crier « Avance ! » avec une voix de capitaine.
 
-Puis Awa lui apprit à regarder.
+Sa voix choisit ce moment précis pour muer.
 
-« Ne regarde pas le ballon, lui dit-elle. Le ballon, tout le monde le regarde. Regarde ce qui va arriver. Qui est seul ? Qui va être pris ? Qui court dans le dos de qui ? »
+« A-VAAAANCE ! »
 
-BriBri plissa les yeux. Et au bout de quelques séances, il se mit à voir. Il voyait l'adversaire qui se glissait dans le dos de son frère. Il voyait Lucas seul sur le côté droit quand personne ne le voyait. Et comme il ne pouvait pas jouer, il se mit à crier. Pas n'importe quoi : des choses utiles.
+Le « A » sort grave comme un tambour. Le reste sort aigu comme une bouilloire.
+
+Mathis s'arrête, le pied sur le ballon, et lève le nez vers le ciel.
+
+« C'était quoi, ça ? Un pigeon ? »
+
+Trois garçons s'assoient dans l'herbe tellement ils rient. Même Monsieur Lacombe passe la main sur sa moustache.
+
+*Je veux disparaître sous le synthétique*, pense Kaydoudou.
+
+Puis il revoit le feutre rouge pointé sur lui. *Pour nous deux.*
+
+« Serrez ! »
+
+Sa voix craque.
+
+« Lucas, monte ! »
+
+Elle craque encore.
+
+« Bien, Mathis ! »
+
+Elle craque dix fois. À la onzième, plus personne ne rit.
+
+Ils écoutent.
+
+* * *
+
+Le jeudi, Lacombe arrive avec un chronomètre au cou, à côté de son sifflet en métal.
+
+« Aujourd'hui, on travaille le moment le plus important du football. » Il laisse passer un silence. « Ce n'est pas quand on a le ballon. C'est la seconde où on le perd. »
+
+Kenzo lève les yeux au ciel.
+
+« Une équipe qui vient de prendre le ballon n'est pas prête, dit Lacombe. Ses joueurs défendaient. Ils sont serrés, ils regardent leur but. Celui qui a le ballon n'a pas levé la tête. » Il se tourne vers Kaydoudou. « Ngassa. Le matin, quand ta mère te réveille, tu sais où tu es ? »
+
+« Pas tout de suite, Monsieur. »
+
+« Pendant cinq secondes, tu ne sais pas si tu es dans ton lit, dans un avion ou au Cameroun. » Quelques rires. « L'adversaire qui vient de voler le ballon, c'est pareil. Il se réveille. Il est perdu. Alors, quand vous perdez le ballon, vous ne râlez pas. Vous ne levez pas les bras au ciel. Les trois plus proches attaquent le ballon. Tout de suite. Cinq secondes. Après, si on ne l'a pas repris, on se replace. »
+
+*Comme la mésange*, pense Kaydoudou. *Le voleur n'a pas regardé avant. Il n'a pas la photo dans la tête. Pendant cinq secondes, il est aveugle.*
+
+« L'exercice s'appelle les cinq secondes, dit Lacombe. Huit contre huit, dans ce petit carré. Quand une équipe perd le ballon, je crie le mot magique. CINQ ! Et je compte. Un, deux, trois, quatre, cinq. Ballon repris avant cinq : un point. But juste après : trois points. Allez ! »
+
+Dix minutes : Kaydoudou a les poumons en feu.
+
+Quinze minutes : Mathis glisse et repart à quatre pattes.
+
+Vingt minutes : Lucas est violet comme une aubergine. Il lève un doigt.
+
+« Monsieur... Je crois que je vois les vaches de mon père. »
+
+Kenzo se plie en deux, les mains sur les genoux.
+
+« Il veut nous tuer. »
+
+« Non, souffle Kaydoudou. Il veut que les autres aient peur de nous prendre le ballon. »
+
+Kenzo ne répond pas. Mais au ballon suivant, quand il le perd, il est le premier à se retourner.
+
+* * *
+
+BriBri vient à tous les entraînements, le plâtre en écharpe, un bonnet de laine enfoncé jusqu'aux sourcils.
+
+« Interdit de toucher un ballon, lui a dit Lacombe. Même du pied. Même pour jongler. Même dans tes rêves. »
+
+BriBri s'assoit donc sur le banc, à côté d'Awa et de sa thermos de jus de gingembre. Il s'ennuie. Alors il fait de la publicité.
+
+« Signez mon plâtre ! C'est gratuit ! Une signature, un sourire ! »
+
+Tout le monde signe : Lucas, Kenzo, Mathis, Awa, le gardien du stade, la dame de la cafétéria.
+
+Lacombe ne signe pas. Mais un matin, dans un coin du plâtre, il y a un tout petit dessin de moustache au feutre noir.
+
+« C'est vous, Monsieur ? »
+
+« Je ne vois pas de quoi tu parles. »
+
+Le lendemain, BriBri commente l'entraînement, une main devant la bouche, comme Radio à Bonamoussadi.
+
+« Et Kenzo s'envole ! Il en dribble un ! Il en dribble deux ! Mesdames et messieurs, c'est historique ! »
+
+« C'est très joli, dit Awa. Et ça ne sert à rien. »
+
+BriBri baisse sa main-micro.
+
+« Ne regarde pas le ballon, dit-elle. Le ballon, tout le monde le regarde. Regarde ce qui va arriver. Qui est seul ? Qui va être pris ? Qui court dans le dos de qui ? »
+
+BriBri plisse les yeux. Les premiers jours, il ne voit rien. Puis, un soir, à la pause, Kaydoudou l'entend murmurer :
+
+« Le numéro 9 se cache dans le dos de Kayd. Et Lucas est tout seul à droite. Personne ne le regarde. »
+
+« Voilà, dit Awa. Maintenant, dis-le-leur. »
+
+Alors BriBri crie. Plus de commentaires : des informations.
 
 « Kayd ! Dans ton dos ! »
 
-« Lucas est seul ! Lucas est tout seul, là, à droite. »
+« Lucas est seul ! À droite, tout seul ! »
 
-« Kenzo, le 6 est parti, il y a la place ! »
+« Kenzo, leur 6 est parti ! Il y a la place ! »
 
-Sur le terrain, Kaydoudou entendait la voix de son frère par-dessus tout le reste, aiguë, perçante, impossible à confondre. Et il découvrit une chose étrange : elle l'aidait. C'était comme avoir un troisième œil, posé sur le banc de touche.
+Sur le terrain, Kaydoudou entend cette petite voix par-dessus tout. Elle l'aide. C'est comme avoir un troisième œil, posé sur le banc.
 
-« Il a toujours été bavard, dit Awa à Lacombe un soir, en souriant. Maintenant, il est bavard et utile. »
+« Il a toujours été bavard, dit Awa à Lacombe, un soir. Maintenant, il est bavard et utile. »
 
 * * *
 
-Le samedi suivant, mi-décembre, l'ESM recevait le Football Club des Deux-Rives. Il faisait si froid que le souffle des joueurs montait en fumée blanche sous les projecteurs. BriBri était debout sur le banc, ce que Lacombe faisait semblant de ne pas voir.
+Mi-décembre. L'ESM reçoit le Football Club des Deux-Rives.
 
-À la 80e minute, c'était 1-1. Les Deux-Rives étaient forts, organisés, ils défendaient bas et contre-attaquaient vite. Kaydoudou avait parlé pendant tout le match, sa voix toujours un peu cassée, mais personne ne riait plus. « Serrez ! » « Bien ! » « On reste ensemble ! »
+Il fait si froid que les souffles fument sous les projecteurs. BriBri est debout sur le banc. Lacombe fait semblant de ne pas le voir.
 
-Puis Kenzo perdit le ballon, juste devant la surface adverse. Un défenseur des Deux-Rives venait de le lui chiper, proprement, et se redressait pour relancer.
+« Descends de là, BriBri », dit Awa.
 
-Kaydoudou ne réfléchit pas. Il cria le mot de l'exercice, celui qu'ils avaient hurlé cent fois à l'entraînement :
+« Je descends quand on gagne. »
+
+Plus que cinq minutes. 1-1.
+
+Les Deux-Rives sont forts. Ils défendent bas et contre-attaquent comme des flèches.
+
+« Kayd ! Quand ils volent le ballon, ils le donnent toujours sur le côté ! Toujours ! »
+
+Kaydoudou parle depuis le début du match. Plus personne ne rit de sa voix.
+
+« Serrez ! »
+
+« On reste ensemble ! »
+
+Puis Kenzo perd le ballon, juste devant la surface adverse. Un défenseur le lui chipe et se redresse pour relancer.
+
+Kaydoudou ne réfléchit pas. Il crie le mot. Celui qu'ils ont hurlé cent fois.
 
 « CINQ ! »
 
-Et ils y allèrent. Kenzo, d'abord, qui se retourna aussitôt au lieu de lever les bras au ciel. Kaydoudou, qui jaillit du milieu. Lucas, qui monta de son côté droit avec ses grandes jambes. Trois maillots blancs fondirent sur le défenseur en même temps. Le garçon leva la tête pour chercher une passe, et il ne trouva personne : ses partenaires étaient encore tournés vers leur propre but, en train de se replacer. Il hésita. Un dixième de seconde. Puis ses yeux glissèrent vers la seule sortie : son latéral, tout seul le long de la touche.
+Et le temps ralentit.
 
-« LUCAS ! hurla une voix aiguë depuis le banc. IL VA PASSER DE TON CÔTÉ ! »
+Kaydoudou voit tout. Le souffle blanc du défenseur. Le ballon qui roule sous sa semelle. Les autres Deux-Rives, encore tournés vers leur propre but.
 
-Lucas fit un pas de côté, un seul, tendit sa grande jambe et lui prit le ballon.
+*Un.*
 
-Il le donna à Kaydoudou, qui le donna à Kenzo, qui frappa du gauche, à ras de terre, au premier poteau. 2-1.
+Kenzo se retourne. Il ne lève pas les bras au ciel. Il fonce.
 
-Le stade explosa. Mais par-dessus les cris, par-dessus le sifflet, par-dessus tout, on entendit une voix plus aiguë que les autres, une voix qui venait du banc de touche.
+*Deux.*
 
-« TROIS SECONDES ! hurlait BriBri. J'AI COMPTÉ ! TROIS ! »
+Kaydoudou bondit du milieu. Lucas monte de sa droite avec ses grandes jambes. Trois maillots blancs foncent sur le ballon.
 
-Il était debout sur le banc, le plâtre levé vers le ciel comme une torche, et il criait si fort qu'Awa dut le retenir par la manche pour qu'il ne tombe pas. Kaydoudou se retourna vers lui, poing levé. Leurs regards se croisèrent à travers le terrain, sous les projecteurs.
+Le défenseur lève la tête. Il cherche une passe. Personne. Ses yeux glissent vers la seule sortie : un coéquipier tout seul, le long de la ligne de touche.
 
-Il ne l'avait jamais entendu crier si fort. Pas même pour un de ses propres buts. Ce soir-là, avec un bras dans le plâtre et sans toucher un seul ballon, son petit frère venait de faire une passe décisive avec la voix.
+Une voix déchire le froid.
+
+« LUCAS ! IL VA PASSER DE TON CÔTÉ ! »
+
+*Trois.*
+
+Lucas fait un pas de côté. Un seul. Il tend sa grande jambe. Le ballon est à lui.
+
+Et tout explose.
+
+Lucas pour Kaydoudou. Kaydoudou pour Kenzo. Kenzo frappe du gauche, à ras de terre, au premier poteau.
+
+Chhh. Le filet tremble.
+
+2-1.
+
+Le stade hurle. Mais une voix monte plus haut que toutes les autres.
+
+« TROIS SECONDES ! J'AI COMPTÉ ! TROIS ! »
+
+BriBri est debout sur le banc. Il lève son plâtre rouge et jaune vers le ciel, comme une torche. Il hurle de joie, la bouche grande ouverte sur sa dent du bonheur. Awa doit le retenir par la manche pour qu'il ne tombe pas. Elle rit aux larmes.
+
+Kaydoudou se retourne vers lui, le poing levé. Leurs regards se croisent à travers tout le terrain, sous les projecteurs.
+
+Son petit frère n'a pas touché un seul ballon. Il a un bras dans le plâtre.
+
+Et il vient de faire une passe décisive. Avec la voix.
+
+* * *
+
+Le soir, dans la chambre, BriBri tourne son plâtre sous la lampe.
+
+« Il reste une place libre, Kayd. Là, près du coude. »
+
+« Pour qui ? »
+
+« Pour Mami. »
+
+« Mami est à Bafoussam, BriBri. À cinq mille kilomètres. »
+
+« Je sais. Je garde la place quand même. »
+
+Kaydoudou ne répond pas. Dans dix jours, c'est Noël.
+
+Le premier Noël de leur vie sans Mami.
 
 > [!CARNET] Leçon du Ballon n°21 : Les cinq secondes
 > Quand on perd le ballon, c'est le meilleur moment pour le reprendre.
