@@ -15,7 +15,7 @@ export type CastId =
   | 'mireille' | 'ousmane' | 'radio' | 'samuel' | 'jules' | 'ekotto' | 'bile'
   | 'bulldozer' | 'requin' | 'gars' | 'panthere' | 'aigle' | 'cobra' | 'pantherekeeper'
   | 'vulcanisateur' | 'joseph' | 'ernest' | 'mamaKemadjou' | 'kid' | 'lion'
-  | 'passager' | 'dame' | 'vendeur' | 'cousin' | 'voix' | 'chevre' | 'femmeNjangi' | 'mamaFotso' | 'mamaNgoo' | 'mamanTchinda' | 'vieilleDame'
+  | 'enfants' | 'passager' | 'dame' | 'vendeur' | 'cousin' | 'voix' | 'chevre' | 'femmeNjangi' | 'mamaFotso' | 'mamaNgoo' | 'mamanTchinda' | 'vieilleDame'
 
 export interface CastMember { id: CastId; name: string; color: string; look: Look; height?: number }
 
@@ -49,17 +49,17 @@ export const CAST: Record<CastId, CastMember> = {
     id: 'maman', name: 'Maman', color: '#1d8c8c',
     look: base({ kid: false, woman: true, hair: 'puff', shirt: '#1f9a9a', dress: '#1f9a9a', pattern: { a: '#F2C230', b: '#0f6b6b', kind: 'leaves' }, shoes: 'sandals', boots: '#E2B030', earrings: '#E6B640' }),
   },
-  mireille: { id: 'mireille', name: 'Mireille', color: '#b0478f', look: base({ hair: 'puff', shirt: '#c45a9a', shirtTrim: '#f2eee3', shorts: '#2a2a40', sockL: '#f2eee3', sockR: '#f2eee3', shoes: 'trainers', boots: '#e6e0d4' }) },
+  mireille: { id: 'mireille', name: 'Mireille', color: '#b0478f', look: base({ girl: true, hair: 'puff', shirt: '#c45a9a', shirtTrim: '#f2eee3', shorts: '#2a2a40', sockL: '#f2eee3', sockR: '#f2eee3', shoes: 'trainers', boots: '#e6e0d4' }) },
   ousmane: { id: 'ousmane', name: 'Ousmane', color: '#3a5a8c', look: base({ hair: 'crop', shirt: '#3d4f6b', shirtTrim: '#d9cfbd', shorts: '#2a2a2a', gloves: '#d9cfbd', sockL: '#3d4f6b', sockR: '#3d4f6b', height: 0.9 }) },
   radio: { id: 'radio', name: 'Radio', color: '#c97a1e', look: base({ hair: 'twists', shirt: '#e6dccb', shirtTrim: '#c97a1e', stripe: { color: '#c97a1e', side: 'R' }, shorts: '#4a3b2a', sockL: '#4a3b2a', sockR: '#4a3b2a', shoes: 'trainers', boots: '#f0ebe1' }) },
   samuel: { id: 'samuel', name: 'Samuel', color: '#6b4a7a', look: base({ hair: 'crop', shirt: '#7b5a2a', shirtTrim: '#e9c46a', shorts: '#1f2a44', sockL: '#e9e2d0', sockR: '#e9e2d0', height: 1.1 }) },
   jules: { id: 'jules', name: 'Jules', color: '#5a6a7a', look: base({ hair: 'crop', shirt: '#8aa0b6', shorts: '#333', sockL: '#999', sockR: '#999', height: 0.92 }) },
   ekotto: { id: 'ekotto', name: 'Madame Ekotto', color: '#C9362B', look: base({ kid: false, woman: true, hair: 'puff', shirt: '#b8452f', dress: '#b8452f', pattern: { a: '#f2c230', b: '#7a2a1f', kind: 'circles' }, headwrap: '#f2c230', shoes: 'sandals', boots: '#4a3020', build: 1.12 }) },
   bile: { id: 'bile', name: 'Monsieur Bilé', color: '#6d6d6d', look: base({ kid: false, hair: 'bald', shirt: '#d9d2c4', collar: '#d9d2c4', trousers: '#4a4a4a', shoes: 'shoes', boots: '#2a2a2a', elder: true, beard: '#d8d2c8' }) },
-  bulldozer: { id: 'bulldozer', name: 'Bulldozer', color: '#2d5fa8', look: base({ hair: 'crop', shirt: '#2d5fa8', shirtTrim: '#dfe9f5', shorts: '#16233d', sockL: '#2d5fa8', sockR: '#2d5fa8', height: 1.16, build: 1.3 }) },
-  requin: { id: 'requin', name: 'Requin', color: '#2d5fa8', look: base({ hair: 'crop', shirt: '#2d5fa8', shirtTrim: '#dfe9f5', shorts: '#16233d', sockL: '#2d5fa8', sockR: '#2d5fa8', height: 1.04 }) },
+  bulldozer: { id: 'bulldozer', name: 'Bulldozer', color: '#2d5fa8', look: base({ hair: 'crop', shirt: '#2d5fa8', shirtTrim: '#dfe9f5', shorts: '#16233d', sockL: '#2d5fa8', sockR: '#2d5fa8', height: 1.16, build: 1.3, chestMark: 'fin' }) },
+  requin: { id: 'requin', name: 'Requin', color: '#2d5fa8', look: base({ hair: 'crop', shirt: '#2d5fa8', shirtTrim: '#dfe9f5', shorts: '#16233d', sockL: '#2d5fa8', sockR: '#2d5fa8', height: 1.04, chestMark: 'fin' }) },
   gars: { id: 'gars', name: 'Gars de la Pharmacie', color: '#3b8a6e', look: base({ hair: 'crop', shirt: '#e9e3d6', shirtTrim: '#3b8a6e', shorts: '#3b8a6e', sockL: '#e9e3d6', sockR: '#e9e3d6' }) },
-  panthere: { id: 'panthere', name: 'Panthère', color: '#d9a400', look: base({ hair: 'crop', shirt: '#f0c419', shirtTrim: '#1b1b1b', shorts: '#1b1b1b', sockL: '#f0c419', sockR: '#f0c419', height: 1.12, build: 1.08 }) },
+  panthere: { id: 'panthere', name: 'Panthère', color: '#d9a400', look: base({ hair: 'crop', shirt: '#f0c419', shirtTrim: '#1b1b1b', shorts: '#1b1b1b', sockL: '#f0c419', sockR: '#f0c419', height: 1.12, build: 1.08, chestMark: 'spots', chestMarkColor: '#1b1b1b' }) },
   pantherekeeper: { id: 'pantherekeeper', name: 'Monsieur Pieuvre', color: '#d9a400', look: base({ hair: 'crop', shirt: '#2a2a2a', shirtTrim: '#f0c419', shorts: '#1b1b1b', gloves: '#f0c419', height: 1.18 }) },
   aigle: { id: 'aigle', name: 'Aigle de Makepe', color: '#7a3b2a', look: base({ hair: 'crop', shirt: '#7a3b2a', shirtTrim: '#e9c46a', shorts: '#2a1a14', sockL: '#7a3b2a', sockR: '#7a3b2a' }) },
   cobra: { id: 'cobra', name: 'Cobra de Bonabéri', color: '#2f5b2f', look: base({ hair: 'crop', shirt: '#1f1f1f', shirtTrim: '#9bd16a', shorts: '#1f1f1f', sockL: '#9bd16a', sockR: '#9bd16a' }) },
@@ -69,6 +69,7 @@ export const CAST: Record<CastId, CastMember> = {
   mamaKemadjou: { id: 'mamaKemadjou', name: 'Mama Kemadjou', color: '#2f5aa0', look: base({ kid: false, woman: true, hair: 'bald', shirt: '#2f5aa0', dress: '#2f5aa0', pattern: { a: '#f2eee3', b: '#1d3d75', kind: 'circles' }, headwrap: '#2f5aa0', shoes: 'sandals', boots: '#3a2a20', height: 1.06, build: 0.9 }) },
   // a Lionceau the chapter does not name: the team plays in whatever it has (« une équipe de chiffons »)
   lion: { id: 'lion', name: '', color: '#3f8f4e', look: base({ hair: 'crop', shirt: '#d9cdb4', shirtTrim: '#8a6a3a', shorts: '#2f3f5a', sockL: '#d9cdb4', sockR: '#d9cdb4', shoes: 'trainers', boots: '#e6e0d4' }) },
+  enfants: { id: 'enfants', name: 'Les enfants sur le mur', color: '#e2c26a', look: base({}) },
   // chapter 2: the coach to Bafoussam (« un monsieur en costume », « une dame au chapeau à fleurs »)
   passager: { id: 'passager', name: 'Un monsieur en costume', color: '#5a5a6a', look: base({ kid: false, hair: 'bald', shirt: '#3a3d48', collar: '#f2eee3', trousers: '#3a3d48', shoes: 'shoes', boots: '#1e1a16', build: 1.08 }) },
   dame: { id: 'dame', name: 'Une dame au chapeau à fleurs', color: '#b65a8a', look: base({ kid: false, woman: true, hair: 'bald', shirt: '#e9a0b8', dress: '#e9a0b8', pattern: { a: '#7aa05a', b: '#f2eee3', kind: 'leaves' }, hat: '#f2e2b8', hatFlowers: '#d6457a', shoes: 'sandals', boots: '#3a2a20', build: 1.1 }) },

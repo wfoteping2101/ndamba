@@ -21,6 +21,8 @@ export interface Look {
   number?: number
   /** child proportions (Lionceaux) */
   kid?: boolean
+  /** a girl's body (Mireille) */
+  girl?: boolean
   /** 0.9 .. 1.1 */
   build?: number
   /** BriBri's notebook, a headband, a bib... */
@@ -63,6 +65,9 @@ export interface Look {
   height?: number
   /** an open tracksuit top: `shirt` is the top (body and long sleeves), `jacket` is the T-shirt showing down the front */
   jacket?: string
+  /** a mark on the shirt: a felt-pen shark fin, leopard spots */
+  chestMark?: 'fin' | 'spots'
+  chestMarkColor?: string
   /** a brimmed hat (with a band of flowers) */
   hat?: string
   hatFlowers?: string

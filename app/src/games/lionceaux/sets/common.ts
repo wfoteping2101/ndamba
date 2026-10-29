@@ -155,6 +155,8 @@ export class SetBuilder {
       for (const g of b.geos) g.dispose()
       if (!geo) continue
       const mesh = new THREE.Mesh(geo, b.mat)
+      // alpha-cut foliage casts the shadow of its leaves, not of its cards
+      if (b.mat.userData.depth) mesh.customDepthMaterial = b.mat.userData.depth as THREE.Material
       mesh.castShadow = b.cast && this.shadows
       mesh.receiveShadow = b.receive
       this.group.add(mesh)
@@ -294,12 +296,32 @@ const LIGHTS: Record<Mood, Light> = {
 
 export function skyDome(mood: Mood) {
   const L = LIGHTS[mood]
-  const tex = canvasTexture(8, 256, (g, w, h) => {
+  const cloudy = mood === 'overcast' || mood === 'rain'
+  const clear = mood === 'night' || mood === 'interior' || mood === 'interiorNight' || mood === 'whiteout' || mood === 'fog'
+  const tex = canvasTexture(1024, 512, (g, w, h) => {
     const grd = g.createLinearGradient(0, 0, 0, h)
     grd.addColorStop(0, L.top); grd.addColorStop(0.62, L.horizon); grd.addColorStop(1, L.horizon)
     g.fillStyle = grd; g.fillRect(0, 0, w, h)
+    if (clear) return
+    // clouds: soft cumulus and drifts of haze in the upper half (the dome's u wraps around)
+    const r = seeded(mood.length * 97 + 5)
+    const tint = mood === 'golden' || mood === 'evening' ? 'rgba(255,214,170,' : 'rgba(255,255,255,'
+    const shade = mood === 'golden' || mood === 'evening' ? 'rgba(170,110,90,' : 'rgba(150,160,170,'
+    const n = cloudy ? 260 : 120
+    for (let i = 0; i < n; i++) {
+      const cx = r() * w, cy = h * (0.12 + r() * 0.42)
+      const k = 1 - Math.abs(cy / h - 0.36) * 1.6
+      const rx = (30 + r() * 90) * (cloudy ? 1.6 : 1), ry = rx * (0.28 + r() * 0.2)
+      for (const [dx, a, col] of [[0, 0.22 * k, tint], [ry * 0.35, 0.12 * k, shade]] as [number, number, string][]) {
+        const rg = g.createRadialGradient(cx, cy + dx, 0, cx, cy + dx, rx)
+        rg.addColorStop(0, col + a + ')'); rg.addColorStop(1, col + '0)')
+        g.fillStyle = rg
+        g.beginPath(); g.ellipse(cx, cy + dx, rx, ry, 0, 0, Math.PI * 2); g.fill()
+      }
+    }
   })
-  const mesh = new THREE.Mesh(new THREE.SphereGeometry(420, 24, 16), new THREE.MeshBasicMaterial({ map: tex, side: THREE.BackSide, fog: false, depthWrite: false, toneMapped: false }))
+  tex.wrapS = THREE.RepeatWrapping
+  const mesh = new THREE.Mesh(new THREE.SphereGeometry(420, 48, 24), new THREE.MeshBasicMaterial({ map: tex, side: THREE.BackSide, fog: false, depthWrite: false, toneMapped: false }))
   mesh.renderOrder = -10
   return mesh
 }
@@ -314,6 +336,15 @@ export function applyMood(stage: Stage, mood: Mood, center = new THREE.Vector3()
   stage.sun.position.set(center.x + L.sunPos[0], L.sunPos[1], center.z + L.sunPos[2])
   stage.sun.target.position.copy(center)
   stage.renderer.toneMappingExposure = L.exposure
+  // image-based light from the same sky: skin, cloth and metal pick up its colours
+  const indoor = mood === 'interior' || mood === 'interiorNight'
+  const sunDir = new THREE.Vector3(L.sunPos[0], L.sunPos[1], L.sunPos[2]).normalize()
+  stage.setSkyLight(indoor ? L.hemiSky : L.top, indoor ? L.hemiSky : L.horizon, L.hemiGround, sunDir, L.sun,
+    mood === 'night' ? 0.35 : mood === 'interiorNight' ? 0.45 : mood === 'whiteout' ? 0.9 : 0.7)
+  // the hemisphere light now only fills: the sky light does the rest
+  stage.hemi.intensity = L.hemi * 0.55
+  const warm: Partial<Record<Mood, string>> = { golden: '#fff1dc', evening: '#ffe6d2', morning: '#fffaf0', night: '#e6ecff', rain: '#f2f6f8' }
+  stage.setGrade(warm[mood] ?? '#ffffff')
 }
 
 /* ------------------------------------------------------------------ air */

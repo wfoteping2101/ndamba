@@ -103,6 +103,11 @@ export class StorySession implements ChoreoHost {
   score(text: string | null) { this.set({ score: text }) }
   shake(a: number) { this.st.view.rig.shake(a) }
   mood(m: Mood) { this.st.setMood(m) }
+  lanes(pairs: [V2, V2][] | null) {
+    const o = this.st.view.overlays
+    o.clear('story')
+    if (pairs) for (const [a, b] of pairs) o.arrow('story', a, b, 'lane', undefined, { opacity: 0.75 })
+  }
   camera(spec: CamSpec, cut = true) {
     this.follow = null
     if (spec.kind === 'match') { this.st.view.setCamera('broadcast', cut); return }
@@ -179,6 +184,7 @@ export class StorySession implements ChoreoHost {
 
   /** Build the place and put the cast in it (unless the beat keeps the previous stage). */
   private enter(b: SceneBeat | ExploreBeat | PlayBeat) {
+    this.st.view.overlays.clear('story')
     if (b.keep) return
     this.st.holdProp(null)
     this.st.load(b.place)
@@ -323,14 +329,28 @@ export class StorySession implements ChoreoHost {
     // QA: walk to whoever is still to be heard, then to the goal
     if (this.autoplay && !busy) {
       const next = need.find((id) => !ex.talked.has(id)) ?? ex.beat.talks.find((t) => !ex.talked.has(t.id))?.id
-      if (next && !open) { const q = w.get(next); if (q && Math.hypot(q.pos.x - p.pos.x, q.pos.y - p.pos.y) < 1.8) void this.talk(next); else if (q && !this.choreo.isWalking(p.id)) this.choreo.go(p.id, next, 0.8) }
+      if (next && !open) { const q = w.get(next); if (q && Math.hypot(q.pos.x - p.pos.x, q.pos.y - p.pos.y) < 2.1) { this.choreo.stop(p.id); void this.talk(next) } else if (q && !this.choreo.isWalking(p.id)) this.choreo.go(p.id, next, 0.8) }
       else if (open && !this.choreo.isWalking(p.id)) this.choreo.go(p.id, [goal.x, goal.y], 0.8)
     }
-    // camera: behind and above, in a fixed direction (a two-shot while talking)
+    // camera: third person, behind the player; it swings round slowly as he turns, the right stick
+    // (or a drag on the picture) turns it at will (a two-shot while talking)
     if (this.talking) return
+    const look = this.input.look()
+    const sp = Math.hypot(p.vel.x, p.vel.y)
+    const dtc = 1 / 60
+    if (Math.abs(look.x) > 0.05 || look.drag) ex.yaw += look.x * 2.2 * dtc + look.drag * 0.008
+    else if (sp > 0.6 && !this.autoplay) {
+      const want = Math.atan2(p.vel.y, p.vel.x)
+      let d = want - ex.yaw
+      while (d > Math.PI) d -= Math.PI * 2
+      while (d < -Math.PI) d += Math.PI * 2
+      // do not swing when he walks towards the camera
+      if (Math.abs(d) < 2.2) ex.yaw += d * Math.min(1, 1.4 * dtc)
+    }
     const back = { x: -Math.cos(ex.yaw), y: -Math.sin(ex.yaw) }
     const f = this.st.frame
-    this.st.view.rig.setShot({ pos: f.vec(p.pos.x + back.x * 6.5, p.pos.y + back.y * 6.5, 4.2), look: f.vec(p.pos.x - back.x * 1.5, p.pos.y - back.y * 1.5, 0.8), fov: 46 }, { rate: 3 })
+    const h = (p.look.kid !== false ? 1.36 : 1.75) * (p.look.height ?? 1)
+    this.st.view.rig.setShot({ pos: f.vec(p.pos.x + back.x * 4.4, p.pos.y + back.y * 4.4, h + 0.9), look: f.vec(p.pos.x - back.x * 2.2, p.pos.y - back.y * 2.2, h * 0.62), fov: 50 }, { rate: 4 })
   }
 
   /** Talk to someone during an exploration (button, key or tap on him). */

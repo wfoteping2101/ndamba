@@ -5,6 +5,7 @@ import type { ChapterScript } from '../story/session'
 export const SCRIPTS: Partial<Record<number, () => Promise<ChapterScript>>> = {
   1: () => import('./ch01').then((m) => m.CH01),
   2: () => import('./ch02').then((m) => m.CH02),
+  3: () => import('./ch03').then((m) => m.CH03),
 }
 
 export const isPlayable = (n: number) => !!SCRIPTS[n]

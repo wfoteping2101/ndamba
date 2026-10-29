@@ -34,6 +34,7 @@ export function makeChallenge(spec: ChallengeSpec, s: StorySession): Challenge {
     case 'penalty': return new Penalty(spec, s)
     case 'choose': return new Choose(spec, s)
     case 'drive': return new Drive(spec, s)
+    case 'ritual': return new Ritual(spec, s)
   }
 }
 
@@ -227,7 +228,7 @@ class OneTouch implements Challenge {
     this.s.st.view.overlays.beginMarkers(); this.s.st.view.overlays.endMarkers()
     this.s.timeScale(1)
     // first time, no control
-    const pass = ch.pass(this.spec.player, this.spec.to, { arrive: 6 })
+    const pass = ch.pass(this.spec.player, this.spec.to, { arrive: 6, lead: this.spec.lead })
     await pass
     await this.spec.after(ch)
   }
@@ -600,4 +601,24 @@ class Drive implements Challenge {
     this.done()
   }
   dispose() { const p = this.w.get(this.spec.player); if (p) p.controlled = false }
+}
+
+/* ======================================================================== ritual */
+
+/** A gesture in steps: the button of each step, then what the book says happens. */
+class Ritual implements Challenge {
+  controls: ControlKey[] = []
+  stick = false
+  constructor(private spec: Extract<ChallengeSpec, { type: 'ritual' }>, private s: StorySession) {}
+  async run() {
+    for (const step of this.spec.steps) {
+      await new Promise<void>((resolve) => {
+        this.s.offerChoices([{ key: step.key, canon: true }], () => { this.s.offerChoices(null); sfx('tap'); resolve() })
+        if (this.s.autoplay) setTimeout(() => this.s.choose(step.key), 1200)
+      })
+      await step.act(this.s.choreo)
+    }
+    this.s.prompt(null)
+  }
+  dispose() { this.s.offerChoices(null) }
 }

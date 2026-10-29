@@ -4,12 +4,13 @@
 // with its line of barbed wire on top, Madame Ekotto's red parasol, tin roofs all around.
 // The pitch is the football area of the World (44 x 28 m, 8 against 8); the set is built around it.
 import * as THREE from 'three'
+import { addGroundDetail, bananaPlant, grassTufts, mangoTree, palmTree } from './nature'
 import type { Frame, Stage } from '../../engine/render/stage'
 import type { Goal, PitchGeom, Surface } from '../../engine/sim/pitch'
 import { FULL_W } from '../../engine/sim/pitch'
 import { crowdMeshes, type Spot } from './crowd'
 import {
-  M, SetBuilder, addBanana, addCrown, addHouse, addPalm, canvasTexture, grain, meshTexture, plasterTexture, seeded, segmentMatrix, tinTexture, type Marks,
+  M, SetBuilder, addHouse, canvasTexture, grain, meshTexture, plasterTexture, seeded, segmentMatrix, tinTexture, type Marks,
 } from './common'
 
 export const BONA_W = 44
@@ -59,7 +60,7 @@ export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {
   const tex = canvasTexture(Math.round(GW * ppm), Math.round(GH * ppm), (g, w, h) => {
     const s = w / GW
     const px = (x: number) => (x - X0) * s, py = (y: number) => (y - Y0) * s
-    g.fillStyle = opts.mud ? '#7a3a22' : '#b0532c'
+    g.fillStyle = opts.mud ? '#6e3a26' : '#9e5a3c'
     g.fillRect(0, 0, w, h)
     // grass creeping in beyond the pitch: small tufts in clumps, thicker further out
     for (let k = 0; k < 900; k++) {
@@ -75,10 +76,10 @@ export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {
       }
     }
     g.globalAlpha = 1
-    grain(g, w, h, rnd, 5000, opts.mud ? ['#5a2a18', '#8a4428', '#6b3420'] : ['#c4683b', '#9a4024', '#d0814f', '#a84a28'], [1.5 * s / 8, 6 * s / 8])
+    grain(g, w, h, rnd, 6000, opts.mud ? ['#5a2a18', '#7e4430', '#63361f'] : ['#b06a46', '#8a4a30', '#c08a68', '#9a5034', '#a87a5c'], [1.5 * s / 8, 7 * s / 8])
     // the playing area: packed and paler where the feet go, darker goalmouths and centre
     const area = g.createRadialGradient(px(BONA_W / 2), py(BONA_H / 2), 2 * s, px(BONA_W / 2), py(BONA_H / 2), 26 * s)
-    area.addColorStop(0, opts.mud ? 'rgba(60,30,20,0.35)' : 'rgba(225,140,95,0.38)'); area.addColorStop(1, 'rgba(225,140,95,0)')
+    area.addColorStop(0, opts.mud ? 'rgba(60,30,20,0.35)' : 'rgba(205,150,115,0.42)'); area.addColorStop(1, 'rgba(205,150,115,0)')
     g.fillStyle = area; g.fillRect(0, 0, w, h)
     for (const gx of [0, BONA_W]) {
       const mouth = g.createRadialGradient(px(gx), py(BONA_H / 2), 0, px(gx), py(BONA_H / 2), 6 * s)
@@ -108,14 +109,16 @@ export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {
     // stones
     for (let i = 0; i < 700; i++) { g.fillStyle = ['#d9c9b0', '#8a7a68', '#efe2cc'][i % 3]; g.fillRect(rnd() * w, rnd() * h, 1.5, 1.5) }
   })
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(GW, GH), new THREE.MeshStandardMaterial({ map: tex, roughness: opts.mud ? 0.7 : 1 }))
+  const gm = new THREE.MeshStandardMaterial({ map: tex, roughness: opts.mud ? 0.7 : 0.97 })
+  addGroundDetail(gm, Math.round(GW / 1.6), opts.mud ? 0.3 : 0.5)
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(GW, GH), gm)
   ground.rotation.x = -Math.PI / 2
   ground.position.copy(frame.vec(X0 + GW / 2, Y0 + GH / 2))
   ground.receiveShadow = true
   b.object(ground)
   b.disposables.push(tex)
   // beyond: plain earth to the horizon
-  const far = new THREE.Mesh(new THREE.PlaneGeometry(900, 900), new THREE.MeshStandardMaterial({ color: opts.mud ? '#6a3a26' : '#9c5232', roughness: 1 }))
+  const far = new THREE.Mesh(new THREE.PlaneGeometry(900, 900), new THREE.MeshStandardMaterial({ color: opts.mud ? '#62382a' : '#8e5a40', roughness: 1 }))
   far.rotation.x = -Math.PI / 2; far.position.set(0, -0.03, 0)
   b.object(far)
   if (opts.mud) {
@@ -131,6 +134,15 @@ export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {
       b.object(m)
     }
   }
+
+  // tufts of grass where nobody runs: beyond the lines, along the wall, around the tree
+  grassTufts(b, { x0: frame.x(-16), z0: frame.z(-8.6), x1: frame.x(BONA_W + 16), z1: frame.z(BONA_H + 9) }, Math.round(1100 * q.props), (x, z) => {
+    const p = frame.toSim(new THREE.Vector3(x, 0, z))
+    const out = Math.max(-p.x - 0.6, p.x - BONA_W - 0.6, -p.y - 0.6, p.y - BONA_H - 0.6)
+    const nearMango = Math.hypot(p.x - BONA_MARKS.mango.x, p.y - BONA_MARKS.mango.y) < 2.2
+    if (nearMango) return 0.05
+    return out < 0 ? 0.004 : Math.min(0.9, 0.12 + out / 5)
+  }, rnd)
 
   /* ---------------- the bamboo goals, leaning, with a tired net */
   const bamboo = '#c9b26a'
@@ -176,18 +188,11 @@ export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {
 
   /* ---------------- the mango tree and Tonton Fokou's yellow bidon */
   const mango = frame.vec(BONA_MARKS.mango.x, BONA_MARKS.mango.y)
-  b.add(new THREE.CylinderGeometry(0.3, 0.5, 3.2, 9), '#5a4232', M.trs([mango.x, 1.6, mango.z], [0.04, 0, -0.05]))
-  for (let i = 0; i < 5; i++) {
-    const a = (i / 5) * Math.PI * 2 + 0.4
-    const br = new THREE.CylinderGeometry(0.08, 0.18, 2.6, 6)
-    br.translate(0, 1.3, 0)
-    b.add(br, '#5a4232', M.trs([mango.x, 2.7, mango.z], [Math.sin(a) * 0.9, 0, Math.cos(a) * 0.9]))
-  }
-  addCrown(b, mango, 5.2, 3.6, '#24572a', rnd, 10)
+  mangoTree(b, mango, 6.2, 3.3, rnd, q.props)
   // a few mangoes
   for (let i = 0; i < 14; i++) {
     const a = rnd() * 6.28, r = 2 + rnd() * 3
-    b.add(new THREE.SphereGeometry(0.09, 6, 5), rnd() < 0.5 ? '#c9a23a' : '#7a9a3a', M.trs([mango.x + Math.cos(a) * r, 3.4 + rnd() * 0.5, mango.z + Math.sin(a) * r], [0, 0, 0], [1, 1.3, 1]))
+    b.add(new THREE.SphereGeometry(0.09, 6, 5), rnd() < 0.5 ? '#c9a23a' : '#7a9a3a', M.trs([mango.x + Math.cos(a) * r, 3.6 + rnd() * 0.8, mango.z + Math.sin(a) * r], [0, 0, 0], [1, 1.3, 1]))
   }
   // roots and a ring of packed earth, a stone to sit on
   b.add(new THREE.CylinderGeometry(1.6, 1.8, 0.04, 20), '#7a3a20', M.t(mango.x, 0.02, mango.z), { cast: false })
@@ -257,9 +262,9 @@ export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {
       addHouse(b, frame.vec(x0 + (rnd() - 0.5) * 3, y), w, d, 2.8 + rnd() * 0.5, rot, houseColors[Math.floor(rnd() * houseColors.length)], rnd, { plaster, tin })
     }
   }
-  for (const [x, y, h] of [[-12, -4, 9], [56, -8, 11], [60, 36, 8], [-14, 34, 10], [30, 44, 9], [40, -13, 12], [-26, 10, 10]]) addPalm(b, frame.vec(x, y), h, 1.4 + rnd() * 1.6, rnd)
-  for (const [x, y] of [[-9, 30], [52, 30], [54, 31.5], [-10, -1], [34, -12], [-18, 24]]) addBanana(b, frame.vec(x, y), rnd)
-  addCrown(b, frame.vec(58, 18), 3.2, 3.6, '#2f6a2c', rnd, 6)
+  for (const [x, y, h] of [[-12, -4, 9], [56, -8, 11], [60, 36, 8], [-14, 34, 10], [30, 44, 9], [40, -13, 12], [-26, 10, 10]]) palmTree(b, frame.vec(x, y), h, 1.4 + rnd() * 1.6, rnd)
+  for (const [x, y] of [[-9, 30], [52, 30], [54, 31.5], [-10, -1], [34, -12], [-18, 24]]) bananaPlant(b, frame.vec(x, y), rnd)
+  mangoTree(b, frame.vec(58, 18), 3.8, 3.0, rnd, q.props * 0.6)
   b.add(new THREE.CylinderGeometry(0.22, 0.34, 3.6, 8), '#5a4232', M.t(frame.vec(58, 18).x, 1.8, frame.vec(58, 18).z))
   // electricity poles with sagging wires along the street behind the wall
   const wire: number[] = []

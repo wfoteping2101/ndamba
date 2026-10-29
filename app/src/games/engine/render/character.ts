@@ -66,6 +66,27 @@ function numberTexture(text: string, color: string) {
   return t
 }
 
+/** Marks drawn on a shirt: the shark fin of the Requins (« dessiné au feutre »), the spots of the Panthères. */
+function markTexture(kind: 'fin' | 'spots', color: string) {
+  const c = document.createElement('canvas')
+  c.width = c.height = 128
+  const x = c.getContext('2d')!
+  x.fillStyle = color; x.strokeStyle = color
+  if (kind === 'fin') {
+    // a felt-pen fin above a wave
+    x.lineWidth = 7; x.lineJoin = 'round'
+    x.beginPath(); x.moveTo(28, 88); x.quadraticCurveTo(58, 70, 66, 24); x.quadraticCurveTo(80, 62, 100, 88); x.closePath(); x.stroke()
+    x.lineWidth = 5; x.beginPath(); x.moveTo(14, 104); x.quadraticCurveTo(34, 92, 54, 104); x.quadraticCurveTo(74, 116, 94, 104); x.quadraticCurveTo(108, 96, 118, 102); x.stroke()
+  } else {
+    let s = 7
+    const r = () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296 }
+    for (let i = 0; i < 26; i++) { x.beginPath(); x.ellipse(r() * 128, r() * 128, 5 + r() * 6, 4 + r() * 5, r() * 3, 0, Math.PI * 2); x.fill() }
+  }
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  return t
+}
+
 /** Printed fabric (wax prints): circles and arcs, big leaves, or rings, in two colours on a base. */
 const patternCache = new Map<string, THREE.CanvasTexture>()
 function patternTexture(base: string, p?: { a: string; b: string; kind: 'wax' | 'leaves' | 'circles' }) {
@@ -345,6 +366,14 @@ export class Character {
       const z = 0.124 * g
       ride('chest', new THREE.PlaneGeometry(0.1 * g, 0.1 * g), mat, [0.0, P.chest * 0.5, z])
       ride('chest', new THREE.PlaneGeometry(0.16 * g, 0.16 * g), mat, [0, P.chest * 0.52, -z], Math.PI)
+    }
+    if (look.chestMark) {
+      const tex = markTexture(look.chestMark, look.chestMarkColor ?? '#f2eee3')
+      const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false, toneMapped: false })
+      const z = 0.125 * g
+      const size = look.chestMark === 'spots' ? 0.24 * g : 0.13 * g
+      ride('chest', new THREE.PlaneGeometry(size, size), mat, [look.chestMark === 'fin' ? -0.035 * g : 0, P.chest * 0.5, z])
+      if (look.chestMark === 'spots') ride('chest', new THREE.PlaneGeometry(size, size), mat, [0, P.chest * 0.5, -z], Math.PI)
     }
     if (look.dress) {
       const tex = patternTexture(look.dress, look.pattern)

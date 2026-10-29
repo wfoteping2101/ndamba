@@ -29,6 +29,8 @@ export interface ChoreoHost {
   shake(amount: number): void
   /** the light of the moment (fog falls, night comes) */
   mood(m: import('../sets/common').Mood): void
+  /** what a player sees, drawn on the grass (pass lanes); null clears */
+  lanes(pairs: [V2, V2][] | null): void
 }
 
 interface Waiter { until: () => boolean; resolve: () => void; reject: (e: Error) => void; deadline: number }
@@ -191,4 +193,5 @@ export class Choreo {
   score(text: string | null) { this.host.score(text) }
   sfx(kind: Parameters<typeof sfx>[0]) { sfx(kind) }
   shake(a = 0.4) { this.host.shake(a) }
+  lanes(pairs: [string, Where][] | null) { this.host.lanes(pairs ? pairs.map(([a, b]) => [{ ...this.p(a).pos }, this.pt(b)] as [V2, V2]) : null) }
 }

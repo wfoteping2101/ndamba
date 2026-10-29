@@ -46,12 +46,22 @@ function ballTexture() {
 
 /** Story balls (Lionceaux): Mami's old brown leather ball, the same with its square patch of
  * red-and-yellow wax cloth (from chapter 2), and the plastic-bag ball of the Bafoussam cousins. */
-export type BallLook = 'ndamba' | 'mami' | 'mamiPatched' | 'bag'
+export type BallLook = 'ndamba' | 'mami' | 'mamiPatched' | 'bag' | 'plain'
 function storyTexture(look: Exclude<BallLook, 'ndamba'>) {
   const c = document.createElement('canvas')
   c.width = 512; c.height = 256
   const g = c.getContext('2d')!
-  if (look === 'bag') {
+  if (look === 'plain') {
+    // an ordinary worn match ball: white panels, dark pentagons, scuffs of red earth
+    g.fillStyle = '#efece3'; g.fillRect(0, 0, 512, 256)
+    g.fillStyle = '#2a2a2a'
+    for (const [u, v] of [[0.0, 0.5], [0.2, 0.18], [0.4, 0.5], [0.6, 0.18], [0.8, 0.5], [0.1, 0.82], [0.3, 0.82], [0.5, 0.82], [0.7, 0.82], [0.9, 0.82]]) for (const du of [-1, 0, 1]) {
+      g.beginPath()
+      for (let i = 0; i < 5; i++) { const a = (i / 5) * Math.PI * 2 - Math.PI / 2; g.lineTo((u + du) * 512 + Math.cos(a) * 24, v * 256 + Math.sin(a) * 20) }
+      g.closePath(); g.fill()
+    }
+    for (let i = 0; i < 140; i++) { g.fillStyle = `rgba(160,80,40,${0.08 + (i % 5) * 0.03})`; g.fillRect((i * 83) % 512, (i * 47) % 256, 4 + (i % 7), 3 + (i % 4)) }
+  } else if (look === 'bag') {
     g.fillStyle = '#e9e6dc'; g.fillRect(0, 0, 512, 256)
     for (let i = 0; i < 60; i++) { g.strokeStyle = `rgba(${120 + i % 3 * 40},${110 + i % 2 * 30},90,0.35)`; g.lineWidth = 2 + (i % 4); g.beginPath(); g.moveTo((i * 37) % 512, 0); g.bezierCurveTo((i * 53) % 512, 90, (i * 71) % 512, 160, (i * 29) % 512, 256); g.stroke() }
     g.strokeStyle = 'rgba(60,40,30,0.8)'; g.lineWidth = 5

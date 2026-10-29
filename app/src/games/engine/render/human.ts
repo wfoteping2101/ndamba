@@ -1,0 +1,473 @@
+// Realistic players: skinned humans built offline from the MakeHuman CC0 data (tools/humans), dressed
+// at runtime. One GLB per body type (boy, lean boy, big boy, girl, man...) holds the body, eyes, teeth,
+// every hairstyle and every garment; a look shows the pieces it needs and paints them: skin tone with
+// lips, brows, palms and nails from the detail maps, the club shirt with its stripe, number and trims,
+// socks of two colours if the book says so. Faces blink, talk and smile through morph targets.
+import * as THREE from 'three'
+import { GLTFLoader, type GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import * as SkeletonUtils from 'three/examples/jsm/utils/SkeletonUtils.js'
+import type { Look } from '../sim/types'
+import type { AnimInput } from './character'
+import type { Figure } from './animal'
+import { Motion, loadMotions } from './motion'
+
+export type Archetype = 'boy' | 'boyLean' | 'boyBig' | 'girl' | 'man'
+
+interface Meta {
+  name: string
+  height: number
+  kid: boolean
+  kitAtlas: { torso: [number, number, number, number]; sleeveL: [number, number, number, number]; sleeveR: [number, number, number, number] }
+  pieces: string[]
+}
+
+interface Asset { gltf: GLTF; meta: Meta; skinA: ImageData; skinB: ImageData }
+
+const BASE = `${import.meta.env.BASE_URL ?? '/'}jeux/humans/`
+const cache = new Map<Archetype, Promise<Asset>>()
+
+async function image(url: string): Promise<ImageData> {
+  const img = new Image()
+  img.decoding = 'async'
+  img.src = url
+  await img.decode()
+  const c = document.createElement('canvas')
+  c.width = img.naturalWidth
+  c.height = img.naturalHeight
+  const g = c.getContext('2d', { willReadFrequently: true })!
+  g.drawImage(img, 0, 0)
+  return g.getImageData(0, 0, c.width, c.height)
+}
+
+export function loadArchetype(a: Archetype): Promise<Asset> {
+  let p = cache.get(a)
+  if (!p) {
+    p = (async () => {
+      const [gltf, meta, skinA, skinB] = await Promise.all([
+        new GLTFLoader().loadAsync(`${BASE}${a}.glb`),
+        fetch(`${BASE}${a}.json`).then((r) => r.json() as Promise<Meta>),
+        image(`${BASE}${a}_skinA.png`),
+        image(`${BASE}${a}_skinB.png`),
+      ])
+      prepareShared(gltf)
+      return { gltf, meta, skinA, skinB }
+    })()
+    cache.set(a, p)
+  }
+  return p
+}
+
+/** Which body a look wears. */
+export function archetypeOf(look: Look): Archetype {
+  if (look.kid !== false) {
+    if (look.girl) return 'girl'
+    if ((look.build ?? 1) >= 1.2) return 'boyBig'
+    if ((look.height ?? 1) >= 1.05 && (look.build ?? 1) <= 0.95) return 'boyLean'
+    return 'boy'
+  }
+  return 'man'
+}
+
+/** Load the bodies (and the motion library) a scene needs before it starts. */
+export async function preloadHumans(looks: Look[]) {
+  const types = new Set(looks.filter((l) => !l.animal).map(archetypeOf))
+  await Promise.all([...[...types].map(loadArchetype), loadMotions()])
+}
+
+/* ------------------------------------------------------------------------------------ shared prep */
+
+/** Things done once per GLB: the eyes' mask colours become real colours (brown iris, black pupil). */
+function prepareShared(gltf: GLTF) {
+  gltf.scene.traverse((o) => {
+    const m = o as THREE.SkinnedMesh
+    if (!m.isMesh || !m.name.startsWith('eye_')) return
+    const col = m.geometry.getAttribute('color') as THREE.BufferAttribute | undefined
+    if (!col || m.userData.eyeDone) return
+    m.userData.eyeDone = true
+    const sclera = new THREE.Color('#e9e2d6'), iris = new THREE.Color('#3a2214'), irisOut = new THREE.Color('#1c0f08'), pupil = new THREE.Color('#050404')
+    const c = new THREE.Color()
+    for (let i = 0; i < col.count; i++) {
+      const ir = col.getX(i), pu = col.getY(i), lim = col.getZ(i)
+      c.copy(sclera).lerp(iris, ir).lerp(irisOut, lim * 0.7).lerp(pupil, pu)
+      col.setXYZW(i, c.r, c.g, c.b, 1)
+    }
+    col.needsUpdate = true
+  })
+}
+
+/* ------------------------------------------------------------------------------------ textures */
+
+const texCache = new Map<string, THREE.Texture>()
+
+function srgb(hex: string) { const c = new THREE.Color(hex); return [c.r, c.g, c.b].map((v) => Math.round(THREE.MathUtils.clamp(v, 0, 1) ** (1 / 2.2) * 255)) as [number, number, number] }
+
+/** Skin albedo for one tone: base tone, lips, brows (in the hair colour), lighter palms, soles and nails. */
+function skinMap(a: Archetype, asset: Asset, tone: string, brow: string, scalp: boolean): THREE.Texture {
+  const key = `${a}|${tone}|${brow}|${scalp}`
+  const hit = texCache.get(key)
+  if (hit) return hit
+  const A = asset.skinA, B = asset.skinB
+  const W = A.width, H = A.height
+  const c = document.createElement('canvas')
+  c.width = W; c.height = H
+  const g = c.getContext('2d')!
+  const out = g.createImageData(W, H)
+  const [r0, g0, b0] = srgb(tone)
+  const [hr, hg, hb] = srgb(brow)
+  // a little mottling so the skin is not plastic
+  const noise = new Float32Array(64 * 64)
+  for (let i = 0; i < noise.length; i++) noise[i] = Math.random()
+  const d = out.data, a8 = A.data, b8 = B.data
+  for (let y = 0; y < H; y++) {
+    const ny = ((y / H) * 63) | 0
+    for (let x = 0; x < W; x++) {
+      const i = (y * W + x) * 4
+      const sc = scalp ? a8[i] / 255 : 0, lip = a8[i + 1] / 255, br = a8[i + 2] / 255
+      const palm = b8[i] / 255, nail = b8[i + 1] / 255, lid = b8[i + 2] / 255
+      const n = 0.96 + noise[ny * 64 + (((x / W) * 63) | 0)] * 0.08
+      let r = r0 * n, gg = g0 * n, bb = b0 * n
+      // lips: deeper and warmer
+      const L = lip * 0.85
+      r = r * (1 - L) + r * 0.82 * L; gg = gg * (1 - L) + gg * 0.62 * L; bb = bb * (1 - L) + bb * 0.66 * L
+      // palms and soles, nails: lighter and pinker
+      const P = Math.max(palm * 0.8, nail * 0.75)
+      r = r * (1 - P) + Math.min(255, r * 1.55 + 40) * P; gg = gg * (1 - P) + Math.min(255, gg * 1.45 + 26) * P; bb = bb * (1 - P) + Math.min(255, bb * 1.45 + 22) * P
+      // eyelids a touch darker, then the brows
+      const Ld = 1 - lid * 0.12
+      r *= Ld; gg *= Ld; bb *= Ld
+      // brows, and under the hair the scalp takes the hair colour (no skin shows between the curls)
+      const Bw = Math.min(1, Math.max(br * 0.95, sc * 0.92))
+      r = r * (1 - Bw) + hr * Bw; gg = gg * (1 - Bw) + hg * Bw; bb = bb * (1 - Bw) + hb * Bw
+      d[i] = r; d[i + 1] = gg; d[i + 2] = bb; d[i + 3] = 255
+    }
+  }
+  g.putImageData(out, 0, 0)
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  t.flipY = false
+  t.anisotropy = 4
+  texCache.set(key, t)
+  return t
+}
+
+/** A tileable normal map from a height function painted on a canvas. */
+function normalFromHeight(key: string, size: number, height: (x: number, y: number) => number, strength = 2): THREE.Texture {
+  const hit = texCache.get(key)
+  if (hit) return hit
+  const h = new Float32Array(size * size)
+  for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) h[y * size + x] = height(x / size, y / size)
+  const c = document.createElement('canvas')
+  c.width = c.height = size
+  const g = c.getContext('2d')!
+  const img = g.createImageData(size, size)
+  const at = (x: number, y: number) => h[((y + size) % size) * size + ((x + size) % size)]
+  for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) {
+    const dx = (at(x + 1, y) - at(x - 1, y)) * strength, dy = (at(x, y + 1) - at(x, y - 1)) * strength
+    const l = Math.hypot(dx, dy, 1)
+    const i = (y * size + x) * 4
+    img.data[i] = (-dx / l * 0.5 + 0.5) * 255; img.data[i + 1] = (-dy / l * 0.5 + 0.5) * 255; img.data[i + 2] = (1 / l * 0.5 + 0.5) * 255; img.data[i + 3] = 255
+  }
+  g.putImageData(img, 0, 0)
+  const t = new THREE.CanvasTexture(c)
+  t.wrapS = t.wrapT = THREE.RepeatWrapping
+  t.colorSpace = THREE.NoColorSpace
+  t.anisotropy = 4
+  texCache.set(key, t)
+  return t
+}
+
+function hashNoise(seed: number) {
+  // smooth periodic noise from a few sines (tileable on 0..1)
+  const rnd = (k: number) => { const x = Math.sin(seed * 91.7 + k * 12.9898) * 43758.5453; return x - Math.floor(x) }
+  const waves = Array.from({ length: 6 }, (_, k) => ({ fx: 1 + Math.floor(rnd(k) * 6), fy: 1 + Math.floor(rnd(k + 9) * 6), p: rnd(k + 20) * 6.28 }))
+  return (x: number, y: number, f = 1) => waves.reduce((s, w) => s + Math.sin((w.fx * x + w.fy * y) * Math.PI * 2 * f + w.p), 0) / waves.length
+}
+
+const poreNormal = () => normalFromHeight('pores', 256, (x, y) => {
+  const n = hashNoise(3)
+  return n(x, y, 8) * 0.5 + n(y, x, 21) * 0.35 + (Math.random() - 0.5) * 0.25
+}, 1.4)
+
+const knitNormal = () => normalFromHeight('knit', 128, (x, y) => {
+  // a jersey knit: little vertical loops
+  const u = x * 64, v = y * 96
+  return Math.abs(Math.sin(u * Math.PI)) * 0.6 + Math.sin(v * Math.PI * 2 + Math.sin(u * Math.PI) * 1.2) * 0.25
+}, 1.2)
+
+const curlNormal = () => normalFromHeight('curls', 256, (x, y) => {
+  const n = hashNoise(7)
+  let s = 0
+  for (let k = 0; k < 4; k++) s += Math.sin((x * 37 + Math.sin(y * 29 + k) * 1.5) * 6.28 + k) * Math.sin((y * 41 + Math.cos(x * 23 + k) * 1.5) * 6.28) / (k + 1)
+  return s * 0.5 + n(x, y, 12) * 0.3
+}, 2.4)
+
+/** The shirt, painted on the kit atlas: body colour, the stripe, a felt-pen mark, the numbers. */
+function kitMap(look: Look, meta: Meta, long: boolean): THREE.Texture {
+  const key = `kit|${look.shirt}|${look.stripe?.color}|${look.stripe?.side}|${look.number}|${look.numberColor}|${look.chestMark}|${look.chestMarkColor}|${look.jacket}|${long}`
+  const hit = texCache.get(key)
+  if (hit) return hit
+  const S = 512
+  const c = document.createElement('canvas')
+  c.width = c.height = S
+  const g = c.getContext('2d')!
+  const R = (r: [number, number, number, number]) => ({ x: r[0] * S, y: (1 - r[1] - r[3]) * S, w: r[2] * S, h: r[3] * S })
+  g.fillStyle = look.shirt
+  g.fillRect(0, 0, S, S)
+  const T = R(meta.kitAtlas.torso)
+  const ux = (u: number) => T.x + u * T.w
+  const vy = (v: number) => T.y + (1 - v) * T.h
+  // the open tracksuit top shows the T-shirt down the front
+  if (look.jacket) {
+    g.fillStyle = look.jacket
+    g.fillRect(ux(0.21), vy(1), ux(0.29) - ux(0.21), T.h)
+  }
+  if (look.stripe) {
+    // on the wearer's left the front centre is u 0.25 and the left side u 0.5
+    const u0 = look.stripe.side === 'L' ? 0.285 : 0.18
+    g.fillStyle = look.stripe.color
+    g.fillRect(ux(u0), vy(1), ux(u0 + 0.035) - ux(u0), T.h)
+  }
+  if (look.chestMark === 'fin') {
+    g.fillStyle = look.chestMarkColor ?? '#e8f0fa'
+    g.beginPath()
+    const cx = ux(0.25), cy = vy(0.66), s = T.w * 0.045
+    g.moveTo(cx - s * 1.2, cy + s * 0.6); g.quadraticCurveTo(cx - s * 0.1, cy - s * 0.2, cx + s * 0.25, cy - s * 1.3); g.quadraticCurveTo(cx + s * 0.35, cy - s * 0.2, cx + s * 1.1, cy + s * 0.6)
+    g.closePath(); g.fill()
+  } else if (look.chestMark === 'spots') {
+    g.fillStyle = look.chestMarkColor ?? '#1b1b1b'
+    let seed = 5
+    const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647 }
+    for (let i = 0; i < 70; i++) {
+      const u = rnd(), v = 0.05 + rnd() * 0.9
+      g.beginPath(); g.ellipse(ux(u), vy(v), 3 + rnd() * 4, 2.5 + rnd() * 3, rnd() * 3, 0, Math.PI * 2); g.fill()
+    }
+  }
+  if (look.number !== undefined) {
+    g.fillStyle = look.numberColor ?? '#F2EEE3'
+    g.textAlign = 'center'; g.textBaseline = 'middle'
+    g.font = `800 ${Math.round(T.h * 0.36)}px Archivo, system-ui, sans-serif`
+    g.fillText(String(look.number), ux(0.75), vy(0.56))
+    g.font = `800 ${Math.round(T.h * 0.11)}px Archivo, system-ui, sans-serif`
+    g.fillText(String(look.number), ux(0.205), vy(0.72))
+  }
+  // a faint weave so large flat areas catch light
+  const img = g.getImageData(0, 0, S, S)
+  for (let i = 0; i < img.data.length; i += 4) { const k = 0.97 + Math.random() * 0.05; img.data[i] *= k; img.data[i + 1] *= k; img.data[i + 2] *= k }
+  g.putImageData(img, 0, 0)
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  t.flipY = false
+  t.anisotropy = 4
+  texCache.set(key, t)
+  return t
+}
+
+/** Hair textures: cornrow lines, BriBri's shaved part on his left. */
+function hairMap(look: Look): THREE.Texture | null {
+  if (look.hair !== 'cornrows' && !look.part) return null
+  const key = `hair|${look.hair}|${look.part}|${look.hairColor}|${look.skin}`
+  const hit = texCache.get(key)
+  if (hit) return hit
+  const S = 256
+  const c = document.createElement('canvas')
+  c.width = c.height = S
+  const g = c.getContext('2d')!
+  g.fillStyle = '#ffffff'
+  g.fillRect(0, 0, S, S)
+  if (look.hair === 'cornrows') {
+    for (let i = 0; i < 9; i++) {
+      const x = (i + 0.5) / 9 * S
+      g.fillStyle = '#6b6b6b'
+      g.fillRect(x - 1.5, 0, 3, S)
+    }
+  }
+  if (look.part) {
+    // u grows towards the wearer's left
+    const u = look.part === 'L' ? 0.66 : 0.34
+    g.fillStyle = '#000000'
+    g.fillRect(u * S - 1.5, 0, 3, S * 0.55)
+  }
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  t.flipY = false
+  texCache.set(key, t)
+  return t
+}
+
+/* ------------------------------------------------------------------------------------ materials */
+
+function withMasks(m: THREE.MeshStandardMaterial | THREE.MeshPhysicalMaterial, fragment: string, uniforms: Record<string, THREE.IUniform> = {}) {
+  m.onBeforeCompile = (sh) => {
+    Object.assign(sh.uniforms, uniforms)
+    sh.vertexShader = sh.vertexShader
+      .replace('#include <common>', '#include <common>\nattribute vec4 color;\nvarying vec4 vMask;')
+      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvMask = color;')
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', '#include <common>\nvarying vec4 vMask;\n' + Object.keys(uniforms).map((k) => `uniform ${uniforms[k].value instanceof THREE.Color ? 'vec3' : 'float'} ${k};`).join('\n'))
+      .replace('#include <map_fragment>', '#include <map_fragment>\n' + fragment)
+  }
+  m.customProgramCacheKey = () => fragment + Object.keys(uniforms).join(',')
+}
+
+function trimMaterial(color: string, trim: string, opts: { map?: THREE.Texture; collar?: number; cuff?: number; hem?: number; rough?: number; sheen?: number }) {
+  const m = new THREE.MeshPhysicalMaterial({ color: opts.map ? '#ffffff' : color, map: opts.map ?? null, roughness: opts.rough ?? 0.78, sheen: opts.sheen ?? 0.5, sheenRoughness: 0.7, sheenColor: new THREE.Color(color).lerp(new THREE.Color('#ffffff'), 0.4), normalMap: knitNormal(), normalScale: new THREE.Vector2(0.35, 0.35) })
+  m.normalMap!.repeat.set(9, 9)
+  withMasks(m, `{ float tr = max(max(vMask.r * uCollar, vMask.g * uCuff), vMask.b * uHem); diffuseColor.rgb = mix(diffuseColor.rgb, uTrim, smoothstep(0.42, 0.62, tr)); }`, {
+    uTrim: { value: new THREE.Color(trim) }, uCollar: { value: opts.collar ?? 1 }, uCuff: { value: opts.cuff ?? 1 }, uHem: { value: opts.hem ?? 0 },
+  })
+  return m
+}
+
+/* ------------------------------------------------------------------------------------ the figure */
+
+const HAIR_PIECES: Record<Look['hair'], string[]> = {
+  crop: ['hair_crop'], cornrows: ['hair_crop'], afro: ['hair_afro'], twists: ['hair_crop', 'hair_twists'], puff: ['hair_crop', 'hair_puff'],
+  bald: [], long: ['hair_afro'], cap: ['hair_crop', 'cap_crown', 'cap_brim'],
+}
+
+export class Human implements Figure {
+  root = new THREE.Group()
+  height: number
+  outline: THREE.Object3D | null = null
+  ready = false
+  private model: THREE.Object3D | null = null
+  private meshes: THREE.Mesh[] = []
+  private morphs: { mesh: THREE.Mesh; dict: Record<string, number> }[] = []
+  private mats: THREE.Material[] = []
+  private visible = true
+  private blinkT = 1 + Math.random() * 3
+  private blink = 0
+  private talk = 0
+  private time = Math.random() * 10
+  motion: Motion | null = null
+  private pending: AnimInput | null = null
+  private facingY = 0
+
+  constructor(public look: Look, private opts: { castShadow?: boolean } = {}) {
+    const a = archetypeOf(look)
+    this.height = (look.kid !== false ? 1.33 : 1.76) * (look.height ?? 1)
+    loadArchetype(a).then((asset) => this.build(a, asset)).catch((e) => console.error('human', a, e))
+  }
+
+  private build(a: Archetype, asset: Asset) {
+    const look = this.look
+    const model = SkeletonUtils.clone(asset.gltf.scene)
+    const show = new Set<string>(['body', 'eye_l', 'eye_r', 'upper-teeth', 'lower-teeth', 'tongue', ...HAIR_PIECES[look.hair]])
+    const long = !!look.jacket
+    const trousers = !!look.trousers
+    show.add(long ? 'longsleeves' : 'shirt')
+    if (trousers) show.add('trousers')
+    else { show.add('shorts'); show.add('sock_l'); show.add('sock_r') }
+    const shoes = look.shoes ?? 'boots'
+    if (shoes === 'sandals') show.add('feet')
+    if (shoes === 'boots') { show.add('boot_l'); show.add('boot_r') } else if (shoes === 'trainers') { show.add('trainer_l'); show.add('trainer_r') } else if (shoes === 'shoes') { show.add(asset.meta.pieces.includes('shoe_l') ? 'shoe_l' : 'trainer_l'); show.add(asset.meta.pieces.includes('shoe_r') ? 'shoe_r' : 'trainer_r') }
+    if (look.gloves) { show.add('glove_l'); show.add('glove_r') }
+
+    const skin = new THREE.MeshPhysicalMaterial({
+      map: skinMap(a, asset, look.skin, look.hairColor, look.hair !== 'bald'), roughness: 0.5, sheen: 0.3, sheenRoughness: 0.45,
+      sheenColor: new THREE.Color(look.skin).lerp(new THREE.Color('#d9a27e'), 0.5), normalMap: poreNormal(), normalScale: new THREE.Vector2(0.18, 0.18),
+      specularIntensity: 0.55, clearcoat: 0.05, clearcoatRoughness: 0.4,
+    })
+    skin.normalMap!.repeat.set(28, 28)
+    const hairTex = hairMap(look)
+    const hair = new THREE.MeshPhysicalMaterial({ color: look.hairColor, map: hairTex, roughness: 0.86, sheen: 0.7, sheenRoughness: 0.55, sheenColor: new THREE.Color('#5a4a3c'), normalMap: curlNormal(), normalScale: new THREE.Vector2(1.1, 1.1) })
+    hair.normalMap!.repeat.set(7, 7)
+    const eye = new THREE.MeshPhysicalMaterial({ vertexColors: true, roughness: 0.25, clearcoat: 1, clearcoatRoughness: 0.03 })
+    const teeth = new THREE.MeshStandardMaterial({ color: '#e8e1d2', roughness: 0.35 })
+    const mouth = new THREE.MeshStandardMaterial({ color: '#4a1f1c', roughness: 0.6 })
+    const shirt = trimMaterial(look.shirt, look.collar ?? look.shirtTrim ?? look.shirt, { map: kitMap(look, asset.meta, long), collar: look.collar || look.shirtTrim ? 1 : 0, cuff: look.shirtTrim && look.shirtTrim !== look.shirt ? 1 : 0, hem: 0 })
+    const shorts = trimMaterial(look.trousers ?? look.shorts, look.trouserStripe ?? look.shorts, { collar: 0, cuff: 0, hem: 0, rough: 0.7 })
+    const sock = (col: string) => trimMaterial(col, col, { collar: 0, cuff: 0, hem: 0, rough: 0.85, sheen: 0.6 })
+    const sockL = sock(look.sockL), sockR = sock(look.sockR)
+    // socks and shoes sit millimetres above the skin: win the depth test at a distance
+    for (const m of [sockL, sockR]) { m.polygonOffset = true; m.polygonOffsetFactor = -2; m.polygonOffsetUnits = -2 }
+    const soleCol = shoes === 'boots' ? '#1a1714' : '#ece8de'
+    const shoe = new THREE.MeshPhysicalMaterial({ color: look.boots, roughness: shoes === 'boots' ? 0.35 : 0.6, clearcoat: shoes === 'boots' ? 0.6 : 0.1, clearcoatRoughness: 0.3 })
+    withMasks(shoe, `diffuseColor.rgb = mix(diffuseColor.rgb, uSole, step(0.5, vMask.r));`, { uSole: { value: new THREE.Color(soleCol) } })
+    const gloves = new THREE.MeshPhysicalMaterial({ color: look.gloves ?? '#d9cfbd', roughness: 0.7, sheen: 0.4 })
+    const cap = new THREE.MeshPhysicalMaterial({ color: look.cap ?? '#6f6a62', roughness: 0.8, sheen: 0.4 })
+    this.mats.push(skin, hair, eye, teeth, mouth, shirt, shorts, sockL, sockR, shoe, gloves, cap)
+    const matFor = (n: string): THREE.Material => {
+      if (n === 'body' || n === 'feet') return skin
+      if (n.startsWith('hair_')) return hair
+      if (n.startsWith('eye_')) return eye
+      if (n.endsWith('teeth')) return teeth
+      if (n === 'tongue') return mouth
+      if (n === 'shirt' || n === 'longsleeves') return shirt
+      if (n === 'shorts' || n === 'trousers') return shorts
+      if (n === 'sock_l') return sockL
+      if (n === 'sock_r') return sockR
+      if (n.startsWith('boot_') || n.startsWith('trainer_') || n.startsWith('shoe_')) return shoe
+      if (n.startsWith('glove_')) return gloves
+      if (n.startsWith('cap_')) return cap
+      return skin
+    }
+    model.traverse((o) => {
+      const m = o as THREE.SkinnedMesh
+      if (!m.isMesh) return
+      const name = m.name.replace(/_\d+$/, '')
+      const piece = asset.meta.pieces.includes(name) ? name : m.parent && asset.meta.pieces.includes(m.parent.name) ? m.parent.name : name
+      m.visible = show.has(piece)
+      m.material = matFor(piece)
+      m.castShadow = !!this.opts.castShadow && m.visible && !piece.startsWith('eye') && !piece.endsWith('teeth') && piece !== 'tongue'
+      m.receiveShadow = true
+      m.frustumCulled = false
+      if (m.morphTargetDictionary && m.visible) this.morphs.push({ mesh: m, dict: m.morphTargetDictionary })
+      this.meshes.push(m)
+    })
+    // heights: a child of the book is about 1.36 m, an adult 1.75 m, times the look's own factor
+    const s = ((asset.meta.kid ? 1.36 : 1.75) * (look.height ?? 1)) / asset.meta.height
+    model.scale.setScalar(s)
+    this.height = asset.meta.height * s
+    this.root.add(model)
+    this.model = model
+    model.userData.archetypeKey = `${a}|${s}`
+    this.motion = new Motion(model, look)
+    this.ready = true
+    this.root.visible = this.visible
+    if (this.pending) this.update(this.pending, 0)
+  }
+
+  snapFacing(facing: number) { this.facingY = Math.atan2(Math.cos(facing), Math.sin(facing)); this.root.rotation.y = this.facingY }
+
+  setVisible(v: boolean) { this.visible = v; this.root.visible = v }
+
+  private morph(name: string, v: number) {
+    for (const m of this.morphs) {
+      const i = m.dict[name]
+      if (i !== undefined && m.mesh.morphTargetInfluences) m.mesh.morphTargetInfluences[i] = v
+    }
+  }
+
+  update(a: AnimInput, dt: number) {
+    if (!this.ready) { this.pending = a; return }
+    this.time += dt
+    // the body turns towards where it faces
+    const targetY = Math.atan2(Math.cos(a.facing), Math.sin(a.facing))
+    let dy = targetY - this.root.rotation.y
+    while (dy > Math.PI) dy -= Math.PI * 2
+    while (dy < -Math.PI) dy += Math.PI * 2
+    this.root.rotation.y += dy * (1 - Math.exp(-12 * dt))
+    this.motion?.update(a, dt, this.root.rotation.y)
+    // a face that lives: blinks, talks, smiles, frowns
+    this.blinkT -= dt
+    if (this.blinkT <= 0) { this.blink = 0.16; this.blinkT = 2 + Math.random() * 4 }
+    this.blink = Math.max(0, this.blink - dt)
+    this.morph('blink', this.blink > 0 ? Math.sin((this.blink / 0.16) * Math.PI) : 0)
+    const talking = a.anim === 'talk' || a.anim === 'mic'
+    this.talk += ((talking ? 1 : 0) - this.talk) * (1 - Math.exp(-10 * dt))
+    const flap = this.talk * (0.35 + 0.35 * Math.sin(this.time * 17) * Math.sin(this.time * 6.3))
+    this.morph('open', Math.max(0, flap + (a.anim === 'celebrate' ? 0.6 : 0)))
+    const happy = a.mood === 'happy' || a.anim === 'celebrate' || a.anim === 'dance'
+    const sad = a.mood === 'sad' || a.anim === 'dejected' || a.anim === 'cry'
+    this.morph('smile', happy ? 0.8 : 0.08)
+    this.morph('sad', sad ? 0.85 : 0)
+    this.morph('frown', a.mood === 'focused' ? 0.45 : 0)
+  }
+
+  dispose() {
+    for (const m of this.mats) m.dispose()
+    this.motion?.dispose()
+    this.root.removeFromParent()
+  }
+}

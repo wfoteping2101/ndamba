@@ -7,7 +7,8 @@ import { useT } from '../../i18n'
 import { useDocumentTitle } from '../../lib/hooks'
 import { cx } from '../../lib/util'
 import { TOME1_TOC } from '../../content/books.gen'
-import { ActionButton, GameFrame, NoWebGL, RoundButton, SettingsSheet, Spinner, Stick, TopBar, hasWebGL, isTouch, useMounted, useStore } from '../shared/ui'
+import { GameFrame, NoWebGL, RoundButton, SettingsSheet, Spinner, TopBar, hasWebGL, useMounted, useStore } from '../shared/ui'
+import { Manette, useGamepad, type PadAction, type PadButton } from '../shared/Manette'
 import { sfx } from '../shared/audio'
 import { tome1Chapter } from '../njangi/links'
 import { SCRIPTS, isPlayable } from './chapters'
@@ -60,7 +61,6 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
   const [bridgeInfo, setBridgeInfo] = useState(false)
   const { ref, inst: s } = useMounted((el) => (webgl ? new StorySession(el, script, { startBeat: start, autoAdvance: subs.auto, onSave: (beat, done) => { void saveBeat(no, beat, done) } }) : null), [webgl])
   const st = useStore(s)
-  const touch = isTouch()
   useEffect(() => { if (s) s.autoAdvance = subs.auto; try { localStorage.setItem(SUBS_KEY, JSON.stringify(subs)) } catch { /* private */ } }, [s, subs])
   // automated tests drive the story through this handle
   useEffect(() => {
@@ -75,17 +75,29 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
   const nextNo = isPlayable(no + 1) ? no + 1 : null
   const fontSize = subs.size === 's' ? 'text-[15px]' : subs.size === 'l' ? 'text-[20px] sm:text-[22px]' : 'text-[17px] sm:text-[18.5px]'
   const lowered = !!st && (st.stick || st.controls.length > 0)
-  const btn = (k: ControlKey) => {
-    if (!s || !st) return null
-    if (k === 'talk') return st.near ? <ActionButton key={k} label={t('controls.talk')} tone="gold" size={72} onDown={() => { sfx('tap'); void s.talk(st.near!.id) }} /> : null
-    const action = k === 'dribble' ? 'skill' : k === 'shoot' ? 'shoot' : 'pass'
-    const custom = k === 'diveL' || k === 'diveR' || k === 'touch'
-    return <ActionButton key={k} label={t(`controls.${k}`)} tone={k === 'dribble' || k === 'pass' || k === 'touch' ? 'gold' : 'light'} size={k === 'diveL' || k === 'diveR' ? 64 : 76}
-      onDown={() => { if (custom) s.pressControl(k); s.input.touchButton(action, true) }} onUp={() => s.input.touchButton(action, false)} />
+  const pad = useGamepad()
+  const dragX = useRef<number | null>(null)
+  // the controller: what each button does in this moment of the chapter
+  const buttons: Partial<Record<PadButton, PadAction>> = {}
+  if (s && st && !st.paused) {
+    const press = (k: ControlKey, action: 'pass' | 'shoot' | 'skill') => ({
+      onDown: () => { if (k === 'diveL' || k === 'diveR' || k === 'touch') s.pressControl(k); s.input.touchButton(action, true) },
+      onUp: () => s.input.touchButton(action, false),
+    })
+    for (const k of st.controls) {
+      if (k === 'talk') buttons.cross = { label: t('controls.talk'), enabled: !!st.near, primary: true, key: 'J', onDown: () => { sfx('tap'); if (st.near) void s.talk(st.near.id) } }
+      else if (k === 'pass' || k === 'touch' || k === 'next') buttons.cross = { label: t(`controls.${k}`), primary: true, key: 'J', ...press(k, 'pass') }
+      else if (k === 'shoot') buttons.circle = { label: t('controls.shoot'), key: 'K', ...press(k, 'shoot') }
+      else if (k === 'dribble') buttons.square = { label: t('controls.dribble'), key: 'R', primary: !st.controls.includes('pass'), ...press(k, 'skill') }
+      else if (k === 'diveL') buttons.square = { label: t('controls.diveL'), ...press(k, 'pass') }
+      else if (k === 'diveR') buttons.circle = { label: t('controls.diveR'), ...press(k, 'pass') }
+    }
+    if (st.stick) buttons.r2 = { label: t('controls.sprint'), key: 'Maj', onDown: () => s.input.touchButton('sprint', true), onUp: () => s.input.touchButton('sprint', false) }
   }
   return (
     <GameFrame>
-      <div ref={ref} className="absolute inset-0" data-testid="game-canvas" onPointerDown={(e) => s?.pointer(e.nativeEvent)} />
+      <div ref={ref} className="absolute inset-0 touch-none" data-testid="game-canvas" onPointerDown={(e) => { s?.pointer(e.nativeEvent); dragX.current = e.clientX }}
+        onPointerMove={(e) => { if (dragX.current !== null && e.buttons) { s?.input.touchLook(e.clientX - dragX.current); dragX.current = e.clientX } }} onPointerUp={() => { dragX.current = null }} />
       {!webgl && <NoWebGL />}
       {webgl && !st && <Spinner label={t('player.loading')} />}
       <TopBar back="/jeux/lionceaux/chapitres" title={<><span className="text-sun-300">{t('player.chapter', { n: no })} </span>{title}</>} sub={pov ? t('chapters.pov', { name: pov }) : undefined}
@@ -121,15 +133,8 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
         </div>
       )}
 
-      {st && st.stick && touch && !st.paused && (
-        <div className="absolute bottom-0 left-0 z-20 p-4" style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 16px)' }}>
-          <Stick label={t('controls.stick')} onMove={(x, y) => s!.input.touchMove(x, y)} />
-        </div>
-      )}
-      {st && st.controls.length > 0 && !st.paused && (
-        <div className="absolute bottom-0 right-0 z-20 flex items-end gap-3 p-4" style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 16px)' }}>
-          {st.controls.map(btn)}
-        </div>
+      {st && !st.paused && (st.stick || st.controls.length > 0) && (
+        <Manette stick={st.stick} onMove={(x, y) => s!.input.touchMove(x, y)} buttons={buttons} stickLabel={t('controls.stick')} compact={pad} />
       )}
 
       {st && st.choices && (

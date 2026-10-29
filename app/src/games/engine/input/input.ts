@@ -20,7 +20,8 @@ export const DEFAULT_KEYS: Record<Action, string[]> = {
 }
 const MOVE_KEYS = { up: ['KeyW', 'ArrowUp'], down: ['KeyS', 'ArrowDown'], left: ['KeyA', 'ArrowLeft'], right: ['KeyD', 'ArrowRight'] }
 // standard gamepad mapping
-const PAD: Partial<Record<Action, number[]>> = { pass: [0], shoot: [1], tackle: [2], through: [3], switch: [4], camera: [8], pause: [9], skill: [5] }
+// DualSense / standard: 0 cross, 1 circle, 2 square, 3 triangle, 4 L1, 5 R1, 6 L2, 7 R2, 8 create, 9 options
+const PAD: Partial<Record<Action, number[]>> = { pass: [0], shoot: [1], tackle: [2], through: [3], switch: [4], camera: [8], pause: [9], skill: [2, 5] }
 const STORE = 'ndamba.jeux.keys'
 
 export function loadBindings(): Record<Action, string[]> {
@@ -128,9 +129,21 @@ export class Input {
       const ax = deadzone(pad.axes[0] ?? 0, pad.axes[1] ?? 0)
       if (ax.x || ax.y) this.lastDevice = 'gamepad'
       this.padAxis = { x: ax.x, y: -ax.y }
-    } else this.padAxis = { x: 0, y: 0 }
+      const rx = deadzone(pad.axes[2] ?? 0, pad.axes[3] ?? 0, 0.2)
+      this.padLook = { x: rx.x, y: -rx.y }
+    } else { this.padAxis = { x: 0, y: 0 }; this.padLook = { x: 0, y: 0 } }
   }
   private padAxis: V2 = { x: 0, y: 0 }
+  private padLook: V2 = { x: 0, y: 0 }
+  private dragLook = 0
+  /** Camera turn from a drag on the picture (pixels). */
+  touchLook(dx: number) { this.dragLook += dx }
+  /** Right stick (camera): x turns, y tilts. Drag deltas come as a one-off turn. */
+  look(): { x: number; y: number; drag: number } {
+    const d = this.dragLook
+    this.dragLook = 0
+    return { x: this.padLook.x, y: this.padLook.y, drag: d }
+  }
 
   /** Movement on screen axes: x right, y up (away from the viewer). Length <= 1. */
   axis(): V2 {

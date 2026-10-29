@@ -119,7 +119,8 @@
     "diveL": "Gauche",
     "diveR": "Droite",
     "next": "Suite",
-    "stick": "Déplacement"
+    "stick": "Déplacement",
+    "sprint": "Sprint"
   },
   "explore": {
     "kickoff": "Parle à Tonton Fokou et à Kaydoudou, puis rejoins ta place au milieu du terrain.",
@@ -147,7 +148,12 @@
     "fogIntro": "Tu es Kaydoudou, dans l'équipe du bas. Monte vers le but d'en haut.",
     "voiceIntro": "Le brouillard a tout avalé.",
     "voice": "Écoute les voix. Passe vers celle de ton frère.",
-    "voiceWrong": "Cette voix-là, tu ne la reconnais pas."
+    "voiceWrong": "Cette voix-là, tu ne la reconnais pas.",
+    "dribbleIntroK": "Tu es Kaydoudou. Deux Requins te collent. Tente ta chance.",
+    "callIntro": "Tu es BriBri. Tu es libre, au milieu.",
+    "call": "Que fait BriBri ?",
+    "callLocked": "Il le voit. Mais il ne sait pas encore crier.",
+    "ritualIntro": "Les deux frères, sous le manguier."
   },
   "lesson": {
     "title": "Leçon du Ballon n°{{n}}",
@@ -165,6 +171,10 @@
   "choices": {
     "voixParIci": "« Par ici ! »",
     "voixIci": "« Ici ! Ici ! »",
-    "voixBriBri": "« Kaydoudou ! À gauche ! »"
+    "voixBriBri": "« Kaydoudou ! À gauche ! »",
+    "crier": "Crier son nom",
+    "leverMain": "Lever la main",
+    "poing": "Tendre le poing",
+    "coeur": "Main sur le cœur"
   }
 }

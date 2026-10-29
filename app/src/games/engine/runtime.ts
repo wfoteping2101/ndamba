@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { BallView } from './render/ballView'
 import { CameraRig, type CamContext, type CamMode } from './render/cameraRig'
 import { Character } from './render/character'
+import { Human } from './render/human'
 import { Goat, type Figure } from './render/animal'
 import { Overlays } from './render/overlays'
 import { buildPitch, type PitchView, type Surround } from './render/pitchView'
@@ -21,6 +22,8 @@ export interface ViewOpts {
   fog?: [number, number] | null
   /** skip building the pitch (story scenes build their own world) */
   noPitch?: boolean
+  /** the old procedural figures (tests, very old devices) instead of the skinned humans */
+  legacyFigures?: boolean
 }
 
 export interface Label { id: string; text: string; tone?: 'a' | 'b' | 'n' | 'gold' | 'dark'; big?: boolean }
@@ -41,6 +44,8 @@ export class SimView {
   private groundPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0)
   private lastBall = new THREE.Vector3()
   highlight: string | null = null
+  /** art checks and screenshots: keep the full picture even when the frame rate is low */
+  noDegrade = typeof location !== 'undefined' && new URLSearchParams(location.search).has('hq')
 
   constructor(public container: HTMLElement, public world: World, public opts: ViewOpts = {}) {
     const quality = opts.quality ?? detectQuality()
@@ -63,7 +68,7 @@ export class SimView {
     const q = this.stage.quality
     for (const p of this.world.players) {
       if (this.chars.has(p.id)) continue
-      const c: Figure = p.look.animal ? new Goat(p.look, { castShadow: q.shadows }) : new Character(p.look, { toon: this.opts.toon, outline: (this.opts.outline ?? true) && q.outlines, castShadow: q.shadows })
+      const c: Figure = p.look.animal ? new Goat(p.look, { castShadow: q.shadows }) : this.opts.legacyFigures ? new Character(p.look, { toon: this.opts.toon, outline: (this.opts.outline ?? true) && q.outlines, castShadow: q.shadows }) : new Human(p.look, { castShadow: q.shadows })
       c.root.position.copy(this.frame.vec(p.pos.x, p.pos.y))
       c.snapFacing(p.facing)
       this.chars.set(p.id, c)
@@ -129,13 +134,14 @@ export class SimView {
     this.stage.render()
     this.drawLabels()
     this.fps.tick()
-    if (this.fps.struggling()) this.degrade()
+    if (this.fps.struggling() && !this.noDegrade) this.degrade()
   }
 
   /** The picture stutters: drop one notch (pixel ratio, then shadows and outlines). */
   degrade() {
     const st = this.stage
     this.fps.reset()
+    if (st.degradePost()) return
     const dpr = st.renderer.getPixelRatio()
     if (dpr > 1.01) { st.renderer.setPixelRatio(Math.max(1, dpr - 0.5)); st.resize(); return }
     if (st.renderer.shadowMap.enabled) {

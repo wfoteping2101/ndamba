@@ -1,0 +1,70 @@
+{
+ "name": "boy",
+ "height": 1.4049767187186577,
+ "kid": true,
+ "eyes": {
+  "l": [
+   0.028044219963299068,
+   -0.12133894140568013,
+   1.2966734127422743
+  ],
+  "r": [
+   -0.028044219963299068,
+   -0.12133894140568013,
+   1.2966734127422743
+  ]
+ },
+ "kitAtlas": {
+  "torso": [
+   0.01,
+   0.01,
+   0.72,
+   0.72
+  ],
+  "sleeveL": [
+   0.78,
+   0.02,
+   0.2,
+   0.46
+  ],
+  "sleeveR": [
+   0.78,
+   0.52,
+   0.2,
+   0.46
+  ]
+ },
+ "pieces": [
+  "body",
+  "boot_l",
+  "boot_r",
+  "cap_brim",
+  "cap_crown",
+  "eye_l",
+  "eye_r",
+  "feet",
+  "glove_l",
+  "glove_r",
+  "hair_afro",
+  "hair_crop",
+  "hair_puff",
+  "hair_twists",
+  "lower-teeth",
+  "shirt",
+  "shorts",
+  "sock_l",
+  "sock_r",
+  "tongue",
+  "trainer_l",
+  "trainer_r",
+  "upper-teeth"
+ ],
+ "expressions": [
+  "blink",
+  "smile",
+  "open",
+  "sad",
+  "frown",
+  "surprise"
+ ]
+}

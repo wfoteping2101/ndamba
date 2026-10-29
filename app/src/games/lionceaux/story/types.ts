@@ -131,7 +131,7 @@ export type ChallengeSpec =
   /** carry the ball past defenders one after the other with the dribble button; scripted end */
   | { type: 'dribble'; carrier: string; defenders: string[]; calls?: Line[]; intro?: Line[]; end: 'lose' | 'free'; loseTo?: string; dir: 1 | -1; loseLines?: Line[] }
   /** the ball comes to the player, time slows: pass first time to the right partner */
-  | { type: 'oneTouch'; player: string; to: string; setup: (c: Choreo) => Promise<void>; after: (c: Choreo) => Promise<void>; wrongLine?: Line; lines?: Line[] }
+  | { type: 'oneTouch'; player: string; to: string; setup: (c: Choreo) => Promise<void>; after: (c: Choreo) => Promise<void>; wrongLine?: Line; lines?: Line[]; /** a pass into the stride: seconds of the receiver's run to lead him by */ lead?: number }
   /** keep the ball up between partners for n touches, in rhythm (the ten-pass ritual) */
   | { type: 'juggle'; players: string[]; count: number; ball: string; lines?: Line[] }
   /** run into space at the right moment (decoy), dragging a marker; then the scripted finish */
@@ -140,5 +140,7 @@ export type ChallengeSpec =
   | { type: 'penalty'; role: 'shoot' | 'save'; taker: string; keeper: string; result: 'goal' | 'miss' | 'saved' | 'post'; missTo?: Pt; lines?: Line[] }
   /** a frozen picture: choose; the canon option plays, the others are explained */
   | { type: 'choose'; options: { key: string; canon: boolean; line?: Line }[]; setup: (c: Choreo) => Promise<void>; after: (c: Choreo) => Promise<void>; prompt?: string; lockedHint?: string }
+  /** a gesture in steps (the brothers' ritual): one button per step, each followed by its scripted moment */
+  | { type: 'ritual'; steps: { key: string; act: (c: Choreo) => Promise<void> }[] }
   /** a run of play the player drives (carrier mode) until the scripted finish */
   | { type: 'drive'; player: string; target: Pt; r: number; after: (c: Choreo) => Promise<void>; lines?: Line[] }
