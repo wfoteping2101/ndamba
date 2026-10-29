@@ -414,7 +414,7 @@ class DecoyRun implements Challenge {
     const r = this.w.get(this.spec.runner)!
     r.controlled = true; r.meta.scripted = false
     this.s.camera({ kind: 'follow', who: r.id, dist: 7, height: 4.5 }, true)
-    this.s.prompt('play.run')
+    this.s.prompt(this.spec.prompt ?? 'play.run')
     flash(this.s, this.spec.cue)
     return new Promise<void>((res) => { this.done = res })
   }
@@ -422,7 +422,7 @@ class DecoyRun implements Challenge {
     const r = this.w.get(this.spec.runner)!, m = this.w.get(this.spec.marker)!
     m.meta.scripted = true
     // the marker sticks to the runner, goal side
-    m.target = { x: r.pos.x + 0.9, y: r.pos.y + 0.4 }; m.speedMode = 0.9; m.faceTarget = r.pos
+    m.target = { x: r.pos.x + 0.9, y: r.pos.y + 0.4 }; m.speedMode = this.spec.markerSpeed ?? 0.9; m.faceTarget = r.pos
   }
   frame(_dt: number, input: Input) {
     if (this.finished) return

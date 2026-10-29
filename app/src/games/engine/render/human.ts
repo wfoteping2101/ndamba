@@ -330,7 +330,11 @@ function waxMap(base: string, p: Look['pattern'] | undefined, repeat: number): T
   c.width = c.height = S
   const g = c.getContext('2d')!
   g.fillStyle = base; g.fillRect(0, 0, S, S)
-  if (p) {
+  if (p && p.kind === 'rings') {
+    // a knitted bonnet: bands of colour round the head (the crown is the middle of the map)
+    const cols = [base, p.a, p.b]
+    for (let k = 9; k >= 0; k--) { g.fillStyle = cols[k % 3]; g.beginPath(); g.arc(S / 2, S / 2, (S * 0.75 * (k + 1)) / 10, 0, Math.PI * 2); g.fill() }
+  } else if (p) {
     let seed = 7
     const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647 }
     const motif = (cx: number, cy: number, r: number, rot: number, i: number) => {
@@ -443,25 +447,47 @@ function bibMap(color: string, num: number | undefined, meta: Meta): THREE.Textu
   return t
 }
 
-/** A padded coat: the colour, quilted in channels (a darker seam, a light ridge between). */
+/** A padded coat: the colour, quilted in channels (a darker stitched seam between puffed channels) and
+ *  the zip down the front (kit atlas: front centre at u 0.25 of the torso band). */
+const QUILT = 16
 function quiltMap(color: string): THREE.Texture {
   const key = `quilt|${color}`
   const hit = texCache.get(key)
   if (hit) return hit
+  const W = 128, H = 256
   const c = document.createElement('canvas')
-  c.width = 64; c.height = 256
+  c.width = W; c.height = H
   const g = c.getContext('2d')!
   const base = new THREE.Color(color)
-  for (let y = 0; y < 256; y++) {
-    const ph = (y % 13) / 13
-    const k = ph < 0.12 ? 0.74 : 0.92 + 0.1 * Math.sin(ph * Math.PI)
+  for (let y = 0; y < H; y++) {
+    const ph = (y % QUILT) / QUILT
+    const k = ph < 0.08 ? 0.78 : 0.96 + 0.05 * Math.sin(ph * Math.PI)
     g.fillStyle = base.clone().multiplyScalar(k).getStyle()
-    g.fillRect(0, y, 64, 1)
+    g.fillRect(0, y, W, 1)
   }
+  // the zip: a darker placket, the teeth, a pull at the collar
+  const zx = (0.01 + 0.25 * 0.72) * W, y0 = 0.01 * H, y1 = 0.735 * H
+  g.fillStyle = base.clone().multiplyScalar(0.86).getStyle(); g.fillRect(zx - 3, y0, 6, y1 - y0)
+  g.fillStyle = '#26282c'; g.fillRect(zx - 0.8, y0, 1.6, y1 - y0)
+  g.fillStyle = '#c9ccd1'; g.fillRect(zx - 1.4, y1 - 9, 2.8, 7)
   const t = new THREE.CanvasTexture(c)
   t.colorSpace = THREE.SRGBColorSpace
   t.flipY = false
+  t.anisotropy = 4
   texCache.set(key, t)
+  return t
+}
+
+/** The relief of the quilting: each channel puffed out, pinched at its stitched seam, the zip a groove. */
+function quiltNormal(): THREE.Texture {
+  const fresh = !texCache.has('quiltN')
+  const t = normalFromHeight('quiltN', 256, (x, y) => {
+    const ph = (y * (256 / QUILT)) % 1
+    let h = ph < 0.07 ? 0 : Math.pow(Math.sin(((ph - 0.07) / 0.93) * Math.PI), 0.5)
+    if (Math.abs(x - (0.01 + 0.25 * 0.72)) < 0.008 && y > 0.01 && y < 0.735) h -= 0.5
+    return h
+  }, 2.6)
+  if (fresh) { t.flipY = false; t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping }
   return t
 }
 
@@ -574,7 +600,7 @@ export class Human implements Figure {
       if (trousers && has('trousers')) show.add('trousers')
       else { show.add('shorts'); show.add('sock_l'); show.add('sock_r') }
     }
-    if (look.headwrap && has('hair_wrap')) { for (const h of HAIR_PIECES[look.hair]) show.delete(h); show.add('hair_wrap'); show.add('wrap_knot') }
+    if (look.headwrap && has('hair_wrap')) { for (const h of hairPieces) show.delete(h); show.add('hair_wrap'); if (!look.beanie) show.add('wrap_knot') }
     if (look.hat && has('hat_crown')) { for (const h of HAIR_PIECES[look.hair]) show.delete(h); show.add('hat_crown'); show.add('hat_brim'); if (look.hatFlowers) show.add('hat_flowers') }
     // skin that clothes cover is not drawn (no poking through when the knees bend)
     if (show.has('skirt') || show.has('trousers')) { show.delete('thighs'); show.delete('calves') }
@@ -634,7 +660,7 @@ export class Human implements Figure {
     const dressBase = look.dress ?? look.shirt
     const dressTop = trimMaterial(dressBase, dressBase, { map: waxMap(dressBase, look.pattern, 5), collar: 0, cuff: 0, hem: 0, rough: 0.72, sheen: 0.35 })
     const skirtM = trimMaterial(dressBase, dressBase, { map: waxMap(dressBase, look.pattern, 1), collar: 0, cuff: 0, hem: 0, rough: 0.72, sheen: 0.35 })
-    const wrap = new THREE.MeshPhysicalMaterial({ map: waxMap(look.headwrap ?? dressBase, look.headwrap ? look.pattern : undefined, 2), roughness: 0.75, sheen: 0.4, sheenColor: new THREE.Color('#ffffff') })
+    const wrap = new THREE.MeshPhysicalMaterial({ map: waxMap(look.headwrap ?? dressBase, look.headwrap ? look.pattern : undefined, look.pattern?.kind === 'rings' ? 1 : 2), roughness: 0.75, sheen: 0.4, sheenColor: new THREE.Color('#ffffff') })
     const hatM = new THREE.MeshPhysicalMaterial({ color: look.hat ?? '#f2e2b8', roughness: 0.85, sheen: 0.3 })
     const flowers = new THREE.MeshStandardMaterial({ color: look.hatFlowers ?? '#d6457a', roughness: 0.6 })
     const beardM = new THREE.MeshPhysicalMaterial({ color: look.beard ?? look.hairColor, roughness: 0.9, sheen: 0.6, sheenColor: new THREE.Color('#8a8070'), normalMap: curlNormal(), normalScale: new THREE.Vector2(0.8, 0.8) })
@@ -645,6 +671,7 @@ export class Human implements Figure {
     const coatM = trimMaterial(look.coat ?? look.shirt, look.coat ?? look.shirt, { map: quiltMap(look.coat ?? look.shirt), collar: 0, cuff: 0, hem: 0, rough: 0.46, sheen: 0.55 })
     // (its lining shows at the collar and the cuffs rather than a hole)
     coatM.side = THREE.DoubleSide
+    coatM.normalMap = quiltNormal(); coatM.normalScale.set(0.9, 0.9)
     const bibM = trimMaterial(look.bib ?? '#f26b1d', look.bib ?? '#f26b1d', { map: bibMap(look.bib ?? '#f26b1d', look.bibNumber, asset.meta), collar: 0, cuff: 0, hem: 0, rough: 0.7, sheen: 0.3 })
     bibM.side = THREE.DoubleSide
     const sock = (col: string) => trimMaterial(col, col, { collar: 0, cuff: 0, hem: 0, rough: 0.85, sheen: 0.6 })

@@ -56,7 +56,9 @@ class Turntable {
   set(ids: CastId[]) {
     for (const c of this.chars) { this.group.remove(c.root); c.dispose() }
     this.chars = ids.map((id, i) => {
-      const c = new Human(CAST[id].look, { castShadow: true })
+      // ?coat=c8302a: the same people in a winter coat (art checks of the coat)
+      const coat = new URLSearchParams(location.search).get('coat')
+      const c = new Human(coat ? { ...CAST[id].look, coat: '#' + coat.replace(/[^0-9a-f]/gi, '').slice(0, 6) } : CAST[id].look, { castShadow: true })
       c.root.position.set((i - (ids.length - 1) / 2) * 0.85, 0, 0)
       c.snapFacing(Math.PI / 2)
       this.group.add(c.root)

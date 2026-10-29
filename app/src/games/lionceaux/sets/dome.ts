@@ -45,7 +45,8 @@ export function parkingPitch(): PitchGeom {
   return { view: 'grid', w: PARKING_W, h: PARKING_H, goals: [], offsetX: 0, markings: false, surface: 'concrete', walls: false, cones: [], goalFor: { a: null, b: null }, fullLength: PARKING_W, roam: 6 }
 }
 export const PARKING_MARKS: Marks = {
-  car: { x: 22, y: 30 },
+  // the family's car (the blue one), its driver's side to the west
+  car: { x: 32.6, y: 33.2 },
   door: { x: 30, y: 13.2 },
   walk: { x: 26, y: 22 },
 }
@@ -141,7 +142,12 @@ export function buildDome(stage: Stage, frame: Frame, opts: DomeOpts = {}): SetH
   // the one-against-one square, its small goal; more cone grids along the side for the small games
   for (const [x, y] of [[9, 5], [17, 5], [9, 13], [17, 13]]) cone(b, frame.vec(x, y))
   goal(b, frame, 18.6, 9, 1, 2, 1, 0.8, true)
-  for (const ox of [24, 38]) for (const [dx, dy] of [[0, 0], [10, 0], [0, 7], [10, 7]]) cone(b, frame.vec(ox + dx, 24 + dy))
+  for (const ox of [24, 38]) {
+    for (const [dx, dy] of [[0, 0], [10, 0], [0, 7], [10, 7]]) cone(b, frame.vec(ox + dx, 24 + dy))
+    // the small games' goals, one at each end of the square
+    goal(b, frame, ox + 10.6, 27.5, 1, 2, 1, 0.8, true)
+    goal(b, frame, ox - 0.6, 27.5, -1, 2, 1, 0.8, true)
+  }
   // the membrane, its concrete footing ring, the revolving door's porch on the near side
   const memT = membraneTexture()
   const mem = new THREE.Mesh(new THREE.SphereGeometry(1, 64, 24, 0, Math.PI * 2, 0, Math.PI / 2), new THREE.MeshStandardMaterial({ map: memT, roughness: 0.92, side: THREE.BackSide, emissive: '#e9ecef', emissiveIntensity: 0.18 }))
@@ -181,7 +187,7 @@ export function buildDome(stage: Stage, frame: Frame, opts: DomeOpts = {}): SetH
   // the tryouts: « like a hundred kids » in bibs, in little groups round the cones, the parents behind
   if (opts.crowd) {
     const spots: Spot[] = []
-    const groupsAt: [number, number, number][] = [[29, 27.5, 14], [43, 27.5, 14], [46, 9, 12], [32, 6, 10], [54, 20, 12], [24, 18, 8]]
+    const groupsAt: [number, number, number][] = [[29, 35, 10], [44, 35, 10], [46, 9, 12], [32, 7, 10], [55, 17, 12], [25, 15.5, 7]]
     for (const [gx, gy, n] of groupsAt) for (let i = 0; i < n; i++) {
       const a = rnd() * Math.PI * 2, rr = 1 + rnd() * 3.2
       spots.push({ p: frame.vec(gx + Math.cos(a) * rr * 1.4, gy + Math.sin(a) * rr), rot: rnd() * Math.PI * 2, sit: false, kid: true, variant: rnd() < 0.5 ? 'kidStand' : 'kidWait' })
@@ -208,8 +214,9 @@ export function buildParking(stage: Stage, frame: Frame, opts: { snow?: boolean 
   const b = new SetBuilder(frame, q.shadows)
   const rnd = seeded(61)
   const snow = opts.snow !== false
+  // in winter the snow; in spring (« la neige est partie ») the grass of the verges
   const sn = snowTexture()
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(300, 300), new THREE.MeshStandardMaterial({ map: sn, roughness: 0.82 }))
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(300, 300), snow ? new THREE.MeshStandardMaterial({ map: sn, roughness: 0.82 }) : new THREE.MeshStandardMaterial({ color: '#5f7f3e', roughness: 0.95 }))
   sn.repeat.set(30, 30)
   ground.rotation.x = -Math.PI / 2; ground.position.copy(frame.vec(PARKING_W / 2, PARKING_H / 2, -0.01)); ground.receiveShadow = true
   b.object(ground); b.disposables.push(sn)
@@ -223,15 +230,15 @@ export function buildParking(stage: Stage, frame: Frame, opts: { snow?: boolean 
     const p = frame.vec(6 + i * 2.8, y)
     b.add(new THREE.PlaneGeometry(0.1, 4.6), '#f2f2ec', M.trs([p.x, 0.012, p.z], [-Math.PI / 2, 0, 0]), { cast: false })
   }
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < (snow ? 30 : 0); i++) {
     const side = i % 2 ? 17.3 : 38.8
     const p = frame.vec(3 + rnd() * 54, side + (rnd() - 0.5))
     b.add(new THREE.SphereGeometry(1, 10, 6), '#f4f7fa', M.trs([p.x, -0.1, p.z], [0, rnd() * 3, 0], [1.4 + rnd() * 1.6, 0.6 + rnd() * 0.4, 0.8 + rnd() * 0.5]))
   }
   // the parked cars, under their caps of snow
-  const colors = ['#5b6f86', '#8a2f2a', '#d9d9d4', '#2f3a3a', '#6b7a5a', '#a9a9ae', '#1f2a44']
+  // (the seventh is the family's, the blue of the driveway in Waldorf)
+  const colors = ['#8a2f2a', '#d9d9d4', '#2f3a3a', '#6b7a5a', '#a9a9ae', '#1f2a44', '#5b6f86']
   for (let i = 0; i < 11; i++) {
-    if (i === 6) continue
     const p = frame.vec(7.4 + i * 2.8 * 1.5, i % 3 === 0 ? 33.2 : 22.8)
     sedan(b, p, i % 3 === 0 ? -Math.PI / 2 : Math.PI / 2, colors[i % colors.length], snow)
   }

@@ -10,8 +10,9 @@ import { buildWaldorf, waldorfPitch, type WaldorfOpts } from './waldorf'
 import { buildClasse, buildGym, buildMaisonUS, classePitch, gymPitch, maisonUsPitch } from './waldorfInside'
 import { buildBus, busPitch } from './bus'
 import { buildDome, buildParking, domePitch, parkingPitch, type DomeOpts } from './dome'
+import { buildField, buildVideoRoom, fieldPitch, videoPitch } from './academie'
 
-export type PlaceId = 'bona' | 'maison' | 'mami' | 'colline' | 'avion' | 'car' | 'waldorf' | 'maisonUS' | 'classe' | 'gymnase' | 'bus' | 'dome' | 'parking'
+export type PlaceId = 'bona' | 'maison' | 'mami' | 'colline' | 'avion' | 'car' | 'waldorf' | 'maisonUS' | 'classe' | 'gymnase' | 'bus' | 'dome' | 'parking' | 'printemps' | 'salleVideo'
 
 export interface SetDef {
   pitch(opts: Record<string, unknown>): PitchGeom
@@ -35,4 +36,6 @@ export const SETS: Record<PlaceId, SetDef> = {
   bus: { pitch: () => busPitch(), build: (s, f) => buildBus(s, f), indoor: true, shadowSize: 14 },
   dome: { pitch: () => domePitch(), build: (s, f, o) => buildDome(s, f, o as DomeOpts), indoor: true, shadowSize: 80 },
   parking: { pitch: () => parkingPitch(), build: (s, f, o) => buildParking(s, f, o as { snow?: boolean }), shadowSize: 70 },
+  printemps: { pitch: () => fieldPitch(), build: (s, f, o) => buildField(s, f, o as { crowd?: boolean }), shadowSize: 80 },
+  salleVideo: { pitch: () => videoPitch(), build: (s, f) => buildVideoRoom(s, f), indoor: true, shadowSize: 14 },
 }

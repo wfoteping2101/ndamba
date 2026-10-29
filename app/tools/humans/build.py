@@ -34,7 +34,7 @@ ARCHETYPES: dict[str, dict] = {
     'girl': dict(macro=Macro(gender=0.0, age=10.5, muscle=0.5, weight=0.42, height=0.6), kid=True,
                  wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'coat', 'slides', 'lowsocks', 'bib'], hair=['crop', 'afro', 'twists', 'puff', 'cap', 'long', 'ponytail']),
     'man': dict(macro=Macro(gender=1.0, age=30, muscle=0.62, weight=0.48, height=0.55), kid=False,
-                wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'shoes', 'beard', 'glasses', 'cane', 'coat', 'lowsocks'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
+                wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'shoes', 'beard', 'glasses', 'cane', 'coat', 'lowsocks'], hair=['crop', 'afro', 'twists', 'puff', 'cap', 'wrap']),
     'oldman': dict(macro=Macro(gender=1.0, age=64, muscle=0.4, weight=0.45, height=0.45), kid=False,
                    wardrobe=['shirt', 'shorts', 'socks', 'trainers', 'longsleeves', 'trousers', 'shoes', 'beard', 'glasses', 'cane', 'coat', 'lowsocks'], hair=['crop', 'cap']),
     'woman': dict(macro=Macro(gender=0.0, age=34, muscle=0.45, weight=0.55, height=0.45), kid=False,
@@ -66,7 +66,7 @@ def kit(body: G.Body, name: str, kid: bool) -> list[Piece]:
         return [G.shorts(body, length=0.5 if kid else 0.42, loose=0.012)]
     if name == 'coat':
         # a winter coat, an anorak: over everything, long sleeves, down to the hips, padded
-        return [G.shirt(body, sleeve=0.95, long_sleeves=True, hem=-0.1, loose=0.024, name='coat')]
+        return [G.coat(body, name='coat')]
     if name == 'trousers':
         return [G.shorts(body, trousers=True, loose=0.011, name='trousers')]
     if name == 'socks':

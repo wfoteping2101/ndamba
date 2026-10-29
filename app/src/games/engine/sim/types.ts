@@ -46,7 +46,9 @@ export interface Look {
   trouserStripe?: string
   /** a long dress or skirt in this colour, with an optional printed pattern */
   dress?: string
-  pattern?: { a: string; b: string; kind: 'wax' | 'leaves' | 'circles' }
+  pattern?: { a: string; b: string; kind: 'wax' | 'leaves' | 'circles' | 'rings' }
+  /** the head wrap worn as a knitted bonnet (no knot): Papa's green, red and yellow bonnet */
+  beanie?: boolean
   /** a head wrap (with the pattern if any) */
   headwrap?: string
   /** a cap in this colour (when hair is 'cap') */

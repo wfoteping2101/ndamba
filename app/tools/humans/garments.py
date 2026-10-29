@@ -212,8 +212,12 @@ SLEEVE_R_RECT = (0.78, 0.52, 0.2, 0.46)
 SHORTS_RECT = (0.0, 0.0, 1.0, 1.0)
 
 
-def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.04, loose=0.011, name='shirt') -> Piece:
-    """A football shirt (short sleeves) or a long-sleeved top. hem: fraction of the hip->shoulder height."""
+def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.04, loose=0.011, name='shirt',
+          hem_flare=0.9, cuff_flare=0.6, shoulder_ease=0.0) -> Piece:
+    """A football shirt (short sleeves) or a long-sleeved top. hem: fraction of the hip->shoulder height.
+    hem_flare / cuff_flare: how far the hems stand off, in units of `loose` (negative: gathered, as on a
+    coat's elastic cuffs); shoulder_ease: how much less the shell stands off on the top of the shoulders
+    (a thick shell pushed straight out along the normals rose there like shoulder pads)."""
     hemZ = body.hipZ + (body.shoulderZ - body.hipZ) * hem
     z = body.V[:, 2]
     torso = body.mask(TORSO) & (z > hemZ)
@@ -273,9 +277,13 @@ def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.
 
     def offset(_src, _V):
         o = np.full(len(_V), loose)
-        o += np.clip(1 - d_bottom / 4, 0, 1) * loose * 0.9      # the hem hangs away from the belly
-        o += np.clip(1 - d_cuff / 3, 0, 1) * loose * 0.6        # sleeves flare
-        o -= np.clip(1 - d_neck / 2, 0, 1) * loose * 0.45       # the collar sits on the neck
+        o += np.clip(1 - d_bottom / 4, 0, 1) * loose * hem_flare     # the hem hangs away from the belly
+        o += np.clip(1 - d_cuff / 3, 0, 1) * loose * cuff_flare      # sleeves flare
+        o -= np.clip(1 - d_neck / 2, 0, 1) * loose * 0.45            # the collar sits on the neck
+        if shoulder_ease:
+            nz = body.N[_src, 2]
+            high = np.clip((body.V[_src, 2] - (body.shoulderZ - 0.1)) / 0.08, 0, 1)
+            o *= 1 - shoulder_ease * np.clip((nz - 0.25) / 0.5, 0, 1) * high
         return o
     def shirt_axis(i, pos):
         if is_arm[i]:
@@ -305,6 +313,97 @@ def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.
     # hem bands in the vertex colours: r collar, g cuffs, b bottom hem
     p.colors = np.stack([np.clip(1 - d_neck / 2.0, 0, 1), np.clip(1 - d_cuff / 1.6, 0, 1), np.clip(1 - d_bottom / 1.6, 0, 1), np.ones(len(P))], 1)
     return p
+
+
+def _loops(F) -> list[list[int]]:
+    """Every boundary loop of a mesh, each in order round the loop."""
+    cnt: dict[tuple[int, int], int] = {}
+    for f in F:
+        for i in range(len(f)):
+            a, b = f[i], f[(i + 1) % len(f)]
+            k = (min(a, b), max(a, b))
+            cnt[k] = cnt.get(k, 0) + 1
+    nxt: dict[int, list[int]] = {}
+    for (a, b), c in cnt.items():
+        if c == 1:
+            nxt.setdefault(a, []).append(b)
+            nxt.setdefault(b, []).append(a)
+    seen: set[int] = set()
+    out = []
+    for start in sorted(nxt):
+        if start in seen:
+            continue
+        loop, prev, cur = [start], None, start
+        seen.add(start)
+        while True:
+            nb = [v for v in nxt[cur] if v != prev and (v not in seen or v == start)]
+            if not nb or nb[0] == start:
+                break
+            prev, cur = cur, nb[0]
+            loop.append(cur)
+            seen.add(cur)
+        out.append(loop)
+    return out
+
+
+def coat(body: Body, name='coat') -> Piece:
+    """A padded winter coat: long sleeves gathered at the wrists, a hem gathered on the hips, eased over the
+    shoulders, and a stand-up collar closed round the neck (an open crew neck on a thick shell read as a
+    sack). The collar is new geometry raised from the neckline, so it takes its weights afresh."""
+    p = shirt(body, sleeve=0.95, long_sleeves=True, hem=-0.12, loose=0.03, name=name,
+              hem_flare=0.25, cuff_flare=-0.45, shoulder_ease=0.55)
+    sx0 = abs(float(body.B['upperarm_l'][0][0]))
+    k = sx0 / 0.17
+    nb = body.B['neck_01'][0]
+    loops = _loops(p.F)
+    neck = max(loops, key=lambda L: float(p.V[L, 2].mean()))
+    # the neck's own radius, round its axis at the collar's height
+    nv = body.V[body.mask({'neck_01'})]
+    r_neck = float(np.median(np.hypot(nv[:, 0] - nb[0], nv[:, 1] - nb[1])))
+    cy = float(nb[1]) + 0.004 * k
+    ztop = float(nb[2]) + 0.04 * k
+    n = len(neck)
+    P0 = p.V[neck]
+    ang = np.arctan2(P0[:, 1] - cy, P0[:, 0] - nb[0])
+    rad0 = np.hypot(P0[:, 0] - nb[0], P0[:, 1] - cy)
+    front = np.clip(-np.sin(ang), 0, 1)          # -y is the front
+    rc = r_neck + 0.02 * k + 0.004 * k * front  # the collar stands a finger off the neck
+    zt = ztop - 0.012 * k * front               # a little lower in front, where the zip opens
+
+    def ring(r, z):
+        return np.stack([nb[0] + np.cos(ang) * r, cy + np.sin(ang) * r, z], 1)
+    z0 = P0[:, 2]
+    rings = [
+        ring((rad0 * 0.55 + rc * 0.45), z0 + (zt - z0) * 0.22),
+        ring(rc + 0.003 * k, z0 + (zt - z0) * 0.6),
+        ring(rc, zt),
+        ring(rc - 0.006 * k, zt + 0.002 * k),       # the rolled top edge
+        ring(rc - 0.009 * k, zt - 0.025 * k),       # the inside, down towards the neck
+    ]
+    base = len(p.V)
+    p.V = np.vstack([p.V] + rings)
+    idx = [list(neck)] + [list(range(base + i * n, base + (i + 1) * n)) for i in range(len(rings))]
+    # orientation: follow the neighbouring faces of the neckline (the outside of the coat)
+    a, b = neck[0], neck[1]
+    flip = any(f[(f.index(a) + 1) % len(f)] == b for f in p.F if a in f and b in f)
+    newF = []
+    for r in range(len(idx) - 1):
+        for j in range(n):
+            q = [idx[r][j], idx[r][(j + 1) % n], idx[r + 1][(j + 1) % n], idx[r + 1][j]]
+            newF.append(q[::-1] if not flip else q)
+    p.F = p.F + newF
+    # uvs: the top of the torso band; vertex colours: the collar band
+    tu, tv = _torso_uv(body, p.V, body.hipZ + (body.shoulderZ - body.hipZ) * -0.12, body.neckZ + 0.02)
+    uv = _region_uv(tu, tv, TORSO_RECT)
+    for f in newF:
+        us = uv[f, 0].copy()
+        if us.max() - us.min() > 0.5:
+            us[us < 0.5] += 0.72
+        p.UV.append([(float(us[m]), float(uv[f[m], 1])) for m in range(len(f))])
+    extra = np.tile(np.array([[1.0, 0.0, 0.0, 1.0]]), (len(p.V) - base, 1))
+    p.colors = np.vstack([p.colors, extra])
+    p.src = np.concatenate([p.src, -np.ones(len(p.V) - base, int)])
+    return transfer_weights(body, p)
 
 
 def shorts(body: Body, length: float = 0.45, waist: float = 0.14, loose=0.009, trousers=False, name='shorts') -> Piece:

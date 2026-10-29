@@ -49,7 +49,9 @@
       "gymnase": "Le gymnase du centre",
       "bus": "Le bus scolaire",
       "parking": "Le dôme de Potomac Valley, dehors",
-      "dome": "Sous le dôme"
+      "dome": "Sous le dôme",
+      "printemps": "Le terrain de l'académie, au printemps",
+      "salleVideo": "La salle vidéo de Marcus"
     },
     "moods": {
       "morning": "Matin",
@@ -209,7 +211,24 @@
     "merciIntro": "À la fin du cours, Mrs. Patterson s'approche du pupitre de BriBri.",
     "basementIntro": "Au sous-sol, avec le ballon de Mami : les dix passes sans qu'il touche le sol.",
     "futsalIntro": "Tu es BriBri. Troisième ballon : décide avant qu'il arrive.",
-    "caramelIntro": "Tu es Kaydoudou. Le ballon lourd colle sous ton pied : la semelle caramel."
+    "caramelIntro": "Tu es Kaydoudou. Le ballon lourd colle sous ton pied : la semelle caramel.",
+    "nutmegIntro": "Tu es Kaydoudou. Un contre un, face à Monsieur Lessive.",
+    "nutmeg": "Ne bouge pas, le ballon sous la semelle. Quand son cercle devient doré, appuie sur Dribbler : fais rouler le ballon sur le côté.",
+    "nutmegWait": "Pas encore : laisse le camion arriver.",
+    "nutmegLate": "Trop tard : le camion a pris le ballon. On recommence.",
+    "nutmegPush": "Il se jette, les jambes écartées : pousse le ballon entre ses jambes (Passe) !",
+    "nutmegSlow": "Trop lent : il a refermé les jambes. On recommence.",
+    "hibouIntro": "BriBri n'y arrive pas. Ici, tout va trop vite.",
+    "controleIntro": "Tu es BriBri. Le ballon arrive, un adversaire dans ton dos.",
+    "firstTouch": "Montre l'herbe libre, loin du défenseur (stick, ou touche l'écran), puis Passe : ton premier contrôle doit aller quelque part.",
+    "firstTouchUnder": "Arrêté sous le pied : le défenseur est déjà là. Pousse-le vers l'herbe libre.",
+    "firstTouchWrong": "Pas par là : c'est là qu'est le défenseur.",
+    "runIntro2": "Tu es Kaydoudou. Les deux doigts : pars dans le dos de Tyler, le long de la ligne.",
+    "runBehind": "Cours dans la zone dorée, dans le dos de Tyler.",
+    "emailIntro": "U12, avec ton frère.",
+    "wallIntro": "Tu es BriBri. Devant toi, le mur vert. Derrière, Tyler est seul.",
+    "questionIntro": "BriBri reste seul dans la salle, le carnet sur les genoux.",
+    "bowIntro": "Il ne connaît pas le mot anglais."
   },
   "sketch": {
     "label": "Le cahier de BriBri : une ligne de trois ronds, un rond pour lui, une flèche polie et une flèche utile."
@@ -245,6 +264,11 @@
     "tonnerre": "La frappe du tonnerre",
     "bracelet": "Attacher le bracelet",
     "main": "Poser ta main sur la sienne",
-    "merci": "Remercier Mrs. Patterson"
+    "merci": "Remercier Mrs. Patterson",
+    "hibou": "Souffler comme le sifflet de Tonton Fokou",
+    "tyler": "À Tyler, derrière le mur",
+    "owen": "À Owen, sur le côté",
+    "ecrire": "Écrire la question",
+    "reverence": "Faire la révérence"
   }
 }

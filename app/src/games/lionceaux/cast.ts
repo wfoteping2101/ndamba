@@ -20,6 +20,7 @@ export type CastId =
   | 'tambour' | 'foule' | 'capPanthere' | 'hautParleur'
   | 'anon' | 'diego' | 'hayesMme' | 'hayesM' | 'biscuit' | 'patterson' | 'maitresse' | 'coreenne' | 'guatemala' | 'teeGris' | 'animateur'
   | 'tyler' | 'whitfield' | 'marcus' | 'copains' | 'file' | 'garcon'
+  | 'owen' | 'faucon' | 'hawk' | 'parents' | 'uneMaman' | 'mamanPompon'
 
 export interface CastMember { id: CastId; name: string; color: string; look: Look; height?: number }
 
@@ -122,6 +123,13 @@ export const CAST: Record<CastId, CastMember> = {
   copains: { id: 'copains', name: 'Les copains de Tyler', color: '#cfd8de', look: base({}) },
   file: { id: 'file', name: 'La file', color: '#e2c26a', look: base({}) },
   garcon: { id: 'garcon', name: 'Un garçon', color: '#cfd8de', look: base({}) },
+  // chapter 11, the first spring match
+  owen: { id: 'owen', name: 'Owen', color: '#c9783a', look: base({ skin: '#f0d2b8', hair: 'crop', hairColor: '#b5562a', shirt: '#1f2a44', shirtTrim: '#f2f2ee', numberColor: '#f2f2ee', shorts: '#1f2a44', sockL: '#1f2a44', sockR: '#1f2a44', height: 1.1, build: 0.94 }) },
+  faucon: { id: 'faucon', name: 'Le numéro 11', color: '#2f7a3a', look: base({ skin: '#c99b78', hair: 'crop', hairColor: '#17110c', shirt: '#2f7a3a', shirtTrim: '#f2f2ee', number: 11, numberColor: '#f2f2ee', shorts: '#f2f2ee', sockL: '#2f7a3a', sockR: '#2f7a3a', height: 0.93, build: 0.86 }) },
+  hawk: { id: 'hawk', name: '', color: '#2f7a3a', look: base({ shirt: '#2f7a3a', shirtTrim: '#f2f2ee', numberColor: '#f2f2ee', shorts: '#f2f2ee', sockL: '#2f7a3a', sockR: '#2f7a3a' }) },
+  parents: { id: 'parents', name: 'Les parents', color: '#cfd8de', look: base({}) },
+  uneMaman: { id: 'uneMaman', name: 'Une maman', color: '#cfd8de', look: base({ kid: false, woman: true }) },
+  mamanPompon: { id: 'mamanPompon', name: 'Une maman en bonnet à pompon', color: '#a8556a', look: base({ kid: false, woman: true, skin: '#e8c4a0', hair: 'long', hairColor: '#7a4a2a', shirt: '#a8556a', coat: '#a8556a', trousers: '#2f3a4a', shoes: 'shoes', boots: '#2a2420', headwrap: '#e9e2d4', pattern: { a: '#c9362b', b: '#e9e2d4', kind: 'rings' }, beanie: true }) },
 }
 
 /** A kid of the neighbourhood (crowds): varied shirts, same skin family. */

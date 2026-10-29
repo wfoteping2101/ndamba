@@ -27,6 +27,8 @@ const PLACES: { id: PlaceId; moods: Mood[]; opts?: Record<string, unknown>; at: 
   { id: 'bus', key: 'bus', moods: ['interior'], at: [6.6, 1.25] },
   { id: 'parking', key: 'parking', moods: ['winter', 'snow'], at: [26, 24] },
   { id: 'dome', key: 'dome', moods: ['dome'], at: [32, 22] },
+  { id: 'printemps', key: 'printemps', moods: ['morning', 'noon', 'overcast'], at: [24, 39] },
+  { id: 'salleVideo', key: 'salleVideo', moods: ['interior'], at: [4.5, 2.6] },
 ]
 
 class PlaceView {

@@ -49,7 +49,9 @@
       "gymnase": "The community centre gym",
       "bus": "The school bus",
       "parking": "The Potomac Valley dome, outside",
-      "dome": "Under the dome"
+      "dome": "Under the dome",
+      "printemps": "The academy pitch in spring",
+      "salleVideo": "Marcus's video room"
     },
     "moods": {
       "morning": "Morning",
@@ -209,7 +211,24 @@
     "merciIntro": "At the end of the lesson, Mrs. Patterson comes to BriBri's desk.",
     "basementIntro": "In the basement, with Mami's ball: ten passes without it touching the floor.",
     "futsalIntro": "You are BriBri. Third ball: decide before it arrives.",
-    "caramelIntro": "You are Kaydoudou. The heavy ball sticks under your foot: the caramel sole."
+    "caramelIntro": "You are Kaydoudou. The heavy ball sticks under your foot: the caramel sole.",
+    "nutmegIntro": "You are Kaydoudou. One against one, facing Mister Laundry.",
+    "nutmeg": "Don't move, ball under your sole. When his ring turns gold, press Dribble: roll the ball to the side.",
+    "nutmegWait": "Not yet: let the truck come.",
+    "nutmegLate": "Too late: the truck took the ball. Again.",
+    "nutmegPush": "He dives, legs wide: push the ball between his legs (Pass)!",
+    "nutmegSlow": "Too slow: he closed his legs. Again.",
+    "hibouIntro": "BriBri can't do it. Here, everything goes too fast.",
+    "controleIntro": "You are BriBri. The ball is coming, an opponent at your back.",
+    "firstTouch": "Show the free grass, away from the defender (stick, or tap the screen), then Pass: your first touch has to go somewhere.",
+    "firstTouchUnder": "Stopped under your foot: the defender is already there. Push it towards the free grass.",
+    "firstTouchWrong": "Not that way: that is where the defender is.",
+    "runIntro2": "You are Kaydoudou. Two fingers: run behind Tyler, along the line.",
+    "runBehind": "Run into the gold zone, behind Tyler.",
+    "emailIntro": "U12, with your brother.",
+    "wallIntro": "You are BriBri. In front of you, the green wall. Behind it, Tyler is alone.",
+    "questionIntro": "BriBri stays alone in the room, the notebook on his knees.",
+    "bowIntro": "He doesn't know the English word."
   },
   "sketch": {
     "label": "BriBri's notebook: a line of three circles, a circle for him, a polite arrow and a useful arrow."
@@ -245,6 +264,11 @@
     "tonnerre": "The thunder strike",
     "bracelet": "Tie on the bracelet",
     "main": "Put your hand on his",
-    "merci": "Thank Mrs. Patterson"
+    "merci": "Thank Mrs. Patterson",
+    "hibou": "Blow like Tonton Fokou's whistle",
+    "tyler": "To Tyler, behind the wall",
+    "owen": "To Owen, out wide",
+    "ecrire": "Write the question",
+    "reverence": "Make the bow"
   }
 }

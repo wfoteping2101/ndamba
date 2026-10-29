@@ -55,6 +55,7 @@
   "hair_crop",
   "hair_puff",
   "hair_twists",
+  "hair_wrap",
   "longsleeves",
   "lower-teeth",
   "shirt",
@@ -70,7 +71,8 @@
   "trainer_l",
   "trainer_r",
   "trousers",
-  "upper-teeth"
+  "upper-teeth",
+  "wrap_knot"
  ],
  "expressions": [
   "blink",

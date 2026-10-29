@@ -163,7 +163,7 @@ export type ChallengeSpec =
   | { type: 'firstTouch'; player: string; from: string; defender: string; space: Pt; prompt?: string; touchLines?: Line[]
       setup?: (c: Choreo) => Promise<void>; after?: (c: Choreo) => Promise<void> }
   /** run into space at the right moment (decoy), dragging a marker; then the scripted finish */
-  | { type: 'run'; runner: string; marker: string; zone: { at: Pt; r: number }; cue?: Line; after: (c: Choreo) => Promise<void>; lines?: Line[] }
+  | { type: 'run'; runner: string; marker: string; zone: { at: Pt; r: number }; cue?: Line; after: (c: Choreo) => Promise<void>; lines?: Line[]; prompt?: string; /** how hard the marker follows (0.9 = tight, low = he reacts too late) */ markerSpeed?: number }
   /** take a penalty (aim, power) or save one (dive); the result is the book's */
   | { type: 'penalty'; role: 'shoot' | 'save'; taker: string; keeper: string; result: 'goal' | 'miss' | 'saved' | 'post'; missTo?: Pt; lines?: Line[]
       /** the goal of a shoot-out (the one this team attacks), when it is not the taker's own */

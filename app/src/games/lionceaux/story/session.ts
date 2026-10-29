@@ -323,10 +323,17 @@ export class StorySession implements ChoreoHost {
       p.faceTarget = null
     } else { p.target = null }
     // keep inside the place
-    p.pos.x = Math.max(0.3, Math.min(w.pitch.w - 0.3, p.pos.x)); p.pos.y = Math.max(0.3, Math.min(w.pitch.h - 0.3, p.pos.y))
+    // (the place reaches past the pitch lines to the people to be heard and to the goal: Tonton Fokou
+    // sits on his yellow can under the tree, outside the lines)
+    let x0 = 0.3, y0 = 0.3, x1 = w.pitch.w - 0.3, y1 = w.pitch.h - 0.3
+    for (const q of [...ex.beat.talks.map((t) => w.get(t.id)?.pos), this.choreo.pt(ex.beat.goal.at)]) {
+      if (!q) continue
+      x0 = Math.min(x0, q.x - 2); y0 = Math.min(y0, q.y - 2); x1 = Math.max(x1, q.x + 2); y1 = Math.max(y1, q.y + 2)
+    }
+    p.pos.x = Math.max(x0, Math.min(x1, p.pos.x)); p.pos.y = Math.max(y0, Math.min(y1, p.pos.y))
     // someone to talk to
     let near: { id: string; name: string } | null = null
-    let bd = 2.0
+    let bd = 2.6
     for (const t of ex.beat.talks) {
       const q = w.get(t.id)
       if (!q) continue
@@ -351,7 +358,7 @@ export class StorySession implements ChoreoHost {
     // QA: walk to whoever is still to be heard, then to the goal
     if (this.autoplay && !busy) {
       const next = need.find((id) => !ex.talked.has(id)) ?? ex.beat.talks.find((t) => !ex.talked.has(t.id))?.id
-      if (next && !open) { const q = w.get(next); if (q && Math.hypot(q.pos.x - p.pos.x, q.pos.y - p.pos.y) < 2.1) { this.choreo.stop(p.id); void this.talk(next) } else if (q && !this.choreo.isWalking(p.id)) this.choreo.go(p.id, next, 0.8) }
+      if (next && !open) { const q = w.get(next); if (q && Math.hypot(q.pos.x - p.pos.x, q.pos.y - p.pos.y) < 2.5) { this.choreo.stop(p.id); void this.talk(next) } else if (q && !this.choreo.isWalking(p.id)) this.choreo.go(p.id, next, 0.8) }
       else if (open && !this.choreo.isWalking(p.id)) this.choreo.go(p.id, [goal.x, goal.y], 0.8)
     }
     // camera: third person, behind the player; it swings round slowly as he turns, the right stick

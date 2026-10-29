@@ -89,7 +89,7 @@ function markTexture(kind: 'fin' | 'spots', color: string) {
 
 /** Printed fabric (wax prints): circles and arcs, big leaves, or rings, in two colours on a base. */
 const patternCache = new Map<string, THREE.CanvasTexture>()
-function patternTexture(base: string, p?: { a: string; b: string; kind: 'wax' | 'leaves' | 'circles' }) {
+function patternTexture(base: string, p?: { a: string; b: string; kind: 'wax' | 'leaves' | 'circles' | 'rings' }) {
   const key = `${base}|${p?.a}|${p?.b}|${p?.kind}`
   const hit = patternCache.get(key)
   if (hit) return hit
