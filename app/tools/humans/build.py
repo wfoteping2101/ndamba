@@ -103,15 +103,12 @@ def eye_pieces(vb, W) -> list[Piece]:
         p = mh.piece_from_base(f'eye_{s}', vb, mh.base()['groups'][f'helper-{s}-eye'], W, 'eye')
         c = p.V.mean(0)
         r = np.linalg.norm(p.V - c, axis=1).mean()
-        V, F = mh.subdivide(p.V, p.F, 2)
+        V, F = mh.subdivide(p.V, p.F, 1)
         V = c + (V - c) / np.linalg.norm(V - c, axis=1)[:, None] * r
-        fwd = np.array([0.0, -1.0, 0.0])
-        cosang = ((V - c) / r) @ fwd
-        ang = np.arccos(np.clip(cosang, -1, 1))
-        iris = np.clip((0.58 - ang) / 0.05, 0, 1)
-        pupil = np.clip((0.26 - ang) / 0.04, 0, 1)
-        limbal = np.clip(1 - abs(ang - 0.58) / 0.07, 0, 1)
-        col = np.stack([iris, pupil, limbal, np.ones(len(V))], 1)
+        # the colour carries the direction from the eye's centre (0..1 per axis); the game draws the
+        # iris, the pupil and the limbal ring per pixel from it, so the eye stays round with few triangles
+        d = (V - c) / r
+        col = np.concatenate([d * 0.5 + 0.5, np.ones((len(V), 1))], 1)
         out.append(Piece(f'eye_{s}', V, F, [[(0.5, 0.5)] * len(f) for f in F], H.head_only(len(V)), 'eye', colors=col))
     return out
 
@@ -237,7 +234,15 @@ def build(name: str, preview=False, export=True):
     for v in mh.boundary_verts(body_piece.F):
         head[v] = True
     blend.decimate(objs['body'], 0.5, protect=head)
-    # garments are not decimated: collapsing edges would tear their hems
+    # garments are not decimated where they would tear (hems, cuffs); the closed, dense pieces (socks,
+    # scalp hair, bare feet, gloves, crowns) lose half their triangles with their borders kept in place
+    for n in ('sock_l', 'sock_r', 'hair_crop', 'hair_afro', 'hair_wrap', 'feet', 'glove_l', 'glove_r', 'cap_crown', 'hat_crown'):
+        if n in objs:
+            pc = next(p for p in pieces if p.name == n)
+            keep = np.zeros(len(pc.V), bool)
+            for v in mh.boundary_verts(pc.F):
+                keep[v] = True
+            blend.decimate(objs[n], 0.5, protect=keep)
     # expressions on the decimated body: the face kept its vertices, find them by position
     bo = objs['body']
     Vd = blend.coords(bo)

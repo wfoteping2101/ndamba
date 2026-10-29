@@ -80,14 +80,22 @@ def shape_cap(V: np.ndarray, F, kind: str, center: np.ndarray, seed=1, thickness
         return V + N * (th * taper + n)[:, None]
     if kind == 'afro':
         th = thickness or 0.032
-        taper = np.clip(d / 5, 0, 1) ** 0.65
+        # the volume rises gently from the hairline (no helmet rim): a smooth ramp over about 3 cm
+        t_ = np.clip(d / 7, 0, 1)
+        taper = t_ * t_ * (3 - 2 * t_)
         R = V - center
         r = np.linalg.norm(R, axis=1)
         dirs = R / r[:, None]
-        # fuller on the crown than at the nape and the temples
-        up = np.clip(dirs[:, 2] * 0.8 + 0.45, 0.35, 1.0)
+        # fuller on the crown than at the nape and the temples; at the front the hair rises from the
+        # hairline instead of growing forwards over the forehead
+        fwd = np.clip(-dirs[:, 1], 0, 1)
+        up = np.clip(dirs[:, 2] * 0.8 + 0.45 - 0.45 * fwd * (1 - np.clip(dirs[:, 2], 0, 1)), 0.22, 1.0)
         rr = r + th * taper * up
-        rr += _noise3(V, 60, seed) * 0.003 * taper + _noise3(V, 190, seed + 3) * 0.001
+        # rounder: the corners of the dome are pulled towards a sphere round the crown
+        full = taper > 0.9
+        Rs = float(np.percentile(rr[full], 65)) if full.any() else float(rr.max())
+        rr = rr + (Rs - rr) * 0.35 * taper * np.clip(dirs[:, 2] + 0.3, 0, 1)
+        rr += _noise3(V, 55, seed) * 0.0045 * taper + _noise3(V, 140, seed + 3) * 0.0018 * taper + _noise3(V, 320, seed + 5) * 0.0007
         out = center + dirs * rr[:, None]
         out = np.where(((out - V) * N).sum(1)[:, None] < 0.003, V + N * 0.003, out)
         return mh.smooth(out, F, 6, 0.4, pin=np.array(sorted(bnd), int), taubin=True)

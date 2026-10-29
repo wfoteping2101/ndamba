@@ -22,7 +22,8 @@ import motions as MO  # noqa: E402
 OUT = BLD.OUT
 REGION = {'skin': 0.1, 'shirt': 0.3, 'bottom': 0.5, 'hair': 0.7, 'shoes': 0.85, 'eye': 0.97}
 
-# name: (archetype, clip, seconds into the clip, pieces)
+MAN = ['body', 'forearms', 'eye_l', 'eye_r', 'hair_crop', 'shirt', 'trousers', 'shoe_l', 'shoe_r']
+# name: (archetype, clip, seconds into the clip, pieces[, triangles])
 VARIANTS = {
     'kidStand': ('boy', 'idleRelaxed', 1.0, ['body', 'calves', 'thighs', 'forearms', 'feet', 'eye_l', 'eye_r', 'hair_crop', 'shirt', 'shorts']),
     'kidWait': ('boy', 'idle', 2.2, ['body', 'calves', 'thighs', 'forearms', 'feet', 'eye_l', 'eye_r', 'hair_afro', 'shirt', 'shorts']),
@@ -30,6 +31,11 @@ VARIANTS = {
     'kidCheer': ('girl', 'jumpJoy', 1.2, ['body', 'calves', 'thighs', 'forearms', 'feet', 'eye_l', 'eye_r', 'hair_crop', 'hair_puff', 'shirt', 'shorts']),
     'manStand': ('man', 'idleRelaxed', 2.0, ['body', 'forearms', 'eye_l', 'eye_r', 'hair_crop', 'shirt', 'trousers', 'shoe_l', 'shoe_r']),
     'womanStand': ('woman', 'idleRelaxed', 0.5, ['body', 'forearms', 'feet', 'eye_l', 'eye_r', 'hair_wrap', 'wrap_knot', 'dress_top', 'skirt']),
+    # the stadium: far away and by the thousand, so a lighter cut of each figure
+    'fanSit': ('man', 'sitIdle', 1.5, MAN, 560),
+    'fanStand': ('man', 'idleRelaxed', 2.0, MAN, 560),
+    'fanCheer': ('man', 'jumpJoy', 1.2, MAN, 560),
+    'fanWomanSit': ('woman', 'sitIdle', 1.5, ['body', 'forearms', 'feet', 'eye_l', 'eye_r', 'hair_wrap', 'wrap_knot', 'dress_top', 'skirt'], 560),
 }
 
 
@@ -49,8 +55,9 @@ def region_of(name: str) -> float:
     return REGION['skin']
 
 
-def bake(name: str, target_tris=2600):
-    arch, clip, t, keep = VARIANTS[name]
+def bake(name: str):
+    arch, clip, t, keep = VARIANTS[name][:4]
+    target_tris = VARIANTS[name][4] if len(VARIANTS[name]) > 4 else 2600
     arm, objs = BLD.build(arch, export=False)
     tgt = MO.Target(arm)
     basis, loc, info, world, pel = MO.make_clip(clip, MO.CLIPS[clip], tgt, None, None)

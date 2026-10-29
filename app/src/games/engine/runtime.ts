@@ -49,6 +49,9 @@ export class SimView {
 
   constructor(public container: HTMLElement, public world: World, public opts: ViewOpts = {}) {
     const quality = opts.quality ?? detectQuality()
+    // in development, ?surround=stadium previews a pitch in another setting
+    const qs = import.meta.env.DEV && typeof location !== 'undefined' ? new URLSearchParams(location.search).get('surround') as Surround | null : null
+    if (qs) opts = { ...opts, surround: qs }
     const fog = opts.fog !== undefined ? opts.fog : (opts.surround ?? 'training') === 'training' ? [150, 460] as [number, number] : null
     this.stage = new Stage(container, { quality, background: opts.background, fog })
     this.frame = new Frame(world.pitch.w, world.pitch.h)

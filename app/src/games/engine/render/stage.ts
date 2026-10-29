@@ -33,6 +33,46 @@ const GradeShader = {
   }`,
 }
 
+/* Two shadow cascades for one sun. The sun (directional light 0) lights the scene and its shadow map
+ * covers the whole set; a second directional light with no intensity (light 1) only renders a sharp
+ * shadow map of what is near the camera. Where that near map covers a pixel, the sun's light uses it,
+ * fading to the wide map at its border. Scenes with a single shadowed light are unchanged. */
+let cascadesPatched = false
+function patchCascades() {
+  if (cascadesPatched) return
+  cascadesPatched = true
+  const SC = THREE.ShaderChunk as unknown as Record<string, string>
+  const line = 'directLight.color *= ( directLight.visible && receiveShadow ) ? getShadow( directionalShadowMap[ i ], directionalLightShadow.shadowMapSize, directionalLightShadow.shadowIntensity, directionalLightShadow.shadowBias, directionalLightShadow.shadowRadius, vDirectionalShadowCoord[ i ] ) : 1.0;'
+  if (!SC.lights_fragment_begin.includes(line)) { console.warn('shadow cascades: three.js chunk changed, using one map'); return }
+  SC.lights_fragment_begin = SC.lights_fragment_begin.replace(line, `#if NUM_DIR_LIGHT_SHADOWS > 1
+		#if UNROLLED_LOOP_INDEX == 0
+		directLight.color *= ( directLight.visible && receiveShadow ) ? sunCascadeShadow() : 1.0;
+		#endif
+		#else
+		${line}
+		#endif`)
+  SC.shadowmap_pars_fragment += `
+#if defined( USE_SHADOWMAP ) && NUM_DIR_LIGHT_SHADOWS > 1 && defined( SHADOWMAP_TYPE_PCF )
+	float sunCascadeShadow() {
+		DirectionalLightShadow wide = directionalLightShadows[ 0 ];
+		DirectionalLightShadow near = directionalLightShadows[ 1 ];
+		float sw = getShadow( directionalShadowMap[ 0 ], wide.shadowMapSize, wide.shadowIntensity, wide.shadowBias, wide.shadowRadius, vDirectionalShadowCoord[ 0 ] );
+		vec4 c = vDirectionalShadowCoord[ 1 ];
+		vec3 q = c.xyz / c.w;
+		float edge = min( min( q.x, 1.0 - q.x ), min( q.y, 1.0 - q.y ) );
+		if ( edge <= 0.0 || q.z > 1.0 ) return sw;
+		float sn = getShadow( directionalShadowMap[ 1 ], near.shadowMapSize, near.shadowIntensity, near.shadowBias, near.shadowRadius, c );
+		return mix( sw, sn, smoothstep( 0.0, 0.07, edge ) );
+	}
+#elif defined( USE_SHADOWMAP ) && NUM_DIR_LIGHT_SHADOWS > 1
+	float sunCascadeShadow() {
+		DirectionalLightShadow wide = directionalLightShadows[ 0 ];
+		return getShadow( directionalShadowMap[ 0 ], wide.shadowMapSize, wide.shadowIntensity, wide.shadowBias, wide.shadowRadius, vDirectionalShadowCoord[ 0 ] );
+	}
+#endif
+`
+}
+
 /** A first guess from the device; the frame-rate monitor can step it down later. */
 export function detectQuality(): Quality {
   try {
@@ -54,6 +94,11 @@ export class Stage {
   scene = new THREE.Scene()
   camera: THREE.PerspectiveCamera
   sun: THREE.DirectionalLight
+  /** the near cascade: no light of its own, a sharp shadow map round what the camera looks at */
+  sunNear: THREE.DirectionalLight
+  /** what the camera looks at (the camera rig keeps it up to date) */
+  focus = new THREE.Vector3()
+  hasFocus = false
   hemi: THREE.HemisphereLight
   quality: QualitySettings
   qualityName: Quality
@@ -89,11 +134,22 @@ export class Stage {
     this.sun = new THREE.DirectionalLight(0xfff1d6, 2.6)
     this.sun.position.set(-30, 55, 25)
     this.sun.castShadow = this.quality.shadows
-    this.sun.shadow.mapSize.set(this.quality.shadowMap, this.quality.shadowMap)
+    // with two cascades the wide map can be smaller: it only carries the far shadows
+    const wide = this.quality.shadows ? Math.max(1024, this.quality.shadowMap / 2) : this.quality.shadowMap
+    this.sun.shadow.mapSize.set(wide, wide)
     this.sun.shadow.bias = -0.0004
     this.sun.shadow.normalBias = 0.03
+    this.sun.shadow.radius = 2
     this.scene.add(this.sun)
     this.scene.add(this.sun.target)
+    patchCascades()
+    this.sunNear = new THREE.DirectionalLight(0xffffff, 0)
+    this.sunNear.castShadow = this.quality.shadows
+    this.sunNear.shadow.mapSize.set(this.quality.shadowMap, this.quality.shadowMap)
+    this.sunNear.shadow.bias = -0.0003
+    this.sunNear.shadow.radius = 2.4
+    this.scene.add(this.sunNear)
+    this.scene.add(this.sunNear.target)
 
     this.ro = new ResizeObserver(() => this.resize())
     this.ro.observe(container)
@@ -168,7 +224,7 @@ export class Stage {
       c.addPass(this.gtao)
     }
     if (q.bloom) {
-      this.bloom = new UnrealBloomPass(new THREE.Vector2(size.x / 2, size.y / 2), 0.16, 0.45, 0.9)
+      this.bloom = new UnrealBloomPass(new THREE.Vector2(size.x / 2, size.y / 2), 0.18, 0.4, 1.45)
       c.addPass(this.bloom)
     }
     this.grade = new ShaderPass(GradeShader)
@@ -178,7 +234,46 @@ export class Stage {
     this.composer = c
   }
 
+  /** The near cascade follows the view: its map covers what the camera sees up to a reach that grows
+   *  with the distance to what it looks at (very sharp on close shots), snapped to the map's texel grid
+   *  so edges do not crawl when the camera moves. Off: only the sun's wide map. */
+  followShadow = true
+  private sh = { dir: new THREE.Vector3(), fwd: new THREE.Vector3(), c: new THREE.Vector3(), x: new THREE.Vector3(), y: new THREE.Vector3() }
+  private fitShadowToView() {
+    const cam = this.camera, sun = this.sun, near = this.sunNear, t = this.sh
+    t.dir.subVectors(sun.position, sun.target.position)
+    if (t.dir.lengthSq() < 1e-6) return
+    t.dir.normalize()
+    cam.getWorldDirection(t.fwd)
+    let focus = this.hasFocus ? cam.position.distanceTo(this.focus) : 0
+    if (!focus) focus = t.fwd.y < -0.03 ? Math.min(60, cam.position.y / -t.fwd.y) : 14
+    const far = THREE.MathUtils.clamp(focus * 2 + 5, 8, 45), n0 = cam.near
+    // the smallest sphere round the slice of the view between the near plane and that reach
+    const ty = Math.tan(THREE.MathUtils.degToRad(cam.fov) / 2), tx = ty * cam.aspect, k2 = tx * tx + ty * ty
+    const cd = Math.min(far, ((far + n0) * (1 + k2)) / 2)
+    let R = Math.sqrt((far - cd) ** 2 + far * far * k2)
+    R = Math.ceil(R / 0.5) * 0.5
+    t.c.copy(cam.position).addScaledVector(t.fwd, cd)
+    t.c.y = Math.max(0, t.c.y * 0.5)
+    // snap the centre to the texel grid in the light's own axes
+    const texel = (2 * R) / near.shadow.mapSize.x
+    t.x.set(0, 1, 0).cross(t.dir).normalize()
+    t.y.crossVectors(t.dir, t.x)
+    const cx = t.c.dot(t.x), cy = t.c.dot(t.y)
+    t.c.addScaledVector(t.x, Math.round(cx / texel) * texel - cx).addScaledVector(t.y, Math.round(cy / texel) * texel - cy)
+    near.target.position.copy(t.c)
+    near.position.copy(t.c).addScaledVector(t.dir, 160)
+    near.target.updateMatrixWorld()
+    const s = near.shadow.camera
+    if (s.right !== R) { s.left = -R; s.right = R; s.top = R; s.bottom = -R }
+    s.near = 1; s.far = 340
+    s.updateProjectionMatrix()
+    near.shadow.normalBias = Math.max(0.005, texel * 2.2)
+  }
+
   render() {
+    this.sunNear.castShadow = this.followShadow && this.sun.castShadow
+    if (this.sunNear.castShadow) this.fitShadowToView()
     if (this.quality.post && this.postEnabled) {
       if (!this.composer) this.buildPost()
       this.composer!.render()

@@ -22,5 +22,21 @@
  "womanStand": {
   "seat": 0.78,
   "kid": false
+ },
+ "fanSit": {
+  "seat": 0.452,
+  "kid": false
+ },
+ "fanStand": {
+  "seat": 0.941,
+  "kid": false
+ },
+ "fanCheer": {
+  "seat": 0.732,
+  "kid": false
+ },
+ "fanWomanSit": {
+  "seat": 0.371,
+  "kid": false
  }
 }

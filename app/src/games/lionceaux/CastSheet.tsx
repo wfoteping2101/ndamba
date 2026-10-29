@@ -31,6 +31,7 @@ class Turntable {
     this.stage.scene.add(floor, this.group)
     this.stage.sun.position.set(-4, 9, 7)
     this.stage.fitShadow(8, 8)
+    this.stage.followShadow = false
     const pm = new THREE.PMREMGenerator(this.stage.renderer)
     this.stage.scene.environment = pm.fromScene(new RoomEnvironment(), 0.04).texture
     this.stage.scene.environmentIntensity = 0.55
@@ -66,6 +67,19 @@ class Turntable {
     const cam = this.stage.camera
     const zoom = new URLSearchParams(location.search).get('zoom')
     if (zoom === 'head') { cam.position.set(0, h * 0.86, 1.25); cam.lookAt(0, h * 0.82, 0) }
+    else if (zoom === 'face') {
+      // a close-up of one face (?f=index): eyes, skin, hairline
+      const c = this.chars[Math.min(this.chars.length - 1, Number(new URLSearchParams(location.search).get('f') ?? 0))]
+      const x = c.root.position.x, hh = c.height
+      cam.position.set(x + 0.08, hh * 0.92, 0.52); cam.lookAt(x, hh * 0.915, 0)
+    }
+    else if (zoom === 'cam') {
+      // ?zoom=cam&cam=x,y,z&look=x,y,z: any viewpoint, for art checks
+      const q = new URLSearchParams(location.search)
+      const [px, py, pz] = (q.get('cam') ?? '0,1.2,1').split(',').map(Number)
+      const [lx, ly, lz] = (q.get('look') ?? '0,1.1,0').split(',').map(Number)
+      cam.position.set(px, py, pz); cam.lookAt(lx, ly, lz)
+    }
     else if (zoom === 'legs') { cam.position.set(0.3, h * 0.42, 1.3); cam.lookAt(0, h * 0.4, 0) }
     else { cam.position.set(0, h * 0.62, 2.2 + ids.length * 0.75); cam.lookAt(0, h * 0.55, 0) }
   }

@@ -11,6 +11,28 @@ export interface PadAction { label: string; onDown: () => void; onUp?: () => voi
 
 const R = 50 // stick travel (px)
 
+/** The window's size, kept up to date (layout of the pad and of what sits around it). */
+export function useViewport() {
+  const get = () => ({ w: typeof window === 'undefined' ? 1280 : window.innerWidth, h: typeof window === 'undefined' ? 800 : window.innerHeight })
+  const [vp, setVp] = useState(get)
+  useEffect(() => {
+    const on = () => setVp(get())
+    window.addEventListener('resize', on)
+    window.addEventListener('orientationchange', on)
+    return () => { window.removeEventListener('resize', on); window.removeEventListener('orientationchange', on) }
+  }, [])
+  return vp
+}
+
+/** Where the subtitles go while the pad is on screen: between the stick and the buttons on wide or
+ *  short (landscape phone) screens, above the pad on tall narrow ones. */
+export function subtitleRoom(vp: { w: number; h: number }) {
+  const short = vp.h < 520
+  if (short) return { bottom: 8, left: 176, right: 196 }
+  if (vp.w >= 1024) return { bottom: 16, left: 250, right: 262 }
+  return { bottom: 262, left: 8, right: 8 }
+}
+
 function Glyph({ b, size = 22 }: { b: PadButton; size?: number }) {
   const s = size, c = 'currentColor', w = 2.4
   if (b === 'cross') return <svg width={s} height={s} viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke={c} strokeWidth={w} strokeLinecap="round" fill="none" /></svg>
@@ -48,12 +70,13 @@ function FaceButton({ b, a, size, labelSide }: { b: PadButton; a?: PadAction; si
 }
 
 /** The left stick: appears under the thumb anywhere in its zone, springs back when released. */
-function LeftStick({ onMove, label }: { onMove: (x: number, y: number) => void; label: string }) {
+function LeftStick({ onMove, label, small }: { onMove: (x: number, y: number) => void; label: string; small?: boolean }) {
   const zone = useRef<HTMLDivElement>(null)
   const id = useRef<number | null>(null)
   const [base, setBase] = useState<{ x: number; y: number } | null>(null)
   const [knob, setKnob] = useState({ x: 0, y: 0 })
-  const home = () => { const r = zone.current!.getBoundingClientRect(); return { x: 92, y: r.height - 92 } }
+  const H0 = small ? 78 : 92
+  const home = () => { const r = zone.current!.getBoundingClientRect(); return { x: H0, y: r.height - H0 } }
   const update = (cx_: number, cy: number, b: { x: number; y: number }) => {
     const r = zone.current!.getBoundingClientRect()
     let dx = cx_ - r.left - b.x, dy = cy - r.top - b.y
@@ -65,7 +88,7 @@ function LeftStick({ onMove, label }: { onMove: (x: number, y: number) => void; 
     onMove(mm < 0.12 ? 0 : nx, mm < 0.12 ? 0 : ny)
   }
   const end = () => { id.current = null; setBase(null); setKnob({ x: 0, y: 0 }); onMove(0, 0) }
-  const b = base ?? (zone.current ? home() : { x: 92, y: 140 })
+  const b = base ?? (zone.current ? home() : { x: H0, y: 140 })
   return (
     <div ref={zone} role="application" aria-label={label} className="absolute bottom-0 left-0 z-20 h-[46%] w-[46%] max-w-[420px] touch-none select-none"
       onPointerDown={(e) => {
@@ -102,6 +125,10 @@ export interface ManetteProps {
 
 export function Manette({ stick, onMove, buttons, stickLabel, compact }: ManetteProps) {
   const has = Object.values(buttons).some((b) => b && b.enabled !== false)
+  const vp = useViewport()
+  // a landscape phone has little height: a smaller diamond, the same reach for the thumb
+  const small = vp.h < 520
+  const D = small ? 156 : 196, B = small ? 50 : 62, X = small ? 56 : 70
   if (compact) {
     const items = (['cross', 'circle', 'square', 'triangle', 'r2', 'l1'] as PadButton[]).filter((k) => buttons[k] && buttons[k]!.enabled !== false)
     if (!items.length) return null
@@ -117,18 +144,18 @@ export function Manette({ stick, onMove, buttons, stickLabel, compact }: Manette
   }
   return (
     <>
-      {stick && onMove && <LeftStick onMove={onMove} label={stickLabel} />}
+      {stick && onMove && <LeftStick onMove={onMove} label={stickLabel} small={small} />}
       {has && (
         <div className="absolute bottom-0 right-0 z-20 select-none p-3 sm:p-5" style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 14px)' }}>
           <div className="mb-2 flex justify-end gap-2">
             {buttons.l1 && buttons.l1.enabled !== false && <Shoulder b="l1" a={buttons.l1} />}
             {buttons.r2 && buttons.r2.enabled !== false && <Shoulder b="r2" a={buttons.r2} />}
           </div>
-          <div className="relative" style={{ width: 196, height: 196 }}>
-            <div className="absolute left-1/2 top-0 -translate-x-1/2"><FaceButton b="triangle" a={buttons.triangle} size={62} labelSide="left" /></div>
-            <div className="absolute left-0 top-1/2 -translate-y-1/2"><FaceButton b="square" a={buttons.square} size={62} labelSide="top" /></div>
-            <div className="absolute right-0 top-1/2 -translate-y-1/2"><FaceButton b="circle" a={buttons.circle} size={62} labelSide="top" /></div>
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2"><FaceButton b="cross" a={buttons.cross} size={70} labelSide="left" /></div>
+          <div className="relative" style={{ width: D, height: D }}>
+            <div className="absolute left-1/2 top-0 -translate-x-1/2"><FaceButton b="triangle" a={buttons.triangle} size={B} labelSide="left" /></div>
+            <div className="absolute left-0 top-1/2 -translate-y-1/2"><FaceButton b="square" a={buttons.square} size={B} labelSide="top" /></div>
+            <div className="absolute right-0 top-1/2 -translate-y-1/2"><FaceButton b="circle" a={buttons.circle} size={B} labelSide="top" /></div>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2"><FaceButton b="cross" a={buttons.cross} size={X} labelSide="left" /></div>
           </div>
         </div>
       )}

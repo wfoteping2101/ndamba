@@ -87,7 +87,7 @@ def transfer_weights(body: Body, p: Piece, k=6, smooth_iters=3, visible_only=Tru
     return p
 
 
-def _shell(body: Body, p: Piece, offset, smooth_iters=6, hide_rings=2, taubin=False, axis=None, rules=None) -> Piece:
+def _shell(body: Body, p: Piece, offset, smooth_iters=6, hide_rings=2, taubin=False, axis=None, rules=None, min_gap=0.0035) -> Piece:
     """Smooth, offset, and hide the body faces well inside the garment. Near a hem the offset is kept
     perpendicular to the limb (`axis(i, pos) -> unit vector or None`) and the hem is re-snapped after."""
     src = p.src
@@ -106,6 +106,11 @@ def _shell(body: Body, p: Piece, offset, smooth_iters=6, hide_rings=2, taubin=Fa
                 N[i] = n / ln
     off = offset(src, V) if callable(offset) else np.full(len(V), offset)
     p.V = V + N * off[:, None]
+    # smoothing pulls the shell inwards over convex parts (collarbones, shoulder blades): nothing of the
+    # body may come through, so every vertex keeps a minimum gap above the skin it came from
+    Nb = body.N[src]
+    gap = ((p.V - body.V[src]) * Nb).sum(1)
+    p.V = p.V + Nb * np.clip(min_gap - gap, 0, None)[:, None]
     if rules is not None:
         _straighten(body, p, rules)
     d = mh.ring_distance(len(V), p.F, bnd, maxd=hide_rings + 1)
@@ -209,7 +214,20 @@ def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.
     hemZ = body.hipZ + (body.shoulderZ - body.hipZ) * hem
     z = body.V[:, 2]
     torso = body.mask(TORSO) & (z > hemZ)
-    torso &= ~((body.dom == 'neck_01') & (body.t > 0.12))
+    # a round crew neckline: lower in front, a little higher at the back, cut on a smooth curve rather
+    # than along the mesh's faces (which left a ragged collar)
+    sx0 = abs(float(body.B['upperarm_l'][0][0]))
+    k = sx0 / 0.17
+    nb = body.B['neck_01'][0]
+
+    def neck_rel(P):
+        rel = P - nb
+        c = np.cos(np.arctan2(rel[:, 0], -rel[:, 1]))
+        line = nb[2] - 0.03 * k * np.clip(c, 0, 1) ** 1.6 + 0.012 * k * np.clip(-c, 0, 1)
+        return np.hypot(rel[:, 0], rel[:, 1]), line
+    rad, line = neck_rel(body.V)
+    torso &= ~((z > line) & (rad < 0.085 * k))
+    torso &= ~((body.dom == 'neck_01') & (body.t > 0.3))
     arms_up = body.mask({'upperarm_l', 'upperarm_r'})
     arms = arms_up & (body.t < (1.2 if long_sleeves else sleeve))
     if long_sleeves:
@@ -220,7 +238,15 @@ def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.
     arm_bone = {'upperarm_l': 'upperarm_l', 'upperarm_r': 'upperarm_r', 'lowerarm_l': 'lowerarm_l', 'lowerarm_r': 'lowerarm_r'}
     end_bone = ('lowerarm' if long_sleeves else 'upperarm')
     sx = abs(float(body.B['upperarm_l'][0][0]))
+    def at_neck(pos):
+        r_, l_ = neck_rel(pos[None, :])
+        return r_[0] < 0.095 * k and pos[2] > l_[0] - 0.05 * k
+
+    def to_neckline(_s, pos):
+        _, l_ = neck_rel(pos[None, :])
+        return np.array([pos[0], pos[1], l_[0]])
     rules = [
+        (lambda s, pos: at_neck(pos), to_neckline),
         (lambda s, pos: abs(pos[0]) < sx * 0.9 and pos[2] < hemZ + 0.05, lambda s, pos: np.array([pos[0], pos[1], hemZ])),
         (lambda s, pos: pos[0] > sx, _proj_bone(body, f'{end_bone}_l', sleeve)),
         (lambda s, pos: pos[0] < -sx, _proj_bone(body, f'{end_bone}_r', sleeve)),
@@ -230,7 +256,7 @@ def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.
     is_arm = np.abs(p.V[:, 0]) > sx
     bottom = (~is_arm) & (p.V[:, 2] < hemZ + 0.03)
     cuff = is_arm
-    neck = (~is_arm) & (p.V[:, 2] > body.shoulderZ - 0.02)
+    neck = (~is_arm) & np.array([at_neck(v) for v in p.V])
     bnd = mh.boundary_verts(p.F)
     d_bottom = mh.ring_distance(len(p.V), p.F, {i for i in bnd if bottom[i]}, 5)
     d_cuff = mh.ring_distance(len(p.V), p.F, {i for i in bnd if cuff[i]}, 5)
@@ -251,6 +277,9 @@ def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.
             return np.array([0, 0, 1.0])
         return None
     p = _shell(body, p, offset, smooth_iters=8, axis=shirt_axis, rules=rules)
+    # the collar sits close to the skin: the chest and the back of the neck under it are not drawn
+    # (posed and skinned slightly differently, they would show through in a ragged line)
+    body.hidden[np.nonzero(sel & (z < line - 0.012 * k) & (rad < 0.13 * k))[0]] = True
     # uvs: torso cylinder, sleeves
     P = p.V
     uv = np.zeros((len(P), 2))

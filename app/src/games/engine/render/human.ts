@@ -6,6 +6,7 @@
 import * as THREE from 'three'
 import { GLTFLoader, type GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import * as SkeletonUtils from 'three/examples/jsm/utils/SkeletonUtils.js'
+import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js'
 import type { Look } from '../sim/types'
 import type { AnimInput } from './character'
 import type { Figure } from './animal'
@@ -77,24 +78,42 @@ export async function preloadHumans(looks: Look[]) {
 
 /* ------------------------------------------------------------------------------------ shared prep */
 
-/** Things done once per GLB: the eyes' mask colours become real colours (brown iris, black pupil). */
-function prepareShared(gltf: GLTF) {
-  gltf.scene.traverse((o) => {
-    const m = o as THREE.SkinnedMesh
-    if (!m.isMesh || !m.name.startsWith('eye_')) return
-    const col = m.geometry.getAttribute('color') as THREE.BufferAttribute | undefined
-    if (!col || m.userData.eyeDone) return
-    m.userData.eyeDone = true
-    const sclera = new THREE.Color('#e9e2d6'), iris = new THREE.Color('#3a2214'), irisOut = new THREE.Color('#1c0f08'), pupil = new THREE.Color('#050404')
-    const c = new THREE.Color()
-    for (let i = 0; i < col.count; i++) {
-      const ir = col.getX(i), pu = col.getY(i), lim = col.getZ(i)
-      c.copy(sclera).lerp(iris, ir).lerp(irisOut, lim * 0.7).lerp(pupil, pu)
-      col.setXYZW(i, c.r, c.g, c.b, 1)
-    }
-    col.needsUpdate = true
-  })
+/** Things done once per GLB (nothing to do at the moment: the eyes are drawn by their material). */
+function prepareShared(_gltf: GLTF) { /* kept for future per-asset fixes */ }
+
+/** The eyes: each vertex's colour is its direction from the eye's centre; the iris (with fibres), the
+ *  limbal ring and the pupil are drawn per pixel from it, round and sharp at any distance. */
+function eyeMaterial() {
+  // wet but not a mirror: the clearcoat gives the catchlight, the environment stays faint
+  const m = new THREE.MeshPhysicalMaterial({ vertexColors: true, roughness: 0.3, clearcoat: 0.7, clearcoatRoughness: 0.06, envMapIntensity: 0.45, specularIntensity: 0.4 })
+  const u = { uSclera: { value: new THREE.Color('#d8cdbd') }, uIris: { value: new THREE.Color('#4a2c18') }, uIrisOut: { value: new THREE.Color('#1a0e07') } }
+  m.onBeforeCompile = (sh) => {
+    Object.assign(sh.uniforms, u)
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', '#include <common>\nuniform vec3 uSclera; uniform vec3 uIris; uniform vec3 uIrisOut;')
+      .replace('#include <color_fragment>', `#include <color_fragment>
+      {
+        vec3 d = normalize(vColor.rgb * 2.0 - 1.0);
+        float ang = acos(clamp(-d.y, -1.0, 1.0));
+        float az = atan(d.x, d.z);
+        float aa = fwidth(ang) + 1e-4;
+        float iris = 1.0 - smoothstep(0.555 - aa, 0.575 + aa, ang);
+        float pupil = 1.0 - smoothstep(0.235 - aa, 0.255 + aa, ang);
+        float limbal = 1.0 - smoothstep(0.0, 0.085, abs(ang - 0.55));
+        float fib = 0.8 + 0.2 * sin(az * 41.0 + sin(az * 9.0) * 2.4) * smoothstep(0.25, 0.42, ang);
+        vec3 ir = uIris * fib * mix(1.35, 0.75, smoothstep(0.25, 0.56, ang));
+        vec3 c = mix(uSclera * mix(1.0, 0.78, smoothstep(0.85, 1.55, ang)), ir, iris);
+        c = mix(c, uIrisOut, limbal * 0.75);
+        c = mix(c, vec3(0.01), pupil);
+        diffuseColor.rgb = c;
+      }`)
+  }
+  m.customProgramCacheKey = () => 'eye-2'
+  return m
 }
+
+/** Same-material pieces of one archetype merged into one geometry (limb skin, both eyes, both shoes). */
+const mergedCache = new Map<string, THREE.BufferGeometry>()
 
 /* ------------------------------------------------------------------------------------ textures */
 
@@ -453,7 +472,28 @@ export class Human implements Figure {
     const hairTex = hairMap(look)
     const hair = new THREE.MeshPhysicalMaterial({ color: look.hairColor, map: hairTex, roughness: 0.86, sheen: 0.7, sheenRoughness: 0.55, sheenColor: new THREE.Color('#5a4a3c'), normalMap: curlNormal(), normalScale: new THREE.Vector2(1.1, 1.1) })
     hair.normalMap!.repeat.set(7, 7)
-    const eye = new THREE.MeshPhysicalMaterial({ vertexColors: true, roughness: 0.25, clearcoat: 1, clearcoatRoughness: 0.03 })
+    // scalp hair thins out at the hairline: the vertex colour says how far in from the edge, a fine noise
+    // breaks the line, and alpha-to-coverage gives a soft, multisampled edge (no sorting, no halo)
+    const hairEdge = hair.clone()
+    hairEdge.alphaToCoverage = true
+    hairEdge.onBeforeCompile = (sh) => {
+      sh.vertexShader = sh.vertexShader
+        .replace('#include <common>', '#include <common>\nattribute vec4 color;\nvarying float vFade;\nvarying vec2 vHairUv;')
+        .replace('#include <begin_vertex>', '#include <begin_vertex>\nvFade = color.r;\nvHairUv = uv * vec2(90.0, 70.0);')
+      sh.fragmentShader = sh.fragmentShader
+        .replace('#include <common>', `#include <common>
+          varying float vFade; varying vec2 vHairUv;
+          float hHash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+          float hNoise(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);
+            return mix(mix(hHash(i), hHash(i + vec2(1, 0)), f.x), mix(hHash(i + vec2(0, 1)), hHash(i + vec2(1, 1)), f.x), f.y); }`)
+        .replace('#include <alphatest_fragment>', `#include <alphatest_fragment>
+          { float n = hNoise(vHairUv) * 0.65 + hNoise(vHairUv * 0.23) * 0.35;
+            diffuseColor.a = smoothstep(0.0, 0.35, vFade * 1.35 - n * 0.6);
+            // the finer, sparser hair at the edge lets the scalp colour through
+            diffuseColor.rgb *= mix(1.25, 1.0, smoothstep(0.2, 0.9, vFade)); }`)
+    }
+    hairEdge.customProgramCacheKey = () => 'hair-edge'
+    const eye = eyeMaterial()
     const teeth = new THREE.MeshStandardMaterial({ color: '#e8e1d2', roughness: 0.35 })
     const mouth = new THREE.MeshStandardMaterial({ color: '#4a1f1c', roughness: 0.6 })
     const shirt = trimMaterial(look.shirt, look.collar ?? look.shirtTrim ?? look.shirt, { map: kitMap(look, asset.meta, long), collar: look.collar || look.shirtTrim ? 1 : 0, cuff: look.shirtTrim && look.shirtTrim !== look.shirt ? 1 : 0, hem: 0 })
@@ -477,7 +517,7 @@ export class Human implements Figure {
     withMasks(shoe, `diffuseColor.rgb = mix(diffuseColor.rgb, uSole, step(0.5, vMask.r));`, { uSole: { value: new THREE.Color(soleCol) } })
     const gloves = new THREE.MeshPhysicalMaterial({ color: look.gloves ?? '#d9cfbd', roughness: 0.7, sheen: 0.4 })
     const cap = new THREE.MeshPhysicalMaterial({ color: look.cap ?? '#6f6a62', roughness: 0.8, sheen: 0.4 })
-    this.mats.push(skin, hair, eye, teeth, mouth, shirt, shorts, sockL, sockR, shoe, gloves, cap, dressTop, skirtM, wrap, hatM, flowers, beardM, glassesM, caneM, gold)
+    this.mats.push(skin, hair, hairEdge, eye, teeth, mouth, shirt, shorts, sockL, sockR, shoe, gloves, cap, dressTop, skirtM, wrap, hatM, flowers, beardM, glassesM, caneM, gold)
     const matFor = (n: string): THREE.Material => {
       if (n === 'body' || n === 'feet' || n === 'calves' || n === 'thighs' || n === 'forearms') return skin
       if (n === 'hair_wrap' || n === 'wrap_knot') return wrap
@@ -509,13 +549,17 @@ export class Human implements Figure {
       const name = m.name.replace(/_\d+$/, '')
       const piece = asset.meta.pieces.includes(name) ? name : m.parent && asset.meta.pieces.includes(m.parent.name) ? m.parent.name : name
       m.visible = show.has(piece)
-      m.material = matFor(piece)
+      m.material = (piece === 'hair_crop' || piece === 'hair_afro') && m.geometry.getAttribute('color') ? hairEdge : matFor(piece)
       m.castShadow = !!this.opts.castShadow && m.visible && !piece.startsWith('eye') && !piece.endsWith('teeth') && piece !== 'tongue'
       m.receiveShadow = true
       m.frustumCulled = false
       if (m.morphTargetDictionary && m.visible) this.morphs.push({ mesh: m, dict: m.morphTargetDictionary })
       this.meshes.push(m)
     })
+    // what this look does not wear leaves the scene, and same-material pieces become one draw
+    for (const m of this.meshes) if (!m.visible) m.removeFromParent()
+    this.meshes = this.meshes.filter((m) => m.visible)
+    this.mergePieces(a)
     // heights: a child of the book is about 1.36 m, an adult 1.75 m, times the look's own factor
     const s = ((asset.meta.kid ? 1.36 : look.woman ? 1.64 : 1.75) * (look.height ?? 1)) / asset.meta.height
     model.scale.setScalar(s)
@@ -527,6 +571,45 @@ export class Human implements Figure {
     this.ready = true
     this.root.visible = this.visible
     if (this.pending) this.update(this.pending, 0)
+  }
+
+  private mergePieces(a: Archetype) {
+    const groups = new Map<THREE.Material, THREE.SkinnedMesh[]>()
+    for (const m of this.meshes) {
+      const sm = m as THREE.SkinnedMesh
+      if (!sm.isSkinnedMesh || sm.morphTargetInfluences?.length) continue
+      const mat = sm.material as THREE.Material
+      const list = groups.get(mat)
+      if (list) list.push(sm); else groups.set(mat, [sm])
+    }
+    for (const [mat, list] of groups) {
+      if (list.length < 2) continue
+      const ref = list[0]
+      const attrs = Object.keys(ref.geometry.attributes).sort().join()
+      const ok = list.every((m) => m.parent === ref.parent && m.matrix.equals(ref.matrix) && m.bindMatrix.equals(ref.bindMatrix)
+        && m.skeleton.bones.length === ref.skeleton.bones.length && m.skeleton.bones.every((b, i) => b === ref.skeleton.bones[i])
+        && Object.keys(m.geometry.attributes).sort().join() === attrs && !!m.geometry.index === !!ref.geometry.index)
+      if (!ok) continue
+      const key = `${a}|${list.map((m) => m.name).sort().join('+')}`
+      let geo = mergedCache.get(key)
+      if (!geo) {
+        const g = mergeGeometries(list.map((m) => m.geometry))
+        if (!g) continue
+        geo = g
+        mergedCache.set(key, geo)
+      }
+      const mm = new THREE.SkinnedMesh(geo, mat)
+      mm.name = list.map((m) => m.name).join('+')
+      mm.position.copy(ref.position); mm.quaternion.copy(ref.quaternion); mm.scale.copy(ref.scale)
+      mm.bind(ref.skeleton, ref.bindMatrix)
+      mm.castShadow = list.some((m) => m.castShadow)
+      mm.receiveShadow = true
+      mm.frustumCulled = false
+      ref.parent!.add(mm)
+      for (const m of list) m.removeFromParent()
+      this.meshes = this.meshes.filter((m) => !list.includes(m as THREE.SkinnedMesh))
+      this.meshes.push(mm)
+    }
   }
 
   snapFacing(facing: number) { this.facingY = Math.atan2(Math.cos(facing), Math.sin(facing)); this.root.rotation.y = this.facingY }

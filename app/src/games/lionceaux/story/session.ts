@@ -146,6 +146,9 @@ export class StorySession implements ChoreoHost {
   }
   /** QA: shorter reading times */
   readingScale = 1
+  /** QA: stop on the first line that starts with this text (for screenshots of one shot) */
+  holdAt: string | null = null
+  holding = false
   private readingTime(text: string) { return (1.6 + text.length * 0.055) * this.readingScale }
 
   /* ---------------------------------------------------------------- flow */
@@ -435,7 +438,9 @@ export class StorySession implements ChoreoHost {
       this.clock += dt
       if (this.lineWait && this.input.pressed('pass') && !this.explore) this.advance()
       const lw = this.lineWait
-      if (lw && this.autoAdvance && this.state.line && this.clock - lw.at > this.readingTime(this.state.line.text)) this.advance()
+      const held = !!this.holdAt && !!this.state.line && this.state.line.text.startsWith(this.holdAt)
+      if (held) this.holding = true
+      if (lw && this.autoAdvance && !held && this.state.line && this.clock - lw.at > this.readingTime(this.state.line.text)) this.advance()
       if (this.explore) this.exploreFrame()
       this.challenge?.frame?.(dt, this.input)
       if (this.follow) this.camera(this.follow, false)

@@ -192,6 +192,7 @@ export class CameraRig {
     const off = new THREE.Vector3(Math.sin(this.t * 37) * s, Math.sin(this.t * 41 + 1) * s * 0.6, Math.sin(this.t * 29 + 2) * s)
     cam.position.copy(this.pos).add(off)
     cam.lookAt(this.look)
+    this.stage.focus.copy(this.look); this.stage.hasFocus = true
   }
 
   /** Jump straight to the current mode's framing (first frame, after loading a drill). */

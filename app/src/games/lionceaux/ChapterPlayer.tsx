@@ -2,13 +2,13 @@
 // football controls, the notebook at the end. Saves at every beat; resumes where it stopped.
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
-import { BookOpen, ChevronRight, Info, Pause, Play, RotateCcw, Settings2, SkipForward } from 'lucide-react'
+import { BookOpen, ChevronRight, Info, Pause, Play, RotateCcw, Settings2, SkipForward, Smartphone } from 'lucide-react'
 import { useT } from '../../i18n'
 import { useDocumentTitle } from '../../lib/hooks'
 import { cx } from '../../lib/util'
 import { TOME1_TOC } from '../../content/books.gen'
 import { GameFrame, NoWebGL, RoundButton, SettingsSheet, Spinner, TopBar, hasWebGL, useMounted, useStore } from '../shared/ui'
-import { Manette, useGamepad, type PadAction, type PadButton } from '../shared/Manette'
+import { Manette, subtitleRoom, useGamepad, useViewport, type PadAction, type PadButton } from '../shared/Manette'
 import { sfx } from '../shared/audio'
 import { tome1Chapter } from '../njangi/links'
 import { SCRIPTS, isPlayable } from './chapters'
@@ -68,6 +68,9 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
     ;(window as unknown as { __story?: StorySession }).__story = s
     // ?qa: the challenges play themselves and the lines go fast (screenshots, end-to-end tests)
     if (location.search.includes('qa')) { s.autoplay = true; s.readingScale = 0.12 }
+    // ?hold=text: stop on the line that starts with it (art checks of one shot)
+    const hold = new URLSearchParams(location.search).get('hold')
+    if (hold) s.holdAt = hold
     return () => { delete (window as unknown as { __story?: StorySession }).__story }
   }, [s])
   useEffect(() => { if (settings) s?.pause(true) }, [settings, s])
@@ -76,6 +79,26 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
   const fontSize = subs.size === 's' ? 'text-[15px]' : subs.size === 'l' ? 'text-[20px] sm:text-[22px]' : 'text-[17px] sm:text-[18.5px]'
   const lowered = !!st && (st.stick || st.controls.length > 0)
   const pad = useGamepad()
+  const vp = useViewport()
+  const room = subtitleRoom(vp)
+  const portrait = vp.w < 640 && vp.h > vp.w
+  // on a phone held upright, the camera frames the action between the instructions and the pad
+  const promptUp = !!st && (!!st.prompt || !!st.hint)
+  useEffect(() => {
+    const stage = s?.st.view.stage
+    if (!stage) return
+    if (portrait && lowered && !pad) stage.setInsets(0, promptUp ? 190 : 64, 0, 400)
+    else stage.setInsets(0, 0, 0, 0)
+  }, [s, portrait, lowered, pad, promptUp])
+  // a football moment on a phone held upright: suggest turning it, for a few seconds
+  const [rotateHint, setRotateHint] = useState(false)
+  const playBeat = !!st && st.kind === 'play'
+  useEffect(() => {
+    if (!portrait || !playBeat || pad) { setRotateHint(false); return }
+    setRotateHint(true)
+    const id = window.setTimeout(() => setRotateHint(false), 6000)
+    return () => window.clearTimeout(id)
+  }, [portrait, playBeat, pad, st?.beat])
   const dragX = useRef<number | null>(null)
   // the controller: what each button does in this moment of the chapter
   const buttons: Partial<Record<PadButton, PadAction>> = {}
@@ -124,7 +147,8 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
       )}
 
       {st && st.line && (
-        <div className={cx('absolute inset-x-0 z-20 flex justify-center px-2 sm:px-4', lowered ? 'bottom-[150px] sm:bottom-[24px]' : 'bottom-0')} style={{ paddingBottom: lowered ? undefined : 'max(env(safe-area-inset-bottom), 12px)' }}>
+        <div className={cx('absolute inset-x-0 z-20 flex justify-center', !lowered && 'bottom-0 px-2 sm:px-4')}
+          style={lowered && !pad ? { bottom: room.bottom, paddingLeft: room.left, paddingRight: room.right } : { paddingBottom: 'max(env(safe-area-inset-bottom), 12px)', ...(lowered ? { bottom: 0, paddingLeft: 12, paddingRight: 220 } : {}) }}>
           <button type="button" onClick={() => s!.advance()} className="glass-strong w-full max-w-3xl rounded-[18px] px-4 py-3 text-left sm:px-5 sm:py-4" aria-live="polite">
             {st.line.name && <span className="block text-[13px] font-semibold" style={{ color: lighten(st.line.color) }}>{st.line.name}{st.line.thought ? ` · ${t('player.thought')}` : ''}</span>}
             <span className={cx('mt-0.5 block leading-snug', fontSize, st.line.thought && 'italic', st.line.narr && 'text-cream/90')}>{st.line.text}</span>
@@ -133,6 +157,13 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
         </div>
       )}
 
+      {rotateHint && (
+        <div className="pointer-events-none absolute inset-x-0 top-[44%] z-30 flex justify-center px-4">
+          <span className="inline-flex items-center gap-2 rounded-full bg-black/60 px-3.5 py-2 text-[13px] font-semibold text-cream backdrop-blur">
+            <Smartphone size={16} strokeWidth={1.75} aria-hidden="true" className="rotate-90" />{t('controls.rotate')}
+          </span>
+        </div>
+      )}
       {st && !st.paused && (st.stick || st.controls.length > 0) && (
         <Manette stick={st.stick} onMove={(x, y) => s!.input.touchMove(x, y)} buttons={buttons} stickLabel={t('controls.stick')} compact={pad} />
       )}
