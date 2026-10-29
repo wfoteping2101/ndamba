@@ -4,6 +4,6 @@
     { "source": "/livres/methode", "destination": "/book/methode/", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/((?!book/|assets/|api/|icons/|favicon|manifest|icon-|robots|og|art/).*)", "destination": "/index.html" }
+    { "source": "/((?!book/|football/|assets/|api/|icons/|favicon|manifest|icon-|robots|og|art/).*)", "destination": "/index.html" }
   ]
 }

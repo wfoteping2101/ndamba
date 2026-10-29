@@ -21,8 +21,9 @@ export default function SiteLayout() {
     window.addEventListener('keydown', k)
     return () => window.removeEventListener('keydown', k)
   }, [open])
-  const links: { to: string; label: string; icon?: ReactNode }[] = [
+  const links: { to: string; label: string; icon?: ReactNode; href?: boolean }[] = [
     { to: '/livres', label: t('nav.books') },
+    { to: '/football/', label: t('nav.football'), href: true },
     { to: '/#app', label: t('nav.app') },
     { to: '/#mola', label: t('nav.mola'), icon: <MolaMark size={16} /> },
     { to: '/premium', label: t('nav.premium') },
@@ -34,7 +35,9 @@ export default function SiteLayout() {
         <div className="container-page flex h-16 items-center justify-between gap-4">
           <Link to="/" aria-label={t('footer.home')} className="shrink-0 rounded-md"><Logo /></Link>
           <nav className="hidden items-center gap-1 md:flex" aria-label={t('app.mainNav')}>
-            {links.map((l) => (
+            {links.map((l) => l.href ? (
+              <a key={l.to} href={l.to} className="relative inline-flex h-10 items-center gap-2 rounded-[10px] px-3 text-[14.5px] font-semibold text-ink-soft transition-colors hover:bg-sand hover:text-ink">{l.icon}{l.label}</a>
+            ) : (
               <NavLink key={l.to} to={l.to}
                 className={({ isActive }) => cx('relative inline-flex h-10 items-center gap-2 rounded-[10px] px-3 text-[14.5px] font-semibold transition-colors',
                   isActive && !l.to.includes('#') ? 'text-ink' : 'text-ink-soft hover:bg-sand hover:text-ink')}>
@@ -59,7 +62,9 @@ export default function SiteLayout() {
             <ul className="container-page divide-y divide-line/80">
               {links.map((l) => (
                 <li key={l.to}>
-                  <Link to={l.to} className="flex min-h-[52px] items-center gap-2.5 text-[16px] font-semibold text-ink">{l.icon}{l.label}</Link>
+                  {l.href
+                    ? <a href={l.to} className="flex min-h-[52px] items-center gap-2.5 text-[16px] font-semibold text-ink">{l.icon}{l.label}</a>
+                    : <Link to={l.to} className="flex min-h-[52px] items-center gap-2.5 text-[16px] font-semibold text-ink">{l.icon}{l.label}</Link>}
                 </li>
               ))}
             </ul>

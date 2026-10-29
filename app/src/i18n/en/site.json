@@ -312,6 +312,12 @@
       "body": "The demo replaces the data in this browser with {{demo}}. Export a backup from the settings first if you want to keep your work.",
       "confirm": "Start the demo",
       "busy": "Preparing the demo"
+    },
+    "game": {
+      "label": "Video game",
+      "title": "Lionceaux Football",
+      "body": "The holiday neighbourhood tournament: an eleven-a-side match on a red-earth pitch, with the whole neighbourhood watching. Sixteen sides from Douala and Yaoundé, including the clubs from the book. Play on your phone, with a controller or the keyboard, right in the browser.",
+      "cta": "Play now"
     }
   },
   "shelf": {
