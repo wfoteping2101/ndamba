@@ -195,7 +195,38 @@ def retarget(code: str, tgt: Target, mirror=False):
             out_rot[b].append(world[b])
         pos = (P['Hips'][f] - src_hip) * scale
         pel.append(pos)
-    return {b: np.array(v) for b, v in out_rot.items()}, np.array(pel), scale
+    out = {b: np.array(v) for b, v in out_rot.items()}
+    level_gaze(out, tgt)
+    return out, np.array(pel), scale
+
+
+def axis_angle(axis: np.ndarray, deg: float) -> np.ndarray:
+    a = axis / np.linalg.norm(axis)
+    t = np.radians(deg)
+    K = np.array([[0, -a[2], a[1]], [a[2], 0, -a[0]], [-a[1], a[0], 0]])
+    return np.eye(3) + np.sin(t) * K + (1 - np.cos(t)) * K @ K
+
+
+def head_pitch(world: dict, tgt: 'Target') -> np.ndarray:
+    """Per frame, how far up (degrees) the face looks: the rest face direction carried by the head."""
+    W, R0 = world['head'], tgt.rest['head']
+    f = np.array([w @ np.linalg.inv(R0) @ np.array([0, -1.0, 0]) for w in W])
+    return np.degrees(np.arcsin(np.clip(f[:, 2], -1, 1)))
+
+
+def level_gaze(world: dict, tgt: 'Target'):
+    """The CMU actors' T-poses carry their heads a little low, so relative to it most clips look up at
+    the sky. A clip whose face looks up on average is brought back to a level gaze (the neck takes 40%
+    of the turn, the head the rest); clips that look down on purpose (sad, sitting, kicking) keep theirs."""
+    mean = float(head_pitch(world, tgt).mean())
+    if mean <= 4.0:
+        return
+    th = min(22.0, mean - 1.0)
+    inv_c = np.linalg.inv(tgt.rest['spine_03'])
+    for f in range(len(world['head'])):
+        side = world['spine_03'][f] @ inv_c @ np.array([1.0, 0, 0])
+        world['neck_01'][f] = axis_angle(side, 0.4 * th) @ world['neck_01'][f]
+        world['head'][f] = axis_angle(side, th) @ world['head'][f]
 
 
 def world_to_basis(tgt: Target, world: dict[str, np.ndarray], pel: np.ndarray):

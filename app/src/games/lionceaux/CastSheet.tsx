@@ -31,7 +31,6 @@ class Turntable {
     this.stage.scene.add(floor, this.group)
     this.stage.sun.position.set(-4, 9, 7)
     this.stage.fitShadow(8, 8)
-    this.stage.followShadow = false
     const pm = new THREE.PMREMGenerator(this.stage.renderer)
     this.stage.scene.environment = pm.fromScene(new RoomEnvironment(), 0.04).texture
     this.stage.scene.environmentIntensity = 0.55

@@ -80,12 +80,16 @@ def shape_cap(V: np.ndarray, F, kind: str, center: np.ndarray, seed=1, thickness
         return V + N * (th * taper + n)[:, None]
     if kind == 'afro':
         th = thickness or 0.032
-        # the volume rises gently from the hairline (no helmet rim): a smooth ramp over about 3 cm
-        t_ = np.clip(d / 7, 0, 1)
-        taper = t_ * t_ * (3 - 2 * t_)
         R = V - center
         r = np.linalg.norm(R, axis=1)
         dirs = R / r[:, None]
+        # the volume rises gently from the hairline (no helmet rim): a ramp measured in centimetres from
+        # the edge, longer over the forehead (3 cm at the nape and the ears, 5.5 cm at the front)
+        Bp = V[sorted(bnd)]
+        dist = np.sqrt(((V[:, None, :] - Bp[None, :, :]) ** 2).sum(2)).min(1)
+        front = np.clip(-dirs[:, 1], 0, 1)
+        t_ = np.clip(dist / (0.03 + 0.025 * front), 0, 1)
+        taper = t_ * t_ * (3 - 2 * t_)
         # fuller on the crown than at the nape and the temples; at the front the hair rises from the
         # hairline instead of growing forwards over the forehead
         fwd = np.clip(-dirs[:, 1], 0, 1)
@@ -96,7 +100,10 @@ def shape_cap(V: np.ndarray, F, kind: str, center: np.ndarray, seed=1, thickness
         Rs = float(np.percentile(rr[full], 65)) if full.any() else float(rr.max())
         rr = rr + (Rs - rr) * 0.35 * taper * np.clip(dirs[:, 2] + 0.3, 0, 1)
         rr += _noise3(V, 55, seed) * 0.0045 * taper + _noise3(V, 140, seed + 3) * 0.0018 * taper + _noise3(V, 320, seed + 5) * 0.0007
-        out = center + dirs * rr[:, None]
+        # the volume grows outwards from the skull, but upwards over the forehead (no peak overhanging it)
+        g = dirs + np.array([0, 0, 1.0]) * (1.1 * fwd)[:, None]
+        g /= np.linalg.norm(g, axis=1)[:, None]
+        out = V + g * (rr - r)[:, None]
         out = np.where(((out - V) * N).sum(1)[:, None] < 0.003, V + N * 0.003, out)
         return mh.smooth(out, F, 6, 0.4, pin=np.array(sorted(bnd), int), taubin=True)
     if kind == 'wrap':

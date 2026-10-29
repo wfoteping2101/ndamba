@@ -197,13 +197,16 @@ def build(name: str, preview=False, export=True):
     # the body hidden under the clothes every look wears (shirt, shorts/trousers top, shoes); the
     # rest (socks, gloves, long sleeves) only covers it
     body.hidden[:] = False
+    body.inset[:] = 0
     for g in ('shirt', 'shorts'):
         kit(body, g, spec['kid'])
     for g in [w for w in spec['wardrobe'] if w in ('boots',)]:
         kit(body, g, spec['kid'])
     hidden_core = body.hidden.copy()
+    inset_core = body.inset.copy()
     body_piece = mh.piece_from_base('body', vb, mh.base()['groups']['body'], W, 'skin')
     body.hidden = hidden_core
+    body.inset = inset_core
     body_piece = G.hide_body(body, body_piece)
     # the feet are their own piece: shown bare (sandals), hidden inside shoes
     # limbs are pieces of their own too: hidden under trousers, dresses and long sleeves
@@ -229,7 +232,13 @@ def build(name: str, preview=False, export=True):
     for p in pieces:
         objs[p.name] = blend.mesh_object(p, arm, colors.get(p.material, (0.6, 0.6, 0.6, 1)))
     # decimate (keep the face as is: the expressions move it)
-    head = np.array([max(w.items(), key=lambda kv: kv[1])[0] in ('head',) if w else False for w in body_piece.W])
+    # the face and the hands keep every vertex (fingers collapse into cones otherwise)
+    def keep(w):
+        if not w:
+            return False
+        b = max(w.items(), key=lambda kv: kv[1])[0]
+        return b == 'head' or b.startswith(('hand_', 'thumb_', 'index_', 'middle_', 'ring_', 'pinky_'))
+    head = np.array([keep(w) for w in body_piece.W])
     # the seams with the limb pieces stay where they are (no cracks)
     for v in mh.boundary_verts(body_piece.F):
         head[v] = True
@@ -263,7 +272,13 @@ def build(name: str, preview=False, export=True):
 
     os.makedirs(OUT, exist_ok=True)
     ears = skin.sample(skin._mask('mpfb_ears.jpg', 512), skin._vertex_uv())
-    A, Bm = skin.detail_maps(vb, B, W, 1024, scalp=H.scalp_mask(body, ears).astype(float))
+    # the skin under the hair takes the hair's colour, but not right up to the hairline (the hair's edge
+    # is smoothed inwards and thins out there): the mask is pulled two rings back from its border
+    sm = H.scalp_mask(body, ears)
+    edge = {v for f in body.faces if sm[f].any() and not sm[f].all() for v in f if sm[v]}
+    ring = mh.ring_distance(mh.BODY_N, body.faces, edge, 3)
+    scalp = (sm & (ring >= 2)).astype(float)
+    A, Bm = skin.detail_maps(vb, B, W, 1024, scalp=scalp)
     A.save(os.path.join(OUT, f'{name}_skinA.png'))
     Bm.save(os.path.join(OUT, f'{name}_skinB.png'))
     meta = {

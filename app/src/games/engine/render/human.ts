@@ -112,6 +112,37 @@ function eyeMaterial() {
   return m
 }
 
+const UP = new THREE.Vector3(0, 1, 0)
+
+/** One layer of short curly hair above the scalp shell (the fur-shell technique): the layer is lifted
+ *  along the skinned normal and keeps only the strands tall enough to reach it, so stacked layers read
+ *  as a soft, fuzzy mass with an uneven outline instead of a smooth helmet. Inner layers are darker. */
+function hairShell(color: string, level: number, lift: number, cell: number) {
+  const m = new THREE.MeshStandardMaterial({ color: new THREE.Color(color).multiplyScalar(0.75 + 0.35 * level), roughness: 0.92 })
+  m.onBeforeCompile = (sh) => {
+    sh.uniforms.uLevel = { value: level }
+    sh.uniforms.uLift = { value: lift }
+    sh.uniforms.uCell = { value: cell }
+    sh.vertexShader = sh.vertexShader
+      .replace('#include <common>', '#include <common>\nattribute vec4 color;\nuniform float uLift; uniform float uCell;\nvarying float vFade; varying vec2 vStrand;')
+      .replace('#include <skinning_vertex>', '#include <skinning_vertex>\nvFade = color.r;\nvStrand = uv * uCell;\ntransformed += normalize(objectNormal) * uLift * smoothstep(0.0, 0.8, color.r);')
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', `#include <common>
+        uniform float uLevel; varying float vFade; varying vec2 vStrand;
+        float sHash(vec2 p) { return fract(sin(dot(p, vec2(41.3, 289.1))) * 15731.743); }`)
+      .replace('#include <alphatest_fragment>', `#include <alphatest_fragment>
+        { vec2 cell = floor(vStrand), f = fract(vStrand) - 0.5;
+          float h = sHash(cell);
+          vec2 off = vec2(sHash(cell + 7.1), sHash(cell + 3.7)) - 0.5;
+          float r = length(f - off * 0.5);
+          float tall = (0.35 + 0.65 * h) * smoothstep(0.05, 0.9, vFade);
+          float thick = mix(0.48, 0.18, uLevel);
+          if (tall < uLevel || r > thick) discard; }`)
+  }
+  m.customProgramCacheKey = () => 'hair-shell'
+  return m
+}
+
 /** Same-material pieces of one archetype merged into one geometry (limb skin, both eyes, both shoes). */
 const mergedCache = new Map<string, THREE.BufferGeometry>()
 
@@ -134,17 +165,24 @@ function skinMap(a: Archetype, asset: Asset, tone: string, brow: string, scalp: 
   const out = g.createImageData(W, H)
   const [r0, g0, b0] = srgb(tone)
   const [hr, hg, hb] = srgb(brow)
-  // a little mottling so the skin is not plastic
-  const noise = new Float32Array(64 * 64)
-  for (let i = 0; i < noise.length; i++) noise[i] = Math.random()
+  // a little mottling so the skin is not plastic: two octaves of smooth (bilinear) value noise
+  const grid = (n: number) => { const g = new Float32Array((n + 1) * (n + 1)); for (let i = 0; i < g.length; i++) g[i] = Math.random(); return g }
+  const coarse = grid(24), fine = grid(96)
+  const smooth = (g: Float32Array, n: number, u: number, v: number) => {
+    const x = u * n, y = v * n, x0 = x | 0, y0 = y | 0, fx = x - x0, fy = y - y0
+    const sx = fx * fx * (3 - 2 * fx), sy = fy * fy * (3 - 2 * fy), w = n + 1
+    const a = g[y0 * w + x0], b = g[y0 * w + x0 + 1], c2 = g[(y0 + 1) * w + x0], d2 = g[(y0 + 1) * w + x0 + 1]
+    return (a + (b - a) * sx) * (1 - sy) + (c2 + (d2 - c2) * sx) * sy
+  }
   const d = out.data, a8 = A.data, b8 = B.data
   for (let y = 0; y < H; y++) {
-    const ny = ((y / H) * 63) | 0
+    const v = y / H
     for (let x = 0; x < W; x++) {
       const i = (y * W + x) * 4
       const sc = scalp ? a8[i] / 255 : 0, lip = a8[i + 1] / 255, br = a8[i + 2] / 255
       const palm = b8[i] / 255, nail = b8[i + 1] / 255, lid = b8[i + 2] / 255
-      const n = 0.96 + noise[ny * 64 + (((x / W) * 63) | 0)] * 0.08
+      const u = x / W
+      const n = 0.965 + smooth(coarse, 24, u, v) * 0.05 + smooth(fine, 96, u, v) * 0.025
       let r = r0 * n, gg = g0 * n, bb = b0 * n
       // lips: deeper and warmer
       const L = lip * 0.85
@@ -429,6 +467,12 @@ export class Human implements Figure {
   motion: Motion | null = null
   private pending: AnimInput | null = null
   private facingY = 0
+  /** a walking stick that always reaches the ground from the hand (rigid, not skinned) */
+  private cane: { mesh: THREE.Mesh; hand: THREE.Object3D; knuckle: THREE.Object3D | null } | null = null
+  private tmpV = new THREE.Vector3()
+  private tmpG = new THREE.Vector3()
+  private tmpK = new THREE.Vector3()
+  private shells: THREE.SkinnedMesh[] = []
 
   constructor(public look: Look, private opts: { castShadow?: boolean } = {}) {
     const a = archetypeOf(look)
@@ -488,9 +532,7 @@ export class Human implements Figure {
             return mix(mix(hHash(i), hHash(i + vec2(1, 0)), f.x), mix(hHash(i + vec2(0, 1)), hHash(i + vec2(1, 1)), f.x), f.y); }`)
         .replace('#include <alphatest_fragment>', `#include <alphatest_fragment>
           { float n = hNoise(vHairUv) * 0.65 + hNoise(vHairUv * 0.23) * 0.35;
-            diffuseColor.a = smoothstep(0.0, 0.35, vFade * 1.35 - n * 0.6);
-            // the finer, sparser hair at the edge lets the scalp colour through
-            diffuseColor.rgb *= mix(1.25, 1.0, smoothstep(0.2, 0.9, vFade)); }`)
+            diffuseColor.a = smoothstep(0.0, 0.35, vFade * 1.35 - n * 0.6); }`)
     }
     hairEdge.customProgramCacheKey = () => 'hair-edge'
     const eye = eyeMaterial()
@@ -556,10 +598,60 @@ export class Human implements Figure {
       if (m.morphTargetDictionary && m.visible) this.morphs.push({ mesh: m, dict: m.morphTargetDictionary })
       this.meshes.push(m)
     })
+    // hands at rest are never flat: the fingers curl a little (and close round the stick of a cane)
+    const gripR = !!look.cane
+    const AX = new THREE.Vector3(1, 0, 0), q = new THREE.Quaternion()
+    for (const side of ['l', 'r'] as const) {
+      const grip = gripR && side === 'r'
+      for (const f of ['index', 'middle', 'ring', 'pinky'] as const) {
+        const spread = f === 'index' ? 0.8 : f === 'pinky' ? 1.15 : 1
+        const angles = grip ? [72, 85, 55] : [16 * spread, 22 * spread, 14 * spread]
+        angles.forEach((deg, k) => model.getObjectByName(`${f}_0${k + 1}_${side}`)?.quaternion.multiply(q.setFromAxisAngle(AX, THREE.MathUtils.degToRad(deg))))
+      }
+      const thumb = grip ? [0, 28, 30] : [0, 8, 10]
+      thumb.forEach((deg, k) => { if (deg) model.getObjectByName(`thumb_0${k + 1}_${side}`)?.quaternion.multiply(q.setFromAxisAngle(AX, THREE.MathUtils.degToRad(deg))) })
+    }
+    // the stick: drawn from the hand to the ground every frame (the skinned one would swing with the wrist)
+    const skinnedCane = this.meshes.find((m) => m.visible && m.name.replace(/_\d+$/, '') === 'cane')
+    const handR = model.getObjectByName('hand_r')
+    if (skinnedCane && handR) {
+      skinnedCane.visible = false
+      const g = new THREE.CylinderGeometry(0.011, 0.009, 1, 8)
+      g.translate(0, 0.5, 0)
+      const mesh = new THREE.Mesh(g, caneM)
+      mesh.castShadow = !!this.opts.castShadow
+      this.root.add(mesh)
+      this.cane = { mesh, hand: handR, knuckle: model.getObjectByName('middle_01_r') ?? null }
+    }
     // what this look does not wear leaves the scene, and same-material pieces become one draw
     for (const m of this.meshes) if (!m.visible) m.removeFromParent()
     this.meshes = this.meshes.filter((m) => m.visible)
     this.mergePieces(a)
+    // a soft curly mass over short hair, close to the camera only
+    const hairCap = this.meshes.find((m) => (m.name === 'hair_afro' || m.name === 'hair_crop') && (m as THREE.SkinnedMesh).isSkinnedMesh && m.geometry.getAttribute('color')) as THREE.SkinnedMesh | undefined
+    if (hairCap && !look.headwrap && !look.hat && look.hair !== 'cap') {
+      const cap = hairCap
+      const afro = cap.name === 'hair_afro'
+      const n = afro ? 6 : 4, lift = afro ? 0.008 : 0.0032
+      for (let i = 1; i <= n; i++) {
+        const mat = hairShell(look.hairColor, i / (n + 1), (lift * i) / n, afro ? 150 : 210)
+        this.mats.push(mat)
+        const sm = new THREE.SkinnedMesh(cap.geometry, mat)
+        sm.position.copy(cap.position); sm.quaternion.copy(cap.quaternion); sm.scale.copy(cap.scale)
+        sm.bind(cap.skeleton, cap.bindMatrix)
+        sm.frustumCulled = false
+        sm.receiveShadow = true
+        cap.parent!.add(sm)
+        this.shells.push(sm)
+      }
+      // shells cost a draw each: only for heads near the camera
+      const shells = this.shells, wp = new THREE.Vector3()
+      cap.onBeforeRender = (_r, _s, camera) => {
+        cap.getWorldPosition(wp)
+        const near = camera.position.distanceToSquared(wp) < 8 * 8
+        for (const sm of shells) sm.visible = near
+      }
+    }
     // heights: a child of the book is about 1.36 m, an adult 1.75 m, times the look's own factor
     const s = ((asset.meta.kid ? 1.36 : look.woman ? 1.64 : 1.75) * (look.height ?? 1)) / asset.meta.height
     model.scale.setScalar(s)
@@ -633,6 +725,20 @@ export class Human implements Figure {
     while (dy < -Math.PI) dy += Math.PI * 2
     this.root.rotation.y += dy * (1 - Math.exp(-12 * dt))
     this.motion?.update(a, dt, this.root.rotation.y)
+    if (this.cane) {
+      // from a point on the ground a little ahead of and outside the hand, up to the palm
+      const c = this.cane
+      // the top of the stick sits in the closed fist, between the wrist and the knuckles
+      c.hand.updateWorldMatrix(true, true)
+      const hand = this.root.worldToLocal(c.hand.getWorldPosition(this.tmpV))
+      if (c.knuckle) hand.lerp(this.root.worldToLocal(c.knuckle.getWorldPosition(this.tmpK)), 0.55)
+      this.tmpG.set(hand.x - 0.05 * (this.root.scale.x || 1), 0, hand.z + 0.07)
+      const d = this.tmpV.sub(this.tmpG)
+      const len = Math.max(0.2, d.length() + 0.02)
+      c.mesh.position.copy(this.tmpG)
+      c.mesh.quaternion.setFromUnitVectors(UP, d.normalize())
+      c.mesh.scale.set(1, len, 1)
+    }
     // a face that lives: blinks, talks, smiles, frowns
     this.blinkT -= dt
     if (this.blinkT <= 0) { this.blink = 0.16; this.blinkT = 2 + Math.random() * 4 }
@@ -650,6 +756,7 @@ export class Human implements Figure {
   }
 
   dispose() {
+    this.cane?.mesh.geometry.dispose()
     for (const m of this.mats) m.dispose()
     this.motion?.dispose()
     this.root.removeFromParent()

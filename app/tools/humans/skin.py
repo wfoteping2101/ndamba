@@ -60,18 +60,26 @@ def raster(values: np.ndarray, size: int, blur=1.5) -> np.ndarray:
 
 
 def brows(vb: np.ndarray) -> np.ndarray:
-    """Eyebrow hair: the vertices the eyebrow targets move the most, sharpened into an arch."""
-    acc = np.zeros(mh.BODY_N)
-    for name in ('eyebrows/eyebrows-trans-up', 'eyebrows/eyebrows-angle-up'):
-        t = mh.target(name)
-        if t is None:
-            continue
-        idx, off = t
-        m = idx < mh.BODY_N
-        acc[idx[m]] = np.maximum(acc[idx[m]], np.linalg.norm(off[m], axis=1))
-    if acc.max() > 0:
-        acc /= acc.max()
-    return np.clip((acc - 0.45) / 0.35, 0, 1)
+    """Eyebrows drawn from the eyes' positions: an arch above each eye from the inner corner to a thin
+    tail past the outer one, about 4 mm thick (scaled with the distance between the eyes)."""
+    V = vb[:mh.BODY_N]
+    eyes = {s: vb[mh.group_verts(f'joint-{s}-eye')].mean(0) for s in ('l', 'r')}
+    k = float(np.linalg.norm(eyes['l'] - eyes['r'])) / 0.062
+    out = np.zeros(mh.BODY_N)
+    for s, c in eyes.items():
+        sign = 1.0 if s == 'l' else -1.0        # +x is the character's left
+        rel = V - c
+        u = rel[:, 0] * sign                    # outwards from the nose
+        front = rel[:, 1] < 0.006 * k           # the face side of the eye (-y is forwards)
+        t = (u + 0.011 * k) / (0.034 * k)       # 0 at the inner end, 1 at the tail
+        h0 = (0.0155 + 0.0045 * np.sin(np.pi * np.clip(t, 0, 1)) - 0.0035 * np.clip(t, 0, 1)) * k
+        thick = 0.0065 * k * (1 - 0.55 * np.clip(t, 0, 1))
+        dz = rel[:, 2] - h0
+        ends = np.clip(t / 0.12, 0, 1) * np.clip((1 - t) / 0.25, 0, 1)
+        val = np.clip(1.25 - np.abs(dz) / np.maximum(thick, 1e-4), 0, 1) ** 0.5 * ends
+        val[~front | (t < 0) | (t > 1)] = 0
+        out = np.maximum(out, val)
+    return out
 
 
 def palms_soles(vb: np.ndarray, B: dict, W, nails_v: np.ndarray) -> np.ndarray:

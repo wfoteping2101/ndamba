@@ -43,6 +43,9 @@ class Body:
         self.ankleZ = (z('foot_l') + z('foot_r')) / 2
         self.height = float(self.V[:, 2].max())
         self.hidden = np.zeros(n, bool)
+        # how far (m) a skin vertex sinks under a close-fitting edge (the collar): no poking through,
+        # and the skin still runs on under the edge, so no hole shows when you look into the collar
+        self.inset = np.zeros(n)
 
     def mask(self, bones: set[str]) -> np.ndarray:
         return np.isin(self.dom, list(bones))
@@ -245,15 +248,21 @@ def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.
     def to_neckline(_s, pos):
         _, l_ = neck_rel(pos[None, :])
         return np.array([pos[0], pos[1], l_[0]])
+    # which hem a border vertex belongs to is decided by the bone its skin follows, not by where it
+    # is: on a broad man the hips reach further out than the shoulders, and the hem corners there were
+    # being sent to the cuffs (long blades from the hips to the wrists)
+    def on_arm(s, side):
+        d = str(body.dom[s])
+        return d.endswith('_' + side) and d.split('_')[0] in ('upperarm', 'lowerarm', 'hand')
     rules = [
         (lambda s, pos: at_neck(pos), to_neckline),
-        (lambda s, pos: abs(pos[0]) < sx * 0.9 and pos[2] < hemZ + 0.05, lambda s, pos: np.array([pos[0], pos[1], hemZ])),
-        (lambda s, pos: pos[0] > sx, _proj_bone(body, f'{end_bone}_l', sleeve)),
-        (lambda s, pos: pos[0] < -sx, _proj_bone(body, f'{end_bone}_r', sleeve)),
+        (lambda s, pos: on_arm(s, 'l'), _proj_bone(body, f'{end_bone}_l', sleeve)),
+        (lambda s, pos: on_arm(s, 'r'), _proj_bone(body, f'{end_bone}_r', sleeve)),
+        (lambda s, pos: pos[2] < hemZ + 0.08, lambda s, pos: np.array([pos[0], pos[1], hemZ])),
     ]
     _straighten(body, p, rules)
     src = p.src
-    is_arm = np.abs(p.V[:, 0]) > sx
+    is_arm = np.array([on_arm(s_, 'l') or on_arm(s_, 'r') for s_ in src])
     bottom = (~is_arm) & (p.V[:, 2] < hemZ + 0.03)
     cuff = is_arm
     neck = (~is_arm) & np.array([at_neck(v) for v in p.V])
@@ -269,7 +278,7 @@ def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.
         o -= np.clip(1 - d_neck / 2, 0, 1) * loose * 0.45       # the collar sits on the neck
         return o
     def shirt_axis(i, pos):
-        if abs(pos[0]) > sx:
+        if is_arm[i]:
             bn = f'{end_bone}_l' if pos[0] > 0 else f'{end_bone}_r'
             d = body.B[bn][1] - body.B[bn][0]
             return d / np.linalg.norm(d)
@@ -279,7 +288,9 @@ def shirt(body: Body, sleeve: float = 0.55, long_sleeves=False, hem: float = -0.
     p = _shell(body, p, offset, smooth_iters=8, axis=shirt_axis, rules=rules)
     # the collar sits close to the skin: the chest and the back of the neck under it are not drawn
     # (posed and skinned slightly differently, they would show through in a ragged line)
-    body.hidden[np.nonzero(sel & (z < line - 0.012 * k) & (rad < 0.13 * k))[0]] = True
+    near = sel & (rad < 0.13 * k)
+    body.inset[np.nonzero(near & (z < line - 0.002 * k) & (z >= line - 0.06 * k))[0]] = 0.007
+    body.hidden[np.nonzero(near & (z < line - 0.06 * k))[0]] = True
     # uvs: torso cylinder, sleeves
     P = p.V
     uv = np.zeros((len(P), 2))
@@ -440,7 +451,11 @@ def shoe(body: Body, side: str, ankle: float = 0.9, kind='boot', name=None) -> P
 
 
 def hide_body(body: Body, piece: Piece) -> Piece:
-    """The body without the faces hidden under the clothes."""
+    """The body without the faces hidden under the clothes (and the skin under close edges sunk in)."""
+    ins = body.inset[np.minimum(piece.src, len(body.inset) - 1)]
+    if ins.any():
+        N = mh.vertex_normals(piece.V, piece.F)
+        piece.V = piece.V - N * ins[:, None]
     keep = [k for k, f in enumerate(piece.F) if not body.hidden[piece.src[f]].all()]
     used = sorted({v for k in keep for v in piece.F[k]})
     remap = {v: i for i, v in enumerate(used)}
