@@ -923,9 +923,13 @@
   "prompt": "tome1/prompts/ch36.txt",
   "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
   "master": "tome1/illustrations/_masters/ch36.png",
-  "status": "redo",
-  "review": "Mami appears in the London dressing room: the prompt added her because the outfit mentions Mami's ball. Fixed in tools/art_prompts.mjs (possessives no longer add a character).",
-  "integrated_in": []
+  "status": "approved, integrated",
+  "review": "Second take: Kaydoudou on the bench with Mami’s ball and the shoebox of folded papers, BriBri whispers the missing word, Jaden hooded at the back; no adults.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch37",

@@ -2225,6 +2225,21 @@ export const TOME1_ART: ArtImage[] = [
   "note": "BriBri explains pressing with the salt shaker and peas; Kaydoudou eats a defender."
  },
  {
+  "file": "ch36",
+  "id": "ch36",
+  "kind": "chapter",
+  "chapter": 36,
+  "part": 5,
+  "title": "Le njangi du vestiaire",
+  "alt": "Debout sur un banc, le ballon de Mami sous le bras, Kaydoudou ouvre une boîte pleine de petits papiers ; BriBri lui souffle le mot anglais.",
+  "w": 1024,
+  "h": 1536,
+  "thumb": true,
+  "webp": true,
+  "status": "approved",
+  "note": "Second take: Kaydoudou on the bench with Mami’s ball and the shoebox of folded papers, BriBri whispers the missing word, Jaden hooded at the back; no adults."
+ },
+ {
   "file": "ch36b",
   "id": "ch36b",
   "kind": "beat",

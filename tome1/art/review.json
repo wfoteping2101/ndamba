@@ -619,8 +619,8 @@
   "note": "BriBri explains pressing with the salt shaker and peas; Kaydoudou eats a defender."
  },
  "ch36": {
-  "status": "redo",
-  "note": "Mami appears in the London dressing room: the prompt added her because the outfit mentions Mami's ball. Fixed in tools/art_prompts.mjs (possessives no longer add a character)."
+  "status": "approved",
+  "note": "Second take: Kaydoudou on the bench with Mami’s ball and the shoebox of folded papers, BriBri whispers the missing word, Jaden hooded at the back; no adults."
  },
  "ch36b": {
   "status": "approved",
