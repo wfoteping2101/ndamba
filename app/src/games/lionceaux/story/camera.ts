@@ -55,7 +55,10 @@ export function framePose(spec: CamSpec, w: World, f: Frame, pt: (where: Where) 
       const d = spec.dist ?? 1.5
       const head = (p.look.kid ? HEAD_KID : HEAD_ADULT) * (p.look.height ?? 1)
       const side = ang + Math.PI / 2
-      return { pos: v(p.pos.x - Math.cos(ang) * d + Math.cos(side) * 0.45, p.pos.y - Math.sin(ang) * d + Math.sin(side) * 0.45, spec.height ?? head + 0.25), look: v(t.x, t.y, 0.9), fov: 40 }
+      // mix: where the camera looks between the player (0) and the target (1): a game view looks at the
+      // space between them, so both the player and where the ball should go are in the picture
+      const mx = spec.mix ?? 1
+      return { pos: v(p.pos.x - Math.cos(ang) * d + Math.cos(side) * 0.45, p.pos.y - Math.sin(ang) * d + Math.sin(side) * 0.45, spec.height ?? head + 0.25), look: v(p.pos.x + (t.x - p.pos.x) * mx, p.pos.y + (t.y - p.pos.y) * mx, 0.9), fov: 40 }
     }
     case 'follow': {
       const p = w.get(spec.who)

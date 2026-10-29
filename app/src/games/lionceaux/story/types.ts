@@ -54,7 +54,7 @@ export type CamSpec =
   /** framing one or more actors: a single, a two-shot, a group */
   | { kind: 'on'; who: string | string[]; dist?: number; height?: number; side?: number; fov?: number; lookY?: number }
   /** over the shoulder of `who`, towards `to` */
-  | { kind: 'over'; who: string; to: Where; dist?: number; height?: number }
+  | { kind: 'over'; who: string; to: Where; dist?: number; height?: number; mix?: number }
   /** an explicit pose (sim x, height, sim y), optionally dollying to a second pose */
   | { kind: 'pose'; pos: [number, number, number]; look: [number, number, number]; to?: { pos: [number, number, number]; look: [number, number, number] }; dur?: number; fov?: number }
   /** follow an actor (walks, runs) from behind and above */

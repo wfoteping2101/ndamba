@@ -269,7 +269,7 @@ export const CH01: ChapterScript = {
           w.ball.lastTouch = 'G2'
           c.say([N("Kaydoudou tente encore son crochet. Le ballon tape un tibia. Puis le sien. Il sort du mur en roulant.")]).catch(() => {})
           await c.wait(0.5)
-          c.cam({ kind: 'over', who: 'B', to: 'R', dist: 3.4, height: 2.3 }, false)
+          c.cam({ kind: 'over', who: 'B', to: 'R', dist: 5.6, height: 4.2, mix: 0.45 }, false)
           await c.say([N("Droit vers BriBri."), N("Et le temps s'arrête.")])
           c.slow(0.1)
           c.look('B', 'R')

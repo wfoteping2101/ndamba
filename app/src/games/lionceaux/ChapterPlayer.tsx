@@ -87,9 +87,11 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
   useEffect(() => {
     const stage = s?.st.view.stage
     if (!stage) return
+    // the subtitles and the pad cover the bottom of the picture while you play: frame the action above
     if (portrait && lowered && !pad) stage.setInsets(0, promptUp ? 190 : 64, 0, 400)
+    else if (lowered) stage.setInsets(0, promptUp ? 56 : 0, 0, vp.h < 520 ? 70 : 120)
     else stage.setInsets(0, 0, 0, 0)
-  }, [s, portrait, lowered, pad, promptUp])
+  }, [s, portrait, lowered, pad, promptUp, vp.h])
   // a football moment on a phone held upright: suggest turning it, for a few seconds
   const [rotateHint, setRotateHint] = useState(false)
   const playBeat = !!st && st.kind === 'play'

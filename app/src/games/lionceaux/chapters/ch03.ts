@@ -186,7 +186,7 @@ export const CH03: ChapterScript = {
           c.cam({ kind: 'match' })
           c.go('M', [34, 21], 0.95)
           await c.pass('O', 'B', { lofted: true, flight: 1.3 })
-          c.cam({ kind: 'over', who: 'B', to: 'M', dist: 3.2, height: 2.2 })
+          c.cam({ kind: 'over', who: 'B', to: 'M', dist: 5.6, height: 4.2, mix: 0.45 })
           await c.say([N("Le ballon arrive à BriBri.")])
         },
         after: async (c) => {
