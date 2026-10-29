@@ -62,11 +62,11 @@ function crowdMaterial(time: { value: number }) {
   return m
 }
 
-export interface CrowdOptions { shirts?: string[]; bottoms?: string[] }
+export interface CrowdOptions { shirts?: string[]; bottoms?: string[]; skins?: string[]; hairs?: string[] }
 
 /** Instanced crowd at the given spots (three coordinates; for sitters, p is the seat). */
 export function crowdMeshes(spots: Spot[], rnd: () => number, shadows: boolean, opts: CrowdOptions = {}) {
-  const shirts = opts.shirts ?? SHIRTS, bottoms = opts.bottoms ?? BOTTOMS
+  const shirts = opts.shirts ?? SHIRTS, bottoms = opts.bottoms ?? BOTTOMS, skins = opts.skins ?? SKINS, hairs = opts.hairs ?? HAIRS
   const time = { value: 0 }
   const group = new THREE.Group()
   group.name = 'crowd'
@@ -80,8 +80,8 @@ export function crowdMeshes(spots: Spot[], rnd: () => number, shadows: boolean, 
     const pagne = v === 'womanStand' || v === 'fanWomanSit'
     return {
       s, v, sc: (s.scale ?? 1) * (adult ? 0.94 + rnd() * 0.12 : 0.88 + rnd() * 0.24), turn: (rnd() - 0.5) * (s.variant ? 0.35 : 0.7), bounce: s.bounce ?? 0, phase: rnd(),
-      skin: SKINS[Math.floor(rnd() * SKINS.length)], shirt: pagne ? PAGNES[Math.floor(rnd() * PAGNES.length)] : shirts[Math.floor(rnd() * shirts.length)],
-      bottom: pagne ? PAGNES[Math.floor(rnd() * PAGNES.length)] : bottoms[Math.floor(rnd() * bottoms.length)], hair: pagne ? PAGNES[Math.floor(rnd() * PAGNES.length)] : HAIRS[Math.floor(rnd() * HAIRS.length)],
+      skin: skins[Math.floor(rnd() * skins.length)], shirt: pagne ? PAGNES[Math.floor(rnd() * PAGNES.length)] : shirts[Math.floor(rnd() * shirts.length)],
+      bottom: pagne ? PAGNES[Math.floor(rnd() * PAGNES.length)] : bottoms[Math.floor(rnd() * bottoms.length)], hair: pagne ? PAGNES[Math.floor(rnd() * PAGNES.length)] : hairs[Math.floor(rnd() * hairs.length)],
     }
   })
   const want = VARIANTS.filter((v) => people.some((p) => p.v === v))

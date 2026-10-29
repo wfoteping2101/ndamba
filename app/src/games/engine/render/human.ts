@@ -387,6 +387,84 @@ function trouserMap(color: string, stripe: string): THREE.Texture {
   return t
 }
 
+/** Straight hair: fine strands running from the crown down (u round the head, v down), light and dark. */
+function strandMap(): THREE.Texture {
+  const key = 'strands'
+  const hit = texCache.get(key)
+  if (hit) return hit
+  const c = document.createElement('canvas')
+  c.width = 512; c.height = 256
+  const g = c.getContext('2d')!
+  g.fillStyle = '#e6e6e6'; g.fillRect(0, 0, 512, 256)
+  let s = 7
+  const rnd = () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296 }
+  for (let i = 0; i < 900; i++) {
+    const x = rnd() * 512, w = 0.6 + rnd() * 1.8, v = rnd()
+    g.fillStyle = v < 0.5 ? `rgba(90,90,90,${0.25 + rnd() * 0.35})` : `rgba(255,255,255,${0.25 + rnd() * 0.45})`
+    g.fillRect(x, 0, w, 256)
+  }
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  t.flipY = false
+  t.wrapS = THREE.RepeatWrapping
+  t.repeat.set(2, 1)
+  texCache.set(key, t)
+  return t
+}
+
+/** A training bib: an open mesh in the colour, the number big on the back and small on the chest. */
+function bibMap(color: string, num: number | undefined, meta: Meta): THREE.Texture {
+  const key = `bib|${color}|${num}`
+  const hit = texCache.get(key)
+  if (hit) return hit
+  const S = 512
+  const c = document.createElement('canvas')
+  c.width = c.height = S
+  const g = c.getContext('2d')!
+  g.fillStyle = color; g.fillRect(0, 0, S, S)
+  // the mesh: a grid of little darker holes
+  g.fillStyle = new THREE.Color(color).multiplyScalar(0.62).getStyle()
+  for (let y = 0; y < S; y += 5) for (let x = (y / 5) % 2 ? 2 : 0; x < S; x += 5) g.fillRect(x, y, 2, 2)
+  if (num !== undefined) {
+    const r = meta.kitAtlas.torso
+    const T = { x: r[0] * S, y: (1 - r[1] - r[3]) * S, w: r[2] * S, h: r[3] * S }
+    const ux = (u: number) => T.x + u * T.w, vy = (v: number) => T.y + (1 - v) * T.h
+    g.fillStyle = '#f4f2ec'; g.textAlign = 'center'; g.textBaseline = 'middle'
+    g.font = `800 ${Math.round(T.h * 0.32)}px Archivo, system-ui, sans-serif`
+    g.fillText(String(num), ux(0.75), vy(0.55))
+    g.font = `800 ${Math.round(T.h * 0.14)}px Archivo, system-ui, sans-serif`
+    g.fillText(String(num), ux(0.25), vy(0.62))
+  }
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  t.flipY = false
+  t.anisotropy = 4
+  texCache.set(key, t)
+  return t
+}
+
+/** A padded coat: the colour, quilted in channels (a darker seam, a light ridge between). */
+function quiltMap(color: string): THREE.Texture {
+  const key = `quilt|${color}`
+  const hit = texCache.get(key)
+  if (hit) return hit
+  const c = document.createElement('canvas')
+  c.width = 64; c.height = 256
+  const g = c.getContext('2d')!
+  const base = new THREE.Color(color)
+  for (let y = 0; y < 256; y++) {
+    const ph = (y % 13) / 13
+    const k = ph < 0.12 ? 0.74 : 0.92 + 0.1 * Math.sin(ph * Math.PI)
+    g.fillStyle = base.clone().multiplyScalar(k).getStyle()
+    g.fillRect(0, y, 64, 1)
+  }
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  t.flipY = false
+  texCache.set(key, t)
+  return t
+}
+
 /** Hair textures: cornrow lines, BriBri's shaved part on his left. */
 function hairMap(look: Look): THREE.Texture | null {
   if (look.hair !== 'cornrows' && !look.part) return null
@@ -447,7 +525,7 @@ function trimMaterial(color: string, trim: string, opts: { map?: THREE.Texture; 
 
 const HAIR_PIECES: Record<Look['hair'], string[]> = {
   crop: ['hair_crop'], cornrows: ['hair_crop'], afro: ['hair_afro'], twists: ['hair_crop', 'hair_twists'], puff: ['hair_crop', 'hair_puff'],
-  bald: [], long: ['hair_afro'], cap: ['hair_crop', 'cap_crown', 'cap_brim'],
+  bald: [], long: ['hair_long'], ponytail: ['hair_pony'], cap: ['hair_crop', 'cap_crown', 'cap_brim'],
 }
 
 export class Human implements Figure {
@@ -483,13 +561,16 @@ export class Human implements Figure {
   private build(a: Archetype, asset: Asset) {
     const look = this.look
     const model = SkeletonUtils.clone(asset.gltf.scene)
-    const show = new Set<string>(['body', 'eye_l', 'eye_r', 'upper-teeth', 'lower-teeth', 'tongue', 'calves', 'thighs', 'forearms', ...HAIR_PIECES[look.hair]])
+    const has = (n: string) => asset.meta.pieces.includes(n)
+    // long hair needs the bob piece (older bodies fall back to the soft afro)
+    const hairPieces = look.hair === 'long' && !has('hair_long') ? ['hair_afro'] : look.hair === 'ponytail' && !has('hair_pony') ? ['hair_crop'] : HAIR_PIECES[look.hair]
+    const show = new Set<string>(['body', 'eye_l', 'eye_r', 'upper-teeth', 'lower-teeth', 'tongue', 'calves', 'thighs', 'forearms', ...hairPieces])
     const long = !!look.jacket
     const trousers = !!look.trousers
-    const has = (n: string) => asset.meta.pieces.includes(n)
-    if (look.dress && has('skirt')) { show.add('dress_top'); show.add('skirt') }
+    const coat = !!look.coat && has('coat')
+    if (look.dress && has('skirt')) { show.add(coat ? 'coat' : 'dress_top'); show.add('skirt') }
     else {
-      show.add(long && has('longsleeves') ? 'longsleeves' : 'shirt')
+      show.add(coat ? 'coat' : long && has('longsleeves') ? 'longsleeves' : 'shirt')
       if (trousers && has('trousers')) show.add('trousers')
       else { show.add('shorts'); show.add('sock_l'); show.add('sock_r') }
     }
@@ -497,13 +578,21 @@ export class Human implements Figure {
     if (look.hat && has('hat_crown')) { for (const h of HAIR_PIECES[look.hair]) show.delete(h); show.add('hat_crown'); show.add('hat_brim'); if (look.hatFlowers) show.add('hat_flowers') }
     // skin that clothes cover is not drawn (no poking through when the knees bend)
     if (show.has('skirt') || show.has('trousers')) { show.delete('thighs'); show.delete('calves') }
-    if (show.has('longsleeves')) show.delete('forearms')
+    if (show.has('longsleeves') || show.has('coat')) show.delete('forearms')
     if (look.beard && has('beard')) show.add('beard')
     if (look.glasses && has('glasses')) show.add('glasses')
     if (look.cane && has('cane')) show.add('cane')
     if (look.earrings && has('earrings')) show.add('earrings')
     const shoes = look.shoes ?? 'boots'
     if (shoes === 'sandals') show.add('feet')
+    if (shoes === 'socks' || shoes === 'slides') {
+      // under long trousers, ankle socks (knee socks would show through the cloth)
+      const low = show.has('trousers') && has('socklow_l')
+      show.add(low ? 'socklow_l' : 'sock_l'); show.add(low ? 'socklow_r' : 'sock_r')
+      if (low) { show.delete('sock_l'); show.delete('sock_r') }
+    }
+    if (shoes === 'slides' && has('slide_l')) { show.add('slide_l'); show.add('slide_r') }
+    if (look.bib && has('bib')) show.add('bib')
     if (shoes === 'boots') { show.add('boot_l'); show.add('boot_r') } else if (shoes === 'trainers') { show.add('trainer_l'); show.add('trainer_r') } else if (shoes === 'shoes') { show.add(asset.meta.pieces.includes('shoe_l') ? 'shoe_l' : 'trainer_l'); show.add(asset.meta.pieces.includes('shoe_r') ? 'shoe_r' : 'trainer_r') }
     if (look.gloves) { show.add('glove_l'); show.add('glove_r') }
 
@@ -535,6 +624,8 @@ export class Human implements Figure {
             diffuseColor.a = smoothstep(0.0, 0.35, vFade * 1.35 - n * 0.6); }`)
     }
     hairEdge.customProgramCacheKey = () => 'hair-edge'
+    // straight hair (the bob): smooth, with a soft sheen along it, not the curl of the fur shells
+    const hairLong = new THREE.MeshPhysicalMaterial({ color: look.hairColor, map: strandMap(), roughness: 0.5, sheen: 0.6, sheenRoughness: 0.4, sheenColor: new THREE.Color(look.hairColor).lerp(new THREE.Color('#ffffff'), 0.35), clearcoat: 0.18, clearcoatRoughness: 0.45 })
     const eye = eyeMaterial()
     const teeth = new THREE.MeshStandardMaterial({ color: '#e8e1d2', roughness: 0.35 })
     const mouth = new THREE.MeshStandardMaterial({ color: '#4a1f1c', roughness: 0.6 })
@@ -547,24 +638,31 @@ export class Human implements Figure {
     const hatM = new THREE.MeshPhysicalMaterial({ color: look.hat ?? '#f2e2b8', roughness: 0.85, sheen: 0.3 })
     const flowers = new THREE.MeshStandardMaterial({ color: look.hatFlowers ?? '#d6457a', roughness: 0.6 })
     const beardM = new THREE.MeshPhysicalMaterial({ color: look.beard ?? look.hairColor, roughness: 0.9, sheen: 0.6, sheenColor: new THREE.Color('#8a8070'), normalMap: curlNormal(), normalScale: new THREE.Vector2(0.8, 0.8) })
-    const glassesM = new THREE.MeshStandardMaterial({ color: '#1b1b1d', roughness: 0.3, metalness: 0.6 })
+    const glassesM = new THREE.MeshStandardMaterial({ color: look.glassesColor ?? '#1b1b1d', roughness: 0.3, metalness: look.glassesColor ? 0.1 : 0.6 })
     const caneM = new THREE.MeshStandardMaterial({ color: '#6b4a2e', roughness: 0.7 })
     const gold = new THREE.MeshStandardMaterial({ color: look.earrings ?? '#e6b640', roughness: 0.25, metalness: 1 })
+    // the coat: padded nylon, quilted in horizontal channels
+    const coatM = trimMaterial(look.coat ?? look.shirt, look.coat ?? look.shirt, { map: quiltMap(look.coat ?? look.shirt), collar: 0, cuff: 0, hem: 0, rough: 0.46, sheen: 0.55 })
+    // (its lining shows at the collar and the cuffs rather than a hole)
+    coatM.side = THREE.DoubleSide
+    const bibM = trimMaterial(look.bib ?? '#f26b1d', look.bib ?? '#f26b1d', { map: bibMap(look.bib ?? '#f26b1d', look.bibNumber, asset.meta), collar: 0, cuff: 0, hem: 0, rough: 0.7, sheen: 0.3 })
+    bibM.side = THREE.DoubleSide
     const sock = (col: string) => trimMaterial(col, col, { collar: 0, cuff: 0, hem: 0, rough: 0.85, sheen: 0.6 })
     const sockL = sock(look.sockL), sockR = sock(look.sockR)
     // socks and shoes sit millimetres above the skin: win the depth test at a distance
-    for (const m of [sockL, sockR]) { m.polygonOffset = true; m.polygonOffsetFactor = -2; m.polygonOffsetUnits = -2 }
-    const soleCol = shoes === 'boots' ? '#1a1714' : '#ece8de'
+    // (under long trousers the trousers must win instead: the sock only shows at the foot)
+    if (!show.has('trousers')) for (const m of [sockL, sockR]) { m.polygonOffset = true; m.polygonOffsetFactor = -2; m.polygonOffsetUnits = -2 }
+    const soleCol = shoes === 'boots' ? '#1a1714' : shoes === 'slides' ? new THREE.Color(look.boots).multiplyScalar(0.7).getStyle() : '#ece8de'
     const shoe = new THREE.MeshPhysicalMaterial({ color: look.boots, roughness: shoes === 'boots' ? 0.35 : 0.6, clearcoat: shoes === 'boots' ? 0.6 : 0.1, clearcoatRoughness: 0.3 })
     withMasks(shoe, `diffuseColor.rgb = mix(diffuseColor.rgb, uSole, step(0.5, vMask.r));`, { uSole: { value: new THREE.Color(soleCol) } })
     const gloves = new THREE.MeshPhysicalMaterial({ color: look.gloves ?? '#d9cfbd', roughness: 0.7, sheen: 0.4 })
     const cap = new THREE.MeshPhysicalMaterial({ color: look.cap ?? '#6f6a62', roughness: 0.8, sheen: 0.4 })
-    this.mats.push(skin, hair, hairEdge, eye, teeth, mouth, shirt, shorts, sockL, sockR, shoe, gloves, cap, dressTop, skirtM, wrap, hatM, flowers, beardM, glassesM, caneM, gold)
+    this.mats.push(bibM, hairLong, coatM, skin, hair, hairEdge, eye, teeth, mouth, shirt, shorts, sockL, sockR, shoe, gloves, cap, dressTop, skirtM, wrap, hatM, flowers, beardM, glassesM, caneM, gold)
     // after a mud fight: clothes, socks, shoes and hair browned, a little on the skin
     if (look.mud) {
       const mudC = new THREE.Color('#5c3522'), k = Math.min(1, look.mud)
       const tint = (m: THREE.MeshStandardMaterial, f: number) => { m.color.lerp(mudC, Math.min(0.85, k * f)) }
-      for (const m of [shirt, shorts, dressTop, skirtM]) tint(m, 0.5)
+      for (const m of [shirt, shorts, dressTop, skirtM, coatM]) tint(m, 0.5)
       for (const m of [sockL, sockR, shoe]) tint(m, 0.8)
       tint(hair, 0.4); tint(hairEdge, 0.4)
       skin.color.lerp(new THREE.Color('#8a5a40'), k * 0.16)
@@ -572,15 +670,18 @@ export class Human implements Figure {
     const matFor = (n: string): THREE.Material => {
       if (n === 'body' || n === 'feet' || n === 'calves' || n === 'thighs' || n === 'forearms') return skin
       if (n === 'hair_wrap' || n === 'wrap_knot') return wrap
+      if (n === 'hair_long' || n === 'hair_pony') return hairLong
       if (n.startsWith('hair_')) return hair
       if (n.startsWith('eye_')) return eye
       if (n.endsWith('teeth')) return teeth
       if (n === 'tongue') return mouth
       if (n === 'shirt' || n === 'longsleeves') return shirt
+      if (n === 'coat') return coatM
+      if (n === 'bib') return bibM
       if (n === 'shorts' || n === 'trousers') return shorts
-      if (n === 'sock_l') return sockL
-      if (n === 'sock_r') return sockR
-      if (n.startsWith('boot_') || n.startsWith('trainer_') || n.startsWith('shoe_')) return shoe
+      if (n === 'sock_l' || n === 'socklow_l') return sockL
+      if (n === 'sock_r' || n === 'socklow_r') return sockR
+      if (n.startsWith('boot_') || n.startsWith('trainer_') || n.startsWith('shoe_') || n.startsWith('slide_')) return shoe
       if (n.startsWith('glove_')) return gloves
       if (n.startsWith('cap_')) return cap
       if (n === 'dress_top') return dressTop

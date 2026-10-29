@@ -18,6 +18,8 @@ export type CastId =
   | 'pereSamuel' | 'inconnue' | 'president' | 'pereRadio'
   | 'enfants' | 'passager' | 'dame' | 'vendeur' | 'cousin' | 'voix' | 'chevre' | 'femmeNjangi' | 'mamaFotso' | 'mamaNgoo' | 'mamanTchinda' | 'vieilleDame'
   | 'tambour' | 'foule' | 'capPanthere' | 'hautParleur'
+  | 'anon' | 'diego' | 'hayesMme' | 'hayesM' | 'biscuit' | 'patterson' | 'maitresse' | 'coreenne' | 'guatemala' | 'teeGris' | 'animateur'
+  | 'tyler' | 'whitfield' | 'marcus' | 'copains' | 'file' | 'garcon'
 
 export interface CastMember { id: CastId; name: string; color: string; look: Look; height?: number }
 
@@ -97,6 +99,29 @@ export const CAST: Record<CastId, CastMember> = {
   foule: { id: 'foule', name: 'La foule', color: '#e2c26a', look: base({}) },
   capPanthere: { id: 'capPanthere', name: 'Le capitaine des Panthères', color: '#d9a400', look: base({ hair: 'crop', shirt: '#f0c419', shirtTrim: '#1b1b1b', shorts: '#1b1b1b', sockL: '#f0c419', sockR: '#f0c419', height: 1.2, build: 1.12, chestMark: 'spots', chestMarkColor: '#1b1b1b' }) },
   hautParleur: { id: 'hautParleur', name: 'Le haut-parleur', color: '#cfd8de', look: base({}) },
+  // a line the book does not attribute: shown without a name
+  anon: { id: 'anon', name: '', color: '#F6F7F2', look: base({}) },
+  // Part II, Waldorf (tome1/BIBLE.md and notes/part2.md): Diego Ramírez, 11, Salvadoran-American, « cheveux
+  // noirs dressés sur la tête »; the Hayes, an old couple next door (he very tall and quiet, she with a big
+  // laugh and a sweet potato pie) and Biscuit (« bas sur pattes, oreilles immenses »); Mrs. Patterson, the
+  // ESL teacher (« des lunettes rouges au bout d'une chaînette, un gilet aux poches pleines de feutres »)
+  diego: { id: 'diego', name: 'Diego', color: '#2f6fb0', look: base({ skin: '#a8714c', hair: 'crop', shirt: '#2f6fb0', shirtTrim: '#f2f2ee', shorts: '#1d1d1d', sockL: '#f2f2ee', sockR: '#f2f2ee', shoes: 'trainers', boots: '#e6e0d4', height: 0.97 }) },
+  hayesMme: { id: 'hayesMme', name: 'Mrs. Hayes', color: '#a8556a', look: base({ kid: false, woman: true, skin: '#6e4632', hair: 'puff', hairColor: '#d6d2cc', shirt: '#a8556a', jacket: '#e9e2d4', trousers: '#3a3a44', shoes: 'shoes', boots: '#2a2420', elder: true, build: 1.12, glasses: true }) },
+  hayesM: { id: 'hayesM', name: 'Mr. Hayes', color: '#6a5a4a', look: base({ kid: false, skin: '#6e4632', hair: 'bald', shirt: '#5a4a3a', jacket: '#7a6a58', trousers: '#2e3138', shoes: 'shoes', boots: '#2a2420', elder: true, height: 1.12, beard: '#cfcac2' }) },
+  biscuit: { id: 'biscuit', name: 'Biscuit', color: '#c8955a', look: base({ animal: 'dog', shirt: '#c8955a', shorts: '#6b4126' }) },
+  patterson: { id: 'patterson', name: 'Mrs. Patterson', color: '#c9362b', look: base({ kid: false, woman: true, skin: '#e2b896', hair: 'long', hairColor: '#8a6a4a', shirt: '#7a8a5a', jacket: '#e9e2d4', trousers: '#4a4a54', shoes: 'shoes', boots: '#2a2420', glasses: true, glassesColor: '#c9362b' }) },
+  maitresse: { id: 'maitresse', name: 'La maîtresse', color: '#5a7a9a', look: base({ kid: false, woman: true, skin: '#c99b78', hair: 'long', hairColor: '#3a2a1e', shirt: '#5a7a9a', jacket: '#5a7a9a', trousers: '#2e3138', shoes: 'shoes', boots: '#2a2420' }) },
+  coreenne: { id: 'coreenne', name: 'La fille de Corée', color: '#d96a8a', look: base({ girl: true, skin: '#e8c4a0', hair: 'long', hairColor: '#141414', shirt: '#d96a8a', jacket: '#d96a8a', trousers: '#3a4a6a', shoes: 'trainers', boots: '#e6e0d4', height: 0.97 }) },
+  guatemala: { id: 'guatemala', name: 'Le garçon du Guatemala', color: '#3a7a5a', look: base({ skin: '#b07a52', hair: 'crop', shirt: '#3a7a5a', jacket: '#3a7a5a', trousers: '#2f3a4a', shoes: 'trainers', boots: '#e6e0d4' }) },
+  teeGris: { id: 'teeGris', name: 'Le garçon au tee-shirt gris', color: '#8a8f94', look: base({ skin: '#e6c3a3', hair: 'crop', hairColor: '#5a3a22', shirt: '#8a8f94', shirtTrim: '#8a8f94', shorts: '#2a2a2a', sockL: '#f2f2ee', sockR: '#f2f2ee', shoes: 'trainers', boots: '#e6e0d4', height: 1.04 }) },
+  animateur: { id: 'animateur', name: 'Le monsieur du centre', color: '#c9362b', look: base({ kid: false, skin: '#d9b08c', hair: 'crop', hairColor: '#4a3a2a', shirt: '#c9362b', collar: '#c9362b', trousers: '#2a2e36', trouserStripe: '#f2f2ee', shoes: 'trainers', boots: '#e6e0d4', build: 1.08 }) },
+  // chapter 10, the tryouts under the dome
+  tyler: { id: 'tyler', name: 'Tyler Brooks', color: '#e8e2c8', look: base({ skin: '#f0d2b8', hair: 'crop', hairColor: '#efe8cf', shirt: '#e9e9e4', shirtTrim: '#e9e9e4', shorts: '#1d1d1d', sockL: '#141414', sockR: '#141414', boots: '#141414', build: 1.26, height: 1.09 }) },
+  whitfield: { id: 'whitfield', name: 'Coach Whitfield', color: '#2f4a7a', look: base({ kid: false, woman: true, skin: '#ead0b4', hair: 'ponytail', hairColor: '#5a3a22', shirt: '#1f2a44', jacket: '#1f2a44', trousers: '#1f2a44', trouserStripe: '#f2f2ee', shoes: 'trainers', boots: '#e6e0d4', height: 1.08 }) },
+  marcus: { id: 'marcus', name: 'Marcus Bell', color: '#8a8f94', look: base({ kid: false, skin: '#8a5a3c', hair: 'crop', shirt: '#8a8f94', jacket: '#8a8f94', trousers: '#2f3a4a', shoes: 'trainers', boots: '#e6e0d4', glasses: true, build: 0.84, height: 1.02 }) },
+  copains: { id: 'copains', name: 'Les copains de Tyler', color: '#cfd8de', look: base({}) },
+  file: { id: 'file', name: 'La file', color: '#e2c26a', look: base({}) },
+  garcon: { id: 'garcon', name: 'Un garçon', color: '#cfd8de', look: base({}) },
 }
 
 /** A kid of the neighbourhood (crowds): varied shirts, same skin family. */

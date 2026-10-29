@@ -11,6 +11,7 @@ import { sfx } from '../../shared/audio'
 import { CAST, type CastId } from '../cast'
 import { framePose } from './camera'
 import { Cancelled, Choreo, Superseded, type ChoreoHost } from './choreo'
+import type { ItemKind } from './items'
 import { makeChallenge, type Challenge, type ControlKey } from './challenges'
 import { StoryStage } from './stage'
 import type { Mood } from '../sets/common'
@@ -113,10 +114,9 @@ export class StorySession implements ChoreoHost {
   }
   camera(spec: CamSpec, cut = true) {
     this.follow = null
-    if (spec.kind === 'match') { this.st.view.setCamera('broadcast', cut); return }
-    if (spec.kind === 'follow') { this.follow = spec }
+    if (spec.kind === 'follow' || spec.kind === 'match') { this.follow = spec }
     const pose = framePose(spec, this.st.world, this.st.frame, (w) => this.choreo.pt(w))
-    if (pose) this.st.view.rig.setShot(pose, { cut, rate: spec.kind === 'follow' ? 3.5 : cut ? 9 : 2.2 })
+    if (pose) this.st.view.rig.setShot(pose, { cut, rate: spec.kind === 'follow' ? 3.5 : spec.kind === 'match' ? 2 : cut ? 9 : 2.2 })
   }
 
   say(lines: Line[]): Promise<void> {
@@ -148,6 +148,7 @@ export class StorySession implements ChoreoHost {
     if (lw && this.clock - lw.at >= lw.min) { this.lineWait = null; this.set({ line: null }); lw.resolve() }
   }
   cue(name: string) { this.st.set?.cue?.(name) }
+  item(holder: string, kind: ItemKind | null) { this.st.item(holder, kind) }
   /** QA: see Loop.catchUp */
   setCatchUp(n: number) { this.st.loop.catchUp = n }
   /** QA: shorter reading times */
@@ -196,6 +197,7 @@ export class StorySession implements ChoreoHost {
     this.st.view.overlays.clear('story')
     if (b.keep) return
     this.st.holdProp(null)
+    this.st.clearItems()
     this.st.load(b.place)
     this.st.clear()
     // everybody first, then where they look (they may look at each other)
@@ -280,6 +282,7 @@ export class StorySession implements ChoreoHost {
       case 'ballLook': this.st.view.ball.setLook(a.look, a.flat); break
       case 'prop': this.st.holdProp(a.holder, a.look); break
       case 'cue': this.cue(a.name); break
+      case 'item': this.item(a.id, a.kind); break
     }
   }
 

@@ -37,6 +37,8 @@ export interface ChoreoHost {
   spawn(a: ActorSpec): unknown
   /** a moment of the set (the plane takes off) */
   cue(name: string): void
+  /** something small in someone's hands (null takes it away) */
+  item(holder: string, kind: import('./items').ItemKind | null): void
 }
 
 interface Waiter { until: () => boolean; resolve: () => void; reject: (e: Error) => void; deadline: number }
@@ -210,6 +212,7 @@ export class Choreo {
   sfx(kind: Parameters<typeof sfx>[0]) { sfx(kind) }
   /** the set plays one of its moments (the plane takes off) */
   cue(name: string) { this.host.cue(name) }
+  item(id: string, kind: import('./items').ItemKind | null) { this.host.item(id, kind) }
   shake(a = 0.4) { this.host.shake(a) }
   /** Someone comes on stage (Maman with her torch, Papa and BriBri behind her). */
   spawn(a: ActorSpec) { this.host.spawn(a) }

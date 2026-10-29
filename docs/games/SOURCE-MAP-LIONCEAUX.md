@@ -192,7 +192,7 @@ Every line is the chapter's text. Played: the ten passes with Mami's ball (the w
 | 7 | mur | scene | bona (golden) | cutscene | 5 |
 | 8 | bouger | scene | bona (golden) | cutscene | 1 |
 | 9 | attirer | play | bona (golden) | feint (Dribbler) to draw 2 opponents, then pass to Radio | 5 |
-| 10 | mains | scene | bona (golden) | cutscene | 8 |
+| 10 | mains | scene | bona (golden) | cutscene | 9 |
 | 11 | zeroZero | scene | bona (golden) | cutscene | 3 |
 | 12 | tirs | scene | bona (golden) | cutscene | 15 |
 | 13 | choix | play | bona (golden) | choose: « La frappe du tonnerre » (canon); locked with the book's reason: « À ras de terre, dans le coin » | 5 |
@@ -210,5 +210,36 @@ Every line is the chapter's text. Played: the ten passes with Mami's ball (the w
 | 25 | decollage | scene | avion (interior) | cutscene | 7 |
 | 26 | lesson | lesson |  | the notebook: « Leçon du Ballon n°8 », then play its diagram (optional) |  |
 
-26 beats, 7 played, 156 subtitle lines from the chapter.
+26 beats, 7 played, 157 subtitle lines from the chapter.
+
+## Chapitre 9 : La neige de Waldorf (POV BriBri)
+
+Book: `tome1/chapters/09-la-neige-de-waldorf.md`. Script: `app/src/games/lionceaux/chapters/ch09.ts`.
+
+Every line is the chapter's text; lines the book gives to nobody in particular are shown without a name. Played: BriBri's first « Thank you » to Mrs. Patterson; the ten passes in the basement with Mami's ball (canon: ten, the ball never touches the floor); the third ball of the futsal, one touch to Diego on the left (canon: Diego, then Kaydoudou between the keeper's legs); Kaydoudou's « semelle caramel » against the defenders. The snow, the neighbours, the school and the bus are cutscenes.
+
+| # | beat | kind | place | what the player does | book lines |
+|---|---|---|---|---|---|
+| 1 | ciel | scene | waldorf (snow) | cutscene | 23 |
+| 2 | cave | scene | maisonUS (interiorNight) | cutscene | 5 |
+| 3 | voisins | scene | waldorf (winter) | cutscene | 16 |
+| 4 | bus | scene | waldorf (winter) | cutscene | 3 |
+| 5 | classe | scene | classe (interior) | cutscene | 7 |
+| 6 | patterson | scene | classe (interior) | cutscene | 18 |
+| 7 | merci | play | classe (interior) | gesture: « Remercier Mrs. Patterson » | 7 |
+| 8 | retour | scene | bus (interior) | cutscene | 5 |
+| 9 | chapeaux | scene | waldorf (winter) | cutscene | 2 |
+| 10 | jongles | scene | maisonUS (interiorNight) | cutscene | 18 |
+| 11 | dixPasses | play | maisonUS (interiorNight) | keep the ball up, 10 touches in rhythm |  |
+| 12 | dix | scene | maisonUS (interiorNight) | cutscene | 1 |
+| 13 | futsal | scene | maisonUS (interiorNight) | cutscene | 8 |
+| 14 | gymnase | scene | gymnase (interior) | cutscene | 16 |
+| 15 | avaler | scene | gymnase (interior) | cutscene | 6 |
+| 16 | uneTouche | play | gymnase (interior) | one-touch pass to Diego as the ball arrives | 14 |
+| 17 | caramel | play | gymnase (interior) | dribble past 3 defenders (Dribbler at the right moment) | 4 |
+| 18 | caramelFin | scene | gymnase (interior) | cutscene | 5 |
+| 19 | fontaine | scene | gymnase (interior) | cutscene | 14 |
+| 20 | lesson | lesson |  | the notebook: « Leçon du Ballon n°9 », then play its diagram (optional) |  |
+
+20 beats, 4 played, 172 subtitle lines from the chapter.
 

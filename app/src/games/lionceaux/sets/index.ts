@@ -6,8 +6,12 @@ import { buildBafoussam, hillPitch } from './bafoussam'
 import { MAISON_H, MAISON_W, MAMI_H, MAMI_W, buildMaison, buildMami, roomPitch } from './interiors'
 import { avionPitch, buildAvion } from './avion'
 import { buildCar, carPitch } from './car'
+import { buildWaldorf, waldorfPitch, type WaldorfOpts } from './waldorf'
+import { buildClasse, buildGym, buildMaisonUS, classePitch, gymPitch, maisonUsPitch } from './waldorfInside'
+import { buildBus, busPitch } from './bus'
+import { buildDome, buildParking, domePitch, parkingPitch, type DomeOpts } from './dome'
 
-export type PlaceId = 'bona' | 'maison' | 'mami' | 'colline' | 'avion' | 'car'
+export type PlaceId = 'bona' | 'maison' | 'mami' | 'colline' | 'avion' | 'car' | 'waldorf' | 'maisonUS' | 'classe' | 'gymnase' | 'bus' | 'dome' | 'parking'
 
 export interface SetDef {
   pitch(opts: Record<string, unknown>): PitchGeom
@@ -23,4 +27,12 @@ export const SETS: Record<PlaceId, SetDef> = {
   colline: { pitch: () => hillPitch(), build: (s, f) => buildBafoussam(s, f), shadowSize: 60 },
   avion: { pitch: () => avionPitch(), build: (s, f) => buildAvion(s, f), indoor: true, shadowSize: 40 },
   car: { pitch: () => carPitch(), build: (s, f) => buildCar(s, f), indoor: true, shadowSize: 14 },
+  // Part II, Waldorf (Maryland)
+  waldorf: { pitch: () => waldorfPitch(), build: (s, f, o) => buildWaldorf(s, f, o as WaldorfOpts), shadowSize: 60 },
+  maisonUS: { pitch: () => maisonUsPitch(), build: (s, f, o) => buildMaisonUS(s, f, o as { night?: boolean }), indoor: true, shadowSize: 18 },
+  classe: { pitch: () => classePitch(), build: (s, f) => buildClasse(s, f), indoor: true, shadowSize: 14 },
+  gymnase: { pitch: () => gymPitch(), build: (s, f) => buildGym(s, f), indoor: true, shadowSize: 34 },
+  bus: { pitch: () => busPitch(), build: (s, f) => buildBus(s, f), indoor: true, shadowSize: 14 },
+  dome: { pitch: () => domePitch(), build: (s, f, o) => buildDome(s, f, o as DomeOpts), indoor: true, shadowSize: 80 },
+  parking: { pitch: () => parkingPitch(), build: (s, f, o) => buildParking(s, f, o as { snow?: boolean }), shadowSize: 70 },
 }

@@ -7,7 +7,8 @@
       "brothers": "Les frères",
       "family": "La famille et Tonton Fokou",
       "team": "Les Lionceaux",
-      "quarter": "Le quartier"
+      "quarter": "Le quartier",
+      "waldorf": "Waldorf"
     },
     "notes": {
       "bribri": "12 ans, le grand frère. Grand et mince, une raie fine à gauche, le 8 vert délavé à col blanc. Il voit tout et parle avec les mains.",
@@ -22,7 +23,11 @@
       "samuel": "L'attaquant : il court comme une girafe et frappe comme une mule.",
       "ekotto": "Elle vend des beignets sous son parasol rouge : « Beignets gratuits pour celui qui marque ! »",
       "bile": "Le voisin au grillage surmonté de fil de fer barbelé.",
-      "bulldozer": "Junior Mvondo, capitaine des Requins de Bépanda : 12 ans, « mais on lui en donne quinze »."
+      "bulldozer": "Junior Mvondo, capitaine des Requins de Bépanda : 12 ans, « mais on lui en donne quinze ».",
+      "diego": "Diego Ramírez, onze ans, parents du Salvador. Petit et vif, les cheveux noirs dressés sur la tête, des yeux qui bougent autant que sa bouche. Traducteur officiel de la famille.",
+      "patterson": "La prof d'anglais des élèves venus d'ailleurs : des lunettes rouges au bout d'une chaînette, un gilet aux poches pleines de feutres, une voix qui prend son temps.",
+      "hayesMme": "La voisine : une vieille dame, une tarte à la patate douce et un rire énorme.",
+      "hayesM": "Le voisin : un vieux monsieur très grand, une pelle à neige. Il parle peu."
     }
   },
   "places": {
@@ -36,7 +41,15 @@
       "maison": "La maison, Douala",
       "mami": "Chez Mami, Bafoussam",
       "colline": "La colline, Bafoussam",
-      "avion": "Aéroport et avion"
+      "avion": "Aéroport et avion",
+      "waldorf": "Waldorf, la rue sous la neige",
+      "ecoleNeige": "Derrière l'école, sous la neige",
+      "maisonUS": "La maison de Waldorf",
+      "classe": "La classe de Mrs. Patterson",
+      "gymnase": "Le gymnase du centre",
+      "bus": "Le bus scolaire",
+      "parking": "Le dôme de Potomac Valley, dehors",
+      "dome": "Sous le dôme"
     },
     "moods": {
       "morning": "Matin",
@@ -48,7 +61,10 @@
       "overcast": "Ciel gris",
       "fog": "Brouillard",
       "interior": "Jour",
-      "interiorNight": "Ampoule du soir"
+      "interiorNight": "Ampoule du soir",
+      "snow": "Neige",
+      "winter": "Hiver, ciel clair",
+      "dome": "Dôme, projecteurs"
     }
   },
   "brand": "Lionceaux",
@@ -189,7 +205,11 @@
     "thunderIntro": "La frappe du tonnerre : choisis un côté et tire de toutes tes forces.",
     "saveIntro": "Tu es Ousmane. Le capitaine des Panthères s'avance.",
     "braceletIntro": "Lundi, à l'aéroport de Douala.",
-    "handIntro": "Les moteurs hurlent. BriBri ferme les yeux."
+    "handIntro": "Les moteurs hurlent. BriBri ferme les yeux.",
+    "merciIntro": "À la fin du cours, Mrs. Patterson s'approche du pupitre de BriBri.",
+    "basementIntro": "Au sous-sol, avec le ballon de Mami : les dix passes sans qu'il touche le sol.",
+    "futsalIntro": "Tu es BriBri. Troisième ballon : décide avant qu'il arrive.",
+    "caramelIntro": "Tu es Kaydoudou. Le ballon lourd colle sous ton pied : la semelle caramel."
   },
   "sketch": {
     "label": "Le cahier de BriBri : une ligne de trois ronds, un rond pour lui, une flèche polie et une flèche utile."
@@ -224,6 +244,7 @@
     "simple": "À ras de terre, dans le coin",
     "tonnerre": "La frappe du tonnerre",
     "bracelet": "Attacher le bracelet",
-    "main": "Poser ta main sur la sienne"
+    "main": "Poser ta main sur la sienne",
+    "merci": "Remercier Mrs. Patterson"
   }
 }

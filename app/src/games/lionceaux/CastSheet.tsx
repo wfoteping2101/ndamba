@@ -16,6 +16,7 @@ const GROUPS: { key: string; ids: CastId[] }[] = [
   { key: 'family', ids: ['mami', 'fokou', 'papa', 'maman'] },
   { key: 'team', ids: ['mireille', 'ousmane', 'radio', 'samuel'] },
   { key: 'quarter', ids: ['ekotto', 'bile', 'bulldozer'] },
+  { key: 'waldorf', ids: ['diego', 'patterson', 'hayesMme', 'hayesM'] },
 ]
 
 class Turntable {

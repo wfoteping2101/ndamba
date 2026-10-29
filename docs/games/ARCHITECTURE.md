@@ -35,7 +35,8 @@ MakeHuman / MPFB2 CC0 data files (base mesh, macro targets, the game_engine rig 
 
 - `build.py <archetype>` makes a rigged body (boy, boyLean, boyBig, girl, man, woman, womanBig, oldman,
   oldwoman), cuts garments from the body (`garments.py`: football shirt, shorts, socks, boots,
-  trainers, long sleeves, trousers, dress), grows hair (`hair.py`), paints skin and brows (`skin.py`),
+  trainers, long sleeves, trousers, a padded coat, dress), grows hair (`hair.py`, including a bob that
+  hangs from the widest part of the skull, clear of the neck), paints skin and brows (`skin.py`),
   decimates with protected seams (hands, feet, scalp), writes `public/jeux/humans/<arch>.glb` and `.json`.
 - `motions.py` retargets CMU motion capture (the cgspeed BVH release, free to use) onto the rig and
   writes `motions.bin` / `motions.json` (idle, walks, jog, run, sprint, strafes, kicks with both feet,
@@ -58,11 +59,14 @@ story/choreo.ts       the director's API used by the scripts (move, pass, shot, 
 story/challenges.ts   the played moments (dribble, oneTouch, juggle, support, lure, run, penalty,
                       choose, ritual, sketch, drive)
 story/camera.ts       framings (on, over, pose, follow, match) turned into camera poses
-story/stage.ts        the place: set, World, mood (light, sky, fog, rain), props, mud
+story/stage.ts        the place: set, World, mood (light, sky, fog, rain, snow), props, mud
+story/items.ts        small things held in the hands (a pie, a snow shovel, a card)
 story/text.ts         fragments, display, normalisation for the verbatim check
 sets/                 the places, built in code: Bonamoussadi (the red-earth pitch, mango tree,
                       Monsieur Bilé's wall, houses, drums, taxi), the family house, Mami's house,
-                      the Bafoussam hill, the coach, Douala airport and the plane
+                      the Bafoussam hill, the coach, Douala airport and the plane; Part II:
+                      Waldorf under the snow (street, school field), the house with its basement,
+                      the classroom, the school bus, the community centre gym
 cast.ts               who is who, with the looks the book and its character sheets fix
 lessons.ts            the 40 « Leçons du Ballon » as playable diagrams
 Notebook.tsx, LessonPlay.tsx, CastSheet.tsx, Places.tsx, SketchPad.tsx, progress.ts

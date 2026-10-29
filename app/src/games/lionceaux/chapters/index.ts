@@ -11,6 +11,7 @@ export const SCRIPTS: Partial<Record<number, () => Promise<ChapterScript>>> = {
   6: () => import('./ch06').then((m) => m.CH06),
   7: () => import('./ch07').then((m) => m.CH07),
   8: () => import('./ch08').then((m) => m.CH08),
+  9: () => import('./ch09').then((m) => m.CH09),
 }
 
 export const isPlayable = (n: number) => !!SCRIPTS[n]

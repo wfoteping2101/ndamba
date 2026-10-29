@@ -39,7 +39,7 @@ function placeOf(body, consts) {
   const ref = one(body, /place:\s*(\w+)/) ?? ''
   return consts[ref] ?? ref
 }
-const WHO = { B: 'BriBri', K: 'Kaydoudou', R: 'Radio', M: 'Mireille', O: 'Ousmane', SA: 'Samuel', J: 'Jules', F: 'Tonton Fokou' }
+const WHO = { B: 'BriBri', K: 'Kaydoudou', R: 'Radio', M: 'Mireille', O: 'Ousmane', SA: 'Samuel', J: 'Jules', F: 'Tonton Fokou', D: 'Diego' }
 const who = (id) => WHO[id] ?? id
 const quote = (l) => (l.startsWith('«') ? l : `« ${l} »`)
 

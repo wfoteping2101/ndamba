@@ -47,12 +47,22 @@ function ballTexture() {
 /** Story balls (Lionceaux): Mami's old brown leather ball, the same with its square patch of
  * red-and-yellow wax cloth (from chapter 2), then with the three signatures in black felt pen (the
  * evening of the final, chapter 8), and the plastic-bag ball of the Bafoussam cousins. */
-export type BallLook = 'ndamba' | 'mami' | 'mamiPatched' | 'mamiSigned' | 'bag' | 'plain'
+export type BallLook = 'ndamba' | 'mami' | 'mamiPatched' | 'mamiSigned' | 'bag' | 'plain' | 'futsal'
 function storyTexture(look: Exclude<BallLook, 'ndamba'>) {
   const c = document.createElement('canvas')
   c.width = 512; c.height = 256
   const g = c.getContext('2d')!
-  if (look === 'plain') {
+  if (look === 'futsal') {
+    // the community centre's futsal ball: « petit et lourd », white with blue and orange bands
+    g.fillStyle = '#f2f2ee'; g.fillRect(0, 0, 512, 256)
+    for (const [y, c] of [[70, '#1f4f9a'], [150, '#e8742a'], [205, '#1f4f9a']] as const) {
+      g.strokeStyle = c; g.lineWidth = 18
+      g.beginPath()
+      for (let x = 0; x <= 512; x += 8) g.lineTo(x, y + Math.sin(x / 512 * Math.PI * 4) * 22)
+      g.stroke()
+    }
+    for (let i = 0; i < 120; i++) { g.fillStyle = 'rgba(90,90,90,0.08)'; g.fillRect((i * 83) % 512, (i * 47) % 256, 3, 2) }
+  } else if (look === 'plain') {
     // an ordinary worn match ball: white panels, dark pentagons, scuffs of red earth
     g.fillStyle = '#efece3'; g.fillRect(0, 0, 512, 256)
     g.fillStyle = '#2a2a2a'
@@ -139,7 +149,7 @@ export class BallView {
     const m = this.mesh.material as THREE.MeshStandardMaterial
     m.map?.dispose()
     m.map = look === 'ndamba' ? ballTexture() : storyTexture(look)
-    m.roughness = look === 'bag' ? 0.8 : look === 'ndamba' ? 0.45 : 0.7
+    m.roughness = look === 'bag' ? 0.8 : look === 'ndamba' || look === 'futsal' ? 0.45 : 0.7
     m.needsUpdate = true
     this.flat = flat
     this.mesh.scale.set(1, 1, 1)

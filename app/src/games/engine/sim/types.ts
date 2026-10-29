@@ -5,14 +5,14 @@ export type Team = 'a' | 'b' | 'n'
 export type AnimState = 'idle' | 'move' | 'kick' | 'receive' | 'tackle' | 'dive' | 'celebrate' | 'dejected' | 'catch'
   // story poses (Lionceaux)
   | 'sit' | 'talk' | 'dance' | 'fist' | 'heart' | 'cry' | 'wave' | 'point' | 'hold' | 'juggle' | 'kneel' | 'palm' | 'sew' | 'lie'
-  | 'open' | 'mic' | 'hug' | 'sitGround' | 'climb' | 'shrug' | 'throw' | 'slip' | 'laugh' | 'embrace' | 'drum' | 'restL' | 'restR'
+  | 'open' | 'mic' | 'hug' | 'sitGround' | 'climb' | 'shrug' | 'throw' | 'slip' | 'laugh' | 'embrace' | 'drum' | 'restL' | 'restR' | 'sitHand' | 'sitHold'
 
 /** Looks for the procedural character (kit, skin, hair...). The renderer reads it, the sim ignores it. */
 export interface Look {
   /** covered in mud, 0..1 (clothes, socks and hair browned) */
   mud?: number
   skin: string
-  hair: 'crop' | 'twists' | 'afro' | 'bald' | 'cornrows' | 'puff' | 'long' | 'cap'
+  hair: 'crop' | 'twists' | 'afro' | 'bald' | 'cornrows' | 'puff' | 'long' | 'cap' | 'ponytail'
   hairColor: string
   shirt: string
   shirtTrim: string
@@ -30,6 +30,8 @@ export interface Look {
   /** BriBri's notebook, a headband, a bib... */
   prop?: 'notebook' | 'bib' | 'none'
   bib?: string
+  /** the number printed on a training bib (the tryouts: 33 and 34) */
+  bibNumber?: number
   gloves?: string
   /* ---- story looks (Lionceaux): all optional, the footballers never set them ---- */
   /** a collar on the shirt (jersey, polo) in this colour */
@@ -49,14 +51,17 @@ export interface Look {
   headwrap?: string
   /** a cap in this colour (when hair is 'cap') */
   cap?: string
-  /** shoes: football boots (default), trainers, sandals, town shoes */
-  shoes?: 'boots' | 'trainers' | 'sandals' | 'shoes'
+  /** shoes: football boots (default), trainers, sandals, town shoes, socks only, or claquettes over
+   *  socks (Kaydoudou in the snow in his pyjamas, the red sock and the yellow sock in his slides) */
+  shoes?: 'boots' | 'trainers' | 'sandals' | 'shoes' | 'socks' | 'slides'
   /** a thin shaved line in the hair, on the wearer's left or right */
   part?: 'L' | 'R'
   /** a gap between the front teeth */
   gap?: boolean
   beard?: string
   glasses?: boolean
+  /** the frames' colour (Mrs. Patterson's red glasses) */
+  glassesColor?: string
   earrings?: string
   /** an elder's slight stoop, a cane in the right hand */
   elder?: boolean
@@ -67,6 +72,8 @@ export interface Look {
   height?: number
   /** an open tracksuit top: `shirt` is the top (body and long sleeves), `jacket` is the T-shirt showing down the front */
   jacket?: string
+  /** a winter coat or anorak over everything (padded, long sleeves, to the hips): its colour */
+  coat?: string
   /** a mark on the shirt: a felt-pen shark fin, leopard spots */
   chestMark?: 'fin' | 'spots'
   chestMarkColor?: string
@@ -74,7 +81,7 @@ export interface Look {
   hat?: string
   hatFlowers?: string
   /** not a person: an animal crossing the pitch (shirt = coat colour) */
-  animal?: 'goat'
+  animal?: 'goat' | 'dog'
 }
 
 export interface PendingAction {

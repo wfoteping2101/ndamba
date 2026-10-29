@@ -26,23 +26,23 @@ PREVIEW = os.environ.get('PREVIEW_DIR', '/tmp/humans-preview')
 # Each archetype: body sliders and its wardrobe (every garment is exported; the game shows the ones a look needs)
 ARCHETYPES: dict[str, dict] = {
     'boy': dict(macro=Macro(gender=1.0, age=10.5, muscle=0.5, weight=0.42, height=0.55), kid=True,
-                wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
+                wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'coat', 'slides', 'lowsocks', 'bib'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
     'boyLean': dict(macro=Macro(gender=1.0, age=12, muscle=0.45, weight=0.25, height=0.7), kid=True,
-                    wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
+                    wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'coat', 'slides', 'lowsocks', 'bib'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
     'boyBig': dict(macro=Macro(gender=1.0, age=13, muscle=0.75, weight=0.72, height=0.8), kid=True,
-                   wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
+                   wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'coat', 'slides', 'lowsocks', 'bib'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
     'girl': dict(macro=Macro(gender=0.0, age=10.5, muscle=0.5, weight=0.42, height=0.6), kid=True,
-                 wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
+                 wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'coat', 'slides', 'lowsocks', 'bib'], hair=['crop', 'afro', 'twists', 'puff', 'cap', 'long', 'ponytail']),
     'man': dict(macro=Macro(gender=1.0, age=30, muscle=0.62, weight=0.48, height=0.55), kid=False,
-                wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'shoes', 'beard', 'glasses', 'cane'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
+                wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'shoes', 'beard', 'glasses', 'cane', 'coat', 'lowsocks'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
     'oldman': dict(macro=Macro(gender=1.0, age=64, muscle=0.4, weight=0.45, height=0.45), kid=False,
-                   wardrobe=['shirt', 'shorts', 'socks', 'trainers', 'longsleeves', 'trousers', 'shoes', 'beard', 'glasses', 'cane'], hair=['crop', 'cap']),
+                   wardrobe=['shirt', 'shorts', 'socks', 'trainers', 'longsleeves', 'trousers', 'shoes', 'beard', 'glasses', 'cane', 'coat', 'lowsocks'], hair=['crop', 'cap']),
     'woman': dict(macro=Macro(gender=0.0, age=34, muscle=0.45, weight=0.55, height=0.45), kid=False,
-                  wardrobe=['dress', 'shirt', 'trousers', 'shoes', 'earrings'], hair=['crop', 'puff', 'afro', 'wrap', 'hat']),
+                  wardrobe=['dress', 'shirt', 'trousers', 'shoes', 'earrings', 'longsleeves', 'coat'], hair=['crop', 'puff', 'afro', 'wrap', 'hat', 'long', 'ponytail']),
     'womanBig': dict(macro=Macro(gender=0.0, age=40, muscle=0.45, weight=0.85, height=0.45), kid=False,
-                     wardrobe=['dress', 'shirt', 'trousers', 'shoes', 'earrings'], hair=['crop', 'puff', 'afro', 'wrap', 'hat']),
+                     wardrobe=['dress', 'shirt', 'trousers', 'shoes', 'earrings', 'longsleeves', 'coat'], hair=['crop', 'puff', 'afro', 'wrap', 'hat', 'long', 'ponytail']),
     'oldwoman': dict(macro=Macro(gender=0.0, age=70, muscle=0.35, weight=0.55, height=0.35), kid=False,
-                     wardrobe=['dress', 'shirt', 'shoes', 'earrings', 'cane'], hair=['crop', 'puff', 'wrap', 'hat']),
+                     wardrobe=['dress', 'shirt', 'shoes', 'earrings', 'cane', 'longsleeves', 'trousers', 'coat'], hair=['crop', 'puff', 'wrap', 'hat']),
 }
 
 
@@ -64,6 +64,9 @@ def kit(body: G.Body, name: str, kid: bool) -> list[Piece]:
         return [G.shirt(body, sleeve=0.93, long_sleeves=True, hem=-0.02, loose=0.013, name='longsleeves')]
     if name == 'shorts':
         return [G.shorts(body, length=0.5 if kid else 0.42, loose=0.012)]
+    if name == 'coat':
+        # a winter coat, an anorak: over everything, long sleeves, down to the hips, padded
+        return [G.shirt(body, sleeve=0.95, long_sleeves=True, hem=-0.1, loose=0.024, name='coat')]
     if name == 'trousers':
         return [G.shorts(body, trousers=True, loose=0.011, name='trousers')]
     if name == 'socks':
@@ -72,6 +75,14 @@ def kit(body: G.Body, name: str, kid: bool) -> list[Piece]:
         return [G.shoe(body, 'l', kind='boot', name='boot_l'), G.shoe(body, 'r', kind='boot', name='boot_r')]
     if name == 'trainers':
         return [G.shoe(body, 'l', kind='trainer', name='trainer_l'), G.shoe(body, 'r', kind='trainer', name='trainer_r')]
+    if name == 'bib':
+        # a training bib (chasuble): sleeveless, loose, over the shirt
+        return [G.shirt(body, sleeve=0.02, hem=-0.1, loose=0.026, name='bib')]
+    if name == 'slides':
+        return [G.shoe(body, 'l', kind='slide', name='slide_l'), G.shoe(body, 'r', kind='slide', name='slide_r')]
+    if name == 'lowsocks':
+        # ankle socks, for under long trousers (the knee socks would show through them)
+        return [G.socks(body, 'l', top=0.72, name='socklow_l'), G.socks(body, 'r', top=0.72, name='socklow_r')]
     if name == 'shoes':
         return [G.shoe(body, 'l', kind='trainer', ankle=0.95, name='shoe_l'), G.shoe(body, 'r', kind='trainer', ankle=0.95, name='shoe_r')]
     if name == 'dress':
@@ -134,6 +145,13 @@ def hair_pieces(body: G.Body, styles: list[str]) -> list[Piece]:
         out.append(Piece('hair_afro', H.shape_cap(V, F, 'afro', c, seed=2), F, loops(F), H.head_only(len(V)), 'hair', colors=fade))
     if 'twists' in styles:
         out.append(H.twists(crop, F, c))
+    if 'long' in styles:
+        # a bob to the nape: longer on a grown woman than on a girl
+        k = float(vb[:mh.BODY_N, 2].max())
+        out.append(H.long_hair(V, F, c, 0.075 * k))
+    if 'ponytail' in styles:
+        k = float(vb[:mh.BODY_N, 2].max())
+        out.append(H.ponytail(V, F, c, k / 1.64))
     if 'puff' in styles:
         top = crop[np.argmax(crop[:, 2])]
         out.append(H.puff_ball(top + np.array([0, 0.045, 0.02]), 0.052))
@@ -292,7 +310,7 @@ def build(name: str, preview=False, export=True):
     print(f'[{name}] exported {os.path.getsize(os.path.join(OUT, name + ".glb")) / 1e6:.2f} MB, {time.time() - t0:.1f}s')
     if preview:
         os.makedirs(PREVIEW, exist_ok=True)
-        hide = [n for n in objs if n.startswith(('hair_afro', 'hair_twists', 'hair_puff', 'cap_', 'trainer', 'shoe', 'glove', 'longsleeves', 'trousers'))]
+        hide = [n for n in objs if n.startswith(('hair_afro', 'hair_twists', 'hair_puff', 'hair_long', 'cap_', 'trainer', 'shoe', 'glove', 'longsleeves', 'trousers', 'coat'))]
         for n in hide:
             objs[n].hide_render = True
         h = meta['height']

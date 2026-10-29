@@ -284,3 +284,150 @@ def hat(cap_V: np.ndarray, F, center: np.ndarray) -> list[Piece]:
         FF.extend([[x + base for x in f] for f in sf])
     flowers = Piece('hat_flowers', np.array(FV), FF, [[(0.5, 0.5)] * 3 for _ in FF], head_only(len(FV)), 'flowers')
     return [crown_p, brim, flowers]
+
+
+def boundary_loop(F) -> list[int]:
+    """The vertices of a cap's single boundary, in order round the loop."""
+    cnt: dict[tuple[int, int], int] = {}
+    for f in F:
+        for i in range(len(f)):
+            a, b = f[i], f[(i + 1) % len(f)]
+            k = (min(a, b), max(a, b))
+            cnt[k] = cnt.get(k, 0) + 1
+    nxt: dict[int, list[int]] = {}
+    for (a, b), c in cnt.items():
+        if c == 1:
+            nxt.setdefault(a, []).append(b)
+            nxt.setdefault(b, []).append(a)
+    start = min(nxt)
+    loop, prev, cur = [start], None, start
+    while True:
+        nb = [v for v in nxt[cur] if v != prev]
+        if not nb or nb[0] == start:
+            break
+        prev, cur = cur, nb[0]
+        loop.append(cur)
+        if len(loop) > len(nxt) + 2:
+            break
+    return loop
+
+
+def long_hair(cap_V: np.ndarray, cap_F, center: np.ndarray, length: float, seed=7) -> Piece:
+    """Straight hair cut in a bob: a sleek shell over the scalp, and round the head from one temple by
+    the back to the other, a curtain that hangs from the widest part of the skull (clear of the neck),
+    over the ears, to about the chin, flaring a little and closed underneath (outer and inner sheets
+    joined at the cut). `length` is the drop at the back below the eyes."""
+    shell = shape_cap(cap_V, cap_F, 'wrap', center, thickness=0.009)
+    shell = mh.smooth(shell, cap_F, 3, 0.4, pin=np.array(sorted(mh.boundary_verts(cap_F)), int), taubin=True)
+    eye_z = center[2] - 0.025
+    rel_all = shell - center
+    az_all = np.arctan2(rel_all[:, 0], -rel_all[:, 1])
+    rad_all = np.hypot(rel_all[:, 0], rel_all[:, 1])
+    # the azimuths the curtain covers: from in front of one ear, round the back, to the other
+    cols = 72
+    a0 = 1.3
+    azs = np.concatenate([np.linspace(a0, math.pi, cols // 2, endpoint=False), np.linspace(-math.pi, -a0, cols // 2)])
+    tops = []
+    for a in azs:
+        d = np.abs(np.angle(np.exp(1j * (az_all - a))))
+        near = (d < 0.07) & (rel_all[:, 2] > -0.06)
+        if not near.any():
+            near = d < 0.15
+        k = np.argmax(np.where(near, rad_all, -1))
+        tops.append((float(rad_all[k]), float(shell[k][2])))
+    # smooth the top line round the head
+    tr = np.convolve(np.pad([t[0] for t in tops], 3, mode='edge'), np.ones(7) / 7, mode='valid')
+    tz = np.convolve(np.pad([t[1] for t in tops], 3, mode='edge'), np.ones(7) / 7, mode='valid')
+    V = [v for v in shell]
+    F = [list(f) for f in cap_F]
+    UV = [[(0.5, 0.5)] * len(f) for f in cap_F]
+    rows = 8
+    outer: list[list[int]] = [[] for _ in range(rows + 1)]
+    inner: list[list[int]] = [[] for _ in range(rows + 1)]
+    for i, a in enumerate(azs):
+        h = np.array([math.sin(a), -math.cos(a), 0.0])
+        # the cut slopes up towards the face: chin length at the back, mid-ear at the temples
+        e = (abs(a) - a0) / (math.pi - a0)
+        bottom = eye_z - length * (0.45 + 0.55 * math.sqrt(max(0.0, min(1.0, e * 1.6))))
+        top_z = min(tz[i], eye_z + 0.03)
+        for r in range(rows + 1):
+            if r == 0:
+                # the top edge tucked under the shell, above the widest part: the curtain comes out
+                # of the hair where the skull curves back in (no ledge)
+                z, rr = top_z + 0.016, tr[i] - 0.007
+            else:
+                t = (r - 1) / (rows - 1)
+                z = top_z + (bottom - top_z) * t
+                rr = tr[i] + 0.002 + 0.014 * t * t + _noise3(np.array([[a, t, 0.0]]), 3, seed)[0] * 0.0012
+            p = np.array([center[0], center[1], 0.0]) + h * rr + np.array([0, 0, z])
+            outer[r].append(len(V)); V.append(p)
+            inner[r].append(len(V)); V.append(p - h * 0.007)
+    V = np.array(V)
+    # uvs for the strands: u round the head (mirrored left/right, no seam at the back), v down from the crown
+    rel = V - center
+    zt, zb = float(V[:, 2].max()), float(V[:, 2].min())
+    uvv = np.stack([np.abs(np.arctan2(rel[:, 0], -rel[:, 1])) / math.pi, (zt - V[:, 2]) / max(1e-6, zt - zb)], 1)
+    UV = [[tuple(uvv[k]) for k in f] for f in F]
+
+    def quad(a, b, c, d, want):
+        f = [a, b, c, d]
+        nrm = np.cross(V[b] - V[a], V[d] - V[a])
+        if np.dot(nrm, want) < 0:
+            f = f[::-1]
+        F.append(f)
+        UV.append([tuple(uvv[k]) for k in f])
+
+    m = len(azs)
+    for r in range(rows):
+        for i in range(m - 1):
+            mid = (V[outer[r][i]] + V[outer[r + 1][i + 1]]) / 2
+            h = np.array([mid[0] - center[0], mid[1] - center[1], 0.0])
+            quad(outer[r][i], outer[r][i + 1], outer[r + 1][i + 1], outer[r + 1][i], h)
+            quad(inner[r][i], inner[r][i + 1], inner[r + 1][i + 1], inner[r][i], -h) if False else quad(inner[r][i], inner[r][i + 1], inner[r + 1][i + 1], inner[r + 1][i], -h)
+    for i in range(m - 1):
+        quad(outer[rows][i], outer[rows][i + 1], inner[rows][i + 1], inner[rows][i], np.array([0, 0, -1.0]))
+    for i in (0, m - 1):
+        a = azs[i]
+        side = np.array([math.cos(a), math.sin(a), 0.0]) * (-1 if i == 0 else 1)
+        for r in range(rows):
+            quad(outer[r][i], outer[r + 1][i], inner[r + 1][i], inner[r][i], side)
+    return Piece('hair_long', V, F, UV, head_only(len(V)), 'hair')
+
+
+def ponytail(cap_V: np.ndarray, cap_F, center: np.ndarray, scale: float = 1.0) -> Piece:
+    """Hair pulled back tight (a sleek shell) and tied high at the back of the head: a ponytail that
+    hangs from the tie down the nape, tapering (Coach Whitfield)."""
+    shell = shape_cap(cap_V, cap_F, 'wrap', center, thickness=0.006)
+    shell = mh.smooth(shell, cap_F, 3, 0.4, pin=np.array(sorted(mh.boundary_verts(cap_F)), int), taubin=True)
+    rel = shell - center
+    band = (rel[:, 2] > -0.005) & (rel[:, 2] < 0.035) & (np.abs(rel[:, 0]) < 0.02)
+    k = int(np.argmax(np.where(band, rel[:, 1], -1)))
+    root = shell[k] + np.array([0, 0.004, 0])
+    V = [v for v in shell]
+    F = [list(f) for f in cap_F]
+    rings, sides = 12, 10
+    base = len(V)
+    for i in range(rings + 1):
+        t = i / rings
+        c = root + np.array([0, (0.03 + 0.02 * t) * scale * math.sin(min(1.0, t * 2.2) * math.pi / 2), -0.2 * scale * t])
+        r = (0.021 if t > 0.06 else 0.026) * scale * (1 - 0.65 * t ** 1.4)
+        for j in range(sides):
+            a = 2 * math.pi * j / sides
+            V.append(c + np.array([math.cos(a) * r, math.sin(a) * r * 0.8, 0.0]))
+    for i in range(rings):
+        for j in range(sides):
+            a0 = base + i * sides + j
+            a1 = base + i * sides + (j + 1) % sides
+            F.append([a0, a1, a1 + sides, a0 + sides])
+    tip = len(V)
+    V.append(root + np.array([0, 0.05 * scale, -0.205 * scale]))
+    for j in range(sides):
+        a0 = base + rings * sides + j
+        a1 = base + rings * sides + (j + 1) % sides
+        F.append([a0, a1, tip])
+    V = np.array(V)
+    relv = V - center
+    zt, zb = float(V[:, 2].max()), float(V[:, 2].min())
+    uvv = np.stack([np.abs(np.arctan2(relv[:, 0], -relv[:, 1])) / math.pi, (zt - V[:, 2]) / max(1e-6, zt - zb)], 1)
+    UV = [[tuple(uvv[q]) for q in f] for f in F]
+    return Piece('hair_pony', V, F, UV, head_only(len(V)), 'hair')

@@ -19,6 +19,14 @@ const PLACES: { id: PlaceId; moods: Mood[]; opts?: Record<string, unknown>; at: 
   { id: 'mami', key: 'mami', moods: ['golden', 'fog', 'night'], at: [8, 8] },
   { id: 'colline', key: 'colline', moods: ['fog', 'golden'], at: [12, 9] },
   { id: 'avion', key: 'avion', moods: ['interior'], at: [7, 6] },
+  { id: 'waldorf', key: 'waldorf', moods: ['snow', 'winter'], opts: { bus: true }, at: [17, 18] },
+  { id: 'waldorf', key: 'ecoleNeige', moods: ['winter', 'snow'], opts: { field: true }, at: [20, 16] },
+  { id: 'maisonUS', key: 'maisonUS', moods: ['interiorNight', 'interior'], opts: { night: true }, at: [3.2, 4.4] },
+  { id: 'classe', key: 'classe', moods: ['interior'], at: [4.6, 4.6] },
+  { id: 'gymnase', key: 'gymnase', moods: ['interior'], at: [12, 9] },
+  { id: 'bus', key: 'bus', moods: ['interior'], at: [6.6, 1.25] },
+  { id: 'parking', key: 'parking', moods: ['winter', 'snow'], at: [26, 24] },
+  { id: 'dome', key: 'dome', moods: ['dome'], at: [32, 22] },
 ]
 
 class PlaceView {

@@ -7,7 +7,8 @@
       "brothers": "The brothers",
       "family": "The family and Tonton Fokou",
       "team": "The Lionceaux",
-      "quarter": "The neighbourhood"
+      "quarter": "The neighbourhood",
+      "waldorf": "Waldorf"
     },
     "notes": {
       "bribri": "12, the big brother. Tall and slim, a thin parting on the left, the faded green number 8 with a white collar. He sees everything and talks with his hands.",
@@ -22,7 +23,11 @@
       "samuel": "The striker: he runs like a giraffe and kicks like a mule.",
       "ekotto": "She sells beignets under her red parasol: “Free beignets for whoever scores!”",
       "bile": "The neighbour whose fence is topped with barbed wire.",
-      "bulldozer": "Junior Mvondo, captain of the Requins de Bépanda: 12, “but he looks fifteen”."
+      "bulldozer": "Junior Mvondo, captain of the Requins de Bépanda: 12, “but he looks fifteen”.",
+      "diego": "Diego Ramírez, eleven, his parents from El Salvador. Small and quick, black hair standing up on his head, eyes that move as much as his mouth. The family's official translator.",
+      "patterson": "The English teacher of the pupils from elsewhere: red glasses on a little chain, a cardigan with pockets full of markers, a voice that takes its time.",
+      "hayesMme": "The neighbour: an old lady, a sweet potato pie and an enormous laugh.",
+      "hayesM": "The neighbour: a very tall old man with a snow shovel. He says little."
     }
   },
   "places": {
@@ -36,7 +41,15 @@
       "maison": "The house, Douala",
       "mami": "Mami's house, Bafoussam",
       "colline": "The hill, Bafoussam",
-      "avion": "Airport and plane"
+      "avion": "Airport and plane",
+      "waldorf": "Waldorf, the street under the snow",
+      "ecoleNeige": "Behind the school, under the snow",
+      "maisonUS": "The house in Waldorf",
+      "classe": "Mrs. Patterson's classroom",
+      "gymnase": "The community centre gym",
+      "bus": "The school bus",
+      "parking": "The Potomac Valley dome, outside",
+      "dome": "Under the dome"
     },
     "moods": {
       "morning": "Morning",
@@ -48,7 +61,10 @@
       "overcast": "Grey sky",
       "fog": "Fog",
       "interior": "Day",
-      "interiorNight": "Evening light bulb"
+      "interiorNight": "Evening light bulb",
+      "snow": "Snow",
+      "winter": "Winter, clear sky",
+      "dome": "Dome, floodlights"
     }
   },
   "brand": "Lionceaux",
@@ -189,7 +205,11 @@
     "thunderIntro": "The thunder strike: pick a side and shoot as hard as you can.",
     "saveIntro": "You are Ousmane. The Panthères captain steps up.",
     "braceletIntro": "Monday, at Douala airport.",
-    "handIntro": "The engines roar. BriBri closes his eyes."
+    "handIntro": "The engines roar. BriBri closes his eyes.",
+    "merciIntro": "At the end of the lesson, Mrs. Patterson comes to BriBri's desk.",
+    "basementIntro": "In the basement, with Mami's ball: ten passes without it touching the floor.",
+    "futsalIntro": "You are BriBri. Third ball: decide before it arrives.",
+    "caramelIntro": "You are Kaydoudou. The heavy ball sticks under your foot: the caramel sole."
   },
   "sketch": {
     "label": "BriBri's notebook: a line of three circles, a circle for him, a polite arrow and a useful arrow."
@@ -224,6 +244,7 @@
     "simple": "Low, into the corner",
     "tonnerre": "The thunder strike",
     "bracelet": "Tie on the bracelet",
-    "main": "Put your hand on his"
+    "main": "Put your hand on his",
+    "merci": "Thank Mrs. Patterson"
   }
 }

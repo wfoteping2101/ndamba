@@ -44,7 +44,10 @@ black and yellow with long arms.
 - Bodies: nine archetypes built offline from MakeHuman / MPFB2 CC0 data by `app/tools/humans/`
   (boy, boyLean, boyBig, girl, man, woman, womanBig, oldman, oldwoman), with garments cut from the body,
   real fingers, eyes with irises, eyebrows drawn as arches, hair as fur shells (crop, afro, twists,
-  puff, cap, wrap).
+  puff, cap, wrap) and a straight bob that falls to the chin (`long`). Every archetype has a winter
+  wardrobe for Part II (Waldorf, Maryland): long sleeves, long trousers, and a padded coat quilted in
+  channels (BriBri's new red anorak, « qui fait un bruit de sac plastique »). Kaydoudou's red sock and
+  yellow sock still show under his pyjama trousers in the snow.
 - Skin: warm dark tones in the family `#5B3A27` (shadow `#3A2419`), smooth mottling, two skin
   textures per archetype; the runtime paints skin, kit colours, numbers, stripes, patterns (wax,
   leaves, circles) and mud.
@@ -64,6 +67,11 @@ black and yellow with long arms.
 | `mami` | Mami's house, Bafoussam | the courtyard, the old sewing machine, the njangi of the women in blue and white pagne |
 | `colline` | the hill road above Bafoussam | the slope, the cousins' pitch, the fog that becomes « du blanc partout » |
 | `car` | the coach to Bafoussam | the seats, the windows, the bends |
+| `waldorf` | Waldorf, Maryland (Part II) | the little beige house with its porch, the driveway with the car under its cap of snow and the hoop « dont le filet a gelé », the neighbours' houses, bare maples and pines, the street with the yellow school bus; option `field`: behind the school, the pitches gone under the snow, only the crossbars showing (« Les buts ont mis un chapeau blanc ») |
+| `maisonUS` | the house in Waldorf | the basement (« une maison sous la maison »): the boiler that purrs like a big iron cat, the washing machine, the bare bulb on its wire that swings when the ball brushes it; up the stairs the living room and the kitchen |
+| `classe` | the school | the classroom and Mrs. Patterson's small room: desks and chairs, the whiteboard where she draws a cooking pot and a hen, snow at the windows |
+| `bus` | the yellow school bus home | green benches two by two, the ribbed black floor, Waldorf under the snow sliding past the windows |
+| `gymnase` | the community centre | a parquet futsal court with painted lines, red and white futsal goals, high windows on the snow, the bench, the hot chocolate urn, the drinking fountain |
 | `avion` | Douala airport and the plane | a polished hall that smells of fuel and coffee (a departures board, a coffee counter, the plane outside the glass), the cabin with the window seat; through the window the tin roofs and the Wouri, then the clouds close over the red earth |
 
 Every surface texture is drawn in code (canvas): plaster, tin, earth, grass cards, wax prints. No

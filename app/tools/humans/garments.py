@@ -375,6 +375,7 @@ def socks(body: Body, side: str, top: float = 0.12, name=None) -> Piece:
 
 
 def shoe(body: Body, side: str, ankle: float = 0.9, kind='boot', name=None) -> Piece:
+    # (kind 'slide': a flat sole round the foot and one wide strap over the instep, worn over socks)
     """A football boot / trainer / town shoe built as a last around the foot: rounded heel, a toe box
     that narrows and drops, a flat sole on the ground (trainers: thicker, white). Weighted to the foot and
     toe bones. The bare foot underneath is hidden."""
@@ -415,6 +416,10 @@ def shoe(body: Body, side: str, ankle: float = 0.9, kind='boot', name=None) -> P
             h = sole_t + (h - sole_t) * (0.35 + 0.65 * k)
         if kind == 'boot' and s_ < 0.45:
             h = min(h, body.ankleZ + 0.012)
+        if kind == 'slide':
+            # flat everywhere but the strap (a band across the instep, a little above the sock)
+            h = top + 0.009 if 0.4 < s_ < 0.62 else 0.007
+            hw += 0.004
         for j in range(seg):
             th = 2 * math.pi * j / seg
             cx, cz = math.cos(th), math.sin(th)

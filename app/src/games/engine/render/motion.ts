@@ -124,6 +124,10 @@ const POSES: Partial<Record<string, Partial<Record<Arm, ArmPose>>>> = {
   // seated, one hand on the armrest beside: the two brothers' hands meet on it (ch08, the plane)
   restL: { l: { hand: [0.4, 0.84, 0.12], elbowOut: 0.15 } },
   restR: { r: { hand: [-0.4, 0.84, 0.12], elbowOut: 0.15 } },
+  // seated at a school desk: the hand up (« Kaydoudou lève la main »), or both hands on the desk
+  // holding something small (Mrs. Patterson's card)
+  sitHand: { r: { hand: [-0.14, 1.38, 0.1] } },
+  sitHold: { l: { hand: [0.1, 0.74, 0.32], elbowOut: 0.4 }, r: { hand: [-0.1, 0.74, 0.32], elbowOut: 0.4 } },
   // both hands on a big drum in front of the hips, beating in turn
   drum: { l: { hand: [0.14, 0.92, 0.4], elbowOut: 0.6, beat: [0.07, 0] }, r: { hand: [-0.14, 0.92, 0.4], elbowOut: 0.6, beat: [0.07, Math.PI] } },
 }
@@ -132,7 +136,7 @@ const POSES: Partial<Record<string, Partial<Record<Arm, ArmPose>>>> = {
 const POSE_CLIP: Record<string, string> = {
   sit: 'sitIdle', talk: 'talk', dance: 'dance', cry: 'cry', sew: 'sew', sitGround: 'sitGround', shrug: 'shrug', celebrate: 'celebrate',
   catch: 'idleRelaxed', dejected: 'mope', wave: 'idleRelaxed', point: 'idleRelaxed', fist: 'idleRelaxed', heart: 'idleRelaxed', palm: 'idleRelaxed', hold: 'idleRelaxed', open: 'idleRelaxed', mic: 'talk',
-  climb: 'idleRelaxed', juggle: 'idleRelaxed', hug: 'sitGround', kneel: 'sitGround', lie: 'getUp', embrace: 'idleRelaxed', drum: 'idleRelaxed', restL: 'sitIdle', restR: 'sitIdle',
+  climb: 'idleRelaxed', juggle: 'idleRelaxed', hug: 'sitGround', kneel: 'sitGround', lie: 'getUp', embrace: 'idleRelaxed', drum: 'idleRelaxed', restL: 'sitIdle', restR: 'sitIdle', sitHand: 'sitIdle', sitHold: 'sitIdle',
   throw: 'throw', slip: 'slip', laugh: 'laugh',
 }
 

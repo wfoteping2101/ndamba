@@ -4,7 +4,7 @@
 import type { DiagramSpec } from '../../../lib/types'
 import type { V2 } from './math'
 
-export type Surface = 'grass' | 'redEarth' | 'mud' | 'concrete' | 'turf' | 'sand'
+export type Surface = 'grass' | 'redEarth' | 'mud' | 'concrete' | 'turf' | 'sand' | 'parquet'
 
 /** Rolling and bounce parameters per surface. a0: constant deceleration (m/s2), k: linear drag (1/s). */
 export const SURFACES: Record<Surface, { a0: number; k: number; bounce: number; bumpiness: number }> = {
@@ -14,6 +14,8 @@ export const SURFACES: Record<Surface, { a0: number; k: number; bounce: number; 
   mud: { a0: 1.8, k: 0.55, bounce: 0.25, bumpiness: 0.09 },
   concrete: { a0: 0.38, k: 0.13, bounce: 0.68, bumpiness: 0.02 },
   sand: { a0: 2.4, k: 0.7, bounce: 0.2, bumpiness: 0.06 },
+  // a gym floor with a futsal ball: « petit et lourd », it hardly bounces and rolls true
+  parquet: { a0: 0.4, k: 0.14, bounce: 0.28, bumpiness: 0 },
 }
 
 export interface Goal {

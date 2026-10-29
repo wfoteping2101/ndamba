@@ -522,7 +522,7 @@ export class Character {
     }
     // story poses (Lionceaux): gestures from the book, blended like the football actions
     const tt = this.time
-    if (a.anim === 'sit' || a.anim === 'sew') {
+    if (a.anim === 'sit' || a.anim === 'sew' || a.anim === 'restL' || a.anim === 'restR' || a.anim === 'sitHand' || a.anim === 'sitHold') {
       const seat = Math.min(P.hipY - 0.12, a.anim === 'sew' ? P.hipY * 0.55 : P.hipY * 0.5)
       tgt.thighL = [-1.45, 0, 0.08]; tgt.thighR = [-1.45, 0, -0.08]
       tgt.shinL = [1.45, 0, 0]; tgt.shinR = [1.45, 0, 0]

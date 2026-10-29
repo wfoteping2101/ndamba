@@ -4,7 +4,7 @@ import { BallView } from './render/ballView'
 import { CameraRig, type CamContext, type CamMode } from './render/cameraRig'
 import { Character } from './render/character'
 import { Human } from './render/human'
-import { Goat, type Figure } from './render/animal'
+import { Dog, Goat, type Figure } from './render/animal'
 import { Overlays } from './render/overlays'
 import { buildPitch, type PitchView, type Surround } from './render/pitchView'
 import { FpsMonitor, Frame, Stage, detectQuality, type Quality } from './render/stage'
@@ -76,7 +76,7 @@ export class SimView {
     const q = this.stage.quality
     for (const p of this.world.players) {
       if (this.chars.has(p.id)) continue
-      const c: Figure = p.look.animal ? new Goat(p.look, { castShadow: q.shadows }) : this.opts.legacyFigures ? new Character(p.look, { toon: this.opts.toon, outline: (this.opts.outline ?? true) && q.outlines, castShadow: q.shadows }) : new Human(p.look, { castShadow: q.shadows })
+      const c: Figure = p.look.animal === 'dog' ? new Dog(p.look, { castShadow: q.shadows }) : p.look.animal ? new Goat(p.look, { castShadow: q.shadows }) : this.opts.legacyFigures ? new Character(p.look, { toon: this.opts.toon, outline: (this.opts.outline ?? true) && q.outlines, castShadow: q.shadows }) : new Human(p.look, { castShadow: q.shadows })
       c.root.position.copy(this.frame.vec(p.pos.x, p.pos.y))
       c.snapFacing(p.facing)
       this.chars.set(p.id, c)

@@ -10,10 +10,11 @@ import type { PitchGeom } from '../../engine/sim/pitch'
 import type { V2 } from '../../engine/sim/math'
 import type { AnimState, Look, Player, Team } from '../../engine/sim/types'
 import { CAST, type CastId } from '../cast'
-import { applyMood, dust, fogBanks, rain, skyDome, type Air, type Mood } from '../sets/common'
+import { applyMood, dust, fogBanks, rain, skyDome, snowfall, type Air, type Mood } from '../sets/common'
 import { SETS, type PlaceId } from '../sets'
 import { sfx } from '../../shared/audio'
 import type { SetHandle } from '../sets/bonamoussadi'
+import { disposeItem, makeItem, type ItemKind } from './items'
 
 export interface Place { id: PlaceId; mood: Mood; opts?: Record<string, unknown> }
 
@@ -73,6 +74,7 @@ export class StoryStage {
     const add = (a: Air) => { this.airs.push(a); this.stage.scene.add(a.object) }
     if (!def.indoor) {
       if (mood === 'rain') add(rain(Math.round(1400 * q.props)))
+      else if (mood === 'snow') add(snowfall(Math.round(1600 * q.props)))
       else if (mood === 'fog') add(fogBanks(center, 40, Math.round(36 * q.props)))
       else if (id === 'bona' && (mood === 'morning' || mood === 'noon' || mood === 'golden')) add(dust(center, 26, Math.round(700 * q.props)))
     }
@@ -117,6 +119,18 @@ export class StoryStage {
     this.stage.scene.add(ball.group)
     this.prop = { ball, holder }
   }
+
+  /** Small things in someone's hands (a pie, a shovel, a card); null takes it away. */
+  private items = new Map<string, THREE.Object3D>()
+  item(holder: string, kind: ItemKind | null) {
+    const old = this.items.get(holder)
+    if (old) { disposeItem(old); this.items.delete(holder) }
+    if (!kind) return
+    const o = makeItem(kind)
+    this.stage.scene.add(o)
+    this.items.set(holder, o)
+  }
+  clearItems() { for (const h of [...this.items.keys()]) this.item(h, null) }
 
   /* Flung mud: a lump that flies in an arc and bursts into drops where it lands. */
   private flings: { mesh: THREE.Mesh; a: [number, number, number]; b: [number, number, number]; t: number; dur: number; peak: number }[] = []
@@ -167,6 +181,18 @@ export class StoryStage {
       const p = this.world.get(this.prop.holder)
       if (p) this.prop.ball.update(this.frame.vec(p.pos.x + Math.cos(p.facing) * 0.26, p.pos.y + Math.sin(p.facing) * 0.26, (p.look.kid ? 0.82 : 1.0) * (p.look.height ?? 1)), 0, 0, dt)
     }
+    for (const [holder, o] of this.items) {
+      const p = this.world.get(holder)
+      if (!p) { o.visible = false; continue }
+      o.visible = true
+      // at the hands: chest height standing, lap height seated at a desk
+      const seated = p.meta.pose === 'sit' || p.meta.pose === 'sitHold' || p.meta.pose === 'sitHand' || p.meta.pose === 'restL' || p.meta.pose === 'restR'
+      const s = p.look.height ?? 1
+      const h = (seated ? (p.look.kid ? 0.7 : 0.82) : (p.look.kid ? 0.84 : 1.04)) * s + ((p.meta.elev as number | undefined) ?? 0)
+      const reach = seated ? 0.32 : 0.27
+      o.position.copy(this.frame.vec(p.pos.x + Math.cos(p.facing) * reach * s, p.pos.y + Math.sin(p.facing) * reach * s, h))
+      o.rotation.set(0, -p.facing, 0)
+    }
     const cam = this.stage.camera
     for (const a of this.airs) a.update(dt, cam)
     this.set?.update(dt, this.world.t)
@@ -176,6 +202,7 @@ export class StoryStage {
     this.mudMat?.dispose(); this.mudGeo?.dispose()
     this.loop.stop()
     for (const a of this.airs) a.dispose()
+    this.clearItems()
     this.set?.dispose()
     this.view.dispose()
   }

@@ -76,6 +76,7 @@ export type Action =
   | { a: 'sfx'; kind: 'kick' | 'whistle' | 'net' | 'post' | 'success' | 'fail' | 'tap' | 'page' | 'touch' | 'point' | 'thunder' | 'splash' | 'drums' | 'engine' }
   /** something the set does when told (the plane takes off) */
   | { a: 'cue'; name: string }
+  | { a: 'item'; id: string; kind: import('./items').ItemKind | null }
   | { a: 'slow'; scale: number }
   | { a: 'score'; text: string | null }
   /** the ball: Mami's leather ball, patched, the plastic-bag ball; flat = punctured */
@@ -138,7 +139,7 @@ export type ChallengeSpec =
   | { type: 'oneTouch'; player: string; to: string; setup: (c: Choreo) => Promise<void>; after: (c: Choreo) => Promise<void>; wrongLine?: Line; lines?: Line[]; /** a pass into the stride: seconds of the receiver's run to lead him by */ lead?: number }
   /** keep the ball up between partners for n touches, in rhythm (the ten-pass ritual); `calls`: what
    *  is said when the count reaches a number (the team counting out loud) */
-  | { type: 'juggle'; players: string[]; count: number; ball: string; lines?: Line[]; calls?: Record<number, Line[]> }
+  | { type: 'juggle'; players: string[]; count: number; ball: string; lines?: Line[]; calls?: Record<number, Line[]>; /** the framing (a low ceiling, a small room) */ cam?: CamSpec }
   /** offer a solution (two steps to the side): an opponent hides the player from the carrier; move
    *  until the line opens, the ball comes, give it on with the pass button; `reps` times round the
    *  triangle. Lines per rep: when the opponent shuts the line, when it opens, when the ball is given.
@@ -151,6 +152,15 @@ export type ChallengeSpec =
    *  carrier and wait; the dribble button is the feint that makes them jump at him; when they have
    *  come, the lane to the partner opens: pass. Too early, the lane is shut; too late, they take it. */
   | { type: 'lure'; carrier: string; defenders: string[]; partner: string; prompt?: string; feintLines?: Line[]; passLines?: Line[]
+      setup?: (c: Choreo) => Promise<void>; after?: (c: Choreo) => Promise<void> }
+  /** one against one (the tryouts): the big defender charges; wait, ball under the sole; when his ring
+   *  turns gold, the feint rolls the ball aside and he throws himself that way, legs wide; then push
+   *  it between his legs before he closes them. `after`: the scripted nutmeg and what follows. */
+  | { type: 'nutmeg'; carrier: string; defender: string; prompt?: string; feintLines?: Line[]
+      setup?: (c: Choreo) => Promise<void>; after?: (c: Choreo) => Promise<void> }
+  /** the first touch goes somewhere: the ball comes, a defender at the back; show the free grass (stick
+   *  or a tap) and touch it there, away from him. Stopped dead under the foot, he is in: again. */
+  | { type: 'firstTouch'; player: string; from: string; defender: string; space: Pt; prompt?: string; touchLines?: Line[]
       setup?: (c: Choreo) => Promise<void>; after?: (c: Choreo) => Promise<void> }
   /** run into space at the right moment (decoy), dragging a marker; then the scripted finish */
   | { type: 'run'; runner: string; marker: string; zone: { at: Pt; r: number }; cue?: Line; after: (c: Choreo) => Promise<void>; lines?: Line[] }

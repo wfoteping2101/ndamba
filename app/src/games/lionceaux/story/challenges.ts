@@ -38,6 +38,8 @@ export function makeChallenge(spec: ChallengeSpec, s: StorySession): Challenge {
     case 'support': return new Support(spec, s)
     case 'sketch': return new Sketch(spec, s)
     case 'lure': return new Lure(spec, s)
+    case 'nutmeg': return new Nutmeg(spec, s)
+    case 'firstTouch': return new FirstTouch(spec, s)
   }
 }
 
@@ -97,10 +99,20 @@ class DribbleRun implements Challenge {
           d.target = { x: jx, y: jy }; d.speedMode = dd < 3 ? 0.3 : 0.55; d.faceTarget = w.ball2()
         } else d.target = null
         // too close without a dribble: he pokes the ball away
-        if (dd < 0.95 && w.ball.owner === c.id && this.moveT <= 0) this.poke(d)
+        // (QA autoplay: a coarse catch-up step can jump past the window; it dribbles instead)
+        if (dd < 0.95 && w.ball.owner === c.id && this.moveT <= 0) { if (this.s.autoplay) this.beat(d); else this.poke(d) }
       } else d.target = null
     })
     if (this.moveT > 0) this.moveT -= dt
+    // a defender never keeps it during the run (a slow ball by a beaten one): it is knocked loose
+    // back towards the carrier, who gathers it again
+    if (this.state === 'play' && w.ball.owner && w.ball.owner !== c.id && this.spec.defenders.includes(w.ball.owner)) {
+      const d = w.get(w.ball.owner)!
+      const u = norm(c.pos.x - d.pos.x, c.pos.y - d.pos.y)
+      w.ball.owner = null
+      w.ball.vel = { x: u.x * 2.4, y: u.y * 2.4, z: 0 }
+      this.stunned.set(d.id, 0.9)
+    }
     // the ending the book wrote
     if (this.state === 'play' && this.beaten >= this.spec.defenders.length) this.finish()
   }
@@ -138,8 +150,8 @@ class DribbleRun implements Challenge {
       const dd = dist2(d.pos, c.pos)
       const ready = dd < 3.2 && dd > 0.8
       o.marker('def', d.pos, ready ? OVERLAY_COLORS.gold : OVERLAY_COLORS.b, { radius: ready ? 0.9 : 0.65, opacity: ready ? 0.95 : 0.6 })
-      if ((input.pressed('skill') || (this.s.autoplay && ready && dd < 2.2)) && w.ball.owner === c.id && this.moveT <= 0) {
-        if (ready) this.beat(d)
+      if ((input.pressed('skill') || (this.s.autoplay && dd < 2.2)) && w.ball.owner === c.id && this.moveT <= 0) {
+        if (ready || (this.s.autoplay && dd <= 0.8)) this.beat(d)
         else if (dd >= 3.2) this.s.hint('play.dribbleWait')
       }
     }
@@ -309,7 +321,7 @@ class Juggle implements Challenge {
     this.s.prompt('play.juggle', { n: 0, total: this.spec.count })
     if (this.spec.lines) this.s.say(this.spec.lines).catch(() => {})
     this.holder = Math.max(0, this.spec.players.indexOf(this.spec.ball))
-    this.s.camera({ kind: 'on', who: this.spec.players, dist: 5.5, height: 2.6 }, true)
+    this.s.camera(this.spec.cam ?? { kind: 'on', who: this.spec.players, dist: 5.5, height: 2.6 }, true)
     void this.toss()
     return new Promise<void>((r) => { this.done = r })
   }
@@ -939,4 +951,228 @@ class Lure implements Challenge {
   }
 
   dispose() { this.s.st.view.overlays.clear('lure'); this.s.timeScale(1) }
+}
+
+/* ======================================================================== nutmeg */
+
+/** One against one: let the big one come, roll the ball aside so he dives that way, then through his legs. */
+class Nutmeg implements Challenge {
+  controls: ControlKey[] = []
+  stick = false
+  private phase: 'setup' | 'charge' | 'open' | 'lost' | 'gone' = 'setup'
+  private since = 0
+  private done: (() => void) | null = null
+  private home = new Map<string, V2>()
+  private warned = false
+  constructor(private spec: Extract<ChallengeSpec, { type: 'nutmeg' }>, private s: StorySession) {}
+  get w() { return this.s.world() }
+  private p(id: string) { return this.w.get(id)! }
+
+  async run() {
+    const ch = this.s.choreo, sp = this.spec
+    if (sp.setup) await sp.setup(ch)
+    for (const id of [sp.carrier, sp.defender]) { const p = this.p(id); p.meta.scripted = true; p.target = null; this.home.set(id, { ...p.pos }) }
+    if (this.w.ball.owner !== sp.carrier) ch.give(sp.carrier)
+    this.s.camera({ kind: 'over', who: sp.carrier, to: sp.defender, dist: 3.4, height: 2.1, mix: 0.5 }, true)
+    this.start()
+    await new Promise<void>((r) => { this.done = r })
+    this.s.timeScale(1)
+    this.s.prompt(null); this.s.hint(null); this.s.setControls([], false)
+    this.clearMarks()
+    if (sp.after) await sp.after(ch)
+  }
+
+  private start() {
+    this.phase = 'charge'; this.since = 0
+    this.s.prompt(this.spec.prompt ?? 'play.nutmeg')
+    this.s.setControls(['dribble'], false)
+    const car = this.p(this.spec.carrier)
+    car.target = null; car.vel = { x: 0, y: 0 }
+  }
+
+  frame(dt: number, input: Input) {
+    if (this.phase === 'setup' || this.phase === 'gone' || this.phase === 'lost') return
+    const sp = this.spec, car = this.p(sp.carrier), d = this.p(sp.defender)
+    this.since += dt
+    const dd = dist2(car.pos, d.pos)
+    car.target = null; car.faceTarget = d.pos
+    const o = this.s.st.view.overlays
+    o.beginMarkers()
+    o.marker('me', car.pos, OVERLAY_COLORS.gold, { radius: 0.7, fill: 0.2 })
+    if (this.phase === 'charge') {
+      // he comes like a truck, straight at the ball
+      d.target = { ...car.pos }; d.speedMode = this.since < 0.4 ? 0.4 : 0.85; d.faceTarget = car.pos
+      const ready = dd < 2.7 && dd > 1.05
+      o.marker('def', d.pos, ready ? OVERLAY_COLORS.gold : OVERLAY_COLORS.b, { radius: ready ? 0.9 : 0.65, opacity: ready ? 0.95 : 0.6 })
+      o.endMarkers()
+      const feint = input.pressed('skill') || (this.s.autoplay && dd < 2.3)
+      if (feint && ready) { this.open(); return }
+      if (feint && dd >= 2.7 && !this.warned) { this.warned = true; this.s.hint('play.nutmegWait') }
+      if (dd < 0.95) void this.lose('play.nutmegLate')
+      return
+    }
+    // open: he has thrown himself to the side, legs wide; the ball must go through now
+    o.marker('legs', d.pos, OVERLAY_COLORS.gold, { radius: 0.55, fill: 0.25 })
+    o.endMarkers()
+    const push = input.pressed('pass') || input.pressed('shoot') || input.pressed('skill') || (this.s.autoplay && this.since > 0.35)
+    if (push) { this.phase = 'gone'; const r = this.done; this.done = null; r?.(); return }
+    if (this.since > 1.5) void this.lose('play.nutmegSlow')
+  }
+
+  /** the ball rolls to his left under the sole; the defender throws himself that way, legs apart */
+  private open() {
+    const sp = this.spec, car = this.p(sp.carrier), d = this.p(sp.defender)
+    this.phase = 'open'; this.since = 0
+    const f = norm(d.pos.x - car.pos.x, d.pos.y - car.pos.y)
+    const left = { x: f.y, y: -f.x }
+    car.anim = 'receive'; car.animT = 0
+    d.target = { x: car.pos.x + f.x * 0.9 + left.x * 1.3, y: car.pos.y + f.y * 0.9 + left.y * 1.3 }; d.speedMode = 1
+    d.anim = 'tackle'; d.animT = 0
+    sfx('touch')
+    this.s.hint(null)
+    this.s.timeScale(0.3)
+    this.s.prompt('play.nutmegPush')
+    this.s.setControls(['pass'], false)
+    if (sp.feintLines) this.s.say(sp.feintLines).catch(() => {})
+  }
+
+  private async lose(hint: string) {
+    const sp = this.spec, ch = this.s.choreo, w = this.w
+    this.phase = 'lost'
+    this.s.timeScale(1)
+    this.s.setControls([], false)
+    const car = this.p(sp.carrier), d = this.p(sp.defender)
+    d.anim = 'tackle'; d.animT = 0
+    w.ball.owner = null
+    w.ball.vel = { x: (car.pos.x - d.pos.x) * 2.2, y: (car.pos.y - d.pos.y) * 2.2, z: 0 }
+    sfx('touch')
+    this.s.hint(hint)
+    this.clearMarks()
+    try { await ch.wait(1.4) } catch (e) { if (e instanceof Cancelled) return; throw e }
+    for (const [id, at] of this.home) { const p = this.p(id); p.pos = { ...at }; w.prev.set(id, { ...at }); p.vel = { x: 0, y: 0 }; p.target = null }
+    ch.give(sp.carrier)
+    this.start()
+  }
+
+  private clearMarks() { this.s.st.view.overlays.beginMarkers(); this.s.st.view.overlays.endMarkers() }
+  dispose() { this.clearMarks(); this.s.timeScale(1) }
+}
+
+/* ======================================================================== first touch */
+
+/** The ball comes with a defender at the back: show the free grass and push the first touch there. */
+class FirstTouch implements Challenge {
+  controls: ControlKey[] = []
+  stick = true
+  private phase: 'setup' | 'coming' | 'lost' | 'gone' = 'setup'
+  private done: (() => void) | null = null
+  private home = new Map<string, V2>()
+  private tapDir: V2 | null = null
+  constructor(private spec: Extract<ChallengeSpec, { type: 'firstTouch' }>, private s: StorySession) {}
+  get w() { return this.s.world() }
+  private p(id: string) { return this.w.get(id)! }
+  private get space(): V2 { return { x: this.spec.space[0], y: this.spec.space[1] } }
+
+  async run() {
+    const ch = this.s.choreo, sp = this.spec
+    if (sp.setup) await sp.setup(ch)
+    for (const id of [sp.player, sp.from, sp.defender]) { const p = this.p(id); p.meta.scripted = true; p.target = null; this.home.set(id, { ...p.pos }) }
+    this.s.camera({ kind: 'on', who: [sp.player, sp.defender], dist: 6.5, height: 4.2 }, true)
+    void this.start()
+    await new Promise<void>((r) => { this.done = r })
+    this.s.timeScale(1)
+    this.s.prompt(null); this.s.hint(null); this.s.setControls([], false)
+    this.clearMarks()
+    if (sp.after) await sp.after(this.s.choreo)
+  }
+
+  private async start() {
+    const sp = this.spec, ch = this.s.choreo
+    this.tapDir = null
+    ch.give(sp.from)
+    this.s.prompt(sp.prompt ?? 'play.firstTouch')
+    this.s.setControls(['pass'], true)
+    try { await ch.wait(0.5) } catch (e) { if (e instanceof Cancelled) return; throw e }
+    this.phase = 'coming'
+    void ch.pass(sp.from, sp.player).catch(() => {})
+  }
+
+  frame(_dt: number, input: Input) {
+    if (this.phase !== 'coming') return
+    const sp = this.spec, me = this.p(sp.player), d = this.p(sp.defender), w = this.w
+    // the defender closes in at his back
+    const fromD = norm(me.pos.x - d.pos.x, me.pos.y - d.pos.y)
+    d.target = { x: me.pos.x - fromD.x * 0.8, y: me.pos.y - fromD.y * 0.8 }; d.speedMode = 0.45; d.faceTarget = me.pos
+    const ballD = dist2(w.ball2(), me.pos)
+    this.s.timeScale(w.ball.owner === sp.player ? 1 : ballD < 7 ? 0.3 : 1)
+    const toSpace = norm(this.space.x - me.pos.x, this.space.y - me.pos.y)
+    const dir = this.tapDir ?? this.s.stickDir() ?? (this.s.autoplay ? toSpace : null)
+    const o = this.s.st.view.overlays
+    o.beginMarkers()
+    o.marker('space', this.space, OVERLAY_COLORS.gold, { radius: 2.4, fill: 0.12 })
+    o.marker('me', me.pos, OVERLAY_COLORS.gold, { radius: 0.7, fill: 0.2 })
+    o.marker('def', d.pos, OVERLAY_COLORS.b, { radius: 0.7, opacity: 0.7 })
+    if (dir) o.marker('dir', { x: me.pos.x + dir.x * 1.4, y: me.pos.y + dir.y * 1.4 }, OVERLAY_COLORS.gold, { radius: 0.3, fill: 0.6 })
+    o.endMarkers()
+    const arrived = w.ball.owner === sp.player || ballD < 0.6
+    if (input.pressed('pass') || (this.s.autoplay && ballD < 1.2) || arrived) this.decide(dir, arrived)
+  }
+
+  pointer(e: PointerEvent) {
+    if (this.phase !== 'coming') return false
+    const g = this.s.st.view.groundPoint(e.clientX, e.clientY)
+    const me = this.p(this.spec.player)
+    if (g) this.tapDir = norm(g.x - me.pos.x, g.y - me.pos.y)
+    return true
+  }
+
+  private decide(dir: V2 | null, arrived: boolean) {
+    const sp = this.spec, me = this.p(sp.player), d = this.p(sp.defender), w = this.w
+    const toSpace = norm(this.space.x - me.pos.x, this.space.y - me.pos.y)
+    const good = !!dir && dir.x * toSpace.x + dir.y * toSpace.y > Math.cos(1.0)
+    if (!good) {
+      // pressed too soon without a direction: wait for the ball; otherwise it dies under the foot
+      if (!arrived && !dir) return
+      void this.lose(dir ? 'play.firstTouchWrong' : 'play.firstTouchUnder')
+      return
+    }
+    // the touch: a metre aside, away from him, towards the free grass; he goes through empty air
+    this.phase = 'gone'
+    this.s.timeScale(1)
+    const dv = dir!
+    w.ballScript = null
+    w.ball.owner = null
+    w.ball.pos = { x: me.pos.x + dv.x * 0.3, y: me.pos.y + dv.y * 0.3, z: 0.11 }
+    w.ball.vel = { x: dv.x * 2.6, y: dv.y * 2.6, z: 0 }
+    me.target = { x: me.pos.x + dv.x * 1.2, y: me.pos.y + dv.y * 1.2 }; me.speedMode = 0.55
+    d.target = { x: me.pos.x - dv.x * 0.2, y: me.pos.y - dv.y * 0.2 }; d.speedMode = 0.9
+    d.anim = 'tackle'; d.animT = 0
+    sfx('touch')
+    if (sp.touchLines) this.s.say(sp.touchLines).catch(() => {})
+    const r = this.done; this.done = null; r?.()
+  }
+
+  private async lose(hint: string) {
+    const sp = this.spec, ch = this.s.choreo, w = this.w
+    this.phase = 'lost'
+    this.s.timeScale(1)
+    const me = this.p(sp.player), d = this.p(sp.defender)
+    // stopped dead: the defender is already on him and takes it
+    if (w.ball.owner !== sp.player) ch.give(sp.player)
+    d.target = { ...me.pos }; d.speedMode = 0.9
+    this.s.hint(hint)
+    sfx('fail')
+    this.clearMarks()
+    try {
+      await ch.wait(0.5)
+      ch.give(sp.defender); d.anim = 'tackle'; d.animT = 0
+      sfx('touch')
+      await ch.wait(1.2)
+    } catch (e) { if (e instanceof Cancelled) return; throw e }
+    for (const [id, at] of this.home) { const p = this.p(id); p.pos = { ...at }; w.prev.set(id, { ...at }); p.vel = { x: 0, y: 0 }; p.target = null }
+    void this.start()
+  }
+
+  private clearMarks() { this.s.st.view.overlays.beginMarkers(); this.s.st.view.overlays.endMarkers() }
+  dispose() { this.clearMarks(); this.s.timeScale(1) }
 }

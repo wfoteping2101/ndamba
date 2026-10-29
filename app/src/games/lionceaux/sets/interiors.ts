@@ -12,14 +12,14 @@ export function roomPitch(w: number, h: number): PitchGeom {
   return { view: 'grid', w, h, goals: [], offsetX: 0, markings: false, surface: 'concrete', walls: true, cones: [], goalFor: { a: null, b: null }, fullLength: FULL_W }
 }
 
-type Side = 'n' | 's' | 'e' | 'w'
-interface Opening { side: Side; at: number; width: number; kind: 'door' | 'window' | 'gap'; color?: string }
+export type Side = 'n' | 's' | 'e' | 'w'
+export interface Opening { side: Side; at: number; width: number; kind: 'door' | 'window' | 'gap'; color?: string }
 
 /**
  * A room of plaster walls between sim x0..x1, y0..y1 with doors and windows cut out.
  * North is y0 (far from the default camera), south is y1.
  */
-function room(b: SetBuilder, x0: number, y0: number, x1: number, y1: number, height: number, wall: string, plaster: THREE.Material, openings: Opening[], opts: { skip?: Side[]; louvres?: boolean } = {}) {
+export function room(b: SetBuilder, x0: number, y0: number, x1: number, y1: number, height: number, wall: string, plaster: THREE.Material, openings: Opening[], opts: { skip?: Side[]; louvres?: boolean } = {}) {
   const T = 0.14
   const sides: { side: Side; a: [number, number]; c: [number, number] }[] = [
     { side: 'n', a: [x0, y0], c: [x1, y0] }, { side: 's', a: [x0, y1], c: [x1, y1] },
@@ -73,7 +73,7 @@ function room(b: SetBuilder, x0: number, y0: number, x1: number, y1: number, hei
   }
 }
 
-function floorTex(kind: 'tiles' | 'cement' | 'earth' | 'wood') {
+export function floorTex(kind: 'tiles' | 'cement' | 'earth' | 'wood') {
   return canvasTexture(512, 512, (g, w, h) => {
     const r = seeded(kind.length * 13)
     if (kind === 'tiles') {

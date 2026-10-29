@@ -316,7 +316,7 @@ export function corrugated(w: number, d: number) {
 
 /* ------------------------------------------------------------------ sky and light */
 
-export type Mood = 'morning' | 'noon' | 'golden' | 'evening' | 'night' | 'rain' | 'overcast' | 'fog' | 'whiteout' | 'interior' | 'interiorNight'
+export type Mood = 'morning' | 'noon' | 'golden' | 'evening' | 'night' | 'rain' | 'overcast' | 'fog' | 'whiteout' | 'interior' | 'interiorNight' | 'snow' | 'winter' | 'dome'
 
 interface Light { top: string; horizon: string; fog: string; fogNear: number; fogFar: number; hemiSky: string; hemiGround: string; hemi: number; sun: string; sunI: number; sunPos: [number, number, number]; exposure: number }
 const LIGHTS: Record<Mood, Light> = {
@@ -331,13 +331,19 @@ const LIGHTS: Record<Mood, Light> = {
   // « Du blanc partout » : the fog of Bafoussam swallows everything a few metres away
   whiteout: { top: '#eceee9', horizon: '#eceee9', fog: '#eceee9', fogNear: 0.5, fogFar: 9, hemiSky: '#ffffff', hemiGround: '#8a8a80', hemi: 1.5, sun: '#ffffff', sunI: 0.5, sunPos: [-20, 60, 20], exposure: 1.02 },
   fog: { top: '#c9cfcc', horizon: '#e4e6e1', fog: '#dfe2dd', fogNear: 4, fogFar: 46, hemiSky: '#f4f6f2', hemiGround: '#5a4a3a', hemi: 1.35, sun: '#f7f4ea', sunI: 1.0, sunPos: [-20, 60, 20], exposure: 1.02 },
+  // Waldorf in January: « le ciel est bas et la lumière toute bleue », snow falling
+  snow: { top: '#b9c4cf', horizon: '#dfe5ea', fog: '#d9dfe5', fogNear: 18, fogFar: 140, hemiSky: '#e8f0fa', hemiGround: '#b8c2cc', hemi: 1.45, sun: '#dce8f6', sunI: 0.75, sunPos: [-20, 60, 20], exposure: 1.0 },
+  // a clear winter day after the snow: low white sun, blue shadows on the white ground
+  winter: { top: '#8fb2d8', horizon: '#e6edf2', fog: '#e2e9ef', fogNear: 60, fogFar: 260, hemiSky: '#eef4fb', hemiGround: '#c2cad3', hemi: 1.3, sun: '#fff6e8', sunI: 2.2, sunPos: [-50, 30, 30], exposure: 0.95 },
+  // under the air dome: cold white projectors, the green of the pitch bouncing back up
+  dome: { top: '#eef2f6', horizon: '#eef2f6', fog: '#eef2f6', fogNear: 80, fogFar: 240, hemiSky: '#f4f7ff', hemiGround: '#5a8a5e', hemi: 1.5, sun: '#f6f9ff', sunI: 1.6, sunPos: [6, 30, 4], exposure: 1.0 },
   interior: { top: '#d9c9ae', horizon: '#d9c9ae', fog: '#3a2a22', fogNear: 60, fogFar: 200, hemiSky: '#fff1dc', hemiGround: '#6a4a3a', hemi: 1.4, sun: '#ffe8c8', sunI: 1.4, sunPos: [-8, 14, 10], exposure: 1.0 },
   interiorNight: { top: '#1a1410', horizon: '#1a1410', fog: '#1a1410', fogNear: 60, fogFar: 200, hemiSky: '#ffd9a8', hemiGround: '#3a2620', hemi: 1.05, sun: '#ffd29a', sunI: 1.25, sunPos: [2, 10, 4], exposure: 1.05 },
 }
 
 export function skyDome(mood: Mood) {
   const L = LIGHTS[mood]
-  const cloudy = mood === 'overcast' || mood === 'rain'
+  const cloudy = mood === 'overcast' || mood === 'rain' || mood === 'snow'
   const clear = mood === 'night' || mood === 'interior' || mood === 'interiorNight' || mood === 'whiteout' || mood === 'fog'
   const tex = canvasTexture(1024, 512, (g, w, h) => {
     const grd = g.createLinearGradient(0, 0, 0, h)
@@ -378,7 +384,7 @@ export function applyMood(stage: Stage, mood: Mood, center = new THREE.Vector3()
   stage.sun.target.position.copy(center)
   stage.renderer.toneMappingExposure = L.exposure
   // image-based light from the same sky: skin, cloth and metal pick up its colours
-  const indoor = mood === 'interior' || mood === 'interiorNight'
+  const indoor = mood === 'interior' || mood === 'interiorNight' || mood === 'dome'
   const sunDir = new THREE.Vector3(L.sunPos[0], L.sunPos[1], L.sunPos[2]).normalize()
   stage.setSkyLight(indoor ? L.hemiSky : L.top, indoor ? L.hemiSky : L.horizon, L.hemiGround, sunDir, L.sun,
     mood === 'night' ? 0.35 : mood === 'interiorNight' ? 0.45 : mood === 'whiteout' ? 0.9 : 0.7)
@@ -452,6 +458,37 @@ export function rain(count = 1400): Air {
       ;(geo.attributes.position as THREE.BufferAttribute).needsUpdate = true
     },
     dispose() { geo.dispose(); mat.dispose() },
+  }
+}
+
+/** Snow falling slowly, swirling a little, around the camera. */
+export function snowfall(count = 1600): Air {
+  const rnd = seeded(23)
+  const R = 22, H = 14
+  const off = new Float32Array(count * 3), drift = new Float32Array(count)
+  for (let i = 0; i < count; i++) { off[i * 3] = (rnd() - 0.5) * R * 2; off[i * 3 + 1] = rnd() * H; off[i * 3 + 2] = (rnd() - 0.5) * R * 2; drift[i] = rnd() * 6.28 }
+  const pos = new Float32Array(count * 3)
+  const geo = new THREE.BufferGeometry()
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3))
+  const tex = dotTexture()
+  const mat = new THREE.PointsMaterial({ map: tex, color: '#ffffff', size: 0.07, transparent: true, opacity: 0.9, depthWrite: false })
+  const pts = new THREE.Points(geo, mat)
+  pts.frustumCulled = false
+  let t = 0
+  return {
+    object: pts,
+    update(dt, cam) {
+      t += dt
+      const c = cam.position
+      for (let i = 0; i < count; i++) {
+        off[i * 3 + 1] -= dt * (0.9 + (i % 7) * 0.08)
+        if (off[i * 3 + 1] < 0) off[i * 3 + 1] += H
+        const sway = Math.sin(t * 0.8 + drift[i]) * 0.5
+        pos[i * 3] = c.x + off[i * 3] + sway; pos[i * 3 + 1] = off[i * 3 + 1]; pos[i * 3 + 2] = c.z + off[i * 3 + 2] + Math.cos(t * 0.6 + drift[i]) * 0.4
+      }
+      ;(geo.attributes.position as THREE.BufferAttribute).needsUpdate = true
+    },
+    dispose() { geo.dispose(); mat.dispose(); tex.dispose() },
   }
 }
 

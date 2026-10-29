@@ -8,7 +8,7 @@ import type { CamSpec, Where } from './types'
 
 const HEAD_KID = 1.12, HEAD_ADULT = 1.55
 /** poses that bring the head down: sitting on a chair or a bed, on the ground, lying */
-const LOW: Record<string, number> = { sit: 0.66, restL: 0.66, restR: 0.66, sitGround: 0.48, hug: 0.48, kneel: 0.5, lie: 0.22 }
+const LOW: Record<string, number> = { sit: 0.66, restL: 0.66, restR: 0.66, sitHand: 0.66, sitHold: 0.66, sitGround: 0.48, hug: 0.48, kneel: 0.5, lie: 0.22 }
 /** where a figure's head is (standing, seated, lying, raised on furniture) */
 function headOf(p: { look: { kid?: boolean; height?: number }; meta: Record<string, unknown> }) {
   const stand = (p.look.kid ? HEAD_KID : HEAD_ADULT) * (p.look.height ?? 1)
@@ -76,8 +76,14 @@ export function framePose(spec: CamSpec, w: World, f: Frame, pt: (where: Where) 
       const d = spec.dist ?? 5.5, h = spec.height ?? 3.2
       return { pos: v(p.pos.x - Math.cos(ang) * d, p.pos.y - Math.sin(ang) * d, h), look: v(p.pos.x + Math.cos(ang) * 2, p.pos.y + Math.sin(ang) * 2, 0.9), fov: 44 }
     }
-    case 'match':
-      return null
+    case 'match': {
+      // the television view from the near touchline, following the ball: high enough to read the
+      // shape of the teams, close enough to see who is who (about thirty metres of pitch in frame)
+      const b = w.ball.pos
+      const cx = THREE.MathUtils.clamp(b.x, 9, w.pitch.w - 9)
+      const cy = THREE.MathUtils.lerp(w.pitch.h / 2, b.y, 0.45)
+      return { pos: v(cx, w.pitch.h + 10, 9), look: v(cx, cy, 0.5), fov: 34 }
+    }
   }
 }
 
