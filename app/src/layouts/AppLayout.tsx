@@ -1,5 +1,5 @@
 import { Link, NavLink, Navigate, Outlet, useLocation } from 'react-router-dom'
-import { BookOpen, CalendarDays, ClipboardList, Crown, Dumbbell, Home, LineChart, MoreHorizontal, Settings, Shirt, Trophy, User, Video, X } from 'lucide-react'
+import { BookOpen, CalendarDays, ClipboardList, Crown, Dumbbell, Gamepad2, Home, LineChart, MoreHorizontal, Settings, Shirt, Trophy, User, Video, X } from 'lucide-react'
 import { MolaMark } from '../ui/brand'
 import { useEffect, useState, type ReactNode } from 'react'
 import { LangSwitch, Logo } from '../ui'
@@ -9,7 +9,7 @@ import { useSession } from '../lib/session'
 import MolaLauncher from '../surfaces/mola/MolaLauncher'
 import type { Team } from '../lib/types'
 
-interface Item { to: string; label: string; icon: (size: number) => ReactNode; end?: boolean }
+interface Item { to: string; label: string; icon: (size: number) => ReactNode; end?: boolean; href?: boolean }
 const SW = 1.75 // lucide stroke width (DESIGN.md 2)
 
 export default function AppLayout() {
@@ -51,6 +51,7 @@ export default function AppLayout() {
     { title: t('app.groups.me'), items: [
       { to: '/app/joueur', label: t('app.player'), icon: (s) => <User size={s} strokeWidth={SW} /> },
       { to: '/app/livres', label: t('app.books'), icon: (s) => <BookOpen size={s} strokeWidth={SW} /> },
+      { to: '/football/', label: t('app.football'), icon: (s) => <Gamepad2 size={s} strokeWidth={SW} />, href: true },
       { to: '/app/premium', label: t('app.premium'), icon: (s) => <Crown size={s} strokeWidth={SW} /> },
       { to: '/app/reglages', label: t('app.settings'), icon: (s) => <Settings size={s} strokeWidth={SW} /> },
     ] },
@@ -83,6 +84,11 @@ export default function AppLayout() {
               <ul className="space-y-0.5">
                 {g.items.map((it) => (
                   <li key={it.to}>
+                    {it.href ? (
+                      <a href={it.to} className="relative flex h-[38px] items-center gap-3 rounded-[10px] px-3 text-[14.5px] font-medium text-cream/75 transition-colors hover:bg-white/[0.06] hover:text-cream">
+                        <span className="grid w-5 place-items-center">{it.icon(18)}</span>{it.label}
+                      </a>
+                    ) : (
                     <NavLink to={it.to} end={it.end}
                       className={({ isActive }) => cx('relative flex h-[38px] items-center gap-3 rounded-[10px] px-3 text-[14.5px] transition-colors',
                         isActive ? 'bg-white/[0.11] font-semibold text-white' : 'font-medium text-cream/75 hover:bg-white/[0.06] hover:text-cream')}>
@@ -91,6 +97,7 @@ export default function AppLayout() {
                         <span className="grid w-5 place-items-center">{it.icon(18)}</span>{it.label}
                       </>}
                     </NavLink>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -159,11 +166,17 @@ export default function AppLayout() {
                 <ul className="grid grid-cols-2 gap-1.5">
                   {g.items.map((it) => (
                     <li key={it.to}>
+                      {it.href ? (
+                        <a href={it.to} className="flex min-h-[48px] items-center gap-3 rounded-control border border-line px-3 text-[14.5px] font-semibold text-ink-soft transition-colors hover:bg-cream hover:text-ink">
+                          <span className="grid w-5 shrink-0 place-items-center">{it.icon(19)}</span><span className="min-w-0 truncate">{it.label}</span>
+                        </a>
+                      ) : (
                       <NavLink to={it.to} end={it.end} onClick={() => setMore(false)}
                         className={({ isActive }) => cx('flex min-h-[48px] items-center gap-3 rounded-control border px-3 text-[14.5px] font-semibold transition-colors',
                           isActive ? 'border-forest-600 bg-forest-50 text-forest-700' : 'border-line text-ink-soft hover:bg-cream hover:text-ink')}>
                         <span className="grid w-5 shrink-0 place-items-center">{it.icon(19)}</span><span className="min-w-0 truncate">{it.label}</span>
                       </NavLink>
+                      )}
                     </li>
                   ))}
                 </ul>

@@ -312,6 +312,12 @@
       "body": "La démo remplace les données de ce navigateur par {{demo}}. Exportez d'abord une sauvegarde depuis les réglages si vous voulez garder votre travail.",
       "confirm": "Lancer la démo",
       "busy": "Préparation de la démo"
+    },
+    "game": {
+      "label": "Jeu vidéo",
+      "title": "Lionceaux Football",
+      "body": "Le tournoi de vacances interquartiers : un match à onze sur un terrain en terre rouge, avec tout le quartier autour. Seize équipes de Douala et de Yaoundé, dont les clubs du livre. Joue sur ton téléphone, à la manette ou au clavier, directement dans le navigateur.",
+      "cta": "Jouer maintenant"
     }
   },
   "shelf": {

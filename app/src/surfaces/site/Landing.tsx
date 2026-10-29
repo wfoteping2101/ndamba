@@ -1,6 +1,6 @@
 import { useState, type ComponentType, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { BookOpen, CalendarDays, ClipboardList, Dumbbell, FileChartColumn, Flag, GraduationCap, LineChart, Network, NotebookPen, Radio, Route, ShieldCheck, Shirt, Tags, Target, Users, Video, type LucideIcon } from 'lucide-react'
+import { BookOpen, CalendarDays, Gamepad2, ClipboardList, Dumbbell, FileChartColumn, Flag, GraduationCap, LineChart, Network, NotebookPen, Radio, Route, ShieldCheck, Shirt, Tags, Target, Users, Video, type LucideIcon } from 'lucide-react'
 import { MolaMark } from '../../ui/brand'
 import { BOOKS, BRAND, PLANS, SERIES } from '../../lib/config'
 import { useDocumentTitle } from '../../lib/hooks'
@@ -32,6 +32,7 @@ export default function Landing() {
       <NjangiSection />
       <MolaSection demo={demo} />
       <Companions />
+      <FootballGame />
       <Roadmap />
       <Closing />
       {demo.dialog}
@@ -249,6 +250,31 @@ function Companions() {
               <Link to="/livres" className="btn-outline shrink-0 self-start sm:self-auto">{t('landing.companions.all')}</Link>
             </div>
             <SeriesShelf className="mt-8" />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ---------------- the football game (its own page, /football/) ---------------- */
+
+function FootballGame() {
+  const { t } = useSiteT()
+  return (
+    <section id="jeu" className="scroll-mt-20 surface-dark bg-night-800 py-16 text-cream sm:py-24" aria-labelledby="game-title">
+      <div className="container-page">
+        <div className="overflow-hidden rounded-panel border border-white/10 bg-night-700">
+          <a href="/football/" className="block" tabIndex={-1} aria-hidden="true">
+            <img src="/football/cover.jpg" alt="" width={1600} height={330} loading="lazy" className="h-[150px] w-full object-cover sm:h-[240px] lg:h-[300px]" />
+          </a>
+          <div className="flex flex-col gap-6 p-5 sm:p-8 lg:flex-row lg:items-end lg:justify-between lg:p-10">
+            <div className="max-w-2xl">
+              <GoldLabel dark>{t('landing.game.label')}</GoldLabel>
+              <h2 id="game-title" className="mt-2 text-balance text-[30px] leading-[1.06] text-cream sm:text-[42px]">{t('landing.game.title')}</h2>
+              <p className="mt-4 text-[15.5px] leading-relaxed text-cream/75">{t('landing.game.body')}</p>
+            </div>
+            <a href="/football/" className="btn-primary shrink-0 self-start lg:self-auto"><Gamepad2 size={18} strokeWidth={1.75} />{t('landing.game.cta')}</a>
           </div>
         </div>
       </div>

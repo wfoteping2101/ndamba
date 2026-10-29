@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Lionceaux Football · Ndamba</title>
+<meta name="description" content="Le tournoi de vacances interquartiers de Douala et Yaoundé : un jeu de football d'après Lionceaux, tome 1.">
+<meta name="theme-color" content="#063A25">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Lionceaux Football">
+<link rel="manifest" href="/football/football.webmanifest">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta property="og:title" content="Lionceaux Football">
+<meta property="og:description" content="Le tournoi de vacances interquartiers de Douala et Yaoundé.">
+<meta property="og:image" content="/football/cover.jpg">
+<style>
+  :root {
+    --night: #061710; --deep: #063A25; --forest: #0B5D3B; --leaf: #13804F;
+    --cream: #F6F7F2; --muted: rgba(246, 247, 242, 0.72); --faint: rgba(246, 247, 242, 0.5);
+    --gold: #F5B700; --line: rgba(246, 247, 242, 0.14); --panel: rgba(246, 247, 242, 0.06);
+    --cross: #7FB2FF; --circle: #FF6B6B; --square: #FF8CD9; --triangle: #40D9B3;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--night); color: var(--cream); -webkit-text-size-adjust: 100%; }
+  body { font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  html[data-lang="fr"] [lang="en"], html[data-lang="en"] [lang="fr"] { display: none !important; }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+  /* top bar */
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 0; }
+  .back { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 999px; text-decoration: none; font-weight: 600; color: var(--muted); }
+  .back:hover { color: var(--cream); background: var(--panel); }
+  .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .lang button { min-width: 48px; min-height: 40px; border: 0; background: transparent; color: var(--muted); font: inherit; font-weight: 700; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--cream); color: var(--deep); }
+
+  /* hero */
+  .hero { position: relative; isolation: isolate; overflow: hidden; border-radius: 22px; background: var(--deep); }
+  .hero img { display: block; width: 100%; height: clamp(170px, 34vw, 340px); object-fit: cover; object-position: 50% 40%; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6,23,16,0.05) 0%, rgba(6,23,16,0.55) 45%, rgba(6,23,16,0.96) 100%); }
+  .hero-text { position: absolute; z-index: 1; left: 0; right: 0; bottom: 0; padding: 18px 20px 20px; }
+  .kicker { margin: 0; text-shadow: 0 1px 8px rgba(0,0,0,.6); color: var(--gold); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+  h1 { margin: 4px 0 0; text-shadow: 0 2px 14px rgba(0,0,0,.45); font-size: clamp(34px, 7vw, 60px); line-height: .95; letter-spacing: -.01em; font-weight: 900; text-transform: uppercase; }
+  .intro { margin: 18px 0 0; color: var(--muted); max-width: 680px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 26px; border-radius: 14px; border: 0; font: inherit; font-weight: 800; font-size: 18px; text-decoration: none; cursor: pointer; }
+  .btn-play { background: var(--gold); color: #1d1600; box-shadow: 0 8px 24px rgba(245, 183, 0, .25); }
+  .btn-play:hover { filter: brightness(1.05); }
+  .btn-ghost { background: var(--panel); color: var(--cream); border: 1px solid var(--line); }
+  .meta { margin: 14px 0 0; color: var(--faint); font-size: 14px; }
+
+  /* guide */
+  .guide { margin: 48px 0 24px; }
+  h2 { margin: 0 0 6px; font-size: clamp(26px, 4.5vw, 36px); line-height: 1.1; }
+  .lead { margin: 0 0 22px; color: var(--muted); }
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 14px; }
+  .card h3 { margin: 0 0 10px; font-size: 18px; }
+  .card p, .card li { color: var(--muted); }
+  .card p { margin: 0 0 10px; }
+  .card ol, .card ul { margin: 0 0 6px; padding-left: 20px; }
+  .card li { margin-bottom: 6px; }
+  .step { display: inline-grid; place-items: center; width: 26px; height: 26px; margin-right: 8px; border-radius: 50%; background: var(--gold); color: #1d1600; font-weight: 900; font-size: 14px; }
+  section + section { margin-top: 34px; }
+  .controls { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .controls th, .controls td { padding: 11px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  .controls th { color: var(--faint); font-size: 12.5px; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+  .controls td:first-child { font-weight: 700; color: var(--cream); width: 30%; }
+  .controls td { color: var(--muted); }
+  .scroll { overflow-x: auto; border-radius: 18px; border: 1px solid var(--line); background: var(--panel); }
+  .scroll .controls { min-width: 560px; }
+  .k { display: inline-block; min-width: 28px; padding: 1px 7px; border-radius: 7px; border: 1px solid var(--line); background: rgba(0,0,0,.25); color: var(--cream); font-weight: 700; font-size: 13.5px; text-align: center; white-space: nowrap; }
+  .sym { font-weight: 900; }
+  .x { color: var(--cross); } .o { color: var(--circle); } .sq { color: var(--square); } .tri { color: var(--triangle); }
+  .tag { display: inline-block; margin: 0 6px 6px 0; padding: 4px 10px; border-radius: 999px; background: rgba(246,247,242,.08); color: var(--cream); font-size: 14px; }
+  .tag.book { background: rgba(245,183,0,.16); color: #ffe08a; }
+  .note { color: var(--faint); font-size: 14px; }
+  footer { margin: 40px 0 0; padding: 22px 0 40px; border-top: 1px solid var(--line); color: var(--faint); font-size: 13.5px; }
+
+  /* the game */
+  #stage { position: fixed; inset: 0; z-index: 50; background: #000; display: none; }
+  body.playing { overflow: hidden; }
+  body.playing #stage { display: block; }
+  body.playing #home { display: none; }
+  #unity-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; background: var(--night); outline: none; touch-action: none; }
+  #loading { position: absolute; inset: 0; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, #0B5D3B 0%, #061710 70%); text-align: center; padding: 24px; }
+  #loading .title { font-size: clamp(28px, 6vw, 46px); font-weight: 900; text-transform: uppercase; line-height: 1; }
+  #loading .sub { margin-top: 8px; color: var(--muted); }
+  .bar { width: min(420px, 78vw); height: 10px; margin: 26px auto 10px; border-radius: 999px; background: rgba(246,247,242,.14); overflow: hidden; }
+  .bar i { display: block; height: 100%; width: 0%; background: var(--gold); border-radius: 999px; transition: width .2s; }
+  #pct { color: var(--faint); font-size: 14px; font-variant-numeric: tabular-nums; }
+  #err { display: none; max-width: 520px; margin: 18px auto 0; color: #ffb4b4; }
+  #quit { position: absolute; z-index: 3; top: max(6px, env(safe-area-inset-top)); left: 50%; transform: translateX(-50%); min-height: 34px; padding: 0 14px; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; background: rgba(0,0,0,.35); color: rgba(255,255,255,.85); font: 600 13px system-ui, sans-serif; cursor: pointer; }
+  #rotate { position: absolute; inset: 0; z-index: 4; display: none; place-items: center; text-align: center; padding: 24px; background: rgba(6,23,16,.96); }
+  #rotate .phone { width: 54px; height: 90px; margin: 0 auto 18px; border: 4px solid var(--cream); border-radius: 12px; animation: turn 1.8s ease-in-out infinite; }
+  @keyframes turn { 0%, 30% { transform: rotate(0deg); } 60%, 100% { transform: rotate(-90deg); } }
+  @media (orientation: portrait) and (max-width: 900px) { body.playing.touch #rotate { display: grid; } }
+  @media (prefers-reduced-motion: reduce) { #rotate .phone { animation: none; transform: rotate(-90deg); } }
+</style>
+</head>
+<body>
+<div id="home">
+  <div class="wrap">
+    <div class="top">
+      <a class="back" href="/"><span aria-hidden="true">←</span> <span lang="fr">Retour à Ndamba</span><span lang="en">Back to Ndamba</span></a>
+      <div class="lang" role="group" aria-label="Langue · Language">
+        <button type="button" data-set-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <img src="/football/cover.jpg" alt="" width="1600" height="330">
+      <div class="hero-text">
+        <p class="kicker" lang="fr">Tournoi de vacances interquartiers</p>
+        <p class="kicker" lang="en">Holiday neighbourhood tournament</p>
+        <h1>Lionceaux Football</h1>
+      </div>
+    </div>
+
+    <p class="intro" lang="fr">Un match à onze sur un terrain de quartier en terre rouge, avec tout le quartier autour. Seize équipes de Douala et de Yaoundé, dont les clubs du livre <em>Lionceaux</em>, tome 1. Joue au doigt sur ton téléphone, à la manette PS5 ou au clavier.</p>
+    <p class="intro" lang="en">An eleven-a-side match on a red-earth neighbourhood pitch, with the whole neighbourhood watching. Sixteen sides from Douala and Yaoundé, including the clubs from the book <em>Lionceaux</em>, Book 1. Play with your fingers on a phone, a PS5 controller or the keyboard.</p>
+
+    <div class="actions">
+      <button type="button" class="btn btn-play" id="play">
+        <span aria-hidden="true">▶</span><span lang="fr">Jouer</span><span lang="en">Play</span>
+      </button>
+      <a class="btn btn-ghost" href="#guide"><span lang="fr">Comment jouer</span><span lang="en">How to play</span></a>
+    </div>
+    <p class="meta">
+      <span lang="fr">Premier lancement : environ <span class="size">25</span> Mo à télécharger, puis le jeu reste en mémoire. Sur téléphone, tourne l'écran en paysage.</span>
+      <span lang="en">First launch: about <span class="size">25</span> MB to download, then the game stays cached. On a phone, turn it sideways.</span>
+    </p>
+
+    <!-- ===================================================================== the guide -->
+    <div class="guide" id="guide">
+      <section>
+        <h2 lang="fr">Comment jouer</h2>
+        <h2 lang="en">How to play</h2>
+        <p class="lead" lang="fr">Tout ce qu'il faut savoir pour ton premier match, en deux minutes.</p>
+        <p class="lead" lang="en">Everything you need for your first match, in two minutes.</p>
+        <div class="grid">
+          <div class="card">
+            <h3 lang="fr"><span class="step">1</span>Lance une partie</h3>
+            <h3 lang="en"><span class="step">1</span>Start a game</h3>
+            <ul lang="fr">
+              <li><b>Match amical</b> : choisis ton équipe (à gauche) et l'adversaire (à droite) avec les flèches, puis le niveau (facile, normal, difficile) et la durée.</li>
+              <li><b>Tournoi interquartiers</b> : choisis ton quartier et va jusqu'au bout : huitième, quart, demi, finale. Match nul : tirs au but.</li>
+              <li><b>Options</b> : manette à l'écran, caméra, volume, langue.</li>
+            </ul>
+            <ul lang="en">
+              <li><b>Friendly match</b>: pick your team (left) and the opponent (right) with the arrows, then the level (easy, normal, hard) and the length.</li>
+              <li><b>Neighbourhood tournament</b>: pick your neighbourhood and go all the way: round of 16, quarter-final, semi-final, final. A draw goes to penalties.</li>
+              <li><b>Options</b>: on-screen controller, camera, volume, language.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 lang="fr"><span class="step">2</span>Le coup d'envoi</h3>
+            <h3 lang="en"><span class="step">2</span>Kick-off</h3>
+            <ul lang="fr">
+              <li>Les deux équipes entrent sur le terrain. Appuie sur <span class="sym x">✕</span> pour passer la présentation.</li>
+              <li>Tu contrôles le joueur qui a un <b>anneau</b> sous les pieds.</li>
+              <li>Le score et le chrono sont en haut à gauche.</li>
+            </ul>
+            <ul lang="en">
+              <li>Both teams walk onto the pitch. Press <span class="sym x">✕</span> to skip the line-up.</li>
+              <li>You control the player with the <b>ring</b> under his feet.</li>
+              <li>The score and the clock are at the top left.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 lang="fr"><span class="step">3</span>Marque, gagne</h3>
+            <h3 lang="en"><span class="step">3</span>Score, win</h3>
+            <ul lang="fr">
+              <li>Garde <span class="sym sq">□</span> appuyé pour charger le tir (la barre de puissance s'affiche), relâche pour frapper.</li>
+              <li>Appuie sur une action <b>juste avant</b> de recevoir le ballon : ton joueur la joue en une touche.</li>
+              <li>À la fin, l'écran de match montre la possession, les tirs et les passes réussies.</li>
+            </ul>
+            <ul lang="en">
+              <li>Hold <span class="sym sq">□</span> to charge the shot (the power bar shows), release to strike.</li>
+              <li>Press an action <b>just before</b> the ball reaches you: your player plays it first time.</li>
+              <li>At full time the match screen shows possession, shots and completed passes.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 lang="fr">Les commandes</h2>
+        <h2 lang="en">The controls</h2>
+        <p class="lead" lang="fr">Sur téléphone, le stick apparaît là où tu poses le pouce gauche ; les boutons sont à droite, comme sur une manette PS5.</p>
+        <p class="lead" lang="en">On a phone, the stick appears wherever you put your left thumb; the buttons are on the right, like a PS5 controller.</p>
+        <div class="scroll">
+          <table class="controls">
+            <thead>
+              <tr>
+                <th><span lang="fr">Avec le ballon</span><span lang="en">With the ball</span></th>
+                <th><span lang="fr">Téléphone · PS5</span><span lang="en">Phone · PS5</span></th>
+                <th><span lang="fr">Clavier</span><span lang="en">Keyboard</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span lang="fr">Se déplacer</span><span lang="en">Move</span></td><td><span lang="fr">Stick gauche</span><span lang="en">Left stick</span></td><td><span class="k">W</span> <span class="k">A</span> <span class="k">S</span> <span class="k">D</span> <span lang="fr">ou flèches</span><span lang="en">or arrows</span></td></tr>
+              <tr><td>Sprint</td><td><span class="k">R2</span></td><td><span class="k">Shift</span></td></tr>
+              <tr><td><span lang="fr">Passe</span><span lang="en">Pass</span></td><td><span class="sym x">✕</span> <span lang="fr">Croix</span><span lang="en">Cross</span></td><td><span class="k">J</span> <span lang="fr">ou</span><span lang="en">or</span> <span class="k">Espace</span></td></tr>
+              <tr><td><span lang="fr">Passe en profondeur</span><span lang="en">Through ball</span></td><td><span class="sym tri">△</span> Triangle</td><td><span class="k">I</span></td></tr>
+              <tr><td><span lang="fr">Passe lobée, centre</span><span lang="en">Lobbed pass, cross</span></td><td><span class="sym o">○</span> <span lang="fr">Rond</span><span lang="en">Circle</span></td><td><span class="k">L</span></td></tr>
+              <tr><td><span lang="fr">Tir</span><span lang="en">Shoot</span></td><td><span class="sym sq">□</span> <span lang="fr">Carré (garde appuyé)</span><span lang="en">Square (hold)</span></td><td><span class="k">K</span></td></tr>
+              <tr><td><span lang="fr">Changer de joueur</span><span lang="en">Switch player</span></td><td><span class="k">L1</span></td><td><span class="k">Q</span></td></tr>
+              <tr><td>Pause</td><td><span class="k">II</span> <span lang="fr">en haut à droite · Options</span><span lang="en">top right · Options</span></td><td><span class="k">Échap</span></td></tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th><span lang="fr">En défense</span><span lang="en">Defending</span></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span lang="fr">Presser le porteur</span><span lang="en">Press the man on the ball</span></td><td><span lang="fr">Garde</span><span lang="en">Hold</span> <span class="sym x">✕</span></td><td><span lang="fr">Garde</span><span lang="en">Hold</span> <span class="k">J</span></td></tr>
+              <tr><td><span lang="fr">Tacle</span><span lang="en">Tackle</span></td><td><span class="sym o">○</span></td><td><span class="k">L</span></td></tr>
+              <tr><td><span lang="fr">Tacle glissé</span><span lang="en">Slide tackle</span></td><td><span class="sym sq">□</span></td><td><span class="k">K</span></td></tr>
+              <tr><td><span lang="fr">Changer de joueur</span><span lang="en">Switch player</span></td><td><span class="k">L1</span></td><td><span class="k">Q</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note" lang="fr">Manette PS5 : branche-la ou connecte-la en Bluetooth avant d'ouvrir le jeu, puis appuie sur une touche. Tu peux cacher la manette à l'écran dans Options.</p>
+        <p class="note" lang="en">PS5 controller: plug it in or pair it over Bluetooth before opening the game, then press any button. You can hide the on-screen controller in Options.</p>
+      </section>
+
+      <section>
+        <h2 lang="fr">Les équipes</h2>
+        <h2 lang="en">The teams</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Douala</h3>
+            <p><span class="tag book">Bonamoussadi</span><span class="tag book">Bépanda</span><span class="tag book">Deïdo</span><span class="tag">Akwa</span><span class="tag">New-Bell</span><span class="tag">Bonabéri</span><span class="tag">Makepe</span><span class="tag">Ndokotti</span></p>
+          </div>
+          <div class="card">
+            <h3>Yaoundé</h3>
+            <p><span class="tag">Mvog-Ada</span><span class="tag">Mokolo</span><span class="tag">Briqueterie</span><span class="tag">Essos</span><span class="tag">Biyem-Assi</span><span class="tag">Nkolbisson</span><span class="tag">Mimboman</span><span class="tag">Obili</span></p>
+          </div>
+        </div>
+        <p class="note" lang="fr">En doré, les clubs du livre (les Lionceaux de Bonamoussadi, les Requins de Bépanda, les Panthères de Deïdo), avec leurs couleurs et leurs joueurs. Les autres quartiers sont réels, mais leurs équipes ont été inventées pour le jeu. En match amical, tu peux aussi prendre les clubs de la suite du livre, à l'étranger (Maryland, Île-de-France, Maroc, Londres).</p>
+        <p class="note" lang="en">In gold, the clubs from the book (the Lionceaux de Bonamoussadi, the Requins de Bépanda, the Panthères de Deïdo), with their colours and players. The other neighbourhoods are real, but their teams were made up for the game. In a friendly you can also pick the clubs from later in the book, abroad (Maryland, Île-de-France, Morocco, London).</p>
+      </section>
+
+      <section>
+        <h2 lang="fr">Si le jeu ne démarre pas</h2>
+        <h2 lang="en">If the game won't start</h2>
+        <div class="card">
+          <ul lang="fr">
+            <li>Utilise un navigateur à jour : Chrome sur Android, Safari sur iPhone, Chrome ou Edge sur ordinateur.</li>
+            <li>La première fois, reste sur le Wi-Fi le temps du chargement. Les fois suivantes, c'est beaucoup plus rapide.</li>
+            <li>Sur iPhone, pour jouer en plein écran : bouton Partager, puis « Sur l'écran d'accueil », et ouvre le jeu depuis l'icône.</li>
+            <li>Si c'est lent, ferme les autres onglets et applications.</li>
+          </ul>
+          <ul lang="en">
+            <li>Use an up-to-date browser: Chrome on Android, Safari on iPhone, Chrome or Edge on a computer.</li>
+            <li>The first time, stay on Wi-Fi while it loads. After that it starts much faster.</li>
+            <li>On iPhone, to play full screen: tap Share, then "Add to Home Screen", and open the game from the icon.</li>
+            <li>If it's slow, close other tabs and apps.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <span lang="fr">Équipes, couleurs et joueurs nommés du livre : <em>Lionceaux</em>, tome 1. Mouvements : CMU Graphics Lab Motion Capture Database. Corps : MakeHuman (CC0). Polices : Anton, Inter (SIL OFL).</span>
+      <span lang="en">Book clubs, colours and named players: <em>Lionceaux</em>, Book 1. Motion: CMU Graphics Lab Motion Capture Database. Bodies: MakeHuman (CC0). Fonts: Anton, Inter (SIL OFL).</span>
+    </footer>
+  </div>
+</div>
+
+<!-- ======================================================================= the game -->
+<div id="stage">
+  <canvas id="unity-canvas" tabindex="-1"></canvas>
+  <div id="loading">
+    <div>
+      <div class="title">Lionceaux Football</div>
+      <div class="sub"><span lang="fr">Le terrain se prépare…</span><span lang="en">Getting the pitch ready…</span></div>
+      <div class="bar"><i id="bar"></i></div>
+      <div id="pct">0 %</div>
+      <div id="err"></div>
+    </div>
+  </div>
+  <button id="quit" type="button"><span lang="fr">✕ Quitter</span><span lang="en">✕ Quit</span></button>
+  <div id="rotate">
+    <div>
+      <div class="phone" aria-hidden="true"></div>
+      <b lang="fr">Tourne ton téléphone</b><b lang="en">Turn your phone sideways</b>
+      <p class="note" lang="fr">Le jeu se joue en paysage.</p>
+      <p class="note" lang="en">The game is played in landscape.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var VERSION = "1";
+  var BUILD = "/football/Build/football";
+  var root = document.documentElement;
+  var touch = window.matchMedia("(pointer: coarse)").matches || navigator.maxTouchPoints > 1;
+  var phone = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
+  if (touch) document.body.classList.add("touch");
+
+  // language: the Ndamba app's own choice (same site), else the browser's
+  var lang = "fr";
+  try { lang = localStorage.getItem("njangi.lang") || ((navigator.language || "fr").slice(0, 2) === "en" ? "en" : "fr"); } catch (e) {}
+  function setLang(l) {
+    lang = l === "en" ? "en" : "fr";
+    root.setAttribute("data-lang", lang); root.lang = lang;
+    document.querySelectorAll("[data-set-lang]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang)); });
+    try { localStorage.setItem("njangi.lang", lang); } catch (e) {}
+    if (instance) try { instance.SendMessage("Game", "SetLanguage", lang); } catch (e) {}
+  }
+  document.querySelectorAll("[data-set-lang]").forEach(function (b) { b.addEventListener("click", function () { setLang(b.getAttribute("data-set-lang")); }); });
+
+  var instance = null, started = false;
+  var stage = document.getElementById("stage"), canvas = document.getElementById("unity-canvas");
+  var bar = document.getElementById("bar"), pct = document.getElementById("pct"), err = document.getElementById("err");
+
+  function fail(msg) {
+    err.style.display = "block";
+    err.textContent = (lang === "en" ? "The game could not start: " : "Le jeu n'a pas pu démarrer : ") + msg;
+  }
+
+  function play() {
+    if (started) return;
+    started = true;
+    document.body.classList.add("playing");
+    // full screen and landscape where the browser allows it (Android); iPhone: add to home screen
+    try {
+      var el = document.documentElement;
+      var fs = el.requestFullscreen || el.webkitRequestFullscreen;
+      if (fs && touch) {
+        var p = fs.call(el);
+        if (p && p.then) p.then(function () { if (screen.orientation && screen.orientation.lock) screen.orientation.lock("landscape").catch(function () {}); }).catch(function () {});
+      }
+    } catch (e) {}
+    var s = document.createElement("script");
+    s.src = BUILD + ".loader.js?v=" + VERSION;
+    s.onerror = function () { fail(lang === "en" ? "the loader did not download." : "le chargeur ne s'est pas téléchargé."); };
+    s.onload = function () {
+      var config = {
+        dataUrl: BUILD + ".data.unityweb?v=" + VERSION,
+        frameworkUrl: BUILD + ".framework.js.unityweb?v=" + VERSION,
+        codeUrl: BUILD + ".wasm.unityweb?v=" + VERSION,
+        streamingAssetsUrl: "/football/StreamingAssets",
+        companyName: "Ndamba",
+        productName: "Lionceaux Football",
+        productVersion: "0.1.0",
+        // phones have very dense screens: cap the resolution so the game stays smooth
+        devicePixelRatio: Math.min(window.devicePixelRatio || 1, phone ? 1.5 : 2),
+        matchWebGLToCanvasSize: true
+      };
+      createUnityInstance(canvas, config, function (p) {
+        var v = Math.round(p * 100);
+        bar.style.width = v + "%"; pct.textContent = v + " %";
+      }).then(function (u) {
+        instance = u;
+        document.getElementById("loading").style.display = "none";
+        try { u.SendMessage("Game", "SetLanguage", lang); } catch (e) {}
+        canvas.focus();
+      }).catch(function (e) { fail(String(e && e.message || e)); });
+    };
+    document.body.appendChild(s);
+  }
+
+  document.getElementById("play").addEventListener("click", play);
+  document.getElementById("quit").addEventListener("click", function () {
+    try { if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen(); } catch (e) {}
+    var done = function () { location.href = "/football/"; };
+    if (instance) instance.Quit().then(done, done); else done();
+  });
+  if (location.hash === "#jouer" || location.hash === "#play") play();
+  setLang(lang);
+})();
+</script>
+</body>
+</html>
