@@ -780,11 +780,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch29.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch29.png",
+  "status": "approved, integrated",
+  "review": "The beach game: flip-flop goal, socks in his fists, BriBri films. Minor: Laia looks younger than 13.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch30",
@@ -795,10 +799,10 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch30.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch30.png",
+  "status": "redo",
+  "review": "Avi Ramon drawn as an old Black man with a white beard again. Prompt fixed with his full description.",
   "integrated_in": []
  },
  {
@@ -810,10 +814,10 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch31.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch31.png",
+  "status": "redo",
+  "review": "Youssef is missing: Kaydoudou signs the ball himself next to BriBri. Prompt fixed (Youssef described in full, BriBri in his green sweatshirt, only Youssef holds the marker).",
   "integrated_in": []
  },
  {
@@ -825,10 +829,10 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch32.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch32.png",
+  "status": "redo",
+  "review": "Avi Ramon drawn as an old Black man again. Prompt fixed with his full description.",
   "integrated_in": []
  },
  {
@@ -840,11 +844,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch33.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch33.png",
+  "status": "approved, integrated",
+  "review": "London: Okafor glued to BriBri’s back, BriBri plays one touch to his brother.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch34",
@@ -855,11 +863,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch34.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch34.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou lets the ball go just before Jaden slides into the puddle; BriBri watches Jaden.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch35",
@@ -870,11 +882,15 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch35.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch35.png",
+  "status": "approved, integrated",
+  "review": "The pincer: Jaden in front, BriBri hides the pass, Kaydoudou bursts in for the ball.",
+  "integrated_in": [
+   "web reader /book/tome1/ (chapter opening)",
+   "PDF (full page before the chapter)",
+   "app (lessons)"
+  ]
  },
  {
   "id": "ch36",
@@ -2340,6 +2356,7 @@
   "chapter": 25,
   "refs": [
    "sheet-brothers.png",
+   "ch25.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch25b.txt",
@@ -2358,6 +2375,7 @@
   "chapter": 25,
   "refs": [
    "sheet-brothers.png",
+   "ch25.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch25c.txt",
@@ -2376,6 +2394,7 @@
   "chapter": 25,
   "refs": [
    "sheet-brothers.png",
+   "ch25.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch25d.txt",
@@ -2448,6 +2467,7 @@
   "chapter": 27,
   "refs": [
    "sheet-brothers.png",
+   "ch27.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch27b.txt",
@@ -2467,6 +2487,7 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch27.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch27c.txt",
@@ -2485,6 +2506,7 @@
   "chapter": 27,
   "refs": [
    "sheet-brothers.png",
+   "ch27.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch27d.txt",
@@ -2504,14 +2526,18 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch28.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch28b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch28b.png",
+  "status": "approved, integrated",
+  "review": "Jordi draws the lonely little circle on a sugar sachet; Papa nods, BriBri behind his thick chocolate.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch28c",
@@ -2519,14 +2545,18 @@
   "chapter": 28,
   "refs": [
    "sheet-brothers.png",
+   "ch28.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch28c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch28c.png",
+  "status": "approved, integrated",
+  "review": "Nil takes off like a plane, Kaydoudou the runway controller waves his arms, BriBri has already looked away.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch28d",
@@ -2535,14 +2565,18 @@
   "refs": [
    "sheet-brothers.png",
    "sheet-adults.png",
+   "ch28.png",
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch28d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch28d.png",
+  "status": "approved, integrated",
+  "review": "In the rain Nil strikes and falls backwards; BriBri laid it off without looking; Papa jumps up under his umbrella.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch29b",
@@ -2553,11 +2587,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch29b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch29b.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou alone on the roof in his blanket, looking south over the night sea.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch29c",
@@ -2568,11 +2605,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch29c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch29c.png",
+  "status": "approved, integrated",
+  "review": "Mami in her rattan chair raises her cane like a sword at the tablet; the njangi women laugh.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch29d",
@@ -2583,11 +2623,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch29d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch29d.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou draws the circle in the sand for the village children; BriBri smiles from the boat.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch30b",
@@ -2598,11 +2641,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch30b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch30b.png",
+  "status": "approved, integrated",
+  "review": "The fruit tactics: three oranges against two lemons, the big orange alone in front; Kaydoudou points at himself.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch30c",
@@ -2613,11 +2659,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch30c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch30c.png",
+  "status": "approved, integrated",
+  "review": "Toni the giant fills the coach door; Kaydoudou whispers, BriBri studies him, Laia raises an eyebrow.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch30d",
@@ -2629,11 +2678,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch30d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch30d.png",
+  "status": "approved, integrated",
+  "review": "BriBri's long switch over everyone toward Toni alone and Kaydoudou on tiptoe.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch31b",
@@ -2644,11 +2696,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch31b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch31b.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou dances under the hotel balcony, Youssef beckons him up, BriBri hands in pockets.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch31c",
@@ -2659,11 +2714,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch31c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch31c.png",
+  "status": "approved, integrated",
+  "review": "Jordi's water bottle splash at half time; Kaydoudou's O of an idea.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch31d",
@@ -2674,11 +2732,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch31d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch31d.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou slides it calmly past the diving Atlas keeper; BriBri far behind after the long pass.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch32b",
@@ -2689,11 +2750,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch32b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch32b.png",
+  "status": "approved, integrated",
+  "review": "The Castellana marches past in one white line; Kaydoudou whispers a joke, BriBri studies them.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch32c",
@@ -2704,11 +2768,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch32c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch32c.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou slips the ball between two Castellana defenders into BriBri’s run.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch32d",
@@ -2720,11 +2787,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch32d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch32d.png",
+  "status": "approved, integrated",
+  "review": "The winners’ dinner on the roof: Kaydoudou arms up, the two medals on the table, BriBri looks at the sea.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch33b",
@@ -2735,11 +2805,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch33b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch33b.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou the bus driver bows to the old lady on the top deck; BriBri hides his face.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch33c",
@@ -2750,11 +2823,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch33c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch33c.png",
+  "status": "approved, integrated",
+  "review": "BriBri dropped on the wet grass by the shoulder charge; Kaydoudou winces.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch33d",
@@ -2765,11 +2841,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch33d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch33d.png",
+  "status": "approved, integrated",
+  "review": "The bruises map in the tiny bathroom; BriBri about to laugh.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch34b",
@@ -2780,11 +2859,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch34b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch34b.png",
+  "status": "approved, integrated",
+  "review": "Kaydoudou imitates Okafor in the locker room; Jaden smiles despite himself.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch34c",
@@ -2795,11 +2877,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch34c.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch34c.png",
+  "status": "approved, integrated",
+  "review": "The pigeon steps aside at the last second; Kaydoudou glued to the bus window.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch34d",
@@ -2810,11 +2895,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch34d.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch34d.png",
+  "status": "approved, integrated",
+  "review": "The cardboard medal, Freddie conducts, BriBri laughs out loud.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch35b",
@@ -2825,11 +2913,14 @@
    "ch07.png"
   ],
   "prompt": "tome1/prompts/ch35b.txt",
-  "model": null,
-  "master": null,
-  "status": "pending",
-  "review": null,
-  "integrated_in": []
+  "model": "Codex app built-in image_gen tool (ChatGPT image generation; the Codex imagegen skill names gpt-image-2), run through `codex exec` with the agent model gpt-6-astra, low reasoning effort",
+  "master": "tome1/illustrations/_masters/ch35b.png",
+  "status": "approved, integrated",
+  "review": "Okafor's lion on the whiteboard; Kaydoudou whispers, BriBri bites his cheek.",
+  "integrated_in": [
+   "web reader /book/tome1/ (inside the chapter text, after its anchor paragraph)",
+   "print (half page inside the text)"
+  ]
  },
  {
   "id": "ch35c",
