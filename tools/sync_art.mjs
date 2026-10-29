@@ -27,7 +27,7 @@ for (const a of inv) {
   if (fs.existsSync(staged) && (!fs.existsSync(master) || fs.statSync(staged).mtimeMs > fs.statSync(master).mtimeMs)) { fs.copyFileSync(staged, master); copied++ }
   const has = fs.existsSync(master)
   const r = review[a.id] || {}
-  const approved = has && r.status !== 'redo'
+  const approved = has && r.status === 'approved' // only reviewed images are published
   const isCode = a.id === 'code-cover-art'
   const targets = isCode ? [] : (DEST[a.id] || (a.kind === 'chapter' || a.kind === 'beat' || a.kind === 'part' || a.kind === 'sheet' ? [a.id + '.png'] : []))
   if (approved) for (const t of targets) fs.copyFileSync(master, path.join(ILL, t))
