@@ -1,0 +1,72 @@
+{
+ "name": "womanBig",
+ "height": 1.6418002308139257,
+ "kid": false,
+ "eyes": {
+  "l": [
+   0.02860055039543773,
+   -0.11503778332029851,
+   1.5359918298801252
+  ],
+  "r": [
+   -0.02860055039543773,
+   -0.11503778332029851,
+   1.5359918298801252
+  ]
+ },
+ "kitAtlas": {
+  "torso": [
+   0.01,
+   0.01,
+   0.72,
+   0.72
+  ],
+  "sleeveL": [
+   0.78,
+   0.02,
+   0.2,
+   0.46
+  ],
+  "sleeveR": [
+   0.78,
+   0.52,
+   0.2,
+   0.46
+  ]
+ },
+ "pieces": [
+  "body",
+  "calves",
+  "dress_top",
+  "earrings",
+  "eye_l",
+  "eye_r",
+  "feet",
+  "forearms",
+  "hair_afro",
+  "hair_crop",
+  "hair_puff",
+  "hair_wrap",
+  "hat_brim",
+  "hat_crown",
+  "hat_flowers",
+  "lower-teeth",
+  "shirt",
+  "shoe_l",
+  "shoe_r",
+  "skirt",
+  "thighs",
+  "tongue",
+  "trousers",
+  "upper-teeth",
+  "wrap_knot"
+ ],
+ "expressions": [
+  "blink",
+  "smile",
+  "open",
+  "sad",
+  "frown",
+  "surprise"
+ ]
+}

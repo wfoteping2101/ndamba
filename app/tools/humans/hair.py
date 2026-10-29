@@ -211,3 +211,61 @@ def cap_brim(cap_V: np.ndarray, center: np.ndarray, front=-1.0) -> Piece:
     F = F + F2
     UV = [[(0.5, 0.5)] * 4 for _ in F]
     return Piece('cap_brim', V, F, UV, head_only(len(V)), 'cap')
+
+
+def wrap_knot(cap_V: np.ndarray, center: np.ndarray, seed=5) -> Piece:
+    """The knot of a head wrap (foulard): two folded lobes standing up at the back of the crown."""
+    rng = np.random.default_rng(seed)
+    top = cap_V[np.argmax(cap_V[:, 2])]
+    pieces_V, pieces_F = [], []
+    for k, (dx, dy, dz, s) in enumerate([(0.0, 0.03, 0.035, 0.055), (0.03, 0.015, 0.03, 0.04), (-0.032, 0.02, 0.028, 0.042)]):
+        V, F = icosphere(1.0, 2)
+        n = _noise3(V, 4, seed + k)
+        V = V * (1 + 0.12 * n)[:, None]
+        V = V * np.array([s * 1.2, s * 0.9, s * 0.75])
+        V = V + top + np.array([dx, dy, dz])
+        base = sum(len(v) for v in pieces_V)
+        pieces_V.append(V)
+        pieces_F.extend([[a + base for a in f] for f in F])
+    V = np.vstack(pieces_V)
+    UV = [[(0.5, 0.5)] * 3 for _ in pieces_F]
+    return Piece('wrap_knot', V, pieces_F, UV, head_only(len(V)), 'wrap')
+
+
+def hat(cap_V: np.ndarray, F, center: np.ndarray) -> list[Piece]:
+    """A woman's brimmed hat: a rounded crown over the head and a wide soft brim."""
+    crown = shape_cap(cap_V, F, 'wrap', center, thickness=0.028)
+    crown_p = Piece('hat_crown', crown, F, [[(0.5, 0.5)] * len(f) for f in F], head_only(len(crown)), 'hat')
+    bnd = sorted(mh.boundary_verts(F))
+    z0 = float(np.percentile(crown[:, 2], 30))
+    rad = float(np.percentile(np.linalg.norm((crown - center)[:, :2], axis=1), 90))
+    V, Fb = [], []
+    seg, rings = 36, 4
+    for i in range(rings + 1):
+        r = rad * (0.95 + 0.9 * i / rings)
+        for j in range(seg):
+            a = 2 * math.pi * j / seg
+            V.append([center[0] + math.cos(a) * r, center[1] + math.sin(a) * r, z0 - 0.025 * (i / rings) ** 2])
+    for i in range(rings):
+        for j in range(seg):
+            a = i * seg + j
+            b = i * seg + (j + 1) % seg
+            Fb.append([a, b, b + seg, a + seg])
+    V = np.array(V)
+    n = len(V)
+    V2 = V - np.array([0, 0, 0.004])
+    Fb2 = [list(reversed([k + n for k in f])) for f in Fb]
+    V = np.vstack([V, V2])
+    brim = Piece('hat_brim', V, Fb + Fb2, [[(0.5, 0.5)] * 4 for _ in Fb + Fb2], head_only(len(V)), 'hat')
+    # a band of flowers round the crown (small spheres, coloured at runtime by the band material)
+    FV, FF = [], []
+    for j in range(14):
+        a = 2 * math.pi * j / 14
+        c = center + np.array([math.cos(a) * rad * 0.98, math.sin(a) * rad * 0.98, 0]) 
+        c[2] = z0 + 0.012
+        sv, sf = icosphere(0.011, 1)
+        base = len(FV)
+        FV.extend(list(sv + c))
+        FF.extend([[x + base for x in f] for f in sf])
+    flowers = Piece('hat_flowers', np.array(FV), FF, [[(0.5, 0.5)] * 3 for _ in FF], head_only(len(FV)), 'flowers')
+    return [crown_p, brim, flowers]

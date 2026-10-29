@@ -111,7 +111,7 @@ const POSES: Partial<Record<string, Partial<Record<Arm, ArmPose>>>> = {
   fist: { r: { hand: [-0.06, 1.0, 0.36], elbowOut: 0.3 } },
   heart: { r: { hand: [0.05, 0.98, 0.11], elbowOut: 0.6 } },
   palm: { r: { hand: [-0.05, 1.22, 0.36], elbowOut: 0.4 } },
-  hold: { l: { hand: [0.07, 0.86, 0.22] }, r: { hand: [-0.07, 0.86, 0.22] } },
+  hold: { l: { hand: [0.115, 0.86, 0.25], elbowOut: 0.5 }, r: { hand: [-0.115, 0.86, 0.25], elbowOut: 0.5 } },
   open: { l: { hand: [0.55, 1.0, 0.08] }, r: { hand: [-0.55, 1.0, 0.08] } },
   mic: { r: { hand: [-0.02, 1.12, 0.12], elbowOut: 0.5 } },
   climb: { l: { hand: [0.12, 1.62, 0.12] }, r: { hand: [-0.12, 1.62, 0.12] } },
@@ -124,8 +124,8 @@ const POSES: Partial<Record<string, Partial<Record<Arm, ArmPose>>>> = {
 /** Which clip plays under a story pose (the IK arms, if any, go on top). */
 const POSE_CLIP: Record<string, string> = {
   sit: 'sitIdle', talk: 'talk', dance: 'dance', cry: 'cry', sew: 'sew', sitGround: 'sitGround', shrug: 'shrug', celebrate: 'celebrate',
-  dejected: 'mope', wave: 'idle', point: 'idle', fist: 'idle', heart: 'idle', palm: 'idle', hold: 'idle', open: 'idle', mic: 'talk',
-  climb: 'idle', juggle: 'idle', hug: 'sitGround', kneel: 'sitGround', lie: 'getUp', catch: 'idle',
+  catch: 'idleRelaxed', dejected: 'mope', wave: 'idleRelaxed', point: 'idleRelaxed', fist: 'idleRelaxed', heart: 'idleRelaxed', palm: 'idleRelaxed', hold: 'idleRelaxed', open: 'idleRelaxed', mic: 'talk',
+  climb: 'idleRelaxed', juggle: 'idleRelaxed', hug: 'sitGround', kneel: 'sitGround', lie: 'getUp',
 }
 
 const tmpV = new THREE.Vector3(), tmpV2 = new THREE.Vector3(), tmpV3 = new THREE.Vector3(), tmpQ = new THREE.Quaternion(), tmpQ2 = new THREE.Quaternion()
@@ -171,6 +171,8 @@ function solveArm(upper: THREE.Bone, lower: THREE.Bone, hand: THREE.Bone, target
 /* ------------------------------------------------------------------------------------ the driver */
 
 const LOCO = ['idle', 'walk', 'jog', 'run', 'sprint', 'walkBack', 'strafeL', 'strafeR'] as const
+/** the standing clip (calm, weight shifting); 'idle' (waiting, looking around) is kept for variety */
+const STAND = 'idleRelaxed'
 type Loco = (typeof LOCO)[number]
 
 export class Motion {
@@ -189,6 +191,9 @@ export class Motion {
   private scale = 1
   private lookYaw = 0
   private ikW = { l: 0, r: 0 }
+  private stand = STAND
+  private diveSide = 1
+  private tilt = { z: 0, x: 0, y: 0 }
   /** art checks: hold one clip at one time */
   debug: { clip: string; t: number } | null = null
 
@@ -207,10 +212,13 @@ export class Motion {
         a.setEffectiveWeight(0)
         a.play()
         a.timeScale = 0
+        // nobody stands in step with the others
+        a.time = Math.random() * clip.duration
         this.actions.set(name, a)
         this.weights.set(name, 0)
       }
-      this.weights.set('idle', 1)
+      if (!this.actions.has(STAND)) this.stand = 'idle'
+      this.weights.set(this.stand, 1)
     })
   }
 
@@ -246,24 +254,27 @@ export class Motion {
     if (story && !this.oneShot) {
       this.pose = story
       const clip = POSE_CLIP[story]
-      target.set(this.actions.has(clip) ? clip : 'idle', 1)
+      target.set(this.actions.has(clip) ? clip : this.stand, 1)
     } else if (!this.oneShot) {
       this.pose = ''
       // locomotion: idle / walk / jog / run / sprint forwards, backpedal, strafes
       const sp = (n: Loco) => this.speedOf(n)
-      if (s < 0.25) target.set('idle', 1)
+      if (s < 0.25) target.set(this.stand, 1)
       else if (fwd < -0.45 && s < 3) target.set('walkBack', 1)
       else if (Math.abs(side) > 0.7 && s < 3.5) target.set(side > 0 ? 'strafeL' : 'strafeR', 1)
       else {
         const ladder: Loco[] = ['walk', 'jog', 'run', 'sprint']
+        if (this.look.elder && this.actions.has('walkOld') && s < 1.6) { target.set('walkOld' as Loco, 1) }
+        else {
         const v = ladder.map(sp)
-        if (s <= v[0]) { const k = Math.min(1, s / v[0]); target.set('walk', k); target.set('idle', 1 - k) }
+        if (s <= v[0]) { const k = Math.min(1, s / v[0]); target.set('walk', k); target.set(this.stand, 1 - k) }
         else {
           let i = 0
           while (i < ladder.length - 2 && s > v[i + 1]) i++
           const k = THREE.MathUtils.clamp((s - v[i]) / (v[i + 1] - v[i]), 0, 1)
           target.set(ladder[i], 1 - k)
           target.set(ladder[i + 1], k)
+        }
         }
       }
     } else target.set(this.oneShot.name, 1)
@@ -283,7 +294,7 @@ export class Motion {
     }
     // the stride phase: locomotion clips share it, so blends keep the feet together
     let freq = 0
-    for (const n of ['walk', 'jog', 'run', 'sprint', 'walkBack', 'strafeL', 'strafeR'] as Loco[]) {
+    for (const n of ['walk', 'jog', 'run', 'sprint', 'walkBack', 'strafeL', 'strafeR', 'walkOld'] as Loco[]) {
       const w = this.weights.get(n) ?? 0
       const inf = this.info[n]
       if (!w || !inf) continue
@@ -295,22 +306,49 @@ export class Motion {
       act.setEffectiveWeight(w)
       const inf = this.info[name]
       if (!inf) continue
-      if ((LOCO as readonly string[]).includes(name) && name !== 'idle') act.time = this.phase * inf.duration
+      if (((LOCO as readonly string[]).includes(name) || name === 'walkOld') && name !== 'idle') act.time = this.phase * inf.duration
       else if (this.oneShot && name === this.oneShot.name) act.time = this.oneShot.t
       else if (w > 0.001) act.time = inf.loop ? (act.time + dt) % inf.duration : Math.min(inf.duration, act.time + dt)
       else if (!inf.loop) act.time = 0
     }
+    // whole-body moves mocap has no clip for: the keeper's dive (the body lays out sideways, arms
+    // reaching), a defender's lunge
+    let tz = 0, tx = 0, ty = 0, armsUp = 0
+    if (a.anim === 'dive') {
+      if (this.lastDive !== true) this.diveSide = side >= 0 ? 1 : -1
+      this.lastDive = true
+      const t = a.animT
+      const u = Math.min(1, t / 0.22) * (t > 0.85 ? Math.max(0, 1 - (t - 0.85) / 0.35) : 1)
+      tz = -this.diveSide * 1.3 * u
+      ty = (0.22 * Math.min(1, t / 0.2) - 0.5 * Math.max(0, Math.min(1, (t - 0.25) / 0.3))) * u
+      armsUp = u
+    } else this.lastDive = false
+    if (a.anim === 'tackle') {
+      const t = a.animT
+      const u = Math.min(1, t / 0.15) * (t > 0.45 ? Math.max(0, 1 - (t - 0.45) / 0.25) : 1)
+      tx = 0.38 * u
+      ty = -0.12 * u
+    }
+    const k = 1 - Math.exp(-22 * dt)
+    this.tilt.z += (tz - this.tilt.z) * k
+    this.tilt.x += (tx - this.tilt.x) * k
+    this.tilt.y += (ty - this.tilt.y) * k
+    this.model.rotation.set(this.tilt.x, 0, this.tilt.z)
+    this.model.position.y = this.tilt.y * this.scale
+    this.armsUp = armsUp
     this.mixer.update(0)
     this.model.updateMatrixWorld(true)
     this.overlays(a, dt, rootYaw)
   }
+  private lastDive = false
+  private armsUp = 0
 
   /** On top of the clips: IK arms for the story poses, the head turning to what it looks at. */
   private overlays(a: AnimInput, dt: number, rootYaw: number) {
-    const P = POSES[this.pose]
+    const P = this.armsUp > 0.05 ? POSES.climb : POSES[this.pose]
     const k = 1 - Math.exp(-10 * dt)
     for (const side of ['l', 'r'] as Arm[]) {
-      const want = P?.[side] ? 1 : 0
+      const want = P?.[side] ? (this.armsUp > 0.05 ? this.armsUp : 1) : 0
       this.ikW[side] += (want - this.ikW[side]) * k
       const pose = P?.[side]
       if (!pose || this.ikW[side] < 0.01) continue

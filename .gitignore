@@ -11,3 +11,5 @@ tome1/illustrations/*.png
 tome1/illustrations/_masters/
 coach/illustrations/*.png
 app/public/book/*/img/*-print*
+__pycache__/
+*.pyc

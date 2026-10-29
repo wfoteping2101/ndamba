@@ -349,7 +349,7 @@ export class StorySession implements ChoreoHost {
     }
     const back = { x: -Math.cos(ex.yaw), y: -Math.sin(ex.yaw) }
     const f = this.st.frame
-    const h = (p.look.kid !== false ? 1.36 : 1.75) * (p.look.height ?? 1)
+    const h = (p.look.kid === true ? 1.36 : 1.75) * (p.look.height ?? 1)
     this.st.view.rig.setShot({ pos: f.vec(p.pos.x + back.x * 4.4, p.pos.y + back.y * 4.4, h + 0.9), look: f.vec(p.pos.x - back.x * 2.2, p.pos.y - back.y * 2.2, h * 0.62), fov: 50 }, { rate: 4 })
   }
 

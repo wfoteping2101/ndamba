@@ -1,0 +1,26 @@
+{
+ "kidStand": {
+  "seat": 0.648,
+  "kid": true
+ },
+ "kidWait": {
+  "seat": 0.657,
+  "kid": true
+ },
+ "kidSit": {
+  "seat": 0.306,
+  "kid": true
+ },
+ "kidCheer": {
+  "seat": 0.521,
+  "kid": true
+ },
+ "manStand": {
+  "seat": 0.941,
+  "kid": false
+ },
+ "womanStand": {
+  "seat": 0.78,
+  "kid": false
+ }
+}

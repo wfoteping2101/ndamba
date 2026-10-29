@@ -11,7 +11,7 @@ import type { AnimInput } from './character'
 import type { Figure } from './animal'
 import { Motion, loadMotions } from './motion'
 
-export type Archetype = 'boy' | 'boyLean' | 'boyBig' | 'girl' | 'man'
+export type Archetype = 'boy' | 'boyLean' | 'boyBig' | 'girl' | 'man' | 'oldman' | 'woman' | 'womanBig' | 'oldwoman'
 
 interface Meta {
   name: string
@@ -59,13 +59,14 @@ export function loadArchetype(a: Archetype): Promise<Asset> {
 
 /** Which body a look wears. */
 export function archetypeOf(look: Look): Archetype {
-  if (look.kid !== false) {
+  if (look.kid === true) {
     if (look.girl) return 'girl'
     if ((look.build ?? 1) >= 1.2) return 'boyBig'
     if ((look.height ?? 1) >= 1.05 && (look.build ?? 1) <= 0.95) return 'boyLean'
     return 'boy'
   }
-  return 'man'
+  if (look.woman) return look.elder ? 'oldwoman' : (look.build ?? 1) >= 1.08 ? 'womanBig' : 'woman'
+  return look.elder ? 'oldman' : 'man'
 }
 
 /** Load the bodies (and the motion library) a scene needs before it starts. */
@@ -262,6 +263,73 @@ function kitMap(look: Look, meta: Meta, long: boolean): THREE.Texture {
   return t
 }
 
+/** A wax print that tiles: motifs drawn with their wrapped copies so the seams vanish. */
+function waxMap(base: string, p: Look['pattern'] | undefined, repeat: number): THREE.Texture {
+  const key = `wax|${base}|${p?.a}|${p?.b}|${p?.kind}|${repeat}`
+  const hit = texCache.get(key)
+  if (hit) return hit
+  const S = 512
+  const c = document.createElement('canvas')
+  c.width = c.height = S
+  const g = c.getContext('2d')!
+  g.fillStyle = base; g.fillRect(0, 0, S, S)
+  if (p) {
+    let seed = 7
+    const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647 }
+    const motif = (cx: number, cy: number, r: number, rot: number, i: number) => {
+      g.save(); g.translate(cx, cy); g.rotate(rot)
+      if (p.kind === 'leaves') {
+        g.fillStyle = i % 2 ? p.a : p.b
+        g.beginPath(); g.ellipse(0, 0, r * 1.5, r * 0.58, 0, 0, Math.PI * 2); g.fill()
+        g.strokeStyle = base; g.lineWidth = 3.5
+        g.beginPath(); g.moveTo(-r * 1.4, 0); g.lineTo(r * 1.4, 0); g.stroke()
+        for (let k = -3; k <= 3; k++) { g.beginPath(); g.moveTo(k * r * 0.35, 0); g.lineTo(k * r * 0.35 + r * 0.25, -r * 0.45); g.stroke() }
+      } else {
+        for (let k = 4; k >= 1; k--) { g.fillStyle = k % 2 ? p.a : p.b; g.beginPath(); g.arc(0, 0, (r * k) / 4, 0, Math.PI * 2); g.fill() }
+        if (p.kind === 'wax') {
+          g.fillStyle = p.b
+          for (let k = 0; k < 10; k++) { const a = (k / 10) * Math.PI * 2; g.beginPath(); g.arc(Math.cos(a) * r * 1.3, Math.sin(a) * r * 1.3, r * 0.12, 0, Math.PI * 2); g.fill() }
+          g.strokeStyle = p.a; g.lineWidth = 4; g.beginPath(); g.arc(0, 0, r * 1.62, 0.3, Math.PI * 1.2); g.stroke()
+        }
+      }
+      g.restore()
+    }
+    for (let i = 0; i < 16; i++) {
+      const cx = rnd() * S, cy = rnd() * S, r = 22 + rnd() * 26, rot = rnd() * Math.PI
+      for (const dx of [-S, 0, S]) for (const dy of [-S, 0, S]) motif(cx + dx, cy + dy, r, rot, i)
+    }
+  }
+  // the weave
+  const img = g.getImageData(0, 0, S, S)
+  for (let y = 0; y < S; y++) for (let x = 0; x < S; x++) { const i = (y * S + x) * 4; const k = ((x + y) & 1 ? 0.97 : 1.02) + Math.random() * 0.03; img.data[i] *= k; img.data[i + 1] *= k; img.data[i + 2] *= k }
+  g.putImageData(img, 0, 0)
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  t.wrapS = t.wrapT = THREE.RepeatWrapping
+  t.repeat.set(repeat, repeat)
+  t.anisotropy = 4
+  texCache.set(key, t)
+  return t
+}
+
+/** Tracksuit trousers: a side stripe down each leg (u: front 0.5, wearer's left 0.75, right 0.25). */
+function trouserMap(color: string, stripe: string): THREE.Texture {
+  const key = `trousers|${color}|${stripe}`
+  const hit = texCache.get(key)
+  if (hit) return hit
+  const c = document.createElement('canvas')
+  c.width = 256; c.height = 64
+  const g = c.getContext('2d')!
+  g.fillStyle = color; g.fillRect(0, 0, 256, 64)
+  g.fillStyle = stripe
+  for (const u of [0.25, 0.75]) g.fillRect(u * 256 - 4, 0, 8, 64)
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  t.flipY = false
+  texCache.set(key, t)
+  return t
+}
+
 /** Hair textures: cornrow lines, BriBri's shaved part on his left. */
 function hairMap(look: Look): THREE.Texture | null {
   if (look.hair !== 'cornrows' && !look.part) return null
@@ -345,19 +413,32 @@ export class Human implements Figure {
 
   constructor(public look: Look, private opts: { castShadow?: boolean } = {}) {
     const a = archetypeOf(look)
-    this.height = (look.kid !== false ? 1.33 : 1.76) * (look.height ?? 1)
+    this.height = (look.kid === true ? 1.36 : look.woman ? 1.64 : 1.75) * (look.height ?? 1)
     loadArchetype(a).then((asset) => this.build(a, asset)).catch((e) => console.error('human', a, e))
   }
 
   private build(a: Archetype, asset: Asset) {
     const look = this.look
     const model = SkeletonUtils.clone(asset.gltf.scene)
-    const show = new Set<string>(['body', 'eye_l', 'eye_r', 'upper-teeth', 'lower-teeth', 'tongue', ...HAIR_PIECES[look.hair]])
+    const show = new Set<string>(['body', 'eye_l', 'eye_r', 'upper-teeth', 'lower-teeth', 'tongue', 'calves', 'thighs', 'forearms', ...HAIR_PIECES[look.hair]])
     const long = !!look.jacket
     const trousers = !!look.trousers
-    show.add(long ? 'longsleeves' : 'shirt')
-    if (trousers) show.add('trousers')
-    else { show.add('shorts'); show.add('sock_l'); show.add('sock_r') }
+    const has = (n: string) => asset.meta.pieces.includes(n)
+    if (look.dress && has('skirt')) { show.add('dress_top'); show.add('skirt') }
+    else {
+      show.add(long && has('longsleeves') ? 'longsleeves' : 'shirt')
+      if (trousers && has('trousers')) show.add('trousers')
+      else { show.add('shorts'); show.add('sock_l'); show.add('sock_r') }
+    }
+    if (look.headwrap && has('hair_wrap')) { for (const h of HAIR_PIECES[look.hair]) show.delete(h); show.add('hair_wrap'); show.add('wrap_knot') }
+    if (look.hat && has('hat_crown')) { for (const h of HAIR_PIECES[look.hair]) show.delete(h); show.add('hat_crown'); show.add('hat_brim'); if (look.hatFlowers) show.add('hat_flowers') }
+    // skin that clothes cover is not drawn (no poking through when the knees bend)
+    if (show.has('skirt') || show.has('trousers')) { show.delete('thighs'); show.delete('calves') }
+    if (show.has('longsleeves')) show.delete('forearms')
+    if (look.beard && has('beard')) show.add('beard')
+    if (look.glasses && has('glasses')) show.add('glasses')
+    if (look.cane && has('cane')) show.add('cane')
+    if (look.earrings && has('earrings')) show.add('earrings')
     const shoes = look.shoes ?? 'boots'
     if (shoes === 'sandals') show.add('feet')
     if (shoes === 'boots') { show.add('boot_l'); show.add('boot_r') } else if (shoes === 'trainers') { show.add('trainer_l'); show.add('trainer_r') } else if (shoes === 'shoes') { show.add(asset.meta.pieces.includes('shoe_l') ? 'shoe_l' : 'trainer_l'); show.add(asset.meta.pieces.includes('shoe_r') ? 'shoe_r' : 'trainer_r') }
@@ -376,7 +457,17 @@ export class Human implements Figure {
     const teeth = new THREE.MeshStandardMaterial({ color: '#e8e1d2', roughness: 0.35 })
     const mouth = new THREE.MeshStandardMaterial({ color: '#4a1f1c', roughness: 0.6 })
     const shirt = trimMaterial(look.shirt, look.collar ?? look.shirtTrim ?? look.shirt, { map: kitMap(look, asset.meta, long), collar: look.collar || look.shirtTrim ? 1 : 0, cuff: look.shirtTrim && look.shirtTrim !== look.shirt ? 1 : 0, hem: 0 })
-    const shorts = trimMaterial(look.trousers ?? look.shorts, look.trouserStripe ?? look.shorts, { collar: 0, cuff: 0, hem: 0, rough: 0.7 })
+    const shorts = trimMaterial(look.trousers ?? look.shorts, look.trouserStripe ?? look.shorts, { map: look.trousers && look.trouserStripe ? trouserMap(look.trousers, look.trouserStripe) : undefined, collar: 0, cuff: 0, hem: 0, rough: 0.7 })
+    const dressBase = look.dress ?? look.shirt
+    const dressTop = trimMaterial(dressBase, dressBase, { map: waxMap(dressBase, look.pattern, 5), collar: 0, cuff: 0, hem: 0, rough: 0.72, sheen: 0.35 })
+    const skirtM = trimMaterial(dressBase, dressBase, { map: waxMap(dressBase, look.pattern, 1), collar: 0, cuff: 0, hem: 0, rough: 0.72, sheen: 0.35 })
+    const wrap = new THREE.MeshPhysicalMaterial({ map: waxMap(look.headwrap ?? dressBase, look.headwrap ? look.pattern : undefined, 2), roughness: 0.75, sheen: 0.4, sheenColor: new THREE.Color('#ffffff') })
+    const hatM = new THREE.MeshPhysicalMaterial({ color: look.hat ?? '#f2e2b8', roughness: 0.85, sheen: 0.3 })
+    const flowers = new THREE.MeshStandardMaterial({ color: look.hatFlowers ?? '#d6457a', roughness: 0.6 })
+    const beardM = new THREE.MeshPhysicalMaterial({ color: look.beard ?? look.hairColor, roughness: 0.9, sheen: 0.6, sheenColor: new THREE.Color('#8a8070'), normalMap: curlNormal(), normalScale: new THREE.Vector2(0.8, 0.8) })
+    const glassesM = new THREE.MeshStandardMaterial({ color: '#1b1b1d', roughness: 0.3, metalness: 0.6 })
+    const caneM = new THREE.MeshStandardMaterial({ color: '#6b4a2e', roughness: 0.7 })
+    const gold = new THREE.MeshStandardMaterial({ color: look.earrings ?? '#e6b640', roughness: 0.25, metalness: 1 })
     const sock = (col: string) => trimMaterial(col, col, { collar: 0, cuff: 0, hem: 0, rough: 0.85, sheen: 0.6 })
     const sockL = sock(look.sockL), sockR = sock(look.sockR)
     // socks and shoes sit millimetres above the skin: win the depth test at a distance
@@ -386,9 +477,10 @@ export class Human implements Figure {
     withMasks(shoe, `diffuseColor.rgb = mix(diffuseColor.rgb, uSole, step(0.5, vMask.r));`, { uSole: { value: new THREE.Color(soleCol) } })
     const gloves = new THREE.MeshPhysicalMaterial({ color: look.gloves ?? '#d9cfbd', roughness: 0.7, sheen: 0.4 })
     const cap = new THREE.MeshPhysicalMaterial({ color: look.cap ?? '#6f6a62', roughness: 0.8, sheen: 0.4 })
-    this.mats.push(skin, hair, eye, teeth, mouth, shirt, shorts, sockL, sockR, shoe, gloves, cap)
+    this.mats.push(skin, hair, eye, teeth, mouth, shirt, shorts, sockL, sockR, shoe, gloves, cap, dressTop, skirtM, wrap, hatM, flowers, beardM, glassesM, caneM, gold)
     const matFor = (n: string): THREE.Material => {
-      if (n === 'body' || n === 'feet') return skin
+      if (n === 'body' || n === 'feet' || n === 'calves' || n === 'thighs' || n === 'forearms') return skin
+      if (n === 'hair_wrap' || n === 'wrap_knot') return wrap
       if (n.startsWith('hair_')) return hair
       if (n.startsWith('eye_')) return eye
       if (n.endsWith('teeth')) return teeth
@@ -400,6 +492,15 @@ export class Human implements Figure {
       if (n.startsWith('boot_') || n.startsWith('trainer_') || n.startsWith('shoe_')) return shoe
       if (n.startsWith('glove_')) return gloves
       if (n.startsWith('cap_')) return cap
+      if (n === 'dress_top') return dressTop
+      if (n === 'skirt') return skirtM
+      if (n === 'hair_wrap' || n === 'wrap_knot') return wrap
+      if (n === 'hat_crown' || n === 'hat_brim') return hatM
+      if (n === 'hat_flowers') return flowers
+      if (n === 'beard') return beardM
+      if (n === 'glasses') return glassesM
+      if (n === 'cane') return caneM
+      if (n === 'earrings') return gold
       return skin
     }
     model.traverse((o) => {
@@ -416,7 +517,7 @@ export class Human implements Figure {
       this.meshes.push(m)
     })
     // heights: a child of the book is about 1.36 m, an adult 1.75 m, times the look's own factor
-    const s = ((asset.meta.kid ? 1.36 : 1.75) * (look.height ?? 1)) / asset.meta.height
+    const s = ((asset.meta.kid ? 1.36 : look.woman ? 1.64 : 1.75) * (look.height ?? 1)) / asset.meta.height
     model.scale.setScalar(s)
     this.height = asset.meta.height * s
     this.root.add(model)

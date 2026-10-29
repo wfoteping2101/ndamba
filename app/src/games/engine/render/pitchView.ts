@@ -1,6 +1,8 @@
 // Procedural pitch: painted grass (mowing stripes, chalk lines to FIFA dimensions), goals with nets,
 // cones, and a surround (training ground or small stadium). Everything is generated, nothing is downloaded.
 import * as THREE from 'three'
+import { SetBuilder } from '../../lionceaux/sets/common'
+import { addGroundDetail, grassDetailTexture, mangoTree } from '../../lionceaux/sets/nature'
 import { BOX_DEPTH, BOX_WIDTH, FULL_H, FULL_W, type Goal, type PitchGeom } from '../sim/pitch'
 import type { Frame, Stage } from './stage'
 
@@ -21,7 +23,7 @@ function paintGrass(p: PitchGeom, pxPerM: number, full: boolean): HTMLCanvasElem
   // base and mowing stripes along the length
   const stripe = full ? 5.25 : Math.max(2.5, W / 8)
   for (let x = 0, i = 0; x < W; x += stripe, i++) {
-    g.fillStyle = i % 2 ? '#3f8a3a' : '#479a40'
+    g.fillStyle = i % 2 ? '#3d7834' : '#46863b'
     g.fillRect(x * scale, 0, stripe * scale + 1, c.height)
   }
   // grain
@@ -30,7 +32,7 @@ function paintGrass(p: PitchGeom, pxPerM: number, full: boolean): HTMLCanvasElem
   for (let i = 0; i < n; i++) {
     const x = rnd() * c.width, y = rnd() * c.height
     const l = rnd()
-    g.fillStyle = l < 0.5 ? 'rgba(20,60,20,0.18)' : 'rgba(180,220,140,0.12)'
+    g.fillStyle = l < 0.5 ? 'rgba(20,55,20,0.2)' : 'rgba(170,200,120,0.12)'
     g.fillRect(x, y, 1.2, 1.2 + rnd() * 2)
   }
   // chalk
@@ -122,7 +124,9 @@ export function buildPitch(stage: Stage, frame: Frame, p: PitchGeom, surround: S
   tex.colorSpace = THREE.SRGBColorSpace
   tex.anisotropy = 4
   const W = full ? FULL_W : p.w, H = full ? FULL_H : p.h
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(W, H), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.95 }))
+  const gm = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.95 })
+  addGroundDetail(gm, Math.round(Math.max(W, H) / 1.2), 0.42, grassDetailTexture())
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(W, H), gm)
   ground.rotation.x = -Math.PI / 2
   ground.receiveShadow = true
   // a full pitch is 105 long; the view's x = 0 sits at offsetX on it
@@ -130,7 +134,7 @@ export function buildPitch(stage: Stage, frame: Frame, p: PitchGeom, surround: S
   ground.position.set(frame.x(cx), 0, frame.z(H / 2))
   group.add(ground)
   // run-off and surround
-  const outer = new THREE.Mesh(new THREE.PlaneGeometry(W + 700, H + 700), new THREE.MeshStandardMaterial({ color: surround === 'stadium' ? '#2f6b30' : '#4a7f3c', roughness: 1 }))
+  const outer = new THREE.Mesh(new THREE.PlaneGeometry(W + 700, H + 700), new THREE.MeshStandardMaterial({ color: surround === 'stadium' ? '#2f6b30' : '#4c7a3a', roughness: 1 }))
   outer.rotation.x = -Math.PI / 2
   outer.position.set(ground.position.x, -0.02, ground.position.z)
   outer.receiveShadow = true
@@ -181,30 +185,17 @@ function buildSurround(frame: Frame, p: PitchGeom, kind: Surround, density: numb
       f.position.set(ox, 0.45, oz + s * (H / 2 + 6))
       g.add(f)
     }
-    const trunk = new THREE.CylinderGeometry(0.18, 0.26, 2.6, 7)
-    trunk.translate(0, 1.3, 0)
-    const crown = new THREE.IcosahedronGeometry(2.1, 1)
-    crown.translate(0, 3.9, 0)
-    const n = Math.round(46 * density)
-    const tm = new THREE.InstancedMesh(trunk, new THREE.MeshStandardMaterial({ color: '#6b4a32', roughness: 1 }), n)
-    const cm = new THREE.InstancedMesh(crown, new THREE.MeshStandardMaterial({ color: '#2f6a2c', roughness: 1, flatShading: true }), n)
-    const m = new THREE.Matrix4(), q = new THREE.Quaternion(), sc = new THREE.Vector3(), pos = new THREE.Vector3()
-    const col = new THREE.Color()
+    // a line of real trees (limbs and leaf sprays) beyond the fence
+    const sb = new SetBuilder(frame, true)
+    const n = Math.round(16 * density)
     for (let i = 0; i < n; i++) {
       const side = i % 4
       const along = rnd()
-      const off = 10 + rnd() * 9
-      if (side < 2) pos.set(ox + (along - 0.5) * (W + 30), 0, oz + (side ? 1 : -1) * (H / 2 + off))
-      else pos.set(ox + (side === 2 ? 1 : -1) * (W / 2 + off), 0, oz + (along - 0.5) * (H + 30))
-      const s = 0.75 + rnd() * 0.6
-      sc.set(s, s * (0.85 + rnd() * 0.4), s)
-      q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), rnd() * 6.28)
-      m.compose(pos, q, sc)
-      tm.setMatrixAt(i, m); cm.setMatrixAt(i, m)
-      cm.setColorAt(i, col.setHSL(0.28 + rnd() * 0.06, 0.45, 0.24 + rnd() * 0.1))
+      const off = 11 + rnd() * 10
+      const pos = side < 2 ? new THREE.Vector3(ox + (along - 0.5) * (W + 30), 0, oz + (side ? 1 : -1) * (H / 2 + off)) : new THREE.Vector3(ox + (side === 2 ? 1 : -1) * (W / 2 + off), 0, oz + (along - 0.5) * (H + 30))
+      mangoTree(sb, pos, 3.2 + rnd() * 1.8, 2.6 + rnd() * 1.2, rnd, 0.45)
     }
-    tm.castShadow = true; cm.castShadow = true
-    g.add(tm, cm)
+    g.add(sb.build())
     // benches and a ball bag by the touchline
     const benchMat = new THREE.MeshStandardMaterial({ color: '#0B5D3B', roughness: 0.7 })
     for (const dx of [-8, 8]) {

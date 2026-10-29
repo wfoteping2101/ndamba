@@ -52,7 +52,12 @@ export class SimView {
     const fog = opts.fog !== undefined ? opts.fog : (opts.surround ?? 'training') === 'training' ? [150, 460] as [number, number] : null
     this.stage = new Stage(container, { quality, background: opts.background, fog })
     this.frame = new Frame(world.pitch.w, world.pitch.h)
-    if (!opts.noPitch) this.pitch = buildPitch(this.stage, this.frame, world.pitch, opts.surround ?? 'training')
+    if (!opts.noPitch) {
+      this.pitch = buildPitch(this.stage, this.frame, world.pitch, opts.surround ?? 'training')
+      // a clear afternoon: image-based light for skin, kits and leaves (story places set their own)
+      this.stage.setSkyLight('#86b0d8', '#e8eee8', '#4a6a3a', new THREE.Vector3(-30, 55, 25), '#fff1d6', 0.75)
+      this.stage.hemi.intensity *= 0.6
+    }
     this.stage.scene.add(this.ball.group)
     this.overlays = new Overlays(this.frame)
     this.stage.scene.add(this.overlays.group)

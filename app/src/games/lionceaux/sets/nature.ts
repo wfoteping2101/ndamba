@@ -195,9 +195,28 @@ export function dirtDetailTexture() {
   })
 }
 
+/** Turf seen close: fine blades and tufts (grey, multiplied over the painted grass). */
+export function grassDetailTexture() {
+  return once('turf', () => {
+    const t = canvasTexture(256, 256, (g, w, h) => {
+      const r = seeded(37)
+      g.fillStyle = '#808080'; g.fillRect(0, 0, w, h)
+      for (let i = 0; i < 7000; i++) {
+        const v = 90 + Math.floor(r() * 90)
+        g.strokeStyle = `rgb(${v},${v},${v})`
+        g.lineWidth = 1
+        const x = r() * w, y = r() * h, l = 2 + r() * 5
+        g.beginPath(); g.moveTo(x, y); g.lineTo(x + (r() - 0.5) * 2, y - l); g.stroke()
+      }
+    }, { repeat: [1, 1], srgb: false })
+    t.wrapS = t.wrapT = THREE.RepeatWrapping
+    return t
+  })
+}
+
 /** Multiply a tiled detail texture over a ground material's painted map (sharp up close, same colour far). */
-export function addGroundDetail(m: THREE.MeshStandardMaterial, repeat: number, strength = 0.45) {
-  const det = dirtDetailTexture()
+export function addGroundDetail(m: THREE.MeshStandardMaterial, repeat: number, strength = 0.45, tex?: THREE.Texture) {
+  const det = tex ?? dirtDetailTexture()
   m.onBeforeCompile = (sh) => {
     sh.uniforms.uDetail = { value: det }
     sh.uniforms.uRepeat = { value: repeat }
@@ -208,7 +227,7 @@ export function addGroundDetail(m: THREE.MeshStandardMaterial, repeat: number, s
         { vec2 du = vMapUv * uRepeat; float d = texture2D(uDetail, du).r * 0.6 + texture2D(uDetail, du * 0.37 + 0.13).r * 0.4;
           diffuseColor.rgb *= mix(1.0, d * 2.0, uStrength); }`)
   }
-  m.customProgramCacheKey = () => 'ground-detail'
+  m.customProgramCacheKey = () => 'ground-detail' + (tex ? '-t' : '')
 }
 
 /* ------------------------------------------------------------------ foliage materials */

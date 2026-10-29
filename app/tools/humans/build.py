@@ -34,7 +34,15 @@ ARCHETYPES: dict[str, dict] = {
     'girl': dict(macro=Macro(gender=0.0, age=10.5, muscle=0.5, weight=0.42, height=0.6), kid=True,
                  wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
     'man': dict(macro=Macro(gender=1.0, age=30, muscle=0.62, weight=0.48, height=0.55), kid=False,
-                wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'shoes'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
+                wardrobe=['shirt', 'shorts', 'socks', 'boots', 'trainers', 'gloves', 'longsleeves', 'trousers', 'shoes', 'beard', 'glasses', 'cane'], hair=['crop', 'afro', 'twists', 'puff', 'cap']),
+    'oldman': dict(macro=Macro(gender=1.0, age=64, muscle=0.4, weight=0.45, height=0.45), kid=False,
+                   wardrobe=['shirt', 'shorts', 'socks', 'trainers', 'longsleeves', 'trousers', 'shoes', 'beard', 'glasses', 'cane'], hair=['crop', 'cap']),
+    'woman': dict(macro=Macro(gender=0.0, age=34, muscle=0.45, weight=0.55, height=0.45), kid=False,
+                  wardrobe=['dress', 'shirt', 'trousers', 'shoes', 'earrings'], hair=['crop', 'puff', 'afro', 'wrap', 'hat']),
+    'womanBig': dict(macro=Macro(gender=0.0, age=40, muscle=0.45, weight=0.85, height=0.45), kid=False,
+                     wardrobe=['dress', 'shirt', 'trousers', 'shoes', 'earrings'], hair=['crop', 'puff', 'afro', 'wrap', 'hat']),
+    'oldwoman': dict(macro=Macro(gender=0.0, age=70, muscle=0.35, weight=0.55, height=0.35), kid=False,
+                     wardrobe=['dress', 'shirt', 'shoes', 'earrings', 'cane'], hair=['crop', 'puff', 'wrap', 'hat']),
 }
 
 
@@ -43,6 +51,10 @@ def split_piece(p: Piece, faces: list[int], name: str) -> Piece:
     remap = {v: i for i, v in enumerate(used)}
     return Piece(name, p.V[used], [[remap[v] for v in p.F[k]] for k in faces], [p.UV[k] for k in faces], [p.W[v] for v in used], p.material,
                  src=p.src[used], colors=None if p.colors is None else p.colors[used])
+
+
+EARS = np.zeros(0)
+LIPS = np.zeros(0)
 
 
 def kit(body: G.Body, name: str, kid: bool) -> list[Piece]:
@@ -62,6 +74,16 @@ def kit(body: G.Body, name: str, kid: bool) -> list[Piece]:
         return [G.shoe(body, 'l', kind='trainer', name='trainer_l'), G.shoe(body, 'r', kind='trainer', name='trainer_r')]
     if name == 'shoes':
         return [G.shoe(body, 'l', kind='trainer', ankle=0.95, name='shoe_l'), G.shoe(body, 'r', kind='trainer', ankle=0.95, name='shoe_r')]
+    if name == 'dress':
+        return [G.shirt(body, sleeve=0.62, hem=0.12, loose=0.017, name='dress_top'), G.skirt(body)]
+    if name == 'beard':
+        return [G.beard(body, EARS, LIPS)]
+    if name == 'glasses':
+        return [G.glasses(body)]
+    if name == 'cane':
+        return [G.cane(body, 'r')]
+    if name == 'earrings':
+        return [G.earrings(body, EARS)]
     if name == 'gloves':
         out = []
         for s in ('l', 'r'):
@@ -118,6 +140,12 @@ def hair_pieces(body: G.Body, styles: list[str]) -> list[Piece]:
     if 'puff' in styles:
         top = crop[np.argmax(crop[:, 2])]
         out.append(H.puff_ball(top + np.array([0, 0.045, 0.02]), 0.052))
+    if 'wrap' in styles:
+        shell = H.shape_cap(V, F, 'wrap', c, thickness=0.02)
+        out.append(Piece('hair_wrap', shell, F, loops(F), H.head_only(len(V)), 'wrap', colors=fade))
+        out.append(H.wrap_knot(shell, c))
+    if 'hat' in styles:
+        out += H.hat(V, F, c)
     if 'cap' in styles:
         shell = H.shape_cap(V, F, 'wrap', c, thickness=0.012)
         out.append(Piece('cap_crown', shell, F, loops(F), H.head_only(len(V)), 'cap', colors=fade))
@@ -154,7 +182,7 @@ def expression_keys(src_ids: np.ndarray, base_V: np.ndarray) -> dict[str, np.nda
     return keys
 
 
-def build(name: str, preview=False):
+def build(name: str, preview=False, export=True):
     t0 = time.time()
     spec = ARCHETYPES[name]
     blend.reset()
@@ -163,6 +191,9 @@ def build(name: str, preview=False):
     B = mh.bones(vb, rig)
     W = mh.weight_table(weights, len(vb))
     body = G.Body(vb, B, W)
+    global EARS, LIPS
+    EARS = skin.sample(skin._mask('mpfb_ears.jpg', 512), skin._vertex_uv())
+    LIPS = skin.sample(skin._mask('mpfb_lips.jpg', 512), skin._vertex_uv())
     clothes: list[Piece] = []
     for g in spec['wardrobe']:
         clothes += kit(body, g, spec['kid'])
@@ -178,15 +209,20 @@ def build(name: str, preview=False):
     body.hidden = hidden_core
     body_piece = G.hide_body(body, body_piece)
     # the feet are their own piece: shown bare (sandals), hidden inside shoes
-    footm = body.mask({'foot_l', 'foot_r', 'ball_l', 'ball_r'})
-    in_foot = [all(footm[body_piece.src[v]] for v in f) for f in body_piece.F]
-    feet_piece = split_piece(body_piece, [k for k, x in enumerate(in_foot) if x], 'feet')
-    body_piece = split_piece(body_piece, [k for k, x in enumerate(in_foot) if not x], 'body')
+    # limbs are pieces of their own too: hidden under trousers, dresses and long sleeves
+    regions = [('feet', {'foot_l', 'foot_r', 'ball_l', 'ball_r'}), ('calves', {'calf_l', 'calf_r'}), ('thighs', {'thigh_l', 'thigh_r'}), ('forearms', {'lowerarm_l', 'lowerarm_r'})]
+    limb_pieces = []
+    for rname, bones in regions:
+        m = body.mask(bones)
+        inside = [all(m[body_piece.src[v]] for v in f) for f in body_piece.F]
+        limb_pieces.append(split_piece(body_piece, [k for k, x in enumerate(inside) if x], rname))
+        body_piece = split_piece(body_piece, [k for k, x in enumerate(inside) if not x], 'body')
+    feet_piece = limb_pieces[0]
     teeth = [mh.piece_from_base(n, vb, mh.base()['groups'][f'helper-{n}'], W, 'teeth') for n in ('upper-teeth', 'lower-teeth')]
     tongue = mh.piece_from_base('tongue', vb, mh.base()['groups']['helper-tongue'], W, 'mouth')
     for p in teeth + [tongue]:
         p.W = H.head_only(len(p.V))
-    pieces = [body_piece, feet_piece] + eye_pieces(vb, W) + teeth + [tongue] + hair_pieces(body, spec['hair']) + clothes
+    pieces = [body_piece] + limb_pieces + eye_pieces(vb, W) + teeth + [tongue] + hair_pieces(body, spec['hair']) + clothes
     print(f'[{name}] pieces {time.time() - t0:.1f}s', {p.name: len(p.F) for p in pieces})
 
     arm = blend.armature('rig', B)
@@ -197,6 +233,9 @@ def build(name: str, preview=False):
         objs[p.name] = blend.mesh_object(p, arm, colors.get(p.material, (0.6, 0.6, 0.6, 1)))
     # decimate (keep the face as is: the expressions move it)
     head = np.array([max(w.items(), key=lambda kv: kv[1])[0] in ('head',) if w else False for w in body_piece.W])
+    # the seams with the limb pieces stay where they are (no cracks)
+    for v in mh.boundary_verts(body_piece.F):
+        head[v] = True
     blend.decimate(objs['body'], 0.5, protect=head)
     # garments are not decimated: collapsing edges would tear their hems
     # expressions on the decimated body: the face kept its vertices, find them by position
@@ -214,6 +253,8 @@ def build(name: str, preview=False):
         pass
     tris = sum(sum(len(pl.vertices) - 2 for pl in o.data.polygons) for o in objs.values())
     print(f'[{name}] decimated, {tris} triangles in all, {time.time() - t0:.1f}s')
+    if not export:
+        return arm, objs
 
     os.makedirs(OUT, exist_ok=True)
     ears = skin.sample(skin._mask('mpfb_ears.jpg', 512), skin._vertex_uv())

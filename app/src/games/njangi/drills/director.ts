@@ -160,6 +160,8 @@ export class SequenceDirector {
    * moment, since a ball on its way to the actor can be touched on the way.
    */
   private broken(p: Player, elapsed: number) {
+    // only when someone plays it: a demonstration that goes wrong is replayed by the runner anyway
+    if (!this.opts.userPasses && !this.opts.userDribbles) return false
     const own = this.w.ball.owner
     if (!own || own === p.id || elapsed < 1.5) return false
     const o = this.w.get(own)

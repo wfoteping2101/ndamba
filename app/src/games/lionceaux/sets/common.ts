@@ -36,22 +36,40 @@ export function grain(g: CanvasRenderingContext2D, w: number, h: number, rnd: ()
   g.globalAlpha = 1
 }
 
-/** Lime-washed plaster, white so vertex colours tint it; stains run down from the top. */
+/** Lime-washed plaster, white so vertex colours tint it: mottling, rain streaks from the roof, patches
+ * where the render has fallen off and the cement blocks show, red dust splashed at the foot. */
 export function plasterTexture() {
-  return canvasTexture(256, 256, (g, w, h) => {
+  return canvasTexture(512, 512, (g, w, h) => {
     const r = seeded(31)
-    g.fillStyle = '#f2efe8'; g.fillRect(0, 0, w, h)
-    grain(g, w, h, r, 900, ['#d9d2c4', '#ffffff', '#cfc6b4'], [1, 5])
-    for (let i = 0; i < 14; i++) {
-      const x = r() * w, len = 30 + r() * 120
+    g.fillStyle = '#f4f1ea'; g.fillRect(0, 0, w, h)
+    grain(g, w, h, r, 2600, ['#dcd5c7', '#ffffff', '#d2c9b8', '#e8e2d6'], [1, 9])
+    // rain streaks under the eaves
+    for (let i = 0; i < 26; i++) {
+      const x = r() * w, len = 60 + r() * 260
       const grd = g.createLinearGradient(0, 0, 0, len)
-      grd.addColorStop(0, 'rgba(110,90,70,0.28)'); grd.addColorStop(1, 'rgba(110,90,70,0)')
-      g.fillStyle = grd; g.fillRect(x, 0, 6 + r() * 16, len)
+      grd.addColorStop(0, 'rgba(95,80,62,0.32)'); grd.addColorStop(1, 'rgba(95,80,62,0)')
+      g.fillStyle = grd; g.fillRect(x, 0, 4 + r() * 22, len)
     }
+    // patches of bare blockwork
+    for (let i = 0; i < 4; i++) {
+      const x = r() * w * 0.85, y = h * (0.2 + r() * 0.55), pw = 30 + r() * 70, ph = 20 + r() * 45
+      g.save(); g.beginPath()
+      g.moveTo(x, y); for (let k = 0; k < 9; k++) { const a = (k / 9) * Math.PI * 2; g.lineTo(x + pw / 2 + Math.cos(a) * pw / 2 * (0.7 + r() * 0.4), y + ph / 2 + Math.sin(a) * ph / 2 * (0.7 + r() * 0.4)) }
+      g.closePath(); g.clip()
+      g.fillStyle = '#a7a299'; g.fillRect(x - 5, y - 5, pw + 10, ph + 10)
+      g.strokeStyle = 'rgba(70,66,60,0.6)'; g.lineWidth = 1.5
+      for (let yy = y - 5; yy < y + ph + 10; yy += 14) { g.beginPath(); g.moveTo(x - 5, yy); g.lineTo(x + pw + 10, yy); g.stroke(); for (let xx = x - 5 + ((yy / 14) % 2) * 18; xx < x + pw + 10; xx += 36) { g.beginPath(); g.moveTo(xx, yy); g.lineTo(xx, yy + 14); g.stroke() } }
+      g.restore()
+      g.strokeStyle = 'rgba(120,110,95,0.5)'; g.lineWidth = 1
+      g.strokeRect(x, y, pw, ph)
+    }
+    // hairline cracks
+    g.strokeStyle = 'rgba(90,80,68,0.4)'; g.lineWidth = 1
+    for (let i = 0; i < 8; i++) { let x = r() * w, y = r() * h; g.beginPath(); g.moveTo(x, y); for (let k = 0; k < 6; k++) { x += (r() - 0.5) * 30; y += 8 + r() * 14; g.lineTo(x, y) } g.stroke() }
     // red dust splashed at the foot of the walls
-    const foot = g.createLinearGradient(0, h, 0, h * 0.72)
-    foot.addColorStop(0, 'rgba(150,60,30,0.45)'); foot.addColorStop(1, 'rgba(150,60,30,0)')
-    g.fillStyle = foot; g.fillRect(0, h * 0.72, w, h * 0.28)
+    const foot = g.createLinearGradient(0, h, 0, h * 0.7)
+    foot.addColorStop(0, 'rgba(150,64,34,0.55)'); foot.addColorStop(1, 'rgba(150,64,34,0)')
+    g.fillStyle = foot; g.fillRect(0, h * 0.7, w, h * 0.3)
   }, { repeat: [1, 1] })
 }
 
@@ -59,11 +77,9 @@ export function plasterTexture() {
 export function tinTexture() {
   return canvasTexture(256, 256, (g, w, h) => {
     const r = seeded(77)
-    for (let x = 0; x < w; x += 8) {
-      const grd = g.createLinearGradient(x, 0, x + 8, 0)
-      grd.addColorStop(0, '#8d8f8c'); grd.addColorStop(0.5, '#c9cbc6'); grd.addColorStop(1, '#7c7e7a')
-      g.fillStyle = grd; g.fillRect(x, 0, 8, h)
-    }
+    // galvanised grey, the ridges are real geometry now; rust runs along them
+    g.fillStyle = '#b4b6b1'; g.fillRect(0, 0, w, h)
+    grain(g, w, h, r, 900, ['#9fa19c', '#c8cac5', '#a8a39a'], [1, 6])
     for (let i = 0; i < 26; i++) {
       g.fillStyle = ['rgba(150,72,30,0.55)', 'rgba(120,55,25,0.5)', 'rgba(175,95,45,0.45)'][i % 3]
       const x = r() * w, y = r() * h, rw = 10 + r() * 60, rh = 10 + r() * 90
@@ -263,14 +279,39 @@ export function addHouse(b: SetBuilder, at: THREE.Vector3, w: number, d: number,
     const wx = doorX + sx * (1.3 + rnd() * 0.6)
     if (Math.abs(wx) > w / 2 - 0.6) continue
     box(0.85, 0.85, 0.06, wx, 1.55, d / 2 + 0.02, '#2a2a28')
+    // burglar bars across the opening
+    for (let k = -2; k <= 2; k++) box(0.025, 0.85, 0.025, wx + k * 0.17, 1.55, d / 2 + 0.08, '#3a3a38')
+    box(0.95, 0.08, 0.1, wx, 1.1, d / 2 + 0.06, new THREE.Color(wall).multiplyScalar(0.85).getStyle(), mats.plaster)
     box(0.42, 0.85, 0.07, wx - 0.22, 1.55, d / 2 + 0.05, ['#3f6e8c', '#8c5a3f', '#5a7a3f'][Math.floor(rnd() * 3)])
   }
-  // mono-pitch roof with an overhang
-  const roof = new THREE.BoxGeometry(w + 0.7, 0.05, d + 0.9)
+  // mono-pitch roof of corrugated sheets with an overhang (real ridges that catch the light)
+  const roof = corrugated(w + 0.7, d + 0.9)
   const tilt = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), 0.12)
-  b.add(roof, ['#b9b6ad', '#a89a8a', '#c2b8a8'][Math.floor(rnd() * 3)], new THREE.Matrix4().compose(place(0, h + 0.18, 0.1), rot.clone().multiply(tilt), new THREE.Vector3(1, 1, 1)), { mat: mats.tin })
+  b.add(roof, ['#c9c6bd', '#b8aa9a', '#d2c8b8'][Math.floor(rnd() * 3)], new THREE.Matrix4().compose(place(0, h + 0.18, 0.1), rot.clone().multiply(tilt), new THREE.Vector3(1, 1, 1)), { mat: mats.tin })
+  // the wooden fascia under the edge, window bars, a meter box
+  box(w + 0.7, 0.12, 0.04, 0, h + 0.1, d / 2 + 0.45, '#5a4636')
+  if (rnd() < 0.6) box(0.28, 0.36, 0.12, w / 2 - 0.5, 1.7, d / 2 + 0.06, '#d9d6cc')
   // a stone or two holding the sheets down
   for (let i = 0; i < 2; i++) b.add(new THREE.DodecahedronGeometry(0.16, 0), '#8a8379', new THREE.Matrix4().compose(place((rnd() - 0.5) * w * 0.7, h + 0.3, (rnd() - 0.5) * d * 0.5), rot, new THREE.Vector3(1, 0.7, 1)), { mat: 'flat' })
+}
+
+/** A corrugated sheet (w along the ridges' row, d along the ridges), centred, lying flat. */
+export function corrugated(w: number, d: number) {
+  const ridges = Math.max(4, Math.round(w / 0.076))
+  const geo = new THREE.PlaneGeometry(w, d, ridges * 4, 1)
+  geo.rotateX(-Math.PI / 2)
+  const p = geo.attributes.position as THREE.BufferAttribute
+  for (let i = 0; i < p.count; i++) p.setY(i, Math.sin((p.getX(i) / w + 0.5) * ridges * Math.PI * 2) * 0.012)
+  geo.computeVertexNormals()
+  // the underside too
+  const back = geo.clone()
+  const idx = back.index!.array as Uint16Array | Uint32Array
+  for (let i = 0; i < idx.length; i += 3) { const t = idx[i]; idx[i] = idx[i + 2]; idx[i + 2] = t }
+  back.translate(0, -0.004, 0)
+  back.computeVertexNormals()
+  const merged = mergeGeometries([geo.toNonIndexed(), back.toNonIndexed()], false)!
+  geo.dispose(); back.dispose()
+  return merged
 }
 
 /* ------------------------------------------------------------------ sky and light */

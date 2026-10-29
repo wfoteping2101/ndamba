@@ -417,3 +417,167 @@ def hide_body(body: Body, piece: Piece) -> Piece:
     remap = {v: i for i, v in enumerate(used)}
     return Piece(piece.name, piece.V[used], [[remap[v] for v in piece.F[k]] for k in keep], [piece.UV[k] for k in keep],
                  [piece.W[v] for v in used], piece.material, src=piece.src[used], colors=None if piece.colors is None else piece.colors[used])
+
+
+def skirt(body: Body, waist: float = 0.12, flare: float = 0.07, name='skirt') -> Piece:
+    """A long wrap skirt (pagne) from the waist to the ankles: rings that follow the hips and thighs,
+    widen into a bell below the knees. Weighted mostly to the pelvis, a little to each thigh so it
+    sways when the legs move."""
+    waistZ = body.hipZ + (body.shoulderZ - body.hipZ) * waist
+    bottom = body.ankleZ + 0.035
+    legs = body.mask({'pelvis', 'spine_01', 'thigh_l', 'thigh_r', 'calf_l', 'calf_r'})
+    P = body.V[legs]
+    cx = float(body.V[body.mask({'pelvis'}), 0].mean())
+    cy = float(body.V[body.mask({'pelvis'}), 1].mean())
+    rings, seg = 22, 40
+    V = []
+    hipw = 0.0
+    for i in range(rings):
+        f = i / (rings - 1)
+        z = waistZ + (bottom - waistZ) * f
+        band = np.abs(P[:, 2] - z) < 0.03
+        Q = P[band] if band.any() else P
+        for j in range(seg):
+            a = 2 * math.pi * j / seg
+            d = np.array([math.cos(a), math.sin(a)])
+            # the body's extent in this direction at this height (a convex wrap around both legs)
+            proj = (Q[:, 0] - cx) * d[0] + (Q[:, 1] - cy) * d[1]
+            r = float(proj.max()) if len(proj) else 0.15
+            hipw = max(hipw, r) if f < 0.3 else hipw
+            r = max(r, hipw * (0.92 if f > 0.3 else 0)) + 0.014 + flare * max(0.0, f - 0.45) ** 1.5 * 2
+            V.append([cx + d[0] * r, cy + d[1] * r, z])
+    V = np.array(V)
+    V = mh.smooth(V, _grid_faces(rings, seg), 4, 0.4)
+    # outward-facing: the rings go down, the angle turns anticlockwise seen from above
+    F = [list(reversed(f)) for f in _grid_faces(rings, seg)]
+    # weights: pelvis, thighs, a touch of calves at the hem
+    W = []
+    for k, v in enumerate(V):
+        f = (k // seg) / (rings - 1)
+        side = np.clip((v[0] - cx) / max(hipw, 0.05), -1, 1)
+        leg = 0.55 * f
+        w = {'pelvis': 1 - leg, 'thigh_l': leg * (side + 1) / 2 * 0.8, 'thigh_r': leg * (1 - side) / 2 * 0.8}
+        if f > 0.7:
+            w['calf_l'] = leg * (side + 1) / 2 * 0.2
+            w['calf_r'] = leg * (1 - side) / 2 * 0.2
+        else:
+            w['thigh_l'] += leg * (side + 1) / 2 * 0.2
+            w['thigh_r'] += leg * (1 - side) / 2 * 0.2
+        s = sum(w.values())
+        W.append({b: x / s for b, x in w.items() if x > 1e-3})
+    u = np.array([(k % seg) / seg for k in range(len(V))])
+    vv = np.array([1 - (k // seg) / (rings - 1) for k in range(len(V))])
+    p = Piece(name, V, F, [], W, 'dress')
+    p.UV = _per_loop(p, np.stack([u * 2.0, vv * 2.2], 1), wrap_u=False)
+    # fix the seam column (u wraps)
+    for fi, f in enumerate(F):
+        us = [p.UV[fi][k][0] for k in range(4)]
+        if max(us) - min(us) > 1.0:
+            p.UV[fi] = [(x + 2.0 if x < 1.0 else x, y) for x, y in p.UV[fi]]
+    hem_d = np.array([(rings - 1 - k // seg) for k in range(len(V))])
+    p.colors = np.stack([np.zeros(len(V)), np.zeros(len(V)), np.clip(1 - hem_d / 1.5, 0, 1), np.ones(len(V))], 1)
+    return p
+
+
+def _grid_faces(rings: int, seg: int) -> list[list[int]]:
+    F = []
+    for i in range(rings - 1):
+        for j in range(seg):
+            a = i * seg + j
+            b = i * seg + (j + 1) % seg
+            F.append([a, b, b + seg, a + seg])
+    return F
+
+
+def beard(body: Body, ears: np.ndarray, lips: np.ndarray, full=True, name='beard') -> Piece:
+    """A short beard: the jaw, the chin and the upper lip, a shell of hair a few millimetres thick."""
+    vb = body.vb
+    E = (vb[mh.group_verts('joint-l-eye')].mean(0) + vb[mh.group_verts('joint-r-eye')].mean(0)) / 2
+    rel = body.V - E
+    phi = np.abs(np.arctan2(rel[:, 0], -rel[:, 1]))
+    top = float(body.V[body.dom == 'head', 2].max())
+    k = (top - E[2]) / 0.105
+    sel = (np.isin(body.dom, ['head', 'neck_01'])) & (rel[:, 2] < -0.045 * k) & (rel[:, 2] > -0.125 * k) & (phi < (1.75 if full else 1.2)) & (ears < 0.2) & (lips < 0.25)
+    # not under the chin down the neck
+    sel &= ~((body.dom == 'neck_01') & (rel[:, 2] < -0.105 * k))
+    p = body.cut(name, sel, 'beard')
+    p.V = mh.smooth_boundary(p.V, p.F, 8, 0.6)
+    N = mh.vertex_normals(p.V, p.F)
+    d = mh.ring_distance(len(p.V), p.F, mh.boundary_verts(p.F), 3)
+    p.V = p.V + N * (0.0012 + 0.003 * np.clip(d / 2, 0, 1))[:, None]
+    p.W = [{'head': 1.0} for _ in range(len(p.V))]
+    p.UV = [[(0.5, 0.5)] * len(f) for f in p.F]
+    return p
+
+
+def glasses(body: Body, name='glasses') -> Piece:
+    """Thin rectangular glasses: two rims, a bridge, two arms back to the ears."""
+    vb = body.vb
+    eyes = {s: vb[mh.group_verts(f'joint-{s}-eye')].mean(0) for s in ('l', 'r')}
+    V, F = [], []
+
+    def tube(a, b, r=0.0016, n=6):
+        a, b = np.array(a, float), np.array(b, float)
+        d = b - a
+        L = np.linalg.norm(d)
+        d /= L
+        up = np.array([0, 0, 1.0]) if abs(d[2]) < 0.9 else np.array([1.0, 0, 0])
+        s1 = np.cross(d, up); s1 /= np.linalg.norm(s1)
+        s2 = np.cross(d, s1)
+        base = len(V)
+        for end in (a, b):
+            for i in range(n):
+                t = 2 * math.pi * i / n
+                V.append(end + (s1 * math.cos(t) + s2 * math.sin(t)) * r)
+        for i in range(n):
+            F.append([base + i, base + (i + 1) % n, base + n + (i + 1) % n, base + n + i])
+    for s, e in eyes.items():
+        c = e + np.array([0, -0.016, 0.001])
+        w, h = 0.023, 0.016
+        corners = [c + np.array([-w, 0, -h]), c + np.array([w, 0, -h]), c + np.array([w, 0, h]), c + np.array([-w, 0, h])]
+        for i in range(4):
+            tube(corners[i], corners[(i + 1) % 4])
+        out = 1 if s == 'l' else -1
+        tube(c + np.array([out * w, 0, h * 0.6]), e + np.array([out * 0.068, 0.07, 0.004]))
+    tube(eyes['l'] + np.array([-0.023, -0.016, 0.006]), eyes['r'] + np.array([0.023, -0.016, 0.006]))
+    V = np.array(V)
+    return Piece(name, V, F, [[(0.5, 0.5)] * 4 for _ in F], [{'head': 1.0} for _ in range(len(V))], 'glasses')
+
+
+def cane(body: Body, side='r', name='cane') -> Piece:
+    """A wooden walking stick held in the hand, down to the ground (rigid on the hand)."""
+    h = body.B[f'hand_{side}'][0]
+    mid = (body.B[f'middle_01_{side}'][0] + h) / 2
+    top = mid + np.array([0, -0.01, 0.02])
+    bottom = np.array([top[0] + (0.06 if side == 'l' else -0.06), top[1] - 0.12, 0.0])
+    V, F = [], []
+    n = 8
+    for end, r in ((top, 0.011), (bottom, 0.009)):
+        d = bottom - top
+        d /= np.linalg.norm(d)
+        s1 = np.cross(d, [1, 0, 0]); s1 /= np.linalg.norm(s1)
+        s2 = np.cross(d, s1)
+        for i in range(n):
+            t = 2 * math.pi * i / n
+            V.append(end + (s1 * math.cos(t) + s2 * math.sin(t)) * r)
+    for i in range(n):
+        F.append([i, (i + 1) % n, n + (i + 1) % n, n + i])
+    V = np.array(V)
+    return Piece(name, V, F, [[(0.5, 0.5)] * 4 for _ in F], [{f'hand_{side}': 1.0} for _ in range(len(V))], 'cane')
+
+
+def earrings(body: Body, ears: np.ndarray, name='earrings') -> Piece:
+    """Small gold hoops at the lobes (the lowest ear vertices)."""
+    V, F = [], []
+    import hair as H
+    for s in (1, -1):
+        m = (ears > 0.5) & (np.sign(body.V[:, 0]) == s)
+        if not m.any():
+            continue
+        lobe = body.V[m][np.argmin(body.V[m][:, 2])] + np.array([0, -0.003, -0.006])
+        sv, sf = H.icosphere(0.0045, 1)
+        base = len(V)
+        V.extend(list(sv + lobe))
+        F.extend([[a + base for a in f] for f in sf])
+    V = np.array(V)
+    return Piece(name, V, F, [[(0.5, 0.5)] * len(f) for f in F], [{'head': 1.0} for _ in range(len(V))], 'earrings')

@@ -75,9 +75,10 @@ class Turntable {
 export default function CastSheet() {
   const { t } = useT('lionceaux')
   useDocumentTitle(t('cast.title'))
-  const [group, setGroup] = useState(0)
+  const [group, setGroup] = useState(() => Math.min(GROUPS.length - 1, Number(new URLSearchParams(location.search).get('group') ?? 0) || 0))
   const webgl = useMemo(() => hasWebGL(), [])
-  const { ref, inst } = useMounted((el) => (webgl ? new Turntable(el, GROUPS[0].ids) : null), [webgl])
+  const g0 = Math.min(GROUPS.length - 1, Number(new URLSearchParams(location.search).get('group') ?? 0) || 0)
+  const { ref, inst } = useMounted((el) => (webgl ? new Turntable(el, GROUPS[g0].ids) : null), [webgl])
   const pick = (i: number) => { setGroup(i); inst?.set(GROUPS[i].ids) }
   return (
     <GameFrame className="bg-[#efe4cf]">

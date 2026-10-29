@@ -1,0 +1,73 @@
+{
+ "name": "oldman",
+ "height": 1.7697578400835696,
+ "kid": false,
+ "eyes": {
+  "l": [
+   0.029058508503045,
+   -0.12439274359589776,
+   1.6577172712333417
+  ],
+  "r": [
+   -0.029058508503045,
+   -0.12439274359589776,
+   1.6577172712333417
+  ]
+ },
+ "kitAtlas": {
+  "torso": [
+   0.01,
+   0.01,
+   0.72,
+   0.72
+  ],
+  "sleeveL": [
+   0.78,
+   0.02,
+   0.2,
+   0.46
+  ],
+  "sleeveR": [
+   0.78,
+   0.52,
+   0.2,
+   0.46
+  ]
+ },
+ "pieces": [
+  "beard",
+  "body",
+  "calves",
+  "cane",
+  "cap_brim",
+  "cap_crown",
+  "eye_l",
+  "eye_r",
+  "feet",
+  "forearms",
+  "glasses",
+  "hair_crop",
+  "longsleeves",
+  "lower-teeth",
+  "shirt",
+  "shoe_l",
+  "shoe_r",
+  "shorts",
+  "sock_l",
+  "sock_r",
+  "thighs",
+  "tongue",
+  "trainer_l",
+  "trainer_r",
+  "trousers",
+  "upper-teeth"
+ ],
+ "expressions": [
+  "blink",
+  "smile",
+  "open",
+  "sad",
+  "frown",
+  "surprise"
+ ]
+}

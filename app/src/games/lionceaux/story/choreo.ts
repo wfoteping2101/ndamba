@@ -179,11 +179,21 @@ export class Choreo {
   /** Hold the ball still somewhere (stuck on the wire, in a hand). */
   hold(at: [number, number, number]) { this.w.ballScript = () => ({ x: at[0], y: at[1], z: at[2] }) }
   /** The ball follows an actor's hands (carried). */
-  carry(id: string, height = 0.95) {
+  carry(id: string, height?: number) {
     const p = this.p(id)
-    this.w.ballScript = () => ({ x: p.pos.x + Math.cos(p.facing) * 0.28, y: p.pos.y + Math.sin(p.facing) * 0.28, z: height })
+    // held in both hands in front of the chest (the figure's arms close on it)
+    const h = height ?? (p.look.kid === true ? 0.86 : 1.06) * (p.look.height ?? 1)
+    if (!p.meta.pose) { p.meta.pose = 'hold'; p.meta.poseT = 0; p.meta.carryPose = true }
+    this.carrier = p
+    this.w.ballScript = () => ({ x: p.pos.x + Math.cos(p.facing) * 0.25, y: p.pos.y + Math.sin(p.facing) * 0.25, z: h })
   }
-  release() { this.w.ballScript = null }
+  private carrier: import('../../engine/sim/types').Player | null = null
+  release() {
+    this.w.ballScript = null
+    const p = this.carrier
+    if (p && p.meta.carryPose && p.meta.pose === 'hold') { p.meta.pose = undefined; p.meta.carryPose = undefined }
+    this.carrier = null
+  }
 
   /* ---------------------------------------------------------------- presentation */
 

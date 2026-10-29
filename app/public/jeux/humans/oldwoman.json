@@ -1,0 +1,71 @@
+{
+ "name": "oldwoman",
+ "height": 1.5574118225332894,
+ "kid": false,
+ "eyes": {
+  "l": [
+   0.02787026990967453,
+   -0.12835229332580286,
+   1.4528580738185588
+  ],
+  "r": [
+   -0.02787026990967453,
+   -0.12835229332580286,
+   1.4528580738185588
+  ]
+ },
+ "kitAtlas": {
+  "torso": [
+   0.01,
+   0.01,
+   0.72,
+   0.72
+  ],
+  "sleeveL": [
+   0.78,
+   0.02,
+   0.2,
+   0.46
+  ],
+  "sleeveR": [
+   0.78,
+   0.52,
+   0.2,
+   0.46
+  ]
+ },
+ "pieces": [
+  "body",
+  "calves",
+  "cane",
+  "dress_top",
+  "earrings",
+  "eye_l",
+  "eye_r",
+  "feet",
+  "forearms",
+  "hair_crop",
+  "hair_puff",
+  "hair_wrap",
+  "hat_brim",
+  "hat_crown",
+  "hat_flowers",
+  "lower-teeth",
+  "shirt",
+  "shoe_l",
+  "shoe_r",
+  "skirt",
+  "thighs",
+  "tongue",
+  "upper-teeth",
+  "wrap_knot"
+ ],
+ "expressions": [
+  "blink",
+  "smile",
+  "open",
+  "sad",
+  "frown",
+  "surprise"
+ ]
+}
