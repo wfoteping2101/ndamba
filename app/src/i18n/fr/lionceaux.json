@@ -1,0 +1,170 @@
+{
+  "title": "Lionceaux : le ballon qui voyage",
+  "cast": {
+    "title": "Les personnages",
+    "sub": "Fiche de référence du jeu",
+    "groups": {
+      "brothers": "Les frères",
+      "family": "La famille et Tonton Fokou",
+      "team": "Les Lionceaux",
+      "quarter": "Le quartier"
+    },
+    "notes": {
+      "bribri": "12 ans, le grand frère. Grand et mince, une raie fine à gauche, le 8 vert délavé à col blanc. Il voit tout et parle avec les mains.",
+      "kaydoudou": "10 ans, le petit frère. Petite afro, le sourire avec un trou entre les dents, tee-shirt jaune à bande rouge, une chaussette rouge au pied droit et une jaune au pied gauche.",
+      "mami": "La grand-mère de Bafoussam, couturière et présidente du njangi. Foulard et robe de pagne rouge et jaune.",
+      "fokou": "62 ans, l'entraîneur des Lionceaux de Bonamoussadi. Casquette usée, une jambe qui boite un peu, assis sur son bidon jaune sous le manguier.",
+      "papa": "Ingénieur réseau, des lunettes, une barbe courte. Il danse la danse de Milla « avec style ».",
+      "maman": "Infirmière. Tresses en chignon, créoles dorées, pagne bleu canard et jaune. « Pas de devoirs, pas de crampons. »",
+      "mireille": "La Gazelle, 11 ans : personne dans le quartier ne l'a jamais battue à la course.",
+      "ousmane": "Petit Pied, le gardien, de Garoua. Il chausse du 32 et parle à peine.",
+      "radio": "Prosper, que tout le monde appelle Radio : il commente tout, une main devant la bouche comme un micro.",
+      "samuel": "L'attaquant : il court comme une girafe et frappe comme une mule.",
+      "ekotto": "Elle vend des beignets sous son parasol rouge : « Beignets gratuits pour celui qui marque ! »",
+      "bile": "Le voisin au grillage surmonté de fil de fer barbelé.",
+      "bulldozer": "Junior Mvondo, capitaine des Requins de Bépanda : 12 ans, « mais on lui en donne quinze »."
+    }
+  },
+  "places": {
+    "title": "Les lieux",
+    "sub": "Fiche de référence des décors",
+    "light": "Lumière",
+    "names": {
+      "bona": "Terrain de Bonamoussadi",
+      "bonaRain": "Saison des pluies",
+      "bonaFinal": "Jour de finale",
+      "maison": "La maison, Douala",
+      "mami": "Chez Mami, Bafoussam",
+      "colline": "La colline, Bafoussam",
+      "avion": "Aéroport et avion"
+    },
+    "moods": {
+      "morning": "Matin",
+      "noon": "Midi",
+      "golden": "Fin d'après-midi",
+      "evening": "Soir",
+      "night": "Nuit",
+      "rain": "Pluie",
+      "overcast": "Ciel gris",
+      "fog": "Brouillard",
+      "interior": "Jour",
+      "interiorNight": "Ampoule du soir"
+    }
+  },
+  "brand": "Lionceaux",
+  "tagline": "Le ballon qui voyage",
+  "intro": "L'aventure de BriBri et Kaydoudou, chapitre après chapitre, telle que le livre la raconte. Jouez les moments de football, marchez dans le quartier, et gardez chaque Leçon du Ballon.",
+  "menu": {
+    "start": "Commencer l'aventure",
+    "continue": "Continuer",
+    "continueSub": "Chapitre {{n}}, {{title}}",
+    "chapters": "Les chapitres",
+    "cast": "Les personnages",
+    "places": "Les lieux",
+    "read": "Lire le livre",
+    "settings": "Réglages"
+  },
+  "parts": {
+    "1": "Partie I, Cameroun : le cœur",
+    "2": "Partie II, États-Unis : la raison",
+    "3": "Partie III, France : les yeux",
+    "4": "Partie IV, Espagne : la carte",
+    "5": "Partie V, Angleterre : le souffle"
+  },
+  "chapters": {
+    "title": "Les chapitres",
+    "sub": "Tome 1, quarante chapitres",
+    "pov": "Raconté par {{name}}",
+    "playable": "Chapitre jouable",
+    "lessonOnly": "Leçon jouable",
+    "lessonOnlyHint": "La version jouable de ce chapitre n'existe pas encore. Sa Leçon du Ballon se joue déjà.",
+    "done": "Terminé",
+    "inProgress": "En cours",
+    "play": "Jouer le chapitre",
+    "resume": "Reprendre",
+    "replay": "Rejouer",
+    "lesson": "Jouer la leçon n°{{n}}",
+    "read": "Lire le chapitre",
+    "summary": "Résumé du livre"
+  },
+  "player": {
+    "chapter": "Chapitre {{n}}",
+    "skip": "Passer la scène",
+    "next": "Suite",
+    "pause": "Pause",
+    "resume": "Reprendre",
+    "quit": "Quitter le chapitre",
+    "restart": "Recommencer le chapitre",
+    "menu": "Menu",
+    "bridge": "Mise en scène",
+    "bridgeHint": "Le livre raconte ce moment sans le montrer : le jeu le met en scène, sans rien ajouter à l'histoire.",
+    "talk": "Parler à {{name}}",
+    "auto": "Avance automatique des répliques",
+    "autoHint": "Touchez l'image ou appuyez sur Espace pour passer à la réplique suivante.",
+    "endTitle": "Fin du chapitre {{n}}",
+    "endBody": "La suite vous attend.",
+    "nextChapter": "Chapitre suivant",
+    "backToChapters": "Tous les chapitres",
+    "readChapter": "Lire le chapitre dans le livre",
+    "loading": "Le quartier se prépare",
+    "score": "Score",
+    "thought": "pensée"
+  },
+  "controls": {
+    "talk": "Parler",
+    "dribble": "Dribbler",
+    "pass": "Passe",
+    "shoot": "Tirer",
+    "touch": "Toucher",
+    "diveL": "Gauche",
+    "diveR": "Droite",
+    "next": "Suite",
+    "stick": "Déplacement"
+  },
+  "explore": {
+    "kickoff": "Parle à Tonton Fokou et à Kaydoudou, puis rejoins ta place au milieu du terrain.",
+    "talkFirst": "Parle d'abord aux personnes marquées d'un cercle blanc.",
+    "go": "Rejoins le cercle doré.",
+    "vulca": "Parle à Papa, puis va avec lui jusqu'au vulcanisateur du carrefour."
+  },
+  "play": {
+    "dribbleIntro": "Tu es Kaydoudou. Le ballon arrive sur la gauche.",
+    "dribble": "Défenseur {{n}} sur {{total}} : quand il arrive, appuie sur Dribbler.",
+    "dribbleHint": "Trop tard : il a touché le ballon. Récupère-le et dribble quand son cercle devient doré.",
+    "dribbleWait": "Attends qu'il soit tout près.",
+    "oneTouchIntro": "Tu es BriBri. Regarde le ballon.",
+    "oneTouch": "Une touche : passe à {{name}}. Touche-le, ou appuie sur Passe.",
+    "oneTouchWrong": "Regarde encore : {{name}} est seul.",
+    "juggle": "Les dix passes : touche le ballon quand il retombe sur toi. {{n}} sur {{total}}.",
+    "juggleEarly": "Trop tôt. Le ballon a touché le sol : on recommence à un.",
+    "juggleLate": "Trop tard. Le ballon a touché le sol : on recommence à un.",
+    "run": "Cours vers la zone dorée : ton défenseur te suit, l'espace s'ouvre pour un autre.",
+    "penaltyShoot": "Choisis un côté, puis tire.",
+    "penaltySave": "Plonge du bon côté.",
+    "penaltyLook": "Regarde bien : de l'autre côté.",
+    "choose": "Choisis la passe.",
+    "chooseLocked": "Celle-là, il la voit. Mais il n'ose pas encore.",
+    "fogIntro": "Tu es Kaydoudou, dans l'équipe du bas. Monte vers le but d'en haut.",
+    "voiceIntro": "Le brouillard a tout avalé.",
+    "voice": "Écoute les voix. Passe vers celle de ton frère.",
+    "voiceWrong": "Cette voix-là, tu ne la reconnais pas."
+  },
+  "lesson": {
+    "title": "Leçon du Ballon n°{{n}}",
+    "notebook": "Le carnet de BriBri",
+    "play": "Jouer la leçon",
+    "continue": "Continuer",
+    "fromBook": "Texte du livre",
+    "playTitle": "Leçon n°{{n}} : {{title}}",
+    "playSub": "Lionceaux, chapitre {{n}}",
+    "objective": "Rejoue le schéma de la leçon tel que le carnet le dessine : les passes dans l'ordre, au bon partenaire.",
+    "adaptation": "Le schéma est celui du livre. Les règles de score (rejouer le mouvement trois fois) sont celles du jeu.",
+    "back": "Retour au chapitre",
+    "noDiagram": "Cette leçon n'a pas de schéma dans le livre : elle se lit, elle ne se joue pas."
+  },
+  "choices": {
+    "voixParIci": "« Par ici ! »",
+    "voixIci": "« Ici ! Ici ! »",
+    "voixBriBri": "« Kaydoudou ! À gauche ! »"
+  }
+}

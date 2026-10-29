@@ -3,12 +3,14 @@ import * as THREE from 'three'
 import { BallView } from './render/ballView'
 import { CameraRig, type CamContext, type CamMode } from './render/cameraRig'
 import { Character } from './render/character'
+import { Goat, type Figure } from './render/animal'
 import { Overlays } from './render/overlays'
 import { buildPitch, type PitchView, type Surround } from './render/pitchView'
 import { FpsMonitor, Frame, Stage, detectQuality, type Quality } from './render/stage'
 import { attackTarget } from './sim/pitch'
 import { DT, type World } from './sim/world'
 import type { Player } from './sim/types'
+import type { V2 } from './sim/math'
 
 export interface ViewOpts {
   quality?: Quality
@@ -28,7 +30,7 @@ export class SimView {
   frame: Frame
   pitch: PitchView | null = null
   ball = new BallView()
-  chars = new Map<string, Character>()
+  chars = new Map<string, Figure>()
   overlays: Overlays
   rig: CameraRig
   fps = new FpsMonitor()
@@ -61,7 +63,7 @@ export class SimView {
     const q = this.stage.quality
     for (const p of this.world.players) {
       if (this.chars.has(p.id)) continue
-      const c = new Character(p.look, { toon: this.opts.toon, outline: (this.opts.outline ?? true) && q.outlines, castShadow: q.shadows })
+      const c: Figure = p.look.animal ? new Goat(p.look, { castShadow: q.shadows }) : new Character(p.look, { toon: this.opts.toon, outline: (this.opts.outline ?? true) && q.outlines, castShadow: q.shadows })
       c.root.position.copy(this.frame.vec(p.pos.x, p.pos.y))
       c.snapFacing(p.facing)
       this.chars.set(p.id, c)
@@ -73,6 +75,8 @@ export class SimView {
   /** Swap in a new world on the same pitch (restarts, demo then attempt). Characters with the same id are kept. */
   setWorld(w: World) {
     this.world = w
+    // a new place may have another size: the frame is shared (overlays), so it changes in place
+    this.frame.w = w.pitch.w; this.frame.h = w.pitch.h
     for (const [id, c] of this.chars) {
       const p = w.get(id)
       if (!p) continue
@@ -113,8 +117,9 @@ export class SimView {
       const x = pr.x + (p.pos.x - pr.x) * a, y = pr.y + (p.pos.y - pr.y) * a
       c.root.position.set(this.frame.x(x), 0, this.frame.z(y))
       const speed = Math.hypot(p.vel.x, p.vel.y)
-      const look = p.faceTarget ? Math.atan2(p.faceTarget.y - p.pos.y, p.faceTarget.x - p.pos.x) : Math.atan2(w.ball.pos.y - p.pos.y, w.ball.pos.x - p.pos.x)
-      c.update({ speed, velAngle: Math.atan2(p.vel.y, p.vel.x), facing: p.facing, maxSpeed: p.maxSpeed, anim: p.anim, animT: p.animT, kickFoot: p.kickFoot, lookAngle: look, gk: p.gk, mood: (p.meta.mood as 'happy' | 'sad' | undefined) }, dt)
+      const look = p.meta.lookAt ? Math.atan2((p.meta.lookAt as V2).y - p.pos.y, (p.meta.lookAt as V2).x - p.pos.x) : p.faceTarget ? Math.atan2(p.faceTarget.y - p.pos.y, p.faceTarget.x - p.pos.x) : Math.atan2(w.ball.pos.y - p.pos.y, w.ball.pos.x - p.pos.x)
+      const pose = p.meta.pose as Player['anim'] | undefined
+      c.update({ speed: pose ? 0 : speed, velAngle: Math.atan2(p.vel.y, p.vel.x), facing: p.facing, maxSpeed: p.maxSpeed, anim: pose ?? p.anim, animT: pose ? (p.meta.poseT as number ?? p.animT) : p.animT, kickFoot: p.kickFoot, lookAngle: look, gk: p.gk, mood: (p.meta.mood as 'happy' | 'sad' | undefined) }, dt)
     }
     const pb = w.prevBall, b = w.ball.pos
     const bx = pb.x + (b.x - pb.x) * a, by = pb.y + (b.y - pb.y) * a, bz = pb.z + (b.z - pb.z) * a

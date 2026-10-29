@@ -102,6 +102,7 @@ export class SequenceDirector {
           // not on the ball (yet): go and get a loose ball first
           this.fetch(p)
           allDone = false
+          if (this.broken(p, elapsed)) return
         }
         this.started.add(s)
       } else if (s.kind === 'pass') {
@@ -135,12 +136,12 @@ export class SequenceDirector {
           }
           w.requestPass(p, pt, { receiver: rid, arrive: typeof s.to === 'string' ? undefined : rid ? 3.5 : 0.8, precise: true })
           this.passed.add(s)
-        } else this.fetch(p)
+        } else { this.fetch(p); if (this.broken(p, elapsed)) return }
       } else if (s.kind === 'shot') {
         if (this.passed.has(s)) { if (w.ball.inFlight && elapsed < 3) allDone = false; continue }
         allDone = false
         if (this.opts.userPasses) continue // the user shoots
-        if (w.ball.owner !== p.id) this.fetch(p)
+        if (w.ball.owner !== p.id) { this.fetch(p); if (this.broken(p, elapsed)) return }
         else if (!p.pending) {
           const goal = nearestGoal(w, p)
           const to = typeof s.to === 'string' ? stepTarget(w, s) : goal ? { x: goal.x, y: goal.y + (w.rng.next() - 0.5) * goal.width * 0.6 } : s.to
@@ -153,6 +154,22 @@ export class SequenceDirector {
     for (const id of this.driven) { const q = w.get(id); if (q) q.meta.scripted = true }
     if (allDone) { this.gi++; this.groupStart = w.t; this.started.clear() }
   }
+  /**
+   * The move is broken when another player of ours has the ball instead of the actor (a loose ball
+   * picked up by the wrong team-mate): the attempt is over, the drill starts it again. Waits a
+   * moment, since a ball on its way to the actor can be touched on the way.
+   */
+  private broken(p: Player, elapsed: number) {
+    const own = this.w.ball.owner
+    if (!own || own === p.id || elapsed < 1.5) return false
+    const o = this.w.get(own)
+    if (!o) return false
+    // the receiver of a pass of this group may still be about to play it on
+    if (this.current().some((s) => s.kind === 'pass' && this.passed.has(s) && (s.to === own || s.receiver === own))) return false
+    this.state = 'failed'; this.failReason = o.team === p.team ? 'broken' : 'loss'
+    return true
+  }
+
   /** Release every player back to his brain. */
   release() { for (const id of this.driven) { const q = this.w.get(id); if (q) q.meta.scripted = false } this.driven.clear() }
 

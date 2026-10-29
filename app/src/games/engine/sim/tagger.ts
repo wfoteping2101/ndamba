@@ -54,7 +54,7 @@ export class Tagger {
   private add(side: string | null | undefined, code: EventCode, by: string | null, at: V2) {
     if (side !== 'a' && side !== 'b') return
     this.counts[side][code]++
-    const a = { t: this.w.t, code, side, by, at: { ...at } }
+    const a: TaggedAction = { t: this.w.t, code, side, by, at: { ...at } }
     this.log.push(a)
     this.onCode?.(a)
   }

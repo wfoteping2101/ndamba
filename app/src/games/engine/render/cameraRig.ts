@@ -6,7 +6,10 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import type { Stage } from './stage'
 
-export type CamMode = 'tactical' | 'broadcast' | 'player' | 'cinematic' | 'free'
+export type CamMode = 'tactical' | 'broadcast' | 'player' | 'cinematic' | 'free' | 'shot'
+
+/** A framed shot (story scenes): a pose, optionally moving to a second pose over `dur` seconds. */
+export interface ShotPose { pos: THREE.Vector3; look: THREE.Vector3; to?: { pos: THREE.Vector3; look: THREE.Vector3 }; dur?: number; fov?: number }
 
 export interface CamContext {
   /** ball in three coordinates */
@@ -32,6 +35,25 @@ export class CameraRig {
   controls: OrbitControls | null = null
   /** limit the camera to stay above this height (street scenes) */
   minY = 1.2
+  private shotPose: ShotPose | null = null
+  private shotT = 0
+  private shotRate = 5
+
+  /** Story framing: cut (or glide) to a pose; a pose with `to` dollies there over `dur` seconds. */
+  setShot(s: ShotPose, opts: { cut?: boolean; rate?: number } = {}) {
+    if (this.mode === 'free' && this.controls) { this.controls.dispose(); this.controls = null }
+    this.mode = 'shot'
+    this.shotPose = s
+    this.shotT = 0
+    this.shotRate = opts.rate ?? 5
+    this.glide = 0
+    if (opts.cut) {
+      this.pos.copy(s.pos); this.look.copy(s.look)
+      this.stage.camera.position.copy(s.pos); this.stage.camera.lookAt(s.look)
+    }
+    const fov = s.fov ?? 42
+    if (this.stage.camera.fov !== fov) { this.stage.camera.fov = fov; this.stage.camera.updateProjectionMatrix() }
+  }
 
   constructor(private stage: Stage) {}
 
@@ -144,14 +166,26 @@ export class CameraRig {
         want = { pos: new THREE.Vector3(c.x + Math.cos(this.orbitAngle) * r, 3.4 + r * 0.12, c.z + Math.sin(this.orbitAngle) * r), look: c.clone().setY(0.9) }
         break
       }
+      case 'shot': {
+        const sp = this.shotPose
+        if (!sp) { want = this.tacticalFor(ctx); break }
+        this.shotT += dt
+        if (sp.to && sp.dur) {
+          const u = Math.min(1, this.shotT / sp.dur)
+          const e = u * u * (3 - 2 * u)
+          want = { pos: sp.pos.clone().lerp(sp.to.pos, e), look: sp.look.clone().lerp(sp.to.look, e) }
+        } else want = { pos: sp.pos.clone(), look: sp.look.clone() }
+        break
+      }
       default: want = this.tacticalFor(ctx)
     }
-    const rate = this.glide > 0 ? 3.2 : this.mode === 'tactical' ? 3 : this.smoothRate
+    if (this.mode !== 'shot' && this.stage.camera.fov !== 42) { this.stage.camera.fov = 42; this.stage.camera.updateProjectionMatrix() }
+    const rate = this.mode === 'shot' ? this.shotRate : this.glide > 0 ? 3.2 : this.mode === 'tactical' ? 3 : this.smoothRate
     this.glide = Math.max(0, this.glide - dt)
     const k = 1 - Math.exp(-rate * dt)
     this.pos.lerp(want.pos, k)
     this.look.lerp(want.look, k)
-    this.pos.y = Math.max(this.minY, this.pos.y)
+    this.pos.y = Math.max(this.mode === 'shot' ? 0.1 : this.minY, this.pos.y)
     // shake: smooth noise scaled by trauma squared, decaying
     this.trauma = Math.max(0, this.trauma - dt * 1.4)
     const s = this.trauma * this.trauma * 0.35

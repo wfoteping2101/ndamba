@@ -30,7 +30,10 @@ export class UserCarrierBrain implements Brain {
     }
     // the ball ran a little ahead: go and put a foot on it
     const fb = w.foot(me)
-    if (Math.hypot(w.ball.pos.x - fb.x, w.ball.pos.y - fb.y) > 0.8) { me.target = w.ball2(); me.speedMode = 0.6; me.faceTarget = null; return }
+    if (Math.hypot(w.ball.pos.x - fb.x, w.ball.pos.y - fb.y) > 0.8) {
+      // step so that the foot (not the body) lands on the ball, or he walks past it and turns round and round
+      me.target = { x: w.ball.pos.x - (fb.x - me.pos.x), y: w.ball.pos.y - (fb.y - me.pos.y) }; me.speedMode = 0.45; me.faceTarget = null; return
+    }
     // shield: keep the body between the ball and the nearest opponent, small steps only
     if (near && nd < 4) {
       const away = { x: me.pos.x - near.pos.x, y: me.pos.y - near.pos.y }

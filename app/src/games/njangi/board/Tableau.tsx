@@ -98,7 +98,7 @@ export default function Tableau() {
               </select>
             </label>
           </div>
-          <button type="button" className="btn-outline-light btn-sm min-h-[44px] self-start" onClick={() => { const url = `${location.origin}${location.pathname}#b=${enc(spec)}`; navigator.clipboard?.writeText(url).then(() => { setCopied(true); setTimeout(() => setCopied(false), 2000) }).catch(() => {}); history.replaceState(null, '', `#b=${enc(spec)}`) }}>
+          <button type="button" className="btn-outline-light btn-sm min-h-[44px] self-start" onClick={() => { const url = `${location.origin}${location.pathname}#b=${enc(spec)}`; navigator.clipboard?.writeText(url).then(() => { setCopied(true); setTimeout(() => setCopied(false), 2000) }).catch(() => {}); window.history.replaceState(null, '', `#b=${enc(spec)}`) }}>
             <Link2 size={16} strokeWidth={1.75} />{copied ? t('tableau.copied') : t('tableau.share')}
           </button>
         </section>

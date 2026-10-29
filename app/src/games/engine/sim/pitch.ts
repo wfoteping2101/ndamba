@@ -48,6 +48,8 @@ export interface PitchGeom {
   goalFor: { a: Goal | null; b: Goal | null }
   /** length of a full pitch for "towards goal" measures (35 m final third etc.) */
   fullLength: number
+  /** how far players may go beyond the area (story places are bigger than their pitch); default 3 m */
+  roam?: number
 }
 
 export const FULL_W = 105

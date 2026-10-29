@@ -33,6 +33,8 @@ function NotFound() {
 
 export interface LessonScreenProps {
   drill: Drill
+  /** the small label above the title (the drill's family by default) */
+  kicker?: string
   /** rules other than the sheet's own (Défi des dix passes) */
   g?: DrillGameplay
   back?: string
@@ -41,7 +43,7 @@ export interface LessonScreenProps {
   chain?: boolean
 }
 
-export function LessonScreen({ drill, g: given, back = '/jeux/code-njangi/academie', sheet, chain }: LessonScreenProps) {
+export function LessonScreen({ drill, g: given, back = '/jeux/code-njangi/academie', sheet, chain, kicker }: LessonScreenProps) {
   const { t, lang } = useT('jeux')
   const text: DrillText = lang === 'en' ? drill.en : drill.fr
   const g = useMemo(() => given ?? gameplayFor(drill), [drill, given])
@@ -92,7 +94,7 @@ export function LessonScreen({ drill, g: given, back = '/jeux/code-njangi/academ
         </>} />
 
       {st && session && st.phase === 'brief' && (
-        <Brief panelRef={setPanelEl} sheet={sheet ?? { href: sheetUrl(drill), label: t('academie.sheet') }} drill={drill} text={text} g={g} level={level} setLevel={setLevel} control={control} setControl={setControl}
+        <Brief panelRef={setPanelEl} kicker={kicker} sheet={sheet ?? { href: sheetUrl(drill), label: t('academie.sheet') }} drill={drill} text={text} g={g} level={level} setLevel={setLevel} control={control} setControl={setControl}
           onDemo={() => { sfx('tap'); session.startDemo() }} onPlay={() => { sfx('whistle'); session.startPlay() }} />
       )}
 
@@ -142,8 +144,9 @@ function targetText(t: (k: string, o?: Record<string, unknown>) => string, g: Dr
   return t(`lesson.target.${tg.kind}`, { n: tg.value })
 }
 
-function Brief({ panelRef, sheet, drill, text, g, level, setLevel, control, setControl, onDemo, onPlay }: {
+function Brief({ panelRef, kicker, sheet, drill, text, g, level, setLevel, control, setControl, onDemo, onPlay }: {
   panelRef: (el: HTMLElement | null) => void
+  kicker?: string
   sheet: { href: string; label: string }
   drill: Drill; text: DrillText; g: DrillGameplay; level: Level; setLevel: (l: Level) => void; control: 'decisions' | 'carrier'; setControl: (c: 'decisions' | 'carrier') => void; onDemo: () => void; onPlay: () => void
 }) {
@@ -152,7 +155,7 @@ function Brief({ panelRef, sheet, drill, text, g, level, setLevel, control, setC
   return (
     <div className="absolute inset-x-0 bottom-0 z-20 p-2 sm:inset-y-0 sm:left-0 sm:right-auto sm:flex sm:w-[420px] sm:items-center sm:p-4" style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 8px)' }}>
       <div ref={panelRef} className="w-full"><Panel className="max-h-[56vh] w-full overflow-y-auto p-4 sm:max-h-[calc(100vh-110px)] sm:p-5">
-        <p className="text-[12.5px] font-semibold text-sun-300">{t(`academie.families.${drill.family}`)}</p>
+        <p className="text-[12.5px] font-semibold text-sun-300">{kicker ?? t(`academie.families.${drill.family}`)}</p>
         <h1 className="mt-1 text-[22px] font-semibold leading-tight sm:text-[24px]">{text.title}</h1>
         {text.subtitle && <p className="mt-1 text-[14px] text-cream/65">{text.subtitle}</p>}
         <p className="mt-3 text-[13px] font-semibold text-cream/60">{t('lesson.objective')}</p>

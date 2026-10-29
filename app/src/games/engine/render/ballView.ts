@@ -44,6 +44,42 @@ function ballTexture() {
   return t
 }
 
+/** Story balls (Lionceaux): Mami's old brown leather ball, the same with its square patch of
+ * red-and-yellow wax cloth (from chapter 2), and the plastic-bag ball of the Bafoussam cousins. */
+export type BallLook = 'ndamba' | 'mami' | 'mamiPatched' | 'bag'
+function storyTexture(look: Exclude<BallLook, 'ndamba'>) {
+  const c = document.createElement('canvas')
+  c.width = 512; c.height = 256
+  const g = c.getContext('2d')!
+  if (look === 'bag') {
+    g.fillStyle = '#e9e6dc'; g.fillRect(0, 0, 512, 256)
+    for (let i = 0; i < 60; i++) { g.strokeStyle = `rgba(${120 + i % 3 * 40},${110 + i % 2 * 30},90,0.35)`; g.lineWidth = 2 + (i % 4); g.beginPath(); g.moveTo((i * 37) % 512, 0); g.bezierCurveTo((i * 53) % 512, 90, (i * 71) % 512, 160, (i * 29) % 512, 256); g.stroke() }
+    g.strokeStyle = 'rgba(60,40,30,0.8)'; g.lineWidth = 5
+    for (let i = 0; i < 5; i++) { g.beginPath(); g.moveTo(0, 30 + i * 50); g.lineTo(512, 50 + i * 45); g.stroke() }
+  } else {
+    // soft brown leather, worn « comme une vieille chaussure », hand-stitched panels
+    g.fillStyle = '#B98B5E'; g.fillRect(0, 0, 512, 256)
+    for (let i = 0; i < 900; i++) { g.fillStyle = `rgba(${90 + (i % 5) * 12},${60 + (i % 3) * 10},35,${0.08 + (i % 7) * 0.02})`; g.fillRect((i * 97) % 512, (i * 61) % 256, 3 + (i % 9), 2 + (i % 5)) }
+    g.strokeStyle = 'rgba(70,45,25,0.85)'; g.lineWidth = 2.5
+    for (let x = 0; x < 512; x += 64) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x + 20, 256); g.stroke() }
+    for (let y = 42; y < 256; y += 86) { g.beginPath(); g.moveTo(0, y); g.lineTo(512, y + 6); g.stroke() }
+    g.setLineDash([3, 4]); g.strokeStyle = 'rgba(240,225,200,0.5)'; g.lineWidth = 1.2
+    for (let x = 4; x < 512; x += 64) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x + 20, 256); g.stroke() }
+    g.setLineDash([])
+    if (look === 'mamiPatched') {
+      // the square of Mami's 1998 njangi pagne, sewn on with tiny stitches
+      const x = 300, y = 80, w = 90, h = 90
+      g.fillStyle = '#C9362B'; g.fillRect(x, y, w, h)
+      g.fillStyle = '#F0B92E'
+      for (let i = 0; i < 4; i++) for (let j = 0; j < 4; j++) { g.beginPath(); g.ellipse(x + 12 + i * 22, y + 12 + j * 22, 7, 4, (i + j) * 0.8, 0, Math.PI * 2); g.fill() }
+      g.strokeStyle = '#2b1a10'; g.lineWidth = 2; g.setLineDash([2, 3]); g.strokeRect(x + 3, y + 3, w - 6, h - 6); g.setLineDash([])
+    }
+  }
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  return t
+}
+
 let shadowTex: THREE.Texture | null = null
 export function blobShadowTexture() {
   if (shadowTex) return shadowTex
@@ -73,9 +109,21 @@ export class BallView {
     this.shadow.position.y = 0.012
     this.group.add(this.mesh, this.shadow)
   }
+  /** Change the ball (story balls); `flat` squashes it (punctured). */
+  setLook(look: BallLook, flat = false) {
+    const m = this.mesh.material as THREE.MeshStandardMaterial
+    m.map?.dispose()
+    m.map = look === 'ndamba' ? ballTexture() : storyTexture(look)
+    m.roughness = look === 'bag' ? 0.8 : look === 'ndamba' ? 0.45 : 0.7
+    m.needsUpdate = true
+    this.flat = flat
+    this.mesh.scale.set(1, 1, 1)
+  }
+  private flat = false
   /** pos in three coords; vel in three coords (for rolling) */
   update(pos: THREE.Vector3, velX: number, velZ: number, dt: number) {
     this.mesh.position.copy(pos)
+    if (this.flat) { this.mesh.scale.set(1.15, 0.55, 1.15); this.mesh.quaternion.identity(); this.mesh.position.y = Math.max(BALL_R * 0.55, pos.y - BALL_R * 0.4) }
     const sp = Math.hypot(velX, velZ)
     if (sp > 0.05) {
       const axis = new THREE.Vector3(velZ, 0, -velX).normalize()

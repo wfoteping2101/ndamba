@@ -23,6 +23,9 @@ let noiseBuf: AudioBuffer | null = null
 
 function ac(): AudioContext | null {
   if (typeof window === 'undefined') return null
+  // browsers refuse sound before the first tap or key: stay silent until then (cutscenes start alone)
+  const ua = (navigator as Navigator & { userActivation?: { hasBeenActive: boolean } }).userActivation
+  if (!ctx && ua && !ua.hasBeenActive) return null
   if (!ctx) {
     const C = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
     if (!C) return null

@@ -53,6 +53,8 @@ export class World {
   prevBall = { x: 0, y: 0, z: 0 }
   /** listeners (audio, feedback, tagger) */
   private listeners: ((e: SimEvent) => void)[] = []
+  /** story cutscenes: the ball follows a scripted path (world time -> position) instead of physics */
+  ballScript: ((t: number) => { x: number; y: number; z: number } | null) | null = null
 
   constructor(pitch: PitchGeom, seed = 7) {
     this.pitch = pitch
@@ -164,8 +166,17 @@ export class World {
     // 3. movement
     for (const p of this.players) this.movePlayer(p, dt)
     this.separate()
-    // 4. ball: dribble touches, free-ball physics, control, blocks
-    this.updateBall(dt)
+    // 4. ball: dribble touches, free-ball physics, control, blocks (or a scripted flight)
+    const scripted = this.ballScript ? this.ballScript(this.t) : null
+    if (scripted) {
+      const b = this.ball
+      b.vel = { x: (scripted.x - b.pos.x) / dt, y: (scripted.y - b.pos.y) / dt, z: (scripted.z - b.pos.z) / dt }
+      b.pos = { ...scripted }
+      b.owner = null; b.inFlight = scripted.z > 0.2
+    } else {
+      if (this.ballScript) this.ballScript = null
+      this.updateBall(dt)
+    }
     // 5. animation bookkeeping
     for (const p of this.players) {
       if ((p.anim === 'kick' && p.animT > 0.45) || (p.anim === 'receive' && p.animT > 0.35) || (p.anim === 'tackle' && p.animT > 0.7) || (p.anim === 'dive' && p.animT > 1.1) || (p.anim === 'catch' && p.animT > 0.6)) {
@@ -319,8 +330,9 @@ export class World {
     p.vel = add2(p.vel, limit2(dv, (speeding ? p.accel * turnPenalty : p.decel) * dt))
     p.pos = add2(p.pos, scale2(p.vel, dt))
     // stay on the playable area (plus a little run-off)
-    p.pos.x = clamp(p.pos.x, -3, this.pitch.w + 3)
-    p.pos.y = clamp(p.pos.y, -3, this.pitch.h + 3)
+    const roam = this.pitch.roam ?? 3
+    p.pos.x = clamp(p.pos.x, -roam, this.pitch.w + roam)
+    p.pos.y = clamp(p.pos.y, -roam, this.pitch.h + roam)
     // facing: look where you run when fast, otherwise towards faceTarget (usually the ball)
     const sp = len2(p.vel)
     let want = p.facing

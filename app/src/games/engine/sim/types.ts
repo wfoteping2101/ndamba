@@ -3,6 +3,9 @@ import type { V2 } from './math'
 
 export type Team = 'a' | 'b' | 'n'
 export type AnimState = 'idle' | 'move' | 'kick' | 'receive' | 'tackle' | 'dive' | 'celebrate' | 'dejected' | 'catch'
+  // story poses (Lionceaux)
+  | 'sit' | 'talk' | 'dance' | 'fist' | 'heart' | 'cry' | 'wave' | 'point' | 'hold' | 'juggle' | 'kneel' | 'palm' | 'sew' | 'lie'
+  | 'open' | 'mic' | 'hug' | 'sitGround' | 'climb' | 'shrug'
 
 /** Looks for the procedural character (kit, skin, hair...). The renderer reads it, the sim ignores it. */
 export interface Look {
@@ -24,6 +27,47 @@ export interface Look {
   prop?: 'notebook' | 'bib' | 'none'
   bib?: string
   gloves?: string
+  /* ---- story looks (Lionceaux): all optional, the footballers never set them ---- */
+  /** a collar on the shirt (jersey, polo) in this colour */
+  collar?: string
+  /** a vertical stripe on the chest, on the wearer's left or right */
+  stripe?: { color: string; side: 'L' | 'R' }
+  /** shirt number on chest and back (drawn) */
+  numberColor?: string
+  /** long trousers instead of shorts and socks */
+  trousers?: string
+  /** trouser side stripes (tracksuits) */
+  trouserStripe?: string
+  /** a long dress or skirt in this colour, with an optional printed pattern */
+  dress?: string
+  pattern?: { a: string; b: string; kind: 'wax' | 'leaves' | 'circles' }
+  /** a head wrap (with the pattern if any) */
+  headwrap?: string
+  /** a cap in this colour (when hair is 'cap') */
+  cap?: string
+  /** shoes: football boots (default), trainers, sandals, town shoes */
+  shoes?: 'boots' | 'trainers' | 'sandals' | 'shoes'
+  /** a thin shaved line in the hair, on the wearer's left or right */
+  part?: 'L' | 'R'
+  /** a gap between the front teeth */
+  gap?: boolean
+  beard?: string
+  glasses?: boolean
+  earrings?: string
+  /** an elder's slight stoop, a cane in the right hand */
+  elder?: boolean
+  cane?: boolean
+  /** adult woman proportions */
+  woman?: boolean
+  /** height scale (1 = standard for adults / children) */
+  height?: number
+  /** an open tracksuit top: `shirt` is the top (body and long sleeves), `jacket` is the T-shirt showing down the front */
+  jacket?: string
+  /** a brimmed hat (with a band of flowers) */
+  hat?: string
+  hatFlowers?: string
+  /** not a person: an animal crossing the pitch (shirt = coat colour) */
+  animal?: 'goat'
 }
 
 export interface PendingAction {

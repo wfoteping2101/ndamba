@@ -154,7 +154,7 @@ export function isTouch() {
 }
 
 /** Settings: sound, quality, subtitles (story). Quality takes effect on the next scene. */
-export function SettingsSheet({ open, onClose, subtitles }: { open: boolean; onClose: () => void; subtitles?: { size: 's' | 'm' | 'l'; on: boolean; set: (v: { size: 's' | 'm' | 'l'; on: boolean }) => void } }) {
+export function SettingsSheet({ open, onClose, subtitles, extra }: { open: boolean; onClose: () => void; subtitles?: { size: 's' | 'm' | 'l'; on?: boolean; set: (v: { size: 's' | 'm' | 'l'; on?: boolean }) => void }; extra?: ReactNode }) {
   const { t } = useT('jeux')
   const [a, setA] = useState<AudioSettings>(loadAudio())
   const [q, setQ] = useState<Quality>(detectQuality())
@@ -196,10 +196,10 @@ export function SettingsSheet({ open, onClose, subtitles }: { open: boolean; onC
           </div>
           {subtitles && (
             <div>
-              <label className="flex min-h-[44px] items-center justify-between gap-3 text-[15px]">
+              {subtitles.on !== undefined && <label className="flex min-h-[44px] items-center justify-between gap-3 text-[15px]">
                 {t('settings.subtitles')}
                 <input type="checkbox" checked={subtitles.on} onChange={(e) => subtitles.set({ ...subtitles, on: e.target.checked })} className="h-5 w-5 accent-[#0B5D3B]" />
-              </label>
+              </label>}
               <p className="mt-1 text-[13px] font-semibold text-cream/70">{t('settings.subtitleSize')}</p>
               <div className="mt-2 grid grid-cols-3 gap-1.5">
                 {(['s', 'm', 'l'] as const).map((k) => (
@@ -211,6 +211,7 @@ export function SettingsSheet({ open, onClose, subtitles }: { open: boolean; onC
               </div>
             </div>
           )}
+          {extra}
         </div>
       </div>
     </div>

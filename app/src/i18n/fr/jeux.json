@@ -294,7 +294,8 @@
       "goal": "On recommence",
       "intercepted": "Passe interceptée",
       "blocked": "Passe contrée",
-      "stopped": "Le ballon s'est arrêté"
+      "stopped": "Le ballon s'est arrêté",
+      "broken": "Le mouvement s'est cassé, on recommence"
     }
   },
   "intentions": {
