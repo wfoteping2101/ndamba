@@ -106,7 +106,7 @@ const sharedClips = new Map<string, Map<string, THREE.AnimationClip>>()
 
 type Arm = 'l' | 'r'
 /** Hand targets in the body's own frame (x the body's left, y up, z forward), in metres for a 1.33 m child. */
-interface ArmPose { hand: [number, number, number]; elbowOut?: number }
+interface ArmPose { hand: [number, number, number]; elbowOut?: number; /** the hand goes up and down (drumming): amplitude, phase */ beat?: [number, number] }
 const POSES: Partial<Record<string, Partial<Record<Arm, ArmPose>>>> = {
   fist: { r: { hand: [-0.06, 1.0, 0.36], elbowOut: 0.3 } },
   heart: { r: { hand: [0.05, 0.98, 0.11], elbowOut: 0.6 } },
@@ -119,14 +119,25 @@ const POSES: Partial<Record<string, Partial<Record<Arm, ArmPose>>>> = {
   wave: { r: { hand: [-0.3, 1.45, 0.05] } },
   juggle: { l: { hand: [0.22, 0.72, 0.05] }, r: { hand: [-0.22, 0.72, 0.05] } },
   catch: { l: { hand: [0.1, 0.95, 0.3] }, r: { hand: [-0.1, 0.95, 0.3] } },
+  // arms round someone standing close in front (Mami and her lions, the airport goodbyes)
+  embrace: { l: { hand: [0.14, 1.1, 0.24], elbowOut: 1 }, r: { hand: [-0.14, 1.08, 0.24], elbowOut: 1 } },
+  // seated, one hand on the armrest beside: the two brothers' hands meet on it (ch08, the plane)
+  restL: { l: { hand: [0.4, 0.84, 0.12], elbowOut: 0.15 } },
+  restR: { r: { hand: [-0.4, 0.84, 0.12], elbowOut: 0.15 } },
+  // both hands on a big drum in front of the hips, beating in turn
+  drum: { l: { hand: [0.14, 0.92, 0.4], elbowOut: 0.6, beat: [0.07, 0] }, r: { hand: [-0.14, 0.92, 0.4], elbowOut: 0.6, beat: [0.07, Math.PI] } },
 }
 
 /** Which clip plays under a story pose (the IK arms, if any, go on top). */
 const POSE_CLIP: Record<string, string> = {
   sit: 'sitIdle', talk: 'talk', dance: 'dance', cry: 'cry', sew: 'sew', sitGround: 'sitGround', shrug: 'shrug', celebrate: 'celebrate',
   catch: 'idleRelaxed', dejected: 'mope', wave: 'idleRelaxed', point: 'idleRelaxed', fist: 'idleRelaxed', heart: 'idleRelaxed', palm: 'idleRelaxed', hold: 'idleRelaxed', open: 'idleRelaxed', mic: 'talk',
-  climb: 'idleRelaxed', juggle: 'idleRelaxed', hug: 'sitGround', kneel: 'sitGround', lie: 'getUp',
+  climb: 'idleRelaxed', juggle: 'idleRelaxed', hug: 'sitGround', kneel: 'sitGround', lie: 'getUp', embrace: 'idleRelaxed', drum: 'idleRelaxed', restL: 'sitIdle', restR: 'sitIdle',
+  throw: 'throw', slip: 'slip', laugh: 'laugh',
 }
+
+/** Story poses that hold one frame of their clip (a fraction of it): lying is the first frame of getting up. */
+const POSE_HOLD: Record<string, number> = { lie: 0 }
 
 const tmpV = new THREE.Vector3(), tmpV2 = new THREE.Vector3(), tmpV3 = new THREE.Vector3(), tmpQ = new THREE.Quaternion(), tmpQ2 = new THREE.Quaternion()
 
@@ -308,6 +319,7 @@ export class Motion {
       if (!inf) continue
       if (((LOCO as readonly string[]).includes(name) || name === 'walkOld') && name !== 'idle') act.time = this.phase * inf.duration
       else if (this.oneShot && name === this.oneShot.name) act.time = this.oneShot.t
+      else if (this.pose in POSE_HOLD && name === POSE_CLIP[this.pose]) act.time = POSE_HOLD[this.pose] * inf.duration
       else if (w > 0.001) act.time = inf.loop ? (act.time + dt) % inf.duration : Math.min(inf.duration, act.time + dt)
       else if (!inf.loop) act.time = 0
     }
@@ -344,7 +356,9 @@ export class Motion {
   private armsUp = 0
 
   /** On top of the clips: IK arms for the story poses, the head turning to what it looks at. */
+  private clock = 0
   private overlays(a: AnimInput, dt: number, rootYaw: number) {
+    this.clock += dt
     const P = this.armsUp > 0.05 ? POSES.climb : POSES[this.pose]
     const k = 1 - Math.exp(-10 * dt)
     for (const side of ['l', 'r'] as Arm[]) {
@@ -355,7 +369,8 @@ export class Motion {
       const up = this.bones.get(`upperarm_${side}`), lo = this.bones.get(`lowerarm_${side}`), ha = this.bones.get(`hand_${side}`)
       if (!up || !lo || !ha) continue
       const k2 = this.scale / Math.max(0.01, this.model.scale.y)
-      const target = this.model.localToWorld(new THREE.Vector3(pose.hand[0] * k2, pose.hand[1] * k2, pose.hand[2] * k2))
+      const lift = pose.beat ? pose.beat[0] * Math.max(0, Math.sin(this.clock * 9 + pose.beat[1])) : 0
+      const target = this.model.localToWorld(new THREE.Vector3(pose.hand[0] * k2, (pose.hand[1] + lift) * k2, pose.hand[2] * k2))
       const elbowSide = (side === 'l' ? 1 : -1) * (0.25 + (pose.elbowOut ?? 0.3) * 0.5)
       const pole = this.model.localToWorld(new THREE.Vector3(elbowSide * k2, 0.75 * k2, -0.35 * k2))
       solveArm(up, lo, ha, target, pole, this.ikW[side])

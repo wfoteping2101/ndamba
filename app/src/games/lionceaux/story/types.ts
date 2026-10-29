@@ -46,6 +46,8 @@ export interface ActorSpec {
   /** an unnamed extra: a variation of the cast look (skin, hair, height), and look overrides */
   variant?: number
   look?: Partial<Look>
+  /** resting above the ground, metres (lying on a bed) */
+  elev?: number
 }
 
 export type CamSpec =
@@ -71,7 +73,9 @@ export type Action =
   | { a: 'remove'; id: string }
   | { a: 'ball'; at: Where }
   | { a: 'mood'; mood: Place['mood'] }
-  | { a: 'sfx'; kind: 'kick' | 'whistle' | 'net' | 'post' | 'success' | 'fail' | 'tap' | 'page' | 'touch' | 'point' }
+  | { a: 'sfx'; kind: 'kick' | 'whistle' | 'net' | 'post' | 'success' | 'fail' | 'tap' | 'page' | 'touch' | 'point' | 'thunder' | 'splash' | 'drums' | 'engine' }
+  /** something the set does when told (the plane takes off) */
+  | { a: 'cue'; name: string }
   | { a: 'slow'; scale: number }
   | { a: 'score'; text: string | null }
   /** the ball: Mami's leather ball, patched, the plastic-bag ball; flat = punctured */
@@ -132,15 +136,34 @@ export type ChallengeSpec =
   | { type: 'dribble'; carrier: string; defenders: string[]; calls?: Line[]; intro?: Line[]; end: 'lose' | 'free'; loseTo?: string; dir: 1 | -1; loseLines?: Line[] }
   /** the ball comes to the player, time slows: pass first time to the right partner */
   | { type: 'oneTouch'; player: string; to: string; setup: (c: Choreo) => Promise<void>; after: (c: Choreo) => Promise<void>; wrongLine?: Line; lines?: Line[]; /** a pass into the stride: seconds of the receiver's run to lead him by */ lead?: number }
-  /** keep the ball up between partners for n touches, in rhythm (the ten-pass ritual) */
-  | { type: 'juggle'; players: string[]; count: number; ball: string; lines?: Line[] }
+  /** keep the ball up between partners for n touches, in rhythm (the ten-pass ritual); `calls`: what
+   *  is said when the count reaches a number (the team counting out loud) */
+  | { type: 'juggle'; players: string[]; count: number; ball: string; lines?: Line[]; calls?: Record<number, Line[]> }
+  /** offer a solution (two steps to the side): an opponent hides the player from the carrier; move
+   *  until the line opens, the ball comes, give it on with the pass button; `reps` times round the
+   *  triangle. Lines per rep: when the opponent shuts the line, when it opens, when the ball is given.
+   *  `finish`: the last pass goes to this team-mate instead, then `after`. `slow`: the moment in slow
+   *  motion (« comme dans un rêve »). */
+  | { type: 'support'; player: string; carrier: string; defender: string; partner: string; reps: number; finish?: string; slow?: number; prompt?: string
+      hideLines?: (Line[] | undefined)[]; openLines?: (Line[] | undefined)[]; giveLines?: (Line[] | undefined)[]
+      setup?: (c: Choreo) => Promise<void>; after?: (c: Choreo) => Promise<void> }
+  /** draw opponents, then give it (« je vais les faire bouger »): two opponents jockey in front of the
+   *  carrier and wait; the dribble button is the feint that makes them jump at him; when they have
+   *  come, the lane to the partner opens: pass. Too early, the lane is shut; too late, they take it. */
+  | { type: 'lure'; carrier: string; defenders: string[]; partner: string; prompt?: string; feintLines?: Line[]; passLines?: Line[]
+      setup?: (c: Choreo) => Promise<void>; after?: (c: Choreo) => Promise<void> }
   /** run into space at the right moment (decoy), dragging a marker; then the scripted finish */
   | { type: 'run'; runner: string; marker: string; zone: { at: Pt; r: number }; cue?: Line; after: (c: Choreo) => Promise<void>; lines?: Line[] }
   /** take a penalty (aim, power) or save one (dive); the result is the book's */
-  | { type: 'penalty'; role: 'shoot' | 'save'; taker: string; keeper: string; result: 'goal' | 'miss' | 'saved' | 'post'; missTo?: Pt; lines?: Line[] }
+  | { type: 'penalty'; role: 'shoot' | 'save'; taker: string; keeper: string; result: 'goal' | 'miss' | 'saved' | 'post'; missTo?: Pt; lines?: Line[]
+      /** the goal of a shoot-out (the one this team attacks), when it is not the taker's own */
+      attackedBy?: 'a' | 'b' }
   /** a frozen picture: choose; the canon option plays, the others are explained */
   | { type: 'choose'; options: { key: string; canon: boolean; line?: Line }[]; setup: (c: Choreo) => Promise<void>; after: (c: Choreo) => Promise<void>; prompt?: string; lockedHint?: string }
   /** a gesture in steps (the brothers' ritual): one button per step, each followed by its scripted moment */
   | { type: 'ritual'; steps: { key: string; act: (c: Choreo) => Promise<void> }[] }
+  /** BriBri's notebook: the polite arrow draws itself along the line of circles, the player draws the
+   *  one that crosses between two circles to the other side (finger or mouse; the pass button traces it) */
+  | { type: 'sketch'; setup?: (c: Choreo) => Promise<void>; politeLines?: Line[]; drawLines?: Line[]; drawnLines?: Line[]; wordLines?: Line[]; after?: (c: Choreo) => Promise<void> }
   /** a run of play the player drives (carrier mode) until the scripted finish */
   | { type: 'drive'; player: string; target: Pt; r: number; after: (c: Choreo) => Promise<void>; lines?: Line[] }

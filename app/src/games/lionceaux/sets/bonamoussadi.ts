@@ -26,7 +26,15 @@ export function bonaPitch(surface: Surface = 'redEarth'): PitchGeom {
 }
 
 export type Crowd = 'none' | 'few' | 'many' | 'packed'
-export interface BonaOpts { mud?: boolean; crowd?: Crowd; night?: boolean }
+export interface BonaOpts {
+  mud?: boolean; crowd?: Crowd; night?: boolean
+  /** bits of bamboo planted in the mud (the triangles of ch04), sim metres */
+  poles?: [number, number][]
+  /** the day of the final (ch08): big drums set up by the mango tree */
+  drums?: boolean
+  /** Mami's yellow taxi, stopped in the lane beside the pitch (ch08) */
+  taxi?: boolean
+}
 
 /** Named places of the set (sim metres). */
 export const BONA_MARKS: Marks = {
@@ -44,7 +52,7 @@ export const BONA_MARKS: Marks = {
 const WALL_Y = -9
 const WALL_X0 = -16, WALL_X1 = 28
 
-export interface SetHandle { group: THREE.Group; marks: Marks; update(dt: number, t: number): void; dispose(): void }
+export interface SetHandle { group: THREE.Group; marks: Marks; update(dt: number, t: number): void; dispose(): void; /** a moment the set plays when the script says so */ cue?(name: string): void }
 
 export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {}): SetHandle {
   const q = stage.quality
@@ -146,6 +154,13 @@ export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {
 
   /* ---------------- the bamboo goals, leaning, with a tired net */
   const bamboo = '#c9b26a'
+  // short bamboo stakes planted in the mud, a little crooked
+  for (const [x, y] of opts.poles ?? []) {
+    const at = frame.vec(x, y)
+    const hh = 0.7 + rnd() * 0.25
+    b.add(new THREE.CylinderGeometry(0.025, 0.03, hh, 7), bamboo, M.trs([at.x, hh / 2 - 0.08, at.z], [(rnd() - 0.5) * 0.25, 0, (rnd() - 0.5) * 0.25]), {})
+    b.add(new THREE.TorusGeometry(0.028, 0.008, 4, 8), '#a88f4f', M.trs([at.x, hh * 0.55, at.z], [Math.PI / 2, 0, 0]))
+  }
   for (const side of [0, 1]) {
     const gx = side ? BONA_W : 0, dir = side ? 1 : -1
     const lean = (side ? -0.07 : 0.05)
@@ -297,6 +312,46 @@ export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {
     b.add(new THREE.BoxGeometry(0.7, 0.1, 0.3), '#1a1a1a', new THREE.Matrix4().compose(at(-0.15, 0.8, 0), rq, new THREE.Vector3(1, 1, 1)))
     b.add(new THREE.CylinderGeometry(0.02, 0.02, 0.7, 5), '#888', new THREE.Matrix4().compose(at(0.55, 1.0, 0), rq.clone().multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI / 2)), new THREE.Vector3(1, 1, 1)))
   }
+  if (opts.drums) {
+    // the final: big drums by the mango tree, hide heads laced on with cord
+    const hide = b.material('hide', () => new THREE.MeshStandardMaterial({ color: '#e6d6b4', roughness: 0.85 }))
+    for (const [x, y, h, r] of [[-6.4, -3.2, 1.05, 0.31], [-5.5, -2.3, 0.9, 0.27], [-7.3, -2.1, 1.15, 0.33], [-6.9, -4.3, 0.8, 0.25]]) {
+      const p = frame.vec(x, y)
+      b.add(new THREE.CylinderGeometry(r, r * 0.72, h, 16), '#6b3f22', M.t(p.x, h / 2, p.z))
+      b.add(new THREE.CylinderGeometry(r * 1.04, r * 1.04, 0.05, 16), '#e6d6b4', M.t(p.x, h + 0.01, p.z), { mat: hide })
+      b.add(new THREE.TorusGeometry(r * 1.03, 0.022, 5, 18), '#3a2416', M.trs([p.x, h - 0.04, p.z], [Math.PI / 2, 0, 0]))
+      b.add(new THREE.TorusGeometry(r * 0.86, 0.02, 5, 18), '#3a2416', M.trs([p.x, h * 0.45, p.z], [Math.PI / 2, 0, 0]))
+      // the cords, zigzag from the head ring down to the belt
+      for (let i = 0; i < 10; i++) {
+        const a = (i / 10) * Math.PI * 2, a2 = a + Math.PI / 10
+        const top = new THREE.Vector3(p.x + Math.cos(a) * r * 1.02, h - 0.05, p.z + Math.sin(a) * r * 1.02)
+        const bot = new THREE.Vector3(p.x + Math.cos(a2) * r * 0.87, h * 0.46, p.z + Math.sin(a2) * r * 0.87)
+        b.add(new THREE.CylinderGeometry(0.008, 0.008, top.distanceTo(bot), 3), '#d9c8a0', segmentMatrix3(top, bot))
+      }
+    }
+  }
+  if (opts.taxi) {
+    // a Douala taxi: yellow, a little dented, stopped in the lane between the houses and the pitch
+    const p = frame.vec(-12.6, 10.6)
+    const rq = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), -Math.PI / 2 + 0.05)
+    const at = (lx: number, ly: number, lz: number) => new THREE.Vector3(lx, ly, lz).applyQuaternion(rq).add(p)
+    const put = (geo: THREE.BufferGeometry, col: string, l: [number, number, number], opts2: Parameters<SetBuilder['add']>[3] = { mat: 'shiny' }) => b.add(geo, col, new THREE.Matrix4().compose(at(...l), rq, new THREE.Vector3(1, 1, 1)), opts2)
+    put(new THREE.BoxGeometry(4.3, 0.62, 1.72), '#f2c230', [0, 0.6, 0])
+    put(new THREE.BoxGeometry(2.2, 0.56, 1.56), '#f2c230', [-0.25, 1.18, 0])
+    // glass all round the cabin
+    put(new THREE.BoxGeometry(2.24, 0.42, 1.6), '#26303a', [-0.25, 1.2, 0])
+    put(new THREE.BoxGeometry(0.04, 0.08, 1.62), '#f2c230', [-0.25, 1.2, 0])
+    put(new THREE.BoxGeometry(4.36, 0.14, 1.76), '#3a3a3a', [0, 0.36, 0], {})
+    for (const lx of [-1.38, 1.38]) for (const lz of [-0.78, 0.78]) {
+      const wq = rq.clone().multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI / 2))
+      b.add(new THREE.CylinderGeometry(0.31, 0.31, 0.22, 14), '#151515', new THREE.Matrix4().compose(at(lx, 0.31, lz), wq, new THREE.Vector3(1, 1, 1)))
+      b.add(new THREE.CylinderGeometry(0.17, 0.17, 0.235, 10), '#9a9a96', new THREE.Matrix4().compose(at(lx, 0.31, lz), wq, new THREE.Vector3(1, 1, 1)), { mat: 'shiny' })
+    }
+    for (const lz of [-0.6, 0.6]) {
+      put(new THREE.BoxGeometry(0.05, 0.12, 0.3), '#f6f2e0', [2.16, 0.68, lz])
+      put(new THREE.BoxGeometry(0.05, 0.1, 0.26), '#b8261c', [-2.16, 0.7, lz])
+    }
+  }
   const drum = frame.vec(-15, 30)
   b.add(new THREE.CylinderGeometry(0.32, 0.32, 0.9, 12), '#2f5a8c', M.t(drum.x, 0.45, drum.z), { mat: 'shiny' })
   for (let i = 0; i < 4; i++) b.add(new THREE.TorusGeometry(0.34, 0.12, 6, 14), '#1e1e1e', M.trs([frame.vec(50, -4).x, 0.12 + i * 0.22, frame.vec(50, -4).z], [Math.PI / 2, 0, 0]))
@@ -334,4 +389,10 @@ export function buildBonamoussadi(stage: Stage, frame: Frame, opts: BonaOpts = {
     update() {},
     dispose() { stage.scene.remove(group); b.dispose() },
   }
+}
+
+/** a Y-up mesh (a cylinder) stretched from a to b */
+function segmentMatrix3(a: THREE.Vector3, b: THREE.Vector3) {
+  const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), b.clone().sub(a).normalize())
+  return new THREE.Matrix4().compose(a.clone().add(b).multiplyScalar(0.5), q, new THREE.Vector3(1, 1, 1))
 }

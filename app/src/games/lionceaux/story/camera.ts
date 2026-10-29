@@ -7,6 +7,14 @@ import type { V2 } from '../../engine/sim/math'
 import type { CamSpec, Where } from './types'
 
 const HEAD_KID = 1.12, HEAD_ADULT = 1.55
+/** poses that bring the head down: sitting on a chair or a bed, on the ground, lying */
+const LOW: Record<string, number> = { sit: 0.66, restL: 0.66, restR: 0.66, sitGround: 0.48, hug: 0.48, kneel: 0.5, lie: 0.22 }
+/** where a figure's head is (standing, seated, lying, raised on furniture) */
+function headOf(p: { look: { kid?: boolean; height?: number }; meta: Record<string, unknown> }) {
+  const stand = (p.look.kid ? HEAD_KID : HEAD_ADULT) * (p.look.height ?? 1)
+  const pose = p.meta.pose as string | undefined
+  return stand * (pose && pose in LOW ? LOW[pose] : 1) + ((p.meta.elev as number | undefined) ?? 0)
+}
 
 export function framePose(spec: CamSpec, w: World, f: Frame, pt: (where: Where) => V2): ShotPose | null {
   const v = (x: number, y: number, h: number) => f.vec(x, y, h)
@@ -27,7 +35,7 @@ export function framePose(spec: CamSpec, w: World, f: Frame, pt: (where: Where) 
       const ids = Array.isArray(spec.who) ? spec.who : [spec.who]
       const ps = ids.map((id) => w.get(id)).filter((p): p is NonNullable<typeof p> => !!p)
       if (!ps.length) return null
-      const head = Math.max(...ps.map((p) => (p.look.kid ? HEAD_KID : HEAD_ADULT) * (p.look.height ?? 1)))
+      const head = Math.max(...ps.map(headOf))
       const c = ps.reduce((a, p) => ({ x: a.x + p.pos.x / ps.length, y: a.y + p.pos.y / ps.length }), { x: 0, y: 0 })
       let spread = 0
       for (const a of ps) for (const b of ps) spread = Math.max(spread, Math.hypot(a.pos.x - b.pos.x, a.pos.y - b.pos.y))
@@ -53,7 +61,7 @@ export function framePose(spec: CamSpec, w: World, f: Frame, pt: (where: Where) 
       const t = pt(spec.to)
       const ang = Math.atan2(t.y - p.pos.y, t.x - p.pos.x)
       const d = spec.dist ?? 1.5
-      const head = (p.look.kid ? HEAD_KID : HEAD_ADULT) * (p.look.height ?? 1)
+      const head = headOf(p)
       const side = ang + Math.PI / 2
       // mix: where the camera looks between the player (0) and the target (1): a game view looks at the
       // space between them, so both the player and where the ball should go are in the picture

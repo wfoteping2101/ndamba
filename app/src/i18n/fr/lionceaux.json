@@ -121,6 +121,7 @@
     "next": "Suite",
     "stick": "Déplacement",
     "sprint": "Sprint",
+    "draw": "Tracer",
     "rotate": "Tourne ton téléphone pour jouer en grand"
   },
   "explore": {
@@ -154,7 +155,44 @@
     "callIntro": "Tu es BriBri. Tu es libre, au milieu.",
     "call": "Que fait BriBri ?",
     "callLocked": "Il le voit. Mais il ne sait pas encore crier.",
-    "ritualIntro": "Les deux frères, sous le manguier."
+    "ritualIntro": "Les deux frères, sous le manguier.",
+    "supportIntro": "Tu es Kaydoudou, à un coin du triangle. Ousmane est au milieu.",
+    "support": "{{name}} te cache : ton frère ne te voit pas. Fais deux pas de côté, jusqu'à ce que la ligne devienne dorée.",
+    "supportAgain": "{{name}} s'est replacé. Deux pas de l'autre côté.",
+    "supportHint": "Rester caché derrière lui ne sert à rien : bouge de deux pas sur le côté.",
+    "supportGive": "Donne-le au sol à {{name}} : appuie sur Passe.",
+    "supportEagle": "Un Aigle te cache. Deux pas de côté, pour que ton frère te voie.",
+    "eagleIntro": "Tu es Kaydoudou, à gauche. Plus que trois minutes.",
+    "tenIntro": "Les dix passes avec le ballon de Mami, sans qu'il touche la boue.",
+    "sketch": "Trace la flèche utile : de ton rond, entre deux ronds sans les toucher, jusqu'à l'autre côté.",
+    "sketchHint": "Elle part de ton rond, passe entre deux ronds sans les toucher, et arrive de l'autre côté.",
+    "throughIntro": "Tu es BriBri. Le ballon arrive au milieu.",
+    "passChoice": "Quelle passe ?",
+    "passLocked": "Il la voit, la passe qui traverse. Mais il a peur de rater.",
+    "sketchIntro": "Cette nuit-là, BriBri ne dort pas.",
+    "promiseIntro": "Les deux frères, chacun sous sa moustiquaire.",
+    "cornerIntro": "Tu es Kaydoudou. Tu n'as envie de rien : sauve-toi dans le coin, loin de tout.",
+    "halftimeIntro": "La mi-temps, sous le manguier. 0-1.",
+    "speak": "Que fait BriBri ?",
+    "speakLocked": "Il aimerait mieux se taire. Mais Kaydoudou lui donne un petit coup de genou.",
+    "throughIntro2": "Tu es BriBri. La table penche : le trou est au milieu.",
+    "signalIntro": "Il reste deux minutes. Kaydoudou vient vers toi, Bulldozer dans son dos.",
+    "oneTwoIntro": "Le une-deux : remets-lui le ballon en une touche, dans le dos de Bulldozer.",
+    "tenIntro2": "Les dix passes avec le ballon de Mami. Toute la foule compte avec vous.",
+    "lureIntro": "Tu es Kaydoudou. Tu ne peux pas les battre : fais-les bouger.",
+    "lure": "Fais le margouillat juste pour les attirer (Dribbler). Quand ils sont venus tous les deux, passe à {{name}}.",
+    "lureEarly": "Pas encore : {{name}} n'est pas seul. Attends qu'ils viennent tous les deux sur toi.",
+    "lureLate": "Trop tard : une longue jambe a pris le ballon. On recommence.",
+    "lastKickIntro": "Cinquième tireur : Kaydoudou. S'il marque, Bonamoussadi est champion.",
+    "howShoot": "Comment tire Kaydoudou ?",
+    "simpleLocked": "BriBri le lui a dit. Mais Kaydoudou veut partir comme un champion.",
+    "thunderIntro": "La frappe du tonnerre : choisis un côté et tire de toutes tes forces.",
+    "saveIntro": "Tu es Ousmane. Le capitaine des Panthères s'avance.",
+    "braceletIntro": "Lundi, à l'aéroport de Douala.",
+    "handIntro": "Les moteurs hurlent. BriBri ferme les yeux."
+  },
+  "sketch": {
+    "label": "Le cahier de BriBri : une ligne de trois ronds, un rond pour lui, une flèche polie et une flèche utile."
   },
   "lesson": {
     "title": "Leçon du Ballon n°{{n}}",
@@ -176,6 +214,16 @@
     "crier": "Crier son nom",
     "leverMain": "Lever la main",
     "poing": "Tendre le poing",
-    "coeur": "Main sur le cœur"
+    "coeur": "Main sur le cœur",
+    "traverser": "À Radio, à travers la ligne",
+    "cote": "À Mireille, sur le côté",
+    "petitDoigt": "Tendre le petit doigt",
+    "parler": "Se lever et parler",
+    "setaire": "Se taire",
+    "deuxDoigts": "Lever deux doigts",
+    "simple": "À ras de terre, dans le coin",
+    "tonnerre": "La frappe du tonnerre",
+    "bracelet": "Attacher le bracelet",
+    "main": "Poser ta main sur la sienne"
   }
 }

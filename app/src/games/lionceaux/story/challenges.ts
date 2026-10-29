@@ -10,7 +10,7 @@ import { Cancelled } from './choreo'
 import type { StorySession } from './session'
 import type { ChallengeSpec, Line } from './types'
 
-export type ControlKey = 'talk' | 'dribble' | 'pass' | 'shoot' | 'touch' | 'diveL' | 'diveR' | 'next'
+export type ControlKey = 'talk' | 'dribble' | 'pass' | 'shoot' | 'touch' | 'diveL' | 'diveR' | 'next' | 'draw'
 
 export interface Challenge {
   controls: ControlKey[]
@@ -35,6 +35,9 @@ export function makeChallenge(spec: ChallengeSpec, s: StorySession): Challenge {
     case 'choose': return new Choose(spec, s)
     case 'drive': return new Drive(spec, s)
     case 'ritual': return new Ritual(spec, s)
+    case 'support': return new Support(spec, s)
+    case 'sketch': return new Sketch(spec, s)
+    case 'lure': return new Lure(spec, s)
   }
 }
 
@@ -340,6 +343,8 @@ class Juggle implements Challenge {
       this.holder = nextI
       this.s.prompt('play.juggle', { n: this.count, total: this.spec.count })
       this.s.hint(null)
+      const call = this.spec.calls?.[this.count]
+      if (call) this.s.say(call).catch(() => {})
       if (this.count >= this.spec.count) {
         sfx('success')
         const ch2 = this.s.choreo
@@ -364,7 +369,8 @@ class Juggle implements Challenge {
   }
 
   frame(_dt: number, input: Input) {
-    if (input.pressed('pass') || input.pressed('skill') || (this.s.autoplay && this.active && Math.abs(this.arrive - this.w.t) < 0.08)) this.touch()
+    // QA autoplay touches on the first frame inside the window (a slow frame may jump past its middle)
+    if (input.pressed('pass') || input.pressed('skill') || (this.s.autoplay && this.active && this.w.t >= this.arrive - 0.22)) this.touch()
     // the ring that closes as the ball comes down
     const o = this.s.st.view.overlays
     o.beginMarkers()
@@ -472,7 +478,7 @@ class Penalty implements Challenge {
     if (this.spec.role === 'shoot') { this.side = side; void this.strike(side) } else void this.dive(side)
     return true
   }
-  private goal() { return this.w.pitch.goals.find((g) => g.attackedBy === (this.w.get(this.spec.taker)!.team === 'b' ? 'b' : 'a'))! }
+  private goal() { const team = this.spec.attackedBy ?? (this.w.get(this.spec.taker)!.team === 'b' ? 'b' : 'a'); return this.w.pitch.goals.find((g) => g.attackedBy === team)! }
 
   private async strike(side: -1 | 1 | 0) {
     this.step = 'fly'
@@ -621,4 +627,316 @@ class Ritual implements Challenge {
     this.s.prompt(null)
   }
   dispose() { this.s.offerChoices(null) }
+}
+
+/* ======================================================================== support */
+
+/** Distance from a point to the segment a-b. */
+function distSeg(p: V2, a: V2, b: V2) {
+  const dx = b.x - a.x, dy = b.y - a.y, l2 = dx * dx + dy * dy || 1
+  const t = Math.max(0, Math.min(1, ((p.x - a.x) * dx + (p.y - a.y) * dy) / l2))
+  return Math.hypot(p.x - (a.x + dx * t), p.y - (a.y + dy * t))
+}
+
+/**
+ * Offer a solution (Leçon du Ballon n°4). The player is at a corner of the triangle; the opponent in
+ * the middle stands between him and the ball: « tu n'existes pas ». A step or two to the side opens
+ * the line (the arrow turns gold), the carrier sees him and the ball comes along the ground; he gives
+ * it on with the pass button. The opponent shifts back into the line; again. While the line is shut,
+ * the ball never comes, whatever he does: that is the lesson, not a failure.
+ */
+class Support implements Challenge {
+  controls: ControlKey[] = []
+  stick = true
+  private phase: 'setup' | 'hide' | 'incoming' | 'give' | 'away' = 'setup'
+  private openFor = 0
+  private stillFor = 0
+  private hiddenFor = 0
+  private home: V2 = { x: 0, y: 0 }
+  private side = 1
+  private opened: (() => void) | null = null
+  private gave: (() => void) | null = null
+  private drawn = ''
+  private finished = false
+  constructor(private spec: Extract<ChallengeSpec, { type: 'support' }>, private s: StorySession) {}
+  get w() { return this.s.world() }
+  private p(id: string) { return this.w.get(id)! }
+
+  async run() {
+    const ch = this.s.choreo, sp = this.spec
+    const me = this.p(sp.player), def = this.p(sp.defender)
+    me.meta.scripted = true; def.meta.scripted = true
+    if (sp.setup) await sp.setup(ch)
+    this.home = { ...me.pos }
+    if (this.w.ball.owner !== sp.carrier) ch.give(sp.carrier)
+    this.s.camera({ kind: 'over', who: sp.player, to: sp.carrier, dist: 4.6, height: 3.4, mix: 0.55 }, true)
+    for (let rep = 0; rep < sp.reps; rep++) {
+      const last = rep === sp.reps - 1
+      // the opponent steps back into the line
+      this.block(0.55)
+      await ch.until(() => distSeg(def.pos, this.p(sp.carrier).pos, me.pos) < 0.6, 4).catch(() => {})
+      if (sp.hideLines?.[rep]) await this.s.say(sp.hideLines[rep]!).catch(() => {})
+      this.phase = 'hide'; this.openFor = 0; this.stillFor = 0; this.hiddenFor = 0
+      this.s.prompt(rep === 0 ? sp.prompt ?? 'play.support' : 'play.supportAgain', { name: this.p(sp.defender).label ?? '' })
+      this.s.setControls([], true)
+      me.controlled = true
+      if (sp.slow) this.s.timeScale(sp.slow)
+      await new Promise<void>((r) => { this.opened = r })
+      // he is visible: the ball comes
+      this.phase = 'incoming'
+      me.controlled = false; me.target = null
+      this.s.hint(null); this.s.prompt(null)
+      this.s.st.view.overlays.clear('support'); this.drawn = ''
+      sfx('tap')
+      // the book's lines while the ball comes (read to the end before the next move)
+      await Promise.all([ch.pass(sp.carrier, sp.player, { arrive: 5 }), sp.openLines?.[rep] ? this.s.say(sp.openLines[rep]!).catch(() => {}) : null])
+      if (sp.slow) this.s.timeScale(1)
+      // give it on, along the ground
+      const to = last && sp.finish ? sp.finish : sp.partner
+      this.phase = 'give'
+      this.s.prompt('play.supportGive', { name: this.p(to).label ?? '' })
+      this.s.setControls(['pass'], false)
+      ch.face(sp.player, to)
+      await new Promise<void>((r) => { this.gave = r })
+      this.phase = 'away'
+      this.s.prompt(null); this.s.setControls([], false)
+      await Promise.all([ch.pass(sp.player, to), sp.giveLines?.[rep] ? this.s.say(sp.giveLines[rep]!).catch(() => {}) : null])
+      if (last) break
+      // round the triangle and back to the carrier
+      await ch.pass(sp.partner, sp.carrier)
+    }
+    this.finished = true
+    me.controlled = false
+    this.s.st.view.overlays.clear('support')
+    if (sp.after) await sp.after(ch)
+  }
+
+  /** The opponent's place: on the line from the ball to the player, a little nearer the ball. */
+  private block(speed: number) {
+    const def = this.p(this.spec.defender), car = this.p(this.spec.carrier), me = this.p(this.spec.player)
+    def.target = { x: car.pos.x + (me.pos.x - car.pos.x) * 0.55, y: car.pos.y + (me.pos.y - car.pos.y) * 0.55 }
+    def.speedMode = speed
+    def.faceTarget = car.pos
+  }
+
+  frame(dt: number, input: Input) {
+    if (this.finished) return
+    const sp = this.spec
+    if (this.phase === 'give') {
+      if (input.pressed('pass') || (this.s.autoplay && Math.random() < dt * 1.5)) { const g = this.gave; this.gave = null; g?.() }
+      return
+    }
+    if (this.phase !== 'hide') return
+    const me = this.p(sp.player), car = this.p(sp.carrier), def = this.p(sp.defender)
+    // the player moves round his corner (a few steps, no more)
+    let dir = this.s.stickDir()
+    if (this.s.autoplay) {
+      const ax = me.pos.x - car.pos.x, ay = me.pos.y - car.pos.y, l = Math.hypot(ax, ay) || 1
+      dir = { x: (-ay / l) * this.side, y: (ax / l) * this.side }
+    }
+    let moving = false
+    if (dir) {
+      let tx = me.pos.x + dir.x * 1.6, ty = me.pos.y + dir.y * 1.6
+      const ox = tx - this.home.x, oy = ty - this.home.y, ol = Math.hypot(ox, oy)
+      const R = 3.2
+      if (ol > R) { tx = this.home.x + (ox / ol) * R; ty = this.home.y + (oy / ol) * R }
+      moving = Math.hypot(tx - me.pos.x, ty - me.pos.y) > 0.3
+      me.target = { x: tx, y: ty }; me.speedMode = input.held('sprint') ? 0.7 : 0.55
+      this.stillFor = moving ? 0 : this.stillFor + dt
+      // the autoplay that has run out of room tries the other side
+      if (this.s.autoplay && !moving) this.side = -this.side
+    } else { me.target = null; this.stillFor += dt }
+    me.faceTarget = car.pos
+    // the opponent drifts back into the line, slowly, and only once the player has stopped: two quick
+    // steps beat him (the longer the player stays hidden, the lazier he gets)
+    this.hiddenFor = this.openFor > 0 ? 0 : this.hiddenFor + dt
+    this.block(this.stillFor > 0.3 ? (this.hiddenFor > 8 ? 0.05 : 0.11) : 0.04)
+    const blocked = distSeg(def.pos, car.pos, me.pos) < 0.75
+    this.openFor = blocked ? 0 : this.openFor + dt
+    // the line from the ball to him: red while hidden, gold when he can be seen (redrawn when it changes)
+    const key = `${blocked}|${Math.round(me.pos.x * 8)}|${Math.round(me.pos.y * 8)}|${Math.round(car.pos.x * 8)}|${Math.round(car.pos.y * 8)}`
+    if (key !== this.drawn) {
+      this.drawn = key
+      const o = this.s.st.view.overlays
+      o.clear('support')
+      o.arrow('support', car.pos, me.pos, 'lane', blocked ? OVERLAY_COLORS.closed : OVERLAY_COLORS.gold, { opacity: blocked ? 0.55 : 0.9 })
+    }
+    if (this.stillFor > 4 && blocked) this.s.hint('play.supportHint')
+    if (this.openFor > 0.3) { const r = this.opened; this.opened = null; this.side = -this.side; r?.() }
+  }
+
+  dispose() {
+    const me = this.w.get(this.spec.player); if (me) me.controlled = false
+    this.s.st.view.overlays.clear('support')
+  }
+}
+
+/* ======================================================================== sketch */
+
+/**
+ * BriBri's notebook at night: a line of three circles (the comb of defenders), a circle for him. The
+ * polite arrow draws itself along the line and loses itself at the edge of the page. The player
+ * draws the useful one: from him, between two circles without touching them, to the other side.
+ * A stroke that misses is rubbed out with a hint. The pass button (or a gamepad) traces it for him.
+ */
+class Sketch implements Challenge {
+  controls: ControlKey[] = []
+  stick = false
+  private done: (() => void) | null = null
+  constructor(private spec: Extract<ChallengeSpec, { type: 'sketch' }>, private s: StorySession) {}
+  async run() {
+    const ch = this.s.choreo, sp = this.spec
+    if (sp.setup) await sp.setup(ch)
+    this.s.setSketch({ phase: 'polite' })
+    if (sp.politeLines) await this.s.say(sp.politeLines)
+    this.s.setSketch({ phase: 'draw' })
+    if (sp.drawLines) await this.s.say(sp.drawLines)
+    this.s.prompt('play.sketch')
+    this.s.setControls(['draw'], false)
+    this.s.onSketch = (ok) => {
+      if (ok) { const d = this.done; this.done = null; d?.() } else { sfx('fail'); this.s.hint('play.sketchHint') }
+    }
+    if (this.s.autoplay) setTimeout(() => this.s.sketchResult(true), 1500)
+    await new Promise<void>((r) => { this.done = r })
+    this.s.onSketch = null
+    this.s.prompt(null); this.s.hint(null); this.s.setControls([], false)
+    // the arrow is on the page; the hesitation; then the word, pressed so hard the lead breaks
+    this.s.setSketch({ phase: 'arrow' })
+    if (sp.drawnLines) await this.s.say(sp.drawnLines)
+    this.s.setSketch({ phase: 'done' })
+    sfx('touch')
+    if (sp.wordLines) await this.s.say(sp.wordLines)
+    if (sp.after) await sp.after(ch)
+    this.s.setSketch(null)
+  }
+  press(k: ControlKey) { if (k === 'draw') this.s.sketchResult(true) }
+  frame(_dt: number, input: Input) { if (this.done && input.pressed('pass')) this.s.sketchResult(true) }
+  dispose() { this.s.onSketch = null; this.s.setSketch(null) }
+}
+
+/* ======================================================================== lure */
+
+/**
+ * Chapter 8: « Je ne peux pas les battre. Alors je vais les faire bouger. » Near the touchline one
+ * opponent jockeys in front of the carrier, another marks the partner, and they wait. The margouillat
+ * (the dribble button) is only a promise now: the feint makes them both come at him. When both have
+ * come, the partner is alone and the lane turns gold: pass, along the ground. Too early, he is still
+ * marked; too late, a long leg takes the ball and everyone goes back to try again.
+ */
+class Lure implements Challenge {
+  controls: ControlKey[] = []
+  stick = false
+  private phase: 'setup' | 'wait' | 'lunge' | 'lost' | 'gone' = 'setup'
+  private home = new Map<string, V2>()
+  private done: (() => void) | null = null
+  private since = 0
+  private drawnFor = -1
+  private drawn = ''
+  constructor(private spec: Extract<ChallengeSpec, { type: 'lure' }>, private s: StorySession) {}
+  get w() { return this.s.world() }
+  private p(id: string) { return this.w.get(id)! }
+
+  async run() {
+    const ch = this.s.choreo, sp = this.spec
+    if (sp.setup) await sp.setup(ch)
+    for (const id of [sp.carrier, sp.partner, ...sp.defenders]) { const p = this.p(id); p.meta.scripted = true; p.target = null; this.home.set(id, { ...p.pos }) }
+    if (this.w.ball.owner !== sp.carrier) ch.give(sp.carrier)
+    this.s.camera({ kind: 'over', who: sp.carrier, to: sp.partner, dist: 5.2, height: 4.2, mix: 0.45 }, true)
+    this.start()
+    await new Promise<void>((r) => { this.done = r })
+    this.s.timeScale(1)
+    this.s.prompt(null); this.s.hint(null); this.s.setControls([], false)
+    this.s.st.view.overlays.clear('lure')
+    for (const id of sp.defenders) this.p(id).target = null
+    await Promise.all([ch.pass(sp.carrier, sp.partner), sp.passLines ? this.s.say(sp.passLines).catch(() => {}) : null])
+    if (sp.after) await sp.after(ch)
+  }
+
+  private start() {
+    const sp = this.spec
+    this.phase = 'wait'; this.since = 0; this.drawnFor = -1
+    this.s.prompt(sp.prompt ?? 'play.lure', { name: this.p(sp.partner).label ?? '' })
+    this.s.setControls(['dribble', 'pass'], false)
+    const car = this.p(sp.carrier)
+    for (const id of sp.defenders) { const d = this.p(id); d.target = null; d.faceTarget = car.pos }
+    car.faceTarget = this.p(sp.defenders[0]).pos
+  }
+
+  /** all of them have come to the carrier: nobody is left with the partner */
+  private allDrawn() {
+    const car = this.p(this.spec.carrier).pos
+    return this.spec.defenders.every((id) => dist2(this.p(id).pos, car) < 2.1)
+  }
+
+  frame(dt: number, input: Input) {
+    const sp = this.spec
+    if (this.phase === 'setup' || this.phase === 'gone') return
+    const car = this.p(sp.carrier)
+    this.since += dt
+    const drawn = this.phase === 'lunge' && this.allDrawn()
+    this.draw(drawn)
+    if (this.phase === 'lost') return
+    const feint = input.pressed('skill') || (this.s.autoplay && this.phase === 'wait' && this.since > 1.2)
+    const pass = input.pressed('pass') || (this.s.autoplay && drawn && this.drawnFor > 0.5)
+    if (this.phase === 'wait') {
+      // they jockey and wait: nobody dives in on a little boy who does not move
+      for (const id of sp.defenders) { const d = this.p(id); d.target = null; d.faceTarget = car.pos }
+      if (pass) { sfx('fail'); this.s.hint('play.lureEarly', { name: this.p(sp.partner).label ?? '' }) }
+      if (feint) {
+        // the margouillat, as a promise: a shimmy of the hips, and they come
+        this.phase = 'lunge'; this.since = 0
+        car.anim = 'receive'; car.animT = 0
+        sfx('touch')
+        this.s.hint(null)
+        this.s.timeScale(0.5)
+        if (sp.feintLines) this.s.say(sp.feintLines).catch(() => {})
+      }
+      return
+    }
+    // lunge: they come at him and stop a long leg away, waiting for the touch
+    for (const id of sp.defenders) {
+      const d = this.p(id)
+      const u = norm(d.pos.x - car.pos.x, d.pos.y - car.pos.y)
+      d.target = { x: car.pos.x + u.x * 1.1, y: car.pos.y + u.y * 1.1 }; d.speedMode = 0.5; d.faceTarget = car.pos
+    }
+    if (drawn) this.drawnFor = this.drawnFor < 0 ? 0 : this.drawnFor + dt
+    if (pass) {
+      if (drawn) { this.phase = 'gone'; const r = this.done; this.done = null; r?.(); return }
+      sfx('fail'); this.s.hint('play.lureEarly', { name: this.p(sp.partner).label ?? '' })
+    }
+    if (this.drawnFor > 2.4) void this.lose()
+  }
+
+  /** too late: a long leg takes the ball; everyone back to his place, and again */
+  private async lose() {
+    const sp = this.spec, ch = this.s.choreo, w = this.w
+    this.phase = 'lost'
+    this.s.timeScale(1)
+    this.s.setControls([], false)
+    const car = this.p(sp.carrier)
+    const d = this.p(sp.defenders[0])
+    d.anim = 'tackle'; d.animT = 0
+    w.ball.owner = null
+    w.ball.vel = { x: (car.pos.x - d.pos.x) * 2, y: (car.pos.y - d.pos.y) * 2, z: 0 }
+    sfx('touch')
+    this.s.hint('play.lureLate')
+    for (const id of sp.defenders) this.p(id).target = null
+    try { await ch.wait(1.4) } catch (e) { if (e instanceof Cancelled) return; throw e }
+    for (const [id, at] of this.home) { const p = this.p(id); p.pos = { ...at }; w.prev.set(id, { ...at }); p.vel = { x: 0, y: 0 }; p.target = null }
+    ch.give(sp.carrier)
+    this.start()
+  }
+
+  private draw(drawn: boolean) {
+    const sp = this.spec, a = this.p(sp.carrier).pos, b = this.p(sp.partner).pos
+    const key = `${drawn}|${this.phase}|${Math.round(a.x * 6)}|${Math.round(a.y * 6)}`
+    if (key === this.drawn) return
+    this.drawn = key
+    const o = this.s.st.view.overlays
+    o.clear('lure')
+    if (this.phase === 'gone' || this.phase === 'lost') return
+    o.arrow('lure', a, b, 'lane', drawn ? OVERLAY_COLORS.gold : OVERLAY_COLORS.closed, { opacity: drawn ? 0.9 : 0.5 })
+  }
+
+  dispose() { this.s.st.view.overlays.clear('lure'); this.s.timeScale(1) }
 }

@@ -59,7 +59,7 @@ function noise(dur: number, gain: number, filter: number, at = 0, q = 0.8, type:
   s.connect(f); f.connect(g); g.connect(master); s.start(t, Math.random()); s.stop(t + dur + 0.02)
 }
 
-export type Sfx = 'kick' | 'touch' | 'whistle' | 'point' | 'success' | 'fail' | 'net' | 'post' | 'tap' | 'page'
+export type Sfx = 'kick' | 'touch' | 'whistle' | 'point' | 'success' | 'fail' | 'net' | 'post' | 'tap' | 'page' | 'thunder' | 'splash' | 'drums' | 'engine'
 export function sfx(k: Sfx) {
   if (settings.muted) return
   switch (k) {
@@ -73,6 +73,14 @@ export function sfx(k: Sfx) {
     case 'post': tone(1900, 0.5, 'sine', 0.12, 0, 0.98); tone(2870, 0.35, 'sine', 0.06); break
     case 'tap': tone(660, 0.05, 'sine', 0.08); break
     case 'page': noise(0.18, 0.12, 3000, 0, 0.6, 'highpass'); break
+    // a clap of thunder: a crack, then the rumble rolling away
+    case 'thunder': noise(0.35, 0.5, 900, 0, 0.6); noise(2.6, 0.7, 140, 0.05, 0.7, 'lowpass'); noise(1.8, 0.35, 70, 0.4, 0.7, 'lowpass'); break
+    // mud or water: a wet slap
+    case 'splash': noise(0.22, 0.35, 1300, 0, 0.9); tone(95, 0.12, 'sine', 0.3, 0, 0.5); break
+    // big drums under the mango tree: boum, boum, ba-da-boum
+    case 'drums': [0, 0.42, 0.84, 0.98, 1.12].forEach((at, i) => { tone(i === 4 ? 62 : 78, 0.32, 'sine', 0.5, at, 0.55); noise(0.05, 0.12, 500, at, 1) }); break
+    // jet engines winding up for take-off
+    case 'engine': noise(4.5, 0.45, 220, 0, 0.7, 'lowpass'); noise(3.8, 0.22, 1600, 0.6, 0.6); tone(95, 4, 'sawtooth', 0.04, 0.2, 1.8); break
   }
 }
 

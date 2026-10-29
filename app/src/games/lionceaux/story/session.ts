@@ -41,6 +41,8 @@ export interface StoryState {
   skippable: boolean
   /** a frozen picture: the options on screen */
   choices: { key: string; canon: boolean }[] | null
+  /** BriBri's notebook page on screen (the sketch challenge) */
+  sketch: { phase: 'polite' | 'draw' | 'arrow' | 'done' } | null
 }
 
 export interface StoryOpts {
@@ -75,7 +77,7 @@ export class StorySession implements ChoreoHost {
     this.st = new StoryStage(el, { quality: opts.quality, place: first?.place ?? { id: 'bona', mood: 'morning' } })
     this.choreo = new Choreo(this)
     this.autoAdvance = opts.autoAdvance ?? true
-    this.state = { beat: 0, beats: script.beats.length, kind: 'scene', bridge: false, line: null, prompt: null, hint: null, near: null, controls: [], stick: false, score: null, paused: false, lesson: null, done: false, skippable: false, choices: null }
+    this.state = { beat: 0, beats: script.beats.length, kind: 'scene', bridge: false, line: null, prompt: null, hint: null, near: null, controls: [], stick: false, score: null, paused: false, lesson: null, done: false, skippable: false, choices: null, sketch: null }
     this.st.loop.onTick = (dt) => { this.choreo.tick(); this.challenge?.tick?.(dt) }
     this.st.loop.onFrame = (dt) => this.frame(dt)
     this.st.loop.start()
@@ -103,6 +105,7 @@ export class StorySession implements ChoreoHost {
   score(text: string | null) { this.set({ score: text }) }
   shake(a: number) { this.st.view.rig.shake(a) }
   mood(m: Mood) { this.st.setMood(m) }
+  fling(a: [number, number, number], b: [number, number, number], dur: number) { this.st.fling(a, b, dur) }
   lanes(pairs: [V2, V2][] | null) {
     const o = this.st.view.overlays
     o.clear('story')
@@ -144,6 +147,9 @@ export class StorySession implements ChoreoHost {
     const lw = this.lineWait
     if (lw && this.clock - lw.at >= lw.min) { this.lineWait = null; this.set({ line: null }); lw.resolve() }
   }
+  cue(name: string) { this.st.set?.cue?.(name) }
+  /** QA: see Loop.catchUp */
+  setCatchUp(n: number) { this.st.loop.catchUp = n }
   /** QA: shorter reading times */
   readingScale = 1
   /** QA: stop on the first line that starts with this text (for screenshots of one shot) */
@@ -220,6 +226,7 @@ export class StorySession implements ChoreoHost {
     this.st.view.chars.get(p.id)?.snapFacing(p.facing)
     p.meta.scripted = true
     p.wantsBall = false
+    if (a.elev) p.meta.elev = a.elev
     if (a.ball) this.choreo.give(a.id)
     return p
   }
@@ -234,13 +241,21 @@ export class StorySession implements ChoreoHost {
 
   private async runScene(b: SceneBeat) {
     try {
-      for (const shot of b.shots) {
+      for (const [si, shot] of b.shots.entries()) {
         this.camera(shot.cam, shot.cut !== false)
         for (const a of shot.do ?? []) this.act(a)
         const play = shot.play ? shot.play(this.choreo) : null
+        const t0 = this.clock
         if (shot.lines?.length) await this.say(shot.lines)
-        if (play && !shot.parallel) await play
-        else if (play) play.catch(() => {})
+        if (play && !shot.parallel) {
+          await play
+          // QA: a shot whose movement outlasts its lines (read at normal speed) by long is dead air on screen
+          if (import.meta.env.DEV || this.readingScale < 1) {
+            const reading = (shot.lines ?? []).reduce((t, l) => t + 1.6 + display(l.text).length * 0.055, 0)
+            const gap = this.clock - t0 - reading
+            if (gap > 3) console.warn(`[story] dead air: ${b.id} shot ${si}, ${gap.toFixed(1)} s with no line`)
+          }
+        } else if (play) play.catch(() => {})
         if (shot.hold) await this.choreo.wait(shot.hold)
       }
     } catch (e) {
@@ -264,6 +279,7 @@ export class StorySession implements ChoreoHost {
       case 'score': this.score(a.text); break
       case 'ballLook': this.st.view.ball.setLook(a.look, a.flat); break
       case 'prop': this.st.holdProp(a.holder, a.look); break
+      case 'cue': this.cue(a.name); break
     }
   }
 
@@ -417,6 +433,11 @@ export class StorySession implements ChoreoHost {
     }
     this.advance()
   }
+
+  /** the notebook page: what the pad shows, and what it reports */
+  setSketch(v: StoryState['sketch']) { this.set({ sketch: v }) }
+  onSketch: ((ok: boolean) => void) | null = null
+  sketchResult(ok: boolean) { this.onSketch?.(ok) }
 
   private onChoice: ((key: string) => void) | null = null
   offerChoices(opts: { key: string; canon: boolean }[] | null, cb?: (key: string) => void) { this.onChoice = cb ?? null; this.set({ choices: opts }) }

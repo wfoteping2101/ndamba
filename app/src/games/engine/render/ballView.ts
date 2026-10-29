@@ -45,8 +45,9 @@ function ballTexture() {
 }
 
 /** Story balls (Lionceaux): Mami's old brown leather ball, the same with its square patch of
- * red-and-yellow wax cloth (from chapter 2), and the plastic-bag ball of the Bafoussam cousins. */
-export type BallLook = 'ndamba' | 'mami' | 'mamiPatched' | 'bag' | 'plain'
+ * red-and-yellow wax cloth (from chapter 2), then with the three signatures in black felt pen (the
+ * evening of the final, chapter 8), and the plastic-bag ball of the Bafoussam cousins. */
+export type BallLook = 'ndamba' | 'mami' | 'mamiPatched' | 'mamiSigned' | 'bag' | 'plain'
 function storyTexture(look: Exclude<BallLook, 'ndamba'>) {
   const c = document.createElement('canvas')
   c.width = 512; c.height = 256
@@ -76,13 +77,27 @@ function storyTexture(look: Exclude<BallLook, 'ndamba'>) {
     g.setLineDash([3, 4]); g.strokeStyle = 'rgba(240,225,200,0.5)'; g.lineWidth = 1.2
     for (let x = 4; x < 512; x += 64) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x + 20, 256); g.stroke() }
     g.setLineDash([])
-    if (look === 'mamiPatched') {
+    if (look === 'mamiPatched' || look === 'mamiSigned') {
       // the square of Mami's 1998 njangi pagne, sewn on with tiny stitches
       const x = 300, y = 80, w = 90, h = 90
       g.fillStyle = '#C9362B'; g.fillRect(x, y, w, h)
       g.fillStyle = '#F0B92E'
       for (let i = 0; i < 4; i++) for (let j = 0; j < 4; j++) { g.beginPath(); g.ellipse(x + 12 + i * 22, y + 12 + j * 22, 7, 4, (i + j) * 0.8, 0, Math.PI * 2); g.fill() }
       g.strokeStyle = '#2b1a10'; g.lineWidth = 2; g.setLineDash([2, 3]); g.strokeRect(x + 3, y + 3, w - 6, h - 6); g.setLineDash([])
+    }
+    if (look === 'mamiSigned') {
+      // Mami's new black felt pen: Ousmane first, beside the square, in careful letters; Mireille big,
+      // and smaller underneath; Tonton Fokou last, taking his time (the book's words)
+      g.fillStyle = '#151210'
+      const write = (text: string, x: number, y: number, size: number, rot: number) => {
+        g.save(); g.translate(x, y); g.rotate(rot)
+        g.font = `italic 600 ${size}px "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive`
+        g.fillText(text, 0, 0); g.restore()
+      }
+      write('Ousmane. Les mains.', 396, 118, 15, -0.05)
+      write('Mireille, la Gazelle', 96, 74, 24, -0.04)
+      write("Ne m'oubliez pas, sinon gare.", 110, 98, 13, -0.03)
+      write('Le ballon doit voyager. Fokou.', 120, 200, 17, 0.02)
     }
   }
   const t = new THREE.CanvasTexture(c)

@@ -15,7 +15,9 @@ export type CastId =
   | 'mireille' | 'ousmane' | 'radio' | 'samuel' | 'jules' | 'ekotto' | 'bile'
   | 'bulldozer' | 'requin' | 'gars' | 'panthere' | 'aigle' | 'cobra' | 'pantherekeeper'
   | 'vulcanisateur' | 'joseph' | 'ernest' | 'mamaKemadjou' | 'kid' | 'lion'
+  | 'pereSamuel' | 'inconnue' | 'president' | 'pereRadio'
   | 'enfants' | 'passager' | 'dame' | 'vendeur' | 'cousin' | 'voix' | 'chevre' | 'femmeNjangi' | 'mamaFotso' | 'mamaNgoo' | 'mamanTchinda' | 'vieilleDame'
+  | 'tambour' | 'foule' | 'capPanthere' | 'hautParleur'
 
 export interface CastMember { id: CastId; name: string; color: string; look: Look; height?: number }
 
@@ -69,6 +71,11 @@ export const CAST: Record<CastId, CastMember> = {
   mamaKemadjou: { id: 'mamaKemadjou', name: 'Mama Kemadjou', color: '#2f5aa0', look: base({ kid: false, woman: true, hair: 'bald', shirt: '#2f5aa0', dress: '#2f5aa0', pattern: { a: '#f2eee3', b: '#1d3d75', kind: 'circles' }, headwrap: '#2f5aa0', shoes: 'sandals', boots: '#3a2a20', height: 1.06, build: 0.9 }) },
   // a Lionceau the chapter does not name: the team plays in whatever it has (« une équipe de chiffons »)
   lion: { id: 'lion', name: '', color: '#3f8f4e', look: base({ hair: 'crop', shirt: '#d9cdb4', shirtTrim: '#8a6a3a', shorts: '#2f3f5a', sockL: '#d9cdb4', sockR: '#d9cdb4', shoes: 'trainers', boots: '#e6e0d4' }) },
+  // chapter 5: grown-ups of the quarter the book names only by who they are (plain clothes)
+  pereSamuel: { id: 'pereSamuel', name: 'Le père de Samuel', color: '#4a6a8a', look: base({ kid: false, hair: 'crop', shirt: '#4a6a8a', collar: '#4a6a8a', trousers: '#2e2e2e', shoes: 'shoes', boots: '#2a2420', height: 1.04 }) },
+  pereRadio: { id: 'pereRadio', name: 'Le micro (le père de Radio)', color: '#8a6a3a', look: base({ kid: false, hair: 'crop', shirt: '#c9a24a', collar: '#c9a24a', trousers: '#3a3a3a', shoes: 'shoes', boots: '#2a2420', build: 1.1 }) },
+  inconnue: { id: 'inconnue', name: 'Une dame', color: '#7a5a8a', look: base({ kid: false, woman: true, hair: 'bald', shirt: '#7a5a8a', dress: '#7a5a8a', pattern: { a: '#e9c46a', b: '#5a3a6a', kind: 'circles' }, headwrap: '#e9c46a', shoes: 'sandals', boots: '#2b2420' }) },
+  president: { id: 'president', name: 'Le président du comité des quartiers', color: '#6a5a3a', look: base({ kid: false, hair: 'cap', cap: '#5a5048', shirt: '#d9d2c4', collar: '#d9d2c4', trousers: '#3a3a3a', shoes: 'shoes', boots: '#2a2420', elder: true, build: 1.05 }) },
   enfants: { id: 'enfants', name: 'Les enfants sur le mur', color: '#e2c26a', look: base({}) },
   // chapter 2: the coach to Bafoussam (« un monsieur en costume », « une dame au chapeau à fleurs »)
   passager: { id: 'passager', name: 'Un monsieur en costume', color: '#5a5a6a', look: base({ kid: false, hair: 'bald', shirt: '#3a3d48', collar: '#f2eee3', trousers: '#3a3d48', shoes: 'shoes', boots: '#1e1a16', build: 1.08 }) },
@@ -84,6 +91,12 @@ export const CAST: Record<CastId, CastMember> = {
   mamanTchinda: { id: 'mamanTchinda', name: 'Maman Tchinda', color: '#2f5aa0', look: base({ kid: false, woman: true, hair: 'puff', shirt: '#2f5aa0', dress: '#2f5aa0', pattern: { a: '#f2eee3', b: '#2f5aa0', kind: 'circles' }, shoes: 'sandals', boots: '#2b2420', height: 0.97 }) },
   vieilleDame: { id: 'vieilleDame', name: 'La vieille dame au bâton', color: '#2f5aa0', look: base({ kid: false, woman: true, hair: 'bald', shirt: '#2f5aa0', dress: '#2f5aa0', pattern: { a: '#f2eee3', b: '#2f5aa0', kind: 'circles' }, headwrap: '#2f5aa0', shoes: 'sandals', boots: '#2b2420', elder: true, cane: true, height: 0.92 }) },
   kid: { id: 'kid', name: '', color: '#888', look: base({ hair: 'crop', shirt: '#9a8a6a', shorts: '#333', shoes: 'sandals', boots: '#2b2420' }) },
+  // chapter 8: « des hommes installent de grands tambours »; the crowd; the Panthers' captain (« de
+  // tout en haut »); the airport loudspeaker (a voice only)
+  tambour: { id: 'tambour', name: 'Un joueur de tambour', color: '#8a5a2a', look: base({ kid: false, hair: 'crop', shirt: '#e9e2d2', pattern: { a: '#c45a3a', b: '#e9e2d2', kind: 'wax' }, trousers: '#3a3a3a', shoes: 'sandals', boots: '#2b2420', build: 1.05 }) },
+  foule: { id: 'foule', name: 'La foule', color: '#e2c26a', look: base({}) },
+  capPanthere: { id: 'capPanthere', name: 'Le capitaine des Panthères', color: '#d9a400', look: base({ hair: 'crop', shirt: '#f0c419', shirtTrim: '#1b1b1b', shorts: '#1b1b1b', sockL: '#f0c419', sockR: '#f0c419', height: 1.2, build: 1.12, chestMark: 'spots', chestMarkColor: '#1b1b1b' }) },
+  hautParleur: { id: 'hautParleur', name: 'Le haut-parleur', color: '#cfd8de', look: base({}) },
 }
 
 /** A kid of the neighbourhood (crowds): varied shirts, same skin family. */

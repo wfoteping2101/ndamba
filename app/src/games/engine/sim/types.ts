@@ -5,10 +5,12 @@ export type Team = 'a' | 'b' | 'n'
 export type AnimState = 'idle' | 'move' | 'kick' | 'receive' | 'tackle' | 'dive' | 'celebrate' | 'dejected' | 'catch'
   // story poses (Lionceaux)
   | 'sit' | 'talk' | 'dance' | 'fist' | 'heart' | 'cry' | 'wave' | 'point' | 'hold' | 'juggle' | 'kneel' | 'palm' | 'sew' | 'lie'
-  | 'open' | 'mic' | 'hug' | 'sitGround' | 'climb' | 'shrug'
+  | 'open' | 'mic' | 'hug' | 'sitGround' | 'climb' | 'shrug' | 'throw' | 'slip' | 'laugh' | 'embrace' | 'drum' | 'restL' | 'restR'
 
 /** Looks for the procedural character (kit, skin, hair...). The renderer reads it, the sim ignores it. */
 export interface Look {
+  /** covered in mud, 0..1 (clothes, socks and hair browned) */
+  mud?: number
   skin: string
   hair: 'crop' | 'twists' | 'afro' | 'bald' | 'cornrows' | 'puff' | 'long' | 'cap'
   hairColor: string

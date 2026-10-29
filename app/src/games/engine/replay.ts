@@ -9,7 +9,8 @@ import { World, makePlayer } from './sim/world'
 const ANIMS: AnimState[] = ['idle', 'move', 'kick', 'receive', 'tackle', 'dive', 'celebrate', 'dejected', 'catch']
 const PER = 7 // x, y, facing, vx, vy, anim, animT
 const EVERY = 3 // ticks between samples (60 Hz / 3 = 20 Hz)
-const MAX_SAMPLES = 20 * 60 * 4
+// eight minutes: the five attempts of a Défi (up to 70 s each) and the moments between them
+const MAX_SAMPLES = 20 * 60 * 8
 
 export interface ReplayRosterEntry { id: string; team: Team; gk: boolean; label?: string; look: Look; height: number }
 export interface Replay {

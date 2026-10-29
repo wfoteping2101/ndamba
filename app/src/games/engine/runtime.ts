@@ -128,7 +128,8 @@ export class SimView {
       if (!c) continue
       const pr = w.prev.get(p.id) ?? p.pos
       const x = pr.x + (p.pos.x - pr.x) * a, y = pr.y + (p.pos.y - pr.y) * a
-      c.root.position.set(this.frame.x(x), 0, this.frame.z(y))
+      // story figures may rest on furniture (lying on a bed): a height above the ground
+      c.root.position.set(this.frame.x(x), (p.meta.elev as number | undefined) ?? 0, this.frame.z(y))
       const speed = Math.hypot(p.vel.x, p.vel.y)
       const look = p.meta.lookAt ? Math.atan2((p.meta.lookAt as V2).y - p.pos.y, (p.meta.lookAt as V2).x - p.pos.x) : p.faceTarget ? Math.atan2(p.faceTarget.y - p.pos.y, p.faceTarget.x - p.pos.x) : Math.atan2(w.ball.pos.y - p.pos.y, w.ball.pos.x - p.pos.x)
       const pose = p.meta.pose as Player['anim'] | undefined
@@ -238,6 +239,8 @@ export class GameLoop {
   onTick: (dt: number) => void = () => {}
   /** after each rendered frame (UI sync, labels) */
   onFrame: (dt: number) => void = () => {}
+  /** QA on a software renderer: how many times more simulation a slow frame may catch up (1 in the game) */
+  catchUp = 1
 
   constructor(public world: World, public view: SimView) {}
 
@@ -249,17 +252,17 @@ export class GameLoop {
     this.last = performance.now()
     const frame = (now: number) => {
       if (!this.running) return
-      const dt = Math.min(0.1, (now - this.last) / 1000)
+      const dt = Math.min(0.1 * this.catchUp, (now - this.last) / 1000)
       this.last = now
       this.acc += dt * this.timeScale
       let steps = 0
-      while (this.acc >= DT && steps < 6) {
+      while (this.acc >= DT && steps < 6 * this.catchUp) {
         this.onTick(DT)
         this.world.step(DT)
         this.acc -= DT
         steps++
       }
-      if (steps >= 6) this.acc = 0
+      if (steps >= 6 * this.catchUp) this.acc = 0
       this.view.render(this.timeScale > 0 ? this.acc / DT : 1, dt)
       this.onFrame(dt)
       this.raf = requestAnimationFrame(frame)

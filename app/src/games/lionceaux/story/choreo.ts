@@ -7,7 +7,7 @@ import type { AnimState, Player } from '../../engine/sim/types'
 import { dist2, type V2 } from '../../engine/sim/math'
 import type { World } from '../../engine/sim/world'
 import { sfx } from '../../shared/audio'
-import type { CamSpec, Line, Pt, Where } from './types'
+import type { ActorSpec, CamSpec, Line, Pt, Where } from './types'
 
 export class Cancelled extends Error { constructor(m = 'cancelled') { super(m) } }
 /** a line replaced by a newer one before it was read */
@@ -31,6 +31,12 @@ export interface ChoreoHost {
   mood(m: import('../sets/common').Mood): void
   /** what a player sees, drawn on the grass (pass lanes); null clears */
   lanes(pairs: [V2, V2][] | null): void
+  /** a lump of mud flying from a to b (sim x, y, height), landing after dur seconds */
+  fling(a: [number, number, number], b: [number, number, number], dur: number): void
+  /** someone arrives on stage during a shot */
+  spawn(a: ActorSpec): unknown
+  /** a moment of the set (the plane takes off) */
+  cue(name: string): void
 }
 
 interface Waiter { until: () => boolean; resolve: () => void; reject: (e: Error) => void; deadline: number }
@@ -202,6 +208,23 @@ export class Choreo {
   slow(s: number) { this.host.timeScale(s) }
   score(text: string | null) { this.host.score(text) }
   sfx(kind: Parameters<typeof sfx>[0]) { sfx(kind) }
+  /** the set plays one of its moments (the plane takes off) */
+  cue(name: string) { this.host.cue(name) }
   shake(a = 0.4) { this.host.shake(a) }
+  /** Someone comes on stage (Maman with her torch, Papa and BriBri behind her). */
+  spawn(a: ActorSpec) { this.host.spawn(a) }
+  /** Throw a handful of mud from someone at someone (or somewhere); resolves when it lands. */
+  fling(from: string, to: Where, opts: { dur?: number } = {}) {
+    const a = this.p(from)
+    const tgt = typeof to === 'string' ? this.w.get(to) ?? null : null
+    const t = this.pt(to)
+    const ha = (a.look.kid === true ? 1.36 : 1.75) * (a.look.height ?? 1)
+    const hb = tgt ? (tgt.look.kid === true ? 1.36 : 1.75) * (tgt.look.height ?? 1) : 0
+    this.face(from, to)
+    this.pose(from, 'throw')
+    const dur = opts.dur ?? 0.7
+    this.host.fling([a.pos.x + Math.cos(a.facing) * 0.25, a.pos.y + Math.sin(a.facing) * 0.25, ha * 0.92], [t.x, t.y, tgt ? hb * 0.78 : 0.05], dur)
+    return this.wait(dur)
+  }
   lanes(pairs: [string, Where][] | null) { this.host.lanes(pairs ? pairs.map(([a, b]) => [{ ...this.p(a).pos }, this.pt(b)] as [V2, V2]) : null) }
 }

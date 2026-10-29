@@ -14,6 +14,7 @@ import { tome1Chapter } from '../njangi/links'
 import { SCRIPTS, isPlayable } from './chapters'
 import { lessonByNo } from './lessons'
 import { Notebook } from './Notebook'
+import { SketchPad } from './SketchPad'
 import { loadSave, saveBeat } from './progress'
 import type { ControlKey } from './story/challenges'
 import { StorySession, type ChapterScript } from './story/session'
@@ -69,8 +70,12 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
     // ?qa: the challenges play themselves and the lines go fast (screenshots, end-to-end tests)
     if (location.search.includes('qa')) { s.autoplay = true; s.readingScale = 0.12 }
     // ?hold=text: stop on the line that starts with it (art checks of one shot)
-    const hold = new URLSearchParams(location.search).get('hold')
+    const q = new URLSearchParams(location.search)
+    const hold = q.get('hold')
     if (hold) s.holdAt = hold
+    // ?catchup=4: on a software renderer, let each slow frame run up to 4 times more simulation
+    const catchUp = Number(q.get('catchup'))
+    if (catchUp > 1) s.setCatchUp(Math.min(8, catchUp))
     return () => { delete (window as unknown as { __story?: StorySession }).__story }
   }, [s])
   useEffect(() => { if (settings) s?.pause(true) }, [settings, s])
@@ -116,6 +121,7 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
       else if (k === 'dribble') buttons.square = { label: t('controls.dribble'), key: 'R', primary: !st.controls.includes('pass'), ...press(k, 'skill') }
       else if (k === 'diveL') buttons.square = { label: t('controls.diveL'), ...press(k, 'pass') }
       else if (k === 'diveR') buttons.circle = { label: t('controls.diveR'), ...press(k, 'pass') }
+      else if (k === 'draw') buttons.cross = { label: t('controls.draw'), primary: true, key: 'J', onDown: () => { sfx('tap'); s.pressControl('draw') } }
     }
     if (st.stick) buttons.r2 = { label: t('controls.sprint'), key: 'Maj', onDown: () => s.input.touchButton('sprint', true), onUp: () => s.input.touchButton('sprint', false) }
   }
@@ -170,6 +176,7 @@ function Player({ no, title, pov, script, start }: { no: number; title: string; 
         <Manette stick={st.stick} onMove={(x, y) => s!.input.touchMove(x, y)} buttons={buttons} stickLabel={t('controls.stick')} compact={pad} />
       )}
 
+      {st && st.sketch && <SketchPad phase={st.sketch.phase} onDrawn={(ok) => s!.sketchResult(ok)} />}
       {st && st.choices && (
         <div className="absolute inset-x-0 bottom-[22%] z-20 flex flex-wrap justify-center gap-2 px-4">
           {st.choices.map((c) => <button key={c.key} type="button" onClick={() => s!.choose(c.key)} className={cx('min-h-[48px] rounded-full px-5 text-[15px] font-semibold shadow-lg', c.canon ? 'bg-cream text-ink' : 'glass text-cream')}>{t(`choices.${c.key}`)}</button>)}

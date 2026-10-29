@@ -560,6 +560,15 @@ export class Human implements Figure {
     const gloves = new THREE.MeshPhysicalMaterial({ color: look.gloves ?? '#d9cfbd', roughness: 0.7, sheen: 0.4 })
     const cap = new THREE.MeshPhysicalMaterial({ color: look.cap ?? '#6f6a62', roughness: 0.8, sheen: 0.4 })
     this.mats.push(skin, hair, hairEdge, eye, teeth, mouth, shirt, shorts, sockL, sockR, shoe, gloves, cap, dressTop, skirtM, wrap, hatM, flowers, beardM, glassesM, caneM, gold)
+    // after a mud fight: clothes, socks, shoes and hair browned, a little on the skin
+    if (look.mud) {
+      const mudC = new THREE.Color('#5c3522'), k = Math.min(1, look.mud)
+      const tint = (m: THREE.MeshStandardMaterial, f: number) => { m.color.lerp(mudC, Math.min(0.85, k * f)) }
+      for (const m of [shirt, shorts, dressTop, skirtM]) tint(m, 0.5)
+      for (const m of [sockL, sockR, shoe]) tint(m, 0.8)
+      tint(hair, 0.4); tint(hairEdge, 0.4)
+      skin.color.lerp(new THREE.Color('#8a5a40'), k * 0.16)
+    }
     const matFor = (n: string): THREE.Material => {
       if (n === 'body' || n === 'feet' || n === 'calves' || n === 'thighs' || n === 'forearms') return skin
       if (n === 'hair_wrap' || n === 'wrap_knot') return wrap

@@ -16,9 +16,10 @@ export const AVION_MARKS: Marks = {
   gate: { x: 12.5, y: 3 },
   board: { x: 7, y: 0.4 },
   // the cabin: rows along x from 18 to 29, aisle at y = 5, window seats at y = 3.6
-  seatK: { x: 23.2, y: 3.75 },
-  seatB: { x: 23.2, y: 4.35 },
-  window: { x: 23.2, y: 3.15 },
+  // on the cushion of the row at x = 22.95 (its back is at +0.24)
+  seatK: { x: 22.9, y: 3.75 },
+  seatB: { x: 22.9, y: 4.35 },
+  window: { x: 22.9, y: 3.15 },
   aisle: { x: 21, y: 5 },
 }
 
@@ -117,10 +118,57 @@ export function buildAvion(stage: Stage, frame: Frame): SetHandle {
     // clouds in the upper part
     for (let i = 0; i < 26; i++) { g.fillStyle = 'rgba(255,255,255,0.75)'; g.beginPath(); g.ellipse(r() * w, h * 0.3 + r() * h * 0.2, 40 + r() * 90, 12 + r() * 20, 0, 0, Math.PI * 2); g.fill() }
   })
+  viewTex.repeat.set(0.7, 1)
   const view = new THREE.Mesh(new THREE.PlaneGeometry(40, 18), new THREE.MeshBasicMaterial({ map: viewTex, toneMapped: false, fog: false }))
-  view.position.copy(frame.vec(23.5, -6, 0.6)); view.rotation.x = -0.25
+  const viewHome = frame.vec(23.5, -6, 0.6)
+  view.position.copy(viewHome); view.rotation.x = -0.25
   b.object(view); b.disposables.push(viewTex)
+  // « Puis les nuages arrivent, blancs et épais comme le brouillard de Bafoussam »
+  const cloudTex = canvasTexture(512, 256, (g, w, h) => {
+    const r = seeded(31)
+    g.clearRect(0, 0, w, h)
+    for (let i = 0; i < 140; i++) {
+      const x = r() * w, y = h * 0.15 + r() * h * 0.75, rx = 30 + r() * 90, ry = 14 + r() * 30
+      const grd = g.createRadialGradient(x, y, 0, x, y, rx)
+      grd.addColorStop(0, 'rgba(255,255,255,0.55)'); grd.addColorStop(1, 'rgba(255,255,255,0)')
+      g.fillStyle = grd; g.beginPath(); g.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2); g.fill()
+    }
+  })
+  const cloudMat = new THREE.MeshBasicMaterial({ map: cloudTex, transparent: true, opacity: 0, depthWrite: false, toneMapped: false, fog: false })
+  const clouds = new THREE.Mesh(new THREE.PlaneGeometry(26, 9), cloudMat)
+  clouds.position.copy(frame.vec(23.5, -1.6, 1.2))
+  clouds.visible = false
+  b.object(clouds); b.disposables.push(cloudTex)
   const group = b.build()
   stage.scene.add(group)
-  return { group, marks: AVION_MARKS, update() {}, dispose() { stage.scene.remove(group); b.dispose() } }
+  // the flight, moment by moment when the script says so: 'roll' (the ground starts to run past),
+  // 'takeoff' (it rushes, the horizon drops as the nose comes up), 'clouds' (they close over the red earth)
+  let roll = -1, fly = -1, cl = -1
+  const pose = () => {
+    const rolled = roll < 0 ? 0 : 0.1 * THREE.MathUtils.smoothstep(roll, 0, 8)
+    const flown = fly < 0 ? 0 : Math.min(1, fly / 4)
+    viewTex.offset.x = rolled + (0.3 - rolled) * flown * flown
+    const climb = fly < 0 ? 0 : THREE.MathUtils.smoothstep(fly, 1.5, 8)
+    view.position.set(viewHome.x, viewHome.y - climb * 5, viewHome.z)
+    const c = cl < 0 ? 0 : THREE.MathUtils.smoothstep(cl, 0, 5)
+    cloudMat.opacity = c; clouds.visible = c > 0.01
+    clouds.position.x = frame.vec(23.5 - Math.min(30, Math.max(0, cl)) * 0.25, 0).x
+  }
+  return {
+    group, marks: AVION_MARKS,
+    update(dt) {
+      if (roll < 0 && fly < 0 && cl < 0) return
+      if (roll >= 0) roll += dt
+      if (fly >= 0) fly += dt
+      if (cl >= 0) cl += dt
+      pose()
+    },
+    cue(name) {
+      if (name === 'roll') roll = 0
+      else if (name === 'takeoff') { roll = Math.max(roll, 8); fly = 0 }
+      else if (name === 'clouds') { roll = Math.max(roll, 8); fly = Math.max(fly, 8); cl = 0 }
+      pose()
+    },
+    dispose() { stage.scene.remove(group); b.dispose() },
+  }
 }
