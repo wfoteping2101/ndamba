@@ -54,6 +54,7 @@ def split_piece(p: Piece, faces: list[int], name: str) -> Piece:
 
 
 EARS = np.zeros(0)
+BODY_DECIMATE = 0.5      # share of the body's faces kept (the Unity export keeps more)
 LIPS = np.zeros(0)
 
 
@@ -260,7 +261,7 @@ def build(name: str, preview=False, export=True):
     # the seams with the limb pieces stay where they are (no cracks)
     for v in mh.boundary_verts(body_piece.F):
         head[v] = True
-    blend.decimate(objs['body'], 0.5, protect=head)
+    blend.decimate(objs['body'], BODY_DECIMATE, protect=head)
     # garments are not decimated where they would tear (hems, cuffs); the closed, dense pieces (socks,
     # scalp hair, bare feet, gloves, crowns) lose half their triangles with their borders kept in place
     for n in ('sock_l', 'sock_r', 'hair_crop', 'hair_afro', 'hair_wrap', 'feet', 'glove_l', 'glove_r', 'cap_crown', 'hat_crown'):
