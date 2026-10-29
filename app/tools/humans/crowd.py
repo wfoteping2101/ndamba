@@ -55,7 +55,7 @@ def region_of(name: str) -> float:
     return REGION['skin']
 
 
-def bake(name: str):
+def bake(name: str, fbx_dir: str | None = None):
     arch, clip, t, keep = VARIANTS[name][:4]
     target_tris = VARIANTS[name][4] if len(VARIANTS[name]) > 4 else 2600
     arm, objs = BLD.build(arch, export=False)
@@ -102,6 +102,17 @@ def bake(name: str):
     if tris > target_tris:
         blend.decimate(ob, target_tris / tris)
     tris = sum(len(p.vertices) - 2 for p in ob.data.polygons)
+    if fbx_dir:
+        # the Unity match game: FBX, the region code in the vertex colours, no uvs
+        os.makedirs(fbx_dir, exist_ok=True)
+        bpy.ops.object.select_all(action='DESELECT')
+        ob.select_set(True)
+        bpy.ops.export_scene.fbx(filepath=os.path.join(fbx_dir, f'crowd_{name}.fbx'), use_selection=True, object_types={'MESH'},
+                                 axis_forward='-Z', axis_up='Y', apply_unit_scale=True, apply_scale_options='FBX_SCALE_ALL',
+                                 mesh_smooth_type='FACE', colors_type='LINEAR', bake_anim=False)
+        print(f'[crowd {name}] {tris} tris -> fbx')
+        bpy.data.objects.remove(ob)
+        return {'seat': round(seat, 3), 'kid': arch in ('boy', 'girl', 'boyLean', 'boyBig')}
     os.makedirs(OUT, exist_ok=True)
     bpy.ops.object.select_all(action='DESELECT')
     ob.select_set(True)
