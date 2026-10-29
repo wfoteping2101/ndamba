@@ -9,17 +9,29 @@ import type { DrillGameplay } from './types'
 
 /** The carrier waits for the user's pass; it shields and carries a little, it never passes by itself. */
 export class UserCarrierBrain implements Brain {
-  constructor(private fallback: Brain) {}
+  /** carry: in games to goals, the carrier runs into free space by himself */
+  constructor(private fallback: Brain, private carry = false) {}
   think(w: World, me: Player) {
     if (w.ball.owner !== me.id) { this.fallback.think(w, me); return }
     if (me.pending) return
+    me.meta.heldFor = ((me.meta.heldFor as number) ?? 0) + 0.1
+    let near: Player | null = null, nd = 99
+    for (const o of w.opponents(me)) { const d = Math.hypot(o.pos.x - me.pos.x, o.pos.y - me.pos.y); if (d < nd) { nd = d; near = o } }
+    // free in front: carry the ball towards the goal (the user still decides every pass and shot)
+    const side = w.sideOf(me) ?? 'a'
+    const goal = w.pitch.goalFor[side]
+    if (this.carry && goal && (!near || nd > 5.5) && Math.hypot(goal.x - me.pos.x, goal.y - me.pos.y) > (goal.mini ? 6 : 14)) {
+      const d = { x: goal.x - me.pos.x, y: goal.y - me.pos.y }
+      const l = Math.hypot(d.x, d.y) || 1
+      me.target = { x: me.pos.x + (d.x / l) * 4, y: me.pos.y + (d.y / l) * 4 }
+      me.speedMode = 0.55
+      me.faceTarget = null
+      return
+    }
     // the ball ran a little ahead: go and put a foot on it
     const fb = w.foot(me)
     if (Math.hypot(w.ball.pos.x - fb.x, w.ball.pos.y - fb.y) > 0.8) { me.target = w.ball2(); me.speedMode = 0.6; me.faceTarget = null; return }
-    me.meta.heldFor = ((me.meta.heldFor as number) ?? 0) + 0.1
     // shield: keep the body between the ball and the nearest opponent, small steps only
-    let near: Player | null = null, nd = 99
-    for (const o of w.opponents(me)) { const d = Math.hypot(o.pos.x - me.pos.x, o.pos.y - me.pos.y); if (d < nd) { nd = d; near = o } }
     if (near && nd < 4) {
       const away = { x: me.pos.x - near.pos.x, y: me.pos.y - near.pos.y }
       const l = Math.hypot(away.x, away.y) || 1
@@ -54,8 +66,10 @@ export function assignBrains(w: World, o: SetupOpts) {
     else if (ours(p)) {
       const support: Brain = g?.mode === 'pattern' || o.demo ? new HoldBrain() : new SupportBrain({ roam: Math.min(6, Math.max(2.5, Math.min(w.pitch.w, w.pitch.h) / 6)) })
       // in a demonstration the director makes every pass; with the user, the user does
+      // the carrier runs with the ball by himself only where the rules let him take touches
+      const toGoals = !!g && ['ssg', 'phase', 'transition', 'finishing'].includes(g.mode) && !(g.touches && g.touches <= 3)
       const carrier: Brain = o.user || o.demo
-        ? new UserCarrierBrain(support)
+        ? new UserCarrierBrain(support, o.user && toGoals)
         : new CarrierBrain(support, { maxTouches, intention: 'progresser' })
       brain = new PhaseBrain(carrier, support, p.team === 'n' ? support : new DefenderBrain({ passive: false }))
     } else {

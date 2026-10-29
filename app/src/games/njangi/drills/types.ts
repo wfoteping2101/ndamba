@@ -92,6 +92,10 @@ export interface DrillGameplay {
   neutralTouches?: number
   /** the set length used in the game, in seconds (sets are shortened from the sheet; the sheet's value stays in `source`) */
   duration?: number
+  /** seconds allowed for one attempt (attempts targets); defaults to the size of the area */
+  attemptSeconds?: number
+  /** points an attempt must earn to count as a success (default 1) */
+  successNeeds?: number
   target: Target
   scoring: ScoreEvent[]
   restart: Restart

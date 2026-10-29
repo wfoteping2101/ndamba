@@ -49,10 +49,14 @@ export class Tagger {
     this.off = w.on((e) => this.onEvent(e))
   }
 
+  /** called synchronously for every coded action (the drill scorer listens) */
+  onCode: ((a: TaggedAction) => void) | null = null
   private add(side: string | null | undefined, code: EventCode, by: string | null, at: V2) {
     if (side !== 'a' && side !== 'b') return
     this.counts[side][code]++
-    this.log.push({ t: this.w.t, code, side, by, at: { ...at } })
+    const a = { t: this.w.t, code, side, by, at: { ...at } }
+    this.log.push(a)
+    this.onCode?.(a)
   }
   private sideOfTeam(team: string | null | undefined): 'a' | 'b' | null {
     if (team === 'a' || team === 'b') return team

@@ -35,7 +35,13 @@
     "loading": "Le terrain se prépare",
     "webglTitle": "Ce navigateur n'affiche pas la 3D",
     "webglBody": "Les jeux Ndamba ont besoin de WebGL. Essayez un navigateur récent, ou activez l'accélération matérielle.",
-    "cams": { "tactical": "Tactique", "broadcast": "Télévision", "player": "Joueur", "cinematic": "Cinéma", "free": "Libre" }
+    "cams": {
+      "tactical": "Tactique",
+      "broadcast": "Télévision",
+      "player": "Joueur",
+      "cinematic": "Cinéma",
+      "free": "Libre"
+    }
   },
   "settings": {
     "title": "Réglages",
@@ -44,12 +50,20 @@
     "mute": "Couper le son",
     "ambience": "Ambiance",
     "quality": "Qualité graphique",
-    "qualities": { "low": "Économe", "medium": "Équilibrée", "high": "Haute" },
+    "qualities": {
+      "low": "Économe",
+      "medium": "Équilibrée",
+      "high": "Haute"
+    },
     "qualityHint": "La qualité baisse toute seule si l'image saccade.",
     "reducedMotion": "Réduire les animations",
     "subtitles": "Sous-titres",
     "subtitleSize": "Taille des sous-titres",
-    "sizes": { "s": "Petite", "m": "Moyenne", "l": "Grande" },
+    "sizes": {
+      "s": "Petite",
+      "m": "Moyenne",
+      "l": "Grande"
+    },
     "controls": "Commandes",
     "close": "Fermer"
   },
@@ -73,7 +87,11 @@
     "touch": "Tactile",
     "mouse": "Souris"
   },
-  "levels": { "facile": "Facile", "normal": "Normal", "difficile": "Difficile" },
+  "levels": {
+    "facile": "Facile",
+    "normal": "Normal",
+    "difficile": "Difficile"
+  },
   "levelHint": {
     "facile": "Défenseurs lents, couloirs de passe dessinés.",
     "normal": "Défenseurs du livre, sans aide visuelle.",
@@ -87,12 +105,30 @@
     "indiceEmpty": "Jouez un exercice pour obtenir un premier Indice.",
     "indiceSource": "Calculé avec la formule du chapitre 32 du livre.",
     "modes": {
-      "academie": { "title": "Académie Njangi", "body": "Les 64 exercices du livre, chacun devenu une leçon : consigne, démonstration, essai, correction." },
-      "tableau": { "title": "Tableau du coach", "body": "Placez les joueurs, dessinez les flèches, puis regardez votre idée prendre vie en 3D." },
-      "lecture": { "title": "Lecture du jeu", "body": "Le jeu se fige. Choisissez l'intention, puis le receveur. La géométrie juge." },
-      "dixPasses": { "title": "Défi des dix passes", "body": "Du gardien au but en dix passes, contre un bloc qui défend." },
-      "analyse": { "title": "Analyse vidéo", "body": "Revoyez vos actions au ralenti, image par image, avec les trajectoires." },
-      "parcours": { "title": "Parcours de formation", "body": "Vos compétences, vos progrès et le prochain exercice à travailler." }
+      "academie": {
+        "title": "Académie Njangi",
+        "body": "Les 64 exercices du livre, chacun devenu une leçon : consigne, démonstration, essai, correction."
+      },
+      "tableau": {
+        "title": "Tableau du coach",
+        "body": "Placez les joueurs, dessinez les flèches, puis regardez votre idée prendre vie en 3D."
+      },
+      "lecture": {
+        "title": "Lecture du jeu",
+        "body": "Le jeu se fige. Choisissez l'intention, puis le receveur. La géométrie juge."
+      },
+      "dixPasses": {
+        "title": "Défi des dix passes",
+        "body": "Du gardien au but en dix passes, contre un bloc qui défend."
+      },
+      "analyse": {
+        "title": "Analyse vidéo",
+        "body": "Revoyez vos actions au ralenti, image par image, avec les trajectoires."
+      },
+      "parcours": {
+        "title": "Parcours de formation",
+        "body": "Vos compétences, vos progrès et le prochain exercice à travailler."
+      }
     },
     "continue": "Reprendre",
     "next": "Prochain conseillé"
@@ -158,7 +194,8 @@
       "goals": "{{n}} sur {{target}} buts",
       "sequences": "{{n}} sur {{target}} séquences",
       "regains": "{{n}} sur {{target}} récupérations",
-      "attempts": "Essai {{n}} sur {{total}}, {{ok}} réussi(s)",
+      "attempts_one": "Essai {{n}} sur {{total}}, {{count}} réussi",
+      "attempts_other": "Essai {{n}} sur {{total}}, {{count}} réussis",
       "time": "Temps"
     },
     "tipDecisions": "Touchez un partenaire pour lui passer le ballon. Au clavier : direction puis Espace.",
@@ -259,5 +296,226 @@
       "blocked": "Passe contrée",
       "stopped": "Le ballon s'est arrêté"
     }
+  },
+  "intentions": {
+    "sortir": {
+      "name": "Sortir",
+      "short": "Sortir du pressing",
+      "book": "Sortir : le ballon est chez le gardien ou les défenseurs et l'adversaire presse ; c'est fini quand l'homme libre reçoit derrière la première ligne. « Sortir court est un moyen, pas un dogme. » (chapitre 5)"
+    },
+    "progresser": {
+      "name": "Progresser",
+      "short": "Traverser une ligne",
+      "book": "Progresser : un partenaire peut recevoir face au jeu avec de l'espace, libre entre les lignes, ou la profondeur s'ouvre ; on regarde devant d'abord. (chapitre 5)"
+    },
+    "fixer": {
+      "name": "Fixer",
+      "short": "Attirer pour libérer",
+      "book": "Fixer : la ligne devant est fermée ou le bloc a glissé ; on attire d'un côté pour libérer un partenaire de l'autre. (chapitre 5)"
+    },
+    "finir": {
+      "name": "Finir",
+      "short": "Tirer, servir dans la surface",
+      "book": "Finir : le ballon entre dans le dernier tiers avec un avantage ; on tire dans la zone de finition ou on sert un partenaire au bord de la surface. (chapitre 5)"
+    },
+    "respirer": {
+      "name": "Respirer",
+      "short": "Garder sans risque",
+      "book": "Respirer : garder le ballon par la passe la plus sûre et faire courir l'adversaire. « respirer n'est pas subir, c'est faire courir l'adversaire » (chapitre 5)"
+    }
+  },
+  "lecture": {
+    "title": "Lecture du jeu",
+    "eyebrow": "Le jeu se fige",
+    "question": "Que prépare ta passe ?",
+    "intro": "Une situation réelle s'arrête au moment où notre joueur reçoit le ballon. Vous lisez le jeu comme le livre l'apprend : d'abord l'intention, ensuite le receveur. La géométrie des couloirs de passe juge, puis l'action se joue.",
+    "step1": "Choisissez l'intention parmi les cinq du Code Njangi.",
+    "step2": "Touchez le partenaire qui la sert, ou le but pour frapper.",
+    "step3": "Lisez la correction, puis regardez la suite de l'action.",
+    "start": "Commencer la série",
+    "chapter": "Chapitre 5 : les cinq intentions",
+    "progress": "Situation {{n}} sur {{total}}, {{score}} points",
+    "askIntention": "Que prépare ta passe ?",
+    "askReceiver": "{{intention}} : à qui ? Touchez le partenaire.",
+    "tapHint": "Touchez un partenaire numéroté (touches 1 à 9 au clavier).",
+    "shoot": "Frapper",
+    "grade": {
+      "0": "À revoir",
+      "1": "Pas encore",
+      "2": "Bonne idée, mauvaise passe",
+      "3": "Bien lu",
+      "4": "Lecture parfaite"
+    },
+    "points_one": "{{count}} point sur {{max}}",
+    "points_other": "{{count}} points sur {{max}}",
+    "check": {
+      "intention": "Intention possible ici",
+      "best": "L'intention la plus forte : {{best}}",
+      "serves": "Le choix sert l'intention",
+      "lane": "Couloir de passe ouvert"
+    },
+    "notes": {
+      "notValid": {
+        "sortir": "Personne ne presse ici : il n'y a rien à quoi sortir.",
+        "progresser": "Aucune passe vers l'avant n'est ouverte avec de l'espace à l'arrivée.",
+        "fixer": "La ligne devant n'est pas fermée : inutile d'attirer, on peut avancer.",
+        "finir": "Pas d'avantage pour finir : trop loin, ou l'angle est fermé.",
+        "respirer": "Respirer ici, sous la pression et près de notre but, c'est jouer avec le feu."
+      },
+      "betterIntention": "L'intention la plus forte ici était {{best}}.",
+      "shotFar": "Frappe de trop loin : la zone de finition est plus près du but.",
+      "shotBlocked": "Un défenseur ferme l'axe de la frappe.",
+      "laneClosed": "Couloir fermé : {{who}} coupe la ligne de passe.",
+      "laneTight": "Couloir serré : la passe passe de justesse.",
+      "pressedOnArrival": "Le receveur sera pressé à l'arrivée du ballon.",
+      "lineCrossed": "La passe traverse une ligne adverse.",
+      "forcedLine": "Passe forcée dans une ligne fermée : la perte la plus dangereuse de toutes.",
+      "sidewaysGood": "Une passe latérale est juste quand elle sert Fixer ou Respirer.",
+      "notServing": {
+        "sortir": "Ce choix ne trouve pas l'homme libre derrière la première ligne.",
+        "progresser": "Ce choix ne fait pas avancer le ballon.",
+        "fixer": "Ce choix n'attire personne et ne renverse pas.",
+        "finir": "Ce choix n'amène ni frappe ni ballon dans la surface.",
+        "respirer": "Ce choix prend un risque : respirer, c'est la passe la plus sûre."
+      }
+    },
+    "legend": "Sur le terrain : votre passe en or, la meilleure réponse en pointillés, les couloirs en vert (ouvert), jaune (serré) et rouge (fermé).",
+    "playOut": "Voir la suite",
+    "next": "Situation suivante",
+    "finish": "Voir le bilan",
+    "summaryEyebrow": "Bilan de la série",
+    "summaryScore": "{{n}} points sur {{max}}",
+    "summaryHigh": "Vous lisez le jeu avec les yeux du Code Njangi.",
+    "summaryMid": "La lecture vient. Revoyez les intentions manquées dans le chapitre 5.",
+    "summaryLow": "Prenez le temps : regardez d'abord devant, puis demandez-vous ce que prépare la passe.",
+    "table": {
+      "intention": "Intention attendue",
+      "found": "Trouvée"
+    },
+    "again": "Nouvelle série"
+  },
+  "dix": {
+    "title": "Défi des dix passes",
+    "subtitle": "Du gardien au filet : le but du Njangi",
+    "objective": "Partir du gardien, faire voyager le ballon par au moins dix passes réussies, puis marquer. Tout le monde verse sa part : si les onze ont touché le ballon, la caisse est pleine.",
+    "rules": [
+      "Le ballon part du gardien.",
+      "Au moins dix passes réussies avant le but ; un but avec moins de passes ne compte pas pour le défi.",
+      "À chaque perte, la séquence repart du gardien (fiche G06, partie 2).",
+      "Six adversaires défendent : deux attaquants, un milieu, trois défenseurs, et leur gardien.",
+      "Bonus : tous nos joueurs ont touché le ballon dans la séquence."
+    ],
+    "adaptation": "Défi du jeu inspiré de la Leçon du Ballon n°40 « Le but du Njangi » (Lionceaux, tome 1) et de la fiche G06 du Code Njangi. Le compte de dix passes est une règle du jeu : le livre fait toucher les onze joueurs, la fiche en demande au moins huit.",
+    "lessonLink": "Leçon du Ballon n°40 dans le tome 1",
+    "passes": "{{n}} passes",
+    "touched": "{{n}} joueurs sur 11"
+  },
+  "tableau": {
+    "title": "Tableau du coach",
+    "sub": "Dessinez, puis jouez en 3D",
+    "tabs": {
+      "board": "Tableau",
+      "3d": "Terrain 3D"
+    },
+    "tools": {
+      "label": "Outils",
+      "move": "Déplacer",
+      "a": "Ajouter un joueur de notre équipe",
+      "b": "Ajouter un adversaire",
+      "n": "Ajouter un neutre",
+      "ball": "Donner le ballon",
+      "pass": "Passe",
+      "run": "Course (appel)",
+      "dribble": "Conduite ou dribble",
+      "shot": "Frappe",
+      "erase": "Effacer"
+    },
+    "help": {
+      "move": "Faites glisser un joueur pour le placer.",
+      "a": "Touchez le terrain pour ajouter un joueur de notre équipe.",
+      "b": "Touchez le terrain pour ajouter un adversaire.",
+      "n": "Touchez le terrain pour ajouter un neutre.",
+      "ball": "Touchez le joueur qui a le ballon au départ.",
+      "pass": "Touchez le passeur, puis le receveur ou un espace.",
+      "run": "Touchez le joueur, puis l'endroit où il court.",
+      "dribble": "Touchez le porteur, puis l'endroit où il conduit le ballon.",
+      "shot": "Touchez le tireur, puis le point visé dans le but.",
+      "erase": "Touchez un joueur ou une flèche pour l'effacer."
+    },
+    "together": "En même temps que l'action précédente",
+    "undo": "Annuler",
+    "clear": "Tout effacer",
+    "size": "Terrain",
+    "sizes": {
+      "g20": "Carré de 20 x 15 m",
+      "g40": "Carré de 40 x 30 m",
+      "g60": "Carré de 60 x 40 m",
+      "third": "Dernier tiers",
+      "half": "Demi-terrain",
+      "full": "Terrain entier"
+    },
+    "template": "Partir d'un schéma des livres",
+    "pickTemplate": "Choisir un schéma",
+    "lesson": "Leçon du Ballon n°{{n}} : {{title}}",
+    "share": "Copier le lien du tableau",
+    "copied": "Lien copié",
+    "play": "Jouer en 3D",
+    "stop": "Revenir au tableau",
+    "reset": "Rejouer",
+    "opposition": "Adversaires",
+    "opp": {
+      "shadow": "Mannequins",
+      "live": "Défenseurs actifs"
+    },
+    "playing": "Action {{n}} sur {{total}}",
+    "done": "L'idée passe : toute la séquence est jouée.",
+    "failed": "L'idée ne passe pas : {{reason}}.",
+    "passLine": "{{from}} vers {{to}}",
+    "space": "l'espace",
+    "open": "couloir ouvert ({{s}} s d'avance)",
+    "tight": "couloir serré ({{s}} s)",
+    "closed": "couloir fermé par {{who}}",
+    "lines_one": "{{count}} ligne traversée",
+    "lines_other": "{{count}} lignes traversées",
+    "lost": "ballon perdu",
+    "boardLabel": "Tableau : {{players}} joueurs, {{arrows}} actions"
+  },
+  "analyse": {
+    "title": "Analyse vidéo",
+    "intro": "Chaque essai de l'Académie et du Défi est enregistré. Revoyez-le au ralenti, image par image, avec la trajectoire du ballon, les couloirs de passe du porteur et les lignes adverses : les arrêts sur image du chapitre 6, sur vos propres actions.",
+    "emptyTitle": "Aucune action enregistrée pour l'instant",
+    "emptyBody": "Jouez un exercice : votre essai sera prêt à être analysé ici. Les six derniers sont gardés sur cet appareil.",
+    "timeline": "Ligne du temps",
+    "play": "Lecture",
+    "prevEvent": "Action précédente",
+    "nextEvent": "Action suivante",
+    "frameBack": "Image précédente",
+    "frameForward": "Image suivante",
+    "speed": "Vitesse",
+    "layers": {
+      "ball": "Trajectoire du ballon",
+      "lanes": "Couloirs de passe",
+      "lines": "Lignes adverses",
+      "path": "Course du joueur"
+    },
+    "hint": "Touchez un joueur pour suivre sa course. Clavier : Espace, flèches (Maj pour 10 images), C pour la caméra."
+  },
+  "parcours": {
+    "title": "Parcours de formation",
+    "stars": "{{n}} étoiles sur {{max}}",
+    "intro": "Chaque fiche du livre entraîne des compétences et des intentions précises. Vos étoiles de l'Académie dessinent ici votre parcours, et le jeu vous propose l'exercice qui fait le plus progresser.",
+    "next": "À travailler maintenant : {{skill}}",
+    "skills": "Les dix compétences",
+    "skillsHint": "Part des étoiles gagnées sur les exercices qui entraînent chaque compétence. Niveaux 1 à 4, comme la grille du livre, mesurés ici sur le jeu.",
+    "level": "niveau {{n}}",
+    "intentions": "Les intentions et les réflexes",
+    "intentionsHint": "Exercices réussis parmi ceux qui travaillent chaque intention.",
+    "indiceTrend": "Évolution de l'Indice Njangi",
+    "none": "Pas encore joué.",
+    "goLecture": "Faire une série",
+    "goDix": "Relever le défi",
+    "dixDone": "Défi réussi",
+    "dixTried": "{{n}} essais",
+    "note": "Ces niveaux mesurent ce que vous réussissez dans le jeu ; ils ne remplacent pas l'évaluation de l'entraîneur sur le terrain."
   }
 }

@@ -23,7 +23,7 @@ export default function Lesson() {
   const { id } = useParams()
   const drill = lessonDrill(id)
   if (!drill) return <NotFound />
-  return <LessonInner key={drill.id} drill={drill} />
+  return <LessonScreen key={drill.id} drill={drill} />
 }
 
 function NotFound() {
@@ -31,10 +31,20 @@ function NotFound() {
   return <GameFrame><TopBar back="/jeux/code-njangi/academie" title={t('academie.title')} /></GameFrame>
 }
 
-function LessonInner({ drill }: { drill: Drill }) {
+export interface LessonScreenProps {
+  drill: Drill
+  /** rules other than the sheet's own (Défi des dix passes) */
+  g?: DrillGameplay
+  back?: string
+  sheet?: { href: string; label: string }
+  /** show the running sequence: passes and players who touched it */
+  chain?: boolean
+}
+
+export function LessonScreen({ drill, g: given, back = '/jeux/code-njangi/academie', sheet, chain }: LessonScreenProps) {
   const { t, lang } = useT('jeux')
   const text: DrillText = lang === 'en' ? drill.en : drill.fr
-  const g = useMemo(() => gameplayFor(drill), [drill])
+  const g = useMemo(() => given ?? gameplayFor(drill), [drill, given])
   useDocumentTitle(`${drill.id} ${text.title}`)
   const [level, setLevel] = useState<Level>('normal')
   const [control, setControl] = useState<'decisions' | 'carrier'>(g.control)
@@ -74,7 +84,7 @@ function LessonInner({ drill }: { drill: Drill }) {
       <div ref={ref} className="absolute inset-0" data-testid="game-canvas" />
       {!webgl && <NoWebGL />}
       {webgl && !st && !error && <Spinner label={t('shell.loading')} />}
-      <TopBar back="/jeux/code-njangi/academie" title={<><span className="text-sun-300">{drill.id}</span> {text.title}</>} sub={st ? t(`levels.${st.level}`) : undefined}
+      <TopBar back={back} title={<>{!given && <span className="text-sun-300">{drill.id} </span>}{text.title}</>} sub={st ? t(`levels.${st.level}`) : undefined}
         right={st && <>
           <RoundButton label={`${t('shell.camera')} (${t(`shell.cams.${st.camera}`)})`} onClick={() => session!.cycleCamera()}><Camera size={19} strokeWidth={1.75} /></RoundButton>
           {st.phase === 'play' && <RoundButton label={st.paused ? t('shell.resume') : t('shell.pause')} onClick={() => session!.pause(!st.paused)} active={st.paused}>{st.paused ? <Play size={19} strokeWidth={1.75} /> : <Pause size={19} strokeWidth={1.75} />}</RoundButton>}
@@ -82,7 +92,7 @@ function LessonInner({ drill }: { drill: Drill }) {
         </>} />
 
       {st && session && st.phase === 'brief' && (
-        <Brief panelRef={setPanelEl} drill={drill} text={text} g={g} level={level} setLevel={setLevel} control={control} setControl={setControl}
+        <Brief panelRef={setPanelEl} sheet={sheet ?? { href: sheetUrl(drill), label: t('academie.sheet') }} drill={drill} text={text} g={g} level={level} setLevel={setLevel} control={control} setControl={setControl}
           onDemo={() => { sfx('tap'); session.startDemo() }} onPlay={() => { sfx('whistle'); session.startPlay() }} />
       )}
 
@@ -105,10 +115,10 @@ function LessonInner({ drill }: { drill: Drill }) {
         </div>
       )}
 
-      {st && session && st.phase === 'play' && <PlayHud session={session} g={g} touch={touch} control={control} />}
+      {st && session && st.phase === 'play' && <PlayHud session={session} g={g} touch={touch} control={control} chain={chain} />}
 
       {st && session && st.phase === 'result' && st.result && (
-        <Result r={st.result} drill={drill} text={text} next={next}
+        <Result r={st.result} drill={drill} text={text} next={given ? undefined : next} back={back}
           onRetry={() => session.startPlay()}
           onNextLevel={(l) => { setLevel(l); session.setLevel(l); session.startPlay() }}
           onNext={() => next && nav(`/jeux/code-njangi/academie/${next.id}`)}
@@ -132,8 +142,9 @@ function targetText(t: (k: string, o?: Record<string, unknown>) => string, g: Dr
   return t(`lesson.target.${tg.kind}`, { n: tg.value })
 }
 
-function Brief({ panelRef, drill, text, g, level, setLevel, control, setControl, onDemo, onPlay }: {
+function Brief({ panelRef, sheet, drill, text, g, level, setLevel, control, setControl, onDemo, onPlay }: {
   panelRef: (el: HTMLElement | null) => void
+  sheet: { href: string; label: string }
   drill: Drill; text: DrillText; g: DrillGameplay; level: Level; setLevel: (l: Level) => void; control: 'decisions' | 'carrier'; setControl: (c: 'decisions' | 'carrier') => void; onDemo: () => void; onPlay: () => void
 }) {
   const { t } = useT('jeux')
@@ -183,22 +194,22 @@ function Brief({ panelRef, drill, text, g, level, setLevel, control, setControl,
           <button type="button" className="btn-outline-light flex-1" onClick={onDemo}>{t('lesson.demo')}</button>
           <button type="button" className="btn-sun flex-1" onClick={onPlay}>{t('lesson.play')}</button>
         </div>
-        <a href={sheetUrl(drill)} className="mt-3 inline-flex min-h-[44px] items-center gap-2 text-[14px] font-semibold text-cream/75 hover:text-cream">
-          <BookOpen size={16} strokeWidth={1.75} aria-hidden="true" />{t('academie.sheet')}
+        <a href={sheet.href} className="mt-3 inline-flex min-h-[44px] items-center gap-2 text-[14px] font-semibold text-cream/75 hover:text-cream">
+          <BookOpen size={16} strokeWidth={1.75} aria-hidden="true" />{sheet.label}
         </a>
       </Panel></div>
     </div>
   )
 }
 
-function PlayHud({ session, g, touch, control }: { session: LessonSession; g: DrillGameplay; touch: boolean; control: 'decisions' | 'carrier' }) {
+function PlayHud({ session, g, touch, control, chain }: { session: LessonSession; g: DrillGameplay; touch: boolean; control: 'decisions' | 'carrier'; chain?: boolean }) {
   const { t } = useT('jeux')
   const st = useStore(session)!
   const [tip, setTip] = useState(true)
   useEffect(() => { const k = window.setTimeout(() => setTip(false), 6000); return () => window.clearTimeout(k) }, [])
   const tg = g.target
   const hud = tg.kind === 'attempts'
-    ? t('lesson.hud.attempts', { n: Math.min(st.attempts + 1, tg.attempts), total: tg.attempts, ok: st.successes })
+    ? t('lesson.hud.attempts', { n: Math.min(st.attempts + 1, tg.attempts), total: tg.attempts, count: st.successes })
     : t(`lesson.hud.${tg.kind}`, { n: tg.kind === 'points' ? st.points : tg.kind === 'goals' ? session.scorer?.goals ?? 0 : tg.kind === 'sequences' ? session.scorer?.sequences ?? 0 : session.scorer?.regains ?? 0, target: tg.value })
   const carrierMode = control === 'carrier' && g.mode !== 'pattern'
   const hintWho = st.hint ? session.world.get(st.hint)?.label ?? st.hint : null
@@ -210,6 +221,9 @@ function PlayHud({ session, g, touch, control }: { session: LessonSession; g: Dr
           {st.timeLeft !== null && <span className="text-[14px] tabular-nums text-cream/70">{Math.ceil(st.timeLeft)} s</span>}
           <span className="relative h-1.5 w-20 overflow-hidden rounded-full bg-white/15" aria-hidden="true"><span className="absolute inset-y-0 left-0 rounded-full bg-sun-500 transition-[width]" style={{ width: `${Math.round(st.progress * 100)}%` }} /></span>
         </div>
+        {chain && <div className="glass flex items-center gap-3 rounded-full px-4 py-1.5 text-[13.5px] tabular-nums" data-testid="chain">
+          <span>{t('dix.passes', { n: st.chainPasses })}</span><span className="text-cream/50">|</span><span>{t('dix.touched', { n: st.chainTouched })}</span>
+        </div>}
         {st.banner && <div className={cx('rounded-full px-5 py-2.5 text-[17px] font-semibold shadow-lg', st.banner.tone === 'good' ? 'bg-forest-600 text-white' : 'bg-clay-500 text-white')} role="status">{t(st.banner.key)}</div>}
         {hintWho && <div className="glass rounded-full px-4 py-2 text-[14px]" role="status">{t('lesson.hint', { who: hintWho })}</div>}
       </div>
@@ -249,7 +263,7 @@ function PlayHud({ session, g, touch, control }: { session: LessonSession; g: Dr
   )
 }
 
-function Result({ r, drill, text, next, onRetry, onNextLevel, onNext, onBrief }: { r: LessonResult; drill: Drill; text: DrillText; next?: Drill; onRetry: () => void; onNextLevel: (l: Level) => void; onNext: () => void; onBrief: () => void }) {
+function Result({ r, drill, text, next, back, onRetry, onNextLevel, onNext, onBrief }: { r: LessonResult; drill: Drill; text: DrillText; next?: Drill; back: string; onRetry: () => void; onNextLevel: (l: Level) => void; onNext: () => void; onBrief: () => void }) {
   const { t, lang } = useT('jeux')
   const { t: ta } = useT('analysis')
   const li = LEVELS.indexOf(r.level)
@@ -305,7 +319,7 @@ function Result({ r, drill, text, next, onRetry, onNextLevel, onNext, onBrief }:
             : next ? <button type="button" className="btn-sun" onClick={onNext}>{t('lesson.result.nextDrill')}</button>
               : <button type="button" className="btn-sun" onClick={onBrief}>{t('lesson.demo')}</button>}
           {r.replay && <Link to={`/jeux/code-njangi/analyse?dernier=${drill.id}`} className="btn-outline-light">{t('lesson.result.replay')}</Link>}
-          <Link to="/jeux/code-njangi/academie" className="btn-outline-light">{t('lesson.result.backToList')}</Link>
+          <Link to={back} className="btn-outline-light">{t('shell.back')}</Link>
         </div>
       </Panel>
     </div>

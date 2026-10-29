@@ -9,7 +9,7 @@ it.skipIf(!process.env.DEMO_DEBUG)('debug one demo', () => {
   for (const id of (process.env.DEMO_DEBUG ?? '').split(',')) {
     const d = DRILLS.find((x) => x.id === id)!
     const g = gameplayFor(d)
-    const sc = buildScenario(diagramOf(d, g.diagram), { seed: 11 })
+    const sc = buildScenario(diagramOf(d, g.diagram), { seed: +(process.env.SEED ?? 11) })
     const w = sc.world
     assignBrains(w, { gameplay: g, level: 'facile', user: false, demo: true })
     const dir = new SequenceDirector(w, sc.steps, { speed: 0.9 })
@@ -33,7 +33,7 @@ it.skipIf(!process.env.DEMO_TRACE)('trace positions', () => {
   const id = process.env.DEMO_TRACE!
   const d = DRILLS.find((x) => x.id === id)!
   const g = gameplayFor(d)
-  const sc = buildScenario(diagramOf(d, g.diagram), { seed: 11 })
+  const sc = buildScenario(diagramOf(d, g.diagram), { seed: +(process.env.SEED ?? 11) })
   const w = sc.world
   assignBrains(w, { gameplay: g, level: 'facile', user: false, demo: true })
   const dir = new SequenceDirector(w, sc.steps, { speed: 0.9 })

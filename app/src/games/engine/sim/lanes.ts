@@ -1,7 +1,7 @@
 // Passing-lane geometry. For a pass from the ball to a target, compare the ball's arrival time at
 // every point of its path with the earliest time each opponent can get there. A positive margin
 // means the lane is open. This drives the AI's choices and the explanations given to the player.
-import { groundPassSpeed, rollTimeTo } from './ball'
+import { firmArrive, groundPassSpeed, rollTimeTo } from './ball'
 import { clamp, dist2, dot2, norm2, pointSegment, sub2, type V2 } from './math'
 import { attackTarget, inBox, inFinalThird, type PitchGeom } from './pitch'
 import type { Player } from './types'
@@ -86,9 +86,9 @@ export function analysePass(w: World, passer: Player, target: V2, receiver: Play
   const from = w.ball2()
   const side = (w.sideOf(passer) ?? 'a') as 'a' | 'b'
   const opps = w.opponents(passer)
-  const arrive = opts.arrive ?? 5.5
   const reaction = opts.reaction ?? w.diff.reaction
   const d = dist2(from, target)
+  const arrive = opts.arrive ?? firmArrive(d)
   const v0 = groundPassSpeed(d, arrive, w.pitch.surface)
   const time = rollTimeTo(v0, d, w.pitch.surface)
   // sample the path

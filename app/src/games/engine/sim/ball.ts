@@ -66,6 +66,9 @@ export function rollTimeTo(v0: number, d: number, s: Surface) {
   }
   return hi
 }
+/** The arrival speed of a firm ground pass of d metres: short passes soft, long ones driven. */
+export const firmArrive = (d: number) => Math.max(5.5, Math.min(11, 4 + d * 0.22))
+
 /** Initial speed so a ground pass covers d metres and still arrives at `arrive` m/s. */
 export function groundPassSpeed(d: number, arrive: number, s: Surface) {
   const { a0, k } = SURFACES[s]

@@ -1,6 +1,6 @@
 // The football world: players, ball, possession, kicks, first touches, dribbling, tackles and events.
 // Runs on a fixed timestep (60 Hz) and is deterministic for a given seed and inputs.
-import { BALL_R, groundSpeed, kickGround, kickLofted, kickShot, makeBall, onGround, rollTimeTo, stepBall, type Ball } from './ball'
+import { BALL_R, firmArrive, groundSpeed, kickGround, kickLofted, kickShot, makeBall, onGround, rollTimeTo, stepBall, type Ball } from './ball'
 import { add2, angleDiff, clamp, dist2, fromAngle, len2, limit2, norm2, Rng, scale2, sub2, turnTowards, type V2 } from './math'
 import type { PitchGeom } from './pitch'
 import type { Difficulty, Look, PendingAction, Player, SimEvent, Team } from './types'
@@ -110,10 +110,10 @@ export class World {
   /* ------------------------------------------------------------------ actions */
 
   /** Ask a player to pass to a point (ground or lofted). The foot meets the ball after a short wind-up. */
-  requestPass(p: Player, to: V2, opts: { receiver?: string | null; lofted?: boolean; arrive?: number; flight?: number; by?: 'user' | 'ai' } = {}) {
+  requestPass(p: Player, to: V2, opts: { receiver?: string | null; lofted?: boolean; arrive?: number; flight?: number; by?: 'user' | 'ai'; precise?: boolean } = {}) {
     p.pending = {
-      type: opts.lofted ? 'lofted' : 'pass', to, receiver: opts.receiver ?? null, arrive: opts.arrive ?? 5.5,
-      flight: opts.flight ?? 1.4, windup: 0.11, by: opts.by ?? 'ai',
+      type: opts.lofted ? 'lofted' : 'pass', to, receiver: opts.receiver ?? null, arrive: opts.arrive,
+      flight: opts.flight ?? 1.4, windup: 0.11, by: opts.by ?? 'ai', precise: opts.precise,
     }
   }
   requestShot(p: Player, to: V2, height = 0.8, speed = 22, by: 'user' | 'ai' = 'ai') {
@@ -125,13 +125,13 @@ export class World {
   }
 
   /** Point to aim a ground pass so a moving receiver meets the ball (lead pass). */
-  leadPoint(passer: Player, receiver: Player, arrive = 5.5): V2 {
+  leadPoint(passer: Player, receiver: Player, arrive?: number): V2 {
     let target = { ...receiver.pos }
     const from = this.ball2()
     const runDir = len2(receiver.vel) > 0.8 ? norm2(receiver.vel) : null
     for (let i = 0; i < 4; i++) {
       const d = dist2(from, target)
-      const v0 = Math.max(arrive + 1, Math.min(30, 4 + d * 0.55))
+      const v0 = Math.max((arrive ?? firmArrive(d)) + 1, Math.min(30, 4 + d * 0.55))
       const t = rollTimeTo(v0, d, this.pitch.surface)
       if (!isFinite(t) || !runDir) break
       const lead = Math.min(len2(receiver.vel) * t, 6)
@@ -232,12 +232,12 @@ export class World {
     let to = a.to ? { ...a.to } : add2(from, fromAngle(p.facing, 10))
     // execution noise: worse under pressure and with poor skill; the AI also has its difficulty noise
     const dist = dist2(from, to)
-    const noiseRad = (a.by === 'ai' ? this.diff.passNoise : 0.012) * (1 + pressure * 1.5) * (1.3 - p.skill * 0.6)
+    const noiseRad = a.precise ? 0.003 : (a.by === 'ai' ? this.diff.passNoise : 0.012) * (1 + pressure * 1.5) * (1.3 - p.skill * 0.6)
     const ang = Math.atan2(to.y - from.y, to.x - from.x) + this.rng.gauss() * noiseRad
     to = add2(from, fromAngle(ang, dist))
     let kind: 'pass' | 'lofted' | 'shot' | 'clear' = 'pass'
     let speed = 0
-    if (a.type === 'pass') { const r = kickGround(b, to, a.arrive ?? 5.5, this.pitch.surface); speed = r.v0 }
+    if (a.type === 'pass') { const r = kickGround(b, to, a.arrive ?? firmArrive(dist), this.pitch.surface); speed = r.v0 }
     else if (a.type === 'lofted') { kickLofted(b, to, a.flight ?? 1.4); kind = 'lofted'; speed = Math.hypot(b.vel.x, b.vel.y) }
     else { kickShot(b, { x: to.x, y: to.y, z: a.height ?? 0.8 }, a.speed ?? 22); kind = 'shot'; speed = a.speed ?? 22 }
     b.lastTouch = p.id
@@ -324,7 +324,9 @@ export class World {
     // facing: look where you run when fast, otherwise towards faceTarget (usually the ball)
     const sp = len2(p.vel)
     let want = p.facing
-    if (p.faceTarget && (sp < 2.5 || p.pending)) want = Math.atan2(p.faceTarget.y - p.pos.y, p.faceTarget.x - p.pos.x)
+    const kickTo = p.pending && p.pending.type !== 'tackle' ? p.pending.to : undefined
+    if (kickTo) want = Math.atan2(kickTo.y - this.ball.pos.y, kickTo.x - this.ball.pos.x)
+    else if (p.faceTarget && (sp < 2.5 || p.pending)) want = Math.atan2(p.faceTarget.y - p.pos.y, p.faceTarget.x - p.pos.x)
     else if (sp > 0.4) want = Math.atan2(p.vel.y, p.vel.x)
     p.facing = turnTowards(p.facing, want, (sp > 5 ? 6 : 10) * dt)
   }
@@ -393,7 +395,9 @@ export class World {
     const sp = len2(p.vel)
     // carry only when the player means to go somewhere; a player braking or turning keeps it close
     const intent = p.target ? sub2(p.target, p.pos) : { x: 0, y: 0 }
-    const wantsToCarry = len2(intent) > 1.1 && p.speedMode > 0.15
+    // walking onto the ball to collect it is not carrying it
+    const collecting = !!p.target && dist2(p.target, this.ball2()) < 0.7
+    const wantsToCarry = len2(intent) > 1.1 && p.speedMode > 0.15 && !collecting
     const moveDir = wantsToCarry ? norm2(intent) : sp > 0.35 ? norm2(p.vel) : fromAngle(p.facing)
     if (sp < 0.5 || !wantsToCarry) {
       // standing: keep the ball under the sole, with a soft pull to the foot point
@@ -495,12 +499,14 @@ export class World {
     // first touch: oriented control if the player has a direction in mind, otherwise cushion it
     if (p.touchDir && len2(p.touchDir) > 0.1) {
       const dir = norm2(p.touchDir)
-      const s = clamp(incSpeed * 0.22 + 1.2, 1.4, 3.6)
+      // an oriented control moves the ball a metre or two, shorter when an opponent is close
+      const s = clamp(incSpeed * 0.12 + 0.7, 0.8, this.pressureOn(p) > 0.45 ? 1.3 : 2.3)
       b.vel = { x: dir.x * s, y: dir.y * s, z: 0 }
     } else {
       b.vel = { x: inc.x * 0.08, y: inc.y * 0.08, z: 0 }
     }
     if (heavy) { b.vel.x += (this.rng.next() - 0.5) * 2.2; b.vel.y += (this.rng.next() - 0.5) * 2.2 }
+    delete p.meta.touchDir
     b.pos.z = BALL_R
     b.owner = p.id
     b.lastTouch = p.id

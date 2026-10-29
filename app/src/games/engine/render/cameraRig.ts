@@ -67,9 +67,10 @@ export class CameraRig {
     // area extents across and along the view
     let across = endOn ? ctx.size.h : ctx.size.w, along = endOn ? ctx.size.w : ctx.size.h
     const center = ctx.center.clone()
-    // phones follow the ball inside a window where players stay readable
-    const maxAcross = aspect < 1 ? (endOn ? 34 : 30) : 72
-    const maxAlong = aspect < 1 ? (endOn ? 48 : 40) : 52
+    // small screens follow the ball inside a window where players stay readable
+    const small = this.stage.width * fx < 620
+    const maxAcross = small ? (endOn ? 34 : 30) : 72
+    const maxAlong = small ? (endOn ? 48 : 40) : 52
     if (across > maxAcross) {
       if (endOn) center.z = THREE.MathUtils.clamp(ctx.ball.z, ctx.center.z - ctx.size.h / 2 + maxAcross / 2, ctx.center.z + ctx.size.h / 2 - maxAcross / 2)
       else center.x = THREE.MathUtils.clamp(ctx.ball.x, ctx.center.x - ctx.size.w / 2 + maxAcross / 2, ctx.center.x + ctx.size.w / 2 - maxAcross / 2)

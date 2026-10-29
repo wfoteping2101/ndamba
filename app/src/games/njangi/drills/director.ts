@@ -123,7 +123,17 @@ export class SequenceDirector {
           const runner = group.find((r) => r.kind === 'run' && r.from === rid)
           if (runner && elapsed < 0.6) continue
           const pt = this.passPoint(s)
-          w.requestPass(p, pt, { receiver: rid, arrive: typeof s.to === 'string' ? 5 : rid ? 3.5 : 0.8 })
+          // the receiver's first touch opens towards his own next pass (the sheet's oriented control)
+          if (rid) {
+            const r = w.get(rid)
+            const next = this.groups.slice(this.gi + 1).flat().find((q) => q.from === rid && (q.kind === 'pass' || q.kind === 'shot' || q.kind === 'dribble'))
+            if (r && next) {
+              const nt = stepTarget(w, next)
+              const dx = nt.x - pt.x, dy = nt.y - pt.y, l = Math.hypot(dx, dy)
+              if (l > 1) r.meta.touchDir = { x: dx / l, y: dy / l }
+            }
+          }
+          w.requestPass(p, pt, { receiver: rid, arrive: typeof s.to === 'string' ? undefined : rid ? 3.5 : 0.8, precise: true })
           this.passed.add(s)
         } else this.fetch(p)
       } else if (s.kind === 'shot') {

@@ -21,6 +21,8 @@ const TERMINAL: ScoreKind[] = ['goal', 'goal_after', 'zone_entry', 'cross_line',
 interface Possession {
   passes: number
   touched: Set<string>
+  /** our players including the keeper */
+  touchedAll: Set<string>
   flags: Set<string>
   zones: Set<number>
   crossed: Set<number>
@@ -50,7 +52,6 @@ export class DrillScorer {
   attemptEnded: AttemptEnd | null = null
   private poss: Possession
   private chain: PassRec[] = []
-  private tagIdx = 0
   private nextId = 1
   private lastKick: { by: string; t: number; touches: number; held: number; pressBy: string | null } | null = null
   private pauseCandidate: { defender: string; from: V2 } | null = null
@@ -65,19 +66,29 @@ export class DrillScorer {
     this.poss = this.freshPossession(false)
     this.off = w.on((e) => this.onEvent(e))
     this.ourIds = w.players.filter((p) => p.team === 'a' && !p.gk).map((p) => p.id)
+    // the book's codes arrive synchronously, before this scorer sees the same world event
+    tagger.onCode = (a) => this.onCode(a)
   }
-  dispose() { this.off() }
+  dispose() { this.off(); if (this.tagger.onCode) this.tagger.onCode = null }
+
+  private onCode(a: { code: string; side: 'a' | 'b' }) {
+    if (a.side !== 'a') return
+    if (a.code === 'LINE') { this.poss.flags.add('line_break'); for (const r of this.rules('line_break')) this.award('line_break', r.points) }
+    if (a.code === 'FIX2') { this.poss.flags.add('fix2'); for (const r of this.rules('fix2')) this.award('fix2', r.points) }
+    if (a.code === 'SWITCH') { this.poss.flags.add('switch'); for (const r of this.rules('switch')) this.award('switch', r.points) }
+    if (a.code === 'SHOT_IN') for (const r of this.rules('shot_on_target')) this.award('shot_on_target', r.points)
+    if (a.code === 'REGAIN5') for (const r of this.rules('regain5')) this.award('regain5', r.points)
+  }
   /** follow a new world (a new attempt on the same drill) */
   rebind(w: World) {
     this.off()
     this.w = w
     this.off = w.on((e) => this.onEvent(e))
-    this.tagIdx = this.tagger.log.length
     this.ourIds = w.players.filter((p) => p.team === 'a' && !p.gk).map((p) => p.id)
   }
 
   private freshPossession(fromRegain: boolean): Possession {
-    return { passes: 0, touched: new Set(), flags: new Set(), zones: new Set(), crossed: new Set(), allTouched: false, start: this.w?.t ?? 0, fromRegain, polite: false, held: false }
+    return { passes: 0, touched: new Set(), touchedAll: new Set(), flags: new Set(), zones: new Set(), crossed: new Set(), allTouched: false, start: this.w?.t ?? 0, fromRegain, polite: false, held: false }
   }
 
   /** neutrals play for the side that has the ball */
@@ -92,7 +103,7 @@ export class DrillScorer {
     this.push({ key: `score.${kind}`, params, points, tone: 'good' })
     if (kind === 'goal' || kind === 'goal_after') { /* goals counted on the goal event */ }
     if (kind === 'sequence') this.sequences++
-    if (TERMINAL.includes(kind) && this.g.target.kind === 'attempts' && !this.attemptEnded) this.stop(kind, true)
+    if (TERMINAL.includes(kind) && this.g.target.kind === 'attempts' && !this.attemptEnded && this.attemptPoints >= (this.g.successNeeds ?? 1)) this.stop(kind, true)
   }
 
   mistake(m: Mistake) {
@@ -117,7 +128,7 @@ export class DrillScorer {
   stop(reason: string, success = false) {
     if (this.attemptEnded) return
     const attempts = this.g.target.kind === 'attempts'
-    const ok = attempts ? this.attemptPoints >= 1 : success
+    const ok = attempts ? this.attemptPoints >= (this.g.successNeeds ?? 1) : success
     if (attempts) { this.attempts++; if (ok) this.successes++ }
     this.attemptEnded = { ok, reason }
   }
@@ -130,6 +141,15 @@ export class DrillScorer {
     this.lossAt = null
     this.slowFlagged = false
     this.pauseCandidate = null
+  }
+
+  chainPasses() { return this.poss.passes }
+  chainTouched() {
+    // the player who starts the possession on the ball counts too
+    const own = this.w.owner()
+    const set = new Set(this.poss.touchedAll)
+    if (own && own.team === 'a') set.add(own.id)
+    return set.size
   }
 
   /** Has the lesson's target been reached? */
@@ -164,17 +184,6 @@ export class DrillScorer {
   /** Call after each world step. */
   update() {
     const w = this.w
-    // tagger codes for our side
-    const log = this.tagger.log
-    for (; this.tagIdx < log.length; this.tagIdx++) {
-      const a = log[this.tagIdx]
-      if (a.side !== 'a') continue
-      if (a.code === 'LINE') { this.poss.flags.add('line_break'); for (const r of this.rules('line_break')) this.award('line_break', r.points) }
-      if (a.code === 'FIX2') { this.poss.flags.add('fix2'); for (const r of this.rules('fix2')) this.award('fix2', r.points) }
-      if (a.code === 'SWITCH') { this.poss.flags.add('switch'); for (const r of this.rules('switch')) this.award('switch', r.points) }
-      if (a.code === 'SHOT_IN') for (const r of this.rules('shot_on_target')) this.award('shot_on_target', r.points)
-      if (a.code === 'REGAIN5') { for (const r of this.rules('regain5')) this.award('regain5', r.points) }
-    }
     // the carrier keeps it while a partner is free
     const own = w.owner()
     if (own && this.ours(own.team) && !own.gk) {
@@ -272,6 +281,7 @@ export class DrillScorer {
         if (!this.ours(e.team)) return
         const p = w.get(e.by)
         if (!p) return
+        if (p.team === 'a') this.poss.touchedAll.add(p.id)
         if (p.team === 'a' && !p.gk) {
           this.poss.touched.add(p.id)
           if (!this.poss.allTouched && this.ourIds.length > 1 && this.ourIds.every((id) => this.poss.touched.has(id))) {

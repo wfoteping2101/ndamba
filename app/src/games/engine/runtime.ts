@@ -124,6 +124,21 @@ export class SimView {
     this.stage.render()
     this.drawLabels()
     this.fps.tick()
+    if (this.fps.struggling()) this.degrade()
+  }
+
+  /** The picture stutters: drop one notch (pixel ratio, then shadows and outlines). */
+  degrade() {
+    const st = this.stage
+    this.fps.reset()
+    const dpr = st.renderer.getPixelRatio()
+    if (dpr > 1.01) { st.renderer.setPixelRatio(Math.max(1, dpr - 0.5)); st.resize(); return }
+    if (st.renderer.shadowMap.enabled) {
+      st.renderer.shadowMap.enabled = false
+      st.scene.traverse((o) => { const m = (o as THREE.Mesh).material as THREE.Material | undefined; if (m) m.needsUpdate = true })
+      return
+    }
+    for (const c of this.chars.values()) if (c.outline) c.outline.visible = false
   }
 
   private drawLabels() {

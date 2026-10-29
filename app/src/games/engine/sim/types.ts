@@ -33,6 +33,8 @@ export interface PendingAction {
   receiver?: string | null
   /** arrival speed for ground passes (m/s) */
   arrive?: number
+  /** demonstrations: the ball goes exactly where the sheet draws it */
+  precise?: boolean
   /** flight time for lofted passes (s) */
   flight?: number
   /** shot target height and speed */
@@ -118,8 +120,8 @@ export interface Difficulty {
 }
 
 export const DIFFICULTY: Record<'facile' | 'normal' | 'difficile', Difficulty> = {
-  facile: { reaction: 0.42, anticipation: 0.1, press: 0.45, intercept: 0.45, passNoise: 0.09, noise: 0.35 },
-  normal: { reaction: 0.28, anticipation: 0.45, press: 0.7, intercept: 0.7, passNoise: 0.05, noise: 0.18 },
+  facile: { reaction: 0.45, anticipation: 0.1, press: 0.38, intercept: 0.4, passNoise: 0.09, noise: 0.35 },
+  normal: { reaction: 0.3, anticipation: 0.4, press: 0.6, intercept: 0.62, passNoise: 0.05, noise: 0.18 },
   difficile: { reaction: 0.17, anticipation: 0.8, press: 0.92, intercept: 0.9, passNoise: 0.025, noise: 0.07 },
 }
 export type Level = keyof typeof DIFFICULTY

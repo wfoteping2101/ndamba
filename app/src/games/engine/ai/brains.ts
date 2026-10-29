@@ -42,9 +42,17 @@ export function orientedTouch(w: World, p: Player): V2 {
   let nearest: Player | null = null, nd = 99
   for (const o of w.opponents(p)) { const d = dist2(o.pos, p.pos); if (d < nd) { nd = d; nearest = o } }
   const toGoal = norm2(sub2(goal, p.pos))
-  if (!nearest || nd > 5) return toGoal
-  const away = norm2(sub2(p.pos, nearest.pos))
-  return norm2(add2(scale2(away, 1.2), scale2(toGoal, 0.6)))
+  let dir = !nearest || nd > 5 ? toGoal : norm2(add2(scale2(norm2(sub2(p.pos, nearest.pos)), 1.2), scale2(toGoal, 0.6)))
+  // never touch it over a line: near the edge, open towards the inside of the area
+  const land = add2(p.pos, scale2(dir, 2))
+  const m = 0.8
+  if (land.x < m || land.x > w.pitch.w - m || land.y < m || land.y > w.pitch.h - m) {
+    const inward = norm2(sub2({ x: w.pitch.w / 2, y: w.pitch.h / 2 }, p.pos))
+    dir = norm2(add2(dir, scale2(inward, 1.6)))
+    const land2 = add2(p.pos, scale2(dir, 2))
+    if (land2.x < m || land2.x > w.pitch.w - m || land2.y < m || land2.y > w.pitch.h - m) dir = inward
+  }
+  return dir
 }
 
 const inArea = (w: World, pt: V2, m = 0.8): V2 => ({ x: clamp(pt.x, m, w.pitch.w - m), y: clamp(pt.y, m, w.pitch.h - m) })
@@ -195,7 +203,7 @@ export class CarrierBrain implements Brain {
     const held = (me.meta.heldFor as number) ?? 0
     const shouldPass = best && (best.score + noise > 0.32 || pressure > 0.6 || touchesLeft <= 1 || held > (this.opts.patience ?? 1.6))
     if (best && shouldPass && best.margin > -0.15) {
-      w.requestPass(me, best.target, { receiver: best.receiver?.id ?? null, arrive: 5.5 })
+      w.requestPass(me, best.target, { receiver: best.receiver?.id ?? null })
       me.meta.heldFor = 0
       return
     }
@@ -225,8 +233,10 @@ export class DefenderBrain implements Brain {
 
     // 1. a pass is travelling: can I cut it out?
     if (!this.opts.passive && w.pass && w.pass.team !== me.team && groundSpeed(w.ball) > 1.5) {
-      const mp = meetPoint(w, me, d.reaction * (1 - d.anticipation * 0.5))
-      if (mp && (rank <= 1 || dist2(mp, me.pos) < 6) && w.rng.next() < d.intercept + 0.15) {
+      // one decision per pass: go for it or hold the shape (not a new dice roll ten times a second)
+      if (me.meta.passSeen !== w.pass.t) { me.meta.passSeen = w.pass.t; me.meta.goFor = w.rng.next() < d.intercept + 0.15 }
+      const mp = me.meta.goFor ? meetPoint(w, me, d.reaction * (1 - d.anticipation * 0.5)) : null
+      if (mp && (rank <= 1 || dist2(mp, me.pos) < 6)) {
         me.target = mp; me.speedMode = 1; me.faceTarget = bp; return
       }
     }
