@@ -35,12 +35,19 @@ export class Tagger {
   private shotOpen: { side: 'a' | 'b'; inCounted: boolean } | null = null
   private off: () => void
 
-  constructor(private w: World) {
+  constructor(public w: World) {
     const z = () => Object.fromEntries(EVENT_CODES.map((c) => [c, 0])) as Record<EventCode, number>
     this.counts = { a: z(), b: z() }
     this.off = w.on((e) => this.onEvent(e))
   }
   dispose() { this.off() }
+  /** keep counting on a new world (the next attempt of the same exercise) */
+  rebind(w: World) {
+    this.off()
+    this.w = w
+    this.carry = null; this.shotOpen = null; this.inF3 = { a: false, b: false }; this.inBox = { a: false, b: false }
+    this.off = w.on((e) => this.onEvent(e))
+  }
 
   private add(side: string | null | undefined, code: EventCode, by: string | null, at: V2) {
     if (side !== 'a' && side !== 'b') return

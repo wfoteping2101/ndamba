@@ -7,7 +7,8 @@
     "start": "Get started",
     "openApp": "Open the app",
     "menu": "Menu",
-    "close": "Close the menu"
+    "close": "Close the menu",
+    "games": "Games"
   },
   "footer": {
     "motto": "The ball must travel. But it must know where it is going.",
@@ -23,7 +24,8 @@
     "brand": "The Ndamba brand",
     "premium": "Premium",
     "rights": "Lemon Network Solutions",
-    "home": "Ndamba home"
+    "home": "Ndamba home",
+    "games": "The games"
   },
   "app": {
     "home": "Home",

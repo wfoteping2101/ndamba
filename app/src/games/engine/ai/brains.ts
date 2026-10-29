@@ -64,11 +64,30 @@ export class HoldBrain implements Brain {
   }
 }
 
+/** Demonstrations: a defender who keeps his diagram spot, sliding a little with the ball, never playing it. */
+export class ShadowBrain implements Brain {
+  constructor(private shift = 0.12) {}
+  think(w: World, me: Player) {
+    if (w.pass && w.pass.receiver === me.id) { me.wantsBall = true; me.meta.noBlock = false; receiveIfComing(w, me); return }
+    if (w.ball.owner === me.id) { me.target = null; me.faceTarget = null; return }
+    const h = home(me)
+    const bp = w.ball2()
+    // a small slide only: a demonstration must keep the lanes the diagram shows
+    const slide = scale2(sub2(bp, h), this.shift)
+    me.target = inArea(w, add2(h, len2(slide) > 0.7 ? scale2(norm2(slide), 0.7) : slide), 0.3)
+    me.speedMode = 0.4
+    me.faceTarget = bp
+    me.wantsBall = false
+    me.meta.noBlock = true
+  }
+}
+
 /** Go and meet a pass aimed at me; returns true when receiving. */
 function receiveIfComing(w: World, me: Player) {
   const pass = w.pass
   const mine = pass && pass.receiver === me.id && pass.team !== null
-  if ((mine || (w.ball.owner === null && ballComingTo(w, me) && sameSideAsBall(w, me))) && !w.dead) {
+  const forSomeoneElse = pass && pass.receiver && pass.receiver !== me.id && groundSpeed(w.ball) > 2.5
+  if ((mine || (!forSomeoneElse && w.ball.owner === null && ballComingTo(w, me) && sameSideAsBall(w, me))) && !w.dead) {
     const mp = meetPoint(w, me, 0.05) ?? w.ball2()
     me.target = mp
     me.speedMode = 1
@@ -212,7 +231,7 @@ export class DefenderBrain implements Brain {
       }
     }
     // 2. loose ball: the nearest two chase it
-    if (!w.ball.owner && !w.pass) {
+    if (!w.ball.owner && !w.pass && !this.opts.passive) {
       if (rank <= 1) { me.target = bp; me.speedMode = 1; me.faceTarget = bp; return }
     }
     if (theyHaveIt && carrier) {
@@ -264,10 +283,14 @@ export class DefenderBrain implements Brain {
 /** Goalkeeper: angle positioning, dives on shots, catches; distributes like a carrier. */
 export class KeeperBrain implements Brain {
   private carrier: CarrierBrain
-  constructor() { this.carrier = new CarrierBrain(new HoldBrain(), { intention: 'respirer', canShoot: false, patience: 1.2 }) }
+  /** waitForCall: with the ball, the keeper waits for the user's (or the director's) pass */
+  constructor(private opts: { waitForCall?: boolean } = {}) { this.carrier = new CarrierBrain(new HoldBrain(), { intention: 'respirer', canShoot: false, patience: 1.2 }) }
   think(w: World, me: Player) {
     me.wantsBall = true
-    if (w.ball.owner === me.id) { this.carrier.think(w, me); return }
+    if (w.ball.owner === me.id) {
+      if (this.opts.waitForCall) { me.target = null; me.faceTarget = null; me.meta.heldFor = ((me.meta.heldFor as number) ?? 0) + 0.1; return }
+      this.carrier.think(w, me); return
+    }
     const side = me.team === 'n' ? 'a' : (me.team as 'a' | 'b')
     const own = w.pitch.goalFor[side === 'a' ? 'b' : 'a']
     if (!own) { me.target = { ...home(me) }; return }

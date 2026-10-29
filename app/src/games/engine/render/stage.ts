@@ -39,6 +39,8 @@ export class Stage {
   private container: HTMLElement
   width = 1
   height = 1
+  /** UI covering the edges of the view (CSS px): the camera centres the action in what stays visible */
+  insets = { l: 0, t: 0, r: 0, b: 0 }
 
   constructor(container: HTMLElement, opts: StageOpts) {
     this.container = container
@@ -50,7 +52,7 @@ export class Stage {
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping
     this.renderer.toneMappingExposure = 1.0
     this.renderer.shadowMap.enabled = this.quality.shadows
-    this.renderer.shadowMap.type = THREE.PCFSoftShadowMap
+    this.renderer.shadowMap.type = THREE.PCFShadowMap
     this.renderer.domElement.style.display = 'block'
     this.renderer.domElement.style.width = '100%'
     this.renderer.domElement.style.height = '100%'
@@ -90,7 +92,25 @@ export class Stage {
     this.width = w; this.height = h
     this.renderer.setSize(w, h, false)
     this.camera.aspect = w / h
+    this.applyInsets()
+  }
+
+  setInsets(l: number, t: number, r: number, b: number) {
+    const i = this.insets
+    if (i.l === l && i.t === t && i.r === r && i.b === b) return
+    this.insets = { l, t, r, b }
+    this.applyInsets()
+  }
+  private applyInsets() {
+    const { l, t, r, b } = this.insets
+    if (l || t || r || b) this.camera.setViewOffset(this.width, this.height, -(l - r) / 2, -(t - b) / 2, this.width, this.height)
+    else this.camera.clearViewOffset()
     this.camera.updateProjectionMatrix()
+  }
+  /** The visible part of the view as fractions (for framing). */
+  visibleFraction() {
+    const { l, t, r, b } = this.insets
+    return { fx: Math.max(0.2, (this.width - l - r) / this.width), fy: Math.max(0.2, (this.height - t - b) / this.height) }
   }
 
   render() { this.renderer.render(this.scene, this.camera) }

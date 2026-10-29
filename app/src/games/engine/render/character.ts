@@ -192,7 +192,10 @@ export class Character {
     // BriBri's notebook: a small book held in the left hand
     if (look.prop === 'notebook') add(new THREE.BoxGeometry(0.11, 0.15, 0.025), '#c8902f', 'handL', T(0, -0.09, 0.04))
 
-    const geo = mergeGeometries(parts, false)!
+    // every part must agree on having an index before merging (some generators make non-indexed ones)
+    const mixed = parts.some((q) => !q.index) && parts.some((q) => q.index)
+    const ready = (mixed ? parts.map((q) => (q.index ? q.toNonIndexed() : q)) : parts).map((q) => { if (q.hasAttribute('uv')) q.deleteAttribute('uv'); return q })
+    const geo = mergeGeometries(ready, false)!
     geo.computeBoundingSphere()
     const mat = opts.toon
       ? new THREE.MeshToonMaterial({ vertexColors: true, gradientMap: gradient() })

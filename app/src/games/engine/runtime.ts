@@ -42,7 +42,8 @@ export class SimView {
 
   constructor(public container: HTMLElement, public world: World, public opts: ViewOpts = {}) {
     const quality = opts.quality ?? detectQuality()
-    this.stage = new Stage(container, { quality, background: opts.background, fog: opts.fog ?? null })
+    const fog = opts.fog !== undefined ? opts.fog : (opts.surround ?? 'training') === 'training' ? [150, 460] as [number, number] : null
+    this.stage = new Stage(container, { quality, background: opts.background, fog })
     this.frame = new Frame(world.pitch.w, world.pitch.h)
     if (!opts.noPitch) this.pitch = buildPitch(this.stage, this.frame, world.pitch, opts.surround ?? 'training')
     this.stage.scene.add(this.ball.group)
@@ -51,7 +52,7 @@ export class SimView {
     this.rig = new CameraRig(this.stage)
     this.labelRoot = document.createElement('div')
     this.labelRoot.style.cssText = 'position:absolute;inset:0;pointer-events:none;overflow:hidden'
-    container.style.position = container.style.position || 'relative'
+    if (getComputedStyle(container).position === 'static') container.style.position = 'relative'
     container.appendChild(this.labelRoot)
     this.syncPlayers()
   }
@@ -67,6 +68,20 @@ export class SimView {
       this.stage.scene.add(c.root)
     }
     for (const [id, c] of this.chars) if (!this.world.byId.has(id)) { this.stage.scene.remove(c.root); c.dispose(); this.chars.delete(id) }
+  }
+
+  /** Swap in a new world on the same pitch (restarts, demo then attempt). Characters with the same id are kept. */
+  setWorld(w: World) {
+    this.world = w
+    for (const [id, c] of this.chars) {
+      const p = w.get(id)
+      if (!p) continue
+      c.root.position.copy(this.frame.vec(p.pos.x, p.pos.y))
+      c.snapFacing(p.facing)
+    }
+    this.syncPlayers()
+    this.labels.clear()
+    this.highlight = null
   }
 
   camContext(): CamContext {
@@ -191,6 +206,8 @@ export class GameLoop {
   onFrame: (dt: number) => void = () => {}
 
   constructor(public world: World, public view: SimView) {}
+
+  setWorld(w: World) { this.world = w; this.view.setWorld(w); this.acc = 0 }
 
   start() {
     if (this.running) return

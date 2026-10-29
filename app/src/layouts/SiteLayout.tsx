@@ -23,6 +23,7 @@ export default function SiteLayout() {
   }, [open])
   const links: { to: string; label: string; icon?: ReactNode }[] = [
     { to: '/livres', label: t('nav.books') },
+    { to: '/jeux', label: t('nav.games') },
     { to: '/#app', label: t('nav.app') },
     { to: '/#mola', label: t('nav.mola'), icon: <MolaMark size={16} /> },
     { to: '/premium', label: t('nav.premium') },
@@ -81,6 +82,7 @@ export default function SiteLayout() {
           <FooterCol title={t('footer.products')} links={[
             { to: '/livres#lionceaux', label: t('footer.tome1') },
             { to: '/livres#code-njangi', label: t('footer.methode') },
+            { to: '/jeux', label: t('footer.games') },
             { to: '/#app', label: t('footer.app') },
             { to: '/#mola', label: t('footer.mola') },
           ]} />

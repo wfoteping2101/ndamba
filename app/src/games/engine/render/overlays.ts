@@ -75,6 +75,41 @@ export class Overlays {
   }
   show(name: string, v: boolean) { this.layer(name).visible = v }
 
+  /* Pooled markers under players (carrier, options, hints): created once, moved every frame. */
+  private markers = new Map<string, { ring: THREE.Mesh; disc: THREE.Mesh; used: boolean }>()
+  private markerGroup: THREE.Group | null = null
+  /** Start a frame of markers: anything not marked again before endMarkers() is hidden. */
+  beginMarkers() { for (const m of this.markers.values()) m.used = false }
+  marker(id: string, at: { x: number; y: number }, color: string, opts: { radius?: number; opacity?: number; fill?: number } = {}) {
+    if (!this.markerGroup) { this.markerGroup = new THREE.Group(); this.markerGroup.name = 'markers'; this.group.add(this.markerGroup) }
+    let m = this.markers.get(id)
+    if (!m) {
+      const ring = new THREE.Mesh(new THREE.RingGeometry(0.72, 1, 40), new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, side: THREE.DoubleSide }))
+      const disc = new THREE.Mesh(new THREE.CircleGeometry(1, 40), new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, side: THREE.DoubleSide }))
+      ring.rotation.x = disc.rotation.x = -Math.PI / 2
+      ring.renderOrder = 5; disc.renderOrder = 4
+      this.markerGroup.add(disc, ring)
+      m = { ring, disc, used: true }
+      this.markers.set(id, m)
+    }
+    const r = opts.radius ?? 0.7
+    m.used = true
+    m.ring.visible = true
+    m.ring.scale.setScalar(r)
+    m.ring.position.set(this.frame.x(at.x), Y + 0.006, this.frame.z(at.y))
+    ;(m.ring.material as THREE.MeshBasicMaterial).color.set(color)
+    ;(m.ring.material as THREE.MeshBasicMaterial).opacity = opts.opacity ?? 0.95
+    const fill = opts.fill ?? 0
+    m.disc.visible = fill > 0
+    if (fill > 0) {
+      m.disc.scale.setScalar(r * 0.98)
+      m.disc.position.set(this.frame.x(at.x), Y + 0.004, this.frame.z(at.y))
+      ;(m.disc.material as THREE.MeshBasicMaterial).color.set(color)
+      ;(m.disc.material as THREE.MeshBasicMaterial).opacity = fill
+    }
+  }
+  endMarkers() { for (const m of this.markers.values()) if (!m.used) { m.ring.visible = false; m.disc.visible = false } }
+
   private v2(x: number, y: number) { return new THREE.Vector2(this.frame.x(x), this.frame.z(y)) }
 
   /** A numbered arrow in the books' notation. from/to in sim metres. */
@@ -142,5 +177,10 @@ export class Overlays {
     return m
   }
 
-  dispose() { this.clear(); this.group.removeFromParent() }
+  dispose() {
+    this.clear()
+    for (const m of this.markers.values()) { m.ring.geometry.dispose(); (m.ring.material as THREE.Material).dispose(); m.disc.geometry.dispose(); (m.disc.material as THREE.Material).dispose() }
+    this.markers.clear()
+    this.group.removeFromParent()
+  }
 }

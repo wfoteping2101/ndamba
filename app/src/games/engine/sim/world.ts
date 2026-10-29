@@ -151,7 +151,7 @@ export class World {
     // 1. AI decisions at 10 Hz, staggered so they don't all think on the same tick
     for (let i = 0; i < this.players.length; i++) {
       const p = this.players[i]
-      if (p.controlled) continue
+      if (p.controlled || p.meta.scripted) continue
       const brain = this.brains.get(p.id)
       if (brain && (this.tick + i) % THINK_EVERY === 0) brain.think(this, p)
     }
@@ -195,6 +195,21 @@ export class World {
       ;(a as PendingAction & { wait?: number }).wait = ((a as PendingAction & { wait?: number }).wait ?? 0) + dt
       if (((a as PendingAction & { wait?: number }).wait ?? 0) > 1.4 || (this.ball.owner && this.ball.owner !== p.id)) p.pending = null
       return
+    }
+    // open the body first: nobody strikes a ball behind his own back. Turn with the ball on the foot.
+    if (a.to) {
+      const want = Math.atan2(a.to.y - this.ball.pos.y, a.to.x - this.ball.pos.x)
+      const diff = Math.abs(angleDiff(p.facing, want))
+      if (diff > 1.05) {
+        p.facing = turnTowards(p.facing, want, 11 * dt)
+        p.target = null
+        const nf = this.foot(p)
+        if (this.ball.owner === p.id || dist2(nf, this.ball2()) < KICK_R) {
+          this.ball.pos.x = nf.x; this.ball.pos.y = nf.y; this.ball.vel.x = 0; this.ball.vel.y = 0
+        }
+        a.windup = Math.max(a.windup, 0.06)
+        return
+      }
     }
     if (p.anim !== 'kick') { p.anim = 'kick'; p.animT = 0; p.kickFoot = this.kickFootFor(p, a.to) }
     a.windup -= dt
@@ -384,6 +399,13 @@ export class World {
       // standing: keep the ball under the sole, with a soft pull to the foot point
       if (d < 0.9) {
         b.vel.x = (f.x - b.pos.x) * 4; b.vel.y = (f.y - b.pos.y) * 4; b.vel.z = 0
+      } else {
+        // the last touch ran a little long: reach for it and slow it down (sole, inside of the foot)
+        if (d < 1.7) { const k = Math.max(0, 1 - 7 * dt); b.vel.x *= k; b.vel.y *= k }
+        if (!p.controlled) {
+          p.target = { x: b.pos.x - (f.x - p.pos.x), y: b.pos.y - (f.y - p.pos.y) }
+          p.speedMode = Math.max(p.speedMode, 0.55)
+        }
       }
       return
     }
@@ -391,7 +413,9 @@ export class World {
     const ballAhead = (b.pos.x - p.pos.x) * moveDir.x + (b.pos.y - p.pos.y) * moveDir.y
     const ballSpeed = groundSpeed(b)
     if (d < 0.55 && (ballAhead < 0.9 || ballSpeed < sp * 0.9) && onGround(b)) {
-      const touch = clamp(sp * 1.32 + 0.7, 1.4, 9.5)
+      // a soft touch when arriving: the ball should die near where the player means to stop
+      const remain = len2(intent)
+      const touch = remain < 2.6 ? Math.max(0.5, sp * 0.5) : Math.min(clamp(sp * 1.32 + 0.7, 1.4, 9.5), 1.1 + remain * 0.7)
       // the touch goes where the player is heading (a little skill noise)
       const ang = Math.atan2(moveDir.y, moveDir.x) + this.rng.gauss() * 0.04 * (1.2 - p.skill)
       b.vel = { x: Math.cos(ang) * touch, y: Math.sin(ang) * touch, z: 0 }
@@ -408,7 +432,12 @@ export class World {
     const speed = Math.hypot(b.vel.x, b.vel.y)
     let best: Player | null = null, bestD = 99
     for (const p of this.players) {
-      if (p.cooldown > 0.15 && b.lastTouch === p.id) continue // the kicker can't touch his own pass straight away
+      if (b.lastTouch === p.id && this.pass && this.pass.from === p.id && this.t - this.pass.t < 0.45) continue // the kicker can't touch his own pass straight away
+      // a teammate lets a pass meant for someone else run through (the dummy), unless it has died
+      if (this.pass && this.pass.receiver && this.pass.receiver !== p.id && (this.pass.kind === 'pass' || this.pass.kind === 'lofted') && speed > 2.5) {
+        const passer = this.get(this.pass.from)
+        if (passer && (p.team === passer.team || p.team === 'n' || passer.team === 'n')) continue
+      }
       const reach = p.gk ? (p.anim === 'dive' ? 1.85 : 1.05) : CONTROL_R
       const d = dist2(this.foot(p), bp)
       const height = b.pos.z
@@ -419,6 +448,7 @@ export class World {
       // body block: a fast ball hitting someone who is not trying to control it
       if (speed > 4) for (const p of this.players) {
         if (b.lastTouch === p.id && this.t - (this.pass?.t ?? -9) < 0.3) continue
+        if (p.meta.noBlock) continue // demonstration mannequins
         const d = dist2(p.pos, bp)
         if (d < BODY_R + BALL_R && b.pos.z < p.height * 0.75) {
           const n = norm2(sub2(bp, p.pos))
@@ -483,7 +513,10 @@ export class World {
     const side: 'a' | 'b' | null = p.team === 'n' ? prevOwnerTeam : p.team
     // pass outcome
     if (this.pass && passer && passer.id !== p.id && (this.pass.kind === 'pass' || this.pass.kind === 'lofted' || this.pass.kind === 'clear')) {
-      const sameSide = p.team === 'n' || passer.team === 'n' ? (p.team === 'n' ? true : p.team === passTeam) : p.team === passer.team
+      // neutrals play for the side in possession; a neutral's pass before anyone had it is anyone's
+      const sameSide = passer.team === 'n'
+        ? p.team === 'n' || passTeam === 'n' || passTeam === null || p.team === passTeam
+        : p.team === 'n' ? true : p.team === passer.team
       if (sameSide) this.emit({ type: 'pass_complete', t: this.t, from: passer.id, to: p.id, team: (passTeam ?? passer.team) as Team, start: passStart!, end: this.ball2() })
       else {
         this.emit({ type: 'pass_lost', t: this.t, from: passer.id, team: (passTeam ?? passer.team) as Team, by: p.id, reason: 'intercepted', start: passStart!, end: this.ball2() })

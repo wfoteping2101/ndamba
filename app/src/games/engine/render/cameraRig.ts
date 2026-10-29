@@ -54,29 +54,62 @@ export class CameraRig {
   /** Strong feedback only (goal, post): decays by itself. */
   shake(amount: number) { this.trauma = Math.min(1, this.trauma + amount) }
 
-  /** The tactical camera for an area: from above and slightly behind the near touchline. */
+  /**
+   * The tactical camera for an area: from above and behind the near touchline, the whole area in view.
+   * On a portrait screen a long area is turned so the attack goes up the screen (behind our goal).
+   */
   tacticalFor(ctx: CamContext) {
     const cam = this.stage.camera
-    const vfov = THREE.MathUtils.degToRad(cam.fov)
-    const hfov = 2 * Math.atan(Math.tan(vfov / 2) * cam.aspect)
-    const pitch = THREE.MathUtils.degToRad(62)
-    let w = ctx.size.w, h = ctx.size.h
-    let center = ctx.center.clone()
-    // big pitches on narrow screens: follow the ball within a window instead of showing everything
-    const maxW = cam.aspect < 1 ? 34 : 70
-    if (w > maxW) {
-      const half = maxW / 2
-      center.x = THREE.MathUtils.clamp(ctx.ball.x, ctx.center.x - ctx.size.w / 2 + half, ctx.center.x + ctx.size.w / 2 - half)
-      w = maxW
-      h = Math.min(h, maxW / Math.max(0.6, cam.aspect) * 0.9)
-      center.z = THREE.MathUtils.clamp(ctx.ball.z, ctx.center.z - ctx.size.h / 2 + h / 2, ctx.center.z + ctx.size.h / 2 - h / 2)
+    const { fx, fy } = this.stage.visibleFraction()
+    const aspect = cam.aspect * fx / fy
+    const endOn = aspect < 0.9 && ctx.size.w > ctx.size.h * 0.95
+    const pitch = THREE.MathUtils.degToRad(endOn ? 55 : aspect < 0.8 ? 58 : 50)
+    // area extents across and along the view
+    let across = endOn ? ctx.size.h : ctx.size.w, along = endOn ? ctx.size.w : ctx.size.h
+    const center = ctx.center.clone()
+    // phones follow the ball inside a window where players stay readable
+    const maxAcross = aspect < 1 ? (endOn ? 34 : 30) : 72
+    const maxAlong = aspect < 1 ? (endOn ? 48 : 40) : 52
+    if (across > maxAcross) {
+      if (endOn) center.z = THREE.MathUtils.clamp(ctx.ball.z, ctx.center.z - ctx.size.h / 2 + maxAcross / 2, ctx.center.z + ctx.size.h / 2 - maxAcross / 2)
+      else center.x = THREE.MathUtils.clamp(ctx.ball.x, ctx.center.x - ctx.size.w / 2 + maxAcross / 2, ctx.center.x + ctx.size.w / 2 - maxAcross / 2)
+      across = maxAcross
     }
-    const dW = (w / 2 + 2) / Math.tan(hfov / 2)
-    const dH = (h / 2 + 2) / Math.tan(vfov / 2) * 0.95
-    const d = Math.max(dW, dH, 8)
-    const pos = new THREE.Vector3(center.x, center.y + Math.sin(pitch) * d, center.z + Math.cos(pitch) * d)
+    if (along > maxAlong) {
+      if (endOn) center.x = THREE.MathUtils.clamp(ctx.ball.x + 6, ctx.center.x - ctx.size.w / 2 + maxAlong / 2, ctx.center.x + ctx.size.w / 2 - maxAlong / 2)
+      else center.z = THREE.MathUtils.clamp(ctx.ball.z, ctx.center.z - ctx.size.h / 2 + maxAlong / 2, ctx.center.z + ctx.size.h / 2 - maxAlong / 2)
+      along = maxAlong
+    }
+    // the camera stands on the side `back` points to (three coordinates, ground plane)
+    const back = endOn ? new THREE.Vector3(-1, 0, 0) : new THREE.Vector3(0, 0, 1)
+    const w = endOn ? along : across, h = endOn ? across : along
+    const d = this.fitDistance(center, w + 3, h + 3, pitch, fx, fy, back)
+    const pos = center.clone().add(back.clone().multiplyScalar(Math.cos(pitch) * d)).setY(center.y + Math.sin(pitch) * d)
     return { pos, look: center }
   }
+
+  /** Smallest distance at which a w x h ground rectangle fits the visible part of the view. */
+  private fitDistance(center: THREE.Vector3, w: number, h: number, pitch: number, fx: number, fy: number, back: THREE.Vector3) {
+    const cam = this.probe ?? (this.probe = this.stage.camera.clone())
+    cam.fov = this.stage.camera.fov
+    cam.aspect = this.stage.camera.aspect
+    cam.clearViewOffset()
+    cam.updateProjectionMatrix()
+    const corners = [[-w / 2, -h / 2], [w / 2, -h / 2], [-w / 2, h / 2], [w / 2, h / 2]].map(([x, z]) => new THREE.Vector3(center.x + x, 0, center.z + z))
+    const v = new THREE.Vector3()
+    let lo = 4, hi = 400
+    for (let i = 0; i < 22; i++) {
+      const d = (lo + hi) / 2
+      cam.position.copy(center).add(back.clone().multiplyScalar(Math.cos(pitch) * d)).setY(Math.sin(pitch) * d)
+      cam.lookAt(center)
+      cam.updateMatrixWorld()
+      let ok = true
+      for (const c of corners) { v.copy(c).project(cam); if (Math.abs(v.x) > fx || Math.abs(v.y) > fy || v.z > 1) { ok = false; break } }
+      if (ok) hi = d; else lo = d
+    }
+    return hi
+  }
+  private probe: THREE.PerspectiveCamera | null = null
 
   update(dt: number, ctx: CamContext) {
     this.t += dt

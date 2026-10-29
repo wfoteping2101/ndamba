@@ -7,7 +7,8 @@
     "start": "Commencer",
     "openApp": "Ouvrir l'app",
     "menu": "Menu",
-    "close": "Fermer le menu"
+    "close": "Fermer le menu",
+    "games": "Jeux"
   },
   "footer": {
     "motto": "Le ballon doit voyager. Mais il doit savoir où il va.",
@@ -23,7 +24,8 @@
     "brand": "La marque Ndamba",
     "premium": "Premium",
     "rights": "Lemon Network Solutions",
-    "home": "Accueil Ndamba"
+    "home": "Accueil Ndamba",
+    "games": "Les jeux"
   },
   "app": {
     "home": "Accueil",

@@ -11,6 +11,10 @@ const Pricing = lazy(() => import('./surfaces/site/Pricing'))
 const Settings = lazy(() => import('./surfaces/site/Settings'))
 const Review = lazy(() => import('./surfaces/site/Review'))
 const Brand = lazy(() => import('./surfaces/site/Brand'))
+// Games (full screen, three.js loaded only here)
+const Games = lazy(() => import('./surfaces/site/Games'))
+const NjangiGame = lazy(() => import('./games/njangi/NjangiApp'))
+const LionceauxGame = lazy(() => import('./games/lionceaux/LionceauxApp'))
 // Mola (onboarding + action agent)
 const Onboarding = lazy(() => import('./surfaces/mola/Onboarding'))
 const MolaHub = lazy(() => import('./surfaces/mola/MolaHub'))
@@ -55,7 +59,10 @@ export default function App() {
               <Route path="premium" element={<Pricing />} />
               <Route path="revue" element={<Review />} />
               <Route path="marque" element={<Brand />} />
+              <Route path="jeux" element={<Games />} />
             </Route>
+            <Route path="jeux/code-njangi/*" element={<NjangiGame />} />
+            <Route path="jeux/lionceaux/*" element={<LionceauxGame />} />
             <Route path="bienvenue" element={<Onboarding />} />
             <Route path="app" element={<AppLayout />}>
               <Route index element={<Home />} />

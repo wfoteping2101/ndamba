@@ -130,7 +130,7 @@ export function buildPitch(stage: Stage, frame: Frame, p: PitchGeom, surround: S
   ground.position.set(frame.x(cx), 0, frame.z(H / 2))
   group.add(ground)
   // run-off and surround
-  const outer = new THREE.Mesh(new THREE.PlaneGeometry(W + 60, H + 60), new THREE.MeshStandardMaterial({ color: surround === 'stadium' ? '#2f6b30' : '#4a7f3c', roughness: 1 }))
+  const outer = new THREE.Mesh(new THREE.PlaneGeometry(W + 700, H + 700), new THREE.MeshStandardMaterial({ color: surround === 'stadium' ? '#2f6b30' : '#4a7f3c', roughness: 1 }))
   outer.rotation.x = -Math.PI / 2
   outer.position.set(ground.position.x, -0.02, ground.position.z)
   outer.receiveShadow = true
