@@ -9,7 +9,7 @@ import { BOOKS } from '../../lib/config'
 import { GameFrame, TopBar } from '../shared/ui'
 import { allDrillProgress, recentAttempts } from '../shared/save'
 import BackdropScene from './BackdropScene'
-import { LESSONS_ORDERED } from './drills/catalog'
+import { LESSON_IDS, LESSONS_ORDERED } from './drills/catalog'
 
 const MODES: { key: string; to: string; icon: ReactNode }[] = [
   { key: 'academie', to: 'academie', icon: <GraduationCap size={22} strokeWidth={1.75} /> },
@@ -25,7 +25,7 @@ export default function Home() {
   useDocumentTitle(t('hub.codeNjangi.title'))
   const progress = useLiveQuery(() => allDrillProgress(), [], [])
   const attempts = useLiveQuery(() => recentAttempts('njangi', 20), [], [])
-  const done = progress.filter((p) => Object.values(p.done).some(Boolean)).length
+  const done = progress.filter((p) => LESSON_IDS.has(p.id) && Object.values(p.done).some(Boolean)).length
   const withIndice = attempts.filter((a) => a.indice !== null).slice(0, 5)
   const indice = withIndice.length ? withIndice.reduce((s, a) => s + (a.indice ?? 0), 0) / withIndice.length : null
   const doneIds = new Set(progress.filter((p) => Object.values(p.done).some(Boolean)).map((p) => p.id))
@@ -37,7 +37,7 @@ export default function Home() {
       <TopBar back="/jeux" title={t('hub.codeNjangi.title')} />
       <div className="relative mx-auto w-full max-w-5xl px-4 pb-16 pt-24 sm:px-6 sm:pt-28">
         <p className="text-[13px] font-semibold text-sun-300">{t('hub.codeNjangi.tagline')}</p>
-        <h1 className="mt-2 max-w-2xl text-balance text-[34px] font-semibold leading-[1.05] sm:text-[48px]">{t('njangi.title')}<span className="text-cream/60"> : {t('njangi.subtitle').toLowerCase()}</span></h1>
+        <h1 className="mt-2 max-w-2xl text-balance text-[34px] font-semibold leading-[1.05] sm:text-[48px]">{t('njangi.title')}<span className="text-cream/60">{lang === 'fr' ? ' : ' : ': '}{t('njangi.subtitle').toLowerCase()}</span></h1>
         <p className="mt-3 max-w-xl text-[16px] leading-relaxed text-cream/75">{t('hub.codeNjangi.body')}</p>
 
         <div className="mt-7 grid gap-3 sm:grid-cols-[1.2fr_1fr]">

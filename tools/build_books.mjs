@@ -156,6 +156,10 @@ function readerDrawer(toc) {
   return `<div class="drawer" id="drawer" hidden><div class="drawer-inner"><button id="close" type="button">Fermer</button><a class="drawer-home" href="./">Couverture et sommaire</a><ol>${toc}</ol></div></div>`
 }
 
+/** A chapter of tome 1 that the Lionceaux game plays (it has a script), and the button to it. */
+const PLAYABLE_T1 = (no) => fs.existsSync(path.join(ROOT, 'app', 'src', 'games', 'lionceaux', 'chapters', `ch${String(no).padStart(2, '0')}.ts`))
+const gameLink = (no) => `<p class="game-link" style="margin:2.2em 0 0;text-align:center"><a href="/jeux/lionceaux/chapitre/${no}" style="display:inline-block;padding:.75em 1.3em;border-radius:999px;background:#E3A92B;color:#101814;font-weight:600;text-decoration:none">Jouer ce chapitre dans le jeu Lionceaux</a></p>`
+
 function pagerNav(prev, next) {
   return `<nav class="pager" aria-label="Chapitres précédent et suivant">${prev ? `<a class="prev" href="${prev.href}" rel="prev"><small>&#8592; Précédent</small><b>${prev.label}</b></a>` : '<span></span>'}${next ? `<a class="next" href="${next.href}" rel="next"><small>Suivant &#8594;</small><b>${next.label}</b></a>` : '<span></span>'}</nav>`
 }
@@ -305,7 +309,7 @@ async function buildTome1() {
     const next = i < chapters.length - 1 ? { href: chHref(chapters[i + 1]), label: `${chapters[i + 1].no}. ${esc(chapters[i + 1].title)}` } : { href: './#fin', label: 'Fin du tome 1' }
     const html = `${readerHead({ title: `${c.no}. ${c.title} | Lionceaux, tome 1`, desc: c.summary || '', og: im ? `/book/tome1/img/${im.web}` : '/book/tome1/img/cover.jpg', css: TOME1_WEB_CSS })}<body class="tome1 paged" data-page="ch-${id}">
 ${readerBar({ back: './', backLabel: 'Sommaire', title: T1_TITLE })}
-<main>${opener}<article class="chapter" id="ch-${id}" data-no="${c.no}"><header><div class="kicker">Chapitre ${c.no} sur ${chapters.length}</div><h1 class="ch-title">${frenchTypo(esc(c.title))}</h1></header>${im ? `<figure class="illus">${picture(im, ALT[`ch${id}`] || c.title, { lazy: !first && i > 0 ? true : false })}</figure>` : ''}<div class="story">${story}</div>${carnet}</article>
+<main>${opener}<article class="chapter" id="ch-${id}" data-no="${c.no}"><header><div class="kicker">Chapitre ${c.no} sur ${chapters.length}</div><h1 class="ch-title">${frenchTypo(esc(c.title))}</h1></header>${im ? `<figure class="illus">${picture(im, ALT[`ch${id}`] || c.title, { lazy: !first && i > 0 ? true : false })}</figure>` : ''}<div class="story">${story}</div>${carnet}</article>${PLAYABLE_T1(c.no) ? gameLink(c.no) : ''}
 ${pagerNav(prev, next)}</main>
 ${readerDrawer(toc)}
 <script>${PAGED_JS('njangi.tome1')}</script></body></html>`
@@ -320,7 +324,7 @@ ${readerBar({ back: '/app/livres', backLabel: 'Ndamba', title: T1_TITLE })}
 ${characters ? `<figure class="illus wide">${picture(characters, ALT['sheet-brothers'] || 'Kaydoudou et BriBri')}<figcaption>BriBri, 12 ans, le grand frère, et Kaydoudou, 10 ans, le petit frère.</figcaption></figure>` : ''}
 ${family ? `<figure class="illus wide">${picture(family, ALT['sheet-adults'] || 'La famille')}<figcaption>Mami Nyanga, Tonton Fokou, Papa et Maman.</figcaption></figure>` : ''}
 <nav class="toc" id="toc"><h2>Les ${chapters.length} chapitres</h2><ol>${toc}</ol></nav>
-<footer class="end" id="fin"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><p>À suivre : <b>Lionceaux, tome 2 : La Tanière des Lionceaux</b>.</p><a href="/app/joueur/lecons">Les ${chapters.length} Leçons du Ballon dans l’application</a></footer>
+<footer class="end" id="fin"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><p>À suivre : <b>Lionceaux, tome 2 : La Tanière des Lionceaux</b>.</p><a href="/app/joueur/lecons">Les ${chapters.length} Leçons du Ballon dans l’application</a> <a href="/jeux/lionceaux">Le jeu : Lionceaux, le ballon qui voyage</a></footer>
 </main>
 ${readerDrawer(toc)}
 <script>${PAGED_JS('njangi.tome1')}</script></body></html>`
@@ -470,7 +474,7 @@ ${readerBar({ back: '/app/livres', backLabel: 'Ndamba', title: M_TITLE })}
 ${mCover ? `<section class="cover-block">${picture(mCover, 'Couverture du Code Njangi : un stade africain au crépuscule, les passes de l’équipe dessinent des triangles lumineux vers le but.', { cls: 'cover', lazy: false, sizes: '(max-width: 760px) 78vw, 420px' })}<h1>Le Code Njangi</h1><p class="subtitle">Posséder avec intention</p><p class="heroes">La méthode africaine pour gagner la Coupe du monde</p><p class="author">William Foteping</p>` : `<section class="cover-block"><h1>Le Code Njangi</h1><p class="subtitle">Posséder avec intention</p>`}
 <div class="start"><a class="resume" id="resume" href="ch-00.html" hidden><small>Reprendre la lecture</small><b></b></a><a class="begin" href="ch-00.html">Commencer la lecture</a></div></section>
 <nav class="toc" id="toc"><h2>Sommaire</h2><ol>${tocItems}</ol></nav>
-<footer class="end" id="fin"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><a href="/app/exercices">Les ${drills.length} exercices dans l’application</a></footer>
+<footer class="end" id="fin"><p>« Le ballon doit voyager. Mais il doit savoir où il va. »</p><a href="/app/exercices">Les ${drills.length} exercices dans l’application</a> <a href="/jeux/code-njangi">Le jeu : Le Code Njangi</a></footer>
 </main>
 ${readerDrawer(tocItems)}
 ${drillMap}<script>${PAGED_JS('njangi.methode')}</script></body></html>`

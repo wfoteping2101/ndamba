@@ -18,7 +18,7 @@
     "lionceaux": {
       "title": "Lionceaux : le ballon qui voyage",
       "tagline": "Le ballon qui voyage.",
-      "body": "Entrez dans l'aventure de Kaydoudou et Bribri. Découvrez leur univers et vivez leur histoire à travers le football.",
+      "body": "Entrez dans l'aventure de Kaydoudou et BriBri. Découvrez leur univers et vivez leur histoire à travers le football.",
       "cta": "Commencer l'aventure",
       "facts": "L'histoire du tome 1, chapitre par chapitre, de Bonamoussadi au monde"
     },
@@ -226,7 +226,8 @@
       "nextLevel": "Niveau {{level}}",
       "nextDrill": "Exercice suivant",
       "replay": "Revoir l'action",
-      "backToList": "Tous les exercices"
+      "backToList": "Tous les exercices",
+      "brief": "Revoir la consigne"
     }
   },
   "score": {
@@ -409,7 +410,8 @@
     "adaptation": "Défi du jeu inspiré de la Leçon du Ballon n°40 « Le but du Njangi » (Lionceaux, tome 1) et de la fiche G06 du Code Njangi. Le compte de dix passes est une règle du jeu : le livre fait toucher les onze joueurs, la fiche en demande au moins huit.",
     "lessonLink": "Leçon du Ballon n°40 dans le tome 1",
     "passes": "{{n}} passes",
-    "touched": "{{n}} joueurs sur 11"
+    "touched": "{{n}} joueurs sur 11",
+    "rulesLabel": "La règle du jeu"
   },
   "tableau": {
     "title": "Tableau du coach",
@@ -483,7 +485,7 @@
   },
   "analyse": {
     "title": "Analyse vidéo",
-    "intro": "Chaque essai de l'Académie et du Défi est enregistré. Revoyez-le au ralenti, image par image, avec la trajectoire du ballon, les couloirs de passe du porteur et les lignes adverses : les arrêts sur image du chapitre 6, sur vos propres actions.",
+    "intro": "Chaque essai de l'Académie et du Défi est enregistré. Revoyez-le au ralenti, image par image, avec la trajectoire du ballon, les couloirs de passe du porteur et les lignes adverses : les arrêts sur image du chapitre 6 et la vidéo de l'analyste du chapitre 33, sur vos propres actions.",
     "emptyTitle": "Aucune action enregistrée pour l'instant",
     "emptyBody": "Jouez un exercice : votre essai sera prêt à être analysé ici. Les six derniers sont gardés sur cet appareil.",
     "timeline": "Ligne du temps",

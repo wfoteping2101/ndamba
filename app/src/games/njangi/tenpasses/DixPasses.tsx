@@ -20,5 +20,5 @@ export default function DixPasses() {
     return challengeDrill({ fr: text('fr'), en: text('en') })
   }, [])
   const g = useMemo(() => ({ ...CHALLENGE_GAMEPLAY, adaptation: t('dix.adaptation') }), [t])
-  return <LessonScreen drill={drill} g={g} back="/jeux/code-njangi" chain sheet={{ href: tome1Chapter(40), label: t('dix.lessonLink') }} />
+  return <LessonScreen drill={drill} g={g} back="/jeux/code-njangi" chain sheet={{ href: tome1Chapter(40), label: t('dix.lessonLink') }} rulesLabel={t('dix.rulesLabel')} docTitle={t('dix.title')} />
 }

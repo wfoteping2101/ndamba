@@ -2,8 +2,9 @@
 // its failures, and the mistakes the sheet's coaching points talk about. Every rule reads world
 // events or the Tagger (the book's fourteen codes), never a guess about the player's intentions.
 import { dist2, segmentsCross, type V2 } from '../../engine/sim/math'
+import { passOptions } from '../../engine/sim/lanes'
 import type { Tagger } from '../../engine/sim/tagger'
-import type { SimEvent } from '../../engine/sim/types'
+import type { Player, SimEvent } from '../../engine/sim/types'
 import type { World } from '../../engine/sim/world'
 import type { DrillGameplay, Mistake, ScoreEvent } from './types'
 
@@ -188,7 +189,11 @@ export class DrillScorer {
     const own = w.owner()
     if (own && this.ours(own.team) && !own.gk) {
       const held = (own.meta.heldFor as number) ?? 0
-      if (held > 3.2 && !this.poss.held) { this.poss.held = true; this.mistake('held_too_long') }
+      if (held > 3.2 && !this.poss.held) {
+        this.poss.held = true
+        // only when someone could take it: a team-mate with an open lane
+        if (passOptions(w, own).some((o) => o.receiver && o.margin > 0.45)) this.mistake('held_too_long')
+      }
     }
     // after a loss: more than five seconds without winning it back
     if (this.lossAt !== null && !this.slowFlagged && w.t - this.lossAt > 5 && w.possTeam !== 'a') {
@@ -198,16 +203,36 @@ export class DrillScorer {
   }
 
   /** The session tells the scorer about the user's pass decisions (for the pausa and touches). */
-  userKick(by: string, margin = 1) {
+  userKick(by: string, margin = 1, to?: string) {
     const p = this.w.get(by)
     if (!p) return
     this.userPassMargin = { by, margin, t: this.w.t }
+    const r = to ? this.w.get(to) : null
+    if (r) this.supportShape(p, r)
     const limit = p.team === 'n' ? this.g.neutralTouches ?? this.g.touches : this.g.touches
     // p.touches counts the control; the kick itself adds one when it happens
     if (limit && p.touches + 1 > limit) {
       this.mistake('too_many_touches')
       if (this.g.fail?.includes('touches_exceeded')) this.failPossession('touches_exceeded')
     }
+  }
+
+  /**
+   * The receiver's support, judged as the pass leaves (the sheets' coaching on angles): hidden behind an
+   * opponent standing close to him on the line of the pass (no angle), or behind a team-mate on the same
+   * line, who covers him. A game reading of the book's notions: it gives feedback, it never fails a turn.
+   */
+  private supportShape(c: Player, r: Player) {
+    const len = dist2(c.pos, r.pos)
+    if (len < 3) return
+    const onLine = (q: Player, from: number) => {
+      const u = ((q.pos.x - c.pos.x) * (r.pos.x - c.pos.x) + (q.pos.y - c.pos.y) * (r.pos.y - c.pos.y)) / (len * len)
+      if (u < from || u > 0.98) return false
+      const px = c.pos.x + (r.pos.x - c.pos.x) * u, py = c.pos.y + (r.pos.y - c.pos.y) * u
+      return Math.hypot(q.pos.x - px, q.pos.y - py) < 0.8
+    }
+    if (this.w.opponents(c).some((o) => !o.gk && onLine(o, 0.6) && dist2(o.pos, r.pos) < 3)) this.mistake('no_angle')
+    else if (this.w.players.some((q) => q !== c && q !== r && q.team === c.team && onLine(q, 0.15))) this.mistake('same_line')
   }
 
   private failPossession(reason: string) {

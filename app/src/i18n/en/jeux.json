@@ -1,0 +1,524 @@
+{
+  "docTitle": "Games",
+  "nav": "Games",
+  "hub": {
+    "eyebrow": "The Ndamba games",
+    "title": "Two books, two games.",
+    "subtitle": "Learn the method by playing, then live the story of Kaydoudou and BriBri on the pitch.",
+    "guest": "No account, no subscription. Your progress stays on this device.",
+    "fromBook": "From the book",
+    "readBook": "Read the book",
+    "codeNjangi": {
+      "title": "The Njangi Code: the art of possession",
+      "tagline": "Learn to see football differently.",
+      "body": "Observe. Decide. Make the ball travel. Master the tactical principles of The Njangi Code through interactive training.",
+      "cta": "Step onto the pitch",
+      "facts": "64 drills from the book, 6 modes, the Njangi Index from chapter 32"
+    },
+    "lionceaux": {
+      "title": "Lionceaux: Le Ballon qui voyage",
+      "tagline": "The ball that travels.",
+      "body": "Step into the adventure of Kaydoudou and BriBri. Discover their world and live their story through football.",
+      "cta": "Start the adventure",
+      "facts": "The story of book 1, chapter by chapter, from Bonamoussadi to the world"
+    },
+    "controls": "Keyboard, gamepad or touch screen",
+    "requirements": "Works in the browser, on computer, tablet and phone."
+  },
+  "shell": {
+    "back": "Back",
+    "pause": "Pause",
+    "resume": "Resume",
+    "camera": "Change camera",
+    "settings": "Settings",
+    "quit": "Quit",
+    "loading": "The pitch is getting ready",
+    "webglTitle": "This browser can't display 3D",
+    "webglBody": "The Ndamba games need WebGL. Try a recent browser, or turn on hardware acceleration.",
+    "cams": {
+      "tactical": "Tactical",
+      "broadcast": "Broadcast",
+      "player": "Player",
+      "cinematic": "Cinematic",
+      "free": "Free"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "sound": "Sound",
+    "volume": "Volume",
+    "mute": "Mute",
+    "ambience": "Ambience",
+    "quality": "Graphics quality",
+    "qualities": {
+      "low": "Light",
+      "medium": "Balanced",
+      "high": "High"
+    },
+    "qualityHint": "Quality drops on its own if the picture stutters.",
+    "reducedMotion": "Reduce animations",
+    "subtitles": "Subtitles",
+    "subtitleSize": "Subtitle size",
+    "sizes": {
+      "s": "Small",
+      "m": "Medium",
+      "l": "Large"
+    },
+    "controls": "Controls",
+    "close": "Close"
+  },
+  "keys": {
+    "title": "Controls",
+    "move": "Move",
+    "pass": "Pass",
+    "through": "Pass into the run",
+    "shoot": "Shoot",
+    "sprint": "Sprint",
+    "switch": "Switch player",
+    "tackle": "Tackle",
+    "camera": "Camera",
+    "pause": "Pause",
+    "skill": "Skill move",
+    "tapMate": "Tap a teammate",
+    "tapGoal": "Tap the goal",
+    "tapSpace": "Tap the grass to play into space",
+    "keyboard": "Keyboard",
+    "gamepad": "Gamepad",
+    "touch": "Touch",
+    "mouse": "Mouse"
+  },
+  "levels": {
+    "facile": "Easy",
+    "normal": "Normal",
+    "difficile": "Hard"
+  },
+  "levelHint": {
+    "facile": "Slow defenders, passing lanes drawn on the pitch.",
+    "normal": "The book's defenders, no visual help.",
+    "difficile": "Defenders who anticipate and press."
+  },
+  "njangi": {
+    "title": "The Njangi Code",
+    "subtitle": "The art of possession",
+    "modesTitle": "Six ways to train",
+    "indiceTitle": "Your Njangi Index",
+    "indiceEmpty": "Play a drill to get your first Index.",
+    "indiceSource": "Calculated with the formula from chapter 32 of the book.",
+    "modes": {
+      "academie": {
+        "title": "Njangi Academy",
+        "body": "The 64 drills from the book, each one turned into a lesson: instructions, demonstration, your try, feedback."
+      },
+      "tableau": {
+        "title": "Coach's board",
+        "body": "Place the players, draw the arrows, then watch your idea come to life in 3D."
+      },
+      "lecture": {
+        "title": "Reading the game",
+        "body": "The game freezes. Choose the intention, then the receiver. The geometry decides."
+      },
+      "dixPasses": {
+        "title": "Ten-pass challenge",
+        "body": "From the keeper to the goal in ten passes, against a defending block."
+      },
+      "analyse": {
+        "title": "Video analysis",
+        "body": "Watch your moves again in slow motion, frame by frame, with the trajectories."
+      },
+      "parcours": {
+        "title": "Development path",
+        "body": "Your competences, your progress and the next drill to work on."
+      }
+    },
+    "continue": "Resume",
+    "next": "Recommended next"
+  },
+  "academie": {
+    "title": "Njangi Academy",
+    "subtitle": "Every drill in the book is a lesson. Watch the demonstration, then it's your turn.",
+    "families": {
+      "all": "All",
+      "technique": "Technique",
+      "rondo": "Rondos",
+      "position": "Positional games",
+      "ssg": "Small-sided games",
+      "lsg": "Large-sided games",
+      "phase": "Phases of play",
+      "transition": "Transitions",
+      "finishing": "Finishing"
+    },
+    "done": "Completed",
+    "levelDone": "Completed on {{level}}",
+    "notPlayed": "Not played yet",
+    "play": "Play",
+    "sheet": "The drill sheet in the book",
+    "count": "{{done}} of {{total}} completed"
+  },
+  "lesson": {
+    "objective": "Objective",
+    "howToScore": "How to succeed",
+    "rules": "The book's rule",
+    "adaptation": "Adapted for the game",
+    "level": "Level",
+    "control": "You control",
+    "controls": {
+      "decisions": "The decisions",
+      "carrier": "The ball carrier",
+      "decisionsHint": "You choose every pass, and the team moves into position.",
+      "carrierHint": "You move the player on the ball, and you defend."
+    },
+    "demo": "Watch the demonstration",
+    "play": "Play",
+    "replayDemo": "Watch again",
+    "slow": "Slow motion",
+    "yourTurn": "Your turn",
+    "step": "Action {{n}} of {{total}}",
+    "demoDone": "That's the sequence. Now it's your turn to play it.",
+    "kinds": {
+      "pass": "{{from}} passes to {{to}}",
+      "passSpace": "{{from}} plays into space",
+      "run": "{{from}} makes a run",
+      "dribble": "{{from}} carries the ball",
+      "shot": "{{from}} shoots",
+      "press": "{{from}} presses"
+    },
+    "target": {
+      "points": "{{n}} points",
+      "goals": "{{n}} goals",
+      "sequences": "{{n}} flawless sequences",
+      "regains": "{{n}} balls won back",
+      "attempts": "{{success}} successes in {{n}} attempts"
+    },
+    "hud": {
+      "points": "{{n}} of {{target}} points",
+      "goals": "{{n}} of {{target}} goals",
+      "sequences": "{{n}} of {{target}} sequences",
+      "regains": "{{n}} of {{target}} balls won back",
+      "attempts_one": "Attempt {{n}} of {{total}}, {{count}} success",
+      "attempts_other": "Attempt {{n}} of {{total}}, {{count}} successes",
+      "time": "Time"
+    },
+    "tipDecisions": "Tap a teammate to pass them the ball. On the keyboard: a direction, then Space.",
+    "tipCarrier": "Move the ball carrier, and pass by tapping a teammate. On the keyboard: arrows, Space, K to shoot.",
+    "hint": "The sequence calls for a pass to {{who}}.",
+    "pass": "Pass",
+    "through": "Into the run",
+    "shoot": "Shoot",
+    "tackle": "Tackle",
+    "switch": "Switch",
+    "sprint": "Sprint",
+    "result": {
+      "success": "Drill completed",
+      "fail": "Not yet",
+      "successBody": "Objective reached on {{level}}.",
+      "failBody": "The objective was not reached. The book's drill sheet tells you what to fix.",
+      "points": "Points",
+      "goals": "Goals",
+      "attempts": "Successes",
+      "time": "Duration",
+      "indice": "Njangi Index for the session",
+      "indiceNote": "Calculated from your actions with the book's formula (chapter 32).",
+      "indiceTooFew": "Too few actions to calculate an Index.",
+      "coaching": "What the sheet says",
+      "noMistake": "No mistakes spotted. The ball travelled.",
+      "times": "×{{n}}",
+      "retry": "Try again",
+      "nextLevel": "Level {{level}}",
+      "nextDrill": "Next drill",
+      "replay": "Watch the action again",
+      "backToList": "All drills",
+      "brief": "See the briefing again"
+    }
+  },
+  "score": {
+    "consecutive_passes": "{{n}} passes in a row",
+    "split_pass": "Pass between two defenders",
+    "line_break": "Line broken",
+    "goal": "Goal",
+    "goal_after": "Goal after the condition",
+    "all_touched": "Everyone touched the ball",
+    "regain5": "Won back within 5 seconds",
+    "switch": "Switch of play",
+    "zone_entry": "Zone reached",
+    "pause_play": "Pausa: the defender came, the pass went through",
+    "third_man": "Third man",
+    "fix2": "Two opponents pinned",
+    "player_touch": "{{who}} touched the ball",
+    "cross_line": "Line crossed",
+    "shot_on_target": "Shot on target",
+    "sequence": "Sequence completed"
+  },
+  "mistake": {
+    "lane_closed": "Lane closed: an opponent was cutting the passing lane.",
+    "pressed_on_arrival": "The receiver was under pressure when the ball arrived.",
+    "polite_pass": "Polite pass: a forward pass was open.",
+    "too_many_touches": "Too many touches.",
+    "held_too_long": "The ball was held too long while a teammate was free.",
+    "no_angle": "No passing angle.",
+    "same_line": "Two players on the same line.",
+    "wrong_receiver": "That is not the receiver in the sequence.",
+    "early_pass": "Pass too early: the run had not started.",
+    "slow_regain": "More than five seconds to win the ball back.",
+    "lost_dribble": "Ball lost on a dribble while the second defender was closing in.",
+    "shot_from_far": "Shot from too far out.",
+    "ball_out": "Ball out of play."
+  },
+  "fail": {
+    "loss": "Ball lost",
+    "out": "Ball out",
+    "touches_exceeded": "Too many touches",
+    "timeout": "Time's up",
+    "shot_saved": "Saved by the keeper",
+    "conceded": "Goal conceded",
+    "dead": "Ball stopped"
+  },
+  "between": {
+    "ok": {
+      "goal": "Goal",
+      "sequence": "Sequence completed",
+      "zone_entry": "Zone reached",
+      "cross_line": "Line crossed",
+      "shot_on_target": "Shot on target",
+      "regain5": "Ball won back",
+      "goal_after": "Goal",
+      "out": "Off we go again",
+      "dead": "Off we go again"
+    },
+    "ko": {
+      "loss": "Ball lost, try again",
+      "out": "Ball out, try again",
+      "touches_exceeded": "Too many touches, try again",
+      "timeout": "Time's up",
+      "shot_saved": "Saved by the keeper",
+      "conceded": "Goal conceded",
+      "dead": "Try again",
+      "goal": "Try again",
+      "intercepted": "Pass intercepted",
+      "blocked": "Pass blocked",
+      "stopped": "The ball stopped",
+      "broken": "The move broke down, try again"
+    }
+  },
+  "intentions": {
+    "sortir": {
+      "name": "Build out",
+      "short": "Beat the press",
+      "book": "Build out: the ball is with the keeper or the defenders and the opponent is pressing. It is done when the free man receives behind the first line. “Playing out short is a means, not a dogma.” (chapter 5)"
+    },
+    "progresser": {
+      "name": "Progress",
+      "short": "Break a line",
+      "book": "Progress: a teammate can receive facing forward with space, free between the lines, or space opens in behind. Look forward first. (chapter 5)"
+    },
+    "fixer": {
+      "name": "Pin",
+      "short": "Draw them in to free a teammate",
+      "book": "Pin: the line ahead is closed or the block has shifted across. Draw them to one side to free a teammate on the other. (chapter 5)"
+    },
+    "finir": {
+      "name": "Finish",
+      "short": "Shoot, or find someone in the box",
+      "book": "Finish: the ball enters the final third with an advantage. Shoot from the finishing zone or find a teammate at the edge of the box. (chapter 5)"
+    },
+    "respirer": {
+      "name": "Breathe",
+      "short": "Keep it without risk",
+      "book": "Breathe: keep the ball with the safest pass and make the opponent run. “Breathing is not hanging on, it is making the opponent run” (chapter 5)"
+    }
+  },
+  "lecture": {
+    "title": "Reading the game",
+    "eyebrow": "The game freezes",
+    "question": "What is your pass setting up?",
+    "intro": "A real situation stops at the moment our player receives the ball. You read the game the way the book teaches it: first the intention, then the receiver. The geometry of the passing lanes decides, then the action plays out.",
+    "step1": "Choose the intention, one of the five in The Njangi Code.",
+    "step2": "Tap the teammate who serves it, or the goal to shoot.",
+    "step3": "Read the feedback, then watch how the action continues.",
+    "start": "Start the series",
+    "chapter": "Chapter 5: the five intentions",
+    "progress": "Situation {{n}} of {{total}}, {{score}} points",
+    "askIntention": "What is your pass setting up?",
+    "askReceiver": "{{intention}}: who gets it? Tap the teammate.",
+    "tapHint": "Tap a numbered teammate (keys 1 to 9 on the keyboard).",
+    "shoot": "Shoot",
+    "grade": {
+      "0": "Go over it again",
+      "1": "Not yet",
+      "2": "Good idea, wrong pass",
+      "3": "Well read",
+      "4": "Perfect reading"
+    },
+    "points_one": "{{count}} point out of {{max}}",
+    "points_other": "{{count}} points out of {{max}}",
+    "check": {
+      "intention": "Intention possible here",
+      "best": "The strongest intention: {{best}}",
+      "serves": "The choice serves the intention",
+      "lane": "Passing lane open"
+    },
+    "notes": {
+      "notValid": {
+        "sortir": "Nobody is pressing here: there is no press to get out of.",
+        "progresser": "No forward pass is open with space for the receiver.",
+        "fixer": "The line ahead is not closed: no need to draw them in, you can go forward.",
+        "finir": "No advantage to finish with: too far out, or the angle is closed.",
+        "respirer": "Breathing here, under pressure and close to our goal, is playing with fire."
+      },
+      "betterIntention": "The strongest intention here was {{best}}.",
+      "shotFar": "Shot from too far out: the finishing zone is closer to goal.",
+      "shotBlocked": "A defender is blocking the line of the shot.",
+      "laneClosed": "Lane closed: {{who}} is cutting the passing lane.",
+      "laneTight": "Tight lane: the pass only just gets through.",
+      "pressedOnArrival": "The receiver will be under pressure when the ball arrives.",
+      "lineCrossed": "The pass breaks through an opposing line.",
+      "forcedLine": "A pass forced into a closed line: the most dangerous loss of all.",
+      "sidewaysGood": "A sideways pass is right when it serves Pin or Breathe.",
+      "notServing": {
+        "sortir": "This choice does not find the free man behind the first line.",
+        "progresser": "This choice does not move the ball forward.",
+        "fixer": "This choice draws nobody in and does not switch the play.",
+        "finir": "This choice leads to no shot and no ball into the box.",
+        "respirer": "This choice takes a risk: breathing means the safest pass."
+      }
+    },
+    "legend": "On the pitch: your pass in gold, the best answer as a dotted line, the lanes in green (open), yellow (tight) and red (closed).",
+    "playOut": "Watch what happens",
+    "next": "Next situation",
+    "finish": "See the summary",
+    "summaryEyebrow": "Series summary",
+    "summaryScore": "{{n}} points out of {{max}}",
+    "summaryHigh": "You read the game through the eyes of The Njangi Code.",
+    "summaryMid": "Your reading is coming along. Go back over the intentions you missed in chapter 5.",
+    "summaryLow": "Take your time: look forward first, then ask yourself what the pass is setting up.",
+    "table": {
+      "intention": "Expected intention",
+      "found": "Found"
+    },
+    "again": "New series"
+  },
+  "dix": {
+    "title": "Ten-pass challenge",
+    "subtitle": "From the keeper to the net: the Njangi goal",
+    "objective": "Start from the keeper, make the ball travel through at least ten completed passes, then score. Everyone puts in their share: if all eleven have touched the ball, the pot is full.",
+    "rules": [
+      "The ball starts from the keeper.",
+      "At least ten completed passes before the goal. A goal with fewer passes does not count for the challenge.",
+      "Every time the ball is lost, the sequence starts again from the keeper (drill sheet G06, part 2).",
+      "Six opponents defend: two forwards, one midfielder, three defenders, and their keeper.",
+      "Bonus: all our players touched the ball during the sequence."
+    ],
+    "adaptation": "A game challenge inspired by Ball Lesson no. 40 “The Njangi goal” (Lionceaux, book 1) and by drill sheet G06 of The Njangi Code. The count of ten passes is a game rule: the book has all eleven players touch the ball, and the sheet asks for at least eight.",
+    "lessonLink": "Ball Lesson no. 40 in book 1",
+    "passes": "{{n}} passes",
+    "touched": "{{n}} of 11 players",
+    "rulesLabel": "The game's rules"
+  },
+  "tableau": {
+    "title": "Coach's board",
+    "sub": "Draw, then play in 3D",
+    "tabs": {
+      "board": "Board",
+      "3d": "3D pitch"
+    },
+    "tools": {
+      "label": "Tools",
+      "move": "Move",
+      "a": "Add one of our players",
+      "b": "Add an opponent",
+      "n": "Add a neutral",
+      "ball": "Give the ball",
+      "pass": "Pass",
+      "run": "Run (off the ball)",
+      "dribble": "Carry or dribble",
+      "shot": "Shot",
+      "erase": "Erase"
+    },
+    "help": {
+      "move": "Drag a player to place them.",
+      "a": "Tap the pitch to add one of our players.",
+      "b": "Tap the pitch to add an opponent.",
+      "n": "Tap the pitch to add a neutral.",
+      "ball": "Tap the player who has the ball at the start.",
+      "pass": "Tap the passer, then the receiver or a space.",
+      "run": "Tap the player, then the spot they run to.",
+      "dribble": "Tap the ball carrier, then the spot they carry the ball to.",
+      "shot": "Tap the shooter, then the spot they aim for in the goal.",
+      "erase": "Tap a player or an arrow to erase it."
+    },
+    "together": "At the same time as the previous action",
+    "undo": "Undo",
+    "clear": "Clear all",
+    "size": "Pitch",
+    "sizes": {
+      "g20": "20 x 15 m square",
+      "g40": "40 x 30 m square",
+      "g60": "60 x 40 m square",
+      "third": "Final third",
+      "half": "Half pitch",
+      "full": "Full pitch"
+    },
+    "template": "Start from a diagram in the books",
+    "pickTemplate": "Choose a diagram",
+    "lesson": "Ball Lesson no. {{n}}: {{title}}",
+    "share": "Copy the board link",
+    "copied": "Link copied",
+    "play": "Play in 3D",
+    "stop": "Back to the board",
+    "reset": "Replay",
+    "opposition": "Opponents",
+    "opp": {
+      "shadow": "Mannequins",
+      "live": "Active defenders"
+    },
+    "playing": "Action {{n}} of {{total}}",
+    "done": "The idea works: the whole sequence has been played.",
+    "failed": "The idea doesn't work: {{reason}}.",
+    "passLine": "{{from}} to {{to}}",
+    "space": "space",
+    "open": "open lane ({{s}} s to spare)",
+    "tight": "tight lane ({{s}} s)",
+    "closed": "lane closed by {{who}}",
+    "lines_one": "{{count}} line broken",
+    "lines_other": "{{count}} lines broken",
+    "lost": "ball lost",
+    "boardLabel": "Board: {{players}} players, {{arrows}} actions"
+  },
+  "analyse": {
+    "title": "Video analysis",
+    "intro": "Every attempt in the Academy and the Challenge is recorded. Watch it again in slow motion, frame by frame, with the ball's path, the carrier's passing lanes and the opposing lines: the freeze frames of chapter 6 and the analyst's video of chapter 33, on your own actions.",
+    "emptyTitle": "No actions recorded yet",
+    "emptyBody": "Play a drill: your attempt will be ready to analyse here. The last six are kept on this device.",
+    "timeline": "Timeline",
+    "play": "Play",
+    "prevEvent": "Previous action",
+    "nextEvent": "Next action",
+    "frameBack": "Previous frame",
+    "frameForward": "Next frame",
+    "speed": "Speed",
+    "layers": {
+      "ball": "Ball path",
+      "lanes": "Passing lanes",
+      "lines": "Opposing lines",
+      "path": "Player's run"
+    },
+    "hint": "Tap a player to follow their run. Keyboard: Space, arrows (Shift for 10 frames), C for the camera."
+  },
+  "parcours": {
+    "title": "Development path",
+    "stars": "{{n}} stars out of {{max}}",
+    "intro": "Each drill sheet in the book trains specific competences and intentions. Your Academy stars draw your path here, and the game suggests the drill that will help you improve the most.",
+    "next": "To work on now: {{skill}}",
+    "skills": "The ten competences",
+    "skillsHint": "Share of the stars earned on the drills that train each competence. Levels 1 to 4, like the book's grid, measured here in the game.",
+    "level": "level {{n}}",
+    "intentions": "Intentions and reflexes",
+    "intentionsHint": "Drills completed among those that work on each intention.",
+    "indiceTrend": "Njangi Index over time",
+    "none": "Not played yet.",
+    "goLecture": "Play a series",
+    "goDix": "Take on the challenge",
+    "dixDone": "Challenge completed",
+    "dixTried": "{{n}} attempts",
+    "note": "These levels measure what you achieve in the game. They do not replace the coach's assessment on the pitch."
+  }
+}

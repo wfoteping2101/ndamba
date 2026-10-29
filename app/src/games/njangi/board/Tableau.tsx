@@ -128,7 +128,7 @@ export default function Tableau() {
                     <ul className="mt-1 space-y-0.5">
                       {st.passes.map((p, i) => (
                         <li key={i} className={cx(p.outcome === 'lost' ? 'text-clay-100' : 'text-cream/85')}>
-                          {t('tableau.passLine', { from: p.from, to: p.to || t('tableau.space') })} : {p.margin > 0.35 ? t('tableau.open', { s: p.margin.toFixed(1) }) : p.margin > 0 ? t('tableau.tight', { s: p.margin.toFixed(1) }) : t('tableau.closed', { who: p.interceptor ?? '' })}{p.lines ? `, ${t('tableau.lines', { count: p.lines })}` : ''}{p.outcome === 'lost' ? `, ${t('tableau.lost')}` : ''}
+                          {t('tableau.passLine', { from: p.from, to: p.to || t('tableau.space') })}{lang === 'fr' ? ' : ' : ': '}{p.margin > 0.35 ? t('tableau.open', { s: p.margin.toFixed(1) }) : p.margin > 0 ? t('tableau.tight', { s: p.margin.toFixed(1) }) : t('tableau.closed', { who: p.interceptor ?? '' })}{p.lines ? `, ${t('tableau.lines', { count: p.lines })}` : ''}{p.outcome === 'lost' ? `, ${t('tableau.lost')}` : ''}
                         </li>
                       ))}
                     </ul>

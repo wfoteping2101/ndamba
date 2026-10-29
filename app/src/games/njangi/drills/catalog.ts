@@ -11,6 +11,8 @@ const BY_ID = new Map<string, DrillGameplay>(GAMEPLAY_LIST.map((g) => [g.id, g])
 export const FAMILY_ORDER: Drill['family'][] = ['technique', 'rondo', 'position', 'ssg', 'lsg', 'phase', 'transition', 'finishing']
 
 export const LESSONS_ORDERED: Drill[] = DRILLS.slice().sort((a, b) => FAMILY_ORDER.indexOf(a.family) - FAMILY_ORDER.indexOf(b.family) || a.order - b.order)
+/** the ids of the 64 sheets (progress rows of other modes, like the Défi's DIX, are not lessons) */
+export const LESSON_IDS: ReadonlySet<string> = new Set(DRILLS.map((d) => d.id))
 
 export const lessonDrill = (id?: string) => DRILLS.find((d) => d.id === id)
 

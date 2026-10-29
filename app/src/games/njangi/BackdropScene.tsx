@@ -48,6 +48,5 @@ class Backdrop {
 export default function BackdropScene() {
   const still = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
   const { ref } = useMounted((el) => (hasWebGL() ? new Backdrop(el, !!still) : null), [])
-  useEffect(() => {}, [])
   return <div ref={ref} aria-hidden="true" className="absolute inset-0 opacity-70" />
 }

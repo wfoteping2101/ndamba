@@ -18,12 +18,14 @@ export interface DrillProgress {
 export interface AttemptLog {
   id?: number
   game: 'njangi' | 'lionceaux'
-  /** drill id, mode key ('lecture', 'dix-passes') or chapter id */
+  /** drill id (the Défi des dix passes is 'DIX'), mode key ('lecture') or chapter id */
   key: string
   at: number
   level: Level
   success: boolean
   points: number
+  /** the most points the mode gives (Lecture: 4 per situation) */
+  max?: number
   indice: number | null
   counts?: Record<string, number>
   mistakes: string[]

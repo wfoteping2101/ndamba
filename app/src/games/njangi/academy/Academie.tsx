@@ -9,7 +9,7 @@ import { Pitch } from '../../../ui'
 import type { Drill } from '../../../lib/types'
 import { GameFrame, TopBar } from '../../shared/ui'
 import { allDrillProgress, type DrillProgress } from '../../shared/save'
-import { FAMILY_ORDER, LESSONS_ORDERED } from '../drills/catalog'
+import { FAMILY_ORDER, LESSON_IDS, LESSONS_ORDERED } from '../drills/catalog'
 import { sheetUrl } from '../links'
 
 export default function Academie() {
@@ -19,7 +19,8 @@ export default function Academie() {
   const progress = useLiveQuery(() => allDrillProgress(), [], [])
   const byId = useMemo(() => new Map(progress.map((p) => [p.id, p])), [progress])
   const list = LESSONS_ORDERED.filter((d) => fam === 'all' || d.family === fam)
-  const done = progress.filter((p) => Object.values(p.done).some(Boolean)).length
+  // the 64 sheets only (the Défi des dix passes keeps its progress in the same table, as DIX)
+  const done = progress.filter((p) => LESSON_IDS.has(p.id) && Object.values(p.done).some(Boolean)).length
   return (
     <GameFrame className="overflow-y-auto bg-night-800">
       <TopBar back="/jeux/code-njangi" title={t('academie.title')} sub={t('academie.count', { done, total: LESSONS_ORDERED.length })} />
@@ -44,7 +45,8 @@ export default function Academie() {
 function Card({ d, p, lang }: { d: Drill; p?: DrillProgress; lang: 'fr' | 'en' }) {
   const { t } = useT('jeux')
   const text = lang === 'en' ? d.en : d.fr
-  const stars = p ? (['facile', 'normal', 'difficile'] as const).filter((l) => p.done[l]).length : 0
+  // as on the result screen: one star for Facile, two for Normal, three for Difficile (the best level won)
+  const stars = p ? (['facile', 'normal', 'difficile'] as const).reduce((n, l, i) => (p.done[l] ? i + 1 : n), 0) : 0
   return (
     <li className="flex flex-col overflow-hidden rounded-[18px] border border-white/10 bg-night-700">
       <Link to={d.id} className="block bg-[#1d6b45]/30 p-2" aria-label={`${t('academie.play')} ${d.id} ${text.title}`} tabIndex={-1}>

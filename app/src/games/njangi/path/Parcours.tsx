@@ -104,7 +104,7 @@ export default function Parcours() {
           </div>
           <div className="rounded-[18px] border border-white/10 bg-night-700 p-4">
             <p className="text-[13px] font-semibold text-cream/60">{t('lecture.title')}</p>
-            {lecture.length ? <p className="mt-1 text-[28px] font-semibold tabular-nums">{lecture[0].points}<span className="text-[15px] text-cream/50"> / 32</span></p> : <p className="mt-1 text-[14px] text-cream/70">{t('parcours.none')}</p>}
+            {lecture.length ? <p className="mt-1 text-[28px] font-semibold tabular-nums">{lecture[0].points}<span className="text-[15px] text-cream/50"> / {lecture[0].max ?? 32}</span></p> : <p className="mt-1 text-[14px] text-cream/70">{t('parcours.none')}</p>}
             <Link to="/jeux/code-njangi/lecture" className="mt-2 inline-flex min-h-[44px] items-center text-[14px] font-semibold text-cream/80 underline underline-offset-4">{t('parcours.goLecture')}</Link>
           </div>
           <div className="rounded-[18px] border border-white/10 bg-night-700 p-4">

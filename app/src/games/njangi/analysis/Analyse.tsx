@@ -53,7 +53,7 @@ export default function Analyse() {
 }
 
 function Player({ row, onBack }: { row: ReplayRow; onBack: () => void }) {
-  const { t } = useT('jeux')
+  const { t, lang } = useT('jeux')
   const webgl = useMemo(() => hasWebGL(), [])
   const { ref, inst: s } = useMounted((el) => (webgl ? new AnalyseSession(el, row.replay) : null), [row.id, webgl])
   const st = useStore(s)
@@ -97,7 +97,7 @@ function Player({ row, onBack }: { row: ReplayRow; onBack: () => void }) {
               <RoundButton label={t('analyse.nextEvent')} onClick={() => { const e = events.find((x) => x.rt > st.t + 0.2); if (e) s.seek(Math.max(0, e.rt - 1)) }}><SkipForward size={18} strokeWidth={1.75} /></RoundButton>
               <span className="ml-1 text-[13px] tabular-nums text-cream/75">{st.t.toFixed(2)} / {st.duration.toFixed(1)} s</span>
               <div className="ml-auto flex rounded-full bg-white/10 p-0.5" role="radiogroup" aria-label={t('analyse.speed')}>
-                {SPEEDS.map((v) => <button key={v} type="button" role="radio" aria-checked={st.speed === v} onClick={() => s.setSpeed(v)} className={cx('min-h-[40px] min-w-[44px] rounded-full px-2 text-[13px] font-semibold', st.speed === v ? 'bg-cream text-ink' : 'text-cream/80')}>{String(v).replace('.', ',')}x</button>)}
+                {SPEEDS.map((v) => <button key={v} type="button" role="radio" aria-checked={st.speed === v} onClick={() => s.setSpeed(v)} className={cx('min-h-[40px] min-w-[44px] rounded-full px-2 text-[13px] font-semibold', st.speed === v ? 'bg-cream text-ink' : 'text-cream/80')}>{lang === 'fr' ? String(v).replace('.', ',') : String(v)}x</button>)}
               </div>
             </div>
             <div className="mt-2 flex flex-wrap gap-1.5">

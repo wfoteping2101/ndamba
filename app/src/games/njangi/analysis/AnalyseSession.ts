@@ -1,6 +1,6 @@
 // Analyse vidéo: a recorded attempt replayed in 3D. Slow motion, frame by frame, jumps to the
 // events, the ball's path, a player's path, the carrier's passing lanes and the opponent lines at
-// any moment: the analyst's freeze frames of chapter 6, on our own actions.
+// any moment: the freeze frames of chapter 6 and the analyst's video of chapter 33, on our own actions.
 import { GameLoop, SimView } from '../../engine/runtime'
 import { OVERLAY_COLORS } from '../../engine/render/overlays'
 import type { CamMode } from '../../engine/render/cameraRig'

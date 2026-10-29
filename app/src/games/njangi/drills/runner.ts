@@ -283,7 +283,7 @@ export class LessonRunner {
       const fwd = passOptions(w, c).find((o) => o.progress >= 8 && o.margin > 0.45)
       if (fwd) this.scorer?.mistake('polite_pass')
     }
-    this.scorer?.userKick(c.id, a.margin)
+    this.scorer?.userKick(c.id, a.margin, rec?.id)
     w.requestPass(c, target, { receiver: rec?.id ?? null, arrive: through || !receiver ? 4 : undefined, by: 'user' })
     this.hooks.cue?.('kick')
     return true

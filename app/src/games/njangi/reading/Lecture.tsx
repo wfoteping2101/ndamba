@@ -43,7 +43,7 @@ export default function Lecture() {
   // save the series
   useEffect(() => {
     if (st?.phase !== 'summary') return
-    logAttempt({ game: 'njangi', key: 'lecture', at: Date.now(), level: 'normal', success: st.score >= st.max * 0.6, points: st.score, indice: null, mistakes: st.answers.filter((a) => !a.valid).map((a) => `intention:${a.intention}`) })
+    logAttempt({ game: 'njangi', key: 'lecture', at: Date.now(), level: 'normal', success: st.score >= st.max * 0.6, points: st.score, max: st.max, indice: null, mistakes: st.answers.filter((a) => !a.valid).map((a) => `intention:${a.intention}`) })
   }, [st?.phase]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (

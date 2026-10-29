@@ -41,13 +41,17 @@ export interface LessonScreenProps {
   sheet?: { href: string; label: string }
   /** show the running sequence: passes and players who touched it */
   chain?: boolean
+  /** the heading over the rules when they are not the book's (the Défi's rules are the game's) */
+  rulesLabel?: string
+  /** the browser tab's title, when the drill id should not lead it */
+  docTitle?: string
 }
 
-export function LessonScreen({ drill, g: given, back = '/jeux/code-njangi/academie', sheet, chain, kicker }: LessonScreenProps) {
+export function LessonScreen({ drill, g: given, back = '/jeux/code-njangi/academie', sheet, chain, kicker, rulesLabel, docTitle }: LessonScreenProps) {
   const { t, lang } = useT('jeux')
   const text: DrillText = lang === 'en' ? drill.en : drill.fr
   const g = useMemo(() => given ?? gameplayFor(drill), [drill, given])
-  useDocumentTitle(`${drill.id} ${text.title}`)
+  useDocumentTitle(docTitle ?? `${drill.id} ${text.title}`)
   const [level, setLevel] = useState<Level>('normal')
   const [control, setControl] = useState<'decisions' | 'carrier'>(g.control)
   const [settings, setSettings] = useState(false)
@@ -94,7 +98,7 @@ export function LessonScreen({ drill, g: given, back = '/jeux/code-njangi/academ
         </>} />
 
       {st && session && st.phase === 'brief' && (
-        <Brief panelRef={setPanelEl} kicker={kicker} sheet={sheet ?? { href: sheetUrl(drill), label: t('academie.sheet') }} drill={drill} text={text} g={g} level={level} setLevel={setLevel} control={control} setControl={setControl}
+        <Brief panelRef={setPanelEl} kicker={kicker} rulesLabel={rulesLabel} sheet={sheet ?? { href: sheetUrl(drill), label: t('academie.sheet') }} drill={drill} text={text} g={g} level={level} setLevel={setLevel} control={control} setControl={setControl}
           onDemo={() => { sfx('tap'); session.startDemo() }} onPlay={() => { sfx('whistle'); session.startPlay() }} />
       )}
 
@@ -144,9 +148,10 @@ function targetText(t: (k: string, o?: Record<string, unknown>) => string, g: Dr
   return t(`lesson.target.${tg.kind}`, { n: tg.value })
 }
 
-function Brief({ panelRef, kicker, sheet, drill, text, g, level, setLevel, control, setControl, onDemo, onPlay }: {
+function Brief({ panelRef, kicker, rulesLabel, sheet, drill, text, g, level, setLevel, control, setControl, onDemo, onPlay }: {
   panelRef: (el: HTMLElement | null) => void
   kicker?: string
+  rulesLabel?: string
   sheet: { href: string; label: string }
   drill: Drill; text: DrillText; g: DrillGameplay; level: Level; setLevel: (l: Level) => void; control: 'decisions' | 'carrier'; setControl: (c: 'decisions' | 'carrier') => void; onDemo: () => void; onPlay: () => void
 }) {
@@ -164,12 +169,12 @@ function Brief({ panelRef, kicker, sheet, drill, text, g, level, setLevel, contr
         <p className="mt-0.5 text-[15px] font-semibold text-sun-300">{targetText(t, g)}</p>
         {(more || text.rules.length <= 2) ? (
           <>
-            <p className="mt-3 text-[13px] font-semibold text-cream/60">{t('lesson.rules')}</p>
+            <p className="mt-3 text-[13px] font-semibold text-cream/60">{rulesLabel ?? t('lesson.rules')}</p>
             <ul className="mt-1 space-y-1 text-[14px] leading-snug text-cream/85">{text.rules.map((r, i) => <li key={i} className="flex gap-2"><span aria-hidden="true" className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-cream/50" />{r}</li>)}</ul>
             {g.adaptation && <><p className="mt-3 text-[13px] font-semibold text-cream/60">{t('lesson.adaptation')}</p><p className="mt-0.5 text-[13.5px] text-cream/70">{g.adaptation}</p></>}
           </>
         ) : (
-          <button type="button" className="mt-2 min-h-[44px] text-[14px] font-semibold text-cream/80 underline underline-offset-4" onClick={() => setMore(true)}>{t('lesson.rules')}</button>
+          <button type="button" className="mt-2 min-h-[44px] text-[14px] font-semibold text-cream/80 underline underline-offset-4" onClick={() => setMore(true)}>{rulesLabel ?? t('lesson.rules')}</button>
         )}
         <div className="mt-4">
           <p className="text-[13px] font-semibold text-cream/60">{t('lesson.level')}</p>
@@ -320,7 +325,7 @@ function Result({ r, drill, text, next, back, onRetry, onNextLevel, onNext, onBr
           <button type="button" className="btn-outline-light" onClick={onRetry}><RotateCcw size={16} strokeWidth={1.75} />{t('lesson.result.retry')}</button>
           {nextLevel ? <button type="button" className="btn-sun" onClick={() => onNextLevel(nextLevel)}>{t('lesson.result.nextLevel', { level: t(`levels.${nextLevel}`) })}</button>
             : next ? <button type="button" className="btn-sun" onClick={onNext}>{t('lesson.result.nextDrill')}</button>
-              : <button type="button" className="btn-sun" onClick={onBrief}>{t('lesson.demo')}</button>}
+              : <button type="button" className="btn-sun" onClick={onBrief}>{t('lesson.result.brief')}</button>}
           {r.replay && <Link to={`/jeux/code-njangi/analyse?dernier=${drill.id}`} className="btn-outline-light">{t('lesson.result.replay')}</Link>}
           <Link to={back} className="btn-outline-light">{t('shell.back')}</Link>
         </div>
