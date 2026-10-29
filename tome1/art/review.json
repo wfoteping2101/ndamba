@@ -427,8 +427,8 @@
   "note": "Lacombe says bravo in the dripping locker room, Kaydoudou raises his hand to ask if he is ill. Minor: Lacombe wears a cap."
  },
  "ch24": {
-  "status": "redo",
-  "note": "Lacombe drawn as an old Black man with a white beard: he is a pale white Frenchman of 55 with a grey brush moustache. Prompt fixed."
+  "status": "approved",
+  "note": "Second take: Lacombe, pale with his grey brush moustache, signs the ball for the tearful Kaydoudou; BriBri holds the folded number 8."
  },
  "ch24b": {
   "status": "approved",
@@ -459,8 +459,8 @@
   "note": "The brothers tangled in the cone square, each pointing his way; Laia points at Nil smiling, Jordi arms crossed."
  },
  "ch26": {
-  "status": "redo",
-  "note": "Avi Ramon drawn as a dark-skinned man with a white beard, unlike the three in-text images of the same chapter: he is a white Catalan with a tanned face and a straight white moustache. Prompt fixed."
+  "status": "approved",
+  "note": "Second take: Avi Ramon's espadrille on the ball, Kaydoudou frozen mid-rush, BriBri watching."
  },
  "ch26b": {
   "status": "approved",
@@ -523,8 +523,8 @@
   "note": "Kaydoudou draws the circle in the sand for the village children; BriBri smiles from the boat."
  },
  "ch30": {
-  "status": "redo",
-  "note": "Avi Ramon drawn as an old Black man with a white beard again. Prompt fixed with his full description."
+  "status": "approved",
+  "note": "Second take: Avi Ramon holds the bishop above the chessboard, BriBri thinks, Kaydoudou holds the pawn."
  },
  "ch30b": {
   "status": "approved",
@@ -539,8 +539,8 @@
   "note": "BriBri's long switch over everyone toward Toni alone and Kaydoudou on tiptoe."
  },
  "ch31": {
-  "status": "redo",
-  "note": "Youssef is missing: Kaydoudou signs the ball himself next to BriBri. Prompt fixed (Youssef described in full, BriBri in his green sweatshirt, only Youssef holds the marker)."
+  "status": "approved",
+  "note": "Second take: Youssef in Kaydoudou's sand-gold shirt signs the ball Kaydoudou holds; BriBri in his green sweatshirt."
  },
  "ch31b": {
   "status": "approved",
@@ -555,8 +555,8 @@
   "note": "Kaydoudou slides it calmly past the diving Atlas keeper; BriBri far behind after the long pass."
  },
  "ch32": {
-  "status": "redo",
-  "note": "Avi Ramon drawn as an old Black man again. Prompt fixed with his full description."
+  "status": "approved",
+  "note": "Second take: Avi Ramon signs the ball BriBri holds; Kaydoudou wears his champion medal."
  },
  "ch32b": {
   "status": "approved",
@@ -609,5 +609,93 @@
  "ch35b": {
   "status": "approved",
   "note": "Okafor's lion on the whiteboard; Kaydoudou whispers, BriBri bites his cheek."
+ },
+ "ch35c": {
+  "status": "approved",
+  "note": "BriBri and Jaden nose to nose in the rain; nobody blinks."
+ },
+ "ch35d": {
+  "status": "approved",
+  "note": "BriBri explains pressing with the salt shaker and peas; Kaydoudou eats a defender."
+ },
+ "ch36": {
+  "status": "redo",
+  "note": "Mami appears in the London dressing room: the prompt added her because the outfit mentions Mami's ball. Fixed in tools/art_prompts.mjs (possessives no longer add a character)."
+ },
+ "ch36b": {
+  "status": "approved",
+  "note": "The circle on the fogged bus window; Kaydoudou sits up with his idea."
+ },
+ "ch36c": {
+  "status": "approved",
+  "note": "BriBri sits silently beside the hooded Jaden; Kaydoudou holds his breath with the shoebox."
+ },
+ "ch36d": {
+  "status": "approved",
+  "note": "Freddie's worst joke, the flying sock, the whole team laughing, Jaden too."
+ },
+ "ch37": {
+  "status": "approved",
+  "note": "BriBri strikes into the depth, Kaydoudou already gone; Monsieur Atéba watches behind the rail."
+ },
+ "ch37b": {
+  "status": "approved",
+  "note": "Kaydoudou raises his hand to ask Monsieur Atéba his question; Papa closes his eyes, BriBri wants to disappear."
+ },
+ "ch37c": {
+  "status": "approved",
+  "note": "Fist to fist on the steep Lewisham staircase."
+ },
+ "ch37d": {
+  "status": "approved",
+  "note": "BriBri at the fogged window; outside, Atéba gives the tiny nod."
+ },
+ "ch38": {
+  "status": "approved",
+  "note": "In the snow, two fingers up; Kaydoudou already behind the two German defenders."
+ },
+ "ch38b": {
+  "status": "approved",
+  "note": "In the tunnel Kaydoudou whispers under the nose of the Fridge."
+ },
+ "ch38c": {
+  "status": "approved",
+  "note": "Half time: Kaydoudou stands up with his idea, BriBri frowns, Okafor's spark of hope."
+ },
+ "ch38d": {
+  "status": "approved",
+  "note": "The hotel room: Kaydoudou leaps into his brother’s arms, the old telephone rings."
+ },
+ "ch39": {
+  "status": "approved",
+  "note": "Mami writes in the notebook; Kaydoudou spins the signed ball under the lamp."
+ },
+ "ch39b": {
+  "status": "approved",
+  "note": "Arrivals hall: the cane flies, Papa catches it, BriBri waits his turn."
+ },
+ "ch39c": {
+  "status": "approved",
+  "note": "Mami in the dressing room, hand on heart; Okafor wipes his eye at the door."
+ },
+ "ch39d": {
+  "status": "approved",
+  "note": "The pinky promise in the attic beds."
+ },
+ "ch40": {
+  "status": "approved",
+  "note": "Two fingers, one touch, Kaydoudou behind the orange defenders."
+ },
+ "ch40b": {
+  "status": "approved",
+  "note": "Ten touches with Mami's ball in front of the stand; Mami, Papa, Maman and Atéba clap."
+ },
+ "ch40c": {
+  "status": "approved",
+  "note": "Freddie plucks the corner out of the air like an octopus."
+ },
+ "ch40d": {
+  "status": "approved",
+  "note": "Roger Milla's corner flag dance with Mami dancing behind the barrier."
  }
 }

@@ -114,7 +114,7 @@ for (const f of fs.readdirSync(chDir).filter((x) => /^\d\d-.*\.md$/.test(x))) {
 for (const [n, e] of Object.entries(CHAPTERS)) {
   const id = `ch${String(n).padStart(2, '0')}`
   const part = Number(meta[n]?.partie) || 1
-  items.push({ ...build(id, 'chapter', { ...e, part, cast: e.cast || ['BRI', 'KAY'].filter((c) => e.outfit?.includes(c === 'BRI' ? 'BriBri' : 'Kaydoudou')).concat(ADULT_IDS.filter((a) => e.outfit?.includes({ MAMI: 'Mami', FOKOU: 'Fokou', PAPA: 'Papa', MAMAN: 'Maman' }[a]))) }), e, n: Number(n), part, meta: meta[n] })
+  items.push({ ...build(id, 'chapter', { ...e, part, cast: e.cast || ['BRI', 'KAY'].filter((c) => e.outfit?.includes(c === 'BRI' ? 'BriBri' : 'Kaydoudou')).concat(ADULT_IDS.filter((a) => (e.outfit || '').replace(/\b(Mami|Fokou|Papa|Maman)(\u2019|')s\b/g, '').includes({ MAMI: 'Mami', FOKOU: 'Fokou', PAPA: 'Papa', MAMAN: 'Maman' }[a]))) }), e, n: Number(n), part, meta: meta[n] })
 }
 
 // in-text beats (tome1/art/beats/chNN.json), three per chapter, landscape
