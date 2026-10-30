@@ -83,7 +83,7 @@ From 16, the same page becomes **My player journal**: plainer, with no link to t
 
 The journey answers a simple question: what has this player built? It brings together what the coach recorded (evaluations, observations, attendance, minutes played) and what the player set for themselves. The coach sees it from the player's profile (chapter 10); the player sees their own through the **My journey** card, in the player space and on the home page. The first time, they link their profile to their record with the **Who are you in the team?** screen (chapter 15). Without a team, the page explains that the journey grows once the coach adds the player to the squad.
 
-![BriBri's journey as he sees it: number 8, the Pivot position, 12 years old, the Set myself an objective button, the seasons, the season ribbon and the figures Sessions 15/16, Matches played 4, Goals 1, Observations 8, Competences +4, Objectives achieved 1/3.](shot:youth-link-chooser "My journey, in the U13 academy demo.")
+![BriBri's journey as he sees it: number 8, the Pivot position, 12 years old, the Set myself an objective button, the seasons, the season ribbon and the figures Sessions 15/16, Matches played 4, Goals 1, Observations 8, Competences +4, Objectives achieved 1/3.](shot:youth-journey-linked "My journey, in the U13 academy demo.")
 
 At the top, the journey shows the number, the name, the position, the age and the team, then the season buttons (**Season 2026-2027**, **Season 2025-2026**, **All seasons**). A season runs from 1 August to 31 July. The season ribbon puts **Milestones**, **Matches**, **Sessions** and **Observations** on a single timeline, up to **Today**. Six figures follow: **Sessions** attended out of the total, with the attendance rate, **Matches played** and minutes, **Goals** (when there are any), **Observations** (and how many were strengths), **Competences** (levels gained since the start of the season) and **Objectives achieved**. One sentence sums it up: "Your strength: Ball protection (level 4). Your next step: Directional first touch."
 
@@ -97,7 +97,7 @@ Further down, the player finds:
 
 The journey adapts to age. Under 13, the page says so: "Every session counts. Here is what is moving forward." The coach's ratings of a sequence are not shown to the child, and there is never a ranking. From 13 to 16, the page adds match markers, such as the share of passes completed. From 17, **Season performance** gives the detail per 90 minutes, and the sentence becomes "Your area to work on".
 
-![Steve Ndjock's journey, aged 28: Sessions 38/39, Matches played 3, 240 min, Observations 7, Competences +2, and the sentence Your strength: Scanning (level 4). Your area to work on: Carrying.](shot:pro-link-chooser "The same journey for a senior player, in the pro club demo.")
+![Steve Ndjock's journey, aged 28: Sessions 38/39, Matches played 3, 240 min, Observations 7, Competences +2, and the sentence Your strength: Scanning (level 4). Your area to work on: Carrying.](shot:pro-player-journey-linked "The same journey for a senior player, in the pro club demo.")
 
 The player can neither edit nor delete what their coach wrote. They can, however, set their own objectives:
 

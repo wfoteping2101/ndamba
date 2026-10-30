@@ -5,9 +5,9 @@
 import i18n from '../../i18n'
 import { db } from '../../lib/db'
 import {
-  addPlayer, convocationText, createAutoSession, createMatch, createTeam, mailLink, sessionMinutes, smsLink, toICS, whatsappLink,
+  addPlayer, convocationText, createAutoSession, createMatch, createTeam, mailLink, matchBusyDays, sessionMinutes, smsLink, toICS, whatsappLink,
 } from '../../lib/actions'
-import { BOOKS, BRAND, GATES, SERIES } from '../../lib/config'
+import { BOOKS, BRAND, GATES, SERIES, coachLimited } from '../../lib/config'
 import { computeNjangi, fmtNjangi, njangiLabel, type NjangiResult, type SubKey } from '../../lib/njangi'
 import type { AgentApproval, AgentTask, ChatMessage, Intention, MD, Match, Player, Profile, Session, SkillKey, Team } from '../../lib/types'
 import { addDays, daysBetween, fmtDate, nowISO, todayISO, uid, weekStart } from '../../lib/util'
@@ -358,7 +358,7 @@ async function smallTalk(ctx: MolaCtx, talk?: string, reply?: string) {
 type Exec = (ctx: MolaCtx, slots: Slots, request: string) => Promise<void>
 
 async function sessionsGate(ctx: MolaCtx) {
-  if (ctx.profile?.plan !== 'free') return false
+  if (!coachLimited(ctx.profile?.plan)) return false
   if ((await db.sessions.count()) < GATES.sessionsFree) return false
   await say(ctx, 'gate.sessions', { n: GATES.sessionsFree }, { chips: [navChip('/app/premium', tm(ctx.lang)('gate.cta'))] })
   return true
@@ -389,11 +389,13 @@ const planWeekExec: Exec = async (ctx, slots, request) => {
   await step(task, intention ? (fromReport ? t('plan.s.intentionReport', { intention: intentionLabel, opponent: fromReport }) : t('plan.s.intention', { intention: intentionLabel })) : t('plan.s.noIntention'))
 
   const created: Session[] = []
-  let kept = 0, past = 0
+  let kept = 0, past = 0, busyDays = 0
   await step(task, t('plan.s.build'), async () => {
+    const busy = await matchBusyDays(matchDate, ctx.team?.id)
     for (const [md, off] of PRE) {
       const date = addDays(matchDate, -off)
       if (date < ctx.today) { past++; continue }
+      if (busy.has(date)) { busyDays++; continue }
       const exists = await db.sessions.where('date').equals(date).filter((s) => !ctx.team || s.teamId === ctx.team.id).count()
       if (exists) { kept++; continue }
       created.push(await createAutoSession({ md, date, teamId: ctx.team?.id, ageGroup: ageOf(ctx), lang, intention, createdBy: 'mola' }))
@@ -408,6 +410,7 @@ const planWeekExec: Exec = async (ctx, slots, request) => {
   } else parts.push(kept ? t('plan.already', { count: kept }) : t('plan.tooLate'))
   if (created.length && kept) parts.push(t('plan.kept', { count: kept }))
   if (past && created.length) parts.push(t('plan.past', { count: past }))
+  if (busyDays) parts.push(t('plan.busy', { count: busyDays }))
   await finish(task, {
     summary: parts.join(' '),
     resultRoute: `/app/semaine?w=${weekStart(created[0]?.date ?? addDays(matchDate, -1))}`,
@@ -425,8 +428,16 @@ const createSessionExec: Exec = async (ctx, slots, request) => {
   if (await sessionsGate(ctx)) return
   const t = tm(ctx.lang), tc = tcommon(ctx.lang), lang = ctx.lang
   const md = slots.md!
-  const date = slots.date ?? ctx.today
   const mdLabel = tc(`md.${md}`)
+  // no date given: an MD-n session goes on the MD-n day of the next match, when that day is still ahead
+  let date = slots.date
+  let mdPassed = false
+  if (!date) {
+    const n = /^MD-(\d)$/.exec(md)?.[1]
+    const next = n ? await findUpcoming(ctx, {}) : undefined
+    if (n && next) { const d = addDays(next.date, -Number(n)); if (d >= ctx.today) date = d; else mdPassed = true }
+  }
+  date = date ?? ctx.today
   const { task, msgId } = await startTask('create_session', request, t('session.ack', { md: mdLabel, day: longDay(date, lang) }))
   await step(task, t('session.s.day', { md: mdLabel, day: shortDay(date, lang) }))
   const s = await step(task, slots.intention ? t('session.s.drillsFor', { intention: tc(`intentions.${slots.intention}`) }) : t('session.s.drills', { count: DRILLS.length }),
@@ -439,6 +450,7 @@ const createSessionExec: Exec = async (ctx, slots, request) => {
   await step(task, t('session.s.saved'))
   const summary = [t('session.done', { title: s.title, count: s.blocks.length, minutes: total })]
   if (slots.intention) summary.push(t('session.oriented', { intention: tc(`intentions.${slots.intention}`) }))
+  if (mdPassed) summary.push(t('session.mdPassed', { md: mdLabel }))
   await finish(task, {
     summary: summary.join(' '), resultRoute: `/app/seances/${s.id}`,
     payload: {
@@ -458,6 +470,8 @@ const setupMatchExec: Exec = async (ctx, slots, request) => {
   const opponent = slots.opponent!, date = slots.date!
   const dup = (await teamMatches(ctx)).find((m) => m.status !== 'done' && m.date === date && sameName(m.opponent, opponent))
   if (dup) { await say(ctx, 'match.exists', { opponent: dup.opponent, day: longDay(dup.date, lang) }, { chips: [navChip(`/app/matchs/${dup.id}`, t('open.match'))] }); return }
+  // another opponent the same day: a tournament is possible, so create it, but say so
+  const sameDay = (await teamMatches(ctx)).find((m) => m.status !== 'done' && m.date === date)
   const when = longDay(date, lang) + (slots.time ? ` ${t('match.at', { time: slots.time })}` : '')
   const { task, msgId } = await startTask('setup_match', request, t('match.ack', { opponent, when }))
   const m = await step(task, t('match.s.create', { opponent, when }),
@@ -472,6 +486,7 @@ const setupMatchExec: Exec = async (ctx, slots, request) => {
   const summary = [t('match.done', { opponent, when })]
   if (slots.venue) summary.push(t('match.venue', { venue: slots.venue }))
   if (!players.length) summary.push(t('match.addPlayers'))
+  if (sameDay) summary.push(t('match.sameDay', { opponent: sameDay.opponent }))
   await finish(task, {
     summary: summary.join(' '), resultRoute: `/app/matchs/${m.id}`,
     payload: { resultLabel: t('open.match'), matchId: m.id, items: [{ label: `${team.name} ${tc('app.vs')} ${opponent}`, sub: when + (slots.venue ? `, ${slots.venue}` : ''), route: `/app/matchs/${m.id}` }] },
@@ -526,7 +541,8 @@ const sendConvocationExec: Exec = async (ctx, slots, request) => {
   const match = await findUpcoming(ctx, slots.opponent ? { opponent: slots.opponent } : {})
   if (!match) { await say(ctx, 'convoc.noMatch', {}, { chips: [t('chips.setupMatchExample'), navChip('/app/matchs/nouveau', t('open.newMatch'))] }); return }
   const players = await db.players.where('teamId').equals(team.id).toArray()
-  const text = convocationText(match, team, players, lang)
+  // the coach's own wording, when they edited the call-up while setting up the match (as on the match sheet)
+  const text = (match as Match & { convocation?: string }).convocation || convocationText(match, team, players, lang)
   const channel = slots.channel ?? 'whatsapp'
   const when = longDay(match.date, lang) + (match.time ? ` ${t('match.at', { time: match.time })}` : '')
   const { task } = await startTask('send_convocation', request, t('convoc.ack', { opponent: match.opponent }))

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Check, ChevronDown, LoaderCircle, RotateCcw } from 'lucide-react'
+import { Check, ChevronDown, LoaderCircle, Play, RotateCcw } from 'lucide-react'
 import { MolaMark } from '../../ui/brand'
 import i18n, { setLang, useT } from '../../i18n'
 import { db } from '../../lib/db'
@@ -10,7 +10,7 @@ import { useDocumentTitle } from '../../lib/hooks'
 import { createProfile, seedDemo, type DemoLevel } from '../../lib/seed'
 import { useSession } from '../../lib/session'
 import { cx, uid } from '../../lib/util'
-import { LangSwitch, Logo } from '../../ui'
+import { LangSwitch, Logo, Modal } from '../../ui'
 import Chips from './components/Chips'
 import Composer from './components/Composer'
 import MolaAvatar, { TypingDots } from './components/MolaAvatar'
@@ -44,7 +44,7 @@ export default function Onboarding() {
   const { t, lang } = useT('mola')
   useDocumentTitle(t('ob.docTitle'))
   const nav = useNavigate()
-  const { ready, profile } = useSession()
+  const { ready, profile, teams } = useSession()
   const saved = useRef(load()).current
   const [draft, setDraft] = useState<Draft>(saved?.draft ?? emptyDraft())
   const [msgs, setMsgs] = useState<ObMsg[]>(saved?.msgs ?? [])
@@ -238,6 +238,26 @@ export default function Onboarding() {
     }
   }
 
+  // a demo replaces what this browser holds: ask first when the person has their own teams (as on the home page)
+  const [pendingDemo, setPendingDemo] = useState<DemoLevel | null>(null)
+  const askDemo = (level: DemoLevel) => {
+    if (demoBusy) return
+    if (profile && teams.some((tm) => !DEMO_IDS.includes(tm.id))) { setPendingDemo(level); return }
+    void tryDemo(level)
+  }
+  const demoDialog = (
+    <Modal open={!!pendingDemo} onClose={() => !demoBusy && setPendingDemo(null)} title={t('site:landing.demoModal.title')}
+      footer={<>
+        <button type="button" className="btn-ghost" onClick={() => setPendingDemo(null)} disabled={demoBusy}>{t('common:actions.cancel')}</button>
+        <button type="button" className="btn-primary" disabled={demoBusy} onClick={() => pendingDemo && tryDemo(pendingDemo)}>
+          {demoBusy ? <LoaderCircle size={16} className="motion-safe:animate-spin" /> : <Play size={16} />}
+          {demoBusy ? t('site:landing.demoModal.busy') : t('site:landing.demoModal.confirm')}
+        </button>
+      </>}>
+      <p className="text-[15px] text-ink-soft">{t('site:landing.demoModal.body', { demo: t(`site:demo.${pendingDemo ?? 'pro'}.team`) })}</p>
+    </Modal>
+  )
+
   const tryDemo = async (level: DemoLevel) => {
     if (demoBusy) return
     setDemoBusy(true)
@@ -286,7 +306,7 @@ export default function Onboarding() {
   /* ---------- an existing profile: offer to go back to the app ---------- */
   if (ready && profile && !restart && !creating) {
     return (
-      <Shell onDemo={tryDemo} demoBusy={demoBusy}>
+      <Shell onDemo={askDemo} demoBusy={demoBusy} dialog={demoDialog}>
         <div className="mx-auto flex max-w-xl flex-col items-center px-4 pb-16 pt-16 text-center sm:pt-28">
           <MolaAvatar size={76} />
           <h1 className="mt-6 text-[32px] text-ink sm:text-[40px]">{t('ob.back.title', { name: profile.name.split(' ')[0] })}</h1>
@@ -302,7 +322,7 @@ export default function Onboarding() {
   }
 
   return (
-    <Shell onDemo={tryDemo} demoBusy={demoBusy}>
+    <Shell onDemo={askDemo} demoBusy={demoBusy} dialog={demoDialog}>
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,1fr)_372px] lg:gap-12 lg:px-6">
         <section className="flex h-[calc(100dvh-3.5rem)] min-h-0 flex-col sm:h-[calc(100dvh-4rem)]" aria-label={t('ob.chatLabel')}>
           {/* phone: the licence, folded */}
@@ -426,7 +446,9 @@ function ProgressRing({ value, max }: { value: number; max: number }) {
   )
 }
 
-function Shell({ children, onDemo, demoBusy }: { children: ReactNode; onDemo: (level: DemoLevel) => void; demoBusy: boolean }) {
+const DEMO_IDS = ['team_etoile', 'team_lionceaux'] // the two demo teams (see DEMO_TEAM_IDS on the site)
+
+function Shell({ children, onDemo, demoBusy, dialog }: { children: ReactNode; onDemo: (level: DemoLevel) => void; demoBusy: boolean; dialog?: ReactNode }) {
   return (
     <div className="min-h-[100dvh] bg-cream">
       <header className="sticky top-0 z-30 border-b border-line bg-cream/95 backdrop-blur">
@@ -439,6 +461,7 @@ function Shell({ children, onDemo, demoBusy }: { children: ReactNode; onDemo: (l
         </div>
       </header>
       {children}
+      {dialog}
     </div>
   )
 }

@@ -38,7 +38,7 @@
     "matchDay": "Jour de match",
     "noSession": "Pas encore de séance",
     "matchBody": "Le match contre {{opponent}}, c'est aujourd'hui. Vérifie la composition, puis lance l'analyse en direct au coup d'envoi.",
-    "suggestYouth": "Rien de prévu aujourd'hui. Je te propose une séance jeunes : rondo, petit jeu, jeu de position, puis match libre.",
+    "suggestYouth": "Rien de prévu aujourd'hui. Je vous propose une séance jeunes : rondo, petit jeu, jeu de position, puis match libre.",
     "suggestMd": "Rien de prévu aujourd'hui. Avec le calendrier du match, c'est un jour {{md}}.",
     "create": "Préparer la séance {{md}}",
     "browse": "Choisir des exercices",
@@ -52,7 +52,7 @@
     "more_one": "Et {{count}} autre séance aujourd'hui.",
     "more_other": "Et {{count}} autres séances aujourd'hui.",
     "methodDrill": "Exercice du Code Njangi",
-    "suggestFree": "Rien de prévu aujourd'hui, et pas de match à l'horizon. Je te propose une séance {{md}} : de grands espaces et du temps de jeu.",
+    "suggestFree": "Rien de prévu aujourd'hui, et pas de match à l'horizon. Je vous propose une séance {{md}} : de grands espaces et du temps de jeu.",
     "intention": "Intention : {{intention}}",
     "byMola": "Préparée par Mola",
     "blocksLabel": "Déroulé de la séance",
@@ -108,7 +108,7 @@
     "eyebrow": "Indice Njangi du dernier match",
     "title": "Indice Njangi",
     "emptyTitle": "Pas encore d'Indice Njangi",
-    "emptyBody": "Tague un match en direct (passes, lignes traversées, reprises en cinq secondes) et l'Indice te dit si ton équipe a possédé avec intention.",
+    "emptyBody": "Codez un match en direct (passes, lignes traversées, reprises en cinq secondes) et l'Indice vous dit si votre équipe a possédé avec intention.",
     "emptyCtaLive": "Analyser le match contre {{opponent}}",
     "emptyCta": "Ouvrir l'analyse",
     "against": "Contre {{opponent}}",
@@ -130,15 +130,15 @@
   },
   "mola": {
     "title": "Mola",
-    "subtitle": "Ton agent : il prépare, tu valides",
-    "noTeam": "Donne-moi le nom de ton équipe et sa catégorie : je la crée et j'ajoute tes joueurs.",
+    "subtitle": "Votre agent : il prépare, vous validez",
+    "noTeam": "Donnez-moi le nom de votre équipe et sa catégorie : je la crée et j'ajoute vos joueurs.",
     "missing_one": "Le match contre {{opponent}} est {{day}}. Il manque {{count}} séance avant : je la prépare ?",
     "missing_other": "Le match contre {{opponent}} est {{day}}. Il manque {{count}} séances avant : je les prépare ?",
-    "convocation": "La semaine est prête. Je rédige la convocation pour le match contre {{opponent}} ? Tu n'auras plus qu'à l'envoyer.",
-    "indice": "Ton point faible au dernier match : {{sub}}. Je te montre les exercices qui le travaillent ?",
-    "default": "Demande-moi une séance, un plan de semaine, un match ou un message aux parents : je m'en occupe.",
+    "convocation": "La semaine est prête. Je rédige la convocation pour le match contre {{opponent}} ? Vous n'aurez plus qu'à l'envoyer.",
+    "indice": "Votre point faible au dernier match : {{sub}}. Je vous montre les exercices qui le travaillent ?",
+    "default": "Demandez-moi une séance, un plan de semaine, un match ou un message aux parents : je m'en occupe.",
     "cta": "Parler à Mola",
-    "ask": "Tu peux aussi lui demander",
+    "ask": "Vous pouvez aussi lui demander",
     "examples": {
       "session": "Prépare la séance de demain",
       "callup": "Écris la convocation du match",
@@ -404,7 +404,7 @@
     "4": {
       "country": "Espagne",
       "piece": "La carte",
-      "body": "À Barcelone, le rondo, la pausa, le troisième homme et les supériorités : être au bon endroit, créer des triangles."
+      "body": "En Catalogne, le rondo, la pausa, le troisième homme et les supériorités : être au bon endroit, créer des triangles."
     },
     "5": {
       "country": "Angleterre",

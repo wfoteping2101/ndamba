@@ -9,7 +9,7 @@ import { useT } from '../../../i18n'
 import { db } from '../../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../../lib/hooks'
 import { useSession } from '../../../lib/session'
-import { BOOKS, BRAND, GATES, SERIES } from '../../../lib/config'
+import { BOOKS, BRAND, GATES, SERIES, coachLimited } from '../../../lib/config'
 import { createAutoSession, planWeek, sessionMinutes } from '../../../lib/actions'
 import { computeNjangi, fmtNjangi, njangiLabel, rankSubs, SUB_INTENTION, SUB_KEYS, type NjangiResult, type SubKey } from '../../../lib/njangi'
 import { drillText, getDrill } from '../../../content'
@@ -67,7 +67,7 @@ export default function CoachHome() {
     if (busy) return
     setBusy(true)
     try {
-      if (profile?.plan === 'free' && (await db.sessions.count()) >= GATES.sessionsFree) { navigate('/app/premium'); return }
+      if (coachLimited(profile?.plan) && (await db.sessions.count()) >= GATES.sessionsFree) { navigate('/app/premium'); return }
       const s = await createAutoSession({ md, date, teamId: team?.id, ageGroup: team?.ageGroup, lang })
       navigate(`/app/seances/${s.id}`)
     } finally { setBusy(false) }
@@ -77,11 +77,10 @@ export default function CoachHome() {
     if (!next || busy) return
     setBusy(true)
     try {
-      const created = await planWeek({ matchDate: next.date, teamId: team?.id, ageGroup: team?.ageGroup, lang, intention })
-      // planWeek fills MD-4 to MD-1 even when some of those days are already behind us: keep only what is still ahead.
-      const past = created.filter((s) => s.date < today)
-      if (past.length) await db.sessions.bulkDelete(past.map((s) => s.id))
-      const n = created.length - past.length
+      if (coachLimited(profile?.plan) && (await db.sessions.count()) >= GATES.sessionsFree) { navigate('/app/premium'); return }
+      // planWeek skips the days already behind us and the days taken by another match or its recovery
+      const created = await planWeek({ matchDate: next.date, teamId: team?.id, ageGroup: team?.ageGroup, lang, intention, createdBy: 'mola' })
+      const n = created.length
       const msg: ToastMsg = n > 0
         ? { text: t('match.weekCreated', { count: n }), to: '/app/semaine', action: t('match.seeWeek') }
         : { text: t('match.weekReady'), to: '/app/semaine', action: t('match.seeWeek') }

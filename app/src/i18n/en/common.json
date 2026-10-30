@@ -56,7 +56,8 @@
     "mainNav": "Main navigation",
     "teamLine": "{{age}}, {{format}} v {{format}}, {{formation}}",
     "switchTeam": "Switch team",
-    "football": "Football game"
+    "football": "Football game",
+    "planLine": "{{plan}} plan"
   },
   "actions": {
     "save": "Save",
@@ -202,8 +203,8 @@
       "molaActions": "Mola acts for you",
       "everythingCoach": "Everything in Coach Pro",
       "teams": "Unlimited teams",
-      "staff": "Staff accounts",
-      "clubModel": "Your club game model",
+      "staff": "Staff accounts (coming soon)",
+      "clubModel": "Your club game model (coming soon)",
       "export": "Exports and printing",
       "everythingClub": "Everything in Club",
       "nationalModel": "National game model",

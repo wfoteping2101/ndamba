@@ -7,6 +7,7 @@ import { db } from '../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
 import { useT } from '../../i18n'
 import { cx, fmtClock } from '../../lib/util'
+import { GATES, coachLimited } from '../../lib/config'
 import { uid } from '../../lib/util'
 import type { EventCode, Match, MatchEvent, Player, Team } from '../../lib/types'
 import { computeNjangi, fmtNjangi, njangiLabel, SUB_KEYS, type NjangiResult } from '../../lib/njangi'
@@ -53,8 +54,15 @@ export default function LiveTagger() {
   const { id = '' } = useParams()
   const { t } = useT('analysis')
   const match = useLiveQuery<Match | null | undefined>(async () => (await db.matches.get(id)) ?? null, [id], undefined)
+  // free plan: one live-tagged match, as on the match sheet; a match that already has tags is never gated
+  const gated = useLiveQuery(async () => {
+    if (!coachLimited((await db.profile.get('me'))?.plan)) return false
+    if (await db.events.where('matchId').equals(id).count()) return false
+    const tagged = (await db.events.orderBy('matchId').uniqueKeys()) as string[]
+    return tagged.filter((m) => m !== id).length >= GATES.liveMatchesFree
+  }, [id], undefined as boolean | undefined)
   useDocumentTitle(t('live.title'))
-  if (match === undefined) return <div className="grid h-[100dvh] place-items-center bg-night-900"><div className="h-10 w-10 animate-spin rounded-full border-4 border-white/10 border-t-sun-500" /></div>
+  if (match === undefined || gated === undefined) return <div className="grid h-[100dvh] place-items-center bg-night-900"><div className="h-10 w-10 animate-spin rounded-full border-4 border-white/10 border-t-sun-500" /></div>
   if (match === null) {
     return (
       <div className="grid h-[100dvh] place-items-center bg-night-900 px-6 text-center text-cream">
@@ -62,6 +70,20 @@ export default function LiveTagger() {
           <h1 className="font-display text-2xl font-semibold">{t('live.notFound')}</h1>
           <p className="mt-2 text-cream/70">{t('live.notFoundBody')}</p>
           <Link to="/app/analyse" className="btn-sun mt-6">{t('live.back')}</Link>
+        </div>
+      </div>
+    )
+  }
+  if (gated) {
+    return (
+      <div className="grid h-[100dvh] place-items-center bg-night-900 px-6 text-center text-cream">
+        <div className="max-w-md">
+          <h1 className="font-display text-2xl font-semibold">{t('team:sheet.gateTitle')}</h1>
+          <p className="mt-2 text-cream/70">{t('team:sheet.gateBody')}</p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <Link to="/app/premium" className="btn-sun">{t('team:sheet.gateCta')}</Link>
+            <Link to={`/app/matchs/${match.id}`} className="btn-outline border-white/20 text-cream hover:bg-white/10">{t('live.back')}</Link>
+          </div>
         </div>
       </div>
     )
@@ -161,7 +183,7 @@ function Tagger({ match }: { match: Match }) {
     flashN.current += 1
     setFlash({ key: shownKey, n: flashN.current })
     const mins = minuteLabel(half, sec, match.halfMinutes)
-    setToast({ text: label(shownKey), minute: mins, note: def.implies?.length && code === def.code ? t('live.autoAdded') : undefined, n: flashN.current, tone: shownKey === 'REGAIN5' && def.key === 'REGAIN' ? 'sun' : 'ok' })
+    setToast({ text: label(shownKey), minute: mins, note: def.implies?.length && code === def.code ? t('live.alsoAdded', { list: def.implies.map((c) => label(shortKey(c, def.side) as LiveKey)).join(', ') }) : undefined, n: flashN.current, tone: shownKey === 'REGAIN5' && def.key === 'REGAIN' ? 'sun' : 'ok' })
     if (def.side === 'us' && (code === 'LOSS' || code === 'PASS_LOST')) setLossUntil(tnow + LOSS_WINDOW)
     else if (def.side === 'us' && (code === 'REGAIN5' || code === 'REGAIN')) setLossUntil(0)
     if (prefs.attribution && def.side === 'us' && squad.length) setStrip({ createdAt, until: tnow + STRIP_MS, label: label(shownKey) })
@@ -189,7 +211,9 @@ function Tagger({ match }: { match: Match }) {
     buzz([10, 40, 10])
     setStrip(null)
     if (group.some((e) => (e.code === 'LOSS' || e.code === 'PASS_LOST') && e.side === 'us')) setLossUntil(0)
-    setToast({ text: t('live.undoneTag', { tag: label(shortKey(group[0].code, group[0].side) as LiveKey) }), n: Date.now() })
+    // a goal or a shot on target also stored its implied shots: name the tap itself, not one of those
+    const main = group.find((e) => e.code === 'GOAL') ?? group.find((e) => e.code === 'SHOT_IN') ?? group[0]
+    setToast({ text: t('live.undoneTag', { tag: label(shortKey(main.code, main.side) as LiveKey) }), n: Date.now() })
     await db.events.bulkDelete(group.map((e) => e.id))
     const goals = group.filter((e) => e.code === 'GOAL')
     if (goals.length) await db.matches.where('id').equals(match.id).modify((m) => { for (const g of goals) { if (g.side === 'us') m.scoreUs = Math.max(0, m.scoreUs - 1); else m.scoreThem = Math.max(0, m.scoreThem - 1) } })

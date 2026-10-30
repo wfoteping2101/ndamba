@@ -54,12 +54,14 @@ export default function WeekPlanner() {
   const weekMinutes = loadDays.reduce((a, d) => a + d.minutes, 0)
   const peak = loadDays.reduce((best, d) => (d.load > best.load ? d : best), loadDays[0])
   const hasPlan = planTarget && PLAN_DAYS.some((md, i) => sessions.some((s) => s.date === addDays(planTarget.date, -(4 - i))))
-  const missing = planTarget ? PLAN_DAYS.filter((_, i) => { const d = addDays(planTarget.date, -(4 - i)); return d >= today && !sessions.some((s) => s.date === d) }).length : 0
+  // another match (or the recovery day after it) in the four days before: those days stay free, as planWeek leaves them
+  const busyDays = new Set(planTarget ? matchesAll.filter((m) => m.id !== planTarget.id && m.date < planTarget.date && m.date >= addDays(planTarget.date, -5)).flatMap((m) => [m.date, addDays(m.date, 1)]) : [])
+  const missing = planTarget ? PLAN_DAYS.filter((_, i) => { const d = addDays(planTarget.date, -(4 - i)); return d >= today && !busyDays.has(d) && !sessions.some((s) => s.date === d) }).length : 0
 
   const runPlan = async () => {
     if (!planTarget || busy) return
     setBusy(true)
-    const res = await planWeek({ matchDate: planTarget.date, teamId: team?.id, ageGroup: team?.ageGroup, lang })
+    const res = await planWeek({ matchDate: planTarget.date, teamId: team?.id, ageGroup: team?.ageGroup, lang, createdBy: 'mola' })
     setBusy(false)
     setCreated(res)
   }

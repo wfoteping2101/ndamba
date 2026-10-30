@@ -43,7 +43,7 @@ export function AddToSessionModal({ drill, open, onClose, onDone }: { drill: Dri
               const fits = drill.md.includes(s.md)
               return (
                 <li key={s.id}>
-                  <button type="button" onClick={() => add(s)} className="flex min-h-[56px] w-full items-center gap-3 rounded-2xl border border-line bg-paper p-3 text-left transition hover:border-forest-600">
+                  <button type="button" onClick={() => !already && add(s)} disabled={already} className="flex min-h-[56px] w-full items-center gap-3 rounded-2xl border border-line bg-paper p-3 text-left transition enabled:hover:border-forest-600 disabled:cursor-default disabled:opacity-70">
                     <div className="w-14 shrink-0 text-center">
                       <div className="text-[11.5px] font-semibold text-ink-faint">{fmtDate(s.date, lang, { weekday: 'short' })}</div>
                       <div className="font-display text-xl font-semibold leading-none text-ink">{fmtDate(s.date, lang, { day: 'numeric' })}</div>

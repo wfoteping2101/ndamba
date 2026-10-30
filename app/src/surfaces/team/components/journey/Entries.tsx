@@ -28,7 +28,7 @@ export function JourneyTeaser({ playerId }: { playerId: string }) {
     { label: t('hero.sessions'), value: s.sessions.marked ? `${s.sessions.attended}/${s.sessions.marked}` : '-', sub: s.sessions.rate !== null ? fmtPct(s.sessions.rate, lang) : undefined },
     { label: t('hero.matches'), value: s.matches.played, sub: s.matches.played ? fmtMinutes(s.matches.minutes, lang) : undefined },
     { label: t('hero.observations'), value: s.observations.total },
-    { label: t('hero.objectives'), value: s.objectives.active, sub: t('teaser.active') },
+    { label: t('teaser.objectives'), value: s.objectives.active, sub: t('teaser.active') },
   ]
   return (
     <section className="overflow-hidden rounded-[22px] bg-forest-600 text-cream [&_:focus-visible]:outline-cream" aria-labelledby="jt-h">

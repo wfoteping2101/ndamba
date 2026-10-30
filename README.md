@@ -6,24 +6,26 @@ One codebase, four products, by William Foteping (Lemon Network Solutions):
 
 | Product | Where | What |
 |---|---|---|
-| **Lionceaux, tome 1 : Le Ballon qui voyage** (starring Kaydoudou & BriBri) | `tome1/` | French illustrated novel for ages 8 to 12, cinematic painted art (`tome1/art/`) (40 chapters, 5 parts: Cameroun, États-Unis, France, Espagne, Angleterre), each chapter ending with a « Leçon du Ballon ». Read at `/book/tome1/`, PDF in `app/public/downloads/`. |
-| **Le Code Njangi** | `coach/` | French coaching book for coaches, analysts and managers: the African game model, 23 chapters, 50 drills (`coach/drills/*.json`, bilingual), the Indice Njangi. Read at `/book/methode/`. |
+| **Lionceaux, tome 1 : Le Ballon qui voyage** (starring Kaydoudou & BriBri) | `tome1/` | French illustrated novel for ages 8 to 12, cinematic painted art (`tome1/art/`) (40 chapters, 5 parts: Cameroun, États-Unis, France, Espagne, Angleterre), each chapter ending with a « Leçon du Ballon ». Read at `/book/tome1/`. |
+| **Le Code Njangi** | `coach/` | French coaching book for coaches, analysts and managers: the African game model, 36 chapters in 9 parts, 64 drills (`coach/drills/*.json`, bilingual), the Indice Njangi. Read at `/book/methode/`. |
 | **Ndamba** (the app) | `app/` | Bilingual (FR/EN) premium app: drill library, session builder, week periodization, team and match setup, live match tagging with the Indice Njangi report, video analysis, player space, the books. |
+| **Le Guide Ndamba** | `guide/` | The complete user guide in French and English (26 chapters, 9 parts, 5 appendices): every screen, and the 2026 to 2041 plan to lift the World Cup. Sources in `guide/{fr,en}/`, brief in `docs/guide/`, built by `tools/build_guide.mjs` into `app/public/guide/`. Read at `/guide/`. |
 | **Mola** | `app/src/surfaces/mola/` | The agent: conversational onboarding, then actions inside the app (sessions, week plans, matches, players, convocations with approval). Optional LLM through `app/api/mola.ts` (set `ANTHROPIC_API_KEY` on Vercel). |
 
 ## Build
 
 ```bash
-# books: web readers + print PDFs (needs Chromium from Playwright)
+# books: web readers (add --pdf for print proofs; needs Chromium from Playwright)
 cd tools && npm install && cd ..
-node tools/build_books.mjs --pdf
+node tools/build_books.mjs
+node tools/build_guide.mjs          # the guide (--check: dashes, screenshots, word counts; --pdf: page-count proofs)
 
 # app
 cd app && npm install && npm run build      # runs scripts/build-content.mjs (drills, lessons, tables of contents) first
 npm run dev
 ```
 
-Deploy: Vercel, root directory `app`, framework Vite, output `dist`. `vercel.json` routes `/book/*` to the static readers and everything else to the app.
+Deploy: Vercel, root directory `app`, framework Vite, output `dist`. `vercel.json` routes `/book/*`, `/guide/*` and `/football/*` to the static pages and everything else to the app.
 
 ## Checks
 

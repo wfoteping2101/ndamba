@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Generates typed content modules for the app from the books' sources.
 //   - src/lib/pitch.mjs            (copy of tools/pitch.mjs, the shared diagram renderer)
-//   - src/content/drills.gen.ts    (the 50 drills of La Méthode Njangi, coach/drills/*.json)
+//   - src/content/drills.gen.ts    (the 64 drills of Le Code Njangi, coach/drills/*.json)
 //   - src/content/lessons.gen.ts   (the 40 "Leçons du Ballon" of Tome 1, tome1/chapters/*.md)
 //   - src/content/books.gen.ts     (tables of contents of both books)
 import fs from 'node:fs'

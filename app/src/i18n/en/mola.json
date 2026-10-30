@@ -51,7 +51,7 @@
       "set up a match, for example \"against the Eagles on Saturday at 4pm\"",
       "add players to your squad, or create your team",
       "draft the call-up message for the next match",
-      "analyse your last match with the Indice Njangi",
+      "analyse your last match with the Njangi Index",
       "suggest drills from \"{{methode}}\"",
       "open a Leçon du Ballon from {{series}} or a chapter of \"{{tome1}}\"",
       "export the week to your calendar"
@@ -147,7 +147,9 @@
     "kept_one": "I kept the session that already existed.",
     "kept_other": "I kept the {{count}} sessions that already existed.",
     "past_one": "One day had already gone by.",
-    "past_other": "{{count}} days had already gone by."
+    "past_other": "{{count}} days had already gone by.",
+    "busy_one": "I left one day free: another match or the recovery day after it falls on that day.",
+    "busy_other": "I left {{count}} days free: another match or the recovery day after it falls on those days."
   },
   "session": {
     "ack": "I'm creating an {{md}} session for {{day}}.",
@@ -161,7 +163,8 @@
     },
     "done_one": "Your session “{{title}}” is ready: 1 block, {{minutes}} minutes.",
     "done_other": "Your session “{{title}}” is ready: {{count}} blocks, {{minutes}} minutes.",
-    "oriented": "Common thread: “{{intention}}”."
+    "oriented": "Common thread: “{{intention}}”.",
+    "mdPassed": "The {{md}} day of the next match has already gone by: I dated it today, change the date in the session if needed."
   },
   "match": {
     "exists": "This match already exists: against {{opponent}}, {{day}}. I won't create it twice.",
@@ -176,7 +179,8 @@
     },
     "done": "The match against {{opponent}} is scheduled, {{when}}.",
     "venue": "Venue: {{venue}}.",
-    "addPlayers": "Add your players so I can suggest the line-up."
+    "addPlayers": "Add your players so I can suggest the line-up.",
+    "sameDay": "Note: you already play {{opponent}} that day. If that is a mistake, change the date on the match sheet."
   },
   "player": {
     "ack": "I'm adding {{name}} to {{team}}.",
@@ -242,12 +246,12 @@
   },
   "analysis": {
     "none": "I can't find a played match yet. Tag your next match live and I'll summarise it for you.",
-    "noTags": "The match against {{opponent}} wasn't tagged. Without tagged actions I can't compute the Indice Njangi.",
+    "noTags": "The match against {{opponent}} wasn't tagged. Without tagged actions I can't compute the Njangi Index.",
     "ack": "I'm analysing your match against {{opponent}}.",
     "s": {
       "match": "Match: against {{opponent}}, {{score}}, {{day}}",
       "count": "Counting the {{count}} tagged actions",
-      "indice": "Indice Njangi: {{total}} ({{label}})",
+      "indice": "Njangi Index: {{total}} ({{label}})",
       "write": "Writing the summary and the corrections"
     },
     "strength": "What works: {{text}}",
@@ -289,7 +293,7 @@
     },
     "done": {
       "tome1": "“{{tome1}}”, book 1 of {{series}}, with {{heroes}}. Enjoy the read.",
-      "methode": "“{{methode}}”: the method, the 64 drills and the Indice Njangi.",
+      "methode": "“{{methode}}”: the method, the 64 drills and the Njangi Index.",
       "all": "Both books are free to read: {{series}} and “{{methode}}”."
     }
   },
@@ -357,7 +361,7 @@
     "coach": "Welcome {{name}}. Your {{app}} space is ready. To begin, I can create your team, suggest drills or open “{{methode}}”.",
     "player": "Welcome {{name}}. Your {{app}} space is ready. I can suggest drills to improve, follow your journey match after match, or open today's challenges.",
     "parent": "Welcome {{name}}. I can help you support your child: the Leçons du Ballon of {{series}}, simple drills, and the novel “{{tome1}}” with {{heroes}}.",
-    "demo": "Welcome to the demo, {{name}}. You coach {{team}}: {{count}} players, a week of sessions, a match already analysed and a match coming up on Saturday. Ask me anything, for example to analyse the last match or to draft the call-up."
+    "demo": "Welcome to the demo, {{name}}. You coach {{team}}: {{count}} players, a week of sessions, matches already analysed and a match coming up on Saturday. Ask me anything, for example to analyse the last match or to draft the call-up."
   },
   "pro": {
     "eyebrow": "Mola noticed",
@@ -583,7 +587,7 @@
       },
       "youth": {
         "title": "Academy: Lionceaux U13",
-        "body": "The Lionceaux de Bonamoussadi, Kaydoudou and BriBri's team: 15 players, one match analysed.",
+        "body": "The Lionceaux de Bonamoussadi, Kaydoudou and BriBri's team: 15 players, four matches analysed.",
         "cta": "U13 academy demo"
       }
     },

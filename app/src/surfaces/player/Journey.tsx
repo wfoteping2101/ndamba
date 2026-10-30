@@ -20,6 +20,7 @@ export default function PlayerJourney() {
   const { profile, team } = useSession()
   const players = useLiveQuery(() => (team ? db.players.where('teamId').equals(team.id).toArray() : Promise.resolve([] as Player[])), [team?.id], null as Player[] | null)
   const me = players ? linkedPlayer(players, profile) : null
+  const parent = profile?.role === 'parent' // a parent picks their child's record, not their own
   const data = useJourney(me?.id)
   const back = <BackLink to="/app/joueur"><ArrowLeft size={16} />{t('page.backToSpace')}</BackLink>
 
@@ -34,8 +35,8 @@ export default function PlayerJourney() {
       <section className="max-w-2xl rounded-[22px] border border-line bg-paper p-5 sm:p-7">
         <div className="mb-5">
           <Route size={24} strokeWidth={1.75} className="text-forest-600" aria-hidden="true" />
-          <h1 className="mt-3 text-[26px] leading-tight text-ink sm:text-[30px]">{t('page.linkTitle')}</h1>
-          <p className="mt-1.5 text-[15px] leading-relaxed text-ink-muted">{t('page.linkBody', { team: team.name })}</p>
+          <h1 className="mt-3 text-[26px] leading-tight text-ink sm:text-[30px]">{t(parent ? 'page.linkTitleParent' : 'page.linkTitle')}</h1>
+          <p className="mt-1.5 text-[15px] leading-relaxed text-ink-muted">{t(parent ? 'page.linkBodyParent' : 'page.linkBody', { team: team.name })}</p>
         </div>
         {players.length === 0 ? <p className="text-[14.5px] text-ink-muted">{t('page.linkEmpty')}</p> : (
           <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">

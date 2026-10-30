@@ -56,7 +56,8 @@
     "mainNav": "Navigation principale",
     "teamLine": "{{age}}, {{format}} contre {{format}}, {{formation}}",
     "switchTeam": "Changer d'équipe",
-    "football": "Jeu de foot"
+    "football": "Jeu de foot",
+    "planLine": "Formule {{plan}}"
   },
   "actions": {
     "save": "Enregistrer",
@@ -202,8 +203,8 @@
       "molaActions": "Mola agit pour vous",
       "everythingCoach": "Tout Coach Pro",
       "teams": "Équipes illimitées",
-      "staff": "Comptes du staff",
-      "clubModel": "Le modèle de jeu du club",
+      "staff": "Comptes du staff (bientôt)",
+      "clubModel": "Le modèle de jeu du club (bientôt)",
       "export": "Exports et impressions",
       "everythingClub": "Tout Club",
       "nationalModel": "Modèle de jeu national",

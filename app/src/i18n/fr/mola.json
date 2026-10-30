@@ -147,7 +147,9 @@
     "kept_one": "J'ai gardé la séance qui existait déjà.",
     "kept_other": "J'ai gardé les {{count}} séances qui existaient déjà.",
     "past_one": "Un jour était déjà passé.",
-    "past_other": "{{count}} jours étaient déjà passés."
+    "past_other": "{{count}} jours étaient déjà passés.",
+    "busy_one": "J'ai laissé un jour libre : un autre match ou sa récupération tombe ce jour-là.",
+    "busy_other": "J'ai laissé {{count}} jours libres : un autre match ou sa récupération tombe ces jours-là."
   },
   "session": {
     "ack": "Je crée une séance {{md}} pour {{day}}.",
@@ -161,7 +163,8 @@
     },
     "done_one": "Votre séance « {{title}} » est prête : 1 bloc, {{minutes}} minutes.",
     "done_other": "Votre séance « {{title}} » est prête : {{count}} blocs, {{minutes}} minutes.",
-    "oriented": "Fil rouge : « {{intention}} »."
+    "oriented": "Fil rouge : « {{intention}} ».",
+    "mdPassed": "Le jour {{md}} du prochain match est déjà passé : je l'ai datée d'aujourd'hui, changez la date dans la séance si besoin."
   },
   "match": {
     "exists": "Ce match existe déjà : contre {{opponent}}, {{day}}. Je ne le crée pas une deuxième fois.",
@@ -176,7 +179,8 @@
     },
     "done": "Le match contre {{opponent}} est programmé, {{when}}.",
     "venue": "Lieu : {{venue}}.",
-    "addPlayers": "Ajoutez vos joueurs pour que je propose la composition."
+    "addPlayers": "Ajoutez vos joueurs pour que je propose la composition.",
+    "sameDay": "Attention : vous jouez déjà contre {{opponent}} ce jour-là. Si c'est une erreur, modifiez la date sur la fiche de match."
   },
   "player": {
     "ack": "J'ajoute {{name}} à {{team}}.",
@@ -357,7 +361,7 @@
     "coach": "Bienvenue {{name}}. Votre espace {{app}} est prêt. Pour commencer, je peux créer votre équipe, vous proposer des exercices ou ouvrir « {{methode}} ».",
     "player": "Bienvenue {{name}}. Votre espace {{app}} est prêt. Je peux vous proposer des exercices pour progresser, suivre votre parcours match après match, ou ouvrir les défis du jour.",
     "parent": "Bienvenue {{name}}. Je peux vous aider à accompagner votre enfant : les Leçons du Ballon de {{series}}, des exercices simples, et le roman « {{tome1}} » avec {{heroes}}.",
-    "demo": "Bienvenue dans la démo, {{name}}. Vous entraînez {{team}} : {{count}} joueurs, une semaine de séances, un match déjà analysé et un match à venir samedi. Demandez-moi ce que vous voulez, par exemple d'analyser le dernier match ou de rédiger la convocation."
+    "demo": "Bienvenue dans la démo, {{name}}. Vous entraînez {{team}} : {{count}} joueurs, une semaine de séances, des matchs déjà analysés et un match à venir samedi. Demandez-moi ce que vous voulez, par exemple d'analyser le dernier match ou de rédiger la convocation."
   },
   "pro": {
     "eyebrow": "Mola a remarqué",
@@ -583,7 +587,7 @@
       },
       "youth": {
         "title": "Académie : Lionceaux U13",
-        "body": "Les Lionceaux de Bonamoussadi, l'équipe de Kaydoudou et BriBri : 15 joueurs, un match analysé.",
+        "body": "Les Lionceaux de Bonamoussadi, l'équipe de Kaydoudou et BriBri : 15 joueurs, quatre matchs analysés.",
         "cta": "Démo académie U13"
       }
     },

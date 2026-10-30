@@ -53,3 +53,5 @@ export const GATES = {
 }
 
 export const isPaid = (p: Plan) => p !== 'free'
+/** The coaching limits (GATES) apply to every plan without the coaching tools: Free and Joueur Premium. */
+export const coachLimited = (p?: Plan | null) => p === 'free' || p === 'player'

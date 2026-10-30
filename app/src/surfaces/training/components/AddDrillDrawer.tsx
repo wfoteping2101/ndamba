@@ -11,7 +11,8 @@ import { EMPTY_FILTER, matches, type DrillFilter } from './helpers'
 /** "Ajouter un exercice": search and filter the library, add with one tap. Starts filtered on the session's day. */
 export function AddDrillDrawer({ open, onClose, md, used, onAdd }: { open: boolean; onClose: () => void; md: MD; used: string[]; onAdd: (d: Drill) => void }) {
   const { t } = useT('training')
-  const [filter, setFilter] = useState<DrillFilter>({ ...EMPTY_FILTER, day: [md] })
+  // start on the drills of the session's day, unless that leaves almost nothing to choose from (MD+1 has a single drill)
+  const [filter, setFilter] = useState<DrillFilter>(() => ({ ...EMPTY_FILTER, day: DRILLS.filter((d) => d.md.includes(md)).length >= 4 ? [md] : [] }))
   const [added, setAdded] = useState<string[]>([])
   const list = useMemo(() => DRILLS.filter((d) => matches(d, filter)), [filter])
   const close = () => { setAdded([]); onClose() }
@@ -29,7 +30,7 @@ export function AddDrillDrawer({ open, onClose, md, used, onAdd }: { open: boole
           return (
             <li key={d.id}>
               <DrillRow d={d} action={
-                <button type="button" onClick={() => { onAdd(d); setAdded((a) => [...a, d.id]) }} className={isIn ? 'btn-outline h-11 w-11 p-0' : 'btn-primary h-11 w-11 p-0'} aria-label={`${t('common:actions.add')} ${d.id}`}>
+                <button type="button" onClick={() => { if (isIn) return; onAdd(d); setAdded((a) => [...a, d.id]) }} disabled={isIn} className={isIn ? 'btn-outline h-11 w-11 p-0 disabled:opacity-100' : 'btn-primary h-11 w-11 p-0'} aria-label={`${t('common:actions.add')} ${d.id}`}>
                   {isIn ? <Check size={18} /> : <Plus size={18} />}
                 </button>} />
             </li>

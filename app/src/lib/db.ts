@@ -70,5 +70,7 @@ export const db = new NjangiDB()
 /** Wipe everything (Settings > reset). */
 export async function resetAll() {
   await db.delete()
+  // what the app keeps beside the database (player space, live clocks, Mola's small memory), but not the language
+  try { for (const k of Object.keys(localStorage)) if (k.startsWith('njangi.') && k !== 'njangi.lang') localStorage.removeItem(k) } catch { /* storage unavailable */ }
   location.href = '/'
 }

@@ -5,7 +5,7 @@ import { db } from '../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
 import { useSession } from '../../lib/session'
 import { useT } from '../../i18n'
-import { BOOKS, BRAND, GATES } from '../../lib/config'
+import { BOOKS, BRAND, GATES, coachLimited } from '../../lib/config'
 import { createTeam } from '../../lib/actions'
 import { cx, fmtDate, parseISODate, todayISO } from '../../lib/util'
 import { fmtNjangi, njangiFromCounts, njangiLabel, sumCounts } from '../../lib/njangi'
@@ -23,7 +23,7 @@ export default function AnalysisHub() {
   useDocumentTitle(t('hub.title'))
   const header = <PageHeader title={t('hub.title')} subtitle={t('hub.subtitle', { app: BRAND.name })} />
   if (!team) return <div>{header}<CreateTeam /></div>
-  return <Hub team={team} free={profile?.plan === 'free'} header={header} />
+  return <Hub team={team} free={coachLimited(profile?.plan)} header={header} />
 }
 
 /* ------------------------------------------------------------------ hub */

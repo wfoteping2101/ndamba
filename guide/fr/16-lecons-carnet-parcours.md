@@ -83,7 +83,7 @@ Chaque page se modifie avec le crayon et se supprime avec la corbeille, après c
 
 Le parcours répond à une question simple : qu'est-ce que ce joueur a construit ? Il rassemble au même endroit ce que l'entraîneur a noté (évaluations, observations, présences, minutes de jeu) et ce que le joueur s'est fixé. L'entraîneur le voit depuis la fiche du joueur (chapitre 10) ; le joueur voit le sien par la carte **Mon parcours**, dans l'espace joueur et sur l'accueil. La première fois, il faut relier son profil à sa fiche avec l'écran **Qui es-tu dans l'équipe ?** (chapitre 15). Sans équipe, la page explique que le parcours se construit quand l'entraîneur ajoute le joueur à son effectif.
 
-![Le parcours de BriBri vu par lui-même : le numéro 8, le poste Pivot, 12 ans, le bouton Me fixer un objectif, les saisons, le ruban de la saison et les chiffres Séances 15/16, Matchs joués 4, Buts 1, Observations 8, Compétences +4, Objectifs atteints 1/3.](shot:youth-link-chooser "Mon parcours, dans la démo académie U13.")
+![Le parcours de BriBri vu par lui-même : le numéro 8, le poste Pivot, 12 ans, le bouton Me fixer un objectif, les saisons, le ruban de la saison et les chiffres Séances 15/16, Matchs joués 4, Buts 1, Observations 8, Compétences +4, Objectifs atteints 1/3.](shot:youth-journey-linked "Mon parcours, dans la démo académie U13.")
 
 En haut, le parcours affiche le numéro, le nom, le poste, l'âge et l'équipe, puis les boutons de saison (**Saison 2026-2027**, **Saison 2025-2026**, **Toutes les saisons**). Une saison va du 1er août au 31 juillet. Le ruban de la saison place sur une même frise les **Jalons**, les **Matchs**, les **Séances** et les **Observations**, jusqu'à **Aujourd'hui**. Six chiffres suivent : **Séances** suivies sur le total avec le taux de présence, **Matchs joués** et minutes, **Buts** (quand il y en a), **Observations** (dont combien de positives), **Compétences** (les niveaux gagnés depuis le début de la saison) et **Objectifs atteints**. Une phrase conclut : « Ton point fort : Protection du ballon (niveau 4). Ta prochaine marche : Contrôle orienté. »
 
@@ -97,7 +97,7 @@ Plus bas, le joueur trouve :
 
 Le parcours s'adapte à l'âge. Avant 13 ans, la page le dit : « Chaque séance compte. Voici ce qui avance. » Les notes de séquence de l'entraîneur ne s'affichent pas à l'enfant, et il n'y a jamais de classement. De 13 à 16 ans, la page ajoute des repères de match, comme le pourcentage de passes réussies. À partir de 17 ans, **Performance de la saison** donne le détail rapporté à 90 minutes, et la phrase devient « Ton axe de travail ».
 
-![Le parcours de Steve Ndjock, 28 ans : Séances 38/39, Matchs joués 3, 240 min, Observations 7, Compétences +2, et la phrase Ton point fort : Scan (niveau 4). Ton axe de travail : Conduite.](shot:pro-link-chooser "Le même parcours pour un joueur senior, dans la démo club pro.")
+![Le parcours de Steve Ndjock, 28 ans : Séances 38/39, Matchs joués 3, 240 min, Observations 7, Compétences +2, et la phrase Ton point fort : Scan (niveau 4). Ton axe de travail : Conduite.](shot:pro-player-journey-linked "Le même parcours pour un joueur senior, dans la démo club pro.")
 
 Le joueur ne peut ni modifier ni supprimer ce que son entraîneur a écrit. Il peut en revanche se fixer ses propres objectifs :
 

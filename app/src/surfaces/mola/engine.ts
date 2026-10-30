@@ -830,8 +830,11 @@ export function parseName(text: string, bare = false): string | undefined {
 /** Club after "des U15 de X", "je joue au X", "I play for X", "le club X", "chez X". */
 export function parseClub(text: string): string | undefined {
   const pats = [
-    /\bu\s?-?\d{1,2}s?\s+(?:de|du|des|d'|of|at|for|a|au|chez|with)\s*(.+)$/,
-    /\b(?:seniors?(?:\s+(?:pro|professionnels?|amateurs?))?|equipe premiere|first team|reserve)\s+(?:de|du|des|d'|of|at|for|a|au|chez)\s*(.+)$/,
+    // the preposition must end at a word boundary: "des Lionceaux" is not "de" + "s Lionceaux"
+    /\bu\s?-?\d{1,2}s?\s+(?:(?:des|du|de|of|at|for|aux|au|a|chez|with)\s+|d')(.+)$/,
+    /\b(?:seniors?(?:\s+(?:pro|professionnels?|amateurs?))?|equipe premiere|first team|reserve)\s+(?:(?:des|du|de|of|at|for|aux|au|a|chez)\s+|d')(.+)$/,
+    // "I coach the Lionceaux de Bonamoussadi U13", "j'entraîne les Aigles U15": the name comes before the category
+    /\b(?:i coach|i train|j'entraine|je coache|j'encadre)\s+(?:the\s+|les\s+|l')?(?!(?:u\s?-?\d|seniors?|kids|enfants|jeunes|une?|an?|des)\b)(.+?)\s+u\s?-?\d{1,2}s?\b/,
     // "l'entraîneur principal de l'Étoile de la Côte", "head coach of Avenir FC", "sélectionneur du Gabon"
     /\b(?:entraineur|entraineuse|coach|selectionneur|selectionneuse|analyste|analyst|educateur|educatrice|adjoint|adjointe|manager|joueur|joueuse|player|footballeur|footballeuse)(?:\s+(?:principal|principale|adjoint|adjointe|en chef|des gardiens|physique|video|de la performance|pro|professionnel|professionnelle|professional))?\s+(?:de l'|a l'|(?:de la|du|de|of|at|for|with|au)\s+)(?!(?:un|une|a|an|the|football|foot|soccer|futsal|jeunes|enfants|kids|filles|garcons|girls|boys|seniors?|gardiens?|goalkeepers?|equipe|team|club|l'equipe|ligue|league)\b)(.+)$/,
     /\b(?:je joue|i play|elle joue|il joue|j'entraine|i coach|je coache|i work|je travaille|je suis|i'm|i am)\s+(?:au|aux|pour|chez|for|at|with|avec|dans|in|a l'|a la)\s+(?!(?:un|une|a|an|the)\s)(.+)$/,

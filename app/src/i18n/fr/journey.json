@@ -23,6 +23,8 @@
     "noTeamBody": "Quand ton coach t'ajoute à son équipe dans Ndamba, tes séances, tes matchs, ses observations et tes objectifs se retrouvent ici, saison après saison.",
     "linkTitle": "Qui es-tu dans l'équipe ?",
     "linkBody": "Choisis ta fiche dans l'effectif de {{team}} pour voir ton parcours.",
+    "linkTitleParent": "Quelle est la fiche de votre enfant ?",
+    "linkBodyParent": "Choisissez la fiche de votre enfant dans l'effectif de {{team}} pour suivre son parcours.",
     "linkEmpty": "L'effectif est encore vide. Demande à ton coach d'ajouter les joueurs."
   },
   "hero": {
@@ -476,7 +478,8 @@
   "teaser": {
     "title": "Parcours, saison {{season}}",
     "open": "Ouvrir le parcours",
-    "active": "en cours"
+    "active": "en cours",
+    "objectives": "Objectifs"
   },
   "playerCard": {
     "title": "Mon parcours",

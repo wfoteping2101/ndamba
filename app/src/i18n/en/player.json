@@ -105,16 +105,16 @@
     "range": "{{from}} to {{to}}, {{n}} min of training"
   },
   "indice": {
-    "eyebrow": "Indice Njangi, last match",
-    "title": "Indice Njangi",
-    "emptyTitle": "No Indice Njangi yet",
-    "emptyBody": "Tag a match live (passes, lines broken, five-second regains) and the Indice tells you whether your team had the ball with purpose.",
+    "eyebrow": "Njangi Index, last match",
+    "title": "Njangi Index",
+    "emptyTitle": "No Njangi Index yet",
+    "emptyBody": "Tag a match live (passes, lines broken, five-second regains) and the Index tells you whether your team had the ball with purpose.",
     "emptyCtaLive": "Analyse the match against {{opponent}}",
     "emptyCta": "Open analysis",
     "against": "Against {{opponent}}",
     "trend_one": "From {{count}} analysed match",
     "trend_other": "Trend over {{count}} analysed matches",
-    "trendAria": "Indice of recent matches: {{values}}",
+    "trendAria": "Index of recent matches: {{values}}",
     "weakest": "to work on",
     "work": "Weak spot: {{sub}}. This week, the intention to train is \"{{intention}}\".",
     "prepare": "Prepare the week around \"{{intention}}\"",
@@ -124,7 +124,7 @@
   "subs": {
     "progression": "Progression",
     "penetration": "Penetration",
-    "fixation": "Pinning",
+    "fixation": "Fixation",
     "reprise": "Regain",
     "controle": "Control"
   },
@@ -154,7 +154,7 @@
     "newMatch": "New match",
     "newMatchHint": "Opponent, venue, line-up",
     "live": "Live analysis",
-    "liveHint": "Tag the match, get the Indice",
+    "liveHint": "Tag the match, get the Index",
     "drills": "Drills",
     "drillsHint": "The Njangi Code library",
     "novel": "Read the novel",
@@ -162,7 +162,7 @@
   },
   "team": {
     "title": "Create your team",
-    "body": "One team, and this page fills up: the week's sessions, the next match, the Indice Njangi.",
+    "body": "One team, and this page fills up: the week's sessions, the next match, the Njangi Index.",
     "playerTitle": "Do you play for a team?",
     "playerBody": "Add it to see your matches here. The challenges work without a team too.",
     "name": "Team name",
@@ -329,7 +329,7 @@
   },
   "self": {
     "title": "How I see myself",
-    "body": "Where do you stand on the ten competences of the grid? Be honest: it is for you, nothing is sent.",
+    "body": "Where do you stand on the ten skills of the grid? Be honest: it is for you, nothing is sent.",
     "scale": "Scale from 1 to 4",
     "levels": {
       "1": "I'm discovering it",
@@ -404,7 +404,7 @@
     "4": {
       "country": "Spain",
       "piece": "The map",
-      "body": "In Barcelona: the rondo, the pausa, the third man and the superiorities. Being in the right place, making triangles."
+      "body": "In Catalonia: the rondo, the pausa, the third man and the superiorities. Being in the right place, making triangles."
     },
     "5": {
       "country": "England",
@@ -489,7 +489,7 @@
       "form": "Form",
       "toLog": "To log",
       "load": "7-day load",
-      "lastIndice": "Indice {{v}}",
+      "lastIndice": "Index {{v}}",
       "number": "no. {{n}}"
     },
     "link": {
@@ -651,15 +651,15 @@
     "last": {
       "eyebrow": "My last match",
       "emptyTitle": "No match played yet",
-      "emptyBody": "After your first match, you will see the team's Indice Njangi here, your share of the play and your actions minute by minute.",
+      "emptyBody": "After your first match, you will see the team's Njangi Index here, your share of the play and your actions minute by minute.",
       "title": "Against {{opponent}}",
       "result": {
         "win": "Win",
         "loss": "Loss",
         "draw": "Draw"
       },
-      "teamIndice": "Team Indice Njangi",
-      "untagged": "This match was not tagged live: no Indice Njangi and no detailed actions.",
+      "teamIndice": "Team Njangi Index",
+      "untagged": "This match was not tagged live: no Njangi Index and no detailed actions.",
       "myPart": "My share of the play",
       "minutes": "Minutes played",
       "started": "Started",
@@ -767,7 +767,7 @@
       "formToday": "Form today",
       "formLast": "Latest form",
       "vsPrev": "{{v}} on 3 weeks",
-      "lastIndice": "Last Indice",
+      "lastIndice": "Last Index",
       "vs": "against {{opponent}}",
       "objectives": "Active objectives",
       "cycle": "this cycle",
@@ -784,14 +784,14 @@
       "formTitle": "Form and load",
       "formBody": "The morning questionnaire, your effort after every session and the comparison with your usual weeks (The Njangi Code, chapter 29).",
       "matchTitle": "Last match",
-      "matchBody": "The team's Indice Njangi, your share of the play and each of your tagged actions.",
+      "matchBody": "The team's Njangi Index, your share of the play and each of your tagged actions.",
       "objTitle": "Objectives and season",
       "objBody": "What you are working on this cycle, the drills that go with it and your season in numbers."
     },
     "self": {
       "eyebrow": "Self-assessment",
       "title": "How I rate my game",
-      "body": "The ten competences of the staff's grid (The Njangi Code, chapter 25). Be hard on yourself, then compare with the staff's evaluation. Nothing is sent.",
+      "body": "The ten skills of the staff's grid (The Njangi Code, chapter 25). Be hard on yourself, then compare with the staff's evaluation. Nothing is sent.",
       "me": "Me",
       "coach": "The staff",
       "radarTitle": "Me and the staff",

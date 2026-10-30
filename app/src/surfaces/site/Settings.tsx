@@ -276,7 +276,15 @@ function PlanCard({ profile }: { profile: Profile }) {
 
 /* ---------------- data: export, import, reset ---------------- */
 
-interface Backup { app: string; brand?: string; format: number; exportedAt: string; tables: Record<string, unknown[]> }
+interface Backup { app: string; brand?: string; format: number; exportedAt: string; tables: Record<string, unknown[]>; local?: Record<string, string> }
+
+/** The player space keeps a few things outside the database (lessons understood, the self-assessment): they travel with the backup. */
+const LOCAL_KEYS = ['njangi.lessons', 'njangi.lessons.part', 'njangi.self']
+const readLocal = () => {
+  const out: Record<string, string> = {}
+  try { for (const k of LOCAL_KEYS) { const v = localStorage.getItem(k); if (v !== null) out[k] = v } } catch { /* storage unavailable */ }
+  return out
+}
 
 function parseBackup(text: string): Backup | null {
   try {
@@ -286,7 +294,8 @@ function parseBackup(text: string): Backup | null {
     const known = new Set(db.tables.map((tb) => tb.name))
     const names = Object.keys(v.tables)
     if (!names.length || !names.every((n) => known.has(n) && Array.isArray((v.tables as Record<string, unknown>)[n]))) return null
-    return { app: v.app, brand: v.brand, format: Number(v.format) || 1, exportedAt: String(v.exportedAt || ''), tables: v.tables as Record<string, unknown[]> }
+    const local = v.local && typeof v.local === 'object' ? Object.fromEntries(Object.entries(v.local).filter(([k, x]) => LOCAL_KEYS.includes(k) && typeof x === 'string')) as Record<string, string> : undefined
+    return { app: v.app, brand: v.brand, format: Number(v.format) || 1, exportedAt: String(v.exportedAt || ''), tables: v.tables as Record<string, unknown[]>, local }
   } catch {
     return null
   }
@@ -304,7 +313,7 @@ function DataCard() {
   const exportAll = async () => {
     const tables: Record<string, unknown[]> = {}
     for (const tb of db.tables) tables[tb.name] = await tb.toArray()
-    const payload: Backup = { app: BACKUP_APP, brand: BRAND.name, format: 1, exportedAt: nowISO(), tables }
+    const payload: Backup = { app: BACKUP_APP, brand: BRAND.name, format: 1, exportedAt: nowISO(), tables, local: readLocal() }
     download(`${BRAND.name.toLowerCase()}-${todayISO()}.json`, JSON.stringify(payload, null, 2), 'application/json')
     setFlash(t('settings.data.exported'))
   }
@@ -328,6 +337,7 @@ function DataCard() {
           if (Array.isArray(rows) && rows.length) await tb.bulkPut(rows)
         }
       })
+      if (pending.local) { try { for (const [k, v] of Object.entries(pending.local)) localStorage.setItem(k, v) } catch { /* storage unavailable */ } }
       setPending(null)
       setFlash(t('settings.data.imported'))
     } finally { setBusy(false) }

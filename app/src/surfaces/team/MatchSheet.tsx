@@ -6,7 +6,7 @@ import { useLiveQuery, useDocumentTitle } from '../../lib/hooks'
 import { useSession } from '../../lib/session'
 import { convocationText } from '../../lib/actions'
 import { computeNjangi, njangiLabel } from '../../lib/njangi'
-import { BRAND, GATES } from '../../lib/config'
+import { BRAND, GATES, coachLimited } from '../../lib/config'
 import type { GamePlan, Match, Player } from '../../lib/types'
 import { Callout, EmptyState, Modal } from '../../ui'
 import { useT } from '../../i18n'
@@ -61,7 +61,7 @@ export default function MatchSheet() {
   const right = match.home ? { name: match.opponent, score: match.scoreThem, us: false } : { name: teamName, score: match.scoreUs, us: true }
   // free plan: one live-tagged match; never gate a match that already has tags
   const otherTagged = data.taggedMatchIds.filter((m) => m !== match.id).length
-  const gated = profile?.plan === 'free' && eventCount === 0 && otherTagged >= GATES.liveMatchesFree
+  const gated = coachLimited(profile?.plan) && eventCount === 0 && otherTagged >= GATES.liveMatchesFree
 
   const startLive = async () => {
     if (gated) return

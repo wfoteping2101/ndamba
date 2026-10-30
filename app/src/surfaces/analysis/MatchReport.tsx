@@ -5,7 +5,7 @@ import { MolaMark } from '../../ui/brand'
 import { db } from '../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
 import { useT } from '../../i18n'
-import { BOOKS, BRAND } from '../../lib/config'
+import { BOOKS, BRAND, GATES, coachLimited } from '../../lib/config'
 import { nextMatch, planWeek } from '../../lib/actions'
 import { getDrill, drillText } from '../../content'
 import { cx, fmtDate, nowISO, uid, weekStart } from '../../lib/util'
@@ -341,12 +341,15 @@ function WeekPlan({ summary, team }: { summary: NjangiSummary; team?: Team }) {
   const next = useLiveQuery(() => (team ? nextMatch(team.id) : Promise.resolve(undefined)), [team?.id], undefined as Match | undefined)
   const [busy, setBusy] = useState(false)
   const [done, setDone] = useState<null | { n: number; week: string }>(null)
+  const navigate = useNavigate()
   const subNames = summary.weakest.map((k) => t(`sub.${k}.name`)).join(', ')
   const plan = async () => {
     if (!next || !team) return
     setBusy(true)
     try {
-      const created = await planWeek({ matchDate: next.date, teamId: team.id, ageGroup: team.ageGroup, lang, intention: summary.intention, createdBy: 'user' })
+      const me = await db.profile.get('me')
+      if (coachLimited(me?.plan) && (await db.sessions.count()) >= GATES.sessionsFree) { navigate('/app/premium'); return }
+      const created = await planWeek({ matchDate: next.date, teamId: team.id, ageGroup: team.ageGroup, lang, intention: summary.intention, createdBy: 'mola' })
       setDone({ n: created.length, week: weekStart(next.date) })
     } finally { setBusy(false) }
   }
@@ -411,7 +414,8 @@ function KeyCounts({ result, extras, oppShots, events }: { result: NjangiResult;
   const { t, lang } = useT('analysis')
   const c = result.counts
   const pct = (v: number) => fmtPct(v, lang)
-  const oppOn = events.filter((e) => e.side === 'them' && e.code === 'SHOT_IN').length
+  // an opponent goal is stored as goal + shot (there is no « their shot on target » button): it counts as on target
+  const oppOn = events.filter((e) => e.side === 'them' && (e.code === 'SHOT_IN' || e.code === 'GOAL')).length
   const tiles: [string, ReactNode, string?][] = [
     [t('counts.passesTried'), result.passes, `${pct(result.passAccuracy)} ${t('counts.accuracyShort')}`],
     [t('counts.conservation'), pct(result.conservation)],

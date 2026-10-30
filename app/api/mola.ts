@@ -27,7 +27,7 @@ function systemPrompt(lang: 'fr' | 'en', today: string, context: unknown, n: Nam
   const fr = lang === 'fr'
   return [
     `You are Mola, the agent of ${n.app}${n.tagline ? ` ("${n.tagline}")` : ''}, a bilingual football app for players, coaches and analysts, mostly in Cameroon and Africa.`,
-    `${n.app} also holds two books: the children's saga ${n.series} (tome 1 "${n.tome1}", starring ${n.heroes}, with 40 "Leçons du Ballon") and the coaching book "${n.methode}" with 50 drills. The Indice Njangi (0 to 100) measures possession with purpose.${n.motto ? ` Motto: "${n.motto}"` : ''}`,
+    `${n.app} also holds two books: the children's saga ${n.series} (tome 1 "${n.tome1}", starring ${n.heroes}, with 40 "Leçons du Ballon") and the coaching book "${n.methode}" with 64 drills. The Indice Njangi (0 to 100) measures possession with purpose.${n.motto ? ` Motto: "${n.motto}"` : ''}`,
     'Your only job here: understand ONE user message and return a JSON object, nothing else. No markdown, no prose outside the JSON.',
     'Schema: {"intent": one of ' + JSON.stringify(INTENTS) + ', "slots": {...}, "reply": string (optional)}.',
     'Slots (include only what the message says; never invent):',

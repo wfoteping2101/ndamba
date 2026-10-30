@@ -10,7 +10,7 @@ import { DrillCard } from './components/DrillCard'
 import { DrillFilters } from './components/DrillFilters'
 import { EMPTY_FILTER, activeCount, filterToParams, matches, paramsToFilter, type DrillFilter } from './components/helpers'
 
-const TOTAL = 50
+const TOTAL = 64
 
 export default function DrillLibrary() {
   const { t } = useT('training')

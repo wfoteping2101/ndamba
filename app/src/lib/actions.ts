@@ -74,13 +74,24 @@ export async function createAutoSession(input: AutoSessionInput): Promise<Sessio
 
 /** Plan the four days before a match (MD-4 to MD-1). Skips days that already have a session. */
 /** Plans MD-4 to MD-1 before a match. Days before `from` (default: today) are skipped, and so are days that already have a session. */
+/** Days before a match that must stay free of MD-4 to MD-1 work because another match is played there:
+ *  that match day itself and the day after it (MD+1, recovery). */
+export async function matchBusyDays(matchDate: string, teamId?: string) {
+  const others = await db.matches.where('date').between(addDays(matchDate, -5), addDays(matchDate, -1), true, true)
+    .filter((m) => !teamId || m.teamId === teamId).toArray()
+  const busy = new Set<string>()
+  for (const m of others) { busy.add(m.date); busy.add(addDays(m.date, 1)) }
+  return busy
+}
+
 export async function planWeek(opts: { matchDate: string; teamId?: string; ageGroup?: string; lang?: Lang; intention?: Intention; createdBy?: 'user' | 'mola'; from?: string }) {
   const created: Session[] = []
   const mds: [MD, number][] = [['MD-4', -4], ['MD-3', -3], ['MD-2', -2], ['MD-1', -1]]
   const from = opts.from ?? todayISO()
+  const busy = await matchBusyDays(opts.matchDate, opts.teamId)
   for (const [md, off] of mds) {
     const date = addDays(opts.matchDate, off)
-    if (date < from) continue
+    if (date < from || busy.has(date)) continue
     const exists = await db.sessions.where('date').equals(date).filter((s) => !opts.teamId || s.teamId === opts.teamId).count()
     if (exists) continue
     created.push(await createAutoSession({ md, date, teamId: opts.teamId, ageGroup: opts.ageGroup, lang: opts.lang, intention: opts.intention, createdBy: opts.createdBy }))

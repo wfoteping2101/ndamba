@@ -6,7 +6,7 @@ import { Field, Modal } from '../../../ui'
 import { useT } from '../../../i18n'
 import { db } from '../../../lib/db'
 import { createAutoSession } from '../../../lib/actions'
-import { GATES } from '../../../lib/config'
+import { GATES, coachLimited } from '../../../lib/config'
 import { useLiveQuery } from '../../../lib/hooks'
 import { useSession } from '../../../lib/session'
 import { todayISO, cx } from '../../../lib/util'
@@ -21,7 +21,7 @@ export interface NewSessionPreset { date?: string; md?: MD; intention?: Intentio
 export function useSessionQuota() {
   const { profile } = useSession()
   const count = useLiveQuery(() => db.sessions.count(), [], 0)
-  const free = profile?.plan === 'free'
+  const free = coachLimited(profile?.plan)
   return { count, limited: free && count >= GATES.sessionsFree, left: free ? Math.max(0, GATES.sessionsFree - count) : Infinity }
 }
 
