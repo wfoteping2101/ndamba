@@ -98,16 +98,16 @@ Vous voulez voir Ndamba rempli avant de créer votre propre espace ? Deux démos
 
 ![L'accueil de la démo académie : Bonsoir, Tonton Fokou, la séance du jour Vitesse : transitions et le prochain match contre les Panthères de Deïdo.](shot:youth-home "La démo académie U13 : l'accueil de l'éducateur des Lionceaux.")
 
-Les dates de la démo suivent le calendrier réel : le prochain match tombe toujours le samedi de la semaine en cours, et les séances de la semaine l'entourent. Les textes de la démo sont écrits dans la langue active au moment où vous la lancez. Quand la démo s'ouvre depuis la page **Bienvenue**, Mola y laisse un message : « Bienvenue dans la démo, Daniel. Vous entraînez Étoile de la Côte : 22 joueurs, une semaine de séances, des matchs déjà analysés et un match à venir samedi. Demandez-moi ce que vous voulez, par exemple d'analyser le dernier match ou de rédiger la convocation. »
+Les dates de la démo suivent le calendrier réel : le prochain match tombe toujours le samedi de la semaine en cours, et les séances de la semaine l'entourent. Les textes de la démo sont écrits dans la langue active au moment où vous la lancez. Quand la démo s'ouvre depuis la page **Bienvenue**, Mola y laisse un message : « Bienvenue dans la démo, Daniel. Vous entraînez Étoile de la Côte : 22 joueurs, une semaine de séances, un match déjà analysé et un match à venir samedi. Demandez-moi ce que vous voulez, par exemple d'analyser le dernier match ou de rédiger la convocation. » Pour l'académie, le message annonce 15 joueurs et « 4 matchs déjà analysés ».
 
 ### Ce qu'une démo remplace
 
-Une démo ne s'ajoute pas à vos données : elle **remplace** ce que ce navigateur contient pour Ndamba. Profil, équipes, joueurs, séances, matchs, actions codées, conversation et tâches de Mola, carnet, défis, vidéos, évaluations, observations, présences, objectifs, grands moments et suivi de forme : tout est effacé, puis rempli avec la démo. Seuls restent la langue choisie et, dans l'espace joueur, les leçons marquées « J'ai compris » et « Mon regard ». Passer d'une démo à l'autre remplace aussi la première.
+Une démo ne s'ajoute pas à vos données : elle **remplace** ce que ce navigateur contient pour Ndamba. Profil, équipes, joueurs, séances, matchs, actions codées, conversation et tâches de Mola, carnet, défis, vidéos, évaluations, observations, présences, objectifs, grands moments et suivi de forme : tout est effacé, puis rempli avec la démo. Les leçons marquées « J'ai compris » et « Mon regard » de l'espace joueur sont effacées aussi. Seule reste la langue choisie. Passer d'une démo à l'autre remplace aussi la première.
 
 Ndamba vous protège : si ce navigateur contient votre propre espace, une fenêtre « Lancer la démo ? » vous prévient et vous invite à exporter d'abord une sauvegarde ; il faut toucher **Lancer la démo** pour continuer, ou **Annuler**. La fenêtre s'ouvre depuis l'accueil du site comme depuis la barre de la page **Bienvenue** (son menu **Démo** sur téléphone).
 
-> [!ATTENTION] Un profil sans équipe
-> Sur la page **Bienvenue**, la question n'est posée que si vous avez créé vos propres équipes. Un profil qui n'en a pas encore, celui d'un joueur ou d'un parent par exemple, est remplacé sans fenêtre, avec son carnet et ses défis. Avant d'ouvrir une démo depuis cette page, exportez une sauvegarde depuis **Réglages** (chapitre 6).
+> [!ASTUCE] Exportez d'abord
+> La fenêtre s'ouvre pour tout espace qui n'est pas une démo, même celui d'un joueur ou d'un parent qui n'a pas d'équipe : son carnet et ses défis seraient remplacés eux aussi. Si vous voulez les garder, touchez **Annuler**, exportez une sauvegarde depuis **Réglages** (chapitre 6), puis revenez lancer la démo.
 
 ## Revenir plus tard
 

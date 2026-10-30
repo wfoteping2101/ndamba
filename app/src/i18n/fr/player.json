@@ -37,7 +37,7 @@
     "eyebrow": "Aujourd'hui",
     "matchDay": "Jour de match",
     "noSession": "Pas encore de séance",
-    "matchBody": "Le match contre {{opponent}}, c'est aujourd'hui. Vérifie la composition, puis lance l'analyse en direct au coup d'envoi.",
+    "matchBody": "Le match contre {{opponent}}, c'est aujourd'hui. Vérifiez la composition, puis lancez l'analyse en direct au coup d'envoi.",
     "suggestYouth": "Rien de prévu aujourd'hui. Je vous propose une séance jeunes : rondo, petit jeu, jeu de position, puis match libre.",
     "suggestMd": "Rien de prévu aujourd'hui. Avec le calendrier du match, c'est un jour {{md}}.",
     "create": "Préparer la séance {{md}}",
@@ -47,7 +47,7 @@
     "open": "Ouvrir la séance",
     "blocks_one": "{{count}} bloc",
     "blocks_other": "{{count}} blocs",
-    "emptyBlocks": "Séance vide pour l'instant : ouvre-la pour ajouter des exercices.",
+    "emptyBlocks": "Séance vide pour l'instant : ouvrez-la pour ajouter des exercices.",
     "customBlock": "Bloc libre",
     "more_one": "Et {{count}} autre séance aujourd'hui.",
     "more_other": "Et {{count}} autres séances aujourd'hui.",
@@ -69,7 +69,7 @@
   "match": {
     "eyebrow": "Prochain match",
     "none": "Aucun match prévu",
-    "noneBody": "Ajoute le prochain match : la semaine se planifie autour de lui, de MD-4 à MD-1.",
+    "noneBody": "Ajoutez le prochain match : la semaine se planifie autour de lui, de MD-4 à MD-1.",
     "inDays_one": "dans {{count}} jour",
     "inDays_other": "dans {{count}} jours",
     "tomorrow": "Demain",
@@ -161,7 +161,7 @@
     "novelHint": "{{series}}, tome 1"
   },
   "team": {
-    "title": "Crée ton équipe",
+    "title": "Créez votre équipe",
     "body": "Une équipe, et l'accueil se remplit : séances de la semaine, prochain match, Indice Njangi.",
     "playerTitle": "Tu joues dans une équipe ?",
     "playerBody": "Ajoute-la pour voir tes matchs ici. Les défis marchent aussi sans équipe.",

@@ -75,6 +75,8 @@ function demoEvents(matchId: string, players: Player[]): MatchEvent[] {
 }
 
 export async function seedDemo(role: Role = 'coach', lang: 'fr' | 'en' = 'fr', level: DemoLevel = 'youth') {
+  // a demo replaces the browser's data, including what the player space keeps beside the database
+  try { for (const k of ['njangi.lessons', 'njangi.lessons.part', 'njangi.self']) localStorage.removeItem(k) } catch { /* storage unavailable */ }
   if (level === 'pro') return seedProDemo(role, lang) // the professional club (see the PRO DEMO block below)
   await db.transaction('rw', [db.profile, db.teams, db.players, db.sessions, db.matches, db.events, db.messages, db.tasks, db.notebook, db.challenges, db.videos], async () => {
     await Promise.all([db.profile.clear(), db.teams.clear(), db.players.clear(), db.sessions.clear(), db.matches.clear(), db.events.clear(), db.messages.clear(), db.tasks.clear(), db.notebook.clear(), db.challenges.clear(), db.videos.clear()])

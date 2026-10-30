@@ -32,7 +32,7 @@ Le mode d'emploi de la page tient en quatre blocs : trois étapes (« Lance une 
 
 1. Ouvrez la page du jeu et touchez **Jouer**.
 2. L'écran **Lionceaux Football** affiche « Le terrain se prépare… » et une barre de chargement avec le pourcentage. La première fois, le téléchargement prend un moment ; ensuite, le navigateur garde le jeu en mémoire et il démarre beaucoup plus vite.
-3. Sur téléphone, tournez l'écran en paysage. Tant que le téléphone est tenu debout, le jeu affiche « Tourne ton téléphone » et « Le jeu se joue en paysage. ». Sur Android, le jeu passe aussi en plein écran quand le navigateur le permet.
+3. Sur téléphone, tournez l'écran en paysage. Tant que le téléphone est tenu debout, le jeu affiche « Tourne ton téléphone » et « Le jeu se joue en paysage. » Sur Android, le jeu passe aussi en plein écran quand le navigateur le permet.
 4. Le menu du jeu apparaît : le titre LIONCEAUX, la devise « Le ballon doit voyager. » et cinq boutons, **Match amical**, **Tournoi interquartiers**, **Comment jouer**, **Options** et un bouton de langue (**English** quand le jeu est en français, **Français** quand il est en anglais).
 5. Pour quitter à tout moment, touchez **✕ Quitter**, en haut au centre de l'écran : vous revenez à la page du jeu.
 
@@ -60,9 +60,9 @@ Les deux équipes entrent sur le terrain. Appuyez sur **✕** (la croix) pour pa
 
 ## Les commandes
 
-Le jeu se joue de trois façons, et les trois donnent le même football. Sur téléphone, il se joue au doigt : le stick apparaît là où vous posez le pouce gauche, et les boutons sont à droite, disposés comme sur une manette PS5 (✕, ○, □ et △, avec L1 et R2 au-dessus). Pour rester fluide sur les écrans très denses des téléphones, le jeu y limite sa résolution. Sur ordinateur, il se joue au clavier ou à la manette. Le tableau donne les deux colonnes côte à côte.
+Le jeu se joue de trois façons, et les trois donnent le même football. Sur téléphone, il se joue au doigt : le stick apparaît là où vous posez le pouce gauche, et les boutons sont à droite, disposés comme sur une manette de jeu (✕, ○, □ et △, avec L1 et R2 au-dessus). Pour rester fluide sur les écrans très denses des téléphones, le jeu y limite sa résolution. Sur ordinateur, il se joue au clavier ou à la manette. Le tableau donne les deux colonnes côte à côte.
 
-| Avec le ballon | Téléphone et manette PS5 | Clavier |
+| Avec le ballon | Téléphone et manette | Clavier |
 |---|---|---|
 | Se déplacer | Stick gauche | W A S D ou flèches |
 | Sprint | R2 | Shift |
@@ -73,14 +73,14 @@ Le jeu se joue de trois façons, et les trois donnent le même football. Sur té
 | Changer de joueur | L1 | Q |
 | Pause | II en haut à droite, Options | Échap |
 
-| En défense | Téléphone et manette PS5 | Clavier |
+| En défense | Téléphone et manette | Clavier |
 |---|---|---|
 | Presser le porteur | Garder ✕ appuyé | Garder J appuyé |
 | Tacle | ○ | L |
 | Tacle glissé | □ | K |
 | Changer de joueur | L1 | Q |
 
-Pour jouer à la manette PS5, branchez-la ou connectez-la en Bluetooth avant d'ouvrir le jeu, puis appuyez sur une touche. La manette dessinée à l'écran peut se cacher dans **Options**.
+Pour jouer avec une manette de jeu, branchez-la ou connectez-la en Bluetooth avant d'ouvrir le jeu, puis appuyez sur une touche. La manette dessinée à l'écran peut se cacher dans **Options**.
 
 ## Les équipes
 

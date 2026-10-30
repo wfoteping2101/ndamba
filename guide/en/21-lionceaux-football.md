@@ -42,17 +42,17 @@ In the menu, **How to play** sums up every control on a single screen, adding th
 
 ### The friendly match
 
-The **Friendly match** screen puts two panels side by side: your team on the left, the opponent on the right. The **<** and **>** arrows scroll through the teams. Each panel shows the shirt, the team's name, its neighbourhood and its level (for example "Douala neighbourhood, level 72"), then a line that says where it comes from: part I, chapters 1 to 8 of the book for the Lionceaux de Bonamoussadi, "Neighbourhood side made up for the game" for Akwa.
+The **Friendly match** screen puts two panels side by side: **Your team** on the left, **Opponent** on the right. The **<** and **>** arrows scroll through the teams. Each panel shows the shirt, the team's name, its neighbourhood and its level, then a line that says where it comes from: in the book, part I, chapters 1 to 8, for the Lionceaux de Bonamoussadi; "Neighbourhood side made up for the game" for Akwa.
 
-Below the panels, two buttons change their setting each time you tap them: the difficulty (easy, normal or hard) and the length (two halves of 2, 3, 5 or 8 minutes; two halves of 3 minutes to begin with). The kick-off button starts the match, and the back button returns to the menu.
+Below the panels, two buttons change their setting each time you tap them: the difficulty (easy, normal or hard) and the length (two halves of 2, 3, 5 or 8 minutes; two halves of 3 minutes to begin with). **Kick off** starts the match, and the back button returns to the menu.
 
 ### The neighbourhood tournament
 
-**Neighbourhood tournament** first asks you to choose your team, with the same arrows. Starting a new tournament announces the first round, for example a round of 16 between the Lionceaux de Bonamoussadi and Ndokotti, and a button plays the match. The tournament goes all the way: round of 16, quarter-final, semi-final, final. A draw goes to penalties.
+**Neighbourhood tournament** first asks you to choose your team, with the same arrows. **New tournament** announces the first round, for example a round of 16 between the Lionceaux de Bonamoussadi and Ndokotti, and **Play the match** starts it. The tournament goes all the way: round of 16, quarter-final, semi-final, final. A draw goes to penalties.
 
 ### The options
 
-**Options** sets four things: the on-screen controller (on or off), the camera (a TV view or a close view), the volume (out of 10) and the language. So there are two places to change the language inside the game: here, or with the last button of the menu.
+**Options** sets four things: the **On-screen controller** (on or off), the camera (a TV view or a close view), the volume (out of 10) and the language. So there are two places to change the language inside the game: here, or with the last button of the menu.
 
 ## Kick-off
 
@@ -60,9 +60,9 @@ Both teams walk onto the pitch. Press **✕** (cross) to skip the line-up. You c
 
 ## The controls
 
-The game can be played three ways, and all three give the same football. On a phone, you play with your fingers: the stick appears wherever you put your left thumb, and the buttons are on the right, laid out like a PS5 controller (✕, ○, □ and △, with L1 and R2 above them). To stay smooth on the very dense screens of phones, the game caps its resolution there. On a computer, you play with the keyboard or a controller. The table shows both side by side.
+The game can be played three ways, and all three give the same football. On a phone, you play with your fingers: the stick appears wherever you put your left thumb, and the buttons are on the right, laid out like a game controller (✕, ○, □ and △, with L1 and R2 above them). To stay smooth on the very dense screens of phones, the game caps its resolution there. On a computer, you play with the keyboard or a controller. The table shows both side by side.
 
-| With the ball | Phone and PS5 controller | Keyboard |
+| With the ball | Phone and controller | Keyboard |
 |---|---|---|
 | Move | Left stick | W A S D or arrows |
 | Sprint | R2 | Shift |
@@ -73,14 +73,14 @@ The game can be played three ways, and all three give the same football. On a ph
 | Switch player | L1 | Q |
 | Pause | II top right, Options | Esc |
 
-| Defending | Phone and PS5 controller | Keyboard |
+| Defending | Phone and controller | Keyboard |
 |---|---|---|
 | Press the man on the ball | Hold ✕ | Hold J |
 | Tackle | ○ | L |
 | Slide tackle | □ | K |
 | Switch player | L1 | Q |
 
-To play with a PS5 controller, plug it in or pair it over Bluetooth before opening the game, then press any button. The controller drawn on screen can be hidden in **Options**.
+To play with a game controller, plug it in or pair it over Bluetooth before opening the game, then press any button. The controller drawn on screen can be hidden in **Options**.
 
 ## The teams
 

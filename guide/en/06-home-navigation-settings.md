@@ -24,14 +24,14 @@ The large white card tells you what is happening today. It has three faces:
 
 - **A session is planned.** Its title, its tags (the day of the week such as MD-2, the intention, the length, the number of blocks, and "Prepared by Mola" if Mola built it), then the minute-by-minute plan: each drill with its code, name and length. Tap a drill to open its page, or **Open the session** to edit it.
 - **Nothing is planned.** "No session yet", followed by a suggestion with its reason: the MD day of match week, a "Youth" session up to U13, or an MD-3 session when no match is coming up. **Prepare the MD-3 session** (or the day suggested) creates the session and opens it; **Pick drills** opens the library.
-- **It is match day.** "Match day", with **Go live** to tag the match (chapter 12) and **Line-up** to check the team.
+- **It is match day.** "Match day", with **Go live** to tag the match (chapter 12) and **Lineup** to check the team.
 
 ### Next match
 
 The dark card announces the next match: **Home** or **Away**, the countdown ("D-2", then "Tomorrow", then hours and minutes on the day), the opponent, the date, the venue and the competition. Three buttons:
 
 - **Prepare the week**, in gold: Ndamba creates the missing sessions, from MD-4 to MD-1, around the match, for the days still ahead only. It leaves free the day of another match and the day after it, kept for recovery. A message confirms, for example "3 sessions prepared for match week.", with a **See the week** link. When there is nothing to create, the message says so: "Nothing to add before the match: the remaining days already have their session, or are taken by another match and its recovery." That is the case in the demo, whose week is already set. The button is greyed out on match day.
-- **Line-up** opens the match sheet (chapter 11).
+- **Lineup** opens the match sheet (chapter 11).
 - **Live** opens live analysis (chapter 12).
 
 With no match planned, the card reads "No match planned" and offers **New match**.

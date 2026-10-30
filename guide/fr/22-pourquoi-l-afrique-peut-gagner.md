@@ -26,7 +26,7 @@ Et pourtant, le Cameroun n'était pas à la Coupe du monde 2026, la première à
 
 ## Ce que l'Afrique a déjà prouvé
 
-Aucune nation africaine n'a encore gagné la Coupe du monde. Le meilleur résultat du continent est la demi-finale du Maroc en 2022, au Qatar, conclue à la quatrième place. En 2026, aux États-Unis, au Canada et au Mexique, le Maroc a été la dernière équipe africaine en course : il a été battu 2-0 par la France en quart de finale. L'Espagne a gagné la finale 1-0 après prolongation contre l'Argentine, le 19 juillet 2026, au MetLife Stadium. C'est d'ailleurs sur cette finale que s'ouvre *Le Code Njangi*.
+Aucune nation africaine n'a encore gagné la Coupe du monde. Le meilleur résultat du continent est la demi-finale du Maroc en 2022, au Qatar, conclue à la quatrième place. En 2026, aux États-Unis, au Canada et au Mexique, le Maroc a été la dernière équipe africaine en course : il a été battu 2-0 par la France en quart de finale. L'Espagne a gagné la finale 1-0 après prolongation contre l'Argentine, le 19 juillet 2026. C'est d'ailleurs sur cette finale que s'ouvre *Le Code Njangi*.
 
 Le Maroc a montré une chose précieuse : une demi-finale, puis un quart de finale quatre ans plus tard. Le haut niveau peut donc se répéter, et pas seulement se toucher une fois. La dernière marche, elle, reste à franchir : aucune nation africaine n'a encore joué de finale.
 
@@ -81,7 +81,7 @@ La mesure commune se voit dans les deux démos. Les U13 des Lionceaux de Bonamou
 
 ![Le rapport du match des Lionceaux de Bonamoussadi U13 contre les Requins de Bépanda, gagné 2-1 : un Indice Njangi de 63,7, la mention Njangi en construction et les cinq sous-indices.](shot:youth-report "Des U13 mesurés avec l'Indice Njangi (démo académie U13).")
 
-![Le rapport du match Étoile de la Côte contre Météore de Bafoussam sur téléphone : victoire 2-1 et un Indice Njangi de 67,9, Njangi solide.](shot:m-pro-report "Des seniors mesurés avec le même Indice, depuis un téléphone (démo club pro).")
+![Le rapport du match Étoile de la Côte contre Météore de Bafoussam sur téléphone : la victoire 2-1, les buteurs, puis la jauge de l'Indice Njangi à 67,9 sur 100.](shot:m-pro-report "Des seniors mesurés avec le même Indice, depuis un téléphone (démo club pro).")
 
 La continuité se voit aussi dans la semaine et dans le parcours. La semaine des U13 suit la même logique que celle des seniors, MD-4 Tension, MD-3 Durée, MD-2 Vitesse, MD-1 Activation, avec une charge adaptée à l'âge. Et le parcours d'un joueur rassemble, saison après saison, ses séances, ses matchs, ses observations, ses évaluations et ses objectifs.
 

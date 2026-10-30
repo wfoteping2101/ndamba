@@ -10,13 +10,13 @@ A method book speaks to adults. A child learns a game idea through a story and h
 
 ## The novel at a glance
 
-*Lionceaux* is the name of the saga, printed in large letters at the top of every cover with the number of the book. Book 1, *Le Ballon qui voyage*, is written by William Foteping. It has 40 chapters in five parts, one per country. Each chapter is told from the point of view of one of the two brothers, in turn; the contents on **The books** page show it as "Told by BriBri" or "Told by Kaydoudou".
+*Lionceaux* is the name of the saga, printed in large letters at the top of every cover with the number of the book. Book 1, *Le Ballon qui voyage*, is written by William Foteping. It has 40 chapters in five parts, one per country. Each chapter is told by one of the two brothers, most of the time in turn; the contents on **The books** page show it as "Told by BriBri" or "Told by Kaydoudou".
 
 The book carries 168 paintings in a cinematic style, all published in the online reader: the cover, two character pages (the brothers, then Mami Nyanga, Tonton Fokou, Papa and Maman), five part openers, forty chapter openers and three pictures inside the text of every chapter.
 
 The novel's home page carries a dedication: "Pour Kaydoudou et BriBri. Que le ballon voyage toujours, et qu'il sache toujours où il va." (For Kaydoudou and BriBri. May the ball always travel, and always know where it is going.), signed Papa. The two heroes bear the first names of the author's sons.
 
-![The cover of Lionceaux, book 1: Le Ballon qui voyage in the online reader: BriBri in the green number 8 shirt and Kaydoudou in a yellow T-shirt run across red earth with the patched ball, and behind them the road crosses the countries of the journey.](shot:book-tome1-index "The novel's home page, with the cover of book 1.")
+![The cover of Lionceaux, book 1: Le Ballon qui voyage in the online reader: BriBri in the green number 8 shirt and Kaydoudou in a yellow T-shirt run across red earth with the patched ball, and behind them stretch the landscapes of the countries of the journey.](shot:book-tome1-index "The novel's home page, with the cover of book 1.")
 
 ## The two brothers
 
@@ -35,10 +35,10 @@ Around them: Papa, Armand, a network engineer whose job moves the family; Maman,
 | I | Cameroon: Douala (Bonamoussadi) and Bafoussam | 1 to 8 | The heart | Playing together, everyone puts in their share |
 | II | United States: Waldorf, Maryland | 9 to 16 | The reason | Possessing is not keeping: every pass must serve |
 | III | France: Seine-et-Marne | 17 to 24 | The eyes | Seeing before receiving, playing between the lines, winning it back fast |
-| IV | Spain: a village on the Catalan coast | 25 to 32 | The map | The rondo, the pausa, the third man, the superiorities |
+| IV | Spain: a Catalan village near Tarragona | 25 to 32 | The map | The rondo, the pausa, the third man, the superiorities |
 | V | England: London | 33 to 40 | The breath | Intensity, pressing, keeping the ball even when it burns |
 
-Each move follows Papa's job, and the boys then join a local club. They are never "transferred" like adults, which is also the rule that protects minors in football. The novel's calendar touches the real world: part II takes place in 2026, and the family lives the World Cup played in North America, without Cameroon, as a wound that feeds the dream. The brothers' clubs and academies are invented; no real player is named except Roger Milla.
+Each move follows Papa's job, and the boys then join a local club. They are never "transferred" like adult players: the novel holds to this, the boys never change country for football, they follow their family. The novel's calendar touches the real world: part II takes place in 2026, and the family lives the World Cup played in the United States, Canada and Mexico, without Cameroon, as a wound that feeds the dream. The brothers' clubs and academies are invented; no real player is named except Roger Milla.
 
 ## The 40 chapters and their Ball Lessons
 
@@ -99,7 +99,7 @@ Ndamba takes each lesson exactly as it is written in the novel, with its diagram
 4. Each lesson shows the chapter it comes from, its lines, the chapter's illustration and "The notebook diagram". In English the lines are a short English version; **Read the original page in French** shows BriBri's own words. Tap **I've got it** when it is the case, or **Read chapter 1** to go back to the story.
 5. Under the lesson, "The matching challenge" suggests something to practise alone, and the drill link (for example "Drill R07") opens the matching card. **Write in my notebook** opens the player's notebook, covered in chapter 16 of this guide.
 
-Each lesson is linked to one of the ten competences of the Njangi player, to a challenge and to a drill. Lessons marked as understood are saved on this device.
+Each lesson is linked to one of the ten skills of the Njangi player, to a challenge and to a drill. Lessons marked as understood are saved on this device, and the backup exported from **Settings** carries them too.
 
 ![The Ball Lessons page in the U13 academy demo: 0 of 40 understood, the Lesson of the day button, the five part tabs from Cameroon to England, and the first lesson, The ball must travel.](shot:youth-lessons-linked "The 40 Ball Lessons in BriBri's player space (U13 academy demo).")
 
@@ -110,7 +110,7 @@ Each lesson is linked to one of the ten competences of the Njangi player, to a c
 
 The **U13 academy demo** takes you inside the novel. The team is the Lionceaux de Bonamoussadi U13, the coach is Tonton Fokou, and the squad includes BriBri, Kaydoudou, Mireille « la Gazelle » Eyenga and Ousmane « Petit Pied » Bello. The last match was against the Requins de Bépanda, and the next one is against the Panthères de Deïdo, in the neighbourhood tournament. This is invented demo data: it shows an educator how the app works day to day, with names their players already know.
 
-![Tonton Fokou's home screen in the U13 academy demo: today's session, Speed: transitions, and the next match against the Panthères de Deïdo in the neighbourhood tournament.](shot:youth-home "The novel's world in the U13 academy demo.")
+![Tonton Fokou's home screen in the U13 academy demo: today's session, Speed: transitions, and the next match, on Saturday October 31, against the Panthères de Deïdo in the neighbourhood tournament.](shot:youth-home "The novel's world in the U13 academy demo.")
 
 ## Six books planned
 
@@ -132,7 +132,7 @@ The **U13 academy demo** takes you inside the novel. The team is the Lionceaux d
 
 1. On **The books** page, in the *Lionceaux* section, tap **Read online** (or **Read** under book 1 on the six-book shelf).
 2. The home page shows the cover, the dedication, the two character pages and the list "Les 40 chapitres", part by part. Tap **Commencer au chapitre 1** (Start at chapter 1), or **Reprendre la lecture** (Resume reading) to find your place.
-3. Each part opens with its painting. Each chapter shows "Chapitre 1 sur 40" (chapter 1 of 40), opens on a large illustration and ends with the notebook page, "Leçon du Ballon n°1", with its diagram. **Suivant** goes to the next chapter.
+3. Each part opens with its painting. Each chapter shows "Chapitre 1 sur 40" (chapter 1 of 40), opens on a large illustration and ends with the notebook page, "Leçon du Ballon n°1", most of the time with its diagram. **Suivant** goes to the next chapter.
 4. **Chapitres** and **Aa** work as in *Le Code Njangi* (chapter 19 of this guide), and each book keeps its own place.
 5. At the bottom of the contents, "À suivre : Lionceaux, tome 2 : La Tanière des Lionceaux" announces what comes next, and the link "Les 40 Leçons du Ballon dans l'application" leads back to the lessons.
 

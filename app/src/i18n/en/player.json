@@ -80,7 +80,7 @@
     "home": "Home",
     "away": "Away",
     "against": "Against",
-    "lineup": "Line-up",
+    "lineup": "Lineup",
     "live": "Go live",
     "prepare": "Prepare the week",
     "weekCreated_one": "{{count}} session prepared for match week.",
@@ -295,7 +295,7 @@
     "dailyBody": "Three challenges a day, the same for every player: ball mastery, scanning, fitness. Log your best result: your curve builds day after day.",
     "xpRule": "{{done}} XP per challenge done, {{target}} more XP if you reach the target, a {{daily}} XP bonus for a challenge of the day. Your stage goes up on its own.",
     "libraryTitle": "All challenges",
-    "libraryBody": "{{n}} challenges to do on your own, against a wall or with a few cones. Each one trains a skill of the grid and links to a Lesson of the Ball.",
+    "libraryBody": "{{n}} challenges to do on your own, against a wall or with a few cones. Each one trains a skill of the grid and links to a Ball Lesson.",
     "moreLabel": "Go further",
     "lessonsHint": "The 40 pages of BriBri's notebook",
     "notebookHint": "Write down what you learn, like BriBri"

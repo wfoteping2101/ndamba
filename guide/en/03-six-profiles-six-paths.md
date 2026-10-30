@@ -31,7 +31,7 @@ Only the **Coach or educator** role creates a team during the conversation. The 
 
 Coaches, analysts, managers and federations see the same dashboard, built around one question: what is happening today, and before the next match?
 
-At the top, a banner greets you and shows three figures for the active team: this week's **Sessions**, training **Minutes**, and **Match** (the countdown, for example D-2). Below it, the **Today** card shows the day's session, drill by drill, with **Open the session**; if nothing is planned, it offers to prepare the session that suits the day. Next to it, the **Next match** card gives the opponent, date and venue, and three buttons: **Prepare the week**, **Line-up** and **Live**.
+At the top, a banner greets you and shows three figures for the active team: this week's **Sessions**, training **Minutes**, and **Match** (the countdown, for example D-2). Below it, the **Today** card shows the day's session, drill by drill, with **Open the session**; if nothing is planned, it offers to prepare the session that suits the day. Next to it, the **Next match** card gives the opponent, date and venue, and three buttons: **Prepare the week**, **Lineup** and **Live**.
 
 Further down come **This week** (the seven days, with sessions and the match, and the **Plan** link), the card **Njangi Index, last match** (the score, its reading, the five sub-indices and the one marked **to work on**, with **See the report**), the Mola card, which suggests the next thing to do, and finally **Quick actions**: **New session**, **Plan the week**, **New match**, **Live analysis**, **Drills** and **Read the novel**.
 

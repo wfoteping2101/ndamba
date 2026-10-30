@@ -16,6 +16,7 @@ export function JourneyCard() {
   const { profile, team } = useSession()
   const players = useLiveQuery(() => (team ? db.players.where('teamId').equals(team.id).toArray() : Promise.resolve([] as Player[])), [team?.id], [] as Player[])
   const me = linkedPlayer(players, profile)
+  const parent = profile?.role === 'parent' // the parent follows their child
   const data = useJourney(me?.id)
   const season = seasonOf(todayISO())
   const s = useMemo(() => (data ? seasonSummary(data, season) : null), [data, season])
@@ -23,9 +24,9 @@ export function JourneyCard() {
     <Link to="/app/joueur/parcours" className="mb-8 flex items-center gap-4 rounded-[14px] border border-line bg-paper px-4 py-3.5 transition hover:border-forest-300 sm:px-5">
       <Route size={22} strokeWidth={1.75} className="shrink-0 text-forest-600" aria-hidden="true" />
       <span className="min-w-0 flex-1">
-        <span className="block text-[16px] font-semibold text-ink">{t('playerCard.title')}</span>
+        <span className="block text-[16px] font-semibold text-ink">{t(parent ? 'playerCard.titleParent' : 'playerCard.title')}</span>
         <span className="block text-[13.5px] text-ink-muted">
-          {s ? t('playerCard.stats', { sessions: s.sessions.attended, matches: s.matches.played, objectives: s.objectives.active }) : t('playerCard.body')}
+          {s ? t('playerCard.stats', { sessions: s.sessions.attended, matches: s.matches.played, objectives: s.objectives.active }) : t(parent ? 'playerCard.bodyParent' : 'playerCard.body')}
         </span>
       </span>
       <ChevronRight size={18} strokeWidth={1.75} className="shrink-0 text-ink-faint" aria-hidden="true" />

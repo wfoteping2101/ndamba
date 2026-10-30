@@ -10,13 +10,13 @@ Un livre de méthode parle aux adultes. Un enfant, lui, apprend une idée de jeu
 
 ## Le roman en bref
 
-*Lionceaux* est le nom de la saga, écrit en grandes lettres en haut de chaque couverture avec le numéro du tome. Le tome 1, *Le Ballon qui voyage*, est écrit par William Foteping. Il compte 40 chapitres répartis en cinq parties, une par pays. Chaque chapitre est raconté du point de vue de l'un des deux frères, à tour de rôle ; le sommaire de la page **Les livres** l'indique par « Raconté par BriBri » ou « Raconté par Kaydoudou ».
+*Lionceaux* est le nom de la saga, écrit en grandes lettres en haut de chaque couverture avec le numéro du tome. Le tome 1, *Le Ballon qui voyage*, est écrit par William Foteping. Il compte 40 chapitres répartis en cinq parties, une par pays. Chaque chapitre est raconté par l'un des deux frères, le plus souvent en alternance ; le sommaire de la page **Les livres** l'indique par « Raconté par BriBri » ou « Raconté par Kaydoudou ».
 
 Le livre est illustré de 168 peintures au style cinématographique, toutes publiées dans le lecteur en ligne : la couverture, deux pages de personnages (les deux frères, puis Mami Nyanga, Tonton Fokou, Papa et Maman), cinq ouvertures de partie, quarante ouvertures de chapitre et trois images dans le texte de chaque chapitre.
 
 La page d'accueil du roman porte une dédicace : « Pour Kaydoudou et BriBri. Que le ballon voyage toujours, et qu'il sache toujours où il va. », signée Papa. Les deux héros portent les prénoms des fils de l'auteur.
 
-![La couverture de Lionceaux, tome 1 : Le Ballon qui voyage dans le lecteur en ligne : BriBri au maillot vert numéro 8 et Kaydoudou au tee-shirt jaune courent sur la terre rouge avec le ballon rapiécé, et derrière eux la route traverse les pays du voyage.](shot:book-tome1-index "La page d'accueil du roman, avec la couverture du tome 1.")
+![La couverture de Lionceaux, tome 1 : Le Ballon qui voyage dans le lecteur en ligne : BriBri au maillot vert numéro 8 et Kaydoudou au tee-shirt jaune courent sur la terre rouge avec le ballon rapiécé, et derrière eux s'étendent les paysages des pays du voyage.](shot:book-tome1-index "La page d'accueil du roman, avec la couverture du tome 1.")
 
 ## Les deux frères
 
@@ -35,10 +35,10 @@ Autour d'eux : Papa, Armand, ingénieur réseau, dont le travail fait déménage
 | I | Cameroun : Douala (Bonamoussadi) et Bafoussam | 1 à 8 | Le cœur | Jouer ensemble, chacun verse sa part |
 | II | États-Unis : Waldorf, Maryland | 9 à 16 | La raison | Posséder n'est pas garder : chaque passe doit servir |
 | III | France : Seine-et-Marne | 17 à 24 | Les yeux | Voir avant de recevoir, jouer entre les lignes, reprendre vite |
-| IV | Espagne : un village de la côte catalane | 25 à 32 | La carte | Le rondo, la pausa, le troisième homme, les supériorités |
+| IV | Espagne : un village catalan près de Tarragone | 25 à 32 | La carte | Le rondo, la pausa, le troisième homme, les supériorités |
 | V | Angleterre : Londres | 33 à 40 | Le souffle | L'intensité, le pressing, posséder aussi quand ça brûle |
 
-Chaque déménagement suit le travail de Papa ; les garçons rejoignent alors un club local. Ils ne sont jamais « transférés » comme des adultes, et c'est aussi la règle qui protège les mineurs dans le football. Le calendrier du roman touche le réel : la deuxième partie se déroule en 2026, et la famille vit la Coupe du monde jouée en Amérique, sans le Cameroun, comme une blessure qui nourrit le rêve. Les clubs et les académies des frères sont inventés ; aucun joueur réel n'est nommé, sauf Roger Milla.
+Chaque déménagement suit le travail de Papa ; les garçons rejoignent alors un club local. Ils ne sont jamais « transférés » comme des joueurs adultes : le roman y tient, les garçons ne changent jamais de pays pour le football, ils suivent leur famille. Le calendrier du roman touche le réel : la deuxième partie se déroule en 2026, et la famille vit la Coupe du monde jouée aux États-Unis, au Canada et au Mexique, sans le Cameroun, comme une blessure qui nourrit le rêve. Les clubs et les académies des frères sont inventés ; aucun joueur réel n'est nommé, sauf Roger Milla.
 
 ## Les 40 chapitres et leurs Leçons du Ballon
 
@@ -99,7 +99,7 @@ Ndamba reprend chaque leçon telle qu'elle est écrite dans le roman, avec son s
 4. Chaque leçon montre son chapitre d'origine, ses lignes, l'illustration du chapitre et « Le schéma du carnet ». Touchez **J'ai compris** quand c'est le cas, ou **Lire le chapitre 1** pour relire l'histoire.
 5. Sous la leçon, « Le défi qui va avec » propose un défi à faire seul, et le lien vers un exercice (par exemple « Exercice R07 ») ouvre la fiche correspondante. **Écrire dans mon carnet** ouvre le carnet du joueur, présenté au chapitre 16 de ce guide.
 
-Chaque leçon est ainsi reliée à l'une des dix compétences du joueur Njangi, à un défi et à un exercice. Les leçons comprises sont enregistrées sur cet appareil.
+Chaque leçon est ainsi reliée à l'une des dix compétences du joueur Njangi, à un défi et à un exercice. Les leçons comprises sont enregistrées sur cet appareil, et la sauvegarde exportée depuis **Réglages** les emporte aussi.
 
 ![La page Les Leçons du Ballon de la démo académie U13 : 0 sur 40 comprises, le bouton La leçon du jour, les cinq onglets de parties de Cameroun à Angleterre, et la première leçon, Le ballon doit voyager.](shot:youth-lessons-linked "Les 40 Leçons du Ballon dans l'espace joueur de BriBri (démo académie U13).")
 
@@ -108,9 +108,9 @@ Chaque leçon est ainsi reliée à l'une des dix compétences du joueur Njangi, 
 
 ## Le monde du roman dans la démo U13
 
-La **Démo académie U13** vous fait entrer dans le roman. L'équipe s'appelle Lionceaux de Bonamoussadi U13, l'entraîneur est Tonton Fokou, et l'effectif compte BriBri, Kaydoudou, Mireille « la Gazelle » Eyenga ou Ousmane « Petit Pied » Bello. Le dernier match a été joué contre les Requins de Bépanda, le prochain se joue contre les Panthères de Deïdo, dans le tournoi des quartiers. Ce sont des données de démonstration, inventées : elles montrent à un éducateur comment l'application vit au quotidien avec des noms que ses joueurs connaissent déjà.
+La **Démo académie U13** vous fait entrer dans le roman. L'équipe s'appelle Lionceaux de Bonamoussadi U13, l'entraîneur est Tonton Fokou, et l'effectif compte BriBri, Kaydoudou, Mireille « la Gazelle » Eyenga et Ousmane « Petit Pied » Bello. Le dernier match a été joué contre les Requins de Bépanda, le prochain se joue contre les Panthères de Deïdo, dans le tournoi des quartiers. Ce sont des données de démonstration, inventées : elles montrent à un éducateur comment l'application vit au quotidien avec des noms que ses joueurs connaissent déjà.
 
-![L'accueil de Tonton Fokou dans la démo académie U13 : la séance du jour Vitesse : transitions, et le prochain match contre les Panthères de Deïdo, dans le tournoi des quartiers.](shot:youth-home "Le monde du roman dans la démo académie U13.")
+![L'accueil de Tonton Fokou dans la démo académie U13 : la séance du jour Vitesse : transitions, et le prochain match, samedi 31 octobre, contre les Panthères de Deïdo, dans le tournoi des quartiers.](shot:youth-home "Le monde du roman dans la démo académie U13.")
 
 ## Six tomes prévus
 
@@ -132,7 +132,7 @@ La page **Les livres** les présente sous le titre « La saga en six tomes » : 
 
 1. Sur la page **Les livres**, dans la partie *Lionceaux*, touchez **Lire en ligne** (ou **Lire** sous le tome 1 dans la rangée des six tomes).
 2. La page d'accueil montre la couverture, la dédicace, les deux pages de personnages et la liste « Les 40 chapitres », partie par partie. Touchez **Commencer au chapitre 1**, ou **Reprendre la lecture** pour retrouver votre place.
-3. Chaque partie s'ouvre sur sa peinture. Chaque chapitre porte la mention « Chapitre 1 sur 40 », s'ouvre sur une grande illustration et se termine par la page du carnet, « Leçon du Ballon n°1 », avec son schéma. **Suivant** passe au chapitre d'après.
+3. Chaque partie s'ouvre sur sa peinture. Chaque chapitre porte la mention « Chapitre 1 sur 40 », s'ouvre sur une grande illustration et se termine par la page du carnet, « Leçon du Ballon n°1 », le plus souvent avec son schéma. **Suivant** passe au chapitre d'après.
 4. **Chapitres** et **Aa** fonctionnent comme dans *Le Code Njangi* (chapitre 19 de ce guide) ; chaque livre retient sa propre place.
 5. Au bas du sommaire, « À suivre : Lionceaux, tome 2 : La Tanière des Lionceaux » annonce la suite, et le lien « Les 40 Leçons du Ballon dans l'application » ramène aux leçons.
 

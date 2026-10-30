@@ -242,7 +242,8 @@ export default function Onboarding() {
   const [pendingDemo, setPendingDemo] = useState<DemoLevel | null>(null)
   const askDemo = (level: DemoLevel) => {
     if (demoBusy) return
-    if (profile && teams.some((tm) => !DEMO_IDS.includes(tm.id))) { setPendingDemo(level); return }
+    // ask unless the browser holds only a demo (a player's or a parent's own space has no team but has their challenges and notebook)
+    if (profile && !(teams.length > 0 && teams.every((tm) => DEMO_IDS.includes(tm.id)))) { setPendingDemo(level); return }
     void tryDemo(level)
   }
   const demoDialog = (

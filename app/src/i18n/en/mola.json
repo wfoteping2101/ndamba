@@ -216,7 +216,7 @@
     "s": {
       "match": "Match: against {{opponent}}, {{when}}",
       "lineup": "Using the line-up: {{starters}} starters, {{subs}} subs",
-      "noLineup": "Line-up to be confirmed: I say so in the message",
+      "noLineup": "Lineup to be confirmed: I say so in the message",
       "draft": "Preparing the message for {{channel}}",
       "wait": "Waiting for your approval before opening anything"
     },
@@ -274,13 +274,13 @@
   "lesson": {
     "notFound": "There is no lesson {{no}}: the notebook has {{count}} lessons.",
     "ack": "Opening lesson {{no}} of the notebook.",
-    "ackAll": "Opening the Leçons du Ballon.",
+    "ackAll": "Opening the Ball Lessons.",
     "s": {
       "find": "Lesson {{no}}, chapter “{{chapter}}”",
       "all": "{{count}} lessons, from {{heroes}} to you"
     },
     "done": "Lesson {{no}}: “{{title}}”. It comes from the chapter “{{chapter}}”.",
-    "doneAll": "The {{count}} Leçons du Ballon of {{series}} are here. One a day is enough.",
+    "doneAll": "The {{count}} Ball Lessons of {{series}} are here. One a day is enough.",
     "item": "Lesson {{no}}: {{title}}",
     "readChapter": "Read chapter {{no}} in the novel"
   },
@@ -361,7 +361,7 @@
     "coachTeam": "Welcome {{name}}. Your team {{team}} is created and your {{app}} space is ready. I can plan your first week, set up a match or suggest drills. Where shall we start?",
     "coach": "Welcome {{name}}. Your {{app}} space is ready. To begin, I can create your team, suggest drills or open “{{methode}}”.",
     "player": "Welcome {{name}}. Your {{app}} space is ready. I can suggest drills to improve, follow your journey match after match, or open today's challenges.",
-    "parent": "Welcome {{name}}. I can help you support your child: the Leçons du Ballon of {{series}}, simple drills, and the novel “{{tome1}}” with {{heroes}}.",
+    "parent": "Welcome {{name}}. I can help you support your child: the Ball Lessons of {{series}}, simple drills, and the novel “{{tome1}}” with {{heroes}}.",
     "demo": "Welcome to the demo, {{name}}. You coach {{team}}: {{count}} players, a week of sessions, {{analysed}} and a match coming up on Saturday. Ask me anything, for example to analyse the last match or to draft the call-up.",
     "analysed_one": "one match already analysed",
     "analysed_other": "{{count}} matches already analysed"

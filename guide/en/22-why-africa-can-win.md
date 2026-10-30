@@ -26,7 +26,7 @@ And yet Cameroon was not at the 2026 World Cup, the first with 48 teams. Second 
 
 ## What Africa has already proved
 
-No African nation has ever won the World Cup. The continent's best result is Morocco's semi-final in 2022, in Qatar, which ended in fourth place. In 2026, in the United States, Canada and Mexico, Morocco was the last African team standing: it was beaten 2-0 by France in the quarter-final. Spain won the final 1-0 after extra time against Argentina, on July 19, 2026, at MetLife Stadium. *Le Code Njangi* (The Njangi Code) opens on that very final.
+No African nation has ever won the World Cup. The continent's best result is Morocco's semi-final in 2022, in Qatar, which ended in fourth place. In 2026, in the United States, Canada and Mexico, Morocco was the last African team standing: it was beaten 2-0 by France in the quarter-final. Spain won the final 1-0 after extra time against Argentina, on July 19, 2026. *Le Code Njangi* (The Njangi Code) opens on that very final.
 
 Morocco showed something precious: a semi-final, then a quarter-final four years later. The top level can be repeated, not just touched once. The last step is still to be climbed: no African nation has yet played in a final.
 
@@ -72,16 +72,16 @@ Ndamba is a continuity tool: the same model, the same words and the same measure
 |---|---|---|
 | One game model | *Le Code Njangi*, free to read, and the same seven words throughout the app: Build out, Progress, Pin, Finish, Breathe, Win it back, Look forward | Adoption by clubs, a league, then a federation: these are targets (chapter 23) |
 | Educated coaches | 64 drill cards, sessions, a week organised around the match, and Mola to prepare the week; the books and drills are never locked behind a subscription | Coach education modules and the first certified Njangi coaches: planned |
-| A common measure | The Indice Njangi (Njangi Index), computed live from fourteen codes, with the same formula in the book and the app, and the same scale from U13 to seniors | Reference values by age, built from coded matches: a target |
-| Data that follows the player | The player file, the journey, the grid of ten competences rated 1 to 4, the observations | Accounts and sync: planned; today the data stays on the device and is backed up by hand |
+| A common measure | The Njangi Index, computed live from fourteen codes, with the same formula in the book and the app, and the same scale from U13 to seniors | Reference values by age, built from coded matches: a target |
+| Data that follows the player | The player file, the journey, the grid of ten skills rated 1 to 4, the observations | Accounts and sync: planned; today the data stays on the device and is backed up by hand |
 | The diaspora | A platform in French and English, in a plain web browser, wherever you live | Scouting the diaspora with the youth national teams: a target of the 2030 stage |
 | The youngest | The novel *Lionceaux* and its 40 Ball Lessons, in the same words as the method book | Books 2 to 6: planned |
 
 The common measure shows in the two demos. The U13 Lionceaux de Bonamoussadi score 63.7 against the Requins de Bépanda, "Njangi in progress". The seniors of Étoile de la Côte score 67.9 against Météore de Bafoussam, "Solid Njangi". This is demo data, but the five sub-indices, the reading scale and the formula are the same. *Le Code Njangi* reminds you to compare a team with itself first, and that an under-15 national team will normally sit lower than a senior team. For a federation, that is exactly the point: the same thermometer on every floor of the pyramid.
 
-![The report of the Lionceaux de Bonamoussadi U13 against the Requins de Bépanda, won 2-1: an Indice Njangi of 63.7, the label Njangi in progress and the five sub-indices.](shot:youth-report "Under-13s measured with the Indice Njangi (U13 academy demo).")
+![The report of the Lionceaux de Bonamoussadi U13 against the Requins de Bépanda, won 2-1: a Njangi Index of 63.7, the label Njangi in progress and the five sub-indices.](shot:youth-report "Under-13s measured with the Njangi Index (U13 academy demo).")
 
-![The report of Étoile de la Côte against Météore de Bafoussam on a phone: a 2-1 win and an Indice Njangi of 67.9, Solid Njangi.](shot:m-pro-report "Seniors measured with the same Indice, from a phone (pro club demo).")
+![The report of Étoile de la Côte against Météore de Bafoussam on a phone: the 2-1 win, the scorers, then the Njangi Index gauge at 67.9 out of 100.](shot:m-pro-report "Seniors measured with the same Index, from a phone (pro club demo).")
 
 Continuity also shows in the week and in the journey. The U13 week follows the same logic as the senior week, MD-4 Tension, MD-3 Duration, MD-2 Speed, MD-1 Activation, with a load suited to age. And a player's journey gathers, season after season, sessions, matches, observations, evaluations and objectives.
 
@@ -91,7 +91,7 @@ Continuity also shows in the week and in the journey. The U13 week follows the s
 
 ### What this changes, in practice
 
-Take an example, imagined for illustration. A 12-year-old boy joins an academy that works with Ndamba in 2026. His educator plans the week with the book's drill cards, codes matches from the touchline and reads the team's Indice Njangi, comparing it from one match to the next. The player's file keeps his sessions, matches, observations and evaluations of the ten competences. If he later joins a club, then a youth national team that follow the same method, his new coach speaks the same words, offers him the same drills and reads the same Indice. Nothing has to be relearned; everything can be deepened. For his history to really follow him from one structure to the next, accounts and sync are needed, and they are planned.
+Take an example, imagined for illustration. A 12-year-old boy joins an academy that works with Ndamba in 2026. His educator plans the week with the book's drill cards, codes matches from the touchline and reads the team's Njangi Index, comparing it from one match to the next. The player's file keeps his sessions, matches, observations and evaluations of the ten skills. If he later joins a club, then a youth national team that follow the same method, his new coach speaks the same words, offers him the same drills and reads the same Index. Nothing has to be relearned; everything can be deepened. For his history to really follow him from one structure to the next, accounts and sync are needed, and they are planned.
 
 > [!INVESTOR] What Ndamba sells is continuity
 > The talent already exists; nobody buys it from Ndamba. What Ndamba brings is what connects the talent: a written model, shared words, an identical measure from U13 to the senior team, and a player history that follows the player. That value grows with every coded match and every coach trained. It is built over years of matches and habits, and that accumulation is the asset.
@@ -123,7 +123,7 @@ Chapter 23 sets out the path in five stages, with proposed targets rather than r
 
 - No tool wins a World Cup. Players, coaches, federations, health, school and organisation win it. Ndamba makes continuity possible and visible.
 - No partnership is signed today. Whenever this guide mentions a federation, a league or a pilot club, it describes a goal.
-- The reference values of the Indice Njangi are internal benchmarks of the method, to be calibrated on your own matches; they are not averages of world football.
+- The reference values of the Njangi Index are internal benchmarks of the method, to be calibrated on your own matches; they are not averages of world football.
 - Today, the data lives in the device's browser, with no account or sync, and payments are not connected yet (chapters 24 to 26).
 
 The rest depends on what we do together between now and then. Ndamba's motto says it in two sentences: "The ball must travel. But it must know where it is going."

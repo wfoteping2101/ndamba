@@ -483,8 +483,10 @@
   },
   "playerCard": {
     "title": "Mon parcours",
+    "titleParent": "Le parcours de votre enfant",
     "chip": "Mon parcours",
     "body": "Tes séances, tes matchs, les observations de ton coach et tes objectifs, saison après saison.",
+    "bodyParent": "Ses séances, ses matchs, les observations de son coach et ses objectifs, saison après saison.",
     "stats": "Cette saison : {{sessions}} séances, {{matches}} matchs, {{objectives}} objectifs en cours."
   }
 }

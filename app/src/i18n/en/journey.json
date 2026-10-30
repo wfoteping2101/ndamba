@@ -483,8 +483,10 @@
   },
   "playerCard": {
     "title": "My journey",
+    "titleParent": "Your child's journey",
     "chip": "My journey",
     "body": "Your sessions, your matches, your coach's observations and your objectives, season after season.",
+    "bodyParent": "Their sessions, matches, the coach's observations and their objectives, season after season.",
     "stats": "This season: {{sessions}} sessions, {{matches}} matches, {{objectives}} objectives in progress."
   }
 }

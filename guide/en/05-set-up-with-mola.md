@@ -98,16 +98,16 @@ Want to see Ndamba full of data before creating your own space? Two complete dem
 
 ![The home screen of the academy demo: Good evening, Tonton Fokou, today's session Speed: transitions and the next match against Panthères de Deïdo.](shot:youth-home "The U13 academy demo: the home screen of the Lionceaux coach.")
 
-The demo's dates follow the real calendar: the next match always falls on the Saturday of the current week, with the week's sessions around it. The demo's texts are written in the language that is active when you start it. When the demo opens from the welcome page, Mola leaves a message there: "Welcome to the demo, Daniel. You coach Étoile de la Côte: 22 players, a week of sessions, matches already analysed and a match coming up on Saturday. Ask me anything, for example to analyse the last match or to draft the call-up."
+The demo's dates follow the real calendar: the next match always falls on the Saturday of the current week, with the week's sessions around it. The demo's texts are written in the language that is active when you start it. When the demo opens from the welcome page, Mola leaves a message there: "Welcome to the demo, Daniel. You coach Étoile de la Côte: 22 players, a week of sessions, one match already analysed and a match coming up on Saturday. Ask me anything, for example to analyse the last match or to draft the call-up." For the academy, the message announces 15 players and "4 matches already analysed".
 
 ### What a demo replaces
 
-A demo is not added to your data: it **replaces** what this browser holds for Ndamba. Profile, teams, players, sessions, matches, tagged actions, Mola's conversation and tasks, notebook, challenges, videos, assessments, observations, attendance, objectives, big moments and the form log: all of it is erased, then filled with the demo. Only the chosen language and, in the player space, the lessons marked "I've got it" and "My view" stay. Switching from one demo to the other replaces the first one too.
+A demo is not added to your data: it **replaces** what this browser holds for Ndamba. Profile, teams, players, sessions, matches, tagged actions, Mola's conversation and tasks, notebook, challenges, videos, assessments, observations, attendance, objectives, big moments and the form log: all of it is erased, then filled with the demo. The lessons marked "I've got it" and the player space's "My view" are erased too. Only the chosen language stays. Switching from one demo to the other replaces the first one too.
 
 Ndamba protects you: if this browser holds your own space, a "Start the demo?" window warns you and invites you to export a backup first; you have to tap **Start the demo** to go ahead, or **Cancel**. The window opens from the site's home page and from the bar of the welcome page alike (its **Demo** menu on a phone).
 
-> [!WARNING] A profile without a team
-> On the welcome page, the question is only asked if you have created teams of your own. A profile that has none yet, a player's or a parent's for instance, is replaced without a window, along with its notebook and challenges. Before opening a demo from that page, export a backup from **Settings** (chapter 6).
+> [!TIP] Export first
+> The window opens for any space that is not a demo, even a player's or a parent's that has no team: their notebook and challenges would be replaced too. If you want to keep them, tap **Cancel**, export a backup from **Settings** (chapter 6), then come back and start the demo.
 
 ## Coming back later
 
