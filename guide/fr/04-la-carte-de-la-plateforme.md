@@ -124,7 +124,7 @@ Deux précisions évitent les surprises. Ce que vous avez écrit vous-même (le 
 
 ## Où vivent vos données
 
-C'est la question que posent le plus souvent les clubs et les investisseurs, et la réponse est simple : **tout est enregistré dans le navigateur de l'appareil que vous utilisez**. Votre profil, vos équipes, vos joueurs, vos séances, vos matchs, vos actions codées, vos notes et vos conversations avec Mola restent sur cet appareil. Le panneau **À propos** des Réglages l'écrit en toutes lettres : « Stockage : Sur cet appareil ».
+La réponse est simple : **tout est enregistré dans le navigateur de l'appareil que vous utilisez**. Votre profil, vos équipes, vos joueurs, vos séances, vos matchs, vos actions codées, vos notes et vos conversations avec Mola restent sur cet appareil. Le panneau **À propos** des Réglages l'écrit en toutes lettres : « Stockage : Sur cet appareil ».
 
 Il n'y a pas encore de comptes ni de synchronisation. Concrètement :
 

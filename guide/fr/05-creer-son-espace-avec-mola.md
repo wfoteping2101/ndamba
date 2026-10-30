@@ -6,7 +6,7 @@ partie: 2
 resume: La première visite pas à pas, la conversation d'accueil avec Mola, la fiche profil qui se remplit pendant qu'on parle, les deux démos et ce qu'elles remplacent, revenir plus tard et recommencer.
 ---
 
-Beaucoup d'éducateurs et de dirigeants n'aiment pas les formulaires. Ils écrivent en revanche tous les jours sur leur téléphone, en français, en anglais, souvent dans un mélange des deux. C'est pourquoi Ndamba ne commence pas par un formulaire d'inscription, mais par une conversation. Mola, l'agent de Ndamba (« Mola », c'est « l'ami » en camfranglais), pose quelques questions, comprend les réponses écrites librement et remplit votre profil sous vos yeux. Au bout de deux ou trois minutes, votre espace est prêt : pour un entraîneur, l'équipe est créée et les joueurs sont déjà dedans. Aucun compte n'est demandé, aucune adresse e-mail, aucun mot de passe.
+Un formulaire d'inscription décourage vite un éducateur pressé. Écrire un message, en revanche, est un geste de tous les jours, en français, en anglais ou dans un mélange des deux. C'est pourquoi Ndamba ne commence pas par un formulaire, mais par une conversation. Mola, l'agent de Ndamba (« Mola », c'est « l'ami » en camfranglais), pose quelques questions, comprend les réponses écrites librement et remplit votre profil sous vos yeux. En quelques minutes, votre espace est prêt : pour un entraîneur, l'équipe est déjà créée, avec ses joueurs si vous avez collé leur liste. Aucun compte n'est demandé, aucune adresse e-mail, aucun mot de passe.
 
 ## Ouvrir la conversation
 
@@ -65,7 +65,7 @@ Chaque champ affiche sa valeur, ou « À venir » s'il est encore vide. Un champ
 Pour corriger, vous avez deux moyens :
 
 - **Toucher le champ** sur la fiche (un petit crayon l'indique). Une zone de saisie ou une liste de choix s'ouvre ; validez avec la coche, annulez avec la croix. Les objectifs se cochent et se décochent directement sur la fiche.
-- **Le dire à Mola.** À la relecture, la zone d'écriture devient « Une correction ? Dites-la simplement ». Écrivez par exemple la bonne ville, et la fiche se met à jour.
+- **Le dire à Mola.** À la relecture, la zone d'écriture devient « Une correction ? Dites-la simplement ». Écrivez par exemple « Je suis à Yaoundé » : Mola répond « Noté : Yaoundé. » et la fiche se met à jour.
 
 Si votre correction répond à la question en cours, Mola passe à la suivante.
 
@@ -92,7 +92,7 @@ Vous voulez voir Ndamba rempli avant de créer votre propre espace ? Deux démos
 | Vous êtes | Daniel Mbarga, entraîneur | Tonton Fokou, éducateur |
 | L'effectif | 22 joueurs, en 4-3-3 | 15 joueurs, en 4-3-3 |
 | La semaine | Récupération après le match, puis MD-4 à MD-1 | MD-4 à MD-1 |
-| Le passé | Trois matchs de championnat joués, dont un analysé en direct (2-1 contre le Météore de Bafoussam) | Un match analysé (2-1 contre les Requins de Bépanda) |
+| Le passé | Trois matchs de championnat joués, dont le dernier analysé en direct (2-1 contre le Météore de Bafoussam) | Quatre matchs joués et codés, le dernier gagné 2-1 contre les Requins de Bépanda |
 | L'avenir | Le déplacement chez les Rapides de Kribi samedi, puis une coupe et un match de championnat | Le match chez les Panthères de Deïdo samedi |
 | La formule | Coach Pro, activée en démo | Coach Pro, activée en démo |
 

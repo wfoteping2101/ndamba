@@ -26,11 +26,11 @@ Ndamba est une application « locale d'abord ». Tout ce que vous créez est enr
 
 Ce choix a des conséquences concrètes :
 
-- **Vous travaillez même avec un réseau faible.** Le codage en direct enregistre « le chrono, les tags et le score [...] sur l'appareil à chaque tap, même sans réseau ».
+- **Vous travaillez même avec un réseau faible.** Le codage en direct le dit : « Le chrono, les tags et le score sont enregistrés sur l'appareil à chaque tap, même sans réseau. »
 - **Personne d'autre ne voit vos données**, ni l'éditeur de Ndamba, ni un autre entraîneur.
 - **Les vidéos ne quittent pas l'appareil.** Le studio vidéo ouvre le fichier sur place : « La vidéo reste sur votre appareil : Ndamba n'enregistre que vos tags et vos dessins. »
 - **Mais les données peuvent se perdre.** Effacer les données du navigateur, changer de téléphone ou travailler en navigation privée fait disparaître l'espace s'il n'a pas été sauvegardé. Deux navigateurs sur le même téléphone font deux espaces séparés.
-- **Une démo remplace les données du navigateur.** Le site prévient avant de la lancer et conseille d'exporter une sauvegarde d'abord.
+- **Une démo remplace les données du navigateur.** Quand le navigateur contient déjà votre propre espace, le site prévient avant de la lancer et conseille d'exporter une sauvegarde d'abord.
 
 Quelques préférences d'affichage (le chrono d'un match en cours, les réglages du codage, les suggestions masquées) sont gardées à part, dans le stockage simple du navigateur, et ne figurent pas dans les sauvegardes. Enfin, dans tout le code de l'application, un seul appel peut envoyer à l'extérieur un texte que vous avez écrit : celui du modèle d'IA de Mola, décrit plus bas. L'application ne contient aucun outil de mesure d'audience ni de publicité, et ses polices de caractères sont livrées avec le site.
 
@@ -81,7 +81,7 @@ Pour valider ce que Mola a préparé :
 
 Une convocation contient les noms des joueurs convoqués : c'est vous, et vous seul, qui décidez où elle va.
 
-![La page Mola sur l'onglet À valider, vide : le message Rien à valider explique que Mola attend ici votre accord, avec le bouton Rédiger une convocation.](shot:pro-mola-approvals "L'onglet des validations : tout ce qui sort de l'application attend ici votre accord.")
+![La page Mola sur l'onglet des validations, vide : le message Rien à valider explique que Mola attend ici votre accord, avec le bouton Rédiger une convocation.](shot:pro-mola-approvals "L'onglet des validations : tout ce qui sort de l'application attend ici votre accord.")
 
 ## Le modèle d'IA optionnel : ce qui est envoyé, exactement
 
