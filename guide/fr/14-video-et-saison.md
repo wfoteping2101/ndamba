@@ -10,7 +10,7 @@ Un match raconte une histoire ; une saison raconte une méthode. La page Analyse
 
 ## La page Analyse : la saison d'un coup d'œil
 
-Dans le menu, groupe **Analyse**, touchez **Analyse**. Sur téléphone, c'est l'onglet **Analyse** de la barre du bas.
+Dans le menu, groupe **Analyse**, touchez **Analyse**. Sur téléphone, c'est l'onglet **Analyse** de la barre du bas. Le sous-titre de la page dit l'ordre des choses : « Codez un match en direct depuis la touche : Ndamba en tire l'Indice Njangi et le résumé de votre philosophie de jeu. Le studio vidéo sert ensuite à revoir et annoter les moments. »
 
 ![La page Analyse de la démo club pro : à gauche, le prochain match contre Rapides de Kribi avec le bouton Lancer le direct, deux autres matchs à venir et la liste des matchs analysés ; à droite, l'Indice au fil des matchs, la saison sous-indice par sous-indice à 67,9 et la carte Analyse vidéo.](shot:pro-analysis-full "La page Analyse : ce qu'il reste à coder, ce qui a été codé, et la saison.")
 
@@ -18,7 +18,7 @@ Dans le menu, groupe **Analyse**, touchez **Analyse**. Sur téléphone, c'est l'
 
 En haut, **À analyser en direct** présente les matchs à venir. Le premier occupe une carte sombre, **Prochain match** : date, compétition, adversaire, heure, stade et le bouton doré **Lancer le direct**, avec ce rappel : « Deux mi-temps de 45 min. Le téléphone reste allumé pendant le direct. » Les suivants viennent en lignes, chacun avec son bouton. Un match déjà commencé ou qui porte des tags affiche **Reprendre le direct** ; un match prévu dont la date est passée porte la pastille **Date passée**. Le lien **Nouveau match** permet d'en créer un (chapitre 11).
 
-Sur le plan gratuit, un seul match peut être analysé en direct. Au-delà, la carte annonce « Le direct illimité est dans Coach Pro » et le bouton devient **Voir les offres**. Les paiements ne sont pas encore branchés : l'activation d'une offre est une démonstration (chapitre 24).
+Sur les formules Gratuit et Joueur Premium, un seul match peut être analysé en direct. Au-delà, la carte annonce « Le direct illimité est dans Coach Pro » et le bouton devient **Voir les offres** ; ouvert par un autre chemin, le direct affiche lui aussi « Analyse en direct illimitée avec Coach Pro ». Les paiements ne sont pas encore branchés : l'activation d'une offre est une démonstration (chapitre 24).
 
 ### Matchs analysés
 
@@ -36,7 +36,7 @@ Sous la courbe, **La saison, sous-indice par sous-indice** donne l'Indice de la 
 
 ### L'Indice en deux phrases, et la vidéo
 
-Sous les matchs, **L'Indice Njangi, en deux phrases** rappelle l'idée de départ, « Le pourcentage de possession ment : une équipe peut avoir le ballon sans jamais aller nulle part. », puis la devise et le lien **Lire Le Code Njangi, chapitre 32**. La carte **Analyse vidéo** liste les trois derniers projets et ouvre le studio avec **Ouvrir l'analyse vidéo**.
+Sous les matchs, **L'Indice Njangi, en deux phrases** rappelle l'idée de départ, « Le pourcentage de possession ment : une équipe peut avoir le ballon sans jamais aller nulle part. », puis la devise et le lien **Lire Le Code Njangi, chapitre 32**. La carte **Analyse vidéo** (« Ouvrez la vidéo d'un match sur votre appareil, codez les actions, dessinez sur l'image et exportez vos tags et vos images. ») liste les trois derniers projets et ouvre le studio avec **Ouvrir l'analyse vidéo**.
 
 Si aucune équipe n'existe encore, la page demande d'abord de la créer, **Créez d'abord votre équipe** : un **Nom de l'équipe**, une **Catégorie** (de U9 à Seniors), un **Format** (de 5 contre 5 à 11 contre 11), puis **Créer l'équipe**.
 
@@ -81,7 +81,7 @@ Sous l'image, de gauche à droite :
 - les vitesses **0,5x**, **1x** et **2x** ;
 - le crayon **Dessiner**.
 
-Au-dessus des boutons, la frise de la vidéo porte un trait de couleur pour chaque tag et la tête de lecture dorée. Touchez la frise pour sauter à un moment, ou un trait pour aller à ce tag. Sur ordinateur, le clavier suffit : Espace, les flèches (5 secondes), la virgule et le point (une image), D pour dessiner, N pour une note, et les touches du direct pour les codes (1 à 9, F, S, L, K, R, A, B, plus Q, W et E pour l'adversaire). Sur téléphone, le lecteur reste collé en haut pendant que vous descendez vers les codes.
+Au-dessus des boutons, la frise de la vidéo porte un trait de couleur pour chaque tag et la tête de lecture dorée. Touchez la frise pour sauter à un moment, ou un trait pour aller à ce tag. Sur ordinateur, le clavier suffit, et le studio le rappelle : « Clavier : Espace lecture ou pause, flèches 5 s, virgule et point image par image, D dessiner, N note. Les codes ont les mêmes touches qu'en direct (1 à 9, F S L K R A B, Q W E). » Les chiffres servent à nos passes et au danger, F et S à la fixation, L, K et R aux transitions, A et B aux tirs et buts adverses, Q, W et E aux passes et entrées adverses. Sur téléphone, le lecteur reste collé en haut pendant que vous descendez vers les codes.
 
 ### Coder au bon moment
 
@@ -100,7 +100,7 @@ La bonne méthode : mettez en pause, reculez image par image jusqu'au moment exa
 La capture montre un piège utile à comprendre. Trois passes réussies et aucune perte donnent un Contrôle de 20 sur 20, et rien d'autre : l'Indice vaut 20,0, **Possession sans intention**. L'Indice ne prend son sens que sur beaucoup d'actions. Le rapport de match le signale sous 12 tags ; la carte de la vidéo, elle, ne le dit pas.
 
 > [!ATTENTION] Les tags vidéo restent dans la vidéo
-> Aujourd'hui, les tags d'un projet vidéo nourrissent l'Indice de la vidéo, ses extraits et ses exports. Ils ne s'ajoutent pas au rapport du match ni à la saison, même quand le projet est lié au match. Pour qu'un match compte dans le rapport et la courbe de la saison, codez-le dans le direct, qui accepte aussi un match terminé.
+> Les tags d'un projet vidéo nourrissent l'Indice de la vidéo, ses extraits et ses exports. Ils ne s'ajoutent ni au rapport du match ni à la saison, même quand le projet est lié au match. L'interface le dit : la page Analyse présente le studio comme l'outil pour « revoir et annoter les moments », et un rapport sans tags renvoie vers le direct. Pour qu'un match compte dans le rapport et la courbe de la saison, codez-le dans le direct, qui accepte aussi un match terminé.
 
 ### Les extraits
 

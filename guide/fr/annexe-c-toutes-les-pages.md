@@ -12,12 +12,13 @@ Cette annexe est la carte complète. Les adresses commencent après le nom du si
 |---|---|---|---|
 | / | Accueil du site | Présenter Ndamba, ouvrir les démonstrations, commencer avec Mola | 1, 4 |
 | /livres | Les livres | Lire *Le Code Njangi* et *Lionceaux*, tome 1 | 19, 20 |
-| /premium | Les formules | Comparer les cinq formules et leurs prix | 24 |
+| /premium | Les formules | Comparer les cinq formules et leurs prix | 6, 24 |
 | /revue | Revue du projet | Les quatre projets (le roman, le livre de la méthode, l'application et l'agent) présentés un par un, avec une demande de modification par section | 4 |
 | /marque | La marque | Le logo, le signe de Mola, les couleurs et les règles | 4 |
 | /bienvenue | Bienvenue | La conversation avec Mola qui crée votre espace, et les deux démonstrations | 5 |
 | /book/methode/ | Le Code Njangi | Le livre de méthode, chapitre par chapitre | 19 |
 | /book/tome1/ | Lionceaux, tome 1 | Le roman illustré, chapitre par chapitre | 20 |
+| /livres/methode et /livres/tome1 | (adresses courtes) | Mènent directement aux deux lecteurs ci-dessus | 19, 20 |
 | /football/ | Lionceaux Football | Le jeu de football dans le navigateur | 21 |
 | /guide/ | Ce guide | En français (/guide/fr/) et en anglais (/guide/en/) | |
 
@@ -35,7 +36,7 @@ Cette annexe est la carte complète. Les adresses commencent après le nom du si
 | /app/equipe | Équipe | L'effectif | 10 |
 | /app/equipe/(joueur) | Équipe | La fiche d'un joueur | 10 |
 | /app/equipe/(joueur)/parcours | Équipe | Le parcours d'un joueur, saison après saison | 10 |
-| /app/observer | (depuis un parcours, une séance ou un match) | Noter ce que vous voyez pendant une séance ou un match | 10 |
+| /app/observer | (depuis l'équipe, une fiche joueur, un parcours, une séance ou un match) | Noter ce que vous voyez pendant une séance ou un match | 10 |
 | /app/matchs | Matchs | Le calendrier et les résultats | 11 |
 | /app/matchs/nouveau | Matchs | Créer un match | 11 |
 | /app/matchs/(match) | Matchs | La feuille de match | 11 |
@@ -50,7 +51,7 @@ Cette annexe est la carte complète. Les adresses commencent après le nom du si
 | /app/joueur/carnet | Espace joueur | Le carnet du Njangi | 16 |
 | /app/joueur/parcours | Espace joueur | Mon parcours | 16 |
 | /app/livres | Livres | Les livres, depuis l'application | 19, 20 |
-| /app/premium | Premium | Les formules, depuis l'application | 24 |
-| /app/reglages | Réglages | Profil, équipes, sauvegardes et données | 6 |
+| /app/premium | Premium | Les formules, depuis l'application | 6, 24 |
+| /app/reglages | Réglages | Profil, équipes, sauvegardes et données | 6, 25 |
 
 Une adresse inconnue ramène à l'accueil du site.

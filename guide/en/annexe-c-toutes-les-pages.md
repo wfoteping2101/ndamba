@@ -12,12 +12,13 @@ This appendix is the complete map. Addresses start after the site's name (for ex
 |---|---|---|---|
 | / | Site home | Present Ndamba, open the demos, start with Mola | 1, 4 |
 | /livres | The books | Read *Le Code Njangi* and *Lionceaux*, book 1 | 19, 20 |
-| /premium | The plans | Compare the five plans and their prices | 24 |
+| /premium | The plans | Compare the five plans and their prices | 6, 24 |
 | /revue | Project review | The four projects (the novel, the method book, the app and the agent) presented one by one, with a change request per section | 4 |
 | /marque | The brand | The logo, Mola's sign, the colours and the rules | 4 |
 | /bienvenue | Welcome | The conversation with Mola that sets up your space, and the two demos | 5 |
 | /book/methode/ | Le Code Njangi | The method book, chapter by chapter | 19 |
 | /book/tome1/ | Lionceaux, book 1 | The illustrated novel, chapter by chapter | 20 |
+| /livres/methode and /livres/tome1 | (short addresses) | Lead straight to the two readers above | 19, 20 |
 | /football/ | Lionceaux Football | The football game in the browser | 21 |
 | /guide/ | This guide | In French (/guide/fr/) and in English (/guide/en/) | |
 
@@ -35,7 +36,7 @@ This appendix is the complete map. Addresses start after the site's name (for ex
 | /app/equipe | Team | The squad | 10 |
 | /app/equipe/(player) | Team | A player's file | 10 |
 | /app/equipe/(player)/parcours | Team | A player's journey, season after season | 10 |
-| /app/observer | (from a journey, a session or a match) | Note what you see during a session or a match | 10 |
+| /app/observer | (from the team page, a player file, a journey, a session or a match) | Note what you see during a session or a match | 10 |
 | /app/matchs | Matches | Fixtures and results | 11 |
 | /app/matchs/nouveau | Matches | Create a match | 11 |
 | /app/matchs/(match) | Matches | The match sheet | 11 |
@@ -50,7 +51,7 @@ This appendix is the complete map. Addresses start after the site's name (for ex
 | /app/joueur/carnet | Player space | The Njangi notebook | 16 |
 | /app/joueur/parcours | Player space | My journey | 16 |
 | /app/livres | Books | The books, from inside the app | 19, 20 |
-| /app/premium | Premium | The plans, from inside the app | 24 |
-| /app/reglages | Settings | Profile, teams, backups and data | 6 |
+| /app/premium | Premium | The plans, from inside the app | 6, 24 |
+| /app/reglages | Settings | Profile, teams, backups and data | 6, 25 |
 
 An unknown address takes you back to the site home.

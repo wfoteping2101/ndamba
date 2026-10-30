@@ -38,7 +38,7 @@ Each column shows what is planned that day.
 
 - A **match** appears in dark green: the kick-off time, the opponent, the venue, and a small plane if it is an away game. Once played, it shows **Played** and the score. Tap it to open the match sheet.
 - A **session** appears as a white card: its MD day, its minutes, its title and a small intensity profile. Tap it to open it in the builder (chapter 8).
-- A **dotted button** lets you add a session. On an empty day it reads **Session** plus the suggested day type (for example "MD+1"); on a day that already has a session it reads **Add**; on a past day, **Log a session**; and two days after a match, **Rest advised**, because the book asks for a real day off. On match day there is no button.
+- A **dotted button** lets you add a session. On an empty day it reads **Session** plus the suggested day type (for example "MD+1"); on a day that already has a session it reads **Add**; on a past day, **Log a session**; and two days after a match, when the next one is still far off, **Rest advised**, because the book asks for a real day off. On match day there is no button.
 
 Tap a day's button and the **New session** window opens with the date and the day type already filled in. All that is left is to choose the intention and who builds it, you or Mola.
 
@@ -68,35 +68,36 @@ Filling four days by hand takes time. Ndamba can do it in one tap, and there are
 |---|---|---|
 | The week page, titled **The week** | **Plan the week** | No set intention: a balanced week |
 | Home, **Next match** card | **Prepare the week** | No set intention |
-| Home, Indice Njangi card | **Prepare the week around "Progress"** (for example) | The intention that answers the last match's weak spot (chapter 13) |
+| Home, Njangi Index card | **Prepare the week around "Progress"** (for example) | The intention that answers the last match's weak spot (chapter 13) |
+| The report of a tagged match | **Plan the week with these objectives** | The report's main intention |
 | The conversation with Mola | "Plan my week before the match" | The one you name, otherwise the one from the last report if the match was tagged |
 
-All of these do the same job. Ndamba takes the team's next match, counts four days back, from MD-4 to MD-1, and builds a session for every day still ahead that does not have one. It never touches a session that already exists and never fills days that have gone by. Each session is built as described in chapter 8: Tension, Duration, Speed, Activation, with drills suited to the team's age.
+All of these do the same job. Ndamba takes the team's next match, counts four days back, from MD-4 to MD-1, and builds a session for every day still ahead that does not have one. It never touches a session that already exists and never fills days that have gone by. It also leaves free the day of another match and the day after it (MD+1, recovery). Each session is built as described in chapter 8: Tension, Duration, Speed, Activation, with drills suited to the team's age, and carries the **Mola** mark in the sessions list.
 
 ![The coach's home in the pro club demo: today's session and, on the right, the Next match card against Rapides de Kribi on Saturday 31 October, with the yellow Prepare the week button.](shot:pro-home "On the home screen, the next match card and its Prepare the week button.")
 
 On the week page, step by step:
 
-1. Go to the week of the match. If sessions are missing, a sentence under the navigation says so. In the demo, the following week shows: "Next match: Espoir de Mbalmayo, Wednesday, November 4. 4 sessions are missing from MD-4 to MD-1."
+1. Go to the week of the match. If sessions are missing, a sentence under the navigation says so. In the demo, the following week shows: "Next match: Espoir de Mbalmayo, Wednesday, November 4. 2 sessions are missing from MD-4 to MD-1." Only two, because MD-4 and MD-3 fall on Saturday 31 October, the day of the match against Rapides de Kribi, and on Sunday 1 November, the recovery day.
 2. Tap **Plan the week**, the yellow button with Mola's mark.
-3. The **Your week is ready** window lists the sessions created: their MD day, date, title, blocks and minutes. Tap one to open and fine-tune it, or tap **Done**.
-4. The button turns into **Week planned**. If there is no upcoming match, it is replaced by **Add a match**.
+3. The **Your week is ready** window lists the sessions created: their MD day, date, title, blocks and minutes. In the demo: "Mola built 2 sessions before the match against Espoir de Mbalmayo", a 52-minute Speed session on Monday 2 (MD-2) and a 40-minute Activation session on Tuesday 3 (MD-1). Tap one to open and fine-tune it, or tap **Done**.
+4. The button turns into **Week planned**. If every remaining day before the match has gone by or is taken by another match, it reads **Nothing left to plan before the match**. If there is no upcoming match, it is replaced by **Add a match**.
 
-On the free plan, once the five sessions are used, **Plan the week** and the day buttons are greyed out, and the page offers **Discover Coach Pro**.
+On the **Free** plan (and on **Player Premium**, which does not include the coaching tools), once the five sessions are used, **Plan the week** and the day buttons are greyed out, and the page offers **Discover Coach Pro**. The buttons on the home screen and in the report then lead to the plans page, and Mola, in the conversation, explains the limit instead of building.
 
 On the home screen, **Prepare the week** does the same work without leaving the page: a message announces how many sessions were prepared, with a **See the week** link. If everything is already in place, the message says so: every day before the match has its session.
 
-In the conversation, Mola shows its work step by step: the next match, the intention of the week (or "No report yet: I'll keep a balanced week"), "Building MD-4 Tension, MD-3 Duration, MD-2 Speed, MD-1 Activation", then the saving. It ends with "Done", the number of sessions and their dates, offers **See the week**, then the natural next steps: send the call-up, export the week to your calendar. Those two steps, which leave the app, always wait for your approval (chapter 18). Planning the week, on the other hand, only creates sessions on your device: nothing goes out, nothing is sent.
+In the conversation, Mola shows its work step by step: the next match, the intention of the week (or "No report yet: I'll keep a balanced week"), "Building MD-4 Tension, MD-3 Duration, MD-2 Speed, MD-1 Activation", then the saving. It ends with "Done", the number of sessions and their dates, and mentions any days it left free. It offers **See the week**, then the natural next steps: send the call-up, export the week to your calendar. Those two steps, which leave the app, always wait for your approval (chapter 18). Planning the week, on the other hand, only creates sessions on your device: nothing goes out, nothing is sent.
 
 > [!MOLA] The sentence to type
 > Type "Plan my week before the match". To steer the whole week, name the intention: "Plan the week around Win it back".
 
-> [!WARNING] Weeks with two matches
-> Ndamba always fills the four days before the next match, without checking whether another match falls inside those four days. In a two-match week it can therefore put a Tension session on a match day, or a Duration session the day after one. That is the case in the demo: for the match on Wednesday 4 November, MD-4 falls on Saturday 31 October, the day of the match against Rapides de Kribi. After planning, look over the week and fix those days: between two matches, the book (chapter 28) keeps only recovery and activation.
+> [!TIP] Weeks with two matches
+> When another match falls in the four days before, Ndamba plans neither that day nor the day after it. In the demo, ask "Plan my week before the match against Espoir de Mbalmayo": Mola creates only MD-2 on Monday 2 and MD-1 on Tuesday 3, then adds "I left 2 days free: another match or the recovery day after it falls on those days." Saturday 31 October (Rapides de Kribi) and Sunday 1 November stay free. Fill that recovery Sunday yourself with the day's button, which already suggests MD+1; chapter 28 of the book covers two-match weeks in detail.
 
 ## Young players, and the week on a phone
 
-The logic is the same for an academy, with less volume. In the demo of the Lionceaux de Bonamoussadi U13, the week of the same match adds up to 204 minutes, against 303 for the senior side of Étoile de la Côte, and the session the day before lasts 25 minutes. For an under-13 team or younger, when no match is close, the type suggested for a new session is **Youth**: play, touch the ball, learn through the game. The book (chapter 28) reminds coaches that young players keep the logic of the week without copying its load, with water, shade and school first.
+The logic is the same for an academy, with less volume. In the demo of the Lionceaux de Bonamoussadi U13, the same week, built around their own Saturday match against Panthères de Deïdo, adds up to 204 minutes, against 303 for the senior side of Étoile de la Côte, and the session the day before lasts 25 minutes. For an under-13 team or younger, when no match is close, the type suggested for a new session is **Youth**: play, touch the ball, learn through the game. The book (chapter 28) reminds coaches that young players keep the logic of the week without copying its load, with water, shade and school first.
 
 ![The U13 academy's week in the demo: the same day names, shorter sessions, and a load of 538 for 204 minutes.](shot:youth-week "The week of the Lionceaux de Bonamoussadi U13, around their Saturday match.")
 

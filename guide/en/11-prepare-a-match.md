@@ -97,10 +97,10 @@ The same card waits in Mola, under the **To approve** tab, until you decide. Whe
 
 ![Mola's To approve tab, empty: the heading Nothing to approve, the explanation that Mola waits here for your approval before any message leaves the app, and the Draft a call-up button.](shot:pro-mola-approvals "Nothing goes out without you: messages drafted by Mola wait here.")
 
-Mola always drafts the message from the saved lineup. If you edited the text by hand in the **Call-up** step, Mola does not pick up those changes: make them again with **Edit** in the card, or send from the match sheet instead.
+If you edited the text by hand in the **Call-up** step, Mola uses your version, exactly as the match sheet does. Otherwise it drafts the message from the saved lineup. One detail to watch: a text edited by hand no longer follows the lineup. If you change players afterwards, reopen the match with **Edit** and tap **Rebuild the message** in the **Call-up** step.
 
 > [!MOLA] Set up and call up in two sentences
-> Type "Set up a match against the Eagles on Saturday at 4pm at Deido stadium". Mola creates the match with an automatic lineup and a captain, then offers **Yes, plan the week** and **Send the call-up**. For a channel other than WhatsApp: "Send the call-up by SMS".
+> Type "Set up a match against the Eagles on Saturday at 4pm at Deido stadium". Mola creates the match with an automatic lineup and a captain, then offers **Yes, plan the week** and **Send the call-up**. If you already play that day, as in the demo, it still creates the match, because tournaments exist, but warns you: "Note: you already play Rapides de Kribi that day. If that is a mistake, change the date on the match sheet." For a channel other than WhatsApp: "Send the call-up by SMS".
 
 ## After the match
 

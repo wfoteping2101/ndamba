@@ -81,7 +81,7 @@ La section **Ma progression** apparaît dès le premier résultat noté. Elle co
 
 La section **Mon regard sur moi** demande au joueur où il en est sur les dix compétences de la grille : le scan, le contrôle orienté, la passe avec intention, la conduite, le dribble njangi, les appels et courses pour les autres, la communication, la protection du ballon, la contre-pression et la prise de décision. Chaque ligne a une phrase simple (« Je regarde par-dessus l'épaule avant de recevoir. ») et quatre boutons : **1** « Je découvre », **2** « Je progresse », **3** « Je maîtrise », **4** « Je l'apprends aux autres ».
 
-Le radar **Mes dix compétences** se dessine à mesure. Si l'entraîneur a évalué le joueur dans l'effectif, et que le profil porte le nom de sa fiche, une deuxième forme apparaît, **Le regard de mon coach**, avec ce conseil : « Si vous ne voyez pas la même chose, parlez-en après l'entraînement. » Ce regard sur soi est gardé seulement sur l'appareil.
+Le radar **Mes dix compétences** se dessine à mesure. Si l'entraîneur a évalué le joueur dans l'effectif, et que le profil porte le nom de sa fiche, une deuxième forme apparaît, **Le regard de mon coach**, avec ce conseil : « Si vous ne voyez pas la même chose, parlez-en après l'entraînement. » Ce regard sur soi ne sort pas de l'appareil (« Gardé seulement sur cet appareil. ») ; il fait partie de la sauvegarde exportée depuis **Réglages**, et **Tout effacer** le supprime.
 
 Plus bas, **Tous les défis** présente les 32 défis en liste, avec des filtres : **Tous**, **Ballon**, **Conduite**, **Mur**, **Les yeux**, **Finition**, **Physique**. Chaque ligne s'ouvre sur place, avec le même formulaire pour noter. En bas de page, deux portes : **Les Leçons du Ballon** et **Mon carnet du Njangi** (chapitre 16).
 

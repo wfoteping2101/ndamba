@@ -20,17 +20,17 @@ There are three ways in:
 
 The tagger takes over the whole screen, with no menus. An upcoming match switches to **Live**, at the latest on the first tap. The cross at the top left (**Leave live tagging**) takes you back to **Analysis**; the match stays live and you can resume where you left off.
 
-On the free plan, one match can be tagged live. From the second one, the button on the match sheet shows a padlock and the **Unlimited live analysis with Coach Pro** box offers **See plans**. A match that already has tags is never blocked. Payments are not connected yet: activating a plan is a demonstration today (chapter 24).
+On the **Free** plan, as on **Player Premium**, which does not include the coaching tools, one match can be tagged live. From the second one, the button on the match sheet shows a padlock and the **Unlimited live analysis with Coach Pro** box offers **See plans**. In **Analysis**, the **To tag live** section says so too. And if you open the tagger another way, from a link or a bookmark for instance, the same box appears instead of the buttons. A match that already has tags is never blocked. Payments are not connected yet: activating a plan is a demonstration today (chapter 24).
 
 ## The tagger screen
 
-![The live tagger on a computer: at the top the score Étoile 0-0 Rapides, the clock at 00:00 with Start, the periods 1st, 2nd, ET1 and ET2, Undo, Log and Full time; in the centre the buttons in five families with their keyboard key; on the right the Live Indice at 0.0 out of 100, the five sub-indices, the counters and the match log.](shot:pro-live-tagger "The tagger on a large screen: buttons, clock and Live Indice.")
+![The live tagger on a computer: at the top the score Étoile 0-0 Rapides, the clock at 00:00 with Start, the periods 1st, 2nd, ET1 and ET2, Undo, Log and Full time; in the centre the buttons in five families with their keyboard key; on the right the Live Index at 0.0 out of 100, the five sub-indices, the counters and the match log.](shot:pro-live-tagger "The tagger on a large screen: buttons, clock and Live Index.")
 
 At the top: the score (your team on the left, the opponent on the right), the clock, the periods, then on a large screen **Undo**, **Log**, the eye to observe, the keyboard for help, the settings and **Full time**. In the centre are the buttons, grouped in five families: **Possession**, **Danger**, **Fixation**, **Transitions** and **Opponent**. Each button shows its counter: how many actions of that kind have been tagged so far.
 
-On a large screen, the right-hand column shows the **Live Indice** out of 100 with its rating (**Possession without purpose**, **Solid Njangi** and so on), the five sub-indices out of 20, eight counters (**Passes attempted**, **Conservation (K)**, **Lines broken**, **Progressive**, **Box**, **Losses**, **5 s regains**, **Fixation actions**) and the **Match log** with the latest tags.
+On a large screen, the right-hand column shows the **Live Index** out of 100 with its rating (**Possession without purpose**, **Solid Njangi** and so on), the five sub-indices out of 20, eight counters (**Passes attempted**, **Conservation (K)**, **Lines broken**, **Progressive**, **Box**, **Losses**, **5 s regains**, **Fixation actions**) and the **Match log** with the latest tags.
 
-On every tap, the button flashes, the phone vibrates if it can, and a short message confirms the action with the minute, for example "Pass 12'".
+On every tap, the button flashes, the phone vibrates if it can, and a short message confirms the action with the minute, for example "Pass 12'". When a tap adds other tags, the message says so too: "Goal 12'", followed by "Also added: Shot, On target".
 
 ## The buttons and their codes
 
@@ -58,7 +58,7 @@ The definitions are those of chapter 32 of The Njangi Code, with no variation. T
 A few rules come up all the time:
 
 - **One action, several buttons.** A pass that moves the ball 15 metres forward is tagged **Pass** then **Progressive**. A pass that breaks a line is tagged **Pass** then **Line broken**, never **Progressive** as well. A forward carry is tagged **Progressive** or **Line broken** on its own. A switch is tagged **Pass** then **Switch**.
-- **One goal, one tap.** **Goal** adds **Shot** and **On target** automatically, and **On target** adds **Shot**. The score updates with **Goal** and **Their goal**.
+- **One goal, one tap.** **Goal** adds **Shot** and **On target** automatically, and **On target** adds **Shot**; likewise, **Their goal** adds **Their shot**. The confirmation message lists these additions. The score updates with **Goal** and **Their goal**.
 - **The 5-second window.** After a **Loss** or a **Pass lost**, a yellow 5-second ring appears on **Ball won**, which reads "Won back! 5 s" and counts down. A tap inside the window counts as **Won back 5 s**. Count under your breath: one, two, three, four, five. The **Won back 5 s** button also lets you tag it directly.
 
 ## The clock and the periods
@@ -74,7 +74,7 @@ The clock is saved on the device: if the phone closes the tab or the page reload
 
 ## Fix things without stopping
 
-**Undo** removes the last tap, with its whole group: undoing a **Goal** also removes its shot and shot on target, and the score goes back down. A message confirms, for example "Undone: Pass".
+**Undo** removes the last tap, with its whole group: undoing a **Goal** also removes its shot and shot on target, and the score goes back down. A message names the tap you undid, for example "Undone: Goal" (not one of the shots added with it) or "Undone: Pass".
 
 **Log** opens the list of every tag, period by period, newest first: the minute, the button, and the player if known. The bin deletes a tag. Tap one of your team's tags to bring up the shirt numbers and credit a player, or change the one credited.
 
@@ -94,9 +94,9 @@ The eye (**Observe**) opens the chapter 10 screen on top of the tagger, titled f
 
 ## On a phone
 
-![The tagger on a phone: at the top the cross, the score and End, then the clock and periods, an Indice band with the letters Pr, Pe, Fi, Re and Co, the buttons as large tiles, and at the bottom Undo, Log, Observe, Help and Settings.](shot:m-pro-live "On a phone, in portrait: everything is within thumb's reach.")
+![The tagger on a phone: at the top the cross, the score and End, then the clock and periods, an Index band with the letters Pr, Pe, Fi, Re and Co, the buttons as large tiles, and at the bottom Undo, Log, Observe, Help and Settings.](shot:m-pro-live "On a phone, in portrait: everything is within thumb's reach.")
 
-Hold the phone in portrait. At the top: the cross, the score and **End**. Below, the clock and periods, then an **Indice** band with the five sub-indices as letters (Pr, Pe, Fi, Re, Co); tap it to open the **Live Indice**. The buttons fill the rest of the screen, the most frequent ones larger. The bottom bar gives **Undo**, **Log** (with the number of tags), **Observe**, **Help** and **Settings**.
+Hold the phone in portrait. At the top: the cross, the score and **End**. Below, the clock and periods, then an **Index** band with the five sub-indices as letters (Pr, Pe, Fi, Re, Co); tap it to open the **Live Index**. The buttons fill the rest of the screen, the most frequent ones larger. The bottom bar gives **Undo**, **Log** (with the number of tags), **Observe**, **Help** and **Settings**.
 
 On a computer, the keyboard is faster still. Numbers work on the top row and on the numeric keypad, without Shift, even on a French keyboard.
 

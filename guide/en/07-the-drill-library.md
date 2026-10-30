@@ -28,7 +28,7 @@ Every drill also carries the same five markers, which then drive the filters:
 - **Intentions.** These are the seven words of the method (chapter 2): the five intentions of possession, **Build out**, **Progress**, **Pin**, **Finish** and **Breathe**, and the two reflexes without the ball, **Win it back** and **Look forward**. A drill works on one, two or three of them, rarely more.
 - **Minimum age.** "U12+" means from under-12s upwards. The drills range from U9+ to U15+. A drill stays useful for older players, with tougher rules.
 - **Days of the week.** MD-4, MD-3, MD-2, MD-1, MD+1 or **Youth**: the days on which the drill naturally fits relative to the match (chapter 9 explains these codes).
-- **Intensity.** **Low**, **Medium**, **High** or **Very high**, shown as four small bars and always paired with the word. The method is demanding: 37 drills are high, 22 medium, 3 low (technique drills) and 2 very high (two transition drills).
+- **Intensity.** **Low**, **Medium**, **High** or **Very high**, shown as four small bars, and spelled out on the drill card itself. The method is demanding: 37 drills are high, 22 medium, 3 low (technique drills) and 2 very high (two transition drills).
 - **Duration.** Sets and rests, for example "4 x 4 min, 1 min rest", and the total in minutes, from 14 to 38 minutes depending on the drill.
 
 ## Opening the library
@@ -88,15 +88,15 @@ At the bottom of the card, two tiles lead to the previous and the next drill. Th
 
 Under the diagram, the **Read in the book** button opens the same drill in *The Njangi Code*, on its own page. The book gives the context a screen has no room for: the chapter that explains the intention, the common mistakes, the drill's place in the week. The book is written in French, like the novel.
 
-The link works both ways: every drill the book mentions by its code, such as R08, is in the library, and the end of the book links back to the drills in the app. A coach prepares at home with the book and finds the same card in their pocket the next day.
+The link works both ways: every drill the book mentions by its code, such as R08, is in the library, and the book's table of contents ends with a link to the drills in the app (**Les 64 exercices dans l'application**, in French like the rest of the book). A coach prepares at home with the book and finds the same card in their pocket the next day.
 
 ## Adding a drill to a session
 
 A drill only matters once it reaches the pitch. The **Add to a session** button gets it there in two moves.
 
 1. On the drill card, tap **Add to a session**. A window opens with the drill's title.
-2. For a new session, tap **New session with this drill**. The MD day and the intention are filled in for you: the day is the drill's first match-week day (MD-4 for R08, for example) and the intention is its first intention. Check the date and the team, then tap **Create session**.
-3. For a session that is already planned, pick it under **Or in an upcoming session**. The list shows up to twelve upcoming sessions for the team, with their MD day, number of blocks and minutes. **Right day** marks a session whose day matches the drill's days; **Already in** marks a session that already contains the drill.
+2. For a new session, tap **New session with this drill**. The MD day and the intention are filled in for you: the day is the drill's first pre-match day (MD-4 for R08, for example) and the intention is its first intention. Check the date and the team, then tap **Create session**.
+3. For a session that is already planned, pick it under **Or in an upcoming session**. The list shows up to twelve upcoming sessions for the team, with their MD day, number of blocks and minutes. **Right day** marks a session whose day matches the drill's days; **Already in** marks a session that already contains the drill: it no longer responds to a tap, so the same block cannot go in twice.
 4. A message confirms the addition, with an **Open** link to go to the session.
 
 The drill joins the session as a new block at the end, with its full duration. Chapter 8 shows how to move it, change its minutes or add a note.

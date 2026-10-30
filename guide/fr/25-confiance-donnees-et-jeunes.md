@@ -20,19 +20,19 @@ Ndamba est une application « locale d'abord ». Tout ce que vous créez est enr
 | Les matchs | La fiche, la composition, le plan de jeu, les tags codés en direct ou en vidéo |
 | Le parcours | Évaluations, observations, présences, objectifs, jalons |
 | La forme du jour | Sommeil, fatigue, douleurs, humeur, stress, effort ressenti, minutes |
-| L'espace joueur | Les défis réalisés et le carnet |
+| L'espace joueur | Les défis réalisés, le carnet, les leçons marquées « J'ai compris » et l'auto-évaluation « Mon regard » |
 | Mola | La conversation et les tâches |
-| La vidéo | Le titre du projet, le nom du fichier et les tags ; jamais la vidéo elle-même |
+| La vidéo | Le titre du projet, le nom du fichier, les tags et les images annotées ; jamais la vidéo elle-même |
 
 Ce choix a des conséquences concrètes :
 
 - **Vous travaillez même avec un réseau faible.** Le codage en direct le dit : « Le chrono, les tags et le score sont enregistrés sur l'appareil à chaque tap, même sans réseau. »
 - **Personne d'autre ne voit vos données**, ni l'éditeur de Ndamba, ni un autre entraîneur.
-- **Les vidéos ne quittent pas l'appareil.** Le studio vidéo ouvre le fichier sur place : « La vidéo reste sur votre appareil : Ndamba n'enregistre que vos tags et vos dessins. »
+- **Les vidéos ne quittent pas l'appareil.** Le studio vidéo ouvre le fichier sur place : « La vidéo reste sur votre appareil : Ndamba n'enregistre que vos tags et vos dessins. » Un dessin est gardé avec l'image fixe du moment, en petit format.
 - **Mais les données peuvent se perdre.** Effacer les données du navigateur, changer de téléphone ou travailler en navigation privée fait disparaître l'espace s'il n'a pas été sauvegardé. Deux navigateurs sur le même téléphone font deux espaces séparés.
 - **Une démo remplace les données du navigateur.** Quand le navigateur contient déjà votre propre espace, le site prévient avant de la lancer et conseille d'exporter une sauvegarde d'abord.
 
-Quelques préférences d'affichage (le chrono d'un match en cours, les réglages du codage, les suggestions masquées) sont gardées à part, dans le stockage simple du navigateur, et ne figurent pas dans les sauvegardes. Enfin, dans tout le code de l'application, un seul appel peut envoyer à l'extérieur un texte que vous avez écrit : celui du modèle d'IA de Mola, décrit plus bas. L'application ne contient aucun outil de mesure d'audience ni de publicité, et ses polices de caractères sont livrées avec le site.
+À côté de cette base, le navigateur garde quelques éléments dans son stockage simple. Les leçons marquées « J'ai compris » et l'auto-évaluation « Mon regard » en font partie, mais elles voyagent avec les sauvegardes. Le chrono d'un match en cours, les réglages du codage, les suggestions masquées et le choix de la langue y sont aussi, mais ne figurent pas dans les sauvegardes. Enfin, dans tout le code de l'application, un seul appel peut envoyer à l'extérieur un texte que vous avez écrit : celui du modèle d'IA de Mola, décrit plus bas. L'application ne contient aucun outil de mesure d'audience ni de publicité, et ses polices de caractères sont livrées avec le site.
 
 ## Sauvegarder, restaurer, effacer
 
@@ -42,7 +42,7 @@ Pour exporter une sauvegarde :
 
 1. Ouvrez **Réglages**, dans le groupe **Moi** du menu.
 2. Dans le panneau **Vos données**, à la ligne **Exporter une sauvegarde**, appuyez sur **Exporter**.
-3. Un fichier nommé ndamba-AAAA-MM-JJ.json est téléchargé. Il contient tout le contenu de l'application dans ce navigateur : le profil, les équipes, les joueurs, les séances, les matchs, les analyses, le parcours, la forme du jour et les notes.
+3. Un fichier nommé ndamba-AAAA-MM-JJ.json est téléchargé. Il contient toutes vos données de ce navigateur : le profil, les équipes, les joueurs, les séances, les matchs, les analyses, les projets vidéo, le parcours, la forme du jour, les notes, le carnet, la conversation avec Mola, les leçons comprises et « Mon regard ».
 
 Pour restaurer une sauvegarde, sur le même appareil ou sur un autre :
 
@@ -50,12 +50,12 @@ Pour restaurer une sauvegarde, sur le même appareil ou sur un autre :
 2. La fenêtre « Restaurer cette sauvegarde ? » affiche la date de la sauvegarde et le nombre d'éléments, et prévient que toutes les données actuelles de ce navigateur seront remplacées.
 3. Confirmez avec **Restaurer**. Si le fichier n'est pas une sauvegarde Ndamba, un message le dit et rien n'est modifié.
 
-Pour repartir de zéro, la ligne **Tout effacer** supprime le profil, les équipes et tout le reste du navigateur, après une confirmation. L'action est définitive.
+Pour repartir de zéro, la ligne **Tout effacer** supprime le profil, les équipes et tout le reste du navigateur, y compris les leçons comprises et « Mon regard », après une confirmation ; le choix de la langue est gardé. L'action est définitive.
 
 ![Les réglages complets de la démo club pro : le profil, les équipes, le panneau Formule, puis le panneau Vos données avec Exporter, Restaurer et Tout effacer, et les informations sur la version et le stockage.](shot:pro-settings-full "Les réglages : vos données se gèrent ici, et le stockage est indiqué « Sur cet appareil ».")
 
 > [!ATTENTION] Une sauvegarde est un fichier lisible
-> Le fichier de sauvegarde est du texte en clair, non chiffré : quiconque l'ouvre voit les noms, les notes et la forme des joueurs. Traitez-le comme une liste d'effectif sur papier : ne le déposez pas dans un groupe de discussion, gardez-le sur un support qui vous appartient. Faites-en une chaque semaine, après chaque match codé, et toujours avant d'ouvrir une démo.
+> Le fichier de sauvegarde est du texte en clair, non chiffré : quiconque l'ouvre voit les noms, les notes, la forme des joueurs et les images annotées des vidéos. Traitez-le comme une liste d'effectif sur papier : ne le déposez pas dans un groupe de discussion, gardez-le sur un support qui vous appartient. Faites-en une chaque semaine, après chaque match codé, et toujours avant d'ouvrir une démo.
 
 ## Pas de comptes, pas de nuage, pour l'instant
 
@@ -87,7 +87,7 @@ Une convocation contient les noms des joueurs convoqués : c'est vous, et vous s
 
 Mola fonctionne d'abord avec un moteur de règles, dans l'application. Un modèle d'IA peut l'aider à comprendre les messages écrits librement, si l'éditeur du site a configuré une clé sur le serveur. Voici précisément comment.
 
-**Quand.** Chaque message que vous écrivez dans la conversation de Mola peut être envoyé, sauf dans ces cas, traités entièrement sur l'appareil : la conversation d'accueil de /bienvenue ; les suggestions en un geste de « Mola a remarqué », qui savent déjà quoi faire ; un simple oui ou non ; la réponse à un détail que Mola vient de vous demander (une date, un adversaire), sauf si elle ressemble à une nouvelle demande ; et tout message écrit sans connexion. Si le serveur répond qu'aucune clé n'est configurée, ou après deux échecs, l'application cesse d'essayer pour le reste de la visite.
+**Quand.** Chaque message que vous écrivez dans la conversation de Mola, ou que vous touchez parmi les phrases proposées, peut être envoyé, sauf dans ces cas, traités entièrement sur l'appareil : la conversation d'accueil de /bienvenue ; les suggestions en un geste de « Mola a remarqué », qui savent déjà quoi faire ; un simple oui ou non ; la réponse à un détail que Mola vient de vous demander (une date, un adversaire), sauf si elle ressemble à une nouvelle demande ; et tout message écrit sans connexion. Si le serveur répond qu'aucune clé n'est configurée, ou après deux échecs, l'application cesse d'essayer pour le reste de la visite.
 
 **Ce qui part.** Une demande contient :
 
@@ -108,7 +108,7 @@ Mola fonctionne d'abord avec un moteur de règles, dans l'application. Un modèl
 
 Un joueur de moins de 16 ans voit un accueil fait pour son âge : le défi du jour, ses points d'expérience, sa série et son palier, la leçon du jour tirée du roman, le prochain match avec un rappel simple (« prépare ton sac et couche-toi tôt la veille »), son carnet et son parcours. Le parcours suit des règles d'âge écrites dans l'application : « Moins de 13 ans : des repères simples, jamais de classement. » et « 13 à 16 ans : progression et repères de match, sans classement. » L'espace de performance n'arrive qu'à 16 ans. Les conseils de santé sont dans l'espace joueur : « Bois de l'eau » et « Un jour sans défi par semaine. [...] Si tu as mal, arrête-toi et préviens ton entraîneur ou tes parents. »
 
-![L'accueil de BriBri, 12 ans : la devise, ses points d'expérience, sa série, le défi du jour Les pieds rapides et sa progression, sans aucun classement.](shot:youth-player-home-linked "Ce que voit un joueur de 12 ans : un défi, une leçon, son parcours, jamais de classement.")
+![L'accueil de BriBri, 12 ans : la devise, ses points d'expérience, sa série, le défi du jour Les pieds rapides et sa progression, sans aucun classement.](shot:youth-player-home-linked "Ce que voit un joueur de 12 ans : un défi, sa progression, son parcours, jamais de classement.")
 
 Il n'y a dans Ndamba ni publicité, ni messagerie entre utilisateurs, ni profil public, ni commentaires. Mola ne parle qu'à la personne qui tient l'appareil et ne contacte jamais personne.
 

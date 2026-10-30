@@ -18,7 +18,7 @@ Beaucoup de séances sont une suite d'exercices que l'on aime bien, dont la dur�
 
 Chaque groupe affiche trois totaux à droite : **Séances**, **Minutes** et **Charge** (la charge est expliquée plus bas). Attention, ces totaux ne comptent que les séances de l'onglet ouvert : dans **À venir**, la semaine en cours ne compte que les séances d'aujourd'hui et des jours suivants. Pour voir toute la semaine, touchez **Voir la semaine** (chapitre 9).
 
-Chaque ligne montre la date, le jour MD, l'intention principale, le titre, la durée, le nombre de blocs et, sur grand écran, le profil d'intensité, une barre par bloc. Une séance composée par Mola porte la petite marque **Mola**. Touchez la ligne pour ouvrir la séance.
+Chaque ligne montre la date, le jour MD, l'intention principale, le titre, la durée, le nombre de blocs et le profil d'intensité, une colonne par bloc. Le badge **Aujourd'hui** signale la séance du jour. Une séance composée par Mola, que ce soit avec **Mola compose pour moi**, avec **Planifier la semaine** et **Préparer la semaine** (chapitre 9) ou dans la conversation, porte la petite marque **Mola**. Touchez la ligne pour ouvrir la séance.
 
 Le bouton à trois points, au bout de chaque ligne, propose **Dupliquer** et **Supprimer**. **Dupliquer** crée une copie nommée « (copie) » ; si l'original est passé, la copie est placée aujourd'hui, prête à être déplacée. **Supprimer** demande confirmation : « Supprimer la séance ? ». Les exercices, eux, restent toujours dans la bibliothèque.
 
@@ -52,7 +52,7 @@ Quand Mola compose, il suit un plan fixe par jour, tiré de la semaine type du l
 Les totaux supposent que chaque famille a une fiche pour l'âge de l'équipe ; sinon, le bloc est sauté (les grands jeux, par exemple, commencent à U13). Pour chaque bloc, Mola cherche une fiche de la bonne famille, adaptée à l'âge de l'équipe et pas encore utilisée dans la séance. Parmi elles, il préfère celle qui travaille l'intention choisie et celle qui convient au jour. Le choix varie un peu d'une fois à l'autre, pour que deux séances MD-3 ne soient pas identiques. Ce sont des règles simples, écrites dans l'application : elles fonctionnent sans connexion à un modèle d'intelligence artificielle. Rien n'est figé : la séance composée s'ouvre dans le constructeur, où vous changez tout.
 
 > [!MOLA] Composer une séance en une phrase
-> Dans la conversation avec Mola, tapez « Crée une séance MD-3 pour progresser ». Mola place la séance trois jours avant votre prochain match (ou aujourd'hui si ce jour est déjà passé), compose la séance avec des fiches qui travaillent Progresser, vous montre chaque étape, puis propose **Ouvrir la séance**.
+> Dans la conversation avec Mola, tapez « Crée une séance MD-3 pour progresser ». Mola place la séance le jour MD-3 de votre prochain match, compose la séance avec des fiches qui travaillent Progresser, vous montre chaque étape, puis propose **Ouvrir la séance**. Si ce jour est déjà passé, il la date d'aujourd'hui et vous le dit : « Le jour MD-3 du prochain match est déjà passé : je l'ai datée d'aujourd'hui, changez la date dans la séance si besoin. »
 
 ## Le constructeur de séance
 
@@ -75,7 +75,7 @@ La section **Le déroulé** liste les blocs dans l'ordre, avec leur nombre. Chaq
 
 Sous les blocs, deux boutons :
 
-1. **Ajouter un exercice** ouvre la bibliothèque dans un panneau, déjà filtrée sur le jour de la séance (« Exercices conseillés pour MD-2. »). Touchez le **+** d'une fiche pour l'ajouter à la fin ; une coche signale les fiches déjà présentes. Le lien **Voir tous les jours** retire le filtre du jour. Touchez **Terminé** pour fermer. Pour une séance MD+1, une seule fiche porte ce jour, T01, très intense, prévue par le livre pour la compensation des remplaçants : touchez **Voir tous les jours** pour choisir plutôt un rondo léger pour ceux qui ont joué.
+1. **Ajouter un exercice** ouvre la bibliothèque dans un panneau, déjà filtrée sur le jour de la séance (« Exercices conseillés pour MD-2. »). Touchez le **+** d'une fiche pour l'ajouter à la fin. Une fiche déjà présente dans la séance porte une coche à la place du **+** : elle ne peut pas être ajoutée une deuxième fois. Le lien **Voir tous les jours** retire le filtre du jour. Touchez **Terminé** pour fermer. Pour une séance MD+1, le panneau s'ouvre directement sur toutes les fiches, sans filtre : une seule fiche porte ce jour, T01, très haute en intensité, alors que le lendemain de match demande une récupération active, des rondos légers et des étirements pour ceux qui ont joué.
 2. **Ajouter un bloc libre** sert aux moments qui ne sont pas une fiche : échauffement, causerie, match libre, coups de pied arrêtés. Donnez un **Titre** et des **Minutes**, puis **Ajouter**.
 
 Un bloc libre n'a pas de fiche, donc pas d'intensité écrite. Ndamba lui donne une intensité **Basse** les jours MD-1 et MD+1, **Moyenne** les autres jours, pour que la charge reste juste.
@@ -84,7 +84,7 @@ Le bouton **Composer automatiquement**, au-dessus du déroulé, demande à Mola 
 
 Enfin, le champ **Notes de séance** garde ce qui concerne toute la séance : le terrain, la chaleur, les absents, le matériel.
 
-![Le constructeur en entier : quatre blocs R03, T04, F04 et G05 avec leurs minutes et leur intensité, les boutons Ajouter un exercice et Ajouter un bloc libre, les notes de séance, et à droite les intentions et les compétences travaillées, les boutons Imprimer, WhatsApp, Calendrier et Options, et la carte Présences et observations.](shot:pro-session-builder-full "Une séance MD-2 complète, de l'activation à la finition.")
+![Le constructeur en entier : quatre blocs R03, T04, F04 et G05 avec leurs minutes et leur intensité, les boutons Ajouter un exercice et Ajouter un bloc libre, les notes de séance, et à droite les intentions et les compétences travaillées, les boutons Imprimer, WhatsApp, Calendrier et Options, et la carte Présences et observations.](shot:pro-session-builder-full "Une séance MD-2 complète, du rondo à la finition.")
 
 ### Les totaux de la séance
 
@@ -108,7 +108,7 @@ Sous les totaux, quatre boutons.
 Plus bas, la carte **Présences et observations** apparaît dès que la séance appartient à une équipe : **Faire l'appel** le jour de la séance, et **Observer** pour noter ce que vous voyez chez un joueur. Le chapitre 10 détaille ces deux outils.
 
 > [!INVESTISSEUR] Où passe la frontière gratuite
-> Sur le plan gratuit, un entraîneur peut créer cinq séances ; au-delà, Ndamba propose Coach Pro, qui rend les séances illimitées. La bibliothèque et les livres restent gratuits. Aujourd'hui, les paiements ne sont pas encore branchés : activer un plan est une démonstration, et la page le dit (chapitre 24). Le constructeur est le moment où l'entraîneur gagne du temps chaque semaine, donc l'endroit naturel de la valeur payante.
+> Sur le plan **Gratuit**, un entraîneur peut créer cinq séances ; au-delà, Ndamba propose Coach Pro, qui rend les séances illimitées. La même limite vaut pour **Joueur Premium**, un plan pensé pour le joueur et non pour l'entraîneur. La bibliothèque et les livres restent gratuits. Aujourd'hui, les paiements ne sont pas encore branchés : activer un plan est une démonstration, et la page le dit (chapitre 24). Le constructeur est le moment où l'entraîneur gagne du temps chaque semaine, donc l'endroit naturel de la valeur payante.
 
 ## Une séance, une histoire
 

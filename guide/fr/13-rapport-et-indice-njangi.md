@@ -16,11 +16,11 @@ Trois chemins mènent au rapport :
 2. À la fin du direct, le bouton **Terminer et voir le rapport** l'ouvre aussitôt.
 3. Demandez à Mola **Analyse mon dernier match** : son résumé se termine par le bouton **Lire le rapport complet**.
 
-Sans aucun tag, la page affiche **Pas encore de tags pour ce match** et propose **Lancer le direct** ou **Analyser la vidéo**.
+Sans aucun tag, la page affiche **Pas encore de tags pour ce match** : « Le rapport se construit à partir des tags du direct. Lancez le direct pour ce match, pendant la rencontre ou après coup. » Elle propose **Lancer le direct** ou **Analyser la vidéo** ; seuls les tags du direct construisent le rapport (chapitre 14).
 
 ## L'en-tête : le score, les buts et les actions
 
-![Le haut du rapport de la démo club pro : le bandeau vert avec Étoile de la Côte 2, Météore de Bafoussam 1, la mention Victoire, les trois buts avec leur minute, les boutons Corriger les tags, Analyser la vidéo et Feuille de match, puis la jauge de l'Indice Njangi à 67,9 et les cinq sous-indices.](shot:pro-report "Le rapport du match contre Météore de Bafoussam : l'en-tête, la jauge et les cinq sous-indices.")
+![Le haut du rapport de la démo club pro : le bandeau vert avec Étoile de la Côte 2, Météore de Bafoussam 1, la mention Victoire, les trois buts (Serge Eyoum à la 22e, Météore de Bafoussam à la 54e, Hamidou Sali à la 69e), les boutons Corriger les tags, Analyser la vidéo et Feuille de match, puis la jauge de l'Indice Njangi à 67,9 et les cinq sous-indices.](shot:pro-report "Le rapport du match contre Météore de Bafoussam : l'en-tête, la jauge et les cinq sous-indices.")
 
 En haut, le lien **Analyse** ramène à la page d'analyse ; à droite, **Copier le texte** et **Imprimer** (voir plus bas).
 
@@ -110,7 +110,7 @@ L'intention suit toujours le sous-indice le plus faible :
 
 Sous **Exercices recommandés**, le rapport prend les deux premiers exercices de chacun des deux sous-indices les plus faibles : R02 et S04 pour la Fixation, P05 (Entre les lignes) et S07 (Les lignes traversées) pour la Progression. Chaque carte ouvre la fiche de l'exercice (chapitre 7).
 
-En bas, « Semaine du match contre Rapides de Kribi, samedi 31 octobre. Intention dominante : Fixer. », puis le bouton doré **Planifier la semaine avec ces objectifs**. Il crée les séances MD-4 à MD-1 qui manquent avant ce match, orientées sur l'intention, sans toucher aux séances existantes ni aux jours passés (chapitre 9), puis propose **Ouvrir la semaine**. Dans la démo, la semaine est déjà prête, et le rapport le dit : « Les séances de cette semaine existent déjà. Ouvrez la semaine pour les ajuster. » Sans prochain match, il propose d'abord **Nouveau match** : la semaine se planifie à rebours depuis le jour du match.
+En bas, « Semaine du match contre Rapides de Kribi, samedi 31 octobre. Intention dominante : Fixer. », puis le bouton doré **Planifier la semaine avec ces objectifs**. Il crée les séances MD-4 à MD-1 qui manquent avant ce match, orientées sur l'intention et marquées **Mola**, sans toucher aux séances existantes ni aux jours passés, et en laissant libres le jour d'un autre match et son lendemain (chapitre 9), puis propose **Ouvrir la semaine**. Sur les formules Gratuit et Joueur Premium, au-delà de cinq séances enregistrées, il mène à la page Premium. Dans la démo, la semaine est déjà prête, et le rapport le dit : « Les séances de cette semaine existent déjà. Ouvrez la semaine pour les ajuster. » Sans prochain match, il propose d'abord **Nouveau match** : la semaine se planifie à rebours depuis le jour du match.
 
 > [!MOLA] Le rapport en une phrase
 > Tapez **Analyse mon dernier match**. Mola compte les actions taguées, calcule l'Indice, écrit ce qui marche et ce qu'il faut corriger, propose les premiers exercices et le bouton **Lire le rapport complet**. Il propose ensuite **Prépare la semaine sur l'intention « Fixer »** : répondez simplement « oui ».
@@ -120,7 +120,7 @@ En bas, « Semaine du match contre Rapides de Kribi, samedi 31 octobre. Intentio
 ![Le rapport complet du match de la démo, de l'en-tête jusqu'au tableau des contributions des joueurs, en passant par le résumé, les objectifs, la frise du match, les chiffres clés et les explications des sous-indices.](shot:pro-report-full "Le rapport en entier : chaque section répond à une question précise.")
 
 - **Les chiffres clés** : passes tentées et réussite, conservation K (82 %), progressives, dernier tiers, tirs cadrés, fixations, pertes, reprises en 5 secondes (28 % des pertes).
-- **Repères complémentaires** : la **Part de possession estimée** et le **Field tilt** (la part de nos entrées dans le dernier tiers face à celles de l'adversaire). Ils restent vides sans l'option « Coder aussi l'adversaire » du direct. **Tirs adverses** donne ici « 9 (0) » : neuf tirs, aucun noté cadré.
+- **Repères complémentaires** : la **Part de possession estimée** et le **Field tilt** (la part de nos entrées dans le dernier tiers face à celles de l'adversaire). Ils restent vides sans l'option « Coder aussi l'adversaire » du direct. **Tirs adverses** donne ici « 9 (1) » : neuf tirs, dont un cadré, le but encaissé à la 54e. Il n'y a pas de bouton « tir adverse cadré » : un but adverse compte comme tir cadré.
 - **Le match, cinq minutes par cinq minutes** : nos actions avec le ballon en barres, puis nos récupérations (vert clair) et nos pertes (rouge), les buts marqués d'un rond. Touchez une barre pour ses chiffres, ou **Voir les données**.
 - **Comparaison avec le match précédent** : une barre grise pour le match d'avant, une verte pour celui-ci. Ici : « C'est le premier match analysé : la comparaison apparaîtra au prochain. »
 - **Contributions des joueurs** : les tags attribués à chaque joueur pendant le direct, des passes aux récupérations.

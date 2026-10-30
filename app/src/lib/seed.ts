@@ -27,7 +27,7 @@ const ROSTER: [string, number, string, number, 'R' | 'L' | 'B', number][] = [
   ['BriBri', 8, 'DM', 2014, 'R', 4],
   ['Mireille « la Gazelle » Eyenga', 10, 'CM', 2014, 'R', 3],
   ['Cédric Fouda', 6, 'CM', 2013, 'B', 3],
-  ['Kaydoudou', 7, 'W', 2015, 'L', 4],
+  ['Kaydoudou', 7, 'W', 2016, 'L', 4], // 10 in 2026, as in the novel (BriBri 12)
   ['Samuel Owona', 9, 'ST', 2013, 'R', 3],
   ['Yannick Tchoumi', 11, 'W', 2014, 'R', 2],
   ['Hervé Kamga', 12, 'CB', 2014, 'R', 2],

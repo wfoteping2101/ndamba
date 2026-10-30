@@ -446,7 +446,7 @@
     "noMatch": "Aucun match",
     "create": "Créer le projet",
     "empty": "Aucun projet vidéo",
-    "emptyBody": "Filmez avec un téléphone et un trépied, puis ouvrez le fichier ici. La vidéo reste sur votre appareil : {{app}} n'enregistre que vos tags et vos dessins.",
+    "emptyBody": "Filmez avec un téléphone et un trépied, puis ouvrez le fichier ici. La vidéo reste sur votre appareil : {{app}} n'enregistre que vos tags et vos images annotées (l'image de la vidéo avec votre dessin).",
     "file": "Fichier : {{name}}",
     "noFile": "Pas encore de vidéo",
     "delete": "Supprimer le projet",

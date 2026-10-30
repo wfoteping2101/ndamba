@@ -446,7 +446,7 @@
     "noMatch": "No match",
     "create": "Create the project",
     "empty": "No video project",
-    "emptyBody": "Film with a phone and a tripod, then open the file here. The video stays on your device: {{app}} only saves your tags and drawings.",
+    "emptyBody": "Film with a phone and a tripod, then open the file here. The video stays on your device: {{app}} only saves your tags and your annotated frames (the video frame with your drawing).",
     "file": "File: {{name}}",
     "noFile": "No video yet",
     "delete": "Delete the project",

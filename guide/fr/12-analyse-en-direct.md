@@ -20,7 +20,7 @@ Il y a trois portes d'entrée :
 
 Le codeur prend tout l'écran, sans menus. Un match à venir passe en **En direct**, au plus tard au premier tap. La croix en haut à gauche (**Quitter le direct**) vous ramène à **Analyse** ; le match reste en direct et vous pourrez reprendre là où vous en étiez.
 
-Avec l'offre gratuite, un seul match peut être codé en direct. Au deuxième, le bouton de la feuille de match porte un cadenas et l'encadré **Analyse en direct illimitée avec Coach Pro** propose **Voir les offres**. Un match qui a déjà des tags n'est jamais bloqué. Les paiements ne sont pas encore branchés : activer une offre est aujourd'hui une démonstration (chapitre 24).
+Sur le plan **Gratuit**, comme sur **Joueur Premium** qui ne comprend pas les outils de l'entraîneur, un seul match peut être codé en direct. Au deuxième, le bouton de la feuille de match porte un cadenas et l'encadré **Analyse en direct illimitée avec Coach Pro** propose **Voir les offres**. Dans **Analyse**, la rubrique **À analyser en direct** le rappelle. Et si vous ouvrez le codeur par un autre chemin, un lien ou un favori par exemple, c'est le même encadré qui s'affiche à la place des boutons. Un match qui a déjà des tags n'est jamais bloqué. Les paiements ne sont pas encore branchés : activer une offre est aujourd'hui une démonstration (chapitre 24).
 
 ## L'écran du codeur
 
@@ -30,7 +30,7 @@ En haut : le score (votre équipe à gauche, l'adversaire à droite), le chrono,
 
 Sur grand écran, la colonne de droite montre l'**Indice en direct** sur 100 avec son appréciation (**Possession sans intention**, **Njangi solide**...), les cinq sous-indices sur 20, huit compteurs (**Passes tentées**, **Conservation (K)**, **Lignes traversées**, **Progressives**, **Surface**, **Pertes**, **Reprises en 5 s**, **Fixations**) et le **Journal du match** avec les derniers tags.
 
-À chaque tap, le bouton s'éclaire, le téléphone vibre s'il le peut, et un petit message confirme l'action avec la minute, par exemple « Passe 12' ».
+À chaque tap, le bouton s'éclaire, le téléphone vibre s'il le peut, et un petit message confirme l'action avec la minute, par exemple « Passe 12' ». Quand un tap ajoute d'autres tags, le message le dit aussi : « But 12' », suivi de « Ajouté aussi : Tir, Tir cadré ».
 
 ## Les boutons et leurs codes
 
@@ -58,7 +58,7 @@ Les définitions sont celles du chapitre 32 du Code Njangi, sans variation. Elle
 Quelques règles reviennent sans cesse :
 
 - **Une action, plusieurs boutons.** Une passe qui avance de 15 mètres se code **Passe** puis **Progressive**. Une passe qui casse une ligne se code **Passe** puis **Ligne traversée**, jamais **Progressive** en plus. Une conduite qui avance se code **Progressive** ou **Ligne traversée** seul. Un renversement se code **Passe** puis **Renversement**.
-- **Un but, un seul tap.** **But** ajoute tout seul **Tir** et **Tir cadré**, et **Tir cadré** ajoute **Tir**. Le score se met à jour avec **But** et **But adverse**.
+- **Un but, un seul tap.** **But** ajoute tout seul **Tir** et **Tir cadré**, et **Tir cadré** ajoute **Tir** ; de même, **But adverse** ajoute **Tir adverse**. Le message de confirmation énumère ces ajouts. Le score se met à jour avec **But** et **But adverse**.
 - **La fenêtre des 5 secondes.** Après une **Perte** ou une **Passe perdue**, un anneau jaune de 5 secondes apparaît sur **Récupération**, qui affiche « Reprise ! 5 s » puis le compte à rebours. Un tap dans la fenêtre compte comme **Reprise 5 s**. Comptez à voix basse : un, deux, trois, quatre, cinq. Le bouton **Reprise 5 s** permet aussi de la coder directement.
 
 ## Le chrono et les périodes
@@ -74,7 +74,7 @@ Le chrono est enregistré sur l'appareil : si le téléphone ferme l'onglet ou s
 
 ## Corriger sans s'arrêter
 
-**Annuler** retire le dernier tap, avec tout son groupe : annuler un **But** retire aussi son tir et son tir cadré, et le score redescend. Un message confirme, par exemple « Annulé : Passe ».
+**Annuler** retire le dernier tap, avec tout son groupe : annuler un **But** retire aussi son tir et son tir cadré, et le score redescend. Un message nomme le tap annulé lui-même, par exemple « Annulé : But » (et non l'un des tirs ajoutés avec lui) ou « Annulé : Passe ».
 
 **Journal** ouvre la liste de tous les tags, période par période, du plus récent au plus ancien : la minute, le bouton, et le joueur s'il est connu. La corbeille supprime un tag. Touchez un tag de votre équipe pour faire apparaître les numéros et lui attribuer un joueur, ou le changer.
 

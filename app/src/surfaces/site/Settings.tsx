@@ -337,7 +337,8 @@ function DataCard() {
           if (Array.isArray(rows) && rows.length) await tb.bulkPut(rows)
         }
       })
-      if (pending.local) { try { for (const [k, v] of Object.entries(pending.local)) localStorage.setItem(k, v) } catch { /* storage unavailable */ } }
+      // the backup replaces everything: its lessons and self-assessment, or none
+      try { for (const k of LOCAL_KEYS) { const v = pending.local?.[k]; if (v !== undefined) localStorage.setItem(k, v); else localStorage.removeItem(k) } } catch { /* storage unavailable */ }
       setPending(null)
       setFlash(t('settings.data.imported'))
     } finally { setBusy(false) }

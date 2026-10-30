@@ -35,19 +35,19 @@ Non. L'Étoile de la Côte, Daniel Mbarga, les Lionceaux de Bonamoussadi et tous
 Non. Ndamba fonctionne dans le navigateur, sans compte ni mot de passe. Vous créez votre espace en parlant avec Mola, ou vous ouvrez une démo (chapitre 5).
 
 **Où sont mes données ?**
-Sur votre appareil, dans votre navigateur. Elles ne partent nulle part. Pour les garder ou les passer sur un autre appareil, exportez une sauvegarde depuis **Réglages**, puis restaurez-la ailleurs (chapitres 6 et 25).
+Sur votre appareil, dans votre navigateur. Rien ne part ailleurs, sauf le texte que vous écrivez à Mola quand son modèle d'IA est actif. Pour les garder ou les passer sur un autre appareil, exportez une sauvegarde depuis **Réglages**, puis restaurez-la ailleurs (chapitres 6 et 25).
 
 **Puis-je travailler sur deux appareils en même temps ?**
 Pas encore. La synchronisation entre appareils viendra avec les comptes (chapitre 26). En attendant, codez chaque match sur un seul appareil, et faites passer la sauvegarde d'un appareil à l'autre. Une restauration remplace tout ce que contient le navigateur.
 
 **Ndamba fonctionne-t-il sans réseau ?**
-Une fois l'application chargée, oui pour l'essentiel. Le codage en direct enregistre le chrono, les tags et le score sur l'appareil à chaque toucher, même sans réseau, et Mola comprend vos phrases grâce à des règles qui tournent sur l'appareil (chapitres 12 et 18).
+En partie. Il faut du réseau pour ouvrir le site et charger chaque écran une première fois : il n'existe pas encore de mode hors ligne à installer. Ensuite, comme les données sont sur l'appareil, un écran ouvert continue de fonctionner si le réseau tombe. Le codage en direct enregistre le chrono, les tags et le score à chaque toucher, même sans réseau, et Mola comprend vos phrases grâce à des règles qui tournent sur l'appareil (chapitres 12 et 18).
 
 **Comment recommencer à zéro ?**
 Dans **Réglages**, **Tout effacer** supprime le profil, les équipes et tout le reste de ce navigateur. Exportez d'abord une sauvegarde si vous voulez garder votre travail (chapitre 6).
 
 **En quelles langues ?**
-L'application est en français et en anglais : le bouton FR et EN change toute l'interface. Les livres se lisent en français. D'autres langues viendront avec les fédérations (chapitres 4 et 26).
+L'application est en français et en anglais : le bouton FR et EN change toute l'interface. Les livres se lisent en français. D'autres langues sont prévues, au rythme des fédérations qui rejoindront le modèle (chapitres 4 et 26).
 
 ## Les formules
 
@@ -55,10 +55,10 @@ L'application est en français et en anglais : le bouton FR et EN change toute l
 **Gratuit** : 0. **Joueur Premium** : 4,99 $US par mois. **Coach Pro** : 12,99 $US par mois. **Club et académie** : 49 $US par mois. **Fédération** : sur devis. Les paiements ne sont pas encore branchés : activer une formule est, pour l'instant, une démonstration (chapitre 24).
 
 **Que permet la formule gratuite ?**
-Les deux livres en lecture libre, les 64 exercices de la méthode, Mola pour vous guider, cinq séances et un match analysé en direct. Au-delà, l'application vous propose **Coach Pro** (chapitre 24).
+Les deux livres en lecture libre, les 64 exercices de la méthode, Mola pour vous guider, cinq séances et un match analysé en direct. Au-delà, l'application vous propose **Coach Pro**. Ces deux limites valent aussi pour **Joueur Premium**, qui ouvre l'espace du joueur et non les outils de l'entraîneur (chapitre 24).
 
 **Certaines lignes des formules sont-elles en avance sur l'application ?**
-Oui, et elles sont marquées. Les comptes du staff et le modèle de jeu du club portent la mention « bientôt » : ils demandent les comptes, prévus dans la feuille de route (chapitres 24 et 26).
+Oui. Deux lignes de **Club et académie** portent la mention « bientôt » : les comptes du staff, qui demandent des comptes d'utilisateurs, prévus dans la feuille de route, et le modèle de jeu du club, qui se construit aujourd'hui par l'accompagnement. Sous **Fédération**, la formation des entraîneurs et l'accompagnement sont des services rendus par des personnes (chapitres 24 et 26).
 
 ## Mola
 
@@ -85,10 +85,10 @@ Non. Le studio vidéo calcule son propre Indice à partir des tags placés sur l
 ## Les jeunes et les familles
 
 **Les données des enfants sont-elles protégées ?**
-Elles restent sur l'appareil du coach ou de la famille, sans compte et sans envoi. Avec les jeunes, l'Indice mesure l'équipe, jamais un enfant. Les principes à respecter le jour où les comptes arriveront (accord des parents, chacun ne voit que ce qui le concerne) sont posés au chapitre 25.
+Elles restent sur l'appareil du coach ou de la famille, sans compte et sans envoi. Avec les jeunes, l'Indice mesure l'équipe, jamais un enfant, et le rapport demande de garder le tableau des contributions des joueurs pour le staff. Les principes à respecter le jour où les comptes arriveront (accord des parents, chacun ne voit que ce qui le concerne) sont posés au chapitre 25.
 
 **À partir de quel âge ?**
 Le roman *Lionceaux* s'adresse aux 8 à 12 ans. Dans l'application, l'espace joueur change à 16 ans : avant, le défi du jour, la leçon du jour, la progression et le carnet ; à partir de 16 ans, un espace de performance avec la semaine du match, la forme et la charge (chapitres 15 et 20).
 
 **Comment un parent suit-il son enfant ?**
-Avec l'encadré **Pour les parents** sur l'accueil, le roman lu ensemble, et, si le coach confie une sauvegarde, le parcours de l'enfant. Le partage d'une seule fiche viendra avec les comptes (chapitre 17).
+Avec l'encadré **Pour les parents** sur l'accueil, les défis du jour et le roman lu ensemble. Le parcours écrit par l'entraîneur reste aujourd'hui sur l'appareil de l'équipe : une sauvegarde contiendrait tout l'effectif, pas seulement l'enfant. Le partage d'une seule fiche viendra avec les comptes (chapitres 17 et 25).

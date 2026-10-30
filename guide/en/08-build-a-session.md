@@ -18,7 +18,7 @@ Many sessions are a string of drills the coach happens to like, lasting as long 
 
 Each group shows three totals on the right: **Sessions**, **Minutes** and **Load** (load is explained below). Note that these totals only count the sessions in the open tab: under **Upcoming**, the current week only counts today's sessions and the days ahead. To see the whole week, tap **See the week** (chapter 9).
 
-Each row shows the date, the MD day, the main intention, the title, the total time, the number of blocks and, on a large screen, the intensity profile, one bar per block. A **Today** badge marks the day's session, and a session built by Mola carries a small **Mola** mark. Tap the row to open the session.
+Each row shows the date, the MD day, the main intention, the title, the total time, the number of blocks and the intensity profile, one column per block. A **Today** badge marks the day's session. A session built by Mola, whether through **Mola builds it for me**, **Plan the week** and **Prepare the week** (chapter 9) or the conversation, carries a small **Mola** mark. Tap the row to open the session.
 
 The three-dot button at the end of each row offers **Duplicate** and **Delete**. **Duplicate** creates a copy with "(copy)" in its name; if the original is in the past, the copy is placed on today's date, ready to be moved. **Delete** asks you to confirm with "Delete this session?". The drills themselves always stay in the library.
 
@@ -52,7 +52,7 @@ When Mola builds a session, it follows a fixed plan for each day, taken from the
 The totals assume each family has a drill for the team's age; if not, the block is skipped (large-sided games, for example, start at U13). For each block, Mola looks for a drill of the right family, suited to the team's age and not already used in the session. Among those, it prefers the one that works on the chosen intention and the one that suits the day. The choice varies a little from one time to the next, so two MD-3 sessions are not identical. These are simple rules, written into the app: they work without any connection to an AI model. Nothing is set in stone: the session opens in the builder, where you can change everything.
 
 > [!MOLA] Build a session in one sentence
-> In the conversation with Mola, type "Create an MD-3 session to progress". Mola places the session three days before your next match (or today if that day has already gone by), builds it with drills that work on Progress, shows you each step, then offers **Open the session**.
+> In the conversation with Mola, type "Create an MD-3 session to progress". Mola places the session on the MD-3 day of your next match, builds it with drills that work on Progress, shows you each step, then offers **Open the session**. If that day has already gone by, Mola dates the session today and tells you so: "The MD-3 day of the next match has already gone by: I dated it today, change the date in the session if needed."
 
 ## The session builder
 
@@ -75,7 +75,7 @@ The section called **The plan** lists the blocks in order, with their count. Eac
 
 Below the blocks, two buttons:
 
-1. **Add a drill** opens the library in a side panel, already filtered on the session's day ("Drills suggested for MD-2."). Tap a drill's **+** to add it at the end; a tick marks drills already in the session. The **Show every day** link removes the day filter. Tap **Done** to close. For an MD+1 session, only one drill carries that day, T01, which is very intense and meant by the book for the substitutes' compensation work: tap **Show every day** to pick a light rondo for the players who played instead.
+1. **Add a drill** opens the library in a side panel, already filtered on the session's day ("Drills suggested for MD-2."). Tap a drill's **+** to add it at the end. A drill already in the session shows a tick instead of the **+**: it cannot be added a second time. The **Show every day** link removes the day filter. Tap **Done** to close. For an MD+1 session, the panel opens straight on every drill, with no filter: only one drill carries that day, T01, rated very high in intensity, while the day after a match calls for active recovery, light rondos and stretching for the players who played.
 2. **Add a free block** is for moments that are not a drill card: warm-up, team talk, free match, set pieces. Give it a **Title** and **Minutes**, then tap **Add**.
 
 A free block has no drill card, so no written intensity. Ndamba treats it as **Low** on MD-1 and MD+1 and **Medium** on other days, so the load stays fair.
@@ -84,7 +84,7 @@ The **Build automatically** button, above the plan, asks Mola to rebuild the ses
 
 Finally, the **Session notes** field holds what concerns the whole session: the pitch, the heat, absences, equipment.
 
-![The builder in full: four blocks R03, T04, F04 and G05 with their minutes and intensity, the Add a drill and Add a free block buttons, the session notes, and on the right the intentions and skills trained, the Print, WhatsApp, Calendar and Options buttons, and the Attendance and observations card.](shot:pro-session-builder-full "A complete MD-2 session, from activation to finishing.")
+![The builder in full: four blocks R03, T04, F04 and G05 with their minutes and intensity, the Add a drill and Add a free block buttons, the session notes, and on the right the intentions and skills trained, the Print, WhatsApp, Calendar and Options buttons, and the Attendance and observations card.](shot:pro-session-builder-full "A complete MD-2 session, from the rondo to finishing.")
 
 ### The session totals
 
@@ -108,7 +108,7 @@ Under the totals, four buttons.
 Further down, the **Attendance and observations** card appears as soon as the session belongs to a team: **Take the register** on the day, and **Observe** to note what you see in a player. Chapter 10 covers both tools.
 
 > [!INVESTOR] Where the free line sits
-> On the free plan, a coach can create five sessions; beyond that, Ndamba offers Coach Pro, which makes sessions unlimited. The library and the books stay free. Today, payments are not connected yet: activating a plan is a demo, and the page says so (chapter 24). The builder is where a coach saves time every week, which makes it the natural home of the paid value.
+> On the **Free** plan, a coach can create five sessions; beyond that, Ndamba offers Coach Pro, which makes sessions unlimited. The same limit applies to **Player Premium**, a plan built for the player rather than the coach. The library and the books stay free. Today, payments are not connected yet: activating a plan is a demo, and the page says so (chapter 24). The builder is where a coach saves time every week, which makes it the natural home of the paid value.
 
 ## One session, one story
 

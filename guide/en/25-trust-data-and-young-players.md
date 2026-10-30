@@ -20,19 +20,19 @@ Ndamba is a "local first" app. Everything you create is saved in the browser of 
 | Matches | The match sheet, line-up, game plan, and the tags recorded live or from video |
 | The journey | Evaluations, observations, attendance, objectives, milestones |
 | Daily form | Sleep, fatigue, soreness, mood, stress, perceived effort, minutes |
-| The player space | Completed challenges and the notebook |
+| The player space | Completed challenges, the notebook, the lessons marked "I've got it" and the "My view" self-assessment |
 | Mola | The conversation and the tasks |
-| Video | The project title, the file name and the tags; never the video itself |
+| Video | The project title, the file name, the tags and the annotated frames; never the video itself |
 
 This choice has practical consequences:
 
 - **You can work on a weak network.** Live tagging says so: "The clock, the tags and the score are saved on the device with every tap, even with no network."
 - **Nobody else sees your data**, neither Ndamba's publisher nor another coach.
-- **Videos never leave the device.** The video studio opens the file where it is: "The video stays on your device: Ndamba only saves your tags and drawings."
+- **Videos never leave the device.** The video studio opens the file where it is: "The video stays on your device: Ndamba only saves your tags and drawings." A drawing is kept together with a small still of the moment.
 - **But data can be lost.** Clearing the browser's data, changing phones or working in a private window makes the space disappear if it was not backed up. Two browsers on the same phone are two separate spaces.
 - **A demo replaces the browser's data.** When the browser already holds your own space, the site warns you before starting it and suggests exporting a backup first.
 
-A few display preferences (the clock of a match in progress, tagging settings, dismissed suggestions) are kept separately, in the browser's simple storage, and are not part of backups. Finally, in the whole of the app's code, only one call can send text you wrote to the outside: the one used by Mola's AI model, described below. The app contains no audience measurement or advertising tool, and its fonts ship with the site.
+Beside that database, the browser keeps a few items in its simple storage. The lessons marked "I've got it" and the "My view" self-assessment are among them, but they travel with backups. The clock of a match in progress, tagging settings, dismissed suggestions and your language choice are kept there too, but are not part of backups. Finally, in the whole of the app's code, only one call can send text you wrote to the outside: the one used by Mola's AI model, described below. The app contains no audience measurement or advertising tool, and its fonts ship with the site.
 
 ## Back up, restore, erase
 
@@ -42,7 +42,7 @@ To export a backup:
 
 1. Open **Settings**, in the **Me** group of the menu.
 2. In the **Your data** panel, on the **Export a backup** line, tap **Export**.
-3. A file named ndamba-YYYY-MM-DD.json is downloaded. It holds everything the app contains in this browser: the profile, teams, players, sessions, matches, analyses, journey, daily form and notes.
+3. A file named ndamba-YYYY-MM-DD.json is downloaded. It holds all your data in this browser: the profile, teams, players, sessions, matches, analyses, video projects, journey, daily form, notes, the notebook, the conversation with Mola, the lessons understood and "My view".
 
 To restore a backup, on the same device or another one:
 
@@ -50,12 +50,12 @@ To restore a backup, on the same device or another one:
 2. The "Restore this backup?" window shows the backup's date and number of items, and warns that all the current data in this browser will be replaced.
 3. Confirm with **Restore**. If the file is not a Ndamba backup, a message says so and nothing is changed.
 
-To start again from scratch, the **Erase everything** line deletes the profile, the teams and everything else from the browser, after a confirmation. It cannot be undone.
+To start again from scratch, the **Erase everything** line deletes the profile, the teams and everything else from the browser, including the lessons understood and "My view", after a confirmation; your language choice is kept. It cannot be undone.
 
 ![The full settings of the pro club demo: the profile, the teams, the Plan panel, then the Your data panel with Export, Restore and Erase everything, and the version and storage details.](shot:pro-settings-full "Settings: this is where you manage your data, and storage reads On this device.")
 
 > [!WARNING] A backup is a readable file
-> The backup file is plain, unencrypted text: anyone who opens it sees the players' names, notes and form. Treat it like a paper squad list: do not drop it into a group chat, and keep it on storage that belongs to you. Make one every week, after every tagged match, and always before opening a demo.
+> The backup file is plain, unencrypted text: anyone who opens it sees the players' names, notes and form, and the annotated video frames. Treat it like a paper squad list: do not drop it into a group chat, and keep it on storage that belongs to you. Make one every week, after every tagged match, and always before opening a demo.
 
 ## No accounts, no cloud, for now
 
@@ -87,7 +87,7 @@ A call-up contains the names of the players selected: you, and only you, decide 
 
 Mola runs first on a rules engine inside the app. An AI model can help it understand freely written messages, if the site's publisher has configured a key on the server. Here is precisely how.
 
-**When.** Each message you write in Mola's chat may be sent, except in these cases, handled entirely on the device: the welcome conversation at /bienvenue; the one-tap suggestions under "Mola noticed", which already know what to do; a plain yes or no; your answer to a detail Mola has just asked for (a date, an opponent), unless it looks like a new request; and any message written while offline. If the server replies that no key is configured, or after two failures, the app stops trying for the rest of the visit.
+**When.** Each message you write in Mola's chat, or tap among the suggested phrases, may be sent, except in these cases, handled entirely on the device: the welcome conversation at /bienvenue; the one-tap suggestions under "Mola noticed", which already know what to do; a plain yes or no; your answer to a detail Mola has just asked for (a date, an opponent), unless it looks like a new request; and any message written while offline. If the server replies that no key is configured, or after two failures, the app stops trying for the rest of the visit.
 
 **What goes out.** A request contains:
 
@@ -108,7 +108,7 @@ Mola runs first on a rules engine inside the app. An AI model can help it unders
 
 A player under 16 gets a home screen designed for their age: today's challenge, their experience points, streak and stage, the lesson of the day from the novel, the next match with a simple reminder ("pack your bag and go to bed early the night before"), their notebook and their journey. The journey follows age rules written into the app: "Under 13: simple markers, never a ranking." and "13 to 16: progress and match markers, no ranking." The performance space only arrives at 16. Health advice sits in the player space: "Drink water" and "One day a week without challenges. [...] If it hurts, stop and tell your coach or your parents."
 
-![BriBri's home screen at 12: the motto, his experience points, his streak, today's Quick feet challenge and his progress, with no ranking anywhere.](shot:youth-player-home-linked "What a 12-year-old sees: a challenge, a lesson, his journey, never a ranking.")
+![BriBri's home screen at 12: the motto, his experience points, his streak, today's Quick feet challenge and his progress, with no ranking anywhere.](shot:youth-player-home-linked "What a 12-year-old sees: a challenge, his progress, his journey, never a ranking.")
 
 There is no advertising in Ndamba, no messaging between users, no public profile and no comments. Mola only talks to the person holding the device and never contacts anyone.
 

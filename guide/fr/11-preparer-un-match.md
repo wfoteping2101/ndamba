@@ -97,10 +97,10 @@ La même carte attend dans Mola, onglet **À valider**, tant que vous n'avez pas
 
 ![L'onglet À valider de Mola, vide : le titre Rien à valider, l'explication que Mola attend ici votre accord avant tout message qui sort de l'application, et le bouton Rédiger une convocation.](shot:pro-mola-approvals "Rien ne part sans vous : les messages préparés par Mola attendent ici.")
 
-Mola rédige toujours le message à partir de la composition enregistrée. Si vous aviez modifié le texte à la main à l'étape **Convocation**, Mola ne reprend pas ces changements : refaites-les avec **Modifier** dans la carte, ou envoyez plutôt depuis la feuille de match.
+Si vous avez modifié le texte à la main à l'étape **Convocation**, Mola reprend votre version, exactement comme la feuille de match. Sinon, il rédige le message à partir de la composition enregistrée. Attention à un détail : un texte modifié à la main ne suit plus la composition. Si vous changez de joueurs ensuite, rouvrez le match avec **Modifier** et touchez **Régénérer le message** à l'étape **Convocation**.
 
 > [!MOLA] Organiser et convoquer en deux phrases
-> Tapez « Organise un match contre les Aigles samedi à 16h au stade de Deïdo ». Mola crée le match avec une composition automatique et un capitaine, puis propose **Oui, prépare la semaine** et **Envoie la convocation**. Pour une autre voie que WhatsApp : « Envoie la convocation par SMS ».
+> Tapez « Organise un match contre les Aigles samedi à 16h au stade de Deïdo ». Mola crée le match avec une composition automatique et un capitaine, puis propose **Oui, prépare la semaine** et **Envoie la convocation**. Si vous jouez déjà ce jour-là, ce qui est le cas dans la démo, il crée quand même le match, car les tournois existent, mais il vous prévient : « Attention : vous jouez déjà contre Rapides de Kribi ce jour-là. Si c'est une erreur, modifiez la date sur la fiche de match. » Pour une autre voie que WhatsApp : « Envoie la convocation par SMS ».
 
 ## Après le match
 

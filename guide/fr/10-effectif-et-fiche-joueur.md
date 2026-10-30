@@ -46,11 +46,11 @@ Pour retirer un joueur, touchez la corbeille de sa ligne, ou **Retirer de l'effe
 
 En haut de la fiche : le numéro, le nom, le poste, la génération (**Génération 2013**, par exemple), le pied fort et la **Moyenne** sur 4, avec les boutons **Modifier** et **Retirer de l'effectif**.
 
-![La fiche du gardien de la démo club pro : la plaque Parcours de la saison avec les boutons Observer et Ouvrir le parcours, le Profil en radar comparé à la moyenne de l'équipe, la Contribution en match et le début des dix compétences.](shot:pro-player-detail "La fiche joueur : le parcours de la saison, le profil et la contribution en match.")
+![La fiche du gardien Hervé Ngando dans la démo club pro : la plaque Parcours, saison 2026-2027, avec les boutons Observer et Ouvrir le parcours, la frise et les chiffres Séances 38/39, Matchs joués 3, Observations 5 et Objectifs 1 en cours ; à droite, le Profil en radar comparé à la moyenne de l'équipe et la Contribution en match ; en bas, le début des dix compétences.](shot:pro-player-detail "La fiche joueur : le parcours de la saison, le profil et la contribution en match.")
 
 La fiche se lit en six blocs.
 
-**Le parcours de la saison.** Une plaque verte résume la saison en cours (séances suivies, matchs joués, observations, objectifs en cours) et mène à **Observer** et **Ouvrir le parcours**.
+**Le parcours de la saison.** Une plaque verte, par exemple « Parcours, saison 2026-2027 », résume la saison en cours sur une petite frise et en quatre chiffres : **Séances** (présences sur appels faits), **Matchs joués** (avec les minutes), **Observations** et **Objectifs**, le nombre d'objectifs **en cours**. Elle mène à **Observer** et **Ouvrir le parcours**.
 
 **Les dix compétences.** C'est la grille du chapitre 25 du Code Njangi. Chaque compétence a sa définition et quatre niveaux : 1 **Découverte**, 2 **Construction**, 3 **Acquis**, 4 **Référence**. Touchez un niveau pour évaluer, touchez-le à nouveau pour l'effacer ; **Voir la grille** déplie la description des quatre niveaux. La règle est écrite sur l'écran : on note ce qu'on a vu en jeu, sur plusieurs séances, pas ce qu'on espère.
 
@@ -83,7 +83,7 @@ Touchez **Ouvrir le parcours**. Une saison va du 1er août au 31 juillet. Le hau
 
 ![Le parcours du gardien de la démo, saison 2026-2027 : les boutons Observer, Évaluer, Objectif et Jalon, la frise à quatre lignes, et les chiffres Séances 38/39, Matchs joués 3, Buts 0, Observations 5, Compétences +4, Objectifs atteints 0/2.](shot:pro-player-journey "Le parcours : une saison entière sur une seule plaque.")
 
-La frise montre la saison sur quatre lignes : **Jalons**, **Matchs** (la taille du point suit les minutes jouées), **Séances** (suivies ou manquées) et **Observations**. Sous la frise, les chiffres de la saison : **Séances** (présences sur appels faits), **Matchs joués** et minutes, **Buts** (affichés à partir de 17 ans, ou dès le premier but), **Observations** et combien sont positives, **Compétences** (niveaux gagnés depuis le début de saison) et **Objectifs atteints**. Une phrase conclut : **Point fort**, puis **Prochaine marche** (ou **Axe de travail** à partir de 17 ans).
+La frise montre la saison sur quatre lignes : **Jalons**, **Matchs** (la taille du point suit les minutes jouées), **Séances** (suivies ou manquées) et **Observations**. Sous la frise, les chiffres de la saison : **Séances** (présences sur appels faits), **Matchs joués** et minutes, **Buts** (affichés à partir de 17 ans, ou dès le premier but), **Observations** et combien sont positives, **Compétences** (niveaux gagnés depuis le début de saison) et **Objectifs atteints**, avec dessous le nombre d'objectifs encore en cours. Une phrase conclut : **Point fort**, puis **Prochaine marche** (ou **Axe de travail** à partir de 17 ans).
 
 Plus bas, la page se déroule ainsi :
 

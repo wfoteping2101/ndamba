@@ -41,7 +41,7 @@ Chaque formule liste ce qu'elle ouvre :
 | Gratuit | Les deux livres en lecture libre, les 64 exercices, une équipe, un match analysé en direct, Mola pour vous guider |
 | Joueur Premium | Les deux livres, le programme personnel, les défis et le parcours, les 40 Leçons du Ballon (pour les 8 à 12 ans), le carnet du Njangi, les vidéos annotées |
 | Coach Pro | Tout Joueur Premium, séances illimitées, planification de la semaine, analyse en direct illimitée, rapports et Indice Njangi, analyse vidéo, Mola qui agit pour vous |
-| Club et académie | Tout Coach Pro, équipes illimitées, comptes du staff, le modèle de jeu du club, exports et impressions |
+| Club et académie | Tout Coach Pro, équipes illimitées, comptes du staff (bientôt), le modèle de jeu du club (bientôt), exports et impressions |
 | Fédération | Tout Club, modèle de jeu national, formation des entraîneurs, accompagnement dédié |
 
 ![La page Premium complète : le bandeau Les paiements ne sont pas encore branchés, les cinq formules côte à côte avec Coach Pro en vert, puis les questions fréquentes.](shot:site-pricing-full "La page Premium du site : cinq formules, des prix en dollars et en FCFA, et un bandeau honnête sur les paiements.")
@@ -56,16 +56,16 @@ Chaque formule liste ce qu'elle ouvre :
 
 **Les fédérations et les ligues.** La formule se fixe sur devis. La page Premium répond ainsi : « Le modèle de jeu national, la formation des entraîneurs et l'accompagnement se construisent ensemble. Le prix se fixe sur devis. » Ce qu'une fédération achète : une mesure commune pour toutes ses sélections, des entraîneurs formés, et des références par âge. C'est l'étape 3 du plan (chapitre 23).
 
-Une précision s'impose pour un investisseur. Certaines lignes décrivent ce que la formule doit apporter, plus que ce que l'application fait aujourd'hui. Les **comptes du staff** supposent des comptes d'utilisateurs, qui sont prévus mais n'existent pas encore. Le **modèle de jeu du club** et le **modèle de jeu national** sont aujourd'hui celui du *Code Njangi*, qui structure les exercices, les séances et l'Indice ; l'adapter à un club ou à une nation est un travail d'accompagnement, pas un écran. La **formation des entraîneurs** et l'**accompagnement dédié** sont des services rendus par des personnes.
+Une précision s'impose pour un investisseur. Certaines lignes décrivent ce que la formule doit apporter, plus que ce que l'application fait aujourd'hui, et la page le signale pour deux d'entre elles par la mention « bientôt ». Les « Comptes du staff (bientôt) » supposent des comptes d'utilisateurs, qui sont prévus mais n'existent pas encore. « Le modèle de jeu du club (bientôt) » et le « Modèle de jeu national » sont aujourd'hui celui du *Code Njangi*, qui structure les exercices, les séances et l'Indice ; l'adapter à un club ou à une nation est un travail d'accompagnement, pas un écran. La formation des entraîneurs et l'accompagnement dédié sont des services rendus par des personnes.
 
 ## La formule gratuite et ses deux limites
 
-Dans le code d'aujourd'hui, la formule **Gratuit** a exactement deux limites :
+Dans le code d'aujourd'hui, la formule **Gratuit** a exactement deux limites, et elles valent partout dans l'application. Elles s'appliquent aussi à **Joueur Premium** : cette formule ouvre l'espace du joueur, pas les outils de l'entraîneur.
 
-1. **Cinq séances.** Au-delà, le constructeur de séances affiche « Vos 5 séances gratuites sont utilisées », avec le bouton **Découvrir Coach Pro**. Mola applique la même règle quand on lui demande une séance ou la semaine : « Votre plan gratuit compte déjà 5 séances. Pour que je continue à en préparer, passez à Coach Pro. Les livres et les 64 exercices restent ouverts à tous. »
-2. **Un match analysé en direct.** Une fois un match codé, la fiche du match suivant affiche « Analyse en direct illimitée avec Coach Pro » et le bouton **Voir les offres**. Un match qui a déjà des tags n'est jamais bloqué : vous pouvez toujours le relire et le corriger.
+1. **Cinq séances.** Au-delà, la page **Séances** et la fenêtre **Nouvelle séance** affichent « Vos 5 séances gratuites sont utilisées », avec le bouton **Découvrir Coach Pro** ; la page **Semaine** montre le même encadré et son bouton **Planifier la semaine** reste grisé. Les boutons **Préparer la semaine** de l'accueil et **Planifier la semaine avec ces objectifs** du rapport de match ouvrent alors la page **Premium**. Mola applique la même règle quand on lui demande une séance ou la semaine : « Votre plan gratuit compte déjà 5 séances. Pour que je continue à en préparer, passez à Coach Pro. Les livres et les 64 exercices restent ouverts à tous. »
+2. **Un match analysé en direct.** Une fois un match codé, les autres ne peuvent plus l'être. La fiche de match affiche « Analyse en direct illimitée avec Coach Pro » et le lien **Voir les offres**, la page **Analyse** remplace le bouton du direct par **Voir les offres**, et la page du direct elle-même affiche ce message si on l'ouvre par son adresse. Un match qui a déjà des tags n'est jamais bloqué : vous pouvez toujours le relire et le corriger.
 
-Le reste n'est pas limité aujourd'hui, même quand la page Premium le range dans une formule payante : le nombre d'équipes, les rapports, la vidéo, les leçons ou le carnet. La page décrit l'offre prévue ; le code n'applique pour l'instant que ces deux seuils. Ils devront être alignés sur la page quand les paiements arriveront.
+Le reste n'est pas limité aujourd'hui, même quand la page Premium le range dans une formule payante : le nombre d'équipes (la formule gratuite annonce « Une équipe »), les rapports, la vidéo, les leçons ou le carnet. La page décrit l'offre prévue ; le code n'applique pour l'instant que ces deux seuils. Ils devront être alignés sur la page quand les paiements arriveront.
 
 ## L'état réel : les paiements ne sont pas branchés
 
@@ -92,8 +92,8 @@ Techniquement, ce bouton écrit le nom de la formule dans le profil enregistré 
 
 Le choix d'une application « locale d'abord », où les données restent sur l'appareil, rend le fonctionnement actuel très léger. Les postes sont les suivants, décrits sans montant car ils dépendent de l'usage :
 
-- **L'hébergement.** La plateforme est un site statique hébergé chez Vercel : l'application, les deux livres avec leurs illustrations et le jeu *Lionceaux Football* (environ 25 Mo au premier lancement, selon sa page). Il n'y a pas de serveur de base de données. Le coût suit surtout le trafic.
-- **Le modèle d'IA de Mola, optionnel.** C'est la seule fonction serveur, à l'adresse /api/mola. Quand la clé est configurée, chaque message tapé à Mola part vers l'API d'Anthropic (le modèle par défaut est claude-haiku-5-5) : le message, coupé à 600 caractères, un texte d'instructions et un court contexte, pour une réponse plafonnée à 400 jetons. Le coût suit le nombre de messages. Sans clé, la fonction répond qu'elle n'est pas configurée, le moteur de règles répond seul, et ce poste vaut zéro.
+- **L'hébergement.** La plateforme est un site statique : l'application, les deux livres avec leurs illustrations et le jeu *Lionceaux Football* (environ 25 Mo au premier lancement, selon sa page). Il n'y a pas de serveur de base de données. Le coût suit surtout le trafic.
+- **Le modèle d'IA de Mola, optionnel.** C'est la seule fonction serveur, à l'adresse /api/mola. Quand la clé est configurée, la plupart des messages tapés à Mola partent vers l'API d'Anthropic (le modèle par défaut est claude-haiku-5-5) : le message, coupé à 600 caractères, un texte d'instructions et un court contexte, pour une réponse plafonnée à 400 jetons. Le chapitre 25 détaille les exceptions. Le coût suit le nombre de messages. Sans clé, la fonction répond qu'elle n'est pas configurée, le moteur de règles répond seul, et ce poste vaut zéro.
 - **Les coûts à venir.** Les comptes et la synchronisation (serveurs, stockage, sécurité), les frais des moyens de paiement, le support, la formation des entraîneurs, et l'écriture et l'illustration des tomes 2 à 6 de la saga.
 
 La légèreté actuelle a une contrepartie : la sauvegarde repose sur l'utilisateur (chapitre 25).

@@ -46,11 +46,11 @@ To remove a player, tap the bin on their row, or **Remove from squad** in their 
 
 At the top of the file: the number, the name, the position, the year (**Born 2013**, for example), the stronger foot and the **Average** out of 4, with the **Edit** and **Remove from squad** buttons.
 
-![The file of the pro club demo's goalkeeper: the season's Journey plate with the Observe and Open the journey buttons, the Profile radar compared with the team average, the Match contribution and the start of the ten skills.](shot:pro-player-detail "The player file: the season's journey, the profile and the match contribution.")
+![The file of goalkeeper Hervé Ngando in the pro club demo: the Journey, season 2026-2027 plate with the Observe and Open the journey buttons, the timeline and the numbers Sessions 38/39, Matches played 3, Observations 5 and Objectives 1 in progress; on the right, the Profile radar compared with the team average and the Match contribution; at the bottom, the start of the ten skills.](shot:pro-player-detail "The player file: the season's journey, the profile and the match contribution.")
 
 The file reads in six blocks.
 
-**The season's journey.** A green plate sums up the current season (sessions attended, matches played, observations, objectives in progress) and leads to **Observe** and **Open the journey**.
+**The season's journey.** A green plate, for example "Journey, season 2026-2027", sums up the current season on a small timeline and in four numbers: **Sessions** (attendance out of registers taken), **Matches played** (with the minutes), **Observations** and **Objectives**, the number of objectives **in progress**. It leads to **Observe** and **Open the journey**.
 
 **The ten skills.** This is the grid from chapter 25 of The Njangi Code. Each skill has its definition and four levels: 1 **Discovering**, 2 **Building**, 3 **Secure**, 4 **Benchmark**. Tap a level to rate, tap it again to clear it; **Show the grid** unfolds the description of all four levels. The rule is written on the screen: rate what you saw in game situations over several sessions, not what you hope for.
 
@@ -81,9 +81,9 @@ Every level you change on the file is also saved as today's evaluation in the jo
 
 Tap **Open the journey**. A season runs from 1 August to 31 July. The top of the page shows the player (position, age, team) and four actions: **Observe**, **Evaluate**, **Objective** and **Milestone**. Buttons choose the season, or **All seasons**. A line reminds you what the page shows at each age: under 13, simple markers and never a ranking; 13 to 16, progress and match markers; 17 and over, detailed performance.
 
-![The journey of the demo's goalkeeper, season 2026-2027: the Observe, Evaluate, Objective and Milestone buttons, the four-lane timeline, and the numbers Sessions 38/39, Matches played 3, Goals 0, Observations 5, Competences +4, Objectives achieved 0/2.](shot:pro-player-journey "The journey: a whole season on a single plate.")
+![The journey of the demo's goalkeeper, season 2026-2027: the Observe, Evaluate, Objective and Milestone buttons, the four-lane timeline, and the numbers Sessions 38/39, Matches played 3, Goals 0, Observations 5, Skills +4, Objectives achieved 0/2.](shot:pro-player-journey "The journey: a whole season on a single plate.")
 
-The timeline shows the season in four lanes: **Milestones**, **Matches** (the dot grows with the minutes played), **Sessions** (attended or missed) and **Observations**. Below it come the season's numbers: **Sessions** (attendance out of registers taken), **Matches played** and minutes, **Goals** (shown from 17 years old, or from the first goal), **Observations** and how many are strengths, **Competences** (levels gained since the start of the season) and **Objectives achieved**. A sentence closes the plate: **Strength**, then **Next step** (or **Area to work on** from 17 years old).
+The timeline shows the season in four lanes: **Milestones**, **Matches** (the dot grows with the minutes played), **Sessions** (attended or missed) and **Observations**. Below it come the season's numbers: **Sessions** (attendance out of registers taken), **Matches played** and minutes, **Goals** (shown from 17 years old, or from the first goal), **Observations** and how many are strengths, **Skills** (levels gained since the start of the season) and **Objectives achieved**, with the number still in progress underneath. A sentence closes the plate: **Strength**, then **Next step** (or **Area to work on** from 17 years old).
 
 Further down, the page unfolds like this:
 
@@ -104,13 +104,13 @@ Attendance comes from **Take the register** (in the session or in **Observe**), 
 
 A fair evaluation rests on several observations, made in game situations, over several sessions. The **Observe** screen collects them quickly, during a session or a match. You can open it from the squad plate, the player file, the journey, the **Attendance and observations** card of a session, the match sheet or the live tagger.
 
-![The Observe screen during a demo session: the During selector and the Take the register button, the grid of players, the Strength and To work on buttons, the ten competences and the strengths at a glance, and the Save bar at the bottom.](shot:pro-observe "Observe: pick the players, tap what you see, save.")
+![The Observe screen during a demo session: the During selector and the Take the register button, the grid of players, the Strength and To work on buttons, the ten skills and the strengths at a glance, and the Save bar at the bottom.](shot:pro-observe "Observe: pick the players, tap what you see, save.")
 
 At the top right, the **During** selector sets the context: **Outside a session (today)**, a recent session or a recent match. Ndamba picks the live match or today's match on its own, otherwise today's session. During a session, **Take the register** then sorts the players into **Present**, **Not marked yet** and **Absent**. During a match, they are sorted into **Starting eleven**, **Substitutes** and **Other players**, and a **Minute** field appears.
 
 1. Tap one or several players. **All** picks a whole group, **Clear** empties the selection.
 2. Choose the tone: **Strength** or **To work on**.
-3. Tap the skills involved under **Competences**. Each one takes the chosen tone; tap it again to remove it.
+3. Tap the skills involved under **Skills**. Each one takes the chosen tone; tap it again to remove it.
 4. Tap the quick markers, which change with the tone: **Strengths at a glance** or **Things to work on**.
 5. If you like, give a **Rating of the moment (optional)** from 1 to 5 (it stays in the journey, never in a ranking) and write a one-sentence **Note**, or tap **Dictate** if your browser supports it.
 6. Tap **Save** (or **Save for 3 players**, for example). A message confirms, with **Undo** in case of a mistake.

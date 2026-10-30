@@ -35,19 +35,19 @@ No. Étoile de la Côte, Daniel Mbarga, the Lionceaux de Bonamoussadi and every 
 No. Ndamba runs in the browser, with no account and no password. You set up your space by talking with Mola, or you open a demo (chapter 5).
 
 **Where is my data?**
-On your device, in your browser. It goes nowhere. To keep it or move it to another device, export a backup from **Settings**, then restore it elsewhere (chapters 6 and 25).
+On your device, in your browser. Nothing goes anywhere else, except the text you write to Mola when its AI model is active. To keep it or move it to another device, export a backup from **Settings**, then restore it elsewhere (chapters 6 and 25).
 
 **Can I work on two devices at the same time?**
 Not yet. Sync between devices will come with accounts (chapter 26). Until then, tag each match on one device only, and carry the backup from one device to the other. A restore replaces everything the browser holds.
 
 **Does Ndamba work without a network?**
-Once the app has loaded, mostly yes. Live tagging saves the clock, the tags and the score on the device at every tap, even with no network, and Mola understands your sentences with rules that run on the device (chapters 12 and 18).
+Partly. You need a network to open the site and to load each screen the first time: there is no installable offline mode yet. After that, since the data is on the device, an open screen keeps working if the network drops. Live tagging saves the clock, the tags and the score at every tap, even with no network, and Mola understands your sentences with rules that run on the device (chapters 12 and 18).
 
 **How do I start again from scratch?**
 In **Settings**, **Erase everything** deletes the profile, the teams and everything else from this browser. Export a backup first if you want to keep your work (chapter 6).
 
 **In which languages?**
-The app is in French and English: the FR and EN button switches the whole interface. The books are read in French. Other languages will come with the federations (chapters 4 and 26).
+The app is in French and English: the FR and EN button switches the whole interface. The books are read in French. More languages are planned, at the pace of the federations that join the model (chapters 4 and 26).
 
 ## The plans
 
@@ -55,10 +55,10 @@ The app is in French and English: the FR and EN button switches the whole interf
 **Free**: 0. **Player Premium**: US$4.99 a month. **Coach Pro**: US$12.99 a month. **Club and academy**: US$49 a month. **Federation**: on quote. Payments are not connected yet: activating a plan is, for now, a demo (chapter 24).
 
 **What does the free plan include?**
-The two books to read freely, the 64 drills of the method, Mola to guide you, five sessions and one match analysed live. Beyond that, the app suggests **Coach Pro** (chapter 24).
+The two books to read freely, the 64 drills of the method, Mola to guide you, five sessions and one match analysed live. Beyond that, the app suggests **Coach Pro**. Both limits also apply to **Player Premium**, which opens the player's space, not the coach's tools (chapter 24).
 
 **Are some plan lines ahead of the app?**
-Yes, and they are marked. Staff accounts and the club game model carry the words "coming soon": they need accounts, which are on the roadmap (chapters 24 and 26).
+Yes. Two lines of **Club and academy** carry the words "coming soon": staff accounts, which need user accounts, on the roadmap, and the club game model, which today is built through support work. Under **Federation**, coach education and support are services delivered by people (chapters 24 and 26).
 
 ## Mola
 
@@ -85,10 +85,10 @@ No. The video studio computes its own Index from the tags placed on the video, a
 ## Young players and families
 
 **Are children's data protected?**
-They stay on the coach's or the family's device, with no account and nothing sent. With young players, the Index measures the team, never a child. The principles to follow on the day accounts arrive (parents' consent, everyone sees only what concerns them) are set out in chapter 25.
+They stay on the coach's or the family's device, with no account and nothing sent. With young players, the Index measures the team, never a child, and the report asks the staff to keep the player contributions table to themselves. The principles to follow on the day accounts arrive (parents' consent, everyone sees only what concerns them) are set out in chapter 25.
 
 **From what age?**
 The *Lionceaux* novel is for ages 8 to 12. In the app, the player space changes at 16: before, today's challenge, the lesson of the day, progress and the notebook; from 16, a performance space with the match week, form and load (chapters 15 and 20).
 
 **How does a parent follow their child?**
-With the **For parents** box on the home screen, the novel read together, and, if the coach shares a backup, the child's journey. Sharing a single record will come with accounts (chapter 17).
+With the **For parents** box on the home screen, today's challenges and the novel read together. The journey written by the coach stays on the team's device for now: a backup would hold the whole squad, not just the child. Sharing a single record will come with accounts (chapters 17 and 25).

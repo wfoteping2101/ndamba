@@ -41,7 +41,7 @@ Each plan lists what it unlocks:
 | Free | Both books free to read, the 64 drills, one team, one match analysed live, Mola to guide you |
 | Player Premium | Both books, the personal programme, challenges and journey, the 40 Ball Lessons (ages 8 to 12), the Njangi notebook, annotated videos |
 | Coach Pro | Everything in Player Premium, unlimited sessions, week planning, unlimited live analysis, reports and the Njangi Index, video analysis, Mola acting for you |
-| Club and academy | Everything in Coach Pro, unlimited teams, staff accounts, your club game model, exports and printing |
+| Club and academy | Everything in Coach Pro, unlimited teams, staff accounts (coming soon), your club game model (coming soon), exports and printing |
 | Federation | Everything in Club, national game model, coach education, dedicated support |
 
 ![The full Premium page: the Payments are not connected yet banner, the five plans side by side with Coach Pro in green, then the questions.](shot:site-pricing-full "The site's Premium page: five plans, prices in dollars and FCFA, and an honest banner about payments.")
@@ -56,16 +56,16 @@ Each plan lists what it unlocks:
 
 **Federations and leagues.** This plan is priced on quote. The Premium page puts it this way: "The national game model, coach education and support are built together with you. The price is set on quote." What a federation buys: one measure across all its national teams, trained coaches and age references. This is stage 3 of the plan (chapter 23).
 
-One point needs to be clear for an investor. Some lines describe what the plan must deliver rather than what the app does today. **Staff accounts** require user accounts, which are planned but do not exist yet. The **club game model** and the **national game model** are today the model of *The Njangi Code*, which shapes the drills, the sessions and the Index; adapting it to a club or a nation is support work, not a screen. **Coach education** and **dedicated support** are services delivered by people.
+One point needs to be clear for an investor. Some lines describe what the plan must deliver rather than what the app does today, and the page flags two of them with the words "coming soon". "Staff accounts (coming soon)" require user accounts, which are planned but do not exist yet. "Your club game model (coming soon)" and the "National game model" are today the model of *The Njangi Code*, which shapes the drills, the sessions and the Index; adapting it to a club or a nation is support work, not a screen. Coach education and dedicated support are services delivered by people.
 
 ## The free plan and its two limits
 
-In today's code, the **Free** plan has exactly two limits:
+In today's code, the **Free** plan has exactly two limits, and they hold everywhere in the app. They also apply to **Player Premium**: that plan opens the player's space, not the coach's tools.
 
-1. **Five sessions.** Beyond that, the session builder shows "Your 5 free sessions are used", with a **Discover Coach Pro** button. Mola applies the same rule when you ask it for a session or for the week: "Your free plan already has 5 sessions. For me to keep building them, move to Coach Pro. The books and the 64 drills stay open to everyone."
-2. **One match analysed live.** Once one match has been tagged, the sheet of the next match shows "Unlimited live analysis with Coach Pro" and a **See plans** button. A match that already has tags is never locked: you can always review and fix it.
+1. **Five sessions.** Beyond that, the **Sessions** page and the **New session** window show "Your 5 free sessions are used", with a **Discover Coach Pro** button; the **Week** page shows the same box and its **Plan the week** button stays greyed out. The **Prepare the week** button on the home screen and **Plan the week with these objectives** in the match report then open the **Premium** page. Mola applies the same rule when you ask it for a session or for the week: "Your free plan already has 5 sessions. For me to keep building them, move to Coach Pro. The books and the 64 drills stay open to everyone."
+2. **One match analysed live.** Once one match has been tagged, no other can be. The match sheet shows "Unlimited live analysis with Coach Pro" and a **See plans** link, the **Analysis** page replaces the live button with **See the plans**, and the live page itself shows the same message if you open it from its address. A match that already has tags is never locked: you can always review and fix it.
 
-Everything else is unlimited today, even when the Premium page places it in a paid plan: the number of teams, reports, video, the lessons or the notebook. The page describes the planned offer; for now the code enforces only those two thresholds. They will need to be aligned with the page when payments arrive.
+Everything else is unlimited today, even when the Premium page places it in a paid plan: the number of teams (the free plan lists "One team"), reports, video, the lessons or the notebook. The page describes the planned offer; for now the code enforces only those two thresholds. They will need to be aligned with the page when payments arrive.
 
 ## The real state: payments are not connected
 
@@ -92,8 +92,8 @@ Technically, this button writes the plan's name into the profile saved on the de
 
 The choice of a "local first" app, where data stays on the device, keeps today's running costs very light. Here are the cost lines, described without amounts because they depend on usage:
 
-- **Hosting.** The platform is a static site hosted on Vercel: the app, both books with their illustrations and the *Lionceaux Football* game (about 25 MB on first launch, according to its page). There is no database server. Cost mainly follows traffic.
-- **Mola's optional AI model.** This is the only server function, at /api/mola. When the key is configured, each message typed to Mola goes to the Anthropic API (the default model is claude-haiku-5-5): the message, cut to 600 characters, a set of instructions and a short context, for a reply capped at 400 tokens. Cost follows the number of messages. Without a key, the function replies that it is not configured, the rules engine answers on its own, and this line costs nothing.
+- **Hosting.** The platform is a static site: the app, both books with their illustrations and the *Lionceaux Football* game (about 25 MB on first launch, according to its page). There is no database server. Cost mainly follows traffic.
+- **Mola's optional AI model.** This is the only server function, at /api/mola. When the key is configured, most messages typed to Mola go to the Anthropic API (the default model is claude-haiku-5-5): the message, cut to 600 characters, a set of instructions and a short context, for a reply capped at 400 tokens. Chapter 25 lists the exceptions. Cost follows the number of messages. Without a key, the function replies that it is not configured, the rules engine answers on its own, and this line costs nothing.
 - **Costs to come.** Accounts and sync (servers, storage, security), payment provider fees, support, coach education, and the writing and illustration of books 2 to 6 of the saga.
 
 Today's lightness has a counterpart: backups are the user's job (chapter 25).

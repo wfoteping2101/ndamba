@@ -28,7 +28,7 @@ Chaque fiche porte aussi cinq repères, toujours les mêmes, qui servent ensuite
 - **Les intentions.** Ce sont les sept mots de la méthode (chapitre 2) : les cinq intentions de la possession, **Sortir**, **Progresser**, **Fixer**, **Finir** et **Respirer**, et les deux réflexes sans ballon, **Reprendre** et **Regarder devant**. Une fiche en travaille une, deux ou trois, rarement plus.
 - **L'âge minimum.** « U12+ » veut dire : à partir des moins de 12 ans. Les fiches vont de U9+ à U15+. Une fiche reste utile aux âges supérieurs, avec des règles plus exigeantes.
 - **Les jours de la semaine.** MD-4, MD-3, MD-2, MD-1, MD+1 ou **Jeunes**, les jours où l'exercice trouve naturellement sa place par rapport au match (le chapitre 9 explique ces codes).
-- **L'intensité.** **Basse**, **Moyenne**, **Haute** ou **Très haute**, affichée par quatre petites barres et toujours accompagnée du mot. La méthode est exigeante : 37 fiches sont hautes, 22 moyennes, 3 basses (des fiches de technique) et 2 très hautes (deux fiches de transition).
+- **L'intensité.** **Basse**, **Moyenne**, **Haute** ou **Très haute**, affichée par quatre petites barres, et écrite en toutes lettres sur la fiche. La méthode est exigeante : 37 fiches sont hautes, 22 moyennes, 3 basses (des fiches de technique) et 2 très hautes (deux fiches de transition).
 - **La durée.** Les séries et les pauses, par exemple « 4 x 4 min, 1 min de récupération », et le total en minutes, de 14 à 38 minutes selon les fiches.
 
 ## Ouvrir la bibliothèque
@@ -88,15 +88,15 @@ En bas de la fiche, deux cartes mènent à la fiche précédente et à la suivan
 
 Sous le schéma, le bouton **Lire dans le livre** ouvre la même fiche dans *Le Code Njangi*, à sa page. Le livre donne le contexte que l'écran n'a pas la place de donner : le chapitre qui explique l'intention, les erreurs fréquentes, la place de l'exercice dans la semaine. Le livre est écrit en français, comme le roman.
 
-Le lien fonctionne dans les deux sens : chaque fiche citée dans le livre par son code, comme R08, se retrouve dans la bibliothèque, et la fin du livre renvoie vers **Les 64 exercices dans l'application**. L'entraîneur prépare chez lui avec le livre, et retrouve la même fiche dans sa poche le lendemain.
+Le lien fonctionne dans les deux sens : chaque fiche citée dans le livre par son code, comme R08, se retrouve dans la bibliothèque, et le sommaire du livre se termine par le lien **Les 64 exercices dans l'application**. L'entraîneur prépare chez lui avec le livre, et retrouve la même fiche dans sa poche le lendemain.
 
 ## Ajouter un exercice à une séance
 
 Une fiche n'a de valeur que si elle arrive sur le terrain. Le bouton **Ajouter à une séance** fait ce chemin en deux gestes.
 
 1. Sur la fiche, touchez **Ajouter à une séance**. Une fenêtre s'ouvre avec le titre de l'exercice.
-2. Pour une nouvelle séance, touchez **Nouvelle séance avec cet exercice**. Le jour MD et l'intention sont préremplis : le jour est le premier jour de match de la fiche (par exemple MD-4 pour R08), l'intention est sa première intention. Vérifiez la date et l'équipe, puis touchez **Créer la séance**.
-3. Pour une séance déjà prévue, choisissez-la sous **Ou dans une séance à venir**. La liste montre les douze prochaines séances de l'équipe, avec leur jour MD, leur nombre de blocs et leurs minutes. La mention **Bon jour** signale une séance dont le jour correspond à ceux de la fiche ; **Déjà dedans** signale une séance qui contient déjà l'exercice.
+2. Pour une nouvelle séance, touchez **Nouvelle séance avec cet exercice**. Le jour MD et l'intention sont préremplis : le jour est le premier jour d'avant-match de la fiche (par exemple MD-4 pour R08), l'intention est sa première intention. Vérifiez la date et l'équipe, puis touchez **Créer la séance**.
+3. Pour une séance déjà prévue, choisissez-la sous **Ou dans une séance à venir**. La liste montre les douze prochaines séances de l'équipe, avec leur jour MD, leur nombre de blocs et leurs minutes. La mention **Bon jour** signale une séance dont le jour correspond à ceux de la fiche ; **Déjà dedans** signale une séance qui contient déjà l'exercice : elle ne réagit plus au toucher, ce qui évite d'ajouter deux fois le même bloc.
 4. Un message confirme l'ajout, avec le lien **Ouvrir** pour aller à la séance.
 
 L'exercice entre dans la séance comme un nouveau bloc, à la fin, avec sa durée totale. Le chapitre 8 montre comment le déplacer, changer ses minutes ou lui ajouter une note.

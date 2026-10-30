@@ -26,7 +26,7 @@ Tout ce qui figure dans ce tableau fonctionne et peut être ouvert dans la versi
 | Les écrans | 27 adresses dans l'application (26 écrans), 5 pages publiques et la page d'accueil de Mola | Le menu |
 | Les démos | 2 : club pro (Étoile de la Côte, 22 joueurs) et académie U13 (Lionceaux de Bonamoussadi, 15 joueurs) | Page d'accueil du site |
 | Mola | 11 actions, dont 2 qui attendent votre accord (la convocation et le calendrier) | **Mola** |
-| Le codage en direct | 15 codes d'événement, des passes aux buts | **Analyse** |
+| Le codage en direct | 14 codes d'événement, des passes aux buts, sur 16 boutons (19 si l'on code aussi l'adversaire) | **Analyse** |
 | L'Indice Njangi | Un indice sur 100, 5 sous-indices sur 20, 5 niveaux de lecture | Le rapport de match |
 | Les systèmes de jeu | 14 systèmes de départ pour 5 formats, de 5 contre 5 à 11 contre 11 | Les équipes et les matchs |
 | Les données | 17 tables enregistrées sur l'appareil, avec export et restauration | **Réglages** |
@@ -35,7 +35,7 @@ S'y ajoutent deux pages qui servent la présentation du projet : **Revue du proj
 
 Ce que cet inventaire veut dire, pour un investisseur, tient en un mot : cohérence. Les pièces ne sont pas posées côte à côte, elles sont reliées. Les 64 exercices viennent du livre et nourrissent les séances. Le rapport de match calcule l'Indice avec les formules du livre et conseille des exercices pour les sous-indices les plus faibles. Mola utilise les mêmes fonctions que les écrans. Les leçons du roman alimentent l'espace des plus jeunes, et le jeu reprend les clubs du roman. Le tout parle un seul vocabulaire, les sept intentions, en deux langues. Refaire cela demanderait d'écrire une méthode, pas seulement du code.
 
-![L'accueil du staff dans la démo club pro : la séance du jour Vitesse, transitions et finition en MD-2, le prochain match contre les Rapides de Kribi et le bouton Préparer la semaine.](shot:pro-manager-home "Le même accueil sert l'entraîneur, l'analyste, le manager et la fédération.")
+![L'accueil de Daniel Mbarga avec le rôle de manager (Dirigeant sous son nom) dans la démo club pro : la séance du jour « Vitesse : transitions et finition » en MD-2, le prochain match contre les Rapides de Kribi et le bouton Préparer la semaine.](shot:pro-manager-home "Le même accueil sert l'entraîneur, l'analyste, le manager et la fédération.")
 
 Deux limites de l'existant méritent d'être dites ici, parce qu'elles commandent la suite. Les données restent sur chaque appareil, sans comptes ni synchronisation (chapitre 25). Et les paiements ne sont pas branchés : activer une formule est une démonstration (chapitre 24). Le rôle **Fédération ou ligue**, enfin, ouvre aujourd'hui le même accueil que celui d'un entraîneur.
 
@@ -122,7 +122,7 @@ Le point de contact est l'auteur du projet, William Foteping, pour Lemon Network
 Tout ce qui précède peut se vérifier sur un ordinateur ou un téléphone, sans compte :
 
 1. Sur la page d'accueil du site, appuyez sur **Démo club pro**. Si ce navigateur contient déjà votre propre espace, la fenêtre « Lancer la démo ? » prévient que la démo remplace ses données : exportez d'abord une sauvegarde, puis appuyez sur **Lancer la démo**.
-2. Sur l'**Accueil**, regardez la séance du jour et le prochain match, puis appuyez sur **Préparer la semaine**.
+2. Sur l'**Accueil**, regardez la séance du jour et le prochain match, puis appuyez sur **Préparer la semaine**. Dans la démo, chaque jour avant le match a déjà sa séance : un message le dit et propose **Voir la semaine**.
 3. Ouvrez **Analyse**, puis le rapport du match gagné 2-1 contre le Météore de Bafoussam : un Indice Njangi de 67,9.
 4. Ouvrez **Mola** et écrivez une demande (voir l'encadré ci-dessous) ; regardez les étapes se cocher une à une.
 5. Ouvrez **Premium**, appuyez sur **Activer (démo)** et lisez le message : « Aucun paiement n'a été effectué. »
@@ -130,7 +130,7 @@ Tout ce qui précède peut se vérifier sur un ordinateur ou un téléphone, san
 7. Ouvrez **Jeu de foot** et jouez un match.
 
 > [!MOLA] Une demande pour tester l'agent
-> Dans la démo club pro, écrivez : « Analyse mon dernier match ». Mola retrouve le match, compte les tags, calcule l'Indice Njangi, résume ce qui a marché et ce qu'il faut corriger, et propose trois exercices.
+> Dans la démo club pro, écrivez : « Analyse mon dernier match ». Mola retrouve le match gagné 2-1 contre le Météore de Bafoussam, compte les tags, calcule l'Indice Njangi (67,9), résume ce qui a marché et ce qu'il faut corriger, et propose des exercices pour le point faible.
 
 ![La page du jeu Lionceaux Football : le titre sur un terrain de quartier en terre rouge, le texte de présentation et les boutons Jouer et Comment jouer.](shot:football-page "Le jeu Lionceaux Football fait partie de ce qui existe aujourd'hui.")
 

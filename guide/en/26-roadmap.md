@@ -26,7 +26,7 @@ Everything in this table works and can be opened in the current version (Ndamba 
 | Screens | 27 addresses in the app (26 screens), 5 public pages and Mola's welcome page | The menu |
 | Demos | 2: pro club (Étoile de la Côte, 22 players) and U13 academy (Lionceaux de Bonamoussadi, 15 players) | The site's home page |
 | Mola | 11 actions, 2 of which wait for your approval (the call-up and the calendar) | **Mola** |
-| Live tagging | 15 event codes, from passes to goals | **Analysis** |
+| Live tagging | 14 event codes, from passes to goals, on 16 buttons (19 when you tag the opponent too) | **Analysis** |
 | The Njangi Index | One index out of 100, 5 sub-indices out of 20, 5 reading bands | The match report |
 | Formations | 14 starting systems for 5 formats, from 5-a-side to 11-a-side | Teams and matches |
 | Data | 17 tables saved on the device, with export and restore | **Settings** |
@@ -35,7 +35,7 @@ Two pages complete the presentation of the project: **Project review**, which sh
 
 What this inventory means for an investor fits in one word: coherence. The pieces are not just placed side by side, they are connected. The 64 drills come from the book and feed the sessions. The match report computes the Index with the book's formulas and recommends drills for the weakest sub-indices. Mola uses the same functions as the screens. The novel's lessons feed the youngest players' space, and the game uses the novel's clubs. The whole thing speaks one vocabulary, the seven intentions, in two languages. Rebuilding it would mean writing a method, not just code.
 
-![The staff home screen in the pro club demo: today's MD-2 session on speed, transitions and finishing, the next match against the Rapides de Kribi and the Prepare the week button.](shot:pro-manager-home "The same home screen serves the coach, the analyst, the manager and the federation.")
+![Daniel Mbarga's home screen with the manager role (Club manager under his name) in the pro club demo: today's MD-2 session "Speed: transitions and finishing", the next match against the Rapides de Kribi and the Prepare the week button.](shot:pro-manager-home "The same home screen serves the coach, the analyst, the manager and the federation.")
 
 Two limits of what exists need to be stated here, because they drive what comes next. Data stays on each device, with no accounts and no sync (chapter 25). And payments are not connected: activating a plan is a demonstration (chapter 24). Finally, the **Federation or league** role currently opens the same home screen as a coach.
 
@@ -122,7 +122,7 @@ The point of contact is the project's author, William Foteping, for Lemon Networ
 All of the above can be checked on a computer or a phone, without an account:
 
 1. On the site's home page, tap **Pro club demo**. If this browser already holds your own space, the "Start the demo?" window warns you that the demo replaces its data: export a backup first, then tap **Start the demo**.
-2. On **Home**, look at today's session and the next match, then tap **Prepare the week**.
+2. On **Home**, look at today's session and the next match, then tap **Prepare the week**. In the demo, every day before the match already has its session: a message says so and offers **See the week**.
 3. Open **Analysis**, then the report of the 2-1 win over Météore de Bafoussam: a Njangi Index of 67.9.
 4. Open **Mola** and type a request (see the box below); watch the steps tick off one by one.
 5. Open **Premium**, tap **Activate (demo)** and read the message: "No payment was taken."
@@ -130,7 +130,7 @@ All of the above can be checked on a computer or a phone, without an account:
 7. Open **Football game** and play a match.
 
 > [!MOLA] A request to test the agent
-> In the pro club demo, type: "Analyse my last match". Mola finds the match, counts the tags, computes the Njangi Index, sums up what worked and what to fix, and suggests three drills.
+> In the pro club demo, type: "Analyse my last match". Mola finds the 2-1 win over Météore de Bafoussam, counts the tags, computes the Njangi Index (67.9), sums up what worked and what to fix, and suggests drills for the weak point.
 
 ![The Lionceaux Football game page: the title over a red-earth neighbourhood pitch, the introduction and the Play and How to play buttons.](shot:football-page "The Lionceaux Football game is part of what exists today.")
 
