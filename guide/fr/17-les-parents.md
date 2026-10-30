@@ -12,9 +12,9 @@ Avant l'entraîneur, il y a les parents. Ce sont eux qui lavent le maillot, qui 
 
 Un parent choisit le rôle **Parent** dans la conversation de bienvenue avec Mola (chapitre 5), ou plus tard dans **Réglages**, sous **Rôle**. Quand il le choisit à la bienvenue, Mola l'accueille avec un message pensé pour lui : il peut l'aider à accompagner son enfant avec les Leçons du Ballon, des exercices simples et le roman. Le menu est le même que pour tout le monde : un parent peut ouvrir les 64 exercices du Code Njangi ou les livres, qui sont ouverts à tous.
 
-Le parent voit l'accueil et l'espace joueur des jeunes, décrits au chapitre 15. Il garde cet espace même si son enfant a 16 ans ou plus : l'espace performance, avec la forme du matin et la charge d'entraînement, est réservé au joueur lui-même.
+Le parent voit l'accueil et l'espace joueur des jeunes, décrits au chapitre 15. Il garde cet espace même si son enfant a 16 ans ou plus : l'espace performance, avec la forme du matin et la charge d'entraînement, est fait pour le joueur lui-même.
 
-![L'accueil d'Estelle, une maman, dans la démo académie U13 : le salut, la devise, l'encadré Pour les parents, la carte Mon parcours et le défi du jour Les pieds rapides.](shot:youth-parent-home-named "L'accueil d'un parent, avec son encadré à lui.")
+![L'accueil d'Estelle, parent dans la démo académie U13 : le salut, la devise, l'encadré Pour les parents, la carte Mon parcours et le défi du jour Les pieds rapides.](shot:youth-parent-home-named "L'accueil d'un parent, avec son encadré à lui.")
 
 Une seule chose change sur l'accueil, mais elle compte : l'encadré **Pour les parents**, juste sous le salut. Il dit l'essentiel en trois phrases : « Quinze minutes, un mur et un ballon suffisent. Restez à côté, aidez à compter et rappelez de boire de l'eau. Le jeu des yeux se joue à deux : c'est vous qui levez la carte de couleur. »
 

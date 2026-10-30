@@ -78,7 +78,7 @@ Sur la page, trois noms sont en doré : ce sont les clubs du livre, les Lionceau
 
 ## Jouer avec les idées du livre
 
-Le jeu ne note rien et ses matchs ne sont pas reliés aux données de l'application. Mais pour un parent ou un éducateur, il ouvre une conversation facile avec un enfant qui connaît les Leçons du Ballon. Quelques questions simples, après une partie :
+Les matchs du jeu ne sont pas reliés aux données de l'application. Mais pour un parent ou un éducateur, il ouvre une conversation facile avec un enfant qui connaît les Leçons du Ballon. Quelques questions simples, après une partie :
 
 - As-tu osé la passe en profondeur (**△**) quand une ligne était ouverte ? C'est la leçon 7, « Oser la passe qui traverse ».
 - Quand tu as perdu le ballon, as-tu pressé tout de suite en gardant **✕** appuyé ? C'est la leçon 21, « Les cinq secondes ».
