@@ -114,7 +114,7 @@ Il n'y a dans Ndamba ni publicité, ni messagerie entre utilisateurs, ni profil 
 
 **Le rôle de parent.** Un parent choisit le rôle **Parent** pendant la conversation d'accueil ; Mola lui demande alors : « Quel âge a votre enfant, ou dans quelle catégorie joue-t-il ? » Son accueil est l'espace jeune de l'enfant, avec un encadré **Pour les parents** : « Quinze minutes, un mur et un ballon suffisent. Restez à côté, aidez à compter et rappelez de boire de l'eau. » Le parent garde cet espace jeune même quand l'enfant grandit. Conseil : pour un enfant de moins de 13 ans, c'est le parent qui crée l'espace, sur un appareil de la famille, et qui le garde.
 
-![L'accueil d'Estelle, parent dans la démo académie U13 : l'encadré Pour les parents, la carte Mon parcours et le défi du jour de l'enfant.](shot:youth-parent-home-named "Le parent voit l'espace de son enfant, avec un encadré qui lui est destiné.")
+![L'accueil d'Estelle, parent dans la démo académie U13 : l'encadré Pour les parents, la carte Le parcours de votre enfant et le défi du jour de l'enfant.](shot:youth-parent-home-named "Le parent voit l'espace de son enfant, avec un encadré qui lui est destiné.")
 
 **Pour les entraîneurs.** L'effectif ne demande que l'année de naissance, pas la date complète, et c'est suffisant. Gardez des notes factuelles et bienveillantes : elles figurent dans les sauvegardes. La forme du jour touche à la santé : ne la demandez qu'à ceux qui en tirent un bénéfice, et lisez-la avec prudence.
 

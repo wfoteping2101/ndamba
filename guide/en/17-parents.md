@@ -14,7 +14,7 @@ A parent picks the **Parent** role in the welcome conversation with Mola (chapte
 
 The parent sees the youth home and player space described in chapter 15. They keep that space even if their child is 16 or older: the performance space, with the morning form and the training load, is made for the player themselves.
 
-![The home of Estelle, a parent in the U13 academy demo: the greeting, the motto, the For parents box, the My journey card and today's challenge, Quick feet.](shot:youth-parent-home-named "A parent's home, with a box of its own.")
+![The home of Estelle, a parent in the U13 academy demo: the greeting, the motto, the For parents box, the Your child's journey card and today's challenge, Quick feet.](shot:youth-parent-home-named "A parent's home, with a box of its own.")
 
 Only one thing changes on the home page, but it matters: the **For parents** box, just under the greeting. It says the essentials in three sentences: "Fifteen minutes, a wall and a ball are enough. Stay close, help count and remind them to drink water. The eyes game takes two: you are the one holding up the coloured card."
 
@@ -26,7 +26,7 @@ The **Next match** card is often the most useful to a parent: the day, the time,
 
 The parent's **Player space** is the same as the child's: today's three challenges, progress, **My view**, the list of all challenges and the history. The name shown at the top is the profile's name, so the parent's.
 
-![The player space opened by Estelle: stage 1, The foundations, the XP bar, the streak, today's challenges and the My journey card.](shot:youth-parent-space "The player space seen from a parent's profile.")
+![The player space opened by Estelle: stage 1, The foundations, the XP bar, the streak, today's challenges and the Your child's journey card.](shot:youth-parent-space "The player space seen from a parent's profile.")
 
 ## Following your child
 
@@ -36,9 +36,9 @@ Today Ndamba has no accounts and no sync yet: all data lives in the browser of t
 
 **The squad record for the journey.** The journey (evaluations, observations, attendance, minutes played) comes from the team and its squad. When the child's team is on the device, the parent links their profile to their child's record:
 
-1. Tap the **My journey** card, on the home page or in the player space.
+1. Tap the **Your child's journey** card, on the home page or in the player space.
 2. The **Which record is your child's?** screen shows the squad: "Pick your child's record in the Lionceaux de Bonamoussadi U13 squad to follow their journey."
-3. Tap your child's name. Their journey opens, and the **My journey** card on the home page now shows their season: "This season: 15 sessions, 4 matches, 2 objectives in progress."
+3. Tap your child's name. Their journey opens, and the **Your child's journey** card on the home page now shows their season: "This season: 15 sessions, 4 matches, 2 objectives in progress."
 
 ![The record chooser for Lionceaux de Bonamoussadi U13 as a player sees it, headed Who are you in the team? The fifteen records in the squad, each with its number and name, include Kaydoudou (7) and BriBri (8). A parent sees the same list headed Which record is your child's?](shot:youth-journey "The list of records, here in its player version: a parent sees it under a heading of their own.")
 

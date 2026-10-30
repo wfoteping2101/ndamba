@@ -1,0 +1,281 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>18. Mola, Ndamba's agent, The Ndamba Guide</title><meta name="description" content="What Mola does for you and how to talk to it: the chat, the &quot;Mola noticed&quot; ideas, tasks, approvals (nothing goes out without you), the button on every page, the full list of its actions, how it understands, and ten sentences that work."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-18"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-18.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Live analysis</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The season and video analysis</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18" aria-current="page"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><section class="part-opener" id="partie-7"><div class="part-num">Part VII</div><h2>Mola</h2><p>The agent that prepares everything inside the app, and sends nothing without you.</p></section><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-7">Part VII. Mola</a><div class="ch-num">Chapter 18</div><h1 class="ch-title">Mola, Ndamba’s agent</h1><p class="ch-sum">What Mola does for you and how to talk to it: the chat, the &quot;Mola noticed&quot; ideas, tasks, approvals (nothing goes out without you), the button on every page, the full list of its actions, how it understands, and ten sentences that work.</p><p class="ch-time">11 min read</p></header><div class="prose"><p>In Africa, many coaches work alone, with no assistant and no analyst. In the evening there is still the week to plan, the call-up to write, the dates to put in the calendar: that work eats into the time meant for football. Mola is Ndamba’s agent. You tell it what you want in your own words, in French or in English, and it does it inside the app, step by step, in front of you. One rule has no exception: nothing leaves the app without your approval. Mola prepares the message or the file, and you are the one who sends it.</p>
+<h2 id="where-to-find-mola">Where to find Mola</h2>
+<ul>
+<li>In the menu, just below <strong>Home</strong>, tap <strong>Mola</strong>. On a phone, tap <strong>More</strong>, then <strong>Mola</strong>.</li>
+<li>On every page, Mola’s round button waits in the bottom right corner (see below), except on the Mola page and during live tagging, where the screen belongs to the match.</li>
+<li>The welcome conversation, when you set up your space, is already Mola (chapter 5).</li>
+</ul>
+<p>The page opens with Mola’s avatar and this line: &quot;Ndamba’s agent. It prepares inside the app; you approve anything that leaves it.&quot; Three tabs follow: <strong>Chat</strong>, <strong>Tasks</strong> and <strong>To approve</strong>.</p>
+<h2 id="the-chat">The chat</h2>
+<figure class="shot"><a href="../img/en/pro-mola-chat.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-mola-chat-720.webp 720w, ../img/en/pro-mola-chat.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-mola-chat.jpg" srcset="../img/en/pro-mola-chat-720.jpg 720w, ../img/en/pro-mola-chat.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Mola page of the pro club demo: the Chat tab with the welcome message addressed to Daniel, two ideas under the Mola noticed heading with the Yes, draft it and Yes, analyse it buttons, the Ask Mola field, and on the right the Try asking column and the Nothing goes out without you box." loading="lazy" decoding="async"></picture></a><figcaption>The chat: Mola welcomes you, notices what is coming up and offers to take care of it.</figcaption></figure>
+<p>In the demo, Mola greets the coach: &quot;Welcome to the demo, Daniel. You coach Étoile de la Côte: 22 players, a week of sessions, one match already analysed and a match coming up on Saturday.&quot; At the bottom, the <strong>Ask Mola…</strong> field takes your request: Enter sends, Shift and Enter starts a new line.</p>
+<p>On a computer, the <strong>Try asking</strong> column offers eight sentences: tap one and it goes out as if you had typed it. On a phone, these ideas are chips above the field. A player or a parent gets ideas about lessons and books (&quot;Open lesson 1&quot;).</p>
+<p>When Mola works, it announces what it is doing (&quot;I’m analysing your match against Météore de Bafoussam.&quot;), then the steps tick one by one, like a passing move. The result follows: a short text, the items created and a button to open them (<strong>Read the full report</strong>, <strong>See the week</strong>, <strong>Open the session</strong>). <strong>See the 4 steps</strong> lets you reread what was done.</p>
+<h3 id="when-mola-asks-a-question">When Mola asks a question</h3>
+<p>If a detail is missing, Mola asks a single question, with ready-made answers as chips. In the demo, after &quot;Set up a match&quot;, it asks &quot;Who are you playing against?&quot;; after &quot;Lions de Makepe&quot;, &quot;Which day, and at what time if you know it?&quot;; after &quot;Sunday at 10am&quot;, it schedules the match for Sunday 1 November at 10:00. If the answer does not help, it asks once more (&quot;Sorry, I didn’t catch that.&quot;), then shows what it can do. &quot;No&quot; cancels. If a team is needed first, Mola asks for its name, creates it, then goes back to your request. It also offers the next step, which a simple &quot;yes&quot; accepts: <strong>Yes, plan the week</strong> after a match is set up, <strong>Plan the week around “Pin”</strong> after an analysis.</p>
+<h2 id="quot-mola-noticed-quot">&quot;Mola noticed&quot;</h2>
+<p>Under the conversation, a green box, <strong>Mola noticed</strong>, offers at most two ideas drawn from your real data, each with its own button:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>What Mola notices</th>
+<th>What it offers</th>
+<th>The button</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>You have no team yet</td>
+<td>&quot;You don’t have a team yet. Shall we create it together?&quot;</td>
+<td><strong>Yes, let’s create it</strong></td>
+</tr>
+<tr>
+<td>The next match is two to six days away and no session is planned from MD-4 to MD-1</td>
+<td>&quot;Your match against … is … and the week is empty. Shall I plan the four sessions?&quot;</td>
+<td><strong>Yes, plan the week</strong></td>
+</tr>
+<tr>
+<td>The next match is four days away or less and the call-up has not been prepared</td>
+<td>&quot;The match against Rapides de Kribi is coming up (Saturday). Shall I draft the call-up?&quot;</td>
+<td><strong>Yes, draft it</strong></td>
+</tr>
+<tr>
+<td>The last match, played seven days ago or less, is tagged and not yet summarised</td>
+<td>&quot;Your match against Météore de Bafoussam (2-1) is tagged. Shall I summarise it?&quot;</td>
+<td><strong>Yes, analyse it</strong></td>
+</tr>
+</tbody></table></div>
+<p>The button starts the action directly, with no sentence to retype. The <strong>Hide this idea</strong> cross sets it aside for the day.</p>
+<h2 id="tasks">Tasks</h2>
+<p>Every action request becomes a task, tracked in the <strong>Tasks</strong> tab; before the first one, it shows &quot;No tasks yet&quot; and the <strong>Talk to Mola</strong> button.</p>
+<figure class="shot"><a href="../img/en/pro-mola-tasks.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-mola-tasks-720.webp 720w, ../img/en/pro-mola-tasks.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-mola-tasks.jpg" srcset="../img/en/pro-mola-tasks-720.jpg 720w, ../img/en/pro-mola-tasks.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Tasks tab of the Mola page, still empty in the demo: the heading No tasks yet, the line Every request to Mola becomes a task tracked here, and the Talk to Mola button." loading="lazy" decoding="async"></picture></a><figcaption>The Tasks tab before the first request: every request will leave a trace here.</figcaption></figure>
+<p>Filters sort the list: <strong>All</strong>, <strong>Running</strong>, <strong>To approve</strong>, <strong>Done</strong> and <strong>Cancelled</strong>. Each task has a name (<strong>Week planned</strong>, <strong>Call-up</strong>, <strong>Match analysis</strong>…), a status (<strong>Running</strong>, <strong>To approve</strong>, <strong>Done</strong>, <strong>Cancelled</strong> or <strong>Failed</strong>), your request with its date, the summary and the step details. A waiting task shows <strong>Review</strong>.</p>
+<h2 id="to-approve-quot-nothing-goes-out-without-you-quot">To approve: &quot;Nothing goes out without you&quot;</h2>
+<p>With Mola, only two things can leave the app: the match call-up (WhatsApp, text message or e-mail) and a calendar file (.ics). For these, Mola prepares everything, then stops: &quot;Waiting for your approval before opening anything&quot;. The task moves to <strong>To approve</strong>, and a gold badge counts the waiting tasks on the tab and on Mola’s button.</p>
+<figure class="shot"><a href="../img/en/pro-mola-approvals.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-mola-approvals-720.webp 720w, ../img/en/pro-mola-approvals.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-mola-approvals.jpg" srcset="../img/en/pro-mola-approvals-720.jpg 720w, ../img/en/pro-mola-approvals.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The To approve tab of the Mola page, empty in the demo: the heading Nothing to approve, the explanation that a message or a file leaving the app waits here for your approval, and the Draft a call-up button." loading="lazy" decoding="async"></picture></a><figcaption>The To approve tab when nothing is waiting: one button to draft the call-up.</figcaption></figure>
+<p>Sending the call-up for the next match:</p>
+<ol>
+<li>Ask &quot;Send the call-up on WhatsApp&quot;, tap <strong>Yes, draft it</strong> under &quot;Mola noticed&quot;, or <strong>Draft a call-up</strong> in the <strong>To approve</strong> tab.</li>
+<li>Mola finds the match. If you edited the call-up text while setting up the match (chapter 11), it takes that text; otherwise it drafts it from the line-up: the opponent, the day, the time, the venue, the starters, the substitutes, and the meeting time, &quot;Please arrive 45 minutes before kick-off with both kits, water and shin pads.&quot;</li>
+<li>The <strong>Waiting for your approval</strong> card appears: &quot;Nothing goes out without you. When you approve, I open WhatsApp with the message ready: you choose the group and press Send.&quot;</li>
+<li>Under <strong>Send with</strong>, choose <strong>WhatsApp</strong>, <strong>SMS</strong>, <strong>E-mail</strong> or <strong>Copy</strong>, with a <strong>Number (optional)</strong> or an <strong>E-mail address (optional)</strong> if you like. Under <strong>Message</strong>, <strong>Edit</strong> then <strong>Done</strong> change the text.</li>
+<li>Tap <strong>Approve and open WhatsApp</strong> (or <strong>Approve and open SMS</strong>, <strong>Approve and open e-mail</strong>, <strong>Approve and copy</strong>). Your own app opens with the message ready: you press Send.</li>
+</ol>
+<p>Mola confirms: &quot;It’s open in WhatsApp. Pick the team group and press Send: I never send anything on your behalf.&quot; The task moves to <strong>Done</strong>. If you tap <strong>Cancel</strong>, nothing goes out: &quot;Cancelled, nothing went out.&quot;</p>
+<p>For the calendar, the card lists the week’s <strong>Events</strong>, and <strong>Approve and download</strong> saves the .ics file to open in your calendar.</p>
+<h2 id="the-mola-button-on-every-page">The Mola button on every page</h2>
+<figure class="shot"><a href="../img/en/pro-mola-launcher.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-mola-launcher-720.webp 720w, ../img/en/pro-mola-launcher.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-mola-launcher.jpg" srcset="../img/en/pro-mola-launcher-720.jpg 720w, ../img/en/pro-mola-launcher.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Week page with Mola's window open on the right: the Mola header, Ndamba's agent, the Full view link, the welcome message, the two Mola noticed ideas, a Plan my week before the match chip and the Ask Mola field." loading="lazy" decoding="async"></picture></a><figcaption>Mola opened from the Week page: the same conversation, without leaving the page.</figcaption></figure>
+<p>Mola’s round button stays in the bottom right corner of every page, above the tab bar on a phone; a gold badge on it counts the approvals waiting. Tap it: a window opens over the page, with the same conversation. <strong>Full view</strong> opens the whole page; the cross or Escape closes it.</p>
+<figure class="shot tall"><a href="../img/en/m-pro-mola.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/m-pro-mola-720.webp 720w, ../img/en/m-pro-mola.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/m-pro-mola.jpg" srcset="../img/en/m-pro-mola-720.jpg 720w, ../img/en/m-pro-mola.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="The Mola page on a phone: the avatar, the Chat, Tasks and To approve tabs, the welcome message, the Mola noticed ideas, the chips and the Ask Mola field above the tab bar." loading="lazy" decoding="async"></picture></a><figcaption>On a phone, the same page, with the ideas as chips above the field.</figcaption></figure>
+<h2 id="everything-mola-can-do-today">Everything Mola can do today</h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>You ask</th>
+<th>Mola does it inside the app</th>
+<th>What leaves, with your approval</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Plan the week</td>
+<td>Creates the MD-4 to MD-1 sessions before the next match (or the match you name), built around the intention you give or, failing that, the one from the last report. It overwrites no session, does not fill days already gone and leaves free the day of another match and the day after it.</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Create a session</td>
+<td>Builds a session with drills from the method, based on the day (MD-4 to MD+1, or Youth), the intention and the length. An MD-3 session with no date goes on the MD-3 day of the next match.</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Set up a match</td>
+<td>Creates the match, suggests an automatic line-up in the team’s system and a captain. It refuses to create the same match twice and warns you if you already play that day.</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Add players</td>
+<td>Creates the profile of one or several players, with number and position (midfield by default), and warns you if the number is already taken.</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Create a team</td>
+<td>Creates the team with its age group, format and starting system, and makes it active.</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Draft the call-up</td>
+<td>Takes the message for the next match, or writes it from the line-up.</td>
+<td>The message, by WhatsApp, SMS, e-mail or copy</td>
+</tr>
+<tr>
+<td>Export the week</td>
+<td>Gathers the week’s sessions and matches.</td>
+<td>An .ics calendar file</td>
+</tr>
+<tr>
+<td>Analyse the last match</td>
+<td>Computes the Index, writes what works and what to fix, suggests two drills. You can name the opponent.</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Suggest drills</td>
+<td>Picks the three most useful drills for an intention or a skill, suited to the team’s age.</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Open a Leçon du Ballon</td>
+<td>Opens one of the novel’s 40 lessons, with the link to its chapter.</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td>Open a book</td>
+<td>Opens <em>The Njangi Code</em> or the novel <em>Le Ballon qui voyage</em>, at the chapter you ask for.</td>
+<td>Nothing</td>
+</tr>
+</tbody></table></div>
+<p>Mola also answers greetings and thanks. On the Free and Player Premium plans, it stops at five sessions in all. A week stops at the quota (&quot;The free plan counts 5 sessions in all: I stopped there. Coach Pro makes them unlimited.&quot;); beyond that, it suggests Coach Pro, with the reminder that &quot;the books and the 64 drills stay open to everyone&quot;.</p>
+<p>What Mola does not do: it never sends anything itself, it deletes nothing, it does not change an existing session, and it does not tag matches for you. When it does not recognise a request, it says so and shows what it can do.</p>
+<aside class="callout callout-astuce"><div class="callout-kicker">Tip</div><div class="callout-title">Mola warns you, you correct</div><p>A second match on the same day is created, since a tournament sometimes has several, but Mola adds: &quot;Note: you already play … that day. If that is a mistake, change the date on the match sheet.&quot; Likewise, if the MD-3 day of the next match has gone by, &quot;Create an MD-3 session&quot; dates the session today and says so. Give the day when it matters, for example &quot;tomorrow&quot;.</p>
+</aside>
+
+<h2 id="how-mola-understands">How Mola understands</h2>
+<p>Mola understands in two layers.</p>
+<p>The first is a rules engine that runs in the browser, on your device. It reads French and English, whatever the interface language, and replies in the interface language. It tolerates small typos and missing accents (&quot;create a recovery sesion for tomorow&quot; is understood). It recognises days (&quot;Saturday&quot;, &quot;November 12&quot;, &quot;11/12&quot;), times (&quot;4pm&quot;, &quot;15:30&quot;), week codes (&quot;MD-3&quot;, &quot;MD+1&quot;), the words of the method (&quot;counter-press&quot; gives the <strong>Win it back</strong> intention), positions and channels. Once the app has loaded, this engine needs no network, costs nothing and answers at once. An automated test file checks it: 127 checks, all passing on 29 October 2026.</p>
+<p>The second layer is optional: an artificial intelligence model. When the server hosting Ndamba has an Anthropic API key, each new request (not a plain yes or no) is also sent to the server function /api/mola, which asks a Claude model what the message means, within the same list of actions:</p>
+<ul>
+<li>The model does nothing itself. It interprets the sentence; the same code then does the work, with the same steps and the same approvals. Its answer is checked: only known actions and well-formed details are kept.</li>
+<li>The browser waits 3.5 seconds at most. With no answer, the rules reply alone; after two failures, Mola leaves the model aside for the rest of the visit.</li>
+<li>What goes to the server: the text of the message (600 characters at most), the language, today’s date, the team name, its age group, your role, and the opponent and date of the next and last matches. Not the players, not the tags, not the sessions. The key stays on the server.</li>
+</ul>
+<p>Without a key, only the rules engine answers, as in the version tested for this guide: every answer quoted here comes from the rules.</p>
+<h2 id="ten-sentences-that-work">Ten sentences that work</h2>
+<p>All of them were tried in the pro club demo on Thursday 29 October 2026, two days before the match against Rapides de Kribi.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>What Mola does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&quot;Analyse my last match&quot;</td>
+<td>Summarises the match against Météore de Bafoussam: &quot;Solid Njangi: 67.9 out of 100&quot;, what works (Control), what to fix (Fixation), the drills R02 and S04, and <strong>Read the full report</strong>.</td>
+</tr>
+<tr>
+<td>&quot;Plan my week before the match&quot;</td>
+<td>In the demo: &quot;Your week is already ready: 2 sessions before this match. I haven’t overwritten anything.&quot; Before the match on Wednesday 4 November, it creates MD-2 and MD-1 and adds: &quot;I left 2 days free: another match or the recovery day after it falls on those days.&quot;</td>
+</tr>
+<tr>
+<td>&quot;Create an MD-3 session to progress&quot;</td>
+<td>Creates &quot;Duration: play like the match&quot;, three blocks, 62 minutes, common thread &quot;Progress&quot;. As the MD-3 day (Wednesday 28) has gone by, it dates it Thursday 29 and says so.</td>
+</tr>
+<tr>
+<td>&quot;Set up a match against the Eagles on Saturday at 4pm&quot;</td>
+<td>Schedules the match for Saturday 31 October at 16:00, picks the line-up, and warns: &quot;Note: you already play Rapides de Kribi that day.&quot;</td>
+</tr>
+<tr>
+<td>&quot;Add Samuel Owona, number 9, striker&quot;</td>
+<td>Creates the profile, number 9, striker, and warns that number 9 is already worn by Serge Eyoum.</td>
+</tr>
+<tr>
+<td>&quot;Send the call-up on WhatsApp&quot;</td>
+<td>Drafts the call-up for the match against Rapides de Kribi and puts it in <strong>To approve</strong>.</td>
+</tr>
+<tr>
+<td>&quot;Export the week to my calendar&quot;</td>
+<td>Prepares an .ics file with the week’s four sessions and the match, waiting for your approval.</td>
+</tr>
+<tr>
+<td>&quot;Which drills to win the ball back faster?&quot;</td>
+<td>Suggests T01 (The Five Seconds), F06 (Rest Defence) and T06 (Attack, Then Defend).</td>
+</tr>
+<tr>
+<td>&quot;Open lesson 7&quot;</td>
+<td>&quot;Lesson 7: “Dare the pass that cuts through”.&quot;, with the link to chapter 7 of the novel.</td>
+</tr>
+<tr>
+<td>&quot;Open The Njangi Code&quot;</td>
+<td>Opens the book: &quot;the method, the 64 drills and the Njangi Index&quot;.</td>
+</tr>
+</tbody></table></div>
+<p>And also: &quot;What can you do?&quot; gives the full list, and &quot;an MD-2 session of 60 minutes on counter-pressing&quot; creates a 60 minute speed session built around <strong>Win it back</strong>.</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">For investors</div><div class="callout-title">An agent that works without a network and without a bill</div><p>Mola rests first on rules that run on the device: once the app has loaded, it understands with no network and no cost per message, which matters where connections are rare and expensive. The AI model is only an optional layer, never a condition for working. Above all, the agent cannot send anything on its own: every message and every file that leaves waits for the coach’s approval. That is the basis of trust for clubs, parents and federations (chapter 25).</p>
+</aside>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-17.html" rel="prev"><small>Previous</small><b>17. Parents</b></a><a class="next" href="ch-19.html" rel="next"><small>Next</small><b>19. The Njangi Code, the method book</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>

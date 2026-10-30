@@ -1,0 +1,246 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>5. Set up with Mola, The Ndamba Guide</title><meta name="description" content="Your first visit step by step, the welcome conversation with Mola, the profile card that fills itself in as you talk, the two demos and what they replace, coming back later and starting over."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-05"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-05.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05" aria-current="page"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Live analysis</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The season and video analysis</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><section class="part-opener" id="partie-2"><div class="part-num">Part II</div><h2>Getting started</h2><p>The first visit, finding your way and the settings.</p></section><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-2">Part II. Getting started</a><div class="ch-num">Chapter 5</div><h1 class="ch-title">Set up with Mola</h1><p class="ch-sum">Your first visit step by step, the welcome conversation with Mola, the profile card that fills itself in as you talk, the two demos and what they replace, coming back later and starting over.</p><p class="ch-time">9 min read</p></header><div class="prose"><p>A sign-up form quickly puts off a busy youth coach. Writing a message, on the other hand, is something everyone does every day, in French, in English or in a mix of both. That is why Ndamba does not start with a form but with a conversation. Mola, Ndamba’s agent (&quot;Mola&quot; means &quot;mate&quot; in Cameroonian camfranglais), asks a few questions, understands answers written in your own words and fills in your profile before your eyes. In a few minutes your space is ready: for a coach, the team already exists, with its players if you pasted their list. No account, no e-mail address, no password.</p>
+<h2 id="opening-the-conversation">Opening the conversation</h2>
+<p>The conversation lives on the welcome page (/bienvenue). There are three ways in:</p>
+<ul>
+<li>the gold <strong>Get started with Mola</strong> button on the site’s home page;</li>
+<li>the <strong>Get started</strong> button at the top right of the site;</li>
+<li>opening any page of the app without a profile: Ndamba takes you there.</li>
+</ul>
+<figure class="shot tall"><a href="../img/en/m-landing.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/m-landing-720.webp 720w, ../img/en/m-landing.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/m-landing.jpg" srcset="../img/en/m-landing-720.jpg 720w, ../img/en/m-landing.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="The site's home page on a phone, with the motto as a large headline and the gold Get started with Mola button." loading="lazy" decoding="async"></picture></a><figcaption>On a phone, everything starts with the Get started with Mola button.</figcaption></figure>
+<p>The page is deliberately bare. At the top: the logo, the two demos and the <strong>FR</strong> or <strong>EN</strong> switch. On a computer, the conversation sits on the left and your profile card on the right. On a phone, the card is folded at the top of the screen as a bar with a small progress ring; tap it to unfold it. The two demos are gathered into a single <strong>Demo</strong> button.</p>
+<figure class="shot"><a href="../img/en/onboarding-start.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/onboarding-start-720.webp 720w, ../img/en/onboarding-start.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/onboarding-start.jpg" srcset="../img/en/onboarding-start-720.jpg 720w, ../img/en/onboarding-start.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The welcome page on a computer: Mola says hello and asks for the language, the Your profile card is empty on the right, and the Français and English choices sit under the conversation." loading="lazy" decoding="async"></picture></a><figcaption>Mola’s first question, asked in both languages.</figcaption></figure>
+<p>Mola introduces itself: &quot;Hello, I’m Mola, Ndamba’s agent. I’ll set up your space with you in a few questions.&quot; Then it asks its first question in English and in French at once, since it does not yet know which language you prefer.</p>
+<h2 id="the-conversation-question-by-question">The conversation, question by question</h2>
+<p>Under the conversation, Mola offers ready-made answers to tap at every step. You can also type freely in the &quot;Write freely, I’ll understand…&quot; box and send with the Enter key or the arrow.</p>
+<ol>
+<li><strong>Language.</strong> Tap <strong>Français</strong> or <strong>English</strong>, or type it. Mola confirms (&quot;Great, let’s continue in English.&quot;) and the whole page switches to that language. At this step Mola only takes the language: keep everything else for the next questions.</li>
+<li><strong>Your name.</strong> &quot;What’s your name?&quot; Type your name the way you want to see it in the app.</li>
+<li><strong>Your role.</strong> &quot;In football, you are:&quot; followed by six choices: <strong>Coach or educator</strong>, <strong>Player</strong>, <strong>Analyst</strong>, <strong>Parent</strong>, <strong>Manager or technical director</strong>, <strong>Federation or league</strong>.</li>
+<li><strong>The questions for your role.</strong> They change with the role you chose (see the table below).</li>
+<li><strong>Your city</strong>, then <strong>your country.</strong> Mola offers Douala, Yaoundé, Garoua, Bafoussam, Abidjan and Dakar, or <strong>Skip</strong>. When the city is enough to know the country, it skips the next question and simply notes &quot;Got it: Cameroon.&quot;.</li>
+<li><strong>Your goals.</strong> &quot;Last question: what do you expect from Ndamba?&quot; Tap as many goals as you like (for instance <strong>A playing identity</strong>, <strong>Plan my weeks</strong>, <strong>Analyse my matches</strong>, <strong>Develop young players</strong>, <strong>Read the books</strong>), then <strong>Confirm this choice</strong> (or <strong>Confirm these 3 choices</strong> if there are three), or <strong>Later</strong>.</li>
+<li><strong>Review.</strong> &quot;Thank you Daniel. Here is your profile. Tap a field to correct it, then create your space.&quot; The gold <strong>Create my space</strong> button appears.</li>
+</ol>
+<figure class="shot"><a href="../img/en/onboarding-step2.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/onboarding-step2-720.webp 720w, ../img/en/onboarding-step2.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/onboarding-step2.jpg" srcset="../img/en/onboarding-step2-720.jpg 720w, ../img/en/onboarding-step2.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The conversation after the first answer, &quot;I am a coach&quot;: Mola keeps only the language from it (&quot;Great, let's continue in English.&quot;) and asks for the name; the card shows Language English and 1 of 6." loading="lazy" decoding="async"></picture></a><figcaption>At the language question, Mola keeps only the language, then asks your name.</figcaption></figure>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Role chosen</th>
+<th>What Mola asks next</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Coach or educator</strong></td>
+<td>The team’s name, its age group (from U8 to pro seniors), the format (<strong>5 v 5</strong> to <strong>11 v 11</strong>), then the list of players</td>
+</tr>
+<tr>
+<td><strong>Player</strong></td>
+<td>The age group (your age is enough), the position, the club (or <strong>No club</strong>)</td>
+</tr>
+<tr>
+<td><strong>Analyst</strong></td>
+<td>The club or team you analyse for</td>
+</tr>
+<tr>
+<td><strong>Parent</strong></td>
+<td>The child’s age or age group</td>
+</tr>
+<tr>
+<td><strong>Manager or technical director</strong></td>
+<td>Your organisation</td>
+</tr>
+<tr>
+<td><strong>Federation or league</strong></td>
+<td>Your organisation</td>
+</tr>
+</tbody></table></div>
+<p>Two details make it faster for a coach. If you choose <strong>Pro seniors</strong>, Mola does not ask for the format: professional football is eleven a side. And the player list can be pasted in one go, one player per line, with the shirt number if you have it (&quot;9 Samuel Owona&quot;). In that box, Enter starts a new line; send with <strong>Ctrl + Enter</strong> or the arrow. Mola replies, for example, &quot;I’ve read 3 players.&quot;. No list to hand? Tap <strong>Later</strong>: you will add players to the squad afterwards (chapter 10).</p>
+<h3 id="answering-in-one-sentence">Answering in one sentence</h3>
+<p>Mola does not force you to answer one question at a time. A single sentence can fill several fields at once. When asked your name, you can write, for example: &quot;I’m Daniel Mbarga, coach of Étoile de la Côte, top flight, in Douala&quot;. Mola replies &quot;Got it: coach, Pro seniors, 11 v 11, Douala (Cameroon), Étoile de la Côte.&quot; and jumps straight to the player list. Questions it already has the answer to are not asked again. If it does not understand an answer, it says so (&quot;I didn’t quite get that.&quot;) and asks again.</p>
+<aside class="callout callout-mola"><div class="callout-kicker"><svg class="mm" viewBox="6 6 54 54" width="20" height="20" aria-hidden="true"><path d="M13.00 47.00 L22.00 19.00 L32.00 37.00 L42.00 19.00 L51.00 47.00" fill="none" stroke="currentColor" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="51" cy="47" r="7.564" fill="#F5B700"></circle></svg>Ask Mola</div><div class="callout-title">Save time</div><p>From the name question on, say who you are, what you coach and where, in one sentence: &quot;Tonton Fokou, I coach the Lionceaux de Bonamoussadi U13 in Douala&quot;. Mola notes the role, the city, the country and the team (&quot;Got it: coach, Douala (Cameroon), Lionceaux de Bonamoussadi U13.&quot;), then moves on to &quot;How many a side do you play?&quot;.</p>
+</aside>
+
+<h2 id="the-profile-card-that-fills-itself-in">The profile card that fills itself in</h2>
+<p>While you talk, the <strong>Your profile</strong> card fills in. It looks like a club licence: a green band with your name and role, a progress bar and a counter, such as &quot;1 of 6&quot; at the start or &quot;10 of 10&quot; for a coach who has answered everything. The number of fields depends on the role: a coach also has the team, the age group, the format and the players.</p>
+<p>Each field shows its value, or &quot;Coming up&quot; while it is still empty. A field that has just been filled lights up for a moment, so you can see what Mola understood. Under the card, one sentence sums up the essentials: &quot;Everything stays in this browser. You can change it all later in the settings.&quot;</p>
+<p>There are two ways to correct something:</p>
+<ul>
+<li><strong>Tap the field</strong> on the card (a small pencil marks it). An input box or a list of choices opens; save with the tick, cancel with the cross. Goals are ticked and unticked right on the card.</li>
+<li><strong>Tell Mola.</strong> At the review, the input box becomes &quot;A correction? Just say it&quot;. Write, for example, &quot;I’m in Yaoundé&quot;: Mola answers &quot;Got it: Yaoundé.&quot; and the card updates.</li>
+</ul>
+<p>If your correction answers the question on screen, Mola moves on to the next one.</p>
+<h2 id="creating-the-space">Creating the space</h2>
+<p>When the card looks right, tap <strong>Create my space</strong> (&quot;You can change everything afterwards.&quot;). Mola writes &quot;Setting up your space.&quot; and ticks off its steps one by one:</p>
+<ol>
+<li><strong>Profile created</strong></li>
+<li><strong>Team … created</strong>, with your team’s name (for a coach who gave one)</li>
+<li><strong>… players added</strong> (if you pasted a list)</li>
+<li><strong>Mola is ready to work</strong></li>
+</ol>
+<p>The app then opens on your home screen (chapter 6). Your profile starts on the <strong>Free</strong> plan. A welcome message from Mola waits in the round button at the bottom right, marked with a green dot; for a coach, it offers to plan the first week, set up a match or suggest drills.</p>
+<p>Only the coach role creates a team during the conversation. An analyst, a technical director or a federation adds teams afterwards, from the home screen or from <strong>Settings</strong>.</p>
+<h2 id="the-two-demos">The two demos</h2>
+<p>Want to see Ndamba full of data before creating your own space? Two complete demos open in a single tap, from the site’s home page or from the bar of the welcome page: <strong>Pro club demo</strong> and <strong>U13 academy demo</strong>. They feature invented clubs and people.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Pro club demo</strong></th>
+<th><strong>U13 academy demo</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The team</td>
+<td>Étoile de la Côte, a top-flight senior side in Douala</td>
+<td>Lionceaux de Bonamoussadi U13, Kaydoudou and BriBri’s team</td>
+</tr>
+<tr>
+<td>You are</td>
+<td>Daniel Mbarga, coach</td>
+<td>Tonton Fokou, youth coach</td>
+</tr>
+<tr>
+<td>The squad</td>
+<td>22 players, in a 4-3-3</td>
+<td>15 players, in a 4-3-3</td>
+</tr>
+<tr>
+<td>The week</td>
+<td>Recovery after the match, then MD-4 to MD-1</td>
+<td>MD-4 to MD-1</td>
+</tr>
+<tr>
+<td>The past</td>
+<td>Three league matches played, the last one tagged live (2-1 against Météore de Bafoussam)</td>
+<td>Four matches played and tagged, the last one won 2-1 against Requins de Bépanda</td>
+</tr>
+<tr>
+<td>What’s next</td>
+<td>Away at Rapides de Kribi on Saturday, then a cup tie and a league match</td>
+<td>Away at Panthères de Deïdo on Saturday</td>
+</tr>
+<tr>
+<td>The plan</td>
+<td>Coach Pro, activated as a demo</td>
+<td>Coach Pro, activated as a demo</td>
+</tr>
+</tbody></table></div>
+<figure class="shot"><a href="../img/en/youth-home.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/youth-home-720.webp 720w, ../img/en/youth-home.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/youth-home.jpg" srcset="../img/en/youth-home-720.jpg 720w, ../img/en/youth-home.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The home screen of the academy demo: Good evening, Tonton Fokou, today's session Speed: transitions and the next match against Panthères de Deïdo." loading="lazy" decoding="async"></picture></a><figcaption>The U13 academy demo: the home screen of the Lionceaux coach.</figcaption></figure>
+<p>The demo’s dates follow the real calendar: the next match always falls on the Saturday of the current week, with the week’s sessions around it. The demo’s texts are written in the language that is active when you start it. When the demo opens from the welcome page, Mola leaves a message there: &quot;Welcome to the demo, Daniel. You coach Étoile de la Côte: 22 players, a week of sessions, one match already analysed and a match coming up on Saturday. Ask me anything, for example to analyse the last match or to draft the call-up.&quot; For the academy, the message announces 15 players and &quot;4 matches already analysed&quot;.</p>
+<h3 id="what-a-demo-replaces">What a demo replaces</h3>
+<p>A demo is not added to your data: it <strong>replaces</strong> what this browser holds for Ndamba. Profile, teams, players, sessions, matches, tagged actions, Mola’s conversation and tasks, notebook, challenges, videos, assessments, observations, attendance, objectives, big moments and the form log: all of it is erased, then filled with the demo. The lessons marked &quot;I’ve got it&quot; and the player space’s &quot;My view&quot; are erased too. Only the chosen language stays. Switching from one demo to the other replaces the first one too.</p>
+<p>Ndamba protects you: if this browser holds your own space, a &quot;Start the demo?&quot; window warns you and invites you to export a backup first; you have to tap <strong>Start the demo</strong> to go ahead, or <strong>Cancel</strong>. The window opens from the site’s home page and from the bar of the welcome page alike (its <strong>Demo</strong> menu on a phone).</p>
+<aside class="callout callout-astuce"><div class="callout-kicker">Tip</div><div class="callout-title">Export first</div><p>The window opens for any space that is not a demo, even a player’s or a parent’s that has no team: their notebook and challenges would be replaced too. If you want to keep them, tap <strong>Cancel</strong>, export a backup from <strong>Settings</strong> (chapter 6), then come back and start the demo.</p>
+</aside>
+
+<h2 id="coming-back-later">Coming back later</h2>
+<p>A conversation you interrupt is not lost while the tab stays open: if you reload the page, you pick up where you left off. If you close the tab before <strong>Create my space</strong>, the conversation starts again from the beginning.</p>
+<p>Once the space is created, everything is saved in this browser. Come back whenever you like: the site’s button now reads <strong>Open the app</strong>, and the app opens straight onto your home screen. If you go back to the welcome page, Mola recognises you: &quot;Welcome back, Daniel. Your Ndamba space is ready in this browser.&quot; Two buttons wait for you: <strong>Open the app</strong> and <strong>Start again with a new profile</strong>.</p>
+<p>On another device or in another browser, your space does not exist yet: you need to restore an exported backup there (chapter 6).</p>
+<h2 id="starting-over">Starting over</h2>
+<p>There are three ways to start again, from the gentlest to the most radical.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>What you do</th>
+<th>What changes</th>
+<th>What stays</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Start again with a new profile</strong> (welcome page)</td>
+<td>A new conversation; at the end, the new profile replaces the old one and starts again on the <strong>Free</strong> plan</td>
+<td>Your teams, sessions and matches</td>
+</tr>
+<tr>
+<td>Start a demo</td>
+<td>Everything is replaced by the demo</td>
+<td>Nothing</td>
+</tr>
+<tr>
+<td><strong>Erase everything</strong> (Settings, <strong>Your data</strong> panel)</td>
+<td>Everything is deleted and you return to the site’s home page</td>
+<td>Nothing</td>
+</tr>
+</tbody></table></div>
+<p>The first option is meant for changing role or name without losing your work, as Mola puts it: &quot;Starting again replaces your profile at the end of the conversation. Your sessions and matches stay.&quot; For a simple change of name, role or language, <strong>Settings</strong> is enough, with nothing to start over.</p>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-04.html" rel="prev"><small>Previous</small><b>4. The map of the platform</b></a><a class="next" href="ch-06.html" rel="next"><small>Next</small><b>6. Home, navigation and settings</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>

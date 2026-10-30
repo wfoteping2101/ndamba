@@ -77,7 +77,7 @@ Viennent ensuite la carte **Mon parcours** (séances, matchs, observations du co
 
 ![L'accueil de BriBri, 12 ans, dans la démo U13 : XP, Série et Défis, la carte Mon parcours, Le défi du jour et Ma progression.](shot:youth-player-home-linked "L'accueil du jeune joueur : un défi par jour, une leçon par jour, et son parcours.")
 
-Pour le parent, l'accueil ajoute en tête un encadré **Pour les parents** : quinze minutes, un mur et un ballon suffisent ; restez à côté, aidez à compter, rappelez de boire de l'eau. Quand l'équipe de l'enfant est sur l'appareil, le parent qui touche **Mon parcours** voit l'écran « Quelle est la fiche de votre enfant ? » et choisit, dans l'effectif, la fiche de son enfant.
+Pour le parent, l'accueil ajoute en tête un encadré **Pour les parents** : quinze minutes, un mur et un ballon suffisent ; restez à côté, aidez à compter, rappelez de boire de l'eau. Quand l'équipe de l'enfant est sur l'appareil, le parent qui touche la carte **Le parcours de votre enfant** voit l'écran « Quelle est la fiche de votre enfant ? » et choisit, dans l'effectif, la fiche de son enfant.
 
 ![L'accueil d'Estelle, parent dans la démo U13, avec l'encadré Pour les parents en haut de la page.](shot:youth-parent-home-named "L'accueil du parent : le même espace que l'enfant, avec des conseils pour l'accompagner.")
 

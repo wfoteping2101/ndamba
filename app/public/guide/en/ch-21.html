@@ -1,0 +1,235 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>21. Lionceaux Football, the game, The Ndamba Guide</title><meta name="description" content="The novel's football game, in the browser: where to find it, how to start a match, the friendly match and the neighbourhood tournament, the controls on keyboard, controller and phone, the sixteen teams from Douala and Yaoundé, what it helps children understand, and what to do if it won't start."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-21"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-21.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Live analysis</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The season and video analysis</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21" aria-current="page"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-8">Part VIII. The books and the game</a><div class="ch-num">Chapter 21</div><h1 class="ch-title">Lionceaux Football, the game</h1><p class="ch-sum">The novel’s football game, in the browser: where to find it, how to start a match, the friendly match and the neighbourhood tournament, the controls on keyboard, controller and phone, the sixteen teams from Douala and Yaoundé, what it helps children understand, and what to do if it won’t start.</p><p class="ch-time">8 min read</p></header><div class="prose"><p>Children who read <em>Lionceaux</em> also play football video games. <em>Lionceaux Football</em> gives them a game set at home: an eleven-a-side match on a red-earth neighbourhood pitch, with the whole neighbourhood watching, during the holiday tournament between the districts of Douala and Yaoundé. The clubs from the novel are there, with their colours and their players. The game runs in the browser, with nothing to install, on a computer as on a phone. It extends the book through fun, and it keeps one Njangi idea: a player who presses their action just before the ball arrives plays it first time, like BriBri, who has already looked.</p>
+<h2 id="where-to-find-the-game">Where to find the game</h2>
+<p>The game has its own page, at <strong>/football/</strong> on the site. There are three ways to get there:</p>
+<ul>
+<li><strong>Football game</strong>, in the menu at the top of the public site;</li>
+<li><strong>Football game</strong>, in the <strong>Me</strong> group of the app’s menu;</li>
+<li>the <strong>Video game</strong> section of the site’s home page, with the <strong>Play now</strong> button.</li>
+</ul>
+<figure class="shot"><a href="../img/en/site-landing.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/site-landing-720.webp 720w, ../img/en/site-landing.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/site-landing.jpg" srcset="../img/en/site-landing-720.jpg 720w, ../img/en/site-landing.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Ndamba home page, with the top menu: The books, Football game, The app, Mola and Premium." loading="lazy" decoding="async"></picture></a><figcaption>The site menu leads to the game through Football game.</figcaption></figure>
+<p>The link with the books runs through the content: the teams, colours and named players come from <em>Lionceaux, book 1</em>, as the bottom of the game page points out. The book pages themselves do not link to the game today; you reach it through the menus.</p>
+<h2 id="the-game-page">The game page</h2>
+<figure class="shot"><a href="../img/en/football-page.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/football-page-720.webp 720w, ../img/en/football-page.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/football-page.jpg" srcset="../img/en/football-page-720.jpg 720w, ../img/en/football-page.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Lionceaux Football page: the way back to Ndamba, the FR and EN choice, the large picture of the neighbourhood pitch, the title, the introduction, the Play and How to play buttons, and the line about the first download." loading="lazy" decoding="async"></picture></a><figcaption>The game page, before starting a match.</figcaption></figure>
+<p>At the top, <strong>Back to Ndamba</strong> returns to the site’s home page, and the <strong>FR</strong> and <strong>EN</strong> buttons switch the page language. The page opens in the language chosen in Ndamba, otherwise in the browser’s. Under the large picture of the pitch, a sentence introduces the game, then come two buttons: <strong>Play</strong> and <strong>How to play</strong>, which scrolls down to the instructions. One line gives fair warning: &quot;First launch: about 25 MB to download, then the game stays cached. On a phone, turn it sideways.&quot;</p>
+<p>The page’s instructions come in four blocks: three steps (&quot;Start a game&quot;, &quot;Kick-off&quot;, &quot;Score, win&quot;), the controls table, the teams, and &quot;If the game won’t start&quot;. This chapter covers all of it, along with what you then see inside the game itself.</p>
+<h2 id="starting-a-match">Starting a match</h2>
+<ol>
+<li>Open the game page and tap <strong>Play</strong>.</li>
+<li>The <strong>Lionceaux Football</strong> screen shows &quot;Getting the pitch ready…&quot; and a loading bar with the percentage. The first time, the download takes a while; after that, the browser keeps the game cached and it starts much faster.</li>
+<li>On a phone, turn the screen sideways. As long as the phone is held upright, the game shows &quot;Turn your phone sideways&quot; and &quot;The game is played in landscape.&quot; On Android, the game also goes full screen when the browser allows it.</li>
+<li>The game’s menu appears: the LIONCEAUX title, the motto &quot;The ball must travel.&quot; and five buttons, <strong>Friendly match</strong>, <strong>Neighbourhood tournament</strong>, <strong>How to play</strong>, <strong>Options</strong> and a language button (<strong>Français</strong> when the game is in English, <strong>English</strong> when it is in French).</li>
+<li>To leave at any time, tap <strong>✕ Quit</strong>, at the top centre of the screen: you come back to the game page.</li>
+</ol>
+<p>In the menu, <strong>How to play</strong> sums up every control on a single screen, adding that the on-screen controller has the same buttons. A back button returns to the menu.</p>
+<h2 id="two-ways-to-play">Two ways to play</h2>
+<h3 id="the-friendly-match">The friendly match</h3>
+<p>The <strong>Friendly match</strong> screen puts two panels side by side: <strong>Your team</strong> on the left, <strong>Opponent</strong> on the right. The <strong>&lt;** and **&gt;</strong> arrows scroll through the teams. Each panel shows the shirt, the team’s name, its neighbourhood and its level, then a line that says where it comes from: in the book, part I, chapters 1 to 8, for the Lionceaux de Bonamoussadi; &quot;Neighbourhood side made up for the game&quot; for Akwa.</p>
+<p>Below the panels, two buttons change their setting each time you tap them: the difficulty (easy, normal or hard) and the length (two halves of 2, 3, 5 or 8 minutes; two halves of 3 minutes to begin with). <strong>Kick off</strong> starts the match, and the back button returns to the menu.</p>
+<h3 id="the-neighbourhood-tournament">The neighbourhood tournament</h3>
+<p><strong>Neighbourhood tournament</strong> first asks you to choose your team, with the same arrows. <strong>New tournament</strong> announces the first round, for example a round of 16 between the Lionceaux de Bonamoussadi and Ndokotti, and <strong>Play the match</strong> starts it. The tournament goes all the way: round of 16, quarter-final, semi-final, final. A draw goes to penalties.</p>
+<h3 id="the-options">The options</h3>
+<p><strong>Options</strong> sets four things: the <strong>On-screen controller</strong> (on or off), the camera (a TV view or a close view), the volume (out of 10) and the language. So there are two places to change the language inside the game: here, or with the last button of the menu.</p>
+<h2 id="kick-off">Kick-off</h2>
+<p>Both teams walk onto the pitch. Press <strong>✕</strong> (cross) to skip the line-up. You control the player with the <strong>ring</strong> under his feet. At the top left, the scoreboard shows both teams in three letters (BON for Bonamoussadi), the score and the clock; at the top right, <strong>II</strong> pauses the match. To shoot, hold <strong>□</strong> (square): the power bar appears, and you strike when you let go. Press an action <strong>just before</strong> the ball reaches you, and your player plays it first time. At full time, the match screen shows possession, shots and completed passes.</p>
+<h2 id="the-controls">The controls</h2>
+<p>The game can be played three ways, and all three give the same football. On a phone, you play with your fingers: the stick appears wherever you put your left thumb, and the buttons are on the right, laid out like a game controller (✕, ○, □ and △, with L1 and R2 above them). To stay smooth on the very dense screens of phones, the game caps its resolution there. On a computer, you play with the keyboard or a controller. The table shows both side by side.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>With the ball</th>
+<th>Phone and controller</th>
+<th>Keyboard</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Move</td>
+<td>Left stick</td>
+<td>W A S D or arrows</td>
+</tr>
+<tr>
+<td>Sprint</td>
+<td>R2</td>
+<td>Shift</td>
+</tr>
+<tr>
+<td>Pass</td>
+<td>✕ Cross</td>
+<td>J or Space</td>
+</tr>
+<tr>
+<td>Through ball</td>
+<td>△ Triangle</td>
+<td>I</td>
+</tr>
+<tr>
+<td>Lobbed pass, cross</td>
+<td>○ Circle</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Shoot</td>
+<td>□ Square (hold)</td>
+<td>K</td>
+</tr>
+<tr>
+<td>Switch player</td>
+<td>L1</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>Pause</td>
+<td>II top right, Options</td>
+<td>Esc</td>
+</tr>
+</tbody></table></div>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Defending</th>
+<th>Phone and controller</th>
+<th>Keyboard</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Press the man on the ball</td>
+<td>Hold ✕</td>
+<td>Hold J</td>
+</tr>
+<tr>
+<td>Tackle</td>
+<td>○</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Slide tackle</td>
+<td>□</td>
+<td>K</td>
+</tr>
+<tr>
+<td>Switch player</td>
+<td>L1</td>
+<td>Q</td>
+</tr>
+</tbody></table></div>
+<p>To play with a game controller, plug it in or pair it over Bluetooth before opening the game, then press any button. The controller drawn on screen can be hidden in <strong>Options</strong>.</p>
+<h2 id="the-teams">The teams</h2>
+<p>The game has sixteen teams, eight from Douala and eight from Yaoundé.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Douala</th>
+<th>Yaoundé</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bonamoussadi, Bépanda, Deïdo, Akwa, New-Bell, Bonabéri, Makepe, Ndokotti</td>
+<td>Mvog-Ada, Mokolo, Briqueterie, Essos, Biyem-Assi, Nkolbisson, Mimboman, Obili</td>
+</tr>
+</tbody></table></div>
+<p>On the page, three names are in gold: the clubs from the book, the Lionceaux de Bonamoussadi, the Requins de Bépanda and the Panthères de Deïdo, with their colours and their players. The other neighbourhoods are real, but their teams were made up for the game. In a friendly, you can also pick the clubs from later in the book, abroad: Maryland, Île-de-France, Morocco and London.</p>
+<p>The three clubs from the book are also those of the <strong>U13 academy demo</strong> (chapter 20): there, the Lionceaux de Bonamoussadi play a &quot;Neighbourhood tournament&quot; against the Requins de Bépanda, then against the Panthères de Deïdo. A child therefore meets in the game the opponents of their demo team.</p>
+<figure class="shot tall"><a href="../img/en/football-page-full.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/football-page-full-720.webp 720w, ../img/en/football-page-full.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/football-page-full.jpg" srcset="../img/en/football-page-full-720.jpg 720w, ../img/en/football-page-full.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3007" alt="The whole game page: the three steps Start a game, Kick-off and Score, win, the controls table, the Douala and Yaoundé teams with the book's clubs in gold, and the If the game won't start box." loading="lazy" decoding="async"></picture></a><figcaption>The full instructions, on the game page.</figcaption></figure>
+<h2 id="playing-with-the-book-39-s-ideas">Playing with the book’s ideas</h2>
+<p>The game’s matches are not linked to the app’s data: they count neither in the challenges nor in the player’s journey. But for a parent or a coach, the game opens an easy conversation with a child who knows the Ball Lessons. A few simple questions after a match:</p>
+<ul>
+<li>Did you dare the through ball (<strong>△</strong>) when a line was open? That is lesson 7, &quot;Dare the pass that cuts through&quot;, and lesson 13, &quot;The lines&quot;.</li>
+<li>When you lost the ball, did you press straight away by holding <strong>✕</strong>? That is lesson 21, &quot;The five seconds&quot;. And did you do it at the right moment, on a back pass or a poor first touch? That is lesson 35, &quot;The triggers&quot;.</li>
+<li>Did you play first time, pressing just before receiving? That is lesson 22, &quot;Seeing first means playing faster&quot;.</li>
+<li>On the full-time screen, look at possession, then at shots. Did having the ball lead anywhere? That is lesson 11, &quot;Possessing is not keeping&quot;, and lesson 16, &quot;Count what counts&quot;.</li>
+<li>How many completed passes? Did the ball travel?</li>
+</ul>
+<p>Then the screen goes off and it is time to play against the wall: today’s challenge is waiting in the player space (chapter 15).</p>
+<h2 id="if-the-game-won-39-t-start">If the game won’t start</h2>
+<p>The first download weighs about 25 MB, which matters on a small data plan. The page gives four tips:</p>
+<ul>
+<li>Use an up-to-date browser: Chrome on Android, Safari on iPhone, Chrome or Edge on a computer.</li>
+<li>The first time, stay on Wi-Fi while it loads. After that it starts much faster, since the game stays cached.</li>
+<li>On iPhone, to play full screen: tap Share, then &quot;Add to Home Screen&quot;, and open the game from the icon.</li>
+<li>If it is slow, close other tabs and apps.</li>
+</ul>
+<p>If loading fails, the screen shows &quot;The game could not start:&quot; followed by the reason, for example when the loader did not download. Tap <strong>✕ Quit</strong>, check the connection, then try again with <strong>Play</strong>.</p>
+<aside class="callout callout-astuce"><div class="callout-kicker">Tip</div><div class="callout-title">Install the game like an app</div><p>Once added to the phone’s home screen, the game opens from its icon, full screen, like an app. It is also the easiest way for a child to find it again.</p>
+</aside>
+
+<aside class="callout callout-investisseur"><div class="callout-kicker">For investors</div><p><em>Lionceaux Football</em> is a free, install-free way into the world of the books for children. The players’ movements come from the CMU Graphics Lab motion capture database, the bodies from MakeHuman (CC0 licence), and the fonts are under open licences; the teams are the novel’s or made-up ones, with no real club or player. The game serves the Ndamba universe and makes children want to read; it does not replace training.</p>
+</aside>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-20.html" rel="prev"><small>Previous</small><b>20. Lionceaux, the saga of Kaydoudou and BriBri</b></a><a class="next" href="ch-22.html" rel="next"><small>Next</small><b>22. Why Africa can win the World Cup</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>

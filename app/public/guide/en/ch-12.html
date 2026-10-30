@@ -1,0 +1,315 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>12. Live analysis, The Ndamba Guide</title><meta name="description" content="The live tagger, its buttons and their codes, keyboard shortcuts, the clock and periods, corrections, the phone layout, and a simple method for tagging a match from the touchline, even with a volunteer parent."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-12"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-12.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12" aria-current="page"><b>12</b>Live analysis</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The season and video analysis</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><section class="part-opener" id="partie-5"><div class="part-num">Part V</div><h2>Analysis</h2><p>Coding a match, reading the Njangi Index, working with video.</p></section><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-5">Part V. Analysis</a><div class="ch-num">Chapter 12</div><h1 class="ch-title">Live analysis</h1><p class="ch-sum">The live tagger, its buttons and their codes, keyboard shortcuts, the clock and periods, corrections, the phone layout, and a simple method for tagging a match from the touchline, even with a volunteer parent.</p><p class="ch-time">10 min read</p></header><div class="prose"><p>Most coaches on the continent have no analyst and no raised camera. They have a phone and a touchline. Ndamba was built for them: a dark screen, big buttons, one tap per action, and the Njangi Index calculated while the match is being played. By half-time you already know whether your team is possessing with purpose. And because everyone tags with the same buttons and the same definitions, a match tagged in Douala can be compared with a match tagged in Bafoussam. That is where a shared measurement begins.</p>
+<h2 id="open-the-tagger">Open the tagger</h2>
+<p>There are three ways in:</p>
+<ul>
+<li>on the match sheet, the <strong>Start live analysis</strong> button (it becomes <strong>Resume live analysis</strong> if the match is already under way);</li>
+<li>in <strong>Analysis</strong>, the <strong>To tag live</strong> section, with <strong>Go live</strong> or <strong>Resume live</strong> for each upcoming match;</li>
+<li>after the match, in the report, the <strong>Fix the tags</strong> button.</li>
+</ul>
+<figure class="shot"><a href="../img/en/pro-match-sheet.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-match-sheet-720.webp 720w, ../img/en/pro-match-sheet.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-match-sheet.jpg" srcset="../img/en/pro-match-sheet-720.jpg 720w, ../img/en/pro-match-sheet.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The sheet of the demo's next match, with the black Start live analysis button at the top left, next to Enter the score and Observe." loading="lazy" decoding="async"></picture></a><figcaption>Live tagging starts from the match sheet.</figcaption></figure>
+<p>The tagger takes over the whole screen, with no menus. An upcoming match switches to <strong>Live</strong>, at the latest on the first tap. The cross at the top left (<strong>Leave live tagging</strong>) takes you back to <strong>Analysis</strong>; the match stays live and you can resume where you left off.</p>
+<p>On the <strong>Free</strong> plan, as on <strong>Player Premium</strong>, which does not include the coaching tools, one match can be tagged live. From the second one, the button on the match sheet shows a padlock and the <strong>Unlimited live analysis with Coach Pro</strong> box offers <strong>See plans</strong>. In <strong>Analysis</strong>, the <strong>To tag live</strong> section says so too. And if you open the tagger another way, from a link or a bookmark for instance, the same box appears instead of the buttons. A match that already has tags is never blocked. Payments are not connected yet: activating a plan is a demonstration today (chapter 24).</p>
+<h2 id="the-tagger-screen">The tagger screen</h2>
+<figure class="shot"><a href="../img/en/pro-live-tagger.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-live-tagger-720.webp 720w, ../img/en/pro-live-tagger.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-live-tagger.jpg" srcset="../img/en/pro-live-tagger-720.jpg 720w, ../img/en/pro-live-tagger.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The live tagger on a computer: at the top the score Étoile 0-0 Rapides, the clock at 00:00 with Start, the periods 1st, 2nd, ET1 and ET2, Undo, Log and Full time; in the centre the buttons in five families with their keyboard key; on the right the Live Index at 0.0 out of 100, the five sub-indices, the counters and the match log." loading="lazy" decoding="async"></picture></a><figcaption>The tagger on a large screen: buttons, clock and Live Index.</figcaption></figure>
+<p>At the top: the score (your team on the left, the opponent on the right), the clock, the periods, then on a large screen <strong>Undo</strong>, <strong>Log</strong>, the eye to observe, the keyboard for help, the settings and <strong>Full time</strong>. In the centre are the buttons, grouped in five families: <strong>Possession</strong>, <strong>Danger</strong>, <strong>Fixation</strong>, <strong>Transitions</strong> and <strong>Opponent</strong>. Each button shows its counter: how many actions of that kind have been tagged so far.</p>
+<p>On a large screen, the right-hand column shows the <strong>Live Index</strong> out of 100 with its rating (<strong>Possession without purpose</strong>, <strong>Solid Njangi</strong> and so on), the five sub-indices out of 20, eight counters (<strong>Passes attempted</strong>, <strong>Conservation (K)</strong>, <strong>Lines broken</strong>, <strong>Progressive</strong>, <strong>Box</strong>, <strong>Losses</strong>, <strong>5 s regains</strong>, <strong>Fixation actions</strong>) and the <strong>Match log</strong> with the latest tags.</p>
+<p>On every tap, the button flashes, the phone vibrates if it can, and a short message confirms the action with the minute, for example &quot;Pass 12’&quot;. When a tap adds other tags, the message says so too: &quot;Goal 12’&quot;, followed by &quot;Also added: Shot, On target&quot;.</p>
+<h2 id="the-buttons-and-their-codes">The buttons and their codes</h2>
+<p>The definitions are those of chapter 32 of The Njangi Code, with no variation. They also appear in the tagger’s help.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Button</th>
+<th>Code</th>
+<th>Key</th>
+<th>When to tap it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Possession</td>
+<td><strong>Pass</strong></td>
+<td>PASS_OK</td>
+<td>1</td>
+<td>Any pass that reaches a teammate</td>
+</tr>
+<tr>
+<td>Possession</td>
+<td><strong>Pass lost</strong></td>
+<td>PASS_LOST</td>
+<td>2</td>
+<td>A pass intercepted, overhit or out of play; it also counts as a loss</td>
+</tr>
+<tr>
+<td>Possession</td>
+<td><strong>Progressive</strong></td>
+<td>PROG</td>
+<td>3</td>
+<td>A pass or carry of at least 10 m towards the opponent’s goal</td>
+</tr>
+<tr>
+<td>Possession</td>
+<td><strong>Line broken</strong></td>
+<td>LINE</td>
+<td>4</td>
+<td>The ball gets past a line of at least two opponents and reaches a teammate who controls it</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>Final third</strong></td>
+<td>FINAL3</td>
+<td>5</td>
+<td>Ball controlled in the last 35 metres, once per entry</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>Box</strong></td>
+<td>BOX</td>
+<td>6</td>
+<td>Ball controlled in the opponent’s box</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>Shot</strong></td>
+<td>SHOT</td>
+<td>7</td>
+<td>Any shot, even blocked</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>On target</strong></td>
+<td>SHOT_IN</td>
+<td>8</td>
+<td>A shot that makes the keeper act or goes in</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>Goal</strong></td>
+<td>GOAL</td>
+<td>9</td>
+<td>A goal for us</td>
+</tr>
+<tr>
+<td>Fixation</td>
+<td><strong>Pins two</strong></td>
+<td>FIX2</td>
+<td>F</td>
+<td>A dribble or carry that draws two opponents, and we keep the ball</td>
+</tr>
+<tr>
+<td>Fixation</td>
+<td><strong>Switch</strong></td>
+<td>SWITCH</td>
+<td>S</td>
+<td>The ball changes side after the block has been drawn</td>
+</tr>
+<tr>
+<td>Transitions</td>
+<td><strong>Loss</strong></td>
+<td>LOSS</td>
+<td>L</td>
+<td>Any loss that is not a pass: duel, dribble, failed first touch</td>
+</tr>
+<tr>
+<td>Transitions</td>
+<td><strong>Won back 5 s</strong></td>
+<td>REGAIN5</td>
+<td>K</td>
+<td>Ball won back within 5 seconds of a loss</td>
+</tr>
+<tr>
+<td>Transitions</td>
+<td><strong>Ball won</strong></td>
+<td>REGAIN</td>
+<td>R</td>
+<td>Interception, tackle, keeper save, ball given back</td>
+</tr>
+<tr>
+<td>Opponent</td>
+<td><strong>Their shot</strong></td>
+<td>SHOT (them)</td>
+<td>A</td>
+<td>A shot by the opponent</td>
+</tr>
+<tr>
+<td>Opponent</td>
+<td><strong>Their goal</strong></td>
+<td>GOAL (them)</td>
+<td>B</td>
+<td>A goal by the opponent</td>
+</tr>
+</tbody></table></div>
+<p>A few rules come up all the time:</p>
+<ul>
+<li><strong>One action, several buttons.</strong> A pass that moves the ball 15 metres forward is tagged <strong>Pass</strong> then <strong>Progressive</strong>. A pass that breaks a line is tagged <strong>Pass</strong> then <strong>Line broken</strong>, never <strong>Progressive</strong> as well. A forward carry is tagged <strong>Progressive</strong> or <strong>Line broken</strong> on its own. A switch is tagged <strong>Pass</strong> then <strong>Switch</strong>.</li>
+<li><strong>One goal, one tap.</strong> <strong>Goal</strong> adds <strong>Shot</strong> and <strong>On target</strong> automatically, and <strong>On target</strong> adds <strong>Shot</strong>; likewise, <strong>Their goal</strong> adds <strong>Their shot</strong>. The confirmation message lists these additions. The score updates with <strong>Goal</strong> and <strong>Their goal</strong>.</li>
+<li><strong>The 5-second window.</strong> After a <strong>Loss</strong> or a <strong>Pass lost</strong>, a yellow 5-second ring appears on <strong>Ball won</strong>, which reads &quot;Won back! 5 s&quot; and counts down. A tap inside the window counts as <strong>Won back 5 s</strong>. Count under your breath: one, two, three, four, five. The <strong>Won back 5 s</strong> button also lets you tag it directly.</li>
+</ul>
+<h2 id="the-clock-and-the-periods">The clock and the periods</h2>
+<ol>
+<li>At kick-off, tap the clock (<strong>Start</strong>). Tap it again to <strong>Pause</strong>, then <strong>Resume</strong>.</li>
+<li>At half-time, tap <strong>2nd</strong>: the first-half clock stops and keeps its time.</li>
+<li>At the start of the second half, tap the clock. The minutes carry on: the second half starts at the 46th minute of a 2 x 45 match.</li>
+<li>For extra time, use <strong>ET1</strong> and <strong>ET2</strong> (15 minutes each when halves last 40 minutes or more, shorter for small-sided formats).</li>
+</ol>
+<p>When a period runs past its regular length, the clock holds at the end of the period and a red badge counts the added time; actions are timed, for example, &quot;45+2’&quot;. If the clock was started late, the settings offer <strong>Adjust the clock, First half</strong> with minus 1 min, minus 10 s, plus 10 s and plus 1 min.</p>
+<p>The clock is saved on the device: if the phone closes the tab or the page reloads, it picks up where it was. While it runs, the screen stays on when the browser allows it. Every tag is saved the moment you tap, even with no network; the <strong>Offline: everything is saved on the device.</strong> banner reminds you.</p>
+<h2 id="fix-things-without-stopping">Fix things without stopping</h2>
+<p><strong>Undo</strong> removes the last tap, with its whole group: undoing a <strong>Goal</strong> also removes its shot and shot on target, and the score goes back down. A message names the tap you undid, for example &quot;Undone: Goal&quot; (not one of the shots added with it) or &quot;Undone: Pass&quot;.</p>
+<p><strong>Log</strong> opens the list of every tag, period by period, newest first: the minute, the button, and the player if known. The bin deletes a tag. Tap one of your team’s tags to bring up the shirt numbers and credit a player, or change the one credited.</p>
+<p>The score can be fixed in the settings, under <strong>Fix the score</strong>, with plus and minus for each team.</p>
+<h2 id="credit-the-actions-to-players">Credit the actions to players</h2>
+<p>After each tap for your team, a strip appears at the bottom for 2.5 seconds: <strong>Who?</strong> followed by the action, then the shirt numbers of the match’s starters and substitutes. Tap a number: &quot;Credited to no. 8&quot;. Ignore the strip, and the action stays with the team. These credits fill the <strong>Match contribution</strong> in the player file and the journey (chapter 10). They change nothing in the Njangi Index.</p>
+<p>The tagger’s settings (<strong>Live settings</strong>) also offer:</p>
+<ul>
+<li><strong>Credit players</strong>: show the shirt numbers after each tap, or not;</li>
+<li><strong>Tag the opponent too</strong>: adds <strong>Their pass</strong> (Q), <strong>Their lost pass</strong> (W) and <strong>Their final third</strong> (E), which give possession share and field tilt in the report;</li>
+<li><strong>Full screen</strong>.</li>
+</ul>
+<p>The eye (<strong>Observe</strong>) opens the chapter 10 screen on top of the tagger, titled for example <strong>Observe, minute 34</strong>: the minute is already filled in, and the starters and substitutes are ready to pick.</p>
+<h2 id="on-a-phone">On a phone</h2>
+<figure class="shot tall"><a href="../img/en/m-pro-live.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/m-pro-live-720.webp 720w, ../img/en/m-pro-live.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/m-pro-live.jpg" srcset="../img/en/m-pro-live-720.jpg 720w, ../img/en/m-pro-live.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="The tagger on a phone: at the top the cross, the score and End, then the clock and periods, an Index band with the letters Pr, Pe, Fi, Re and Co, the buttons as large tiles, and at the bottom Undo, Log, Observe, Help and Settings." loading="lazy" decoding="async"></picture></a><figcaption>On a phone, in portrait: everything is within thumb’s reach.</figcaption></figure>
+<p>Hold the phone in portrait. At the top: the cross, the score and <strong>End</strong>. Below, the clock and periods, then an <strong>Index</strong> band with the five sub-indices as letters (Pr, Pe, Fi, Re, Co); tap it to open the <strong>Live Index</strong>. The buttons fill the rest of the screen, the most frequent ones larger. The bottom bar gives <strong>Undo</strong>, <strong>Log</strong> (with the number of tags), <strong>Observe</strong>, <strong>Help</strong> and <strong>Settings</strong>.</p>
+<p>On a computer, the keyboard is faster still. Numbers work on the top row and on the numeric keypad, without Shift, even on a French keyboard.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Space</td>
+<td>Start or pause the clock</td>
+</tr>
+<tr>
+<td>1 to 9</td>
+<td>Pass, Pass lost, Progressive, Line broken, Final third, Box, Shot, On target, Goal</td>
+</tr>
+<tr>
+<td>F, S, L, K, R</td>
+<td>Pins two, Switch, Loss, Won back 5 s, Ball won</td>
+</tr>
+<tr>
+<td>A, B</td>
+<td>Their shot, Their goal</td>
+</tr>
+<tr>
+<td>Q, W, E</td>
+<td>Their pass, Their lost pass, Their final third (when the opponent is tagged)</td>
+</tr>
+<tr>
+<td>U, Backspace, Ctrl+Z</td>
+<td>Undo the last tag</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Open the log</td>
+</tr>
+<tr>
+<td>H, ?</td>
+<td>Open the help</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>Close a panel</td>
+</tr>
+</tbody></table></div>
+<h2 id="end-the-match">End the match</h2>
+<p>At the final whistle, tap <strong>Full time</strong> (<strong>End</strong> on a phone). The <strong>End the match?</strong> window shows the score, which you can still adjust. Tap <strong>End and see the report</strong>: the match is marked as finished, the clock stops and the report opens (chapter 13). You can still make corrections: from the report, <strong>Fix the tags</strong> reopens the tagger with the banner &quot;Match finished: new tags complete the report.&quot;</p>
+<h2 id="the-touchline-method">The touchline method</h2>
+<p><strong>Who tags?</strong> Not the head coach: they have a match to manage. An assistant, a volunteer parent, an injured player or a substitute will do very well, provided they have read the table of codes and practised once on a training game or a video. The Njangi Code recommends tagging in pairs where possible: one follows the ball (<strong>Pass</strong>, <strong>Pass lost</strong>, <strong>Loss</strong>), the other tags everything else and counts the 5 seconds. As a pair, share a tablet or a computer.</p>
+<aside class="callout callout-attention"><div class="callout-kicker">Watch out</div><div class="callout-title">One device per match</div><p>Today, data lives on the device that records it, and tags from two devices cannot be merged. Give the volunteer the device that holds the team: the club phone, a tablet, or your own phone. A backup restored on another device replaces all of that device’s data. Sync between devices is planned.</p>
+</aside>
+
+<p><strong>Where to stand?</strong> Along the touchline, level with the halfway line, a little away from the bench so you are not caught up in the exchanges, and raised up if the ground allows: lines are easier to read from higher up. Brightness at maximum, <strong>Full screen</strong> on, battery charged.</p>
+<p><strong>Before kick-off.</strong> Check the lineup on the match sheet: the strip of shirt numbers uses the starters and substitutes. Open the tagger a few minutes before, and start the clock on the whistle.</p>
+<p><strong>What to tag first?</strong> Build up over a few matches:</p>
+<ol>
+<li>First match: <strong>Pass</strong>, <strong>Pass lost</strong>, <strong>Loss</strong> and <strong>Ball won</strong> (the 5-second window gives you the quick regains on its own), plus <strong>Goal</strong> and <strong>Their goal</strong>. Turn off <strong>Credit players</strong>.</li>
+<li>Next: <strong>Progressive</strong>, <strong>Line broken</strong>, <strong>Final third</strong>, <strong>Box</strong>, <strong>Shot</strong> and <strong>On target</strong>.</li>
+<li>Finally: <strong>Pins two</strong> and <strong>Switch</strong>, which require reading the opponent’s block, then crediting players and, with a third volunteer, <strong>Tag the opponent too</strong>.</li>
+</ol>
+<p>As long as a family is not tagged, its sub-indices stay at zero and the Index is lower. That is fine, but only compare matches tagged the same way: that is The Njangi Code’s rule, the same method every week.</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">For investors</div><div class="callout-title">Every tagged match counts twice</div><p>A tagged match serves the coach first, from half-time onwards. It also feeds a shared base: matches tagged with the same definitions make it possible to set reference values of the Njangi Index by age. The proposed target for 2026 and 2027 is 1,000 matches tagged in the pilot clubs and academies (chapter 23).</p>
+</aside>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-11.html" rel="prev"><small>Previous</small><b>11. Prepare a match</b></a><a class="next" href="ch-13.html" rel="next"><small>Next</small><b>13. The match report and the Njangi Index</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>

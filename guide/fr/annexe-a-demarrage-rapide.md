@@ -63,5 +63,5 @@ Pour tous les profils, deux règles avant de commencer. Vos données restent sur
 1. Créez votre espace avec le rôle **Parent** et l'âge de votre enfant (chapitre 5).
 2. Lisez l'encadré **Pour les parents** sur l'accueil (chapitre 17).
 3. Lisez avec votre enfant le roman *Lionceaux*, dans **Les livres** : chaque chapitre se termine par une Leçon du Ballon (chapitre 20).
-4. Si le coach vous a confié une sauvegarde, restaurez-la depuis **Réglages**. Attention : la restauration remplace tout ce que contient le navigateur, profil compris ; le profil devient celui du coach. Dans **Réglages**, remettez donc votre nom et le rôle **Parent**, puis **Enregistrer le profil**. Ouvrez ensuite **Mon parcours** et choisissez la fiche de votre enfant (chapitre 17).
+4. Si le coach vous a confié une sauvegarde, restaurez-la depuis **Réglages**. Attention : la restauration remplace tout ce que contient le navigateur, profil compris ; le profil devient celui du coach. Dans **Réglages**, remettez donc votre nom et le rôle **Parent**, puis **Enregistrer le profil**. Touchez ensuite la carte **Le parcours de votre enfant** et choisissez sa fiche (chapitre 17).
 5. Lisez le chapitre 25 : ce que Ndamba garde, où, et ce qui ne quitte jamais votre appareil.

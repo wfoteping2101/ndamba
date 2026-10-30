@@ -1,0 +1,219 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>15. L'espace joueur, Le Guide Ndamba</title><meta name="description" content="Les défis du jour, les paliers et la série pour les jeunes ; la semaine, la forme, la charge et le dernier match pour les joueurs de 16 ans et plus. Et comment relier son profil à sa fiche de l'effectif."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-15"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>Le Guide Ndamba</span></a><nav class="bar-actions"><a class="lang" href="../en/ch-15.html" hreflang="en" lang="en">EN</a><button id="aa" type="button" aria-label="Taille du texte">Aa</button><button id="toc-btn" type="button">Sommaire</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Sommaire"><div class="drawer-head"><a href="./">Couverture et sommaire</a><button id="close" type="button">Fermer</button></div><ol class="toc-list"><li class="toc-part"><span>Partie I. Comprendre Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba en dix minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>La philosophie Njangi</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profils, six chemins</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>La carte de la plateforme</a></li></ol></li><li class="toc-part"><span>Partie II. Démarrer</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Créer son espace avec Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>L'accueil, la navigation et les réglages</a></li></ol></li><li class="toc-part"><span>Partie III. Entraîner</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>La bibliothèque des 64 exercices</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Construire une séance</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Planifier la semaine</a></li></ol></li><li class="toc-part"><span>Partie IV. L’équipe et les matchs</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>L'effectif et la fiche joueur</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Préparer un match</a></li></ol></li><li class="toc-part"><span>Partie V. Analyser</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>L'analyse en direct</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>Le rapport de match et l'Indice Njangi</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>La saison et l'analyse vidéo</a></li></ol></li><li class="toc-part"><span>Partie VI. Le joueur et sa famille</span><ol><li><a href="ch-15.html" data-page="ch-15" aria-current="page"><b>15</b>L'espace joueur</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>Les Leçons du Ballon, le carnet et le parcours</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Les parents</a></li></ol></li><li class="toc-part"><span>Partie VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, l'agent de Ndamba</a></li></ol></li><li class="toc-part"><span>Partie VIII. Les livres et le jeu</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>Le Code Njangi, le livre de la méthode</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, la saga de Kaydoudou et BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, le jeu</a></li></ol></li><li class="toc-part"><span>Partie IX. Porter le trophée</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Pourquoi l'Afrique peut gagner la Coupe du monde</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>Le plan 2026-2041 : cinq étapes vers le trophée</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>Le modèle économique</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Confiance, données et jeunes joueurs</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>La feuille de route</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Démarrage rapide par profil</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>Glossaire français et anglais</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Toutes les pages de la plateforme</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>Les 64 exercices</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions et réponses</a></li></ol></li></ol></div></div><main><section class="part-opener" id="partie-6"><div class="part-num">Partie VI</div><h2>Le joueur et sa famille</h2><p>L’espace joueur, les Leçons du Ballon, le carnet et les parents.</p></section><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-6">Partie VI. Le joueur et sa famille</a><div class="ch-num">Chapitre 15</div><h1 class="ch-title">L’espace joueur</h1><p class="ch-sum">Les défis du jour, les paliers et la série pour les jeunes ; la semaine, la forme, la charge et le dernier match pour les joueurs de 16 ans et plus. Et comment relier son profil à sa fiche de l’effectif.</p><p class="ch-time">11 min de lecture</p></header><div class="prose"><p>Beaucoup de joueurs africains progressent seuls : dans une cour, contre le mur d’une maison, avec un ballon et deux bouteilles en guise de plots. Ce temps compte autant que l’entraînement du club, mais personne ne le voit ni ne le guide. L’espace joueur lui donne une forme : un défi précis, un objectif chiffré, un résultat noté, une courbe qui monte. Et il grandit avec le joueur : un enfant de dix ans y trouve des défis et des paliers, un milieu de vingt-huit ans sa semaine de match, sa forme du matin et sa charge. Les deux parlent la langue du Code Njangi.</p>
+<h2 id="deux-espaces-selon-l-39-age">Deux espaces, selon l’âge</h2>
+<p>L’espace joueur s’ouvre par <strong>Moi</strong>, puis <strong>Espace joueur</strong>, dans le menu. La page d’<strong>Accueil</strong> d’un profil joueur change aussi de visage. Ndamba choisit la version selon l’âge du joueur, qu’il lit dans cet ordre : l’année de naissance de sa fiche dans l’effectif, puis la catégorie de son profil (U13, U17, Seniors, Pro), puis la catégorie de son équipe.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Âge du joueur</th>
+<th>Accueil et espace joueur</th>
+<th>Carnet</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Moins de 16 ans</td>
+<td>L’espace jeune : défis du jour, XP, paliers, série, Leçons du Ballon</td>
+<td><strong>Mon carnet du Njangi</strong></td>
+</tr>
+<tr>
+<td>16 ans et plus (U17, U19, U21, seniors, pros)</td>
+<td>L’espace performance : semaine, forme, charge, dernier match, objectifs</td>
+<td><strong>Mon journal de joueur</strong></td>
+</tr>
+</tbody></table></div>
+<p>Un parent garde toujours l’espace jeune de son enfant (chapitre 17). Un entraîneur qui ouvre l’espace joueur voit la version qui correspond à l’âge de son équipe, en aperçu.</p>
+<h2 id="l-39-accueil-du-jeune-joueur">L’accueil du jeune joueur</h2>
+<figure class="shot"><a href="../img/fr/youth-player-home-linked.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/youth-player-home-linked-720.webp 720w, ../img/fr/youth-player-home-linked.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/youth-player-home-linked.jpg" srcset="../img/fr/youth-player-home-linked-720.jpg 720w, ../img/fr/youth-player-home-linked.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La page d'accueil de BriBri, 12 ans : le salut, la devise, les chiffres XP, Série et Défis, la carte Mon parcours, puis le défi du jour et la carte Ma progression." loading="lazy" decoding="async"></picture></a><figcaption>L’accueil d’un jeune joueur dans la démo académie U13.</figcaption></figure>
+<p>L’accueil d’un jeune joueur se lit de haut en bas, comme une journée.</p>
+<ul>
+<li>En haut, le salut avec son prénom, la date, et une phrase qui tourne : <strong>La devise</strong>, la Leçon du Ballon du jour, puis <strong>Notre mantra</strong>. La flèche à droite de la phrase passe à la suivante. À côté, trois chiffres : <strong>XP</strong>, <strong>Série</strong> et <strong>Défis</strong> (combien des trois défis du jour sont faits).</li>
+<li>La carte <strong>Mon parcours</strong> résume la saison en une ligne, par exemple « Cette saison : 15 séances, 4 matchs, 2 objectifs en cours. » Elle ouvre le parcours (chapitre 16).</li>
+<li><strong>Le défi du jour</strong> montre le premier défi, ouvert, prêt à être noté, et les deux autres en dessous. Le lien <strong>Les trois défis du jour</strong> mène à l’espace joueur.</li>
+<li>La carte <strong>Ma progression</strong> donne le palier, ce qu’il manque pour le suivant, la série, les <strong>Cibles atteintes</strong>, les <strong>Leçons</strong> comprises sur 40, et <strong>Mes 7 derniers jours</strong> (un rond coché par jour avec un défi). Le bouton <strong>Mon espace joueur</strong> ouvre l’espace complet.</li>
+<li><strong>La leçon du jour</strong> affiche une page du carnet de BriBri avec son schéma (chapitre 16).</li>
+<li>À droite : <strong>Le roman</strong>, le <strong>Prochain match</strong> avec un petit rituel (« Le match est dans 2 jours : prépare ton sac et couche-toi tôt la veille. »), et <strong>Mon carnet du Njangi</strong> avec la dernière page écrite.</li>
+</ul>
+<p>Sans équipe, une carte <strong>Tu joues dans une équipe ?</strong> propose <strong>Ajouter mon équipe</strong>. Les défis marchent aussi sans équipe.</p>
+<h2 id="les-defis-du-jour">Les défis du jour</h2>
+<figure class="shot"><a href="../img/fr/youth-player-space-linked.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/youth-player-space-linked-720.webp 720w, ../img/fr/youth-player-space-linked.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/youth-player-space-linked.jpg" srcset="../img/fr/youth-player-space-linked-720.jpg 720w, ../img/fr/youth-player-space-linked.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="L'espace joueur de BriBri : le palier 1 Les fondations, la barre d'XP, les chiffres Série, Défis du jour, Cibles atteintes et Jours actifs, les raccourcis de la page et le début des défis du jour." loading="lazy" decoding="async"></picture></a><figcaption>Le haut de l’espace jeune.</figcaption></figure>
+<p>L’espace jeune commence par le palier, dans un anneau, avec son nom (<strong>Les fondations</strong> pour commencer) et la barre d’XP. Dessous, quatre chiffres : <strong>Série</strong>, <strong>Défis du jour</strong>, <strong>Cibles atteintes</strong> et <strong>Jours actifs</strong>. Une rangée de raccourcis mène aux sections de la page : <strong>Défis du jour</strong>, <strong>Progrès</strong>, <strong>Mon regard</strong>, <strong>Tous les défis</strong>, <strong>Historique</strong>.</p>
+<p>Chaque jour, <strong>Les défis du jour</strong> proposent trois défis, les mêmes pour tous les joueurs à la même date : un défi de maîtrise du ballon ou de conduite, un défi contre le mur, de prise d’information ou de finition, et un défi physique. Ils sont tirés d’une bibliothèque de 32 défis à faire seul, contre un mur ou avec quelques plots. Chacun travaille une des dix compétences de la grille du Code Njangi et renvoie à une Leçon du Ballon : <strong>Les dix jongles du ballon de Mami</strong> reprend le rituel des deux frères avant un grand match.</p>
+<p>Pour faire un défi et le noter :</p>
+<ol>
+<li>Lisez la carte : la durée (par exemple <strong>4 min</strong>), la compétence travaillée, et l’<strong>Objectif</strong> (« 60 touches ou plus »).</li>
+<li>Touchez <strong>Comment faire et noter</strong> si la carte est fermée. Vous voyez les consignes, le <strong>Conseil</strong>, et le matériel : <strong>Un ballon</strong>, <strong>Un mur</strong>, <strong>Des plots</strong>, <strong>Un partenaire</strong> ou <strong>De la place</strong>. Les défis physiques ajoutent toujours <strong>De l’eau</strong>.</li>
+<li>Faites le défi, puis écrivez votre meilleur résultat dans le champ, sous la question du défi (« Ton meilleur nombre de touches en 30 secondes »).</li>
+<li>Touchez <strong>Noter</strong>. Le gain d’XP s’affiche (par exemple <strong>+25 XP</strong>), et la carte indique « Aujourd’hui : 60 touches, objectif atteint ».</li>
+</ol>
+<p>L’XP se calcule tout seul, à partir des résultats notés : 10 XP pour un défi fait, 10 XP de plus si l’objectif est atteint, 5 XP de bonus si c’est un défi du jour. Un même défi rapporte une fois par jour : si vous le refaites, c’est le meilleur résultat qui compte, et un deuxième essai n’ajoute que les 10 XP de l’objectif s’il est enfin atteint. Le palier monte tout seul.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Palier</th>
+<th>Nom</th>
+<th>À partir de</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Les fondations</td>
+<td>0 XP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>La régularité</td>
+<td>100 XP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Le cœur</td>
+<td>250 XP</td>
+</tr>
+<tr>
+<td>4</td>
+<td>La raison</td>
+<td>450 XP</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Les yeux</td>
+<td>700 XP</td>
+</tr>
+<tr>
+<td>6</td>
+<td>La carte</td>
+<td>1 000 XP</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Le souffle</td>
+<td>1 400 XP</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Le Njangi complet</td>
+<td>2 000 XP</td>
+</tr>
+</tbody></table></div>
+<p>Les noms suivent le voyage du roman : la régularité d’abord, puis les cinq pièces du Njangi. Quand un palier est franchi, un bandeau <strong>Palier 3 atteint</strong> s’affiche quelques secondes. La <strong>Série</strong> compte les jours de suite avec au moins un défi ; elle tient jusqu’à la fin de la journée suivante, puis repart à zéro.</p>
+<aside class="callout callout-astuce"><div class="callout-kicker">Astuce</div><div class="callout-title">La santé avant la série</div><p>Sous les défis, deux rappels accompagnent toujours le joueur : <strong>Bois de l’eau</strong> (« Une gourde à côté du mur, toujours ») et <strong>Repose-toi</strong> (« Un jour sans défi par semaine. Échauffe-toi cinq minutes avant les sprints. Si tu as mal, arrête-toi et préviens ton entraîneur ou tes parents. »). Une série qui s’arrête un jour de repos n’est pas un échec.</p>
+</aside>
+
+<h2 id="progres-records-et-historique">Progrès, records et historique</h2>
+<p>La section <strong>Ma progression</strong> apparaît dès le premier résultat noté. Elle contient trois blocs :</p>
+<ul>
+<li><strong>XP des 14 derniers jours</strong> : une barre par jour, aujourd’hui en terre rouge.</li>
+<li><strong>Ma courbe</strong> : choisissez un défi, et vous voyez vos meilleurs résultats face à la ligne de l’objectif, avec le <strong>Record</strong> (pour un slalom chronométré, plus c’est bas, mieux c’est).</li>
+<li><strong>Mes records</strong> : les défis les plus pratiqués, avec le meilleur résultat et une étoile quand l’objectif est atteint.</li>
+</ul>
+<p><strong>Mon historique</strong> liste les derniers résultats. Une erreur de frappe se corrige avec la corbeille, et <strong>Annuler</strong> reste proposé quelques secondes. La page le rappelle : « Tout reste sur cet appareil : rien n’est envoyé sur internet. »</p>
+<h2 id="mon-regard-se-juger-soi-meme">Mon regard : se juger soi-même</h2>
+<p>La section <strong>Mon regard sur moi</strong> demande au joueur où il en est sur les dix compétences de la grille : le scan, le contrôle orienté, la passe avec intention, la conduite, le dribble njangi, les appels et courses pour les autres, la communication, la protection du ballon, la contre-pression et la prise de décision. Chaque ligne a une phrase simple (« Je regarde par-dessus l’épaule avant de recevoir. ») et quatre boutons : <strong>1</strong> « Je découvre », <strong>2</strong> « Je progresse », <strong>3</strong> « Je maîtrise », <strong>4</strong> « Je l’apprends aux autres ».</p>
+<p>Le radar <strong>Mes dix compétences</strong> se dessine à mesure. Si l’entraîneur a évalué le joueur dans l’effectif, et que le profil est relié à sa fiche (par le même nom ou par <strong>Mon parcours</strong>), une deuxième forme apparaît, <strong>Le regard de mon coach</strong>, avec ce conseil : « Si vous ne voyez pas la même chose, parlez-en après l’entraînement. » Ce regard sur soi ne sort pas de l’appareil (« Gardé seulement sur cet appareil. ») ; il fait partie de la sauvegarde exportée depuis <strong>Réglages</strong>, et <strong>Tout effacer</strong> le supprime.</p>
+<p>Plus bas, <strong>Tous les défis</strong> présente les 32 défis en liste, avec des filtres : <strong>Tous</strong>, <strong>Ballon</strong>, <strong>Conduite</strong>, <strong>Mur</strong>, <strong>Les yeux</strong>, <strong>Finition</strong>, <strong>Physique</strong>. Chaque ligne s’ouvre sur place, avec le même formulaire pour noter. En bas de page, deux portes : <strong>Les Leçons du Ballon</strong> et <strong>Mon carnet du Njangi</strong> (chapitre 16).</p>
+<figure class="shot tall"><a href="../img/fr/youth-player-space-linked-full.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/youth-player-space-linked-full-720.webp 720w, ../img/fr/youth-player-space-linked-full.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/youth-player-space-linked-full.jpg" srcset="../img/fr/youth-player-space-linked-full-720.jpg 720w, ../img/fr/youth-player-space-linked-full.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="5625" alt="L'espace jeune en entier : les trois défis du jour, les rappels sur l'eau et le repos, Ma progression, Mon regard sur moi avec son radar, et la liste de Tous les défis." loading="lazy" decoding="async"></picture></a><figcaption>Toute la page de l’espace jeune, de haut en bas.</figcaption></figure>
+<h2 id="l-39-espace-performance-a-partir-de-16-ans">L’espace performance, à partir de 16 ans</h2>
+<p>À partir de 16 ans, le joueur s’entraîne sur la semaine du match. Son espace suit le chapitre 29 du Code Njangi : un questionnaire de forme chaque matin, l’effort ressenti après chaque séance, et la comparaison avec ses propres semaines, jamais avec un coéquipier.</p>
+<figure class="shot"><a href="../img/fr/pro-player-home-linked.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-player-home-linked-720.webp 720w, ../img/fr/pro-player-home-linked.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-player-home-linked.jpg" srcset="../img/fr/pro-player-home-linked-720.jpg 720w, ../img/fr/pro-player-home-linked.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="L'accueil de Steve Ndjock, milieu intérieur de l'Étoile de la Côte : Forme à noter, Charge 7 j, Match J-2, puis la semaine vers le match contre les Rapides de Kribi et la carte du prochain match." loading="lazy" decoding="async"></picture></a><figcaption>L’accueil d’un joueur senior dans la démo club pro.</figcaption></figure>
+<p>L’accueil d’un joueur de 16 ans et plus ouvre sur une bande sombre : le salut, le rôle du jour dans la semaine (« Aujourd’hui, MD-2, vitesse » et le titre de la séance), son poste, son numéro et son club, et trois chiffres : <strong>Forme</strong> (sur 25, ou <strong>À noter</strong>), <strong>Charge 7 j</strong> en UA, et <strong>Match</strong> (J-2, avec l’Indice du dernier match). Suivent la semaine, le prochain match, la forme, la charge, le dernier match, les objectifs et la saison. L’espace performance (<strong>Espace joueur</strong>) reprend ces cartes en détail. Son en-tête <strong>Espace performance</strong> affiche six chiffres (forme, charge, matchs joués, minutes jouées, dernier Indice, objectifs en cours) et des raccourcis : <strong>La semaine</strong>, <strong>Forme et charge</strong>, <strong>Dernier match</strong>, <strong>Objectifs</strong>, <strong>Auto-évaluation</strong> et <strong>Mon parcours</strong>.</p>
+<p><strong>La semaine.</strong> La carte <strong>Ma semaine</strong> montre sept jours : ceux qui mènent au prochain match quand il tombe dans les six jours, sinon du lundi au dimanche. Chaque jour porte son rôle (<strong>MD+1</strong>, <strong>MD-4</strong>, <strong>Repos</strong>, <strong>Match</strong>), des barres d’<strong>Intensité habituelle</strong> et un point quand l’effort a été noté. Touchez un jour : vous voyez la séance du staff, ses blocs minute par minute avec le code de chaque exercice, pourquoi ce jour existe dans la semaine, et les <strong>Consignes du staff</strong>. La carte <strong>Prochain match</strong> donne le compte à rebours, le lieu, <strong>Ma place</strong> dans la composition prévue (« Titulaire prévu : Milieu intérieur, rôle du 8 »), <strong>Le plan de jeu</strong> (<strong>Avec le ballon</strong>, <strong>À la perte</strong>) et le bouton <strong>Feuille de match</strong>.</p>
+<p><strong>Forme et charge.</strong> Chaque matin, avant l’entraînement :</p>
+<ol>
+<li>Dans <strong>Ma forme du jour</strong>, notez de 1 à 5 le <strong>Sommeil</strong>, la <strong>Fraîcheur</strong>, les <strong>Courbatures</strong>, l’<strong>Humeur</strong> et le <strong>Stress</strong>.</li>
+<li>Touchez <strong>Enregistrer ma forme</strong>. La note sur 25 s’affiche avec son niveau : <strong>Frais</strong> (20 et plus), <strong>Correct</strong> (15 à 19) ou <strong>Entamé</strong>. Après cinq jours de réponses, la carte la compare à votre moyenne des 28 derniers jours.</li>
+<li>Environ trente minutes après la séance, sous <strong>Après la séance</strong>, répondez à « À quel point la séance a-t-elle été difficile ? » de 0 à 10, vérifiez la <strong>Durée (minutes)</strong>, puis <strong>Enregistrer l’effort</strong>. Une séance seule ou un footing se note avec <strong>Noter une séance individuelle</strong>.</li>
+</ol>
+<p>L’effort multiplié par les minutes donne la charge de la séance, en unités arbitraires (UA). La carte <strong>Ma charge</strong> additionne les <strong>7 derniers jours</strong> et les compare à la <strong>Moyenne des 3 semaines d’avant</strong> : plus de 30 % au-dessus, c’est un <strong>Pic de charge</strong>, avec le conseil d’en parler au staff ; plus de 30 % en dessous, une <strong>Semaine allégée</strong> ; entre les deux, une <strong>Charge régulière</strong>. Si les trois dernières notes de forme sont nettement sous la moyenne, une alerte s’affiche : « Ta forme baisse depuis trois jours ». Les réponses restent sur l’appareil.</p>
+<p><strong>Dernier match.</strong> La carte <strong>Mon dernier match</strong> donne l’<strong>Indice Njangi de l’équipe</strong> et ses cinq sous-indices, puis <strong>Ma part dans le jeu</strong> : temps de jeu, passes réussies, <strong>Actions qui font avancer</strong> et <strong>Reprises en 5 secondes</strong>, avec leur part dans le total de l’équipe. Dans l’espace performance, chaque action taguée à votre nom se place sur une ligne du match, minute par minute. Les boutons mènent au <strong>Rapport du match</strong> et à la vidéo.</p>
+<p><strong>Objectifs et saison.</strong> <strong>Mes objectifs</strong> liste les objectifs du cycle (un à trois, pour six à huit semaines), qui les a fixés (<strong>Fixé par le staff</strong> ou <strong>Mon objectif</strong>), le temps avant le bilan et, dans l’espace performance, <strong>Les exercices du Code Njangi qui les travaillent</strong>. <strong>Ma saison</strong> donne matchs, minutes, présences et la <strong>Dernière observation du staff</strong>. Enfin, <strong>Mon regard sur mon jeu</strong> reprend l’auto-évaluation sur la grille du staff (<strong>Découverte</strong>, <strong>Construction</strong>, <strong>Acquis</strong>, <strong>Référence</strong>), à côté de ce que le staff a noté.</p>
+<figure class="shot tall"><a href="../img/fr/pro-player-space-linked-full.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-player-space-linked-full-720.webp 720w, ../img/fr/pro-player-space-linked-full.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-player-space-linked-full.jpg" srcset="../img/fr/pro-player-space-linked-full-720.jpg 720w, ../img/fr/pro-player-space-linked-full.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="5625" alt="L'espace performance de Steve Ndjock en entier : la semaine, Forme et charge, le dernier match contre le Météore de Bafoussam avec ses actions taguées, les objectifs, la saison et l'auto-évaluation face au staff." loading="lazy" decoding="async"></picture></a><figcaption>L’espace performance, de la semaine à l’auto-évaluation.</figcaption></figure>
+<h2 id="qui-es-tu-dans-l-39-equipe-relier-son-profil-a-sa-fiche">Qui es-tu dans l’équipe ? Relier son profil à sa fiche</h2>
+<p>Les minutes, les objectifs, les observations du staff et le dernier match viennent de la fiche du joueur dans l’effectif. Ndamba doit donc savoir quelle fiche est la vôtre. Si votre profil porte le même nom que votre fiche, le lien se fait tout seul. Sinon, l’espace performance affiche « Ta fiche n’est pas encore reliée. » avec le bouton <strong>Relier mon profil</strong> ; chez les plus jeunes, c’est la carte <strong>Mon parcours</strong> qui mène au même écran.</p>
+<ol>
+<li>Touchez <strong>Relier mon profil</strong>, ou la carte <strong>Mon parcours</strong>.</li>
+<li>L’écran <strong>Qui es-tu dans l’équipe ?</strong> affiche l’effectif de votre équipe, chaque joueur avec son numéro.</li>
+<li>Touchez votre nom. Le parcours s’ouvre, et l’accueil, l’espace joueur et les objectifs se remplissent avec vos données.</li>
+</ol>
+<figure class="shot"><a href="../img/fr/pro-player-own-journey.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-player-own-journey-720.webp 720w, ../img/fr/pro-player-own-journey.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-player-own-journey.jpg" srcset="../img/fr/pro-player-own-journey-720.jpg 720w, ../img/fr/pro-player-own-journey.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="L'écran Qui es-tu dans l'équipe ? de l'Étoile de la Côte : chaque fiche de l'effectif est un bouton avec le numéro et le nom du joueur." loading="lazy" decoding="async"></picture></a><figcaption>Choisir sa fiche dans l’effectif, une seule fois.</figcaption></figure>
+<p>Un parent voit le même écran sous le titre <strong>Quelle est la fiche de votre enfant ?</strong> (chapitre 17). Un membre du staff qui ouvre l’espace performance voit <strong>Aperçu pour le staff.</strong> et <strong>Choisir un joueur</strong>, pour le voir comme un de ses joueurs.</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">Pour l’investisseur</div><p>L’espace joueur transforme le travail invisible (la cour, le mur, le matin avant l’entraînement) en données régulières et comparables, sur le même modèle de jeu que le club. Aujourd’hui, tout l’espace joueur est ouvert quelle que soit la formule, et les données restent sur l’appareil du joueur. C’est la base de la continuité que vise le plan : un même joueur suivi de ses défis d’enfant jusqu’à sa charge de senior.</p>
+</aside>
+</div></article><nav class="pager" aria-label="Précédent / Suivant"><a class="prev" href="ch-14.html" rel="prev"><small>Précédent</small><b>14. La saison et l'analyse vidéo</b></a><a class="next" href="ch-16.html" rel="next"><small>Suivant</small><b>16. Les Leçons du Ballon, le carnet et le parcours</b></a></nav></main><script>(function(){var K='guide.fr';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','fr')}catch(e){}
+})();</script></body></html>

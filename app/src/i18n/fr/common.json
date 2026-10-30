@@ -8,7 +8,8 @@
     "openApp": "Ouvrir l'app",
     "menu": "Menu",
     "close": "Fermer le menu",
-    "football": "Jeu de foot"
+    "football": "Jeu de foot",
+    "guide": "Le guide"
   },
   "footer": {
     "motto": "Le ballon doit voyager. Mais il doit savoir où il va.",
@@ -24,7 +25,8 @@
     "brand": "La marque Ndamba",
     "premium": "Premium",
     "rights": "Lemon Network Solutions",
-    "home": "Accueil Ndamba"
+    "home": "Accueil Ndamba",
+    "guide": "Le Guide Ndamba"
   },
   "app": {
     "home": "Accueil",
@@ -56,7 +58,8 @@
     "mainNav": "Navigation principale",
     "teamLine": "{{age}}, {{format}} contre {{format}}, {{formation}}",
     "switchTeam": "Changer d'équipe",
-    "football": "Jeu de foot"
+    "football": "Jeu de foot",
+    "guide": "Guide"
   },
   "actions": {
     "save": "Enregistrer",

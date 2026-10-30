@@ -1,0 +1,259 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>10. L'effectif et la fiche joueur, Le Guide Ndamba</title><meta name="description" content="L'effectif de l'équipe, la fiche de chaque joueur et ses dix compétences, son parcours saison après saison, et l'écran Observer qui nourrit ce parcours en quelques touches."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-10"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>Le Guide Ndamba</span></a><nav class="bar-actions"><a class="lang" href="../en/ch-10.html" hreflang="en" lang="en">EN</a><button id="aa" type="button" aria-label="Taille du texte">Aa</button><button id="toc-btn" type="button">Sommaire</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Sommaire"><div class="drawer-head"><a href="./">Couverture et sommaire</a><button id="close" type="button">Fermer</button></div><ol class="toc-list"><li class="toc-part"><span>Partie I. Comprendre Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba en dix minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>La philosophie Njangi</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profils, six chemins</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>La carte de la plateforme</a></li></ol></li><li class="toc-part"><span>Partie II. Démarrer</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Créer son espace avec Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>L'accueil, la navigation et les réglages</a></li></ol></li><li class="toc-part"><span>Partie III. Entraîner</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>La bibliothèque des 64 exercices</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Construire une séance</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Planifier la semaine</a></li></ol></li><li class="toc-part"><span>Partie IV. L’équipe et les matchs</span><ol><li><a href="ch-10.html" data-page="ch-10" aria-current="page"><b>10</b>L'effectif et la fiche joueur</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Préparer un match</a></li></ol></li><li class="toc-part"><span>Partie V. Analyser</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>L'analyse en direct</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>Le rapport de match et l'Indice Njangi</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>La saison et l'analyse vidéo</a></li></ol></li><li class="toc-part"><span>Partie VI. Le joueur et sa famille</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>L'espace joueur</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>Les Leçons du Ballon, le carnet et le parcours</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Les parents</a></li></ol></li><li class="toc-part"><span>Partie VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, l'agent de Ndamba</a></li></ol></li><li class="toc-part"><span>Partie VIII. Les livres et le jeu</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>Le Code Njangi, le livre de la méthode</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, la saga de Kaydoudou et BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, le jeu</a></li></ol></li><li class="toc-part"><span>Partie IX. Porter le trophée</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Pourquoi l'Afrique peut gagner la Coupe du monde</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>Le plan 2026-2041 : cinq étapes vers le trophée</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>Le modèle économique</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Confiance, données et jeunes joueurs</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>La feuille de route</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Démarrage rapide par profil</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>Glossaire français et anglais</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Toutes les pages de la plateforme</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>Les 64 exercices</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions et réponses</a></li></ol></li></ol></div></div><main><section class="part-opener" id="partie-4"><div class="part-num">Partie IV</div><h2>L’équipe et les matchs</h2><p>L’effectif, la fiche de chaque joueur et la préparation des matchs.</p></section><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-4">Partie IV. L’équipe et les matchs</a><div class="ch-num">Chapitre 10</div><h1 class="ch-title">L’effectif et la fiche joueur</h1><p class="ch-sum">L’effectif de l’équipe, la fiche de chaque joueur et ses dix compétences, son parcours saison après saison, et l’écran Observer qui nourrit ce parcours en quelques touches.</p><p class="ch-time">10 min de lecture</p></header><div class="prose"><p>Dans beaucoup de clubs et d’académies, l’histoire d’un joueur tient dans la mémoire de son entraîneur et dans un cahier. Elle se perd quand l’entraîneur s’en va, quand l’enfant monte de catégorie ou quand le cahier prend la pluie. Ndamba part de l’idée inverse : chaque joueur a une fiche, chaque séance et chaque match y laissent une trace, et cette trace le suit d’une saison à l’autre. C’est la continuité dont parle ce guide, appliquée à un seul joueur. Ce chapitre présente l’effectif, la fiche joueur, le parcours et l’écran <strong>Observer</strong>.</p>
+<h2 id="l-39-effectif-en-un-coup-d-39-il">L’effectif en un coup d’œil</h2>
+<p>Ouvrez <strong>Équipe</strong> dans le menu, sous le groupe <strong>Équipe</strong> (sur téléphone, dans l’onglet <strong>Plus</strong>). Le haut de la page est une plaque verte au nom de l’équipe : la mention <strong>Effectif</strong>, la catégorie, le format (<strong>11 contre 11</strong>, par exemple), le système de départ, puis trois chiffres. <strong>Joueurs</strong> et <strong>Gardiens</strong> comptent l’effectif ; <strong>Niveau moyen</strong> donne la moyenne, sur 4, des compétences évaluées, sans compter les joueurs encore jamais évalués.</p>
+<p>Quatre boutons servent au quotidien : <strong>Ajouter un joueur</strong>, <strong>Importer une liste</strong>, <strong>Modifier</strong> (l’équipe) et <strong>Observer</strong>. Sur un grand écran, un petit terrain montre la composition que Ndamba proposerait dans votre système, avec la logique du bouton <strong>Composer automatiquement</strong> du chapitre 11.</p>
+<figure class="shot"><a href="../img/fr/pro-roster.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-roster-720.webp 720w, ../img/fr/pro-roster.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-roster.jpg" srcset="../img/fr/pro-roster-720.jpg 720w, ../img/fr/pro-roster.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La page Équipe de la démo club pro : la plaque verte avec 22 joueurs, 3 gardiens et un niveau moyen de 3,2 sur 4, les boutons Ajouter un joueur, Importer une liste, Modifier et Observer, un petit terrain en 4-3-3, puis les lignes Gardiens et Défense." loading="lazy" decoding="async"></picture></a><figcaption>L’effectif, rangé par lignes, avec la composition proposée à droite.</figcaption></figure>
+<p>Sous la plaque, les joueurs sont rangés en quatre lignes : <strong>Gardiens</strong>, <strong>Défense</strong> (centraux et latéraux), <strong>Milieu</strong> (pivots, milieux intérieurs et offensifs) et <strong>Attaque</strong> (ailiers et attaquants), dans l’ordre des numéros. Chaque ligne montre le numéro (sur fond jaune pour un gardien), le nom, le poste, l’année de naissance, le pied fort et une barre de niveau sur 4, ou <strong>Non évalué</strong>. Touchez la ligne pour ouvrir la fiche ; la corbeille retire le joueur. Si vous encadrez plusieurs équipes, un sélecteur en haut de la plaque change l’équipe affichée dans toute l’application.</p>
+<h2 id="creer-et-regler-l-39-equipe">Créer et régler l’équipe</h2>
+<p>Sans équipe, la page propose <strong>Créer l’équipe</strong>. La fenêtre <strong>Nouvelle équipe</strong> demande le <strong>Nom de l’équipe</strong>, la <strong>Catégorie</strong> (de U7 à U20, ou Seniors), le <strong>Format de jeu</strong> (de 5 contre 5 à 11 contre 11) et le <strong>Système de départ</strong>, celui que Ndamba proposera pour chaque nouveau match (la liste est au chapitre 11). <strong>Modifier</strong> rouvre la même fenêtre, sous le titre <strong>Modifier l’équipe</strong>.</p>
+<h2 id="ajouter-les-joueurs">Ajouter les joueurs</h2>
+<p>Un joueur à la fois :</p>
+<ol>
+<li>Touchez <strong>Ajouter un joueur</strong>.</li>
+<li>Remplissez <strong>Nom</strong>, le seul champ obligatoire. Un surnom écrit entre guillemets, comme « Petit Pied », devient le nom de maillot sur le terrain et dans <strong>Observer</strong> ; sinon Ndamba prend le dernier mot du nom.</li>
+<li>Indiquez le <strong>Numéro</strong>, de 0 à 99. S’il est déjà pris, la mention <strong>Déjà porté</strong> vous prévient, sans bloquer.</li>
+<li>Choisissez le <strong>Poste</strong> : Gardien, Défenseur central, Latéral, Pivot, Milieu intérieur (par défaut), Milieu offensif, Ailier ou Attaquant.</li>
+<li>Ajoutez l’<strong>Année de naissance</strong> et le <strong>Pied fort</strong>, facultatifs. L’année de naissance donne l’âge, et l’âge décide de ce que le parcours affiche.</li>
+<li>Touchez <strong>Ajouter</strong>, ou <strong>Ajouter et continuer</strong> pour saisir le suivant sans fermer la fenêtre (le poste est conservé).</li>
+</ol>
+<p>Toute la liste d’un coup : touchez <strong>Importer une liste</strong> et collez un nom par ligne, la liste que vous envoyez déjà sur WhatsApp. Le numéro est facultatif, en début de ligne (« 8 BriBri », « #8 BriBri ») ou en fin de ligne. Choisissez un <strong>Poste pour tous</strong>, vérifiez l’aperçu, puis touchez le bouton qui compte les joueurs, par exemple <strong>Importer 15 joueurs</strong>. Vous ajusterez ensuite chaque poste depuis la fiche, avec <strong>Modifier</strong>.</p>
+<figure class="shot"><a href="../img/fr/youth-roster.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/youth-roster-720.webp 720w, ../img/fr/youth-roster.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/youth-roster.jpg" srcset="../img/fr/youth-roster-720.jpg 720w, ../img/fr/youth-roster.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="L'effectif de la démo académie U13 : 15 joueurs, 2 gardiens, un niveau moyen de 2,8, et sur le petit terrain des surnoms comme Petit Pied ou la Gazelle." loading="lazy" decoding="async"></picture></a><figcaption>Dans une académie, les surnoms entre guillemets deviennent le nom de maillot.</figcaption></figure>
+<p>Pour retirer un joueur, touchez la corbeille de sa ligne, ou <strong>Retirer de l’effectif</strong> sur sa fiche, puis confirmez avec <strong>Retirer</strong>. Il quitte l’effectif, ainsi que la composition, le banc et le brassard des matchs qui ne sont pas encore joués. Les actions déjà codées restent dans les rapports. Le retrait ne s’annule pas, et le parcours du joueur n’est plus affiché ensuite : en cas de doute, gardez-le.</p>
+<aside class="callout callout-mola"><div class="callout-kicker"><svg class="mm" viewBox="6 6 54 54" width="20" height="20" aria-hidden="true"><path d="M13.00 47.00 L22.00 19.00 L32.00 37.00 L42.00 19.00 L51.00 47.00" fill="none" stroke="currentColor" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="51" cy="47" r="7.564" fill="#F5B700"></circle></svg>Demandez à Mola</div><div class="callout-title">Ajouter un joueur en une phrase</div><p>Dans la discussion avec Mola, tapez : « Ajoute BriBri, numéro 8, milieu intérieur, né en 2014 ». Mola crée la fiche, vous signale si le numéro est déjà porté et propose <strong>Ouvrir sa fiche</strong>. Pour plusieurs joueurs : « Ajoute Junior, Arnold et Steve ».</p>
+</aside>
+
+<h2 id="la-fiche-joueur">La fiche joueur</h2>
+<p>En haut de la fiche : le numéro, le nom, le poste, la génération (<strong>Génération 2013</strong>, par exemple), le pied fort et la <strong>Moyenne</strong> sur 4, avec les boutons <strong>Modifier</strong> et <strong>Retirer de l’effectif</strong>.</p>
+<figure class="shot"><a href="../img/fr/pro-player-detail.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-player-detail-720.webp 720w, ../img/fr/pro-player-detail.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-player-detail.jpg" srcset="../img/fr/pro-player-detail-720.jpg 720w, ../img/fr/pro-player-detail.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La fiche du gardien Hervé Ngando dans la démo club pro : la plaque Parcours, saison 2026-2027, avec les boutons Observer et Ouvrir le parcours, la frise et les chiffres Séances 38/39, Matchs joués 3, Observations 5 et Objectifs 1 en cours ; à droite, le Profil en radar comparé à la moyenne de l'équipe et la Contribution en match ; en bas, le début des dix compétences." loading="lazy" decoding="async"></picture></a><figcaption>La fiche joueur : le parcours de la saison, le profil et la contribution en match.</figcaption></figure>
+<p>La fiche se lit en six blocs.</p>
+<p><strong>Le parcours de la saison.</strong> Une plaque verte, par exemple « Parcours, saison 2026‑2027 », résume la saison en cours sur une petite frise et en quatre chiffres : <strong>Séances</strong> (présences sur appels faits), <strong>Matchs joués</strong> (avec les minutes), <strong>Observations</strong> et <strong>Objectifs</strong>, le nombre d’objectifs <strong>en cours</strong>. Elle mène à <strong>Observer</strong> et <strong>Ouvrir le parcours</strong>.</p>
+<p><strong>Les dix compétences.</strong> C’est la grille du chapitre 25 du Code Njangi. Chaque compétence a sa définition et quatre niveaux : 1 <strong>Découverte</strong>, 2 <strong>Construction</strong>, 3 <strong>Acquis</strong>, 4 <strong>Référence</strong>. Touchez un niveau pour évaluer, touchez-le à nouveau pour l’effacer ; <strong>Voir la grille</strong> déplie la description des quatre niveaux. La règle est écrite sur l’écran : on note ce qu’on a vu en jeu, sur plusieurs séances, pas ce qu’on espère.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Compétence</th>
+<th>Ce que l’on regarde</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Scan</td>
+<td>Regarder autour de soi avant de recevoir</td>
+</tr>
+<tr>
+<td>Contrôle orienté</td>
+<td>Recevoir en orientant le ballon vers l’espace libre ou la suite de l’action</td>
+</tr>
+<tr>
+<td>Passe avec intention</td>
+<td>Une passe qui sert l’une des cinq intentions, au bon partenaire et au bon rythme</td>
+</tr>
+<tr>
+<td>Conduite</td>
+<td>Avancer avec le ballon pour progresser ou attirer, tête levée</td>
+</tr>
+<tr>
+<td>Dribble njangi</td>
+<td>Dribbler pour attirer, fixer, puis donner ou éliminer</td>
+</tr>
+<tr>
+<td>Appels et courses pour les autres</td>
+<td>Se déplacer sans ballon pour recevoir ou libérer un partenaire</td>
+</tr>
+<tr>
+<td>Communication</td>
+<td>Une information courte et utile, au bon moment</td>
+</tr>
+<tr>
+<td>Protection du ballon</td>
+<td>Garder le ballon sous pression avec le corps et les appuis</td>
+</tr>
+<tr>
+<td>Contre-pression</td>
+<td>Réagir tout de suite à la perte pour reprendre le ballon dans les 5 secondes</td>
+</tr>
+<tr>
+<td>Prise de décision</td>
+<td>Choisir au bon moment la solution qui sert le mieux l’équipe</td>
+</tr>
+</tbody></table></div>
+<p>Chaque changement de niveau sur la fiche est aussi enregistré comme l’évaluation du jour dans le parcours : l’historique ne se perd jamais.</p>
+<p><strong>Le profil.</strong> Dès trois compétences évaluées, un radar dessine le portrait du joueur, avec en pointillés la <strong>Moyenne de l’équipe</strong> : un portrait, pas un total.</p>
+<p><strong>Les notes de l’entraîneur.</strong> Un champ libre, enregistré tout seul (<strong>Enregistré</strong>).</p>
+<p><strong>La contribution en match.</strong> Les actions codées en direct et attribuées à ce joueur (chapitre 12) : matchs codés, titularisations, <strong>Passes réussies</strong>, détail des actions et tableau <strong>Match par match</strong>.</p>
+<p><strong>Les exercices conseillés.</strong> Ndamba repère les deux compétences les plus fragiles (évaluées en dessous de 4) et propose jusqu’à quatre exercices de la bibliothèque qui les travaillent.</p>
+<h2 id="le-parcours-saison-apres-saison">Le parcours, saison après saison</h2>
+<p>Touchez <strong>Ouvrir le parcours</strong>. Une saison va du 1er août au 31 juillet. Le haut de la page reprend le joueur (poste, âge, équipe) et quatre actions : <strong>Observer</strong>, <strong>Évaluer</strong>, <strong>Objectif</strong> et <strong>Jalon</strong>. Des boutons choisissent la saison, ou <strong>Toutes les saisons</strong>. Une phrase rappelle ce que la page montre selon l’âge : moins de 13 ans, des repères simples, jamais de classement ; de 13 à 16 ans, la progression et des repères de match ; 17 ans et plus, le détail de performance.</p>
+<figure class="shot"><a href="../img/fr/pro-player-journey.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-player-journey-720.webp 720w, ../img/fr/pro-player-journey.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-player-journey.jpg" srcset="../img/fr/pro-player-journey-720.jpg 720w, ../img/fr/pro-player-journey.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="Le parcours du gardien de la démo, saison 2026-2027 : les boutons Observer, Évaluer, Objectif et Jalon, la frise à quatre lignes, et les chiffres Séances 38/39, Matchs joués 3, Buts 0, Observations 5, Compétences +4, Objectifs atteints 0/2." loading="lazy" decoding="async"></picture></a><figcaption>Le parcours : une saison entière sur une seule plaque.</figcaption></figure>
+<p>La frise montre la saison sur quatre lignes : <strong>Jalons</strong>, <strong>Matchs</strong> (la taille du point suit les minutes jouées), <strong>Séances</strong> (suivies ou manquées) et <strong>Observations</strong>. Sous la frise, les chiffres de la saison : <strong>Séances</strong> (présences sur appels faits), <strong>Matchs joués</strong> et minutes, <strong>Buts</strong> (affichés à partir de 17 ans, ou dès le premier but), <strong>Observations</strong> et combien sont positives, <strong>Compétences</strong> (niveaux gagnés depuis le début de saison) et <strong>Objectifs atteints</strong>, avec dessous le nombre d’objectifs encore en cours. Une phrase conclut : <strong>Point fort</strong>, puis <strong>Prochaine marche</strong> (ou <strong>Axe de travail</strong> à partir de 17 ans).</p>
+<p>Plus bas, la page se déroule ainsi :</p>
+<ul>
+<li><strong>Progression par compétence</strong> : dix petites courbes. Touchez-en une pour l’agrandir, avec sous la courbe les preuves en jeu (points pleins pour le positif, cercles pour l’à travailler), <strong>Ce que l’on observe aujourd’hui</strong> et la marche suivante de la grille, avec le niveau visé.</li>
+<li><strong>Le fil du parcours</strong> : tout ce qui s’est passé, du plus récent au plus ancien, mois par mois, avec des filtres <strong>Tout</strong>, <strong>Jalons</strong>, <strong>Évaluations</strong>, <strong>Observations</strong>, <strong>Matchs</strong>, <strong>Séances</strong> et <strong>Objectifs</strong>. Une observation ou une évaluation se supprime d’un geste, avec <strong>Annuler</strong> pour revenir en arrière.</li>
+<li><strong>Objectifs du cycle</strong> : de un à trois objectifs à la fois, pour six à huit semaines, liés à une compétence ou à un sous-indice de l’Indice Njangi. Ndamba propose la compétence la plus fragile et une phrase tirée de la grille (<strong>Reprendre la suggestion</strong>). Au bilan, <strong>Où en est-on ?</strong> offre <strong>En cours</strong>, <strong>Atteint</strong>, <strong>En partie</strong> ou <strong>Pas encore</strong>, et une note <strong>Ce que l’on retient</strong>.</li>
+<li><strong>En match</strong> pour les moins de 17 ans (les actions qui font jouer l’équipe, sans comparaison), ou <strong>Performance de la saison</strong> à partir de 17 ans (actions rapportées à 90 minutes, part des actions de l’équipe, minutes par match).</li>
+<li><strong>Les grands moments</strong> : le premier match, la première titularisation, le premier but, le premier brassard, les paliers de matchs joués et chaque compétence qui atteint <strong>Acquis</strong> ou <strong>Référence</strong> s’ajoutent seuls. Avec <strong>Jalon</strong>, vous ajoutez le reste : <strong>Convocation</strong>, <strong>Changement de catégorie</strong>, <strong>Capitanat</strong>, <strong>Distinction</strong>, <strong>Blessure</strong>, <strong>Retour de blessure</strong> ou <strong>Autre</strong>.</li>
+</ul>
+<p><strong>Évaluer</strong> ouvre une évaluation complète et datée, préremplie avec les niveaux actuels, et affiche pour chaque compétence les observations recueillies depuis la dernière évaluation : vous décidez avec des preuves sous les yeux. Pour un mineur, l’écran conseille de partager le profil avec sa famille, en commençant par ses points forts.</p>
+<p>Les présences viennent de <strong>Faire l’appel</strong> (dans la séance ou dans <strong>Observer</strong>), les minutes du bouton <strong>Temps de jeu</strong> de la feuille de match (chapitre 11). Le joueur voit son propre parcours depuis son espace (chapitre 16).</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">Pour l’investisseur</div><div class="callout-title">Une mémoire qui suit le joueur</div><p>Le parcours transforme des séances ordinaires en données suivies dans le temps : présences, évaluations datées sur une grille commune, observations, minutes, actions de match. C’est la matière première d’un suivi de formation à l’échelle d’un club, puis d’une fédération. Aujourd’hui, ces données vivent sur l’appareil de l’entraîneur ; les comptes et la synchronisation sont prévus.</p>
+</aside>
+
+<h2 id="observer-noter-ce-que-l-39-on-voit">Observer : noter ce que l’on voit</h2>
+<p>Une évaluation juste repose sur plusieurs observations, faites en jeu, sur plusieurs séances. L’écran <strong>Observer</strong> sert à les recueillir vite, pendant une séance ou un match. Il s’ouvre depuis la plaque de l’effectif, la fiche, le parcours, la carte <strong>Présences et observations</strong> d’une séance, la feuille de match ou le codeur en direct.</p>
+<figure class="shot"><a href="../img/fr/pro-observe.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-observe-720.webp 720w, ../img/fr/pro-observe.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-observe.jpg" srcset="../img/fr/pro-observe-720.jpg 720w, ../img/fr/pro-observe.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="L'écran Observer pendant une séance de la démo : le sélecteur Pendant et le bouton Faire l'appel, la grille des joueurs, les boutons Positif et À travailler, les dix compétences et les repères positifs, et la barre Enregistrer en bas." loading="lazy" decoding="async"></picture></a><figcaption>Observer : choisir les joueurs, toucher ce que l’on voit, enregistrer.</figcaption></figure>
+<p>En haut à droite, le sélecteur <strong>Pendant</strong> donne le contexte : <strong>Hors séance (aujourd’hui)</strong>, une séance récente ou un match récent. Ndamba choisit seul le match en direct ou du jour, sinon la séance du jour. Pendant une séance, <strong>Faire l’appel</strong> range ensuite les joueurs en <strong>Présents</strong>, <strong>Pas encore pointés</strong> et <strong>Absents</strong>. Pendant un match, ils sont rangés en <strong>Titulaires</strong>, <strong>Remplaçants</strong> et <strong>Autres joueurs</strong>, et un champ <strong>Minute</strong> apparaît.</p>
+<ol>
+<li>Touchez un ou plusieurs joueurs. <strong>Tous</strong> choisit un groupe entier, <strong>Effacer</strong> vide le choix.</li>
+<li>Choisissez le ton : <strong>Positif</strong> ou <strong>À travailler</strong>.</li>
+<li>Touchez les compétences concernées. Chacune prend le ton choisi ; touchez-la à nouveau pour l’enlever.</li>
+<li>Touchez les repères rapides, qui changent avec le ton : <strong>Repères positifs</strong> ou <strong>Repères à travailler</strong>.</li>
+<li>Si vous le voulez, donnez une <strong>Note de la séquence</strong> de 1 à 5 (elle reste dans le parcours, jamais dans un classement) et écrivez une <strong>Note</strong> en une phrase, ou touchez <strong>Dicter</strong> si votre navigateur le permet.</li>
+<li>Touchez <strong>Enregistrer</strong> (ou <strong>Enregistrer pour 3 joueurs</strong>, par exemple). Un message confirme, avec <strong>Annuler</strong> en cas d’erreur.</li>
+</ol>
+<p>Les repères liés à une compétence comptent comme une preuve pour elle :</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Repère positif</th>
+<th>Compte pour</th>
+<th>Repère à travailler</th>
+<th>Compte pour</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tête levée avant de recevoir</td>
+<td>Scan</td>
+<td>Tête baissée à la réception</td>
+<td>Scan</td>
+</tr>
+<tr>
+<td>Joue vers l’avant</td>
+<td>Passe</td>
+<td>Joue en arrière sans raison</td>
+<td>Passe</td>
+</tr>
+<tr>
+<td>Appel qui libère un partenaire</td>
+<td>Appels</td>
+<td>Reste immobile sans ballon</td>
+<td>Appels</td>
+</tr>
+<tr>
+<td>Réagit tout de suite à la perte</td>
+<td>Contre-pression</td>
+<td>S’arrête après la perte</td>
+<td>Contre-pression</td>
+</tr>
+<tr>
+<td>Ose le un contre un</td>
+<td>Dribble</td>
+<td>Perd le ballon au contact</td>
+<td>Protection</td>
+</tr>
+<tr>
+<td>Guide ses partenaires</td>
+<td>Communication</td>
+<td>Joue en silence</td>
+<td>Communication</td>
+</tr>
+<tr>
+<td>Ne lâche rien</td>
+<td>aucune</td>
+<td>Se précipite</td>
+<td>Décision</td>
+</tr>
+<tr>
+<td>Concentré, à l’écoute</td>
+<td>aucune</td>
+<td>Distrait, décroche</td>
+<td>aucune</td>
+</tr>
+<tr>
+<td>Tire le groupe</td>
+<td>aucune</td>
+<td>Gère mal la frustration</td>
+<td>aucune</td>
+</tr>
+</tbody></table></div>
+<p>Sous le formulaire, la liste <strong>Observations de cette séance</strong> (ou <strong>Observations de ce match</strong>, <strong>Observations du jour</strong>) montre ce qui est déjà noté, avec une corbeille par ligne. L’encadré <strong>Observer sans se tromper</strong> donne la méthode : un joueur à la fois pendant 8 à 10 minutes, et seulement ce que la situation a montré.</p>
+<p>Chaque observation rejoint le parcours des joueurs choisis : dans le fil et sur la frise, dans les chiffres de la saison, en preuve sous la courbe de la compétence et dans la fenêtre <strong>Évaluer</strong>, et dans les objectifs en cours. La compétence la plus souvent notée à travailler devient en général la prochaine marche. Trois touches au bord du terrain, et la mémoire du joueur s’écrit seule.</p>
+</div></article><nav class="pager" aria-label="Précédent / Suivant"><a class="prev" href="ch-09.html" rel="prev"><small>Précédent</small><b>9. Planifier la semaine</b></a><a class="next" href="ch-11.html" rel="next"><small>Suivant</small><b>11. Préparer un match</b></a></nav></main><script>(function(){var K='guide.fr';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','fr')}catch(e){}
+})();</script></body></html>

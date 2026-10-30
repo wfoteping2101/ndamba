@@ -8,7 +8,8 @@
     "openApp": "Open the app",
     "menu": "Menu",
     "close": "Close the menu",
-    "football": "Football game"
+    "football": "Football game",
+    "guide": "The guide"
   },
   "footer": {
     "motto": "The ball must travel. But it must know where it is going.",
@@ -24,7 +25,8 @@
     "brand": "The Ndamba brand",
     "premium": "Premium",
     "rights": "Lemon Network Solutions",
-    "home": "Ndamba home"
+    "home": "Ndamba home",
+    "guide": "The Ndamba Guide"
   },
   "app": {
     "home": "Home",
@@ -56,7 +58,8 @@
     "mainNav": "Main navigation",
     "teamLine": "{{age}}, {{format}} v {{format}}, {{formation}}",
     "switchTeam": "Switch team",
-    "football": "Football game"
+    "football": "Football game",
+    "guide": "Guide"
   },
   "actions": {
     "save": "Save",

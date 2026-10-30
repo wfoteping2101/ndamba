@@ -1,0 +1,314 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>13. Le rapport de match et l'Indice Njangi, Le Guide Ndamba</title><meta name="description" content="Lire un rapport de match de haut en bas avec les vrais chiffres de la démo : le score, la jauge de l'Indice Njangi et sa bande, les cinq sous-indices et leurs niveaux, les mi-temps, les objectifs et les exercices de la semaine, puis copier, imprimer ou corriger les tags."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-13"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>Le Guide Ndamba</span></a><nav class="bar-actions"><a class="lang" href="../en/ch-13.html" hreflang="en" lang="en">EN</a><button id="aa" type="button" aria-label="Taille du texte">Aa</button><button id="toc-btn" type="button">Sommaire</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Sommaire"><div class="drawer-head"><a href="./">Couverture et sommaire</a><button id="close" type="button">Fermer</button></div><ol class="toc-list"><li class="toc-part"><span>Partie I. Comprendre Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba en dix minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>La philosophie Njangi</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profils, six chemins</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>La carte de la plateforme</a></li></ol></li><li class="toc-part"><span>Partie II. Démarrer</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Créer son espace avec Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>L'accueil, la navigation et les réglages</a></li></ol></li><li class="toc-part"><span>Partie III. Entraîner</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>La bibliothèque des 64 exercices</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Construire une séance</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Planifier la semaine</a></li></ol></li><li class="toc-part"><span>Partie IV. L’équipe et les matchs</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>L'effectif et la fiche joueur</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Préparer un match</a></li></ol></li><li class="toc-part"><span>Partie V. Analyser</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>L'analyse en direct</a></li><li><a href="ch-13.html" data-page="ch-13" aria-current="page"><b>13</b>Le rapport de match et l'Indice Njangi</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>La saison et l'analyse vidéo</a></li></ol></li><li class="toc-part"><span>Partie VI. Le joueur et sa famille</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>L'espace joueur</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>Les Leçons du Ballon, le carnet et le parcours</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Les parents</a></li></ol></li><li class="toc-part"><span>Partie VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, l'agent de Ndamba</a></li></ol></li><li class="toc-part"><span>Partie VIII. Les livres et le jeu</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>Le Code Njangi, le livre de la méthode</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, la saga de Kaydoudou et BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, le jeu</a></li></ol></li><li class="toc-part"><span>Partie IX. Porter le trophée</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Pourquoi l'Afrique peut gagner la Coupe du monde</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>Le plan 2026-2041 : cinq étapes vers le trophée</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>Le modèle économique</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Confiance, données et jeunes joueurs</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>La feuille de route</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Démarrage rapide par profil</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>Glossaire français et anglais</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Toutes les pages de la plateforme</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>Les 64 exercices</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions et réponses</a></li></ol></li></ol></div></div><main><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-5">Partie V. Analyser</a><div class="ch-num">Chapitre 13</div><h1 class="ch-title">Le rapport de match et l’Indice Njangi</h1><p class="ch-sum">Lire un rapport de match de haut en bas avec les vrais chiffres de la démo : le score, la jauge de l’Indice Njangi et sa bande, les cinq sous-indices et leurs niveaux, les mi-temps, les objectifs et les exercices de la semaine, puis copier, imprimer ou corriger les tags.</p><p class="ch-time">10 min de lecture</p></header><div class="prose"><p>Le soir d’un match, un entraîneur repart avec le score et une impression. Le score ne dit pas comment l’équipe a joué, et l’impression change avec l’humeur. Le rapport de match transforme les tags du direct (chapitre 12) en une lecture toujours construite de la même façon : une note sur 100, l’Indice Njangi, qui dit si l’équipe a possédé avec intention ; cinq sous-indices qui disent où le jeu a avancé et où il a calé ; et la semaine d’entraînement qui en découle. C’est le cœur de la promesse de Ndamba : une mesure commune, la même à l’académie et en sélection, pour savoir saison après saison si un modèle de jeu progresse. Ce chapitre suit le rapport de haut en bas avec le match de la démo club pro : Étoile de la Côte contre Météore de Bafoussam, 2‑1, en Ligue 1, le samedi 24 octobre 2026.</p>
+<h2 id="ouvrir-un-rapport">Ouvrir un rapport</h2>
+<p>Trois chemins mènent au rapport :</p>
+<ol>
+<li>Dans le menu, groupe <strong>Analyse</strong>, touchez <strong>Analyse</strong>, puis le match dans la liste <strong>Matchs analysés</strong> (chapitre 14).</li>
+<li>À la fin du direct, le bouton <strong>Terminer et voir le rapport</strong> l’ouvre aussitôt.</li>
+<li>Demandez à Mola <strong>Analyse mon dernier match</strong> : son résumé se termine par le bouton <strong>Lire le rapport complet</strong>.</li>
+</ol>
+<p>Sans aucun tag, la page affiche <strong>Pas encore de tags pour ce match</strong> : « Le rapport se construit à partir des tags du direct. Lancez le direct pour ce match, pendant la rencontre ou après coup. » Elle propose <strong>Lancer le direct</strong> ou <strong>Analyser la vidéo</strong> ; seuls les tags du direct construisent le rapport (chapitre 14).</p>
+<h2 id="l-39-en-tete-le-score-les-buts-et-les-actions">L’en-tête : le score, les buts et les actions</h2>
+<figure class="shot"><a href="../img/fr/pro-report.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-report-720.webp 720w, ../img/fr/pro-report.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-report.jpg" srcset="../img/fr/pro-report-720.jpg 720w, ../img/fr/pro-report.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="Le haut du rapport de la démo club pro : le bandeau vert avec Étoile de la Côte 2, Météore de Bafoussam 1, la mention Victoire, les trois buts (Serge Eyoum à la 22e, Météore de Bafoussam à la 54e, Hamidou Sali à la 69e), les boutons Corriger les tags, Analyser la vidéo et Feuille de match, puis la jauge de l'Indice Njangi à 67,9 et les cinq sous-indices." loading="lazy" decoding="async"></picture></a><figcaption>Le rapport du match contre Météore de Bafoussam : l’en-tête, la jauge et les cinq sous-indices.</figcaption></figure>
+<p>En haut, le lien <strong>Analyse</strong> ramène à la page d’analyse ; à droite, <strong>Copier le texte</strong> et <strong>Imprimer</strong> (voir plus bas).</p>
+<p>Le bandeau vert porte <strong>Rapport de match</strong>, la compétition, la date et le lieu : « Ligue 1, journée 9, samedi 24 octobre 2026, à domicile ». Sous le score, une pastille : <strong>Victoire</strong>, <strong>Nul</strong> ou <strong>Défaite</strong>, ou <strong>À venir</strong> et <strong>En cours</strong> pour un match non terminé. Les buts suivent avec leur minute (22e et 69e pour l’Étoile, 54e pour l’adversaire), en doré pour nous, en rouge pour l’adversaire, avec le nom du buteur quand le but lui a été attribué pendant le direct.</p>
+<p>Sous un trait, trois actions et un compteur :</p>
+<ul>
+<li><strong>Corriger les tags</strong> rouvre le direct du match, dont le journal permet de supprimer un tag ou de changer le joueur attribué (chapitre 12). Le rapport se recalcule tout seul.</li>
+<li><strong>Analyser la vidéo</strong> ouvre le projet vidéo lié à ce match, ou le crée (chapitre 14).</li>
+<li><strong>Feuille de match</strong> ouvre la fiche du match (chapitre 11).</li>
+<li>À droite, le nombre de tags du rapport : <strong>783 tags</strong>.</li>
+</ul>
+<h2 id="la-jauge-de-l-39-indice-njangi-et-sa-bande">La jauge de l’Indice Njangi et sa bande</h2>
+<p>Sous l’en-tête, à gauche, la jauge <strong>Indice Njangi</strong> : le chiffre avec une décimale (67,9), « sur 100 », le nom de la bande, puis une réglette en cinq zones, aux seuils 35, 50, 65 et 80, avec un trait à la place exacte de l’Indice.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Indice</th>
+<th>Bande affichée</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>moins de 35</td>
+<td><strong>Possession sans intention</strong></td>
+</tr>
+<tr>
+<td>de 35 à moins de 50</td>
+<td><strong>Intention fragile</strong></td>
+</tr>
+<tr>
+<td>de 50 à moins de 65</td>
+<td><strong>Njangi en construction</strong></td>
+</tr>
+<tr>
+<td>de 65 à moins de 80</td>
+<td><strong>Njangi solide</strong></td>
+</tr>
+<tr>
+<td>80 et plus</td>
+<td><strong>Njangi de champion</strong></td>
+</tr>
+</tbody></table></div>
+<p>Avec 67,9, l’Étoile est en <strong>Njangi solide</strong>, juste au-dessus de 65. Quand un match analysé précède celui-ci, une pastille sous la jauge donne l’écart (« +7,7 contre Aigles de Logbaba » dans la démo U13). Ces seuils viennent du chapitre 32 du <em>Code Njangi</em> : ce sont des repères internes à la méthode, à calibrer sur vos propres matchs.</p>
+<h2 id="les-cinq-sous-indices-et-leurs-niveaux">Les cinq sous-indices et leurs niveaux</h2>
+<p>À droite, <strong>Les cinq sous-indices</strong>, « chacun sur 20 », dont la somme fait l’Indice. Chacun porte une barre et un niveau :</p>
+<ul>
+<li><strong>À construire</strong> : moins de 8 sur 20 (barre rouge) ;</li>
+<li><strong>En progrès</strong> : de 8 à moins de 13 (barre vert clair) ;</li>
+<li><strong>Solide</strong> : 13 et plus, la zone du modèle (barre vert foncé).</li>
+</ul>
+<p>Le calcul part de quatre totaux. Ici, 470 passes tentées (412 réussies, 58 perdues) ; 92 pertes en tout (les 58 passes perdues et 34 pertes en conduite ou en duel) ; 106 possessions, car une possession finit par une perte ou par un tir (14 tirs) ; et 504 actions de possession (les passes et les pertes en conduite). Les cinq calculs du match :</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Sous-indice</th>
+<th>Question</th>
+<th>Calcul</th>
+<th>Note</th>
+<th>Niveau</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Progression</strong></td>
+<td>Le ballon avance-t-il ?</td>
+<td>20 × (76 progressives + 34 lignes traversées) / (0,35 × 470 passes)</td>
+<td>13,4</td>
+<td><strong>Solide</strong></td>
+</tr>
+<tr>
+<td><strong>Pénétration</strong></td>
+<td>Arrive-t-il là où l’on marque ?</td>
+<td>20 × (44 entrées dans le dernier tiers + 2 × 16 entrées dans la surface) / 106 possessions</td>
+<td>14,3</td>
+<td><strong>Solide</strong></td>
+</tr>
+<tr>
+<td><strong>Fixation</strong></td>
+<td>Attire-t-on pour libérer ?</td>
+<td>20 × (7 fixations + 4 renversements) / (0,25 × 106)</td>
+<td>8,3</td>
+<td><strong>En progrès</strong></td>
+</tr>
+<tr>
+<td><strong>Reprise</strong></td>
+<td>Réagit-on à la perte ?</td>
+<td>20 × 26 reprises en 5 s / (0,40 × 92 pertes)</td>
+<td>14,1</td>
+<td><strong>Solide</strong></td>
+</tr>
+<tr>
+<td><strong>Contrôle</strong></td>
+<td>Garde-t-on le ballon sans danger ?</td>
+<td>K = 412 / 504 = 0,817, puis 20 × (K - 0,55) / 0,30</td>
+<td>17,8</td>
+<td><strong>Solide</strong></td>
+</tr>
+</tbody></table></div>
+<p>Chaque note est plafonnée à 20 et arrondie au dixième : 13,4 + 14,3 + 8,3 + 14,1 + 17,8 = 67,9. La lecture est immédiate : l’équipe garde le ballon, avance, entre dans la surface et réagit à la perte, mais elle attire trop rarement deux adversaires pour libérer un partenaire de l’autre côté. C’est son chantier.</p>
+<p>Plus bas, la section <strong>Ce que mesure chaque sous-indice</strong> les reprend du plus faible au plus fort, avec leur référence (« 35 actions progressives pour 100 passes donnent 20 points ») et un lien <strong>Voir le calcul</strong> qui affiche la formule avec les chiffres du match. <strong>Lire le chapitre</strong> ouvre le chapitre 32 du livre.</p>
+<h2 id="les-mi-temps">Les mi-temps</h2>
+<p>Sous les barres, touchez le panneau replié <strong>L’Indice par mi-temps</strong>. Il donne chaque sous-indice pour la <strong>1re MT</strong>, la <strong>2e MT</strong> et le <strong>Match</strong>, plus <strong>Prol. 1</strong> et <strong>Prol. 2</strong> s’il y a eu des tags en prolongation.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th></th>
+<th>1re MT</th>
+<th>2e MT</th>
+<th>Match</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Progression</td>
+<td>12,7</td>
+<td>14,0</td>
+<td>13,4</td>
+</tr>
+<tr>
+<td>Pénétration</td>
+<td>12,4</td>
+<td>16,5</td>
+<td>14,3</td>
+</tr>
+<tr>
+<td>Fixation</td>
+<td>5,8</td>
+<td>11,0</td>
+<td>8,3</td>
+</tr>
+<tr>
+<td>Reprise</td>
+<td>12,2</td>
+<td>16,3</td>
+<td>14,1</td>
+</tr>
+<tr>
+<td>Contrôle</td>
+<td>16,8</td>
+<td>18,8</td>
+<td>17,8</td>
+</tr>
+<tr>
+<td>Indice</td>
+<td>59,9</td>
+<td>76,6</td>
+<td>67,9</td>
+</tr>
+</tbody></table></div>
+<p>L’Étoile a commencé en <strong>Njangi en construction</strong> et fini en <strong>Njangi solide</strong> ; la Fixation a presque doublé après la pause. Sous le tableau, une règle de la méthode : « Le match se calcule sur les codes additionnés, jamais sur la moyenne des mi-temps. » La moyenne des deux mi-temps ferait 68,25 ; le rapport affiche 67,9, calculé sur tous les codes.</p>
+<h2 id="le-resume-de-la-philosophie-de-jeu">Le résumé de la philosophie de jeu</h2>
+<p>La section <strong>Résumé de la philosophie de jeu</strong> traduit les chiffres en phrases. Le texte est écrit par des règles fixes : les mêmes chiffres donnent toujours les mêmes phrases. Trois paragraphes (le ballon, les zones où le jeu a progressé ou calé, la réaction à la perte), et un quatrième quand un match précédent existe. Dans la démo, le premier dit : « Le ballon a bien circulé : 470 passes tentées, 88 % de réussite, un taux de conservation de 82 %. Et il a avancé avec intention : 23 % des passes ont progressé ou traversé une ligne (34 lignes traversées). Le ballon a voyagé et il savait où il allait. »</p>
+<p>Dessous, <strong>Trois choses qui ont marché</strong> (le Contrôle, la Pénétration, la Reprise) et <strong>Trois choses à corriger</strong> (la Fixation, la finition avec 6 tirs cadrés sur 14, la défense de repos après 9 tirs adverses). Sous 12 tags, le résumé prévient : « Pas encore assez de tags pour résumer la philosophie de jeu. »</p>
+<h2 id="ce-qu-39-il-faut-entrainer-objectifs-et-exercices">Ce qu’il faut entraîner : objectifs et exercices</h2>
+<p>La section <strong>Objectifs de la semaine</strong>, « Ce que ce match demande à la semaine qui vient », vise les deux sous-indices les plus faibles avec une cible chiffrée, puis donne l’intention dominante. Pour l’Étoile :</p>
+<ul>
+<li>« Réussir au moins 15 fixations ou renversements après fixation (aujourd’hui 11). »</li>
+<li>« Faire progresser ou traverser une ligne à au moins 30 % des passes (aujourd’hui 23 %). »</li>
+<li>« Intention dominante de la semaine : Fixer, annoncée au début de chaque séance et récompensée par les règles. »</li>
+</ul>
+<p>L’intention suit toujours le sous-indice le plus faible :</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Sous-indice le plus faible</th>
+<th>Intention de la semaine</th>
+<th>Exercices de la méthode pour ce sous-indice</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Progression</td>
+<td><strong>Progresser</strong></td>
+<td>P05, S07, L02, R06</td>
+</tr>
+<tr>
+<td>Pénétration</td>
+<td><strong>Finir</strong></td>
+<td>F03, F05, G05, G01</td>
+</tr>
+<tr>
+<td>Fixation</td>
+<td><strong>Fixer</strong></td>
+<td>R02, S04, P07, F04</td>
+</tr>
+<tr>
+<td>Reprise</td>
+<td><strong>Reprendre</strong></td>
+<td>R08, T01, T03, F06</td>
+</tr>
+<tr>
+<td>Contrôle</td>
+<td><strong>Respirer</strong></td>
+<td>R01, R07, P01, P10</td>
+</tr>
+</tbody></table></div>
+<p>Sous <strong>Exercices recommandés</strong>, le rapport prend les deux premiers exercices de chacun des deux sous-indices les plus faibles : R02 et S04 pour la Fixation, P05 (Entre les lignes) et S07 (Les lignes traversées) pour la Progression. Chaque carte ouvre la fiche de l’exercice (chapitre 7).</p>
+<p>En bas, « Semaine du match contre Rapides de Kribi, samedi 31 octobre. Intention dominante : Fixer. », puis le bouton doré <strong>Planifier la semaine avec ces objectifs</strong>. Il crée les séances MD-4 à MD-1 qui manquent avant ce match, orientées sur l’intention et marquées <strong>Mola</strong>, sans toucher aux séances existantes ni aux jours passés, et en laissant libres le jour d’un autre match et son lendemain (chapitre 9), puis propose <strong>Ouvrir la semaine</strong>. Sur les formules Gratuit et Joueur Premium, il ne crée des séances que jusqu’à cinq au total, et mène à la page Premium quand ce quota est déjà atteint. Dans la démo, la semaine est déjà prête, et le rapport le dit : « Rien à ajouter cette semaine : les jours restants ont déjà leur séance, ou sont pris par un autre match. Ouvrez la semaine pour les ajuster. » Sans prochain match, il propose d’abord <strong>Nouveau match</strong> : la semaine se planifie à rebours depuis le jour du match.</p>
+<aside class="callout callout-mola"><div class="callout-kicker"><svg class="mm" viewBox="6 6 54 54" width="20" height="20" aria-hidden="true"><path d="M13.00 47.00 L22.00 19.00 L32.00 37.00 L42.00 19.00 L51.00 47.00" fill="none" stroke="currentColor" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="51" cy="47" r="7.564" fill="#F5B700"></circle></svg>Demandez à Mola</div><div class="callout-title">Le rapport en une phrase</div><p>Tapez <strong>Analyse mon dernier match</strong>. Mola compte les actions taguées, calcule l’Indice, écrit ce qui marche et ce qu’il faut corriger, propose les premiers exercices et le bouton <strong>Lire le rapport complet</strong>. Il propose ensuite <strong>Prépare la semaine sur l’intention « Fixer »</strong> : répondez simplement « oui ».</p>
+</aside>
+
+<h2 id="les-autres-sections-du-rapport">Les autres sections du rapport</h2>
+<figure class="shot tall"><a href="../img/fr/pro-report-full.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-report-full-720.webp 720w, ../img/fr/pro-report-full.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-report-full.jpg" srcset="../img/fr/pro-report-full-720.jpg 720w, ../img/fr/pro-report-full.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="4407" alt="Le rapport complet du match de la démo, de l'en-tête jusqu'au tableau des contributions des joueurs, en passant par le résumé, les objectifs, la frise du match, les chiffres clés et les explications des sous-indices." loading="lazy" decoding="async"></picture></a><figcaption>Le rapport en entier : chaque section répond à une question précise.</figcaption></figure>
+<ul>
+<li><strong>Les chiffres clés</strong> : passes tentées et réussite, conservation K (82 %), progressives, dernier tiers, tirs cadrés, fixations, pertes, reprises en 5 secondes (28 % des pertes).</li>
+<li><strong>Repères complémentaires</strong> : la <strong>Part de possession estimée</strong> et le <strong>Field tilt</strong> (la part de nos entrées dans le dernier tiers face à celles de l’adversaire). Ils restent vides sans l’option « Coder aussi l’adversaire » du direct. <strong>Tirs adverses</strong> donne ici « 9 (1) » : neuf tirs, dont un cadré, le but encaissé à la 54e. Il n’y a pas de bouton « tir adverse cadré » : un but adverse compte comme tir cadré.</li>
+<li><strong>Le match, cinq minutes par cinq minutes</strong> : nos actions avec le ballon en barres, puis nos récupérations (vert clair) et nos pertes (rouge), les buts marqués d’un rond. Touchez une barre pour ses chiffres, ou <strong>Voir les données</strong>.</li>
+<li><strong>Comparaison avec le match précédent</strong> : une barre grise pour le match d’avant, une verte pour celui-ci. Ici : « C’est le premier match analysé : la comparaison apparaîtra au prochain. »</li>
+<li><strong>Contributions des joueurs</strong> : les tags attribués à chaque joueur pendant le direct, des passes aux récupérations.</li>
+<li><strong>Relevé des codes</strong> : les quatorze codes, pour nous et pour l’adversaire, et les totaux de base, de quoi refaire le calcul à la main.</li>
+</ul>
+<p>Pour une équipe U15 ou plus jeune, le tableau des contributions porte ce rappel : « Chez les jeunes, l’Indice mesure l’équipe, jamais un enfant. Gardez ce tableau pour le staff et ne comparez pas les joueurs devant le groupe. »</p>
+<figure class="shot"><a href="../img/fr/youth-report.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/youth-report-720.webp 720w, ../img/fr/youth-report.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/youth-report.jpg" srcset="../img/fr/youth-report-720.jpg 720w, ../img/fr/youth-report.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="Le rapport de la démo académie U13 : Lionceaux de Bonamoussadi U13 2, Requins de Bépanda 1, un Indice de 63,7 dans la bande Njangi en construction, une pastille +7,7 contre Aigles de Logbaba, et la Reprise à 8,7 sur 20." loading="lazy" decoding="async"></picture></a><figcaption>Le rapport d’une équipe U13 : la pastille compare avec le match précédent, le trait sur chaque barre aussi.</figcaption></figure>
+<p>Dans la démo U13, l’Indice est de 63,7, <strong>Njangi en construction</strong>. La Reprise (8,7) est la plus faible, puis la Fixation (10,8) : la semaine sera orientée sur <strong>Reprendre</strong>. Le trait fin sur chaque barre marque le match précédent.</p>
+<h2 id="copier-imprimer-lire-sur-telephone">Copier, imprimer, lire sur téléphone</h2>
+<p><strong>Copier le texte</strong> met le rapport en texte simple dans le presse-papiers, prêt à coller dans le groupe WhatsApp du staff. « Rapport copié » confirme. Le texte commence ainsi :</p>
+<pre><code>Rapport de match, Ndamba
+Étoile de la Côte 2 - 1 Météore de Bafoussam
+Ligue 1, journée 9, samedi 24 octobre 2026
+
+Indice Njangi : 67,9 / 100 (Njangi solide)
+- Progression : 13,4 / 20
+</code></pre>
+<p>Suivent les autres sous-indices, les mi-temps, le résumé, les exercices et la source. Si le navigateur refuse : « Copie impossible : sélectionnez le texte à la main. »</p>
+<p><strong>Imprimer</strong> ouvre la fenêtre d’impression du navigateur. Menus et boutons disparaissent, et les sections ne sont pas coupées entre deux pages. La plupart des navigateurs proposent là aussi d’enregistrer en PDF.</p>
+<figure class="shot tall"><a href="../img/fr/m-pro-report.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/m-pro-report-720.webp 720w, ../img/fr/m-pro-report.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/m-pro-report.jpg" srcset="../img/fr/m-pro-report-720.jpg 720w, ../img/fr/m-pro-report.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="Le rapport sur téléphone : les boutons Copier le texte et Imprimer, le bandeau du score, les trois actions et la jauge à 67,9, avec la barre d'onglets en bas de l'écran." loading="lazy" decoding="async"></picture></a><figcaption>Sur téléphone, le même rapport en une seule colonne.</figcaption></figure>
+<p>Sur téléphone, tout le rapport tient en une colonne. Après la jauge et les sous-indices viennent d’abord le résumé, les objectifs de la semaine et les chiffres clés, c’est-à-dire ce qu’on lit au bord du terrain ou dans le bus, puis la frise, les explications, la comparaison, les contributions et le relevé des codes.</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">Pour l’investisseur</div><div class="callout-title">Une mesure, pas une opinion</div><p>Le rapport repose sur des formules publiques, écrites dans le livre et reproduites à l’identique dans le code, avec le relevé complet des codes pour vérifier chaque chiffre. Deux entraîneurs qui posent les mêmes tags obtiennent le même Indice, au dixième près. C’est ce qui permet à une fédération de comparer ses équipes et de suivre une génération sur plusieurs saisons. Les seuils restent des repères à calibrer : l’objectif proposé pour 2026 et 2027 est justement de coder 1 000 matchs pour établir des valeurs de référence par âge.</p>
+</aside>
+</div></article><nav class="pager" aria-label="Précédent / Suivant"><a class="prev" href="ch-12.html" rel="prev"><small>Précédent</small><b>12. L'analyse en direct</b></a><a class="next" href="ch-14.html" rel="next"><small>Suivant</small><b>14. La saison et l'analyse vidéo</b></a></nav></main><script>(function(){var K='guide.fr';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','fr')}catch(e){}
+})();</script></body></html>

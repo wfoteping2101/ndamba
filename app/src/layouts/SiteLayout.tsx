@@ -23,6 +23,7 @@ export default function SiteLayout() {
   }, [open])
   const links: { to: string; label: string; icon?: ReactNode; href?: boolean }[] = [
     { to: '/livres', label: t('nav.books') },
+    { to: '/guide/', label: t('nav.guide'), href: true },
     { to: '/football/', label: t('nav.football'), href: true },
     { to: '/#app', label: t('nav.app') },
     { to: '/#mola', label: t('nav.mola'), icon: <MolaMark size={16} /> },
@@ -34,12 +35,12 @@ export default function SiteLayout() {
       <header className="sticky top-0 z-40 border-b border-line/80 bg-cream/90 backdrop-blur-md">
         <div className="container-page flex h-16 items-center justify-between gap-4">
           <Link to="/" aria-label={t('footer.home')} className="shrink-0 rounded-md"><Logo /></Link>
-          <nav className="hidden items-center gap-1 md:flex" aria-label={t('app.mainNav')}>
+          <nav className="hidden items-center gap-0.5 lg:flex xl:gap-1" aria-label={t('app.mainNav')}>
             {links.map((l) => l.href ? (
-              <a key={l.to} href={l.to} className="relative inline-flex h-10 items-center gap-2 rounded-[10px] px-3 text-[14.5px] font-semibold text-ink-soft transition-colors hover:bg-sand hover:text-ink">{l.icon}{l.label}</a>
+              <a key={l.to} href={l.to} className="relative inline-flex h-10 items-center gap-2 whitespace-nowrap rounded-[10px] px-2.5 text-[14.5px] font-semibold text-ink-soft transition-colors hover:bg-sand hover:text-ink xl:px-3">{l.icon}{l.label}</a>
             ) : (
               <NavLink key={l.to} to={l.to}
-                className={({ isActive }) => cx('relative inline-flex h-10 items-center gap-2 rounded-[10px] px-3 text-[14.5px] font-semibold transition-colors',
+                className={({ isActive }) => cx('relative inline-flex h-10 items-center gap-2 whitespace-nowrap rounded-[10px] px-2.5 text-[14.5px] font-semibold transition-colors xl:px-3',
                   isActive && !l.to.includes('#') ? 'text-ink' : 'text-ink-soft hover:bg-sand hover:text-ink')}>
                 {({ isActive }) => <>
                   {l.icon}{l.label}
@@ -50,15 +51,15 @@ export default function SiteLayout() {
           </nav>
           <div className="flex items-center gap-2">
             <LangSwitch />
-            <Link to={cta.to} className="btn-primary btn-sm hidden sm:inline-flex">{cta.label}</Link>
-            <button type="button" className="grid h-11 w-11 place-items-center rounded-full text-ink-soft hover:bg-sand hover:text-ink md:hidden" onClick={() => setOpen(!open)}
+            <Link to={cta.to} className="btn-primary btn-sm hidden whitespace-nowrap sm:inline-flex">{cta.label}</Link>
+            <button type="button" className="grid h-11 w-11 place-items-center rounded-full text-ink-soft hover:bg-sand hover:text-ink lg:hidden" onClick={() => setOpen(!open)}
               aria-expanded={open} aria-controls="site-menu" aria-label={open ? t('nav.close') : t('nav.menu')}>
               {open ? <X size={21} strokeWidth={1.75} /> : <Menu size={21} strokeWidth={1.75} />}
             </button>
           </div>
         </div>
         {open && (
-          <nav id="site-menu" className="border-t border-line/80 bg-cream md:hidden" aria-label={t('app.mainNav')}>
+          <nav id="site-menu" className="border-t border-line/80 bg-cream lg:hidden" aria-label={t('app.mainNav')}>
             <ul className="container-page divide-y divide-line/80">
               {links.map((l) => (
                 <li key={l.to}>
@@ -88,6 +89,7 @@ export default function SiteLayout() {
             { to: '/livres#code-njangi', label: t('footer.methode') },
             { to: '/#app', label: t('footer.app') },
             { to: '/#mola', label: t('footer.mola') },
+            { to: '/guide/', label: t('footer.guide'), href: true },
           ]} />
           <FooterCol title={t('footer.project')} links={[
             { to: '/revue', label: t('footer.review') },
@@ -112,13 +114,15 @@ export default function SiteLayout() {
   )
 }
 
-function FooterCol({ title, links }: { title: string; links: { to: string; label: string }[] }) {
+function FooterCol({ title, links }: { title: string; links: { to: string; label: string; href?: boolean }[] }) {
   return (
     <div>
       <p className="text-[13px] font-semibold text-cream">{title}</p>
       <ul className="mt-2.5">
         {links.map((l) => (
-          <li key={l.to}><Link to={l.to} className="inline-flex min-h-[40px] items-center text-[14.5px] text-cream/70 transition-colors hover:text-cream sm:min-h-[34px]">{l.label}</Link></li>
+          <li key={l.to}>{l.href
+            ? <a href={l.to} className="inline-flex min-h-[40px] items-center text-[14.5px] text-cream/70 transition-colors hover:text-cream sm:min-h-[34px]">{l.label}</a>
+            : <Link to={l.to} className="inline-flex min-h-[40px] items-center text-[14.5px] text-cream/70 transition-colors hover:text-cream sm:min-h-[34px]">{l.label}</Link>}</li>
         ))}
       </ul>
     </div>

@@ -1,5 +1,5 @@
 import { Link, NavLink, Navigate, Outlet, useLocation } from 'react-router-dom'
-import { BookOpen, CalendarDays, ClipboardList, Crown, Dumbbell, Gamepad2, Home, LineChart, MoreHorizontal, Settings, Shirt, Trophy, User, Video, X } from 'lucide-react'
+import { BookOpen, CalendarDays, ClipboardList, Compass, Crown, Dumbbell, Gamepad2, Home, LineChart, MoreHorizontal, Settings, Shirt, Trophy, User, Video, X } from 'lucide-react'
 import { MolaMark } from '../ui/brand'
 import { useEffect, useState, type ReactNode } from 'react'
 import { LangSwitch, Logo } from '../ui'
@@ -51,6 +51,7 @@ export default function AppLayout() {
     { title: t('app.groups.me'), items: [
       { to: '/app/joueur', label: t('app.player'), icon: (s) => <User size={s} strokeWidth={SW} /> },
       { to: '/app/livres', label: t('app.books'), icon: (s) => <BookOpen size={s} strokeWidth={SW} /> },
+      { to: '/guide/', label: t('app.guide'), icon: (s) => <Compass size={s} strokeWidth={SW} />, href: true },
       { to: '/football/', label: t('app.football'), icon: (s) => <Gamepad2 size={s} strokeWidth={SW} />, href: true },
       { to: '/app/premium', label: t('app.premium'), icon: (s) => <Crown size={s} strokeWidth={SW} /> },
       { to: '/app/reglages', label: t('app.settings'), icon: (s) => <Settings size={s} strokeWidth={SW} /> },

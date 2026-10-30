@@ -14,7 +14,7 @@ Un parent choisit le rôle **Parent** dans la conversation de bienvenue avec Mol
 
 Le parent voit l'accueil et l'espace joueur des jeunes, décrits au chapitre 15. Il garde cet espace même si son enfant a 16 ans ou plus : l'espace performance, avec la forme du matin et la charge d'entraînement, est fait pour le joueur lui-même.
 
-![L'accueil d'Estelle, parent dans la démo académie U13 : le salut, la devise, l'encadré Pour les parents, la carte Mon parcours et le défi du jour Les pieds rapides.](shot:youth-parent-home-named "L'accueil d'un parent, avec son encadré à lui.")
+![L'accueil d'Estelle, parent dans la démo académie U13 : le salut, la devise, l'encadré Pour les parents, la carte Le parcours de votre enfant et le défi du jour Les pieds rapides.](shot:youth-parent-home-named "L'accueil d'un parent, avec son encadré à lui.")
 
 Une seule chose change sur l'accueil, mais elle compte : l'encadré **Pour les parents**, juste sous le salut. Il dit l'essentiel en trois phrases : « Quinze minutes, un mur et un ballon suffisent. Restez à côté, aidez à compter et rappelez de boire de l'eau. Le jeu des yeux se joue à deux : c'est vous qui levez la carte de couleur. »
 
@@ -26,7 +26,7 @@ La carte **Prochain match** est souvent la plus utile au parent : le jour, l'heu
 
 L'**Espace joueur** du parent est le même que celui de l'enfant : les trois défis du jour, les progrès, **Mon regard**, la liste de tous les défis et l'historique. Le nom affiché en haut est celui du profil, donc celui du parent.
 
-![L'espace joueur ouvert par Estelle : le palier 1 Les fondations, la barre d'XP, la série, les défis du jour et la carte Mon parcours.](shot:youth-parent-space "L'espace joueur vu depuis le profil d'un parent.")
+![L'espace joueur ouvert par Estelle : le palier 1 Les fondations, la barre d'XP, la série, les défis du jour et la carte Le parcours de votre enfant.](shot:youth-parent-space "L'espace joueur vu depuis le profil d'un parent.")
 
 ## Suivre son enfant
 
@@ -36,9 +36,9 @@ Aujourd'hui, Ndamba n'a pas encore de comptes ni de synchronisation : toutes les
 
 **La fiche de l'effectif pour le parcours.** Le parcours (évaluations, observations, présences, minutes de jeu) vient de l'équipe et de son effectif. Quand l'équipe de l'enfant se trouve sur l'appareil, le parent relie son profil à la fiche de son enfant :
 
-1. Touchez la carte **Mon parcours**, sur l'accueil ou dans l'espace joueur.
+1. Touchez la carte **Le parcours de votre enfant**, sur l'accueil ou dans l'espace joueur.
 2. L'écran **Quelle est la fiche de votre enfant ?** affiche l'effectif : « Choisissez la fiche de votre enfant dans l'effectif de Lionceaux de Bonamoussadi U13 pour suivre son parcours. »
-3. Touchez le nom de votre enfant. Son parcours s'ouvre, et la carte **Mon parcours** de l'accueil affiche désormais sa saison : « Cette saison : 15 séances, 4 matchs, 2 objectifs en cours. »
+3. Touchez le nom de votre enfant. Son parcours s'ouvre, et la carte **Le parcours de votre enfant** de l'accueil affiche désormais sa saison : « Cette saison : 15 séances, 4 matchs, 2 objectifs en cours. »
 
 ![L'écran de choix de fiche des Lionceaux de Bonamoussadi U13 tel qu'un joueur le voit, avec le titre Qui es-tu dans l'équipe ? Les quinze fiches de l'effectif, chacune avec son numéro et son nom, comprennent Kaydoudou (7) et BriBri (8). Un parent voit la même liste avec le titre Quelle est la fiche de votre enfant ?](shot:youth-journey "La liste des fiches, ici dans sa version joueur : le parent la voit sous son propre titre.")
 

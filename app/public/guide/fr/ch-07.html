@@ -1,0 +1,202 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>7. La bibliothèque des 64 exercices, Le Guide Ndamba</title><meta name="description" content="Les 64 fiches de la méthode Njangi, rangées en huit familles, avec leurs intentions, leurs âges, leurs jours et leur intensité. Comment chercher, filtrer, lire une fiche et l'envoyer dans une séance."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-07"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>Le Guide Ndamba</span></a><nav class="bar-actions"><a class="lang" href="../en/ch-07.html" hreflang="en" lang="en">EN</a><button id="aa" type="button" aria-label="Taille du texte">Aa</button><button id="toc-btn" type="button">Sommaire</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Sommaire"><div class="drawer-head"><a href="./">Couverture et sommaire</a><button id="close" type="button">Fermer</button></div><ol class="toc-list"><li class="toc-part"><span>Partie I. Comprendre Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba en dix minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>La philosophie Njangi</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profils, six chemins</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>La carte de la plateforme</a></li></ol></li><li class="toc-part"><span>Partie II. Démarrer</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Créer son espace avec Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>L'accueil, la navigation et les réglages</a></li></ol></li><li class="toc-part"><span>Partie III. Entraîner</span><ol><li><a href="ch-07.html" data-page="ch-07" aria-current="page"><b>7</b>La bibliothèque des 64 exercices</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Construire une séance</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Planifier la semaine</a></li></ol></li><li class="toc-part"><span>Partie IV. L’équipe et les matchs</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>L'effectif et la fiche joueur</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Préparer un match</a></li></ol></li><li class="toc-part"><span>Partie V. Analyser</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>L'analyse en direct</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>Le rapport de match et l'Indice Njangi</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>La saison et l'analyse vidéo</a></li></ol></li><li class="toc-part"><span>Partie VI. Le joueur et sa famille</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>L'espace joueur</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>Les Leçons du Ballon, le carnet et le parcours</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Les parents</a></li></ol></li><li class="toc-part"><span>Partie VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, l'agent de Ndamba</a></li></ol></li><li class="toc-part"><span>Partie VIII. Les livres et le jeu</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>Le Code Njangi, le livre de la méthode</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, la saga de Kaydoudou et BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, le jeu</a></li></ol></li><li class="toc-part"><span>Partie IX. Porter le trophée</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Pourquoi l'Afrique peut gagner la Coupe du monde</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>Le plan 2026-2041 : cinq étapes vers le trophée</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>Le modèle économique</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Confiance, données et jeunes joueurs</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>La feuille de route</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Démarrage rapide par profil</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>Glossaire français et anglais</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Toutes les pages de la plateforme</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>Les 64 exercices</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions et réponses</a></li></ol></li></ol></div></div><main><section class="part-opener" id="partie-3"><div class="part-num">Partie III</div><h2>Entraîner</h2><p>Les exercices, les séances et la semaine.</p></section><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-3">Partie III. Entraîner</a><div class="ch-num">Chapitre 7</div><h1 class="ch-title">La bibliothèque des 64 exercices</h1><p class="ch-sum">Les 64 fiches de la méthode Njangi, rangées en huit familles, avec leurs intentions, leurs âges, leurs jours et leur intensité. Comment chercher, filtrer, lire une fiche et l’envoyer dans une séance.</p><p class="ch-time">10 min de lecture</p></header><div class="prose"><p>Un modèle de jeu commun ne tient pas dans un discours. Il tient dans des exercices que tout le monde connaît : l’éducateur d’une académie de Bafoussam, l’adjoint d’un club de Ligue 1 et l’entraîneur d’une sélection de jeunes doivent pouvoir dire « on fait R08 aujourd’hui » et parler de la même chose. C’est le rôle de la bibliothèque des exercices. Elle rassemble les 64 fiches du livre <em>Le Code Njangi</em>, avec leur schéma, leurs règles et leurs consignes, dans le téléphone de l’entraîneur, au bord du terrain. Chaque fiche dit ce qu’elle entraîne, pour quel âge et pour quel jour de la semaine. Et la bibliothèque reste ouverte à tous, sur tous les plans, gratuitement.</p>
+<h2 id="ce-que-contient-la-bibliotheque">Ce que contient la bibliothèque</h2>
+<p>Les 64 exercices sont rangés en huit familles. Chaque fiche porte un code : une lettre pour la famille, un numéro pour l’ordre. Ce code est le même dans le livre, dans l’application et dans les séances. C’est lui que vous tapez dans la recherche, et c’est lui qui apparaît sur la feuille de séance imprimée.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Lettre</th>
+<th>Famille</th>
+<th>Fiches</th>
+<th>Ce qu’elle entraîne</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C</td>
+<td>Technique et combinaisons</td>
+<td>14</td>
+<td>Le geste dans le jeu : contrôles orientés, une-deux, troisième homme, en circuits courts</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Rondos</td>
+<td>8</td>
+<td>Garder le ballon en petit nombre, la première école du Njangi</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Jeux de position</td>
+<td>10</td>
+<td>Occuper l’espace avec intention : couloirs, lignes, troisième homme</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Petits jeux</td>
+<td>8</td>
+<td>Petits effectifs, beaucoup de ballons : lire, décider, marquer</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Grands jeux</td>
+<td>6</td>
+<td>Le modèle de jeu sur un grand terrain, au plus près du match</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Phases de jeu</td>
+<td>6</td>
+<td>Une phase précise du match, répétée avec une vraie opposition</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Transitions</td>
+<td>6</td>
+<td>Reprendre en cinq secondes, regarder devant après la récupération</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Finition</td>
+<td>6</td>
+<td>Entrer dans la zone de finition et tirer avec intention</td>
+</tr>
+</tbody></table></div>
+<p>Chaque fiche porte aussi cinq repères, toujours les mêmes, qui servent ensuite aux filtres :</p>
+<ul>
+<li><strong>Les intentions.</strong> Ce sont les sept mots de la méthode (chapitre 2) : les cinq intentions de la possession, <strong>Sortir</strong>, <strong>Progresser</strong>, <strong>Fixer</strong>, <strong>Finir</strong> et <strong>Respirer</strong>, et les deux réflexes sans ballon, <strong>Reprendre</strong> et <strong>Regarder devant</strong>. Une fiche en travaille une, deux ou trois, rarement plus.</li>
+<li><strong>L’âge minimum.</strong> « U12+ » veut dire : à partir des moins de 12 ans. Les fiches vont de U9+ à U15+. Une fiche reste utile aux âges supérieurs, avec des règles plus exigeantes.</li>
+<li><strong>Les jours de la semaine.</strong> MD-4, MD-3, MD-2, MD-1, MD+1 ou <strong>Jeunes</strong>, les jours où l’exercice trouve naturellement sa place par rapport au match (le chapitre 9 explique ces codes).</li>
+<li><strong>L’intensité.</strong> <strong>Basse</strong>, <strong>Moyenne</strong>, <strong>Haute</strong> ou <strong>Très haute</strong>, affichée par quatre petites barres, et écrite en toutes lettres sur la fiche. La méthode est exigeante : 37 fiches sont hautes, 22 moyennes, 3 basses (des fiches de technique) et 2 très hautes (deux fiches de transition).</li>
+<li><strong>La durée.</strong> Les séries et les pauses, par exemple « 4 x 4 min, 1 min de récupération », et le total en minutes, de 14 à 38 minutes selon les fiches.</li>
+</ul>
+<h2 id="ouvrir-la-bibliotheque">Ouvrir la bibliothèque</h2>
+<ol>
+<li>Dans le menu de gauche, groupe <strong>Entraînement</strong>, touchez <strong>Exercices</strong>. Sur téléphone, touchez l’onglet <strong>Plus</strong>, puis <strong>Exercices</strong>.</li>
+<li>La page s’ouvre sur le titre <strong>Les 64 exercices</strong> et le compteur « 64 exercices ».</li>
+<li>Sous la recherche, une rangée de pastilles reprend les huit familles avec leur lettre. Touchez-en une pour descendre directement à cette famille.</li>
+<li>Chaque famille commence par sa lettre, son nom, son nombre de fiches et une phrase qui dit à quoi elle sert. Puis viennent les cartes.</li>
+</ol>
+<figure class="shot"><a href="../img/fr/pro-drills.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-drills-720.webp 720w, ../img/fr/pro-drills.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-drills.jpg" srcset="../img/fr/pro-drills-720.jpg 720w, ../img/fr/pro-drills.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La bibliothèque des exercices : le titre « Les 64 exercices », la barre de recherche, le bouton Filtres, les pastilles des huit familles et les premières cartes de la famille Technique et combinaisons." loading="lazy" decoding="async"></picture></a><figcaption>La bibliothèque, ouverte sur la famille C dans la démo club pro.</figcaption></figure>
+<p>Une carte montre l’essentiel sans l’ouvrir : le schéma, le code, la famille, l’âge minimum, le titre, une ligne d’explication, les deux premières intentions, la durée en minutes, le nombre de joueurs et l’intensité. En haut à droite de la page, le bouton <strong>Lire Le Code Njangi</strong> ouvre le livre entier.</p>
+<h2 id="chercher-et-filtrer">Chercher et filtrer</h2>
+<p>La recherche accepte un code (<strong>R02</strong>), un mot du titre (« rondo ») ou une idée (« troisième homme »). Elle cherche dans les titres, les sous-titres et les objectifs, en français et en anglais, et elle ignore les accents. Si vous tapez plusieurs mots, la fiche doit contenir tous ces mots.</p>
+<p>Le bouton <strong>Filtres</strong> ouvre cinq lignes de pastilles : <strong>Famille</strong>, <strong>Intention</strong>, <strong>Jour</strong>, <strong>Âge</strong> et <strong>Intensité</strong>. Chaque pastille affiche un petit nombre : le nombre de fiches que vous obtiendriez en la touchant, compte tenu des autres filtres. Une pastille à zéro devient pâle, ce qui évite les impasses. Quand vous choisissez une intention, sa définition s’affiche juste en dessous, par exemple « Reprendre : Cinq secondes de contre-pression après la perte ».</p>
+<p>Le filtre <strong>Âge</strong> fonctionne comme un plafond : la pastille <strong>U11</strong> garde les fiches prévues pour les moins de 11 ans et en dessous, jamais une fiche « U13+ ». Les pastilles vont de <strong>U9</strong> à <strong>Seniors</strong>. D’une ligne à l’autre, les filtres se combinent : une intention et un âge donnent les fiches qui respectent les deux. Dans une même ligne, ils s’élargissent : deux intentions cochées montrent les fiches qui travaillent l’une ou l’autre.</p>
+<p>Dès qu’un filtre est actif, les familles disparaissent au profit d’une seule grille, avec un compteur, par exemple « 7 exercices trouvés ». Le bouton <strong>Filtres</strong> affiche le nombre de filtres en cours. <strong>Effacer les filtres</strong> remet les pastilles à zéro en gardant la recherche ; <strong>Voir tous les exercices</strong> remet tout à zéro.</p>
+<p>Un exemple, tiré d’une vraie question d’entraîneur : « Mon équipe perd le ballon et regarde l’adversaire repartir. »</p>
+<ol>
+<li>Touchez <strong>Filtres</strong>.</li>
+<li>Dans la ligne <strong>Intention</strong>, touchez <strong>Reprendre</strong>. Il reste 7 fiches.</li>
+<li>Dans la ligne <strong>Âge</strong>, touchez l’âge de votre équipe, par exemple <strong>U13</strong>. Il en reste 3.</li>
+<li>Dans la ligne <strong>Jour</strong>, regardez les nombres : ces fiches vont surtout à MD-4 et MD-3, loin du match, car elles sont hautes ou très hautes.</li>
+</ol>
+<p>L’ordre de ces trois gestes n’est pas un hasard. <em>Le Code Njangi</em> (chapitre 31) demande de choisir un exercice en posant trois questions, toujours dans le même ordre : quelle intention, quel âge, quel jour. L’intention vient du dernier match ; elle réduit déjà les 64 fiches à une quinzaine. L’âge protège les enfants d’exercices qui ne sont pas faits pour eux. Le jour décide de l’espace et de l’intensité. Les filtres de Ndamba suivent ce raisonnement.</p>
+<aside class="callout callout-astuce"><div class="callout-kicker">Astuce</div><div class="callout-title">Une liste à partager</div><p>Les filtres s’inscrivent dans l’adresse de la page. Copiez-la et envoyez-la à votre adjoint : il ouvrira exactement la même sélection. Et sur une fiche, les flèches <strong>Précédent</strong> et <strong>Suivant</strong> restent dans votre sélection filtrée.</p>
+</aside>
+
+<h2 id="lire-une-fiche">Lire une fiche</h2>
+<p>Touchez une carte pour ouvrir sa fiche. Toutes les fiches suivent le même ordre, ce qui permet de trouver une information en deux secondes, même sous le soleil de 16 heures.</p>
+<figure class="shot"><a href="../img/fr/pro-drill-detail.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-drill-detail-720.webp 720w, ../img/fr/pro-drill-detail.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-drill-detail.jpg" srcset="../img/fr/pro-drill-detail-720.jpg 720w, ../img/fr/pro-drill-detail.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La fiche C01, Le Y du Njangi : le code et la famille, le titre, les intentions Progresser et Fixer, le schéma avec les boutons Mise en place et Progression, et à droite l'effectif, l'âge, l'espace, la durée, l'intensité et les jours." loading="lazy" decoding="async"></picture></a><figcaption>Le haut d’une fiche : le schéma à gauche, la carte d’identité à droite.</figcaption></figure>
+<p><strong>L’en-tête.</strong> Le code (C01), la famille, le titre (« Le Y du Njangi »), une ligne qui résume l’idée, puis les intentions. Les cinq intentions de la possession sont en vert ; les deux réflexes, <strong>Reprendre</strong> et <strong>Regarder devant</strong>, sont en gris. En haut à droite, un compteur indique la place de la fiche dans la liste, par exemple « 1 / 64 ».</p>
+<p><strong>Le schéma.</strong> L’équipe qui applique le Njangi est en vert foncé et attaque vers la droite, l’adversaire est en rouge, les joueurs neutres ou jokers en jaune. Les flèches sont numérotées dans l’ordre de l’action : trait plein pour la passe, pointillés pour la course, trait ondulé pour la conduite. Pour 19 fiches, un second schéma montre la progression ou la deuxième phase : passez de l’un à l’autre avec <strong>Mise en place</strong> et <strong>Progression</strong>.</p>
+<p><strong>La carte d’identité.</strong> À droite du schéma : <strong>Effectif</strong> (combien de joueurs, et souvent combien d’ateliers côte à côte), <strong>Âge</strong>, <strong>Espace</strong> (en mètres), <strong>Durée</strong> (les séries, puis le total en minutes entre parenthèses), <strong>Intensité</strong> et <strong>Jours</strong>. Dessous, les <strong>Pièces du Njangi</strong> de la fiche : le cœur, la raison, les yeux, la carte ou le souffle, les cinq images du roman qui aident à parler du jeu aux enfants.</p>
+<p><strong>Le contenu.</strong> En descendant, la fiche donne son <strong>Objectif</strong> dans un bandeau vert, puis l’<strong>Organisation</strong> (les plots, les équipes, les ballons ; beaucoup de fiches prévoient aussi le cas du grand groupe, du manque de ballons et de la forte chaleur), les <strong>Règles</strong>, les <strong>Consignes</strong>, c’est-à-dire les phrases courtes à dire pendant l’exercice, puis deux colonnes : <strong>Pour rendre plus difficile</strong> et <strong>Pour rendre plus facile</strong>. La rubrique <strong>Ce qu’on mesure</strong> dit quoi compter pour savoir si l’exercice a fait son travail. Enfin, l’encadré <strong>Avec Kaydoudou et BriBri</strong> relie la fiche à une scène du roman, avec le lien <strong>Lire le roman</strong>.</p>
+<figure class="shot tall"><a href="../img/fr/pro-drill-detail-full.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-drill-detail-full-720.webp 720w, ../img/fr/pro-drill-detail-full.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-drill-detail-full.jpg" srcset="../img/fr/pro-drill-detail-full-720.jpg 720w, ../img/fr/pro-drill-detail-full.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="2884" alt="La fiche C01 en entier : l'objectif, l'organisation, les règles, les consignes, les colonnes pour rendre l'exercice plus difficile ou plus facile, ce qu'on mesure, l'encadré Avec Kaydoudou et BriBri et le lien vers la fiche suivante." loading="lazy" decoding="async"></picture></a><figcaption>Une fiche complète, de l’objectif à l’histoire du roman.</figcaption></figure>
+<p>Les consignes sont écrites comme on parle au bord du terrain : « B, remise en une touche, dans la course de C, pas dans ses pieds. » C’est voulu. Le livre insiste : le joueur en mouvement n’entend qu’une consigne à la fois, et seulement si elle est courte. Quand toutes les catégories d’un club utilisent les mêmes mots, un U13 qui monte en U15 ne réapprend pas une langue.</p>
+<p>En bas de la fiche, deux cartes mènent à la fiche précédente et à la suivante. Le lien <strong>Tous les exercices</strong>, en haut, ramène à la liste avec vos filtres.</p>
+<h2 id="du-livre-au-terrain">Du livre au terrain</h2>
+<p>Sous le schéma, le bouton <strong>Lire dans le livre</strong> ouvre la même fiche dans <em>Le Code Njangi</em>, à sa page. Le livre donne le contexte que l’écran n’a pas la place de donner : le chapitre qui explique l’intention, les erreurs fréquentes, la place de l’exercice dans la semaine. Le livre est écrit en français, comme le roman.</p>
+<p>Le lien fonctionne dans les deux sens : chaque fiche citée dans le livre par son code, comme R08, se retrouve dans la bibliothèque, et le sommaire du livre se termine par le lien <strong>Les 64 exercices dans l’application</strong>. L’entraîneur prépare chez lui avec le livre, et retrouve la même fiche dans sa poche le lendemain.</p>
+<h2 id="ajouter-un-exercice-a-une-seance">Ajouter un exercice à une séance</h2>
+<p>Une fiche n’a de valeur que si elle arrive sur le terrain. Le bouton <strong>Ajouter à une séance</strong> fait ce chemin en deux gestes.</p>
+<ol>
+<li>Sur la fiche, touchez <strong>Ajouter à une séance</strong>. Une fenêtre s’ouvre avec le titre de l’exercice.</li>
+<li>Pour une nouvelle séance, touchez <strong>Nouvelle séance avec cet exercice</strong>. Le jour MD et l’intention sont préremplis : le jour est le premier jour d’avant-match de la fiche (par exemple MD-4 pour R08), l’intention est sa première intention. Vérifiez la date et l’équipe, puis touchez <strong>Créer la séance</strong>.</li>
+<li>Pour une séance déjà prévue, choisissez-la sous <strong>Ou dans une séance à venir</strong>. La liste montre les douze prochaines séances de l’équipe, avec leur jour MD, leur nombre de blocs et leurs minutes. La mention <strong>Bon jour</strong> signale une séance dont le jour correspond à ceux de la fiche ; <strong>Déjà dedans</strong> signale une séance qui contient déjà l’exercice : elle ne réagit plus au toucher, ce qui évite d’ajouter deux fois le même bloc.</li>
+<li>Un message confirme l’ajout, avec le lien <strong>Ouvrir</strong> pour aller à la séance.</li>
+</ol>
+<p>L’exercice entre dans la séance comme un nouveau bloc, à la fin, avec sa durée totale. Le chapitre 8 montre comment le déplacer, changer ses minutes ou lui ajouter une note.</p>
+<p>Vous pouvez aussi faire le chemin inverse : depuis une séance, le bouton <strong>Ajouter un exercice</strong> ouvre la même bibliothèque, déjà filtrée sur le jour de la séance (sauf pour MD+1, qui n’a qu’une fiche : le panneau montre alors toutes les fiches). En bas de la bibliothèque, le lien <strong>Composer une séance avec ces exercices</strong> mène à la liste des séances. Et si vous préférez demander, Mola répond à des phrases comme « Quels exercices pour mieux reprendre le ballon ? » en proposant trois fiches adaptées à l’âge de votre équipe.</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">Pour l’investisseur</div><div class="callout-title">Pourquoi la bibliothèque est gratuite</div><p>Les 64 exercices et les livres restent ouverts sur tous les plans, y compris le plan gratuit : c’est une règle écrite dans le code de l’application. La bibliothèque est la porte d’entrée de la méthode et le vocabulaire commun dont une fédération a besoin, du premier club à la sélection. Les plans payants vendent le temps gagné (séances illimitées, semaine planifiée, analyse), pas l’accès au savoir.</p>
+</aside>
+
+<h2 id="ce-que-la-bibliotheque-construit">Ce que la bibliothèque construit</h2>
+<p>Une bibliothèque ne fait pas une équipe. Mais une équipe qui connaît dix fiches par cœur ne perd plus de temps à comprendre l’organisation : toute son attention va au comportement. Le livre le dit simplement : mieux vaut une dizaine d’exercices bien connus qu’une nouveauté chaque jour. Ndamba rend ces fiches communes, au même endroit, avec les mêmes codes et les mêmes mots, du U9 à l’équipe A. C’est la première brique de la continuité qui manque au football africain.</p>
+</div></article><nav class="pager" aria-label="Précédent / Suivant"><a class="prev" href="ch-06.html" rel="prev"><small>Précédent</small><b>6. L'accueil, la navigation et les réglages</b></a><a class="next" href="ch-08.html" rel="next"><small>Suivant</small><b>8. Construire une séance</b></a></nav></main><script>(function(){var K='guide.fr';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','fr')}catch(e){}
+})();</script></body></html>

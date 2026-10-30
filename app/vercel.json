@@ -1,9 +1,25 @@
 {
   "redirects": [
-    { "source": "/livres/tome1", "destination": "/book/tome1/", "permanent": false },
-    { "source": "/livres/methode", "destination": "/book/methode/", "permanent": false }
+    {
+      "source": "/livres/tome1",
+      "destination": "/book/tome1/",
+      "permanent": false
+    },
+    {
+      "source": "/livres/methode",
+      "destination": "/book/methode/",
+      "permanent": false
+    },
+    {
+      "source": "/guide",
+      "destination": "/guide/",
+      "permanent": false
+    }
   ],
   "rewrites": [
-    { "source": "/((?!book/|football/|assets/|api/|icons/|favicon|manifest|icon-|robots|og|art/).*)", "destination": "/index.html" }
+    {
+      "source": "/((?!book/|guide/|football/|assets/|api/|icons/|favicon|manifest|icon-|robots|og|art/).*)",
+      "destination": "/index.html"
+    }
   ]
 }

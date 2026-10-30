@@ -1,0 +1,381 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>20. Lionceaux, the saga of Kaydoudou and BriBri, The Ndamba Guide</title><meta name="description" content="Ndamba's children's novel: two brothers, five countries, 40 chapters and 168 illustrations, a Ball Lesson at the end of every chapter that becomes a page of the app, six books planned, and how to read it online."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-20"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-20.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Live analysis</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The season and video analysis</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20" aria-current="page"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-8">Part VIII. The books and the game</a><div class="ch-num">Chapter 20</div><h1 class="ch-title">Lionceaux, the saga of Kaydoudou and BriBri</h1><p class="ch-sum">Ndamba’s children’s novel: two brothers, five countries, 40 chapters and 168 illustrations, a Ball Lesson at the end of every chapter that becomes a page of the app, six books planned, and how to read it online.</p><p class="ch-time">10 min read</p></header><div class="prose"><p>A method book speaks to adults. A child learns a game idea through a story and heroes they love. <em>Lionceaux, book 1: Le Ballon qui voyage</em> (Lion Cubs, book 1: The Travelling Ball) is that story: a football adventure written in French for readers aged 8 to 12, to read alone or aloud as a family. It tells, in a child’s words, the same idea as <em>Le Code Njangi</em>: possession with purpose. In Ndamba, every chapter ends with a lesson that becomes a page of the app, and the world of the novel lives inside the U13 academy demo. The novel and its lessons are how the youngest players and their families come in.</p>
+<h2 id="the-novel-at-a-glance">The novel at a glance</h2>
+<p><em>Lionceaux</em> is the name of the saga, printed in large letters at the top of every cover with the number of the book. Book 1, <em>Le Ballon qui voyage</em>, is written by William Foteping. It has 40 chapters in five parts, one per country. Each chapter is told by one of the two brothers, most of the time in turn; the contents on <strong>The books</strong> page show it as &quot;Told by BriBri&quot; or &quot;Told by Kaydoudou&quot;.</p>
+<p>The book carries 168 paintings in a cinematic style, all published in the online reader: the cover, two character pages (the brothers, then Mami Nyanga, Tonton Fokou, Papa and Maman), five part openers, forty chapter openers and three pictures inside the text of every chapter.</p>
+<p>The novel’s home page carries a dedication: &quot;Pour Kaydoudou et BriBri. Que le ballon voyage toujours, et qu’il sache toujours où il va.&quot; (For Kaydoudou and BriBri. May the ball always travel, and always know where it is going.), signed Papa. The two heroes bear the first names of the author’s sons.</p>
+<figure class="shot"><a href="../img/en/book-tome1-index.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/book-tome1-index-720.webp 720w, ../img/en/book-tome1-index.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/book-tome1-index.jpg" srcset="../img/en/book-tome1-index-720.jpg 720w, ../img/en/book-tome1-index.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The cover of Lionceaux, book 1: Le Ballon qui voyage in the online reader: BriBri in the green number 8 shirt and Kaydoudou in a yellow T-shirt run across red earth with the patched ball, and behind them stretch the landscapes of the countries of the journey." loading="lazy" decoding="async"></picture></a><figcaption>The novel’s home page, with the cover of book 1.</figcaption></figure>
+<h2 id="the-two-brothers">The two brothers</h2>
+<p><strong>BriBri</strong> is the big brother: 12 in the first chapter, 16 in the last. Tall and slim, calm, he wears a faded green number 8 shirt, then becomes the 6, the pivot who sets the rhythm. He sees everything, says little and guides his teammates with his hands. He loves maths and plans. He keeps the Njangi notebook, a wax-print covered exercise book given to him by Tonton Fokou. His path in book 1: daring the pass that breaks the lines, and becoming a leader who speaks.</p>
+<p><strong>Kaydoudou</strong> is the little brother: 10 at the start, 14 at the end. Round cheeks, a soft little afro, a big gap-toothed smile, he never keeps still. A winger, a dribbler and a joker, he imitates everyone and always wears one red sock and one yellow sock, his signature in every country. After every goal he does Roger Milla’s corner-flag dance. His path: learning that dribbling is not playing alone; the &quot;dribble njangi&quot; draws two opponents to free a teammate.</p>
+<p>Together they have their move, &quot;le une-deux du Njangi&quot; (the Njangi one-two), and their ritual for making up: fist against fist, then hand on heart. As they are two years apart, Kaydoudou plays up in his brother’s age group, because the coach decides so.</p>
+<p>Around them: Papa, Armand, a network engineer whose job moves the family; Maman, Estelle, a nurse, who keeps the rule &quot;Pas de devoirs, pas de crampons&quot; (no homework, no boots); Mami Nyanga, their grandmother in Bafoussam, who runs the women’s njangi of her neighbourhood; and Tonton Fokou, the volunteer coach of the Lionceaux de Bonamoussadi, whose only rule is &quot;Le ballon doit voyager&quot; (the ball must travel). Mami stitches the boys’ old ball back together with a square of red and yellow wax cloth: Mami’s ball follows them to every country.</p>
+<h2 id="five-countries-five-pieces-of-the-njangi">Five countries, five pieces of the Njangi</h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Country and places</th>
+<th>Chapters</th>
+<th>Piece of the Njangi</th>
+<th>What the brothers learn</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I</td>
+<td>Cameroon: Douala (Bonamoussadi) and Bafoussam</td>
+<td>1 to 8</td>
+<td>The heart</td>
+<td>Playing together, everyone puts in their share</td>
+</tr>
+<tr>
+<td>II</td>
+<td>United States: Waldorf, Maryland</td>
+<td>9 to 16</td>
+<td>The reason</td>
+<td>Possessing is not keeping: every pass must serve</td>
+</tr>
+<tr>
+<td>III</td>
+<td>France: Seine-et-Marne</td>
+<td>17 to 24</td>
+<td>The eyes</td>
+<td>Seeing before receiving, playing between the lines, winning it back fast</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>Spain: a Catalan village near Tarragona</td>
+<td>25 to 32</td>
+<td>The map</td>
+<td>The rondo, the pausa, the third man, the superiorities</td>
+</tr>
+<tr>
+<td>V</td>
+<td>England: London</td>
+<td>33 to 40</td>
+<td>The breath</td>
+<td>Intensity, pressing, keeping the ball even when it burns</td>
+</tr>
+</tbody></table></div>
+<p>Each move follows Papa’s job, and the boys then join a local club. They are never &quot;transferred&quot; like adult players: the novel holds to this, the boys never change country for football, they follow their family. The novel’s calendar touches the real world: part II takes place in 2026, and the family lives the World Cup played in the United States, Canada and Mexico, without Cameroon, as a wound that feeds the dream. The brothers’ clubs and academies are invented; no real player is named except Roger Milla.</p>
+<h2 id="the-40-chapters-and-their-ball-lessons">The 40 chapters and their Ball Lessons</h2>
+<p>At the end of every chapter, BriBri writes the day’s &quot;Leçon du Ballon&quot; (Ball Lesson) in his notebook: a title, a few lines and, most of the time, a pitch diagram drawn with the same tool as the drill cards of <em>Le Code Njangi</em>. The table gives the titles as the English app shows them; the reader uses the French ones.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Chapter</th>
+<th>Ball Lesson</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1 The patched ball</td>
+<td>The ball must travel</td>
+</tr>
+<tr>
+<td>2 Mami’s njangi</td>
+<td>The ball is the njangi pot</td>
+</tr>
+<tr>
+<td>3 The Bépanda Sharks</td>
+<td>When they squeeze you, the ball must go</td>
+</tr>
+<tr>
+<td>4 Mud and wax cloth</td>
+<td>Offer a solution</td>
+</tr>
+<tr>
+<td>5 The polite pass and the useful pass</td>
+<td>The polite pass and the useful pass</td>
+</tr>
+<tr>
+<td>6 The letter from Waldorf</td>
+<td>A player who moves stays in the team</td>
+</tr>
+<tr>
+<td>7 Tonton Fokou’s notebook</td>
+<td>Dare the pass that cuts through</td>
+</tr>
+<tr>
+<td>8 Final at Bonamoussadi</td>
+<td>The heart of the Njangi</td>
+</tr>
+<tr>
+<td>9 Snow in Waldorf</td>
+<td>Small space, big head</td>
+</tr>
+<tr>
+<td>10 The tryouts</td>
+<td>The first touch goes somewhere</td>
+</tr>
+<tr>
+<td>11 Seventy per cent</td>
+<td>Possessing is not keeping</td>
+</tr>
+<tr>
+<td>12 Marcus’s numbers</td>
+<td>Dribble to draw them in</td>
+</tr>
+<tr>
+<td>13 No homework, no boots</td>
+<td>The lines</td>
+</tr>
+<tr>
+<td>14 The World Cup comes to us</td>
+<td>One team, one idea</td>
+</tr>
+<tr>
+<td>15 Running for others</td>
+<td>Running for others</td>
+</tr>
+<tr>
+<td>16 Goodbye, Potomac</td>
+<td>Count what counts</td>
+</tr>
+<tr>
+<td>17 Before you receive, you look</td>
+<td>The scan</td>
+</tr>
+<tr>
+<td>18 Between the lines</td>
+<td>Between the lines</td>
+</tr>
+<tr>
+<td>19 Kenzo</td>
+<td>The open body</td>
+</tr>
+<tr>
+<td>20 The match too far</td>
+<td>We leave nobody alone</td>
+</tr>
+<tr>
+<td>21 The five seconds</td>
+<td>The five seconds</td>
+</tr>
+<tr>
+<td>22 Christmas without Mami</td>
+<td>Seeing first means playing faster</td>
+</tr>
+<tr>
+<td>23 Talking is passing</td>
+<td>Talking is passing</td>
+</tr>
+<tr>
+<td>24 Eyes to leave with</td>
+<td>The eyes of the Njangi</td>
+</tr>
+<tr>
+<td>25 The bull</td>
+<td>The rondo</td>
+</tr>
+<tr>
+<td>26 Avi Ramon</td>
+<td>The pausa</td>
+</tr>
+<tr>
+<td>27 The lanes</td>
+<td>The five lanes</td>
+</tr>
+<tr>
+<td>28 The third man</td>
+<td>The third man</td>
+</tr>
+<tr>
+<td>29 The sea and Mami</td>
+<td>The njangi dribble</td>
+</tr>
+<tr>
+<td>30 The three superiorities</td>
+<td>The three superiorities</td>
+</tr>
+<tr>
+<td>31 The Atlas</td>
+<td>Slow, slow, QUICK</td>
+</tr>
+<tr>
+<td>32 The map of the Njangi</td>
+<td>The map of the Njangi</td>
+</tr>
+<tr>
+<td>33 Intensity is a choice</td>
+<td>Receiving under pressure</td>
+</tr>
+<tr>
+<td>34 Play before the contact</td>
+<td>Play before the contact</td>
+</tr>
+<tr>
+<td>35 The press</td>
+<td>The triggers</td>
+</tr>
+<tr>
+<td>36 The dressing room njangi</td>
+<td>The dressing room njangi</td>
+</tr>
+<tr>
+<td>37 Monsieur Atéba</td>
+<td>After winning it, look forward</td>
+</tr>
+<tr>
+<td>38 The breath</td>
+<td>The ball breathes for us</td>
+</tr>
+<tr>
+<td>39 Mami’s flight</td>
+<td>The five pieces of the Njangi</td>
+</tr>
+<tr>
+<td>40 The Njangi goal</td>
+<td>The Njangi goal</td>
+</tr>
+</tbody></table></div>
+<p>This guide does not tell the ending: it belongs to the readers.</p>
+<h2 id="from-the-novel-39-s-page-to-the-app-39-s-page">From the novel’s page to the app’s page</h2>
+<p>Ndamba takes each lesson exactly as it is written in the novel, with its diagram, and turns it into a page of the <strong>Player space</strong>: &quot;The Ball Lessons&quot;, subtitled &quot;BriBri’s notebook&quot;.</p>
+<ol>
+<li>For a player under 16, or for a parent, open <strong>Player space</strong>, then at the very bottom of the page tap <strong>The Ball Lessons</strong> (&quot;The 40 pages of BriBri’s notebook&quot;). On a young player’s home screen, &quot;Lesson of the day&quot; leads to the same place through <strong>All lessons</strong>. For every profile, <strong>The books</strong> page offers the link <strong>The Ball Lessons in the app</strong>.</li>
+<li>At the top, the bar &quot;0 of 40 understood&quot; tracks progress, and <strong>Lesson of the day (no. 8)</strong> opens the lesson chosen for today (the number changes every day). <strong>Read the novel</strong> opens the book.</li>
+<li>Pick a part from the five tabs (<strong>Part I, Cameroon</strong>, The heart, and so on).</li>
+<li>Each lesson shows the chapter it comes from, its lines, the chapter’s illustration and &quot;The notebook diagram&quot;. In English the lines are a short English version; <strong>Read the original page in French</strong> shows BriBri’s own words. Tap <strong>I’ve got it</strong> when it is the case, or <strong>Read chapter 1</strong> to go back to the story.</li>
+<li>Under the lesson, &quot;The matching challenge&quot; suggests something to practise alone, and the drill link (for example &quot;Drill R07&quot;) opens the matching card. <strong>Write in my notebook</strong> opens the player’s notebook, covered in chapter 16 of this guide.</li>
+</ol>
+<p>Each lesson is linked to one of the ten skills of the Njangi player, to a challenge and to a drill. Lessons marked as understood are saved on this device, and the backup exported from <strong>Settings</strong> carries them too.</p>
+<figure class="shot"><a href="../img/en/youth-lessons-linked.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/youth-lessons-linked-720.webp 720w, ../img/en/youth-lessons-linked.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/youth-lessons-linked.jpg" srcset="../img/en/youth-lessons-linked-720.jpg 720w, ../img/en/youth-lessons-linked.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Ball Lessons page in the U13 academy demo: 0 of 40 understood, the Lesson of the day button, the five part tabs from Cameroon to England, and the first lesson, The ball must travel." loading="lazy" decoding="async"></picture></a><figcaption>The 40 Ball Lessons in BriBri’s player space (U13 academy demo).</figcaption></figure>
+<aside class="callout callout-mola"><div class="callout-kicker"><svg class="mm" viewBox="6 6 54 54" width="20" height="20" aria-hidden="true"><path d="M13.00 47.00 L22.00 19.00 L32.00 37.00 L42.00 19.00 L51.00 47.00" fill="none" stroke="currentColor" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="51" cy="47" r="7.564" fill="#F5B700"></circle></svg>Ask Mola</div><div class="callout-title">Open a lesson or a chapter</div><p>Type &quot;Open lesson 12&quot;: Mola finds the notebook page and offers <strong>Open the lesson</strong>. Type &quot;Show me chapter 14 of the novel&quot;: Mola finds that chapter’s lesson and offers <strong>Read the chapter</strong>, which opens it in the reader.</p>
+</aside>
+
+<h2 id="the-novel-39-s-world-in-the-u13-demo">The novel’s world in the U13 demo</h2>
+<p>The <strong>U13 academy demo</strong> takes you inside the novel. The team is the Lionceaux de Bonamoussadi U13, the coach is Tonton Fokou, and the squad includes BriBri, Kaydoudou, Mireille « la Gazelle » Eyenga and Ousmane « Petit Pied » Bello. The last match was against the Requins de Bépanda, and the next one is against the Panthères de Deïdo, in the neighbourhood tournament. This is invented demo data: it shows an educator how the app works day to day, with names their players already know.</p>
+<figure class="shot"><a href="../img/en/youth-home.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/youth-home-720.webp 720w, ../img/en/youth-home.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/youth-home.jpg" srcset="../img/en/youth-home-720.jpg 720w, ../img/en/youth-home.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="Tonton Fokou's home screen in the U13 academy demo: today's session, Speed: transitions, and the next match, on Saturday October 31, against the Panthères de Deïdo in the neighbourhood tournament." loading="lazy" decoding="async"></picture></a><figcaption>The novel’s world in the U13 academy demo.</figcaption></figure>
+<h2 id="six-books-planned">Six books planned</h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Book</th>
+<th>Title</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Le Ballon qui voyage</td>
+<td>Available</td>
+</tr>
+<tr>
+<td>2</td>
+<td>La Tanière des Lionceaux</td>
+<td>Coming soon</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Premier contrat</td>
+<td>Coming soon</td>
+</tr>
+<tr>
+<td>4</td>
+<td>La CAN</td>
+<td>Coming soon</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Mondial 2030</td>
+<td>Coming soon</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2034, l’étoile</td>
+<td>Coming soon</td>
+</tr>
+</tbody></table></div>
+<p><strong>The books</strong> page presents them under &quot;The saga in six books&quot;: six books that follow the two brothers from the neighbourhood pitch to the World Cup. The saga’s calendar matches Ndamba’s: BriBri and Kaydoudou are 12 and 10 in 2026, so they will be 20 and 18 in 2034, and 24 and 22 in 2038.</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">For investors</div><div class="callout-title">A saga that grows up with its readers</div><p>The novel gives children and families a reason to open Ndamba, and a common language with their coaches. Its 40 lessons, the U13 demo and the &quot;With Kaydoudou and BriBri&quot; lines on the drill cards tie the story to training. Five books are still to be written: they are plans, not books you can read yet.</p>
+</aside>
+
+<h2 id="reading-the-novel-online">Reading the novel online</h2>
+<ol>
+<li>On <strong>The books</strong> page, in the <em>Lionceaux</em> section, tap <strong>Read online</strong> (or <strong>Read</strong> under book 1 on the six-book shelf).</li>
+<li>The home page shows the cover, the dedication, the two character pages and the list &quot;Les 40 chapitres&quot;, part by part. Tap <strong>Commencer au chapitre 1</strong> (Start at chapter 1), or <strong>Reprendre la lecture</strong> (Resume reading) to find your place.</li>
+<li>Each part opens with its painting. Each chapter shows &quot;Chapitre 1 sur 40&quot; (chapter 1 of 40), opens on a large illustration and ends with the notebook page, &quot;Leçon du Ballon n°1&quot;, most of the time with its diagram. <strong>Suivant</strong> goes to the next chapter.</li>
+<li><strong>Chapitres</strong> and <strong>Aa</strong> work as in <em>Le Code Njangi</em> (chapter 19 of this guide), and each book keeps its own place.</li>
+<li>At the bottom of the contents, &quot;À suivre : Lionceaux, tome 2 : La Tanière des Lionceaux&quot; announces what comes next, and the link &quot;Les 40 Leçons du Ballon dans l’application&quot; leads back to the lessons.</li>
+</ol>
+<figure class="shot"><a href="../img/en/book-tome1-ch01.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/book-tome1-ch01-720.webp 720w, ../img/en/book-tome1-ch01.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/book-tome1-ch01.jpg" srcset="../img/en/book-tome1-ch01-720.jpg 720w, ../img/en/book-tome1-ch01.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The start of chapter 1: the opener of part I, Cameroun, Le cœur, Le ballon de Mami, then the mention Chapitre 1 sur 40, the title Le ballon rapiécé and the opening illustration." loading="lazy" decoding="async"></picture></a><figcaption>A chapter of the novel in the online reader.</figcaption></figure>
+<p>Two notes for parents and educators. One chapter of the French part deals with racism, once, seriously and with restraint: the referee stops the match, the team gathers around the child, the adults act. And the foreword of <em>Le Code Njangi</em> suggests a simple habit: read a chapter on Friday, bring it to life on the pitch on Saturday.</p>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-19.html" rel="prev"><small>Previous</small><b>19. The Njangi Code, the method book</b></a><a class="next" href="ch-21.html" rel="next"><small>Next</small><b>21. Lionceaux Football, the game</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>

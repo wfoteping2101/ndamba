@@ -1,0 +1,315 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>12. L'analyse en direct, Le Guide Ndamba</title><meta name="description" content="Le codeur en direct, ses boutons et leurs codes, les raccourcis clavier, le chrono et les périodes, les corrections, l'écran du téléphone, et une méthode simple pour coder un match depuis la touche, même avec un parent bénévole."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-12"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>Le Guide Ndamba</span></a><nav class="bar-actions"><a class="lang" href="../en/ch-12.html" hreflang="en" lang="en">EN</a><button id="aa" type="button" aria-label="Taille du texte">Aa</button><button id="toc-btn" type="button">Sommaire</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Sommaire"><div class="drawer-head"><a href="./">Couverture et sommaire</a><button id="close" type="button">Fermer</button></div><ol class="toc-list"><li class="toc-part"><span>Partie I. Comprendre Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba en dix minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>La philosophie Njangi</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profils, six chemins</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>La carte de la plateforme</a></li></ol></li><li class="toc-part"><span>Partie II. Démarrer</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Créer son espace avec Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>L'accueil, la navigation et les réglages</a></li></ol></li><li class="toc-part"><span>Partie III. Entraîner</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>La bibliothèque des 64 exercices</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Construire une séance</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Planifier la semaine</a></li></ol></li><li class="toc-part"><span>Partie IV. L’équipe et les matchs</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>L'effectif et la fiche joueur</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Préparer un match</a></li></ol></li><li class="toc-part"><span>Partie V. Analyser</span><ol><li><a href="ch-12.html" data-page="ch-12" aria-current="page"><b>12</b>L'analyse en direct</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>Le rapport de match et l'Indice Njangi</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>La saison et l'analyse vidéo</a></li></ol></li><li class="toc-part"><span>Partie VI. Le joueur et sa famille</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>L'espace joueur</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>Les Leçons du Ballon, le carnet et le parcours</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Les parents</a></li></ol></li><li class="toc-part"><span>Partie VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, l'agent de Ndamba</a></li></ol></li><li class="toc-part"><span>Partie VIII. Les livres et le jeu</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>Le Code Njangi, le livre de la méthode</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, la saga de Kaydoudou et BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, le jeu</a></li></ol></li><li class="toc-part"><span>Partie IX. Porter le trophée</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Pourquoi l'Afrique peut gagner la Coupe du monde</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>Le plan 2026-2041 : cinq étapes vers le trophée</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>Le modèle économique</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Confiance, données et jeunes joueurs</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>La feuille de route</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Démarrage rapide par profil</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>Glossaire français et anglais</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Toutes les pages de la plateforme</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>Les 64 exercices</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions et réponses</a></li></ol></li></ol></div></div><main><section class="part-opener" id="partie-5"><div class="part-num">Partie V</div><h2>Analyser</h2><p>Coder un match, lire l’Indice Njangi, travailler la vidéo.</p></section><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-5">Partie V. Analyser</a><div class="ch-num">Chapitre 12</div><h1 class="ch-title">L’analyse en direct</h1><p class="ch-sum">Le codeur en direct, ses boutons et leurs codes, les raccourcis clavier, le chrono et les périodes, les corrections, l’écran du téléphone, et une méthode simple pour coder un match depuis la touche, même avec un parent bénévole.</p><p class="ch-time">10 min de lecture</p></header><div class="prose"><p>La plupart des entraîneurs du continent n’ont ni analyste, ni caméra en hauteur. Ils ont un téléphone et une ligne de touche. C’est pour eux que Ndamba a été construit : un écran sombre, de grands boutons, un tap par action, et l’Indice Njangi qui se calcule pendant que le match se joue. À la mi-temps, vous savez déjà si votre équipe possède avec intention. Et parce que tout le monde code avec les mêmes boutons et les mêmes définitions, un match codé à Douala se compare à un match codé à Bafoussam. C’est le début d’une mesure commune.</p>
+<h2 id="ouvrir-le-codeur">Ouvrir le codeur</h2>
+<p>Il y a trois portes d’entrée :</p>
+<ul>
+<li>sur la feuille de match, le bouton <strong>Lancer l’analyse en direct</strong> (il devient <strong>Reprendre l’analyse en direct</strong> si le match est déjà en cours) ;</li>
+<li>dans <strong>Analyse</strong>, la rubrique <strong>À analyser en direct</strong>, avec <strong>Lancer le direct</strong> ou <strong>Reprendre le direct</strong> pour chaque match à venir ;</li>
+<li>après le match, dans le rapport, le bouton <strong>Corriger les tags</strong>.</li>
+</ul>
+<figure class="shot"><a href="../img/fr/pro-match-sheet.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-match-sheet-720.webp 720w, ../img/fr/pro-match-sheet.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-match-sheet.jpg" srcset="../img/fr/pro-match-sheet-720.jpg 720w, ../img/fr/pro-match-sheet.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La feuille du prochain match de la démo, avec en haut à gauche le bouton noir Lancer l'analyse en direct, à côté de Saisir le score et Observer." loading="lazy" decoding="async"></picture></a><figcaption>Le direct se lance depuis la feuille de match.</figcaption></figure>
+<p>Le codeur prend tout l’écran, sans menus. Un match à venir passe en <strong>En direct</strong>, au plus tard au premier tap. La croix en haut à gauche (<strong>Quitter le direct</strong>) vous ramène à <strong>Analyse</strong> ; le match reste en direct et vous pourrez reprendre là où vous en étiez.</p>
+<p>Sur le plan <strong>Gratuit</strong>, comme sur <strong>Joueur Premium</strong> qui ne comprend pas les outils de l’entraîneur, un seul match peut être codé en direct. Au deuxième, le bouton de la feuille de match porte un cadenas et l’encadré <strong>Analyse en direct illimitée avec Coach Pro</strong> propose <strong>Voir les offres</strong>. Dans <strong>Analyse</strong>, la rubrique <strong>À analyser en direct</strong> le rappelle. Et si vous ouvrez le codeur par un autre chemin, un lien ou un favori par exemple, c’est le même encadré qui s’affiche à la place des boutons. Un match qui a déjà des tags n’est jamais bloqué. Les paiements ne sont pas encore branchés : activer une offre est aujourd’hui une démonstration (chapitre 24).</p>
+<h2 id="l-39-ecran-du-codeur">L’écran du codeur</h2>
+<figure class="shot"><a href="../img/fr/pro-live-tagger.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-live-tagger-720.webp 720w, ../img/fr/pro-live-tagger.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-live-tagger.jpg" srcset="../img/fr/pro-live-tagger-720.jpg 720w, ../img/fr/pro-live-tagger.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="Le codeur en direct sur un ordinateur : en haut le score Étoile 0-0 Rapides, le chrono à 00:00 avec Lancer, les périodes 1re, 2e, P1 et P2, Annuler, Journal et Fin du match ; au centre les boutons en cinq familles avec leur touche de clavier ; à droite l'Indice en direct à 0,0 sur 100, les cinq sous-indices, les compteurs et le journal du match." loading="lazy" decoding="async"></picture></a><figcaption>Le codeur sur grand écran : les boutons, le chrono, l’Indice en direct.</figcaption></figure>
+<p>En haut : le score (votre équipe à gauche, l’adversaire à droite), le chrono, les périodes, puis sur grand écran <strong>Annuler</strong>, <strong>Journal</strong>, l’œil pour observer, le clavier pour l’aide, les réglages et <strong>Fin du match</strong>. Au centre, les boutons, groupés en cinq familles : <strong>Possession</strong>, <strong>Danger</strong>, <strong>Fixation</strong>, <strong>Transitions</strong> et <strong>Adversaire</strong>. Chaque bouton affiche son compteur : le nombre d’actions de ce type déjà codées.</p>
+<p>Sur grand écran, la colonne de droite montre l’<strong>Indice en direct</strong> sur 100 avec son appréciation (<strong>Possession sans intention</strong>, <strong>Njangi solide</strong>…), les cinq sous-indices sur 20, huit compteurs (<strong>Passes tentées</strong>, <strong>Conservation (K)</strong>, <strong>Lignes traversées</strong>, <strong>Progressives</strong>, <strong>Surface</strong>, <strong>Pertes</strong>, <strong>Reprises en 5 s</strong>, <strong>Fixations</strong>) et le <strong>Journal du match</strong> avec les derniers tags.</p>
+<p>À chaque tap, le bouton s’éclaire, le téléphone vibre s’il le peut, et un petit message confirme l’action avec la minute, par exemple « Passe 12’ ». Quand un tap ajoute d’autres tags, le message le dit aussi : « But 12’ », suivi de « Ajouté aussi : Tir, Tir cadré ».</p>
+<h2 id="les-boutons-et-leurs-codes">Les boutons et leurs codes</h2>
+<p>Les définitions sont celles du chapitre 32 du Code Njangi, sans variation. Elles s’affichent aussi dans l’aide du codeur.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Famille</th>
+<th>Bouton</th>
+<th>Code</th>
+<th>Touche</th>
+<th>Quand le toucher</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Possession</td>
+<td><strong>Passe</strong></td>
+<td>PASS_OK</td>
+<td>1</td>
+<td>Toute passe qui arrive à un partenaire</td>
+</tr>
+<tr>
+<td>Possession</td>
+<td><strong>Passe perdue</strong></td>
+<td>PASS_LOST</td>
+<td>2</td>
+<td>Passe interceptée, trop longue ou sortie ; elle compte aussi comme perte</td>
+</tr>
+<tr>
+<td>Possession</td>
+<td><strong>Progressive</strong></td>
+<td>PROG</td>
+<td>3</td>
+<td>Passe ou conduite d’au moins 10 m vers le but adverse</td>
+</tr>
+<tr>
+<td>Possession</td>
+<td><strong>Ligne traversée</strong></td>
+<td>LINE</td>
+<td>4</td>
+<td>Le ballon dépasse une ligne d’au moins deux adversaires et arrive à un partenaire qui le contrôle</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>Dernier tiers</strong></td>
+<td>FINAL3</td>
+<td>5</td>
+<td>Ballon contrôlé dans les 35 derniers mètres, une fois par entrée</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>Surface</strong></td>
+<td>BOX</td>
+<td>6</td>
+<td>Ballon contrôlé dans la surface adverse</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>Tir</strong></td>
+<td>SHOT</td>
+<td>7</td>
+<td>Tout tir, même contré</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>Tir cadré</strong></td>
+<td>SHOT_IN</td>
+<td>8</td>
+<td>Tir qui oblige le gardien à intervenir ou qui entre</td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><strong>But</strong></td>
+<td>GOAL</td>
+<td>9</td>
+<td>But pour nous</td>
+</tr>
+<tr>
+<td>Fixation</td>
+<td><strong>Fixe deux</strong></td>
+<td>FIX2</td>
+<td>F</td>
+<td>Dribble ou conduite qui attire deux adversaires, et le ballon reste à nous</td>
+</tr>
+<tr>
+<td>Fixation</td>
+<td><strong>Renversement</strong></td>
+<td>SWITCH</td>
+<td>S</td>
+<td>Le ballon change de côté après que le bloc a été attiré</td>
+</tr>
+<tr>
+<td>Transitions</td>
+<td><strong>Perte</strong></td>
+<td>LOSS</td>
+<td>L</td>
+<td>Toute perte qui n’est pas une passe : duel, dribble, contrôle manqué</td>
+</tr>
+<tr>
+<td>Transitions</td>
+<td><strong>Reprise 5 s</strong></td>
+<td>REGAIN5</td>
+<td>K</td>
+<td>Ballon repris dans les 5 secondes qui suivent une perte</td>
+</tr>
+<tr>
+<td>Transitions</td>
+<td><strong>Récupération</strong></td>
+<td>REGAIN</td>
+<td>R</td>
+<td>Interception, tacle, arrêt du gardien, ballon rendu</td>
+</tr>
+<tr>
+<td>Adversaire</td>
+<td><strong>Tir adverse</strong></td>
+<td>SHOT (eux)</td>
+<td>A</td>
+<td>Un tir de l’adversaire</td>
+</tr>
+<tr>
+<td>Adversaire</td>
+<td><strong>But adverse</strong></td>
+<td>GOAL (eux)</td>
+<td>B</td>
+<td>Un but de l’adversaire</td>
+</tr>
+</tbody></table></div>
+<p>Quelques règles reviennent sans cesse :</p>
+<ul>
+<li><strong>Une action, plusieurs boutons.</strong> Une passe qui avance de 15 mètres se code <strong>Passe</strong> puis <strong>Progressive</strong>. Une passe qui casse une ligne se code <strong>Passe</strong> puis <strong>Ligne traversée</strong>, jamais <strong>Progressive</strong> en plus. Une conduite qui avance se code <strong>Progressive</strong> ou <strong>Ligne traversée</strong> seul. Un renversement se code <strong>Passe</strong> puis <strong>Renversement</strong>.</li>
+<li><strong>Un but, un seul tap.</strong> <strong>But</strong> ajoute tout seul <strong>Tir</strong> et <strong>Tir cadré</strong>, et <strong>Tir cadré</strong> ajoute <strong>Tir</strong> ; de même, <strong>But adverse</strong> ajoute <strong>Tir adverse</strong>. Le message de confirmation énumère ces ajouts. Le score se met à jour avec <strong>But</strong> et <strong>But adverse</strong>.</li>
+<li><strong>La fenêtre des 5 secondes.</strong> Après une <strong>Perte</strong> ou une <strong>Passe perdue</strong>, un anneau jaune de 5 secondes apparaît sur <strong>Récupération</strong>, qui affiche « Reprise ! 5 s » puis le compte à rebours. Un tap dans la fenêtre compte comme <strong>Reprise 5 s</strong>. Comptez à voix basse : un, deux, trois, quatre, cinq. Le bouton <strong>Reprise 5 s</strong> permet aussi de la coder directement.</li>
+</ul>
+<h2 id="le-chrono-et-les-periodes">Le chrono et les périodes</h2>
+<ol>
+<li>Au coup d’envoi, touchez le chrono (<strong>Lancer</strong>). Touchez-le à nouveau pour <strong>Pause</strong>, puis <strong>Reprendre</strong>.</li>
+<li>À la mi-temps, touchez <strong>2e</strong> : le chrono de la première période s’arrête et garde son temps.</li>
+<li>Au coup d’envoi de la seconde période, touchez le chrono. Les minutes continuent : la seconde période commence à la 46e minute d’un match en 2 x 45.</li>
+<li>En cas de prolongation, utilisez <strong>P1</strong> et <strong>P2</strong> (15 minutes chacune quand les mi-temps durent 40 minutes ou plus, moins pour les petits formats).</li>
+</ol>
+<p>Quand le temps réglementaire d’une période est dépassé, le chrono reste sur la fin de la période et un badge rouge compte le temps additionnel ; les actions sont datées, par exemple, « 45+2’ ». Si le chrono a été lancé en retard, les réglages proposent <strong>Corriger le chrono, 1re mi-temps</strong> avec moins 1 min, moins 10 s, plus 10 s et plus 1 min.</p>
+<p>Le chrono est enregistré sur l’appareil : si le téléphone ferme l’onglet ou si la page se recharge, il reprend là où il en était. Tant qu’il tourne, l’écran reste allumé quand le navigateur le permet. Chaque tag est enregistré à l’instant, même sans réseau ; le bandeau <strong>Hors ligne : tout est enregistré sur l’appareil.</strong> vous le rappelle.</p>
+<h2 id="corriger-sans-s-39-arreter">Corriger sans s’arrêter</h2>
+<p><strong>Annuler</strong> retire le dernier tap, avec tout son groupe : annuler un <strong>But</strong> retire aussi son tir et son tir cadré, et le score redescend. Un message nomme le tap annulé lui-même, par exemple « Annulé : But » (et non l’un des tirs ajoutés avec lui) ou « Annulé : Passe ».</p>
+<p><strong>Journal</strong> ouvre la liste de tous les tags, période par période, du plus récent au plus ancien : la minute, le bouton, et le joueur s’il est connu. La corbeille supprime un tag. Touchez un tag de votre équipe pour faire apparaître les numéros et lui attribuer un joueur, ou le changer.</p>
+<p>Le score se corrige dans les réglages, rubrique <strong>Corriger le score</strong>, avec plus et moins pour chaque équipe.</p>
+<h2 id="attribuer-les-actions-aux-joueurs">Attribuer les actions aux joueurs</h2>
+<p>Après chaque tap pour votre équipe, une bande apparaît en bas pendant 2,5 secondes : <strong>Qui ?</strong> suivi du nom de l’action, puis les numéros des titulaires et des remplaçants du match. Touchez un numéro : « Attribué au n° 8 ». Ignorez la bande, et l’action reste au compte de l’équipe. Ces attributions remplissent la <strong>Contribution en match</strong> de la fiche joueur et le parcours (chapitre 10). Elles ne changent rien à l’Indice Njangi.</p>
+<p>Les réglages du codeur (<strong>Réglages du direct</strong>) offrent aussi :</p>
+<ul>
+<li><strong>Attribuer aux joueurs</strong> : montrer ou non les numéros après chaque tap ;</li>
+<li><strong>Coder aussi l’adversaire</strong> : ajoute <strong>Passe adv.</strong> (Q), <strong>Passe perdue adv.</strong> (W) et <strong>Tiers adv.</strong> (E), qui donnent la part de possession et le field tilt dans le rapport ;</li>
+<li><strong>Plein écran</strong>.</li>
+</ul>
+<p>L’œil (<strong>Observer</strong>) ouvre l’écran du chapitre 10 en surimpression, titré par exemple <strong>Observer, minute 34</strong> : la minute est déjà remplie, les titulaires et les remplaçants sont prêts à être choisis.</p>
+<h2 id="sur-telephone">Sur téléphone</h2>
+<figure class="shot tall"><a href="../img/fr/m-pro-live.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/m-pro-live-720.webp 720w, ../img/fr/m-pro-live.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/m-pro-live.jpg" srcset="../img/fr/m-pro-live-720.jpg 720w, ../img/fr/m-pro-live.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="Le codeur sur téléphone : en haut la croix, le score et Fin, puis le chrono et les périodes, une bande Indice avec les lettres Pr, Pé, Fi, Re et Co, les boutons en grandes tuiles, et en bas Annuler, Journal, Observer, Aide et Réglages." loading="lazy" decoding="async"></picture></a><figcaption>Sur téléphone, en portrait : tout se joue du pouce.</figcaption></figure>
+<p>Tenez le téléphone en portrait. En haut : la croix, le score et <strong>Fin</strong>. Dessous, le chrono et les périodes, puis une bande <strong>Indice</strong> avec les cinq sous-indices en lettres (Pr, Pé, Fi, Re, Co) ; touchez-la pour ouvrir l’<strong>Indice en direct</strong>. Les boutons occupent le reste de l’écran, les plus fréquents en grand. La barre du bas donne <strong>Annuler</strong>, <strong>Journal</strong> (avec le nombre de tags), <strong>Observer</strong>, <strong>Aide</strong> et <strong>Réglages</strong>.</p>
+<p>Sur un ordinateur, le clavier va encore plus vite. Les chiffres marchent sur la rangée du haut comme sur le pavé numérique, sans touche Maj, même sur un clavier français.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Touche</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Espace</td>
+<td>Lancer ou mettre en pause le chrono</td>
+</tr>
+<tr>
+<td>1 à 9</td>
+<td>Passe, Passe perdue, Progressive, Ligne traversée, Dernier tiers, Surface, Tir, Tir cadré, But</td>
+</tr>
+<tr>
+<td>F, S, L, K, R</td>
+<td>Fixe deux, Renversement, Perte, Reprise 5 s, Récupération</td>
+</tr>
+<tr>
+<td>A, B</td>
+<td>Tir adverse, But adverse</td>
+</tr>
+<tr>
+<td>Q, W, E</td>
+<td>Passe adv., Passe perdue adv., Tiers adv. (si l’adversaire est codé)</td>
+</tr>
+<tr>
+<td>U, Retour arrière, Ctrl+Z</td>
+<td>Annuler le dernier tag</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Ouvrir le journal</td>
+</tr>
+<tr>
+<td>H, ?</td>
+<td>Ouvrir l’aide</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>Fermer une fenêtre</td>
+</tr>
+</tbody></table></div>
+<h2 id="terminer-le-match">Terminer le match</h2>
+<p>Au coup de sifflet final, touchez <strong>Fin du match</strong> (<strong>Fin</strong> sur téléphone). La fenêtre <strong>Terminer le match ?</strong> montre le score, que vous pouvez encore ajuster. Touchez <strong>Terminer et voir le rapport</strong> : le match passe en <strong>Terminé</strong>, le chrono s’arrête et le rapport s’ouvre (chapitre 13). Vous pourrez encore corriger : depuis le rapport, <strong>Corriger les tags</strong> rouvre le codeur avec le bandeau « Match terminé : les tags ajoutés complètent le rapport ».</p>
+<h2 id="la-methode-du-bord-du-terrain">La méthode du bord du terrain</h2>
+<p><strong>Qui code ?</strong> Pas l’entraîneur principal : il a un match à diriger. Un adjoint, un parent bénévole, un joueur blessé ou un remplaçant fait très bien l’affaire, à condition d’avoir lu le tableau des codes et de s’être entraîné une fois sur une séance ou une vidéo. Le Code Njangi conseille de coder à deux quand c’est possible : l’un suit le ballon (<strong>Passe</strong>, <strong>Passe perdue</strong>, <strong>Perte</strong>), l’autre code tout le reste et compte les 5 secondes. À deux, partagez une tablette ou un ordinateur.</p>
+<aside class="callout callout-attention"><div class="callout-kicker">Attention</div><div class="callout-title">Un seul appareil par match</div><p>Aujourd’hui, les données vivent sur l’appareil qui les enregistre, et les tags de deux appareils ne se fusionnent pas. Confiez au bénévole l’appareil qui porte l’équipe : le téléphone du club, une tablette, ou votre propre téléphone. Une sauvegarde restaurée sur un autre appareil remplace toutes ses données. La synchronisation entre appareils est prévue.</p>
+</aside>
+
+<p><strong>Où se placer ?</strong> Le long de la ligne de touche, à hauteur de la ligne médiane, un peu en retrait du banc pour ne pas être pris dans les échanges, et en hauteur si le terrain le permet : on lit mieux les lignes. Luminosité au maximum, <strong>Plein écran</strong> activé, batterie chargée.</p>
+<p><strong>Avant le coup d’envoi.</strong> Vérifiez la composition sur la feuille de match : la bande des numéros reprend les titulaires et les remplaçants. Ouvrez le codeur quelques minutes avant, et lancez le chrono au coup de sifflet.</p>
+<p><strong>Que coder en premier ?</strong> Montez en charge sur quelques matchs :</p>
+<ol>
+<li>Premier match : <strong>Passe</strong>, <strong>Passe perdue</strong>, <strong>Perte</strong> et <strong>Récupération</strong> (la fenêtre des 5 secondes donne les reprises toute seule), plus <strong>But</strong> et <strong>But adverse</strong>. Désactivez <strong>Attribuer aux joueurs</strong>.</li>
+<li>Ensuite : <strong>Progressive</strong>, <strong>Ligne traversée</strong>, <strong>Dernier tiers</strong>, <strong>Surface</strong>, <strong>Tir</strong> et <strong>Tir cadré</strong>.</li>
+<li>Enfin : <strong>Fixe deux</strong> et <strong>Renversement</strong>, qui demandent de lire le bloc adverse, puis l’attribution aux joueurs et, avec un troisième volontaire, <strong>Coder aussi l’adversaire</strong>.</li>
+</ol>
+<p>Tant qu’une famille n’est pas codée, ses sous-indices restent à zéro et l’Indice est plus bas. Ce n’est pas grave, mais comparez seulement des matchs codés de la même façon : c’est la règle du Code Njangi, la même méthode chaque semaine.</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">Pour l’investisseur</div><div class="callout-title">Chaque match codé compte deux fois</div><p>Un match codé sert d’abord l’entraîneur, dès la mi-temps. Il nourrit aussi une base commune : des matchs codés avec les mêmes définitions permettent d’établir des valeurs de référence de l’Indice Njangi par âge. L’objectif proposé pour 2026 et 2027 est de 1 000 matchs codés dans les clubs et académies pilotes (chapitre 23).</p>
+</aside>
+</div></article><nav class="pager" aria-label="Précédent / Suivant"><a class="prev" href="ch-11.html" rel="prev"><small>Précédent</small><b>11. Préparer un match</b></a><a class="next" href="ch-13.html" rel="next"><small>Suivant</small><b>13. Le rapport de match et l'Indice Njangi</b></a></nav></main><script>(function(){var K='guide.fr';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','fr')}catch(e){}
+})();</script></body></html>

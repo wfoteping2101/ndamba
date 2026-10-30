@@ -77,7 +77,7 @@ Then come the **My journey** card (sessions, matches, the coach's observations a
 
 ![BriBri's home screen, aged 12, in the U13 demo: XP, Streak and Today, the My journey card, Today's challenge and My progress.](shot:youth-player-home-linked "The young player's home: one challenge a day, one lesson a day, and his journey.")
 
-For a parent, the home adds a **For parents** box at the top: fifteen minutes, a wall and a ball are enough; stay close, help count, remind them to drink water. When the child's team is on the device, a parent who taps **My journey** sees the screen "Which record is your child's?" and picks the child's record from the squad.
+For a parent, the home adds a **For parents** box at the top: fifteen minutes, a wall and a ball are enough; stay close, help count, remind them to drink water. When the child's team is on the device, a parent who taps the **Your child's journey** card sees the screen "Which record is your child's?" and picks the child's record from the squad.
 
 ![Estelle's home screen, a parent in the U13 demo, with the For parents box at the top of the page.](shot:youth-parent-home-named "The parent's home: the same space as the child, with tips for supporting them.")
 

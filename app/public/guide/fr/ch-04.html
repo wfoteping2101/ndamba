@@ -1,0 +1,300 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>4. La carte de la plateforme, Le Guide Ndamba</title><meta name="description" content="Les deux portes de Ndamba (le site public et l'application), chaque page et son rôle, les quatre groupes du menu, la barre d'onglets du téléphone, le bouton Mola, le choix de la langue et l'endroit exact où vivent vos données."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-04"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>Le Guide Ndamba</span></a><nav class="bar-actions"><a class="lang" href="../en/ch-04.html" hreflang="en" lang="en">EN</a><button id="aa" type="button" aria-label="Taille du texte">Aa</button><button id="toc-btn" type="button">Sommaire</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Sommaire"><div class="drawer-head"><a href="./">Couverture et sommaire</a><button id="close" type="button">Fermer</button></div><ol class="toc-list"><li class="toc-part"><span>Partie I. Comprendre Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba en dix minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>La philosophie Njangi</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profils, six chemins</a></li><li><a href="ch-04.html" data-page="ch-04" aria-current="page"><b>4</b>La carte de la plateforme</a></li></ol></li><li class="toc-part"><span>Partie II. Démarrer</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Créer son espace avec Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>L'accueil, la navigation et les réglages</a></li></ol></li><li class="toc-part"><span>Partie III. Entraîner</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>La bibliothèque des 64 exercices</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Construire une séance</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Planifier la semaine</a></li></ol></li><li class="toc-part"><span>Partie IV. L’équipe et les matchs</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>L'effectif et la fiche joueur</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Préparer un match</a></li></ol></li><li class="toc-part"><span>Partie V. Analyser</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>L'analyse en direct</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>Le rapport de match et l'Indice Njangi</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>La saison et l'analyse vidéo</a></li></ol></li><li class="toc-part"><span>Partie VI. Le joueur et sa famille</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>L'espace joueur</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>Les Leçons du Ballon, le carnet et le parcours</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Les parents</a></li></ol></li><li class="toc-part"><span>Partie VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, l'agent de Ndamba</a></li></ol></li><li class="toc-part"><span>Partie VIII. Les livres et le jeu</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>Le Code Njangi, le livre de la méthode</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, la saga de Kaydoudou et BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, le jeu</a></li></ol></li><li class="toc-part"><span>Partie IX. Porter le trophée</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Pourquoi l'Afrique peut gagner la Coupe du monde</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>Le plan 2026-2041 : cinq étapes vers le trophée</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>Le modèle économique</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Confiance, données et jeunes joueurs</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>La feuille de route</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Démarrage rapide par profil</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>Glossaire français et anglais</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Toutes les pages de la plateforme</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>Les 64 exercices</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions et réponses</a></li></ol></li></ol></div></div><main><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-1">Partie I. Comprendre Ndamba</a><div class="ch-num">Chapitre 4</div><h1 class="ch-title">La carte de la plateforme</h1><p class="ch-sum">Les deux portes de Ndamba (le site public et l’application), chaque page et son rôle, les quatre groupes du menu, la barre d’onglets du téléphone, le bouton Mola, le choix de la langue et l’endroit exact où vivent vos données.</p><p class="ch-time">10 min de lecture</p></header><div class="prose"><p>Quand on découvre Ndamba, on rencontre plusieurs choses à la fois : un site, une application, un agent qui parle, deux livres et un jeu. C’est une richesse, et c’est aussi ce qui rend l’ensemble difficile à suivre au premier regard. Ce chapitre est la carte. Il ne détaille pas chaque écran (les chapitres suivants le font) : il montre où se trouve chaque chose, comment on passe de l’une à l’autre et où sont gardées vos informations.</p>
+<h2 id="deux-portes-le-site-et-l-39-application">Deux portes : le site et l’application</h2>
+<p>La première porte est le <strong>site public</strong>. On y entre sans rien créer : il présente la méthode, les livres, le jeu et les formules, pour un investisseur comme pour un parent curieux.</p>
+<p>La seconde est <strong>l’application</strong>, à l’adresse /app : séances, semaine, équipe, matchs, analyse, espace joueur. Pour y entrer, il faut un profil. Si vous ouvrez /app sans profil, Ndamba vous conduit à la page <strong>Bienvenue</strong>, où Mola crée votre espace en quelques questions (chapitre 5), à moins que vous n’ouvriez l’une des deux démos.</p>
+<p>On passe de l’une à l’autre par le bouton vert en haut à droite du site : <strong>Commencer</strong> tant que vous n’avez pas de profil, <strong>Ouvrir l’app</strong> dès que votre espace existe.</p>
+<h2 id="le-site-public-page-par-page">Le site public, page par page</h2>
+<h3 id="l-39-accueil-du-site">L’accueil du site</h3>
+<p>L’accueil tient sur une seule longue page. En haut, la barre de navigation : <strong>Les livres</strong>, <strong>Jeu de foot</strong>, <strong>L’application</strong>, <strong>Mola</strong>, <strong>Premium</strong>, puis le choix de la langue <strong>FR</strong> et <strong>EN</strong> et le bouton <strong>Commencer</strong>. <strong>L’application</strong> et <strong>Mola</strong> descendent vers leur section de cette même page ; les autres liens ouvrent leur page. Sur téléphone, ces liens se rangent derrière le bouton de menu à trois traits.</p>
+<figure class="shot"><a href="../img/fr/site-landing.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/site-landing-720.webp 720w, ../img/fr/site-landing.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/site-landing.jpg" srcset="../img/fr/site-landing-720.jpg 720w, ../img/fr/site-landing.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La page d'accueil du site Ndamba : la devise en grand titre, un terrain animé où le ballon passe par toute l'équipe, le bouton Commencer avec Mola et les deux boutons de démo." loading="lazy" decoding="async"></picture></a><figcaption>L’accueil du site : la devise, l’action animée du tome 1 et les deux démos.</figcaption></figure>
+<p>Sous la barre, la devise occupe tout l’écran : « Le ballon doit voyager. Mais il doit savoir où il va. » À droite, un terrain animé rejoue le but du Njangi tiré du roman, du gardien jusqu’au filet ; le lien <strong>Rejouer l’action</strong> le relance. À gauche, le bouton doré <strong>Commencer avec Mola</strong> ouvre la conversation d’accueil, et sous la mention « Ou ouvrez une démo, sans compte », deux boutons lancent une démonstration complète : <strong>Démo club pro</strong> et <strong>Démo académie U13</strong>.</p>
+<p>En descendant, la page présente :</p>
+<ul>
+<li>les trois verbes de Ndamba : « Entraîner, observer, suivre chaque joueur. » ;</li>
+<li>« Ce que l’application fait pour vous », avec un onglet par public : <strong>Joueurs</strong>, <strong>Entraîneurs</strong>, <strong>Analystes</strong>, <strong>Clubs et fédérations</strong> ;</li>
+<li>l’Indice Njangi : vous touchez une action (ligne traversée, entrée surface, perte…) et la jauge bouge, comme pendant un match ;</li>
+<li>l’image du njangi, « Chacun verse, la caisse circule, tout le monde touche. » ;</li>
+<li>Mola, « Mola fait le travail. Vous gardez la main. », avec des exemples de demandes ;</li>
+<li>les deux livres, puis le jeu <em>Lionceaux Football</em> et son bouton <strong>Jouer maintenant</strong> ;</li>
+<li>un compte à rebours vers les Coupes du monde de 2030 et de 2034, et enfin <strong>Voir les formules</strong>.</li>
+</ul>
+<p>Le pied de page reprend la devise et le mantra. Il mène aussi à deux pages absentes de la barre du haut : <strong>Revue du projet</strong> et <strong>La marque Ndamba</strong>.</p>
+<h3 id="les-livres">Les livres</h3>
+<p>La page <strong>Les livres</strong> (/livres) présente les deux compagnons de l’application, à lire librement en ligne : <em>Le Code Njangi</em>, le livre de la méthode pour les entraîneurs et les analystes, et <em>Lionceaux</em>, le roman pour les 8 à 12 ans, avec son tome 1 et l’étagère des six tomes prévus.</p>
+<figure class="shot"><a href="../img/fr/site-library.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/site-library-720.webp 720w, ../img/fr/site-library.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/site-library.jpg" srcset="../img/fr/site-library-720.jpg 720w, ../img/fr/site-library.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La page Les livres : la couverture du Code Njangi, son sous-titre, ses repères et le bouton Lire en ligne." loading="lazy" decoding="async"></picture></a><figcaption>La page Les livres : chaque livre se lit en ligne, gratuitement.</figcaption></figure>
+<p><strong>Lire en ligne</strong> ouvre le lecteur du livre, une page de lecture à part : /book/methode/ ou /book/tome1/. Deux liens mènent dans l’application : <strong>Les exercices dans l’application</strong> (chapitre 7) et <strong>Les Leçons du Ballon dans l’application</strong> (chapitre 16).</p>
+<h3 id="premium">Premium</h3>
+<p>La page <strong>Premium</strong> (/premium) compare les cinq formules et leurs prix, et dit clairement que les paiements ne sont pas encore branchés. Le chapitre 6 explique l’activation en mode démo, le chapitre 24 le modèle économique.</p>
+<h3 id="la-marque-ndamba">La marque Ndamba</h3>
+<p>La page <strong>La marque Ndamba</strong> (/marque) rassemble l’identité : le logo (le ballon et le mot « ndamba », toujours ensemble), le signe de Mola, les couleurs, la typographie, les règles d’usage et les icônes. C’est la référence pour tout document, maillot ou affiche au nom de Ndamba.</p>
+<figure class="shot"><a href="../img/fr/site-brand.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/site-brand-720.webp 720w, ../img/fr/site-brand.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/site-brand.jpg" srcset="../img/fr/site-brand-720.jpg 720w, ../img/fr/site-brand.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La page La marque Ndamba, avec le logo vert et or et l'explication de ses règles." loading="lazy" decoding="async"></picture></a><figcaption>La page de la marque : le logo et ses règles d’usage.</figcaption></figure>
+<h3 id="la-revue-du-projet">La revue du projet</h3>
+<p>La page <strong>Revue du projet</strong> (/revue) présente séparément les quatre chantiers (le roman, le livre de la méthode, l’application, l’agent) pour qu’on les teste un par un. Une demande de modification s’y prépare dans Mola, et rien n’est envoyé sans vous.</p>
+<h3 id="bienvenue">Bienvenue</h3>
+<p>La page <strong>Bienvenue</strong> (/bienvenue) est la conversation avec Mola qui crée votre espace. Elle a sa propre barre, avec les deux démos et le choix de la langue. Tout le chapitre 5 lui est consacré.</p>
+<h3 id="le-jeu-lionceaux-football">Le jeu Lionceaux Football</h3>
+<p>Le lien <strong>Jeu de foot</strong> ouvre /football/, la page du jeu vidéo <em>Lionceaux Football</em> : un match à onze sur un terrain de quartier en terre rouge, avec les boutons <strong>Jouer</strong> et <strong>Comment jouer</strong>. Le jeu se joue dans le navigateur, au doigt sur téléphone, à la manette ou au clavier (chapitre 21).</p>
+<figure class="shot"><a href="../img/fr/football-page.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/football-page-720.webp 720w, ../img/fr/football-page.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/football-page.jpg" srcset="../img/fr/football-page-720.jpg 720w, ../img/fr/football-page.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La page du jeu Lionceaux Football, avec l'image du terrain de quartier et les boutons Jouer et Comment jouer." loading="lazy" decoding="async"></picture></a><figcaption>La page du jeu : on joue directement dans le navigateur.</figcaption></figure>
+<p>Le lien <strong>Retour à Ndamba</strong>, en haut de cette page, ramène à l’accueil du site. Pour retrouver l’application, touchez ensuite <strong>Ouvrir l’app</strong>.</p>
+<h2 id="l-39-application-et-ses-menus">L’application et ses menus</h2>
+<p>Sur un ordinateur, l’application se présente avec une colonne vert foncé à gauche. En haut, le logo, puis la plaque de l’équipe active : ses deux couleurs, son nom et une ligne comme « Seniors, 11 contre 11, 4‑3-3 ». Viennent <strong>Accueil</strong> et <strong>Mola</strong>, puis les menus rangés sous quatre titres : Entraînement, Équipe, Analyse et Moi.</p>
+<figure class="shot"><a href="../img/fr/pro-app-library.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/pro-app-library-720.webp 720w, ../img/fr/pro-app-library.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/pro-app-library.jpg" srcset="../img/fr/pro-app-library-720.jpg 720w, ../img/fr/pro-app-library.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="L'application sur ordinateur : la colonne verte avec la plaque de l'équipe Étoile de la Côte et les groupes du menu, et la page Les livres à droite." loading="lazy" decoding="async"></picture></a><figcaption>La colonne de gauche : la plaque de l’équipe, puis les groupes Entraînement, Équipe, Analyse et Moi.</figcaption></figure>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Groupe</th>
+<th>Menu</th>
+<th>Ce qu’on y fait</th>
+<th>Chapitre</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>(en tête)</td>
+<td><strong>Accueil</strong></td>
+<td>L’écran du jour : séance, prochain match, semaine, dernier Indice</td>
+<td>6</td>
+</tr>
+<tr>
+<td>(en tête)</td>
+<td><strong>Mola</strong></td>
+<td>Parler à l’agent, suivre ses tâches, valider ce qu’il prépare</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Entraînement</td>
+<td><strong>Exercices</strong></td>
+<td>Les 64 exercices de la méthode, avec schémas</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Entraînement</td>
+<td><strong>Séances</strong></td>
+<td>Vos séances et le constructeur de séance</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Entraînement</td>
+<td><strong>Semaine</strong></td>
+<td>La semaine autour du match, de MD-4 à MD-1, et sa charge</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Équipe</td>
+<td><strong>Équipe</strong></td>
+<td>L’effectif, la fiche et le parcours de chaque joueur</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Équipe</td>
+<td><strong>Matchs</strong></td>
+<td>Le calendrier, la composition, la feuille de match</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Analyse</td>
+<td><strong>Analyse</strong></td>
+<td>La saison, l’analyse en direct, les rapports</td>
+<td>12 à 14</td>
+</tr>
+<tr>
+<td>Analyse</td>
+<td><strong>Vidéo</strong></td>
+<td>Les projets vidéo et le studio</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Moi</td>
+<td><strong>Espace joueur</strong></td>
+<td>Le programme du joueur, ses défis, ses leçons, son carnet</td>
+<td>15, 16</td>
+</tr>
+<tr>
+<td>Moi</td>
+<td><strong>Livres</strong></td>
+<td>Les deux livres, sans quitter l’application</td>
+<td>19, 20</td>
+</tr>
+<tr>
+<td>Moi</td>
+<td><strong>Jeu de foot</strong></td>
+<td>La page du jeu (elle s’ouvre hors de l’application)</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Moi</td>
+<td><strong>Premium</strong></td>
+<td>Les formules et l’activation de démonstration</td>
+<td>6, 24</td>
+</tr>
+<tr>
+<td>Moi</td>
+<td><strong>Réglages</strong></td>
+<td>Profil, équipes, formule, sauvegardes</td>
+<td>6</td>
+</tr>
+</tbody></table></div>
+<p>D’autres pages s’ouvrent depuis celles-ci : la fiche d’un exercice, le constructeur de séance, la fiche et le parcours d’un joueur, la page <strong>Observer</strong> (depuis l’effectif, un parcours, une séance ou un match), la feuille de match, le rapport, le studio vidéo, les leçons et le carnet. L’analyse en direct prend tout l’écran, sans menu, pour que rien ne gêne au bord du terrain.</p>
+<p>En bas de la colonne, un bloc montre vos initiales, votre nom et votre rôle (par exemple « Entraîneur ») ; il ouvre les <strong>Réglages</strong>, où se lit aussi votre formule. À côté, le choix de la langue.</p>
+<aside class="callout callout-astuce"><div class="callout-kicker">Astuce</div><div class="callout-title">Sur un petit écran d’ordinateur</div><p>Si votre écran est peu haut, la colonne du menu défile : les derniers liens du groupe Moi (<strong>Livres</strong>, <strong>Jeu de foot</strong>, <strong>Premium</strong>, <strong>Réglages</strong>) peuvent être cachés en bas. Faites défiler la colonne, ou touchez le bloc avec votre nom, qui ouvre directement les <strong>Réglages</strong>.</p>
+</aside>
+
+<h2 id="sur-le-telephone-la-barre-d-39-onglets">Sur le téléphone : la barre d’onglets</h2>
+<p>Sur un téléphone, la colonne disparaît. En haut, une barre fine montre le logo et le choix de la langue. En bas, une barre de cinq onglets reste toujours à portée du pouce : <strong>Accueil</strong>, <strong>Entraîner</strong>, <strong>Matchs</strong>, <strong>Analyse</strong> et <strong>Plus</strong>.</p>
+<figure class="shot tall"><a href="../img/fr/m-pro-home.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/m-pro-home-720.webp 720w, ../img/fr/m-pro-home.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/m-pro-home.jpg" srcset="../img/fr/m-pro-home-720.jpg 720w, ../img/fr/m-pro-home.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="L'accueil de l'application sur téléphone : en haut le logo et le choix FR ou EN, le bandeau Bonsoir, Daniel avec 4 séances, 303 minutes et J-2, la séance du jour, et en bas la barre d'onglets Accueil, Entraîner, Matchs, Analyse et Plus." loading="lazy" decoding="async"></picture></a><figcaption>Sur téléphone, la barre du bas : Accueil, Entraîner, Matchs, Analyse et Plus.</figcaption></figure>
+<p><strong>Entraîner</strong> ouvre la liste des séances. <strong>Plus</strong> fait monter un panneau qui rappelle l’équipe active, puis présente tous les groupes du menu en deux colonnes, comme sur ordinateur. Sur une page qui n’est pas l’un des quatre premiers onglets (les Réglages, par exemple), c’est <strong>Plus</strong> qui s’allume. Le panneau se ferme avec la croix, en touchant le fond sombre ou en choisissant une page.</p>
+<h2 id="le-bouton-mola-partout">Le bouton Mola, partout</h2>
+<p>Sur les pages de l’application, un bouton rond au visage de Mola flotte en bas à droite (au-dessus de la barre d’onglets sur téléphone). Il ouvre une conversation compacte sans quitter la page ; une pastille signale un message non lu ou des actions à valider. Il disparaît sur la page <strong>Mola</strong>, où la conversation est déjà ouverte, et pendant l’analyse en direct. Le chapitre 6 détaille ce bouton, le chapitre 18 tout ce que Mola sait faire.</p>
+<h2 id="le-choix-de-la-langue">Le choix de la langue</h2>
+<p>Ndamba est bilingue, français d’abord, anglais ensuite. Le choix <strong>FR</strong> ou <strong>EN</strong> apparaît partout : dans la barre du site, en bas de la colonne de l’application, dans la barre du haut sur téléphone, sur la page <strong>Bienvenue</strong> et sur la page du jeu.</p>
+<p>Le changement est immédiat. Votre choix est retenu par le navigateur et, si vous avez un profil, enregistré dans celui-ci ; il se modifie aussi dans les <strong>Réglages</strong>. Sans choix enregistré, Ndamba s’ouvre en français ; seule la page du jeu suit alors la langue du navigateur.</p>
+<p>Deux précisions évitent les surprises. Ce que vous avez écrit vous-même (le titre d’une séance, une note) reste dans la langue où vous l’avez écrit, comme les contenus d’une démo, créés dans la langue active au moment du lancement. Et les deux livres sont écrits en français.</p>
+<h2 id="ou-vivent-vos-donnees">Où vivent vos données</h2>
+<p>La réponse est simple : <strong>tout est enregistré dans le navigateur de l’appareil que vous utilisez</strong>. Votre profil, vos équipes, vos joueurs, vos séances, vos matchs, vos actions codées, vos notes et vos conversations avec Mola restent sur cet appareil. Le panneau <strong>À propos</strong> des Réglages l’écrit en toutes lettres : « Stockage : Sur cet appareil ».</p>
+<p>Il n’y a pas encore de comptes ni de synchronisation. Concrètement :</p>
+<ul>
+<li>Un autre navigateur, un autre ordinateur ou un autre téléphone ouvre un espace vide.</li>
+<li>Pour garder votre travail ou le passer sur un autre appareil, vous exportez une sauvegarde (un fichier) depuis <strong>Réglages</strong>, puis vous la restaurez ailleurs. Le chapitre 6 montre comment, pas à pas.</li>
+<li>Si vous effacez les données de navigation de ce site, votre espace disparaît avec elles. Exportez une sauvegarde avant.</li>
+<li>Le bouton <strong>Tout effacer</strong> des Réglages supprime le profil, les équipes et tout le reste de ce navigateur, y compris les leçons marquées « J’ai compris » et « Mon regard » de l’espace joueur. Le choix de la langue, lui, est gardé.</li>
+</ul>
+<p>Une seule chose peut quitter l’appareil : la phrase que vous écrivez à Mola, avec quelques repères (le nom de l’équipe, sa catégorie, votre rôle, le prochain et le dernier adversaire), est proposée au serveur de Ndamba. Celui-ci ne la confie à un modèle d’intelligence artificielle, pour qu’elle soit mieux comprise, que s’il est configuré pour cela. Sinon, il décline, et le moteur de règles intégré répond seul. La conversation de la page <strong>Bienvenue</strong> est toujours comprise sur l’appareil. Et les messages que Mola prépare pour l’extérieur (WhatsApp, SMS, e-mail) attendent votre validation : c’est vous qui les envoyez.</p>
+<p>Les comptes et la synchronisation entre appareils sont prévus ; la feuille de route du chapitre 26 les place parmi les prochaines étapes.</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">Pour l’investisseur</div><div class="callout-title">Un choix assumé, une étape suivante connue</div><p>Garder les données sur l’appareil permet de lancer Ndamba sans serveur de comptes ni base de données centrale à héberger, et sans demander à un club de confier ses informations à qui que ce soit. La limite est connue : pas de partage entre appareils ni entre membres d’un staff tant que les comptes ne sont pas construits. C’est l’un des premiers chantiers de la feuille de route ; d’ici là, la sauvegarde exportable sert de pont.</p>
+</aside>
+
+<h2 id="toutes-les-pages-du-site-en-un-coup-d-39-il">Toutes les pages du site en un coup d’œil</h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Adresse</th>
+<th>Page</th>
+<th>À quoi elle sert</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/</td>
+<td>Accueil du site</td>
+<td>Présenter Ndamba, lancer une démo, commencer avec Mola</td>
+</tr>
+<tr>
+<td>/livres</td>
+<td>Les livres</td>
+<td>Présenter <em>Le Code Njangi</em> et <em>Lionceaux</em>, ouvrir leurs lecteurs</td>
+</tr>
+<tr>
+<td>/book/methode/</td>
+<td>Lecteur du <em>Code Njangi</em></td>
+<td>Lire le livre de la méthode, chapitre par chapitre</td>
+</tr>
+<tr>
+<td>/book/tome1/</td>
+<td>Lecteur de <em>Lionceaux</em>, tome 1</td>
+<td>Lire le roman illustré, chapitre par chapitre</td>
+</tr>
+<tr>
+<td>/premium</td>
+<td>Premium</td>
+<td>Comparer les formules, activer une formule en démo</td>
+</tr>
+<tr>
+<td>/marque</td>
+<td>La marque Ndamba</td>
+<td>Le logo, le signe de Mola, les couleurs et les règles</td>
+</tr>
+<tr>
+<td>/revue</td>
+<td>Revue du projet</td>
+<td>Relire les quatre chantiers et demander une modification</td>
+</tr>
+<tr>
+<td>/bienvenue</td>
+<td>Bienvenue</td>
+<td>Créer son espace avec Mola, ou ouvrir une démo</td>
+</tr>
+<tr>
+<td>/football/</td>
+<td>Lionceaux Football</td>
+<td>Jouer au jeu dans le navigateur</td>
+</tr>
+</tbody></table></div>
+<p>Une adresse inconnue ramène à l’accueil du site. L’annexe C donne la liste complète des adresses de l’application, page par page.</p>
+</div></article><nav class="pager" aria-label="Précédent / Suivant"><a class="prev" href="ch-03.html" rel="prev"><small>Précédent</small><b>3. Six profils, six chemins</b></a><a class="next" href="ch-05.html" rel="next"><small>Suivant</small><b>5. Créer son espace avec Mola</b></a></nav></main><script>(function(){var K='guide.fr';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','fr')}catch(e){}
+})();</script></body></html>

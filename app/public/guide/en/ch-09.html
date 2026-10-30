@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>9. Plan the week, The Ndamba Guide</title><meta name="description" content="The week around the match, from MD+2 to MD-1, the load shown day by day, the logic of the method, and Prepare the week with Mola in one tap."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-09"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-09.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09" aria-current="page"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Live analysis</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The season and video analysis</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-3">Part III. Training</a><div class="ch-num">Chapter 9</div><h1 class="ch-title">Plan the week</h1><p class="ch-sum">The week around the match, from MD+2 to MD-1, the load shown day by day, the logic of the method, and Prepare the week with Mola in one tap.</p><p class="ch-time">10 min read</p></header><div class="prose"><p>A Tuesday on a pitch in Douala, and the assistant coach asks: &quot;Today, is it fitness or tactics?&quot; The Njangi answer fits in one sentence: every session is physical, tactical, technical and mental at once, and what changes from one day to the next is how the body pays for that content. Ndamba’s week planner puts that answer on screen. Each day is named against the next match, each session takes the place it belongs in, and the week’s load takes shape in front of you. For a coach working alone, who plans sessions in the evening after a day job, it is the difference between a week that just happens and a week that is built.</p>
+<h2 id="opening-the-week">Opening the week</h2>
+<ol>
+<li>In the left-hand menu, under <strong>Training</strong>, tap <strong>Week</strong>. On a phone, tap <strong>More</strong>, then <strong>Week</strong>. You can also get there from the sessions list with <strong>See the week</strong>.</li>
+<li>The page, titled <strong>The week</strong>, opens on <strong>This week</strong>, from Monday to Sunday.</li>
+<li>The arrows on either side of the title move to the <strong>Previous week</strong> or the <strong>Next week</strong>. Away from the current week, the <strong>Today</strong> button brings you back.</li>
+</ol>
+<figure class="shot"><a href="../img/en/pro-week.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-week-720.webp 720w, ../img/en/pro-week.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-week.jpg" srcset="../img/en/pro-week-720.jpg 720w, ../img/en/pro-week.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The week in the pro club demo: seven columns from Monday 26 to Sunday 1, with days named MD-5, MD-4, MD-3, MD-2, MD-1, MD and MD+1, four sessions, Saturday's match against Rapides de Kribi, and the Week planned button." loading="lazy" decoding="async"></picture></a><figcaption>The week of 26 October, planned around Saturday’s match.</figcaption></figure>
+<h2 id="each-day-has-a-name">Each day has a name</h2>
+<p>Under each date, a chip names the day relative to the match. <strong>MD</strong> (match day) is the day of the match, shown in black. MD-4 is the fourth day before the match, MD+1 the day after. When the previous match is close, the chip gives both names: in the demo, Monday 26 is both MD-5 (five days before the match on Saturday 31) and MD+2 (two days after the match the Saturday before).</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Its name in Ndamba</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MD+1</td>
+<td>Recovery</td>
+<td>Active recovery for those who played, light rondos, stretching</td>
+</tr>
+<tr>
+<td>MD+2</td>
+<td>Rest day</td>
+<td>Complete rest: an empty day shows <strong>Rest advised</strong></td>
+</tr>
+<tr>
+<td>MD-4</td>
+<td>Tension</td>
+<td>Small spaces, lots of accelerations and duels: the densest session</td>
+</tr>
+<tr>
+<td>MD-3</td>
+<td>Duration</td>
+<td>Big spaces, play close to the match, for longer</td>
+</tr>
+<tr>
+<td>MD-2</td>
+<td>Speed</td>
+<td>Short, fast drills with plenty of rest between reps</td>
+</tr>
+<tr>
+<td>MD-1</td>
+<td>Activation</td>
+<td>Sharpness, set pieces, freshness</td>
+</tr>
+<tr>
+<td>MD</td>
+<td>Match day</td>
+<td>The most intense session of the week</td>
+</tr>
+</tbody></table></div>
+<p>Why name days from the match rather than &quot;Monday&quot; or &quot;Tuesday&quot;? First, because the week moves: the match is on Saturday, then Sunday, then a midweek cup tie. With MD codes, the coach, the assistant and the analyst talk about the same week whatever the calendar says. Second, because the order of the days has a physical reason, which <em>The Njangi Code</em> explains in chapter 27: the efforts that tire muscles for longest (braking, duels, changes of direction) go furthest from the match; game endurance comes next; speed, which needs freshness but recovers quickly, sits two days out; activation, with almost no fatigue, comes the day before. The game model is trained every day, but the space, the numbers, the duration and the intensity change.</p>
+<h2 id="filling-a-day">Filling a day</h2>
+<p>Each column shows what is planned that day.</p>
+<ul>
+<li>A <strong>match</strong> appears in dark green: the kick-off time, the opponent, the venue, and a small plane if it is an away game. Once played, it shows <strong>Played</strong> and the score. Tap it to open the match sheet.</li>
+<li>A <strong>session</strong> appears as a white card: its MD day, its minutes, its title and a small intensity profile. Tap it to open it in the builder (chapter 8).</li>
+<li>A <strong>dotted button</strong> lets you add a session. On an empty day it reads <strong>Session</strong> plus the suggested day type (for example &quot;MD+1&quot;); on a day that already has a session it reads <strong>Add</strong>; on a past day, <strong>Log a session</strong>; and two days after a match, when the next one is still far off, <strong>Rest advised</strong>, because the book asks for a real day off. On match day there is no button.</li>
+</ul>
+<p>Tap a day’s button and the <strong>New session</strong> window opens with the date and the day type already filled in. All that is left is to choose the intention and who builds it, you or Mola.</p>
+<h2 id="this-week-39-s-load">This week’s load</h2>
+<p>Under the seven days, the <strong>This week’s load</strong> card states the calculation in plain words: &quot;Load = minutes x intensity (low 1, medium 2, high 3, very high 4)&quot;. For every block of every session, Ndamba multiplies the minutes by the drill’s intensity factor, then adds everything up. On the right, two totals: <strong>Minutes</strong> and <strong>Load</strong>.</p>
+<figure class="shot"><a href="../img/en/pro-week-full.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-week-full-720.webp 720w, ../img/en/pro-week-full.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-week-full.jpg" srcset="../img/en/pro-week-full-720.jpg 720w, ../img/en/pro-week-full.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="1253" alt="The full week in the pro club demo: the seven days, then the This week's load card with 303 minutes and a load of 817, a bar chart peaking on Tuesday MD-4, and the How the week works card with the five days explained and the advice on heat." loading="lazy" decoding="async"></picture></a><figcaption>The whole week: the days, the load and the logic of the method.</figcaption></figure>
+<p>The chart shows one bar per day, with its value on top. Match day shows a trophy. In the demo, the week climbs to 289 on Tuesday (MD-4), then falls to 231 on Wednesday (MD-3), 211 on Thursday (MD-2) and 86 on Friday (MD-1): 303 minutes and a load of 817 in all. Under the chart, the <strong>Show as table</strong> link gives the same values as a day-by-day table, for anyone who prefers figures or uses a screen reader.</p>
+<p>One sentence draws the lesson: &quot;The week’s peak falls on Tuesday MD-4. It should sit far from the match: MD-4 or MD-3, never MD-1.&quot; That is the first check to make. A well-built week has a recognisable shape: high on MD-4 and MD-3, medium on MD-2, low on MD-1. If the MD-1 bar looks like the MD-3 bar, the book is blunt about it: the problem is not the players, it is the session.</p>
+<p>This is a planned load, worked out from the drill cards, not a measure of what the players felt. It lets you compare days and weeks before a single cone goes down. Felt load, logged by each player after the effort, lives in the player space (chapter 15) and stays on the player’s device.</p>
+<h2 id="how-the-week-works">How the week works</h2>
+<p>Next to the load, the <strong>How the week works</strong> card sums up the rule: with one match a week, load rises early in the week then comes down so players arrive fresh on match day; the day after the match is for recovery; the day after that is rest. The five training days follow, <strong>Recovery</strong>, <strong>Tension</strong>, <strong>Duration</strong>, <strong>Speed</strong> and <strong>Activation</strong>, each with its definition.</p>
+<p>A yellow box deals with heat, because that is the reality on most pitches across the continent: in strong heat, train early in the morning or late in the day, add breaks in the shade and plenty of water; with young players, load always stays suited to their age. The link <strong>The Njangi Code, chapter 27: Njangi periodization</strong> opens the chapter of the book that explains all this in detail.</p>
+<h2 id="prepare-the-week-with-mola">Prepare the week with Mola</h2>
+<p>Filling four days by hand takes time. Ndamba can do it in one tap, and there are several ways to ask.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Where</th>
+<th>The button or sentence</th>
+<th>The sessions’ intention</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The week page, titled <strong>The week</strong></td>
+<td><strong>Plan the week</strong></td>
+<td>No set intention: a balanced week</td>
+</tr>
+<tr>
+<td>Home, <strong>Next match</strong> card</td>
+<td><strong>Prepare the week</strong></td>
+<td>No set intention</td>
+</tr>
+<tr>
+<td>Home, Njangi Index card</td>
+<td><strong>Prepare the week around &quot;Progress&quot;</strong> (for example)</td>
+<td>The intention that answers the last match’s weak spot (chapter 13)</td>
+</tr>
+<tr>
+<td>The report of a tagged match</td>
+<td><strong>Plan the week with these objectives</strong></td>
+<td>The report’s main intention</td>
+</tr>
+<tr>
+<td>The conversation with Mola</td>
+<td>&quot;Plan my week before the match&quot;</td>
+<td>The one you name, otherwise the one from the last report if the match was tagged</td>
+</tr>
+</tbody></table></div>
+<p>All of these do the same job. Ndamba takes the team’s next match, counts four days back, from MD-4 to MD-1, and builds a session for every day still ahead that does not have one. It never touches a session that already exists and never fills days that have gone by. It also leaves free the day of another match and the day after it (MD+1, recovery). Each session is built as described in chapter 8: Tension, Duration, Speed, Activation, with drills suited to the team’s age, and carries the <strong>Mola</strong> mark in the sessions list.</p>
+<figure class="shot"><a href="../img/en/pro-home.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-home-720.webp 720w, ../img/en/pro-home.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-home.jpg" srcset="../img/en/pro-home-720.jpg 720w, ../img/en/pro-home.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The coach's home in the pro club demo: today's session and, on the right, the Next match card against Rapides de Kribi on Saturday 31 October, with the yellow Prepare the week button." loading="lazy" decoding="async"></picture></a><figcaption>On the home screen, the next match card and its Prepare the week button.</figcaption></figure>
+<p>On the week page, step by step:</p>
+<ol>
+<li>Go to the week of the match. If sessions are missing, a sentence under the navigation says so. In the demo, the following week shows: &quot;Next match: Espoir de Mbalmayo, Wednesday, November 4. 2 sessions are missing from MD-4 to MD-1.&quot; Only two, because MD-4 and MD-3 fall on Saturday 31 October, the day of the match against Rapides de Kribi, and on Sunday 1 November, the recovery day.</li>
+<li>Tap <strong>Plan the week</strong>, the yellow button with Mola’s mark.</li>
+<li>The <strong>Your week is ready</strong> window lists the sessions created: their MD day, date, title, blocks and minutes. In the demo: &quot;Mola built 2 sessions before the match against Espoir de Mbalmayo&quot;, a 52-minute Speed session on Monday 2 (MD-2) and a 40-minute Activation session on Tuesday 3 (MD-1). Tap one to open and fine-tune it, or tap <strong>Done</strong>.</li>
+<li>The button turns into <strong>Week planned</strong>. If every remaining day before the match has gone by or is taken by another match, it reads <strong>Nothing left to plan before the match</strong>. If there is no upcoming match, it is replaced by <strong>Add a match</strong>.</li>
+</ol>
+<p>On the <strong>Free</strong> plan (and on <strong>Player Premium</strong>, which does not include the coaching tools), once the five sessions are used, <strong>Plan the week</strong> and the day buttons are greyed out, and the page offers <strong>Discover Coach Pro</strong>. The buttons on the home screen and in the report then lead to the plans page, and Mola, in the conversation, explains the limit instead of building.</p>
+<p>On the home screen, <strong>Prepare the week</strong> does the same work without leaving the page: a message announces how many sessions were prepared, with a <strong>See the week</strong> link. If everything is already in place, the message says so: every day before the match has its session.</p>
+<p>In the conversation, Mola shows its work step by step: the next match, the intention of the week (or &quot;No report yet: I’ll keep a balanced week&quot;), &quot;Building MD-4 Tension, MD-3 Duration, MD-2 Speed, MD-1 Activation&quot;, then the saving. It ends with &quot;Done&quot;, the number of sessions and their dates, and mentions any days it left free. It offers <strong>See the week</strong>, then the natural next steps: send the call-up, export the week to your calendar. Those two steps, which leave the app, always wait for your approval (chapter 18). Planning the week, on the other hand, only creates sessions on your device: nothing goes out, nothing is sent.</p>
+<aside class="callout callout-mola"><div class="callout-kicker"><svg class="mm" viewBox="6 6 54 54" width="20" height="20" aria-hidden="true"><path d="M13.00 47.00 L22.00 19.00 L32.00 37.00 L42.00 19.00 L51.00 47.00" fill="none" stroke="currentColor" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="51" cy="47" r="7.564" fill="#F5B700"></circle></svg>Ask Mola</div><div class="callout-title">The sentence to type</div><p>Type &quot;Plan my week before the match&quot;. To steer the whole week, name the intention: &quot;Plan the week around Win it back&quot;.</p>
+</aside>
+
+<aside class="callout callout-astuce"><div class="callout-kicker">Tip</div><div class="callout-title">Weeks with two matches</div><p>When another match falls in the four days before, Ndamba plans neither that day nor the day after it. In the demo, ask &quot;Plan my week before the match against Espoir de Mbalmayo&quot;: Mola creates only MD-2 on Monday 2 and MD-1 on Tuesday 3, then adds &quot;I left 2 days free: another match or the recovery day after it falls on those days.&quot; Saturday 31 October (Rapides de Kribi) and Sunday 1 November stay free. Fill that recovery Sunday yourself with the day’s button, which already suggests MD+1; chapter 28 of the book covers two-match weeks in detail.</p>
+</aside>
+
+<h2 id="young-players-and-the-week-on-a-phone">Young players, and the week on a phone</h2>
+<p>The logic is the same for an academy, with less volume. In the demo of the Lionceaux de Bonamoussadi U13, the same week, built around their own Saturday match against Panthères de Deïdo, adds up to 204 minutes, against 303 for the senior side of Étoile de la Côte, and the session the day before lasts 25 minutes. For an under-13 team or younger, when no match is close, the type suggested for a new session is <strong>Youth</strong>: play, touch the ball, learn through the game. The book (chapter 28) reminds coaches that young players keep the logic of the week without copying its load, with water, shade and school first.</p>
+<figure class="shot"><a href="../img/en/youth-week.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/youth-week-720.webp 720w, ../img/en/youth-week.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/youth-week.jpg" srcset="../img/en/youth-week-720.jpg 720w, ../img/en/youth-week.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The U13 academy's week in the demo: the same day names, shorter sessions, and a load of 538 for 204 minutes." loading="lazy" decoding="async"></picture></a><figcaption>The week of the Lionceaux de Bonamoussadi U13, around their Saturday match.</figcaption></figure>
+<p>On a phone, the days stack one below the other, each with its MD chip on the right and its sessions underneath. The load chart and the logic of the week follow further down.</p>
+<figure class="shot tall"><a href="../img/en/m-pro-week.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/m-pro-week-720.webp 720w, ../img/en/m-pro-week.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/m-pro-week.jpg" srcset="../img/en/m-pro-week-720.jpg 720w, ../img/en/m-pro-week.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="The week on a phone: the title, the navigation, the Week planned button, then Monday 26 with Log a session, Tuesday 27 with its Tension session, and Wednesday 28." loading="lazy" decoding="async"></picture></a><figcaption>On a phone, one card per day, Monday to Sunday.</figcaption></figure>
+<h2 id="what-the-week-builds">What the week builds</h2>
+<p>A team that follows this week for a whole season rehearses its model in every condition: tight on Tuesday, stretched on Wednesday, quick on Thursday, sharp on Friday. On match day, the game asks nothing of it that it has not already done. It is the tontine applied to the pitch: every day pays in its share, no contribution is lost, and on match day the team collects the pot.</p>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-08.html" rel="prev"><small>Previous</small><b>8. Build a session</b></a><a class="next" href="ch-10.html" rel="next"><small>Next</small><b>10. The squad and the player file</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>

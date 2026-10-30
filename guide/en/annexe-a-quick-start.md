@@ -63,5 +63,5 @@ Two rules apply to every profile before you start. Your data stays on your devic
 1. Create your space with the **Parent** role and your child's age (chapter 5).
 2. Read the **For parents** box on the home screen (chapter 17).
 3. Read the *Lionceaux* novel with your child, in **The books**: each chapter ends with a Ball Lesson (chapter 20).
-4. If the coach has given you a backup, restore it from **Settings**. Watch out: restoring replaces everything the browser holds, profile included; the profile becomes the coach's. So in **Settings**, put back your name and the **Parent** role, then **Save profile**. Then open **My journey** and pick your child's record (chapter 17).
+4. If the coach has given you a backup, restore it from **Settings**. Watch out: restoring replaces everything the browser holds, profile included; the profile becomes the coach's. So in **Settings**, put back your name and the **Parent** role, then **Save profile**. Then tap the **Your child's journey** card and pick their record (chapter 17).
 5. Read chapter 25: what Ndamba keeps, where, and what never leaves your device.

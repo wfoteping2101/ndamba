@@ -1,0 +1,202 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>7. The library of 64 drills, The Ndamba Guide</title><meta name="description" content="The 64 drills of the Njangi method, sorted into eight families, with their intentions, ages, days and intensity. How to search, filter, read a drill card and send it into a session."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-07"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-07.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07" aria-current="page"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Live analysis</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The season and video analysis</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><section class="part-opener" id="partie-3"><div class="part-num">Part III</div><h2>Training</h2><p>Drills, sessions and the week.</p></section><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-3">Part III. Training</a><div class="ch-num">Chapter 7</div><h1 class="ch-title">The library of 64 drills</h1><p class="ch-sum">The 64 drills of the Njangi method, sorted into eight families, with their intentions, ages, days and intensity. How to search, filter, read a drill card and send it into a session.</p><p class="ch-time">10 min read</p></header><div class="prose"><p>A shared game model does not live in a speech. It lives in drills that everyone knows: a youth coach at an academy in Bafoussam, the assistant at a Ligue 1 club and the coach of a youth national team should all be able to say &quot;we’re doing R08 today&quot; and mean the same thing. That is what the drill library is for. It brings together the 64 drills of the book <em>The Njangi Code</em>, with their diagrams, rules and coaching points, on the coach’s phone at the side of the pitch. Each card says what it trains, for which age and for which day of the week. And the library stays open to everyone, on every plan, free of charge.</p>
+<h2 id="what-the-library-holds">What the library holds</h2>
+<p>The 64 drills are sorted into eight families. Each drill has a code: one letter for the family, a number for its place. The code is the same in the book, in the app and in your sessions. It is what you type in the search box, and it is what appears on the printed session sheet.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Family</th>
+<th>Drills</th>
+<th>What it trains</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C</td>
+<td>Technique and patterns</td>
+<td>14</td>
+<td>Technique inside the game: oriented touches, one-twos, the third man, in short patterns</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Rondos</td>
+<td>8</td>
+<td>Keeping the ball in small numbers, the first school of the Njangi</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Positional games</td>
+<td>10</td>
+<td>Occupying space with purpose: lanes, lines, the third man</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Small-sided games</td>
+<td>8</td>
+<td>Small numbers, lots of touches: read, decide, score</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Large-sided games</td>
+<td>6</td>
+<td>The game model on a big pitch, as close to the match as it gets</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Phases of play</td>
+<td>6</td>
+<td>One precise phase of the match, repeated against real opposition</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Transitions</td>
+<td>6</td>
+<td>Win it back within five seconds, look forward after winning it</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Finishing</td>
+<td>6</td>
+<td>Get into the finishing zone and shoot with purpose</td>
+</tr>
+</tbody></table></div>
+<p>Every drill also carries the same five markers, which then drive the filters:</p>
+<ul>
+<li><strong>Intentions.</strong> These are the seven words of the method (chapter 2): the five intentions of possession, <strong>Build out</strong>, <strong>Progress</strong>, <strong>Pin</strong>, <strong>Finish</strong> and <strong>Breathe</strong>, and the two reflexes without the ball, <strong>Win it back</strong> and <strong>Look forward</strong>. A drill works on one, two or three of them, rarely more.</li>
+<li><strong>Minimum age.</strong> &quot;U12+&quot; means from under-12s upwards. The drills range from U9+ to U15+. A drill stays useful for older players, with tougher rules.</li>
+<li><strong>Days of the week.</strong> MD-4, MD-3, MD-2, MD-1, MD+1 or <strong>Youth</strong>: the days on which the drill naturally fits relative to the match (chapter 9 explains these codes).</li>
+<li><strong>Intensity.</strong> <strong>Low</strong>, <strong>Medium</strong>, <strong>High</strong> or <strong>Very high</strong>, shown as four small bars, and spelled out on the drill card itself. The method is demanding: 37 drills are high, 22 medium, 3 low (technique drills) and 2 very high (two transition drills).</li>
+<li><strong>Duration.</strong> Sets and rests, for example &quot;4 x 4 min, 1 min rest&quot;, and the total in minutes, from 14 to 38 minutes depending on the drill.</li>
+</ul>
+<h2 id="opening-the-library">Opening the library</h2>
+<ol>
+<li>In the left-hand menu, under <strong>Training</strong>, tap <strong>Drills</strong>. On a phone, tap the <strong>More</strong> tab, then <strong>Drills</strong>.</li>
+<li>The page opens on the title <strong>The 64 drills</strong> and the counter &quot;64 drills&quot;.</li>
+<li>Below the search box, a row of chips lists the eight families with their letters. Tap one to jump straight to that family.</li>
+<li>Each family starts with its letter, its name, its number of drills and one sentence on what it is for. The cards follow.</li>
+</ol>
+<figure class="shot"><a href="../img/en/pro-drills.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-drills-720.webp 720w, ../img/en/pro-drills.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-drills.jpg" srcset="../img/en/pro-drills-720.jpg 720w, ../img/en/pro-drills.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The drill library: the title &quot;The 64 drills&quot;, the search box, the Filters button, the chips for the eight families and the first cards of the Technique and patterns family." loading="lazy" decoding="async"></picture></a><figcaption>The library, open on family C in the pro club demo.</figcaption></figure>
+<p>A card shows the essentials without opening it: the diagram, the code, the family, the minimum age, the title, a one-line summary, the first two intentions, the duration in minutes, the number of players and the intensity. At the top right of the page, the <strong>Read The Njangi Code</strong> button opens the whole book.</p>
+<h2 id="searching-and-filtering">Searching and filtering</h2>
+<p>The search box takes a code (<strong>R02</strong>), a word from the title (&quot;rondo&quot;) or an idea (&quot;third man&quot;). It looks through titles, subtitles and objectives, in English and in French, and it ignores accents. If you type several words, a drill must contain all of them.</p>
+<p>The <strong>Filters</strong> button opens five rows of chips: <strong>Family</strong>, <strong>Intention</strong>, <strong>Day</strong>, <strong>Age</strong> and <strong>Intensity</strong>. Each chip shows a small number: how many drills you would get by tapping it, given your other filters. A chip at zero fades out, so you never walk into a dead end. When you pick an intention, its definition appears just below, for example &quot;Win it back: Five seconds of counter-press after losing the ball&quot;.</p>
+<p>The <strong>Age</strong> filter works as a ceiling: the <strong>U11</strong> chip keeps drills meant for under-11s and younger, never a &quot;U13+&quot; drill. The chips run from <strong>U9</strong> to <strong>Seniors</strong>. Across rows, filters combine: an intention plus an age gives the drills that meet both. Within a row, they widen: two intentions show the drills that work on either one.</p>
+<p>As soon as a filter is on, the families give way to a single grid with a counter, for example &quot;7 drills found&quot;. The <strong>Filters</strong> button shows how many filters are active. <strong>Clear filters</strong> resets the chips but keeps your search; <strong>Show all drills</strong> resets everything.</p>
+<p>Here is an example, taken from a real coaching question: &quot;My team loses the ball and just watches the other side break away.&quot;</p>
+<ol>
+<li>Tap <strong>Filters</strong>.</li>
+<li>In the <strong>Intention</strong> row, tap <strong>Win it back</strong>. Seven drills remain.</li>
+<li>In the <strong>Age</strong> row, tap your team’s age, for example <strong>U13</strong>. Three remain.</li>
+<li>In the <strong>Day</strong> row, look at the numbers: these drills belong mostly on MD-4 and MD-3, far from the match, because they are high or very high in intensity.</li>
+</ol>
+<p>The order of those steps is deliberate. <em>The Njangi Code</em> (chapter 31) tells coaches to choose a drill by asking three questions, always in the same order: which intention, which age, which day. The intention comes from the last match, and it already cuts the 64 drills down to about fifteen. The age protects children from drills that were not designed for them. The day decides the space and the intensity. Ndamba’s filters follow the same reasoning.</p>
+<aside class="callout callout-astuce"><div class="callout-kicker">Tip</div><div class="callout-title">A list you can share</div><p>Your filters are written into the page address. Copy it and send it to your assistant: they will open exactly the same selection. And on a drill card, the <strong>Previous</strong> and <strong>Next</strong> arrows stay inside your filtered selection.</p>
+</aside>
+
+<h2 id="reading-a-drill-card">Reading a drill card</h2>
+<p>Tap a card to open it. Every card follows the same order, so you can find what you need in two seconds, even in the four o’clock sun.</p>
+<figure class="shot"><a href="../img/en/pro-drill-detail.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-drill-detail-720.webp 720w, ../img/en/pro-drill-detail.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-drill-detail.jpg" srcset="../img/en/pro-drill-detail-720.jpg 720w, ../img/en/pro-drill-detail.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="Drill C01, The Njangi Y: the code and family, the title, the Progress and Pin intentions, the diagram with the Set-up and Progression buttons, and on the right the players, age, space, duration, intensity and days." loading="lazy" decoding="async"></picture></a><figcaption>The top of a drill card: the diagram on the left, the key facts on the right.</figcaption></figure>
+<p><strong>The header.</strong> The code (C01), the family, the title (&quot;The Njangi Y&quot;), a line that sums up the idea, then the intentions. The five intentions of possession are in green; the two reflexes, <strong>Win it back</strong> and <strong>Look forward</strong>, are in grey. At the top right, a counter shows where the drill sits in the list, for example &quot;1 / 64&quot;.</p>
+<p><strong>The diagram.</strong> The team playing the Njangi way is in dark green and attacks to the right, the opponents are in red, and neutral players or jokers are in yellow. Arrows are numbered in the order of the action: a solid line for a pass, a dashed line for a run, a wavy line for a carry. For 19 drills, a second diagram shows the progression or the second phase: switch between them with <strong>Set-up</strong> and <strong>Progression</strong>. The few words written on some diagrams, such as &quot;troisième homme&quot; (third man), are still in French in the English edition.</p>
+<p><strong>The key facts.</strong> To the right of the diagram: <strong>Players</strong> (how many, and often how many groups side by side), <strong>Age</strong>, <strong>Space</strong> (in metres), <strong>Duration</strong> (the sets, then the total in minutes in brackets), <strong>Intensity</strong> and <strong>Days</strong>. Below them, the drill’s <strong>Pieces of the Njangi</strong>: the heart, the reason, the eyes, the map or the breath, the five images from the novel that help coaches talk about the game with children.</p>
+<p><strong>The content.</strong> Further down, the card gives its <strong>Objective</strong> in a green band, then the <strong>Organisation</strong> (cones, teams, balls; many drills also cover the case of a big group, too few balls and strong heat), the <strong>Rules</strong>, the <strong>Coaching points</strong>, meaning the short phrases to use during the drill, and two columns: <strong>To make it harder</strong> and <strong>To make it easier</strong>. The <strong>What to measure</strong> section says what to count to know whether the drill did its job. Finally, the <strong>With Kaydoudou and BriBri</strong> box links the drill to a scene from the novel, with a <strong>Read the novel</strong> link.</p>
+<figure class="shot tall"><a href="../img/en/pro-drill-detail-full.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-drill-detail-full-720.webp 720w, ../img/en/pro-drill-detail-full.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-drill-detail-full.jpg" srcset="../img/en/pro-drill-detail-full-720.jpg 720w, ../img/en/pro-drill-detail-full.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="2771" alt="Drill C01 in full: the objective, organisation, rules, coaching points, the columns to make the drill harder or easier, what to measure, the With Kaydoudou and BriBri box and the link to the next drill." loading="lazy" decoding="async"></picture></a><figcaption>A complete drill card, from the objective to the story from the novel.</figcaption></figure>
+<p>The coaching points are written the way you talk at the side of the pitch: &quot;B, set it first time into C’s stride, not onto his feet.&quot; That is on purpose. The book insists that a moving player only hears one instruction at a time, and only if it is short. When every age group at a club uses the same words, an under-13 moving up to the under-15s does not have to learn a new language.</p>
+<p>At the bottom of the card, two tiles lead to the previous and the next drill. The <strong>All drills</strong> link at the top takes you back to the list, filters included.</p>
+<h2 id="from-the-book-to-the-pitch">From the book to the pitch</h2>
+<p>Under the diagram, the <strong>Read in the book</strong> button opens the same drill in <em>The Njangi Code</em>, on its own page. The book gives the context a screen has no room for: the chapter that explains the intention, the common mistakes, the drill’s place in the week. The book is written in French, like the novel.</p>
+<p>The link works both ways: every drill the book mentions by its code, such as R08, is in the library, and the book’s table of contents ends with a link to the drills in the app (<strong>Les 64 exercices dans l’application</strong>, in French like the rest of the book). A coach prepares at home with the book and finds the same card in their pocket the next day.</p>
+<h2 id="adding-a-drill-to-a-session">Adding a drill to a session</h2>
+<p>A drill only matters once it reaches the pitch. The <strong>Add to a session</strong> button gets it there in two moves.</p>
+<ol>
+<li>On the drill card, tap <strong>Add to a session</strong>. A window opens with the drill’s title.</li>
+<li>For a new session, tap <strong>New session with this drill</strong>. The MD day and the intention are filled in for you: the day is the drill’s first pre-match day (MD-4 for R08, for example) and the intention is its first intention. Check the date and the team, then tap <strong>Create session</strong>.</li>
+<li>For a session that is already planned, pick it under <strong>Or in an upcoming session</strong>. The list shows up to twelve upcoming sessions for the team, with their MD day, number of blocks and minutes. <strong>Right day</strong> marks a session whose day matches the drill’s days; <strong>Already in</strong> marks a session that already contains the drill: it no longer responds to a tap, so the same block cannot go in twice.</li>
+<li>A message confirms the addition, with an <strong>Open</strong> link to go to the session.</li>
+</ol>
+<p>The drill joins the session as a new block at the end, with its full duration. Chapter 8 shows how to move it, change its minutes or add a note.</p>
+<p>You can also go the other way. From a session, the <strong>Add a drill</strong> button opens the same library, already filtered on the session’s day (except for MD+1, which has a single drill: the panel then shows every drill). At the bottom of the library, the <strong>Build a session with these drills</strong> link leads to your sessions. And if you would rather ask, Mola answers questions like &quot;Which drills to win the ball back faster?&quot; with three drills suited to your team’s age.</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">For investors</div><div class="callout-title">Why the library is free</div><p>The 64 drills and the books stay open on every plan, including the free one: that rule is written into the app’s code. The library is the front door to the method and the shared vocabulary a federation needs, from the first club to the national team. The paid plans sell time saved (unlimited sessions, the week planned in one tap, analysis), not access to knowledge.</p>
+</aside>
+
+<h2 id="what-the-library-builds">What the library builds</h2>
+<p>A library does not make a team. But a team that knows ten drills by heart no longer spends time working out the organisation: all its attention goes to behaviour. The book puts it simply: better ten well-known drills than something new every day. Ndamba makes those drills common property, in one place, with the same codes and the same words, from under-9s to the first team. It is the first brick of the continuity African football has been missing.</p>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-06.html" rel="prev"><small>Previous</small><b>6. Home, navigation and settings</b></a><a class="next" href="ch-08.html" rel="next"><small>Next</small><b>8. Build a session</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>

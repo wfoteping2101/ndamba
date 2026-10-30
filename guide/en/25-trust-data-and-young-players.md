@@ -114,7 +114,7 @@ There is no advertising in Ndamba, no messaging between users, no public profile
 
 **The parent role.** A parent chooses the **Parent** role during the welcome conversation; Mola then asks: "How old is your child, or which age group do they play in?" Their home screen is the child's youth space, with a **For parents** box: "Fifteen minutes, a wall and a ball are enough. Stay close, help count and remind them to drink water." The parent keeps this youth space even as the child grows older. Our advice: for a child under 13, the parent creates the space on a family device and keeps it.
 
-![The home screen of Estelle, a parent in the U13 academy demo: the For parents box, the My journey card and the child's challenge of the day.](shot:youth-parent-home-named "A parent sees the child's space, with a box written for them.")
+![The home screen of Estelle, a parent in the U13 academy demo: the For parents box, the Your child's journey card and the child's challenge of the day.](shot:youth-parent-home-named "A parent sees the child's space, with a box written for them.")
 
 **For coaches.** The squad only asks for the year of birth, not the full date, and that is enough. Keep notes factual and kind: they are part of the backups. Daily form touches on health: ask for it only from those who benefit from it, and read it with care.
 

@@ -1,0 +1,212 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>25. Trust, data and young players, The Ndamba Guide</title><meta name="description" content="Where your data lives, how to back it up and restore it, why there are no accounts yet, the &quot;Nothing goes out without you&quot; rule, exactly what the AI model receives, the place of children and parents, the house rules and what will change when accounts arrive."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-25"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-25.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Live analysis</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The season and video analysis</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25" aria-current="page"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-9">Part IX. Lifting the trophy</a><div class="ch-num">Chapter 25</div><h1 class="ch-title">Trust, data and young players</h1><p class="ch-sum">Where your data lives, how to back it up and restore it, why there are no accounts yet, the &quot;Nothing goes out without you&quot; rule, exactly what the AI model receives, the place of children and parents, the house rules and what will change when accounts arrive.</p><p class="ch-time">11 min read</p></header><div class="prose"><p>A football tool for young players touches precious things: a child’s name, their year of birth, what their coach thinks of them, how they feel today. A club or a federation also entrusts it with its way of playing. Trust is not declared, it is checked. This chapter says exactly where the data goes, what leaves the device and when, and what Ndamba refuses to do. Everything below describes the app as it is today; what will change with accounts is set out at the end.</p>
+<h2 id="where-your-data-lives">Where your data lives</h2>
+<p>Ndamba is a &quot;local first&quot; app. Everything you create is saved in the browser of the device you are using, in a database the browser keeps for the site (it is called IndexedDB). There is no Ndamba data server. <strong>Settings</strong> says so in its very first line: &quot;Everything is saved on this device.&quot; From the welcome conversation onwards, the profile card says it too: &quot;Everything stays in this browser.&quot;</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>What is saved</th>
+<th>What it contains</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The profile</td>
+<td>Name, role, language, country, city, club, age group, position, goals, plan</td>
+</tr>
+<tr>
+<td>The squad</td>
+<td>For each player: name, number, position, year of birth, stronger foot, skill levels, notes</td>
+</tr>
+<tr>
+<td>Training</td>
+<td>Sessions, their blocks and their drills</td>
+</tr>
+<tr>
+<td>Matches</td>
+<td>The match sheet, line-up, game plan, and the tags recorded live or from video</td>
+</tr>
+<tr>
+<td>The journey</td>
+<td>Evaluations, observations, attendance, objectives, milestones</td>
+</tr>
+<tr>
+<td>Daily form</td>
+<td>Sleep, fatigue, soreness, mood, stress, perceived effort, minutes</td>
+</tr>
+<tr>
+<td>The player space</td>
+<td>Completed challenges, the notebook, the lessons marked &quot;I’ve got it&quot; and the &quot;My view&quot; self-assessment</td>
+</tr>
+<tr>
+<td>Mola</td>
+<td>The conversation and the tasks</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>The project title, the file name, the tags and the annotated frames; never the video itself</td>
+</tr>
+</tbody></table></div>
+<p>This choice has practical consequences:</p>
+<ul>
+<li><strong>You can work on a weak network.</strong> Live tagging says so: &quot;The clock, the tags and the score are saved on the device with every tap, even with no network.&quot;</li>
+<li><strong>Nobody else sees your data</strong>, neither Ndamba’s publisher nor another coach.</li>
+<li><strong>Videos never leave the device.</strong> The video studio opens the file where it is: &quot;The video stays on your device: Ndamba only saves your tags and drawings.&quot; A drawing is kept together with a small still of the moment.</li>
+<li><strong>But data can be lost.</strong> Clearing the browser’s data, changing phones or working in a private window makes the space disappear if it was not backed up. Two browsers on the same phone are two separate spaces.</li>
+<li><strong>A demo replaces the browser’s data.</strong> When the browser already holds your own space, the site warns you before starting it and suggests exporting a backup first.</li>
+</ul>
+<p>Beside that database, the browser keeps a few items in its simple storage. The lessons marked &quot;I’ve got it&quot; and the &quot;My view&quot; self-assessment are among them, but they travel with backups. The clock of a match in progress, tagging settings, dismissed suggestions and your language choice are kept there too, but are not part of backups. Finally, in the whole of the app’s code, only one call can send text you wrote to the outside: the one used by Mola’s AI model, described below. The app contains no audience measurement or advertising tool, and its fonts ship with the site.</p>
+<h2 id="back-up-restore-erase">Back up, restore, erase</h2>
+<p>Backups are your responsibility, and they are the most important habit in this chapter.</p>
+<p>To export a backup:</p>
+<ol>
+<li>Open <strong>Settings</strong>, in the <strong>Me</strong> group of the menu.</li>
+<li>In the <strong>Your data</strong> panel, on the <strong>Export a backup</strong> line, tap <strong>Export</strong>.</li>
+<li>A file named ndamba-YYYY-MM-DD.json is downloaded. It holds all your data in this browser: the profile, teams, players, sessions, matches, analyses, video projects, journey, daily form, notes, the notebook, the conversation with Mola, the lessons understood and &quot;My view&quot;.</li>
+</ol>
+<p>To restore a backup, on the same device or another one:</p>
+<ol>
+<li>In <strong>Your data</strong>, on the <strong>Restore a backup</strong> line, tap <strong>Restore</strong> and choose the file.</li>
+<li>The &quot;Restore this backup?&quot; window shows the backup’s date and number of items, and warns that all the current data in this browser will be replaced.</li>
+<li>Confirm with <strong>Restore</strong>. If the file is not a Ndamba backup, a message says so and nothing is changed.</li>
+</ol>
+<p>To start again from scratch, the <strong>Erase everything</strong> line deletes the profile, the teams and everything else from the browser, including the lessons understood and &quot;My view&quot;, after a confirmation; your language choice is kept. It cannot be undone.</p>
+<figure class="shot"><a href="../img/en/pro-settings-full.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-settings-full-720.webp 720w, ../img/en/pro-settings-full.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-settings-full.jpg" srcset="../img/en/pro-settings-full-720.jpg 720w, ../img/en/pro-settings-full.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="1522" alt="The full settings of the pro club demo: the profile, the teams, the Plan panel, then the Your data panel with Export, Restore and Erase everything, and the version and storage details." loading="lazy" decoding="async"></picture></a><figcaption>Settings: this is where you manage your data, and storage reads On this device.</figcaption></figure>
+<aside class="callout callout-attention"><div class="callout-kicker">Watch out</div><div class="callout-title">A backup is a readable file</div><p>The backup file is plain, unencrypted text: anyone who opens it sees the players’ names, notes and form, and the annotated video frames. Treat it like a paper squad list: do not drop it into a group chat, and keep it on storage that belongs to you. Make one every week, after every tagged match, and always before opening a demo.</p>
+</aside>
+
+<h2 id="no-accounts-no-cloud-for-now">No accounts, no cloud, for now</h2>
+<p>Ndamba asks for no e-mail address, no password and no account. That choice protects you, but it has three consequences you need to know.</p>
+<p><strong>Nothing syncs.</strong> The coach’s tablet and a player’s phone each have their own space. A player’s journey, which the app describes like this (&quot;Once your coach adds you to the team in Ndamba, your sessions, matches, the coach’s observations and your objectives gather here&quot;), currently appears on the device that holds the team’s data: a club tablet, for instance, or a device where the coach’s backup was restored.</p>
+<p><strong>A backup is all or nothing.</strong> You cannot yet send a player just their own file. Restoring a coach’s backup on a family’s device would copy the whole squad onto it. Do not do that: person-by-person sharing will come with accounts.</p>
+<p><strong>The role is not a lock.</strong> The role chosen in the profile adapts the home screen and the vocabulary, but whoever holds the device sees the whole menu and all the data. Today the protection is the device itself: its lock code, and the person you lend it to.</p>
+<h2 id="nothing-goes-out-without-you">Nothing goes out without you</h2>
+<p>Mola acts inside the app: it creates a session, plans the week, sets up a match, adds a player, creates a team, analyses the last match, recommends drills, opens a lesson or a book. Anything that would leave the app stops first: a call-up by WhatsApp, text message or e-mail, a message to copy, a calendar file. The rule is shown on Mola’s page under the title &quot;Nothing goes out without you&quot;.</p>
+<p>To approve what Mola has prepared:</p>
+<ol>
+<li>Open <strong>Mola</strong>, then the <strong>To approve</strong> tab. Mola’s button also flags pending actions.</li>
+<li>Read the text under <strong>Message</strong>. Tap <strong>Edit</strong> to change it, then <strong>Done</strong>.</li>
+<li>Choose the channel under <strong>Send with</strong>. The number or address is optional.</li>
+<li>Tap <strong>Approve and open WhatsApp</strong> (or <strong>Approve and open SMS</strong>, <strong>Approve and open e-mail</strong>, <strong>Approve and copy</strong>, <strong>Approve and download</strong> for the calendar). Your own app opens with the message ready; you choose the recipients and press Send. Mola says it itself: &quot;I never send anything on your behalf.&quot;</li>
+<li>Or tap <strong>Cancel</strong>: the task ends with &quot;Cancelled: nothing was sent&quot;.</li>
+</ol>
+<p>A call-up contains the names of the players selected: you, and only you, decide where it goes.</p>
+<figure class="shot"><a href="../img/en/pro-mola-approvals.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/pro-mola-approvals-720.webp 720w, ../img/en/pro-mola-approvals.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/pro-mola-approvals.jpg" srcset="../img/en/pro-mola-approvals-720.jpg 720w, ../img/en/pro-mola-approvals.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Mola page on the approvals tab, empty: the Nothing to approve message explains that Mola waits here for your approval, with the Draft a call-up button." loading="lazy" decoding="async"></picture></a><figcaption>The approvals tab: anything that leaves the app waits here for your approval.</figcaption></figure>
+<h2 id="the-optional-ai-model-exactly-what-is-sent">The optional AI model: exactly what is sent</h2>
+<p>Mola runs first on a rules engine inside the app. An AI model can help it understand freely written messages, if the site’s publisher has configured a key on the server. Here is precisely how.</p>
+<p><strong>When.</strong> Each message you write in Mola’s chat, or tap among the suggested phrases, may be sent, except in these cases, handled entirely on the device: the welcome conversation at /bienvenue; the one-tap suggestions under &quot;Mola noticed&quot;, which already know what to do; a plain yes or no; your answer to a detail Mola has just asked for (a date, an opponent), unless it looks like a new request; and any message written while offline. If the server replies that no key is configured, or after two failures, the app stops trying for the rest of the visit.</p>
+<p><strong>What goes out.</strong> A request contains:</p>
+<ul>
+<li>the text of your message, cut to 600 characters;</li>
+<li>the language (French or English) and today’s date;</li>
+<li>a short context: the active team’s name, its age group, your role, the opponent and date of the next match, and the opponent and date of the last match played;</li>
+<li>the names of the app and the books (Ndamba, its tagline and motto, <em>Lionceaux</em>, Kaydoudou and BriBri, the title of book 1, <em>The Njangi Code</em>).</li>
+</ul>
+<p><strong>What does not go out.</strong> The squad, the player files, notes, observations, daily form, tags and reports, videos, the notebook, phone numbers. With one exception, which you control: whatever you type. If you write &quot;Add Samuel Owona, number 9&quot;, that name leaves with the message.</p>
+<p><strong>Where.</strong> To one of the site’s own functions, /api/mola. It holds the key, which is never sent to the browser. It passes the request on to the Anthropic API (the default model is claude-haiku-5-5), with the instruction to return only an intent and a few details, and a reply capped at 400 tokens. The function’s code stores nothing; the provider handles the request under its own terms.</p>
+<p><strong>What comes back.</strong> An intent (for example, plan the week), a few details (a date, an opponent, a playing intention) and sometimes a short sentence. The app checks each value and keeps only well-formed ones; then Mola acts with the same local code as it would without the model. The model never reads or writes your data and never sends a message. If there is no answer within 3.5 seconds, the rules engine takes over.</p>
+<p><strong>Without a key.</strong> The function replies that it is not configured, the rules engine answers on its own, and everything works. The app does not currently show whether the model is active: it is a server setting chosen by the publisher.</p>
+<h2 id="young-players-and-minors">Young players and minors</h2>
+<p>A player under 16 gets a home screen designed for their age: today’s challenge, their experience points, streak and stage, the lesson of the day from the novel, the next match with a simple reminder (&quot;pack your bag and go to bed early the night before&quot;), their notebook and their journey. The journey follows age rules written into the app: &quot;Under 13: simple markers, never a ranking.&quot; and &quot;13 to 16: progress and match markers, no ranking.&quot; The performance space only arrives at 16. Health advice sits in the player space: &quot;Drink water&quot; and &quot;One day a week without challenges. […] If it hurts, stop and tell your coach or your parents.&quot;</p>
+<figure class="shot"><a href="../img/en/youth-player-home-linked.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/youth-player-home-linked-720.webp 720w, ../img/en/youth-player-home-linked.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/youth-player-home-linked.jpg" srcset="../img/en/youth-player-home-linked-720.jpg 720w, ../img/en/youth-player-home-linked.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="BriBri's home screen at 12: the motto, his experience points, his streak, today's Quick feet challenge and his progress, with no ranking anywhere." loading="lazy" decoding="async"></picture></a><figcaption>What a 12-year-old sees: a challenge, his progress, his journey, never a ranking.</figcaption></figure>
+<p>There is no advertising in Ndamba, no messaging between users, no public profile and no comments. Mola only talks to the person holding the device and never contacts anyone.</p>
+<p><strong>The parent role.</strong> A parent chooses the <strong>Parent</strong> role during the welcome conversation; Mola then asks: &quot;How old is your child, or which age group do they play in?&quot; Their home screen is the child’s youth space, with a <strong>For parents</strong> box: &quot;Fifteen minutes, a wall and a ball are enough. Stay close, help count and remind them to drink water.&quot; The parent keeps this youth space even as the child grows older. Our advice: for a child under 13, the parent creates the space on a family device and keeps it.</p>
+<figure class="shot"><a href="../img/en/youth-parent-home-named.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/youth-parent-home-named-720.webp 720w, ../img/en/youth-parent-home-named.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/youth-parent-home-named.jpg" srcset="../img/en/youth-parent-home-named-720.jpg 720w, ../img/en/youth-parent-home-named.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The home screen of Estelle, a parent in the U13 academy demo: the For parents box, the Your child's journey card and the child's challenge of the day." loading="lazy" decoding="async"></picture></a><figcaption>A parent sees the child’s space, with a box written for them.</figcaption></figure>
+<p><strong>For coaches.</strong> The squad only asks for the year of birth, not the full date, and that is enough. Keep notes factual and kind: they are part of the backups. Daily form touches on health: ask for it only from those who benefit from it, and read it with care.</p>
+<h2 id="the-house-rules">The house rules</h2>
+<ul>
+<li><strong>No real players</strong>, with one exception: Roger Milla, mentioned for the history of 1990. No real coaches. The clubs and people in the demos (Étoile de la Côte, Daniel Mbarga, Steve Ndjock, the Lionceaux de Bonamoussadi, BriBri, Estelle) are fictional.</li>
+<li><strong>No invented results.</strong> The Njangi Index is calculated from your own tags, with the formulas of <em>The Njangi Code</em> (chapter 32), and the report reminds you that its benchmarks are &quot;to calibrate on your own matches&quot;. The football facts quoted are checked and dated.</li>
+<li><strong>No invented testimonials, partners or numbers.</strong> Targets are always presented as targets.</li>
+<li><strong>Mola never claims to have done what it has not done.</strong> The instruction given to the model forbids it, and every action runs through the app’s code, with visible steps that tick off one by one.</li>
+</ul>
+<h2 id="what-will-change-with-accounts">What will change with accounts</h2>
+<p>Accounts and sync are planned for stage 2 of the plan (2028 to 2029), along with the staff accounts of the Club and academy plan. This guide proposes the principles that their arrival will have to respect. They are commitments to keep, not features already built:</p>
+<ul>
+<li>a parent’s consent for any account belonging to a minor;</li>
+<li>everyone sees only what concerns them: a player their own journey, a parent their child’s, a staff their team;</li>
+<li>the app stays local first: you work without a network, and sync follows;</li>
+<li>exporting a backup always remains possible;</li>
+<li>the &quot;Nothing goes out without you&quot; rule does not change;</li>
+<li>data hosting and the protection of minors are discussed with clubs and federations before anything goes live.</li>
+</ul>
+<aside class="callout callout-investisseur"><div class="callout-kicker">For investors</div><div class="callout-title">Trust as an asset</div><p>Local storage is a trust asset: today there is no central database that could leak. It is also the main limitation: no shared space, and no usage measurement without users’ consent. The arrival of accounts is therefore both a product project and a trust project; it deserves an explicit budget and an external review of how minors’ data is protected.</p>
+</aside>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-24.html" rel="prev"><small>Previous</small><b>24. The business model</b></a><a class="next" href="ch-26.html" rel="next"><small>Next</small><b>26. The roadmap</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>
