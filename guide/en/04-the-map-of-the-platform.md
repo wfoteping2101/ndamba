@@ -95,9 +95,9 @@ On a computer, the app has a dark green column on the left. At the top sits the 
 | Me | **Premium** | The plans and the demo activation | 6, 24 |
 | Me | **Settings** | Profile, teams, plan, backups | 6 |
 
-Other pages open from these: a drill's page, the session builder, a player's file and journey, the **Observe** page (from a journey, a session or a match), the match sheet, the report, the video studio, the lessons and the notebook. Live analysis takes the whole screen, with no menu, so that nothing gets in the way on the touchline.
+Other pages open from these: a drill's page, the session builder, a player's file and journey, the **Observe** page (from the squad, a journey, a session or a match), the match sheet, the report, the video studio, the lessons and the notebook. Live analysis takes the whole screen, with no menu, so that nothing gets in the way on the touchline.
 
-At the bottom of the column, a block shows your initials, your name and your plan (for instance "Coach Pro"); it opens **Settings**. Next to it sits the language switch.
+At the bottom of the column, a block shows your initials, your name and your role (for instance "Coach"); it opens **Settings**, where your plan is shown too. Next to it sits the language switch.
 
 > [!TIP] On a small laptop screen
 > If your screen is short, the menu column scrolls: the last links of the Me group (**Books**, **Football game**, **Premium**, **Settings**) may be hidden at the bottom. Scroll the column, or tap the block with your name, which opens **Settings** directly.
@@ -106,7 +106,7 @@ At the bottom of the column, a block shows your initials, your name and your pla
 
 On a phone, the column disappears. A slim bar at the top shows the logo and the language switch. At the bottom, a bar of five tabs stays within reach of your thumb: **Home**, **Train**, **Matches**, **Analysis** and **More**.
 
-![The app's home screen on a phone, with the welcome band, today's session and the tab bar at the bottom.](shot:m-pro-home "On a phone, the bottom bar: Home, Train, Matches, Analysis and More.")
+![The app's home screen on a phone: at the top the logo and the FR or EN switch, the Good evening, Daniel band with 4 sessions, 303 minutes and D-2, today's session, and at the bottom the Home, Train, Matches, Analysis and More tab bar.](shot:m-pro-home "On a phone, the bottom bar: Home, Train, Matches, Analysis and More.")
 
 **Train** opens the list of sessions. **More** slides up a panel that names the active team, then lists every menu group in two columns, just as on a computer. On a page that is not one of the first four tabs (Settings, for instance), **More** is the tab that lights up. The panel closes with the cross, by tapping the dark background or by choosing a page.
 
@@ -118,7 +118,7 @@ On the app's pages, a round button with Mola's face floats at the bottom right (
 
 Ndamba is bilingual, French first, English second. The **FR** or **EN** switch appears everywhere: in the site bar, at the bottom of the app's column, in the top bar on a phone, on the welcome page and on the game page.
 
-The change is immediate. Your choice is remembered by the browser and, if you have a profile, saved in it; you can also change it in **Settings**. With no saved choice, Ndamba opens in French.
+The change is immediate. Your choice is remembered by the browser and, if you have a profile, saved in it; you can also change it in **Settings**. With no saved choice, Ndamba opens in French; only the game page then follows the browser's language.
 
 Two details avoid surprises. What you write yourself (a session title, a note) stays in the language you wrote it in, and so does the content of a demo, created in the language that was active when you started it. And both books are written in French.
 
@@ -131,9 +131,9 @@ There are no user accounts and no sync yet. In practice:
 - Another browser, another computer or another phone opens an empty space.
 - To keep your work or move it to another device, you export a backup (a file) from **Settings**, then restore it elsewhere. Chapter 6 shows how, step by step.
 - If you clear this site's browsing data, your space goes with it. Export a backup first.
-- The **Erase everything** button in Settings deletes the profile, the teams and everything else from this browser.
+- The **Erase everything** button in Settings deletes the profile, the teams and everything else from this browser, including the lessons marked "I've got it" and "My view" in the player space. The language choice is kept.
 
-Only one thing can leave the device, and only if Ndamba's server is set up for it: the sentence you write to Mola (with a few pointers such as the team name and the next opponent) may be sent to an artificial intelligence model to be understood better. Without that setup, the built-in rules engine answers on its own. The welcome conversation is always understood on the device. And the messages Mola prepares for the outside world (WhatsApp, text, e-mail) wait for your approval: you are the one who sends them.
+Only one thing can leave the device: the sentence you write to Mola, with a few pointers (the team name, its age group, your role, the next and the last opponent), is offered to Ndamba's server. The server passes it on to an artificial intelligence model, so it is understood better, only if it is set up for that. Otherwise it declines, and the built-in rules engine answers on its own. The welcome conversation is always understood on the device. And the messages Mola prepares for the outside world (WhatsApp, text, e-mail) wait for your approval: you are the one who sends them.
 
 Accounts and sync between devices are planned; the roadmap in chapter 26 lists them among the next steps.
 

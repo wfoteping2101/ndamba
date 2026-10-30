@@ -89,7 +89,7 @@ At the top, the journey shows the number, the name, the position, the age and th
 
 Further down, the player finds:
 
-- **Progress by competence**: the ten skills of The Njangi Code grid, from 1 to 4. Tap one to see its curve, what is seen today and the next step.
+- **Progress by skill**: the ten skills of The Njangi Code grid, from 1 to 4. Tap one to see its curve, what is seen today and the next step.
 - **The journey, step by step**: their story of the season, most recent first, with filters (**All**, **Milestones**, **Evaluations**, **Observations**, **Matches**, **Sessions**, **Objectives**).
 - **Objectives for this cycle**: one to three objectives, for six to eight weeks, then a review.
 - **Your matches**: the actions that make the team play, with no comparison with anyone else.
@@ -102,7 +102,7 @@ The journey adapts to age. Under 13, the page says so: "Every session counts. He
 The player can neither edit nor delete what their coach wrote. They can, however, set their own objectives:
 
 1. Tap **Set myself an objective**.
-2. Under **Linked to**, choose **A competence** (for example Directional first touch) or **A Njangi sub-index** (for example Regain).
+2. Under **Linked to**, choose **A skill** (for example Directional first touch) or **A Njangi sub-index** (for example Regain).
 3. Write **The objective, in one sentence**, or tap **Use the suggestion**.
 4. Keep the suggested **Review date**, or tap **6 weeks** or **8 weeks**.
 5. Tap **Save the objective**. It appears with the **My objective** label. An objective set by the coach shows too, with this reminder: "Your coach set this objective: you can see it here, and you will review it together."
