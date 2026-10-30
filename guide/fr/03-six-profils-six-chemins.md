@@ -41,7 +41,7 @@ Plus bas viennent **La semaine** (les sept jours, avec les séances et le match,
 
 1. Touchez **Commencer avec Mola**, choisissez **Entraîneur ou éducateur** et donnez le nom de votre équipe, sa catégorie et vos joueurs : Mola crée l'équipe.
 2. Ajoutez le prochain match avec **Nouveau match**.
-3. Sur l'accueil, touchez **Préparer la semaine** : les séances de MD-4 à MD-1 sont créées.
+3. Sur l'accueil, touchez **Préparer la semaine** : les séances des jours MD-4 à MD-1 qui restent avant le match sont créées.
 4. Chaque jour, ouvrez la carte **Aujourd'hui**, puis **Ouvrir la séance**.
 5. Le jour du match, touchez **Direct** et codez les actions.
 6. Après le match, ouvrez **Voir le rapport**, puis préparez la semaine suivante sur l'intention que l'accueil vous propose.

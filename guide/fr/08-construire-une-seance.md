@@ -3,7 +3,7 @@ numero: 8
 slug: construire-une-seance
 titre: Construire une séance
 partie: 3
-resume: La liste des séances et le constructeur de séance : le jour MD, l'intention, les blocs, les minutes, la charge, ce que Mola compose pour vous, et la feuille à imprimer ou à envoyer sur WhatsApp.
+resume: La liste des séances et le constructeur de séance, avec le jour MD, l'intention, les blocs, les minutes, la charge, ce que Mola compose pour vous, et la feuille à imprimer ou à envoyer sur WhatsApp.
 ---
 
 Beaucoup de séances sont une suite d'exercices que l'on aime bien, dont la durée dépend de l'heure à laquelle la lumière baisse. *Le Code Njangi* propose l'inverse : une séance est une histoire courte, avec un seul fil, une intention travaillée sous plusieurs formes, de plus en plus proches du match. Le constructeur de Ndamba sert à écrire cette histoire en quelques minutes, à vérifier qu'elle tient debout (durée, charge, intentions), puis à l'emporter : sur une feuille A4, dans WhatsApp ou dans le calendrier.

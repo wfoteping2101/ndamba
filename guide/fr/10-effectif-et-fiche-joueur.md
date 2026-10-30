@@ -44,24 +44,24 @@ Pour retirer un joueur, touchez la corbeille de sa ligne, ou **Retirer de l'effe
 
 ## La fiche joueur
 
-La fiche s'ouvre depuis l'effectif. En haut : le numéro, le nom, puis des pastilles pour le poste, la génération (**Génération 2013**, par exemple), le pied fort et la **Moyenne** sur 4. À droite, **Modifier** rouvre le formulaire du joueur et **Retirer de l'effectif** le retire.
+En haut de la fiche : le numéro, le nom, le poste, la génération (**Génération 2013**, par exemple), le pied fort et la **Moyenne** sur 4, avec les boutons **Modifier** et **Retirer de l'effectif**.
 
 ![La fiche du gardien de la démo club pro : la plaque Parcours de la saison avec les boutons Observer et Ouvrir le parcours, le Profil en radar comparé à la moyenne de l'équipe, la Contribution en match et le début des dix compétences.](shot:pro-player-detail "La fiche joueur : le parcours de la saison, le profil et la contribution en match.")
 
 La fiche se lit en six blocs.
 
-**Le parcours de la saison.** Une plaque verte résume la saison en cours : la frise des séances, des matchs, des observations et des jalons, puis le nombre de séances suivies, de matchs joués, d'observations et d'objectifs en cours. Deux boutons : **Observer** et **Ouvrir le parcours**.
+**Le parcours de la saison.** Une plaque verte résume la saison en cours (séances suivies, matchs joués, observations, objectifs en cours) et mène à **Observer** et **Ouvrir le parcours**.
 
-**Les dix compétences.** C'est la grille du chapitre 25 du Code Njangi. Chaque compétence a sa définition et quatre niveaux : 1 **Découverte**, 2 **Construction**, 3 **Acquis**, 4 **Référence**. Touchez un niveau pour évaluer, touchez-le à nouveau pour l'effacer. **Voir la grille** déplie la description des quatre niveaux de chaque compétence. La règle est écrite sur l'écran : on note ce qu'on a vu en jeu, sur plusieurs séances, pas ce qu'on espère.
+**Les dix compétences.** C'est la grille du chapitre 25 du Code Njangi. Chaque compétence a sa définition et quatre niveaux : 1 **Découverte**, 2 **Construction**, 3 **Acquis**, 4 **Référence**. Touchez un niveau pour évaluer, touchez-le à nouveau pour l'effacer ; **Voir la grille** déplie la description des quatre niveaux. La règle est écrite sur l'écran : on note ce qu'on a vu en jeu, sur plusieurs séances, pas ce qu'on espère.
 
 | Compétence | Ce que l'on regarde |
 |---|---|
 | Scan | Regarder autour de soi avant de recevoir |
 | Contrôle orienté | Recevoir en orientant le ballon vers l'espace libre ou la suite de l'action |
-| Passe avec intention | Une passe qui sert l'une des cinq intentions, au bon partenaire, au bon pied, au bon rythme |
+| Passe avec intention | Une passe qui sert l'une des cinq intentions, au bon partenaire et au bon rythme |
 | Conduite | Avancer avec le ballon pour progresser ou attirer, tête levée |
 | Dribble njangi | Dribbler pour attirer, fixer, puis donner ou éliminer |
-| Appels et courses pour les autres | Se déplacer sans ballon pour recevoir, libérer un partenaire ou étirer la défense |
+| Appels et courses pour les autres | Se déplacer sans ballon pour recevoir ou libérer un partenaire |
 | Communication | Une information courte et utile, au bon moment |
 | Protection du ballon | Garder le ballon sous pression avec le corps et les appuis |
 | Contre-pression | Réagir tout de suite à la perte pour reprendre le ballon dans les 5 secondes |
@@ -69,11 +69,11 @@ La fiche se lit en six blocs.
 
 Chaque changement de niveau sur la fiche est aussi enregistré comme l'évaluation du jour dans le parcours : l'historique ne se perd jamais.
 
-**Le profil.** Dès trois compétences évaluées, un radar dessine le portrait du joueur, avec en pointillés la **Moyenne de l'équipe**. La phrase sous le radar donne l'esprit : un portrait, pas un total, et deux compétences à travailler pendant six à huit semaines.
+**Le profil.** Dès trois compétences évaluées, un radar dessine le portrait du joueur, avec en pointillés la **Moyenne de l'équipe** : un portrait, pas un total.
 
-**Les notes de l'entraîneur.** Un champ libre, enregistré tout seul pendant que vous écrivez ; la mention **Enregistré** le confirme.
+**Les notes de l'entraîneur.** Un champ libre, enregistré tout seul (**Enregistré**).
 
-**La contribution en match.** Elle compte les actions codées en direct et attribuées à ce joueur (chapitre 12) : le nombre de matchs codés, les titularisations, le taux de **Passes réussies**, puis le détail des actions, et un tableau **Match par match** avec les actions progressives et les reprises en 5 secondes. Chaque match ouvre sa feuille de match.
+**La contribution en match.** Les actions codées en direct et attribuées à ce joueur (chapitre 12) : matchs codés, titularisations, **Passes réussies**, détail des actions et tableau **Match par match**.
 
 **Les exercices conseillés.** Ndamba repère les deux compétences les plus fragiles (évaluées en dessous de 4) et propose jusqu'à quatre exercices de la bibliothèque qui les travaillent.
 
@@ -93,9 +93,9 @@ Plus bas, la page se déroule ainsi :
 - **En match** pour les moins de 17 ans (les actions qui font jouer l'équipe, sans comparaison), ou **Performance de la saison** à partir de 17 ans (actions rapportées à 90 minutes, part des actions de l'équipe, minutes par match).
 - **Les grands moments** : le premier match, la première titularisation, le premier but, le premier brassard, les paliers de matchs joués et chaque compétence qui atteint **Acquis** ou **Référence** s'ajoutent seuls. Avec **Jalon**, vous ajoutez le reste : **Convocation**, **Changement de catégorie**, **Capitanat**, **Distinction**, **Blessure**, **Retour de blessure** ou **Autre**.
 
-Le bouton **Évaluer** ouvre une évaluation complète et datée, préremplie avec les niveaux actuels. Pour chaque compétence, il affiche les observations positives et à travailler recueillies depuis la dernière évaluation : vous décidez avec des preuves sous les yeux. Pour un mineur, l'écran conseille de partager le profil avec lui et sa famille, en commençant par ses points forts.
+**Évaluer** ouvre une évaluation complète et datée, préremplie avec les niveaux actuels, et affiche pour chaque compétence les observations recueillies depuis la dernière évaluation : vous décidez avec des preuves sous les yeux. Pour un mineur, l'écran conseille de partager le profil avec sa famille, en commençant par ses points forts.
 
-Les présences viennent de l'appel (**Faire l'appel**, dans la séance ou dans **Observer**) et les minutes du bouton **Temps de jeu** de la feuille de match (chapitre 11). Le joueur voit lui aussi son parcours depuis son espace (chapitre 16).
+Les présences viennent de **Faire l'appel** (dans la séance ou dans **Observer**), les minutes du bouton **Temps de jeu** de la feuille de match (chapitre 11). Le joueur voit son propre parcours depuis son espace (chapitre 16).
 
 > [!INVESTISSEUR] Une mémoire qui suit le joueur
 > Le parcours transforme des séances ordinaires en données suivies dans le temps : présences, évaluations datées sur une grille commune, observations, minutes, actions de match. C'est la matière première d'un suivi de formation à l'échelle d'un club, puis d'une fédération. Aujourd'hui, ces données vivent sur l'appareil de l'entraîneur ; les comptes et la synchronisation sont prévus.
@@ -129,6 +129,6 @@ Les repères liés à une compétence comptent comme une preuve pour elle :
 | Concentré, à l'écoute | aucune | Distrait, décroche | aucune |
 | Tire le groupe | aucune | Gère mal la frustration | aucune |
 
-Sous le formulaire, la liste **Observations de cette séance** (ou **de ce match**, ou **du jour**) montre ce qui a déjà été noté ; la corbeille supprime une ligne. L'encadré **Observer sans se tromper** donne la méthode : un joueur à la fois pendant 8 à 10 minutes, dans un petit jeu ou un match, et seulement ce que la situation a montré.
+Sous le formulaire, la liste **Observations de cette séance** (ou **Observations de ce match**, **Observations du jour**) montre ce qui est déjà noté, avec une corbeille par ligne. L'encadré **Observer sans se tromper** donne la méthode : un joueur à la fois pendant 8 à 10 minutes, et seulement ce que la situation a montré.
 
-Chaque observation enregistrée rejoint le parcours de chaque joueur choisi : elle apparaît dans le fil et sur la frise, compte dans les chiffres de la saison, s'affiche en preuve sous la courbe de la compétence et dans la fenêtre **Évaluer**, alimente les objectifs en cours, et la compétence la plus souvent notée à travailler devient la **Prochaine marche**. Trois touches au bord du terrain, et la mémoire du joueur s'écrit seule.
+Chaque observation rejoint le parcours des joueurs choisis : dans le fil et sur la frise, dans les chiffres de la saison, en preuve sous la courbe de la compétence et dans la fenêtre **Évaluer**, et dans les objectifs en cours. La compétence la plus souvent notée à travailler devient en général la prochaine marche. Trois touches au bord du terrain, et la mémoire du joueur s'écrit seule.

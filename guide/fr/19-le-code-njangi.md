@@ -6,7 +6,7 @@ partie: 8
 resume: Le livre qui écrit le modèle de jeu de Ndamba : ses neuf parties et ses 38 chapitres, ses 64 fiches d'exercices, ses encadrés, ce qu'il donne à l'application et la manière de le lire en ligne.
 ---
 
-Une idée de jeu qui n'est écrite nulle part part avec l'entraîneur qui la porte. C'est pour cela que Ndamba a un livre en son centre : *Le Code Njangi*, sous-titré « Posséder avec intention : la méthode africaine pour gagner la Coupe du monde ». Écrit par William Foteping, il met noir sur blanc le modèle de jeu Njangi, du premier rondo d'un enfant jusqu'au plan de match d'une sélection. L'application, elle, aide à faire chaque jour ce que le livre explique : ses exercices, sa semaine d'entraînement et son Indice Njangi viennent de ces pages. Le livre se lit librement, en ligne, chapitre par chapitre.
+Une idée de jeu qui n'est écrite nulle part s'en va avec l'entraîneur qui la porte. C'est pour cela que Ndamba a un livre en son centre : *Le Code Njangi*, sous-titré « Posséder avec intention : la méthode africaine pour gagner la Coupe du monde ». Écrit par William Foteping, il met noir sur blanc le modèle de jeu Njangi, du premier rondo d'un enfant jusqu'au plan de match d'une sélection. L'application, elle, aide à faire chaque jour ce que le livre explique : ses exercices, sa semaine d'entraînement et son Indice Njangi viennent de ces pages. Le livre se lit librement, en ligne, chapitre par chapitre.
 
 ## Le livre en bref
 
@@ -31,19 +31,17 @@ L'auteur conseille de le lire dans l'ordre la première fois, puis de s'en servi
 
 ## Les neuf parties et les 38 chapitres
 
-| Partie | Chapitres | Ce que vous y trouvez |
-|---|---|---|
-| Avant-propos | Avant-propos | Pourquoi ce livre, pour qui, comment le lire, ses liens avec l'application et le roman. |
-| 1. Le manifeste | 1 Le talent ne suffit pas ; 2 Le Njangi : une philosophie africaine du jeu ; 3 Le mantra : 2030 ou 2034 | Le constat (il manque une idée commune, pas du talent), la tontine devenue philosophie de jeu, l'ambition et son calendrier. |
-| 2. Le modèle de jeu Njangi | 4 Les quatre moments et la règle d'or ; 5 Les cinq intentions de la possession ; 6 La carte : couloirs, hauteurs, triangles ; 7 Les transitions : reprendre et regarder devant ; 8 Défendre pour récupérer ; 9 Les rôles du Njangi ; 10 Les coups de pied arrêtés avec intention | Le cœur de la méthode : ce que fait l'équipe dans chaque moment, et qui fait quoi. |
-| 3. La technique au service de l'intention | 11 La passe qui sert ; 12 Recevoir et s'orienter ; 13 Voir avant de recevoir ; 14 Conduire, dribbler, protéger ; 15 Finir ; 16 Le gardien qui joue | Les gestes qui rendent le modèle possible. |
-| 4. La tactique Njangi | 17 Les systèmes avec et sans ballon ; 18 Sortir le ballon contre chaque pressing ; 19 Progresser : troisième homme, surcharges, changements de côté ; 20 Le dernier tiers : attaquer la surface ; 21 Presser : déclencheurs et pièges ; 22 Le bloc médian, le bloc bas et la défense de repos ; 23 Le plan de match | Le jeu collectif, jusqu'au plan de match et à la mi-temps. |
-| 5. Des jeunes aux pros | 24 Les étapes de la formation Njangi ; 25 Les dix compétences du joueur Njangi ; 26 Former en Afrique : notre réalité est notre force | Cinq étapes de U6 à l'équipe A, une grille de 1 à 4, et des réponses pour les terrains, la chaleur, l'école, la protection de l'enfance et la diaspora. |
-| 6. La semaine d'entraînement et la périodisation | 27 La périodisation Njangi ; 28 Toutes les semaines : jeunes, deux matchs, sélections ; 29 La charge, la chaleur et la récupération ; 30 Construire une séance Njangi | La semaine type autour du match, ses variantes, la charge, et deux séances complètes. |
-| 7. Les exercices | 31 Comment utiliser les fiches, puis les 64 fiches | Lire une fiche et choisir la bonne. |
-| 8. L'analyse | 32 Mesurer la possession avec intention ; 33 L'analyste Njangi : avant, pendant, après le match ; 34 Le rapport de match Njangi | Les quatorze codes, l'Indice Njangi, le rapport en une page. |
-| 9. Le manager et la fédération | 35 Le manager, gardien de l'idée ; 36 Le plan 2030 : dix mesures pour une fédération | Protéger le modèle quand l'entraîneur change ; dix mesures et un calendrier de 2026 à 2034. |
-| Annexes | 37 Annexes | Le glossaire français et anglais, des fiches vierges de séance, de semaine et de rapport, le rappel de l'Indice Njangi. |
+- **Avant-propos** : pourquoi ce livre, pour qui, comment le lire, ses liens avec l'application et le roman.
+- **Partie 1, Le manifeste** (le constat et l'ambition) : 1 Le talent ne suffit pas ; 2 Le Njangi : une philosophie africaine du jeu ; 3 Le mantra : 2030 ou 2034.
+- **Partie 2, Le modèle de jeu Njangi** (le cœur de la méthode) : 4 Les quatre moments et la règle d'or ; 5 Les cinq intentions de la possession ; 6 La carte : couloirs, hauteurs, triangles ; 7 Les transitions : reprendre et regarder devant ; 8 Défendre pour récupérer ; 9 Les rôles du Njangi ; 10 Les coups de pied arrêtés avec intention.
+- **Partie 3, La technique au service de l'intention** : 11 La passe qui sert ; 12 Recevoir et s'orienter ; 13 Voir avant de recevoir ; 14 Conduire, dribbler, protéger ; 15 Finir ; 16 Le gardien qui joue.
+- **Partie 4, La tactique Njangi** : 17 Les systèmes avec et sans ballon ; 18 Sortir le ballon contre chaque pressing ; 19 Progresser : troisième homme, surcharges, changements de côté ; 20 Le dernier tiers : attaquer la surface ; 21 Presser : déclencheurs et pièges ; 22 Le bloc médian, le bloc bas et la défense de repos ; 23 Le plan de match.
+- **Partie 5, Des jeunes aux pros** (cinq étapes de U6 à l'équipe A) : 24 Les étapes de la formation Njangi ; 25 Les dix compétences du joueur Njangi ; 26 Former en Afrique : notre réalité est notre force.
+- **Partie 6, La semaine d'entraînement et la périodisation** : 27 La périodisation Njangi ; 28 Toutes les semaines : jeunes, deux matchs, sélections ; 29 La charge, la chaleur et la récupération ; 30 Construire une séance Njangi.
+- **Partie 7, Les exercices** : 31 Comment utiliser les fiches, puis les 64 fiches.
+- **Partie 8, L'analyse** (les quatorze codes et l'Indice Njangi) : 32 Mesurer la possession avec intention ; 33 L'analyste Njangi : avant, pendant, après le match ; 34 Le rapport de match Njangi.
+- **Partie 9, Le manager et la fédération** : 35 Le manager, gardien de l'idée ; 36 Le plan 2030 : dix mesures pour une fédération, avec un calendrier de 2026 à 2034.
+- **Annexes** (37) : le glossaire français et anglais, des fiches vierges de séance, de semaine et de rapport, le rappel de l'Indice Njangi.
 
 Un mot sur le vocabulaire, car il revient partout dans Ndamba. Le livre parle des cinq intentions de la possession (Sortir, Progresser, Fixer, Finir, Respirer) et de deux réflexes sans ballon (Reprendre, Regarder devant). L'application range ces sept mots ensemble, sous le nom d'intentions, dans ses filtres et ses séances. Ce sont les mêmes mots, à l'identique : c'est voulu, car une idée commune commence par des mots communs.
 
@@ -70,13 +68,11 @@ Dans le texte des chapitres, un exercice est cité par son code, par exemple L04
 
 Cinq sortes d'encadrés ponctuent les chapitres. Les reconnaître aide à lire vite.
 
-| Encadré | Ce qu'il contient |
-|---|---|
-| Principe Njangi | Un principe clé du modèle, en quelques lignes. |
-| Pour l'analyste | Comment mesurer ou observer ce principe : un indicateur, une définition. |
-| Avec les jeunes | L'adaptation pour les enfants et les adolescents. |
-| En Afrique | Le contexte du continent : terrains, chaleur, moyens, diaspora. |
-| Attention | Une erreur fréquente ou une règle de sécurité. |
+- **Principe Njangi** : un principe clé du modèle, en quelques lignes.
+- **Pour l'analyste** : comment mesurer ou observer ce principe.
+- **Avec les jeunes** : l'adaptation pour les enfants et les adolescents.
+- **En Afrique** : le contexte du continent (terrains, chaleur, moyens, diaspora).
+- **Attention** : une erreur fréquente ou une règle de sécurité.
 
 Une règle traverse tous les encadrés « Avec les jeunes » : de l'eau et de l'ombre, une charge adaptée à l'âge, jamais d'humiliation, une protection active de l'enfance, et l'école d'abord.
 
@@ -84,7 +80,7 @@ Une règle traverse tous les encadrés « Avec les jeunes » : de l'eau et de l'
 
 ### Les exercices
 
-Les fiches du livre et la bibliothèque **Exercices** de l'application sont écrites une seule fois, dans les mêmes fichiers, en français et en anglais. Quand une fiche change, les deux changent. Sur la page d'un exercice, le bouton **Ajouter à une séance** le place dans votre séance, et **Lire dans le livre** ouvre la même fiche dans le lecteur. L'encadré « Avec Kaydoudou et BriBri » propose **Lire le roman**. En sens inverse, la page d'accueil du livre se termine par le lien « Les 64 exercices dans l'application ».
+Les fiches du livre et la bibliothèque **Exercices** de l'application sont écrites une seule fois, dans les mêmes fichiers, en français et en anglais. Une fiche corrigée l'est donc partout. Sur la page d'un exercice, le bouton **Ajouter à une séance** le place dans votre séance, et **Lire dans le livre** ouvre la même fiche dans le lecteur. Quand la fiche a une histoire, l'encadré « Avec Kaydoudou et BriBri » propose **Lire le roman**. En sens inverse, la page d'accueil du livre se termine par le lien « Les 64 exercices dans l'application ».
 
 ![La fiche C01, Le Y du Njangi, dans l'application : le schéma de départ, l'effectif, l'âge U10+, l'espace de 30 x 20 m, la durée, l'intensité moyenne, les jours MD-2, MD-1 et Jeunes, et les boutons Ajouter à une séance et Lire dans le livre.](shot:pro-drill-detail "Une fiche du livre devenue page de l'application (démo club pro).")
 
@@ -102,7 +98,7 @@ La page **Semaine** nomme chaque jour comme le chapitre 27 : MD+1 Récupération
 
 ### Et ailleurs
 
-Le parcours du joueur reprend la grille du chapitre 25 : les dix compétences du joueur Njangi, notées de 1 à 4 (chapitre 10 de ce guide). Le questionnaire du matin de l'espace joueur renvoie au chapitre 29 sur la charge et la récupération.
+Le parcours du joueur reprend la grille du chapitre 25 : les dix compétences du joueur Njangi, notées de 1 à 4 (chapitre 10 de ce guide). Dans la version performance de l'espace joueur, l'auto-évaluation suit la même grille, et le questionnaire du matin renvoie au chapitre 29 sur la charge et la récupération.
 
 > [!INVESTISSEUR] Le livre est la source, l'application l'outil
 > Le savoir de Ndamba est écrit, publié et vérifiable par n'importe quel entraîneur : la formule de l'Indice est imprimée dans le livre et l'application la calcule à l'identique. Les deux livres et les 64 exercices ne sont jamais réservés aux abonnés. Cette éducation gratuite est la porte d'entrée : on paie pour l'outil qui aide à appliquer la méthode chaque semaine, pas pour apprendre la méthode.
