@@ -109,7 +109,7 @@ export default function AppLayout() {
             <span aria-hidden="true" className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white/10 text-[12px] font-semibold text-cream">{initials}</span>
             <span className="min-w-0">
               <span className="block truncate text-[13.5px] font-semibold text-cream">{profile.name}</span>
-              <span className="block truncate text-[12px] text-cream/55">{t('app.planLine', { plan: t(`plans.${profile.plan}`) })}</span>
+              <span className="block truncate text-[12px] text-cream/55 first-letter:uppercase">{t(`mola:ob.roleShort.${profile.role}`)}</span>
             </span>
           </Link>
           <LangSwitch dark />

@@ -48,7 +48,7 @@ export function NjangiGauge({ total, size = 240, dark = false, showLabel = true 
   const band = njangiBand(v)
   const fill = band >= 3 ? '#0B5D3B' : band === 2 ? '#13804F' : band === 1 ? '#E8798A' : '#D7263D'
   return (
-    <figure className="flex flex-col items-center" aria-label={`Indice Njangi ${fmtNjangi(v, lang)} / 100, ${njangiLabel(v, lang)}`}>
+    <figure className="flex flex-col items-center" aria-label={`${lang === 'fr' ? 'Indice Njangi' : 'Njangi Index'} ${fmtNjangi(v, lang)} / 100, ${njangiLabel(v, lang)}`}>
       <svg viewBox="0 0 200 178" width={size} height={size * 0.89} role="img" aria-hidden="true">
         <path d={arc(c, c, r, start, start + GAUGE_SWEEP)} fill="none" stroke={dark ? 'rgba(255,255,255,.12)' : '#ECEFE8'} strokeWidth="16" strokeLinecap="round" />
         {v > 0 && <path d={arc(c, c, r, start, Math.max(start + 0.5, end))} fill="none" stroke={dark ? '#F5B700' : fill} strokeWidth="16" strokeLinecap="round" style={{ transition: 'all .5s ease' }} />}
@@ -362,7 +362,7 @@ export function MiniDial({ value, size = 48 }: { value: number; size?: number })
   const r = 20, c = 2 * Math.PI * r
   const pct = Math.max(0, Math.min(100, value)) / 100
   return (
-    <span className="relative inline-flex shrink-0 items-center justify-center" style={{ width: size, height: size }} role="img" aria-label={`Indice Njangi ${fmtNjangi(value, lang)} / 100, ${njangiLabel(value, lang)}`}>
+    <span className="relative inline-flex shrink-0 items-center justify-center" style={{ width: size, height: size }} role="img" aria-label={`${lang === 'fr' ? 'Indice Njangi' : 'Njangi Index'} ${fmtNjangi(value, lang)} / 100, ${njangiLabel(value, lang)}`}>
       <svg viewBox="0 0 48 48" width={size} height={size} className="-rotate-90" aria-hidden="true">
         <circle cx="24" cy="24" r={r} fill="none" stroke="#ECEFE8" strokeWidth="5" />
         <circle cx="24" cy="24" r={r} fill="none" stroke={dialColor(value)} strokeWidth="5" strokeLinecap="round" strokeDasharray={`${c * pct} ${c}`} />

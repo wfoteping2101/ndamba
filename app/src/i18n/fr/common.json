@@ -56,8 +56,7 @@
     "mainNav": "Navigation principale",
     "teamLine": "{{age}}, {{format}} contre {{format}}, {{formation}}",
     "switchTeam": "Changer d'équipe",
-    "football": "Jeu de foot",
-    "planLine": "Formule {{plan}}"
+    "football": "Jeu de foot"
   },
   "actions": {
     "save": "Enregistrer",

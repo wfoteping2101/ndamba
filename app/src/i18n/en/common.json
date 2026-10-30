@@ -56,8 +56,7 @@
     "mainNav": "Main navigation",
     "teamLine": "{{age}}, {{format}} v {{format}}, {{formation}}",
     "switchTeam": "Switch team",
-    "football": "Football game",
-    "planLine": "{{plan}} plan"
+    "football": "Football game"
   },
   "actions": {
     "save": "Save",

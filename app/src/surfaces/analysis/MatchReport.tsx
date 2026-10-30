@@ -128,7 +128,7 @@ function Report({ match }: { match: Match }) {
       <section className="card mb-6 overflow-hidden" aria-labelledby="indice-h">
         <div className="grid gap-0 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
           <div className="flex flex-col items-center justify-center border-b border-line px-5 py-6 lg:border-b-0 lg:border-r">
-            <h2 id="indice-h" className="mb-1 text-[15px] font-semibold text-ink" style={{ fontStretch: '100%' }}>Indice Njangi</h2>
+            <h2 id="indice-h" className="mb-1 text-[15px] font-semibold text-ink" style={{ fontStretch: '100%' }}>{t('hub.eyebrow')}</h2>
             <NjangiGauge total={result.total} size={236} />
             <BandScale total={result.total} />
             {prev && <DeltaChip cur={result.total} prev={prev.result.total} lang={lang} label={t('report.vsPrev', { opp: prev.match.opponent })} />}

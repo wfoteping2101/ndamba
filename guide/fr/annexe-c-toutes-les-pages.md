@@ -13,6 +13,7 @@ Cette annexe est la carte complète. Les adresses commencent après le nom du si
 | / | Accueil du site | Présenter Ndamba, ouvrir les démonstrations, commencer avec Mola | 1, 4 |
 | /livres | Les livres | Lire *Le Code Njangi* et *Lionceaux*, tome 1 | 19, 20 |
 | /premium | Les formules | Comparer les cinq formules et leurs prix | 24 |
+| /revue | Revue du projet | Les quatre projets (le roman, le livre de la méthode, l'application et l'agent) présentés un par un, avec une demande de modification par section | 4 |
 | /marque | La marque | Le logo, le signe de Mola, les couleurs et les règles | 4 |
 | /bienvenue | Bienvenue | La conversation avec Mola qui crée votre espace, et les deux démonstrations | 5 |
 | /book/methode/ | Le Code Njangi | Le livre de méthode, chapitre par chapitre | 19 |

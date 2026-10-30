@@ -450,7 +450,7 @@ const createSessionExec: Exec = async (ctx, slots, request) => {
   await step(task, t('session.s.saved'))
   const summary = [t('session.done', { title: s.title, count: s.blocks.length, minutes: total })]
   if (slots.intention) summary.push(t('session.oriented', { intention: tc(`intentions.${slots.intention}`) }))
-  if (mdPassed) summary.push(t('session.mdPassed', { md: mdLabel }))
+  if (mdPassed) summary.push(t('session.mdPassed', { md }))
   await finish(task, {
     summary: summary.join(' '), resultRoute: `/app/seances/${s.id}`,
     payload: {

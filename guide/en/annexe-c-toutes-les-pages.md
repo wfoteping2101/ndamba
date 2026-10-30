@@ -13,6 +13,7 @@ This appendix is the complete map. Addresses start after the site's name (for ex
 | / | Site home | Present Ndamba, open the demos, start with Mola | 1, 4 |
 | /livres | The books | Read *Le Code Njangi* and *Lionceaux*, book 1 | 19, 20 |
 | /premium | The plans | Compare the five plans and their prices | 24 |
+| /revue | Project review | The four projects (the novel, the method book, the app and the agent) presented one by one, with a change request per section | 4 |
 | /marque | The brand | The logo, Mola's sign, the colours and the rules | 4 |
 | /bienvenue | Welcome | The conversation with Mola that sets up your space, and the two demos | 5 |
 | /book/methode/ | Le Code Njangi | The method book, chapter by chapter | 19 |
