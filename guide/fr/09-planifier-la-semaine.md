@@ -23,7 +23,7 @@ Sous la date de chaque jour, une pastille donne son nom par rapport au match. **
 | Jour | Son nom dans Ndamba | Ce qu'on y fait |
 |---|---|---|
 | MD+1 | Récupération | Récupération active pour ceux qui ont joué, rondos légers, étirements |
-| MD+2 | Jour de repos | Repos complet, la case affiche **Repos conseillé** |
+| MD+2 | Jour de repos | Repos complet : une case vide affiche **Repos conseillé** |
 | MD-4 | Tension | Petits espaces, beaucoup d'accélérations et de duels : la séance la plus dense |
 | MD-3 | Durée | Grands espaces, jeu proche du match, plus longtemps |
 | MD-2 | Vitesse | Exercices courts et rapides, beaucoup de récupération entre les répétitions |
@@ -71,26 +71,28 @@ Remplir quatre jours à la main prend du temps. Ndamba peut le faire en un geste
 | L'accueil, carte de l'Indice Njangi | **Préparer la semaine sur « Progresser »** (par exemple) | L'intention qui répond au point faible du dernier match (chapitre 13) |
 | La conversation avec Mola | « Prépare ma semaine avant le match » | Celle que vous nommez, sinon celle du dernier rapport si le match a été codé |
 
-Les trois chemins font la même chose. Ndamba prend le prochain match de l'équipe, compte quatre jours en arrière, de MD-4 à MD-1, et compose une séance pour chaque jour encore à venir qui n'en a pas. Il ne touche jamais une séance qui existe déjà et ne remplit pas les jours passés. Chaque séance est composée comme au chapitre 8 : Tension, Durée, Vitesse, Activation, avec des fiches adaptées à l'âge de l'équipe.
+Tous ces chemins font la même chose. Ndamba prend le prochain match de l'équipe, compte quatre jours en arrière, de MD-4 à MD-1, et compose une séance pour chaque jour encore à venir qui n'en a pas. Il ne touche jamais une séance qui existe déjà et ne remplit pas les jours passés. Chaque séance est composée comme au chapitre 8 : Tension, Durée, Vitesse, Activation, avec des fiches adaptées à l'âge de l'équipe.
 
 ![L'accueil de l'entraîneur dans la démo club pro : la séance du jour et, à droite, la carte Prochain match contre les Rapides de Kribi, samedi 31 octobre, avec le bouton jaune Préparer la semaine.](shot:pro-home "Sur l'accueil, la carte du prochain match et son bouton Préparer la semaine.")
 
 Sur la page **La semaine**, pas à pas :
 
-1. Placez-vous sur la semaine du match. Si des séances manquent, une phrase le dit sous la navigation : « Prochain match : Espoir de Mbalmayo, mercredi 4 novembre. Il manque 4 séances de MD-4 à MD-1. »
+1. Placez-vous sur la semaine du match. Si des séances manquent, une phrase le dit sous la navigation. Dans la démo, la semaine suivante affiche : « Prochain match : Espoir de Mbalmayo, mercredi 4 novembre. Il manque 4 séances de MD-4 à MD-1. »
 2. Touchez **Planifier la semaine**, le bouton jaune avec la marque de Mola.
 3. La fenêtre **La semaine est prête** liste les séances créées : leur jour MD, leur date, leur titre, leurs blocs et leurs minutes. Touchez-en une pour l'ouvrir et l'ajuster, ou touchez **Terminé**.
 4. Le bouton devient **Semaine planifiée**. S'il n'y a aucun match à venir, il est remplacé par **Ajouter un match**.
 
+Sur le plan gratuit, une fois les cinq séances utilisées, **Planifier la semaine** et les boutons des jours sont grisés, et la page propose **Découvrir Coach Pro**.
+
 Sur l'accueil, **Préparer la semaine** fait le même travail sans quitter la page : un message annonce le nombre de séances préparées, avec le lien **Voir la semaine**. Si tout est déjà prêt, le message le dit : chaque jour avant le match a sa séance.
 
-Dans la conversation, Mola montre son travail étape par étape : le prochain match, l'intention de la semaine (ou « Pas encore de rapport : je garde une semaine équilibrée »), « Je construis MD-4 Tension, MD-3 Durée, MD-2 Vitesse, MD-1 Activation », puis l'enregistrement. Il conclut par exemple « C'est prêt : 4 séances, du mar. 27 oct. au ven. 30 oct. », propose **Voir la semaine**, puis les suites naturelles : envoyer la convocation, exporter la semaine dans le calendrier. Ces deux suites, qui sortent de l'application, attendent toujours votre accord (chapitre 18). Planifier la semaine, en revanche, ne fait que créer des séances chez vous : rien ne part, rien ne s'envoie.
+Dans la conversation, Mola montre son travail étape par étape : le prochain match, l'intention de la semaine (ou « Pas encore de rapport : je garde une semaine équilibrée »), « Je construis MD-4 Tension, MD-3 Durée, MD-2 Vitesse, MD-1 Activation », puis l'enregistrement. Il conclut par « C'est prêt », le nombre de séances et leurs dates, propose **Voir la semaine**, puis les suites naturelles : envoyer la convocation, exporter la semaine dans le calendrier. Ces deux suites, qui sortent de l'application, attendent toujours votre accord (chapitre 18). Planifier la semaine, en revanche, ne fait que créer des séances chez vous : rien ne part, rien ne s'envoie.
 
 > [!MOLA] La phrase à taper
-> « Prépare ma semaine avant le match ». Pour orienter toute la semaine, ajoutez l'intention : « Prépare la semaine sur l'intention « Reprendre » ».
+> Tapez « Prépare ma semaine avant le match ». Pour orienter toute la semaine, nommez l'intention : « Prépare la semaine sur l'intention Reprendre ».
 
 > [!ATTENTION] Les semaines à deux matchs
-> Ndamba remplit toujours les quatre jours qui précèdent le prochain match, sans vérifier si un autre match tombe pendant ces quatre jours. Dans une semaine à deux matchs, il peut donc placer une séance Tension le jour d'un match, ou une séance Durée le lendemain. Après avoir planifié, regardez la semaine et corrigez ces jours : entre deux matchs, le livre (chapitre 28) ne garde que la récupération et l'activation.
+> Ndamba remplit toujours les quatre jours qui précèdent le prochain match, sans vérifier si un autre match tombe pendant ces quatre jours. Dans une semaine à deux matchs, il peut donc placer une séance Tension le jour d'un match, ou une séance Durée le lendemain. C'est le cas dans la démo : pour le match du mercredi 4 novembre, MD-4 tombe le samedi 31 octobre, jour du match contre les Rapides de Kribi. Après avoir planifié, regardez la semaine et corrigez ces jours : entre deux matchs, le livre (chapitre 28) ne garde que la récupération et l'activation.
 
 ## Les jeunes, et la semaine sur téléphone
 

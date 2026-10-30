@@ -16,28 +16,24 @@ Quatre boutons servent au quotidien : **Ajouter un joueur**, **Importer une list
 
 ![La page Équipe de la démo club pro : la plaque verte avec 22 joueurs, 3 gardiens et un niveau moyen de 3,2 sur 4, les boutons Ajouter un joueur, Importer une liste, Modifier et Observer, un petit terrain en 4-3-3, puis les lignes Gardiens et Défense.](shot:pro-roster "L'effectif, rangé par lignes, avec la composition proposée à droite.")
 
-Sous la plaque, les joueurs sont rangés en quatre lignes, chacune avec son effectif : **Gardiens**, **Défense** (défenseurs centraux et latéraux), **Milieu** (pivots, milieux intérieurs et offensifs) et **Attaque** (ailiers et attaquants). Dans chaque ligne, l'ordre suit les numéros. Une ligne montre le numéro (sur fond jaune pour un gardien), le nom, le poste, l'année de naissance, le pied fort et une barre de niveau sur 4, ou **Non évalué**. Touchez la ligne pour ouvrir la fiche ; la corbeille à droite sert à retirer le joueur. Le bouton **Voir les matchs**, en bas, mène au chapitre suivant.
-
-Si vous encadrez plusieurs équipes, un sélecteur apparaît en haut à droite de la plaque : il change l'équipe affichée partout dans l'application.
+Sous la plaque, les joueurs sont rangés en quatre lignes : **Gardiens**, **Défense** (centraux et latéraux), **Milieu** (pivots, milieux intérieurs et offensifs) et **Attaque** (ailiers et attaquants), dans l'ordre des numéros. Chaque ligne montre le numéro (sur fond jaune pour un gardien), le nom, le poste, l'année de naissance, le pied fort et une barre de niveau sur 4, ou **Non évalué**. Touchez la ligne pour ouvrir la fiche ; la corbeille retire le joueur. Si vous encadrez plusieurs équipes, un sélecteur en haut de la plaque change l'équipe affichée dans toute l'application.
 
 ## Créer et régler l'équipe
 
-Sans équipe, la page affiche **Créez votre équipe** et un bouton **Créer l'équipe**. La fenêtre **Nouvelle équipe** demande quatre choses : **Nom de l'équipe**, **Catégorie** (de U7 à U20, ou Seniors), **Format de jeu** (de 5 contre 5 à 11 contre 11) et **Système de départ**. Le bouton **Modifier** de la plaque rouvre la même fenêtre, sous le titre **Modifier l'équipe**. Le système choisi ici est celui que Ndamba propose pour chaque nouveau match ; la liste des systèmes par format est au chapitre 11.
+Sans équipe, la page propose **Créer l'équipe**. La fenêtre **Nouvelle équipe** demande le **Nom de l'équipe**, la **Catégorie** (de U7 à U20, ou Seniors), le **Format de jeu** (de 5 contre 5 à 11 contre 11) et le **Système de départ**, celui que Ndamba proposera pour chaque nouveau match (la liste est au chapitre 11). **Modifier** rouvre la même fenêtre, sous le titre **Modifier l'équipe**.
 
 ## Ajouter les joueurs
-
-Il y a deux chemins : un joueur à la fois, ou toute la liste d'un coup.
 
 Un joueur à la fois :
 
 1. Touchez **Ajouter un joueur**.
-2. Remplissez **Nom**, le seul champ obligatoire : prénom et nom, ou surnom. Un surnom écrit entre guillemets, comme « Petit Pied », devient le nom de maillot sur le terrain et dans **Observer** ; sinon Ndamba prend le dernier mot du nom.
+2. Remplissez **Nom**, le seul champ obligatoire. Un surnom écrit entre guillemets, comme « Petit Pied », devient le nom de maillot sur le terrain et dans **Observer** ; sinon Ndamba prend le dernier mot du nom.
 3. Indiquez le **Numéro**, de 0 à 99. S'il est déjà pris, la mention **Déjà porté** vous prévient, sans bloquer.
-4. Choisissez le **Poste** parmi les huit : Gardien, Défenseur central, Latéral, Pivot, Milieu intérieur, Milieu offensif, Ailier, Attaquant. Par défaut, c'est Milieu intérieur.
-5. Ajoutez l'**Année de naissance** et le **Pied fort** (**Pied droit**, **Pied gauche** ou **Deux pieds**). Ils sont facultatifs, mais l'année de naissance donne l'âge, et l'âge décide de ce que le parcours affiche.
-6. Touchez **Ajouter**, ou **Ajouter et continuer** pour garder la fenêtre ouverte et saisir le suivant. Le poste reste celui du joueur précédent, ce qui va vite quand on saisit une ligne entière.
+4. Choisissez le **Poste** : Gardien, Défenseur central, Latéral, Pivot, Milieu intérieur (par défaut), Milieu offensif, Ailier ou Attaquant.
+5. Ajoutez l'**Année de naissance** et le **Pied fort**, facultatifs. L'année de naissance donne l'âge, et l'âge décide de ce que le parcours affiche.
+6. Touchez **Ajouter**, ou **Ajouter et continuer** pour saisir le suivant sans fermer la fenêtre (le poste est conservé).
 
-Toute la liste d'un coup : touchez **Importer une liste** et collez un nom par ligne, la liste que vous envoyez déjà sur WhatsApp. Le numéro est facultatif, en début de ligne (« 8 BriBri », « 8. BriBri », « #8 BriBri ») ou en fin de ligne ; les tirets et les puces en début de ligne sont ignorés. Choisissez un **Poste pour tous**, vérifiez l'aperçu, puis touchez le bouton qui compte les joueurs, par exemple **Importer 15 joueurs**. Vous préciserez ensuite le poste de chacun depuis sa fiche, avec **Modifier**.
+Toute la liste d'un coup : touchez **Importer une liste** et collez un nom par ligne, la liste que vous envoyez déjà sur WhatsApp. Le numéro est facultatif, en début de ligne (« 8 BriBri », « #8 BriBri ») ou en fin de ligne. Choisissez un **Poste pour tous**, vérifiez l'aperçu, puis touchez le bouton qui compte les joueurs, par exemple **Importer 15 joueurs**. Vous ajusterez ensuite chaque poste depuis la fiche, avec **Modifier**.
 
 ![L'effectif de la démo académie U13 : 15 joueurs, 2 gardiens, un niveau moyen de 2,8, et sur le petit terrain des surnoms comme Petit Pied ou la Gazelle.](shot:youth-roster "Dans une académie, les surnoms entre guillemets deviennent le nom de maillot.")
 
