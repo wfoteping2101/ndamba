@@ -95,9 +95,9 @@ Sur un ordinateur, l'application se présente avec une colonne vert foncé à ga
 | Moi | **Premium** | Les formules et l'activation de démonstration | 6, 24 |
 | Moi | **Réglages** | Profil, équipes, formule, sauvegardes | 6 |
 
-D'autres pages s'ouvrent depuis celles-ci : la fiche d'un exercice, le constructeur de séance, la fiche et le parcours d'un joueur, la page **Observer** (depuis un parcours, une séance ou un match), la feuille de match, le rapport, le studio vidéo, les leçons et le carnet. L'analyse en direct prend tout l'écran, sans menu, pour que rien ne gêne au bord du terrain.
+D'autres pages s'ouvrent depuis celles-ci : la fiche d'un exercice, le constructeur de séance, la fiche et le parcours d'un joueur, la page **Observer** (depuis l'effectif, un parcours, une séance ou un match), la feuille de match, le rapport, le studio vidéo, les leçons et le carnet. L'analyse en direct prend tout l'écran, sans menu, pour que rien ne gêne au bord du terrain.
 
-En bas de la colonne, un bloc montre vos initiales, votre nom et votre formule (par exemple « Coach Pro ») ; il ouvre les **Réglages**. À côté, le choix de la langue.
+En bas de la colonne, un bloc montre vos initiales, votre nom et votre rôle (par exemple « Entraîneur ») ; il ouvre les **Réglages**, où se lit aussi votre formule. À côté, le choix de la langue.
 
 > [!ASTUCE] Sur un petit écran d'ordinateur
 > Si votre écran est peu haut, la colonne du menu défile : les derniers liens du groupe Moi (**Livres**, **Jeu de foot**, **Premium**, **Réglages**) peuvent être cachés en bas. Faites défiler la colonne, ou touchez le bloc avec votre nom, qui ouvre directement les **Réglages**.
@@ -106,7 +106,7 @@ En bas de la colonne, un bloc montre vos initiales, votre nom et votre formule (
 
 Sur un téléphone, la colonne disparaît. En haut, une barre fine montre le logo et le choix de la langue. En bas, une barre de cinq onglets reste toujours à portée du pouce : **Accueil**, **Entraîner**, **Matchs**, **Analyse** et **Plus**.
 
-![L'accueil de l'application sur téléphone, avec le bandeau de bienvenue, la séance du jour et la barre d'onglets en bas.](shot:m-pro-home "Sur téléphone, la barre du bas : Accueil, Entraîner, Matchs, Analyse et Plus.")
+![L'accueil de l'application sur téléphone : en haut le logo et le choix FR ou EN, le bandeau Bonsoir, Daniel avec 4 séances, 303 minutes et J-2, la séance du jour, et en bas la barre d'onglets Accueil, Entraîner, Matchs, Analyse et Plus.](shot:m-pro-home "Sur téléphone, la barre du bas : Accueil, Entraîner, Matchs, Analyse et Plus.")
 
 **Entraîner** ouvre la liste des séances. **Plus** fait monter un panneau qui rappelle l'équipe active, puis présente tous les groupes du menu en deux colonnes, comme sur ordinateur. Sur une page qui n'est pas l'un des quatre premiers onglets (les Réglages, par exemple), c'est **Plus** qui s'allume. Le panneau se ferme avec la croix, en touchant le fond sombre ou en choisissant une page.
 
@@ -118,7 +118,7 @@ Sur les pages de l'application, un bouton rond au visage de Mola flotte en bas �
 
 Ndamba est bilingue, français d'abord, anglais ensuite. Le choix **FR** ou **EN** apparaît partout : dans la barre du site, en bas de la colonne de l'application, dans la barre du haut sur téléphone, sur la page **Bienvenue** et sur la page du jeu.
 
-Le changement est immédiat. Votre choix est retenu par le navigateur et, si vous avez un profil, enregistré dans celui-ci ; il se modifie aussi dans les **Réglages**. Sans choix enregistré, Ndamba s'ouvre en français.
+Le changement est immédiat. Votre choix est retenu par le navigateur et, si vous avez un profil, enregistré dans celui-ci ; il se modifie aussi dans les **Réglages**. Sans choix enregistré, Ndamba s'ouvre en français ; seule la page du jeu suit alors la langue du navigateur.
 
 Deux précisions évitent les surprises. Ce que vous avez écrit vous-même (le titre d'une séance, une note) reste dans la langue où vous l'avez écrit, comme les contenus d'une démo, créés dans la langue active au moment du lancement. Et les deux livres sont écrits en français.
 
@@ -131,9 +131,9 @@ Il n'y a pas encore de comptes ni de synchronisation. Concrètement :
 - Un autre navigateur, un autre ordinateur ou un autre téléphone ouvre un espace vide.
 - Pour garder votre travail ou le passer sur un autre appareil, vous exportez une sauvegarde (un fichier) depuis **Réglages**, puis vous la restaurez ailleurs. Le chapitre 6 montre comment, pas à pas.
 - Si vous effacez les données de navigation de ce site, votre espace disparaît avec elles. Exportez une sauvegarde avant.
-- Le bouton **Tout effacer** des Réglages supprime le profil, les équipes et tout le reste de ce navigateur.
+- Le bouton **Tout effacer** des Réglages supprime le profil, les équipes et tout le reste de ce navigateur, y compris les leçons marquées « J'ai compris » et « Mon regard » de l'espace joueur. Le choix de la langue, lui, est gardé.
 
-Une seule chose peut quitter l'appareil, et seulement si le serveur de Ndamba est configuré pour cela : la phrase que vous écrivez à Mola (avec quelques repères comme le nom de l'équipe et le prochain adversaire) peut être envoyée à un modèle d'intelligence artificielle pour être mieux comprise. Sans cette configuration, le moteur de règles intégré répond seul. La conversation de la page **Bienvenue** est toujours comprise sur l'appareil. Et les messages que Mola prépare pour l'extérieur (WhatsApp, SMS, e-mail) attendent votre validation : c'est vous qui les envoyez.
+Une seule chose peut quitter l'appareil : la phrase que vous écrivez à Mola, avec quelques repères (le nom de l'équipe, sa catégorie, votre rôle, le prochain et le dernier adversaire), est proposée au serveur de Ndamba. Celui-ci ne la confie à un modèle d'intelligence artificielle, pour qu'elle soit mieux comprise, que s'il est configuré pour cela. Sinon, il décline, et le moteur de règles intégré répond seul. La conversation de la page **Bienvenue** est toujours comprise sur l'appareil. Et les messages que Mola prépare pour l'extérieur (WhatsApp, SMS, e-mail) attendent votre validation : c'est vous qui les envoyez.
 
 Les comptes et la synchronisation entre appareils sont prévus ; la feuille de route du chapitre 26 les place parmi les prochaines étapes.
 

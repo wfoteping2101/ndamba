@@ -149,7 +149,8 @@
     "past_one": "Un jour était déjà passé.",
     "past_other": "{{count}} jours étaient déjà passés.",
     "busy_one": "J'ai laissé un jour libre : un autre match ou sa récupération tombe ce jour-là.",
-    "busy_other": "J'ai laissé {{count}} jours libres : un autre match ou sa récupération tombe ces jours-là."
+    "busy_other": "J'ai laissé {{count}} jours libres : un autre match ou sa récupération tombe ces jours-là.",
+    "capped": "L'offre gratuite compte {{n}} séances en tout : je me suis arrêté là. Coach Pro les rend illimitées."
   },
   "session": {
     "ack": "Je crée une séance {{md}} pour {{day}}.",

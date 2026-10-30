@@ -40,7 +40,7 @@ The app arranges its screens in four menu groups, **Training**, **Team**, **Anal
 
 **The player space.** For the youngest: daily challenges, the 40 Ball Lessons, the Njangi notebook and the journey. From 16: a performance space with the week, form, load and the last match.
 
-![The coach's home screen in the pro club demo: today's session, the next match against Rapides de Kribi and the Prepare the week button.](shot:pro-home "The coach's home: today, the next match and the week, on a single screen.")
+![The coach's home screen in the pro club demo: the Good evening, Daniel band with 4 sessions, 303 minutes and the match at D-2, today's session Speed: transitions and finishing, the next match against Rapides de Kribi on Saturday, October 31 and the Prepare the week button.](shot:pro-home "The coach's home: today, the next match and the week, on a single screen.")
 
 ## Mola, the agent that acts
 
@@ -70,21 +70,21 @@ Both books are free to read online, chapter by chapter, whatever your plan. That
 
 Ndamba knows six roles, which you pick while talking to Mola: **Coach or educator**, **Player**, **Analyst**, **Parent**, **Manager or technical director** and **Federation or league**. Chapter 3 shows what each one sees and the path that suits it.
 
-The promise is the same for all of them: the same words and the same drills from U8 to the first team, for the neighbourhood coach as much as the staff of a top-flight club. Two demos show it. The **Pro club demo** opens Étoile de la Côte, a professional club in Douala: 22 players, head coach Daniel Mbarga, a 2-1 win tagged live, and the week before a trip to Kribi. The **U13 academy demo** opens the Lionceaux de Bonamoussadi U13, the team of Kaydoudou and BriBri in the novel: 15 players, four sessions this week, one analysed match and a match coming up on Saturday. These clubs and players are demo characters.
+The promise is the same for all of them: the same words and the same drills from U8 to the first team, for the neighbourhood coach as much as the staff of a top-flight club. Two demos show it. The **Pro club demo** opens Étoile de la Côte, a professional club in Douala: 22 players, head coach Daniel Mbarga, a 2-1 win tagged live, and the week before a trip to Kribi. The **U13 academy demo** opens the Lionceaux de Bonamoussadi U13, the team of Kaydoudou and BriBri in the novel: 15 players, four sessions this week, four matches already analysed and a match coming up on Saturday. These clubs and players are demo characters.
 
-![BriBri's home screen, a young player in the U13 demo: his experience points, his streak, today's challenge and his progress.](shot:youth-player-home-linked "A 12-year-old's home: one challenge a day, lessons, and his journey in the team.")
+![BriBri's home screen, a young player in the U13 demo: the XP, Streak and Today band (still at 0), the My journey card with 15 sessions, 4 matches and 2 objectives in progress, today's challenge Quick feet and the My progress card.](shot:youth-player-home-linked "A 12-year-old's home: one challenge a day, lessons, and his journey in the team.")
 
 ## The loop: plan, train, play, analyse, learn
 
 All of Ndamba fits into a loop the team goes round every week. Here is how it runs in the app.
 
-1. **Plan.** You add the next match with **New match**. On the home screen, the **Next match** card shows the countdown; the **Prepare the week** button creates the sessions for whichever days from MD-4 to MD-1 are still ahead.
+1. **Plan.** You add the next match with **New match**. On the home screen, the **Next match** card shows the countdown; the **Prepare the week** button creates the missing sessions on whichever days from MD-4 to MD-1 are still ahead. It leaves free the day of another match and the day after it, kept for recovery.
 2. **Train.** Each session is made of drills from the book, with their minutes and their intention. The **Today** card shows the day's session; **Open the session** shows it in full.
 3. **Play.** The match sheet holds the line-up and the game plan. Mola drafts the call-up, you approve and send it. On match day, the **Live** button opens the tagging pad.
 4. **Analyse.** During the match, you tap one button per action: completed pass, line broken, box entry, loss, ball won back within five seconds. At the end, the report gives the Njangi Index, its five sub-indices and the weak spot of the day.
 5. **Learn.** The report suggests the drills that train that weak spot, and the home screen offers to plan the next week around the matching intention. Players learn through the lessons, the challenges, the notebook and their journey. Then the loop starts again.
 
-Take the pro club demo. Étoile de la Côte beat Météore de Bafoussam 2-1. The report shows a Njangi Index of 67.9 out of 100, read as "Solid Njangi". Four sub-indices are solid; Fixation, at 8.3 out of 20, is the weakest. The home screen draws the conclusion: next week will work on the intention "Pin" (the English name of the French *Fixer*, drawing opponents in), and the **Prepare the week around "Pin"** button does it in one tap.
+Take the pro club demo. Étoile de la Côte beat Météore de Bafoussam 2-1. The report shows a Njangi Index of 67.9 out of 100, read as "Solid Njangi". Four sub-indices are solid; Fixation, at 8.3 out of 20, is the weakest. The home screen draws the conclusion: next week will work on the intention "Pin" (the English name of the French *Fixer*, drawing opponents in), and the **Prepare the week around "Pin"** button does it in one tap. In the demo the week is already set: its Wednesday MD-3 session already works on the intention "Pin".
 
 ![The report for Étoile de la Côte against Météore de Bafoussam: 2-1, a Njangi Index of 67.9 and the five sub-indices out of 20.](shot:pro-report "The match report: the Njangi Index and its five sub-indices, with Fixation to work on.")
 

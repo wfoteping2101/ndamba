@@ -39,7 +39,7 @@ Personne n'est obligé de tout lire. Choisissez la ligne qui vous ressemble.
 ## Les conventions de ce guide
 
 - Les mots en **gras** sont les libellés exacts de l'interface : le bouton, l'onglet ou le titre que vous verrez à l'écran. Dans l'édition anglaise, ce sont les libellés anglais.
-- Les captures d'écran viennent des deux démonstrations intégrées à Ndamba : le club pro **Étoile de la Côte**, une équipe senior de Ligue 1 à Douala entraînée par Daniel Mbarga, et l'académie **Lionceaux de Bonamoussadi U13**, l'équipe de Kaydoudou et BriBri. Vous pouvez ouvrir les mêmes démonstrations et suivre le guide écran par écran (chapitre 5).
+- Les captures d'écran viennent des deux démonstrations intégrées à Ndamba : le club pro **Étoile de la Côte**, une équipe senior de Ligue 1 à Douala entraînée par Daniel Mbarga, et l'académie **Lionceaux de Bonamoussadi U13**, l'équipe de Kaydoudou et BriBri. Ces clubs, leurs joueurs et leurs matchs sont inventés pour la démonstration. Vous pouvez ouvrir les mêmes démonstrations et suivre le guide écran par écran (chapitre 5).
 - Les encadrés **Astuce** donnent un raccourci pratique, les encadrés **Attention** signalent un piège, les encadrés **Pour l'investisseur** résument ce qu'une fonction change pour le projet, et les encadrés **Demandez à Mola** donnent la phrase exacte à taper pour que l'agent le fasse à votre place.
 - Le guide décrit Ndamba tel qu'il est aujourd'hui. Quand une fonction est prévue mais pas encore là, il le dit.
 

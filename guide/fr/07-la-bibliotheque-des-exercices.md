@@ -101,7 +101,7 @@ Une fiche n'a de valeur que si elle arrive sur le terrain. Le bouton **Ajouter �
 
 L'exercice entre dans la séance comme un nouveau bloc, à la fin, avec sa durée totale. Le chapitre 8 montre comment le déplacer, changer ses minutes ou lui ajouter une note.
 
-Vous pouvez aussi faire le chemin inverse : depuis une séance, le bouton **Ajouter un exercice** ouvre la même bibliothèque, déjà filtrée sur le jour de la séance. En bas de la bibliothèque, le lien **Composer une séance avec ces exercices** mène à la liste des séances. Et si vous préférez demander, Mola répond à des phrases comme « Quels exercices pour mieux reprendre le ballon ? » en proposant trois fiches adaptées à l'âge de votre équipe.
+Vous pouvez aussi faire le chemin inverse : depuis une séance, le bouton **Ajouter un exercice** ouvre la même bibliothèque, déjà filtrée sur le jour de la séance (sauf pour MD+1, qui n'a qu'une fiche : le panneau montre alors toutes les fiches). En bas de la bibliothèque, le lien **Composer une séance avec ces exercices** mène à la liste des séances. Et si vous préférez demander, Mola répond à des phrases comme « Quels exercices pour mieux reprendre le ballon ? » en proposant trois fiches adaptées à l'âge de votre équipe.
 
 > [!INVESTISSEUR] Pourquoi la bibliothèque est gratuite
 > Les 64 exercices et les livres restent ouverts sur tous les plans, y compris le plan gratuit : c'est une règle écrite dans le code de l'application. La bibliothèque est la porte d'entrée de la méthode et le vocabulaire commun dont une fédération a besoin, du premier club à la sélection. Les plans payants vendent le temps gagné (séances illimitées, semaine planifiée, analyse), pas l'accès au savoir.

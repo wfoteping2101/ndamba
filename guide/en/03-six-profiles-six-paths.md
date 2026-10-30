@@ -25,7 +25,7 @@ For everyone, the conversation ends with the city, the country and your goals (f
 
 To put it simply: today there are six roles but three home screens. The four staff roles (coach, analyst, manager, federation) share the same home. Your role changes the welcome questions, the goals on offer and, for players, the screen according to age. The menu is the same for everyone: anybody can open any page.
 
-Only the **Coach or educator** role creates a team during the conversation. The other roles create one afterwards, from the home screen or from **Settings**. You can change your role at any time: **Settings**, then **Profile**, the **Role** field, and **Save profile**.
+Only the **Coach or educator** role creates a team during the conversation. The other roles create one afterwards, from the home screen or from **Settings**. You can change your role at any time: **Settings**, then **Profile**, the **Role** field, and **Save profile**. On a computer, your role is shown under your name at the bottom of the menu column ("Coach", "Player", "Parent", "Club manager"...); your plan is shown in **Settings**.
 
 ## The staff home
 
@@ -33,7 +33,7 @@ Coaches, analysts, managers and federations see the same dashboard, built around
 
 At the top, a banner greets you and shows three figures for the active team: this week's **Sessions**, training **Minutes**, and **Match** (the countdown, for example D-2). Below it, the **Today** card shows the day's session, drill by drill, with **Open the session**; if nothing is planned, it offers to prepare the session that suits the day. Next to it, the **Next match** card gives the opponent, date and venue, and three buttons: **Prepare the week**, **Line-up** and **Live**.
 
-Further down come **This week** (the seven days, with sessions and the match, and the **Plan** link), the card **Indice Njangi, last match** (the score, its reading, the five sub-indices and the one marked **to work on**, with **See the report**), the Mola card, which suggests the next thing to do, and finally **Quick actions**: **New session**, **Plan the week**, **New match**, **Live analysis**, **Drills** and **Read the novel**.
+Further down come **This week** (the seven days, with sessions and the match, and the **Plan** link), the card **Njangi Index, last match** (the score, its reading, the five sub-indices and the one marked **to work on**, with **See the report**), the Mola card, which suggests the next thing to do, and finally **Quick actions**: **New session**, **Plan the week**, **New match**, **Live analysis**, **Drills** and **Read the novel**.
 
 ![The staff home in the pro club demo, with the Sessions, Minutes and Match banner, the Today card and the Next match card.](shot:pro-home "The staff home, the same for the coach, the analyst, the manager and the federation.")
 
@@ -41,7 +41,7 @@ Further down come **This week** (the seven days, with sessions and the match, an
 
 1. Tap **Get started with Mola**, choose **Coach or educator** and give your team's name, age group and players: Mola creates the team.
 2. Add the next match with **New match**.
-3. On the home screen, tap **Prepare the week**: sessions are created for whichever days from MD-4 to MD-1 are still ahead.
+3. On the home screen, tap **Prepare the week**: Ndamba creates the missing sessions on whichever days from MD-4 to MD-1 are still ahead, leaving free the day of another match and the day after it.
 4. Every day, open the **Today** card, then **Open the session**.
 5. On match day, tap **Live** and tag the actions.
 6. After the match, open **See the report**, then plan the next week around the intention the home screen suggests.
@@ -77,7 +77,7 @@ Then come the **My journey** card (sessions, matches, the coach's observations a
 
 ![BriBri's home screen, aged 12, in the U13 demo: XP, Streak and Today, the My journey card, Today's challenge and My progress.](shot:youth-player-home-linked "The young player's home: one challenge a day, one lesson a day, and his journey.")
 
-For a parent, the home adds a **For parents** box at the top: fifteen minutes, a wall and a ball are enough; stay close, help count, remind them to drink water. When the child's team is on the device, a parent who taps **My journey** can pick the child's profile from the squad (the screen asks "Who are you in the team?", because it was written first for the player).
+For a parent, the home adds a **For parents** box at the top: fifteen minutes, a wall and a ball are enough; stay close, help count, remind them to drink water. When the child's team is on the device, a parent who taps **My journey** sees the screen "Which record is your child's?" and picks the child's record from the squad.
 
 ![Estelle's home screen, a parent in the U13 demo, with the For parents box at the top of the page.](shot:youth-parent-home-named "The parent's home: the same space as the child, with tips for supporting them.")
 
@@ -97,15 +97,15 @@ For a parent, the home adds a **For parents** box at the top: fifteen minutes, a
 
 ## The home of players aged 16 and over
 
-From 16 (the U17 age group), a player trains on the match week like a professional. The home changes tone: the dark banner shows today's **Form** (**To log** until the player has answered), the **7-day load** in arbitrary units (AU) and the coming **Match** with the Index of the last match. Under the player's name, a line recalls position, shirt number and team.
+From 16 (the U17 age group), a player trains on the match week like a professional. The home changes tone: the dark banner shows today's **Form** (**To log** until the player has answered), the **7-day load** in arbitrary units (AU) and the coming **Match** with the Index of the last match. In the banner, a line also recalls position, shirt number and team.
 
 The screen then shows **My week** (every day from MD+1 to the eve of the match, with **Usual intensity** and **Effort logged**, then today's session), the **Next match** with **My place** in the planned line-up and **The game plan**, **My form today**, **My load**, **My last match** (the team's Njangi Index and **My share of the play**), **My objectives**, **My season** and the **Go further** links. If the profile is not yet linked to a squad record, a banner offers **Link my profile**.
 
-![The home screen of Steve Ndjock, a senior midfielder in the pro club demo: Form, 7-day load and Match, then My week and the Next match.](shot:pro-player-home-linked "The performance home: the week, form, load and his place in the next match.")
+![The home screen of Steve Ndjock, a senior midfielder in the pro club demo: the dark banner with Form to log, a 7-day load of 0 AU and the Match at D-2 (Index 67.9), then My week towards the match against Rapides de Kribi and the Next match with My place.](shot:pro-player-home-linked "The performance home: the week, form, load and his place in the next match.")
 
 ### The path for players aged 16 and over
 
-1. Choose **Player** and give your age group (U17 to U21, Seniors or Pro) and your position.
+1. Choose **Player** and give your age group (from **U17** to **U21**, **Seniors** or **Pro seniors**) and your position.
 2. Link your profile to your squad record with **Link my profile**.
 3. Every morning, fill in **My form today**; after each session, rate your effort from 0 to 10.
 4. Before the match, check **My place** and **The game plan**; afterwards, open **My last match**.
@@ -138,7 +138,7 @@ The books and the 64 drills are free for everyone, with no time limit. Premium p
 ![The Premium page, with the five plans Free, Player Premium, Coach Pro, Club and academy and Federation, and the notice about payments.](shot:site-pricing "The five plans: payments are not connected yet, and the page says so.")
 
 > [!WARNING] What the plans really do today
-> Payments are not connected: **Activate (demo)** switches on a plan without any payment. A new profile starts on the Free plan, and only two limits apply to it today: five sessions and one match analysed live. Staff accounts are planned. The club or national game model, coach education and dedicated support are built with each club or federation; they are not separate screens in the app.
+> Payments are not connected: **Activate (demo)** switches on a plan without any payment. A new profile starts on the Free plan. Only two limits exist today, five sessions and one match analysed live, and they apply to **Free** and to **Player Premium** alike, since Player Premium does not include the coaching tools. On the cards, staff accounts and the club game model are marked "(coming soon)". The national game model, coach education and dedicated support are built with each federation; they are not separate screens in the app.
 
 > [!INVESTOR] One product, six doors
 > The six roles are not six products: they are one database, one vocabulary and one Index, seen from six angles. The child doing a challenge, the parent, the coach and the technical director all work on the same team. That continuity, from player to federation, is what the business model in chapter 24 aims to charge for, to those who get the most value from it.

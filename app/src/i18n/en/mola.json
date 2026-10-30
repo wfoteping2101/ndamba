@@ -149,7 +149,8 @@
     "past_one": "One day had already gone by.",
     "past_other": "{{count}} days had already gone by.",
     "busy_one": "I left one day free: another match or the recovery day after it falls on that day.",
-    "busy_other": "I left {{count}} days free: another match or the recovery day after it falls on those days."
+    "busy_other": "I left {{count}} days free: another match or the recovery day after it falls on those days.",
+    "capped": "The free plan counts {{n}} sessions in all: I stopped there. Coach Pro makes them unlimited."
   },
   "session": {
     "ack": "I'm creating an {{md}} session for {{day}}.",

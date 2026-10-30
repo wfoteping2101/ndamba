@@ -87,7 +87,7 @@ The timeline shows the season in four lanes: **Milestones**, **Matches** (the do
 
 Further down, the page unfolds like this:
 
-- **Progress by competence**: ten small curves. Tap one to enlarge it, with the evidence from play below the curve (filled dots for strengths, circles for things to work on), **What we see today** and the next step on the grid, with the level to aim for.
+- **Progress by skill**: ten small curves. Tap one to enlarge it, with the evidence from play below the curve (filled dots for strengths, circles for things to work on), **What we see today** and the next step on the grid, with the level to aim for.
 - **The journey, step by step**: everything that happened, most recent first, month by month, with the filters **All**, **Milestones**, **Evaluations**, **Observations**, **Matches**, **Sessions** and **Objectives**. An observation or an evaluation can be deleted in one tap, with **Undo** to bring it back.
 - **Objectives for this cycle**: one to three objectives at a time, for six to eight weeks, linked to a skill or to a sub-index of the Njangi Index. Ndamba suggests the weakest skill and a sentence taken from the grid (**Use the suggestion**). At review time, **Where are we?** offers **In progress**, **Achieved**, **Partly** or **Not yet**, and a note, **What we take from it**.
 - **In matches** for players under 17 (the actions that make the team play, with no comparison), or **Season performance** from 17 (actions per 90 minutes, share of the team's actions, minutes per match).

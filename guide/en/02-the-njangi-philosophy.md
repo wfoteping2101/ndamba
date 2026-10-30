@@ -49,23 +49,23 @@ To answer "what is your pass preparing?", the method offers seven words. The fir
 | **Win it back** (*Reprendre*) | Five seconds of counter-press after losing the ball | The whole team presses the ball where it has just lost it |
 | **Look forward** (*Regarder devant*) | After winning the ball, look forward first | The player who wins it looks for the forward pass before anything else |
 
-![The sheet for drill C01, Le Y du Njangi, with its two intentions Progress and Pin, its diagram and its days MD-2, MD-1 and Youth.](shot:pro-drill-detail "Every drill shows the intentions it trains, here Progress and Pin.")
+![The sheet for drill C01, The Njangi Y, with its two intentions Progress and Pin, its diagram and its days MD-2, MD-1 and Youth.](shot:pro-drill-detail "Every drill shows the intentions it trains, here Progress and Pin.")
 
-For children, seven words are still too many. The novel gives them five simpler images, the five pieces of the Njangi, one for each country the brothers live in: the heart (playing together, in Cameroon), the reason (every pass has a purpose, in the United States), the eyes (look before you receive, in France), the map (be in the right place, in Spain) and the breath (keep the ball even when it burns, in England). Drill sheets also list their **Pieces of the Njangi**. Around the age of 15, the five pieces blend into the seven words the adults use.
+For children, seven words are still too many. The novel gives them five simpler images, the five pieces of the Njangi, one for each country the brothers live in: the heart (playing together, in Cameroon), the reason (every pass has a purpose, in the United States), the eyes (look before you receive, in France), the map (be in the right place, in Catalonia) and the breath (keep the ball even when it burns, in England). Drill sheets also list their **Pieces of the Njangi**. Around the age of 15, the five pieces blend into the seven words the adults use.
 
 ## Measuring it: the Njangi Index
 
-An idea you cannot measure stays a slogan. Possession percentage is not enough: it tells you how long the team held the pot, not what it did with it. The Njangi Index (shown as *Indice Njangi* on some screens) answers a different question: out of 100, did the team keep the ball with purpose?
+An idea you cannot measure stays a slogan. Possession percentage is not enough: it tells you how long the team held the pot, not what it did with it. The Njangi Index (in French, *Indice Njangi*, the name used in the book) answers a different question: out of 100, did the team keep the ball with purpose?
 
-It is built from fourteen codes, the buttons of the tagging pad. During the match, the analyst (or the coach, if there is no analyst) taps one button per action. The buttons are arranged in groups: **Possession** (completed pass, lost pass, progressive pass or carry, line broken), **Danger** (final third entry, box entry, shot, shot on target, goal), **Fixation** (a dribble that pins two opponents, a switch of play) and **Transitions** (loss, ball won back within five seconds, other regain).
+It is built from fourteen codes, the buttons of the tagging pad. During the match, the analyst (or the coach, if there is no analyst) taps one button per action. The buttons are arranged in groups: **Possession** (completed pass, lost pass, progressive pass or carry, line broken), **Danger** (final third entry, box entry, shot, shot on target, goal), **Fixation** (a dribble that pins two opponents, a switch of play) and **Transitions** (loss, ball won back within five seconds, other regain). A last group, **Opponent**, records the other side's shots and goals.
 
-![The live tagging pad, with its buttons Pass, Pass lost, Progressive, Line broken, Final third, Box, Pins two, Switch, Loss and Won back 5 s, and the live index on the right.](shot:pro-live-tagger "The tagging pad: one tap per action, and the index computed during the match.")
+![The live tagging pad before kick-off of the match against Rapides: the Possession, Danger, Fixation, Transitions and Opponent groups, with the buttons Pass, Pass lost, Progressive, Line broken, Final third, Box, Shot, On target, Goal, Pins two, Switch, Loss, Won back 5 s and Ball won, and on the right the Live Index, still at 0.0.](shot:pro-live-tagger "The tagging pad: one tap per action, and the Index computed during the match.")
 
 From these codes, the Index adds up five sub-indices, each scored out of 20 points. Each one answers a question.
 
 - **Progression**: are we moving forward? It counts progressive passes and lines broken, relative to passes attempted.
 - **Penetration**: are we getting where goals are scored? It counts entries into the final third and into the box (a box entry counts double), relative to the number of possessions.
-- **Fixation**: do we draw the opponent in to free a teammate? It counts actions that pin two opponents and switches of play, relative to possessions. (The home screen card calls it **Pinning**.)
+- **Fixation**: do we draw the opponent in to free a teammate? It counts actions that pin two opponents and switches of play, relative to possessions.
 - **Regain**: do we win the ball back straight after losing it? It counts balls won back within five seconds, relative to all losses.
 - **Control**: do we keep the ball without giving away dangerous losses? It measures the share of our possession actions that keep the ball.
 
@@ -88,7 +88,7 @@ Indice      = sum of the five, each rounded to 0.1
 
 Four rules complete the formula. If a denominator is zero (no passes, no losses), the sub-index is 0. A match, or a whole season, is computed by adding up the codes and then applying the formula, never by averaging halves or matches. The reference values (0.35, 1, 0.25, 0.40, and 55% to 85%) are internal benchmarks of the method, not averages from world football: you calibrate them on your own matches and never change them mid-season. Finally, with young players, the Index measures the team, never a child.
 
-The book gives a full example. Over one match, a senior team recorded 300 completed passes, 80 lost passes, 50 progressive actions, 30 lines broken, 42 final third entries, 15 box entries, 12 pinning actions, 9 switches, 30 losses in duels or carries, 33 balls won back within five seconds and 10 shots. That gives 12.0 for Progression, 12.0 for Penetration, 14.0 for Fixation, 15.0 for Regain and 12.1 for Control: an Index of 65.1.
+The book gives a full example. Over one match, a senior team recorded 300 completed passes, 80 lost passes, 50 progressive actions, 30 lines broken, 42 final third entries, 15 box entries, 12 fixation actions, 9 switches, 30 losses in duels or carries, 33 balls won back within five seconds and 10 shots. That gives 12.0 for Progression, 12.0 for Penetration, 14.0 for Fixation, 15.0 for Regain and 12.1 for Control: an Index of 65.1.
 
 ## Reading the Index: the bands
 
@@ -129,7 +129,7 @@ The principle is to train the game model every day, changing the space, the numb
 
 With young players the app also uses the label **Youth**: they learn by playing, with lots of touches, small games and fun. The **Week** page shows these codes on every day and computes the load, that is the minutes multiplied by the intensity of each drill (low 1, medium 2, high 3, very high 4).
 
-![The Week page in the pro club demo, with the days MD-4 to MD-1, Saturday's match against Rapides de Kribi and this week's load.](shot:pro-week "The week named against the match, with the load rising and then coming down.")
+![The Week page in the pro club demo: the days MD-4 to MD-1 from Tuesday to Friday, each with its session, Saturday's match against Rapides de Kribi, and this week's load, 303 minutes for a load of 817.](shot:pro-week "The week named against the match, with the load rising and then coming down.")
 
 > [!MOLA] From the idea to the session
 > Write to Mola: "Which drills to win the ball back faster?". It searches the 64 drills for those that train the intention Win it back and suit your team's age group, suggests three, then offers to create a session around that intention.

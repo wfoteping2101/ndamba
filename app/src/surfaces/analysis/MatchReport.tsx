@@ -348,8 +348,9 @@ function WeekPlan({ summary, team }: { summary: NjangiSummary; team?: Team }) {
     setBusy(true)
     try {
       const me = await db.profile.get('me')
-      if (coachLimited(me?.plan) && (await db.sessions.count()) >= GATES.sessionsFree) { navigate('/app/premium'); return }
-      const created = await planWeek({ matchDate: next.date, teamId: team.id, ageGroup: team.ageGroup, lang, intention: summary.intention, createdBy: 'mola' })
+      const max = coachLimited(me?.plan) ? GATES.sessionsFree - (await db.sessions.count()) : undefined
+      if (max !== undefined && max <= 0) { navigate('/app/premium'); return }
+      const created = await planWeek({ matchDate: next.date, teamId: team.id, ageGroup: team.ageGroup, lang, intention: summary.intention, createdBy: 'mola', max })
       setDone({ n: created.length, week: weekStart(next.date) })
     } finally { setBusy(false) }
   }

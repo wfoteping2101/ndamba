@@ -37,10 +37,10 @@ Today Ndamba has no accounts and no sync yet: all data lives in the browser of t
 **The squad record for the journey.** The journey (evaluations, observations, attendance, minutes played) comes from the team and its squad. When the child's team is on the device, the parent links their profile to their child's record:
 
 1. Tap the **My journey** card, on the home page or in the player space.
-2. The **Who are you in the team?** screen shows the squad.
+2. The **Which record is your child's?** screen shows the squad: "Pick your child's record in the Lionceaux de Bonamoussadi U13 squad to follow their journey."
 3. Tap your child's name. Their journey opens, and the **My journey** card on the home page now shows their season: "This season: 15 sessions, 4 matches, 2 objectives in progress."
 
-![The Who are you in the team? screen for Lionceaux de Bonamoussadi U13: the fifteen records in the squad, each with the player's number and name, including Kaydoudou (7) and BriBri (8).](shot:youth-journey "Picking your child's record in the squad.")
+![The record chooser for Lionceaux de Bonamoussadi U13 as a player sees it, under the heading Who are you in the team?: the fifteen records in the squad, each with its number and name, including Kaydoudou (7) and BriBri (8). A parent sees the same list under the heading Which record is your child's?](shot:youth-journey "The list of records, here in its player version: a parent sees it under a heading of their own.")
 
 Today, the journey written by the coach can only be seen on the device where the coach entered it. A backup exported from the coach's **Settings** can carry it to another device, but it replaces everything already there. Sharing across several devices will come with accounts and sync, which are planned (chapter 26). Meanwhile, team news often reaches parents another way: the call-up the coach prepares with Mola and sends from their own phone by WhatsApp, text or e-mail (chapter 11).
 
@@ -53,7 +53,7 @@ Today, the journey written by the coach can only be seen on the device where the
 | The match call-up | Sent by the coach | WhatsApp, text or e-mail |
 
 > [!WARNING] Restoring replaces everything
-> **Restore a backup** replaces all the data in the browser with the file's: the profile and the teams, but also the challenges and notebook already logged on this device. Before restoring, export your own backup with **Export**, and after restoring, check your name and role in **Settings**.
+> **Restore a backup** replaces all the data in the browser with the file's: the profile and the teams, but also the challenges and notebook already logged on this device, and the lessons understood and **My view** that the file holds. Before restoring, export your own backup with **Export**, and after restoring, check your name and role in **Settings**.
 
 ## Today's challenge, together
 
@@ -80,7 +80,7 @@ Ndamba was designed with minors in mind. Here is what the app does, and what it 
 - **No account, no public profile, no messaging.** There is no way in Ndamba for a stranger to find a child or write to them. The only conversation in the app is the one with Mola.
 - **Nothing goes out without you.** Mola prepares inside the app. A WhatsApp message, a text, an e-mail or a calendar file always waits for your approval in the **To approve** tab, then opens in your own messaging app: you are the one who presses Send.
 - **What can leave.** When the optional AI model is configured on the server (chapter 18), the sentence you type to Mola is sent to Ndamba's server to be better understood, with a little context (the team's name and age group, the role, the next and last opponent). Challenge results, the notebook and the self-assessment are not part of it. Without that model, Mola answers with its rules engine.
-- **Erase everything.** **Settings**, then **Erase everything**, deletes the profile, teams, sessions, matches, challenge results and notebook in this browser. It cannot be undone.
+- **Erase everything.** **Settings**, then **Erase everything**, deletes the profile, teams, sessions, matches, challenge results, notebook, lessons understood and **My view** in this browser; only the language choice stays. It cannot be undone.
 
 ![Mola's To approve tab, empty: Nothing to approve, with the explanation that any message or file leaving the app waits there for your approval.](shot:pro-mola-approvals "The To approve tab: nothing leaves without your approval.")
 
@@ -91,4 +91,4 @@ Here the screen is only for reading an instruction and writing down a number: th
 The books, for their part, are free to read without limit, whatever the plan. The novel *Lionceaux, book 1: Le Ballon qui voyage* tells, in forty chapters, the story of BriBri and Kaydoudou, two brothers from Bonamoussadi who learn football from Cameroon to England (chapter 20). On the home page, the novel card offers **Read the novel** and, just below, the chapter of today's lesson. A simple ritual works well with 8 to 12-year-olds: read the evening's chapter together, open its Ball Lesson, and do the matching challenge the next day. For playtime, the *Lionceaux Football* game brings in the clubs from the book (chapter 21).
 
 > [!MOLA]
-> Type "Open the novel" or "Open lesson 8" in the conversation with Mola. These sentences are among the suggestions it offers parents and players, along with "Which drills to scan better?".
+> Type "Open the novel" or "Open lesson 1" in the conversation with Mola. These sentences are among the suggestions it offers parents and players, along with "Which drills to scan better?". Change the number as you like: "Open lesson 8" opens lesson 8.

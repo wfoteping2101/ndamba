@@ -389,13 +389,15 @@ const planWeekExec: Exec = async (ctx, slots, request) => {
   await step(task, intention ? (fromReport ? t('plan.s.intentionReport', { intention: intentionLabel, opponent: fromReport }) : t('plan.s.intention', { intention: intentionLabel })) : t('plan.s.noIntention'))
 
   const created: Session[] = []
-  let kept = 0, past = 0, busyDays = 0
+  let kept = 0, past = 0, busyDays = 0, capped = false
+  const max = coachLimited(ctx.profile?.plan) ? GATES.sessionsFree - (await db.sessions.count()) : Infinity
   await step(task, t('plan.s.build'), async () => {
     const busy = await matchBusyDays(matchDate, ctx.team?.id)
     for (const [md, off] of PRE) {
       const date = addDays(matchDate, -off)
       if (date < ctx.today) { past++; continue }
       if (busy.has(date)) { busyDays++; continue }
+      if (created.length >= max) { capped = true; break }
       const exists = await db.sessions.where('date').equals(date).filter((s) => !ctx.team || s.teamId === ctx.team.id).count()
       if (exists) { kept++; continue }
       created.push(await createAutoSession({ md, date, teamId: ctx.team?.id, ageGroup: ageOf(ctx), lang, intention, createdBy: 'mola' }))
@@ -411,6 +413,7 @@ const planWeekExec: Exec = async (ctx, slots, request) => {
   if (created.length && kept) parts.push(t('plan.kept', { count: kept }))
   if (past && created.length) parts.push(t('plan.past', { count: past }))
   if (busyDays) parts.push(t('plan.busy', { count: busyDays }))
+  if (capped) parts.push(t('plan.capped', { n: GATES.sessionsFree }))
   await finish(task, {
     summary: parts.join(' '),
     resultRoute: `/app/semaine?w=${weekStart(created[0]?.date ?? addDays(matchDate, -1))}`,

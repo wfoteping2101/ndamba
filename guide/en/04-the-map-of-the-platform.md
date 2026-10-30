@@ -80,7 +80,7 @@ On a computer, the app has a dark green column on the left. At the top sits the 
 
 | Group | Menu | What you do there | Chapter |
 |---|---|---|---|
-| (top) | **Home** | Today's screen: session, next match, week, latest Indice | 6 |
+| (top) | **Home** | Today's screen: session, next match, week, latest Index | 6 |
 | (top) | **Mola** | Talk to the agent, follow its tasks, approve what it prepares | 18 |
 | Training | **Drills** | The method's 64 drills, with diagrams | 7 |
 | Training | **Sessions** | Your sessions and the session builder | 8 |

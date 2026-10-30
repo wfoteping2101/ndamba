@@ -54,7 +54,7 @@ Every day, Ndamba picks one lesson among those with a diagram. The choice depend
 
 The player decides. When they have read the lesson, looked at the diagram and feel they could explain it, they tap **I've got it**. The button turns into **Got it, saved**, the page carries the **Understood** label, and the counters move: the part's, the 40 lessons', and the **Lessons** box on the **My progress** card on the home page. A second tap removes the mark.
 
-There is no mark out of ten and no quiz, and that is on purpose: the child is not graded on their reading. For a parent or a coach, a good rule is to ask the child to explain the lesson in their own words, or to do the matching challenge, before tapping **I've got it**. The marks are kept in the browser of the device. They are not part of the backup file exported from **Settings**: on a new device, the player marks them again.
+There is no mark out of ten and no quiz, and that is on purpose: the child is not graded on their reading. For a parent or a coach, a good rule is to ask the child to explain the lesson in their own words, or to do the matching challenge, before tapping **I've got it**. The marks are kept in the browser of the device. They are part of the backup exported from **Settings**, which can carry them to another device, and **Erase everything** deletes them.
 
 > [!MOLA]
 > Type "Open lesson 21" in the conversation with Mola: it finds the five-seconds lesson, with an **Open the lesson** button and a link to the chapter in the novel. "Open lesson 1" is one of the suggestions it shows players and parents.
@@ -81,23 +81,23 @@ From 16, the same page becomes **My player journal**: plainer, with no link to t
 
 ## The journey, season after season
 
-The journey answers a simple question: what has this player built? It brings together what the coach recorded (evaluations, observations, attendance, minutes played) and what the player set for themselves. The coach sees it from the player's profile (chapter 10); the player sees their own through the **My journey** card, in the player space and on the home page. The first time, they link their profile to their record with the **Who are you in the team?** screen (chapter 15). Without a team, the page explains that the journey grows once the coach adds the player to the squad.
+The journey answers a simple question: what has this player built? It brings together what the coach recorded (evaluations, observations, attendance, minutes played) and what the player set for themselves. The coach sees it from the player's profile (chapter 10); the player sees their own through the **My journey** card, in the player space and on the home page. The first time, they link their profile to their record with the **Who are you in the team?** screen (chapter 15), which a parent sees as **Which record is your child's?**. Without a team, the page explains that the journey grows once the coach adds the player to the squad.
 
-![BriBri's journey as he sees it: number 8, the Pivot position, 12 years old, the Set myself an objective button, the seasons, the season ribbon and the figures Sessions 15/16, Matches played 4, Goals 1, Observations 8, Competences +4, Objectives achieved 1/3.](shot:youth-journey-linked "My journey, in the U13 academy demo.")
+![BriBri's journey as he sees it: number 8, the Pivot position, 12 years old, the Set myself an objective button, the seasons, the season ribbon and the figures Sessions 15/16, Matches played 4, Goals 1, Observations 8, Skills +4, Objectives achieved 1/3.](shot:youth-journey-linked "My journey, in the U13 academy demo.")
 
-At the top, the journey shows the number, the name, the position, the age and the team, then the season buttons (**Season 2026-2027**, **Season 2025-2026**, **All seasons**). A season runs from 1 August to 31 July. The season ribbon puts **Milestones**, **Matches**, **Sessions** and **Observations** on a single timeline, up to **Today**. Six figures follow: **Sessions** attended out of the total, with the attendance rate, **Matches played** and minutes, **Goals** (when there are any), **Observations** (and how many were strengths), **Competences** (levels gained since the start of the season) and **Objectives achieved**. One sentence sums it up: "Your strength: Ball protection (level 4). Your next step: Directional first touch."
+At the top, the journey shows the number, the name, the position, the age and the team, then the season buttons (**Season 2026-2027**, **Season 2025-2026**, **All seasons**). A season runs from 1 August to 31 July. The season ribbon puts **Milestones**, **Matches**, **Sessions** and **Observations** on a single timeline, up to **Today**. Six figures follow: **Sessions** attended out of the total, with the attendance rate, **Matches played** and minutes, **Goals** (from the first goal, and always from 17), **Observations** (and how many were strengths), **Skills** (levels gained since the start of the season) and **Objectives achieved**. One sentence sums it up: "Your strength: Ball protection (level 4). Your next step: Directional first touch."
 
 Further down, the player finds:
 
-- **Progress by competence**: the ten competences of The Njangi Code grid, from 1 to 4. Tap one to see its curve, what is seen today and the next step.
+- **Progress by competence**: the ten skills of The Njangi Code grid, from 1 to 4. Tap one to see its curve, what is seen today and the next step.
 - **The journey, step by step**: their story of the season, most recent first, with filters (**All**, **Milestones**, **Evaluations**, **Observations**, **Matches**, **Sessions**, **Objectives**).
 - **Objectives for this cycle**: one to three objectives, for six to eight weeks, then a review.
 - **Your matches**: the actions that make the team play, with no comparison with anyone else.
-- **Big moments**: the first match, first start, first goal and a competence reaching level 3 or 4 are added on their own; the coach adds call-ups or moves to an older age group.
+- **Big moments**: the first match, first start, first goal and a skill reaching level 3 or 4 are added on their own; the coach adds call-ups or moves to an older age group.
 
 The journey adapts to age. Under 13, the page says so: "Every session counts. Here is what is moving forward." The coach's ratings of a sequence are not shown to the child, and there is never a ranking. From 13 to 16, the page adds match markers, such as the share of passes completed. From 17, **Season performance** gives the detail per 90 minutes, and the sentence becomes "Your area to work on".
 
-![Steve Ndjock's journey, aged 28: Sessions 38/39, Matches played 3, 240 min, Observations 7, Competences +2, and the sentence Your strength: Scanning (level 4). Your area to work on: Carrying.](shot:pro-player-journey-linked "The same journey for a senior player, in the pro club demo.")
+![Steve Ndjock's journey, aged 28: Sessions 38/39, Matches played 3, 240 min, Goals 0, Observations 7, Skills +2, Objectives achieved 1/3, and the sentence Your strength: Scanning (level 4). Your area to work on: Carrying.](shot:pro-player-journey-linked "The same journey for a senior player, in the pro club demo.")
 
 The player can neither edit nor delete what their coach wrote. They can, however, set their own objectives:
 
@@ -108,4 +108,4 @@ The player can neither edit nor delete what their coach wrote. They can, however
 5. Tap **Save the objective**. It appears with the **My objective** label. An objective set by the coach shows too, with this reminder: "Your coach set this objective: you can see it here, and you will review it together."
 
 > [!INVESTOR]
-> The journey is the piece that makes continuity measurable: the same ten competences, the same 1 to 4 scale and the same sub-indices of the Njangi Index follow a player from grassroots football to the first team. Today this data lives on the device where it is entered. Accounts and sync are planned (chapter 26): that is what will let a journey follow the player from one club to the next.
+> The journey is the piece that makes continuity measurable: the same ten skills, the same 1 to 4 scale and the same sub-indices of the Njangi Index follow a player from grassroots football to the first team. Today this data lives on the device where it is entered. Accounts and sync are planned (chapter 26): that is what will let a journey follow the player from one club to the next.

@@ -275,7 +275,7 @@
     "drillsHint": "For the weakest sub-indices: {{subs}}.",
     "objectives": "Objectives for the week",
     "plan": "Plan the week with these objectives",
-    "planNone": "This week's sessions already exist. Open the week to adjust them.",
+    "planNone": "Nothing to add this week: the remaining days already have their session, or are taken by another match. Open the week to adjust them.",
     "openWeek": "Open the week",
     "planNoMatch": "Create the next match first: the week is planned backwards from match day.",
     "planFor": "Week of the match against {{opp}}, {{date}}. Main intention: {{intention}}.",

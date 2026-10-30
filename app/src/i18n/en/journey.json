@@ -90,8 +90,8 @@
     "empty": "The season takes shape here: sessions, matches, observations, evaluations and milestones."
   },
   "skills": {
-    "title": "Progress by competence",
-    "hint": "The Njangi Code grid (chapter 25), levels 1 to 4, since {{from}}. Tap a competence to see its curve.",
+    "title": "Progress by skill",
+    "hint": "The Njangi Code grid (chapter 25), levels 1 to 4, since {{from}}. Tap a skill to see its curve.",
     "emptyCoach": "No dated evaluation yet. Evaluate the ten skills: each evaluation keeps a record of the levels, and the curve takes shape over the season.",
     "emptyPlayer": "Your coach has not evaluated your skills yet. From the first evaluation, your curve shows up here.",
     "up": "+{{n}}",
@@ -128,9 +128,9 @@
     "evalDeleted": "Evaluation deleted",
     "deleteObs": "Delete this observation",
     "deleteEval": "Delete this evaluation",
-    "eval": "Competence evaluation",
-    "evalFirst": "First competence evaluation",
-    "evalUp_one": "Evaluation: {{count}} competence moves up",
+    "eval": "Skill evaluation",
+    "evalFirst": "First skill evaluation",
+    "evalUp_one": "Evaluation: {{count}} skill moves up",
     "evalUp_other": "Evaluation: {{count}} skills move up",
     "evalFirstBody": "{{n}} skills rated on the 1 to 4 grid.",
     "evalSame": "Levels confirmed, no change.",
@@ -206,9 +206,9 @@
     "editTitle": "Objective",
     "coachOnly": "Your coach set this objective: you can see it here, and you will review it together.",
     "linkLabel": "Linked to",
-    "linkSkill": "A competence",
+    "linkSkill": "A skill",
     "linkSub": "A Njangi sub-index",
-    "skill": "Competence",
+    "skill": "Skill",
     "sub": "Sub-index of the Njangi Index",
     "subHint": "At player level, we follow the tagged actions that feed this sub-index.",
     "titleLabel": "The objective, in one sentence",
@@ -254,7 +254,7 @@
   "milestones": {
     "title": "Big moments",
     "add": "Add",
-    "empty": "Milestones come on their own: first match, first goal, a competence reaching a new level. Add call-ups, moves to an older age group or injuries too.",
+    "empty": "Milestones come on their own: first match, first goal, a skill reaching a new level. Add call-ups, moves to an older age group or injuries too.",
     "newTitle": "New milestone for {{name}}",
     "editTitle": "Milestone",
     "kindLabel": "Type",
@@ -289,7 +289,7 @@
     "titleLabel": "Title",
     "note": "Note (optional)",
     "save": "Save the milestone",
-    "autoNote": "The first match, first goal, first start and every competence reaching Secure or Benchmark are added on their own."
+    "autoNote": "The first match, first goal, first start and every skill reaching Secure or Benchmark are added on their own."
   },
   "perf": {
     "title": "Season performance",
@@ -388,7 +388,7 @@
     "noDictation": "Dictation not available in this browser",
     "dictationError": "Dictation stopped. Check microphone access, or type the note.",
     "pickFirst": "Pick one or several players first.",
-    "addSomething": "{{names}}: tap a competence, a marker, a rating, or write.",
+    "addSomething": "{{names}}: tap a skill, a marker, a rating, or write.",
     "reset": "Clear",
     "save": "Save",
     "saveMany_one": "Save for {{count}} player",

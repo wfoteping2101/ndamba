@@ -85,7 +85,7 @@
     "prepare": "Préparer la semaine",
     "weekCreated_one": "{{count}} séance préparée pour la semaine du match.",
     "weekCreated_other": "{{count}} séances préparées pour la semaine du match.",
-    "weekReady": "La semaine est déjà prête : chaque jour avant le match a sa séance.",
+    "weekReady": "Rien à ajouter avant le match : les jours restants ont déjà leur séance, ou sont pris par un autre match et sa récupération.",
     "seeWeek": "Voir la semaine",
     "liveShort": "Direct",
     "againstTeam": "Contre {{opponent}}"

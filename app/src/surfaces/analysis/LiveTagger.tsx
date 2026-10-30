@@ -82,7 +82,7 @@ export default function LiveTagger() {
           <p className="mt-2 text-cream/70">{t('team:sheet.gateBody')}</p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link to="/app/premium" className="btn-sun">{t('team:sheet.gateCta')}</Link>
-            <Link to={`/app/matchs/${match.id}`} className="btn-outline border-white/20 text-cream hover:bg-white/10">{t('live.back')}</Link>
+            <Link to="/app/analyse" className="btn-outline border-white/20 text-cream hover:bg-white/10">{t('live.back')}</Link>
           </div>
         </div>
       </div>

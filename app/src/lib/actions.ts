@@ -84,7 +84,8 @@ export async function matchBusyDays(matchDate: string, teamId?: string) {
   return busy
 }
 
-export async function planWeek(opts: { matchDate: string; teamId?: string; ageGroup?: string; lang?: Lang; intention?: Intention; createdBy?: 'user' | 'mola'; from?: string }) {
+/** max: how many sessions may still be created (the free plan's quota); unlimited when left out. */
+export async function planWeek(opts: { matchDate: string; teamId?: string; ageGroup?: string; lang?: Lang; intention?: Intention; createdBy?: 'user' | 'mola'; from?: string; max?: number }) {
   const created: Session[] = []
   const mds: [MD, number][] = [['MD-4', -4], ['MD-3', -3], ['MD-2', -2], ['MD-1', -1]]
   const from = opts.from ?? todayISO()
@@ -92,6 +93,7 @@ export async function planWeek(opts: { matchDate: string; teamId?: string; ageGr
   for (const [md, off] of mds) {
     const date = addDays(opts.matchDate, off)
     if (date < from || busy.has(date)) continue
+    if (opts.max !== undefined && created.length >= opts.max) break
     const exists = await db.sessions.where('date').equals(date).filter((s) => !opts.teamId || s.teamId === opts.teamId).count()
     if (exists) continue
     created.push(await createAutoSession({ md, date, teamId: opts.teamId, ageGroup: opts.ageGroup, lang: opts.lang, intention: opts.intention, createdBy: opts.createdBy }))

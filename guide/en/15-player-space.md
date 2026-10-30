@@ -40,11 +40,11 @@ Without a team, a **Do you play for a team?** card offers **Add my team**. The c
 
 The youth space opens with the stage in a ring, its name (**The foundations** to begin with) and the XP bar. Below come four figures: **Streak**, **Today's challenges**, **Targets hit** and **Active days**. A row of shortcuts jumps to the sections of the page: **Today**, **Progress**, **My view**, **All challenges**, **History**.
 
-Every day, **Today's challenges** offers three challenges, the same for every player on the same date: one for ball mastery or carrying, one against the wall, for scanning or for finishing, and one for fitness. They come from a library of 32 challenges you can do alone, against a wall or with a few cones. Each one trains one of the ten competences of The Njangi Code grid and links to a Ball Lesson: **Ten juggles with Mami's ball** takes up the brothers' ritual before a big match.
+Every day, **Today's challenges** offers three challenges, the same for every player on the same date: one for ball mastery or carrying, one against the wall, for scanning or for finishing, and one for fitness. They come from a library of 32 challenges you can do alone, against a wall or with a few cones. Each one trains one of the ten skills of The Njangi Code grid and links to a Ball Lesson: **Ten juggles with Mami's ball** takes up the brothers' ritual before a big match.
 
 To do a challenge and log it:
 
-1. Read the card: the time (for example **4 min**), the competence it trains, and the **Target** ("60 touches or more").
+1. Read the card: the time (for example **4 min**), the skill it trains, and the **Target** ("60 touches or more").
 2. Tap **How to do it and log** if the card is closed. You see the instructions, the **Tip**, and the kit: **A ball**, **A wall**, **Some cones**, **A partner** or **Some room**. Fitness challenges always add **Water**.
 3. Do the challenge, then type your best result in the field, under the challenge's question ("Your best touch count in 30 seconds").
 4. Tap **Log**. The XP you won appears (for example **+25 XP**), and the card says "Today: 60 touches, target reached".
@@ -79,9 +79,9 @@ The **My progress** section appears with the first logged result. It holds three
 
 ## My view: rating yourself
 
-The **How I see myself** section asks the player where they stand on the ten competences of the grid: scanning, directional first touch, passing with purpose, carrying, the njangi dribble, runs for others, communication, ball protection, counter-pressing and decision making. Each line has a simple sentence ("I look over my shoulder before I receive.") and four buttons: **1** "I'm discovering it", **2** "I'm getting better", **3** "I've got it", **4** "I teach it to others".
+The **How I see myself** section asks the player where they stand on the ten skills of the grid: scanning, directional first touch, passing with purpose, carrying, the njangi dribble, runs for others, communication, ball protection, counter-pressing and decision making. Each line has a simple sentence ("I look over my shoulder before I receive.") and four buttons: **1** "I'm discovering it", **2** "I'm getting better", **3** "I've got it", **4** "I teach it to others".
 
-The **My ten skills** radar draws itself as you go. If the coach has evaluated the player in the squad, and the profile carries the same name as the record, a second shape appears, **My coach's view**, with this advice: "If you don't see it the same way, talk about it after training." This self-assessment is kept on the device only.
+The **My ten skills** radar draws itself as you go. If the coach has evaluated the player in the squad, and the profile carries the same name as the record, a second shape appears, **My coach's view**, with this advice: "If you don't see it the same way, talk about it after training." This self-assessment never leaves the device ("Kept on this device only."); it is part of the backup exported from **Settings**, and **Erase everything** deletes it.
 
 Further down, **All challenges** lists the 32 challenges with filters: **All**, **Ball**, **Dribbling**, **Wall**, **Eyes**, **Finishing**, **Fitness**. Each line opens in place, with the same form for logging. At the bottom of the page, two doors: **The Ball Lessons** and **My Njangi notebook** (chapter 16).
 
@@ -93,7 +93,7 @@ From 16, the player trains around the match week. Their space follows chapter 29
 
 ![The home of Steve Ndjock, central midfielder at Étoile de la Côte: Form to log, 7-day load, Match D-2, then the week building up to Rapides de Kribi and the next match card.](shot:pro-player-home-linked "A senior player's home in the pro club demo.")
 
-The home of a player aged 16 and over opens on a dark band: the greeting, the role of the day in the week ("Today, MD-2, speed" and the session title), their position, number and club, and three figures: **Form** (out of 25, or **To log**), **7-day load** in AU, and **Match** (D-2, with the Indice of the last match). Then come the week, the next match, form, load, the last match, objectives and the season. The performance space (**Player space**) shows these cards in full. Its **Performance space** header holds six figures (form, load, matches played, minutes played, last Indice, active objectives) and shortcuts: **The week**, **Form and load**, **Last match**, **Objectives**, **Self-assessment** and **My journey**.
+The home of a player aged 16 and over opens on a dark band: the greeting, the role of the day in the week ("Today, MD-2, speed" and the session title), their position, number and club, and three figures: **Form** (out of 25, or **To log**), **7-day load** in AU, and **Match** (D-2, with the Index of the last match). Then come the week, the next match, form, load, the last match, objectives and the season. The performance space (**Player space**) shows these cards in full. Its **Performance space** header holds six figures (form, load, matches played, minutes played, last Index, active objectives) and shortcuts: **The week**, **Form and load**, **Last match**, **Objectives**, **Self-assessment** and **My journey**.
 
 **The week.** The **My week** card shows seven days: the ones leading to the next match when it falls within six days, otherwise Monday to Sunday. Each day carries its role (**MD+1**, **MD-4**, **Rest**, **Match**), bars for **Usual intensity** and a dot when the effort was logged. Tap a day to see the staff's session, its blocks minute by minute with each drill's code, why that day exists in the week, and the **Staff notes**. The **Next match** card gives the countdown, the venue, **My place** in the planned line-up ("Expected to start: Central midfielder, number 8 role"), **The game plan** (**In possession**, **When we lose it**) and the **Match sheet** button.
 
@@ -105,7 +105,7 @@ The home of a player aged 16 and over opens on a dark band: the greeting, the ro
 
 Effort times minutes gives the load of the session, in arbitrary units (AU). The **My load** card adds up the **Last 7 days** and compares them with the **Average of the 3 weeks before**: more than 30% above is a **Load spike**, with the advice to talk to the staff; more than 30% below is a **Lighter week**; in between, a **Steady load**. If your last three form scores are clearly below your average, a warning appears: "Your form has dropped for three days". Your answers stay on the device.
 
-**Last match.** The **My last match** card gives the **Team Indice Njangi** and its five sub-indices, then **My share of the play**: minutes played, passes completed, **Actions that move us forward** and balls won back within five seconds, each with its share of the team total. In the performance space, every action tagged to you sits on a line of the match, minute by minute. The buttons lead to the **Match report** and the video.
+**Last match.** The **My last match** card gives the **Team Njangi Index** and its five sub-indices, then **My share of the play**: minutes played, passes completed, **Actions that move us forward** and balls won back within five seconds, each with its share of the team total. In the performance space, every action tagged to you sits on a line of the match, minute by minute. The buttons lead to the **Match report** and the video.
 
 **Objectives and season.** **My objectives** lists the objectives of the cycle (one to three, for six to eight weeks), who set them (**Set by the staff** or **My objective**), the time left before the review and, in the performance space, **The Njangi Code drills that train them**. **My season** gives matches, minutes, attendance and the **Latest staff observation**. Finally, **How I rate my game** repeats the self-assessment on the staff's grid (**Discovering**, **Building**, **Secure**, **Benchmark**), next to what the staff recorded.
 
@@ -121,7 +121,7 @@ Minutes, objectives, staff observations and the last match all come from the pla
 
 ![The Who are you in the team? screen for Étoile de la Côte: each record in the squad is a button with the player's number and name.](shot:pro-player-own-journey "Picking your record in the squad, once.")
 
-A staff member who opens this space sees **Staff preview.** and **Pick a player**, to see it the way one of their players will.
+A parent sees the same screen under the heading **Which record is your child's?** (chapter 17). A staff member who opens the performance space sees **Staff preview.** and **Pick a player**, to see it the way one of their players will.
 
 > [!INVESTOR]
 > The player space turns invisible work (the yard, the wall, the morning before training) into regular, comparable data, on the same game model as the club. Today the whole player space is open whatever the plan, and the data stays on the player's device. This is the base of the continuity the plan aims for: the same player followed from childhood challenges to senior training load.

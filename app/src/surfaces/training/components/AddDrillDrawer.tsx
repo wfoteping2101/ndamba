@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Check, Plus } from 'lucide-react'
 import { useT } from '../../../i18n'
 import { DRILLS } from '../../../content'
@@ -12,7 +12,10 @@ import { EMPTY_FILTER, matches, type DrillFilter } from './helpers'
 export function AddDrillDrawer({ open, onClose, md, used, onAdd }: { open: boolean; onClose: () => void; md: MD; used: string[]; onAdd: (d: Drill) => void }) {
   const { t } = useT('training')
   // start on the drills of the session's day, unless that leaves almost nothing to choose from (MD+1 has a single drill)
-  const [filter, setFilter] = useState<DrillFilter>(() => ({ ...EMPTY_FILTER, day: DRILLS.filter((d) => d.md.includes(md)).length >= 4 ? [md] : [] }))
+  const dayFilter = (m: MD): DrillFilter => ({ ...EMPTY_FILTER, day: DRILLS.filter((d) => d.md.includes(m)).length >= 4 ? [m] : [] })
+  const [filter, setFilter] = useState<DrillFilter>(() => dayFilter(md))
+  // each opening starts on the session's current day (the coach may have changed it since)
+  useEffect(() => { if (open) setFilter(dayFilter(md)) }, [open, md]) // eslint-disable-line react-hooks/exhaustive-deps
   const [added, setAdded] = useState<string[]>([])
   const list = useMemo(() => DRILLS.filter((d) => matches(d, filter)), [filter])
   const close = () => { setAdded([]); onClose() }

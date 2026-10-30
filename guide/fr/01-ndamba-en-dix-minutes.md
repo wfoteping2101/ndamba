@@ -40,7 +40,7 @@ L'application range ses écrans en quatre groupes de menus, **Entraînement**, *
 
 **L'espace joueur.** Pour les plus jeunes : les défis du jour, les 40 Leçons du Ballon, le carnet du Njangi et le parcours. À partir de 16 ans : un espace performance avec la semaine, la forme, la charge et le dernier match.
 
-![L'accueil de l'entraîneur dans la démo club pro : la séance du jour, le prochain match contre les Rapides de Kribi et le bouton Préparer la semaine.](shot:pro-home "L'accueil de l'entraîneur : aujourd'hui, le prochain match et la semaine, sur un seul écran.")
+![L'accueil de l'entraîneur dans la démo club pro : le bandeau Bonsoir, Daniel avec 4 séances, 303 minutes et le match à J-2, la séance du jour Vitesse : transitions et finition, le prochain match contre les Rapides de Kribi le samedi 31 octobre et le bouton Préparer la semaine.](shot:pro-home "L'accueil de l'entraîneur : aujourd'hui, le prochain match et la semaine, sur un seul écran.")
 
 ## Mola, l'agent qui agit
 
@@ -70,21 +70,21 @@ Les deux livres se lisent librement en ligne, chapitre par chapitre, quelle que 
 
 Ndamba connaît six rôles, que vous choisissez en parlant avec Mola : **Entraîneur ou éducateur**, **Joueur ou joueuse**, **Analyste**, **Parent**, **Manager ou directeur technique** et **Fédération ou ligue**. Le chapitre 3 montre ce que chacun voit et le chemin qui lui convient.
 
-La promesse est la même pour tous : les mêmes mots et les mêmes exercices des U8 à l'équipe première, pour l'éducateur de quartier comme pour le staff d'un club de Ligue 1. Deux démos le montrent. La **Démo club pro** ouvre l'Étoile de la Côte, un club professionnel de Douala : 22 joueurs, l'entraîneur Daniel Mbarga, un match gagné 2-1 et codé en direct, et la semaine avant un déplacement à Kribi. La **Démo académie U13** ouvre les Lionceaux de Bonamoussadi U13, l'équipe de Kaydoudou et BriBri dans le roman : 15 joueurs, quatre séances dans la semaine, un match analysé et un match à venir le samedi. Ces clubs et ces joueurs sont des personnages de démonstration.
+La promesse est la même pour tous : les mêmes mots et les mêmes exercices des U8 à l'équipe première, pour l'éducateur de quartier comme pour le staff d'un club de Ligue 1. Deux démos le montrent. La **Démo club pro** ouvre l'Étoile de la Côte, un club professionnel de Douala : 22 joueurs, l'entraîneur Daniel Mbarga, un match gagné 2-1 et codé en direct, et la semaine avant un déplacement à Kribi. La **Démo académie U13** ouvre les Lionceaux de Bonamoussadi U13, l'équipe de Kaydoudou et BriBri dans le roman : 15 joueurs, quatre séances dans la semaine, quatre matchs déjà analysés et un match à venir le samedi. Ces clubs et ces joueurs sont des personnages de démonstration.
 
-![L'accueil de BriBri, jeune joueur de la démo U13 : ses points d'expérience, sa série, le défi du jour et sa progression.](shot:youth-player-home-linked "L'accueil d'un joueur de 12 ans : un défi par jour, des leçons, et son parcours dans l'équipe.")
+![L'accueil de BriBri, jeune joueur de la démo U13 : le bandeau XP, Série et Défis (encore à 0), la carte Mon parcours avec 15 séances, 4 matchs et 2 objectifs en cours, le défi du jour Les pieds rapides et la carte Ma progression.](shot:youth-player-home-linked "L'accueil d'un joueur de 12 ans : un défi par jour, des leçons, et son parcours dans l'équipe.")
 
 ## La boucle : planifier, entraîner, jouer, analyser, apprendre
 
 Tout Ndamba tient dans une boucle que l'équipe parcourt chaque semaine. Voici comment elle se déroule dans l'application.
 
-1. **Planifier.** Vous ajoutez le prochain match avec **Nouveau match**. Sur l'accueil, la carte **Prochain match** affiche le compte à rebours ; le bouton **Préparer la semaine** crée les séances des jours MD-4 à MD-1 qui restent avant le match.
+1. **Planifier.** Vous ajoutez le prochain match avec **Nouveau match**. Sur l'accueil, la carte **Prochain match** affiche le compte à rebours ; le bouton **Préparer la semaine** crée les séances qui manquent sur les jours MD-4 à MD-1 encore à venir. Il laisse libres le jour d'un autre match et son lendemain, réservé à la récupération.
 2. **Entraîner.** Chaque séance est faite d'exercices du livre, avec leurs minutes et leur intention. La carte **Aujourd'hui** montre la séance du jour ; **Ouvrir la séance** l'affiche en détail.
 3. **Jouer.** La feuille de match porte la composition et le plan de jeu. Mola rédige la convocation, vous la validez et l'envoyez. Le jour du match, le bouton **Direct** ouvre le pupitre de codage.
 4. **Analyser.** Pendant le match, vous touchez un bouton par action : passe réussie, ligne traversée, entrée dans la surface, perte, reprise en 5 secondes. À la fin, le rapport donne l'Indice Njangi, ses cinq sous-indices et le point faible du jour.
 5. **Apprendre.** Le rapport propose les exercices qui travaillent ce point faible, et l'accueil propose de préparer la semaine suivante sur l'intention correspondante. Les joueurs, eux, apprennent avec les leçons, les défis, le carnet et leur parcours. Puis la boucle recommence.
 
-Prenons la démo club pro. L'Étoile de la Côte a battu le Météore de Bafoussam 2-1. Le rapport affiche un Indice Njangi de 67,9 sur 100, lu « Njangi solide ». Quatre sous-indices sont solides ; la Fixation, à 8,3 sur 20, est la plus faible. L'accueil en tire la conclusion : la semaine suivante travaillera l'intention « Fixer », et le bouton **Préparer la semaine sur « Fixer »** le fait en une touche.
+Prenons la démo club pro. L'Étoile de la Côte a battu le Météore de Bafoussam 2-1. Le rapport affiche un Indice Njangi de 67,9 sur 100, lu « Njangi solide ». Quatre sous-indices sont solides ; la Fixation, à 8,3 sur 20, est la plus faible. L'accueil en tire la conclusion : la semaine suivante travaillera l'intention « Fixer », et le bouton **Préparer la semaine sur « Fixer »** le fait en une touche. Dans la démo, la semaine est déjà prête : sa séance MD-3 du mercredi porte justement sur l'intention « Fixer ».
 
 ![Le rapport du match Étoile de la Côte contre Météore de Bafoussam : 2-1, un Indice Njangi de 67,9 et les cinq sous-indices sur 20.](shot:pro-report "Le rapport de match : l'Indice Njangi et ses cinq sous-indices, dont la Fixation à travailler.")
 

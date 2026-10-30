@@ -101,7 +101,7 @@ A drill only matters once it reaches the pitch. The **Add to a session** button 
 
 The drill joins the session as a new block at the end, with its full duration. Chapter 8 shows how to move it, change its minutes or add a note.
 
-You can also go the other way. From a session, the **Add a drill** button opens the same library, already filtered on the session's day. At the bottom of the library, the **Build a session with these drills** link leads to your sessions. And if you would rather ask, Mola answers questions like "Which drills to win the ball back faster?" with three drills suited to your team's age.
+You can also go the other way. From a session, the **Add a drill** button opens the same library, already filtered on the session's day (except for MD+1, which has a single drill: the panel then shows every drill). At the bottom of the library, the **Build a session with these drills** link leads to your sessions. And if you would rather ask, Mola answers questions like "Which drills to win the ball back faster?" with three drills suited to your team's age.
 
 > [!INVESTOR] Why the library is free
 > The 64 drills and the books stay open on every plan, including the free one: that rule is written into the app's code. The library is the front door to the method and the shared vocabulary a federation needs, from the first club to the national team. The paid plans sell time saved (unlimited sessions, the week planned in one tap, analysis), not access to knowledge.

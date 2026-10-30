@@ -68,7 +68,7 @@ export default function CoachHome() {
     setBusy(true)
     try {
       if (coachLimited(profile?.plan) && (await db.sessions.count()) >= GATES.sessionsFree) { navigate('/app/premium'); return }
-      const s = await createAutoSession({ md, date, teamId: team?.id, ageGroup: team?.ageGroup, lang })
+      const s = await createAutoSession({ md, date, teamId: team?.id, ageGroup: team?.ageGroup, lang, createdBy: 'mola' })
       navigate(`/app/seances/${s.id}`)
     } finally { setBusy(false) }
   }
@@ -77,9 +77,11 @@ export default function CoachHome() {
     if (!next || busy) return
     setBusy(true)
     try {
-      if (coachLimited(profile?.plan) && (await db.sessions.count()) >= GATES.sessionsFree) { navigate('/app/premium'); return }
+      const count = await db.sessions.count()
+      const max = coachLimited(profile?.plan) ? GATES.sessionsFree - count : undefined
+      if (max !== undefined && max <= 0) { navigate('/app/premium'); return }
       // planWeek skips the days already behind us and the days taken by another match or its recovery
-      const created = await planWeek({ matchDate: next.date, teamId: team?.id, ageGroup: team?.ageGroup, lang, intention, createdBy: 'mola' })
+      const created = await planWeek({ matchDate: next.date, teamId: team?.id, ageGroup: team?.ageGroup, lang, intention, createdBy: 'mola', max })
       const n = created.length
       const msg: ToastMsg = n > 0
         ? { text: t('match.weekCreated', { count: n }), to: '/app/semaine', action: t('match.seeWeek') }

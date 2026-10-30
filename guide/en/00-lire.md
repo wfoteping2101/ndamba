@@ -39,7 +39,7 @@ Nobody has to read everything. Pick the line that fits you.
 ## The conventions of this guide
 
 - Words in **bold** are the exact labels of the interface: the button, tab or heading you will see on screen. In this edition they are the English labels.
-- The screenshots come from the two demos built into Ndamba: the pro club **Étoile de la Côte**, a senior top-flight team in Douala coached by Daniel Mbarga, and the academy **Lionceaux de Bonamoussadi U13**, the team of Kaydoudou and BriBri. You can open the same demos and follow the guide screen by screen (chapter 5).
+- The screenshots come from the two demos built into Ndamba: the pro club **Étoile de la Côte**, a senior top-flight team in Douala coached by Daniel Mbarga, and the academy **Lionceaux de Bonamoussadi U13**, the team of Kaydoudou and BriBri. These clubs, their players and their matches are invented for the demo. You can open the same demos and follow the guide screen by screen (chapter 5).
 - **Tip** boxes give a practical shortcut, **Watch out** boxes flag a trap, **For investors** boxes sum up what a feature changes for the project, and **Ask Mola** boxes give the exact sentence to type so that the agent does it for you.
 - The guide describes Ndamba as it is today. When a feature is planned but not there yet, it says so.
 

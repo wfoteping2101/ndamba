@@ -25,7 +25,7 @@ Pour tous, la conversation se termine par la ville, le pays et les objectifs (pa
 
 Disons-le simplement : aujourd'hui, il y a six rôles mais trois écrans d'accueil. Les quatre rôles du staff (entraîneur, analyste, manager, fédération) partagent le même accueil. Le rôle change les questions de l'accueil, les objectifs proposés et, pour les joueurs, l'écran selon l'âge. Le menu, lui, est le même pour tout le monde : chacun peut ouvrir chaque page.
 
-Seul le rôle **Entraîneur ou éducateur** crée une équipe pendant la conversation. Les autres rôles la créent ensuite, depuis l'accueil ou depuis **Réglages**. Vous pouvez changer de rôle à tout moment : **Réglages**, puis **Profil**, le champ **Rôle**, et **Enregistrer le profil**.
+Seul le rôle **Entraîneur ou éducateur** crée une équipe pendant la conversation. Les autres rôles la créent ensuite, depuis l'accueil ou depuis **Réglages**. Vous pouvez changer de rôle à tout moment : **Réglages**, puis **Profil**, le champ **Rôle**, et **Enregistrer le profil**. Sur ordinateur, votre rôle s'affiche sous votre nom, en bas de la colonne du menu (« Entraîneur », « Joueur », « Parent », « Dirigeant »...) ; votre formule, elle, se lit dans les **Réglages**.
 
 ## L'accueil du staff
 
@@ -41,7 +41,7 @@ Plus bas viennent **La semaine** (les sept jours, avec les séances et le match,
 
 1. Touchez **Commencer avec Mola**, choisissez **Entraîneur ou éducateur** et donnez le nom de votre équipe, sa catégorie et vos joueurs : Mola crée l'équipe.
 2. Ajoutez le prochain match avec **Nouveau match**.
-3. Sur l'accueil, touchez **Préparer la semaine** : les séances des jours MD-4 à MD-1 qui restent avant le match sont créées.
+3. Sur l'accueil, touchez **Préparer la semaine** : Ndamba crée les séances qui manquent sur les jours MD-4 à MD-1 encore à venir, en laissant libres le jour d'un autre match et son lendemain.
 4. Chaque jour, ouvrez la carte **Aujourd'hui**, puis **Ouvrir la séance**.
 5. Le jour du match, touchez **Direct** et codez les actions.
 6. Après le match, ouvrez **Voir le rapport**, puis préparez la semaine suivante sur l'intention que l'accueil vous propose.
@@ -77,7 +77,7 @@ Viennent ensuite la carte **Mon parcours** (séances, matchs, observations du co
 
 ![L'accueil de BriBri, 12 ans, dans la démo U13 : XP, Série et Défis, la carte Mon parcours, Le défi du jour et Ma progression.](shot:youth-player-home-linked "L'accueil du jeune joueur : un défi par jour, une leçon par jour, et son parcours.")
 
-Pour le parent, l'accueil ajoute en tête un encadré **Pour les parents** : quinze minutes, un mur et un ballon suffisent ; restez à côté, aidez à compter, rappelez de boire de l'eau. Quand l'équipe de l'enfant est sur l'appareil, le parent qui touche **Mon parcours** peut choisir, dans l'effectif, la fiche de son enfant (l'écran demande « Qui es-tu dans l'équipe ? », car il est d'abord écrit pour le joueur).
+Pour le parent, l'accueil ajoute en tête un encadré **Pour les parents** : quinze minutes, un mur et un ballon suffisent ; restez à côté, aidez à compter, rappelez de boire de l'eau. Quand l'équipe de l'enfant est sur l'appareil, le parent qui touche **Mon parcours** voit l'écran « Quelle est la fiche de votre enfant ? » et choisit, dans l'effectif, la fiche de son enfant.
 
 ![L'accueil d'Estelle, parent dans la démo U13, avec l'encadré Pour les parents en haut de la page.](shot:youth-parent-home-named "L'accueil du parent : le même espace que l'enfant, avec des conseils pour l'accompagner.")
 
@@ -97,15 +97,15 @@ Pour le parent, l'accueil ajoute en tête un encadré **Pour les parents** : qui
 
 ## L'accueil du joueur de 16 ans et plus
 
-À partir de 16 ans (la catégorie U17), le joueur s'entraîne sur la semaine de match comme un professionnel. Son accueil change de ton : le bandeau, sombre, affiche la **Forme** du jour (**À noter** tant qu'il n'a pas répondu), la **Charge 7 j** en unités arbitraires (UA) et le **Match** à venir avec l'Indice du dernier match. Sous son nom, une ligne rappelle son poste, son numéro et son équipe.
+À partir de 16 ans (la catégorie U17), le joueur s'entraîne sur la semaine de match comme un professionnel. Son accueil change de ton : le bandeau, sombre, affiche la **Forme** du jour (**À noter** tant qu'il n'a pas répondu), la **Charge 7 j** en unités arbitraires (UA) et le **Match** à venir avec l'Indice du dernier match. Dans le bandeau, une ligne rappelle aussi son poste, son numéro et son équipe.
 
 L'écran présente ensuite **Ma semaine** (chaque jour de MD+1 à la veille du match, avec **Intensité habituelle** et **Effort noté**, puis la séance du jour), le **Prochain match** avec **Ma place** dans la composition prévue et **Le plan de jeu**, **Ma forme du jour**, **Ma charge**, **Mon dernier match** (l'Indice Njangi de l'équipe et **Ma part dans le jeu**), **Mes objectifs**, **Ma saison** et les liens **Aller plus loin**. Si le profil n'est pas encore relié à une fiche de l'effectif, un bandeau propose **Relier mon profil**.
 
-![L'accueil de Steve Ndjock, milieu de terrain senior de la démo club pro : Forme, Charge 7 j et Match, puis Ma semaine et le Prochain match.](shot:pro-player-home-linked "L'accueil performance : la semaine, la forme, la charge et sa place dans le prochain match.")
+![L'accueil de Steve Ndjock, milieu de terrain senior de la démo club pro : le bandeau sombre avec Forme à noter, Charge 7 j à 0 UA et Match à J-2 (Indice 67,9), puis Ma semaine vers le match contre les Rapides de Kribi et le Prochain match avec Ma place.](shot:pro-player-home-linked "L'accueil performance : la semaine, la forme, la charge et sa place dans le prochain match.")
 
 ### Le chemin du joueur de 16 ans et plus
 
-1. Choisissez **Joueur ou joueuse** et donnez votre catégorie (U17 à U21, Seniors ou Pro) et votre poste.
+1. Choisissez **Joueur ou joueuse** et donnez votre catégorie (de **U17** à **U21**, **Seniors** ou **Seniors pro**) et votre poste.
 2. Reliez votre profil à votre fiche avec **Relier mon profil**.
 3. Chaque matin, remplissez **Ma forme du jour** ; après chaque séance, notez votre effort de 0 à 10.
 4. Avant le match, regardez **Ma place** et **Le plan de jeu** ; après, ouvrez **Mon dernier match**.
@@ -138,7 +138,7 @@ Les livres et les 64 exercices sont gratuits pour tous, sans limite de durée. L
 ![La page Premium, avec les cinq formules Gratuit, Joueur Premium, Coach Pro, Club et académie et Fédération, et l'avertissement sur les paiements.](shot:site-pricing "Les cinq formules : les paiements ne sont pas encore branchés, la page le dit.")
 
 > [!ATTENTION] Ce que les formules font vraiment aujourd'hui
-> Les paiements ne sont pas branchés : **Activer (démo)** active une formule sans rien payer. Un nouveau profil commence en formule Gratuit, et seules deux limites s'y appliquent aujourd'hui : cinq séances et un match analysé en direct. Les comptes du staff sont prévus. Le modèle de jeu du club ou national, la formation des entraîneurs et l'accompagnement se construisent avec chaque club ou fédération ; ce ne sont pas des écrans à part de l'application.
+> Les paiements ne sont pas branchés : **Activer (démo)** active une formule sans rien payer. Un nouveau profil commence en formule Gratuit. Deux limites seulement existent aujourd'hui, cinq séances et un match analysé en direct, et elles valent pour **Gratuit** comme pour **Joueur Premium**, qui ne contient pas les outils de l'entraîneur. Sur les cartes, les comptes du staff et le modèle de jeu du club portent la mention « (bientôt) ». Le modèle de jeu national, la formation des entraîneurs et l'accompagnement se construisent avec chaque fédération ; ce ne sont pas des écrans à part de l'application.
 
 > [!INVESTISSEUR] Un produit, six portes d'entrée
 > Les six rôles ne sont pas six produits : c'est une seule base de données, un seul vocabulaire et un seul Indice, vus sous six angles. L'enfant qui fait son défi, son parent, son éducateur et le directeur technique travaillent sur la même équipe. C'est cette continuité, du joueur à la fédération, que le modèle économique du chapitre 24 cherche à faire payer par ceux qui en tirent le plus de valeur.

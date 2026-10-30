@@ -85,7 +85,7 @@
     "prepare": "Prepare the week",
     "weekCreated_one": "{{count}} session prepared for match week.",
     "weekCreated_other": "{{count}} sessions prepared for match week.",
-    "weekReady": "The week is already set: every day before the match has its session.",
+    "weekReady": "Nothing to add before the match: the remaining days already have their session, or are taken by another match and its recovery.",
     "seeWeek": "See the week",
     "liveShort": "Live",
     "againstTeam": "Against {{opponent}}"
@@ -295,7 +295,7 @@
     "dailyBody": "Three challenges a day, the same for every player: ball mastery, scanning, fitness. Log your best result: your curve builds day after day.",
     "xpRule": "{{done}} XP per challenge done, {{target}} more XP if you reach the target, a {{daily}} XP bonus for a challenge of the day. Your stage goes up on its own.",
     "libraryTitle": "All challenges",
-    "libraryBody": "{{n}} challenges to do on your own, against a wall or with a few cones. Each one trains a competence of the grid and links to a Lesson of the Ball.",
+    "libraryBody": "{{n}} challenges to do on your own, against a wall or with a few cones. Each one trains a skill of the grid and links to a Lesson of the Ball.",
     "moreLabel": "Go further",
     "lessonsHint": "The 40 pages of BriBri's notebook",
     "notebookHint": "Write down what you learn, like BriBri"
@@ -795,7 +795,7 @@
       "me": "Me",
       "coach": "The staff",
       "radarTitle": "Me and the staff",
-      "radarEmpty": "Pick a level for each competence: your radar appears here, next to the staff's evaluation.",
+      "radarEmpty": "Pick a level for each skill: your radar appears here, next to the staff's evaluation.",
       "coachNote": "The staff's evaluation comes from your squad record. A gap? It is a good topic for the next review.",
       "staffSays": "staff: {{level}}"
     },

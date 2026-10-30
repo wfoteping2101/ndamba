@@ -61,7 +61,7 @@ export default function WeekPlanner() {
   const runPlan = async () => {
     if (!planTarget || busy) return
     setBusy(true)
-    const res = await planWeek({ matchDate: planTarget.date, teamId: team?.id, ageGroup: team?.ageGroup, lang, createdBy: 'mola' })
+    const res = await planWeek({ matchDate: planTarget.date, teamId: team?.id, ageGroup: team?.ageGroup, lang, createdBy: 'mola', max: Number.isFinite(quota.left) ? quota.left : undefined })
     setBusy(false)
     setCreated(res)
   }

@@ -51,15 +51,15 @@ Pour répondre à « que prépare ta passe ? », la méthode donne sept mots. Le
 
 ![La fiche de l'exercice C01, Le Y du Njangi, avec ses deux intentions Progresser et Fixer, son schéma et ses jours MD-2, MD-1 et Jeunes.](shot:pro-drill-detail "Chaque exercice affiche les intentions qu'il entraîne, ici Progresser et Fixer.")
 
-Pour les enfants, ces sept mots sont encore trop nombreux. Le roman leur donne cinq images plus simples, les cinq pièces du Njangi, une par pays traversé par les deux frères : le cœur (jouer ensemble, au Cameroun), la raison (chaque passe a un but, aux États-Unis), les yeux (voir avant de recevoir, en France), la carte (être au bon endroit, en Espagne) et le souffle (posséder aussi quand ça brûle, en Angleterre). Les fiches d'exercices indiquent aussi leurs **Pièces du Njangi**. Vers 15 ans, les cinq pièces se fondent dans les sept mots des adultes.
+Pour les enfants, ces sept mots sont encore trop nombreux. Le roman leur donne cinq images plus simples, les cinq pièces du Njangi, une par pays traversé par les deux frères : le cœur (jouer ensemble, au Cameroun), la raison (chaque passe a un but, aux États-Unis), les yeux (voir avant de recevoir, en France), la carte (être au bon endroit, en Catalogne) et le souffle (posséder aussi quand ça brûle, en Angleterre). Les fiches d'exercices indiquent aussi leurs **Pièces du Njangi**. Vers 15 ans, les cinq pièces se fondent dans les sept mots des adultes.
 
 ## Mesurer : l'Indice Njangi
 
 Une idée qui ne se mesure pas reste un slogan. Le pourcentage de possession ne suffit pas : il dit combien de temps l'équipe a tenu la caisse, pas ce qu'elle en a fait. L'Indice Njangi répond à une autre question : sur 100, l'équipe a-t-elle possédé avec intention ?
 
-Il se construit à partir de quatorze codes, les boutons du pupitre de codage. Pendant le match, l'analyste (ou l'entraîneur, à défaut) touche un bouton par action. Les boutons sont rangés en groupes : **Possession** (passe réussie, passe perdue, passe ou conduite progressive, ligne traversée), **Danger** (entrée dans le dernier tiers, entrée dans la surface, tir, tir cadré, but), **Fixation** (dribble qui fixe deux adversaires, renversement) et **Transitions** (perte, reprise en 5 secondes, récupération).
+Il se construit à partir de quatorze codes, les boutons du pupitre de codage. Pendant le match, l'analyste (ou l'entraîneur, à défaut) touche un bouton par action. Les boutons sont rangés en groupes : **Possession** (passe réussie, passe perdue, passe ou conduite progressive, ligne traversée), **Danger** (entrée dans le dernier tiers, entrée dans la surface, tir, tir cadré, but), **Fixation** (dribble qui fixe deux adversaires, renversement) et **Transitions** (perte, reprise en 5 secondes, récupération). Un dernier groupe, **Adversaire**, note les tirs et les buts de l'équipe d'en face.
 
-![Le pupitre de codage en direct, avec ses boutons Passe, Passe perdue, Progressive, Ligne traversée, Dernier tiers, Surface, Fixe deux, Renversement, Perte et Reprise 5 s, et l'Indice en direct à droite.](shot:pro-live-tagger "Le pupitre de codage : une touche par action, et l'Indice qui se calcule pendant le match.")
+![Le pupitre de codage en direct avant le coup d'envoi du match contre les Rapides : les groupes Possession, Danger, Fixation, Transitions et Adversaire, avec les boutons Passe, Passe perdue, Progressive, Ligne traversée, Dernier tiers, Surface, Tir, Tir cadré, But, Fixe deux, Renversement, Perte, Reprise 5 s et Récupération, et à droite l'Indice en direct, encore à 0,0.](shot:pro-live-tagger "Le pupitre de codage : une touche par action, et l'Indice qui se calcule pendant le match.")
 
 À partir de ces codes, l'Indice additionne cinq sous-indices, chacun noté sur 20 points. Chacun répond à une question.
 
@@ -129,7 +129,7 @@ Le principe est d'entraîner le modèle de jeu chaque jour, en faisant varier l'
 
 Chez les jeunes, l'application utilise aussi l'étiquette **Jeunes** : on apprend en jouant, avec beaucoup de ballons, des petits jeux et du plaisir. La page **Semaine** affiche ces codes sur chaque jour et calcule la charge, c'est-à-dire les minutes multipliées par l'intensité de chaque exercice (basse 1, moyenne 2, haute 3, très haute 4).
 
-![La page La semaine de la démo club pro, avec les jours MD-4 à MD-1, le match du samedi contre les Rapides de Kribi et la charge de la semaine.](shot:pro-week "La semaine nommée par rapport au match, avec la charge qui monte puis redescend.")
+![La page La semaine de la démo club pro : les jours MD-4 à MD-1 du mardi au vendredi, chacun avec sa séance, le match du samedi contre les Rapides de Kribi, et la charge de la semaine, 303 minutes pour une charge de 817.](shot:pro-week "La semaine nommée par rapport au match, avec la charge qui monte puis redescend.")
 
 > [!MOLA] Passer de l'idée à la séance
 > Écrivez à Mola : « Quels exercices pour mieux reprendre le ballon ? ». Il cherche dans les 64 exercices ceux qui entraînent l'intention Reprendre et conviennent à l'âge de votre équipe, vous en propose trois, puis vous offre de créer une séance sur cette intention.

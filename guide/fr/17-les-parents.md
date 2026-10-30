@@ -37,10 +37,10 @@ Aujourd'hui, Ndamba n'a pas encore de comptes ni de synchronisation : toutes les
 **La fiche de l'effectif pour le parcours.** Le parcours (évaluations, observations, présences, minutes de jeu) vient de l'équipe et de son effectif. Quand l'équipe de l'enfant se trouve sur l'appareil, le parent relie son profil à la fiche de son enfant :
 
 1. Touchez la carte **Mon parcours**, sur l'accueil ou dans l'espace joueur.
-2. L'écran **Qui es-tu dans l'équipe ?** affiche l'effectif.
+2. L'écran **Quelle est la fiche de votre enfant ?** affiche l'effectif : « Choisissez la fiche de votre enfant dans l'effectif de Lionceaux de Bonamoussadi U13 pour suivre son parcours. »
 3. Touchez le nom de votre enfant. Son parcours s'ouvre, et la carte **Mon parcours** de l'accueil affiche désormais sa saison : « Cette saison : 15 séances, 4 matchs, 2 objectifs en cours. »
 
-![L'écran Qui es-tu dans l'équipe ? des Lionceaux de Bonamoussadi U13 : les quinze fiches de l'effectif, avec le numéro et le nom de chaque joueur, dont Kaydoudou (7) et BriBri (8).](shot:youth-journey "Choisir la fiche de son enfant dans l'effectif.")
+![L'écran de choix de fiche des Lionceaux de Bonamoussadi U13, tel qu'un joueur le voit, sous le titre Qui es-tu dans l'équipe ? : les quinze fiches de l'effectif, chacune avec son numéro et son nom, dont Kaydoudou (7) et BriBri (8). Un parent voit la même liste sous le titre Quelle est la fiche de votre enfant ?](shot:youth-journey "La liste des fiches, ici dans sa version joueur : le parent la voit sous son propre titre.")
 
 Aujourd'hui, le parcours écrit par l'entraîneur n'est visible que sur l'appareil où il l'a saisi. Une sauvegarde exportée depuis ses **Réglages** peut le transporter sur un autre appareil, mais elle remplace tout ce qui s'y trouve. Le partage entre plusieurs appareils viendra avec les comptes et la synchronisation, prévus (chapitre 26). En attendant, l'information de l'équipe arrive souvent par un autre chemin : la convocation que l'entraîneur prépare avec Mola et envoie lui-même par WhatsApp, SMS ou e-mail (chapitre 11).
 
@@ -53,7 +53,7 @@ Aujourd'hui, le parcours écrit par l'entraîneur n'est visible que sur l'appare
 | La convocation du match | Envoyée par l'entraîneur | WhatsApp, SMS ou e-mail |
 
 > [!ATTENTION] Restaurer remplace tout
-> **Restaurer une sauvegarde** remplace toutes les données du navigateur par celles du fichier : le profil, les équipes, mais aussi les défis et le carnet déjà notés sur cet appareil. Avant de restaurer, exportez vous-même une sauvegarde avec **Exporter**, et après la restauration, vérifiez votre nom et votre rôle dans **Réglages**.
+> **Restaurer une sauvegarde** remplace toutes les données du navigateur par celles du fichier : le profil, les équipes, mais aussi les défis et le carnet déjà notés sur cet appareil, ainsi que les leçons comprises et **Mon regard** que le fichier contient. Avant de restaurer, exportez vous-même une sauvegarde avec **Exporter**, et après la restauration, vérifiez votre nom et votre rôle dans **Réglages**.
 
 ## Le défi du jour, à deux
 
@@ -80,7 +80,7 @@ Ndamba a été pensé pour des mineurs. Voici ce que l'application fait, et ce q
 - **Pas de compte, pas de profil public, pas de messagerie.** Il n'existe dans Ndamba aucun moyen pour un inconnu de trouver un enfant ou de lui écrire. La seule conversation de l'application est celle avec Mola.
 - **Rien ne part sans vous.** Mola prépare dans l'application. Un message WhatsApp, un SMS, un e-mail ou un fichier de calendrier attend toujours votre accord dans l'onglet **À valider**, puis s'ouvre dans votre propre application de messagerie : c'est vous qui appuyez sur Envoyer.
 - **Ce qui peut sortir.** Quand le modèle d'intelligence artificielle facultatif est configuré sur le serveur (chapitre 18), la phrase que vous tapez à Mola est envoyée au serveur de Ndamba pour être mieux comprise, avec quelques éléments de contexte (le nom et la catégorie de l'équipe, le rôle, le prochain et le dernier adversaire). Les résultats des défis, le carnet et le regard sur soi n'en font pas partie. Sans ce modèle, Mola répond avec son moteur de règles.
-- **Tout effacer.** **Réglages**, puis **Tout effacer**, supprime le profil, les équipes, les séances, les matchs, les résultats des défis et le carnet de ce navigateur. L'action est définitive.
+- **Tout effacer.** **Réglages**, puis **Tout effacer**, supprime le profil, les équipes, les séances, les matchs, les résultats des défis, le carnet, les leçons comprises et **Mon regard** de ce navigateur ; seul le choix de la langue reste. L'action est définitive.
 
 ![L'onglet À valider de Mola, vide : Rien à valider, avec l'explication que tout message ou fichier qui sort de l'application y attend votre accord.](shot:pro-mola-approvals "L'onglet À valider : rien ne sort sans votre accord.")
 
@@ -91,4 +91,4 @@ L'écran ne sert ici qu'à lire une consigne et à noter un nombre : le travail,
 Les livres, eux, se lisent sans limite et gratuitement, quelle que soit la formule. Le roman *Lionceaux, tome 1 : Le Ballon qui voyage* raconte en quarante chapitres l'histoire de BriBri et Kaydoudou, deux frères de Bonamoussadi qui apprennent le football du Cameroun à l'Angleterre (chapitre 20). Sur l'accueil, la carte du roman propose **Lire le roman** et, juste dessous, le chapitre de la leçon du jour. Un rituel simple marche bien avec les 8 à 12 ans : lire ensemble le chapitre du soir, ouvrir sa Leçon du Ballon, et faire le lendemain le défi qui va avec. Pour un moment de jeu, le jeu de football *Lionceaux Football* reprend les clubs du livre (chapitre 21).
 
 > [!MOLA]
-> Tapez « Ouvre le roman » ou « Ouvre la leçon 8 » dans la conversation avec Mola. Ces phrases font partie des suggestions qu'il propose aux parents et aux joueurs, avec « Quels exercices pour mieux scanner ? ».
+> Tapez « Ouvre le roman » ou « Ouvre la leçon 1 » dans la conversation avec Mola. Ces phrases font partie des suggestions qu'il propose aux parents et aux joueurs, avec « Quels exercices pour mieux scanner ? ». Le numéro se change : « Ouvre la leçon 8 » ouvre la leçon 8.

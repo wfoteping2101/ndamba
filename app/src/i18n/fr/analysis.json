@@ -275,7 +275,7 @@
     "drillsHint": "Pour les sous-indices les plus faibles : {{subs}}.",
     "objectives": "Objectifs de la semaine",
     "plan": "Planifier la semaine avec ces objectifs",
-    "planNone": "Les séances de cette semaine existent déjà. Ouvrez la semaine pour les ajuster.",
+    "planNone": "Rien à ajouter cette semaine : les jours restants ont déjà leur séance, ou sont pris par un autre match. Ouvrez la semaine pour les ajuster.",
     "openWeek": "Ouvrir la semaine",
     "planNoMatch": "Créez d'abord le prochain match : la semaine se planifie à rebours depuis le jour du match.",
     "planFor": "Semaine du match contre {{opp}}, {{date}}. Intention dominante : {{intention}}.",
