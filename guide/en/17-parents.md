@@ -40,7 +40,7 @@ Today Ndamba has no accounts and no sync yet: all data lives in the browser of t
 2. The **Which record is your child's?** screen shows the squad: "Pick your child's record in the Lionceaux de Bonamoussadi U13 squad to follow their journey."
 3. Tap your child's name. Their journey opens, and the **My journey** card on the home page now shows their season: "This season: 15 sessions, 4 matches, 2 objectives in progress."
 
-![The record chooser for Lionceaux de Bonamoussadi U13 as a player sees it, under the heading Who are you in the team?: the fifteen records in the squad, each with its number and name, including Kaydoudou (7) and BriBri (8). A parent sees the same list under the heading Which record is your child's?](shot:youth-journey "The list of records, here in its player version: a parent sees it under a heading of their own.")
+![The record chooser for Lionceaux de Bonamoussadi U13 as a player sees it, headed Who are you in the team? The fifteen records in the squad, each with its number and name, include Kaydoudou (7) and BriBri (8). A parent sees the same list headed Which record is your child's?](shot:youth-journey "The list of records, here in its player version: a parent sees it under a heading of their own.")
 
 Today, the journey written by the coach can only be seen on the device where the coach entered it. A backup exported from the coach's **Settings** can carry it to another device, but it replaces everything already there. Sharing across several devices will come with accounts and sync, which are planned (chapter 26). Meanwhile, team news often reaches parents another way: the call-up the coach prepares with Mola and sends from their own phone by WhatsApp, text or e-mail (chapter 11).
 

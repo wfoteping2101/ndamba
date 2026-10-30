@@ -20,7 +20,7 @@ La page s'ouvre sur l'avatar de Mola et cette phrase : « L'agent de Ndamba. Il 
 
 ![La page Mola de la démo club pro : l'onglet Discussion avec le message de bienvenue adressé à Daniel, deux idées sous le titre Mola a remarqué avec les boutons Oui, rédige-la et Oui, analyse-le, le champ Demandez à Mola, et à droite la colonne Demandez par exemple et l'encadré Rien ne part sans vous.](shot:pro-mola-chat "La discussion : Mola accueille, remarque ce qui approche et propose de s'en occuper.")
 
-Dans la démo, Mola accueille l'entraîneur : « Bienvenue dans la démo, Daniel. Vous entraînez Étoile de la Côte : 22 joueurs, une semaine de séances, des matchs déjà analysés et un match à venir samedi. » En bas, le champ **Demandez à Mola…** reçoit votre demande : Entrée envoie, Maj et Entrée passent à la ligne.
+Dans la démo, Mola accueille l'entraîneur : « Bienvenue dans la démo, Daniel. Vous entraînez Étoile de la Côte : 22 joueurs, une semaine de séances, un match déjà analysé et un match à venir samedi. » En bas, le champ **Demandez à Mola…** reçoit votre demande : Entrée envoie, Maj et Entrée passent à la ligne.
 
 Sur ordinateur, la colonne **Demandez par exemple** propose huit phrases : touchez-en une, elle part comme si vous l'aviez tapée. Sur téléphone, ces idées sont des pastilles au-dessus du champ. Un joueur ou un parent reçoit des idées tournées vers les leçons et les livres (« Ouvre la leçon 1 »).
 
@@ -49,11 +49,11 @@ Chaque demande d'action devient une tâche, suivie dans l'onglet **Tâches** ; a
 
 ![L'onglet Tâches de la page Mola, encore vide dans la démo : le titre Aucune tâche pour l'instant, la phrase Chaque demande à Mola devient une tâche suivie ici, et le bouton Parler à Mola.](shot:pro-mola-tasks "L'onglet Tâches avant la première demande : chaque demande y laissera une trace.")
 
-Des filtres trient la liste : **Toutes**, **En cours**, **À valider**, **Terminées** et **Annulées**. Chaque tâche porte un nom (**Semaine préparée**, **Convocation**, **Analyse de match**…), son statut (**En cours**, **À valider**, **Terminé**, **Annulé** ou **Échec**), votre demande avec le jour et l'heure, le résumé, le bouton du résultat et le détail des étapes. Une tâche en attente affiche **Valider**.
+Des filtres trient la liste : **Toutes**, **En cours**, **À valider**, **Terminées** et **Annulées**. Chaque tâche porte un nom (**Semaine préparée**, **Convocation**, **Analyse de match**…), son statut (**En cours**, **À valider**, **Terminé**, **Annulé** ou **Échec**), votre demande datée, le résumé et le détail des étapes. Une tâche en attente affiche **Valider**.
 
 ## À valider : « Rien ne part sans vous »
 
-Avec Mola, deux choses seulement peuvent sortir de l'application : un message, la convocation du match, par WhatsApp, SMS ou e-mail ; et un fichier calendrier (.ics). Pour ces deux-là, Mola prépare tout, puis s'arrête sur une dernière étape : « J'attends votre accord avant d'ouvrir quoi que ce soit ». La tâche passe au statut **À valider**, et une pastille dorée compte les tâches en attente sur l'onglet et sur le bouton de Mola.
+Avec Mola, deux choses seulement peuvent sortir de l'application : la convocation du match (WhatsApp, SMS ou e-mail) et un fichier calendrier (.ics). Pour elles, Mola prépare tout, puis s'arrête : « J'attends votre accord avant d'ouvrir quoi que ce soit ». La tâche passe **À valider**, et une pastille dorée compte les tâches en attente sur l'onglet et sur le bouton de Mola.
 
 ![L'onglet À valider de la page Mola, vide dans la démo : le titre Rien à valider, l'explication qu'un message ou un fichier qui sort de l'application attend ici votre accord, et le bouton Rédiger une convocation.](shot:pro-mola-approvals "L'onglet À valider quand rien n'attend : un bouton pour rédiger la convocation.")
 
@@ -63,7 +63,7 @@ Envoyer la convocation du prochain match :
 2. Mola retrouve le match. Si vous avez modifié le texte de la convocation en préparant le match (chapitre 11), il reprend ce texte ; sinon il le rédige à partir de la composition : l'adversaire, le jour, l'heure, le stade, les titulaires, les remplaçants, et le rendez-vous « 45 minutes avant le coup d'envoi, avec les deux tenues, de l'eau et les protège-tibias ».
 3. La carte **En attente de votre accord** s'affiche : « Rien ne part sans vous. En approuvant, j'ouvre WhatsApp avec le message prêt : c'est vous qui choisissez le groupe et appuyez sur Envoyer. »
 4. Sous **Envoyer par**, choisissez **WhatsApp**, **SMS**, **E-mail** ou **Copier**, avec si vous voulez un **Numéro (facultatif)** ou une **Adresse e-mail (facultatif)**. Sous **Message**, **Modifier** puis **Terminer** changent le texte.
-5. Touchez **Approuver et ouvrir WhatsApp** (ou **Approuver et ouvrir les SMS**, **Approuver et ouvrir l'e-mail**, **Approuver et copier**). Votre propre application s'ouvre avec le message prêt. Choisissez le groupe et appuyez vous-même sur Envoyer.
+5. Touchez **Approuver et ouvrir WhatsApp** (ou **Approuver et ouvrir les SMS**, **Approuver et ouvrir l'e-mail**, **Approuver et copier**). Votre propre application s'ouvre avec le message prêt : à vous d'appuyer sur Envoyer.
 
 Mola confirme : « C'est ouvert dans WhatsApp. Choisissez le groupe de l'équipe et appuyez sur Envoyer : je n'envoie jamais rien à votre place. » La tâche passe à **Terminé**. Si vous touchez **Annuler**, rien ne part : « C'est annulé, rien n'est parti. »
 
@@ -73,7 +73,7 @@ Pour le calendrier, la carte montre les **Événements** de la semaine, et **App
 
 ![La page Semaine avec la fenêtre de Mola ouverte à droite : l'en-tête Mola, L'agent de Ndamba, le lien Tout Mola, le message de bienvenue, les deux idées de Mola a remarqué, une pastille Prépare ma semaine avant le match et le champ Demandez à Mola.](shot:pro-mola-launcher "Mola ouvert depuis la page Semaine : la même conversation, sans quitter la page.")
 
-Le bouton rond de Mola reste en bas à droite de chaque page, au-dessus de la barre d'onglets sur téléphone. Une pastille dorée y compte les validations en attente ; un point vert signale un nouveau message, qu'une bulle montre quelques secondes. Touchez le bouton : une fenêtre s'ouvre sur la page, avec la même conversation que sur la page Mola. **Tout Mola** ouvre la page complète ; la croix ou Échap referme la fenêtre, qui se ferme aussi quand vous changez de page.
+Le bouton rond de Mola reste en bas à droite de chaque page, au-dessus de la barre d'onglets sur téléphone ; une pastille dorée y compte les validations en attente. Touchez-le : une fenêtre s'ouvre sur la page, avec la même conversation. **Tout Mola** ouvre la page complète ; la croix ou Échap la referme.
 
 ![La page Mola sur téléphone : l'avatar, les onglets Discussion, Tâches et À valider, le message de bienvenue, les idées de Mola a remarqué, les pastilles et le champ Demandez à Mola au-dessus de la barre d'onglets.](shot:m-pro-mola "Sur téléphone, la même page, avec les idées en pastilles au-dessus du champ.")
 
@@ -93,7 +93,7 @@ Le bouton rond de Mola reste en bas à droite de chaque page, au-dessus de la ba
 | Ouvrir une Leçon du Ballon | Ouvre l'une des 40 leçons du roman, avec le lien vers son chapitre. | Rien |
 | Ouvrir un livre | Ouvre *Le Code Njangi* ou le roman *Le Ballon qui voyage*, au chapitre demandé. | Rien |
 
-Mola répond aussi à « Que peux-tu faire ? », aux salutations et aux remerciements. Sur les formules Gratuit et Joueur Premium, il s'arrête à cinq séances en tout. Une semaine en préparation s'arrête au quota (« L'offre gratuite compte 5 séances en tout : je me suis arrêté là. Coach Pro les rend illimitées. ») ; au-delà, il propose Coach Pro, en rappelant que « les livres et les 64 exercices restent ouverts à tous ».
+Mola répond aussi aux salutations et aux remerciements. Sur les formules Gratuit et Joueur Premium, il s'arrête à cinq séances en tout. Une semaine s'arrête au quota (« L'offre gratuite compte 5 séances en tout : je me suis arrêté là. Coach Pro les rend illimitées. ») ; au-delà, il propose Coach Pro, en rappelant que « les livres et les 64 exercices restent ouverts à tous ».
 
 Ce que Mola ne fait pas : il n'envoie jamais rien lui-même, il ne supprime rien, il ne modifie pas une séance existante, et il ne code pas les matchs à votre place. S'il ne reconnaît pas une demande, il le dit et montre ce qu'il sait faire.
 
@@ -104,7 +104,7 @@ Ce que Mola ne fait pas : il n'envoie jamais rien lui-même, il ne supprime rien
 
 Mola comprend en deux couches.
 
-La première est un moteur de règles qui tourne dans le navigateur, sur votre appareil. Il lit la phrase en français ou en anglais, quelle que soit la langue de l'interface, et répond dans la langue de l'interface. Il tolère les fautes de frappe et l'absence d'accents (« prepar ma semainne » est compris). Il reconnaît les jours (« samedi », « le 12 novembre », « 12/11 »), les heures (« 16h », « 4pm »), les codes de la semaine (« MD-3 », « J-2 »), les mots de la méthode (« contre-pression » donne l'intention **Reprendre**), les postes et les canaux. Une fois l'application chargée, ce moteur n'a besoin d'aucun réseau, ne coûte rien et répond tout de suite. Un fichier de tests automatiques le vérifie : 127 vérifications, toutes réussies le 29 octobre 2026.
+La première est un moteur de règles qui tourne dans le navigateur, sur votre appareil. Il lit le français et l'anglais, quelle que soit la langue de l'interface, et répond dans celle-ci. Il tolère les fautes de frappe et l'absence d'accents (« prepar ma semainne » est compris). Il reconnaît les jours (« samedi », « le 12 novembre », « 12/11 »), les heures (« 16h », « 4pm »), les codes de la semaine (« MD-3 », « J-2 »), les mots de la méthode (« contre-pression » donne l'intention **Reprendre**), les postes et les canaux. Une fois l'application chargée, ce moteur n'a besoin d'aucun réseau, ne coûte rien et répond tout de suite. Un fichier de tests automatiques le vérifie : 127 vérifications, toutes réussies le 29 octobre 2026.
 
 La seconde couche est facultative : un modèle d'intelligence artificielle. Quand le serveur qui héberge Ndamba dispose d'une clé de l'API d'Anthropic, chaque nouvelle demande (pas les simples oui ou non) part aussi vers la fonction /api/mola, qui demande à un modèle Claude ce que le message veut dire, dans la même liste d'actions :
 
@@ -112,7 +112,7 @@ La seconde couche est facultative : un modèle d'intelligence artificielle. Quan
 - Le navigateur attend au plus 3,5 secondes. Sans réponse, les règles répondent seules ; après deux échecs, Mola laisse le modèle de côté pour la visite.
 - Ce qui part vers le serveur : le texte du message (600 caractères au plus), la langue, la date du jour, le nom de l'équipe, sa catégorie, votre rôle, l'adversaire et la date du prochain et du dernier match. Ni les joueurs, ni les tags, ni les séances. La clé reste sur le serveur.
 
-Sans clé, seul le moteur de règles répond. C'était le cas dans la version testée pour ce guide : toutes les réponses citées ici viennent des règles.
+Sans clé, seul le moteur de règles répond, comme dans la version testée pour ce guide : toutes les réponses citées ici viennent des règles.
 
 ## Dix phrases qui marchent
 

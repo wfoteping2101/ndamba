@@ -8,10 +8,11 @@ import { BookOpen, Droplets, Flame, History, Moon, NotebookPen, Star, Target, Tr
 import { EmptyState, Segmented } from '../../ui'
 import { useT } from '../../i18n'
 import { db } from '../../lib/db'
-import { useDocumentTitle } from '../../lib/hooks'
+import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
+import { linkedPlayer } from '../../lib/journey'
 import { useSession } from '../../lib/session'
 import { addDays, cx, fmtDate } from '../../lib/util'
-import type { ChallengeLog } from '../../lib/types'
+import type { ChallengeLog, Player } from '../../lib/types'
 import {
   CHALLENGES, CHALLENGE_KINDS, XP_DAILY, XP_DONE, XP_TARGET, challengeText, getChallenge, reached, type ChallengeKind, type Progress,
 } from './challenges'
@@ -36,6 +37,9 @@ function YouthSpace() {
   const { t, lang } = useT('player')
   useDocumentTitle(t('space.docTitle'))
   const { profile, team } = useSession()
+  // the coach's view of « Mon regard »: the squad record linked to this profile (chooser or same name)
+  const squad = useLiveQuery(() => (team ? db.players.where('teamId').equals(team.id).toArray() : Promise.resolve([] as Player[])), [team?.id], [] as Player[])
+  const me = linkedPlayer(squad, profile)
   const { progress: p, bests, daily, logs, loading, today } = usePlayerData()
   const levelUp = useLevelUp(p.level, loading)
   const { toast, toastNode } = useToast()
@@ -108,7 +112,7 @@ function YouthSpace() {
 
       <ProgressSection logs={logs} today={today} p={p} />
 
-      <SelfAssessment teamId={team?.id} name={profile?.name ?? ''} />
+      <SelfAssessment teamId={team?.id} name={profile?.name ?? ''} coachSkills={me?.skills} />
 
       {/* the whole library, as a list that opens in place */}
       <section className="mb-12" aria-labelledby="tous-h">

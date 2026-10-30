@@ -362,7 +362,9 @@
     "coach": "Bienvenue {{name}}. Votre espace {{app}} est prêt. Pour commencer, je peux créer votre équipe, vous proposer des exercices ou ouvrir « {{methode}} ».",
     "player": "Bienvenue {{name}}. Votre espace {{app}} est prêt. Je peux vous proposer des exercices pour progresser, suivre votre parcours match après match, ou ouvrir les défis du jour.",
     "parent": "Bienvenue {{name}}. Je peux vous aider à accompagner votre enfant : les Leçons du Ballon de {{series}}, des exercices simples, et le roman « {{tome1}} » avec {{heroes}}.",
-    "demo": "Bienvenue dans la démo, {{name}}. Vous entraînez {{team}} : {{count}} joueurs, une semaine de séances, des matchs déjà analysés et un match à venir samedi. Demandez-moi ce que vous voulez, par exemple d'analyser le dernier match ou de rédiger la convocation."
+    "demo": "Bienvenue dans la démo, {{name}}. Vous entraînez {{team}} : {{count}} joueurs, une semaine de séances, {{analysed}} et un match à venir samedi. Demandez-moi ce que vous voulez, par exemple d'analyser le dernier match ou de rédiger la convocation.",
+    "analysed_one": "un match déjà analysé",
+    "analysed_other": "{{count}} matchs déjà analysés"
   },
   "pro": {
     "eyebrow": "Mola a remarqué",

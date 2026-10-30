@@ -33,10 +33,10 @@ Sous la conversation, Mola propose à chaque étape des réponses toutes prêtes
 3. **Votre rôle.** « Dans le football, vous êtes : » suivi de six choix : **Entraîneur ou éducateur**, **Joueur ou joueuse**, **Analyste**, **Parent**, **Manager ou directeur technique**, **Fédération ou ligue**.
 4. **Les questions de votre rôle.** Elles changent selon le rôle choisi (voir le tableau ci-dessous).
 5. **Votre ville**, puis **votre pays.** Mola propose Douala, Yaoundé, Garoua, Bafoussam, Abidjan et Dakar, ou **Passer**. Si la ville suffit à reconnaître le pays, il ne pose pas la question suivante et note simplement « Noté : Cameroun. ».
-6. **Vos objectifs.** « Dernière question : qu'attendez-vous de Ndamba ? » Touchez autant d'objectifs que vous voulez (par exemple **Une identité de jeu**, **Planifier mes semaines**, **Analyser mes matchs**, **Former des jeunes**, **Lire les livres**), puis **Valider ce choix**, ou **Plus tard**.
+6. **Vos objectifs.** « Dernière question : qu'attendez-vous de Ndamba ? » Touchez autant d'objectifs que vous voulez (par exemple **Une identité de jeu**, **Planifier mes semaines**, **Analyser mes matchs**, **Former des jeunes**, **Lire les livres**), puis **Valider ce choix** (ou **Valider ces 3 choix** s'il y en a trois), ou **Plus tard**.
 7. **La relecture.** « Merci Daniel. Voici votre profil. Touchez un champ pour le corriger, puis créez votre espace. » Le bouton doré **Créer mon espace** apparaît.
 
-![La conversation après la première réponse : Mola a noté la langue et demande le nom ; la fiche indique Langue Français et 1 sur 6.](shot:onboarding-step2 "Après la langue, Mola demande votre nom ; la fiche compte déjà un champ rempli.")
+![La conversation après la première réponse, « Je suis entraîneur » : Mola n'en retient que la langue (« Parfait, on continue en français. ») et demande le nom ; la fiche indique Langue Français et 1 sur 6.](shot:onboarding-step2 "À la question de la langue, Mola ne garde que la langue, puis demande votre nom.")
 
 | Rôle choisi | Ce que Mola demande ensuite |
 |---|---|
@@ -54,7 +54,7 @@ Deux détails rendent l'entraîneur plus rapide. Si vous choisissez **Seniors pr
 Mola n'oblige pas à répondre question par question. Une seule phrase peut remplir plusieurs champs d'un coup. À la question du nom, écrivez par exemple : « Je suis Daniel Mbarga, entraîneur de l'Étoile de la Côte en Ligue 1 à Douala ». Mola répond « Noté : entraîneur, Seniors pro, 11 contre 11, Douala (Cameroun), Étoile de la Côte. » et saute directement à la liste des joueurs. Les questions dont il a déjà la réponse ne sont pas reposées. S'il ne comprend pas une réponse, il le dit (« Je n'ai pas bien compris. ») et repose la question.
 
 > [!MOLA] Gagner du temps
-> Dès la question du nom, écrivez qui vous êtes, ce que vous entraînez et où, en une phrase : « Tonton Fokou, entraîneur des U13 de Bonamoussadi à Douala ». Mola note le rôle, la ville, le pays et l'équipe (« Noté : entraîneur, Douala (Cameroun), Bonamoussadi U13. »), puis passe à « Vous jouez à combien ? ».
+> Dès la question du nom, écrivez qui vous êtes, ce que vous entraînez et où, en une phrase : « Tonton Fokou, j'entraîne les U13 des Lionceaux de Bonamoussadi à Douala ». Mola note le rôle, la ville, le pays et l'équipe (« Noté : entraîneur, Douala (Cameroun), Lionceaux de Bonamoussadi U13. »), puis passe à « Vous jouez à combien ? ».
 
 ## La fiche profil qui se remplit
 
@@ -98,16 +98,16 @@ Vous voulez voir Ndamba rempli avant de créer votre propre espace ? Deux démos
 
 ![L'accueil de la démo académie : Bonsoir, Tonton Fokou, la séance du jour Vitesse : transitions et le prochain match contre les Panthères de Deïdo.](shot:youth-home "La démo académie U13 : l'accueil de l'éducateur des Lionceaux.")
 
-Les dates de la démo suivent le calendrier réel : le prochain match tombe toujours le samedi de la semaine en cours, et les séances de la semaine l'entourent. Les textes de la démo sont écrits dans la langue active au moment où vous la lancez. Quand la démo s'ouvre depuis la page **Bienvenue**, Mola y laisse un message : « Bienvenue dans la démo, Daniel. Vous entraînez Étoile de la Côte : 22 joueurs, une semaine de séances, un match déjà analysé et un match à venir samedi. »
+Les dates de la démo suivent le calendrier réel : le prochain match tombe toujours le samedi de la semaine en cours, et les séances de la semaine l'entourent. Les textes de la démo sont écrits dans la langue active au moment où vous la lancez. Quand la démo s'ouvre depuis la page **Bienvenue**, Mola y laisse un message : « Bienvenue dans la démo, Daniel. Vous entraînez Étoile de la Côte : 22 joueurs, une semaine de séances, des matchs déjà analysés et un match à venir samedi. Demandez-moi ce que vous voulez, par exemple d'analyser le dernier match ou de rédiger la convocation. »
 
 ### Ce qu'une démo remplace
 
-Une démo ne s'ajoute pas à vos données : elle **remplace tout** ce que ce navigateur contient pour Ndamba. Profil, équipes, joueurs, séances, matchs, actions codées, conversation et tâches de Mola, carnet, défis, vidéos, évaluations, observations, présences, objectifs, moments forts et suivi de forme : tout est effacé, puis rempli avec la démo. Passer d'une démo à l'autre remplace aussi la première.
+Une démo ne s'ajoute pas à vos données : elle **remplace** ce que ce navigateur contient pour Ndamba. Profil, équipes, joueurs, séances, matchs, actions codées, conversation et tâches de Mola, carnet, défis, vidéos, évaluations, observations, présences, objectifs, grands moments et suivi de forme : tout est effacé, puis rempli avec la démo. Seuls restent la langue choisie et, dans l'espace joueur, les leçons marquées « J'ai compris » et « Mon regard ». Passer d'une démo à l'autre remplace aussi la première.
 
-Depuis l'accueil du site, Ndamba vous protège : si ce navigateur contient votre propre travail, une fenêtre « Lancer la démo ? » vous prévient et vous invite à exporter d'abord une sauvegarde ; il faut toucher **Lancer la démo** pour continuer.
+Ndamba vous protège : si ce navigateur contient votre propre espace, une fenêtre « Lancer la démo ? » vous prévient et vous invite à exporter d'abord une sauvegarde ; il faut toucher **Lancer la démo** pour continuer, ou **Annuler**. La fenêtre s'ouvre depuis l'accueil du site comme depuis la barre de la page **Bienvenue** (son menu **Démo** sur téléphone).
 
-> [!ATTENTION] Les boutons de démo de la page Bienvenue ne demandent pas de confirmation
-> Sur la page **Bienvenue**, les boutons **Démo club pro** et **Démo académie U13** (ou le menu **Démo** sur téléphone) lancent la démo immédiatement, même si ce navigateur contient votre propre espace, qui est alors remplacé. Avant de les toucher, exportez une sauvegarde depuis **Réglages** (chapitre 6).
+> [!ATTENTION] Un profil sans équipe
+> Sur la page **Bienvenue**, la question n'est posée que si vous avez créé vos propres équipes. Un profil qui n'en a pas encore, celui d'un joueur ou d'un parent par exemple, est remplacé sans fenêtre, avec son carnet et ses défis. Avant d'ouvrir une démo depuis cette page, exportez une sauvegarde depuis **Réglages** (chapitre 6).
 
 ## Revenir plus tard
 
@@ -123,7 +123,7 @@ Il existe trois façons de repartir, de la plus douce à la plus radicale.
 
 | Ce que vous faites | Ce qui change | Ce qui reste |
 |---|---|---|
-| **Recommencer avec un nouveau profil** (page **Bienvenue**) | Une nouvelle conversation ; à la fin, le nouveau profil remplace l'ancien | Vos équipes, séances et matchs |
+| **Recommencer avec un nouveau profil** (page **Bienvenue**) | Une nouvelle conversation ; à la fin, le nouveau profil remplace l'ancien et repart en formule **Gratuit** | Vos équipes, séances et matchs |
 | Lancer une démo | Tout est remplacé par la démo | Rien |
 | **Tout effacer** (Réglages, panneau **Vos données**) | Tout est supprimé, vous revenez à l'accueil du site | Rien |
 

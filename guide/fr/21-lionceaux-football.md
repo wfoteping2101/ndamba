@@ -3,7 +3,7 @@ numero: 21
 slug: lionceaux-football
 titre: Lionceaux Football, le jeu
 partie: 8
-resume: Le jeu de football du roman, dans le navigateur : comment le lancer, les commandes au clavier, à la manette et au doigt, les seize équipes de Douala et de Yaoundé, et que faire s'il ne démarre pas.
+resume: Le jeu de football du roman, dans le navigateur : où le trouver, comment lancer une partie, le match amical et le tournoi interquartiers, les commandes au clavier, à la manette et au doigt, les seize équipes de Douala et de Yaoundé, ce qu'il aide à comprendre, et que faire s'il ne démarre pas.
 ---
 
 Les enfants qui lisent *Lionceaux* jouent aussi aux jeux vidéo de football. *Lionceaux Football* leur propose un jeu qui se passe chez eux : un match à onze sur un terrain de quartier en terre rouge, avec tout le quartier autour, pendant le tournoi de vacances interquartiers de Douala et de Yaoundé. Les clubs du roman y sont, avec leurs couleurs et leurs joueurs. Le jeu tourne dans le navigateur, sans rien installer, sur ordinateur comme sur téléphone. Il prolonge le livre par le plaisir, et il garde une idée du Njangi : le joueur qui appuie sur son action juste avant de recevoir joue en une touche, comme BriBri qui a déjà regardé.
@@ -24,25 +24,43 @@ Le lien avec les livres passe par le contenu : les équipes, les couleurs et les
 
 ![La page Lionceaux Football : le retour à Ndamba, le choix FR ou EN, la grande image du terrain de quartier, le titre, le texte de présentation, les boutons Jouer et Comment jouer, et la ligne sur le premier téléchargement.](shot:football-page "La page du jeu, avant de lancer la partie.")
 
-En haut, **Retour à Ndamba** ramène au site, et les boutons **FR** et **EN** changent la langue de la page. Le jeu reprend la langue choisie dans Ndamba, sinon celle du navigateur. Sous la grande image du terrain, une phrase présente le jeu, puis deux boutons : **Jouer** et **Comment jouer**, qui descend au mode d'emploi. Une ligne prévient : « Premier lancement : environ 25 Mo à télécharger, puis le jeu reste en mémoire. Sur téléphone, tourne l'écran en paysage. »
+En haut, **Retour à Ndamba** ramène à l'accueil du site, et les boutons **FR** et **EN** changent la langue de la page. La page s'affiche dans la langue choisie dans Ndamba, sinon dans celle du navigateur. Sous la grande image du terrain, une phrase présente le jeu, puis deux boutons : **Jouer** et **Comment jouer**, qui descend au mode d'emploi. Une ligne prévient : « Premier lancement : environ 25 Mo à télécharger, puis le jeu reste en mémoire. Sur téléphone, tourne l'écran en paysage. »
+
+Le mode d'emploi de la page tient en quatre blocs : trois étapes (« Lance une partie », « Le coup d'envoi », « Marque, gagne »), le tableau des commandes, les équipes, et « Si le jeu ne démarre pas ». Ce chapitre en reprend tout le contenu, avec ce que l'on voit ensuite dans le jeu lui-même.
 
 ## Lancer une partie
 
 1. Ouvrez la page du jeu et touchez **Jouer**.
-2. L'écran **Lionceaux Football** affiche « Le terrain se prépare… » et une barre de chargement avec le pourcentage. La première fois, le téléchargement prend un moment ; ensuite, le jeu démarre beaucoup plus vite.
-3. Sur téléphone, tournez l'écran en paysage. Tant que le téléphone est tenu debout, le jeu affiche « Tourne ton téléphone ». Sur Android, le jeu passe aussi en plein écran quand le navigateur le permet.
-4. Dans le menu du jeu, choisissez **Match amical** ou **Tournoi interquartiers**. Le menu propose aussi **Comment jouer**, **Options** et un bouton de langue.
+2. L'écran **Lionceaux Football** affiche « Le terrain se prépare… » et une barre de chargement avec le pourcentage. La première fois, le téléchargement prend un moment ; ensuite, le navigateur garde le jeu en mémoire et il démarre beaucoup plus vite.
+3. Sur téléphone, tournez l'écran en paysage. Tant que le téléphone est tenu debout, le jeu affiche « Tourne ton téléphone » et « Le jeu se joue en paysage. ». Sur Android, le jeu passe aussi en plein écran quand le navigateur le permet.
+4. Le menu du jeu apparaît : le titre LIONCEAUX, la devise « Le ballon doit voyager. » et cinq boutons, **Match amical**, **Tournoi interquartiers**, **Comment jouer**, **Options** et un bouton de langue (**English** quand le jeu est en français, **Français** quand il est en anglais).
 5. Pour quitter à tout moment, touchez **✕ Quitter**, en haut au centre de l'écran : vous revenez à la page du jeu.
 
-En **Match amical**, choisissez votre équipe (à gauche) et l'adversaire (à droite) avec les flèches, puis le niveau (facile, normal, difficile) et la durée. En **Tournoi interquartiers**, choisissez votre quartier et allez jusqu'au bout : huitième de finale, quart, demi, finale. En cas de match nul, la décision se fait aux tirs au but. Les **Options** règlent la manette à l'écran, la caméra, le volume et la langue.
+Dans le menu, **Comment jouer** rappelle toutes les commandes sur un seul écran, avec cette précision : « La manette à l'écran a les mêmes touches. » **Retour** ramène au menu.
+
+## Deux façons de jouer
+
+### Le match amical
+
+L'écran **Match amical** met deux panneaux face à face : **Ton équipe** à gauche, **Adversaire** à droite. Les flèches **<** et **>** font défiler les équipes. Chaque panneau montre le maillot, le nom de l'équipe, son quartier et son niveau (par exemple « Quartier de Douala · Niveau 72 »), puis une ligne qui dit d'où elle vient : « Dans le livre : Partie I, chapitres 1 à 8 » pour les Lionceaux de Bonamoussadi, « Équipe de quartier inventée pour le jeu » pour Akwa.
+
+Sous les panneaux, deux boutons changent de réglage à chaque toucher : **Difficulté** (Facile, Normal ou Difficile) et **Durée** (deux mi-temps de 2, 3, 5 ou 8 minutes ; « 2 × 3 min » au départ). **Coup d'envoi** lance le match, **Retour** ramène au menu.
+
+### Le tournoi interquartiers
+
+**Tournoi interquartiers** demande d'abord « Choisis ton équipe », avec les mêmes flèches. **Nouveau tournoi** annonce le premier tour, par exemple un huitième de finale entre les Lionceaux de Bonamoussadi et Ndokotti, et **Jouer le match** le lance. Le tournoi se joue jusqu'au bout : huitième de finale, quart, demi, finale. En cas de match nul, la décision se fait aux tirs au but.
+
+### Les options
+
+**Options** règle quatre choses : **Manette à l'écran** (oui ou non), **Caméra** (« Télé » ou « Proche »), **Volume** (sur 10) et **Langue · Language**. La langue se change donc à deux endroits dans le jeu : ici, ou avec le dernier bouton du menu.
 
 ## Le coup d'envoi
 
-Les deux équipes entrent sur le terrain. Appuyez sur **✕** (la croix) pour passer la présentation. Vous contrôlez le joueur qui a un **anneau** sous les pieds ; le score et le chrono sont en haut à gauche. Pour tirer, gardez **□** (le carré) appuyé : la barre de puissance s'affiche, et vous frappez en relâchant. Appuyez sur une action **juste avant** de recevoir le ballon, et votre joueur la joue en une touche. À la fin du match, l'écran montre la possession, les tirs et les passes réussies.
+Les deux équipes entrent sur le terrain. Appuyez sur **✕** (la croix) pour passer la présentation. Vous contrôlez le joueur qui a un **anneau** sous les pieds. En haut à gauche, le tableau d'affichage donne les deux équipes en trois lettres (BON pour Bonamoussadi), le score et le chrono ; en haut à droite, **II** met le match en pause. Pour tirer, gardez **□** (le carré) appuyé : la barre de puissance s'affiche, et vous frappez en relâchant. Appuyez sur une action **juste avant** de recevoir le ballon, et votre joueur la joue en une touche. À la fin du match, l'écran montre la possession, les tirs et les passes réussies.
 
 ## Les commandes
 
-Le jeu se joue de trois façons, et les trois donnent le même football. Sur téléphone, il se joue au doigt : le stick apparaît là où vous posez le pouce gauche, et les boutons sont à droite, disposés comme sur une manette PS5. Pour rester fluide sur les écrans très denses des téléphones, le jeu y limite sa résolution. Sur ordinateur, il se joue au clavier ou à la manette. Le tableau donne les deux colonnes côte à côte.
+Le jeu se joue de trois façons, et les trois donnent le même football. Sur téléphone, il se joue au doigt : le stick apparaît là où vous posez le pouce gauche, et les boutons sont à droite, disposés comme sur une manette PS5 (✕, ○, □ et △, avec L1 et R2 au-dessus). Pour rester fluide sur les écrans très denses des téléphones, le jeu y limite sa résolution. Sur ordinateur, il se joue au clavier ou à la manette. Le tableau donne les deux colonnes côte à côte.
 
 | Avec le ballon | Téléphone et manette PS5 | Clavier |
 |---|---|---|
@@ -74,16 +92,19 @@ Le jeu compte seize équipes, huit de Douala et huit de Yaoundé.
 
 Sur la page, trois noms sont en doré : ce sont les clubs du livre, les Lionceaux de Bonamoussadi, les Requins de Bépanda et les Panthères de Deïdo, avec leurs couleurs et leurs joueurs. Les autres quartiers sont réels, mais leurs équipes ont été inventées pour le jeu. En match amical, on peut aussi prendre les clubs de la suite du livre, à l'étranger : Maryland, Île-de-France, Maroc et Londres.
 
+Les trois clubs du livre sont aussi ceux de la **Démo académie U13** (chapitre 20) : les Lionceaux de Bonamoussadi y jouent un « Tournoi des quartiers » contre les Requins de Bépanda, puis contre les Panthères de Deïdo. Un enfant retrouve donc dans le jeu les adversaires de son équipe de démonstration.
+
 ![La page du jeu en entier : les trois étapes Lance une partie, Le coup d'envoi et Marque, gagne, le tableau des commandes, les équipes de Douala et de Yaoundé avec les clubs du livre en doré, et l'encadré Si le jeu ne démarre pas.](shot:football-page-full "Le mode d'emploi complet, sur la page du jeu.")
 
 ## Jouer avec les idées du livre
 
-Les matchs du jeu ne sont pas reliés aux données de l'application. Mais pour un parent ou un éducateur, il ouvre une conversation facile avec un enfant qui connaît les Leçons du Ballon. Quelques questions simples, après une partie :
+Les matchs du jeu ne sont pas reliés aux données de l'application : ils ne comptent ni dans les défis, ni dans le parcours du joueur. Mais pour un parent ou un éducateur, le jeu ouvre une conversation facile avec un enfant qui connaît les Leçons du Ballon. Quelques questions simples, après une partie :
 
-- As-tu osé la passe en profondeur (**△**) quand une ligne était ouverte ? C'est la leçon 7, « Oser la passe qui traverse ».
-- Quand tu as perdu le ballon, as-tu pressé tout de suite en gardant **✕** appuyé ? C'est la leçon 21, « Les cinq secondes ».
+- As-tu osé la passe en profondeur (**△**) quand une ligne était ouverte ? C'est la leçon 7, « Oser la passe qui traverse », et la leçon 13, « Les lignes ».
+- Quand tu as perdu le ballon, as-tu pressé tout de suite en gardant **✕** appuyé ? C'est la leçon 21, « Les cinq secondes ». Et l'as-tu fait au bon moment, sur une passe en arrière ou un mauvais contrôle ? C'est la leçon 35, « Les déclencheurs ».
 - As-tu joué en une touche, en appuyant juste avant de recevoir ? C'est la leçon 22, « Voir avant, c'est jouer plus vite ».
-- Dans l'écran de fin, combien de passes réussies ? Le ballon a-t-il voyagé ?
+- Dans l'écran de fin, regarde la possession, puis les tirs. Avoir eu le ballon a-t-il servi à quelque chose ? C'est la leçon 11, « Posséder n'est pas garder », et la leçon 16, « Compter ce qui compte ».
+- Combien de passes réussies ? Le ballon a-t-il voyagé ?
 
 Ensuite, on éteint l'écran et on va jouer contre le mur : le défi du jour attend dans l'espace joueur (chapitre 15).
 

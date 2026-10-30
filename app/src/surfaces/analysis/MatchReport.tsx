@@ -268,7 +268,7 @@ function HalfTable({ halves, total }: { halves: { h: Half; r: NjangiResult }[]; 
             {SUB_KEYS.map((k) => (
               <tr key={k}><td className="font-medium">{t(`sub.${k}.name`)}</td>{halves.map(({ h, r }) => <td key={h} className="text-right tabular-nums">{f(r.sub[k])}</td>)}<td className="text-right font-semibold tabular-nums">{f(total.sub[k])}</td></tr>
             ))}
-            <tr><td className="font-semibold">Indice</td>{halves.map(({ h, r }) => <td key={h} className="text-right font-semibold tabular-nums">{f(r.total)}</td>)}<td className="text-right font-bold tabular-nums text-forest-600">{f(total.total)}</td></tr>
+            <tr><td className="font-semibold">{t('live.indice')}</td>{halves.map(({ h, r }) => <td key={h} className="text-right font-semibold tabular-nums">{f(r.total)}</td>)}<td className="text-right font-bold tabular-nums text-forest-600">{f(total.total)}</td></tr>
           </tbody>
         </table>
         <p className="px-3 pt-1 text-xs text-ink-faint">{t('report.byHalfHint')}</p>

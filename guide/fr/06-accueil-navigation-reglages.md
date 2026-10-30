@@ -30,7 +30,7 @@ La grande carte blanche dit ce qui se passe aujourd'hui. Elle a trois visages :
 
 La carte sombre annonce le prochain match : **Domicile** ou **Extérieur**, le compte à rebours (« J-2 », puis « Demain », puis les heures et minutes le jour même), l'adversaire, la date, le lieu et la compétition. Trois boutons :
 
-- **Préparer la semaine**, en or : Ndamba crée les séances qui manquent, de MD-4 à MD-1, autour du match, pour les seuls jours encore à venir. Un message confirme, par exemple « 3 séances préparées pour la semaine du match. », avec le lien **Voir la semaine**. Si chaque jour a déjà sa séance, le message le dit. Le bouton est grisé le jour du match.
+- **Préparer la semaine**, en or : Ndamba crée les séances qui manquent, de MD-4 à MD-1, autour du match, pour les seuls jours encore à venir. Il laisse libres le jour d'un autre match et son lendemain, réservé à la récupération. Un message confirme, par exemple « 3 séances préparées pour la semaine du match. », avec le lien **Voir la semaine**. S'il n'y a rien à créer, le message le dit : « Rien à ajouter avant le match : les jours restants ont déjà leur séance, ou sont pris par un autre match et sa récupération. » C'est le cas dans la démo, dont la semaine est déjà prête. Le bouton est grisé le jour du match.
 - **Composition** ouvre la feuille de match (chapitre 11).
 - **Direct** ouvre l'analyse en direct (chapitre 12).
 
@@ -52,7 +52,7 @@ Avant tout match codé, la carte invite à le faire : **Analyser le match contre
 
 ### Mola
 
-La carte verte de Mola (« Ton agent : il prépare, tu valides ») propose une seule chose selon votre situation : créer votre équipe, préparer les séances qui manquent avant le match, rédiger la convocation quand la semaine est prête, ou montrer les exercices de votre point faible. Les trois exemples sous « Tu peux aussi lui demander », comme **Prépare la séance de demain**, ouvrent Mola avec la demande déjà écrite. **Parler à Mola** ouvre sa page complète.
+La carte verte de Mola (« Votre agent : il prépare, vous validez ») propose une seule chose selon votre situation : créer votre équipe, préparer les séances qui manquent avant le match, rédiger la convocation quand la semaine est prête (c'est ce qu'elle propose dans la démo), ou montrer les exercices de votre point faible. Les trois exemples sous « Vous pouvez aussi lui demander », comme **Prépare la séance de demain**, ouvrent Mola avec la demande déjà écrite. **Parler à Mola** ouvre sa page complète.
 
 ### Actions rapides
 
@@ -60,10 +60,10 @@ En bas, six raccourcis : **Nouvelle séance** (préparée pour aujourd'hui, à a
 
 ### Les autres rôles et l'accueil sans équipe
 
-L'analyste, le directeur technique et la fédération voient le même accueil ; le joueur et le parent ont le leur (chapitres 3, 15 et 17). Sans équipe, un petit formulaire « Crée ton équipe » s'affiche en haut : un nom, une catégorie, un format, puis **Créer l'équipe**. En formule **Gratuit**, **Nouvelle séance** et **Préparer la séance** mènent à la page **Premium** une fois cinq séances enregistrées.
+L'analyste, le directeur technique et la fédération voient le même accueil ; le joueur et le parent ont le leur (chapitres 3, 15 et 17). Sans équipe, un petit formulaire « Crée ton équipe » s'affiche en haut : un nom, une catégorie, un format, puis **Créer l'équipe**. En formule **Gratuit** comme en **Joueur Premium**, l'application compte cinq séances en tout. **Préparer la semaine** ne crée des séances que jusqu'à ce total ; une fois les cinq séances enregistrées, **Nouvelle séance**, **Préparer la séance** et **Préparer la semaine** mènent à la page **Premium**.
 
 > [!MOLA] Préparer sa semaine en une phrase
-> Plutôt que de chercher le bon bouton, ouvrez Mola et écrivez : « Prépare ma semaine avant le match ». Mola retrouve le prochain match et crée les séances qui manquent. Tout ce qui sortirait de l'application, comme une convocation, attend votre validation.
+> Plutôt que de chercher le bon bouton, ouvrez Mola et écrivez : « Prépare ma semaine avant le match ». Mola retrouve le prochain match et crée les séances qui manquent, en laissant libres le jour d'un autre match et son lendemain ; dans la démo, il répond que la semaine est déjà prête et qu'il n'a rien écrasé. Tout ce qui sortirait de l'application, comme une convocation, attend votre validation.
 
 ## Le bouton Mola et sa bulle de nouvelles
 
@@ -94,7 +94,7 @@ Pour changer d'équipe :
 
 Les **Réglages** (/app/reglages) rassemblent « Votre profil, vos équipes et vos données ». Ils s'ouvrent depuis le menu, le bloc avec votre nom en bas de la colonne ou le panneau **Plus** sur téléphone.
 
-![La page Réglages : le panneau Profil, le panneau Équipes avec l'Étoile de la Côte active, et à droite les panneaux Formule, Vos données et À propos.](shot:pro-settings-full "Les Réglages : profil, équipes, formule, données et à propos.")
+![La page Réglages de Daniel Mbarga : le panneau Profil, le panneau Équipes avec l'Étoile de la Côte active (Seniors, 11 contre 11, 4-3-3, 22 joueurs), et à droite les panneaux Formule (Coach Pro), Vos données avec Exporter, Restaurer et Tout effacer, et À propos.](shot:pro-settings-full "Les Réglages : profil, équipes, formule, données et à propos.")
 
 ### Profil
 
@@ -114,9 +114,9 @@ Votre formule actuelle (par exemple **Coach Pro**) et le bouton **Voir les formu
 
 « Tout est enregistré dans ce navigateur. » Ce panneau est votre filet de sécurité.
 
-- **Exporter une sauvegarde** : le bouton **Exporter** télécharge un fichier au nom de la date, comme ndamba-2026-10-29.json, avec votre profil, vos équipes, séances, matchs, analyses et notes.
+- **Exporter une sauvegarde** : le bouton **Exporter** télécharge un fichier au nom de la date, comme ndamba-2026-10-29.json, avec votre profil, vos équipes, séances, matchs, analyses et notes, ainsi que les leçons marquées « J'ai compris » et « Mon regard » de l'espace joueur.
 - **Restaurer une sauvegarde** : le bouton **Restaurer** vous fait choisir un fichier. Ndamba affiche « Restaurer cette sauvegarde ? », la date de la sauvegarde et son nombre d'éléments, et prévient que toutes les données actuelles de ce navigateur seront remplacées. Confirmez avec **Restaurer**. Un fichier qui ne vient pas de ces réglages est refusé, avec un message clair.
-- **Tout effacer** : supprime le profil, les équipes et tout le reste de ce navigateur. Une fenêtre demande confirmation (« Cette action est définitive. ») ; après **Tout effacer**, vous revenez à l'accueil du site.
+- **Tout effacer** : supprime le profil, les équipes et tout le reste de ce navigateur, y compris les leçons marquées « J'ai compris » et « Mon regard » ; le choix de la langue, lui, est gardé. Une fenêtre demande confirmation (« Cette action est définitive. ») ; après **Tout effacer**, vous revenez à l'accueil du site.
 
 Pour passer votre travail sur un autre appareil :
 
@@ -137,16 +137,16 @@ La page **Premium** s'ouvre depuis le menu Moi, depuis **Voir les formules** ou 
 
 Juste sous le titre, un encadré annonce : « Les paiements ne sont pas encore branchés. Mobile Money et cartes bancaires arrivent bientôt. En attendant, vous pouvez activer n'importe quelle formule en mode démo pour tout essayer, sans payer. »
 
-Le sélecteur **Mensuel** ou **Annuel** change l'affichage des prix ; l'annuel compte dix mois (« 2 mois offerts »). Les cinq formules sont **Gratuit** (0 $US), **Joueur Premium** (4,99 $US par mois), **Coach Pro** (12,99 $US par mois, « Conseillé aux entraîneurs »), **Club et académie** (49 $US par mois) et **Fédération** (« Sur devis »). Chaque prix est suivi de son équivalent approximatif en francs CFA, sur la base d'environ 600 FCFA pour un dollar. Des questions fréquentes ferment la page.
+Le sélecteur **Mensuel** ou **Annuel** change l'affichage des prix ; l'annuel compte dix mois (« 2 mois offerts »). Les cinq formules sont **Gratuit** (0 $US), **Joueur Premium** (4,99 $US par mois), **Coach Pro** (12,99 $US par mois, « Conseillé aux entraîneurs »), **Club et académie** (49 $US par mois) et **Fédération** (« Sur devis »). Chaque prix payant est suivi de son équivalent approximatif en francs CFA, sur la base d'environ 600 FCFA pour un dollar. Des questions fréquentes ferment la page.
 
 Pour activer une formule en démo :
 
 1. Ouvrez **Premium**.
 2. Sur la carte voulue, touchez **Activer (démo)**.
 3. Un message confirme, par exemple « Formule Coach Pro activée en mode démo. Aucun paiement n'a été effectué. ».
-4. La carte affiche désormais **Votre formule**, et le nom de la formule apparaît sous votre nom en bas de la colonne et dans **Réglages**.
+4. La carte affiche désormais **Votre formule**, et le panneau **Formule** des **Réglages** donne le nouveau nom. Sous votre nom, en bas de la colonne, c'est votre rôle qui reste affiché.
 
-Ce que l'activation change, aujourd'hui : la formule **Gratuit** limite l'application à cinq séances et à un match analysé en direct. Dès qu'une autre formule est active, ces deux limites disparaissent. Pour revenir en arrière, activez **Gratuit**. Certaines lignes des cartes décrivent l'offre prévue plutôt qu'un écran existant, comme les comptes du staff, qui supposent des comptes utilisateurs pas encore construits. Le chapitre 24 détaille le modèle économique.
+Ce que l'activation change, aujourd'hui : les formules **Gratuit** et **Joueur Premium**, qui ne contiennent pas les outils de l'entraîneur, limitent l'application à cinq séances et à un match analysé en direct. Une fois la limite atteinte, les boutons qui créent des séances mènent à **Premium**, et le pupitre d'un nouveau match affiche « Analyse en direct illimitée avec Coach Pro » avec **Voir les offres**. Avec **Coach Pro**, **Club et académie** ou **Fédération**, ces deux limites disparaissent. Pour revenir en arrière, activez **Gratuit**. Certaines lignes des cartes décrivent l'offre prévue plutôt qu'un écran existant : « Comptes du staff (bientôt) » et « Le modèle de jeu du club (bientôt) » le disent elles-mêmes, car les comptes utilisateurs ne sont pas encore construits. Le chapitre 24 détaille le modèle économique.
 
 > [!INVESTISSEUR] Des prix affichés, aucun encaissement
 > La page montre les prix réels envisagés, en dollars et en francs CFA, et dit noir sur blanc que rien n'est encaissé : l'activation est une démonstration. C'est un choix d'honnêteté envers les premiers clubs, et c'est aussi la prochaine étape commerciale : brancher Mobile Money et la carte bancaire sur des formules déjà définies, déjà visibles et déjà testables.

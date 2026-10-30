@@ -760,7 +760,9 @@ export async function postWelcome(opts: { lang: Lang; name: string; role: Profil
   const first = opts.name.split(' ')[0]
   const coachy = COACHY.includes(opts.role)
   const key = opts.demo ? 'welcome.demo' : coachy ? (opts.teamName ? 'welcome.coachTeam' : 'welcome.coach') : opts.role === 'parent' ? 'welcome.parent' : 'welcome.player'
-  const text = t(key, { name: first, team: opts.teamName ?? '', count: opts.players ?? 0 })
+  // the demo says how many of its matches are already tagged (one in the pro demo, four in the academy)
+  const analysed = opts.demo ? ((await db.events.orderBy('matchId').uniqueKeys()) as string[]).length : 0
+  const text = t(key, { name: first, team: opts.teamName ?? '', count: opts.players ?? 0, analysed: t('welcome.analysed', { count: analysed }) })
   await postMessage('mola', text, { chips: defaultChips(opts.lang, opts.role).slice(0, 4) })
 }
 

@@ -33,10 +33,10 @@ Under the conversation, Mola offers ready-made answers to tap at every step. You
 3. **Your role.** "In football, you are:" followed by six choices: **Coach or educator**, **Player**, **Analyst**, **Parent**, **Manager or technical director**, **Federation or league**.
 4. **The questions for your role.** They change with the role you chose (see the table below).
 5. **Your city**, then **your country.** Mola offers Douala, Yaoundé, Garoua, Bafoussam, Abidjan and Dakar, or **Skip**. When the city is enough to know the country, it skips the next question and simply notes "Got it: Cameroon.".
-6. **Your goals.** "Last question: what do you expect from Ndamba?" Tap as many goals as you like (for instance **A playing identity**, **Plan my weeks**, **Analyse my matches**, **Develop young players**, **Read the books**), then **Confirm this choice**, or **Later**.
+6. **Your goals.** "Last question: what do you expect from Ndamba?" Tap as many goals as you like (for instance **A playing identity**, **Plan my weeks**, **Analyse my matches**, **Develop young players**, **Read the books**), then **Confirm this choice** (or **Confirm these 3 choices** if there are three), or **Later**.
 7. **Review.** "Thank you Daniel. Here is your profile. Tap a field to correct it, then create your space." The gold **Create my space** button appears.
 
-![The conversation after the first answer: Mola has noted the language and asks for the name; the card shows Language English and 1 of 6.](shot:onboarding-step2 "After the language, Mola asks for your name; one field is already filled in.")
+![The conversation after the first answer, "I am a coach": Mola keeps only the language from it ("Great, let's continue in English.") and asks for the name; the card shows Language English and 1 of 6.](shot:onboarding-step2 "At the language question, Mola keeps only the language, then asks your name.")
 
 | Role chosen | What Mola asks next |
 |---|---|
@@ -54,7 +54,7 @@ Two details make it faster for a coach. If you choose **Pro seniors**, Mola does
 Mola does not force you to answer one question at a time. A single sentence can fill several fields at once. When asked your name, you can write, for example: "I'm Daniel Mbarga, coach of Étoile de la Côte, top flight, in Douala". Mola replies "Got it: coach, Pro seniors, 11 v 11, Douala (Cameroon), Étoile de la Côte." and jumps straight to the player list. Questions it already has the answer to are not asked again. If it does not understand an answer, it says so ("I didn't quite get that.") and asks again.
 
 > [!MOLA] Save time
-> From the name question on, say who you are, what you coach and where, in one sentence: "Tonton Fokou, I coach the U13s at Bonamoussadi in Douala". Mola notes the role, the city, the country and the team ("Got it: coach, Douala (Cameroon), Bonamoussadi U13."), then moves on to "How many a side do you play?".
+> From the name question on, say who you are, what you coach and where, in one sentence: "Tonton Fokou, I coach the Lionceaux de Bonamoussadi U13 in Douala". Mola notes the role, the city, the country and the team ("Got it: coach, Douala (Cameroon), Lionceaux de Bonamoussadi U13."), then moves on to "How many a side do you play?".
 
 ## The profile card that fills itself in
 
@@ -98,16 +98,16 @@ Want to see Ndamba full of data before creating your own space? Two complete dem
 
 ![The home screen of the academy demo: Good evening, Tonton Fokou, today's session Speed: transitions and the next match against Panthères de Deïdo.](shot:youth-home "The U13 academy demo: the home screen of the Lionceaux coach.")
 
-The demo's dates follow the real calendar: the next match always falls on the Saturday of the current week, with the week's sessions around it. The demo's texts are written in the language that is active when you start it. When the demo opens from the welcome page, Mola leaves a message there: "Welcome to the demo, Daniel. You coach Étoile de la Côte: 22 players, a week of sessions, a match already analysed and a match coming up on Saturday."
+The demo's dates follow the real calendar: the next match always falls on the Saturday of the current week, with the week's sessions around it. The demo's texts are written in the language that is active when you start it. When the demo opens from the welcome page, Mola leaves a message there: "Welcome to the demo, Daniel. You coach Étoile de la Côte: 22 players, a week of sessions, matches already analysed and a match coming up on Saturday. Ask me anything, for example to analyse the last match or to draft the call-up."
 
 ### What a demo replaces
 
-A demo is not added to your data: it **replaces everything** this browser holds for Ndamba. Profile, teams, players, sessions, matches, tagged actions, Mola's conversation and tasks, notebook, challenges, videos, assessments, observations, attendance, objectives, milestones and the form log: all of it is erased, then filled with the demo. Switching from one demo to the other replaces the first one too.
+A demo is not added to your data: it **replaces** what this browser holds for Ndamba. Profile, teams, players, sessions, matches, tagged actions, Mola's conversation and tasks, notebook, challenges, videos, assessments, observations, attendance, objectives, big moments and the form log: all of it is erased, then filled with the demo. Only the chosen language and, in the player space, the lessons marked "I've got it" and "My view" stay. Switching from one demo to the other replaces the first one too.
 
-From the site's home page, Ndamba protects you: if this browser holds your own work, a "Start the demo?" window warns you and invites you to export a backup first; you have to tap **Start the demo** to go ahead.
+Ndamba protects you: if this browser holds your own space, a "Start the demo?" window warns you and invites you to export a backup first; you have to tap **Start the demo** to go ahead, or **Cancel**. The window opens from the site's home page and from the bar of the welcome page alike (its **Demo** menu on a phone).
 
-> [!WARNING] The demo buttons on the welcome page do not ask for confirmation
-> On the welcome page, the **Pro club demo** and **U13 academy demo** buttons (or the **Demo** menu on a phone) start the demo at once, even if this browser holds your own space, which is then replaced. Before you tap them, export a backup from **Settings** (chapter 6).
+> [!WARNING] A profile without a team
+> On the welcome page, the question is only asked if you have created teams of your own. A profile that has none yet, a player's or a parent's for instance, is replaced without a window, along with its notebook and challenges. Before opening a demo from that page, export a backup from **Settings** (chapter 6).
 
 ## Coming back later
 
@@ -123,7 +123,7 @@ There are three ways to start again, from the gentlest to the most radical.
 
 | What you do | What changes | What stays |
 |---|---|---|
-| **Start again with a new profile** (welcome page) | A new conversation; at the end, the new profile replaces the old one | Your teams, sessions and matches |
+| **Start again with a new profile** (welcome page) | A new conversation; at the end, the new profile replaces the old one and starts again on the **Free** plan | Your teams, sessions and matches |
 | Start a demo | Everything is replaced by the demo | Nothing |
 | **Erase everything** (Settings, **Your data** panel) | Everything is deleted and you return to the site's home page | Nothing |
 

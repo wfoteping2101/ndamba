@@ -30,7 +30,7 @@ The large white card tells you what is happening today. It has three faces:
 
 The dark card announces the next match: **Home** or **Away**, the countdown ("D-2", then "Tomorrow", then hours and minutes on the day), the opponent, the date, the venue and the competition. Three buttons:
 
-- **Prepare the week**, in gold: Ndamba creates the missing sessions, from MD-4 to MD-1, around the match, for the days still ahead only. A message confirms, for example "3 sessions prepared for match week.", with a **See the week** link. If every day already has its session, the message says so. The button is greyed out on match day.
+- **Prepare the week**, in gold: Ndamba creates the missing sessions, from MD-4 to MD-1, around the match, for the days still ahead only. It leaves free the day of another match and the day after it, kept for recovery. A message confirms, for example "3 sessions prepared for match week.", with a **See the week** link. When there is nothing to create, the message says so: "Nothing to add before the match: the remaining days already have their session, or are taken by another match and its recovery." That is the case in the demo, whose week is already set. The button is greyed out on match day.
 - **Line-up** opens the match sheet (chapter 11).
 - **Live** opens live analysis (chapter 12).
 
@@ -40,19 +40,19 @@ With no match planned, the card reads "No match planned" and offers **New match*
 
 A strip shows the week from Monday to Sunday and its total minutes: today in green, match day in black, past days faded. Each day carries its name relative to the match (MD-4, MD-3...) and one dot per session. Tap a day to open its match or session; **Plan** opens the **Week** page (chapter 9).
 
-![The full home screen: the week strip, the Indice Njangi card for the last match at 67.9 with its five sub-indices, the Mola card and the six quick actions.](shot:pro-home-full "The whole home screen: the week, the Indice Njangi, Mola and the quick actions.")
+![The full home screen: the week strip, the Njangi Index card for the last match at 67.9 with its five sub-indices, the Mola card and the six quick actions.](shot:pro-home-full "The whole home screen: the week, the Njangi Index, Mola and the quick actions.")
 
-### Indice Njangi, last match
+### Njangi Index, last match
 
-This card sums up the last tagged match. On the left, the Indice Njangi (the Njangi Index) out of 100 (67.9 in the demo), its level in words ("Solid Njangi"), the opponent, the score and the date, then a small trend line once several matches have been analysed. On the right, the five sub-indices out of 20: **Progression**, **Penetration**, **Pinning**, **Regain** and **Control**. The weakest one carries the "to work on" tag.
+This card sums up the last tagged match. On the left, the Njangi Index out of 100 (67.9 in the demo), its level in words ("Solid Njangi"), the opponent, the score and the date, then a small trend line once several matches have been analysed. On the right, the five sub-indices out of 20: **Progression**, **Penetration**, **Fixation**, **Regain** and **Control**. The weakest one carries the "to work on" tag.
 
-Below, one sentence draws the lesson, here *Weak spot: Pinning. This week, the intention to train is "Pin".* Two buttons follow: **Prepare the week around "Pin"**, which builds the week around that intention, and **See the report** (chapter 13). Chapter 2 explains what the Indice and its sub-indices measure.
+Below, one sentence draws the lesson, here *Weak spot: Fixation. This week, the intention to train is "Pin".* Two buttons follow: **Prepare the week around "Pin"**, which builds the week around that intention, and **See the report** (chapter 13). Chapter 2 explains what the Index and its sub-indices measure.
 
 Before any match has been tagged, the card invites you to do it: **Analyse the match against...** if a match is coming up, otherwise **Open analysis**.
 
 ### Mola
 
-Mola's green card ("Your agent: it prepares, you approve") suggests one thing, depending on your situation: create your team, prepare the sessions missing before the match, draft the call-up once the week is ready, or show the drills for your weak spot. The three examples under "You can also ask", such as **Prepare tomorrow's session**, open Mola with the request already typed. **Talk to Mola** opens its full page.
+Mola's green card ("Your agent: it prepares, you approve") suggests one thing, depending on your situation: create your team, prepare the sessions missing before the match, draft the call-up once the week is ready (that is what it offers in the demo), or show the drills for your weak spot. The three examples under "You can also ask", such as **Prepare tomorrow's session**, open Mola with the request already typed. **Talk to Mola** opens its full page.
 
 ### Quick actions
 
@@ -60,10 +60,10 @@ At the bottom, six shortcuts: **New session** (prepared for today, ready to adju
 
 ### Other roles and the home screen without a team
 
-Analysts, technical directors and federations see the same home screen; players and parents have their own (chapters 3, 15 and 17). Without a team, a small "Create your team" form appears at the top: a name, an age group, a format, then **Create the team**. On the **Free** plan, **New session** and **Prepare the ... session** lead to the **Premium** page once five sessions have been saved.
+Analysts, technical directors and federations see the same home screen; players and parents have their own (chapters 3, 15 and 17). Without a team, a small "Create your team" form appears at the top: a name, an age group, a format, then **Create the team**. On the **Free** plan, as on **Player Premium**, the app counts five sessions in all. **Prepare the week** only creates sessions up to that total; once five sessions are saved, **New session**, **Prepare the ... session** and **Prepare the week** lead to the **Premium** page.
 
 > [!MOLA] Plan your week in one sentence
-> Instead of looking for the right button, open Mola and type: "Plan my week before the match". Mola finds the next match and creates the missing sessions. Anything that would leave the app, such as a call-up, waits for your approval.
+> Instead of looking for the right button, open Mola and type: "Plan my week before the match". Mola finds the next match and creates the missing sessions, leaving free the day of another match and the day after it; in the demo, it replies that the week is already set and that it overwrote nothing. Anything that would leave the app, such as a call-up, waits for your approval.
 
 ## The Mola button and its news bubble
 
@@ -94,7 +94,7 @@ To switch team:
 
 **Settings** (/app/reglages) gathers "Your profile, your teams and your data". It opens from the menu, from the block with your name at the bottom of the column, or from the **More** panel on a phone.
 
-![The Settings page: the Profile panel, the Teams panel with Étoile de la Côte active, and on the right the Plan, Your data and About panels.](shot:pro-settings-full "Settings: profile, teams, plan, data and about.")
+![Daniel Mbarga's Settings page: the Profile panel, the Teams panel with Étoile de la Côte active (Seniors, 11 v 11, 4-3-3, 22 players), and on the right the Plan panel (Coach Pro), Your data with Export, Restore and Erase everything, and About.](shot:pro-settings-full "Settings: profile, teams, plan, data and about.")
 
 ### Profile
 
@@ -114,9 +114,9 @@ Your current plan (for instance **Coach Pro**) and the **See the plans** button,
 
 "Everything is saved in this browser." This panel is your safety net.
 
-- **Export a backup**: the **Export** button downloads a file named after the date, such as ndamba-2026-10-29.json, with your profile, teams, sessions, matches, analyses and notes.
+- **Export a backup**: the **Export** button downloads a file named after the date, such as ndamba-2026-10-29.json, with your profile, teams, sessions, matches, analyses and notes, as well as the lessons marked "I've got it" and "My view" in the player space.
 - **Restore a backup**: the **Restore** button asks you to pick a file. Ndamba shows "Restore this backup?", the backup's date and number of items, and warns that all the current data in this browser will be replaced. Confirm with **Restore**. A file that did not come from these settings is refused, with a clear message.
-- **Erase everything**: deletes the profile, the teams and everything else from this browser. A window asks you to confirm ("This cannot be undone."); after **Erase everything**, you are back on the site's home page.
+- **Erase everything**: deletes the profile, the teams and everything else from this browser, including the lessons marked "I've got it" and "My view"; the language choice is kept. A window asks you to confirm ("This cannot be undone."); after **Erase everything**, you are back on the site's home page.
 
 To move your work to another device:
 
@@ -137,16 +137,16 @@ The **Premium** page opens from the Me menu, from **See the plans** or on the si
 
 Right under the title, a box states: "Payments are not connected yet. Mobile Money and cards are coming soon. Meanwhile, you can activate any plan in demo mode and try everything, without paying."
 
-The **Monthly** or **Yearly** switch changes how prices are shown; a year costs ten months ("2 months free"). The five plans are **Free** ($0), **Player Premium** ($4.99 a month), **Coach Pro** ($12.99 a month, "Recommended for coaches"), **Club and academy** ($49 a month) and **Federation** ("On quote"). Each price comes with its approximate equivalent in CFA francs, at about 600 FCFA to the dollar. A set of questions and answers closes the page.
+The **Monthly** or **Yearly** switch changes how prices are shown; a year costs ten months ("2 months free"). The five plans are **Free** ($0), **Player Premium** ($4.99 a month), **Coach Pro** ($12.99 a month, "Recommended for coaches"), **Club and academy** ($49 a month) and **Federation** ("On quote"). Each paid price comes with its approximate equivalent in CFA francs, at about 600 FCFA to the dollar. A set of questions and answers closes the page.
 
 To activate a plan as a demo:
 
 1. Open **Premium**.
 2. On the plan you want, tap **Activate (demo)**.
 3. A message confirms, for example "Coach Pro plan activated in demo mode. No payment was taken.".
-4. The card now shows **Your plan**, and the plan's name appears under your name at the bottom of the column and in **Settings**.
+4. The card now shows **Your plan**, and the **Plan** panel in **Settings** gives the new name. Under your name, at the bottom of the column, your role stays on show.
 
-What activation changes today: the **Free** plan limits the app to five sessions and one match analysed live. As soon as another plan is active, both limits disappear. To go back, activate **Free**. Some lines on the cards describe the planned offer rather than an existing screen, such as staff accounts, which depend on user accounts that are not built yet. Chapter 24 explains the business model.
+What activation changes today: the **Free** and **Player Premium** plans, which do not include the coaching tools, limit the app to five sessions and one match analysed live. Once the limit is reached, the buttons that create sessions lead to **Premium**, and the tagging pad of a new match shows "Unlimited live analysis with Coach Pro" with **See plans**. With **Coach Pro**, **Club and academy** or **Federation**, both limits disappear. To go back, activate **Free**. Some lines on the cards describe the planned offer rather than an existing screen: "Staff accounts (coming soon)" and "Your club game model (coming soon)" say so themselves, since user accounts are not built yet. Chapter 24 explains the business model.
 
 > [!INVESTOR] Prices on show, nothing charged
 > The page shows the intended prices, in dollars and CFA francs, and says in black and white that nothing is charged: activation is a demonstration. It is a matter of honesty towards the first clubs, and it is also the next commercial step: plugging Mobile Money and cards into plans that are already defined, already visible and already testable.
