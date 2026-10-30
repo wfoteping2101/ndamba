@@ -94,7 +94,7 @@ La continuité se voit aussi dans la semaine et dans le parcours. La semaine des
 Prenons un exemple, imaginé pour l'illustration. Un garçon de 12 ans entre en 2026 dans une académie qui travaille avec Ndamba. Son éducateur prépare la semaine avec les fiches du livre, code les matchs depuis la touche et lit l'Indice Njangi de l'équipe, en le comparant d'un match à l'autre. La fiche du joueur garde ses séances, ses matchs, ses observations et ses évaluations des dix compétences. S'il rejoint plus tard un club, puis une sélection de jeunes qui suivent la même méthode, son nouvel entraîneur parle les mêmes mots, lui propose les mêmes exercices et lit le même Indice. Rien n'est à réapprendre, tout est à approfondir. Pour que son historique le suive vraiment d'une structure à l'autre, il faudra les comptes et la synchronisation, qui sont prévus.
 
 > [!INVESTISSEUR] Ce que Ndamba vend, c'est la continuité
-> Le talent existe déjà ; personne ne l'achète à Ndamba. Ce que Ndamba apporte, c'est ce qui relie les talents : un modèle écrit, des mots communs, une mesure identique du U13 à l'équipe A, et une histoire du joueur qui le suit. Cette valeur grandit avec chaque match codé et chaque entraîneur formé. Elle se construit sur des années de matchs et d'habitudes, et c'est cette accumulation qui fait sa valeur.
+> Le talent existe déjà ; personne ne l'achète à Ndamba. Ce que Ndamba apporte, c'est ce qui relie les talents : un modèle écrit, des mots communs, une mesure identique du U13 à l'équipe A, et une histoire du joueur qui le suit. Cette valeur grandit avec chaque match codé et chaque entraîneur formé. Elle se construit sur des années de matchs et d'habitudes : c'est cette accumulation qui compte.
 
 ## Trois Coupes du monde dans la fenêtre
 

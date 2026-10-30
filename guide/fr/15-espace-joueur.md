@@ -81,7 +81,7 @@ La section **Ma progression** apparaît dès le premier résultat noté. Elle co
 
 La section **Mon regard sur moi** demande au joueur où il en est sur les dix compétences de la grille : le scan, le contrôle orienté, la passe avec intention, la conduite, le dribble njangi, les appels et courses pour les autres, la communication, la protection du ballon, la contre-pression et la prise de décision. Chaque ligne a une phrase simple (« Je regarde par-dessus l'épaule avant de recevoir. ») et quatre boutons : **1** « Je découvre », **2** « Je progresse », **3** « Je maîtrise », **4** « Je l'apprends aux autres ».
 
-Le radar **Mes dix compétences** se dessine à mesure. Si l'entraîneur a évalué le joueur dans l'effectif, une deuxième forme apparaît, **Le regard de mon coach**, avec ce conseil : « Si vous ne voyez pas la même chose, parlez-en après l'entraînement. » Ce regard sur soi est gardé seulement sur l'appareil.
+Le radar **Mes dix compétences** se dessine à mesure. Si l'entraîneur a évalué le joueur dans l'effectif, et que le profil porte le nom de sa fiche, une deuxième forme apparaît, **Le regard de mon coach**, avec ce conseil : « Si vous ne voyez pas la même chose, parlez-en après l'entraînement. » Ce regard sur soi est gardé seulement sur l'appareil.
 
 Plus bas, **Tous les défis** présente les 32 défis en liste, avec des filtres : **Tous**, **Ballon**, **Conduite**, **Mur**, **Les yeux**, **Finition**, **Physique**. Chaque ligne s'ouvre sur place, avec le même formulaire pour noter. En bas de page, deux portes : **Les Leçons du Ballon** et **Mon carnet du Njangi** (chapitre 16).
 
@@ -89,11 +89,11 @@ Plus bas, **Tous les défis** présente les 32 défis en liste, avec des filtres
 
 ## L'espace performance, à partir de 16 ans
 
-À partir de 16 ans, le joueur s'entraîne sur la semaine du match, comme un professionnel. Son espace devient celui d'un joueur de haut niveau, construit sur le chapitre 29 du Code Njangi : un questionnaire de forme chaque matin, l'effort ressenti après chaque séance, et la comparaison avec ses propres semaines, jamais avec un coéquipier.
+À partir de 16 ans, le joueur s'entraîne sur la semaine du match. Son espace suit le chapitre 29 du Code Njangi : un questionnaire de forme chaque matin, l'effort ressenti après chaque séance, et la comparaison avec ses propres semaines, jamais avec un coéquipier.
 
 ![L'accueil de Steve Ndjock, milieu intérieur de l'Étoile de la Côte : Forme à noter, Charge 7 j, Match J-2, puis la semaine vers le match contre les Rapides de Kribi et la carte du prochain match.](shot:pro-player-home-linked "L'accueil d'un joueur senior dans la démo club pro.")
 
-L'accueil d'un joueur de 16 ans et plus ouvre sur une bande sombre : le salut, le rôle du jour dans la semaine (« Aujourd'hui, MD-2, vitesse » et le titre de la séance), son poste, son numéro et son club, et trois chiffres : **Forme** (sur 25, ou **À noter**), **Charge 7 j** en UA, et **Match** (J-2, avec l'Indice du dernier match). Viennent ensuite la semaine, le prochain match, la forme du jour, la charge, le dernier match, les objectifs et la saison. L'espace performance, que l'on ouvre par **Espace joueur**, reprend ces cartes en plus détaillé. Son en-tête **Espace performance** affiche six chiffres (forme, charge, matchs joués, minutes jouées, dernier Indice, objectifs en cours) et des raccourcis : **La semaine**, **Forme et charge**, **Dernier match**, **Objectifs**, **Auto-évaluation** et **Mon parcours**.
+L'accueil d'un joueur de 16 ans et plus ouvre sur une bande sombre : le salut, le rôle du jour dans la semaine (« Aujourd'hui, MD-2, vitesse » et le titre de la séance), son poste, son numéro et son club, et trois chiffres : **Forme** (sur 25, ou **À noter**), **Charge 7 j** en UA, et **Match** (J-2, avec l'Indice du dernier match). Suivent la semaine, le prochain match, la forme, la charge, le dernier match, les objectifs et la saison. L'espace performance (**Espace joueur**) reprend ces cartes en détail. Son en-tête **Espace performance** affiche six chiffres (forme, charge, matchs joués, minutes jouées, dernier Indice, objectifs en cours) et des raccourcis : **La semaine**, **Forme et charge**, **Dernier match**, **Objectifs**, **Auto-évaluation** et **Mon parcours**.
 
 **La semaine.** La carte **Ma semaine** montre sept jours : ceux qui mènent au prochain match quand il tombe dans les six jours, sinon du lundi au dimanche. Chaque jour porte son rôle (**MD+1**, **MD-4**, **Repos**, **Match**), des barres d'**Intensité habituelle** et un point quand l'effort a été noté. Touchez un jour : vous voyez la séance du staff, ses blocs minute par minute avec le code de chaque exercice, pourquoi ce jour existe dans la semaine, et les **Consignes du staff**. La carte **Prochain match** donne le compte à rebours, le lieu, **Ma place** dans la composition prévue (« Titulaire prévu : Milieu intérieur, rôle du 8 »), **Le plan de jeu** (**Avec le ballon**, **À la perte**) et le bouton **Feuille de match**.
 
@@ -113,7 +113,7 @@ L'effort multiplié par les minutes donne la charge de la séance, en unités ar
 
 ## Qui es-tu dans l'équipe ? Relier son profil à sa fiche
 
-Les minutes, les objectifs, les observations du staff et le dernier match viennent de la fiche du joueur dans l'effectif. Ndamba doit donc savoir quelle fiche est la vôtre. Si votre profil porte le même nom que votre fiche, le lien se fait tout seul. Sinon, l'espace affiche « Ta fiche n'est pas encore reliée. » avec le bouton **Relier mon profil**.
+Les minutes, les objectifs, les observations du staff et le dernier match viennent de la fiche du joueur dans l'effectif. Ndamba doit donc savoir quelle fiche est la vôtre. Si votre profil porte le même nom que votre fiche, le lien se fait tout seul. Sinon, l'espace performance affiche « Ta fiche n'est pas encore reliée. » avec le bouton **Relier mon profil** ; chez les plus jeunes, c'est la carte **Mon parcours** qui mène au même écran.
 
 1. Touchez **Relier mon profil**, ou la carte **Mon parcours**.
 2. L'écran **Qui es-tu dans l'équipe ?** affiche l'effectif de votre équipe, chaque joueur avec son numéro.

@@ -94,7 +94,7 @@ Continuity also shows in the week and in the journey. The U13 week follows the s
 Take an example, imagined for illustration. A 12-year-old boy joins an academy that works with Ndamba in 2026. His educator plans the week with the book's drill cards, codes matches from the touchline and reads the team's Indice Njangi, comparing it from one match to the next. The player's file keeps his sessions, matches, observations and evaluations of the ten competences. If he later joins a club, then a youth national team that follow the same method, his new coach speaks the same words, offers him the same drills and reads the same Indice. Nothing has to be relearned; everything can be deepened. For his history to really follow him from one structure to the next, accounts and sync are needed, and they are planned.
 
 > [!INVESTOR] What Ndamba sells is continuity
-> The talent already exists; nobody buys it from Ndamba. What Ndamba brings is what connects the talent: a written model, shared words, an identical measure from U13 to the senior team, and a player history that follows the player. That value grows with every coded match and every coach trained. It is built over years of matches and habits, and that accumulation is what makes it valuable.
+> The talent already exists; nobody buys it from Ndamba. What Ndamba brings is what connects the talent: a written model, shared words, an identical measure from U13 to the senior team, and a player history that follows the player. That value grows with every coded match and every coach trained. It is built over years of matches and habits, and that accumulation is the asset.
 
 ## Three World Cups in the window
 

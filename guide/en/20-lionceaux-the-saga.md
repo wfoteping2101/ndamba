@@ -93,7 +93,7 @@ This guide does not tell the ending: it belongs to the readers.
 
 Ndamba takes each lesson exactly as it is written in the novel, with its diagram, and turns it into a page of the **Player space**: "The Ball Lessons", subtitled "BriBri's notebook".
 
-1. Open **Player space**, then at the bottom of the page, under "Go further", tap **The Ball Lessons**. On a young player's home screen, "Lesson of the day" leads to the same place through **All lessons**.
+1. For a player under 16, or for a parent, open **Player space**, then at the very bottom of the page tap **The Ball Lessons** ("The 40 pages of BriBri's notebook"). On a young player's home screen, "Lesson of the day" leads to the same place through **All lessons**. For every profile, **The books** page offers the link **The Ball Lessons in the app**.
 2. At the top, the bar "0 of 40 understood" tracks progress, and **Lesson of the day (no. 8)** opens the lesson chosen for today (the number changes every day). **Read the novel** opens the book.
 3. Pick a part from the five tabs (**Part I, Cameroon**, The heart, and so on).
 4. Each lesson shows the chapter it comes from, its lines, the chapter's illustration and "The notebook diagram". In English the lines are a short English version; **Read the original page in French** shows BriBri's own words. Tap **I've got it** when it is the case, or **Read chapter 1** to go back to the story.

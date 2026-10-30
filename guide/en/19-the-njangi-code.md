@@ -53,7 +53,7 @@ The cards are grouped in eight families, always in the same order:
 
 | Family | Codes | What it trains |
 |---|---|---|
-| Technique and combinations | C01 to C14 | Passing, first touch, scanning, shielding, the njangi dribble, third man, finishing, the aerial ball |
+| Technique and patterns | C01 to C14 | Passing, first touch, scanning, shielding, the njangi dribble, third man, finishing, the aerial ball |
 | Rondos | R01 to R08 | Scanning, angles, touch, counter-pressing |
 | Positional games | P01 to P10 | Structure, lanes, third man, superiorities |
 | Small-sided games | S01 to S08 | Decisions, duels, progressing in tight spaces |
@@ -84,7 +84,7 @@ One rule runs through every "Avec les jeunes" callout: water and shade, a load s
 
 The book's cards and the app's **Drills** library are written once, in the same files, in French and English. A card corrected in one place is corrected everywhere. On a drill's page, **Add to a session** puts it in your session and **Read in the book** opens the same card in the reader. When the card has a story line, the "With Kaydoudou and BriBri" block offers **Read the novel**. The other way round, the book's home page ends with the link "Les 64 exercices dans l'application" (the 64 drills in the app).
 
-![Drill C01, The Njangi Y, in the app: the starting diagram, players, age U10+, a 30 x 20 m space, duration, medium intensity, days MD-2, MD-1 and youth, and the Add to a session and Read in the book buttons.](shot:pro-drill-detail "A card from the book turned into an app page (pro club demo).")
+![Drill C01, The Njangi Y, in the app: the starting diagram, players, age U10+, a 30 x 20 m space, duration, medium intensity, days MD-2, MD-1 and Youth, and the Add to a session and Read in the book buttons.](shot:pro-drill-detail "A card from the book turned into an app page (pro club demo).")
 
 ### The Indice Njangi, chapter 32
 

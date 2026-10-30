@@ -40,7 +40,7 @@ Aujourd'hui, Ndamba n'a pas encore de comptes ni de synchronisation : toutes les
 2. L'écran **Qui es-tu dans l'équipe ?** affiche l'effectif.
 3. Touchez le nom de votre enfant. Son parcours s'ouvre, et la carte **Mon parcours** de l'accueil affiche désormais sa saison : « Cette saison : 15 séances, 4 matchs, 2 objectifs en cours. »
 
-![L'écran Qui es-tu dans l'équipe ? des Lionceaux de Bonamoussadi U13 : les seize fiches de l'effectif, avec le numéro et le nom de chaque joueur, dont Kaydoudou (7) et BriBri (8).](shot:youth-journey "Choisir la fiche de son enfant dans l'effectif.")
+![L'écran Qui es-tu dans l'équipe ? des Lionceaux de Bonamoussadi U13 : les quinze fiches de l'effectif, avec le numéro et le nom de chaque joueur, dont Kaydoudou (7) et BriBri (8).](shot:youth-journey "Choisir la fiche de son enfant dans l'effectif.")
 
 Aujourd'hui, le parcours écrit par l'entraîneur n'est visible que sur l'appareil où il l'a saisi. Une sauvegarde exportée depuis ses **Réglages** peut le transporter sur un autre appareil, mais elle remplace tout ce qui s'y trouve. Le partage entre plusieurs appareils viendra avec les comptes et la synchronisation, prévus (chapitre 26). En attendant, l'information de l'équipe arrive souvent par un autre chemin : la convocation que l'entraîneur prépare avec Mola et envoie lui-même par WhatsApp, SMS ou e-mail (chapitre 11).
 

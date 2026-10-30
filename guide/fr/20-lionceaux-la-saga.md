@@ -93,7 +93,7 @@ Ce guide ne raconte pas la fin : elle appartient aux lecteurs.
 
 Ndamba reprend chaque leçon telle qu'elle est écrite dans le roman, avec son schéma, et en fait une page de l'**Espace joueur** : « Les Leçons du Ballon », sous-titrée « Le carnet de BriBri ».
 
-1. Ouvrez **Espace joueur**, puis, en bas de la page sous « Aller plus loin », touchez **Les Leçons du Ballon**. Sur l'accueil d'un jeune joueur, « La leçon du jour » mène au même endroit par **Toutes les leçons**.
+1. Pour un joueur de moins de 16 ans, ou pour un parent, ouvrez **Espace joueur** puis, tout en bas de la page, touchez **Les Leçons du Ballon** (« Les 40 pages du carnet de BriBri »). Sur l'accueil d'un jeune joueur, « La leçon du jour » mène au même endroit par **Toutes les leçons**. Pour tous les profils, la page **Les livres** propose le lien **Les Leçons du Ballon dans l'application**.
 2. En haut, la barre « 0 sur 40 comprises » suit votre progression, et **La leçon du jour (n° 8)** ouvre la leçon choisie pour aujourd'hui (le numéro change chaque jour). **Lire le roman** ouvre le livre.
 3. Choisissez une partie parmi les cinq onglets (**Partie I, Cameroun**, Le cœur, et les suivantes).
 4. Chaque leçon montre son chapitre d'origine, ses lignes, l'illustration du chapitre et « Le schéma du carnet ». Touchez **J'ai compris** quand c'est le cas, ou **Lire le chapitre 1** pour relire l'histoire.
