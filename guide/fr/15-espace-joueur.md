@@ -121,7 +121,7 @@ Les minutes, les objectifs, les observations du staff et le dernier match vienne
 
 ![L'écran Qui es-tu dans l'équipe ? de l'Étoile de la Côte : chaque fiche de l'effectif est un bouton avec le numéro et le nom du joueur.](shot:pro-player-own-journey "Choisir sa fiche dans l'effectif, une seule fois.")
 
-Un membre du staff qui ouvre cet espace voit **Aperçu pour le staff.** et **Choisir un joueur**, pour le voir comme un de ses joueurs.
+Un parent voit le même écran sous le titre **Quelle est la fiche de votre enfant ?** (chapitre 17). Un membre du staff qui ouvre l'espace performance voit **Aperçu pour le staff.** et **Choisir un joueur**, pour le voir comme un de ses joueurs.
 
 > [!INVESTISSEUR]
 > L'espace joueur transforme le travail invisible (la cour, le mur, le matin avant l'entraînement) en données régulières et comparables, sur le même modèle de jeu que le club. Aujourd'hui, tout l'espace joueur est ouvert quelle que soit la formule, et les données restent sur l'appareil du joueur. C'est la base de la continuité que vise le plan : un même joueur suivi de ses défis d'enfant jusqu'à sa charge de senior.
