@@ -64,7 +64,7 @@ The good method: let it play, tap the code at the moment of the action; if the a
 
 On the right, the **Njangi Index** card: "Worked out from the codes placed on the video: it is the Index of the match report." It updates with every code, with the **Match report** link. In the screenshot, the Index is 86.0 after about twenty codes over 24 seconds of demo: it means nothing. An Index only makes sense over a whole match.
 
-> [!ATTENTION] One match, one coding
+> [!WARNING] One match, one coding
 > If the match has already been coded live, the studio shows "This match already has 783 codes entered live." and the **Replace with video coding** button. Until you confirm, the codes stay inactive: mixing the two codings would count actions twice. A video with no linked match keeps its codes to itself: they feed its Index, its clips and its exports, but no report. "Link a match so this coding fills its report and counts in the season."
 
 ## Clips
@@ -123,7 +123,7 @@ Below the clips, the **AI match analysis** card is upfront: "Paid: $2.99 per mat
 
 **What it costs.** A 960 x 540 frame represents about 700 tokens for Claude. At one frame every 6 seconds, a 90-minute match makes about 900 frames, roughly 630,000 input tokens: around $2.5 at the public Opus 5.5 rate ($4 per million input tokens), plus the answer. The price of $2.99 per match is a proposal that covers that cost; it remains to be confirmed.
 
-> [!INVESTISSEUR] For the site owner: switching the AI on
+> [!INVESTOR] For the site owner: switching the AI on
 > The AI analysis goes through a server function of Ndamba, which alone knows the Claude API key. Until the key is set, the card answers: "The AI analysis is not switched on for this site yet." To switch it on, the owner sets three variables in the hosting settings themselves: **ANTHROPIC_API_KEY** (the Claude API key), **ANALYSE_CODES** (the list of access codes sold, separated by commas) and, if needed, **ANTHROPIC_VISION_MODEL** (the model, Opus 5.5 by default). The codes protect the key until accounts and built-in payment exist; a code has no quota yet.
 
 ## Match videos
@@ -162,5 +162,5 @@ The **The Index match after match** card draws the season curve. With a single a
 
 If no team exists yet, the page first asks you to **Create your team first**: a **Team name**, an **Age group**, a **Format**, then **Create the team**.
 
-> [!INVESTISSEUR] A video that costs nothing to carry
+> [!INVESTOR] A video that costs nothing to carry
 > Ndamba hosts no video: a YouTube or Facebook link, or a file that stays on the device. That means zero storage cost for the platform, no mobile data spent uploading a match, and no image of a child hosted by Ndamba. Only the AI analysis, paid and with explicit agreement, sends still frames to Claude, and nothing else. Automatic detection of actions and sharing between staff members are on the roadmap (chapter 26).

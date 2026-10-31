@@ -40,7 +40,7 @@ Pas besoin d'une caméra fixe sur un mât. Un téléphone suffit, s'il est bien 
 
 Un parent bénévole, un joueur blessé ou un adjoint peut tenir ce rôle. Le bouton **Filmer** du studio vidéo ouvre directement la caméra du téléphone (chapitre 14) : la vidéo enregistrée s'ouvre aussitôt dans le studio.
 
-> [!CONSEIL] Filmer les deux mi-temps du même côté
+> [!ASTUCE] Filmer les deux mi-temps du même côté
 > Laissez le téléphone au même endroit en seconde période. Les équipes changent de côté, pas la caméra : c'est plus simple pour coder, et l'analyse IA sait inverser les côtés à partir du coup d'envoi de la seconde mi-temps.
 
 ## Mettre la vidéo en ligne

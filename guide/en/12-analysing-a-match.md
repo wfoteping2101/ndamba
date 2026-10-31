@@ -40,7 +40,7 @@ No need for a fixed camera on a mast. A phone is enough, if it is well placed:
 
 A volunteer parent, an injured player or an assistant can do it. The studio's **Film** button opens the phone camera directly (chapter 14): the recorded video opens in the studio straight away.
 
-> [!CONSEIL] Film both halves from the same side
+> [!TIP] Film both halves from the same side
 > Leave the phone in the same place for the second half. The teams change ends, the camera does not: coding is simpler, and the AI analysis knows how to swap sides from the second-half kick-off.
 
 ## Put the video online
@@ -156,7 +156,7 @@ In the **Analysed matches** list, a small label says how each match was coded: *
 
 **Who codes?** Not the head coach during the match: they have a team to lead. On the video, they can code it themselves the next day, or hand the video to an assistant, a volunteer analyst, an injured player. A first full coding takes longer than the match itself; with practice it goes much faster. The Njangi Code advises coding in pairs when possible: one follows the ball (**Pass**, **Pass lost**, **Loss**), the other codes everything else.
 
-> [!ATTENTION] One device per match
+> [!WARNING] One device per match
 > Today, data lives on the device that records it, and codes from two devices do not merge. Code a match on one device only: the club phone, a tablet, a computer. Syncing between devices is planned.
 
 **What to code first?** Build up over a few matches:
@@ -167,5 +167,5 @@ In the **Analysed matches** list, a small label says how each match was coded: *
 
 As long as a family is not coded, its sub-indices stay at zero and the Index is lower. That is fine, but only compare matches coded the same way: that is the rule of the Njangi Code, the same method every week.
 
-> [!INVESTISSEUR] Every coded match counts twice
+> [!INVESTOR] Every coded match counts twice
 > A coded match first serves the coach. It also feeds a shared base: matches coded on video, with the same definitions, make it possible to set reference values of the Njangi Index by age, and every value can be checked frame by frame. The proposed goal for 2026 and 2027 is 1,000 coded matches in the pilot clubs and academies (chapter 23). Automatic detection of actions on the video is an item of the roadmap (chapter 26), not a feature of today.
