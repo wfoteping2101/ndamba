@@ -3,7 +3,7 @@ numero: 24
 slug: the-business-model
 titre: The business model
 partie: 9
-resume: The five plans and their prices, who pays and why, the rule that keeps education free, the two limits of the free plan, the real state of payments, the running costs and revenue scenarios presented as hypotheses.
+resume: The five plans and their prices, the AI analysis paid per match, who pays and why, the rule that keeps education free, the two limits of the free plan, the real state of payments, the running costs and revenue scenarios presented as hypotheses.
 ---
 
 A business model says who pays, for what, and what it all costs. Ndamba's starts from a conviction of the method: you do not build a shared football culture by charging for knowledge. The books and the drills are therefore free for everyone. What people pay for are the tools that save time and measure: preparing, analysing, following players, and Mola acting for you. This chapter presents the five plans as the **Premium** page shows them, what the app actually enforces today and what it does not enforce yet. It ends with figures that are arithmetic hypotheses, not forecasts.
@@ -44,6 +44,8 @@ Each plan lists what it unlocks:
 | Club and academy | Everything in Coach Pro, unlimited teams, staff accounts (coming soon), your club game model (coming soon), exports and printing |
 | Federation | Everything in Club, national game model, coach education, dedicated support |
 
+Below the plans, a separate card presents the **AI match analysis**: "On top of any plan", $2.99 per match, with its FCFA equivalent. It is described further down.
+
 ![The full Premium page: the Payments are not connected yet banner, the five plans side by side with Coach Pro in green, then the questions.](shot:site-pricing-full "The site's Premium page: five plans, prices in dollars and FCFA, and an honest banner about payments.")
 
 ## Who pays, and why
@@ -63,9 +65,25 @@ One point needs to be clear for an investor. Some lines describe what the plan m
 In today's code, the **Free** plan has exactly two limits, and they hold everywhere in the app. They also apply to **Player Premium**: that plan opens the player's space, not the coach's tools.
 
 1. **Five sessions.** Beyond that, the **Sessions** page and the **New session** window show "Your 5 free sessions are used", with a **Discover Coach Pro** button; the **Week** page shows the same box and its **Plan the week** button stays greyed out. The **Prepare the week** button on the home screen and **Plan the week with these objectives** in the match report then open the **Premium** page. Mola applies the same rule when you ask it for a session or for the week: "Your free plan already has 5 sessions. For me to keep building them, move to Coach Pro. The books and the 64 drills stay open to everyone."
-2. **One match analysed live.** Once one match has been tagged, no other can be. The match sheet shows "Unlimited live analysis with Coach Pro" and a **See plans** link, the **Analysis** page replaces the live button with **See the plans**, and the live page itself shows the same message if you open it from its address. A match that already has tags is never locked: you can always review and fix it.
+2. **One analysed match, on video or live.** The Free card says "One analysed match, on video or live": the rule counts any tagged match, whatever the method. Once one match has been tagged, no other can be. The match sheet shows "Unlimited analysis is in Coach Pro" and a **See plans** link, and its **Add the match video** button carries a padlock; the **Analysis** page replaces **Add the video** and the live button with **See plans**, and the live page itself shows the same message if you open it from its address. A match that already has tags is never locked: you can always review and fix it.
 
 Everything else is unlimited today, even when the Premium page places it in a paid plan: the number of teams (the free plan lists "One team"), reports, video, the lessons or the notebook. The page describes the planned offer; for now the code enforces only those two thresholds. They will need to be aligned with the page when payments arrive.
+
+## The AI analysis, paid per match
+
+Analysing a match rests on tagging: a person taps a button for each action, on the video (chapter 12). The **AI match analysis**, in the video studio (chapter 14), adds an automatic reading of the frames. Claude, Anthropic's AI, reads one frame every 4, 6 or 10 seconds of the match video file and estimates possession, the zone where the ball is, the height of the block without the ball and the rest defence, with the moments to watch again and a short written summary. It does not replace tagging and does not change the Njangi Index.
+
+It is a paid option, on top of any plan, because it has a direct cost for the platform, every match:
+
+| Item | Order of magnitude |
+|---|---|
+| One 960 x 540 pixel frame | About 700 tokens read by the model |
+| A 90-minute match, one frame every 6 seconds | About 900 frames, so about 630,000 tokens |
+| Opus 5.5 public price for tokens read | $4 per million, according to Anthropic's documentation |
+| Cost of a match's frames | About $2.5, plus the model's written reply |
+| Price proposed to the user | $2.99 per match |
+
+The $2.99 price is a proposal to confirm, not a final tariff: the margin is thin, and the cost drops with one frame every 10 seconds or a cheaper model (the site owner can set another one). Since payments are not connected, access goes through an **access code** given after payment, which the user types in the studio. For the option to work, the site owner must enter, in the hosting settings, the Anthropic API key (ANTHROPIC_API_KEY) and the list of valid codes (ANALYSE_CODES), and if wanted the model (ANTHROPIC_VISION_MODEL). Until that is done, the studio says the AI analysis is not activated on this site yet. A code has no quota yet: in-app payment and a number of matches per code are on the roadmap (chapter 26).
 
 ## The real state: payments are not connected
 
@@ -93,7 +111,8 @@ Technically, this button writes the plan's name into the profile saved on the de
 The choice of a "local first" app, where data stays on the device, keeps today's running costs very light. Here are the cost lines, described without amounts because they depend on usage:
 
 - **Hosting.** The platform is a static site: the app, both books with their illustrations and the *Lionceaux Football* game (about 25 MB on first launch, according to its page). There is no database server. Cost mainly follows traffic.
-- **Mola's optional AI model.** This is the only server function, at /api/mola. When the key is configured, most messages typed to Mola go to the Anthropic API (the default model is claude-haiku-5-5): the message, cut to 600 characters, a set of instructions and a short context, for a reply capped at 400 tokens. Chapter 25 lists the exceptions. Cost follows the number of messages. Without a key, the function replies that it is not configured, the rules engine answers on its own, and this line costs nothing.
+- **Mola's optional AI model.** This is one of the two server functions, at /api/mola. When the key is configured, most messages typed to Mola go to the Anthropic API (the default model is claude-haiku-5-5): the message, cut to 600 characters, a set of instructions and a short context, for a reply capped at 400 tokens. Chapter 25 lists the exceptions. Cost follows the number of messages. Without a key, the function replies that it is not configured, the rules engine answers on its own, and this line costs nothing.
+- **The optional AI match analysis.** The second server function, at /api/analyse, receives frames of a match and passes them to the Anthropic API. Its cost, about $2.5 per match at one frame every 6 seconds, is covered by the price asked for each match (see above). Without a key and codes, it does nothing and this line costs nothing.
 - **Costs to come.** Accounts and sync (servers, storage, security), payment provider fees, support, coach education, and the writing and illustration of books 2 to 6 of the saga.
 
 Today's lightness has a counterpart: backups are the user's job (chapter 25).

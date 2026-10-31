@@ -128,6 +128,8 @@ export interface MatchEvent {
   code: EventCode
   side: 'us' | 'them'
   playerId?: string
+  /** seconds in the match video when the action was coded on the video (absent when coded live) */
+  videoT?: number
   createdAt: string
 }
 
@@ -140,12 +142,49 @@ export interface VideoTag {
   drawing?: string // data URL of a telestration snapshot
 }
 
+export type VideoSource = 'file' | 'youtube' | 'facebook'
+
+/** One frame read by the AI (Claude), every few seconds of the match video. */
+export interface AiFrame {
+  t: number // seconds in the video
+  phase: 'us' | 'them' | 'contested' | 'dead' | 'unclear' // who has the ball
+  third: 'def' | 'mid' | 'att' | null // where the ball is, seen from our attack
+  block: 'high' | 'mid' | 'low' | null // our block when the opponent has the ball
+  behind: number | null // our outfield players behind the ball when we have it (rest defence)
+  note?: string
+  flag?: boolean // worth watching again
+}
+
+export interface AiAnalysis {
+  interval: number // seconds between two frames
+  from: number // video seconds analysed
+  to: number
+  frames: AiFrame[]
+  summary?: string
+  lang: 'fr' | 'en'
+  model?: string
+  startedAt: string
+  doneAt?: string
+}
+
 export interface VideoProject {
   id: string
   title: string
+  /** where the video lives: a file on this device (never uploaded), or a YouTube or Facebook link */
+  source?: VideoSource
+  url?: string
   fileName?: string
   matchId?: string
   duration?: number
+  /** video seconds of each kick-off, to turn video time into match time */
+  kickoff1?: number
+  kickoff2?: number
+  /** for the AI: our shirts, theirs, and the side we attack in the first half (seen on the image) */
+  ourColor?: string
+  theirColor?: string
+  attackRight1?: boolean
+  ai?: AiAnalysis
+  /** notes and drawings; coded actions of a linked match live in its events (with videoT) */
   tags: VideoTag[]
   createdAt: string
 }

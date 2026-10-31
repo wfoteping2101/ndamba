@@ -14,7 +14,7 @@ That can feel like a lot on a first visit. This guide exists so that it no longe
 - **Part II, Getting started**: the first visit with Mola, the home screen, finding your way and the settings.
 - **Part III, Training**: the 64 drills, sessions and the week.
 - **Part IV, Team and matches**: the squad, each player's file, preparing a match.
-- **Part V, Analysis**: live coding, the report and the Njangi Index, video and the season.
+- **Part V, Analysis**: filming the match, putting the video online and tagging it (or tagging live without video), the report and the Njangi Index, the video studio, the AI analysis and the season.
 - **Part VI, The player and the family**: the player space, the Lessons of the Ball, the notebook, the journey and parents.
 - **Part VII, Mola**: the agent, what it can do and what it never does without you.
 - **Part VIII, The books and the game**: *Le Code Njangi*, the *Lionceaux* saga and *Lionceaux Football*.

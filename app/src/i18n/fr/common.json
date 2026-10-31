@@ -59,7 +59,8 @@
     "teamLine": "{{age}}, {{format}} contre {{format}}, {{formation}}",
     "switchTeam": "Changer d'équipe",
     "football": "Jeu de foot",
-    "guide": "Guide"
+    "guide": "Guide",
+    "howItWorks": "Comment ça marche ? Guide, chapitre {{n}}"
   },
   "actions": {
     "save": "Enregistrer",
@@ -190,7 +191,7 @@
       "books": "Les deux livres en lecture libre",
       "drills": "Les 64 exercices de la méthode",
       "oneTeam": "Une équipe",
-      "liveOne": "Un match analysé en direct",
+      "liveOne": "Un match analysé, sur vidéo ou en direct",
       "molaBasic": "Mola pour vous guider",
       "playerPlan": "Programme personnel et défis",
       "lessons": "Les 40 Leçons du Ballon",
@@ -199,7 +200,7 @@
       "everythingPlayer": "Tout Joueur Premium",
       "unlimitedSessions": "Séances illimitées",
       "weekPlanner": "Planification de la semaine",
-      "liveUnlimited": "Analyse en direct illimitée",
+      "liveUnlimited": "Analyse illimitée des matchs, sur vidéo ou en direct",
       "reports": "Rapports et Indice Njangi",
       "video": "Analyse vidéo",
       "molaActions": "Mola agit pour vous",

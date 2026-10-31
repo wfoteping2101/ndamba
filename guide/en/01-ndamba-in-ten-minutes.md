@@ -36,7 +36,7 @@ The app arranges its screens in four menu groups, **Training**, **Team**, **Anal
 
 **Match.** The opponent, the system, the line-up on the pitch, a game plan for the four moments of the game and a call-up by WhatsApp or SMS, prepared in the app and sent by you.
 
-**Analysis.** Live tagging from the touchline, one tap per action. The Njangi Index, a score from 0 to 100, is computed while you tag. The match report breaks it down into five sub-indices and suggests next week's drills. Video lets you mark moments and draw on the frame.
+**Analysis.** The match is filmed with a phone, its video goes on YouTube or Facebook (Ndamba stores no video), then it is tagged in the studio: one tap per action, at the right moment, in slow motion if needed, and every code can be watched again. Without a video, you tag live from the touchline, with the same buttons. The Njangi Index, a score from 0 to 100, is computed as you tag. The match report breaks it down into five sub-indices and suggests next week's drills. A paid AI analysis, done by Claude on the frames of the video file, adds estimates of possession, territory and block.
 
 **The player space.** For the youngest: daily challenges, the 40 Ball Lessons, the Njangi notebook and the journey. From 16: a performance space with the week, form, load and the last match.
 
@@ -99,7 +99,7 @@ The result is a single vocabulary. The word "Pin" means the same thing in chapte
 At the time of writing (October 2026), here is what works and what you can open yourself:
 
 - the public website: the home page, **The books**, **Premium**, the brand page, the project review and the welcome conversation with Mola;
-- the full app, in French and English: the 64 drills, sessions, the week, the squad and player profiles, matches and call-ups, live tagging, the report and the Njangi Index, video, the player space, lessons, the notebook and the journey, settings;
+- the full app, in French and English: the 64 drills, sessions, the week, the squad and player profiles, matches and call-ups, match tagging on video or live, the report and the Njangi Index, the video studio and the AI analysis, the player space, lessons, the notebook and the journey, settings;
 - Mola, with its **Chat** tab, its **Tasks** and its actions **To approve**;
 - both books, free to read, and the *Lionceaux Football* game;
 - two complete demos, open without an account.

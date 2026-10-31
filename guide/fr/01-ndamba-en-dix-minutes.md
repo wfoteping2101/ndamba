@@ -36,7 +36,7 @@ L'application range ses écrans en quatre groupes de menus, **Entraînement**, *
 
 **Le match.** L'adversaire, le système, la composition sur le terrain, le plan de jeu des quatre moments et la convocation par WhatsApp ou SMS, préparée dans l'application et envoyée par vous.
 
-**L'analyse.** Le codage du match en direct, au bord du terrain, une touche par action. L'Indice Njangi, un score de 0 à 100, se calcule pendant que vous codez. Le rapport de match détaille ses cinq sous-indices et propose les exercices de la semaine suivante. La vidéo permet de marquer des moments et de dessiner sur l'image.
+**L'analyse.** Le match se filme avec un téléphone, sa vidéo se met sur YouTube ou Facebook (Ndamba ne stocke aucune vidéo), puis se code dans le studio : une touche par action, au bon moment, au ralenti si besoin, et chaque code peut être revu. Sans vidéo, on code en direct depuis la touche, avec les mêmes boutons. L'Indice Njangi, un score de 0 à 100, se calcule à mesure que vous codez. Le rapport de match détaille ses cinq sous-indices et propose les exercices de la semaine suivante. Une analyse IA payante, faite par Claude sur les images du fichier vidéo, ajoute des estimations de possession, de territoire et de bloc.
 
 **L'espace joueur.** Pour les plus jeunes : les défis du jour, les 40 Leçons du Ballon, le carnet du Njangi et le parcours. À partir de 16 ans : un espace performance avec la semaine, la forme, la charge et le dernier match.
 
@@ -99,7 +99,7 @@ Le résultat, c'est un vocabulaire unique. Le mot « Fixer » désigne la même 
 Au moment où ce guide est écrit (octobre 2026), voici ce qui fonctionne et que vous pouvez ouvrir vous-même :
 
 - le site public : l'accueil, **Les livres**, **Premium**, la page de la marque, la revue du projet et la conversation d'accueil avec Mola ;
-- l'application complète, en français et en anglais : les 64 exercices, les séances, la semaine, l'effectif et les fiches des joueurs, les matchs et les convocations, le codage en direct, le rapport et l'Indice Njangi, la vidéo, l'espace joueur, les leçons, le carnet et le parcours, les réglages ;
+- l'application complète, en français et en anglais : les 64 exercices, les séances, la semaine, l'effectif et les fiches des joueurs, les matchs et les convocations, le codage des matchs sur vidéo ou en direct, le rapport et l'Indice Njangi, le studio vidéo et l'analyse IA, l'espace joueur, les leçons, le carnet et le parcours, les réglages ;
 - Mola, avec son onglet **Discussion**, ses **Tâches** et ses actions **À valider** ;
 - les deux livres en lecture libre, et le jeu *Lionceaux Football* ;
 - deux démos complètes, ouvertes sans compte.

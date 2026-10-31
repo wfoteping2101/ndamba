@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Check, CheckCircle2, ChevronDown, CreditCard, X } from 'lucide-react'
-import { PLANS, type PlanDef } from '../../lib/config'
+import { Check, CheckCircle2, ChevronDown, CreditCard, Sparkles, X } from 'lucide-react'
+import { AI_ANALYSIS, PLANS, type PlanDef } from '../../lib/config'
 import { db } from '../../lib/db'
 import { useDocumentTitle } from '../../lib/hooks'
 import { useSession } from '../../lib/session'
@@ -11,10 +11,10 @@ import { PageFrame, useInApp, useSiteT } from './components/brand'
 
 type Cycle = 'month' | 'year'
 const ANNUAL_MONTHS = 10 // annual price = 10 months (2 months free)
-const FAQ = ['books', 'data', 'cancel', 'federation', 'pay'] as const
+const FAQ = ['books', 'data', 'ai', 'cancel', 'federation', 'pay'] as const
 
 export default function Pricing() {
-  const { t } = useSiteT()
+  const { t, lang } = useSiteT()
   useDocumentTitle(t('pricing.docTitle'))
   const { profile } = useSession()
   const inApp = useInApp()
@@ -59,6 +59,19 @@ export default function Pricing() {
       <div className={cx('mt-8 grid gap-px overflow-hidden rounded-panel border border-line bg-line md:grid-cols-2', inApp ? COLS.app.grid : COLS.site.grid)}>
         {PLANS.map((p, i) => <PlanCard key={p.id} plan={p} cycle={cycle} profile={profile} onActivate={activate} wide={i === PLANS.length - 1} cols={inApp ? COLS.app : COLS.site} />)}
       </div>
+
+      {/* the AI reading of a match: sold per match, on top of any plan */}
+      <section className="mt-6 grid gap-4 rounded-panel border border-line bg-paper p-5 sm:grid-cols-[auto_minmax(0,1fr)_auto] sm:items-center sm:p-6" aria-labelledby="ai-addon-h">
+        <span className="grid h-12 w-12 place-items-center rounded-2xl bg-sun-50 text-sun-700"><Sparkles size={22} strokeWidth={1.75} aria-hidden="true" /></span>
+        <div className="min-w-0">
+          <h2 id="ai-addon-h" className="text-[20px] leading-tight text-ink sm:text-[22px]">{t('pricing.ai.title')}</h2>
+          <p className="mt-1.5 max-w-3xl text-[14.5px] leading-relaxed text-ink-muted">{t('pricing.ai.body')}</p>
+        </div>
+        <div className="sm:text-right">
+          <div className="font-display text-[30px] leading-none tabular-nums text-ink">{money(AI_ANALYSIS.usdPerMatch, lang)}</div>
+          <div className="mt-1 text-[13px] text-ink-muted">{t('pricing.ai.unit', { v: fcfa(AI_ANALYSIS.usdPerMatch, lang) })}</div>
+        </div>
+      </section>
 
       <section className="mt-20 grid gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-16" aria-labelledby="faq-title">
         <h2 id="faq-title" className="text-[28px] leading-tight text-ink sm:text-[34px]">{t('pricing.faqTitle')}</h2>

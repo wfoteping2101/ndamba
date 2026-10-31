@@ -16,7 +16,7 @@ Ouvrez **Matchs** dans le menu, ou dans la barre du bas sur téléphone. La page
 
 **À venir** commence par une grande carte verte, le **Prochain match**. Elle indique quand il a lieu (**Aujourd'hui**, **Demain** ou **Dans 2 jours**, par exemple), **Domicile** ou **Extérieur**, la compétition, la date, l'heure, le lieu, le système et le nombre de titulaires déjà placés. Touchez-la pour ouvrir la **Feuille de match**. Les autres matchs à venir suivent en liste.
 
-**Joués** liste les matchs terminés, du plus récent au plus ancien, avec le statut **Terminé**, le score (l'équipe qui reçoit à gauche), le résultat (**Victoire**, **Nul** ou **Défaite**) et, si le match a été codé en direct, un cadran avec l'Indice Njangi. Un match prévu dont la date est passée sans qu'il soit terminé y figure aussi, avec la mention **Score à saisir**. Un match en cours d'analyse porte la mention **En direct**.
+**Joués** liste les matchs terminés, du plus récent au plus ancien, avec le statut **Terminé**, le score (l'équipe qui reçoit à gauche), le résultat (**Victoire**, **Nul** ou **Défaite**) et, si le match a été codé, un cadran avec l'Indice Njangi. Un match prévu dont la date est passée sans qu'il soit terminé y figure aussi, avec la mention **Score à saisir**. Un match en cours d'analyse porte la mention **En direct**.
 
 ## Programmer un nouveau match
 
@@ -74,11 +74,11 @@ Touchez enfin **Enregistrer le match**. La feuille de match s'ouvre.
 
 ## La feuille de match, avant le coup d'envoi
 
-![La feuille du prochain match de la démo, à l'extérieur contre Rapides de Kribi : les boutons Lancer l'analyse en direct, Saisir le score et Observer, la composition en 4-3-3 avec le capitaine marqué C, les remplaçants, le plan de jeu en cinq moments et la carte Convocation avec WhatsApp, SMS, E-mail, Copier et Agenda (.ics).](shot:pro-match-sheet-full "La feuille de match : tout le match sur une page.")
+![La feuille du prochain match de la démo, à l'extérieur contre Rapides de Kribi : les boutons Ajouter la vidéo du match, En direct, sans vidéo, Saisir le score et Observer, la composition en 4-3-3 avec le capitaine marqué C, les remplaçants, le plan de jeu en cinq moments et la carte Convocation avec WhatsApp, SMS, E-mail, Copier et Agenda (.ics).](shot:pro-match-sheet-full "La feuille de match : tout le match sur une page.")
 
 En haut, **Matchs** ramène à la liste, **Imprimer** produit une feuille propre (affiche, composition, liste du groupe avec le capitaine marqué « (C) », plan de jeu et devise), **Modifier** rouvre les quatre étapes sous le titre **Modifier le match**, et la corbeille supprime le match : sa composition et ses actions codées sont effacées de cet appareil.
 
-La plaque verte rappelle le statut (**À venir**), la compétition, les deux équipes (celle qui reçoit à gauche), l'heure, la date, le lieu, **Domicile** ou **Extérieur**, le format et la durée (« 2 x 45 min »). Trois boutons suivent : **Lancer l'analyse en direct** ouvre le codeur du chapitre 12, **Saisir le score** sert pour un match que vous ne coderez pas, et **Observer** ouvre l'écran du chapitre 10 avec les titulaires et les remplaçants du match.
+La plaque verte rappelle le statut (**À venir**), la compétition, les deux équipes (celle qui reçoit à gauche), l'heure, la date, le lieu, **Domicile** ou **Extérieur**, le format et la durée (« 2 x 45 min »). Les boutons suivent. **Ajouter la vidéo du match**, en or, est le chemin conseillé : après le match, il ouvre le formulaire où l'on colle le lien YouTube ou Facebook de la vidéo (ou choisit le fichier), puis le studio où l'on code le match (chapitre 12) ; une fois la vidéo ajoutée, il devient **Coder la vidéo**. **En direct, sans vidéo** ouvre le codeur du bord du terrain, pour un match qui ne sera pas filmé ; il devient **Reprendre le direct** quand le match est en cours. **Saisir le score** sert pour un match que vous ne coderez pas, et **Observer** ouvre l'écran du chapitre 10 avec les titulaires et les remplaçants du match.
 
 Dessous : la **Composition** sur le terrain, avec le **Capitaine** ; les **Remplaçants**, chacun menant à sa fiche ; le **Plan de jeu**, avec **Modifier** (ou **Écrire le plan de jeu** s'il est vide) ; et la carte **Convocation**, « le message du groupe, prêt à partir », avec **Ouvrir** pour le relire et les mêmes boutons d'envoi.
 
@@ -104,11 +104,11 @@ Si vous avez modifié le texte à la main à l'étape **Convocation**, Mola repr
 
 ## Après le match
 
-Quand le match est terminé, la feuille change. La plaque affiche le score en grand et le résultat (**Victoire**, **Nul** ou **Défaite**). Les boutons deviennent **Voir le rapport** (chapitre 13), **Observer** et **Temps de jeu**. Si le match n'a pas été codé en direct, **Corriger le score** reste disponible. La carte de convocation disparaît.
+Quand le match est terminé, la feuille change. La plaque affiche le score en grand et le résultat (**Victoire**, **Nul** ou **Défaite**). Les boutons deviennent **Ajouter la vidéo du match** (ou **Coder la vidéo**), **Voir le rapport** (chapitre 13), **Observer** et **Temps de jeu** : la vidéo peut s'ajouter des jours après le match. Si le match n'a pas été codé, **Corriger le score** reste disponible. La carte de convocation disparaît.
 
-![La feuille du match joué contre Météore de Bafoussam : le score 2 à 1, Victoire, les boutons Voir le rapport, Observer et Temps de jeu, et la carte Indice Njangi : Njangi solide, 67,9 sur 100, 783 actions codées.](shot:pro-match-sheet-past "Après le match : le rapport, le temps de jeu et l'Indice Njangi.")
+![La feuille du match joué contre Météore de Bafoussam : le score 2 à 1, Victoire, les boutons Ajouter la vidéo du match, Voir le rapport, Observer et Temps de jeu, et la carte Indice Njangi : Njangi solide, 67,9 sur 100, 783 actions codées.](shot:pro-match-sheet-past "Après le match : le rapport, le temps de jeu et l'Indice Njangi.")
 
-Pour un match codé en direct, une carte **Indice Njangi** montre le cadran, l'appréciation (**Njangi solide**, par exemple), la valeur sur 100 et le nombre d'actions codées ; elle ouvre le rapport.
+Pour un match codé, sur la vidéo ou en direct, une carte **Indice Njangi** montre le cadran, l'appréciation (**Njangi solide**, par exemple), la valeur sur 100 et le nombre d'actions codées ; elle ouvre le rapport.
 
 Pour un match que vous n'avez pas codé, **Saisir le score** ouvre la fenêtre **Score final** : réglez les deux scores avec les boutons plus et moins, puis **Enregistrer le score**. Le match passe en **Terminé**.
 
@@ -119,5 +119,5 @@ Pour un match que vous n'avez pas codé, **Saisir le score** ouvre la fenêtre *
 1. Dès que le match est connu, créez-le avec **Nouveau match**, ou demandez-le à Mola. La date du match sert aussi au planificateur de la semaine (chapitre 9).
 2. En cours de semaine, ajustez la composition et le plan de jeu avec **Modifier** : blessures, absences, idées tirées des séances.
 3. La veille ou l'avant-veille, envoyez la convocation, depuis la feuille de match ou par Mola, une fois le banc vérifié.
-4. Le jour du match, ouvrez la feuille et touchez **Lancer l'analyse en direct** au coup d'envoi (chapitre 12).
-5. Après le match, enregistrez le **Temps de jeu**, ouvrez **Voir le rapport** et retenez ce qu'il faut travailler la semaine suivante (chapitre 13).
+4. Le jour du match, faites filmer le match avec un téléphone posé en hauteur (chapitre 12). Sans caméra, touchez **En direct, sans vidéo** au coup d'envoi.
+5. Après le match, mettez la vidéo sur YouTube en « non répertoriée » ou sur Facebook, touchez **Ajouter la vidéo du match** et codez-la. Enregistrez le **Temps de jeu**, ouvrez **Voir le rapport** et retenez ce qu'il faut travailler la semaine suivante (chapitre 13).

@@ -6,13 +6,13 @@ resume: Pour chaque profil, les premiers gestes dans Ndamba, dans l'ordre, avec 
 
 Cette annexe tient sur quelques pages : une fiche par profil, cinq à sept gestes, et le chapitre où chaque geste est expliqué. Les mots en **gras** sont les libellés de l'écran.
 
-Pour tous les profils, deux règles avant de commencer. Vos données restent sur votre appareil, dans votre navigateur : exportez une sauvegarde depuis **Réglages** avant de changer d'appareil (chapitre 6). Et une démonstration remplace les données du navigateur : si vous avez déjà créé votre propre espace, exportez d'abord une sauvegarde (chapitre 5).
+Pour tous les profils, un repère : en haut à droite de chaque page de l'application, le lien **Comment ça marche ? Guide, chapitre N** ouvre le chapitre qui explique la page. Et deux règles avant de commencer. Vos données restent sur votre appareil, dans votre navigateur : exportez une sauvegarde depuis **Réglages** avant de changer d'appareil (chapitre 6). Et une démonstration remplace les données du navigateur : si vous avez déjà créé votre propre espace, exportez d'abord une sauvegarde (chapitre 5).
 
 ## Investisseur ou partenaire, en trente minutes
 
 1. Ouvrez le site et cliquez sur **Démo club pro**. En quelques secondes, vous êtes dans l'espace de Daniel Mbarga, entraîneur de l'Étoile de la Côte, un club professionnel inventé pour la démonstration (chapitre 5).
 2. Regardez l'accueil : la séance du jour, le prochain match, la semaine (chapitre 6).
-3. Ouvrez **Analyse**, puis le rapport du dernier match : l'Indice Njangi de 67,9 sur 100 et ses cinq sous-indices (chapitre 13).
+3. Ouvrez **Analyse** : le bloc **Comment l'analyse fonctionne** dit en trois étapes comment un match s'analyse (filmer, mettre en ligne, coder sur la vidéo). Ouvrez ensuite le rapport du dernier match : l'Indice Njangi de 67,9 sur 100 et ses cinq sous-indices (chapitres 12 et 13).
 4. Ouvrez **Mola** et tapez « Écris la convocation du match ». Regardez les étapes s'afficher : la convocation attend dans l'onglet **À valider**, avec **Approuver et ouvrir WhatsApp** ou **Annuler**. Rien ne sort de l'application sans votre accord (chapitre 18).
 5. Lisez les chapitres 22 et 23 : le diagnostic, puis le plan de 2026 à 2041.
 6. Terminez par les chapitres 24 et 26 : ce qui existe aujourd'hui, ce qui reste à construire, et ce que coûte chaque formule.
@@ -24,15 +24,16 @@ Pour tous les profils, deux règles avant de commencer. Vos données restent sur
 3. Créez votre première séance avec **Nouvelle séance**, ou laissez Mola la composer : « Crée une séance MD-3 » (chapitre 8).
 4. Sur la page **Semaine**, touchez **Planifier la semaine** : Mola compose une séance pour chaque jour de MD-4 à MD-1 encore libre avant le prochain match, en laissant libres le jour d'un autre match et son lendemain. En formule Gratuit, elle s'arrête à cinq séances en tout (chapitre 9).
 5. Préparez le match avec **Nouveau match** : adversaire, composition, plan de jeu, puis la convocation par WhatsApp, SMS ou e-mail, que vous envoyez vous-même (chapitre 11).
-6. Le jour du match, touchez **Lancer l'analyse en direct** sur la feuille de match (ou **Direct** sur l'accueil), puis lisez le rapport (chapitres 12 et 13).
+6. Faites filmer le match avec un téléphone, mettez la vidéo sur YouTube en « non répertoriée » ou sur Facebook, puis touchez **Ajouter la vidéo du match** sur la feuille de match et codez-la. Sans vidéo, touchez **En direct, sans vidéo** au coup d'envoi. Puis lisez le rapport (chapitres 12 et 13).
 
 ## Analyste
 
 1. Créez votre espace avec le rôle **Analyste**, ou ouvrez la **Démo club pro** pour vous exercer (chapitres 3 et 5).
-2. Apprenez les boutons du direct et leurs touches : **Passe**, **Passe perdue**, **Progressive**, **Ligne traversée**, **Dernier tiers**, **Surface**, **Tir**, **Tir cadré** et **But** (touches 1 à 9), puis **Fixe deux**, **Renversement**, **Perte**, **Reprise 5 s** et **Récupération** (touches F, S, L, K et R), et pour l'adversaire **Tir adverse** et **But adverse** (touches A et B) (chapitre 12).
-3. Codez un match complet, puis, depuis le rapport, reprenez-le avec **Corriger les tags** (chapitre 12).
-4. Lisez le rapport : l'Indice, les cinq sous-indices, la comparaison avec le match précédent (dès le deuxième match analysé), les exercices proposés (chapitre 13).
-5. Ouvrez le studio vidéo pour revoir et annoter les moments, puis suivez la saison dans **Analyse** (chapitre 14).
+2. Apprenez les boutons de codage et leurs touches, les mêmes sur la vidéo et en direct : **Passe**, **Passe perdue**, **Progressive**, **Ligne traversée**, **Dernier tiers**, **Surface**, **Tir**, **Tir cadré** et **But** (touches 1 à 9), puis **Fixe deux**, **Renversement**, **Perte**, **Reprise 5 s** et **Récupération** (touches F, S, L, K et R), et pour l'adversaire **Tir adverse** et **But adverse** (touches A et B) (chapitre 12).
+3. Dans **Analyse**, touchez **Ajouter la vidéo** sur un match, collez le lien YouTube ou Facebook (ou choisissez le fichier, ou **Filmer** avec la caméra du téléphone), puis **Ouvrir le studio** (chapitre 12).
+4. Dans le studio, marquez les deux coups d'envoi avec **Marquer ici**, puis codez le match, au ralenti si besoin, et dessinez sur les moments à montrer (chapitre 14).
+5. Lisez le rapport : l'Indice, les cinq sous-indices, la comparaison avec le match précédent (dès le deuxième match analysé), les exercices proposés, et **Revoir** sur chaque but pour retrouver son moment dans la vidéo (chapitre 13).
+6. Si le site l'a activée, lancez l'**Analyse IA du match** depuis le fichier vidéo, avec un code d'accès, puis suivez la saison dans **Analyse** (chapitre 14).
 
 ## Directeur technique ou dirigeant de club
 

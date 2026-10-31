@@ -14,7 +14,7 @@ Tout cela peut sembler beaucoup à la première visite. Ce guide existe pour que
 - **Partie II, Démarrer** : le premier passage avec Mola, l'accueil, la navigation et les réglages.
 - **Partie III, Entraîner** : les 64 exercices, les séances et la semaine.
 - **Partie IV, L'équipe et les matchs** : l'effectif, la fiche de chaque joueur, la préparation d'un match.
-- **Partie V, Analyser** : le codage en direct, le rapport et l'Indice Njangi, la vidéo et la saison.
+- **Partie V, Analyser** : filmer le match, mettre la vidéo en ligne et la coder (ou coder en direct sans vidéo), le rapport et l'Indice Njangi, le studio vidéo, l'analyse IA et la saison.
 - **Partie VI, Le joueur et sa famille** : l'espace joueur, les Leçons du Ballon, le carnet, le parcours et les parents.
 - **Partie VII, Mola** : l'agent, ce qu'il sait faire et ce qu'il ne fait jamais sans vous.
 - **Partie VIII, Les livres et le jeu** : *Le Code Njangi*, la saga *Lionceaux* et *Lionceaux Football*.

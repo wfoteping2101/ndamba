@@ -24,7 +24,7 @@ The large white card tells you what is happening today. It has three faces:
 
 - **A session is planned.** Its title, its tags (the day of the week such as MD-2, the intention, the length, the number of blocks, and "Prepared by Mola" if Mola built it), then the minute-by-minute plan: each drill with its code, name and length. Tap a drill to open its page, or **Open the session** to edit it.
 - **Nothing is planned.** "No session yet", followed by a suggestion with its reason: the MD day of match week, a "Youth" session up to U13, or an MD-3 session when no match is coming up. **Prepare the MD-3 session** (or the day suggested) creates the session and opens it; **Pick drills** opens the library.
-- **It is match day.** "Match day", with **Go live** to tag the match (chapter 12) and **Lineup** to check the team.
+- **It is match day.** "Match day", with a reminder (get the match filmed to code it afterwards on its video), **Live, without video** to code from the touchline if nobody films (chapter 12) and **Lineup** to check the team.
 
 ### Next match
 
@@ -33,6 +33,8 @@ The dark card announces the next match: **Home** or **Away**, the countdown ("D-
 - **Prepare the week**, in gold: Ndamba creates the missing sessions, from MD-4 to MD-1, around the match, for the days still ahead only. It leaves free the day of another match and the day after it, kept for recovery. A message confirms, for example "3 sessions prepared for match week.", with a **See the week** link. When there is nothing to create, the message says so: "Nothing to add before the match: the remaining days already have their session, or are taken by another match and its recovery." That is the case in the demo, whose week is already set. The button is greyed out on match day.
 - **Lineup** opens the match sheet (chapter 11).
 - **Live** opens live analysis (chapter 12).
+
+Live tagging is still the shortest path on match day, but it is no longer the recommended one: if the match is filmed, add its video after the final whistle and tag it in **Analysis**, where every action can be watched again and corrected (chapter 12).
 
 With no match planned, the card reads "No match planned" and offers **New match**.
 
@@ -56,7 +58,7 @@ Mola's green card ("Your agent: it prepares, you approve") suggests one thing, d
 
 ### Quick actions
 
-At the bottom, six shortcuts: **New session** (prepared for today, ready to adjust), **Plan the week**, **New match**, **Live analysis**, **Drills** and **Read the novel**.
+At the bottom, six shortcuts: **New session** (prepared for today, ready to adjust), **Plan the week**, **New match**, **Analyse a match** (which opens the Analysis page), **Drills** and **Read the novel**.
 
 ### Other roles and the home screen without a team
 
@@ -79,6 +81,27 @@ Tap the button and a chat panel opens without leaving the page. At the top: Mola
 The panel closes with the cross, the Escape key or by changing page.
 
 **The news bubble.** When Mola has news (a task done, a result ready) and the panel is closed, a bubble appears above the button with the start of its message. Tap it to open the conversation, or tap its cross (**Hide**). It fades away on its own after a few seconds. Mola's very first hello never shows up as a bubble: you read it when you open the panel.
+
+## The guide link, on every page
+
+At the top right of every page of the app, a small link preceded by a question mark reads: **How does it work? Guide, chapter N**. It opens, in a new tab, the chapter of this guide that explains the page you are on; your work stays open in the app's tab. The guide opens in the app's language.
+
+| Page | Chapter opened |
+|---|---|
+| **Home** | 6 for a coach, 15 for a player, 17 for a parent, 12 for an analyst |
+| **Mola** | 18 |
+| **Drills** | 7 |
+| **Sessions** | 8 |
+| **Week** | 9 |
+| **Team** and **Observe** | 10 |
+| **Matches** | 11 |
+| **Analysis** and live tagging | 12 |
+| A match report | 13 |
+| **Match videos** and the video studio | 14 |
+| **Player space** | 15 (16 for the lessons, the notebook and the journey) |
+| **Books** | 19 |
+| **Premium** | 24 |
+| **Settings** | 6 |
 
 ## The active team and switching team
 
@@ -137,7 +160,7 @@ The **Premium** page opens from the Me menu, from **See the plans** or on the si
 
 Right under the title, a box states: "Payments are not connected yet. Mobile Money and cards are coming soon. Meanwhile, you can activate any plan in demo mode and try everything, without paying."
 
-The **Monthly** or **Yearly** switch changes how prices are shown; a year costs ten months ("2 months free"). The five plans are **Free** ($0), **Player Premium** ($4.99 a month), **Coach Pro** ($12.99 a month, "Recommended for coaches"), **Club and academy** ($49 a month) and **Federation** ("On quote"). Each paid price comes with its approximate equivalent in CFA francs, at about 600 FCFA to the dollar. A set of questions and answers closes the page.
+The **Monthly** or **Yearly** switch changes how prices are shown; a year costs ten months ("2 months free"). The five plans are **Free** ($0), **Player Premium** ($4.99 a month), **Coach Pro** ($12.99 a month, "Recommended for coaches"), **Club and academy** ($49 a month) and **Federation** ("On quote"). Each paid price comes with its approximate equivalent in CFA francs, at about 600 FCFA to the dollar. A separate card presents the **AI match analysis**, proposed at $2.99 per match on top of any plan (chapters 14 and 24). A set of questions and answers closes the page, including "Do we have to enter everything by hand?".
 
 To activate a plan as a demo:
 
@@ -146,7 +169,7 @@ To activate a plan as a demo:
 3. A message confirms, for example "Coach Pro plan activated in demo mode. No payment was taken.".
 4. The card now shows **Your plan**, and the **Plan** panel in **Settings** gives the new name. Under your name, at the bottom of the column, your role stays on show.
 
-What activation changes today: the **Free** and **Player Premium** plans, which do not include the coaching tools, limit the app to five sessions and one match analysed live. Once the limit is reached, the buttons that create sessions lead to **Premium**, and the tagging pad of a new match shows "Unlimited live analysis with Coach Pro" with **See plans**. With **Coach Pro**, **Club and academy** or **Federation**, both limits disappear. To go back, activate **Free**. Some lines on the cards describe the planned offer rather than an existing screen: "Staff accounts (coming soon)" and "Your club game model (coming soon)" say so themselves, since user accounts are not built yet. Chapter 24 explains the business model.
+What activation changes today: the **Free** and **Player Premium** plans, which do not include the coaching tools, limit the app to five sessions and one analysed match (on video or live). Once the limit is reached, the buttons that create sessions lead to **Premium**, and on the sheet of a new match, **Add the match video** carries a padlock and also leads to **Premium**, under a box reading "Unlimited analysis is in Coach Pro" with **See plans**. In **Analysis**, those matches offer **See plans** instead of **Add the video**. With **Coach Pro**, **Club and academy** or **Federation**, both limits disappear. To go back, activate **Free**. Some lines on the cards describe the planned offer rather than an existing screen: "Staff accounts (coming soon)" and "Your club game model (coming soon)" say so themselves, since user accounts are not built yet. Chapter 24 explains the business model.
 
 > [!INVESTOR] Prices on show, nothing charged
 > The page shows the intended prices, in dollars and CFA francs, and says in black and white that nothing is charged: activation is a demonstration. It is a matter of honesty towards the first clubs, and it is also the next commercial step: plugging Mobile Money and cards into plans that are already defined, already visible and already testable.

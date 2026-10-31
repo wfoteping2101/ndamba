@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { ArrowLeft, ChartLine, Clock, Crown, Goal, House, Lock, MapPin, Pencil, Plane, Printer, Radio, Trash2, Trophy } from 'lucide-react'
+import { ArrowLeft, ChartLine, Clock, Crown, Film, Goal, House, Lock, MapPin, Pencil, Plane, Printer, Radio, Trash2, Trophy } from 'lucide-react'
 import { db } from '../../lib/db'
 import { useLiveQuery, useDocumentTitle } from '../../lib/hooks'
 import { useSession } from '../../lib/session'
@@ -27,14 +27,15 @@ export default function MatchSheet() {
   const data = useLiveQuery(async () => {
     const match = (await db.matches.get(id)) as MatchWithConvo | undefined
     if (!match) return null
-    const [players, eventCount, liveMatches] = await Promise.all([
+    const [players, eventCount, liveMatches, video] = await Promise.all([
       db.players.where('teamId').equals(match.teamId).toArray(),
       db.events.where('matchId').equals(id).count(),
       db.events.orderBy('matchId').uniqueKeys(),
+      db.videos.where('matchId').equals(id).first(),
     ])
     const events = eventCount ? await db.events.where('matchId').equals(id).toArray() : []
-    return { match, players, eventCount, events, taggedMatchIds: liveMatches as string[] }
-  }, [id], undefined as undefined | null | { match: MatchWithConvo; players: Player[]; eventCount: number; events: import('../../lib/types').MatchEvent[]; taggedMatchIds: string[] })
+    return { match, players, eventCount, events, taggedMatchIds: liveMatches as string[], videoId: video?.id ?? null }
+  }, [id], undefined as undefined | null | { match: MatchWithConvo; players: Player[]; eventCount: number; events: import('../../lib/types').MatchEvent[]; taggedMatchIds: string[]; videoId: string | null })
   useDocumentTitle(data?.match ? t('sheet.docTitleVs', { opponent: data.match.opponent }) : t('sheet.docTitle'))
   const [scoreOpen, setScoreOpen] = useState(false)
   const [delOpen, setDelOpen] = useState(false)
@@ -127,9 +128,14 @@ export default function MatchSheet() {
       {/* actions */}
       <div className="no-print mb-6 space-y-3">
         <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap">
-          {!done && (
-            <button type="button" onClick={startLive} disabled={gated} className={cx('btn-lg', match.status === 'live' ? 'btn-danger' : 'btn-dark', 'justify-center')}>
-              {gated ? <Lock size={18} /> : <Radio size={18} />}{match.status === 'live' ? t('sheet.resumeLive') : t('sheet.live')}
+          {gated && !data.videoId ? (
+            <Link to="/app/premium" className="btn-sun btn-lg justify-center"><Lock size={18} />{t('sheet.videoAdd')}</Link>
+          ) : (
+            <Link to={data.videoId ? `/app/analyse/video/${data.videoId}` : `/app/analyse/video?nouveau=${match.id}`} className="btn-sun btn-lg justify-center"><Film size={18} />{data.videoId ? t('sheet.videoCode') : t('sheet.videoAdd')}</Link>
+          )}
+          {!done && !gated && (
+            <button type="button" onClick={startLive} className={cx('btn-lg', match.status === 'live' ? 'btn-danger' : 'btn-outline', 'justify-center')}>
+              <Radio size={18} />{match.status === 'live' ? t('sheet.resumeLive') : t('sheet.live')}
             </button>
           )}
           {hasReport && <Link to={`/app/analyse/rapport/${match.id}`} className="btn-primary btn-lg justify-center"><ChartLine size={18} />{t('sheet.report')}</Link>}

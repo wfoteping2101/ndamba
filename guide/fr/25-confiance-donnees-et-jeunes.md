@@ -17,22 +17,22 @@ Ndamba est une application « locale d'abord ». Tout ce que vous créez est enr
 | Le profil | Nom, rôle, langue, pays, ville, club, catégorie, poste, objectifs, formule |
 | L'effectif | Pour chaque joueur : nom, numéro, poste, année de naissance, pied fort, niveaux de compétence, notes |
 | L'entraînement | Les séances, leurs blocs et leurs exercices |
-| Les matchs | La fiche, la composition, le plan de jeu, les tags codés en direct ou en vidéo |
+| Les matchs | La fiche, la composition, le plan de jeu, les tags codés sur la vidéo (avec leur moment dans la vidéo) ou en direct |
 | Le parcours | Évaluations, observations, présences, objectifs, jalons |
 | La forme du jour | Sommeil, fatigue, douleurs, humeur, stress, effort ressenti, minutes |
 | L'espace joueur | Les défis réalisés, le carnet, les leçons marquées « J'ai compris » et l'auto-évaluation « Mon regard » |
 | Mola | La conversation et les tâches |
-| La vidéo | Le titre du projet, le nom du fichier, les tags et les images annotées ; jamais la vidéo elle-même |
+| Les vidéos des matchs | Pour chaque vidéo : le lien YouTube ou Facebook, ou le nom du fichier ; les coups d'envoi, les couleurs des maillots, les notes, les images annotées et le résultat de l'analyse IA s'il y en a une ; jamais la vidéo elle-même |
 
 Ce choix a des conséquences concrètes :
 
 - **Vous travaillez même avec un réseau faible.** Le codage en direct le dit : « Le chrono, les tags et le score sont enregistrés sur l'appareil à chaque tap, même sans réseau. »
 - **Personne d'autre ne voit vos données**, ni l'éditeur de Ndamba, ni un autre entraîneur.
-- **Les vidéos ne quittent pas l'appareil.** Le studio vidéo ouvre le fichier sur place : « La vidéo reste sur votre appareil : Ndamba n'enregistre que vos tags et vos dessins. » Un dessin est gardé avec l'image fixe du moment, en petit format.
+- **Ndamba ne stocke aucune vidéo.** Avec un lien, la vidéo reste sur YouTube ou sur Facebook, là où vous l'avez mise ; Ndamba ne garde que le lien. Avec un fichier, le studio l'ouvre sur place : il n'est jamais envoyé sur internet, et il faut le rouvrir à chaque visite. Un dessin est gardé avec l'image fixe du moment, en petit format. Seule l'analyse IA, si vous la lancez vous-même, envoie des images fixes du match (voir plus bas).
 - **Mais les données peuvent se perdre.** Effacer les données du navigateur, changer de téléphone ou travailler en navigation privée fait disparaître l'espace s'il n'a pas été sauvegardé. Deux navigateurs sur le même téléphone font deux espaces séparés.
 - **Une démo remplace les données du navigateur.** Quand le navigateur contient déjà votre propre espace, le site prévient avant de la lancer et conseille d'exporter une sauvegarde d'abord.
 
-À côté de cette base, le navigateur garde quelques éléments dans son stockage simple. Les leçons marquées « J'ai compris » et l'auto-évaluation « Mon regard » en font partie, mais elles voyagent avec les sauvegardes. Le chrono d'un match en cours, les réglages du codage, les suggestions masquées et le choix de la langue y sont aussi, mais ne figurent pas dans les sauvegardes. Enfin, dans tout le code de l'application, un seul appel peut envoyer à l'extérieur un texte que vous avez écrit : celui du modèle d'IA de Mola, décrit plus bas. L'application ne contient aucun outil de mesure d'audience ni de publicité, et ses polices de caractères sont livrées avec le site.
+À côté de cette base, le navigateur garde quelques éléments dans son stockage simple. Les leçons marquées « J'ai compris » et l'auto-évaluation « Mon regard » en font partie, mais elles voyagent avec les sauvegardes. Le chrono d'un match en cours, les réglages du codage, les suggestions masquées et le choix de la langue y sont aussi, mais ne figurent pas dans les sauvegardes. Enfin, dans tout le code de l'application, deux appels seulement peuvent envoyer à l'extérieur ce qui vient de vous : celui du modèle d'IA de Mola (un texte que vous avez écrit) et celui de l'analyse IA d'un match (des images de votre vidéo, après votre accord), tous deux décrits plus bas. Quand une vidéo est un lien, son lecteur est fourni par YouTube ou par Facebook, qui voient alors cette lecture comme sur leur propre site. L'application ne contient aucun outil de mesure d'audience ni de publicité, et ses polices de caractères sont livrées avec le site.
 
 ## Sauvegarder, restaurer, effacer
 
@@ -42,7 +42,7 @@ Pour exporter une sauvegarde :
 
 1. Ouvrez **Réglages**, dans le groupe **Moi** du menu.
 2. Dans le panneau **Vos données**, à la ligne **Exporter une sauvegarde**, appuyez sur **Exporter**.
-3. Un fichier nommé ndamba-AAAA-MM-JJ.json est téléchargé. Il contient toutes vos données de ce navigateur : le profil, les équipes, les joueurs, les séances, les matchs, les analyses, les projets vidéo, le parcours, la forme du jour, les notes, le carnet, la conversation avec Mola, les leçons comprises et « Mon regard ».
+3. Un fichier nommé ndamba-AAAA-MM-JJ.json est téléchargé. Il contient toutes vos données de ce navigateur : le profil, les équipes, les joueurs, les séances, les matchs, les analyses, les vidéos des matchs (liens, noms de fichiers, notes, dessins et analyses IA), le parcours, la forme du jour, les notes, le carnet, la conversation avec Mola, les leçons comprises et « Mon regard ».
 
 Pour restaurer une sauvegarde, sur le même appareil ou sur un autre :
 
@@ -104,6 +104,22 @@ Mola fonctionne d'abord avec un moteur de règles, dans l'application. Un modèl
 
 **Sans clé.** La fonction répond qu'elle n'est pas configurée, le moteur de règles répond seul, et tout fonctionne. L'application n'affiche pas aujourd'hui si le modèle est actif : c'est un réglage du serveur, choisi par l'éditeur.
 
+## L'analyse IA d'un match : ce qui est envoyé, exactement
+
+L'analyse IA est une option payante du studio vidéo (chapitres 14 et 24). Elle ne part jamais seule : c'est vous qui la lancez, match par match.
+
+**Quand.** Seulement après trois gestes de votre part : ouvrir le fichier du match sur l'appareil, taper un code d'accès, et cocher cette case : « J'ai l'accord des joueurs filmés, et de leurs parents pour les mineurs, pour envoyer des images de ce match à Claude (Anthropic). Seules des images partent, jamais la vidéo, et elles ne servent qu'à cette analyse. » Sans la case cochée, le bouton **Lancer l'analyse IA** reste grisé.
+
+**Ce qui part.** Des images fixes tirées du fichier, une toutes les 4, 6 ou 10 secondes selon votre choix, au format JPEG, larges de 960 pixels, par paquets d'une douzaine ; avec chacune, son moment dans la vidéo et le sens d'attaque. S'y ajoutent les couleurs des maillots que vous avez écrites, la langue et le code d'accès. À la fin, une dernière demande envoie les chiffres calculés sur l'appareil et les courtes notes rendues par le modèle, pour obtenir le résumé écrit.
+
+**Ce qui ne part pas.** La vidéo elle-même, son lien, le nom du fichier, les noms des joueurs, l'effectif, les tags, les rapports et tout le reste de vos données.
+
+**Où.** Vers une fonction du site lui-même, /api/analyse. C'est elle qui détient la clé de l'API d'Anthropic et vérifie le code d'accès ; elle refuse les envois trop lourds et transmet les images au modèle (claude-opus-5-5 par défaut, réglable par le propriétaire du site). Le code de cette fonction n'enregistre rien ; le fournisseur traite la demande selon ses propres conditions.
+
+**Ce qui revient.** Pour chaque image : la phase (nous, eux, ballon disputé, arrêt de jeu), le tiers où se trouve le ballon, la hauteur de notre bloc, le nombre de nos joueurs derrière le ballon, parfois une note courte et un signal « à revoir ». Puis un résumé de quelques phrases. L'application vérifie chaque valeur et enregistre le résultat sur l'appareil, avec le projet vidéo. Le modèle n'identifie aucun joueur, ne lit ni n'écrit dans vos données, et ne modifie jamais l'Indice Njangi, qui vient toujours du codage.
+
+**Sans clé ni codes.** La fonction répond qu'elle n'est pas configurée, le studio annonce que l'analyse IA n'est pas encore activée sur ce site, et rien n'est envoyé.
+
 ## Les jeunes joueurs et les mineurs
 
 Un joueur de moins de 16 ans voit un accueil fait pour son âge : le défi du jour, ses points d'expérience, sa série et son palier, la leçon du jour tirée du roman, le prochain match avec un rappel simple (« prépare ton sac et couche-toi tôt la veille »), son carnet et son parcours. Le parcours suit des règles d'âge écrites dans l'application : « Moins de 13 ans : des repères simples, jamais de classement. » et « 13 à 16 ans : progression et repères de match, sans classement. » L'espace de performance n'arrive qu'à 16 ans. Les conseils de santé sont dans l'espace joueur : « Bois de l'eau » et « Un jour sans défi par semaine. [...] Si tu as mal, arrête-toi et préviens ton entraîneur ou tes parents. »
@@ -115,6 +131,8 @@ Il n'y a dans Ndamba ni publicité, ni messagerie entre utilisateurs, ni profil 
 **Le rôle de parent.** Un parent choisit le rôle **Parent** pendant la conversation d'accueil ; Mola lui demande alors : « Quel âge a votre enfant, ou dans quelle catégorie joue-t-il ? » Son accueil est l'espace jeune de l'enfant, avec un encadré **Pour les parents** : « Quinze minutes, un mur et un ballon suffisent. Restez à côté, aidez à compter et rappelez de boire de l'eau. » Le parent garde cet espace jeune même quand l'enfant grandit. Conseil : pour un enfant de moins de 13 ans, c'est le parent qui crée l'espace, sur un appareil de la famille, et qui le garde.
 
 ![L'accueil d'Estelle, parent dans la démo académie U13 : l'encadré Pour les parents, la carte Le parcours de votre enfant et le défi du jour de l'enfant.](shot:youth-parent-home-named "Le parent voit l'espace de son enfant, avec un encadré qui lui est destiné.")
+
+**Filmer des jeunes.** Une vidéo de match montre des enfants. Demandez l'accord des parents avant de filmer, publiez sur YouTube en « non répertoriée » (seuls ceux qui ont le lien la voient) plutôt qu'en public, et ne partagez le lien qu'avec l'équipe. Une vidéo publiée sur Facebook doit être publique pour s'afficher dans Ndamba : pour des mineurs, préférez YouTube non répertoriée ou un fichier gardé sur l'appareil. Et l'analyse IA demande, par sa case à cocher, l'accord des joueurs filmés et de leurs parents.
 
 **Pour les entraîneurs.** L'effectif ne demande que l'année de naissance, pas la date complète, et c'est suffisant. Gardez des notes factuelles et bienveillantes : elles figurent dans les sauvegardes. La forme du jour touche à la santé : ne la demandez qu'à ceux qui en tirent un bénéfice, et lisez-la avec prudence.
 

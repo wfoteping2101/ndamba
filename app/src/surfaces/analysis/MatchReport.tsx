@@ -56,12 +56,11 @@ function Report({ match }: { match: Match }) {
 
   const flash = (s: string) => { setToast(s); window.setTimeout(() => setToast(''), 2200) }
   const copy = async () => { const ok = await copyText(reportText({ match, teamName, result, halves, summary, lang, t })); flash(ok ? t('report.copied') : t('report.copyFail')) }
-  const openVideo = async () => {
+  // the video of the match: open it (at a moment), or add it
+  const openVideo = async (at?: number) => {
     const existing = await db.videos.where('matchId').equals(match.id).first()
-    if (existing) { navigate(`/app/analyse/video/${existing.id}`); return }
-    const v: VideoProject = { id: uid('vp_'), title: `${teamName} ${t('common:app.vs')} ${match.opponent}`, matchId: match.id, tags: [], createdAt: nowISO() }
-    await db.videos.put(v)
-    navigate(`/app/analyse/video/${v.id}`)
+    if (existing) { navigate(`/app/analyse/video/${existing.id}${at != null ? `?t=${Math.max(0, Math.floor(at - 3))}` : ''}`); return }
+    navigate(`/app/analyse/video?nouveau=${match.id}`)
   }
 
   const header = <ReportHeader match={match} teamName={teamName} events={events} players={players} onCopy={copy} onPrint={() => window.print()} onVideo={openVideo} />
@@ -71,7 +70,7 @@ function Report({ match }: { match: Match }) {
       <div>
         {header}
         <EmptyState icon={<ChartLine size={32} />} title={t('report.noTagsTitle')} body={t('report.noTagsBody')}
-          action={<div className="flex flex-wrap justify-center gap-2"><Link to={`/app/analyse/live/${match.id}`} className="btn-primary"><Play size={16} />{t('report.startLive')}</Link><button type="button" onClick={openVideo} className="btn-outline"><Video size={16} />{t('report.video')}</button></div>} />
+          action={<div className="flex flex-wrap justify-center gap-2"><button type="button" onClick={() => openVideo()} className="btn-primary"><Video size={16} />{t('report.videoAdd')}</button><Link to={`/app/analyse/live/${match.id}`} className="btn-outline"><Play size={16} />{t('report.startLive')}</Link></div>} />
       </div>
     )
   }
@@ -165,9 +164,10 @@ function Report({ match }: { match: Match }) {
 /* ------------------------------------------------------------------ header */
 
 function ReportHeader({ match, teamName, events, players, onCopy, onPrint, onVideo }: {
-  match: Match; teamName: string; events: MatchEvent[]; players: Player[]; onCopy: () => void; onPrint: () => void; onVideo: () => void
+  match: Match; teamName: string; events: MatchEvent[]; players: Player[]; onCopy: () => void; onPrint: () => void; onVideo: (at?: number) => void
 }) {
   const { t, lang } = useT('analysis')
+  const onVideoCoded = events.some((e) => e.videoT != null)
   const res = match.scoreUs > match.scoreThem ? 'W' : match.scoreUs < match.scoreThem ? 'L' : 'D'
   const goals = events.filter((e) => e.code === 'GOAL').sort((a, b) => a.half - b.half || a.t - b.t)
   const byId = new Map(players.map((p) => [p.id, p]))
@@ -204,16 +204,19 @@ function ReportHeader({ match, teamName, events, players, onCopy, onPrint, onVid
                     <Goal size={13} className={g.side === 'us' ? 'text-sun-300' : 'text-clay-300'} />
                     <span className="tabular-nums">{minuteLabel(g.half, g.t, match.halfMinutes)}</span>
                     <span>{g.side === 'us' ? (p ? p.name : teamName) : match.opponent}</span>
+                    {g.videoT != null && <button type="button" onClick={() => onVideo(g.videoT)} className="no-print inline-flex min-h-[32px] items-center gap-1 rounded-full bg-white/10 px-2 text-[12px] font-semibold hover:bg-white/20" aria-label={t('report.watchGoal')}><Play size={11} fill="currentColor" />{t('report.watch')}</button>}
                   </li>
                 )
               })}
             </ul>
           )}
           <div className="no-print mt-5 flex flex-wrap gap-2 border-t border-white/15 pt-4">
-            <Link to={`/app/analyse/live/${match.id}`} className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl bg-white/10 px-3 text-[13px] font-semibold hover:bg-white/15"><Pencil size={15} />{t('report.editTags')}</Link>
-            <button type="button" onClick={onVideo} className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl bg-white/10 px-3 text-[13px] font-semibold hover:bg-white/15"><Video size={15} />{t('report.video')}</button>
+            {onVideoCoded
+              ? <button type="button" onClick={() => onVideo()} className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl bg-white/10 px-3 text-[13px] font-semibold hover:bg-white/15"><Pencil size={15} />{t('report.editOnVideo')}</button>
+              : <Link to={`/app/analyse/live/${match.id}`} className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl bg-white/10 px-3 text-[13px] font-semibold hover:bg-white/15"><Pencil size={15} />{t('report.editTags')}</Link>}
+            {!onVideoCoded && <button type="button" onClick={() => onVideo()} className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl bg-white/10 px-3 text-[13px] font-semibold hover:bg-white/15"><Video size={15} />{t('report.video')}</button>}
             <Link to={`/app/matchs/${match.id}`} className="inline-flex min-h-[40px] items-center gap-1.5 rounded-xl bg-white/10 px-3 text-[13px] font-semibold hover:bg-white/15"><ListChecks size={15} />{t('report.sheet')}</Link>
-            <span className="ml-auto self-center text-[12.5px] tabular-nums text-cream/70">{t('hub.tags', { count: events.length })}</span>
+            <span className="ml-auto self-center text-[12.5px] tabular-nums text-cream/70">{t('hub.tags', { count: events.length })}, {onVideoCoded ? t('report.srcVideo') : t('report.srcLive')}</span>
           </div>
         </div>
       </div>

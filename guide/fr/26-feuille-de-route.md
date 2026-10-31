@@ -26,7 +26,9 @@ Tout ce qui figure dans ce tableau fonctionne et peut être ouvert dans la versi
 | Les écrans | 27 adresses dans l'application (26 écrans), 5 pages publiques et la page d'accueil de Mola | Le menu |
 | Les démos | 2 : club pro (Étoile de la Côte, 22 joueurs) et académie U13 (Lionceaux de Bonamoussadi, 15 joueurs) | Page d'accueil du site |
 | Mola | 11 actions, dont 2 qui attendent votre accord (la convocation et le calendrier) | **Mola** |
-| Le codage en direct | 14 codes d'événement, des passes aux buts, sur 16 boutons (19 si l'on code aussi l'adversaire) | **Analyse** |
+| Le codage des matchs | 14 codes d'événement, des passes aux buts, sur 16 boutons (19 si l'on code aussi l'adversaire), placés sur la vidéo du match (lien YouTube ou Facebook, ou fichier de l'appareil) ou en direct depuis la touche | **Analyse** |
+| L'analyse IA d'un match | Une lecture des images du fichier vidéo par Claude : possession, territoire, hauteur du bloc, défense de repos, moments à revoir ; payante au match, avec un code d'accès, une fois la clé configurée par le propriétaire du site | Le studio vidéo |
+| Le lien vers le guide | Sur chaque page de l'application, le chapitre de ce guide qui l'explique | En haut à droite de chaque page |
 | L'Indice Njangi | Un indice sur 100, 5 sous-indices sur 20, 5 niveaux de lecture | Le rapport de match |
 | Les systèmes de jeu | 14 systèmes de départ pour 5 formats, de 5 contre 5 à 11 contre 11 | Les équipes et les matchs |
 | Les données | 17 tables enregistrées sur l'appareil, avec export et restauration | **Réglages** |
@@ -52,6 +54,9 @@ Les chantiers ci-dessous sont prévus. Aucun n'a de date de livraison annoncée 
 | Comptes du staff | Plusieurs membres d'un staff sur la même équipe | Les comptes | Étape 2 |
 | Limites des formules | Aligner le code sur la page Premium (seules deux limites existent aujourd'hui) | Les paiements | Avec les paiements |
 | Vidéo partagée | Faire circuler extraits et dessins au sein d'un club | Les comptes, du stockage | Après les comptes |
+| Détection automatique des actions | Que la vidéo se code en partie seule : passes, pertes, tirs repérés par l'image, puis vérifiés par l'analyste | Des modèles d'image entraînés pour le football, des matchs codés pour les entraîner | Après les références par âge |
+| Paiement de l'analyse IA dans l'application | Payer un match sans passer par un code remis à la main | Les paiements | Avec les paiements |
+| Quotas par code d'accès | Qu'un code donne droit à un nombre de matchs, et pas plus | Les comptes ou les paiements | Avec les paiements |
 | Formation des entraîneurs | 100 entraîneurs formés, puis les premiers certifiés Njangi | Des formateurs, des modules | Étapes 1 et 2 |
 | Références de l'Indice par âge | Savoir ce qu'est un bon Indice en U13 ou en U17 | 1 000 matchs codés, partagés avec accord | Étapes 1 et 2 |
 | Modèle de jeu national et vue des sélections | Faire travailler U15, U17 et U20 sur un même modèle | Un partenariat avec une fédération | Étape 3 (2030) |
@@ -60,7 +65,7 @@ Les chantiers ci-dessous sont prévus. Aucun n'a de date de livraison annoncée 
 
 Les titres des tomes suivants sont déjà fixés : *Premier contrat*, *La CAN*, *Mondial 2030* et *2034, l'étoile*.
 
-**Dans quel ordre, et pourquoi.** Un paiement doit être rattaché à une personne : les paiements et les comptes avancent donc ensemble, et ils viennent en premier, parce qu'ils conditionnent à la fois le revenu, le partage entre le staff et les familles, et la mesure de l'usage. La formation des entraîneurs et les clubs pilotes, eux, n'attendent pas le code : ils peuvent commencer dès aujourd'hui avec l'application telle qu'elle est. Les références par âge demandent des données : pendant l'étape 1, elles viennent des sauvegardes partagées avec accord, puis des comptes. La vidéo partagée et les comptes du staff suivent naturellement les comptes. La vue des sélections et le modèle de jeu national viennent quand une fédération s'engage. Les livres et les langues avancent en parallèle, avec d'autres métiers : l'écriture, l'illustration, la traduction.
+**Dans quel ordre, et pourquoi.** Un paiement doit être rattaché à une personne : les paiements et les comptes avancent donc ensemble, et ils viennent en premier, parce qu'ils conditionnent à la fois le revenu, le partage entre le staff et les familles, et la mesure de l'usage. La formation des entraîneurs et les clubs pilotes, eux, n'attendent pas le code : ils peuvent commencer dès aujourd'hui avec l'application telle qu'elle est. Les références par âge demandent des données : pendant l'étape 1, elles viennent des sauvegardes partagées avec accord, puis des comptes. La vidéo partagée et les comptes du staff suivent naturellement les comptes. La détection automatique des actions vient plus tard, et pour une raison simple : aujourd'hui, analyser un match veut dire qu'une personne code chaque action, désormais sur la vidéo, ce qui permet de tout revoir et de tout corriger. L'analyse IA d'aujourd'hui estime des tendances à partir d'images ; elle ne compte pas chaque passe. Pour que la machine repère elle-même chaque action, il faut des modèles d'image entraînés pour le football, et des milliers de matchs codés avec soin pour les entraîner et les vérifier : c'est précisément ce que produit le codage sur vidéo. La vue des sélections et le modèle de jeu national viennent quand une fédération s'engage. Les livres et les langues avancent en parallèle, avec d'autres métiers : l'écriture, l'illustration, la traduction.
 
 ## Les indicateurs à suivre
 
@@ -97,7 +102,7 @@ Pour que les étapes 1 et 2 se mesurent de la même façon partout, voici le dé
 
 1. **Former.** L'entraîneur lit les parties du *Code Njangi* sur les intentions, la semaine et la mesure, et reçoit une courte formation au codage.
 2. **Installer.** Avec Mola, il crée son espace, son équipe et son effectif dans la conversation d'accueil.
-3. **Travailler chaque semaine.** Il prépare la semaine vers le match, conduit ses séances, code le match en direct et lit le rapport.
+3. **Travailler chaque semaine.** Il prépare la semaine vers le match, conduit ses séances, code le match sur sa vidéo (ou en direct) et lit le rapport.
 4. **Sauvegarder.** Chaque semaine, il exporte une sauvegarde et, s'il l'accepte par écrit, la partage pour le calcul des références.
 5. **Faire le point chaque mois.** L'Indice et ses sous-indices sont relus avec lui, et les intentions du mois suivant sont choisies en conséquence.
 

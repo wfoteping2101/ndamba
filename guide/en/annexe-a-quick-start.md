@@ -6,13 +6,13 @@ resume: For each profile, the first steps in Ndamba, in order, with the chapter 
 
 This appendix fits on a few pages: one card per profile, five to seven steps, and the chapter where each step is explained. Words in **bold** are the labels on screen.
 
-Two rules apply to every profile before you start. Your data stays on your device, in your browser: export a backup from **Settings** before you change device (chapter 6). And a demo replaces the browser's data: if you have already created your own space, export a backup first (chapter 5).
+For every profile, one landmark: at the top right of every page of the app, the **How does it work? Guide, chapter N** link opens the chapter that explains the page. And two rules apply to every profile before you start. Your data stays on your device, in your browser: export a backup from **Settings** before you change device (chapter 6). And a demo replaces the browser's data: if you have already created your own space, export a backup first (chapter 5).
 
 ## Investor or partner, in thirty minutes
 
 1. Open the site and click **Pro club demo**. Within seconds you are in the space of Daniel Mbarga, coach of Étoile de la Côte, a professional club invented for the demo (chapter 5).
 2. Look at the home screen: today's session, the next match, the week (chapter 6).
-3. Open **Analysis**, then the report of the last match: a Njangi Index of 67.9 out of 100 and its five sub-indices (chapter 13).
+3. Open **Analysis**: the **How analysis works** block says in three steps how a match is analysed (film, put online, tag on the video). Then open the report of the last match: a Njangi Index of 67.9 out of 100 and its five sub-indices (chapters 12 and 13).
 4. Open **Mola** and type "Write the match call-up". Watch the steps appear: the call-up waits in the **To approve** tab, with **Approve and open WhatsApp** or **Cancel**. Nothing leaves the app without your consent (chapter 18).
 5. Read chapters 22 and 23: the diagnosis, then the plan from 2026 to 2041.
 6. Finish with chapters 24 and 26: what exists today, what is still to be built, and what each plan costs.
@@ -24,15 +24,16 @@ Two rules apply to every profile before you start. Your data stays on your devic
 3. Create your first session with **New session**, or let Mola build it: "Create an MD-3 session" (chapter 8).
 4. On the **Week** page, tap **Plan the week**: Mola builds a session for each day from MD-4 to MD-1 still free before the next match, leaving free the day of another match and the day after it. On the Free plan it stops at five sessions in all (chapter 9).
 5. Prepare the match with **New match**: opponent, line-up, game plan, then the call-up by WhatsApp, SMS or e-mail, which you send yourself (chapter 11).
-6. On match day, tap **Start live analysis** on the match sheet (or **Live** on the home screen), then read the report (chapters 12 and 13).
+6. Have the match filmed with a phone, put the video on YouTube as "unlisted" or on Facebook, then tap **Add the match video** on the match sheet and tag it. Without a video, tap **Live, without video** at kick-off. Then read the report (chapters 12 and 13).
 
 ## Analyst
 
 1. Create your space with the **Analyst** role, or open the **Pro club demo** to practise (chapters 3 and 5).
-2. Learn the live buttons and their keys: **Pass**, **Pass lost**, **Progressive**, **Line broken**, **Final third**, **Box**, **Shot**, **On target** and **Goal** (keys 1 to 9), then **Pins two**, **Switch**, **Loss**, **Won back 5 s** and **Ball won** (keys F, S, L, K and R), and for the opponent **Their shot** and **Their goal** (keys A and B) (chapter 12).
-3. Tag a full match, then, from the report, go back over it with **Fix the tags** (chapter 12).
-4. Read the report: the Index, the five sub-indices, the comparison with the previous match (from the second analysed match on), the drills it suggests (chapter 13).
-5. Open the video studio to review and annotate moments, then follow the season in **Analysis** (chapter 14).
+2. Learn the tagging buttons and their keys, the same on the video and live: **Pass**, **Pass lost**, **Progressive**, **Line broken**, **Final third**, **Box**, **Shot**, **On target** and **Goal** (keys 1 to 9), then **Pins two**, **Switch**, **Loss**, **Won back 5 s** and **Ball won** (keys F, S, L, K and R), and for the opponent **Their shot** and **Their goal** (keys A and B) (chapter 12).
+3. In **Analysis**, tap **Add the video** on a match, paste the YouTube or Facebook link (or choose the file, or **Film** with the phone's camera), then **Open the studio** (chapter 12).
+4. In the studio, mark both kick-offs with **Mark here**, then tag the match, in slow motion if needed, and draw on the moments to show (chapter 14).
+5. Read the report: the Index, the five sub-indices, the comparison with the previous match (from the second analysed match on), the drills it suggests, and **Watch** on each goal to find its moment in the video (chapter 13).
+6. If the site has activated it, start the **AI match analysis** from the video file, with an access code, then follow the season in **Analysis** (chapter 14).
 
 ## Technical director or club executive
 

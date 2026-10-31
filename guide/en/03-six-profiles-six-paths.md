@@ -49,9 +49,9 @@ Further down come **This week** (the seven days, with sessions and the match, an
 ### The analyst's path
 
 1. Choose **Analyst** and give your club; create or activate the team you follow.
-2. On match day, open **Live analysis** from the quick actions, or **Live** on the match card.
-3. At the end, open the report: **Copy as text** to send it to the staff, **Print** for the team talk.
-4. After the match, open **Video** in the menu to mark the moments to show the players.
+2. Have the match filmed, put the video on YouTube as "unlisted" or on Facebook, then, in **Analysis**, tap **Add the video** on that match and tag it in the studio, marking both kick-offs. Without a video, open **Live analysis** from the quick actions, or **Live** on the match card.
+3. Open the report: **Copy as text** to send it to the staff, **Print** for the team talk, and **Watch** on each goal to find its moment in the video.
+4. In the studio, draw on the moments to show the players; if the site has activated it, the AI analysis also suggests moments to watch again.
 
 ### The manager's or technical director's path
 
@@ -135,10 +135,12 @@ The books and the 64 drills are free for everyone, with no time limit. Premium p
 | Club and academy | $49 a month (about 29,400 FCFA) | The manager and the technical director: every age group |
 | Federation | On quote | Federations and leagues |
 
+One option can be added to any plan: the **AI match analysis**, proposed at $2.99 per match (chapter 24).
+
 ![The Premium page, with the five plans Free, Player Premium, Coach Pro, Club and academy and Federation, and the notice about payments.](shot:site-pricing "The five plans: payments are not connected yet, and the page says so.")
 
 > [!WARNING] What the plans really do today
-> Payments are not connected: **Activate (demo)** switches on a plan without any payment. A new profile starts on the Free plan. Only two limits exist today, five sessions and one match analysed live, and they apply to **Free** and to **Player Premium** alike, since Player Premium does not include the coaching tools. On the cards, staff accounts and the club game model are marked "(coming soon)". The national game model, coach education and dedicated support are built with each federation; they are not separate screens in the app.
+> Payments are not connected: **Activate (demo)** switches on a plan without any payment. A new profile starts on the Free plan. Only two limits exist today, five sessions and one analysed match (on video or live), and they apply to **Free** and to **Player Premium** alike, since Player Premium does not include the coaching tools. On the cards, staff accounts and the club game model are marked "(coming soon)". The national game model, coach education and dedicated support are built with each federation; they are not separate screens in the app.
 
 > [!INVESTOR] One product, six doors
 > The six roles are not six products: they are one database, one vocabulary and one Index, seen from six angles. The child doing a challenge, the parent, the coach and the technical director all work on the same team. That continuity, from player to federation, is what the business model in chapter 24 aims to charge for, to those who get the most value from it.

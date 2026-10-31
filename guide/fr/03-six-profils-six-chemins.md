@@ -49,9 +49,9 @@ Plus bas viennent **La semaine** (les sept jours, avec les séances et le match,
 ### Le chemin de l'analyste
 
 1. Choisissez **Analyste** et indiquez votre club ; créez ou activez l'équipe que vous suivez.
-2. Le jour du match, ouvrez **Analyse en direct** depuis les actions rapides, ou **Direct** sur la carte du match.
-3. À la fin, ouvrez le rapport : **Copier le texte** pour l'envoyer au staff, **Imprimer** pour la causerie.
-4. Après le match, ouvrez **Vidéo** dans le menu pour marquer les moments à montrer aux joueurs.
+2. Faites filmer le match, mettez la vidéo sur YouTube en « non répertoriée » ou sur Facebook, puis, dans **Analyse**, touchez **Ajouter la vidéo** sur ce match et codez-la dans le studio, en marquant les deux coups d'envoi. Sans vidéo, ouvrez **Analyse en direct** depuis les actions rapides, ou **Direct** sur la carte du match.
+3. Ouvrez le rapport : **Copier le texte** pour l'envoyer au staff, **Imprimer** pour la causerie, et **Revoir** sur chaque but pour retrouver son moment dans la vidéo.
+4. Dans le studio, dessinez sur les moments à montrer aux joueurs ; si le site l'a activée, l'analyse IA propose aussi des moments à revoir.
 
 ### Le chemin du manager ou du directeur technique
 
@@ -135,10 +135,12 @@ Les livres et les 64 exercices sont gratuits pour tous, sans limite de durée. L
 | Club et académie | 49 $US par mois (environ 29 400 FCFA) | Le manager et le directeur technique : toutes les catégories |
 | Fédération | Sur devis | Les fédérations et les ligues |
 
+Une option s'ajoute à n'importe quelle formule : l'**Analyse IA d'un match**, proposée à 2,99 $US par match (chapitre 24).
+
 ![La page Premium, avec les cinq formules Gratuit, Joueur Premium, Coach Pro, Club et académie et Fédération, et l'avertissement sur les paiements.](shot:site-pricing "Les cinq formules : les paiements ne sont pas encore branchés, la page le dit.")
 
 > [!ATTENTION] Ce que les formules font vraiment aujourd'hui
-> Les paiements ne sont pas branchés : **Activer (démo)** active une formule sans rien payer. Un nouveau profil commence en formule Gratuit. Deux limites seulement existent aujourd'hui, cinq séances et un match analysé en direct, et elles valent pour **Gratuit** comme pour **Joueur Premium**, qui ne contient pas les outils de l'entraîneur. Sur les cartes, les comptes du staff et le modèle de jeu du club portent la mention « (bientôt) ». Le modèle de jeu national, la formation des entraîneurs et l'accompagnement se construisent avec chaque fédération ; ce ne sont pas des écrans à part de l'application.
+> Les paiements ne sont pas branchés : **Activer (démo)** active une formule sans rien payer. Un nouveau profil commence en formule Gratuit. Deux limites seulement existent aujourd'hui, cinq séances et un match analysé (sur vidéo ou en direct), et elles valent pour **Gratuit** comme pour **Joueur Premium**, qui ne contient pas les outils de l'entraîneur. Sur les cartes, les comptes du staff et le modèle de jeu du club portent la mention « (bientôt) ». Le modèle de jeu national, la formation des entraîneurs et l'accompagnement se construisent avec chaque fédération ; ce ne sont pas des écrans à part de l'application.
 
 > [!INVESTISSEUR] Un produit, six portes d'entrée
 > Les six rôles ne sont pas six produits : c'est une seule base de données, un seul vocabulaire et un seul Indice, vus sous six angles. L'enfant qui fait son défi, son parent, son éducateur et le directeur technique travaillent sur la même équipe. C'est cette continuité, du joueur à la fédération, que le modèle économique du chapitre 24 cherche à faire payer par ceux qui en tirent le plus de valeur.

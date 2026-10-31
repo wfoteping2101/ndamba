@@ -64,8 +64,11 @@ This glossary gathers the words you will meet in the app, in *The Njangi Code* a
 
 | Term | In French | Definition | Chapter |
 |---|---|---|---|
-| Live tagging | Codage en direct | Tapping a button for each action during the match. Each tap creates a tag. | 12 |
-| Tag | Tag | A tagged action, with its moment in the match and, if you wish, its player. | 12 |
+| Video tagging | Codage sur vidéo | The recommended way to analyse a match: a person watches its video and taps a button for each action. Each code keeps its moment in the video, so it can be watched again and corrected. | 12 |
+| Live tagging | Codage en direct | Tapping a button for each action during the match, from the touchline, without video. Same buttons, but nothing to watch again: keep it for matches that are not filmed. | 12 |
+| Tag | Tag | A tagged action, with its moment in the match (and its moment in the video if it was tagged on the video) and, if you wish, its player. | 12 |
+| Video link (unlisted) | Lien vidéo (non répertoriée) | The link of a match video put on YouTube as "unlisted" (only those who have the link can see it) or on Facebook as public. Ndamba keeps the link, never the video. | 12 |
+| Kick-off (mark) | Coup d'envoi (marquer) | In the studio, putting the video on the kick-off of each half and tapping **Mark here**, so that the report's minutes are right. | 14 |
 | Won back 5 s | Reprise 5 s | The ball won back within five seconds of losing it. | 12 |
 | Njangi Index | Indice Njangi | The match score out of 100: did we possess with purpose? It is the sum of five sub-indices out of 20. | 13 |
 | Progression | Progression | The sub-index of passes that move forward or break a line. | 13 |
@@ -76,7 +79,8 @@ This glossary gathers the words you will meet in the app, in *The Njangi Code* a
 | Conservation (K) | Conservation (K) | Completed passes divided by actions (completed passes, lost passes and losses). | 13 |
 | Index bands | Paliers de l'Indice | **Possession without purpose** (under 35), **Fragile purpose** (35 to under 50), **Njangi in progress** (50 to under 65), **Solid Njangi** (65 to under 80), **Championship Njangi** (80 and over). | 13 |
 | Match report | Rapport de match | The page that reads the tagged match: the Index, the sub-indices, the comparison, the drills to work on. | 13 |
-| Video studio | Studio vidéo | The screen where you review a match video, place tags at the right moment and draw on the frame. The video stays on the device, and its tags do not count in the report. | 14 |
+| Video studio | Studio vidéo | The screen where you play a match video (link or file), tag each action at the right moment and draw on the frame. Its codes go into the match report. Ndamba does not store the video. | 14 |
+| AI analysis | Analyse IA | The studio's paid option: Claude, Anthropic's AI, reads a frame every few seconds of the video file and estimates possession, territory, the height of the block and the rest defence, with the moments to watch again. It complements tagging and does not change the Index. | 14 |
 
 ## The player, the family and Mola
 

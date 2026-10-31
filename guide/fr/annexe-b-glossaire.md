@@ -64,8 +64,11 @@ Ce glossaire rassemble les mots que vous croiserez dans l'application, dans *Le 
 
 | Terme | En anglais | Définition | Chapitre |
 |---|---|---|---|
-| Codage en direct | Live tagging | Toucher un bouton à chaque action pendant le match. Chaque toucher crée un tag. | 12 |
-| Tag | Tag | Une action codée, avec son moment du match et, si vous le voulez, son joueur. | 12 |
+| Codage sur vidéo | Video tagging | La manière conseillée d'analyser un match : une personne regarde sa vidéo et touche un bouton à chaque action. Chaque code garde son moment dans la vidéo, on peut donc le revoir et le corriger. | 12 |
+| Codage en direct | Live tagging | Toucher un bouton à chaque action pendant le match, depuis la touche, sans vidéo. Mêmes boutons, mais rien à revoir : à garder pour les matchs non filmés. | 12 |
+| Tag | Tag | Une action codée, avec son moment du match (et son moment dans la vidéo si elle a été codée sur la vidéo) et, si vous le voulez, son joueur. | 12 |
+| Lien vidéo (non répertoriée) | Video link (unlisted) | Le lien d'une vidéo de match mise sur YouTube en « non répertoriée » (seuls ceux qui ont le lien la voient) ou sur Facebook en public. Ndamba garde le lien, jamais la vidéo. | 12 |
+| Coup d'envoi (marquer) | Kick-off (mark) | Dans le studio, placer la vidéo sur le coup d'envoi de chaque mi-temps et toucher **Marquer ici**, pour que les minutes du rapport soient justes. | 14 |
 | Reprise 5 s | Won back 5 s | Le ballon récupéré dans les cinq secondes qui suivent une perte. | 12 |
 | Indice Njangi | Njangi Index | La note du match sur 100 : a-t-on possédé avec intention ? C'est la somme de cinq sous-indices sur 20. | 13 |
 | Progression | Progression | Le sous-indice des passes qui avancent ou traversent une ligne. | 13 |
@@ -76,7 +79,8 @@ Ce glossaire rassemble les mots que vous croiserez dans l'application, dans *Le 
 | Conservation (K) | Conservation (K) | Passes réussies divisées par les actions (passes réussies, passes perdues et pertes). | 13 |
 | Paliers de l'Indice | Index bands | **Possession sans intention** (moins de 35), **Intention fragile** (de 35 à moins de 50), **Njangi en construction** (de 50 à moins de 65), **Njangi solide** (de 65 à moins de 80), **Njangi de champion** (80 et plus). | 13 |
 | Rapport de match | Match report | La page qui lit le match codé : l'Indice, les sous-indices, la comparaison, les exercices à travailler. | 13 |
-| Studio vidéo | Video studio | L'écran où l'on revoit la vidéo d'un match, place des tags au bon moment et dessine sur l'image. La vidéo reste sur l'appareil, et ses tags ne comptent pas dans le rapport. | 14 |
+| Studio vidéo | Video studio | L'écran où l'on lit la vidéo d'un match (lien ou fichier), code chaque action au bon moment et dessine sur l'image. Ses codes vont dans le rapport du match. Ndamba ne stocke pas la vidéo. | 14 |
+| Analyse IA | AI analysis | L'option payante du studio : Claude, l'IA d'Anthropic, lit une image toutes les quelques secondes du fichier vidéo et estime la possession, le territoire, la hauteur du bloc et la défense de repos, avec les moments à revoir. Elle complète le codage, ne change pas l'Indice. | 14 |
 
 ## Le joueur, la famille et Mola
 

@@ -16,7 +16,7 @@ Open **Matches** in the menu, or in the bottom bar on a phone. The page has two 
 
 **Upcoming** opens with a large green card, the **Next match**. It shows when it is (**Today**, **Tomorrow** or **In 2 days**, for example), **Home** or **Away**, the competition, the date, the time, the venue, the formation and how many starters are already in place. Tap it to open the **Match sheet**. The other upcoming matches follow as a list.
 
-**Played** lists finished matches, most recent first, with the **Full time** status, the score (the home side on the left), the result (**Win**, **Draw** or **Loss**) and, if the match was tagged live, a dial with the Njangi Index. A planned match whose date has passed without being finished also appears here, marked **Score missing**. A match being tagged right now is marked **Live**.
+**Played** lists finished matches, most recent first, with the **Full time** status, the score (the home side on the left), the result (**Win**, **Draw** or **Loss**) and, if the match was tagged, a dial with the Njangi Index. A planned match whose date has passed without being finished also appears here, marked **Score missing**. A match being tagged right now is marked **Live**.
 
 ## Set up a new match
 
@@ -74,11 +74,11 @@ Finally, tap **Save the match**. The match sheet opens.
 
 ## The match sheet, before kick-off
 
-![The sheet of the demo's next match, away against Rapides de Kribi: the buttons Start live analysis, Enter the score and Observe, the 4-3-3 lineup with the captain marked C, the substitutes, the five-moment game plan and the Call-up card with WhatsApp, SMS, Email, Copy and Calendar (.ics).](shot:pro-match-sheet-full "The match sheet: the whole match on one page.")
+![The sheet of the demo's next match, away against Rapides de Kribi: the buttons Add the match video, Live, without video, Enter the score and Observe, the 4-3-3 lineup with the captain marked C, the substitutes, the five-moment game plan and the Call-up card with WhatsApp, SMS, Email, Copy and Calendar (.ics).](shot:pro-match-sheet-full "The match sheet: the whole match on one page.")
 
 At the top, **Matches** takes you back to the list, **Print** produces a clean sheet (poster, lineup, squad list with the captain marked "(C)", game plan and motto), **Edit** reopens the four steps under the title **Edit match**, and the bin deletes the match: its lineup and tagged actions are erased from this device.
 
-The green plate shows the status (**Upcoming**), the competition, both teams (the home side on the left), the time, the date, the venue, **Home** or **Away**, the format and the duration ("2 x 45 min"). Three buttons follow: **Start live analysis** opens the tagger from chapter 12, **Enter the score** is for a match you will not tag, and **Observe** opens the chapter 10 screen with the match's starters and substitutes.
+The green plate shows the status (**Upcoming**), the competition, both teams (the home side on the left), the time, the date, the venue, **Home** or **Away**, the format and the duration ("2 x 45 min"). The buttons follow. **Add the match video**, in gold, is the recommended path: after the match, it opens the form where you paste the video's YouTube or Facebook link (or choose the file), then the studio where you tag the match (chapter 12); once the video is added, it becomes **Code the video**. **Live, without video** opens the touchline tagger, for a match that will not be filmed; it becomes **Resume live coding** while the match is in play. **Enter the score** is for a match you will not tag, and **Observe** opens the chapter 10 screen with the match's starters and substitutes.
 
 Below: the **Lineup** on the pitch, with the **Captain**; the **Substitutes**, each leading to their file; the **Game plan**, with **Edit** (or **Write the game plan** if it is empty); and the **Call-up** card, "The group message, ready to send", with **Open** to read it again and the same send buttons.
 
@@ -104,11 +104,11 @@ If you edited the text by hand in the **Call-up** step, Mola uses your version, 
 
 ## After the match
 
-Once the match is over, the sheet changes. The plate shows the score in large type and the result (**Win**, **Draw** or **Loss**). The buttons become **View the report** (chapter 13), **Observe** and **Playing time**. If the match was not tagged live, **Correct the score** stays available. The call-up card disappears.
+Once the match is over, the sheet changes. The plate shows the score in large type and the result (**Win**, **Draw** or **Loss**). The buttons become **Add the match video** (or **Code the video**), **View the report** (chapter 13), **Observe** and **Playing time**: the video can be added days after the match. If the match was not tagged, **Correct the score** stays available. The call-up card disappears.
 
-![The sheet of the played match against Météore de Bafoussam: the score 2-1, Win, the buttons View the report, Observe and Playing time, and the Njangi Index card: Solid Njangi, 67.9 out of 100, 783 tagged actions.](shot:pro-match-sheet-past "After the match: the report, playing time and the Njangi Index.")
+![The sheet of the played match against Météore de Bafoussam: the score 2-1, Win, the buttons Add the match video, View the report, Observe and Playing time, and the Njangi Index card: Solid Njangi, 67.9 out of 100, 783 tagged actions.](shot:pro-match-sheet-past "After the match: the report, playing time and the Njangi Index.")
 
-For a match tagged live, a **Njangi Index** card shows the dial, the rating (**Solid Njangi**, for example), the value out of 100 and the number of tagged actions; it opens the report.
+For a tagged match, on the video or live, a **Njangi Index** card shows the dial, the rating (**Solid Njangi**, for example), the value out of 100 and the number of tagged actions; it opens the report.
 
 For a match you did not tag, **Enter the score** opens the **Final score** window: set both scores with the plus and minus buttons, then **Save the score**. The match moves to **Full time**.
 
@@ -119,5 +119,5 @@ For a match you did not tag, **Enter the score** opens the **Final score** windo
 1. As soon as the match is known, create it with **New match**, or ask Mola. The match date is also used by the week planner (chapter 9).
 2. During the week, adjust the lineup and the game plan with **Edit**: injuries, absences, ideas from training.
 3. One or two days before, send the call-up, from the match sheet or through Mola, once the bench has been checked.
-4. On match day, open the sheet and tap **Start live analysis** at kick-off (chapter 12).
-5. After the match, save the **Playing time**, open **View the report** and note what to work on the following week (chapter 13).
+4. On match day, have the match filmed with a phone set up high (chapter 12). With no camera, tap **Live, without video** at kick-off.
+5. After the match, put the video on YouTube as "unlisted" or on Facebook, tap **Add the match video** and tag it. Save the **Playing time**, open **View the report** and note what to work on the following week (chapter 13).

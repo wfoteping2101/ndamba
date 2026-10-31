@@ -465,11 +465,20 @@
       "pay": {
         "q": "Comment payer ?",
         "a": "Les paiements ne sont pas encore branchés. Mobile Money et cartes bancaires arrivent. Les prix en FCFA sont indicatifs, sur la base de 1 dollar pour environ 600 FCFA."
+      },
+      "ai": {
+        "q": "Faut-il tout saisir à la main ?",
+        "a": "Le codage se fait sur la vidéo : une personne touche un bouton à chaque action, et chaque code garde son moment, on peut donc le revoir et le corriger. C'est ainsi que travaillent les analystes, et c'est ce qui donne l'Indice Njangi. L'analyse IA, payante par match, ajoute une lecture automatique des images (possession, territoire, bloc, défense de repos) ; elle ne compte pas encore chaque passe. La détection automatique de chaque action demande des modèles d'image entraînés pour le football : c'est sur la feuille de route."
       }
     },
     "feature": {
       "playerPlan": "Programme personnel, défis et parcours",
       "lessons": "Les 40 Leçons du Ballon (pour les 8 à 12 ans)"
+    },
+    "ai": {
+      "title": "Analyse IA d'un match",
+      "body": "En plus de n'importe quelle formule. Claude, l'IA d'Anthropic, lit une image toutes les quelques secondes de la vidéo du match et estime la possession, le territoire, la hauteur du bloc et la défense de repos, avec les moments à revoir et un résumé écrit. Les paiements ne sont pas encore branchés : un code d'accès est remis après paiement.",
+      "unit": "par match, environ {{v}}"
     }
   },
   "settings": {

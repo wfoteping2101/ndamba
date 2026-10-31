@@ -1,5 +1,5 @@
 import { Link, NavLink, Navigate, Outlet, useLocation } from 'react-router-dom'
-import { BookOpen, CalendarDays, ClipboardList, Compass, Crown, Dumbbell, Gamepad2, Home, LineChart, MoreHorizontal, Settings, Shirt, Trophy, User, Video, X } from 'lucide-react'
+import { BookOpen, CalendarDays, CircleHelp, ClipboardList, Compass, Crown, Dumbbell, Gamepad2, Home, LineChart, MoreHorizontal, Settings, Shirt, Trophy, User, X } from 'lucide-react'
 import { MolaMark } from '../ui/brand'
 import { useEffect, useState, type ReactNode } from 'react'
 import { LangSwitch, Logo } from '../ui'
@@ -10,6 +10,41 @@ import MolaLauncher from '../surfaces/mola/MolaLauncher'
 import type { Team } from '../lib/types'
 
 interface Item { to: string; label: string; icon: (size: number) => ReactNode; end?: boolean; href?: boolean }
+
+/** Each page of the app and the chapter of the guide that explains it (guide/<lang>/ch-NN.html). */
+const GUIDE_CHAPTERS: [RegExp, number][] = [
+  [/^\/app\/mola/, 18],
+  [/^\/app\/exercices/, 7],
+  [/^\/app\/seances/, 8],
+  [/^\/app\/semaine/, 9],
+  [/^\/app\/equipe\/[^/]+\/parcours/, 16],
+  [/^\/app\/(equipe|observer)/, 10],
+  [/^\/app\/matchs/, 11],
+  [/^\/app\/analyse\/rapport/, 13],
+  [/^\/app\/analyse\/video/, 14],
+  [/^\/app\/analyse/, 12],
+  [/^\/app\/joueur\/(lecons|carnet|parcours)/, 16],
+  [/^\/app\/joueur/, 15],
+  [/^\/app\/livres/, 19],
+  [/^\/app\/premium/, 24],
+  [/^\/app\/reglages/, 6],
+]
+export function guideChapter(path: string, role?: string): number {
+  if (/^\/app\/?$/.test(path)) return role === 'player' ? 15 : role === 'parent' ? 17 : role === 'analyst' ? 12 : 6
+  return GUIDE_CHAPTERS.find(([re]) => re.test(path))?.[1] ?? 4
+}
+
+/** "How does it work?": opens the guide chapter of this page, in a new tab so the work stays open. */
+function GuideLink({ path, role }: { path: string; role?: string }) {
+  const { t, lang } = useT('common')
+  const n = guideChapter(path, role)
+  return (
+    <a href={`/guide/${lang === 'en' ? 'en' : 'fr'}/ch-${String(n).padStart(2, '0')}.html`} target="_blank" rel="noopener"
+      className="inline-flex min-h-[36px] items-center gap-1.5 rounded-full border border-line bg-paper px-3 text-[13px] font-semibold text-forest-700 transition hover:border-forest-300 hover:bg-forest-50">
+      <CircleHelp size={15} strokeWidth={1.75} aria-hidden="true" />{t('app.howItWorks', { n })}
+    </a>
+  )
+}
 const SW = 1.75 // lucide stroke width (DESIGN.md 2)
 
 export default function AppLayout() {
@@ -45,8 +80,7 @@ export default function AppLayout() {
       { to: '/app/matchs', label: t('app.matches'), icon: (s) => <Trophy size={s} strokeWidth={SW} /> },
     ] },
     { title: t('app.groups.analysis'), items: [
-      { to: '/app/analyse', label: t('app.analysis'), icon: (s) => <LineChart size={s} strokeWidth={SW} />, end: true },
-      { to: '/app/analyse/video', label: t('app.video'), icon: (s) => <Video size={s} strokeWidth={SW} /> },
+      { to: '/app/analyse', label: t('app.analysis'), icon: (s) => <LineChart size={s} strokeWidth={SW} /> },
     ] },
     { title: t('app.groups.me'), items: [
       { to: '/app/joueur', label: t('app.player'), icon: (s) => <User size={s} strokeWidth={SW} /> },
@@ -128,7 +162,10 @@ export default function AppLayout() {
             </div>
           </div>
         </header>
-        <main className="container-page pb-28 pt-6 sm:pt-9 lg:pb-14 lg:pt-10"><Outlet /></main>
+        <main className="container-page pb-28 pt-4 sm:pt-6 lg:pb-14 lg:pt-6">
+          <div className="no-print mb-3 flex justify-end sm:mb-4"><GuideLink path={loc.pathname} role={profile.role} /></div>
+          <Outlet />
+        </main>
       </div>
 
       {/* phone tab bar */}

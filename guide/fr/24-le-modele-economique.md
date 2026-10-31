@@ -3,7 +3,7 @@ numero: 24
 slug: le-modele-economique
 titre: Le modèle économique
 partie: 9
-resume: Les cinq formules et leurs prix, qui paie et pourquoi, la règle qui garde l'éducation gratuite, les deux limites de la formule gratuite, l'état réel des paiements, les coûts de fonctionnement et des scénarios de revenus présentés comme des hypothèses.
+resume: Les cinq formules et leurs prix, l'analyse IA payée au match, qui paie et pourquoi, la règle qui garde l'éducation gratuite, les deux limites de la formule gratuite, l'état réel des paiements, les coûts de fonctionnement et des scénarios de revenus présentés comme des hypothèses.
 ---
 
 Un modèle économique dit qui paie, pour quoi, et ce que cela coûte. Celui de Ndamba part d'une conviction de la méthode : on ne construit pas un football commun en faisant payer l'accès au savoir. Les livres et les exercices sont donc gratuits pour tous. Ce qui se paie, ce sont les outils qui font gagner du temps et qui mesurent : préparer, analyser, suivre les joueurs, et Mola qui agit. Ce chapitre présente les cinq formules telles que la page **Premium** les affiche, ce qui est réellement appliqué dans l'application aujourd'hui et ce qui ne l'est pas encore. Il se termine par des scénarios chiffrés qui sont des hypothèses de calcul, pas des prévisions.
@@ -44,6 +44,8 @@ Chaque formule liste ce qu'elle ouvre :
 | Club et académie | Tout Coach Pro, équipes illimitées, comptes du staff (bientôt), le modèle de jeu du club (bientôt), exports et impressions |
 | Fédération | Tout Club, modèle de jeu national, formation des entraîneurs, accompagnement dédié |
 
+Sous les formules, une carte à part présente l'**Analyse IA d'un match** : « En plus de n'importe quelle formule », 2,99 $US par match, avec son équivalent en FCFA. Elle est décrite plus bas.
+
 ![La page Premium complète : le bandeau Les paiements ne sont pas encore branchés, les cinq formules côte à côte avec Coach Pro en vert, puis les questions fréquentes.](shot:site-pricing-full "La page Premium du site : cinq formules, des prix en dollars et en FCFA, et un bandeau honnête sur les paiements.")
 
 ## Qui paie, et pourquoi
@@ -63,9 +65,25 @@ Une précision s'impose pour un investisseur. Certaines lignes décrivent ce que
 Dans le code d'aujourd'hui, la formule **Gratuit** a exactement deux limites, et elles valent partout dans l'application. Elles s'appliquent aussi à **Joueur Premium** : cette formule ouvre l'espace du joueur, pas les outils de l'entraîneur.
 
 1. **Cinq séances.** Au-delà, la page **Séances** et la fenêtre **Nouvelle séance** affichent « Vos 5 séances gratuites sont utilisées », avec le bouton **Découvrir Coach Pro** ; la page **Semaine** montre le même encadré et son bouton **Planifier la semaine** reste grisé. Les boutons **Préparer la semaine** de l'accueil et **Planifier la semaine avec ces objectifs** du rapport de match ouvrent alors la page **Premium**. Mola applique la même règle quand on lui demande une séance ou la semaine : « Votre plan gratuit compte déjà 5 séances. Pour que je continue à en préparer, passez à Coach Pro. Les livres et les 64 exercices restent ouverts à tous. »
-2. **Un match analysé en direct.** Une fois un match codé, les autres ne peuvent plus l'être. La fiche de match affiche « Analyse en direct illimitée avec Coach Pro » et le lien **Voir les offres**, la page **Analyse** remplace le bouton du direct par **Voir les offres**, et la page du direct elle-même affiche ce message si on l'ouvre par son adresse. Un match qui a déjà des tags n'est jamais bloqué : vous pouvez toujours le relire et le corriger.
+2. **Un match analysé, sur vidéo ou en direct.** La carte Gratuit dit « Un match analysé, sur vidéo ou en direct » : la règle compte tout match codé, quelle que soit la manière. Une fois un match codé, les autres ne peuvent plus l'être. La fiche de match affiche « L'analyse illimitée est dans Coach Pro » et le lien **Voir les offres**, et son bouton **Ajouter la vidéo du match** porte un cadenas ; la page **Analyse** remplace **Ajouter la vidéo** et le direct par **Voir les offres**, et la page du direct elle-même affiche ce message si on l'ouvre par son adresse. Un match qui a déjà des tags n'est jamais bloqué : vous pouvez toujours le relire et le corriger.
 
 Le reste n'est pas limité aujourd'hui, même quand la page Premium le range dans une formule payante : le nombre d'équipes (la formule gratuite annonce « Une équipe »), les rapports, la vidéo, les leçons ou le carnet. La page décrit l'offre prévue ; le code n'applique pour l'instant que ces deux seuils. Ils devront être alignés sur la page quand les paiements arriveront.
+
+## L'analyse IA, payée au match
+
+L'analyse d'un match repose sur le codage : une personne touche un bouton à chaque action, sur la vidéo (chapitre 12). L'**Analyse IA du match**, dans le studio vidéo (chapitre 14), ajoute une lecture automatique des images. Claude, l'IA d'Anthropic, lit une image toutes les 4, 6 ou 10 secondes du fichier vidéo du match et estime la possession, la zone où se trouve le ballon, la hauteur du bloc sans le ballon et la défense de repos, avec les moments à revoir et un court résumé écrit. Elle ne remplace pas le codage et ne change pas l'Indice Njangi.
+
+C'est une option payante, en plus de n'importe quelle formule, parce qu'elle a un coût direct pour la plateforme, à chaque match :
+
+| Élément | Ordre de grandeur |
+|---|---|
+| Une image de 960 x 540 pixels | Environ 700 jetons lus par le modèle |
+| Un match de 90 minutes, une image toutes les 6 secondes | Environ 900 images, soit environ 630 000 jetons |
+| Prix public d'Opus 5.5 pour les jetons lus | 4 $US le million, selon la documentation d'Anthropic |
+| Coût des images d'un match | Environ 2,5 $US, plus la réponse écrite du modèle |
+| Prix proposé à l'utilisateur | 2,99 $US par match |
+
+Le prix de 2,99 $US est une proposition à confirmer, pas un tarif définitif : la marge est mince, et le coût baisse si l'on choisit une image toutes les 10 secondes ou un modèle moins cher (le propriétaire du site peut en régler un autre). Comme les paiements ne sont pas branchés, l'accès passe par un **code d'accès** remis après paiement, que l'utilisateur tape dans le studio. Pour que l'option fonctionne, le propriétaire du site doit lui-même renseigner, dans les réglages de l'hébergement, la clé de l'API d'Anthropic (ANTHROPIC_API_KEY) et la liste des codes valables (ANALYSE_CODES), et s'il le souhaite le modèle (ANTHROPIC_VISION_MODEL). Tant que ce n'est pas fait, le studio annonce que l'analyse IA n'est pas encore activée sur ce site. Un code n'a pas encore de quota : le paiement dans l'application et un nombre de matchs par code sont sur la feuille de route (chapitre 26).
 
 ## L'état réel : les paiements ne sont pas branchés
 
@@ -93,7 +111,8 @@ Techniquement, ce bouton écrit le nom de la formule dans le profil enregistré 
 Le choix d'une application « locale d'abord », où les données restent sur l'appareil, rend le fonctionnement actuel très léger. Les postes sont les suivants, décrits sans montant car ils dépendent de l'usage :
 
 - **L'hébergement.** La plateforme est un site statique : l'application, les deux livres avec leurs illustrations et le jeu *Lionceaux Football* (environ 25 Mo au premier lancement, selon sa page). Il n'y a pas de serveur de base de données. Le coût suit surtout le trafic.
-- **Le modèle d'IA de Mola, optionnel.** C'est la seule fonction serveur, à l'adresse /api/mola. Quand la clé est configurée, la plupart des messages tapés à Mola partent vers l'API d'Anthropic (le modèle par défaut est claude-haiku-5-5) : le message, coupé à 600 caractères, un texte d'instructions et un court contexte, pour une réponse plafonnée à 400 jetons. Le chapitre 25 détaille les exceptions. Le coût suit le nombre de messages. Sans clé, la fonction répond qu'elle n'est pas configurée, le moteur de règles répond seul, et ce poste vaut zéro.
+- **Le modèle d'IA de Mola, optionnel.** C'est l'une des deux fonctions serveur, à l'adresse /api/mola. Quand la clé est configurée, la plupart des messages tapés à Mola partent vers l'API d'Anthropic (le modèle par défaut est claude-haiku-5-5) : le message, coupé à 600 caractères, un texte d'instructions et un court contexte, pour une réponse plafonnée à 400 jetons. Le chapitre 25 détaille les exceptions. Le coût suit le nombre de messages. Sans clé, la fonction répond qu'elle n'est pas configurée, le moteur de règles répond seul, et ce poste vaut zéro.
+- **L'analyse IA des matchs, optionnelle.** La seconde fonction serveur, à l'adresse /api/analyse, reçoit des images d'un match et les transmet à l'API d'Anthropic. Son coût, d'environ 2,5 $US par match à une image toutes les 6 secondes, est couvert par le prix demandé pour chaque match (voir plus haut). Sans clé ni codes, elle ne fait rien et ce poste vaut zéro.
 - **Les coûts à venir.** Les comptes et la synchronisation (serveurs, stockage, sécurité), les frais des moyens de paiement, le support, la formation des entraîneurs, et l'écriture et l'illustration des tomes 2 à 6 de la saga.
 
 La légèreté actuelle a une contrepartie : la sauvegarde repose sur l'utilisateur (chapitre 25).

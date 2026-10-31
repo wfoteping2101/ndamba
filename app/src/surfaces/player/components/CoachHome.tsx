@@ -2,7 +2,7 @@
 // the last Indice Njangi, quick actions and a suggestion from Mola.
 import { useMemo, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { BookOpen, CalendarDays, CalendarPlus, ChartLine, Clock, Dumbbell, MapPin, Plus, Radio, Shirt, Trophy } from 'lucide-react'
+import { BookOpen, CalendarDays, CalendarPlus, ChartLine, Clock, Dumbbell, Film, MapPin, Plus, Radio, Shirt, Trophy } from 'lucide-react'
 import { MolaMark } from '../../../ui/brand'
 import { Badge } from '../../../ui'
 import { useT } from '../../../i18n'
@@ -364,8 +364,7 @@ function IndiceCard({ analysed, next, busy, onPrepare }: { analysed: Analysed[];
         <h2 id="indice-h" className="mt-1 text-[22px] text-ink">{t('indice.emptyTitle')}</h2>
         <p className="mt-1.5 max-w-xl text-[14.5px] leading-relaxed text-ink-muted">{t('indice.emptyBody')}</p>
         <div className="mt-5 flex flex-wrap gap-2">
-          {next ? <Link to={`/app/analyse/live/${next.id}`} className="btn-primary min-h-[44px]"><LiveDot />{t('indice.emptyCtaLive', { opponent: next.opponent })}</Link>
-            : <Link to="/app/analyse" className="btn-primary min-h-[44px]"><ChartLine size={17} strokeWidth={1.75} aria-hidden="true" />{t('indice.emptyCta')}</Link>}
+          <Link to="/app/analyse" className="btn-primary min-h-[44px]"><ChartLine size={17} strokeWidth={1.75} aria-hidden="true" />{t('indice.emptyCta')}</Link>
         </div>
       </section>
     )
@@ -490,7 +489,7 @@ function QuickActions({ next, busy, onNewSession }: { next?: Match; busy: boolea
         <li><button type="button" className={row} onClick={onNewSession} disabled={busy}>{icon(<Plus strokeWidth={1.75} />)}{body(t('actions.newSession'), t('actions.newSessionHint'))}</button></li>
         <li><Link to="/app/semaine" className={row}>{icon(<CalendarDays strokeWidth={1.75} />)}{body(t('actions.planWeek'), t('actions.planWeekHint'))}</Link></li>
         <li><Link to="/app/matchs/nouveau" className={row}>{icon(<CalendarPlus strokeWidth={1.75} />)}{body(t('actions.newMatch'), t('actions.newMatchHint'))}</Link></li>
-        <li><Link to={next ? `/app/analyse/live/${next.id}` : '/app/analyse'} className={row}>{icon(<Radio strokeWidth={1.75} />)}{body(t('actions.live'), t('actions.liveHint'))}</Link></li>
+        <li><Link to="/app/analyse" className={row}>{icon(<Film strokeWidth={1.75} />)}{body(t('actions.live'), t('actions.liveHint'))}</Link></li>
         <li><Link to="/app/exercices" className={row}>{icon(<Dumbbell strokeWidth={1.75} />)}{body(t('actions.drills'), t('actions.drillsHint'))}</Link></li>
         <li><a href={BOOKS.tome1.href} className={row}>{icon(<BookOpen strokeWidth={1.75} />)}{body(t('actions.novel'), t('actions.novelHint', { series: SERIES.name }))}</a></li>
       </ul>

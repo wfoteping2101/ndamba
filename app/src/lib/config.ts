@@ -46,6 +46,13 @@ export const PLANS: PlanDef[] = [
   { id: 'federation', usdMonth: null, features: ['everythingClub', 'nationalModel', 'coachEducation', 'support'] },
 ]
 
+/**
+ * The AI reading of a match video (api/analyse.ts, Claude): sold per match, on top of any plan.
+ * Until payments are connected, a club gets an access code after paying; the codes are set on the server.
+ * usdPerMatch is the proposed public price; the cost is mostly the frames (about 700 tokens each at 960 x 540).
+ */
+export const AI_ANALYSIS = { usdPerMatch: 2.99, intervals: [4, 6, 10] as const, defaultInterval: 6 }
+
 /** Feature gates. Books and the drill library are never gated (education first). */
 export const GATES = {
   liveMatchesFree: 1, // free plan: one live-tagged match

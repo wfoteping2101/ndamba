@@ -24,7 +24,7 @@ La grande carte blanche dit ce qui se passe aujourd'hui. Elle a trois visages :
 
 - **Une séance est prévue.** Son titre, ses étiquettes (le jour de la semaine comme MD-2, l'intention, la durée, le nombre de blocs, et « Préparée par Mola » si c'est lui qui l'a construite), puis le déroulé minute par minute : chaque exercice avec son code, son nom et sa durée. Touchez un exercice pour ouvrir sa fiche, ou **Ouvrir la séance** pour la modifier.
 - **Rien n'est prévu.** « Pas encore de séance », suivi d'une proposition expliquée : le jour MD de la semaine du match, une séance « Jeunes » jusqu'aux U13, ou une séance MD-3 quand aucun match n'approche. **Préparer la séance MD-3** (ou le jour proposé) crée la séance et l'ouvre ; **Choisir des exercices** ouvre la bibliothèque.
-- **C'est jour de match.** « Jour de match », avec **Lancer le direct** pour coder le match (chapitre 12) et **Composition** pour vérifier l'équipe.
+- **C'est jour de match.** « Jour de match », avec un rappel (faire filmer le match pour le coder ensuite sur sa vidéo), **En direct, sans vidéo** pour coder depuis la touche si personne ne filme (chapitre 12) et **Composition** pour vérifier l'équipe.
 
 ### Prochain match
 
@@ -33,6 +33,8 @@ La carte sombre annonce le prochain match : **Domicile** ou **Extérieur**, le c
 - **Préparer la semaine**, en or : Ndamba crée les séances qui manquent, de MD-4 à MD-1, autour du match, pour les seuls jours encore à venir. Il laisse libres le jour d'un autre match et son lendemain, réservé à la récupération. Un message confirme, par exemple « 3 séances préparées pour la semaine du match. », avec le lien **Voir la semaine**. S'il n'y a rien à créer, le message le dit : « Rien à ajouter avant le match : les jours restants ont déjà leur séance, ou sont pris par un autre match et sa récupération. » C'est le cas dans la démo, dont la semaine est déjà prête. Le bouton est grisé le jour du match.
 - **Composition** ouvre la feuille de match (chapitre 11).
 - **Direct** ouvre l'analyse en direct (chapitre 12).
+
+Le direct reste le chemin le plus court le jour du match, mais ce n'est plus le chemin conseillé : si le match est filmé, ajoutez sa vidéo après le coup de sifflet et codez-la dans **Analyse**, où chaque action peut être revue et corrigée (chapitre 12).
 
 Sans match prévu, la carte dit « Aucun match prévu » et propose **Nouveau match**.
 
@@ -56,7 +58,7 @@ La carte verte de Mola (« Votre agent : il prépare, vous validez ») propose u
 
 ### Actions rapides
 
-En bas, six raccourcis : **Nouvelle séance** (préparée pour aujourd'hui, à ajuster), **Planifier la semaine**, **Nouveau match**, **Analyse en direct**, **Exercices** et **Lire le roman**.
+En bas, six raccourcis : **Nouvelle séance** (préparée pour aujourd'hui, à ajuster), **Planifier la semaine**, **Nouveau match**, **Analyser un match** (qui ouvre la page Analyse), **Exercices** et **Lire le roman**.
 
 ### Les autres rôles et l'accueil sans équipe
 
@@ -79,6 +81,27 @@ Touchez le bouton : un panneau de conversation s'ouvre sans quitter la page. En 
 Le panneau se ferme avec la croix, la touche Échap ou en changeant de page.
 
 **La bulle de nouvelles.** Quand Mola a du nouveau (une tâche terminée, un résultat prêt) et que le panneau est fermé, une bulle apparaît au-dessus du bouton avec le début de son message. Touchez-la pour ouvrir la conversation, ou touchez sa croix (**Masquer**). Elle s'efface seule après quelques secondes. Le tout premier bonjour de Mola ne s'annonce jamais par une bulle : vous le lisez en ouvrant le panneau.
+
+## Le lien vers le guide, sur chaque page
+
+En haut à droite de chaque page de l'application, un petit lien précédé d'un point d'interrogation indique : **Comment ça marche ? Guide, chapitre N**. Il ouvre dans un nouvel onglet le chapitre de ce guide qui explique la page où vous êtes ; votre travail reste ouvert dans l'onglet de l'application. Le guide s'ouvre dans la langue de l'application.
+
+| Page | Chapitre ouvert |
+|---|---|
+| **Accueil** | 6 pour un entraîneur, 15 pour un joueur, 17 pour un parent, 12 pour un analyste |
+| **Mola** | 18 |
+| **Exercices** | 7 |
+| **Séances** | 8 |
+| **Semaine** | 9 |
+| **Équipe** et **Observer** | 10 |
+| **Matchs** | 11 |
+| **Analyse** et le direct | 12 |
+| Le rapport d'un match | 13 |
+| **Les vidéos des matchs** et le studio vidéo | 14 |
+| **Espace joueur** | 15 (16 pour les leçons, le carnet et le parcours) |
+| **Livres** | 19 |
+| **Premium** | 24 |
+| **Réglages** | 6 |
 
 ## L'équipe active et le changement d'équipe
 
@@ -137,7 +160,7 @@ La page **Premium** s'ouvre depuis le menu Moi, depuis **Voir les formules** ou 
 
 Juste sous le titre, un encadré annonce : « Les paiements ne sont pas encore branchés. Mobile Money et cartes bancaires arrivent bientôt. En attendant, vous pouvez activer n'importe quelle formule en mode démo pour tout essayer, sans payer. »
 
-Le sélecteur **Mensuel** ou **Annuel** change l'affichage des prix ; l'annuel compte dix mois (« 2 mois offerts »). Les cinq formules sont **Gratuit** (0 $US), **Joueur Premium** (4,99 $US par mois), **Coach Pro** (12,99 $US par mois, « Conseillé aux entraîneurs »), **Club et académie** (49 $US par mois) et **Fédération** (« Sur devis »). Chaque prix payant est suivi de son équivalent approximatif en francs CFA, sur la base d'environ 600 FCFA pour un dollar. Des questions fréquentes ferment la page.
+Le sélecteur **Mensuel** ou **Annuel** change l'affichage des prix ; l'annuel compte dix mois (« 2 mois offerts »). Les cinq formules sont **Gratuit** (0 $US), **Joueur Premium** (4,99 $US par mois), **Coach Pro** (12,99 $US par mois, « Conseillé aux entraîneurs »), **Club et académie** (49 $US par mois) et **Fédération** (« Sur devis »). Chaque prix payant est suivi de son équivalent approximatif en francs CFA, sur la base d'environ 600 FCFA pour un dollar. Une carte à part présente l'**Analyse IA d'un match**, proposée à 2,99 $US par match en plus de n'importe quelle formule (chapitres 14 et 24). Des questions fréquentes ferment la page, dont « Faut-il tout saisir à la main ? ».
 
 Pour activer une formule en démo :
 
@@ -146,7 +169,7 @@ Pour activer une formule en démo :
 3. Un message confirme, par exemple « Formule Coach Pro activée en mode démo. Aucun paiement n'a été effectué. ».
 4. La carte affiche désormais **Votre formule**, et le panneau **Formule** des **Réglages** donne le nouveau nom. Sous votre nom, en bas de la colonne, c'est votre rôle qui reste affiché.
 
-Ce que l'activation change, aujourd'hui : les formules **Gratuit** et **Joueur Premium**, qui ne contiennent pas les outils de l'entraîneur, limitent l'application à cinq séances et à un match analysé en direct. Une fois la limite atteinte, les boutons qui créent des séances mènent à **Premium**, et le pupitre d'un nouveau match affiche « Analyse en direct illimitée avec Coach Pro » avec **Voir les offres**. Avec **Coach Pro**, **Club et académie** ou **Fédération**, ces deux limites disparaissent. Pour revenir en arrière, activez **Gratuit**. Certaines lignes des cartes décrivent l'offre prévue plutôt qu'un écran existant : « Comptes du staff (bientôt) » et « Le modèle de jeu du club (bientôt) » le disent elles-mêmes, car les comptes utilisateurs ne sont pas encore construits. Le chapitre 24 détaille le modèle économique.
+Ce que l'activation change, aujourd'hui : les formules **Gratuit** et **Joueur Premium**, qui ne contiennent pas les outils de l'entraîneur, limitent l'application à cinq séances et à un match analysé (sur vidéo ou en direct). Une fois la limite atteinte, les boutons qui créent des séances mènent à **Premium**, et sur la feuille d'un nouveau match, **Ajouter la vidéo du match** porte un cadenas et mène aussi à **Premium**, sous un encadré « L'analyse illimitée est dans Coach Pro » avec **Voir les offres**. Dans **Analyse**, ces matchs proposent **Voir les offres** au lieu d'**Ajouter la vidéo**. Avec **Coach Pro**, **Club et académie** ou **Fédération**, ces deux limites disparaissent. Pour revenir en arrière, activez **Gratuit**. Certaines lignes des cartes décrivent l'offre prévue plutôt qu'un écran existant : « Comptes du staff (bientôt) » et « Le modèle de jeu du club (bientôt) » le disent elles-mêmes, car les comptes utilisateurs ne sont pas encore construits. Le chapitre 24 détaille le modèle économique.
 
 > [!INVESTISSEUR] Des prix affichés, aucun encaissement
 > La page montre les prix réels envisagés, en dollars et en francs CFA, et dit noir sur blanc que rien n'est encaissé : l'activation est une démonstration. C'est un choix d'honnêteté envers les premiers clubs, et c'est aussi la prochaine étape commerciale : brancher Mobile Money et la carte bancaire sur des formules déjà définies, déjà visibles et déjà testables.

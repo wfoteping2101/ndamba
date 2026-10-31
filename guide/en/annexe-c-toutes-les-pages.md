@@ -41,11 +41,12 @@ This appendix is the complete map. Addresses start after the site's name (for ex
 | /app/matchs/nouveau | Matches | Create a match | 11 |
 | /app/matchs/(match) | Matches | The match sheet | 11 |
 | /app/matchs/(match)/modifier | Matches | Edit a match | 11 |
-| /app/analyse | Analysis | The season, the trends and the analysed matches | 14 |
-| /app/analyse/live/(match) | Analysis | Live coding from the touchline | 12 |
+| /app/analyse | Analysis | How analysis works, the matches to analyse, the analysed matches, the season | 12, 14 |
+| /app/analyse/live/(match) | Analysis | Live coding from the touchline, without video | 12 |
 | /app/analyse/rapport/(match) | Analysis | The match report and the Njangi Index | 13 |
-| /app/analyse/video | Video | Your video projects | 14 |
-| /app/analyse/video/(project) | Video | The video studio | 14 |
+| /app/analyse/video | Analysis | Match videos, and the form to add one | 12, 14 |
+| /app/analyse/video?nouveau=(match) | Analysis (from **Add the video**) | The add form, already set to that match | 12 |
+| /app/analyse/video/(video) | Analysis | The video studio, and the AI match analysis | 14 |
 | /app/joueur | Player space | The player's own space | 15 |
 | /app/joueur/lecons | Player space | The 40 Lessons of the Ball | 16 |
 | /app/joueur/carnet | Player space | The Njangi notebook | 16 |
@@ -54,4 +55,4 @@ This appendix is the complete map. Addresses start after the site's name (for ex
 | /app/premium | Premium | The plans, from inside the app | 6, 24 |
 | /app/reglages | Settings | Profile, teams, backups and data | 6, 25 |
 
-An unknown address takes you back to the site home.
+An unknown address takes you back to the site home. The **Video** menu of the first versions no longer exists: videos are found in **Analysis**. Every page of the app carries at the top right the **How does it work? Guide, chapter N** link to the chapter given in the last column (for **Analysis**, chapter 12).

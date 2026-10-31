@@ -87,15 +87,16 @@ Sur un ordinateur, l'application se présente avec une colonne vert foncé à ga
 | Entraînement | **Semaine** | La semaine autour du match, de MD-4 à MD-1, et sa charge | 9 |
 | Équipe | **Équipe** | L'effectif, la fiche et le parcours de chaque joueur | 10 |
 | Équipe | **Matchs** | Le calendrier, la composition, la feuille de match | 11 |
-| Analyse | **Analyse** | La saison, l'analyse en direct, les rapports | 12 à 14 |
-| Analyse | **Vidéo** | Les projets vidéo et le studio | 14 |
+| Analyse | **Analyse** | Ajouter la vidéo d'un match et la coder, le direct sans vidéo, les rapports, la saison, l'analyse IA | 12 à 14 |
 | Moi | **Espace joueur** | Le programme du joueur, ses défis, ses leçons, son carnet | 15, 16 |
 | Moi | **Livres** | Les deux livres, sans quitter l'application | 19, 20 |
 | Moi | **Jeu de foot** | La page du jeu (elle s'ouvre hors de l'application) | 21 |
 | Moi | **Premium** | Les formules et l'activation de démonstration | 6, 24 |
 | Moi | **Réglages** | Profil, équipes, formule, sauvegardes | 6 |
 
-D'autres pages s'ouvrent depuis celles-ci : la fiche d'un exercice, le constructeur de séance, la fiche et le parcours d'un joueur, la page **Observer** (depuis l'effectif, un parcours, une séance ou un match), la feuille de match, le rapport, le studio vidéo, les leçons et le carnet. L'analyse en direct prend tout l'écran, sans menu, pour que rien ne gêne au bord du terrain.
+D'autres pages s'ouvrent depuis celles-ci : la fiche d'un exercice, le constructeur de séance, la fiche et le parcours d'un joueur, la page **Observer** (depuis l'effectif, un parcours, une séance ou un match), la feuille de match, le rapport, **Les vidéos des matchs** et le studio vidéo, les leçons et le carnet. Les vidéos n'ont plus de menu à elles : elles vivent dans **Analyse**, parce qu'analyser un match, c'est d'abord coder sa vidéo (chapitre 12). L'analyse en direct prend tout l'écran, sans menu, pour que rien ne gêne au bord du terrain.
+
+En haut à droite de chaque page de l'application, un lien **Comment ça marche ? Guide, chapitre N** ouvre, dans un nouvel onglet, le chapitre de ce guide qui explique la page : le chapitre 12 sur **Analyse**, le 14 sur les vidéos, le 7 sur les exercices, et ainsi de suite. Le chapitre 6 donne la liste complète.
 
 En bas de la colonne, un bloc montre vos initiales, votre nom et votre rôle (par exemple « Entraîneur ») ; il ouvre les **Réglages**, où se lit aussi votre formule. À côté, le choix de la langue.
 

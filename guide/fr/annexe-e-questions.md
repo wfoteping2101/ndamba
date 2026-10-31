@@ -54,8 +54,11 @@ L'application est en français et en anglais : le bouton FR et EN change toute l
 **Combien coûte Ndamba ?**
 **Gratuit** : 0. **Joueur Premium** : 4,99 $US par mois. **Coach Pro** : 12,99 $US par mois. **Club et académie** : 49 $US par mois. **Fédération** : sur devis. Les paiements ne sont pas encore branchés : activer une formule est, pour l'instant, une démonstration (chapitre 24).
 
+**Combien coûte l'analyse IA d'un match ?**
+Elle est proposée à 2,99 $US par match, en plus de n'importe quelle formule. Ce prix est une proposition à confirmer : il couvre à peu près ce que coûte la lecture des images par le modèle, environ 2,5 $US pour un match de 90 minutes à une image toutes les 6 secondes. Comme les paiements ne sont pas branchés, l'accès passe par un code remis après paiement, et l'option ne fonctionne qu'une fois la clé configurée par le propriétaire du site (chapitres 14 et 24).
+
 **Que permet la formule gratuite ?**
-Les deux livres en lecture libre, les 64 exercices de la méthode, Mola pour vous guider, cinq séances et un match analysé en direct. Au-delà, l'application vous propose **Coach Pro**. Ces deux limites valent aussi pour **Joueur Premium**, qui ouvre l'espace du joueur et non les outils de l'entraîneur (chapitre 24).
+Les deux livres en lecture libre, les 64 exercices de la méthode, Mola pour vous guider, cinq séances et un match analysé (sur vidéo ou en direct). Au-delà, l'application vous propose **Coach Pro**. Ces deux limites valent aussi pour **Joueur Premium**, qui ouvre l'espace du joueur et non les outils de l'entraîneur (chapitre 24).
 
 **Certaines lignes des formules sont-elles en avance sur l'application ?**
 Oui. Deux lignes de **Club et académie** portent la mention « bientôt » : les comptes du staff, qui demandent des comptes d'utilisateurs, prévus dans la feuille de route, et le modèle de jeu du club, qui se construit aujourd'hui par l'accompagnement. Sous **Fédération**, la formation des entraîneurs et l'accompagnement sont des services rendus par des personnes (chapitres 24 et 26).
@@ -76,16 +79,22 @@ La note d'un match sur 100, qui répond à une question : l'équipe a-t-elle pos
 **Les seuils de l'Indice sont-ils des références officielles ?**
 Non. Les paliers (35, 50, 65 et 80) viennent du livre, et le rapport le dit lui-même : les repères sont internes à la méthode, à calibrer sur vos propres matchs. Construire des références par âge est justement le but des 1 000 premiers matchs codés (chapitres 13 et 23).
 
+**L'analyse se fait-elle à la main ?**
+Oui, et c'est voulu. Une personne regarde le match et touche un bouton à chaque action : passe réussie, passe qui casse une ligne, perte, reprise en cinq secondes, tir. La manière conseillée est de le faire sur la vidéo : chaque code garde son moment, on peut le revoir, le vérifier et le corriger, au ralenti si besoin. C'est ainsi que travaillent les analystes, et c'est ce qui donne l'Indice Njangi. L'analyse IA, payante, ajoute des estimations tirées des images (possession, territoire, bloc, défense de repos, moments à revoir), mais ne compte pas chaque passe. Le codage en direct depuis la touche reste possible pour un match non filmé, sans rien à revoir ensuite. La détection automatique de chaque action est sur la feuille de route (chapitres 12, 14 et 26).
+
+**Pourquoi ne pas envoyer la vidéo directement sur Ndamba ?**
+Parce qu'une vidéo de match pèse plusieurs gigaoctets : la stocker et la diffuser pour chaque club coûterait cher en serveurs et en bande passante, et ce coût retomberait sur les clubs. Ndamba utilise donc ce qui existe déjà. Vous mettez la vidéo sur YouTube en « non répertoriée » ou sur Facebook, et vous collez son lien : Ndamba ne garde que le lien. Ou vous ouvrez le fichier sur l'appareil, filmé avec le téléphone par exemple : il n'est jamais envoyé, mais il faut le rouvrir à chaque visite (chapitre 12).
+
 **Peut-on coder un match sur un téléphone ?**
-Oui. L'écran du direct s'adapte au téléphone, avec de grands boutons. Un adjoint, un parent bénévole ou un remplaçant peut coder, après avoir lu le tableau des codes (chapitre 12).
+Oui. Le studio vidéo et l'écran du direct s'adaptent au téléphone, avec de grands boutons, et le bouton **Filmer** du studio ouvre la caméra. Un adjoint, un parent bénévole ou un remplaçant peut coder, après avoir lu le tableau des codes (chapitre 12).
 
 **La vidéo compte-t-elle dans l'Indice du match ?**
-Non. Le studio vidéo calcule son propre Indice à partir des tags placés sur la vidéo, et sert à revoir, annoter et dessiner. Le rapport de match et la saison se construisent avec les tags du direct, que l'on peut aussi poser après coup (chapitre 14).
+Oui. Quand une vidéo est liée à un match, chaque code placé dans le studio va dans le rapport de ce match, avec son moment dans la vidéo : l'Indice, le rapport et la saison se construisent avec ces codes. Il n'y a qu'un codage par match : si le match a d'abord été codé en direct, le studio propose de remplacer ces codes par ceux de la vidéo, après confirmation. Les notes et les dessins restent dans le studio (chapitres 13 et 14).
 
 ## Les jeunes et les familles
 
 **Les données des enfants sont-elles protégées ?**
-Elles restent sur l'appareil du coach ou de la famille, sans compte et sans envoi. Avec les jeunes, l'Indice mesure l'équipe, jamais un enfant, et le rapport demande de garder le tableau des contributions des joueurs pour le staff. Les principes à respecter le jour où les comptes arriveront (accord des parents, chacun ne voit que ce qui le concerne) sont posés au chapitre 25.
+Elles restent sur l'appareil du coach ou de la famille, sans compte et sans envoi. Les vidéos ne sont pas stockées par Ndamba : pour des mineurs, préférez YouTube en « non répertoriée » ou un fichier gardé sur l'appareil, et l'analyse IA n'envoie des images qu'après une case cochée confirmant l'accord des joueurs et de leurs parents. Avec les jeunes, l'Indice mesure l'équipe, jamais un enfant, et le rapport demande de garder le tableau des contributions des joueurs pour le staff. Les principes à respecter le jour où les comptes arriveront (accord des parents, chacun ne voit que ce qui le concerne) sont posés au chapitre 25.
 
 **À partir de quel âge ?**
 Le roman *Lionceaux* s'adresse aux 8 à 12 ans. Dans l'application, l'espace joueur change à 16 ans : avant, le défi du jour, la leçon du jour, la progression et le carnet ; à partir de 16 ans, un espace de performance avec la semaine du match, la forme et la charge (chapitres 15 et 20).

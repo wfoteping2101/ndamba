@@ -87,15 +87,16 @@ On a computer, the app has a dark green column on the left. At the top sits the 
 | Training | **Week** | The week around the match, MD-4 to MD-1, and its load | 9 |
 | Team | **Team** | The squad, each player's file and journey | 10 |
 | Team | **Matches** | Fixtures, line-up, match sheet | 11 |
-| Analysis | **Analysis** | The season, live analysis, the reports | 12 to 14 |
-| Analysis | **Video** | Video projects and the studio | 14 |
+| Analysis | **Analysis** | Add a match's video and tag it, live tagging without video, the reports, the season, the AI analysis | 12 to 14 |
 | Me | **Player space** | The player's programme, challenges, lessons and notebook | 15, 16 |
 | Me | **Books** | Both books, without leaving the app | 19, 20 |
 | Me | **Football game** | The game page (it opens outside the app) | 21 |
 | Me | **Premium** | The plans and the demo activation | 6, 24 |
 | Me | **Settings** | Profile, teams, plan, backups | 6 |
 
-Other pages open from these: a drill's page, the session builder, a player's file and journey, the **Observe** page (from the squad, a journey, a session or a match), the match sheet, the report, the video studio, the lessons and the notebook. Live analysis takes the whole screen, with no menu, so that nothing gets in the way on the touchline.
+Other pages open from these: a drill's page, the session builder, a player's file and journey, the **Observe** page (from the squad, a journey, a session or a match), the match sheet, the report, **Match videos** and the video studio, the lessons and the notebook. Videos no longer have a menu of their own: they live inside **Analysis**, because analysing a match starts with tagging its video (chapter 12). Live analysis takes the whole screen, with no menu, so that nothing gets in the way on the touchline.
+
+At the top right of every page of the app, a **How does it work? Guide, chapter N** link opens, in a new tab, the chapter of this guide that explains the page: chapter 12 on **Analysis**, 14 on the videos, 7 on the drills, and so on. Chapter 6 gives the full list.
 
 At the bottom of the column, a block shows your initials, your name and your role (for instance "Coach"); it opens **Settings**, where your plan is shown too. Next to it sits the language switch.
 

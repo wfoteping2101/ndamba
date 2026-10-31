@@ -465,11 +465,20 @@
       "pay": {
         "q": "How do I pay?",
         "a": "Payments are not connected yet. Mobile Money and cards are coming. FCFA prices are a guide, at about 600 FCFA to the dollar."
+      },
+      "ai": {
+        "q": "Do we have to enter everything by hand?",
+        "a": "Coding is done on the video: someone taps a button for each action, and every code keeps its moment, so it can be watched again and corrected. That is how analysts work, and it is what gives the Njangi Index. The AI analysis, paid per match, adds an automatic reading of the frames (possession, territory, block, rest defence); it does not count every pass yet. Detecting every action automatically needs image models trained for football: it is on the roadmap."
       }
     },
     "feature": {
       "playerPlan": "Personal programme, challenges and journey",
       "lessons": "The 40 Ball Lessons (ages 8 to 12)"
+    },
+    "ai": {
+      "title": "AI match analysis",
+      "body": "On top of any plan. Claude, Anthropic's AI, reads a frame every few seconds of the match video and estimates possession, territory, the height of the block and the rest defence, with the moments to watch again and a written summary. Payments are not connected yet: an access code is given after payment.",
+      "unit": "per match, about {{v}}"
     }
   },
   "settings": {

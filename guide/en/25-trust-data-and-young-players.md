@@ -17,22 +17,22 @@ Ndamba is a "local first" app. Everything you create is saved in the browser of 
 | The profile | Name, role, language, country, city, club, age group, position, goals, plan |
 | The squad | For each player: name, number, position, year of birth, stronger foot, skill levels, notes |
 | Training | Sessions, their blocks and their drills |
-| Matches | The match sheet, line-up, game plan, and the tags recorded live or from video |
+| Matches | The match sheet, line-up, game plan, and the tags placed on the video (with their moment in the video) or recorded live |
 | The journey | Evaluations, observations, attendance, objectives, milestones |
 | Daily form | Sleep, fatigue, soreness, mood, stress, perceived effort, minutes |
 | The player space | Completed challenges, the notebook, the lessons marked "I've got it" and the "My view" self-assessment |
 | Mola | The conversation and the tasks |
-| Video | The project title, the file name, the tags and the annotated frames; never the video itself |
+| Match videos | For each video: the YouTube or Facebook link, or the file name; the kick-offs, the shirt colours, the notes, the annotated frames and the AI analysis result if there is one; never the video itself |
 
 This choice has practical consequences:
 
 - **You can work on a weak network.** Live tagging says so: "The clock, the tags and the score are saved on the device with every tap, even with no network."
 - **Nobody else sees your data**, neither Ndamba's publisher nor another coach.
-- **Videos never leave the device.** The video studio opens the file where it is: "The video stays on your device: Ndamba only saves your tags and drawings." A drawing is kept together with a small still of the moment.
+- **Ndamba stores no video.** With a link, the video stays on YouTube or Facebook, where you put it; Ndamba keeps only the link. With a file, the studio opens it where it is: it is never sent over the internet, and it has to be reopened on each visit. A drawing is kept together with a small still of the moment. Only the AI analysis, if you start it yourself, sends still frames of the match (see below).
 - **But data can be lost.** Clearing the browser's data, changing phones or working in a private window makes the space disappear if it was not backed up. Two browsers on the same phone are two separate spaces.
 - **A demo replaces the browser's data.** When the browser already holds your own space, the site warns you before starting it and suggests exporting a backup first.
 
-Beside that database, the browser keeps a few items in its simple storage. The lessons marked "I've got it" and the "My view" self-assessment are among them, but they travel with backups. The clock of a match in progress, tagging settings, dismissed suggestions and your language choice are kept there too, but are not part of backups. Finally, in the whole of the app's code, only one call can send text you wrote to the outside: the one used by Mola's AI model, described below. The app contains no audience measurement or advertising tool, and its fonts ship with the site.
+Beside that database, the browser keeps a few items in its simple storage. The lessons marked "I've got it" and the "My view" self-assessment are among them, but they travel with backups. The clock of a match in progress, tagging settings, dismissed suggestions and your language choice are kept there too, but are not part of backups. Finally, in the whole of the app's code, only two calls can send to the outside something that comes from you: the one used by Mola's AI model (text you wrote) and the one used by the AI analysis of a match (frames of your video, after your agreement), both described below. When a video is a link, its player is provided by YouTube or Facebook, which then see that viewing as they would on their own site. The app contains no audience measurement or advertising tool, and its fonts ship with the site.
 
 ## Back up, restore, erase
 
@@ -42,7 +42,7 @@ To export a backup:
 
 1. Open **Settings**, in the **Me** group of the menu.
 2. In the **Your data** panel, on the **Export a backup** line, tap **Export**.
-3. A file named ndamba-YYYY-MM-DD.json is downloaded. It holds all your data in this browser: the profile, teams, players, sessions, matches, analyses, video projects, journey, daily form, notes, the notebook, the conversation with Mola, the lessons understood and "My view".
+3. A file named ndamba-YYYY-MM-DD.json is downloaded. It holds all your data in this browser: the profile, teams, players, sessions, matches, analyses, the match videos (links, file names, notes, drawings and AI analyses), journey, daily form, notes, the notebook, the conversation with Mola, the lessons understood and "My view".
 
 To restore a backup, on the same device or another one:
 
@@ -104,6 +104,22 @@ Mola runs first on a rules engine inside the app. An AI model can help it unders
 
 **Without a key.** The function replies that it is not configured, the rules engine answers on its own, and everything works. The app does not currently show whether the model is active: it is a server setting chosen by the publisher.
 
+## The AI analysis of a match: exactly what is sent
+
+The AI analysis is a paid option of the video studio (chapters 14 and 24). It never starts by itself: you start it, match by match.
+
+**When.** Only after three actions on your part: opening the match file on the device, typing an access code, and ticking this box: "I have the agreement of the players filmed, and of their parents for minors, to send frames of this match to Claude (Anthropic). Only frames are sent, never the video, and they are used for this analysis only." Without the box ticked, the **Start the AI analysis** button stays greyed out.
+
+**What is sent.** Still frames taken from the file, one every 4, 6 or 10 seconds as you choose, in JPEG format, 960 pixels wide, in batches of about a dozen; with each one, its moment in the video and the direction of attack. Added to them: the shirt colours you typed, the language and the access code. At the end, a last request sends the figures computed on the device and the short notes returned by the model, to get the written summary.
+
+**What is not sent.** The video itself, its link, the file name, the players' names, the squad, the tags, the reports and all the rest of your data.
+
+**Where.** To a function of the site itself, /api/analyse. It holds the Anthropic API key and checks the access code; it refuses requests that are too heavy and passes the frames to the model (claude-opus-5-5 by default, adjustable by the site owner). The code of this function records nothing; the provider handles the request under its own terms.
+
+**What comes back.** For each frame: the phase (us, them, contested ball, dead ball), the third where the ball is, the height of our block, the number of our players behind the ball, sometimes a short note and a "watch again" flag. Then a summary of a few sentences. The app checks every value and saves the result on the device, with the video. The model identifies no player, neither reads nor writes your data, and never changes the Njangi Index, which always comes from tagging.
+
+**Without a key and codes.** The function replies that it is not configured, the studio says the AI analysis is not activated on this site yet, and nothing is sent.
+
 ## Young players and minors
 
 A player under 16 gets a home screen designed for their age: today's challenge, their experience points, streak and stage, the lesson of the day from the novel, the next match with a simple reminder ("pack your bag and go to bed early the night before"), their notebook and their journey. The journey follows age rules written into the app: "Under 13: simple markers, never a ranking." and "13 to 16: progress and match markers, no ranking." The performance space only arrives at 16. Health advice sits in the player space: "Drink water" and "One day a week without challenges. [...] If it hurts, stop and tell your coach or your parents."
@@ -115,6 +131,8 @@ There is no advertising in Ndamba, no messaging between users, no public profile
 **The parent role.** A parent chooses the **Parent** role during the welcome conversation; Mola then asks: "How old is your child, or which age group do they play in?" Their home screen is the child's youth space, with a **For parents** box: "Fifteen minutes, a wall and a ball are enough. Stay close, help count and remind them to drink water." The parent keeps this youth space even as the child grows older. Our advice: for a child under 13, the parent creates the space on a family device and keeps it.
 
 ![The home screen of Estelle, a parent in the U13 academy demo: the For parents box, the Your child's journey card and the child's challenge of the day.](shot:youth-parent-home-named "A parent sees the child's space, with a box written for them.")
+
+**Filming young players.** A match video shows children. Ask the parents' agreement before filming, publish on YouTube as "unlisted" (only those who have the link can see it) rather than public, and share the link with the team only. A video posted on Facebook must be public to show in Ndamba: for minors, prefer unlisted YouTube or a file kept on the device. And the AI analysis asks, through its tick box, for the agreement of the players filmed and of their parents.
 
 **For coaches.** The squad only asks for the year of birth, not the full date, and that is enough. Keep notes factual and kind: they are part of the backups. Daily form touches on health: ask for it only from those who benefit from it, and read it with care.
 

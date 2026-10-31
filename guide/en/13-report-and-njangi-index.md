@@ -6,17 +6,18 @@ partie: 5
 resume: How to read a match report from top to bottom with the real demo numbers: the score, the Njangi Index gauge and its band, the five sub-indices and their levels, the halves, the objectives and drills for the week, then copying, printing and fixing the tags.
 ---
 
-On the evening of a match, a coach goes home with the score and a feeling. The score does not say how the team played, and the feeling changes with your mood. The match report turns the live tags (chapter 12) into a reading that is always built the same way: a score out of 100, the Njangi Index (Indice Njangi in French), which says whether the team possessed with purpose; five sub-indices that say where play moved forward and where it stalled; and the training week that follows from it. This is the heart of what Ndamba promises: one shared measure, the same in a neighbourhood academy and in a national team, so you can tell season after season whether a game model is really improving. This chapter walks through the report from top to bottom using the pro club demo match: Étoile de la Côte against Météore de Bafoussam, 2-1, in Ligue 1, on Saturday 24 October 2026.
+On the evening of a match, a coach goes home with the score and a feeling. The score does not say how the team played, and the feeling changes with your mood. The match report turns the match codes, placed on its video or live (chapter 12), into a reading that is always built the same way: a score out of 100, the Njangi Index (Indice Njangi in French), which says whether the team possessed with purpose; five sub-indices that say where play moved forward and where it stalled; and the training week that follows from it. This is the heart of what Ndamba promises: one shared measure, the same in a neighbourhood academy and in a national team, so you can tell season after season whether a game model is really improving. This chapter walks through the report from top to bottom using the pro club demo match: Étoile de la Côte against Météore de Bafoussam, 2-1, in Ligue 1, on Saturday 24 October 2026.
 
 ## Opening a report
 
-Three routes lead to the report:
+Four routes lead to the report:
 
 1. In the menu, under **Analysis**, tap **Analysis**, then the match in the **Analysed matches** list (chapter 14).
-2. At the end of live tagging, **End and see the report** opens it straight away.
-3. Ask Mola **Analyse my last match**: its summary ends with a **Read the full report** button.
+2. In the video studio, the **Match report** link under the video's Njangi Index.
+3. At the end of live tagging, **End and see the report** opens it straight away.
+4. Ask Mola **Analyse my last match**: its summary ends with a **Read the full report** button.
 
-With no tags at all, the page shows **No tags for this match yet**: "The report is built from live tags. Go live for this match, during the game or afterwards." It offers **Go live** or **Analyse the video**; only live tags build the report (chapter 14).
+With no code at all, the page shows **No tags for this match yet**: "Add the match video and code it: the report fills in with every code. Without a video, code live." It offers **Add the match video** first, then **Live, without video**. The report fills in while you code: you can keep it open in another tab and watch it move.
 
 ## The header: score, goals and actions
 
@@ -24,14 +25,18 @@ With no tags at all, the page shows **No tags for this match yet**: "The report 
 
 At the top, the **Analysis** link takes you back to the analysis page; on the right sit **Copy as text** and **Print** (see below).
 
-The green banner reads **Match report**, then the competition, the date and the venue: "Ligue 1, matchday 9, Saturday, October 24, 2026, at home". Under the score, a label: **Win**, **Draw** or **Defeat**, or **Upcoming** and **In play** for a match that is not finished. The goals follow with their minute (22' and 69' for Étoile, 54' for the opponent), in gold for us and red for them, with the scorer's name when the goal was credited to a player during live tagging.
+The green banner reads **Match report**, then the competition, the date and the venue: "Ligue 1, matchday 9, Saturday, October 24, 2026, at home". Under the score, a label: **Win**, **Draw** or **Defeat**, or **Upcoming** and **In play** for a match that is not finished. The goals follow with their minute (22' and 69' for Étoile, 54' for the opponent), in gold for us and red for them, with the scorer's name when the goal was credited to a player during live tagging. For a match coded on the video, each goal also carries a small **Watch** button: it opens the studio a few seconds before the goal, and the video starts.
 
 Below a line, three actions and a counter:
 
-- **Fix the tags** reopens the live tagger for this match. Its log lets you delete a tag or change the player it is credited to (chapter 12). The report recalculates by itself.
-- **Analyse the video** opens the video project linked to this match, or creates it (chapter 14).
+- **Fix the tags** reopens the live tagger for this match. Its log lets you delete a tag or change the player it is credited to (chapter 12). For a match coded on the video, this button becomes **Correct on the video** and opens the studio. The report recalculates by itself.
+- **Analyse the video**, for a match coded live, opens the match video or the window to add it. Coding the video will then replace the live coding, after confirmation (chapter 12).
 - **Match sheet** opens the match sheet (chapter 11).
-- On the right, the number of tags behind the report: **783 tags**.
+- On the right, the number of codes behind the report and where they come from: **783 tags, coded live**, or for example **20 tags, coded on the video**. A live coding should be read with more caution: nobody can watch it again.
+
+![The top of the report of a match coded on the video in the demo: Étoile de la Côte against Avenir du Mungo, the 1st-minute goal with its Watch button, the Correct on the video and Match sheet buttons, the label 20 tags, coded on the video, and the Index gauge.](shot:pro-report-video "A report coded on the video: every goal can be watched again with one tap.")
+
+This last example is a trial on a 24-second demo video: its very high Index means nothing, it only shows the screen. An Index is read over a whole match, coded the same way as the others.
 
 ## The Njangi Index gauge and its band
 
@@ -120,10 +125,10 @@ At the bottom: "Week of the match against Rapides de Kribi, Saturday, October 31
 ![The full report of the demo match, from the header to the player contributions table, through the summary, the objectives, the match timeline, the key numbers and the sub-index explanations.](shot:pro-report-full "The whole report: each section answers one precise question.")
 
 - **Key numbers**: passes attempted and completion, conservation K (82%), progressive actions, final third entries, shots on target, fixation actions, losses, regains within 5 seconds (28% of losses).
-- **Complementary benchmarks**: the **Estimated possession share** and the **Field tilt** (our share of final third entries against the opponent's). They stay empty unless the live option "Tag the opponent too" was on. **Opponent shots** shows "9 (1)" here: nine shots, one of them on target, the goal conceded in the 54th minute. There is no "their shot on target" button: an opponent goal counts as a shot on target.
+- **Complementary benchmarks**: the **Estimated possession share** and the **Field tilt** (our share of final third entries against the opponent's). They stay empty without the opponent codes (**Their pass**, **Their lost pass**, **Their final third**), always present in the video studio and offered as an option live. **Opponent shots** shows "9 (1)" here: nine shots, one of them on target, the goal conceded in the 54th minute. There is no "their shot on target" button: an opponent goal counts as a shot on target.
 - **The match, five minutes at a time**: our actions on the ball as bars, then our regains (light green) and losses (red), with goals marked by a dot. Tap a bar for its numbers, or **See the data**.
 - **Compared with the previous match**: a grey bar for the match before, a green one for this one. Here: "This is the first analysed match: the comparison will appear with the next one."
-- **Player contributions**: the tags credited to each player during live tagging, from passes to regains.
+- **Player contributions**: the tags credited to each player during live tagging, from passes to regains. The video studio does not credit actions to players yet: this table stays empty for a match coded on the video.
 - **Code record**: the fourteen codes, for us and for the opponent, and the base totals, everything you need to recompute the Index by hand.
 
 For a U15 team or younger, the contributions table carries this reminder: "With young players, the Index measures the team, never a child. Keep this table for the staff and never compare players in front of the group."

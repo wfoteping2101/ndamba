@@ -6,17 +6,18 @@ partie: 5
 resume: Lire un rapport de match de haut en bas avec les vrais chiffres de la démo : le score, la jauge de l'Indice Njangi et sa bande, les cinq sous-indices et leurs niveaux, les mi-temps, les objectifs et les exercices de la semaine, puis copier, imprimer ou corriger les tags.
 ---
 
-Le soir d'un match, un entraîneur repart avec le score et une impression. Le score ne dit pas comment l'équipe a joué, et l'impression change avec l'humeur. Le rapport de match transforme les tags du direct (chapitre 12) en une lecture toujours construite de la même façon : une note sur 100, l'Indice Njangi, qui dit si l'équipe a possédé avec intention ; cinq sous-indices qui disent où le jeu a avancé et où il a calé ; et la semaine d'entraînement qui en découle. C'est le cœur de la promesse de Ndamba : une mesure commune, la même à l'académie et en sélection, pour savoir saison après saison si un modèle de jeu progresse. Ce chapitre suit le rapport de haut en bas avec le match de la démo club pro : Étoile de la Côte contre Météore de Bafoussam, 2-1, en Ligue 1, le samedi 24 octobre 2026.
+Le soir d'un match, un entraîneur repart avec le score et une impression. Le score ne dit pas comment l'équipe a joué, et l'impression change avec l'humeur. Le rapport de match transforme les codes du match, placés sur sa vidéo ou en direct (chapitre 12), en une lecture toujours construite de la même façon : une note sur 100, l'Indice Njangi, qui dit si l'équipe a possédé avec intention ; cinq sous-indices qui disent où le jeu a avancé et où il a calé ; et la semaine d'entraînement qui en découle. C'est le cœur de la promesse de Ndamba : une mesure commune, la même à l'académie et en sélection, pour savoir saison après saison si un modèle de jeu progresse. Ce chapitre suit le rapport de haut en bas avec le match de la démo club pro : Étoile de la Côte contre Météore de Bafoussam, 2-1, en Ligue 1, le samedi 24 octobre 2026.
 
 ## Ouvrir un rapport
 
-Trois chemins mènent au rapport :
+Quatre chemins mènent au rapport :
 
 1. Dans le menu, groupe **Analyse**, touchez **Analyse**, puis le match dans la liste **Matchs analysés** (chapitre 14).
-2. À la fin du direct, le bouton **Terminer et voir le rapport** l'ouvre aussitôt.
-3. Demandez à Mola **Analyse mon dernier match** : son résumé se termine par le bouton **Lire le rapport complet**.
+2. Dans le studio vidéo, le lien **Rapport du match** sous l'Indice Njangi de la vidéo.
+3. À la fin du direct, le bouton **Terminer et voir le rapport** l'ouvre aussitôt.
+4. Demandez à Mola **Analyse mon dernier match** : son résumé se termine par le bouton **Lire le rapport complet**.
 
-Sans aucun tag, la page affiche **Pas encore de tags pour ce match** : « Le rapport se construit à partir des tags du direct. Lancez le direct pour ce match, pendant la rencontre ou après coup. » Elle propose **Lancer le direct** ou **Analyser la vidéo** ; seuls les tags du direct construisent le rapport (chapitre 14).
+Sans aucun code, la page affiche **Pas encore de tags pour ce match** : « Ajoutez la vidéo du match et codez-la : le rapport se remplit à chaque code. Sans vidéo, codez en direct. » Elle propose **Ajouter la vidéo du match** en premier, puis **En direct, sans vidéo**. Le rapport se remplit pendant que vous codez : vous pouvez le garder ouvert dans un autre onglet et le regarder bouger.
 
 ## L'en-tête : le score, les buts et les actions
 
@@ -24,14 +25,18 @@ Sans aucun tag, la page affiche **Pas encore de tags pour ce match** : « Le rap
 
 En haut, le lien **Analyse** ramène à la page d'analyse ; à droite, **Copier le texte** et **Imprimer** (voir plus bas).
 
-Le bandeau vert porte **Rapport de match**, la compétition, la date et le lieu : « Ligue 1, journée 9, samedi 24 octobre 2026, à domicile ». Sous le score, une pastille : **Victoire**, **Nul** ou **Défaite**, ou **À venir** et **En cours** pour un match non terminé. Les buts suivent avec leur minute (22e et 69e pour l'Étoile, 54e pour l'adversaire), en doré pour nous, en rouge pour l'adversaire, avec le nom du buteur quand le but lui a été attribué pendant le direct.
+Le bandeau vert porte **Rapport de match**, la compétition, la date et le lieu : « Ligue 1, journée 9, samedi 24 octobre 2026, à domicile ». Sous le score, une pastille : **Victoire**, **Nul** ou **Défaite**, ou **À venir** et **En cours** pour un match non terminé. Les buts suivent avec leur minute (22e et 69e pour l'Étoile, 54e pour l'adversaire), en doré pour nous, en rouge pour l'adversaire, avec le nom du buteur quand le but lui a été attribué pendant le direct. Pour un match codé sur la vidéo, chaque but porte en plus un petit bouton **Revoir** : il ouvre le studio quelques secondes avant le but, et la vidéo démarre.
 
 Sous un trait, trois actions et un compteur :
 
-- **Corriger les tags** rouvre le direct du match, dont le journal permet de supprimer un tag ou de changer le joueur attribué (chapitre 12). Le rapport se recalcule tout seul.
-- **Analyser la vidéo** ouvre le projet vidéo lié à ce match, ou le crée (chapitre 14).
+- **Corriger les tags** rouvre le direct du match, dont le journal permet de supprimer un tag ou de changer le joueur attribué (chapitre 12). Pour un match codé sur la vidéo, ce bouton devient **Corriger sur la vidéo** et ouvre le studio. Le rapport se recalcule tout seul.
+- **Analyser la vidéo**, pour un match codé en direct, ouvre la vidéo du match ou la fenêtre pour l'ajouter. Coder la vidéo remplacera alors le codage en direct, après confirmation (chapitre 12).
 - **Feuille de match** ouvre la fiche du match (chapitre 11).
-- À droite, le nombre de tags du rapport : **783 tags**.
+- À droite, le nombre de codes du rapport et leur origine : **783 tags, codés en direct**, ou par exemple **20 tags, codés sur la vidéo**. Un codage en direct se lit avec plus de prudence : personne ne peut le revoir.
+
+![Le haut du rapport d'un match codé sur la vidéo dans la démo : Étoile de la Côte contre Avenir du Mungo, le but de la 1re minute avec son bouton Revoir, les boutons Corriger sur la vidéo et Feuille de match, la mention 20 tags, codés sur la vidéo, et la jauge de l'Indice.](shot:pro-report-video "Un rapport codé sur la vidéo : chaque but se revoit d'un geste.")
+
+Ce dernier exemple est un essai sur une vidéo de démonstration de 24 secondes : son Indice très élevé ne veut rien dire, il montre seulement l'écran. Un Indice se lit sur un match entier, codé de la même façon que les autres.
 
 ## La jauge de l'Indice Njangi et sa bande
 
@@ -120,10 +125,10 @@ En bas, « Semaine du match contre Rapides de Kribi, samedi 31 octobre. Intentio
 ![Le rapport complet du match de la démo, de l'en-tête jusqu'au tableau des contributions des joueurs, en passant par le résumé, les objectifs, la frise du match, les chiffres clés et les explications des sous-indices.](shot:pro-report-full "Le rapport en entier : chaque section répond à une question précise.")
 
 - **Les chiffres clés** : passes tentées et réussite, conservation K (82 %), progressives, dernier tiers, tirs cadrés, fixations, pertes, reprises en 5 secondes (28 % des pertes).
-- **Repères complémentaires** : la **Part de possession estimée** et le **Field tilt** (la part de nos entrées dans le dernier tiers face à celles de l'adversaire). Ils restent vides sans l'option « Coder aussi l'adversaire » du direct. **Tirs adverses** donne ici « 9 (1) » : neuf tirs, dont un cadré, le but encaissé à la 54e. Il n'y a pas de bouton « tir adverse cadré » : un but adverse compte comme tir cadré.
+- **Repères complémentaires** : la **Part de possession estimée** et le **Field tilt** (la part de nos entrées dans le dernier tiers face à celles de l'adversaire). Ils restent vides sans les codes de l'adversaire (**Passe adv.**, **Passe perdue adv.**, **Tiers adv.**), toujours présents dans le studio vidéo et proposés en option en direct. **Tirs adverses** donne ici « 9 (1) » : neuf tirs, dont un cadré, le but encaissé à la 54e. Il n'y a pas de bouton « tir adverse cadré » : un but adverse compte comme tir cadré.
 - **Le match, cinq minutes par cinq minutes** : nos actions avec le ballon en barres, puis nos récupérations (vert clair) et nos pertes (rouge), les buts marqués d'un rond. Touchez une barre pour ses chiffres, ou **Voir les données**.
 - **Comparaison avec le match précédent** : une barre grise pour le match d'avant, une verte pour celui-ci. Ici : « C'est le premier match analysé : la comparaison apparaîtra au prochain. »
-- **Contributions des joueurs** : les tags attribués à chaque joueur pendant le direct, des passes aux récupérations.
+- **Contributions des joueurs** : les tags attribués à chaque joueur pendant le direct, des passes aux récupérations. Le studio vidéo n'attribue pas encore les actions aux joueurs : ce tableau reste vide pour un match codé sur la vidéo.
 - **Relevé des codes** : les quatorze codes, pour nous et pour l'adversaire, et les totaux de base, de quoi refaire le calcul à la main.
 
 Pour une équipe U15 ou plus jeune, le tableau des contributions porte ce rappel : « Chez les jeunes, l'Indice mesure l'équipe, jamais un enfant. Gardez ce tableau pour le staff et ne comparez pas les joueurs devant le groupe. »

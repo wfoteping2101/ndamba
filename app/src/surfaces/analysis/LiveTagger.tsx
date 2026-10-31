@@ -396,6 +396,11 @@ function Tagger({ match }: { match: Match }) {
           </div>
         )}
       </header>
+      {events.length === 0 && !clock.state.running && (
+        <p className="mx-3 mb-2 rounded-2xl bg-white/[0.05] px-3 py-2 text-[12.5px] leading-snug text-cream/80 ring-1 ring-white/10 lg:mx-6">
+          {t('live.noVideoNote')} <Link to={`/app/analyse/video?nouveau=${match.id}`} className="font-semibold text-sun-300 underline decoration-sun-300/40 underline-offset-2">{t('live.useVideo')}</Link>
+        </p>
+      )}
 
       {match.status === 'done' && (
         <div className="mx-3 mb-2 flex items-center justify-between gap-2 rounded-xl bg-forest-700/60 px-3 py-2 text-[13px] text-cream/90 ring-1 ring-forest-500/50 lg:mx-6">

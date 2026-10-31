@@ -26,7 +26,9 @@ Everything in this table works and can be opened in the current version (Ndamba 
 | Screens | 27 addresses in the app (26 screens), 5 public pages and Mola's welcome page | The menu |
 | Demos | 2: pro club (Étoile de la Côte, 22 players) and U13 academy (Lionceaux de Bonamoussadi, 15 players) | The site's home page |
 | Mola | 11 actions, 2 of which wait for your approval (the call-up and the calendar) | **Mola** |
-| Live tagging | 14 event codes, from passes to goals, on 16 buttons (19 when you tag the opponent too) | **Analysis** |
+| Match tagging | 14 event codes, from passes to goals, on 16 buttons (19 when you tag the opponent too), placed on the match video (a YouTube or Facebook link, or a file on the device) or live from the touchline | **Analysis** |
+| AI match analysis | A reading of the video file's frames by Claude: possession, territory, block height, rest defence, moments to watch again; paid per match, with an access code, once the site owner has set the key | The video studio |
+| The guide link | On every page of the app, the chapter of this guide that explains it | Top right of every page |
 | The Njangi Index | One index out of 100, 5 sub-indices out of 20, 5 reading bands | The match report |
 | Formations | 14 starting systems for 5 formats, from 5-a-side to 11-a-side | Teams and matches |
 | Data | 17 tables saved on the device, with export and restore | **Settings** |
@@ -52,6 +54,9 @@ The work below is planned. None of it has an announced delivery date; where a ye
 | Staff accounts | Several staff members on the same team | Accounts | Stage 2 |
 | Plan limits | Align the code with the Premium page (only two limits exist today) | Payments | With payments |
 | Shared video | Circulate clips and drawings within a club | Accounts, storage | After accounts |
+| Automatic event detection | Let the video tag itself in part: passes, losses, shots spotted from the image, then checked by the analyst | Image models trained for football, tagged matches to train them | After the age benchmarks |
+| In-app payment for the AI analysis | Pay for a match without going through a code handed over manually | Payments | With payments |
+| Quotas per access code | Let a code cover a number of matches, and no more | Accounts or payments | With payments |
 | Coach education | 100 coaches trained, then the first certified Njangi coaches | Trainers, modules | Stages 1 and 2 |
 | Index references by age | Know what a good Index looks like at U13 or U17 | 1,000 tagged matches, shared with consent | Stages 1 and 2 |
 | National game model and national teams view | Get U15, U17 and U20 working on one model | A partnership with a federation | Stage 3 (2030) |
@@ -60,7 +65,7 @@ The work below is planned. None of it has an announced delivery date; where a ye
 
 The titles of the later books are already set: *Premier contrat*, *La CAN*, *Mondial 2030* and *2034, l'étoile*.
 
-**In what order, and why.** A payment has to be tied to a person, so payments and accounts move forward together, and they come first, because they determine revenue, sharing between staff and families, and the measurement of usage all at once. Coach education and pilot clubs, on the other hand, do not wait for code: they can start today with the app as it is. Age references need data: during stage 1 it comes from backups shared with consent, then from accounts. Shared video and staff accounts naturally follow accounts. The national teams view and the national game model come when a federation commits. The books and the languages move in parallel, with other trades: writing, illustration, translation.
+**In what order, and why.** A payment has to be tied to a person, so payments and accounts move forward together, and they come first, because they determine revenue, sharing between staff and families, and the measurement of usage all at once. Coach education and pilot clubs, on the other hand, do not wait for code: they can start today with the app as it is. Age references need data: during stage 1 it comes from backups shared with consent, then from accounts. Shared video and staff accounts naturally follow accounts. Automatic event detection comes later, for a simple reason: today, analysing a match means a person tags each action, now on the video, so that everything can be watched again and corrected. Today's AI analysis estimates trends from frames; it does not count every pass. For the machine to spot each action on its own, it needs image models trained for football, and thousands of carefully tagged matches to train and check them: which is exactly what tagging on video produces. The national teams view and the national game model come when a federation commits. The books and the languages move in parallel, with other trades: writing, illustration, translation.
 
 ## The indicators to follow
 
@@ -97,7 +102,7 @@ So that stages 1 and 2 are measured the same way everywhere, here is the propose
 
 1. **Train.** The coach reads the parts of *The Njangi Code* on intentions, the week and measurement, and gets a short training in tagging.
 2. **Set up.** With Mola, the coach creates the space, the team and the squad in the welcome conversation.
-3. **Work every week.** The coach prepares the week towards the match, runs the sessions, tags the match live and reads the report.
+3. **Work every week.** The coach prepares the week towards the match, runs the sessions, tags the match on its video (or live) and reads the report.
 4. **Back up.** Every week the coach exports a backup and, if they agree in writing, shares it for the calculation of the references.
 5. **Review every month.** The Index and its sub-indices are read together with the coach, and next month's intentions are chosen accordingly.
 

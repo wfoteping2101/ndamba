@@ -41,11 +41,12 @@ Cette annexe est la carte complète. Les adresses commencent après le nom du si
 | /app/matchs/nouveau | Matchs | Créer un match | 11 |
 | /app/matchs/(match) | Matchs | La feuille de match | 11 |
 | /app/matchs/(match)/modifier | Matchs | Modifier un match | 11 |
-| /app/analyse | Analyse | La saison, les tendances et les matchs analysés | 14 |
-| /app/analyse/live/(match) | Analyse | Le codage en direct depuis le bord du terrain | 12 |
+| /app/analyse | Analyse | Comment l'analyse fonctionne, les matchs à analyser, les matchs analysés, la saison | 12, 14 |
+| /app/analyse/live/(match) | Analyse | Le codage en direct depuis le bord du terrain, sans vidéo | 12 |
 | /app/analyse/rapport/(match) | Analyse | Le rapport de match et l'Indice Njangi | 13 |
-| /app/analyse/video | Vidéo | Vos projets vidéo | 14 |
-| /app/analyse/video/(projet) | Vidéo | Le studio vidéo | 14 |
+| /app/analyse/video | Analyse | Les vidéos des matchs, et le formulaire pour en ajouter une | 12, 14 |
+| /app/analyse/video?nouveau=(match) | Analyse (depuis **Ajouter la vidéo**) | Le formulaire d'ajout, déjà réglé sur ce match | 12 |
+| /app/analyse/video/(vidéo) | Analyse | Le studio vidéo, et l'analyse IA du match | 14 |
 | /app/joueur | Espace joueur | L'espace personnel du joueur | 15 |
 | /app/joueur/lecons | Espace joueur | Les 40 Leçons du Ballon | 16 |
 | /app/joueur/carnet | Espace joueur | Le carnet du Njangi | 16 |
@@ -54,4 +55,4 @@ Cette annexe est la carte complète. Les adresses commencent après le nom du si
 | /app/premium | Premium | Les formules, depuis l'application | 6, 24 |
 | /app/reglages | Réglages | Profil, équipes, sauvegardes et données | 6, 25 |
 
-Une adresse inconnue ramène à l'accueil du site.
+Une adresse inconnue ramène à l'accueil du site. Le menu **Vidéo** des premières versions n'existe plus : les vidéos se trouvent dans **Analyse**. Chaque page de l'application porte en haut à droite le lien **Comment ça marche ? Guide, chapitre N** vers le chapitre indiqué dans la dernière colonne (pour **Analyse**, le chapitre 12).
