@@ -29,7 +29,7 @@ A young player's home reads from top to bottom, like a day.
 - The **My journey** card sums up the season in one line, for example "This season: 15 sessions, 4 matches, 2 objectives in progress." It opens the journey (chapter 16).
 - **Today's challenge** shows the first challenge, open and ready to log, with the other two below. The **All three challenges** link leads to the player space.
 - The **My progress** card gives the stage, what is left before the next one, the streak, **Targets hit**, the **Lessons** understood out of 40, and **My last 7 days** (a ticked circle for each day with a challenge). The **My player space** button opens the full space.
-- **Lesson of the day** shows a page from BriBri's notebook with its diagram (chapter 16).
+- **Lesson of the day** shows a page from BriBri's notebook with its diagram, which plays as an animation (chapter 16).
 - On the right: **The novel**, the **Next match** with a little ritual ("The match is in 2 days: pack your bag and go to bed early the night before."), and **My Njangi notebook** with the last page written.
 
 Without a team, a **Do you play for a team?** card offers **Add my team**. The challenges work without a team too.

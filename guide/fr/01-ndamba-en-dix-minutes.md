@@ -30,7 +30,7 @@ Le site public les présente sur une seule page. En haut, la devise ; à droite,
 
 L'application range ses écrans en quatre groupes de menus, **Entraînement**, **Équipe**, **Analyse** et **Moi**, avec **Accueil** et **Mola** tout en haut. Derrière ces menus, il y a cinq espaces de travail.
 
-**L'entraînement.** La bibliothèque des 64 exercices de la méthode, chacun avec son schéma, ses consignes et ses intentions ; le constructeur de séances, qui assemble une séance en quelques touches ; la semaine, qui place chaque séance par rapport au prochain match (de MD-4 à MD-1, le chapitre 2 explique ces codes) et affiche la charge.
+**L'entraînement.** La bibliothèque des 64 exercices de la méthode, chacun animé comme une courte vidéo, avec ses consignes et ses intentions ; le constructeur de séances, qui assemble une séance en quelques touches ; la semaine, qui place chaque séance par rapport au prochain match (de MD-4 à MD-1, le chapitre 2 explique ces codes) et affiche la charge.
 
 **L'équipe.** L'effectif, la fiche de chaque joueur avec ses dix compétences notées de 1 à 4, son parcours saison après saison et les observations du staff.
 
@@ -64,7 +64,7 @@ Les deux livres se lisent librement en ligne, chapitre par chapitre, quelle que 
 
 *Lionceaux Football* est le jeu vidéo de l'univers : le tournoi de vacances interquartiers, un match à onze sur un terrain en terre rouge, seize équipes de Douala et de Yaoundé, dont les clubs du livre. Il se joue au doigt sur un téléphone, à la manette ou au clavier, directement dans le navigateur.
 
-![La page Les livres, avec la couverture du Code Njangi, ses 36 chapitres, ses 9 parties et ses 64 exercices avec schémas.](shot:site-library "La page Les livres : la méthode pour les adultes, le roman pour les enfants.")
+![La page Les livres, avec la couverture du Code Njangi, ses 36 chapitres, ses 9 parties et ses 64 exercices animés.](shot:site-library "La page Les livres : la méthode pour les adultes, le roman pour les enfants.")
 
 ## À qui sert Ndamba
 

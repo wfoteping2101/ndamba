@@ -6,7 +6,7 @@ partie: 3
 resume: The 64 drills of the Njangi method, sorted into eight families, with their intentions, ages, days and intensity. How to search, filter, read a drill card and send it into a session.
 ---
 
-A shared game model does not live in a speech. It lives in drills that everyone knows: a youth coach at an academy in Bafoussam, the assistant at a Ligue 1 club and the coach of a youth national team should all be able to say "we're doing R08 today" and mean the same thing. That is what the drill library is for. It brings together the 64 drills of the book *The Njangi Code*, with their diagrams, rules and coaching points, on the coach's phone at the side of the pitch. Each card says what it trains, for which age and for which day of the week. And the library stays open to everyone, on every plan, free of charge.
+A shared game model does not live in a speech. It lives in drills that everyone knows: a youth coach at an academy in Bafoussam, the assistant at a Ligue 1 club and the coach of a youth national team should all be able to say "we're doing R08 today" and mean the same thing. That is what the drill library is for. It brings together the 64 drills of the book *The Njangi Code*, each one animated like a short video, with its rules and coaching points, on the coach's phone at the side of the pitch. Each card says what it trains, for which age and for which day of the week. And the library stays open to everyone, on every plan, free of charge.
 
 ## What the library holds
 
@@ -40,7 +40,7 @@ Every drill also carries the same five markers, which then drive the filters:
 
 ![The drill library: the title "The 64 drills", the search box, the Filters button, the chips for the eight families and the first cards of the Technique and patterns family.](shot:pro-drills "The library, open on family C in the pro club demo.")
 
-A card shows the essentials without opening it: the diagram, the code, the family, the minimum age, the title, a one-line summary, the first two intentions, the duration in minutes, the number of players and the intensity. At the top right of the page, the **Read The Njangi Code** button opens the whole book.
+A card shows the essentials without opening it: the animation, the code, the family, the minimum age, the title, a one-line summary, the first two intentions, the duration in minutes, the number of players and the intensity. The animation rests on the finished move, like a video thumbnail, with its length in the corner (**0:08**). Move the mouse over it, or tap the play button on a phone, and the players start moving; tap again to stop. At the top right of the page, the **Read The Njangi Code** button opens the whole book.
 
 ## Searching and filtering
 
@@ -68,11 +68,15 @@ The order of those steps is deliberate. *The Njangi Code* (chapter 31) tells coa
 
 Tap a card to open it. Every card follows the same order, so you can find what you need in two seconds, even in the four o'clock sun.
 
-![Drill C01, The Njangi Y: the code and family, the title, the Progress and Pin intentions, the diagram with the Set-up and Progression buttons, and on the right the players, age, space, duration, intensity and days.](shot:pro-drill-detail "The top of a drill card: the diagram on the left, the key facts on the right.")
+![Drill C01, The Njangi Y: the code and family, the title, the Progress and Pin intentions, the animation with the caption of the step on screen, its controls and the list of steps, and on the right the players, age, space, duration, intensity and days.](shot:pro-drill-detail "The top of a drill card: the animation on the left, the key facts on the right.")
 
 **The header.** The code (C01), the family, the title ("The Njangi Y"), a line that sums up the idea, then the intentions. The five intentions of possession are in green; the two reflexes, **Win it back** and **Look forward**, are in grey. At the top right, a counter shows where the drill sits in the list, for example "1 / 64".
 
-**The diagram.** The team playing the Njangi way is in dark green and attacks to the right, the opponents are in red, and neutral players or jokers are in yellow. Arrows are numbered in the order of the action: a solid line for a pass, a dashed line for a run, a wavy line for a carry. For 19 drills, a second diagram shows the progression or the second phase: switch between them with **Set-up** and **Progression**. The few words written on some diagrams, such as "troisième homme" (third man), are still in French in the English edition.
+**The animation.** Every drill is played like a short video on a pitch seen from the stand. It starts by itself when the card opens, then loops: the players move, the ball travels, and each action leaves its line on the grass, numbered in the order of the play. A solid white line is a pass, a dashed line a run, a wavy line a carry, a thick orange line a shot, a dotted line a press. The team playing the Njangi way has white discs with a green rim, the opponents are red, neutral players or jokers are yellow, the goalkeepers dark blue or purple. When a run and a pass go together, the ball and the runner arrive at the same moment, as on the pitch: in C01, C sets off as B receives and takes the set-up in his stride.
+
+A caption at the bottom of the picture names the step on screen ("3 · Pass: B → C"). Under the player, **The move, step by step** lists every step: tap one to watch it alone, as many times as needed. The bar below the picture holds the controls: play and pause, previous step and next step, the timeline with a mark for each step, **0.5×** for slow motion, full screen and **Download the video (MP4)**, a light file (about 70 KB) to send to your players on WhatsApp before training. The animation ends on the complete diagram: the starting positions, every line and the step numbers.
+
+For 19 drills, a second animation shows the progression or the second phase: switch between them with **Set-up** and **Progression**. In the English edition, the words written on the pitch, such as "third man", are in English too.
 
 **The key facts.** To the right of the diagram: **Players** (how many, and often how many groups side by side), **Age**, **Space** (in metres), **Duration** (the sets, then the total in minutes in brackets), **Intensity** and **Days**. Below them, the drill's **Pieces of the Njangi**: the heart, the reason, the eyes, the map or the breath, the five images from the novel that help coaches talk about the game with children.
 
@@ -86,7 +90,7 @@ At the bottom of the card, two tiles lead to the previous and the next drill. Th
 
 ## From the book to the pitch
 
-Under the diagram, the **Read in the book** button opens the same drill in *The Njangi Code*, on its own page. The book gives the context a screen has no room for: the chapter that explains the intention, the common mistakes, the drill's place in the week. The book is written in French, like the novel.
+Under the animation, the **Read in the book** button opens the same drill in *The Njangi Code*, on its own page. The book gives the context a screen has no room for: the chapter that explains the intention, the common mistakes, the drill's place in the week. The book is written in French, like the novel.
 
 The link works both ways: every drill the book mentions by its code, such as R08, is in the library, and the book's table of contents ends with a link to the drills in the app (**Les 64 exercices dans l'application**, in French like the rest of the book). A coach prepares at home with the book and finds the same card in their pocket the next day.
 

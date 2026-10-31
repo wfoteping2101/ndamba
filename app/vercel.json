@@ -18,7 +18,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!book/|guide/|football/|assets/|api/|icons/|favicon|manifest|icon-|robots|og|art/).*)",
+      "source": "/((?!book/|guide/|video/|football/|assets/|api/|icons/|favicon|manifest|icon-|robots|og|art/).*)",
       "destination": "/index.html"
     }
   ]

@@ -6,7 +6,7 @@ partie: 3
 resume: Les 64 fiches de la méthode Njangi, rangées en huit familles, avec leurs intentions, leurs âges, leurs jours et leur intensité. Comment chercher, filtrer, lire une fiche et l'envoyer dans une séance.
 ---
 
-Un modèle de jeu commun ne tient pas dans un discours. Il tient dans des exercices que tout le monde connaît : l'éducateur d'une académie de Bafoussam, l'adjoint d'un club de Ligue 1 et l'entraîneur d'une sélection de jeunes doivent pouvoir dire « on fait R08 aujourd'hui » et parler de la même chose. C'est le rôle de la bibliothèque des exercices. Elle rassemble les 64 fiches du livre *Le Code Njangi*, avec leur schéma, leurs règles et leurs consignes, dans le téléphone de l'entraîneur, au bord du terrain. Chaque fiche dit ce qu'elle entraîne, pour quel âge et pour quel jour de la semaine. Et la bibliothèque reste ouverte à tous, sur tous les plans, gratuitement.
+Un modèle de jeu commun ne tient pas dans un discours. Il tient dans des exercices que tout le monde connaît : l'éducateur d'une académie de Bafoussam, l'adjoint d'un club de Ligue 1 et l'entraîneur d'une sélection de jeunes doivent pouvoir dire « on fait R08 aujourd'hui » et parler de la même chose. C'est le rôle de la bibliothèque des exercices. Elle rassemble les 64 fiches du livre *Le Code Njangi*, chacune animée comme une courte vidéo, avec leurs règles et leurs consignes, dans le téléphone de l'entraîneur, au bord du terrain. Chaque fiche dit ce qu'elle entraîne, pour quel âge et pour quel jour de la semaine. Et la bibliothèque reste ouverte à tous, sur tous les plans, gratuitement.
 
 ## Ce que contient la bibliothèque
 
@@ -40,7 +40,7 @@ Chaque fiche porte aussi cinq repères, toujours les mêmes, qui servent ensuite
 
 ![La bibliothèque des exercices : le titre « Les 64 exercices », la barre de recherche, le bouton Filtres, les pastilles des huit familles et les premières cartes de la famille Technique et combinaisons.](shot:pro-drills "La bibliothèque, ouverte sur la famille C dans la démo club pro.")
 
-Une carte montre l'essentiel sans l'ouvrir : le schéma, le code, la famille, l'âge minimum, le titre, une ligne d'explication, les deux premières intentions, la durée en minutes, le nombre de joueurs et l'intensité. En haut à droite de la page, le bouton **Lire Le Code Njangi** ouvre le livre entier.
+Une carte montre l'essentiel sans l'ouvrir : l'animation, le code, la famille, l'âge minimum, le titre, une ligne d'explication, les deux premières intentions, la durée en minutes, le nombre de joueurs et l'intensité. Au repos, l'animation montre le mouvement terminé, comme la vignette d'une vidéo, avec sa durée dans le coin (**0:08**). Passez la souris dessus, ou touchez le bouton de lecture sur un téléphone, et les joueurs se mettent en mouvement ; touchez encore pour arrêter. En haut à droite de la page, le bouton **Lire Le Code Njangi** ouvre le livre entier.
 
 ## Chercher et filtrer
 
@@ -68,11 +68,15 @@ L'ordre de ces trois gestes n'est pas un hasard. *Le Code Njangi* (chapitre 31) 
 
 Touchez une carte pour ouvrir sa fiche. Toutes les fiches suivent le même ordre, ce qui permet de trouver une information en deux secondes, même sous le soleil de 16 heures.
 
-![La fiche C01, Le Y du Njangi : le code et la famille, le titre, les intentions Progresser et Fixer, le schéma avec les boutons Mise en place et Progression, et à droite l'effectif, l'âge, l'espace, la durée, l'intensité et les jours.](shot:pro-drill-detail "Le haut d'une fiche : le schéma à gauche, la carte d'identité à droite.")
+![La fiche C01, Le Y du Njangi : le code et la famille, le titre, les intentions Progresser et Fixer, l'animation avec la légende de l'étape en cours, ses commandes et la liste des étapes, et à droite l'effectif, l'âge, l'espace, la durée, l'intensité et les jours.](shot:pro-drill-detail "Le haut d'une fiche : l'animation à gauche, la carte d'identité à droite.")
 
 **L'en-tête.** Le code (C01), la famille, le titre (« Le Y du Njangi »), une ligne qui résume l'idée, puis les intentions. Les cinq intentions de la possession sont en vert ; les deux réflexes, **Reprendre** et **Regarder devant**, sont en gris. En haut à droite, un compteur indique la place de la fiche dans la liste, par exemple « 1 / 64 ».
 
-**Le schéma.** L'équipe qui applique le Njangi est en vert foncé et attaque vers la droite, l'adversaire est en rouge, les joueurs neutres ou jokers en jaune. Les flèches sont numérotées dans l'ordre de l'action : trait plein pour la passe, pointillés pour la course, trait ondulé pour la conduite. Pour 19 fiches, un second schéma montre la progression ou la deuxième phase : passez de l'un à l'autre avec **Mise en place** et **Progression**.
+**L'animation.** Chaque fiche se joue comme une courte vidéo, sur un terrain vu depuis la tribune. Elle démarre seule à l'ouverture de la fiche, puis tourne en boucle : les joueurs se déplacent, le ballon voyage, et chaque action laisse sa trace sur la pelouse, numérotée dans l'ordre du jeu. Trait blanc plein pour la passe, pointillés pour l'appel, trait ondulé pour la conduite, trait orange épais pour la frappe, petits points pour la pression. L'équipe qui applique le Njangi a des pions blancs cerclés de vert, l'adversaire est en rouge, les joueurs neutres ou jokers en jaune, les gardiens en bleu nuit ou en violet. Quand un appel et une passe vont ensemble, le ballon et le joueur arrivent au même moment, comme sur le terrain : dans C01, C part pendant que B reçoit et prend la remise dans sa course.
+
+Une légende en bas de l'image nomme l'étape en cours (« 3 · Passe : B → C »). Sous le lecteur, **Le mouvement, étape par étape** reprend toutes les étapes : touchez-en une pour la revoir seule, autant de fois qu'il faut. La barre sous l'image porte les commandes : lecture et pause, étape précédente et étape suivante, la ligne du temps avec un repère par étape, **0,5×** pour le ralenti, le plein écran et **Télécharger la vidéo (MP4)**, un fichier léger (environ 70 Ko) à envoyer aux joueurs sur WhatsApp avant la séance. L'animation se termine sur le schéma complet : le placement de départ, toutes les traces et les numéros d'étape.
+
+Pour 19 fiches, une seconde animation montre la progression ou la deuxième phase : passez de l'une à l'autre avec **Mise en place** et **Progression**.
 
 **La carte d'identité.** À droite du schéma : **Effectif** (combien de joueurs, et souvent combien d'ateliers côte à côte), **Âge**, **Espace** (en mètres), **Durée** (les séries, puis le total en minutes entre parenthèses), **Intensité** et **Jours**. Dessous, les **Pièces du Njangi** de la fiche : le cœur, la raison, les yeux, la carte ou le souffle, les cinq images du roman qui aident à parler du jeu aux enfants.
 
@@ -86,7 +90,7 @@ En bas de la fiche, deux cartes mènent à la fiche précédente et à la suivan
 
 ## Du livre au terrain
 
-Sous le schéma, le bouton **Lire dans le livre** ouvre la même fiche dans *Le Code Njangi*, à sa page. Le livre donne le contexte que l'écran n'a pas la place de donner : le chapitre qui explique l'intention, les erreurs fréquentes, la place de l'exercice dans la semaine. Le livre est écrit en français, comme le roman.
+Sous l'animation, le bouton **Lire dans le livre** ouvre la même fiche dans *Le Code Njangi*, à sa page. Le livre donne le contexte que l'écran n'a pas la place de donner : le chapitre qui explique l'intention, les erreurs fréquentes, la place de l'exercice dans la semaine. Le livre est écrit en français, comme le roman.
 
 Le lien fonctionne dans les deux sens : chaque fiche citée dans le livre par son code, comme R08, se retrouve dans la bibliothèque, et le sommaire du livre se termine par le lien **Les 64 exercices dans l'application**. L'entraîneur prépare chez lui avec le livre, et retrouve la même fiche dans sa poche le lendemain.
 

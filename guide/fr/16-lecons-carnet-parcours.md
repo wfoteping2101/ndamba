@@ -37,7 +37,7 @@ Chaque leçon se présente comme une page de cahier ligné :
 - l'étiquette **Leçon 1** et le chapitre d'où elle vient (« Chapitre 1 : Le ballon rapiécé ») ;
 - le titre de la leçon, écrit comme à la main (« Le ballon doit voyager ») ;
 - les lignes du carnet, tirées du livre, avec l'illustration du chapitre collée à côté ;
-- **Le schéma du carnet**, le dessin de la situation sur un terrain (39 leçons sur 40 en ont un) ;
+- **Le schéma du carnet**, la situation sur un terrain, jouée en animation : touchez la lecture et les joueurs bougent, étape par étape, avec une légende pour chaque étape (39 leçons sur 40 en ont un) ;
 - les boutons **J'ai compris** et **Lire le chapitre 1**, qui ouvre le chapitre du roman ;
 - **Le défi qui va avec**, quand un défi de l'espace joueur travaille la même idée, et l'exercice du Code Njangi lié (par exemple **Exercice R07**, le rondo njangi) ;
 - le lien **Écrire dans mon carnet**.

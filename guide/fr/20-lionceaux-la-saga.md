@@ -96,7 +96,7 @@ Ndamba reprend chaque leçon telle qu'elle est écrite dans le roman, avec son s
 1. Pour un joueur de moins de 16 ans, ou pour un parent, ouvrez **Espace joueur** puis, tout en bas de la page, touchez **Les Leçons du Ballon** (« Les 40 pages du carnet de BriBri »). Sur l'accueil d'un jeune joueur, « La leçon du jour » mène au même endroit par **Toutes les leçons**. Pour tous les profils, la page **Les livres** propose le lien **Les Leçons du Ballon dans l'application**.
 2. En haut, la barre « 0 sur 40 comprises » suit votre progression, et **La leçon du jour (n° 8)** ouvre la leçon choisie pour aujourd'hui (le numéro change chaque jour). **Lire le roman** ouvre le livre.
 3. Choisissez une partie parmi les cinq onglets (**Partie I, Cameroun**, Le cœur, et les suivantes).
-4. Chaque leçon montre son chapitre d'origine, ses lignes, l'illustration du chapitre et « Le schéma du carnet ». Touchez **J'ai compris** quand c'est le cas, ou **Lire le chapitre 1** pour relire l'histoire.
+4. Chaque leçon montre son chapitre d'origine, ses lignes, l'illustration du chapitre et « Le schéma du carnet », qui se joue en animation. Touchez **J'ai compris** quand c'est le cas, ou **Lire le chapitre 1** pour relire l'histoire.
 5. Sous la leçon, « Le défi qui va avec » propose un défi à faire seul, et le lien vers un exercice (par exemple « Exercice R07 ») ouvre la fiche correspondante. **Écrire dans mon carnet** ouvre le carnet du joueur, présenté au chapitre 16 de ce guide.
 
 Chaque leçon est ainsi reliée à l'une des dix compétences du joueur Njangi, à un défi et à un exercice. Les leçons comprises sont enregistrées sur cet appareil, et la sauvegarde exportée depuis **Réglages** les emporte aussi.
@@ -132,7 +132,7 @@ La page **Les livres** les présente sous le titre « La saga en six tomes » : 
 
 1. Sur la page **Les livres**, dans la partie *Lionceaux*, touchez **Lire en ligne** (ou **Lire** sous le tome 1 dans la rangée des six tomes).
 2. La page d'accueil montre la couverture, la dédicace, les deux pages de personnages et la liste « Les 40 chapitres », partie par partie. Touchez **Commencer au chapitre 1**, ou **Reprendre la lecture** pour retrouver votre place.
-3. Chaque partie s'ouvre sur sa peinture. Chaque chapitre porte la mention « Chapitre 1 sur 40 », s'ouvre sur une grande illustration et se termine par la page du carnet, « Leçon du Ballon n°1 », le plus souvent avec son schéma. **Suivant** passe au chapitre d'après.
+3. Chaque partie s'ouvre sur sa peinture. Chaque chapitre porte la mention « Chapitre 1 sur 40 », s'ouvre sur une grande illustration et se termine par la page du carnet, « Leçon du Ballon n°1 », le plus souvent avec son schéma, joué comme une courte vidéo. **Suivant** passe au chapitre d'après.
 4. **Chapitres** et **Aa** fonctionnent comme dans *Le Code Njangi* (chapitre 19 de ce guide) ; chaque livre retient sa propre place.
 5. Au bas du sommaire, « À suivre : Lionceaux, tome 2 : La Tanière des Lionceaux » annonce la suite, et le lien « Les 40 Leçons du Ballon dans l'application » ramène aux leçons.
 

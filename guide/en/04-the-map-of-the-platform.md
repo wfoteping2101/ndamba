@@ -82,7 +82,7 @@ On a computer, the app has a dark green column on the left. At the top sits the 
 |---|---|---|---|
 | (top) | **Home** | Today's screen: session, next match, week, latest Index | 6 |
 | (top) | **Mola** | Talk to the agent, follow its tasks, approve what it prepares | 18 |
-| Training | **Drills** | The method's 64 drills, with diagrams | 7 |
+| Training | **Drills** | The method's 64 drills, each animated like a short video | 7 |
 | Training | **Sessions** | Your sessions and the session builder | 8 |
 | Training | **Week** | The week around the match, MD-4 to MD-1, and its load | 9 |
 | Team | **Team** | The squad, each player's file and journey | 10 |

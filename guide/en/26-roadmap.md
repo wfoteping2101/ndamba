@@ -15,7 +15,7 @@ Everything in this table works and can be opened in the current version (Ndamba 
 | Item | Today | Where to find it |
 |---|---|---|
 | *The Njangi Code* | 36 chapters in nine parts, plus a foreword and appendices | **The books**, read online |
-| The drills | 64 drill cards with diagrams, in 8 families, linked to the 7 intentions and the 10 skills | **Drills** |
+| The drills | 64 drill cards, each animated like a short video and downloadable as an MP4, in 8 families, linked to the 7 intentions and the 10 skills | **Drills** |
 | *Lionceaux, book 1* | 40 chapters, 5 parts, 5 countries, 168 illustrations | **The books** |
 | The Ball Lessons | 40, one per chapter of the novel | **Player space** |
 | *Lionceaux Football* | An eleven-a-side match, sixteen teams from Douala and Yaoundé, played by touch, controller or keyboard | **Football game** |

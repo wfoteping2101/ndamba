@@ -36,7 +36,8 @@ Ce glossaire rassemble les mots que vous croiserez dans l'application, dans *Le 
 
 | Terme | En anglais | Définition | Chapitre |
 |---|---|---|---|
-| Exercice | Drill | Une des 64 fiches de la méthode, avec son code (par exemple T01), son schéma, ses consignes et ses variantes. | 7 |
+| Exercice | Drill | Une des 64 fiches de la méthode, avec son code (par exemple T01), son animation, ses consignes et ses variantes. | 7 |
+| Animation | Animation | Un schéma joué comme une courte vidéo : les joueurs bougent et le ballon voyage, une étape numérotée après l'autre, avec une légende pour chaque étape. Chaque exercice a la sienne, comme les figures des deux livres. | 7 |
 | Séance | Session | Une suite d'exercices datée, avec son jour dans la semaine du match (MD-4, MD-1…), son intention si vous en choisissez une, et sa durée. | 8 |
 | Bloc | Block | Une partie de la séance, avec ses minutes : le plus souvent un exercice de la bibliothèque, parfois un bloc libre que vous nommez. | 8 |
 | MD (jour de match) | MD (match day) | Le repère de la semaine : MD est le jour du match, MD-1 la veille, MD+1 le lendemain. | 9 |

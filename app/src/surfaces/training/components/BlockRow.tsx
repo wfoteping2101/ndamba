@@ -5,7 +5,8 @@ import { useT } from '../../../i18n'
 import { cx } from '../../../lib/util'
 import type { MD, SessionBlock } from '../../../lib/types'
 import { drillText } from '../../../content'
-import { IntensityMeter, IntentionBadges, LazyPitch, NoDiagram } from './bits'
+import { PitchVideoThumb } from '../../../ui/PitchVideo'
+import { IntensityMeter, IntentionBadges, NoDiagram } from './bits'
 import { blockDrill, blockIntensity } from './helpers'
 
 export function BlockRow({ b, index, count, md, startMin, onChange, onMove, onRemove }: {
@@ -23,7 +24,7 @@ export function BlockRow({ b, index, count, md, startMin, onChange, onMove, onRe
     <li className="card overflow-hidden">
       <div className="flex gap-3 p-3 sm:gap-4 sm:p-4">
         <div className="relative w-28 shrink-0 sm:w-36">
-          {d ? <Link to={`/app/exercices/${d.id}`} aria-label={title}><LazyPitch spec={d.diagram} width={260} fit={0.85} /></Link>
+          {d ? <Link to={`/app/exercices/${d.id}`} aria-label={title} className="block overflow-hidden rounded-xl"><PitchVideoThumb spec={d.diagram} title={title} button={false} /></Link>
             : <NoDiagram label={b.drillId ? t('builder.drillPending') : t('builder.freeBlock')} />}
           <span className="absolute -left-1.5 -top-1.5 grid h-7 w-7 place-items-center rounded-full border-2 border-paper bg-forest-600 text-xs font-semibold tabular-nums text-cream">{index + 1}</span>
         </div>

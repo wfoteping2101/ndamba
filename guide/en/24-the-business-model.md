@@ -13,12 +13,12 @@ A business model says who pays, for what, and what it all costs. Ndamba's starts
 The app's configuration file states the rule in plain terms: the books and the drill library are never behind a paywall. Whatever the plan:
 
 - *The Njangi Code* (36 chapters in nine parts) and *Lionceaux, book 1: Le Ballon qui voyage* (40 chapters) are free to read online;
-- the method's 64 drills, with their diagrams and coaching points, stay open in **Drills**;
+- the method's 64 drills, with their animations and coaching points, stay open in **Drills**;
 - the 40 Ball Lessons, taken from the novel, stay open too.
 
 The Premium page confirms it in its questions: "Are the books really free? Yes." The reason is strategic as much as it is moral. A coach at a club with no budget must be able to learn the method. The more coaches speak the same language, the more valuable the tools that measure it become.
 
-![The site's Books page, with the cover of The Njangi Code, its 36 chapters, 9 parts, 64 drills with diagrams and the Read online button.](shot:site-library "Both books are free to read online, whatever the plan.")
+![The site's Books page, with the cover of The Njangi Code, its 36 chapters, 9 parts, 64 animated drills and the Read online button.](shot:site-library "Both books are free to read online, whatever the plan.")
 
 ## The five plans and their prices
 

@@ -62,6 +62,8 @@ Les fiches sont réparties en huit familles, toujours dans le même ordre :
 
 Chaque fiche suit le même plan. En tête : le code, le titre, le sous-titre et les intentions. Puis les repères pratiques : l'âge minimum (« U10+ »), l'effectif, l'espace en mètres, la durée, les jours de la semaine où elle a sa place (de MD-4 à MD+1, ou « Jeunes ») et l'intensité. Puis le contenu : l'objectif, l'organisation, les règles, les consignes, les progressions et les régressions, ce qu'il faut mesurer, et, pour finir, une phrase qui relie l'exercice à Kaydoudou et BriBri. Chaque fiche a son schéma (l'équipe verte attaque vers la droite), et 19 fiches en ont un second pour la progression.
 
+Dans le lecteur en ligne, chaque dessin qui bouge est une courte vidéo : les 64 fiches (et leurs progressions) et les figures des chapitres, 136 animations en tout. Au repos, le lecteur montre le schéma complet ; touchez la lecture et le mouvement se déroule, étape par étape, avec une légende pour chaque étape. Dans l'édition imprimée, chaque fiche porte un QR code en haut à droite, comme chaque figure animée des chapitres : scanné avec un téléphone, il ouvre l'animation.
+
 Dans le texte des chapitres, un exercice est cité par son code, par exemple L04 : dans le lecteur en ligne, ce code est un lien qui ouvre la fiche.
 
 ## Les encadrés du livre
@@ -82,7 +84,7 @@ Une règle traverse tous les encadrés « Avec les jeunes » : de l'eau et de l'
 
 Les fiches du livre et la bibliothèque **Exercices** de l'application sont écrites une seule fois, dans les mêmes fichiers, en français et en anglais. Une fiche corrigée l'est donc partout. Sur la page d'un exercice, le bouton **Ajouter à une séance** le place dans votre séance, et **Lire dans le livre** ouvre la même fiche dans le lecteur. L'encadré « Avec Kaydoudou et BriBri », présent sur chaque fiche, propose **Lire le roman**. En sens inverse, la page d'accueil du livre se termine par le lien « Les 64 exercices dans l'application ».
 
-![La fiche C01, Le Y du Njangi, dans l'application : le schéma de départ, l'effectif, l'âge U10+, l'espace de 30 x 20 m, la durée, l'intensité moyenne, les jours MD-2, MD-1 et Jeunes, et les boutons Ajouter à une séance et Lire dans le livre.](shot:pro-drill-detail "Une fiche du livre devenue page de l'application (démo club pro).")
+![La fiche C01, Le Y du Njangi, dans l'application : l'animation, l'effectif, l'âge U10+, l'espace de 30 x 20 m, la durée, l'intensité moyenne, les jours MD-2, MD-1 et Jeunes, et les boutons Ajouter à une séance et Lire dans le livre.](shot:pro-drill-detail "Une fiche du livre devenue page de l'application (démo club pro).")
 
 ### L'Indice Njangi, chapitre 32
 
@@ -115,7 +117,7 @@ Le lecteur fonctionne sur téléphone comme sur ordinateur, sans compte.
 6. Le lecteur retient seul votre place, chapitre et position. La prochaine fois, la page d'accueil du livre affiche **Reprendre la lecture** avec le titre du chapitre.
 7. **← Sommaire** ramène à la couverture et au sommaire ; depuis cette page, **← Ndamba** ramène à la page des livres de l'application.
 
-![La page des livres du site : la couverture du Code Njangi, le sous-titre, le public, les repères 36 chapitres, 9 parties et 64 exercices avec schémas, le bouton Lire en ligne et le lien Les exercices dans l'application.](shot:site-library "Les livres : le point de départ de la lecture.")
+![La page des livres du site : la couverture du Code Njangi, le sous-titre, le public, les repères 36 chapitres, 9 parties et 64 exercices animés, le bouton Lire en ligne et le lien Les exercices dans l'application.](shot:site-library "Les livres : le point de départ de la lecture.")
 
 ![Le début du chapitre 1 dans le lecteur : l'ouverture de la partie 1, Le manifeste, puis le titre Le talent ne suffit pas et le texte.](shot:book-methode-ch01 "Un chapitre dans le lecteur, avec Chapitres et Aa en haut à droite.")
 

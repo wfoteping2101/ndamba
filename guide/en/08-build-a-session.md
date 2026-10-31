@@ -66,7 +66,7 @@ There is no "Save" button. Every change is kept automatically, in less than a se
 
 The section called **The plan** lists the blocks in order, with their count. Each block shows:
 
-- its number and the drill's diagram (tap it to open the drill card);
+- its number and the drill's animation (the mouse over it plays it; a tap opens the drill card);
 - the drill's code, family, title and one-line summary, with its intentions;
 - at the top right, the block's place in the session, for example "15' to 41'";
 - the minutes, with minus and plus buttons (from 1 to 120 minutes), and the drill's intensity;

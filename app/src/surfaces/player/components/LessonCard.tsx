@@ -2,11 +2,10 @@
 // the chapter picture when it exists, « J'ai compris », and what to do next.
 import { Link } from 'react-router-dom'
 import { BookOpen, Check, Dumbbell, NotebookPen, Target } from 'lucide-react'
-import { Badge, Pitch } from '../../../ui'
+import { Badge } from '../../../ui'
+import { PitchVideo } from '../../../ui/PitchVideo'
 import { useT } from '../../../i18n'
 import { cx } from '../../../lib/util'
-import { viewSize } from '../../../lib/pitch.mjs'
-import type { DiagramSpec } from '../../../lib/types'
 import { getDrill, drillText } from '../../../content'
 import { chapterHref, partOf, type LessonView } from '../lessons'
 import { challengeText, challengesForLesson } from '../challenges'
@@ -54,10 +53,10 @@ export function LessonCard({ lesson: l, variant = 'full', className }: { lesson:
         )}
 
         {l.diagram && (
-          <figure className="mx-auto mt-4 rounded-[14px] border border-line bg-paper p-1.5" style={{ maxWidth: diagramMaxWidth(l.diagram) }}>
-            <Pitch spec={l.diagram} width={560} title={l.title} />
-            <figcaption className="px-1.5 pb-0.5 pt-1.5 text-[13px] text-ink-muted">{t('lesson.diagram')}</figcaption>
-          </figure>
+          <div className="mx-auto mt-4 max-w-[600px] rounded-[14px] border border-line bg-paper p-1.5">
+            <PitchVideo spec={l.diagram} title={l.title} steps={false} />
+            <p className="px-1.5 pb-0.5 pt-1.5 text-[13px] text-ink-muted">{t('lesson.diagram')}</p>
+          </div>
         )}
 
         <div className="mt-5 flex flex-wrap items-center gap-2">
@@ -115,11 +114,3 @@ function Lines({ lines, className }: { lines: string[]; className?: string }) {
   )
 }
 
-/** Tall diagrams (a half pitch seen upright) are narrowed so they stay about 400 px high. */
-function diagramMaxWidth(spec: DiagramSpec) {
-  try {
-    const { w, h } = viewSize(spec)
-    const ratio = (h + 2) / (w + 2)
-    return ratio > 0.72 ? Math.round(420 / ratio) : undefined
-  } catch { return undefined }
-}

@@ -96,7 +96,7 @@ Ndamba takes each lesson exactly as it is written in the novel, with its diagram
 1. For a player under 16, or for a parent, open **Player space**, then at the very bottom of the page tap **The Ball Lessons** ("The 40 pages of BriBri's notebook"). On a young player's home screen, "Lesson of the day" leads to the same place through **All lessons**. For every profile, **The books** page offers the link **The Ball Lessons in the app**.
 2. At the top, the bar "0 of 40 understood" tracks progress, and **Lesson of the day (no. 8)** opens the lesson chosen for today (the number changes every day). **Read the novel** opens the book.
 3. Pick a part from the five tabs (**Part I, Cameroon**, The heart, and so on).
-4. Each lesson shows the chapter it comes from, its lines, the chapter's illustration and "The notebook diagram". In English the lines are a short English version; **Read the original page in French** shows BriBri's own words. Tap **I've got it** when it is the case, or **Read chapter 1** to go back to the story.
+4. Each lesson shows the chapter it comes from, its lines, the chapter's illustration and "The notebook diagram", which plays as an animation. In English the lines are a short English version; **Read the original page in French** shows BriBri's own words. Tap **I've got it** when it is the case, or **Read chapter 1** to go back to the story.
 5. Under the lesson, "The matching challenge" suggests something to practise alone, and the drill link (for example "Drill R07") opens the matching card. **Write in my notebook** opens the player's notebook, covered in chapter 16 of this guide.
 
 Each lesson is linked to one of the ten skills of the Njangi player, to a challenge and to a drill. Lessons marked as understood are saved on this device, and the backup exported from **Settings** carries them too.
@@ -132,7 +132,7 @@ The **U13 academy demo** takes you inside the novel. The team is the Lionceaux d
 
 1. On **The books** page, in the *Lionceaux* section, tap **Read online** (or **Read** under book 1 on the six-book shelf).
 2. The home page shows the cover, the dedication, the two character pages and the list "Les 40 chapitres", part by part. Tap **Commencer au chapitre 1** (Start at chapter 1), or **Reprendre la lecture** (Resume reading) to find your place.
-3. Each part opens with its painting. Each chapter shows "Chapitre 1 sur 40" (chapter 1 of 40), opens on a large illustration and ends with the notebook page, "Leçon du Ballon n°1", most of the time with its diagram. **Suivant** goes to the next chapter.
+3. Each part opens with its painting. Each chapter shows "Chapitre 1 sur 40" (chapter 1 of 40), opens on a large illustration and ends with the notebook page, "Leçon du Ballon n°1", most of the time with its diagram, played as a short video. **Suivant** goes to the next chapter.
 4. **Chapitres** and **Aa** work as in *Le Code Njangi* (chapter 19 of this guide), and each book keeps its own place.
 5. At the bottom of the contents, "À suivre : Lionceaux, tome 2 : La Tanière des Lionceaux" announces what comes next, and the link "Les 40 Leçons du Ballon dans l'application" leads back to the lessons.
 

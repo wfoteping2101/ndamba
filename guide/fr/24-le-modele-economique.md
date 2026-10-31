@@ -13,12 +13,12 @@ Un modèle économique dit qui paie, pour quoi, et ce que cela coûte. Celui de 
 Dans le fichier de configuration de l'application, la règle est écrite noir sur blanc : les livres et la bibliothèque d'exercices ne sont jamais derrière un paiement. Quelle que soit la formule :
 
 - *Le Code Njangi* (36 chapitres en neuf parties) et *Lionceaux, tome 1 : Le Ballon qui voyage* (40 chapitres) se lisent librement en ligne ;
-- les 64 exercices de la méthode, avec leurs schémas et leurs consignes, restent ouverts dans **Exercices** ;
+- les 64 exercices de la méthode, avec leurs animations et leurs consignes, restent ouverts dans **Exercices** ;
 - les 40 Leçons du Ballon, tirées du roman, restent ouvertes aussi.
 
 La page Premium le confirme dans ses questions fréquentes : « Les livres sont-ils vraiment gratuits ? Oui. » La raison est stratégique autant que morale. Un éducateur d'un club sans budget doit pouvoir apprendre la méthode. Plus les entraîneurs parlent la même langue, plus les outils qui la mesurent prennent de la valeur.
 
-![La page Les livres du site, avec la couverture du Code Njangi, ses 36 chapitres, ses 9 parties, ses 64 exercices avec schémas et le bouton Lire en ligne.](shot:site-library "Les deux livres se lisent librement en ligne, quelle que soit la formule.")
+![La page Les livres du site, avec la couverture du Code Njangi, ses 36 chapitres, ses 9 parties, ses 64 exercices animés et le bouton Lire en ligne.](shot:site-library "Les deux livres se lisent librement en ligne, quelle que soit la formule.")
 
 ## Les cinq formules et leurs prix
 

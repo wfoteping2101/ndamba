@@ -17,7 +17,8 @@ One codebase, four products, by William Foteping (Lemon Network Solutions):
 ```bash
 # books: web readers (add --pdf for print proofs; needs Chromium from Playwright)
 cd tools && npm install && cd ..
-node tools/build_books.mjs
+node tools/render_videos.mjs        # the animations: every diagram that moves, as MP4 (FR, and EN for the drills) in app/public/video/ (needs ffmpeg; only what changed, --all for everything)
+node tools/build_books.mjs          # run after the videos: the readers play them, the print edition gets their QR codes
 node tools/build_guide.mjs          # the guide (--check: dashes, screenshots, word counts; --pdf: page-count proofs)
 
 # app
@@ -25,7 +26,7 @@ cd app && npm install && npm run build      # runs scripts/build-content.mjs (dr
 npm run dev
 ```
 
-Deploy: Vercel, root directory `app`, framework Vite, output `dist`. `vercel.json` routes `/book/*`, `/guide/*` and `/football/*` to the static pages and everything else to the app.
+Deploy: Vercel, root directory `app`, framework Vite, output `dist`. `vercel.json` routes `/book/*`, `/guide/*`, `/video/*` and `/football/*` to the static files and everything else to the app.
 
 ## Checks
 
@@ -40,3 +41,5 @@ node tools/check_drills.mjs coach/drills/*.json
 Art direction: `tome1/art/ART_DIRECTION.md` (skill `.claude/skills/cinematic-children-book/SKILL.md`), canonical characters `tome1/art/CHARACTERS.md`, every image's data in `tome1/art/scenes.mjs`. `node tools/art_prompts.mjs` writes the eight-slot prompts and reference lists to `tome1/prompts/` and the inventory to `tome1/art/inventory.json`. Images are generated with the image generation of the Codex app (ChatGPT) on Windows: `powershell -ExecutionPolicy Bypass -File run-all.ps1 -Only 'ch*' -Parallel 3` in the illustrations working folder (prompts and `.refs` copied to `prompts\`, reference images in `refs\` or `illustrations\`). The series cover (LIONCEAUX wordmark, numeral, title) is typeset over the painted art by `node tools/compose_cover.mjs`.
 
 Shared diagram renderer: `tools/pitch.mjs` (one JSON spec draws the same pitch diagram in both books and in the app).
+
+Animations: `tools/pitchmotion.mjs` plays the same JSON spec as a short film on a perspective pitch (numbered arrows become passes, runs, carries, shots and presses, step by step; a run and the pass to the runner arrive together). The app draws it live in a canvas (`app/src/ui/PitchVideo.tsx`: drill cards, drill pages, session blocks, lesson cards); `tools/render_videos.mjs` encodes the same frames as MP4 for downloads and for the books. English for the words written on the diagrams: `tools/diagram_labels_en.json`.

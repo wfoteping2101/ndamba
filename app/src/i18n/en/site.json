@@ -24,7 +24,7 @@
       "title": "Train, observe, follow every player.",
       "train": {
         "title": "Train",
-        "body": "The method's drills with their diagrams, sessions built in a few taps, the week from MD-4 to MD-1: fitted to the age group, the level and the fixture list, from U8 to the first team."
+        "body": "The method's drills, animated like short videos, sessions built in a few taps, the week from MD-4 to MD-1: fitted to the age group, the level and the fixture list, from U8 to the first team."
       },
       "observe": {
         "title": "Observe",
@@ -72,7 +72,7 @@
       "items": {
         "lessons": {
           "title": "Ball Lessons, for the youngest",
-          "body": "For ages 8 to 12: 40 lessons from the {{series}} novel, each with its diagram, to understand the game by playing it."
+          "body": "For ages 8 to 12: 40 lessons from the {{series}} novel, each with its animated diagram, to understand the game by playing it."
         },
         "challenges": {
           "title": "Challenges and notebook",
@@ -83,7 +83,7 @@
           "body": "Scanning, first touch, passing with purpose, counter-pressing: where you stand, from 1 to 4, and what to work on now."
         },
         "drills": {
-          "title": "Drills with diagrams",
+          "title": "Animated drills",
           "body": "Rondos, positional games, small and large-sided games, transitions, finishing. Filter by intention, age and day of the week."
         },
         "builder": {
@@ -400,7 +400,7 @@
       "facts": {
         "chapters": "{{n}} chapters",
         "parts": "{{n}} parts",
-        "drills": "{{n}} drills with diagrams"
+        "drills": "{{n}} animated drills"
       },
       "drillsLink": "The drills in the app",
       "partLabel": "Part {{n}}"
@@ -656,7 +656,7 @@
       "facts": {
         "chapters": "{{online}} of {{planned}} chapters online",
         "parts": "{{n}} parts",
-        "drills": "{{n}} drills with diagrams"
+        "drills": "{{n}} animated drills"
       },
       "tocTitle": "The contents, part by part",
       "tocLead": "Tap a chapter to open it in the reader.",
@@ -664,7 +664,7 @@
       "outside": "Foreword and appendices",
       "missing": "Chapters {{list}} are being written.",
       "drillsTitle": "The {{n}} drills",
-      "drillsLead": "Each drill sheet has its diagram, drawn as in the book. Tap a drill to open it in the app.",
+      "drillsLead": "Each drill plays as an animation, drawn from the book's diagram: hover over it or tap play. Tap a drill to open it in the app.",
       "all": "All",
       "openDrill": "Open drill {{code}}",
       "drillMeta": "{{ages}}, {{minutes}} min",
@@ -698,7 +698,7 @@
       "areas": {
         "training": {
           "title": "Training",
-          "body": "Drills with diagrams, the session builder and the periodised week from MD-4 to MD-1."
+          "body": "Animated drills, the session builder and the periodised week from MD-4 to MD-1."
         },
         "team": {
           "title": "Team and matches",

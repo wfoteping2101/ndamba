@@ -15,7 +15,7 @@ Tout ce qui figure dans ce tableau fonctionne et peut être ouvert dans la versi
 | Élément | Aujourd'hui | Où le trouver |
 |---|---|---|
 | *Le Code Njangi* | 36 chapitres en neuf parties, plus un avant-propos et des annexes | **Les livres**, lecture en ligne |
-| Les exercices | 64 fiches avec schéma, en 8 familles, reliées aux 7 intentions et aux 10 compétences | **Exercices** |
+| Les exercices | 64 fiches, chacune animée comme une courte vidéo et téléchargeable en MP4, en 8 familles, reliées aux 7 intentions et aux 10 compétences | **Exercices** |
 | *Lionceaux, tome 1* | 40 chapitres, 5 parties, 5 pays, 168 illustrations | **Les livres** |
 | Les Leçons du Ballon | 40, une par chapitre du roman | **Espace joueur** |
 | *Lionceaux Football* | Un match à onze, seize équipes de Douala et de Yaoundé, au doigt, à la manette ou au clavier | **Jeu de foot** |

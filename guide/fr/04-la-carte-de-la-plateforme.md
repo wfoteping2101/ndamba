@@ -82,7 +82,7 @@ Sur un ordinateur, l'application se présente avec une colonne vert foncé à ga
 |---|---|---|---|
 | (en tête) | **Accueil** | L'écran du jour : séance, prochain match, semaine, dernier Indice | 6 |
 | (en tête) | **Mola** | Parler à l'agent, suivre ses tâches, valider ce qu'il prépare | 18 |
-| Entraînement | **Exercices** | Les 64 exercices de la méthode, avec schémas | 7 |
+| Entraînement | **Exercices** | Les 64 exercices de la méthode, chacun animé comme une courte vidéo | 7 |
 | Entraînement | **Séances** | Vos séances et le constructeur de séance | 8 |
 | Entraînement | **Semaine** | La semaine autour du match, de MD-4 à MD-1, et sa charge | 9 |
 | Équipe | **Équipe** | L'effectif, la fiche et le parcours de chaque joueur | 10 |

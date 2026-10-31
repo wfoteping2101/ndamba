@@ -64,6 +64,8 @@ The cards are grouped in eight families, always in the same order:
 
 Every card follows the same plan. At the top: the code, the title, the subtitle and the intentions. Then the practical details: minimum age ("U10+"), number of players, space in metres, duration, the days of the week where it fits (MD-4 to MD+1, or youth sessions) and intensity. Then the content: objective, organisation, rules, coaching points, progressions and regressions, what to measure and, to close, one sentence linking the drill to Kaydoudou and BriBri. Every card has its diagram (the green team attacks to the right), and 19 cards have a second one for the progression.
 
+In the online reader, every drawing that moves is a short video: the 64 drill sheets (and their progressions) and the figures of the chapters, 136 animations in all. At rest the player shows the complete diagram; tap play and the move unfolds, step by step, with a caption for each step. In the print edition, each drill sheet carries a QR code in its top right corner, and so does each animated figure of the chapters: scanned with a phone, it opens the animation.
+
 In the chapter text, a drill is cited by its code, for example L04; in the online reader, that code is a link that opens the card.
 
 ## The callouts of the book
@@ -84,7 +86,7 @@ One rule runs through every "Avec les jeunes" callout: water and shade, a load s
 
 The book's cards and the app's **Drills** library are written once, in the same files, in French and English. A card corrected in one place is corrected everywhere. On a drill's page, **Add to a session** puts it in your session and **Read in the book** opens the same card in the reader. The "With Kaydoudou and BriBri" block, found on every card, offers **Read the novel**. The other way round, the book's home page ends with the link "Les 64 exercices dans l'application" (the 64 drills in the app).
 
-![Drill C01, The Njangi Y, in the app: the starting diagram, players, age U10+, a 30 x 20 m space, duration, medium intensity, days MD-2, MD-1 and Youth, and the Add to a session and Read in the book buttons.](shot:pro-drill-detail "A card from the book turned into an app page (pro club demo).")
+![Drill C01, The Njangi Y, in the app: the animation, players, age U10+, a 30 x 20 m space, duration, medium intensity, days MD-2, MD-1 and Youth, and the Add to a session and Read in the book buttons.](shot:pro-drill-detail "A card from the book turned into an app page (pro club demo).")
 
 ### The Njangi Index, chapter 32
 
@@ -117,7 +119,7 @@ The reader works on a phone as well as a computer, with no account.
 6. The reader keeps your place by itself, chapter and position. Next time, the book's home page shows **Reprendre la lecture** (Resume reading) with the chapter title.
 7. **← Sommaire** takes you back to the cover and contents; from there, **← Ndamba** takes you back to the app's books page.
 
-![The site's books page in English: the cover of Le Code Njangi, the note that the books are written in French, the subtitle, the audience, the facts 36 chapters, 9 parts and 64 drills with diagrams, the Read online button and the link The drills in the app.](shot:site-library "The books: where reading starts.")
+![The site's books page in English: the cover of Le Code Njangi, the note that the books are written in French, the subtitle, the audience, the facts 36 chapters, 9 parts and 64 animated drills, the Read online button and the link The drills in the app.](shot:site-library "The books: where reading starts.")
 
 ![The start of chapter 1 in the reader: the opener of part 1, Le manifeste, then the title Le talent ne suffit pas and the text.](shot:book-methode-ch01 "A chapter in the reader, with Chapitres and Aa at the top right.")
 

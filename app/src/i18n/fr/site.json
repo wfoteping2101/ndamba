@@ -24,7 +24,7 @@
       "title": "Entraîner, observer, suivre chaque joueur.",
       "train": {
         "title": "Entraîner",
-        "body": "Les exercices de la méthode avec leurs schémas, des séances construites en quelques touches, la semaine de MD-4 à MD-1 : adaptées à l'âge, au niveau et au calendrier, des U8 à l'équipe première."
+        "body": "Les exercices de la méthode animés comme de courtes vidéos, des séances construites en quelques touches, la semaine de MD-4 à MD-1 : adaptées à l'âge, au niveau et au calendrier, des U8 à l'équipe première."
       },
       "observe": {
         "title": "Observer",
@@ -72,7 +72,7 @@
       "items": {
         "lessons": {
           "title": "Les Leçons du Ballon, pour les plus jeunes",
-          "body": "Pour les 8 à 12 ans : 40 leçons tirées du roman {{series}}, chacune avec son schéma, pour comprendre le jeu en jouant."
+          "body": "Pour les 8 à 12 ans : 40 leçons tirées du roman {{series}}, chacune avec son schéma animé, pour comprendre le jeu en jouant."
         },
         "challenges": {
           "title": "Défis et carnet",
@@ -83,7 +83,7 @@
           "body": "Scan, contrôle orienté, passe avec intention, contre-pression : où tu en es, de 1 à 4, et ce que tu dois travailler maintenant."
         },
         "drills": {
-          "title": "Les exercices avec schémas",
+          "title": "Les exercices animés",
           "body": "Rondos, jeux de position, petits et grands jeux, transitions, finition. Filtrez par intention, âge et jour de la semaine."
         },
         "builder": {
@@ -400,7 +400,7 @@
       "facts": {
         "chapters": "{{n}} chapitres",
         "parts": "{{n}} parties",
-        "drills": "{{n}} exercices avec schémas"
+        "drills": "{{n}} exercices animés"
       },
       "drillsLink": "Les exercices dans l'application",
       "partLabel": "Partie {{n}}"
@@ -656,7 +656,7 @@
       "facts": {
         "chapters": "{{online}} chapitres en ligne sur {{planned}}",
         "parts": "{{n}} parties",
-        "drills": "{{n}} exercices avec schémas"
+        "drills": "{{n}} exercices animés"
       },
       "tocTitle": "Le sommaire, partie par partie",
       "tocLead": "Touchez un chapitre pour l'ouvrir dans le lecteur.",
@@ -664,7 +664,7 @@
       "outside": "Avant-propos et annexes",
       "missing": "Les chapitres {{list}} sont en cours d'écriture.",
       "drillsTitle": "Les {{n}} exercices",
-      "drillsLead": "Chaque fiche a son schéma, tracé comme dans le livre. Touchez une fiche pour l'ouvrir dans l'application.",
+      "drillsLead": "Chaque fiche se joue en animation, à partir du schéma du livre : passez dessus ou touchez la lecture. Touchez une fiche pour l'ouvrir dans l'application.",
       "all": "Tous",
       "openDrill": "Ouvrir la fiche {{code}}",
       "drillMeta": "{{ages}}, {{minutes}} min",
@@ -698,7 +698,7 @@
       "areas": {
         "training": {
           "title": "Entraînement",
-          "body": "Les exercices avec schémas, le constructeur de séances et la semaine périodisée de MD-4 à MD-1."
+          "body": "Les exercices animés, le constructeur de séances et la semaine périodisée de MD-4 à MD-1."
         },
         "team": {
           "title": "Équipe et matchs",

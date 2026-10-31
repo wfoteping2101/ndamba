@@ -1,7 +1,8 @@
 import { useMemo, useState, type ReactNode } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, BookOpen, CalendarDays, ChevronLeft, ChevronRight, Clock, Gauge, Heart, Plus, Ruler, Target, Users } from 'lucide-react'
-import { Badge, EmptyState, Pitch } from '../../ui'
+import { Badge, EmptyState } from '../../ui'
+import { PitchVideo } from '../../ui/PitchVideo'
 import { useT } from '../../i18n'
 import { useDocumentTitle } from '../../lib/hooks'
 import { BOOKS } from '../../lib/config'
@@ -90,7 +91,7 @@ export default function DrillDetail() {
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-8">
         <div className="lg:sticky lg:top-6 lg:self-start">
           <div className="card overflow-hidden p-2 sm:p-3">
-            <Pitch spec={spec} width={720} title={tx.title} />
+            <PitchVideo spec={spec} title={tx.title} videoKey={`${d.id}-${view === '2' && d.diagram2 ? '2' : '1'}`} autoPlay />
             {d.diagram2 && (
               <div className="flex items-center justify-between gap-2 px-1 pt-3">
                 <span className="text-xs text-ink-muted">{view === '1' ? t('detail.diagram1Hint') : t('detail.diagram2Hint')}</span>

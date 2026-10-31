@@ -66,7 +66,7 @@ Il n'y a pas de bouton « Enregistrer ». Chaque changement est gardé automatiq
 
 La section **Le déroulé** liste les blocs dans l'ordre, avec leur nombre. Chaque bloc montre :
 
-- son numéro et le schéma de la fiche (touchez-le pour ouvrir la fiche) ;
+- son numéro et l'animation de la fiche (la souris dessus la fait jouer ; une touche ouvre la fiche) ;
 - le code, la famille, le titre et la ligne d'explication de l'exercice, avec ses intentions ;
 - en haut à droite, le moment du bloc dans la séance, par exemple « 15' à 41' » ;
 - les minutes, avec les boutons moins et plus (de 1 à 120 minutes), et l'intensité de la fiche ;

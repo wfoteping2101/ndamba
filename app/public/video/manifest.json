@@ -1,0 +1,7550 @@
+{
+ "engine": "b90209b94e",
+ "width": 1280,
+ "height": 720,
+ "fps": 30,
+ "items": {
+  "C01-1": {
+   "src": "drill",
+   "duration": 8.25,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "623d00f4d976",
+    "en": "8154f01be45e"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.43,
+      "text": "Appel : C"
+     },
+     {
+      "n": 3,
+      "t": 3.34,
+      "text": "Passe : B → C"
+     },
+     {
+      "n": 4,
+      "t": 4.47,
+      "text": "Passe : C → D"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.43,
+      "text": "Run: C"
+     },
+     {
+      "n": 3,
+      "t": 3.34,
+      "text": "Pass: B → C"
+     },
+     {
+      "n": 4,
+      "t": 4.47,
+      "text": "Pass: C → D"
+     }
+    ]
+   }
+  },
+  "C01-2": {
+   "src": "drill",
+   "duration": 7.77,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "4823f327f728",
+    "en": "8bb9e7ffe884"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.43,
+      "text": "Conduite : B"
+     },
+     {
+      "n": 3,
+      "t": 4.34,
+      "text": "Passe : B → D"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.43,
+      "text": "Carry: B"
+     },
+     {
+      "n": 3,
+      "t": 4.34,
+      "text": "Pass: B → D"
+     }
+    ]
+   }
+  },
+  "C02-1": {
+   "src": "drill",
+   "duration": 11.3,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "9ddf2d3e0d62",
+    "en": "e82ce8600f28"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.64,
+      "text": "Passe : B → C"
+     },
+     {
+      "n": 3,
+      "t": 4.38,
+      "text": "Passe : C → D"
+     },
+     {
+      "n": 4,
+      "t": 6.11,
+      "text": "Conduite : D"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.64,
+      "text": "Pass: B → C"
+     },
+     {
+      "n": 3,
+      "t": 4.38,
+      "text": "Pass: C → D"
+     },
+     {
+      "n": 4,
+      "t": 6.11,
+      "text": "Carry: D"
+     }
+    ]
+   }
+  },
+  "C02-2": {
+   "src": "drill",
+   "duration": 7.9,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "8661016cc8fb",
+    "en": "b02ee5fc1189"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : C"
+     },
+     {
+      "n": 2,
+      "t": 1.4,
+      "text": "Passe : A → C"
+     },
+     {
+      "n": 3,
+      "t": 3.34,
+      "text": "Appel : B"
+     },
+     {
+      "n": 4,
+      "t": 4.41,
+      "text": "Passe : C → B"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Run: C"
+     },
+     {
+      "n": 2,
+      "t": 1.4,
+      "text": "Pass: A → C"
+     },
+     {
+      "n": 3,
+      "t": 3.34,
+      "text": "Run: B"
+     },
+     {
+      "n": 4,
+      "t": 4.41,
+      "text": "Pass: C → B"
+     }
+    ]
+   }
+  },
+  "C03-1": {
+   "src": "drill",
+   "duration": 8.05,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "36a39d32ae1c",
+    "en": "c3b360411e2a"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.52,
+      "text": "Passe : B → C"
+     },
+     {
+      "n": 3,
+      "t": 4.14,
+      "text": "Passe : C → A"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.52,
+      "text": "Pass: B → C"
+     },
+     {
+      "n": 3,
+      "t": 4.14,
+      "text": "Pass: C → A"
+     }
+    ]
+   }
+  },
+  "C04-1": {
+   "src": "drill",
+   "duration": 7.69,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "d98fd1fbd6ac",
+    "en": "35392e3f8dc2"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.43,
+      "text": "Conduite : B"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.43,
+      "text": "Carry: B"
+     }
+    ]
+   }
+  },
+  "C04-2": {
+   "src": "drill",
+   "duration": 8.97,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "dec0cf638a46",
+    "en": "88c0ede4a73f"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.43,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 3.67,
+      "text": "Conduite : B"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.43,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 3.67,
+      "text": "Carry: B"
+     }
+    ]
+   }
+  },
+  "C05-1": {
+   "src": "drill",
+   "duration": 8.46,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "a5570e57b790",
+    "en": "9e23b5022293"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : S → R"
+     },
+     {
+      "n": 2,
+      "t": 2.18,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 3.66,
+      "text": "Conduite : R"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: S → R"
+     },
+     {
+      "n": 2,
+      "t": 2.18,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 3.66,
+      "text": "Carry: R"
+     }
+    ]
+   }
+  },
+  "C06-1": {
+   "src": "drill",
+   "duration": 7.44,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "2bb7505c1848",
+    "en": "06f9abb79de4"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : S → R"
+     },
+     {
+      "n": 2,
+      "t": 2.21,
+      "text": "Conduite : R"
+     },
+     {
+      "n": 3,
+      "t": 4.12,
+      "text": "Passe : R"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: S → R"
+     },
+     {
+      "n": 2,
+      "t": 2.21,
+      "text": "Carry: R"
+     },
+     {
+      "n": 3,
+      "t": 4.12,
+      "text": "Pass: R"
+     }
+    ]
+   }
+  },
+  "C07-1": {
+   "src": "drill",
+   "duration": 9.74,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "26deb9da1716",
+    "en": "64cda128abe6"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : A"
+     },
+     {
+      "n": 2,
+      "t": 3.22,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.44,
+      "text": "Conduite : A"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry: A"
+     },
+     {
+      "n": 2,
+      "t": 3.22,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.44,
+      "text": "Carry: A"
+     }
+    ]
+   }
+  },
+  "C07-2": {
+   "src": "drill",
+   "duration": 11.24,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "76d8b8598b44",
+    "en": "2703429a8590"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : A"
+     },
+     {
+      "n": 2,
+      "t": 3.22,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.41,
+      "text": "Appel : P"
+     },
+     {
+      "n": 4,
+      "t": 5.66,
+      "text": "Passe : A → P"
+     },
+     {
+      "n": 5,
+      "t": 7.12,
+      "text": "Conduite : P"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry: A"
+     },
+     {
+      "n": 2,
+      "t": 3.22,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.41,
+      "text": "Run: P"
+     },
+     {
+      "n": 4,
+      "t": 5.66,
+      "text": "Pass: A → P"
+     },
+     {
+      "n": 5,
+      "t": 7.12,
+      "text": "Carry: P"
+     }
+    ]
+   }
+  },
+  "C08-1": {
+   "src": "drill",
+   "duration": 10.75,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "f0b4962b2212",
+    "en": "a07bb4d22202"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : A"
+     },
+     {
+      "n": 2,
+      "t": 3.72,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.94,
+      "text": "Appel : B"
+     },
+     {
+      "n": 4,
+      "t": 6.15,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 5,
+      "t": 7.86,
+      "text": "Frappe : B"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry: A"
+     },
+     {
+      "n": 2,
+      "t": 3.72,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.94,
+      "text": "Run: B"
+     },
+     {
+      "n": 4,
+      "t": 6.15,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 5,
+      "t": 7.86,
+      "text": "Shot: B"
+     }
+    ]
+   }
+  },
+  "C09-1": {
+   "src": "drill",
+   "duration": 6.6,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "ae1441b4c1cd",
+    "en": "a9bac9ae1c62"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe → A"
+     },
+     {
+      "n": 2,
+      "t": 1.98,
+      "text": "Conduite : A"
+     },
+     {
+      "n": 3,
+      "t": 3.5,
+      "text": "Passe : A"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass → A"
+     },
+     {
+      "n": 2,
+      "t": 1.98,
+      "text": "Carry: A"
+     },
+     {
+      "n": 3,
+      "t": 3.5,
+      "text": "Pass: A"
+     }
+    ]
+   }
+  },
+  "C10-1": {
+   "src": "drill",
+   "duration": 9.79,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "95cf9f5a47ae",
+    "en": "0bfd0063daf0"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : A"
+     },
+     {
+      "n": 2,
+      "t": 3.02,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 3,
+      "t": 4.37,
+      "text": "Appel : A"
+     },
+     {
+      "n": 4,
+      "t": 5.09,
+      "text": "Passe : B → A"
+     },
+     {
+      "n": 5,
+      "t": 6.67,
+      "text": "Frappe : A"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry: A"
+     },
+     {
+      "n": 2,
+      "t": 3.02,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 3,
+      "t": 4.37,
+      "text": "Run: A"
+     },
+     {
+      "n": 4,
+      "t": 5.09,
+      "text": "Pass: B → A"
+     },
+     {
+      "n": 5,
+      "t": 6.67,
+      "text": "Shot: A"
+     }
+    ]
+   }
+  },
+  "C10-2": {
+   "src": "drill",
+   "duration": 8.36,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "585eba8acb60",
+    "en": "259f81c1d5ec"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.5,
+      "text": "Appel : A"
+     },
+     {
+      "n": 3,
+      "t": 3.94,
+      "text": "Passe : B → A"
+     },
+     {
+      "n": 4,
+      "t": 5.42,
+      "text": "Frappe : A"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.5,
+      "text": "Run: A"
+     },
+     {
+      "n": 3,
+      "t": 3.94,
+      "text": "Pass: B → A"
+     },
+     {
+      "n": 4,
+      "t": 5.42,
+      "text": "Shot: A"
+     }
+    ]
+   }
+  },
+  "C11-1": {
+   "src": "drill",
+   "duration": 9.38,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "c26f42cd095c",
+    "en": "9095841bd336"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 7"
+     },
+     {
+      "n": 2,
+      "t": 4.06,
+      "text": "Appel : 9"
+     },
+     {
+      "n": 3,
+      "t": 4.77,
+      "text": "Passe : 7 → 9"
+     },
+     {
+      "n": 4,
+      "t": 6.35,
+      "text": "Frappe : 9"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry: 7"
+     },
+     {
+      "n": 2,
+      "t": 4.06,
+      "text": "Run: 9"
+     },
+     {
+      "n": 3,
+      "t": 4.77,
+      "text": "Pass: 7 → 9"
+     },
+     {
+      "n": 4,
+      "t": 6.35,
+      "text": "Shot: 9"
+     }
+    ]
+   }
+  },
+  "C11-2": {
+   "src": "drill",
+   "duration": 7.74,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "e9f0e52b6901",
+    "en": "b3c564881ec8"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 9"
+     },
+     {
+      "n": 2,
+      "t": 2.46,
+      "text": "Appel : 8"
+     },
+     {
+      "n": 3,
+      "t": 3.22,
+      "text": "Passe : 9 → 8"
+     },
+     {
+      "n": 4,
+      "t": 4.42,
+      "text": "Frappe : 8"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 6 → 9"
+     },
+     {
+      "n": 2,
+      "t": 2.46,
+      "text": "Run: 8"
+     },
+     {
+      "n": 3,
+      "t": 3.22,
+      "text": "Pass: 9 → 8"
+     },
+     {
+      "n": 4,
+      "t": 4.42,
+      "text": "Shot: 8"
+     }
+    ]
+   }
+  },
+  "C12-1": {
+   "src": "drill",
+   "duration": 11.87,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "57f39dda90c8",
+    "en": "5df78d450e22"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : E → 1"
+     },
+     {
+      "n": 2,
+      "t": 2.97,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.88,
+      "text": "Passe : 1 → 4"
+     },
+     {
+      "n": 4,
+      "t": 6.57,
+      "text": "Conduite : 4"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: E → 1"
+     },
+     {
+      "n": 2,
+      "t": 2.97,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.88,
+      "text": "Pass: 1 → 4"
+     },
+     {
+      "n": 4,
+      "t": 6.57,
+      "text": "Carry: 4"
+     }
+    ]
+   }
+  },
+  "C13-1": {
+   "src": "drill",
+   "duration": 9.97,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "a6a9dc20ce14",
+    "en": "5f69c27319c2"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.46,
+      "text": "Appel : C"
+     },
+     {
+      "n": 3,
+      "t": 3.81,
+      "text": "Passe : B → C"
+     },
+     {
+      "n": 4,
+      "t": 5.06,
+      "text": "Conduite : C"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.46,
+      "text": "Run: C"
+     },
+     {
+      "n": 3,
+      "t": 3.81,
+      "text": "Pass: B → C"
+     },
+     {
+      "n": 4,
+      "t": 5.06,
+      "text": "Carry: C"
+     }
+    ]
+   }
+  },
+  "C13-2": {
+   "src": "drill",
+   "duration": 9.53,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "fc5e9b6f59ae",
+    "en": "04fcfcf4be7e"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.46,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 3.66,
+      "text": "Appel : C"
+     },
+     {
+      "n": 4,
+      "t": 5.14,
+      "text": "Passe : B → C"
+     },
+     {
+      "n": 5,
+      "t": 6.52,
+      "text": "Frappe : C"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.46,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 3.66,
+      "text": "Run: C"
+     },
+     {
+      "n": 4,
+      "t": 5.14,
+      "text": "Pass: B → C"
+     },
+     {
+      "n": 5,
+      "t": 6.52,
+      "text": "Shot: C"
+     }
+    ]
+   }
+  },
+  "C14-1": {
+   "src": "drill",
+   "duration": 6.99,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "b24a32453b35",
+    "en": "822ca7c9ef53"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : S → R"
+     },
+     {
+      "n": 2,
+      "t": 2.18,
+      "text": "Conduite : R"
+     },
+     {
+      "n": 3,
+      "t": 3.81,
+      "text": "Passe : R → T"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: S → R"
+     },
+     {
+      "n": 2,
+      "t": 2.18,
+      "text": "Carry: R"
+     },
+     {
+      "n": 3,
+      "t": 3.81,
+      "text": "Pass: R → T"
+     }
+    ]
+   }
+  },
+  "F01-1": {
+   "src": "drill",
+   "duration": 10.89,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "8deaa99ef4c7",
+    "en": "81fb6072ed46"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.86,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.82,
+      "text": "Passe : 5 → 6"
+     },
+     {
+      "n": 4,
+      "t": 7.02,
+      "text": "Passe : 6 → 8"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.86,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.82,
+      "text": "Pass: 5 → 6"
+     },
+     {
+      "n": 4,
+      "t": 7.02,
+      "text": "Pass: 6 → 8"
+     }
+    ]
+   }
+  },
+  "F01-2": {
+   "src": "drill",
+   "duration": 13.11,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "14fddff2acb2",
+    "en": "e4a4b1aa1db0"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression"
+     },
+     {
+      "n": 2,
+      "t": 2.75,
+      "text": "Passe : 4 → 1"
+     },
+     {
+      "n": 3,
+      "t": 4.71,
+      "text": "Pression"
+     },
+     {
+      "n": 4,
+      "t": 6.95,
+      "text": "Passe : 1 → 5"
+     },
+     {
+      "n": 5,
+      "t": 8.91,
+      "text": "Passe : 5 → 2"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Press"
+     },
+     {
+      "n": 2,
+      "t": 2.75,
+      "text": "Pass: 4 → 1"
+     },
+     {
+      "n": 3,
+      "t": 4.71,
+      "text": "Press"
+     },
+     {
+      "n": 4,
+      "t": 6.95,
+      "text": "Pass: 1 → 5"
+     },
+     {
+      "n": 5,
+      "t": 8.91,
+      "text": "Pass: 5 → 2"
+     }
+    ]
+   }
+  },
+  "F02-1": {
+   "src": "drill",
+   "duration": 14.11,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "1d18bcd20ff4",
+    "en": "d12be555dafb"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.57,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.7,
+      "text": "Passe : 5 → 2"
+     },
+     {
+      "n": 4,
+      "t": 6.59,
+      "text": "Passe : 2 → 7"
+     },
+     {
+      "n": 5,
+      "t": 8.81,
+      "text": "Conduite : 7"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.57,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.7,
+      "text": "Pass: 5 → 2"
+     },
+     {
+      "n": 4,
+      "t": 6.59,
+      "text": "Pass: 2 → 7"
+     },
+     {
+      "n": 5,
+      "t": 8.81,
+      "text": "Carry: 7"
+     }
+    ]
+   }
+  },
+  "F03-1": {
+   "src": "drill",
+   "duration": 12.36,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "d96ebf3486a9",
+    "en": "7881b705600b"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 2 → 7"
+     },
+     {
+      "n": 2,
+      "t": 2.64,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.36,
+      "text": "Appel : 8"
+     },
+     {
+      "n": 4,
+      "t": 5.33,
+      "text": "Passe : 7 → 8"
+     },
+     {
+      "n": 5,
+      "t": 7.28,
+      "text": "Passe : 8 → 10"
+     },
+     {
+      "n": 6,
+      "t": 9.23,
+      "text": "Frappe : 10"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 2 → 7"
+     },
+     {
+      "n": 2,
+      "t": 2.64,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.36,
+      "text": "Run: 8"
+     },
+     {
+      "n": 4,
+      "t": 5.33,
+      "text": "Pass: 7 → 8"
+     },
+     {
+      "n": 5,
+      "t": 7.28,
+      "text": "Pass: 8 → 10"
+     },
+     {
+      "n": 6,
+      "t": 9.23,
+      "text": "Shot: 10"
+     }
+    ]
+   }
+  },
+  "F04-1": {
+   "src": "drill",
+   "duration": 12.85,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "9d11e7cff1ea",
+    "en": "1778750e3dbc"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 3 → 10"
+     },
+     {
+      "n": 2,
+      "t": 2.85,
+      "text": "Passe : 10 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.72,
+      "text": "Passe : 6 → 7"
+     },
+     {
+      "n": 4,
+      "t": 6.94,
+      "text": "Appel : 2"
+     },
+     {
+      "n": 5,
+      "t": 7.94,
+      "text": "Passe : 7 → 2"
+     },
+     {
+      "n": 6,
+      "t": 9.65,
+      "text": "Frappe : 2"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 3 → 10"
+     },
+     {
+      "n": 2,
+      "t": 2.85,
+      "text": "Pass: 10 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.72,
+      "text": "Pass: 6 → 7"
+     },
+     {
+      "n": 4,
+      "t": 6.94,
+      "text": "Run: 2"
+     },
+     {
+      "n": 5,
+      "t": 7.94,
+      "text": "Pass: 7 → 2"
+     },
+     {
+      "n": 6,
+      "t": 9.65,
+      "text": "Shot: 2"
+     }
+    ]
+   }
+  },
+  "F05-1": {
+   "src": "drill",
+   "duration": 13.06,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "ce5c0311f57f",
+    "en": "b51263d9ebb7"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 10"
+     },
+     {
+      "n": 2,
+      "t": 2.92,
+      "text": "Passe : 10 → 11"
+     },
+     {
+      "n": 3,
+      "t": 4.91,
+      "text": "Appel : 10"
+     },
+     {
+      "n": 4,
+      "t": 5.8,
+      "text": "Passe : 11 → 10"
+     },
+     {
+      "n": 5,
+      "t": 7.83,
+      "text": "Passe : 10 → 8"
+     },
+     {
+      "n": 6,
+      "t": 9.94,
+      "text": "Frappe : 8"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 6 → 10"
+     },
+     {
+      "n": 2,
+      "t": 2.92,
+      "text": "Pass: 10 → 11"
+     },
+     {
+      "n": 3,
+      "t": 4.91,
+      "text": "Run: 10"
+     },
+     {
+      "n": 4,
+      "t": 5.8,
+      "text": "Pass: 11 → 10"
+     },
+     {
+      "n": 5,
+      "t": 7.83,
+      "text": "Pass: 10 → 8"
+     },
+     {
+      "n": 6,
+      "t": 9.94,
+      "text": "Shot: 8"
+     }
+    ]
+   }
+  },
+  "F06-1": {
+   "src": "drill",
+   "duration": 11.47,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "0a16fdd6a14b",
+    "en": "0f791f4ad4fe"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 10"
+     },
+     {
+      "n": 2,
+      "t": 2.7,
+      "text": "Passe : 10 → 11"
+     },
+     {
+      "n": 3,
+      "t": 4.58,
+      "text": "Conduite : 11"
+     },
+     {
+      "n": 4,
+      "t": 7.49,
+      "text": "Appel : 9"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 6 → 10"
+     },
+     {
+      "n": 2,
+      "t": 2.7,
+      "text": "Pass: 10 → 11"
+     },
+     {
+      "n": 3,
+      "t": 4.58,
+      "text": "Carry: 11"
+     },
+     {
+      "n": 4,
+      "t": 7.49,
+      "text": "Run: 9"
+     }
+    ]
+   }
+  },
+  "F06-2": {
+   "src": "drill",
+   "duration": 13.38,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "b8c00f80abb5",
+    "en": "98abf67464c5"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression : 8"
+     },
+     {
+      "n": 2,
+      "t": 3.11,
+      "text": "Pression : 10"
+     },
+     {
+      "n": 3,
+      "t": 5.18,
+      "text": "Passe"
+     },
+     {
+      "n": 4,
+      "t": 7.4,
+      "text": "Pression : 2"
+     },
+     {
+      "n": 5,
+      "t": 9.33,
+      "text": "Appel : 5"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Press: 8"
+     },
+     {
+      "n": 2,
+      "t": 3.11,
+      "text": "Press: 10"
+     },
+     {
+      "n": 3,
+      "t": 5.18,
+      "text": "Pass"
+     },
+     {
+      "n": 4,
+      "t": 7.4,
+      "text": "Press: 2"
+     },
+     {
+      "n": 5,
+      "t": 9.33,
+      "text": "Run: 5"
+     }
+    ]
+   }
+  },
+  "G01-1": {
+   "src": "drill",
+   "duration": 12.57,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "ebac2340c5aa",
+    "en": "ccc982f84faf"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 2 → 7"
+     },
+     {
+      "n": 2,
+      "t": 2.47,
+      "text": "Appel : 8"
+     },
+     {
+      "n": 3,
+      "t": 3.3,
+      "text": "Passe : 7 → 8"
+     },
+     {
+      "n": 4,
+      "t": 5.39,
+      "text": "Appel : 9"
+     },
+     {
+      "n": 5,
+      "t": 7.74,
+      "text": "Appel : 10"
+     },
+     {
+      "n": 6,
+      "t": 8.73,
+      "text": "Passe : 8 → 10"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 2 → 7"
+     },
+     {
+      "n": 2,
+      "t": 2.47,
+      "text": "Run: 8"
+     },
+     {
+      "n": 3,
+      "t": 3.3,
+      "text": "Pass: 7 → 8"
+     },
+     {
+      "n": 4,
+      "t": 5.39,
+      "text": "Run: 9"
+     },
+     {
+      "n": 5,
+      "t": 7.74,
+      "text": "Run: 10"
+     },
+     {
+      "n": 6,
+      "t": 8.73,
+      "text": "Pass: 8 → 10"
+     }
+    ]
+   }
+  },
+  "G02-1": {
+   "src": "drill",
+   "duration": 11.02,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "08b258518c79",
+    "en": "474a5a781825"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 8"
+     },
+     {
+      "n": 2,
+      "t": 3.52,
+      "text": "Passe : 8 → 7"
+     },
+     {
+      "n": 3,
+      "t": 5.17,
+      "text": "Appel : 8"
+     },
+     {
+      "n": 4,
+      "t": 5.96,
+      "text": "Passe : 7 → 8"
+     },
+     {
+      "n": 5,
+      "t": 7.82,
+      "text": "Frappe : 8"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry: 8"
+     },
+     {
+      "n": 2,
+      "t": 3.52,
+      "text": "Pass: 8 → 7"
+     },
+     {
+      "n": 3,
+      "t": 5.17,
+      "text": "Run: 8"
+     },
+     {
+      "n": 4,
+      "t": 5.96,
+      "text": "Pass: 7 → 8"
+     },
+     {
+      "n": 5,
+      "t": 7.82,
+      "text": "Shot: 8"
+     }
+    ]
+   }
+  },
+  "G02-2": {
+   "src": "drill",
+   "duration": 14.04,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "108218416610",
+    "en": "c5dce8241906"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 8"
+     },
+     {
+      "n": 2,
+      "t": 3.52,
+      "text": "Appel : 7"
+     },
+     {
+      "n": 3,
+      "t": 6.44,
+      "text": "Pression"
+     },
+     {
+      "n": 4,
+      "t": 7.92,
+      "text": "Conduite : 8"
+     },
+     {
+      "n": 5,
+      "t": 10.84,
+      "text": "Frappe : 8"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry: 8"
+     },
+     {
+      "n": 2,
+      "t": 3.52,
+      "text": "Run: 7"
+     },
+     {
+      "n": 3,
+      "t": 6.44,
+      "text": "Press"
+     },
+     {
+      "n": 4,
+      "t": 7.92,
+      "text": "Carry: 8"
+     },
+     {
+      "n": 5,
+      "t": 10.84,
+      "text": "Shot: 8"
+     }
+    ]
+   }
+  },
+  "G03-1": {
+   "src": "drill",
+   "duration": 8.47,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "edfaa6f23099",
+    "en": "8b8d181fe033"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 9"
+     },
+     {
+      "n": 2,
+      "t": 2.9,
+      "text": "Appel : 8"
+     },
+     {
+      "n": 3,
+      "t": 3.77,
+      "text": "Passe : 9 → 8"
+     },
+     {
+      "n": 4,
+      "t": 5.12,
+      "text": "Frappe : 8"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 6 → 9"
+     },
+     {
+      "n": 2,
+      "t": 2.9,
+      "text": "Run: 8"
+     },
+     {
+      "n": 3,
+      "t": 3.77,
+      "text": "Pass: 9 → 8"
+     },
+     {
+      "n": 4,
+      "t": 5.12,
+      "text": "Shot: 8"
+     }
+    ]
+   }
+  },
+  "G03-2": {
+   "src": "drill",
+   "duration": 10.06,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "0558f46d4f08",
+    "en": "920d2dc8b8ea"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 9"
+     },
+     {
+      "n": 2,
+      "t": 2.9,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.42,
+      "text": "Appel : 10"
+     },
+     {
+      "n": 4,
+      "t": 5.41,
+      "text": "Passe : 9 → 10"
+     },
+     {
+      "n": 5,
+      "t": 6.71,
+      "text": "Frappe : 10"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 6 → 9"
+     },
+     {
+      "n": 2,
+      "t": 2.9,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.42,
+      "text": "Run: 10"
+     },
+     {
+      "n": 4,
+      "t": 5.41,
+      "text": "Pass: 9 → 10"
+     },
+     {
+      "n": 5,
+      "t": 6.71,
+      "text": "Shot: 10"
+     }
+    ]
+   }
+  },
+  "G04-1": {
+   "src": "drill",
+   "duration": 13.19,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "417f7531f71c",
+    "en": "2fcf1de7d04f"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 2 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.55,
+      "text": "Passe : 8 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.46,
+      "text": "Passe : 6 → 11"
+     },
+     {
+      "n": 4,
+      "t": 6.68,
+      "text": "Conduite : 11"
+     },
+     {
+      "n": 5,
+      "t": 10,
+      "text": "Frappe : 11"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 2 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.55,
+      "text": "Pass: 8 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.46,
+      "text": "Pass: 6 → 11"
+     },
+     {
+      "n": 4,
+      "t": 6.68,
+      "text": "Carry: 11"
+     },
+     {
+      "n": 5,
+      "t": 10,
+      "text": "Shot: 11"
+     }
+    ]
+   }
+  },
+  "G05-1": {
+   "src": "drill",
+   "duration": 7.78,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "92e094bb6258",
+    "en": "f1bee52d6575"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.44,
+      "text": "Appel : 10"
+     },
+     {
+      "n": 3,
+      "t": 2.94,
+      "text": "Passe : 8 → 10"
+     },
+     {
+      "n": 4,
+      "t": 4.77,
+      "text": "Frappe : 10"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.44,
+      "text": "Run: 10"
+     },
+     {
+      "n": 3,
+      "t": 2.94,
+      "text": "Pass: 8 → 10"
+     },
+     {
+      "n": 4,
+      "t": 4.77,
+      "text": "Shot: 10"
+     }
+    ]
+   }
+  },
+  "G06-1": {
+   "src": "drill",
+   "duration": 12.88,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "8f8565792adb",
+    "en": "a8a4b5ac6505"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 4"
+     },
+     {
+      "n": 2,
+      "t": 2.62,
+      "text": "Passe : 4 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.6,
+      "text": "Passe : 6 → 8"
+     },
+     {
+      "n": 4,
+      "t": 6.63,
+      "text": "Passe : 8 → 3"
+     },
+     {
+      "n": 5,
+      "t": 8.68,
+      "text": "Passe : 3 → 11"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 1 → 4"
+     },
+     {
+      "n": 2,
+      "t": 2.62,
+      "text": "Pass: 4 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.6,
+      "text": "Pass: 6 → 8"
+     },
+     {
+      "n": 4,
+      "t": 6.63,
+      "text": "Pass: 8 → 3"
+     },
+     {
+      "n": 5,
+      "t": 8.68,
+      "text": "Pass: 3 → 11"
+     }
+    ]
+   }
+  },
+  "G06-2": {
+   "src": "drill",
+   "duration": 15.43,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "38cdc528c0ba",
+    "en": "209b54f18960"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 6,
+      "t": 0.9,
+      "text": "Passe : 11 → 10"
+     },
+     {
+      "n": 7,
+      "t": 2.9,
+      "text": "Passe : 10 → 8"
+     },
+     {
+      "n": 8,
+      "t": 5.04,
+      "text": "Passe : 8 → 7"
+     },
+     {
+      "n": 9,
+      "t": 7.21,
+      "text": "Conduite : 7"
+     },
+     {
+      "n": 10,
+      "t": 10.53,
+      "text": "Passe : 7 → 9"
+     },
+     {
+      "n": 11,
+      "t": 12.33,
+      "text": "Frappe : 9"
+     }
+    ],
+    "en": [
+     {
+      "n": 6,
+      "t": 0.9,
+      "text": "Pass: 11 → 10"
+     },
+     {
+      "n": 7,
+      "t": 2.9,
+      "text": "Pass: 10 → 8"
+     },
+     {
+      "n": 8,
+      "t": 5.04,
+      "text": "Pass: 8 → 7"
+     },
+     {
+      "n": 9,
+      "t": 7.21,
+      "text": "Carry: 7"
+     },
+     {
+      "n": 10,
+      "t": 10.53,
+      "text": "Pass: 7 → 9"
+     },
+     {
+      "n": 11,
+      "t": 12.33,
+      "text": "Shot: 9"
+     }
+    ]
+   }
+  },
+  "L01-1": {
+   "src": "drill",
+   "duration": 12.95,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "02972aad6708",
+    "en": "b11490987350"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 8 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.61,
+      "text": "Passe : 6 → 7"
+     },
+     {
+      "n": 3,
+      "t": 4.83,
+      "text": "Conduite : 7"
+     },
+     {
+      "n": 4,
+      "t": 8.05,
+      "text": "Appel : 9"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 8 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.61,
+      "text": "Pass: 6 → 7"
+     },
+     {
+      "n": 3,
+      "t": 4.83,
+      "text": "Carry: 7"
+     },
+     {
+      "n": 4,
+      "t": 8.05,
+      "text": "Run: 9"
+     }
+    ]
+   }
+  },
+  "L02-1": {
+   "src": "drill",
+   "duration": 10.86,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "8da48ce0fd7b",
+    "en": "6ef97acbf903"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 5 → 6"
+     },
+     {
+      "n": 2,
+      "t": 3.03,
+      "text": "Passe : 6 → 10"
+     },
+     {
+      "n": 3,
+      "t": 4.79,
+      "text": "Appel : 11"
+     },
+     {
+      "n": 4,
+      "t": 5.49,
+      "text": "Passe : 10 → 11"
+     },
+     {
+      "n": 5,
+      "t": 7.71,
+      "text": "Frappe : 11"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 5 → 6"
+     },
+     {
+      "n": 2,
+      "t": 3.03,
+      "text": "Pass: 6 → 10"
+     },
+     {
+      "n": 3,
+      "t": 4.79,
+      "text": "Run: 11"
+     },
+     {
+      "n": 4,
+      "t": 5.49,
+      "text": "Pass: 10 → 11"
+     },
+     {
+      "n": 5,
+      "t": 7.71,
+      "text": "Shot: 11"
+     }
+    ]
+   }
+  },
+  "L03-1": {
+   "src": "drill",
+   "duration": 12.12,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "0900d9584e21",
+    "en": "db7e0cee19a6"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.71,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.6,
+      "text": "Passe : 5 → 8"
+     },
+     {
+      "n": 4,
+      "t": 6.82,
+      "text": "Conduite : 8"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.71,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.6,
+      "text": "Pass: 5 → 8"
+     },
+     {
+      "n": 4,
+      "t": 6.82,
+      "text": "Carry: 8"
+     }
+    ]
+   }
+  },
+  "L03-2": {
+   "src": "drill",
+   "duration": 13.03,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "133ac2a65ee7",
+    "en": "ffe0919a65fc"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 5 → 2"
+     },
+     {
+      "n": 2,
+      "t": 3.02,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 5.06,
+      "text": "Pression"
+     },
+     {
+      "n": 4,
+      "t": 7.58,
+      "text": "Passe"
+     },
+     {
+      "n": 5,
+      "t": 9.8,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 5 → 2"
+     },
+     {
+      "n": 2,
+      "t": 3.02,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 5.06,
+      "text": "Press"
+     },
+     {
+      "n": 4,
+      "t": 7.58,
+      "text": "Pass"
+     },
+     {
+      "n": 5,
+      "t": 9.8,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "L04-1": {
+   "src": "drill",
+   "duration": 11.19,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "52be66aa7538",
+    "en": "08aa82654064"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.98,
+      "text": "Passe : 8 → 11"
+     },
+     {
+      "n": 3,
+      "t": 4.86,
+      "text": "Appel : 9"
+     },
+     {
+      "n": 4,
+      "t": 6.93,
+      "text": "Appel : 10"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 6 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.98,
+      "text": "Pass: 8 → 11"
+     },
+     {
+      "n": 3,
+      "t": 4.86,
+      "text": "Run: 9"
+     },
+     {
+      "n": 4,
+      "t": 6.93,
+      "text": "Run: 10"
+     }
+    ]
+   }
+  },
+  "L04-2": {
+   "src": "drill",
+   "duration": 10.87,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "2317b1c56661",
+    "en": "3faf075c8775"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.62,
+      "text": "Passe : 5 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.51,
+      "text": "Passe : 6 → 8"
+     },
+     {
+      "n": 4,
+      "t": 6.67,
+      "text": "Passe : 8 → 9"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.62,
+      "text": "Pass: 5 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.51,
+      "text": "Pass: 6 → 8"
+     },
+     {
+      "n": 4,
+      "t": 6.67,
+      "text": "Pass: 8 → 9"
+     }
+    ]
+   }
+  },
+  "L05-1": {
+   "src": "drill",
+   "duration": 11.44,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "34a7dabedad2",
+    "en": "de9f476f320e"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 11 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.76,
+      "text": "Passe : 8 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.55,
+      "text": "Passe : 6 → 7"
+     },
+     {
+      "n": 4,
+      "t": 6.77,
+      "text": "Appel : 9"
+     },
+     {
+      "n": 5,
+      "t": 7.27,
+      "text": "Passe : 7 → 9"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 11 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.76,
+      "text": "Pass: 8 → 6"
+     },
+     {
+      "n": 3,
+      "t": 4.55,
+      "text": "Pass: 6 → 7"
+     },
+     {
+      "n": 4,
+      "t": 6.77,
+      "text": "Run: 9"
+     },
+     {
+      "n": 5,
+      "t": 7.27,
+      "text": "Pass: 7 → 9"
+     }
+    ]
+   }
+  },
+  "L06-1": {
+   "src": "drill",
+   "duration": 11.6,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "a62b6b3d3af1",
+    "en": "694cffd7e056"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 3 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.7,
+      "text": "Passe : 8 → 10"
+     },
+     {
+      "n": 3,
+      "t": 4.77,
+      "text": "Passe : 10 → 7"
+     },
+     {
+      "n": 4,
+      "t": 6.87,
+      "text": "Appel : 2"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 3 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.7,
+      "text": "Pass: 8 → 10"
+     },
+     {
+      "n": 3,
+      "t": 4.77,
+      "text": "Pass: 10 → 7"
+     },
+     {
+      "n": 4,
+      "t": 6.87,
+      "text": "Run: 2"
+     }
+    ]
+   }
+  },
+  "L06-2": {
+   "src": "drill",
+   "duration": 12.73,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "a803046a85f1",
+    "en": "21464f4004f8"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression : 10"
+     },
+     {
+      "n": 2,
+      "t": 2.97,
+      "text": "Pression : 9"
+     },
+     {
+      "n": 3,
+      "t": 5.49,
+      "text": "Pression : 7"
+     },
+     {
+      "n": 4,
+      "t": 7.83,
+      "text": "Appel : 6"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Press: 10"
+     },
+     {
+      "n": 2,
+      "t": 2.97,
+      "text": "Press: 9"
+     },
+     {
+      "n": 3,
+      "t": 5.49,
+      "text": "Press: 7"
+     },
+     {
+      "n": 4,
+      "t": 7.83,
+      "text": "Run: 6"
+     }
+    ]
+   }
+  },
+  "P01-1": {
+   "src": "drill",
+   "duration": 7.83,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "5026f033853e",
+    "en": "ad5b91ffe125"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.41,
+      "text": "Passe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.41,
+      "text": "Pass"
+     }
+    ]
+   }
+  },
+  "P02-1": {
+   "src": "drill",
+   "duration": 7.73,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "f8a969541461",
+    "en": "fbd0afeea9ad"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.54,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.31,
+      "text": "Passe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.54,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.31,
+      "text": "Pass"
+     }
+    ]
+   }
+  },
+  "P03-1": {
+   "src": "drill",
+   "duration": 7.5,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "f3814c9c309c",
+    "en": "2a35ae5a553b"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.3,
+      "text": "Passe : B → C"
+     },
+     {
+      "n": 3,
+      "t": 3.71,
+      "text": "Passe : C → D"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: A → B"
+     },
+     {
+      "n": 2,
+      "t": 2.3,
+      "text": "Pass: B → C"
+     },
+     {
+      "n": 3,
+      "t": 3.71,
+      "text": "Pass: C → D"
+     }
+    ]
+   }
+  },
+  "P04-1": {
+   "src": "drill",
+   "duration": 8.5,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "cd2e1f3bcec3",
+    "en": "ea4878db753d"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.3,
+      "text": "Passe : 5 → 6"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 4.3,
+      "text": "Pass: 5 → 6"
+     }
+    ]
+   }
+  },
+  "P05-1": {
+   "src": "drill",
+   "duration": 8.18,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "e72d30cd554a",
+    "en": "9e77bcbb7c65"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.5,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.3,
+      "text": "Passe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.5,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.3,
+      "text": "Pass"
+     }
+    ]
+   }
+  },
+  "P06-1": {
+   "src": "drill",
+   "duration": 8.41,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "fc2c158d8bfb",
+    "en": "1c79477e021d"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 5 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.54,
+      "text": "Passe : 6 → 8"
+     },
+     {
+      "n": 3,
+      "t": 4.28,
+      "text": "Passe : 8"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 5 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.54,
+      "text": "Pass: 6 → 8"
+     },
+     {
+      "n": 3,
+      "t": 4.28,
+      "text": "Pass: 8"
+     }
+    ]
+   }
+  },
+  "P07-1": {
+   "src": "drill",
+   "duration": 9.47,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "9401f21e9384",
+    "en": "86d8f8c85c51"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite"
+     },
+     {
+      "n": 2,
+      "t": 2.82,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.25,
+      "text": "Passe"
+     },
+     {
+      "n": 4,
+      "t": 6.35,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry"
+     },
+     {
+      "n": 2,
+      "t": 2.82,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.25,
+      "text": "Pass"
+     },
+     {
+      "n": 4,
+      "t": 6.35,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "P08-1": {
+   "src": "drill",
+   "duration": 6.85,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "8876fb7e38ba",
+    "en": "2a91b2d132b6"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel"
+     },
+     {
+      "n": 2,
+      "t": 1.98,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 3.82,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Run"
+     },
+     {
+      "n": 2,
+      "t": 1.98,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 3.82,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "P08-2": {
+   "src": "drill",
+   "duration": 11.14,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "cd274ed93084",
+    "en": "c7127a696bd6"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Passe → Q"
+     },
+     {
+      "n": 3,
+      "t": 4.7,
+      "text": "Conduite : Q"
+     },
+     {
+      "n": 4,
+      "t": 8,
+      "text": "Frappe : Q"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Pass → Q"
+     },
+     {
+      "n": 3,
+      "t": 4.7,
+      "text": "Carry: Q"
+     },
+     {
+      "n": 4,
+      "t": 8,
+      "text": "Shot: Q"
+     }
+    ]
+   }
+  },
+  "P09-1": {
+   "src": "drill",
+   "duration": 9.89,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "f29a9de45f9d",
+    "en": "9c7a92f260e0"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.77,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.35,
+      "text": "Passe"
+     },
+     {
+      "n": 4,
+      "t": 6.34,
+      "text": "Passe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.77,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.35,
+      "text": "Pass"
+     },
+     {
+      "n": 4,
+      "t": 6.34,
+      "text": "Pass"
+     }
+    ]
+   }
+  },
+  "P10-1": {
+   "src": "drill",
+   "duration": 9.45,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "73ff2c4f1dc4",
+    "en": "16cbc3edbfd5"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.62,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.19,
+      "text": "Passe"
+     },
+     {
+      "n": 4,
+      "t": 5.75,
+      "text": "Passe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.62,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.19,
+      "text": "Pass"
+     },
+     {
+      "n": 4,
+      "t": 5.75,
+      "text": "Pass"
+     }
+    ]
+   }
+  },
+  "R01-1": {
+   "src": "drill",
+   "duration": 6.86,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "ae9018410b91",
+    "en": "346eb6c6d88b"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression : T"
+     },
+     {
+      "n": 2,
+      "t": 2.02,
+      "text": "Appel"
+     },
+     {
+      "n": 3,
+      "t": 2.32,
+      "text": "Passe"
+     },
+     {
+      "n": 4,
+      "t": 3.53,
+      "text": "Passe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Press: T"
+     },
+     {
+      "n": 2,
+      "t": 2.02,
+      "text": "Run"
+     },
+     {
+      "n": 3,
+      "t": 2.32,
+      "text": "Pass"
+     },
+     {
+      "n": 4,
+      "t": 3.53,
+      "text": "Pass"
+     }
+    ]
+   }
+  },
+  "R02-1": {
+   "src": "drill",
+   "duration": 7.13,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "172ab430be21",
+    "en": "19a8a44e8562"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression"
+     },
+     {
+      "n": 2,
+      "t": 2.27,
+      "text": "Passe : K"
+     },
+     {
+      "n": 3,
+      "t": 3.79,
+      "text": "Passe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Press"
+     },
+     {
+      "n": 2,
+      "t": 2.27,
+      "text": "Pass: K"
+     },
+     {
+      "n": 3,
+      "t": 3.79,
+      "text": "Pass"
+     }
+    ]
+   }
+  },
+  "R03-1": {
+   "src": "drill",
+   "duration": 5.27,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "9c1bd23cd0dd",
+    "en": "22be62db15af"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe → J"
+     },
+     {
+      "n": 2,
+      "t": 2.1,
+      "text": "Passe : J"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass → J"
+     },
+     {
+      "n": 2,
+      "t": 2.1,
+      "text": "Pass: J"
+     }
+    ]
+   }
+  },
+  "R04-1": {
+   "src": "drill",
+   "duration": 8.44,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "e5582130727e",
+    "en": "1ec0627bb9ff"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.16,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 3.83,
+      "text": "Appel"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.16,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 3.83,
+      "text": "Run"
+     }
+    ]
+   }
+  },
+  "R05-1": {
+   "src": "drill",
+   "duration": 7.36,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "b72c74c5ed00",
+    "en": "63e3304d4d2d"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe → R"
+     },
+     {
+      "n": 2,
+      "t": 2.67,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 3.98,
+      "text": "Passe : R"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass → R"
+     },
+     {
+      "n": 2,
+      "t": 2.67,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 3.98,
+      "text": "Pass: R"
+     }
+    ]
+   }
+  },
+  "R06-1": {
+   "src": "drill",
+   "duration": 8.07,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "834b082e7283",
+    "en": "7a11ed2111bb"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel"
+     },
+     {
+      "n": 2,
+      "t": 2.53,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.02,
+      "text": "Appel"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Run"
+     },
+     {
+      "n": 2,
+      "t": 2.53,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.02,
+      "text": "Run"
+     }
+    ]
+   }
+  },
+  "R07-1": {
+   "src": "drill",
+   "duration": 8.34,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "a4113c7561fd",
+    "en": "5ae270e02bed"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 2"
+     },
+     {
+      "n": 2,
+      "t": 2.29,
+      "text": "Passe : 2 → 3"
+     },
+     {
+      "n": 3,
+      "t": 3.7,
+      "text": "Passe : 3 → 4"
+     },
+     {
+      "n": 4,
+      "t": 5.01,
+      "text": "Passe : 4 → 5"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 1 → 2"
+     },
+     {
+      "n": 2,
+      "t": 2.29,
+      "text": "Pass: 2 → 3"
+     },
+     {
+      "n": 3,
+      "t": 3.7,
+      "text": "Pass: 3 → 4"
+     },
+     {
+      "n": 4,
+      "t": 5.01,
+      "text": "Pass: 4 → 5"
+     }
+    ]
+   }
+  },
+  "R08-1": {
+   "src": "drill",
+   "duration": 8.82,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "cd866f88322e",
+    "en": "7ae19a022429"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression"
+     },
+     {
+      "n": 2,
+      "t": 2.33,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 3.79,
+      "text": "Appel"
+     },
+     {
+      "n": 4,
+      "t": 5.34,
+      "text": "Appel"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Press"
+     },
+     {
+      "n": 2,
+      "t": 2.33,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 3.79,
+      "text": "Run"
+     },
+     {
+      "n": 4,
+      "t": 5.34,
+      "text": "Run"
+     }
+    ]
+   }
+  },
+  "S01-1": {
+   "src": "drill",
+   "duration": 8.85,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "6255f906eec7",
+    "en": "cac9057df39d"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.15,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 3.48,
+      "text": "Conduite"
+     },
+     {
+      "n": 4,
+      "t": 6,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.15,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 3.48,
+      "text": "Carry"
+     },
+     {
+      "n": 4,
+      "t": 6,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "S02-1": {
+   "src": "drill",
+   "duration": 7.24,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "cf68ae804f55",
+    "en": "7570bcf8d208"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.4,
+      "text": "Appel"
+     },
+     {
+      "n": 3,
+      "t": 3.12,
+      "text": "Passe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.4,
+      "text": "Run"
+     },
+     {
+      "n": 3,
+      "t": 3.12,
+      "text": "Pass"
+     }
+    ]
+   }
+  },
+  "S03-1": {
+   "src": "drill",
+   "duration": 8.08,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "2fef268a1d4a",
+    "en": "24cf902934f5"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe → A"
+     },
+     {
+      "n": 2,
+      "t": 2.85,
+      "text": "Appel"
+     },
+     {
+      "n": 3,
+      "t": 3.82,
+      "text": "Passe : A"
+     },
+     {
+      "n": 4,
+      "t": 5.19,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass → A"
+     },
+     {
+      "n": 2,
+      "t": 2.85,
+      "text": "Run"
+     },
+     {
+      "n": 3,
+      "t": 3.82,
+      "text": "Pass: A"
+     },
+     {
+      "n": 4,
+      "t": 5.19,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "S04-1": {
+   "src": "drill",
+   "duration": 7.51,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "544deb49a16a",
+    "en": "58723179383d"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite  ·  Pression ×2"
+     },
+     {
+      "n": 2,
+      "t": 2.82,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.44,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry  ·  Press ×2"
+     },
+     {
+      "n": 2,
+      "t": 2.82,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.44,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "S05-1": {
+   "src": "drill",
+   "duration": 8.71,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "36b0216548d8",
+    "en": "51bdb8e3558a"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.27,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 3.77,
+      "text": "Passe"
+     },
+     {
+      "n": 4,
+      "t": 5.61,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.27,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 3.77,
+      "text": "Pass"
+     },
+     {
+      "n": 4,
+      "t": 5.61,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "S06-1": {
+   "src": "drill",
+   "duration": 8.68,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "2fa76050ef4f",
+    "en": "bc522f171d80"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.32,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 3.7,
+      "text": "Conduite"
+     },
+     {
+      "n": 4,
+      "t": 5.86,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.32,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 3.7,
+      "text": "Carry"
+     },
+     {
+      "n": 4,
+      "t": 5.86,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "S07-1": {
+   "src": "drill",
+   "duration": 7.07,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "fde417a9c6e1",
+    "en": "0165be1d0670"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.52,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.07,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.52,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.07,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "S08-1": {
+   "src": "drill",
+   "duration": 7.55,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "1680d048a813",
+    "en": "3401df235f76"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.31,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 3.43,
+      "text": "Passe"
+     },
+     {
+      "n": 4,
+      "t": 4.7,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.31,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 3.43,
+      "text": "Pass"
+     },
+     {
+      "n": 4,
+      "t": 4.7,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "T01-1": {
+   "src": "drill",
+   "duration": 9.96,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "94f493b76fdb",
+    "en": "05ff0fd20fc3"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression"
+     },
+     {
+      "n": 2,
+      "t": 2.35,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 3.86,
+      "text": "Appel"
+     },
+     {
+      "n": 4,
+      "t": 6.04,
+      "text": "Appel"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Press"
+     },
+     {
+      "n": 2,
+      "t": 2.35,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 3.86,
+      "text": "Run"
+     },
+     {
+      "n": 4,
+      "t": 6.04,
+      "text": "Run"
+     }
+    ]
+   }
+  },
+  "T02-1": {
+   "src": "drill",
+   "duration": 11.49,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "88be17ffaa5a",
+    "en": "18fb9b27b08b"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel"
+     },
+     {
+      "n": 2,
+      "t": 1.53,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 3.49,
+      "text": "Appel"
+     },
+     {
+      "n": 4,
+      "t": 6.4,
+      "text": "Pression"
+     },
+     {
+      "n": 5,
+      "t": 8.34,
+      "text": "Frappe"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Run"
+     },
+     {
+      "n": 2,
+      "t": 1.53,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 3.49,
+      "text": "Run"
+     },
+     {
+      "n": 4,
+      "t": 6.4,
+      "text": "Press"
+     },
+     {
+      "n": 5,
+      "t": 8.34,
+      "text": "Shot"
+     }
+    ]
+   }
+  },
+  "T03-1": {
+   "src": "drill",
+   "duration": 10.75,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "c1907f50af8b",
+    "en": "5abf9afb7d12"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Appel"
+     },
+     {
+      "n": 3,
+      "t": 4.53,
+      "text": "Appel"
+     },
+     {
+      "n": 4,
+      "t": 6.51,
+      "text": "Appel"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Run"
+     },
+     {
+      "n": 3,
+      "t": 4.53,
+      "text": "Run"
+     },
+     {
+      "n": 4,
+      "t": 6.51,
+      "text": "Run"
+     }
+    ]
+   }
+  },
+  "T04-1": {
+   "src": "drill",
+   "duration": 15.09,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "bf5af175ba53",
+    "en": "83f46a626376"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 3.03,
+      "text": "Pression : 10"
+     },
+     {
+      "n": 3,
+      "t": 5.55,
+      "text": "Pression : 9"
+     },
+     {
+      "n": 4,
+      "t": 8.07,
+      "text": "Pression : 7"
+     },
+     {
+      "n": 5,
+      "t": 10.59,
+      "text": "Pression : 6"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass"
+     },
+     {
+      "n": 2,
+      "t": 3.03,
+      "text": "Press: 10"
+     },
+     {
+      "n": 3,
+      "t": 5.55,
+      "text": "Press: 9"
+     },
+     {
+      "n": 4,
+      "t": 8.07,
+      "text": "Press: 7"
+     },
+     {
+      "n": 5,
+      "t": 10.59,
+      "text": "Press: 6"
+     }
+    ]
+   }
+  },
+  "T04-2": {
+   "src": "drill",
+   "duration": 8.14,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "0af74e32195d",
+    "en": "b59f09c6249a"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 9"
+     },
+     {
+      "n": 2,
+      "t": 1.41,
+      "text": "Passe : 10 → 9"
+     },
+     {
+      "n": 3,
+      "t": 2.99,
+      "text": "Frappe : 9"
+     },
+     {
+      "n": 4,
+      "t": 3.92,
+      "text": "Appel : 7"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Run: 9"
+     },
+     {
+      "n": 2,
+      "t": 1.41,
+      "text": "Pass: 10 → 9"
+     },
+     {
+      "n": 3,
+      "t": 2.99,
+      "text": "Shot: 9"
+     },
+     {
+      "n": 4,
+      "t": 3.92,
+      "text": "Run: 7"
+     }
+    ]
+   }
+  },
+  "T05-1": {
+   "src": "drill",
+   "duration": 15.61,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "96eec1209bce",
+    "en": "c0f5ff713af1"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 10"
+     },
+     {
+      "n": 2,
+      "t": 4.22,
+      "text": "Appel : 7"
+     },
+     {
+      "n": 3,
+      "t": 7.14,
+      "text": "Appel : 11"
+     },
+     {
+      "n": 4,
+      "t": 10.06,
+      "text": "Passe : 10 → 7"
+     },
+     {
+      "n": 5,
+      "t": 12.26,
+      "text": "Frappe : 7"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry: 10"
+     },
+     {
+      "n": 2,
+      "t": 4.22,
+      "text": "Run: 7"
+     },
+     {
+      "n": 3,
+      "t": 7.14,
+      "text": "Run: 11"
+     },
+     {
+      "n": 4,
+      "t": 10.06,
+      "text": "Pass: 10 → 7"
+     },
+     {
+      "n": 5,
+      "t": 12.26,
+      "text": "Shot: 7"
+     }
+    ]
+   }
+  },
+  "T05-2": {
+   "src": "drill",
+   "duration": 13.01,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "ffee8bdbfb0d",
+    "en": "14bd983358b0"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 10"
+     },
+     {
+      "n": 2,
+      "t": 4.22,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 6.74,
+      "text": "Appel : 11"
+     },
+     {
+      "n": 4,
+      "t": 7.5,
+      "text": "Passe : 10 → 11"
+     },
+     {
+      "n": 5,
+      "t": 9.66,
+      "text": "Frappe : 11"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Carry: 10"
+     },
+     {
+      "n": 2,
+      "t": 4.22,
+      "text": "Press"
+     },
+     {
+      "n": 3,
+      "t": 6.74,
+      "text": "Run: 11"
+     },
+     {
+      "n": 4,
+      "t": 7.5,
+      "text": "Pass: 10 → 11"
+     },
+     {
+      "n": 5,
+      "t": 9.66,
+      "text": "Shot: 11"
+     }
+    ]
+   }
+  },
+  "T06-1": {
+   "src": "drill",
+   "duration": 8.1,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "edc90935b17b",
+    "en": "4665b1226844"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 8 → 7"
+     },
+     {
+      "n": 2,
+      "t": 2.81,
+      "text": "Appel : 9"
+     },
+     {
+      "n": 3,
+      "t": 3.31,
+      "text": "Passe : 7 → 9"
+     },
+     {
+      "n": 4,
+      "t": 5.21,
+      "text": "Frappe : 9"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pass: 8 → 7"
+     },
+     {
+      "n": 2,
+      "t": 2.81,
+      "text": "Run: 9"
+     },
+     {
+      "n": 3,
+      "t": 3.31,
+      "text": "Pass: 7 → 9"
+     },
+     {
+      "n": 4,
+      "t": 5.21,
+      "text": "Shot: 9"
+     }
+    ]
+   }
+  },
+  "T06-2": {
+   "src": "drill",
+   "duration": 14.31,
+   "langs": [
+    "fr",
+    "en"
+   ],
+   "hash": {
+    "fr": "02cda7ebf2ef",
+    "en": "4eb87747177a"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression : 7"
+     },
+     {
+      "n": 2,
+      "t": 2.66,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 4.49,
+      "text": "Conduite"
+     },
+     {
+      "n": 4,
+      "t": 7.81,
+      "text": "Appel"
+     },
+     {
+      "n": 5,
+      "t": 10.73,
+      "text": "Pression : 6"
+     }
+    ],
+    "en": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Press: 7"
+     },
+     {
+      "n": 2,
+      "t": 2.66,
+      "text": "Pass"
+     },
+     {
+      "n": 3,
+      "t": 4.49,
+      "text": "Carry"
+     },
+     {
+      "n": 4,
+      "t": 7.81,
+      "text": "Run"
+     },
+     {
+      "n": 5,
+      "t": 10.73,
+      "text": "Press: 6"
+     }
+    ]
+   }
+  },
+  "code-02-1": {
+   "src": "method",
+   "duration": 12.24,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "e728e5e17146"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.65,
+      "text": "Conduite : 8"
+     },
+     {
+      "n": 3,
+      "t": 4.75,
+      "text": "Passe : 8 → 11"
+     },
+     {
+      "n": 4,
+      "t": 6.94,
+      "text": "Conduite : 11"
+     }
+    ]
+   }
+  },
+  "code-04-1": {
+   "src": "method",
+   "duration": 6.83,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "add230c04d92"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression : 8  ·  Pression : 7"
+     },
+     {
+      "n": 2,
+      "t": 2.49,
+      "text": "Pression : 9"
+     }
+    ]
+   }
+  },
+  "code-04-2": {
+   "src": "method",
+   "duration": 8.72,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "7cdc68fa3479"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 11"
+     },
+     {
+      "n": 2,
+      "t": 1.6,
+      "text": "Passe : 6 → 11"
+     },
+     {
+      "n": 3,
+      "t": 3.82,
+      "text": "Appel : 9"
+     }
+    ]
+   }
+  },
+  "code-05-1": {
+   "src": "method",
+   "duration": 12.76,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "71f7fa3426e4"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 6"
+     },
+     {
+      "n": 2,
+      "t": 3.53,
+      "text": "Passe : 1 → 4"
+     },
+     {
+      "n": 3,
+      "t": 5.69,
+      "text": "Conduite : 4"
+     },
+     {
+      "n": 4,
+      "t": 9.01,
+      "text": "Passe : 4 → 10"
+     }
+    ]
+   }
+  },
+  "code-05-2": {
+   "src": "method",
+   "duration": 10.2,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "2eab796032d5"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 10 → 6"
+     },
+     {
+      "n": 2,
+      "t": 3.01,
+      "text": "Passe : 6 → 7"
+     },
+     {
+      "n": 3,
+      "t": 5.23,
+      "text": "Conduite : 7"
+     }
+    ]
+   }
+  },
+  "code-05-3": {
+   "src": "method",
+   "duration": 8.84,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "69d3d3eed31e"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 8  ·  Appel : 10"
+     },
+     {
+      "n": 2,
+      "t": 3.93,
+      "text": "Passe : 8 → 10"
+     },
+     {
+      "n": 3,
+      "t": 5.75,
+      "text": "Frappe : 10"
+     }
+    ]
+   }
+  },
+  "code-06-2": {
+   "src": "method",
+   "duration": 10,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "b4d428bb87c7"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 9  ·  Appel : 8"
+     },
+     {
+      "n": 2,
+      "t": 3.82,
+      "text": "Passe : 9 → 8"
+     },
+     {
+      "n": 3,
+      "t": 5.28,
+      "text": "Passe : 8 → 7  ·  Appel : 7"
+     }
+    ]
+   }
+  },
+  "code-06-3": {
+   "src": "method",
+   "duration": 5.8,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "2a9a1cfd3a58"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 3  ·  Appel : 2"
+     }
+    ]
+   }
+  },
+  "code-07-2": {
+   "src": "method",
+   "duration": 6.52,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "0ab5130b7bc4"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression : 10"
+     },
+     {
+      "n": 2,
+      "t": 2.75,
+      "text": "Appel : 11  ·  Appel : 6  ·  Appel : 3"
+     }
+    ]
+   }
+  },
+  "code-07-3": {
+   "src": "method",
+   "duration": 8.72,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "e16ebbb93586"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 7"
+     },
+     {
+      "n": 2,
+      "t": 1.6,
+      "text": "Passe : 6 → 7"
+     },
+     {
+      "n": 3,
+      "t": 3.82,
+      "text": "Appel : 9"
+     }
+    ]
+   }
+  },
+  "code-08-2": {
+   "src": "method",
+   "duration": 7.71,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "18190db98800"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 3.02,
+      "text": "Pression : 11  ·  Appel : 9  ·  Pression : 10  ·  Pression : 3"
+     }
+    ]
+   }
+  },
+  "code-08-3": {
+   "src": "method",
+   "duration": 10.03,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "0f64d74a6427"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.95,
+      "text": "Pression : 9  ·  Appel : 10"
+     },
+     {
+      "n": 3,
+      "t": 5.7,
+      "text": "Appel : 4  ·  Appel : 5"
+     }
+    ]
+   }
+  },
+  "code-09-1": {
+   "src": "method",
+   "duration": 10.12,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "8be0d4b7fe51"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 3"
+     },
+     {
+      "n": 2,
+      "t": 3.82,
+      "text": "Passe : 4 → 6"
+     },
+     {
+      "n": 3,
+      "t": 5.92,
+      "text": "Passe : 6 → 8"
+     }
+    ]
+   }
+  },
+  "code-10-1": {
+   "src": "method",
+   "duration": 12.28,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "034293f876a6"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 7"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Appel : 9"
+     },
+     {
+      "n": 3,
+      "t": 5.56,
+      "text": "Appel : 5"
+     },
+     {
+      "n": 4,
+      "t": 7.91,
+      "text": "Appel : 11"
+     }
+    ]
+   }
+  },
+  "code-11-1": {
+   "src": "method",
+   "duration": 8.05,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "4286cf5dc059"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression"
+     },
+     {
+      "n": 2,
+      "t": 2.07,
+      "text": "Passe : A → B"
+     },
+     {
+      "n": 3,
+      "t": 3.66,
+      "text": "Conduite : B"
+     }
+    ]
+   }
+  },
+  "code-11-2": {
+   "src": "method",
+   "duration": 10.44,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "ad70c36a39f0"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 10 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.92,
+      "text": "Passe : 6 → 7"
+     },
+     {
+      "n": 3,
+      "t": 5.14,
+      "text": "Conduite : 7"
+     }
+    ]
+   }
+  },
+  "code-11-3": {
+   "src": "method",
+   "duration": 6.86,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "eb82625fcc79"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression"
+     },
+     {
+      "n": 2,
+      "t": 2.46,
+      "text": "Appel : 10"
+     },
+     {
+      "n": 3,
+      "t": 3,
+      "text": "Passe : 8 → 10"
+     }
+    ]
+   }
+  },
+  "code-12-1": {
+   "src": "method",
+   "duration": 10.97,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "f578bfce4a53"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 5 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.79,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.6,
+      "text": "Conduite : 6"
+     },
+     {
+      "n": 4,
+      "t": 7.25,
+      "text": "Passe : 6 → 8"
+     }
+    ]
+   }
+  },
+  "code-12-2": {
+   "src": "method",
+   "duration": 7.82,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "7a8e8f29c81b"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 8"
+     },
+     {
+      "n": 2,
+      "t": 2.65,
+      "text": "Conduite : 8"
+     },
+     {
+      "n": 3,
+      "t": 4.57,
+      "text": "Passe : 8 → 9"
+     }
+    ]
+   }
+  },
+  "code-13-1": {
+   "src": "method",
+   "duration": 7.32,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "ab08b257ed44"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 4 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.33,
+      "text": "Conduite : 6"
+     },
+     {
+      "n": 3,
+      "t": 4.09,
+      "text": "Passe : 6 → 8"
+     }
+    ]
+   }
+  },
+  "code-13-2": {
+   "src": "method",
+   "duration": 7.08,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "858ee9e78de8"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 5 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.88,
+      "text": "Passe : 6 → 10"
+     }
+    ]
+   }
+  },
+  "code-14-1": {
+   "src": "method",
+   "duration": 9.65,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "bdd75e2a89bf"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 4"
+     },
+     {
+      "n": 2,
+      "t": 4.2,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 5.79,
+      "text": "Passe : 4 → 10"
+     }
+    ]
+   }
+  },
+  "code-14-2": {
+   "src": "method",
+   "duration": 8.38,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "e808b6f5935b"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 11"
+     },
+     {
+      "n": 2,
+      "t": 3.48,
+      "text": "Pression ×2  ·  Appel : 3"
+     },
+     {
+      "n": 3,
+      "t": 4.8,
+      "text": "Passe : 11 → 3"
+     }
+    ]
+   }
+  },
+  "code-15-1": {
+   "src": "method",
+   "duration": 8.95,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "7533d7d153a6"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 7"
+     },
+     {
+      "n": 2,
+      "t": 3.4,
+      "text": "Appel : 9  ·  Appel : 10"
+     },
+     {
+      "n": 3,
+      "t": 3.9,
+      "text": "Passe : 7 → 10"
+     },
+     {
+      "n": 4,
+      "t": 5.87,
+      "text": "Frappe : 10"
+     }
+    ]
+   }
+  },
+  "code-15-2": {
+   "src": "method",
+   "duration": 7.96,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "9086c5483068"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 9  ·  Appel : 8"
+     },
+     {
+      "n": 2,
+      "t": 3.43,
+      "text": "Passe : 9 → 8"
+     },
+     {
+      "n": 3,
+      "t": 4.7,
+      "text": "Frappe : 8"
+     }
+    ]
+   }
+  },
+  "code-16-1": {
+   "src": "method",
+   "duration": 12.29,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "bb34f8726ecc"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 4 → 1"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 5.61,
+      "text": "Conduite : 1"
+     },
+     {
+      "n": 4,
+      "t": 8.38,
+      "text": "Passe : 1 → 5"
+     }
+    ]
+   }
+  },
+  "code-16-2": {
+   "src": "method",
+   "duration": 8.82,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "401b8b725806"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.94,
+      "text": "Pression"
+     },
+     {
+      "n": 3,
+      "t": 4.62,
+      "text": "Passe : 5 → 2"
+     }
+    ]
+   }
+  },
+  "code-17-1": {
+   "src": "method",
+   "duration": 8.64,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "07936c8af7de"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 3  ·  Appel : 2"
+     },
+     {
+      "n": 2,
+      "t": 3.82,
+      "text": "Appel : 11  ·  Appel : 7"
+     }
+    ]
+   }
+  },
+  "code-17-2": {
+   "src": "method",
+   "duration": 8.72,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "018af208d5f8"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 3"
+     },
+     {
+      "n": 2,
+      "t": 3.82,
+      "text": "Appel : 8"
+     }
+    ]
+   }
+  },
+  "code-17-3": {
+   "src": "method",
+   "duration": 10.79,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "0800a9b51eb1"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 11"
+     },
+     {
+      "n": 2,
+      "t": 3.68,
+      "text": "Appel : 3"
+     },
+     {
+      "n": 3,
+      "t": 6.6,
+      "text": "Appel : 10"
+     }
+    ]
+   }
+  },
+  "code-17-4": {
+   "src": "method",
+   "duration": 11.1,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "17fea7abba46"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 11  ·  Appel : 7"
+     },
+     {
+      "n": 2,
+      "t": 3.82,
+      "text": "Appel : 10"
+     },
+     {
+      "n": 3,
+      "t": 6.74,
+      "text": "Pression : 10"
+     }
+    ]
+   }
+  },
+  "code-18-1": {
+   "src": "method",
+   "duration": 13.01,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "eb808dc020f5"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 6  ·  Appel : 8"
+     },
+     {
+      "n": 2,
+      "t": 3.68,
+      "text": "Passe : 1 → 5"
+     },
+     {
+      "n": 3,
+      "t": 5.9,
+      "text": "Conduite : 5"
+     },
+     {
+      "n": 4,
+      "t": 9.15,
+      "text": "Passe : 5 → 8"
+     }
+    ]
+   }
+  },
+  "code-18-2": {
+   "src": "method",
+   "duration": 10.41,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "129617a26a8b"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 4"
+     },
+     {
+      "n": 2,
+      "t": 2.89,
+      "text": "Passe : 4 → 10"
+     },
+     {
+      "n": 3,
+      "t": 5.11,
+      "text": "Conduite : 10"
+     }
+    ]
+   }
+  },
+  "code-18-3": {
+   "src": "method",
+   "duration": 12.13,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "63de7a24d1dc"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Passe : 5 → 8"
+     },
+     {
+      "n": 3,
+      "t": 5.34,
+      "text": "Passe : 8 → 6"
+     },
+     {
+      "n": 4,
+      "t": 7.29,
+      "text": "Passe : 6 → 7  ·  Appel : 7"
+     }
+    ]
+   }
+  },
+  "code-18-4": {
+   "src": "method",
+   "duration": 10.46,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "4218d25e6a60"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 9"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Appel : 10  ·  Appel : 8"
+     },
+     {
+      "n": 3,
+      "t": 5.56,
+      "text": "Appel : 11"
+     }
+    ]
+   }
+  },
+  "code-19-1": {
+   "src": "method",
+   "duration": 10,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "97fdd897de02"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 6 → 10"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Conduite : 10"
+     },
+     {
+      "n": 3,
+      "t": 5.48,
+      "text": "Appel : 11  ·  Passe : 10 → 11"
+     }
+    ]
+   }
+  },
+  "code-19-2": {
+   "src": "method",
+   "duration": 10.37,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "0d8d594afd9d"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 2 → 7  ·  Appel : 8"
+     },
+     {
+      "n": 2,
+      "t": 3.82,
+      "text": "Passe : 7 → 8"
+     },
+     {
+      "n": 3,
+      "t": 5.56,
+      "text": "Conduite : 8"
+     }
+    ]
+   }
+  },
+  "code-19-3": {
+   "src": "method",
+   "duration": 12.45,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "8f36a7c0862c"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 10 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.78,
+      "text": "Passe : 6 → 2"
+     },
+     {
+      "n": 3,
+      "t": 5,
+      "text": "Passe : 2 → 7"
+     },
+     {
+      "n": 4,
+      "t": 7.22,
+      "text": "Conduite : 7  ·  Appel : 8"
+     }
+    ]
+   }
+  },
+  "code-19-4": {
+   "src": "method",
+   "duration": 7.85,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "4d3f72da95aa"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 10  ·  Appel : 11"
+     },
+     {
+      "n": 2,
+      "t": 1.89,
+      "text": "Passe : 3 → 10"
+     },
+     {
+      "n": 3,
+      "t": 3.82,
+      "text": "Appel : 11  ·  Passe : 10 → 11"
+     }
+    ]
+   }
+  },
+  "code-20-1": {
+   "src": "method",
+   "duration": 9.77,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "3ec8479440b0"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : 8"
+     },
+     {
+      "n": 2,
+      "t": 4.22,
+      "text": "Appel : 9  ·  Appel : 10  ·  Passe : 8 → 10"
+     },
+     {
+      "n": 3,
+      "t": 6.61,
+      "text": "Frappe : 10"
+     }
+    ]
+   }
+  },
+  "code-20-2": {
+   "src": "method",
+   "duration": 9.39,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "a75008e92af3"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression → 7  ·  Appel : 8  ·  Passe : 7 → 8"
+     },
+     {
+      "n": 2,
+      "t": 3.82,
+      "text": "Appel : 10  ·  Passe : 8 → 10"
+     },
+     {
+      "n": 3,
+      "t": 6.21,
+      "text": "Frappe : 10"
+     }
+    ]
+   }
+  },
+  "code-20-3": {
+   "src": "method",
+   "duration": 5.8,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "38b72e1ee3d7"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 9  ·  Appel : 10  ·  Appel : 11  ·  Appel : 8"
+     }
+    ]
+   }
+  },
+  "code-20-4": {
+   "src": "method",
+   "duration": 7.33,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "346aceadf825"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression : 8  ·  Pression : 10"
+     },
+     {
+      "n": 2,
+      "t": 3.42,
+      "text": "Appel : 6  ·  Appel : 4  ·  Appel : 5"
+     }
+    ]
+   }
+  },
+  "code-21-1": {
+   "src": "method",
+   "duration": 9.21,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "aca2eb61a3d7"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression : 9"
+     },
+     {
+      "n": 2,
+      "t": 3.08,
+      "text": "Passe"
+     },
+     {
+      "n": 3,
+      "t": 5.06,
+      "text": "Pression : 11"
+     }
+    ]
+   }
+  },
+  "code-21-2": {
+   "src": "method",
+   "duration": 9.09,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "0c2b78121d0d"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.78,
+      "text": "Pression : 9  ·  Pression : 10  ·  Pression : 8"
+     },
+     {
+      "n": 3,
+      "t": 5.04,
+      "text": "Appel : 6"
+     }
+    ]
+   }
+  },
+  "code-21-3": {
+   "src": "method",
+   "duration": 10.08,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "fc77433aa790"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Pression : 2  ·  Pression : 7  ·  Appel : 8"
+     },
+     {
+      "n": 3,
+      "t": 5.64,
+      "text": "Appel : 6  ·  Appel : 5"
+     }
+    ]
+   }
+  },
+  "code-22-1": {
+   "src": "method",
+   "duration": 5.09,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "4fcb2f66b0b3"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : 3  ·  Appel : 11"
+     }
+    ]
+   }
+  },
+  "code-22-2": {
+   "src": "method",
+   "duration": 6.32,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "e862d4f89648"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression : 2"
+     },
+     {
+      "n": 2,
+      "t": 2.31,
+      "text": "Appel ×3"
+     }
+    ]
+   }
+  },
+  "code-22-4": {
+   "src": "method",
+   "duration": 10.65,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "cebf44216208"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite  ·  Appel ×2"
+     },
+     {
+      "n": 2,
+      "t": 3.82,
+      "text": "Appel : 5  ·  Appel : 4"
+     },
+     {
+      "n": 3,
+      "t": 5.75,
+      "text": "Appel : 6  ·  Appel : 8"
+     }
+    ]
+   }
+  },
+  "code-23-1": {
+   "src": "method",
+   "duration": 9.73,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "77429e7c4f3b"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 1 → 5"
+     },
+     {
+      "n": 2,
+      "t": 2.61,
+      "text": "Passe : 5 → 8"
+     },
+     {
+      "n": 3,
+      "t": 4.83,
+      "text": "Passe : 8 → 7  ·  Appel : 7"
+     }
+    ]
+   }
+  },
+  "code-23-2": {
+   "src": "method",
+   "duration": 11.72,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "235ecded5480"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 10 → 6"
+     },
+     {
+      "n": 2,
+      "t": 2.78,
+      "text": "Passe : 6 → 2"
+     },
+     {
+      "n": 3,
+      "t": 4.53,
+      "text": "Passe : 2 → 7"
+     },
+     {
+      "n": 4,
+      "t": 6.75,
+      "text": "Conduite : 7  ·  Appel : 8"
+     }
+    ]
+   }
+  },
+  "code-24-1": {
+   "src": "method",
+   "duration": 7.27,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "8410fb09edd6"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : A"
+     },
+     {
+      "n": 2,
+      "t": 2.26,
+      "text": "Conduite"
+     }
+    ]
+   }
+  },
+  "code-32-1": {
+   "src": "method",
+   "duration": 13.7,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "e8da3cc9ce4b"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : 4 → 8"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Conduite : 8"
+     },
+     {
+      "n": 3,
+      "t": 6.18,
+      "text": "Passe : 8 → 7"
+     },
+     {
+      "n": 4,
+      "t": 8.4,
+      "text": "Conduite : 7"
+     }
+    ]
+   }
+  },
+  "lecon-01": {
+   "src": "novel",
+   "duration": 8.15,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "95f7e5360104"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : K → B"
+     },
+     {
+      "n": 2,
+      "t": 2.27,
+      "text": "Passe : B → P"
+     },
+     {
+      "n": 3,
+      "t": 3.71,
+      "text": "Passe : P → M"
+     },
+     {
+      "n": 4,
+      "t": 5.19,
+      "text": "Frappe : M"
+     }
+    ]
+   }
+  },
+  "lecon-02": {
+   "src": "novel",
+   "duration": 10.18,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "a72701645a0e"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : O → B"
+     },
+     {
+      "n": 2,
+      "t": 2.36,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 3,
+      "t": 4.04,
+      "text": "Passe : K → R"
+     },
+     {
+      "n": 4,
+      "t": 5.73,
+      "text": "Passe : R → M"
+     },
+     {
+      "n": 5,
+      "t": 7.22,
+      "text": "Frappe : M"
+     }
+    ]
+   }
+  },
+  "lecon-03": {
+   "src": "novel",
+   "duration": 7.54,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "0e533787db84"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : K → B"
+     },
+     {
+      "n": 2,
+      "t": 2.3,
+      "text": "Conduite : B"
+     }
+    ]
+   }
+  },
+  "lecon-04": {
+   "src": "novel",
+   "duration": 7.4,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "df54c9ed6556"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : K?"
+     },
+     {
+      "n": 2,
+      "t": 2.43,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 3,
+      "t": 4.18,
+      "text": "Passe : K → S"
+     }
+    ]
+   }
+  },
+  "lecon-05": {
+   "src": "novel",
+   "duration": 7.35,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "dae5c13bef3e"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → M"
+     },
+     {
+      "n": 2,
+      "t": 3.15,
+      "text": "Passe : B → R"
+     }
+    ]
+   }
+  },
+  "lecon-06": {
+   "src": "novel",
+   "duration": 9.84,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "eaff425cbf73"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : K  ·  Appel"
+     },
+     {
+      "n": 2,
+      "t": 3.23,
+      "text": "Passe : B"
+     },
+     {
+      "n": 3,
+      "t": 5.24,
+      "text": "Appel : M"
+     }
+    ]
+   }
+  },
+  "lecon-07": {
+   "src": "novel",
+   "duration": 8.69,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "e49c31b876cb"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Passe : K → M"
+     },
+     {
+      "n": 3,
+      "t": 5.34,
+      "text": "Frappe : M"
+     }
+    ]
+   }
+  },
+  "lecon-08": {
+   "src": "novel",
+   "duration": 10.93,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "887f754a27f1"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : O → B"
+     },
+     {
+      "n": 2,
+      "t": 2.26,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 3,
+      "t": 3.57,
+      "text": "Passe : K → M"
+     },
+     {
+      "n": 4,
+      "t": 4.93,
+      "text": "Passe : M → S"
+     },
+     {
+      "n": 5,
+      "t": 6.28,
+      "text": "Passe : S → R"
+     },
+     {
+      "n": 6,
+      "t": 7.59,
+      "text": "Passe : R → O"
+     }
+    ]
+   }
+  },
+  "lecon-09": {
+   "src": "novel",
+   "duration": 6.98,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "6a12d943ef92"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression → B  ·  Passe : B → D"
+     },
+     {
+      "n": 2,
+      "t": 2.37,
+      "text": "Passe : D → K"
+     },
+     {
+      "n": 3,
+      "t": 3.99,
+      "text": "Frappe : K"
+     }
+    ]
+   }
+  },
+  "lecon-10": {
+   "src": "novel",
+   "duration": 7.12,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "9cfa43cfd542"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : D → B  ·  Pression → B"
+     },
+     {
+      "n": 2,
+      "t": 2.37,
+      "text": "Conduite : B"
+     }
+    ]
+   }
+  },
+  "lecon-11": {
+   "src": "novel",
+   "duration": 9.35,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "4cdf967af77e"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe  ·  Passe : B → T"
+     },
+     {
+      "n": 1,
+      "t": 2.93,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 5.15,
+      "text": "Passe → B"
+     }
+    ]
+   }
+  },
+  "lecon-12": {
+   "src": "novel",
+   "duration": 6.31,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "0fba432a1162"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression → K ×2  ·  Passe : K → T"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Frappe : T"
+     }
+    ]
+   }
+  },
+  "lecon-13": {
+   "src": "novel",
+   "duration": 5.1,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "48c554d90f19"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → K"
+     }
+    ]
+   }
+  },
+  "lecon-14": {
+   "src": "novel",
+   "duration": 8.53,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "e591c50a3002"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → 10  ·  Appel : K"
+     },
+     {
+      "n": 1,
+      "t": 3.63,
+      "text": "Appel : 10  ·  Appel : T  ·  Appel : D"
+     }
+    ]
+   }
+  },
+  "lecon-15": {
+   "src": "novel",
+   "duration": 10.15,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "ad69ce2f9b52"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : K  ·  Appel : 5"
+     },
+     {
+      "n": 2,
+      "t": 3.76,
+      "text": "Passe : B"
+     },
+     {
+      "n": 3,
+      "t": 5.74,
+      "text": "Appel : T"
+     }
+    ]
+   }
+  },
+  "lecon-16": {
+   "src": "novel",
+   "duration": 8.62,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "c2a9c6618a4a"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe → B"
+     },
+     {
+      "n": 2,
+      "t": 2.78,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 3,
+      "t": 4.98,
+      "text": "Passe : K → T"
+     }
+    ]
+   }
+  },
+  "lecon-17": {
+   "src": "novel",
+   "duration": 8.84,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "054fb3f6bbe3"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : B"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Appel : B"
+     },
+     {
+      "n": 3,
+      "t": 2.96,
+      "text": "Passe : M → B"
+     },
+     {
+      "n": 4,
+      "t": 4.58,
+      "text": "Conduite : B"
+     }
+    ]
+   }
+  },
+  "lecon-18": {
+   "src": "novel",
+   "duration": 8.02,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "602b0df71c8d"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Passe : K → Kz  ·  Appel : Kz"
+     }
+    ]
+   }
+  },
+  "lecon-19": {
+   "src": "novel",
+   "duration": 6.53,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "0cc8ed5eeaa7"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : D → B ×2  ·  Pression → B"
+     },
+     {
+      "n": 2,
+      "t": 2.39,
+      "text": "Conduite : B  ·  Passe : B"
+     }
+    ]
+   }
+  },
+  "lecon-20": {
+   "src": "novel",
+   "duration": 5.8,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "7b9b1c86a823"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression → K  ·  Passe : K → B"
+     },
+     {
+      "n": 2,
+      "t": 2.35,
+      "text": "Passe : B → Kz"
+     }
+    ]
+   }
+  },
+  "lecon-21": {
+   "src": "novel",
+   "duration": 4.79,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "ae542e85a944"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : Kz  ·  Appel : B  ·  Appel : L"
+     }
+    ]
+   }
+  },
+  "lecon-22": {
+   "src": "novel",
+   "duration": 6.86,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "2c64d0d3e379"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Appel : K"
+     },
+     {
+      "n": 2,
+      "t": 1.25,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 3,
+      "t": 2.96,
+      "text": "Passe : K  ·  Appel : Kz"
+     }
+    ]
+   }
+  },
+  "lecon-23": {
+   "src": "novel",
+   "duration": 9.46,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "832531b269cf"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 2,
+      "t": 2.77,
+      "text": "Conduite : K  ·  Appel : Kz"
+     },
+     {
+      "n": 3,
+      "t": 5.69,
+      "text": "Passe : K → Kz"
+     }
+    ]
+   }
+  },
+  "lecon-25": {
+   "src": "novel",
+   "duration": 5.58,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "b642f066a4e9"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : L → N"
+     },
+     {
+      "n": 2,
+      "t": 2.14,
+      "text": "Passe : N"
+     }
+    ]
+   }
+  },
+  "lecon-26": {
+   "src": "novel",
+   "duration": 5.7,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "604b73e4c6c0"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression"
+     },
+     {
+      "n": 2,
+      "t": 2.13,
+      "text": "Passe : B → K"
+     }
+    ]
+   }
+  },
+  "lecon-27": {
+   "src": "novel",
+   "duration": 7.75,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "96eaa6a95f6c"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Appel : L"
+     }
+    ]
+   }
+  },
+  "lecon-28": {
+   "src": "novel",
+   "duration": 6.88,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "732e2b9feac8"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : N → B"
+     },
+     {
+      "n": 2,
+      "t": 2.4,
+      "text": "Passe : B → L  ·  Appel : L"
+     }
+    ]
+   }
+  },
+  "lecon-29": {
+   "src": "novel",
+   "duration": 7.55,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "80c59a42a14d"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Conduite : K  ·  Pression ×2"
+     },
+     {
+      "n": 2,
+      "t": 2.94,
+      "text": "Passe : K → L"
+     },
+     {
+      "n": 3,
+      "t": 4.59,
+      "text": "Frappe : L"
+     }
+    ]
+   }
+  },
+  "lecon-30": {
+   "src": "novel",
+   "duration": 6.92,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "4f134ad9e946"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : L → B"
+     },
+     {
+      "n": 2,
+      "t": 2.72,
+      "text": "Passe : B → K"
+     }
+    ]
+   }
+  },
+  "lecon-31": {
+   "src": "novel",
+   "duration": 11.79,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "a753c81c5fc1"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → N"
+     },
+     {
+      "n": 2,
+      "t": 2.79,
+      "text": "Passe : N → 4"
+     },
+     {
+      "n": 3,
+      "t": 5.01,
+      "text": "Passe : 4 → B"
+     },
+     {
+      "n": 4,
+      "t": 6.89,
+      "text": "Passe : B → K  ·  Appel : K"
+     }
+    ]
+   }
+  },
+  "lecon-32": {
+   "src": "novel",
+   "duration": 11.1,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "6ca9644cedad"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 2,
+      "t": 3.12,
+      "text": "Conduite : K  ·  Pression ×2  ·  Appel : B"
+     },
+     {
+      "n": 3,
+      "t": 6.18,
+      "text": "Passe : K → B"
+     },
+     {
+      "n": 4,
+      "t": 8.07,
+      "text": "Frappe : B"
+     }
+    ]
+   }
+  },
+  "lecon-33": {
+   "src": "novel",
+   "duration": 7.53,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "19d69360b378"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Pression → B  ·  Passe : B → K"
+     },
+     {
+      "n": 2,
+      "t": 2.17,
+      "text": "Passe : K"
+     },
+     {
+      "n": 3,
+      "t": 3.48,
+      "text": "Appel : B"
+     }
+    ]
+   }
+  },
+  "lecon-34": {
+   "src": "novel",
+   "duration": 7.39,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "88bd6cfd1431"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → K  ·  Pression"
+     },
+     {
+      "n": 2,
+      "t": 2.35,
+      "text": "Conduite : K"
+     },
+     {
+      "n": 3,
+      "t": 4.16,
+      "text": "Passe : K → A"
+     }
+    ]
+   }
+  },
+  "lecon-35": {
+   "src": "novel",
+   "duration": 7.01,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "bbfacbe58c85"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 2.86,
+      "text": "Pression : J  ·  Pression : K  ·  Pression : Th"
+     }
+    ]
+   }
+  },
+  "lecon-36": {
+   "src": "novel",
+   "duration": 15.75,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "ff7c599a9e18"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : F → Th"
+     },
+     {
+      "n": 1,
+      "t": 1.99,
+      "text": "Passe : Th"
+     },
+     {
+      "n": 2,
+      "t": 3.25,
+      "text": "Passe"
+     },
+     {
+      "n": 2,
+      "t": 4.34,
+      "text": "Passe → J"
+     },
+     {
+      "n": 3,
+      "t": 5.62,
+      "text": "Passe : J → B"
+     },
+     {
+      "n": 3,
+      "t": 6.65,
+      "text": "Passe : B → K"
+     },
+     {
+      "n": 4,
+      "t": 7.83,
+      "text": "Passe : K"
+     },
+     {
+      "n": 4,
+      "t": 8.86,
+      "text": "Passe"
+     },
+     {
+      "n": 5,
+      "t": 10.14,
+      "text": "Passe"
+     },
+     {
+      "n": 5,
+      "t": 11.22,
+      "text": "Passe"
+     },
+     {
+      "n": 6,
+      "t": 12.49,
+      "text": "Passe → F"
+     }
+    ]
+   }
+  },
+  "lecon-37": {
+   "src": "novel",
+   "duration": 5.8,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "3e0e362be900"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : B → K  ·  Appel : K  ·  Appel"
+     }
+    ]
+   }
+  },
+  "lecon-38": {
+   "src": "novel",
+   "duration": 7.78,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "eccef65314c9"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : S → B"
+     },
+     {
+      "n": 2,
+      "t": 2.53,
+      "text": "Passe : B → A"
+     },
+     {
+      "n": 3,
+      "t": 4.17,
+      "text": "Passe : A → K  ·  Pression ×2"
+     }
+    ]
+   }
+  },
+  "lecon-39": {
+   "src": "novel",
+   "duration": 10.14,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "a281679416cb"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : CM → US"
+     },
+     {
+      "n": 2,
+      "t": 2.48,
+      "text": "Passe : US → FR"
+     },
+     {
+      "n": 3,
+      "t": 4.07,
+      "text": "Passe : FR → ES"
+     },
+     {
+      "n": 4,
+      "t": 5.65,
+      "text": "Passe : ES → GB"
+     },
+     {
+      "n": 5,
+      "t": 7.14,
+      "text": "Frappe : GB"
+     }
+    ]
+   }
+  },
+  "lecon-40": {
+   "src": "novel",
+   "duration": 18.2,
+   "langs": [
+    "fr"
+   ],
+   "hash": {
+    "fr": "54cf23359cf5"
+   },
+   "steps": {
+    "fr": [
+     {
+      "n": 1,
+      "t": 0.9,
+      "text": "Passe : F → S"
+     },
+     {
+      "n": 2,
+      "t": 2.05,
+      "text": "Passe : S → To"
+     },
+     {
+      "n": 3,
+      "t": 3.43,
+      "text": "Passe : To → O"
+     },
+     {
+      "n": 4,
+      "t": 4.74,
+      "text": "Passe : O → A"
+     },
+     {
+      "n": 5,
+      "t": 5.94,
+      "text": "Passe : A → J"
+     },
+     {
+      "n": 6,
+      "t": 7.08,
+      "text": "Passe : J → C"
+     },
+     {
+      "n": 7,
+      "t": 8.46,
+      "text": "Passe : C → Th"
+     },
+     {
+      "n": 8,
+      "t": 9.79,
+      "text": "Passe : Th → R"
+     },
+     {
+      "n": 9,
+      "t": 11.11,
+      "text": "Passe : R → K"
+     },
+     {
+      "n": 10,
+      "t": 12.31,
+      "text": "Passe : K → B"
+     },
+     {
+      "n": 11,
+      "t": 13.64,
+      "text": "Passe : B → K  ·  Appel : K"
+     },
+     {
+      "n": 11,
+      "t": 15.33,
+      "text": "Frappe : K"
+     }
+    ]
+   }
+  }
+ }
+}

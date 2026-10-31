@@ -1,13 +1,12 @@
 // Small UI pieces shared by the training pages.
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { Crown, X } from 'lucide-react'
-import { Badge, Modal, Pitch } from '../../../ui'
+import { Badge, Modal } from '../../../ui'
 import { useT } from '../../../i18n'
 import { GATES } from '../../../lib/config'
-import { viewSize } from '../../../lib/pitch.mjs'
 import { cx } from '../../../lib/util'
-import type { DiagramSpec, Intention, MD, Session } from '../../../lib/types'
+import type { Intention, MD, Session } from '../../../lib/types'
 import { INTENSITY_COLOR, INTENSITY_FACTOR, MD_CHIP, blockIntensity, blockTitle, type Intensity } from './helpers'
 
 /* ---------- badges ---------- */
@@ -57,31 +56,6 @@ export function IntensityMeter({ level, showLabel = true }: { level: Intensity; 
 }
 
 /* ---------- diagrams ---------- */
-
-/**
- * Renders the diagram only when it comes near the screen (keeps long lists light on phones).
- * `fit` caps the height as a share of the width: tall pitches shrink and centre, so cards in a grid line up.
- */
-export function LazyPitch({ spec, width = 360, className, title, fit }: { spec?: DiagramSpec | null; width?: number; className?: string; title?: string; fit?: number }) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [show, setShow] = useState(false)
-  useEffect(() => {
-    const el = ref.current
-    if (!el || show) return
-    if (typeof IntersectionObserver === 'undefined') { setShow(true); return }
-    const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { setShow(true); io.disconnect() } }, { rootMargin: '300px' })
-    io.observe(el)
-    return () => io.disconnect()
-  }, [show])
-  let ratio = 0.66
-  try { if (spec) { const s = viewSize(spec); ratio = (s.h + 2) / (s.w + 2) } } catch { /* keep default */ }
-  const w = fit && ratio > fit ? `${(fit / ratio) * 100}%` : '100%'
-  return (
-    <div ref={ref} className={cx('relative mx-auto w-[var(--pw)]', className)} style={{ '--pw': w, ...(show ? {} : { aspectRatio: `1 / ${ratio}` }) } as CSSProperties}>
-      {show && spec ? <Pitch spec={spec} width={width} title={title} /> : <div className="absolute inset-0 rounded-xl bg-[#EDF2E3]" aria-hidden="true" />}
-    </div>
-  )
-}
 
 /** Placeholder used when a block has no diagram (free block or drill not written yet). */
 export function NoDiagram({ label, className }: { label?: string; className?: string }) {

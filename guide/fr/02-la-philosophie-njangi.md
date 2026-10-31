@@ -49,7 +49,7 @@ Pour répondre à « que prépare ta passe ? », la méthode donne sept mots. Le
 | **Reprendre** | Cinq secondes de contre-pression après la perte | Toute l'équipe presse le ballon là où elle vient de le perdre |
 | **Regarder devant** | Après la récupération, le premier regard va devant | Le joueur qui récupère cherche d'abord la passe vers l'avant |
 
-![La fiche de l'exercice C01, Le Y du Njangi, avec ses deux intentions Progresser et Fixer, son schéma et ses jours MD-2, MD-1 et Jeunes.](shot:pro-drill-detail "Chaque exercice affiche les intentions qu'il entraîne, ici Progresser et Fixer.")
+![La fiche de l'exercice C01, Le Y du Njangi, avec ses deux intentions Progresser et Fixer, son animation et ses jours MD-2, MD-1 et Jeunes.](shot:pro-drill-detail "Chaque exercice affiche les intentions qu'il entraîne, ici Progresser et Fixer.")
 
 Pour les enfants, ces sept mots sont encore trop nombreux. Le roman leur donne cinq images plus simples, les cinq pièces du Njangi, une par pays traversé par les deux frères : le cœur (jouer ensemble, au Cameroun), la raison (chaque passe a un but, aux États-Unis), les yeux (voir avant de recevoir, en France), la carte (être au bon endroit, en Catalogne) et le souffle (posséder aussi quand ça brûle, en Angleterre). Les fiches d'exercices indiquent aussi leurs **Pièces du Njangi**. Vers 15 ans, les cinq pièces se fondent dans les sept mots des adultes.
 

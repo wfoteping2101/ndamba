@@ -1,0 +1,22 @@
+{
+  "play": "Play the animation",
+  "playTitle": "Play the animation: {{title}}",
+  "resume": "Resume",
+  "pause": "Pause",
+  "prevStep": "Previous step",
+  "nextStep": "Next step",
+  "seek": "Move through the animation",
+  "speed": "Speed: {{speed}}",
+  "normal": "normal",
+  "slow": "slow motion",
+  "half": "0.5×",
+  "full": "Full screen",
+  "exitFull": "Exit full screen",
+  "download": "Download the video (MP4)",
+  "start": "Starting positions",
+  "whole": "The whole move",
+  "steps": "The move, step by step",
+  "stepsHint": "Tap a step to watch it again",
+  "label": "Animation: {{title}}",
+  "labelPlain": "Diagram animation"
+}

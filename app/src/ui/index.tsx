@@ -3,6 +3,7 @@ import { X } from 'lucide-react'
 import { cx } from '../lib/util'
 import { renderDiagram } from '../lib/pitch.mjs'
 import type { DiagramSpec } from '../lib/types'
+import { localizeDiagram } from '../lib/diagramLang'
 import { setLang, useT } from '../i18n'
 import { updateProfile } from '../lib/session'
 
@@ -278,10 +279,11 @@ export function Callout({ tone = 'forest', title, children }: { tone?: 'forest' 
 const DIAGRAM_FONT = "'Archivo Variable', Archivo, sans-serif"
 
 export function Pitch({ spec, width = 640, title, className }: { spec?: DiagramSpec | null; width?: number; title?: string; className?: string }) {
+  const { lang } = useT()
   const svg = useMemo(() => {
     if (!spec) return ''
-    try { return renderDiagram(spec, { width, title, font: DIAGRAM_FONT }) } catch { return '' }
-  }, [spec, width, title])
+    try { return renderDiagram(localizeDiagram(spec, lang), { width, title, font: DIAGRAM_FONT }) } catch { return '' }
+  }, [spec, width, title, lang])
   if (!svg) return null
   return <div className={cx('pitch-svg overflow-hidden rounded-control', className)} dangerouslySetInnerHTML={{ __html: svg }} />
 }

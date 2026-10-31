@@ -29,7 +29,7 @@ L'accueil d'un jeune joueur se lit de haut en bas, comme une journée.
 - La carte **Mon parcours** résume la saison en une ligne, par exemple « Cette saison : 15 séances, 4 matchs, 2 objectifs en cours. » Elle ouvre le parcours (chapitre 16).
 - **Le défi du jour** montre le premier défi, ouvert, prêt à être noté, et les deux autres en dessous. Le lien **Les trois défis du jour** mène à l'espace joueur.
 - La carte **Ma progression** donne le palier, ce qu'il manque pour le suivant, la série, les **Cibles atteintes**, les **Leçons** comprises sur 40, et **Mes 7 derniers jours** (un rond coché par jour avec un défi). Le bouton **Mon espace joueur** ouvre l'espace complet.
-- **La leçon du jour** affiche une page du carnet de BriBri avec son schéma (chapitre 16).
+- **La leçon du jour** affiche une page du carnet de BriBri avec son schéma, qui se joue en animation (chapitre 16).
 - À droite : **Le roman**, le **Prochain match** avec un petit rituel (« Le match est dans 2 jours : prépare ton sac et couche-toi tôt la veille. »), et **Mon carnet du Njangi** avec la dernière page écrite.
 
 Sans équipe, une carte **Tu joues dans une équipe ?** propose **Ajouter mon équipe**. Les défis marchent aussi sans équipe.

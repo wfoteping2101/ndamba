@@ -30,7 +30,7 @@ The public website shows all five on one page. At the top sits the motto; beside
 
 The app arranges its screens in four menu groups, **Training**, **Team**, **Analysis** and **Me**, with **Home** and **Mola** at the very top. Behind those menus are five working spaces.
 
-**Training.** The library of the method's 64 drills, each with its diagram, coaching points and intentions; the session builder, which puts a session together in a few taps; and the week, which places each session relative to the next match (from MD-4 to MD-1, codes explained in chapter 2) and shows the training load.
+**Training.** The library of the method's 64 drills, each animated like a short video, with its coaching points and intentions; the session builder, which puts a session together in a few taps; and the week, which places each session relative to the next match (from MD-4 to MD-1, codes explained in chapter 2) and shows the training load.
 
 **Team.** The squad, each player's profile with ten skills rated from 1 to 4, the player's journey season after season, and the staff's observations.
 
@@ -64,7 +64,7 @@ Both books are free to read online, chapter by chapter, whatever your plan. That
 
 *Lionceaux Football* is the video game of this world: the holiday neighbourhood tournament, an eleven-a-side match on a red-earth pitch, sixteen sides from Douala and Yaoundé, including the clubs from the book. You play with a finger on a phone, with a controller or with the keyboard, right in the browser.
 
-![The books page, with the cover of The Njangi Code, its 36 chapters, 9 parts and 64 drills with diagrams.](shot:site-library "The books page: the method for adults, the novel for children.")
+![The books page, with the cover of The Njangi Code, its 36 chapters, 9 parts and 64 animated drills.](shot:site-library "The books page: the method for adults, the novel for children.")
 
 ## Who Ndamba is for
 

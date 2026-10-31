@@ -20,7 +20,7 @@ Two rules apply to every profile before you start. Your data stays on your devic
 ## Coach
 
 1. On the site's home page, tap **Get started with Mola**. Answer its questions: your name, your role, your team, its age group, the playing format. Then paste your list of players, one per line, or tap **Later** (chapter 5).
-2. Open **Drills** and filter by **Day** or by **Intention**. Each card has its diagram, its coaching points and its variations to make the drill harder or easier (chapter 7).
+2. Open **Drills** and filter by **Day** or by **Intention**. Each card plays as a short animation and has its coaching points and its variations to make the drill harder or easier (chapter 7).
 3. Create your first session with **New session**, or let Mola build it: "Create an MD-3 session" (chapter 8).
 4. On the **Week** page, tap **Plan the week**: Mola builds a session for each day from MD-4 to MD-1 still free before the next match, leaving free the day of another match and the day after it. On the Free plan it stops at five sessions in all (chapter 9).
 5. Prepare the match with **New match**: opponent, line-up, game plan, then the call-up by WhatsApp, SMS or e-mail, which you send yourself (chapter 11).

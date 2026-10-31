@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type MouseEvent, type ReactNode } from 'react'
+import { useEffect, useMemo, useState, type MouseEvent, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronLeft, ChevronRight, ImageIcon, LoaderCircle, MessageSquarePlus } from 'lucide-react'
 import { FAMILIES, drillText } from '../../../content'
@@ -6,7 +6,8 @@ import type { ArtImage } from '../../../content/art.gen'
 import type { Drill, Role } from '../../../lib/types'
 import { useSession } from '../../../lib/session'
 import { cx } from '../../../lib/util'
-import { Modal, Pitch } from '../../../ui'
+import { Modal } from '../../../ui'
+import { PitchVideoThumb } from '../../../ui/PitchVideo'
 import { useDemo, useSiteT, type DemoLevel } from './brand'
 
 type Demo = ReturnType<typeof useDemo>
@@ -36,19 +37,6 @@ export function RequestButton({ demo, subject, compact = false, dark = false, cl
   )
 }
 
-/** Renders its children only when it comes near the viewport (heavy SVG diagrams, long lists). */
-export function LazyMount({ children, placeholder, className }: { children: ReactNode; placeholder?: ReactNode; className?: string }) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [on, setOn] = useState(false)
-  useEffect(() => {
-    const el = ref.current
-    if (!el || typeof IntersectionObserver === 'undefined') { setOn(true); return }
-    const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { setOn(true); io.disconnect() } }, { rootMargin: '600px 0px' })
-    io.observe(el)
-    return () => io.disconnect()
-  }, [])
-  return <div ref={ref} className={className}>{on ? children : placeholder}</div>
-}
 
 /* ---------------- the Lionceaux gallery ---------------- */
 
@@ -195,9 +183,7 @@ export function DrillGrid({ drills, demo }: { drills: Drill[]; demo: Demo }) {
                   <span className="min-w-0 truncate text-[12.5px] font-medium leading-tight text-ink-muted">{t(`common:families.${d.family}`)}</span>
                 </span>
                 <span className="block px-3 text-[15px] font-semibold leading-snug text-ink">{tx.title}</span>
-                <LazyMount className="px-2 pb-1 pt-2" placeholder={<span className="block aspect-[3/2] rounded-control bg-sand/60" />}>
-                  <Pitch spec={d.diagram} width={420} title={tx.title} className="border border-line" />
-                </LazyMount>
+                <span className="block px-2 pb-1 pt-2"><PitchVideoThumb spec={d.diagram} title={tx.title} className="rounded-control" /></span>
                 <span className="mt-auto block truncate px-3 pb-3 pt-1 text-[12.5px] text-ink-muted">{t('review.methode.drillMeta', { ages: d.ages, minutes: d.minutes })}</span>
               </AppLink>
             </li>

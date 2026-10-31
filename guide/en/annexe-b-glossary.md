@@ -36,7 +36,8 @@ This glossary gathers the words you will meet in the app, in *The Njangi Code* a
 
 | Term | In French | Definition | Chapter |
 |---|---|---|---|
-| Drill | Exercice | One of the 64 cards of the method, with its code (for example T01), its diagram, its coaching points and its variations. | 7 |
+| Drill | Exercice | One of the 64 cards of the method, with its code (for example T01), its animation, its coaching points and its variations. | 7 |
+| Animation | Animation | A diagram played as a short video: the players move and the ball travels, one numbered step after another, with a caption for each step. Every drill has one, and so do the figures of both books. | 7 |
 | Session | Séance | A dated sequence of drills, with its day in the match week (MD-4, MD-1...), its intention if you choose one, and its length. | 8 |
 | Block | Bloc | A part of the session, with its minutes: most often a drill from the library, sometimes a free block you name yourself. | 8 |
 | MD (match day) | MD (jour de match) | The marker of the week: MD is match day, MD-1 the day before, MD+1 the day after. | 9 |

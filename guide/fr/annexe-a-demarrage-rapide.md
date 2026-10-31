@@ -20,7 +20,7 @@ Pour tous les profils, deux règles avant de commencer. Vos données restent sur
 ## Entraîneur ou éducateur
 
 1. Sur l'accueil du site, touchez **Commencer avec Mola**. Répondez à ses questions : votre nom, votre rôle, votre équipe, sa catégorie, le format de jeu. Collez ensuite la liste de vos joueurs, un par ligne, ou touchez **Plus tard** (chapitre 5).
-2. Ouvrez **Exercices** et filtrez par **Jour** ou par **Intention**. Chaque fiche a son schéma, ses consignes et ses variantes pour rendre l'exercice plus difficile ou plus facile (chapitre 7).
+2. Ouvrez **Exercices** et filtrez par **Jour** ou par **Intention**. Chaque fiche se joue en courte animation et a ses consignes et ses variantes pour rendre l'exercice plus difficile ou plus facile (chapitre 7).
 3. Créez votre première séance avec **Nouvelle séance**, ou laissez Mola la composer : « Crée une séance MD-3 » (chapitre 8).
 4. Sur la page **Semaine**, touchez **Planifier la semaine** : Mola compose une séance pour chaque jour de MD-4 à MD-1 encore libre avant le prochain match, en laissant libres le jour d'un autre match et son lendemain. En formule Gratuit, elle s'arrête à cinq séances en tout (chapitre 9).
 5. Préparez le match avec **Nouveau match** : adversaire, composition, plan de jeu, puis la convocation par WhatsApp, SMS ou e-mail, que vous envoyez vous-même (chapitre 11).

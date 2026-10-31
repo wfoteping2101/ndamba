@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url'
 import { createRequire } from 'node:module'
 import { marked } from 'marked'
 import { renderDiagram } from './pitch.mjs'
+import { methodKey, novelKey } from './diagrams.mjs'
 
 const here = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(here, '..')
@@ -54,14 +55,46 @@ function englishTypo(html) {
   return html.split(/(<[^>]+>)/g).map((part) => (part.startsWith('<') ? part : part.replace(/'/g, '’'))).join('')
 }
 
+/* ------------------------------------------------------------------ animated figures */
+// A figure that moves has a film in app/public/video/ (tools/render_videos.mjs): the web readers play it,
+// the print edition keeps the drawing and adds a QR code that opens the film on a phone.
+const SITE = 'https://ndamba-two.vercel.app'
+const requireTools = createRequire(path.join(here, 'package.json'))
+const hasVideo = (key) => !!key && fs.existsSync(path.join(PUBLIC, 'video', 'fr', `${key}.mp4`))
+function qrSVG(text) {
+  const QR = requireTools('qrcode')
+  const q = QR.create(text, { errorCorrectionLevel: 'M' })
+  const n = q.modules.size, m = q.modules.data
+  let d = ''
+  for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) if (m[y * n + x]) d += `M${x + 2} ${y + 2}h1v1h-1z`
+  return `<svg class="qr" viewBox="0 0 ${n + 4} ${n + 4}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR code"><rect width="${n + 4}" height="${n + 4}" fill="#fff"/><path d="${d}" fill="#12211A"/></svg>`
+}
+/** The film of a figure in the web reader (the drawing when there is no film). */
+function webFigure(key, svg, cls = '', caption = '') {
+  if (!hasVideo(key)) return `<figure class="diagram ${cls}">${caption ? `<figcaption>${caption}</figcaption>` : ''}${svg}</figure>`
+  return `<figure class="diagram anim ${cls}">${caption ? `<figcaption>${caption}</figcaption>` : ''}<video controls playsinline loop preload="none" poster="/video/poster/${key}.webp" aria-label="Animation du schéma"><source src="/video/fr/${key}.mp4" type="video/mp4"></video><p class="anim-hint">Animation : appuyez sur lecture pour voir le mouvement, étape par étape.</p></figure>`
+}
+/** In print: the drawing, and the QR code of its film. */
+function qrBlock(key) {
+  return hasVideo(key) ? `<div class="anim-qr">${qrSVG(`${SITE}/video/fr/${key}.mp4`)}<span>Scannez pour<br>voir l’animation</span></div>` : ''
+}
+function printFigure(key, svg, cls = '', caption = '') {
+  return `<figure class="diagram ${cls}">${caption ? `<figcaption>${caption}</figcaption>` : ''}${svg}${qrBlock(key)}</figure>`
+}
+
 function schemaSVG(json, width = 620, title = '') {
   try { return renderDiagram(JSON.parse(json), { width, title }) } catch (e) { return `<!-- schema error: ${esc(e.message)} -->` }
 }
 
 /** Markdown to HTML with schema blocks, callouts and drill references. */
-function renderMarkdown(md, { callouts = {}, drillLinks = false, diagramWidth = 620 } = {}) {
+function renderMarkdown(md, { callouts = {}, drillLinks = false, diagramWidth = 620, figKey = null, mode = 'web' } = {}) {
   const svgs = []
-  md = md.replace(/```schema\n([\s\S]*?)```/g, (_, json) => { svgs.push(schemaSVG(json, diagramWidth)); return `\n\nSCHEMAPLACEHOLDER${svgs.length - 1}X\n\n` })
+  md = md.replace(/```schema\n([\s\S]*?)```/g, (_, json) => {
+    const svg = schemaSVG(json, diagramWidth)
+    const key = figKey ? figKey(svgs.length + 1) : null
+    svgs.push(key ? (mode === 'print' ? printFigure(key, svg) : webFigure(key, svg)) : `<figure class="diagram">${svg}</figure>`)
+    return `\n\nSCHEMAPLACEHOLDER${svgs.length - 1}X\n\n`
+  })
   // callouts: consecutive "> " lines whose first line is "> [!TYPE] Title"
   const lines = md.split('\n')
   const out = []
@@ -77,8 +110,8 @@ function renderMarkdown(md, { callouts = {}, drillLinks = false, diagramWidth = 
     } else out.push(lines[i])
   }
   let html = marked.parse(out.join('\n'))
-  html = html.replace(/<p>SCHEMAPLACEHOLDER(\d+)X<\/p>/g, (_, i) => `<figure class="diagram">${svgs[Number(i)]}</figure>`)
-  html = html.replace(/SCHEMAPLACEHOLDER(\d+)X/g, (_, i) => `<figure class="diagram">${svgs[Number(i)]}</figure>`)
+  html = html.replace(/<p>SCHEMAPLACEHOLDER(\d+)X<\/p>/g, (_, i) => svgs[Number(i)])
+  html = html.replace(/SCHEMAPLACEHOLDER(\d+)X/g, (_, i) => svgs[Number(i)])
   if (drillLinks) html = html.replace(/\[\[([A-Z]\d\d)\]\]/g, (_, c) => `<a class="drill-ref" href="#drill-${c}">${c}</a>`)
   return html
 }
@@ -219,7 +252,7 @@ function tome1Chapters() {
   })
 }
 
-function carnetHTML(raw, width) {
+function carnetHTML(raw, width, key = null, mode = 'web') {
   if (!raw.trim()) return ''
   const schema = raw.match(/```schema\n([\s\S]*?)```/)
   const quote = raw.replace(/```schema\n[\s\S]*?```/, '').trim().split('\n').filter((l) => l.startsWith('>'))
@@ -227,7 +260,7 @@ function carnetHTML(raw, width) {
   const hm = head.match(/^Leçon du Ballon n°\s*(\d+)\s*:\s*(.*)$/i)
   const lines = quote.slice(1).map((l) => l.replace(/^>\s?/, ''))
   const body = marked.parse(lines.join('\n'))
-  return `<aside class="carnet"><div class="carnet-band"></div><div class="carnet-inner"><div class="carnet-kicker">Leçon du Ballon n°${hm ? hm[1] : ''}</div><div class="carnet-title">${esc(hm ? hm[2] : head)}</div><div class="carnet-body">${body}</div>${schema ? `<figure class="diagram carnet-diagram">${schemaSVG(schema[1], width)}</figure>` : ''}</div></aside>`
+  return `<aside class="carnet"><div class="carnet-band"></div><div class="carnet-inner"><div class="carnet-kicker">Leçon du Ballon n°${hm ? hm[1] : ''}</div><div class="carnet-title">${esc(hm ? hm[2] : head)}</div><div class="carnet-body">${body}</div>${schema ? (mode === 'print' ? printFigure(key, schemaSVG(schema[1], width), 'carnet-diagram') : webFigure(key, schemaSVG(schema[1], width), 'carnet-diagram')) : ''}</div></aside>`
 }
 
 async function buildTome1() {
@@ -281,7 +314,7 @@ async function buildTome1() {
     const { md, figs } = withBeats(c)
     let story = frenchTypo(renderMarkdown(md))
     story = story.replace(/<p>BEATPLACEHOLDER(\d+)X<\/p>/g, (_, k) => beatFigure(figs[Number(k)], mode)).replace(/BEATPLACEHOLDER\d+X/g, '')
-    const carnet = frenchTypo(carnetHTML(c.carnetRaw, mode === 'print' ? 520 : 620))
+    const carnet = frenchTypo(carnetHTML(c.carnetRaw, mode === 'print' ? 520 : 620, novelKey(c.file, 1), mode))
     return { story, carnet, beats: figs.length }
   }
 
@@ -384,16 +417,18 @@ function coachDrills() {
   return out.sort((a, b) => FAM_ORDER.indexOf(a.family) - FAM_ORDER.indexOf(b.family) || a.order - b.order)
 }
 
-function drillHTML(d, width) {
+function drillHTML(d, width, mode = 'web') {
+  // in print the drill sheet keeps one page: the drawings, and one QR code (the main film) in the header
+  const fig = (key, svg, cls = '', caption = '') => (mode === 'print' ? `<figure class="diagram ${cls}">${caption ? `<figcaption>${caption}</figcaption>` : ''}${svg}</figure>` : webFigure(key, svg, cls, caption))
   const t = d.fr
   const li = (arr) => `<ul>${(arr || []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`
   return frenchTypo(`<article class="drill" id="drill-${d.id}" style="--fam:${FAMILY_COLOR[d.family] || '#1F4D3A'}">
-<header class="drill-head"><div class="drill-code">${d.id}</div><div><div class="drill-family">${esc(FAMILY_FR[d.family])}</div><h3>${esc(t.title)}</h3><p class="drill-sub">${esc(t.subtitle)}</p></div></header>
+<header class="drill-head"><div class="drill-code">${d.id}</div><div><div class="drill-family">${esc(FAMILY_FR[d.family])}</div><h3>${esc(t.title)}</h3><p class="drill-sub">${esc(t.subtitle)}</p></div>${mode === 'print' ? qrBlock(`${d.id}-1`) : ''}</header>
 <div class="drill-meta"><span><b>Âge</b> ${esc(d.ages)}</span><span><b>Joueurs</b> ${esc(d.players?.fr)}</span><span><b>Espace</b> ${d.space?.w} x ${d.space?.h} m</span><span><b>Durée</b> ${esc(d.duration?.fr)}</span><span><b>Jour</b> ${esc((d.md || []).join(', ').replace('youth', 'Jeunes'))}</span><span><b>Intensité</b> ${esc(INTENSITY_FR[d.intensity])}</span><span><b>Intentions</b> ${esc((d.intentions || []).map((i) => INTENT_FR[i]).join(', '))}</span></div>
-<figure class="diagram">${renderDiagram(d.diagram, { width })}</figure>
+${fig(`${d.id}-1`, renderDiagram(d.diagram, { width }))}
 <p class="drill-objective">${esc(t.objective)}</p>
 <div class="drill-cols"><div><h4>Organisation</h4>${li(t.organisation)}<h4>Règles</h4>${li(t.rules)}</div><div><h4>Consignes</h4>${li(t.coaching)}<h4>Progressions</h4>${li(t.progressions)}<h4>Régressions</h4>${li(t.regressions)}</div></div>
-${d.diagram2 ? `<figure class="diagram diagram2"><figcaption>Progression</figcaption>${renderDiagram(d.diagram2, { width: Math.round(width * 0.8) })}</figure>` : ''}
+${d.diagram2 ? fig(`${d.id}-2`, renderDiagram(d.diagram2, { width: Math.round(width * 0.8) }), 'diagram2', 'Progression') : ''}
 <p class="drill-measure"><b>À mesurer.</b> ${esc(t.measure)}</p>
 ${t.story ? `<p class="drill-story">${esc(t.story)}</p>` : ''}
 </article>`)
@@ -408,7 +443,7 @@ async function buildMethode() {
   const words = chapters.reduce((s, c) => s + (c.body.replace(/```[\s\S]*?```/g, '').match(/[\p{L}\p{N}][\p{L}\p{N}'’\-]*/gu) || []).length, 0)
   const parts = []
   for (const c of chapters) { if (!parts.find((p) => p.part === c.part)) parts.push({ part: c.part, title: c.partTitle }) }
-  const chapterHTML = (c, width) => frenchTypo(renderMarkdown(c.body, { callouts: COACH_CALLOUTS, drillLinks: true, diagramWidth: width }))
+  const chapterHTML = (c, width, mode = 'web') => frenchTypo(renderMarkdown(c.body, { callouts: COACH_CALLOUTS, drillLinks: true, diagramWidth: width, figKey: (i) => methodKey(c.file, i), mode }))
   const drillsAfter = 31 // the drill sheets follow chapter 31 "Comment utiliser les fiches"
   const ANNEX_PART = 10, DRILL_PART = 7
 
@@ -484,13 +519,13 @@ ${drillMap}<script>${PAGED_JS('njangi.methode')}</script></body></html>`
   let lastPart = -1
   for (const c of chapters) {
     if (c.part !== lastPart) { lastPart = c.part; if (c.part >= 1 && c.part < ANNEX_PART) pages += `<section class="pg part-page"><div class="kicker">Partie ${c.part}</div><h2>${esc(c.partTitle || '')}</h2></section>` }
-    pages += `<section class="pg chapter"><header><div class="kicker">${c.no ? 'Chapitre ' + c.no : esc(c.partTitle || '')}</div><h2>${frenchTypo(esc(c.title))}</h2></header><div class="story">${chapterHTML(c, 560).replace(/href="#drill-/g, 'data-drill="')}</div></section>`
+    pages += `<section class="pg chapter"><header><div class="kicker">${c.no ? 'Chapitre ' + c.no : esc(c.partTitle || '')}</div><h2>${frenchTypo(esc(c.title))}</h2></header><div class="story">${chapterHTML(c, 560, 'print').replace(/href="#drill-/g, 'data-drill="')}</div></section>`
     if (c.no === drillsAfter) {
       for (const fam of FAM_ORDER) {
         const list = drills.filter((d) => d.family === fam)
         if (!list.length) continue
         pages += `<section class="pg fam-page" style="--fam:${FAMILY_COLOR[fam]}"><div class="kicker">Les ${drills.length} exercices</div><h2>${esc(FAMILY_FR[fam])}</h2><ol>${list.map((d) => `<li><b>${d.id}</b> ${esc(d.fr.title)}</li>`).join('')}</ol></section>`
-        pages += list.map((d) => `<section class="pg drill-page">${drillHTML(d, 560)}</section>`).join('')
+        pages += list.map((d) => `<section class="pg drill-page">${drillHTML(d, 560, 'print')}</section>`).join('')
       }
     }
   }
@@ -588,6 +623,7 @@ main{max-width:720px;margin:0 auto;padding:0 18px 80px}
 .story h2{font-family:Fraunces,Georgia,serif;font-size:25px;margin:1.6em 0 .4em}.story h3{font-family:Fraunces,Georgia,serif;font-size:20px;margin:1.4em 0 .3em}
 .story ul,.story ol{padding-left:1.3em}.story table{width:100%;border-collapse:collapse;font:14px/1.45 Inter,sans-serif;margin:1em 0;display:block;overflow-x:auto}.story th,.story td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}.story th{font-weight:700;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
 figure.diagram{margin:18px 0}figure.diagram svg{width:100%;height:auto;display:block;border-radius:12px}
+figure.anim video{width:100%;height:auto;aspect-ratio:16/9;display:block;border-radius:12px;background:#3E7A44}.anim-hint{font:12.5px/1.45 Inter,sans-serif;color:var(--muted);margin:6px 2px 0}.carnet .anim-hint{color:inherit;opacity:.75}
 .end{margin:60px 0 0;text-align:center;font-style:italic;color:var(--soft)}.end a{font:700 14px Inter,sans-serif;font-style:normal}
 .drawer{position:fixed;inset:0;z-index:50;background:rgba(10,16,13,.5)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(420px,92vw);background:var(--paper);overflow-y:auto;padding:18px}.drawer button{font:600 13px Inter,sans-serif;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;margin-bottom:8px}
 .drawer .toc-part li a{font-size:15px}
@@ -632,6 +668,9 @@ img{display:block}.pg{break-before:page}.pg:first-child{break-before:auto}
 .cover-page{page:cover}.illus-page{page:full}
 .kicker{font:700 8pt Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#C5762F}
 figure.diagram{margin:10pt 0;break-inside:avoid}figure.diagram svg{width:100%;height:auto;display:block}
+figure.diagram .anim-qr,.anim-qr{display:flex;align-items:center;gap:5pt;margin:4pt 0 0;font:6.6pt/1.25 Inter,sans-serif;color:#66706A;break-inside:avoid}
+figure.diagram .anim-qr svg.qr,.drill figure.diagram .anim-qr svg.qr,.anim-qr svg.qr{width:.55in;height:.55in;max-height:none;flex:none;margin:0;display:block}
+.drill-head .anim-qr{margin:0 0 0 auto;flex-direction:column;gap:1.5pt;text-align:center}.drill-head .anim-qr svg.qr{width:.62in;height:.62in}
 `
 
 const TOME1_PRINT_CSS = PRINT_BASE + `

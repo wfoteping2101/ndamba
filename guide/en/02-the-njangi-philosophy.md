@@ -49,7 +49,7 @@ To answer "what is your pass preparing?", the method offers seven words. The fir
 | **Win it back** (*Reprendre*) | Five seconds of counter-press after losing the ball | The whole team presses the ball where it has just lost it |
 | **Look forward** (*Regarder devant*) | After winning the ball, look forward first | The player who wins it looks for the forward pass before anything else |
 
-![The sheet for drill C01, The Njangi Y, with its two intentions Progress and Pin, its diagram and its days MD-2, MD-1 and Youth.](shot:pro-drill-detail "Every drill shows the intentions it trains, here Progress and Pin.")
+![The sheet for drill C01, The Njangi Y, with its two intentions Progress and Pin, its animation and its days MD-2, MD-1 and Youth.](shot:pro-drill-detail "Every drill shows the intentions it trains, here Progress and Pin.")
 
 For children, seven words are still too many. The novel gives them five simpler images, the five pieces of the Njangi, one for each country the brothers live in: the heart (playing together, in Cameroon), the reason (every pass has a purpose, in the United States), the eyes (look before you receive, in France), the map (be in the right place, in Catalonia) and the breath (keep the ball even when it burns, in England). Drill sheets also list their **Pieces of the Njangi**. Around the age of 15, the five pieces blend into the seven words the adults use.
 

@@ -10,11 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
     "@fontsource-variable/fraunces": "^5.3.0",
     "@fontsource/anton": "^5.3.0",
     "@fontsource/fraunces": "^5.3.0",
     "@fontsource/inter": "^5.3.0",
     "@fontsource/literata": "^5.3.0",
-    "marked": "^14.1.4"
+    "@napi-rs/canvas": "^1.1.0",
+    "marked": "^14.1.4",
+    "qrcode": "^1.5.4"
   }
 }

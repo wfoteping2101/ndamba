@@ -1,0 +1,22 @@
+{
+  "play": "Lire l'animation",
+  "playTitle": "Lire l'animation : {{title}}",
+  "resume": "Reprendre",
+  "pause": "Pause",
+  "prevStep": "Étape précédente",
+  "nextStep": "Étape suivante",
+  "seek": "Avancer dans l'animation",
+  "speed": "Vitesse : {{speed}}",
+  "normal": "normale",
+  "slow": "ralenti",
+  "half": "0,5×",
+  "full": "Plein écran",
+  "exitFull": "Quitter le plein écran",
+  "download": "Télécharger la vidéo (MP4)",
+  "start": "Placement de départ",
+  "whole": "Le mouvement complet",
+  "steps": "Le mouvement, étape par étape",
+  "stepsHint": "Touchez une étape pour la revoir",
+  "label": "Animation : {{title}}",
+  "labelPlain": "Animation du schéma"
+}

@@ -37,7 +37,7 @@ Each lesson looks like a page of a lined exercise book:
 - the **Lesson 1** label and the chapter it comes from ("Chapter 1: The patched ball");
 - the lesson title, written as if by hand ("The ball must travel");
 - the lines of the notebook, with the chapter illustration pinned beside them;
-- **The notebook diagram**, a drawing of the situation on a pitch (39 lessons out of 40 have one);
+- **The notebook diagram**, the situation on a pitch, played as an animation: tap play and the players move, step by step, with a caption for each step (39 lessons out of 40 have one);
 - the **I've got it** and **Read chapter 1** buttons, the second opening the chapter in the novel;
 - **The matching challenge**, when a challenge in the player space trains the same idea, and the linked drill from The Njangi Code (for example **Drill R07**, The Njangi Rondo);
 - the **Write in my notebook** link.
