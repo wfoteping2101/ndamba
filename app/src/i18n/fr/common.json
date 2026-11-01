@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": {
     "books": "Les livres",
     "app": "L'application",
@@ -8,7 +8,7 @@
     "openApp": "Ouvrir l'app",
     "menu": "Menu",
     "close": "Fermer le menu",
-    "football": "Jeu de foot",
+    "football": "Ndamba Soccer Pixel",
     "guide": "Le guide"
   },
   "footer": {
@@ -58,7 +58,7 @@
     "mainNav": "Navigation principale",
     "teamLine": "{{age}}, {{format}} contre {{format}}, {{formation}}",
     "switchTeam": "Changer d'équipe",
-    "football": "Jeu de foot",
+    "football": "Ndamba Soccer Pixel",
     "guide": "Guide",
     "howItWorks": "Comment ça marche ? Guide, chapitre {{n}}"
   },
