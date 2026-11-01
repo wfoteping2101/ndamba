@@ -1,120 +1,794 @@
 {
-  "title": {"fr": "NDAMBA", "en": "NDAMBA"},
-  "subtitle": {"fr": "Les Lionceaux, Football des Quartiers", "en": "Les Lionceaux, Neighbourhood Football"},
-  "dedication.1": {"fr": "Pour BriBri et Kaydoudou.", "en": "For BriBri and Kaydoudou."},
-  "dedication.2": {"fr": "Pour tous les enfants qui ont appris à rêver avec un ballon, sur un terrain de terre, au milieu de leur quartier.", "en": "For every child who learned to dream with a ball, on a dirt pitch, in the middle of their neighbourhood."},
-  "press_start": {"fr": "Appuie sur un bouton", "en": "Press any button"},
-  "menu.play": {"fr": "Match amical", "en": "Friendly match"},
-  "menu.story": {"fr": "Les Lionceaux (histoire)", "en": "Les Lionceaux (story)"},
-  "menu.cup": {"fr": "Coupe des Quartiers", "en": "Coupe des Quartiers"},
-  "menu.league": {"fr": "Ligue des Quartiers", "en": "Ligue des Quartiers"},
-  "menu.academy": {"fr": "Académie Njangi", "en": "Njangi Academy"},
-  "menu.watch": {"fr": "Regarder un match (CPU contre CPU)", "en": "Watch a match (CPU vs CPU)"},
-  "menu.settings": {"fr": "Réglages", "en": "Settings"},
-  "menu.quit": {"fr": "Quitter", "en": "Quit"},
-  "menu.soon": {"fr": "bientôt", "en": "soon"},
-  "menu.language": {"fr": "Langue : Français", "en": "Language: English"},
-  "setup.title": {"fr": "Match amical", "en": "Friendly match"},
-  "setup.home": {"fr": "Domicile", "en": "Home"},
-  "setup.away": {"fr": "Visiteur", "en": "Away"},
-  "setup.stadium": {"fr": "Terrain", "en": "Ground"},
-  "setup.half": {"fr": "Mi-temps", "en": "Half length"},
-  "setup.minutes": {"fr": "{n} min", "en": "{n} min"},
-  "setup.difficulty": {"fr": "Difficulté", "en": "Difficulty"},
-  "setup.weather": {"fr": "Météo", "en": "Weather"},
-  "setup.dry": {"fr": "Sec", "en": "Dry"},
-  "setup.rain": {"fr": "Pluie", "en": "Rain"},
-  "setup.you": {"fr": "Tu joues", "en": "You play"},
-  "setup.two_players": {"fr": "2 joueurs (J1 domicile, J2 visiteur)", "en": "2 players (P1 home, P2 away)"},
-  "setup.kickoff": {"fr": "COUP D'ENVOI", "en": "KICK OFF"},
-  "setup.back": {"fr": "Retour", "en": "Back"},
-  "setup.strength": {"fr": "Niveau {n}", "en": "Level {n}"},
-  "diff.beginner": {"fr": "Débutant", "en": "Beginner"},
-  "diff.casual": {"fr": "Tranquille", "en": "Casual"},
-  "diff.intermediate": {"fr": "Normal", "en": "Intermediate"},
-  "diff.advanced": {"fr": "Avancé", "en": "Advanced"},
-  "diff.expert": {"fr": "Expert", "en": "Expert"},
-  "hud.half1": {"fr": "1re mi-temps", "en": "1st half"},
-  "hud.half2": {"fr": "2e mi-temps", "en": "2nd half"},
-  "hud.halftime": {"fr": "MI-TEMPS", "en": "HALF TIME"},
-  "hud.fulltime": {"fr": "FIN DU MATCH", "en": "FULL TIME"},
-  "hud.goal": {"fr": "BUUUT !", "en": "GOOOAL!"},
-  "hud.kickoff": {"fr": "Coup d'envoi", "en": "Kick-off"},
-  "hud.kickin": {"fr": "Touche", "en": "Kick-in"},
-  "hud.corner": {"fr": "Corner", "en": "Corner"},
-  "hud.goalkick": {"fr": "Six mètres", "en": "Goal kick"},
-  "hud.freekick": {"fr": "Coup franc", "en": "Free kick"},
-  "hud.penalty": {"fr": "Penalty", "en": "Penalty"},
-  "hud.pause": {"fr": "PAUSE", "en": "PAUSED"},
-  "hud.resume": {"fr": "Reprendre", "en": "Resume"},
-  "hud.restart": {"fr": "Recommencer", "en": "Restart"},
-  "hud.quit_match": {"fr": "Quitter le match", "en": "Quit match"},
-  "hud.controls": {"fr": "Commandes", "en": "Controls"},
-  "hud.pass_hint": {"fr": "Passe", "en": "Pass"},
-  "hud.shoot_hint": {"fr": "Tir", "en": "Shoot"},
-  "hud.through_hint": {"fr": "Passe en profondeur", "en": "Through ball"},
-  "hud.sprint_hint": {"fr": "Sprint", "en": "Sprint"},
-  "hud.switch_hint": {"fr": "Changer de joueur", "en": "Switch player"},
-  "hud.tackle_hint": {"fr": "Tacle (sans ballon : Passe) / Glissade (Tir)", "en": "Tackle (no ball: Pass) / Slide (Shoot)"},
-  "result.title": {"fr": "Fin du match", "en": "Full time"},
-  "result.shots": {"fr": "Tirs", "en": "Shots"},
-  "result.on_target": {"fr": "Cadrés", "en": "On target"},
-  "result.possession": {"fr": "Possession", "en": "Possession"},
-  "result.passes": {"fr": "Passes réussies", "en": "Passes completed"},
-  "result.tackles": {"fr": "Tacles", "en": "Tackles"},
-  "result.corners": {"fr": "Corners", "en": "Corners"},
-  "result.fouls": {"fr": "Fautes", "en": "Fouls"},
-  "result.scorers": {"fr": "Buteurs", "en": "Scorers"},
-  "result.again": {"fr": "Rejouer", "en": "Play again"},
-  "result.menu": {"fr": "Menu", "en": "Menu"},
-  "result.win": {"fr": "Victoire !", "en": "You win!"},
-  "result.lose": {"fr": "Défaite", "en": "You lose"},
-  "result.draw": {"fr": "Match nul", "en": "Draw"},
-  "settings.title": {"fr": "Réglages", "en": "Settings"},
-  "settings.music": {"fr": "Musique", "en": "Music"},
-  "settings.sfx": {"fr": "Effets", "en": "Sound effects"},
-  "settings.commentary": {"fr": "Commentaires", "en": "Commentary"},
-  "settings.assist": {"fr": "Aide à la visée", "en": "Aim assist"},
-  "settings.simple": {"fr": "Commandes simples (enfants)", "en": "Simple controls (kids)"},
-  "settings.touch": {"fr": "Commandes tactiles", "en": "Touch controls"},
-  "settings.touch_size": {"fr": "Taille des boutons", "en": "Button size"},
-  "settings.touch_opacity": {"fr": "Opacité des boutons", "en": "Button opacity"},
-  "settings.left_handed": {"fr": "Gaucher (boutons à gauche)", "en": "Left-handed (buttons on the left)"},
-  "settings.reduced_motion": {"fr": "Moins d'animations", "en": "Reduced motion"},
-  "settings.auto": {"fr": "Auto", "en": "Auto"},
-  "settings.on": {"fr": "Oui", "en": "On"},
-  "settings.off": {"fr": "Non", "en": "Off"},
-  "credits": {"fr": "Un jeu de William Foteping, Lemon Network Solutions. Pixel art, code et sons originaux.", "en": "A game by William Foteping, Lemon Network Solutions. Original pixel art, code and sound."},
-  "com.shot.1": {"fr": "Il tente sa chance !", "en": "Going for it!"},
-  "com.shot.2": {"fr": "Elle frappe !", "en": "A strike!"},
-  "com.shot.3": {"fr": "Tir !", "en": "Shot!"},
-  "com.goal.1": {"fr": "BUUUT ! {name} pour {team} !", "en": "GOOOAL! {name} for {team}!"},
-  "com.goal.2": {"fr": "BUUUT ! Le quartier explose ! {name} !", "en": "GOOOAL! The whole neighbourhood erupts! {name}!"},
-  "com.goal.3": {"fr": "BUUUT DE {team} ! Et c'est {name} !", "en": "{team} SCORE! And it is {name}!"},
-  "com.own_goal.1": {"fr": "Oh non, c'est contre son camp ! But pour {team}.", "en": "Oh no, an own goal! It counts for {team}."},
-  "com.save.1": {"fr": "Quel arrêt !", "en": "What a save!"},
-  "com.save.2": {"fr": "Le gardien de {team} capte ça !", "en": "The {team} keeper holds on to it!"},
-  "com.save.3": {"fr": "Grandes mains du gardien !", "en": "Big hands from the keeper!"},
-  "com.parry.1": {"fr": "Repoussé par le gardien !", "en": "Pushed away by the keeper!"},
-  "com.parry.2": {"fr": "Il détourne, c'est chaud devant le but !", "en": "Parried, and it is hot in front of goal!"},
-  "com.post.1": {"fr": "Le poteau ! Le bambou tremble !", "en": "The post! The bamboo is shaking!"},
-  "com.post.2": {"fr": "Sur le montant !", "en": "Off the woodwork!"},
-  "com.tackle.1": {"fr": "Superbe tacle !", "en": "Superb tackle!"},
-  "com.tackle.2": {"fr": "{team} récupère le ballon !", "en": "{team} win the ball back!"},
-  "com.tackle.3": {"fr": "Le ballon est repris, bien joué.", "en": "Ball won back, well done."},
-  "com.foul.1": {"fr": "Faute ! Coup franc pour {team}.", "en": "Foul! Free kick for {team}."},
-  "com.foul.2": {"fr": "Tonton Fokou n'aurait pas aimé ça. Faute.", "en": "Tonton Fokou would not have liked that one. Foul."},
-  "com.out.1": {"fr": "Touche pour {team}.", "en": "Kick-in for {team}."},
-  "com.out.2": {"fr": "Sorti en touche, derrière les chaises en plastique.", "en": "Out of play, behind the plastic chairs."},
-  "com.corner.1": {"fr": "Corner pour {team} !", "en": "Corner for {team}!"},
-  "com.corner.2": {"fr": "Corner ! Tout le monde monte.", "en": "Corner! Everybody comes up."},
-  "com.goalkick.1": {"fr": "Six mètres pour {team}.", "en": "Goal kick for {team}."},
-  "com.chain.1": {"fr": "Quelle circulation ! Le ballon voyage !", "en": "What movement! The ball is travelling!"},
-  "com.chain.2": {"fr": "Cinq passes de suite : le njangi tourne !", "en": "Five passes in a row: the njangi is turning!"},
-  "com.intercept.1": {"fr": "Intercepté par {team} !", "en": "Intercepted by {team}!"},
-  "com.intercept.2": {"fr": "Passe coupée, {team} relance.", "en": "Pass cut out, {team} break."},
-  "com.halftime.1": {"fr": "Mi-temps ! Les beignets de Madame Ekotto n'attendent pas.", "en": "Half time! Madame Ekotto's beignets are not waiting."},
-  "com.secondhalf.1": {"fr": "C'est reparti pour la seconde mi-temps !", "en": "Here we go for the second half!"},
-  "com.fulltime.1": {"fr": "C'est fini ! Fin du match.", "en": "That is it! Full time."},
-  "com.kickoff.1": {"fr": "Coup d'envoi !", "en": "Kick-off!"}
+  "title": {
+    "fr": "NDAMBA",
+    "en": "NDAMBA"
+  },
+  "subtitle": {
+    "fr": "Soccer Pixel. Les Lionceaux, Football des Quartiers",
+    "en": "Soccer Pixel. Les Lionceaux, Neighbourhood Football"
+  },
+  "dedication.1": {
+    "fr": "Pour BriBri et Kaydoudou.",
+    "en": "For BriBri and Kaydoudou."
+  },
+  "dedication.2": {
+    "fr": "Pour tous les enfants qui ont appris à rêver avec un ballon, sur un terrain de terre, au milieu de leur quartier.",
+    "en": "For every child who learned to dream with a ball, on a dirt pitch, in the middle of their neighbourhood."
+  },
+  "press_start": {
+    "fr": "Appuie sur un bouton",
+    "en": "Press any button"
+  },
+  "menu.play": {
+    "fr": "Match amical",
+    "en": "Friendly match"
+  },
+  "menu.story": {
+    "fr": "Les Lionceaux (histoire)",
+    "en": "Les Lionceaux (story)"
+  },
+  "menu.cup": {
+    "fr": "Coupe des Quartiers",
+    "en": "Coupe des Quartiers"
+  },
+  "menu.league": {
+    "fr": "Ligue des Quartiers",
+    "en": "Ligue des Quartiers"
+  },
+  "menu.academy": {
+    "fr": "Académie Njangi",
+    "en": "Njangi Academy"
+  },
+  "menu.watch": {
+    "fr": "Regarder un match (CPU contre CPU)",
+    "en": "Watch a match (CPU vs CPU)"
+  },
+  "menu.settings": {
+    "fr": "Réglages",
+    "en": "Settings"
+  },
+  "menu.quit": {
+    "fr": "Quitter",
+    "en": "Quit"
+  },
+  "menu.soon": {
+    "fr": "bientôt",
+    "en": "soon"
+  },
+  "menu.language": {
+    "fr": "Langue : Français",
+    "en": "Language: English"
+  },
+  "setup.title": {
+    "fr": "Match amical",
+    "en": "Friendly match"
+  },
+  "setup.home": {
+    "fr": "Domicile",
+    "en": "Home"
+  },
+  "setup.away": {
+    "fr": "Visiteur",
+    "en": "Away"
+  },
+  "setup.stadium": {
+    "fr": "Terrain",
+    "en": "Ground"
+  },
+  "setup.half": {
+    "fr": "Mi-temps",
+    "en": "Half length"
+  },
+  "setup.minutes": {
+    "fr": "{n} min",
+    "en": "{n} min"
+  },
+  "setup.difficulty": {
+    "fr": "Difficulté",
+    "en": "Difficulty"
+  },
+  "setup.weather": {
+    "fr": "Météo",
+    "en": "Weather"
+  },
+  "setup.dry": {
+    "fr": "Sec",
+    "en": "Dry"
+  },
+  "setup.rain": {
+    "fr": "Pluie",
+    "en": "Rain"
+  },
+  "setup.you": {
+    "fr": "Tu joues",
+    "en": "You play"
+  },
+  "setup.two_players": {
+    "fr": "2 joueurs (J1 domicile, J2 visiteur)",
+    "en": "2 players (P1 home, P2 away)"
+  },
+  "setup.kickoff": {
+    "fr": "COUP D'ENVOI",
+    "en": "KICK OFF"
+  },
+  "setup.back": {
+    "fr": "Retour",
+    "en": "Back"
+  },
+  "setup.strength": {
+    "fr": "Niveau {n}",
+    "en": "Level {n}"
+  },
+  "diff.beginner": {
+    "fr": "Débutant",
+    "en": "Beginner"
+  },
+  "diff.casual": {
+    "fr": "Tranquille",
+    "en": "Casual"
+  },
+  "diff.intermediate": {
+    "fr": "Normal",
+    "en": "Intermediate"
+  },
+  "diff.advanced": {
+    "fr": "Avancé",
+    "en": "Advanced"
+  },
+  "diff.expert": {
+    "fr": "Expert",
+    "en": "Expert"
+  },
+  "hud.half1": {
+    "fr": "1re mi-temps",
+    "en": "1st half"
+  },
+  "hud.half2": {
+    "fr": "2e mi-temps",
+    "en": "2nd half"
+  },
+  "hud.halftime": {
+    "fr": "MI-TEMPS",
+    "en": "HALF TIME"
+  },
+  "hud.fulltime": {
+    "fr": "FIN DU MATCH",
+    "en": "FULL TIME"
+  },
+  "hud.goal": {
+    "fr": "BUUUT !",
+    "en": "GOOOAL!"
+  },
+  "hud.kickoff": {
+    "fr": "Coup d'envoi",
+    "en": "Kick-off"
+  },
+  "hud.kickin": {
+    "fr": "Touche",
+    "en": "Kick-in"
+  },
+  "hud.corner": {
+    "fr": "Corner",
+    "en": "Corner"
+  },
+  "hud.goalkick": {
+    "fr": "Six mètres",
+    "en": "Goal kick"
+  },
+  "hud.freekick": {
+    "fr": "Coup franc",
+    "en": "Free kick"
+  },
+  "hud.penalty": {
+    "fr": "Penalty",
+    "en": "Penalty"
+  },
+  "hud.pause": {
+    "fr": "PAUSE",
+    "en": "PAUSED"
+  },
+  "hud.resume": {
+    "fr": "Reprendre",
+    "en": "Resume"
+  },
+  "hud.restart": {
+    "fr": "Recommencer",
+    "en": "Restart"
+  },
+  "hud.quit_match": {
+    "fr": "Quitter le match",
+    "en": "Quit match"
+  },
+  "hud.controls": {
+    "fr": "Commandes",
+    "en": "Controls"
+  },
+  "hud.pass_hint": {
+    "fr": "Passe",
+    "en": "Pass"
+  },
+  "hud.shoot_hint": {
+    "fr": "Tir",
+    "en": "Shoot"
+  },
+  "hud.through_hint": {
+    "fr": "Passe en profondeur",
+    "en": "Through ball"
+  },
+  "hud.sprint_hint": {
+    "fr": "Sprint",
+    "en": "Sprint"
+  },
+  "hud.switch_hint": {
+    "fr": "Changer de joueur",
+    "en": "Switch player"
+  },
+  "hud.tackle_hint": {
+    "fr": "Tacle (sans ballon : Passe) / Glissade (Tir)",
+    "en": "Tackle (no ball: Pass) / Slide (Shoot)"
+  },
+  "result.title": {
+    "fr": "Fin du match",
+    "en": "Full time"
+  },
+  "result.shots": {
+    "fr": "Tirs",
+    "en": "Shots"
+  },
+  "result.on_target": {
+    "fr": "Cadrés",
+    "en": "On target"
+  },
+  "result.possession": {
+    "fr": "Possession",
+    "en": "Possession"
+  },
+  "result.passes": {
+    "fr": "Passes réussies",
+    "en": "Passes completed"
+  },
+  "result.tackles": {
+    "fr": "Tacles",
+    "en": "Tackles"
+  },
+  "result.corners": {
+    "fr": "Corners",
+    "en": "Corners"
+  },
+  "result.fouls": {
+    "fr": "Fautes",
+    "en": "Fouls"
+  },
+  "result.scorers": {
+    "fr": "Buteurs",
+    "en": "Scorers"
+  },
+  "result.again": {
+    "fr": "Rejouer",
+    "en": "Play again"
+  },
+  "result.menu": {
+    "fr": "Menu",
+    "en": "Menu"
+  },
+  "result.win": {
+    "fr": "Victoire !",
+    "en": "You win!"
+  },
+  "result.lose": {
+    "fr": "Défaite",
+    "en": "You lose"
+  },
+  "result.draw": {
+    "fr": "Match nul",
+    "en": "Draw"
+  },
+  "settings.title": {
+    "fr": "Réglages",
+    "en": "Settings"
+  },
+  "settings.music": {
+    "fr": "Musique",
+    "en": "Music"
+  },
+  "settings.sfx": {
+    "fr": "Effets",
+    "en": "Sound effects"
+  },
+  "settings.commentary": {
+    "fr": "Commentaires",
+    "en": "Commentary"
+  },
+  "settings.assist": {
+    "fr": "Aide à la visée",
+    "en": "Aim assist"
+  },
+  "settings.simple": {
+    "fr": "Commandes simples (enfants)",
+    "en": "Simple controls (kids)"
+  },
+  "settings.touch": {
+    "fr": "Commandes tactiles",
+    "en": "Touch controls"
+  },
+  "settings.touch_size": {
+    "fr": "Taille des boutons",
+    "en": "Button size"
+  },
+  "settings.touch_opacity": {
+    "fr": "Opacité des boutons",
+    "en": "Button opacity"
+  },
+  "settings.left_handed": {
+    "fr": "Gaucher (boutons à gauche)",
+    "en": "Left-handed (buttons on the left)"
+  },
+  "settings.reduced_motion": {
+    "fr": "Moins d'animations",
+    "en": "Reduced motion"
+  },
+  "settings.auto": {
+    "fr": "Auto",
+    "en": "Auto"
+  },
+  "settings.on": {
+    "fr": "Oui",
+    "en": "On"
+  },
+  "settings.off": {
+    "fr": "Non",
+    "en": "Off"
+  },
+  "credits": {
+    "fr": "Un jeu de William Foteping, Lemon Network Solutions. Pixel art, code et sons originaux.",
+    "en": "A game by William Foteping, Lemon Network Solutions. Original pixel art, code and sound."
+  },
+  "com.shot.1": {
+    "fr": "Il tente sa chance !",
+    "en": "Going for it!"
+  },
+  "com.shot.2": {
+    "fr": "Elle frappe !",
+    "en": "A strike!"
+  },
+  "com.shot.3": {
+    "fr": "Tir !",
+    "en": "Shot!"
+  },
+  "com.goal.1": {
+    "fr": "BUUUT ! {name} pour {team} !",
+    "en": "GOOOAL! {name} for {team}!"
+  },
+  "com.goal.2": {
+    "fr": "BUUUT ! Le quartier explose ! {name} !",
+    "en": "GOOOAL! The whole neighbourhood erupts! {name}!"
+  },
+  "com.goal.3": {
+    "fr": "BUUUT DE {team} ! Et c'est {name} !",
+    "en": "{team} SCORE! And it is {name}!"
+  },
+  "com.own_goal.1": {
+    "fr": "Oh non, c'est contre son camp ! But pour {team}.",
+    "en": "Oh no, an own goal! It counts for {team}."
+  },
+  "com.save.1": {
+    "fr": "Quel arrêt !",
+    "en": "What a save!"
+  },
+  "com.save.2": {
+    "fr": "Le gardien de {team} capte ça !",
+    "en": "The {team} keeper holds on to it!"
+  },
+  "com.save.3": {
+    "fr": "Grandes mains du gardien !",
+    "en": "Big hands from the keeper!"
+  },
+  "com.parry.1": {
+    "fr": "Repoussé par le gardien !",
+    "en": "Pushed away by the keeper!"
+  },
+  "com.parry.2": {
+    "fr": "Il détourne, c'est chaud devant le but !",
+    "en": "Parried, and it is hot in front of goal!"
+  },
+  "com.post.1": {
+    "fr": "Le poteau ! Le bambou tremble !",
+    "en": "The post! The bamboo is shaking!"
+  },
+  "com.post.2": {
+    "fr": "Sur le montant !",
+    "en": "Off the woodwork!"
+  },
+  "com.tackle.1": {
+    "fr": "Superbe tacle !",
+    "en": "Superb tackle!"
+  },
+  "com.tackle.2": {
+    "fr": "{team} récupère le ballon !",
+    "en": "{team} win the ball back!"
+  },
+  "com.tackle.3": {
+    "fr": "Le ballon est repris, bien joué.",
+    "en": "Ball won back, well done."
+  },
+  "com.foul.1": {
+    "fr": "Faute ! Coup franc pour {team}.",
+    "en": "Foul! Free kick for {team}."
+  },
+  "com.foul.2": {
+    "fr": "Tonton Fokou n'aurait pas aimé ça. Faute.",
+    "en": "Tonton Fokou would not have liked that one. Foul."
+  },
+  "com.out.1": {
+    "fr": "Touche pour {team}.",
+    "en": "Kick-in for {team}."
+  },
+  "com.out.2": {
+    "fr": "Sorti en touche, derrière les chaises en plastique.",
+    "en": "Out of play, behind the plastic chairs."
+  },
+  "com.corner.1": {
+    "fr": "Corner pour {team} !",
+    "en": "Corner for {team}!"
+  },
+  "com.corner.2": {
+    "fr": "Corner ! Tout le monde monte.",
+    "en": "Corner! Everybody comes up."
+  },
+  "com.goalkick.1": {
+    "fr": "Six mètres pour {team}.",
+    "en": "Goal kick for {team}."
+  },
+  "com.chain.1": {
+    "fr": "Quelle circulation ! Le ballon voyage !",
+    "en": "What movement! The ball is travelling!"
+  },
+  "com.chain.2": {
+    "fr": "Cinq passes de suite : le njangi tourne !",
+    "en": "Five passes in a row: the njangi is turning!"
+  },
+  "com.intercept.1": {
+    "fr": "Intercepté par {team} !",
+    "en": "Intercepted by {team}!"
+  },
+  "com.intercept.2": {
+    "fr": "Passe coupée, {team} relance.",
+    "en": "Pass cut out, {team} break."
+  },
+  "com.halftime.1": {
+    "fr": "Mi-temps ! Les beignets de Madame Ekotto n'attendent pas.",
+    "en": "Half time! Madame Ekotto's beignets are not waiting."
+  },
+  "com.secondhalf.1": {
+    "fr": "C'est reparti pour la seconde mi-temps !",
+    "en": "Here we go for the second half!"
+  },
+  "com.fulltime.1": {
+    "fr": "C'est fini ! Fin du match.",
+    "en": "That is it! Full time."
+  },
+  "com.kickoff.1": {
+    "fr": "Coup d'envoi !",
+    "en": "Kick-off!"
+  },
+  "touch.pass": {
+    "fr": "Passe",
+    "en": "Pass"
+  },
+  "touch.shoot": {
+    "fr": "Tir",
+    "en": "Shoot"
+  },
+  "touch.through": {
+    "fr": "Geste",
+    "en": "Skill"
+  },
+  "touch.sprint": {
+    "fr": "Sprint",
+    "en": "Sprint"
+  },
+  "touch.switch": {
+    "fr": "Joueur",
+    "en": "Switch"
+  },
+  "intro.capacity": {
+    "fr": "{n} places",
+    "en": "{n} seats"
+  },
+  "intro.vs": {
+    "fr": "contre",
+    "en": "vs"
+  },
+  "intro.format": {
+    "fr": "Format {f}",
+    "en": "{f} format"
+  },
+  "intro.skip": {
+    "fr": "Appuie pour passer",
+    "en": "Press to skip"
+  },
+  "setup.format": {
+    "fr": "Format",
+    "en": "Format"
+  },
+  "setup.speed": {
+    "fr": "Vitesse de jeu",
+    "en": "Game speed"
+  },
+  "speed.slow": {
+    "fr": "Lente",
+    "en": "Slow"
+  },
+  "speed.medium": {
+    "fr": "Moyenne",
+    "en": "Medium"
+  },
+  "speed.fast": {
+    "fr": "Rapide",
+    "en": "Fast"
+  },
+  "settings.speed": {
+    "fr": "Vitesse de jeu",
+    "en": "Game speed"
+  },
+  "settings.names": {
+    "fr": "Noms des joueurs",
+    "en": "Player names"
+  },
+  "menu.manager": {
+    "fr": "Carrière d'entraîneur",
+    "en": "Manager career"
+  },
+  "menu.continue": {
+    "fr": "Continuer",
+    "en": "Continue"
+  },
+  "result.continue": {
+    "fr": "Continuer",
+    "en": "Continue"
+  },
+  "campaign.start": {
+    "fr": "Commencer",
+    "en": "Start"
+  },
+  "campaign.play": {
+    "fr": "Jouer le match",
+    "en": "Play the match"
+  },
+  "campaign.quit": {
+    "fr": "Sauver et quitter",
+    "en": "Save and quit"
+  },
+  "campaign.new": {
+    "fr": "Nouvelle campagne",
+    "en": "New campaign"
+  },
+  "campaign.champion": {
+    "fr": "Champion : {team}",
+    "en": "Champion: {team}"
+  },
+  "campaign.finished_pos": {
+    "fr": "Tu finis à la {n}e place.",
+    "en": "You finish in position {n}."
+  },
+  "campaign.eliminated": {
+    "fr": "Éliminé. On retente l'an prochain !",
+    "en": "Knocked out. Next year!"
+  },
+  "campaign.you_won": {
+    "fr": "VOUS ÊTES CHAMPIONS !",
+    "en": "YOU ARE THE CHAMPIONS!"
+  },
+  "campaign.last_results": {
+    "fr": "Derniers résultats",
+    "en": "Latest results"
+  },
+  "league.intro": {
+    "fr": "Huit équipes de quartier, matchs aller-retour, 14 journées. Choisis ton équipe : tu joues ses matchs, les autres sont simulés.",
+    "en": "Eight neighbourhood teams, home and away, 14 matchdays. Pick your team: you play its matches, the others are simulated."
+  },
+  "league.matchday": {
+    "fr": "Journée {n}",
+    "en": "Matchday {n}"
+  },
+  "cup.intro": {
+    "fr": "Huit équipes, élimination directe : quarts, demies, finale. Un match nul se décide aux tirs au but.",
+    "en": "Eight teams, straight knockout: quarters, semis, final. A draw goes to penalties."
+  },
+  "cup.qf": {
+    "fr": "Quart de finale",
+    "en": "Quarter-final"
+  },
+  "cup.sf": {
+    "fr": "Demi-finale",
+    "en": "Semi-final"
+  },
+  "cup.final": {
+    "fr": "Finale",
+    "en": "Final"
+  },
+  "pens.title": {
+    "fr": "TIRS AU BUT",
+    "en": "PENALTIES"
+  },
+  "pens.go": {
+    "fr": "Tirs au but",
+    "en": "Penalties"
+  },
+  "pens.kicker": {
+    "fr": "{team} : {name} au point de penalty",
+    "en": "{team}: {name} steps up"
+  },
+  "pens.hint_kick": {
+    "fr": "Haut/Bas : viser  ·  Tir maintenu : puissance (trop fort = au-dessus)",
+    "en": "Up/Down: aim  ·  hold Shoot: power (too much = over the bar)"
+  },
+  "pens.hint_keep": {
+    "fr": "Haut/Bas : choisis le côté de ta plongée",
+    "en": "Up/Down: pick the side of your dive"
+  },
+  "pens.goal": {
+    "fr": "BUUUT !",
+    "en": "GOOOAL!"
+  },
+  "pens.saved": {
+    "fr": "ARRÊTÉ !",
+    "en": "SAVED!"
+  },
+  "pens.over": {
+    "fr": "AU-DESSUS !",
+    "en": "OVER THE BAR!"
+  },
+  "pens.winner": {
+    "fr": "{team} l'emporte aux tirs au but !",
+    "en": "{team} win on penalties!"
+  },
+  "story.chapter_n": {
+    "fr": "Chapitre {n}",
+    "en": "Chapter {n}"
+  },
+  "story.lesson": {
+    "fr": "Leçon du Njangi :",
+    "en": "Njangi lesson:"
+  },
+  "story.objective": {
+    "fr": "Objectif :",
+    "en": "Objective:"
+  },
+  "story.obj_win": {
+    "fr": "gagner le match",
+    "en": "win the match"
+  },
+  "story.obj_score": {
+    "fr": "marquer au moins un but",
+    "en": "score at least one goal"
+  },
+  "story.obj_unbeaten": {
+    "fr": "ne pas perdre",
+    "en": "do not lose"
+  },
+  "story.obj_win_pens": {
+    "fr": "gagner (tirs au but si égalité)",
+    "en": "win (penalties if drawn)"
+  },
+  "story.obj_passes": {
+    "fr": "réussir 70 % de tes passes",
+    "en": "complete 70% of your passes"
+  },
+  "story.last_result": {
+    "fr": "Dernier match :",
+    "en": "Last match:"
+  },
+  "story.done": {
+    "fr": "Chapitre réussi",
+    "en": "Chapter complete"
+  },
+  "story.retry": {
+    "fr": "Objectif manqué, rejoue",
+    "en": "Objective missed, play again"
+  },
+  "story.play": {
+    "fr": "Jouer le match",
+    "en": "Play the match"
+  },
+  "story.complete": {
+    "fr": "Le ballon voyage encore. Merci d'avoir joué avec BriBri et Kaydoudou !",
+    "en": "The ball still travels. Thank you for playing with BriBri and Kaydoudou!"
+  },
+  "story.title1": {
+    "fr": "Le ballon rapiécé",
+    "en": "The patched ball"
+  },
+  "story.title2": {
+    "fr": "Les Requins de Bépanda",
+    "en": "The Requins of Bépanda"
+  },
+  "story.title3": {
+    "fr": "La boue et le pagne",
+    "en": "Mud and pagne"
+  },
+  "story.title4": {
+    "fr": "La passe polie et la passe utile",
+    "en": "The polite pass and the useful pass"
+  },
+  "story.title5": {
+    "fr": "Le carnet de Tonton Fokou",
+    "en": "Tonton Fokou's notebook"
+  },
+  "story.title6": {
+    "fr": "Les routes du Cameroun",
+    "en": "The roads of Cameroon"
+  },
+  "story.title7": {
+    "fr": "Finale à Bonamoussadi",
+    "en": "Final in Bonamoussadi"
+  },
+  "story.title8": {
+    "fr": "Le grand match",
+    "en": "The big match"
+  },
+  "story.text1": {
+    "fr": "Samedi matin, saison sèche, dix jours sans pluie sur le terrain de terre rouge. Kaydoudou veut dribbler toute la ville ; BriBri compte les passes. En face, les Gars de la Pharmacie. Tonton Fokou n'a qu'une règle : le ballon doit voyager.",
+    "en": "Saturday morning, dry season, ten days without rain on the red-earth pitch. Kaydoudou wants to dribble the whole town; BriBri counts the passes. Across the pitch, the Gars de la Pharmacie. Tonton Fokou has one rule: the ball must travel."
+  },
+  "story.text2": {
+    "fr": "Le tournoi des quartiers commence. Junior « Bulldozer » Mvondo et ses Requins se moquent de l'équipe « de chiffons » et de son ballon rapiécé. Deux Requins collent Kaydoudou dès qu'il reçoit : quand on est deux sur toi, le ballon doit partir tout de suite.",
+    "en": "The neighbourhood tournament begins. Junior 'Bulldozer' Mvondo and his Requins mock the 'team of rags' and its patched ball. Two Requins jump on Kaydoudou as soon as he gets it: when two close you down, the ball must leave at once."
+  },
+  "story.text3": {
+    "fr": "Les pluies ont transformé le terrain en étang rouge. Dribbler est interdit, on joue à ras de terre, en triangles. Les Aigles de Makepe sont grands et lourds et adorent la boue. Caché derrière un défenseur, tu n'existes pas : deux pas de côté et te voilà visible.",
+    "en": "The rains have turned the pitch into a red pond. Dribbling is forbidden, you play along the ground, in triangles. The Aigles of Makepe are tall and heavy and love the mud. Hidden behind a defender you do not exist: two steps sideways and you are visible."
+  },
+  "story.text4": {
+    "fr": "Dernier match de poule contre les Cobras de Bonabéri. Une passe sur le côté, c'est poli ; une passe qui traverse une ligne rapproche du but. Le football n'est pas un salon : tu as le droit de rater une passe, pas le droit de ne jamais oser.",
+    "en": "Last pool match against the Cobras of Bonabéri. A sideways pass is polite; a pass through a line brings the goal closer. Football is not a living room: you are allowed to miss a pass, not to never dare."
+  },
+  "story.text5": {
+    "fr": "Demi-finale, le terrain est plein jusque dans le manguier. Les Requins encore. Attire-les d'un côté, joue dans le trou de l'autre : Mireille est oubliée à droite, Radio court et parle. Et quand le une-deux du Njangi sort, tout le quartier le sait.",
+    "en": "Semi-final, the ground is full up into the mango tree. The Requins again. Draw them to one side, play through the hole on the other: Mireille is forgotten on the right, Radio runs and talks. And when the Njangi one-two comes out, the whole neighbourhood knows."
+  },
+  "story.text6": {
+    "fr": "Un car bringuebalant jusqu'à Yaoundé, Kaydoudou malade au fond, les vendeuses de prunes aux arrêts. Au marché Mokolo, les Étoiles jouent vite et fort entre les étals. Loin de chez soi, on emporte sa maison : on passe à la voix.",
+    "en": "A rattling bus to Yaoundé, Kaydoudou car-sick at the back, prune sellers at every stop. At the Mokolo market, the Étoiles play fast and hard between the stalls. Far from home, you carry your home with you: you pass to the voice."
+  },
+  "story.text7": {
+    "fr": "Les tambours depuis six heures du matin, Mami arrivée en taxi jaune avec les beignets. Les Panthères de Deïdo sont les plus grandes, leur gardien s'appelle Monsieur Pieuvre. On joue par terre, on fait voyager le ballon, et si ça finit aux tirs au but, Ousmane est là.",
+    "en": "Drums since six in the morning, Mami arrived by yellow taxi with the beignets. The Panthères of Deïdo are the tallest, their keeper is called Monsieur Pieuvre. Play along the ground, make the ball travel, and if it ends on penalties, Ousmane is there."
+  },
+  "story.text8": {
+    "fr": "Des années plus tard, un vrai stade, de l'herbe, des tribunes qui grondent. Onze contre onze face aux Aigles d'Akwa. Le ballon a une cicatrice et une mission. Toutes les leçons du carnet en un seul match : jouer ensemble, se montrer, oser, parler. Personne ne garde la caisse.",
+    "en": "Years later, a real stadium, grass, roaring stands. Eleven against eleven against the Aigles of Akwa. The ball has a scar and a mission. Every lesson of the notebook in one match: play together, show yourself, dare, speak. Nobody keeps the box."
+  },
+  "story.lesson1": {
+    "fr": "Un dribble qui passe cinq joueurs fatigue le ballon ; trois passes l'amènent plus vite.",
+    "en": "A dribble past five tires the ball; three passes get it there faster."
+  },
+  "story.lesson2": {
+    "fr": "Quand deux adversaires te ferment, le ballon doit partir tout de suite ; qui voit le joueur libre doit le dire.",
+    "en": "When two opponents close you down the ball must leave at once; whoever sees the free man must say it."
+  },
+  "story.lesson3": {
+    "fr": "Propose une solution : derrière un adversaire tu n'existes pas, deux pas et tu es visible.",
+    "en": "Offer a solution: behind an opponent you do not exist, two steps and you are visible."
+  },
+  "story.lesson4": {
+    "fr": "La passe polie garde le ballon, la passe utile traverse une ligne. N'aie pas peur de la deuxième.",
+    "en": "The polite pass keeps the ball, the useful pass crosses a line. Do not fear the second."
+  },
+  "story.lesson5": {
+    "fr": "Ose la passe qui traverse : attire d'un côté, joue dans le trou.",
+    "en": "Dare the pass that crosses: attract one side, play through the hole."
+  },
+  "story.lesson6": {
+    "fr": "Un joueur qui bouge reste dans l'équipe ; une course sans ballon ouvre l'espace pour les autres.",
+    "en": "A player who moves stays in the team; a run without the ball opens space for the others."
+  },
+  "story.lesson7": {
+    "fr": "Le cœur du Njangi : jouer ensemble, faire voyager le ballon, se montrer, oser et parler.",
+    "en": "The heart of the Njangi: play together, make the ball travel, show yourself, dare and speak."
+  },
+  "story.lesson8": {
+    "fr": "Personne ne garde la caisse. Le ballon voyage encore.",
+    "en": "Nobody keeps the box. The ball still travels."
+  }
 }

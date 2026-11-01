@@ -168,8 +168,29 @@ def draw_lines(img, pitch, rnd, rules="street5", worn=True):
     chalk_line(d, (px + pw, py), (px + pw, py + ph), rnd, wear)
     cx, cy = px + pw / 2, py + ph / 2
     chalk_line(d, (cx, py), (cx, py + ph), rnd, wear)
-    chalk_arc(d, cx, cy, 3.0 * PPM, 0, math.tau, rnd, wear)
+    chalk_arc(d, cx, cy, (9.15 if rules == "full" else 3.0) * PPM, 0, math.tau, rnd, wear)
     d.point((int(cx), int(cy)), CHALK)
+    if rules == "full":
+        # 11-a-side markings: penalty area 16.5 x 40.32 m, goal area 5.5 x 18.32 m, spot at 11 m,
+        # penalty arc radius 9.15 m, corner arcs 1 m, centre circle 9.15 m
+        for side in (0, 1):
+            x = px if side == 0 else px + pw
+            sgn = 1 if side == 0 else -1
+            for (bw, bd) in ((40.32 * PPM, 16.5 * PPM), (18.32 * PPM, 5.5 * PPM)):
+                chalk_line(d, (x, cy - bw / 2), (x + sgn * bd, cy - bw / 2), rnd, wear)
+                chalk_line(d, (x + sgn * bd, cy - bw / 2), (x + sgn * bd, cy + bw / 2), rnd, wear)
+                chalk_line(d, (x, cy + bw / 2), (x + sgn * bd, cy + bw / 2), rnd, wear)
+            sx = x + sgn * 11.0 * PPM
+            d.rectangle((int(sx) - 1, int(cy) - 1, int(sx) + 1, int(cy) + 1), fill=CHALK)
+            # penalty arc: the part of the 9.15 m circle outside the box
+            if side == 0:
+                chalk_arc(d, sx, cy, 9.15 * PPM, -0.93, 0.93, rnd, wear)
+            else:
+                chalk_arc(d, sx, cy, 9.15 * PPM, math.pi - 0.93, math.pi + 0.93, rnd, wear)
+        for (cx0, cy0, a0, a1) in ((px, py, 0, math.pi / 2), (px + pw, py, math.pi / 2, math.pi),
+                                   (px + pw, py + ph, math.pi, 1.5 * math.pi), (px, py + ph, 1.5 * math.pi, math.tau)):
+            chalk_arc(d, cx0, cy0, 1.0 * PPM, a0, a1, rnd, wear, squash=1.0)
+        return
     # goal areas (5v5: a 6 m wide, 4 m deep box); penalty spots at 6 m
     gw, gd = 6.0 * PPM, 4.0 * PPM
     for side in (0, 1):
@@ -193,7 +214,7 @@ def _mat_canvas(w, h, mats):
     return cv
 
 
-def goal(style="bamboo", width_px=30, height_px=17, depth_px=13, facing="E"):
+def goal(style="bamboo", width_px=30, height_px=17, depth_px=13, facing="E", yf=1.0):
     """A goal seen from the 3/4 view. facing E means the goal is on the west end, open toward +x.
     Returned image is drawn with the goal line at x = margin (facing E) and the posts vertical.
     """
@@ -206,7 +227,7 @@ def goal(style="bamboo", width_px=30, height_px=17, depth_px=13, facing="E"):
     h = int(height_px * rig.ZF) + int(width_px * rig.YF) + margin * 2 + 6
     cv = _mat_canvas(w, h, mats)
     H = height_px * rig.ZF            # projected height of the crossbar
-    D = int(width_px * rig.YF)        # projected goal width (vertical on screen)
+    D = int(width_px * yf)            # goal width on screen (the pitch is drawn top-down, so 1:1 with the lines)
     top = margin + 2
     # facing E: the goal stands on the west goal line and opens toward +x, so its net
     # extends to the LEFT of the goal line (gx near the right edge of the image).
@@ -441,6 +462,65 @@ def wall_segment(length=96, seed=11):
     return cv.to_image()
 
 
+def terrace(length=120, rows=3, seed=21, colour=("#9C978C", "#B9B4A8", "#6F6A61")):
+    """Concrete terrace steps (a stand). Pivot bottom centre; crowd sprites sit on the step tops."""
+    rnd = random.Random(seed)
+    step_h = 9
+    mats = {"con": colour, "con2": (colour[2], colour[0], "#4E4A43"), "rail": ("#3C3C44", "#5A5A64", "#22222A"),
+            "paint": ("#2E6B45", "#4E8E62", "#1E4A30"), "paint2": ("#E3A92B", "#F4C65A", "#A87A18")}
+    h = rows * step_h + 10
+    cv = _mat_canvas(length + 2, h, mats)
+    for r in range(rows):
+        # back rows are higher and further (drawn first), fronts overlap them
+        y0 = h - (r + 1) * step_h - 2
+        y1 = h - r * step_h - 1
+        cv.rect(1, y0, length, y1, "con")
+        cv.rect(1, y1 - 2, length, y1, "con2")
+        # painted edge every other row
+        if r % 2 == 0:
+            for x in range(1, length, 12):
+                cv.rect(x, y0, min(length, x + 5), y0 + 1, "paint" if (x // 12) % 2 else "paint2")
+    # rail along the top
+    for x in range(1, length + 1):
+        cv.put(x, 2, "rail")
+    for x in range(3, length, 10):
+        cv.rect(x, 2, x, h - rows * step_h - 2, "rail")
+    cv.shade()
+    cv.outline()
+    return cv.to_image(), step_h
+
+
+def floodlight(seed=3):
+    """A tall floodlight mast with a bank of lamps. Pivot bottom centre."""
+    mats = {"mast": ("#6E7076", "#8E9096", "#44464C"), "lamp": ("#F4EFD8", "#FFFFFF", "#C8C2A8"), "box": ("#3C3C44", "#5A5A64", "#22222A")}
+    cv = _mat_canvas(26, 110, mats)
+    cv.rect(12, 14, 14, 108, "mast")
+    cv.rect(10, 60, 16, 62, "mast")
+    cv.rect(4, 4, 22, 14, "box")
+    for x in range(6, 22, 4):
+        for y in (6, 10):
+            cv.put(x, y, "lamp", 6)
+            cv.put(x + 1, y, "lamp", 6)
+    cv.shade()
+    cv.outline()
+    return cv.to_image()
+
+
+def dugout(seed=4):
+    """A small covered bench for the substitutes. Pivot bottom centre."""
+    mats = {"roof": ("#2B3F7A", "#4C62A4", "#1A2850"), "frame": ("#B5B5B5", "#EDEDED", "#7A7A7A"), "seat": ("#C9362B", "#E25A4D", "#8E251D")}
+    cv = _mat_canvas(44, 26, mats)
+    cv.rect(2, 2, 42, 7, "roof")
+    cv.rect(2, 7, 3, 24, "frame")
+    cv.rect(41, 7, 42, 24, "frame")
+    for x in range(6, 40, 7):
+        cv.rect(x, 14, x + 4, 18, "seat")
+        cv.rect(x, 18, x + 4, 23, "frame")
+    cv.shade()
+    cv.outline()
+    return cv.to_image()
+
+
 def ball_sheet():
     """Ball: 4 rotation frames (the pagne patch turns) + a shadow frame. 8x8 cells."""
     mats = {"leather": ("#E8DFC8", "#FFFFFF", "#B9AE94"), "patch": ("#C9362B", "#E25A4D", "#8E251D"), "patch2": ("#F0B92E", "#F8D066", "#A87F18"), "seam": ("#3A2E28", "#55463E", "#201814")}
@@ -581,6 +661,8 @@ def render_pose(pose, direction, look, keys, seed):
 
 WORLD_W, WORLD_H = 800, 520
 PITCH = (200, 135, 400, 250)   # 50 m x 31 m at 8 px/m (5v5 neighbourhood pitch)
+FULL_W, FULL_H = 1140, 760
+FULL_PITCH = (150, 108, 840, 544)   # 105 m x 68 m at 8 px/m (11-a-side stadium pitch)
 
 
 def build_all(out: str):
@@ -589,6 +671,18 @@ def build_all(out: str):
     os.makedirs(os.path.join(out, "fx"), exist_ok=True)
     for surface in ("terre", "grass", "sand", "mud"):
         ground_texture(surface, WORLD_W, WORLD_H, PITCH, seed=3).save(os.path.join(out, "stadium", f"ground_{surface}.png"))
+        ground_texture(surface, FULL_W, FULL_H, FULL_PITCH, seed=4, rules="full").save(os.path.join(out, "stadium", f"ground_full_{surface}.png"))
+    # full-size goals: 7.32 m x 2.44 m
+    for style in ("metal", "bamboo"):
+        fl, fm = goal(style, width_px=int(7.32 * PPM), height_px=int(2.44 * PPM), depth_px=18, facing="E")
+        fl.save(os.path.join(out, "props", f"goal_full_{style}_w.png"))
+        fr, fm2 = goal(style, width_px=int(7.32 * PPM), height_px=int(2.44 * PPM), depth_px=18, facing="W")
+        fr.save(os.path.join(out, "props", f"goal_full_{style}_e.png"))
+    terrace_img, step_h = terrace()
+    terrace_img.save(os.path.join(out, "props", "terrace.png"))
+    terrace(length=120, rows=3, seed=22, colour=("#8E8A80", "#ABA69A", "#625E56"))[0].save(os.path.join(out, "props", "terrace_2.png"))
+    floodlight().save(os.path.join(out, "props", "floodlight.png"))
+    dugout().save(os.path.join(out, "props", "dugout.png"))
     gl, gm = goal("bamboo", facing="E")
     gl.save(os.path.join(out, "props", "goal_bamboo_w.png"))
     gr, gm2 = goal("bamboo", facing="W")
@@ -618,7 +712,9 @@ def build_all(out: str):
     with open(os.path.join(out, "props", "crowd.json"), "w") as f:
         json.dump(cmeta, f)
     with open(os.path.join(out, "stadium", "layout_meta.json"), "w") as f:
-        json.dump({"world": [WORLD_W, WORLD_H], "pitch": PITCH, "ppm": PPM, "goal_w": gm, "goal_e": gm2}, f, indent=1)
+        json.dump({"world": [WORLD_W, WORLD_H], "pitch": PITCH, "ppm": PPM, "goal_w": gm, "goal_e": gm2,
+                   "goal_full_w": fm, "goal_full_e": fm2, "terrace_step": step_h,
+                   "layouts": {"street": {"world": [WORLD_W, WORLD_H], "pitch": PITCH}, "full": {"world": [FULL_W, FULL_H], "pitch": FULL_PITCH}}}, f, indent=1)
     print("stadium assets written to", out)
 
 

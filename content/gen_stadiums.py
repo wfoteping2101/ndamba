@@ -122,19 +122,84 @@ def deido():
     }
 
 
+FULL_PITCH = {"x": 150, "y": 108, "w": 840, "h": 544}   # 105 m x 68 m at 8 px/m, world 1140 x 760
+
+
+def terrace_row(rnd, y, x0, x1, seg=120, rows=3, step=9, density=1.0, variant_seed=0):
+    """Terrace segments along [x0, x1] with their bottom at y, and the crowd sitting on the steps.
+    Crowd spots carry a `lift` so the sprite is drawn on the step while y-sorting in front of the stand."""
+    props, crowd = [], []
+    x = x0
+    i = 0
+    while x + seg <= x1 + 1:
+        props.append({"type": "terrace" if (i + variant_seed) % 2 == 0 else "terrace_2", "x": x + seg // 2, "y": y})
+        for r in range(rows):
+            n = int(seg / 22 * density)
+            for k in range(n):
+                if rnd.random() < 0.82:
+                    crowd.append({"x": int(x + 12 + (seg - 24) * (k + 0.5) / n + rnd.randrange(-4, 5)), "y": y + 1, "lift": 4 + r * step})
+        x += seg
+        i += 1
+    return props, crowd
+
+
+def full_stadium(id_, name_fr, name_en, city, neighborhood, surface, lighting, tint, seed, desc_fr, desc_en, capacity):
+    rnd = random.Random(seed)
+    px, py, pw, ph = FULL_PITCH["x"], FULL_PITCH["y"], FULL_PITCH["w"], FULL_PITCH["h"]
+    props, crowd = [], []
+    # north stand: a continuous terrace just behind the far touchline
+    tp, tc = terrace_row(rnd, py - 16, px, px + pw, seg=120, rows=3, density=1.0, variant_seed=seed)
+    props += tp
+    crowd += tc
+    # south stand: two blocks either side of the dugouts
+    for (x0, x1) in ((px, px + 240), (px + pw - 240, px + pw)):
+        tp, tc = terrace_row(rnd, py + ph + 74, x0, x1, seg=120, rows=2, density=0.9, variant_seed=seed + 1)
+        props += tp
+        crowd += tc
+    props += [{"type": "dugout", "x": px + pw // 2 - 60, "y": py + ph + 22}, {"type": "dugout", "x": px + pw // 2 + 60, "y": py + ph + 22},
+              {"type": "floodlight", "x": px - 40, "y": py - 30}, {"type": "floodlight", "x": px + pw + 40, "y": py - 30},
+              {"type": "floodlight", "x": px - 44, "y": py + ph + 60}, {"type": "floodlight", "x": px + pw + 44, "y": py + ph + 60},
+              {"type": "vendor_stand", "x": px + pw // 2 - 170, "y": py + ph + 60}, {"type": "vendor_stand", "x": px + pw // 2 + 176, "y": py + ph + 64},
+              {"type": "benskin_yellow", "x": 60, "y": 740}, {"type": "benskin_blue", "x": 96, "y": 744}, {"type": "benskin_red", "x": 1060, "y": 742}]
+    # standing fans along the ends
+    crowd += crowd_line(rnd, py + ph // 2 - 60, px - 60, px - 50, 4, 3) + crowd_line(rnd, py + ph // 2 + 60, px + pw + 50, px + pw + 60, 4, 3)
+    return {
+        "id": id_, "schema": 1, "layout": "full", "name_fr": name_fr, "name_en": name_en, "city": city, "neighborhood": neighborhood,
+        "surface": surface, "goal_style": "metal", "capacity": capacity, "lighting": lighting, "tint": tint,
+        "props": props, "crowd": crowd, "desc_fr": desc_fr, "desc_en": desc_en,
+    }
+
+
+def full_stadiums():
+    return [
+        full_stadium("stade_wouri", "Stade du Wouri", "Wouri Stadium", "Douala", "Bonabéri", "grass", "noon", "#FFFFFF", 31,
+                     "Le grand stade de Douala : pelouse, tribunes en béton peintes aux couleurs du pays, et un bruit de tonnerre quand le ballon entre.",
+                     "Douala's big stadium: grass, concrete stands painted in the country's colours, and a roar like thunder when the ball goes in.", 3200),
+        full_stadium("stade_colline", "Stade de la Colline", "Hill Stadium", "Yaoundé", "Nkolbisson", "grass", "overcast", "#E8ECF2", 32,
+                     "Sur une colline de Yaoundé, souvent sous les nuages. La pelouse est lourde, les tribunes sont pleines de drapeaux.",
+                     "On a Yaoundé hill, often under the clouds. The grass is heavy and the stands are full of flags.", 2800),
+        full_stadium("stade_hauts_plateaux", "Stade des Hauts-Plateaux", "Highlands Stadium", "Bafoussam", "Tamdja", "terre", "golden", "#FFE2B8", 33,
+                     "Un grand terrain de terre rouge dans l'Ouest, avec des tribunes de fortune et le soleil qui se couche derrière les montagnes.",
+                     "A big red-earth pitch in the West, with makeshift stands and the sun setting behind the mountains.", 1800),
+    ]
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     index = []
-    for s in (bonamoussadi(), mokolo(), bepanda(), deido()):
+    for s in (bonamoussadi(), mokolo(), bepanda(), deido(), *full_stadiums()):
+        s.setdefault("layout", "street")
         with open(os.path.join(OUT, s["id"] + ".json"), "w", encoding="utf-8") as f:
             json.dump(s, f, ensure_ascii=False, indent=1)
-        index.append({k: s[k] for k in ("id", "name_fr", "name_en", "city", "neighborhood", "surface")})
+        index.append({k: s[k] for k in ("id", "name_fr", "name_en", "city", "neighborhood", "surface", "layout")})
     with open(os.path.join(OUT, "index.json"), "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False, indent=1)
     with open(os.path.join(OUT, "surfaces.json"), "w", encoding="utf-8") as f:
         json.dump(SURFACES, f, indent=1)
     with open(os.path.join(OUT, "pitch.json"), "w", encoding="utf-8") as f:
-        json.dump({"world": [800, 520], "pitch": PITCH, "ppm": 8.0, "goal_width_m": 3.75, "goal_height_m": 2.1, "format": "5v5"}, f, indent=1)
+        json.dump({"ppm": 8.0, "layouts": {
+            "street": {"world": [800, 520], "pitch": PITCH, "goal_width_m": 3.75, "goal_height_m": 2.1, "rules": "street", "formats": ["5v5", "7v7"]},
+            "full": {"world": [1140, 760], "pitch": FULL_PITCH, "goal_width_m": 7.32, "goal_height_m": 2.44, "rules": "full", "formats": ["11v11", "7v7"]}}}, f, indent=1)
     print("stadiums:", [i["id"] for i in index])
 
 

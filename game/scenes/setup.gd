@@ -8,7 +8,11 @@ var half_i := 1
 var diff_i := 2
 var weather_i := 0
 var you_i := 0
-const HALVES := [2.0, 3.0, 5.0, 8.0]
+var format_i := 0
+var speed_i := 1
+const HALVES := [2.0, 3.0, 4.0, 6.0, 8.0]
+const FORMATS := ["11v11", "7v7", "5v5"]
+const SPEEDS := ["slow", "medium", "fast"]
 var labels: Dictionary = {}
 var teams: Array = []
 var stadiums: Array = []
@@ -20,6 +24,12 @@ func _ready() -> void:
 	teams = Content.team_index
 	stadiums = Content.stadium_index
 	diff_i = int(Game.match_config.get("difficulty", 2))
+	half_i = HALVES.find(float(Game.match_config.get("half_minutes", 4.0)))
+	if half_i < 0:
+		half_i = 2
+	stadium_i = _stadium_of(str(Game.match_config.get("stadium", "stade_wouri")))
+	format_i = maxi(0, FORMATS.find(str(Game.match_config.get("format", "11v11"))))
+	speed_i = maxi(0, SPEEDS.find(str(Game.settings.get("speed", "medium"))))
 	var bg := ColorRect.new()
 	bg.color = UiTheme.NIGHT
 	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -41,7 +51,9 @@ func _ready() -> void:
 	_row(v, "setup.home", "home")
 	_row(v, "setup.away", "away")
 	_row(v, "setup.stadium", "stadium")
+	_row(v, "setup.format", "format")
 	_row(v, "setup.half", "half")
+	_row(v, "setup.speed", "speed")
 	_row(v, "setup.difficulty", "diff")
 	_row(v, "setup.weather", "weather")
 	_row(v, "setup.you", "you")
@@ -89,12 +101,19 @@ func _change(id: String, d: int) -> void:
 			if home_i == away_i:
 				away_i = posmod(away_i + d, teams.size())
 			stadium_i = _stadium_of(teams[home_i]["stadium"])
+			_fit_format()
 		"away":
 			away_i = posmod(away_i + d, teams.size())
 			if away_i == home_i:
 				home_i = posmod(home_i + d, teams.size())
 		"stadium":
 			stadium_i = posmod(stadium_i + d, stadiums.size())
+			_fit_format()
+		"format":
+			format_i = posmod(format_i + d, FORMATS.size())
+			_fit_stadium()
+		"speed":
+			speed_i = posmod(speed_i + d, SPEEDS.size())
 		"half":
 			half_i = posmod(half_i + d, HALVES.size())
 		"diff":
@@ -104,6 +123,25 @@ func _change(id: String, d: int) -> void:
 		"you":
 			you_i = posmod(you_i + d, 4)
 	_refresh()
+
+
+## Keep the format legal for the chosen ground (11v11 needs a full pitch, 5v5 a street ground).
+func _fit_format() -> void:
+	var allowed: Array = Content.layouts[stadiums[stadium_i].get("layout", "street")].get("formats", ["5v5"])
+	if not allowed.has(FORMATS[format_i]):
+		format_i = FORMATS.find(allowed[0])
+
+
+## Keep the ground legal for the chosen format: jump to the first ground that allows it.
+func _fit_stadium() -> void:
+	var cur: Array = Content.layouts[stadiums[stadium_i].get("layout", "street")].get("formats", ["5v5"])
+	if cur.has(FORMATS[format_i]):
+		return
+	for i in range(stadiums.size()):
+		var al: Array = Content.layouts[stadiums[i].get("layout", "street")].get("formats", ["5v5"])
+		if al.has(FORMATS[format_i]):
+			stadium_i = i
+			return
 
 
 func _stadium_of(id: String) -> int:
@@ -118,6 +156,8 @@ func _refresh() -> void:
 	labels["away"].text = "%s (%s)" % [teams[away_i]["name"], teams[away_i]["neighborhood"]]
 	var s: Dictionary = stadiums[stadium_i]
 	labels["stadium"].text = "%s, %s" % [Loc.field(s, "name"), s["city"]]
+	labels["format"].text = FORMATS[format_i]
+	labels["speed"].text = Loc.t("speed." + SPEEDS[speed_i])
 	labels["half"].text = Loc.t("setup.minutes", {"n": int(HALVES[half_i])})
 	labels["diff"].text = Loc.t(Game.difficulty_name(diff_i))
 	labels["weather"].text = Loc.t("setup.dry" if weather_i == 0 else "setup.rain")
@@ -131,6 +171,9 @@ func _start() -> void:
 	c["away"] = teams[away_i]["id"]
 	c["stadium"] = stadiums[stadium_i]["id"]
 	c["half_minutes"] = HALVES[half_i]
+	c["format"] = FORMATS[format_i]
+	Game.settings["speed"] = SPEEDS[speed_i]
+	Game.save_settings()
 	c["difficulty"] = diff_i
 	c["weather"] = "dry" if weather_i == 0 else "rain"
 	c["human_home"] = you_i == 0 or you_i == 2

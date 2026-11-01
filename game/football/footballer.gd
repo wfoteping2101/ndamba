@@ -175,6 +175,8 @@ func teleport(p: Vector2, face: Vector2 = Vector2.ZERO) -> void:
 # ---------------------------------------------------------------------------
 
 func step(dt: float) -> void:
+	if match_ref != null and sprite != null and sprite.speed_scale != match_ref.time_scale:
+		sprite.speed_scale = match_ref.time_scale
 	state_t += dt
 	control_lock = maxf(0.0, control_lock - dt)
 	stun = maxf(0.0, stun - dt)

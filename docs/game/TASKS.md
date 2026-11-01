@@ -14,17 +14,23 @@ Status: done / doing / next / later. Keep this honest: nothing is "done" until i
 - Tests: 471 headless checks (content, save, ball, posts, rules, goals, outs, AI vs AI full match, simulated human input). QA autoplay mode with screenshots and qa.json. Rendered under Xvfb at 66 fps average.
 - Exports: Web (single-threaded, PWA) verified in headless Chromium with zero console errors; Windows x86_64 exe.
 
+## Done (v0.2, 2026-11-01)
+- Full-size 11v11 layout and three stadiums (terraces, floodlights, dugouts, crowd), 7v7 and 5v5 on the street grounds, 18-player squads, formations per format.
+- Seven more teams (four neighbourhood clubs, three book opponents).
+- Game speed setting (medium by default), FC-style HUD (clock bug, radar, player plates, name tags), labelled touch buttons, stadium fly-over intro with line-ups.
+- Campaigns: Les Lionceaux story (8 chapters), Ligue des Quartiers, Coupe des Quartiers with penalty shoot-out, Carrière d'entraîneur (Njangi-driven simulated manager mode), Académie Njangi drill library.
+- Website: the game lives at /football/ on the Ndamba site as "Ndamba Soccer Pixel".
+
 ## Doing
-- Sync to the PC and verify the Windows exe launches there with a real controller (needs William's hands for the controller test).
+- Hands-on play test on the PC with a real controller and on a phone browser (needs William's hands): speed feel, 11v11 AI spacing, touch button placement.
 
 ## Next (Phase 5 to 9)
-- Rig polish pass: eye whites, number on the back, kit collar, better GK dive silhouettes seen from the side, celebration variety, hair variety for girls, "rags" kit mode for the Lionceaux story matches.
-- More teams: Aigles de Makepe, Cobras de Bonabéri, Gars de la Pharmacie (book), then the Yaoundé twelve and the Douala ten; crests as original pixel icons.
-- 7v7 and 8v8 formats (larger pitch art, formations), the book's own format for Part I matches.
-- Coupe des Quartiers: bracket, group stage option, extra time, penalty shoot-out, trophies, saved progression.
-- Ligue des Quartiers: calendar, table, promotion/relegation, seasons.
-- Académie Njangi: Tier 1 drills (24) as interactive missions in the engine, star ratings, wiki links.
-- Les Lionceaux story: Part I chapters as playable beats (see BOOK_CONTENT_MAP.md), walkable Bonamoussadi scene, dialogue system, cutscenes.
+- Rig polish pass: eye whites, number on the back, kit collar, better GK dive silhouettes seen from the side, celebration variety, hair variety for girls.
+- Crests as original pixel icons; the Yaoundé twelve and the Douala ten as more teams.
+- 8v8 (the book's Part I format) as a fourth format; extra time option.
+- Story: walkable Bonamoussadi scene, dialogue system, cutscenes between the chapter texts and the matches; academy drills as interactive missions in the engine (today: library + done list).
+- Manager mode: injuries with treatment choices, tactics per match, a transfer deadline, trophies screen.
+- League: promotion/relegation across seasons (today: one season, replayable).
 - Two-player local (second keyboard map and second gamepad), co-op.
 - Android build on the PC (SDK, JDK, debug keystore), real-device touch test.
 - Wiki (in-game encyclopedia) and the public companion wiki.

@@ -13,7 +13,7 @@
  "goal_w": {
   "goal_line_x": 18,
   "top_y": 19,
-  "bottom_y": 38,
+  "bottom_y": 49,
   "crossbar_y": 6,
   "w": 24,
   "h": 46
@@ -21,9 +21,52 @@
  "goal_e": {
   "goal_line_x": 5,
   "top_y": 19,
-  "bottom_y": 38,
+  "bottom_y": 49,
   "crossbar_y": 6,
   "w": 24,
   "h": 46
+ },
+ "goal_full_w": {
+  "goal_line_x": 23,
+  "top_y": 20,
+  "bottom_y": 78,
+  "crossbar_y": 6,
+  "w": 29,
+  "h": 65
+ },
+ "goal_full_e": {
+  "goal_line_x": 5,
+  "top_y": 20,
+  "bottom_y": 78,
+  "crossbar_y": 6,
+  "w": 29,
+  "h": 65
+ },
+ "terrace_step": 9,
+ "layouts": {
+  "street": {
+   "world": [
+    800,
+    520
+   ],
+   "pitch": [
+    200,
+    135,
+    400,
+    250
+   ]
+  },
+  "full": {
+   "world": [
+    1140,
+    760
+   ],
+   "pitch": [
+    150,
+    108,
+    840,
+    544
+   ]
+  }
  }
 }

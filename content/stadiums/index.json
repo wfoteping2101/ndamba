@@ -5,7 +5,8 @@
   "name_en": "Bonamoussadi Ground",
   "city": "Douala",
   "neighborhood": "Bonamoussadi",
-  "surface": "terre"
+  "surface": "terre",
+  "layout": "street"
  },
  {
   "id": "mokolo_marche",
@@ -13,7 +14,8 @@
   "name_en": "Mokolo Market Ground",
   "city": "Yaoundé",
   "neighborhood": "Mokolo",
-  "surface": "terre"
+  "surface": "terre",
+  "layout": "street"
  },
  {
   "id": "bepanda_terrain",
@@ -21,7 +23,8 @@
   "name_en": "Bépanda Ground",
   "city": "Douala",
   "neighborhood": "Bépanda",
-  "surface": "terre"
+  "surface": "terre",
+  "layout": "street"
  },
  {
   "id": "deido_terrain",
@@ -29,6 +32,34 @@
   "name_en": "Deïdo Ground",
   "city": "Douala",
   "neighborhood": "Deïdo",
-  "surface": "sand"
+  "surface": "sand",
+  "layout": "street"
+ },
+ {
+  "id": "stade_wouri",
+  "name_fr": "Stade du Wouri",
+  "name_en": "Wouri Stadium",
+  "city": "Douala",
+  "neighborhood": "Bonabéri",
+  "surface": "grass",
+  "layout": "full"
+ },
+ {
+  "id": "stade_colline",
+  "name_fr": "Stade de la Colline",
+  "name_en": "Hill Stadium",
+  "city": "Yaoundé",
+  "neighborhood": "Nkolbisson",
+  "surface": "grass",
+  "layout": "full"
+ },
+ {
+  "id": "stade_hauts_plateaux",
+  "name_fr": "Stade des Hauts-Plateaux",
+  "name_en": "Highlands Stadium",
+  "city": "Bafoussam",
+  "neighborhood": "Tamdja",
+  "surface": "terre",
+  "layout": "full"
  }
 ]

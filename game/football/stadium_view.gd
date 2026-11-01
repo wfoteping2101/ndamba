@@ -13,8 +13,9 @@ func build(stadium: Dictionary, ysort: Node2D, weather: String = "dry") -> void:
 	var surface: String = stadium.get("surface", "terre")
 	if weather == "rain" and surface == "terre":
 		surface = "mud"
+	var full: bool = stadium.get("layout", "street") == "full"
 	var ground := Sprite2D.new()
-	ground.texture = load("res://assets/stadium/ground_%s.png" % surface)
+	ground.texture = load("res://assets/stadium/ground_%s%s.png" % ["full_" if full else "", surface])
 	ground.centered = false
 	ground.z_index = -10
 	add_child(ground)
@@ -25,9 +26,9 @@ func build(stadium: Dictionary, ysort: Node2D, weather: String = "dry") -> void:
 	var gy := pr.position.y + pr.size.y * 0.5
 	for side in ["w", "e"]:
 		var g := Sprite2D.new()
-		g.texture = load("res://assets/props/goal_%s_%s.png" % [style, side])
+		g.texture = load("res://assets/props/goal_%s%s_%s.png" % ["full_" if full else "", style, side])
 		g.centered = false
-		var gm: Dictionary = meta["goal_w"] if side == "w" else meta["goal_e"]
+		var gm: Dictionary = meta[("goal_full_" if full else "goal_") + side]
 		var gx := pr.position.x if side == "w" else pr.end.x
 		var mouth_mid := (float(gm["top_y"]) + float(gm["bottom_y"])) * 0.5
 		g.position = Vector2(gx - float(gm["goal_line_x"]), gy - mouth_mid)
@@ -58,7 +59,7 @@ func build(stadium: Dictionary, ysort: Node2D, weather: String = "dry") -> void:
 		var a := AnimatedSprite2D.new()
 		a.sprite_frames = sf
 		a.centered = false
-		a.offset = Vector2(-16, -30)
+		a.offset = Vector2(-16, -30 - float(spot.get("lift", 0)))
 		a.position = Vector2(spot["x"], spot["y"])
 		a.play("idle")
 		a.frame = randi() % 4

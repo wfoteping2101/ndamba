@@ -43,9 +43,10 @@ func _build_attract() -> void:
 	vp.canvas_item_default_texture_filter = Viewport.DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST
 	vp.snap_2d_transforms_to_pixel = true
 	holder.add_child(vp)
-	attract = Node2D.new()
-	attract.set_script(load("res://football/match.gd"))
-	attract.name = "Match"
+	var attract_node := Node2D.new()
+	attract_node.set_script(load("res://football/match.gd"))
+	attract_node.name = "Match"
+	attract = attract_node
 	var world := Node2D.new()
 	world.name = "World"
 	attract.add_child(world)
@@ -74,7 +75,7 @@ func _build_attract() -> void:
 
 func _build_menu() -> void:
 	menu = VBoxContainer.new()
-	menu.add_theme_constant_override("separation", 5)
+	menu.add_theme_constant_override("separation", 3)
 	add_child(menu)
 	_rebuild_menu()
 
@@ -87,18 +88,20 @@ func _rebuild_menu() -> void:
 	var sub := UiTheme.label(Loc.t("subtitle"), 8, false, UiTheme.CREAM)
 	menu.add_child(sub)
 	var spacer := Control.new()
-	spacer.custom_minimum_size.y = 6
+	spacer.custom_minimum_size.y = 2
 	menu.add_child(spacer)
 	var play := UiTheme.button(Loc.t("menu.play"), 190)
-	play.pressed.connect(func(): Sfx.play("ui_select"); get_tree().change_scene_to_file("res://scenes/setup.tscn"))
+	play.pressed.connect(func(): Sfx.play("ui_select"); _clear_match_config(); get_tree().change_scene_to_file("res://scenes/setup.tscn"))
 	menu.add_child(play)
-	var watch := UiTheme.button(Loc.t("menu.watch"), 190)
-	watch.pressed.connect(_watch)
-	menu.add_child(watch)
-	for key in ["menu.story", "menu.cup", "menu.league", "menu.academy"]:
-		var b := UiTheme.button("%s  (%s)" % [Loc.t(key), Loc.t("menu.soon")], 190)
-		b.disabled = true
-		b.focus_mode = Control.FOCUS_NONE
+	for entry in [["menu.story", "res://scenes/story.tscn"], ["menu.league", "res://scenes/league.tscn"], ["menu.cup", "res://scenes/cup.tscn"], ["menu.manager", "res://scenes/manager.tscn"], ["menu.academy", "res://scenes/academy.tscn"]]:
+		var b := UiTheme.button(Loc.t(entry[0]), 190)
+		var path: String = entry[1]
+		if ResourceLoader.exists(path):
+			b.pressed.connect(func(): Sfx.play("ui_select"); _clear_match_config(); get_tree().change_scene_to_file(path))
+		else:
+			b.text = "%s  (%s)" % [Loc.t(entry[0]), Loc.t("menu.soon")]
+			b.disabled = true
+			b.focus_mode = Control.FOCUS_NONE
 		menu.add_child(b)
 	var settings := UiTheme.button(Loc.t("menu.settings"), 190)
 	settings.pressed.connect(_open_settings)
@@ -118,12 +121,20 @@ func _rebuild_menu() -> void:
 		if b is Button:
 			b.focus_entered.connect(func(): Sfx.play("ui_move", Vector2.ZERO, -6.0))
 	await get_tree().process_frame
-	menu.position = Vector2(26, 26)
+	menu.position = Vector2(26, 12)
 	play.grab_focus()
+
+
+## Friendly / campaign configs must not leak into each other.
+func _clear_match_config() -> void:
+	Game.match_config.erase("return_to")
+	Game.match_config["label"] = ""
+	Game.pending = {}
 
 
 func _watch() -> void:
 	Sfx.play("ui_select")
+	_clear_match_config()
 	Game.match_config["human_home"] = false
 	Game.match_config["human_away"] = false
 	Game.match_config["half_minutes"] = 2.0

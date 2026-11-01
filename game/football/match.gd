@@ -42,6 +42,8 @@ var _goal_half: float
 var result: Dictionary = {}
 var rng := RandomNumberGenerator.new()
 var time_scale: float = 1.0
+var intro_seconds: float = 9.0     # stadium fly-over before the first kick-off (skippable)
+var intro_skip: bool = false
 var _ht_done := false
 var commentary_enabled: bool = true
 
@@ -54,6 +56,15 @@ var commentary_enabled: bool = true
 func _ready() -> void:
 	rng.randomize()
 	config = Game.match_config.duplicate(true)
+	stadium = Content.stadium(config["stadium"])
+	Content.set_layout(stadium.get("layout", "street"))
+	# the format follows the ground: 11v11 only fits a full-size pitch, 5v5 only a street ground
+	var fmt: String = config.get("format", "5v5")
+	var allowed: Array = Content.pitch.get("formats", ["5v5"])
+	if not allowed.has(fmt):
+		fmt = allowed[0]
+		config["format"] = fmt
+	time_scale = Game.speed_scale()
 	pitch_rect = Content.pitch_rect()
 	world_size = Content.world_size()
 	_goal_h = Content.goal_height()
@@ -61,7 +72,6 @@ func _ready() -> void:
 	goal_left = Vector2(pitch_rect.position.x, pitch_rect.position.y + pitch_rect.size.y * 0.5)
 	goal_right = Vector2(pitch_rect.end.x, goal_left.y)
 	half_real_seconds = float(config.get("half_minutes", 3.0)) * 60.0
-	stadium = Content.stadium(config["stadium"])
 	surface = Content.surface(stadium.get("surface", "terre")).duplicate()
 	if config.get("weather", "dry") == "rain" and stadium.get("surface", "terre") == "terre":
 		surface = Content.surface("mud").duplicate()
@@ -110,7 +120,7 @@ func _build_teams() -> void:
 			# avoid a colour clash: away team wears its away kit when jerseys are similar
 			var home_kit: Dictionary = Content.team(config["home"]).get("kit_home", {})
 			kit = tdata.get("kit_away", kit) if _kits_clash(home_kit, tdata.get("kit_home", {})) else tdata.get("kit_home", {})
-		var lineup := Content.lineup(tid)
+		var lineup := Content.lineup(tid, config.get("format", "5v5"))
 		var used: Dictionary = {}
 		var slots := team.slots
 		for si in range(slots.size()):
@@ -397,7 +407,9 @@ func _physics_process(delta: float) -> void:
 	phase_t += dt
 	match phase:
 		Phase.INTRO:
-			if phase_t > 2.2 or Game.qa_mode:
+			cam.intro_tick(dt, phase_t / maxf(0.1, intro_seconds))
+			if phase_t > intro_seconds or (Game.qa_mode and not Game.qa_intro) or intro_skip or Game.attract_mode:
+				cam.end_intro()
 				_kickoff(0 if config.get("kickoff_home", true) else 1)
 		Phase.KICKOFF:
 			_step_kickoff(dt)
@@ -466,7 +478,7 @@ func _resume_play() -> void:
 
 func _step_play(dt: float) -> void:
 	ball_in_play = true
-	elapsed_real += dt
+	elapsed_real += dt / maxf(0.05, time_scale)
 	_step_sim(dt, true)
 	_check_goal()
 	if phase != Phase.PLAY:

@@ -18,20 +18,34 @@ var settings := {
 	"reduced_motion": false,
 	"show_touch": "auto",         # auto | on | off
 	"assist_aim": true,
+	"speed": "medium",            # slow | medium | fast: simulation pace of the match
+	"names": true,                # name tags over the players
 }
+
+## Simulation pace multiplier for the chosen speed setting (tests pin it with sim_speed_override).
+var sim_speed_override: float = -1.0
+
+
+func speed_scale() -> float:
+	if sim_speed_override > 0.0:
+		return sim_speed_override
+	match str(settings.get("speed", "medium")):
+		"slow": return 0.55
+		"fast": return 0.88
+		_: return 0.70
 
 ## The next match to play. Filled by the setup screen (or by tests / QA mode).
 var match_config := {
 	"home": "lionceaux_bonamoussadi",
 	"away": "requins_bepanda",
-	"stadium": "bonamoussadi_terre",
-	"half_minutes": 3.0,          # real minutes per half
+	"stadium": "stade_wouri",
+	"half_minutes": 4.0,          # real minutes per half
 	"difficulty": 2,              # 0 beginner .. 4 expert
 	"human_home": true,           # human controls home? (false => human vs nothing: AI vs AI)
 	"human_away": false,
 	"extra_time": false,
 	"penalties": false,
-	"format": "5v5",
+	"format": "11v11",
 	"weather": "dry",             # dry | rain
 	"kickoff_home": true,
 	"competition": "friendly",
@@ -39,9 +53,11 @@ var match_config := {
 }
 
 var results: Array = []           # played match results, newest last
+var pending: Dictionary = {}      # campaign fixture being played: {kind, home, away, needs_winner}
 var last_result: Dictionary = {}
 var qa_mode := false
 var qa_dir := ""
+var qa_intro := false             # QA: play the stadium intro instead of skipping it
 var attract_mode := false
 var stats := {"matches": 0, "wins": 0, "goals": 0}
 
@@ -84,6 +100,14 @@ func _parse_args() -> void:
 			i += 1
 		elif a == "--weather" and i + 1 < args.size():
 			match_config["weather"] = args[i + 1]
+			i += 1
+		elif a == "--intro":
+			qa_intro = true
+		elif a == "--format" and i + 1 < args.size():
+			match_config["format"] = args[i + 1]
+			i += 1
+		elif a == "--speed" and i + 1 < args.size():
+			settings["speed"] = args[i + 1]
 			i += 1
 		i += 1
 	if qa_mode:

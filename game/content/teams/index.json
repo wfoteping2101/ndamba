@@ -50,5 +50,96 @@
   ],
   "strength": 61,
   "stadium": "deido_terrain"
+ },
+ {
+  "id": "aigles_akwa",
+  "name": "Aigles d'Akwa",
+  "short": "AKW",
+  "city": "Douala",
+  "neighborhood": "Akwa",
+  "colors": [
+   "#1F4D3A",
+   "#E3A92B"
+  ],
+  "strength": 66,
+  "stadium": "stade_wouri"
+ },
+ {
+  "id": "port_bonaberi",
+  "name": "Port de Bonabéri",
+  "short": "BNB",
+  "city": "Douala",
+  "neighborhood": "Bonabéri",
+  "colors": [
+   "#1C1C22",
+   "#C5762F"
+  ],
+  "strength": 63,
+  "stadium": "stade_wouri"
+ },
+ {
+  "id": "carrefour_ndokoti",
+  "name": "Carrefour Ndokoti",
+  "short": "NDK",
+  "city": "Douala",
+  "neighborhood": "Ndokoti",
+  "colors": [
+   "#B8432F",
+   "#F2EEE3"
+  ],
+  "strength": 62,
+  "stadium": "bepanda_terrain"
+ },
+ {
+  "id": "rois_new_bell",
+  "name": "Rois de New-Bell",
+  "short": "NWB",
+  "city": "Douala",
+  "neighborhood": "New-Bell",
+  "colors": [
+   "#3B2A6B",
+   "#E3A92B"
+  ],
+  "strength": 65,
+  "stadium": "stade_colline"
+ },
+ {
+  "id": "gars_pharmacie",
+  "name": "Gars de la Pharmacie",
+  "short": "PHA",
+  "city": "Douala",
+  "neighborhood": "Bonamoussadi",
+  "colors": [
+   "#F2EEE3",
+   "#B8432F"
+  ],
+  "strength": 54,
+  "stadium": "bonamoussadi_terre"
+ },
+ {
+  "id": "aigles_makepe",
+  "name": "Aigles de Makepe",
+  "short": "MAK",
+  "city": "Douala",
+  "neighborhood": "Makepe",
+  "colors": [
+   "#8C4A1C",
+   "#F2C230"
+  ],
+  "strength": 58,
+  "stadium": "bonamoussadi_terre"
+ },
+ {
+  "id": "cobras_bonaberi",
+  "name": "Cobras de Bonabéri",
+  "short": "COB",
+  "city": "Douala",
+  "neighborhood": "Bonabéri",
+  "colors": [
+   "#5C6B2E",
+   "#1C1C22"
+  ],
+  "strength": 59,
+  "stadium": "bepanda_terrain"
  }
 ]

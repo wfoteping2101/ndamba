@@ -300,5 +300,6 @@
   }
  ],
  "desc_fr": "Entre les étals du grand marché : les vendeuses regardent le match depuis leurs parasols et les benskins font des allers-retours.",
- "desc_en": "Between the stalls of the big market: the vendors watch from under their umbrellas and the benskins come and go."
+ "desc_en": "Between the stalls of the big market: the vendors watch from under their umbrellas and the benskins come and go.",
+ "layout": "street"
 }

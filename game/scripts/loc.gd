@@ -9,10 +9,20 @@ var _strings: Dictionary = {}
 
 
 func _ready() -> void:
-	var txt := FileAccess.get_file_as_string("res://content/strings.json")
-	var parsed: Variant = JSON.parse_string(txt)
-	if typeof(parsed) == TYPE_DICTIONARY:
-		_strings = parsed
+	# every content/strings*.json file is merged (strings.json first, then strings_<feature>.json)
+	var dir := DirAccess.open("res://content")
+	var files: Array = []
+	if dir != null:
+		for f in dir.get_files():
+			if f.begins_with("strings") and f.ends_with(".json"):
+				files.append(f)
+	files.sort()
+	for f in files:
+		var txt := FileAccess.get_file_as_string("res://content/" + f)
+		var parsed: Variant = JSON.parse_string(txt)
+		if typeof(parsed) == TYPE_DICTIONARY:
+			for k in parsed.keys():
+				_strings[k] = parsed[k]
 	var sys := OS.get_locale_language()
 	lang = "fr" if sys == "fr" else ("en" if sys == "en" else "fr")
 

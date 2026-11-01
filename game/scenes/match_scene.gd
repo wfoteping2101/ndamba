@@ -128,12 +128,26 @@ func _show_result(result: Dictionary) -> void:
 	h.add_theme_constant_override("separation", 8)
 	h.alignment = BoxContainer.ALIGNMENT_CENTER
 	v.add_child(h)
-	var again := UiTheme.button(Loc.t("result.again"), 110)
-	again.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/match.tscn"))
-	h.add_child(again)
-	var menu := UiTheme.button(Loc.t("result.menu"), 110)
-	menu.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/title.tscn"))
-	h.add_child(menu)
+	var again: Button
+	var return_to: String = m.config.get("return_to", "")
+	if return_to != "":
+		# campaign match: continue to the campaign screen (through the shoot-out when a winner is needed)
+		var draw: bool = result["score"][0] == result["score"][1]
+		var needs_winner: bool = Game.pending.get("needs_winner", false)
+		again = UiTheme.button(Loc.t("pens.go") if draw and needs_winner else Loc.t("result.continue"), 150)
+		again.pressed.connect(func():
+			if draw and needs_winner:
+				get_tree().change_scene_to_file("res://scenes/shootout.tscn")
+			else:
+				get_tree().change_scene_to_file(return_to))
+		h.add_child(again)
+	else:
+		again = UiTheme.button(Loc.t("result.again"), 110)
+		again.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/match.tscn"))
+		h.add_child(again)
+		var menu := UiTheme.button(Loc.t("result.menu"), 110)
+		menu.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/title.tscn"))
+		h.add_child(menu)
 	await get_tree().process_frame
 	result_panel.position = ((hud.root.size - result_panel.size) * 0.5).round()
 	again.grab_focus()
@@ -154,6 +168,14 @@ func _qa_tick(delta: float) -> void:
 	var phase_name: String = Match.Phase.keys()[m.phase]
 	if phase_name != _qa_last_phase:
 		_qa_last_phase = phase_name
+	# intro fly-over shots when asked (--intro): at 2 s and 6.5 s
+	if Game.qa_intro and m.phase == Match.Phase.INTRO:
+		if m.phase_t > 2.0 and not has_meta("intro_a"):
+			set_meta("intro_a", true)
+			_qa_screenshot("intro_a")
+		if m.phase_t > 6.5 and not has_meta("intro_b"):
+			set_meta("intro_b", true)
+			_qa_screenshot("intro_b")
 	# a screenshot every 12 seconds of match, plus one on goals (handled through events)
 	if int(_qa_t / 12.0) > _qa_shots and _qa_shots < 40:
 		_qa_shots += 1

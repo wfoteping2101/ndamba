@@ -1,16 +1,43 @@
 {
- "world": [
-  800,
-  520
- ],
- "pitch": {
-  "x": 200,
-  "y": 135,
-  "w": 400,
-  "h": 250
- },
  "ppm": 8.0,
- "goal_width_m": 3.75,
- "goal_height_m": 2.1,
- "format": "5v5"
+ "layouts": {
+  "street": {
+   "world": [
+    800,
+    520
+   ],
+   "pitch": {
+    "x": 200,
+    "y": 135,
+    "w": 400,
+    "h": 250
+   },
+   "goal_width_m": 3.75,
+   "goal_height_m": 2.1,
+   "rules": "street",
+   "formats": [
+    "5v5",
+    "7v7"
+   ]
+  },
+  "full": {
+   "world": [
+    1140,
+    760
+   ],
+   "pitch": {
+    "x": 150,
+    "y": 108,
+    "w": 840,
+    "h": 544
+   },
+   "goal_width_m": 7.32,
+   "goal_height_m": 2.44,
+   "rules": "full",
+   "formats": [
+    "11v11",
+    "7v7"
+   ]
+  }
+ }
 }

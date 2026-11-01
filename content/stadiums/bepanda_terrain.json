@@ -218,5 +218,6 @@
   }
  ],
  "desc_fr": "Le fief des Requins, un terrain dur et bruyant derrière les maisons de Bépanda. Ici on ne fait pas de cadeaux.",
- "desc_en": "The Requins' home, a hard and noisy ground behind the houses of Bépanda. No gifts are given here."
+ "desc_en": "The Requins' home, a hard and noisy ground behind the houses of Bépanda. No gifts are given here.",
+ "layout": "street"
 }

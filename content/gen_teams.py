@@ -101,11 +101,101 @@ TEAMS = [
         "lore_en": "Yellow with black spots, the Panthères of Deïdo wait, then pounce. A fishermen's neighbourhood on the Wouri, they play with the river wind.",
         "mixed": False, "seed": 14,
     },
+    {
+        "id": "aigles_akwa", "name": "Aigles d'Akwa", "short": "AKW", "city": "Douala", "neighborhood": "Akwa",
+        "kit_home": {"jersey": "#1F4D3A", "jersey2": "#E3A92B", "pattern": "sash", "shorts": "#E3A92B", "socks": "#1F4D3A"},
+        "kit_away": {"jersey": "#E3A92B", "jersey2": "#1F4D3A", "pattern": "plain", "shorts": "#1F4D3A", "socks": "#E3A92B"},
+        "kit_gk": {"jersey": "#B8432F", "shorts": "#1C1C22", "socks": "#B8432F"},
+        "colors": ["#1F4D3A", "#E3A92B"], "crest": "eagle",
+        "style": "possession", "formation": "1-2-1-1", "strength": 66, "rating_bias": 4,
+        "stadium": "stade_wouri", "rivals": ["port_bonaberi"], "difficulty": 3,
+        "lore_fr": "Le club du centre-ville : des joueurs qui gardent le ballon et le font tourner jusqu'à ce que la faille s'ouvre.",
+        "lore_en": "The downtown club: players who keep the ball and move it until the gap opens.",
+        "mixed": False, "seed": 15,
+    },
+    {
+        "id": "port_bonaberi", "name": "Port de Bonabéri", "short": "BNB", "city": "Douala", "neighborhood": "Bonabéri",
+        "kit_home": {"jersey": "#1C1C22", "jersey2": "#C5762F", "pattern": "stripes", "shorts": "#1C1C22", "socks": "#C5762F"},
+        "kit_away": {"jersey": "#F2EEE3", "jersey2": "#C5762F", "pattern": "hoops", "shorts": "#C5762F", "socks": "#F2EEE3"},
+        "kit_gk": {"jersey": "#2E63B8", "shorts": "#1C1C22", "socks": "#2E63B8"},
+        "colors": ["#1C1C22", "#C5762F"], "crest": "anchor",
+        "style": "physical", "formation": "1-2-1-1", "strength": 63, "rating_bias": 3,
+        "stadium": "stade_wouri", "rivals": ["aigles_akwa"], "difficulty": 3,
+        "lore_fr": "Les dockers de l'autre rive du Wouri. Des épaules larges, des duels gagnés, et des centres qui tombent du ciel.",
+        "lore_en": "The dockers from the other bank of the Wouri. Broad shoulders, duels won, and crosses that fall from the sky.",
+        "mixed": False, "seed": 16,
+    },
+    {
+        "id": "carrefour_ndokoti", "name": "Carrefour Ndokoti", "short": "NDK", "city": "Douala", "neighborhood": "Ndokoti",
+        "kit_home": {"jersey": "#B8432F", "jersey2": "#F2EEE3", "pattern": "halves", "shorts": "#F2EEE3", "socks": "#B8432F"},
+        "kit_away": {"jersey": "#F2EEE3", "jersey2": "#B8432F", "pattern": "sash", "shorts": "#B8432F", "socks": "#F2EEE3"},
+        "kit_gk": {"jersey": "#2E6B45", "shorts": "#1C1C22", "socks": "#2E6B45"},
+        "colors": ["#B8432F", "#F2EEE3"], "crest": "crossroads",
+        "style": "counter", "formation": "1-2-1-1", "strength": 62, "rating_bias": 2,
+        "stadium": "bepanda_terrain", "rivals": ["requins_bepanda"], "difficulty": 2,
+        "lore_fr": "Au grand carrefour, tout va vite : les taxis, les klaxons et les contre-attaques des rouges et blancs.",
+        "lore_en": "At the big crossroads everything moves fast: the taxis, the horns and the red-and-whites' counter-attacks.",
+        "mixed": True, "seed": 17,
+    },
+    {
+        "id": "rois_new_bell", "name": "Rois de New-Bell", "short": "NWB", "city": "Douala", "neighborhood": "New-Bell",
+        "kit_home": {"jersey": "#3B2A6B", "jersey2": "#E3A92B", "pattern": "plain", "shorts": "#E3A92B", "socks": "#3B2A6B"},
+        "kit_away": {"jersey": "#E3A92B", "jersey2": "#3B2A6B", "pattern": "stripes", "shorts": "#3B2A6B", "socks": "#E3A92B"},
+        "kit_gk": {"jersey": "#F2EEE3", "shorts": "#1C1C22", "socks": "#F2EEE3"},
+        "colors": ["#3B2A6B", "#E3A92B"], "crest": "crown",
+        "style": "direct", "formation": "1-1-1-2", "strength": 65, "rating_bias": 3,
+        "stadium": "stade_colline", "rivals": ["carrefour_ndokoti"], "difficulty": 3,
+        "lore_fr": "Le quartier historique du makossa. Les Rois jouent avec le rythme : une touche, une passe, et le public qui chante.",
+        "lore_en": "The historic makossa neighbourhood. The Rois play with rhythm: one touch, one pass, and the crowd sings.",
+        "mixed": True, "seed": 18,
+    },
+    # the three Part I opponents of the novel (tournoi des quartiers)
+    {
+        "id": "gars_pharmacie", "name": "Gars de la Pharmacie", "short": "PHA", "city": "Douala", "neighborhood": "Bonamoussadi",
+        "kit_home": {"jersey": "#F2EEE3", "jersey2": "#B8432F", "pattern": "plain", "shorts": "#B8432F", "socks": "#F2EEE3"},
+        "kit_away": {"jersey": "#B8432F", "jersey2": "#F2EEE3", "pattern": "plain", "shorts": "#F2EEE3", "socks": "#B8432F"},
+        "kit_gk": {"jersey": "#2E63B8", "shorts": "#1C1C22", "socks": "#2E63B8"},
+        "colors": ["#F2EEE3", "#B8432F"], "crest": "cross",
+        "style": "direct", "formation": "1-2-1-1", "strength": 54, "rating_bias": -3,
+        "stadium": "bonamoussadi_terre", "rivals": ["lionceaux_bonamoussadi"], "difficulty": 1,
+        "lore_fr": "Les gars du carrefour de la pharmacie, premiers adversaires des Lionceaux. Ils courent beaucoup et tirent de loin.",
+        "lore_en": "The boys from the pharmacy crossroads, the Lionceaux's first opponents. They run a lot and shoot from far.",
+        "mixed": True, "seed": 19,
+    },
+    {
+        "id": "aigles_makepe", "name": "Aigles de Makepe", "short": "MAK", "city": "Douala", "neighborhood": "Makepe",
+        "kit_home": {"jersey": "#8C4A1C", "jersey2": "#F2C230", "pattern": "stripes", "shorts": "#1C1C22", "socks": "#8C4A1C"},
+        "kit_away": {"jersey": "#F2C230", "jersey2": "#8C4A1C", "pattern": "plain", "shorts": "#8C4A1C", "socks": "#F2C230"},
+        "kit_gk": {"jersey": "#1F4D3A", "shorts": "#1C1C22", "socks": "#1F4D3A"},
+        "colors": ["#8C4A1C", "#F2C230"], "crest": "eagle",
+        "style": "physical", "formation": "1-2-1-1", "strength": 58, "rating_bias": 0,
+        "stadium": "bonamoussadi_terre", "rivals": [], "difficulty": 2,
+        "lore_fr": "Grands et lourds, les Aigles de Makepe aiment la boue : quand le terrain devient un lac, ils jouent long et haut.",
+        "lore_en": "Tall and heavy, the Aigles of Makepe love the mud: when the pitch turns into a lake they go long and high.",
+        "mixed": False, "seed": 20,
+    },
+    {
+        "id": "cobras_bonaberi", "name": "Cobras de Bonabéri", "short": "COB", "city": "Douala", "neighborhood": "Bonabéri",
+        "kit_home": {"jersey": "#5C6B2E", "jersey2": "#1C1C22", "pattern": "sash", "shorts": "#1C1C22", "socks": "#5C6B2E"},
+        "kit_away": {"jersey": "#F2EEE3", "jersey2": "#5C6B2E", "pattern": "hoops", "shorts": "#5C6B2E", "socks": "#F2EEE3"},
+        "kit_gk": {"jersey": "#E3A92B", "shorts": "#1C1C22", "socks": "#E3A92B"},
+        "colors": ["#5C6B2E", "#1C1C22"], "crest": "snake",
+        "style": "counter", "formation": "1-2-1-1", "strength": 59, "rating_bias": 1,
+        "stadium": "bepanda_terrain", "rivals": [], "difficulty": 2,
+        "lore_fr": "De l'autre côté du pont, les Cobras attendent dans l'herbe et mordent en contre. Un seul but suffit souvent.",
+        "lore_en": "From across the bridge, the Cobras wait in the grass and bite on the counter. One goal is often enough.",
+        "mixed": True, "seed": 21,
+    },
 ]
 
 ROLES_5 = ["GK", "DEF", "DEF", "MID", "FWD"]
 BENCH_5 = ["MID", "FWD", "DEF"]
-NUMBERS = {"GK": [1, 12], "DEF": [2, 3, 4, 5], "MID": [6, 8, 10, 14], "FWD": [7, 9, 11, 17]}
+# an 18-player squad: 11 starters (1-4-3-3) + 7 on the bench
+ROLES_11 = ["GK", "DEF", "DEF", "DEF", "DEF", "MID", "MID", "MID", "FWD", "FWD", "FWD"]
+BENCH_11 = ["GK", "DEF", "DEF", "MID", "MID", "FWD", "FWD"]
+FORMATION_7 = {"1-2-1-1": "1-3-2-1", "1-1-1-2": "1-2-2-2"}
+FORMATION_11 = {"1-2-1-1": "1-4-3-3", "1-1-1-2": "1-4-4-2"}
+NUMBERS = {"GK": [1, 12, 16], "DEF": [2, 3, 4, 5, 13, 15], "MID": [6, 8, 10, 14, 18, 20], "FWD": [7, 9, 11, 17, 19, 21]}
 
 
 def make_player(rnd, role, team, used_names, used_numbers, female=False):
@@ -148,7 +238,7 @@ def build_team(t):
         players.append(p)
     counts = [int(c) for c in t["formation"].split("-")]   # GK, DEF, MID, FWD
     roles5 = ["GK"] * counts[0] + ["DEF"] * counts[1] + ["MID"] * counts[2] + ["FWD"] * counts[3]
-    roles_needed = roles5 + BENCH_5
+    roles_needed = ROLES_11 + BENCH_11
     for p in players:
         if p["role"] in roles_needed:
             roles_needed.remove(p["role"])
@@ -161,17 +251,29 @@ def build_team(t):
             p["shirt2"] = rnd.choice(TEES)
             p["shirt_pattern"] = rnd.choice(["plain", "plain", "hoops", "halves"])
         players.append(p)
-    # starters: one per role of ROLES_5, book characters first
-    starters = []
+    # starters per format, book characters first, then the best attributes
     pool = sorted(players, key=lambda p: (not p.get("from_book", False), -sum(p["attrs"].values())))
-    for role in roles5:
-        for p in pool:
-            if p["role"] == role and p["id"] not in starters:
-                starters.append(p["id"])
-                break
+
+    def pick(roles):
+        chosen = []
+        for role in roles:
+            for p in pool:
+                if p["role"] == role and p["id"] not in chosen:
+                    chosen.append(p["id"])
+                    break
+        return chosen
+
+    f7 = FORMATION_7[t["formation"]]
+    f11 = FORMATION_11[t["formation"]]
+    roles7 = sum(([r] * int(c) for r, c in zip(("GK", "DEF", "MID", "FWD"), f7.split("-"))), [])
+    roles11 = sum(([r] * int(c) for r, c in zip(("GK", "DEF", "MID", "FWD"), f11.split("-"))), [])
     out = {k: v for k, v in t.items() if k not in ("named", "seed", "rating_bias", "mixed")}
     out["players"] = players
-    out["lineup"] = starters
+    out["lineup"] = pick(roles5)
+    out["formation7"] = f7
+    out["lineup7"] = pick(roles7)
+    out["formation11"] = f11
+    out["lineup11"] = pick(roles11)
     out["schema"] = 1
     return out
 

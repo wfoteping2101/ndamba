@@ -22,7 +22,7 @@ func _init(p_index: int, p_data: Dictionary, p_match) -> void:
 	index = p_index
 	data = p_data
 	m = p_match
-	formation = p_data.get("formation", "1-2-1-1")
+	formation = Content.formation_for(p_data.get("id", ""), p_match.config.get("format", "5v5")) if p_data.has("id") else p_data.get("formation", "1-2-1-1")
 	slots = formation_slots(formation)
 	_rng.seed = 1000 + p_index
 
@@ -30,12 +30,24 @@ func _init(p_index: int, p_data: Dictionary, p_match) -> void:
 static func formation_slots(f: String) -> Array:
 	var parts := f.split("-")
 	var out: Array = [{"role": "GK", "x": 0.04, "y": 0.5}]
-	var lines := [["DEF", 0.24], ["MID", 0.50], ["FWD", 0.76]]
+	var total := 0
+	for li in range(1, parts.size()):
+		total += int(parts[li])
+	var big := total >= 10
+	var lines := [["DEF", 0.20 if big else 0.24], ["MID", 0.46 if big else 0.50], ["FWD", 0.72 if big else 0.76]]
 	for li in range(3):
 		var n := int(parts[li + 1]) if parts.size() > li + 1 else 0
 		for i in range(n):
-			var y := 0.5 if n == 1 else lerpf(0.22, 0.78, float(i) / float(n - 1))
-			out.append({"role": lines[li][0], "x": lines[li][1], "y": y})
+			var spread_lo := 0.14 if n >= 4 else 0.22
+			var spread_hi := 1.0 - spread_lo
+			var y := 0.5 if n == 1 else lerpf(spread_lo, spread_hi, float(i) / float(n - 1))
+			# a flat back four is a little bowed: full-backs higher than the centre-backs
+			var x: float = lines[li][1]
+			if li == 0 and n >= 4 and (i == 0 or i == n - 1):
+				x += 0.04
+			if li == 2 and n == 3 and i == 1:
+				x += 0.04   # the centre-forward leads the line
+			out.append({"role": lines[li][0], "x": x, "y": y})
 	return out
 
 

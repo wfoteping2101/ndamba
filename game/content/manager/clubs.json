@@ -1,0 +1,614 @@
+[
+ {
+  "id": "tonnerre_mvog_ada",
+  "name": "Tonnerre de Mvog-Ada",
+  "short": "TMA",
+  "city": "Yaoundé",
+  "colors": [
+   "#B8432F",
+   "#F6F1E4"
+  ],
+  "strength": 74,
+  "division": 1
+ },
+ {
+  "id": "aigles_akwa",
+  "name": "Aigles d'Akwa",
+  "short": "AKW",
+  "city": "Douala",
+  "colors": [
+   "#1F4D3A",
+   "#E3A92B"
+  ],
+  "strength": 72,
+  "division": 1
+ },
+ {
+  "id": "buffles_bafoussam",
+  "name": "Buffles de Bafoussam",
+  "short": "BUF",
+  "city": "Bafoussam",
+  "colors": [
+   "#2B3F7A",
+   "#F6F1E4"
+  ],
+  "strength": 70,
+  "division": 1
+ },
+ {
+  "id": "marins_kribi",
+  "name": "Marins de Kribi",
+  "short": "KRI",
+  "city": "Kribi",
+  "colors": [
+   "#1C6E8C",
+   "#F2EEE3"
+  ],
+  "strength": 68,
+  "division": 1
+ },
+ {
+  "id": "volcans_buea",
+  "name": "Volcans de Buéa",
+  "short": "BUE",
+  "city": "Buéa",
+  "colors": [
+   "#6B2D2D",
+   "#E3A92B"
+  ],
+  "strength": 69,
+  "division": 1
+ },
+ {
+  "id": "eclairs_garoua",
+  "name": "Éclairs de Garoua",
+  "short": "GAR",
+  "city": "Garoua",
+  "colors": [
+   "#E3A92B",
+   "#101814"
+  ],
+  "strength": 67,
+  "division": 1
+ },
+ {
+  "id": "cavaliers_maroua",
+  "name": "Cavaliers de Maroua",
+  "short": "MAR",
+  "city": "Maroua",
+  "colors": [
+   "#8C4A1C",
+   "#F6F1E4"
+  ],
+  "strength": 66,
+  "division": 1
+ },
+ {
+  "id": "sanaga_edea",
+  "name": "Sanaga d'Édéa",
+  "short": "EDE",
+  "city": "Édéa",
+  "colors": [
+   "#2E6B45",
+   "#F6F1E4"
+  ],
+  "strength": 65,
+  "division": 1
+ },
+ {
+  "id": "foudre_bamenda",
+  "name": "Foudre de Bamenda",
+  "short": "BAM",
+  "city": "Bamenda",
+  "colors": [
+   "#3B2A6B",
+   "#E3A92B"
+  ],
+  "strength": 66,
+  "division": 1
+ },
+ {
+  "id": "port_bonaberi",
+  "name": "Port de Bonabéri",
+  "short": "BON",
+  "city": "Douala",
+  "colors": [
+   "#101814",
+   "#C5762F"
+  ],
+  "strength": 64,
+  "division": 1
+ },
+ {
+  "id": "elephants_ebolowa",
+  "name": "Éléphants d'Ébolowa",
+  "short": "EBO",
+  "city": "Ébolowa",
+  "colors": [
+   "#5C6B2E",
+   "#F6F1E4"
+  ],
+  "strength": 63,
+  "division": 1
+ },
+ {
+  "id": "falaises_ngaoundere",
+  "name": "Falaises de Ngaoundéré",
+  "short": "NGA",
+  "city": "Ngaoundéré",
+  "colors": [
+   "#A63A2A",
+   "#F2EEE3"
+  ],
+  "strength": 62,
+  "division": 1
+ },
+ {
+  "id": "pecheurs_limbe",
+  "name": "Pêcheurs de Limbé",
+  "short": "LIM",
+  "city": "Limbé",
+  "colors": [
+   "#1C6E8C",
+   "#E3A92B"
+  ],
+  "strength": 61,
+  "division": 1
+ },
+ {
+  "id": "lions_mokolo",
+  "name": "Lions de Mokolo",
+  "short": "MOK",
+  "city": "Yaoundé",
+  "colors": [
+   "#C5762F",
+   "#101814"
+  ],
+  "strength": 60,
+  "division": 1
+ },
+ {
+  "id": "colline_nkolbisson",
+  "name": "Colline de Nkolbisson",
+  "short": "NKB",
+  "city": "Yaoundé",
+  "colors": [
+   "#2B3F7A",
+   "#E3A92B"
+  ],
+  "strength": 56,
+  "division": 2
+ },
+ {
+  "id": "carrefour_ndokoti",
+  "name": "Carrefour Ndokoti",
+  "short": "NDK",
+  "city": "Douala",
+  "colors": [
+   "#B8432F",
+   "#101814"
+  ],
+  "strength": 55,
+  "division": 2
+ },
+ {
+  "id": "gazelles_bertoua",
+  "name": "Gazelles de Bertoua",
+  "short": "BER",
+  "city": "Bertoua",
+  "colors": [
+   "#5C6B2E",
+   "#E3A92B"
+  ],
+  "strength": 54,
+  "division": 2
+ },
+ {
+  "id": "cacao_mbalmayo",
+  "name": "Cacao de Mbalmayo",
+  "short": "MBA",
+  "city": "Mbalmayo",
+  "colors": [
+   "#6B2D2D",
+   "#F6F1E4"
+  ],
+  "strength": 53,
+  "division": 2
+ },
+ {
+  "id": "brumes_dschang",
+  "name": "Brumes de Dschang",
+  "short": "DSC",
+  "city": "Dschang",
+  "colors": [
+   "#1F4D3A",
+   "#F2EEE3"
+  ],
+  "strength": 54,
+  "division": 2
+ },
+ {
+  "id": "marche_mboppi",
+  "name": "Marché Mboppi",
+  "short": "MBO",
+  "city": "Douala",
+  "colors": [
+   "#E3A92B",
+   "#2B3F7A"
+  ],
+  "strength": 52,
+  "division": 2
+ },
+ {
+  "id": "etoiles_kumba",
+  "name": "Étoiles de Kumba",
+  "short": "KUM",
+  "city": "Kumba",
+  "colors": [
+   "#101814",
+   "#E3A92B"
+  ],
+  "strength": 52,
+  "division": 2
+ },
+ {
+  "id": "savane_bafia",
+  "name": "Savane de Bafia",
+  "short": "BAF",
+  "city": "Bafia",
+  "colors": [
+   "#8C4A1C",
+   "#F2EEE3"
+  ],
+  "strength": 50,
+  "division": 2
+ },
+ {
+  "id": "fleuve_sangmelima",
+  "name": "Fleuve de Sangmélima",
+  "short": "SAN",
+  "city": "Sangmélima",
+  "colors": [
+   "#1C6E8C",
+   "#F6F1E4"
+  ],
+  "strength": 50,
+  "division": 2
+ },
+ {
+  "id": "pierres_foumban",
+  "name": "Pierres de Foumban",
+  "short": "FOU",
+  "city": "Foumban",
+  "colors": [
+   "#3B2A6B",
+   "#F6F1E4"
+  ],
+  "strength": 51,
+  "division": 2
+ },
+ {
+  "id": "gare_nkongsamba",
+  "name": "Gare de Nkongsamba",
+  "short": "NKS",
+  "city": "Nkongsamba",
+  "colors": [
+   "#C5762F",
+   "#F6F1E4"
+  ],
+  "strength": 49,
+  "division": 2
+ },
+ {
+  "id": "plateau_bafang",
+  "name": "Plateau de Bafang",
+  "short": "BFG",
+  "city": "Bafang",
+  "colors": [
+   "#2E6B45",
+   "#E3A92B"
+  ],
+  "strength": 48,
+  "division": 2
+ },
+ {
+  "id": "lionceaux_bonamoussadi",
+  "name": "Lionceaux de Bonamoussadi",
+  "short": "LIO",
+  "city": "Douala",
+  "colors": [
+   "#2E6B45",
+   "#F2EEE3"
+  ],
+  "strength": 40,
+  "division": 3
+ },
+ {
+  "id": "requins_bepanda",
+  "name": "Requins de Bépanda",
+  "short": "BEP",
+  "city": "Douala",
+  "colors": [
+   "#1C6E8C",
+   "#F6F1E4"
+  ],
+  "strength": 42,
+  "division": 3
+ },
+ {
+  "id": "pantheres_deido",
+  "name": "Panthères de Deïdo",
+  "short": "DEI",
+  "city": "Douala",
+  "colors": [
+   "#101814",
+   "#E3A92B"
+  ],
+  "strength": 43,
+  "division": 3
+ },
+ {
+  "id": "mokolo_etoiles",
+  "name": "Mokolo Étoiles",
+  "short": "MKE",
+  "city": "Yaoundé",
+  "colors": [
+   "#C5762F",
+   "#101814"
+  ],
+  "strength": 41,
+  "division": 3
+ },
+ {
+  "id": "ravin_mvog_mbi",
+  "name": "Ravin de Mvog-Mbi",
+  "short": "MVM",
+  "city": "Yaoundé",
+  "colors": [
+   "#B8432F",
+   "#F6F1E4"
+  ],
+  "strength": 40,
+  "division": 3
+ },
+ {
+  "id": "quartier_biyem_assi",
+  "name": "Biyem-Assi FC",
+  "short": "BYA",
+  "city": "Yaoundé",
+  "colors": [
+   "#2B3F7A",
+   "#E3A92B"
+  ],
+  "strength": 39,
+  "division": 3
+ },
+ {
+  "id": "pont_japoma",
+  "name": "Pont de Japoma",
+  "short": "JAP",
+  "city": "Douala",
+  "colors": [
+   "#5C6B2E",
+   "#F2EEE3"
+  ],
+  "strength": 38,
+  "division": 3
+ },
+ {
+  "id": "tamtam_bonapriso",
+  "name": "Tam-Tam de Bonapriso",
+  "short": "BPR",
+  "city": "Douala",
+  "colors": [
+   "#6B2D2D",
+   "#F6F1E4"
+  ],
+  "strength": 41,
+  "division": 3
+ },
+ {
+  "id": "carriere_bastos",
+  "name": "Carrière de Bastos",
+  "short": "BAS",
+  "city": "Yaoundé",
+  "colors": [
+   "#3B2A6B",
+   "#F6F1E4"
+  ],
+  "strength": 37,
+  "division": 3
+ },
+ {
+  "id": "bananiers_penja",
+  "name": "Bananiers de Penja",
+  "short": "PEN",
+  "city": "Penja",
+  "colors": [
+   "#E3A92B",
+   "#1F4D3A"
+  ],
+  "strength": 36,
+  "division": 3
+ },
+ {
+  "id": "medina_dakar",
+  "name": "Médina Dakar FC",
+  "short": "MED",
+  "city": "Dakar",
+  "colors": [
+   "#2E6B45",
+   "#E3A92B"
+  ],
+  "strength": 78,
+  "division": 0
+ },
+ {
+  "id": "treichville_abidjan",
+  "name": "Treichville Union",
+  "short": "TRE",
+  "city": "Abidjan",
+  "colors": [
+   "#C5762F",
+   "#F6F1E4"
+  ],
+  "strength": 79,
+  "division": 0
+ },
+ {
+  "id": "surulere_lagos",
+  "name": "Surulere Stars",
+  "short": "SUR",
+  "city": "Lagos",
+  "colors": [
+   "#1F4D3A",
+   "#F2EEE3"
+  ],
+  "strength": 80,
+  "division": 0
+ },
+ {
+  "id": "bab_el_oued",
+  "name": "Bab El Oued SC",
+  "short": "BEO",
+  "city": "Alger",
+  "colors": [
+   "#F6F1E4",
+   "#B8432F"
+  ],
+  "strength": 82,
+  "division": 0
+ },
+ {
+  "id": "derb_sultan",
+  "name": "Derb Sultan Athletic",
+  "short": "DSA",
+  "city": "Casablanca",
+  "colors": [
+   "#B8432F",
+   "#F6F1E4"
+  ],
+  "strength": 83,
+  "division": 0
+ },
+ {
+  "id": "shubra_cairo",
+  "name": "Shubra Giants",
+  "short": "SHU",
+  "city": "Le Caire",
+  "colors": [
+   "#101814",
+   "#E3A92B"
+  ],
+  "strength": 84,
+  "division": 0
+ },
+ {
+  "id": "soweto_lions",
+  "name": "Soweto Lions",
+  "short": "SOW",
+  "city": "Johannesburg",
+  "colors": [
+   "#E3A92B",
+   "#101814"
+  ],
+  "strength": 81,
+  "division": 0
+ },
+ {
+  "id": "kariakoo_dar",
+  "name": "Kariakoo United",
+  "short": "KAR",
+  "city": "Dar es Salaam",
+  "colors": [
+   "#2B3F7A",
+   "#F6F1E4"
+  ],
+  "strength": 74,
+  "division": 0
+ },
+ {
+  "id": "kisenso_kinshasa",
+  "name": "Kisenso Élan",
+  "short": "KIS",
+  "city": "Kinshasa",
+  "colors": [
+   "#5C6B2E",
+   "#E3A92B"
+  ],
+  "strength": 76,
+  "division": 0
+ },
+ {
+  "id": "nima_accra",
+  "name": "Nima Royals",
+  "short": "NIM",
+  "city": "Accra",
+  "colors": [
+   "#8C4A1C",
+   "#F2EEE3"
+  ],
+  "strength": 77,
+  "division": 0
+ },
+ {
+  "id": "ouagadougou_gounghin",
+  "name": "Gounghin FC",
+  "short": "GOU",
+  "city": "Ouagadougou",
+  "colors": [
+   "#1C6E8C",
+   "#F6F1E4"
+  ],
+  "strength": 72,
+  "division": 0
+ },
+ {
+  "id": "libreville_nzeng",
+  "name": "Nzeng-Ayong SC",
+  "short": "NZE",
+  "city": "Libreville",
+  "colors": [
+   "#3B2A6B",
+   "#E3A92B"
+  ],
+  "strength": 70,
+  "division": 0
+ },
+ {
+  "id": "kasarani_nairobi",
+  "name": "Kasarani Rovers",
+  "short": "KAS",
+  "city": "Nairobi",
+  "colors": [
+   "#6B2D2D",
+   "#F6F1E4"
+  ],
+  "strength": 73,
+  "division": 0
+ },
+ {
+  "id": "bamako_badalabougou",
+  "name": "Badalabougou AC",
+  "short": "BAD",
+  "city": "Bamako",
+  "colors": [
+   "#2E6B45",
+   "#F6F1E4"
+  ],
+  "strength": 71,
+  "division": 0
+ },
+ {
+  "id": "lusaka_matero",
+  "name": "Matero Hornets",
+  "short": "MAT",
+  "city": "Lusaka",
+  "colors": [
+   "#E3A92B",
+   "#2B3F7A"
+  ],
+  "strength": 70,
+  "division": 0
+ }
+]

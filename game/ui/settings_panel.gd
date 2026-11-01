@@ -15,6 +15,8 @@ func _ready() -> void:
 	v.add_child(title)
 	_slider(v, "settings.music", "music")
 	_slider(v, "settings.sfx", "sfx")
+	_cycle(v, "settings.speed", "speed", ["slow", "medium", "fast"], ["speed.slow", "speed.medium", "speed.fast"])
+	_toggle(v, "settings.names", "names")
 	_toggle(v, "settings.commentary", "commentary")
 	_toggle(v, "settings.assist", "assist_aim")
 	_toggle(v, "settings.simple", "simple_controls")

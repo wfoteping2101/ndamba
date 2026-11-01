@@ -37,24 +37,18 @@ func setup(p_match, controller: HumanController) -> void:
 
 
 func _build() -> void:
-	stick_base = _circle(Color(0, 0, 0, 0.35), 36 * scale_f, Color(1, 1, 1, 0.5))
+	stick_base = _circle(Color(0, 0, 0, 0.35), 40 * scale_f, Color(1, 1, 1, 0.5))
 	root.add_child(stick_base)
-	stick_knob = _circle(Color(UiTheme.CREAM, 0.85), 14 * scale_f, Color(UiTheme.INK, 0.8))
+	stick_knob = _circle(Color(UiTheme.CREAM, 0.85), 16 * scale_f, Color(UiTheme.INK, 0.8))
 	root.add_child(stick_knob)
-	for spec in [["pass", "A", UiTheme.FOREST_LIGHT], ["shoot", "B", UiTheme.CLAY], ["through", "X", UiTheme.TERRA], ["switch", "Y", UiTheme.SUN]]:
-		var b := _circle(Color(spec[2], 0.85), 17 * scale_f, Color(UiTheme.INK, 0.9))
-		var l := UiTheme.label(spec[1], 8, true, UiTheme.CREAM)
-		l.set_anchors_preset(Control.PRESET_CENTER)
-		l.position = Vector2(-4, -4)
-		b.add_child(l)
+	for spec in [["pass", "touch.pass", UiTheme.FOREST_LIGHT], ["shoot", "touch.shoot", UiTheme.CLAY], ["through", "touch.through", UiTheme.TERRA], ["switch", "touch.switch", UiTheme.SUN]]:
+		var b := _circle(Color(spec[2], 0.85), (21.0 if spec[0] != "switch" else 15.0) * scale_f, Color(UiTheme.INK, 0.9))
+		_add_caption(b, Loc.t(spec[1]), UiTheme.CREAM if spec[0] != "switch" else UiTheme.NIGHT)
 		b.set_meta("action", spec[0])
 		root.add_child(b)
 		buttons[spec[0]] = b
-	var sprint := _circle(Color(UiTheme.NIGHT, 0.8), 15 * scale_f, Color(UiTheme.CREAM, 0.7))
-	var sl := UiTheme.label(">>", 8, true, UiTheme.SUN)
-	sl.set_anchors_preset(Control.PRESET_CENTER)
-	sl.position = Vector2(-8, -4)
-	sprint.add_child(sl)
+	var sprint := _circle(Color(UiTheme.NIGHT, 0.85), 21 * scale_f, Color(UiTheme.CREAM, 0.7))
+	_add_caption(sprint, Loc.t("touch.sprint"), UiTheme.SUN)
 	root.add_child(sprint)
 	buttons["sprint"] = sprint
 	var pause := _circle(Color(UiTheme.NIGHT, 0.7), 10, Color(UiTheme.CREAM, 0.6))
@@ -65,6 +59,17 @@ func _build() -> void:
 	root.add_child(pause)
 	buttons["pause"] = pause
 	root.modulate.a = opacity
+
+
+## Centred caption inside a round button, wrapped on two lines when there is a space.
+func _add_caption(b: Control, text: String, col: Color) -> void:
+	var l := UiTheme.label(text.to_upper(), 8, false, col)
+	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	l.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	l.autowrap_mode = TextServer.AUTOWRAP_WORD
+	l.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	b.add_child(l)
+	l.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 
 
 func _circle(fill: Color, r: float, border: Color) -> Control:
@@ -83,20 +88,23 @@ func _circle(fill: Color, r: float, border: Color) -> Control:
 
 func _layout() -> void:
 	var vp := root.size
-	var side_l := 54.0 * scale_f
+	var side_l := 60.0 * scale_f
 	var stick_x := side_l if not left_handed else vp.x - side_l
-	stick_center = Vector2(stick_x, vp.y - 54.0 * scale_f)
+	stick_center = Vector2(stick_x, vp.y - 60.0 * scale_f)
 	stick_base.position = stick_center - stick_base.size * 0.5
 	stick_knob.position = stick_center - stick_knob.size * 0.5
-	var bx := (vp.x - 62.0 * scale_f) if not left_handed else 62.0 * scale_f
-	var by := vp.y - 52.0 * scale_f
-	var d := 26.0 * scale_f
-	var places := {"pass": Vector2(0, d), "shoot": Vector2(d, 0), "through": Vector2(-d, 0), "switch": Vector2(0, -d)}
+	var bx := (vp.x - 70.0 * scale_f) if not left_handed else 70.0 * scale_f
+	var by := vp.y - 62.0 * scale_f
+	var d := 34.0 * scale_f
+	# diamond: shoot top-right, pass bottom-right, skill (through) top-left, sprint bottom-left, switch above
+	var places := {"shoot": Vector2(d, -d * 0.55), "pass": Vector2(d * 0.3, d * 0.7), "through": Vector2(-d * 0.95, -d * 0.75), "sprint": Vector2(-d * 1.05, d * 0.6), "switch": Vector2(d * 0.1, -d * 1.6)}
 	for k in places.keys():
 		var b: Control = buttons[k]
-		b.position = Vector2(bx, by) + places[k] - b.size * 0.5
-	var sp: Control = buttons["sprint"]
-	sp.position = Vector2(bx - (46.0 * scale_f if not left_handed else -46.0 * scale_f), by + 30.0 * scale_f) - sp.size * 0.5
+		var off: Vector2 = places[k]
+		if left_handed:
+			off.x = -off.x
+		b.position = Vector2(bx, by) + off - b.size * 0.5
+	stick_radius = 38.0 * scale_f
 	var pz: Control = buttons["pause"]
 	pz.position = Vector2(vp.x * 0.5 - pz.size.x * 0.5, 4)
 

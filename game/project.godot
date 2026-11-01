@@ -6,7 +6,7 @@ config_version=5
 
 [application]
 
-config/name="NDAMBA"
+config/name="Ndamba Soccer Pixel"
 config/description="Les Lionceaux, Football des Quartiers. Pour BriBri et Kaydoudou."
 config/version="0.1.0"
 run/main_scene="res://scenes/boot.tscn"
