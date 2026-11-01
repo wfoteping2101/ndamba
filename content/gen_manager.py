@@ -30,6 +30,8 @@ LIGUE_1 = [
     ("falaises_ngaoundere", "Falaises de Ngaoundéré", "NGA", "Ngaoundéré", ["#A63A2A", "#F2EEE3"], 62),
     ("pecheurs_limbe", "Pêcheurs de Limbé", "LIM", "Limbé", ["#1C6E8C", "#E3A92B"], 61),
     ("lions_mokolo", "Lions de Mokolo", "MOK", "Yaoundé", ["#C5762F", "#101814"], 60),
+    ("tsinga_tigres", "Tigres de Tsinga", "TSI", "Yaoundé", ["#E3A92B", "#101814"], 65),
+    ("mfandena_olympique", "Mfandena Olympique", "MFA", "Yaoundé", ["#B8432F", "#F6F1E4"], 64),
 ]
 LIGUE_2 = [
     ("colline_nkolbisson", "Colline de Nkolbisson", "NKB", "Yaoundé", ["#2B3F7A", "#E3A92B"], 56),
@@ -44,6 +46,10 @@ LIGUE_2 = [
     ("pierres_foumban", "Pierres de Foumban", "FOU", "Foumban", ["#3B2A6B", "#F6F1E4"], 51),
     ("gare_nkongsamba", "Gare de Nkongsamba", "NKS", "Nkongsamba", ["#C5762F", "#F6F1E4"], 49),
     ("plateau_bafang", "Plateau de Bafang", "BFG", "Bafang", ["#2E6B45", "#E3A92B"], 48),
+    ("melen_academiciens", "Académiciens de Melen", "MEL", "Yaoundé", ["#3B2A6B", "#F2C230"], 55),
+    ("biyem_assi_dynamo", "Dynamo Biyem-Assi", "BYA", "Yaoundé", ["#2B3F7A", "#E3A92B"], 53),
+    ("nlongkak_rond_point", "Rond-Point Nlongkak", "NLK", "Yaoundé", ["#C5762F", "#F2EEE3"], 52),
+    ("cite_verte_sporting", "Sporting Cité Verte", "CVT", "Yaoundé", ["#2E6B45", "#F6F1E4"], 50),
 ]
 LIGUE_3 = [
     ("lionceaux_bonamoussadi", "Lionceaux de Bonamoussadi", "LIO", "Douala", ["#2E6B45", "#F2EEE3"], 40),
@@ -51,11 +57,17 @@ LIGUE_3 = [
     ("pantheres_deido", "Panthères de Deïdo", "DEI", "Douala", ["#101814", "#E3A92B"], 43),
     ("mokolo_etoiles", "Mokolo Étoiles", "MKE", "Yaoundé", ["#C5762F", "#101814"], 41),
     ("ravin_mvog_mbi", "Ravin de Mvog-Mbi", "MVM", "Yaoundé", ["#B8432F", "#F6F1E4"], 40),
-    ("quartier_biyem_assi", "Biyem-Assi FC", "BYA", "Yaoundé", ["#2B3F7A", "#E3A92B"], 39),
+    ("etoudi_fc", "Étoudi FC", "ETO", "Yaoundé", ["#2B3F7A", "#F6F1E4"], 41),
     ("pont_japoma", "Pont de Japoma", "JAP", "Douala", ["#5C6B2E", "#F2EEE3"], 38),
     ("tamtam_bonapriso", "Tam-Tam de Bonapriso", "BPR", "Douala", ["#6B2D2D", "#F6F1E4"], 41),
     ("carriere_bastos", "Carrière de Bastos", "BAS", "Yaoundé", ["#3B2A6B", "#F6F1E4"], 37),
     ("bananiers_penja", "Bananiers de Penja", "PEN", "Penja", ["#E3A92B", "#1F4D3A"], 36),
+    ("avions_odza", "Avions d'Odza", "ODZ", "Yaoundé", ["#1C6E8C", "#F6F1E4"], 42),
+    ("messa_si_colline", "Colline de Messa-Si", "MSS", "Yaoundé", ["#8C4A1C", "#F2EEE3"], 38),
+    ("etoile_olembe", "Étoile d'Olembé", "OLB", "Yaoundé", ["#F2EEE3", "#B8432F"], 40),
+    ("ngousso_fc", "Ngousso FC", "NGO", "Yaoundé", ["#1F4D3A", "#F6F1E4"], 39),
+    ("guerriers_tongolo", "Guerriers de Tongolo", "TON", "Yaoundé", ["#101814", "#E3A92B"], 41),
+    ("coqs_emana", "Coqs d'Emana", "EMA", "Yaoundé", ["#B8432F", "#E3A92B"], 38),
 ]
 # Fictional continental sides (district names, no real club or federation)
 CONTINENTAL = [

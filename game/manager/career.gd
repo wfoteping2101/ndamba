@@ -9,7 +9,7 @@ const SKILLS := ["scan", "controle", "passe", "conduite", "dribble", "appels", "
 const SKILL_ALIAS := {"dribble-njangi": "dribble", "contre-pression": "contrepression"}
 const INTENTIONS := ["progresser", "finir", "fixer", "reprendre", "respirer"]
 const INTENSITY := {"low": 0.5, "medium": 1.0, "high": 1.3, "very-high": 1.5}
-const DIVISION_SIZE := {1: 14, 2: 12, 3: 10}
+const DIVISION_SIZE := {1: 16, 2: 16, 3: 16}
 const PROMOTED := 2
 const RELEGATED := 2
 const SESSIONS := 4
@@ -17,7 +17,7 @@ const INCOME := {1: 900, 2: 380, 3: 140}       # per week, in thousands of franc
 const FACILITY_COST := [0, 1500, 4000, 9000, 18000]
 const CUP_ROUNDS := ["r16", "qf", "sf", "final"]
 const CUP_PRIZE := [600, 1200, 2500, 6000]
-const CUP_WEEKS := [6, 12, 18, 24]
+const CUP_WEEKS := [7, 14, 21, 28]
 
 var state: Dictionary = {}
 var clubs: Dictionary = {}      # id -> static club dict (from content)
@@ -418,7 +418,9 @@ func our_caps() -> Dictionary:
 
 
 func _caps_for_club(id: String) -> Dictionary:
-	var s: float = float(state["clubs"][id]["strength"])
+	# AI clubs play like a squad with middling Njangi familiarity (0.88 of raw strength), so a
+	# well-trained team with the five intentions at 1.0 outperforms its raw numbers
+	var s: float = float(state["clubs"][id]["strength"]) * 0.88
 	var out := {}
 	for k in ManagerSim.CAP_KEYS:
 		out[k] = clampf(s + rng.randf_range(-5.0, 5.0), 10.0, 98.0)

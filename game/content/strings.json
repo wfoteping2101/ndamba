@@ -584,16 +584,16 @@
     "en": "Latest results"
   },
   "league.intro": {
-    "fr": "Huit équipes de quartier, matchs aller-retour, 14 journées. Choisis ton équipe : tu joues ses matchs, les autres sont simulés.",
-    "en": "Eight neighbourhood teams, home and away, 14 matchdays. Pick your team: you play its matches, the others are simulated."
+    "fr": "Seize équipes de quartier, huit de Douala et huit de Yaoundé, matchs aller-retour, 30 journées. Choisis ton équipe : tu joues ses matchs, les autres sont simulés.",
+    "en": "Sixteen neighbourhood teams, eight from Douala and eight from Yaoundé, home and away, 30 matchdays. Pick your team: you play its matches, the others are simulated."
   },
   "league.matchday": {
     "fr": "Journée {n}",
     "en": "Matchday {n}"
   },
   "cup.intro": {
-    "fr": "Huit équipes, élimination directe : quarts, demies, finale. Un match nul se décide aux tirs au but.",
-    "en": "Eight teams, straight knockout: quarters, semis, final. A draw goes to penalties."
+    "fr": "Seize équipes, élimination directe : huitièmes, quarts, demies, finale. Un match nul se décide aux tirs au but.",
+    "en": "Sixteen teams, straight knockout: round of 16, quarters, semis, final. A draw goes to penalties."
   },
   "cup.qf": {
     "fr": "Quart de finale",
@@ -790,5 +790,9 @@
   "story.lesson8": {
     "fr": "Personne ne garde la caisse. Le ballon voyage encore.",
     "en": "Nobody keeps the box. The ball still travels."
+  },
+  "cup.r16": {
+    "fr": "Huitième de finale",
+    "en": "Round of 16"
   }
 }

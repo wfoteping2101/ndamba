@@ -43,7 +43,7 @@ func check(cond: bool, label: String) -> void:
 
 
 func test_content_loaded() -> void:
-	check(Content.teams.size() >= 8, "at least 8 teams loaded")
+	check(Content.teams.size() >= 28, "at least 28 teams loaded (%d)" % Content.teams.size())
 	check(Content.stadiums.size() >= 7, "at least 7 stadiums loaded")
 	for id in Content.teams.keys():
 		var t: Dictionary = Content.teams[id]
@@ -236,7 +236,8 @@ func test_ai_vs_ai_match() -> void:
 	var max_steps := int(60.0 * 60.0 * 2.0)   # 2 minutes of simulated time max
 	var ball_moved := 0.0
 	var last := m.ball.pos
-	var stuck := 0
+	var stuck := 0      # longest run of consecutive still seconds during play
+	var run := 0
 	while not st["ended"] and steps < max_steps:
 		m._physics_process(1.0 / 60.0)
 		steps += 1
@@ -244,7 +245,10 @@ func test_ai_vs_ai_match() -> void:
 			var d := m.ball.pos.distance_to(last)
 			ball_moved += d
 			if d < 2.0 and m.phase == Match.Phase.PLAY:
-				stuck += 1
+				run += 1
+				stuck = maxi(stuck, run)
+			else:
+				run = 0
 			last = m.ball.pos
 	var ended: bool = st["ended"]
 	var res: Dictionary = st["res"]
@@ -440,10 +444,11 @@ func test_quicksim() -> void:
 func test_league_campaign() -> void:
 	var c := Competition.new("league")
 	c.new_game("lionceaux_bonamoussadi", {"format": "7v7", "half_minutes": 2.0, "difficulty": 1}, 3)
-	check(c.state["fixtures"].size() == 56, "league has 56 fixtures (%d)" % c.state["fixtures"].size())
-	check(c.total_weeks() == 14, "14 matchdays")
+	check(c.state["teams"].size() == 16 and c.state["teams"].has("lionceaux_bonamoussadi"), "league pool of 16 with our team")
+	check(c.state["fixtures"].size() == 240, "league has 240 fixtures (%d)" % c.state["fixtures"].size())
+	check(c.total_weeks() == 30, "30 matchdays")
 	var weeks := 0
-	while not c.state["done"] and weeks < 20:
+	while not c.state["done"] and weeks < 40:
 		var f := c.next_fixture()
 		check(not f.is_empty(), "fixture for week %d" % c.state["week"])
 		var sc := QuickSim.play(f["home"], f["away"], c.rng)
@@ -453,8 +458,10 @@ func test_league_campaign() -> void:
 	var total_p := 0
 	for id in c.state["table"].keys():
 		total_p += int(c.state["table"][id]["p"])
-	check(total_p == 112, "every team played 14 (%d played in total)" % total_p)
-	check(c.standings().size() == 8 and c.our_position() >= 1, "standings ready, champion %s" % c.state["champion"])
+	check(total_p == 480, "every team played 30 (%d played in total)" % total_p)
+	check(c.standings().size() == 16 and c.our_position() >= 1, "standings ready, champion %s" % c.state["champion"])
+	var ya := Competition.pool_for("tsinga_tigres")
+	check(ya.size() == 16 and ya.has("tsinga_tigres"), "a Yaoundé team outside the default eight is pulled into the pool")
 	c.save()
 	var c2 := Competition.new("league")
 	check(c2.load_game() and c2.state["done"], "league save round trip")
@@ -464,7 +471,7 @@ func test_league_campaign() -> void:
 func test_cup_campaign() -> void:
 	var c := Competition.new("cup")
 	c.new_game("requins_bepanda", {"format": "11v11", "half_minutes": 2.0, "difficulty": 2}, 9)
-	check(c.state["rounds"][0]["ties"].size() == 4, "four quarter-finals")
+	check(c.state["rounds"][0]["ties"].size() == 8, "eight round-of-16 ties")
 	var rounds := 0
 	while not c.state["done"] and rounds < 5:
 		var f := c.next_fixture()
@@ -474,7 +481,7 @@ func test_cup_campaign() -> void:
 		c.apply_result(f["home"], f["away"], sc)
 		rounds += 1
 	check(c.state["done"] and c.state["champion"] == "requins_bepanda", "cup won after %d rounds" % rounds)
-	check(c.state["rounds"].size() == 3, "three rounds played")
+	check(c.state["rounds"].size() == 4, "four rounds played")
 	var ground := Competition.stadium_for("requins_bepanda", "11v11")
 	check(Content.layout_of_stadium(ground) == "full", "11v11 cup tie moved to a full stadium (%s)" % ground)
 	check(Competition.stadium_for("requins_bepanda", "5v5") == "bepanda_terrain", "5v5 stays on the home ground")

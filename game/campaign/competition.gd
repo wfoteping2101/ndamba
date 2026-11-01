@@ -4,8 +4,35 @@ extends RefCounted
 ## the other fixtures are quick-simulated. State is a plain Dictionary saved in a SaveStore slot
 ## ("league" or "cup").
 
-const LEAGUE_TEAMS := ["lionceaux_bonamoussadi", "requins_bepanda", "pantheres_deido", "mokolo_etoiles", "aigles_akwa", "port_bonaberi", "carrefour_ndokoti", "rois_new_bell"]
-const CUP_ROUNDS := ["qf", "sf", "final"]
+## Sixteen teams per competition: eight from Douala, eight from Yaoundé (the player's team always in).
+const POOL_SIZE := 16
+const DOUALA := ["lionceaux_bonamoussadi", "requins_bepanda", "pantheres_deido", "aigles_akwa", "port_bonaberi", "carrefour_ndokoti", "rois_new_bell", "cobras_bonaberi", "aigles_makepe", "gars_pharmacie"]
+const YAOUNDE := ["mokolo_etoiles", "tsinga_tigres", "mfandena_olympique", "melen_academiciens", "biyem_assi_dynamo", "nlongkak_rond_point", "elig_essono_united", "avions_odza", "cite_verte_sporting", "guerriers_tongolo", "etoile_olembe", "etoudi_fc", "ecole_police_fc", "ngousso_fc", "coqs_emana", "ravin_mvog_mbi", "elig_edzoa_espoir", "messa_si_colline"]
+const CUP_ROUNDS := ["r16", "qf", "sf", "final"]
+
+
+## The 16-team pool for a campaign: 8 Douala + 8 Yaoundé, the chosen team always included.
+static func pool_for(team_id: String) -> Array:
+	var douala := DOUALA.filter(func(id): return Content.teams.has(id))
+	var yaounde := YAOUNDE.filter(func(id): return Content.teams.has(id))
+	var a: Array = douala.slice(0, POOL_SIZE / 2)
+	var b: Array = yaounde.slice(0, POOL_SIZE / 2)
+	if douala.has(team_id) and not a.has(team_id):
+		a[a.size() - 1] = team_id
+	elif yaounde.has(team_id) and not b.has(team_id):
+		b[b.size() - 1] = team_id
+	var out := a + b
+	if not out.has(team_id) and Content.teams.has(team_id):
+		out[out.size() - 1] = team_id
+	return out
+
+
+## Every team that can enter a campaign (all teams of the content).
+static func all_teams() -> Array:
+	var out := []
+	for t in Content.team_index:
+		out.append(t["id"])
+	return out
 
 var kind: String = "league"        # league | cup
 var state: Dictionary = {}
@@ -47,7 +74,7 @@ func new_game(team_id: String, options: Dictionary, seed_value: int = -1) -> voi
 	state = {
 		"kind": kind, "team": team_id, "format": options.get("format", "11v11"),
 		"half_minutes": float(options.get("half_minutes", 3.0)), "difficulty": int(options.get("difficulty", 2)),
-		"teams": LEAGUE_TEAMS.duplicate(), "week": 1, "fixtures": [], "table": {}, "done": false,
+		"teams": pool_for(team_id), "week": 1, "fixtures": [], "table": {}, "done": false,
 		"results": [], "rounds": [], "alive": true, "champion": "",
 	}
 	if kind == "league":

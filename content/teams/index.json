@@ -141,5 +141,226 @@
   ],
   "strength": 59,
   "stadium": "bepanda_terrain"
+ },
+ {
+  "id": "mfandena_olympique",
+  "name": "Mfandena Olympique",
+  "short": "MFA",
+  "city": "Yaoundé",
+  "neighborhood": "Mfandena",
+  "colors": [
+   "#B8432F",
+   "#F6F1E4"
+  ],
+  "strength": 64,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "elig_essono_united",
+  "name": "Elig-Essono United",
+  "short": "EES",
+  "city": "Yaoundé",
+  "neighborhood": "Elig-Essono",
+  "colors": [
+   "#1F4D3A",
+   "#F2C230"
+  ],
+  "strength": 60,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "tsinga_tigres",
+  "name": "Tigres de Tsinga",
+  "short": "TSI",
+  "city": "Yaoundé",
+  "neighborhood": "Tsinga",
+  "colors": [
+   "#E3A92B",
+   "#101814"
+  ],
+  "strength": 65,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "etoudi_fc",
+  "name": "Étoudi FC",
+  "short": "ETO",
+  "city": "Yaoundé",
+  "neighborhood": "Étoudi",
+  "colors": [
+   "#2B3F7A",
+   "#F6F1E4"
+  ],
+  "strength": 58,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "nlongkak_rond_point",
+  "name": "Rond-Point Nlongkak",
+  "short": "NLK",
+  "city": "Yaoundé",
+  "neighborhood": "Nlongkak",
+  "colors": [
+   "#C5762F",
+   "#F2EEE3"
+  ],
+  "strength": 61,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "cite_verte_sporting",
+  "name": "Sporting Cité Verte",
+  "short": "CVT",
+  "city": "Yaoundé",
+  "neighborhood": "Cité Verte",
+  "colors": [
+   "#2E6B45",
+   "#F6F1E4"
+  ],
+  "strength": 59,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "biyem_assi_dynamo",
+  "name": "Dynamo Biyem-Assi",
+  "short": "BYA",
+  "city": "Yaoundé",
+  "neighborhood": "Biyem-Assi",
+  "colors": [
+   "#2B3F7A",
+   "#E3A92B"
+  ],
+  "strength": 62,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "ecole_police_fc",
+  "name": "École de Police FC",
+  "short": "EDP",
+  "city": "Yaoundé",
+  "neighborhood": "École de Police",
+  "colors": [
+   "#1C1C22",
+   "#F2EEE3"
+  ],
+  "strength": 57,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "coqs_emana",
+  "name": "Coqs d'Emana",
+  "short": "EMA",
+  "city": "Yaoundé",
+  "neighborhood": "Emana",
+  "colors": [
+   "#B8432F",
+   "#E3A92B"
+  ],
+  "strength": 56,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "elig_edzoa_espoir",
+  "name": "Espoir d'Elig-Edzoa",
+  "short": "EDZ",
+  "city": "Yaoundé",
+  "neighborhood": "Elig-Edzoa",
+  "colors": [
+   "#5C6B2E",
+   "#F6F1E4"
+  ],
+  "strength": 55,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "avions_odza",
+  "name": "Avions d'Odza",
+  "short": "ODZ",
+  "city": "Yaoundé",
+  "neighborhood": "Odza",
+  "colors": [
+   "#1C6E8C",
+   "#F6F1E4"
+  ],
+  "strength": 60,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "melen_academiciens",
+  "name": "Académiciens de Melen",
+  "short": "MEL",
+  "city": "Yaoundé",
+  "neighborhood": "Melen",
+  "colors": [
+   "#3B2A6B",
+   "#F2C230"
+  ],
+  "strength": 63,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "messa_si_colline",
+  "name": "Colline de Messa-Si",
+  "short": "MSS",
+  "city": "Yaoundé",
+  "neighborhood": "Messa-Si",
+  "colors": [
+   "#8C4A1C",
+   "#F2EEE3"
+  ],
+  "strength": 54,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "etoile_olembe",
+  "name": "Étoile d'Olembé",
+  "short": "OLB",
+  "city": "Yaoundé",
+  "neighborhood": "Olembé",
+  "colors": [
+   "#F2EEE3",
+   "#B8432F"
+  ],
+  "strength": 58,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "ngousso_fc",
+  "name": "Ngousso FC",
+  "short": "NGO",
+  "city": "Yaoundé",
+  "neighborhood": "Ngousso",
+  "colors": [
+   "#1F4D3A",
+   "#F6F1E4"
+  ],
+  "strength": 57,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "guerriers_tongolo",
+  "name": "Guerriers de Tongolo",
+  "short": "TON",
+  "city": "Yaoundé",
+  "neighborhood": "Tongolo",
+  "colors": [
+   "#101814",
+   "#E3A92B"
+  ],
+  "strength": 59,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "ravin_mvog_mbi",
+  "name": "Ravin de Mvog-Mbi",
+  "short": "MVM",
+  "city": "Yaoundé",
+  "neighborhood": "Mvog-Mbi",
+  "colors": [
+   "#B8432F",
+   "#F6F1E4"
+  ],
+  "strength": 56,
+  "stadium": "mokolo_marche"
  }
 ]

@@ -168,6 +168,30 @@
   "division": 1
  },
  {
+  "id": "tsinga_tigres",
+  "name": "Tigres de Tsinga",
+  "short": "TSI",
+  "city": "Yaoundé",
+  "colors": [
+   "#E3A92B",
+   "#101814"
+  ],
+  "strength": 65,
+  "division": 1
+ },
+ {
+  "id": "mfandena_olympique",
+  "name": "Mfandena Olympique",
+  "short": "MFA",
+  "city": "Yaoundé",
+  "colors": [
+   "#B8432F",
+   "#F6F1E4"
+  ],
+  "strength": 64,
+  "division": 1
+ },
+ {
   "id": "colline_nkolbisson",
   "name": "Colline de Nkolbisson",
   "short": "NKB",
@@ -312,6 +336,54 @@
   "division": 2
  },
  {
+  "id": "melen_academiciens",
+  "name": "Académiciens de Melen",
+  "short": "MEL",
+  "city": "Yaoundé",
+  "colors": [
+   "#3B2A6B",
+   "#F2C230"
+  ],
+  "strength": 55,
+  "division": 2
+ },
+ {
+  "id": "biyem_assi_dynamo",
+  "name": "Dynamo Biyem-Assi",
+  "short": "BYA",
+  "city": "Yaoundé",
+  "colors": [
+   "#2B3F7A",
+   "#E3A92B"
+  ],
+  "strength": 53,
+  "division": 2
+ },
+ {
+  "id": "nlongkak_rond_point",
+  "name": "Rond-Point Nlongkak",
+  "short": "NLK",
+  "city": "Yaoundé",
+  "colors": [
+   "#C5762F",
+   "#F2EEE3"
+  ],
+  "strength": 52,
+  "division": 2
+ },
+ {
+  "id": "cite_verte_sporting",
+  "name": "Sporting Cité Verte",
+  "short": "CVT",
+  "city": "Yaoundé",
+  "colors": [
+   "#2E6B45",
+   "#F6F1E4"
+  ],
+  "strength": 50,
+  "division": 2
+ },
+ {
   "id": "lionceaux_bonamoussadi",
   "name": "Lionceaux de Bonamoussadi",
   "short": "LIO",
@@ -372,15 +444,15 @@
   "division": 3
  },
  {
-  "id": "quartier_biyem_assi",
-  "name": "Biyem-Assi FC",
-  "short": "BYA",
+  "id": "etoudi_fc",
+  "name": "Étoudi FC",
+  "short": "ETO",
   "city": "Yaoundé",
   "colors": [
    "#2B3F7A",
-   "#E3A92B"
+   "#F6F1E4"
   ],
-  "strength": 39,
+  "strength": 41,
   "division": 3
  },
  {
@@ -429,6 +501,78 @@
    "#1F4D3A"
   ],
   "strength": 36,
+  "division": 3
+ },
+ {
+  "id": "avions_odza",
+  "name": "Avions d'Odza",
+  "short": "ODZ",
+  "city": "Yaoundé",
+  "colors": [
+   "#1C6E8C",
+   "#F6F1E4"
+  ],
+  "strength": 42,
+  "division": 3
+ },
+ {
+  "id": "messa_si_colline",
+  "name": "Colline de Messa-Si",
+  "short": "MSS",
+  "city": "Yaoundé",
+  "colors": [
+   "#8C4A1C",
+   "#F2EEE3"
+  ],
+  "strength": 38,
+  "division": 3
+ },
+ {
+  "id": "etoile_olembe",
+  "name": "Étoile d'Olembé",
+  "short": "OLB",
+  "city": "Yaoundé",
+  "colors": [
+   "#F2EEE3",
+   "#B8432F"
+  ],
+  "strength": 40,
+  "division": 3
+ },
+ {
+  "id": "ngousso_fc",
+  "name": "Ngousso FC",
+  "short": "NGO",
+  "city": "Yaoundé",
+  "colors": [
+   "#1F4D3A",
+   "#F6F1E4"
+  ],
+  "strength": 39,
+  "division": 3
+ },
+ {
+  "id": "guerriers_tongolo",
+  "name": "Guerriers de Tongolo",
+  "short": "TON",
+  "city": "Yaoundé",
+  "colors": [
+   "#101814",
+   "#E3A92B"
+  ],
+  "strength": 41,
+  "division": 3
+ },
+ {
+  "id": "coqs_emana",
+  "name": "Coqs d'Emana",
+  "short": "EMA",
+  "city": "Yaoundé",
+  "colors": [
+   "#B8432F",
+   "#E3A92B"
+  ],
+  "strength": 38,
   "division": 3
  },
  {

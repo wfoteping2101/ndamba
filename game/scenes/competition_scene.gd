@@ -21,7 +21,7 @@ func _ready() -> void:
 	kind = "cup" if scene_file_path.ends_with("cup.tscn") else "league"
 	theme = UiTheme.theme()
 	comp = Competition.new(kind)
-	for id in Competition.LEAGUE_TEAMS:
+	for id in Competition.all_teams():
 		teams.append(Content.team(id))
 	var bg := ColorRect.new()
 	bg.color = UiTheme.NIGHT

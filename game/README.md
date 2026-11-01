@@ -8,10 +8,12 @@ Pour BriBri et Kaydoudou. A 2D pixel-art arcade football game set on the red-ear
 - **Windows build**: `builds\windows\NDAMBA.exe` (self-contained, pck embedded). Windowed 1280x720, F11 is not bound yet; use the window controls.
 - **Web build**: serve `builds\web\` with any static server (`npx.cmd serve builds\web` or Netlify). It is a PWA, single-threaded, no special headers needed. Mobile browsers show the touch controls automatically in landscape.
 - **Play**: "Match amical", choose teams, ground, format (11v11 / 7v7 / 5v5, fitted to the ground), half length, game speed, difficulty, weather, who you play (incl. CPU vs CPU to watch).
-- **Campaigns**: Les Lionceaux (story, 8 chapters), Ligue des Quartiers, Coupe des Quartiers (penalties when drawn), Carrière d'entraîneur (simulated manager mode driven by the Code Njangi), Académie Njangi (64 drills).
+- **Campaigns**: Les Lionceaux (story, 8 chapters), Ligue des Quartiers (16 teams, 30 matchdays), Coupe des Quartiers (16 teams, penalties when drawn), Carrière d'entraîneur (simulated manager mode driven by the Code Njangi), Académie Njangi (64 drills).
 - **Match flow**: stadium fly-over with line-ups (press anything to skip), kick-off, HUD with clock bug, radar, player plates and name tags.
 
 ## Controls
+
+Controllers: any XInput pad (Xbox One / Series, wired or Bluetooth) works on Windows, Android and in the browser (Chrome, Edge, Safari: press a button once so the browser exposes the pad; the page must have focus). The map below is the Xbox layout; a second pad drives player 2.
 
 | Action | Keyboard | Controller (Xbox layout) | Touch |
 |---|---|---|---|
