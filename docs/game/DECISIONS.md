@@ -21,3 +21,11 @@ Each entry: date, decision, why, how to reverse it. Newest first.
 - **Nkolndongo** spelling adopted for the Yaoundé neighbourhood list (Nkoldongo kept as alias), per the neighbourhoods dossier.
 - **No GodotSteam yet.** Steam Input is served by Godot's native gamepad support for now; GodotSteam GDExtension 4.16.2 (MIT) is the pinned candidate when achievements or Remote Play are added.
 - **Builds are not committed to git** (`builds/` is ignored): the Windows exe is 111 MB and the web wasm 40 MB. They are synced to the PC folder directly.
+
+## 2026-11-01, v0.2 rework (after William's play test: "too fast, not enough players, campaigns missing")
+- Two pitch layouts in `content/stadiums/pitch.json` (`street` 50x31 m, `full` 105x68 m), both at 8 px/m so the player sprites and the ball physics stay untouched; the stadium decides the layout, the layout decides which formats are legal (11v11 only on a full pitch, 5v5 only on a street ground). Reason: one engine, no retuning of the balance that took a day to settle.
+- Game speed is a simulation time scale (0.55 / 0.70 / 0.88) with the match clock counting real seconds and sprite animation `speed_scale` following, instead of retuning every px/s constant. Tests pin the scale to 1.0 (`Game.sim_speed_override`).
+- Goals are drawn at their logical width (`yf = 1.0` in `art/src/stadium.py`): the pitch is drawn top-down, so the old 3/4 squash made the mouth look narrower than the ball logic.
+- Campaign flow: a campaign scene fills `Game.match_config` (+ `return_to`, `Game.pending`), the match scene's "Continue" goes to the shoot-out when a winner is needed and the score is level, then back to the campaign scene which consumes `Game.last_result` once. Saves per campaign in their own slot.
+- Manager mode stays fully simulated (event model scored by the real Indice Njangi) so a season takes minutes, which is the point of training with the Code Njangi week after week.
+- GDScript lesson, again: Variant lookups cannot be `:=`-inferred; label captions inside custom Controls need `set_anchors_and_offsets_preset` after `add_child`, never `size =` on an anchored label.
