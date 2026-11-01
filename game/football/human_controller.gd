@@ -59,6 +59,13 @@ func on_teammate_got_ball(p: Footballer) -> void:
 		select(p)
 
 
+## The receiver of a pass just played: control him while the ball travels (FIFA-style).
+func pre_select(target: Footballer) -> void:
+	if target != null and target.team_index == team_index and not target.is_keeper:
+		select(target)
+		auto_switch_cooldown = 0.8
+
+
 ## Called by TouchControls so phones can inject the stick/buttons.
 func set_touch_move(v: Vector2, active: bool) -> void:
 	_move_override = v
@@ -102,6 +109,15 @@ func tick(dt: float) -> void:
 	if _use_override:
 		mv = _move_override
 	var sprint := Input.is_action_pressed(prefix + "sprint") or _touch_sprint
+	# auto-run assist: with the stick released, the controlled player goes to a loose ball or a
+	# pass meant for him on his own (setting "assist_run", on by default)
+	if mv.length() < 0.05 and not p.has_ball and Game.settings.get("assist_run", true) and m.ball_in_play:
+		var holder = m.ball.owner_player
+		if holder == null:
+			var target: Vector2 = m.ball.predict(0.4)
+			var d := p.pos.distance_to(target)
+			if d < 110.0 and d > 4.0:
+				mv = (target - p.pos).normalized() * (0.75 if d > 30.0 else 0.5)
 	if mv.length() > 0.05:
 		last_input_t = 0.0
 	else:
@@ -117,10 +133,10 @@ func tick(dt: float) -> void:
 		if charging:
 			charge_t += dt
 			p.charging = true
-			p.charge = clampf(charge_t / 0.9, 0.0, 1.0)
-			if charge_t >= 0.9 or _shoot_released:
+			p.charge = clampf(charge_t / 0.7, 0.0, 1.0)
+			if charge_t >= 0.7 or _shoot_released:
 				p.in_shoot = true
-				p.in_shoot_power = clampf(charge_t / 0.9, 0.2, 1.0)
+				p.in_shoot_power = clampf(0.35 + charge_t / 0.7 * 0.65, 0.35, 1.0)   # a tap is already a real shot
 				charging = false
 				p.charging = false
 				p.charge = 0.0
@@ -188,11 +204,14 @@ func _auto_switch(dt: float) -> void:
 	var holder = m.ball.owner_player
 	if holder != null and holder.team_index == team_index:
 		return
-	# switch when another teammate is clearly closer to where the ball is going
-	var target: Vector2 = m.ball.predict(0.3)
+	# the ball is loose or theirs: control the teammate best placed to reach it, unless the
+	# current player is already on it
+	var target: Vector2 = m.ball.predict(0.35)
 	var cur_d := current.pos.distance_to(target)
+	if cur_d < 22.0:
+		return
 	var best: Footballer = null
-	var bd := cur_d * 0.68 - 6.0
+	var bd := cur_d * 0.75 - 8.0
 	for q in team.players:
 		if q == current or q.is_keeper:
 			continue
@@ -200,6 +219,6 @@ func _auto_switch(dt: float) -> void:
 		if d < bd:
 			bd = d
 			best = q
-	if best != null and (last_input_t > 0.15 or cur_d > 90.0):
+	if best != null:
 		select(best)
-		auto_switch_cooldown = 0.9
+		auto_switch_cooldown = 0.6

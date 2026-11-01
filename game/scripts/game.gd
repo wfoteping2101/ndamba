@@ -18,6 +18,8 @@ var settings := {
 	"reduced_motion": false,
 	"show_touch": "auto",         # auto | on | off
 	"assist_aim": true,
+	"assist_run": true,           # the controlled player runs to loose balls when the stick is released
+	"pad_style": "auto",          # auto | xbox | playstation: button names in the hints
 	"speed": "medium",            # slow | medium | fast: simulation pace of the match
 	"names": true,                # name tags over the players
 }
@@ -30,9 +32,9 @@ func speed_scale() -> float:
 	if sim_speed_override > 0.0:
 		return sim_speed_override
 	match str(settings.get("speed", "medium")):
-		"slow": return 0.55
-		"fast": return 0.88
-		_: return 0.70
+		"slow": return 0.70
+		"fast": return 1.0
+		_: return 0.85
 
 ## The next match to play. Filled by the setup screen (or by tests / QA mode).
 var match_config := {
@@ -40,7 +42,7 @@ var match_config := {
 	"away": "requins_bepanda",
 	"stadium": "stade_wouri",
 	"half_minutes": 4.0,          # real minutes per half
-	"difficulty": 2,              # 0 beginner .. 4 expert
+	"difficulty": 1,              # 0 beginner .. 4 expert (casual by default: the family plays first)
 	"human_home": true,           # human controls home? (false => human vs nothing: AI vs AI)
 	"human_away": false,
 	"extra_time": false,
@@ -159,6 +161,36 @@ func record_result(result: Dictionary) -> void:
 
 func difficulty_name(d: int) -> String:
 	return ["diff.beginner", "diff.casual", "diff.intermediate", "diff.advanced", "diff.expert"][clampi(d, 0, 4)]
+
+
+## Low quality: the setting, or auto on phones and in mobile browsers.
+func low_quality() -> bool:
+	var q: String = str(settings.get("quality", "auto"))
+	if q == "low":
+		return true
+	if q == "high":
+		return false
+	return is_mobile()
+
+
+## Button names for the hints: the setting, or detected from the first connected pad.
+func pad_style() -> String:
+	var s: String = str(settings.get("pad_style", "auto"))
+	if s != "auto":
+		return s
+	for id in Input.get_connected_joypads():
+		var n := Input.get_joy_name(id).to_lower()
+		if n.contains("ps") or n.contains("dual") or n.contains("sony") or n.contains("playstation") or n.contains("wireless controller"):
+			return "playstation"
+		return "xbox"
+	return "xbox"
+
+
+## Name of the first connected pad, "" when none.
+func pad_name() -> String:
+	for id in Input.get_connected_joypads():
+		return Input.get_joy_name(id)
+	return ""
 
 
 ## True on phones/tablets and on mobile browsers.

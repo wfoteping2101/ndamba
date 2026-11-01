@@ -16,6 +16,7 @@ func _ready() -> void:
 	Sfx.music("music_loop", true)
 	Sfx.crowd(true, -16.0)
 	Loc.language_changed.connect(func(_l): _rebuild_menu())
+	Input.joy_connection_changed.connect(func(_d, _c): if is_inside_tree(): _rebuild_menu())
 
 
 func _exit_tree() -> void:
@@ -113,6 +114,11 @@ func _rebuild_menu() -> void:
 		var quit := UiTheme.button(Loc.t("menu.quit"), 190)
 		quit.pressed.connect(func(): get_tree().quit())
 		menu.add_child(quit)
+	var pad := Game.pad_name()
+	var pad_line := UiTheme.label(Loc.t("title.pad", {"name": pad}) if pad != "" else Loc.t("title.no_pad"), 8, false, Color(UiTheme.SUN, 0.9) if pad != "" else Color(UiTheme.CREAM, 0.5))
+	pad_line.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	pad_line.custom_minimum_size.x = 190
+	menu.add_child(pad_line)
 	var credits := UiTheme.label(Loc.t("credits"), 8, false, Color(UiTheme.CREAM, 0.6))
 	credits.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	credits.custom_minimum_size.x = 190

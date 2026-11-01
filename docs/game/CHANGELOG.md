@@ -1,5 +1,15 @@
 # NDAMBA changelog
 
+## 0.2.2 (2026-11-01), control feel ("impossible to control the ball" fixed)
+- A control-feel harness (`tests/feel_tests.tscn`) drives the real HumanController with a scripted thumb through the five situations that frustrated the family: loose ball, receiving a pass, dribbling past two pressing defenders, passing with a defender charging the lane, switching when the other side plays a pass. Acceptance: collects every loose ball (avg 0.47 s), traps 22/24 passes, beats two defenders 12/16 times, completes 15/20 passes, control lands on the right player 0.02 s after an opponent pass. Before the changes it was 9/24 passes trapped and 0/16 dribbles.
+- Controlled player: collection radius 13 px (AI 8.5) plus a soft magnet (24 px) that pulls a nearby ball to the feet when moving toward it or when it is arriving; first touch almost never bounces off (fail chance x0.35, threshold 260 px/s).
+- Auto-run assist (setting, on): with the stick released the controlled player runs onto loose balls and passes meant for him.
+- Passing: the receiver is controlled the moment the ball leaves the foot; the assist weights the stick direction most, penalises blocked lanes, and human passes are crisper (x1.15).
+- Auto-switch: when the ball is loose or theirs, control goes to the teammate who will reach it, without waiting for the stick to be released.
+- Dribbling has a chance: AI lunges once then waits (0.6 to 2.0 s by difficulty), a beaten tackler is stunned 0.6 s, lunges from behind rarely win, tackle odds scale with difficulty (beginner x0.6 to expert x1.2) and the dribbler moving away is harder to catch.
+- Responsiveness: kick lock 0.2 s (was 0.3), acceleration +100 px/s², a tap on shoot is a real shot (0.35 power; full charge in 0.7 s), speed presets 0.70 / 0.85 / 1.0, casual difficulty by default, full-pitch zoom 1.15.
+- Controller: pad name shown on the title screen, PlayStation button names in the hints when a Sony pad is detected (or chosen in Settings), light graphics mode (auto on phones/browsers: thinner, still crowd).
+
 ## 0.2.0 (2026-11-01), "Ndamba Soccer Pixel": 11-a-side, campaigns
 - 11v11 on a full-size 105x68 m pitch (new `full` layout, 1140x760 world, proper markings), three stadiums with terraces, floodlights, dugouts and a crowd of 100+ (Stade du Wouri, Stade de la Colline, Stade des Hauts-Plateaux); 7v7 and 5v5 remain on the neighbourhood grounds. Formats are data-driven (lineup/lineup7/lineup11, formation/formation7/formation11) and squads have 18 players.
 - Twenty-eight teams (ten Douala, eighteen Yaoundé: Mfandena, Elig-Essono, Tsinga, Étoudi, Nlongkak, Cité Verte, Biyem-Assi, École de Police, Emana, Elig-Edzoa, Odza, Melen, Messa-Si, Olembé, Ngousso, Tongolo, Mvog-Mbi plus Mokolo): four more Douala clubs (Aigles d'Akwa, Port de Bonabéri, Carrefour Ndokoti, Rois de New-Bell) and the three Part I opponents of the novel (Gars de la Pharmacie, Aigles de Makepe, Cobras de Bonabéri).

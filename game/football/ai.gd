@@ -16,17 +16,18 @@ var rng := RandomNumberGenerator.new()
 var _plan: Dictionary = {}
 var _plan_t: float = 0.0
 var force: Dictionary = {}      # one-shot intent imposed by the match (set pieces)
+var tackle_t: float = 0.0        # seconds before this player may lunge again
 
 
 static func profile_for(difficulty: int) -> Dictionary:
 	# reaction: seconds between decisions; noise: radians of aim error; pass_err: extra pass error;
 	# shoot_range: px from goal to attempt; speed: movement multiplier; press_dist: how far a presser engages
 	match clampi(difficulty, 0, 4):
-		0: return {"reaction": 0.55, "noise": 0.30, "pass_err": 0.25, "shoot_range": 52.0, "speed": 0.84, "press": 55.0, "dribble": 0.6, "intercept": 0.5, "name": "beginner"}
-		1: return {"reaction": 0.40, "noise": 0.20, "pass_err": 0.15, "shoot_range": 62.0, "speed": 0.92, "press": 70.0, "dribble": 0.5, "intercept": 0.7, "name": "casual"}
-		2: return {"reaction": 0.28, "noise": 0.12, "pass_err": 0.08, "shoot_range": 72.0, "speed": 1.0, "press": 85.0, "dribble": 0.42, "intercept": 0.85, "name": "intermediate"}
-		3: return {"reaction": 0.18, "noise": 0.07, "pass_err": 0.04, "shoot_range": 82.0, "speed": 1.03, "press": 100.0, "dribble": 0.35, "intercept": 0.95, "name": "advanced"}
-		_: return {"reaction": 0.12, "noise": 0.04, "pass_err": 0.02, "shoot_range": 92.0, "speed": 1.06, "press": 115.0, "dribble": 0.3, "intercept": 1.0, "name": "expert"}
+		0: return {"reaction": 0.55, "noise": 0.30, "pass_err": 0.25, "shoot_range": 52.0, "speed": 0.84, "press": 55.0, "dribble": 0.6, "intercept": 0.5, "tackle_gap": 2.0, "tackle_mult": 0.6, "name": "beginner"}
+		1: return {"reaction": 0.40, "noise": 0.20, "pass_err": 0.15, "shoot_range": 62.0, "speed": 0.92, "press": 70.0, "dribble": 0.5, "intercept": 0.7, "tackle_gap": 1.5, "tackle_mult": 0.8, "name": "casual"}
+		2: return {"reaction": 0.28, "noise": 0.12, "pass_err": 0.08, "shoot_range": 72.0, "speed": 1.0, "press": 85.0, "dribble": 0.42, "intercept": 0.85, "tackle_gap": 1.1, "tackle_mult": 1.0, "name": "intermediate"}
+		3: return {"reaction": 0.18, "noise": 0.07, "pass_err": 0.04, "shoot_range": 82.0, "speed": 1.03, "press": 100.0, "dribble": 0.35, "intercept": 0.95, "tackle_gap": 0.8, "tackle_mult": 1.1, "name": "advanced"}
+		_: return {"reaction": 0.12, "noise": 0.04, "pass_err": 0.02, "shoot_range": 92.0, "speed": 1.06, "press": 115.0, "dribble": 0.3, "intercept": 1.0, "tackle_gap": 0.6, "tackle_mult": 1.2, "name": "expert"}
 
 
 func _init(player: Footballer, match_node, difficulty: int) -> void:
@@ -67,16 +68,19 @@ func tick(dt: float) -> void:
 			_go_to(job_target, _needs_sprint(job_target))
 		"intercept":
 			_go_to(job_target, true)
-	# contextual tackles when pressing or chasing a dribbler
+	# contextual tackles when pressing or chasing a dribbler: one attempt, then a pause, so a
+	# dribbler who beats the first lunge has room (the player's dribbling has to be worth something)
+	tackle_t -= dt
 	if (job == "press" or job == "chase") and ball.owner_player != null and ball.owner_player.team_index != p.team_index:
 		var d := p.feet_point().distance_to(ball.pos)
-		if d < 14.0 and think_t <= 0.0:
+		if d < 13.0 and think_t <= 0.0 and tackle_t <= 0.0:
 			var slide_ok: bool = d > 9.0 and ball.owner_player.vel.length() > 70.0 and rng.randf() < 0.35
 			if slide_ok:
 				p.in_slide = true
 			else:
 				p.in_tackle = true
 			think_t = profile["reaction"] * 1.5
+			tackle_t = profile.get("tackle_gap", 1.0)
 
 
 func _needs_sprint(target: Vector2) -> bool:

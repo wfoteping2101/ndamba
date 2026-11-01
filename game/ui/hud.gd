@@ -179,8 +179,12 @@ func _build_hint() -> void:
 		lines = ["%s: A   %s: B   %s: X" % [Loc.t("hud.pass_hint"), Loc.t("hud.shoot_hint"), Loc.t("hud.through_hint")],
 				 "%s: >>   %s: Y" % [Loc.t("hud.sprint_hint"), Loc.t("hud.switch_hint")]]
 	elif pad:
-		lines = ["%s: A   %s: B (maintenir)   %s: X" % [Loc.t("hud.pass_hint"), Loc.t("hud.shoot_hint"), Loc.t("hud.through_hint")],
-				 "%s: RB   %s: Y" % [Loc.t("hud.sprint_hint"), Loc.t("hud.switch_hint")]]
+		var ps: bool = Game.pad_style() == "playstation"
+		var b := {"a": "Croix" if ps else "A", "b": "Rond" if ps else "B", "x": "Carré" if ps else "X", "y": "Triangle" if ps else "Y", "rb": "R1" if ps else "RB"}
+		if Loc.lang == "en" and ps:
+			b = {"a": "Cross", "b": "Circle", "x": "Square", "y": "Triangle", "rb": "R1"}
+		lines = ["%s: %s   %s: %s (%s)   %s: %s" % [Loc.t("hud.pass_hint"), b["a"], Loc.t("hud.shoot_hint"), b["b"], Loc.t("hud.hold"), Loc.t("hud.through_hint"), b["x"]],
+				 "%s: %s   %s: %s" % [Loc.t("hud.sprint_hint"), b["rb"], Loc.t("hud.switch_hint"), b["y"]]]
 	else:
 		lines = ["WASD / fleches   %s: J   %s: K (maintenir)   %s: L" % [Loc.t("hud.pass_hint"), Loc.t("hud.shoot_hint"), Loc.t("hud.through_hint")],
 				 "%s: Shift   %s: Espace   Esc: Pause" % [Loc.t("hud.sprint_hint"), Loc.t("hud.switch_hint")]]

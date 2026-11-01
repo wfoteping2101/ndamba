@@ -794,5 +794,45 @@
   "cup.r16": {
     "fr": "Huitième de finale",
     "en": "Round of 16"
+  },
+  "hud.hold": {
+    "fr": "maintenir",
+    "en": "hold"
+  },
+  "settings.assist_run": {
+    "fr": "Course auto vers le ballon",
+    "en": "Auto-run to the ball"
+  },
+  "settings.pad_style": {
+    "fr": "Boutons manette",
+    "en": "Pad buttons"
+  },
+  "pad.xbox": {
+    "fr": "Xbox (A B X Y)",
+    "en": "Xbox (A B X Y)"
+  },
+  "pad.playstation": {
+    "fr": "PlayStation (Croix Rond Carré Triangle)",
+    "en": "PlayStation (Cross Circle Square Triangle)"
+  },
+  "settings.quality": {
+    "fr": "Qualité graphique",
+    "en": "Graphics quality"
+  },
+  "quality.low": {
+    "fr": "Légère (téléphone)",
+    "en": "Light (phone)"
+  },
+  "quality.high": {
+    "fr": "Complète",
+    "en": "Full"
+  },
+  "title.pad": {
+    "fr": "Manette : {name}",
+    "en": "Controller: {name}"
+  },
+  "title.no_pad": {
+    "fr": "Aucune manette détectée (appuie sur un bouton de la manette)",
+    "en": "No controller detected (press a button on the pad)"
   }
 }

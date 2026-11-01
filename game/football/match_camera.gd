@@ -4,7 +4,7 @@ extends Camera2D
 ## Before kick-off it flies over the stadium (end to end, then settles on the centre circle).
 
 const ZOOM_STREET := 1.25
-const ZOOM_FULL := 1.0
+const ZOOM_FULL := 1.15
 
 var m
 var _target: Vector2 = Vector2.ZERO

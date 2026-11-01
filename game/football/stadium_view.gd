@@ -53,7 +53,15 @@ func build(stadium: Dictionary, ysort: Node2D, weather: String = "dry") -> void:
 	var cmeta: Array = JSON.parse_string(FileAccess.get_file_as_string("res://assets/props/crowd.json"))
 	var ctex: Texture2D = load("res://assets/props/crowd.png")
 	var i := 0
-	for spot in stadium.get("crowd", []):
+	var low: bool = Game.low_quality()
+	var spots: Array = stadium.get("crowd", [])
+	if low and spots.size() > 48:
+		var thinned := []
+		for k in range(spots.size()):
+			if k % 2 == 0:
+				thinned.append(spots[k])
+		spots = thinned
+	for spot in spots:
 		var row := i % cmeta.size()
 		var sf := _crowd_frames(ctex, row)
 		var a := AnimatedSprite2D.new()
@@ -61,9 +69,12 @@ func build(stadium: Dictionary, ysort: Node2D, weather: String = "dry") -> void:
 		a.centered = false
 		a.offset = Vector2(-16, -30 - float(spot.get("lift", 0)))
 		a.position = Vector2(spot["x"], spot["y"])
-		a.play("idle")
 		a.frame = randi() % 4
-		a.speed_scale = randf_range(0.7, 1.3)
+		if low:
+			a.stop()   # still crowd: cheaper on phones and in the browser
+		else:
+			a.play("idle")
+			a.speed_scale = randf_range(0.7, 1.3)
 		ysort.add_child(a)
 		crowd.append(a)
 		i += 1

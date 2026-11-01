@@ -39,6 +39,7 @@ cd C:\Users\admin\games\ndamba\game
 Last run (cloud, 2026-10-31): 471 passed, 0 failed. QA autoplay: 4-1, 66 fps average under software rendering, 13 screenshots, 155 events. Web build: zero console errors in headless Chromium.
 
 QA flags: `--qa <dir>`, `--half <minutes>`, `--teams <home_id> <away_id>`, `--stadium <id>`, `--format 5v5|7v7|11v11`, `--speed slow|medium|fast`, `--intro` (keep the fly-over, shots intro_a/intro_b), `--difficulty 0..4`, `--weather dry|rain`, `--lang fr|en`.
+Control feel: `res://tests/feel_tests.tscn -- --difficulty 1 --format 5v5` (scripted thumb through the real controller; the acceptance numbers are in the changelog).
 Other test scenes: `res://tests/manager_ui_tests.tscn`, `res://tests/academy_tests.tscn`, `res://tests/manager_calib.tscn -- --seasons 8` (manager soak), `res://tests/screenshot.tscn -- --scene res://scenes/x.tscn --out shot.png --prep league|cup|story|pens|touch` (needs a display; on Linux `xvfb-run`).
 
 ## Exports

@@ -266,7 +266,10 @@ func choose_pass(p: Footballer, aim: Vector2, through: bool) -> Dictionary:
 		var cone := 0.95 if Game.settings.get("assist_aim", true) else 0.55
 		if absf(ang) > cone:
 			continue
-		var s: float = 1.0 - absf(ang) / cone - d / 400.0
+		# the player's aim matters most; distance a little; a blocked lane counts against
+		var s: float = 1.0 - (absf(ang) / cone) * 1.5 - d / 600.0
+		if p.human_controlled and _lane_blocked(p.pos, t.pos):
+			s -= 0.35
 		if through:
 			s += rel.normalized().dot(fwd) * 0.5 + t.vel.length() / 300.0
 		if t.is_keeper:
@@ -280,6 +283,8 @@ func choose_pass(p: Footballer, aim: Vector2, through: bool) -> Dictionary:
 	var target_pos := best.pos
 	var d := p.pos.distance_to(target_pos)
 	var power := clampf(d * 1.3 + 105.0, 150.0, 300.0)
+	if p.human_controlled:
+		power = clampf(d * 1.5 + 130.0, 170.0, 330.0)   # a crisper ball: harder to intercept, still trappable
 	if through:
 		target_pos = best.pos + best.vel.limit_length(120.0) * 0.55 + fwd * 36.0
 		target_pos = clamp_to_pitch(target_pos, 6.0)
@@ -358,6 +363,12 @@ func on_possession(p: Footballer) -> void:
 		pass_chain[1 - p.team_index] = 0
 	if humans.has(p.team_index):
 		humans[p.team_index].on_teammate_got_ball(p)
+
+
+## A human passed toward `target`: the controller follows the ball to the receiver at once.
+func on_human_pass(p: Footballer, target: Footballer) -> void:
+	if humans.has(p.team_index):
+		humans[p.team_index].pre_select(target)
 
 
 func on_kick(p: Footballer, kind: String, power: float) -> void:

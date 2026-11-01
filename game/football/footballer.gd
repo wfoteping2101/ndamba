@@ -8,7 +8,9 @@ signal action_done(kind: String)
 enum State { MOVE, KICK, TACKLE, SLIDE, FALL, GETUP, JUMP, CELEBRATE, SAD, GK_SET, GK_DIVE, GK_CATCH, FROZEN }
 
 const DIRS := ["S", "SW", "W", "NW", "N", "NE", "E", "SE"]
-const CONTROL_RADIUS := 7.5
+const CONTROL_RADIUS := 8.5           # AI players (about 1 m from the feet point)
+const HUMAN_CONTROL_RADIUS := 13.0    # the controlled player collects from further away
+const MAGNET_RADIUS := 24.0           # soft collection zone for the controlled player
 const CONTROL_HEIGHT := 11.0
 const FEET_OFFSET := 5.5
 
@@ -120,7 +122,7 @@ func max_speed(sprint: bool) -> float:
 
 
 func acceleration() -> float:
-	return 420.0 + attr("acc") * 5.0
+	return 520.0 + attr("acc") * 5.0
 
 
 func dir_name_for(v: Vector2) -> String:
@@ -132,6 +134,10 @@ func dir_name_for(v: Vector2) -> String:
 
 func feet_point() -> Vector2:
 	return pos + facing * FEET_OFFSET
+
+
+func control_radius() -> float:
+	return HUMAN_CONTROL_RADIUS if human_controlled else CONTROL_RADIUS
 
 
 func can_act() -> bool:
@@ -274,7 +280,7 @@ func _step_kick(dt: float) -> void:
 	_decel(dt, 700.0)
 	if state_t >= 0.08 and not _kick_pending.is_empty():
 		_release_kick()
-	if state_t > 0.30:
+	if state_t > 0.20:
 		_enter(State.MOVE)
 
 
@@ -356,17 +362,31 @@ func _ball_control(dt: float) -> void:
 	var fp := feet_point()
 	var d := fp.distance_to(ball.pos)
 	var body_d := pos.distance_to(ball.pos)
-	if d < CONTROL_RADIUS or body_d < CONTROL_RADIUS * 0.8:
+	var radius := control_radius()
+	if d < radius or body_d < radius * 0.9:
 		_take_ball()
+	elif human_controlled and body_d < MAGNET_RADIUS and ball.h < CONTROL_HEIGHT:
+		# soft collection: a ball near the controlled player drifts toward his feet when he
+		# moves toward it (or when it is slowing down next to him), like a good first touch
+		var toward := (ball.pos - pos).normalized()
+		var moving_to_it: bool = in_move.length() > 0.1 and in_move.normalized().dot(toward) > 0.3
+		var approaching: bool = ball.vel.length() > 1.0 and ball.vel.normalized().dot(-toward) > 0.6
+		if moving_to_it or approaching or ball.vel.length() < 60.0:
+			var pull := (fp - ball.pos).normalized() * 110.0
+			ball.vel = ball.vel.lerp(pull, clampf(7.0 * dt, 0.0, 1.0))
 
 
 func _take_ball() -> void:
 	# A fast ball is harder to control: weak controllers let it bounce off.
 	var incoming := ball.vel.length()
 	var skill := attr("ctl")
-	var fail_chance := clampf((incoming - 180.0) / 420.0, 0.0, 0.6) * (1.2 - skill / 100.0)
+	var fail_chance := clampf((incoming - 260.0) / 420.0, 0.0, 0.5) * (1.2 - skill / 100.0)
+	if ball.h > 4.0:
+		fail_chance += 0.08
 	if state == State.TACKLE or state == State.SLIDE:
 		fail_chance *= 0.5
+	if human_controlled:
+		fail_chance *= 0.35   # the player's own touch is the one that must feel reliable
 	ball.touch(self)
 	if randf() < fail_chance:
 		# touch, but the ball squirts away
@@ -408,10 +428,21 @@ func _try_win_ball(reach_mult: float) -> void:
 		if holder.team_index == team_index:
 			return
 		# duel: tackling vs ball control (+ a little luck)
-		var p: float = 0.5 + (attr("tak") - holder.attr("ctl")) / 160.0
+		var p: float = 0.42 + (attr("tak") - holder.attr("ctl")) / 180.0
 		if state == State.SLIDE:
 			p += 0.1
-		p = clampf(p, 0.15, 0.9)
+		if holder.human_controlled and not human_controlled:
+			p -= 0.1
+		if brain != null and brain is AiBrain:
+			p *= float(brain.profile.get("tackle_mult", 1.0))
+		# a lunge from behind the dribbler rarely wins the ball cleanly
+		var from_behind: bool = (pos - holder.pos).normalized().dot(holder.facing) < -0.3
+		if from_behind:
+			p *= 0.5
+		# a dribbler who is moving away from the tackler is harder to catch
+		if holder.vel.length() > 40.0 and holder.vel.normalized().dot((holder.pos - pos).normalized()) > 0.5:
+			p -= 0.1
+		p = clampf(p, 0.12, 0.85)
 		_tackle_hit = true
 		if randf() < p:
 			holder.lose_ball()
@@ -427,7 +458,7 @@ func _try_win_ball(reach_mult: float) -> void:
 				match_ref.on_tackle(self, holder, true)
 		else:
 			# failed tackle: the dribbler keeps it, tackler is beaten
-			stun = 0.35
+			stun = 0.6
 			if match_ref != null:
 				match_ref.on_tackle(self, holder, false)
 	else:
@@ -478,6 +509,8 @@ func _do_pass(through: bool) -> void:
 		return
 	var aim: Vector2 = in_move if in_move.length() > 0.2 else facing
 	var choice: Dictionary = match_ref.choose_pass(self, aim.normalized(), through)
+	if human_controlled and choice.get("target") != null:
+		match_ref.on_human_pass(self, choice["target"])
 	var dir: Vector2 = choice["dir"]
 	var power: float = choice["power"]
 	var lift: float = choice["lift"]
