@@ -1,0 +1,34 @@
+[
+ {
+  "id": "bonamoussadi_terre",
+  "name_fr": "Terrain de Bonamoussadi",
+  "name_en": "Bonamoussadi Ground",
+  "city": "Douala",
+  "neighborhood": "Bonamoussadi",
+  "surface": "terre"
+ },
+ {
+  "id": "mokolo_marche",
+  "name_fr": "Terrain du marché Mokolo",
+  "name_en": "Mokolo Market Ground",
+  "city": "Yaoundé",
+  "neighborhood": "Mokolo",
+  "surface": "terre"
+ },
+ {
+  "id": "bepanda_terrain",
+  "name_fr": "Terrain de Bépanda",
+  "name_en": "Bépanda Ground",
+  "city": "Douala",
+  "neighborhood": "Bépanda",
+  "surface": "terre"
+ },
+ {
+  "id": "deido_terrain",
+  "name_fr": "Terrain de Deïdo",
+  "name_en": "Deïdo Ground",
+  "city": "Douala",
+  "neighborhood": "Deïdo",
+  "surface": "sand"
+ }
+]

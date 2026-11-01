@@ -1,0 +1,243 @@
+{
+ "id": "pantheres_deido",
+ "name": "Panthères de Deïdo",
+ "short": "DEI",
+ "city": "Douala",
+ "neighborhood": "Deïdo",
+ "kit_home": {
+  "jersey": "#F2C230",
+  "jersey2": "#1C1C22",
+  "pattern": "spots",
+  "shorts": "#1C1C22",
+  "socks": "#F2C230"
+ },
+ "kit_away": {
+  "jersey": "#1C1C22",
+  "jersey2": "#F2C230",
+  "pattern": "spots",
+  "shorts": "#F2C230",
+  "socks": "#1C1C22"
+ },
+ "kit_gk": {
+  "jersey": "#2E6B45",
+  "shorts": "#1C1C22",
+  "socks": "#2E6B45"
+ },
+ "colors": [
+  "#F2C230",
+  "#1C1C22"
+ ],
+ "crest": "panther",
+ "style": "counter",
+ "formation": "1-2-1-1",
+ "strength": 61,
+ "stadium": "deido_terrain",
+ "rivals": [
+  "lionceaux_bonamoussadi"
+ ],
+ "difficulty": 2,
+ "lore_fr": "Jaunes à taches noires, les Panthères de Deïdo attendent, puis bondissent. Quartier de pêcheurs au bord du Wouri, ils jouent avec le vent du fleuve.",
+ "lore_en": "Yellow with black spots, the Panthères of Deïdo wait, then pounce. A fishermen's neighbourhood on the Wouri, they play with the river wind.",
+ "players": [
+  {
+   "id": "pantheres_deido_lionel_eboa",
+   "given": "Lionel",
+   "family": "Eboa",
+   "nick": "",
+   "female": false,
+   "role": "GK",
+   "number": 1,
+   "skin": "dark",
+   "hair": "short",
+   "attrs": {
+    "spd": 43,
+    "acc": 41,
+    "ctl": 51,
+    "pas": 48,
+    "sho": 30,
+    "tak": 57,
+    "pos": 67,
+    "sta": 56,
+    "tmw": 53,
+    "vis": 44,
+    "gk": 79
+   }
+  },
+  {
+   "id": "pantheres_deido_oumarou_nlend",
+   "given": "Oumarou",
+   "family": "Nlend",
+   "nick": "",
+   "female": false,
+   "role": "DEF",
+   "number": 2,
+   "skin": "dark",
+   "hair": "short",
+   "attrs": {
+    "spd": 59,
+    "acc": 54,
+    "ctl": 63,
+    "pas": 54,
+    "sho": 42,
+    "tak": 72,
+    "pos": 66,
+    "sta": 73,
+    "tmw": 63,
+    "vis": 51,
+    "gk": 30
+   }
+  },
+  {
+   "id": "pantheres_deido_emmanuel_dikongué",
+   "given": "Emmanuel",
+   "family": "Dikongué",
+   "nick": "",
+   "female": false,
+   "role": "DEF",
+   "number": 3,
+   "skin": "brown",
+   "hair": "short",
+   "attrs": {
+    "spd": 45,
+    "acc": 73,
+    "ctl": 47,
+    "pas": 62,
+    "sho": 50,
+    "tak": 67,
+    "pos": 78,
+    "sta": 77,
+    "tmw": 60,
+    "vis": 49,
+    "gk": 42
+   }
+  },
+  {
+   "id": "pantheres_deido_marius_wafo",
+   "given": "Marius",
+   "family": "Wafo",
+   "nick": "",
+   "female": false,
+   "role": "MID",
+   "number": 6,
+   "skin": "tan",
+   "hair": "afro",
+   "attrs": {
+    "spd": 74,
+    "acc": 61,
+    "ctl": 65,
+    "pas": 71,
+    "sho": 64,
+    "tak": 78,
+    "pos": 83,
+    "sta": 74,
+    "tmw": 74,
+    "vis": 74,
+    "gk": 32
+   }
+  },
+  {
+   "id": "pantheres_deido_stéphane_nguema",
+   "given": "Stéphane",
+   "family": "Nguema",
+   "nick": "",
+   "female": false,
+   "role": "FWD",
+   "number": 7,
+   "skin": "brown",
+   "hair": "short",
+   "attrs": {
+    "spd": 58,
+    "acc": 83,
+    "ctl": 74,
+    "pas": 65,
+    "sho": 74,
+    "tak": 50,
+    "pos": 55,
+    "sta": 73,
+    "tmw": 58,
+    "vis": 68,
+    "gk": 25
+   }
+  },
+  {
+   "id": "pantheres_deido_stéphane_onana",
+   "given": "Stéphane",
+   "family": "Onana",
+   "nick": "",
+   "female": false,
+   "role": "MID",
+   "number": 8,
+   "skin": "dark",
+   "hair": "short",
+   "attrs": {
+    "spd": 70,
+    "acc": 61,
+    "ctl": 71,
+    "pas": 60,
+    "sho": 63,
+    "tak": 41,
+    "pos": 76,
+    "sta": 85,
+    "tmw": 72,
+    "vis": 65,
+    "gk": 31
+   }
+  },
+  {
+   "id": "pantheres_deido_yannick_djoumessi",
+   "given": "Yannick",
+   "family": "Djoumessi",
+   "nick": "",
+   "female": false,
+   "role": "FWD",
+   "number": 9,
+   "skin": "deep",
+   "hair": "short",
+   "attrs": {
+    "spd": 83,
+    "acc": 77,
+    "ctl": 71,
+    "pas": 56,
+    "sho": 80,
+    "tak": 45,
+    "pos": 67,
+    "sta": 67,
+    "tmw": 50,
+    "vis": 60,
+    "gk": 28
+   }
+  },
+  {
+   "id": "pantheres_deido_christian_djoumessi",
+   "given": "Christian",
+   "family": "Djoumessi",
+   "nick": "",
+   "female": false,
+   "role": "DEF",
+   "number": 4,
+   "skin": "brown",
+   "hair": "short",
+   "attrs": {
+    "spd": 43,
+    "acc": 66,
+    "ctl": 56,
+    "pas": 54,
+    "sho": 42,
+    "tak": 77,
+    "pos": 81,
+    "sta": 65,
+    "tmw": 72,
+    "vis": 54,
+    "gk": 29
+   }
+  }
+ ],
+ "lineup": [
+  "pantheres_deido_lionel_eboa",
+  "pantheres_deido_emmanuel_dikongué",
+  "pantheres_deido_christian_djoumessi",
+  "pantheres_deido_marius_wafo",
+  "pantheres_deido_yannick_djoumessi"
+ ],
+ "schema": 1
+}

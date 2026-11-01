@@ -13,3 +13,8 @@ coach/illustrations/*.png
 app/public/book/*/img/*-print*
 __pycache__/
 *.pyc
+
+# NDAMBA game (Godot): editor cache and local exports stay out; game-web/ (the deployed web build) is tracked
+game/.godot/
+builds/
+art/previews/*_x3.png

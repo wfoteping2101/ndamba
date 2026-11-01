@@ -1,0 +1,304 @@
+{
+ "id": "mokolo_marche",
+ "schema": 1,
+ "name_fr": "Terrain du marché Mokolo",
+ "name_en": "Mokolo Market Ground",
+ "city": "Yaoundé",
+ "neighborhood": "Mokolo",
+ "surface": "terre",
+ "goal_style": "metal",
+ "capacity": 160,
+ "lighting": "noon",
+ "tint": "#FFFFFF",
+ "props": [
+  {
+   "type": "house_0",
+   "x": 15,
+   "y": 95
+  },
+  {
+   "type": "house_4",
+   "x": 110,
+   "y": 100
+  },
+  {
+   "type": "house_3",
+   "x": 191,
+   "y": 96
+  },
+  {
+   "type": "house_4",
+   "x": 284,
+   "y": 100
+  },
+  {
+   "type": "house_0",
+   "x": 364,
+   "y": 98
+  },
+  {
+   "type": "house_4",
+   "x": 456,
+   "y": 99
+  },
+  {
+   "type": "house_2",
+   "x": 543,
+   "y": 95
+  },
+  {
+   "type": "house_3",
+   "x": 620,
+   "y": 97
+  },
+  {
+   "type": "house_2",
+   "x": 707,
+   "y": 96
+  },
+  {
+   "type": "vendor_stand",
+   "x": 70,
+   "y": 240
+  },
+  {
+   "type": "vendor_stand",
+   "x": 110,
+   "y": 262
+  },
+  {
+   "type": "vendor_stand",
+   "x": 84,
+   "y": 300
+  },
+  {
+   "type": "wall_mural",
+   "x": 300,
+   "y": 124
+  },
+  {
+   "type": "wall_mural",
+   "x": 520,
+   "y": 124
+  },
+  {
+   "type": "pole",
+   "x": 702,
+   "y": 128
+  },
+  {
+   "type": "pole",
+   "x": 150,
+   "y": 126
+  },
+  {
+   "type": "mango_tree_2",
+   "x": 730,
+   "y": 420
+  },
+  {
+   "type": "benskin_yellow",
+   "x": 320,
+   "y": 506
+  },
+  {
+   "type": "benskin_yellow",
+   "x": 352,
+   "y": 508
+  },
+  {
+   "type": "benskin_blue",
+   "x": 384,
+   "y": 505
+  },
+  {
+   "type": "bench",
+   "x": 460,
+   "y": 430
+  }
+ ],
+ "crowd": [
+  {
+   "x": 165,
+   "y": 128
+  },
+  {
+   "x": 182,
+   "y": 127
+  },
+  {
+   "x": 197,
+   "y": 129
+  },
+  {
+   "x": 213,
+   "y": 128
+  },
+  {
+   "x": 235,
+   "y": 131
+  },
+  {
+   "x": 248,
+   "y": 131
+  },
+  {
+   "x": 267,
+   "y": 128
+  },
+  {
+   "x": 282,
+   "y": 133
+  },
+  {
+   "x": 297,
+   "y": 132
+  },
+  {
+   "x": 315,
+   "y": 133
+  },
+  {
+   "x": 328,
+   "y": 133
+  },
+  {
+   "x": 348,
+   "y": 129
+  },
+  {
+   "x": 360,
+   "y": 133
+  },
+  {
+   "x": 378,
+   "y": 128
+  },
+  {
+   "x": 393,
+   "y": 132
+  },
+  {
+   "x": 410,
+   "y": 132
+  },
+  {
+   "x": 427,
+   "y": 128
+  },
+  {
+   "x": 442,
+   "y": 129
+  },
+  {
+   "x": 458,
+   "y": 131
+  },
+  {
+   "x": 475,
+   "y": 133
+  },
+  {
+   "x": 488,
+   "y": 132
+  },
+  {
+   "x": 506,
+   "y": 130
+  },
+  {
+   "x": 520,
+   "y": 131
+  },
+  {
+   "x": 539,
+   "y": 132
+  },
+  {
+   "x": 554,
+   "y": 130
+  },
+  {
+   "x": 566,
+   "y": 129
+  },
+  {
+   "x": 581,
+   "y": 131
+  },
+  {
+   "x": 599,
+   "y": 133
+  },
+  {
+   "x": 618,
+   "y": 129
+  },
+  {
+   "x": 631,
+   "y": 133
+  },
+  {
+   "x": 240,
+   "y": 439
+  },
+  {
+   "x": 265,
+   "y": 440
+  },
+  {
+   "x": 302,
+   "y": 442
+  },
+  {
+   "x": 324,
+   "y": 443
+  },
+  {
+   "x": 364,
+   "y": 442
+  },
+  {
+   "x": 386,
+   "y": 443
+  },
+  {
+   "x": 423,
+   "y": 442
+  },
+  {
+   "x": 452,
+   "y": 437
+  },
+  {
+   "x": 482,
+   "y": 439
+  },
+  {
+   "x": 519,
+   "y": 442
+  },
+  {
+   "x": 547,
+   "y": 443
+  },
+  {
+   "x": 580,
+   "y": 443
+  },
+  {
+   "x": 700,
+   "y": 300
+  },
+  {
+   "x": 714,
+   "y": 320
+  },
+  {
+   "x": 150,
+   "y": 330
+  }
+ ],
+ "desc_fr": "Entre les étals du grand marché : les vendeuses regardent le match depuis leurs parasols et les benskins font des allers-retours.",
+ "desc_en": "Between the stalls of the big market: the vendors watch from under their umbrellas and the benskins come and go."
+}

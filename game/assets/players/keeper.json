@@ -1,0 +1,100 @@
+{
+ "cell": 32,
+ "dirs": [
+  "S",
+  "SW",
+  "W",
+  "NW",
+  "N",
+  "NE",
+  "E",
+  "SE"
+ ],
+ "feet_y": 29.0,
+ "anims": {
+  "idle": {
+   "start": 0,
+   "frames": 4,
+   "fps": 4,
+   "loop": true
+  },
+  "walk": {
+   "start": 4,
+   "frames": 6,
+   "fps": 8,
+   "loop": true
+  },
+  "run": {
+   "start": 10,
+   "frames": 8,
+   "fps": 12,
+   "loop": true
+  },
+  "sprint": {
+   "start": 18,
+   "frames": 8,
+   "fps": 15,
+   "loop": true
+  },
+  "kick": {
+   "start": 26,
+   "frames": 4,
+   "fps": 14,
+   "loop": false
+  },
+  "set": {
+   "start": 30,
+   "frames": 4,
+   "fps": 4,
+   "loop": true
+  },
+  "catch": {
+   "start": 34,
+   "frames": 2,
+   "fps": 10,
+   "loop": false
+  },
+  "dive_l": {
+   "start": 36,
+   "frames": 3,
+   "fps": 10,
+   "loop": false
+  },
+  "dive_r": {
+   "start": 39,
+   "frames": 3,
+   "fps": 10,
+   "loop": false
+  },
+  "fall": {
+   "start": 42,
+   "frames": 3,
+   "fps": 10,
+   "loop": false
+  },
+  "getup": {
+   "start": 45,
+   "frames": 3,
+   "fps": 8,
+   "loop": false
+  },
+  "jump": {
+   "start": 48,
+   "frames": 3,
+   "fps": 9,
+   "loop": false
+  },
+  "celebrate": {
+   "start": 51,
+   "frames": 4,
+   "fps": 7,
+   "loop": true
+  },
+  "sad": {
+   "start": 55,
+   "frames": 2,
+   "fps": 2,
+   "loop": true
+  }
+ }
+}

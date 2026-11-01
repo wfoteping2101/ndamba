@@ -1,0 +1,1165 @@
+{
+  "events": [
+    {
+      "kind": "start",
+      "t": "0.0",
+      "text": "lionceaux_bonamoussadi vs requins_bepanda at bonamoussadi_terre, difficulty 2, half 1.0 min"
+    },
+    {
+      "clock": "01:11",
+      "kind": "save",
+      "t": "1.9",
+      "team": 1,
+      "text": "Grandes mains du gardien !"
+    },
+    {
+      "clock": "02:32",
+      "kind": "goalkick",
+      "t": "3.7",
+      "team": 1,
+      "text": "Six mètres pour Requins de Bépanda."
+    },
+    {
+      "clock": "02:54",
+      "kind": "intercept",
+      "t": "5.1",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "03:13",
+      "kind": "tackle",
+      "t": "5.5",
+      "team": 1,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "04:15",
+      "kind": "intercept",
+      "t": "6.9",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "05:50",
+      "kind": "intercept",
+      "t": "9.0",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "07:13",
+      "kind": "intercept",
+      "t": "10.8",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "07:59",
+      "kind": "tackle",
+      "t": "11.8",
+      "team": 0,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "08:48",
+      "kind": "intercept",
+      "t": "12.9",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "09:27",
+      "kind": "goalkick",
+      "t": "13.8",
+      "team": 1,
+      "text": "Six mètres pour Requins de Bépanda."
+    },
+    {
+      "clock": "09:45",
+      "kind": "intercept",
+      "t": "16.3",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "10:36",
+      "kind": "tackle",
+      "t": "17.4",
+      "team": 1,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "11:25",
+      "kind": "shot",
+      "t": "18.5",
+      "team": 0,
+      "text": "Il tente sa chance !"
+    },
+    {
+      "clock": "11:25",
+      "kind": "post",
+      "t": "18.5",
+      "team": 0,
+      "text": "Le poteau ! Le bambou tremble !"
+    },
+    {
+      "clock": "11:51",
+      "kind": "intercept",
+      "t": "19.1",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "12:06",
+      "kind": "tackle",
+      "t": "19.4",
+      "team": 0,
+      "text": "Superbe tacle !"
+    },
+    {
+      "clock": "12:41",
+      "kind": "shot",
+      "t": "20.2",
+      "team": 0,
+      "text": "Elle frappe !"
+    },
+    {
+      "clock": "12:48",
+      "kind": "parry",
+      "t": "20.3",
+      "team": 1,
+      "text": "Repoussé par le gardien !"
+    },
+    {
+      "clock": "13:18",
+      "kind": "tackle",
+      "t": "21.0",
+      "team": 1,
+      "text": "Requins de Bépanda récupère le ballon !"
+    },
+    {
+      "clock": "14:17",
+      "kind": "intercept",
+      "t": "22.3",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "15:03",
+      "kind": "tackle",
+      "t": "23.3",
+      "team": 0,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "16:48",
+      "kind": "shot",
+      "t": "25.7",
+      "team": 0,
+      "text": "Tir !"
+    },
+    {
+      "clock": "16:52",
+      "kind": "goal",
+      "t": "25.8",
+      "team": 0,
+      "text": "BUUUT DE Lionceaux de Bonamoussadi ! Et c'est Mireille !"
+    },
+    {
+      "clock": "17:11",
+      "kind": "intercept",
+      "t": "27.2",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "18:18",
+      "kind": "tackle",
+      "t": "28.7",
+      "team": 1,
+      "text": "Superbe tacle !"
+    },
+    {
+      "clock": "18:18",
+      "kind": "intercept",
+      "t": "28.7",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "19:44",
+      "kind": "tackle",
+      "t": "30.6",
+      "team": 1,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "19:59",
+      "kind": "intercept",
+      "t": "31.0",
+      "team": 1,
+      "text": "Passe coupée, Requins de Bépanda relance."
+    },
+    {
+      "clock": "21:40",
+      "kind": "shot",
+      "t": "33.2",
+      "team": 1,
+      "text": "Elle frappe !"
+    },
+    {
+      "clock": "21:41",
+      "kind": "parry",
+      "t": "33.3",
+      "team": 0,
+      "text": "Repoussé par le gardien !"
+    },
+    {
+      "clock": "21:53",
+      "kind": "intercept",
+      "t": "33.5",
+      "team": 1,
+      "text": "Passe coupée, Requins de Bépanda relance."
+    },
+    {
+      "clock": "21:58",
+      "kind": "save",
+      "t": "33.6",
+      "team": 0,
+      "text": "Le gardien de Lionceaux de Bonamoussadi capte ça !"
+    },
+    {
+      "clock": "22:53",
+      "kind": "tackle",
+      "t": "34.8",
+      "team": 1,
+      "text": "Requins de Bépanda récupère le ballon !"
+    },
+    {
+      "clock": "23:41",
+      "kind": "intercept",
+      "t": "35.9",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "25:00",
+      "kind": "out",
+      "t": "37.7",
+      "team": 1,
+      "text": "Sorti en touche, derrière les chaises en plastique."
+    },
+    {
+      "clock": "25:11",
+      "kind": "intercept",
+      "t": "38.3",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "26:20",
+      "kind": "intercept",
+      "t": "39.9",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "27:15",
+      "kind": "save",
+      "t": "41.1",
+      "team": 0,
+      "text": "Quel arrêt !"
+    },
+    {
+      "clock": "28:26",
+      "kind": "intercept",
+      "t": "42.7",
+      "team": 1,
+      "text": "Passe coupée, Requins de Bépanda relance."
+    },
+    {
+      "clock": "28:30",
+      "kind": "shot",
+      "t": "42.8",
+      "team": 1,
+      "text": "Tir !"
+    },
+    {
+      "clock": "28:32",
+      "kind": "post",
+      "t": "42.8",
+      "team": 0,
+      "text": "Le poteau ! Le bambou tremble !"
+    },
+    {
+      "clock": "28:32",
+      "kind": "goal",
+      "t": "42.8",
+      "team": 1,
+      "text": "BUUUT ! Le quartier explose ! Landry !"
+    },
+    {
+      "clock": "29:44",
+      "kind": "parry",
+      "t": "45.1",
+      "team": 1,
+      "text": "Il détourne, c'est chaud devant le but !"
+    },
+    {
+      "clock": "29:47",
+      "kind": "tackle",
+      "t": "45.2",
+      "team": 1,
+      "text": "Requins de Bépanda récupère le ballon !"
+    },
+    {
+      "clock": "30:33",
+      "kind": "intercept",
+      "t": "46.2",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "31:53",
+      "kind": "intercept",
+      "t": "48.0",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "33:29",
+      "kind": "intercept",
+      "t": "50.1",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "34:42",
+      "kind": "shot",
+      "t": "51.8",
+      "team": 0,
+      "text": "Elle frappe !"
+    },
+    {
+      "clock": "34:45",
+      "kind": "parry",
+      "t": "51.8",
+      "team": 1,
+      "text": "Il détourne, c'est chaud devant le but !"
+    },
+    {
+      "clock": "35:02",
+      "kind": "intercept",
+      "t": "52.2",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "35:44",
+      "kind": "save",
+      "t": "53.1",
+      "team": 0,
+      "text": "Quel arrêt !"
+    },
+    {
+      "clock": "37:08",
+      "kind": "intercept",
+      "t": "55.0",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "39:50",
+      "kind": "intercept",
+      "t": "58.6",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "40:23",
+      "kind": "chain",
+      "t": "59.4",
+      "team": 0,
+      "text": "Cinq passes de suite : le njangi tourne !"
+    },
+    {
+      "clock": "41:32",
+      "kind": "shot",
+      "t": "60.9",
+      "team": 0,
+      "text": "Tir !"
+    },
+    {
+      "clock": "42:28",
+      "kind": "intercept",
+      "t": "62.1",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "43:41",
+      "kind": "intercept",
+      "t": "63.8",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "43:59",
+      "kind": "shot",
+      "t": "64.1",
+      "team": 0,
+      "text": "Il tente sa chance !"
+    },
+    {
+      "clock": "44:23",
+      "kind": "parry",
+      "t": "64.7",
+      "team": 1,
+      "text": "Repoussé par le gardien !"
+    },
+    {
+      "clock": "45:14",
+      "kind": "chain",
+      "t": "65.8",
+      "team": 1,
+      "text": "Quelle circulation ! Le ballon voyage !"
+    },
+    {
+      "clock": "46:14",
+      "kind": "intercept",
+      "t": "67.2",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "47:44",
+      "kind": "intercept",
+      "t": "69.1",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "47:45",
+      "kind": "tackle",
+      "t": "69.2",
+      "team": 1,
+      "text": "Requins de Bépanda récupère le ballon !"
+    },
+    {
+      "clock": "48:22",
+      "kind": "out",
+      "t": "70.0",
+      "team": 0,
+      "text": "Touche pour Lionceaux de Bonamoussadi."
+    },
+    {
+      "clock": "48:35",
+      "kind": "intercept",
+      "t": "70.7",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "49:10",
+      "kind": "goalkick",
+      "t": "71.5",
+      "team": 0,
+      "text": "Six mètres pour Lionceaux de Bonamoussadi."
+    },
+    {
+      "clock": "49:43",
+      "kind": "intercept",
+      "t": "73.1",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "50:00",
+      "kind": "out",
+      "t": "74.6",
+      "team": 0,
+      "text": "Sorti en touche, derrière les chaises en plastique."
+    },
+    {
+      "clock": "50:00",
+      "kind": "tackle",
+      "t": "76.5",
+      "team": 1,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "50:00",
+      "kind": "shot",
+      "t": "77.7",
+      "team": 0,
+      "text": "Elle frappe !"
+    },
+    {
+      "clock": "50:00",
+      "kind": "goal",
+      "t": "77.7",
+      "team": 0,
+      "text": "BUUUT DE Lionceaux de Bonamoussadi ! Et c'est Kaydoudou !"
+    },
+    {
+      "clock": "50:00",
+      "kind": "intercept",
+      "t": "79.2",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "50:00",
+      "kind": "goalkick",
+      "t": "79.9",
+      "team": 1,
+      "text": "Six mètres pour Requins de Bépanda."
+    },
+    {
+      "clock": "50:00",
+      "kind": "halftime",
+      "t": "81.2",
+      "team": -1,
+      "text": "Mi-temps ! Les beignets de Madame Ekotto n'attendent pas."
+    },
+    {
+      "clock": "45:00",
+      "kind": "secondhalf",
+      "t": "81.2",
+      "team": -1,
+      "text": "C'est reparti pour la seconde mi-temps !"
+    },
+    {
+      "clock": "45:18",
+      "kind": "intercept",
+      "t": "82.3",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "46:00",
+      "kind": "tackle",
+      "t": "83.2",
+      "team": 1,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "47:17",
+      "kind": "tackle",
+      "t": "84.9",
+      "team": 0,
+      "text": "Superbe tacle !"
+    },
+    {
+      "clock": "47:17",
+      "kind": "intercept",
+      "t": "84.9",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "47:35",
+      "kind": "shot",
+      "t": "85.3",
+      "team": 0,
+      "text": "Il tente sa chance !"
+    },
+    {
+      "clock": "48:53",
+      "kind": "out",
+      "t": "87.0",
+      "team": 0,
+      "text": "Touche pour Lionceaux de Bonamoussadi."
+    },
+    {
+      "clock": "49:17",
+      "kind": "intercept",
+      "t": "88.7",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "50:00",
+      "kind": "tackle",
+      "t": "89.7",
+      "team": 1,
+      "text": "Superbe tacle !"
+    },
+    {
+      "clock": "50:38",
+      "kind": "save",
+      "t": "90.6",
+      "team": 1,
+      "text": "Quel arrêt !"
+    },
+    {
+      "clock": "51:05",
+      "kind": "intercept",
+      "t": "91.2",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "51:54",
+      "kind": "tackle",
+      "t": "92.2",
+      "team": 0,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "51:57",
+      "kind": "goalkick",
+      "t": "92.3",
+      "team": 1,
+      "text": "Six mètres pour Requins de Bépanda."
+    },
+    {
+      "clock": "52:24",
+      "kind": "intercept",
+      "t": "93.9",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "52:43",
+      "kind": "tackle",
+      "t": "94.3",
+      "team": 1,
+      "text": "Requins de Bépanda récupère le ballon !"
+    },
+    {
+      "clock": "54:39",
+      "kind": "tackle",
+      "t": "96.9",
+      "team": 1,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "54:39",
+      "kind": "intercept",
+      "t": "96.9",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "54:45",
+      "kind": "corner",
+      "t": "97.0",
+      "team": 0,
+      "text": "Corner pour Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "55:22",
+      "kind": "save",
+      "t": "98.8",
+      "team": 1,
+      "text": "Le gardien de Requins de Bépanda capte ça !"
+    },
+    {
+      "clock": "55:42",
+      "kind": "tackle",
+      "t": "99.3",
+      "team": 0,
+      "text": "Lionceaux de Bonamoussadi récupère le ballon !"
+    },
+    {
+      "clock": "55:56",
+      "kind": "intercept",
+      "t": "99.6",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "56:54",
+      "kind": "tackle",
+      "t": "100.9",
+      "team": 0,
+      "text": "Superbe tacle !"
+    },
+    {
+      "clock": "57:45",
+      "kind": "intercept",
+      "t": "102.0",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "59:32",
+      "kind": "intercept",
+      "t": "104.4",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "59:33",
+      "kind": "tackle",
+      "t": "104.4",
+      "team": 0,
+      "text": "Lionceaux de Bonamoussadi récupère le ballon !"
+    },
+    {
+      "clock": "60:51",
+      "kind": "intercept",
+      "t": "106.1",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "61:11",
+      "kind": "tackle",
+      "t": "106.6",
+      "team": 0,
+      "text": "Lionceaux de Bonamoussadi récupère le ballon !"
+    },
+    {
+      "clock": "62:03",
+      "kind": "chain",
+      "t": "107.8",
+      "team": 0,
+      "text": "Quelle circulation ! Le ballon voyage !"
+    },
+    {
+      "clock": "62:08",
+      "kind": "shot",
+      "t": "107.8",
+      "team": 0,
+      "text": "Tir !"
+    },
+    {
+      "clock": "62:32",
+      "kind": "tackle",
+      "t": "108.4",
+      "team": 0,
+      "text": "Lionceaux de Bonamoussadi récupère le ballon !"
+    },
+    {
+      "clock": "63:06",
+      "kind": "save",
+      "t": "109.1",
+      "team": 1,
+      "text": "Quel arrêt !"
+    },
+    {
+      "clock": "64:52",
+      "kind": "tackle",
+      "t": "111.5",
+      "team": 0,
+      "text": "Lionceaux de Bonamoussadi récupère le ballon !"
+    },
+    {
+      "clock": "64:52",
+      "kind": "intercept",
+      "t": "111.5",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "65:11",
+      "kind": "shot",
+      "t": "111.9",
+      "team": 0,
+      "text": "Tir !"
+    },
+    {
+      "clock": "67:38",
+      "kind": "goalkick",
+      "t": "115.2",
+      "team": 0,
+      "text": "Six mètres pour Lionceaux de Bonamoussadi."
+    },
+    {
+      "clock": "69:01",
+      "kind": "goalkick",
+      "t": "118.0",
+      "team": 1,
+      "text": "Six mètres pour Requins de Bépanda."
+    },
+    {
+      "clock": "69:38",
+      "kind": "intercept",
+      "t": "120.0",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "71:00",
+      "kind": "intercept",
+      "t": "121.8",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "71:35",
+      "kind": "shot",
+      "t": "122.6",
+      "team": 0,
+      "text": "Elle frappe !"
+    },
+    {
+      "clock": "71:37",
+      "kind": "parry",
+      "t": "122.6",
+      "team": 1,
+      "text": "Repoussé par le gardien !"
+    },
+    {
+      "clock": "71:58",
+      "kind": "tackle",
+      "t": "123.1",
+      "team": 1,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "72:23",
+      "kind": "intercept",
+      "t": "123.7",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "72:54",
+      "kind": "post",
+      "t": "124.4",
+      "team": 0,
+      "text": "Le poteau ! Le bambou tremble !"
+    },
+    {
+      "clock": "73:41",
+      "kind": "out",
+      "t": "125.4",
+      "team": 0,
+      "text": "Touche pour Lionceaux de Bonamoussadi."
+    },
+    {
+      "clock": "73:54",
+      "kind": "intercept",
+      "t": "126.1",
+      "team": 1,
+      "text": "Passe coupée, Requins de Bépanda relance."
+    },
+    {
+      "clock": "75:08",
+      "kind": "intercept",
+      "t": "127.8",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "75:42",
+      "kind": "tackle",
+      "t": "128.5",
+      "team": 1,
+      "text": "Requins de Bépanda récupère le ballon !"
+    },
+    {
+      "clock": "75:45",
+      "kind": "out",
+      "t": "128.6",
+      "team": 0,
+      "text": "Sorti en touche, derrière les chaises en plastique."
+    },
+    {
+      "clock": "76:16",
+      "kind": "intercept",
+      "t": "130.5",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "77:29",
+      "kind": "chain",
+      "t": "132.0",
+      "team": 1,
+      "text": "Quelle circulation ! Le ballon voyage !"
+    },
+    {
+      "clock": "78:29",
+      "kind": "tackle",
+      "t": "133.4",
+      "team": 0,
+      "text": "Superbe tacle !"
+    },
+    {
+      "clock": "78:41",
+      "kind": "intercept",
+      "t": "133.7",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "80:12",
+      "kind": "intercept",
+      "t": "135.7",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "82:02",
+      "kind": "intercept",
+      "t": "138.2",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "82:54",
+      "kind": "goalkick",
+      "t": "139.3",
+      "team": 1,
+      "text": "Six mètres pour Requins de Bépanda."
+    },
+    {
+      "clock": "83:20",
+      "kind": "intercept",
+      "t": "141.0",
+      "team": 1,
+      "text": "Passe coupée, Requins de Bépanda relance."
+    },
+    {
+      "clock": "84:17",
+      "kind": "out",
+      "t": "142.3",
+      "team": 0,
+      "text": "Sorti en touche, derrière les chaises en plastique."
+    },
+    {
+      "clock": "84:26",
+      "kind": "intercept",
+      "t": "142.9",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "85:21",
+      "kind": "goalkick",
+      "t": "144.2",
+      "team": 1,
+      "text": "Six mètres pour Requins de Bépanda."
+    },
+    {
+      "clock": "85:48",
+      "kind": "tackle",
+      "t": "145.7",
+      "team": 1,
+      "text": "Le ballon est repris, bien joué."
+    },
+    {
+      "clock": "87:05",
+      "kind": "shot",
+      "t": "147.4",
+      "team": 0,
+      "text": "Tir !"
+    },
+    {
+      "clock": "87:08",
+      "kind": "post",
+      "t": "147.5",
+      "team": 0,
+      "text": "Sur le montant !"
+    },
+    {
+      "clock": "87:14",
+      "kind": "goal",
+      "t": "147.6",
+      "team": 0,
+      "text": "BUUUT ! Le quartier explose ! Mireille !"
+    },
+    {
+      "clock": "87:27",
+      "kind": "chain",
+      "t": "148.9",
+      "team": 1,
+      "text": "Cinq passes de suite : le njangi tourne !"
+    },
+    {
+      "clock": "87:32",
+      "kind": "intercept",
+      "t": "149.0",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "88:39",
+      "kind": "shot",
+      "t": "150.5",
+      "team": 0,
+      "text": "Tir !"
+    },
+    {
+      "clock": "88:53",
+      "kind": "intercept",
+      "t": "150.8",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "89:15",
+      "kind": "goal",
+      "t": "151.3",
+      "team": 0,
+      "text": "BUUUT DE Lionceaux de Bonamoussadi ! Et c'est Mireille !"
+    },
+    {
+      "clock": "89:34",
+      "kind": "intercept",
+      "t": "152.8",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "91:29",
+      "kind": "intercept",
+      "t": "155.3",
+      "team": 0,
+      "text": "Intercepté par Lionceaux de Bonamoussadi !"
+    },
+    {
+      "clock": "93:52",
+      "kind": "intercept",
+      "t": "158.5",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "94:36",
+      "kind": "tackle",
+      "t": "159.5",
+      "team": 0,
+      "text": "Lionceaux de Bonamoussadi récupère le ballon !"
+    },
+    {
+      "clock": "94:55",
+      "kind": "shot",
+      "t": "159.9",
+      "team": 0,
+      "text": "Tir !"
+    },
+    {
+      "clock": "95:00",
+      "kind": "intercept",
+      "t": "160.3",
+      "team": 0,
+      "text": "Passe coupée, Lionceaux de Bonamoussadi relance."
+    },
+    {
+      "clock": "95:00",
+      "kind": "parry",
+      "t": "160.5",
+      "team": 1,
+      "text": "Il détourne, c'est chaud devant le but !"
+    },
+    {
+      "clock": "95:00",
+      "kind": "tackle",
+      "t": "161.0",
+      "team": 1,
+      "text": "Superbe tacle !"
+    },
+    {
+      "clock": "95:00",
+      "kind": "goalkick",
+      "t": "163.3",
+      "team": 0,
+      "text": "Six mètres pour Lionceaux de Bonamoussadi."
+    },
+    {
+      "clock": "95:00",
+      "kind": "intercept",
+      "t": "165.2",
+      "team": 1,
+      "text": "Intercepté par Requins de Bépanda !"
+    },
+    {
+      "clock": "95:00",
+      "kind": "tackle",
+      "t": "166.1",
+      "team": 0,
+      "text": "Lionceaux de Bonamoussadi récupère le ballon !"
+    },
+    {
+      "clock": "95:00",
+      "kind": "fulltime",
+      "t": "166.3",
+      "team": -1,
+      "text": "C'est fini ! Fin du match."
+    }
+  ],
+  "fps_avg": 66.2405177876347,
+  "frames": 11047,
+  "result": {
+    "away": "requins_bepanda",
+    "competition": "friendly",
+    "date": "2026-10-31T18:55:33",
+    "difficulty": 2,
+    "goals": [
+      {
+        "clock": "16:52",
+        "half": 1,
+        "own": false,
+        "scorer": "Mireille \"la Gazelle\" Eyenga",
+        "team": 0
+      },
+      {
+        "clock": "28:32",
+        "half": 1,
+        "own": false,
+        "scorer": "Landry Zoa",
+        "team": 1
+      },
+      {
+        "clock": "50:00",
+        "half": 1,
+        "own": false,
+        "scorer": "Kaydoudou",
+        "team": 0
+      },
+      {
+        "clock": "87:14",
+        "half": 2,
+        "own": false,
+        "scorer": "Mireille \"la Gazelle\" Eyenga",
+        "team": 0
+      },
+      {
+        "clock": "89:15",
+        "half": 2,
+        "own": false,
+        "scorer": "Mireille \"la Gazelle\" Eyenga",
+        "team": 0
+      }
+    ],
+    "home": "lionceaux_bonamoussadi",
+    "possession": [
+      46.0,
+      54.0
+    ],
+    "score": [
+      4,
+      1
+    ],
+    "stadium": "bonamoussadi_terre",
+    "stats": [
+      {
+        "corners": 1,
+        "fouls": 0,
+        "on_target": 9,
+        "pass_ok": 40,
+        "passes": 103,
+        "possession": 2100.0,
+        "shots": 25,
+        "tackles": 44
+      },
+      {
+        "corners": 0,
+        "fouls": 0,
+        "on_target": 3,
+        "pass_ok": 47,
+        "passes": 124,
+        "possession": 2504.0,
+        "shots": 3,
+        "tackles": 52
+      }
+    ]
+  },
+  "seconds": 166.294629060603
+}

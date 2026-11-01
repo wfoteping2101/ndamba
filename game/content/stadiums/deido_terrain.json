@@ -1,0 +1,217 @@
+{
+ "id": "deido_terrain",
+ "schema": 1,
+ "name_fr": "Terrain de Deïdo",
+ "name_en": "Deïdo Ground",
+ "city": "Douala",
+ "neighborhood": "Deïdo",
+ "surface": "sand",
+ "goal_style": "bamboo",
+ "capacity": 110,
+ "lighting": "golden",
+ "tint": "#FFE8C8",
+ "props": [
+  {
+   "type": "house_1",
+   "x": 78,
+   "y": 97
+  },
+  {
+   "type": "house_1",
+   "x": 204,
+   "y": 98
+  },
+  {
+   "type": "house_1",
+   "x": 299,
+   "y": 100
+  },
+  {
+   "type": "house_1",
+   "x": 416,
+   "y": 98
+  },
+  {
+   "type": "house_1",
+   "x": 537,
+   "y": 99
+  },
+  {
+   "type": "house_0",
+   "x": 641,
+   "y": 98
+  },
+  {
+   "type": "palm",
+   "x": 60,
+   "y": 150
+  },
+  {
+   "type": "palm",
+   "x": 740,
+   "y": 160
+  },
+  {
+   "type": "palm",
+   "x": 720,
+   "y": 440
+  },
+  {
+   "type": "palm",
+   "x": 90,
+   "y": 450
+  },
+  {
+   "type": "vendor_stand",
+   "x": 400,
+   "y": 440
+  },
+  {
+   "type": "bench",
+   "x": 300,
+   "y": 428
+  },
+  {
+   "type": "bench",
+   "x": 500,
+   "y": 430
+  },
+  {
+   "type": "benskin_blue",
+   "x": 200,
+   "y": 506
+  }
+ ],
+ "crowd": [
+  {
+   "x": 189,
+   "y": 133
+  },
+  {
+   "x": 209,
+   "y": 128
+  },
+  {
+   "x": 227,
+   "y": 129
+  },
+  {
+   "x": 249,
+   "y": 132
+  },
+  {
+   "x": 270,
+   "y": 127
+  },
+  {
+   "x": 294,
+   "y": 129
+  },
+  {
+   "x": 311,
+   "y": 131
+  },
+  {
+   "x": 328,
+   "y": 128
+  },
+  {
+   "x": 348,
+   "y": 130
+  },
+  {
+   "x": 369,
+   "y": 127
+  },
+  {
+   "x": 393,
+   "y": 133
+  },
+  {
+   "x": 409,
+   "y": 127
+  },
+  {
+   "x": 429,
+   "y": 131
+  },
+  {
+   "x": 449,
+   "y": 133
+  },
+  {
+   "x": 473,
+   "y": 128
+  },
+  {
+   "x": 491,
+   "y": 130
+  },
+  {
+   "x": 514,
+   "y": 129
+  },
+  {
+   "x": 531,
+   "y": 130
+  },
+  {
+   "x": 547,
+   "y": 128
+  },
+  {
+   "x": 569,
+   "y": 129
+  },
+  {
+   "x": 585,
+   "y": 127
+  },
+  {
+   "x": 605,
+   "y": 130
+  },
+  {
+   "x": 247,
+   "y": 443
+  },
+  {
+   "x": 288,
+   "y": 444
+  },
+  {
+   "x": 317,
+   "y": 440
+  },
+  {
+   "x": 347,
+   "y": 439
+  },
+  {
+   "x": 388,
+   "y": 440
+  },
+  {
+   "x": 423,
+   "y": 441
+  },
+  {
+   "x": 448,
+   "y": 441
+  },
+  {
+   "x": 490,
+   "y": 444
+  },
+  {
+   "x": 521,
+   "y": 444
+  },
+  {
+   "x": 551,
+   "y": 441
+  }
+ ],
+ "desc_fr": "Près du fleuve Wouri, un terrain de sable sous les palmiers. Le ballon roule moins, les jambes brûlent plus.",
+ "desc_en": "Near the Wouri river, a sand pitch under the palms. The ball rolls less, the legs burn more."
+}

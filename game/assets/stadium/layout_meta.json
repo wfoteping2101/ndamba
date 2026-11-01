@@ -1,0 +1,29 @@
+{
+ "world": [
+  800,
+  520
+ ],
+ "pitch": [
+  200,
+  135,
+  400,
+  250
+ ],
+ "ppm": 8.0,
+ "goal_w": {
+  "goal_line_x": 18,
+  "top_y": 19,
+  "bottom_y": 38,
+  "crossbar_y": 6,
+  "w": 24,
+  "h": 46
+ },
+ "goal_e": {
+  "goal_line_x": 5,
+  "top_y": 19,
+  "bottom_y": 38,
+  "crossbar_y": 6,
+  "w": 24,
+  "h": 46
+ }
+}

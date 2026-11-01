@@ -1,0 +1,39 @@
+{
+ "terre": {
+  "roll": 150,
+  "drag": 0.55,
+  "bounce": 0.52,
+  "bounce_drag": 0.82,
+  "player_speed": 1.0,
+  "dust": 1.0,
+  "dribble_error": 0.1
+ },
+ "grass": {
+  "roll": 125,
+  "drag": 0.45,
+  "bounce": 0.58,
+  "bounce_drag": 0.86,
+  "player_speed": 1.02,
+  "dust": 0.0,
+  "dribble_error": 0.04
+ },
+ "sand": {
+  "roll": 260,
+  "drag": 1.1,
+  "bounce": 0.32,
+  "bounce_drag": 0.65,
+  "player_speed": 0.86,
+  "dust": 0.7,
+  "dribble_error": 0.14
+ },
+ "mud": {
+  "roll": 215,
+  "drag": 0.95,
+  "bounce": 0.3,
+  "bounce_drag": 0.6,
+  "player_speed": 0.9,
+  "dust": 0.0,
+  "dribble_error": 0.16,
+  "splash": 1.0
+ }
+}

@@ -1,0 +1,222 @@
+{
+ "id": "bepanda_terrain",
+ "schema": 1,
+ "name_fr": "Terrain de Bépanda",
+ "name_en": "Bépanda Ground",
+ "city": "Douala",
+ "neighborhood": "Bépanda",
+ "surface": "terre",
+ "goal_style": "metal",
+ "capacity": 130,
+ "lighting": "overcast",
+ "tint": "#E8ECF2",
+ "props": [
+  {
+   "type": "house_1",
+   "x": 63,
+   "y": 103
+  },
+  {
+   "type": "house_0",
+   "x": 155,
+   "y": 102
+  },
+  {
+   "type": "house_0",
+   "x": 255,
+   "y": 103
+  },
+  {
+   "type": "house_2",
+   "x": 346,
+   "y": 103
+  },
+  {
+   "type": "house_3",
+   "x": 448,
+   "y": 102
+  },
+  {
+   "type": "house_4",
+   "x": 549,
+   "y": 102
+  },
+  {
+   "type": "house_4",
+   "x": 653,
+   "y": 104
+  },
+  {
+   "type": "wall_mural",
+   "x": 200,
+   "y": 122
+  },
+  {
+   "type": "wall_mural",
+   "x": 600,
+   "y": 122
+  },
+  {
+   "type": "pole",
+   "x": 120,
+   "y": 150
+  },
+  {
+   "type": "pole",
+   "x": 690,
+   "y": 440
+  },
+  {
+   "type": "mango_tree",
+   "x": 110,
+   "y": 430
+  },
+  {
+   "type": "bench",
+   "x": 400,
+   "y": 432
+  },
+  {
+   "type": "benskin_red",
+   "x": 480,
+   "y": 506
+  },
+  {
+   "type": "benskin_blue",
+   "x": 520,
+   "y": 508
+  }
+ ],
+ "crowd": [
+  {
+   "x": 173,
+   "y": 130
+  },
+  {
+   "x": 185,
+   "y": 132
+  },
+  {
+   "x": 206,
+   "y": 128
+  },
+  {
+   "x": 234,
+   "y": 127
+  },
+  {
+   "x": 249,
+   "y": 133
+  },
+  {
+   "x": 265,
+   "y": 133
+  },
+  {
+   "x": 289,
+   "y": 130
+  },
+  {
+   "x": 314,
+   "y": 132
+  },
+  {
+   "x": 331,
+   "y": 132
+  },
+  {
+   "x": 351,
+   "y": 130
+  },
+  {
+   "x": 374,
+   "y": 130
+  },
+  {
+   "x": 387,
+   "y": 129
+  },
+  {
+   "x": 406,
+   "y": 127
+  },
+  {
+   "x": 427,
+   "y": 130
+  },
+  {
+   "x": 448,
+   "y": 129
+  },
+  {
+   "x": 471,
+   "y": 133
+  },
+  {
+   "x": 489,
+   "y": 130
+  },
+  {
+   "x": 513,
+   "y": 133
+  },
+  {
+   "x": 531,
+   "y": 131
+  },
+  {
+   "x": 550,
+   "y": 131
+  },
+  {
+   "x": 574,
+   "y": 130
+  },
+  {
+   "x": 594,
+   "y": 128
+  },
+  {
+   "x": 610,
+   "y": 132
+  },
+  {
+   "x": 625,
+   "y": 133
+  },
+  {
+   "x": 269,
+   "y": 443
+  },
+  {
+   "x": 305,
+   "y": 444
+  },
+  {
+   "x": 348,
+   "y": 443
+  },
+  {
+   "x": 380,
+   "y": 444
+  },
+  {
+   "x": 422,
+   "y": 444
+  },
+  {
+   "x": 463,
+   "y": 441
+  },
+  {
+   "x": 496,
+   "y": 439
+  },
+  {
+   "x": 547,
+   "y": 445
+  }
+ ],
+ "desc_fr": "Le fief des Requins, un terrain dur et bruyant derrière les maisons de Bépanda. Ici on ne fait pas de cadeaux.",
+ "desc_en": "The Requins' home, a hard and noisy ground behind the houses of Bépanda. No gifts are given here."
+}

@@ -1,0 +1,54 @@
+[
+ {
+  "id": "mokolo_etoiles",
+  "name": "Mokolo Étoiles",
+  "short": "MOK",
+  "city": "Yaoundé",
+  "neighborhood": "Mokolo",
+  "colors": [
+   "#F2C230",
+   "#1C1C22"
+  ],
+  "strength": 62,
+  "stadium": "mokolo_marche"
+ },
+ {
+  "id": "requins_bepanda",
+  "name": "Requins de Bépanda",
+  "short": "BEP",
+  "city": "Douala",
+  "neighborhood": "Bépanda",
+  "colors": [
+   "#2E63B8",
+   "#F2EEE3"
+  ],
+  "strength": 64,
+  "stadium": "bepanda_terrain"
+ },
+ {
+  "id": "lionceaux_bonamoussadi",
+  "name": "Lionceaux de Bonamoussadi",
+  "short": "BON",
+  "city": "Douala",
+  "neighborhood": "Bonamoussadi",
+  "colors": [
+   "#2E6B45",
+   "#F2EEE3"
+  ],
+  "strength": 60,
+  "stadium": "bonamoussadi_terre"
+ },
+ {
+  "id": "pantheres_deido",
+  "name": "Panthères de Deïdo",
+  "short": "DEI",
+  "city": "Douala",
+  "neighborhood": "Deïdo",
+  "colors": [
+   "#F2C230",
+   "#1C1C22"
+  ],
+  "strength": 61,
+  "stadium": "deido_terrain"
+ }
+]

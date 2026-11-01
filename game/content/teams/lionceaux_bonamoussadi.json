@@ -1,0 +1,248 @@
+{
+ "id": "lionceaux_bonamoussadi",
+ "name": "Lionceaux de Bonamoussadi",
+ "short": "BON",
+ "city": "Douala",
+ "neighborhood": "Bonamoussadi",
+ "kit_home": {
+  "jersey": "#2E6B45",
+  "jersey2": "#F2EEE3",
+  "pattern": "plain",
+  "shorts": "#1C1C22",
+  "socks": "#F2EEE3"
+ },
+ "kit_away": {
+  "jersey": "#F2EEE3",
+  "jersey2": "#2E6B45",
+  "pattern": "stripes",
+  "shorts": "#2E6B45",
+  "socks": "#F2EEE3"
+ },
+ "kit_gk": {
+  "jersey": "#E3A92B",
+  "shorts": "#1C1C22",
+  "socks": "#E3A92B"
+ },
+ "colors": [
+  "#2E6B45",
+  "#F2EEE3"
+ ],
+ "crest": "lion_cub",
+ "style": "possession",
+ "formation": "1-1-1-2",
+ "strength": 60,
+ "stadium": "bonamoussadi_terre",
+ "rivals": [
+  "requins_bepanda"
+ ],
+ "difficulty": 2,
+ "lore_fr": "L'équipe de BriBri et Kaydoudou, entraînée par Tonton Fokou sur le terrain de terre rouge de Bonamoussadi. Une seule règle : le ballon doit voyager.",
+ "lore_en": "BriBri and Kaydoudou's team, coached by Tonton Fokou on the red-earth pitch of Bonamoussadi. One rule: the ball must travel.",
+ "players": [
+  {
+   "id": "lionceaux_bonamoussadi_bribri",
+   "given": "BriBri",
+   "family": "",
+   "nick": "",
+   "female": false,
+   "role": "MID",
+   "number": 8,
+   "skin": "deep",
+   "hair": "short",
+   "attrs": {
+    "spd": 66,
+    "acc": 64,
+    "ctl": 74,
+    "pas": 84,
+    "sho": 58,
+    "tak": 60,
+    "pos": 78,
+    "sta": 74,
+    "tmw": 86,
+    "vis": 88,
+    "gk": 28
+   },
+   "from_book": true
+  },
+  {
+   "id": "lionceaux_bonamoussadi_kaydoudou",
+   "given": "Kaydoudou",
+   "family": "",
+   "nick": "",
+   "female": false,
+   "role": "FWD",
+   "number": 7,
+   "skin": "deep",
+   "hair": "afro",
+   "attrs": {
+    "spd": 84,
+    "acc": 88,
+    "ctl": 86,
+    "pas": 56,
+    "sho": 70,
+    "tak": 36,
+    "pos": 60,
+    "sta": 70,
+    "tmw": 58,
+    "vis": 62,
+    "gk": 20
+   },
+   "from_book": true,
+   "socks_mismatch": true
+  },
+  {
+   "id": "lionceaux_bonamoussadi_mireille",
+   "given": "Mireille",
+   "family": "Eyenga",
+   "nick": "la Gazelle",
+   "female": true,
+   "role": "FWD",
+   "number": 11,
+   "skin": "brown",
+   "hair": "braids",
+   "attrs": {
+    "spd": 90,
+    "acc": 86,
+    "ctl": 66,
+    "pas": 58,
+    "sho": 66,
+    "tak": 48,
+    "pos": 64,
+    "sta": 76,
+    "tmw": 66,
+    "vis": 58,
+    "gk": 22
+   },
+   "from_book": true
+  },
+  {
+   "id": "lionceaux_bonamoussadi_ousmane",
+   "given": "Ousmane",
+   "family": "Bello",
+   "nick": "Petit Pied",
+   "female": false,
+   "role": "GK",
+   "number": 1,
+   "skin": "dark",
+   "hair": "short",
+   "attrs": {
+    "spd": 50,
+    "acc": 52,
+    "ctl": 48,
+    "pas": 56,
+    "sho": 30,
+    "tak": 46,
+    "pos": 76,
+    "sta": 62,
+    "tmw": 60,
+    "vis": 54,
+    "gk": 84
+   },
+   "from_book": true
+  },
+  {
+   "id": "lionceaux_bonamoussadi_amina_tchatchoua",
+   "given": "Amina",
+   "family": "Tchatchoua",
+   "nick": "",
+   "female": true,
+   "role": "DEF",
+   "number": 2,
+   "skin": "dark",
+   "hair": "braids",
+   "attrs": {
+    "spd": 62,
+    "acc": 63,
+    "ctl": 56,
+    "pas": 69,
+    "sho": 47,
+    "tak": 80,
+    "pos": 71,
+    "sta": 75,
+    "tmw": 49,
+    "vis": 57,
+    "gk": 29
+   }
+  },
+  {
+   "id": "lionceaux_bonamoussadi_sandrine_wafo",
+   "given": "Sandrine",
+   "family": "Wafo",
+   "nick": "",
+   "female": true,
+   "role": "MID",
+   "number": 6,
+   "skin": "brown",
+   "hair": "wrap",
+   "attrs": {
+    "spd": 65,
+    "acc": 65,
+    "ctl": 52,
+    "pas": 73,
+    "sho": 52,
+    "tak": 62,
+    "pos": 57,
+    "sta": 74,
+    "tmw": 60,
+    "vis": 63,
+    "gk": 27
+   }
+  },
+  {
+   "id": "lionceaux_bonamoussadi_oumarou_zoa",
+   "given": "Oumarou",
+   "family": "Zoa",
+   "nick": "",
+   "female": false,
+   "role": "FWD",
+   "number": 9,
+   "skin": "brown",
+   "hair": "short",
+   "attrs": {
+    "spd": 80,
+    "acc": 54,
+    "ctl": 66,
+    "pas": 49,
+    "sho": 75,
+    "tak": 38,
+    "pos": 62,
+    "sta": 59,
+    "tmw": 60,
+    "vis": 64,
+    "gk": 25
+   }
+  },
+  {
+   "id": "lionceaux_bonamoussadi_moussa_mbarga",
+   "given": "Moussa",
+   "family": "Mbarga",
+   "nick": "",
+   "female": false,
+   "role": "DEF",
+   "number": 3,
+   "skin": "brown",
+   "hair": "short",
+   "attrs": {
+    "spd": 61,
+    "acc": 52,
+    "ctl": 50,
+    "pas": 44,
+    "sho": 36,
+    "tak": 72,
+    "pos": 66,
+    "sta": 61,
+    "tmw": 66,
+    "vis": 51,
+    "gk": 30
+   }
+  }
+ ],
+ "lineup": [
+  "lionceaux_bonamoussadi_ousmane",
+  "lionceaux_bonamoussadi_amina_tchatchoua",
+  "lionceaux_bonamoussadi_bribri",
+  "lionceaux_bonamoussadi_mireille",
+  "lionceaux_bonamoussadi_kaydoudou"
+ ],
+ "schema": 1
+}

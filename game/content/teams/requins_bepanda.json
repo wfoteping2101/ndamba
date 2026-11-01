@@ -1,0 +1,244 @@
+{
+ "id": "requins_bepanda",
+ "name": "Requins de Bépanda",
+ "short": "BEP",
+ "city": "Douala",
+ "neighborhood": "Bépanda",
+ "kit_home": {
+  "jersey": "#2E63B8",
+  "jersey2": "#F2EEE3",
+  "pattern": "plain",
+  "shorts": "#F2EEE3",
+  "socks": "#2E63B8"
+ },
+ "kit_away": {
+  "jersey": "#F2EEE3",
+  "jersey2": "#2E63B8",
+  "pattern": "hoops",
+  "shorts": "#2E63B8",
+  "socks": "#F2EEE3"
+ },
+ "kit_gk": {
+  "jersey": "#B8432F",
+  "shorts": "#1C1C22",
+  "socks": "#B8432F"
+ },
+ "colors": [
+  "#2E63B8",
+  "#F2EEE3"
+ ],
+ "crest": "shark",
+ "style": "physical",
+ "formation": "1-2-1-1",
+ "strength": 64,
+ "stadium": "bepanda_terrain",
+ "rivals": [
+  "lionceaux_bonamoussadi"
+ ],
+ "difficulty": 3,
+ "lore_fr": "L'équipe du quartier voisin dans Lionceaux, menée par Junior « Bulldozer » Mvondo. Maillot bleu, aileron de requin dessiné dans le dos. Ils ne reculent jamais.",
+ "lore_en": "The next-door rivals from Lionceaux, led by Junior \"Bulldozer\" Mvondo. Blue shirt with a shark fin drawn on the back. They never back down.",
+ "players": [
+  {
+   "id": "requins_bepanda_junior",
+   "given": "Junior",
+   "family": "Mvondo",
+   "nick": "Bulldozer",
+   "female": false,
+   "role": "DEF",
+   "number": 4,
+   "skin": "dark",
+   "hair": "fade",
+   "attrs": {
+    "spd": 60,
+    "acc": 58,
+    "ctl": 52,
+    "pas": 50,
+    "sho": 55,
+    "tak": 82,
+    "pos": 68,
+    "sta": 78,
+    "tmw": 55,
+    "vis": 48,
+    "gk": 30
+   },
+   "from_book": true
+  },
+  {
+   "id": "requins_bepanda_patrick_ekotto",
+   "given": "Patrick",
+   "family": "Ekotto",
+   "nick": "",
+   "female": false,
+   "role": "GK",
+   "number": 1,
+   "skin": "brown",
+   "hair": "short",
+   "attrs": {
+    "spd": 42,
+    "acc": 44,
+    "ctl": 48,
+    "pas": 53,
+    "sho": 29,
+    "tak": 51,
+    "pos": 76,
+    "sta": 53,
+    "tmw": 50,
+    "vis": 47,
+    "gk": 78
+   }
+  },
+  {
+   "id": "requins_bepanda_arnaud_nkoulou",
+   "given": "Arnaud",
+   "family": "Nkoulou",
+   "nick": "",
+   "female": false,
+   "role": "DEF",
+   "number": 2,
+   "skin": "tan",
+   "hair": "afro",
+   "attrs": {
+    "spd": 61,
+    "acc": 65,
+    "ctl": 56,
+    "pas": 62,
+    "sho": 42,
+    "tak": 74,
+    "pos": 67,
+    "sta": 61,
+    "tmw": 72,
+    "vis": 57,
+    "gk": 33
+   }
+  },
+  {
+   "id": "requins_bepanda_wilfried_nguema",
+   "given": "Wilfried",
+   "family": "Nguema",
+   "nick": "",
+   "female": false,
+   "role": "MID",
+   "number": 6,
+   "skin": "deep",
+   "hair": "fade",
+   "attrs": {
+    "spd": 76,
+    "acc": 68,
+    "ctl": 63,
+    "pas": 78,
+    "sho": 69,
+    "tak": 59,
+    "pos": 73,
+    "sta": 70,
+    "tmw": 87,
+    "vis": 70,
+    "gk": 25
+   }
+  },
+  {
+   "id": "requins_bepanda_joël_kouam",
+   "given": "Joël",
+   "family": "Kouam",
+   "nick": "",
+   "female": false,
+   "role": "FWD",
+   "number": 7,
+   "skin": "tan",
+   "hair": "fade",
+   "attrs": {
+    "spd": 74,
+    "acc": 73,
+    "ctl": 66,
+    "pas": 54,
+    "sho": 73,
+    "tak": 43,
+    "pos": 66,
+    "sta": 73,
+    "tmw": 72,
+    "vis": 61,
+    "gk": 39
+   }
+  },
+  {
+   "id": "requins_bepanda_hamadou_etoundi",
+   "given": "Hamadou",
+   "family": "Etoundi",
+   "nick": "",
+   "female": false,
+   "role": "MID",
+   "number": 8,
+   "skin": "brown",
+   "hair": "short",
+   "attrs": {
+    "spd": 72,
+    "acc": 72,
+    "ctl": 67,
+    "pas": 81,
+    "sho": 64,
+    "tak": 53,
+    "pos": 79,
+    "sta": 79,
+    "tmw": 65,
+    "vis": 76,
+    "gk": 29
+   }
+  },
+  {
+   "id": "requins_bepanda_landry_zoa",
+   "given": "Landry",
+   "family": "Zoa",
+   "nick": "",
+   "female": false,
+   "role": "FWD",
+   "number": 9,
+   "skin": "dark",
+   "hair": "short",
+   "attrs": {
+    "spd": 84,
+    "acc": 84,
+    "ctl": 78,
+    "pas": 65,
+    "sho": 88,
+    "tak": 50,
+    "pos": 70,
+    "sta": 63,
+    "tmw": 69,
+    "vis": 70,
+    "gk": 25
+   }
+  },
+  {
+   "id": "requins_bepanda_serge_nana",
+   "given": "Serge",
+   "family": "Nana",
+   "nick": "",
+   "female": false,
+   "role": "DEF",
+   "number": 3,
+   "skin": "dark",
+   "hair": "short",
+   "attrs": {
+    "spd": 47,
+    "acc": 65,
+    "ctl": 40,
+    "pas": 63,
+    "sho": 52,
+    "tak": 90,
+    "pos": 70,
+    "sta": 76,
+    "tmw": 64,
+    "vis": 39,
+    "gk": 38
+   }
+  }
+ ],
+ "lineup": [
+  "requins_bepanda_patrick_ekotto",
+  "requins_bepanda_junior",
+  "requins_bepanda_arnaud_nkoulou",
+  "requins_bepanda_wilfried_nguema",
+  "requins_bepanda_landry_zoa"
+ ],
+ "schema": 1
+}

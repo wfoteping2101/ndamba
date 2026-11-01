@@ -1,0 +1,243 @@
+{
+ "id": "mokolo_etoiles",
+ "name": "Mokolo Étoiles",
+ "short": "MOK",
+ "city": "Yaoundé",
+ "neighborhood": "Mokolo",
+ "kit_home": {
+  "jersey": "#F2C230",
+  "jersey2": "#1C1C22",
+  "pattern": "stripes",
+  "shorts": "#1C1C22",
+  "socks": "#F2C230"
+ },
+ "kit_away": {
+  "jersey": "#F2EEE3",
+  "jersey2": "#F2C230",
+  "pattern": "sash",
+  "shorts": "#F2EEE3",
+  "socks": "#1C1C22"
+ },
+ "kit_gk": {
+  "jersey": "#2E63B8",
+  "shorts": "#1C1C22",
+  "socks": "#2E63B8"
+ },
+ "colors": [
+  "#F2C230",
+  "#1C1C22"
+ ],
+ "crest": "star",
+ "style": "direct",
+ "formation": "1-2-1-1",
+ "strength": 62,
+ "stadium": "mokolo_marche",
+ "rivals": [
+  "mvog_ada_lions"
+ ],
+ "difficulty": 2,
+ "lore_fr": "Nés entre les étals du grand marché de Mokolo, les Étoiles jouent vite et fort. Leurs maillots jaunes rayés de noir se voient de loin dans la poussière.",
+ "lore_en": "Born between the stalls of the big Mokolo market, the Étoiles play fast and hard. Their yellow shirts with black stripes can be seen from far away in the dust.",
+ "players": [
+  {
+   "id": "mokolo_etoiles_franck_nana",
+   "given": "Franck",
+   "family": "Nana",
+   "nick": "",
+   "female": false,
+   "role": "GK",
+   "number": 1,
+   "skin": "brown",
+   "hair": "fade",
+   "attrs": {
+    "spd": 33,
+    "acc": 56,
+    "ctl": 51,
+    "pas": 63,
+    "sho": 25,
+    "tak": 48,
+    "pos": 74,
+    "sta": 69,
+    "tmw": 62,
+    "vis": 58,
+    "gk": 87
+   }
+  },
+  {
+   "id": "mokolo_etoiles_aboubakar_eboa",
+   "given": "Aboubakar",
+   "family": "Eboa",
+   "nick": "",
+   "female": false,
+   "role": "DEF",
+   "number": 2,
+   "skin": "dark",
+   "hair": "afro",
+   "attrs": {
+    "spd": 57,
+    "acc": 56,
+    "ctl": 49,
+    "pas": 61,
+    "sho": 41,
+    "tak": 90,
+    "pos": 75,
+    "sta": 62,
+    "tmw": 56,
+    "vis": 49,
+    "gk": 40
+   }
+  },
+  {
+   "id": "mokolo_etoiles_prisca_njoya",
+   "given": "Prisca",
+   "family": "Njoya",
+   "nick": "",
+   "female": true,
+   "role": "DEF",
+   "number": 3,
+   "skin": "deep",
+   "hair": "afro",
+   "attrs": {
+    "spd": 66,
+    "acc": 62,
+    "ctl": 52,
+    "pas": 54,
+    "sho": 28,
+    "tak": 70,
+    "pos": 76,
+    "sta": 74,
+    "tmw": 64,
+    "vis": 45,
+    "gk": 40
+   }
+  },
+  {
+   "id": "mokolo_etoiles_prisca_dikongué",
+   "given": "Prisca",
+   "family": "Dikongué",
+   "nick": "",
+   "female": true,
+   "role": "MID",
+   "number": 6,
+   "skin": "dark",
+   "hair": "wrap",
+   "attrs": {
+    "spd": 69,
+    "acc": 69,
+    "ctl": 72,
+    "pas": 72,
+    "sho": 55,
+    "tak": 62,
+    "pos": 64,
+    "sta": 68,
+    "tmw": 79,
+    "vis": 64,
+    "gk": 31
+   }
+  },
+  {
+   "id": "mokolo_etoiles_serge_nkoulou",
+   "given": "Serge",
+   "family": "Nkoulou",
+   "nick": "",
+   "female": false,
+   "role": "FWD",
+   "number": 7,
+   "skin": "dark",
+   "hair": "fade",
+   "attrs": {
+    "spd": 83,
+    "acc": 76,
+    "ctl": 75,
+    "pas": 58,
+    "sho": 77,
+    "tak": 42,
+    "pos": 60,
+    "sta": 69,
+    "tmw": 58,
+    "vis": 57,
+    "gk": 25
+   }
+  },
+  {
+   "id": "mokolo_etoiles_lionel_ebongué",
+   "given": "Lionel",
+   "family": "Ebongué",
+   "nick": "",
+   "female": false,
+   "role": "MID",
+   "number": 8,
+   "skin": "tan",
+   "hair": "afro",
+   "attrs": {
+    "spd": 66,
+    "acc": 63,
+    "ctl": 74,
+    "pas": 71,
+    "sho": 78,
+    "tak": 61,
+    "pos": 60,
+    "sta": 79,
+    "tmw": 68,
+    "vis": 61,
+    "gk": 35
+   }
+  },
+  {
+   "id": "mokolo_etoiles_fadimatou_fotso",
+   "given": "Fadimatou",
+   "family": "Fotso",
+   "nick": "",
+   "female": true,
+   "role": "FWD",
+   "number": 9,
+   "skin": "brown",
+   "hair": "afro",
+   "attrs": {
+    "spd": 75,
+    "acc": 76,
+    "ctl": 61,
+    "pas": 51,
+    "sho": 75,
+    "tak": 45,
+    "pos": 70,
+    "sta": 77,
+    "tmw": 66,
+    "vis": 62,
+    "gk": 25
+   }
+  },
+  {
+   "id": "mokolo_etoiles_christian_dikongué",
+   "given": "Christian",
+   "family": "Dikongué",
+   "nick": "",
+   "female": false,
+   "role": "DEF",
+   "number": 4,
+   "skin": "brown",
+   "hair": "afro",
+   "attrs": {
+    "spd": 61,
+    "acc": 63,
+    "ctl": 60,
+    "pas": 70,
+    "sho": 36,
+    "tak": 76,
+    "pos": 76,
+    "sta": 70,
+    "tmw": 47,
+    "vis": 59,
+    "gk": 48
+   }
+  }
+ ],
+ "lineup": [
+  "mokolo_etoiles_franck_nana",
+  "mokolo_etoiles_christian_dikongué",
+  "mokolo_etoiles_aboubakar_eboa",
+  "mokolo_etoiles_lionel_ebongué",
+  "mokolo_etoiles_fadimatou_fotso"
+ ],
+ "schema": 1
+}

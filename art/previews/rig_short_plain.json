@@ -1,0 +1,40 @@
+{
+ "cell": 32,
+ "dirs": [
+  "S",
+  "SW",
+  "W",
+  "NW",
+  "N",
+  "NE",
+  "E",
+  "SE"
+ ],
+ "feet_y": 29.0,
+ "anims": {
+  "idle": {
+   "start": 0,
+   "frames": 4,
+   "fps": 4,
+   "loop": true
+  },
+  "run": {
+   "start": 4,
+   "frames": 8,
+   "fps": 12,
+   "loop": true
+  },
+  "kick": {
+   "start": 12,
+   "frames": 4,
+   "fps": 14,
+   "loop": false
+  },
+  "celebrate": {
+   "start": 16,
+   "frames": 4,
+   "fps": 7,
+   "loop": true
+  }
+ }
+}

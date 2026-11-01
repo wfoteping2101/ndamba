@@ -1,0 +1,40 @@
+{
+  "_comment": "Material tones are [base, light, dark]. 'keys' are the exact colours baked into shared sprite sheets; the game's palette shader replaces them at runtime. 'real_preview' is only for human review of the rig.",
+  "keys": {
+    "skin":    ["#FF00FF", "#FF60FF", "#B000B0"],
+    "hair":    ["#00FFFF", "#60FFFF", "#00A0A0"],
+    "jersey":  ["#FF0000", "#FF6060", "#A00000"],
+    "jersey2": ["#0000FF", "#6060FF", "#0000A0"],
+    "shorts":  ["#00FF00", "#60FF60", "#00A000"],
+    "socks":   ["#FFFF00", "#FFFF78", "#A0A000"],
+    "socks2":  ["#FFD700", "#FFE878", "#A08800"],
+    "boots":   ["#FF8000", "#FFAA60", "#A05000"],
+    "keeper":  ["#8000FF", "#AA60FF", "#5000A0"],
+    "gloves":  ["#00FF80", "#60FFAA", "#00A050"],
+    "wrap":    ["#FF0080", "#FF60AA", "#A00050"]
+  },
+  "real_preview": {
+    "skin":    ["#8A5A3C", "#A8744E", "#5B3A27"],
+    "hair":    ["#1E1414", "#3A2A2A", "#100A0A"],
+    "jersey":  ["#2E6B45", "#4E8E62", "#1E4A30"],
+    "jersey2": ["#F2EEE3", "#FFFFFF", "#C9C2B0"],
+    "shorts":  ["#1C1C22", "#3A3A44", "#101014"],
+    "socks":   ["#F2EEE3", "#FFFFFF", "#BDB6A5"],
+    "socks2":  ["#F2EEE3", "#FFFFFF", "#BDB6A5"],
+    "boots":   ["#232026", "#44404A", "#121014"],
+    "keeper":  ["#E3A92B", "#F4C65A", "#A87A18"],
+    "gloves":  ["#F2EEE3", "#FFFFFF", "#BDB6A5"],
+    "wrap":    ["#C9362B", "#E25A4D", "#8E251D"]
+  },
+  "skin_tones": {
+    "deep":   ["#5B3A27", "#7A5038", "#3A2419"],
+    "dark":   ["#6F4530", "#8E5E42", "#48291B"],
+    "brown":  ["#8A5A3C", "#A8744E", "#5B3A27"],
+    "tan":    ["#A8744E", "#C48F66", "#7A5038"],
+    "light":  ["#C9956A", "#E0B088", "#946A48"]
+  },
+  "hair_colours": {
+    "black": ["#1E1414", "#3A2A2A", "#100A0A"],
+    "brown": ["#3B2418", "#5A3A28", "#241410"]
+  }
+}

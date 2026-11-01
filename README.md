@@ -9,6 +9,7 @@ One codebase, four products, by William Foteping (Lemon Network Solutions):
 | **Lionceaux, tome 1 : Le Ballon qui voyage** (starring Kaydoudou & BriBri) | `tome1/` | French illustrated novel for ages 8 to 12, cinematic painted art (`tome1/art/`) (40 chapters, 5 parts: Cameroun, États-Unis, France, Espagne, Angleterre), each chapter ending with a « Leçon du Ballon ». Read at `/book/tome1/`, PDF in `app/public/downloads/`. |
 | **Le Code Njangi** | `coach/` | French coaching book for coaches, analysts and managers: the African game model, 23 chapters, 50 drills (`coach/drills/*.json`, bilingual), the Indice Njangi. Read at `/book/methode/`. |
 | **Ndamba** (the app) | `app/` | Bilingual (FR/EN) premium app: drill library, session builder, week periodization, team and match setup, live match tagging with the Indice Njangi report, video analysis, player space, the books. |
+| **NDAMBA, le jeu** (Les Lionceaux, Football des Quartiers) | `game/` | Godot 4.7 pixel-art arcade football on the red-earth pitches of Cameroon, dedicated to BriBri and Kaydoudou. 5v5 playable (Web, Windows), FR/EN. See `game/README.md`, `docs/game/`, `docs/research/`. |
 | **Mola** | `app/src/surfaces/mola/` | The agent: conversational onboarding, then actions inside the app (sessions, week plans, matches, players, convocations with approval). Optional LLM through `app/api/mola.ts` (set `ANTHROPIC_API_KEY` on Vercel). |
 
 ## Build
