@@ -1,5 +1,11 @@
 # NDAMBA changelog
 
+## 0.3.0 (2026-11-01), art pass
+- Player rig rebuilt at 40 px cells (scale 1.42): fuller torso and limbs, knees and socks, collar ring and sleeve cuffs, eyes with whites and brows, mouth, hair caps that leave the face clear; 36 sheets regenerated; softer two-tone drop shadow.
+- Grounds: calmer noise, vertical mowing stripes and painted white lines on grass, worn goalmouths only; finer laterite; fewer pebbles.
+- Full stadiums: perimeter advertising boards with original brands (NDAMBA, Lemon Network, Beignets Mami, Benskin Express, Code Njangi, Le ballon voyage, Radio Quartier, Makossa FM), dugouts moved in front of the boards.
+- Broadcast vignette overlay on the match (off with reduced motion); name tags and the player arrow raised for the taller sprites.
+
 ## 0.2.2 (2026-11-01), control feel ("impossible to control the ball" fixed)
 - A control-feel harness (`tests/feel_tests.tscn`) drives the real HumanController with a scripted thumb through the five situations that frustrated the family: loose ball, receiving a pass, dribbling past two pressing defenders, passing with a defender charging the lane, switching when the other side plays a pass. Acceptance: collects every loose ball (avg 0.47 s), traps 22/24 passes, beats two defenders 12/16 times, completes 15/20 passes, control lands on the right player 0.02 s after an opponent pass. Before the changes it was 9/24 passes trapped and 0/16 dribbles.
 - Controlled player: collection radius 13 px (AI 8.5) plus a soft magnet (24 px) that pulls a nearby ball to the feet when moving toward it or when it is arriving; first touch almost never bounces off (fail chance x0.35, threshold 260 px/s).

@@ -27,7 +27,9 @@ GRASS = [hex2rgb(h) for h in ("#4F7A2E", "#5C8A35", "#6B9A3C", "#7AA743", "#8AB3
 GRASS_WORN = [hex2rgb(h) for h in ("#7E7A3C", "#8C8744", "#9A944C", "#A69F55", "#B2AA5E")]
 SAND = [hex2rgb(h) for h in ("#C9A66B", "#D5B47A", "#DFC088", "#E8CC96", "#F0D7A6")]
 CHALK = (236, 224, 200)
+CHALK_DRY = CHALK
 CHALK_DIM = (214, 190, 160)
+PAINT = (246, 244, 236)
 
 
 def _paint_noise(img: Image.Image, box, ramp, cell: int, seed: int, contrast: float = 1.0, bias: float = 0.0):
@@ -61,7 +63,8 @@ def _blend_patch(img: Image.Image, cx, cy, rx, ry, ramp, seed, feather=0.35, cel
 
 
 def chalk_line(draw: ImageDraw.ImageDraw, p0, p1, rnd: random.Random, wear: float = 0.35, width: int = 2):
-    """A hand-painted chalk line: broken, slightly wobbly, dimmer where worn."""
+    """A hand-painted chalk line: broken, slightly wobbly, dimmer where worn. Painted white when wear is 0."""
+    CHALK = PAINT if wear <= 0.0 else CHALK_DRY
     x0, y0 = p0
     x1, y1 = p1
     length = math.hypot(x1 - x0, y1 - y0)
@@ -73,7 +76,7 @@ def chalk_line(draw: ImageDraw.ImageDraw, p0, p1, rnd: random.Random, wear: floa
         if rnd.random() < wear * 0.5:
             continue
         col = CHALK if rnd.random() > wear else CHALK_DIM
-        wob = rnd.choice((0, 0, 0, 1)) if width > 1 else 0
+        wob = (rnd.choice((0, 0, 0, 1)) if width > 1 else 0) if wear > 0.0 else 0
         if abs(x1 - x0) >= abs(y1 - y0):
             draw.point((int(x), int(y) + wob), col)
             if width > 1:
@@ -85,6 +88,7 @@ def chalk_line(draw: ImageDraw.ImageDraw, p0, p1, rnd: random.Random, wear: floa
 
 
 def chalk_arc(draw, cx, cy, r, a0, a1, rnd, wear=0.35, squash=0.64):
+    CHALK = PAINT if wear <= 0.0 else CHALK_DRY
     steps = int(abs(a1 - a0) * r / 1.2) + 2
     for s in range(steps + 1):
         a = a0 + (a1 - a0) * s / steps
@@ -101,9 +105,9 @@ def ground_texture(surface: str, world_w: int, world_h: int, pitch, seed: int = 
     rnd = random.Random(seed)
     px, py, pw, ph = pitch
     if surface == "terre":
-        _paint_noise(img, (0, 0, world_w, world_h), TERRE, 12, seed, contrast=0.75)
+        _paint_noise(img, (0, 0, world_w, world_h), TERRE, 16, seed, contrast=0.5)
         # the pitch itself is more trodden and a little lighter (dust)
-        _paint_noise(img, (px - 6, py - 6, px + pw + 6, py + ph + 6), TERRE, 9, seed + 1, contrast=0.55, bias=0.10)
+        _paint_noise(img, (px - 6, py - 6, px + pw + 6, py + ph + 6), TERRE, 14, seed + 1, contrast=0.36, bias=0.10)
         # worn central corridor and goalmouths: darker, harder soil
         for (cx, cy, rx, ry, s) in ((px + pw / 2, py + ph / 2, pw * 0.42, ph * 0.22, 11),
                                     (px + 24, py + ph / 2, 30, 28, 12), (px + pw - 24, py + ph / 2, 30, 28, 13)):
@@ -120,7 +124,7 @@ def ground_texture(surface: str, world_w: int, world_h: int, pitch, seed: int = 
             _blend_patch(img, cx, cy, rnd.uniform(4, 10), rnd.uniform(2, 5), GRASS_WORN, seed + 100 + i, feather=1.1)
         # small stones and pebbles outside the playing area
         d = ImageDraw.Draw(img)
-        for i in range(220):
+        for i in range(120):
             x = rnd.randrange(0, world_w)
             y = rnd.randrange(0, world_h)
             if px - 4 <= x <= px + pw + 4 and py - 4 <= y <= py + ph + 4:
@@ -136,20 +140,22 @@ def ground_texture(surface: str, world_w: int, world_h: int, pitch, seed: int = 
                 if rnd.random() < 0.7:
                     d.point((x, yy + int(math.sin(x / 23.0) * 2)), TERRE_WET[2] + (255,))
     elif surface == "grass":
-        _paint_noise(img, (0, 0, world_w, world_h), GRASS, 20, seed, contrast=0.9)
-        # mowing stripes
+        _paint_noise(img, (0, 0, world_w, world_h), GRASS, 30, seed, contrast=0.4)
+        # mowing stripes (vertical bands, like a mown stadium pitch), wider on the big pitch
         p = img.load()
+        band_w = 48 if pw > 600 else 32
         for y in range(py, py + ph):
-            band = ((y - py) // 24) % 2
             for x in range(px, px + pw):
+                band = ((x - px) // band_w) % 2
                 r, g, b, a = p[x, y]
-                p[x, y] = (r + (6 if band else -6), g + (8 if band else -8), b, a)
-        for i in range(18):
-            _blend_patch(img, rnd.uniform(px, px + pw), rnd.uniform(py, py + ph), rnd.uniform(6, 16), rnd.uniform(4, 9), GRASS_WORN, seed + 200 + i, feather=0.8)
+                p[x, y] = (min(255, r + (7 if band else -5)), min(255, g + (10 if band else -7)), b, a)
+        # a few worn spots only in the goalmouths and the centre
+        for (cx, cy, rx, ry, k) in ((px + 30, py + ph / 2, 26, 14, 1), (px + pw - 30, py + ph / 2, 26, 14, 2), (px + pw / 2, py + ph / 2, 16, 10, 3)):
+            _blend_patch(img, cx, cy, rx, ry, GRASS_WORN, seed + 200 + k, feather=1.0, cell=8)
     elif surface == "sand":
-        _paint_noise(img, (0, 0, world_w, world_h), SAND, 22, seed, contrast=0.8)
+        _paint_noise(img, (0, 0, world_w, world_h), SAND, 26, seed, contrast=0.5)
     elif surface == "mud":
-        _paint_noise(img, (0, 0, world_w, world_h), TERRE_WET, 24, seed, contrast=1.0)
+        _paint_noise(img, (0, 0, world_w, world_h), TERRE_WET, 24, seed, contrast=0.7)
         for i in range(14):
             _blend_patch(img, rnd.uniform(px, px + pw), rnd.uniform(py, py + ph), rnd.uniform(8, 22), rnd.uniform(5, 12),
                          [hex2rgb(h) for h in ("#4A2A22", "#553129", "#5E382F")], seed + 300 + i, feather=0.7)
@@ -160,7 +166,7 @@ def ground_texture(surface: str, world_w: int, world_h: int, pitch, seed: int = 
 def draw_lines(img, pitch, rnd, rules="street5", worn=True):
     d = ImageDraw.Draw(img)
     px, py, pw, ph = pitch
-    wear = 0.42 if worn else 0.08
+    wear = 0.42 if worn else 0.0
     # touchlines and goal lines
     chalk_line(d, (px, py), (px + pw, py), rnd, wear)
     chalk_line(d, (px, py + ph), (px + pw, py + ph), rnd, wear)
@@ -521,6 +527,38 @@ def dugout(seed=4):
     return cv.to_image()
 
 
+def ad_board(text: str, bg: str, fg: str, length: int = 96, seed: int = 1):
+    """Perimeter advertising board with an original brand name, in the game's pixel font."""
+    from PIL import ImageFont
+    img = Image.new("RGBA", (length, 13), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rectangle((0, 0, length - 1, 12), fill=hex2rgb(bg) + (255,), outline=(30, 24, 22, 255))
+    d.rectangle((1, 11, length - 2, 11), fill=tuple(max(0, c - 40) for c in hex2rgb(bg)) + (255,))
+    font = ImageFont.truetype(os.path.join(ROOT, "game", "assets", "fonts", "Silkscreen-Regular.ttf"), 8)
+    tw = d.textlength(text, font=font)
+    d.text(((length - tw) // 2, 2), text, font=font, fill=hex2rgb(fg) + (255,))
+    return img
+
+
+ADS = [("NDAMBA", "#1F4D3A", "#F6F1E4"), ("LEMON NETWORK", "#E3A92B", "#1E1A17"), ("BEIGNETS MAMI", "#B8432F", "#F6F1E4"),
+       ("BENSKIN EXPRESS", "#2B3F7A", "#F6F1E4"), ("CODE NJANGI", "#F6F1E4", "#1F4D3A"), ("LE BALLON VOYAGE", "#C5762F", "#101814"),
+       ("RADIO QUARTIER", "#101814", "#E3A92B"), ("MAKOSSA FM", "#5C6B2E", "#F6F1E4")]
+
+
+def vignette(w: int = 640, h: int = 360):
+    """Soft dark edges for the camera overlay."""
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    px = img.load()
+    for y in range(h):
+        for x in range(w):
+            dx = (x - w / 2) / (w / 2)
+            dy = (y - h / 2) / (h / 2)
+            d = math.sqrt(dx * dx + dy * dy)
+            a = max(0.0, (d - 0.62) / 0.55)
+            px[x, y] = (8, 6, 10, int(min(1.0, a * a) * 150))
+    return img
+
+
 def ball_sheet():
     """Ball: 4 rotation frames (the pagne patch turns) + a shadow frame. 8x8 cells."""
     mats = {"leather": ("#E8DFC8", "#FFFFFF", "#B9AE94"), "patch": ("#C9362B", "#E25A4D", "#8E251D"), "patch2": ("#F0B92E", "#F8D066", "#A87F18"), "seam": ("#3A2E28", "#55463E", "#201814")}
@@ -678,6 +716,9 @@ def build_all(out: str):
         fl.save(os.path.join(out, "props", f"goal_full_{style}_w.png"))
         fr, fm2 = goal(style, width_px=int(7.32 * PPM), height_px=int(2.44 * PPM), depth_px=18, facing="W")
         fr.save(os.path.join(out, "props", f"goal_full_{style}_e.png"))
+    for i, (txt, bg, fg) in enumerate(ADS):
+        ad_board(txt, bg, fg).save(os.path.join(out, "props", f"ad_{i}.png"))
+    vignette().save(os.path.join(out, "fx", "vignette.png"))
     terrace_img, step_h = terrace()
     terrace_img.save(os.path.join(out, "props", "terrace.png"))
     terrace(length=120, rows=3, seed=22, colour=("#8E8A80", "#ABA69A", "#625E56"))[0].save(os.path.join(out, "props", "terrace_2.png"))

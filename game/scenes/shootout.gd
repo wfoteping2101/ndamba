@@ -127,9 +127,9 @@ func _make_sprite(team: Dictionary, is_keeper: bool) -> AnimatedSprite2D:
 	var sheet: String = ("gk_" + hair) if is_keeper else ("%s_%s" % [hair, pattern])
 	var s := AnimatedSprite2D.new()
 	s.sprite_frames = Sprites.player_frames(sheet)
-	s.offset = Sprites.feet_offset() + Vector2(16, 0)
+	s.offset = Sprites.feet_offset() + Vector2(Sprites.half_cell(), 0)
 	s.centered = false
-	s.position = Vector2(-16, 0)
+	s.position = Vector2(-Sprites.half_cell(), 0)
 	s.material = Sprites.palette_material(Sprites.player_palette(kit, pdata, is_keeper))
 	s.set_meta("name", Content.tag_name(pdata).to_upper())
 	s.z_index = 3 if is_keeper else 1

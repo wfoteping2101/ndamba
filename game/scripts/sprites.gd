@@ -44,6 +44,10 @@ func player_frames(sheet: String) -> SpriteFrames:
 	return sf
 
 
+func half_cell() -> float:
+	return float(_meta("outfield")["cell"]) * 0.5
+
+
 func feet_offset() -> Vector2:
 	var meta := _meta("outfield")
 	return Vector2(-float(meta["cell"]) * 0.5, -float(meta["feet_y"]) - 1.0)

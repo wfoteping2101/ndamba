@@ -83,19 +83,20 @@ func setup(p_data: Dictionary, p_team: int, p_kit: Dictionary, p_keeper: bool, p
 	var sheet: String = ("gk_" + hair) if p_keeper else ("%s_%s" % [hair, pattern])
 	sprite = AnimatedSprite2D.new()
 	sprite.sprite_frames = Sprites.player_frames(sheet)
-	sprite.offset = Sprites.feet_offset() + Vector2(16, 0)
+	sprite.offset = Sprites.feet_offset() + Vector2(Sprites.half_cell(), 0)
 	sprite.centered = false
-	sprite.position = Vector2(-16, 0)
+	sprite.position = Vector2(-Sprites.half_cell(), 0)
 	sprite.material = Sprites.palette_material(Sprites.player_palette(p_kit, p_data, p_keeper))
 	sprite.play("idle_S")
 	if _shadow_tex == null:
-		var img := Image.create(12, 6, false, Image.FORMAT_RGBA8)
-		for y in range(6):
-			for x in range(12):
-				var dx := (x + 0.5 - 6.0) / 6.0
-				var dy := (y + 0.5 - 3.0) / 3.0
-				if dx * dx + dy * dy <= 1.0:
-					img.set_pixel(x, y, Color(0.15, 0.05, 0.05, 0.38))
+		var img := Image.create(16, 8, false, Image.FORMAT_RGBA8)
+		for y in range(8):
+			for x in range(16):
+				var dx := (x + 0.5 - 8.0) / 8.0
+				var dy := (y + 0.5 - 4.0) / 4.0
+				var r := dx * dx + dy * dy
+				if r <= 1.0:
+					img.set_pixel(x, y, Color(0.12, 0.05, 0.05, 0.42 if r < 0.6 else 0.22))
 		_shadow_tex = ImageTexture.create_from_image(img)
 	shadow = Sprite2D.new()
 	shadow.texture = _shadow_tex

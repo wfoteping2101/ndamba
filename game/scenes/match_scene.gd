@@ -17,6 +17,17 @@ var _fps_samples: Array = []
 func _ready() -> void:
 	if Game.attract_mode:
 		m.time_scale = 1.0
+	# soft vignette between the world and the HUD (a little depth, like a broadcast)
+	if not Game.settings.get("reduced_motion", false):
+		var vl := CanvasLayer.new()
+		vl.layer = 5
+		add_child(vl)
+		var vig := TextureRect.new()
+		vig.texture = load("res://assets/fx/vignette.png")
+		vig.set_anchors_preset(Control.PRESET_FULL_RECT)
+		vig.stretch_mode = TextureRect.STRETCH_SCALE
+		vig.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		vl.add_child(vig)
 	hud = Hud.new()
 	hud.name = "Hud"
 	add_child(hud)

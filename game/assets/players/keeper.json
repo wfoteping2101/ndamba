@@ -1,5 +1,5 @@
 {
- "cell": 32,
+ "cell": 40,
  "dirs": [
   "S",
   "SW",
@@ -10,7 +10,7 @@
   "E",
   "SE"
  ],
- "feet_y": 29.0,
+ "feet_y": 36.0,
  "anims": {
   "idle": {
    "start": 0,

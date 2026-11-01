@@ -30,9 +30,9 @@ ELEV = math.radians(40.0)
 ZF = math.cos(ELEV)   # how much height shows
 YF = math.sin(ELEV)   # how much depth shows
 
-CELL = 32
-FEET_Y = 29.0          # screen y of the ground contact point inside a cell
-CENTER_X = 16.0
+CELL = 40
+FEET_Y = 36.0          # screen y of the ground contact point inside a cell
+CENTER_X = 20.0
 
 # Direction order used by the sheet rows and by the game (clockwise from South).
 DIRS = ["S", "SW", "W", "NW", "N", "NE", "E", "SE"]
@@ -57,7 +57,7 @@ HIP_Z = 11.0
 SHO_Z = 19.0
 NECK_Z = 20.6
 HEAD_Z = 24.6
-HEAD_R = 4.1
+HEAD_R = 4.5
 
 
 def base_pose() -> dict:
@@ -410,7 +410,7 @@ def rotate(pt, ang_deg: float):
     return (c * x - s * y, s * x + c * y, z)
 
 
-SCALE = 1.12
+SCALE = 1.42
 
 
 def project(pt):
@@ -443,12 +443,14 @@ def draw_figure(cv: Canvas, pose: dict, ang: float, look: Look, rnd: random.Rand
         x1, y1, d1 = P(b)
         cv.capsule(x0, y0, x1, y1, r0 * SCALE, r1 * SCALE, mat, d0, d1, mat_fn)
 
-    # legs: thigh (shorts), shin (socks), boot
+    # legs: thigh (shorts), knee (skin), shin (socks), boot
     for side in ("L", "R"):
         hip, knee, ank, toe = "hip" + side, "knee" + side, "ank" + side, "toe" + side
-        seg(hip, knee, 1.75, 1.45, "shorts")
-        seg(knee, ank, 1.35, 1.15, "socks" if side == "L" else "socks2")
-        seg(ank, toe, 1.2, 1.05, "boots")
+        seg(hip, knee, 2.15, 1.75, "shorts")
+        kx, ky, kd = P(knee)
+        cv.disc(kx, ky, 1.55 * SCALE, "skin", kd)          # knee shows between shorts and socks
+        seg(knee, ank, 1.6, 1.3, "socks" if side == "L" else "socks2", lambda t, sd=side: ("skin" if t < 0.22 else ("socks" if sd == "L" else "socks2")))
+        seg(ank, toe, 1.35, 1.2, "boots")
 
     # torso as z-slices so kit patterns live in model space
     pel = pose["pelvis"]
@@ -459,8 +461,8 @@ def draw_figure(cv: Canvas, pose: dict, ang: float, look: Look, rnd: random.Rand
         cx = pel[0] + (nk[0] - pel[0]) * t
         cz = pel[2] + (nk[2] - pel[2]) * t
         # width: narrow hips, wide shoulders, then narrows to the neck
-        wy = 2.9 + 1.3 * min(1.0, t * 1.35) - (max(0.0, t - 0.88) * 9.0)
-        wx = 2.0 + 0.3 * t
+        wy = 3.2 + 1.5 * min(1.0, t * 1.35) - (max(0.0, t - 0.88) * 9.0)
+        wx = 2.3 + 0.4 * t
         step = 0.5
         yy = -wy
         while yy <= wy + 1e-6:
@@ -468,6 +470,10 @@ def draw_figure(cv: Canvas, pose: dict, ang: float, look: Look, rnd: random.Rand
             while xx <= wx + 1e-6:
                 if (xx / wx) ** 2 + (yy / wy) ** 2 <= 1.0:
                     mat = kit_material(look.pattern, xx, yy, t, look.keeper)
+                    if t > 0.955 and (xx / wx) ** 2 + (yy / wy) ** 2 > 0.45:
+                        mat = "jersey2" if not look.keeper else "gloves"      # collar ring
+                    elif t < 0.06:
+                        mat = "shorts"                                        # tucked hem
                     sx, sy, d = project(rotate((cx + xx, yy, cz), ang))
                     cv.put(int(math.floor(sx)), int(math.floor(sy)), mat, d)
                     cv.put(int(math.floor(sx + 0.5)), int(math.floor(sy + 0.5)), mat, d)
@@ -476,18 +482,20 @@ def draw_figure(cv: Canvas, pose: dict, ang: float, look: Look, rnd: random.Rand
     # shoulders as small caps
     for side in ("L", "R"):
         x, y, d = P("sho" + side)
-        cv.disc(x, y, 1.6 * SCALE, kit_material(look.pattern, 0, SHO_Y * (1 if side == "L" else -1), 1.0, look.keeper), d)
+        cv.disc(x, y, 1.9 * SCALE, kit_material(look.pattern, 0, SHO_Y * (1 if side == "L" else -1), 1.0, look.keeper), d)
 
-    # arms: sleeve (jersey) to elbow, skin to hand
+    # arms: sleeve (jersey, with a cuff) to elbow, skin to hand
     for side in ("L", "R"):
         sho, elb, hand = "sho" + side, "elb" + side, "hand" + side
-        seg(sho, elb, 1.5, 1.2, "jersey" if not look.keeper else "keeper")
-        seg(elb, hand, 1.1, 1.05, "skin" if not look.keeper else "gloves")
+        sleeve = "jersey" if not look.keeper else "keeper"
+        cuff = "jersey2" if not look.keeper else "gloves"
+        seg(sho, elb, 1.8, 1.45, sleeve, lambda t, sl=sleeve, cf=cuff: (cf if t > 0.82 else sl))
+        seg(elb, hand, 1.3, 1.2, "skin" if not look.keeper else "gloves")
 
     # neck + head
-    seg("neck", "head", 1.2, 1.2, "skin")
+    seg("neck", "head", 1.4, 1.4, "skin")
     hx, hy, hd = P("head")
-    cv.disc(hx, hy, HEAD_R * SCALE, "skin", hd)
+    cv.disc(hx, hy, HEAD_R * SCALE, "skin", hd, squash=1.06)
     draw_hair(cv, pose, ang, look, rnd)
     draw_face(cv, pose, ang, look)
 
@@ -516,22 +524,22 @@ def draw_hair(cv: Canvas, pose: dict, ang: float, look: Look, rnd: random.Random
     hx0, hy0, hz0 = pose["head"]
     style = look.hair
     if style == "afro":
-        c = rotate((hx0 - 0.6, hy0, hz0 + 1.0), ang)
+        c = rotate((hx0 - 1.6, hy0, hz0 + 1.6), ang)
         sx, sy, d = project(c)
-        cv.disc(sx, sy, (HEAD_R + 1.2) * SCALE, "hair", d - 0.35)
+        cv.disc(sx, sy, (HEAD_R + 1.1) * SCALE, "hair", d - 0.35)
         # fuzzy rim
         for k in range(14):
             a = rnd.random() * math.tau
             r = (HEAD_R + 1.2 + rnd.random() * 0.9) * SCALE
             cv.put(int(sx + math.cos(a) * r), int(sy + math.sin(a) * r * 0.9), "hair", d - 0.35)
     elif style == "fade":
-        c = rotate((hx0 - 1.0, hy0, hz0 + 1.4), ang)
+        c = rotate((hx0 - 1.6, hy0, hz0 + 2.3), ang)
         sx, sy, d = project(c)
-        cv.disc(sx, sy, (HEAD_R - 0.1) * SCALE, "hair", d - 0.3, squash=0.8)
+        cv.disc(sx, sy, (HEAD_R - 0.5) * SCALE, "hair", d - 0.3, squash=0.75)
     elif style == "braids":
-        c = rotate((hx0 - 0.8, hy0, hz0 + 1.1), ang)
+        c = rotate((hx0 - 1.7, hy0, hz0 + 1.7), ang)
         sx, sy, d = project(c)
-        cv.disc(sx, sy, (HEAD_R + 0.2) * SCALE, "hair", d - 0.3)
+        cv.disc(sx, sy, (HEAD_R - 0.1) * SCALE, "hair", d - 0.3)
         # two braids hanging behind
         for side in (1, -1):
             b0 = rotate((hx0 - 2.5, hy0 + 2.0 * side, hz0 - 0.5), ang)
@@ -540,16 +548,19 @@ def draw_hair(cv: Canvas, pose: dict, ang: float, look: Look, rnd: random.Random
             x1, y1, d1 = project(b1)
             cv.capsule(x0, y0, x1, y1, 0.9 * SCALE, 0.8 * SCALE, "hair", d0 - 0.4, d1 - 0.4)
     elif style == "wrap":
-        c = rotate((hx0 - 0.5, hy0, hz0 + 1.2), ang)
+        c = rotate((hx0 - 1.5, hy0, hz0 + 1.9), ang)
         sx, sy, d = project(c)
-        cv.disc(sx, sy, (HEAD_R + 0.6) * SCALE, "wrap", d - 0.3)
+        cv.disc(sx, sy, (HEAD_R + 0.3) * SCALE, "wrap", d - 0.3)
         k = rotate((hx0 - 3.0, hy0 + 2.5, hz0 + 3.0), ang)
         kx, ky, kd = project(k)
         cv.disc(kx, ky, 1.4 * SCALE, "wrap", kd - 0.3)
-    else:  # short
-        c = rotate((hx0 - 1.4, hy0, hz0 + 1.8), ang)
+    else:  # short: a cap of hair on the top and back of the skull, the face stays clear
+        c = rotate((hx0 - 1.9, hy0, hz0 + 2.1), ang)
         sx, sy, d = project(c)
-        cv.disc(sx, sy, (HEAD_R - 0.1) * SCALE, "hair", d - 0.3, squash=0.9)
+        cv.disc(sx, sy, (HEAD_R - 0.6) * SCALE, "hair", d - 0.3, squash=0.85)
+        c2 = rotate((hx0 - 2.6, hy0, hz0 + 0.4), ang)
+        sx2, sy2, d2 = project(c2)
+        cv.disc(sx2, sy2, (HEAD_R - 1.4) * SCALE, "hair", d2 - 0.3, squash=0.9)
 
 
 def draw_face(cv: Canvas, pose: dict, ang: float, look: Look):
@@ -559,17 +570,25 @@ def draw_face(cv: Canvas, pose: dict, ang: float, look: Look):
         return
     hx, hy, hz = pose["head"]
     face = pose.get("face", "neutral")
-    eye_z = hz + 0.1
-    lat = 1.5 if fy > 0.8 else 1.2
+    eye_z = hz + 0.5
+    lat = 1.7 if fy > 0.8 else 1.3
     for side in (1, -1):
         if fy < 0.8 and side * fx < 0:   # on the far side of a 3/4 face only one eye shows well
             continue
         e = rotate((hx + HEAD_R * 0.72, hy + lat * side, eye_z), ang)
         sx, sy, d = project(e)
         col = (28, 16, 22)
+        white = (236, 228, 214)
         cv.put_rgb(int(sx), int(sy), col, d + 0.5)
-        if fy > 0.8:
-            cv.put_rgb(int(sx), int(sy) + 1, col, d + 0.5)
+        cv.put_rgb(int(sx), int(sy) + 1, col, d + 0.5)
+        # a touch of white beside the pupil and a brow above
+        cv.put_rgb(int(sx) + (1 if side > 0 else -1), int(sy) + 1, white, d + 0.5)
+        cv.put_rgb(int(sx), int(sy) - 2, (60, 36, 30), d + 0.5)
+    # mouth
+    mm = rotate((hx + HEAD_R * 0.85, hy, eye_z - 2.2), ang)
+    mx, my, md = project(mm)
+    if face == "neutral" and fy > 0.8:
+        cv.put_rgb(int(mx), int(my), (110, 60, 56), md + 0.5)
     if face == "happy":
         m = rotate((hx + HEAD_R * 0.8, hy, eye_z - 2.2), ang)
         sx, sy, d = project(m)

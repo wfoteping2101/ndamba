@@ -19,7 +19,7 @@ func _draw_tag(p: Footballer, col: Color, strong: bool) -> void:
 	var font := UiTheme.font_small()
 	var txt := Content.tag_name(p.data).to_upper()
 	var w := font.get_string_size(txt, HORIZONTAL_ALIGNMENT_LEFT, -1, 8).x
-	var at := p.position + Vector2(-w * 0.5, -31)
+	var at := p.position + Vector2(-w * 0.5, -40)
 	draw_rect(Rect2(at.x - 2, at.y - 7, w + 4, 9), Color(0, 0, 0, 0.62 if strong else 0.45))
 	draw_string(font, at, txt, HORIZONTAL_ALIGNMENT_LEFT, -1, 8, col if strong else Color(col, 0.85))
 
@@ -50,7 +50,7 @@ func _draw() -> void:
 		var col := Color.html(kit.get("jersey", "#ffffff"))
 		if col.get_luminance() < 0.35:
 			col = Color.html(kit.get("jersey2", "#ffffff"))
-		var top := p.position + Vector2(0, -36 + sin(_t * 6.0) * 1.5)
+		var top := p.position + Vector2(0, -46 + sin(_t * 6.0) * 1.5)
 		var pts := PackedVector2Array([top + Vector2(-4, -5), top + Vector2(4, -5), top + Vector2(0, 0)])
 		draw_colored_polygon(pts, Color(0, 0, 0, 0.6))
 		draw_colored_polygon(PackedVector2Array([top + Vector2(-3, -5), top + Vector2(3, -5), top + Vector2(0, -1)]), col)

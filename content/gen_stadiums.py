@@ -156,7 +156,15 @@ def full_stadium(id_, name_fr, name_en, city, neighborhood, surface, lighting, t
         tp, tc = terrace_row(rnd, py + ph + 74, x0, x1, seg=120, rows=2, density=0.9, variant_seed=seed + 1)
         props += tp
         crowd += tc
-    props += [{"type": "dugout", "x": px + pw // 2 - 60, "y": py + ph + 22}, {"type": "dugout", "x": px + pw // 2 + 60, "y": py + ph + 22},
+    # perimeter advertising boards (original brands), alternating, behind both touchlines
+    k = 0
+    x = px + 8
+    while x + 96 <= px + pw - 8:
+        props.append({"type": "ad_%d" % (k % 8), "x": x + 48, "y": py - 4})
+        props.append({"type": "ad_%d" % ((k + 3) % 8), "x": x + 48, "y": py + ph + 8})
+        x += 100
+        k += 1
+    props += [{"type": "dugout", "x": px + pw // 2 - 60, "y": py + ph + 40}, {"type": "dugout", "x": px + pw // 2 + 60, "y": py + ph + 40},
               {"type": "floodlight", "x": px - 40, "y": py - 30}, {"type": "floodlight", "x": px + pw + 40, "y": py - 30},
               {"type": "floodlight", "x": px - 44, "y": py + ph + 60}, {"type": "floodlight", "x": px + pw + 44, "y": py + ph + 60},
               {"type": "vendor_stand", "x": px + pw // 2 - 170, "y": py + ph + 60}, {"type": "vendor_stand", "x": px + pw // 2 + 176, "y": py + ph + 64},
