@@ -79,6 +79,9 @@ func _parse_args() -> void:
 		elif a == "--difficulty" and i + 1 < args.size():
 			match_config["difficulty"] = int(args[i + 1])
 			i += 1
+		elif a == "--competition" and i + 1 < args.size():
+			match_config["competition"] = args[i + 1]
+			i += 1
 		elif a == "--weather" and i + 1 < args.size():
 			match_config["weather"] = args[i + 1]
 			i += 1

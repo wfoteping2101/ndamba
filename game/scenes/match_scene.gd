@@ -28,7 +28,11 @@ func _ready() -> void:
 		touch = TouchControls.new()
 		touch.name = "Touch"
 		add_child(touch)
-		touch.setup(m, m.humans[m.humans.keys()[0]])
+		var first = m.humans[m.humans.keys()[0]]
+		for k in m.humans.keys():
+			if m.humans[k].prefix == "":
+				first = m.humans[k]
+		touch.setup(m, first)
 	m.match_ended.connect(_on_ended)
 	m.event.connect(_on_event)
 	Sfx.music("", false)

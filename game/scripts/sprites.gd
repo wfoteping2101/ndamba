@@ -84,6 +84,10 @@ func player_palette(kit: Dictionary, player: Dictionary, keeper: bool = false) -
 	if keeper:
 		pal["keeper"] = tones(kit.get("jersey", "#E3A92B"))
 		pal["gloves"] = tones("#F2EEE3")
+	elif kit.get("pattern", "plain") == "rags":
+		# street match: everybody wears their own shirt (Lionceaux, chapter 3)
+		pal["jersey"] = tones(player.get("shirt", "#F2EEE3"))
+		pal["jersey2"] = tones(player.get("shirt2", "#C9362B"))
 	else:
 		pal["jersey"] = tones(kit.get("jersey", "#2E6B45"))
 		pal["jersey2"] = tones(kit.get("jersey2", "#F2EEE3"))

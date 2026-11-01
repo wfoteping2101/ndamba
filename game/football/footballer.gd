@@ -75,7 +75,10 @@ func setup(p_data: Dictionary, p_team: int, p_kit: Dictionary, p_keeper: bool, p
 	match_ref = p_match
 	name = "P_%d_%s" % [p_team, p_data.get("id", "x")]
 	var hair: String = p_data.get("hair", "short")
-	var sheet: String = ("gk_" + hair) if p_keeper else ("%s_%s" % [hair, p_kit.get("pattern", "plain")])
+	var pattern: String = p_kit.get("pattern", "plain")
+	if pattern == "rags":
+		pattern = p_data.get("shirt_pattern", "plain")
+	var sheet: String = ("gk_" + hair) if p_keeper else ("%s_%s" % [hair, pattern])
 	sprite = AnimatedSprite2D.new()
 	sprite.sprite_frames = Sprites.player_frames(sheet)
 	sprite.offset = Sprites.feet_offset() + Vector2(16, 0)

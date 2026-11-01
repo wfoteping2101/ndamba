@@ -102,7 +102,7 @@ func _change(id: String, d: int) -> void:
 		"weather":
 			weather_i = posmod(weather_i + d, 2)
 		"you":
-			you_i = posmod(you_i + d, 3)
+			you_i = posmod(you_i + d, 4)
 	_refresh()
 
 
@@ -121,7 +121,7 @@ func _refresh() -> void:
 	labels["half"].text = Loc.t("setup.minutes", {"n": int(HALVES[half_i])})
 	labels["diff"].text = Loc.t(Game.difficulty_name(diff_i))
 	labels["weather"].text = Loc.t("setup.dry" if weather_i == 0 else "setup.rain")
-	labels["you"].text = [teams[home_i]["short"], teams[away_i]["short"], "CPU vs CPU"][you_i]
+	labels["you"].text = [teams[home_i]["short"], teams[away_i]["short"], Loc.t("setup.two_players"), "CPU vs CPU"][you_i]
 
 
 func _start() -> void:
@@ -133,8 +133,8 @@ func _start() -> void:
 	c["half_minutes"] = HALVES[half_i]
 	c["difficulty"] = diff_i
 	c["weather"] = "dry" if weather_i == 0 else "rain"
-	c["human_home"] = you_i == 0
-	c["human_away"] = you_i == 1
+	c["human_home"] = you_i == 0 or you_i == 2
+	c["human_away"] = you_i == 1 or you_i == 2
 	c["competition"] = "friendly"
 	get_tree().change_scene_to_file("res://scenes/match.tscn")
 

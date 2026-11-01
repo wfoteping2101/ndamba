@@ -22,6 +22,7 @@ func _ready() -> void:
 	await test_out_of_bounds()
 	await test_ai_vs_ai_match()
 	await test_human_controls()
+	await test_two_players()
 	print("Results: %d passed, %d failed" % [passed, failed])
 	get_tree().quit(1 if failed > 0 else 0)
 
@@ -333,5 +334,36 @@ func test_human_controls() -> void:
 	_press("switch_player", false)
 	await get_tree().process_frame
 	check(hc.current != before, "switch selects another player")
+	inst.queue_free()
+	await get_tree().process_frame
+
+
+func test_two_players() -> void:
+	Game.match_config["human_home"] = true
+	Game.match_config["human_away"] = true
+	var inst = load("res://scenes/match.tscn").instantiate()
+	add_child(inst)
+	await get_tree().process_frame
+	var m: Match = inst.get_node("Match")
+	Game.match_config["human_home"] = false
+	Game.match_config["human_away"] = false
+	check(m.humans.size() == 2, "two human controllers")
+	check(m.humans[0].prefix == "" and m.humans[1].prefix == "p2_", "player two uses the p2_ map")
+	check(InputMap.has_action("p2_pass") and InputMap.has_action("p2_move_left"), "p2 actions exist")
+	var p2: Footballer = m.humans[1].current
+	check(p2 != null and p2.team_index == 1 and p2.human_controlled, "player two controls an away player")
+	# p2 moves with its own actions while player one stays put
+	for i in range(40):
+		m._physics_process(1.0 / 60.0)
+	var p1: Footballer = m.humans[0].current
+	var x1 := p1.pos.x
+	var y2 := p2.pos.y
+	_press("p2_move_down", true)
+	await get_tree().process_frame
+	for i in range(40):
+		m._physics_process(1.0 / 60.0)
+	_press("p2_move_down", false)
+	await get_tree().process_frame
+	check(p2.pos.y > y2 + 20.0, "player two moved down (%.0f px)" % (p2.pos.y - y2))
 	inst.queue_free()
 	await get_tree().process_frame

@@ -32,6 +32,7 @@ func _build_attract() -> void:
 	Game.match_config["half_minutes"] = 20.0
 	Game.match_config["difficulty"] = 2
 	Game.match_config["weather"] = "dry"
+	Game.match_config["competition"] = "street"
 	var holder := SubViewportContainer.new()
 	holder.set_anchors_preset(Control.PRESET_FULL_RECT)
 	holder.stretch = true

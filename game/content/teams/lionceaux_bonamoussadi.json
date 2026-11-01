@@ -23,6 +23,11 @@
   "shorts": "#1C1C22",
   "socks": "#E3A92B"
  },
+ "kit_story": {
+  "pattern": "rags",
+  "shorts": "#1C1C22",
+  "socks": "#F2EEE3"
+ },
  "colors": [
   "#2E6B45",
   "#F2EEE3"
@@ -62,7 +67,10 @@
     "vis": 88,
     "gk": 28
    },
-   "from_book": true
+   "from_book": true,
+   "shirt": "#2E6B45",
+   "shirt2": "#F2EEE3",
+   "shirt_pattern": "plain"
   },
   {
    "id": "lionceaux_bonamoussadi_kaydoudou",
@@ -88,7 +96,10 @@
     "gk": 20
    },
    "from_book": true,
-   "socks_mismatch": true
+   "socks_mismatch": true,
+   "shirt": "#F2C230",
+   "shirt2": "#D63C2F",
+   "shirt_pattern": "sash"
   },
   {
    "id": "lionceaux_bonamoussadi_mireille",
@@ -162,79 +173,91 @@
     "tmw": 49,
     "vis": 57,
     "gk": 29
-   }
+   },
+   "shirt": "#F2C230",
+   "shirt2": "#E67E22",
+   "shirt_pattern": "halves"
   },
   {
-   "id": "lionceaux_bonamoussadi_sandrine_wafo",
-   "given": "Sandrine",
-   "family": "Wafo",
+   "id": "lionceaux_bonamoussadi_christian_nlend",
+   "given": "Christian",
+   "family": "Nlend",
    "nick": "",
-   "female": true,
+   "female": false,
    "role": "MID",
    "number": 6,
    "skin": "brown",
-   "hair": "wrap",
+   "hair": "short",
    "attrs": {
     "spd": 65,
-    "acc": 65,
-    "ctl": 52,
-    "pas": 73,
+    "acc": 62,
+    "ctl": 74,
+    "pas": 79,
     "sho": 52,
-    "tak": 62,
-    "pos": 57,
-    "sta": 74,
-    "tmw": 60,
-    "vis": 63,
-    "gk": 27
-   }
+    "tak": 68,
+    "pos": 62,
+    "sta": 81,
+    "tmw": 63,
+    "vis": 66,
+    "gk": 25
+   },
+   "shirt": "#5D6D7E",
+   "shirt2": "#D35400",
+   "shirt_pattern": "plain"
   },
   {
-   "id": "lionceaux_bonamoussadi_oumarou_zoa",
-   "given": "Oumarou",
-   "family": "Zoa",
+   "id": "lionceaux_bonamoussadi_boris_wafo",
+   "given": "Boris",
+   "family": "Wafo",
    "nick": "",
    "female": false,
    "role": "FWD",
    "number": 9,
-   "skin": "brown",
+   "skin": "tan",
    "hair": "short",
    "attrs": {
-    "spd": 80,
-    "acc": 54,
-    "ctl": 66,
-    "pas": 49,
-    "sho": 75,
-    "tak": 38,
-    "pos": 62,
-    "sta": 59,
-    "tmw": 60,
-    "vis": 64,
+    "spd": 68,
+    "acc": 72,
+    "ctl": 72,
+    "pas": 63,
+    "sho": 72,
+    "tak": 45,
+    "pos": 63,
+    "sta": 80,
+    "tmw": 50,
+    "vis": 55,
     "gk": 25
-   }
+   },
+   "shirt": "#2E63B8",
+   "shirt2": "#F2C230",
+   "shirt_pattern": "halves"
   },
   {
-   "id": "lionceaux_bonamoussadi_moussa_mbarga",
-   "given": "Moussa",
-   "family": "Mbarga",
+   "id": "lionceaux_bonamoussadi_cédric_dikongué",
+   "given": "Cédric",
+   "family": "Dikongué",
    "nick": "",
    "female": false,
    "role": "DEF",
    "number": 3,
-   "skin": "brown",
+   "skin": "dark",
    "hair": "short",
    "attrs": {
-    "spd": 61,
-    "acc": 52,
-    "ctl": 50,
-    "pas": 44,
-    "sho": 36,
-    "tak": 72,
-    "pos": 66,
-    "sta": 61,
-    "tmw": 66,
-    "vis": 51,
-    "gk": 30
-   }
+    "spd": 56,
+    "acc": 67,
+    "ctl": 55,
+    "pas": 61,
+    "sho": 38,
+    "tak": 63,
+    "pos": 70,
+    "sta": 64,
+    "tmw": 63,
+    "vis": 50,
+    "gk": 25
+   },
+   "shirt": "#F2EEE3",
+   "shirt2": "#1ABC9C",
+   "shirt_pattern": "plain"
   }
  ],
  "lineup": [

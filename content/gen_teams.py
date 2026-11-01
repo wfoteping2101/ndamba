@@ -71,6 +71,7 @@ TEAMS = [
         "kit_home": {"jersey": "#2E6B45", "jersey2": "#F2EEE3", "pattern": "plain", "shorts": "#1C1C22", "socks": "#F2EEE3"},
         "kit_away": {"jersey": "#F2EEE3", "jersey2": "#2E6B45", "pattern": "stripes", "shorts": "#2E6B45", "socks": "#F2EEE3"},
         "kit_gk": {"jersey": "#E3A92B", "shorts": "#1C1C22", "socks": "#E3A92B"},
+        "kit_story": {"pattern": "rags", "shorts": "#1C1C22", "socks": "#F2EEE3"},
         "colors": ["#2E6B45", "#F2EEE3"], "crest": "lion_cub",
         "style": "possession", "formation": "1-1-1-2", "strength": 60, "rating_bias": 0,
         "stadium": "bonamoussadi_terre", "rivals": ["requins_bepanda"], "difficulty": 2,
@@ -78,9 +79,9 @@ TEAMS = [
         "lore_en": "BriBri and Kaydoudou's team, coached by Tonton Fokou on the red-earth pitch of Bonamoussadi. One rule: the ball must travel.",
         "mixed": True, "seed": 13,
         "named": [
-            {"given": "BriBri", "family": "", "nick": "", "role": "MID", "number": 8, "skin": "deep", "hair": "short",
+            {"given": "BriBri", "family": "", "nick": "", "role": "MID", "number": 8, "skin": "deep", "hair": "short", "shirt": "#2E6B45", "shirt2": "#F2EEE3", "shirt_pattern": "plain",
              "attrs": dict(spd=66, acc=64, ctl=74, pas=84, sho=58, tak=60, pos=78, sta=74, tmw=86, vis=88, gk=28)},
-            {"given": "Kaydoudou", "family": "", "nick": "", "role": "FWD", "number": 7, "skin": "deep", "hair": "afro", "socks_mismatch": True,
+            {"given": "Kaydoudou", "family": "", "nick": "", "role": "FWD", "number": 7, "skin": "deep", "hair": "afro", "socks_mismatch": True, "shirt": "#F2C230", "shirt2": "#D63C2F", "shirt_pattern": "sash",
              "attrs": dict(spd=84, acc=88, ctl=86, pas=56, sho=70, tak=36, pos=60, sta=70, tmw=58, vis=62, gk=20)},
             {"given": "Mireille", "family": "Eyenga", "nick": "la Gazelle", "role": "FWD", "number": 11, "skin": "brown", "hair": "braids",
              "attrs": dict(spd=90, acc=86, ctl=66, pas=58, sho=66, tak=48, pos=64, sta=76, tmw=66, vis=58, gk=22)},
@@ -141,6 +142,9 @@ def build_team(t):
              "from_book": True}
         if n.get("socks_mismatch"):
             p["socks_mismatch"] = True
+        for k in ("shirt", "shirt2", "shirt_pattern"):
+            if k in n:
+                p[k] = n[k]
         players.append(p)
     counts = [int(c) for c in t["formation"].split("-")]   # GK, DEF, MID, FWD
     roles5 = ["GK"] * counts[0] + ["DEF"] * counts[1] + ["MID"] * counts[2] + ["FWD"] * counts[3]
@@ -148,9 +152,15 @@ def build_team(t):
     for p in players:
         if p["role"] in roles_needed:
             roles_needed.remove(p["role"])
+    TEES = ["#C9362B", "#F2C230", "#2E63B8", "#F2EEE3", "#E67E22", "#1ABC9C", "#8E44AD", "#5D6D7E", "#D35400", "#F7DC6F"]
     for i, role in enumerate(roles_needed):
         female = t["mixed"] and rnd.random() < 0.3
-        players.append(make_player(rnd, role, t, used_names, used_numbers, female))
+        p = make_player(rnd, role, t, used_names, used_numbers, female)
+        if "kit_story" in t:
+            p["shirt"] = rnd.choice(TEES)
+            p["shirt2"] = rnd.choice(TEES)
+            p["shirt_pattern"] = rnd.choice(["plain", "plain", "hoops", "halves"])
+        players.append(p)
     # starters: one per role of ROLES_5, book characters first
     starters = []
     pool = sorted(players, key=lambda p: (not p.get("from_book", False), -sum(p["attrs"].values())))

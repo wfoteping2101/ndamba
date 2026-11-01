@@ -157,6 +157,8 @@ func _build_hint() -> void:
 	else:
 		lines = ["WASD / fleches   %s: J   %s: K (maintenir)   %s: L" % [Loc.t("hud.pass_hint"), Loc.t("hud.shoot_hint"), Loc.t("hud.through_hint")],
 				 "%s: Shift   %s: Espace   Esc: Pause" % [Loc.t("hud.sprint_hint"), Loc.t("hud.switch_hint")]]
+	if m.humans.size() == 2:
+		lines.append("J2 / P2: fleches, %s: ,   %s: .   %s: /   %s: Ctrl droit   %s: Shift droit   (ou 2e manette)" % [Loc.t("hud.pass_hint"), Loc.t("hud.shoot_hint"), Loc.t("hud.through_hint"), Loc.t("hud.sprint_hint"), Loc.t("hud.switch_hint")])
 	lines.append(Loc.t("hud.tackle_hint"))
 	for l in lines:
 		var lab := UiTheme.label(l, 8)

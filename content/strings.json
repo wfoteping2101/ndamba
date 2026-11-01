@@ -25,6 +25,7 @@
   "setup.dry": {"fr": "Sec", "en": "Dry"},
   "setup.rain": {"fr": "Pluie", "en": "Rain"},
   "setup.you": {"fr": "Tu joues", "en": "You play"},
+  "setup.two_players": {"fr": "2 joueurs (J1 domicile, J2 visiteur)", "en": "2 players (P1 home, P2 away)"},
   "setup.kickoff": {"fr": "COUP D'ENVOI", "en": "KICK OFF"},
   "setup.back": {"fr": "Retour", "en": "Back"},
   "setup.strength": {"fr": "Niveau {n}", "en": "Level {n}"},

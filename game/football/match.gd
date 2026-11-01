@@ -104,6 +104,8 @@ func _build_teams() -> void:
 		team.attack_dir = 1 if i == 0 else -1
 		team.human = bool(config["human_home"]) if i == 0 else bool(config["human_away"])
 		var kit: Dictionary = tdata.get("kit_home", {})
+		if config.get("competition", "friendly") in ["street", "story"] and tdata.has("kit_story"):
+			kit = tdata["kit_story"]
 		if i == 1:
 			# avoid a colour clash: away team wears its away kit when jerseys are similar
 			var home_kit: Dictionary = Content.team(config["home"]).get("kit_home", {})
@@ -130,12 +132,16 @@ func _build_teams() -> void:
 			else:
 				f.brain = AiBrain.new(f, self, _ai_difficulty_for(i))
 		teams.append(team)
+	var human_count := 0
 	for i in range(2):
 		if teams[i].human:
 			var hc := HumanController.new()
+			hc.prefix = "p2_" if human_count == 1 else ""
+			hc.device = human_count
 			hc.setup(self, teams[i], i)
 			humans[i] = hc
 			add_child(hc)
+			human_count += 1
 	_place_formation(true)
 
 
