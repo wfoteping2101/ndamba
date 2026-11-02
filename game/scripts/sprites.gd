@@ -72,6 +72,13 @@ func palette_material(colours: Dictionary) -> ShaderMaterial:
 	return mat
 
 
+## Black or cream text, whichever reads better on the given background.
+static func contrast_hex(bg_hex: String) -> String:
+	var c := Color.html(bg_hex)
+	var lum := 0.299 * c.r + 0.587 * c.g + 0.114 * c.b
+	return "#1E1A17" if lum > 0.55 else "#F6F1E4"
+
+
 ## Convenience: derive [base, light, dark] from one hex colour.
 static func tones(hex: String) -> Array:
 	var c := Color.html(hex)

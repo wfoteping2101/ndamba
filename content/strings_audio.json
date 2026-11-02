@@ -1,0 +1,22 @@
+{
+  "audio.music_track": {
+    "fr": "Musique du stade",
+    "en": "Stadium music"
+  },
+  "audio.stadium_sound": {
+    "fr": "Ambiance (tam-tam, chants)",
+    "en": "Atmosphere (tam-tam, chants)"
+  },
+  "audio.track_menu": {
+    "fr": "Menu",
+    "en": "Menu"
+  },
+  "audio.track_makossa": {
+    "fr": "Makossa",
+    "en": "Makossa"
+  },
+  "audio.track_bikutsi": {
+    "fr": "Bikutsi",
+    "en": "Bikutsi"
+  }
+}

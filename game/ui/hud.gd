@@ -352,6 +352,11 @@ func _build_intro() -> void:
 	var l3 := UiTheme.label("%s  ·  %s  ·  %s" % [Loc.t("intro.format", {"f": m.config.get("format", "5v5")}), Loc.t(Game.difficulty_name(int(m.config.get("difficulty", 2)))), Loc.t("intro.skip")], 8, false, Color(UiTheme.CREAM, 0.7))
 	l3.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	v.add_child(l3)
+	# title sponsor line (first board of content/sponsors.json)
+	var sp: Dictionary = Content.title_sponsor()
+	var l4 := UiTheme.label(Loc.t("intro.sponsor", {"name": sp.get("name", "")}), 8, false, Color.html(str(sp.get("bg", "#E3A92B"))).lerp(UiTheme.SUN, 0.6))
+	l4.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	v.add_child(l4)
 	# line-ups, shown during the second part of the fly-over
 	intro_lineups = PanelContainer.new()
 	intro_lineups.add_theme_stylebox_override("panel", UiTheme.panel(Color(UiTheme.NIGHT, 0.88), UiTheme.SUN, 0, 6, 1))

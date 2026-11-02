@@ -93,7 +93,7 @@ func _build_stadium() -> void:
 	s.name = "Stadium"
 	world.add_child(s)
 	world.move_child(s, 0)
-	s.build(stadium, ysort, config.get("weather", "dry"))
+	s.build(stadium, ysort, config.get("weather", "dry"), Content.team(config["home"]), Content.team(config["away"]))
 
 
 func _build_ball() -> void:
@@ -390,6 +390,9 @@ var _shot_tracker: Dictionary = {}
 
 func _track_shot(p: Footballer) -> void:
 	_shot_tracker = {"team": p.team_index, "t": 0.0, "resolved": false}
+	Sfx.crowd_burst("chance")
+	if has_node("World/Stadium"):
+		$World/Stadium.crowd_gasp()
 
 
 func on_tackle(tackler: Footballer, holder: Footballer, success: bool) -> void:
@@ -507,11 +510,27 @@ func _step_play(dt: float) -> void:
 	_shot_outcome(dt)
 	_tick_pass_timer(dt)
 	_tick_clock()
+	_tick_excitement(dt)
 	# end of half: at the next dead ball, or after a short grace period
 	if elapsed_real >= half_real_seconds:
 		var grace := elapsed_real - half_real_seconds
 		if ball.owner_player == null and ball.vel.length() < 40.0 or grace > 12.0:
 			_end_half()
+
+
+var _excite_t: float = 0.0
+
+## Stadium sound: every ~0.5 s, how lively the stand is from the ball's closeness to a goal
+## and its speed (half each).
+func _tick_excitement(dt: float) -> void:
+	_excite_t += dt
+	if _excite_t < 0.5:
+		return
+	_excite_t = 0.0
+	var d := minf(ball.pos.distance_to(goal_left), ball.pos.distance_to(goal_right))
+	var near := clampf(1.0 - d / maxf(1.0, pitch_rect.size.x * 0.55), 0.0, 1.0)
+	var speed := clampf(ball.vel.length() / 300.0, 0.0, 1.0)
+	Sfx.set_excitement(near * 0.5 + speed * 0.5)
 
 
 func _tick_pass_timer(dt: float) -> void:
@@ -584,6 +603,7 @@ func _goal(team_index: int) -> void:
 		else:
 			p.sad()
 	$World/Stadium.crowd_cheer(team_index == 0)
+	Sfx.crowd_burst("goal")
 	setpiece = {"kind": "kickoff", "team": 1 - team_index}
 	_enter_phase(Phase.GOAL)
 
@@ -802,6 +822,7 @@ func _place_formation(first: bool) -> void:
 
 func _end_half() -> void:
 	Sfx.play("whistle_long")
+	Sfx.crowd_burst("halftime")   # half time and full time: the stand settles down
 	ball_in_play = false
 	if half == 1:
 		_say("halftime", -1)

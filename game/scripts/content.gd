@@ -14,10 +14,136 @@ var _ppm: float = 8.0
 var skin_tones: Dictionary = {}
 var hair_colours: Dictionary = {}
 var palette_keys: Dictionary = {}
+# Sponsors: the bundled list (content/sponsors.json), the list published next to index.html on the
+# website (sponsors.json, fetched at start), and the boards the player added in Réglages → Sponsors.
+var sponsors_bundled: Array = []
+var sponsors_web: Array = []
+var sponsors_local: Array = []
+const SPONSORS_LOCAL_PATH := "user://sponsors.json"
 
 
 func _ready() -> void:
 	_load_all()
+	_load_sponsors()
+
+
+# ---------------------------------------------------------------------------
+# Sponsors
+# ---------------------------------------------------------------------------
+
+func _load_sponsors() -> void:
+	var sj: Variant = _load_json("res://content/sponsors.json")
+	if typeof(sj) == TYPE_DICTIONARY:
+		sponsors_bundled = _clean_sponsors(sj.get("sponsors", []))
+	if FileAccess.file_exists(SPONSORS_LOCAL_PATH):
+		var lj: Variant = JSON.parse_string(FileAccess.get_file_as_string(SPONSORS_LOCAL_PATH))
+		if typeof(lj) == TYPE_DICTIONARY:
+			sponsors_local = _clean_sponsors(lj.get("sponsors", []))
+	if OS.has_feature("web"):
+		_fetch_web_sponsors()
+
+
+## Keeps only well-formed entries: {name, url, bg, fg, title}.
+func _clean_sponsors(raw: Array) -> Array:
+	var out: Array = []
+	for e in raw:
+		if typeof(e) != TYPE_DICTIONARY:
+			continue
+		var name: String = str(e.get("name", "")).strip_edges().to_upper().left(18)
+		if name == "":
+			continue
+		var bg: String = str(e.get("bg", "#1F4D3A"))
+		var fg: String = str(e.get("fg", "#F6F1E4"))
+		if not bg.begins_with("#") or bg.length() != 7:
+			bg = "#1F4D3A"
+		if not fg.begins_with("#") or fg.length() != 7:
+			fg = Sprites.contrast_hex(bg)
+		out.append({"name": name, "url": str(e.get("url", "")), "bg": bg, "fg": fg, "title": bool(e.get("title", false))})
+	return out
+
+
+## The boards in display order: the published list (website file when it loaded, else the bundled
+## one) followed by the player's own boards. Never empty.
+func sponsors() -> Array:
+	var base: Array = sponsors_web if sponsors_web.size() > 0 else sponsors_bundled
+	var out: Array = base.duplicate()
+	var names := {}
+	for e in out:
+		names[e["name"]] = true
+	for e in sponsors_local:
+		if not names.has(e["name"]):
+			out.append(e)
+			names[e["name"]] = true
+	if out.is_empty():
+		out.append({"name": "NDAMBA", "url": "", "bg": "#1F4D3A", "fg": "#F6F1E4", "title": true})
+	return out
+
+
+## The title sponsor: the first entry flagged `title`, else the first board.
+func title_sponsor() -> Dictionary:
+	var all := sponsors()
+	for e in all:
+		if e.get("title", false):
+			return e
+	return all[0]
+
+
+func add_sponsor(name: String, bg: String, fg: String = "", url: String = "") -> bool:
+	var cleaned := _clean_sponsors([{"name": name, "bg": bg, "fg": fg, "url": url}])
+	if cleaned.is_empty():
+		return false
+	for i in range(sponsors_local.size()):
+		if sponsors_local[i]["name"] == cleaned[0]["name"]:
+			sponsors_local[i] = cleaned[0]
+			_save_local_sponsors()
+			return true
+	sponsors_local.append(cleaned[0])
+	_save_local_sponsors()
+	return true
+
+
+func remove_sponsor(name: String) -> void:
+	for i in range(sponsors_local.size() - 1, -1, -1):
+		if sponsors_local[i]["name"] == name.to_upper():
+			sponsors_local.remove_at(i)
+	_save_local_sponsors()
+
+
+func _save_local_sponsors() -> void:
+	var f := FileAccess.open(SPONSORS_LOCAL_PATH, FileAccess.WRITE)
+	if f:
+		f.store_string(JSON.stringify({"sponsors": sponsors_local}, "  "))
+
+
+## On the website: sponsors.json sits next to index.html so the site owner can add a paying
+## company without rebuilding the game.
+func _fetch_web_sponsors() -> void:
+	var base: String = ""
+	var href: Variant = JavaScriptBridge.eval("window.location.href", true)
+	if typeof(href) == TYPE_STRING:
+		base = String(href)
+		var q := base.find("?")
+		if q >= 0:
+			base = base.left(q)
+		var h := base.find("#")
+		if h >= 0:
+			base = base.left(h)
+		base = base.left(base.rfind("/") + 1)
+	if base == "":
+		return
+	var req := HTTPRequest.new()
+	req.name = "SponsorsRequest"
+	req.timeout = 8.0
+	add_child(req)
+	req.request_completed.connect(func(_r: int, code: int, _h: PackedStringArray, body: PackedByteArray):
+		if code == 200:
+			var parsed: Variant = JSON.parse_string(body.get_string_from_utf8())
+			if typeof(parsed) == TYPE_DICTIONARY:
+				sponsors_web = _clean_sponsors(parsed.get("sponsors", []))
+		req.queue_free())
+	var err := req.request(base + "sponsors.json")
+	if err != OK:
+		req.queue_free()
 
 
 func _load_json(path: String) -> Variant:

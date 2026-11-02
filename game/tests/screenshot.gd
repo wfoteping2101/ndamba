@@ -44,15 +44,47 @@ func _ready() -> void:
 			Game.match_config["human_home"] = true
 			Game.match_config["human_away"] = false
 			Game.match_config["half_minutes"] = 1.0
+		"settings":
+			var sp := SettingsPanel.new()
+			add_child.call_deferred(sp)
+		"sponsors":
+			var sp2 := SponsorPanel.new()
+			add_child.call_deferred(sp2)
+		"stadium", "east", "south", "lowq", "highq":
+			if prep == "lowq":
+				Game.settings["quality"] = "low"
+			Game.match_config["home"] = "lionceaux_bonamoussadi"
+			Game.match_config["away"] = "requins_bepanda"
+			Game.match_config["stadium"] = "stade_wouri"
+			Game.match_config["format"] = "11v11"
+			Game.match_config["human_home"] = true
+			Game.match_config["human_away"] = false
+			Game.match_config["half_minutes"] = 1.0
+			Game.qa_intro = true
 		"story":
 			var st := Story.new()
 			st.reset()
 			st.judge(0, {"score": [3, 2], "stats": [{}, {}]})
 	var packed: PackedScene = load(scene)
+	if packed == null:
+		push_error("screenshot: cannot load " + scene)
+		get_tree().quit(1)
+		return
 	var inst = packed.instantiate()
 	add_child(inst)
 	for i in range(frames):
 		await get_tree().process_frame
+	if prep == "east" or prep == "south":
+		# move the ball (and so the camera) to look at the away kop / the south stand
+		var mt = inst.get("m")
+		if mt != null:
+			var pr: Rect2 = mt.pitch_rect
+			var target := Vector2(pr.end.x - 30.0, pr.get_center().y) if prep == "east" else Vector2(pr.get_center().x, pr.end.y - 20.0)
+			mt.ball.place(target)
+			mt.ball.vel = Vector2.ZERO
+			for i in range(90):
+				mt.ball.place(target)
+				await get_tree().process_frame
 	var img := get_viewport().get_texture().get_image()
 	img.save_png(out)
 	print("saved ", out)

@@ -134,9 +134,9 @@ def terrace_row(rnd, y, x0, x1, seg=120, rows=3, step=9, density=1.0, variant_se
     while x + seg <= x1 + 1:
         props.append({"type": "terrace" if (i + variant_seed) % 2 == 0 else "terrace_2", "x": x + seg // 2, "y": y})
         for r in range(rows):
-            n = int(seg / 22 * density)
+            n = int(seg / 17 * density)
             for k in range(n):
-                if rnd.random() < 0.82:
+                if rnd.random() < 0.95:
                     crowd.append({"x": int(x + 12 + (seg - 24) * (k + 0.5) / n + rnd.randrange(-4, 5)), "y": y + 1, "lift": 4 + r * step})
         x += seg
         i += 1
@@ -149,30 +149,37 @@ def full_stadium(id_, name_fr, name_en, city, neighborhood, surface, lighting, t
     props, crowd = [], []
     # a full bowl: two-tier stands behind both touchlines, one tier behind each goal
     for tier, dy in ((0, 0), (1, -33)):
-        tp, tc = terrace_row(rnd, py - 16 + dy, px - 60, px + pw + 60, seg=120, rows=3, density=0.9 if tier == 0 else 0.6, variant_seed=seed + tier)
+        tp, tc = terrace_row(rnd, py - 16 + dy, px - 60, px + pw + 60, seg=120, rows=3, density=1.0 if tier == 0 else 0.85, variant_seed=seed + tier)
         props += tp
         crowd += tc
     for tier, dy in ((0, 0), (1, 33)):
-        for (x0, x1) in ((px - 60, px + 300), (px + pw - 300, px + pw + 60)):
-            tp, tc = terrace_row(rnd, py + ph + 74 + dy, x0, x1, seg=120, rows=3, density=0.8 if tier == 0 else 0.5, variant_seed=seed + 2 + tier)
+        # lower tier leaves the middle to the dugouts; the upper tier (main stand) runs the whole length
+        spans = ((px - 60, px + 300), (px + pw - 300, px + pw + 60)) if tier == 0 else ((px - 60, px + pw + 60),)
+        for (x0, x1) in spans:
+            tp, tc = terrace_row(rnd, py + ph + 74 + dy, x0, x1, seg=120, rows=3, density=1.0 if tier == 0 else 0.8, variant_seed=seed + 2 + tier)
             props += tp
             crowd += tc
     # end stands: blocks stacked behind each goal line
     for xc in (px - 88, px + pw + 88):
         yb = py + 60
         while yb < py + ph - 10:
-            tp, tc = terrace_row(rnd, yb, xc - 60, xc + 60, seg=120, rows=3, density=0.55, variant_seed=seed + 5)
+            tp, tc = terrace_row(rnd, yb, xc - 60, xc + 60, seg=120, rows=3, density=0.9, variant_seed=seed + 5)
             props += tp
             crowd += tc
             yb += 40
-    # perimeter advertising boards (original brands), alternating, behind both touchlines
+    # perimeter advertising boards: drawn at run time from content/sponsors.json (+ the admin list),
+    # slot after slot along both touchlines
     k = 0
     x = px + 8
+    north, south = [], []
     while x + 96 <= px + pw - 8:
-        props.append({"type": "ad_%d" % (k % 8), "x": x + 48, "y": py - 4})
-        props.append({"type": "ad_%d" % ((k + 3) % 8), "x": x + 48, "y": py + ph + 8})
+        north.append({"type": "ad", "slot": 0, "x": x + 48, "y": py - 4})
+        south.append({"type": "ad", "slot": 0, "x": x + 48, "y": py + ph + 8})
         x += 100
         k += 1
+    for i, pr in enumerate(north + south):
+        pr["slot"] = i
+    props += north + south
     props += [{"type": "dugout", "x": px + pw // 2 - 60, "y": py + ph + 40}, {"type": "dugout", "x": px + pw // 2 + 60, "y": py + ph + 40},
               {"type": "floodlight", "x": px - 40, "y": py - 30}, {"type": "floodlight", "x": px + pw + 40, "y": py - 30},
               {"type": "floodlight", "x": px - 44, "y": py + ph + 60}, {"type": "floodlight", "x": px + pw + 44, "y": py + ph + 60},

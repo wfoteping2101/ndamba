@@ -23,6 +23,8 @@ var settings := {
 	"pad_map": {},                # custom joypad mapping: action -> {type: button|axis, index, value}
 	"speed": "medium",            # slow | medium | fast: simulation pace of the match
 	"names": true,                # name tags over the players
+	"stadium_sound": true,        # crowd layers during matches (claps, tam-tam, chant)
+	"music_track": "menu",        # off | menu | makossa | bikutsi: music during matches (title keeps music_loop unless off)
 }
 
 ## Simulation pace multiplier for the chosen speed setting (tests pin it with sim_speed_override).

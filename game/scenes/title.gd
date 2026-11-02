@@ -13,7 +13,7 @@ func _ready() -> void:
 	Game.attract_mode = true
 	_build_attract()
 	_build_menu()
-	Sfx.music("music_loop", true)
+	Sfx.menu_music()
 	Sfx.crowd(true, -16.0)
 	Loc.language_changed.connect(func(_l): _rebuild_menu())
 	Input.joy_connection_changed.connect(func(_d, _c): if is_inside_tree(): _rebuild_menu())

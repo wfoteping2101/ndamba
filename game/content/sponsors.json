@@ -1,0 +1,14 @@
+{
+  "_doc": "Perimeter sponsors shown on the stadium boards, in order. The first entry is the title sponsor (shown on the match intro). On the website, copy this file next to index.html (app/public/football/sponsors.json) and edit it there to add a paying company: name (uppercase, under 18 characters), url, bg (board colour), fg (text colour). Players can also add their own boards in Réglages → Sponsors; those stay on their device.",
+  "sponsors": [
+    {"name": "WILLIAM FOTEPING", "url": "https://william-foteping.vercel.app", "bg": "#101814", "fg": "#E3A92B", "title": true},
+    {"name": "NDAMBA", "url": "https://ndamba-two.vercel.app", "bg": "#1F4D3A", "fg": "#F6F1E4"},
+    {"name": "LEMON NETWORK", "url": "", "bg": "#E3A92B", "fg": "#1E1A17"},
+    {"name": "CODE NJANGI", "url": "", "bg": "#F6F1E4", "fg": "#1F4D3A"},
+    {"name": "BEIGNETS MAMI", "url": "", "bg": "#B8432F", "fg": "#F6F1E4"},
+    {"name": "BENSKIN EXPRESS", "url": "", "bg": "#2B3F7A", "fg": "#F6F1E4"},
+    {"name": "LE BALLON VOYAGE", "url": "", "bg": "#C5762F", "fg": "#101814"},
+    {"name": "RADIO QUARTIER", "url": "", "bg": "#101814", "fg": "#E3A92B"},
+    {"name": "MAKOSSA FM", "url": "", "bg": "#5C6B2E", "fg": "#F6F1E4"}
+  ]
+}

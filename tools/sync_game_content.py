@@ -12,6 +12,7 @@ for sub in ("teams", "stadiums", "academy", "manager"):
         shutil.rmtree(d, ignore_errors=True)
         shutil.copytree(s, d, ignore=shutil.ignore_patterns("*.py", "__pycache__"))
 shutil.copy(os.path.join(ROOT, "art", "src", "palettes.json"), os.path.join(DST, "palettes.json"))
+shutil.copy(os.path.join(SRC, "sponsors.json"), os.path.join(DST, "sponsors.json"))
 for f in os.listdir(SRC):
     if f.startswith("strings") and f.endswith(".json"):
         shutil.copy(os.path.join(SRC, f), os.path.join(DST, f))

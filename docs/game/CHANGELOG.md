@@ -1,5 +1,14 @@
 # NDAMBA changelog
 
+## 0.4.0 (2026-11-01), the stadium lives: crowd, sound, sponsors
+- Stands full everywhere (Stade du Wouri: 944 supporters, up from 406): the lower south tier leaves room for the dugouts, the upper tier runs the whole length. Every section is painted in the teams' colours at run time (crowd sheet uses the palette keys like the players): west kop and south-west in the home colours, east kop and south-east in the away colours, north stand mixed with a home majority, some neutrals in their own shirts. Flags in team colours wave on the terraces.
+- Crowd animation: idle sway, a Mexican wave that goes round the ground every 30–60 s, the scoring side jumps for four seconds with its flags waving twice as fast, a ripple of fans stands up on every shot. Light mode keeps a thinned, still crowd.
+- Stadium sound (setting "Ambiance du stade", on): three new original loops — hand-claps, a tam-tam / djembe section in 12/8, a crowd chant — mixed on top of the murmur and rising with the play (ball near a goal, ball speed), bursting on a shot and on a goal, settling at half time.
+- Stadium music (setting "Musique du stade": off / menu / makossa / bikutsi): two original 30-second loops in makossa and bikutsi styles, synthesised in `audio/src/synth.py`. No existing song is used (the real "legends" tracks are copyrighted and cannot be bundled); the loops are originals in the spirit of those styles.
+- Sponsor boards drawn at run time from `content/sponsors.json` (the title sponsor, WILLIAM FOTEPING → william-foteping.vercel.app, first; then NDAMBA, Lemon Network, Code Njangi and the original brands), shown on the sixteen boards around the pitch and as "Présenté par …" on the match intro. On the website the game reads `sponsors.json` next to `index.html`, so the admin adds a paying company by editing that file (no rebuild). Players can add their own boards in Réglages → Panneaux sponsors (kept on the device).
+- Réglages laid out in two columns (sound and game on the left, controls on the right) so every row fits on screen.
+- Crowd sheet / view cell-size mismatch fixed (40 px cells, recorded in crowd.json).
+
 ## 0.3.1 (2026-11-01), playability round 2
 - Passing: a plain pass always finds a teammate (wide search weighted by the stick direction; a through ball keeps the narrow cone for runs into space), so the kick-off and back passes no longer go to nobody. A chevron under the teammate the assist will pick, with a dotted line, shows the pass before it is played.
 - Ball always visible: a ground ring under the ball and a line to its shadow when it is in the air.

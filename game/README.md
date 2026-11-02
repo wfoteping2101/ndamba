@@ -61,6 +61,12 @@ python3 audio/src/synth.py              (sound effects and the music sketch; con
 ```
 Preview sheets: `python3 art/src/rig.py --real --anims idle,run,kick` writes `art/previews/`.
 
+## Sponsors (perimeter boards)
+The sixteen boards around a full-size pitch and the "Présenté par …" line of the match intro come from a JSON list, so adding a sponsor needs no artwork and no rebuild:
+- `content/sponsors.json` (copied to `game/content/sponsors.json` by `tools/sync_game_content.py`) is the bundled list; the first entry flagged `"title": true` is the title sponsor.
+- On the website the game fetches `sponsors.json` from the same folder as `index.html` (`app/public/football/sponsors.json`); when that file loads it replaces the bundled list. To add a paying company: add `{"name": "ACME", "url": "https://...", "bg": "#hex", "fg": "#hex"}` to that file and push (`name` is upper-cased and cut at 18 characters; `fg` defaults to black or cream, whichever reads).
+- Players can add boards on their device in Réglages → Panneaux sponsors (saved in `user://sponsors.json`, appended after the published list).
+
 ## Layout
 
 ```

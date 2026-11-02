@@ -46,7 +46,7 @@ func _ready() -> void:
 		touch.setup(m, first)
 	m.match_ended.connect(_on_ended)
 	m.event.connect(_on_event)
-	Sfx.music("", false)
+	Sfx.match_music()
 	Sfx.crowd(true)
 	if Game.qa_mode:
 		m.time_scale = 1.0

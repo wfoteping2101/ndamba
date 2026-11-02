@@ -637,29 +637,28 @@ def pose_cheer(f: int) -> dict:
 
 
 def crowd_sheet(seed: int = 5, count: int = 24):
-    """Each crowd member: 4 idle frames + 4 cheer frames, one direction (S, facing the pitch)."""
+    """Each crowd member: 4 idle frames + 4 cheer frames, one direction (S, facing the pitch).
+    Shirts use the palette KEY colours (jersey / jersey2) so the game recolours every section
+    in the colours of the home team, the away team, or a neutral shirt at run time."""
     rnd = random.Random(seed)
     cell = rig.CELL
     sheet = Image.new("RGBA", (8 * cell, count * cell), (0, 0, 0, 0))
     pal = rig.load_palette()
-    shirts = ["#C9362B", "#F0B92E", "#2E6B45", "#2E63B8", "#F2EEE3", "#8E44AD", "#E67E22", "#1ABC9C", "#D35400", "#F7DC6F", "#5D6D7E", "#A569BD"]
+    key = pal["keys"]
     meta = []
     for i in range(count):
         skin = rnd.choice(list(pal["skin_tones"].values()))
-        shirt = rnd.choice(shirts)
-        shirt2 = rnd.choice(shirts)
         shorts = rnd.choice(["#1C1C22", "#3B5998", "#6E4B2A", "#8E251D", "#F2EEE3"])
         keys = {
             "skin": skin, "hair": pal["hair_colours"]["black"],
-            "jersey": [shirt, rig.lighten_hex(shirt), rig.darken_hex(shirt)],
-            "jersey2": [shirt2, rig.lighten_hex(shirt2), rig.darken_hex(shirt2)],
+            "jersey": key["jersey"], "jersey2": key["jersey2"],
             "shorts": [shorts, rig.lighten_hex(shorts), rig.darken_hex(shorts)],
             "socks": [skin[0], skin[1], skin[2]], "socks2": [skin[0], skin[1], skin[2]], "boots": ["#3A2A22", "#55413A", "#221812"],
-            "keeper": [shirt, rig.lighten_hex(shirt), rig.darken_hex(shirt)], "gloves": skin, "wrap": ["#C9362B", "#E25A4D", "#8E251D"],
+            "keeper": key["jersey"], "gloves": skin, "wrap": key["jersey2"],
         }
         hair = rnd.choice(["short", "short", "afro", "fade", "braids", "wrap"])
-        pattern = rnd.choice(["plain", "plain", "plain", "stripes", "halves"])
-        sitting = rnd.random() < 0.55
+        pattern = rnd.choice(["plain", "plain", "stripes", "halves", "hoops", "sash"])
+        sitting = rnd.random() < 0.5
         look = rig.Look(hair=hair, pattern=pattern)
         direction = rnd.choice(["S", "S", "SE", "SW"])
         for f in range(4):
@@ -668,7 +667,61 @@ def crowd_sheet(seed: int = 5, count: int = 24):
             fr2 = render_pose(pose_cheer(f) if not sitting else pose_sit_cheer(f), direction, look, keys, seed + i * 3 + f)
             sheet.paste(fr2, ((4 + f) * cell, i * cell))
         meta.append({"row": i, "sitting": sitting})
-    return sheet, meta
+    return sheet, {"cell": cell, "rows": meta}
+
+
+def flag_sheet(seed: int = 9, frames: int = 6, w: int = 24, h: int = 30):
+    """A supporter's flag on a stick, waving: `frames` cells of w x h. The cloth uses the
+    jersey / jersey2 key colours (two horizontal bands) so it is recoloured per team."""
+    pal = rig.load_palette()
+    key = pal["keys"]
+    sheet = Image.new("RGBA", (frames * w, h), (0, 0, 0, 0))
+    pole = (58, 44, 36, 255)
+    pole_hi = (92, 72, 58, 255)
+    for f in range(frames):
+        img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        px = img.load()
+        ph = math.pi * 2 * f / frames
+        sx = 4
+        for y in range(2, h):
+            px[sx, y] = pole
+            if y < h - 3:
+                px[sx + 1, y] = pole_hi
+        cloth_w, cloth_h = 16, 11
+        for cx in range(cloth_w):
+            t = cx / float(cloth_w - 1)
+            wave = math.sin(ph + t * 4.2) * 1.6 * t
+            tilt = int(round(wave))
+            shrink = int(round(t * 1.5 * (0.5 + 0.5 * math.sin(ph + 1.3 + t * 3.0))))
+            for cy in range(cloth_h):
+                y = 3 + cy + tilt
+                if cy < shrink or cy >= cloth_h - shrink:
+                    continue
+                if 0 <= y < h:
+                    band = key["jersey"] if cy < cloth_h // 2 else key["jersey2"]
+                    shade = 0
+                    # light where the cloth faces the sun (rising part of the wave), dark in the troughs
+                    slope = math.cos(ph + t * 4.2)
+                    if slope > 0.45:
+                        shade = 1
+                    elif slope < -0.45:
+                        shade = 2
+                    px[sx + 2 + cx, y] = hex2rgb(band[shade]) + (255,)
+        # outline
+        d = ImageDraw.Draw(img)
+        out = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        op = out.load()
+        for y in range(h):
+            for x in range(w):
+                if px[x, y][3] == 0:
+                    for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                        nx, ny = x + dx, y + dy
+                        if 0 <= nx < w and 0 <= ny < h and px[nx, ny][3] != 0 and px[nx, ny] not in (pole, pole_hi):
+                            op[x, y] = (30, 24, 22, 255)
+                            break
+        img = Image.alpha_composite(out, img)
+        sheet.paste(img, (f * w, 0))
+    return sheet
 
 
 def pose_sit_cheer(f: int) -> dict:
@@ -752,6 +805,7 @@ def build_all(out: str):
     cs.save(os.path.join(out, "props", "crowd.png"))
     with open(os.path.join(out, "props", "crowd.json"), "w") as f:
         json.dump(cmeta, f)
+    flag_sheet().save(os.path.join(out, "props", "flag.png"))
     with open(os.path.join(out, "stadium", "layout_meta.json"), "w") as f:
         json.dump({"world": [WORLD_W, WORLD_H], "pitch": PITCH, "ppm": PPM, "goal_w": gm, "goal_e": gm2,
                    "goal_full_w": fm, "goal_full_e": fm2, "terrace_step": step_h,

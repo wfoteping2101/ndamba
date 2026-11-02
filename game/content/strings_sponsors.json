@@ -1,0 +1,15 @@
+{
+  "settings.sponsors": {"fr": "Panneaux sponsors", "en": "Sponsor boards"},
+  "sponsors.open": {"fr": "Gérer", "en": "Manage"},
+  "sponsors.title": {"fr": "SPONSORS DU STADE", "en": "STADIUM SPONSORS"},
+  "sponsors.intro": {"fr": "Les panneaux autour du terrain, dans l'ordre. Ajoutez un partenaire : un nom et une couleur. Les panneaux ajoutés ici restent sur cet appareil ; pour le site public, l'admin modifie sponsors.json.", "en": "The boards around the pitch, in order. Add a partner: a name and a colour. Boards added here stay on this device; for the public site the admin edits sponsors.json."},
+  "sponsors.name_hint": {"fr": "NOM DU SPONSOR", "en": "SPONSOR NAME"},
+  "sponsors.add": {"fr": "Ajouter", "en": "Add"},
+  "sponsors.remove": {"fr": "Retirer", "en": "Remove"},
+  "sponsors.colour": {"fr": "Couleur", "en": "Colour"},
+  "sponsors.added": {"fr": "Panneau ajouté : {name}", "en": "Board added: {name}"},
+  "sponsors.full": {"fr": "Entrez un nom (18 lettres max).", "en": "Enter a name (18 letters max)."},
+  "sponsors.title_sponsor": {"fr": "Sponsor titre", "en": "Title sponsor"},
+  "sponsors.local": {"fr": "ajouté ici", "en": "added here"},
+  "intro.sponsor": {"fr": "Présenté par {name}", "en": "Presented by {name}"}
+}
