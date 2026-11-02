@@ -834,5 +834,37 @@
   "title.no_pad": {
     "fr": "Aucune manette détectée (appuie sur un bouton de la manette)",
     "en": "No controller detected (press a button on the pad)"
+  },
+  "settings.pad_setup": {
+    "fr": "Boutons de la manette",
+    "en": "Controller buttons"
+  },
+  "pad.configure": {
+    "fr": "Configurer",
+    "en": "Configure"
+  },
+  "pad.setup_title": {
+    "fr": "CONFIGURER LA MANETTE",
+    "en": "CONTROLLER SETUP"
+  },
+  "pad.setup_hint": {
+    "fr": "Appuie sur le bouton de ta manette pour chaque action. Les gâchettes marchent pour le sprint. Échap pour annuler.",
+    "en": "Press the pad button you want for each action. Triggers work for sprint. Esc to cancel."
+  },
+  "pad.press_for": {
+    "fr": "Appuie sur le bouton pour : {action}",
+    "en": "Press the button for: {action}"
+  },
+  "pad.detected": {
+    "fr": "Détecté : {what}",
+    "en": "Detected: {what}"
+  },
+  "pad.setup_done": {
+    "fr": "Manette configurée ! Tu peux jouer.",
+    "en": "Controller set! You can play."
+  },
+  "pad.reset": {
+    "fr": "Mapping par défaut",
+    "en": "Default mapping"
   }
 }

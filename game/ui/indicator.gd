@@ -27,6 +27,39 @@ func _draw_tag(p: Footballer, col: Color, strong: bool) -> void:
 func _draw() -> void:
 	if m == null:
 		return
+	# the ball is small and often behind a body: a ring on the ground marks it at all times,
+	# and when the ball is in the air a thin line ties it to its shadow
+	if m.ball != null and m.phase != Match.Phase.INTRO:
+		var bp: Vector2 = m.ball.pos
+		draw_arc(bp, 6.0, 0.0, TAU, 20, Color(1, 1, 1, 0.55), 1.0)
+		draw_arc(bp, 7.0, 0.0, TAU, 20, Color(0, 0, 0, 0.35), 1.0)
+		if m.ball.h > 3.0:
+			draw_line(bp, bp - Vector2(0, m.ball.h), Color(1, 1, 1, 0.35), 1.0)
+	# pass intention: a chevron under the teammate the assist would pick for the stick direction
+	for ti in m.humans.keys():
+		var hp: Footballer = m.humans[ti].current
+		if hp == null or not hp.has_ball:
+			continue
+		var aim: Vector2 = hp.in_move if hp.in_move.length() > 0.2 else hp.facing
+		var choice: Dictionary = m.choose_pass(hp, aim.normalized(), false)
+		var tgt = choice.get("target")
+		if tgt != null:
+			var q: Vector2 = tgt.position + Vector2(0, 4)
+			var kit: Dictionary = m.teams[ti].data.get("kit_home", {})
+			var c := Color.html(kit.get("jersey", "#ffffff"))
+			if c.get_luminance() < 0.35:
+				c = Color.html(kit.get("jersey2", "#ffffff"))
+			draw_arc(q, 9.0, 0.0, TAU, 24, Color(0, 0, 0, 0.45), 2.0)
+			draw_arc(q, 9.0, 0.0, TAU, 24, Color(c, 0.9), 1.0)
+			# dotted line from the carrier to the target
+			var from: Vector2 = hp.position
+			var dirv := (q - from).normalized()
+			var dist := from.distance_to(q)
+			var k := 14.0
+			while k < dist - 10.0:
+				var pt := from + dirv * k
+				draw_rect(Rect2(pt.x - 1, pt.y - 1, 2, 2), Color(1, 1, 1, 0.35))
+				k += 8.0
 	# name tags: the controlled players and the ball carrier (setting "names")
 	if Game.settings.get("names", true) and m.phase != Match.Phase.INTRO:
 		var tagged := {}

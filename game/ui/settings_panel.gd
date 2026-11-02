@@ -19,6 +19,13 @@ func _ready() -> void:
 	_toggle(v, "settings.names", "names")
 	_toggle(v, "settings.assist_run", "assist_run")
 	_cycle(v, "settings.pad_style", "pad_style", ["auto", "xbox", "playstation"], ["settings.auto", "pad.xbox", "pad.playstation"])
+	var hp := _row(v, "settings.pad_setup")
+	var pb := UiTheme.button(Loc.t("pad.configure"), 110)
+	pb.pressed.connect(func():
+		var ps := PadSetup.new()
+		get_parent().add_child(ps)
+		ps.closed.connect(func(): pb.grab_focus()))
+	hp.add_child(pb)
 	_cycle(v, "settings.quality", "quality", ["auto", "low", "high"], ["settings.auto", "quality.low", "quality.high"])
 	_toggle(v, "settings.commentary", "commentary")
 	_toggle(v, "settings.assist", "assist_aim")

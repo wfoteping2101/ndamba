@@ -143,6 +143,7 @@ func _build_teams() -> void:
 				f.brain = AiBrain.new(f, self, _ai_difficulty_for(i))
 		teams.append(team)
 	var human_count := 0
+	Game.set_pad_devices(bool(config["human_home"]) and bool(config["human_away"]))
 	for i in range(2):
 		if teams[i].human:
 			var hc := HumanController.new()
@@ -255,21 +256,27 @@ func choose_pass(p: Footballer, aim: Vector2, through: bool) -> Dictionary:
 	var best: Footballer = null
 	var best_s := -INF
 	var fwd := Vector2(float(p.attack_dir), 0)
+	# a plain pass always finds a teammate (wide search, the aim direction weighted most);
+	# a through ball keeps the narrower cone so it can be played into space on purpose
+	var cone := 0.95 if Game.settings.get("assist_aim", true) else 0.55
+	if not through and p.human_controlled:
+		cone = 2.4
 	for t in teammates_of(p):
 		if t == p:
 			continue
 		var rel: Vector2 = t.pos - p.pos
 		var d: float = rel.length()
-		if d < 12.0 or d > 260.0:
+		if d < 8.0 or d > 300.0:
 			continue
 		var ang := aim.angle_to(rel.normalized())
-		var cone := 0.95 if Game.settings.get("assist_aim", true) else 0.55
 		if absf(ang) > cone:
 			continue
 		# the player's aim matters most; distance a little; a blocked lane counts against
-		var s: float = 1.0 - (absf(ang) / cone) * 1.5 - d / 600.0
+		var s: float = 1.0 - absf(ang) * 1.3 - d / 600.0
 		if p.human_controlled and _lane_blocked(p.pos, t.pos):
 			s -= 0.35
+		if absf(ang) > 0.95:
+			s -= 0.4   # behind or far to the side: only when nothing better exists
 		if through:
 			s += rel.normalized().dot(fwd) * 0.5 + t.vel.length() / 300.0
 		if t.is_keeper:

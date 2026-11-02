@@ -314,6 +314,11 @@ func _apply_motion(dt: float) -> void:
 	var ws: Vector2 = Content.world_size()
 	pos.x = clampf(pos.x, 8.0, ws.x - 8.0)
 	pos.y = clampf(pos.y, 60.0, ws.y - 8.0)
+	if match_ref != null:
+		# players stay on the playing area (a few metres past the lines), never in the stands
+		var pr: Rect2 = match_ref.pitch_rect.grow(24.0)
+		pos.x = clampf(pos.x, pr.position.x, pr.end.x)
+		pos.y = clampf(pos.y, pr.position.y, pr.end.y)
 	if is_keeper and match_ref != null and match_ref.ball_in_play and state != State.GK_DIVE and not has_ball:
 		# keepers stay in their own box area unless chasing a loose ball nearby
 		var box: Rect2 = match_ref.keeper_zone(team_index)

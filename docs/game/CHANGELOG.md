@@ -1,5 +1,13 @@
 # NDAMBA changelog
 
+## 0.3.1 (2026-11-01), playability round 2
+- Passing: a plain pass always finds a teammate (wide search weighted by the stick direction; a through ball keeps the narrow cone for runs into space), so the kick-off and back passes no longer go to nobody. A chevron under the teammate the assist will pick, with a dotted line, shows the pass before it is played.
+- Ball always visible: a ground ring under the ball and a line to its shadow when it is in the air.
+- Controller: "Configurer la manette" in Réglages records any pad's buttons (Xbox, PlayStation, Stadia, generic) for pass / shoot / through / switch / sprint / pause; with one human the first pad works whatever index the browser gave it.
+- Players can no longer run into the stands (clamped to the playing area).
+- Stadiums are full bowls: two-tier stands behind both touchlines and stands behind each goal (crowd thinned to a third in light mode).
+- Controls hint no longer covers the stadium intro; it appears at kick-off, above the radar.
+
 ## 0.3.0 (2026-11-01), art pass
 - Player rig rebuilt at 40 px cells (scale 1.42): fuller torso and limbs, knees and socks, collar ring and sleeve cuffs, eyes with whites and brows, mouth, hair caps that leave the face clear; 36 sheets regenerated; softer two-tone drop shadow.
 - Grounds: calmer noise, vertical mowing stripes and painted white lines on grass, worn goalmouths only; finer laterite; fewer pebbles.

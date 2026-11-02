@@ -147,15 +147,24 @@ def full_stadium(id_, name_fr, name_en, city, neighborhood, surface, lighting, t
     rnd = random.Random(seed)
     px, py, pw, ph = FULL_PITCH["x"], FULL_PITCH["y"], FULL_PITCH["w"], FULL_PITCH["h"]
     props, crowd = [], []
-    # north stand: a continuous terrace just behind the far touchline
-    tp, tc = terrace_row(rnd, py - 16, px, px + pw, seg=120, rows=3, density=1.0, variant_seed=seed)
-    props += tp
-    crowd += tc
-    # south stand: two blocks either side of the dugouts
-    for (x0, x1) in ((px, px + 240), (px + pw - 240, px + pw)):
-        tp, tc = terrace_row(rnd, py + ph + 74, x0, x1, seg=120, rows=2, density=0.9, variant_seed=seed + 1)
+    # a full bowl: two-tier stands behind both touchlines, one tier behind each goal
+    for tier, dy in ((0, 0), (1, -33)):
+        tp, tc = terrace_row(rnd, py - 16 + dy, px - 60, px + pw + 60, seg=120, rows=3, density=0.9 if tier == 0 else 0.6, variant_seed=seed + tier)
         props += tp
         crowd += tc
+    for tier, dy in ((0, 0), (1, 33)):
+        for (x0, x1) in ((px - 60, px + 300), (px + pw - 300, px + pw + 60)):
+            tp, tc = terrace_row(rnd, py + ph + 74 + dy, x0, x1, seg=120, rows=3, density=0.8 if tier == 0 else 0.5, variant_seed=seed + 2 + tier)
+            props += tp
+            crowd += tc
+    # end stands: blocks stacked behind each goal line
+    for xc in (px - 88, px + pw + 88):
+        yb = py + 60
+        while yb < py + ph - 10:
+            tp, tc = terrace_row(rnd, yb, xc - 60, xc + 60, seg=120, rows=3, density=0.55, variant_seed=seed + 5)
+            props += tp
+            crowd += tc
+            yb += 40
     # perimeter advertising boards (original brands), alternating, behind both touchlines
     k = 0
     x = px + 8

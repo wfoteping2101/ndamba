@@ -20,6 +20,7 @@ var settings := {
 	"assist_aim": true,
 	"assist_run": true,           # the controlled player runs to loose balls when the stick is released
 	"pad_style": "auto",          # auto | xbox | playstation: button names in the hints
+	"pad_map": {},                # custom joypad mapping: action -> {type: button|axis, index, value}
 	"speed": "medium",            # slow | medium | fast: simulation pace of the match
 	"names": true,                # name tags over the players
 }
@@ -70,6 +71,8 @@ func _ready() -> void:
 	load_settings()
 	Loc.set_language(settings["lang"])
 	apply_audio()
+	apply_pad_map()
+	set_pad_devices(false)
 
 
 func _parse_args() -> void:
@@ -161,6 +164,45 @@ func record_result(result: Dictionary) -> void:
 
 func difficulty_name(d: int) -> String:
 	return ["diff.beginner", "diff.casual", "diff.intermediate", "diff.advanced", "diff.expert"][clampi(d, 0, 4)]
+
+
+const PAD_ACTIONS := ["pass", "shoot", "through", "switch_player", "sprint", "pause"]
+
+
+## Replace the joypad events of the base actions with the player's own mapping (any pad).
+func apply_pad_map() -> void:
+	var pm: Dictionary = settings.get("pad_map", {})
+	if typeof(pm) != TYPE_DICTIONARY or pm.is_empty():
+		return
+	for action in PAD_ACTIONS:
+		if not pm.has(action) or not InputMap.has_action(action):
+			continue
+		for ev in InputMap.action_get_events(action):
+			if ev is InputEventJoypadButton or ev is InputEventJoypadMotion:
+				InputMap.action_erase_event(action, ev)
+		var rec: Dictionary = pm[action]
+		if rec.get("type", "button") == "button":
+			var b := InputEventJoypadButton.new()
+			b.device = -1
+			b.button_index = int(rec.get("index", 0)) as JoyButton
+			InputMap.action_add_event(action, b)
+		else:
+			var a := InputEventJoypadMotion.new()
+			a.device = -1
+			a.axis = int(rec.get("index", 5)) as JoyAxis
+			a.axis_value = float(rec.get("value", 1.0))
+			InputMap.action_add_event(action, a)
+
+
+## One human: player 1 listens to every pad (device -1), so the first pad always works, whatever
+## index the browser or the OS gave it. Two humans: pad 0 drives player 1 and pad 1 player 2.
+func set_pad_devices(two_players: bool) -> void:
+	for action in PAD_ACTIONS + ["move_left", "move_right", "move_up", "move_down"]:
+		if not InputMap.has_action(action):
+			continue
+		for ev in InputMap.action_get_events(action):
+			if ev is InputEventJoypadButton or ev is InputEventJoypadMotion:
+				ev.device = 0 if two_players else -1
 
 
 ## Low quality: the setting, or auto on phones and in mobile browsers.

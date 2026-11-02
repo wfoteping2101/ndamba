@@ -388,7 +388,7 @@ func _update_intro() -> void:
 
 
 func show_hint(seconds: float) -> void:
-	hint_panel.visible = true
+	hint_panel.visible = m.phase != Match.Phase.INTRO
 	_hint_t = seconds
 
 
@@ -422,6 +422,8 @@ func _on_event(kind: String, text: String, team: int) -> void:
 func _on_phase(p: String) -> void:
 	if p == "KICKOFF":
 		half_label.text = Loc.t("hud.half1") if m.half == 1 else Loc.t("hud.half2")
+		if _hint_t > 0.0 and not hint_panel.visible:
+			hint_panel.visible = true
 	if p == "PAUSED":
 		pause_panel.visible = true
 	elif pause_panel.visible and p != "PAUSED":
@@ -461,7 +463,9 @@ func _process(delta: float) -> void:
 	var vp := root.size
 	banner_panel.position = Vector2(roundf((vp.x - banner_panel.size.x) * 0.5), 60)
 	ticker_panel.position = Vector2(roundf((vp.x - ticker_panel.size.x) * 0.5), vp.y - ticker_panel.size.y - RADAR_H - 10)
-	hint_panel.position = Vector2(roundf((vp.x - hint_panel.size.x) * 0.5), vp.y - hint_panel.size.y - 30)
+	hint_panel.position = Vector2(roundf((vp.x - hint_panel.size.x) * 0.5), vp.y - hint_panel.size.y - RADAR_H - 12)
+	if m.phase == Match.Phase.INTRO:
+		hint_panel.visible = false
 	pause_panel.position = ((vp - pause_panel.size) * 0.5).round()
 	radar.position = Vector2(roundf((vp.x - radar.size.x) * 0.5), vp.y - radar.size.y - 3)
 	radar.visible = m.phase != Match.Phase.INTRO and m.phase != Match.Phase.FULLTIME

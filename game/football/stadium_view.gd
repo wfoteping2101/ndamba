@@ -58,7 +58,7 @@ func build(stadium: Dictionary, ysort: Node2D, weather: String = "dry") -> void:
 	if low and spots.size() > 48:
 		var thinned := []
 		for k in range(spots.size()):
-			if k % 2 == 0:
+			if k % 3 == 0:
 				thinned.append(spots[k])
 		spots = thinned
 	for spot in spots:
