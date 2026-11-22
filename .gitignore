@@ -14,3 +14,4 @@ app/public/book/*/img/*-print*
 
 # guide screenshots: full-resolution captures stay out of git; web derivatives are committed under app/public/guide/img/
 guide/shots
+.claude/worktrees/

@@ -2,10 +2,11 @@
 // (the team of Kaydoudou and BriBri in the novel), a week of sessions, a played match with live tags,
 // and an upcoming match. Everything stays in this browser.
 import { db } from './db'
-import type { EventCode, Match, MatchEvent, Player, Profile, Role, Score5, Session, SkillKey, Team, Wellness } from './types'
+import type { Clip, EventCode, Match, MatchEvent, Player, Profile, Role, Score5, Session, SkillKey, Team, VideoProject, Wellness } from './types'
 import { addDays, nowISO, todayISO, uid, weekStart } from './util'
 import { formationSlots } from './formations'
 import { seedJourney } from './seedJourney' // PARCOURS
+import { PRO_BENCH, PRO_PAST_GOALS, PRO_ROSTER, PRO_VIDEO, PRO_XI, locateProMatch, proDemoEvents } from './proMatch'
 
 const SKILLS: SkillKey[] = ['scan', 'controle', 'passe', 'conduite', 'dribble-njangi', 'appels', 'communication', 'protection', 'contre-pression', 'decision']
 
@@ -142,154 +143,6 @@ export type DemoLevel = 'youth' | 'pro'
 export const DEMO_TEAMS: Record<DemoLevel, string> = { youth: 'team_lionceaux', pro: 'team_etoile' }
 
 // [name, number, position, birthYear, foot, skill base, note fr, note en]
-const PRO_ROSTER: [string, number, string, number, 'R' | 'L' | 'B', number, string?, string?][] = [
-  ['Hervé Ngando', 1, 'GK', 1995, 'R', 3.5, 'Gardien relanceur, jeu au pied sûr.', 'Ball-playing keeper, safe with his feet.'],
-  ['Cyrille Etondé', 16, 'GK', 1999, 'R', 3],
-  ['Patrice Nyemb', 30, 'GK', 2005, 'L', 2.5, 'Troisième gardien, vient du centre de formation.', 'Third keeper, from the academy.'],
-  ['Junior Ekwalla', 2, 'FB', 2000, 'R', 3.2],
-  ['Ismaël Bouba', 3, 'FB', 2002, 'L', 3.4, 'Latéral intérieur, monte entre les lignes.', 'Inverted full-back, steps into midfield.'],
-  ['Christian Tchoupo', 12, 'FB', 1998, 'R', 3],
-  ['Moussa Hamadou', 22, 'FB', 2004, 'L', 2.8],
-  ['Désiré Mvogo', 4, 'CB', 1997, 'R', 3.3],
-  ['Franck Essomba', 5, 'CB', 1993, 'L', 3.6, 'Capitaine. Central gauche relanceur.', 'Captain. Left-sided ball-playing centre-back.'],
-  ['Yves Belinga', 15, 'CB', 2001, 'R', 3],
-  ['Lionel Nkwenti', 23, 'CB', 1999, 'R', 3, 'Blessé (ischio-jambiers), retour prévu dans deux semaines.', 'Injured (hamstring), expected back in two weeks.'],
-  ['Guy Mbock', 6, 'DM', 1996, 'R', 3.7, 'Le pivot : il touche le ballon à chaque sortie.', 'The pivot: on the ball in every build-up.'],
-  ['Rodrigue Tsala', 18, 'DM', 2003, 'R', 3],
-  ['Steve Ndjock', 8, 'CM', 1998, 'R', 3.5],
-  ['Didier Fouda', 14, 'CM', 2000, 'B', 3.1],
-  ['Arthur Nlend', 20, 'CM', 2006, 'L', 2.8, 'Jeune intérieur promu cette saison.', 'Young midfielder promoted this season.'],
-  ['Brice Kemayou', 10, 'AM', 1997, 'L', 3.8, 'Meneur, joue intérieur gauche dans le 4-3-3.', 'Playmaker, plays left of the midfield three.'],
-  ['Aristide Moukoko', 7, 'W', 1999, 'R', 3.4],
-  ['Wilfried Nana', 11, 'W', 2001, 'L', 3.3],
-  ['Hamidou Sali', 17, 'W', 2004, 'R', 3],
-  ['Serge Eyoum', 9, 'ST', 1996, 'R', 3.4, 'Point d\'appui, dos au but.', 'Target forward, back to goal.'],
-  ['Thierry Mbida', 19, 'ST', 2002, 'L', 3],
-]
-const PRO_XI = ['pl_1', 'pl_2', 'pl_4', 'pl_5', 'pl_3', 'pl_6', 'pl_8', 'pl_10', 'pl_7', 'pl_9', 'pl_11'] // GK RB RCB LCB LB DM RCM LCM RW ST LW
-const PRO_BENCH = ['pl_16', 'pl_15', 'pl_12', 'pl_18', 'pl_14', 'pl_20', 'pl_17', 'pl_19', 'pl_22']
-/** Second-half substitutions of the played match: [minute of the half, off, on]. */
-const PRO_SUBS: [number, string, string][] = [[21, 'pl_7', 'pl_17'], [30, 'pl_9', 'pl_19'], [35, 'pl_8', 'pl_14']]
-
-type Counts = Partial<Record<EventCode, number>>
-/** Exact counts of each half (us), tuned on chapter 32's formulas: 59.9 then 76.6, 67.9 for the match. */
-const PRO_HALVES: { us: Counts; theirShots: number }[] = [
-  { us: { PASS_OK: 198, PASS_LOST: 31, PROG: 36, LINE: 15, FINAL3: 20, BOX: 7, FIX2: 2, SWITCH: 2, LOSS: 18, REGAIN5: 12, REGAIN: 21, SHOT: 6, SHOT_IN: 3 }, theirShots: 4 },
-  { us: { PASS_OK: 214, PASS_LOST: 27, PROG: 40, LINE: 19, FINAL3: 24, BOX: 9, FIX2: 5, SWITCH: 2, LOSS: 16, REGAIN5: 14, REGAIN: 19, SHOT: 8, SHOT_IN: 3 }, theirShots: 5 },
-]
-/** Who tends to make each action, by position (relative weights). */
-const PRO_W: Record<string, Partial<Record<string, number>>> = {
-  pass: { GK: 0.45, CB: 1.25, FB: 1, DM: 1.45, CM: 1.3, AM: 1.1, W: 0.8, ST: 0.55 },
-  prog: { GK: 0.1, CB: 0.8, FB: 0.9, DM: 1.3, CM: 1.4, AM: 1.2, W: 0.6, ST: 0.3 },
-  final3: { FB: 0.8, DM: 0.2, CM: 0.8, AM: 1.2, W: 1.4, ST: 0.9 },
-  box: { FB: 0.4, CM: 0.5, AM: 1, W: 1.2, ST: 1.4 },
-  fix: { FB: 0.5, DM: 0.6, CM: 1, AM: 1.2, W: 1.3, ST: 0.4 },
-  switch: { CB: 0.8, FB: 0.6, DM: 1.3, CM: 1.2, AM: 0.5 },
-  loss: { CB: 0.2, FB: 0.6, DM: 0.4, CM: 0.6, AM: 1, W: 1.3, ST: 1.2 },
-  regain5: { CB: 0.5, FB: 0.6, DM: 1.3, CM: 1.2, AM: 1, W: 0.9, ST: 0.9 },
-  regain: { GK: 0.5, CB: 1.3, FB: 1, DM: 1.2, CM: 0.8, AM: 0.3, W: 0.3, ST: 0.2 },
-  shot: { CB: 0.15, FB: 0.15, DM: 0.2, CM: 0.5, AM: 1, W: 1.2, ST: 1.6 },
-}
-const PRO_KIND: Partial<Record<EventCode, string>> = { PASS_OK: 'pass', PASS_LOST: 'pass', PROG: 'prog', LINE: 'prog', FINAL3: 'final3', BOX: 'box', FIX2: 'fix', SWITCH: 'switch', LOSS: 'loss', REGAIN5: 'regain5', REGAIN: 'regain', SHOT: 'shot' }
-
-/**
- * The tag stream of the professional match (two halves of 45 minutes), built from exact counts so the Indice is known in advance.
- * Each tag goes to a player on the pitch at that moment, weighted by position, so the per-player table reads like a real match.
- */
-function proDemoEvents(matchId: string, players: Player[], goals: { half: 1 | 2; side: 'us' | 'them'; near: number; playerId?: string }[]): MatchEvent[] {
-  let r = 23
-  const rnd = () => { r = (r * 9301 + 49297) % 233280; return r / 233280 }
-  const byId = new Map(players.map((p) => [p.id, p]))
-  const onPitch = (half: 1 | 2, t: number) => PRO_XI.map((id) => {
-    if (half === 1) return id
-    const s = PRO_SUBS.find(([min, off]) => off === id && t >= min * 60)
-    return s ? s[2] : id
-  }).map((id) => byId.get(id)).filter((p): p is Player => !!p)
-  const pick = (half: 1 | 2, t: number, code: EventCode) => {
-    const kind = PRO_KIND[code]
-    const squad = onPitch(half, t)
-    const w = squad.map((p) => (kind ? PRO_W[kind][p.position] ?? 0.05 : 1))
-    let x = rnd() * w.reduce((a, b) => a + b, 0)
-    for (let i = 0; i < squad.length; i++) { x -= w[i]; if (x <= 0) return squad[i].id }
-    return squad[squad.length - 1]?.id
-  }
-  const out: MatchEvent[] = []
-  const push = (half: 1 | 2, t: number, code: EventCode, side: 'us' | 'them') =>
-    out.push({ id: uid('ev_'), matchId, half, t: Math.round(t), code, side, playerId: side === 'us' ? pick(half, t, code) : undefined, createdAt: nowISO() })
-  const shuffle = <T,>(a: T[]) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
-  /** Split a total over slots in proportion to weights (largest remainder). */
-  const spread = (total: number, weights: number[]) => {
-    const sum = weights.reduce((a, b) => a + b, 0) || 1
-    const raw = weights.map((v) => (v / sum) * total)
-    const base = raw.map(Math.floor)
-    let left = total - base.reduce((a, b) => a + b, 0)
-    raw.map((v, i) => [v - Math.floor(v), i] as const).sort((a, b) => b[0] - a[0]).forEach(([, i]) => { if (left > 0) { base[i]++; left-- } })
-    return base
-  }
-
-  PRO_HALVES.forEach(({ us: c, theirShots }, hi) => {
-    const half = (hi + 1) as 1 | 2
-    const n0 = (k: EventCode) => c[k] ?? 0
-    // every possession of ours ends with a lost pass, a loss or a shot
-    const ends: EventCode[] = shuffle([...Array(n0('PASS_LOST')).fill('PASS_LOST'), ...Array(n0('LOSS')).fill('LOSS'), ...Array(n0('SHOT')).fill('SHOT')])
-    const length = ends.map((e) => (e === 'SHOT' ? 2.2 : 1) * (0.4 + rnd() * rnd() * 3.2))
-    const passes = spread(n0('PASS_OK'), length)
-    const prog = spread(n0('PROG'), passes.map((p) => p + 0.2))
-    const line = spread(n0('LINE'), passes.map((p) => p * p + 0.1))
-    const final3 = spread(n0('FINAL3'), ends.map((e, i) => passes[i] * (e === 'SHOT' ? 2.5 : 1) + rnd()))
-    const box = spread(n0('BOX'), ends.map((e, i) => (e === 'SHOT' ? 6 : 0.4) * (1 + passes[i] / 8)))
-    const fix = spread(n0('FIX2'), passes.map((p) => (p >= 7 ? p : 0.05)))
-    const sw = spread(n0('SWITCH'), passes.map((p) => (p >= 8 ? p : 0.05)))
-    const onTarget = new Set(shuffle(ends.map((e, i) => (e === 'SHOT' ? i : -1)).filter((i) => i >= 0)).slice(0, n0('SHOT_IN')))
-    const quick = new Set(shuffle(ends.map((e, i) => (e === 'SHOT' ? -1 : i)).filter((i) => i >= 0)).slice(0, n0('REGAIN5'))) // won back within 5 seconds
-    const slow = new Set(shuffle(ends.map((_, i) => i).filter((i) => !quick.has(i))).slice(0, n0('REGAIN')))
-    // a raw timeline, rescaled to 45 minutes plus stoppage time at the end
-    const raw: { t: number; code: EventCode; side: 'us' | 'them' }[] = []
-    const theirs: [number, number][] = []
-    let t = 0
-    ends.forEach((end, i) => {
-      const n = passes[i]
-      const progAt = new Set(Array.from({ length: prog[i] }, (_, k) => Math.min(Math.max(0, n - 1), Math.floor(((k + 0.5) * n) / Math.max(1, prog[i])))))
-      for (let k = 0; k < n; k++) {
-        t += 3 + rnd() * 4
-        raw.push({ t, code: 'PASS_OK', side: 'us' })
-        if (progAt.has(k)) raw.push({ t: t + 0.5, code: 'PROG', side: 'us' })
-        if (k === Math.floor(n * 0.6)) for (let j = 0; j < line[i]; j++) raw.push({ t: t + 0.6 + j, code: 'LINE', side: 'us' })
-        if (k === Math.floor(n * 0.5)) {
-          for (let j = 0; j < fix[i]; j++) raw.push({ t: t + 1, code: 'FIX2', side: 'us' })
-          for (let j = 0; j < sw[i]; j++) raw.push({ t: t + 2, code: 'SWITCH', side: 'us' })
-        }
-      }
-      if (n === 0) { for (let j = 0; j < line[i]; j++) raw.push({ t: t + 0.6, code: 'LINE', side: 'us' }); if (prog[i]) for (let j = 0; j < prog[i]; j++) raw.push({ t: t + 0.4, code: 'PROG', side: 'us' }) }
-      for (let j = 0; j < final3[i]; j++) raw.push({ t: t + 1 + j * 3, code: 'FINAL3', side: 'us' })
-      for (let j = 0; j < box[i]; j++) raw.push({ t: t + 3 + j * 3, code: 'BOX', side: 'us' })
-      t += 4 + rnd() * 3
-      raw.push({ t, code: end, side: 'us' })
-      if (end === 'SHOT' && onTarget.has(i)) raw.push({ t, code: 'SHOT_IN', side: 'us' })
-      if (quick.has(i)) { t += 2 + rnd() * 2.5; raw.push({ t, code: 'REGAIN5', side: 'us' }); return }
-      const from = t
-      t += 14 + rnd() * 46 // their possession
-      theirs.push([from, t])
-      if (slow.has(i)) raw.push({ t, code: 'REGAIN', side: 'us' })
-    })
-    // their shots, in the middle of their longest possessions
-    for (const [a, b] of [...theirs].sort((x, y) => (y[1] - y[0]) - (x[1] - x[0])).slice(0, theirShots)) raw.push({ t: (a + b) / 2, code: 'SHOT', side: 'them' })
-    const k = (45 * 60 + 120) / (t + 30)
-    for (const e of raw.sort((a, b) => a.t - b.t)) push(half, 20 + e.t * k, e.code, e.side)
-  })
-
-  // each goal lands on the closest shot (on target for us) taken while the scorer is on the pitch
-  for (const g of goals) {
-    const scorerOn = (e: MatchEvent) => !g.playerId || onPitch(g.half, e.t).some((p) => p.id === g.playerId)
-    const shots = out.filter((e) => e.half === g.half && e.side === g.side && e.code === (g.side === 'us' ? 'SHOT_IN' : 'SHOT') && scorerOn(e))
-    const shot = shots.sort((a, b) => Math.abs(a.t - g.near) - Math.abs(b.t - g.near))[0]
-    const at = shot ? shot.t : g.near
-    if (shot && g.side === 'us' && g.playerId) for (const e of out) if (e.half === g.half && e.t === shot.t && e.side === 'us' && (e.code === 'SHOT' || e.code === 'SHOT_IN')) e.playerId = g.playerId
-    out.push({ id: uid('ev_'), matchId, half: g.half, t: at, code: 'GOAL', side: g.side, playerId: g.side === 'us' ? g.playerId : undefined, createdAt: nowISO() })
-  }
-  return out
-}
-
 async function seedProDemo(role: Role, lang: 'fr' | 'en') {
   const fr = lang === 'fr'
   await db.transaction('rw', [db.profile, db.teams, db.players, db.sessions, db.matches, db.events, db.messages, db.tasks, db.notebook, db.challenges, db.videos], async () => {
@@ -352,14 +205,48 @@ async function seedProDemo(role: Role, lang: 'fr' | 'en') {
       { ...base, id: 'ma_pro_j11', opponent: 'Flamme de Bertoua', date: addDays(saturday, 8), time: '16:00', venue: home, home: true, competition: league(11), status: 'planned', scoreUs: 0, scoreThem: 0 },
     ]
     await db.matches.bulkPut(matches)
-    await db.events.bulkPut(proDemoEvents('ma_past', players, [
-      { half: 1, side: 'us', near: 1880, playerId: 'pl_9' }, // Eyoum
-      { half: 2, side: 'them', near: 760 },
-      { half: 2, side: 'us', near: 1985, playerId: 'pl_17' }, // Sali, on at the 66th minute
-    ]))
+    // The played match, coded on its video: every action has its place on the pitch and its moment in the
+    // demo video (a 2D animation drawn from these very codes, hosted by Ndamba: see tools/render_demo_match.mjs).
+    const evs = proDemoEvents('ma_past', players, PRO_PAST_GOALS)
+    const keys = locateProMatch(evs)
+    const len1 = Math.ceil(keys[1][keys[1].length - 1].t)
+    const kickoff2 = len1 + PRO_VIDEO.halftime
+    const duration = kickoff2 + Math.ceil(keys[2][keys[2].length - 1].t)
+    for (const e of evs) e.videoT = e.half === 1 ? e.t : kickoff2 + e.t
+    await db.events.bulkPut(evs)
+    await db.matches.update('ma_past', { potmId: 'pl_9' })
+    await db.videos.put(proDemoVideo(evs, kickoff2, duration, team.id, fr))
   })
   await seedJourney(lang) // PARCOURS: the season's history (see lib/seedJourney.ts)
   await seedPerformance(role, 'pro') // PERFORMANCE: four weeks of form and load for Steve Ndjock (see below)
+}
+
+/** The demo video of the played match: hosted by Ndamba (demonstration), with a few clips and a video session. */
+function proDemoVideo(evs: MatchEvent[], kickoff2: number, duration: number, teamId: string, fr: boolean): VideoProject {
+  const now = nowISO()
+  const at = (half: 1 | 2, code: MatchEvent['code'], side: 'us' | 'them', pick = 0) => evs.filter((e) => e.half === half && e.code === code && e.side === side).sort((a, b) => a.t - b.t)[pick]
+  const g1 = at(1, 'GOAL', 'us'), g2 = at(2, 'GOAL', 'them'), g3 = at(2, 'GOAL', 'us')
+  const quick = evs.filter((e) => e.code === 'REGAIN5' && e.half === 1).sort((a, b) => a.t - b.t)[3]
+  const line = evs.filter((e) => e.code === 'LINE' && e.half === 2).sort((a, b) => a.t - b.t)[2]
+  const lost = evs.filter((e) => e.code === 'LOSS' && e.half === 2 && e.videoT! < g2.videoT!).sort((a, b) => b.t - a.t)[0]
+  const clip = (id: string, e: MatchEvent | undefined, before: number, after: number, title: [string, string], note: [string, string], playerIds: string[] = []): Clip | null =>
+    e?.videoT === undefined ? null : { id, start: Math.max(0, e.videoT - before), end: Math.min(duration, e.videoT + after), title: fr ? title[0] : title[1], note: fr ? note[0] : note[1], playerIds, createdAt: now }
+  const clips = [
+    clip('cl_demo_g1', g1, 14, 5, ['But d\'Eyoum : la sortie à trois jusqu\'au but', 'Eyoum\'s goal: the build-up with three to the goal'], ['Mbock décroche entre les centraux, la ligne est traversée, Eyoum finit. C\'est le plan.', 'Mbock drops between the centre-backs, the line is broken, Eyoum finishes. That is the plan.'], ['pl_6', 'pl_9']),
+    clip('cl_demo_regain', quick, 8, 5, ['Contre-pression : reprise en moins de 5 secondes', 'Counter-press: won back within 5 seconds'], ['Trois joueurs ferment la sortie, le ballon revient tout de suite.', 'Three players close the exit, the ball comes straight back.']),
+    clip('cl_demo_line', line, 8, 6, ['Ligne traversée en seconde période', 'Line broken in the second half'], ['Le bon moment pour jouer entre les lignes : le milieu adverse est fixé.', 'The right moment to play between the lines: their midfield is pinned.']),
+    clip('cl_demo_loss', lost, 4, 12, ['La perte qui précède leur but', 'The loss before their goal'], ['Défense de repos à deux seulement derrière le ballon : à corriger.', 'Rest defence with only two behind the ball: to fix.']),
+    clip('cl_demo_g2', g2, 12, 4, ['Leur but', 'Their goal'], ['Regardez la distance entre nos centraux au départ de l\'action.', 'Look at the distance between our centre-backs when the move starts.']),
+    clip('cl_demo_g3', g3, 12, 5, ['But de Sali, entré à la 66e', 'Goal by Sali, on at the 66th minute'], ['Le remplaçant attaque l\'espace laissé par leur latéral.', 'The substitute attacks the space left by their full-back.'], ['pl_17']),
+  ].filter((c): c is Clip => !!c)
+  return {
+    id: 'vp_demo_past', title: fr ? 'Étoile de la Côte contre Météore de Bafoussam' : 'Étoile de la Côte v Météore de Bafoussam',
+    source: 'hosted', url: PRO_VIDEO.url, matchId: 'ma_past', teamId, kind: 'match', duration, kickoff1: 0, kickoff2,
+    ourColor: fr ? 'bleu et or' : 'blue and gold', theirColor: fr ? 'rouge' : 'red', attackRight1: true,
+    hosting: { plan: 'club', uploadedAt: now, demo: true }, tags: [], clips,
+    playlists: [{ id: 'pl_demo_monday', title: fr ? 'Séance vidéo de lundi : nos sorties et notre repos' : 'Monday video session: our build-up and rest defence', clipIds: ['cl_demo_g1', 'cl_demo_line', 'cl_demo_regain', 'cl_demo_loss', 'cl_demo_g2'], note: fr ? 'Quinze minutes, cinq extraits : deux pour ce qui marche, deux pour ce qu\'on corrige, un pour finir sur le plan de jeu.' : 'Fifteen minutes, five clips: two for what works, two to fix, one to end on the game plan.', createdAt: now }],
+    createdAt: now,
+  }
 }
 
 /* ======================================== PRO DEMO (end) ======================================== */
