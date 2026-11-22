@@ -11,8 +11,7 @@ import { computeNjangi, njangiLabel } from '../../lib/njangi'
 import type { Match, MatchEvent, VideoProject, VideoTag } from '../../lib/types'
 import { EmptyState, Field, Modal, PageHeader } from '../../ui'
 import { MiniDial } from './components/charts'
-import { SourcePicker, sourceValid, type SourceValue } from './components/SourcePicker'
-import { parseVideoLink } from './components/videoSource'
+import { SourcePicker, sourcePatch, sourceValid, type SourceValue } from './components/SourcePicker'
 
 export default function VideoList() {
   const { t, lang } = useT('analysis')
@@ -37,8 +36,9 @@ export default function VideoList() {
   }, [params, projects]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const create = async (title: string, matchId: string | undefined, src: SourceValue) => {
-    const p = parseVideoLink(src.url)
-    const v: VideoProject = { id: uid('vp_'), title, matchId, source: src.source === 'file' ? 'file' : p?.source ?? 'youtube', url: src.source === 'file' ? undefined : p?.url, tags: [], createdAt: nowISO() }
+    // the club's video library sorts videos by team: the match's team, otherwise the active team
+    const teamId = (matchId ? byId.get(matchId)?.teamId : undefined) ?? team?.id
+    const v: VideoProject = { id: uid('vp_'), title, matchId, teamId, ...sourcePatch(src), tags: [], createdAt: nowISO() }
     await db.videos.put(v)
     navigate(`/app/analyse/video/${v.id}`)
   }
@@ -150,7 +150,7 @@ function NewProject({ open, onClose, matches, taken, preset, teamName, onCreate 
         </Field>
         <div className="mb-4">
           <div className="mb-1.5 text-[14px] font-semibold text-ink-soft">{t('src.label')}</div>
-          <SourcePicker value={src} onChange={setSrc} />
+          <SourcePicker value={src} onChange={setSrc} hosting onHosted={(v) => onCreate(title.trim() || auto, matchId || undefined, v)} />
         </div>
         <Field label={t('video.projectTitle')} htmlFor="nj-vtitle-new">
           <input id="nj-vtitle-new" className="input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder={auto} />

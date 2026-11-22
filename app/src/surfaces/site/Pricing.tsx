@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Check, CheckCircle2, ChevronDown, CreditCard, Sparkles, X } from 'lucide-react'
-import { AI_ANALYSIS, PLANS, type PlanDef } from '../../lib/config'
+import { Check, CheckCircle2, ChevronDown, CloudUpload, CreditCard, ScanEye, X } from 'lucide-react'
+import { AI_ANALYSIS, PLANS, VIDEO_HOSTING, type PlanDef } from '../../lib/config'
 import { db } from '../../lib/db'
 import { useDocumentTitle } from '../../lib/hooks'
 import { useSession } from '../../lib/session'
 import type { Plan, Profile } from '../../lib/types'
 import { cx, fcfa, money } from '../../lib/util'
-import { PageFrame, useInApp, useSiteT } from './components/brand'
+import { PageFrame, useHashScroll, useInApp, useSiteT } from './components/brand'
+import { useT } from '../../i18n'
 
 type Cycle = 'month' | 'year'
 const ANNUAL_MONTHS = 10 // annual price = 10 months (2 months free)
@@ -16,6 +17,7 @@ const FAQ = ['books', 'data', 'ai', 'cancel', 'federation', 'pay'] as const
 export default function Pricing() {
   const { t, lang } = useSiteT()
   useDocumentTitle(t('pricing.docTitle'))
+  useHashScroll() // /premium#hebergement from the upload choice and the filming page
   const { profile } = useSession()
   const inApp = useInApp()
   const [cycle, setCycle] = useState<Cycle>('month')
@@ -62,7 +64,7 @@ export default function Pricing() {
 
       {/* the AI reading of a match: sold per match, on top of any plan */}
       <section className="mt-6 grid gap-4 rounded-panel border border-line bg-paper p-5 sm:grid-cols-[auto_minmax(0,1fr)_auto] sm:items-center sm:p-6" aria-labelledby="ai-addon-h">
-        <span className="grid h-12 w-12 place-items-center rounded-2xl bg-sun-50 text-sun-700"><Sparkles size={22} strokeWidth={1.75} aria-hidden="true" /></span>
+        <span className="grid h-12 w-12 place-items-center rounded-2xl bg-sun-50 text-sun-700"><ScanEye size={22} strokeWidth={1.75} aria-hidden="true" /></span>
         <div className="min-w-0">
           <h2 id="ai-addon-h" className="text-[20px] leading-tight text-ink sm:text-[22px]">{t('pricing.ai.title')}</h2>
           <p className="mt-1.5 max-w-3xl text-[14.5px] leading-relaxed text-ink-muted">{t('pricing.ai.body')}</p>
@@ -72,6 +74,8 @@ export default function Pricing() {
           <div className="mt-1 text-[13px] text-ink-muted">{t('pricing.ai.unit', { v: fcfa(AI_ANALYSIS.usdPerMatch, lang) })}</div>
         </div>
       </section>
+
+      <HostingOffers />
 
       <section className="mt-20 grid gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-16" aria-labelledby="faq-title">
         <h2 id="faq-title" className="text-[28px] leading-tight text-ink sm:text-[34px]">{t('pricing.faqTitle')}</h2>
@@ -164,5 +168,44 @@ function PlanCard({ plan, cycle, profile, onActivate, wide = false, cols }: { pl
         )}
       </div>
     </article>
+  )
+}
+
+/** Paid hosting of match videos (upload instead of a link): the two offers and the cost basis in one sentence. Strings: gear.json. */
+function HostingOffers() {
+  const { t, lang } = useT('gear')
+  const P = VIDEO_HOSTING
+  const offers = [
+    { id: 'pass', price: money(P.pass.usd, lang), unit: t('pricing.perMatch'), approx: fcfa(P.pass.usd, lang), items: [t('pricing.pass.i1', { h: P.pass.maxHours, gb: P.pass.maxGB }), t('pricing.pass.i2', { m: P.pass.months }), t('pricing.pass.i3')] },
+    { id: 'club', price: money(P.club.usdMonth, lang), unit: t('pricing.perMonth'), approx: fcfa(P.club.usdMonth, lang), items: [t('pricing.club.i1', { h: P.club.hoursPerMonth }), t('pricing.club.i2'), t('pricing.club.i3', { m: P.club.months })] },
+  ] as const
+  return (
+    <section id="hebergement" className="mt-6 scroll-mt-24 rounded-panel border border-line bg-paper p-5 sm:p-6" aria-labelledby="hosting-h">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-forest-50 text-forest-700"><CloudUpload size={22} strokeWidth={1.75} aria-hidden="true" /></span>
+        <div className="min-w-0">
+          <h2 id="hosting-h" className="text-[20px] leading-tight text-ink sm:text-[22px]">{t('pricing.title')}</h2>
+          <p className="mt-1.5 max-w-3xl text-[14.5px] leading-relaxed text-ink-muted">{t('pricing.lead')}</p>
+        </div>
+      </div>
+      <div className="mt-5 grid gap-px overflow-hidden rounded-card border border-line bg-line sm:grid-cols-2">
+        {offers.map((o) => (
+          <article key={o.id} className="flex flex-col bg-paper p-4 sm:p-5">
+            <h3 className="text-[17px] leading-tight text-ink">{t(`plans.${o.id}.name`)}</h3>
+            <div className="mt-3 flex flex-wrap items-baseline gap-x-1.5">
+              <span className="num font-display text-[30px] leading-none text-ink">{o.price}</span>
+              <span className="text-[13px] font-medium text-ink-muted">{o.unit}</span>
+            </div>
+            <p className="mt-1.5 text-[12.5px] text-ink-muted">{t('pricing.approx', { v: o.approx })}</p>
+            <ul className="mt-4 space-y-2">
+              {o.items.map((x) => (
+                <li key={x} className="flex items-start gap-2 text-[14px] leading-snug text-ink-soft"><Check size={16} strokeWidth={2.4} className="mt-0.5 shrink-0 text-forest-500" aria-hidden="true" />{x}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+      <p className="mt-4 max-w-3xl text-[13.5px] leading-relaxed text-ink-muted">{t('pricing.cost')}</p>
+    </section>
   )
 }

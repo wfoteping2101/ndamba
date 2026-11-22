@@ -1,3 +1,165 @@
 {
-  "title": "Film your matches"
+  "title": "Film your matches",
+  "subtitle": "A well-placed camera beats an expensive one. Where to stand, how to bring the video into Ndamba, and the gear that really helps.",
+  "now": {
+    "button": "Film now",
+    "hint": "On a phone, the button opens the camera. The video stays on the device and opens in the studio.",
+    "title": "Match filmed on {{date}}"
+  },
+  "spot": {
+    "title": "Where to put the camera",
+    "lead": "Up high, level with the halfway line, the whole pitch in frame. That is what lets you read the lines, the spaces and the positions.",
+    "camera": "Camera",
+    "heightLabel": "3 to 6 m",
+    "frame": "Both goals in frame"
+  },
+  "tips": {
+    "height": {
+      "title": "As high as you can",
+      "body": "3 to 6 metres: a stand, a roof, a tall tripod. From above, you can read the lines and the spaces between players."
+    },
+    "halfway": {
+      "title": "Level with the halfway line",
+      "body": "A few metres back from the touchline, with the sun behind you if you can. Both halves are then filmed the same way."
+    },
+    "whole": {
+      "title": "The whole pitch, no zoom",
+      "body": "Frame both goals, then leave it alone. You want to see all 22 players, not just the ball."
+    },
+    "landscape": {
+      "title": "Landscape",
+      "body": "Phone on its side, rotation locked, lens wiped before kick-off."
+    },
+    "battery": {
+      "title": "Battery and airplane mode",
+      "body": "A power bank plugged in for the whole match, and airplane mode so a call cannot stop the recording."
+    },
+    "storage": {
+      "title": "Free space, and 720p is enough",
+      "body": "Keep at least 10 GB free for 90 minutes. 720p gives lighter files and the analysis reads it very well."
+    }
+  },
+  "ways": {
+    "title": "Bring the video into Ndamba",
+    "lead": "Three ways, depending on where you want the video to live. The first two are free.",
+    "free": "Free",
+    "paid": "Paid",
+    "link": {
+      "title": "A YouTube or Facebook link",
+      "body": "On YouTube, publish as \"unlisted\"; on Facebook, the video must be public. Ndamba stores nothing and the video plays anywhere."
+    },
+    "file": {
+      "title": "A file on the device",
+      "body": "The file stays on the phone or computer, nothing is sent. You will need to open it again on each visit."
+    },
+    "hosted": {
+      "title": "Upload to Ndamba",
+      "body": "Match pass at {{pass}}, or Club video at {{club}} a month. The video plays anywhere without reopening a file, the AI can read it, and players and parents can watch it."
+    },
+    "prices": "See prices",
+    "add": "Add a video"
+  },
+  "gear": {
+    "title": "The gear",
+    "lead": "Honest recommendations, to film from up high without interruptions. Always check the product page before buying."
+  },
+  "veo": {
+    "label": "To go further",
+    "title": "Veo Go",
+    "body": "A rig that turns two iPhones into a panoramic match camera: the two images are stitched together to show the whole pitch in one shot.",
+    "phones": "You need two iPhone 11 or newer with an ultra-wide camera (not the iPhone SE or the iPhone 16e).",
+    "subscription": "It needs Veo's own subscription, on top of Ndamba.",
+    "notAffiliated": "Ndamba is not affiliated with Veo.",
+    "maker": "Maker's page"
+  },
+  "items": {
+    "tripod": {
+      "title": "Tall sports tripod (20 ft)",
+      "why": "Lifts the camera above everyone's heads, even without a stand.",
+      "check": "The real height once extended, the load it holds, and how steady it stays in the wind."
+    },
+    "mount": {
+      "title": "Phone tripod mount",
+      "why": "Holds the phone in landscape on any tripod.",
+      "check": "Firm grip, a head you can angle, and the standard 1/4 inch thread."
+    },
+    "power": {
+      "title": "Power bank",
+      "why": "Ninety minutes of video drain a phone fast.",
+      "check": "At least 10,000 mAh and a cable long enough to reach the phone."
+    },
+    "weight": {
+      "title": "Tripod weight bag",
+      "why": "Filled with water or sand on site, it steadies a tall tripod against the wind.",
+      "check": "That it empties and folds for transport, and hooks under the centre of the tripod."
+    }
+  },
+  "check": "What to check:",
+  "amazon": "See on Amazon",
+  "amazonSearch": "Search on Amazon",
+  "disclosure": "As an Amazon Associate, Ndamba earns from qualifying purchases.",
+  "noPrices": "Prices, reviews and availability are the ones Amazon shows when you visit.",
+  "plans": {
+    "pass": {
+      "name": "Match pass",
+      "short": "One match, up to {{h}} h and {{gb}} GB, kept {{m}} months.",
+      "price": "{{price}} per match"
+    },
+    "club": {
+      "name": "Club video",
+      "perMonth": "{{price}} a month",
+      "short": "{{h}} h of uploads a month, every team, kept {{m}} months."
+    }
+  },
+  "upload": {
+    "choice": "Upload to Ndamba (paid)",
+    "choiceHint": "The video plays anywhere. From {{price}}.",
+    "whyFreeTitle": "Why links are free:",
+    "whyFree": "Ndamba stores nothing, the video stays on YouTube, on Facebook or on your device.",
+    "addsTitle": "What uploading adds:",
+    "adds": "the video plays anywhere without reopening a file, the AI can read it, and players and parents can watch it.",
+    "planLabel": "Plan",
+    "pickFile": "Choose the video",
+    "reading": "Reading the file",
+    "change": "Change",
+    "noDuration": "unknown length",
+    "errors": {
+      "tooBig": "This file is over {{gb}} GB, the Match pass limit. Choose Club video, or export the video in 720p.",
+      "tooLong": "This video is longer than {{h}} h, the Match pass limit. Choose Club video, or trim the video.",
+      "monthFull": "This video goes over this month's {{month}} h of uploads with Club video."
+    },
+    "payPass": "To pay for this match",
+    "payClub": "Club video, per month",
+    "approx": "About {{v}}, once.",
+    "clubUse": "This month: {{used}} of {{total}} h with this video. About {{v}} a month.",
+    "inc": {
+      "kept": "Kept until {{date}}",
+      "everywhere": "Plays on every device, without reopening a file",
+      "ai": "Readable by the AI analysis",
+      "onePass": "Players and parents can watch their clips",
+      "allTeams": "For every team of the club"
+    },
+    "send": "Upload (demo)",
+    "sending": "Uploading",
+    "sent": "Video ready",
+    "demo": "demo: nothing was sent or charged"
+  },
+  "pricing": {
+    "title": "Hosted video",
+    "lead": "YouTube and Facebook links stay free: Ndamba stores nothing. Upload the video to Ndamba so it plays anywhere without reopening a file, the AI can read it, and players and parents can watch it.",
+    "perMatch": "per match",
+    "perMonth": "a month",
+    "approx": "About {{v}}",
+    "pass": {
+      "i1": "One video up to {{h}} h and {{gb}} GB",
+      "i2": "Kept {{m}} months",
+      "i3": "No subscription"
+    },
+    "club": {
+      "i1": "{{h}} h of uploads a month",
+      "i2": "Every team of the club",
+      "i3": "Each video kept {{m}} months"
+    },
+    "cost": "Storage costs about US$0.015 per GB per month, so keeping a match costs Ndamba well under a dollar a year."
+  }
 }
