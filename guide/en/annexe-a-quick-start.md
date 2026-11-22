@@ -6,11 +6,13 @@ resume: For each profile, the first steps in Ndamba, in order, with the chapter 
 
 This appendix fits on a few pages: one card per profile, five to seven steps, and the chapter where each step is explained. Words in **bold** are the labels on screen.
 
+The shortest path, for everyone: the **Guided tour**, at /visite or in the menu (under **Me**). It loads the pro club demo and walks through the whole app in 32 steps, about fifteen minutes, lighting up on each page what to look at; you can start at any of its eleven chapters (chapter 6).
+
 For every profile, one landmark: at the top right of every page of the app, the **How does it work? Guide, chapter N** link opens the chapter that explains the page. And two rules apply to every profile before you start. Your data stays on your device, in your browser: export a backup from **Settings** before you change device (chapter 6). And a demo replaces the browser's data: if you have already created your own space, export a backup first (chapter 5).
 
 ## Investor or partner, in thirty minutes
 
-1. Open the site and click **Pro club demo**. Within seconds you are in the space of Daniel Mbarga, coach of Étoile de la Côte, a professional club invented for the demo (chapter 5).
+1. Follow the **Guided tour** (/visite) to see the whole app in fifteen minutes, or open the site and click **Pro club demo**. Within seconds you are in the space of Daniel Mbarga, coach of Étoile de la Côte, a professional club invented for the demo (chapter 5).
 2. Look at the home screen: today's session, the next match, the week (chapter 6).
 3. Open **Analysis**: the **How analysis works** block says in three steps how a match is analysed (film, put online, tag on the video). Then open the report of the last match: a Njangi Index of 67.9 out of 100 and its five sub-indices (chapters 12 and 13).
 4. Open **Mola** and type "Write the match call-up". Watch the steps appear: the call-up waits in the **To approve** tab, with **Approve and open WhatsApp** or **Cancel**. Nothing leaves the app without your consent (chapter 18).
@@ -31,9 +33,10 @@ For every profile, one landmark: at the top right of every page of the app, the 
 1. Create your space with the **Analyst** role, or open the **Pro club demo** to practise (chapters 3 and 5).
 2. Learn the tagging buttons and their keys, the same on the video and live: **Pass**, **Pass lost**, **Progressive**, **Line broken**, **Final third**, **Box**, **Shot**, **On target** and **Goal** (keys 1 to 9), then **Pins two**, **Switch**, **Loss**, **Won back 5 s** and **Ball won** (keys F, S, L, K and R), and for the opponent **Their shot** and **Their goal** (keys A and B) (chapter 12).
 3. In **Analysis**, tap **Add the video** on a match, paste the YouTube or Facebook link (or choose the file, or **Film** with the phone's camera), then **Open the studio** (chapter 12).
-4. In the studio, mark both kick-offs with **Mark here**, then tag the match, in slow motion if needed, and draw on the moments to show (chapter 14).
-5. Read the report: the Index, the five sub-indices, the comparison with the previous match (from the second analysed match on), the drills it suggests, and **Watch** on each goal to find its moment in the video (chapter 13).
-6. If the site has activated it, start the **AI match analysis** from the video file, with an access code, then follow the season in **Analysis** (chapter 14).
+4. In the studio, mark both kick-offs with **Mark here**, turn on **Place on the pitch**, then tag the match, in slow motion if needed (chapters 14 and 29).
+5. Open the report's **Maps**, **Players** and **Timeline** tabs, then the **Maps and season** page (chapter 28). Make three to five clips, draw on them and build a video session for the players (chapter 29).
+6. Read the report: the Index, the five sub-indices, the comparison with the previous match (from the second analysed match on), the drills it suggests, and **Watch** on each goal to find its moment in the video (chapter 13).
+7. If the site has activated it, start the **AI match analysis** from the video file, with an access code, then follow the season in **Analysis** (chapter 14).
 
 ## Technical director or club executive
 
@@ -41,7 +44,8 @@ For every profile, one landmark: at the top right of every page of the app, the 
 2. Read chapter 2: the shared game model, the seven intentions and the shared measure.
 3. See how a week is built around the match, with its planned load (chapter 9).
 4. Follow the season: the Index curve match after match and the season's sub-indices (chapter 14).
-5. Compare the **Coach Pro** and **Club and academy** plans on the **Premium** page (chapter 24).
+5. Open **The club**: the club's game model, the teams, the members and their rights, the video library, the recruitment profiles and the **Analytics** tab, which compares the teams (chapter 27).
+6. Compare the **Coach Pro** and **Club and academy** plans on the **Premium** page, along with video hosting (chapters 24 and 31).
 
 ## Federation or league
 
@@ -66,3 +70,12 @@ For every profile, one landmark: at the top right of every page of the app, the 
 3. Read the *Lionceaux* novel with your child, in **The books**: each chapter ends with a Ball Lesson (chapter 20).
 4. If the coach has given you a backup, restore it from **Settings**. Watch out: restoring replaces everything the browser holds, profile included; the profile becomes the coach's. So in **Settings**, put back your name and the **Parent** role, then **Save profile**. Then tap the **Your child's journey** card and pick their record (chapter 17).
 5. Read chapter 25: what Ndamba keeps, where, and what never leaves your device.
+
+## Pickup game organiser
+
+1. In the menu, under **Play**, open **Pickup games** and tap **Create a group**: name, pitch, day, time, fee, Mobile Money numbers (chapter 30).
+2. Once at the pitch, save its location in the group's **Settings**: the location check-in will accept players within 300 m.
+3. Tap **Invite** and share the link on WhatsApp. Add those who reply by message yourself with **Add a player**.
+4. Create the game with **New game** and a time when sign-ups close.
+5. On match day: check-in, **Balance automatically**, the score, the fees.
+6. At the end of the month, open **Summary** and **Export as CSV**. Players always play for free; the organiser plan has a 30-day free trial, a demonstration today.

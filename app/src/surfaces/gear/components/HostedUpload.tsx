@@ -10,7 +10,7 @@ import { db } from '../../../lib/db'
 import { useLiveQuery } from '../../../lib/hooks'
 import type { Hosting, VideoProject } from '../../../lib/types'
 import { cx, fcfa, fmtDate, money } from '../../../lib/util'
-import { clubSecondsThisMonth, fmtDuration, fmtSize, limitError, makeHosting, readVideoMeta, type FileMeta, type HostPlan } from '../hosting'
+import { clubSecondsThisMonth, fmtDuration, fmtSize, limitError, makeHosting, readVideoMeta, type FileMeta, type HostPlan, demoUrl } from '../hosting'
 
 export interface HostedResult { url: string; fileName: string; duration?: number; hosting: Hosting }
 
@@ -44,7 +44,7 @@ export function HostedUpload({ onDone }: { onDone: (r: HostedResult) => void }) 
       if (p >= 100) {
         if (timer.current) window.clearInterval(timer.current)
         timer.current = null
-        onDone({ url: URL.createObjectURL(meta.file), fileName: meta.name, duration: meta.duration ?? undefined, hosting: makeHosting(plan, meta.sizeMB) })
+        onDone({ url: demoUrl(meta.file), fileName: meta.name, duration: meta.duration ?? undefined, hosting: makeHosting(plan, meta.sizeMB) })
       }
     }, 80)
   }

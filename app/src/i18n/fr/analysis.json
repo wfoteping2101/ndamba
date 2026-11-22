@@ -287,7 +287,7 @@
     "planNoMatch": "Créez d'abord le prochain match : la semaine se planifie à rebours depuis le jour du match.",
     "planFor": "Semaine du match contre {{opp}}, {{date}}. Intention dominante : {{intention}}.",
     "players": "Contributions des joueurs",
-    "playersHint": "Les tags attribués à chaque joueur pendant le direct.",
+    "playersHint": "Les tags attribués à chaque joueur pendant le codage, sur la vidéo ou en direct.",
     "playersEmpty": "Aucun tag n'a été attribué à un joueur. Pendant le direct, touchez un numéro juste après un tag.",
     "player": "Joueur",
     "total": "Total",
@@ -320,7 +320,7 @@
     "bases": "Totaux de base",
     "extras": "Repères complémentaires",
     "extrasHint": "Hors Indice : ils demandent de coder aussi les passes et les entrées de l'adversaire.",
-    "extrasMissing": "Activez « Coder aussi l'adversaire » dans le direct pour obtenir la part de possession estimée et le field tilt.",
+    "extrasMissing": "Codez aussi l'adversaire (les codes adverses du studio vidéo, ou « Coder aussi l'adversaire » en direct) pour une part de possession comptée sur les passes, et pour le field tilt.",
     "possessionShare": "Part de possession estimée",
     "fieldTilt": "Field tilt",
     "shotsLine": "Tirs (cadrés)",
@@ -369,7 +369,8 @@
     "watch": "Revoir",
     "editOnVideo": "Corriger sur la vidéo",
     "srcVideo": "codés sur la vidéo",
-    "srcLive": "codés en direct"
+    "srcLive": "codés en direct",
+    "byClock": "selon le chrono"
   },
   "summary": {
     "headline": "{{label}} : {{total}} sur 100",
@@ -450,7 +451,7 @@
   "video": {
     "title": "Les vidéos des matchs",
     "eyebrow": "Analyse",
-    "subtitle": "Chaque vidéo est liée à un match : un lien YouTube ou Facebook, ou un fichier sur cet appareil. On y code les actions, on y dessine, et le rapport du match se remplit. {{app}} ne stocke aucune vidéo.",
+    "subtitle": "Chaque vidéo est liée à un match : un lien YouTube ou Facebook, un fichier sur cet appareil, ou une vidéo envoyée sur {{app}} (payant). On y code les actions, on y dessine, et le rapport du match se remplit. Avec un lien ou un fichier, {{app}} ne stocke aucune vidéo.",
     "new": "Ajouter une vidéo",
     "newTitle": "Ajouter la vidéo d'un match",
     "projectTitle": "Titre (facultatif)",
@@ -459,7 +460,7 @@
     "noMatch": "Aucun match (entraînement, observation)",
     "create": "Ouvrir le studio",
     "empty": "Aucune vidéo pour l'instant",
-    "emptyBody": "Filmez votre match avec un téléphone, mettez la vidéo sur YouTube ou Facebook, puis ajoutez son lien ici. {{app}} ne stocke aucune vidéo.",
+    "emptyBody": "Filmez votre match avec un téléphone, mettez la vidéo sur YouTube ou Facebook, puis ajoutez son lien ici : {{app}} ne stocke rien. Ou envoyez-la sur {{app}}, avec le prix affiché avant.",
     "file": "Fichier : {{name}}",
     "noFile": "Pas encore de vidéo",
     "delete": "Supprimer le projet",

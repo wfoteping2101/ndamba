@@ -23,12 +23,18 @@ Tout ce qui figure dans ce tableau fonctionne et peut être ouvert dans la versi
 | L'espace joueur | 3 niveaux selon l'âge (moins de 13 ans, 13 à 16 ans, 17 ans et plus), espace de performance dès 16 ans | **Espace joueur** |
 | Les formules | 5, avec un bouton **Activer (démo)** | **Premium** |
 | Les langues | 2, français et anglais, sur chaque écran | Sélecteur FR et EN |
-| Les écrans | 27 adresses dans l'application (26 écrans), 5 pages publiques et la page d'accueil de Mola | Le menu |
+| Les écrans | 36 adresses dans l'application, 8 pages publiques (dont le profil d'un joueur et les deux pages d'invitation), la page d'accueil de Mola et la visite guidée | Le menu, l'annexe C |
 | Les démos | 2 : club pro (Étoile de la Côte, 22 joueurs) et académie U13 (Lionceaux de Bonamoussadi, 15 joueurs) | Page d'accueil du site |
 | Mola | 11 actions, dont 2 qui attendent votre accord (la convocation et le calendrier) | **Mola** |
 | Le codage des matchs | 14 codes d'événement, des passes aux buts, sur 16 boutons (19 si l'on code aussi l'adversaire), placés sur la vidéo du match (lien YouTube ou Facebook, ou fichier de l'appareil) ou en direct depuis la touche | **Analyse** |
 | L'analyse IA d'un match | Une lecture des images du fichier vidéo par Claude : possession, territoire, hauteur du bloc, défense de repos, moments à revoir ; payante au match, avec un code d'accès, une fois la clé configurée par le propriétaire du site | Le studio vidéo |
 | Le lien vers le guide | Sur chaque page de l'application, le chapitre de ce guide qui l'explique | En haut à droite de chaque page |
+| Les cartes du match et la saison | Un rapport en 5 onglets (cartes des tirs, réseau de passes, chaleur, récupérations, coups de pied arrêtés, territoire ; joueurs ; chronologie ; Mola), et la lecture des dix derniers matchs | Le rapport, **Cartes et saison** |
+| Le montage vidéo | Placement des actions sur le terrain, clips manuels et automatiques, 8 outils de dessin, temps utile, export d'un clip, séances vidéo en plein écran | Le studio vidéo |
+| L'espace club | 6 onglets : équipes, membres et droits, vidéothèque, profils de recrutement avec page publique, analytique | **Le club** |
+| Les matchs entre amis | Groupes, inscriptions et liste d'attente, pointage au terrain, équipes équilibrées, cotisations, notes, niveaux et fiabilité, bilan CSV | **Matchs entre amis** |
+| Filmer et héberger | Conseils de placement, matériel conseillé, envoi payant sur Ndamba (en démonstration) | **Filmer** |
+| La visite guidée | 32 étapes sur la démo club pro, environ quinze minutes | /visite |
 | L'Indice Njangi | Un indice sur 100, 5 sous-indices sur 20, 5 niveaux de lecture | Le rapport de match |
 | Les systèmes de jeu | 14 systèmes de départ pour 5 formats, de 5 contre 5 à 11 contre 11 | Les équipes et les matchs |
 | Les données | 17 tables enregistrées sur l'appareil, avec export et restauration | **Réglages** |
@@ -39,7 +45,7 @@ Ce que cet inventaire veut dire, pour un investisseur, tient en un mot : cohére
 
 ![L'accueil de Daniel Mbarga avec le rôle de manager (Dirigeant sous son nom) dans la démo club pro : la séance du jour « Vitesse : transitions et finition » en MD-2, le prochain match contre les Rapides de Kribi et le bouton Préparer la semaine.](shot:pro-manager-home "Le même accueil sert l'entraîneur, l'analyste, le manager et la fédération.")
 
-Deux limites de l'existant méritent d'être dites ici, parce qu'elles commandent la suite. Les données restent sur chaque appareil, sans comptes ni synchronisation (chapitre 25). Et les paiements ne sont pas branchés : activer une formule est une démonstration (chapitre 24). Le rôle **Fédération ou ligue**, enfin, ouvre aujourd'hui le même accueil que celui d'un entraîneur.
+Deux limites de l'existant méritent d'être dites ici, parce qu'elles commandent la suite. Les données restent sur chaque appareil, sans comptes ni synchronisation (chapitre 25) : c'est ce qui empêche aujourd'hui le club de partager son espace, les joueurs de s'inscrire depuis leur propre téléphone aux matchs entre amis et les recruteurs d'ouvrir un profil public. Et les paiements ne sont pas branchés : activer une formule est une démonstration (chapitre 24). Le rôle **Fédération ou ligue**, enfin, ouvre aujourd'hui le même accueil que celui d'un entraîneur.
 
 ![L'accueil ouvert avec le rôle Fédération ou ligue dans la démo académie U13 : le même tableau de bord que l'éducateur, avec la séance du jour et le prochain match contre les Panthères de Deïdo.](shot:youth-federation-home "Le rôle Fédération ou ligue voit aujourd'hui l'accueil du staff ; une vue des sélections reste à construire.")
 
@@ -53,7 +59,13 @@ Les chantiers ci-dessous sont prévus. Aucun n'a de date de livraison annoncée 
 | Paiements | Encaisser les formules ; la page Premium annonce Mobile Money et cartes « bientôt » | Un prestataire de paiement | Au plus tard pendant l'étape 2 |
 | Comptes du staff | Plusieurs membres d'un staff sur la même équipe | Les comptes | Étape 2 |
 | Limites des formules | Aligner le code sur la page Premium (seules deux limites existent aujourd'hui) | Les paiements | Avec les paiements |
-| Vidéo partagée | Faire circuler extraits et dessins au sein d'un club | Les comptes, du stockage | Après les comptes |
+| Vidéo partagée | Faire circuler clips, dessins et séances au sein d'un club, selon les droits du tableau **Qui voit quoi** | Les comptes, du stockage | Après les comptes |
+| Stockage réel des vidéos hébergées | Que l'envoi sur Ndamba (Pass match, Club vidéo) envoie vraiment la vidéo, la garde douze mois et ne la montre qu'aux membres autorisés | Un stockage branché (**VIDEO_STORAGE**), le circuit d'envoi à écrire, les paiements, les comptes | Avec les comptes et les paiements |
+| Invitations entre téléphones et notifications | Qu'une invitation au club ou à un groupe rattache vraiment la personne ; prévenir d'une place proposée, rappeler un match | Les comptes | Avec les comptes |
+| Paiement Mobile Money des cotisations | Payer sa place de match entre amis dans l'application, et l'offre organisateur | Les paiements | Avec les paiements |
+| Accord parental enregistré | Garder la trace de l'accord des parents avant d'ouvrir le profil public d'un mineur | Les comptes | Avec les comptes |
+| Suivi automatique du ballon | Que la vue suive le ballon toute seule (une caméra qui suit, sans opérateur) | Le repérage du ballon sur chaque image | Après la détection des actions |
+| Suivi physique des joueurs | Distance parcourue, vitesse, sprints | Une caméra de suivi ou des capteurs, des modèles d'image | Sans date annoncée |
 | Détection automatique des actions | Que la vidéo se code en partie seule : passes, pertes, tirs repérés par l'image, puis vérifiés par l'analyste | Des modèles d'image entraînés pour le football, des matchs codés pour les entraîner | Après les références par âge |
 | Paiement de l'analyse IA dans l'application | Payer un match sans passer par un code remis à la main | Les paiements | Avec les paiements |
 | Quotas par code d'accès | Qu'un code donne droit à un nombre de matchs, et pas plus | Les comptes ou les paiements | Avec les paiements |

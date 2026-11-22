@@ -16,6 +16,10 @@ Cette annexe est la carte complète. Les adresses commencent après le nom du si
 | /revue | Revue du projet | Les quatre projets (le roman, le livre de la méthode, l'application et l'agent) présentés un par un, avec une demande de modification par section | 4 |
 | /marque | La marque | Le logo, le signe de Mola, les couleurs et les règles | 4 |
 | /bienvenue | Bienvenue | La conversation avec Mola qui crée votre espace, et les deux démonstrations | 5 |
+| /visite | Visite guidée | Charger la démo club pro et parcourir toute l'application en 32 étapes | 6 |
+| /profil/(joueur) | Profil de joueur | La page publique d'un profil de recrutement, si le club l'a ouverte (sur l'appareil du club pour l'instant) | 27 |
+| /rejoindre-club/(code) | Invitation au club | Confirmer une invitation dans l'espace club | 27 |
+| /rejoindre/(code) | Invitation à un match entre amis | Voir le groupe et le rejoindre | 30 |
 | /book/methode/ | Le Code Njangi | Le livre de méthode, chapitre par chapitre | 19 |
 | /book/tome1/ | Lionceaux, tome 1 | Le roman illustré, chapitre par chapitre | 20 |
 | /livres/methode et /livres/tome1 | (adresses courtes) | Mènent directement aux deux lecteurs ci-dessus | 19, 20 |
@@ -43,10 +47,20 @@ Cette annexe est la carte complète. Les adresses commencent après le nom du si
 | /app/matchs/(match)/modifier | Matchs | Modifier un match | 11 |
 | /app/analyse | Analyse | Comment l'analyse fonctionne, les matchs à analyser, les matchs analysés, la saison | 12, 14 |
 | /app/analyse/live/(match) | Analyse | Le codage en direct depuis le bord du terrain, sans vidéo | 12 |
-| /app/analyse/rapport/(match) | Analyse | Le rapport de match et l'Indice Njangi | 13 |
+| /app/analyse/rapport/(match) | Analyse | Le rapport de match et l'Indice Njangi ; ?onglet=cartes, joueurs, chronologie ou mola ouvre un autre onglet | 13, 28 |
 | /app/analyse/video | Analyse | Les vidéos des matchs, et le formulaire pour en ajouter une | 12, 14 |
 | /app/analyse/video?nouveau=(match) | Analyse (depuis **Ajouter la vidéo**) | Le formulaire d'ajout, déjà réglé sur ce match | 12 |
-| /app/analyse/video/(vidéo) | Analyse | Le studio vidéo, et l'analyse IA du match | 14 |
+| /app/analyse/video/(vidéo) | Analyse | Le studio vidéo : coder, placer, clips, dessins, séances, analyse IA ; onglets ?panneau=coder, clips, seances ou ia | 14, 29 |
+| /app/analyse/video/(vidéo)?list=(moments) | (depuis les cartes, les joueurs, la chronologie) | Le studio qui enchaîne une liste de moments | 28 |
+| /app/analyse/video/(vidéo)/seance | (depuis **Lancer la séance**) | La séance vidéo en plein écran | 29 |
+| /app/analyse/studio | Cartes et saison | Les dix derniers matchs : forme, moyennes, progression, cartes, comparaison | 28 |
+| /app/filmer | Filmer | Où placer la caméra, les trois façons d'amener une vidéo, le matériel | 31 |
+| /app/club | Le club | L'espace club, onglet Aperçu | 27 |
+| /app/club/equipes, /app/club/membres, /app/club/videos, /app/club/joueurs, /app/club/analytique | Le club | Les onglets Équipes, Membres, Vidéothèque, Joueurs et Analytique | 27 |
+| /app/club/joueurs/(joueur) | Le club | Le profil de recrutement d'un joueur | 27 |
+| /app/pickup | Matchs entre amis | Mes prochains matchs, mes groupes, rejoindre avec un code, l'offre organisateur | 30 |
+| /app/pickup/(groupe) | Matchs entre amis | Un groupe : matchs, membres, bilan, réglages | 30 |
+| /app/pickup/match/(match) | Matchs entre amis | Un match : places, liste d'attente, pointage, équipes, cotisations, notes | 30 |
 | /app/joueur | Espace joueur | L'espace personnel du joueur | 15 |
 | /app/joueur/lecons | Espace joueur | Les 40 Leçons du Ballon | 16 |
 | /app/joueur/carnet | Espace joueur | Le carnet du Njangi | 16 |

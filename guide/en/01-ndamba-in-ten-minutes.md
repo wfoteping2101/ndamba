@@ -26,9 +26,9 @@ The public website shows all five on one page. At the top sits the motto; beside
 
 ![The Ndamba home page, with the motto as the headline, an animated pitch and the buttons Get started with Mola, Pro club demo and U13 academy demo.](shot:site-landing "The home page: the motto, the move from book 1 and direct access to both demos.")
 
-## The app: five spaces
+## The app: six spaces
 
-The app arranges its screens in four menu groups, **Training**, **Team**, **Analysis** and **Me**, with **Home** and **Mola** at the very top. Behind those menus are five working spaces.
+The app arranges its screens in five menu groups, **Training**, **Team**, **Analysis**, **Play** and **Me**, with **Home** and **Mola** at the very top. Behind those menus are six working spaces.
 
 **Training.** The library of the method's 64 drills, each animated like a short video, with its coaching points and intentions; the session builder, which puts a session together in a few taps; and the week, which places each session relative to the next match (from MD-4 to MD-1, codes explained in chapter 2) and shows the training load.
 
@@ -36,9 +36,11 @@ The app arranges its screens in four menu groups, **Training**, **Team**, **Anal
 
 **Match.** The opponent, the system, the line-up on the pitch, a game plan for the four moments of the game and a call-up by WhatsApp or SMS, prepared in the app and sent by you.
 
-**Analysis.** The match is filmed with a phone, its video goes on YouTube or Facebook (Ndamba stores no video), then it is tagged in the studio: one tap per action, at the right moment, in slow motion if needed, and every code can be watched again. Without a video, you tag live from the touchline, with the same buttons. The Njangi Index, a score from 0 to 100, is computed as you tag. The match report breaks it down into five sub-indices and suggests next week's drills. A paid AI analysis, done by Claude on the frames of the video file, adds estimates of possession, territory and block.
+**Analysis.** The match is filmed with a phone, its video goes on YouTube or Facebook for free (hosting on Ndamba is a paid option), then it is tagged in the studio: one tap per action, at the right moment, in slow motion if needed, with its place on the pitch, and every code can be watched again. Without a video, you tag live from the touchline, with the same buttons. The Njangi Index, a score from 0 to 100, is computed as you tag. The match report breaks it down into five sub-indices and suggests next week's drills. Its tabs add the match maps (shots, passing network, heat, regains), one card per player and the timeline; the **Maps and season** page does the same reading over ten matches. The studio is also an editing tool: clips, drawings and full-screen video sessions. A paid AI analysis, done by Claude on the frames of the video, adds estimates of possession, territory and block.
 
 **The player space.** For the youngest: daily challenges, the 40 Ball Lessons, the Njangi notebook and the journey. From 16: a performance space with the week, form, load and the last match.
+
+**The club and the pitch.** The club space brings all of a club's teams together around one game model, with its members, its video library and its players' recruitment profiles. Pickup games give the organiser of the Sunday game a list with a waitlist, check-in at the pitch, balanced teams and fee tracking. The **Filming** page says where to put the camera and which gear really helps. Part X of this guide (chapters 27 to 31) covers them in detail.
 
 ![The coach's home screen in the pro club demo: the Good evening, Daniel band with 4 sessions, 303 minutes and the match at D-2, today's session Speed: transitions and finishing, the next match against Rapides de Kribi on Saturday, October 31 and the Prepare the week button.](shot:pro-home "The coach's home: today, the next match and the week, on a single screen.")
 
@@ -99,15 +101,16 @@ The result is a single vocabulary. The word "Pin" means the same thing in chapte
 At the time of writing (October 2026), here is what works and what you can open yourself:
 
 - the public website: the home page, **The books**, **Premium**, the brand page, the project review and the welcome conversation with Mola;
-- the full app, in French and English: the 64 drills, sessions, the week, the squad and player profiles, matches and call-ups, match tagging on video or live, the report and the Njangi Index, the video studio and the AI analysis, the player space, lessons, the notebook and the journey, settings;
+- the full app, in French and English: the 64 drills, sessions, the week, the squad and player profiles, matches and call-ups, match tagging on video or live, the report and the Njangi Index, the match maps and the season, the video studio and its editing (clips, drawings, sessions), the AI analysis, the club space, pickup games, the **Filming** page, the player space, lessons, the notebook and the journey, settings;
+- a guided tour of the whole app, at /visite;
 - Mola, with its **Chat** tab, its **Tasks** and its actions **To approve**;
 - both books, free to read, and the *Lionceaux Football* game;
 - two complete demos, open without an account.
 
-And here is what does not exist yet, stated plainly. There are no user accounts and no sync: your data stays in the browser on your device, and you back it up yourself by exporting a file from **Settings**. Plans and prices are shown, but payments are not connected: the **Activate (demo)** button switches on a plan without any payment, and the page says so. Staff accounts, sync, payments by Mobile Money and card, and the rest of the saga are planned; chapter 26 sets out the roadmap.
+And here is what does not exist yet, stated plainly. There are no user accounts and no sync: your data stays in the browser on your device, and you back it up yourself by exporting a file from **Settings**. Plans and prices are shown, but payments are not connected: the **Activate (demo)** button switches on a plan without any payment, and the page says so. Likewise, the paid upload of a video to Ndamba and the pickup organiser plan are demonstrations: nothing is sent or billed. Staff accounts, sync, payments by Mobile Money and card, real video storage, notifications and the rest of the saga are planned; chapter 26 sets out the roadmap.
 
 > [!INVESTOR] What you can check in ten minutes
-> Everything this chapter describes opens from the home page, with no account and nothing to install: pick **Pro club demo**, then open the report of the last match. The product is real and complete in a browser; what is missing to scale (accounts, sync, payments) is known and listed in chapter 26. This guide claims no partnership and no customer.
+> Everything this chapter describes opens from the home page, with no account and nothing to install: pick **Pro club demo**, then open the report of the last match. Simpler still, the **Guided tour** (address /visite) walks through the whole app in 32 steps, about fifteen minutes. The product is real and complete in a browser; what is missing to scale (accounts, sync, payments) is known and listed in chapter 26. This guide claims no partnership and no customer.
 
 ## The goal: lift the trophy within the next fifteen years
 

@@ -3,7 +3,7 @@ numero: 4
 slug: la-carte-de-la-plateforme
 titre: La carte de la plateforme
 partie: 1
-resume: Les deux portes de Ndamba (le site public et l'application), chaque page et son rôle, les quatre groupes du menu, la barre d'onglets du téléphone, le bouton Mola, le choix de la langue et l'endroit exact où vivent vos données.
+resume: Les deux portes de Ndamba (le site public et l'application), chaque page et son rôle, les cinq groupes du menu, la visite guidée, la barre d'onglets du téléphone, le bouton Mola, le choix de la langue et l'endroit exact où vivent vos données.
 ---
 
 Quand on découvre Ndamba, on rencontre plusieurs choses à la fois : un site, une application, un agent qui parle, deux livres et un jeu. C'est une richesse, et c'est aussi ce qui rend l'ensemble difficile à suivre au premier regard. Ce chapitre est la carte. Il ne détaille pas chaque écran (les chapitres suivants le font) : il montre où se trouve chaque chose, comment on passe de l'une à l'autre et où sont gardées vos informations.
@@ -74,9 +74,9 @@ Le lien **Retour à Ndamba**, en haut de cette page, ramène à l'accueil du sit
 
 ## L'application et ses menus
 
-Sur un ordinateur, l'application se présente avec une colonne vert foncé à gauche. En haut, le logo, puis la plaque de l'équipe active : ses deux couleurs, son nom et une ligne comme « Seniors, 11 contre 11, 4-3-3 ». Viennent **Accueil** et **Mola**, puis les menus rangés sous quatre titres : Entraînement, Équipe, Analyse et Moi.
+Sur un ordinateur, l'application se présente avec une colonne vert foncé à gauche. En haut, le logo, puis la plaque de l'équipe active : ses deux couleurs, son nom et une ligne comme « Seniors, 11 contre 11, 4-3-3 ». Viennent **Accueil** et **Mola**, puis les menus rangés sous cinq titres : Entraînement, Équipe, Analyse, Jouer et Moi.
 
-![L'application sur ordinateur : la colonne verte avec la plaque de l'équipe Étoile de la Côte et les groupes du menu, et la page Les livres à droite.](shot:pro-app-library "La colonne de gauche : la plaque de l'équipe, puis les groupes Entraînement, Équipe, Analyse et Moi.")
+![L'application sur ordinateur : la colonne verte avec la plaque de l'équipe Étoile de la Côte et les groupes du menu, et la page Les livres à droite.](shot:pro-app-library "La colonne de gauche : la plaque de l'équipe, puis les groupes Entraînement, Équipe, Analyse, Jouer et Moi.")
 
 | Groupe | Menu | Ce qu'on y fait | Chapitre |
 |---|---|---|---|
@@ -87,21 +87,27 @@ Sur un ordinateur, l'application se présente avec une colonne vert foncé à ga
 | Entraînement | **Semaine** | La semaine autour du match, de MD-4 à MD-1, et sa charge | 9 |
 | Équipe | **Équipe** | L'effectif, la fiche et le parcours de chaque joueur | 10 |
 | Équipe | **Matchs** | Le calendrier, la composition, la feuille de match | 11 |
+| Équipe | **Le club** | Toutes les équipes du club, les membres et leurs droits, la vidéothèque, les profils de recrutement, l'analytique | 27 |
 | Analyse | **Analyse** | Ajouter la vidéo d'un match et la coder, le direct sans vidéo, les rapports, la saison, l'analyse IA | 12 à 14 |
+| Analyse | **Cartes et saison** | Les dix derniers matchs : moyennes, progression, cartes de la saison, comparaison | 28 |
+| Analyse | **Filmer** | Où placer la caméra, les trois façons d'amener une vidéo, le matériel | 31 |
+| Jouer | **Matchs entre amis** | Le match du dimanche : inscriptions, liste d'attente, pointage, équipes, cotisations | 30 |
 | Moi | **Espace joueur** | Le programme du joueur, ses défis, ses leçons, son carnet | 15, 16 |
 | Moi | **Livres** | Les deux livres, sans quitter l'application | 19, 20 |
+| Moi | **Visite guidée** | Le tour de toute l'application sur la démo club pro, en 32 étapes, sur une page à part | 6 |
+| Moi | **Guide** | Ce guide, en français ou en anglais | 6 |
 | Moi | **Jeu de foot** | La page du jeu (elle s'ouvre hors de l'application) | 21 |
 | Moi | **Premium** | Les formules et l'activation de démonstration | 6, 24 |
 | Moi | **Réglages** | Profil, équipes, formule, sauvegardes | 6 |
 
-D'autres pages s'ouvrent depuis celles-ci : la fiche d'un exercice, le constructeur de séance, la fiche et le parcours d'un joueur, la page **Observer** (depuis l'effectif, un parcours, une séance ou un match), la feuille de match, le rapport, **Les vidéos des matchs** et le studio vidéo, les leçons et le carnet. Les vidéos n'ont plus de menu à elles : elles vivent dans **Analyse**, parce qu'analyser un match, c'est d'abord coder sa vidéo (chapitre 12). L'analyse en direct prend tout l'écran, sans menu, pour que rien ne gêne au bord du terrain.
+D'autres pages s'ouvrent depuis celles-ci : la fiche d'un exercice, le constructeur de séance, la fiche et le parcours d'un joueur, la page **Observer** (depuis l'effectif, un parcours, une séance ou un match), la feuille de match, le rapport et ses onglets, **Les vidéos des matchs**, le studio vidéo et la séance vidéo en plein écran, le profil de recrutement d'un joueur, la page d'un groupe et d'un match entre amis, les leçons et le carnet. Les vidéos n'ont plus de menu à elles : elles vivent dans **Analyse**, parce qu'analyser un match, c'est d'abord coder sa vidéo (chapitre 12). L'analyse en direct prend tout l'écran, sans menu, pour que rien ne gêne au bord du terrain.
 
-En haut à droite de chaque page de l'application, un lien **Comment ça marche ? Guide, chapitre N** ouvre, dans un nouvel onglet, le chapitre de ce guide qui explique la page : le chapitre 12 sur **Analyse**, le 14 sur les vidéos, le 7 sur les exercices, et ainsi de suite. Le chapitre 6 donne la liste complète.
+En haut à droite de chaque page de l'application, un lien **Comment ça marche ? Guide, chapitre N** ouvre, dans un nouvel onglet, le chapitre de ce guide qui explique la page : le chapitre 12 sur **Analyse**, le 14 sur les vidéos, le 27 sur le club, le 7 sur les exercices, et ainsi de suite. Le chapitre 6 donne la liste complète.
 
 En bas de la colonne, un bloc montre vos initiales, votre nom et votre rôle (par exemple « Entraîneur ») ; il ouvre les **Réglages**, où se lit aussi votre formule. À côté, le choix de la langue.
 
 > [!ASTUCE] Sur un petit écran d'ordinateur
-> Si votre écran est peu haut, la colonne du menu défile : les derniers liens du groupe Moi (**Livres**, **Jeu de foot**, **Premium**, **Réglages**) peuvent être cachés en bas. Faites défiler la colonne, ou touchez le bloc avec votre nom, qui ouvre directement les **Réglages**.
+> Si votre écran est peu haut, la colonne du menu défile : les derniers liens du groupe Moi (**Livres**, **Visite guidée**, **Guide**, **Jeu de foot**, **Premium**, **Réglages**) peuvent être cachés en bas. Faites défiler la colonne, ou touchez le bloc avec votre nom, qui ouvre directement les **Réglages**.
 
 ## Sur le téléphone : la barre d'onglets
 
@@ -134,7 +140,9 @@ Il n'y a pas encore de comptes ni de synchronisation. Concrètement :
 - Si vous effacez les données de navigation de ce site, votre espace disparaît avec elles. Exportez une sauvegarde avant.
 - Le bouton **Tout effacer** des Réglages supprime le profil, les équipes et tout le reste de ce navigateur, y compris les leçons marquées « J'ai compris » et « Mon regard » de l'espace joueur. Le choix de la langue, lui, est gardé.
 
-Une seule chose peut quitter l'appareil : la phrase que vous écrivez à Mola, avec quelques repères (le nom de l'équipe, sa catégorie, votre rôle, le prochain et le dernier adversaire), est proposée au serveur de Ndamba. Celui-ci ne la confie à un modèle d'intelligence artificielle, pour qu'elle soit mieux comprise, que s'il est configuré pour cela. Sinon, il décline, et le moteur de règles intégré répond seul. La conversation de la page **Bienvenue** est toujours comprise sur l'appareil. Et les messages que Mola prépare pour l'extérieur (WhatsApp, SMS, e-mail) attendent votre validation : c'est vous qui les envoyez.
+Deux exceptions, chacune décrite à sa place : l'analyse IA d'un match, payante et sur accord explicite, envoie des images fixes de la vidéo à Claude (chapitre 14) ; et l'envoi d'une vidéo sur Ndamba, payant, l'hébergera quand il sera branché (aujourd'hui, c'est une démonstration et rien ne part, chapitre 31). La position utilisée pour pointer à un match entre amis, elle, reste sur le téléphone (chapitre 30).
+
+Pour le reste, une seule chose peut quitter l'appareil : la phrase que vous écrivez à Mola, avec quelques repères (le nom de l'équipe, sa catégorie, votre rôle, le prochain et le dernier adversaire), est proposée au serveur de Ndamba. Celui-ci ne la confie à un modèle d'intelligence artificielle, pour qu'elle soit mieux comprise, que s'il est configuré pour cela. Sinon, il décline, et le moteur de règles intégré répond seul. La conversation de la page **Bienvenue** est toujours comprise sur l'appareil. Et les messages que Mola prépare pour l'extérieur (WhatsApp, SMS, e-mail) attendent votre validation : c'est vous qui les envoyez.
 
 Les comptes et la synchronisation entre appareils sont prévus ; la feuille de route du chapitre 26 les place parmi les prochaines étapes.
 
@@ -153,6 +161,10 @@ Les comptes et la synchronisation entre appareils sont prévus ; la feuille de r
 | /marque | La marque Ndamba | Le logo, le signe de Mola, les couleurs et les règles |
 | /revue | Revue du projet | Relire les quatre chantiers et demander une modification |
 | /bienvenue | Bienvenue | Créer son espace avec Mola, ou ouvrir une démo |
+| /visite | Visite guidée | Charger la démo club pro et parcourir toute l'application en 32 étapes |
+| /profil/... | Profil de joueur | La page publique d'un profil de recrutement (chapitre 27) |
+| /rejoindre-club/... | Invitation au club | Confirmer une invitation dans l'espace club |
+| /rejoindre/... | Invitation à un match entre amis | Rejoindre un groupe de matchs entre amis |
 | /football/ | Lionceaux Football | Jouer au jeu dans le navigateur |
 
 Une adresse inconnue ramène à l'accueil du site. L'annexe C donne la liste complète des adresses de l'application, page par page.

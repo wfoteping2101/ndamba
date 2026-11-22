@@ -219,7 +219,7 @@ export default function PickupGame() {
               </div>
             </div>
           ))}
-          {open && phase === 'checkin' && <p className="rounded-card bg-forest-50 px-4 py-3 text-[14px] text-forest-800">{t('checkin.adminLine', { n: going.filter((r) => r.checkedInAt).length, total: going.length, time: hhmm(new Date(w.closes)) })}</p>}
+          {open && phase === 'checkin' && <p className="rounded-card bg-forest-50 px-4 py-3 text-[14px] text-forest-800">{t('checkin.adminLine', { count: going.filter((r) => r.checkedInAt).length, total: going.length, time: hhmm(new Date(w.closes)) })}</p>}
           {open && phase === 'after' && <p className="rounded-card bg-sand px-4 py-3 text-[14px] text-ink-soft">{t('game.afterLine')}</p>}
         </div>
       )}

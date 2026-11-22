@@ -142,7 +142,7 @@ function NewProject({ open, onClose, matches, taken, preset, teamName, onCreate 
     <Modal open={open} onClose={onClose} title={t('video.newTitle')}
       footer={<>
         <button type="button" className="btn-ghost" onClick={onClose}>{t('common:actions.cancel')}</button>
-        <button type="submit" form="nj-newvideo" className="btn-primary" disabled={!ok}><Plus size={16} />{t('video.create')}</button>
+        {src.source !== 'hosted' && <button type="submit" form="nj-newvideo" className="btn-primary" disabled={!ok}><Plus size={16} />{t('video.create')}</button>}
       </>}>
       <form id="nj-newvideo" onSubmit={submit}>
         <Field label={t('video.linkedMatch')} htmlFor="nj-vmatch">
@@ -158,7 +158,7 @@ function NewProject({ open, onClose, matches, taken, preset, teamName, onCreate 
         <Field label={t('video.projectTitle')} htmlFor="nj-vtitle-new">
           <input id="nj-vtitle-new" className="input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder={auto} />
         </Field>
-        <p className="text-[13px] text-ink-muted">{t('video.newHint')}</p>
+        {(src.source === 'youtube' || src.source === 'facebook') && <p className="text-[13px] text-ink-muted">{t('video.newHint')}</p>}
       </form>
     </Modal>
   )

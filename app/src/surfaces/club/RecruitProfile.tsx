@@ -9,13 +9,14 @@ import { db } from '../../lib/db'
 import { POSITIONS } from '../../lib/formations'
 import { useDocumentTitle } from '../../lib/hooks'
 import type { Clip, Player, VideoProject } from '../../lib/types'
-import { cx, fmtClock } from '../../lib/util'
+import { cx, fmtClock, fmtDate } from '../../lib/util'
 import { EmptyState, Progress } from '../../ui'
 import { CopyButton, Switch } from './components/bits'
 import { clipKey, completeness, COMPLETENESS, currentSeason, groupBy, playerSeason, publicUrl, resolveClip, useClubData } from './components/data'
 import { HighlightReel } from './components/HighlightReel'
 import { SeasonNumbers } from './components/SeasonNumbers'
-import { setPublic, shortTeam } from './tabs/PlayersTab'
+import { shortTeam } from './tabs/PlayersTab'
+import { consentOk, mayBeMinor, usePublicSwitch } from './components/consent'
 
 const MAX_CLIPS = 8
 
@@ -38,7 +39,8 @@ function Editor({ player, data }: { player: Player; data: ReturnType<typeof useC
   const comp = completeness(player, season.coded > 0 && (season.counts.PASS_OK > 0 || Object.values(season.actions).some((v) => v > 0)))
   const r = player.recruit
   const clubOpen = data.club?.publicProfiles ?? false
-  const isPublic = !!r?.public && clubOpen
+  const isPublic = !!r?.public && clubOpen && consentOk(player)
+  const { askPublic, consentDialog } = usePublicSwitch()
   const [bio, setBio] = useState(r?.bio ?? '')
   const [height, setHeight] = useState(r?.heightCm ? String(r.heightCm) : '')
   const [number, setNumber] = useState(player.number != null ? String(player.number) : '')
@@ -85,9 +87,11 @@ function Editor({ player, data }: { player: Player; data: ReturnType<typeof useC
             {!clubOpen && <>{' '}<Link to="/app/club/joueurs" className="link">{t('recruit.clubLink')}</Link></>}
           </p>
           {isPublic && <p className="mt-1 truncate font-mono text-[12.5px] text-ink-muted">{url}</p>}
+          {mayBeMinor(player) && <p className="mt-1 text-[13px] leading-snug text-ink-muted">{r?.consentAt ? t('consent.onFile', { date: fmtDate(r.consentAt.slice(0, 10), lang, { day: 'numeric', month: 'long', year: 'numeric' }) }) : t('consent.needed')}</p>}
         </div>
-        <Switch checked={isPublic} disabled={!clubOpen} label={t('recruit.public')} onChange={(v) => setPublic(player, v)} />
+        <Switch checked={isPublic} disabled={!clubOpen} label={t('recruit.public')} onChange={(v) => askPublic(player, v)} />
       </section>
+      {consentDialog}
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-8">
         <section aria-labelledby="rp-profile" className="rounded-panel border border-line bg-paper p-5 sm:p-6">

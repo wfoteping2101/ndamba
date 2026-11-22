@@ -39,6 +39,7 @@ import { PlaylistsPanel } from './components/editor/PlaylistsPanel'
 import { AddToPlaylist, ClipPicker, ExportDialog, ShortcutsSheet } from './components/editor/Dialogs'
 import { canExport } from './components/editor/exportClip'
 import { AiMark } from './components/editor/AiMark'
+import { LIVE_BLOBS } from '../gear/hosting'
 
 const FRAME = 1 / 25
 const LOSS_WINDOW = 5
@@ -82,7 +83,9 @@ function Studio({ project }: { project: VideoProject }) {
   /* ---- where the video is ---- */
   const link = useMemo(() => (project.url && (project.source === 'youtube' || project.source === 'facebook') ? parseVideoLink(project.url) : null), [project.url, project.source])
   const isLink = !!link
-  const hosted = project.source === 'hosted' && !!project.url
+  // a demonstration upload plays from an object URL of this page session only: after a reload, reopen the file
+  const deadDemo = project.source === 'hosted' && !!project.url?.startsWith('blob:') && !LIVE_BLOBS.has(project.url)
+  const hosted = project.source === 'hosted' && !!project.url && !deadDemo
   const native = !isLink
   // a file just filmed or picked on another page arrives with the navigation (filming page): open it directly
   const location = useLocation()
@@ -893,6 +896,7 @@ function Studio({ project }: { project: VideoProject }) {
             </span>
           ) : isLink ? <span className="inline-flex items-center gap-1.5"><Link2 size={14} />{t(project.source === 'youtube' ? 'source.youtube' : 'source.facebook')}</span>
             : project.fileName && <span className="inline-flex items-center gap-1.5"><FileVideo size={14} />{t('file.name', { name: project.fileName })}</span>}
+          {deadDemo && <span className="rounded-full bg-sun-50 px-2.5 py-1 text-[12.5px] font-semibold text-sun-800 ring-1 ring-sun-100">{t('hosted.demoReopen')}</span>}
           <button type="button" onClick={() => setChanging(true)} className="link min-h-[40px]">{t('source.change')}</button>
           {!isLink && !hosted && src && <button type="button" onClick={() => fileInput.current?.click()} className="link min-h-[40px]">{t('file.other')}</button>}
         </div>
@@ -950,7 +954,7 @@ function Studio({ project }: { project: VideoProject }) {
         onSave={async (ids) => { await updatePlaylist(picking!, { clipIds: ids }); setPicking(null) }} />
       <ShortcutsSheet open={keysOpen} onClose={() => setKeysOpen(false)} />
 
-      {toast && <div key={toast.n} role="status" className="fixed left-1/2 top-[68px] z-50 max-w-[90vw] -translate-x-1/2 rounded-full lg:bottom-8 lg:top-auto bg-night-800 px-4 py-2 text-center text-sm font-semibold text-cream shadow-lift">{toast.text}</div>}
+      {toast && <div key={toast.n} role="status" className={cx('fixed left-1/2 top-[68px] z-50 w-max max-w-[min(92vw,560px)] -translate-x-1/2 bg-night-800 px-4 py-2 text-center text-sm font-semibold leading-snug text-cream shadow-lift lg:bottom-8 lg:top-auto', toast.text.length > 48 ? 'rounded-2xl' : 'rounded-full')}>{toast.text}</div>}
     </div>
   )
 }

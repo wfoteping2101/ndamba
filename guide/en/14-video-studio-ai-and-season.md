@@ -3,98 +3,91 @@ numero: 14
 slug: video-studio-ai-and-season
 titre: The video studio, the AI analysis and the season
 partie: 5
-resume: The studio where you code a match on its video (YouTube or Facebook link, file or the phone camera), the kick-offs, slow motion, clips, drawing and exports; the paid AI analysis, what it reads and what it does not do; then the Analysis page, which follows the Njangi Index across the whole season.
+resume: The studio where you code a match on its video (YouTube or Facebook link, file, the phone camera or a hosted video), the kick-offs, slow motion, coding and exports, with a pointer to chapter 29 for editing; the paid AI analysis, what it reads and what it does not do; then the Analysis page, which follows the Njangi Index across the whole season.
 ---
 
-A match tells a story; a season tells a method. In between, there is the video. It is on the video that you code the match (chapter 12), on the video that you show the players what the numbers say, and on the video that the AI analysis reads the team's shape. This chapter opens the video studio, explains the AI analysis without dressing it up, then goes back up to the **Analysis** page, where a technical director sees whether the week's work shows up on Saturday.
+A match tells a story; a season tells a method. In between, there is the video. It is on the video that you code the match (chapter 12), on the video that you show the players what the numbers say, and on the video that the AI analysis reads the team's shape. This chapter opens the video studio and explains what you need to code, details the AI analysis without dressing it up, then goes back up to the **Analysis** page, where a technical director sees whether the week's work shows up on Saturday. The studio has become a real editing tool: clips, drawings, full-screen video sessions and shortcuts have their own chapter, chapter 29.
 
 ## Open the studio
 
 The studio opens in three ways: from the **Add a match video** window (chapter 12), with **Code the video** on a match row in **Analysis**, or from the **Match videos** page. Each video has its own address: you can bookmark it.
 
-At the top: the **Analysis** link to go back, the **CSV** and **JSON** buttons (active from the first code), the title with a pencil (**Rename the project**), the linked **Match**, which you can change at any time, where the video comes from (**YouTube video**, **Facebook video** or **File: match.mp4**) and the **Change video** link.
+At the top: the **Match videos** link to go back, the **Export** button and, when a video session exists, **Start the session**. Below, the title with a pencil (**Rename the video**), the linked **Match**, which you can change at any time, where the video comes from (**On YouTube**, **On Facebook**, **File: match.mp4** or **Hosted on Ndamba**) and the **Change video** link. To the right of the video, four tabs: **Code**, **Clips**, **Sessions** and **AI**.
 
 **With a link**, the official YouTube or Facebook player shows in the studio, and the video is ready. If it cannot play, the studio says so, "This video cannot play here.", and reminds you why: a private video does not show; it must be unlisted or public on YouTube, public on Facebook, and embedding must be allowed.
+
+**With a video hosted on Ndamba** (chapter 31), the video plays at once, with no file to reopen. That is the case of the pro club demo match against Météore de Bafoussam, marked **demo**: a 94-minute 2D animation drawn from the match codes.
 
 **With a file**, the large dark area says **Open the match video** and offers three buttons:
 
 - **Choose the file**: the video saved on the device (on a computer you can also drag it onto the area);
 - **Film**: opens the phone camera; the filmed video opens in the studio straight away;
-- **Paste a link**: switch to a YouTube or Facebook video.
+- **Use a link**: switch to a YouTube or Facebook video.
 
-![The studio of a file video, before opening: the dark Open the match video area with the Choose the file, Film and Paste a link buttons, the Njangi Index at 0.0, the empty Clips card and the greyed-out codes under Tag at 00:00.](shot:pro-video-studio-empty "A file, the camera or a link: three ways to open the video.")
+![The studio of a file video, before opening: the dark Open the match video area with the Choose the file, Film and Use a link buttons, and on the right the Code tab with the codes greyed out under Code at 00:00 and the line Open the video first.](shot:pro-video-studio-empty "A file, the camera or a link: three ways to open the video.")
 
-The file is never sent over the internet, and Ndamba does not keep it: on each visit the area asks you to "Choose the video "match.mp4" again", and your codes fall back into place at the right moment. If the file you choose has another name, a banner warns that the codes will be placed on this video. **Choose another file** lets you pick a different one.
+The file is never sent over the internet, and Ndamba does not keep it: on each visit the area asks you to "Choose the video « match.mp4 » again", and your codes and clips fall back into place at the right moment. If the file you choose has another name, a banner warns that the codes will be placed on this file. **Choose another file** lets you pick a different one.
 
-![The studio on a phone: the guide link, the title Étoile de la Côte v Éclair de Garoua, the linked match, Change video, then the Open the match video area with Choose the file, Film and Paste a link, above the tab bar.](shot:m-pro-video-studio "On a phone, Film opens the camera directly.")
+![The studio on a phone: the guide link, the video title, the linked match, Change video, then the Open the match video area with Choose the file, Film and Use a link, above the tab bar.](shot:m-pro-video-studio "On a phone, Film opens the camera directly.")
 
 ## Mark the kick-offs
 
-Below the video, the **Kick-offs** strip carries two markers: **1st half** and **2nd half**. Put the video on the first-half kick-off and tap **Mark here**; do the same at the second-half kick-off. The studio says why: "Put the video on the kick-off of each half and tap "Mark here": the report's minutes will be right."
+At the top of the **Code** tab, the folding **Kick-offs** strip carries two markers: **1st half** and **2nd half**. Put the video on the kick-off of the first half and tap **Mark here**; do the same at the kick-off of the second. The studio reminds you why: "Put the video on the kick-off of each half and tap "Mark here": the report's minutes will be right." Once marked, the strip sums them up ("00:00 and 47:19" for the demo match).
 
-Without markers, Ndamba assumes the video starts at kick-off. With both markers, a code placed at 61 minutes of video, in a second half that started at 55 minutes, becomes the 52nd minute of a 2 x 45 match. If you mark a kick-off after coding, every minute is worked out again. The second-half marker also serves the AI analysis, which then swaps the direction of attack.
+With no marker, Ndamba assumes the video starts at kick-off. With both markers, a code placed at 61 minutes of video, in a second half that started at 55 minutes, becomes the 52nd minute of a 2 x 45 match. If you mark a kick-off after coding, every minute is recalculated. The second-half marker also serves the AI analysis, which then flips the direction of attack.
 
 ## Play, slow down, step frame by frame
 
-![The studio with the demo video open: a pitch seen from above with two teams of eleven dots, the timeline under the picture, the play, 5-second skip and frame-by-frame buttons, the time 00:01 of 00:24, the speeds 0.5x, 1x and 2x and the pencil, then the Kick-offs strip with the 1st half marked at 00:00.](shot:pro-video-studio "The demo video open, the first kick-off marked.")
+![The studio with the hosted video of the match against Météore de Bafoussam: at the top Export and Start the session, the Hosted on Ndamba and demo labels; the video, an animation of the match seen from above, the timeline covered in coloured marks, the play, 5-second skip and frame-by-frame controls, the time 00:00 of 1:33:53, the speeds, then Create a clip, Draw, zoom and Useful time; on the right the Code tab with the kick-offs 00:00 and 47:19 and the buttons with their counters.](shot:pro-video-studio "The demo match video, hosted on Ndamba and coded action by action.")
 
-Below the picture: **Play** and **Pause**; **Back 5 s** and **Forward 5 s**; **Previous frame** and **Next frame** (one twenty-fifth of a second); the time; the speeds **0.5x**, **1x** and **2x**; the **Draw** pencil. Above them, the timeline carries a coloured mark for each code and the golden playhead: tap it to jump to a moment.
+Under the picture: **Play** and **Pause**; **Back 5 s** and **Forward 5 s**; **Previous frame** and **Next frame** (one twenty-fifth of a second); the time; the speeds **0.5×**, **1×** and **2×**. Above, the timeline carries a coloured mark for every code, on the lane of its family, and the gold playhead: tap it to jump to a moment. Below, the row of tools: **Create a clip**, **Draw**, zoom, **Useful time** and the keyboard help (chapter 29).
 
 Not everything works everywhere, because the YouTube and Facebook players have their limits:
 
-| | File | YouTube | Facebook |
+| | File or hosted | YouTube | Facebook |
 |---|---|---|---|
 | Play, pause, 5 s skips | yes | yes | yes |
-| Speeds 0.5x and 2x | yes | yes | no |
-| Frame by frame | yes | no | no |
+| Speeds 0.5× and 2× | yes | yes | no |
+| Frame by frame, zoom | yes | no | no |
 | Drawing on the picture | yes | no | no |
 | AI analysis | yes | with the file | with the file |
 
-On a computer, the keyboard is enough: "Space play or pause, arrows 5 s, comma and period frame by frame, D draw, N note. The codes use the same keys as live tagging (1 to 9, F S L K R A B, Q W E)." On a phone, the player stays pinned at the top while you scroll down to the codes.
+On a computer, the keyboard is enough: Space to play or pause, the arrows for 5 seconds, comma and full stop for frame by frame, and the codes with the same keys as live (1 to 9, F S L K R, A B, Q W E). The ? key opens the full list of **Keyboard shortcuts**, also given in chapter 29. On a phone, the player stays stuck at the top while you scroll down to the codes.
 
 ## Code at the right moment
 
-The codes card is titled with the video time, **Tag at 00:08**, and reminds you: "Every code goes into the match report, with its moment in the video." These are the buttons of chapter 12, in five groups plus the opponent, each with its key and its counter ("×5"). A message confirms each code, for example "Pass, 00:12".
+The **Code** tab is headed with the video time, **Code at 00:08**, and reminds you: "Every code goes into the match report, with its moment." These are the buttons of chapter 12, in five groups, plus the opponent, each with its key and its counter ("×5"). A message confirms each code, for example "Pass, 00:12". Below come the **Set pieces**, counted apart and never in the Index, and the **Note** field, which takes a free sentence ("the pivot turns") with **Add the note**.
 
-The rules are those of the Njangi Code: a **Goal** adds **Shot** and **On target**; a **Ball won** within 5 seconds of video after a **Loss** or a **Pass lost** becomes a **Won back 5 s**. Below the codes, the **Note** field takes a free sentence ("the pivot turns") with **Add the note**. Notes stay in the studio; they do not go into the report.
+The **Place on the pitch** switch (key M) adds to each code the spot of the action on a mini-pitch and the player's number, and for a pass its receiver. It is optional, but it is what fills the report's maps, the **Players** tab and the recruitment profiles: chapter 29 shows the gesture, chapter 28 what it produces.
 
-The good method: let it play, tap the code at the moment of the action; if the action is unclear, pause, go back 5 seconds, switch to 0.5x. Code a whole half first with the basic buttons, then go over it again for fixation and the opponent.
+The rules are those of the Njangi Code: a **Goal** adds **Shot** and **On target**; a **Ball won** within 5 seconds of video after a **Loss** or a **Pass lost** becomes a **Won back 5 s**.
 
-![The studio after about twenty codes on the demo video: the Njangi Index at 86.0, the five sub-indices, the timeline covered in coloured marks, both kick-offs marked, the counters on the buttons and the list of 18 clips.](shot:pro-video-studio-tagged "Coded on the video: every mark on the timeline is an action you can watch again.")
+The right method: let it play and tap the code at the moment of the action; if the action is confusing, pause, go back 5 seconds, switch to 0.5×. Code a whole half with the basic buttons first, then go over it again for fixation and the opponent.
 
-On the right, the **Njangi Index** card: "Worked out from the codes placed on the video: it is the Index of the match report." It updates with every code, with the **Match report** link. In the screenshot, the Index is 86.0 after about twenty codes over 24 seconds of demo: it means nothing. An Index only makes sense over a whole match.
+![The studio after a few codes on a 24-second test video linked to the match against Avenir du Mungo: the file match-demo.mp4, the kick-offs marked at 00:00 and 00:12, the timeline with its marks, the Code tab at 00:08 and the counters on the buttons, Pass ×5, Progressive ×2, Won back 5 s ×2.](shot:pro-video-studio-tagged "Coded on the video: every mark on the timeline is an action you can watch again.")
+
+Further down the tab, the **Njangi Index** card: "Worked out from the codes placed on the video: it is the Index of the match report." It updates with every code, with the **Match report** link. On the test video of the screenshot, the Index climbs to 86 after 18 codes in 24 seconds: it means nothing. An Index only makes sense over a whole match, like the 783 actions of the match against Météore de Bafoussam.
 
 > [!WARNING] One match, one coding
-> If the match has already been coded live, the studio shows "This match already has 783 codes entered live." and the **Replace with video coding** button. Until you confirm, the codes stay inactive: mixing the two codings would count actions twice. A video with no linked match keeps its codes to itself: they feed its Index, its clips and its exports, but no report. "Link a match so this coding fills its report and counts in the season."
+> If the match has already been coded live, the studio shows a banner that counts those codes ("This match already has ... codes entered live.") and the **Replace with video coding** button. Until you confirm, the codes stay inactive: mixing the two codings would count actions twice. A video with no linked match keeps its codes to itself: they feed its Index, its clips and its exports, but no report. "Link a match so this coding fills its report and counts in the season."
 
-## Clips
+## Coded actions, clips and drawings
 
-The **Clips** card lists every code in video order: the time, the code icon, its name, the codes added automatically ("+ Shot, On target"), the note, the thumbnail of the annotated image, and the **Delete this tag** bin. Tap a clip: the video restarts 4 seconds before, so you see the action build up. Chips filter by group: **All**, **Possession**, **Danger**, **Fixation**, **Transitions**, **Opponent**, **Note**.
+At the bottom of the **Code** tab, the **Coded actions** list repeats each code in video order: the time, the code, and the players' numbers if they were placed ("Pass 11 to 8"). Pills filter by family (**All**, **Possession**, **Danger**, **Fixation**, **Transitions**, **Opponent**). Tap a row to watch the action again; the pin places it on the pitch; the bin deletes it.
 
-A clip is a marked moment, not a cut file. For the video session with the players, you replay the clips from this list. Five well-chosen clips are worth more than a whole match.
-
-## Draw on the picture
-
-Drawing works on a file (the YouTube and Facebook players do not let their picture be captured).
-
-1. Tap the **Draw** pencil (or D). The video pauses.
-2. Choose **Arrow**, **Circle** or **Freehand**, and the colour, **Gold**, **White** or **Red**.
-3. Draw with a finger or the mouse. **Undo stroke**, **Redo the stroke** and **Clear** correct it.
-4. **Save the image** merges the picture and the drawing into a thumbnail, attached to the selected code or to a new note at that moment: "Image saved on the tag at 00:12".
-
-Tap the thumbnail to enlarge it: **Download the image** saves it as a JPEG, **Remove the image** detaches it, **Go to the clip** replays the moment.
+To show a moment to the players, you make a **clip**: a stretch with a start, an end, a title and a note, in the **Clips** tab. Every coded shot and goal already has its own, made automatically. Clips are put into **video sessions**, which play full screen in front of the group. On a file or a hosted video, **Draw** opens eight tools (arrow, circle, freehand, spotlight, zone, free zone, links between players, text) and five colours; the drawn image attaches to a clip or an action, and downloads as a JPEG. All of this is detailed in chapter 29.
 
 ## Change video, change match, export
 
-**Change video** replaces the link (or switches from a file to a link) without touching the codes. The **Match** menu changes the linked match: the codes follow, and the old match's report empties. A match already linked to another video is greyed out.
+**Change video** replaces the link (or moves from a file to a link) without touching the codes. The **Match** menu changes the linked match: the codes follow, and the old match's report empties. A match already linked to another video is greyed out.
 
-The buttons at the top download the work to the device, sending nothing: **CSV**, one row per code, for a spreadsheet; **JSON**, the full project, the Index, the codes, the images and the AI analysis result if there is one. That is the format to keep or to pass on to an analyst.
+**Export** opens a window that downloads the work to the device, without sending anything: **Coded actions (CSV)**, one line per code, for a spreadsheet; **Coded actions (JSON)**, all the analysis data with the Index; and **Export the clips (JSON)**. That is the format to keep or to pass on to an analyst.
 
 ## The AI match analysis
 
-Below the clips, the **AI match analysis** card is upfront: "Paid: $2.99 per match. Claude reads a frame every few seconds of the video file."
+The **AI** tab carries the **AI match analysis** card, which is upfront: "Paid: $2.99 per match. Claude reads a frame every few seconds of the video file."
 
-![The AI match analysis card: Our shirts white and gold, Their shirts red, the direction of attack The right selected, one frame every 6 s with the estimated number of frames, the empty Access code field, the unticked agreement box for players and parents, and the Start the AI analysis button still greyed out.](shot:pro-video-ai "The AI analysis takes four choices, then asks for a code and the players' agreement.")
+![The AI match analysis card: the prompt to open the match file first with the Open the match file button, Our shirts white and gold, Their shirts red, the direction of attack The right selected, one frame every 6 s with the estimated number of frames, the empty Access code field and the unticked agreement box for players and parents.](shot:pro-video-ai "The AI analysis takes four choices, then asks for a code and the players' agreement.")
 
 **What it reads.** Claude, Anthropic's AI, does not watch the video continuously. The browser takes a frame from the file every 4, 6 or 10 seconds, shrinks it to 960 pixels wide, and sends the frames in batches of twelve. For each frame, Claude says who has the ball (us, them, contested, dead ball, or unreadable), which third it is in, the height of our block when the opponent has the ball, and how many of our players are behind the ball when we have it. A blurred or badly framed frame is declared unreadable rather than guessed.
 
@@ -109,7 +102,7 @@ Below the clips, the **AI match analysis** card is upfront: "Paid: $2.99 per mat
 
 **What it does not do.** It does not count passes, losses or shots: frames every 6 seconds do not see every action. It does not recognise players. It does not touch the Njangi Index, which always comes from the coding. The card says so under the results: "Estimates made on frames, not a count of every action: check them on the video."
 
-**Why a file and not the link?** YouTube and Facebook do not allow downloading their videos, and their players do not let their picture be copied. So the AI reads the file, opened on the device: the phone's original recording, or the one you get back from YouTube Studio. For a link video, the card offers **Open the match file**; the opened file serves the AI, while playback carries on through the link.
+**Why a file and not the link?** YouTube and Facebook do not allow downloading their videos, and their players do not let their picture be copied. So the AI reads the file, opened on the device: the phone's original recording, or the one you get back from YouTube Studio. For a link video, the card offers **Open the match file**; the opened file serves the AI, while playback carries on through the link. A video hosted on Ndamba, on the other hand, is read directly: that is one of the advantages of the paid upload (chapter 31).
 
 **The settings.**
 
@@ -128,9 +121,9 @@ Below the clips, the **AI match analysis** card is upfront: "Paid: $2.99 per mat
 
 ## Match videos
 
-![The Match videos page: the card of the Étoile de la Côte v Avenir du Mungo video, with its dial, the linked match of Oct 17, the file, the duration and the number of tags, and the A match video in three steps panel.](shot:pro-videos-list "The list of videos: one card per match.")
+![The Match videos page: the Add a video button, then the cards of the demo videos, including the match against Météore de Bafoussam hosted on Ndamba with its dial at 68, a test video against Avenir du Mungo, two opponent scouting videos, a U17 session and matches of the U19s and the women, each with its source, length and number of tags.](shot:pro-videos-list "The list of videos: one card per video, across all teams.")
 
-From **Analysis**, **All videos** opens **Match videos**: "Each video is linked to a match: a YouTube or Facebook link, or a file on this device. You code the actions there, you draw there, and the match report fills in. Ndamba stores no video." Each card shows the Index dial, the title, the match, the source, the duration, the codes and the **AI** chip if the analysis has run. The whole card opens the studio. **Delete the project** asks for confirmation, "Delete this project and its tags?"; the video itself, on YouTube, Facebook or the device, is not touched. The **Add a video** button opens the window of chapter 12.
+From **Analysis**, **All videos** opens **Match videos**: "Each video is linked to a match: a YouTube or Facebook link, or a file on this device. You code the actions there, you draw there, and the match report fills in. Ndamba stores no video." Each card shows the Index dial, the title, the match, the source, the duration, the codes and the **AI** chip if the analysis has run. A video uploaded to Ndamba carries the label "Hosted on Ndamba", followed by "(demo)" until real uploads are connected; the page's introduction, written before hosting existed, still says that Ndamba stores no video. The whole card opens the studio. **Delete the project** asks for confirmation, "Delete this project and its tags?"; the video itself, on YouTube, Facebook or the device, is not touched. The club space's video library (chapter 27) shows the same videos with filters. The **Add a video** button opens the window of chapter 12.
 
 ## The Analysis page: the season at a glance
 
@@ -163,4 +156,4 @@ The **The Index match after match** card draws the season curve. With a single a
 If no team exists yet, the page first asks you to **Create your team first**: a **Team name**, an **Age group**, a **Format**, then **Create the team**.
 
 > [!INVESTOR] A video that costs nothing to carry
-> Ndamba hosts no video: a YouTube or Facebook link, or a file that stays on the device. That means zero storage cost for the platform, no mobile data spent uploading a match, and no image of a child hosted by Ndamba. Only the AI analysis, paid and with explicit agreement, sends still frames to Claude, and nothing else. Automatic detection of actions and sharing between staff members are on the roadmap (chapter 26).
+> By default, Ndamba hosts no video: a YouTube or Facebook link, or a file that stays on the device. That means zero storage cost for the platform, no mobile data spent uploading a match, and no image of a child hosted by Ndamba. Hosting on Ndamba is a paid option, with a known and small storage cost, a demonstration today (chapter 31). The AI analysis, paid and with explicit agreement, sends still frames to Claude, and nothing else. Automatic detection of actions and sharing between staff members are on the roadmap (chapter 26).

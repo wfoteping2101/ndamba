@@ -256,7 +256,8 @@
     "far": "You are {{dist}} from the pitch (maximum {{max}} m). Get closer, or ask the organiser to check you in.",
     "geoError": "Location unavailable. Ask the organiser to check you in.",
     "noGeo": "This browser does not give a location. Ask the organiser to check you in.",
-    "adminLine": "Check-in open until {{time}}: {{n}} of {{total}} checked in. Tap “Check in” for anyone who could not do it."
+    "adminLine_one": "Check-in open until {{time}}: {{count}} of {{total}} checked in. Tap “Check in” for anyone who could not do it.",
+    "adminLine_other": "Check-in open until {{time}}: {{count}} of {{total}} checked in. Tap “Check in” for anyone who could not do it."
   },
   "offer": {
     "until": "Spot offered to {{name}} until {{time}}.",

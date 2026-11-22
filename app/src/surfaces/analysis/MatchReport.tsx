@@ -15,6 +15,7 @@ import {
 } from '../../lib/njangi'
 import { EmptyState, Tabs } from '../../ui'
 import type { VizTab } from './components/viz/ReportViz'
+import { possession } from '../../lib/viz'
 import { buildSummary, type NjangiSummary } from './components/summary'
 import { CompareBars, NjangiGauge, SubBar, TimelineChart } from './components/charts'
 import { defFor, fmtPct, minuteLabel } from './components/codes'
@@ -450,6 +451,8 @@ function DrillLink({ id, sub }: { id: string; sub: SubKey }) {
 /* ------------------------------------------------------------------ key counts */
 
 function KeyCounts({ result, extras, oppShots, events }: { result: NjangiResult; extras: ReturnType<typeof njangiExtras>; oppShots: number; events: MatchEvent[] }) {
+  // the same estimate as the maps tab: from the passes when the opponent's are coded, otherwise from the clock of the coded sequences
+  const poss = useMemo(() => possession(events), [events])
   const { t, lang } = useT('analysis')
   const c = result.counts
   const pct = (v: number) => fmtPct(v, lang)
@@ -479,11 +482,11 @@ function KeyCounts({ result, extras, oppShots, events }: { result: NjangiResult;
       <h3 className="mb-1 mt-6 font-sans text-[14px] font-semibold tracking-normal text-ink" style={{ fontStretch: '100%' }}>{t('report.extras')}</h3>
       <p className="mb-2 text-[12.5px] text-ink-faint">{t('report.extrasHint')}</p>
       <dl className="divide-y divide-line/70 text-[14px]">
-        <Row k={t('report.possessionShare')} v={extras.possessionShare == null ? '-' : fmtPct(extras.possessionShare, lang, 1)} />
+        <Row k={t('report.possessionShare')} v={poss.share == null ? '-' : fmtPct(poss.share, lang, 1) + (poss.method === 'time' ? ` (${t('report.byClock')})` : '')} />
         <Row k={t('report.fieldTilt')} v={extras.fieldTilt == null ? '-' : fmtPct(extras.fieldTilt, lang, 1)} />
         <Row k={t('report.theirShots')} v={`${oppShots} (${oppOn})`} />
       </dl>
-      {(extras.possessionShare == null || extras.fieldTilt == null) && <p className="mt-2 text-[12.5px] text-ink-faint">{t('report.extrasMissing')}</p>}
+      {(poss.method !== 'passes' || extras.fieldTilt == null) && <p className="mt-2 text-[12.5px] text-ink-faint">{t('report.extrasMissing')}</p>}
     </section>
   )
 }

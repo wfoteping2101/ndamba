@@ -3,7 +3,7 @@ numero: 6
 slug: home-navigation-settings
 titre: Home, navigation and settings
 partie: 2
-resume: A coach's home screen block by block, the Mola button and its news bubble, the active team and how to switch it, every panel of Settings (profile, teams, plan, backups, erasing) and the Premium page with its demo activation.
+resume: A coach's home screen block by block, the Mola button and its news bubble, the active team and how to switch it, the guided tour, every panel of Settings (profile, teams, plan, backups, erasing) and the Premium page with its demo activation.
 ---
 
 A coach has no time to go looking for things. When they open Ndamba, in the morning or an hour before the session, they need to see at once what is on today, when the next match is played, what the week looks like and what the last match taught. The home screen is built for exactly that, like the dressing-room door where the schedule is pinned up. This chapter walks through it block by block, then covers the Mola button, switching team, **Settings** and the **Premium** page.
@@ -98,6 +98,11 @@ At the top right of every page of the app, a small link preceded by a question m
 | **Analysis** and live tagging | 12 |
 | A match report | 13 |
 | **Match videos** and the video studio | 14 |
+| **The club**, its tabs and the recruitment profiles | 27 |
+| **Maps and season** | 28 |
+| The full-screen video session | 29 |
+| **Pickup games**, a group, a game | 30 |
+| **Filming** | 31 |
 | **Player space** | 15 (16 for the lessons, the notebook and the journey) |
 | **Books** | 19 |
 | **Premium** | 24 |
@@ -112,6 +117,22 @@ To switch team:
 1. Tap the team plate at the top of the column (its tooltip reads **Switch team**), or open **Settings**.
 2. In the **Teams** panel, find the team you want.
 3. Tap **Make active**. The message "... is now the active team." confirms it, and the whole app switches to that team.
+
+In the club space, the **Teams** tab does the same in one tap: **Open** makes the team active and opens its page, **Matches** makes it active and opens its matches (chapter 27).
+
+## The guided tour
+
+To discover the whole app without typing anything, open the **Guided tour**: in the menu, under **Me**, or directly at /visite. The page announces the route: "Take the full tour of the app on a real demo club: Étoile de la Côte, a Ligue 1 club in Douala, with its four teams, its members, a match coded on its video and pickup games. Each step opens the right page and lights up what to look at."
+
+![The start page of the guided tour: the Guided tour title, the introduction, the Start the tour button, the line 32 steps, about 15 minutes, then the Start wherever you like list with the chapters of the tour.](shot:tour-start "The guided tour: 32 steps, about fifteen minutes.")
+
+1. Tap **Start the tour**. The pro club demo loads in this browser. If the browser already holds your own data, the page warns that the demo replaces it and advises exporting it first from **Settings**; **Replace with the demo and start** confirms.
+2. Each step opens a page and lights up the element to look at, with a card that explains it. The card shows the counter ("5 / 32"), **Previous step**, **Next** and the **Leave the tour** cross. A **Go to chapter** menu jumps to another part.
+3. You can tap anything during the tour: the card follows you. On the last step, **Finish**.
+
+![A step of the guided tour on the report's shot map: the step card with the chapter The report, the maps and the season, the counter 22 / 32, the cross, the title The maps, its text, a progress bar, the chapter menu, the back arrow and the Next button.](shot:tour-step "Each step lights up what to look at.")
+
+The **Start wherever you like** list gives eleven chapters, each with its number of steps: Welcome, Training, The team and the matches, The club, Analysing a match on video, Editing and the video session, The report, the maps and the season, Filming and hosting, Pickup games, Mola, The plans. "Nothing is sent": the tour only loads the demo and opens pages.
 
 ## Settings in detail
 

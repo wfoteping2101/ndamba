@@ -9,6 +9,7 @@ import type { MatchEvent, Player, Team } from '../../../lib/types'
 import { cx } from '../../../lib/util'
 import { Progress, Segmented } from '../../../ui'
 import { Switch } from '../components/bits'
+import { consentOk, usePublicSwitch } from '../components/consent'
 import { completeness, COMPLETENESS, type ClubData } from '../components/data'
 
 /** A team's name inside its club: « U19 » rather than « Étoile de la Côte U19 ». */
@@ -16,10 +17,6 @@ export function shortTeam(team: Team, clubName?: string) {
   if (!clubName || !team.name.startsWith(clubName)) return team.name
   const rest = team.name.slice(clubName.length).replace(/^[\s,.-]+/, '')
   return rest ? rest[0].toUpperCase() + rest.slice(1) : team.ageGroup
-}
-
-export async function setPublic(p: Player, on: boolean) {
-  await db.players.update(p.id, { recruit: { ...(p.recruit ?? {}), public: on } })
 }
 
 export function PlayersTab({ data, eventsByMatch }: { data: ClubData; eventsByMatch: Map<string, MatchEvent[]> }) {
@@ -36,10 +33,11 @@ export function PlayersTab({ data, eventsByMatch }: { data: ClubData; eventsByMa
     return s
   }, [data.matches, eventsByMatch])
   const needle = q.trim().toLocaleLowerCase(lang)
+  const { askPublic, consentDialog } = usePublicSwitch()
   const list = useMemo(() => data.players
     .filter((p) => teamsById.has(p.teamId) && (team === 'all' || p.teamId === team) && (!needle || p.name.toLocaleLowerCase(lang).includes(needle)))
     .sort((a, b) => (teamOrder.get(a.teamId) ?? 0) - (teamOrder.get(b.teamId) ?? 0) || (a.number ?? 99) - (b.number ?? 99)), [data.players, team, needle, teamOrder, teamsById, lang])
-  const publicCount = data.players.filter((p) => p.recruit?.public).length
+  const publicCount = data.players.filter((p) => p.recruit?.public && consentOk(p)).length
   // all teams and no search: one block per team, in the club's team order
   const grouped = team === 'all' && !needle
   const groups: [Team | undefined, Player[]][] = grouped
@@ -81,7 +79,7 @@ export function PlayersTab({ data, eventsByMatch }: { data: ClubData; eventsByMa
                 {players.map((p) => {
                 const c = completeness(p, withIndice.has(p.id))
                 const tm = teamsById.get(p.teamId)
-                const on = !!p.recruit?.public
+                const on = !!p.recruit?.public && consentOk(p)
                 return (
                   <li key={p.id} className="flex items-center gap-2 pr-2 sm:gap-3 sm:pr-3">
                     <Link to={`/app/club/joueurs/${p.id}`} className="flex min-w-0 flex-1 items-center gap-3 py-3 pl-4 transition hover:bg-sand/40 sm:pl-5">
@@ -101,7 +99,7 @@ export function PlayersTab({ data, eventsByMatch }: { data: ClubData; eventsByMa
                       <ChevronRight size={18} className="hidden shrink-0 text-ink-faint md:block" aria-hidden="true" />
                     </Link>
                     <div className="flex shrink-0 flex-col items-center">
-                      <Switch checked={on && club.publicProfiles} disabled={!club.publicProfiles} label={t('players.publicFor', { name: p.name })} onChange={(v) => setPublic(p, v)} />
+                      <Switch checked={on && club.publicProfiles} disabled={!club.publicProfiles} label={t('players.publicFor', { name: p.name })} onChange={(v) => askPublic(p, v)} />
                       <span className={cx('-mt-1 text-[11px] font-semibold', on && club.publicProfiles ? 'text-forest-700' : 'text-ink-faint')}>{on && club.publicProfiles ? t('players.public') : t('players.private')}</span>
                     </div>
                   </li>
@@ -113,6 +111,7 @@ export function PlayersTab({ data, eventsByMatch }: { data: ClubData; eventsByMa
         </div>
       )}
       <p className="mt-3 text-[13px] leading-relaxed text-ink-muted">{t('players.note')}</p>
+      {consentDialog}
     </div>
   )
 }

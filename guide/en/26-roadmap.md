@@ -23,12 +23,18 @@ Everything in this table works and can be opened in the current version (Ndamba 
 | The player space | 3 levels by age (under 13, 13 to 16, 17 and over), with a performance space from 16 | **Player space** |
 | Plans | 5, each with an **Activate (demo)** button | **Premium** |
 | Languages | 2, French and English, on every screen | The FR and EN switch |
-| Screens | 27 addresses in the app (26 screens), 5 public pages and Mola's welcome page | The menu |
+| Screens | 36 addresses in the app, 8 public pages (including a player's profile and the two invitation pages), Mola's welcome page and the guided tour | The menu, appendix C |
 | Demos | 2: pro club (Étoile de la Côte, 22 players) and U13 academy (Lionceaux de Bonamoussadi, 15 players) | The site's home page |
 | Mola | 11 actions, 2 of which wait for your approval (the call-up and the calendar) | **Mola** |
 | Match tagging | 14 event codes, from passes to goals, on 16 buttons (19 when you tag the opponent too), placed on the match video (a YouTube or Facebook link, or a file on the device) or live from the touchline | **Analysis** |
 | AI match analysis | A reading of the video file's frames by Claude: possession, territory, block height, rest defence, moments to watch again; paid per match, with an access code, once the site owner has set the key | The video studio |
 | The guide link | On every page of the app, the chapter of this guide that explains it | Top right of every page |
+| Match maps and the season | A report in 5 tabs (maps of shots, passing network, heat, regains, set pieces, territory; players; timeline; Mola), and the reading of the last ten matches | The report, **Maps and season** |
+| Video editing | Placing actions on the pitch, manual and automatic clips, 8 drawing tools, useful time, clip export, full-screen video sessions | The video studio |
+| The club space | 6 tabs: teams, members and rights, video library, recruitment profiles with a public page, analytics | **The club** |
+| Pickup games | Groups, sign-ups and waitlist, check-in at the pitch, balanced teams, fees, ratings, tiers and reliability, CSV summary | **Pickup games** |
+| Filming and hosting | Placement advice, recommended gear, paid upload to Ndamba (as a demonstration) | **Filming** |
+| The guided tour | 32 steps on the pro club demo, about fifteen minutes | /visite |
 | The Njangi Index | One index out of 100, 5 sub-indices out of 20, 5 reading bands | The match report |
 | Formations | 14 starting systems for 5 formats, from 5-a-side to 11-a-side | Teams and matches |
 | Data | 17 tables saved on the device, with export and restore | **Settings** |
@@ -39,7 +45,7 @@ What this inventory means for an investor fits in one word: coherence. The piece
 
 ![Daniel Mbarga's home screen with the manager role (Club manager under his name) in the pro club demo: today's MD-2 session "Speed: transitions and finishing", the next match against the Rapides de Kribi and the Prepare the week button.](shot:pro-manager-home "The same home screen serves the coach, the analyst, the manager and the federation.")
 
-Two limits of what exists need to be stated here, because they drive what comes next. Data stays on each device, with no accounts and no sync (chapter 25). And payments are not connected: activating a plan is a demonstration (chapter 24). Finally, the **Federation or league** role currently opens the same home screen as a coach.
+Two limits of what exists need to be stated here, because they drive what comes next. Data stays on each device, with no accounts and no sync (chapter 25): that is what stops a club from sharing its space today, pickup players from signing up from their own phone and scouts from opening a public profile. And payments are not connected: activating a plan is a demonstration (chapter 24). Finally, the **Federation or league** role currently opens the same home screen as a coach.
 
 ![The home screen opened with the Federation or league role in the U13 academy demo: the same dashboard as the coach, with today's session and the next match against the Panthères de Deïdo.](shot:youth-federation-home "The Federation or league role sees the staff home screen today; a national teams view is still to be built.")
 
@@ -53,7 +59,13 @@ The work below is planned. None of it has an announced delivery date; where a ye
 | Payments | Collect plan revenue; the Premium page announces Mobile Money and cards as "coming soon" | A payment provider | During stage 2 at the latest |
 | Staff accounts | Several staff members on the same team | Accounts | Stage 2 |
 | Plan limits | Align the code with the Premium page (only two limits exist today) | Payments | With payments |
-| Shared video | Circulate clips and drawings within a club | Accounts, storage | After accounts |
+| Shared video | Circulate clips, drawings and sessions within a club, following the **Who sees what** table | Accounts, storage | After accounts |
+| Real storage for hosted videos | Make uploading to Ndamba (Match pass, Club video) really send the video, keep it twelve months and show it only to authorised members | Connected storage (**VIDEO_STORAGE**), the upload path still to write, payments, accounts | With accounts and payments |
+| Invitations between phones and notifications | Make a club or group invitation really attach the person; warn of an offered spot, remind of a game | Accounts | With accounts |
+| Mobile Money payment of fees | Pay for a pickup spot in the app, and the organiser plan | Payments | With payments |
+| Recorded parental consent | Keep a record of the parents' consent before a minor's public profile is opened | Accounts | With accounts |
+| Automatic ball following | Let the view follow the ball on its own (a camera that follows, with no operator) | Locating the ball on every frame | After action detection |
+| Physical tracking of players | Distance covered, speed, sprints | A tracking camera or sensors, image models | No date announced |
 | Automatic event detection | Let the video tag itself in part: passes, losses, shots spotted from the image, then checked by the analyst | Image models trained for football, tagged matches to train them | After the age benchmarks |
 | In-app payment for the AI analysis | Pay for a match without going through a code handed over manually | Payments | With payments |
 | Quotas per access code | Let a code cover a number of matches, and no more | Accounts or payments | With payments |

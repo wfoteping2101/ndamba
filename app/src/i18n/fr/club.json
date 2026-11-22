@@ -379,7 +379,7 @@
     "clips": "Extraits",
     "season": "Saison {{season}}",
     "seasonHint": "Chiffres tirés des matchs codés par le club avec la méthode Njangi.",
-    "model": "Le modèle de jeu de {{club}}",
+    "model": "Le modèle de jeu du club {{club}}",
     "deviceNote": "Ce lien fonctionne sur cet appareil seulement, jusqu'à l'arrivée des comptes Ndamba. Les données viennent du club et ne sont pas vérifiées par Ndamba."
   },
   "join": {
@@ -390,5 +390,14 @@
     "unknownTitle": "Invitation introuvable sur cet appareil",
     "unknown": "Cette invitation a été créée sur l'appareil d'un club. Tant que les comptes ne sont pas en place, elle ne s'ouvre que là. Demandez au responsable du club de vous montrer l'espace du club.",
     "home": "Découvrir Ndamba"
+  },
+  "consent": {
+    "title": "Accord pour un profil public",
+    "body": "{{name}} (naissance en {{year}}) a peut-être moins de 18 ans.",
+    "shows": "Un profil public montre son nom, son année de naissance, son poste, sa présentation et ses clips à toute personne qui a le lien. Ne l'ouvrez que si cela sert vraiment son projet (académie, bourse, club).",
+    "check": "Un parent ou un tuteur a donné son accord par écrit, ou le joueur est majeur et a donné le sien. Le club garde cet accord.",
+    "confirm": "Rendre public",
+    "onFile": "Accord noté le {{date}}.",
+    "needed": "Joueur peut-être mineur : l'accord d'un parent ou d'un tuteur sera demandé avant de rendre le profil public."
   }
 }

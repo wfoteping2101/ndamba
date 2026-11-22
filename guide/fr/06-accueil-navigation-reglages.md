@@ -3,7 +3,7 @@ numero: 6
 slug: accueil-navigation-reglages
 titre: L'accueil, la navigation et les réglages
 partie: 2
-resume: L'écran d'accueil d'un entraîneur bloc par bloc, le bouton Mola et sa bulle de nouvelles, l'équipe active et le changement d'équipe, chaque panneau des Réglages (profil, équipes, formule, sauvegardes, effacement) et la page Premium avec son activation de démonstration.
+resume: L'écran d'accueil d'un entraîneur bloc par bloc, le bouton Mola et sa bulle de nouvelles, l'équipe active et le changement d'équipe, la visite guidée, chaque panneau des Réglages (profil, équipes, formule, sauvegardes, effacement) et la page Premium avec son activation de démonstration.
 ---
 
 Un entraîneur n'a pas le temps de chercher. Quand il ouvre Ndamba, le matin ou une heure avant la séance, il doit voir tout de suite ce qu'on fait aujourd'hui, quand se joue le prochain match, à quoi ressemble la semaine et ce que le dernier match a appris. L'écran d'accueil est construit pour cela, comme la porte du vestiaire où l'on affiche le programme. Ce chapitre le décrit bloc par bloc, puis présente le bouton Mola, le changement d'équipe, les **Réglages** et la page **Premium**.
@@ -98,6 +98,11 @@ En haut à droite de chaque page de l'application, un petit lien précédé d'un
 | **Analyse** et le direct | 12 |
 | Le rapport d'un match | 13 |
 | **Les vidéos des matchs** et le studio vidéo | 14 |
+| **Le club**, ses onglets et les profils de recrutement | 27 |
+| **Cartes et saison** | 28 |
+| La séance vidéo en plein écran | 29 |
+| **Matchs entre amis**, un groupe, un match | 30 |
+| **Filmer** | 31 |
 | **Espace joueur** | 15 (16 pour les leçons, le carnet et le parcours) |
 | **Livres** | 19 |
 | **Premium** | 24 |
@@ -112,6 +117,22 @@ Pour changer d'équipe :
 1. Touchez la plaque de l'équipe en haut de la colonne (son info-bulle dit **Changer d'équipe**), ou ouvrez **Réglages**.
 2. Dans le panneau **Équipes**, repérez l'équipe voulue.
 3. Touchez **Rendre active**. Le message « ... est maintenant l'équipe active. » confirme, et toute l'application bascule sur elle.
+
+Dans l'espace club, l'onglet **Équipes** fait la même chose en un geste : **Ouvrir** rend l'équipe active et ouvre sa page, **Matchs** la rend active et ouvre ses matchs (chapitre 27).
+
+## La visite guidée
+
+Pour découvrir toute l'application sans rien saisir, ouvrez la **Visite guidée** : dans le menu, groupe **Moi**, ou directement à l'adresse /visite. La page annonce le parcours : « Faites le tour complet de l'application sur un vrai club de démonstration : Étoile de la Côte, club de Ligue 1 à Douala, avec ses quatre équipes, ses membres, un match codé sur sa vidéo et des matchs entre amis. Chaque étape ouvre la bonne page et éclaire ce qu'il faut regarder. »
+
+![La page de départ de la visite guidée : le titre Visite guidée, le texte d'introduction, le bouton Commencer la visite, la mention 32 étapes, environ 15 minutes, puis la liste Commencer où vous voulez avec les chapitres de la visite.](shot:tour-start "La visite guidée : 32 étapes, environ quinze minutes.")
+
+1. Touchez **Commencer la visite**. La démo club pro se charge dans ce navigateur. Si le navigateur contient déjà vos propres données, la page prévient que la démo les remplace et conseille de les exporter d'abord depuis **Réglages** ; **Remplacer par la démo et commencer** confirme.
+2. Chaque étape ouvre une page et éclaire l'élément à regarder, avec une carte qui l'explique. La carte porte le compteur (« 5 / 32 »), **Étape précédente**, **Suivant** et la croix **Quitter la visite**. Un menu **Aller au chapitre** saute à une autre partie.
+3. Vous pouvez toucher n'importe quoi pendant la visite : la carte vous suit. À la dernière étape, **Terminer**.
+
+![Une étape de la visite guidée sur la carte des tirs du rapport : la carte de l'étape avec le chapitre Le rapport, les cartes et la saison, le compteur 22 / 32, la croix, le titre Les cartes, son texte, une barre de progression, le menu des chapitres, la flèche de retour et le bouton Suivant.](shot:tour-step "Chaque étape éclaire ce qu'il faut regarder.")
+
+La liste **Commencer où vous voulez** donne onze chapitres, chacun avec son nombre d'étapes : Bienvenue, Entraîner, L'équipe et les matchs, Le club, Analyser un match sur vidéo, Le montage et la séance vidéo, Le rapport, les cartes et la saison, Filmer et héberger, Matchs entre amis, Mola, Les offres. « Rien n'est envoyé » : la visite ne fait que charger la démo et ouvrir des pages.
 
 ## Les Réglages en détail
 

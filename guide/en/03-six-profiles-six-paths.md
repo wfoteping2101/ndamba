@@ -49,9 +49,10 @@ Further down come **This week** (the seven days, with sessions and the match, an
 ### The analyst's path
 
 1. Choose **Analyst** and give your club; create or activate the team you follow.
-2. Have the match filmed, put the video on YouTube as "unlisted" or on Facebook, then, in **Analysis**, tap **Add the video** on that match and tag it in the studio, marking both kick-offs. Without a video, open **Live analysis** from the quick actions, or **Live** on the match card.
+2. Have the match filmed, put the video on YouTube as "unlisted" or on Facebook, then, in **Analysis**, tap **Add the video** on that match and tag it in the studio, marking both kick-offs and turning on **Place on the pitch** to fill the maps. Without a video, open **Live analysis** from the quick actions, or **Live** on the match card.
 3. Open the report: **Copy as text** to send it to the staff, **Print** for the team talk, and **Watch** on each goal to find its moment in the video.
-4. In the studio, draw on the moments to show the players; if the site has activated it, the AI analysis also suggests moments to watch again.
+4. Read the report's **Maps**, **Players** and **Timeline** tabs, then the **Maps and season** page (chapter 28).
+5. In the studio, make three to five clips, draw on the ones to fix and build a video session for the players (chapter 29); if the site has activated it, the AI analysis also suggests moments to watch again.
 
 ### The manager's or technical director's path
 
@@ -59,6 +60,7 @@ Further down come **This week** (the seven days, with sessions and the match, an
 2. In **Settings**, under **Teams**, create one team per age group with **New team**.
 3. To move from one team to another, tap the team card at the top of the menu: it opens **Settings**, where **Make active** picks the team shown everywhere. The **Team** page also offers a selector as soon as there are several teams.
 4. For each team, follow the week and the Index of the last match: the same words and the same drills from U8 to the first team.
+5. Open **The club** (under **Team**): write the club's game model, invite the staff, compare the teams in **Analytics** and move from one team to another with **Open** (chapter 27).
 
 ### The federation's or league's path
 
@@ -135,7 +137,7 @@ The books and the 64 drills are free for everyone, with no time limit. Premium p
 | Club and academy | $49 a month (about 29,400 FCFA) | The manager and the technical director: every age group |
 | Federation | On quote | Federations and leagues |
 
-One option can be added to any plan: the **AI match analysis**, proposed at $2.99 per match (chapter 24).
+One option can be added to any plan: the **AI match analysis**, proposed at $2.99 per match (chapter 24). Two more are proposed: hosting a video on Ndamba, with the **Match pass** at $2.99 or **Club video** at $14.99 a month (chapter 31), and, for the organiser of a pickup game, the **Organiser plan** at $3.99 a month, with players always playing for free (chapter 30).
 
 ![The Premium page, with the five plans Free, Player Premium, Coach Pro, Club and academy and Federation, and the notice about payments.](shot:site-pricing "The five plans: payments are not connected yet, and the page says so.")
 

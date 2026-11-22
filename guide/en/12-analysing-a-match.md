@@ -38,14 +38,14 @@ No need for a fixed camera on a mast. A phone is enough, if it is well placed:
 - **Power bank and airplane mode**: a 90-minute match drains a battery, and a call stops the recording.
 - **Free storage**: a full match in high definition weighs several gigabytes. 720p is enough for coding.
 
-A volunteer parent, an injured player or an assistant can do it. The studio's **Film** button opens the phone camera directly (chapter 14): the recorded video opens in the studio straight away.
+A volunteer parent, an injured player or an assistant can do it. The **Filming** page of the menu repeats this advice with a diagram, and its **Film now** button, like the studio's **Film** button, opens the phone camera directly: the recorded video opens in the studio straight away (chapter 31).
 
 > [!TIP] Film both halves from the same side
 > Leave the phone in the same place for the second half. The teams change ends, the camera does not: coding is simpler, and the AI analysis knows how to swap sides from the second-half kick-off.
 
 ## Put the video online
 
-Ndamba stores no video. A match weighs gigabytes; hosting them for thousands of teams would cost a fortune and slow everyone down, especially on mobile networks. So the video stays with you, in one of two ways:
+By default, Ndamba stores no video. A match weighs gigabytes; hosting them for free for thousands of teams would cost a fortune and slow everyone down, especially on mobile networks. So the video stays with you, in one of two free ways:
 
 1. **On YouTube**, published as "unlisted": only people with the link can see it, and it does not appear in searches. Not "private": a private video shows nowhere but on YouTube. Keep embedding allowed, it is the default setting.
 2. **On Facebook**, published as public, on the club page for instance.
@@ -54,12 +54,14 @@ Once the video is online, copy its link from the "Share" button. Ndamba keeps on
 
 A third option, without internet: keep the **file on this device**, the one the phone has just recorded or that you copied from a camera. The file is never sent; you open it again on each visit, because Ndamba does not keep it in memory. It is also the file the AI analysis reads: YouTube and Facebook do not allow downloading their videos, so the AI cannot read a link.
 
+A fourth, paid option: **Upload to Ndamba**. Ndamba hosts the video, it plays anywhere without reopening a file, and the AI analysis can read it. The Match pass is proposed at $2.99 and Club video at $14.99 a month; today this flow is a demonstration, nothing is sent or billed (chapter 31).
+
 ## Add the video in Ndamba
 
 From **Analysis**, the match sheet, an empty report or the **Match videos** page, the add button opens the **Add a match video** window:
 
 1. **Match**: already chosen if you came from its row; otherwise pick it. A match that already has its video is greyed out: a match has one video.
-2. **Where is the video?**: **YouTube or Facebook link** (recommended) or **File on this device**.
+2. **Where is the video?**: **YouTube or Facebook link** (recommended), **File on this device** or **Upload to Ndamba (paid)**.
 3. **Video link**: paste the link. Below the field, **YouTube video recognised.** or **Facebook video recognised.** confirms it; a link that is not a video is flagged.
 4. **Title (optional)**: left empty, it takes the match name, for example "Étoile de la Côte v Avenir du Mungo".
 
@@ -69,13 +71,13 @@ From **Analysis**, the match sheet, an empty report or the **Match videos** page
 
 ## Code on the video
 
-Coding comes down to three gestures, detailed in chapter 14:
+Coding comes down to three gestures, detailed in chapter 14; chapter 29 also shows how to place each action on the pitch and make clips:
 
 1. **Mark the kick-offs.** Put the video on the first-half kick-off and tap **Mark here**; do the same for the second half. Ndamba works out the match minutes from them: if the second half starts at 55 minutes of video, a code placed at 61 minutes becomes the 52nd minute.
 2. **Play and tap.** Play the video and tap a code at the moment of the action, or use the keyboard. When in doubt, go back 5 seconds, slow down to 0.5x, step frame by frame.
-3. **Review.** The **Clips** list takes you back to every action. A wrong code is deleted with one gesture and coded again at the right moment.
+3. **Review.** The **Coded actions** list, at the bottom of the **Code** tab, takes you back to every action. A wrong code is deleted with one gesture and coded again at the right moment.
 
-Each code goes straight into the match report, with its moment in the video. The report fills in as you go; its goals carry a **Watch** button that reopens the video at the right place (chapter 13).
+Each code goes straight into the match report, with its moment in the video. The report fills in as you go; its goals carry a **Watch** button that reopens the video at the right place (chapter 13). With **Place on the pitch**, each code also gets its spot on a mini-pitch and the player's number: that is what fills the report's maps (chapter 28). The pro club demo match, against Météore de Bafoussam, was coded this way on its video: 783 actions, placed and credited.
 
 ## The buttons and their codes
 
@@ -148,7 +150,7 @@ On the **Free** plan, as on **Player Premium**, which does not include the coach
 
 ## One match, one coding
 
-A match has one coding: on its video, or live. If you coded live and the video arrives afterwards, add it: the studio shows a yellow banner, for example "This match already has 783 codes entered live.", and offers **Replace with video coding**. The **Replace the live coding?** window warns that the live codes will be deleted and that the score does not change. Until you confirm, the studio buttons stay inactive: two codings are never mixed, otherwise actions would count twice.
+A match has one coding: on its video, or live. If you coded live and the video arrives afterwards, add it: the studio shows a yellow banner that counts the codes already entered ("This match already has ... codes entered live.") and offers **Replace with video coding**. The **Replace the live coding?** window warns that the live codes will be deleted and that the score does not change. Until you confirm, the studio buttons stay inactive: two codings are never mixed, otherwise actions would count twice.
 
 In the **Analysed matches** list, a small label says how each match was coded: **on video** or **live**. The report says so too.
 

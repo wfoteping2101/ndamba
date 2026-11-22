@@ -504,7 +504,8 @@ export function versusValues(list: readonly MatchDigest[]): { us: RadarValues; t
     },
     them: {
       goals: sum((d) => d.goalsAgainst) / n,
-      shotsOn: theirOnCoded ? sum((d) => d.theirShots.onTarget) / n : null,
+      // same rule as the shot tables: a goal is always on target, so their shots on target show once their shots are coded
+      shotsOn: theirOnCoded || themShots ? sum((d) => d.theirShots.onTarget) / n : null,
       possession: poss.length ? 1 - poss.reduce((a, b) => a + b, 0) / poss.length : null,
       passesOk: theirPassesCoded ? sum((d) => countEvents(d.events, 'them').PASS_OK) / n : null,
       conversion: themShots ? sum((d) => d.goalsAgainst) / themShots : null,

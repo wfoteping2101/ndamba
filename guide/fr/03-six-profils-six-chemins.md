@@ -49,9 +49,10 @@ Plus bas viennent **La semaine** (les sept jours, avec les séances et le match,
 ### Le chemin de l'analyste
 
 1. Choisissez **Analyste** et indiquez votre club ; créez ou activez l'équipe que vous suivez.
-2. Faites filmer le match, mettez la vidéo sur YouTube en « non répertoriée » ou sur Facebook, puis, dans **Analyse**, touchez **Ajouter la vidéo** sur ce match et codez-la dans le studio, en marquant les deux coups d'envoi. Sans vidéo, ouvrez **Analyse en direct** depuis les actions rapides, ou **Direct** sur la carte du match.
+2. Faites filmer le match, mettez la vidéo sur YouTube en « non répertoriée » ou sur Facebook, puis, dans **Analyse**, touchez **Ajouter la vidéo** sur ce match et codez-la dans le studio, en marquant les deux coups d'envoi et en activant **Placer sur le terrain** pour remplir les cartes. Sans vidéo, ouvrez **Analyse en direct** depuis les actions rapides, ou **Direct** sur la carte du match.
 3. Ouvrez le rapport : **Copier le texte** pour l'envoyer au staff, **Imprimer** pour la causerie, et **Revoir** sur chaque but pour retrouver son moment dans la vidéo.
-4. Dans le studio, dessinez sur les moments à montrer aux joueurs ; si le site l'a activée, l'analyse IA propose aussi des moments à revoir.
+4. Lisez les onglets **Cartes**, **Joueurs** et **Chronologie** du rapport, puis la page **Cartes et saison** (chapitre 28).
+5. Dans le studio, faites trois à cinq clips, dessinez sur ceux à corriger et montez une séance vidéo pour les joueurs (chapitre 29) ; si le site l'a activée, l'analyse IA propose aussi des moments à revoir.
 
 ### Le chemin du manager ou du directeur technique
 
@@ -59,6 +60,7 @@ Plus bas viennent **La semaine** (les sept jours, avec les séances et le match,
 2. Dans **Réglages**, section **Équipes**, créez une équipe par catégorie avec **Nouvelle équipe**.
 3. Pour passer d'une équipe à l'autre, touchez la carte de l'équipe en haut du menu : elle ouvre **Réglages**, où **Rendre active** choisit l'équipe affichée partout. La page **Équipe** propose aussi un sélecteur dès qu'il y a plusieurs équipes.
 4. Pour chaque équipe, suivez la semaine et l'Indice du dernier match : les mêmes mots et les mêmes exercices des U8 à l'équipe première.
+5. Ouvrez **Le club** (groupe **Équipe**) : écrivez le modèle de jeu du club, invitez le staff, comparez les équipes dans **Analytique** et passez d'une équipe à l'autre avec **Ouvrir** (chapitre 27).
 
 ### Le chemin de la fédération ou de la ligue
 
@@ -135,7 +137,7 @@ Les livres et les 64 exercices sont gratuits pour tous, sans limite de durée. L
 | Club et académie | 49 $US par mois (environ 29 400 FCFA) | Le manager et le directeur technique : toutes les catégories |
 | Fédération | Sur devis | Les fédérations et les ligues |
 
-Une option s'ajoute à n'importe quelle formule : l'**Analyse IA d'un match**, proposée à 2,99 $US par match (chapitre 24).
+Une option s'ajoute à n'importe quelle formule : l'**Analyse IA d'un match**, proposée à 2,99 $US par match (chapitre 24). Deux autres sont proposées : l'hébergement d'une vidéo sur Ndamba, avec le **Pass match** à 2,99 $US ou le **Club vidéo** à 14,99 $US par mois (chapitre 31), et, pour l'organisateur d'un match entre amis, l'**Offre organisateur** à 3,99 $US par mois, les joueurs jouant toujours gratuitement (chapitre 30).
 
 ![La page Premium, avec les cinq formules Gratuit, Joueur Premium, Coach Pro, Club et académie et Fédération, et l'avertissement sur les paiements.](shot:site-pricing "Les cinq formules : les paiements ne sont pas encore branchés, la page le dit.")
 

@@ -3,98 +3,91 @@ numero: 14
 slug: studio-video-ia-et-saison
 titre: Le studio vidéo, l'analyse IA et la saison
 partie: 5
-resume: Le studio où l'on code un match sur sa vidéo (lien YouTube ou Facebook, fichier ou caméra du téléphone), les coups d'envoi, la lecture au ralenti, les extraits, le dessin et les exports ; l'analyse IA payante, ce qu'elle lit et ce qu'elle ne fait pas ; puis la page Analyse, qui suit l'Indice Njangi sur toute la saison.
+resume: Le studio où l'on code un match sur sa vidéo (lien YouTube ou Facebook, fichier, caméra du téléphone ou vidéo hébergée), les coups d'envoi, la lecture au ralenti, le codage et les exports, avec un renvoi au chapitre 29 pour le montage ; l'analyse IA payante, ce qu'elle lit et ce qu'elle ne fait pas ; puis la page Analyse, qui suit l'Indice Njangi sur toute la saison.
 ---
 
-Un match raconte une histoire ; une saison raconte une méthode. Entre les deux, il y a la vidéo. C'est sur elle que l'on code le match (chapitre 12), sur elle que l'on montre aux joueurs ce que disent les chiffres, et sur elle que l'analyse IA lit le placement de l'équipe. Ce chapitre ouvre le studio vidéo, explique l'analyse IA sans rien enjoliver, puis remonte à la page **Analyse**, où un directeur technique voit si le travail de la semaine se retrouve le samedi.
+Un match raconte une histoire ; une saison raconte une méthode. Entre les deux, il y a la vidéo. C'est sur elle que l'on code le match (chapitre 12), sur elle que l'on montre aux joueurs ce que disent les chiffres, et sur elle que l'analyse IA lit le placement de l'équipe. Ce chapitre ouvre le studio vidéo et explique l'essentiel pour coder, détaille l'analyse IA sans rien enjoliver, puis remonte à la page **Analyse**, où un directeur technique voit si le travail de la semaine se retrouve le samedi. Le studio est devenu un véritable outil de montage : les clips, les dessins, les séances vidéo en plein écran et les raccourcis ont leur chapitre, le 29.
 
 ## Ouvrir le studio
 
 Le studio s'ouvre de trois façons : depuis la fenêtre **Ajouter la vidéo d'un match** (chapitre 12), avec **Coder la vidéo** sur la ligne d'un match dans **Analyse**, ou depuis la page **Les vidéos des matchs**. Son adresse est propre à chaque vidéo : on peut la garder en favori.
 
-En haut : le lien **Analyse** pour revenir, les boutons **CSV** et **JSON** (actifs dès le premier code), le titre avec un crayon (**Renommer le projet**), le **Match** lié, modifiable à tout moment, l'origine de la vidéo (**Vidéo YouTube**, **Vidéo Facebook** ou **Fichier : match.mp4**) et le lien **Changer de vidéo**.
+En haut : le lien **Les vidéos des matchs** pour revenir, le bouton **Exporter** et, quand une séance vidéo existe, **Lancer la séance**. Dessous, le titre avec un crayon (**Renommer la vidéo**), le **Match** lié, modifiable à tout moment, l'origine de la vidéo (**Sur YouTube**, **Sur Facebook**, **Fichier : match.mp4** ou **Hébergée sur Ndamba**) et le lien **Changer de vidéo**. À droite de la vidéo, quatre onglets : **Coder**, **Clips**, **Séances** et **IA**.
 
 **Avec un lien**, le lecteur officiel de YouTube ou de Facebook s'affiche dans le studio, et la vidéo est prête. Si elle ne peut pas être lue, le studio le dit, « Cette vidéo ne peut pas être lue ici. », et rappelle pourquoi : une vidéo privée ne s'affiche pas, il faut qu'elle soit « non répertoriée » ou publique sur YouTube, publique sur Facebook, et que son intégration soit autorisée.
+
+**Avec une vidéo hébergée sur Ndamba** (chapitre 31), la vidéo se lit tout de suite, sans fichier à rouvrir. C'est le cas du match de la démo club pro contre Météore de Bafoussam, marqué **démonstration** : une animation 2D de 94 minutes tirée des codes du match.
 
 **Avec un fichier**, la grande zone sombre dit **Ouvrir la vidéo du match** et propose trois boutons :
 
 - **Choisir le fichier** : la vidéo enregistrée sur l'appareil (sur ordinateur, on peut aussi la faire glisser sur la zone) ;
 - **Filmer** : ouvre la caméra du téléphone ; la vidéo filmée s'ouvre aussitôt dans le studio ;
-- **Coller un lien** : passer à une vidéo YouTube ou Facebook.
+- **Utiliser un lien** : passer à une vidéo YouTube ou Facebook.
 
-![Le studio d'une vidéo en fichier, avant ouverture : la zone sombre Ouvrir la vidéo du match avec les boutons Choisir le fichier, Filmer et Coller un lien, l'Indice Njangi à 0,0, la carte Extraits vide et les codes grisés sous Coder à 00:00.](shot:pro-video-studio-empty "Un fichier, la caméra ou un lien : trois façons d'ouvrir la vidéo.")
+![Le studio d'une vidéo en fichier, avant ouverture : la zone sombre Ouvrir la vidéo du match avec les boutons Choisir le fichier, Filmer et Utiliser un lien, et à droite l'onglet Coder avec les codes grisés sous Coder à 00:00 et la mention Ouvrez d'abord la vidéo.](shot:pro-video-studio-empty "Un fichier, la caméra ou un lien : trois façons d'ouvrir la vidéo.")
 
-Le fichier n'est jamais envoyé sur internet, et Ndamba ne le garde pas : à chaque visite, la zone demande « Choisissez à nouveau la vidéo « match.mp4 » », et vos codes se replacent au bon moment. Si le fichier choisi porte un autre nom, un bandeau prévient que les codes seront placés sur cette vidéo. **Choisir un autre fichier** permet d'en prendre un autre.
+Le fichier n'est jamais envoyé sur internet, et Ndamba ne le garde pas : à chaque visite, la zone demande « Choisissez à nouveau la vidéo « match.mp4 » », et vos codes et vos clips se replacent au bon moment. Si le fichier choisi porte un autre nom, un bandeau prévient que les codes seront placés sur ce fichier. **Choisir un autre fichier** permet d'en prendre un autre.
 
-![Le studio sur téléphone : le lien du guide, le titre Étoile de la Côte contre Éclair de Garoua, le match lié, Changer de vidéo, puis la zone Ouvrir la vidéo du match avec Choisir le fichier, Filmer et Coller un lien, au-dessus de la barre d'onglets.](shot:m-pro-video-studio "Sur téléphone, Filmer ouvre directement la caméra.")
+![Le studio sur téléphone : le lien du guide, le titre de la vidéo, le match lié, Changer de vidéo, puis la zone Ouvrir la vidéo du match avec Choisir le fichier, Filmer et Utiliser un lien, au-dessus de la barre d'onglets.](shot:m-pro-video-studio "Sur téléphone, Filmer ouvre directement la caméra.")
 
 ## Marquer les coups d'envoi
 
-Sous la vidéo, la bande **Coups d'envoi** porte deux repères : **1re mi-temps** et **2e mi-temps**. Placez la vidéo sur le coup d'envoi de la première période, touchez **Marquer ici** ; faites de même au coup d'envoi de la seconde. Le studio rappelle pourquoi : « Placez la vidéo sur le coup d'envoi de chaque mi-temps et touchez « Marquer ici » : les minutes du rapport seront justes. »
+En tête de l'onglet **Coder**, la bande repliable **Coups d'envoi** porte deux repères : **1re mi-temps** et **2e mi-temps**. Placez la vidéo sur le coup d'envoi de la première période, touchez **Marquer ici** ; faites de même au coup d'envoi de la seconde. Le studio rappelle pourquoi : « Placez la vidéo sur le coup d'envoi de chaque mi-temps et touchez « Marquer ici » : les minutes du rapport seront justes. » Une fois marqués, la bande les résume (« 00:00 et 47:19 » pour le match de la démo).
 
 Sans repère, Ndamba suppose que la vidéo commence au coup d'envoi. Avec les deux repères, un code placé à 61 minutes de vidéo, dans une seconde période qui a commencé à 55 minutes, devient la 52e minute d'un match en 2 x 45. Si vous marquez un repère après avoir codé, toutes les minutes sont recalculées. Le repère de la seconde période sert aussi à l'analyse IA, qui inverse alors le sens d'attaque.
 
 ## Lire, ralentir, avancer image par image
 
-![Le studio avec la vidéo de démonstration ouverte : un terrain vu de haut avec deux équipes de onze points, la frise sous l'image, les boutons de lecture, de saut de 5 secondes et d'image par image, le temps 00:01 sur 00:24, les vitesses 0,5x, 1x et 2x et le crayon, puis la bande Coups d'envoi avec la 1re mi-temps marquée à 00:00.](shot:pro-video-studio "La vidéo de démonstration ouverte, le premier coup d'envoi marqué.")
+![Le studio avec la vidéo hébergée du match contre Météore de Bafoussam : en haut Exporter et Lancer la séance, les mentions Hébergée sur Ndamba et démonstration ; la vidéo, une animation du match vue de haut, la frise couverte de traits de couleur, les commandes de lecture, de saut de 5 secondes et d'image par image, le temps 00:00 sur 1:33:53, les vitesses, puis Créer un clip, Dessiner, le zoom et Temps utile ; à droite l'onglet Coder avec les coups d'envoi 00:00 et 47:19 et les boutons avec leurs compteurs.](shot:pro-video-studio "La vidéo du match de la démo, hébergée sur Ndamba et codée action par action.")
 
-Sous l'image : **Lecture** et **Pause** ; **Reculer de 5 s** et **Avancer de 5 s** ; **Image précédente** et **Image suivante** (un vingt-cinquième de seconde) ; le temps ; les vitesses **0,5x**, **1x** et **2x** ; le crayon **Dessiner**. Au-dessus, la frise porte un trait de couleur pour chaque code et la tête de lecture dorée : touchez-la pour sauter à un moment.
+Sous l'image : **Lecture** et **Pause** ; **Reculer de 5 s** et **Avancer de 5 s** ; **Image précédente** et **Image suivante** (un vingt-cinquième de seconde) ; le temps ; les vitesses **0,5×**, **1×** et **2×**. Au-dessus, la frise porte un trait de couleur pour chaque code, rangé sur la ligne de sa famille, et la tête de lecture dorée : touchez-la pour sauter à un moment. Dessous, la rangée d'outils : **Créer un clip**, **Dessiner**, le zoom, **Temps utile** et l'aide du clavier (chapitre 29).
 
 Tout ne marche pas partout, parce que les lecteurs de YouTube et de Facebook ont leurs limites :
 
-| | Fichier | YouTube | Facebook |
+| | Fichier ou hébergée | YouTube | Facebook |
 |---|---|---|---|
 | Lecture, pause, sauts de 5 s | oui | oui | oui |
-| Vitesses 0,5x et 2x | oui | oui | non |
-| Image par image | oui | non | non |
+| Vitesses 0,5× et 2× | oui | oui | non |
+| Image par image, zoom | oui | non | non |
 | Dessin sur l'image | oui | non | non |
 | Analyse IA | oui | avec le fichier | avec le fichier |
 
-Sur ordinateur, le clavier suffit : « Espace lecture ou pause, flèches 5 s, virgule et point image par image, D dessiner, N note. Les codes ont les mêmes touches qu'en direct (1 à 9, F S L K R A B, Q W E). » Sur téléphone, le lecteur reste collé en haut pendant que vous descendez vers les codes.
+Sur ordinateur, le clavier suffit : Espace pour la lecture ou la pause, les flèches pour 5 secondes, la virgule et le point pour l'image par image, et les codes avec les mêmes touches qu'en direct (1 à 9, F S L K R, A B, Q W E). La touche ? ouvre la liste complète des **Raccourcis clavier**, reprise au chapitre 29. Sur téléphone, le lecteur reste collé en haut pendant que vous descendez vers les codes.
 
 ## Coder au bon moment
 
-La carte des codes a pour titre le temps de la vidéo, **Coder à 00:08**, et rappelle : « Chaque code va dans le rapport du match, avec son moment de la vidéo. » Ce sont les boutons du chapitre 12, rangés en cinq groupes, plus l'adversaire, chacun avec sa touche et son compteur (« ×5 »). Un message confirme chaque code, par exemple « Passe, 00:12 ».
+L'onglet **Coder** a pour titre le temps de la vidéo, **Coder à 00:08**, et rappelle : « Chaque code va dans le rapport du match, avec son moment. » Ce sont les boutons du chapitre 12, rangés en cinq groupes, plus l'adversaire, chacun avec sa touche et son compteur (« ×5 »). Un message confirme chaque code, par exemple « Passe, 00:12 ». Dessous viennent les **Coups de pied arrêtés**, comptés à part et jamais dans l'Indice, et le champ **Note**, qui accepte une phrase libre (« le pivot se retourne ») avec **Ajouter la note**.
 
-Les règles sont celles du Code Njangi : un **But** ajoute **Tir** et **Tir cadré** ; une **Récupération** dans les 5 secondes de vidéo qui suivent une **Perte** ou une **Passe perdue** devient une **Reprise 5 s**. Sous les codes, le champ **Note** accepte une phrase libre (« le pivot se retourne ») avec **Ajouter la note**. Les notes restent dans le studio ; elles ne vont pas dans le rapport.
+L'interrupteur **Placer sur le terrain** (touche M) ajoute à chaque code l'endroit de l'action sur un mini-terrain et le numéro du joueur, et pour une passe son receveur. C'est facultatif, mais c'est ce qui remplit les cartes du rapport, l'onglet **Joueurs** et les profils de recrutement : le chapitre 29 montre le geste, le chapitre 28 ce qu'il produit.
 
-La bonne méthode : laissez jouer, touchez le code au moment de l'action ; si l'action est confuse, mettez en pause, reculez de 5 secondes, passez à 0,5x. Codez d'abord une mi-temps entière avec les boutons de base, puis repassez pour la fixation et l'adversaire.
+Les règles sont celles du Code Njangi : un **But** ajoute **Tir** et **Tir cadré** ; une **Récupération** dans les 5 secondes de vidéo qui suivent une **Perte** ou une **Passe perdue** devient une **Reprise 5 s**.
 
-![Le studio après une vingtaine de codes sur la vidéo de démonstration : l'Indice Njangi à 86,0, Njangi de champion, les cinq sous-indices, la frise couverte de traits de couleur, les deux coups d'envoi marqués, les compteurs sur les boutons et la liste des 18 extraits.](shot:pro-video-studio-tagged "Codé sur la vidéo : chaque trait de la frise est une action qu'on peut revoir.")
+La bonne méthode : laissez jouer, touchez le code au moment de l'action ; si l'action est confuse, mettez en pause, reculez de 5 secondes, passez à 0,5×. Codez d'abord une mi-temps entière avec les boutons de base, puis repassez pour la fixation et l'adversaire.
 
-À droite, la carte **Indice Njangi** : « Calculé à partir des codes placés sur la vidéo : c'est l'Indice du rapport du match. » Elle se met à jour à chaque code, avec le lien **Rapport du match**. Sur la capture, l'Indice vaut 86,0 après une vingtaine de codes sur 24 secondes de démonstration : il ne veut rien dire. Un Indice prend son sens sur un match entier.
+![Le studio après quelques codes sur une vidéo d'essai de 24 secondes liée au match contre Avenir du Mungo : le fichier match-demo.mp4, les coups d'envoi marqués à 00:00 et 00:12, la frise avec ses traits, l'onglet Coder à 00:08 et les compteurs sur les boutons, Passe ×5, Progressive ×2, Reprise 5 s ×2.](shot:pro-video-studio-tagged "Codé sur la vidéo : chaque trait de la frise est une action qu'on peut revoir.")
+
+Plus bas dans l'onglet, la carte **Indice Njangi** : « Calculé à partir des codes placés sur la vidéo : c'est l'Indice du rapport du match. » Elle se met à jour à chaque code, avec le lien **Rapport du match**. Sur la vidéo d'essai de la capture, l'Indice monte à 86 après 18 codes en 24 secondes : il ne veut rien dire. Un Indice prend son sens sur un match entier, comme les 783 actions du match contre Météore de Bafoussam.
 
 > [!ATTENTION] Un match, un seul codage
-> Si le match a déjà été codé en direct, le studio affiche « Ce match a déjà 783 codes saisis en direct. » et le bouton **Remplacer par le codage vidéo**. Tant que vous n'avez pas confirmé, les codes restent inactifs : mélanger les deux codages compterait des actions deux fois. Une vidéo sans match lié garde ses codes pour elle : ils nourrissent son Indice, ses extraits et ses exports, mais aucun rapport. « Liez un match pour que ce codage remplisse son rapport et compte dans la saison. »
+> Si le match a déjà été codé en direct, le studio affiche un bandeau qui compte ces codes (« Ce match a déjà ... codes saisis en direct. ») et le bouton **Remplacer par le codage vidéo**. Tant que vous n'avez pas confirmé, les codes restent inactifs : mélanger les deux codages compterait des actions deux fois. Une vidéo sans match lié garde ses codes pour elle : ils nourrissent son Indice, ses clips et ses exports, mais aucun rapport. « Liez un match pour que ce codage remplisse son rapport et compte dans la saison. »
 
-## Les extraits
+## Les actions codées, les clips et les dessins
 
-La carte **Extraits** liste chaque code dans l'ordre de la vidéo : le temps, l'icône du code, son nom, les codes ajoutés automatiquement (« + Tir, Tir cadré »), la note, la vignette de l'image annotée, et la corbeille **Supprimer ce tag**. Touchez un extrait : la vidéo repart 4 secondes avant, pour qu'on voie l'action se construire. Des pastilles filtrent par groupe : **Tous**, **Possession**, **Danger**, **Fixation**, **Transitions**, **Adversaire**, **Note**.
+Au bas de l'onglet **Coder**, la liste **Actions codées** reprend chaque code dans l'ordre de la vidéo : le temps, le code, et les numéros des joueurs s'ils ont été placés (« Passe 11 vers 8 »). Des pastilles filtrent par famille (**Toutes**, **Possession**, **Danger**, **Fixation**, **Transitions**, **Adversaire**). Touchez une ligne pour revoir l'action ; l'épingle la place sur le terrain ; la corbeille la supprime.
 
-Un extrait est un moment marqué, pas un fichier découpé. Pour la séance vidéo avec les joueurs, on rejoue les extraits depuis cette liste. Cinq extraits bien choisis valent mieux qu'un match entier.
-
-## Dessiner sur l'image
-
-Le dessin marche sur un fichier (les lecteurs de YouTube et de Facebook ne laissent pas capturer leur image).
-
-1. Touchez le crayon **Dessiner** (ou D). La vidéo se met en pause.
-2. Choisissez **Flèche**, **Cercle** ou **Main levée**, et la couleur, **Or**, **Blanc** ou **Rouge**.
-3. Tracez avec le doigt ou la souris. **Annuler le trait**, **Rétablir le trait** et **Effacer** corrigent.
-4. **Enregistrer l'image** fond l'image et le dessin en une vignette, attachée au code sélectionné ou à une nouvelle note à ce moment : « Image enregistrée sur le tag à 00:12 ».
-
-Touchez la vignette pour l'agrandir : **Télécharger l'image** l'enregistre en JPEG, **Retirer l'image** la détache, **Aller à l'extrait** rejoue le moment.
+Pour montrer un moment aux joueurs, on en fait un **clip** : un passage avec un début, une fin, un titre et une note, dans l'onglet **Clips**. Chaque tir et chaque but codé a déjà le sien, créé automatiquement. Les clips se rangent dans des **séances vidéo**, qui s'enchaînent en plein écran devant le groupe. Sur un fichier ou une vidéo hébergée, **Dessiner** ouvre huit outils (flèche, cercle, main levée, projecteur, zone, zone libre, liaison entre joueurs, texte) et cinq couleurs ; l'image dessinée s'attache à un clip ou à une action, et se télécharge en JPEG. Tout cela est détaillé au chapitre 29.
 
 ## Changer de vidéo, de match, exporter
 
 **Changer de vidéo** remplace le lien (ou passe d'un fichier à un lien) sans toucher aux codes. Le menu **Match** change le match lié : les codes suivent, et le rapport de l'ancien match se vide. Un match déjà lié à une autre vidéo est grisé.
 
-Les boutons du haut téléchargent le travail sur l'appareil, sans rien envoyer : **CSV**, une ligne par code, pour un tableur ; **JSON**, le projet complet, l'Indice, les codes, les images et le résultat de l'analyse IA s'il existe. C'est le format à garder ou à transmettre à un analyste.
+**Exporter** ouvre une fenêtre qui télécharge le travail sur l'appareil, sans rien envoyer : **Actions codées (CSV)**, une ligne par code, pour un tableur ; **Actions codées (JSON)**, toutes les données de l'analyse avec l'Indice ; et **Exporter les clips (JSON)**. C'est le format à garder ou à transmettre à un analyste.
 
 ## L'analyse IA du match
 
-Sous les extraits, la carte **Analyse IA du match** annonce la couleur : « Payante : 2,99 $US par match. Claude lit une image toutes les quelques secondes du fichier vidéo. »
+L'onglet **IA** porte la carte **Analyse IA du match**, qui annonce la couleur : « Payante : 2,99 $US par match. Claude lit une image toutes les quelques secondes du fichier vidéo. »
 
-![La carte Analyse IA du match : Notre maillot blanc et or, Leur maillot rouge, le sens d'attaque La droite choisi, une image toutes les 6 s avec l'estimation du nombre d'images, le champ Code d'accès vide, la case d'accord des joueurs et des parents non cochée, et le bouton Lancer l'analyse IA encore grisé.](shot:pro-video-ai "L'analyse IA se règle en quatre choix, puis demande un code et l'accord des joueurs.")
+![La carte Analyse IA du match : l'invitation à ouvrir d'abord le fichier du match avec le bouton Ouvrir le fichier du match, Notre maillot blanc et or, Leur maillot rouge, le sens d'attaque La droite choisi, une image toutes les 6 s avec l'estimation du nombre d'images, le champ Code d'accès vide et la case d'accord des joueurs et des parents non cochée.](shot:pro-video-ai "L'analyse IA se règle en quatre choix, puis demande un code et l'accord des joueurs.")
 
 **Ce qu'elle lit.** Claude, l'IA d'Anthropic, ne regarde pas la vidéo en continu. Le navigateur prend une image du fichier toutes les 4, 6 ou 10 secondes, la réduit à 960 pixels de large, et envoie ces images par paquets de douze. Pour chaque image, Claude dit qui a le ballon (nous, eux, ballon disputé, arrêt de jeu, ou illisible), dans quel tiers il se trouve, la hauteur de notre bloc quand l'adversaire a le ballon, et combien de nos joueurs sont derrière le ballon quand nous l'avons. Une image floue ou mal cadrée est déclarée illisible plutôt que devinée.
 
@@ -109,7 +102,7 @@ Sous les extraits, la carte **Analyse IA du match** annonce la couleur : « Paya
 
 **Ce qu'elle ne fait pas.** Elle ne compte pas les passes, les pertes ni les tirs : des images toutes les 6 secondes ne voient pas chaque action. Elle ne reconnaît pas les joueurs. Elle ne touche pas à l'Indice Njangi, qui vient toujours du codage. La carte le rappelle sous les résultats : « Estimations faites sur des images, pas un comptage de chaque action : vérifiez sur la vidéo. »
 
-**Pourquoi un fichier, et pas le lien ?** YouTube et Facebook ne permettent pas de télécharger leurs vidéos, et leurs lecteurs ne laissent pas copier leurs images. L'IA lit donc le fichier, ouvert sur l'appareil : la vidéo d'origine du téléphone, ou celle que vous récupérez dans YouTube Studio. Pour une vidéo en lien, la carte propose **Ouvrir le fichier du match** ; le fichier ouvert sert à l'IA, la lecture continue sur le lien.
+**Pourquoi un fichier, et pas le lien ?** YouTube et Facebook ne permettent pas de télécharger leurs vidéos, et leurs lecteurs ne laissent pas copier leurs images. L'IA lit donc le fichier, ouvert sur l'appareil : la vidéo d'origine du téléphone, ou celle que vous récupérez dans YouTube Studio. Pour une vidéo en lien, la carte propose **Ouvrir le fichier du match** ; le fichier ouvert sert à l'IA, la lecture continue sur le lien. Une vidéo hébergée sur Ndamba, elle, se lit directement : c'est l'un des avantages de l'envoi payant (chapitre 31).
 
 **Les réglages.**
 
@@ -128,9 +121,9 @@ Sous les extraits, la carte **Analyse IA du match** annonce la couleur : « Paya
 
 ## Les vidéos des matchs
 
-![La page Les vidéos des matchs : la carte de la vidéo Étoile de la Côte contre Avenir du Mungo, avec son cadran, le match lié du 17 oct., le fichier, la durée et le nombre de tags, et l'encadré Une vidéo de match en trois temps.](shot:pro-videos-list "La liste des vidéos : une carte par match.")
+![La page Les vidéos des matchs : le bouton Ajouter une vidéo, puis les cartes des vidéos de la démo, dont le match contre Météore de Bafoussam hébergé sur Ndamba avec son cadran à 68, une vidéo d'essai contre Avenir du Mungo, deux observations d'adversaires, une séance des U17 et des matchs des U19 et des féminines, chacune avec son origine, sa durée et son nombre de tags.](shot:pro-videos-list "La liste des vidéos : une carte par vidéo, toutes équipes confondues.")
 
-Depuis **Analyse**, **Toutes les vidéos** ouvre **Les vidéos des matchs** : « Chaque vidéo est liée à un match : un lien YouTube ou Facebook, ou un fichier sur cet appareil. On y code les actions, on y dessine, et le rapport du match se remplit. Ndamba ne stocke aucune vidéo. » Chaque carte montre le cadran de l'Indice, le titre, le match, l'origine, la durée, les codes et la pastille **IA** si l'analyse a tourné. Toute la carte ouvre le studio. **Supprimer le projet** demande confirmation, « Supprimer ce projet et ses tags ? » ; la vidéo elle-même, sur YouTube, Facebook ou l'appareil, n'est pas touchée. Le bouton **Ajouter une vidéo** ouvre la fenêtre du chapitre 12.
+Depuis **Analyse**, **Toutes les vidéos** ouvre **Les vidéos des matchs** : « Chaque vidéo est liée à un match : un lien YouTube ou Facebook, ou un fichier sur cet appareil. On y code les actions, on y dessine, et le rapport du match se remplit. Ndamba ne stocke aucune vidéo. » Chaque carte montre le cadran de l'Indice, le titre, le match, l'origine, la durée, les codes et la pastille **IA** si l'analyse a tourné. Une vidéo envoyée sur Ndamba porte la mention « Hébergée sur Ndamba », suivie de « (démonstration) » tant que l'envoi réel n'est pas branché ; la phrase d'introduction de la page, écrite avant l'hébergement, dit encore que Ndamba ne stocke aucune vidéo. Toute la carte ouvre le studio. **Supprimer le projet** demande confirmation, « Supprimer ce projet et ses tags ? » ; la vidéo elle-même, sur YouTube, Facebook ou l'appareil, n'est pas touchée. La vidéothèque de l'espace club (chapitre 27) montre les mêmes vidéos avec des filtres. Le bouton **Ajouter une vidéo** ouvre la fenêtre du chapitre 12.
 
 ## La page Analyse : la saison d'un coup d'œil
 
@@ -163,4 +156,4 @@ La carte **L'Indice au fil des matchs** dessine la courbe de la saison. Avec un 
 Si aucune équipe n'existe encore, la page demande d'abord **Créez d'abord votre équipe** : un **Nom de l'équipe**, une **Catégorie**, un **Format**, puis **Créer l'équipe**.
 
 > [!INVESTISSEUR] Une vidéo qui ne coûte rien à transporter
-> Ndamba n'héberge aucune vidéo : un lien YouTube ou Facebook, ou un fichier qui reste sur l'appareil. C'est zéro coût de stockage pour la plateforme, aucune donnée mobile dépensée pour envoyer un match, et aucune image d'enfant hébergée par Ndamba. Seule l'analyse IA, payante et sur accord explicite, envoie des images fixes à Claude, et rien d'autre. La détection automatique des actions et le partage entre membres du staff sont dans la feuille de route (chapitre 26).
+> Par défaut, Ndamba n'héberge aucune vidéo : un lien YouTube ou Facebook, ou un fichier qui reste sur l'appareil. C'est zéro coût de stockage pour la plateforme, aucune donnée mobile dépensée pour envoyer un match, et aucune image d'enfant hébergée par Ndamba. L'hébergement sur Ndamba est une option payante, au coût de stockage connu et faible, aujourd'hui en démonstration (chapitre 31). L'analyse IA, payante et sur accord explicite, envoie des images fixes à Claude, et rien d'autre. La détection automatique des actions et le partage entre membres du staff sont dans la feuille de route (chapitre 26).

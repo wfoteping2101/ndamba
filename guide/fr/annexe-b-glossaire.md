@@ -79,7 +79,7 @@ Ce glossaire rassemble les mots que vous croiserez dans l'application, dans *Le 
 | Conservation (K) | Conservation (K) | Passes réussies divisées par les actions (passes réussies, passes perdues et pertes). | 13 |
 | Paliers de l'Indice | Index bands | **Possession sans intention** (moins de 35), **Intention fragile** (de 35 à moins de 50), **Njangi en construction** (de 50 à moins de 65), **Njangi solide** (de 65 à moins de 80), **Njangi de champion** (80 et plus). | 13 |
 | Rapport de match | Match report | La page qui lit le match codé : l'Indice, les sous-indices, la comparaison, les exercices à travailler. | 13 |
-| Studio vidéo | Video studio | L'écran où l'on lit la vidéo d'un match (lien ou fichier), code chaque action au bon moment et dessine sur l'image. Ses codes vont dans le rapport du match. Ndamba ne stocke pas la vidéo. | 14 |
+| Studio vidéo | Video studio | L'écran où l'on lit la vidéo d'un match (lien ou fichier), code chaque action au bon moment et dessine sur l'image. Ses codes vont dans le rapport du match. C'est aussi l'outil de montage : clips, dessins, séances (chapitre 29). | 14, 29 |
 | Analyse IA | AI analysis | L'option payante du studio : Claude, l'IA d'Anthropic, lit une image toutes les quelques secondes du fichier vidéo et estime la possession, le territoire, la hauteur du bloc et la défense de repos, avec les moments à revoir. Elle complète le codage, ne change pas l'Indice. | 14 |
 
 ## Le joueur, la famille et Mola
@@ -91,6 +91,29 @@ Ce glossaire rassemble les mots que vous croiserez dans l'application, dans *Le 
 | Carnet du Njangi | Njangi notebook | Le carnet où le joueur écrit ce qu'il a appris, comme BriBri dans le roman. | 16 |
 | Tâche | Task | Un travail que Mola a fait pour vous, avec ses étapes. | 18 |
 | À valider | To approve | L'onglet où attend tout ce qui doit sortir de l'application (message, calendrier) : rien ne part sans votre accord. | 18 |
+
+## Le club, le terrain et le matériel
+
+| Terme | En anglais | Définition | Chapitre |
+|---|---|---|---|
+| Club (espace club) | Club (club space) | L'espace qui réunit toutes les équipes d'un club, son staff, ses vidéos et les profils de ses joueurs autour d'un même modèle de jeu. Il vit sur l'appareil du club tant que les comptes n'existent pas. | 27 |
+| Modèle de jeu du club | Club game model | Le texte qui dit comment toutes les équipes du club jouent, des jeunes aux seniors ; il apparaît dans l'analyse et sur les profils publics. | 27 |
+| Profil de recrutement | Recruitment profile | La fiche d'un joueur à montrer à un recruteur : poste, pied, taille, année de naissance, présentation, chiffres de la saison et jusqu'à huit extraits vidéo. Privé par défaut ; public seulement si le club et le profil l'autorisent, et pour un mineur avec l'accord écrit des parents. | 27 |
+| Placer sur le terrain | Place on the pitch | Dans le studio, l'option qui ajoute à chaque code l'endroit de l'action sur un mini-terrain, le joueur et, pour une passe, son receveur. Elle remplit les cartes. | 29 |
+| Carte des tirs | Shot map | La carte de chaque tir codé et placé, cadré ou non, et des buts, pour nous et pour l'adversaire, avec la distance moyenne et la conversion. | 28 |
+| Réseau de passes | Passing network | Chaque joueur à la position moyenne de ses passes, relié à ses partenaires par des traits dont l'épaisseur suit le nombre de passes réussies. | 28 |
+| Carte de chaleur | Heat map | La densité des actions avec ballon codées et placées, pour l'équipe ou un joueur, avec la part par tiers et par couloir. | 28 |
+| Field tilt | Field tilt | Notre part des actions jouées dans les tiers offensifs ; il demande de coder aussi l'adversaire. | 13, 28 |
+| Élan du match | Match momentum | La courbe du danger de chaque équipe sur cinq minutes glissantes. | 28 |
+| Clip | Clip | Un passage choisi d'une vidéo, avec un début, une fin, un titre, une note et les joueurs concernés. Chaque tir et chaque but codé a son clip automatique. | 29 |
+| Séance vidéo | Video session | Des clips enchaînés en plein écran pour les joueurs, avec un titre et une note ; la méthode conseille quinze minutes et trois à cinq clips. | 29 |
+| Temps utile | Useful time | Une lecture de la vidéo qui saute les passages de plus de douze secondes sans aucun code. | 29 |
+| Hébergement (vidéo hébergée) | Hosting (hosted video) | L'envoi payant d'une vidéo sur Ndamba, qui la lit partout sans rouvrir de fichier : Pass match ou Club vidéo. Aujourd'hui une démonstration. | 31 |
+| Matchs entre amis | Pickup games | L'outil de l'organisateur d'un match régulier entre amis : groupe, inscriptions, pointage, équipes, cotisations. Gratuit pour les joueurs. | 30 |
+| Liste d'attente | Waitlist | La file des joueurs inscrits à un match complet ; une place libérée est proposée au premier pendant 15 minutes. | 30 |
+| Pointage | Check-in | La confirmation de présence au terrain, de 30 minutes avant à 30 minutes après le coup d'envoi, par position (300 m au plus) ou par l'organisateur. | 30 |
+| Fiabilité | Reliability | 70 % de présence et 30 % de ponctualité d'un joueur sur les matchs où il s'était inscrit. | 30 |
+| Niveau bronze, argent, or | Bronze, silver, gold tier | Le niveau d'un joueur des matchs entre amis : bronze dès 2 matchs joués, argent dès 3 matchs et 3,5 de moyenne, or dès 5 matchs et 4,2 de moyenne. | 30 |
 
 ## Le plan
 

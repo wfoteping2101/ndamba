@@ -118,6 +118,8 @@ export default function Filmer() {
       <section aria-labelledby="fm-gear" data-tour="filming-gear">
         <h2 id="fm-gear" className="text-[22px] leading-tight text-ink sm:text-[26px]">{t('gear.title')}</h2>
         <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-ink-muted">{t('gear.lead')}</p>
+        {/* the affiliate disclosure comes before the first Amazon link, not after the list */}
+        <p className="mt-2 max-w-2xl rounded-card bg-sand/70 px-4 py-2.5 text-[13px] leading-relaxed text-ink-muted">{t('disclosure')} {t('noPrices')}</p>
 
         <article className="mt-5 grid gap-5 overflow-hidden rounded-panel bg-night-800 p-5 text-cream surface-dark sm:p-7 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-center">
           <div>
@@ -149,8 +151,6 @@ export default function Filmer() {
             </li>
           ))}
         </ul>
-        <p className="mt-4 text-[13px] leading-relaxed text-ink-muted">{t('disclosure')}</p>
-        <p className="mt-1 text-[13px] leading-relaxed text-ink-muted">{t('noPrices')}</p>
       </section>
     </div>
   )

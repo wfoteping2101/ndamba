@@ -256,7 +256,8 @@
     "far": "Vous êtes à {{dist}} du terrain (maximum {{max}} m). Rapprochez-vous, ou demandez à l'organisateur de vous pointer.",
     "geoError": "Position indisponible. Demandez à l'organisateur de vous pointer.",
     "noGeo": "Ce navigateur ne donne pas la position. Demandez à l'organisateur de vous pointer.",
-    "adminLine": "Pointage ouvert jusqu'à {{time}} : {{n}} pointés sur {{total}}. Touchez « Pointer » pour quelqu'un qui n'a pas pu le faire."
+    "adminLine_one": "Pointage ouvert jusqu'à {{time}} : {{count}} pointé sur {{total}}. Touchez « Pointer » pour quelqu'un qui n'a pas pu le faire.",
+    "adminLine_other": "Pointage ouvert jusqu'à {{time}} : {{count}} pointés sur {{total}}. Touchez « Pointer » pour quelqu'un qui n'a pas pu le faire."
   },
   "offer": {
     "until": "Place proposée à {{name}} jusqu'à {{time}}.",

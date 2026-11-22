@@ -11,7 +11,7 @@ Beaucoup de séances sont une suite d'exercices que l'on aime bien, dont la dur�
 ## La liste des séances
 
 1. Dans le menu de gauche, groupe **Entraînement**, touchez **Séances**. Sur téléphone, c'est l'onglet **Entraîner**.
-2. La page **Les séances** s'ouvre sur l'onglet **À venir**. L'onglet **Passées** garde l'historique, de la plus récente à la plus ancienne. Le nombre de séances de chaque onglet est affiché à côté de son nom.
+2. La page **Les séances** s'ouvre sur l'onglet **À venir** (sur **Passées** si rien n'est prévu mais que des séances ont déjà eu lieu). L'onglet **Passées** garde l'historique, de la plus récente à la plus ancienne. Le nombre de séances de chaque onglet est affiché à côté de son nom.
 3. Les séances sont regroupées par semaine : **Cette semaine**, **La semaine prochaine**, **La semaine dernière**, puis « Semaine du » et la date du lundi.
 
 ![La liste des séances de la démo club pro : les onglets À venir et Passées, le groupe Cette semaine avec ses totaux, et deux séances, Vitesse le jeudi 29 octobre et Activation le vendredi 30.](shot:pro-sessions "La liste des séances, onglet À venir, dans la démo club pro.")

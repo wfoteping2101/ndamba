@@ -49,6 +49,12 @@ Dans **Réglages**, **Tout effacer** supprime le profil, les équipes et tout le
 **En quelles langues ?**
 L'application est en français et en anglais : le bouton FR et EN change toute l'interface. Les livres se lisent en français. D'autres langues sont prévues, au rythme des fédérations qui rejoindront le modèle (chapitres 4 et 26).
 
+**Comment découvrir toute l'application rapidement ?**
+Avec la **Visite guidée**, à l'adresse /visite : 32 étapes sur la démo club pro, environ quinze minutes, chaque étape ouvrant la bonne page (chapitre 6).
+
+**Plusieurs entraîneurs d'un même club peuvent-ils partager l'espace club ?**
+Pas encore depuis leurs propres appareils. L'espace club, ses membres et leurs droits existent, mais tout vit sur l'appareil du club : une invitation sert à confirmer la personne, pas à la rattacher. Le partage viendra avec les comptes (chapitres 26 et 27).
+
 ## Les formules
 
 **Combien coûte Ndamba ?**
@@ -62,6 +68,15 @@ Les deux livres en lecture libre, les 64 exercices de la méthode, Mola pour vou
 
 **Certaines lignes des formules sont-elles en avance sur l'application ?**
 Oui. Deux lignes de **Club et académie** portent la mention « bientôt » : les comptes du staff, qui demandent des comptes d'utilisateurs, prévus dans la feuille de route, et le modèle de jeu du club, qui se construit aujourd'hui par l'accompagnement. Sous **Fédération**, la formation des entraîneurs et l'accompagnement sont des services rendus par des personnes (chapitres 24 et 26).
+
+**Combien coûtent les matchs entre amis ?**
+Rien pour les joueurs, jamais. L'organisateur peut prendre l'offre organisateur, proposée à 3,99 $US par mois ou 34,99 $US par an après un essai gratuit de 30 jours : suivi des cotisations, bilan de saison, équipes équilibrées, co-organisateurs. Les paiements ne sont pas branchés : l'essai et la formule sont une démonstration (chapitre 30).
+
+**Ndamba encaisse-t-il les cotisations Mobile Money ?**
+Non. Les joueurs envoient la cotisation à l'organisateur dans leur propre application Mobile Money, avec un code de match dans le motif ; l'organisateur coche le paiement. Ndamba ne touche pas à l'argent (chapitre 30).
+
+**Que gagne Ndamba sur le matériel conseillé ?**
+Les liens Amazon de la page **Filmer** portent l'identifiant du programme Partenaires d'Amazon : Ndamba touche une commission sur les achats qui remplissent les conditions, sans changer le prix. Ndamba n'est pas affilié à Veo (chapitre 31).
 
 ## Mola
 
@@ -82,11 +97,17 @@ Non. Les paliers (35, 50, 65 et 80) viennent du livre, et le rapport le dit lui-
 **L'analyse se fait-elle à la main ?**
 Oui, et c'est voulu. Une personne regarde le match et touche un bouton à chaque action : passe réussie, passe qui casse une ligne, perte, reprise en cinq secondes, tir. La manière conseillée est de le faire sur la vidéo : chaque code garde son moment, on peut le revoir, le vérifier et le corriger, au ralenti si besoin. C'est ainsi que travaillent les analystes, et c'est ce qui donne l'Indice Njangi. L'analyse IA, payante, ajoute des estimations tirées des images (possession, territoire, bloc, défense de repos, moments à revoir), mais ne compte pas chaque passe. Le codage en direct depuis la touche reste possible pour un match non filmé, sans rien à revoir ensuite. La détection automatique de chaque action est sur la feuille de route (chapitres 12, 14 et 26).
 
-**Pourquoi ne pas envoyer la vidéo directement sur Ndamba ?**
-Parce qu'une vidéo de match pèse plusieurs gigaoctets : la stocker et la diffuser pour chaque club coûterait cher en serveurs et en bande passante, et ce coût retomberait sur les clubs. Ndamba utilise donc ce qui existe déjà. Vous mettez la vidéo sur YouTube en « non répertoriée » ou sur Facebook, et vous collez son lien : Ndamba ne garde que le lien. Ou vous ouvrez le fichier sur l'appareil, filmé avec le téléphone par exemple : il n'est jamais envoyé, mais il faut le rouvrir à chaque visite (chapitre 12).
+**Peut-on envoyer la vidéo directement sur Ndamba ?**
+Oui, en option payante : le Pass match (2,99 $US, une vidéo jusqu'à 2 h et 4 Go, gardée 12 mois) ou le Club vidéo (14,99 $US par mois, 20 h d'envoi). Aujourd'hui, ce parcours est une démonstration : rien n'est envoyé ni facturé tant que le propriétaire du site n'a pas branché un stockage (chapitre 31). La voie gratuite reste la plus simple, parce qu'une vidéo de match pèse plusieurs gigaoctets : Ndamba utilise ce qui existe déjà. Vous mettez la vidéo sur YouTube en « non répertoriée » ou sur Facebook, et vous collez son lien : Ndamba ne garde que le lien. Ou vous ouvrez le fichier sur l'appareil, filmé avec le téléphone par exemple : il n'est jamais envoyé, mais il faut le rouvrir à chaque visite (chapitre 12).
 
 **Peut-on coder un match sur un téléphone ?**
 Oui. Le studio vidéo et l'écran du direct s'adaptent au téléphone, avec de grands boutons, et le bouton **Filmer** du studio ouvre la caméra. Un adjoint, un parent bénévole ou un remplaçant peut coder, après avoir lu le tableau des codes (chapitre 12).
+
+**Les cartes du rapport viennent-elles d'un suivi GPS ?**
+Non. Chaque point d'une carte est une action codée par une personne, puis placée d'un tap sur un mini-terrain avec **Placer sur le terrain**. La distance parcourue, la vitesse et les sprints demandent une caméra de suivi : c'est dans la feuille de route, et l'application le dit en tête de chaque carte (chapitre 28).
+
+**Peut-on montrer des clips aux joueurs ?**
+Oui. Le studio crée un clip pour chaque tir et chaque but codé, et vous pouvez en faire d'autres, dessiner dessus et les ranger dans une séance vidéo qui se lance en plein écran. Un clip d'un fichier ou d'une vidéo hébergée s'exporte en vidéo, sans le son ; pour une vidéo YouTube, on copie le lien du moment (chapitre 29).
 
 **La vidéo compte-t-elle dans l'Indice du match ?**
 Oui. Quand une vidéo est liée à un match, chaque code placé dans le studio va dans le rapport de ce match, avec son moment dans la vidéo : l'Indice, le rapport et la saison se construisent avec ces codes. Il n'y a qu'un codage par match : si le match a d'abord été codé en direct, le studio propose de remplacer ces codes par ceux de la vidéo, après confirmation. Les notes et les dessins restent dans le studio (chapitres 13 et 14).
@@ -94,7 +115,10 @@ Oui. Quand une vidéo est liée à un match, chaque code placé dans le studio v
 ## Les jeunes et les familles
 
 **Les données des enfants sont-elles protégées ?**
-Elles restent sur l'appareil du coach ou de la famille, sans compte et sans envoi. Les vidéos ne sont pas stockées par Ndamba : pour des mineurs, préférez YouTube en « non répertoriée » ou un fichier gardé sur l'appareil, et l'analyse IA n'envoie des images qu'après une case cochée confirmant l'accord des joueurs et de leurs parents. Avec les jeunes, l'Indice mesure l'équipe, jamais un enfant, et le rapport demande de garder le tableau des contributions des joueurs pour le staff. Les principes à respecter le jour où les comptes arriveront (accord des parents, chacun ne voit que ce qui le concerne) sont posés au chapitre 25.
+Elles restent sur l'appareil du coach ou de la famille, sans compte et sans envoi. Les vidéos ne sont pas stockées par Ndamba (l'hébergement payant est encore une démonstration) : pour des mineurs, préférez YouTube en « non répertoriée » ou un fichier gardé sur l'appareil, et l'analyse IA n'envoie des images qu'après une case cochée confirmant l'accord des joueurs et de leurs parents. Avec les jeunes, l'Indice mesure l'équipe, jamais un enfant, et le rapport demande de garder le tableau des contributions des joueurs pour le staff. Les principes à respecter le jour où les comptes arriveront (accord des parents, chacun ne voit que ce qui le concerne) sont posés au chapitre 25.
+
+**Un club peut-il publier le profil d'un jeune joueur ?**
+Le profil de recrutement peut devenir public si le club l'autorise et ouvre ce profil. Pour un mineur, ce guide demande l'accord écrit des parents avant toute publication ; l'application ne le demande pas encore elle-même. Aujourd'hui, le lien ne s'ouvre que sur l'appareil du club (chapitres 25 et 27).
 
 **À partir de quel âge ?**
 Le roman *Lionceaux* s'adresse aux 8 à 12 ans. Dans l'application, l'espace joueur change à 16 ans : avant, le défi du jour, la leçon du jour, la progression et le carnet ; à partir de 16 ans, un espace de performance avec la semaine du match, la forme et la charge (chapitres 15 et 20).

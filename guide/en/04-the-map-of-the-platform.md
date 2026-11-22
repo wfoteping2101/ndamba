@@ -3,7 +3,7 @@ numero: 4
 slug: the-map-of-the-platform
 titre: The map of the platform
 partie: 1
-resume: Ndamba's two front doors (the public site and the app), every page and what it is for, the four menu groups, the phone tab bar, the Mola button, the language switch and exactly where your data lives.
+resume: Ndamba's two front doors (the public site and the app), every page and what it is for, the five menu groups, the guided tour, the phone tab bar, the Mola button, the language switch and exactly where your data lives.
 ---
 
 When you first meet Ndamba, you meet several things at once: a website, an app, an agent that talks, two books and a game. That is its strength, and it is also why the whole thing can feel hard to follow at first sight. This chapter is the map. It does not walk through every screen (the following chapters do that): it shows where each thing lives, how you get from one to the other, and where your information is kept.
@@ -74,9 +74,9 @@ The **Back to Ndamba** link at the top of that page takes you to the site's home
 
 ## The app and its menus
 
-On a computer, the app has a dark green column on the left. At the top sits the logo, then the plate of the active team: its two colours, its name and a line such as "Seniors, 11 v 11, 4-3-3". Next come **Home** and **Mola**, then the menus, filed under four headings: Training, Team, Analysis and Me.
+On a computer, the app has a dark green column on the left. At the top sits the logo, then the plate of the active team: its two colours, its name and a line such as "Seniors, 11 v 11, 4-3-3". Next come **Home** and **Mola**, then the menus, filed under five headings: Training, Team, Analysis, Play and Me.
 
-![The app on a computer: the green column with the plate of the Étoile de la Côte team and the menu groups, and the books page on the right.](shot:pro-app-library "The left column: the team plate, then the Training, Team, Analysis and Me groups.")
+![The app on a computer: the green column with the plate of the Étoile de la Côte team and the menu groups, and the books page on the right.](shot:pro-app-library "The left column: the team plate, then the Training, Team, Analysis, Play and Me groups.")
 
 | Group | Menu | What you do there | Chapter |
 |---|---|---|---|
@@ -87,21 +87,27 @@ On a computer, the app has a dark green column on the left. At the top sits the 
 | Training | **Week** | The week around the match, MD-4 to MD-1, and its load | 9 |
 | Team | **Team** | The squad, each player's file and journey | 10 |
 | Team | **Matches** | Fixtures, line-up, match sheet | 11 |
+| Team | **The club** | Every team of the club, the members and their rights, the video library, recruitment profiles, analytics | 27 |
 | Analysis | **Analysis** | Add a match's video and tag it, live tagging without video, the reports, the season, the AI analysis | 12 to 14 |
+| Analysis | **Maps and season** | The last ten matches: averages, progression, season maps, comparison | 28 |
+| Analysis | **Filming** | Where to put the camera, the three ways to bring in a video, the gear | 31 |
+| Play | **Pickup games** | The Sunday game: sign-ups, waitlist, check-in, teams, fees | 30 |
 | Me | **Player space** | The player's programme, challenges, lessons and notebook | 15, 16 |
 | Me | **Books** | Both books, without leaving the app | 19, 20 |
+| Me | **Guided tour** | A tour of the whole app on the pro club demo, in 32 steps, on a page of its own | 6 |
+| Me | **Guide** | This guide, in French or English | 6 |
 | Me | **Football game** | The game page (it opens outside the app) | 21 |
 | Me | **Premium** | The plans and the demo activation | 6, 24 |
 | Me | **Settings** | Profile, teams, plan, backups | 6 |
 
-Other pages open from these: a drill's page, the session builder, a player's file and journey, the **Observe** page (from the squad, a journey, a session or a match), the match sheet, the report, **Match videos** and the video studio, the lessons and the notebook. Videos no longer have a menu of their own: they live inside **Analysis**, because analysing a match starts with tagging its video (chapter 12). Live analysis takes the whole screen, with no menu, so that nothing gets in the way on the touchline.
+Other pages open from these: a drill's page, the session builder, a player's file and journey, the **Observe** page (from the squad, a journey, a session or a match), the match sheet, the report and its tabs, **Match videos**, the video studio and the full-screen video session, a player's recruitment profile, the page of a pickup group and of a pickup game, the lessons and the notebook. Videos no longer have a menu of their own: they live inside **Analysis**, because analysing a match starts with tagging its video (chapter 12). Live analysis takes the whole screen, with no menu, so that nothing gets in the way on the touchline.
 
-At the top right of every page of the app, a **How does it work? Guide, chapter N** link opens, in a new tab, the chapter of this guide that explains the page: chapter 12 on **Analysis**, 14 on the videos, 7 on the drills, and so on. Chapter 6 gives the full list.
+At the top right of every page of the app, a **How does it work? Guide, chapter N** link opens, in a new tab, the chapter of this guide that explains the page: chapter 12 on **Analysis**, 14 on the videos, 27 on the club, 7 on the drills, and so on. Chapter 6 gives the full list.
 
 At the bottom of the column, a block shows your initials, your name and your role (for instance "Coach"); it opens **Settings**, where your plan is shown too. Next to it sits the language switch.
 
 > [!TIP] On a small laptop screen
-> If your screen is short, the menu column scrolls: the last links of the Me group (**Books**, **Football game**, **Premium**, **Settings**) may be hidden at the bottom. Scroll the column, or tap the block with your name, which opens **Settings** directly.
+> If your screen is short, the menu column scrolls: the last links of the Me group (**Books**, **Guided tour**, **Guide**, **Football game**, **Premium**, **Settings**) may be hidden at the bottom. Scroll the column, or tap the block with your name, which opens **Settings** directly.
 
 ## On a phone: the tab bar
 
@@ -134,7 +140,9 @@ There are no user accounts and no sync yet. In practice:
 - If you clear this site's browsing data, your space goes with it. Export a backup first.
 - The **Erase everything** button in Settings deletes the profile, the teams and everything else from this browser, including the lessons marked "I've got it" and "My view" in the player space. The language choice is kept.
 
-Only one thing can leave the device: the sentence you write to Mola, with a few pointers (the team name, its age group, your role, the next and the last opponent), is offered to Ndamba's server. The server passes it on to an artificial intelligence model, so it is understood better, only if it is set up for that. Otherwise it declines, and the built-in rules engine answers on its own. The welcome conversation is always understood on the device. And the messages Mola prepares for the outside world (WhatsApp, text, e-mail) wait for your approval: you are the one who sends them.
+Two exceptions, each described in its place: the AI analysis of a match, paid and with explicit agreement, sends still frames of the video to Claude (chapter 14); and uploading a video to Ndamba, a paid option, will host it once it is connected (today it is a demonstration and nothing leaves, chapter 31). The location used to check in at a pickup game stays on the phone (chapter 30).
+
+Otherwise, only one thing can leave the device: the sentence you write to Mola, with a few pointers (the team name, its age group, your role, the next and the last opponent), is offered to Ndamba's server. The server passes it on to an artificial intelligence model, so it is understood better, only if it is set up for that. Otherwise it declines, and the built-in rules engine answers on its own. The welcome conversation is always understood on the device. And the messages Mola prepares for the outside world (WhatsApp, text, e-mail) wait for your approval: you are the one who sends them.
 
 Accounts and sync between devices are planned; the roadmap in chapter 26 lists them among the next steps.
 
@@ -153,6 +161,10 @@ Accounts and sync between devices are planned; the roadmap in chapter 26 lists t
 | /marque | The Ndamba brand | The logo, Mola's sign, the colours and the rules |
 | /revue | Project review | Review the four strands of work and ask for a change |
 | /bienvenue | Welcome | Set up your space with Mola, or open a demo |
+| /visite | Guided tour | Load the pro club demo and walk through the whole app in 32 steps |
+| /profil/... | Player profile | The public page of a recruitment profile (chapter 27) |
+| /rejoindre-club/... | Club invitation | Confirm an invitation to the club space |
+| /rejoindre/... | Pickup game invite | Join a pickup games group |
 | /football/ | Lionceaux Football | Play the game in the browser |
 
 An unknown address leads back to the site's home page. Appendix C lists every address of the app, page by page.

@@ -11,7 +11,7 @@ Many sessions are a string of drills the coach happens to like, lasting as long 
 ## The sessions list
 
 1. In the left-hand menu, under **Training**, tap **Sessions**. On a phone, it is the **Train** tab.
-2. The **Sessions** page opens on the **Upcoming** tab. The **Past** tab keeps your history, most recent first. Each tab shows how many sessions it holds.
+2. The **Sessions** page opens on the **Upcoming** tab (on **Past** when nothing is planned but sessions have already taken place). The **Past** tab keeps your history, most recent first. Each tab shows how many sessions it holds.
 3. Sessions are grouped by week: **This week**, **Next week**, **Last week**, then "Week of" and the date of the Monday.
 
 ![The sessions list in the pro club demo: the Upcoming and Past tabs, the This week group with its totals, and two sessions, Speed on Thursday 29 October and Activation on Friday 30.](shot:pro-sessions "The sessions list, Upcoming tab, in the pro club demo.")

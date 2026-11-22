@@ -28,7 +28,7 @@ This choice has practical consequences:
 
 - **You can work on a weak network.** Live tagging says so: "The clock, the tags and the score are saved on the device with every tap, even with no network."
 - **Nobody else sees your data**, neither Ndamba's publisher nor another coach.
-- **Ndamba stores no video.** With a link, the video stays on YouTube or Facebook, where you put it; Ndamba keeps only the link. With a file, the studio opens it where it is: it is never sent over the internet, and it has to be reopened on each visit. A drawing is kept together with a small still of the moment. Only the AI analysis, if you start it yourself, sends still frames of the match (see below).
+- **Ndamba stores no video**, except for the paid upload to Ndamba, which is a demonstration today where nothing leaves (chapter 31). With a link, the video stays on YouTube or Facebook, where you put it; Ndamba keeps only the link. With a file, the studio opens it where it is: it is never sent over the internet, and it has to be reopened on each visit. A drawing is kept together with a small still of the moment. Only the AI analysis, if you start it yourself, sends still frames of the match (see below).
 - **But data can be lost.** Clearing the browser's data, changing phones or working in a private window makes the space disappear if it was not backed up. Two browsers on the same phone are two separate spaces.
 - **A demo replaces the browser's data.** When the browser already holds your own space, the site warns you before starting it and suggests exporting a backup first.
 
@@ -126,13 +126,19 @@ A player under 16 gets a home screen designed for their age: today's challenge, 
 
 ![BriBri's home screen at 12: the motto, his experience points, his streak, today's Quick feet challenge and his progress, with no ranking anywhere.](shot:youth-player-home-linked "What a 12-year-old sees: a challenge, his progress, his journey, never a ranking.")
 
-There is no advertising in Ndamba, no messaging between users, no public profile and no comments. Mola only talks to the person holding the device and never contacts anyone.
+There is no advertising in Ndamba, no messaging between users and no comments. The only possible public profile is a player's recruitment profile, which the club opens itself (see below). Mola only talks to the person holding the device and never contacts anyone.
 
 **The parent role.** A parent chooses the **Parent** role during the welcome conversation; Mola then asks: "How old is your child, or which age group do they play in?" Their home screen is the child's youth space, with a **For parents** box: "Fifteen minutes, a wall and a ball are enough. Stay close, help count and remind them to drink water." The parent keeps this youth space even as the child grows older. Our advice: for a child under 13, the parent creates the space on a family device and keeps it.
 
 ![The home screen of Estelle, a parent in the U13 academy demo: the For parents box, the Your child's journey card and the child's challenge of the day.](shot:youth-parent-home-named "A parent sees the child's space, with a box written for them.")
 
 **Filming young players.** A match video shows children. Ask the parents' agreement before filming, publish on YouTube as "unlisted" (only those who have the link can see it) rather than public, and share the link with the team only. A video posted on Facebook must be public to show in Ndamba: for minors, prefer unlisted YouTube or a file kept on the device. And the AI analysis asks, through its tick box, for the agreement of the players filmed and of their parents.
+
+**Recruitment profiles of minors.** The club space can give a player a public profile, with their name, year of birth, position, figures and video clips (chapter 27). Two switches protect it: the club has to allow public profiles, then open each profile one by one; everything is private by default. For a player under 18, this guide's rule is simple: no public profile without the parents' written consent, and only if it truly serves a plan (an academy, a scholarship, a trial). The app asks for it: for a player who may be under 18, opening the profile goes through a tick box confirming the consent, and the date is recorded; without it, the public page stays closed. The written consent itself is kept by the club. Today the profile link only opens on the club's device anyway.
+
+**Pickup games and location.** To check in at the pitch, the app asks for the phone's location once, when the player taps **I'm here**, and works out on the phone the distance to the pitch, whose location the organiser saved once on site (300 m at most). That location is neither tracked nor sent: only the check-in time and the distance are recorded in the group. A player who refuses location is checked in by the organiser (chapter 30).
+
+**Hosted videos.** Uploading a video to Ndamba is a demonstration today: nothing leaves, the file stays on the device. Once real uploads are connected, the video will be kept twelve months and will only play for club members with the right to see it, following the club space's **Who sees what** table (chapters 27 and 31). Filming children always needs the parents' consent, before the match.
 
 **For coaches.** The squad only asks for the year of birth, not the full date, and that is enough. Keep notes factual and kind: they are part of the backups. Daily form touches on health: ask for it only from those who benefit from it, and read it with care.
 
@@ -147,7 +153,7 @@ There is no advertising in Ndamba, no messaging between users, no public profile
 
 Accounts and sync are planned for stage 2 of the plan (2028 to 2029), along with the staff accounts of the Club and academy plan. This guide proposes the principles that their arrival will have to respect. They are commitments to keep, not features already built:
 
-- a parent's consent for any account belonging to a minor;
+- a parent's consent for any account belonging to a minor, and a verifiable consent (not just a box ticked by the club) before a minor's public profile is opened;
 - everyone sees only what concerns them: a player their own journey, a parent their child's, a staff their team;
 - the app stays local first: you work without a network, and sync follows;
 - exporting a backup always remains possible;

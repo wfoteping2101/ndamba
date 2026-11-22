@@ -287,7 +287,7 @@
     "planNoMatch": "Create the next match first: the week is planned backwards from match day.",
     "planFor": "Week of the match against {{opp}}, {{date}}. Main intention: {{intention}}.",
     "players": "Player contributions",
-    "playersHint": "Tags credited to each player during live tagging.",
+    "playersHint": "Tags credited to each player while coding, on the video or live.",
     "playersEmpty": "No tag was credited to a player. During live tagging, tap a number right after a tag.",
     "player": "Player",
     "total": "Total",
@@ -320,7 +320,7 @@
     "bases": "Base totals",
     "extras": "Complementary benchmarks",
     "extrasHint": "Outside the Index: they need the opponent's passes and entries to be tagged too.",
-    "extrasMissing": "Turn on \"Tag the opponent too\" during live tagging to get the estimated possession share and field tilt.",
+    "extrasMissing": "Code the opponent too (the opponent codes in the studio, or \"Tag the opponent too\" when live) for a possession share counted on the passes, and for the field tilt.",
     "possessionShare": "Estimated possession share",
     "fieldTilt": "Field tilt",
     "shotsLine": "Shots (on target)",
@@ -369,7 +369,8 @@
     "watch": "Watch",
     "editOnVideo": "Correct on the video",
     "srcVideo": "coded on the video",
-    "srcLive": "coded live"
+    "srcLive": "coded live",
+    "byClock": "by the clock"
   },
   "summary": {
     "headline": "{{label}}: {{total}} out of 100",
@@ -450,7 +451,7 @@
   "video": {
     "title": "Match videos",
     "eyebrow": "Analysis",
-    "subtitle": "Each video is linked to a match: a YouTube or Facebook link, or a file on this device. You code the actions there, you draw there, and the match report fills in. {{app}} stores no video.",
+    "subtitle": "Each video is linked to a match: a YouTube or Facebook link, a file on this device, or a video uploaded to {{app}} (paid). You code the actions there, you draw there, and the match report fills in. With a link or a file, {{app}} stores no video.",
     "new": "Add a video",
     "newTitle": "Add a match video",
     "projectTitle": "Title (optional)",
@@ -459,7 +460,7 @@
     "noMatch": "No match (training, scouting)",
     "create": "Open the studio",
     "empty": "No video yet",
-    "emptyBody": "Film your match with a phone, put the video on YouTube or Facebook, then add its link here. {{app}} stores no video.",
+    "emptyBody": "Film your match with a phone, put the video on YouTube or Facebook, then add its link here: {{app}} stores nothing. Or upload it to {{app}}, with the price shown first.",
     "file": "File: {{name}}",
     "noFile": "No video yet",
     "delete": "Delete the project",

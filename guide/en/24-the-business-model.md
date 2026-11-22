@@ -85,6 +85,21 @@ It is a paid option, on top of any plan, because it has a direct cost for the pl
 
 The $2.99 price is a proposal to confirm, not a final tariff: the margin is thin, and the cost drops with one frame every 10 seconds or a cheaper model (the site owner can set another one). Since payments are not connected, access goes through an **access code** given after payment, which the user types in the studio. For the option to work, the site owner must enter, in the hosting settings, the Anthropic API key (ANTHROPIC_API_KEY) and the list of valid codes (ANALYSE_CODES), and if wanted the model (ANTHROPIC_VISION_MODEL). Until that is done, the studio says the AI analysis is not activated on this site yet. A code has no quota yet: in-app payment and a number of matches per code are on the roadmap (chapter 26).
 
+## The new offers: the club, hosted video, pickup games
+
+Three offers come on top of the plans with Part X of this guide. Like the plans, their prices are **proposals to be confirmed** with the first clubs and the first groups, and none of them collects anything today.
+
+| Offer | Proposed price | Who pays | What is paid for | Chapter |
+|---|---|---|---|---|
+| **Club and academy** (the club space) | $49 a month | The club | Every team, the club's game model, the members and their rights, the video library, recruitment profiles, analytics | 27 |
+| **Match pass** (hosted video) | $2.99 per match | The team | One video up to 2 h and 4 GB, kept 12 months | 31 |
+| **Club video** (hosted video) | $14.99 a month | The club | 20 h of uploads a month, every team, each video kept 12 months | 31 |
+| **Organiser plan** (pickup games) | $3.99 a month or $34.99 a year, 30-day trial | The organiser | Fee tracking, the season summary and its export, balanced teams, co-organisers, more than three groups | 30 |
+
+Two rules hold these offers together. The first: **what is free stays free**. YouTube and Facebook links cost Ndamba nothing, so they stay free; hosting only charges for storage and for playing anywhere. Pickup players always play for free; only the organiser, who saves time, pays. The second: **the price follows a known cost**. Storing a 2 GB match costs about $0.36 a year (based on $0.015 per GB per month, the rate of object storage such as Cloudflare R2); the $2.99 Match pass therefore leaves the margin needed for uploading, playback and viewing rights.
+
+**A small line: Amazon affiliation.** The **Filming** page recommends gear (a tall tripod, a phone mount, a power bank, a weight bag, and the Veo Go) with Amazon search links that carry the Amazon Associates tag. Ndamba earns a commission on qualifying purchases, at no extra cost to the buyer, and the page says so. It is side income, probably modest, and it is not counted in the scenarios below; Ndamba is not affiliated with Veo or with any manufacturer.
+
 ## The real state: payments are not connected
 
 A banner at the top of the Premium page says it plainly: "Payments are not connected yet. Mobile Money and cards are coming soon. Meanwhile, you can activate any plan in demo mode and try everything, without paying."
@@ -113,6 +128,7 @@ The choice of a "local first" app, where data stays on the device, keeps today's
 - **Hosting.** The platform is a static site: the app, both books with their illustrations and the *Lionceaux Football* game (about 25 MB on first launch, according to its page). There is no database server. Cost mainly follows traffic.
 - **Mola's optional AI model.** This is one of the two server functions, at /api/mola. When the key is configured, most messages typed to Mola go to the Anthropic API (the default model is claude-haiku-5-5): the message, cut to 600 characters, a set of instructions and a short context, for a reply capped at 400 tokens. Chapter 25 lists the exceptions. Cost follows the number of messages. Without a key, the function replies that it is not configured, the rules engine answers on its own, and this line costs nothing.
 - **The optional AI match analysis.** The second server function, at /api/analyse, receives frames of a match and passes them to the Anthropic API. Its cost, about $2.5 per match at one frame every 6 seconds, is covered by the price asked for each match (see above). Without a key and codes, it does nothing and this line costs nothing.
+- **Storage for hosted videos, to come.** About $0.015 per GB per month, with no egress fee on storage such as Cloudflare R2: roughly $0.36 a year for a 2 GB match. Nothing is stored today, since uploading is a demonstration (chapter 31).
 - **Costs to come.** Accounts and sync (servers, storage, security), payment provider fees, support, coach education, and the writing and illustration of books 2 to 6 of the saga.
 
 Today's lightness has a counterpart: backups are the user's job (chapter 25).

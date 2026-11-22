@@ -5,6 +5,10 @@ import { VIDEO_HOSTING } from '../../lib/config'
 import type { Hosting, VideoProject } from '../../lib/types'
 import { nowISO, todayISO } from '../../lib/util'
 
+/** Object URLs of demonstration uploads made in this page session. After a reload they are gone: the studio asks for the file again. */
+export const LIVE_BLOBS = new Set<string>()
+export function demoUrl(file: File) { const u = URL.createObjectURL(file); LIVE_BLOBS.add(u); return u }
+
 export type HostPlan = Hosting['plan']
 export interface FileMeta { file: File; name: string; sizeMB: number; duration: number | null }
 
@@ -55,11 +59,11 @@ export function clubSecondsThisMonth(videos: readonly VideoProject[]) {
 
 export function fmtSize(mb: number, lang: 'fr' | 'en') {
   const nf = (v: number, d: number) => v.toLocaleString(lang === 'fr' ? 'fr-FR' : 'en-US', { maximumFractionDigits: d })
-  return mb >= 1024 ? `${nf(mb / 1024, 2)} ${lang === 'fr' ? 'Go' : 'GB'}` : `${nf(mb, 0)} ${lang === 'fr' ? 'Mo' : 'MB'}`
+  return mb >= 1024 ? `${nf(mb / 1024, 2)} ${lang === 'fr' ? 'Go' : 'GB'}` : `${nf(mb, mb < 10 ? 1 : 0)} ${lang === 'fr' ? 'Mo' : 'MB'}`
 }
 
 export function fmtDuration(s: number, lang: 'fr' | 'en') {
   const h = Math.floor(s / 3600), m = Math.round((s % 3600) / 60)
-  if (h === 0) return `${m} min`
+  if (h === 0) return s < 60 ? `${Math.max(1, Math.round(s))} s` : `${m} min`
   return lang === 'fr' ? `${h} h ${String(m).padStart(2, '0')}` : `${h} h ${m} min`
 }

@@ -24,7 +24,7 @@ export default function ClubJoin() {
         {club && member ? (
           <>
             <h1 className="mt-4 font-display text-[26px] font-semibold text-ink">{t('join.title', { club: club.name })}</h1>
-            <p className="mt-2 text-[15px] text-ink-soft">{t('join.for', { name: member.name, role: t(`roles.${member.role}`) })}</p>
+            <p className="mt-2 text-[15px] text-ink-soft">{t('join.for', { name: member.name, role: t(`roles.${member.role}`).toLowerCase() })}</p>
             {teams.length > 0 && <p className="mt-1 text-[14px] text-ink-muted">{teams.join(', ')}</p>}
             <p className="mt-4 rounded-xl bg-sand/60 px-4 py-3 text-left text-[13.5px] leading-relaxed text-ink-soft"><ShieldCheck size={15} className="mr-1.5 inline -mt-0.5 text-forest-700" aria-hidden="true" />{t('join.honest')}</p>
             <Link to="/app/club/membres" className="btn-primary mt-5 inline-flex">{t('join.open')}</Link>

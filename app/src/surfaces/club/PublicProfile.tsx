@@ -9,6 +9,7 @@ import type { Clip, VideoProject } from '../../lib/types'
 import { todayISO } from '../../lib/util'
 import { EmptyState } from '../../ui'
 import { Crest } from './components/bits'
+import { consentOk } from './components/consent'
 import { currentSeason, groupBy, playerSeason, resolveClip, useClubData } from './components/data'
 import { HighlightReel } from './components/HighlightReel'
 import { SeasonNumbers } from './components/SeasonNumbers'
@@ -19,7 +20,7 @@ export default function PublicProfile() {
   const { t } = useT('club')
   const data = useClubData()
   const player = data.players.find((p) => p.id === id)
-  const visible = !!player?.recruit?.public && !!data.club?.publicProfiles
+  const visible = !!player && !!player.recruit?.public && !!data.club?.publicProfiles && consentOk(player)
   useDocumentTitle(visible && player ? t('public.docTitle', { name: player.name }) : t('public.title'))
   const eventsByMatch = useMemo(() => groupBy(data.events, (e) => e.matchId), [data.events])
   const season = useMemo(() => (player ? playerSeason(player, data.matches, eventsByMatch) : null), [player, data.matches, eventsByMatch])

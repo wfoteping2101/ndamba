@@ -50,7 +50,7 @@ export interface Player {
   skills: Partial<Record<SkillKey, 1 | 2 | 3 | 4>>
   notes?: string
   /** recruitment profile (club): what a recruiter or a scholarship office sees */
-  recruit?: { public: boolean; bio?: string; heightCm?: number; highlightClipIds?: string[] }
+  recruit?: { public: boolean; bio?: string; heightCm?: number; highlightClipIds?: string[]; /** when the club recorded the parents' (or the now-adult player's) consent to a public profile */ consentAt?: string }
   createdAt: string
 }
 

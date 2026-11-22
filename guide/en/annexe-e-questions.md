@@ -49,6 +49,12 @@ In **Settings**, **Erase everything** deletes the profile, the teams and everyth
 **In which languages?**
 The app is in French and English: the FR and EN button switches the whole interface. The books are read in French. More languages are planned, at the pace of the federations that join the model (chapters 4 and 26).
 
+**How can I discover the whole app quickly?**
+With the **Guided tour**, at /visite: 32 steps on the pro club demo, about fifteen minutes, each step opening the right page (chapter 6).
+
+**Can several coaches of one club share the club space?**
+Not from their own devices yet. The club space, its members and their rights exist, but everything lives on the club's device: an invitation confirms the person, it does not attach them. Sharing will come with accounts (chapters 26 and 27).
+
 ## The plans
 
 **How much does Ndamba cost?**
@@ -62,6 +68,15 @@ The two books to read freely, the 64 drills of the method, Mola to guide you, fi
 
 **Are some plan lines ahead of the app?**
 Yes. Two lines of **Club and academy** carry the words "coming soon": staff accounts, which need user accounts, on the roadmap, and the club game model, which today is built through support work. Under **Federation**, coach education and support are services delivered by people (chapters 24 and 26).
+
+**How much do pickup games cost?**
+Nothing for players, ever. The organiser can take the organiser plan, proposed at $3.99 a month or $34.99 a year after a 30-day free trial: fee tracking, season summary, balanced teams, co-organisers. Payments are not connected: the trial and the plan are a demonstration (chapter 30).
+
+**Does Ndamba collect the Mobile Money fees?**
+No. Players send the fee to the organiser in their own Mobile Money app, with a game code in the transfer note; the organiser ticks the payment. Ndamba never touches the money (chapter 30).
+
+**What does Ndamba earn on the recommended gear?**
+The Amazon links on the **Filming** page carry the Amazon Associates tag: Ndamba earns a commission on qualifying purchases, without changing the price. Ndamba is not affiliated with Veo (chapter 31).
 
 ## Mola
 
@@ -82,11 +97,17 @@ No. The bands (35, 50, 65 and 80) come from the book, and the report says so its
 **Is the analysis done by hand?**
 Yes, and on purpose. A person watches the match and taps a button for each action: completed pass, pass that breaks a line, loss, ball won back within five seconds, shot. The recommended way is to do it on the video: each code keeps its moment, so it can be watched again, checked and corrected, in slow motion if needed. That is how analysts work, and it is what gives the Njangi Index. The paid AI analysis adds estimates drawn from the frames (possession, territory, block, rest defence, moments to watch again), but does not count every pass. Live tagging from the touchline remains possible for a match that is not filmed, with nothing to watch again afterwards. Automatic detection of every action is on the roadmap (chapters 12, 14 and 26).
 
-**Why not upload the video straight to Ndamba?**
-Because a match video weighs several gigabytes: storing and streaming it for every club would cost a lot in servers and bandwidth, and that cost would fall on the clubs. So Ndamba uses what already exists. You put the video on YouTube as "unlisted" or on Facebook, and you paste its link: Ndamba keeps only the link. Or you open the file on the device, filmed with the phone for example: it is never sent, but it has to be reopened on each visit (chapter 12).
+**Can I upload the video straight to Ndamba?**
+Yes, as a paid option: the Match pass ($2.99, one video up to 2 h and 4 GB, kept 12 months) or Club video ($14.99 a month, 20 h of uploads). Today this flow is a demonstration: nothing is sent or billed until the site owner connects storage (chapter 31). The free way stays the simplest, because a match video weighs several gigabytes: Ndamba uses what already exists. You put the video on YouTube as "unlisted" or on Facebook, and you paste its link: Ndamba keeps only the link. Or you open the file on the device, filmed with the phone for example: it is never sent, but it has to be reopened on each visit (chapter 12).
 
 **Can I tag a match on a phone?**
 Yes. The video studio and the live screen adapt to the phone, with large buttons, and the studio's **Film** button opens the camera. An assistant, a volunteer parent or a substitute can tag, after reading the table of codes (chapter 12).
+
+**Do the report's maps come from GPS tracking?**
+No. Every point on a map is an action coded by a person, then placed with a tap on a mini-pitch with **Place on the pitch**. Distance covered, speed and sprints need a tracking camera: that is on the roadmap, and the app says so at the top of every map (chapter 28).
+
+**Can I show clips to the players?**
+Yes. The studio makes a clip for every coded shot and goal, and you can make others, draw on them and put them in a video session that plays full screen. A clip from a file or a hosted video exports as a video, without sound; for a YouTube video, you copy the link to the moment (chapter 29).
 
 **Does video count in the match Index?**
 Yes. When a video is linked to a match, every code placed in the studio goes into that match's report, with its moment in the video: the Index, the report and the season are built from those codes. There is only one tagging per match: if the match was first tagged live, the studio offers to replace those codes with the video's, after a confirmation. Notes and drawings stay in the studio (chapters 13 and 14).
@@ -94,7 +115,10 @@ Yes. When a video is linked to a match, every code placed in the studio goes int
 ## Young players and families
 
 **Are children's data protected?**
-They stay on the coach's or the family's device, with no account and nothing sent. Videos are not stored by Ndamba: for minors, prefer unlisted YouTube or a file kept on the device, and the AI analysis only sends frames after a ticked box confirming the agreement of the players and their parents. With young players, the Index measures the team, never a child, and the report asks the staff to keep the player contributions table to themselves. The principles to follow on the day accounts arrive (parents' consent, everyone sees only what concerns them) are set out in chapter 25.
+They stay on the coach's or the family's device, with no account and nothing sent. Videos are not stored by Ndamba (paid hosting is still a demonstration): for minors, prefer unlisted YouTube or a file kept on the device, and the AI analysis only sends frames after a ticked box confirming the agreement of the players and their parents. With young players, the Index measures the team, never a child, and the report asks the staff to keep the player contributions table to themselves. The principles to follow on the day accounts arrive (parents' consent, everyone sees only what concerns them) are set out in chapter 25.
+
+**Can a club publish a young player's profile?**
+The recruitment profile can become public if the club allows it and opens that profile. For a minor, this guide asks for the parents' written consent before any publication; the app does not ask for it by itself yet. Today the link only opens on the club's device (chapters 25 and 27).
 
 **From what age?**
 The *Lionceaux* novel is for ages 8 to 12. In the app, the player space changes at 16: before, today's challenge, the lesson of the day, progress and the notebook; from 16, a performance space with the match week, form and load (chapters 15 and 20).

@@ -38,14 +38,14 @@ Pas besoin d'une caméra fixe sur un mât. Un téléphone suffit, s'il est bien 
 - **Batterie externe et mode avion** : un match de 90 minutes vide une batterie, et un appel interrompt l'enregistrement.
 - **De la place libre** : un match entier en haute définition pèse plusieurs gigaoctets. La qualité 720p suffit pour coder.
 
-Un parent bénévole, un joueur blessé ou un adjoint peut tenir ce rôle. Le bouton **Filmer** du studio vidéo ouvre directement la caméra du téléphone (chapitre 14) : la vidéo enregistrée s'ouvre aussitôt dans le studio.
+Un parent bénévole, un joueur blessé ou un adjoint peut tenir ce rôle. La page **Filmer** du menu reprend ces conseils avec un schéma, et son bouton **Filmer maintenant**, comme le bouton **Filmer** du studio vidéo, ouvre directement la caméra du téléphone : la vidéo enregistrée s'ouvre aussitôt dans le studio (chapitre 31).
 
 > [!ASTUCE] Filmer les deux mi-temps du même côté
 > Laissez le téléphone au même endroit en seconde période. Les équipes changent de côté, pas la caméra : c'est plus simple pour coder, et l'analyse IA sait inverser les côtés à partir du coup d'envoi de la seconde mi-temps.
 
 ## Mettre la vidéo en ligne
 
-Ndamba ne stocke aucune vidéo. Un match pèse des gigaoctets ; les héberger pour des milliers d'équipes coûterait une fortune et ralentirait tout le monde, surtout sur les réseaux mobiles. La vidéo reste donc chez vous, de deux façons au choix :
+Par défaut, Ndamba ne stocke aucune vidéo. Un match pèse des gigaoctets ; les héberger gratuitement pour des milliers d'équipes coûterait une fortune et ralentirait tout le monde, surtout sur les réseaux mobiles. La vidéo reste donc chez vous, de deux façons gratuites au choix :
 
 1. **Sur YouTube**, publiée en « non répertoriée » : seuls ceux qui ont le lien la voient, elle n'apparaît pas dans les recherches. Pas en « privée » : une vidéo privée ne s'affiche nulle part ailleurs que sur YouTube. Laissez l'intégration autorisée, c'est le réglage par défaut.
 2. **Sur Facebook**, publiée en public, sur la page du club par exemple.
@@ -54,12 +54,14 @@ Une fois la vidéo en ligne, copiez son lien depuis le bouton « Partager ». Nd
 
 Troisième possibilité, sans internet : garder le **fichier sur cet appareil**, celui que le téléphone vient d'enregistrer ou que vous avez copié depuis une caméra. Le fichier n'est jamais envoyé ; il faut le rouvrir à chaque visite, parce que Ndamba ne le garde pas en mémoire. C'est aussi le fichier que lit l'analyse IA : YouTube et Facebook ne permettent pas de télécharger leurs vidéos, donc l'IA ne peut pas lire un lien.
 
+Quatrième possibilité, payante : **Envoyer sur Ndamba**. La vidéo est hébergée par Ndamba, se lit partout sans rouvrir de fichier, et l'analyse IA peut la lire. Le Pass match est proposé à 2,99 $US et le Club vidéo à 14,99 $US par mois ; aujourd'hui, ce parcours est une démonstration, rien n'est envoyé ni facturé (chapitre 31).
+
 ## Ajouter la vidéo dans Ndamba
 
 Depuis **Analyse**, la feuille de match, le rapport vide ou la page **Les vidéos des matchs**, le bouton d'ajout ouvre la fenêtre **Ajouter la vidéo d'un match** :
 
 1. **Match** : le match déjà choisi si vous venez de sa ligne ; sinon choisissez-le. Un match qui a déjà sa vidéo est grisé, un match n'a qu'une vidéo.
-2. **Où est la vidéo ?** : **Lien YouTube ou Facebook** (conseillé) ou **Fichier sur cet appareil**.
+2. **Où est la vidéo ?** : **Lien YouTube ou Facebook** (conseillé), **Fichier sur cet appareil** ou **Envoyer sur Ndamba (payant)**.
 3. **Lien de la vidéo** : collez le lien. Sous le champ, **Vidéo YouTube reconnue.** ou **Vidéo Facebook reconnue.** confirme ; un lien qui n'est pas une vidéo est signalé.
 4. **Titre (facultatif)** : laissé vide, il prend le nom du match, par exemple « Étoile de la Côte contre Avenir du Mungo ».
 
@@ -69,13 +71,13 @@ Depuis **Analyse**, la feuille de match, le rapport vide ou la page **Les vidéo
 
 ## Coder sur la vidéo
 
-Le codage suit trois gestes, détaillés au chapitre 14 :
+Le codage suit trois gestes, détaillés au chapitre 14 ; le chapitre 29 montre en plus comment placer chaque action sur le terrain et monter des clips :
 
 1. **Marquer les coups d'envoi.** Placez la vidéo sur le coup d'envoi de la première mi-temps et touchez **Marquer ici** ; faites de même pour la seconde. Ndamba en déduit les minutes du match : si la seconde période commence à 55 minutes de vidéo, un code placé à 61 minutes devient la 52e minute.
 2. **Lire et toucher.** Mettez la vidéo en lecture et touchez un code au moment de l'action, ou utilisez le clavier. En cas de doute, reculez de 5 secondes, ralentissez à 0,5x, avancez image par image.
-3. **Relire.** La liste des **Extraits** ramène à chaque action. Un code faux se supprime d'un geste et se recode au bon moment.
+3. **Relire.** La liste **Actions codées**, au bas de l'onglet **Coder**, ramène à chaque action. Un code faux se supprime d'un geste et se recode au bon moment.
 
-Chaque code part tout de suite dans le rapport du match, avec son moment dans la vidéo. Le rapport se remplit à mesure ; ses buts portent un bouton **Revoir** qui rouvre la vidéo au bon endroit (chapitre 13).
+Chaque code part tout de suite dans le rapport du match, avec son moment dans la vidéo. Le rapport se remplit à mesure ; ses buts portent un bouton **Revoir** qui rouvre la vidéo au bon endroit (chapitre 13). Avec **Placer sur le terrain**, chaque code reçoit aussi sa place sur un mini-terrain et le numéro du joueur : c'est ce qui remplit les cartes du rapport (chapitre 28). Le match de la démo club pro, contre Météore de Bafoussam, a été codé ainsi sur sa vidéo : 783 actions, placées et attribuées.
 
 ## Les boutons et leurs codes
 
@@ -148,7 +150,7 @@ Sur le plan **Gratuit**, comme sur **Joueur Premium** qui ne comprend pas les ou
 
 ## Un match, un seul codage
 
-Un match n'a qu'un codage : sur sa vidéo, ou en direct. Si vous avez codé en direct et que la vidéo arrive ensuite, ajoutez-la : le studio affiche un bandeau jaune, par exemple « Ce match a déjà 783 codes saisis en direct. », et propose **Remplacer par le codage vidéo**. La fenêtre **Remplacer le codage en direct ?** prévient que les codes du direct seront supprimés et que le score ne change pas. Tant que vous n'avez pas confirmé, les boutons du studio restent inactifs : on ne mélange jamais deux codages, sinon les actions compteraient deux fois.
+Un match n'a qu'un codage : sur sa vidéo, ou en direct. Si vous avez codé en direct et que la vidéo arrive ensuite, ajoutez-la : le studio affiche un bandeau jaune qui compte les codes déjà saisis (« Ce match a déjà ... codes saisis en direct. ») et propose **Remplacer par le codage vidéo**. La fenêtre **Remplacer le codage en direct ?** prévient que les codes du direct seront supprimés et que le score ne change pas. Tant que vous n'avez pas confirmé, les boutons du studio restent inactifs : on ne mélange jamais deux codages, sinon les actions compteraient deux fois.
 
 Dans la liste **Matchs analysés**, une petite étiquette dit comment chaque match a été codé : **sur vidéo** ou **en direct**. Le rapport le dit aussi.
 

@@ -12,7 +12,7 @@ import { fmtT } from './model'
 /* ------------------------------------------------------------------ export */
 
 export function ExportDialog({ clip, title, subtitle, src, brand, fileBase, onClose }: { clip: Clip | null; title: string; subtitle?: string; src: string; brand: string; fileBase: string; onClose: () => void }) {
-  const { t } = useT('editor')
+  const { t, lang } = useT('editor')
   const [p, setP] = useState(0)
   const [state, setState] = useState<'run' | 'done' | 'fail'>('run')
   const [file, setFile] = useState<{ url: string; name: string; size: number } | null>(null)
@@ -37,7 +37,7 @@ export function ExportDialog({ clip, title, subtitle, src, brand, fileBase, onCl
   useEffect(() => () => { if (file) URL.revokeObjectURL(file.url) }, [file])
   const close = () => { job.current?.cancel(); onClose() }
   if (!clip) return null
-  const mb = file ? (file.size / 1048576).toFixed(1) : ''
+  const mb = file ? (file.size / 1048576).toLocaleString(lang === 'en' ? 'en-US' : 'fr-FR', { maximumFractionDigits: 1, minimumFractionDigits: 1 }) : ''
   return (
     <Modal open onClose={close} title={t('export.title')}
       footer={state === 'run'
@@ -50,14 +50,14 @@ export function ExportDialog({ clip, title, subtitle, src, brand, fileBase, onCl
       <p className="mt-0.5 text-[13px] text-ink-muted">{t('clips.range', { a: fmtT(clip.start), b: fmtT(clip.end) })}</p>
       {state === 'run' && (
         <div className="mt-4" role="status">
-          <div className="flex justify-between text-[13px] font-semibold text-ink-soft"><span>{t('export.running')}</span><span className="tabular-nums">{Math.round(p * 100)} %</span></div>
+          <div className="flex justify-between text-[13px] font-semibold text-ink-soft"><span>{t('export.running')}</span><span className="tabular-nums">{lang === 'en' ? `${Math.round(p * 100)}%` : `${Math.round(p * 100)} %`}</span></div>
           <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-sand"><div className="h-full rounded-full bg-forest-600 transition-[width]" style={{ width: `${Math.max(2, p * 100)}%` }} /></div>
           <p className="mt-2 text-[12.5px] text-ink-muted">{t('export.realtime')}</p>
         </div>
       )}
       {state === 'done' && file && <p className="mt-4 rounded-xl bg-forest-50 px-3 py-2 text-[13.5px] text-forest-700" role="status">{t('export.done', { name: file.name, mb })}</p>}
       {state === 'fail' && <p className="mt-4 rounded-xl bg-clay-50 px-3 py-2 text-[13.5px] text-clay-700" role="alert">{t('export.fail')}</p>}
-      <p className="mt-3 text-[12px] text-ink-faint">{t('export.noSound')}</p>
+      <p className="mt-3 text-[12px] text-ink-faint">{t(clip.drawing ? 'export.noSound' : 'export.noSoundPlain')}</p>
     </Modal>
   )
 }

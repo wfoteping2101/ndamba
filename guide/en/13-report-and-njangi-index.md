@@ -21,22 +21,22 @@ With no code at all, the page shows **No tags for this match yet**: "Add the mat
 
 ## The header: score, goals and actions
 
-![The top of the pro club demo report: the green banner with Étoile de la Côte 2, Météore de Bafoussam 1, the Win label, the three goals (Serge Eyoum in the 22nd minute, Météore de Bafoussam in the 54th, Hamidou Sali in the 69th), the Fix the tags, Analyse the video and Match sheet buttons, then the Njangi Index gauge at 67.9 and the five sub-indices.](shot:pro-report "The report for the match against Météore de Bafoussam: the header, the gauge and the five sub-indices.")
+![The top of the pro club demo report: the green banner with Étoile de la Côte 2, Météore de Bafoussam 1, the Win label, the three goals (Serge Eyoum in the 22nd minute, Météore de Bafoussam in the 54th, Hamidou Sali in the 69th) each with its Watch button, the player of the match, the Correct on the video and Match sheet buttons, the label 783 tags, coded on the video, the Report, Maps, Players, Timeline and Ask Mola tabs, then the Njangi Index gauge at 67.9 and the five sub-indices.](shot:pro-report "The report for the match against Météore de Bafoussam: the header, the gauge and the five sub-indices.")
 
 At the top, the **Analysis** link takes you back to the analysis page; on the right sit **Copy as text** and **Print** (see below).
 
-The green banner reads **Match report**, then the competition, the date and the venue: "Ligue 1, matchday 9, Saturday, October 24, 2026, at home". Under the score, a label: **Win**, **Draw** or **Defeat**, or **Upcoming** and **In play** for a match that is not finished. The goals follow with their minute (22' and 69' for Étoile, 54' for the opponent), in gold for us and red for them, with the scorer's name when the goal was credited to a player during live tagging. For a match coded on the video, each goal also carries a small **Watch** button: it opens the studio a few seconds before the goal, and the video starts.
+The green banner reads **Match report**, then the competition, the date and the venue: "Ligue 1, matchday 9, Saturday, October 24, 2026, at home". Under the score, a label: **Win**, **Draw** or **Defeat**, or **Upcoming** and **In play** for a match that is not finished. The goals follow with their minute (22' and 69' for Étoile, 54' for the opponent), in gold for us and red for them, with the scorer's name when the goal was credited to a player, live or on the video. For a match coded on the video, each goal also carries a small **Watch** button: it opens the studio a few seconds before the goal, and the video starts. When the staff has chosen a player of the match (**Players** tab, chapter 28), a line shows it: "Player of the match: Serge Eyoum".
 
 Below a line, three actions and a counter:
 
 - **Fix the tags** reopens the live tagger for this match. Its log lets you delete a tag or change the player it is credited to (chapter 12). For a match coded on the video, this button becomes **Correct on the video** and opens the studio. The report recalculates by itself.
 - **Analyse the video**, for a match coded live, opens the match video or the window to add it. Coding the video will then replace the live coding, after confirmation (chapter 12).
 - **Match sheet** opens the match sheet (chapter 11).
-- On the right, the number of codes behind the report and where they come from: **783 tags, coded live**, or for example **20 tags, coded on the video**. A live coding should be read with more caution: nobody can watch it again.
+- On the right, the number of codes behind the report and where they come from: **783 tags, coded on the video** in the demo, or "coded live" for a match coded from the touchline. A live coding should be read with more caution: nobody can watch it again.
 
-![The top of the report of a match coded on the video in the demo: Étoile de la Côte against Avenir du Mungo, the 1st-minute goal with its Watch button, the Correct on the video and Match sheet buttons, the label 20 tags, coded on the video, and the Index gauge.](shot:pro-report-video "A report coded on the video: every goal can be watched again with one tap.")
+## The five tabs of the report
 
-This last example is a trial on a 24-second demo video: its very high Index means nothing, it only shows the screen. An Index is read over a whole match, coded the same way as the others.
+Under the header sit five tabs: **Report**, **Maps**, **Players**, **Timeline** and **Ask Mola**. This chapter describes the first, **Report**, open by default. The other four read the same codes differently: maps of shots, passing network, heat, regains and territory; one card per player and the player of the match; the match momentum and the Index by quarter of an hour; and Mola's answers to questions about the match. Chapter 28 covers them in detail, along with the **Maps and season** page.
 
 ## The Njangi Index gauge and its band
 
@@ -125,10 +125,10 @@ At the bottom: "Week of the match against Rapides de Kribi, Saturday, October 31
 ![The full report of the demo match, from the header to the player contributions table, through the summary, the objectives, the match timeline, the key numbers and the sub-index explanations.](shot:pro-report-full "The whole report: each section answers one precise question.")
 
 - **Key numbers**: passes attempted and completion, conservation K (82%), progressive actions, final third entries, shots on target, fixation actions, losses, regains within 5 seconds (28% of losses).
-- **Complementary benchmarks**: the **Estimated possession share** and the **Field tilt** (our share of final third entries against the opponent's). They stay empty without the opponent codes (**Their pass**, **Their lost pass**, **Their final third**), always present in the video studio and offered as an option live. **Opponent shots** shows "9 (1)" here: nine shots, one of them on target, the goal conceded in the 54th minute. There is no "their shot on target" button: an opponent goal counts as a shot on target.
+- **Complementary benchmarks**: the **Estimated possession share** and the **Field tilt** (our share of final third entries against the opponent's). With the opponent codes (**Their pass**, **Their lost pass**, **Their final third**), always present in the video studio and offered as an option live, possession is counted on both teams' passes. Without them, it is estimated from the time of our sequences, as on the **Territory** map of the **Maps** tab (chapter 28), marked "by the clock": "44.8% (by the clock)" in the demo. The **Field tilt** stays empty without the opponent codes. **Opponent shots** shows "9 (1)" here: nine shots, one of them on target, the goal conceded in the 54th minute. There is no "their shot on target" button: an opponent goal counts as a shot on target.
 - **The match, five minutes at a time**: our actions on the ball as bars, then our regains (light green) and losses (red), with goals marked by a dot. Tap a bar for its numbers, or **See the data**.
 - **Compared with the previous match**: a grey bar for the match before, a green one for this one. Here: "This is the first analysed match: the comparison will appear with the next one."
-- **Player contributions**: the tags credited to each player during live tagging, from passes to regains. The video studio does not credit actions to players yet: this table stays empty for a match coded on the video.
+- **Player contributions**: the tags credited to each player, from passes to regains, with a total. They come from the **Who?** strip when tagging live, or from the studio's **Place on the pitch** panel (chapter 29): in the demo, Guy Mbock leads with 102 actions. The **Players** tab turns them into one card per player (chapter 28).
 - **Code record**: the fourteen codes, for us and for the opponent, and the base totals, everything you need to recompute the Index by hand.
 
 For a U15 team or younger, the contributions table carries this reminder: "With young players, the Index measures the team, never a child. Keep this table for the staff and never compare players in front of the group."

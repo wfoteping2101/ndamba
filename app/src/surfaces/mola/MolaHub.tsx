@@ -70,7 +70,7 @@ export default function MolaHub() {
 
       {tab === 'chat' && (
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_288px]">
-          <div className="-mx-4 flex h-[calc(100dvh-17rem)] min-h-[460px] flex-col overflow-hidden border-y border-line bg-paper sm:mx-0 sm:rounded-[22px] sm:border lg:h-[calc(100dvh-15.5rem)] lg:min-h-[560px]">
+          <div data-tour="mola-chat" className="-mx-4 flex h-[calc(100dvh-17rem)] min-h-[460px] flex-col overflow-hidden border-y border-line bg-paper sm:mx-0 sm:rounded-[22px] sm:border lg:h-[calc(100dvh-15.5rem)] lg:min-h-[560px]">
             <ChatPanel className="h-full" chipsClassName="lg:hidden" after={<Suggestions />} autoFocus={typeof window !== 'undefined' && window.innerWidth >= 1024} prefill={prefill} />
           </div>
           <aside className="hidden lg:block">

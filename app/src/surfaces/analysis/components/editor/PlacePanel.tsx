@@ -70,6 +70,14 @@ export function PlacePanel({ target, roster, onPlace, onPlayer, onReceiver, onCl
     return () => { window.removeEventListener('keydown', k, true); window.clearTimeout(timer.current) }
   }, [target?.id, ours, roster]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // a code tapped low in the pad: bring the place panel back into view so the tap on the pitch is obvious
+  const box = useRef<HTMLElement>(null)
+  useEffect(() => {
+    if (!target || !box.current) return
+    const r = box.current.getBoundingClientRect()
+    if (r.top < 70 || r.bottom > window.innerHeight - 20) box.current.scrollIntoView({ block: 'center', behavior: 'smooth' })
+  }, [target?.id]) // eslint-disable-line react-hooks/exhaustive-deps
+
   const tap = (e: RPointerEvent<SVGSVGElement>) => {
     if (!target) return
     const b = e.currentTarget.getBoundingClientRect()
@@ -83,7 +91,7 @@ export function PlacePanel({ target, roster, onPlace, onPlayer, onReceiver, onCl
   const value = step === 'to' ? target?.toPlayerId : target?.playerId
 
   return (
-    <section className={cx('rounded-card border bg-paper p-2.5', target ? 'border-forest-300' : 'border-line')} aria-label={t('place.title')}>
+    <section ref={box} className={cx('rounded-card border bg-paper p-2.5', target ? 'border-forest-300' : 'border-line')} aria-label={t('place.title')}>
       <div className="flex min-h-[34px] items-center gap-2">
         <span className="min-w-0 flex-1 truncate text-[13px] font-semibold text-ink" aria-live="polite">
           {target ? t('place.for', { what: t(labelKey(target.code, target.side)), t: fmtT(target.t) }) : t('place.idle')}

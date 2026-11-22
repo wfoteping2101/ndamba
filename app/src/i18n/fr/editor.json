@@ -8,8 +8,15 @@
   "noMatch": "Aucun match (entraînement, observation)",
   "noMatchHint": "Liez un match pour que ce codage remplisse son rapport et compte dans la saison.",
   "report": "Rapport du match",
-  "tabs": { "coder": "Coder", "clips": "Clips", "seances": "Séances", "ia": "IA" },
-  "kick": { "summary": "{{a}} et {{b}}" },
+  "tabs": {
+    "coder": "Coder",
+    "clips": "Clips",
+    "seances": "Séances",
+    "ia": "IA"
+  },
+  "kick": {
+    "summary": "{{a}} et {{b}}"
+  },
   "moments": {
     "title": "Moments choisis",
     "label": "Moment {{i}} / {{n}}",
@@ -18,14 +25,21 @@
     "again": "Revoir ce moment",
     "close": "Fermer la liste des moments"
   },
-  "panel": { "label": "Outils du montage" },
+  "panel": {
+    "label": "Outils du montage"
+  },
   "hosted": {
     "label": "Hébergée sur {{app}}",
     "demo": "démonstration",
     "error": "La vidéo hébergée ne se charge pas. Vérifiez la connexion, puis réessayez.",
-    "retry": "Réessayer"
+    "retry": "Réessayer",
+    "demoReopen": "Démonstration : rien n'a été envoyé, rouvrez le fichier pour revoir la vidéo"
   },
-  "source": { "change": "Changer de vidéo", "youtube": "Sur YouTube", "facebook": "Sur Facebook" },
+  "source": {
+    "change": "Changer de vidéo",
+    "youtube": "Sur YouTube",
+    "facebook": "Sur Facebook"
+  },
   "file": {
     "pick": "Ouvrir la vidéo du match",
     "pickHint": "Choisissez le fichier sur cet appareil, filmez maintenant avec la caméra, ou collez un lien YouTube ou Facebook.",
@@ -85,11 +99,32 @@
     "hint": "Comptés à part, jamais dans l'Indice",
     "rowUs": "Nous",
     "rowThem": "Eux",
-    "name": { "CORNER": "Corner", "FREEKICK": "Coup franc", "PENALTY": "Penalty", "THROWIN": "Touche", "GOALKICK": "Six mètres" },
-    "us": { "CORNER": "Corner", "FREEKICK": "Coup franc", "PENALTY": "Penalty", "THROWIN": "Touche", "GOALKICK": "Six mètres" },
-    "them": { "CORNER": "Corner adverse", "FREEKICK": "Coup franc adverse", "PENALTY": "Penalty adverse", "THROWIN": "Touche adverse", "GOALKICK": "Six mètres adverse" }
+    "name": {
+      "CORNER": "Corner",
+      "FREEKICK": "Coup franc",
+      "PENALTY": "Penalty",
+      "THROWIN": "Touche",
+      "GOALKICK": "Six mètres"
+    },
+    "us": {
+      "CORNER": "Corner",
+      "FREEKICK": "Coup franc",
+      "PENALTY": "Penalty",
+      "THROWIN": "Touche",
+      "GOALKICK": "Six mètres"
+    },
+    "them": {
+      "CORNER": "Corner adverse",
+      "FREEKICK": "Coup franc adverse",
+      "PENALTY": "Penalty adverse",
+      "THROWIN": "Touche adverse",
+      "GOALKICK": "Six mètres adverse"
+    }
   },
-  "note": { "ph": "Votre note (par ex. : le pivot se retourne)", "add": "Ajouter la note" },
+  "note": {
+    "ph": "Votre note (par ex. : le pivot se retourne)",
+    "add": "Ajouter la note"
+  },
   "place": {
     "toggle": "Placer sur le terrain",
     "title": "Placement de l'action",
@@ -168,9 +203,18 @@
     "autoHint": "Clip automatique : il suit l'action codée et ne se modifie pas. Dupliquez-le pour le modifier.",
     "autoTitle": "{{what}}, {{minute}}",
     "autoTitleWho": "{{what}}, {{name}}, {{minute}}",
-    "kind": { "goal": "But", "goalThem": "But adverse", "shot": "Tir", "shotThem": "Tir adverse" },
+    "kind": {
+      "goal": "But",
+      "goalThem": "But adverse",
+      "shot": "Tir",
+      "shotThem": "Tir adverse"
+    },
     "filter": "Filtrer les clips",
-    "f": { "all": "Tous", "auto": "Auto", "mine": "Les miens" },
+    "f": {
+      "all": "Tous",
+      "auto": "Auto",
+      "mine": "Les miens"
+    },
     "byPlayer": "Filtrer par joueur",
     "anyPlayer": "Tous les joueurs",
     "range": "{{a}} à {{b}}",
@@ -225,7 +269,16 @@
     "button": "Dessiner",
     "on": "Dessin",
     "layer": "Calque de dessin sur la vidéo",
-    "tools": { "arrow": "Flèche", "circle": "Cercle", "free": "Main levée", "spotlight": "Projecteur", "rect": "Zone", "poly": "Zone libre", "connect": "Relier", "text": "Texte" },
+    "tools": {
+      "arrow": "Flèche",
+      "circle": "Cercle",
+      "free": "Main levée",
+      "spotlight": "Projecteur",
+      "rect": "Zone",
+      "poly": "Zone libre",
+      "connect": "Relier",
+      "text": "Texte"
+    },
     "help": {
       "arrow": "Glissez pour tracer une flèche.",
       "circle": "Glissez depuis le centre pour entourer.",
@@ -236,7 +289,13 @@
       "connect": "Touchez les joueurs l'un après l'autre pour les relier, puis un double appui ou Entrée.",
       "text": "Touchez l'endroit du texte, écrivez, puis Entrée."
     },
-    "colors": { "sun": "Or", "cream": "Blanc", "clay": "Rouge", "mint": "Vert", "sky": "Bleu" },
+    "colors": {
+      "sun": "Or",
+      "cream": "Blanc",
+      "clay": "Rouge",
+      "mint": "Vert",
+      "sky": "Bleu"
+    },
     "textPh": "Votre texte",
     "undo": "Annuler",
     "redo": "Rétablir",
@@ -275,7 +334,8 @@
     "fail": "La vidéo n'a pas pu être fabriquée sur ce navigateur. Essayez avec Chrome ou Edge à jour.",
     "again": "Télécharger à nouveau",
     "cancel": "Annuler",
-    "noSound": "Elle s'ouvre sur le titre, puis l'image dessinée tenue trois secondes. Le son n'est pas inclus."
+    "noSound": "Elle s'ouvre sur le titre, puis l'image dessinée tenue trois secondes. Le son n'est pas inclus.",
+    "noSoundPlain": "Elle s'ouvre sur le titre du clip. Le son n'est pas inclus."
   },
   "keys": {
     "title": "Raccourcis clavier",

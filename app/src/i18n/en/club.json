@@ -71,12 +71,12 @@
   },
   "needs": {
     "players": "Add the squad: the team has no players yet.",
-    "code": "Code a first match, live or on video, to start the season's Indice.",
+    "code": "Code a first match, live or on video, to start the season's Njangi Index.",
     "weak": "Weak point of the season: {{sub}} ({{v}} out of 20). One to work on this week.",
     "none": "Everything is in place.",
     "next": "Next match: {{date}}, against {{opponent}}",
     "noNext": "No match scheduled.",
-    "indice": "Indice {{v}}"
+    "indice": "Index {{v}}"
   },
   "subs": {
     "progression": "Progression",
@@ -125,7 +125,7 @@
     "last": "Last results",
     "noResults": "No match played yet.",
     "vs": "v {{opponent}}",
-    "indice": "Season Indice",
+    "indice": "Season Njangi Index",
     "noIndice": "No coded match yet.",
     "open": "Open",
     "matches": "Matches"
@@ -241,8 +241,8 @@
     },
     "codedN_one": "Coded: {{count}} action",
     "codedN_other": "Coded: {{count}} actions",
-    "codedIndice_one": "Coded: {{count}} action, Indice {{v}}",
-    "codedIndice_other": "Coded: {{count}} actions, Indice {{v}}",
+    "codedIndice_one": "Coded: {{count}} action, Index {{v}}",
+    "codedIndice_other": "Coded: {{count}} actions, Index {{v}}",
     "todo": "To code",
     "clips_one": "{{count}} clip",
     "clips_other": "{{count}} clips",
@@ -269,7 +269,7 @@
     "publicFor": "Public profile of {{name}}",
     "noMatch": "No player matches.",
     "empty": "No players in the club's teams yet.",
-    "note": "A complete profile needs no photo: number, position, foot, year of birth, height, a short bio, video clips and contributions to the Indice."
+    "note": "A complete profile needs no photo: number, position, foot, year of birth, height, a short bio, video clips and contributions to the Njangi Index."
   },
   "completeness": {
     "number": "Number",
@@ -279,7 +279,7 @@
     "height": "Height",
     "bio": "Short bio",
     "clips": "Video clips",
-    "indice": "Indice contributions",
+    "indice": "Njangi Index contributions",
     "done": "done",
     "missing": "to complete"
   },
@@ -290,10 +290,10 @@
   },
   "analytics": {
     "title": "The club in numbers, season {{season}}",
-    "lead": "The Indice Njangi of each team from its coded matches. To compare matches, players and clips, open the analysis studio.",
+    "lead": "The Njangi Index of each team from its coded matches. To compare matches, players and clips, open the analysis studio.",
     "studio": "Open the analysis studio",
     "reports": "Match reports",
-    "compare": "Season Indice by team",
+    "compare": "Season Njangi Index by team",
     "compareHint": "Out of 100. The marks show the bands: 35, 50, 65 and 80.",
     "barLabel": "{{team}}: Indice {{v}} out of 100",
     "none": "No coded match yet.",
@@ -390,5 +390,14 @@
     "unknownTitle": "Invitation not found on this device",
     "unknown": "This invitation was created on a club's device. Until accounts exist, it only opens there. Ask the club's manager to show you the club space.",
     "home": "Discover Ndamba"
+  },
+  "consent": {
+    "title": "Consent for a public profile",
+    "body": "{{name}} (born {{year}}) may be under 18.",
+    "shows": "A public profile shows their name, year of birth, position, bio and clips to anyone with the link. Only open it if it truly serves their plans (academy, scholarship, club).",
+    "check": "A parent or guardian has agreed in writing, or the player is an adult and has agreed. The club keeps this consent.",
+    "confirm": "Make public",
+    "onFile": "Consent recorded on {{date}}.",
+    "needed": "This player may be under 18: a parent's or guardian's consent will be asked before the profile goes public."
   }
 }

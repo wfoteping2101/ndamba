@@ -21,13 +21,16 @@ export default function Sessions() {
   useDocumentTitle(t('sessions.docTitle'))
   const { team } = useSession()
   const quota = useSessionQuota()
-  const [tab, setTab] = useState<'upcoming' | 'past'>('upcoming')
+  const [chosen, setTab] = useState<'upcoming' | 'past' | null>(null)
   const [creating, setCreating] = useState(false)
   const [toDelete, setToDelete] = useState<Session | null>(null)
   const { toast, toastNode } = useToast()
   const all = useLiveQuery(async () => (await db.sessions.toArray()).filter(forTeam(team?.id)).sort(sortSessions), [team?.id], null as Session[] | null)
   const today = todayISO()
 
+  const counts = { upcoming: (all ?? []).filter((s) => s.date >= today).length, past: (all ?? []).filter((s) => s.date < today).length }
+  // nothing ahead but a past week: open on the past sessions rather than an empty list
+  const tab = chosen ?? (counts.upcoming === 0 && counts.past > 0 ? 'past' : 'upcoming')
   const groups = useMemo(() => {
     const list = (all ?? []).filter((s) => (tab === 'upcoming' ? s.date >= today : s.date < today))
     if (tab === 'past') list.reverse()
@@ -35,7 +38,6 @@ export default function Sessions() {
     for (const s of list) { const k = weekStart(s.date); map.set(k, [...(map.get(k) ?? []), s]) }
     return [...map.entries()]
   }, [all, tab, today])
-  const counts = { upcoming: (all ?? []).filter((s) => s.date >= today).length, past: (all ?? []).filter((s) => s.date < today).length }
 
   const duplicate = async (s: Session) => {
     if (quota.limited) { setCreating(true); return }

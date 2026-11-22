@@ -98,7 +98,7 @@ export function Radar({ a, b, aLabel, bLabel, format }: { a: RadarValues; b: Rad
   const poly = (s: (number | null)[]) => s.map((f, i) => (f == null ? null : pt(i, Math.max(0.02, f)))).filter((p): p is readonly [number, number] => !!p).map((p) => p.join(',')).join(' ')
   return (
     <div>
-      <svg viewBox={`0 0 ${S} 300`} className="mx-auto block h-auto w-full max-w-[440px]" role="img" aria-label={t('season.radarAria', { a: aLabel, b: bLabel })}>
+      <svg viewBox={`-80 0 ${S + 160} 300`} className="mx-auto block h-auto w-full max-w-[520px]" role="img" aria-label={t('season.radarAria', { a: aLabel, b: bLabel })}>
         {[0.25, 0.5, 0.75, 1].map((f) => <polygon key={f} points={RADAR_KEYS.map((_, i) => pt(i, f).join(',')).join(' ')} fill="none" stroke={f === 1 ? C.line : '#ECEFE8'} />)}
         {RADAR_KEYS.map((k, i) => {
           const [x, y] = pt(i, 1)

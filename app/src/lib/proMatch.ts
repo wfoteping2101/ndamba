@@ -80,7 +80,8 @@ export function proDemoEvents(matchId: string, players: Player[], goals: { half:
   const pick = (half: 1 | 2, t: number, code: EventCode) => {
     const kind = PRO_KIND[code]
     const squad = onPitch(half, t)
-    const w = squad.map((p) => (kind ? PRO_W[kind][p.position] ?? 0.05 : 1))
+    // a position missing from a weight table gets a small share, except the keeper (no shot, no final third for him)
+    const w = squad.map((p) => (kind ? PRO_W[kind][p.position] ?? (p.position === 'GK' ? 0 : 0.05) : 1))
     let x = rnd() * w.reduce((a, b) => a + b, 0)
     for (let i = 0; i < squad.length; i++) { x -= w[i]; if (x <= 0) return squad[i].id }
     return squad[squad.length - 1]?.id
@@ -159,6 +160,8 @@ export function proDemoEvents(matchId: string, players: Player[], goals: { half:
     if (shot && g.side === 'us' && g.playerId) for (const e of out) if (e.half === g.half && e.t === shot.t && e.side === 'us' && (e.code === 'SHOT' || e.code === 'SHOT_IN')) e.playerId = g.playerId
     out.push({ id: uid('ev_'), matchId, half: g.half, t: at, code: 'GOAL', side: g.side, playerId: g.side === 'us' ? g.playerId : undefined, createdAt: nowISO() })
   }
+  // a shot on target belongs to the player who took the shot
+  for (const e of out) if (e.side === 'us' && e.code === 'SHOT_IN') { const s = out.find((x) => x.side === 'us' && x.code === 'SHOT' && x.half === e.half && x.t === e.t); if (s) e.playerId = s.playerId }
   return out
 }
 

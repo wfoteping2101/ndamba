@@ -85,6 +85,21 @@ C'est une option payante, en plus de n'importe quelle formule, parce qu'elle a u
 
 Le prix de 2,99 $US est une proposition à confirmer, pas un tarif définitif : la marge est mince, et le coût baisse si l'on choisit une image toutes les 10 secondes ou un modèle moins cher (le propriétaire du site peut en régler un autre). Comme les paiements ne sont pas branchés, l'accès passe par un **code d'accès** remis après paiement, que l'utilisateur tape dans le studio. Pour que l'option fonctionne, le propriétaire du site doit lui-même renseigner, dans les réglages de l'hébergement, la clé de l'API d'Anthropic (ANTHROPIC_API_KEY) et la liste des codes valables (ANALYSE_CODES), et s'il le souhaite le modèle (ANTHROPIC_VISION_MODEL). Tant que ce n'est pas fait, le studio annonce que l'analyse IA n'est pas encore activée sur ce site. Un code n'a pas encore de quota : le paiement dans l'application et un nombre de matchs par code sont sur la feuille de route (chapitre 26).
 
+## Les nouvelles offres : le club, la vidéo hébergée, les matchs entre amis
+
+Trois offres s'ajoutent aux formules depuis la partie X de ce guide. Comme les formules, leurs prix sont des **propositions à confirmer** avec les premiers clubs et les premiers groupes, et aucune n'encaisse quoi que ce soit aujourd'hui.
+
+| Offre | Prix proposé | Qui paie | Ce qui est payé | Chapitre |
+|---|---|---|---|---|
+| **Club et académie** (l'espace club) | 49 $US par mois | Le club | Toutes les équipes, le modèle de jeu du club, les membres et leurs droits, la vidéothèque, les profils de recrutement, l'analytique | 27 |
+| **Pass match** (vidéo hébergée) | 2,99 $US le match | L'équipe | Une vidéo jusqu'à 2 h et 4 Go, gardée 12 mois | 31 |
+| **Club vidéo** (vidéo hébergée) | 14,99 $US par mois | Le club | 20 h d'envoi par mois, toutes les équipes, chaque vidéo gardée 12 mois | 31 |
+| **Offre organisateur** (matchs entre amis) | 3,99 $US par mois ou 34,99 $US par an, essai de 30 jours | L'organisateur | Le suivi des cotisations, le bilan de saison et son export, les équipes équilibrées, les co-organisateurs, plus de trois groupes | 30 |
+
+Deux règles tiennent ces offres. La première : **ce qui est gratuit le reste**. Les liens YouTube et Facebook ne coûtent rien à Ndamba, donc ils restent gratuits ; l'hébergement ne fait payer que le stockage et la lecture partout. Les joueurs des matchs entre amis jouent toujours gratuitement ; seul l'organisateur, qui gagne du temps, paie. La seconde : **le prix suit un coût connu**. Le stockage d'un match de 2 Go coûte environ 0,36 $US par an (sur la base de 0,015 $US par Go et par mois, le tarif d'un stockage d'objets comme Cloudflare R2) ; le Pass match à 2,99 $US laisse donc la marge nécessaire pour l'envoi, la lecture et les droits.
+
+**Une petite ligne : l'affiliation Amazon.** La page **Filmer** conseille du matériel (un grand trépied, un support de téléphone, une batterie externe, un sac de lest, et la Veo Go) avec des liens de recherche Amazon qui portent l'identifiant du programme Partenaires d'Amazon. Ndamba touche une commission sur les achats qui remplissent les conditions, sans changer le prix pour l'acheteur, et la page l'écrit. C'est un revenu d'appoint, sans doute modeste, qui n'entre pas dans les scénarios ci-dessous ; Ndamba n'est affilié ni à Veo ni à aucun fabricant.
+
 ## L'état réel : les paiements ne sont pas branchés
 
 Un bandeau, en haut de la page Premium, le dit sans détour : « Les paiements ne sont pas encore branchés. Mobile Money et cartes bancaires arrivent bientôt. En attendant, vous pouvez activer n'importe quelle formule en mode démo pour tout essayer, sans payer. »
@@ -113,6 +128,7 @@ Le choix d'une application « locale d'abord », où les données restent sur l'
 - **L'hébergement.** La plateforme est un site statique : l'application, les deux livres avec leurs illustrations et le jeu *Lionceaux Football* (environ 25 Mo au premier lancement, selon sa page). Il n'y a pas de serveur de base de données. Le coût suit surtout le trafic.
 - **Le modèle d'IA de Mola, optionnel.** C'est l'une des deux fonctions serveur, à l'adresse /api/mola. Quand la clé est configurée, la plupart des messages tapés à Mola partent vers l'API d'Anthropic (le modèle par défaut est claude-haiku-5-5) : le message, coupé à 600 caractères, un texte d'instructions et un court contexte, pour une réponse plafonnée à 400 jetons. Le chapitre 25 détaille les exceptions. Le coût suit le nombre de messages. Sans clé, la fonction répond qu'elle n'est pas configurée, le moteur de règles répond seul, et ce poste vaut zéro.
 - **L'analyse IA des matchs, optionnelle.** La seconde fonction serveur, à l'adresse /api/analyse, reçoit des images d'un match et les transmet à l'API d'Anthropic. Son coût, d'environ 2,5 $US par match à une image toutes les 6 secondes, est couvert par le prix demandé pour chaque match (voir plus haut). Sans clé ni codes, elle ne fait rien et ce poste vaut zéro.
+- **Le stockage des vidéos hébergées, à venir.** Environ 0,015 $US par Go et par mois, sans frais de sortie avec un stockage comme Cloudflare R2 : à peu près 0,36 $US par an pour un match de 2 Go. Rien n'est stocké aujourd'hui, l'envoi étant une démonstration (chapitre 31).
 - **Les coûts à venir.** Les comptes et la synchronisation (serveurs, stockage, sécurité), les frais des moyens de paiement, le support, la formation des entraîneurs, et l'écriture et l'illustration des tomes 2 à 6 de la saga.
 
 La légèreté actuelle a une contrepartie : la sauvegarde repose sur l'utilisateur (chapitre 25).

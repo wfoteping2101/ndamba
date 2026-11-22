@@ -26,9 +26,9 @@ Le site public les présente sur une seule page. En haut, la devise ; à droite,
 
 ![La page d'accueil du site Ndamba, avec la devise en grand titre, un terrain animé et les boutons Commencer avec Mola, Démo club pro et Démo académie U13.](shot:site-landing "La page d'accueil : la devise, l'action du tome 1 et l'accès direct aux deux démos.")
 
-## L'application : cinq espaces
+## L'application : six espaces
 
-L'application range ses écrans en quatre groupes de menus, **Entraînement**, **Équipe**, **Analyse** et **Moi**, avec **Accueil** et **Mola** tout en haut. Derrière ces menus, il y a cinq espaces de travail.
+L'application range ses écrans en cinq groupes de menus, **Entraînement**, **Équipe**, **Analyse**, **Jouer** et **Moi**, avec **Accueil** et **Mola** tout en haut. Derrière ces menus, il y a six espaces de travail.
 
 **L'entraînement.** La bibliothèque des 64 exercices de la méthode, chacun animé comme une courte vidéo, avec ses consignes et ses intentions ; le constructeur de séances, qui assemble une séance en quelques touches ; la semaine, qui place chaque séance par rapport au prochain match (de MD-4 à MD-1, le chapitre 2 explique ces codes) et affiche la charge.
 
@@ -36,9 +36,11 @@ L'application range ses écrans en quatre groupes de menus, **Entraînement**, *
 
 **Le match.** L'adversaire, le système, la composition sur le terrain, le plan de jeu des quatre moments et la convocation par WhatsApp ou SMS, préparée dans l'application et envoyée par vous.
 
-**L'analyse.** Le match se filme avec un téléphone, sa vidéo se met sur YouTube ou Facebook (Ndamba ne stocke aucune vidéo), puis se code dans le studio : une touche par action, au bon moment, au ralenti si besoin, et chaque code peut être revu. Sans vidéo, on code en direct depuis la touche, avec les mêmes boutons. L'Indice Njangi, un score de 0 à 100, se calcule à mesure que vous codez. Le rapport de match détaille ses cinq sous-indices et propose les exercices de la semaine suivante. Une analyse IA payante, faite par Claude sur les images du fichier vidéo, ajoute des estimations de possession, de territoire et de bloc.
+**L'analyse.** Le match se filme avec un téléphone, sa vidéo se met gratuitement sur YouTube ou Facebook (l'hébergement sur Ndamba est une option payante), puis se code dans le studio : une touche par action, au bon moment, au ralenti si besoin, avec sa place sur le terrain, et chaque code peut être revu. Sans vidéo, on code en direct depuis la touche, avec les mêmes boutons. L'Indice Njangi, un score de 0 à 100, se calcule à mesure que vous codez. Le rapport de match détaille ses cinq sous-indices et propose les exercices de la semaine suivante. Ses onglets ajoutent les cartes du match (tirs, réseau de passes, chaleur, récupérations), une carte par joueur et la chronologie ; la page **Cartes et saison** fait la même lecture sur dix matchs. Le studio sert aussi au montage : clips, dessins et séances vidéo en plein écran. Une analyse IA payante, faite par Claude sur les images de la vidéo, ajoute des estimations de possession, de territoire et de bloc.
 
 **L'espace joueur.** Pour les plus jeunes : les défis du jour, les 40 Leçons du Ballon, le carnet du Njangi et le parcours. À partir de 16 ans : un espace performance avec la semaine, la forme, la charge et le dernier match.
+
+**Le club et le terrain.** L'espace club réunit toutes les équipes d'un club autour d'un même modèle de jeu, avec ses membres, sa vidéothèque et les profils de recrutement des joueurs. Les matchs entre amis donnent à l'organisateur du match du dimanche une liste avec liste d'attente, le pointage au terrain, des équipes équilibrées et le suivi des cotisations. La page **Filmer** dit où placer la caméra et quel matériel aide vraiment. La partie X de ce guide (chapitres 27 à 31) les détaille.
 
 ![L'accueil de l'entraîneur dans la démo club pro : le bandeau Bonsoir, Daniel avec 4 séances, 303 minutes et le match à J-2, la séance du jour Vitesse : transitions et finition, le prochain match contre les Rapides de Kribi le samedi 31 octobre et le bouton Préparer la semaine.](shot:pro-home "L'accueil de l'entraîneur : aujourd'hui, le prochain match et la semaine, sur un seul écran.")
 
@@ -99,15 +101,16 @@ Le résultat, c'est un vocabulaire unique. Le mot « Fixer » désigne la même 
 Au moment où ce guide est écrit (octobre 2026), voici ce qui fonctionne et que vous pouvez ouvrir vous-même :
 
 - le site public : l'accueil, **Les livres**, **Premium**, la page de la marque, la revue du projet et la conversation d'accueil avec Mola ;
-- l'application complète, en français et en anglais : les 64 exercices, les séances, la semaine, l'effectif et les fiches des joueurs, les matchs et les convocations, le codage des matchs sur vidéo ou en direct, le rapport et l'Indice Njangi, le studio vidéo et l'analyse IA, l'espace joueur, les leçons, le carnet et le parcours, les réglages ;
+- l'application complète, en français et en anglais : les 64 exercices, les séances, la semaine, l'effectif et les fiches des joueurs, les matchs et les convocations, le codage des matchs sur vidéo ou en direct, le rapport et l'Indice Njangi, les cartes du match et la saison, le studio vidéo et son montage (clips, dessins, séances), l'analyse IA, l'espace club, les matchs entre amis, la page **Filmer**, l'espace joueur, les leçons, le carnet et le parcours, les réglages ;
+- une visite guidée de toute l'application, à l'adresse /visite ;
 - Mola, avec son onglet **Discussion**, ses **Tâches** et ses actions **À valider** ;
 - les deux livres en lecture libre, et le jeu *Lionceaux Football* ;
 - deux démos complètes, ouvertes sans compte.
 
-Et voici ce qui n'existe pas encore, dit clairement. Il n'y a pas de comptes utilisateurs ni de synchronisation : vos données restent dans le navigateur de l'appareil, et vous les sauvegardez vous-même en exportant un fichier depuis **Réglages**. Les formules et leurs prix sont affichés, mais les paiements ne sont pas branchés : le bouton **Activer (démo)** active une formule sans aucun paiement, et la page le dit. Les comptes du staff, la synchronisation, les paiements par Mobile Money et par carte, et la suite de la saga sont prévus ; le chapitre 26 en donne la feuille de route.
+Et voici ce qui n'existe pas encore, dit clairement. Il n'y a pas de comptes utilisateurs ni de synchronisation : vos données restent dans le navigateur de l'appareil, et vous les sauvegardez vous-même en exportant un fichier depuis **Réglages**. Les formules et leurs prix sont affichés, mais les paiements ne sont pas branchés : le bouton **Activer (démo)** active une formule sans aucun paiement, et la page le dit. De même, l'envoi payant d'une vidéo sur Ndamba et l'offre organisateur des matchs entre amis sont des démonstrations : rien n'est envoyé ni facturé. Les comptes du staff, la synchronisation, les paiements par Mobile Money et par carte, le stockage réel des vidéos, les notifications et la suite de la saga sont prévus ; le chapitre 26 en donne la feuille de route.
 
 > [!INVESTISSEUR] Ce que vous pouvez vérifier en dix minutes
-> Tout ce que décrit ce chapitre s'ouvre depuis la page d'accueil, sans compte et sans installation : choisissez **Démo club pro**, puis ouvrez le rapport du dernier match. Le produit est réel et complet dans un navigateur ; ce qui manque pour passer à l'échelle (comptes, synchronisation, paiements) est connu et listé au chapitre 26. Aucun partenariat ni aucun client n'est revendiqué dans ce guide.
+> Tout ce que décrit ce chapitre s'ouvre depuis la page d'accueil, sans compte et sans installation : choisissez **Démo club pro**, puis ouvrez le rapport du dernier match. Plus simple encore, la **Visite guidée** (adresse /visite) parcourt toute l'application en 32 étapes, environ quinze minutes. Le produit est réel et complet dans un navigateur ; ce qui manque pour passer à l'échelle (comptes, synchronisation, paiements) est connu et listé au chapitre 26. Aucun partenariat ni aucun client n'est revendiqué dans ce guide.
 
 ## Le but : porter le trophée dans les quinze prochaines années
 

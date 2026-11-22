@@ -28,7 +28,7 @@ Ce choix a des conséquences concrètes :
 
 - **Vous travaillez même avec un réseau faible.** Le codage en direct le dit : « Le chrono, les tags et le score sont enregistrés sur l'appareil à chaque tap, même sans réseau. »
 - **Personne d'autre ne voit vos données**, ni l'éditeur de Ndamba, ni un autre entraîneur.
-- **Ndamba ne stocke aucune vidéo.** Avec un lien, la vidéo reste sur YouTube ou sur Facebook, là où vous l'avez mise ; Ndamba ne garde que le lien. Avec un fichier, le studio l'ouvre sur place : il n'est jamais envoyé sur internet, et il faut le rouvrir à chaque visite. Un dessin est gardé avec l'image fixe du moment, en petit format. Seule l'analyse IA, si vous la lancez vous-même, envoie des images fixes du match (voir plus bas).
+- **Ndamba ne stocke aucune vidéo**, sauf l'envoi payant sur Ndamba, qui est aujourd'hui une démonstration où rien ne part (chapitre 31). Avec un lien, la vidéo reste sur YouTube ou sur Facebook, là où vous l'avez mise ; Ndamba ne garde que le lien. Avec un fichier, le studio l'ouvre sur place : il n'est jamais envoyé sur internet, et il faut le rouvrir à chaque visite. Un dessin est gardé avec l'image fixe du moment, en petit format. Seule l'analyse IA, si vous la lancez vous-même, envoie des images fixes du match (voir plus bas).
 - **Mais les données peuvent se perdre.** Effacer les données du navigateur, changer de téléphone ou travailler en navigation privée fait disparaître l'espace s'il n'a pas été sauvegardé. Deux navigateurs sur le même téléphone font deux espaces séparés.
 - **Une démo remplace les données du navigateur.** Quand le navigateur contient déjà votre propre espace, le site prévient avant de la lancer et conseille d'exporter une sauvegarde d'abord.
 
@@ -126,13 +126,19 @@ Un joueur de moins de 16 ans voit un accueil fait pour son âge : le défi du jo
 
 ![L'accueil de BriBri, 12 ans : la devise, ses points d'expérience, sa série, le défi du jour Les pieds rapides et sa progression, sans aucun classement.](shot:youth-player-home-linked "Ce que voit un joueur de 12 ans : un défi, sa progression, son parcours, jamais de classement.")
 
-Il n'y a dans Ndamba ni publicité, ni messagerie entre utilisateurs, ni profil public, ni commentaires. Mola ne parle qu'à la personne qui tient l'appareil et ne contacte jamais personne.
+Il n'y a dans Ndamba ni publicité, ni messagerie entre utilisateurs, ni commentaires. Le seul profil public possible est le profil de recrutement d'un joueur, que le club ouvre lui-même (voir plus bas). Mola ne parle qu'à la personne qui tient l'appareil et ne contacte jamais personne.
 
 **Le rôle de parent.** Un parent choisit le rôle **Parent** pendant la conversation d'accueil ; Mola lui demande alors : « Quel âge a votre enfant, ou dans quelle catégorie joue-t-il ? » Son accueil est l'espace jeune de l'enfant, avec un encadré **Pour les parents** : « Quinze minutes, un mur et un ballon suffisent. Restez à côté, aidez à compter et rappelez de boire de l'eau. » Le parent garde cet espace jeune même quand l'enfant grandit. Conseil : pour un enfant de moins de 13 ans, c'est le parent qui crée l'espace, sur un appareil de la famille, et qui le garde.
 
 ![L'accueil d'Estelle, parent dans la démo académie U13 : l'encadré Pour les parents, la carte Le parcours de votre enfant et le défi du jour de l'enfant.](shot:youth-parent-home-named "Le parent voit l'espace de son enfant, avec un encadré qui lui est destiné.")
 
 **Filmer des jeunes.** Une vidéo de match montre des enfants. Demandez l'accord des parents avant de filmer, publiez sur YouTube en « non répertoriée » (seuls ceux qui ont le lien la voient) plutôt qu'en public, et ne partagez le lien qu'avec l'équipe. Une vidéo publiée sur Facebook doit être publique pour s'afficher dans Ndamba : pour des mineurs, préférez YouTube non répertoriée ou un fichier gardé sur l'appareil. Et l'analyse IA demande, par sa case à cocher, l'accord des joueurs filmés et de leurs parents.
+
+**Les profils de recrutement des mineurs.** L'espace club peut donner à un joueur un profil public, avec son nom, son année de naissance, son poste, ses chiffres et ses extraits vidéo (chapitre 27). Deux interrupteurs le protègent : le club doit autoriser les profils publics, puis ouvrir chaque profil un par un ; tout reste privé par défaut. Pour un joueur de moins de 18 ans, la règle de ce guide est simple : pas de profil public sans l'accord écrit de ses parents, et seulement s'il sert vraiment un projet (une académie, une bourse, un essai). L'application le demande : pour un joueur qui a peut-être moins de 18 ans, ouvrir son profil passe par une case à cocher qui confirme l'accord, et la date est notée ; sans elle, la page publique reste fermée. L'accord écrit lui-même, c'est le club qui le garde. Aujourd'hui, le lien du profil ne s'ouvre d'ailleurs que sur l'appareil du club.
+
+**Les matchs entre amis et la position.** Pour pointer au terrain, l'application demande la position du téléphone une fois, au moment où le joueur touche **Je suis là**, et calcule sur le téléphone la distance au terrain, dont l'organisateur a enregistré la position une fois sur place (300 m au plus). Cette position n'est ni gardée en continu ni envoyée : seuls l'heure du pointage et la distance sont notées dans le groupe. Un joueur qui refuse la localisation est pointé par l'organisateur (chapitre 30).
+
+**Les vidéos hébergées.** L'envoi payant d'une vidéo sur Ndamba est aujourd'hui une démonstration : rien ne part, le fichier reste sur l'appareil. Quand l'envoi réel sera branché, la vidéo sera gardée douze mois et ne se lira que pour les membres du club qui en ont le droit, selon le tableau **Qui voit quoi** de l'espace club (chapitres 27 et 31). Filmer des enfants demande toujours l'accord des parents, avant le match.
 
 **Pour les entraîneurs.** L'effectif ne demande que l'année de naissance, pas la date complète, et c'est suffisant. Gardez des notes factuelles et bienveillantes : elles figurent dans les sauvegardes. La forme du jour touche à la santé : ne la demandez qu'à ceux qui en tirent un bénéfice, et lisez-la avec prudence.
 
@@ -147,7 +153,7 @@ Il n'y a dans Ndamba ni publicité, ni messagerie entre utilisateurs, ni profil 
 
 Les comptes et la synchronisation sont prévus pour l'étape 2 du plan (2028 à 2029), ainsi que les comptes du staff de la formule Club et académie. Ce guide propose les principes que cette arrivée devra respecter. Ce sont des engagements à tenir, pas des fonctions déjà construites :
 
-- l'accord d'un parent pour tout compte de mineur ;
+- l'accord d'un parent pour tout compte de mineur, et un accord vérifiable (pas seulement une case cochée par le club) avant d'ouvrir le profil public d'un mineur ;
 - chacun ne voit que ce qui le concerne : un joueur son parcours, un parent celui de son enfant, un staff son équipe ;
 - l'application reste locale d'abord : on travaille sans réseau, la synchronisation suit ;
 - l'export d'une sauvegarde reste toujours possible ;

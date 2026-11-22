@@ -6,11 +6,13 @@ resume: Pour chaque profil, les premiers gestes dans Ndamba, dans l'ordre, avec 
 
 Cette annexe tient sur quelques pages : une fiche par profil, cinq à sept gestes, et le chapitre où chaque geste est expliqué. Les mots en **gras** sont les libellés de l'écran.
 
+Le plus court chemin, pour tous : la **Visite guidée**, à l'adresse /visite ou dans le menu (groupe **Moi**). Elle charge la démo club pro et parcourt toute l'application en 32 étapes, environ quinze minutes, en éclairant à chaque page ce qu'il faut regarder ; on peut commencer à n'importe lequel de ses onze chapitres (chapitre 6).
+
 Pour tous les profils, un repère : en haut à droite de chaque page de l'application, le lien **Comment ça marche ? Guide, chapitre N** ouvre le chapitre qui explique la page. Et deux règles avant de commencer. Vos données restent sur votre appareil, dans votre navigateur : exportez une sauvegarde depuis **Réglages** avant de changer d'appareil (chapitre 6). Et une démonstration remplace les données du navigateur : si vous avez déjà créé votre propre espace, exportez d'abord une sauvegarde (chapitre 5).
 
 ## Investisseur ou partenaire, en trente minutes
 
-1. Ouvrez le site et cliquez sur **Démo club pro**. En quelques secondes, vous êtes dans l'espace de Daniel Mbarga, entraîneur de l'Étoile de la Côte, un club professionnel inventé pour la démonstration (chapitre 5).
+1. Suivez la **Visite guidée** (/visite) pour voir toute l'application en quinze minutes, ou ouvrez le site et cliquez sur **Démo club pro**. En quelques secondes, vous êtes dans l'espace de Daniel Mbarga, entraîneur de l'Étoile de la Côte, un club professionnel inventé pour la démonstration (chapitre 5).
 2. Regardez l'accueil : la séance du jour, le prochain match, la semaine (chapitre 6).
 3. Ouvrez **Analyse** : le bloc **Comment l'analyse fonctionne** dit en trois étapes comment un match s'analyse (filmer, mettre en ligne, coder sur la vidéo). Ouvrez ensuite le rapport du dernier match : l'Indice Njangi de 67,9 sur 100 et ses cinq sous-indices (chapitres 12 et 13).
 4. Ouvrez **Mola** et tapez « Écris la convocation du match ». Regardez les étapes s'afficher : la convocation attend dans l'onglet **À valider**, avec **Approuver et ouvrir WhatsApp** ou **Annuler**. Rien ne sort de l'application sans votre accord (chapitre 18).
@@ -31,9 +33,10 @@ Pour tous les profils, un repère : en haut à droite de chaque page de l'applic
 1. Créez votre espace avec le rôle **Analyste**, ou ouvrez la **Démo club pro** pour vous exercer (chapitres 3 et 5).
 2. Apprenez les boutons de codage et leurs touches, les mêmes sur la vidéo et en direct : **Passe**, **Passe perdue**, **Progressive**, **Ligne traversée**, **Dernier tiers**, **Surface**, **Tir**, **Tir cadré** et **But** (touches 1 à 9), puis **Fixe deux**, **Renversement**, **Perte**, **Reprise 5 s** et **Récupération** (touches F, S, L, K et R), et pour l'adversaire **Tir adverse** et **But adverse** (touches A et B) (chapitre 12).
 3. Dans **Analyse**, touchez **Ajouter la vidéo** sur un match, collez le lien YouTube ou Facebook (ou choisissez le fichier, ou **Filmer** avec la caméra du téléphone), puis **Ouvrir le studio** (chapitre 12).
-4. Dans le studio, marquez les deux coups d'envoi avec **Marquer ici**, puis codez le match, au ralenti si besoin, et dessinez sur les moments à montrer (chapitre 14).
-5. Lisez le rapport : l'Indice, les cinq sous-indices, la comparaison avec le match précédent (dès le deuxième match analysé), les exercices proposés, et **Revoir** sur chaque but pour retrouver son moment dans la vidéo (chapitre 13).
-6. Si le site l'a activée, lancez l'**Analyse IA du match** depuis le fichier vidéo, avec un code d'accès, puis suivez la saison dans **Analyse** (chapitre 14).
+4. Dans le studio, marquez les deux coups d'envoi avec **Marquer ici**, activez **Placer sur le terrain**, puis codez le match, au ralenti si besoin (chapitres 14 et 29).
+5. Ouvrez les onglets **Cartes**, **Joueurs** et **Chronologie** du rapport, puis la page **Cartes et saison** (chapitre 28). Faites trois à cinq clips, dessinez dessus et montez une séance vidéo pour les joueurs (chapitre 29).
+6. Lisez le rapport : l'Indice, les cinq sous-indices, la comparaison avec le match précédent (dès le deuxième match analysé), les exercices proposés, et **Revoir** sur chaque but pour retrouver son moment dans la vidéo (chapitre 13).
+7. Si le site l'a activée, lancez l'**Analyse IA du match** depuis le fichier vidéo, avec un code d'accès, puis suivez la saison dans **Analyse** (chapitre 14).
 
 ## Directeur technique ou dirigeant de club
 
@@ -41,7 +44,8 @@ Pour tous les profils, un repère : en haut à droite de chaque page de l'applic
 2. Lisez le chapitre 2 : le modèle de jeu commun, les sept intentions et la mesure commune.
 3. Regardez comment une semaine se construit autour du match, avec sa charge prévue (chapitre 9).
 4. Suivez la saison : la courbe de l'Indice match après match et les sous-indices de la saison (chapitre 14).
-5. Comparez les formules **Coach Pro** et **Club et académie** sur la page **Premium** (chapitre 24).
+5. Ouvrez **Le club** : le modèle de jeu du club, les équipes, les membres et leurs droits, la vidéothèque, les profils de recrutement et l'onglet **Analytique**, qui compare les équipes (chapitre 27).
+6. Comparez les formules **Coach Pro** et **Club et académie** sur la page **Premium**, avec l'hébergement des vidéos (chapitres 24 et 31).
 
 ## Fédération ou ligue
 
@@ -66,3 +70,12 @@ Pour tous les profils, un repère : en haut à droite de chaque page de l'applic
 3. Lisez avec votre enfant le roman *Lionceaux*, dans **Les livres** : chaque chapitre se termine par une Leçon du Ballon (chapitre 20).
 4. Si le coach vous a confié une sauvegarde, restaurez-la depuis **Réglages**. Attention : la restauration remplace tout ce que contient le navigateur, profil compris ; le profil devient celui du coach. Dans **Réglages**, remettez donc votre nom et le rôle **Parent**, puis **Enregistrer le profil**. Touchez ensuite la carte **Le parcours de votre enfant** et choisissez sa fiche (chapitre 17).
 5. Lisez le chapitre 25 : ce que Ndamba garde, où, et ce qui ne quitte jamais votre appareil.
+
+## Organisateur de matchs entre amis
+
+1. Dans le menu, groupe **Jouer**, ouvrez **Matchs entre amis** et touchez **Créer un groupe** : nom, terrain, jour, heure, cotisation, numéros Mobile Money (chapitre 30).
+2. Une fois au terrain, enregistrez sa position dans les **Réglages** du groupe : le pointage par position acceptera les joueurs à moins de 300 m.
+3. Touchez **Inviter** et partagez le lien sur WhatsApp. Ajoutez vous-même ceux qui répondent par message avec **Ajouter un joueur**.
+4. Créez le match avec **Nouveau match** et une heure de fin des inscriptions.
+5. Le jour du match : pointage, **Équilibrer automatiquement**, score, cotisations.
+6. En fin de mois, ouvrez **Bilan** et **Exporter en CSV**. Les joueurs jouent toujours gratuitement ; l'offre organisateur a un essai gratuit de 30 jours, aujourd'hui en démonstration.

@@ -250,7 +250,7 @@ function proDemoVideo(evs: MatchEvent[], kickoff2: number, duration: number, tea
     source: 'hosted', url: PRO_VIDEO.url, matchId: 'ma_past', teamId, kind: 'match', duration, kickoff1: 0, kickoff2,
     ourColor: fr ? 'bleu et or' : 'blue and gold', theirColor: fr ? 'rouge' : 'red', attackRight1: true,
     hosting: { plan: 'club', uploadedAt: now, demo: true }, tags: [], clips,
-    playlists: [{ id: 'pl_demo_monday', title: fr ? 'Séance vidéo de lundi : nos sorties et notre repos' : 'Monday video session: our build-up and rest defence', clipIds: ['cl_demo_g1', 'cl_demo_line', 'cl_demo_regain', 'cl_demo_loss', 'cl_demo_g2'], note: fr ? 'Quinze minutes, cinq extraits : deux pour ce qui marche, deux pour ce qu\'on corrige, un pour finir sur le plan de jeu.' : 'Fifteen minutes, five clips: two for what works, two to fix, one to end on the game plan.', createdAt: now }],
+    playlists: [{ id: 'pl_demo_monday', title: fr ? 'Séance vidéo de lundi : nos sorties et notre repos' : 'Monday video session: our build-up and rest defence', clipIds: ['cl_demo_line', 'cl_demo_regain', 'cl_demo_loss', 'cl_demo_g2', 'cl_demo_g1'], note: fr ? 'Quinze minutes, cinq extraits : deux pour ce qui marche, deux pour ce qu\'on corrige, un pour finir sur le plan de jeu.' : 'Fifteen minutes, five clips: two for what works, two to fix, one to end on the game plan.', createdAt: now }],
     createdAt: now,
   }
 }

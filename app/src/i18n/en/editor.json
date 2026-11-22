@@ -8,8 +8,15 @@
   "noMatch": "No match (training, scouting)",
   "noMatchHint": "Link a match so this coding fills its report and counts in the season.",
   "report": "Match report",
-  "tabs": { "coder": "Code", "clips": "Clips", "seances": "Sessions", "ia": "AI" },
-  "kick": { "summary": "{{a}} and {{b}}" },
+  "tabs": {
+    "coder": "Code",
+    "clips": "Clips",
+    "seances": "Sessions",
+    "ia": "AI"
+  },
+  "kick": {
+    "summary": "{{a}} and {{b}}"
+  },
   "moments": {
     "title": "Chosen moments",
     "label": "Moment {{i}} / {{n}}",
@@ -18,14 +25,21 @@
     "again": "Watch this moment again",
     "close": "Close the list of moments"
   },
-  "panel": { "label": "Editing tools" },
+  "panel": {
+    "label": "Editing tools"
+  },
   "hosted": {
     "label": "Hosted on {{app}}",
     "demo": "demo",
     "error": "The hosted video does not load. Check the connection, then try again.",
-    "retry": "Try again"
+    "retry": "Try again",
+    "demoReopen": "Demonstration: nothing was sent, open the file again to watch the video"
   },
-  "source": { "change": "Change video", "youtube": "On YouTube", "facebook": "On Facebook" },
+  "source": {
+    "change": "Change video",
+    "youtube": "On YouTube",
+    "facebook": "On Facebook"
+  },
   "file": {
     "pick": "Open the match video",
     "pickHint": "Choose the file on this device, film now with the camera, or paste a YouTube or Facebook link.",
@@ -85,11 +99,32 @@
     "hint": "Counted apart, never in the Index",
     "rowUs": "Us",
     "rowThem": "Them",
-    "name": { "CORNER": "Corner", "FREEKICK": "Free kick", "PENALTY": "Penalty", "THROWIN": "Throw-in", "GOALKICK": "Goal kick" },
-    "us": { "CORNER": "Corner", "FREEKICK": "Free kick", "PENALTY": "Penalty", "THROWIN": "Throw-in", "GOALKICK": "Goal kick" },
-    "them": { "CORNER": "Opponent corner", "FREEKICK": "Opponent free kick", "PENALTY": "Opponent penalty", "THROWIN": "Opponent throw-in", "GOALKICK": "Opponent goal kick" }
+    "name": {
+      "CORNER": "Corner",
+      "FREEKICK": "Free kick",
+      "PENALTY": "Penalty",
+      "THROWIN": "Throw-in",
+      "GOALKICK": "Goal kick"
+    },
+    "us": {
+      "CORNER": "Corner",
+      "FREEKICK": "Free kick",
+      "PENALTY": "Penalty",
+      "THROWIN": "Throw-in",
+      "GOALKICK": "Goal kick"
+    },
+    "them": {
+      "CORNER": "Opponent corner",
+      "FREEKICK": "Opponent free kick",
+      "PENALTY": "Opponent penalty",
+      "THROWIN": "Opponent throw-in",
+      "GOALKICK": "Opponent goal kick"
+    }
   },
-  "note": { "ph": "Your note (e.g. the pivot turns)", "add": "Add the note" },
+  "note": {
+    "ph": "Your note (e.g. the pivot turns)",
+    "add": "Add the note"
+  },
   "place": {
     "toggle": "Place on the pitch",
     "title": "Where the action happened",
@@ -168,9 +203,18 @@
     "autoHint": "Automatic clip: it follows the coded action and cannot be edited. Duplicate it to edit it.",
     "autoTitle": "{{what}}, {{minute}}",
     "autoTitleWho": "{{what}}, {{name}}, {{minute}}",
-    "kind": { "goal": "Goal", "goalThem": "Opponent goal", "shot": "Shot", "shotThem": "Opponent shot" },
+    "kind": {
+      "goal": "Goal",
+      "goalThem": "Opponent goal",
+      "shot": "Shot",
+      "shotThem": "Opponent shot"
+    },
     "filter": "Filter the clips",
-    "f": { "all": "All", "auto": "Auto", "mine": "Mine" },
+    "f": {
+      "all": "All",
+      "auto": "Auto",
+      "mine": "Mine"
+    },
     "byPlayer": "Filter by player",
     "anyPlayer": "All players",
     "range": "{{a}} to {{b}}",
@@ -225,7 +269,16 @@
     "button": "Draw",
     "on": "Drawing",
     "layer": "Drawing layer over the video",
-    "tools": { "arrow": "Arrow", "circle": "Circle", "free": "Freehand", "spotlight": "Spotlight", "rect": "Zone", "poly": "Free zone", "connect": "Connect", "text": "Text" },
+    "tools": {
+      "arrow": "Arrow",
+      "circle": "Circle",
+      "free": "Freehand",
+      "spotlight": "Spotlight",
+      "rect": "Zone",
+      "poly": "Free zone",
+      "connect": "Connect",
+      "text": "Text"
+    },
     "help": {
       "arrow": "Drag to draw an arrow.",
       "circle": "Drag from the centre to circle.",
@@ -236,7 +289,13 @@
       "connect": "Tap the players one after the other to link them, then a double tap or Enter.",
       "text": "Tap where the text goes, type, then Enter."
     },
-    "colors": { "sun": "Gold", "cream": "White", "clay": "Red", "mint": "Green", "sky": "Blue" },
+    "colors": {
+      "sun": "Gold",
+      "cream": "White",
+      "clay": "Red",
+      "mint": "Green",
+      "sky": "Blue"
+    },
     "textPh": "Your text",
     "undo": "Undo",
     "redo": "Redo",
@@ -275,7 +334,8 @@
     "fail": "This browser could not make the video. Try an up-to-date Chrome or Edge.",
     "again": "Download again",
     "cancel": "Cancel",
-    "noSound": "It opens on the title, then the drawn image held for three seconds. Sound is not included."
+    "noSound": "It opens on the title, then the drawn image held for three seconds. Sound is not included.",
+    "noSoundPlain": "It opens on the clip title. Sound is not included."
   },
   "keys": {
     "title": "Keyboard shortcuts",

@@ -16,6 +16,10 @@ This appendix is the complete map. Addresses start after the site's name (for ex
 | /revue | Project review | The four projects (the novel, the method book, the app and the agent) presented one by one, with a change request per section | 4 |
 | /marque | The brand | The logo, Mola's sign, the colours and the rules | 4 |
 | /bienvenue | Welcome | The conversation with Mola that sets up your space, and the two demos | 5 |
+| /visite | Guided tour | Load the pro club demo and walk through the whole app in 32 steps | 6 |
+| /profil/(player) | Player profile | The public page of a recruitment profile, if the club has opened it (on the club's device for now) | 27 |
+| /rejoindre-club/(code) | Club invitation | Confirm an invitation to the club space | 27 |
+| /rejoindre/(code) | Pickup game invite | See the group and join it | 30 |
 | /book/methode/ | Le Code Njangi | The method book, chapter by chapter | 19 |
 | /book/tome1/ | Lionceaux, book 1 | The illustrated novel, chapter by chapter | 20 |
 | /livres/methode and /livres/tome1 | (short addresses) | Lead straight to the two readers above | 19, 20 |
@@ -43,10 +47,20 @@ This appendix is the complete map. Addresses start after the site's name (for ex
 | /app/matchs/(match)/modifier | Matches | Edit a match | 11 |
 | /app/analyse | Analysis | How analysis works, the matches to analyse, the analysed matches, the season | 12, 14 |
 | /app/analyse/live/(match) | Analysis | Live coding from the touchline, without video | 12 |
-| /app/analyse/rapport/(match) | Analysis | The match report and the Njangi Index | 13 |
+| /app/analyse/rapport/(match) | Analysis | The match report and the Njangi Index; ?onglet=cartes, joueurs, chronologie or mola opens another tab | 13, 28 |
 | /app/analyse/video | Analysis | Match videos, and the form to add one | 12, 14 |
 | /app/analyse/video?nouveau=(match) | Analysis (from **Add the video**) | The add form, already set to that match | 12 |
-| /app/analyse/video/(video) | Analysis | The video studio, and the AI match analysis | 14 |
+| /app/analyse/video/(video) | Analysis | The video studio: code, place, clips, drawings, sessions, AI analysis; tabs ?panneau=coder, clips, seances or ia | 14, 29 |
+| /app/analyse/video/(video)?list=(moments) | (from the maps, the players, the timeline) | The studio playing a list of moments one after another | 28 |
+| /app/analyse/video/(video)/seance | (from **Start the session**) | The full-screen video session | 29 |
+| /app/analyse/studio | Maps and season | The last ten matches: form, averages, progression, maps, comparison | 28 |
+| /app/filmer | Filming | Where to put the camera, the three ways to bring in a video, the gear | 31 |
+| /app/club | The club | The club space, Overview tab | 27 |
+| /app/club/equipes, /app/club/membres, /app/club/videos, /app/club/joueurs, /app/club/analytique | The club | The Teams, Members, Video library, Players and Analytics tabs | 27 |
+| /app/club/joueurs/(player) | The club | A player's recruitment profile | 27 |
+| /app/pickup | Pickup games | My next games, my groups, join with a code, the organiser plan | 30 |
+| /app/pickup/(group) | Pickup games | A group: games, members, summary, settings | 30 |
+| /app/pickup/match/(game) | Pickup games | A game: spots, waitlist, check-in, teams, fees, ratings | 30 |
 | /app/joueur | Player space | The player's own space | 15 |
 | /app/joueur/lecons | Player space | The 40 Lessons of the Ball | 16 |
 | /app/joueur/carnet | Player space | The Njangi notebook | 16 |
