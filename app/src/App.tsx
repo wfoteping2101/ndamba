@@ -40,6 +40,7 @@ const Presenter = lazy(() => import('./surfaces/analysis/Presenter'))
 const ClubHome = lazy(() => import('./surfaces/club/ClubHome'))
 const RecruitProfile = lazy(() => import('./surfaces/club/RecruitProfile'))
 const PublicProfile = lazy(() => import('./surfaces/club/PublicProfile'))
+const ClubJoin = lazy(() => import('./surfaces/club/ClubJoin'))
 const PickupHome = lazy(() => import('./surfaces/pickup/PickupHome'))
 const PickupGroup = lazy(() => import('./surfaces/pickup/PickupGroup'))
 const PickupGame = lazy(() => import('./surfaces/pickup/PickupGame'))
@@ -69,6 +70,7 @@ export default function App() {
               <Route path="marque" element={<Brand />} />
               <Route path="profil/:id" element={<PublicProfile />} />
               <Route path="rejoindre/:code" element={<PickupJoin />} />
+              <Route path="rejoindre-club/:code" element={<ClubJoin />} />
             </Route>
             <Route path="bienvenue" element={<Onboarding />} />
             <Route path="visite" element={<TourStart />} />

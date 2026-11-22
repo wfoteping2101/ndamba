@@ -92,3 +92,21 @@ export function MolaAvatar({ size = 40, className, title }: { size?: number; cla
     </svg>
   )
 }
+
+/**
+ * The mark of the AI reading (Claude reads frames of the match video): a small pitch crossed by a reading
+ * line, with the three points it notes. Never a sparkle or stars icon.
+ */
+export function AiMark({ size = 18, className, title }: { size?: number; className?: string; title?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className={className} role={title ? 'img' : undefined} aria-hidden={title ? undefined : true}>
+      {title && <title>{title}</title>}
+      <rect x="2.5" y="5" width="19" height="14" rx="2.5" />
+      <path d="M12 5v14" opacity=".45" />
+      <path d="M8 5v14" strokeDasharray="1.5 2" />
+      <circle cx="8" cy="9" r="1.3" fill="currentColor" stroke="none" />
+      <circle cx="15.5" cy="12" r="1.3" fill="currentColor" stroke="none" />
+      <circle cx="11" cy="15.5" r="1.3" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}

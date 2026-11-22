@@ -381,5 +381,14 @@
     "seasonHint": "Chiffres tirés des matchs codés par le club avec la méthode Njangi.",
     "model": "Le modèle de jeu de {{club}}",
     "deviceNote": "Ce lien fonctionne sur cet appareil seulement, jusqu'à l'arrivée des comptes Ndamba. Les données viennent du club et ne sont pas vérifiées par Ndamba."
+  },
+  "join": {
+    "title": "Invitation au club {{club}}",
+    "for": "Pour {{name}}, comme {{role}}.",
+    "honest": "Aujourd'hui, les données du club vivent sur l'appareil du club : ce lien sert à confirmer l'invitation avec la personne qui vous l'a envoyé. Les comptes, qui permettront de rejoindre le club depuis votre propre téléphone, sont dans la feuille de route.",
+    "open": "Ouvrir l'espace du club",
+    "unknownTitle": "Invitation introuvable sur cet appareil",
+    "unknown": "Cette invitation a été créée sur l'appareil d'un club. Tant que les comptes ne sont pas en place, elle ne s'ouvre que là. Demandez au responsable du club de vous montrer l'espace du club.",
+    "home": "Découvrir Ndamba"
   }
 }

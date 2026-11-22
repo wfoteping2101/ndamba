@@ -1,6 +1,7 @@
 import { useMemo, useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { BookOpen, CalendarPlus, Camera, ChevronRight, Clapperboard, Crown, Film, Link2, MapPin, Play, Radio, Shirt, Sparkles, Trophy, Video } from 'lucide-react'
+import { BookOpen, CalendarPlus, Camera, ChevronRight, Clapperboard, Crown, Film, Link2, MapPin, Play, Radio, Shirt, Trophy, Video } from 'lucide-react'
+import { AiMark } from '../../ui/brand'
 import { db } from '../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
 import { useSession } from '../../lib/session'
@@ -151,7 +152,7 @@ function Hub({ team, free, header }: { team: Team; free: boolean; header: JSX.El
           <p className="text-[13.5px] leading-relaxed text-ink-soft"><b className="text-ink">{t('how.liveTitle')}</b> {t('how.liveBody')}</p>
         </div>
         <div className="flex gap-3 bg-sand/40 px-5 py-4 sm:px-6">
-          <Sparkles size={18} strokeWidth={1.75} className="mt-0.5 shrink-0 text-sun-700" aria-hidden="true" />
+          <AiMark size={18} className="mt-0.5 shrink-0 text-sun-700" />
           <p className="text-[13.5px] leading-relaxed text-ink-soft"><b className="text-ink">{t('how.aiTitle', { price: AI_ANALYSIS.usdPerMatch.toLocaleString(lang === 'fr' ? 'fr-FR' : 'en-US', { style: 'currency', currency: 'USD' }) })}</b> {t('how.aiBody')}</p>
         </div>
       </div>

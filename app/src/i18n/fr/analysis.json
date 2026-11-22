@@ -574,7 +574,9 @@
     "replaceConfirm_other": "Supprimer les {{count}} codes",
     "replaced": "Codage en direct supprimé : codez maintenant sur la vidéo.",
     "hasVideo": "a déjà sa vidéo",
-    "untitled": "Vidéo du {{date}}"
+    "untitled": "Vidéo du {{date}}",
+    "onNdamba": "Hébergée sur Ndamba",
+    "demoHosting": "démonstration"
   },
   "how": {
     "title": "Comment l'analyse fonctionne",

@@ -7,6 +7,7 @@ import { addDays, nowISO, todayISO, uid, weekStart } from './util'
 import { formationSlots } from './formations'
 import { seedJourney } from './seedJourney' // PARCOURS
 import { seedPickup } from './seedPickup'
+import { seedClub } from './seedClub'
 import { PRO_BENCH, PRO_PAST_GOALS, PRO_ROSTER, PRO_VIDEO, PRO_XI, locateProMatch, proDemoEvents } from './proMatch'
 
 const SKILLS: SkillKey[] = ['scan', 'controle', 'passe', 'conduite', 'dribble-njangi', 'appels', 'communication', 'protection', 'contre-pression', 'decision']
@@ -222,6 +223,7 @@ async function seedProDemo(role: Role, lang: 'fr' | 'en') {
   })
   await seedJourney(lang) // PARCOURS: the season's history (see lib/seedJourney.ts)
   await seedPerformance(role, 'pro') // PERFORMANCE: four weeks of form and load for Steve Ndjock (see below)
+  await seedClub(lang) // CLUB: the club row, its members and three more teams (see lib/seedClub.ts)
   await seedPickup(lang) // PICKUP: the Sunday game of Bonamoussadi and a Thursday five in Bastos (see lib/seedPickup.ts)
 }
 

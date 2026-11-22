@@ -381,5 +381,14 @@
     "seasonHint": "Figures from the matches the club coded with the Njangi method.",
     "model": "The game model of {{club}}",
     "deviceNote": "This link works on this device only, until Ndamba accounts arrive. The data comes from the club and is not verified by Ndamba."
+  },
+  "join": {
+    "title": "Invitation to {{club}}",
+    "for": "For {{name}}, as {{role}}.",
+    "honest": "Today the club's data lives on the club's device: this link is a way to confirm the invitation with the person who sent it. Accounts, which will let you join the club from your own phone, are on the roadmap.",
+    "open": "Open the club space",
+    "unknownTitle": "Invitation not found on this device",
+    "unknown": "This invitation was created on a club's device. Until accounts exist, it only opens there. Ask the club's manager to show you the club space.",
+    "home": "Discover Ndamba"
   }
 }

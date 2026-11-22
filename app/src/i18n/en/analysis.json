@@ -574,7 +574,9 @@
     "replaceConfirm_other": "Delete the {{count}} codes",
     "replaced": "Live coding deleted: now code on the video.",
     "hasVideo": "already has its video",
-    "untitled": "Video of {{date}}"
+    "untitled": "Video of {{date}}",
+    "onNdamba": "Hosted on Ndamba",
+    "demoHosting": "demonstration"
   },
   "how": {
     "title": "How the analysis works",

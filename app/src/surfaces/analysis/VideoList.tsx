@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type FormEvent } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import { ArrowLeft, ChevronRight, Clapperboard, FileVideo, Image as ImageIcon, Link2, Plus, Sparkles, Trash2, Video } from 'lucide-react'
+import { ArrowLeft, CloudUpload, ChevronRight, Clapperboard, FileVideo, Image as ImageIcon, Link2, Plus, Trash2, Video } from 'lucide-react'
+import { AiMark } from '../../ui/brand'
 import { db } from '../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
 import { useSession } from '../../lib/session'
@@ -77,8 +78,10 @@ export default function VideoList() {
                   <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-ink-faint">
                     {p.source === 'youtube' || p.source === 'facebook'
                       ? <span className="inline-flex items-center gap-1"><Link2 size={13} />{t(p.source === 'youtube' ? 'video.onYoutube' : 'video.onFacebook')}</span>
-                      : <span className="inline-flex items-center gap-1"><FileVideo size={13} />{p.fileName ?? t('video.noFile')}</span>}
-                    {p.ai?.frames.length ? <span className="inline-flex items-center gap-1 text-sun-700"><Sparkles size={13} />{t('ai.short')}</span> : null}
+                      : p.source === 'hosted'
+                        ? <span className="inline-flex items-center gap-1"><CloudUpload size={13} />{t('video.onNdamba')}{p.hosting?.demo ? ` (${t('video.demoHosting')})` : ''}</span>
+                        : <span className="inline-flex items-center gap-1"><FileVideo size={13} />{p.fileName ?? t('video.noFile')}</span>}
+                    {p.ai?.frames.length ? <span className="inline-flex items-center gap-1 text-sun-700"><AiMark size={13} />{t('ai.short')}</span> : null}
                     {p.duration ? <span>{t('video.duration', { d: fmtClock(p.duration) })}</span> : null}
                     <span>{t('video.tags', { count: visible.length })}</span>
                     {images > 0 && <span className="inline-flex items-center gap-1"><ImageIcon size={13} />{images}</span>}
