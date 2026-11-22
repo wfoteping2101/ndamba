@@ -1,7 +1,8 @@
 // The paid AI reading of a match, in the video studio. Honest about what it is:
 // frames read every few seconds, estimates to check, moments to watch again. Never a replacement for coding.
 import { useMemo, useRef, useState } from 'react'
-import { ArrowLeft, ArrowRight, FileVideo, KeyRound, Play, Sparkles, Square } from 'lucide-react'
+import { ArrowLeft, ArrowRight, FileVideo, KeyRound, Play, Square } from 'lucide-react'
+import { AiMark } from './editor/AiMark'
 import { db } from '../../../lib/db'
 import { useT } from '../../../i18n'
 import { AI_ANALYSIS } from '../../../lib/config'
@@ -57,7 +58,7 @@ export function AiPanel({ project, src, duration, onSeek, onPickFile }: {
   return (
     <section className="card card-pad" aria-labelledby="ai-h">
       <div className="flex items-start gap-3">
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sun-50 text-sun-700"><Sparkles size={19} strokeWidth={1.75} /></span>
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sun-50 text-sun-700"><AiMark size={20} /></span>
         <div className="min-w-0 flex-1">
           <h2 id="ai-h" className="font-display text-lg font-semibold text-ink">{t('ai.title')}</h2>
           <p className="mt-0.5 text-[13px] text-ink-muted">{t('ai.subtitle', { price })}</p>
@@ -161,7 +162,7 @@ export function AiPanel({ project, src, duration, onSeek, onPickFile }: {
           </label>
           {error && <p className="rounded-xl bg-clay-50 px-3 py-2 text-[13px] text-clay-700" role="alert">{t(`ai.error.${error}`)}</p>}
           <button type="button" className="btn-sun w-full justify-center" disabled={!ready} onClick={start}>
-            <Sparkles size={17} />{partial ? t('ai.resume', { done: ai!.frames.length }) : ai?.doneAt ? t('ai.again') : t('ai.start')}
+            <AiMark size={17} />{partial ? t('ai.resume', { done: ai!.frames.length }) : ai?.doneAt ? t('ai.again') : t('ai.start')}
           </button>
         </div>
       )}
