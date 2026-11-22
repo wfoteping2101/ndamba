@@ -101,12 +101,12 @@ export function AiMark({ size = 18, className, title }: { size?: number; classNa
   return (
     <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className={className} role={title ? 'img' : undefined} aria-hidden={title ? undefined : true}>
       {title && <title>{title}</title>}
-      <rect x="2.5" y="5" width="19" height="14" rx="2.5" />
-      <path d="M12 5v14" opacity=".45" />
-      <path d="M8 5v14" strokeDasharray="1.5 2" />
-      <circle cx="8" cy="9" r="1.3" fill="currentColor" stroke="none" />
-      <circle cx="15.5" cy="12" r="1.3" fill="currentColor" stroke="none" />
-      <circle cx="11" cy="15.5" r="1.3" fill="currentColor" stroke="none" />
+      <rect x="2.5" y="5" width="19" height="14" rx="2" />
+      <path d="M12 5v14" opacity=".55" />
+      <circle cx="12" cy="12" r="2.4" opacity=".55" />
+      <path d="M2.5 9.5h2.8v5H2.5M21.5 9.5h-2.8v5h2.8" opacity=".55" />
+      <path d="M8 2.5v19" strokeWidth={2.1} />
+      <path d="M8 2.5l-1.6 1.6M8 2.5l1.6 1.6" strokeWidth={1.5} />
     </svg>
   )
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Check, CheckCircle2, ChevronDown, CloudUpload, CreditCard, ScanEye, X } from 'lucide-react'
+import { Check, CheckCircle2, ChevronDown, CloudUpload, CreditCard, X } from 'lucide-react'
+import { AiMark } from '../../ui/brand'
 import { AI_ANALYSIS, PLANS, VIDEO_HOSTING, type PlanDef } from '../../lib/config'
 import { db } from '../../lib/db'
 import { useDocumentTitle } from '../../lib/hooks'
@@ -64,7 +65,7 @@ export default function Pricing() {
 
       {/* the AI reading of a match: sold per match, on top of any plan */}
       <section className="mt-6 grid gap-4 rounded-panel border border-line bg-paper p-5 sm:grid-cols-[auto_minmax(0,1fr)_auto] sm:items-center sm:p-6" aria-labelledby="ai-addon-h">
-        <span className="grid h-12 w-12 place-items-center rounded-2xl bg-sun-50 text-sun-700"><ScanEye size={22} strokeWidth={1.75} aria-hidden="true" /></span>
+        <span className="grid h-12 w-12 place-items-center rounded-2xl bg-sun-50 text-sun-700"><AiMark size={22} /></span>
         <div className="min-w-0">
           <h2 id="ai-addon-h" className="text-[20px] leading-tight text-ink sm:text-[22px]">{t('pricing.ai.title')}</h2>
           <p className="mt-1.5 max-w-3xl text-[14.5px] leading-relaxed text-ink-muted">{t('pricing.ai.body')}</p>
