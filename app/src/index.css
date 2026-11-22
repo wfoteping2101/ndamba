@@ -100,6 +100,7 @@
   /* The floating Mola launcher (AppLayout wraps it in .mola-dock). A page lifts it above its own
      sticky action bar, or hides it, with useMolaDock() from src/ui. The open chat is never moved. */
   .mola-dock { display: contents; }
+  html[data-tour='on'] .mola-dock { display: none; }
   html[data-mola-dock='lift'] .mola-dock > .fixed:not([role='dialog']) { transform: translateY(calc(-1 * var(--mola-lift, 0px))); }
   html[data-mola-dock='hide'] .mola-dock > .fixed:not([role='dialog']) { display: none; }
 

@@ -1,3 +1,178 @@
 {
-  "title": "Visite guidée"
+  "title": "Visite guidée",
+  "kicker": "Visite guidée de Ndamba",
+  "back": "Retour au site",
+  "intro": "Faites le tour complet de l'application sur un vrai club de démonstration : Étoile de la Côte, club de Ligue 1 à Douala, avec ses quatre équipes, ses membres, un match codé sur sa vidéo et des matchs entre amis. Chaque étape ouvre la bonne page et éclaire ce qu'il faut regarder.",
+  "start": "Commencer la visite",
+  "loading": "Préparation du club de démonstration…",
+  "duration": "{{n}} étapes, environ 15 minutes",
+  "note": "La visite charge la démo dans ce navigateur. Vous pouvez cliquer partout pendant la visite, la carte vous suit. Rien n'est envoyé.",
+  "ownData": "Ce navigateur contient déjà vos propres données. La démo les remplace. Pour les garder, exportez-les d'abord depuis Réglages.",
+  "ownDataGo": "Remplacer par la démo et commencer",
+  "cancel": "Annuler",
+  "chaptersTitle": "Commencer où vous voulez",
+  "chaptersHint": "Chaque chapitre ouvre la démo à sa première étape.",
+  "steps_count_one": "{{count}} étape",
+  "steps_count_other": "{{count}} étapes",
+  "count": "{{n}} / {{total}}",
+  "quit": "Quitter la visite",
+  "prev": "Étape précédente",
+  "next": "Suivant",
+  "finish": "Terminer",
+  "jump": "Aller au chapitre",
+  "chapters": {
+    "welcome": "Bienvenue",
+    "training": "Entraîner",
+    "team": "L'équipe et les matchs",
+    "club": "Le club",
+    "analyse": "Analyser un match sur vidéo",
+    "editor": "Le montage et la séance vidéo",
+    "maps": "Le rapport, les cartes et la saison",
+    "filming": "Filmer et héberger",
+    "pickup": "Matchs entre amis",
+    "mola": "Mola",
+    "end": "Les offres"
+  },
+  "chapterText": {
+    "welcome": "L'accueil de l'entraîneur et le lien vers le guide sur chaque page.",
+    "training": "64 exercices animés, la séance et la semaine.",
+    "team": "L'effectif, le parcours d'un joueur, la feuille de match.",
+    "club": "Les équipes, les membres et leurs droits, la vidéothèque, les profils de recrutement.",
+    "analyse": "La page Analyse, le studio, coder une action avec sa place sur le terrain.",
+    "editor": "Clips, dessins, séance vidéo pour les joueurs, analyse IA.",
+    "maps": "Carte des tirs, réseau de passes, actions défensives, joueurs, Mola, saison.",
+    "filming": "Où placer la caméra, le matériel, l'envoi payant d'une vidéo.",
+    "pickup": "Groupes, inscriptions, liste d'attente, présence, équipes, paiements.",
+    "mola": "L'agent qui prépare le travail et attend votre accord."
+  },
+  "steps": {
+    "home": {
+      "title": "L'accueil de l'entraîneur",
+      "body": "Chaque matin, l'accueil dit ce qui compte aujourd'hui : la séance du jour, le prochain match, l'Indice Njangi de l'équipe. Ici, Daniel Mbarga entraîne Étoile de la Côte."
+    },
+    "guide": {
+      "title": "Le guide, à chaque page",
+      "body": "Ce lien ouvre le chapitre du guide qui explique la page où vous êtes, dans un nouvel onglet. Il change de numéro selon la page."
+    },
+    "drills": {
+      "title": "La bibliothèque des 64 exercices",
+      "body": "Tous les exercices du Code Njangi, par famille : techniques, rondos, jeux de position, petits et grands jeux, transitions, finition. Chacun est animé."
+    },
+    "drill": {
+      "title": "Un exercice qui bouge",
+      "body": "Le schéma se joue comme une vidéo : passes, courses, conduites, pas à pas. Mettez en pause, rejouez une étape, montrez-le aux joueurs sur un téléphone."
+    },
+    "sessions": {
+      "title": "Les séances",
+      "body": "Une séance assemble des exercices avec leurs minutes et une intention. Mola peut en préparer une pour vous."
+    },
+    "week": {
+      "title": "La semaine de match",
+      "body": "De MD+1 à MD-1, la charge suit le calendrier : récupération, tension, durée, vitesse, activation. Le samedi, le match."
+    },
+    "roster": {
+      "title": "L'effectif",
+      "body": "Vingt-deux joueurs avec leur poste, leur pied, leurs compétences et leurs notes. Touchez un joueur pour son parcours."
+    },
+    "player": {
+      "title": "Le parcours d'un joueur",
+      "body": "Évaluations datées, observations, présence, objectifs, contributions en match : l'histoire d'un joueur sur la saison."
+    },
+    "matchSheet": {
+      "title": "La feuille de match",
+      "body": "Composition, plan de jeu en cinq moments, et le bouton jaune : ajouter la vidéo du match pour l'analyser."
+    },
+    "club": {
+      "title": "Le club",
+      "body": "Toutes les équipes du club au même endroit : seniors, U19, U17, féminines. Le modèle de jeu du club, partagé par toutes les équipes, et ce dont chaque équipe a besoin."
+    },
+    "clubMembers": {
+      "title": "Les membres et leurs droits",
+      "body": "Administrateurs, entraîneurs, analystes, joueurs, parents : chacun voit ce qui le concerne. Invitez quelqu'un avec un lien que vous envoyez vous-même."
+    },
+    "clubVideos": {
+      "title": "La vidéothèque du club",
+      "body": "Toutes les vidéos de toutes les équipes : matchs, entraînements, observation des adversaires. Filtrez par équipe, par type, par source."
+    },
+    "clubPlayers": {
+      "title": "Les profils de recrutement",
+      "body": "Chaque joueur peut avoir un profil public : poste, pied, taille, chiffres de la saison et ses meilleurs clips. De quoi répondre à un recruteur ou à une université."
+    },
+    "analysis": {
+      "title": "Analyser, c'est coder sur la vidéo",
+      "body": "Filmer le match, mettre la vidéo en ligne, coder chaque action sur la vidéo. La page le dit dès le début."
+    },
+    "studio": {
+      "title": "Le studio vidéo",
+      "body": "Le match contre Météore de Bafoussam, hébergé sur Ndamba : il se lit tout de suite. La vidéo de la démo est une animation 2D tirée des codes du match, pour que chaque action codée se voie à l'écran."
+    },
+    "coding": {
+      "title": "Coder une action, avec sa place",
+      "body": "Un tap sur le code, un tap sur le mini-terrain pour la place, un tap sur le numéro du joueur. C'est ce qui nourrit les cartes du rapport."
+    },
+    "clips": {
+      "title": "Les clips",
+      "body": "Les buts et les tirs ont leur clip automatique. Créez les vôtres avec un début et une fin, un titre, une note, les joueurs concernés."
+    },
+    "drawing": {
+      "title": "Dessiner sur l'image",
+      "body": "Flèches, cercles, projecteur sur un joueur, zones, liens entre joueurs, texte. L'image annotée reste attachée au clip."
+    },
+    "session": {
+      "title": "La séance vidéo",
+      "body": "Cinq clips enchaînés, en plein écran, avec un titre et une note chacun : deux pour ce qui marche, deux pour ce qu'on corrige, un pour finir sur le plan de jeu."
+    },
+    "ai": {
+      "title": "L'analyse IA, en option",
+      "body": "Claude lit une image toutes les quelques secondes et estime la possession, le territoire, la hauteur du bloc et la défense de repos. Payante, sur accord des joueurs, elle complète le codage."
+    },
+    "report": {
+      "title": "Le rapport du match",
+      "body": "L'Indice Njangi, les cinq sous-indices, les chiffres et ce qu'il faut travailler. Chaque but se revoit d'un geste."
+    },
+    "maps": {
+      "title": "Les cartes",
+      "body": "Carte des tirs, réseau de passes, chaleur des actions, actions défensives : chaque point est une action codée, et un clic ouvre la vidéo à ce moment."
+    },
+    "players": {
+      "title": "Les joueurs du match",
+      "body": "Une carte par joueur, ses chiffres, sa carte des actions, et le joueur du match. Comparez deux joueurs côte à côte."
+    },
+    "assist": {
+      "title": "Demander à Mola",
+      "body": "Résume le match, nos tendances, notre efficacité devant le but : Mola lit les codes et répond en quelques phrases."
+    },
+    "season": {
+      "title": "Cartes et saison",
+      "body": "Les moyennes des dix derniers matchs, la progression match après match, les cartes de toute la saison et la comparaison avec chaque adversaire."
+    },
+    "filming": {
+      "title": "Filmer vos matchs",
+      "body": "Où placer la caméra, comment la tenir 90 minutes, et le matériel conseillé, de la Veo Go au simple trépied."
+    },
+    "upload": {
+      "title": "Lien gratuit ou envoi payant",
+      "body": "Un lien YouTube ou Facebook ne coûte rien : Ndamba ne stocke rien. L'envoi sur Ndamba est payant, avec le prix affiché tout de suite."
+    },
+    "pickup": {
+      "title": "Matchs entre amis",
+      "body": "Le foot du dimanche sans courir après tout le monde : inscriptions, liste d'attente, présence, équipes équilibrées, paiements par Mobile Money."
+    },
+    "pickupGame": {
+      "title": "Le prochain match du groupe",
+      "body": "Ouvrez le match : places restantes, liste d'attente, pointage sur place, équipes à glisser sur le terrain, qui a payé."
+    },
+    "mola": {
+      "title": "Mola, l'agent",
+      "body": "Demandez une séance, un message aux parents, un rappel : Mola prépare tout et n'envoie rien sans votre accord."
+    },
+    "premium": {
+      "title": "Les offres",
+      "body": "Gratuit, Joueur, Coach Pro, Club, Fédération, plus l'analyse IA au match et l'hébergement vidéo. Les paiements ne sont pas encore branchés : l'activation est une démonstration."
+    },
+    "end": {
+      "title": "Vous avez tout vu",
+      "body": "Restez dans la démo autant que vous voulez, ou créez votre propre espace depuis Réglages. Le guide détaille chaque page."
+    }
+  }
 }

@@ -141,7 +141,7 @@ function TodayCard({ today, sessions, matches, md, inMatchWeek, busy, onCreate }
   const tomorrow = sessions.find((x) => x.date === addDays(today, 1))
 
   return (
-    <section className="flex h-full flex-col overflow-hidden rounded-[22px] border border-line bg-paper" aria-labelledby="today-h">
+    <section data-tour="home-today" className="flex h-full flex-col overflow-hidden rounded-[22px] border border-line bg-paper" aria-labelledby="today-h">
       <div className="px-5 pt-5 sm:px-6">
         <p className="text-[13.5px] font-semibold text-forest-600">{t('today.eyebrow')}</p>
         <h2 id="today-h" className="mt-1 text-[24px] leading-tight text-ink">

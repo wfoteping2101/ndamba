@@ -1,3 +1,178 @@
 {
-  "title": "Guided tour"
+  "title": "Guided tour",
+  "kicker": "Guided tour of Ndamba",
+  "back": "Back to the site",
+  "intro": "Take the full tour of the app on a real demo club: Étoile de la Côte, a Ligue 1 club in Douala, with its four teams, its members, a match coded on its video and pickup games. Each step opens the right page and lights up what to look at.",
+  "start": "Start the tour",
+  "loading": "Preparing the demo club…",
+  "duration": "{{n}} steps, about 15 minutes",
+  "note": "The tour loads the demo in this browser. You can click anywhere during the tour, the card follows you. Nothing is sent.",
+  "ownData": "This browser already holds your own data. The demo replaces it. To keep it, export it first from Settings.",
+  "ownDataGo": "Replace with the demo and start",
+  "cancel": "Cancel",
+  "chaptersTitle": "Start wherever you like",
+  "chaptersHint": "Each chapter opens the demo at its first step.",
+  "steps_count_one": "{{count}} step",
+  "steps_count_other": "{{count}} steps",
+  "count": "{{n}} / {{total}}",
+  "quit": "Leave the tour",
+  "prev": "Previous step",
+  "next": "Next",
+  "finish": "Finish",
+  "jump": "Go to chapter",
+  "chapters": {
+    "welcome": "Welcome",
+    "training": "Training",
+    "team": "The team and the matches",
+    "club": "The club",
+    "analyse": "Analysing a match on video",
+    "editor": "Editing and the video session",
+    "maps": "The report, the maps and the season",
+    "filming": "Filming and hosting",
+    "pickup": "Pickup games",
+    "mola": "Mola",
+    "end": "The plans"
+  },
+  "chapterText": {
+    "welcome": "The coach's home and the guide link on every page.",
+    "training": "64 animated drills, the session and the week.",
+    "team": "The squad, a player's journey, the match sheet.",
+    "club": "Teams, members and their rights, the video library, recruitment profiles.",
+    "analyse": "The Analysis page, the studio, coding an action with its place on the pitch.",
+    "editor": "Clips, drawings, the video session for the players, AI analysis.",
+    "maps": "Shot map, passing network, defensive actions, players, Mola, season.",
+    "filming": "Where to put the camera, the gear, paid video upload.",
+    "pickup": "Groups, sign-ups, waitlist, check-in, teams, payments.",
+    "mola": "The agent that prepares the work and waits for your approval."
+  },
+  "steps": {
+    "home": {
+      "title": "The coach's home",
+      "body": "Every morning, the home page says what matters today: today's session, the next match, the team's Njangi Index. Here, Daniel Mbarga coaches Étoile de la Côte."
+    },
+    "guide": {
+      "title": "The guide, on every page",
+      "body": "This link opens the guide chapter that explains the page you are on, in a new tab. Its number changes with the page."
+    },
+    "drills": {
+      "title": "The library of 64 drills",
+      "body": "Every drill of the Njangi Code, by family: technique, rondos, positional games, small and large games, transitions, finishing. Each one is animated."
+    },
+    "drill": {
+      "title": "A drill that moves",
+      "body": "The diagram plays like a video: passes, runs, carries, step by step. Pause, replay a step, show it to the players on a phone."
+    },
+    "sessions": {
+      "title": "Sessions",
+      "body": "A session puts drills together with their minutes and an intention. Mola can prepare one for you."
+    },
+    "week": {
+      "title": "The match week",
+      "body": "From MD+1 to MD-1, the load follows the calendar: recovery, tension, duration, speed, activation. Saturday, the match."
+    },
+    "roster": {
+      "title": "The squad",
+      "body": "Twenty-two players with their position, foot, skills and notes. Tap a player for his journey."
+    },
+    "player": {
+      "title": "A player's journey",
+      "body": "Dated evaluations, observations, attendance, objectives, match contributions: a player's story over the season."
+    },
+    "matchSheet": {
+      "title": "The match sheet",
+      "body": "Line-up, game plan in five moments, and the yellow button: add the match video to analyse it."
+    },
+    "club": {
+      "title": "The club",
+      "body": "All the club's teams in one place: seniors, U19, U17, women. The club's game model, shared by every team, and what each team needs next."
+    },
+    "clubMembers": {
+      "title": "Members and their rights",
+      "body": "Admins, coaches, analysts, players, parents: each sees what concerns them. Invite someone with a link you send yourself."
+    },
+    "clubVideos": {
+      "title": "The club video library",
+      "body": "Every video of every team: matches, training, scouting of opponents. Filter by team, type, source."
+    },
+    "clubPlayers": {
+      "title": "Recruitment profiles",
+      "body": "Each player can have a public profile: position, foot, height, season numbers and his best clips. Enough to answer a recruiter or a university."
+    },
+    "analysis": {
+      "title": "Analysing means coding on the video",
+      "body": "Film the match, put the video online, code every action on the video. The page says so from the start."
+    },
+    "studio": {
+      "title": "The video studio",
+      "body": "The match against Météore de Bafoussam, hosted on Ndamba: it plays straight away. The demo video is a 2D animation drawn from the match codes, so every coded action shows on screen."
+    },
+    "coding": {
+      "title": "Code an action, with its place",
+      "body": "One tap on the code, one tap on the mini pitch for the place, one tap on the player's number. That is what feeds the report's maps."
+    },
+    "clips": {
+      "title": "Clips",
+      "body": "Goals and shots get an automatic clip. Make your own with a start and an end, a title, a note, the players involved."
+    },
+    "drawing": {
+      "title": "Draw on the picture",
+      "body": "Arrows, circles, a spotlight on a player, zones, links between players, text. The annotated image stays attached to the clip."
+    },
+    "session": {
+      "title": "The video session",
+      "body": "Five clips in a row, full screen, each with a title and a note: two for what works, two to fix, one to end on the game plan."
+    },
+    "ai": {
+      "title": "AI analysis, as an option",
+      "body": "Claude reads a frame every few seconds and estimates possession, territory, block height and rest defence. Paid, with the players' agreement, it adds to the coding."
+    },
+    "report": {
+      "title": "The match report",
+      "body": "The Njangi Index, the five sub-indices, the numbers and what to work on. Every goal can be watched again with one tap."
+    },
+    "maps": {
+      "title": "The maps",
+      "body": "Shot map, passing network, action heat map, defensive actions: every point is a coded action, and a click opens the video at that moment."
+    },
+    "players": {
+      "title": "The players of the match",
+      "body": "One card per player, his numbers, his action map, and the player of the match. Compare two players side by side."
+    },
+    "assist": {
+      "title": "Ask Mola",
+      "body": "Sum up the match, our trends, our efficiency in front of goal: Mola reads the codes and answers in a few sentences."
+    },
+    "season": {
+      "title": "Maps and season",
+      "body": "Averages of the last ten matches, progress match after match, maps of the whole season and the comparison with each opponent."
+    },
+    "filming": {
+      "title": "Film your matches",
+      "body": "Where to put the camera, how to keep it running for 90 minutes, and the recommended gear, from the Veo Go to a simple tripod."
+    },
+    "upload": {
+      "title": "Free link or paid upload",
+      "body": "A YouTube or Facebook link costs nothing: Ndamba stores nothing. Uploading to Ndamba is paid, with the price shown up front."
+    },
+    "pickup": {
+      "title": "Pickup games",
+      "body": "The Sunday game without chasing everyone: sign-ups, waitlist, check-in, balanced teams, payments by Mobile Money."
+    },
+    "pickupGame": {
+      "title": "The group's next game",
+      "body": "Open the game: spots left, waitlist, check-in at the pitch, teams to drag on the pitch, who has paid."
+    },
+    "mola": {
+      "title": "Mola, the agent",
+      "body": "Ask for a session, a message to parents, a reminder: Mola prepares it all and sends nothing without your approval."
+    },
+    "premium": {
+      "title": "The plans",
+      "body": "Free, Player, Coach Pro, Club, Federation, plus AI analysis per match and video hosting. Payments are not connected yet: activation is a demonstration."
+    },
+    "end": {
+      "title": "You have seen it all",
+      "body": "Stay in the demo as long as you like, or create your own space from Settings. The guide details every page."
+    }
+  }
 }

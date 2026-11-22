@@ -203,7 +203,7 @@ export function PitchVideo({ spec, title, videoKey, autoPlay = false, steps: sho
   const atPoster = !pb.playing && pb.t >= m.duration - 0.03
 
   return (
-    <figure className={cx('m-0', className)}>
+    <figure data-tour="pitch-video" className={cx('m-0', className)}>
       <div ref={shellRef} className={cx('relative overflow-hidden rounded-[12px] bg-night-900', full && 'flex h-full flex-col justify-center rounded-none')}>
         <div ref={boxRef} className={cx('relative w-full select-none', full ? 'mx-auto aspect-video max-h-[calc(100vh-56px)] max-w-[calc((100vh-56px)*16/9)]' : 'aspect-video')}
           onClick={free(pb.toggle)}>

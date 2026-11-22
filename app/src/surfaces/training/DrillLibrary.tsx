@@ -48,7 +48,7 @@ export default function DrillLibrary() {
             <EmptyState icon={<SearchX size={32} />} title={t('library.noneTitle')} body={t('library.noneBody')}
               action={<button type="button" className="btn-primary" onClick={() => setFilter(EMPTY_FILTER)}>{t('library.showAll')}</button>} />
           ) : filtered ? (
-            <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3">{list.map((d) => <DrillCard key={d.id} d={d} search={search} />)}</div>
+            <div data-tour="drill-grid" className="grid gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3">{list.map((d) => <DrillCard key={d.id} d={d} search={search} />)}</div>
           ) : (
             <>
               <nav aria-label={t('library.family')} className="-mx-4 mb-6 flex gap-1.5 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
@@ -70,7 +70,7 @@ export default function DrillLibrary() {
                         <p className="mt-0.5 max-w-2xl text-[14px] text-ink-muted">{t(`familyIntro.${f}`)}</p>
                       </div>
                     </div>
-                    <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3">{items.map((d) => <DrillCard key={d.id} d={d} search={search} />)}</div>
+                    <div data-tour="drill-grid" className="grid gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3">{items.map((d) => <DrillCard key={d.id} d={d} search={search} />)}</div>
                   </section>
                 )
               })}

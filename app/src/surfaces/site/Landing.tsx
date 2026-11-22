@@ -1,6 +1,6 @@
 import { useState, type ComponentType, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { BookOpen, CalendarDays, Gamepad2, ClipboardList, Dumbbell, FileChartColumn, Flag, GraduationCap, LineChart, Network, NotebookPen, Radio, Route, ShieldCheck, Shirt, Tags, Target, Users, Video, type LucideIcon } from 'lucide-react'
+import { BookOpen, CalendarDays, Gamepad2, ClipboardList, Dumbbell, FileChartColumn, Flag, GraduationCap, LineChart, Network, NotebookPen, Radio, Route, ShieldCheck, Shirt, Tags, Target, Users, Video, type LucideIcon, Compass } from 'lucide-react'
 import { MolaMark } from '../../ui/brand'
 import { BOOKS, BRAND, PLANS, SERIES } from '../../lib/config'
 import { useDocumentTitle } from '../../lib/hooks'
@@ -64,7 +64,10 @@ function Hero({ demo }: { demo: Demo }) {
         </div>
         <div className="min-w-0 lg:col-start-1 lg:row-start-2">
           <p className="max-w-md text-[16.5px] leading-relaxed text-cream/75 sm:text-[17.5px]">{t('landing.hero.lead')}</p>
-          <Link to="/bienvenue" className="btn-sun btn-lg mt-8 w-full min-[420px]:w-auto"><MolaMark size={19} ball="#0B5D3B" />{t('landing.hero.ctaStart')}</Link>
+          <div className="mt-8 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap">
+            <Link to="/bienvenue" className="btn-sun btn-lg w-full min-[420px]:w-auto"><MolaMark size={19} ball="#0B5D3B" />{t('landing.hero.ctaStart')}</Link>
+            <Link to="/visite" className="btn btn-lg w-full border border-cream/30 text-cream hover:bg-white/10 min-[420px]:w-auto"><Compass size={19} strokeWidth={1.75} />{t('landing.hero.ctaTour')}</Link>
+          </div>
           <p className="mt-8 text-[13.5px] font-semibold text-cream/60">{t('landing.hero.demoTitle')}</p>
           <DemoChoice demo={demo} dark quiet className="mt-3" />
         </div>

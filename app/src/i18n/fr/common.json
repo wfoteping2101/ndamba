@@ -65,7 +65,8 @@
     "club": "Le club",
     "studio": "Cartes et saison",
     "filming": "Filmer",
-    "pickup": "Matchs entre amis"
+    "pickup": "Matchs entre amis",
+    "tour": "Visite guidée"
   },
   "actions": {
     "save": "Enregistrer",

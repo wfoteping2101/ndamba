@@ -129,7 +129,7 @@ function Hub({ team, free, header }: { team: Team; free: boolean; header: JSX.El
   )
 
   const how = (
-    <section className="mb-8 overflow-hidden rounded-[22px] border border-line bg-paper" aria-labelledby="how-h">
+    <section data-tour="analysis-how" className="mb-8 overflow-hidden rounded-[22px] border border-line bg-paper" aria-labelledby="how-h">
       <div className="px-5 pt-5 sm:px-6 sm:pt-6">
         <h2 id="how-h" className="font-display text-[21px] text-ink">{t('how.title')}</h2>
         <p className="mt-1.5 max-w-[72ch] text-[15px] leading-relaxed text-ink-soft">{t('how.lead', { app: BRAND.name })}</p>

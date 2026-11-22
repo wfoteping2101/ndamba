@@ -7,6 +7,7 @@ import { useT } from '../i18n'
 import { cx } from '../lib/util'
 import { useSession } from '../lib/session'
 import MolaLauncher from '../surfaces/mola/MolaLauncher'
+import TourOverlay from '../surfaces/tour/TourOverlay'
 import type { Team } from '../lib/types'
 
 interface Item { to: string; label: string; icon: (size: number) => ReactNode; end?: boolean; href?: boolean }
@@ -44,7 +45,7 @@ function GuideLink({ path, role }: { path: string; role?: string }) {
   const { t, lang } = useT('common')
   const n = guideChapter(path, role)
   return (
-    <a href={`/guide/${lang === 'en' ? 'en' : 'fr'}/ch-${String(n).padStart(2, '0')}.html`} target="_blank" rel="noopener"
+    <a data-tour="guide-link" href={`/guide/${lang === 'en' ? 'en' : 'fr'}/ch-${String(n).padStart(2, '0')}.html`} target="_blank" rel="noopener"
       className="inline-flex min-h-[36px] items-center gap-1.5 rounded-full border border-line bg-paper px-3 text-[13px] font-semibold text-forest-700 transition hover:border-forest-300 hover:bg-forest-50">
       <CircleHelp size={15} strokeWidth={1.75} aria-hidden="true" />{t('app.howItWorks', { n })}
     </a>
@@ -96,7 +97,8 @@ export default function AppLayout() {
     { title: t('app.groups.me'), items: [
       { to: '/app/joueur', label: t('app.player'), icon: (s) => <User size={s} strokeWidth={SW} /> },
       { to: '/app/livres', label: t('app.books'), icon: (s) => <BookOpen size={s} strokeWidth={SW} /> },
-      { to: '/guide/', label: t('app.guide'), icon: (s) => <Compass size={s} strokeWidth={SW} />, href: true },
+      { to: '/visite', label: t('app.tour'), icon: (s) => <Compass size={s} strokeWidth={SW} />, href: true },
+      { to: '/guide/', label: t('app.guide'), icon: (s) => <BookOpen size={s} strokeWidth={SW} />, href: true },
       { to: '/football/', label: t('app.football'), icon: (s) => <Gamepad2 size={s} strokeWidth={SW} />, href: true },
       { to: '/app/premium', label: t('app.premium'), icon: (s) => <Crown size={s} strokeWidth={SW} /> },
       { to: '/app/reglages', label: t('app.settings'), icon: (s) => <Settings size={s} strokeWidth={SW} /> },
@@ -235,6 +237,7 @@ export default function AppLayout() {
         </div>
       )}
       <div className="mola-dock"><MolaLauncher /></div>
+      <TourOverlay />
     </div>
   )
 }

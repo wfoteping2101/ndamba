@@ -131,7 +131,7 @@ export default function MatchSheet() {
           {gated && !data.videoId ? (
             <Link to="/app/premium" className="btn-sun btn-lg justify-center"><Lock size={18} />{t('sheet.videoAdd')}</Link>
           ) : (
-            <Link to={data.videoId ? `/app/analyse/video/${data.videoId}` : `/app/analyse/video?nouveau=${match.id}`} className="btn-sun btn-lg justify-center"><Film size={18} />{data.videoId ? t('sheet.videoCode') : t('sheet.videoAdd')}</Link>
+            <Link to={data.videoId ? `/app/analyse/video/${data.videoId}` : `/app/analyse/video?nouveau=${match.id}`} data-tour="match-video" className="btn-sun btn-lg justify-center"><Film size={18} />{data.videoId ? t('sheet.videoCode') : t('sheet.videoAdd')}</Link>
           )}
           {!done && !gated && (
             <button type="button" onClick={startLive} className={cx('btn-lg', match.status === 'live' ? 'btn-danger' : 'btn-outline', 'justify-center')}>
