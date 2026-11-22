@@ -1,6 +1,6 @@
-import { useMemo, useState, type ReactNode } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
-import { ArrowLeft, CalendarCheck, ChartLine, Check, ChevronDown, ClipboardCopy, Dumbbell, FileQuestion, Goal, ListChecks, Pencil, Play, Printer, Target, ThumbsUp, Video, Wrench } from 'lucide-react'
+import { lazy, Suspense, useMemo, useState, type ReactNode } from 'react'
+import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import { ArrowLeft, Award, CalendarCheck, ChartLine, Check, ChevronDown, ClipboardCopy, Dumbbell, FileQuestion, Goal, ListChecks, Pencil, Play, Printer, Target, ThumbsUp, Video, Wrench } from 'lucide-react'
 import { MolaMark } from '../../ui/brand'
 import { db } from '../../lib/db'
 import { useDocumentTitle, useLiveQuery } from '../../lib/hooks'
@@ -13,13 +13,19 @@ import type { Lang, Match, MatchEvent, Player, Team, VideoProject } from '../../
 import {
   computeNjangi, EVENT_CODES, fmtNjangi, NJANGI_BANDS, njangiBand, njangiExtras, njangiLabel, rankSubs, subLevel, SUB_KEYS, type NjangiResult, type SubKey,
 } from '../../lib/njangi'
-import { EmptyState } from '../../ui'
+import { EmptyState, Tabs } from '../../ui'
+import type { VizTab } from './components/viz/ReportViz'
 import { buildSummary, type NjangiSummary } from './components/summary'
 import { CompareBars, NjangiGauge, SubBar, TimelineChart } from './components/charts'
 import { defFor, fmtPct, minuteLabel } from './components/codes'
 import { copyText, previousAnalysed, useMedia, useTeamAnalysis } from './components/data'
 
 type Half = 1 | 2 | 3 | 4
+
+// The visual tabs (maps, players, timeline, Mola) load on demand: the report itself stays light on phones.
+const ReportViz = lazy(() => import('./components/viz/ReportViz'))
+type TabId = 'rapport' | VizTab
+const TAB_IDS: TabId[] = ['rapport', 'cartes', 'joueurs', 'chronologie', 'mola']
 
 export default function MatchReport() {
   const { id = '' } = useParams()
@@ -51,6 +57,14 @@ function Report({ match }: { match: Match }) {
   const [toast, setToast] = useState('')
   const wide = useMedia('(min-width: 1024px)')
   const teamName = team?.name ?? t('live.us')
+  const { t: tv } = useT('viz')
+  // ?onglet=cartes | joueurs | chronologie | mola (no parameter: the report itself)
+  const [params, setParams] = useSearchParams()
+  const raw = params.get('onglet') as TabId | null
+  const tab: TabId = raw && TAB_IDS.includes(raw) ? raw : 'rapport'
+  const setTab = (v: TabId) => setParams((p) => { const n = new URLSearchParams(p); if (v === 'rapport') n.delete('onglet'); else n.set('onglet', v); return n }, { replace: true })
+  const videoId = useLiveQuery(async () => (await db.videos.where('matchId').equals(match.id).first())?.id ?? null, [match.id], null as string | null)
+  const potm = match.potmId ? players.find((p) => p.id === match.potmId) : undefined
 
   if (!analysis.ready) return <div className="grid min-h-[50vh] place-items-center"><div className="h-10 w-10 animate-spin rounded-full border-4 border-forest-100 border-t-forest-600" /></div>
 
@@ -63,7 +77,7 @@ function Report({ match }: { match: Match }) {
     navigate(`/app/analyse/video?nouveau=${match.id}`)
   }
 
-  const header = <ReportHeader match={match} teamName={teamName} events={events} players={players} onCopy={copy} onPrint={() => window.print()} onVideo={openVideo} />
+  const header = <ReportHeader match={match} teamName={teamName} events={events} players={players} onCopy={copy} onPrint={() => window.print()} onVideo={openVideo} potm={potm?.name} />
 
   if (!events.length) {
     return (
@@ -123,6 +137,20 @@ function Report({ match }: { match: Match }) {
       <style>{`@media print { .fixed, header.sticky, aside.sticky { display: none !important } main { padding-top: 0 !important; padding-bottom: 0 !important } .nj-report, .nj-report * { -webkit-print-color-adjust: exact; print-color-adjust: exact } .nj-report section { break-inside: avoid } }`}</style>
       {header}
 
+      {/* five tabs fit a 390 px phone: tighter gaps, and the Mola tab shortens to its name */}
+      <Tabs className="no-print mb-6 !gap-4 sm:!gap-7" value={tab} onChange={setTab} tabs={[
+        { id: 'rapport', label: tv('tabs.rapport') },
+        { id: 'cartes', label: tv('tabs.cartes') },
+        { id: 'joueurs', label: tv('tabs.joueurs') },
+        { id: 'chronologie', label: tv('tabs.chronologie') },
+        { id: 'mola', label: <><MolaMark size={16} aria-hidden="true" className="hidden sm:block" /><span className="sm:hidden">{tv('tabs.molaShort')}</span><span className="hidden sm:inline">{tv('tabs.mola')}</span></> },
+      ]} />
+
+      {tab !== 'rapport' ? (
+        <Suspense fallback={<div className="grid min-h-[30vh] place-items-center"><div className="h-10 w-10 animate-spin rounded-full border-4 border-forest-100 border-t-forest-600" /></div>}>
+          <ReportViz tab={tab} match={match} events={events} players={players} team={team} teamName={teamName} videoId={videoId} prev={prev ? { opponent: prev.match.opponent, result: prev.result } : null} />
+        </Suspense>
+      ) : (<>
       {/* ---------- Indice ---------- */}
       <section className="card mb-6 overflow-hidden" aria-labelledby="indice-h">
         <div className="grid gap-0 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
@@ -155,6 +183,7 @@ function Report({ match }: { match: Match }) {
       ) : (
         <div className="space-y-6">{philosophy}{week}{keyCounts}{timeline}{explain}{compare}{contributions}{codes}</div>
       )}
+      </>)}
 
       {toast && <div role="status" className="no-print fixed bottom-24 left-1/2 z-50 -translate-x-1/2 rounded-full bg-night-800 px-4 py-2 text-sm font-semibold text-cream shadow-lift lg:bottom-8">{toast}</div>}
     </div>
@@ -163,17 +192,18 @@ function Report({ match }: { match: Match }) {
 
 /* ------------------------------------------------------------------ header */
 
-function ReportHeader({ match, teamName, events, players, onCopy, onPrint, onVideo }: {
-  match: Match; teamName: string; events: MatchEvent[]; players: Player[]; onCopy: () => void; onPrint: () => void; onVideo: (at?: number) => void
+function ReportHeader({ match, teamName, events, players, onCopy, onPrint, onVideo, potm }: {
+  match: Match; teamName: string; events: MatchEvent[]; players: Player[]; onCopy: () => void; onPrint: () => void; onVideo: (at?: number) => void; potm?: string
 }) {
   const { t, lang } = useT('analysis')
+  const { t: tv } = useT('viz')
   const onVideoCoded = events.some((e) => e.videoT != null)
   const res = match.scoreUs > match.scoreThem ? 'W' : match.scoreUs < match.scoreThem ? 'L' : 'D'
   const goals = events.filter((e) => e.code === 'GOAL').sort((a, b) => a.half - b.half || a.t - b.t)
   const byId = new Map(players.map((p) => [p.id, p]))
   const resTone = res === 'W' ? 'bg-cream text-forest-700' : res === 'L' ? 'bg-clay-500 text-white' : 'bg-white/15 text-cream'
   return (
-    <div className="mb-6">
+    <div className="mb-5" data-tour="report-head">
       <div className="no-print mb-3 flex items-center justify-between gap-2">
         <Link to="/app/analyse" className="inline-flex min-h-[44px] items-center gap-1.5 text-sm font-semibold text-ink-soft hover:text-ink"><ArrowLeft size={16} />{t('report.back')}</Link>
         <div className={cx('flex flex-wrap justify-end gap-1.5', !events.length && 'invisible')}>
@@ -209,6 +239,11 @@ function ReportHeader({ match, teamName, events, players, onCopy, onPrint, onVid
                 )
               })}
             </ul>
+          )}
+          {potm && (
+            <div className="mt-3 flex justify-center">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-sun-500 px-3 py-1 text-[12.5px] font-semibold text-ink"><Award size={13} aria-hidden="true" />{tv('players.potmHeader', { name: potm })}</span>
+            </div>
           )}
           <div className="no-print mt-5 flex flex-wrap gap-2 border-t border-white/15 pt-4">
             {onVideoCoded
