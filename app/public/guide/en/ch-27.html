@@ -1,0 +1,337 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>27. The club: teams, members, video library, recruitment, The Ndamba Guide</title><meta name="description" content="The club space brings every team together around one game model. Its six tabs (Overview, Teams, Members, Video library, Players, Analytics), the roles and their rights, the invitations you send yourself, recruitment profiles and their public page, the Club plan, and today's limit: everything lives on the club's device."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-27"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-27.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Analysing a match: film, put online, code</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The video studio, the AI analysis and the season</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Part X. Club, pitch and gear</span><ol><li><a href="ch-27.html" data-page="ch-27" aria-current="page"><b>27</b>The club: teams, members, video library, recruitment</a></li><li><a href="ch-28.html" data-page="ch-28"><b>28</b>The match maps and the season</a></li><li><a href="ch-29.html" data-page="ch-29"><b>29</b>Video editing: clips, drawings, sessions</a></li><li><a href="ch-30.html" data-page="ch-30"><b>30</b>Pickup games</a></li><li><a href="ch-31.html" data-page="ch-31"><b>31</b>Filming and hosting: camera, links, paid upload</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><section class="part-opener" id="partie-10"><div class="part-num">Part X</div><h2>Club, pitch and gear</h2><p>The club and its teams, the maps and the season, video editing, pickup games, filming and hosting.</p></section><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-10">Part X. Club, pitch and gear</a><div class="ch-num">Chapter 27</div><h1 class="ch-title">The club: teams, members, video library, recruitment</h1><p class="ch-sum">The club space brings every team together around one game model. Its six tabs (Overview, Teams, Members, Video library, Players, Analytics), the roles and their rights, the invitations you send yourself, recruitment profiles and their public page, the Club plan, and today’s limit: everything lives on the club’s device.</p><p class="ch-time">14 min read</p></header><div class="prose"><p>An African club is almost never a single team: the first team, youth teams, often a women’s team, each with its own coach and its videos scattered across phones. Each age group ends up playing a different football, and a player who moves up from the U17s to the seniors has to learn everything again. The club space exists to do the opposite. It brings every team, the staff, the videos and the players’ profiles together around one text, the <strong>club’s game model</strong>, and one measure, the Njangi Index. At the scale of a club, it is the continuity this guide argues for at the scale of a country (chapter 22).</p>
+<p>This chapter follows the club space of the pro club demo: Étoile de la Côte, in Douala, with its four teams, nine members and six videos.</p>
+<h2 id="open-the-club-space">Open the club space</h2>
+<p>In the menu, under <strong>Team</strong>, tap <strong>The club</strong>. On a phone it sits in the <strong>More</strong> panel. The address is /app/club.</p>
+<p>If no club exists yet on this device, the page shows <strong>Bring your teams together in a club</strong>: &quot;The club gathers all your teams, your staff, your videos and your players’ profiles, with one game model.&quot; Two buttons: <strong>Create the club</strong>, and <strong>Load the demo club</strong> when the pro club demo is open.</p>
+<p>The <strong>Create the club</strong> window asks for:</p>
+<ol>
+<li><strong>Club name</strong> (required), <strong>City</strong>, <strong>Country</strong> and <strong>Year founded</strong>.</li>
+<li><strong>Main colour</strong> and <strong>Second colour</strong>: the crest draws itself from these colours and the club’s initials, and a box offers to give them to the teams you already have.</li>
+<li><strong>About the club</strong>: who you are, in two sentences.</li>
+<li><strong>Game model</strong>: &quot;How all your teams play with the ball, without it, and in transition.&quot; Every team shares this text; it appears in the analysis and on public profiles.</li>
+</ol>
+<p>The header then shows the crest, the name, the city and the year founded, and <strong>Edit the club</strong>. A note on a sand background states today’s rule: &quot;For now, the club lives on this device. Sharing it between your staff’s phones and computers needs accounts, which are on the roadmap.&quot; The cross closes it for good on this device.</p>
+<p>Six tabs follow: <strong>Overview</strong>, <strong>Teams</strong>, <strong>Members</strong>, <strong>Video library</strong>, <strong>Players</strong> and <strong>Analytics</strong>, each with its own address (/app/club/equipes, /app/club/membres, and so on).</p>
+<h2 id="overview-the-club-at-a-glance">Overview: the club at a glance</h2>
+<figure class="shot"><a href="../img/en/club-overview.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/club-overview-720.webp 720w, ../img/en/club-overview.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/club-overview.jpg" srcset="../img/en/club-overview-720.jpg 720w, ../img/en/club-overview.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Overview tab of the club space in the demo: the green and gold crest of Étoile de la Côte, the note on a sand background, the six tabs, the club identity with its description, the game model shared by every team, the four counters Teams, Members, Videos and Matches coded, then the list What each team needs next." loading="lazy" decoding="async"></picture></a><figcaption>The Overview: the club’s identity, its game model and what each team is missing.</figcaption></figure>
+<p><strong>Club identity</strong> and <strong>Club colours</strong> show the crest and the description. In the demo: &quot;A Douala club founded in 1987: a Ligue 1 side, a women’s team and two youth teams who all play the same football.&quot;</p>
+<p><strong>Game model</strong>, with its <strong>Edit</strong> link, is the heart of the page. The demo’s says, among other things: &quot;All our teams play a 4-3-3: build up with three from the keeper, a pivot between the centre-backs, high full-backs. When we lose it, five seconds of counter-press, then a compact mid block.&quot; Under the text: &quot;The same text for every team, from the youth sides to the seniors.&quot;</p>
+<p>Four counters follow:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Counter</th>
+<th>Demo</th>
+<th>What it counts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Teams</strong></td>
+<td>4, &quot;63 players in total&quot;</td>
+<td>Every team on the device</td>
+</tr>
+<tr>
+<td><strong>Members</strong></td>
+<td>9, &quot;including 2 pending invitations&quot;</td>
+<td>Staff, players and parents added to the club</td>
+</tr>
+<tr>
+<td><strong>Videos</strong></td>
+<td>6, &quot;2 coded&quot;</td>
+<td>Every video, across all teams</td>
+</tr>
+<tr>
+<td><strong>Matches coded</strong></td>
+<td>10, &quot;Season 2026-2027&quot;</td>
+<td>Matches played this season that have codes</td>
+</tr>
+</tbody></table></div>
+<p>A line recalls the plan: &quot;Your current plan: Coach Pro. The full club space is part of the Club plan, $49 a month. Nothing is locked during the demo.&quot;, with the link <strong>See the Club plan</strong>.</p>
+<p>Last comes <strong>What each team needs next</strong>: one line per team, with its season Index and the next thing to do. That is adding the squad if the team has no players, &quot;Code a first match, live or on video, to start the season’s Indice.&quot; if nothing is coded, or its weak point. In the demo all four teams share the same one: &quot;Weak point of the season: Fixation (8.3 out of 20). One to work on this week.&quot; for the seniors, 7.0 for the U19s, 4.5 for the U17s and 9.0 for the women. That is exactly what the club’s model announces: &quot;We want to draw them to one side to attack the other: the point every team is working on this season.&quot; The <strong>All teams</strong> link opens the next tab.</p>
+<h2 id="teams-one-card-per-age-group">Teams: one card per age group</h2>
+<figure class="shot"><a href="../img/en/club-teams.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/club-teams-720.webp 720w, ../img/en/club-teams.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/club-teams.jpg" srcset="../img/en/club-teams-720.jpg 720w, ../img/en/club-teams.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Teams tab: the line 4 teams in the club and the New team button, then the cards of the seniors, the U19s, the U17s and the women, each with its age group, 11 v 11, 4-3-3, its staff, its number of players, its last three results, its season Index and the Open and Matches buttons." loading="lazy" decoding="async"></picture></a><figcaption>One card per team: the staff, the results and the season Index.</figcaption></figure>
+<p>The tab opens with &quot;4 teams in the club.&quot; and the <strong>New team</strong> button. Each card gives the age group, the format (<strong>11 v 11</strong>), the formation, the <strong>Active team</strong> badge on the team the rest of the app is showing, then:</p>
+<ul>
+<li><strong>Staff</strong>: the members attached to the team with their role, and &quot;invited&quot; if they have not joined yet;</li>
+<li><strong>Players</strong>: the size of the squad;</li>
+<li><strong>Last results</strong>: the last three matches with a <strong>W</strong>, <strong>D</strong> or <strong>L</strong> pill, the score and the opponent;</li>
+<li><strong>Season Indice</strong> and its band, worked out from the summed codes of every coded match of the season, never from an average.</li>
+</ul>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Team</th>
+<th>Players</th>
+<th>Season Index</th>
+<th>Band</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Étoile de la Côte (seniors)</td>
+<td>22</td>
+<td>67.9</td>
+<td>Solid Njangi</td>
+</tr>
+<tr>
+<td>Étoile de la Côte U19</td>
+<td>14</td>
+<td>56.2</td>
+<td>Njangi in progress</td>
+</tr>
+<tr>
+<td>Étoile de la Côte U17</td>
+<td>13</td>
+<td>41.8</td>
+<td>Fragile purpose</td>
+</tr>
+<tr>
+<td>Étoile de la Côte women</td>
+<td>14</td>
+<td>62.5</td>
+<td>Njangi in progress</td>
+</tr>
+</tbody></table></div>
+<p><strong>Switching team from the club.</strong> <strong>Open</strong> makes the team active and opens its <strong>Team</strong> page; <strong>Matches</strong> makes it active and opens its matches. It is the same as <strong>Make active</strong> in Settings or the team plate at the top of the menu (chapter 6): the whole app switches to the chosen team, home, sessions, week and analysis included. A technical director goes from the U17s to the seniors in one tap.</p>
+<p><strong>Creating a team.</strong> <strong>New team</strong> (&quot;In the club’s colours, with the same game model.&quot;) opens a short window: <strong>Team name</strong>, <strong>Age group</strong>, <strong>Format</strong> and <strong>Formation</strong>, then <strong>Create the team</strong>. The team takes the club’s colours.</p>
+<h2 id="members-who-belongs-to-the-club">Members: who belongs to the club</h2>
+<figure class="shot"><a href="../img/en/club-members.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/club-members-720.webp 720w, ../img/en/club-members.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/club-members.jpg" srcset="../img/en/club-members-720.jpg 720w, ../img/en/club-members.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="1747" alt="The Members tab: nine people, each with initials, a name, a role (Administrator, Coach, Analyst, Player, Parent), their teams and the Link and Edit buttons, two invitations marked Invited, then the Who sees what table." loading="lazy" decoding="async"></picture></a><figcaption>The members, their roles and the table of rights.</figcaption></figure>
+<p>The tab says &quot;9 people in the club.&quot; and offers <strong>Invite</strong>. Each row gives the initials, the name (&quot;(you)&quot; for your own profile), a role badge, the <strong>Invited</strong> badge until the person has joined, their teams, and for a player or a parent the linked squad record (&quot;squad record: Steve Ndjock&quot;, &quot;parent of Nathan Mbella&quot;). On the right: <strong>Link</strong> for a pending invitation, <strong>Edit</strong>, and the bin. Removing someone asks for confirmation, <strong>Remove this member?</strong>: &quot;Their videos and player data stay in place.&quot;</p>
+<p>In the demo: an administrator, one coach per team, two analysts including one invited (Kevin Tamba), a player (Steve Ndjock) and an invited mother (Marthe Mbella, parent of Nathan Mbella in the U17s).</p>
+<h3 id="roles-and-their-rights">Roles and their rights</h3>
+<p>Under the list sits the <strong>Who sees what</strong> table: &quot;Each role opens precise rights: which videos they see, coding, analytics and running the club.&quot;</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Videos they see</th>
+<th>Code</th>
+<th>Analytics</th>
+<th>Run the club</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Administrator</strong></td>
+<td>Every video of the club</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Coach</strong></td>
+<td>Those of their teams</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Analyst</strong></td>
+<td>Every video of the club</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Player</strong></td>
+<td>The clips they appear in</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Parent</strong></td>
+<td>Their child’s clips</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody></table></div>
+<p>The sentence under the table matters as much as the table: &quot;These rights will apply once accounts let the club be shared across several devices.&quot; Today the table describes the club’s rules; it does not lock anything yet, since the whole club lives on one device.</p>
+<h2 id="invite-someone">Invite someone</h2>
+<ol>
+<li>Tap <strong>Invite</strong>. The <strong>Invite to the club</strong> window opens.</li>
+<li>Enter the <strong>Full name</strong> (required) and, if you like, the <strong>Email</strong>, which is only used to prepare the message.</li>
+<li>Choose the <strong>Role</strong>. A sentence explains each one: &quot;Codes and analyses the videos of their teams.&quot; for a coach, &quot;Sees their child’s clips.&quot; for a parent.</li>
+<li>Tick the <strong>Teams</strong> concerned (an administrator has them all). For a player, choose their <strong>Squad record</strong>; for a parent, <strong>Their child</strong>. <strong>Choose later</strong> is allowed.</li>
+<li>Tap <strong>Create the invitation</strong>.</li>
+</ol>
+<p>The <strong>Invitation for</strong> window follows, with the <strong>Invitation link</strong> in the form /rejoindre-club/ followed by a code, and three buttons: <strong>Copy the link</strong>, <strong>WhatsApp</strong> and <strong>Email</strong>. The rule is written at the top: &quot;Send this link yourself, by WhatsApp, email or text message. Ndamba sends nothing on your behalf.&quot; The ready-made message reads, for example: &quot;Hello Kevin, I’m inviting you to join Étoile de la Côte on Ndamba with the analyst role. Open this link on your phone: …&quot;</p>
+<p>What the link does today, the window says plainly: &quot;For now, the link opens Ndamba on the person’s phone. Joining the club automatically will come with accounts: until then, mark the member as active once they have joined.&quot; On the club’s device, the /rejoindre-club/ page shows <strong>Invitation to Étoile de la Côte</strong>, who it is for, the role, and <strong>Open the club space</strong>; anywhere else, <strong>Invitation not found on this device</strong>. Once the person has joined, open <strong>Edit</strong> on their row and set their <strong>Status</strong> to <strong>Active</strong>. The <strong>Link</strong> button brings back the message of a pending invitation.</p>
+<h2 id="video-library-every-video-of-the-club">Video library: every video of the club</h2>
+<figure class="shot"><a href="../img/en/club-videos.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/club-videos-720.webp 720w, ../img/en/club-videos.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/club-videos.jpg" srcset="../img/en/club-videos-720.jpg 720w, ../img/en/club-videos.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Video library tab: 6 videos in the club, the Filming tips and New video buttons, the All, Match, Training and Opponent scouting pills, the Team, Where the video is, Date and Coding filters, then the video cards, the first one hosted and coded with 783 actions and an Index of 67.9." loading="lazy" decoding="async"></picture></a><figcaption>Every video of every team, filtered in two taps.</figcaption></figure>
+<p>The video studio (chapter 29) works on one video at a time; the library shows them all. &quot;6 videos in the club, across all teams.&quot; At the top, <strong>Filming tips</strong> opens the <strong>Film your matches</strong> page (chapter 31) and <strong>New video</strong> the add window.</p>
+<p>The pills sort by kind: <strong>All</strong>, <strong>Match</strong>, <strong>Training</strong>, <strong>Opponent scouting</strong>. Four filters narrow it down:</p>
+<ul>
+<li><strong>Team</strong>: <strong>All teams</strong>, one team, or <strong>No team</strong>;</li>
+<li><strong>Where the video is</strong>: <strong>Anywhere</strong>, <strong>Link</strong> (YouTube or Facebook), <strong>File</strong> (on the device) or <strong>Hosted</strong> (uploaded to Ndamba, chapter 31);</li>
+<li><strong>Date</strong>: <strong>All dates</strong>, <strong>Last 30 days</strong> or the season;</li>
+<li><strong>Coding</strong>: <strong>Coded or not</strong>, <strong>Coded</strong>, <strong>To code</strong>.</li>
+</ul>
+<p>When nothing matches, <strong>Clear filters</strong> resets them. Each card shows the kind, the source, the title, the team and the date, the coding status (&quot;Coded: 783 actions, Indice 67.9&quot; or <strong>To code</strong>), the length and the number of clips; the whole card opens the studio. The demo mixes the cases: a hosted and coded match, two opponent scouting videos, a U17 training session, a coded U19 match and a women’s match still to code.</p>
+<h2 id="players-recruitment-profiles">Players: recruitment profiles</h2>
+<p>A talented teenager from Bafoussam or Garoua rarely has a video to show and never has numbers. The <strong>Players</strong> tab gives every player of the club a <strong>recruitment profile</strong>: a record with no compulsory photo, with their video clips and their season figures taken from the coded matches, to show a scout, an academy or a university.</p>
+<figure class="shot"><a href="../img/en/club-players.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/club-players-720.webp 720w, ../img/en/club-players.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/club-players.jpg" srcset="../img/en/club-players-720.jpg 720w, ../img/en/club-players.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Players tab: the Allow public profiles switch turned on with 3 public profiles, the All, Seniors, U19, U17 and Women pills, the Search for a player field, then the senior players with their number, position, year of birth, the Profile complete counter and the Public or Private label." loading="lazy" decoding="async"></picture></a><figcaption>Every player stays private until the club and you open their profile.</figcaption></figure>
+<p>At the top, the <strong>Allow public profiles</strong> switch decides for the whole club. On: &quot;On: 3 public profiles. Each player stays private until you open their profile.&quot; Off: &quot;Off: no profile is visible, even those marked public.&quot; So a profile needs two yeses to be visible: the club’s and the profile’s own.</p>
+<p>Below come team pills (<strong>All</strong>, <strong>Seniors</strong>, <strong>U19</strong>, <strong>U17</strong>, <strong>Women</strong>) and <strong>Search for a player</strong>. Each row gives the number, the name, the position, the year of birth, the <strong>Profile complete</strong> counter (for example 5/8) and <strong>Public</strong> or <strong>Private</strong>. A complete profile has eight items, and no photo: <strong>Number</strong>, <strong>Position</strong>, <strong>Preferred foot</strong>, <strong>Year of birth</strong>, <strong>Height</strong>, <strong>Short bio</strong>, <strong>Video clips</strong> and <strong>Indice contributions</strong>.</p>
+<h3 id="a-player-39-s-profile">A player’s profile</h3>
+<p>Tap a player: their profile opens at /app/club/joueurs/ followed by their id. In the demo, open number 17, Hamidou Sali, a senior winger who came on at the 66th minute against Météore de Bafoussam to score the winner.</p>
+<figure class="shot tall"><a href="../img/en/club-recruit.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/club-recruit-720.webp 720w, ../img/en/club-recruit.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/club-recruit.jpg" srcset="../img/en/club-recruit-720.jpg 720w, ../img/en/club-recruit.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="1817" alt="The recruitment profile of Hamidou Sali: the header with number 17, Winger, Seniors, the Share the profile and Preview buttons, the Public profile switch turned on with the profile's address, the profile fields, the Profile complete list at 8 of 8, the season figures and the video clip of his goal." loading="lazy" decoding="async"></picture></a><figcaption>The recruitment profile: the record, the season figures, the clips.</figcaption></figure>
+<p>The top of the page carries <strong>Share the profile</strong>, shown when the profile is public, which copies the link (&quot;Link copied&quot;), and <strong>Preview</strong>, which opens the public page in a new tab. Then:</p>
+<ul>
+<li><strong>Public profile</strong>: the player’s own switch. On: &quot;Visible to anyone with the link, on this device for now.&quot;, with the player’s /profil/ address. If the club does not allow public profiles, the card says so and offers <strong>Change this setting</strong>. For a player who may be under 18 (born 18 years ago or less), the card warns that &quot;a parent’s or guardian’s consent will be asked before the profile goes public&quot;, then shows the date of the consent once recorded.</li>
+<li><strong>The profile</strong>: <strong>Short bio</strong> (&quot;Their game, their qualities, what they are looking for (academy, scholarship, club).&quot;; three or four sentences are enough), <strong>Height (cm)</strong>, <strong>Number</strong>, <strong>Year of birth</strong>, <strong>Preferred foot</strong> (<strong>Right</strong>, <strong>Left</strong>, <strong>Both</strong>) and <strong>Main position</strong>. Every change saves itself: &quot;Saved&quot;.</li>
+<li><strong>Profile complete</strong>: the eight items, each <strong>done</strong> or <strong>to complete</strong>.</li>
+<li><strong>Season</strong>: <strong>Matches</strong>, <strong>Minutes</strong> and <strong>Goals</strong> (3, 84 and 1 for Hamidou Sali), then <strong>Actions per 90 minutes</strong> for eight coded actions (pass completed, progressive, line broken, final third entry, box entry, pins two, won back in 5 s, shot), and <strong>Share of the team’s Indice</strong>: the share of the team’s actions that come from this player, sub-index by sub-index (18% of Fixation for him, over one coded match). The bar is full at 25%.</li>
+<li><strong>Video clips</strong>: up to eight clips picked from the club’s videos with <strong>Pick clips</strong>. The list shows first the clips where the player is tagged (&quot;With Hamidou Sali&quot;), then <strong>Other clips of the club</strong>. Clips are made in the video studio (chapter 29).</li>
+</ul>
+<p>The figures come from actions coded and credited to this player on the video (chapter 29): a player whose actions nobody coded has minutes and goals, but no share of the Index.</p>
+<h3 id="the-public-page">The public page</h3>
+<p>A player’s /profil/ address opens a page of the site, without the app’s menus: the crest, &quot;Player profile, Étoile de la Côte&quot;, the name, the team and the city, the position, the year of birth (&quot;2004 (age 22)&quot;), the foot, the height, the number, the bio, the <strong>Clips</strong> to watch with <strong>Watch the clip again</strong>, the season, and <strong>The game model of</strong> the club. It ends with an honest sentence: &quot;This link works on this device only, until Ndamba accounts arrive. The data comes from the club and is not verified by Ndamba.&quot;</p>
+<figure class="shot tall"><a href="../img/en/public-profile.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/public-profile-720.webp 720w, ../img/en/public-profile.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/public-profile.jpg" srcset="../img/en/public-profile-720.jpg 720w, ../img/en/public-profile.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="2698" alt="The public profile page of Hamidou Sali: the crest, his name, Seniors, Douala, Cameroon, the grid of position, birth, foot, height and number, his bio, the clip of his goal, the season figures and the club's game model." loading="lazy" decoding="async"></picture></a><figcaption>The page a scout will see, once accounts exist.</figcaption></figure>
+<p>A clip plays on this page if its video is hosted or on YouTube. A clip from a Facebook video opens on Facebook, with its start and end minutes; a clip from a file kept on the club’s device is marked &quot;on the club’s device&quot; and does not play elsewhere. If the profile is not public, or does not exist on the device, the page shows <strong>This profile is not public</strong>.</p>
+<figure class="shot"><a href="../img/en/club-consent.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/club-consent-720.webp 720w, ../img/en/club-consent.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/club-consent.jpg" srcset="../img/en/club-consent-720.jpg 720w, ../img/en/club-consent.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Consent for a public profile window on Nathan Mbella's page: his year of birth, 2010, what a public profile shows, the tick box for a parent's or guardian's consent, and the Make public button greyed out until it is ticked." loading="lazy" decoding="async"></picture></a><figcaption>For a player who may be under 18, consent comes before visibility.</figcaption></figure>
+<aside class="callout callout-attention"><div class="callout-kicker">Watch out</div><div class="callout-title">A minor needs the parents’ written consent</div><p>A public profile shows a name, a year of birth, a position and images. For a player who may be under 18, turning on <strong>Public profile</strong>, in the list or on their page, first opens <strong>Consent for a public profile</strong>: you tick &quot;A parent or guardian has agreed in writing, or the player is an adult and has agreed. The club keeps this consent.&quot; before <strong>Make public</strong>. Without a recorded consent, the public page stays closed. The app records the date; the written consent itself is kept by the club. In the demo, Samuel Ngassa’s profile (U19, born 2008) has a recorded consent; Nathan Mbella’s (U17) is private: try to open it to see the request. In a real club, caution comes before visibility (chapter 25).</p>
+</aside>
+
+<h2 id="analytics-the-club-in-numbers">Analytics: the club in numbers</h2>
+<p>The <strong>Analytics</strong> tab compares the teams. Its title, &quot;The club in numbers, season 2026-2027&quot;, is followed by two buttons: <strong>Open the analysis studio</strong>, which leads to the <strong>Maps and season</strong> page (chapter 28), and <strong>Match reports</strong>, which opens the <strong>Analysis</strong> page.</p>
+<p><strong>Season Indice by team</strong> draws one bar out of 100 per team, with marks at the 35, 50, 65 and 80 bands, the band name and the number of coded matches. <strong>The five sub-indices</strong> puts them side by side, out of 20, with each team’s weak point in red:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Team</th>
+<th>Progression</th>
+<th>Penetration</th>
+<th>Fixation</th>
+<th>Regain</th>
+<th>Control</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Seniors</td>
+<td>13.4</td>
+<td>14.3</td>
+<td>8.3</td>
+<td>14.1</td>
+<td>17.8</td>
+</tr>
+<tr>
+<td>U19</td>
+<td>13.0</td>
+<td>11.1</td>
+<td>7.0</td>
+<td>11.8</td>
+<td>13.3</td>
+</tr>
+<tr>
+<td>U17</td>
+<td>10.8</td>
+<td>8.1</td>
+<td>4.5</td>
+<td>8.9</td>
+<td>9.5</td>
+</tr>
+<tr>
+<td>Women</td>
+<td>13.1</td>
+<td>13.1</td>
+<td>9.0</td>
+<td>11.9</td>
+<td>15.4</td>
+</tr>
+</tbody></table></div>
+<p>Last, <strong>Shared weak point</strong> looks for the lowest sub-index on average: &quot;On average, the club’s teams score 7.2 out of 20 in fixation.&quot;, with four drills from <em>The Njangi Code</em> that open in one tap: R02 (Avi Ramon Rondo), S04 (The Njangi Dribble), P07 (Draw Them In, Free a Teammate) and F04 (Pin and Switch). One work instruction, from the U17s to the first team.</p>
+<h2 id="on-a-phone">On a phone</h2>
+<figure class="shot tall"><a href="../img/en/m-club-overview.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/m-club-overview-720.webp 720w, ../img/en/m-club-overview.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/m-club-overview.jpg" srcset="../img/en/m-club-overview-720.jpg 720w, ../img/en/m-club-overview.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="The club space on a phone: the club's crest and name, the pencil button to edit, the note on a sand background, the row of tabs that scrolls, and the Overview in one column." loading="lazy" decoding="async"></picture></a><figcaption>On a phone, the six tabs scroll under your finger.</figcaption></figure>
+<p>On a phone, <strong>Edit the club</strong> becomes a pencil button and the tab row scrolls; the rest fits in one column.</p>
+<h2 id="the-club-plan-and-today-39-s-limits">The Club plan and today’s limits</h2>
+<p>The full club space belongs to the <strong>Club and academy</strong> plan, proposed at $49 a month (about 29,400 FCFA), which also includes all of Coach Pro and unlimited teams (chapter 24). Payments are not connected yet: activation is a demonstration, and nothing is locked during the demo.</p>
+<p>What to know before relying on the club space:</p>
+<ul>
+<li><strong>Everything lives on the club’s device.</strong> Another phone opens an empty space; to keep or pass on the work, export a backup from <strong>Settings</strong> (chapter 6).</li>
+<li><strong>Invitations attach nobody</strong>: you mark the member <strong>Active</strong> yourself.</li>
+<li><strong>The rights are written, not enforced yet</strong>: the <strong>Who sees what</strong> table will apply with accounts.</li>
+<li><strong>Public profile links only work on the club’s device.</strong></li>
+</ul>
+<p>Accounts, sync between the staff’s devices and sharing profiles are the first item of the roadmap (chapter 26).</p>
+<aside class="callout callout-investisseur"><div class="callout-kicker">For investors</div><div class="callout-title">The club, the natural unit of payment</div><p>A coach pays for a team; a club pays for all its teams, its staff and the memory of its season. The club space turns four individual tools into one shared tool, with a shared game model and a shared measure. Recruitment profiles add value that players and their families can see. The $49 a month price is a proposal to confirm with pilot clubs, and the club space will only reach its full value with shared accounts: that is the top of the roadmap.</p>
+</aside>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-26.html" rel="prev"><small>Previous</small><b>26. The roadmap</b></a><a class="next" href="ch-28.html" rel="next"><small>Next</small><b>28. The match maps and the season</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>

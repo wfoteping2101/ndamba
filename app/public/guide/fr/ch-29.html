@@ -1,0 +1,319 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>29. Le montage vidéo : clips, dessins, séance, Le Guide Ndamba</title><meta name="description" content="Le studio vidéo devenu un outil de montage : la disposition de l'écran, la frise et ses lignes, le codage avec la place sur le terrain, les coups de pied arrêtés, les clips (manuels et automatiques), les dessins avec huit outils, le zoom, le temps utile, l'export d'un clip, le lien d'un moment, les séances vidéo en plein écran et les raccourcis clavier. Avec une méthode : une séance de quinze minutes, trois à cinq clips, le positif d'abord."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-29"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>Le Guide Ndamba</span></a><nav class="bar-actions"><a class="lang" href="../en/ch-29.html" hreflang="en" lang="en">EN</a><button id="aa" type="button" aria-label="Taille du texte">Aa</button><button id="toc-btn" type="button">Sommaire</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Sommaire"><div class="drawer-head"><a href="./">Couverture et sommaire</a><button id="close" type="button">Fermer</button></div><ol class="toc-list"><li class="toc-part"><span>Partie I. Comprendre Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba en dix minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>La philosophie Njangi</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profils, six chemins</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>La carte de la plateforme</a></li></ol></li><li class="toc-part"><span>Partie II. Démarrer</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Créer son espace avec Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>L'accueil, la navigation et les réglages</a></li></ol></li><li class="toc-part"><span>Partie III. Entraîner</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>La bibliothèque des 64 exercices</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Construire une séance</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Planifier la semaine</a></li></ol></li><li class="toc-part"><span>Partie IV. L’équipe et les matchs</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>L'effectif et la fiche joueur</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Préparer un match</a></li></ol></li><li class="toc-part"><span>Partie V. Analyser</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Analyser un match : filmer, mettre en ligne, coder</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>Le rapport de match et l'Indice Njangi</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>Le studio vidéo, l'analyse IA et la saison</a></li></ol></li><li class="toc-part"><span>Partie VI. Le joueur et sa famille</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>L'espace joueur</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>Les Leçons du Ballon, le carnet et le parcours</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Les parents</a></li></ol></li><li class="toc-part"><span>Partie VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, l'agent de Ndamba</a></li></ol></li><li class="toc-part"><span>Partie VIII. Les livres et le jeu</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>Le Code Njangi, le livre de la méthode</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, la saga de Kaydoudou et BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, le jeu</a></li></ol></li><li class="toc-part"><span>Partie IX. Porter le trophée</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Pourquoi l'Afrique peut gagner la Coupe du monde</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>Le plan 2026-2041 : cinq étapes vers le trophée</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>Le modèle économique</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Confiance, données et jeunes joueurs</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>La feuille de route</a></li></ol></li><li class="toc-part"><span>Partie X. Le club, le terrain et le matériel</span><ol><li><a href="ch-27.html" data-page="ch-27"><b>27</b>Le club : équipes, membres, vidéothèque, recrutement</a></li><li><a href="ch-28.html" data-page="ch-28"><b>28</b>Les cartes du match et la saison</a></li><li><a href="ch-29.html" data-page="ch-29" aria-current="page"><b>29</b>Le montage vidéo : clips, dessins, séance</a></li><li><a href="ch-30.html" data-page="ch-30"><b>30</b>Les matchs entre amis</a></li><li><a href="ch-31.html" data-page="ch-31"><b>31</b>Filmer et héberger : caméra, liens, envoi payant</a></li></ol></li><li class="toc-part"><span>Annexes</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Démarrage rapide par profil</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>Glossaire français et anglais</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Toutes les pages de la plateforme</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>Les 64 exercices</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions et réponses</a></li></ol></li></ol></div></div><main><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-10">Partie X. Le club, le terrain et le matériel</a><div class="ch-num">Chapitre 29</div><h1 class="ch-title">Le montage vidéo : clips, dessins, séance</h1><p class="ch-sum">Le studio vidéo devenu un outil de montage : la disposition de l’écran, la frise et ses lignes, le codage avec la place sur le terrain, les coups de pied arrêtés, les clips (manuels et automatiques), les dessins avec huit outils, le zoom, le temps utile, l’export d’un clip, le lien d’un moment, les séances vidéo en plein écran et les raccourcis clavier. Avec une méthode : une séance de quinze minutes, trois à cinq clips, le positif d’abord.</p><p class="ch-time">13 min de lecture</p></header><div class="prose"><p>Coder un match sert à le mesurer. Le montrer aux joueurs sert à le changer. Entre les deux, il y a un travail que les clubs professionnels confient à un analyste vidéo : choisir les bons moments, les découper, dessiner dessus ce qu’il faut voir, et les enchaîner devant le groupe. Le studio de Ndamba fait ce travail dans le navigateur, sur la même vidéo et avec les mêmes codes que le rapport. Ce chapitre le parcourt avec la vidéo de la démo club pro, le match Étoile de la Côte contre Météore de Bafoussam, hébergé sur Ndamba et codé action par action.</p>
+<p>Le chapitre 14 explique comment ouvrir une vidéo, marquer les coups d’envoi et coder ; le chapitre 12, ce que veut dire chaque code. Celui-ci part de là.</p>
+<h2 id="l-39-ecran-du-studio">L’écran du studio</h2>
+<figure class="shot"><a href="../img/fr/editor-studio.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/editor-studio-720.webp 720w, ../img/fr/editor-studio.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/editor-studio.jpg" srcset="../img/fr/editor-studio-720.jpg 720w, ../img/fr/editor-studio.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="Le studio vidéo de la démo club pro : en haut le lien Les vidéos des matchs, les boutons Exporter et Lancer la séance, le titre du match, le menu Match et la mention Hébergée sur Ndamba, démonstration ; à gauche la vidéo (une animation 2D du match vue de haut), la frise colorée et les commandes de lecture ; à droite les onglets Coder, Clips, Séances et IA, avec les coups d'envoi et les boutons de codes." loading="lazy" decoding="async"></picture></a><figcaption>Le studio : la vidéo et sa frise à gauche, les outils à droite.</figcaption></figure>
+<p>Sur un ordinateur, l’écran a quatre zones.</p>
+<p><strong>La barre du haut.</strong> Le lien <strong>Les vidéos des matchs</strong> pour revenir à la liste, <strong>Exporter</strong> (les fichiers de l’analyse) et <strong>Lancer la séance</strong> quand une séance vidéo existe. Dessous, le titre de la vidéo avec son crayon (<strong>Renommer la vidéo</strong>), le menu <strong>Match</strong> qui lie la vidéo à un match, ou à <strong>Aucun match (entraînement, observation)</strong>, puis l’origine de la vidéo et <strong>Changer de vidéo</strong>.</p>
+<p><strong>Le lecteur.</strong> L’image, puis la frise, puis les commandes : <strong>Lecture</strong> et <strong>Pause</strong>, <strong>Reculer de 5 s</strong> et <strong>Avancer de 5 s</strong>, <strong>Image précédente</strong> et <strong>Image suivante</strong>, le temps (« 21:40 / 1:33:53 »), et les vitesses <strong>0,5×</strong>, <strong>1×</strong> et <strong>2×</strong>. Une rangée d’outils suit : <strong>Créer un clip</strong>, <strong>Dessiner</strong>, <strong>Dézoomer</strong> et <strong>Zoomer</strong>, le suivi du ballon, <strong>Temps utile</strong> et, au bout, le clavier qui ouvre les <strong>Raccourcis clavier</strong>.</p>
+<p><strong>La frise.</strong> Elle porte les clips en haut, puis une ligne fine par famille de codes, dans les couleurs des boutons : possession, danger, fixation, transitions, coups de pied arrêtés, adversaire et notes. Chaque action codée y laisse un trait. La tête de lecture dorée montre où vous êtes ; touchez ou faites glisser pour vous déplacer. Pendant la création d’un clip, une ligne <strong>Détail du clip</strong> grossit la zone du clip pour régler ses bornes au dixième de seconde.</p>
+<p><strong>Le panneau des outils.</strong> Quatre onglets : <strong>Coder</strong>, <strong>Clips</strong> (avec leur nombre, 29 dans la démo), <strong>Séances</strong> (1) et <strong>IA</strong>. Chacun a son adresse ( ?panneau=coder, clips, seances ou ia), pratique pour envoyer un adjoint directement aux clips.</p>
+<p>Sur téléphone, le lecteur reste collé en haut et le panneau défile dessous.</p>
+<figure class="shot tall"><a href="../img/fr/m-editor-studio.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/m-editor-studio-720.webp 720w, ../img/fr/m-editor-studio.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/m-editor-studio.jpg" srcset="../img/fr/m-editor-studio-720.jpg 720w, ../img/fr/m-editor-studio.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="Le studio sur téléphone : la vidéo en haut avec sa frise et ses commandes, puis les onglets Coder, Clips, Séances et IA et les boutons de codes en grandes tuiles." loading="lazy" decoding="async"></picture></a><figcaption>Sur téléphone, la vidéo reste en haut pendant que l’on code.</figcaption></figure>
+<h2 id="d-39-ou-vient-la-video">D’où vient la vidéo</h2>
+<p>Quatre origines sont possibles, affichées à côté du menu <strong>Match</strong> : <strong>Sur YouTube</strong>, <strong>Sur Facebook</strong>, <strong>Fichier : match.mp4</strong> (un fichier ouvert sur l’appareil) et <strong>Hébergée sur Ndamba</strong>. Une vidéo hébergée a été envoyée sur Ndamba (chapitre 31) : elle se lit tout de suite, sur n’importe quel appareil, sans rouvrir de fichier. La vidéo de la démo porte aussi la mention <strong>démonstration</strong> : c’est une animation 2D de 94 minutes tirée des codes du match, servie par Ndamba, pour que chaque action codée se voie à l’écran. Si une vidéo hébergée ne se charge pas, le studio le dit et propose <strong>Réessayer</strong>.</p>
+<p>Les outils ne marchent pas partout, parce que les lecteurs de YouTube et de Facebook ne laissent ni capturer ni ralentir librement leur image :</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th></th>
+<th>Fichier ou hébergée</th>
+<th>YouTube</th>
+<th>Facebook</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Coder, placer, clips, séances</td>
+<td>oui</td>
+<td>oui</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>Vitesses 0,5× et 2×</td>
+<td>oui</td>
+<td>oui</td>
+<td>non</td>
+</tr>
+<tr>
+<td>Image par image, zoom</td>
+<td>oui</td>
+<td>non</td>
+<td>non</td>
+</tr>
+<tr>
+<td>Dessin sur l’image</td>
+<td>oui</td>
+<td>non</td>
+<td>non</td>
+</tr>
+<tr>
+<td>Exporter un clip en vidéo</td>
+<td>oui</td>
+<td>non</td>
+<td>non</td>
+</tr>
+<tr>
+<td>Copier le lien d’un moment</td>
+<td>non</td>
+<td>oui, au bon moment</td>
+<td>oui, au début de la vidéo</td>
+</tr>
+</tbody></table></div>
+<h2 id="coder-avec-la-place-sur-le-terrain">Coder avec la place sur le terrain</h2>
+<p>L’onglet <strong>Coder</strong> commence par les <strong>Coups d’envoi</strong> (« 00:00 et 47:19 » dans la démo) : une bande repliable avec <strong>1re mi-temps</strong>, <strong>2e mi-temps</strong> et <strong>Marquer ici</strong> (chapitre 14). Puis le titre <strong>Coder à 21:40</strong>, qui suit le temps de la vidéo, et l’interrupteur <strong>Placer sur le terrain</strong> (touche M). Le code se place au moment affiché par la vidéo ; pour une vidéo liée à un match, « Chaque code va dans le rapport du match, avec son moment. »</p>
+<figure class="shot"><a href="../img/fr/editor-place.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/editor-place-720.webp 720w, ../img/fr/editor-place.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/editor-place.jpg" srcset="../img/fr/editor-place-720.jpg 720w, ../img/fr/editor-place.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="Le panneau de placement ouvert après un code Passe à 21:40 : un mini-terrain vert avec Notre attaque vers la droite, les boutons Qui ? et Reçue par, les numéros 1 à 11 des joueurs sur le terrain, Tout l'effectif, le rappel du clavier et le bouton Passer." loading="lazy" decoding="async"></picture></a><figcaption>Après chaque code : où, puis qui. Tout est facultatif.</figcaption></figure>
+<p>Avec <strong>Placer sur le terrain</strong> activé, chaque code ouvre un panneau : « Passe à 21:40 : où, et qui ? ».</p>
+<ol>
+<li>Touchez l’endroit de l’action sur le mini-terrain. Notre attaque va toujours de gauche à droite, quel que soit le côté filmé.</li>
+<li>Sous <strong>Qui ?</strong>, touchez le numéro du joueur. Le panneau propose les joueurs sur le terrain à ce moment : les titulaires du match, plus les remplaçants à partir de leur première action codée (« Remplacements déduits des codes »). <strong>Tout l’effectif</strong> ouvre la liste entière.</li>
+<li>Pour une passe, passez à <strong>Reçue par</strong> et touchez le receveur. C’est ce qui dessine le réseau de passes (chapitre 28).</li>
+<li><strong>Terminé</strong>, ou simplement le code suivant. <strong>Passer</strong> continue sans placer.</li>
+</ol>
+<p>Au clavier, c’est plus rapide : « tapez le numéro du maillot, Entrée pour terminer, Échap pour passer. Les lettres codent l’action suivante. » Pour une action de l’adversaire, seul l’endroit est demandé. Ces positions et ces noms nourrissent les cartes, l’onglet <strong>Joueurs</strong> du rapport et les profils de recrutement (chapitre 27). Elles restent facultatives : un match codé sans placement a son Indice et son rapport, sans cartes.</p>
+<p>Les boutons de codes suivent, par famille, chacun avec son compteur (« ×412 ») et sa touche. Dessous, deux blocs nouveaux :</p>
+<ul>
+<li><strong>Coups de pied arrêtés</strong>, « Comptés à part, jamais dans l’Indice » : pour nous, <strong>Corner</strong> (C), <strong>Coup franc</strong> (X), <strong>Penalty</strong> (P), <strong>Touche</strong> (T) et <strong>Six mètres</strong> (G) ; pour l’adversaire, les mêmes avec la touche Majuscule. Placés, ils remplissent la carte des coups de pied arrêtés.</li>
+<li><strong>Note</strong> : une phrase libre au moment présent (« le pivot se retourne »), avec <strong>Ajouter la note</strong> (touche N).</li>
+</ul>
+<p>Enfin, la liste <strong>Actions codées</strong> (783 dans la démo), filtrable par famille. Chaque ligne donne le temps, le code et les numéros (« Passe 11 vers 8 »). Touchez-la pour revoir l’action ; l’épingle la place ou la replace sur le terrain ; la corbeille la supprime. La carte <strong>Indice Njangi</strong> se met à jour à chaque code, avec le lien <strong>Rapport du match</strong>.</p>
+<h2 id="les-clips">Les clips</h2>
+<p>Un clip est un passage choisi de la vidéo, avec un début, une fin, un titre, une note et les joueurs concernés. Ce n’est pas un nouveau fichier : c’est un repère dans la vidéo, qu’on rejoue, qu’on range dans une séance ou qu’on exporte.</p>
+<figure class="shot"><a href="../img/fr/editor-clips.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/editor-clips-720.webp 720w, ../img/fr/editor-clips.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/editor-clips.jpg" srcset="../img/fr/editor-clips-720.jpg 720w, ../img/fr/editor-clips.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="L'onglet Clips de la démo : Clips 29, le bouton Créer un clip, les filtres Tous, Auto et Les miens, le choix du joueur, puis la liste des clips avec leurs bornes et leur durée, les clips automatiques des tirs et des buts marqués auto, et les clips du staff comme Contre-pression : reprise en moins de 5 secondes." loading="lazy" decoding="async"></picture></a><figcaption>Les clips : ceux du staff, et ceux qui se créent seuls pour chaque tir et chaque but.</figcaption></figure>
+<p><strong>Créer un clip.</strong></p>
+<ol>
+<li>Placez la vidéo sur l’action et touchez <strong>Créer un clip</strong> : le panneau <strong>Nouveau clip</strong> s’ouvre avec un clip de six secondes avant à six secondes après ce moment.</li>
+<li>Ajustez les bornes : <strong>Début ici</strong> (touche I) et <strong>Fin ici</strong> (touche O) les placent au moment de la vidéo, et les deux poignées dorées de la frise se règlent au doigt, au dixième de seconde dans la ligne de détail. Le panneau affiche la durée.</li>
+<li>Donnez un <strong>Titre</strong> (« la sortie à trois jusqu’au but ») et une <strong>Note pour les joueurs</strong> : ce qu’il faut regarder.</li>
+<li>Touchez les <strong>Joueurs concernés</strong>.</li>
+<li><strong>Lire le clip</strong> pour vérifier, puis <strong>Enregistrer le clip</strong>. « Clip enregistré ».</li>
+</ol>
+<p><strong>Les clips automatiques.</strong> Chaque tir et chaque but codé crée tout seul son clip, de huit secondes avant à quatre secondes après l’action, avec un titre comme « But, Serge Eyoum, 22’ » ou « Tir adverse, 8’ ». Ils portent la mention <strong>auto</strong> et suivent l’action codée : si l’action change, le clip suit. On ne les modifie pas ; <strong>Dupliquer pour modifier</strong> en fait une copie libre (« Copie créée : modifiez-la librement »). Dans la démo, 23 des 29 clips sont automatiques ; les 6 autres ont été faits par le staff.</p>
+<p><strong>Retrouver un clip.</strong> Les filtres <strong>Tous</strong>, <strong>Auto</strong> et <strong>Les miens</strong>, et le choix d’un joueur, trient la liste. Chaque ligne donne le titre, les bornes (« 16:12 à 16:25 »), la durée et les numéros des joueurs. Touchez un clip pour ses actions : <strong>Lire le clip</strong>, <strong>Modifier</strong> (ou <strong>Dupliquer pour modifier</strong>), <strong>Ajouter à une séance</strong>, <strong>Exporter le clip</strong>, <strong>Copier le lien du moment</strong> et <strong>Supprimer</strong>.</p>
+<h2 id="dessiner-sur-l-39-image">Dessiner sur l’image</h2>
+<p>Le dessin marche sur un fichier ou une vidéo hébergée. Touchez <strong>Dessiner</strong> (ou D) : la vidéo se met en pause, la mention <strong>Dessin</strong> s’affiche sur l’image et une barre d’outils s’ouvre sous le lecteur.</p>
+<figure class="shot"><a href="../img/fr/editor-draw.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/editor-draw-720.webp 720w, ../img/fr/editor-draw.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/editor-draw.jpg" srcset="../img/fr/editor-draw-720.jpg 720w, ../img/fr/editor-draw.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="La barre de dessin ouverte sous la vidéo : les huit outils Flèche, Cercle, Main levée, Projecteur, Zone, Zone libre, Relier et Texte, les cinq couleurs, les boutons annuler, rétablir et effacer, et le bouton Enregistrer l'image." loading="lazy" decoding="async"></picture></a><figcaption>Huit outils et cinq couleurs pour montrer ce qu’il faut voir.</figcaption></figure>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Outil</th>
+<th>Geste</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Flèche</strong></td>
+<td>Glissez pour tracer une flèche : une course, une passe</td>
+</tr>
+<tr>
+<td><strong>Cercle</strong></td>
+<td>Glissez depuis le centre pour entourer</td>
+</tr>
+<tr>
+<td><strong>Main levée</strong></td>
+<td>Dessinez librement</td>
+</tr>
+<tr>
+<td><strong>Projecteur</strong></td>
+<td>Touchez un joueur pour l’éclairer, glissez pour agrandir l’anneau</td>
+</tr>
+<tr>
+<td><strong>Zone</strong></td>
+<td>Glissez pour poser une zone rectangulaire : un espace libre, un couloir</td>
+</tr>
+<tr>
+<td><strong>Zone libre</strong></td>
+<td>Touchez chaque coin, puis le premier point, un double appui ou Entrée pour fermer</td>
+</tr>
+<tr>
+<td><strong>Relier</strong></td>
+<td>Touchez les joueurs l’un après l’autre pour les relier (une ligne de quatre, un triangle), puis un double appui ou Entrée</td>
+</tr>
+<tr>
+<td><strong>Texte</strong></td>
+<td>Touchez l’endroit, écrivez, puis Entrée</td>
+</tr>
+</tbody></table></div>
+<p>Cinq couleurs : <strong>Or</strong>, <strong>Blanc</strong>, <strong>Rouge</strong>, <strong>Vert</strong>, <strong>Bleu</strong>. <strong>Annuler</strong>, <strong>Rétablir</strong> et <strong>Tout effacer</strong> corrigent (Ctrl+Z et Ctrl+Y au clavier) ; <strong>Terminer</strong> ferme une zone libre ou une liaison en cours. <strong>Enregistrer l’image</strong> fond l’image et le dessin, et une ligne dit où l’image ira : sur le clip en cours de création, sur le clip choisi, sur l’action sélectionnée, ou comme une note à ce moment. Sur un clip automatique, le studio en fait une copie avec l’image. <strong>Fermer le dessin</strong> (ou Échap) referme la barre.</p>
+<p>L’image d’un clip compte : dans la séance vidéo, le clip s’ouvre sur elle, tenue trois secondes, avant de jouer.</p>
+<h2 id="zoomer-et-le-temps-utile">Zoomer, et le temps utile</h2>
+<p><strong>Le zoom.</strong> Sur un fichier ou une vidéo hébergée, <strong>Zoomer</strong> et <strong>Dézoomer</strong> (ou la molette, deux doigts, les touches + et -) grossissent l’image jusqu’à trois fois ; faites glisser l’image pour vous déplacer. <strong>Vue large</strong> (touche 0) revient à l’image entière. Le bouton du suivi automatique du ballon répond honnêtement : « Suivre le ballon automatiquement demande de repérer le ballon sur chaque image : c’est dans la feuille de route, pas encore dans l’application. »</p>
+<p><strong>Le temps utile.</strong> Un match de 94 minutes contient beaucoup de temps mort : ballon sorti, soins, remplacements. <strong>Temps utile</strong> (touche U) ne lit que les moments autour des actions codées et des clips : les passages de plus de douze secondes sans aucun code sont sautés, avec quatre secondes gardées avant la première action d’un passage et trois après la dernière. Une ligne sous les outils donne la durée gardée sur la durée totale de la vidéo. L’application ne détecte pas seule les arrêts de jeu : elle s’appuie sur votre codage.</p>
+<h2 id="exporter-un-clip-partager-un-moment">Exporter un clip, partager un moment</h2>
+<p><strong>Exporter le clip</strong> fabrique un fichier vidéo du clip sur l’appareil, pour l’envoyer dans le groupe WhatsApp de l’équipe. Le clip est lu une fois pour être enregistré : « comptez sa durée, plus quelques secondes. Gardez cette page ouverte. » La vidéo s’ouvre sur le titre, puis sur l’image dessinée tenue trois secondes s’il y en a une, puis le clip avec son titre en petit. Deux limites, écrites dans la fenêtre : le son n’est pas inclus, et l’export ne marche que sur un fichier ou une vidéo hébergée, dans un navigateur récent. En cas d’échec : « Essayez avec Chrome ou Edge à jour. » Quand c’est prêt : « Vidéo prête », et le téléchargement commence.</p>
+<p><strong>Copier le lien du moment</strong> sert aux vidéos YouTube et Facebook. Pour YouTube, le lien copié ouvre la vidéo au début du clip : un joueur le reçoit et tombe sur le bon moment, même sans Ndamba. Facebook ignore le moment dans ses liens : le message rappelle à quelle minute aller.</p>
+<p><strong>Exporter</strong>, en haut du studio, télécharge les données sans rien envoyer : <strong>Actions codées (CSV)</strong> pour un tableur (moment, code, joueur, receveur, place sur le terrain), <strong>Actions codées (JSON)</strong> avec toutes les données de l’analyse et l’Indice Njangi, et <strong>Exporter les clips (JSON)</strong>, les clips et les séances avec leurs moments et leurs joueurs.</p>
+<h2 id="les-seances-video">Les séances vidéo</h2>
+<p>Une séance enchaîne des clips pour les joueurs, en plein écran, sur une télévision de vestiaire, un ordinateur branché à un projecteur ou un téléphone tendu à un joueur.</p>
+<figure class="shot"><a href="../img/fr/editor-sessions.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/editor-sessions-720.webp 720w, ../img/fr/editor-sessions.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/editor-sessions.jpg" srcset="../img/fr/editor-sessions-720.jpg 720w, ../img/fr/editor-sessions.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="L'onglet Séances : la séance Séance vidéo de lundi : nos sorties et notre repos, 5 clips, avec le bouton Lancer la séance, Choisir les clips, le titre, la note, et l'ordre des cinq clips à glisser." loading="lazy" decoding="async"></picture></a><figcaption>Une séance : des clips choisis, dans un ordre voulu, avec un message.</figcaption></figure>
+<p><strong>Préparer une séance.</strong></p>
+<ol>
+<li>Onglet <strong>Séances</strong>, touchez <strong>Nouvelle séance</strong>.</li>
+<li>Donnez un <strong>Titre de la séance</strong> et une <strong>Note de la séance</strong> : « Le message à faire passer, en une ou deux phrases. »</li>
+<li>Touchez <strong>Choisir les clips</strong>, cochez les clips, puis le bouton <strong>Garder</strong> (« Garder 5 clips ») ; ou, depuis un clip de l’onglet <strong>Clips</strong>, touchez <strong>Ajouter à une séance</strong> et choisissez la séance (ou créez-en une).</li>
+<li>Réglez l’<strong>Ordre des clips</strong> en les glissant ou avec les flèches <strong>Monter</strong> et <strong>Descendre</strong>. <strong>Retirer de la séance</strong> enlève un clip sans le supprimer.</li>
+</ol>
+<p>La séance de la démo s’appelle « Séance vidéo de lundi : nos sorties et notre repos » : cinq clips, 1 min 18 s d’images, avec cette note : « Quinze minutes, cinq extraits : deux pour ce qui marche, deux pour ce qu’on corrige, un pour finir sur le plan de jeu. » <strong>Supprimer la séance</strong> demande confirmation : « Supprimer cette séance ? Les clips restent. »</p>
+<p><strong>Lancer la séance.</strong> <strong>Lancer la séance</strong>, en haut du studio ou sur la séance, ouvre le mode présentation à l’adresse /app/analyse/video/ suivie de l’identifiant de la vidéo et de /seance. Une page de garde montre le titre, le nombre de clips et leur durée, la note, et <strong>Commencer la séance</strong>.</p>
+<figure class="shot"><a href="../img/fr/editor-presenter.jpg" class="shot-link" aria-label="Ouvrir l’image entière"><picture><source type="image/webp" srcset="../img/fr/editor-presenter-720.webp 720w, ../img/fr/editor-presenter.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/fr/editor-presenter.jpg" srcset="../img/fr/editor-presenter-720.jpg 720w, ../img/fr/editor-presenter.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="Le mode séance en plein écran : en haut la croix, le titre de la séance, 1 / 5 et le bouton plein écran ; au centre le clip ; en bas cinq barres de progression, le titre du clip en grand, sa note, les joueurs concernés et les boutons clip précédent, pause et clip suivant." loading="lazy" decoding="async"></picture></a><figcaption>La séance vidéo : un clip à la fois, son titre et sa note en grand.</figcaption></figure>
+<p>Chaque clip s’affiche avec son titre et sa note en grand, et les joueurs concernés. Un clip qui porte un dessin s’ouvre sur l’image dessinée, tenue trois secondes (« Image du coach, la vidéo reprend dans un instant. »). Le clavier suffit : « Espace pause, flèches clip précédent ou suivant, F plein écran, Échap pour quitter. » À la fin : <strong>Fin de la séance</strong>, « 5 clips revus. À l’entraînement maintenant. », avec <strong>Revoir depuis le début</strong> et <strong>Retour au studio</strong>. Pour une vidéo gardée en fichier, la séance demande d’abord d’ouvrir le fichier.</p>
+<h2 id="la-methode-quinze-minutes-trois-a-cinq-clips-le-positif-d-39-abord">La méthode : quinze minutes, trois à cinq clips, le positif d’abord</h2>
+<p>Une séance vidéo trop longue perd le groupe au bout de dix minutes. La méthode du <em>Code Njangi</em> tient en quelques règles.</p>
+<ol>
+<li><strong>Un thème par séance.</strong> Celui du rapport : l’intention de la semaine (chapitre 13). Dans la démo, la Fixation et la défense de repos.</li>
+<li><strong>Trois à cinq clips, pas plus.</strong> Choisissez-les dans la liste des clips filtrée, ou depuis les cartes et la chronologie du rapport, qui ouvrent les bons moments (chapitre 28).</li>
+<li><strong>Le positif d’abord.</strong> Ouvrez sur ce qui a marché et qui correspond au modèle de jeu : le joueur voit d’abord ce qu’on attend de lui. Puis un ou deux clips à corriger, sans désigner un coupable : on montre une situation, pas une faute.</li>
+<li><strong>Une image par clip à corriger.</strong> Une flèche pour la course qui manquait, un projecteur sur le joueur libre, une zone pour l’espace à occuper.</li>
+<li><strong>Finir sur le plan.</strong> Le dernier clip montre ce qu’on veut refaire samedi. Dans la démo, la séance se termine sur le but adverse : pour suivre sa propre note, glissez le but d’Eyoum en dernier.</li>
+<li><strong>Quinze minutes en tout</strong>, clips et échanges compris, puis le terrain.</li>
+</ol>
+<p>Pour une équipe de jeunes, la règle du rapport vaut ici aussi : on montre l’équipe, pas un enfant devant le groupe.</p>
+<h2 id="les-raccourcis-clavier">Les raccourcis clavier</h2>
+<p>Le bouton clavier, sous le lecteur, ou la touche ?, ouvre l’aide <strong>Raccourcis clavier</strong>.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Touche</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Espace</td>
+<td>Lecture ou pause</td>
+</tr>
+<tr>
+<td>← →</td>
+<td>Reculer ou avancer de 5 s</td>
+</tr>
+<tr>
+<td>Majuscule + ← →</td>
+<td>Action codée précédente ou suivante</td>
+</tr>
+<tr>
+<td>, et .</td>
+<td>Image par image</td>
+</tr>
+<tr>
+<td>1 à 9, F S L K R, A B, Q W E</td>
+<td>Les codes (mêmes touches qu’en direct)</td>
+</tr>
+<tr>
+<td>C X P T G</td>
+<td>Corner, coup franc, penalty, touche, six mètres (nous)</td>
+</tr>
+<tr>
+<td>Majuscule + C X P T G</td>
+<td>Les mêmes pour l’adversaire</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Placer sur le terrain (activer ou couper)</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Écrire une note</td>
+</tr>
+<tr>
+<td>I et O</td>
+<td>Début et fin du clip</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Dessiner</td>
+</tr>
+<tr>
+<td>U</td>
+<td>Temps utile</td>
+</tr>
+<tr>
+<td>+ - 0</td>
+<td>Zoomer, dézoomer, vue large</td>
+</tr>
+<tr>
+<td> ?</td>
+<td>Cette aide</td>
+</tr>
+</tbody></table></div>
+<p>Quand le placement est ouvert, les chiffres tapent le numéro du maillot, Entrée termine et Échap passe.</p>
+<aside class="callout callout-astuce"><div class="callout-kicker">Astuce</div><div class="callout-title">Coder d’abord, monter ensuite</div><p>Ne faites pas tout en un passage. Codez le match avec <strong>Placer sur le terrain</strong> ; les tirs et les buts ont alors déjà leurs clips. Ouvrez ensuite le rapport : ses cartes et sa chronologie vous mènent aux moments qui comptent. Créez trois clips à partir de là, dessinez sur un ou deux, rangez-les dans une séance. Vingt minutes de montage suffisent pour quinze minutes de séance.</p>
+</aside>
+
+<aside class="callout callout-investisseur"><div class="callout-kicker">Pour l’investisseur</div><div class="callout-title">Le travail d’un analyste vidéo, dans un navigateur</div><p>Découper, annoter et présenter des clips demande d’ordinaire un logiciel de montage payant et un analyste formé. Ndamba le fait sur la vidéo déjà codée, dans un navigateur, sur ordinateur comme sur téléphone, avec des clips qui se créent seuls pour chaque tir et chaque but. Les limites sont écrites dans l’application : export sans le son, dessin et zoom seulement sur un fichier ou une vidéo hébergée, suivi automatique du ballon encore dans la feuille de route.</p>
+</aside>
+</div></article><nav class="pager" aria-label="Précédent / Suivant"><a class="prev" href="ch-28.html" rel="prev"><small>Précédent</small><b>28. Les cartes du match et la saison</b></a><a class="next" href="ch-30.html" rel="next"><small>Suivant</small><b>30. Les matchs entre amis</b></a></nav></main><script>(function(){var K='guide.fr';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','fr')}catch(e){}
+})();</script></body></html>

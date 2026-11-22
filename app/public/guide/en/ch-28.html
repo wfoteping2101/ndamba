@@ -1,0 +1,259 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>28. The match maps and the season, The Ndamba Guide</title><meta name="description" content="The tabs of the match report (Maps, Players, Timeline, Ask Mola), what each map shows and how its numbers are worked out, then the Maps and season page, which reads the last ten matches. With the honesty rule: a map shows actions that someone coded and placed with a tap, not player tracking."><meta property="og:image" content="https://ndamba-two.vercel.app/icons/og.png"><meta name="theme-color" content="#063A25"><link rel="icon" href="/favicon.svg"><style>
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:italic;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-italic.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--chalk:#F6F7F2;--paper:#FFFFFF;--mist:#ECEFE8;--line:#DCE2D8;--ink:#12211A;--soft:#34443B;--muted:#5D6C63;--faint:#94A198;--pitch:#0B5D3B;--pitch5:#13804F;--pitch7:#084B30;--deep:#063A25;--night:#0A2117;--pitch50:#E8F3ED;--gold:#F5B700;--gold50:#FFF8DD;--kola:#D7263D;--fs:17px}
+*{box-sizing:border-box}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}body{margin:0;background:var(--chalk);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-stretch:100%;font-size:var(--fs);line-height:1.62}
+a{color:var(--pitch)}img{max-width:100%;display:block}picture{display:contents}
+:focus-visible{outline:2px solid var(--pitch5);outline-offset:2px;border-radius:6px}
+.bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:12px;padding:10px 16px;background:rgba(246,247,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .back{display:flex;align-items:center;gap:10px;min-width:0;flex:1;text-decoration:none;color:var(--ink);font-weight:750;font-stretch:112%;font-size:16px}.bar .back svg{flex:none}.bar .back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-actions{display:flex;gap:8px;align-items:center}.bar-actions a,.bar-actions button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.bar-actions button#toc-btn{background:var(--pitch);border-color:var(--pitch);color:#fff}
+.progress{position:sticky;top:61px;z-index:29;height:3px}.progress span{display:block;height:3px;width:0;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 18px 90px}
+.ch-head{padding:46px 0 18px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.part-link{font-weight:600;font-size:14px;text-decoration:none;color:var(--muted)}
+.ch-num{margin-top:14px;font-weight:650;font-size:14px;color:var(--pitch)}
+.ch-title{font-stretch:116%;font-weight:780;letter-spacing:-.015em;font-size:clamp(32px,5.4vw,46px);line-height:1.06;margin:6px 0 12px;text-wrap:balance}
+.ch-sum{font-size:1.08em;color:var(--soft);margin:0 0 10px;max-width:62ch}.ch-time{margin:0;font-size:14px;color:var(--muted)}
+.prose h2{font-stretch:114%;font-weight:760;letter-spacing:-.01em;font-size:1.55em;line-height:1.18;margin:1.9em 0 .5em;text-wrap:balance}
+.prose h3{font-stretch:108%;font-weight:720;font-size:1.18em;line-height:1.25;margin:1.6em 0 .4em}
+.prose p{margin:0 0 1em}.prose ul,.prose ol{padding-left:1.35em;margin:0 0 1.1em}.prose li{margin:.25em 0}.prose li::marker{color:var(--pitch);font-weight:700}
+.prose strong{font-weight:680}.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--mist);padding:.1em .35em;border-radius:6px}
+.prose pre{background:var(--night);color:var(--chalk);padding:14px 16px;border-radius:12px;overflow-x:auto;font-size:14px;line-height:1.5}.prose pre code{background:none;padding:0;color:inherit}
+.prose blockquote{margin:1.2em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--gold);color:var(--soft);font-style:italic}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+.table{overflow-x:auto;margin:1.2em 0 1.6em;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.prose table{width:100%;border-collapse:collapse;font-size:.88em;line-height:1.45}.prose th{text-align:left;font-weight:650;color:var(--muted);font-size:.92em;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--mist)}.prose td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}.prose tr:last-child td{border-bottom:0}.prose td.num,.prose th.num{text-align:right;font-variant-numeric:tabular-nums}
+figure.shot{margin:28px 0 30px}figure.shot a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--paper);box-shadow:0 1px 0 rgba(18,33,26,.04),0 12px 32px -18px rgba(6,58,37,.35)}
+figure.shot img{width:100%;height:auto}figure.shot.tall a{max-height:min(1100px,150vw);position:relative}figure.shot.tall a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),#fff)}
+figure.shot figcaption{margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+@media(min-width:980px){figure.shot{margin-left:-80px;margin-right:-80px}figure.shot figcaption{margin-left:80px;margin-right:80px}}
+figure.diagram{margin:22px 0}figure.diagram svg{width:100%;height:auto;border-radius:12px}
+.callout{margin:26px 0;padding:16px 18px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+.callout-kicker{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--pitch);margin-bottom:4px}.callout-kicker .mm{width:18px;height:18px}
+.callout-title{font-weight:700;font-stretch:108%;font-size:1.05em;margin-bottom:4px}.callout p{margin:0 0 .7em}
+.callout-astuce{background:var(--pitch50);border-color:#CFE5D8}
+.callout-attention{background:var(--gold50);border-color:#F3E2A3}.callout-attention .callout-kicker{color:#7A5A00}
+.callout-investisseur{background:var(--deep);border-color:var(--deep);color:#E9EEE9}.callout-investisseur .callout-kicker{color:var(--gold)}.callout-investisseur a{color:var(--gold)}.callout-investisseur strong{color:#fff}
+.callout-mola{background:var(--paper);border-left:4px solid var(--pitch)}
+.part-opener{margin:30px -18px 0;padding:44px 24px 40px;background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}
+.part-opener::after{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:2px solid rgba(246,247,242,.12)}
+.part-num{font-weight:650;font-size:14px;color:var(--gold)}.part-opener h2{font-stretch:118%;font-weight:800;font-size:clamp(30px,5vw,42px);line-height:1.05;margin:6px 0 10px}.part-opener p{margin:0;max-width:56ch;color:#C9D6CD}
+@media(min-width:800px){.part-opener{margin:34px -40px 0;border-radius:22px;padding:50px 40px 44px}}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:56px 0 8px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:86px}
+.pager a:hover{border-color:var(--pitch)}.pager .next{text-align:right;background:var(--pitch);border-color:var(--pitch);color:#fff}
+.pager small{font-weight:600;font-size:13px;opacity:.8}.pager b{font-weight:700;font-stretch:106%;font-size:16px;line-height:1.25}
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(10,33,23,.55)}.drawer-inner{position:absolute;right:0;top:0;bottom:0;width:min(440px,94vw);background:var(--paper);overflow-y:auto;padding:16px 18px 30px}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}.drawer-head a{font-weight:700;text-decoration:none}.drawer-head button{font:600 14px Archivo,sans-serif;min-height:40px;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);cursor:pointer}
+.toc-list,.toc-list ol{list-style:none;margin:0;padding:0}.toc-part>span{display:block;margin:18px 0 6px;font-weight:700;font-size:13px;color:var(--pitch)}
+.toc-list a{display:flex;gap:10px;padding:8px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:15px;line-height:1.35}.toc-list a b{min-width:24px;color:var(--muted);font-variant-numeric:tabular-nums}.toc-list a[aria-current=page]{background:var(--mist);border-radius:8px}
+.cover{background:var(--deep);color:var(--chalk);position:relative;overflow:hidden}.cover::before{content:'';position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;border:2px solid rgba(246,247,242,.10)}.cover::after{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:2px solid rgba(246,247,242,.08)}
+.cover-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:64px 22px 60px}.cover .logo{display:inline-flex;align-items:center;gap:12px;max-width:100%}.cover .logo svg{height:40px;width:auto;max-width:100%}@media(max-width:560px){.cover .logo svg{height:32px}}
+.cover h1{font-stretch:120%;font-weight:820;letter-spacing:-.02em;font-size:clamp(40px,8vw,72px);line-height:1;margin:34px 0 16px;text-wrap:balance}.cover-sub{font-size:clamp(19px,2.6vw,24px);line-height:1.35;color:#D7E2DA;max-width:30ch;margin:0 0 26px}
+.cover-author{font-weight:700;margin:0;color:var(--gold)}.cover-ed{margin:2px 0 0;color:#A9BBAF;font-size:15px}
+.cover-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn-gold{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;border-radius:12px;background:var(--gold);color:var(--ink);font-weight:700;text-decoration:none}.btn-ghost-light{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:8px 18px;border-radius:12px;border:1px solid rgba(246,247,242,.35);color:var(--chalk);text-decoration:none}.btn-ghost-light small{font-size:12px;opacity:.8}.btn-ghost-light b{font-weight:650;font-size:15px}
+.dedication{margin:54px auto 10px;max-width:560px;text-align:center;font-size:1.05em}.dedication p{margin:0 0 1em}.dedication em{color:var(--soft)}.dedication h2{font-stretch:114%;font-weight:760;font-size:1.3em;margin:0 0 .8em}
+.howto{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.toc{margin-top:46px}.toc h2{font-stretch:116%;font-weight:780;font-size:clamp(28px,4.6vw,38px);margin:0 0 8px}
+.toc-block{margin-top:26px}.toc-part-head .part-num{color:var(--pitch)}.toc-part-head h3{font-stretch:112%;font-weight:760;font-size:1.3em;margin:2px 0 2px}.toc-part-head p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.toc-block ol{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden}
+.toc-block li a{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}.toc-block li:last-child a{border-bottom:0}.toc-block li a:hover{background:var(--mist)}
+.toc-block li a b{min-width:26px;font-weight:700;color:var(--pitch);font-variant-numeric:tabular-nums}.toc-block li a span{display:flex;flex-direction:column}.toc-block li a strong{font-weight:650}.toc-block li a small{color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+@media(max-width:560px){.bar{padding:8px 12px}.bar .back span{display:none}.bar-actions a,.bar-actions button{padding:8px 11px}.progress{top:57px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{.bar,.progress,.pager,.drawer{display:none}}
+</style></head><body data-page="ch-28"><header class="bar"><a class="back" href="/" aria-label="Ndamba"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><clipPath id="nb-color-96"><circle cx="32" cy="32" r="30"></circle></clipPath><g clip-path="url(#nb-color-96)"><circle cx="32" cy="32" r="30" fill="#0B5D3B"></circle><path d="M32.00 17.20 L32.00 12.40 L18.48 3.00 M32.00 12.40 L45.52 3.00 M46.08 27.43 L50.64 25.94 L55.40 10.18 M50.64 25.94 L63.76 35.90 M40.70 43.97 L43.52 47.86 L59.99 47.51 M43.52 47.86 L38.11 63.41 M23.30 43.97 L20.48 47.86 L25.89 63.41 M20.48 47.86 L4.01 47.51 M17.92 27.43 L13.36 25.94 L0.24 35.90 M13.36 25.94 L8.60 10.18" fill="none" stroke="#F6F7F2" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M32.00 20.40 L34.88 28.04 L43.03 28.42 L36.66 33.51 L38.82 41.38 L32.00 36.90 L25.18 41.38 L27.34 33.51 L20.97 28.42 L29.12 28.04 Z" fill="#F5B700" stroke="#F5B700" stroke-width="1.1" stroke-linejoin="round"></path></svg><span>The Ndamba Guide</span></a><nav class="bar-actions"><a class="lang" href="../fr/ch-28.html" hreflang="fr" lang="fr">FR</a><button id="aa" type="button" aria-label="Text size">Aa</button><button id="toc-btn" type="button">Contents</button></nav></header><div class="progress" aria-hidden="true"><span id="prog"></span></div><div class="drawer" id="drawer" hidden><div class="drawer-inner" role="dialog" aria-label="Contents"><div class="drawer-head"><a href="./">Cover and contents</a><button id="close" type="button">Close</button></div><ol class="toc-list"><li class="toc-part"><span>Part I. Understanding Ndamba</span><ol><li><a href="ch-01.html" data-page="ch-01"><b>1</b>Ndamba in ten minutes</a></li><li><a href="ch-02.html" data-page="ch-02"><b>2</b>The Njangi philosophy</a></li><li><a href="ch-03.html" data-page="ch-03"><b>3</b>Six profiles, six paths</a></li><li><a href="ch-04.html" data-page="ch-04"><b>4</b>The map of the platform</a></li></ol></li><li class="toc-part"><span>Part II. Getting started</span><ol><li><a href="ch-05.html" data-page="ch-05"><b>5</b>Set up with Mola</a></li><li><a href="ch-06.html" data-page="ch-06"><b>6</b>Home, navigation and settings</a></li></ol></li><li class="toc-part"><span>Part III. Training</span><ol><li><a href="ch-07.html" data-page="ch-07"><b>7</b>The library of 64 drills</a></li><li><a href="ch-08.html" data-page="ch-08"><b>8</b>Build a session</a></li><li><a href="ch-09.html" data-page="ch-09"><b>9</b>Plan the week</a></li></ol></li><li class="toc-part"><span>Part IV. Team and matches</span><ol><li><a href="ch-10.html" data-page="ch-10"><b>10</b>The squad and the player file</a></li><li><a href="ch-11.html" data-page="ch-11"><b>11</b>Prepare a match</a></li></ol></li><li class="toc-part"><span>Part V. Analysis</span><ol><li><a href="ch-12.html" data-page="ch-12"><b>12</b>Analysing a match: film, put online, code</a></li><li><a href="ch-13.html" data-page="ch-13"><b>13</b>The match report and the Njangi Index</a></li><li><a href="ch-14.html" data-page="ch-14"><b>14</b>The video studio, the AI analysis and the season</a></li></ol></li><li class="toc-part"><span>Part VI. The player and the family</span><ol><li><a href="ch-15.html" data-page="ch-15"><b>15</b>The player space</a></li><li><a href="ch-16.html" data-page="ch-16"><b>16</b>The Ball Lessons, the notebook and the journey</a></li><li><a href="ch-17.html" data-page="ch-17"><b>17</b>Parents</a></li></ol></li><li class="toc-part"><span>Part VII. Mola</span><ol><li><a href="ch-18.html" data-page="ch-18"><b>18</b>Mola, Ndamba's agent</a></li></ol></li><li class="toc-part"><span>Part VIII. The books and the game</span><ol><li><a href="ch-19.html" data-page="ch-19"><b>19</b>The Njangi Code, the method book</a></li><li><a href="ch-20.html" data-page="ch-20"><b>20</b>Lionceaux, the saga of Kaydoudou and BriBri</a></li><li><a href="ch-21.html" data-page="ch-21"><b>21</b>Lionceaux Football, the game</a></li></ol></li><li class="toc-part"><span>Part IX. Lifting the trophy</span><ol><li><a href="ch-22.html" data-page="ch-22"><b>22</b>Why Africa can win the World Cup</a></li><li><a href="ch-23.html" data-page="ch-23"><b>23</b>The 2026-2041 plan: five stages to the trophy</a></li><li><a href="ch-24.html" data-page="ch-24"><b>24</b>The business model</a></li><li><a href="ch-25.html" data-page="ch-25"><b>25</b>Trust, data and young players</a></li><li><a href="ch-26.html" data-page="ch-26"><b>26</b>The roadmap</a></li></ol></li><li class="toc-part"><span>Part X. Club, pitch and gear</span><ol><li><a href="ch-27.html" data-page="ch-27"><b>27</b>The club: teams, members, video library, recruitment</a></li><li><a href="ch-28.html" data-page="ch-28" aria-current="page"><b>28</b>The match maps and the season</a></li><li><a href="ch-29.html" data-page="ch-29"><b>29</b>Video editing: clips, drawings, sessions</a></li><li><a href="ch-30.html" data-page="ch-30"><b>30</b>Pickup games</a></li><li><a href="ch-31.html" data-page="ch-31"><b>31</b>Filming and hosting: camera, links, paid upload</a></li></ol></li><li class="toc-part"><span>Appendices</span><ol><li><a href="annexe-a.html" data-page="annexe-a"><b>A</b>Quick start by profile</a></li><li><a href="annexe-b.html" data-page="annexe-b"><b>B</b>French and English glossary</a></li><li><a href="annexe-c.html" data-page="annexe-c"><b>C</b>Every page of the platform</a></li><li><a href="annexe-d.html" data-page="annexe-d"><b>D</b>The 64 drills</a></li><li><a href="annexe-e.html" data-page="annexe-e"><b>E</b>Questions and answers</a></li></ol></li></ol></div></div><main><article class="chapter"><header class="ch-head"><a class="part-link" href="./#partie-10">Part X. Club, pitch and gear</a><div class="ch-num">Chapter 28</div><h1 class="ch-title">The match maps and the season</h1><p class="ch-sum">The tabs of the match report (Maps, Players, Timeline, Ask Mola), what each map shows and how its numbers are worked out, then the Maps and season page, which reads the last ten matches. With the honesty rule: a map shows actions that someone coded and placed with a tap, not player tracking.</p><p class="ch-time">13 min read</p></header><div class="prose"><p>The Njangi Index tells you whether the team possessed with purpose. It does not tell you where. A coach thinks in spaces: which lane we go through, where we lose the ball, who plays with whom, when the match turned. The maps answer those questions with the same codes as the Index, on one condition: every coded action also has its place on the pitch. This chapter opens the four visual tabs of the match report, then the <strong>Maps and season</strong> page, which does the same reading over the whole season.</p>
+<p>One rule first, which the app shows at the top of every map: &quot;Maps of coded actions: every point is an action someone coded, not GPS tracking.&quot; And the next one: &quot;Distance, speed and sprints need a tracking camera: that is on the roadmap.&quot; A point on a map is a person who tapped a code, then tapped the spot on the pitch where the action happened. Nothing is measured automatically.</p>
+<h2 id="where-the-positions-come-from">Where the positions come from</h2>
+<p>Positions are entered in the video studio, while coding (chapter 29). Turn on <strong>Place on the pitch</strong> (key M): after each code, a mini-pitch opens with the question &quot;Pass at 21:40: where, and who?&quot;. Tap the spot of the action (our attack goes left to right), then the player’s number under <strong>Who?</strong>, and for a pass the receiver under <strong>Received by</strong>. For an opponent’s action only the spot is asked for. All of it is optional: <strong>Skip</strong> carries on without placing.</p>
+<p>The demo match, Étoile de la Côte v Météore de Bafoussam (2-1), was coded this way on its video: 783 actions, almost all placed and credited. That is why its maps are full. A match coded live, or coded without placing, keeps its Index and its report, but its maps stay empty: &quot;The actions of this match have no position yet. Open the video and code with “Place on the pitch”: every placed action shows up here.&quot; If only some of the actions are placed, a banner gives the count, for example in the demo: &quot;773 of our 774 coded actions have a position on the pitch: the maps show those.&quot;</p>
+<h2 id="the-five-tabs-of-the-report">The five tabs of the report</h2>
+<p>The match report (chapter 13) now carries five tabs under its header: <strong>Report</strong>, <strong>Maps</strong>, <strong>Players</strong>, <strong>Timeline</strong> and <strong>Ask Mola</strong> (just <strong>Mola</strong> on a phone). <strong>Report</strong> is the page of chapter 13: the gauge, the sub-indices, the summary, the targets and the drills. The other four load on demand, so the report stays light on a phone. Each tab has its own address, for example /app/analyse/rapport/ma_past?onglet=cartes: you can send the shot map straight to an assistant.</p>
+<p>Everywhere, a point, a row or a <strong>Watch</strong> button opens the video studio a few seconds before the action. When several moments are asked for at once (all of a player’s shots, for example), the studio’s address carries the list of those moments (?list=) and the studio plays them one after another: a <strong>Chosen moments</strong> strip shows &quot;Moment 1 / 4&quot; for Serge Eyoum’s four shots, with <strong>Previous moment</strong>, <strong>Next moment</strong> and <strong>Watch this moment again</strong>. Each moment plays from four seconds before to four seconds after the action.</p>
+<h2 id="maps">Maps</h2>
+<p>The <strong>Match maps</strong> tab states its convention: &quot;Where the actions happened, with us attacking left to right. Tap a point to watch that moment on the video.&quot; Six maps are chosen at the top: <strong>Shots</strong>, <strong>Passing network</strong>, <strong>Heat</strong>, <strong>Regains and losses</strong>, <strong>Set pieces</strong> and <strong>Territory</strong>. A <strong>Period</strong> filter (<strong>Match</strong>, <strong>1st half</strong>, <strong>2nd half</strong>) goes with all of them.</p>
+<h3 id="shots">Shots</h3>
+<figure class="shot"><a href="../img/en/report-maps.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/report-maps-720.webp 720w, ../img/en/report-maps.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/report-maps.jpg" srcset="../img/en/report-maps-720.jpg 720w, ../img/en/report-maps.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="1160" alt="The shot map of the demo match: a pitch seen from above, our attack to the right, the shots of Étoile de la Côte as circles and those of Météore de Bafoussam as squares, filled when on target and larger for goals, and below the Shots table with 14 shots for us and 9 for the opponent." loading="lazy" decoding="async"></picture></a><figcaption>The shot map: every point is a coded and placed shot.</figcaption></figure>
+<p>Every shot is a point: a circle for us, a square for the opponent; filled when on target, hollow when not, larger for a goal. The <strong>Team</strong> filter (<strong>Both</strong>, <strong>Us</strong>, <strong>Opponent</strong>) isolates one side. The table compares the two teams:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Shots</th>
+<th>Us</th>
+<th>Opponent</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shots</td>
+<td>14</td>
+<td>9</td>
+</tr>
+<tr>
+<td>On target</td>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Goals</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Inside the box</td>
+<td>10</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Outside the box</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Average distance</td>
+<td>16 m</td>
+<td>18 m</td>
+</tr>
+<tr>
+<td>Conversion</td>
+<td>14%</td>
+<td>11%</td>
+</tr>
+</tbody></table></div>
+<p>Distance is measured from the placed point to the centre of the goal being attacked, on a pitch of 105 by 68 metres. Conversion is the share of shots that end in a goal. Reading the demo: Météore de Bafoussam shot six times from distance and only three times inside the box. The block held; it is the rest defence that needs watching on their goal.</p>
+<h3 id="passing-network">Passing network</h3>
+<figure class="shot"><a href="../img/en/report-network.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/report-network-720.webp 720w, ../img/en/report-network.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/report-network.jpg" srcset="../img/en/report-network-720.jpg 720w, ../img/en/report-network.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="1230" alt="The passing network of the demo: the fourteen Étoile de la Côte players as numbered circles at their average passing position, linked by lines of varying thickness, the Links shown setting on 4 passes or more, and the Most frequent combinations list, led by Kemayou and Mbock with 15 passes." loading="lazy" decoding="async"></picture></a><figcaption>The passing network: who plays with whom, and where.</figcaption></figure>
+<p>The network draws each player at the <strong>average position of the passes he played</strong> (the size of the circle follows his number of passes) and links two players with a line whose thickness follows the number of completed passes between them. It needs passes coded with both passer and receiver: 375 in the demo. The map reminds you: &quot;A player’s point is the average of where he played his passes, not a tracked position.&quot;</p>
+<p>The <strong>Links shown</strong> setting sets a threshold (&quot;4 passes or more&quot; shows 39 links out of 75) to keep the map readable. Tap a player to isolate his links, with the number of passes he gave and received, and <strong>Watch all his completed passes</strong> on the video; <strong>Show all</strong> brings everything back. The <strong>Most frequent combinations</strong> list gives the pairs: in the demo, Kemayou and Mbock (15), Bouba and Mbock (14), Kemayou and Moukoko (14). The pivot, Mbock, really is the relay the game plan describes.</p>
+<h3 id="heat">Heat</h3>
+<figure class="shot"><a href="../img/en/report-heat.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/report-heat-720.webp 720w, ../img/en/report-heat.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/report-heat.jpg" srcset="../img/en/report-heat-720.jpg 720w, ../img/en/report-heat.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="1159" alt="The heat map of on-ball actions: a layer of colour densest in the middle of the pitch, the share per third 15%, 62% and 24% above, and below the By third and By lane breakdowns." loading="lazy" decoding="async"></picture></a><figcaption>Heat: where the team played the ball.</figcaption></figure>
+<p>The heat map shows the density of coded and placed on-ball actions, from <strong>Few</strong> to <strong>Many</strong>. The <strong>Player</strong> filter goes from <strong>Whole team</strong> to a single player; <strong>Show the actions</strong> puts the points themselves on top. Below come two breakdowns: <strong>By third</strong> (15% in our third, 62% in the middle, 24% in their third for the demo) and <strong>By lane</strong> (12% left, 71% centre, 17% right), over 765 placed actions. A model that wants to &quot;draw them to one side to attack the other&quot; can be checked here: 71% through the centre is a team that does not yet go looking for the flanks enough.</p>
+<h3 id="regains-and-losses">Regains and losses</h3>
+<figure class="shot"><a href="../img/en/report-regains.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/report-regains-720.webp 720w, ../img/en/report-regains.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/report-regains.jpg" srcset="../img/en/report-regains-720.jpg 720w, ../img/en/report-regains.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="1119" alt="The regains and losses map: on the pitch, the 5-second win-backs, the regains and the losses as different symbols, and below the table by zone, defensive, middle and attacking." loading="lazy" decoding="async"></picture></a><figcaption>Regains and losses: where we win and lose the ball.</figcaption></figure>
+<p>This map places the <strong>Won back in 5 s</strong>, the <strong>Regains</strong> and the <strong>Losses</strong>, telling <strong>Lost on the ball</strong> from <strong>Pass lost</strong>. The <strong>Player</strong> filter isolates one player. The table counts each action by zone:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Defensive</th>
+<th>Middle</th>
+<th>Attacking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Won back in 5 s</td>
+<td>3</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Regains</td>
+<td>30</td>
+<td>10</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Losses</td>
+<td>5</td>
+<td>63</td>
+<td>24</td>
+</tr>
+</tbody></table></div>
+<p>The line under the table says how to read it: &quot;A loss in our third costs the most; a regain in their third pays the most.&quot; Here, 12 win-backs within 5 seconds in the opponent’s third: the counter-press of the game model is working.</p>
+<h3 id="set-pieces">Set pieces</h3>
+<p>Corners, free kicks, penalties, throw-ins and goal kicks are coded separately in the studio (chapter 29) and never count in the Index. Coded and placed, they appear on this map with a table by type. The demo match has none: the map shows &quot;No set piece coded in this match. Code corners, free kicks, penalties and throw-ins on the video to see them here.&quot;</p>
+<h3 id="territory">Territory</h3>
+<p>The <strong>Territory</strong> map cuts the pitch into three thirds and gives the share of our placed on-ball actions in each: 15% (112 actions), 62% (472) and 24% (181) in the demo. It also gives two markers, each with its method written under the number.</p>
+<p><strong>Possession.</strong> When the opponent’s passes are coded, it is the share of passes: our passes divided by both teams’ passes. When they are not, Ndamba estimates it from time: a sequence of ours starts at a regain (or at our first action) and ends at a pass lost, a loss or a shot; the time between two of our sequences counts for the opponent. The demo shows 45%, &quot;Estimated from the duration of our coded sequences: the opponent’s passes are not coded.&quot;</p>
+<p><strong>Field tilt.</strong> It is our share of the actions played in the attacking thirds: our placed actions in their third, divided by our actions in their third plus theirs in ours. Without positions, Ndamba falls back on the codes: our final third entries divided by both teams’ entries. So the opponent has to be coded too (keys Q, W and E): in the demo the map says &quot;Needs coding&quot;.</p>
+<h2 id="players">Players</h2>
+<figure class="shot"><a href="../img/en/report-players.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/report-players-720.webp 720w, ../img/en/report-players.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/report-players.jpg" srcset="../img/en/report-players-720.jpg 720w, ../img/en/report-players.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The top of the report with the three goals and their Watch buttons, the Player of the match: Serge Eyoum label, the five tabs, then the Players tab open with its explanation and the Player of the match card where the staff chose 9. Serge Eyoum." loading="lazy" decoding="async"></picture></a><figcaption>The Players tab: the player of the match, chosen by the staff, then one card per player.</figcaption></figure>
+<p>&quot;What each player did, according to the coded actions. The play button runs his moments one after another on the video.&quot;</p>
+<p><strong>The player of the match.</strong> At the top, <strong>Player of the match</strong> and the <strong>Choose the player of the match</strong> list. The choice belongs to the staff; it then shows in the report header (&quot;Player of the match: Serge Eyoum&quot;) and on the player’s card.</p>
+<p><strong>Compare two players.</strong> Choose a <strong>First player</strong> and a <strong>Second player</strong>, then <strong>Match</strong> (the totals) or <strong>Per 90 minutes</strong> (the totals scaled to 90 minutes of play, fairer for a substitute). The two columns line up passes completed, progressive actions, final third and box entries, shots, goals, regains, 5-second win-backs, pins and switches, and losses.</p>
+<p><strong>The cards.</strong> One card per player who played or was coded (&quot;14 players&quot;), sorted by <strong>Contribution</strong> or by <strong>Number</strong>. Each card gives the position, <strong>starter</strong> or <strong>substitute</strong>, the minutes, then the rows <strong>Passes completed</strong> (58 of 64, 91% for Guy Mbock), <strong>Progressive</strong>, <strong>Final third, box</strong>, <strong>Shots</strong> (with on target and goals), <strong>Regains</strong> (with those within 5 s) and <strong>Losses</strong>, plus two mini-maps, <strong>Heat</strong> and <strong>Passes</strong>. Each row has a play button: it opens the studio with the list of those moments, for example Serge Eyoum’s four shots, one after another.</p>
+<p><strong>The contribution.</strong> The number at the top of the card (43.2 for Guy Mbock) is not a rating. The app says so: &quot;Contribution: a reading of the codes, not a rating.&quot; Each action carries a fixed weight: completed pass 0.1; progressive 1; line broken 1.5; final third entry 1; box entry 1.5; shot 1; on target 1 more; goal 4; won back in 5 s 1.5; regain 1; pin or switch 1; pass lost minus 0.6; loss minus 1. A pivot who touches every ball scores high; so does a striker who touches it little but scores. For a young player, this number stays with the staff.</p>
+<h2 id="timeline">Timeline</h2>
+<figure class="shot"><a href="../img/en/report-timeline.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/report-timeline-720.webp 720w, ../img/en/report-timeline.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/report-timeline.jpg" srcset="../img/en/report-timeline-720.jpg 720w, ../img/en/report-timeline.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Timeline tab: the Match momentum curve minute by minute, our danger above the line and the opponent's below, goals and substitutions marked, then the Njangi Index by quarter of an hour and the list of key moments." loading="lazy" decoding="async"></picture></a><figcaption>The timeline: who is pushing, and when.</figcaption></figure>
+<p>&quot;How the match went: who pushed, when, and every coded action to watch again.&quot;</p>
+<p><strong>Match momentum.</strong> A curve minute by minute, our danger above the line, the opponent’s below, with goals and substitutions. The calculation is written under the curve: over a rolling five minutes, a final third entry is worth 1, a box entry 2, a shot 3, a shot on target 1 more and a goal 2 more. <strong>Show the table</strong> gives the values minute by minute.</p>
+<p><strong>The Index by quarter of an hour.</strong> The Njangi Index worked out from the codes of each 15-minute block. In the demo: 70.7 from 0 to 15 minutes, 60.3 then 50.7 up to half-time, 64.5 after the break, 86.6 from the 60th to the 75th minute, 78.1 to finish. The team dipped before the break and dominated after the hour, when the winning goal came. The app warns: in a short block a few actions move the number a lot; read the trend.</p>
+<p><strong>Every action.</strong> The list of the match, by period, filtered by <strong>Kind of action</strong> (<strong>Key moments</strong>, <strong>Danger</strong>, <strong>Possession</strong>, <strong>Pinning</strong>, <strong>Transitions</strong>, <strong>Set pieces</strong>, <strong>Everything</strong>), by team and by player. The demo’s <strong>Key moments</strong> come to 26 rows: shots, goals and substitutions (&quot;66’ Substitution: Hamidou Sali on, Aristide Moukoko off&quot;). Each row has its <strong>Watch</strong> button, and <strong>Play all 23 moments</strong> plays the whole selection.</p>
+<h2 id="ask-mola">Ask Mola</h2>
+<figure class="shot"><a href="../img/en/report-assist.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/report-assist-720.webp 720w, ../img/en/report-assist.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/report-assist.jpg" srcset="../img/en/report-assist-720.jpg 720w, ../img/en/report-assist.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="900" alt="The Ask Mola tab: the Reading of the codes label and its explanation, Mola's greeting, the answer to Sum up the match with the score, the Index, the shots, the best quarter of an hour and the most present player, the Watch the goals button and the suggested questions." loading="lazy" decoding="async"></picture></a><figcaption>Mola reads the match codes and answers in fixed sentences.</figcaption></figure>
+<p>This tab is not an online assistant. Its label says so: &quot;Mola reads the 783 coded actions of this match and answers with fixed sentences, worked out on your device. No connection, no online AI: the same codes always give the same answer.&quot;</p>
+<p>The suggested questions are <strong>Sum up the match</strong>, <strong>Our trends</strong>, <strong>How they played</strong>, <strong>Our finishing</strong>, <strong>Where do we lose the ball?</strong>, <strong>Who mattered most?</strong>, <strong>Our pressing</strong> and <strong>Strengths and weaknesses</strong>. You can also type your own question in <strong>Your question about this match</strong>; Mola recognises these topics and possession. To <strong>Sum up the match</strong>, the demo answers:</p>
+<blockquote>
+<p>Étoile de la Côte beat Météore de Bafoussam 2 to 1. Njangi Index: 67.9 out of 100, Solid Njangi. Strongest: Control (17.8 out of 20). To work on: Fixation (8.3 out of 20). Shots: 14 for us (on target: 6), 9 for Météore de Bafoussam. Our best quarter of an hour: minutes 60 to 75 (Index 86.6).</p>
+</blockquote>
+<p>Answers often end with a button that opens the moments on the video: <strong>Watch the goals</strong>, <strong>Watch our shots</strong>, <strong>Watch our losses before their shots</strong>. The foot of the tab keeps the rule: &quot;A reading of the match codes, not an opinion: check it on the video.&quot;</p>
+<aside class="callout callout-mola"><div class="callout-kicker"><svg class="mm" viewBox="6 6 54 54" width="20" height="20" aria-hidden="true"><path d="M13.00 47.00 L22.00 19.00 L32.00 37.00 L42.00 19.00 L51.00 47.00" fill="none" stroke="currentColor" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="51" cy="47" r="7.564" fill="#F5B700"></circle></svg>Ask Mola</div><div class="callout-title">A precise question, a checkable answer</div><p>In the tab, type <strong>Where do we lose the ball?</strong>. Mola counts the losses by third and by lane, names the most exposed players, gives the 5-second win-back rate and offers to show the losses in our third on the video.</p>
+</aside>
+
+<h2 id="the-maps-and-season-page">The Maps and season page</h2>
+<p>In the menu, under <strong>Analysis</strong>, tap <strong>Maps and season</strong> (address /app/analyse/studio). The subtitle sets the scope: &quot;Étoile de la Côte: the last ten matches played, read from their codes.&quot; The two honesty lines follow, as on the match maps.</p>
+<figure class="shot tall"><a href="../img/en/season-studio.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/season-studio-720.webp 720w, ../img/en/season-studio.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/season-studio.jpg" srcset="../img/en/season-studio-720.jpg 720w, ../img/en/season-studio.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="2940" alt="The Maps and season page of the demo: the form with three results, the Averages per match tiles (goals, shots on target, possession, Njangi Index, field tilt not coded, strings of 5 passes or more), the progression charts, the season maps and the comparison radar with Météore de Bafoussam." loading="lazy" decoding="async"></picture></a><figcaption>The season on one page: form, averages, progression, maps, comparison.</figcaption></figure>
+<p><strong>Form.</strong> The latest results as <strong>W</strong>, <strong>D</strong>, <strong>L</strong> pills, with the score and the opponent, and the count: &quot;3 matches played in the period, 1 of them coded.&quot; A match that was not coded only brings its score.</p>
+<p><strong>Averages per match.</strong> Six tiles, each with the basis of its calculation:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Tile</th>
+<th>Demo</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Goals</strong></td>
+<td>1.7</td>
+<td>&quot;0.7 conceded, over 3 matches played&quot;</td>
+</tr>
+<tr>
+<td><strong>Shots on target</strong></td>
+<td>6</td>
+<td>&quot;from 14 shots, over 1 coded match&quot;</td>
+</tr>
+<tr>
+<td><strong>Possession</strong></td>
+<td>45%</td>
+<td>estimated from our sequence times</td>
+</tr>
+<tr>
+<td><strong>Njangi Index</strong></td>
+<td>67.9</td>
+<td>Solid Njangi, from the summed codes</td>
+</tr>
+<tr>
+<td><strong>Field tilt</strong></td>
+<td>not coded</td>
+<td>needs the opponent’s actions coded too</td>
+</tr>
+<tr>
+<td><strong>Strings of 5 passes or more</strong></td>
+<td>32</td>
+<td>longest: 17 passes</td>
+</tr>
+</tbody></table></div>
+<p>The season Index is always worked out from the summed codes of every coded match, never from the average of the Indexes: a fully coded match weighs more than a half-coded one.</p>
+<p><strong>Progression.</strong> Four bar charts, oldest to newest: <strong>Goals scored and conceded</strong>, <strong>Shots and shots on target</strong>, <strong>Njangi Index</strong> and <strong>Possession</strong>. A match that was not coded is marked &quot;not coded&quot;. Tap a bar for its detail and <strong>Open</strong> its report.</p>
+<p><strong>Season maps.</strong> The <strong>Shots</strong>, <strong>Heat</strong> and <strong>Regains</strong> maps (with <strong>Add the losses</strong>) over every match of the period that has positions: &quot;Positions available for 1 match out of 3 played.&quot;</p>
+<p><strong>Compare.</strong> In <strong>Compare with</strong>, choose an opponent you have played or another team of the club. A six-axis radar (<strong>Goals</strong>, <strong>Shots on target</strong>, <strong>Possession</strong>, <strong>Passes completed</strong>, <strong>Conversion</strong>, <strong>Wins</strong>) overlays the two teams, with the table of values. Each axis runs from zero to a reference value (3 goals, 8 shots on target, 100% possession, 450 completed passes, 40% conversion, 100% wins), or further if one of the teams goes past it. A dotted axis is not coded for the opponent. Comparing the seniors with the club’s U19s shows at a glance where the younger side still has to grow before stepping up.</p>
+<p>With no team, the page asks you to <strong>Create your team first</strong>; with no match played, it offers <strong>Open the videos</strong> and <strong>Schedule a match</strong>.</p>
+<figure class="shot tall"><a href="../img/en/m-report-maps.jpg" class="shot-link" aria-label="Open the full image"><picture><source type="image/webp" srcset="../img/en/m-report-maps-720.webp 720w, ../img/en/m-report-maps.webp 1440w" sizes="(max-width: 980px) 100vw, 920px"><img src="../img/en/m-report-maps.jpg" srcset="../img/en/m-report-maps-720.jpg 720w, ../img/en/m-report-maps.jpg 1440w" sizes="(max-width: 980px) 100vw, 920px" width="1440" height="3116" alt="The match maps on a phone: the report tabs, the map choice, the pitch across the full width and the shot table below." loading="lazy" decoding="async"></picture></a><figcaption>On a phone, the maps keep the whole pitch.</figcaption></figure>
+<aside class="callout callout-investisseur"><div class="callout-kicker">For investors</div><div class="callout-title">Honest maps, and the next step</div><p>Professional analysis platforms sell maps computed by expensive tracking cameras. Ndamba gets the same readings (shots, passing network, regain zones, territory) from a phone and codes placed with a tap, with written formulas and a table for every map. What needs real tracking, distance covered, speed and sprints, is not faked: it is a step of the roadmap (chapter 26), like automatic ball following.</p>
+</aside>
+</div></article><nav class="pager" aria-label="Previous / Next"><a class="prev" href="ch-27.html" rel="prev"><small>Previous</small><b>27. The club: teams, members, video library, recruitment</b></a><a class="next" href="ch-29.html" rel="next"><small>Next</small><b>29. Video editing: clips, drawings, sessions</b></a></nav></main><script>(function(){var K='guide.en';var b=document.body;var page=b.getAttribute('data-page');
+try{var fs=localStorage.getItem('guide.fs');if(fs)b.style.setProperty('--fs',fs)}catch(e){}
+var sizes=['17px','19px','21px'];document.getElementById('aa').onclick=function(){var c=getComputedStyle(b).getPropertyValue('--fs').trim()||sizes[0];var n=sizes[(sizes.indexOf(c)+1)%sizes.length];b.style.setProperty('--fs',n);try{localStorage.setItem('guide.fs',n)}catch(e){}};
+var d=document.getElementById('drawer');document.getElementById('toc-btn').onclick=function(){d.hidden=false;var cur=d.querySelector('[aria-current=page]');if(cur)cur.scrollIntoView({block:'center'})};document.getElementById('close').onclick=function(){d.hidden=true};d.onclick=function(e){if(e.target===d)d.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')d.hidden=true;if(e.altKey||e.ctrlKey||e.metaKey)return;var a=null;if(e.key==='ArrowRight')a=document.querySelector('a[rel=next]');if(e.key==='ArrowLeft')a=document.querySelector('a[rel=prev]');if(a&&d.hidden)location.href=a.getAttribute('href')});
+var prog=document.getElementById('prog');var t=0;
+function save(){if(page==='index')return;try{localStorage.setItem(K+'.last',JSON.stringify({p:page,y:Math.round(window.scrollY),t:(document.querySelector('.ch-title')||{}).textContent||''}))}catch(e){}}
+window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=0;var de=document.documentElement;var max=de.scrollHeight-de.clientHeight;prog.style.width=(max>0?100*de.scrollTop/max:0)+'%';save()},200)},{passive:true});
+if(page!=='index'){var l=null;try{l=JSON.parse(localStorage.getItem(K+'.last'))}catch(e){}if(location.hash==='#reprendre'&&l&&l.p===page){var go=function(){window.scrollTo(0,l.y)};if(document.readyState==='complete')go();else window.addEventListener('load',go)}else save()}
+else{try{var l2=JSON.parse(localStorage.getItem(K+'.last'));var r=document.getElementById('resume');if(l2&&r&&l2.p){r.hidden=false;r.setAttribute('href',l2.p+'.html#reprendre');r.querySelector('b').textContent=l2.t}}catch(e){}}
+try{localStorage.setItem('njangi.lang','en')}catch(e){}
+})();</script></body></html>
