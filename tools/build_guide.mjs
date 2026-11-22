@@ -28,7 +28,7 @@ const read = (p) => fs.readFileSync(p, 'utf8')
 const write = (p, s) => { fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, s) }
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 const pad2 = (n) => String(n).padStart(2, '0')
-const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
+const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
 
 /* ------------------------------------------------------------------ the two editions */
 
@@ -56,6 +56,7 @@ const L = {
       ['Mola', 'L’agent qui prépare tout dans l’application, et ne fait rien partir sans vous.'],
       ['Les livres et le jeu', 'Le Code Njangi, la saga Lionceaux et Lionceaux Football.'],
       ['Porter le trophée', 'Pourquoi l’Afrique peut gagner, le plan sur quinze ans, le modèle économique et la confiance.'],
+      ['Le club, le terrain et le matériel', 'Le club et ses équipes, les cartes et la saison, le montage vidéo, les matchs entre amis, filmer et héberger.'],
     ],
     drills: { title: 'Les 64 exercices', resume: 'La liste complète des exercices de la méthode, par famille, avec leurs intentions et leurs jours.', code: 'Code', name: 'Exercice', fam: 'Famille', int: 'Intentions', md: 'Jours', min: 'Minutes', lead: 'Chaque exercice a sa fiche complète dans l’application (Exercices) et dans Le Code Njangi. Les jours indiquent où il se place dans la semaine du match ; « Jeunes » signale un exercice adapté aux plus jeunes.' },
     FAMILY: { technique: 'Technique et combinaisons', rondo: 'Rondos', position: 'Jeux de position', ssg: 'Petits jeux', lsg: 'Grands jeux', phase: 'Phases de jeu', transition: 'Transitions', finishing: 'Finition' },
@@ -85,6 +86,7 @@ const L = {
       ['Mola', 'The agent that prepares everything inside the app, and sends nothing without you.'],
       ['The books and the game', 'The Njangi Code, the Lionceaux saga and Lionceaux Football.'],
       ['Lifting the trophy', 'Why Africa can win, the fifteen-year plan, the business model and trust.'],
+      ['Club, pitch and gear', 'The club and its teams, the maps and the season, video editing, pickup games, filming and hosting.'],
     ],
     drills: { title: 'The 64 drills', resume: 'The complete list of the method’s drills, by family, with their intentions and days.', code: 'Code', name: 'Drill', fam: 'Family', int: 'Intentions', md: 'Days', min: 'Minutes', lead: 'Each drill has its full card in the app (Drills) and in The Njangi Code. The days show where it sits in the match week; “Youth” marks a drill suited to the youngest players.' },
     FAMILY: { technique: 'Technique and combinations', rondo: 'Rondos', position: 'Positional games', ssg: 'Small-sided games', lsg: 'Large-sided games', phase: 'Phases of play', transition: 'Transitions', finishing: 'Finishing' },

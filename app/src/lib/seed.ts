@@ -6,6 +6,7 @@ import type { Clip, EventCode, Match, MatchEvent, Player, Profile, Role, Score5,
 import { addDays, nowISO, todayISO, uid, weekStart } from './util'
 import { formationSlots } from './formations'
 import { seedJourney } from './seedJourney' // PARCOURS
+import { seedPickup } from './seedPickup'
 import { PRO_BENCH, PRO_PAST_GOALS, PRO_ROSTER, PRO_VIDEO, PRO_XI, locateProMatch, proDemoEvents } from './proMatch'
 
 const SKILLS: SkillKey[] = ['scan', 'controle', 'passe', 'conduite', 'dribble-njangi', 'appels', 'communication', 'protection', 'contre-pression', 'decision']
@@ -78,6 +79,8 @@ function demoEvents(matchId: string, players: Player[]): MatchEvent[] {
 export async function seedDemo(role: Role = 'coach', lang: 'fr' | 'en' = 'fr', level: DemoLevel = 'youth') {
   // a demo replaces the browser's data, including what the player space keeps beside the database
   try { for (const k of ['njangi.lessons', 'njangi.lessons.part', 'njangi.self']) localStorage.removeItem(k) } catch { /* storage unavailable */ }
+  // the club and pickup tables belong to the pro demo only: start every demo without them
+  await Promise.all([db.club.clear(), db.members.clear(), db.pickupGroups.clear(), db.pickupPlayers.clear(), db.pickupGames.clear(), db.pickupRsvps.clear(), db.pickupRatings.clear()])
   if (level === 'pro') return seedProDemo(role, lang) // the professional club (see the PRO DEMO block below)
   await db.transaction('rw', [db.profile, db.teams, db.players, db.sessions, db.matches, db.events, db.messages, db.tasks, db.notebook, db.challenges, db.videos], async () => {
     await Promise.all([db.profile.clear(), db.teams.clear(), db.players.clear(), db.sessions.clear(), db.matches.clear(), db.events.clear(), db.messages.clear(), db.tasks.clear(), db.notebook.clear(), db.challenges.clear(), db.videos.clear()])
@@ -219,6 +222,7 @@ async function seedProDemo(role: Role, lang: 'fr' | 'en') {
   })
   await seedJourney(lang) // PARCOURS: the season's history (see lib/seedJourney.ts)
   await seedPerformance(role, 'pro') // PERFORMANCE: four weeks of form and load for Steve Ndjock (see below)
+  await seedPickup(lang) // PICKUP: the Sunday game of Bonamoussadi and a Thursday five in Bastos (see lib/seedPickup.ts)
 }
 
 /** The demo video of the played match: hosted by Ndamba (demonstration), with a few clips and a video session. */
