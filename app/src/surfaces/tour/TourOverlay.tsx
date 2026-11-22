@@ -41,7 +41,7 @@ export default function TourOverlay() {
       for (const s of step.target!.split(',')) {
         let all: Element[] = []
         try { all = Array.from(document.querySelectorAll(s.trim())) } catch { all = [] }
-        found = all.find((x) => (x as HTMLElement).offsetParent !== null && x.getBoundingClientRect().height > 0) ?? null
+        found = all.find((x) => { const b = x.getBoundingClientRect(); return b.width > 0 && b.height > 0 && getComputedStyle(x).visibility !== 'hidden' }) ?? null
         if (found) break
       }
       if (found) {
