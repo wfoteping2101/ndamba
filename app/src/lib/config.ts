@@ -62,3 +62,42 @@ export const GATES = {
 export const isPaid = (p: Plan) => p !== 'free'
 /** The coaching limits (GATES) apply to every plan without the coaching tools: Free and Joueur Premium. */
 export const coachLimited = (p?: Plan | null) => p === 'free' || p === 'player'
+
+/**
+ * Paid video hosting on Ndamba (upload instead of a YouTube or Facebook link). Proposed prices, to confirm.
+ * Cost basis (object storage such as Cloudflare R2, November 2026): 0.015 US$ per GB and month, no egress fee.
+ * A 90-minute match in 720p is about 2 GB, so a year of storage costs about 0.36 US$; a 4 GB file about 0.72 US$.
+ * Until a storage provider is connected (VIDEO_STORAGE on the server), the upload flow runs as a demonstration.
+ */
+export const VIDEO_HOSTING = {
+  pass: { usd: 2.99, maxHours: 2, maxGB: 4, months: 12 }, // one match
+  club: { usdMonth: 14.99, hoursPerMonth: 20, months: 12, teams: 'all' as const }, // the whole club
+}
+
+/** Pickup games (organiser tools). Players always play for free. Proposed prices, to confirm. */
+export const PICKUP = {
+  hostUsdMonth: 3.99,
+  hostUsdYear: 34.99,
+  trialDays: 30,
+  freeGroupsPerPlayer: 3,
+  waitlistMinutes: 15, // a freed spot is offered to the next person on the waitlist for 15 minutes
+  checkinBefore: 30, // the check-in opens 30 minutes before kick-off
+  checkinAfter: 30, // and closes 30 minutes after
+  lateAfter: 15, // checked in more than 15 minutes after kick-off: late, not absent
+  flagsToSuspend: 3, // three no-shows within 30 days block RSVPs in the group
+  flagDays: 30,
+  checkinRadiusM: 300, // the check-in by location accepts up to 300 m from the pitch
+}
+
+/** Amazon Associates (Lemon Shops). Every Amazon link of the app carries this tag; the page shows the disclosure. */
+export const AFFILIATE = { amazonTag: 'lemonshops-20', amazonHost: 'https://www.amazon.com' }
+export const amazonSearch = (q: string) => `${AFFILIATE.amazonHost}/s?k=${encodeURIComponent(q)}&tag=${AFFILIATE.amazonTag}`
+
+/** What each club role can do (club space, members tab). */
+export const MEMBER_RIGHTS: Record<import('./types').MemberRole, { videos: 'all' | 'team' | 'own'; tag: boolean; manage: boolean; analytics: boolean }> = {
+  admin: { videos: 'all', tag: true, manage: true, analytics: true },
+  coach: { videos: 'team', tag: true, manage: false, analytics: true },
+  analyst: { videos: 'all', tag: true, manage: false, analytics: true },
+  player: { videos: 'own', tag: false, manage: false, analytics: false },
+  parent: { videos: 'own', tag: false, manage: false, analytics: false },
+}

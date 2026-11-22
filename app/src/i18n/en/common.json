@@ -47,7 +47,8 @@
       "training": "Training",
       "team": "Team",
       "analysis": "Analysis",
-      "me": "Me"
+      "me": "Me",
+      "play": "Play"
     },
     "tabs": {
       "training": "Train",
@@ -60,7 +61,11 @@
     "switchTeam": "Switch team",
     "football": "Ndamba Soccer Pixel",
     "guide": "Guide",
-    "howItWorks": "How does it work? Guide, chapter {{n}}"
+    "howItWorks": "How does it work? Guide, chapter {{n}}",
+    "club": "The club",
+    "studio": "Maps and season",
+    "filming": "Filming",
+    "pickup": "Pickup games"
   },
   "actions": {
     "save": "Save",

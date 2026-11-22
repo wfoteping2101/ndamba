@@ -34,6 +34,18 @@ const LiveTagger = lazy(() => import('./surfaces/analysis/LiveTagger'))
 const MatchReport = lazy(() => import('./surfaces/analysis/MatchReport'))
 const VideoList = lazy(() => import('./surfaces/analysis/VideoList'))
 const VideoStudio = lazy(() => import('./surfaces/analysis/VideoStudio'))
+const Studio = lazy(() => import('./surfaces/analysis/Studio'))
+const Presenter = lazy(() => import('./surfaces/analysis/Presenter'))
+// Club, pickup games, filming gear, guided tour
+const ClubHome = lazy(() => import('./surfaces/club/ClubHome'))
+const RecruitProfile = lazy(() => import('./surfaces/club/RecruitProfile'))
+const PublicProfile = lazy(() => import('./surfaces/club/PublicProfile'))
+const PickupHome = lazy(() => import('./surfaces/pickup/PickupHome'))
+const PickupGroup = lazy(() => import('./surfaces/pickup/PickupGroup'))
+const PickupGame = lazy(() => import('./surfaces/pickup/PickupGame'))
+const PickupJoin = lazy(() => import('./surfaces/pickup/PickupJoin'))
+const Filmer = lazy(() => import('./surfaces/gear/Filmer'))
+const TourStart = lazy(() => import('./surfaces/tour/TourStart'))
 // Home and player space
 const Home = lazy(() => import('./surfaces/player/Home'))
 const PlayerSpace = lazy(() => import('./surfaces/player/PlayerSpace'))
@@ -55,8 +67,11 @@ export default function App() {
               <Route path="premium" element={<Pricing />} />
               <Route path="revue" element={<Review />} />
               <Route path="marque" element={<Brand />} />
+              <Route path="profil/:id" element={<PublicProfile />} />
+              <Route path="rejoindre/:code" element={<PickupJoin />} />
             </Route>
             <Route path="bienvenue" element={<Onboarding />} />
+            <Route path="visite" element={<TourStart />} />
             <Route path="app" element={<AppLayout />}>
               <Route index element={<Home />} />
               <Route path="mola" element={<MolaHub />} />
@@ -78,6 +93,15 @@ export default function App() {
               <Route path="analyse/rapport/:id" element={<MatchReport />} />
               <Route path="analyse/video" element={<VideoList />} />
               <Route path="analyse/video/:id" element={<VideoStudio />} />
+              <Route path="analyse/video/:id/seance" element={<Presenter />} />
+              <Route path="analyse/studio" element={<Studio />} />
+              <Route path="club" element={<ClubHome />} />
+              <Route path="club/:tab" element={<ClubHome />} />
+              <Route path="club/joueurs/:id" element={<RecruitProfile />} />
+              <Route path="pickup" element={<PickupHome />} />
+              <Route path="pickup/:id" element={<PickupGroup />} />
+              <Route path="pickup/match/:id" element={<PickupGame />} />
+              <Route path="filmer" element={<Filmer />} />
               <Route path="joueur" element={<PlayerSpace />} />
               <Route path="joueur/lecons" element={<Lessons />} />
               <Route path="joueur/carnet" element={<Notebook />} />

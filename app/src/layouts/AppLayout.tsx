@@ -1,5 +1,5 @@
 import { Link, NavLink, Navigate, Outlet, useLocation } from 'react-router-dom'
-import { BookOpen, CalendarDays, CircleHelp, ClipboardList, Compass, Crown, Dumbbell, Gamepad2, Home, LineChart, MoreHorizontal, Settings, Shirt, Trophy, User, X } from 'lucide-react'
+import { BookOpen, Building2, CalendarDays, Camera, CircleHelp, ClipboardList, Compass, Crown, Dumbbell, Gamepad2, Home, LineChart, Map, MoreHorizontal, Settings, Shirt, Trophy, User, Users, X } from 'lucide-react'
 import { MolaMark } from '../ui/brand'
 import { useEffect, useState, type ReactNode } from 'react'
 import { LangSwitch, Logo } from '../ui'
@@ -21,7 +21,12 @@ const GUIDE_CHAPTERS: [RegExp, number][] = [
   [/^\/app\/(equipe|observer)/, 10],
   [/^\/app\/matchs/, 11],
   [/^\/app\/analyse\/rapport/, 13],
+  [/^\/app\/analyse\/video\/[^/]+\/seance/, 29],
   [/^\/app\/analyse\/video/, 14],
+  [/^\/app\/analyse\/studio/, 28],
+  [/^\/app\/club/, 27],
+  [/^\/app\/pickup/, 30],
+  [/^\/app\/filmer/, 31],
   [/^\/app\/analyse/, 12],
   [/^\/app\/joueur\/(lecons|carnet|parcours)/, 16],
   [/^\/app\/joueur/, 15],
@@ -78,9 +83,15 @@ export default function AppLayout() {
     { title: t('app.groups.team'), items: [
       { to: '/app/equipe', label: t('app.team'), icon: (s) => <Shirt size={s} strokeWidth={SW} /> },
       { to: '/app/matchs', label: t('app.matches'), icon: (s) => <Trophy size={s} strokeWidth={SW} /> },
+      { to: '/app/club', label: t('app.club'), icon: (s) => <Building2 size={s} strokeWidth={SW} /> },
     ] },
     { title: t('app.groups.analysis'), items: [
-      { to: '/app/analyse', label: t('app.analysis'), icon: (s) => <LineChart size={s} strokeWidth={SW} /> },
+      { to: '/app/analyse', label: t('app.analysis'), icon: (s) => <LineChart size={s} strokeWidth={SW} />, end: true },
+      { to: '/app/analyse/studio', label: t('app.studio'), icon: (s) => <Map size={s} strokeWidth={SW} /> },
+      { to: '/app/filmer', label: t('app.filming'), icon: (s) => <Camera size={s} strokeWidth={SW} /> },
+    ] },
+    { title: t('app.groups.play'), items: [
+      { to: '/app/pickup', label: t('app.pickup'), icon: (s) => <Users size={s} strokeWidth={SW} /> },
     ] },
     { title: t('app.groups.me'), items: [
       { to: '/app/joueur', label: t('app.player'), icon: (s) => <User size={s} strokeWidth={SW} /> },

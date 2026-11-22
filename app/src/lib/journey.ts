@@ -161,7 +161,7 @@ export async function saveMinutes(matchId: string, minutes: Record<string, numbe
 }
 
 export const zeroCounts = (): Record<EventCode, number> =>
-  ({ PASS_OK: 0, PASS_LOST: 0, PROG: 0, LINE: 0, FINAL3: 0, BOX: 0, FIX2: 0, SWITCH: 0, LOSS: 0, REGAIN5: 0, REGAIN: 0, SHOT: 0, SHOT_IN: 0, GOAL: 0 })
+  ({ PASS_OK: 0, PASS_LOST: 0, PROG: 0, LINE: 0, FINAL3: 0, BOX: 0, FIX2: 0, SWITCH: 0, LOSS: 0, REGAIN5: 0, REGAIN: 0, SHOT: 0, SHOT_IN: 0, GOAL: 0, CORNER: 0, FREEKICK: 0, PENALTY: 0, THROWIN: 0, GOALKICK: 0 })
 
 export function countFor(events: readonly MatchEvent[], pid?: string) {
   const c = zeroCounts()

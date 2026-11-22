@@ -3,6 +3,7 @@ import type {
   Profile, Team, Player, Session, Match, MatchEvent, VideoProject,
   AgentTask, ChatMessage, NotebookEntry, ChallengeLog,
   Evaluation, Observation, Attendance, Objective, Milestone, Wellness,
+  Club, Member, PickupGroup, PickupPlayer, PickupGame, PickupRsvp, PickupRating,
 } from './types'
 
 export class NjangiDB extends Dexie {
@@ -25,6 +26,14 @@ export class NjangiDB extends Dexie {
   milestones!: Table<Milestone, string>
   // Player space (version 3): daily form and session load
   wellness!: Table<Wellness, string>
+  // Club and pickup (version 4)
+  club!: Table<Club, string>
+  members!: Table<Member, string>
+  pickupGroups!: Table<PickupGroup, string>
+  pickupPlayers!: Table<PickupPlayer, string>
+  pickupGames!: Table<PickupGame, string>
+  pickupRsvps!: Table<PickupRsvp, string>
+  pickupRatings!: Table<PickupRating, string>
 
   constructor() {
     super('njangi')
@@ -61,6 +70,16 @@ export class NjangiDB extends Dexie {
     // Version 3: the player's daily form and session load (Le Code Njangi, chapter 29). Additive only: one new table.
     this.version(3).stores({
       wellness: 'id, date, playerId',
+    })
+    // Version 4: the club (members and roles) and pickup games. Additive only.
+    this.version(4).stores({
+      club: 'id',
+      members: 'id, role, playerId',
+      pickupGroups: 'id, inviteCode',
+      pickupPlayers: 'id, groupId',
+      pickupGames: 'id, groupId, date, status',
+      pickupRsvps: 'id, gameId, playerId',
+      pickupRatings: 'id, gameId, to',
     })
   }
 }

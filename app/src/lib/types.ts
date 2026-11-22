@@ -49,6 +49,8 @@ export interface Player {
   foot?: 'R' | 'L' | 'B'
   skills: Partial<Record<SkillKey, 1 | 2 | 3 | 4>>
   notes?: string
+  /** recruitment profile (club): what a recruiter or a scholarship office sees */
+  recruit?: { public: boolean; bio?: string; heightCm?: number; highlightClipIds?: string[] }
   createdAt: string
 }
 
@@ -110,15 +112,22 @@ export interface Match {
   notes?: string
   /** Parcours: minutes played per player id, when the coach records them. Without an entry, starters play the whole match and subs 0. */
   minutes?: Record<string, number>
+  /** Player of the match, chosen by the staff */
+  potmId?: string
   createdBy?: 'user' | 'mola'
   createdAt: string
 }
 
-/** Live tagging codes, identical to La Méthode Njangi (chapters 19 and 20). */
+/** Set pieces: counted and mapped apart, they never enter the Indice Njangi. */
+export type SetPieceCode = 'CORNER' | 'FREEKICK' | 'PENALTY' | 'THROWIN' | 'GOALKICK'
+export const SET_PIECE_CODES: SetPieceCode[] = ['CORNER', 'FREEKICK', 'PENALTY', 'THROWIN', 'GOALKICK']
+
+/** Live tagging codes, identical to La Méthode Njangi (chapters 19 and 20), plus the set pieces. */
 export type EventCode =
   | 'PASS_OK' | 'PASS_LOST' | 'PROG' | 'LINE' | 'FINAL3' | 'BOX'
   | 'FIX2' | 'SWITCH' | 'LOSS' | 'REGAIN5' | 'REGAIN'
   | 'SHOT' | 'SHOT_IN' | 'GOAL'
+  | SetPieceCode
 
 export interface MatchEvent {
   id: string
@@ -130,6 +139,15 @@ export interface MatchEvent {
   playerId?: string
   /** seconds in the match video when the action was coded on the video (absent when coded live) */
   videoT?: number
+  /**
+   * Where the action happened, in percent of the pitch, always seen from our attack:
+   * x from our goal line (0) to theirs (100), y from our left touchline (0) to our right (100).
+   * An action of the opponent uses the same frame (their attack goes towards x = 0). Absent when not placed.
+   */
+  x?: number
+  y?: number
+  /** the teammate who received the pass, for the passing network */
+  toPlayerId?: string
   createdAt: string
 }
 
@@ -142,7 +160,42 @@ export interface VideoTag {
   drawing?: string // data URL of a telestration snapshot
 }
 
-export type VideoSource = 'file' | 'youtube' | 'facebook'
+/** file: on this device, never uploaded; youtube / facebook: a link; hosted: stored by Ndamba (paid upload) */
+export type VideoSource = 'file' | 'youtube' | 'facebook' | 'hosted'
+
+/** A moment of the video kept for review or for the players: a custom clip, or an automatic one around a coded action. */
+export interface Clip {
+  id: string
+  start: number // video seconds
+  end: number
+  title: string
+  note?: string
+  playerIds?: string[]
+  /** automatic clip made from a coded action (goal, shot): it follows the action and cannot be edited, only duplicated */
+  eventId?: string
+  auto?: boolean
+  /** telestration snapshot (data URL) shown at the start of the clip */
+  drawing?: string
+  createdAt: string
+}
+
+/** An ordered list of clips: a video session for the players, a scouting report, a recruitment reel. */
+export interface Playlist {
+  id: string
+  title: string
+  clipIds: string[]
+  note?: string
+  createdAt: string
+}
+
+/** Paid hosting on Ndamba (see VIDEO_HOSTING in config.ts). demo: simulated, nothing was sent nor billed. */
+export interface Hosting {
+  plan: 'pass' | 'club'
+  sizeMB?: number
+  uploadedAt: string
+  expiresAt?: string
+  demo?: boolean
+}
 
 /** One frame read by the AI (Claude), every few seconds of the match video. */
 export interface AiFrame {
@@ -186,6 +239,131 @@ export interface VideoProject {
   ai?: AiAnalysis
   /** notes and drawings; coded actions of a linked match live in its events (with videoT) */
   tags: VideoTag[]
+  /** match (default), training, or scouting of another team */
+  kind?: 'match' | 'training' | 'scouting'
+  /** the club team the video belongs to (club video library) */
+  teamId?: string
+  /** scouting: the team watched */
+  opponent?: string
+  clips?: Clip[]
+  playlists?: Playlist[]
+  hosting?: Hosting
+  createdAt: string
+}
+
+/* ---------------- Club: the club around the teams (Club plan) ---------------- */
+
+export interface Club {
+  id: 'club'
+  name: string
+  city?: string
+  country?: string
+  founded?: number
+  colors: { primary: string; secondary: string }
+  about?: string
+  /** the club's game model in a few lines (shared by every team's analysis) */
+  gameModel?: string
+  /** recruitment profiles of players can be shown on a public page */
+  publicProfiles: boolean
+  createdAt: string
+}
+
+export type MemberRole = 'admin' | 'coach' | 'analyst' | 'player' | 'parent'
+
+/** A person of the club and what they can reach (see MEMBER_RIGHTS in config.ts). */
+export interface Member {
+  id: string
+  name: string
+  email?: string
+  role: MemberRole
+  teamIds: string[]
+  /** for a player or a parent: the squad record */
+  playerId?: string
+  status: 'active' | 'invited'
+  invitedAt?: string
+  createdAt: string
+}
+
+/* ---------------- Pickup: friendly games between players (FC Pickup style) ---------------- */
+
+export type PickupTier = 'bronze' | 'silver' | 'gold'
+export type PayMethod = 'momo' | 'orange' | 'cash' | 'card' | 'waived'
+
+export interface PickupGroup {
+  id: string
+  name: string
+  venue: string
+  city?: string
+  /** pitch position, for the check-in by location */
+  lat?: number
+  lng?: number
+  /** players per side (5 for 5 v 5) */
+  perSide: number
+  defaultDay?: number // 0 Sunday .. 6 Saturday
+  defaultTime?: string // HH:MM
+  defaultFee?: number
+  currency: 'XAF' | 'USD' | 'EUR'
+  minTier?: PickupTier
+  allowGuests: boolean
+  ratingsOn: boolean
+  /** PickupPlayer ids who can organise (up to 3 co-admins plus the host) */
+  adminIds: string[]
+  /** where players send the fee */
+  payHandles: { momo?: string; orange?: string; cash?: boolean }
+  inviteCode: string
+  createdAt: string
+}
+
+export interface PickupPlayer {
+  id: string
+  groupId: string
+  name: string
+  nickname: string
+  phone?: string
+  /** this browser's user */
+  isMe?: boolean
+  /** no-show flags (ISO dates); three within 30 days suspend RSVPs */
+  flags: string[]
+  suspendedUntil?: string
+  createdAt: string
+}
+
+export interface PickupGame {
+  id: string
+  groupId: string
+  date: string // YYYY-MM-DD
+  time: string // HH:MM
+  cap: number // players in total
+  rsvpDeadline?: string // ISO
+  fee: number
+  status: 'open' | 'played' | 'cancelled'
+  teams?: { a: string[]; b: string[] }
+  score?: { a: number; b: number }
+  note?: string
+  createdAt: string
+}
+
+export interface PickupRsvp {
+  id: string // `${gameId}:${playerId}` or `${gameId}:guest:${n}`
+  gameId: string
+  playerId: string
+  status: 'going' | 'waitlist' | 'out'
+  /** a +1 brought by this player */
+  guestOf?: string
+  guestName?: string
+  joinedAt: string
+  checkedInAt?: string
+  late?: boolean
+  noShow?: boolean
+  paid?: PayMethod
+}
+
+export interface PickupRating {
+  id: string // `${gameId}:${from}:${to}`
+  gameId: string
+  from: string
+  to: string
+  score: 1 | 2 | 3 | 4 | 5
   createdAt: string
 }
 

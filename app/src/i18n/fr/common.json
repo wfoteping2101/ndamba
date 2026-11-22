@@ -47,7 +47,8 @@
       "training": "Entraînement",
       "team": "Équipe",
       "analysis": "Analyse",
-      "me": "Moi"
+      "me": "Moi",
+      "play": "Jouer"
     },
     "tabs": {
       "training": "Entraîner",
@@ -60,7 +61,11 @@
     "switchTeam": "Changer d'équipe",
     "football": "Ndamba Soccer Pixel",
     "guide": "Guide",
-    "howItWorks": "Comment ça marche ? Guide, chapitre {{n}}"
+    "howItWorks": "Comment ça marche ? Guide, chapitre {{n}}",
+    "club": "Le club",
+    "studio": "Cartes et saison",
+    "filming": "Filmer",
+    "pickup": "Matchs entre amis"
   },
   "actions": {
     "save": "Enregistrer",
